@@ -1,0 +1,14 @@
+.screen{
+	min-height: 100%;
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+		top: 2rem;
+		bottom: 2rem;
+		right: 2rem;
+		left: 2rem;
+		border: 1px solid var(--color-dark);
+	}
+}
