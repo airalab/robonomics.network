@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
-
-html {
-  font-size: var(--base-font-size);
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: var(--base-font-size);
+  line-height: var(--space-text);
 }
 
 p {
@@ -18,10 +16,10 @@ h1, h2, h3, h4, h5 {
   color: var(--title-color);
   margin: 2.75rem 0 1rem;
   font-family: 'Roboto', sans-serif;
-  line-height: 1.15;
+  line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 100;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
 
   word-break: break-word;
 
@@ -31,7 +29,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h2 {font-size: 1.7rem;}
@@ -82,6 +80,31 @@ p, ul, ol, li, blockquote {
   &:last-child { margin-top: 0 }
 }
 
-section{
-  margin: var(--space) 0;
+
+a{
+  &:not(.button) {
+    color: var(--link-color);
+    transition: opacity .2s;
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+
+  &[target="_blank"]:after{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    transform: scale(.7);
+    font-weight: bold;
+    margin-left: .125em;
+    display: inline-block;
+    content: "↗";
+  }
+}
+
+.hyphens{
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
