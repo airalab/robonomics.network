@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.54 22.762">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #1d1d1b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_2234" data-name="Group 2234" transform="translate(0.503 0.503)">
+    <path id="Path_1821" data-name="Path 1821" class="cls-1" d="M941.2,64.936h0a5.831,5.831,0,0,0-8.254-.635L921.136,74.333a5.83,5.83,0,0,0-.635,8.254h0a5.83,5.83,0,0,0,8.254.635L940.565,73.19A5.848,5.848,0,0,0,941.2,64.936Z" transform="translate(-919.083 -62.883)"/>
+    <line id="Line_414" data-name="Line 414" class="cls-2" y1="8.127" x2="9.778" transform="translate(6.878 6.751)"/>
+  </g>
+</svg>

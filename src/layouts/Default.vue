@@ -5,20 +5,14 @@
     </transition>
 
     <div class="footer">
-      <strong>#ROS</strong>&nbsp;
-      <strong>#NixOS</strong>&nbsp;
-      <strong>#IPFS</strong>&nbsp;
-      <strong>#Ethereum</strong>&nbsp;
-      <strong>#Polkadot</strong>&nbsp;
-      <br/>
-      <!-- <div class="footer__technologies">
-            <g-image alt="we use ROS" src="~/assets/images/logo-ros.svg" />
-            <g-image alt="we use ROS" src="~/assets/images/logo-nixos.svg" />
-            <g-image alt="we use ROS" src="~/assets/images/logo-ipfs.svg" />
-            <g-image alt="we use ROS" src="~/assets/images/logo-ethereum.svg" />
-            <g-image alt="we use ROS" src="~/assets/images/logo-polkadot.svg" />
-      </div> -->
-      Since 2015
+      <div>
+        <strong>#ROS</strong>&nbsp;
+        <strong>#NixOS</strong>&nbsp;
+        <strong>#IPFS</strong>&nbsp;
+        <strong>#Ethereum</strong>&nbsp;
+        <strong>#Polkadot</strong>&nbsp;
+      </div>
+      <div>Founded in 2015 &nbsp; &bull; &nbsp; Latest release {{ this.releaseTime }}</div>
     </div>
   </div>
 </template>
@@ -40,6 +34,7 @@
     &:before{
       content: "";
       position: absolute;
+      z-index: -1;
       top: var(--space);
       bottom: var(--space);
       right: var(--space);
@@ -59,12 +54,7 @@
 
   .layout{
     padding-top: calc( var(--space) * 3 );
-    padding-bottom: 5rem; //padding for footer
-
-    @media screen and (max-width: 720px) {
-      // padding-bottom: 7rem; //padding for footer
-      padding-top: calc( var(--space) * 1.5 );
-    }
+    padding-bottom: 11rem; //padding for footer
 
     &__content {
       max-width: var(--content-width);
@@ -83,32 +73,40 @@
 
   .footer{
     position: absolute;
-    bottom: calc(var(--space) + .5rem);
+    bottom: calc(var(--space) + 1rem);
     left: var(--space);
     right: var(--space);
     text-align: center;
-
-
-    // &__technologies{
-
-    //   margin-bottom: .8rem;
-
-    //   transition: .2s all ease-out;
-    //   filter: grayscale(100%);
-
-    //   &:hover{
-    //     filter: grayscale(0);
-    //   }
-
-    //   img{
-    //     display: inline-block;
-    //     vertical-align: middle;
-    //     margin-right: 1.2rem;
-
-    //     @media screen and (max-width: 720px) {
-    //       transform: scale(.8);
-    //     }
-    //   }
-    // }
+    line-height: 1.5;
   }
 </style>
+
+
+<script>
+  import axios from 'axios'
+  import moment from 'moment'
+
+  export default {
+    data () {
+      return {
+        release: null,
+        update: null,
+        releaseTime: null
+      }
+    },
+    async mounted () {
+      try {
+        const results = await axios.get(
+          'https://api.github.com/repos/airalab/robonomics/releases/latest'
+        )
+
+        this.release = results.data;
+        this.update = this.release['published_at'];
+        this.releaseTime = moment(this.update).from();
+
+      } catch (error) {
+        console.log(error)
+      }
+    }
+  }
+</script>

@@ -5,8 +5,16 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'The Robonomics Framework',
-  siteDescription: 'The set of open-source packages implementing programming patterns for Smart City and Industry 4.0',
+  siteName: 'Robonomics Framework',
+  siteDescription: 'Robonomics Framework is a set of open-source packages for Robotics, Smart Cities and Industry 4.0 developers.',
 
-  plugins: []
+  plugins: [],
+
+  chainWebpack: config => {
+    const svgRule = config.module.rule('svg')
+    svgRule.uses.clear()
+    svgRule
+      .use('vue-svg-loader')
+      .loader('vue-svg-loader')
+  }
 }

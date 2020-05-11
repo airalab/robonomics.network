@@ -7,6 +7,12 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "axios": "^0.19.2",
+    "gridsome": "^0.7.0",
+    "gridsome-source-github-api": "^0.1.4",
+    "vue-moment": "^4.1.0"
+  },
+  "devDependencies": {
+    "vue-svg-loader": "^0.16.0"
   }
 }

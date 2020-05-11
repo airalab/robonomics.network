@@ -5,10 +5,8 @@
       
         <h1 v-html="$static.metadata.siteName" itemprop="name"/>
 
-        <g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" class="homepage__logo_reflect"/>
-
         <div class="homepage__description">
-          <p class="hyphens" itemprop="description">During the development of Robonomics Network a lot of experiments happen. Tons of code written and erased after use. It was expected that many Smart City and Industry 4.0 cases could match by not so large count of programming patterns. We decided to generalise it as a set of open-source packages with the name Robonomics Framework.</p>
+          <p itemprop="description" v-html="$static.metadata.siteDescription" />
 
           <nav class="homepage__menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
             <g-link to="https://github.com/airalab/robonomics/releases" target="_blank" itemprop="url"><span itemprop="name">Releases</span></g-link>
@@ -17,6 +15,43 @@
             <g-link to="/" itemprop="url"><span itemprop="name">Community</span></g-link>
           </nav>
         </div>
+
+        <!-- <div class="decor-arms">
+          <div class="arm-1">
+            <RobotHand11 />
+
+            <span class="sprite-basic-robotHand1-1"></span>
+            <span class="sprite-basic-robotHand1-2"></span>
+            <span class="sprite-basic-robotHand1-3"></span>
+            <span class="sprite-basic-robotHand1-4"></span>
+            <span class="sprite-basic-robotHand1-5"></span>
+            <span class="sprite-basic-robotHand1-6"></span>
+            <span class="sprite-basic-robotHand1-7"></span>
+            <span class="sprite-basic-robotHand1-8"></span>
+            <span class="sprite-basic-robotHand1-9"></span>
+            <span class="sprite-basic-robotHand1-10"></span>
+            <span class="sprite-basic-robotHand1-11"></span>
+          </div>
+
+          <div class="arm-2">
+            <span class="sprite-basic-robotHand2-1"></span>
+            <span class="sprite-basic-robotHand2-2"></span>
+            <span class="sprite-basic-robotHand2-3"></span>
+            <span class="sprite-basic-robotHand2-4"></span>
+            <span class="sprite-basic-robotHand2-5"></span>
+            <span class="sprite-basic-robotHand2-6"></span>
+            <span class="sprite-basic-robotHand2-7"></span>
+            <span class="sprite-basic-robotHand2-8"></span>
+            <span class="sprite-basic-robotHand2-9"></span>
+            <span class="sprite-basic-robotHand2-10"></span>
+            <span class="sprite-basic-robotHand2-11"></span>
+            <span class="sprite-basic-robotHand2-12"></span>
+            <span class="sprite-basic-robotHand2-13"></span>
+            <span class="sprite-basic-robotHand2-14"></span>
+            <span class="sprite-basic-robotHand2-15"></span>
+          </div>
+        </div> -->
+
     </div>
 
   </Layout>
@@ -25,7 +60,8 @@
 <static-query>
 query {
   metadata {
-    siteName
+    siteName,
+    siteDescription
   }
 }
 </static-query>
@@ -36,7 +72,7 @@ query {
 
     &__logo, &__logo_reflect{
       display: inline-block;
-      width: 8rem;
+      width: 11rem;
     }
 
     &__logo_reflect{
@@ -46,14 +82,8 @@ query {
     }
 
     h1{
-      margin: 1rem 0;
       padding-bottom: 0.3rem;
       text-shadow: rgba(3, 165, 237, .3) 0 0.3rem;
-    }
-
-    &__description{
-      position: relative;
-      top: -5.5rem;
     }
 
     &__menu{
@@ -76,3 +106,14 @@ query {
     }
   }
 </style>
+
+<script>
+  import RobotHand11 from '~/assets/images/robotHand1-1.svg'
+
+  export default {
+    components: {
+      RobotHand11
+    }
+  }
+</script>
+

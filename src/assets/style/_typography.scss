@@ -27,10 +27,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-h1 {
-  margin-top: 0;
-  font-size: 1.8rem;
-}
+h1 { font-size: 1.8rem; }
 
 h2 {font-size: 1.7rem;}
 
@@ -98,6 +95,11 @@ a{
     margin-left: .125em;
     display: inline-block;
     content: "↗";
+    transition: all 0.2s ease;
+  }
+
+  &[target="_blank"]:hover:after{
+    transform: scale(.7) translateX(.1rem) translateY(- 0.3rem);
   }
 }
 
