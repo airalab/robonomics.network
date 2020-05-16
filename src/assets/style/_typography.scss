@@ -82,8 +82,9 @@ a{
   &:not(.button) {
     color: var(--link-color);
     transition: opacity .2s;
+    
     &:hover {
-      opacity: .6;
+      color: var(--link-color-hover);
     }
   }
 

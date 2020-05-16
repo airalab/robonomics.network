@@ -3,9 +3,20 @@
 		padding: .5rem .8rem;
 		text-decoration: none;
 		font-weight: 700;
+		border: 0;
+
+		cursor: pointer;
+		font-family: 'Roboto', sans-serif;
+  		font-weight: 500;
+  		font-size: var(--base-font-size);
+  		line-height: 1;
 
 		&__primary{
 			background-color: var(--link-color);
-			color: var(--body-bg) !important;
+			color: var(--color-light);
+
+			&:hover{
+				background-color: var(--link-color-hover);
+			}
 		}
 	}

@@ -6,6 +6,10 @@
   bottom: 0;
   z-index: -1;
 
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+
   &__move{
     opacity: 0;
     position: absolute;
@@ -17,17 +21,20 @@
     &.right { right: 0; }
 
     img { position: absolute; }
+
+    @media screen and (max-width: 720px) {
+      width: 35%;
+    }
   }
 
 
   &__left, &__right{
     transform-origin: 0 0;
-    transform: scale(var(--handScale));
   }
   
 
   &__left{
-    width: 400px;
+    width: 380px;
     height: 172px;
     left: 0;
 

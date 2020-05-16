@@ -138,10 +138,12 @@ query {
   export default {
     mounted() {
       this.scale();
+      window.addEventListener('load', this.scale);
       window.addEventListener('resize', this.scale);
     },
 
     beforeDestroy() {
+      window.removeEventListener('load', this.scale);
       window.removeEventListener('resize', this.scale);
     },
 
@@ -153,7 +155,7 @@ query {
 
       scaleRatio(parent, element){
         var ratio = (document.querySelector(parent).offsetWidth / document.querySelector(element).offsetWidth).toFixed(2);
-        
+
         document.querySelector(element).style.transform = 'scale(' + ratio +')';
       }
     }

@@ -13,6 +13,10 @@
         <strong>#Polkadot</strong>&nbsp;
       </div>
       <div>Founded in 2015 &nbsp; &bull; &nbsp; Latest release {{ this.releaseTime }}</div>
+
+      <div class="">
+        <div v-if="!this.cookiePolicyAccepted()">This website uses cookies. <g-link to="/cookie-policy">Read Cookie Policy</g-link> / <button v-click="this.cookiePolicySet" class="button button__primary">Ok</button></div>
+      </div>
     </div>
   </div>
 </template>
@@ -79,6 +83,10 @@
   import axios from 'axios'
   import moment from 'moment'
 
+  import Vue from 'vue'
+  import VueCookies from 'vue-cookies'
+  Vue.use(VueCookies)
+
   export default {
     data () {
       return {
@@ -87,6 +95,16 @@
         releaseTime: null
       }
     },
+
+    methods: {
+      cookiePolicyAccepted(){
+        return this.$cookies.get('cookiePolicy4');
+      },
+      cookiePolicySet(){
+        this.$cookies.set('cookiePolicy4','accepted');
+      }
+    },
+
     async mounted () {
       try {
         const results = await axios.get(
