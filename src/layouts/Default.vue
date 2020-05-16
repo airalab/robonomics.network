@@ -30,25 +30,18 @@
   .screen{
     min-height: 100%;
     position: relative;
+    overflow-x: hidden;
 
     &:before{
       content: "";
       position: absolute;
       z-index: -1;
-      top: var(--space);
-      bottom: var(--space);
-      right: var(--space);
-      left: var(--space);
+      top: var(--screen-padding);
+      bottom: var(--screen-padding);
+      right: var(--screen-padding);
+      left: var(--screen-padding);
       border: 1px solid var(--color-dark);
-    }
-
-    @media screen and (max-width: 720px) {
-      &:before{
-        top: calc( var(--space) / 2);
-        bottom: calc( var(--space) / 2);
-        right: calc( var(--space) / 2);
-        left: calc( var(--space) / 2);
-      }
+      background-color: var(--color-gray-light);
     }
   }
 

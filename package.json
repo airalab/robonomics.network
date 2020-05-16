@@ -10,6 +10,7 @@
     "axios": "^0.19.2",
     "gridsome": "^0.7.0",
     "gridsome-source-github-api": "^0.1.4",
+    "vue-in-viewport-directive": "^2.0.0",
     "vue-moment": "^4.1.0"
   },
   "devDependencies": {

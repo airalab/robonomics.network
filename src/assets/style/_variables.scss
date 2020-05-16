@@ -4,6 +4,7 @@ body {
 
 	--color-dark: #000000;
 	--color-light: #ffffff;
+	--color-gray-light: #f2f2f2;
 
  	--body-bg: var(--color-light);
  	--text-color: #000000;
@@ -32,6 +33,39 @@ body {
   --page-width: 1440px;
   --radius: 4px;
 
-  --header-padding: 1rem;
-  --header-logo-height: 2rem;
+  --screen-padding: var(--space);
+  --handScale: 1;
+}
+
+
+// @media screen and (min-width: 1920px) {
+// 	body {
+// 		--handScale: 1.5;
+// 		--handShift: 4vw;
+// 	}
+// }
+
+// @media screen and (max-width: 1920px) and (min-width: 1300px) {
+// 	body {
+// 		--handScale: 1.2;
+//   	}
+// }
+
+// @media screen and (max-width: 1175px) {
+// 	body {
+// 		--handScale: 1;
+// 		--handShift: -2vw;
+// 	}
+// }
+
+// @media screen and (max-width: 970px) {
+// 	body {
+// 		--handScale: 0.6;
+// 	}
+// }
+
+@media screen and (max-width: 720px) {
+	body {
+		--screen-padding: calc( var(--space) / 2);
+	}
 }

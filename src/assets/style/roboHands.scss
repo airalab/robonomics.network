@@ -1,0 +1,554 @@
+.roboHands{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  &__move{
+    opacity: 0;
+    position: absolute;
+    top: 6rem;
+    bottom: 0;
+    width: 40%;
+
+    &.left { left: 0; }
+    &.right { right: 0; }
+
+    img { position: absolute; }
+  }
+
+
+  &__left, &__right{
+    transform-origin: 0 0;
+    transform: scale(var(--handScale));
+  }
+  
+
+  &__left{
+    width: 400px;
+    height: 172px;
+    left: 0;
+
+    &__1{
+      z-index: 5;
+      top: 17px;
+      right: 222px;
+    }
+
+    &__2 {
+      z-index: 4;
+      top: 17px;
+      right: 189px;
+    }
+
+    &__3 {
+      z-index: 5;
+      top: 0;
+      right: 106px;
+    }
+
+    &__4 {
+      z-index: 6;
+      top: -17px;
+      right: 0;
+      transform: translateY(28px) rotate(0); /* если без анимации */
+    }
+
+    &__5 {
+      z-index: 7;
+      top: 7px;
+      right: 49px;
+    }
+
+    &__6 {
+      z-index: 4;
+      top: 4px;
+      right: 44px;
+    }
+
+    &__7 {
+      z-index: 3;
+      top: 41px;
+      right: 47px;
+    }
+
+    &__8 {
+      z-index: 2;
+      top: 16px;
+      right: 67px;
+    }
+
+    &__9 {
+      z-index: 1;
+      top: 51px;
+      right: 67px;
+    }
+
+    &__10 {
+      z-index: 6;
+      top: 14px;
+      right: 135px;
+      transform: translateY(16px) translateX(-12px) rotate(0); /* если без анимации */
+    }
+
+    &__11 {
+      z-index: 5;
+      top: 73px;
+      right: 113px;
+    }
+  }
+
+
+
+  &__right{
+    width: 369px;
+    height: 168px;
+    right: 0;
+
+    &__1 {
+      top: 4px;
+      left: 0;
+      z-index: 6;
+    }
+
+    &__2 { 
+      top: 6px;
+      left: 66px;
+      z-index: 6;
+    }
+
+    &__3 {
+      top: 0;
+      left: 84px;
+      z-index: 5;
+    }
+
+    &__4 {
+      top: 0;
+      left: 125px;
+      z-index: 4;
+    }
+
+    &__5 {
+      top: 33px;
+      left: 114px;
+      z-index: 5;
+    }
+
+    &__6 {
+      top: 42px;
+      left: 96px;
+      z-index: 6;
+    }
+
+    &__7 {
+      top: 38px;
+      left: 55px;
+      z-index: 5;
+    }
+
+    &__8 {
+      top: 46px;
+      left: 93px;
+      z-index: 3;
+    }
+
+    &__9 {
+      top: 65px;
+      left: 84px;
+      z-index: 4;
+    }
+
+    &__10 {
+      top: 78px;
+      left: 61px;
+      z-index: 3;
+    }
+
+    &__11 {
+      top: 56px;
+      left: 105px;
+      z-index: 1;
+    }
+
+    &__12 {
+      top: 75px;
+      left: 96px;
+      z-index: 2;
+    }
+
+    &__13 {
+      top: 90px;
+      left: 88px;
+      z-index: 1;
+    }
+
+    &__14 {
+      top: 38px;
+      left: 210px;
+      z-index: 1;
+    }
+
+    &__15 {
+      top: 4px;
+      left: 235px;
+      z-index: 2;
+    }
+  }
+
+
+  &.in-viewport{
+    .roboHands__move{
+
+      animation-duration: 1.4s;
+      animation-delay: 1.4s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    
+      img {
+        transform-origin: 50% 50%;
+        animation-duration: 1.6s;
+        animation-delay: 1.2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .roboHands__move{
+      &.left{
+        transform: translateX(-100px);
+        animation-name: robotHand1-show;
+      }
+
+      &.right{
+        transform: translateX(100px);
+        animation-name: robotHand2-show;
+      }
+    }
+
+    .roboHands__left{
+      &__1 { animation-name: robotHand1-1; transform: translateY(-30px) rotate(19deg); }
+      &__2 { animation-name: robotHand1-2; transform: rotate(-15deg); }
+      &__3 { animation-name: robotHand1-3; transform-origin: 0 0 !important; transform: rotate(-25deg); }
+      &__4 { animation-name: robotHand1-4; transform: translateY(-17px) rotate(-11deg); }
+      &__5 { animation-name: robotHand1-5; transform: translateY(-39px) translateX(4px); }
+      &__6 { animation-name: robotHand1-6; transform: translateY(-39px) translateX(4px) rotate(-10deg); }
+      &__7 { animation-name: robotHand1-7; transform: translateY(-55px) translateX(45px) rotate(-78deg); }
+      &__8 { animation-name: robotHand1-8; transform: translateY(-32px) translateX(35px) rotate(-10deg); }
+      &__9 { animation-name: robotHand1-9; transform: translateY(-52px) translateX(50px) rotate(-55deg); }
+      &__10 { animation-name: robotHand1-10; transform-origin: 0 0 !important; transform: translateY(19px) translateX(-7px) rotate(-56deg); }
+      &__11 { animation-name: robotHand1-11; transform-origin: 0 0 !important; transform: translateY(-48px) translateX(27px) rotate(-32deg); }
+    }
+
+    .roboHands__right{
+      &__1 { animation-name: robotHand2-1; transform: rotate(-3deg) translateY(8px) translateX(-3px); }
+      &__2 { animation-name: robotHand2-2; transform: rotate(8deg) translateY(9px) translateX(-6px); }
+      &__3 { animation-name: robotHand2-3; transform: rotate(-9deg) translateY(4px) translateX(-8px); }
+      &__4 { animation-name: robotHand2-4; transform: rotate(-9deg) translateY(4px); }
+      &__5 { animation-name: robotHand2-5; transform: rotate(-9deg) translateY(2px) translateX(3px); transform-origin: 100% 100%; }
+      &__6 { animation-name: robotHand2-6; transform: rotate(8deg) translateY(10px) translateX(5px); }
+      &__7 { animation-name: robotHand2-7; transform: rotate(11deg) translateY(5px) translateX(6px); }
+      &__8 { animation-name: robotHand2-8; transform: rotate(-15deg) translateY(2px) translateX(3px); transform-origin: 100% 100%; }
+      &__9 { animation-name: robotHand2-9; transform: rotate(-4deg) translateY(17px); }
+      &__10 { animation-name: robotHand2-10; transform: rotate(-62deg) translateY(24px) translateX(10px); }
+      &__11 { animation-name: robotHand2-11; transform: rotate(-18deg) translateY(2px) translateX(3px); transform-origin: 100% 100%; }
+      &__12 { animation-name: robotHand2-12; transform: translateY(18px) translateX(2px); }
+      &__13 { animation-name: robotHand2-13; transform: rotate(-39deg) translateY(16px) translateX(6px); }
+      &__14 { animation-name: robotHand2-14; transform: rotate(10deg) translateY(2px); }
+      &__15 { animation-name: robotHand2-15; transform: rotate(10deg) translateY(14px); }
+    }
+  }
+}
+
+
+  @keyframes robotHand1-show
+  {
+    0% {
+      transform: translateX(-100px) scale(var(--handScale));
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px) scale(var(--handScale));
+      opacity: 1;
+    }
+  }
+
+ @keyframes robotHand2-show
+  {
+    0% {
+      transform: translateX(100px) scale(var(--handScale));
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px) scale(var(--handScale));
+      opacity: 1;
+    }
+  }
+
+
+
+  @keyframes robotHand1-1
+  {
+    0% {
+      transform: translateY(-30px) rotate(19deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+@keyframes robotHand1-2
+  {
+    0% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+@keyframes robotHand1-3
+  {
+    0% {
+      transform: rotate(-25deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+@keyframes robotHand1-4
+  {
+    0% {
+      transform: translateY(-17px) rotate(-11deg);
+    }
+    100% {
+      transform: translateY(28px) rotate(0);
+    }
+  }
+
+
+@keyframes robotHand1-5
+  {
+    0% {
+      transform: translateY(-39px) translateX(4px);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+
+
+@keyframes robotHand1-6
+  {
+    0% {
+      transform: translateY(-39px) translateX(4px) rotate(-10deg);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand1-7
+  {
+    0% {
+      transform: translateY(-55px) translateX(45px) rotate(-78deg);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand1-8
+  {
+    0% {
+      transform: translateY(-32px) translateX(35px) rotate(-10deg);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand1-9
+  {
+    0% {
+      transform: translateY(-52px) translateX(50px) rotate(-55deg);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand1-10
+  {
+    0% {
+      transform: translateY(19px) translateX(-7px) rotate(-56deg);
+    }
+    100% {
+      transform: translateY(16px) translateX(-12px) rotate(0);
+    }
+  }
+
+@keyframes robotHand1-11
+  {
+    0% {
+      transform: translateY(-48px) translateX(27px) rotate(-32deg);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+
+@keyframes robotHand2-1
+  {
+    0% {
+      transform: rotate(-3deg) translateY(8px) translateX(-3px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-2
+  {
+    0% {
+      transform: rotate(8deg) translateY(9px) translateX(-6px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-3
+  {
+    0% {
+      transform: rotate(-9deg) translateY(4px) translateX(-8px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-4
+  {
+    0% {
+      transform: rotate(-9deg) translateY(4px);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+
+
+@keyframes robotHand2-5
+  {
+    0% {
+      transform: rotate(-9deg) translateY(2px) translateX(3px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-6
+  {
+    0% {
+      transform: rotate(8deg) translateY(10px) translateX(5px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-7
+  {
+    0% {
+      transform: rotate(11deg) translateY(5px) translateX(6px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-8
+  {
+    0% {
+      transform: rotate(-15deg) translateY(2px) translateX(3px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-9
+  {
+    0% {
+      transform: rotate(-4deg) translateY(17px);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-10
+  {
+    0% {
+      transform: rotate(-62deg) translateY(24px) translateX(10px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-11
+  {
+    0% {
+      transform: rotate(-18deg) translateY(2px) translateX(3px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-12
+  {
+    0% {
+      transform: translateY(18px) translateX(2px);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+
+@keyframes robotHand2-13
+  {
+    0% {
+      transform: rotate(-39deg) translateY(16px) translateX(6px);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-14
+  {
+    0% {
+      transform: rotate(10deg) translateY(2px);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+
+@keyframes robotHand2-15
+  {
+    0% {
+      transform: rotate(10deg) translateY(14px);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
