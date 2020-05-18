@@ -10,29 +10,14 @@ body {
  	--text-color: #000000;
  	--text-color-invert: #ffffff;
 
- 	--code-bg: #162128;
- 	--code-bg-inline: rgba(179, 37, 133, 0.06);
- 	--code-text: #fff;
- 	--code-text-inline: rgb(179, 37, 133);
-
- 	--title-color: #111;
  	--link-color: #03A5ED;
  	--link-color-hover: #078fcc;
- 	--border-color:  rgba(0,0,0,.1);
-
- 	--table-bg: transparent;
- 	--table-thead-bg: #ede1a0;
- 	--table-tr-hover: #f6f1d2;
-
- 	--header-bg: #0e161a;
- 	--header-link: #ced8de;
  	
 
   --space: 2rem;
-  --space-text: 2rem;
+  --space-text: 1rem;
   --content-width: 720px;
-  --page-width: 1440px;
-  --radius: 4px;
+  --text-width: 980px;
 
   --screen-padding: var(--space);
 }

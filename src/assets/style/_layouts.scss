@@ -1,3 +1,102 @@
 section{
   margin: var(--space) 0;
 }
+
+.layout{
+	padding-top: calc( var(--space) * 3 );
+	padding-bottom: 11rem; //padding for footer
+	text-align: center;
+
+	&__content {
+	  max-width: var(--content-width);
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding-left: calc( var(--space) * 2);
+	  padding-right: calc( var(--space) * 2);
+
+	  @media screen and (max-width: 720px) {
+	    padding-left: var(--space);
+	    padding-right: var(--space);
+	  }
+	}
+
+	&__text {
+	  max-width: var(--text-width);
+	}
+}
+
+
+.fade-enter-active {
+	transition: opacity .5s;
+}
+
+.fade-enter {
+	opacity: 0;
+}
+
+.screen{
+	min-height: 100%;
+	position: relative;
+	overflow-x: hidden;
+
+	&:before{
+	  content: "";
+	  position: absolute;
+	  z-index: -1;
+	  top: var(--screen-padding);
+	  bottom: var(--screen-padding);
+	  right: var(--screen-padding);
+	  left: var(--screen-padding);
+	  border: 1px solid var(--color-dark);
+	  background-color: var(--color-gray-light);
+	}
+}
+
+
+.logo { display: inline-block; }
+
+
+.footer{
+    position: absolute;
+    bottom: calc(var(--space) + 1rem);
+    left: var(--space);
+    right: var(--space);
+    text-align: center;
+	line-height: 1.5;
+}
+
+.msg{
+    position: fixed;
+    bottom: calc( var(--screen-padding) + 0.4rem );
+    right: calc( var(--screen-padding) + 0.4rem );
+    max-width: calc( 100% - 2*(var(--screen-padding) + 0.4rem) ) ;
+
+    &__solid {
+      padding: 0.4rem;
+    
+      &, .button { font-size: 90%; }
+      a { font-weight: 500; }
+    }
+
+    &__info{
+      background-color: var(--link-color);
+
+      &, a { color: var(--text-color-invert); }
+      a:hover{ color: var(--text-color); }
+
+      .button {
+        background-color: var(--color-dark);
+        color: var(--color-light);
+
+        &:hover{
+          background-color: var(--color-light);
+          color: var(--color-dark);
+        }
+      }
+    }
+}
+
+
+.m-space-left {
+	margin-left: var(--space);
+}

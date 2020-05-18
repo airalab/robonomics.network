@@ -4,7 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: var(--base-font-size);
-  line-height: var(--space-text);
+  line-height: 1.8;
 }
 
 p {
@@ -14,11 +14,11 @@ p {
 h1, h2, h3, h4, h5 {
   transition: color .6s;
   color: var(--title-color);
-  margin: 2.75rem 0 1rem;
+  margin: calc(var(--space-text) * 4) 0 calc(var(--space-text) * 2);
   font-family: 'Roboto', sans-serif;
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   font-weight: 400;
 
   word-break: break-word;
@@ -27,15 +27,20 @@ h1, h2, h3, h4, h5 {
 }
 
 
-h1 { font-size: 1.8rem; }
+h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.3rem;
+  text-shadow: rgba(3, 165, 237, .3) 0 0.3rem;
+}
 
-h2 {font-size: 1.7rem;}
+h2 {font-size: 1.5rem;}
 
-h3 {font-size: 1.4rem;}
+h3 {font-size: 1.2rem;}
 
-h4 {font-size: 1.2rem;}
+h4 {font-size: 1rem;}
 
-h5 {font-size: 1.1rem;}
+h5 {font-size: 0.8rem;}
 
 small {font-size: 0.800rem;}
 
@@ -81,8 +86,8 @@ p, ul, ol, li, blockquote {
 a{
   &:not(.button) {
     color: var(--link-color);
-    transition: opacity .2s;
-    
+    transition: opacity .2s, color .2s;
+
     &:hover {
       color: var(--link-color-hover);
     }
@@ -110,4 +115,6 @@ a{
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+
+  h1, h2, h3, h4, h5 { text-align: center; }
 }
