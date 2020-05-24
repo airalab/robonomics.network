@@ -12,7 +12,8 @@
     "gridsome-source-github-api": "^0.1.4",
     "vue-cookies": "^1.7.0",
     "vue-in-viewport-directive": "^2.0.0",
-    "vue-moment": "^4.1.0"
+    "vue-moment": "^4.1.0",
+    "vue-tabs-component": "^1.5.0"
   },
   "devDependencies": {
     "vue-svg-loader": "^0.16.0"

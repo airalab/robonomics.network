@@ -7,25 +7,19 @@
       <strong>#Ethereum</strong>&nbsp;
       <strong>#Polkadot</strong>&nbsp;
     </div>
-    <div>Founded in 2015 &nbsp; &bull; &nbsp; Latest release {{ this.releaseTime }}</div>
+    <div>
+      <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
+      <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
+    </div>
 
     <div class="msg">
-      <div class="msg__info msg__solid" v-if="!this.cookiePolicyAccepted()">
+      <div class="msg__info msg__solid" v-if="!this.cookiePolicyAccepted()" id="alert-cookiePolicy">
         This website uses cookies. <g-link to="/cookie-policy">Read Cookie Policy</g-link>
-        <button v-click="this.cookiePolicySet" class="button m-space-left">Ok</button>
+        <button @click="this.cookiePolicySet" class="button m-space-left">Ok</button>
       </div>
     </div>
   </div>
 </template>
-
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
 
 
 <style lang="scss">
@@ -37,6 +31,8 @@ query {
     right: var(--space);
     text-align: center;
     line-height: 1.5;
+
+    a.active--exact { color: var(--color-text); text-decoration: none; }
   }
 
   .msg{
@@ -85,16 +81,18 @@ query {
       return {
         release: null,
         update: null,
-        releaseTime: null
+        releaseTime: null,
+        releaseLink: null
       }
     },
 
     methods: {
       cookiePolicyAccepted(){
-        return this.$cookies.get('cookiePolicy4');
+        return this.$cookies.get('cookiePolicy');
       },
       cookiePolicySet(){
-        this.$cookies.set('cookiePolicy4','accepted');
+        this.$cookies.set('cookiePolicy','accepted');
+        document.querySelector('#alert-cookiePolicy').style.display="none";
       }
     },
 
@@ -107,6 +105,7 @@ query {
         this.release = results.data;
         this.update = this.release['published_at'];
         this.releaseTime = moment(this.update).from();
+        this.releaseLink = this.release['html_url'];
 
       } catch (error) {
         console.log(error)

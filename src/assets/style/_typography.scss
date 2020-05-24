@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5 {
   color: var(--title-color);
   margin: calc(var(--space-text) * 4) 0 calc(var(--space-text) * 2);
   font-family: 'Roboto', sans-serif;
-  line-height: 1;
+  line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
@@ -31,6 +31,7 @@ h1 {
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   padding-bottom: 0.3rem;
+  margin-bottom: calc(var(--space-text) * 4);
   text-shadow: rgba(3, 165, 237, .3) 0 0.3rem;
 }
 
@@ -42,7 +43,7 @@ h4 {font-size: 1rem;}
 
 h5 {font-size: 0.8rem;}
 
-small {font-size: 0.800rem;}
+small, .text__small { font-size: 80%; line-height: 1.4; }
 
 strong {
   font-weight: 500;
@@ -117,4 +118,9 @@ a{
   hyphens: auto;
 
   h1, h2, h3, h4, h5 { text-align: center; }
+}
+
+.ul-nostyle {
+  list-style: none;
+  padding-left: 0;
 }

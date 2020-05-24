@@ -1,5 +1,6 @@
 section{
-  margin: var(--space) 0;
+  margin-top: calc( var(--space) * 2 );
+  margin-bottom: calc( var(--space) * 2 );
 }
 
 .layout{
@@ -97,6 +98,5 @@ section{
 }
 
 
-.m-space-left {
-	margin-left: var(--space);
-}
+.m-space-left { margin-left: var(--space); }
+.m-space-right { margin-right: var(--space); }

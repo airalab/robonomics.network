@@ -28,7 +28,12 @@ query {
   .insidepage{
     .logo {
       width: 4rem;
-      margin-bottom: var(--space);
+      transition: 0.4s ease-out all;
+      // margin-bottom: var(--space);
+
+      &:hover{
+        transform: scale(1.5);
+      }
     }
   }
 </style>
