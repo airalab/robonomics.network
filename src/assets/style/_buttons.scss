@@ -2,27 +2,50 @@
 	{
 		padding: .5rem .8rem;
 		text-decoration: none;
-		font-weight: 700;
 		border: 0;
 
 		cursor: pointer;
-		font-family: 'Roboto', sans-serif;
-  		font-weight: 500;
-  		font-size: var(--base-font-size);
-  		line-height: 1;
+		
+		&, select {
+			font-family: 'Roboto', sans-serif;
+  			font-weight: 500;
+  			font-size: var(--base-font-size);
+  			line-height: 1;
+  		}
 
 		&__primary{
-			background-color: var(--link-color);
-			color: var(--color-light);
+			&, select {
+				background-color: var(--link-color);
+				color: var(--color-light);
+			}
 
 			&:hover{
 				background-color: var(--link-color-hover);
 			}
 		}
 
-		&:hover .icon {
-			transform-origin: 50% 50%;
-			transform: scale(1.2);
+		&__select {
+			padding: 0 .5rem 0 0;
+			overflow: hidden;
+
+			.icon, select {
+				display: inline-block;
+				vertical-align: middle;
+				padding: .8rem !important;
+			}
+
+			.icon {
+				margin-right: .5rem !important;
+				border-right: 1px solid rgba(0,0,0,0.3);
+			}
+
+			select {
+				-webkit-appearance: none;
+				appearance: none;
+				background-color: rgba(0,0,0,0.3);
+				font-size: 80%;
+				padding: .5rem !important;
+			}
 		}
 	}
 

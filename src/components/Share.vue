@@ -3,7 +3,8 @@
   <ul class="ul-nostyle">
     <li class="share" v-if="assets" v-for="(asset, key) in assets" :key="key">
 
-      <g-link :to="asset.link" class="share__link">
+
+      <g-link :to="(asset.options.length === 1)?asset.options[0].link:selected" class="share__link">
         <div class="share__col share__img">
           <g-image :src="require('!!assets-loader!~/assets/images/'+asset.img)"/>
         </div>
@@ -15,11 +16,19 @@
 
         <div class="share__col share__buttons">
 
-          <div class="button button__primary">
+          <div class="button button__primary button__select">
             <span v-if="asset.buttonicon" class="icon" v-html="asset.buttonicon" />
-            <small v-if="asset.buttontext" v-html="asset.buttontext" />
+
+            <select v-model="selected" v-if="asset.options.length > 1">
+              <option v-for="(option, key) in asset.options" v-bind:value="option.link">
+                  {{ option.text }}
+              </option>
+            </select>
+
+            <small v-if="asset.options.length === 1" v-html="asset.options[0].text" />
+
           </div>
-          
+
         </div>
       </g-link>
 
@@ -43,11 +52,14 @@
       width: 100%;
 
       background-color: var(--color-light);
-      padding: calc(var(--space)/2);
-      margin-bottom: var(--space);
+      padding: 0.5rem;
 
       &:last-child { margin-bottom: 0; }
       &:after { display: none !important; }
+
+      &:hover {
+        box-shadow: 0 .2rem 0 var(--link-color);
+      }
     }
 
     &__col {
@@ -81,7 +93,7 @@
     }
 
     &__img {
-      width: 30%;
+      width: 20%;
 
       img {
         display: block;
@@ -92,14 +104,10 @@
         display: none;
       }
 
-      &:hover {
-        transform-origin: 50% 50%;
-        transform: scale(1.3);
-      }
     }
 
     &__info {
-      width: 50%;
+      width: 65%;
     }
 
     &__buttons {
@@ -114,6 +122,12 @@
 <script>
 
 export default {
+  data () {
+    return {
+      selected: ''
+    }
+  },
+
   props: {
     assets: { type: Array, default: () => [] }
   }
