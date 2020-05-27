@@ -1,0 +1,11 @@
+- title: 'White Paper / May 12, 2018'
+  description: 'If you want to go deeper into learning Robonomics Network, read this document (.pdf ~ 2 MB).'
+  img: 'assets-logo.png'
+  buttonicon: '&#8595;'
+  options:
+    - link: 'https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf'
+      text: 'English'
+    - link: 'https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-ru.pdf'
+      text: 'Russian'
+    - link: 'https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-zh.pdf'
+      text: 'Chinese'

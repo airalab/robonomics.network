@@ -3,8 +3,7 @@
   <ul class="ul-nostyle">
     <li class="share" v-if="assets" v-for="(asset, key) in assets" :key="key">
 
-
-      <g-link :to="(asset.options.length === 1)?asset.options[0].link:selected" class="share__link">
+      <g-link :to="asset.options[selected].link" class="share__link">
         <div class="share__col share__img">
           <g-image :src="require('!!assets-loader!~/assets/images/'+asset.img)"/>
         </div>
@@ -20,7 +19,7 @@
             <span v-if="asset.buttonicon" class="icon" v-html="asset.buttonicon" />
 
             <select v-model="selected" v-if="asset.options.length > 1">
-              <option v-for="(option, key) in asset.options" v-bind:value="option.link">
+              <option v-for="(option, key) in asset.options" v-bind:value="key" v-bind:name="option.link">
                   {{ option.text }}
               </option>
             </select>
@@ -124,7 +123,7 @@
 export default {
   data () {
     return {
-      selected: ''
+      selected: 0
     }
   },
 

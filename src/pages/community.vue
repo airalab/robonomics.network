@@ -19,10 +19,7 @@
             <share :assets="assets"/>
           </tab>
           <tab name="Docs" class="layout__content layout__text">
-              <ul>
-                <li>Book</li>
-                <li>Book</li>
-              </ul>
+              <share :assets="docs"/>
           </tab>
           <tab name="Science" class="layout__content layout__text">
               <ul>
@@ -81,6 +78,7 @@
 
   import share from '~/components/Share.vue'
   import assets from '@/data/assets.yaml'
+  import docs from '@/data/docs.yaml'
 
   export default {
     components: {
@@ -89,6 +87,9 @@
     computed: {
       assets () {
         return assets
+      },
+      docs () {
+        return docs
       }
     }
     
