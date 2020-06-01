@@ -6,7 +6,8 @@
     </div>
 
     <section class="layout__content layout__text">
-      <tabs>
+      <!-- <tabs :options="{ useUrlFragment: false }"> -->
+      <tabs @changed="tab" @clicked="tabCl">
           <tab name="Intro" class="layout__content layout__text">
             <p class="hyphens"><strong>Get involved</strong> to Robonomics Network Community: read White paper, science papers, our brochures and other docs; find here information about XRT token; read news from our social account, chat with us, get intouch.</p>
 
@@ -91,7 +92,21 @@
       docs () {
         return docs
       }
-    }
+    },
+
+    methods: {
+      tab(event, selectedTab){
+        // console.log(selectedTab.tab.name);
+        // event.preventDefault;
+        console.log('chacnge');
+      },
+      tabCl(event){
+        // console.log(selectedTab.tab.name);
+        // event.preventDefault;
+        console.log('test');
+        console.log(event);
+      }
+    },
     
   }
 

@@ -25,7 +25,7 @@
 - title: 'Robonomics Visual Identity'
   description: 'Guide for Robonomics styles usage.'
   img: 'assets-brandbook.png'
-  buttonicon: '&#8595;'
+  buttonicon: '↗'
   options:
     - link: 'https://static.robonomics.network/assets/Robonomics-Visual-Identity.pdf'
       text: '.pdf, 12.7 Mb'
