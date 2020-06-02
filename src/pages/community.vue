@@ -22,7 +22,9 @@
           <tab name="Docs">
               <share :assets="docs"/>
           </tab>
-          <tab name="Science"></tab>
+          <tab name="Science">
+              <share :assets="science"/>
+          </tab>
           <tab name="Token"></tab>
           <tab name="Intouch"></tab>
       </tabs>
@@ -34,15 +36,13 @@
 
 <script>
 
-  // import Vue from 'vue'
-  // import Tabs from 'vue-tabs-component'
-  // Vue.use(Tabs)
-
   import share from '~/components/Share.vue'
   import tabs from '~/components/tabs.vue'
   import tab from '~/components/tab.vue'
+
   import assets from '@/data/assets.yaml'
   import docs from '@/data/docs.yaml'
+  import science from '@/data/science.yaml'
 
   export default {
     components: {
@@ -56,6 +56,9 @@
       },
       docs () {
         return docs
+      },
+      science () {
+        return science
       }
     }
     

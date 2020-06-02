@@ -1,7 +1,7 @@
 <template>
 
   <g-link :to="asset.options[selected].link" class="share__link">
-      <div class="share__col share__img">
+      <div class="share__col share__img" v-if="asset.img">
         <g-image :src="require('!!assets-loader!~/assets/images/'+asset.img)"/>
       </div>
 
@@ -46,7 +46,7 @@
       width: 100%;
 
       background-color: var(--color-light);
-      padding: 0.5rem;
+      padding: 1rem;
 
       &:last-child { margin-bottom: 0; }
       &:after { display: none !important; }
@@ -54,6 +54,8 @@
       &:hover {
         box-shadow: 0 .2rem 0 var(--link-color);
       }
+
+      &:visited { color: var(--link-color-visited) !important; }
     }
 
     &__col {
@@ -70,7 +72,7 @@
 
     &__title {
       font-weight: 500;
-      line-height: 1;
+      line-height: 1.2;
     }
 
     &__description {

@@ -1,0 +1,71 @@
+- title: '2020, Trustable Environmental Monitoring by means of Sensors Networks on Swarming Autonomous Marine Vessels and Distributed Ledger Technology'
+  description: 'Ivan Berman, Enrica Zereik, Aleksandr Kapitonov, Fabio Bonsignorio, Alisher Khasanov, Aziza Oripova, Sergey Lonshakov, Vitaly Bulatov'
+  buttonicon: '↗'
+  options:
+    - link: 'https://www.frontiersin.org/articles/10.3389/frobt.2020.00070/full'
+      text: 'Frontiers'
+
+- title: '2019, Robotic Services for New Paradigm Smart Cities Based on Decentralized Technologies'
+  description: 'Aleksandr Kapitonov, Sergey Lonshakov, Ivan Berman, Eduardo Castelló Ferrer, Fabio P Bonsignorio, Vitaly Bulatov, Aleksandr Svistov'
+  buttonicon: '↗'
+  options:
+    - link: 'http://www.ledgerjournal.org/ojs/index.php/ledger/article/view/177'
+      text: 'Ledger Journal'
+
+- title: '2019, Protocol for Organization of a Decentralized Autonomous Agents Network in Factories Using Market Mechanisms'
+  description: 'Aleksandr Kapitonov, Ivan Berman, Sergey Lonshakov, Aleksandr Krupenkin, Vitaly Bulatov'
+  buttonicon: '↗'
+  options:
+    - link: 'http://www.ijmerr.com/uploadfile/2019/0801/20190801034543607.pdf'
+      text: 'IJMERR'
+
+- title: '2018, Transforming climate finance and green investment with blockchains'
+  description: 'Alastair Marke'
+  buttonicon: '↗'
+  options:
+    - link: 'https://dl.acm.org/doi/book/10.5555/3285366'
+      text: 'ACM Library'
+    - link: 'https://books.google.ru/books?hl=ru&lr=&id=PG89DwAAQBAJ&oi=fnd&pg=PP1&ots=MZRAADkgSw&sig=WapfM0j2H5kY-f4ntZktUlHDJxE&redir_esc=y#v=onepage&q&f=false'
+      text: 'Google Books'
+
+- title: '2018, Robonomics: platform for integration of cyber physical systems into human economy'
+  description: 'Sergey Lonshakov, Aleksandr Krupenkin, Aleksandr Kapitonov, Evgeny Radchenko, Alisher Khassanov, Aleksandr Starostin'
+  buttonicon: '↗'
+  options:
+    - link: 'https://icorating.com/upload/whitepaper/iv5jaK71ghe48qOdCpgDxNBQMuaTIkC92HRWqfJ1.pdf'
+      text: 'ICO Rating'
+    - link: 'https://www.researchgate.net/profile/Aleksandr_Kapitonov/publication/336642043_Robonomics_platform_for_integration_of_cyber_physical_systems_into_human_economy_For_engineers_smart_cities_and_Industry_40_creators/links/5da9955092851c577eb82491/Robonomics-platform-for-integration-of-cyber-physical-systems-into-human-economy-For-engineers-smart-cities-and-Industry-40-creators.pdf'
+      text: 'ResearchGate'
+    - link: 'https://pdfs.semanticscholar.org/5b56/2e31dde0c84ac457912215d02742aa8c3af2.pdf'
+      text: 'Semantic Scholar'
+
+- title: '2018, Blockchain based protocol for economical communication in industry 4.0'
+  description: 'Aleksandr Kapitonov, Ivan Berman, Sergey Lonshakov, Aleksandr Krupenkin'
+  buttonicon: '↗'
+  options:
+    - link: 'https://ieeexplore.ieee.org/abstract/document/8525391/'
+      text: 'IEEE Xplore'
+
+- title: '2018, Robonomics based on blockchain as a principle of creating smart factories'
+  description: 'Aleksandr Kapitonov, Ivan Berman, Vitaly Bulatov, Sergey Lonshakov, Aleksandr Krupenkin'
+  buttonicon: '↗'
+  options:
+    - link: 'https://ieeexplore.ieee.org/abstract/document/8554864/'
+      text: 'IEEE Xplore'
+
+- title: '2018, Blockchain ecosystem for carbon markets, environmental assets, rights, and liabilities: Concept design and implementation'
+  description: 'Anton Galenovich, Sergey Lonshakov, Alexey Shadrin'
+  buttonicon: '↗'
+  options:
+    - link: 'https://www.sciencedirect.com/science/article/pii/B9780128144473000173'
+      text: 'ScienceDirect'
+
+- title: '2017, Blockchain-based protocol of autonomous business activity for multi-agent systems consisting of UAVs'
+  description: 'Aleksandr Kapitonov, Sergey Lonshakov, Aleksandr Krupenkin, Ivan Berman'
+  buttonicon: '↗'
+  options:
+    - link: 'https://ieeexplore.ieee.org/abstract/document/8101648'
+      text: 'IEEE Xplore'
+    - link: 'https://www.researchgate.net/profile/Aleksandr_Kapitonov/publication/325451400_Blockchain-based_protocol_of_autonomous_business_activity_for_multi-agent_systems_consisting_of_UAVs/links/5b0ebfdfa6fdcc80995b3926/Blockchain-based-protocol-of-autonomous-business-activity-for-multi-agent-systems-consisting-of-UAVs.pdf'
+      text: 'ResearchGate'
+
