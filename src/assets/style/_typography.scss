@@ -7,10 +7,6 @@ body {
   line-height: 1.8;
 }
 
-p {
-	margin-bottom: var(--space-text);
-}
-
 h1, h2, h3, h4, h5 {
   transition: color .6s;
   color: var(--title-color);
@@ -110,6 +106,19 @@ a{
   }
 }
 
+
+p {
+  margin-bottom: var(--space-text);
+}
+
+hr {
+  margin: var(--space-text) 0;
+  border: 0;
+  outline: 0;
+  height: 1px;
+  background-color: var(--text-color)
+}
+
 .hyphens{
   text-align: justify;
   -webkit-hyphens: auto;
@@ -119,6 +128,8 @@ a{
 
   h1, h2, h3, h4, h5 { text-align: center; }
 }
+
+.align-left { text-align: left; }
 
 .ul-nostyle {
   list-style: none;

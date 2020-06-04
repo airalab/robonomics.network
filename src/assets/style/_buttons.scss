@@ -53,6 +53,12 @@
 				padding-right: 26px !important;
 			}
 		}
+
+		&__block{
+			display: block;
+			width: 100%;
+			margin: var(--space-text);
+		}
 	}
 
 

@@ -5,6 +5,7 @@
       <strong>#NixOS</strong>&nbsp;
       <strong>#IPFS</strong>&nbsp;
       <strong>#Ethereum</strong>&nbsp;
+      <strong>#Kusama</strong>&nbsp;
       <strong>#Polkadot</strong>&nbsp;
     </div>
     <div>

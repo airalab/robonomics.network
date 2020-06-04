@@ -3,15 +3,33 @@ section{
   margin-bottom: calc( var(--space) * 2 );
 }
 
+.section{
+  margin-top: var(--space);
+  margin-bottom: var(--space);
+
+  &__solid{
+  	background-color: var(--color-light);
+  	padding: 1rem;
+
+  	h1, h2, h3, h4, h5 {
+  		margin-bottom: var(--space-text);
+  	}
+  }
+}
+
 .layout{
+	&, &__content, &__text, &__text_small {
+		display: block;
+		margin-left: auto;
+  		margin-right: auto;
+  	}
+
 	padding-top: calc( var(--space) * 3 );
 	padding-bottom: 11rem; //padding for footer
 	text-align: center;
 
 	&__content {
 	  max-width: var(--content-width);
-	  margin-left: auto;
-	  margin-right: auto;
 	  padding-left: calc( var(--space) * 2);
 	  padding-right: calc( var(--space) * 2);
 
@@ -22,7 +40,11 @@ section{
 	}
 
 	&__text {
-	  max-width: var(--text-width);
+  		max-width: var(--text-width);
+	}
+
+	&__text_small {
+		max-width: calc(var(--text-width) * 0.6);
 	}
 }
 
