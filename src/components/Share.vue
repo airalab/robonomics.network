@@ -1,7 +1,7 @@
 <template>
 
   <ul class="ul-nostyle">
-    <li class="share" v-if="assets" v-for="(asset, key) in assets" :key="key">
+    <li class="share" :class="classes" v-if="assets" v-for="(asset, key) in assets" :key="key">
       <ShareItem :asset=asset />
     </li>
   </ul>
@@ -21,7 +21,8 @@ export default {
     },
 
   props: {
-    assets: { type: Array, default: () => [] }
+    assets: { type: Array, default: () => [] },
+    classes: ''
   }
 
 }

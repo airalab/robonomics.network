@@ -1,0 +1,7 @@
+- title: 'Robonomics Github Repositories'
+  description: 'Robonomics is open-source web3 framework. Visit our Github account, even if you are non-tech pro, to have an idea of what we do in practice right now (repositories have their own descriptions).'
+  img: 'github.png'
+  buttonicon: '↗'
+  options:
+    - link: 'https://github.com/airalab'
+      text: 'Follow'

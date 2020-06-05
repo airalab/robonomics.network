@@ -42,8 +42,11 @@
       text-decoration: none;
       color: var(--color-text) !important;
       text-align: left;
-      display: table;
-      width: 100%;
+      // display: table;
+      display: flex;
+      // width: 100%;
+      align-items: flex-start;
+      justify-content: space-between;
 
       background-color: var(--color-light);
       padding: 1rem;
@@ -60,8 +63,8 @@
 
     &__col {
       padding-right: calc(var(--space)/2);
-      display: table-cell;
-      vertical-align: top;
+      // display: table-cell;
+      // vertical-align: top;
 
       &:last-child { padding-right:0; }
     }
@@ -79,9 +82,9 @@
       margin-top: 0.5rem;
     }
 
-    &__buttons {
-      text-align: right;
-    }
+    // &__buttons {
+    //   text-align: right;
+    // }
 
     .button {
       display: inline-block;
@@ -96,7 +99,7 @@
         max-width: 100%;
       }
 
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 450px) {
         display: none;
       }
 
@@ -106,10 +109,43 @@
       width: 65%;
     }
 
-    &__buttons {
-      width: 20%;
-    }
+    // &__buttons {
+    //   width: 20%;
+    // }
+
   }
+
+    .tab-intouch {
+      .share__img {
+        max-width: 100px;
+
+        @media screen and (max-width: 450px) {
+          display: block;
+        }
+      }
+
+      .share__description {
+        @media screen and (max-width: 450px) {
+          display: none;
+        }
+      }
+    }
+
+
+    .tab-science {
+        @media screen and (max-width: 450px) {
+          .share {
+            &__link {
+              display: block;
+            }
+
+            &__col {
+                width: 100%;
+                margin-bottom: var(--space-text);
+              }
+          }
+        }
+    }
 
   
 </style>

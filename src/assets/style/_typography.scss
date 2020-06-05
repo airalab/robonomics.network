@@ -136,3 +136,9 @@ hr {
   padding-left: 0;
   margin-left: 0;
 }
+
+code {
+  max-width: 100%;
+  overflow-x: scroll;
+  display: inline-block;
+}

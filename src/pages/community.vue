@@ -23,7 +23,7 @@
               <share :assets="docs"/>
           </tab>
           <tab name="Science">
-              <share :assets="science"/>
+              <share :assets="science" :classes="'tab-science'"/>
           </tab>
           <tab name="Token">
             
@@ -34,13 +34,6 @@
               <p class="hyphens"><strong>Real world use cases</strong> in <a href="https://dapp.robonomics.network/" target="_blank">Robonomics dApp</a>. Note: XRT is not payment token for marketplace. Robonomics allows you to use any tokens as payment token for your robot-as-a-service. The robot will be charged commission by network in XRT. So if you are a robot holder, you can use any token for charging and your customers don't need to know additional information about other tokens, including XRT.</p>
               <p class="hyphens"><strong>Distribution Release 2020</strong> in the <a href="https://ipfs.io/ipfs/QmTPuS1DZtZSsjtBiPDLp4dqXaNs9P4JAR6kaiTG51sceG/Robonomics_token_distribution_release_May_2020.pdf" target="_blank">presentation</a>, accepted by Core dev DAO vote #51 on Aragon Aira Mainnet.</p>
               <p class="hyphens"><strong>"Reasons to buy Robonomics (XRT)"</strong> in the <a href="https://www.reddit.com/r/CryptoMoonShots/comments/gofzjc/a_new_x10_on_uniswap_xrt_analysis/" target="_blank">discussion</a> on CryptoMoonShots Reddit channel.</p>
-
-<!-- 
-              <div class="section section__solid hyphens"><strong>Core information</strong> about main tasks, emission, usage and additional tasks of Robonomics token (XRT) in the <a href="https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf" target="_blank">White Paper, chapter 6</a>.</div>
-              <div class="section section__solid hyphens"><strong>Which networks and why Robonomics supports</strong> read in the <a href="https://blog.aira.life/robonomics-parachain-on-kusama-40853780c709" target="_blank">article of Airalab team blog</a>.</div>
-              <div class="section section__solid hyphens"><strong>Real world use cases</strong> in <a href="https://dapp.robonomics.network/" target="_blank">Robonomics dApp</a>. Note: XRT is not payment token for marketplace. Robonomics allows you to use any tokens as payment token for your robot-as-a-service. The robot will be charged commission by network in XRT. So if you are a robot holder, you can use any token for charging and your customers don't need to know additional information about other tokens, including XRT.</div>
-              <div class="section section__solid hyphens"><strong>Distribution Release 2020</strong> in the <a href="https://ipfs.io/ipfs/QmTPuS1DZtZSsjtBiPDLp4dqXaNs9P4JAR6kaiTG51sceG/Robonomics_token_distribution_release_May_2020.pdf" target="_blank">presentation</a>, accepted by Core dev DAO vote #51 on Aragon Aira Mainnet.</div>
-              <div class="section section__solid hyphens"><strong>"Reasons to buy Robonomics (XRT)"</strong> in the interesting <a href="https://www.reddit.com/r/CryptoMoonShots/comments/gofzjc/a_new_x10_on_uniswap_xrt_analysis/" target="_blank">discussion</a> on CryptoMoonShots Reddit channel.</div> -->
 
               <div class="section section__solid">
                 <h3>How to buy XRT</h3>
@@ -68,7 +61,9 @@
             
             
           </tab>
-          <tab name="Intouch"></tab>
+          <tab name="Intouch">
+            <share :assets="intouch" :classes="'tab-intouch'"/>
+          </tab>
       </tabs>
     </section>
 
@@ -85,6 +80,7 @@
   import assets from '@/data/assets.yaml'
   import docs from '@/data/docs.yaml'
   import science from '@/data/science.yaml'
+  import intouch from '@/data/intouch.yaml'
 
   export default {
     components: {
@@ -101,6 +97,9 @@
       },
       science () {
         return science
+      },
+      intouch () {
+        return intouch
       }
     }
     
