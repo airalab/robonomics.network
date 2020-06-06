@@ -10,7 +10,8 @@
     </div>
     <div>
       <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
-      <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
+      <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link> &nbsp; &bull; &nbsp; 
+      <g-link to="https://github.com/airalab/robonomics.network/issues">Edit website</g-link>
     </div>
 
     <div class="msg">
@@ -18,6 +19,11 @@
         This website uses cookies. <g-link to="/cookie-policy">Read Cookie Policy</g-link>
         <button @click="this.cookiePolicySet" class="button m-space-left">Ok</button>
       </div>
+
+      <!-- <a id="msg-editbutton" class="button button__border button__icon" href="https://github.com/airalab/robonomics.network/issues" target="_blank">
+        <span class="icon">&#9998;</span>
+        <small>Edit website</small>
+      </a> -->
     </div>
   </div>
 </template>
@@ -38,8 +44,8 @@
 
   .msg{
     position: fixed;
-    bottom: calc( var(--screen-padding) + 0.4rem );
-    right: calc( var(--screen-padding) + 0.4rem );
+    bottom: calc( var(--screen-padding) + 1rem );
+    right: calc( var(--screen-padding) + 0.6rem );
     max-width: calc( 100% - 2*(var(--screen-padding) + 0.4rem) ) ;
 
     &__solid {
@@ -64,6 +70,14 @@
           color: var(--color-dark);
         }
       }
+    }
+  }
+
+  #msg-editbutton {
+    @media screen and (max-width: 450px) {
+      padding-right: 0;
+      small { display: none; }
+      .icon { margin-right: 0; border: 0; }
     }
   }
 </style>
