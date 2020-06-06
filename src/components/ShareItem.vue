@@ -39,15 +39,13 @@
     margin-bottom: var(--space);
 
     &__link {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      gap: calc(var(--space)/2);
+
       text-decoration: none;
       color: var(--color-text) !important;
       text-align: left;
-      // display: table;
-      display: flex;
-      // width: 100%;
-      align-items: flex-start;
-      justify-content: space-between;
-
       background-color: var(--color-light);
       padding: 1rem;
 
@@ -59,14 +57,6 @@
       }
 
       &:visited { color: var(--link-color-visited) !important; }
-    }
-
-    &__col {
-      padding-right: calc(var(--space)/2);
-      // display: table-cell;
-      // vertical-align: top;
-
-      &:last-child { padding-right:0; }
     }
 
     &__title, &__description {
@@ -82,17 +72,7 @@
       margin-top: 0.5rem;
     }
 
-    // &__buttons {
-    //   text-align: right;
-    // }
-
-    .button {
-      display: inline-block;
-      white-space: nowrap;
-    }
-
     &__img {
-      width: 20%;
 
       img {
         display: block;
@@ -105,48 +85,29 @@
 
     }
 
-    &__info {
-      width: 65%;
+    &__buttons {
+      justify-self: end;
     }
 
-    // &__buttons {
-    //   width: 20%;
-    // }
+    .button {
+      display: inline-block;
+      white-space: nowrap;
+    }
 
   }
 
-    .tab-intouch {
-      .share__img {
-        max-width: 100px;
 
-        @media screen and (max-width: 450px) {
-          display: block;
-        }
-      }
-
-      .share__description {
-        @media screen and (max-width: 450px) {
-          display: none;
-        }
-      }
+  .tab-science {
+    .share__link {
+      grid-template-columns: 4fr 1fr;
     }
+  }
 
-
-    .tab-science {
-        @media screen and (max-width: 450px) {
-          .share {
-            &__link {
-              display: block;
-            }
-
-            &__col {
-                width: 100%;
-                margin-bottom: var(--space-text);
-              }
-          }
-        }
+  .tab-intouch {
+    .share__link {
+      grid-template-columns: minmax(auto, 60px) 3fr 1fr;
     }
-
+  }
   
 </style>
 

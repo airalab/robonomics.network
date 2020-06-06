@@ -9,7 +9,7 @@
       <tabs>
           <!-- <tab name="Intro" :selected="true"> -->
           <tab name="Intro" :selected="true">
-            <p class="hyphens"><strong>Get involved</strong> to Robonomics Network Community: read White paper, science papers, our brochures and other docs; find here information about XRT token; read news from our social account, chat with us, get intouch.</p>
+            <p class="hyphens"><strong>Get involved</strong> to Robonomics Network Community: read White paper, science papers, our brochures and other docs; find here information about XRT token; read news from our social accounts, chat with us, get intouch.</p>
 
             <p class="hyphens"><strong>If you are already involved</strong>, you can find here useful assets: logotype, token sign, slides template, wallpapers etc.</p>
 
@@ -40,7 +40,7 @@
                 <hr/>
                 <p><strong>1. Please, check Robonomics token's address, it is</strong><br/> <a href="https://etherscan.io/address/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7"><code>0x7de91b204c1c737bcee6f000aaa6569cf7061cb7</code></a></p>
                 <hr/>
-                <p><strong>2. We recommend to trade XRT on the following exchages:</strong></p>
+                <p><strong>2. To trade XRT visit one of the following exchages:</strong></p>
                 <p>
                   <a href="https://uniswap.info/pair/0x3185626c14acb9531d19560decb9d3e5e80681b1" target="_blank">Uniswap v2</a><br/>
                   <small class="layout__text_small">Decentralized protocol for automated liquidity provision on Ethereum.</small>
