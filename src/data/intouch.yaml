@@ -48,7 +48,7 @@
 - title: 'Riot, Robonomics technical'
   description: 'Technical questions & other insides.'
   img: 'riot.png'
-  buttonicon: '↗'
+  buttonicon: '+'
   options:
     - link: 'https://riot.im/app/#/room/#robonomics:matrix.org'
       text: 'Join chat'

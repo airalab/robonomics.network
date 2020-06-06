@@ -57,6 +57,10 @@
       }
 
       &:visited { color: var(--link-color-visited) !important; }
+
+      @media screen and (max-width: 450px) {
+        grid-template-columns: 1fr !important;
+      }
     }
 
     &__title, &__description {
@@ -86,7 +90,10 @@
     }
 
     &__buttons {
-      justify-self: end;
+    
+      @media screen and (min-width: 450px) {
+        justify-self: end;
+      }
     }
 
     .button {
