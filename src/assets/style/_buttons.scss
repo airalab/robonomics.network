@@ -13,6 +13,34 @@
   			line-height: 1;
   		}
 
+  		&__primary{
+			&, select {
+				background-color: var(--link-color);
+				color: var(--color-light);
+			}
+
+			&:hover{
+				background-color: var(--link-color-hover);
+			}
+		}
+
+		&__border {
+			background-color: var(--color-light);
+			border: 2px solid var(--link-color);
+			color: var(--link-color);
+
+			.icon { border-color: var(--link-color); }
+
+			&:hover {
+				background-color: var(--link-color);
+				color: var(--color-light);
+
+				.icon { border-color: var(--color-light); }
+
+			}
+		}
+		
+
 		&__select {
 			overflow: hidden;
 
@@ -49,33 +77,6 @@
 		}
 
 		
-
-		&__primary{
-			&, select {
-				background-color: var(--link-color);
-				color: var(--color-light);
-			}
-
-			&:hover{
-				background-color: var(--link-color-hover);
-			}
-		}
-
-		&__border {
-			background-color: var(--color-light);
-			border: 2px solid var(--link-color);
-			color: var(--link-color);
-
-			.icon { border-color: var(--link-color); }
-
-			&:hover {
-				background-color: var(--link-color);
-				color: var(--color-light);
-
-				.icon { border-color: var(--color-light); }
-
-			}
-		}
 
 		&__block{
 			display: block;

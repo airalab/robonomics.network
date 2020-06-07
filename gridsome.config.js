@@ -8,7 +8,14 @@ module.exports = {
   siteName: 'Robonomics Framework',
   siteDescription: 'Robonomics Framework is a set of open-source packages for Robotics, Smart Cities and Industry 4.0 developers.',
 
-  plugins: [],
+  plugins: [
+    {
+      use: 'gridsome-plugin-yandex-metrika',
+      options: {
+        id: 47762995
+      }
+    }
+  ],
 
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
