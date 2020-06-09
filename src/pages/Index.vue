@@ -99,6 +99,10 @@ query {
   import navigation from '~/components/Navigation.vue'
 
   export default {
+    metaInfo: {
+      title: 'Home'
+    },
+
     components: {
       navigation
     },

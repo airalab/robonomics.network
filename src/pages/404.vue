@@ -19,6 +19,10 @@
   import navigation from '~/components/Navigation.vue'
 
   export default {
+    metaInfo: {
+      title: 'Page not found'
+    },
+
     components: {
       navigation
     }

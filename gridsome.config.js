@@ -7,6 +7,10 @@
 module.exports = {
   siteName: 'Robonomics Framework',
   siteDescription: 'Robonomics Framework is a set of open-source packages for Robotics, Smart Cities and Industry 4.0 developers.',
+  siteUrl: 'https://robonomics.network',
+
+  titleTemplate: '%s | robonomics.network',
+  // titleTemplate: (title) => title ? `%s | ${title}` : '%s',
 
   plugins: [
     {
@@ -23,12 +27,5 @@ module.exports = {
     svgRule
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
-      //  .options({
-     //    svgo: {
-     //      plugins: [
-     //        { removeDimensions: true },
-     //      ],
-     //    },
-      // });
   }
 }

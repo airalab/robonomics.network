@@ -34,6 +34,11 @@
   </layout-inside>
 </template>
 
-<style lang="scss">
- 
-</style>
+<script>
+
+  export default {
+    metaInfo: {
+      title: 'Cookie policy'
+    }
+  }
+</script>

@@ -84,3 +84,12 @@
     }
   }
 </style>
+
+<script>
+
+  export default {
+    metaInfo: {
+      title: 'Timeline'
+    }
+  }
+</script>

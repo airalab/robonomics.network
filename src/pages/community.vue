@@ -1,11 +1,17 @@
 <template>
   <layout-inside>
 
+    <MetaInfo
+      :pageTitle = "'Robonomics Network Community'"
+      :pageDescription = "'On this page you may find logo assets, wallpapers, documents such as White Paper, links to our scientific papers, social account, read about Robonomics Utility Token (XRT), and dig out other useful information.'"
+    />
+
     <div class="layout__content layout__text">
       <h1>Robonomics framework community</h1>
     </div>
 
     <section class="layout__content layout__text">
+
       <tabs>
           <!-- <tab name="Intro" :selected="true"> -->
           <tab name="Intro" :selected="true">
@@ -72,6 +78,8 @@
 
 <script>
 
+  import MetaInfo from '~/components/MetaInfo.vue'
+
   import share from '~/components/Share.vue'
   import tabs from '~/components/tabs.vue'
   import tab from '~/components/tab.vue'
@@ -82,7 +90,9 @@
   import intouch from '@/data/intouch.yaml'
 
   export default {
+
     components: {
+      MetaInfo,
       share,
       tabs,
       tab
