@@ -30,11 +30,9 @@
               <p class="hyphens">Here we are collecting all important theoretical and practical information about <strong>Robonomics Token (XRT)</strong>.</p>
 
                <p class="hyphens"><strong>Core information</strong> about main tasks, emission, usage and additional tasks of Robonomics token (XRT) in the <a href="https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf" target="_blank">White Paper, chapter 6</a>.</p>
-              <!-- <p class="hyphens"><strong>Which networks and why Robonomics supports</strong> read in the <a href="https://blog.aira.life/robonomics-parachain-on-kusama-40853780c709" target="_blank">article of Airalab team blog</a>.</p> -->
               <p class="hyphens"><strong>Ethereum and Polkadot</strong> are token platforms for now. We are ready for launching of native Kusama parachain and plan to do it as soon as this is possible, <a href="https://blog.aira.life/robonomics-parachain-on-kusama-40853780c709" target="_blank">read more</a>.</p>
               <p class="hyphens"><strong>Real world use cases</strong> in <a href="https://dapp.robonomics.network/" target="_blank">Robonomics dApp</a>. Note: XRT is utility token, not payment token for marketplace. Robonomics allows you to use any tokens as payment token for your robot-as-a-service. The robot will be charged commission by network in XRT. So if you are a robot holder, you can use any token for charging and your customers don't need to know additional information about other tokens, including XRT.</p>
               <p class="hyphens"><strong>Distribution Release 2020</strong> in the <a href="https://ipfs.io/ipfs/QmTPuS1DZtZSsjtBiPDLp4dqXaNs9P4JAR6kaiTG51sceG/Robonomics_token_distribution_release_May_2020.pdf" target="_blank">presentation</a>, accepted by Core dev DAO vote #51 on Aragon Aira Mainnet.</p>
-              <p class="hyphens"><strong>"Reasons to buy Robonomics (XRT)"</strong> in the <a href="https://www.reddit.com/r/CryptoMoonShots/comments/gofzjc/a_new_x10_on_uniswap_xrt_analysis/" target="_blank">discussion</a> on CryptoMoonShots Reddit channel.</p>
 
               <div class="section section__solid">
                 <h3>How to buy XRT</h3>
