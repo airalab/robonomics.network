@@ -31,7 +31,6 @@ query {
     .logo {
       width: 4rem;
       transition: 0.4s ease-out all;
-      // margin-bottom: var(--space);
 
       &:hover{
         transform: scale(1.5);
