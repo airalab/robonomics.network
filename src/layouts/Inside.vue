@@ -1,16 +1,18 @@
 <template>
   <transition name="fade" appear>
-    <div class="layout insidepage screen">
+   
+        <div class="layout insidepage screen">
 
-      <div class="layout__content">
-        <g-link to="/" class="logo"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
-      </div>
-    
-      <slot/>
+          <div class="layout__content">
+            <g-link to="/" class="logo"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
+          </div>
+        
+          <slot/>
 
-      <Footer/>
+          <ClientOnly> <Footer/> </ClientOnly>
 
-    </div>
+        </div>
+
   </transition>
 </template>
 
@@ -40,11 +42,10 @@ query {
 
 
 <script>
-import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
-    Footer
+    Footer: () => import('~/components/Footer.vue')
   }
 }
 </script>

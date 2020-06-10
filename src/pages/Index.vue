@@ -15,7 +15,7 @@
         <div class="layout__content">
 
           <p itemprop="description" v-html="$static.metadata.siteDescription" />
-          <navigation />
+          <Navigation />
 
         </div>
 
@@ -101,13 +101,13 @@ query {
   import inViewportDirective from 'vue-in-viewport-directive'
   Vue.directive('in-viewport', inViewportDirective)
 
-  import navigation from '~/components/Navigation.vue'
+  import Navigation from '~/components/Navigation.vue'
   import MetaInfo from '~/components/MetaInfo.vue'
 
   export default {
 
     components: {
-      navigation,
+      Navigation,
       MetaInfo
     },
 
