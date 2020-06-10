@@ -1,6 +1,11 @@
 <template>
   <layout-inside>
 
+    <MetaInfo
+      :pageTitle = "'Timeline'"
+      :pageDescription = "'Robonomics in the past and nowadays, some important checkpoints of evolution.'"
+    />
+
     <div class="layout__content layout__text">
       <h1>Infrastructure && tech development timeline</h1>
     </div>
@@ -87,9 +92,11 @@
 
 <script>
 
+  import MetaInfo from '~/components/MetaInfo.vue'
+
   export default {
-    metaInfo: {
-      title: 'Timeline'
+    components: {
+      MetaInfo
     }
   }
 </script>

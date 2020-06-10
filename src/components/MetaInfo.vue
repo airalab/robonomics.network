@@ -15,28 +15,47 @@ export default {
       pageTitle: { type: String, default: '' },
       pageDescription: { type: String, default: '' }
   },
+
+  data() {
+        
+        return {
+            title: this.pageTitle + ' / Robonomics.network'
+        };
+        
+    },
  
 
   metaInfo() {
     return {
-      title: this.pageTitle,
+      title: this.title,
       meta: [
         { key: 'description', name: 'description', content: this.pageDescription },
 
         // Some Open Graph Tags
-        { property: "og:title", content: this.pageTitle },
+        { property: "og:type", content: "website" },
+        { property: "og:site_name", content: this.$static.metadata.siteName },
+        { property: "og:title", content: this.title },
         { property: "og:description", content: this.pageDescription },
-        // { property: "og:image", content: this.$page.post.cover_image },
+        { property: "og:image", content: '/website_cover.png' },
+        { property: "og:image:width", content: '1280' },
+        { property: "og:image:height", content: '800' },
+        {
+          property: "og:url",
+          content: window.location.href
+        },
         // {
         //   property: "og:url",
-        //   content: this.$static.metadata.siteUrl + this.$page.post.path
+        //   content: this.$static.metadata.siteUrl + window.location.pathname
         // },
 
+
         // Some Twitter Cards Tags
-        // { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: this.pageTitle },
-        // { name: "twitter:image", content: this.$page.post.cover_image },
-        { name: "twitter:description", content: this.pageDescription }
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: this.title },
+        { name: "twitter:image", content: '/website_cover.png' },
+        { name: "twitter:description", content: this.pageDescription },
+        { name: "twitter:site", content: '@AIRA_Robonomics' },
+        { name: "twitter:creator", content: '@AIRA_Robonomics' }
       ]
 
       // //Some ld+json tags

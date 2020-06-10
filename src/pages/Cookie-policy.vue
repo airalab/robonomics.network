@@ -1,6 +1,11 @@
 <template>
   <layout-inside>
 
+    <MetaInfo
+      :pageTitle = "'Cookie policy'"
+      :pageDescription = "'Here you can find reasons why we use cookies on robonomics.network to decide is it ok for you.'"
+    />
+
     <div class="layout__content layout__text">
       <h1>Cookie policy</h1>
     </div>
@@ -36,9 +41,11 @@
 
 <script>
 
+  import MetaInfo from '~/components/MetaInfo.vue'
+
   export default {
-    metaInfo: {
-      title: 'Cookie policy'
+    components: {
+      MetaInfo
     }
   }
 </script>

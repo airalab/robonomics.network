@@ -2,7 +2,7 @@
   <layout-inside>
 
     <MetaInfo
-      :pageTitle = "'Robonomics Network Community'"
+      :pageTitle = "'Community'"
       :pageDescription = "'On this page you may find logo assets, wallpapers, documents such as White Paper, links to our scientific papers, social account, read about Robonomics Utility Token (XRT), and dig out other useful information.'"
     />
 

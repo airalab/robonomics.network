@@ -1,5 +1,10 @@
 <template>
   <layout-index>
+
+      <MetaInfo
+        :pageTitle = "'Home'"
+        :pageDescription = "$static.metadata.siteDescription"
+      />
     
       <div class="layout__content">
         <g-image itemprop="logo" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" class="logo"/>
@@ -97,14 +102,13 @@ query {
   Vue.directive('in-viewport', inViewportDirective)
 
   import navigation from '~/components/Navigation.vue'
+  import MetaInfo from '~/components/MetaInfo.vue'
 
   export default {
-    metaInfo: {
-      title: 'Home'
-    },
 
     components: {
-      navigation
+      navigation,
+      MetaInfo
     },
 
     mounted() {
