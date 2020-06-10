@@ -1,14 +1,8 @@
-# Default starter for Gridsome
+# Official website of Robonomics Network
 
-This is the project you get when you run `gridsome create new-project`.
+This website is supposed to contain all useful information for our community.
 
-### 1. Install Gridsome CLI tool if you don't have
-
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+### How to suggest any changes
+1. Create an issue for this repo.
+2. Be sure you checked website carefully and the description of issue is quite clear.
+3. We will consider your suggestion as soon as we can and give you reply.
