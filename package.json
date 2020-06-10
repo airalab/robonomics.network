@@ -11,6 +11,7 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-yandex-metrika": "^0.1.2",
     "gridsome-source-github-api": "^0.1.4",
+    "sass-loader": "^8.0.2",
     "vue-cookies": "^1.7.0",
     "vue-in-viewport-directive": "^2.0.0",
     "vue-moment": "^4.1.0",
