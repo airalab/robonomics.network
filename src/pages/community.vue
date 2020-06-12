@@ -7,7 +7,7 @@
     />
 
     <div class="layout__content layout__text">
-      <h1>Robonomics framework community</h1>
+      <h1>Robonomics community</h1>
     </div>
 
     <section class="layout__content layout__text">
