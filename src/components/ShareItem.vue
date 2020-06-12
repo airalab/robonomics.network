@@ -1,6 +1,6 @@
 <template>
 
-  <g-link :to="asset.options[selected].link" class="share__link">
+  <g-link :to="asset.options[selected].link" class="share__link" v-on:click="selectInButton">
       <div class="share__col share__img" v-if="asset.img">
         <g-image :src="require('!!assets-loader!~/assets/images/'+asset.img)"/>
       </div>
@@ -129,7 +129,17 @@ export default {
     }
   },
 
-  props: ['asset']
+  props: ['asset'],
+
+
+  methods: {
+      selectInButton(event){
+        // console.log(event.target.tagName);
+        if ( event.target.tagName === 'SELECT' || event.target.tagName === 'OPTION' )
+          event.preventDefault();
+          // event.stopPropagation();
+      }
+  }
 
 }
 </script>
