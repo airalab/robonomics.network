@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.1",
     "axios": "^0.19.2",
     "gridsome": "^0.7.0",
     "gridsome-plugin-yandex-metrika": "^0.1.2",
