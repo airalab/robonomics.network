@@ -1,4 +1,4 @@
-// This is where project configuration and plugin options are located. 
+// This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here require a server restart.
@@ -18,6 +18,12 @@ module.exports = {
       options: {
         id: 47762995
       }
+    },
+    {
+      use: "@gridsome/plugin-google-analytics",
+      options: {
+        id: "UA-169310127-1",
+      },
     }
   ],
 
