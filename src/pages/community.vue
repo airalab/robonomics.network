@@ -4,6 +4,7 @@
     <MetaInfo
       :pageTitle = "'Community'"
       :pageDescription = "'On this page you may find logo assets, wallpapers, documents such as White Paper, links to our scientific papers, social account, read about Robonomics Utility Token (XRT), and dig out other useful information.'"
+      :pageImage = "'/website_cover_token.png'"
     />
 
     <div class="layout__content layout__text">
@@ -43,19 +44,25 @@
               <div class="section section__solid">
                 <h3>How to buy XRT</h3>
                 <hr/>
-                <p><strong>1. Please, check Robonomics token's address, it is</strong><br/> <a href="https://etherscan.io/address/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7"><code>0x7de91b204c1c737bcee6f000aaa6569cf7061cb7</code></a></p>
+                <p><strong>1. Please, check Robonomics token's address, it is</strong><br/>
+                  <g-link to="https://etherscan.io/address/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7" target="_blank"><code>0x7de91b204c1c737bcee6f000aaa6569cf7061cb7</code></g-link>
+                </p>
                 <hr/>
                 <p><strong>2. To trade XRT visit one of the following exchages:</strong></p>
                 <p>
-                  <a href="https://uniswap.info/pair/0x3185626c14acb9531d19560decb9d3e5e80681b1" target="_blank">Uniswap v2</a><br/>
+                  <g-link to="https://uniswap.info/pair/0x3185626c14acb9531d19560decb9d3e5e80681b1" target="_blank">Uniswap v2</g-link><br/>
                   <small class="layout__text_small">Decentralized protocol for automated liquidity provision on Ethereum.</small>
                 </p>
                 <p>
-                  <a href="https://idex.market/eth/xrt" target="_blank">Idex</a><br/>
+                  <g-link to="https://app.stex.com/en/trade/pair/ETH/XRT/5" target="_blank">STEX</g-link><br/>
+                  <small class="layout__text_small">Regulated crypto currency exchange based in Estonia (previously stocks.exchange).</small>
+                </p>
+                <p>
+                  <g-link to="https://idex.market/eth/xrt" target="_blank">Idex</g-link><br/>
                   <small class="layout__text_small">The Ethereum decentralized exchange with real-time trading and high transaction throughput.</small>
                 </p>
                 <p>
-                  <a href="https://bamboorelay.com/trade/XRT2-WETH" target="_blank">BambooRelay</a><br/>
+                  <g-link to="https://bamboorelay.com/trade/XRT2-WETH" target="_blank">BambooRelay</g-link><br/>
                   <small class="layout__text_small">0x and bZx relayer - trade, lend or borrow ERC20 tokens trustlessly from your own wallet.</small>
                 </p>
                 <hr/>

@@ -13,7 +13,8 @@ query {
 export default {
   props: {
       pageTitle: { type: String, default: '' },
-      pageDescription: { type: String, default: '' }
+      pageDescription: { type: String, default: '' },
+      pageImage: { type: String, default: '/website_cover.png' }
   },
 
   data() {
@@ -41,7 +42,7 @@ export default {
         { property: "og:site_name", content: this.$static.metadata.siteName },
         { property: "og:title", content: this.title },
         { property: "og:description", content: this.pageDescription },
-        { property: "og:image", content: '/website_cover.png' },
+        { property: "og:image", content: this.pageImage },
         { property: "og:image:width", content: '1280' },
         { property: "og:image:height", content: '800' },
         { property: "og:url", content: this.url },
@@ -58,7 +59,7 @@ export default {
         // Some Twitter Cards Tags
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: this.title },
-        { name: "twitter:image", content: '/website_cover.png' },
+        { name: "twitter:image", content: this.pageImage },
         { name: "twitter:description", content: this.pageDescription },
         { name: "twitter:site", content: '@AIRA_Robonomics' },
         { name: "twitter:creator", content: '@AIRA_Robonomics' }
