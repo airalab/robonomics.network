@@ -8,11 +8,13 @@ import layoutIndex from '~/layouts/Index.vue'
 import layoutInside from '~/layouts/Inside.vue'
 
 export default function (Vue, { router, head, isClient }) {
-  if (
-    window.location.pathname === "/en/" ||
-    window.location.pathname === "/en"
-  ) {
-    window.location.href = window.location.origin;
+  if (isClient) {
+    if (
+      global.location.pathname === "/en/" ||
+      global.location.pathname === "/en"
+    ) {
+      global.location.href = global.location.origin;
+    }
   }
   // Set default layout as a global component
   Vue.component('layout-index', layoutIndex)
