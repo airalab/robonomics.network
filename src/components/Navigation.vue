@@ -3,7 +3,7 @@
 		<g-link to="https://github.com/airalab/robonomics/releases" target="_blank" itemprop="url"><span itemprop="name">Releases</span></g-link>
 		<g-link to="https://wiki.robonomics.network" target="_blank" itemprop="url"><span itemprop="name">WIKI</span></g-link>
 		<g-link to="https://dapp.robonomics.network" target="_blank" itemprop="url"><span itemprop="name">DApp</span></g-link>
-		<g-link to="/community" itemprop="url"><span itemprop="name">Community</span></g-link>
+		<g-link to="/community" itemprop="url"><span itemprop="name">More</span></g-link>
 	</nav>
 </template>
 
