@@ -1,12 +1,12 @@
 <template>
   <div class="footer">
-    <div>
-      <strong>#ROS</strong>&nbsp;
-      <strong>#NixOS</strong>&nbsp;
-      <strong>#IPFS</strong>&nbsp;
-      <strong>#Ethereum</strong>&nbsp;
-      <strong>#Kusama</strong>&nbsp;
-      <strong>#Polkadot</strong>&nbsp;
+    <div class="footer__hashes">
+      <span>#ROS</span>&nbsp;
+      <span>#NixOS</span>&nbsp;
+      <span>#IPFS</span>&nbsp;
+      <span>#Ethereum</span>&nbsp;
+      <span>#Kusama</span>&nbsp;
+      <span>#Polkadot</span>&nbsp;
     </div>
     <div>
       <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
@@ -40,6 +40,11 @@
     line-height: 1.5;
 
     a.active--exact { color: var(--color-text); text-decoration: none; }
+
+    &__hashes {
+      font-weight: 100;
+      text-transform: uppercase;
+    }
   }
 
   .msg{

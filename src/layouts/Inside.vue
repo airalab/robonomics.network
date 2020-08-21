@@ -2,10 +2,7 @@
   <transition name="fade" appear>
    
         <div class="layout insidepage screen">
-
-          <div class="layout__content">
-            <g-link to="/" class="logo"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
-          </div>
+          <g-link to="/" class="logo"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
         
           <slot/>
 
@@ -27,13 +24,22 @@ query {
 
 
 <style lang="scss">
+
+  
   .insidepage{
+    
+    padding-top: 1rem;
+
+    @media screen and (max-width: 840px) {
+		  padding-top: var(--space);
+		}
+
     .logo {
-      width: 4rem;
+      width: 6rem;
       transition: 0.4s ease-out all;
 
       &:hover{
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
     }
   }

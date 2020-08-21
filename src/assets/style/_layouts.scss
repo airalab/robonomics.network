@@ -25,7 +25,7 @@ section{
   	}
 
 	padding-top: calc( var(--space) * 3 );
-	padding-bottom: 11rem; //padding for footer
+	padding-bottom: 13rem; //padding for footer
 	text-align: center;
 
 	&__content {
@@ -70,8 +70,12 @@ section{
 	  bottom: var(--screen-padding);
 	  right: var(--screen-padding);
 	  left: var(--screen-padding);
-	  border: 1px solid var(--color-dark);
+	//   border: 1px solid var(--color-dark);
 	  background-color: var(--color-gray-light);
+
+		@media screen and (max-width: 840px) {
+			display: none;
+		}
 	}
 }
 

@@ -1,0 +1,91 @@
+
+@keyframes FadeOut
+	{
+	  0% {
+	    visibility: visible;
+		opacity: 1;
+	  }
+	  100% {
+	    visibility: hidden;
+		opacity: 0;
+	  }
+	}
+
+
+@keyframes FadeIn
+	{
+	  0% {
+	    visibility: hidden;
+		opacity: 0;
+	  }
+	  100% {
+	    visibility: visible;
+		opacity: 1;
+	  }
+	}
+
+
+
+@keyframes Scale
+	{
+	  0% {
+	    transform: scale(0);
+	  }
+	  100% {
+	    transform: scale(1);
+	  }
+	}
+
+
+
+@keyframes ScaleX
+	{
+	  0% {
+	    transform: scaleX(0);
+	  }
+	  100% {
+	    transform: scaleX(1);
+	  }
+	}
+
+@keyframes ScaleY
+	{
+	  0% {
+	    transform: scaleY(0);
+	  }
+	  100% {
+	    transform: scaleY(1);
+	  }
+	}
+
+@keyframes FloatY {
+	0% {
+		transform: translateY(0);
+	}
+
+	33.3% {
+		transform: translateY(-10%);
+	}
+
+	66.6% {
+		transform: translateY(10%);
+	}
+}
+
+@keyframes FloatYDown {
+	0% {
+		transform: translateY(-10%);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@keyframes FloatYUp {
+	0% {
+		transform: translateY(10%);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}

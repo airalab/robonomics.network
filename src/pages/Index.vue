@@ -6,10 +6,8 @@
         :pageDescription = "$static.metadata.siteDescription"
       />
     
-      <div class="layout__content">
-        <g-image itemprop="logo" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" class="logo"/>
-        <h1 v-html="$static.metadata.siteName" itemprop="name"/>
-      </div>
+      <g-image itemprop="logo" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" class="logo"/>
+      <h1 v-html="$static.metadata.siteName" itemprop="name"/>
 
       <div class="homepage__description">
         <div class="layout__content">

@@ -7,12 +7,8 @@ body, html{
 html{
 	font-size: 100%;
 
-	@media screen and (max-width: 1280px) {
-		font-size: 90%;
-	}
-
 	@media screen and (max-width: 1024px) {
-		font-size: 80%;
+		font-size: 90%;
 	}
 
 	@media screen and (min-width: 1600px) {
@@ -28,9 +24,14 @@ body {
  	color: var(--text-color);
  	transition: color .6s, background-color .6s;
  	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  	line-height: 1.5;
+	line-height: 1.5;
+
+	@media screen and (max-width: 840px) {
+		background-color: var(--color-gray-light);
+	}
 }
 
 img {
+	display: inline-block;
 	max-width: 100%;
 }
