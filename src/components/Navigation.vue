@@ -1,8 +1,8 @@
 <template>
-	<nav class="menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+	<nav class="menu oldy" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
 		<div>
       <g-link to="/community" itemprop="url"><span itemprop="name">Enter the Robonomics</span></g-link>
-      <p>All you need to know is here: token, roadmap, white paper, assets, chat and other social links.</p> 
+      <p>All you need to know is here: white paper, roadmap, token, assets, chat and other social links.</p> 
     </div>
     <div>
       <g-link to="https://github.com/airalab/robonomics/releases" target="_blank" itemprop="url"><span itemprop="name">Github Releases</span></g-link>
@@ -25,12 +25,7 @@
 	.menu{
       // max-width: 320px;
       display: inline-block;
-      border: 1px solid var(--color-dark);
-      padding: calc(var(--space)/2);
       margin-top: calc(var(--space)/2);
-
-      box-shadow: .2rem .2rem 0 var(--color-dark);
-      background-color: var(--color-light);
 
       div {
         padding: 1rem 0;
