@@ -27,25 +27,26 @@
   .tabs {
     &__list {
         list-style: none;
-        border-bottom: 2px solid;
-        border-color: var(--color-text);
         width: 100%;
         margin-left: 0;
+
+        li {
+            display: inline-block;
+            margin-left: 2rem;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
     }
 
     &__item {
-        display: inline-block;
-        margin-right: 2rem;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
+    
         a {
           text-transform: uppercase;
           letter-spacing: 0.05rem;
           text-decoration: none;
-          font-weight: 500;
+          font-weight: 400;
         }
 
         &.is-active a {

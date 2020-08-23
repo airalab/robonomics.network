@@ -7,6 +7,7 @@ body {
 	--color-gray: #ccc;
 	--color-gray-light: #f2f2f2;
 	--color-green: #54ce63;
+	--color-red: #ee005b;
 
  	--body-bg: var(--color-light);
  	--text-color: #000000;
@@ -14,7 +15,9 @@ body {
 
  	--link-color: #03A5ED;
  	--link-color-hover: #3a00db;
- 	--link-color-visited: #660099;
+	--link-color-visited: #660099;
+	 
+	--animation-bump: cubic-bezier(0.6, 0.04, 0.98, 0.335);
  	
 
   --space: 2rem;

@@ -1,4 +1,19 @@
+.hide {
+	visibility: visible;
+	opacity: 1;
+  
+	animation: FadeOut 0.1s var(--animation-bump) 0.1s forwards;
+  }
+  
+.show {
+	visibility: hidden;
+	opacity: 0;
+  
+	animation: FadeIn 0.1s var(--animation-bump) 0.1s forwards;
+  }
 
+
+  
 @keyframes FadeOut
 	{
 	  0% {
@@ -89,3 +104,6 @@
 		transform: translateY(0);
 	}
 }
+
+
+

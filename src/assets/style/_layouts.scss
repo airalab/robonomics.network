@@ -92,37 +92,5 @@ section{
 	line-height: 1.5;
 }
 
-.msg{
-    position: fixed;
-    bottom: calc( var(--screen-padding) + 0.4rem );
-    right: calc( var(--screen-padding) + 0.4rem );
-    max-width: calc( 100% - 2*(var(--screen-padding) + 0.4rem) ) ;
-
-    &__solid {
-      padding: 0.4rem;
-    
-      &, .button { font-size: 90%; }
-      a { font-weight: 500; }
-    }
-
-    &__info{
-      background-color: var(--link-color);
-
-      &, a { color: var(--text-color-invert); }
-      a:hover{ color: var(--text-color); }
-
-      .button {
-        background-color: var(--color-dark);
-        color: var(--color-light);
-
-        &:hover{
-          background-color: var(--color-light);
-          color: var(--color-dark);
-        }
-      }
-    }
-}
-
-
 .m-space-left { margin-left: var(--space); }
 .m-space-right { margin-right: var(--space); }
