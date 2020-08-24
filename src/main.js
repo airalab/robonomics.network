@@ -8,6 +8,8 @@ import layoutIndex from '~/layouts/Index.vue'
 import layoutInside from '~/layouts/Inside.vue'
 
 export default function (Vue, { router, head, isClient }) {
+  head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
+
   if (isClient) {
     if (
       global.location.pathname === "/en/" ||
