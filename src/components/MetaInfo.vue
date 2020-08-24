@@ -9,6 +9,7 @@ query {
 }
 </static-query>
 
+
 <script>
 export default {
   props: {
