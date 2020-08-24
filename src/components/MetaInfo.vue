@@ -44,7 +44,7 @@ export default {
         { property: "og:description", content: this.pageDescription },
         { property: "og:image", content: this.pageImage },
         { property: "og:image:width", content: '1280' },
-        { property: "og:image:height", content: '800' },
+        { property: "og:image:height", content: '765' },
         { property: "og:url", content: this.url },
         // {
         //   property: "og:url",
