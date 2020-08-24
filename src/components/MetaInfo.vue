@@ -15,14 +15,15 @@ export default {
   props: {
       pageTitle: { type: String, default: '' },
       pageDescription: { type: String, default: '' },
-      pageImage: { type: String, default: '/website_cover.png' }
+      pageImage: { type: String, default: '/website_cover.png?v=2' }
   },
 
   data() {
         
         return {
             title: this.pageTitle + ' / Robonomics.network',
-            url: ''
+            url: '',
+            img: this.pageImage + '?v=2'
         };
         
     },
@@ -43,7 +44,7 @@ export default {
         { property: "og:site_name", content: this.$static.metadata.siteName },
         { property: "og:title", content: this.title },
         { property: "og:description", content: this.pageDescription },
-        { property: "og:image", content: this.pageImage },
+        { property: "og:image", content: this.img },
         { property: "og:image:width", content: '1280' },
         { property: "og:image:height", content: '765' },
         { property: "og:url", content: this.url },
