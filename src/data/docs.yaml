@@ -33,3 +33,11 @@
       text: 'English'
     - link: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-ru.pdf'
       text: 'Russian'
+
+- title: 'Robonomics Keypoint, updated August 2020'
+  description: 'Keypoint presentation of Robonomics project. Brief and direct. Consist of: executive summary, main definitions, project history timeline, and many useful links in the text. Strongly recommend sharing with your friends, colleagues, and subscribers to let them know more about Robonomics.network'
+  img: 'docs-presentation-keypoint-2020.png'
+  buttonicon: '&#8595;'
+  options:
+    - link: 'https://static.robonomics.network/docs/presentations/Robonomics.Keypoint.updated.August.2020.pdf'
+      text: '.pdf 1.6 Mb'
