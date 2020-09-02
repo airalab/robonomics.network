@@ -1,6 +1,6 @@
 <template>
   <layout-inside>
-  
+
     <MetaInfo
       :pageTitle = "'Timeline'"
       :pageDescription = "'Robonomics in the past and nowadays, some important checkpoints of evolution.'"
@@ -17,7 +17,7 @@
           <h2 class="timeline__title">On top of two world computers and Aragon DAO for the Community</h2>
           <div class="hyphens">
             <p>We continue to work with developing the Robonomics platform over Ethereum and Polkadot networks as universal L2 solution for Robot-as-a-Service/IoT nodes. There are more releases on GitHub and new cool tech under armor. We invite developers to our community to spread web3+robotics. Besides the community is welcome to participate in our project life from spring 2020 due to Aragon DAO.</p>
-            <g-link to="https://blog.aira.life/robonomics-roadmap2020-77befa1da095">More in Robonomics Roadmap 2020</g-link>
+            Find more in <g-link to="https://static.robonomics.network/docs/presentations/Robonomics.Keypoint.updated.August.2020.pdf">Robonomics Keypoint presentation</g-link>
           </div>
         </article>
 
