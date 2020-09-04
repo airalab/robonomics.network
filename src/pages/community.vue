@@ -24,7 +24,7 @@
 
               <p class="hyphens"><strong>There are 2 tokens in Robonomics for now: <code>XRT</code> and <code>RWS</code>. Please, research the information below carefully before buying or asking questions in Community. You are welcome!</strong></p>
 
-          
+
               <div class="section oldy token">
                 <div class="section token__title">
                   <img alt="Robonomics token, XRT image" src="/Robonomics-Token-XRT-color.svg" class="token__sign"/>
@@ -49,7 +49,7 @@
                 <div class="section">
                   <small>Quick intro to XRT:</small><br/>
                   <p><g-link to="https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf">Theory in White Paper, Chapter 6</g-link></p>
-                  <p><g-link to="https://ipfs.io/ipfs/QmTPuS1DZtZSsjtBiPDLp4dqXaNs9P4JAR6kaiTG51sceG/Robonomics_token_distribution_release_May_2020.pdf">Distribution Release 2020</g-link></p>
+                  <p><g-link to="https://ipfs.io/ipfs/QmZjzJbZDhs7B3YhtRkvdg4jp6qpfkVGB67w7vH2nJBUrE/Robonomics_token_Polkadot_KUSAMA_stage_details_september_2020.pdf">Distribution Release September 2020</g-link></p>
                 </div>
               </div>
 
@@ -89,17 +89,17 @@
                   <li>Robonomics (robonomics.network) and / or the AIRA (Airalab) team member WILL NOT send you any personal messages before you ask yourself for our help. Beware of messages containing any fake addresses or asking you personal data.</li>
                 </ol>
               </section>
-      
+
             </tab>
 
           <tab name="Science">
               <share :assets="science" :classes="'tab-science'"/>
           </tab>
-          
+
           <tab name="Assets">
             <share :assets="assets"/>
           </tab>
-        
+
           <tab name="Intouch">
             <share :assets="intouch" :classes="'tab-intouch'"/>
           </tab>
@@ -150,7 +150,7 @@
         return intouch
       }
     }
-    
+
   }
 
 </script>
