@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Robonomics Network',
-  siteDescription: 'Robonomics Network is a set of open-source packages for Robotics, Smart Cities and Industry 4.0 developers.',
+  siteDescription: 'Secure, сost-effective, and futuristic IoT platform for connecting robotics under Polkadot and Ethereum control.',
   siteUrl: 'https://robonomics.network',
 
   titleTemplate: '%s',
