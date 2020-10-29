@@ -111,6 +111,9 @@
         return this.$cookies.get('cookiePolicy');
       },
       cookiePolicySet(){
+        // https://www.npmjs.com/package/vue-cookies
+        // 30 day after, expire, '' current path , browser default
+        this.$cookies.config(60 * 60 * 24 * 30,'');
         this.$cookies.set('cookiePolicy','accepted');
         document.querySelector('#alert-cookiePolicy').style.display="none";
       }
