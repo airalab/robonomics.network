@@ -64,15 +64,19 @@
 
 		&__icon {
 			display: inline-block;
-			padding: 0 .5rem 0 0;
+			// padding: 0 .5rem 0 0;
+			padding: 0 0 0 .5rem;
 
 			.icon {
 				display: inline-block;
 				vertical-align: middle;
 				padding: .8rem;
 
-				margin-right: .5rem;
-				border-right: 1px solid rgba(0,0,0,0.3);
+				// margin-right: .5rem;
+				// border-right: 1px solid rgba(0,0,0,0.3);
+
+				margin-left: .5rem;
+				border-left: 1px solid rgba(0,0,0,0.3);
 			}
 		}
 
