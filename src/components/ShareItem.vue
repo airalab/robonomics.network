@@ -13,7 +13,7 @@
       <div class="share__col share__buttons">
 
         <div class="button button__primary button__select button__icon">
-          <span v-if="asset.buttonicon" class="icon" v-html="asset.buttonicon" />
+          
 
           <select v-model="selected" v-if="asset.options.length > 1">
             <option v-for="(option, key) in asset.options" v-bind:value="key" v-bind:name="option.link">
@@ -22,6 +22,8 @@
           </select>
 
           <small v-if="asset.options.length === 1" v-html="asset.options[0].text" />
+
+          <span v-if="asset.buttonicon" class="icon" v-html="asset.buttonicon" />
 
         </div>
 
