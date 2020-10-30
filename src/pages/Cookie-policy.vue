@@ -1,12 +1,12 @@
 <template>
-  <layout-inside>
+  <layout>
 
     <MetaInfo
       :pageTitle = "'Cookie policy'"
       :pageDescription = "'Here you can find reasons why we use cookies on robonomics.network to decide is it ok for you.'"
     />
 
-    <div class="layout__content layout__text">
+    <div class="layout__content">
       <h1>Cookie policy</h1>
     </div>
 
@@ -36,7 +36,7 @@
 
     </div>
 
-  </layout-inside>
+  </layout>
 </template>
 
 <script>

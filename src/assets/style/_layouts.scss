@@ -9,7 +9,7 @@ section{
 
   &__solid{
   	background-color: var(--color-light);
-  	padding: 1rem;
+	padding: 1rem;	  
 
   	h1, h2, h3, h4, h5 {
   		margin-bottom: var(--space-text);
@@ -21,17 +21,22 @@ section{
 	&, &__content, &__text, &__text_small {
 		display: block;
 		margin-left: auto;
-  		margin-right: auto;
+		margin-right: auto;
   	}
 
-	padding-top: calc( var(--space) * 3 );
-	padding-bottom: 13rem; //padding for footer
-	text-align: center;
+	padding-left: var(--space);
+	padding-right: var(--space);
+
+	&__title {
+		text-align: center;
+		padding-left: calc(var(--space)*2);
+	    padding-right: calc(var(--space)*2);
+	}
+	
 
 	&__content {
 	  max-width: var(--content-width);
-	  padding-left: calc( var(--space) * 2);
-	  padding-right: calc( var(--space) * 2);
+	  text-align: center;
 
 	  @media screen and (max-width: 720px) {
 	    padding-left: var(--space);
@@ -58,24 +63,20 @@ section{
 }
 
 .screen{
-	min-height: 100%;
+	height: 100vh;
+	overflow: hidden;
 	position: relative;
-	overflow-x: hidden;
 
-	&:before{
-	  content: "";
-	  position: absolute;
-	  z-index: -1;
-	  top: var(--screen-padding);
-	  bottom: var(--screen-padding);
-	  right: var(--screen-padding);
-	  left: var(--screen-padding);
-	//   border: 1px solid var(--color-dark);
-	  background-color: var(--color-gray-light);
+	&-content {
+		height: calc(100vh - var(--screen-padding)*2);
+		overflow-y: scroll;
+		margin: var(--screen-padding);
+		background-color: var(--color-gray-light);
 
-		@media screen and (max-width: 840px) {
-			display: none;
-		}
+		// background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
+		// 		<text y=".9em" font-size="5">👌</text>\
+		// 		</svg>');
+		// 		background-size: 40px 40px;
 	}
 }
 

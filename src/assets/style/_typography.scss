@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5 {
 
   word-break: break-word;
 
+  
+}
+
+h2, h3, h4, h5 {
   &:first-child { margin-top: 0 }
 }
 
@@ -28,11 +32,17 @@ h1 {
   letter-spacing: 0.1rem;
   padding-bottom: 0.3rem;
   margin-bottom: calc(var(--space-text) * 4);
-  font-weight: 100;
+  font-weight: 300;
   // text-shadow: rgba(3, 165, 237, .3) 0 0.3rem;
   margin-top: 0;
+  text-align: center;
 
-  @media screen and (max-width: 600px) {
+  display: inline-block;
+  background: linear-gradient(to right , var(--color-green) 20%, #faaa54, #e23b4a, #db0768, #360670);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 1000px) {
     font-size: 1.8rem;
   }
 }

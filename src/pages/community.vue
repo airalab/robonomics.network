@@ -1,5 +1,5 @@
 <template>
-  <layout-inside>
+  <layout>
 
     <MetaInfo
       :pageTitle = "'Community'"
@@ -7,12 +7,12 @@
       :pageImage = "'/website_cover_community.png'"
     />
 
-    <div class="layout__content layout__text">
+    <div class="layout__title">
       <h1>Robonomics community</h1>
       <!--<small>Get involved to Robonomics Network Community: read White paper, science papers, our brochures and other docs; find here information about XRT token; read news from our social accounts, chat with us, get intouch.</small>-->
     </div>
 
-    <section class="layout__content layout__text">
+    <div class="layout__content layout__text">
 
       <tabs>
 
@@ -22,7 +22,7 @@
 
           <tab name="Token">
 
-              <p class="hyphens"><strong>There are 2 tokens in Robonomics for now: <code>XRT</code> and <code>RWS</code>. Please, research the information below carefully before buying or asking questions in Community. You are welcome!</strong></p>
+              <p class="hyphens"><strong>There are 2 tokens in Robonomics for now: XRT and RWS. Please, research the information below carefully before buying or asking questions in Community. You are welcome!</strong></p>
 
 
               <div class="section oldy token">
@@ -104,9 +104,9 @@
             <share :assets="intouch" :classes="'tab-intouch'"/>
           </tab>
       </tabs>
-    </section>
+    </div>
 
-  </layout-inside>
+  </layout>
 </template>
 
 

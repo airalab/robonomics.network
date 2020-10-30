@@ -1,13 +1,15 @@
 <template>
-  <layout-index>
+  <layout>
 
       <MetaInfo
         :pageTitle = "'Home'"
         :pageDescription = "$static.metadata.siteDescription"
       />
-    
-      <g-image itemprop="logo" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" class="logo"/>
-      <h1 v-html="$static.metadata.siteName" itemprop="name"/>
+    <div class="homepage">
+      <!--<g-image itemprop="logo" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" class="logo"/>-->
+      <div class="layout__title">
+        <h1 v-html="$static.metadata.siteName" itemprop="name"/>
+      </div>
 
       <div class="homepage__description">
         <div class="layout__content">
@@ -60,8 +62,8 @@
         </div>
 
     </div>
-
-  </layout-index>
+</div>
+  </layout>
 </template>
 
 <static-query>
@@ -83,15 +85,19 @@ query {
     h1 { margin-bottom: calc(var(--space)/2) }
 
     &__description{
-      position: relative
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 10px;
     }
 
-    .roboHands{
-      &__left, &__right{
-        top: 6rem;
-      }
+     .roboHands{
+        top: 5rem;
+        pointer-events: none;
     }
+    
   }
+
+ 
 </style>
 
 <script>
@@ -127,7 +133,7 @@ query {
       },
 
       scaleRatio(parent, element){
-        var ratio = (document.querySelector(parent).offsetWidth / document.querySelector(element).offsetWidth).toFixed(2);
+        var ratio = (document.querySelector(parent).offsetWidth / document.querySelector(element).offsetWidth).toFixed(2)*0.9;
 
         document.querySelector(element).style.transform = 'scale(' + ratio +')';
       }

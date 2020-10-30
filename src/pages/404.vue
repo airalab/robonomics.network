@@ -1,5 +1,5 @@
 <template>
-  <layout-inside>
+  <layout>
 
     <MetaInfo
       :pageTitle = "'Page not found'"
@@ -16,7 +16,7 @@
       <Navigation />
     </div>
 
-  </layout-inside>
+  </layout>
 </template>
 
 
