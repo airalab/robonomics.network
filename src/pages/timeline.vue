@@ -1,12 +1,12 @@
 <template>
-  <layout-inside>
+  <layout>
 
     <MetaInfo
       :pageTitle = "'Timeline'"
       :pageDescription = "'Robonomics in the past and nowadays, some important checkpoints of evolution.'"
     />
 
-    <div class="layout__content layout__text">
+    <div class="layout__title">
       <h1>Infrastructure && tech development timeline</h1>
     </div>
 
@@ -58,7 +58,7 @@
       </div>
     </section>
 
-  </layout-inside>
+  </layout>
 </template>
 
 <style lang="scss">

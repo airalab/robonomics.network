@@ -1,18 +1,11 @@
 <template>
-  <div class="footer">
-    <div class="footer__hashes">
-      <span>#ROS</span>&nbsp;
-      <span>#NixOS</span>&nbsp;
-      <span>#IPFS</span>&nbsp;
-      <span>#Ethereum</span>&nbsp;
-      <span>#Kusama</span>&nbsp;
-      <span>#Polkadot</span>&nbsp;
-    </div>
-    <div>
+  <div>
+
+    <div class="sidetext-left">
       <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
-      <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link> &nbsp; &bull; &nbsp; 
-      <g-link to="https://github.com/airalab/robonomics.network/issues">Edit website</g-link>
+      <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
     </div>
+
 
     <div class="msg">
       <div class="msg__info msg__solid" v-if="!this.cookiePolicyAccepted()" id="alert-cookiePolicy">
@@ -31,21 +24,24 @@
 
 <style lang="scss">
 
-  .footer{
-    position: absolute;
-    bottom: calc(var(--space) + 1rem);
-    left: var(--space);
-    right: var(--space);
-    text-align: center;
-    line-height: 1.5;
+.sidetext-left {
+    position:  fixed;
+    left: calc(var(--screen-padding)/4);
+    bottom: var(--screen-padding);
+    background-color: var(--body-bg);
 
-    a.active--exact { color: var(--color-text); text-decoration: none; }
-
-    &__hashes {
-      font-weight: 100;
-      text-transform: uppercase;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    
+    &, a {
+      text-decoration: none;
+        // font-size: calc(var(--screen-padding)/2.2);
+        font-size: .9rem;
+        color: var(--text-color);
+        &.active--exact { opacity: .5; }
     }
   }
+
 
   .msg{
     position: fixed;
