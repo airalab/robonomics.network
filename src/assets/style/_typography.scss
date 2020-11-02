@@ -31,21 +31,37 @@ h1 {
   font-size: 3.5rem;
   letter-spacing: 0.1rem;
   padding-bottom: 0.3rem;
-  margin-bottom: calc(var(--space-text) * 4);
+  // margin-bottom: calc(var(--space-text) * 4);
   font-weight: 300;
-  // text-shadow: rgba(3, 165, 237, .3) 0 0.3rem;
   margin-top: 0;
   text-align: center;
 
   display: inline-block;
-  background: linear-gradient(to right , var(--color-green) 20%, #faaa54, #e23b4a, #db0768, #360670);
+  background: linear-gradient(to right , var(--color-green), #11a075, #5DC0DF, #355bd6, var(--link-color-hover), #101F5A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  background-position:  0; 
+  background-size: 200%;
+  animation: 8s progress-bar linear infinite;
 
   @media screen and (max-width: 1000px) {
     font-size: 1.8rem;
   }
 }
+
+@keyframes progress-bar {
+  0%{
+    background-position: 0; 
+  }
+  50%{
+    background-position: 100%; 
+  }
+  100%{
+    background-position: 0; 
+  }
+}
+
 
 h2 {font-size: 1.5rem;}
 
@@ -55,7 +71,14 @@ h4 {font-size: 1rem;}
 
 h5 {font-size: 0.8rem;}
 
-h1, h2 {
+
+
+h1 {
+  margin: calc(var(--space-text) * 4) 0 0;
+}
+
+
+h2 {
   margin: calc(var(--space-text) * 4) 0 calc(var(--space-text) * 2);
 }
 

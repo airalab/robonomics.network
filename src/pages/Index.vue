@@ -11,7 +11,7 @@
         <h1 v-html="$static.metadata.siteName" itemprop="name"/>
       </div>
 
-      <div class="homepage__description">
+      <section class="homepage__description">
         <div class="layout__content">
 
           <p itemprop="description" v-html="$static.metadata.siteDescription" />
@@ -61,7 +61,7 @@
           
         </div>
 
-    </div>
+    </section>
 </div>
   </layout>
 </template>
@@ -81,8 +81,6 @@ query {
     .logo {
       width: 11rem;
     }
-
-    h1 { margin-bottom: calc(var(--space)/2) }
 
     &__description{
       position: relative;
