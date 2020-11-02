@@ -15,7 +15,7 @@ We are delighted to announce that this offer will be 1.5 times more profitable c
 
 Below you will find the calculations and explanation of our chosen strategy with regards to the Kusama auction in 2020 and the Polkadot auction in 2022.
 
-!["Robonomics Parachain on Kusama first"](./images/robonomics-parachain-bond-offering/Robonomics_Parachain-web.jpg)
+!["Robonomics Parachain on Kusama first"](./images/robonomics-parachain-lease-offering/Robonomics_Parachain-web.jpg)
 ## Robonomics Parachain on Kusama first
 
 As the Polkadot ecosystem makes its first steps, we understand that our goals must take into account not only the network’s final architecture, but also all important milestones in the future development of the network. We, the Robonomics developers team, believe that Kusama will serve as the primary pillar of Polkadot development in the upcoming 2 years, and hence, it is the Kusama network that we would like to concentrate all our efforts on.
@@ -24,7 +24,7 @@ As the Polkadot ecosystem makes its first steps, we understand that our goals mu
 
 According to preliminary estimates, one slot of the Kusama network is enough to service up to 10,000 [digital twins](https://en.wikipedia.org/wiki/Digital_twin) of IoT devices at once with a subscription price of less than $10 per month. This will allow Robonomics to debug the process of connecting IoT systems during the lease of the Kusama slot. Next, we will be ready to scale the network to 1 million IoT systems connected in real-time by transforming the Robonomics network from Kusama Parachain to Polkadot Relay Chain.
 
-!["Robonomics Relay Chain on Polkadot is the vision"](./images/robonomics-parachain-bond-offering/Robonomics_Relay_Chain-web.jpg)
+!["Robonomics Relay Chain on Polkadot is the vision"](./images/robonomics-parachain-lease-offering/Robonomics_Relay_Chain-web.jpg)
 ## Robonomics Relay Chain on Polkadot is the vision
 
 By the time the Polkadot network is technically ready to accept 100 parachain projects, and the Kusama network is successfully connected as a parachain in the Polkadot slot, Robonomics will be ready to introduce its own parachain of parachains to multiply the bandwidth. Based on our estimates, the Robonomics Relay Chain will allow the Polkadot network to serve up to 1 million IoT systems simultaneously with a subscription price of $2.
