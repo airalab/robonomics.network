@@ -25,6 +25,16 @@ module.exports = {
     //     id: "UA-169310127-1",
     //   },
     // }
+
+    {
+      // Google Tag Manager
+      use: 'gridsome-plugin-gtm',
+      options: {
+        id: 'GTM-WJ83CPC',
+        enabled: true,
+        debug: true
+      }
+    }
   ],
 
   chainWebpack: config => {
