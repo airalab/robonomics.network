@@ -10,6 +10,7 @@
     "@gridsome/plugin-google-analytics": "^0.1.1",
     "axios": "^0.19.2",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-yandex-metrika": "^0.1.2",
     "gridsome-source-github-api": "^0.1.4",
     "node-sass": "^4.14.1",
