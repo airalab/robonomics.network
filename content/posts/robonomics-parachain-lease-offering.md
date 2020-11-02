@@ -2,7 +2,7 @@
 title: Robonomics Parachain Lease Offering
 date: 2020-10-26
 published: true
-# tags: ['Markdown', 'Cover Image']
+tags: ['Polkadot', 'Kusama', 'Parachain']
 # series: false
 cover_image: ./images/robonomics-parachain-lease-offering/robonomics-parachain-bond-offering-cover-web.jpg
 # canonical_url: false
