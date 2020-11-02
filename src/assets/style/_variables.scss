@@ -11,7 +11,8 @@ body {
 
  	--body-bg: var(--color-light);
  	--text-color: #000000;
- 	--text-color-invert: #ffffff;
+	--text-color-invert: #ffffff;
+	--border-color: var(--color-gray);
 
  	--link-color: #03A5ED;
  	--link-color-hover: #3a00db;
@@ -21,7 +22,7 @@ body {
  	
 
   --space: 2rem;
-  --space-text: 1rem;
+  --space-text: 2rem;
   --content-width: 720px;
   --text-width: 980px;
 
@@ -30,6 +31,7 @@ body {
 
 @media screen and (max-width: 720px) {
 	body {
-		--screen-padding: calc( var(--space) / 2);
+		// --screen-padding: calc( var(--space) / 2);
+		--space: 1rem;
 	}
 }

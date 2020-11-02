@@ -12,7 +12,7 @@
       <!--<small>Get involved to Robonomics Network Community: read White paper, science papers, our brochures and other docs; find here information about XRT token; read news from our social accounts, chat with us, get intouch.</small>-->
     </div>
 
-    <div class="layout__content layout__text">
+    <section class="layout__content layout__text">
 
       <tabs>
 
@@ -104,7 +104,7 @@
             <share :assets="intouch" :classes="'tab-intouch'"/>
           </tab>
       </tabs>
-    </div>
+    </section>
 
   </layout>
 </template>
