@@ -92,6 +92,22 @@ query {
         top: 5rem;
         pointer-events: none;
     }
+
+    h1 {
+      font-size: 4rem;
+
+      @media screen and (max-width: 550px) {
+        font-size: 3rem;
+      }
+
+      @media screen and (max-width: 350px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (min-width: 1600px) {
+        font-size: 6rem;
+      }
+    }
     
   }
 

@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap');
 
+%margin_text {
+  margin-bottom: var(--space-text);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -16,11 +23,21 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
-
-  word-break: break-word;
-
+  margin-top: calc(var(--space-text) * 2);
   
+  @extend %margin_text;
 }
+
+
+h1 { margin-top: calc(var(--space)*2) !important; }
+
+h2 { font-size: 1.5rem; }
+
+h3 {font-size: 1.2rem;}
+
+h4 {font-size: 1rem;}
+
+h5 {font-size: 0.8rem;}
 
 h2, h3, h4, h5 {
   &:first-child { margin-top: 0 }
@@ -28,7 +45,7 @@ h2, h3, h4, h5 {
 
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.7rem;
   letter-spacing: 0.1rem;
   padding-bottom: 0.3rem;
   // margin-bottom: calc(var(--space-text) * 4);
@@ -46,7 +63,7 @@ h1 {
   animation: 8s progress-bar linear infinite;
 
   @media screen and (max-width: 1000px) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -63,28 +80,8 @@ h1 {
 }
 
 
-h2 {font-size: 1.5rem;}
-
-h3 {font-size: 1.2rem;}
-
-h4 {font-size: 1rem;}
-
-h5 {font-size: 0.8rem;}
 
 
-
-h1 {
-  margin: calc(var(--space-text) * 4) 0 0;
-}
-
-
-h2 {
-  margin: calc(var(--space-text) * 4) 0 calc(var(--space-text) * 2);
-}
-
-h3, h4, h5 {
-  margin: calc(var(--space-text) * 2) 0 var(--space-text);
-}
 
 small, .text__small { font-size: 80%; line-height: 1.2; }
 
@@ -94,9 +91,13 @@ strong {
 
 blockquote {
   border-left: 4px solid var(--border-color);
+  border-image: linear-gradient(to bottom , var(--color-green), #5DC0DF, #355bd6, #101F5A) 1 100%;
   padding-left: calc(var(--space) / 2);
+  padding-right: calc(var(--space) / 2);
   color: var(--title-color);
-  font-size: 1.1rem;
+  font-size: 130%;
+
+  @extend %margin_text;
 }
 
 em {
@@ -106,26 +107,20 @@ em {
 ul { 
   list-style-type: disc; 
   margin-left: var(--space-text);
-  margin-bottom: var(--space-text);
+
   li {
     margin-bottom: .6rem;
   }
 }
+
 ol { 
   list-style-type: decimal; 
   margin-left: var(--space-text);
-  margin-bottom: var(--space-text);
+
   li {
     margin-bottom: .6rem;
   }
 }
-
-
-
-p, ul, ol, li, blockquote {
-  &:last-child { margin-top: 0 }
-}
-
 
 a{
   &:not(.button) {
@@ -153,10 +148,6 @@ a{
   // }
 }
 
-
-p {
-  margin-bottom: var(--space-text);
-}
 
 hr {
   margin: var(--space-text) 0;
@@ -194,3 +185,25 @@ code {
   // padding: 0 0.4rem;
 }
 
+
+
+table {
+  margin-bottom: var(--space-text);
+
+  thead {
+    th {
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+
+  th, td {
+    padding: .5rem;
+    border: 1px solid var(--border-color);
+    font-size: 90%;
+  }
+}
+
+p, ul, ol, li, blockquote, table {
+  @extend %margin_text;
+}

@@ -29,8 +29,9 @@ section{
 
 	&__title {
 		text-align: center;
-		padding-left: calc(var(--space)*2);
-	    padding-right: calc(var(--space)*2);
+		padding-top: var(--space);
+		padding-left: var(--space);
+	    padding-right: var(--space);
 	}
 	
 
@@ -73,6 +74,12 @@ section{
 		margin: var(--screen-padding);
 		background-color: var(--color-gray-light);
 
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		scrollbar-width: none;
+
 		// background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
 		// 		<text y=".9em" font-size="5">👌</text>\
 		// 		</svg>');
@@ -84,14 +91,14 @@ section{
 .logo { display: inline-block; }
 
 
-.footer{
-    position: absolute;
-    bottom: calc(var(--space) + 1rem);
-    left: var(--space);
-    right: var(--space);
-    text-align: center;
-	line-height: 1.5;
-}
+// .footer{
+//     position: absolute;
+//     bottom: calc(var(--space) + 1rem);
+//     left: var(--space);
+//     right: var(--space);
+//     text-align: center;
+// 	line-height: 1.5;
+// }
 
 .m-space-left { margin-left: var(--space); }
 .m-space-right { margin-right: var(--space); }
