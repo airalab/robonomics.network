@@ -30,12 +30,6 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
 
-      - name: Copy blog
-        run: |
-          rm -rf dist/blog
-          git clone --single-branch --branch gh-pages https://${{ secrets.API_TOKEN_GITHUB }}@github.com/airalab/blog.robonomics.network.git dist/blog
-          rm -rf dist/blog/.git
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
