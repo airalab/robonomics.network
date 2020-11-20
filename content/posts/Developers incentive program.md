@@ -36,16 +36,20 @@ In the Tweet, the participant should share the geolocation of your sensor.
 Robonomics Web Services is a great environment for creating your simulations of smart factories, robotics systems and digital twins of IoT devices.
 **If you’re looking for a source of inspiration, we suggest you visit the Robonomics scientific resources:**
 
-[Research & Development](https://wiki.robonomics.network/docs/r-and-d-based-on-robonomics-network/) made on Robonomics Network;
-[Scientific researchers](https://robonomics.network/community#science) made by core Robonomics Network team members;
-If you have any questions regarding the mentioned cases, please visit the Robonomics developers forum.
+> [Research & Development](https://wiki.robonomics.network/docs/r-and-d-based-on-robonomics-network/) made on Robonomics Network;
+
+> [Scientific researchers](https://robonomics.network/community#science) made by core Robonomics Network team members;
+
+###### If you have any questions regarding the mentioned cases, please visit the Robonomics developers forum.
 
 **Core Robonomics DAO IoT & Robotics developers will evaluate your project and help you in your research.**
 **Amount of the payout (up to 300 XRT per project) will be decided by DAO, depending on the difficulty of a project and your autonomy.**
 
 ## Participating in the Robonomics Web Services beta test
 
-Robonomics Web Services(RWS) will bring a new era of IoT & Robotics infrastructure. It’ll provide developers with similar to Amazon Web Services functionality, but despite the centralized cloud base, it’s going to provide customers with access to the blockchain.
+Robonomics Web Services(RWS) will bring a new era of IoT & Robotics infrastructure. 
+It’ll provide developers with similar to Amazon Web Services functionality, but despite the centralized cloud base, it’s going to provide customers with access to the blockchain.
+
 You can find out more about the [benefits of RWS here](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42?source=collection_home---4------2-----------------------).
 
 ## RWS Beta test
