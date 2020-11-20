@@ -21,7 +21,7 @@ A participant can choose any of the offered paragraphs for acquaintance with the
 Robonomics Network aims to unveil a pollution level by citizens observation networks over the World and help people to offset the carbon footprint.
 Thus, core DAO developers came up with the [water](https://www.frontiersin.org/articles/10.3389/frobt.2020.00070/full) & air pollution sensors network, smart buildings offsetting and green certificates.
 
-To drive the adoption of open-source sensors network based on Robonomics Web Services, the team decided to reward a first 15 participants with **50 XRT for completing the following task:**
+To drive the adoption of open-source sensors network based on Robonomics Web Services, the team decided to reward a first 15 participants with **$300 (In form of native Robonomics token - XRT) for completing the following task:**
 * Connect air pollution sensor to Robonomics & maintain it for more than 1 week;
 * Upload the video on YouTube, in a video participant has to:
 * Describe the process of connecting air pollution sensor to Robonomics Network;
