@@ -4,6 +4,7 @@
 
 The best way for a developer to understand the concept of Robonomics Network is to visit the [playground](https://wiki.robonomics.network/docs/baxter/) section and try it.
 ![Playground](https://lh4.googleusercontent.com/temUSKyq20Khuz3wZ12Kqc0tbvkMK6fAWkjn1SWtLz8gC9IOgSSX5yyRHtwB5uHqzEwHabYtgHC2dRR-TxLHkDMEb3fbJgFYYPWjmaZb0-XOxhgOUhHjGdDvU4O5AiRL3gwGIjuy)
+
 The playground section guides people through the process of launching cyber-physical-systems under Robonomics control.
 A participant can choose any of the offered paragraphs for acquaintance with the Robonomics Network.
 
@@ -34,8 +35,11 @@ In the Tweet, the participant should share the geolocation of your sensor.
 
 Robonomics Web Services is a great environment for creating your simulations of smart factories, robotics systems and digital twins of IoT devices.
 **If you’re looking for a source of inspiration, we suggest you visit the Robonomics scientific resources:**
+
 > [Research & Development](https://wiki.robonomics.network/docs/r-and-d-based-on-robonomics-network/) made on Robonomics Network;
-> [Scientific researchers](https://robonomics.network/community#science) made by core Robonomics Network team members.
+
+> [Scientific researchers](https://robonomics.network/community#science) made by core Robonomics Network team members;
+
 > If you have any questions regarding the mentioned cases, please visit the Robonomics developers forum.
 
 **Core Robonomics DAO IoT & Robotics developers will evaluate your project and help you in your research.**
