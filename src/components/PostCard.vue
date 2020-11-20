@@ -37,6 +37,14 @@ export default {
     background-color: var(--color-light);
     position: relative;
 
+    h4 {
+      padding-top: calc(var(--space)/2);
+    }
+
+    &:not(:last-child){
+      margin-bottom: var(--space);
+    }
+
     &__link {
       position: absolute;
       top: 0;
@@ -63,6 +71,10 @@ export default {
       h4 {
         margin-bottom: calc(var(--space)/2);
       }
+    }
+
+    &__description {
+      margin-bottom: 0;
     }
   }
 </style>
