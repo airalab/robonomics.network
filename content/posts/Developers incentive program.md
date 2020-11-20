@@ -16,7 +16,7 @@ A participant can choose any of the offered paragraphs for acquaintance with the
 	* How can one store a CPS’es datalog in Blockchain with the help of IPFS;
 * Make a Tweet and Mention @Aira_robonomics Twitter account and Tag $XRT;
 
-## Reduce the global air pollution level with Robonomics Network
+## Store the global air pollution level in Robonomics Network
 
 Robonomics Network aims to unveil a pollution level by citizens observation networks over the World and help people to offset the carbon footprint.
 Thus, core DAO developers came up with the [water](https://www.frontiersin.org/articles/10.3389/frobt.2020.00070/full) & air pollution sensors network, smart buildings offsetting and green certificates.
@@ -54,7 +54,11 @@ You can find out more about the [benefits of RWS here](https://blog.aira.life/ro
 
 ## RWS Beta test
 
+We’re excited about providing industry 4.0 developers with the DLT infrastructure for their IoT & Robotics use cases.
+
 Everyone, who’ll send telemetry from their IoT device to RWS will be entitled to a reward.
 1000 XRT will be distributed between TOP-100 active participants at the end of each month.
 
 Fill in the form to participate in [Robonomics Web Services beta test](https://share.hsforms.com/1rlIfFL6ZSriaOjtf4NAGPw535vx).
+
+Thank you for contributing to the development of autonomous robots economy.
