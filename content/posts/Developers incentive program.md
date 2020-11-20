@@ -37,9 +37,7 @@ Robonomics Web Services is a great environment for creating your simulations of 
 **If you’re looking for a source of inspiration, we suggest you visit the Robonomics scientific resources:**
 
 > [Research & Development](https://wiki.robonomics.network/docs/r-and-d-based-on-robonomics-network/) made on Robonomics Network;
-
 > [Scientific researchers](https://robonomics.network/community#science) made by core Robonomics Network team members;
-
 > If you have any questions regarding the mentioned cases, please visit the Robonomics developers forum.
 
 **Core Robonomics DAO IoT & Robotics developers will evaluate your project and help you in your research.**
