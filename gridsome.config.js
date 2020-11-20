@@ -14,6 +14,7 @@ module.exports = {
 
   templates: {
     Post: "/blog/:title",
+    Land: "/land/:title",
     Tag: "/blog/tag/:id",
   },
 
@@ -54,6 +55,15 @@ module.exports = {
             create: true,
           },
         },
+      },
+    },
+
+    {
+      // Create posts from markdown files
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "Land",
+        path: "content/land/*.md",
       },
     },
   ],
