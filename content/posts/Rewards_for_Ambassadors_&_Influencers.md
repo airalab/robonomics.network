@@ -8,7 +8,7 @@ Currently, you can start by making video/written overviews of the following mate
 * [Robonomics Wiki page, designed for developers & researchers](https://wiki.robonomics.network/docs/r-and-d-based-on-robonomics-network/). It consists of technical information and guides on how to use Robonomics Network. 
 In the “R&D based on Robonomics” section, you’ll find the list of scientific researchers based on Robonomics Network.
 
-* [Robonomics DAPP](https://dapp.robonomics.network/#/), **designed to become a marketplace of robotics services offered by Robonomics Network and its participants.** 
+* [Robonomics DAPP](https://dapp.robonomics.network/#/), designed to become a marketplace of robotics services offered by Robonomics Network and its participants.
   * The upcoming update will simplify the RWS onboarding process and open present economy of robots services based on Robonomics platform;
 
 * [Robonomics](https://github.com/airalab/robonomics), the main Github repository of Robonomics Web Services, based on Substrate framework.
