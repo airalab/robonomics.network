@@ -14,7 +14,7 @@ description: "With the launch of Robonomics Web Services beta test, Robonomics N
 Thus, the core Robonomics DAO allocated 10.000 XRT under the management of the marketing department representative.
 Those funds will be under the control of Robonomics marketing DAO. Who’s responsible for rewarding **developers** and communicating with **ambassadors** & **influencers**.
 
-<!-- 
-[Rewards for Researchers, Developers and Engineers.](link to another article)
+[Rewards for Researchers, Developers and Engineers](https://robonomics.network/blog/rewards-for-researchers-developers-and-engineers/)
 
-[Rewards for Ambassadors & Influencers](link to another article) -->
+[Rewards for Ambassadors & Influencers](https://robonomics.network/blog/rewards-for-ambassadors-and-influencers/)
+<!-- 
