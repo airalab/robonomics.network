@@ -12,9 +12,9 @@
 
     <section>
 
-      <div class="layout landing">
-        <VueRemarkContent />
-      </div>
+    <div class="layout landing">
+      <VueRemarkContent />
+    </div>
   
       <!--<div class="layout" v-html="$page.land.content" />-->
 

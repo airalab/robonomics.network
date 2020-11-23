@@ -6,7 +6,8 @@ description: "Meet Robonomics network – secure, сost-effective, and futuristi
 import Abstract from '~/components/TextAbstract.vue'
 import Grid from '~/components/TextGrid.vue'
 import Card from '~/components/TextLinkCard.vue'
-import CardIcon from '~/components/TextLinkImage.vue'
+import CardIcon from '~/components/TextLinkIcon.vue'
+import Button from '~/components/Button.vue'
 
 
 <Abstract :text="'Meet Robonomics network – secure, сost-effective, and futuristic IoT platform for connecting robotics under Polkadot and Ethereum control'" />
@@ -31,7 +32,7 @@ import CardIcon from '~/components/TextLinkImage.vue'
     />
 </Grid>-->
 
-<Grid :layout="'1fr 1fr 1fr'">
+<Grid :layout="'3'">
     <CardIcon
         :image="'/land/icon-presentation.png'" 
         :title="'What is Robonomics Network?'"
@@ -74,7 +75,7 @@ https://www.youtube.com/embed/IEgvXcj3nSo
 
 ## How can I use the Robonomics?
 
-<Grid :layout="'1fr 1fr 1fr 1fr'">
+<Grid :layout="'4'">
     <CardIcon
         :image="'/land/icon-wiki.png'" 
         :title="'Robonomics Wiki'"
@@ -119,3 +120,8 @@ https://www.youtube.com/embed/IEgvXcj3nSo
         :link="'https://t.me/robonomics'"
     />
 </Grid>
+
+
+## Want to talk with core Robonomics DAO developers?
+
+<Button :link="'https://discourse.robonomics.network/'" :label="'Visit Robonomics Network forum'" :scale="'1.2'"/>

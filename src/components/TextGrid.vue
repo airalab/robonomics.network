@@ -1,6 +1,6 @@
 <template>
 
-  <section class="grid" :style="style">
+  <section class="grid" :style="style" :class="classes">
     <slot/>
   </section>
 
@@ -33,7 +33,13 @@ export default {
   computed: {
     style() {
       return {
-        [`grid-template-${this.orient}`]: this.layout,
+        [`grid-template-${this.orient}`]: `repeat(${this.layout},1fr)`
+      };
+    },
+
+    classes() {
+      return {
+        [`${this.orient}-${this.layout}`]: true
       };
     },
   },
@@ -52,5 +58,22 @@ export default {
         display:block;
       }
     }
+
+    &.columns-4{
+      @media screen and (max-width:1380px){
+        grid-template-columns: repeat(2,1fr) !important;
+      }
+
+      @media screen and (max-width:570px){
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    &.columns-3{
+      @media screen and (max-width:1340px){
+        grid-template-columns: 1fr !important;
+      }
+    }
   }
+  
 </style>
