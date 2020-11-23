@@ -59,13 +59,13 @@ h1 {
   text-align: center;
 
   display: inline-block;
-  background: linear-gradient(to right , var(--color-green), #11a075, #5DC0DF, #355bd6, var(--link-color-hover), #101F5A);
+  background: linear-gradient(to right , var(--color-green), #11a075, #5DC0DF, #355bd6, var(--link-color-hover), #101F5A, var(--link-color-hover), #355bd6, #5DC0DF, #11a075, var(--color-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   background-position:  0; 
   background-size: 200%;
-  animation: 8s progress-bar linear infinite;
+  animation: 12s progress-bar linear infinite;
 
   @media screen and (max-width: 1000px) {
     font-size: 1.6rem;
@@ -129,7 +129,7 @@ ol {
 a{
   &:not(.button) {
     color: var(--link-color);
-    transition: opacity .2s, color .2s;
+    transition: all .2s, color .2s;
 
     &:hover {
       color: var(--link-color-hover);

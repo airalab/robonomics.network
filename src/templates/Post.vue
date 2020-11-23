@@ -19,7 +19,9 @@
         <g-image :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
       </div>
 
-      <div class="post__content" v-html="$page.post.content" />
+      <!--<div class="post__content" v-html="$page.post.content" />-->
+
+      <VueRemarkContent />
 
     </section>
 

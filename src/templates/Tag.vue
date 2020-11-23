@@ -27,7 +27,6 @@ query Tag ($id: ID!) {
             title
             path
             date (format: "MMMM D, YYYY")
-            timeToRead
             description
             content
             cover_image (width: 1500, quality: 100)
