@@ -12,7 +12,7 @@
       <!--<small>Get involved to Robonomics Network Community: read White paper, science papers, our brochures and other docs; find here information about XRT token; read news from our social accounts, chat with us, get intouch.</small>-->
     </div>
 
-    <section class="layout__content layout__text">
+    <section class="layout layout__text">
 
       <tabs>
 

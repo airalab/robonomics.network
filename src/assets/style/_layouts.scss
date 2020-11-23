@@ -1,6 +1,11 @@
 section{
   margin-top: var(--space);
   margin-bottom: calc( var(--space) * 2 );
+
+  section {
+	margin-top: calc(var(--space)/2);
+	margin-bottom: calc(var(--space)/2);
+  }
 }
 
 .section{
@@ -9,7 +14,7 @@ section{
 
   &__solid{
   	background-color: var(--color-light);
-	padding: 1rem;	  
+	padding: 1rem;
 
   	h1, h2, h3, h4, h5 {
   		margin-bottom: var(--space-text);
@@ -38,11 +43,6 @@ section{
 	&__content {
 	  max-width: var(--content-width);
 	  text-align: center;
-
-	  @media screen and (max-width: 720px) {
-	    padding-left: var(--space);
-	    padding-right: var(--space);
-	  }
 	}
 
 	&__text {
