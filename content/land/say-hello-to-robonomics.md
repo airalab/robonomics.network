@@ -32,18 +32,12 @@ import Button from '~/components/Button.vue'
     />
 </Grid>-->
 
-<Grid :layout="'3'">
+<Grid :layout="'2'">
     <CardIcon
         :image="'/land/icon-presentation.png'" 
         :title="'What is Robonomics Network?'"
         :caption="'View Keypoint presentation'"
         :link="'https://static.robonomics.network/docs/presentations/Robonomics.Keypoint.updated.August.2020.pdf'"
-    />
-    <CardIcon
-        :image="'/land/icon-book.png'" 
-        :title="'Robot economics'"  
-        :caption="'View our colourful book'"
-        :link="'https://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-en.pdf'"
     />
     <CardIcon
         :image="'/land/icon-coding.png'"
