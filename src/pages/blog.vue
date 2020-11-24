@@ -7,22 +7,13 @@
       :pageImage = "'/website_cover_community.png'"
     />
 
-    <div class="layout__title">
+    <div class="layout__title blog_title">
       <h1>Robonomics blog</h1>
     </div>
 
-    <section class="layout__content layout__text">
+    <section class="layout blog_grid">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </section>
-
-    <!--<section class="blog-socials layout__content layout__text">
-      <span>Follow us:</span>
-      <g-link to="https://wiki.robonomics.network/">Wiki</g-link>
-			<g-link to="https://discourse.robonomics.network">Forum</g-link>
-			<g-link to="https://t.me/robonomics">Telegram</g-link>
-			<g-link to="https://twitter.com/AIRA_Robonomics">Twitter</g-link>
-			<g-link to="https://github.com/airalab">GitHub</g-link>
-    </section>-->
 
   </layout>
 </template>
@@ -75,21 +66,29 @@ query {
 
 
 <style lang="scss">
-  .blog-socials {
-    a, span {
-      display: inline-block;
-      margin-left: var(--space);
-      text-transform: uppercase;
-      letter-spacing: 1px;
+  // .blog_title {
+  //     background: linear-gradient(45deg,  #5DC0DF, #355bd6, var(--link-color-hover), #355bd6, #5DC0DF);
+  //     color: #fff;
+  //     padding-bottom: calc(var(--space)*2);
 
-      &:first-child {
-        margin-left: 0;
-      }
-      
+  //     h1 {
+  //       color: #fff;
+  //       background: none;
+  //       -webkit-text-fill-color: #fff;
+  //     }
+  // }
+
+  .blog_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space);
+
+    @media screen and (max-width: 970px) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    a {
-      text-decoration: none;
+    @media screen and (max-width: 620px) {
+      grid-template-columns: 1fr;
     }
   }
 </style>

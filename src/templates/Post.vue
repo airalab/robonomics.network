@@ -6,7 +6,7 @@
       :pageDescription = "$page.post.description"
     />
 
-    <div class="layout__title">
+    <div class="layout__title blog_title">
       <h1>{{ $page.post.title }}</h1>
     </div>
 
@@ -14,13 +14,16 @@
       <PostMeta :post="$page.post" />
     </div>
 
-    <section class="post layout__content layout__text">
-      <div class="post__header">
+
+    <div class="post__header">
         <g-image :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
-      </div>
+    </div>
 
+
+    <section class="post layout layout__text">
+      
       <!--<div class="post__content" v-html="$page.post.content" />-->
-
+      
       <VueRemarkContent />
 
     </section>
@@ -51,7 +54,7 @@ query Post ($id: ID!) {
     }
     description
     content
-    cover_image (width: 1500, quality: 100)
+    cover_image (width: 2000, quality: 100)
   }
 }
 </page-query>
@@ -74,12 +77,24 @@ query Post ($id: ID!) {
 
 <style lang="scss">
   .post {
-    background-color: var(--color-light);
+    // background-color: var(--color-light);
     padding: var(--space);
     text-align: left;
+    font-weight: 400;
 
     &__header {
-      margin-bottom: var(--space-text);
+      margin-top: var(--space-text);
+      // margin-bottom: var(--space-text);
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+
+      img {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 </style>

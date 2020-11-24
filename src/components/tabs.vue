@@ -29,6 +29,7 @@
         list-style: none;
         width: 100%;
         margin-left: 0;
+        text-align: center;
 
         li {
             display: inline-block;
