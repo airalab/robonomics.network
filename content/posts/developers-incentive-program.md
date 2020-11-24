@@ -3,26 +3,27 @@ title: Rewards for researchers, developers and engineers
 date: 2020-11-20
 published: true
 tags: ['Polkadot', 'Kusama', 'Parachain']
-# cover_image: ./images/robonomics-parachain-lease-offering/robonomics-parachain-bond-offering-cover-web.jpg
+cover_image: ./images/developers-incentive-program/Rewards_2.jpg
 description: "Developers, engineers and researchers as the core drive force of the robotics industry get rewards for research and development activities based on Robonomics Network. Core Robonomics DAO developers allocated 5000 XRT for incentivising research and development activities based on Robonomics Network."
 ---
 
 ## Getting familiar with the basic functionality
 
-The best way for a developer to understand the concept of Robonomics Network is to visit the [playground](https://wiki.robonomics.network/docs/baxter/) section and try it.
+The best way for a developer to understand the concept of Robonomics Network is to visit the [playground](https://wiki.robonomics.network/docs/connect-mars-curiosity-rover-under-robonomics-parachain-control/) section and try it.
 
 ![Playground](./images/developers-incentive-program/wiki-instruction.gif)
 
-The playground section guides people through the process of launching cyber-physical-systems under Robonomics control. A participant can choose any of the offered paragraphs for acquaintance with the Robonomics Network.
+The [playground](https://wiki.robonomics.network/docs/connect-mars-curiosity-rover-under-robonomics-parachain-control/) section guides people through the process of launching cyber-physical-systems under Robonomics control. A participant can choose any of the offered paragraphs for acquaintance with the Robonomics Network.
 
 1st wave of participants will be rewarded with **200$ (In form of native Robonomics token - XRT) for completing the following task**:
 
-* Read step by step instruction in “Playground” section of the wiki;
+* Read step by step instruction in [playground](https://wiki.robonomics.network/docs/connect-mars-curiosity-rover-under-robonomics-parachain-control/) section of the wiki;
 * Launch any type of IoT devices or Robotics system in simulation or real;
 * Upload the video on YouTube, in a video participant has to explain:
     * How does the launch process work with explanations + screencast;
     * How can one store a CPS’es datalog in Blockchain with the help of IPFS;
 * Make a Tweet and Mention @Aira_robonomics Twitter account and Tag $XRT and #robonomicsnetwork.
+
 In the Tweet, participant should share his experience launching a robot on Robonomics Network.
 
 ## Store the global air pollution level in Robonomics Network
@@ -31,12 +32,13 @@ Robonomics Network aims to unveil a pollution level by citizens observation netw
 
 To drive the adoption of open-source sensors network based on Robonomics Web Services, the team decided to reward a first 15 participants with **$300 (In form of native Robonomics token - XRT) for completing the following task:**
 
+* Read step by [step instruction](https://wiki.robonomics.network/docs/connect-sensor-to-robonomics/) in “Cases” section of the wiki;
 * Connect air pollution sensor to Robonomics & maintain it for more than 1 week;
-* Upload the video on YouTube, in a video participant has to:
-   * Describe the process of connecting air pollution sensor to Robonomics Network;   
-* Follow Robonomics Network and make a Tweet, in the Tweet participant has to:
-* Share his experience of connecting air pollution sensor to Robonomics Network, and attach a photo of it;
-* Make a Tweet and Mention @Aira_robonomics Twitter account and Tag $XRT and #robonomicsnetwork
+* Upload the video on YouTube, in a video participant has to explain:
+   * How does the process of connecting air pollution sensor to Robonomics Network + screencast;
+   * How can one store an air pollution level in Blockchain with the help of IPFS;
+* Make a Tweet and Mention @Aira_robonomics Twitter account and Tag $XRT and #robonomicsnetwork.
+
 In the Tweet, participant should share the geolocation of his sensor and share his experience connecting a sensor to Robonomics Network.
 
 ## Making a research/Proof-of-Concept project on Robonomics Network
