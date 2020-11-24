@@ -17,4 +17,3 @@ Those funds will be under the control of Robonomics marketing DAO. Who’s respo
 [Rewards for Researchers, Developers and Engineers](https://robonomics.network/blog/rewards-for-researchers-developers-and-engineers/)
 
 [Rewards for Ambassadors & Influencers](https://robonomics.network/blog/rewards-for-ambassadors-and-influencers/)
-<!-- 

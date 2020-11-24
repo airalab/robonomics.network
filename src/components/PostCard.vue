@@ -41,9 +41,9 @@ export default {
       padding-top: calc(var(--space)/2);
     }
 
-    &:not(:last-child){
-      margin-bottom: var(--space);
-    }
+    // &:not(:last-child){
+    //   margin-bottom: var(--space);
+    // }
 
     &__link {
       position: absolute;
@@ -75,6 +75,7 @@ export default {
 
     &__description {
       margin-bottom: 0;
+      font-size: calc(var(--base-font-size)*0.9);
     }
   }
 </style>
