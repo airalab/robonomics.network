@@ -4,7 +4,7 @@ date: 2020-11-20
 published: true
 tags: ['Polkadot', 'Kusama', 'Parachain']
 # cover_image: ./images/robonomics-parachain-lease-offering/robonomics-parachain-bond-offering-cover-web.jpg
-description: "Learn the basic functionality and get rewards."
+description: "Developers, engineers and researchers as the core drive force of the robotics industry get rewards for research and development activities based on Robonomics Network. Core Robonomics DAO developers allocated 5000 XRT for incentivising research and development activities based on Robonomics Network."
 ---
 
 ## Getting familiar with the basic functionality
@@ -22,21 +22,22 @@ The playground section guides people through the process of launching cyber-phys
 * Upload the video on YouTube, in a video participant has to explain:
     * How does the launch process work with explanations + screencast;
     * How can one store a CPS’es datalog in Blockchain with the help of IPFS;
-* Make a Tweet and Mention @Aira_robonomics Twitter account and Tag $XRT;
+* Make a Tweet and Mention @Aira_robonomics Twitter account and Tag $XRT and #robonomicsnetwork.
+In the Tweet, participant should share his experience launching a robot on Robonomics Network.
 
 ## Store the global air pollution level in Robonomics Network
 
 Robonomics Network aims to unveil a pollution level by citizens observation networks over the World and help people to offset the carbon footprint. Thus, core DAO developers came up with the [water](https://www.frontiersin.org/articles/10.3389/frobt.2020.00070/full) & air pollution sensors network, smart buildings offsetting and green certificates.
 
 To drive the adoption of open-source sensors network based on Robonomics Web Services, the team decided to reward a first 15 participants with **$300 (In form of native Robonomics token - XRT) for completing the following task:**
+
 * Connect air pollution sensor to Robonomics & maintain it for more than 1 week;
 * Upload the video on YouTube, in a video participant has to:
-* Describe the process of connecting air pollution sensor to Robonomics Network;
+   * Describe the process of connecting air pollution sensor to Robonomics Network;   
 * Follow Robonomics Network and make a Tweet, in the Tweet participant has to:
-    * Share his experience of connecting air pollution sensor to Robonomics Network, and attach a photo of it;
-* Mention @Aira_robonomics Twitter account;
-* Mention #Sensors_on_RWS, #robonomicsnetwork,  $XRT.
-In the Tweet, the participant should share the geolocation of your sensor.
+* Share his experience of connecting air pollution sensor to Robonomics Network, and attach a photo of it;
+* Make a Tweet and Mention @Aira_robonomics Twitter account and Tag $XRT and #robonomicsnetwork
+In the Tweet, participant should share the geolocation of his sensor and share his experience connecting a sensor to Robonomics Network.
 
 ## Making a research/Proof-of-Concept project on Robonomics Network
 
@@ -64,7 +65,7 @@ You can find out more about the [benefits of RWS here](https://blog.aira.life/ro
 We’re excited about providing industry 4.0 developers with the DLT infrastructure for their IoT & Robotics use cases.
 
 Everyone, who’ll send telemetry from their IoT device to RWS will be entitled to a reward.
-1000 XRT will be distributed between TOP-100 active participants at the end of each month.
+1000 XRT will be distributed between TOP-100 active participants based on the amount of transferred telemetry to RWS at the end of each month.
 
 Fill in the form to participate in [Robonomics Web Services beta test](https://share.hsforms.com/1rlIfFL6ZSriaOjtf4NAGPw535vx).
 
