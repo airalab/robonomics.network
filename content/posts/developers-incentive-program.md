@@ -11,7 +11,7 @@ description: "Developers, engineers and researchers as the core drive force of t
 
 The best way for a developer to understand the concept of Robonomics Network is to visit the [playground](https://wiki.robonomics.network/docs/baxter/) section and try it.
 
-![Playground](https://lh4.googleusercontent.com/temUSKyq20Khuz3wZ12Kqc0tbvkMK6fAWkjn1SWtLz8gC9IOgSSX5yyRHtwB5uHqzEwHabYtgHC2dRR-TxLHkDMEb3fbJgFYYPWjmaZb0-XOxhgOUhHjGdDvU4O5AiRL3gwGIjuy)
+![Playground](./images/developers-incentive-program/wiki-instruction.gif)
 
 The playground section guides people through the process of launching cyber-physical-systems under Robonomics control. A participant can choose any of the offered paragraphs for acquaintance with the Robonomics Network.
 
