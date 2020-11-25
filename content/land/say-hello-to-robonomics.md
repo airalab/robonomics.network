@@ -50,7 +50,7 @@ import Button from '~/components/Button.vue'
 
 <Card 
     :title="'Robonomics Incentive Program'"
-    :link="'/blog/community-incentative-programm/'"  
+    :link="'/blog/community-incentive-program/'"  
     :button="'Read about rewards'"
     :back="'gradient'"
 >
