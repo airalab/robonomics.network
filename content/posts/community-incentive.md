@@ -12,7 +12,9 @@ import Card from '~/components/TextLinkCard.vue'
 import CardIcon from '~/components/TextLinkIcon.vue'
 import Button from '~/components/Button.vue'
 
-Firstly, we would love to appreciate your contribution to the development of Robonomics Network.  As the Robonomics Network rapidly develops within the Polkadot ecosystem, core DAO developers highlight the importance of supporting Robonomics community. With the launch of Robonomics Web Services beta test, Robonomics Network is shifting to higher growth pace. In order to reward Robonomics community, Robonomics DAO came up with the idea of a community incentive program.
+Firstly, we would love to appreciate your contribution to the development of Robonomics Network.  As the Robonomics Network rapidly develops within the Polkadot ecosystem, core DAO developers highlight the importance of supporting Robonomics community. 
+
+With the launch of Robonomics Web Services beta test, Robonomics Network is shifting to higher growth pace. In order to reward Robonomics community, Robonomics DAO came up with the idea of a community incentive program.
 
 > Robonomics community incentive program's goal is to provide **developers**, **ambassadors** and **influencers** with **XRT** for their contributions.
 
