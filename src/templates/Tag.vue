@@ -7,10 +7,10 @@
 
       <div class="layout__title layout__title__tag">
         <h1><a href="/blog/">Robonomics blog</a></h1>
-        <h2>{{ $page.tag.title }}</h2>
+        <h2>Tag: {{ $page.tag.title }}</h2>
       </div>
 
-      <section class="layout__content layout__text">
+      <section class="layout blog_grid">
         <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
       </section>
   </layout>

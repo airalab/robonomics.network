@@ -14,7 +14,7 @@ import Button from '~/components/Button.vue'
 
 [!["What Robonomics can do?"](./images/robonomics-can.jpg)](https://blog.aira.life/robonomics-can-72f631824670)
 
-<!--<Grid :layout="'1fr 1fr 1fr'">
+<!--<Grid :layout="'3'">
     <Card
         :title="'What is Robonomics Network?'"
         :link="'https://static.robonomics.network/docs/presentations/Robonomics.Keypoint.updated.August.2020.pdf'" 

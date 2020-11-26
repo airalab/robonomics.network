@@ -22,11 +22,13 @@
 
     <section class="post layout layout__text">
       
-      <!--<div class="post__content" v-html="$page.post.content" />-->
-      
       <VueRemarkContent />
 
     </section>
+
+    <!--<section class="layout layout__text blog_grid" v-if="$page.post.related">
+        <h3>Related</h3>
+    </section>-->
 
   </layout>
 </template>
