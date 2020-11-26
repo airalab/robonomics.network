@@ -5,6 +5,7 @@ published: true
 tags: ['Polkadot', 'Kusama', 'Parachain']
 cover_image: ./images/developers-incentive-program/Rewards_1.jpg
 description: "With the launch of Robonomics Web Services beta test, Robonomics Network is shifting to higher growth pace. In order to reward Robonomics community, Robonomics DAO came up with the idea of a community incentive program."
+related: ['Rewards for researchers, developers and engineers', 'Rewards for Ambassadors & Influencers']
 ---
 import Abstract from '~/components/TextAbstract.vue'
 import Grid from '~/components/TextGrid.vue'

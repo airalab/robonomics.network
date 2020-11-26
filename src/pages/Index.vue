@@ -96,7 +96,7 @@ query {
     h1 {
       font-size: 4rem;
 
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 700px) {
         font-size: 3rem;
       }
 
@@ -105,7 +105,7 @@ query {
       }
 
       @media screen and (min-width: 1600px) {
-        font-size: 6rem;
+        font-size: 5rem;
       }
     }
     

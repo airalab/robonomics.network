@@ -10,14 +10,6 @@ module.exports = {
   siteUrl: 'https://robonomics.network',
 
   titleTemplate: '%s',
-  // titleTemplate: (title) => title ? `%s | ${title}` : '%s',
-
-  // templates: {
-  //   Post: "/blog/:title",
-  //   Land: "/land/:title",
-  //   Tag: "/blog/tag/:id",
-  // },
-
 
   plugins: [
     {
@@ -42,30 +34,6 @@ module.exports = {
         debug: true
       }
     },
-    // {
-    //   // Create posts from markdown files
-    //   use: "@gridsome/source-filesystem",
-    //   options: {
-    //     typeName: "Post",
-    //     path: "content/posts/*.md",
-    //     refs: {
-    //       // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
-    //       tags: {
-    //         typeName: "Tag",
-    //         create: true,
-    //       },
-    //     },
-    //   },
-    // },
-
-    // {
-    //   // Create posts from markdown files
-    //   use: "@gridsome/source-filesystem",
-    //   options: {
-    //     typeName: "Land",
-    //     path: "content/land/*.md"
-    //   },
-    // },
 
     {
       // Create posts from markdown files
