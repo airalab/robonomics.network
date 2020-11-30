@@ -67,6 +67,11 @@ https://www.youtube.com/embed/IEgvXcj3nSo
 
 </div>
 
+## Want to talk with core Robonomics DAO developers?
+
+<Button :link="'https://discourse.robonomics.network/'" :label="'Visit Robonomics Network forum'" :scale="'1.2'"/>
+
+
 ## How can I use the Robonomics?
 
 <Grid :layout="'4'">
@@ -116,6 +121,3 @@ https://www.youtube.com/embed/IEgvXcj3nSo
 </Grid>
 
 
-## Want to talk with core Robonomics DAO developers?
-
-<Button :link="'https://discourse.robonomics.network/'" :label="'Visit Robonomics Network forum'" :scale="'1.2'"/>
