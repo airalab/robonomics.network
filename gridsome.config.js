@@ -53,7 +53,12 @@ module.exports = {
           },
         },
         plugins: [
-          // ['remark-highlight.js'],
+          ['remark-highlight.js'],
+          ['remark-autolink-headings', {content: {
+            type: 'text',
+            value: '#',
+            properties: {className: ['title-link']}
+          }}],
           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube', 'Twitter', 'Gist']}]
         ]
       }
@@ -68,7 +73,11 @@ module.exports = {
         route: '/land/:title',
         template: './src/templates/Land.vue',
         plugins: [
-          // ['remark-highlight.js'],
+          ['remark-highlight.js'],
+          ['remark-autolink-headings', {content: {
+            type: 'text',
+            value: '#'
+          }}],
           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube', 'Twitter', 'Gist']}]
         ]
       },
