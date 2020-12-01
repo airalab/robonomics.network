@@ -37,6 +37,11 @@ export default {
     background-color: var(--color-light);
     position: relative;
 
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
     h4 {
       padding-top: calc(var(--space)/2);
     }
@@ -59,6 +64,10 @@ export default {
 
     &__header {
       margin-bottom: calc(var(--space)/2);
+
+      img {
+        display:block;
+      }
     }
 
     &__content {

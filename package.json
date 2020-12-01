@@ -19,6 +19,7 @@
     "gridsome-plugin-yandex-metrika": "^0.1.2",
     "gridsome-source-github-api": "^0.2.0",
     "node-sass": "^4.14.1",
+    "remark-autolink-headings": "^6.0.1",
     "remark-highlight.js": "^6.0.0",
     "sass-loader": "^8.0.2",
     "vue-cookies": "^1.7.0",

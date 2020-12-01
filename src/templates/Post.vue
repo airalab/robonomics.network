@@ -21,15 +21,11 @@
 
 
     <section class="post layout layout__text">
-      
-      <VueRemarkContent />
-
+       <VueRemarkContent />
     </section>
 
-    <!--<section class="layout layout__text blog_grid" v-if="$page.post.related">
-        <h3>Related</h3>
-    </section>-->
-
+    <PostRelated />
+       
   </layout>
 </template>
 
@@ -43,22 +39,29 @@
   }
 </static-query>
 
+
 <page-query>
-query Post ($id: ID!) {
-  post: post (id: $id) {
+query($id: ID!) {
+  post(id: $id) {
     title
+    cover_image (width: 2000, quality: 100)
+    description
     path
     date (format: "MMMM D, YYYY")
-    tags {
-      id
-      title
-      path
-    }
-    description
     content
-    cover_image (width: 2000, quality: 100)
+    related
+  }
+  allPost{
+    edges {
+      node {
+        title
+        cover_image (width: 2000, quality: 100)
+        path
+      }
+    }
   }
 }
+
 </page-query>
 
 
@@ -70,6 +73,8 @@ query Post ($id: ID!) {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       PostMeta: () => import('~/components/PostMeta.vue'),
       PostTags: () => import('~/components/PostTags.vue'),
+      PostCard: () => import('~/components/PostCard.vue'),
+      PostRelated: () => import('~/components/PostRelated.vue'),
     }
 
   }
@@ -96,6 +101,13 @@ query Post ($id: ID!) {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+      }
+    }
+
+    h1,h2,h3,h4,h5 {
+      a[aria-hidden="true"]{
+        margin-right: 10px;
+        text-decoration: none;
       }
     }
   }
