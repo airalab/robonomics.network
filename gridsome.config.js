@@ -41,7 +41,7 @@ module.exports = {
       options: {
         typeName: "Post",
         baseDir: "content/posts",
-        route: '/blog/:title',
+        route: '/blog/:url',
         template: './src/templates/Post.vue',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
@@ -53,12 +53,11 @@ module.exports = {
           },
         },
         plugins: [
-          ['remark-highlight.js'],
-          ['remark-autolink-headings', {content: {
-            type: 'text',
-            value: '#',
-            properties: {className: ['title-link']}
-          }}],
+          // ['remark-highlight.js'],
+          // ['remark-autolink-headings', {content: {
+          //   type: 'text',
+          //   value: '#'
+          // }}],
           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube', 'Twitter', 'Gist']}]
         ]
       }
@@ -70,14 +69,14 @@ module.exports = {
       options: {
         typeName: "Land",
         baseDir: "content/land",
-        route: '/land/:title',
+        route: '/land/:url',
         template: './src/templates/Land.vue',
         plugins: [
-          ['remark-highlight.js'],
-          ['remark-autolink-headings', {content: {
-            type: 'text',
-            value: '#'
-          }}],
+          // ['remark-highlight.js'],
+          // ['remark-autolink-headings', {content: {
+          //   type: 'text',
+          //   value: '#'
+          // }}],
           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube', 'Twitter', 'Gist']}]
         ]
       },

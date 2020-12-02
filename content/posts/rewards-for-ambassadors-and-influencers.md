@@ -6,6 +6,7 @@ tags: ['Polkadot', 'Kusama', 'Parachain']
 cover_image: ./images/developers-incentive-program/Rewards_3.jpg
 description: "Robonomics Network concept is quite wide and needs to be explained by people with various backgrounds and expertise. Thus, Robonomics DAO allocated 5000 XRT for rewarding influencers all over the world, that’d make overviews of the Robonomics Network in different formats and describe the basic concept for the outer world."
 related: ['Rewards for researchers, developers and engineers', 'Community incentive program']
+url: rewards-for-ambassadors-and-influencers
 ---
 
 Robonomics Network concept is quite wide and needs to be explained by people with various backgrounds and expertise. Thus, Robonomics DAO allocated **5000 XRT** for rewarding influencers all over the world, that’d make overviews of the Robonomics Network in different formats and describe the basic concept for the outer world.
