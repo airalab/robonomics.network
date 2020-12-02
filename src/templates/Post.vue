@@ -104,12 +104,12 @@ query($id: ID!) {
       }
     }
 
-    h1,h2,h3,h4,h5 {
-      a[aria-hidden="true"]{
-        margin-right: 10px;
-        text-decoration: none;
-      }
-    }
+    // h1,h2,h3,h4,h5 {
+    //   a[aria-hidden="true"]{
+    //     margin-right: 10px;
+    //     text-decoration: none;
+    //   }
+    // }
   }
 </style>
 

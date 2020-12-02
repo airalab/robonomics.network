@@ -6,7 +6,7 @@ tags: ['Polkadot', 'Kusama', 'Parachain']
 cover_image: ./images/developers-incentive-program/Rewards_1.jpg
 description: "With the launch of Robonomics Web Services beta test, Robonomics Network is shifting to higher growth pace. In order to reward Robonomics community, Robonomics DAO came up with the idea of a community incentive program."
 related: ['Rewards for researchers, developers and engineers', 'Rewards for Ambassadors & Influencers']
-
+url: community-incentive-program
 ---
 
 Firstly, we would love to appreciate your contribution to the development of Robonomics Network.  As the Robonomics Network rapidly develops within the Polkadot ecosystem, core DAO developers highlight the importance of supporting Robonomics community. 
