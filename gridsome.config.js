@@ -15,7 +15,11 @@ module.exports = {
     {
       use: 'gridsome-plugin-yandex-metrika',
       options: {
-        id: 47762995
+        id: 47762995,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
       }
     },
     // {
