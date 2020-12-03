@@ -15,12 +15,14 @@ module.exports = {
     {
       use: 'gridsome-plugin-yandex-metrika',
       options: {
-        id: 47762995,
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-      }
+	      id: 47762995,
+	      options:  {
+	        clickmap:true,
+	        trackLinks:true,
+	        accurateTrackBounce:true,
+	        webvisor:true
+	      }
+	    }
     },
     // {
     //   use: "@gridsome/plugin-google-analytics",
@@ -45,7 +47,7 @@ module.exports = {
       options: {
         typeName: "Post",
         baseDir: "content/posts",
-        route: '/blog/:url',
+        route: '/blog/:path',
         template: './src/templates/Post.vue',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
@@ -73,7 +75,7 @@ module.exports = {
       options: {
         typeName: "Land",
         baseDir: "content/land",
-        route: '/land/:url',
+        route: '/land/:path',
         template: './src/templates/Land.vue',
         plugins: [
           // ['remark-highlight.js'],

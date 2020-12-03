@@ -45,6 +45,14 @@
     - link: 'https://www.youtube.com/c/Airalab'
       text: 'Watch videos'
 
+- title: 'Forum'
+  description: 'Discuss any topic related to Robonomics'
+  img: 'forum.png'
+  buttonicon: '↗'
+  options:
+    - link: 'https://discourse.robonomics.network'
+      text: 'Visit forum'
+
 - title: 'Riot, Robonomics technical'
   description: 'Technical questions & other insides.'
   img: 'riot.png'
