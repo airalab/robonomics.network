@@ -2,7 +2,6 @@
 title: Say hello to Robonomics 🎉
 published: true
 description: "Meet Robonomics network – secure, сost-effective, and futuristic IoT platform for connecting robotics under Polkadot and Ethereum control"
-url: say-hello-to-robonomics
 ---
 import Abstract from '~/components/TextAbstract.vue'
 import Grid from '~/components/TextGrid.vue'

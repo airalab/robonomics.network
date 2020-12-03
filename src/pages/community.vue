@@ -166,6 +166,7 @@
 
   .token {
     padding: var(--space);
+    text-align: center;
 
     &__sign {
       display: block;
