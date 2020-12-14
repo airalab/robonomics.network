@@ -1,14 +1,11 @@
 <template>
-
-    <section class="layout layout__text relatedPosts">
   
-      <!-- <p>{{page}}</p>
+    <section class="layout layout__text">
       <hr/>
-      <p>{{pages}}</p>
-      <hr/>
-      <p>{{ related }}</p>-->
-
-      <PostCard v-for="edge in related" :key="edge.id" :post="edge"/>
+      <h3>Related:</h3>
+      <section class="relatedPosts">
+        <PostCard v-for="edge in related" :key="edge.id" :post="edge"/>
+      </section>
 
     </section>
 
@@ -56,19 +53,30 @@
 
 <style lang="scss">
   .relatedPosts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+
+    @media screen and (max-width:570px){
+       grid-template-columns: 1fr;
+    }
+
     .post-card:not(:last-child) {
       margin-bottom: var(--space);
     }
 
     .post-card {
-      display: grid;
-      grid-template-columns: 250px 1fr;
-      align-items: center;
-      h4 { margin-bottom : 0; }
+      // display: grid;
+      // grid-template-columns: 250px 1fr;
+      // align-items: center;
+      // h4 { margin-bottom : 0; }
 
-      @media screen and (max-width:550px){
-        grid-template-columns: 1fr;
-      }
+      // @media screen and (max-width:550px){
+      //   grid-template-columns: 1fr;
+      // }
+
+      .post-card__content { display: none}
     }
 
     .post-card__header { 
