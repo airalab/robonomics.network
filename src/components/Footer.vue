@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="sidetext-left">
+    <div class="sidetext-left backdrop-light">
       <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
       <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
     </div>
@@ -28,7 +28,7 @@
     position:  fixed;
     left: calc(var(--screen-padding)/4);
     bottom: var(--screen-padding);
-    background-color: var(--body-bg);
+    // background-color: var(--body-bg);
 
     transform: rotate(-90deg);
     transform-origin: 0 0;

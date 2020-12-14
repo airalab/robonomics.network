@@ -6,11 +6,11 @@
       :pageDescription = "'Robonomics in the past and nowadays, some important checkpoints of evolution.'"
     />
 
-    <div class="layout__title">
+    <div class="layout layout__title">
       <h1>Infrastructure && tech development timeline</h1>
     </div>
 
-    <section class="layout__content">
+    <section class="layout layout__content">
       <div class="timelineContainer">
         <article class="timeline timeline__current">
           <h3 class="timeline__time">Robonomics Today</h3>

@@ -14,6 +14,7 @@
       <PostMeta :post="$page.post" />
     </div>
 
+    <Abstract v-if="$page.post.abstract" :text="$page.post.abstract" :className="'post_abstract'"/>
 
     <div class="post__header">
         <g-image :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
@@ -50,6 +51,7 @@ query($id: ID!) {
     date (format: "MMMM D, YYYY")
     content
     related
+    abstract
   }
   allPost{
     edges {
@@ -75,6 +77,7 @@ query($id: ID!) {
       PostTags: () => import('~/components/PostTags.vue'),
       PostCard: () => import('~/components/PostCard.vue'),
       PostRelated: () => import('~/components/PostRelated.vue'),
+      Abstract: () => import('~/components/TextAbstract.vue'),
     }
 
   }

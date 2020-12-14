@@ -6,11 +6,19 @@ tags: ['Polkadot', 'Kusama', 'Parachain']
 cover_image: ./images/developers-incentive-program/Rewards_1.jpg
 description: "With the launch of Robonomics Web Services beta test, Robonomics Network is shifting to higher growth pace. In order to reward Robonomics community, Robonomics DAO came up with the idea of a community incentive program."
 related: ['Rewards for researchers, developers and engineers', 'Rewards for Ambassadors & Influencers']
+abstract: 'Firstly, we would love to appreciate your contribution to the development of Robonomics Network.  As the Robonomics Network rapidly develops within the Polkadot ecosystem, core DAO developers highlight the importance of supporting Robonomics community.'
 ---
-
-Firstly, we would love to appreciate your contribution to the development of Robonomics Network.  As the Robonomics Network rapidly develops within the Polkadot ecosystem, core DAO developers highlight the importance of supporting Robonomics community. 
+import CardIcon from '~/components/TextLinkIcon.vue'
+ 
 
 With the launch of Robonomics Web Services beta test, Robonomics Network is shifting to higher growth pace. In order to reward Robonomics community, Robonomics DAO came up with the idea of a community incentive program.
+
+ <CardIcon
+    :image="'/icons/icon-forum.png'"
+    :title="'Still not sure about Robonomics Web Services?'"
+    :caption="'Visit our forum! A place to discuss features, use cases and limitations of RWS with core Robonomics developers.'"
+    :link="'https://discourse.robonomics.network/c/robonomics-web-services/'"  
+/>
 
 > Robonomics community incentive program's goal is to provide **developers**, **ambassadors** and **influencers** with **XRT** for their contributions.
 
