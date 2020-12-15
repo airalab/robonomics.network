@@ -182,11 +182,9 @@ Yakub- Question from bijikgelantungan.
 As an open source package for 4.0 developers, why should developers make Robonomics platform as their go-to platform? How do you support them? Do you have a developers’ training program like DevCamp or developer’s reward program?
 
 Sergei- If you develop on Robonomics you have the support of hundreds of robotics from the box.
-Have a look at robotics which can be used under Robonomics control for your IoT application right now:
-robots.ros.org
-An index of ROS Robots
+Have a look at [robotics which can be used under Robonomics control](robots.ros.org) for your IoT application right now.
 
-> ** DevCamps was for Russian developers in Summer 2017, 2018 and we will continue online for English speaking developers this winter. **
+> **DevCamps was for Russian developers in Summer 2017, 2018 and we will continue online for English speaking developers this winter**
 
 Yakub- Amazing!!!!
 
