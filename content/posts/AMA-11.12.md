@@ -18,7 +18,7 @@ Today we’ll be talking about the development roadmap of Robonomics.Network.
 Sergei Lonshakov, one of the brightest minds of the CIS crypto community, will provide us with updates regarding the further development plan of Robonomics.network.
 Sergei, before we start, would you mind to tell the community a bit about your background and traction of Robonomics.network and what is your exact role in the project?
 
-Sergei- Hi folks! This is Sergei software architect at Robonomics.Network.
+**Sergei-** Hi folks! This is Sergei software architect at Robonomics.Network.
 I was involved in Robonomics concepts from the beginning of the project in 2015, and I invented part of the ideas behind the Robonomics project.
 So, Robonomics for me is a personal story and long road from ideas to implementation, and I hope in the near future to the global ecosystem with many smart cities/industry 4.0 projects inside.
 
@@ -34,24 +34,27 @@ Before 2015:
 Yakub - Great, I guess most of the community members already know you, but for the newcomers, there’re a lot of things to research.
 How do you personally contribute to the development of Robonomics.network?
 
-Sergei - In Robonomics I closely work with:
+**Sergei-** In Robonomics I closely work with:
 > @akru_me to design substrate implementation of [Robonomics network](https://github.com/airalab/robonomics) and our [Aira OS](https://github.com/airalab/aira) for the robotics industry.
+
 > @vol4tim to develop [Robonomics dapp library for js devs](https://github.com/airalab/robonomics-js).
+
 > @kap2fox to publish new [scientific articles](https://robonomics.network/community#science) entitled to the economy of robots.
+
 > @vourhey to prepare [Robotics + Blockchain R&D projects](https://wiki.robonomics.network/docs/r-and-d-based-on-robonomics-network/).
 
 Yakub- I think it would be great to share the background of Alexander Kapitonov(@Kap2Fox) with the community. As far as I know, you’re almost lifetime fellows! How did this friendship arise?
 
-Sergei- We are friends for more than 10 years starting from studentship. He introduced me to @akru_me @vourhey and many other people who worked and continue to work with Robonomics concepts.
+**Sergei-** We are friends for more than 10 years starting from studentship. He introduced me to @akru_me @vourhey and many other people who worked and continue to work with Robonomics concepts.
 Today he is a big man in the academic world.
 
-He’s [Dean of the Faculty of Infocommunication Technologies at ITMO](https://en.itmo.ru/en/viewperson/1564/Alexander_Kapitonov.htm) in St Petersburg.
+**He’s [Dean of the Faculty of Infocommunication Technologies at ITMO](https://en.itmo.ru/en/viewperson/1564/Alexander_Kapitonov.htm) in St Petersburg.**
 He also continues to work with Robonomics Network as a researcher, and help to involve students and professors to Robonomics vision, based on a scientific approach.
 For example, [Fabio Bonsignorio](https://blog.aira.life/novel-ways-to-develop-robotics-and-ai-infrastructures-by-seamlessly-merging-new-financial-and-new-c43060de4fa) good fellow of Robonomics started to work with us after Alexander reached him in Academic fields.
 
 Yakub- Lets dive into the development updates you wanted to share with the community.
 
-Sergei- Robonomcis Developer diaries December 2020:
+**Sergei-** Robonomcis Developer diaries December 2020:
 (1) [Robonomics ready for Rococo Relay Chain’s relaunch](https://twitter.com/EnsRationis/status/1334407718384365568).
 This is going to be the last stop before Kusama Relay Chain is ready to connect parachains.
 I don’t know how long we should wait until Rococo v1 release, and when we can expect the Kusama Slot auction. But from the tech side, as I see Rococo v1 still has some opened issues on the Github that need to be resolved, and I guess in the next several weeks it will be done.
@@ -63,7 +66,7 @@ Stay tuned in Twitter, and you will be one of the first who will touch Robonomic
 
 Yakub- Wow, it means that Robonomics development team helps core Polkadot developers to test out the Relay chain, fascinating!
 
-Sergei- For sure! We’re like a second testbed for Bastian (main contributor of Cumulus) today I think.
+**Sergei-** For sure! We’re like a second testbed for Bastian (main contributor of Cumulus) today I think.
 
 (3) We finished the XRT staking architecture, and it’s going to be something new for the crypto blockchain industry.
 To understand why our staking mechanism is not the same as regular NPoS in Polkadot, we need to dive into its theory.
@@ -78,7 +81,7 @@ Supported humidity, temperature, pollution, GPS sensors. We merged open data-stu
 Yakub- It was pretty exciting!
 Also, you wanted to share further development roadmap for the next 6 months
 
-Sergei- Sure, but that’s not for the AMA session let’s try to make it short and explain it in details in our blog later.
+**Sergei-** Sure, but that’s not for the AMA session let’s try to make it short and explain it in details in our blog later.
 Next 6-months we will spend with:
 (1) RWS open tests and benchmarking.
 
@@ -104,18 +107,18 @@ I'll answer it by myself:
 
 It’s important to notice, that there are no Kusama parachains yet.
 Polkadot’s community is waiting for the first parachain slots auction.
-[Robonomics joined 1st Rococo’s parachains party](https://twitter.com/AIRA_Robonomics/status/1296834125073125379) back in 21.08.2020.
+**[Robonomics joined 1st Rococo’s parachains party](https://twitter.com/AIRA_Robonomics/status/1296834125073125379) back in 21.08.2020.
 In that regard, here is how it was possible to connect to Robonomics parachain on Rococo v0.
 [Rococo](https://polkadot.network/introducing-rococo-polkadots-parachain-testnet/) is a Substrate based testnet of Polkadot & Kusama.
 
 Currently, we’re [ready for Rococo v1](https://twitter.com/EnsRationis/status/1334407718384365568) update, that will bring cross-chain communication for parachains.
 Robonomics team shared the [vision of obtaining Kusama parachain slot here](https://blog.aira.life/robonomics-parachain-bond-offering-b0a6daf50c22?source=collection_home---4------2-----------------------).
 
-Long story short — none of the projects confirmed as first parachains on Kusama.
+> Long story short — none of the projects confirmed as first parachains on Kusama.
 
 2, “Сan somebody explain to me what is the relationship between Robonomics and IPCI? and also why do you have a different chain for IPCI ? I couldn’t find any info around this on robonomics site?”
 
-Sergei- DAO IPCI is a Robonomics dev team’s partner since 2016. 
+**Sergei-** DAO IPCI is a Robonomics dev team’s partner since 2016. 
 [Here you can find traction of DAO IPCI development](https://ipci.io/2020-strategy-announcement-project-overview/).
 
 A year ago we announced [Blockchain for Open Sensors Network Initiative at COP25](https://evercity.medium.com/blockchain-for-open-sensors-network-initiative-announced-at-at-cop25-3ca15c5a0d32) and that was the starting point for launching an independent substrate chain on Robonomics implementation.
@@ -124,7 +127,7 @@ The decision to make DAO IPCI a separate project is a long term strategy. When w
 
 Yakub- 3, What is the destiny of 7 million locked XRT?
 
-Sergei- It will be locked before eth 2.0 phase 2 (my prediction, not earlier than Q2 — Q3 2022).
+**Sergei-** It will be locked before eth 2.0 phase 2 (my prediction, not earlier than Q2 — Q3 2022).
 
 Mentioned XRT budget will be released only on auctions (there are no free tokens in that 7 mln), and only when Robonomics Network will unite its tokenomics on top of Ethereum and Polkadot.
 
@@ -134,7 +137,7 @@ I find it as one of the most encouraging parts of all development processes of R
 
 Yakub- 4, When will we be able to stake XRT? What’s required to do that? What will we get for staking XRT?
 
-Sergei- I already told you what I wanted to share on this AMA session.
+**Sergei-** I already told you what I wanted to share on this AMA session.
 Give me some time to polish the staking article, it’s quite complicated to reveal the unique staking mechanics in a few messages in Telegram.
 
 Yakub- Sure, take your time, we will be waiting for it.
@@ -165,7 +168,7 @@ What sort of corporations, or rather, industries does Robonomics expect $RWS to 
 
 Yakub- I guess SonOfTheSun meant $RWS as Robonomics Web Services.
 
-Sergei- The same who use today [AWS IoT](https://aws.amazon.com/iot/) or [Microsoft Azure IoT](https://azure.microsoft.com/en-us/overview/iot/).
+**Sergei-** The same who use today [AWS IoT](https://aws.amazon.com/iot/) or [Microsoft Azure IoT](https://azure.microsoft.com/en-us/overview/iot/).
 
 Have a look at AWS and Azure websites to find who are the users of IoT services of these companies today, the same end-users / companies will be RWS customers in the future. Additionally, RWS will make more for companies IoT infrastructure, because Robonomics Web Services is truly global and can be a platform for companies who are now outside the customer services of Amazon.
 
@@ -173,7 +176,7 @@ Yakub- Question from zamirakimov.
 
 Will it be possible on Robonomics platform to make robo-taxi infrastructure fully paid by XRT, including XRT payment bot, allowing payments not only for using robo-taxis but also for creating crowd co-owning service for robo-taxis fleet and even further for investing in robotic manufacturing of new robo-cabs to satisfy market requirements?
 
-Sergei- For sure why not :) Start here:
+**Sergei-** For sure why not :) Start here:
 
 > [Drone control with robonomics.](https://wiki.robonomics.network/docs/iris-drone/) Drone activates after the succesful transcation and store its log with the coordinates in IPFS.
 
@@ -181,7 +184,7 @@ Yakub- Question from bijikgelantungan.
 
 As an open source package for 4.0 developers, why should developers make Robonomics platform as their go-to platform? How do you support them? Do you have a developers’ training program like DevCamp or developer’s reward program?
 
-Sergei- If you develop on Robonomics you have the support of hundreds of robotics from the box.
+**Sergei-** If you develop on Robonomics you have the support of hundreds of robotics from the box.
 Have a look at [robotics which can be used under Robonomics control](robots.ros.org) for your IoT application right now.
 
 > **DevCamps was for Russian developers in Summer 2017, 2018 and we will continue online for English speaking developers this winter**
@@ -192,7 +195,8 @@ And the last one for today — question from Ilyaboev.
 
 When will robots become autonomous economic agents?
 
-Sergei- Right now, in front of you. Before the end of this year, our engineers will launch the X-Mas Gaka-Chu paintings auction which was presented first time here:
-So you will be able to buy artwork directly from robot-artist.
+**Sergei-** Right now, in front of you. Before the end of this year, our engineers will launch the X-Mas [Gaka-Chu paintings auction which was presented first time here](https://youtu.be/ReXFCqx5--s?t=1539)
+
+> So you will be able to buy artwork directly from robot-artist.
 
 Yakub- Sergei, thank you for the AMA! It's quite informative!
