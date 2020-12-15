@@ -10,12 +10,13 @@ description: "AMA session with Sergei Lonshakov, software architect at Robonomic
 ---
 
 Yakub - Hi everyone!
-Let me introduce myself. My name is Yakub; I’m Growth & Marketing manager at Robonomics.network.
+
+Let me introduce myself, my name is Yakub; I’m Growth & Marketing manager at Robonomics.network.
+
 Today we’ll be talking about the development roadmap of Robonomics.Network.
 
 Sergei Lonshakov, one of the brightest minds of the CIS crypto community, will provide us with updates regarding the further development plan of Robonomics.network.
 Sergei, before we start, would you mind to tell the community a bit about your background and traction of Robonomics.network and what is your exact role in the project?
-
 
 Sergei- Hi folks! This is Sergei software architect at Robonomics.Network.
 I was involved in Robonomics concepts from the beginning of the project in 2015, and I invented part of the ideas behind the Robonomics project.
