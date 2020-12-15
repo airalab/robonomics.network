@@ -49,7 +49,8 @@ Yakub- I think it would be great to share the background of Alexander Kapitonov(
 Today he is a big man in the academic world.
 
 **He’s [Dean of the Faculty of Infocommunication Technologies at ITMO](https://en.itmo.ru/en/viewperson/1564/Alexander_Kapitonov.htm) in St Petersburg.**
-He also continues to work with Robonomics Network as a researcher, and help to involve students and professors to Robonomics vision, based on a scientific approach.
+
+Alsom, he continues to work with Robonomics Network as a researcher, and help to involve students and professors to Robonomics vision, based on a scientific approach.
 For example, [Fabio Bonsignorio](https://blog.aira.life/novel-ways-to-develop-robotics-and-ai-infrastructures-by-seamlessly-merging-new-financial-and-new-c43060de4fa) good fellow of Robonomics started to work with us after Alexander reached him in Academic fields.
 
 Yakub- Lets dive into the development updates you wanted to share with the community.
