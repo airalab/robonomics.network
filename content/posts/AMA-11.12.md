@@ -35,6 +35,7 @@ Yakub - Great, I guess most of the community members already know you, but for t
 How do you personally contribute to the development of Robonomics.network?
 
 **Sergei-** In Robonomics I closely work with:
+
 > @akru_me to design substrate implementation of [Robonomics network](https://github.com/airalab/robonomics) and our [Aira OS](https://github.com/airalab/aira) for the robotics industry.
 
 > @vol4tim to develop [Robonomics dapp library for js devs](https://github.com/airalab/robonomics-js).
@@ -153,9 +154,9 @@ The four high level goals are centred around Citizens/Communities, Business/Econ
 Q — How can Robonomics play a role in helping cities create opportunities within the space of Technology and Innovation?
 Taking into consideration the approach to sustainability, climate change and importantly changing the mindset of people to open up and to try and understand the benefits of your role in a blockchain transactional environment.
 
-    Sergei- A big part of our work is the vision of sustainable smart cities as described by the UN. Have a look at articles like that:
-    Sustainable and smart cities for all ages.
-    Context The [UNECE region](www.unece.org) is among the most highly urbanized in the world - with the rising share of the population…
+Sergei- A big part of our work is the vision of sustainable smart cities as described by the UN. Have a look at articles like that:
+Sustainable and smart cities for all ages.
+Context The [UNECE region](www.unece.org) is among the most highly urbanized in the world - with the rising share of the population…
 
 And our scientific papers like this:
 
