@@ -25,7 +25,7 @@
        <VueRemarkContent />
     </section>
 
-    <PostRelated />
+    <PostRelated v-if="$page.post.related.length > 0" />
        
   </layout>
 </template>
@@ -74,7 +74,7 @@ query($id: ID!) {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       PostMeta: () => import('~/components/PostMeta.vue'),
-      PostTags: () => import('~/components/PostTags.vue'),
+      // PostTags: () => import('~/components/PostTags.vue'),
       PostCard: () => import('~/components/PostCard.vue'),
       PostRelated: () => import('~/components/PostRelated.vue'),
       Abstract: () => import('~/components/TextAbstract.vue'),
