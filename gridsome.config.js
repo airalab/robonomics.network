@@ -88,7 +88,15 @@ module.exports = {
       },
       
     },
+    
   ],
+
+  transformers: {
+    remark: {
+      // global remark options
+      autolinkHeadings: false
+    }
+  },
 
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')

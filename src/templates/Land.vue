@@ -12,6 +12,8 @@
 
     <section>
 
+    <Abstract v-if="$page.land.abstract" :text="$page.land.abstract"/>
+
     <div class="layout landing">
       <VueRemarkContent />
     </div>
@@ -28,8 +30,9 @@ query Land ($id: ID!) {
   land: land (id: $id) {
     title
     path
-    description,
+    description
     content
+    abstract
   }
 }
 </page-query>
@@ -41,6 +44,7 @@ query Land ($id: ID!) {
 
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
+      Abstract: () => import('~/components/TextAbstract.vue'),
     }
 
   }

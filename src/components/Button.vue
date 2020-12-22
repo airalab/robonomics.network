@@ -23,7 +23,7 @@ export default {
       default: false,
     },
 
-    style: {
+    button: {
       type: String,
       default: 'border',
       validator: function (value) {
@@ -41,7 +41,7 @@ export default {
     classes() {
       return {
         [`button`]: true,
-        [`button__${this.style}`]: true,
+        [`button__${this.button}`]: true,
       };
     },
   },
