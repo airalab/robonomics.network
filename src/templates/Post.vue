@@ -113,6 +113,10 @@ query($id: ID!) {
     //     text-decoration: none;
     //   }
     // }
+
+    strong, b {
+      background-color: #f8ffb5;
+    }
   }
 </style>
 
