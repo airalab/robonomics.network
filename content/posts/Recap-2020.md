@@ -186,7 +186,7 @@ We&#39;d love to reward the most active &amp; engaged community members within 2
 | Kev | 10 |
 | HSVGTS - Baghunters.com | 10 |
 | Agent\_K | 20 |
-| **Total XRT =** | **60** |
+| **Total XRT =** | **120** |
 
 
 # Summary
