@@ -5,8 +5,8 @@ published: true
 tags: ['Polkadot', 'Kusama', 'Parachain']
 cover_image: ./images/Recap-2020/00_newyear.jpg
 # canonical_url: false
-description: "AMA session with Sergei Lonshakov, software architect at Robonomics.Network. We discussed further development roadmap, and answered the most frequent questions from the community members."
-abstract: "AMA session with Sergei Lonshakov, software architect at Robonomics.Network. We discussed further development roadmap, and answered the most frequent questions from the community members."
+description: "Robonomics Network's journey in 2020"
+abstract: ""
 ---
 
 # Introduction
@@ -15,7 +15,7 @@ Thank you for following us within 2020!
 
 We decided to write a summing up article to highlight the important events in 2020 &amp; feature the most active community members.
 
-![<images src=](images/00_newyear.jpg)
+![newyear](images/00_newyear.jpg)
 
 It&#39;d be tough for developers to answer newcomers&#39; repeated questions without a reduction in productivity. We reached those results together as a team!
 
@@ -61,7 +61,7 @@ A large number of AI companies are building solutions to optimize the processes 
 
 [MerkleBot](https://merklebot.com/) has used [Robonomics Network](https://robonomics.network/) to build a solution for industrial clients to connect their factory to the cloud-based AI in a secure way.
 
-![](images/00_3_marklebot.jpg)
+![merkebot](images/00_3_marklebot.jpg)
 
 [**Video case study**](https://www.youtube.com/watch?v=8AL70LFVX5w&amp;feature=emb_logo)
 
@@ -126,7 +126,7 @@ In order to attract early adopters and researchers from the different universiti
 - If you are a representative of the academic community and are interested in a project, then we need help finding contacts at universities.
 - If you are a Kusama enthusiast and you are interested in the project, then help us convey our ideas to the Kusama community and councillors.
 
-![](images/01_funding.jpg)
+![funding](images/01_funding.jpg)
 
 [**Alexander Kapitonov**](https://scholar.google.com/citations?user=J3HFpjoAAAAJ)(Dean in ITMO university, joined Robonomics back in 2015) and [**Fabio Bonsignorio**](http://www.heronrobots.com/about/people-info/15-fabio-bonsignorio)(founder and CEO of Heron Robots. Who has been a visiting professor at the Scuola Superiore Sant&#39;Anna until 2019)will lead the Academia incentive program.
 
