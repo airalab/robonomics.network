@@ -15,7 +15,7 @@ Thank you for following us within 2020!
 
 We decided to write a summing up article to highlight the important events in 2020 &amp; feature the most active community members.
 
-![](images/00_newyear.jpg)
+![<images src=](images/00_newyear.jpg)
 
 It&#39;d be tough for developers to answer newcomers&#39; repeated questions without a reduction in productivity. We reached those results together as a team!
 
