@@ -132,8 +132,7 @@ In order to attract early adopters and researchers from the different universiti
 
 [Read more about the Academia incentive program.](https://robonomics.network/land/support-academia/)
 
-# XRT &amp; RWS
-tokens
+# XRT &amp; RWS tokens
 
 XRT price on the 1st January 2020 = $0,89
 
@@ -197,7 +196,7 @@ Despite the Covid-19, 2020 was an exceptionally productive year for the core Rob
 - 100+ popular &amp; demanded robots could be connected to Robonomics parachain;
 - 50+ ROS compatible sensors &amp; cameras supported by Robonomics parachain;
 - XRT did x20 from the beginning of the year;
-- X Amount of XRT was distributed within the community for different activities.
+- 111320 XRT was distributed within the community for different activities, e.g liquidity providing on Uniswap, collatorals maintainance on the network.
 
 We&#39;ll release a marketing recap in the mid-January, where we&#39;ll highlight results and share plans regarding the further growth of Robonomics Network.
 
