@@ -1,11 +1,18 @@
 ---
-title: Robonomics Recap
+title: Robonomics Network 2020 Recap
 date: 2020-12-30
 published: true
 tags: ['Polkadot', 'Kusama', 'Parachain']
 cover_image: ./images/Recap-2020/00_newyear.jpg
 # canonical_url: false
-description: "Robonomics Network's journey in 2020"
+description: "Recap of the 2020 year in Robonomics:
+
+- Blockchain development
+- Robonomics Web Services
+- Robotics
+- Sensors
+- Academia incentive program
+"
 abstract: ""
 ---
 
