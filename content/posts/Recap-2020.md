@@ -5,13 +5,7 @@ published: true
 tags: ['Polkadot', 'Kusama', 'Parachain']
 cover_image: ./images/Recap-2020/00_newyear.jpg
 # canonical_url: false
-description: "Recap of the 2020 year in Robonomics:
-
-- Blockchain development
-- Robonomics Web Services
-- Robotics
-- Sensors
-- Academia incentive program
+description: "Recap of the 2020 year in Robonomics: Blockchain development, Robonomics Web Services, Robotics, Sensors, Academia incentive program.
 "
 abstract: ""
 ---
