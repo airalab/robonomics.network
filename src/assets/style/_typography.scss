@@ -155,7 +155,7 @@ a{
 
 
 hr {
-  margin: var(--space-text) 0;
+  margin: calc(var(--space-text)*2) 0;
   border: 0;
   outline: 0;
   height: 1px;

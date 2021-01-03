@@ -8,6 +8,8 @@ import Default from '~/layouts/Default.vue'
 import layoutIndex from '~/layouts/Index.vue'
 import layoutInside from '~/layouts/Inside.vue'
 
+import Inview from 'vueinview'
+
 export default function (Vue, { router, head, isClient }) {
   head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
 
@@ -23,4 +25,6 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('layout-index', layoutIndex)
   Vue.component('layout-inside', layoutInside)
   Vue.component('layout', Default)
+
+  Vue.use(Inview)
 }

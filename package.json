@@ -17,6 +17,7 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-yandex-metrika": "^0.1.2",
+    "gridsome-scroll-reveal": "^1.0.11",
     "gridsome-source-github-api": "^0.2.0",
     "node-sass": "^4.14.1",
     "remark-autolink-headings": "^6.0.1",
@@ -25,7 +26,8 @@
     "vue-cookies": "^1.7.0",
     "vue-in-viewport-directive": "^2.0.0",
     "vue-moment": "^4.1.0",
-    "vue-tabs-component": "^1.5.0"
+    "vue-tabs-component": "^1.5.0",
+    "vueinview": "^1.0.7"
   },
   "devDependencies": {
     "vue-svg-loader": "^0.16.0"
