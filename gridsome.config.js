@@ -85,8 +85,26 @@ module.exports = {
           // }}],
           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube', 'Twitter', 'Gist']}]
         ]
-      },
-      
+      }
+    },
+
+    {
+      // Create posts from markdown files
+      use: "@gridsome/vue-remark",
+      options: {
+        typeName: "Community",
+        baseDir: "content/community",
+        route: '/community/:path',
+        template: './src/templates/Community.vue',
+        plugins: [
+          // ['remark-highlight.js'],
+          // ['remark-autolink-headings', {content: {
+          //   type: 'text',
+          //   value: '#'
+          // }}],
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube', 'Twitter', 'Gist']}]
+        ]
+      }
     },
     
   ],

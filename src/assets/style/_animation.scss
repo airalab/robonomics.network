@@ -12,6 +12,32 @@
 	animation: FadeIn 0.1s var(--animation-bump) 0.1s forwards;
   }
 
+.animate-inside {
+	& > * {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(10%);
+	}
+
+	&.reveal {
+		& > * {
+			animation-name: FadeIn, FloatYUp;
+			animation-timing-function: linear;
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+
+			animation-duration: 0.7s;
+
+			@for $i from 0 to 50 {
+				
+				&:nth-child(#{$i + 1}) {
+					animation-delay: 0.5s + 0.2*$i;
+				}
+
+			}
+		}
+	}
+}
 
   
 @keyframes FadeOut
