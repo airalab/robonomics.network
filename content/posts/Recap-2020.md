@@ -32,9 +32,9 @@ It&#39;d be tough for developers to answer newcomers&#39; repeated questions wit
 
 - Ready for Rococo v1 – Robonomics developers will register Robonomics Parachain on Rococo v1 on 4th January 2021.
 
-**The main repository of the**[ **Substrate-based version of Robonomics Network**](https://github.com/airalab/robonomics) **.**
+**The main repository of the** [ **Substrate-based version of Robonomics Network**](https://github.com/airalab/robonomics) **.**
 
-- DAO IPCI – a standalone substrate-based blockchain, the core [Robonomics team has been](https://github.com/DAO-IPCI/DAO-IPCI)[ **maintaining**](https://github.com/DAO-IPCI/DAO-IPCI) **it for six months**. When the Robonomics parachain becomes Polkadot&#39;s relay chain, DAO IPCI will join the Robonomics Network as its parachain. Recently, another Web3 grant receiver - [Eversity](https://evercity.io/) joined the DAO IPCI development process. They&#39;ll make a contribution to the &quot;Green bonds&quot; feature.
+- DAO IPCI – a standalone substrate-based blockchain, the core [Robonomics team has been](https://github.com/DAO-IPCI/DAO-IPCI) [ **maintaining**](https://github.com/DAO-IPCI/DAO-IPCI) **it for six months**. When the Robonomics parachain becomes Polkadot&#39;s relay chain, DAO IPCI will join the Robonomics Network as its parachain. Recently, another Web3 grant receiver - [Eversity](https://evercity.io/) joined the DAO IPCI development process. They&#39;ll make a contribution to the &quot;Green bonds&quot; feature.
 
 ## Robonomics Web Services
 
@@ -160,8 +160,8 @@ Despite the Covid-19, 2020 was an exceptionally productive year for the core Rob
 - Robonomics Network is ready to register the Robonomics parachain on Rococo v1;
 - 100+ popular &amp; demanded robots could be connected to Robonomics parachain;
 - 50+ ROS compatible sensors &amp; cameras supported by Robonomics parachain;
-- 5+ Detailed tutorials added to Wiki.Robonomics.Network;
-- 9 Use cases are available for the community.
+- [5+ Detailed tutorials added to Wiki.Robonomics.Network](https://wiki.robonomics.network/docs/create-account-in-dapp/);
+- [9 Use cases are available for the community](https://dapp.robonomics.network/#/services).
 
 We&#39;ll release a marketing recap in the mid-January, where we&#39;ll highlight results and share plans regarding the further growth of Robonomics Network.
 
