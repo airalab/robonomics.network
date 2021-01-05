@@ -32,9 +32,9 @@ It&#39;d be tough for developers to answer newcomers&#39; repeated questions wit
 
 - Ready for Rococo v1 – Robonomics developers will register Robonomics Parachain on Rococo v1 on 4th January 2021.
 
-**The main repository of the** [**Substrate-based version of Robonomics Network**](https://github.com/airalab/robonomics) **.**
+**The main repository of the**[ **Substrate-based version of Robonomics Network**](https://github.com/airalab/robonomics) **.**
 
-- DAO IPCI – a standalone substrate-based blockchain, the core [Robonomics team has been](https://github.com/DAO-IPCI/DAO-IPCI)[**maintaining**](https://github.com/DAO-IPCI/DAO-IPCI) **it for six months**. When the Robonomics parachain becomes Polkadot&#39;s relay chain, DAO IPCI will join the Robonomics Network as its parachain. Recently, another Web3 grant receiver - [Eversity](https://evercity.io/) joined the DAO IPCI development process. They&#39;ll make a contribution to the &quot;Green bonds&quot; feature.
+- DAO IPCI – a standalone substrate-based blockchain, the core [Robonomics team has been](https://github.com/DAO-IPCI/DAO-IPCI)[ **maintaining**](https://github.com/DAO-IPCI/DAO-IPCI) **it for six months**. When the Robonomics parachain becomes Polkadot&#39;s relay chain, DAO IPCI will join the Robonomics Network as its parachain. Recently, another Web3 grant receiver - [Eversity](https://evercity.io/) joined the DAO IPCI development process. They&#39;ll make a contribution to the &quot;Green bonds&quot; feature.
 
 ## Robonomics Web Services
 
@@ -133,42 +133,6 @@ In order to attract early adopters and researchers from the different universiti
 
 [Read more about the Academia incentive program.](https://robonomics.network/land/support-academia/)
 
-# XRT &amp; RWS tokens
-
-XRT price on the 1st January 2020 = $0,89
-
-XRT price on the 27rd December 2020 = $17,68
-
-XRT distribution within 2020:
-
-XRT listings in 2020:
-
-- [Huobi](https://www.huobi.com/en-us/exchange/xrt_eth/)
-- [Dharma](https://www.dharma.io/token/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7)
-- [Bkex](https://bkex.zendesk.com/hc/en-us/articles/360053072333)
-
-A quick intro to XRT:
-
-[Theory in White Paper, Chapter 6](https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf)
-
-[Distribution Release September 2020](https://ipfs.io/ipfs/QmZjzJbZDhs7B3YhtRkvdg4jp6qpfkVGB67w7vH2nJBUrE/Robonomics_token_Polkadot_KUSAMA_stage_details_september_2020.pdf)
-
-RWS price on the 26th July 2020 = $19623
-
-RWS price on the 28th December 2020 = $40789
-
-RWS distribution within 2020:
-
-- 50 RWS allocated for non-profit organisations focused on different researches;
-
-- 50 RWS allocated on the open market.
-
-A quick intro to RWS:
-
-[Robonomics Web Services and RWS token intro](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42)
-
-[RWS overview, part 2 &quot;Heterogeneous tokenomics&quot;](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855)
-
 # Robonomics community hall of fame 2020
 
 We&#39;d love to reward the most active &amp; engaged community members within 2020 with XRT for contributing to the growth of the Robonomics Telegram community.
@@ -196,7 +160,6 @@ Despite the Covid-19, 2020 was an exceptionally productive year for the core Rob
 - Robonomics Network is ready to become a parachain on Rococo v1 on 4th January;
 - 100+ popular &amp; demanded robots could be connected to Robonomics parachain;
 - 50+ ROS compatible sensors &amp; cameras supported by Robonomics parachain;
-- XRT did x20 from the beginning of the year;
 - 111320 XRT was distributed within the community for different activities, e.g liquidity providing on Uniswap, collatorals maintainance on the network.
 
 We&#39;ll release a marketing recap in the mid-January, where we&#39;ll highlight results and share plans regarding the further growth of Robonomics Network.
