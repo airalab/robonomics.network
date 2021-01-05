@@ -157,12 +157,12 @@ We&#39;d love to reward the most active &amp; engaged community members within 2
 
 Despite the Covid-19, 2020 was an exceptionally productive year for the core Robonomics Network development team.
 
-- Robonomics Network is ready to register the Robonomics parachain on Rococo v1;
-- 100+ popular &amp; demanded robots could be connected to Robonomics parachain;
-- 50+ ROS compatible sensors &amp; cameras supported by Robonomics parachain;
+- [Robonomics Network is ready to register the Robonomics parachain on Rococo v1](https://twitter.com/AIRA_Robonomics/status/1344662180260679684?s=20);
+- [100+ popular &amp; demanded robots could be connected to Robonomics parachain](https://robots.ros.org/);
+- [50+ ROS compatible sensors &amp; cameras supported by Robonomics parachain](http://wiki.ros.org/Sensors);
 - [5+ Detailed tutorials added to Wiki.Robonomics.Network](https://wiki.robonomics.network/docs/create-account-in-dapp/);
 - [9 Use cases are available for the community](https://dapp.robonomics.network/#/services).
 
 We&#39;ll release a marketing recap in the mid-January, where we&#39;ll highlight results and share plans regarding the further growth of Robonomics Network.
 
-## Happy new year!
+# Happy new year!
