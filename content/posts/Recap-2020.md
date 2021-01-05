@@ -157,10 +157,11 @@ We&#39;d love to reward the most active &amp; engaged community members within 2
 
 Despite the Covid-19, 2020 was an exceptionally productive year for the core Robonomics Network development team.
 
-- Robonomics Network is ready to become a parachain on Rococo v1 on 4th January;
+- Robonomics Network is ready to register the Robonomics parachain on Rococo v1;
 - 100+ popular &amp; demanded robots could be connected to Robonomics parachain;
 - 50+ ROS compatible sensors &amp; cameras supported by Robonomics parachain;
-- 111320 XRT was distributed within the community for different activities, e.g liquidity providing on Uniswap, collatorals maintainance on the network.
+- 5+ Detailed tutorials added to Wiki.Robonomics.Network;
+- 9 Use cases are available for the community.
 
 We&#39;ll release a marketing recap in the mid-January, where we&#39;ll highlight results and share plans regarding the further growth of Robonomics Network.
 
