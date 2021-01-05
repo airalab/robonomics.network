@@ -32,9 +32,9 @@ It&#39;d be tough for developers to answer newcomers&#39; repeated questions wit
 
 - Ready for Rococo v1 – Robonomics developers will register Robonomics Parachain on Rococo v1 on 4th January 2021.
 
-**The main repository of the** [ **Substrate-based version of Robonomics Network**](https://github.com/airalab/robonomics) **.**
+**The main repository of the ** [ **Substrate-based version of Robonomics Network**](https://github.com/airalab/robonomics) **.**
 
-- DAO IPCI – a standalone substrate-based blockchain, the core [Robonomics team has been](https://github.com/DAO-IPCI/DAO-IPCI) [ **maintaining**](https://github.com/DAO-IPCI/DAO-IPCI) **it for six months**. When the Robonomics parachain becomes Polkadot&#39;s relay chain, DAO IPCI will join the Robonomics Network as its parachain. Recently, another Web3 grant receiver - [Eversity](https://evercity.io/) joined the DAO IPCI development process. They&#39;ll make a contribution to the &quot;Green bonds&quot; feature.
+- DAO IPCI – a standalone substrate-based blockchain, the core [Robonomics team has been ](https://github.com/DAO-IPCI/DAO-IPCI) [ **maintaining**](https://github.com/DAO-IPCI/DAO-IPCI) **it for six months**. When the Robonomics parachain becomes Polkadot&#39;s relay chain, DAO IPCI will join the Robonomics Network as its parachain. Recently, another Web3 grant receiver - [Eversity](https://evercity.io/) joined the DAO IPCI development process. They&#39;ll make a contribution to the &quot;Green bonds&quot; feature.
 
 ## Robonomics Web Services
 
