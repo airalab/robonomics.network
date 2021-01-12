@@ -11,8 +11,6 @@ import Card from '~/components/TextCard.vue'
 
 We’re glad to announce that Robonomics Network enters into a partnership with OCEAN protocol.
 
-![collaboration](./images/OCEAN-p1/Robonomics_Ocean_1.jpg)
-
 > Robonomics.network - is a tool that allows developers and engineers to connect IoT & all ROS compatible devices to the digital economy.
 
 With Robonomics, robots and IoT devices can become autonomous economic agents, meaning they can enter into legal obligations, own things, and do whatever humans can do on the open labor market and even more!
