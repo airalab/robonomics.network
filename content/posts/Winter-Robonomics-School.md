@@ -10,9 +10,9 @@ description: "Robonomics Winter School 2021 Master Classes And Lectures Open For
 abstract: ""
 ---
 
-Robonomics Winter School 2021 is inviting all willing to join master classes and lectures hosted by experienced contributors and programmers operating with Dapps and Web services on the Polkadot Parachain. T
+Robonomics Winter School 2021 is inviting all willing to join master classes and lectures hosted by experienced contributors and programmers operating with Dapps and Web services on the Polkadot Parachain. 
 
-he opening ceremony will launch on Wednesday, February 10, at 7:00 PM GMT+3. 
+The opening ceremony will launch on Wednesday, February 10, at 7:00 PM GMT+3. 
 
 The main event with all master classes and lectures will be taking place from the 11th to the 24th of February.
 
