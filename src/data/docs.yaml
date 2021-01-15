@@ -1,11 +1,3 @@
-- title: '2021 Printable monthly calendar'
-  description: 'Printable monthly calendar 2021 with gorgeous cyber-girls from Anna Wimmer-Savinova. Our artist Anna Wimmer-S was inspired by modern Japanese artists and decided to turn all technologies that we use in our solutions into anime. We think that anime characters are strong, kind, brave, and stubborn. And these qualities perfectly fit our team.'
-  img: 'docs-calendar2021.jpg'
-  buttonicon: '&#8595;'
-  options:
-    - link: 'https://static.robonomics.network/docs/calendar2021/Calendar2021-Robonomics-Network.pdf'
-      text: '.pdf 270 Mb'
-      
 - title: 'Robonomics Keypoint, updated August 2020'
   description: 'Keypoint presentation of Robonomics project. Brief and direct. Consist of: executive summary, main definitions, project history timeline, and many useful links in the text. Strongly recommend sharing with your friends, colleagues, and subscribers to let them know more about Robonomics.network'
   img: 'docs-presentation-keypoint-2020.png'

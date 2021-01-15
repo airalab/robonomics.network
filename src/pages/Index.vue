@@ -5,7 +5,10 @@
         :pageTitle = "'Home'"
         :pageDescription = "$static.metadata.siteDescription"
       />
+
+      
     <div class="homepage">
+
       <!--<g-image itemprop="logo" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" class="logo"/>-->
       <div class="layout__title">
         <h1 v-html="$static.metadata.siteName" itemprop="name"/>

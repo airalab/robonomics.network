@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 0.1rem;
   font-weight: 400;
   margin-top: var(--space-text);
+
+  // text-align: center;
   
   @extend %margin_text;
 }
