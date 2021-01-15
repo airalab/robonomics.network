@@ -6,7 +6,7 @@ tags: ['Polkadot', 'Robonomics Winter School', 'Parachain']
 cover_image: ./images/robonomics-school/WS-robonomics-2021-Blog.jpg
 # canonical_url: false
 description: "Free online Master Classes and Lectures open for attendees. Try to build Dapps and Web Services for IoT on Polkadot Parachain in time of Robonomics Winter School 2021 (from 10 to 24 February)"
-abstract: "Free online Master Classes and Lectures open for attendees. Try to build Dapps and Web Services for IoT on Polkadot Parachain in time of Robonomics Winter School 2021 February 10-24"
+abstract: "Free online Master Classes and Lectures open for attendees. Try to build Dapps and Web Services for IoT on Polkadot Parachain in time of Robonomics Winter School from 10th to 24th February 2021"
 ---
 import Card from '~/components/TextCard.vue'
 import Button from '~/components/Button.vue'
