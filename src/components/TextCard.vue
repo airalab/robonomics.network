@@ -97,7 +97,7 @@ export default {
         [`card-image`]: this.image,
         [`card-link`]: this.link || this.popup,
         [`oldy`]: this.back != `transparent`,
-        [`oldy__link`]: this.link || this.popup,
+        [`oldy__link`]: this.link || this.popup || this.back != `transparent`,
         [`card-${this.back}`]: true,
         [`card-imageSize-${this.imageSize}`]: this.icon || this.image,
         [`${this.orientation}`]: true,
