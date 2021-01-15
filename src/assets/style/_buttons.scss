@@ -8,6 +8,18 @@
 		cursor: pointer;
 
 		text-align: center;
+
+		// .button-icon, span {
+		// 	display: inline-block;
+		// 	vertical-align: middle;
+		// 	vertical-align: -moz-middle-with-baseline;
+		// 	vertical-align: -webkit-baseline-middle;
+		// }
+
+		// .button-icon {
+		// 	max-width: 30px;
+		// 	margin-right: .8rem;
+		// }
 		
 		&, select {
 			font-family: 'Roboto', sans-serif;
@@ -23,8 +35,16 @@
 				color: var(--color-light);
 			}
 
+			.button-icon {
+				fill: var(--color-light);
+			}
+
 			&:hover{
 				background-color: var(--link-color-hover);
+
+				.button-icon {
+					fill: var(--link-color-hover);
+				}
 			}
 		}
 
@@ -35,11 +55,19 @@
 
 			.icon { border-color: var(--link-color); }
 
+			.button-icon {
+				fill:  var(--link-color);
+			}
+
 			&:hover {
 				background-color: var(--link-color);
 				color: var(--color-light);
 
 				.icon { border-color: var(--color-light); }
+
+				.button-icon {
+					fill: var(--color-light);
+				}
 
 			}
 		}
