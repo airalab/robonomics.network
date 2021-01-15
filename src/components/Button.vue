@@ -27,7 +27,7 @@ export default {
       type: String,
       default: 'border',
       validator: function (value) {
-        return ['border', 'primary'].indexOf(value) !== -1;
+        return ['border', 'primary', 'block'].indexOf(value) !== -1;
       }
     },
 
@@ -41,7 +41,7 @@ export default {
     classes() {
       return {
         [`button`]: true,
-        [`button__${this.button}`]: true,
+        [`${this.button}`]: true,
       };
     },
   },

@@ -6,15 +6,18 @@
 		display: inline-block;
 
 		cursor: pointer;
+
+		text-align: center;
 		
 		&, select {
 			font-family: 'Roboto', sans-serif;
   			font-weight: 500;
   			font-size: var(--base-font-size);
+  			// font-size: calc(var(--base-font-size) * .9);
   			line-height: 1;
   		}
 
-  		&__primary{
+  		&.primary{
 			&, select {
 				background-color: var(--link-color);
 				color: var(--color-light);
@@ -25,7 +28,7 @@
 			}
 		}
 
-		&__border {
+		&.border {
 			background-color: var(--color-light);
 			border: 1px solid var(--link-color);
 			color: var(--link-color);
@@ -42,7 +45,7 @@
 		}
 		
 
-		&__select {
+		&.select {
 			overflow: hidden;
 
 			select {
@@ -83,10 +86,10 @@
 
 		
 
-		&__block{
+		&.block{
 			display: block;
 			width: 100%;
-			margin: var(--space-text);
+			margin: calc(var(--space)/2) 0;
 		}
 	}
 

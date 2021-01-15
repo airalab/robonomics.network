@@ -22,6 +22,8 @@
 	background-color: var(--color-light);
 
 	&__link {
+    cursor: pointer;
+    
 		&:hover {
 			border-color: var(--link-color);
       box-shadow: .2rem .2rem 0 var(--link-color);
@@ -118,11 +120,11 @@
 .grid-3{
   grid-template-columns: repeat(3,1fr);
 
-  @media screen and (max-width:1340px){
-    grid-template-columns: repeat(2,1fr);
-  }
+  // @media screen and (max-width: 1000px){
+  //   grid-template-columns: repeat(2,1fr);
+  // }
 
-  @media screen and (max-width:1000px){
+  @media screen and (max-width: 800px){
     grid-template-columns: 1fr;
   }
 }

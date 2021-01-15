@@ -1,8 +1,8 @@
 <template>
-  <div class="card" :class="classes">
+  <div class="card" :class="classes" @focus="isFocused = true" @blur="isFocused = false; isActive = false" tabindex="0" @click="toggleActive">
 
     <div v-if="icon" class="icon"><img alt="" :src="icon"/></div>
-    <div v-if="image" class="icon image"><img alt="" :src="image"/></div>
+    <div v-if="image" class="image" :class="{icon: imageRound}"><img alt="" :src="image"/></div>
     
     <div class="content">
       <slot/>
@@ -20,25 +20,38 @@
 
 export default {
 
+  data() {
+        return {
+            isActive: false,
+            isFocused: false
+        }
+    },
+
+  methods: {
+    toggleActive: function (event) {
+      this.isActive = !this.isActive;
+    }
+  },
+
   props: {
     link: {
       type: String,
-      default: false,
+      default: '',
     },
 
     icon: {
       type: String,
-      default: false,
+      default: '',
     },
 
     image: {
       type: String,
-      default: false,
+      default: '',
     },
 
     button: {
       type: String,
-      default: false,
+      default: '',
     },
 
     orientation: {
@@ -61,25 +74,38 @@ export default {
         return ['small', 'big'].indexOf(value) !== -1;
       }
     },
+    
+    popup: {
+      type: Boolean,
+      default: false,
+    },
+
+    imageRound: {
+      type: Boolean,
+      default: true,
+    },
 
   },
 
 
   computed: {
+
+
     classes() {
       return {
         [`card-icon`]: this.icon,
         [`card-image`]: this.image,
-        [`card-link`]: this.link,
+        [`card-link`]: this.link || this.popup,
         [`oldy`]: this.back != `transparent`,
-        [`oldy__link`]: this.link,
+        [`oldy__link`]: this.link || this.popup,
         [`card-${this.back}`]: true,
         [`card-imageSize-${this.imageSize}`]: this.icon || this.image,
         [`${this.orientation}`]: true,
+        [`card-popup`]: this.popup,
+        [`active`]: this.isActive&&this.isFocused,
       };
     },
   },
-
 
 }
 </script>
@@ -87,12 +113,21 @@ export default {
 
 <style lang="scss">
   .card {
+    position: relative;
     padding: var(--space);
     margin-bottom: var(--space);
 
     h1, h2, h3, h4, h5 {
       margin-top: 0 !important;
       margin-bottom: 0 !important;
+    }
+
+    .content {
+      font-size: 85%;
+
+      p:not(:last-child) {
+        margin-bottom: calc(var(--space-text) * 0.5);
+      }
     }
 
     .content > *:not(:first-child) {
@@ -236,4 +271,29 @@ export default {
           }
       }
   }
+
+
+  .card-popup {
+    .content > .button { pointer-events: none; }
+  }
+
+  .card .popup {
+      position: absolute;
+      top: calc(var(--space)/2*(-1));
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      padding: calc(var(--space)/2);
+
+      background-color: var(--color-light);
+
+      transform-origin: 50% 100%;
+      transform: scale(0);
+    }
+
+
+    .card.active .popup {
+      transform: scale(1);
+    }
 </style>

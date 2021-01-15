@@ -15,7 +15,6 @@
     - link: 'https://twitter.com/AIRA_Robonomics'
       text: 'Follow us'
 
-
 - title: 'Telegram chat'
   description: 'Chat with us and our community. Feel free to ask any questions and discuss your suggestions.'
   img: 'telegram.png'
@@ -28,8 +27,24 @@
     - link: 'https://t.me/RobonomicsESP'
       text: 'Español'
 
+- title: 'Element (Riot), Robonomics technical'
+  description: 'Technical questions & other insides.'
+  img: 'element.png'
+  buttonicon: '+'
+  options:
+    - link: 'https://riot.im/app/#/room/#robonomics:matrix.org'
+      text: 'Join chat'
 
-- title: 'Blog'
+- title: 'Forum'
+  description: 'Discuss any topic related to Robonomics'
+  img: 'forum.png'
+  buttonicon: '↗'
+  options:
+    - link: 'https://discourse.robonomics.network'
+      text: 'Visit forum'
+
+
+- title: 'Medium Blog'
   description: 'Our vision of the past, nowdays and future about Robonomics, Ethereum, Polkadot networks, green markets, robotics, and everything, that connected with Robonomics.'
   img: 'medium.png'
   buttonicon: '↗'
@@ -46,22 +61,6 @@
   options:
     - link: 'https://www.youtube.com/c/Airalab'
       text: 'Watch videos'
-
-- title: 'Forum'
-  description: 'Discuss any topic related to Robonomics'
-  img: 'forum.png'
-  buttonicon: '↗'
-  options:
-    - link: 'https://discourse.robonomics.network'
-      text: 'Visit forum'
-
-- title: 'Riot, Robonomics technical'
-  description: 'Technical questions & other insides.'
-  img: 'riot.png'
-  buttonicon: '+'
-  options:
-    - link: 'https://riot.im/app/#/room/#robonomics:matrix.org'
-      text: 'Join chat'
 
 - title: 'Google Form "Add me to Whitelist"'
   description: 'Submit this form, if you are interested in Robonomics or XRT tokenomics. We will send you by e-mail some important news.'
