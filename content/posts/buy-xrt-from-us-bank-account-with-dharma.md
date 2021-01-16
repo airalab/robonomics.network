@@ -12,9 +12,7 @@ cover_image: ./images/dharma/XRT-dharma-Blog.jpg
 
 # canonical_url: false
 
-description: "Robonomics Winter School 2021 Master Classes And Lectures Open For Attendees
-
-"
+description: "Robonomics Winter School 2021 Master Classes And Lectures Open For Attendees"
 
 abstract: ""
 
