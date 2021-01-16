@@ -4,6 +4,8 @@
     <MetaInfo
       :pageTitle = "$page.post.title"
       :pageDescription = "$page.post.description"
+      :pageImage = "$page.post.cover_image.src"
+      :pageImageHeight = "'576'"
     />
 
     <div class="layout__title blog_title">

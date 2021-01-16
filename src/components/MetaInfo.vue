@@ -15,7 +15,9 @@ export default {
   props: {
       pageTitle: { type: String, default: '' },
       pageDescription: { type: String, default: '' },
-      pageImage: { type: String, default: '/website_cover.png?v=2' }
+      pageImage: { type: String, default: '/website_cover.png?v=2' },
+      pageImageWidth: { type: String, default: '1280' },
+      pageImageHeight: { type: String, default: '765' },
   },
 
   data() {
@@ -45,8 +47,8 @@ export default {
         { property: "og:title", content: this.title },
         { property: "og:description", content: this.pageDescription },
         { property: "og:image", content: this.img },
-        { property: "og:image:width", content: '1280' },
-        { property: "og:image:height", content: '765' },
+        { property: "og:image:width", content: this.pageImageWidth },
+        { property: "og:image:height", content: this.pageImageHeight },
         { property: "og:url", content: this.url },
         // {
         //   property: "og:url",
