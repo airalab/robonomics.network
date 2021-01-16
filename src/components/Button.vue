@@ -1,6 +1,6 @@
 <template>
 
-  <g-link :to="link" :class="classes" :style="{transform: 'scale('+scale+')'}">{{label}}</g-link>
+  <g-link :to="src" :class="classes" :style="{transform: 'scale('+scale+')'}">{{label}}</g-link>
 
 </template>
 
@@ -44,6 +44,15 @@ export default {
         [`${this.button}`]: true,
       };
     },
+
+    src() {
+      if(this.link) {
+        return this.link;
+      }
+      else {
+        return '#';
+      }
+    }
   },
 
 }
