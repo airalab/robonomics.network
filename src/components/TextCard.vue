@@ -2,7 +2,9 @@
   <div class="card" :class="classes" @focus="isFocused = true" @blur="isFocused = false; isActive = false" tabindex="0" @click="toggleActive">
 
     <div v-if="icon" class="icon"><img alt="" :src="icon"/></div>
-    <div v-if="image" class="image" :class="{icon: imageRound}"><img alt="" :src="image"/></div>
+    <div v-if="image" class="image" :class="{icon: imageRound}">
+      <g-image alt="" :src="image"/>
+    </div>
     
     <div class="content">
       <slot/>
@@ -136,7 +138,6 @@ export default {
 
 
 
-
     &-white { 
       background: #fff;
     }
@@ -195,7 +196,8 @@ export default {
 
           img {
             display: block;
-            max-width: 100%;
+            // max-width: 100%;
+            width: auto;
             max-height: 100%;
           }
         }
@@ -245,6 +247,7 @@ export default {
         height: 70px;
         border-radius: 35px;
       }
+
     }
 
     &.vertical {
@@ -257,10 +260,12 @@ export default {
         height: 100px;
         border-radius: 50px;
       }
+
     }
   }
 
   .card-imageSize-big {
+
     &.gorizontal {
           grid-template-columns: 120px auto;
 
@@ -269,7 +274,20 @@ export default {
             height: 120px;
             border-radius: 60px;
           }
+
       }
+
+    &.vertical {
+      grid-template-rows: 200px auto;
+      justify-items: center;
+      text-align: center;
+
+      .icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+      }
+    }
   }
 
 
