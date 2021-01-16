@@ -4,7 +4,6 @@
     <MetaInfo
       :pageTitle = "'Blog'"
       :pageDescription = "$static.metadata.siteDescription"
-      :pageImage = "'/website_cover_community.png'"
     />
 
     <div class="layout__title blog_title">
