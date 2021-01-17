@@ -4,7 +4,7 @@ title: How to buy XRT from a U.S. bank account?
 
 date: 2021-01-15
 
-published: true
+# published: true
 
 tags: [‘xrt’, ‘buy xrt’, ‘dharma’, ‘Uniswap’]
 
