@@ -22,6 +22,26 @@ The main event with all master classes and lectures will be taking place from th
 
 <section class="grid-3">
 
+<Card :orientation="'vertical'" :link="'https://www.meetup.com/robonomics/events/275378464/'" :imageRound="false" :image="'/posts/robonomics-school/meetup.png'" :imageSize="'big'">
+
+#### Meetup page
+
+More then 50 attendees already, find your friends
+
+<Button :label="'Join on Meetup'" :button="'primary block'" :link="'https://www.meetup.com/robonomics/events/275378464/'"/>
+
+</Card>
+
+<Card :orientation="'vertical'" :link="'https://youtu.be/kQaSwNYHJQ8'" :imageRound="false" :image="'/posts/robonomics-school/youtube.png'" :imageSize="'big'">
+
+#### Youtube stream
+
+Set a reminder to join the event in time 
+
+<Button :label="'Set a reminder'" :button="'primary block'" :link="'https://youtu.be/kQaSwNYHJQ8'"/>
+
+</Card>
+
 <Card :orientation="'vertical'" popup :imageRound="false" :image="'/posts/robonomics-school/calendar.png'" :imageSize="'big'">
 
 #### Ceremony starts:
@@ -42,26 +62,6 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 
 </div>
-
-</Card>
-
-<Card :orientation="'vertical'" :link="'https://www.meetup.com/robonomics/events/275378464/'" :imageRound="false" :image="'/posts/robonomics-school/meetup.png'" :imageSize="'big'">
-
-#### Meetup page
-
-More then 50 attendees already, find your friends
-
-<Button :label="'Join on Meetup'" :button="'primary block'" :link="'https://www.meetup.com/robonomics/events/275378464/'"/>
-
-</Card>
-
-<Card :orientation="'vertical'" :link="'https://youtu.be/kQaSwNYHJQ8'" :imageRound="false" :image="'/posts/robonomics-school/youtube.png'" :imageSize="'big'">
-
-#### Youtube stream
-
-Set a reminder to join the event in time 
-
-<Button :label="'Set a reminder'" :button="'primary block'" :link="'https://youtu.be/kQaSwNYHJQ8'"/>
 
 </Card>
 
@@ -97,6 +97,26 @@ Sergei Lonshakov @ensrationis published the program on Github. You can find here
 
 <section class="grid-3">
 
+<Card :orientation="'vertical'" :link="'https://www.meetup.com/robonomics/events/275378464/'" :imageRound="false" :image="'/posts/robonomics-school/meetup.png'" :imageSize="'big'">
+
+#### Meetup page
+
+More then 50 attendees already, find your friends
+
+<Button :label="'Join on Meetup'" :button="'primary block'" :link="'https://www.meetup.com/robonomics/events/275378464/'"/>
+
+</Card>
+
+<Card :orientation="'vertical'" :link="'https://youtu.be/kQaSwNYHJQ8'" :imageRound="false" :image="'/posts/robonomics-school/youtube.png'" :imageSize="'big'">
+
+#### Youtube stream
+
+Set a reminder to join the event in time 
+
+<Button :label="'Set a reminder'" :button="'primary block'" :link="'https://youtu.be/kQaSwNYHJQ8'"/>
+
+</Card>
+
 <Card :orientation="'vertical'" popup :imageRound="false" :image="'/posts/robonomics-school/calendar.png'" :imageSize="'big'">
 
 #### Ceremony starts:
@@ -119,24 +139,5 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 </Card>
 
-<Card :orientation="'vertical'" :link="'https://www.meetup.com/robonomics/events/275378464/'" :imageRound="false" :image="'/posts/robonomics-school/meetup.png'" :imageSize="'big'">
-
-#### Meetup page
-
-More then 50 attendees already, find your friends
-
-<Button :label="'Join on Meetup'" :button="'primary block'" :link="'https://www.meetup.com/robonomics/events/275378464/'"/>
-
-</Card>
-
-<Card :orientation="'vertical'" :link="'https://youtu.be/kQaSwNYHJQ8'" :imageRound="false" :image="'/posts/robonomics-school/youtube.png'" :imageSize="'big'">
-
-#### Youtube stream
-
-Set a reminder to join the event in time 
-
-<Button :label="'Set a reminder'" :button="'primary block'" :link="'https://youtu.be/kQaSwNYHJQ8'"/>
-
-</Card>
 
 </section>
