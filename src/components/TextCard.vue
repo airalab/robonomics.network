@@ -1,5 +1,5 @@
 <template>
-  <div class="card" :class="classes" @focus="isFocused = true" @blur="isFocused = false; isActive = false" tabindex="0" @click="toggleActive">
+  <div class="card" :class="classes" @focusin="isActive = true" @focusout="isActive = false" tabindex="0">
 
     <div v-if="icon" class="icon"><img alt="" :src="icon"/></div>
     <div v-if="image" class="image" :class="{icon: imageRound}">
@@ -24,16 +24,9 @@ export default {
 
   data() {
         return {
-            isActive: false,
-            isFocused: false
+            isActive: false
         }
     },
-
-  methods: {
-    toggleActive: function (event) {
-      this.isActive = !this.isActive;
-    }
-  },
 
   props: {
     link: {
@@ -104,7 +97,7 @@ export default {
         [`card-imageSize-${this.imageSize}`]: this.icon || this.image,
         [`${this.orientation}`]: true,
         [`card-popup`]: this.popup,
-        [`active`]: this.isActive&&this.isFocused,
+        [`active`]: this.isActive,
       };
     },
   },
@@ -308,6 +301,9 @@ export default {
 
       transform-origin: 50% 100%;
       transform: scale(0);
+
+      z-index: 1;
+      cursor: default
     }
 
 
