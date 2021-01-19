@@ -40,6 +40,7 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 <Button :label="'Outlook'" :button="'border block'" :link="'https://outlook.live.com/calendar/0/deeplink/compose?body=Free%20online%20Master%20Classes%20and%20Lectures.%20Try%20to%20build%20Dapps%20and%20Web%20Services%20for%20IoT%20on%20Polkadot%20Parachain%20in%20time%20of%20Robonomics%20Winter%20School%202021%20February%2010-24%2C%20https%3A%2F%2Fyoutu.be%2FkQaSwNYHJQ8&enddt=2021-02-10T17%3A00%3A00%2B00%3A00&location=Online&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2021-02-10T15%3A00%3A00%2B00%3A00&subject=Robonomics%20Winter%20School%202021%20Opening%20Ceremony'"/>
 
+
 </div>
 
 </Card>
