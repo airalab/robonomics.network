@@ -64,31 +64,3 @@ query {
 
 </script>
 
-
-<style lang="scss">
-  // .blog_title {
-  //     background: linear-gradient(45deg,  #5DC0DF, #355bd6, var(--link-color-hover), #355bd6, #5DC0DF);
-  //     color: #fff;
-  //     padding-bottom: calc(var(--space)*2);
-
-  //     h1 {
-  //       color: #fff;
-  //       background: none;
-  //       -webkit-text-fill-color: #fff;
-  //     }
-  // }
-
-  .blog_grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space);
-
-    @media screen and (max-width: 970px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media screen and (max-width: 620px) {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

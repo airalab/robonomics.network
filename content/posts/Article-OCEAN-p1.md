@@ -2,7 +2,7 @@
 title: Robonomics Network x Ocean Protocol Collaboration p.1
 date: 2021-01-12
 published: true
-tags: ['Polkadot', 'Kusama', 'Parachain']
+tags: ['Collaborations']
 cover_image: ./images/OCEAN-p1/Robonomics_Ocean_1.jpg
 # canonical_url: false
 description: "Announcement of the collaboration between OCEAN Protocol and Robonomics Network"

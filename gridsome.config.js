@@ -64,7 +64,7 @@ module.exports = {
           //   type: 'text',
           //   value: '#'
           // }}],
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube', 'Twitter', 'Gist']}]
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
         ]
       }
     },
@@ -83,7 +83,7 @@ module.exports = {
           //   type: 'text',
           //   value: '#'
           // }}],
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube', 'Twitter', 'Gist']}]
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
         ]
       }
     },
@@ -102,7 +102,7 @@ module.exports = {
           //   type: 'text',
           //   value: '#'
           // }}],
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube', 'Twitter', 'Gist']}]
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
         ]
       }
     },
