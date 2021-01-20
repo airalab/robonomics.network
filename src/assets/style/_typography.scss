@@ -23,41 +23,18 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
-  margin-top: var(--space-text);
+  margin-top: calc(var(--space)*2);
 
   // text-align: center;
   
   @extend %margin_text;
 }
 
-
-h1, h2 { margin-top: calc(var(--space)*2) !important; }
-
-@media screen and (max-width: 720px) {
-  h1 { margin-top: calc(var(--space)*3) !important; }
-}
-
-
-h2 { font-size: 1.7rem; }
-
-h3 {font-size: 1.2rem;}
-
-h4 {font-size: 1rem;}
-
-h5 {font-size: 0.8rem;}
-
-h2, h3, h4, h5 {
-  &:first-child { margin-top: 0 }
-}
-
-
 h1 {
   font-size: 2.7rem;
   letter-spacing: 0.1rem;
   padding-bottom: 0.3rem;
-  // margin-bottom: calc(var(--space-text) * 4);
   font-weight: 400;
-  margin-top: 0;
   text-align: center;
 
   display: inline-block;
@@ -73,6 +50,23 @@ h1 {
     font-size: 1.6rem;
   }
 }
+
+
+h1 { margin-top: calc(var(--space)*3); }
+h4, h5 { margin-top: var(--space); }
+
+h2 { font-size: 1.7rem; }
+h3 {font-size: 1.2rem;}
+h4 {font-size: 1rem;}
+h5 {font-size: 0.8rem;}
+
+h2, h3, h4, h5 {
+  &:first-child { margin-top: 0 }
+}
+
+
+
+
 
 @keyframes progress-bar {
   0%{

@@ -2,7 +2,7 @@
 title: Robonomics Winter School 2021
 date: 2021-01-13
 published: true
-tags: ['Polkadot', 'Robonomics Winter School', 'Parachain']
+tags: ['Events']
 cover_image: ./images/robonomics-school/WS-robonomics-2021-Blog.jpg
 # canonical_url: false
 description: "Free online Master Classes and Lectures open for attendees. Try to build Dapps and Web Services for IoT on Polkadot Parachain in time of Robonomics Winter School 2021 (from 10 to 24 February)"
@@ -139,5 +139,20 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 </Card>
 
+
+</section>
+
+
+## Info partners
+
+<section class="grid-4">
+
+<Card :orientation="'vertical'" :link="'https://forknews.io/'">
+
+!["Robonomics Parachain on Kusama first"](./images/robonomics-school/forknews_io.png)
+
+#### forknews.io
+
+</Card>
 
 </section>

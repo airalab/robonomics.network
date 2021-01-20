@@ -2,7 +2,7 @@
 title: Rewards for researchers, developers and engineers
 date: 2020-11-20
 published: true
-tags: ['Polkadot', 'Kusama', 'Parachain']
+tags: ['Incentive programs']
 cover_image: ./images/developers-incentive-program/Rewards_2.jpg
 description: "Developers, engineers and researchers as the core drive force of the robotics industry get rewards for research and development activities based on Robonomics Network. Core Robonomics DAO developers allocated 5000 XRT for incentivising community."
 related: ['Community incentive program', 'Rewards for Ambassadors & Influencers']

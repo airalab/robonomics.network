@@ -54,6 +54,11 @@ query($id: ID!) {
     content
     related
     abstract
+    tags {
+      id
+      title
+      path
+    }
   }
   allPost{
     edges {
@@ -89,14 +94,12 @@ query($id: ID!) {
 
 <style lang="scss">
   .post {
-    // background-color: var(--color-light);
     padding: var(--space);
     text-align: left;
     font-weight: 400;
 
     &__header {
       margin-top: var(--space-text);
-      // margin-bottom: var(--space-text);
       max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
@@ -108,13 +111,6 @@ query($id: ID!) {
         margin-right: auto;
       }
     }
-
-    // h1,h2,h3,h4,h5 {
-    //   a[aria-hidden="true"]{
-    //     margin-right: 10px;
-    //     text-decoration: none;
-    //   }
-    // }
 
     strong, b {
       background-color: #f8ffb5;

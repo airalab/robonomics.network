@@ -2,7 +2,7 @@
   <div class="card" :class="classes" @focusin="isActive = true" @focusout="isActive = false" tabindex="0">
 
     <div v-if="icon" class="icon"><img alt="" :src="icon"/></div>
-    <div v-if="image" class="image" :class="{icon: imageRound}">
+    <div v-if="image" class="image" :class="{imageRound: imageRound}">
       <g-image alt="" :src="image"/>
     </div>
     
@@ -31,22 +31,18 @@ export default {
   props: {
     link: {
       type: String,
-      default: '',
     },
 
     icon: {
       type: String,
-      default: '',
     },
 
     image: {
       type: String,
-      default: '',
     },
 
     button: {
       type: String,
-      default: '',
     },
 
     orientation: {
@@ -118,7 +114,7 @@ export default {
     }
 
     .content {
-      font-size: 85%;
+      font-size: 90%;
 
       p:not(:last-child) {
         margin-bottom: calc(var(--space-text) * 0.5);
@@ -154,6 +150,10 @@ export default {
       border-top: 1px dashed var(--text-color)
     }
 
+    &.vertical {
+      text-align: center;
+    }
+
 
 
 
@@ -163,22 +163,23 @@ export default {
       gap: var(--space);
       text-align: left;
 
-      .icon {
-        background-color: var(--text-color);
-        // background-color: var(--color-green);
-        // background: linear-gradient(45deg,  #5DC0DF, #355bd6, var(--link-color-hover), #355bd6, #5DC0DF);
+      .imageRound, .icon {
+           background-color: var(--text-color);
+          // background-color: var(--color-green);
+          // background: linear-gradient(45deg,  #5DC0DF, #355bd6, var(--link-color-hover), #355bd6, #5DC0DF);
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .icon {
         img {
           display: inline-block;
           max-width: 60%;
           max-height: 60%;
         }
       }
-
     }
 
 
@@ -235,7 +236,7 @@ export default {
     &.gorizontal {
       grid-template-columns: 70px auto;
 
-      .icon {
+      .icon, .imageRound {
         width: 70px;
         height: 70px;
         border-radius: 35px;
@@ -248,7 +249,7 @@ export default {
       justify-items: center;
       text-align: center;
 
-      .icon {
+      .icon, .imageRound {
         width: 100px;
         height: 100px;
         border-radius: 50px;
@@ -262,7 +263,7 @@ export default {
     &.gorizontal {
           grid-template-columns: 120px auto;
 
-          .icon {
+          .icon, .imageRound {
             width: 120px;
             height: 120px;
             border-radius: 60px;
@@ -275,7 +276,7 @@ export default {
       justify-items: center;
       text-align: center;
 
-      .icon {
+      .icon, .imageRound {
         width: 120px;
         height: 120px;
         border-radius: 60px;
