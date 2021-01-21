@@ -147,19 +147,27 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 <section class="grid-4">
 
+<Card :orientation="'vertical'" :link="'https://bitnewstoday.com'">
+
+!["Robonomics Winter School Info Partner BitNewsToday"](./images/robonomics-school/BNT.png)
+
+</Card>
+
+<Card :orientation="'vertical'" :link="'https://coincodex.com/'">
+
+!["Robonomics Winter School Info Partner CoinCodex"](./images/robonomics-school/coincodex.png)
+
+</Card>
+
 <Card :orientation="'vertical'" :link="'https://www.youtube.com/channel/UCrvyFYM29oQ-EAejZgYqmWA'">
 
 !["Robonomics Winter School Info Partner Promoteam"](./images/robonomics-school/Promoteam.png)
-
-#### PromoTeam
 
 </Card>
 
 <Card :orientation="'vertical'" :link="'https://forknews.io/'">
 
 !["Robonomics Winter School Info Partner Forknews"](./images/robonomics-school/forknews_io.png)
-
-#### forknews.io
 
 </Card>
 
