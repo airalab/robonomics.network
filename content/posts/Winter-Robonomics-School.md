@@ -147,6 +147,24 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 <section class="grid-4">
 
+<Card :orientation="'vertical'" :link="'https://bitcoinist.com/robonomics-winter-school-2021-master-classes-and-lectures-open-for-attendees/'">
+
+!["Robonomics Winter School Info Partner Bitcoinist"](./images/robonomics-school/bitcoinist.png)
+
+</Card>
+
+<Card :orientation="'vertical'" :link="'https://www.newsbtc.com/press-releases/robonomics-winter-school-2021-master-classes-and-lectures-open-for-attendees/'">
+
+!["Robonomics Winter School Info Partner NewsBTC"](./images/robonomics-school/newsbtc.jpg)
+
+</Card>
+
+<Card :orientation="'vertical'" :link="'https://cryptoevents.global/'">
+
+!["Robonomics Winter School Info Partner CryptoEvents"](./images/robonomics-school/cryptoevents-logo.png)
+
+</Card>
+
 <Card :orientation="'vertical'" :link="'https://bitnewstoday.com'">
 
 !["Robonomics Winter School Info Partner BitNewsToday"](./images/robonomics-school/BNT.png)
