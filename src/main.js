@@ -27,10 +27,4 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('layout', Default)
 
   Vue.use(Inview)
-
-  // For Facebook
-  head.meta.push({
-    name: 'facebook-domain-verification',
-    content: 'd1l1sm84ea07i8pu462d146bq95385'
-  })
 }
