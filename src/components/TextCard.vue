@@ -76,6 +76,10 @@ export default {
       default: true,
     },
 
+    classList: {
+      type: String,
+    },
+
   },
 
 
@@ -94,6 +98,7 @@ export default {
         [`${this.orientation}`]: true,
         [`card-popup`]: this.popup,
         [`active`]: this.isActive,
+        [`${this.classList}`]: true
       };
     },
   },
@@ -152,6 +157,31 @@ export default {
 
     &.vertical {
       text-align: center;
+    }
+
+    &.pinned {
+      --oldy-box-color: var(--color-green);
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 0 solid transparent;
+        border-top: 50px solid var(--oldy-box-color);
+
+        // background-color: var(--oldy-box-color);
+        // padding: 4px 10px;
+        // color: #fff;
+        // font-size: 80%;
+        // font-weight: 500;
+        // text-transform: uppercase;
+      }
     }
 
 

@@ -25,7 +25,7 @@
 	.menu{
       // max-width: 320px;
       display: inline-block;
-      margin-top: calc(var(--space)/2);
+      margin: calc(var(--space)/2) var(--space);
 
       div {
         padding: 1rem 0;

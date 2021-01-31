@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <footer>
 
-    <div class="sidetext-left backdrop-light">
+    <div class="sidetext sidetext-left">
       <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
       <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
     </div>
@@ -18,7 +18,7 @@
         <small>Edit website</small>
       </a> -->
     </div>
-  </div>
+  </footer>
 </template>
 
 
@@ -27,18 +27,13 @@
 .sidetext-left {
     position:  fixed;
     left: calc(var(--screen-padding)/4);
-    bottom: var(--screen-padding);
-    // background-color: var(--body-bg);
+    bottom: calc(var(--screen-padding)/1.8);
 
     transform: rotate(-90deg);
     transform-origin: 0 0;
     
     &, a {
-      text-decoration: none;
-        // font-size: calc(var(--screen-padding)/2.2);
-        font-size: .9rem;
-        color: var(--text-color);
-        &.active--exact { opacity: .5; }
+      &.active--exact { opacity: .5; }
     }
   }
 

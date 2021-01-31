@@ -5,8 +5,6 @@ import '~/assets/style/index.scss'
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import Default from '~/layouts/Default.vue'
-import layoutIndex from '~/layouts/Index.vue'
-import layoutInside from '~/layouts/Inside.vue'
 
 import Inview from 'vueinview'
 
@@ -22,8 +20,6 @@ export default function (Vue, { router, head, isClient }) {
     }
   }
   // Set default layout as a global component
-  Vue.component('layout-index', layoutIndex)
-  Vue.component('layout-inside', layoutInside)
   Vue.component('layout', Default)
 
   Vue.use(Inview)

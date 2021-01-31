@@ -12,7 +12,7 @@
 
       <div class="share__col share__buttons">
 
-        <div class="button primary select button__icon">
+        <button class="button primary select button__icon">
           
 
           <select v-model="selected" v-if="asset.options.length > 1">
@@ -25,7 +25,7 @@
 
           <span v-if="asset.buttonicon" class="icon" v-html="asset.buttonicon" />
 
-        </div>
+        </button>
 
       </div>
     </g-link>
