@@ -1,6 +1,8 @@
 body {
 
 	--base-font-size: 1.1rem;
+	--font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    --font-family-code: 'Roboto Mono', monospace;
 
 	--color-dark: #000000;
 	--color-light: #ffffff;
@@ -27,12 +29,19 @@ body {
   --content-width: 720px;
   --text-width: 980px;
 
-  --screen-padding: var(--space);
+  --screen-padding: calc( var(--space) * 1.5 );
 }
 
 @media screen and (max-width: 720px) {
 	body {
-		// --screen-padding: calc( var(--space) / 2);
+		--space: 1.5rem;
+		--base-font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	body {
 		--space: 1rem;
+		--base-font-size: 0.8rem;
 	}
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 
 %margin_text {
   margin-bottom: var(--space-text);
@@ -8,7 +9,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family);
   font-weight: 300;
   font-size: var(--base-font-size);
   line-height: 1.5;
@@ -18,37 +19,35 @@ h1, h2, h3, h4, h5 {
   transition: color .6s;
   color: var(--title-color);
   
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family);
   line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
   margin-top: calc(var(--space)*2);
-
-  // text-align: center;
-  
-  @extend %margin_text;
 }
 
 h1 {
   font-size: 2.7rem;
   letter-spacing: 0.1rem;
-  padding-bottom: 0.3rem;
+  margin-bottom: calc(var(--space)*2);
   font-weight: 400;
   text-align: center;
 
+  @media screen and (max-width: 1000px) {
+    font-size: 1.6rem;
+  }
+}
+
+h1:not(.clean){
   display: inline-block;
-  background: linear-gradient(to right , var(--color-green), #11a075, #5DC0DF, #355bd6, var(--link-color-hover), #101F5A, var(--link-color-hover), #355bd6, #5DC0DF, #11a075, var(--color-green));
+  background: linear-gradient(to right , var(--color-green), #11a075, #5DC0DF, #355bd6, #5DC0DF, #11a075, var(--color-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   background-position:  0; 
   background-size: 200%;
   animation: 12s progress-bar linear infinite;
-
-  @media screen and (max-width: 1000px) {
-    font-size: 1.6rem;
-  }
 }
 
 
@@ -62,6 +61,7 @@ h5 {font-size: 0.8rem;}
 
 h2, h3, h4, h5 {
   &:first-child { margin-top: 0 }
+  @extend %margin_text;
 }
 
 

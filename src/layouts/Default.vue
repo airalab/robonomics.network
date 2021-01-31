@@ -1,30 +1,23 @@
 <template>
   <transition name="fade" appear>
-
-      
-        
-        <div class="screen">
-
-          <div class="header">
-            <div class="header-logo backdrop-light">
-              <g-link to="/"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
-            </div>
-
-            <nav class="header-nav">
-                <g-link to="/land/say-hello-to-robonomics">Hello!</g-link>
-                <g-link to="/community#intouch">Community</g-link>
-                <g-link to="/timeline">Timeline</g-link>
-                <g-link to="/blog">Blog</g-link>
-            </nav>
-          </div>
-
-          <div class="screen-content">
-
-              <slot/>
-              <ClientOnly> <Footer/> </ClientOnly>
-              
+  
+    <div class="screen">
+      <header class="header">
+        <div class="header-logo">
+          <g-link to="/"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
         </div>
-        </div>
+        <nav class="header-nav sidetext">
+            <g-link to="/community#intouch">Community</g-link>
+            <g-link to="/timeline">Timeline</g-link>
+            <g-link to="/blog">Blog</g-link>
+        </nav>
+      </header>
+
+      <div class="screen-content">
+        <slot/>
+        <ClientOnly> <Footer/> </ClientOnly>
+      </div>
+    </div>
   
   </transition>
 </template>
@@ -42,56 +35,64 @@ query {
 <style lang="scss">
 
   .header {
+    --logo-padding: 0.6rem;
+
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: var(--logo-padding);
+    left: var(--logo-padding);
+    right: var(--screen-padding);
     z-index:1000;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--body-bg);
 
     &-logo {
-      width: 4rem;
-      padding: 0.5rem;
+      width: calc( var(--screen-padding) - var(--logo-padding));
       background-color: var(--body-bg);
 
       a, img { display: block; }
     }
 
     &-nav{
-      margin-right: var(--screen-padding);
+  
+      a:not(:last-child) {
+        margin-right: var(--space);
+      }
 
       a {
-        padding: calc(var(--screen-padding)/4);
-        text-decoration: none;
-        font-size: .9rem;
-        color: var(--text-color);
-        // background-color: var(--body-bg);
-
         &.active--exact { opacity: .5; }
       }
     }
   }
 
-  .backdrop-light {
-    background-color: rgba(255,255,255,0.3);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
+  // .backdrop-light {
+  //   background-color: rgba(255,255,255,0.3);
+  //   -webkit-backdrop-filter: blur(10px);
+  //   backdrop-filter: blur(10px);
+  // }
 
   @media screen and (max-width:840px) {
     .header {
-      background-color: rgba(255,255,255,0.3);
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
+      // background-color: rgba(255,255,255,0.3);
+      // -webkit-backdrop-filter: blur(10px);
+      // backdrop-filter: blur(10px);
 
       align-items: center;
     }
+  }
 
-    .header-logo {
-      width: 3rem;
-    }
+  .sidetext {
+    font-family: var(--font-family-code);
+    font-size: calc(var(--base-font-size) * 0.8);
+    text-transform: uppercase;
+  }
+
+  .sidetext a:not(.button) {
+    color: var(--text-color);
+    text-decoration: none;
   }
 
 </style>

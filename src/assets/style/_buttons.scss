@@ -1,31 +1,22 @@
-.button
+.button, button
 	{
 		padding: .5rem .8rem;
 		text-decoration: none;
-		border: 0;
-		display: inline-block;
-
-		cursor: pointer;
-
 		text-align: center;
 
-		// .button-icon, span {
-		// 	display: inline-block;
-		// 	vertical-align: middle;
-		// 	vertical-align: -moz-middle-with-baseline;
-		// 	vertical-align: -webkit-baseline-middle;
-		// }
+		border: 0;
+		
+		display: inline-block;
+		vertical-align: middle;
+		vertical-align: -moz-middle-with-baseline;
+		vertical-align: -webkit-baseline-middle;
 
-		// .button-icon {
-		// 	max-width: 30px;
-		// 	margin-right: .8rem;
-		// }
+		cursor: pointer;
 		
 		&, select {
-			font-family: 'Roboto', sans-serif;
+			font-family: var(--font-family-code);
   			font-weight: 500;
   			font-size: var(--base-font-size);
-  			// font-size: calc(var(--base-font-size) * .9);
   			line-height: 1;
   		}
 
@@ -33,6 +24,7 @@
 			&, select {
 				background-color: var(--link-color);
 				color: var(--color-light);
+				border: 1px solid var(--link-color);
 			}
 
 			.button-icon {
@@ -118,6 +110,11 @@
 			display: block;
 			width: 100%;
 			margin: calc(var(--space)/2) 0;
+		}
+
+		&.large {
+			padding: 0.8rem 1.4rem;
+			font-size: calc(var(--base-font-size) * 1.2);
 		}
 	}
 

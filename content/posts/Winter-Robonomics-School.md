@@ -147,6 +147,12 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 <section class="grid-4">
 
+<Card :orientation="'vertical'" :link="'https://raec.ru'" :classList="'pinned'">
+
+!["Robonomics Winter School Info RAEC"](./images/robonomics-school/raec.png)
+
+</Card>
+
 <Card :orientation="'vertical'" :link="'https://bitcoinist.com/robonomics-winter-school-2021-master-classes-and-lectures-open-for-attendees/'">
 
 !["Robonomics Winter School Info Partner Bitcoinist"](./images/robonomics-school/bitcoinist.png)

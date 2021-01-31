@@ -6,10 +6,20 @@
         :pageDescription = "$static.metadata.siteDescription"
       />
 
+      <div class="homepage-entrance" v-if="entrance">
+        <h1 class="clean">
+          <span>Hello Human</span>
+          <span>Connect robotics</span>
+          <span>on top of Polkadot or Ethereum</span>
+          <span>Are u ready to read?</span>
+          <span class="buttonwrap"><button @click="entrance = false" class="primary large" type="button">Enter the Robonomics</button></span>
+        </h1>
+
+      </div>
+
       
     <div class="homepage">
 
-      <!--<g-image itemprop="logo" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" class="logo"/>-->
       <div class="layout__title">
         <h1 v-html="$static.metadata.siteName" itemprop="name"/>
       </div>
@@ -17,13 +27,14 @@
       <section class="homepage__description">
         <div class="layout__content">
 
-          <p itemprop="description" v-html="$static.metadata.siteDescription" />
+          <!--<p itemprop="description" v-html="$static.metadata.siteDescription" />-->
           <Navigation />
 
         </div>
 
 
-        <div class="roboHands" v-in-viewport.once>
+        <!--<div class="roboHands" v-in-viewport.once>-->
+        <div class="roboHands" :class="[!entrance ? 'in-viewport' : ' ']">
         
           <div class="roboHands__move left">
             <div class="roboHands__left">
@@ -80,11 +91,7 @@ query {
 
 <style lang="scss">
   .homepage{
-    
-    .logo {
-      width: 11rem;
-    }
-
+   
     &__description{
       position: relative;
       overflow: hidden;
@@ -98,12 +105,13 @@ query {
 
     h1 {
       font-size: 4rem;
+      margin-bottom: 0;
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 1000px) {
         font-size: 3rem;
       }
 
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 700px) {
         font-size: 2rem;
       }
 
@@ -114,6 +122,539 @@ query {
     
   }
 
+
+  .homepage-entrance {
+    position: fixed;
+    z-index: 1000;
+    top: var(--screen-padding);
+    left: var(--screen-padding);
+    right: var(--screen-padding);
+    bottom: var(--screen-padding);
+
+    // background: linear-gradient(-40deg, #000066 0 70%, #6699FF 70% 100%);
+    background: linear-gradient(#000066, #6699FF);
+
+
+    h1 {
+      --entertext: 12s;
+      --enteropacity: .3;
+      --enterfunc: cubic-bezier(0.4, 0.84, 0.44, 1);
+      --entercolor: #fff;
+      --stateNA: scaleY(0);
+      --stateA: scale(1);
+
+      display: block;
+      margin: 0;
+      padding: var(--space);
+
+      color: var(--entercolor);
+      // text-shadow: 0 0 0 var(--entercolor);
+      // animation: EnterTextShade var(--entertext) var(--enterfunc) forwards;
+
+      font-family: var(--font-family-code);
+      letter-spacing: 10px;
+      
+      position: absolute;
+      top: calc(50% - calc(var(--space)*2));
+      left: 0;
+      right: 0;
+
+      span:not(.buttonwrap) {
+        animation-duration: var(--entertext);
+        animation-timing-function: var(--enterfunc);
+        animation-fill-mode: forwards;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        // transform: var(--stateNA);
+        // transform-origin: 50% 50%;
+
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+
+        // -moz-transition: all 1s;
+        // -webkit-transition: all 1s;
+        // -o-transition: all 1s;
+        // transition: all 1s ;
+      }
+
+      span:nth-child(1) { animation-name: EnterText1; }
+      span:nth-child(2) { animation-name: EnterText2; }
+      span:nth-child(3) { animation-name: EnterText3; }
+      span:nth-child(4) { animation-name: EnterText4; }
+
+      button {
+        visibility: hidden;
+		    opacity: 0;
+        display: block;
+        margin: 0 auto;
+
+        animation: FadeIn 0.4s ease-in var(--entertext) forwards;
+      }
+
+      @media screen and (max-width: 500px) {
+
+        visibility: hidden;
+	      opacity: 0;
+        animation: FadeIn 1s linear forwards;
+
+        span:not(.buttonwrap) {
+          transform: var(--stateNA);
+          transform-origin: 50% 50%;
+        }
+        span:nth-child(1) { animation-name: EnterTextMobile1; }
+        span:nth-child(2) { animation-name: EnterTextMobile2; }
+        span:nth-child(3) { animation-name: EnterTextMobile3; }
+        span:nth-child(4) { animation-name: EnterTextMobile4; }
+
+        // button { 
+        //   visibility: visible;
+        //   opacity: 1;
+        //   animation-name: ScaleY;
+        // }
+      }
+    
+    }
+  }
+
+  @keyframes EnterTextShade {
+    0% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    13% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    16% {
+      text-shadow: 0 0 20px var(--entercolor);
+    }
+    26% {
+      text-shadow: 0 0 20px var(--entercolor);
+    }
+    29% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    38% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    41% {
+      text-shadow: 0 0 20px var(--entercolor);
+    }
+    51% {
+      text-shadow: 0 0 20px var(--entercolor);
+    }
+    54% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    63% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    66% {
+      text-shadow: 0 0 20px var(--entercolor);
+    }
+    76% {
+      text-shadow: 0 0 20px var(--entercolor);
+    }
+    79% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    88% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    91% {
+      text-shadow: 0 0 20px var(--entercolor);
+    }
+    100% {
+      text-shadow: 0 0 20px var(--entercolor);
+    }
+    
+  }
+
+  @keyframes EnterText1 {
+    0% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    13% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    16% {
+      visibility: visible;
+		  opacity: 1;
+    }
+    26% {
+      visibility: visible;
+		  opacity: 1;
+    }
+    29% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    38% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    41% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    51% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    54% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    63% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    66% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    76% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    79% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    88% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    91% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    99% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    
+  }
+
+  @keyframes EnterText2 {
+    0% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    13% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    16% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    26% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    29% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    38% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    41% {
+      visibility: visible;
+		  opacity: 1;
+    }
+    51% {
+      visibility: visible;
+		  opacity: 1;
+    }
+    54% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    63% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    66% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    76% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    79% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    88% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    91% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    99% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    
+  }
+
+  @keyframes EnterText3 {
+    0% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    13% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    16% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    26% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    29% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    38% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    41% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    51% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    54% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    63% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    66% {
+      visibility: visible;
+		  opacity: 1;
+    }
+    76% {
+      visibility: visible;
+		  opacity: 1;
+    }
+    79% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    88% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    91% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    99% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    
+  }
+
+  @keyframes EnterText4 {
+    0% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    13% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    16% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    26% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    29% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    38% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    41% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    51% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    54% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    63% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    66% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    76% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    79% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    88% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    91% {
+      visibility: visible;
+		  opacity: 1;
+    }
+    99% {
+      visibility: visible;
+		  opacity: 1;
+    }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    
+  }
+
+
+
+  @keyframes EnterTextMobile1 {
+    0% {
+      transform: var(--stateNA);
+    }
+    13% {
+      transform: var(--stateNA);
+    }
+    16% {
+      transform: var(--stateA);
+    }
+    26% {
+      transform: var(--stateA);
+    }
+    29% {
+      transform: var(--stateNA);
+    }
+    41% {
+      transform: var(--stateNA);
+    }
+    100% {
+      transform: var(--stateNA);
+    }
+    
+  }
+
+  @keyframes EnterTextMobile2 {
+    0% {
+      transform: var(--stateNA);
+    }
+    38% {
+      transform: var(--stateNA);
+    }
+    41% {
+      transform: var(--stateA);
+    }
+    51% {
+      transform: var(--stateA);
+    }
+    54% {
+      transform: var(--stateNA);
+    }
+    100% {
+      transform: var(--stateNA);
+    }
+    
+  }
+
+  @keyframes EnterTextMobile3 {
+    0% {
+      transform: var(--stateNA);
+    }
+    63% {
+      transform: var(--stateNA);
+    }
+    66% {
+      transform: var(--stateA);
+    }
+    76% {
+      transform: var(--stateA);
+    }
+    79% {
+      transform: var(--stateNA);
+    }
+    100% {
+      transform: var(--stateNA);
+    }
+    
+  }
+
+  @keyframes EnterTextMobile4 {
+    0% {
+      transform: var(--stateNA);
+    }
+    88% {
+      transform: var(--stateNA);
+    }
+    91% {
+      transform: var(--stateA);
+    }
+    99% {
+      transform: var(--stateA);
+    }
+    100% {
+      transform: var(--stateNA);
+    }
+    
+  }
+
+
+ 
  
 </style>
 
@@ -130,6 +671,12 @@ query {
     components: {
       Navigation,
       MetaInfo
+    },
+
+    data () {
+      return {
+        entrance: true
+      }
     },
 
     mounted() {
