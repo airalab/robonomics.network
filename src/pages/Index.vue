@@ -680,7 +680,7 @@ query {
     data () {
       return {
         entrance: true,
-        recaptchaSitekey: "6LcREkUaAAAAADQ3ydXugWO9rwvlCOIEnHBg4daM"
+        recaptchaSitekey: "6LcREkUaAAAAAO6zMKHIQBG-VAj3wNe3mUQyhrZ2"
         // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
       }
     },

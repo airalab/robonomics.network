@@ -145,7 +145,7 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 ## Info partners
 
-<section class="grid-4">
+<section class="grid-4 animate-inside" v-inview:class="['reveal']">
 
 <Card :orientation="'vertical'" :link="'https://raec.ru'" :classList="'pin'">
 
