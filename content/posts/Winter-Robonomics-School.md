@@ -147,7 +147,7 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 <section class="grid-4">
 
-<Card :orientation="'vertical'" :link="'https://raec.ru'" :classList="'pinned'">
+<Card :orientation="'vertical'" :link="'https://raec.ru'" :classList="'pin'">
 
 !["Robonomics Winter School Info RAEC"](./images/robonomics-school/raec.png)
 

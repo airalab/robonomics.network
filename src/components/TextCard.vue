@@ -159,7 +159,7 @@ export default {
       text-align: center;
     }
 
-    &.pinned {
+    &.pin {
       --oldy-box-color: var(--color-green);
 
       &:after {
@@ -174,13 +174,6 @@ export default {
         border-left: 50px solid transparent;
         border-right: 0 solid transparent;
         border-top: 50px solid var(--oldy-box-color);
-
-        // background-color: var(--oldy-box-color);
-        // padding: 4px 10px;
-        // color: #fff;
-        // font-size: 80%;
-        // font-weight: 500;
-        // text-transform: uppercase;
       }
     }
 

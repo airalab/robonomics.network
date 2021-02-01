@@ -23,4 +23,9 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('layout', Default)
 
   Vue.use(Inview)
+
+  head.script.push({
+    src:"https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit",
+    body:true
+  })
 }
