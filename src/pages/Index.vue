@@ -711,8 +711,6 @@ query {
       onVerifyCaptcha(response) {
         this.entrance = false;
 
-        console.log('token returned by hcaptcha is', response);
-
         this.hcaptcha_token = response;
         this.verified = true;
       }
