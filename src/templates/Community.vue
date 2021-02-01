@@ -33,6 +33,7 @@ query Community ($id: ID!) {
     description
     content
     abstract
+    cover_image (width: 2000, quality: 100)
   }
 }
 </page-query>
@@ -45,7 +46,13 @@ query Community ($id: ID!) {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       Abstract: () => import('~/components/TextAbstract.vue'),
-    }
+    },
+    // computed: {
+    //   CoverImage() {
+    //     if ( this.$page.post.cover_image.src )
+    //       return
+    //   }
+    // }
 
   }
 
