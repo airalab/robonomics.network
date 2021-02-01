@@ -92,6 +92,10 @@ query {
 
 <style lang="scss">
   .homepage{
+
+    visibility: hidden;
+    opacity: 0;
+    animation: FadeIn 0.4s ease-in 1s forwards;
    
     &__description{
       position: relative;
@@ -134,6 +138,10 @@ query {
 
     // background: linear-gradient(-40deg, #000066 0 70%, #6699FF 70% 100%);
     background: linear-gradient(#000066, #6699FF);
+
+    visibility: hidden;
+    opacity: 0;
+    animation: FadeIn 0.4s ease-in 0.5s forwards;
 
 
     h1 {
@@ -695,17 +703,20 @@ query {
     },
 
     methods: {
+      //for scaling animation 'Hands'
       scale(){
         this.scaleRatio('.roboHands__move.left', '.roboHands__left');
         this.scaleRatio('.roboHands__move.right', '.roboHands__right');
       },
 
+      //for scaling animation 'Hands'
       scaleRatio(parent, element){
         var ratio = (document.querySelector(parent).offsetWidth / document.querySelector(element).offsetWidth).toFixed(2)*0.9;
 
         document.querySelector(element).style.transform = 'scale(' + ratio +')';
       },
 
+      //for ReCaptcha
       onVerifyCaptcha(response) {
         this.entrance = false;
 
@@ -713,6 +724,7 @@ query {
         this.verified = true;
       },
 
+      // Detects if we need to show entrance
       cookieEntrance(){
         if ( this.$cookies.get('EntranceShowed') ) {
           this.entrance = false;
