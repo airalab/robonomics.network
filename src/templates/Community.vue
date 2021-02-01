@@ -4,6 +4,7 @@
     <MetaInfo
       :pageTitle = "$page.community.title"
       :pageDescription = "$page.community.description"
+      :pageImage = "[$page.community.cover_image.src ? $page.community.cover_image.src : '/website_cover.png?v=2']"
     />
 
     <div class="layout__title">
