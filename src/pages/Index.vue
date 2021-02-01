@@ -11,8 +11,9 @@
           <span>Hello Human</span>
           <span>Connect robotics</span>
           <span>on top of Polkadot or Ethereum</span>
-          <span>Are u ready to read?</span>
-          <span class="buttonwrap"><button @click="entrance = false" class="primary large" type="button">Enter the Robonomics</button></span>
+          <span class="buttonwrap">
+            <vue-recaptcha :sitekey="recaptchaSitekey" @verify="onVerifyCaptcha" />
+          </span>
         </h1>
 
       </div>
@@ -137,7 +138,7 @@ query {
 
     h1 {
       --entertext: 12s;
-      --enteropacity: .3;
+      --enteropacity: .1;
       --enterfunc: cubic-bezier(0.4, 0.84, 0.44, 1);
       --entercolor: #fff;
       --stateNA: scaleY(0);
@@ -148,8 +149,8 @@ query {
       padding: var(--space);
 
       color: var(--entercolor);
-      // text-shadow: 0 0 0 var(--entercolor);
-      // animation: EnterTextShade var(--entertext) var(--enterfunc) forwards;
+      text-shadow: 0 0 0 var(--entercolor);
+      animation: EnterTextShade var(--entertext) var(--enterfunc) forwards;
 
       font-family: var(--font-family-code);
       letter-spacing: 10px;
@@ -169,25 +170,18 @@ query {
         left: 0;
         right: 0;
 
-        // transform: var(--stateNA);
-        // transform-origin: 50% 50%;
-
+        /* Turn on GPU for some browsers */
         -webkit-transform: translateZ(0);
         -moz-transform: translateZ(0);
         -ms-transform: translateZ(0);
         -o-transform: translateZ(0);
         transform: translateZ(0);
-
-        // -moz-transition: all 1s;
-        // -webkit-transition: all 1s;
-        // -o-transition: all 1s;
-        // transition: all 1s ;
       }
 
       span:nth-child(1) { animation-name: EnterText1; }
       span:nth-child(2) { animation-name: EnterText2; }
       span:nth-child(3) { animation-name: EnterText3; }
-      span:nth-child(4) { animation-name: EnterText4; }
+      // span:nth-child(4) { animation-name: EnterText4; }
 
       button {
         visibility: hidden;
@@ -211,15 +205,22 @@ query {
         span:nth-child(1) { animation-name: EnterTextMobile1; }
         span:nth-child(2) { animation-name: EnterTextMobile2; }
         span:nth-child(3) { animation-name: EnterTextMobile3; }
-        span:nth-child(4) { animation-name: EnterTextMobile4; }
-
-        // button { 
-        //   visibility: visible;
-        //   opacity: 1;
-        //   animation-name: ScaleY;
-        // }
+        // span:nth-child(4) { animation-name: EnterTextMobile4; }
       }
     
+    }
+  }
+
+  .buttonwrap {
+    visibility: hidden;
+    opacity: 0;
+
+    animation: FadeIn 0.4s ease-in calc(var(--entertext) - 1s) forwards;
+
+    & > div {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 152px);
     }
   }
 
@@ -663,6 +664,8 @@ query {
   import inViewportDirective from 'vue-in-viewport-directive'
   Vue.directive('in-viewport', inViewportDirective)
 
+  import VueRecaptcha from 'vue-recaptcha'
+
   import Navigation from '~/components/Navigation.vue'
   import MetaInfo from '~/components/MetaInfo.vue'
 
@@ -670,12 +673,15 @@ query {
 
     components: {
       Navigation,
-      MetaInfo
+      MetaInfo,
+      VueRecaptcha
     },
 
     data () {
       return {
-        entrance: true
+        entrance: true,
+        recaptchaSitekey: "6LcREkUaAAAAADQ3ydXugWO9rwvlCOIEnHBg4daM"
+        // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
       }
     },
 
@@ -700,6 +706,10 @@ query {
         var ratio = (document.querySelector(parent).offsetWidth / document.querySelector(element).offsetWidth).toFixed(2)*0.9;
 
         document.querySelector(element).style.transform = 'scale(' + ratio +')';
+      },
+
+      onVerifyCaptcha(response) {
+        this.entrance = false;
       }
     }
   }

@@ -3,6 +3,7 @@ title: Wallpapers
 published: true
 description: "Free high-resolution wallpapers inspired by Robonomics, robotics, cyberpunk, blockchain innovations. These HD images are free to use for personal usage."
 abstract: "Free high-resolution wallpapers inspired by Robonomics, robotics, cyberpunk, blockchain innovations worthy of your mobile and desktop screens."
+cover_image: ./images/wp-calendar2021/02_WP_preview.jpg
 ---
 import Card from '~/components/TextCard.vue'
 import Button from '~/components/Button.vue'
