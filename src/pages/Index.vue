@@ -12,7 +12,7 @@
           <span>Connect robotics</span>
           <span>on top of Polkadot or Ethereum</span>
           <span class="buttonwrap">
-            <vue-recaptcha :sitekey="recaptchaSitekey" @verify="onVerifyCaptcha" :loadRecaptchaScript="true" />
+            <vue-recaptcha :sitekey="recaptchaSitekey" @verify="onVerifyCaptcha" />
           </span>
         </h1>
 
@@ -680,7 +680,7 @@ query {
     data () {
       return {
         entrance: true,
-        recaptchaSitekey: "6LcREkUaAAAAADQ3ydXugWO9rwvlCOIEnHBg4daM"
+        recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
         // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
       }
     },
