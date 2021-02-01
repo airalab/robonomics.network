@@ -12,7 +12,7 @@
           <span>Connect robotics</span>
           <span>on top of Polkadot or Ethereum</span>
           <span class="buttonwrap">
-            <vue-recaptcha :sitekey="recaptchaSitekey" @verify="onVerifyCaptcha" />
+            <vue-recaptcha :sitekey="recaptchaSitekey" @verify="onVerifyCaptcha" :loadRecaptchaScript="true" />
           </span>
         </h1>
 
