@@ -17,7 +17,7 @@ Our artist Anna Wimmer-S was inspired by modern Japanese artists and decided to 
 
 </section>
 
-<section class="grid-3 animate-inside" v-inview:class="['reveal']"> 
+<section class="grid-3 animate-inside" v-in-viewport.once> 
 
 [!["HD Wallpaper Robonomics Calendar 2021 January"](./images/wp-calendar2021/01_WP_preview.jpg)](https://static.robonomics.network/wallpapers/calendar2021/01_WP.jpg)
 
@@ -68,7 +68,7 @@ Our artist Anna Wimmer-S was inspired by modern Japanese artists and decided to 
 ---
 ## Wallpapers with gorgeous cyber crypto girls
 
-<section class="grid-3 animate-inside" v-inview:class="['reveal']">
+<section class="grid-3 animate-inside" v-in-viewport.once>
 
 [!["HD Wallpaper Robonomics Crypto Girls"](./images/wp-girls2021/01-robonomics.network-wallpaper-girls_preview.jpg)](https://static.robonomics.network/wallpapers/girls2021/01-robonomics.network-wallpaper-girls.jpg)
 
@@ -101,7 +101,7 @@ Our artist Anna Wimmer-S was inspired by modern Japanese artists and decided to 
 
 ## Special Cyberpunk 2077 edition
 
-<section class="layout__text animate-inside" v-inview:class="['reveal']">
+<section class="layout__text animate-inside" v-in-viewport.once>
 
 [!["HD Wallpaper Robonomics Calendar 2021 December"](./images/wp-cyberpunk2077/01-wallpaper-cyberpunk2077-robonomics_network.jpg)](https://static.robonomics.network/wallpapers/cyberpunk2077/01-wallpaper-cyberpunk2077-robonomics_network.jpg)
 

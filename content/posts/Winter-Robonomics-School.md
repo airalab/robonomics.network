@@ -20,7 +20,7 @@ The main event with all master classes and lectures will be taking place from th
 
 ## Robonomics Winter School 2021 Opening Ceremony
 
-<section class="grid-3">
+<section class="grid-3 animate-inside" v-in-viewport.once>
 
 <Card :orientation="'vertical'" :link="'https://www.meetup.com/robonomics/events/275378464/'" :imageRound="false" :image="'/posts/robonomics-school/meetup.png'" :imageSize="'big'">
 
@@ -82,6 +82,7 @@ Master classes include overviews of Robonomics io, using prepared digital twin t
 
 The Robonomics Winter School is an excellent opportunity for software developers and all interested to gain invaluable knowledge on working with the Robonomics Network and related packages for building Dapps and operating blockchain technologies and coding. The Robonomics Network invites all interested to join the courses and take advantage of the unique opportunity of gaining firsthand knowledge from industry experts. The courses will be hosted by Aleksandr Kapitonov (Dean of the Faculty of Infocommunication Technologies), Aleksandr Krupenkin (Robotics/IoT/Ethereum smart contract developer), Aleksandr Starostin (Web developer, Ethereum smart contract developer), Vadim Manaenko (Robotics and IoT engineer, drones developer), Anastasiia Bakai (UI, Motion Design, Front-end), Sergei Lonshakov (Robonomics co-founder and software architect).
 
+<section class="animate-inside" v-in-viewport.once>
 <Card :image="'/avatars/Sergei-Lonshakov.jpg'" :imageSize="'big'" :imageRound="false" :back="'transparent'">
 
 ### Robonomics Winter School 2021 Program
@@ -91,11 +92,12 @@ Sergei Lonshakov @ensrationis published the program on Github. You can find here
 <Button :link="'https://github.com/ensrationis/robonomics-winter-21'" :label="'View the program'" :button="'border'"/>
 
 </Card>
+</section>
 
 
 ## Robonomics Winter School 2021 Opening Ceremony
 
-<section class="grid-3">
+<section class="grid-3 animate-inside" v-in-viewport.once>
 
 <Card :orientation="'vertical'" :link="'https://www.meetup.com/robonomics/events/275378464/'" :imageRound="false" :image="'/posts/robonomics-school/meetup.png'" :imageSize="'big'">
 
@@ -145,7 +147,7 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 
 ## Info partners
 
-<section class="grid-4 animate-inside" v-inview:class="['reveal']">
+<section class="grid-4 animate-inside" v-in-viewport.once>
 
 <Card :orientation="'vertical'" :link="'https://raec.ru'" :classList="'pin'">
 

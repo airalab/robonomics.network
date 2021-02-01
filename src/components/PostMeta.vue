@@ -26,6 +26,14 @@ export default {
   .post-meta {
     font-size: 90%;
     margin-bottom: calc(var(--space)*2);
+    font-family: var(--font-family-code);
+
+    border-width: 1px 0;
+    border-style: dashed;
+    border-color: var(--color-gray);
+    padding: var(--space) 0;
+
+    text-align: center;
 
     span, a {
       margin-left: .4rem;

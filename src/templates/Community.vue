@@ -13,13 +13,11 @@
 
     <section>
 
-    <Abstract v-if="$page.community.abstract" :text="$page.community.abstract"/>
+      <Abstract v-if="$page.community.abstract" :text="$page.community.abstract"/>
 
-    <div class="layout landing">
-      <VueRemarkContent />
-    </div>
-  
-      <!--<div class="layout" v-html="$page.land.content" />-->
+      <div class="layout landing">
+        <VueRemarkContent />
+      </div>
 
     </section>
 
@@ -47,13 +45,7 @@ query Community ($id: ID!) {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       Abstract: () => import('~/components/TextAbstract.vue'),
-    },
-    // computed: {
-    //   CoverImage() {
-    //     if ( this.$page.post.cover_image.src )
-    //       return
-    //   }
-    // }
+    }
 
   }
 
