@@ -710,6 +710,9 @@ query {
 
       onVerifyCaptcha(response) {
         this.entrance = false;
+
+        this.hcaptcha_token = response;
+        this.verified = true;
       }
     }
   }
