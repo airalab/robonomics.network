@@ -1,6 +1,6 @@
 <template>
 
-  <section class="text_abstract layout layout__text" :class="className" v-html="text" />
+  <section class="text_abstract layout layout__text animate" :class="className" v-html="text" v-in-viewport.once/>
 
 </template>
 

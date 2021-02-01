@@ -78,6 +78,7 @@ export default {
 
     classList: {
       type: String,
+      default: '',
     },
 
   },
