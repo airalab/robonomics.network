@@ -83,10 +83,6 @@
   import axios from 'axios'
   import moment from 'moment'
 
-  import Vue from 'vue'
-  import VueCookies from 'vue-cookies'
-  Vue.use(VueCookies)
-
   export default {
     data () {
       return {

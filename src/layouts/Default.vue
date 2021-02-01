@@ -100,6 +100,18 @@ query {
 
 <script>
 
+import Vue from 'vue'
+
+import Inview from 'vueinview'
+Vue.use(Inview)
+// Inview.offset(0)
+
+import inViewportDirective from 'vue-in-viewport-directive'
+Vue.directive('in-viewport', inViewportDirective)
+
+import VueCookies from 'vue-cookies'
+Vue.use(VueCookies)
+
 export default {
   components: {
     Footer: () => import('~/components/Footer.vue')

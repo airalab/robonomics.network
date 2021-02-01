@@ -660,10 +660,6 @@ query {
 </style>
 
 <script>
-  import Vue from 'vue'
-  import inViewportDirective from 'vue-in-viewport-directive'
-  Vue.directive('in-viewport', inViewportDirective)
-
   import VueRecaptcha from 'vue-recaptcha'
 
   import Navigation from '~/components/Navigation.vue'
@@ -689,6 +685,8 @@ query {
       this.scale();
       window.addEventListener('load', this.scale);
       window.addEventListener('resize', this.scale);
+
+      this.cookieEntrance();
     },
 
     beforeDestroy() {
@@ -713,6 +711,17 @@ query {
 
         this.hcaptcha_token = response;
         this.verified = true;
+      },
+
+      cookieEntrance(){
+        if ( this.$cookies.get('EntranceShowed') ) {
+          this.entrance = false;
+        }
+        else {
+          // 30 day after, expire, '' current path , browser default
+          this.$cookies.config(60 * 60 * 24 * 30,'');
+          this.$cookies.set('EntranceShowed', '1');
+        }
       }
     }
   }

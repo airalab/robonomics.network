@@ -6,8 +6,6 @@ import '~/assets/style/index.scss'
 
 import Default from '~/layouts/Default.vue'
 
-import Inview from 'vueinview'
-
 export default function (Vue, { router, head, isClient }) {
   head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
 
@@ -21,9 +19,6 @@ export default function (Vue, { router, head, isClient }) {
   }
   // Set default layout as a global component
   Vue.component('layout', Default)
-
-  Vue.use(Inview)
-  // Inview.offset(0)
 
   head.script.push({
     src:"https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit",
