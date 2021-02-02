@@ -145,7 +145,7 @@ query {
 
 
     h1 {
-      --entertext: 12s;
+      --entertext: 15s;
       --enteropacity: .1;
       --enterfunc: cubic-bezier(0.4, 0.84, 0.44, 1);
       --entercolor: #fff;
