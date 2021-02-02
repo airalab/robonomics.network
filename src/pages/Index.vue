@@ -36,7 +36,6 @@
 
         <!--<div class="roboHands" v-in-viewport.once>-->
         <div class="roboHands" :class="[!entrance ? 'in-viewport' : ' ']">
-        
           <div class="roboHands__move left">
             <div class="roboHands__left">
               <g-image src="~/assets/images/robotHand1-1.svg" class="roboHands__left__1" />
@@ -690,11 +689,13 @@ query {
     },
 
     mounted() {
+      this.cookieEntrance();
+    },
+
+    updated() {
       this.scale();
       window.addEventListener('load', this.scale);
       window.addEventListener('resize', this.scale);
-
-      this.cookieEntrance();
     },
 
     beforeDestroy() {
