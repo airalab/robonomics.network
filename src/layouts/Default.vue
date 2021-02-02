@@ -171,6 +171,7 @@ export default {
   },
   methods: {
     BannerLink(p) {
+      console.log(window.location.pathname);
       return window.location.pathname != p;
     }
   }
