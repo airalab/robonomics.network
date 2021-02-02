@@ -166,13 +166,16 @@ import VueCookies from 'vue-cookies'
 Vue.use(VueCookies)
 
 export default {
+  data: {
+    currentRoute: window.location.pathname
+  },
   components: {
     Footer: () => import('~/components/Footer.vue')
   },
   methods: {
     BannerLink(p) {
-      console.log(window.location.pathname);
-      return window.location.pathname != p;
+      console.log(this.currentRoute);
+      return this.currentRoute != p;
     }
   }
 }
