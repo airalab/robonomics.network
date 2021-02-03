@@ -26,9 +26,9 @@ export default {
     button: {
       type: String,
       default: 'border',
-      validator: function (value) {
-        return ['border', 'primary', 'block'].indexOf(value) !== -1;
-      }
+      // validator: function (value) {
+      //   return ['border', 'primary', 'block'].indexOf(value) !== -1;
+      // }
     },
 
     scale: {

@@ -4,7 +4,6 @@ date: 2021-01-13
 published: true
 tags: ['Events']
 cover_image: ./images/robonomics-school/WS-robonomics-2021-Blog.jpg
-# canonical_url: false
 description: "Free online Master Classes and Lectures open for attendees. Try to build Dapps and Web Services for IoT on Polkadot Parachain in time of Robonomics Winter School 2021 (from 10 to 24 February)"
 abstract: "Free online Master Classes and Lectures open for attendees. Try to build Dapps and Web Services for IoT on Polkadot Parachain in time of Robonomics Winter School from 10th to 24th February 2021"
 ---
@@ -18,54 +17,80 @@ The opening ceremony will launch on Wednesday, February 10, at 7:00 PM GMT+3.
 
 The main event with all master classes and lectures will be taking place from the 11th to the 24th of February.
 
-## Robonomics Winter School 2021 Opening Ceremony
+## Robonomics Winter School 2021 Lectures and Master classes
 
-<section class="grid-3 animate-inside" v-in-viewport.once>
-
-<Card :orientation="'vertical'" :link="'https://www.meetup.com/robonomics/events/275378464/'" :imageRound="false" :image="'/posts/robonomics-school/meetup.png'" :imageSize="'big'">
-
-#### Meetup page
-
-More then 50 attendees already, find your friends
-
-<Button :label="'Join on Meetup'" :button="'primary block'" :link="'https://www.meetup.com/robonomics/events/275378464/'"/>
-
-</Card>
-
-<Card :orientation="'vertical'" :link="'https://youtu.be/kQaSwNYHJQ8'" :imageRound="false" :image="'/posts/robonomics-school/youtube.png'" :imageSize="'big'">
-
-#### Youtube stream
-
-Set a reminder to join the event in time 
-
-<Button :label="'Set a reminder'" :button="'primary block'" :link="'https://youtu.be/kQaSwNYHJQ8'"/>
-
-</Card>
-
-<Card :orientation="'vertical'" popup :imageRound="false" :image="'/posts/robonomics-school/calendar.png'" :imageSize="'big'">
-
-#### Ceremony starts:
-
-Wed, Feb 10, 2021, 7:00 PM GMT+3
-
-<Button :label="'Add to calendar'" :button="'primary block'"/>
-
-<div class="popup">
-
-##### Add event to calendar
-
-<Button :label="'Google'" :button="'border block'" :link="'https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210210T150000Z%2F20210210T170000Z&details=Free%20online%20Master%20Classes%20and%20Lectures.%20Try%20to%20build%20Dapps%20and%20Web%20Services%20for%20IoT%20on%20Polkadot%20Parachain%20in%20time%20of%20Robonomics%20Winter%20School%202021%20February%2010-24%2C%20https%3A%2F%2Fyoutu.be%2FkQaSwNYHJQ8&location=Online&text=Robonomics%20Winter%20School%202021%20Opening%20Ceremony'"/>
-
-<Button :label="'Apple'" :button="'border block'" :link="'https://static.robonomics.network/temp/RobonomicsWinterSchool2021.ics'"/>
-
-<Button :label="'Outlook'" :button="'border block'" :link="'https://outlook.live.com/calendar/0/deeplink/compose?body=Free%20online%20Master%20Classes%20and%20Lectures.%20Try%20to%20build%20Dapps%20and%20Web%20Services%20for%20IoT%20on%20Polkadot%20Parachain%20in%20time%20of%20Robonomics%20Winter%20School%202021%20February%2010-24%2C%20https%3A%2F%2Fyoutu.be%2FkQaSwNYHJQ8&enddt=2021-02-10T17%3A00%3A00%2B00%3A00&location=Online&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2021-02-10T15%3A00%3A00%2B00%3A00&subject=Robonomics%20Winter%20School%202021%20Opening%20Ceremony'"/>
-
-
-</div>
-
-</Card>
-
-</section>
+<table class="mobile">
+<thead>
+<tr>
+<th style="width:110px">Date</th>
+<th style="min-width:190px">Name</th>
+<th>Description</th>
+<th>Main contributors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Feb 10, 2021</td>
+<td>The opening ceremony</td>
+<td data-th="FEB 10, 2021 - THE OPENING CEREMONY">All contributors will take a word about winter school and their master classes.</td>
+<td data-th="Main contributors:">All Robonomics Team</td>
+</tr>
+<tr>
+<td>Feb 11, 2021</td>
+<td>What's Robonomics?</td>
+<td data-th="FEB 11, 2021 - WHAT'S ROBONOMICS?">Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.</td>
+<td data-th="Main contributor:">@ensrationis</td>
+</tr>
+<tr>
+<td>Feb 12, 2021</td>
+<td>How to build on Robonomics</td>
+<td data-th="FEB 12, 2021 - HOW TO BUILD ON ROBONOMICS">You'll explore the basic skills to work with Robonomics.</td>
+<td data-th="Main contributor:">@ensrationis</td>
+</tr>
+<tr>
+<td>Feb 15, 2021</td>
+<td>Robonomics connectivity</td>
+<td data-th="FEB 15, 2021 - ROBONOMICS CONNECTIVITY">For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS).</td>
+<td data-th="Main contributor:">@vourhey</td>
+</tr>
+<tr>
+<td>Feb 17, 2021</td>
+<td>Connect Digital Twins With Your Services</td>
+<td data-th="FEB 17, 2021 - CONNECT DIGITAL TWINS WITH YOUR SERVICES">Blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events. Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.</td>
+<td data-th="Main contributor:">@vourhey</td>
+</tr>
+<tr>
+<td>Feb 19, 2021</td>
+<td>Decentralized Cloud infrastructure for IoT</td>
+<td data-th="FEB 19, 2021 - DECENTRALIZED CLOUD INFRASTRUCTURE FOR IOT">Robonomics Web Services (RWS) is the basic infrastructural service for Robotics and IoT on top of Robonomics Parachain and IPFS.</td>
+<td data-th="Main contributor:">@ensrationis</td>
+</tr>
+<tr>
+<td>Feb 20, 2021</td>
+<td>Robonomics Parachain overview</td>
+<td data-th="FEB 20, 2021 - ROBONOMICS PARACHAIN OVERVIEW">For over a two years, core developers have been developing Robonomics, a Substrate-based chain designed to control robotic and IoT devices. In May 2019, the Robonomics team finished their first tests of Cumulus and plan to launch this chain as a Kusama parachain as soon as this is possible. The Robonomics parachain will allow the community to launch industrial manipulators, collect telemetry from sensors and create routes for autopilot drones using transactions.</td>
+<td data-th="Main contributor:">@akru</td>
+</tr>
+<tr>
+<td>Feb 20, 2021</td>
+<td>Robonomics Substrate Framework</td>
+<td data-th="FEB 20, 2021 - ROBONOMICS SUBSTRATE FRAMEWORK">Explore the substrate functionality with Parachain-development team.</td>
+<td data-th="Main contributor:">@akru</td>
+</tr>
+<tr>
+<td>Feb 22, 2021</td>
+<td>App Store for Robotics</td>
+<td data-th="FEB 22, 2021 - APP STORE FOR ROBOTICS">Companies that design and manufacture IoT-connected products and equipment should adopt a flexible digital twin delivery model to lower barriers to adoption, such as offering digital twins via marketplaces, rather than only offering digital twins via their own, proprietary, delivery model.</td>
+<td data-th="Main contributor:">@kap2fox</td>
+</tr>
+<tr>
+<td>Feb 23, 2021</td>
+<td>Build Dapp for End Users</td>
+<td data-th="FEB 23, 2021 - BUILD DAPP FOR END USERS">Using Robonomics.js, learn how to interact via dapp with digital twins of devices. Build IoT applications to transfer telemetry from devices to users, and also provide the ability to launch, for example, a robot vacuum cleaner using the Robonomics decentralized cloud.</td>
+<td data-th="Main contributors:">@vol4tim && @positivecrash</td>
+</tr>
+</tbody>
+</table>
 
 
 ## Topics to be discussed:
@@ -83,19 +108,19 @@ Master classes include overviews of Robonomics io, using prepared digital twin t
 The Robonomics Winter School is an excellent opportunity for software developers and all interested to gain invaluable knowledge on working with the Robonomics Network and related packages for building Dapps and operating blockchain technologies and coding. The Robonomics Network invites all interested to join the courses and take advantage of the unique opportunity of gaining firsthand knowledge from industry experts. The courses will be hosted by Aleksandr Kapitonov (Dean of the Faculty of Infocommunication Technologies), Aleksandr Krupenkin (Robotics/IoT/Ethereum smart contract developer), Aleksandr Starostin (Web developer, Ethereum smart contract developer), Vadim Manaenko (Robotics and IoT engineer, drones developer), Anastasiia Bakai (UI, Motion Design, Front-end), Sergei Lonshakov (Robonomics co-founder and software architect).
 
 <section class="animate-inside" v-in-viewport.once>
-<Card :image="'/avatars/Sergei-Lonshakov.jpg'" :imageSize="'big'" :imageRound="false" :back="'transparent'">
+<Card :orientation="'vertical'" :image="'/posts/robonomics-school/join.png'" :imageSize="'big'" :imageRound="false" :link="'https://discord.gg/5UWNGNaAUf'">
 
-### Robonomics Winter School 2021 Program
+### Join Robonomics Winter School Community
 
-Sergei Lonshakov @ensrationis published the program on Github. You can find here themes and descriptions of Lectures and Master classes  that are planned to be held within Robonomics Winter School 2021. 
+Meet likeminded people, get rewards and chat with core Robonomics developers. 
 
-<Button :link="'https://github.com/ensrationis/robonomics-winter-21'" :label="'View the program'" :button="'border'"/>
+<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Get started'" :button="'primary large'"/>
 
 </Card>
 </section>
 
 
-## Robonomics Winter School 2021 Opening Ceremony
+<!-- ## Robonomics Winter School 2021 Opening Ceremony
 
 <section class="grid-3 animate-inside" v-in-viewport.once>
 
@@ -142,7 +167,7 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 </Card>
 
 
-</section>
+</section> -->
 
 
 ## Info partners
