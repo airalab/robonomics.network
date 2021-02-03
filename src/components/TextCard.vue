@@ -1,6 +1,6 @@
 <template>
   <div class="card" :class="classes" @focusin="isActive = true" @focusout="isActive = false" tabindex="0">
-
+  
     <div v-if="icon" class="icon"><img alt="" :src="icon"/></div>
     <div v-if="image" class="image" :class="{imageRound: imageRound}">
       <g-image alt="" :src="image"/>
@@ -93,7 +93,7 @@ export default {
         [`card-image`]: this.image,
         [`card-link`]: this.link || this.popup,
         [`oldy`]: this.back != `transparent`,
-        [`oldy__link`]: this.link || this.popup || this.back != `transparent`,
+        [`oldy__link`]: this.link || this.popup,
         [`card-${this.back}`]: true,
         [`card-imageSize-${this.imageSize}`]: this.icon || this.image,
         [`${this.orientation}`]: true,
@@ -158,6 +158,19 @@ export default {
 
     &.vertical {
       text-align: center;
+
+      .image img {
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: 500px){
+        display: block;
+
+        .image, .icon {
+          margin-bottom: var(--space);
+        }
+      }
+
     }
 
     &.pin {
@@ -296,14 +309,14 @@ export default {
       }
 
     &.vertical {
-      grid-template-rows: 200px auto;
+      grid-template-rows: 300px auto;
       justify-items: center;
       text-align: center;
 
       .icon, .imageRound {
-        width: 120px;
-        height: 120px;
-        border-radius: 60px;
+        width: 180px;
+        height: 180px;
+        border-radius: 90px;
       }
     }
   }

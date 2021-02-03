@@ -32,7 +32,8 @@
 			}
 
 			&:hover{
-				background-color: var(--link-color-hover);
+				background-color: var(--link-color-hover) !important;
+				border-color: var(--link-color-hover) !important;
 
 				.button-icon {
 					fill: var(--link-color-hover);
@@ -115,6 +116,16 @@
 		&.large {
 			padding: 0.8rem 1.4rem;
 			font-size: calc(var(--base-font-size) * 1.2);
+		}
+
+		&.green {
+			background-color: var(--color-green);
+			border-color: var(--color-green);
+		}
+
+		&.orange {
+			background-color: var(--color-orange);
+			border-color: var(--color-orange);
 		}
 	}
 
