@@ -108,13 +108,13 @@ Master classes include overviews of Robonomics io, using prepared digital twin t
 The Robonomics Winter School is an excellent opportunity for software developers and all interested to gain invaluable knowledge on working with the Robonomics Network and related packages for building Dapps and operating blockchain technologies and coding. The Robonomics Network invites all interested to join the courses and take advantage of the unique opportunity of gaining firsthand knowledge from industry experts. The courses will be hosted by Aleksandr Kapitonov (Dean of the Faculty of Infocommunication Technologies), Aleksandr Krupenkin (Robotics/IoT/Ethereum smart contract developer), Aleksandr Starostin (Web developer, Ethereum smart contract developer), Vadim Manaenko (Robotics and IoT engineer, drones developer), Anastasiia Bakai (UI, Motion Design, Front-end), Sergei Lonshakov (Robonomics co-founder and software architect).
 
 <section class="animate-inside" v-in-viewport.once>
-<Card :orientation="'vertical'" :image="'/posts/robonomics-school/join.png'" :imageSize="'big'" :imageRound="false" :link="'https://discord.gg/5UWNGNaAUf'">
+<Card :orientation="'vertical'" :image="'/posts/robonomics-school/join.png'" :imageSize="'big'" :imageRound="false" :link="'https://discord.gg/5UWNGNaAUf'" :back="'gradient'">
 
-### Join Robonomics Winter School Community
+## Join Robonomics Winter School Community
 
 Meet likeminded people, get rewards and chat with core Robonomics developers. 
 
-<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Get started'" :button="'primary large'"/>
+<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Get started'" :button="'primary large orange'"/>
 
 </Card>
 </section>
