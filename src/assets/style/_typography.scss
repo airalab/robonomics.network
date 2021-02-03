@@ -204,6 +204,37 @@ table {
     border: 1px solid var(--border-color);
     font-size: 90%;
   }
+
+  &.mobile {
+    @media screen and (max-width: 700px){
+      td, th {
+        display: none;
+      }
+
+      &, tbody, tr, [data-th] {
+        display: block;
+        width: 100%;
+      }
+
+      border: 1px solid var(--border-color);
+      [data-th] { border-width: 0; }
+
+      tr:not(:last-child) {
+        border-width: 0 0 2px;
+        border-style: dashed;
+        border-color: var(--border-color);
+      }
+
+      [data-th]:before {
+        content: attr(data-th);
+        display: block;
+        font-weight: 700;
+        margin-bottom: calc(var(--space) * 0.2);
+      }
+
+    }
+    
+  }
 }
 
 p, ul, ol, li, blockquote, table {
