@@ -17,6 +17,28 @@ The opening ceremony will launch on Wednesday, February 10, at 7:00 PM GMT+3.
 
 The main event with all master classes and lectures will be taking place from the 11th to the 24th of February.
 
+## Topics to be discussed:
+
+* What are Robonomics and Robonomics parachain? 
+* How can you use a set of software for connecting IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS)? 
+* Decentralized cloud infrastructure for IoT. 
+* How to create digital twins on the blockchain. 
+* App Store for robotics.
+
+Master classes include overviews of Robonomics io, using prepared digital twin templates for connecting with services, using Robonomics.js to interact via Dapps with digital twins of devices, and much more.
+
+<section class="animate-inside" v-in-viewport.once>
+<Card :orientation="'vertical'" :link="'https://discord.gg/5UWNGNaAUf'" :back="'gradient'">
+
+## Join Robonomics Winter School Community
+
+Meet likeminded people, get rewards and chat with core Robonomics developers. 
+
+<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Get started'" :button="'primary large orange'"/>
+
+</Card>
+</section>
+
 ## Robonomics Winter School 2021 Lectures and Master classes
 
 <table class="mobile">
@@ -93,16 +115,6 @@ The main event with all master classes and lectures will be taking place from th
 </table>
 
 
-## Topics to be discussed:
-
-* What are Robonomics and Robonomics parachain? 
-* How can you use a set of software for connecting IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS)? 
-* Decentralized cloud infrastructure for IoT. 
-* How to create digital twins on the blockchain. 
-* App Store for robotics.
-
-Master classes include overviews of Robonomics io, using prepared digital twin templates for connecting with services, using Robonomics.js to interact via Dapps with digital twins of devices, and much more.
-
 ## Opportunity for developers and engineers
 
 The Robonomics Winter School is an excellent opportunity for software developers and all interested to gain invaluable knowledge on working with the Robonomics Network and related packages for building Dapps and operating blockchain technologies and coding. The Robonomics Network invites all interested to join the courses and take advantage of the unique opportunity of gaining firsthand knowledge from industry experts. The courses will be hosted by Aleksandr Kapitonov (Dean of the Faculty of Infocommunication Technologies), Aleksandr Krupenkin (Robotics/IoT/Ethereum smart contract developer), Aleksandr Starostin (Web developer, Ethereum smart contract developer), Vadim Manaenko (Robotics and IoT engineer, drones developer), Anastasiia Bakai (UI, Motion Design, Front-end), Sergei Lonshakov (Robonomics co-founder and software architect).
@@ -177,6 +189,18 @@ Wed, Feb 10, 2021, 7:00 PM GMT+3
 <Card :orientation="'vertical'" :link="'https://raec.ru'" :classList="'pin'">
 
 !["Robonomics Winter School Info RAEC"](./images/robonomics-school/raec.png)
+
+</Card>
+
+<Card :orientation="'vertical'" :link="'https://events.dev.by/robonomics-winter-school'">
+
+!["Robonomics Winter School Info Partner events.dev.by"](./images/robonomics-school/dev-logo-brand.png)
+
+</Card>
+
+<Card :orientation="'vertical'" :link="'https://interestingengineering.com/events/robonomics-winter-school-2021'">
+
+!["Robonomics Winter School Info Partner Interesting Engineering"](./images/robonomics-school/interestingengineering.png)
 
 </Card>
 
