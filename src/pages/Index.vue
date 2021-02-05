@@ -75,8 +75,18 @@
           
         </div>
 
-    </section>
-</div>
+      </section>
+  </div>
+
+   <g-link v-if="calendar & !entrance" class="calendar" to="/community/wallpapers#2021-monthly-calendar-with-gorgeous-cyber-girls" title="Download Free Calendar 2021 from Robonomics">
+      <g-image class="calendar-i-1" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-2.png" />
+      <g-image class="calendar-i-2" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-3.png" />
+      <g-image class="calendar-i-3" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-4.png" />
+      <g-image class="calendar-i-4" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-5.png" />
+      <g-image class="calendar-i-5" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-6.png" />
+    </g-link>
+
+
   </layout>
 </template>
 
@@ -89,12 +99,108 @@ query {
 }
 </static-query>
 
-<style lang="scss">
-  .homepage{
+<style lang="scss" scoped>
+  .calendar {
+      --i-width: 100px;
 
+      display: block;
+
+      position: fixed;
+      bottom: calc(var(--i-width) * 0.6 * (-1)); //-60% from .calendar
+      left: 0;
+      right: 0;
+
+      text-align: center;
+      white-space: nowrap;
+
+      transform: translateY(5%);
+      visibility: hidden;
+		  opacity: 0;
+    
+      img {
+        width: var(--i-width);
+      }
+
+      @for $i from 1 through 3 {
+        .calendar-i-#{$i} {
+          transform: rotate(random(14) - 14 + deg);
+        }
+      }
+
+      @for $i from 4 through 5 {
+        .calendar-i-#{$i} {
+          transform: rotate(random(14) + deg);
+        }
+      }
+
+      &:after {
+        content: "";
+
+        background-color: var(--color-dark);
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        width: var(--content-width);
+        left: calc(50% - var(--content-width)/2);
+
+        transform: scaleX(0);
+        visibility: hidden;
+		    opacity: 0;
+        transform-origin: 50% 50%;
+      }
+
+      @media screen and (min-height: 660px) {
+   
+          animation: FloatYUp 0.6s ease-out 5s forwards, FadeIn 0.6s ease-out 5s forwards;
+
+          &:after {
+            animation: ScaleX 0.4s ease-out 3.5s forwards, FadeIn 0.4s ease-out 3.5s forwards;
+          }
+
+          &:hover {
+            @for $i from 1 through 5 {
+              .calendar-i-#{$i} {
+                animation: calendar#{$i} 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s forwards;
+              }
+            }
+          }
+        
+      }
+
+    }
+
+    @keyframes calendar1{
+      to{
+        transform: rotate(random(30) - 30 + deg) translateY(random(30) - 60 + px);
+      }
+    }
+    @keyframes calendar2{
+      to{
+        transform: rotate(random(30) - 30 + deg) translateY(random(30) - 60 + px);
+      }
+    }
+    @keyframes calendar3{
+      to{
+        transform: rotate(random(30) - 30 + deg) translateY(random(30) - 60 + px);
+      }
+    }
+    @keyframes calendar4{
+      to{
+        transform: rotate(random(30) + deg) translateY(random(30) - 60 + px);
+      }
+    }
+    @keyframes calendar5{
+      to{
+        transform: rotate(random(30) + deg) translateY(random(30) - 60 + px);
+      }
+    }
+
+
+  .homepage{
     visibility: hidden;
     opacity: 0;
     animation: FadeIn 0.4s ease-in 1s forwards;
+    // padding-bottom: 60px;
    
     &__description{
       position: relative;
@@ -683,13 +789,15 @@ query {
     data () {
       return {
         entrance: true,
-        recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
-        // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
+        calendar: true,
+        // recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
+        recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
       }
     },
 
     mounted() {
       this.cookieEntrance();
+      this.cookieCalendar();
     },
 
     updated() {
@@ -731,9 +839,20 @@ query {
           this.entrance = false;
         }
         else {
-          // 30 day after, expire, '' current path , browser default
+          // 30 days after, expire, '' current path , browser default
           this.$cookies.config(60 * 60 * 24 * 30,'');
           this.$cookies.set('EntranceShowed', '1');
+        }
+      },
+
+      cookieCalendar(){
+        if ( this.$cookies.get('CalendarShowed') ) {
+          this.calendar = false;
+        }
+        else {
+          // 3 days after, expire, '' current path , browser default
+          this.$cookies.config(60 * 60 * 24 * 3,'');
+          this.$cookies.set('CalendarShowed', '1');
         }
       }
     }
