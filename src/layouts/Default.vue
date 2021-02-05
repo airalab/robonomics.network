@@ -22,6 +22,15 @@
 
       <div class="screen-content">
         <slot/>
+
+        <div class="calendar">
+          <g-image class="calendar-i-1" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-2.png" />
+          <g-image class="calendar-i-2" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-3.png" />
+          <g-image class="calendar-i-3" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-4.png" />
+          <g-image class="calendar-i-4" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-5.png" />
+          <g-image class="calendar-i-5" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-6.png" />
+        </div>
+
         <ClientOnly> <Footer/> </ClientOnly>
       </div>
     </div>
@@ -40,6 +49,28 @@ query {
 
 
 <style lang="scss">
+
+  .calendar {
+    --i-width: 160px;
+
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - (var(--i-width)*5)/2 + var(--i-width) * 1.5 );
+    text-align: center;
+  
+    img {
+      display: inline-block;
+      width: var(--i-width);
+
+      position: relative;
+    }
+
+    @for $i from 1 through 5 {
+      .calendar-i-#{$i} {
+        left: calc(var(--i-width) * 0.5 * #{$i} * (-1));
+      }
+    }
+  }
 
   .header {
     --logo-padding: 0.6rem;
@@ -75,18 +106,9 @@ query {
     }
   }
 
-  // .backdrop-light {
-  //   background-color: rgba(255,255,255,0.3);
-  //   -webkit-backdrop-filter: blur(10px);
-  //   backdrop-filter: blur(10px);
-  // }
 
   @media screen and (max-width:840px) {
     .header {
-      // background-color: rgba(255,255,255,0.3);
-      // -webkit-backdrop-filter: blur(10px);
-      // backdrop-filter: blur(10px);
-
       align-items: center;
     }
   }
