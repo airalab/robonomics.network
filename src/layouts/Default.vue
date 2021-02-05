@@ -2,12 +2,6 @@
   <transition name="fade" appear>
   
     <div class="screen">
-      <!--<a class="banner" href="http://localhost:8083/blog/winter-robonomics-school/" v-if="BannerLink('/blog/winter-robonomics-school/')">-->
-      <a class="banner" href="/blog/winter-robonomics-school/">
-        <g-image src="~/assets/images/banners/wschool-video.png" class="hovercontent"/>
-        <span>Robonomics winter school 10 - 24 February 2021</span>
-        <g-image src="~/assets/images/banners/wschool-video.png" class="hovercontent"/>
-      </a>
 
       <header class="header">
         <div class="header-logo">
@@ -21,18 +15,19 @@
       </header>
 
       <div class="screen-content">
+        <!--<a class="banner" href="http://localhost:8083/blog/winter-robonomics-school/" v-if="BannerLink('/blog/winter-robonomics-school/')">-->
+        <a class="banner" href="/blog/winter-robonomics-school/">
+          <g-image src="~/assets/images/banners/wschool-video.png" class="hovercontent"/>
+          <span>Robonomics winter school 10 - 24 February 2021</span>
+          <g-image src="~/assets/images/banners/wschool-video.png" class="hovercontent"/>
+        </a>
+      
         <slot/>
-
-        <div class="calendar">
-          <g-image class="calendar-i-1" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-2.png" />
-          <g-image class="calendar-i-2" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-3.png" />
-          <g-image class="calendar-i-3" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-4.png" />
-          <g-image class="calendar-i-4" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-5.png" />
-          <g-image class="calendar-i-5" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-6.png" />
-        </div>
-
         <ClientOnly> <Footer/> </ClientOnly>
       </div>
+
+      
+
     </div>
   
   </transition>
@@ -50,28 +45,7 @@ query {
 
 <style lang="scss">
 
-  .calendar {
-    --i-width: 160px;
-
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - (var(--i-width)*5)/2 + var(--i-width) * 1.5 );
-    text-align: center;
   
-    img {
-      display: inline-block;
-      width: var(--i-width);
-
-      position: relative;
-    }
-
-    @for $i from 1 through 5 {
-      .calendar-i-#{$i} {
-        left: calc(var(--i-width) * 0.5 * #{$i} * (-1));
-      }
-    }
-  }
-
   .header {
     --logo-padding: 0.6rem;
 
@@ -127,9 +101,6 @@ query {
 .screen {
   .banner {
     display: block;
-    // position: sticky;
-    // top: 0;
-    // z-index: 100;
 
     padding: calc(var(--space) * 0.3) var(--screen-padding);
     background: #590FB7;
