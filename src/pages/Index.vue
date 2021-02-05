@@ -109,6 +109,7 @@ query {
       bottom: calc(var(--i-width) * 0.6 * (-1)); //-60% from .calendar
       left: 0;
       right: 0;
+      z-index: 900;
 
       text-align: center;
       white-space: nowrap;
