@@ -34,7 +34,7 @@ Master classes include overviews of Robonomics io, using prepared digital twin t
 
 Meet likeminded people, get rewards and chat with core Robonomics developers. 
 
-<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Get started'" :button="'primary large orange'"/>
+<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Sign up'" :button="'primary large orange'"/>
 
 </Card>
 </section>
@@ -126,7 +126,7 @@ The Robonomics Winter School is an excellent opportunity for software developers
 
 Meet likeminded people, get rewards and chat with core Robonomics developers. 
 
-<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Get started'" :button="'primary large orange'"/>
+<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Sign up'" :button="'primary large orange'"/>
 
 </Card>
 </section>
