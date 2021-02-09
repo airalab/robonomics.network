@@ -39,77 +39,59 @@ Meet likeminded people, get rewards and chat with core Robonomics developers.
 </Card>
 </section>
 
-## Robonomics Winter School 2021 Lectures and Master classes
+## Robonomics Winter School 2021 Shedule
 
-<table class="mobile">
+<table class="mobile fullwidth">
 <thead>
 <tr>
 <th style="width:110px">Date</th>
-<th style="min-width:190px">Name</th>
-<th>Description</th>
-<th>Main contributors</th>
+<th style="min-width:190px">Lesson</th>
+<!-- <th>Description</th> -->
+<th>Contributors</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Feb 10, 2021</td>
+<td data-th="THE OPENING CEREMONY">Feb 10, 2021</td>
 <td>The opening ceremony</td>
-<td data-th="FEB 10, 2021 - THE OPENING CEREMONY">All contributors will take a word about winter school and their master classes.</td>
-<td data-th="Main contributors:">All Robonomics Team</td>
+<!-- <td data-th="FEB 10, 2021 - THE OPENING CEREMONY">All contributors will take a word about winter school and their master classes.</td> -->
+<td data-th="Contributors:">All Robonomics Team</td>
 </tr>
 <tr>
-<td>Feb 11, 2021</td>
-<td>What's Robonomics?</td>
-<td data-th="FEB 11, 2021 - WHAT'S ROBONOMICS?">Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.</td>
-<td data-th="Main contributor:">@ensrationis</td>
+<td data-th="CONNECT ROBOTICS TO USER APP">Feb 11, 2021</td>
+<td>Connect robotics to user app</td>
+<!-- <td data-th="FEB 11, 2021 - WHAT'S ROBONOMICS?">Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.</td> -->
+<td data-th="Contributor:">@ensrationis</td>
 </tr>
 <tr>
-<td>Feb 12, 2021</td>
-<td>How to build on Robonomics</td>
-<td data-th="FEB 12, 2021 - HOW TO BUILD ON ROBONOMICS">You'll explore the basic skills to work with Robonomics.</td>
-<td data-th="Main contributor:">@ensrationis</td>
+<td data-th="ROBONOMICS GITHUB OVERVIEW">Feb 12, 2021</td>
+<td>Robonomics GitHub overview</td>
+<!-- <td data-th="FEB 12, 2021 - HOW TO BUILD ON ROBONOMICS">You'll explore the basic skills to work with Robonomics.</td> -->
+<td data-th="Contributor:">@ensrationis</td>
 </tr>
 <tr>
-<td>Feb 15, 2021</td>
-<td>Robonomics connectivity</td>
-<td data-th="FEB 15, 2021 - ROBONOMICS CONNECTIVITY">For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS).</td>
-<td data-th="Main contributor:">@vourhey</td>
+<td data-th="ROBONOMICS IO IN PRACTICE">Feb 15, 2021</td>
+<td>Robonomics IO in practice</td>
+<!-- <td data-th="FEB 15, 2021 - ROBONOMICS CONNECTIVITY">For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS).</td> -->
+<td data-th="Contributor:">@akru</td>
 </tr>
 <tr>
-<td>Feb 17, 2021</td>
-<td>Connect Digital Twins With Your Services</td>
-<td data-th="FEB 17, 2021 - CONNECT DIGITAL TWINS WITH YOUR SERVICES">Blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events. Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.</td>
-<td data-th="Main contributor:">@vourhey</td>
+<td data-th="ROBONOMICS PARACHAIN IN PRACTICE">Feb 17, 2021</td>
+<td>Robonomics parachain in practice</td>
+<!-- <td data-th="FEB 17, 2021 - CONNECT DIGITAL TWINS WITH YOUR SERVICES">Blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events. Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.</td> -->
+<td data-th="Contributor:">@akru</td>
 </tr>
 <tr>
-<td>Feb 19, 2021</td>
-<td>Decentralized Cloud infrastructure for IoT</td>
-<td data-th="FEB 19, 2021 - DECENTRALIZED CLOUD INFRASTRUCTURE FOR IOT">Robonomics Web Services (RWS) is the basic infrastructural service for Robotics and IoT on top of Robonomics Parachain and IPFS.</td>
-<td data-th="Main contributor:">@ensrationis</td>
+<td data-th="ROBONOMICS CONNECTIVITY">Feb 19, 2021</td>
+<td>Robonomics Connectivity</td>
+<!-- <td data-th="FEB 19, 2021 - DECENTRALIZED CLOUD INFRASTRUCTURE FOR IOT">Robonomics Web Services (RWS) is the basic infrastructural service for Robotics and IoT on top of Robonomics Parachain and IPFS.</td> -->
+<td data-th="Contributor:">@vourhey</td>
 </tr>
 <tr>
-<td>Feb 20, 2021</td>
-<td>Robonomics Parachain overview</td>
-<td data-th="FEB 20, 2021 - ROBONOMICS PARACHAIN OVERVIEW">For over a two years, core developers have been developing Robonomics, a Substrate-based chain designed to control robotic and IoT devices. In May 2019, the Robonomics team finished their first tests of Cumulus and plan to launch this chain as a Kusama parachain as soon as this is possible. The Robonomics parachain will allow the community to launch industrial manipulators, collect telemetry from sensors and create routes for autopilot drones using transactions.</td>
-<td data-th="Main contributor:">@akru</td>
-</tr>
-<tr>
-<td>Feb 20, 2021</td>
-<td>Robonomics Substrate Framework</td>
-<td data-th="FEB 20, 2021 - ROBONOMICS SUBSTRATE FRAMEWORK">Explore the substrate functionality with Parachain-development team.</td>
-<td data-th="Main contributor:">@akru</td>
-</tr>
-<tr>
-<td>Feb 22, 2021</td>
-<td>App Store for Robotics</td>
-<td data-th="FEB 22, 2021 - APP STORE FOR ROBOTICS">Companies that design and manufacture IoT-connected products and equipment should adopt a flexible digital twin delivery model to lower barriers to adoption, such as offering digital twins via marketplaces, rather than only offering digital twins via their own, proprietary, delivery model.</td>
-<td data-th="Main contributor:">@kap2fox</td>
-</tr>
-<tr>
-<td>Feb 23, 2021</td>
-<td>Build Dapp for End Users</td>
-<td data-th="FEB 23, 2021 - BUILD DAPP FOR END USERS">Using Robonomics.js, learn how to interact via dapp with digital twins of devices. Build IoT applications to transfer telemetry from devices to users, and also provide the ability to launch, for example, a robot vacuum cleaner using the Robonomics decentralized cloud.</td>
-<td data-th="Main contributors:">@vol4tim && @positivecrash</td>
+<td data-th="BUILD IOT DAPPS FOR END USERS">Feb 21, 2021</td>
+<td>Build IoT Dapps For End Users</td>
+<!-- <td data-th="FEB 23, 2021 - BUILD DAPP FOR END USERS">Using Robonomics.js, learn how to interact via dapp with digital twins of devices. Build IoT applications to transfer telemetry from devices to users, and also provide the ability to launch, for example, a robot vacuum cleaner using the Robonomics decentralized cloud.</td> -->
+<td data-th="Contributors:">@vol4tim && @positivecrash</td>
 </tr>
 </tbody>
 </table>
