@@ -180,10 +180,16 @@ hr {
 code {
   max-width: 100%;
   overflow-x: scroll;
+
   display: inline-block;
-  vertical-align: top; //fix for firefox
-  // background-color: rgba(#000, .1);
-  // padding: 0 0.4rem;
+  vertical-align: middle;
+  vertical-align: -moz-middle-with-baseline;
+  vertical-align: -webkit-baseline-middle;
+
+  /* hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar { display: none; }
 }
 
 
