@@ -252,8 +252,10 @@ query {
 
     h1 {
       --entertext: 15s;
-      --enteropacity: .1;
-      --enterfunc: cubic-bezier(0.4, 0.84, 0.44, 1);
+      --enteropacity: .7;
+      // --enterfunc: cubic-bezier(0.4, 0.84, 0.44, 1);
+      --enterfunc: linear;
+      --entercolorstart: var(--color-red);
       --entercolor: #fff;
       --stateNA: scaleY(0);
       --stateA: scale(1);
@@ -262,8 +264,9 @@ query {
       margin: 0;
       padding: var(--space);
 
-      color: var(--entercolor);
+      color: var(--entercolorstart);
       text-shadow: 0 0 0 var(--entercolor);
+
       animation: EnterTextShade var(--entertext) var(--enterfunc) forwards;
 
       font-family: var(--font-family-code);
@@ -295,7 +298,6 @@ query {
       span:nth-child(1) { animation-name: EnterText1; }
       span:nth-child(2) { animation-name: EnterText2; }
       span:nth-child(3) { animation-name: EnterText3; }
-      // span:nth-child(4) { animation-name: EnterText4; }
 
       button {
         visibility: hidden;
@@ -308,6 +310,9 @@ query {
 
       @media screen and (max-width: 500px) {
 
+        --entertext: 10s;
+        --entercolorstart: #fff;
+
         visibility: hidden;
 	      opacity: 0;
         animation: FadeIn 1s linear forwards;
@@ -319,7 +324,6 @@ query {
         span:nth-child(1) { animation-name: EnterTextMobile1; }
         span:nth-child(2) { animation-name: EnterTextMobile2; }
         span:nth-child(3) { animation-name: EnterTextMobile3; }
-        // span:nth-child(4) { animation-name: EnterTextMobile4; }
       }
     
     }
@@ -338,124 +342,103 @@ query {
     }
   }
 
+
   @keyframes EnterTextShade {
     0% {
       text-shadow: 0 0 0 var(--entercolor);
     }
-    13% {
+    23% {
       text-shadow: 0 0 0 var(--entercolor);
-    }
-    16% {
-      text-shadow: 0 0 20px var(--entercolor);
     }
     26% {
       text-shadow: 0 0 20px var(--entercolor);
     }
-    29% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    38% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    41% {
+    28% {
       text-shadow: 0 0 20px var(--entercolor);
+    }
+    39% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    48% {
+      text-shadow: 0 0 0 var(--entercolor);
     }
     51% {
       text-shadow: 0 0 20px var(--entercolor);
     }
-    54% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    63% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    66% {
+    53% {
       text-shadow: 0 0 20px var(--entercolor);
+    }
+    64% {
+      text-shadow: 0 0 0 var(--entercolor);
+    }
+    73% {
+      text-shadow: 0 0 0 var(--entercolor);
     }
     76% {
       text-shadow: 0 0 20px var(--entercolor);
     }
-    79% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    88% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    91% {
+    78% {
       text-shadow: 0 0 20px var(--entercolor);
+    }
+    89% {
+      text-shadow: 0 0 0 var(--entercolor);
     }
     100% {
-      text-shadow: 0 0 20px var(--entercolor);
+      text-shadow: 0 0 0 var(--entercolor);
     }
     
   }
+
+
 
   @keyframes EnterText1 {
     0% {
       visibility: visible;
 		  opacity: var(--enteropacity);
+      color: var(--entercolorstart);
     }
-    13% {
+    23% {
       visibility: visible;
 		  opacity: var(--enteropacity);
-    }
-    16% {
-      visibility: visible;
-		  opacity: 1;
+      color: var(--entercolorstart);
     }
     26% {
       visibility: visible;
 		  opacity: 1;
+      color: var(--entercolor);
     }
-    29% {
+    36% {
+      visibility: visible;
+		  opacity: 1;
+      color: var(--entercolor);
+    }
+    39% {
       visibility: visible;
 		  opacity: var(--enteropacity);
+      color: var(--entercolorstart);
     }
-    38% {
+    48% {
       visibility: visible;
 		  opacity: var(--enteropacity);
-    }
-    41% {
-      visibility: hidden;
-      opacity: 0;
+      color: var(--entercolorstart);
     }
     51% {
       visibility: hidden;
       opacity: 0;
     }
-    54% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    63% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    66% {
+    61% {
       visibility: hidden;
       opacity: 0;
+    }
+    64% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    73% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
     }
     76% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    79% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    88% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    91% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    99% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    100% {
       visibility: hidden;
       opacity: 0;
     }
@@ -466,68 +449,55 @@ query {
     0% {
       visibility: visible;
 		  opacity: var(--enteropacity);
+      color: var(--entercolorstart);
     }
-    13% {
+    23% {
       visibility: visible;
 		  opacity: var(--enteropacity);
-    }
-    16% {
-      visibility: hidden;
-      opacity: 0;
     }
     26% {
       visibility: hidden;
       opacity: 0;
     }
-    29% {
+    36% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    39% {
       visibility: visible;
 		  opacity: var(--enteropacity);
+      color: var(--entercolorstart);
     }
-    38% {
+    48% {
       visibility: visible;
 		  opacity: var(--enteropacity);
-    }
-    41% {
-      visibility: visible;
-		  opacity: 1;
+      color: var(--entercolorstart);
     }
     51% {
       visibility: visible;
 		  opacity: 1;
+      color: var(--entercolor);
     }
-    54% {
+    61% {
+      visibility: visible;
+		  opacity: 1;
+      color: var(--entercolor);
+    }
+    64% {
       visibility: visible;
 		  opacity: var(--enteropacity);
+      color: var(--entercolorstart);
     }
-    63% {
+    73% {
       visibility: visible;
 		  opacity: var(--enteropacity);
-    }
-    66% {
-      visibility: hidden;
-      opacity: 0;
+      color: var(--entercolorstart);
     }
     76% {
       visibility: hidden;
       opacity: 0;
     }
-    79% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    88% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    91% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    99% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    100% {
+    86% {
       visibility: hidden;
       opacity: 0;
     }
@@ -539,145 +509,64 @@ query {
       visibility: visible;
 		  opacity: var(--enteropacity);
     }
-    13% {
+    23% {
       visibility: visible;
 		  opacity: var(--enteropacity);
-    }
-    16% {
-      visibility: hidden;
-      opacity: 0;
     }
     26% {
       visibility: hidden;
       opacity: 0;
     }
-    29% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    38% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    41% {
+    36% {
       visibility: hidden;
       opacity: 0;
+    }
+    39% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
+    }
+    48% {
+      visibility: visible;
+		  opacity: var(--enteropacity);
     }
     51% {
       visibility: hidden;
       opacity: 0;
     }
-    54% {
+    61% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    64% {
       visibility: visible;
 		  opacity: var(--enteropacity);
+      color: var(--entercolorstart);
     }
-    63% {
+    73% {
       visibility: visible;
 		  opacity: var(--enteropacity);
-    }
-    66% {
-      visibility: visible;
-		  opacity: 1;
+      color: var(--entercolorstart);
     }
     76% {
       visibility: visible;
 		  opacity: 1;
+      color: var(--entercolor);
     }
-    79% {
+    86% {
       visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    88% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
+		  opacity: 1;
+      color: var(--entercolor);
     }
     91% {
       visibility: hidden;
       opacity: 0;
     }
-    99% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    100% {
+    93% {
       visibility: hidden;
       opacity: 0;
     }
     
   }
-
-  @keyframes EnterText4 {
-    0% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    13% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    16% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    26% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    29% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    38% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    41% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    51% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    54% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    63% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    66% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    76% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    79% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    88% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    91% {
-      visibility: visible;
-		  opacity: 1;
-    }
-    99% {
-      visibility: visible;
-		  opacity: 1;
-    }
-    100% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    
-  }
-
 
 
   @keyframes EnterTextMobile1 {
@@ -749,25 +638,6 @@ query {
     
   }
 
-  @keyframes EnterTextMobile4 {
-    0% {
-      transform: var(--stateNA);
-    }
-    88% {
-      transform: var(--stateNA);
-    }
-    91% {
-      transform: var(--stateA);
-    }
-    99% {
-      transform: var(--stateA);
-    }
-    100% {
-      transform: var(--stateNA);
-    }
-    
-  }
-
 
  
  
@@ -791,8 +661,8 @@ query {
       return {
         entrance: true,
         calendar: true,
-        // recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
-        recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
+        recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
+        // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
       }
     },
 
