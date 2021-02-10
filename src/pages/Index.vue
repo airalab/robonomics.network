@@ -442,6 +442,10 @@ query {
       visibility: hidden;
       opacity: 0;
     }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
     
   }
 
@@ -501,6 +505,11 @@ query {
       visibility: hidden;
       opacity: 0;
     }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    
     
   }
 
@@ -562,6 +571,10 @@ query {
       opacity: 0;
     }
     93% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    100% {
       visibility: hidden;
       opacity: 0;
     }
