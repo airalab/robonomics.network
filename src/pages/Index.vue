@@ -23,14 +23,13 @@
 
       <div class="layout__title">
         <h1 v-html="$static.metadata.siteName" itemprop="name"/>
+        <p class="text-gradient" itemprop="description" v-html="$static.metadata.siteDescription" />
       </div>
 
       <section class="homepage__description">
+
         <div class="layout__content">
-
-          <!--<p itemprop="description" v-html="$static.metadata.siteDescription" />-->
           <Navigation />
-
         </div>
 
 
@@ -100,6 +99,13 @@ query {
 </static-query>
 
 <style lang="scss" scoped>
+  p[itemprop="description"]{
+    font-size: 110%;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: var(--font-family-code);
+  }
+
   .calendar {
       --i-width: 100px;
 
@@ -389,8 +395,6 @@ query {
     
   }
 
-
-
   @keyframes EnterText1 {
     0% {
       visibility: visible;
@@ -650,9 +654,6 @@ query {
     }
     
   }
-
-
- 
  
 </style>
 
