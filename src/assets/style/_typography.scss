@@ -39,7 +39,7 @@ h1 {
   }
 }
 
-h1:not(.clean){
+h1:not(.clean), .text-gradient {
   display: inline-block;
   background: linear-gradient(to right , var(--color-green), #11a075, #5DC0DF, #355bd6, #5DC0DF, #11a075, var(--color-green));
   -webkit-background-clip: text;
@@ -51,7 +51,7 @@ h1:not(.clean){
 }
 
 
-h1 { margin-top: calc(var(--space)*3); }
+h1 { margin-top: calc(var(--space)*2); }
 h4, h5 { margin-top: var(--space); }
 
 h2 { font-size: 1.7rem; }
