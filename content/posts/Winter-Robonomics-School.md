@@ -10,31 +10,31 @@ abstract: "Free online Master Classes and Lectures open for attendees. Try to bu
 import Card from '~/components/TextCard.vue'
 import Button from '~/components/Button.vue'
 
-
 Robonomics Winter School 2021 is inviting all willing to join master classes and lectures hosted by experienced contributors and programmers operating with Dapps and Web services on the Polkadot Parachain.
-
-The opening ceremony will launch on Wednesday, February 10, at 7:00 PM GMT+3.
-
-The main event with all master classes and lectures will be taking place from the 11th to the 24th of February.
-
-## Topics to be discussed:
-
-* What are Robonomics and Robonomics parachain? 
-* How can you use a set of software for connecting IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS)? 
-* Decentralized cloud infrastructure for IoT. 
-* How to create digital twins on the blockchain. 
-* App Store for robotics.
 
 Master classes include overviews of Robonomics io, using prepared digital twin templates for connecting with services, using Robonomics.js to interact via Dapps with digital twins of devices, and much more.
 
+## Watch inspiring teaser
+
 <section class="animate-inside" v-in-viewport.once>
-<Card :orientation="'vertical'" :link="'https://discord.gg/5UWNGNaAUf'" :back="'gradient'">
 
-## Join Robonomics Winter School Community
+https://youtu.be/RbNJ4ozUGXE
 
+</section>
+
+## Watch opening ceremony
+
+<section class="animate-inside" v-in-viewport.once>
+
+https://youtu.be/kQaSwNYHJQ8
+
+</section>
+
+<section class="animate-inside" v-in-viewport.once>
+<Card :icon="'/icons/icon-forum.png'" :link="'https://discord.gg/5UWNGNaAUf'">
+
+### Join Robonomics Winter School Community!
 Meet likeminded people, get rewards and chat with core Robonomics developers. 
-
-<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Sign up'" :button="'primary large orange'"/>
 
 </Card>
 </section>
@@ -53,25 +53,41 @@ Meet likeminded people, get rewards and chat with core Robonomics developers.
 <tbody>
 <tr>
 <td data-th="THE OPENING CEREMONY">Feb 10, 2021</td>
-<td>The opening ceremony</td>
+<td>
+
+[The opening ceremony, intro](https://wiki.robonomics.network/docs/wschool2021-intro)
+
+</td>
 <!-- <td data-th="FEB 10, 2021 - THE OPENING CEREMONY">All contributors will take a word about winter school and their master classes.</td> -->
 <td data-th="Contributors:">All Robonomics Team</td>
 </tr>
 <tr>
 <td data-th="CONNECT ROBOTICS TO USER APP">Feb 11, 2021</td>
-<td>Connect robotics to user app</td>
+<td>
+
+[Connect robotics to user app](https://wiki.robonomics.network/docs/wschool2021-connect-robotics-to-user-app/)
+
+</td>
 <!-- <td data-th="FEB 11, 2021 - WHAT'S ROBONOMICS?">Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.</td> -->
 <td data-th="Contributor:">@ensrationis</td>
 </tr>
 <tr>
 <td data-th="ROBONOMICS GITHUB OVERVIEW">Feb 12, 2021</td>
-<td>Robonomics GitHub overview</td>
+<td>
+
+[Robonomics GitHub overview](https://wiki.robonomics.network/docs/wschool2021-robonomics-github-overview)
+
+</td>
 <!-- <td data-th="FEB 12, 2021 - HOW TO BUILD ON ROBONOMICS">You'll explore the basic skills to work with Robonomics.</td> -->
 <td data-th="Contributor:">@ensrationis</td>
 </tr>
 <tr>
 <td data-th="ROBONOMICS IO IN PRACTICE">Feb 15, 2021</td>
-<td>Robonomics IO in practice</td>
+<td>
+
+[Robonomics IO in practice](https://wiki.robonomics.network/docs/wschool2021-robonomics-io-in-practice)
+
+</td>
 <!-- <td data-th="FEB 15, 2021 - ROBONOMICS CONNECTIVITY">For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS).</td> -->
 <td data-th="Contributor:">@akru</td>
 </tr>
@@ -108,7 +124,7 @@ The Robonomics Winter School is an excellent opportunity for software developers
 
 Meet likeminded people, get rewards and chat with core Robonomics developers. 
 
-<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Sign up'" :button="'primary large orange'"/>
+<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Join'" :button="'primary large orange'"/>
 
 </Card>
 </section>
