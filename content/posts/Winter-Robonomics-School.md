@@ -113,57 +113,6 @@ Meet likeminded people, get rewards and chat with core Robonomics developers.
 </Card>
 </section>
 
-
-<!-- ## Robonomics Winter School 2021 Opening Ceremony
-
-<section class="grid-3 animate-inside" v-in-viewport.once>
-
-<Card :orientation="'vertical'" :link="'https://www.meetup.com/robonomics/events/275378464/'" :imageRound="false" :image="'/posts/robonomics-school/meetup.png'" :imageSize="'big'">
-
-#### Meetup page
-
-More then 50 attendees already, find your friends
-
-<Button :label="'Join on Meetup'" :button="'primary block'" :link="'https://www.meetup.com/robonomics/events/275378464/'"/>
-
-</Card>
-
-<Card :orientation="'vertical'" :link="'https://youtu.be/kQaSwNYHJQ8'" :imageRound="false" :image="'/posts/robonomics-school/youtube.png'" :imageSize="'big'">
-
-#### Youtube stream
-
-Set a reminder to join the event in time 
-
-<Button :label="'Set a reminder'" :button="'primary block'" :link="'https://youtu.be/kQaSwNYHJQ8'"/>
-
-</Card>
-
-<Card :orientation="'vertical'" popup :imageRound="false" :image="'/posts/robonomics-school/calendar.png'" :imageSize="'big'">
-
-#### Ceremony starts:
-
-Wed, Feb 10, 2021, 7:00 PM GMT+3
-
-<Button :label="'Add to calendar'" :button="'primary block'"/>
-
-<div class="popup">
-
-##### Add event to calendar
-
-<Button :label="'Google'" :button="'border block'" :link="'https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210210T150000Z%2F20210210T170000Z&details=Free%20online%20Master%20Classes%20and%20Lectures.%20Try%20to%20build%20Dapps%20and%20Web%20Services%20for%20IoT%20on%20Polkadot%20Parachain%20in%20time%20of%20Robonomics%20Winter%20School%202021%20February%2010-24%2C%20https%3A%2F%2Fyoutu.be%2FkQaSwNYHJQ8&location=Online&text=Robonomics%20Winter%20School%202021%20Opening%20Ceremony'"/>
-
-<Button :label="'Apple'" :button="'border block'" :link="'https://static.robonomics.network/temp/RobonomicsWinterSchool2021.ics'"/>
-
-<Button :label="'Outlook'" :button="'border block'" :link="'https://outlook.live.com/calendar/0/deeplink/compose?body=Free%20online%20Master%20Classes%20and%20Lectures.%20Try%20to%20build%20Dapps%20and%20Web%20Services%20for%20IoT%20on%20Polkadot%20Parachain%20in%20time%20of%20Robonomics%20Winter%20School%202021%20February%2010-24%2C%20https%3A%2F%2Fyoutu.be%2FkQaSwNYHJQ8&enddt=2021-02-10T17%3A00%3A00%2B00%3A00&location=Online&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2021-02-10T15%3A00%3A00%2B00%3A00&subject=Robonomics%20Winter%20School%202021%20Opening%20Ceremony'"/>
-
-</div>
-
-</Card>
-
-
-</section> -->
-
-
 ## Info partners
 
 <section class="grid-4 animate-inside" v-in-viewport.once>
