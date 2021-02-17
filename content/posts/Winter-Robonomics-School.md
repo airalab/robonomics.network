@@ -39,7 +39,7 @@ Meet likeminded people, get rewards and chat with core Robonomics developers.
 </Card>
 </section>
 
-## Robonomics Winter School 2021 Shedule
+## Robonomics Winter School 2021 Schedule
 
 <table class="mobile fullwidth">
 <thead>
