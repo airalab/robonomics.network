@@ -211,6 +211,10 @@ table {
     font-size: 90%;
   }
 
+  tbody tr:hover {
+    background-color: var(--color-gray-light);
+  }
+
   &.mobile {
     @media screen and (max-width: 700px){
       td, th {

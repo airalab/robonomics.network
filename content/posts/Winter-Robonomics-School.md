@@ -45,70 +45,190 @@ Meet likeminded people, get rewards and chat with core Robonomics developers.
 <thead>
 <tr>
 <th style="width:110px">Date</th>
-<th style="min-width:190px">Lesson</th>
-<!-- <th>Description</th> -->
+<th style="width:110px">Event type</th>
+<th style="min-width:190px">Event</th>
 <th>Contributors</th>
 </tr>
 </thead>
 <tbody>
+
 <tr>
 <td data-th="THE OPENING CEREMONY">Feb 10, 2021</td>
-<td>
+<td>Video</td>
+<td data-th="Watch the video:">
 
 [The opening ceremony, intro](https://wiki.robonomics.network/docs/wschool2021-intro)
 
 </td>
-<!-- <td data-th="FEB 10, 2021 - THE OPENING CEREMONY">All contributors will take a word about winter school and their master classes.</td> -->
-<td data-th="Contributors:">All Robonomics Team</td>
+<td data-th="Contributors:">
+
+[All Robonomics Team](https://github.com/airalab)
+
+</td>
 </tr>
+
+<tr>
+<td data-th="ROBO QUIZ #1">Feb 10, 2021</td>
+<td>Quiz</td>
+<td>Robo quiz #1</td>
+<td data-th="Contributors:">Diana</td>
+</tr>
+
 <tr>
 <td data-th="CONNECT ROBOTICS TO USER APP">Feb 11, 2021</td>
-<td>
+<td>Lesson</td>
+<td data-th="Go throw the lesson:">
 
 [Connect robotics to user app](https://wiki.robonomics.network/docs/wschool2021-connect-robotics-to-user-app/)
 
 </td>
-<!-- <td data-th="FEB 11, 2021 - WHAT'S ROBONOMICS?">Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.</td> -->
-<td data-th="Contributor:">@ensrationis</td>
+<td data-th="Contributor:">
+
+[@ensrationis](https://github.com/ensrationis)
+
+</td>
 </tr>
+
+<tr>
+<td data-th="ROBO QUIZ #2">Feb 11, 2021</td>
+<td>Quiz</td>
+<td>Robo quiz #2</td>
+<td data-th="Contributors:">Diana</td>
+</tr>
+
 <tr>
 <td data-th="ROBONOMICS GITHUB OVERVIEW">Feb 12, 2021</td>
-<td>
+<td>Lesson</td>
+<td data-th="Go throw the lesson:">
 
 [Robonomics GitHub overview](https://wiki.robonomics.network/docs/wschool2021-robonomics-github-overview)
 
 </td>
-<!-- <td data-th="FEB 12, 2021 - HOW TO BUILD ON ROBONOMICS">You'll explore the basic skills to work with Robonomics.</td> -->
-<td data-th="Contributor:">@ensrationis</td>
+<td data-th="Contributor:">
+
+[@ensrationis](https://github.com/ensrationis)
+
+</td>
 </tr>
+
 <tr>
 <td data-th="ROBONOMICS IO IN PRACTICE">Feb 15, 2021</td>
-<td>
+<td>Lesson</td>
+<td data-th="Go throw the lesson:">
 
 [Robonomics IO in practice](https://wiki.robonomics.network/docs/wschool2021-robonomics-io-in-practice)
 
 </td>
-<!-- <td data-th="FEB 15, 2021 - ROBONOMICS CONNECTIVITY">For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS).</td> -->
-<td data-th="Contributor:">@akru</td>
+<td data-th="Contributor:">
+
+[@akru](https://github.com/akru)
+
+</td>
 </tr>
+
+<tr>
+<td data-th="PODCAST with Vitaly [Smart-lease of Robots]">Feb 16, 2021</td>
+<td>Audio</td>
+<td data-th="Audio on Youtube:">
+
+[Podcast with Vitaly [Smart-lease of Robots]](https://url.today/66)
+
+</td>
+<td data-th="Contributor:">Yakub && Vitaly</td>
+</tr>
+
+
 <tr>
 <td data-th="ROBONOMICS PARACHAIN IN PRACTICE">Feb 17, 2021</td>
+<td>Lesson</td>
 <td>Robonomics parachain in practice</td>
-<!-- <td data-th="FEB 17, 2021 - CONNECT DIGITAL TWINS WITH YOUR SERVICES">Blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events. Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.</td> -->
-<td data-th="Contributor:">@akru</td>
+<td data-th="Contributor:">
+
+[@akru](https://github.com/akru)
+
+</td>
 </tr>
+
+<tr>
+<td data-th="PODCAST Podcast with Santiago [Polkadot ecosystem]">Feb 17, 2021</td>
+<td>Audio</td>
+<td>Podcast with Santiago [Polkadot ecosystem]</td>
+<td data-th="Contributors:">Yakub && Santiago</td>
+</tr>
+
+
+<tr>
+<td data-th="ROBO QUIZ #3">Feb 18, 2021</td>
+<td>Quiz</td>
+<td data-th="Join in Discord:">
+
+[Robo quiz #3](https://discord.gg/5UWNGNaAUf)
+
+</td>
+<td data-th="Contributors:">Diana</td>
+</tr>
+
+<tr>
+<td data-th="PODCAST with Yakub & OCEAN">Feb 18, 2021</td>
+<td>Audio</td>
+<td>Podcast with Yakub & OCEAN</td>
+<td data-th="Contributors:">Yakub</td>
+</tr>
+
+
 <tr>
 <td data-th="ROBONOMICS CONNECTIVITY">Feb 19, 2021</td>
+<td>Lesson</td>
 <td>Robonomics Connectivity</td>
-<!-- <td data-th="FEB 19, 2021 - DECENTRALIZED CLOUD INFRASTRUCTURE FOR IOT">Robonomics Web Services (RWS) is the basic infrastructural service for Robotics and IoT on top of Robonomics Parachain and IPFS.</td> -->
-<td data-th="Contributor:">@vourhey</td>
+<td data-th="Contributor:">
+
+[@vourhey](https://github.com/Vourhey)
+
+</td>
 </tr>
+
+<tr>
+<td data-th="ROBO QUIZ #4">Feb 20, 2021</td>
+<td>Quiz</td>
+<td data-th="Join in Discord:">
+
+[Robo quiz #4](https://discord.gg/5UWNGNaAUf)
+
+</td>
+<td data-th="Contributors:">Diana</td>
+</tr>
+
+
 <tr>
 <td data-th="BUILD IOT DAPPS FOR END USERS">Feb 21, 2021</td>
+<td>Lesson</td>
 <td>Build IoT Dapps For End Users</td>
-<!-- <td data-th="FEB 23, 2021 - BUILD DAPP FOR END USERS">Using Robonomics.js, learn how to interact via dapp with digital twins of devices. Build IoT applications to transfer telemetry from devices to users, and also provide the ability to launch, for example, a robot vacuum cleaner using the Robonomics decentralized cloud.</td> -->
-<td data-th="Contributors:">@vol4tim && @positivecrash</td>
+<td data-th="Contributors:">
+
+[@vol4tim](https://github.com/vol4tim) && [@positivecrash](https://github.com/positivecrash)
+
+</td>
 </tr>
+
+<tr>
+<td data-th="ROBO QUIZ #5">Feb 23, 2021</td>
+<td>Quiz</td>
+<td data-th="Join in Discord:">
+
+[Robo quiz #5](https://discord.gg/5UWNGNaAUf)
+
+</td>
+<td data-th="Contributors:">Diana</td>
+</tr>
+
+
+<tr>
+<td data-th="CLOSING CEREMONY">Feb 24, 2021</td>
+<td>Video</td>
+<td>Closing ceremony</td>
+<td data-th="Contributors:">Yakub</td>
+</tr>
+
 </tbody>
 </table>
 
