@@ -5,8 +5,8 @@ published: true
 # tags: ['Kusama', 'Parachain', 'Roadmap']
 cover_image: ./images/roadmap-2021/1.jpg
 # canonical_url: false
-description: "Today I will share the development team plans related to task #1 - launching parachain on the Kusama network."
-abstract: "Today I will share the development team plans related to task #1 - launching parachain on the Kusama network."
+description: "The Polkadot architecture is becoming explicit and complete, which should allow us, as parachain developers, to shift our focus from maintaining improvements in Polkadot dependencies (the substrate framework, cumulus and other), and move on to increasing the functionality of our parachain."
+abstract: "The Polkadot architecture is becoming explicit and complete, which should allow us, as parachain developers, to shift our focus from maintaining improvements in Polkadot dependencies (the substrate framework, cumulus and other), and move on to increasing the functionality of our parachain."
 ---
 
 Starting with this article, I would like to share the tasks that the core project development team are ready to share with the community today.
@@ -50,13 +50,13 @@ To date, the possibility has already been implemented (1) to enable, disable and
 
 Ahead of us is the implementation of such functionality as:
  
-(1) Robobank to accept any Polkadot token in automation services
-(2) Single version of True via Digital Twins on Blockchain
-(3) Bitcoin payments for real estate
-(4) Privacy of using IoT applications
-(5) global supply chains on blockchain
-(6) DeFi connectivity for IoT
-(7) NFT for IoT
+1. Robobank to accept any Polkadot token in automation services
+2. Single version of True via Digital Twins on Blockchain
+3. Bitcoin payments for real estate
+4. Privacy of using IoT applications
+5. global supply chains on blockchain
+6. DeFi connectivity for IoT
+7. NFT for IoT
 
 As you can see, tasks such as (3), (4), (6), (7) are of particular interest, since they imply integration with other parachains in order to utilize their useful functions in Robonomics.
 
@@ -69,3 +69,5 @@ The Polkadot architecture is becoming explicit and complete, which should allow 
 It is important not to forget that the process of racing for a parachain slot is an internal development process, but most importantly - a specific functionality of a parachain; the main thing is to provide Robonomics functions to other parachains and implement the use of other parachains in your code. Then the entire ecosystem will be able to provide interesting functionality to users; functionality that will be extremely difficult to find outside of Polkadot.
 
 In the next article I will talk about the Robobank project, the improvements of the Substrate based client of the Robonomics Network, as well as our plans for the development of Robonomics dapp and Robonomics Web Services.
+
+*ensrationis*
