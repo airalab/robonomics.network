@@ -77,7 +77,7 @@ export default {
         // Some Twitter Cards Tags
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: this.title },
-        { name: "twitter:image:src", content: this.image },
+        { name: "twitter:image", content: this.image },
         { name: "twitter:description", content: this.pageDescription },
         { name: "twitter:site", content: '@AIRA_Robonomics' },
         { name: "twitter:creator", content: '@AIRA_Robonomics' }
