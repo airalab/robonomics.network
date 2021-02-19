@@ -15,25 +15,40 @@ export default {
   props: {
       pageTitle: { type: String, default: '' },
       pageDescription: { type: String, default: '' },
-      pageImage: { type: String, default: this.$static.metadata.siteUrl + '/website_cover.png?v=3' },
+      pageImage: { type: String, default: '' },
       pageImageWidth: { type: String, default: '1280' },
       pageImageHeight: { type: String, default: '765' },
   },
 
-  data() {
+  // data() {
         
-        return {
-            title: this.pageTitle + ' / Robonomics.network',
-            url: '',
-            img: this.$static.metadata.siteUrl + this.pageImage + '?v=3'
-        };
+  //       return {
+  //           title: this.pageTitle + ' / Robonomics.network',
+  //           url: '',
+  //           img: ''
+  //       };
         
-    },
+  //   },
 
   mounted() {
-    this.url = window.location.href;
+    this.url = window.location.href
   },
- 
+
+  computed: {
+    image() {
+      if(this.pageImage != '') {
+        return this.$static.metadata.siteUrl + this.pageImage
+      }
+      else{
+        return this.$static.metadata.siteUrl + '/website_cover.png'
+      }
+    },
+
+    title() {
+      return this.pageTitle + ' / ' + this.$static.metadata.siteName
+    }
+  },
+
 
   metaInfo() {
     return {
@@ -46,10 +61,10 @@ export default {
         { property: "og:site_name", content: this.$static.metadata.siteName },
         { property: "og:title", content: this.title },
         { property: "og:description", content: this.pageDescription },
-        { property: "og:image", content: this.img },
+        { property: "og:image", content: this.image },
         { property: "og:image:width", content: this.pageImageWidth },
         { property: "og:image:height", content: this.pageImageHeight },
-        { property: "og:url", content: this.url },
+        { property: "og:url", content: this.$static.metadata.siteUrl },
         // {
         //   property: "og:url",
         //   content: window.location.href
@@ -63,7 +78,7 @@ export default {
         // Some Twitter Cards Tags
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: this.title },
-        { name: "twitter:image:src", content: this.img },
+        { name: "twitter:image:src", content: this.image },
         { name: "twitter:description", content: this.pageDescription },
         { name: "twitter:site", content: '@AIRA_Robonomics' },
         { name: "twitter:creator", content: '@AIRA_Robonomics' }
