@@ -15,7 +15,7 @@ export default {
   props: {
       pageTitle: { type: String, default: '' },
       pageDescription: { type: String, default: '' },
-      pageImage: { type: String, default: '/website_cover.png?v=2' },
+      pageImage: { type: String, default: '/website_cover.png?v=3' },
       pageImageWidth: { type: String, default: '1280' },
       pageImageHeight: { type: String, default: '765' },
   },
@@ -25,7 +25,7 @@ export default {
         return {
             title: this.pageTitle + ' / Robonomics.network',
             url: '',
-            img: this.pageImage + '?v=2'
+            img: this.pageImage + '?v=3'
         };
         
     },
