@@ -211,18 +211,6 @@ Meet likeminded people, get rewards and chat with core Robonomics developers.
 </tr>
 
 <tr>
-<td data-th="ROBO QUIZ #5">Feb 23, 2021</td>
-<td>Quiz</td>
-<td data-th="Join in Discord:">
-
-[Robo quiz #5](https://discord.gg/5UWNGNaAUf)
-
-</td>
-<td data-th="Contributors:">Diana</td>
-</tr>
-
-
-<tr>
 <td data-th="CLOSING CEREMONY">Feb 24, 2021</td>
 <td>Video</td>
 <td>Closing ceremony</td>
