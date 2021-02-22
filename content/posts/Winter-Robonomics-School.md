@@ -150,9 +150,9 @@ Podcast with Vitaly [Smart-lease of Robots]
 </tr>
 
 <tr>
-<td data-th=["PODCAST with Santiago [Polkadot ecosystem]"](https://youtu.be/uReeAwhRNFI)>Feb 17, 2021</td>
+<td data-th="PODCAST with Santiago 'Polkadot ecosystem'">Feb 17, 2021</td>
 <td>Audio</td>
-<td>Podcast with Santiago [Polkadot ecosystem]</td>
+<td data-th="Audio on Youtube:">[Podcast with Santiago 'Polkadot ecosystem'](https://url.today/74)</td>
 <td data-th="Contributors:">Yakub && Santiago</td>
 </tr>
 
@@ -169,9 +169,9 @@ Podcast with Vitaly [Smart-lease of Robots]
 </tr>
 
 <tr>
-<td data-th=["PODCAST with Yakub & OCEAN"](https://youtu.be/r1XmXvMmLIc)>Feb 18, 2021</td>
+<td data-th="PODCAST with Yakub & OCEAN">Feb 18, 2021</td>
 <td>Audio</td>
-<td>Podcast with Yakub & OCEAN</td>
+<td>[Podcast with Yakub & OCEAN](https://url.today/75)</td>
 <td data-th="Contributors:">Yakub</td>
 </tr>
 
