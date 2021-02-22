@@ -131,7 +131,7 @@ Meet likeminded people, get rewards and chat with core Robonomics developers.
 <td>Audio</td>
 <td data-th="Audio on Youtube:">
 
-[Podcast with Vitaly [Smart-lease of Robots]](https://url.today/66)
+Podcast with Vitaly [Smart-lease of Robots]
 
 </td>
 <td data-th="Contributor:">Yakub && Vitaly</td>
@@ -150,7 +150,7 @@ Meet likeminded people, get rewards and chat with core Robonomics developers.
 </tr>
 
 <tr>
-<td data-th="PODCAST Podcast with Santiago [Polkadot ecosystem]">Feb 17, 2021</td>
+<td data-th="[PODCAST with Santiago [Polkadot ecosystem]](https://youtu.be/uReeAwhRNFI)">Feb 17, 2021</td>
 <td>Audio</td>
 <td>Podcast with Santiago [Polkadot ecosystem]</td>
 <td data-th="Contributors:">Yakub && Santiago</td>
@@ -169,7 +169,7 @@ Meet likeminded people, get rewards and chat with core Robonomics developers.
 </tr>
 
 <tr>
-<td data-th="PODCAST with Yakub & OCEAN">Feb 18, 2021</td>
+<td data-th="[PODCAST with Yakub & OCEAN](https://youtu.be/r1XmXvMmLIc)">Feb 18, 2021</td>
 <td>Audio</td>
 <td>Podcast with Yakub & OCEAN</td>
 <td data-th="Contributors:">Yakub</td>
