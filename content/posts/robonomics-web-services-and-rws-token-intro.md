@@ -1,13 +1,19 @@
-# Robonomics Web Services and RWS token intro
-
-![Robonomics Web Services (RWS)](./images/robonomics-web-services-and-rws-token-intro/logo.jpeg)
+---
+title: Robonomics Web Services and RWS token intro
+date: 2021-02-25
+published: true
+tags: ['RWS', 'Tokens', 'Robonomics parachain']
+cover_image: ./images/robonomics-web-services-and-rws-token-intro/logo.jpeg
+description: "Meet the first RWS IoT Core services. Decentralized infrastructure services over IPFS, Ethereum, and Polkadot for Robotics and IoT. For industrial, consumer, and commercial solutions"
+abstract: "Meet the first RWS IoT Core services. Decentralized infrastructure services over IPFS, Ethereum, and Polkadot for Robotics and IoT. For industrial, consumer, and commercial solutions"
+---
 
 **Robonomics Web Services (RWS)** is decentralized infrastructure services over IPFS, Ethereum, and Polkadot for Robotics and IoT. For industrial, consumer, and commercial solutions.
 
 ## Meet the first RWS IoT Core services
 RWS is a state-of-the-art infrastructure that you will love. RWS lets connect devices easily and interact with user applications, cloud services, and other devices securely. No single point of failure, open-source, most interesting internet tech on a turn-key basis, and your freedom to use it in any place in the world. Truly global network for Robotics and IoT devices.
 
-**The first RWS IoT Core services over Robonomics Parachain:**
+The first RWS IoT Core services over Robonomics Parachain:
 
 * **RWS: PubSub Message Broker.** Use unlimited messaging over a p2p network based on IPFS protocol.
 * **RWS: Data Blockchainization Service.** Put data into IPFS and store hashes in a public Blockchain.
@@ -18,13 +24,13 @@ The main token of Robonomics network is XRT. This is utility token which your ro
 
 For engineers, Core Dev team will try to make different Robonomics usage models and the first step in this way is launching lifetime subscription token — RWS token. As Tesla promoted their roadster with lifetime charging, so we want to promote Robonomics network with lifetime subscription offer for the first. Become a robot economy pioneers!
 
-**1 RWS token will give you 1 transaction per second (tps) from/to your IoT device over Robonomics Parachain.** Just activate your RWS token and make more than 2,500,000 tx in a month with no time limits. Deactivate RWS token and trade it on Uniswap any time you want.
+> ### 1 RWS token will give you 1 transaction per second (tps) from/to your IoT device over Robonomics Parachain.
+>
+> Just activate your RWS token and make more than 2,500,000 tx in a month with no time limits. Deactivate RWS token and trade it on Uniswap any time you want.
 
-**For example**
+**Example case 1:** You own 0.1 RWS token and want to share telemetry with shadow in Public blockchain every 10 seconds. You need to activate it with transaction to special address of ethereum mainnet smart contract. After that, you can use RWS: Data Blockchainization Service each 10 seconds (1 RWS token == 1 tps, 0.1 RWS token == 1 tx / 10 sec).
 
-*Case 1: You own 0.1 RWS token and want to share telemetry with shadow in Public blockchain every 10 seconds. You need to activate it with transaction to special address of ethereum mainnet smart contract. After that, you can use RWS: Data Blockchainization Service each 10 seconds (1 RWS token == 1 tps, 0.1 RWS token == 1 tx / 10 sec).*
-
-*Case 2: You own 2 RWS token and want to control automatic car wash under Robonomics control. You need to activate it with transaction to special address of ethereum mainnet smart contract. After that, you can use RWS: Data Blockchainization Service and RWS: Robot Actions each second in parallel mode.*
+**Example case 2:** You own 2 RWS token and want to control automatic car wash under Robonomics control. You need to activate it with transaction to special address of ethereum mainnet smart contract. After that, you can use RWS: Data Blockchainization Service and RWS: Robot Actions each second in parallel mode.
 
 **Current status of RWS token:** initial distribution stage.
 

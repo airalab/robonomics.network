@@ -1,18 +1,22 @@
-# The ultimate guide to Robonomics, RWS and Robonomics parachain on Polkadot
+---
+title: The ultimate guide to Robonomics, RWS and Robonomics parachain on Polkadot
+date: 2021-02-25
+published: true
+tags: ['RWS', 'Tokens', 'Robonomics parachain']
+cover_image: ./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-logo.jpg
+description: "This article delves into the connection between Robonomics platform, its parachain on the Polkadot ecosystem and the Robonomics Web Services (RWS)"
+abstract: "This article delves into the connection between Robonomics platform, its parachain on the Polkadot ecosystem and the Robonomics Web Services (RWS)"
+---
 
-Taking into account the never-ending discussions on the backbone operation of Robonomics, let’s investigate the under the hood structure and outline the main pillars of the network. This article delves into the connection between [Robonomics platform](https://github.com/airalab), its [parachain](https://blog.aira.life/robonomics-parachain-on-kusama-40853780c709) on the Polkadot ecosystem and the [Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42) (RWS).
+Taking into account the never-ending discussions on the backbone operation of Robonomics, let’s investigate the under the hood structure and outline the main pillars of the network. This article delves into the connection between Robonomics platform, its [parachain](https://blog.aira.life/robonomics-parachain-on-kusama-40853780c709) on the Polkadot ecosystem and the [Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42) (RWS).
 
 The Robonomics Network consists of multiple [repositories of code](https://github.com/airalab) that can be used separately in implementation of a fully-fledged IoT application. If you plan on connecting your smartphone for example to an IoT device, it is not enough to develop an app and link a bunch of sensors to it. Instead, you have to carry out a [chain of actions](https://blog.aira.life/simple-iot-scheme-990224363803) that will eventually lead to a connected IoT device and interconnected elements of the infrastructure, enabling the signal from the device to reach you.
-
-![The chronology of the Robonomics Network development](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-logo.jpg)
 
 ## The chronology of the Robonomics Network development
 
 So how did the idea to create the [Robonomics parachain](https://parachain.robonomics.network/#/explorer) and [Robonomics Network](https://robonomics.network/land/say-hello-to-robonomics/) came about? Originally, back in 2015–2017, we started with the development of a quite complicated solution we called the [Economy of Robots](https://blog.aira.life/the-first-in-the-economy-of-robots-6f4bb115643b). We are confident it is exactly what smart cities, industry 4.0 and the development of the IoT apps will come to.
 
 Our primary goal was to create software for cyber-physical systems that can manage autonomous and independent devices within the technical and economic transactions framework. Therefore, we decided to generate a technical and economy biased transaction and make it serve as a foundation for the development of more complicated processes.
-
-![DAO IPCI](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network.jpg)
 
 One of my favourite scenarios of the Economy of Robots is called [Smart Building Offsetting](https://new.dapp.ipci.io/#/offsetting). It is a service that allows an autonomous building to collect and aggregate information on its energy consumption and then communicate it to another agent within the Robonomics Network, and even request carbon footprint offset services. In turn, the agent verifies the location of the building, works out an applicable coefficient of CO2 emissions and then synchronizes this data with a partner project [DAO IPCI](http://ipci.io/), to determine the number of carbon credits from the green finance market that are required to offset the building’s carbon footprint. These operations were successfully executed on the Ethereum blockchain.
 
@@ -22,7 +26,8 @@ Today, the Economy of Robots that we managed to build back in 2017 with our coll
 
 When you start to understand the nuances behind the development of an IoT application, it quickly becomes apparent that technical specialists must spend years to reach a fully functioning product stage. This is why we decided to turn potential users of our platform into co-developers. We focused on teaching them to become professional IT engineers in the IoT application space and as a result, we created Robonomics parachain and Robonomics Web Services.
 
-![RWS](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-rws.jpg)
+![DAO IPCI with Robonomics network](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network.jpg)
+
 
 ## Introduction to Robonomics Web Services
 
@@ -30,28 +35,29 @@ It is clear that the Economy of Robots is interesting to the public. Nevertheles
 
 Therefore, we decided that a range of real services must be provided to our potential users. Services similar to what other cloud platforms are offering but better. As a result, we created Robonomics Web Services, a product built on our in-house protocols and platform that uses an open-source robotics framework (ROS). We then dedicated 2 years to the development of the key functions that I will now delve into in greater detail.
 
-The key functions of RWS:
-1) ***Subscription.***  
-   
-    The standard approach to blockchain services always includes transaction costs known as transaction fees or transaction gas. This means that when you make a transaction, its priority is dependent on the cost or fee that you are ready to pay for it. The higher the fee you pay, the faster your transaction will be processed. Such a model is not suitable for systems that rely on guaranteed bandwidth. You have to be absolutely sure that your device will be able to make a transaction at the set time and a predictable cost. This is something we don’t see often today, as transaction costs are fully dependent on the fluctuation of the exchange rates, at times reaching $50 in cost.
+### The key functions of RWS:
 
-    To resolve this issue, we have created a Subscription service, which is an alternative cost model on the Robonomics parachain for Polkadot. It guarantees execution of a prepaid number of transactions and assigns them a higher priority compared to transactions that are paid through fee model. To learn more about the difference between monthly Subscription and XRT tokens you can revert to my ‘[Heterogeneous tokenomics](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855)’ article, whilst my other piece planned to be released at the end of December will outline the final architecture and interconnection of the two models.
+**1. Subscription**
 
-    Our Subscription model does not only solve the guaranteed transitioning problem but also only costs $10 per device, making it an extremely profitable offering for the end-user. Moreover, it provides a stable bandwidth for thousands of monthly transactions, which is quite a stellar achievement.
+The standard approach to blockchain services always includes transaction costs known as transaction fees or transaction gas. This means that when you make a transaction, its priority is dependent on the cost or fee that you are ready to pay for it. The higher the fee you pay, the faster your transaction will be processed. Such a model is not suitable for systems that rely on guaranteed bandwidth. You have to be absolutely sure that your device will be able to make a transaction at the set time and a predictable cost. This is something we don’t see often today, as transaction costs are fully dependent on the fluctuation of the exchange rates, at times reaching $50 in cost.
 
-2) ***Launch.***
+To resolve this issue, we have created a Subscription service, which is an alternative cost model on the Robonomics parachain for Polkadot. It guarantees execution of a prepaid number of transactions and assigns them a higher priority compared to transactions that are paid through fee model. To learn more about the difference between monthly Subscription and XRT tokens you can revert to my ‘[Heterogeneous tokenomics](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855)’ article, whilst my other piece planned to be released at the end of December will outline the final architecture and interconnection of the two models.
 
-    Launch is a very simple but economical function from the usage of computing power and blockchain point of view. It allows you to turn on or off your device and change its binary setting from 1 to 0 and back by sending a request to it in the form of a transaction. Since there isn’t much complexity attached to this function, let’s move to the next critical pillar.
+Our Subscription model does not only solve the guaranteed transitioning problem but also only costs $10 per device, making it an extremely profitable offering for the end-user. Moreover, it provides a stable bandwidth for thousands of monthly transactions, which is quite a stellar achievement.
 
-3) ***Datalog.***
+**2. Launch**
 
-    This function works with telemetry and therefore requires me to expand on it. It works in two modes where you either save your IPFS hashes or store data on the chain.
+Launch is a very simple but economical function from the usage of computing power and blockchain point of view. It allows you to turn on or off your device and change its binary setting from 1 to 0 and back by sending a request to it in the form of a transaction. Since there isn’t much complexity attached to this function, let’s move to the next critical pillar.
 
-    So how do you use these modes? The on-chain datalog function is applicable when your data size is below four variables. There is simply no point in saving a chunk of data this small on IPFS (off chain), as bytes wise this on-chain log won’t be incrementally larger than the IPFS hash. We suggest recording the entire raw data inflow as a single function or opting for the IPFS hash. Then, Robonomics as a platform for developers will process the recorded data, be it raw or in form of an IPFS hash and decide where to write it to. This datalog processing will be hidden from the end-user and he/she won’t even notice the difference between two different types of storage.
+**3. Datalog**
 
-    ‘Liability’ is our final function but it won’t be released to the public until we know the goals that large scale Economy of Robots projects pursue. Another milestone product for us that we are working on is aimed at [Robot as a Service](https://blog.aira.life/what-is-robonomics-network-robot-as-a-service-and-future-parachain-of-polkadot-or-something-more-36deece9f3cb) framework, or as we call it, the ‘contractually obliged robot’ on Ethereum. [This infrastructure](https://blog.aira.life/robots-under-robonomics-control-overview-39337ac9fbbb) has already been described in full detail in our knowledge hub and implies a situation where the end-user uses our service tokens without relying on XRT or other tokens to pay for parachain usage.
+This function works with telemetry and therefore requires me to expand on it. It works in two modes where you either save your IPFS hashes or store data on the chain.
 
-![DAPP](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-dapp.jpg)
+So how do you use these modes? The on-chain datalog function is applicable when your data size is below four variables. There is simply no point in saving a chunk of data this small on IPFS (off chain), as bytes wise this on-chain log won’t be incrementally larger than the IPFS hash. We suggest recording the entire raw data inflow as a single function or opting for the IPFS hash. Then, Robonomics as a platform for developers will process the recorded data, be it raw or in form of an IPFS hash and decide where to write it to. This datalog processing will be hidden from the end-user and he/she won’t even notice the difference between two different types of storage.
+
+‘Liability’ is our final function but it won’t be released to the public until we know the goals that large scale Economy of Robots projects pursue. Another milestone product for us that we are working on is aimed at [Robot as a Service](https://blog.aira.life/what-is-robonomics-network-robot-as-a-service-and-future-parachain-of-polkadot-or-something-more-36deece9f3cb) framework, or as we call it, the ‘contractually obliged robot’ on Ethereum. [This infrastructure](https://blog.aira.life/robots-under-robonomics-control-overview-39337ac9fbbb) has already been described in full detail in our knowledge hub and implies a situation where the end-user uses our service tokens without relying on XRT or other tokens to pay for parachain usage.
+
+![The key functions of Robonomics Web Services (RWS)](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-rws.jpg)
 
 ## What is the connection between RWS and the Economy of Robots?
 
@@ -69,8 +75,6 @@ This is why our parachain on the Robonomics Network doesn’t only offer the afo
 
 We are developing this feature to let users build their own Digital Twins, interpret them on web services/IoT apps and most importantly save them as a model that will write the datalog. Our [Wiki](http://wiki.robonomics.network/) is being constantly updated with all the required knowledge to execute the aforementioned solutions and will soon be complete with basic information that explains a Digital Twin build from A to Z.
 
-![Robonomics Network](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network-2.jpg)
-
 ### Applying Digital Twins
 
 Once the data processing model is finalised and your Digital Twin is fully structured, you have to decide what will be its relation to the web service or an IoT application.
@@ -81,12 +85,16 @@ Now, we shift to a complex scenario of Smart Building Offsetting, where a copy o
 
 We gathered such services in a specialised [marketplace](https://dapp.robonomics.network/#/services) that acts as an App Store for robots.
 
+![Decentrilized application, dapp in Robonomics network](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-dapp.jpg)
+
 ## Understanding the Marketplace
 In order to implement a model of interconnected digital twins and services, we must create a delivery medium for it or in other words an app on your smartphone. This marketplace, built on a decentralised ledger in face of decentralised applications, can be used to duplicate and create individual copies and digital twins for any required purpose out there via predefined templates. Most importantly, this is done without intermediaries and external storage, making our IoT services marketplace censor and centralized link free.
 
 Last but not least, let’s talk about the user interface. We strive to always offer our users most up to date online technologies and therefore grant access to decentralized applications. The greatest feature you get during the development of your Dapp, is the lack of vulnerabilities on your side. Whilst your app is on IPFS, it is connected to the ENS registry or the Polkadot ecosystem registry and hence the user is not faced with the vulnerability of dealing with a substituted app or a request when following the hyperlink. It is simply very convenient from the point of view of end-user application development and its maintenance.
 
 Another advantage of decentralised applications is peer-to-peer communication. In other words, your app can communicate to its digital twin, the IoT service and the end-user application without a single point of signal decline, eliminating the need for third parties and intermediary resources when a task needs to be executed. This is what the [robonomics.js](https://github.com/airalab/robonomics-js) is for, used in the development of [Dapp Robonomics](https://dapp.robonomics.network/#/). We are currently in the process of adding a new iteration of improvements and will soon release a Robonomics Stylebook (an interface guide based on web3.js and polkadot.js functions), leaving you with an easy job of structuring your application right. As a result, we complete the full Economy of Robots chain.
+
+![Robonomics Network](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network-2.jpg)
 
 ## Summary
 * Our goal is to make [robots part of the economy](https://blog.aira.life/the-first-in-the-economy-of-robots-6f4bb115643b) but first, we need to teach the user on how everything works and set up.
