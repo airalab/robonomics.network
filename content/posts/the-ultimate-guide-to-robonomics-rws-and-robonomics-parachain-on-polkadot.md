@@ -12,7 +12,7 @@ So how did the idea to create the [Robonomics parachain](https://parachain.robon
 
 Our primary goal was to create software for cyber-physical systems that can manage autonomous and independent devices within the technical and economic transactions framework. Therefore, we decided to generate a technical and economy biased transaction and make it serve as a foundation for the development of more complicated processes.
 
-![DAO IPCI](/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network.jpg)
+![DAO IPCI](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network.jpg)
 
 One of my favourite scenarios of the Economy of Robots is called [Smart Building Offsetting](https://new.dapp.ipci.io/#/offsetting). It is a service that allows an autonomous building to collect and aggregate information on its energy consumption and then communicate it to another agent within the Robonomics Network, and even request carbon footprint offset services. In turn, the agent verifies the location of the building, works out an applicable coefficient of CO2 emissions and then synchronizes this data with a partner project [DAO IPCI](http://ipci.io/), to determine the number of carbon credits from the green finance market that are required to offset the building’s carbon footprint. These operations were successfully executed on the Ethereum blockchain.
 
