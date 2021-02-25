@@ -4,7 +4,7 @@ Taking into account the never-ending discussions on the backbone operation of Ro
 
 The Robonomics Network consists of multiple [repositories of code](https://github.com/airalab) that can be used separately in implementation of a fully-fledged IoT application. If you plan on connecting your smartphone for example to an IoT device, it is not enough to develop an app and link a bunch of sensors to it. Instead, you have to carry out a [chain of actions](https://blog.aira.life/simple-iot-scheme-990224363803) that will eventually lead to a connected IoT device and interconnected elements of the infrastructure, enabling the signal from the device to reach you.
 
-![The chronology of the Robonomics Network development](/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-logo.jpg)
+![The chronology of the Robonomics Network development](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-logo.jpg)
 
 ## The chronology of the Robonomics Network development
 
@@ -22,7 +22,7 @@ Today, the Economy of Robots that we managed to build back in 2017 with our coll
 
 When you start to understand the nuances behind the development of an IoT application, it quickly becomes apparent that technical specialists must spend years to reach a fully functioning product stage. This is why we decided to turn potential users of our platform into co-developers. We focused on teaching them to become professional IT engineers in the IoT application space and as a result, we created Robonomics parachain and Robonomics Web Services.
 
-![RWS](/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-rws.jpg)
+![RWS](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-rws.jpg)
 
 ## Introduction to Robonomics Web Services
 
@@ -51,7 +51,7 @@ The key functions of RWS:
 
     ‘Liability’ is our final function but it won’t be released to the public until we know the goals that large scale Economy of Robots projects pursue. Another milestone product for us that we are working on is aimed at [Robot as a Service](https://blog.aira.life/what-is-robonomics-network-robot-as-a-service-and-future-parachain-of-polkadot-or-something-more-36deece9f3cb) framework, or as we call it, the ‘contractually obliged robot’ on Ethereum. [This infrastructure](https://blog.aira.life/robots-under-robonomics-control-overview-39337ac9fbbb) has already been described in full detail in our knowledge hub and implies a situation where the end-user uses our service tokens without relying on XRT or other tokens to pay for parachain usage.
 
-![DAPP](/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-dapp.jpg)
+![DAPP](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-dapp.jpg)
 
 ## What is the connection between RWS and the Economy of Robots?
 
@@ -69,7 +69,7 @@ This is why our parachain on the Robonomics Network doesn’t only offer the afo
 
 We are developing this feature to let users build their own Digital Twins, interpret them on web services/IoT apps and most importantly save them as a model that will write the datalog. Our [Wiki](http://wiki.robonomics.network/) is being constantly updated with all the required knowledge to execute the aforementioned solutions and will soon be complete with basic information that explains a Digital Twin build from A to Z.
 
-![Robonomics Network](/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network-2.jpg)
+![Robonomics Network](./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network-2.jpg)
 
 ### Applying Digital Twins
 

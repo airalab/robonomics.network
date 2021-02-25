@@ -1,6 +1,6 @@
 # Robonomics Web Services and RWS token intro
 
-![Robonomics Web Services (RWS)](/images/robonomics-web-services-and-rws-token-intro/logo.jpeg)
+![Robonomics Web Services (RWS)](./images/robonomics-web-services-and-rws-token-intro/logo.jpeg)
 
 **Robonomics Web Services (RWS)** is decentralized infrastructure services over IPFS, Ethereum, and Polkadot for Robotics and IoT. For industrial, consumer, and commercial solutions.
 
