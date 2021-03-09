@@ -257,11 +257,11 @@ query {
 
 
     h1 {
-      --entertext: 15s;
-      --enteropacity: .7;
+      --entertext: 10s;
+      --enteropacity: 0;
       // --enterfunc: cubic-bezier(0.4, 0.84, 0.44, 1);
       --enterfunc: linear;
-      --entercolorstart: var(--color-red);
+      --entercolorstart: rgba(255,255,255);
       --entercolor: #fff;
       --stateNA: scaleY(0);
       --stateA: scale(1);
@@ -675,8 +675,8 @@ query {
       return {
         entrance: true,
         calendar: true,
-        recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
-        // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
+        // recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
+        recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
       }
     },
 
