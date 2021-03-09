@@ -47,8 +47,7 @@ h1 {
   text-align: center;
 }
 
-// h1:not(.clean), .text-gradient {
-.text-gradient {
+h1:not(.clean), .text-gradient {
   display: inline-block;
   background: linear-gradient(to right , var(--color-green), #11a075, #5DC0DF, #355bd6, #5DC0DF, #11a075, var(--color-green));
   -webkit-background-clip: text;

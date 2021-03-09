@@ -98,6 +98,7 @@ query {
 
 	background-color: var(--color-gray-light);
 	border: var(--screen-padding) solid var(--body-bg);
+  border-bottom-width: 1rem; 
 
 	overflow-y: scroll;
 	&::-webkit-scrollbar { display: none; }
