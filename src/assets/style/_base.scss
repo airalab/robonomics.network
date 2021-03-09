@@ -5,18 +5,12 @@ body, html{
 }
 
 html{
-	font-size: 100%;
-
-	// @media screen and (min-width: 1600px) {
-	// 	font-size: 110%;
-	// }
-
 	* { transition: all 0.2s linear; }
 }
 
 
 body {
- 	background-color: var(--body-bg);
+ 	// background-color: var(--body-bg);
  	color: var(--text-color);
  	transition: color .6s, background-color .6s;
  	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;

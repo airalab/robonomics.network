@@ -92,6 +92,23 @@ query {
   }
 
 .screen {
+  height: 100%;
+	overflow: hidden;
+	position: relative;
+
+	background-color: var(--color-gray-light);
+	border: var(--screen-padding) solid var(--body-bg);
+
+	overflow-y: scroll;
+	&::-webkit-scrollbar { display: none; }
+	scrollbar-width: none;
+
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">\
+			<text x="30" y="30" font-size="12" style="fill:#ccc">•</text>\
+			</svg>');
+			background-size: 60px 60px;
+
+
   .banner {
     display: block;
 
