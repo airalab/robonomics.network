@@ -680,12 +680,12 @@ query {
       }
     },
 
-    mounted() {
+    beforeMount() {
       this.cookieEntrance();
       this.cookieCalendar();
     },
 
-    updated() {
+    mounted() {
       this.scale();
       window.addEventListener('load', this.scale);
       window.addEventListener('resize', this.scale);
@@ -706,7 +706,6 @@ query {
       //for scaling animation 'Hands'
       scaleRatio(parent, element){
         var ratio = (document.querySelector(parent).offsetWidth / document.querySelector(element).offsetWidth).toFixed(2)*0.9;
-
         document.querySelector(element).style.transform = 'scale(' + ratio +')';
       },
 
