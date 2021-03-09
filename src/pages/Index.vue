@@ -23,7 +23,7 @@
 
       <div class="layout__title">
         <h1 v-html="$static.metadata.siteName" itemprop="name"/>
-        <p class="text-gradient" itemprop="description" v-html="$static.metadata.siteDescription" />
+        <p itemprop="description" v-html="$static.metadata.siteDescription" />
       </div>
 
       <section class="homepage__description">
@@ -99,11 +99,28 @@ query {
 </static-query>
 
 <style lang="scss" scoped>
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 4rem;
+    }
+
+    @media screen and (min-width: 1600px) {
+      margin-top: 2.5rem;
+    }
+  }
+
   p[itemprop="description"]{
-    font-size: 110%;
     max-width: 700px;
     margin: 0 auto;
     font-family: var(--font-family-code);
+
+    @media screen and (max-width: 1000px) {
+      margin-top: var(--space);
+      margin-bottom: calc(var(--space)*2);
+    }
   }
 
   .calendar {
@@ -207,7 +224,6 @@ query {
     visibility: hidden;
     opacity: 0;
     animation: FadeIn 0.4s ease-in 1s forwards;
-    // padding-bottom: 60px;
    
     &__description{
       position: relative;
@@ -218,23 +234,6 @@ query {
      .roboHands{
         top: 5rem;
         pointer-events: none;
-    }
-
-    h1 {
-      font-size: 4rem;
-      margin-bottom: 0;
-
-      @media screen and (max-width: 1000px) {
-        font-size: 3rem;
-      }
-
-      @media screen and (max-width: 700px) {
-        font-size: 2rem;
-      }
-
-      @media screen and (min-width: 1600px) {
-        font-size: 5rem;
-      }
     }
     
   }
@@ -276,6 +275,7 @@ query {
       animation: EnterTextShade var(--entertext) var(--enterfunc) forwards;
 
       font-family: var(--font-family-code);
+      font-size: 3rem;
       letter-spacing: 10px;
       
       position: absolute;

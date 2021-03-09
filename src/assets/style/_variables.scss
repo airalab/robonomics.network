@@ -1,6 +1,6 @@
 body {
 
-	--base-font-size: 1.1rem;
+	--base-font-size: 1.2rem;
 	--font-family: 'Roboto', Arial, Helvetica, sans-serif;
     --font-family-code: 'Roboto Mono', monospace;
 
@@ -27,22 +27,22 @@ body {
 
   --space: 2rem;
   --space-text: 2rem;
-  --content-width: 720px;
+  --content-width: 45rem;
   --text-width: 980px;
 
   --screen-padding: calc( var(--space) * 1.5 );
 }
 
-@media screen and (max-width: 720px) {
-	body {
-		--space: 1.5rem;
-		--base-font-size: 0.9rem;
-	}
-}
+// @media screen and (max-width: 720px) {
+// 	body {
+// 		--space: 1.5rem;
+// 		--base-font-size: 0.9rem;
+// 	}
+// }
 
-@media screen and (max-width: 350px) {
-	body {
-		--space: 1rem;
-		--base-font-size: 0.8rem;
-	}
-}
+// @media screen and (max-width: 350px) {
+// 	body {
+// 		--space: 1rem;
+// 		--base-font-size: 0.8rem;
+// 	}
+// }

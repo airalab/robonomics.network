@@ -57,25 +57,5 @@ section{
 	opacity: 0;
 }
 
-.screen{
-	height: 100%;
-	overflow: hidden;
-	position: relative;
-
-	background-color: var(--color-gray-light);
-	border: var(--screen-padding) solid var(--body-bg);
-
-	overflow-y: scroll;
-	&::-webkit-scrollbar { display: none; }
-	scrollbar-width: none;
-
-
-	// 	// background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
-	// 	// 		<text y=".9em" font-size="5">👌</text>\
-	// 	// 		</svg>');
-	// 	// 		background-size: 40px 40px;
-	// }
-}
-
 .m-space-left { margin-left: var(--space); }
 .m-space-right { margin-right: var(--space); }
