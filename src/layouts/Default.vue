@@ -45,7 +45,7 @@ query {
     position: fixed;
     top: var(--logo-padding);
     left: var(--logo-padding);
-    right: var(--screen-padding);
+    right: var(--screen-padding-right);
     z-index:1000;
 
     display: flex;
@@ -55,7 +55,7 @@ query {
     background-color: var(--body-bg);
 
     &-logo {
-      width: calc( var(--screen-padding) - var(--logo-padding));
+      width: calc( var(--screen-padding-left) - calc(var(--logo-padding)*1.5));
       background-color: var(--body-bg);
 
       a, img { display: block; }
@@ -97,17 +97,18 @@ query {
 	position: relative;
 
 	background-color: var(--color-gray-light);
-	border: var(--screen-padding) solid var(--body-bg);
-  border-bottom-width: 1rem; 
+	border-style: solid;
+  border-color: var(--body-bg);
+  border-width: var(--screen-padding-top) var(--screen-padding-right) var(--screen-padding-bottom) var(--screen-padding-left);
 
 	overflow-y: scroll;
 	&::-webkit-scrollbar { display: none; }
 	scrollbar-width: none;
 
-	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">\
-			<text x="30" y="30" font-size="12" style="fill:#ccc">•</text>\
-			</svg>');
-			background-size: 60px 60px;
+	// background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">\
+	// 		<text x="30" y="30" font-size="12" style="fill:#ccc">•</text>\
+	// 		</svg>');
+	// 		background-size: 60px 60px;
 
 
   .banner {

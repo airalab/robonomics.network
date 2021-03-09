@@ -26,8 +26,8 @@
 
 .sidetext-left {
     position:  fixed;
-    left: calc(var(--screen-padding)/4);
-    bottom: calc(var(--screen-padding)/1.8);
+    left: calc(var(--screen-padding-left)/4);
+    bottom: calc(var(--screen-padding-bottom)/1.8);
 
     transform: rotate(-90deg);
     transform-origin: 0 0;
@@ -40,9 +40,13 @@
 
   .msg{
     position: fixed;
-    bottom: calc( var(--screen-padding) + 1rem );
-    right: calc( var(--screen-padding) + 0.6rem );
-    max-width: calc( 100% - 2*(var(--screen-padding) + 0.4rem) ) ;
+    bottom: calc( var(--screen-padding-bottom) + 1rem );
+    right: calc( var(--screen-padding-right) + 0.6rem );
+    max-width: calc( 100% - 2*(var(--screen-padding-left) + 0.4rem) ) ;
+
+    visibility: hidden;
+    opacity: 0;
+    animation: FadeIn 0.2s ease-in 0.7s forwards;
 
     &__solid {
       padding: 0.4rem;
