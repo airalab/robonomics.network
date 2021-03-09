@@ -242,17 +242,17 @@ query {
   .homepage-entrance {
     position: fixed;
     z-index: 1000;
-    top: var(--screen-padding);
-    left: var(--screen-padding);
-    right: var(--screen-padding);
-    bottom: var(--screen-padding);
+    top: var(--screen-padding-top);
+    left: var(--screen-padding-left);
+    right: var(--screen-padding-right);
+    bottom: var(--screen-padding-bottom);
 
     // background: linear-gradient(-40deg, #000066 0 70%, #6699FF 70% 100%);
     background: linear-gradient(#000066, #6699FF);
 
     visibility: hidden;
     opacity: 0;
-    animation: FadeIn 0.4s ease-in 0.5s forwards;
+    animation: FadeIn 0.2s ease-in 0.5s forwards;
 
 
     h1 {
@@ -683,6 +683,8 @@ query {
     mounted() {
       this.cookieEntrance();
       this.cookieCalendar();
+
+      // console.log(window.screen.width);
     },
 
     updated() {

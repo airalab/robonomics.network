@@ -30,7 +30,10 @@ body {
   --content-width: 45rem;
   --text-width: 980px;
 
-  --screen-padding: calc( var(--space) * 1.5 );
+  --screen-padding-top: calc( var(--space) * 1.5 );
+  --screen-padding-right: 1rem;
+  --screen-padding-bottom: 1rem;
+  --screen-padding-left: calc( var(--space) * 1.5 );
 }
 
 // @media screen and (max-width: 720px) {
