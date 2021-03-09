@@ -15,13 +15,6 @@
       </header>
 
       <div class="screen-content">
-        <!--<a class="banner" href="http://localhost:8083/blog/winter-robonomics-school/" v-if="BannerLink('/blog/winter-robonomics-school/')">-->
-        <a class="banner" href="/blog/winter-robonomics-school/">
-          <g-image src="~/assets/images/banners/wschool-video.png" class="hovercontent"/>
-          <span>Robonomics winter school 10 - 24 February 2021</span>
-          <g-image src="~/assets/images/banners/wschool-video.png" class="hovercontent"/>
-        </a>
-      
         <slot/>
         <ClientOnly> <Footer/> </ClientOnly>
       </div>
