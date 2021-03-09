@@ -680,12 +680,12 @@ query {
       }
     },
 
-    beforeMount() {
+    mounted() {
       this.cookieEntrance();
       this.cookieCalendar();
     },
 
-    mounted() {
+    updated() {
       this.scale();
       window.addEventListener('load', this.scale);
       window.addEventListener('resize', this.scale);
