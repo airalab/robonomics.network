@@ -1,19 +1,19 @@
 <template>
 	<nav class="menu oldy" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
 		<div>
-      <g-link to="/community" itemprop="url"><span itemprop="name">Enter the Robonomics</span></g-link>
+      <a href="/community" itemprop="url"><span itemprop="name">Enter the Robonomics</span></a>
       <p>All you need to know is here: white paper, roadmap, token, assets, chat and other social links.</p> 
     </div>
     <div>
-      <g-link to="https://github.com/airalab/robonomics/releases" target="_blank" itemprop="url"><span itemprop="name">Github Releases</span></g-link>
+      <a href="https://github.com/airalab/robonomics/releases" target="_blank" itemprop="url" rel="noopener"><span itemprop="name">Github Releases</span></a>
       <p>Build technical && economic transactions in Polkadot/Ethereum blockchain with robots using opensource Robonomics framework.</p>
     </div>
 		<div>
-      <g-link to="https://wiki.robonomics.network" target="_blank" itemprop="url"><span itemprop="name">WIKI for devs</span></g-link>
+      <a href="https://wiki.robonomics.network" target="_blank" itemprop="url" rel="noopener"><span itemprop="name">WIKI for devs</span></a>
       <p>Robonomics network quick start: installation and setting up guides, examples, glossary.</p>
     </div>
 		<div>
-      <g-link to="https://dapp.robonomics.network" target="_blank" itemprop="url"><span itemprop="name">DApp tools</span></g-link>
+      <a href="https://dapp.robonomics.network" target="_blank" itemprop="url" rel="noopener"><span itemprop="name">DApp tools</span></a>
       <p>Decentralized application with variety of Robonomics tools: swapping tokens, telemetry, working services, parachain etc.</p>
     </div>
     
