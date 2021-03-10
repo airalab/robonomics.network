@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
-  margin-bottom: calc(var(--space)*2);
+  margin-bottom: var(--space);
   font-weight: 400;
   text-align: center;
 }
