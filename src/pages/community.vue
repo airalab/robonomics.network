@@ -28,28 +28,34 @@
               <div class="section oldy token">
                 <div class="section token__title">
                   <img alt="Robonomics token, XRT image" src="/Robonomics-Token-XRT-color.svg" class="token__sign"/>
-                  <h4>Robonomics token, XRT</h4>
+                  <h2>Robonomics token, XRT</h2>
                 </div>
 
                 <div class="section">
-                    <small>Token address:</small><br/>
+                    <h3>Token address:</h3>
                     <p class="line-text">
-                      <code class="address">0x7de91b204c1c737bcee6f000aaa6569cf7061cb7</code>
-                      <IconCopy address="0x7de91b204c1c737bcee6f000aaa6569cf7061cb7"/>
-                      <IconEtherscan address="0x7de91b204c1c737bcee6f000aaa6569cf7061cb7"/>
+                      <g-link class="inline-block" to="https://etherscan.io/address/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7">Etherscan:</g-link>
+                      <code class="address inline-block">0x7de91b204c1c737bcee6f000aaa6569cf7061cb7</code>
+                      <IconCopy class="inline-block" address="0x7de91b204c1c737bcee6f000aaa6569cf7061cb7"/>
+                    </p>
+                    <p class="line-text">
+                      <g-link class="inline-block" to="https://bscscan.com/token/0xc0a51ac9d548bdcde53fa59448029e41a39feb20">BscScan:</g-link>
+                      <code class="address inline-block">0xc0a51ac9d548bdcde53fa59448029e41a39feb20</code>
+                      <IconCopy class="inline-block" address="0xc0a51ac9d548bdcde53fa59448029e41a39feb20"/>
                     </p>
                 </div>
 
                 <div class="section">
-                  <small>XRT/ETH pair:</small><br/>
+                  <h3>XRT/ETH pair:</h3>
                   <p><g-link to="https://uniswap.info/pair/0x3185626c14acb9531d19560decb9d3e5e80681b1">Uniswap</g-link></p>
                   <p><g-link to="https://www.coingecko.com/en/coins/robonomics-network/">Сoingecko</g-link></p>
                 </div>
 
                 <div class="section">
-                  <small>Quick intro to XRT:</small><br/>
+                  <h3>Quick intro to XRT:</h3>
                   <p><g-link to="https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf">Theory in White Paper, Chapter 6</g-link></p>
                   <p><g-link to="https://ipfs.io/ipfs/QmZjzJbZDhs7B3YhtRkvdg4jp6qpfkVGB67w7vH2nJBUrE/Robonomics_token_Polkadot_KUSAMA_stage_details_september_2020.pdf">Distribution Release September 2020</g-link></p>
+                  <p><g-link to="https://blog.aira.life/robonomics-x-pancakeswap-buy-and-add-liquidity-on-pancakeswap-a1b87ef9cb99">Robonomics x PancakeSwap: Buy and Add Liquidity on PancakeSwap</g-link></p>
                 </div>
               </div>
 
@@ -57,32 +63,32 @@
               <div class="section oldy token">
                 <div class="section token__title">
                   <img alt="Robonomics Web Services, RWS image" src="/Robonomics-Token-RWS-color.svg" class="token__sign"/>
-                  <h4>RWS Lifetime Subscription</h4>
+                  <h2>RWS Lifetime Subscription</h2>
                 </div>
 
                 <div class="section">
-                    <small>Token address:</small><br/>
+                    <h3>Token address:</h3>
                     <p class="line-text">
-                      <code class="address">0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802</code>
-                      <IconCopy address="0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802"/>
-                      <IconEtherscan address="0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802"/>
+                      <g-link class="inline-block" to="https://etherscan.io/address/0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802">Etherscan:</g-link>
+                      <code class="inline-block address">0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802</code>
+                      <IconCopy class="inline-block" address="0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802"/>
                     </p>
                 </div>
 
                 <div class="section">
-                    <small>RWS/XRT pair:</small><br/>
+                    <h3>RWS/XRT pair:</h3>
                     <g-link to="https://uniswap.info/pair/0x42018a2ff89b6d662b5f746277bd02f0d85f485a">Uniswap</g-link>
                 </div>
 
                 <div class="section">
-                    <small>Quick intro to RWS:</small><br/>
+                    <h3>Quick intro to RWS:</h3>
                     <p><g-link to="https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42">Robonomics Web Services and RWS token intro</g-link></p>
                     <p><g-link to="https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855">RWS overview, part 2 “Heterogeneous tokenomics”</g-link></p>
                 </div>
               </div>
 
               <section>
-                <h3>Beware of scammers</h3>
+                <h2>Beware of scammers</h2>
                 <ol>
                   <li>Check the address of token while buying. Do not copy the address from chats or any private messages, view it on Etherscan.</li>
                   <li>Please, check the information about rewards from official channels: <g-link to="https://www.robonomics.events/#/">robonomics.events</g-link> or <g-link to="https://twitter.com/AIRA_Robonomics">Twitter</g-link></li>
@@ -172,7 +178,23 @@
       display: block;
       max-width: 100%;
       width: 10rem;
-      margin: 0 auto;
+      margin: 0 auto calc(var(--space)/2);
+    }
+
+    .section {
+      padding: calc(var(--space)/2) 0 var(--space-text);
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--border-color);
+      }
+    }
+
+    h2, h3 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: calc(var(--space-text)/2);
     }
   }
 
