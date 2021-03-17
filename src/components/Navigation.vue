@@ -2,6 +2,7 @@
 	<nav class="menu oldy" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
 		<div>
       <a href="/community" itemprop="url"><span itemprop="name">Enter the Robonomics</span></a>
+      <!-- <a href="/community" itemprop="url"><g-image src="~/assets/images/1.gif" style="width: 25px; margin-right:15px"/><span itemprop="name">Enter the Robonomics</span></a> -->
       <p>All you need to know is here: white paper, roadmap, token, assets, chat and other social links.</p> 
     </div>
     <div>
