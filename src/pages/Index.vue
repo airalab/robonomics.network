@@ -115,7 +115,7 @@ query {
   p[itemprop="description"]{
     max-width: 700px;
     margin: 0 auto;
-    font-family: var(--font-family-code);
+    // font-family: var(--font-family-code);
 
     @media screen and (max-width: 1000px) {
       margin-top: var(--space);

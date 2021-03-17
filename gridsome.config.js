@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Robonomics Network',
-  siteDescription: 'Secure, сost-effective, and futuristic IoT platform for connecting robotics under Polkadot and Ethereum control',
+  siteDescription: 'Futuristic, secure, and server-less IoT platform on top of Ethereum && Polkadot. Bringing economy of robots into the 4th industrial revolution.',
   siteUrl: 'https://robonomics.network',
 
   titleTemplate: '%s',
