@@ -101,5 +101,5 @@ When Kusama & Ethereum bridges become stable & reliable, Robonomics Developers D
 
 - Robonomics Relay chain validators && collators will share the 1,000,000 XRT inflation as incentives;
 
-- Robonomics developers DAO estimate that 10,000 XRT will be minted in Ethereum as a reward for liability contracts oracles.
+- Robonomics developers DAO estimate that 10,000 XRT will be minted in Ethereum within 1st year after Ethereum 2.0 launch as a reward for liability contracts oracles.
 
