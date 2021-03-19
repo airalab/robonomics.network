@@ -12,8 +12,6 @@ abstract: "Article provides a deep dive into the XRT distribution plan"
 
 The previous Distribution Plan was released by Robonomics developers DAO back in September 2020. It covered a broad vision of the further migration to the Polkadot ecosystem. We find it necessary to provide the community with the updated version of the XRT Distribution Plan for Q2 2021 - Q1 2022 && 2022+.
 
-You can find the .PDF document [here](https://ipfs.io/ipfs/QmYjv65UNTM3F7LFR1ESm5CVMLWYLagwtT7qGAsaBi47nY/releases_March'21_4v.pdf).
-
 The article split into three stages:
 
 - Past (includes an overview of the XRT distribution from Q1 2020 to Q1 2021);
