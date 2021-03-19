@@ -63,7 +63,7 @@ Up to 502,000 XRT will be added to the circulation supply during the Q2 2021 - Q
 
   - Robonomics DAO allocated up to 85,000 XRT for core Robonomics developers grants during Q2 2021 - Q1 2022, [more about the roadmap](https://robonomics.network/blog/roadmap-2021/);
 
-  - Q2 2021 - Q1 2022 community events include:
+  - Robonomics DAO allocated up to 85,000 XRT for Q2 2021 - Q1 2022 community events that include:
 
     - [Liquidity providers incentive program](https://www.robonomics.events/#/liquidity);
 
