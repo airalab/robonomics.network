@@ -63,31 +63,6 @@
     }
 }
 
-.icon-tool{
-  width: 1.5rem;
-  fill: var(--link-color);
-  vertical-align: middle;
-
-  &:hover {
-    fill: var(--link-color-hover);
-  }
-}
-
-.link-copy {
-  svg { display: none; }
-  svg.copy { display: inline-block; }
-}
-
-.link-copy-ok {
-  svg { display: none; }
-  svg.ok { display: inline-block; fill: var(--color-green); }
-}
-
-.link-copy-error {
-  svg { display: none; }
-  svg.error { display: inline-block; fill: var(--color-red); }
-}
-
 
 .line-text > * {
   display: inline-block;

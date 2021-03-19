@@ -1,6 +1,7 @@
 <template>
 
-  <g-link :to="src" :class="classes" :style="{transform: 'scale('+scale+')'}">{{label}}</g-link>
+  <g-link v-if="link" :to="link" :class="classes" :style="{transform: 'scale('+scale+')'}">{{label}}</g-link>
+  <button v-else :class="classes" :style="{transform: 'scale('+scale+')'}">{{label}}</button>
 
 </template>
 
@@ -45,14 +46,14 @@ export default {
       };
     },
 
-    src() {
-      if(this.link) {
-        return this.link;
-      }
-      else {
-        return '#';
-      }
-    }
+  //   src() {
+  //     if(this.link) {
+  //       return this.link;
+  //     }
+  //     else {
+  //       return '#';
+  //     }
+  //   }
   },
 
 }

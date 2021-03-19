@@ -30,10 +30,12 @@ body {
   --content-width: 45rem;
   --text-width: 980px;
 
-  --screen-padding-top: calc( var(--space) * 1.5 );
+  --screen-padding-top: 3rem;
+//   --screen-padding-top: calc( var(--space) * 1.5 );
   --screen-padding-right: 1rem;
   --screen-padding-bottom: 1rem;
-  --screen-padding-left: calc( var(--space) * 1.5 );
+//   --screen-padding-left: calc( var(--space) * 1.5 );
+  --screen-padding-left: 3rem;
 }
 
 // @media screen and (max-width: 720px) {
@@ -43,9 +45,8 @@ body {
 // 	}
 // }
 
-// @media screen and (max-width: 350px) {
-// 	body {
-// 		--space: 1rem;
-// 		--base-font-size: 0.8rem;
-// 	}
-// }
+@media screen and (max-width: 450px) {
+	body {
+		--space: 1.2rem;
+	}
+}
