@@ -1,16 +1,8 @@
 <template>
 	
-  <a href="#" v-on:click.prevent="copy" class="link-copy" title="Copy address">
-    <svg class="icon-tool copy" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-      <g>
-        <g>
-          <path d="M464.9,96.4h-81.4V15c0-8.3-6.7-15-15-15H47.1c-8.3,0-15,6.7-15,15v385.6c0,8.3,6.7,15,15,15h81.4V497c0,8.3,6.7,15,15,15
-            h321.3c8.3,0,15-6.7,15-15V111.4C479.9,103.1,473.2,96.4,464.9,96.4z M62.1,385.6V30h291.3v81.1c0,0.1,0,0.2,0,0.3s0,0.2,0,0.3
-            v273.9H62.1z M449.9,482H158.5v-66.4h209.9c8.3,0,15-6.7,15-15V126.4h66.4V482z"/>
-        </g>
-      </g>
-    </svg>
+  <a href="#" @click.prevent="copy" class="link-copy button primary small" title="Copy address">
+
+    <copy class="icon-tool copy"/>
 
     <svg class="icon-tool ok" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
       <g>
@@ -64,14 +56,18 @@ export default {
             add: this.address
         }
         
-    },
+  },
+
+  components: {
+      copy: () => import('~/assets/images/icons/copy.svg')
+  },
 
   methods: {
 
     copy: function (event) {
       var
         a = this.address,
-        link = event.target.parentElement;
+        link = event.target.closest('a');
 
       navigator.clipboard.writeText(a).then(function() {
 
@@ -99,3 +95,26 @@ export default {
 
 }
 </script>
+
+<style lang="scss" scoped>
+
+  .icon-tool{
+    width: 1.2rem;
+  }
+
+  .link-copy {
+    svg { display: none; }
+    svg.copy { display: block; }
+  }
+
+  .link-copy-ok {
+    svg { display: none; }
+    svg.ok { display: block; }
+  }
+
+  .link-copy-error {
+    svg { display: none; }
+    svg.error { display: block; }
+  }
+
+</style>

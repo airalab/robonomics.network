@@ -9,7 +9,6 @@
 
     <div class="layout__title">
       <h1>Robonomics community</h1>
-      <!--<small>Get involved to Robonomics Network Community: read White paper, science papers, our brochures and other docs; find here information about XRT token; read news from our social accounts, chat with us, get intouch.</small>-->
     </div>
 
     <section class="layout layout__text">
@@ -33,29 +32,40 @@
 
                 <div class="section">
                     <h3>Token address:</h3>
-                    <p class="line-text">
-                      <g-link class="inline-block" to="https://etherscan.io/address/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7">Etherscan:</g-link>
-                      <code class="address inline-block">0x7de91b204c1c737bcee6f000aaa6569cf7061cb7</code>
-                      <IconCopy class="inline-block" address="0x7de91b204c1c737bcee6f000aaa6569cf7061cb7"/>
-                    </p>
-                    <p class="line-text">
-                      <g-link class="inline-block" to="https://bscscan.com/token/0xc0a51ac9d548bdcde53fa59448029e41a39feb20">BscScan:</g-link>
-                      <code class="address inline-block">0xc0a51ac9d548bdcde53fa59448029e41a39feb20</code>
-                      <IconCopy class="inline-block" address="0xc0a51ac9d548bdcde53fa59448029e41a39feb20"/>
-                    </p>
+                    <ul>
+                      <li class="line-text">
+                        <g-link class="inline-block button primary small" to="https://etherscan.io/address/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7">Etherscan:</g-link>
+                        <IconCopy class="inline-block" address="0x7de91b204c1c737bcee6f000aaa6569cf7061cb7"/>
+                        <code class="address inline-block">0x7de91b204c1c737bcee6f000aaa6569cf7061cb7</code>
+                    
+                      </li>
+                      <li class="line-text">
+                        <g-link class="inline-block button primary small" to="https://bscscan.com/token/0xc0a51ac9d548bdcde53fa59448029e41a39feb20">BscScan:</g-link>
+                        <IconCopy class="inline-block" address="0xc0a51ac9d548bdcde53fa59448029e41a39feb20"/> 
+                        <tip summary="☝️" position="center-bottom" class="inline-block">
+                          This token contract is maintained by the <g-link to="https://anyswap.exchange/dashboard">anyswap.exchange team</g-link>. The Robonomics team is not responsible for the issuance of the token in the Binance Smart Chain.
+                        </tip>
+                        <code class="address inline-block">0xc0a51ac9d548bdcde53fa59448029e41a39feb20</code>
+                        
+                      </li>
+                    </ul>
                 </div>
 
                 <div class="section">
                   <h3>XRT/ETH pair:</h3>
-                  <p><g-link to="https://uniswap.info/pair/0x3185626c14acb9531d19560decb9d3e5e80681b1">Uniswap</g-link></p>
-                  <p><g-link to="https://www.coingecko.com/en/coins/robonomics-network/">Сoingecko</g-link></p>
+
+                  <div class="line-text">
+                    <g-link class="button border" to="https://uniswap.info/pair/0x3185626c14acb9531d19560decb9d3e5e80681b1">Uniswap</g-link>
+                    <g-link class="button border" to="https://www.coingecko.com/en/coins/robonomics-network/">Сoingecko</g-link>
+                    <g-link class="button border" to="https://www.huobi.com/ru-ru/exchange/xrt_eth/">Huobi</g-link>
+                  </div>
                 </div>
 
                 <div class="section">
                   <h3>Quick intro to XRT:</h3>
+                  <p><g-link class="button border" to="https://ipfs.io/ipfs/QmYjv65UNTM3F7LFR1ESm5CVMLWYLagwtT7qGAsaBi47nY/releases_March'21_4v.pdf">Distribution Release March 2021</g-link></p>
                   <p><g-link to="https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf">Theory in White Paper, Chapter 6</g-link></p>
-                  <p><g-link to="https://ipfs.io/ipfs/QmZjzJbZDhs7B3YhtRkvdg4jp6qpfkVGB67w7vH2nJBUrE/Robonomics_token_Polkadot_KUSAMA_stage_details_september_2020.pdf">Distribution Release September 2020</g-link></p>
-                  <p><g-link to="https://blog.aira.life/robonomics-x-pancakeswap-buy-and-add-liquidity-on-pancakeswap-a1b87ef9cb99">Robonomics x PancakeSwap: Buy and Add Liquidity on PancakeSwap</g-link></p>
+                  <p><g-link to="https://blog.aira.life/robonomics-x-pancakeswap-buy-and-add-liquidity-on-pancakeswap-a1b87ef9cb99">Buy and Add Liquidity on PancakeSwap</g-link></p>
                 </div>
               </div>
 
@@ -69,15 +79,16 @@
                 <div class="section">
                     <h3>Token address:</h3>
                     <p class="line-text">
-                      <g-link class="inline-block" to="https://etherscan.io/address/0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802">Etherscan:</g-link>
-                      <code class="inline-block address">0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802</code>
+                      <g-link class="inline-block button primary small" to="https://etherscan.io/address/0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802">Etherscan:</g-link>
                       <IconCopy class="inline-block" address="0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802"/>
+                      <code class="inline-block address">0x08ad83d779bdf2bbe1ad9cc0f78aa0d24ab97802</code>
+                      
                     </p>
                 </div>
 
                 <div class="section">
                     <h3>RWS/XRT pair:</h3>
-                    <g-link to="https://uniswap.info/pair/0x42018a2ff89b6d662b5f746277bd02f0d85f485a">Uniswap</g-link>
+                    <g-link class="button border" to="https://uniswap.info/pair/0x42018a2ff89b6d662b5f746277bd02f0d85f485a">Uniswap</g-link>
                 </div>
 
                 <div class="section">
@@ -117,16 +128,6 @@
 
 
 <script>
-
-  import MetaInfo from '~/components/MetaInfo.vue'
-
-  import share from '~/components/Share.vue'
-  import tabs from '~/components/tabs.vue'
-  import tab from '~/components/tab.vue'
-
-  import IconCopy from '~/components/IconCopy.vue'
-  import IconEtherscan from '~/components/IconEtherscan.vue'
-
   import assets from '@/data/assets.yaml'
   import docs from '@/data/docs.yaml'
   import science from '@/data/science.yaml'
@@ -135,13 +136,15 @@
   export default {
 
     components: {
-      MetaInfo,
-      share,
-      tabs,
-      tab,
-      IconCopy,
-      IconEtherscan
+      MetaInfo: () => import('~/components/MetaInfo.vue'),
+      share: () => import('~/components/Share.vue'),
+      tabs: () => import('~/components/tabs.vue'),
+      tab: () => import('~/components/tab.vue'),
+      IconCopy: () => import('~/components/IconCopy.vue'),
+      tip: () => import('~/components/tip.vue'),
     },
+
+
     computed: {
       assets () {
         return assets
@@ -185,7 +188,7 @@
       padding: calc(var(--space)/2) 0 var(--space-text);
 
       &:not(:last-child) {
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 2px dotted var(--color-dark);
       }
     }
 
@@ -193,7 +196,12 @@
       margin-top: 0;
     }
 
-    p {
+    ul {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    li {
       margin-bottom: calc(var(--space-text)/2);
     }
   }
