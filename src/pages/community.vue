@@ -56,8 +56,8 @@
 
                   <div class="line-text">
                     <g-link class="button border" to="https://uniswap.info/pair/0x3185626c14acb9531d19560decb9d3e5e80681b1">Uniswap</g-link>
-                    <g-link class="button border" to="https://www.coingecko.com/en/coins/robonomics-network/">Сoingecko</g-link>
                     <g-link class="button border" to="https://www.huobi.com/ru-ru/exchange/xrt_eth/">Huobi</g-link>
+                    <g-link class="button border" to="https://www.coingecko.com/en/coins/robonomics-network/">Сoingecko</g-link>
                   </div>
                 </div>
 
