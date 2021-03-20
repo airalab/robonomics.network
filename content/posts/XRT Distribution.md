@@ -8,6 +8,10 @@ description: "Article provides a deep dive into the XRT distribution plan"
 abstract: "Article provides a deep dive into the XRT distribution plan"
 ---
 
+Updated XRT distribution plan available at [https://robonomics.network/community#token](https://robonomics.network/community#token)
+
+![HowToGIF](./images/distribution-plan2021/XRTdisthowto.gif)
+
 **Introduction**
 
 The previous Distribution Plan was released by Robonomics developers DAO back in September 2020. It covered a broad vision of the further migration to the Polkadot ecosystem. We find it necessary to provide the community with the updated version of the XRT Distribution Plan for Q2 2021 - Q1 2022 && 2022+.
