@@ -8,13 +8,13 @@ description: "Article provides a deep dive into the XRT distribution plan"
 abstract: "Article provides a deep dive into the XRT distribution plan"
 ---
 
-Updated XRT distribution plan available at [https://robonomics.network/community#token](https://robonomics.network/community#token)
+[![HowToGIF](./images/distribution-plan2021/XRTdisthowto.gif)](https://robonomics.network/community#token)
 
-![HowToGIF](./images/distribution-plan2021/XRTdisthowto.gif)
+*Updated XRT distribution plan available at [https://robonomics.network/community#token](https://robonomics.network/community#token)*
 
-**Introduction**
+## Introduction
 
-The previous Distribution Plan was released by Robonomics developers DAO back in September 2020. It covered a broad vision of the further migration to the Polkadot ecosystem. We find it necessary to provide the community with the updated version of the XRT Distribution Plan for Q2 2021 - Q1 2022 && 2022+.
+[The previous Distribution Plan](https://ipfs.io/ipfs/QmZjzJbZDhs7B3YhtRkvdg4jp6qpfkVGB67w7vH2nJBUrE/Robonomics_token_Polkadot_KUSAMA_stage_details_september_2020.pdf) was released by Robonomics developers DAO back in September 2020. It covered a broad vision of the further migration to the Polkadot ecosystem. We find it necessary to provide the community with the <a href="https://ipfs.io/ipfs/QmYjv65UNTM3F7LFR1ESm5CVMLWYLagwtT7qGAsaBi47nY/releases_March'21_4v.pdf" target="_blank"><strong>updated version of the XRT Distribution Plan for Q2 2021 - Q1 2022 && 2022+</strong></a>
 
 The article split into three stages:
 
@@ -24,7 +24,7 @@ The article split into three stages:
 
 - Future (elaborates the future of Robonomics in the Interoperability era 2022+).
 
-**Past**
+## Past
 
 During the Q1 2020 - Q1 2021 period, XRT circulation consists of 1,268,496 XRT.
 
@@ -44,9 +44,9 @@ Let’s go through each variable:
 - Robonomics core developers grants for the period 2019 - Q1 2021 consists of 61,800 XRT.
 
 
-**Present**
+## Present
 
-**“Now”** stage covers the Q2 2021 - Q1 2022 period:
+### “Now” stage covers the Q2 2021 - Q1 2022 period:
 
 ![now2021](./images/distribution-plan2021/Total2021.png)
 
@@ -58,7 +58,7 @@ Up to 502,000 XRT will be added to the circulation supply during the Q2 2021 - Q
 
   - Inflation (up to 132,100 XRT).
 
-**Robonomics core developers DAO plans:**
+### Robonomics core developers DAO plans:
 - 50% tokens (865,752) will migrate to Robonomics Parachain DAO Treasury after securing the Kusama parachain slot;
 
 - Robonomics developers DAO will seal 495,752 XRT until the Interoperability era (2022+);
@@ -83,7 +83,7 @@ Up to 502,000 XRT will be added to the circulation supply during the Q2 2021 - Q
 
 ![inf](./images/distribution-plan2021/Inflation.png)
 
-**XRT inflation Q2 2021 - Q1 2022:**
+### XRT inflation Q2 2021 - Q1 2022:
 
 - Robonomics in Ethereum allows the mining of XRT tokens; core Robonomics developers expect around 100 XRT minted as a reward for liability contracts oracles;
 
@@ -91,7 +91,7 @@ Up to 502,000 XRT will be added to the circulation supply during the Q2 2021 - Q
 
 - Parachain collators will participate in the distribution of 12,000 XRT for maintaining their nodes during the first year.
 
-**Future**
+## Future
 
 When Kusama & Ethereum bridges become stable & reliable, Robonomics Developers DAO will merge the tokenomics and enter the Interoperability era of Robonomics.
 
