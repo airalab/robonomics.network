@@ -26,7 +26,7 @@ The article split into three stages:
 
 **Past**
 
-During the Q1 2020 - Q1 2021 period, XRT circulation consists of 1,2968,496 XRT.
+During the Q1 2020 - Q1 2021 period, XRT circulation consists of 1,268,496 XRT.
 
 ![2020-2021](./images/distribution-plan2021/CircNow.png)
 
