@@ -5,6 +5,27 @@
     - link: 'https://www.frontiersin.org/articles/10.3389/frobt.2020.00070/full'
       text: 'Frontiers'
 
+- title: '2019, Digital Passport for Unmanned Vehicles'
+  description: 'Vadim Manaenko, Aleksandr Kapitonov, Ivan Berman'
+  buttonicon: '↗'
+  options:
+    - link: 'https://fruct.org/publications/acm25/files/z-Man.pdf'
+      text: 'FRUCT'
+
+- title: '2019, Robonomics as a Blockchain-based Platform for Unmanned Traffic Management of Mobile Vehicles'
+  description: 'Aleksandr Kapitonov; Ivan Berman; Vadim Manaenko; Vyacheslav Rzhevskiy; Vitaly Bulatov; Artemii Zenkin'
+  buttonicon: '↗'
+  options:
+    - link: 'https://ieeexplore.ieee.org/abstract/document/8999696/authors#authors'
+      text: 'IEEE Xplore'
+
+- title: '2019, Towards Blockchain-based Multi-Agent Robotic Systems: Analysis, Classification and Applications'
+  description: 'Ilya Afanasyev, Alexander Kolotov, Ruslan Rezin, Konstantin Danilov, Manuel Mazzara, Subham Chakraborty, Alexey Kashevnik, Andrey Chechulin, Aleksandr Kapitonov, Vladimir Jotsov, Andon Topalov, Nikola Shakev, Sevil Ahmed'
+  buttonicon: '↗'
+  options:
+    - link: 'https://arxiv.org/abs/1907.07433'
+      text: 'arXiv'
+
 - title: '2019, Robotic Services for New Paradigm Smart Cities Based on Decentralized Technologies'
   description: 'Aleksandr Kapitonov, Sergey Lonshakov, Ivan Berman, Eduardo Castelló Ferrer, Fabio P Bonsignorio, Vitaly Bulatov, Aleksandr Svistov'
   buttonicon: '↗'
@@ -18,6 +39,13 @@
   options:
     - link: 'http://www.ijmerr.com/uploadfile/2019/0801/20190801034543607.pdf'
       text: 'IJMERR'
+
+- title: '2018, Towards Blockchain-Based Robonomics: Autonomous Agents Behavior Validation'
+  description: 'Konstantin Danilov; Ruslan Rezin; Ilya Afanasyev; Alexander Kolotov'
+  buttonicon: '↗'
+  options:
+    - link: 'https://ieeexplore.ieee.org/abstract/document/8710454'
+      text: 'IEEE Xplore'
 
 - title: '2018, Transforming climate finance and green investment with blockchains'
   description: 'Alastair Marke'
