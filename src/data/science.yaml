@@ -60,8 +60,6 @@
   description: 'Sergey Lonshakov, Aleksandr Krupenkin, Aleksandr Kapitonov, Evgeny Radchenko, Alisher Khassanov, Aleksandr Starostin'
   buttonicon: '↗'
   options:
-    - link: 'https://icorating.com/upload/whitepaper/iv5jaK71ghe48qOdCpgDxNBQMuaTIkC92HRWqfJ1.pdf'
-      text: 'ICO Rating'
     - link: 'https://www.researchgate.net/profile/Aleksandr_Kapitonov/publication/336642043_Robonomics_platform_for_integration_of_cyber_physical_systems_into_human_economy_For_engineers_smart_cities_and_Industry_40_creators/links/5da9955092851c577eb82491/Robonomics-platform-for-integration-of-cyber-physical-systems-into-human-economy-For-engineers-smart-cities-and-Industry-40-creators.pdf'
       text: 'ResearchGate'
     - link: 'https://pdfs.semanticscholar.org/5b56/2e31dde0c84ac457912215d02742aa8c3af2.pdf'
