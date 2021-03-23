@@ -1,10 +1,11 @@
-- title: 'Robonomics Keypoint, updated August 2020'
+- title: 'Robonomics Keypoint, updated March 2021'
   description: 'Keypoint presentation of Robonomics project. Brief and direct. Consist of: executive summary, main definitions, project history timeline, and many useful links in the text. Strongly recommend sharing with your friends, colleagues, and subscribers to let them know more about Robonomics.network'
-  img: 'docs-presentation-keypoint-2020.png'
-  buttonicon: '&#8595;'
+  img: 'docs-presentation-keypoint-2021-0.png'
+  buttonicon: '↗'
+  # buttonicon: '&#8595;'
   options:
-    - link: 'https://static.robonomics.network/docs/presentations/Robonomics.Keypoint.updated.August.2020.pdf'
-      text: '.pdf 1.6 Mb'
+    - link: 'https://gateway.pinata.cloud/ipfs/QmNNdLG3vuTsJtZtNByWaDTKRYPcBZSZcsJ1FY6rTYCixQ/Robonomics_keypoint_March_2021.pdf'
+      text: '.pdf in IPFS'
       
 - title: 'White Paper / May 12, 2018'
   description: 'If you want to go deeper into learning Robonomics Network, read this document (.pdf ~ 2 MB).'
