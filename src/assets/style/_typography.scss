@@ -263,4 +263,11 @@ p, ul, ol, li, blockquote, table {
     font-weight: 700;
     letter-spacing: 0.5px;
   }
+
+  code {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #b5deff;
+    font-weight: bold;
+  }
 }
