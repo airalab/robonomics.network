@@ -3,7 +3,7 @@ title: Robobank. Accept any Polkadot token in automation services
 date: 2021-03-26
 published: true
 tags: ['Tokens', 'Robonomics parachain']
-cover_image: ./images/robobank-introduction/robobank-introduction-cover.jpeg
+cover_image: ./images/robobank-introduction/robobank-introduction-cover.jpg
 description: "Robonomics developers have come up with a solution based on the Polkadot architecture that will allow any parachain to get access to IoT device management with payment in a native token"
 abstract: "Robonomics developers have come up with a solution based on the Polkadot architecture that will allow any parachain to get access to IoT device management with payment in a native token"
 ---
@@ -18,7 +18,7 @@ import Button from '~/components/Button.vue'
 
 <section class="animate-inside" v-in-viewport.once>
 
-!["Robobank from Robonomics introduction, banner 1"](./images/robobank-introduction/robobank-introduction-banner-1.jpeg)
+!["Robobank from Robonomics introduction, banner 1"](./images/robobank-introduction/robobank-introduction-banner-1.jpg)
 
 </section>
 
@@ -37,7 +37,7 @@ Users will not have to pay commissions outside of the native parachain token  â€
 
 <section class="animate-inside" v-in-viewport.once>
 
-!["Robobank from Robonomics introduction, banner 2"](./images/robobank-introduction/robobank-introduction-banner-2.jpeg)
+!["Robobank from Robonomics introduction, banner 2"](./images/robobank-introduction/robobank-introduction-banner-2.jpg)
 
 </section>
 
