@@ -51,10 +51,10 @@ If Robonomics is readily available, then the functionality of the parachain will
 * Plasm and Moonbeam will be able to provide control over the implementation of the terms of a smart contract to modern homes, offices, cars and any other IoT oracles.
 * Darwinia will be able to issue NFT tokens linked to 3D printer log, robot drawing or AI-generated music composition.
 * Phala will be able to increase the level of privacy of user applications, with which we control IoT devices in our personal space.
-* etc
+* etc.
 
 
-These are just examples that came to the author's mind, and you can try to continue the list yourself thinking about services for Smart Cities
+These are just examples that came to the author's mind, and you can try to continue the list yourself thinking about services for Smart Cities.
 
 <section class="animate-inside" v-in-viewport.once>
 
