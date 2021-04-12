@@ -59,14 +59,14 @@ https://www.youtube.com/embed/IEgvXcj3nSo
 
 <section class="grid-4">
 
-<Card :icon="'/land/icon-wiki.png'" :link="'https://wiki.robonomics.network/docs/'">
+<Card :icon="'/land/icon-wiki.png'" :link="'https://wiki.robonomics.network/docs/en/'">
 
 ### Robonomics Wiki
 For IoT & Robotics developers
 
 </Card>
 
-<Card :icon="'/land/icon-kuka.png'" :link="'https://wiki.robonomics.network/docs/kuka/'">
+<Card :icon="'/land/icon-kuka.png'" :link="'https://wiki.robonomics.network/docs/en/kuka/'">
 
 ### Launch Kuka manipulator
 Under Robonomics Network control
