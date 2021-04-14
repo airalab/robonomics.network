@@ -7,7 +7,6 @@ cover_image: ./images/robonomics-hackathon/robonomics-hackathon-v0.jpeg
 description: "We are launching our first hackathon!"
 abstract: "We are launching our first hackathon!"
 ---
-import Button from '~/components/Button.vue'
 
 _Robonomics Hackathon v0 is a major milestone for the Robonomics project and a chance for your talent to shine. Besides the opportunity to share an $8000 prize fund, you will connect with our experts and learn from the best._
 
