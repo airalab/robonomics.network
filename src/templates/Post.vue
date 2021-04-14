@@ -9,7 +9,7 @@
     />
 
     <div class="layout__title blog_title">
-      <h1>{{ $page.post.title }}</h1>
+      <h1 v-html="$page.post.title"/>
     </div>
 
     <div class="layout">
