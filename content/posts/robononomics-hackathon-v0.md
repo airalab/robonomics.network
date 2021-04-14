@@ -3,7 +3,7 @@ title: Robonomics Hackathon v0: building a smart place
 date: 2021-04-13
 published: true
 tags: ['smart place', 'Robonomics hackathon']
-cover_image: ./images/robonomics-hackathon/robonomics-hackathon-v0.jpeg
+cover_image: ./images/robonomics-hackathon/Hackathon_BLOG.jpg
 description: "We are launching our first hackathon!"
 abstract: "We are launching our first hackathon!"
 ---
