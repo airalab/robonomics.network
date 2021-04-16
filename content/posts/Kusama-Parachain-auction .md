@@ -49,7 +49,7 @@ Parachain Crowdloans: [https://guide.kusama.network/docs/en/mirror-learn-crowdlo
 
 <section class="animate-inside" v-in-viewport.once>
 
-!["Robomomics Parachain on Kusama wallpaper"](./images/robobank-introduction/wallpaper_KUSAMA_6.jpg)
+!["Robomomics Parachain on Kusama wallpaper"](./images/Kusama-Parachain-auction/wallpaper_KUSAMA_6.jpg)
 
 </section>
 
