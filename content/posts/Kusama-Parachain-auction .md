@@ -37,9 +37,9 @@ Robonomics will participate in 3rd-6th slot auctions to win.
 
 </section>
 
-The main goal of Robonomics is to connect IoT devices using the Polkadot network. For example, it allows Polkadot users to pay vending machines or robots in any token of the Polkadot ecosystem.
+The main goal of Robonomics is to connect IoT devices using the Polkadot network. For example, it allows Polkadot users to [pay vending machines or robots in any token of the Polkadot ecosystem](https://robonomics.network/blog/robobank-introduction/).
 
-Robonomics is a project with a long history that started in 2015, after the launch of the Ethereum network. During the project’s development, the team published more than 10 academic articles and created more than 15 R&D projects which included control of drones, industrial manipulators, sensor networks, and even a Boston Dynamics’ robot dog over Ethereum and Polkadot networks.
+Robonomics is a project with a long history that started in 2015, after the launch of the Ethereum network. During the project’s development, the team published more than [10 academic articles](https://robonomics.network/community#science) and created more than [15 R&D projects](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/) which included control of drones, industrial manipulators, sensor networks, and even a Boston Dynamics’ robot dog over Ethereum and Polkadot networks.
 
 Robonomics is a project that integrates new technologies into the real economy. However, to fuel this, a reasonable ‘gas’ price is required. Kusama makes the costs of communication between IoT devices and humans affordable.
 
@@ -47,8 +47,14 @@ Kusama Auction mechanics: [https://kusama.network/auctions](https://kusama.netwo
 
 Parachain Crowdloans: [https://guide.kusama.network/docs/en/mirror-learn-crowdloans](https://guide.kusama.network/docs/en/mirror-learn-crowdloans)
 
+<section class="animate-inside" v-in-viewport.once>
 
-Community, support our auction 🦾
+!["Robomomics Parachain on Kusama wallpaper"](./images/robobank-introduction/wallpaper_KUSAMA_6.jpg)
+
+</section>
+
+**Community, support our auction** 🦾
 
 Robonomics Developers DAO
+
 Stay tuned: [https://twitter.com/AIRA_Robonomics](https://twitter.com/AIRA_Robonomics)
