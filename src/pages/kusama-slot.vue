@@ -173,7 +173,6 @@
       },
 
       onVerify: function (response) {
-        console.log(response);
         if(response) {
           this.statusSubmit = 'wait'
 
