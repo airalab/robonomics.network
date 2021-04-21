@@ -44,7 +44,7 @@
 
             <tip summary="Add your email to whitelist" position="center-top" :summaryScale="false" :summaryButton="false" :summaryLink="true" class="inline-block">
               <!-- <form @submit="handleSubmit" :class="'status-'+statusSubmit"> -->
-              <form :class="'status-'+statusSubmit">
+              <form v-on:submit.prevent :class="'status-'+statusSubmit">
                 <div><input type="email" placeholder="Your email" v-model="email" name="email" required class="block"/></div>
                 <div><label><input type="checkbox" name="agreement" required/> <small>Please, confirm you agree with <a href="/privacy" target="_blank">privacy rules</a></small></label></div>
                 <div>
