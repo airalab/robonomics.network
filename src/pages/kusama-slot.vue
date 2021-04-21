@@ -44,7 +44,7 @@
 
             <tip summary="Add your email to whitelist" position="center-top" :summaryScale="false" :summaryButton="false" :summaryLink="true" class="inline-block">
               <!-- <form @submit="handleSubmit" :class="'status-'+statusSubmit"> -->
-              <form v-on:submit.prevent :class="'status-'+statusSubmit">
+              <div class="submition" :class="'status-'+statusSubmit">
                 <div><input type="email" placeholder="Your email" v-model="email" name="email" required class="block"/></div>
                 <div><label><input type="checkbox" name="agreement" required/> <small>Please, confirm you agree with <a href="/privacy" target="_blank">privacy rules</a></small></label></div>
                 <div>
@@ -69,7 +69,7 @@
                 <div class="wait"><g-image src="~/assets/images/robonomics.png" alt="Robonomics Parachain"/></div>
                 <div class="error">Something went wrong. Please, check your connection or try later.</div>
 
-              </form>
+              </div>
             </tip>
           </p>
         </div>
@@ -202,7 +202,7 @@
   /* SUBSRIBTION FORM */
   .auction-banner-form {
 
-    form {
+    .submition {
       position: relative;
     }
 
@@ -306,7 +306,7 @@
       }
     }
 
-    form.status-load {
+    .submition.status-load {
       
       .load {
         animation: FadeIn 0.3s var(--animation-bump) forwards;
@@ -319,7 +319,7 @@
         .bird-leg { animation-name: birdLeg; }
       }
 
-      & > *:not(.load) { pointer-events: none; opacity: 0.1; }
+      & > *:not(.load), button { pointer-events: none; opacity: 0.1; }
     }
 
     .wait {
@@ -340,16 +340,16 @@
       }
     }
 
-    form.status-wait {
+    .submition.status-wait {
       
       .wait {
         animation: FadeIn 0.3s var(--animation-bump) forwards;
       }
 
-      & > *:not(.wait) { pointer-events: none; opacity: 0.5; }
+      & > *:not(.wait), button { pointer-events: none; opacity: 0.5; }
     }
 
-    form.status-error {
+    .submition.status-error {
       
       .error {
         animation: FadeIn 0.3s var(--animation-bump) forwards;
