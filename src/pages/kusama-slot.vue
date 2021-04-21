@@ -44,13 +44,21 @@
 
             <tip summary="Add your email to whitelist" position="center-top" :summaryScale="false" :summaryButton="false" :summaryLink="true" class="inline-block">
               <!-- <form @submit="handleSubmit" :class="'status-'+statusSubmit"> -->
-              <div class="submition" :class="'status-'+statusSubmit">
+              <form @submit.prevent="onSubmit" class="submition" :class="'status-'+statusSubmit">
                 <div><input type="email" placeholder="Your email" v-model="email" name="email" required class="block"/></div>
                 <div><label><input type="checkbox" name="agreement" required/> <small>Please, confirm you agree with <a href="/privacy" target="_blank">privacy rules</a></small></label></div>
                 <div>
-                  <vue-recaptcha :sitekey="recaptchaSitekey" @verify="handleSubmit">
-                    <Button label="Submit" button="border block"/>
+                  <vue-recaptcha
+                    ref="invisibleRecaptcha"
+                    @verify="onVerify"
+                    size="invisible"
+                    :sitekey="recaptchaSitekey">
                   </vue-recaptcha>
+
+                  <Button label="Submit" button="border block"/>
+                  <!-- <vue-recaptcha :sitekey="recaptchaSitekey" @verify="handleSubmit">
+                    <Button label="Submit" button="border block"/>
+                  </vue-recaptcha> -->
                 </div>
 
                 <div class="load">
@@ -69,7 +77,7 @@
                 <div class="wait"><g-image src="~/assets/images/robonomics.png" alt="Robonomics Parachain"/></div>
                 <div class="error">Something went wrong. Please, check your connection or try later.</div>
 
-              </div>
+              </form>
             </tip>
           </p>
         </div>
@@ -153,36 +161,59 @@
       return {
         email: null,
         statusSubmit: 'none',
-        recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
-        // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
+        // recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
+        recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
       }
     },
 
     methods: {
 
-      handleSubmit() {
-          // e.preventDefault()
+      onSubmit: function () {
+        this.$refs.invisibleRecaptcha.execute()
+      },
 
+      onVerify: function (response) {
+        if(response) {
           this.statusSubmit = 'wait'
 
-          let request = ''
+            let request = ''
 
-          if(this.email){
-            request = 'email=' + encodeURIComponent(this.email)
+            if(this.email){
+              request = 'email=' + encodeURIComponent(this.email)
+            }
+
+            fetch('https://script.google.com/macros/s/AKfycbx1cjjrld_1Ncal3xxvt9sU5ssJE98bi98UHDeoa5DcK7TZyzW2jQVXaLkeATDYJLycmg/exec', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+              body: request
+            })
+            .then(() => this.statusSubmit = 'load')
+            .catch(error => this.statusSubmit = 'error')
+
           }
-
-          fetch('https://script.google.com/macros/s/AKfycbx1cjjrld_1Ncal3xxvt9sU5ssJE98bi98UHDeoa5DcK7TZyzW2jQVXaLkeATDYJLycmg/exec', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: request
-          })
-          .then(() => this.statusSubmit = 'load')
-          .catch(error => this.statusSubmit = 'error')
-
         }
+      },
 
+      // handleSubmit() {
+      //     // e.preventDefault()
 
-      }
+      //     this.statusSubmit = 'wait'
+
+      //     let request = ''
+
+      //     if(this.email){
+      //       request = 'email=' + encodeURIComponent(this.email)
+      //     }
+
+      //     fetch('https://script.google.com/macros/s/AKfycbx1cjjrld_1Ncal3xxvt9sU5ssJE98bi98UHDeoa5DcK7TZyzW2jQVXaLkeATDYJLycmg/exec', {
+      //       method: 'POST',
+      //       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      //       body: request
+      //     })
+      //     .then(() => this.statusSubmit = 'load')
+      //     .catch(error => this.statusSubmit = 'error')
+
+      // }
   }
 </script>
 

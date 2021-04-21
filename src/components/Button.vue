@@ -1,7 +1,7 @@
 <template>
 
   <g-link v-if="link" :to="link" :class="classes" :style="{transform: 'scale('+scale+')'}">{{label}}</g-link>
-  <button v-else :class="classes" :style="{transform: 'scale('+scale+')'}">{{label}}</button>
+  <button v-else :class="classes" :style="{transform: 'scale('+scale+')'}" type="submit">{{label}}</button>
 
 </template>
 
