@@ -14,7 +14,7 @@
 
     <Abstract v-if="$page.land.abstract" :text="$page.land.abstract"/>
 
-    <div class="layout landing">
+    <div class="layout landing page">
       <VueRemarkContent />
     </div>
   
@@ -50,17 +50,4 @@ query Land ($id: ID!) {
   }
 
 </script>
-
-
-<style lang="scss">
-  .landing {
-    text-align: center;
-
-    h1,h2,h3,h4,h5 {
-      a[aria-hidden="true"]{
-        display: none;
-      }
-    }
-  }
-</style>
 

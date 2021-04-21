@@ -39,7 +39,7 @@
 	}
 }
 
-.animate {
+.animate:not(hr) {
 	visibility: hidden;
 	opacity: 0;
 	transform: translateY(5%);
@@ -47,7 +47,7 @@
 	&.in-viewport {
 		animation-name: FadeIn, FloatYUp;
 		animation-timing-function: linear;
-		animation-delay: 0.5s;
+		animation-delay: 0.3s;
 		animation-fill-mode: forwards;
 		animation-duration: 0.5s;
 	}

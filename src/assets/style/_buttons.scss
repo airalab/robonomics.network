@@ -5,7 +5,7 @@
 		text-align: center;
 
 		border: 0;
-		border-radius: .2rem;
+		// border-radius: .2rem;
 		
 		display: inline-block;
 		vertical-align: middle;
@@ -22,6 +22,8 @@
   		}
 
   		&.primary{
+			box-shadow: 2px 2px 0 var(--link-color-rgba);
+
 			&, select {
 				background-color: var(--link-color);
 				color: var(--color-light);
@@ -35,12 +37,7 @@
 			}
 
 			&:hover{
-				background-color: var(--link-color-hover) !important;
-				border-color: var(--link-color-hover) !important;
-
-				.button-icon {
-					fill: var(--link-color-hover);
-				}
+				box-shadow: 4px 4px 0 var(--color-dark);
 			}
 		}
 
@@ -128,11 +125,13 @@
 		&.green {
 			background-color: var(--color-green);
 			border-color: var(--color-green);
+			box-shadow: 2px 2px 0 var(--color-green-rgba);
 		}
 
 		&.orange {
 			background-color: var(--color-orange);
 			border-color: var(--color-orange);
+			box-shadow: 2px 2px 0 var(--color-orange-rgba);
 		}
 	}
 

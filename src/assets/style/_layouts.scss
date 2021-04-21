@@ -15,6 +15,18 @@ section{
   		margin-bottom: var(--space-text);
   	}
   }
+
+  &__blue {
+	  background-color: var(--color-blue);
+	  
+	 &, a:not(.button), .link {
+		color: var(--color-light);
+	 }
+
+	 a:not(.button):hover, .link:hover {
+		 color: var(--color-green)
+	 }
+  }
 }
 
 .layout{
@@ -59,3 +71,39 @@ section{
 
 .m-space-left { margin-left: var(--space); }
 .m-space-right { margin-right: var(--space); }
+
+
+
+
+
+.landing, .page {
+	text-align: center;
+
+    h1,h2,h3,h4,h5 {
+      a[aria-hidden="true"]{
+        display: none;
+      }
+    }
+}
+
+
+
+.page {
+	hr.animate {
+		transform-origin: 50% 50%;
+		transform: scaleX(0);
+	}
+
+	hr.animate.in-viewport {
+		animation: HR 0.4s ease-out 0.8s forwards;
+	}
+}
+
+@keyframes HR {
+	from {
+		transform: scaleX(0);
+	}
+	to{
+		transform: scaleX(1);
+	}
+}

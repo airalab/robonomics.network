@@ -15,13 +15,11 @@ export default {
   props: {
 
     link: {
-      type: String,
-      default: false,
+      type: String
     },
 
     label: {
-      type: String,
-      default: false,
+      type: String
     },
 
     button: {
@@ -60,6 +58,27 @@ export default {
 </script>
 
 
-<style lang="scss">
+// <style lang="scss">
+//   .button {
+//     appearance: none;
+//     text-decoration: none;
+//     cursor: pointer;
 
-</style>
+//     display: inline-block;
+// 		vertical-align: middle;
+// 		vertical-align: -moz-middle-with-baseline;
+// 		vertical-align: -webkit-baseline-middle;
+
+//     padding: .5rem .8rem;
+
+// 		text-align: center;
+
+//     &, select {
+//       font-family: var(--font-family-code);
+//       font-weight: 500;
+//       font-size: var(--base-font-size);
+//       line-height: 1;
+//     }
+
+//   }
+// </style>

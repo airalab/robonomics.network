@@ -31,6 +31,7 @@
 
     transform: rotate(-90deg);
     transform-origin: 0 0;
+    white-space: nowrap;
     
     &, a {
       &.active--exact { opacity: .5; }
