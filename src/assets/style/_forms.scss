@@ -1,7 +1,55 @@
 input, select{
+	appearance: none;
+
 	padding: .5rem .8rem;
 	border: 1px solid var(--border-color);
 	background-color: var(--body-bg);
-	border-radius: var(--radius);
-	font-size: .75rem;
+	font-size: var(--base-font-size);
+	font-family: var(--font-family-code);
+	font-weight: 500;
+
+	&.block {
+		display: block;
+		width: 100%;
+		margin-bottom: calc(var(--space)/2);
+	}
+}
+
+input:not(.button) {
+	color: var(--color-dark);
+
+	&:focus {
+		&::placeholder {
+			opacity: 0.6;
+		}
+		border-color: var(--color-dark)
+	}
+
+	&:valid {
+		border-color: var(--color-green)
+	}
+}
+
+input[type="checkbox"] {
+	padding: 0;
+	cursor: pointer;
+	width: 1.3rem;
+    height: 1.3rem;
+	position: relative;
+	margin-right: 0.3rem;
+
+	&:checked {
+		background-color: var(--color-green);
+    	border-color: var(--color-green)
+	}
+
+	&:checked:after {
+		content:"✓";
+		position: absolute;
+		top: -0.6rem;
+		left: 0.1rem;
+		color: #fff;
+		font-weight: 500;
+		font-size: 1.7rem;
+	}
 }
