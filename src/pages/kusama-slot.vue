@@ -621,7 +621,7 @@
       animation-fill-mode: forwards;
 
       &.empty {
-        opacity: 0.5;
+        opacity: 0;
       }
     }
 
