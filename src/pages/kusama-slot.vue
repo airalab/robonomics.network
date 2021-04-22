@@ -409,7 +409,7 @@
   .auction-parachain-title:after {
     content: " ++";
     opacity: 0;
-    animation: mainpic var(--duration-mainpic) ease-out 0.1s forwards;
+    animation: blink var(--duration-mainpic) ease-out 0.1s forwards;
   }
 
 
@@ -458,7 +458,7 @@
       opacity: 0;
       transform: translateY(0.5rem);
 
-      animation: mainpic var(--duration-mainpic) ease-out var(--delay-mainpic) forwards;
+      animation: blink var(--duration-mainpic) ease-out var(--delay-mainpic) forwards;
     }
 
     .button {
@@ -485,30 +485,6 @@
       right: calc(var(--slot-size) * 4);
     }
   }
-
-  
-
-  @keyframes mainpic {
-    0%{
-      opacity: 0;
-    }
-    20%{
-      opacity: 1;
-    }
-    40%{
-      opacity: 0;
-    }
-    60%{
-      opacity: 1;
-    }
-    80%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
-
 
   /* KUSAMA SCENE */
   .kusama-wrap {

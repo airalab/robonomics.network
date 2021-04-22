@@ -110,6 +110,10 @@ query {
     @media screen and (min-width: 1600px) {
       margin-top: 2.5rem;
     }
+
+    @media screen and (max-width: 400px) {
+      font-size: 2.7rem;
+    }
   }
 
   p[itemprop="description"]{

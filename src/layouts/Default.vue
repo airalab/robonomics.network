@@ -1,20 +1,32 @@
 <template>
   <transition name="fade" appear>
   
-    <div class="screen">
+    <div class="screen" :class="BannerLink('/kusama-slot')?'banner':''">
 
       <header class="header">
-        <div class="header-logo">
-          <g-link to="/"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
+        <a id="banner-auction" href="/kusama-slot" v-if="BannerLink('/kusama-slot')">
+          <div class="layout__content">
+            <div id="banner-auction-title">
+              <g-image alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
+              ROBONOMICS PARACHAIN AUCTION
+            </div>
+          </div>
+        </a>
+
+        <div class="header-content">
+          <div class="header-logo">
+            <g-link to="/"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
+          </div>
+          <nav class="header-nav sidetext">
+              <g-link to="/community#intouch">Community</g-link>
+              <g-link to="/timeline">Timeline</g-link>
+              <g-link to="/blog">Blog</g-link>
+          </nav>
         </div>
-        <nav class="header-nav sidetext">
-            <g-link to="/community#intouch">Community</g-link>
-            <g-link to="/timeline">Timeline</g-link>
-            <g-link to="/blog">Blog</g-link>
-        </nav>
       </header>
 
       <div class="screen-content">
+        
         <slot/>
         <ClientOnly> <Footer/> </ClientOnly>
       </div>
@@ -38,19 +50,64 @@ query {
 
 <style lang="scss">
 
-  
+  #banner-auction {
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+
+    background-color: var(--color-blue);
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    padding-top: calc(var(--space) * 0.5);
+    padding-right: var(--screen-padding-right);
+    padding-left: var(--screen-padding-right);
+    padding-bottom: calc(var(--space) * 0.5);
+  }
+
+  #banner-auction-title {
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      content: " ++";
+      opacity: 0;
+      animation: blink 1s ease-out 0.3s forwards;
+    }
+
+    img {
+      position: absolute;
+      width: 85px;
+      left: -100px;
+      top: -10px;
+      transform: translateY(100%);
+      animation: BannerAuctionPic 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards;
+    }
+
+    @media screen and (max-width: 560px) {
+      img { display: none; }
+    }
+  }
+
+  @keyframes BannerAuctionPic {
+    to {
+      transform: translateY(0);
+    }
+  }
+
   .header {
     --logo-padding: 0.6rem;
 
     position: fixed;
-    top: var(--logo-padding);
-    left: var(--logo-padding);
-    right: var(--screen-padding-right);
+    // top: var(--logo-padding);
+    // left: var(--logo-padding);
+    // right: var(--screen-padding-right);
+    top: 0;
+    left: 0;
+    right: 0;
     z-index:1000;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     background-color: var(--body-bg);
 
@@ -71,6 +128,17 @@ query {
         &.active--exact { opacity: .5; }
       }
     }
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: calc(var(--space) * 0.5);
+    padding-bottom: calc(var(--space) * 0.5);
+    padding-left: var(--logo-padding);
+    padding-right: var(--screen-padding-right);
   }
 
 
@@ -109,52 +177,14 @@ query {
 	// 		<text x="30" y="30" font-size="12" style="fill:#ccc">•</text>\
 	// 		</svg>');
 	// 		background-size: 60px 60px;
+}
 
+// for banner
+.banner .screen-content {
+  margin-top: calc(var(--space) * 3);
 
-  .banner {
-    display: block;
-
-    padding: calc(var(--space) * 0.3) var(--screen-padding);
-    background: #590FB7;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 500;
-
-    .hovercontent {
-      visibility: hidden;
-      opacity: 0;
-      width: 0;
-    }
-
-    & > * {
-      display: inline-block;
-      vertical-align: middle;
-      vertical-align: -moz-middle-with-baseline;
-      vertical-align: -webkit-baseline-middle;
-    }
-
-    & > *:not(:last-child) {
-      margin-right: calc(var(--space) * 0.5);
-    }
-
-    img {
-      max-height: var(--space);
-    }
-
-    &:hover {
-      color: #fff;
-      background: #6699FF;
-      padding-top: calc(var(--space) * 0.6);
-      padding-bottom: calc(var(--space) * 0.6);
-
-      .hovercontent {
-        animation: FadeIn 0.4s ease-out forwards;
-        width: auto;
-      }
-    }
+  @media screen and (max-width:375px) {
+    margin-top: calc(var(--space) * 4);
   }
 }
 
@@ -172,16 +202,18 @@ import VueCookies from 'vue-cookies'
 Vue.use(VueCookies)
 
 export default {
-  // data: {
-  //   currentRoute: window.location.pathname
-  // },
+  computed: {
+    currentRoute() {
+      return window.location.pathname
+    }
+  },
   components: {
     Footer: () => import('~/components/Footer.vue')
   },
   methods: {
-    // BannerLink(p) {
-    //   return window.location.pathname != p;
-    // }
+    BannerLink(p) {
+      return window.location.pathname != p;
+    }
   }
 }
 </script>
