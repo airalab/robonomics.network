@@ -182,7 +182,7 @@
               request = 'email=' + encodeURIComponent(this.email)
             }
 
-            fetch('https://script.google.com/macros/s/AKfycbx1cjjrld_1Ncal3xxvt9sU5ssJE98bi98UHDeoa5DcK7TZyzW2jQVXaLkeATDYJLycmg/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbzkKvOsGaZK6M-6oxd6aAzP75hTfcgoEuXX8Q0WrrXNQQ2o4qu0BeMtdnJm7llQJaDI/exec', {
               method: 'POST',
               headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
               body: request
@@ -193,27 +193,6 @@
           }
         }
       },
-
-      // handleSubmit() {
-      //     // e.preventDefault()
-
-      //     this.statusSubmit = 'wait'
-
-      //     let request = ''
-
-      //     if(this.email){
-      //       request = 'email=' + encodeURIComponent(this.email)
-      //     }
-
-      //     fetch('https://script.google.com/macros/s/AKfycbx1cjjrld_1Ncal3xxvt9sU5ssJE98bi98UHDeoa5DcK7TZyzW2jQVXaLkeATDYJLycmg/exec', {
-      //       method: 'POST',
-      //       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      //       body: request
-      //     })
-      //     .then(() => this.statusSubmit = 'load')
-      //     .catch(error => this.statusSubmit = 'error')
-
-      // }
   }
 </script>
 
