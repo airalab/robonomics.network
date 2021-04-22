@@ -47,6 +47,10 @@ h1 {
   margin-bottom: var(--space);
   font-weight: 400;
   text-align: center;
+
+  @media screen and (max-width: 400px) {
+    font-size: 2rem;
+  }
 }
 
 h1:not(.clean), .text-gradient {

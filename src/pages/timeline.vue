@@ -10,7 +10,7 @@
       <h1>Infrastructure && tech development timeline</h1>
     </div>
 
-    <section class="layout layout__content">
+    <section class="layout layout__text">
       <div class="timelineContainer">
         <article class="timeline timeline__current">
           <h3 class="timeline__time">Robonomics Today</h3>
