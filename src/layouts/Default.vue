@@ -212,7 +212,7 @@ export default {
   },
   methods: {
     BannerLink(p) {
-      return window.location.pathname != p;
+      return this.currentRoute != p;
     }
   }
 }
