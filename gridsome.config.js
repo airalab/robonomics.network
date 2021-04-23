@@ -31,15 +31,15 @@ module.exports = {
     //   },
     // }
 
-    {
-      // Google Tag Manager
-      use: 'gridsome-plugin-gtm',
-      options: {
-        id: 'GTM-WJ83CPC',
-        enabled: true,
-        debug: false
-      }
-    },
+    // {
+    //   // Google Tag Manager
+    //   use: 'gridsome-plugin-gtm',
+    //   options: {
+    //     id: 'GTM-WJ83CPC',
+    //     enabled: true,
+    //     debug: false
+    //   }
+    // },
 
     {
       // Create posts from markdown files
