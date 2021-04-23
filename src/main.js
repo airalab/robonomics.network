@@ -27,8 +27,8 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('layout', Default)
 
-  head.script.push({
-    src: "https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit",
-    body: true
-  })
+  // head.script.push({
+  //   src: "https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit",
+  //   body: true
+  // })
 }
