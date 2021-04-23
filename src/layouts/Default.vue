@@ -199,7 +199,7 @@ export default {
   },
   methods: {
     BannerLink(p) {
-      return global.location.pathname != p
+      return this.$router.currentRoute.path != p
       // return false
       // if(process.isClient) {
       //   return global.location.pathname != p
