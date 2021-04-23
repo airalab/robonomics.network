@@ -36,8 +36,8 @@ module.exports = {
       use: 'gridsome-plugin-gtm',
       options: {
         id: 'GTM-WJ83CPC',
-        enabled: true
-        // debug: true
+        enabled: true,
+        debug: true
       }
     },
 
