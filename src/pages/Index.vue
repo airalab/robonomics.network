@@ -6,7 +6,7 @@
         :pageDescription = "$static.metadata.siteDescription"
       />
 
-      <div class="homepage-entrance" v-if="entrance">
+      <!-- <div class="homepage-entrance" v-if="entrance">
         <h1 class="clean">
           <span>Hello Human</span>
           <span>Connect robotics</span>
@@ -16,7 +16,7 @@
           </span>
         </h1>
 
-      </div>
+      </div> -->
 
       
     <div class="homepage">
@@ -112,7 +112,7 @@ query {
     }
 
     @media screen and (max-width: 400px) {
-      font-size: 2.7rem;
+      font-size: rem;
     }
   }
 
