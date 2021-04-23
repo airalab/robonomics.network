@@ -3,7 +3,7 @@
 
     <MetaInfo
       :pageTitle = "'Robonomics slot in Kusama'"
-      :pageDescription = "'Robonomics in the past and nowadays, some important checkpoints of evolution.'"
+      :pageDescription = "'Robonomics developers aim to allocate $720,000 for a 2-year lease of a slot in the Kusama network. This underlying amount of XRT will be distributed among the KSM holders who will support the project with their tokens at the upcoming auction of Polkadot’s wild cousin.'"
     />
 
     <div class="layout__title">
@@ -146,15 +146,22 @@
 
 <script>
 
-  import VueRecaptcha from 'vue-recaptcha'
-
   export default {
     components: {
       MetaInfo: () => import("~/components/MetaInfo.vue"),
       Abstract: () => import("~/components/TextAbstract.vue"),
       Button: () => import("~/components/Button.vue"),
       tip: () => import("~/components/tip.vue"),
-      VueRecaptcha
+      VueRecaptcha: () => import("vue-recaptcha")
+    },
+
+    metaInfo: {
+      script: [
+        {
+          src: 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
+          body: true
+        }
+      ]
     },
 
     data () {
