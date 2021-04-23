@@ -5,19 +5,6 @@
         :pageTitle = "'Home'"
         :pageDescription = "$static.metadata.siteDescription"
       />
-
-      <!-- <div class="homepage-entrance" v-if="entrance">
-        <h1 class="clean">
-          <span>Hello Human</span>
-          <span>Connect robotics</span>
-          <span>on top of Polkadot or Ethereum</span>
-          <span class="buttonwrap">
-            <vue-recaptcha :sitekey="recaptchaSitekey" @verify="onVerifyCaptcha" />
-          </span>
-        </h1>
-
-      </div> -->
-
       
     <div class="homepage">
 
@@ -33,8 +20,7 @@
         </div>
 
 
-        <!--<div class="roboHands" v-in-viewport.once>-->
-        <div class="roboHands" :class="[!entrance ? 'in-viewport' : ' ']">
+        <div class="roboHands" v-in-viewport.once>
           <div class="roboHands__move left">
             <div class="roboHands__left">
               <g-image src="~/assets/images/robotHand1-1.svg" class="roboHands__left__1" />
@@ -77,7 +63,7 @@
       </section>
   </div>
 
-   <g-link v-if="calendar & !entrance" class="calendar" to="/community/wallpapers#2021-monthly-calendar-with-gorgeous-cyber-girls" title="Download Free Calendar 2021 from Robonomics">
+   <g-link v-if="calendar" class="calendar" to="/community/wallpapers#2021-monthly-calendar-with-gorgeous-cyber-girls" title="Download Free Calendar 2021 from Robonomics">
       <g-image class="calendar-i-1" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-2.png" />
       <g-image class="calendar-i-2" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-3.png" />
       <g-image class="calendar-i-3" alt="Download Free Calendar 2021 Robonomics" src="~/assets/images/banners/calendar-4.png" />
@@ -242,103 +228,6 @@ query {
     
   }
 
-
-  .homepage-entrance {
-    position: fixed;
-    z-index: 1000;
-    top: var(--screen-padding-top);
-    left: var(--screen-padding-left);
-    right: var(--screen-padding-right);
-    bottom: var(--screen-padding-bottom);
-
-    // background: linear-gradient(-40deg, #000066 0 70%, #6699FF 70% 100%);
-    background: linear-gradient(#000066, #6699FF);
-
-    visibility: hidden;
-    opacity: 0;
-    animation: FadeIn 0.2s ease-in 0.5s forwards;
-
-
-    h1 {
-      --entertext: 10s;
-      --enteropacity: 0;
-      // --enterfunc: cubic-bezier(0.4, 0.84, 0.44, 1);
-      --enterfunc: linear;
-      --entercolorstart: rgba(255,255,255);
-      --entercolor: #fff;
-      --stateNA: scaleY(0);
-      --stateA: scale(1);
-
-      display: block;
-      margin: 0;
-      padding: var(--space);
-
-      color: var(--entercolorstart);
-      text-shadow: 0 0 0 var(--entercolor);
-
-      animation: EnterTextShade var(--entertext) var(--enterfunc) forwards;
-
-      font-family: var(--font-family-code);
-      font-size: 3rem;
-      letter-spacing: 10px;
-      
-      position: absolute;
-      top: calc(50% - calc(var(--space)*2));
-      left: 0;
-      right: 0;
-
-      span:not(.buttonwrap) {
-        animation-duration: var(--entertext);
-        animation-timing-function: var(--enterfunc);
-        animation-fill-mode: forwards;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-
-        /* Turn on GPU for some browsers */
-        -webkit-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        -o-transform: translateZ(0);
-        transform: translateZ(0);
-      }
-
-      span:nth-child(1) { animation-name: EnterText1; }
-      span:nth-child(2) { animation-name: EnterText2; }
-      span:nth-child(3) { animation-name: EnterText3; }
-
-      button {
-        visibility: hidden;
-		    opacity: 0;
-        display: block;
-        margin: 0 auto;
-
-        animation: FadeIn 0.4s ease-in var(--entertext) forwards;
-      }
-
-      @media screen and (max-width: 500px) {
-
-        --entertext: 10s;
-        --entercolorstart: #fff;
-
-        visibility: hidden;
-	      opacity: 0;
-        animation: FadeIn 1s linear forwards;
-
-        span:not(.buttonwrap) {
-          transform: var(--stateNA);
-          transform-origin: 50% 50%;
-        }
-        span:nth-child(1) { animation-name: EnterTextMobile1; }
-        span:nth-child(2) { animation-name: EnterTextMobile2; }
-        span:nth-child(3) { animation-name: EnterTextMobile3; }
-      }
-    
-    }
-  }
-
   .buttonwrap {
     visibility: hidden;
     opacity: 0;
@@ -351,319 +240,9 @@ query {
       left: calc(50% - 152px);
     }
   }
-
-
-  @keyframes EnterTextShade {
-    0% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    23% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    26% {
-      text-shadow: 0 0 20px var(--entercolor);
-    }
-    28% {
-      text-shadow: 0 0 20px var(--entercolor);
-    }
-    39% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    48% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    51% {
-      text-shadow: 0 0 20px var(--entercolor);
-    }
-    53% {
-      text-shadow: 0 0 20px var(--entercolor);
-    }
-    64% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    73% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    76% {
-      text-shadow: 0 0 20px var(--entercolor);
-    }
-    78% {
-      text-shadow: 0 0 20px var(--entercolor);
-    }
-    89% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    100% {
-      text-shadow: 0 0 0 var(--entercolor);
-    }
-    
-  }
-
-  @keyframes EnterText1 {
-    0% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    23% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    26% {
-      visibility: visible;
-		  opacity: 1;
-      color: var(--entercolor);
-    }
-    36% {
-      visibility: visible;
-		  opacity: 1;
-      color: var(--entercolor);
-    }
-    39% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    48% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    51% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    61% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    64% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    73% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    76% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    100% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    
-  }
-
-  @keyframes EnterText2 {
-    0% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    23% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    26% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    36% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    39% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    48% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    51% {
-      visibility: visible;
-		  opacity: 1;
-      color: var(--entercolor);
-    }
-    61% {
-      visibility: visible;
-		  opacity: 1;
-      color: var(--entercolor);
-    }
-    64% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    73% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    76% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    86% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    100% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    
-    
-  }
-
-  @keyframes EnterText3 {
-    0% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    23% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    26% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    36% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    39% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    48% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-    }
-    51% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    61% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    64% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    73% {
-      visibility: visible;
-		  opacity: var(--enteropacity);
-      color: var(--entercolorstart);
-    }
-    76% {
-      visibility: visible;
-		  opacity: 1;
-      color: var(--entercolor);
-    }
-    86% {
-      visibility: visible;
-		  opacity: 1;
-      color: var(--entercolor);
-    }
-    91% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    93% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    100% {
-      visibility: hidden;
-      opacity: 0;
-    }
-    
-  }
-
-
-  @keyframes EnterTextMobile1 {
-    0% {
-      transform: var(--stateNA);
-    }
-    13% {
-      transform: var(--stateNA);
-    }
-    16% {
-      transform: var(--stateA);
-    }
-    26% {
-      transform: var(--stateA);
-    }
-    29% {
-      transform: var(--stateNA);
-    }
-    41% {
-      transform: var(--stateNA);
-    }
-    100% {
-      transform: var(--stateNA);
-    }
-    
-  }
-
-  @keyframes EnterTextMobile2 {
-    0% {
-      transform: var(--stateNA);
-    }
-    38% {
-      transform: var(--stateNA);
-    }
-    41% {
-      transform: var(--stateA);
-    }
-    51% {
-      transform: var(--stateA);
-    }
-    54% {
-      transform: var(--stateNA);
-    }
-    100% {
-      transform: var(--stateNA);
-    }
-    
-  }
-
-  @keyframes EnterTextMobile3 {
-    0% {
-      transform: var(--stateNA);
-    }
-    63% {
-      transform: var(--stateNA);
-    }
-    66% {
-      transform: var(--stateA);
-    }
-    76% {
-      transform: var(--stateA);
-    }
-    79% {
-      transform: var(--stateNA);
-    }
-    100% {
-      transform: var(--stateNA);
-    }
-    
-  }
- 
 </style>
 
 <script>
-  import VueRecaptcha from 'vue-recaptcha'
-
   import Navigation from '~/components/Navigation.vue'
   import MetaInfo from '~/components/MetaInfo.vue'
 
@@ -671,24 +250,17 @@ query {
 
     components: {
       Navigation,
-      MetaInfo,
-      VueRecaptcha
+      MetaInfo
     },
 
     data () {
       return {
-        entrance: true,
-        calendar: true,
-        recaptchaSitekey: "6LeoN0UaAAAAAJCf2ki8hF1-hOqdwmTTgd6cKsXk"
-        // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
+        calendar: true
       }
     },
 
     mounted() {
-      this.cookieEntrance();
       this.cookieCalendar();
-
-      // console.log(window.screen.width);
     },
 
     updated() {
@@ -715,25 +287,6 @@ query {
         document.querySelector(element).style.transform = 'scale(' + ratio +')';
       },
 
-      //for ReCaptcha
-      onVerifyCaptcha(response) {
-        this.entrance = false;
-
-        this.hcaptcha_token = response;
-        this.verified = true;
-      },
-
-      // Detects if we need to show entrance
-      cookieEntrance(){
-        if ( this.$cookies.get('EntranceShowed') ) {
-          this.entrance = false;
-        }
-        else {
-          // 30 days after, expire, '' current path , browser default
-          this.$cookies.config(60 * 60 * 24 * 30,'');
-          this.$cookies.set('EntranceShowed', '1');
-        }
-      },
 
       cookieCalendar(){
         if ( this.$cookies.get('CalendarShowed') ) {
