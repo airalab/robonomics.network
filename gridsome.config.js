@@ -37,7 +37,7 @@ module.exports = {
       options: {
         id: 'GTM-WJ83CPC',
         enabled: true,
-        debug: true
+        debug: false
       }
     },
 
