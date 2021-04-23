@@ -199,9 +199,10 @@ export default {
   },
   methods: {
     BannerLink(p) {
-      if(process.isClient) {
-        return global.location.pathname != p
-      }
+      return false
+      // if(process.isClient) {
+      //   return global.location.pathname != p
+      // }
     }
   }
 }
