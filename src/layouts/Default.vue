@@ -208,6 +208,7 @@ export default {
   methods: {
     BannerLink(p) {
       if(process.isClient) {
+        console.log(process.isClient)
         return window.location.pathname != p
       }
     }
