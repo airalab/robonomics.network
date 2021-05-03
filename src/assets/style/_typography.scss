@@ -29,28 +29,26 @@ body {
   line-height: 1.5;
 }
 
+h1 { font-size: calc(var(--base-font-size) * 2.4) }
+h2 { font-size: calc(var(--base-font-size) * 1.8) }
+h3 { font-size: calc(var(--base-font-size) * 1.4) }
+h4 { font-size: calc(var(--base-font-size) * 1.3) }
+h5 { font-size: var(--base-font-size) }
+
 h1, h2, h3, h4, h5 {
   transition: color .6s;
   color: var(--title-color);
   
   font-family: var(--font-family);
-  line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
   margin-top: calc(var(--space)*2);
+  text-align: center;
 }
 
 h1 {
-  font-size: 2.9rem;
-  letter-spacing: 0.1rem;
   margin-bottom: var(--space);
-  font-weight: 400;
-  text-align: center;
-
-  @media screen and (max-width: 400px) {
-    font-size: 2rem;
-  }
 }
 
 h1:not(.clean), .text-gradient {
@@ -61,15 +59,8 @@ h1:not(.clean), .text-gradient {
 
   background-position:  0; 
   background-size: 200%;
-  animation: 12s progress-bar linear infinite;
+  animation: 12s TextGradient linear infinite;
 }
-
-h4, h5 { margin-top: var(--space); }
-
-h2 { font-size: 1.7rem; }
-h3 {font-size: 1.2rem;}
-h4 {font-size: 1rem;}
-h5 {font-size: 0.8rem;}
 
 h2, h3, h4, h5 {
   &:first-child { margin-top: 0 }
@@ -77,10 +68,7 @@ h2, h3, h4, h5 {
 }
 
 
-
-
-
-@keyframes progress-bar {
+@keyframes TextGradient {
   0%{
     background-position: 0; 
   }
@@ -110,8 +98,6 @@ blockquote {
   background-color: var(--text-color-invert);
 
   border-left: 1px solid var(--text-color);
-  // border-top: 1px solid var(--text-color);
-  // box-shadow: .2rem .2rem 0 var(--color-gray);
 }
 
 em {
@@ -172,13 +158,13 @@ hr {
 }
 
 .hyphens{
-  text-align: justify;
+  text-align: justify !important;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
 
-  h1, h2, h3, h4, h5 { text-align: center; }
+  h1, h2, h3, h4, h5 { text-align: center !important; }
 }
 
 .align-left { text-align: left; }
@@ -267,7 +253,7 @@ p, ul, ol, li, blockquote, table {
 
 .post {
   h2, h3, h4, h5 {
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.5px;
   }
 
