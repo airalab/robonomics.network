@@ -5,6 +5,7 @@ body {
     --font-family-code: 'Roboto Mono', monospace;
 
 	--color-dark: #000000;
+	--color-darkgray: rgb(37, 37, 37);
 	--color-light: #ffffff;
 	--color-gray: #ccc;
 	--color-gray-light: #f2f2f2;
@@ -12,6 +13,7 @@ body {
 	--color-orange: #E9510E;
 	--color-red: #ee005b;
 	--color-blue: #2949D3;
+	--color-purple: #1A1341;
 
  	--body-bg: var(--color-light);
  	--text-color: #000000;
@@ -28,6 +30,7 @@ body {
 	--color-orange-rgba: #e9500eab;
 	 
 	--color-gradient-blue: linear-gradient(#000066, #6699FF);
+	--color-gradient-purpleblue: linear-gradient(#2D83CC, #221363);
 	
 	--animation-bump: cubic-bezier(0.6, 0.04, 0.98, 0.335);
  	

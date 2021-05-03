@@ -153,7 +153,8 @@ export default {
 
     &-transparent {
       background-color: transparent;
-      border-top: 1px dashed var(--text-color)
+      // border-top: 1px dashed var(--text-color);
+      font-weight: 400;
     }
 
     &.vertical {

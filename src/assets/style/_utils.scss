@@ -16,7 +16,8 @@
 }
 
 .oldy {
-  --oldy-box-color: var(--color-dark);
+  --oldy-box-color: var(--color-gray);
+  // --oldy-box-color: var(--color-dark);
   border: 1px solid var(--oldy-box-color);
   box-shadow: .2rem .2rem 0 var(--oldy-box-color);
 	padding: calc(var(--space)/2);
@@ -76,7 +77,7 @@
 
 *[class*='grid-'] { 
   display: grid !important;
-  gap: var(--space);
+  gap: calc(var(--space)*2);
 
   & > p { margin-bottom: 0; }
 }
@@ -95,10 +96,6 @@
 
 .grid-3{
   grid-template-columns: repeat(3,1fr);
-
-  // @media screen and (max-width: 1000px){
-  //   grid-template-columns: repeat(2,1fr);
-  // }
 
   @media screen and (max-width: 800px){
     grid-template-columns: 1fr;

@@ -1,11 +1,6 @@
-section{
-  margin-top: var(--space);
-  margin-bottom: var(--space);
-}
-
-.section{
-  margin-top: calc(var(--space) / 2);
-  margin-bottom: var(--space);
+.section, section {
+  margin-top: calc(var(--space)*2);
+  margin-bottom: calc(var(--space)*2);
 
   &__solid{
   	background-color: var(--color-light);
@@ -26,6 +21,30 @@ section{
 	 a:not(.button):hover, .link:hover {
 		 color: var(--color-green)
 	 }
+  }
+
+  &__darkgray {
+	background-color: var(--color-darkgray);
+
+	&, a:not(.button), .link {
+		color: var(--color-light);
+	 }
+  }
+
+  &__gradient-purpleblue {
+	background: var(--color-gradient-purpleblue);
+
+	&, a:not(.button), .link {
+		color: var(--color-light);
+	 }
+  }
+
+  section:first-child {
+	  margin-top: 0;
+  }
+
+  & > h1, & > h2, & > h3 {
+	  margin-top: 0;
   }
 }
 
