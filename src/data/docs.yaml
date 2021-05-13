@@ -1,3 +1,13 @@
+- title: 'Book 3 «Robot Network R&D», 2021'
+  description: 'Robonomics use cases in one colorful book (.pdf ~ 19 MB).'
+  img: 'docs-book-3.jpg'
+  buttonicon: '↗'
+  options:
+    - link: 'https://gateway.pinata.cloud/ipfs/QmQNZTGS2YWs6jytPa5XY6sN9ithoAv8VQ7p5V8Tw8RfmW'
+      text: 'English'
+    - link: 'https://gateway.pinata.cloud/ipfs/QmUTqwtq7ATN7TkB9weuZKExwxcJxP1rb6GkpmNm96hA9Q'
+      text: 'Russian'
+      
 - title: 'Robonomics Keypoint, updated March 2021'
   description: 'Keypoint presentation of Robonomics project. Brief and direct. Consist of: executive summary, main definitions, project history timeline, and many useful links in the text. Strongly recommend sharing with your friends, colleagues, and subscribers to let them know more about Robonomics.network'
   img: 'docs-presentation-keypoint-2021-0.png'
@@ -20,7 +30,7 @@
       text: 'Chinese'
 
 
-- title: 'Book "Robot economics", 2017'
+- title: 'Book «Robot economics», 2017'
   description: 'We made colorful book explaining the general principles of robot economics (.pdf ~ 11 MB).'
   img: 'docs-book-1.png'
   buttonicon: '↗'
@@ -33,7 +43,7 @@
       text: 'German'
 
 
-- title: 'Book "Robot economics", 2018'
+- title: 'Book «Robot economics», 2018'
   description: 'Here we described more specific things about robot economics than in first book (.pdf ~ 22 MB).'
   img: 'docs-book-2.png'
   buttonicon: '↗'
