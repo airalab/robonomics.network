@@ -12,6 +12,7 @@ body {
 	--color-green: #5fce05;
 	--color-orange: #E9510E;
 	--color-red: #ee005b;
+	--color-blue-light: #70d2ff;
 	--color-blue: #2949D3;
 	--color-purple: #1A1341;
 
@@ -47,6 +48,8 @@ body {
   --screen-padding-bottom: 1rem;
 //   --screen-padding-left: calc( var(--space) * 1.5 );
   --screen-padding-left: 3rem;
+
+	--space-bannertop: 4rem;
 }
 
 // @media screen and (max-width: 720px) {

@@ -31,15 +31,15 @@ body {
 
 h1 { font-size: calc(var(--base-font-size) * 2.4) }
 h2 { font-size: calc(var(--base-font-size) * 1.8) }
-h3 { font-size: calc(var(--base-font-size) * 1.4) }
-h4 { font-size: calc(var(--base-font-size) * 1.3) }
+h3 { font-size: calc(var(--base-font-size) * 1.2) }
+h4 { font-size: calc(var(--base-font-size) * 1.1) }
 h5 { font-size: var(--base-font-size) }
 
 h1, h2, h3, h4, h5 {
   transition: color .6s;
   color: var(--title-color);
   
-  font-family: var(--font-family);
+  font-family: var(--font-family-code);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
@@ -84,7 +84,7 @@ h2, h3, h4, h5 {
 
 
 
-small, .text__small { font-size: 80%; line-height: 1.2; }
+small, .text__small { font-size: 70%; line-height: 1.2; }
 
 strong, b {
   font-weight: 500;

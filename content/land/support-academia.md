@@ -59,17 +59,31 @@ Right now Robonomics [is working to become a parachain on the Kusama network](ht
 
 ## Each team will go through the following general steps:
 
+<Card back="transparent">
+
 ### 1. Analysis of the ROS-module of the device, correcting and testing the module.
 
 Since the Robonomics is an implementation of the ROS framework as a Substrate chain, in order to connect the device to the network, it is needed a robot’s module for ROS. Many ready-made modules have been written for ROS, but they may have to be partially rewritten. They will also need to be linked with Robonomics on Substrate.
+
+</Card>
+
+<Card back="transparent">
 
 ### 2. Device activation
 
 This requires planning what kind of activity the robot will demonstrate (cargo transfer, trajectory repetition, data collection, etc).
 
+</Card>
+
+<Card back="transparent">
+
 ### 3. Collection and sending of telemetry data
 
 During the execution of tasks, the device should publish event data, debug information and work results to the network.
+
+</Card>
+
+<Card back="transparent">
 
 ### 4. Preparation of results
 
@@ -82,6 +96,8 @@ This includes three main results:
 * Posting a small report to blogs (e.g. on Medium).
 
 * **[Extra]** We also strongly encourage participants to use the results obtained for the publication of scientific articles.
+
+</Card>
 
 ---
 
