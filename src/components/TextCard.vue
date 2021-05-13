@@ -157,6 +157,12 @@ export default {
       font-weight: 400;
     }
 
+    &.gorizontal {
+      h1, h2, h3, h4, h5 {
+        text-align: left;
+      }
+    }
+
     &.vertical {
       text-align: center;
 

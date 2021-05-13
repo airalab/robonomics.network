@@ -4,9 +4,9 @@
     <div class="screen" :class="BannerLink('/kusama-slot')?'banner':''">
 
       <header class="header">
-        <a id="banner-auction" href="/kusama-slot" v-if="BannerLink('/kusama-slot')">
+        <a class="banner-top" href="/kusama-slot" v-if="BannerLink('/kusama-slot')">
           <div class="layout__content">
-            <div id="banner-auction-title">
+            <div id="banner-auction">
               <g-image alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
               ROBONOMICS PARACHAIN AUCTION
             </div>
@@ -50,24 +50,30 @@ query {
 
 <style lang="scss">
 
-  #banner-auction {
-    display: block;
+  .banner-top {
+    height: var(--space-bannertop);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-right: var(--screen-padding-right);
+    padding-left: var(--screen-padding-right);
+
     text-decoration: none;
     overflow: hidden;
 
     background-color: var(--color-blue);
-    color: #fff;
+    color: var(--color-blue-light) !important;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    padding-top: calc(var(--space) * 0.5);
-    padding-right: var(--screen-padding-right);
-    padding-left: var(--screen-padding-right);
-    padding-bottom: calc(var(--space) * 0.5);
+    &:hover {
+      color: #fff !important;
+    }
   }
 
-  #banner-auction-title {
+  #banner-auction {
     position: relative;
     display: inline-block;
 
@@ -101,9 +107,6 @@ query {
     --logo-padding: 0.6rem;
 
     position: fixed;
-    // top: var(--logo-padding);
-    // left: var(--logo-padding);
-    // right: var(--screen-padding-right);
     top: 0;
     left: 0;
     right: 0;
@@ -135,8 +138,7 @@ query {
     justify-content: space-between;
     align-items: center;
 
-    padding-top: calc(var(--space) * 0.5);
-    padding-bottom: calc(var(--space) * 0.5);
+    height: var(--screen-padding-top);
     padding-left: var(--logo-padding);
     padding-right: var(--screen-padding-right);
   }
@@ -179,13 +181,9 @@ query {
 	// 		background-size: 60px 60px;
 }
 
-// for banner
-.banner .screen-content {
-  margin-top: calc(var(--space) * 3);
-
-  @media screen and (max-width:375px) {
-    margin-top: calc(var(--space) * 4);
-  }
+// for pages with banner
+.screen.banner {
+ border-top-width: calc(var(--screen-padding-top) + var(--space-bannertop));
 }
 
 </style>

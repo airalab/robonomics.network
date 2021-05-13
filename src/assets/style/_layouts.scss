@@ -118,6 +118,11 @@
 	}
 }
 
+.page-banner {
+	margin-top: 0;
+	font-family: var(--font-family-code);
+}
+
 @keyframes HR {
 	from {
 		transform: scaleX(0);

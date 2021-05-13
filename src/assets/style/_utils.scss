@@ -77,9 +77,9 @@
 
 *[class*='grid-'] { 
   display: grid !important;
-  gap: calc(var(--space)*2);
+  gap: var(--space);
 
-  & > p { margin-bottom: 0; }
+  & > p, & > .card { margin-bottom: 0; }
 }
 
 .grid-4{

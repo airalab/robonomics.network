@@ -32,11 +32,12 @@ export default {
 
     h4 {
       padding-top: calc(var(--space)/2);
+      text-transform: none;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-align: left;
     }
 
-    // &:not(:last-child){
-    //   margin-bottom: var(--space);
-    // }
 
     &__link {
       position: absolute;

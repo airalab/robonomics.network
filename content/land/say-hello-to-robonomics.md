@@ -59,54 +59,54 @@ https://www.youtube.com/embed/IEgvXcj3nSo
 
 <section class="grid-4">
 
-<Card :icon="'/land/icon-wiki.png'" :link="'https://wiki.robonomics.network/docs/en/'">
+<Card :icon="'/land/icon-wiki.png'" :link="'https://wiki.robonomics.network/docs/en/'" orientation="vertical">
 
-### Robonomics Wiki
+#### Robonomics Wiki
 For IoT & Robotics developers
 
 </Card>
 
-<Card :icon="'/land/icon-kuka.png'" :link="'https://wiki.robonomics.network/docs/en/kuka/'">
+<Card :icon="'/land/icon-kuka.png'" :link="'https://wiki.robonomics.network/docs/en/kuka/'" orientation="vertical">
 
-### Launch Kuka manipulator
+#### Launch Kuka manipulator
 Under Robonomics Network control
 
 </Card>
 
-<Card :icon="'/land/icon-application.png'" :link="'https://dapp.robonomics.network/#/'">
+<Card :icon="'/land/icon-application.png'" :link="'https://dapp.robonomics.network/#/'" orientation="vertical">
 
-### Robonomics DAPP
+#### Robonomics DAPP
 Made for connecting IoT & Robotics under Robonomics control smoothly
 
 </Card>
 
-<Card :icon="'/land/icon-rws.png'" :link="'https://share.hsforms.com/1rlIfFL6ZSriaOjtf4NAGPw535vx?sidebar&__hstc=136840367.cb56ffd63c4554e84a6b795a22bdcfee.1602671793634.1605539005983.1605618482734.17&__hssc=136840367.2.1605618482734&__hsfp=1772620931'">
+<Card :icon="'/land/icon-rws.png'" :link="'https://share.hsforms.com/1rlIfFL6ZSriaOjtf4NAGPw535vx?sidebar&__hstc=136840367.cb56ffd63c4554e84a6b795a22bdcfee.1602671793634.1605539005983.1605618482734.17&__hssc=136840367.2.1605618482734&__hsfp=1772620931'" orientation="vertical">
 
-### Sign up for RWS beta
-
-</Card>
-
-<Card :icon="'/land/icon-github.png'" :link="'https://github.com/airalab/robonomics'">
-
-### Github
+#### Sign up for RWS beta
 
 </Card>
 
-<Card :icon="'/land/icon-twitter.png'" :link="'https://twitter.com/AIRA_Robonomics'">
+<Card :icon="'/land/icon-github.png'" :link="'https://github.com/airalab/robonomics'" orientation="vertical">
 
-### Twitter
-
-</Card>
-
-<Card :icon="'/land/icon-youtube.png'" :link="'https://www.youtube.com/c/Airalab'">
-
-### YouTube
+#### Github
 
 </Card>
 
-<Card :icon="'/land/icon-telegram.png'" :link="'https://t.me/robonomics'">
+<Card :icon="'/land/icon-twitter.png'" :link="'https://twitter.com/AIRA_Robonomics'" orientation="vertical">
 
-### Telegram
+#### Twitter
+
+</Card>
+
+<Card :icon="'/land/icon-youtube.png'" :link="'https://www.youtube.com/c/Airalab'" orientation="vertical">
+
+#### YouTube
+
+</Card>
+
+<Card :icon="'/land/icon-telegram.png'" :link="'https://t.me/robonomics'" orientation="vertical">
+
+#### Telegram
 
 </Card>
 

@@ -9,7 +9,7 @@
     <div class="auction page">
 
 
-      <section class="auction-banner section section__solid section__blue">
+      <section class="page-banner auction-banner section section__solid section__blue">
         <h1 class="auction-parachain-title clean">Robonomics slot in Kusama</h1>
         
         <div class="auction-banner-cols layout__content">
@@ -361,11 +361,6 @@
     --duration-bubble: 3s;
     --bubble-size: 6rem;
     --slot-size: 3rem;
-
-
-    h1, h2, h3, h4 {
-      font-family: var(--font-family-code);
-    }
   }
 
   .section__solid {
@@ -788,7 +783,6 @@
   .auction-banner {
     overflow: hidden;
     text-align: center;
-    margin-top: 0;
 
     .button, h2, h3 {
       margin-bottom: calc(var(--space)/2);
