@@ -3,9 +3,9 @@
   img: 'docs-book-3.jpg'
   buttonicon: '↗'
   options:
-    - link: 'https://gateway.pinata.cloud/ipfs/QmQNZTGS2YWs6jytPa5XY6sN9ithoAv8VQ7p5V8Tw8RfmW'
+    - link: 'https://gateway.pinata.cloud/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi'
       text: 'English'
-    - link: 'https://gateway.pinata.cloud/ipfs/QmUTqwtq7ATN7TkB9weuZKExwxcJxP1rb6GkpmNm96hA9Q'
+    - link: 'https://gateway.pinata.cloud/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V'
       text: 'Russian'
       
 - title: 'Robonomics Keypoint, updated March 2021'
