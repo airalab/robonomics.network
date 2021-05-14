@@ -1,5 +1,6 @@
 <template>
   <transition name="fade" appear>
+   
   
     <div class="screen" :class="BannerLink('/kusama-slot')?'banner':''">
 
@@ -197,7 +198,9 @@ export default {
   },
   methods: {
     BannerLink(p) {
-      return this.$router.currentRoute.path != p
+      let current = this.$router.currentRoute.path
+      current = current.replace(/\/$/,' ')
+      return current != p
     }
   }
 }
