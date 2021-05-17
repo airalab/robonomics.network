@@ -92,7 +92,7 @@
                   25% right after the win, 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks)
                 </li>
 
-                <li>Receive increased staking of <strong>50% annual return</strong> for the next 2 years</li>
+                <li>Receive increased staking of <strong>125% return</strong> for the next 48 weeks</li>
 
                 <li>
                   <strong>Contribute to the future:</strong>
@@ -161,7 +161,7 @@
           </div>
 
           <h3>For KSM holders</h3>
-          <p class="hyphens">Robonomics PLO may be interesting for stakeholders who are looking for ways to diversify their KSM stake next 2 years inside the ecosystem. <g-link to="/community#token">XRT</g-link> is ERC-20 token, available on Uniswap, Huobi, and in addition on PancakeSwap.</p>
+          <p class="hyphens">Robonomics PLO may be interesting for stakeholders who are looking for ways to diversify their KSM stake next 48 weeks inside the ecosystem. <g-link to="/community#token">XRT</g-link> is ERC-20 token, available on Uniswap, Huobi, and in addition on PancakeSwap.</p>
 
         </Card>
 
