@@ -164,7 +164,7 @@ hr {
   -ms-hyphens: auto;
   hyphens: auto;
 
-  h1, h2, h3, h4, h5 { text-align: center !important; }
+  // h1, h2, h3, h4, h5 { text-align: center !important; }
 }
 
 .align-left { text-align: left; }
@@ -263,4 +263,10 @@ p, ul, ol, li, blockquote, table {
     background-color: #b5deff;
     font-weight: bold;
   }
+}
+
+.text-col-2 {
+  column-count: 2;
+  column-gap: var(--space);
+  &, h1, h2, h3, h4, h5 { text-align: left; }
 }
