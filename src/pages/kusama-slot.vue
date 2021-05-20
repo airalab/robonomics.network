@@ -21,7 +21,7 @@
               <div class="slot empty slot-3"><span>3</span></div>
               <div class="slot empty slot-4"><span>4</span></div>
               <div class="slot empty slot-5"><span>5</span></div>
-              <div class="slot empty slot-6"><span>6</span></div>
+              <!-- <div class="slot empty slot-6"><span>6</span></div> -->
               <div class="bubble robonomics">
                 <g-image src="~/assets/images/robonomics.png" alt="Robonomics Parachain"/>
               </div>
@@ -34,7 +34,7 @@
           </div>
 
           <div class="auction-banner-form align-center">
-            <h3>3rd-6th slot auctions to win</h3>
+            <h3>3rd-5th slot auctions to win</h3>
             <g-image class="astronaut" alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
             <Button label="Stay tuned on Twitter" link="https://twitter.com/AIRA_Robonomics" button="primary green large"/>
             <p>
