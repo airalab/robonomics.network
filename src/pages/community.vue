@@ -55,7 +55,7 @@
                   <h3>XRT/ETH pair:</h3>
 
                   <div class="line-text">
-                    <g-link class="button border" to="https://uniswap.info/pair/0x3185626c14acb9531d19560decb9d3e5e80681b1">Uniswap</g-link>
+                    <g-link class="button border" to="https://v2.info.uniswap.org/pair/0x3185626c14acb9531d19560decb9d3e5e80681b1">Uniswap</g-link>
                     <g-link class="button border" to="https://www.huobi.com/ru-ru/exchange/xrt_eth/">Huobi</g-link>
                     <g-link class="button border" to="https://www.coingecko.com/en/coins/robonomics-network/">Сoingecko</g-link>
                   </div>
@@ -88,7 +88,7 @@
 
                 <div class="section">
                     <h3>RWS/XRT pair:</h3>
-                    <g-link class="button border" to="https://uniswap.info/pair/0x42018a2ff89b6d662b5f746277bd02f0d85f485a">Uniswap</g-link>
+                    <g-link class="button border" to="https://v2.info.uniswap.org/pair/0x42018a2ff89b6d662b5f746277bd02f0d85f485a">Uniswap</g-link>
                 </div>
 
                 <div class="section">
