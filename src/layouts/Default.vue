@@ -20,7 +20,7 @@
           </div>
           <nav class="header-nav sidetext">
               <g-link to="/community#intouch">Community</g-link>
-              <g-link to="/timeline">Timeline</g-link>
+              <g-link to="/vision">Vision</g-link>
               <g-link to="/blog">Blog</g-link>
           </nav>
         </div>
