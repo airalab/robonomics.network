@@ -1,3 +1,10 @@
+- title: '2021, Robot-as-a-Service: From Cloud to Peering Technologies'
+  description: 'Aleksandr Kapitonov*, Sergey Lonshakov, Vitaly Bulatov*, Babak Kia Montazam, James White'
+  buttonicon: '↗'
+  options:
+    - link: 'https://www.frontiersin.org/articles/10.3389/frobt.2021.560829/full'
+      text: 'Frontiers'
+      
 - title: '2020, Trustable Environmental Monitoring by means of Sensors Networks on Swarming Autonomous Marine Vessels and Distributed Ledger Technology'
   description: 'Ivan Berman, Enrica Zereik, Aleksandr Kapitonov, Fabio Bonsignorio, Alisher Khasanov, Aziza Oripova, Sergey Lonshakov, Vitaly Bulatov'
   buttonicon: '↗'
