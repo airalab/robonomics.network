@@ -3,7 +3,7 @@
 
     <MetaInfo
       :pageTitle = "'Robonomics slot in Kusama'"
-      :pageDescription = "'Robonomics developers aim to allocate $720,000 for a 48 weeks lease of a slot in the Kusama network. This underlying amount of XRT will be distributed among the KSM holders who will support the project with their tokens at the upcoming auction of Polkadot’s wild cousin.'"
+      :pageDescription = "'Robonomics developers aim to allocate $720,000 for 48 weeks lease of a slot in the Kusama network. This underlying amount of XRT will be distributed among the KSM holders who will support the project with their tokens at the upcoming auction of Polkadot’s wild cousin.'"
     />
 
     <div class="auction page">
