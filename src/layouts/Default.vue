@@ -199,7 +199,7 @@ export default {
   methods: {
     BannerLink(p) {
       let current = this.$router.currentRoute.path
-      current = current.replace(/\/$/,' ')
+      current = current.replace(/\/$/,'')
       return current != p
     }
   }
