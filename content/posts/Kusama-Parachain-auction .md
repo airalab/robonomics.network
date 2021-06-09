@@ -16,20 +16,18 @@ import Button from '~/components/Button.vue'
 
 </section>
 
+**Actual information available here: https://robonomics.network/kusama-slot**
+
 **Every participant will be rewarded with XRT.** Per 1 KSM contributed, 1 XRT is rewarded.
 
-The reward in XRT will be distributed pro rata throughout the first month after auction completion.
-
-- 25% of XRT tokens are distributed right after the win. It will be the ERC-20 token, traded on Uniswap, and also available on Huobi.
-- 75% of XRT tokens are distributed after the successful launch of the Robonomics parachain on the Kusama network. Estimated in 2-4 weeks after winning the slot auction.
-
-XRT staking will go live by the summer of 2021.
-
-**Participants of the auction receive increased staking of 50% annual return for the next 2 years.**
+- Get 1KSM = 1XRT: XRT is ERC-20 token, available on Uniswap, Huobi, and in addition on PancakeSwap
+- Quick rewards available: 25% right after the win, 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks)
+- Receive increased staking of 125% return for the next 48 weeks
+- Contribute to the future: Robonomics integrates new technologies into the real economy 
 
 Crowdloan limit: 100,000 KSM
 
-Robonomics will participate in 3rd-6th slot auctions to win.
+Robonomics will participate in 3rd-5th slot auctions to win. Support Robonomics in the Kusama slots auction.
 
 <section class="animate-inside" v-in-viewport.once>
 
