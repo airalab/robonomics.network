@@ -109,7 +109,7 @@
 
       <hr class="animate" v-in-viewport.once/>
 
-      <h2 class="layout">How to contribute in crowdloan</h2>
+      <h2 class="layout">How to participate in Robonomics crowdloan</h2>
       <section class="auction-steps grid-3 animate-inside layout layout__content" v-in-viewport.once>
 
         <Card orientation="vertical" back="transparent">
