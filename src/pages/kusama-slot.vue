@@ -10,7 +10,7 @@
 
 
       <section class="page-banner auction-banner section section__solid section__blue">
-        <h1 class="auction-parachain-title clean">Robonomics slot in Kusama</h1>
+        <h1 class="auction-parachain-title clean">Crowdloan for Robonomics in Kusama</h1>
         
         <div class="auction-banner-cols layout__content">
           <div class="auction-banner-kusama">
@@ -109,7 +109,7 @@
 
       <hr class="animate" v-in-viewport.once/>
 
-      <h2 class="layout">How does auction work</h2>
+      <h2 class="layout">How to contribute in crowdloan</h2>
       <section class="auction-steps grid-3 animate-inside layout layout__content" v-in-viewport.once>
 
         <Card orientation="vertical" back="transparent">
@@ -141,7 +141,7 @@
           </div>
 
           <h3>3.Go</h3>
-          <p class="hyphens">Find Robonomics Parachain in 'Ongoing' during 3rd-6th slot Kusama Parachains Auction and contribute. You can follow <g-link to="https://blog.aira.life/how-to-participate-in-parachain-auctions-crowdloan-module-guide-by-robonomics-53bad74d2e77">this guide</g-link> to contribute.</p>
+          <p class="hyphens">Find Robonomics Parachain in 'Ongoing' during 3rd-5th slot Kusama Parachains Auction and contribute. You can follow <g-link to="https://blog.aira.life/how-to-participate-in-parachain-auctions-crowdloan-module-guide-by-robonomics-53bad74d2e77">this guide</g-link> to contribute.</p>
 
         </Card>
 
@@ -761,12 +761,12 @@
   /* end SUBSRIBTION FORM */
 
 
-  .auction-parachain-title:after {
-    content: " ++";
+  // .auction-parachain-title:after {
+  //   content: " ++";
 
-    opacity: 0;
-    animation: blink var(--duration-mainpic) ease-out 0.1s forwards;
-  }
+  //   opacity: 0;
+  //   animation: blink var(--duration-mainpic) ease-out 0.1s forwards;
+  // }
 
   .astronaut {
     display: block;
