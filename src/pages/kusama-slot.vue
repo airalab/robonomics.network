@@ -34,7 +34,7 @@
           </div>
 
           <div class="auction-banner-form align-center">
-            <h3>Waiting for the 3rd-5th slot auctions to win</h3>
+            <h3>Waiting for the 3rd-5th slot auctions</h3>
             <g-image class="astronaut" alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
             <Button label="Stay tuned on Twitter" link="https://twitter.com/AIRA_Robonomics" button="primary green large"/>
             <p>
