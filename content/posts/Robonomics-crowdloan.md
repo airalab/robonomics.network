@@ -45,8 +45,8 @@ Before participating in the crowdloan, double-check that the campaign is live [o
 
 By default, Polkadot developers provided a native interface in the [substrate portal](https://polkadot.js.org/apps/#/parachains/crowdloan)
 
-
-Example of the Crowdloan page on June 10th, 2021.
+![Screenshot 2021-06-11 at 18 38 50](https://user-images.githubusercontent.com/47581603/121712639-a2589280-cae4-11eb-96b8-748c048326cf.png)
+Example of the Crowdloan page on June 11th, 2021.
 
 At the start of April, Robonomics practised participating in auctions by using the Crowdloan module on the Rococo network. You can check out this Twitter thread to familiarize yourself with the standard interface for community participation in [Polkadot auctions](https://twitter.com/AIRA_Robonomics/status/1377653645827833860)
 
