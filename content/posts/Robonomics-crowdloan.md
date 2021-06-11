@@ -3,7 +3,7 @@ title: Robonomics Crowdloan and further steps, June 2021
 date: 2021-06-11
 published: true
 tags: ['Tokens', 'Robonomics parachain', 'Kusama']
-cover_image: ./images/KusamaCrowdloan/crowdloan_&_further_step_blog.jpg
+cover_image: ![CrowdloanCover](https://user-images.githubusercontent.com/47581603/121713146-31fe4100-cae5-11eb-9ec9-274aec4ffa3c.jpg)
 description: "Robonomics Kusama Crowdloan strategy and FAQ"
 abstract: "Robonomics Kusama Crowdloan strategy and FAQ"
 ---
