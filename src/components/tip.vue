@@ -35,7 +35,8 @@ export default {
     detailsClass() {
       return {
         [`${this.position}`]: true,
-        [`summaryScale`]: this.summaryScale
+        [`summaryScale`]: this.summaryScale,
+        [`tip-container`]: true
       };
     },
     summaryClass() {
@@ -99,6 +100,7 @@ export default {
         padding: calc(var(--space)/2);
         width: var(--tip-width);
         font-weight: 500;
+        z-index: 1000;
     }
 
     details.right-bottom .tip {
