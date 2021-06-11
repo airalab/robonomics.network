@@ -74,7 +74,7 @@ We’re placing our bets on 100,000 KSM being enough to win one of the Kusama ne
 
 ### What will happen if Robonomics doesn’t win the 5th auction? 
 
-To be honest, we don’t have a plan B. If anything, [we'll be like Schwarzenegger](https://youtu.be/Ri-M_Vo3w5A).
+To be honest, we don’t have a plan B. [We'll be like Schwarzenegger](https://youtu.be/Ri-M_Vo3w5A).
 
 </Card>
 
