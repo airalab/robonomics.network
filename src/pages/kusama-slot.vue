@@ -162,7 +162,7 @@
             </section>
 
             <section id="participate-3" v-if="selectedWay==3">
-              <p>Here are exchanges supporting Kusama Parachain Slot Auction. More details expected closer to the Third Kusama Parachain Slot auction beginning.</p>
+              <p>Here are examples of exchanges that have announced supporting Kusama Parachain Slot Auction. More details expected closer to the Third Kusama Parachain Slot auction beginning.</p>
               <dl class="participate-2-exchanges">
                 
                 <dt><g-link to="https://www.kraken.com/learn/parachain-auctions"><g-image src="~/assets/images/kraken-logo.webp"/></g-link></dt>
