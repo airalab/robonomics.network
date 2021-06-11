@@ -1,8 +1,7 @@
 <template>
   
     <section class="layout layout__text">
-      <hr/>
-      <h3>Related:</h3>
+      <h3>Related posts:</h3>
       <section class="relatedPosts">
         <PostCard v-for="edge in related" :key="edge.id" :post="edge"/>
       </section>
@@ -66,21 +65,12 @@
       margin-bottom: var(--space);
     }
 
-    .post-card {
-      // display: grid;
-      // grid-template-columns: 250px 1fr;
-      // align-items: center;
-      // h4 { margin-bottom : 0; }
-
-      // @media screen and (max-width:550px){
-      //   grid-template-columns: 1fr;
-      // }
-
-      .post-card__content { display: none}
-    }
-
     .post-card__header { 
       margin-bottom : 0;
+    }
+
+    h4 {
+      font-size: 90%
     }
   }
 </style>
