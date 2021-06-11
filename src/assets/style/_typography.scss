@@ -246,7 +246,7 @@ table {
   }
 }
 
-p, ul, ol, li, blockquote, table {
+p, ul, ol, li, blockquote, table, dd {
   @extend %margin_text;
 }
 

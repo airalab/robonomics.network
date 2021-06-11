@@ -10,7 +10,7 @@
 
 
       <section class="page-banner auction-banner section section__solid section__blue">
-        <h1 class="auction-parachain-title clean">Crowdloan for Robonomics in Kusama</h1>
+        <h1 class="auction-parachain-title clean">Crowdloan for Robonomics on Kusama</h1>
         
         <div class="auction-banner-cols layout__content">
           <div class="auction-banner-kusama">
@@ -106,47 +106,96 @@
       </section>
       
 
-      <Abstract text="Robonomics crowdloan campaign for a parachain slot is coming very soon! Contribute and get rewards." />
+      <Abstract text="Robonomics crowdloan campaign for a parachain slot starts on the eve of Third Kusama Parachain Slot auction, 2021/06/28! Contribute and get rewards." />
 
       <hr class="animate" v-in-viewport.once/>
 
-      <h2 class="layout">How to participate in Robonomics crowdloan</h2>
-      <section class="auction-steps grid-3 animate-inside layout layout__content" v-in-viewport.once>
-
-        <Card orientation="vertical" back="transparent">
-
-          <div class="image">
-            <g-image alt="" src="~/assets/images/plo-girl-1.png"/>
-          </div>
-
-          <h3>1.Ready</h3>
-          <p class="hyphens">To participate in Robonomics Kusama parachain crowdloan campaign you'll need KSM tokens. If your KSM are bonded, you will need to unbond your KSM at least 7 days before the Crowdloan start.</p>
-
-        </Card>
-
-        <Card orientation="vertical" back="transparent">
+      <section class="auction-support layout">
           
-          <div class="image">
-            <g-image src="~/assets/images/plo-girl-2.png" />
+          <h2 class="animate" v-in-viewport.once>Participate in the Robonomics crowdloan</h2>
+
+          <p class="layout__text animate" v-in-viewport.once><i>By participating in the Robonomics crowdloan you lock your KSM for a period of time 48 weeks to help Robonomics lease a parachain slot and gain Kusama’s distributed computing power to service up to 10,000 digital twins of IoT devices at once.</i></p>
+          
+          <div class="auction-support-action animate" v-in-viewport.once>
+            <div class="auction-support-wait">
+              <div>
+                  <g-image alt="" src="~/assets/images/plo-girl-1.png" aria-hidden="true"/>
+                  <b>Crowdloan campaign will start <br/>on 28 June 2021</b>
+              </div>
+            </div>
+
+            <div>
+              <small>Choose the way:</small>
+              <select class="block" v-model="selectedWay">
+                <option selected value="1">1 - On website</option>
+                <option value="2">2 - On Polkadot Substrate portal</option>
+                <option value="3">3 - Via exchanges</option>
+              </select>
+            </div>
+
+            <section id="participate-1" v-if="selectedWay==1">
+          
+              <form>
+                <section>
+                  <label class="block label">
+                    <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-1"/>
+                    <span>I have installed the <g-link to="https://polkadot.js.org/extension/">Polkadot.js browser extension</g-link></span>
+                  </label>
+
+                  <label class="block label">
+                    <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-2" />
+                    <span>I have KSM in my Polkadot.js account</span>
+                  </label>
+
+                  <label class="block label">
+                    <input type="checkbox" class="big" required  v-model="checkedFlags" value="crowdloan-flag-3" /> 
+                    <span>My KSM has been unbonded</span> 
+                    <tip summary="☝️" position="right-bottom" class="inline-block-clear">
+                      Supporters who are currently staking (bonding) their KSM will need to unstake prior to bonding their KSM to the crowdloan module.
+                      Kusama has a delayed exit period ~ 7 days. <g-link to="https://wiki.polkadot.network/docs/en/maintain-guides-how-to-unbond">How to unbond KSM</g-link>
+                    </tip>
+                  </label>
+                </section>
+
+                <Button label="Connect Polkadot.js extension" :button="checkedFlags.length==3?'primary block green large':'primary block large'" disabled="true"/>
+              </form>
+            </section>
+
+            <section id="participate-3" v-if="selectedWay==3">
+              <p>Here are exchanges supporting Kusama Parachain Slot Auction. More details expected closer to the Third Kusama Parachain Slot auction beginning.</p>
+              <dl class="participate-2-exchanges">
+                
+                <dt><g-link to="https://www.kraken.com/learn/parachain-auctions"><g-image src="~/assets/images/kraken-logo.webp"/></g-link></dt>
+                <dd><g-link to="https://www.kraken.com/learn/parachain-auctions">https://www.kraken.com/</g-link></dd>
+
+                <dt><g-link to="https://www.okex.com/"><g-image src="~/assets/images/okex-logo.png"/></g-link></dt>
+                <dd><g-link to="https://www.okex.com/">https://www.okex.com/</g-link></dd>
+
+                <dt><g-link to="https://www.kucoin.com/news/en-kucoin-will-support-the-kusama-slot-auction"><g-image src="~/assets/images/kucoin-logo.png"/></g-link></dt>
+                <dd><g-link to="https://www.kucoin.com/news/en-kucoin-will-support-the-kusama-slot-auction">https://www.kucoin.com/</g-link></dd>
+              </dl>
+            </section>
+
+             <section id="participate-2" v-if="selectedWay==2" style="width:80%">
+               <p><g-link to="https://polkadot.js.org/apps/#/parachains/crowdloan">https://polkadot.js.org/apps/#/parachains/crowdloan</g-link></p>
+               <p>In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions: <g-link style="display:block;word-break: break-all;" to="https://twitter.com/AIRA_Robonomics/status/1377653645827833860">https://twitter.com/AIRA_Robonomics/status/1377653645827833860</g-link></p>
+            </section>
+
+          
           </div>
-
-          <h3>2.Steady</h3>
-          <p class="hyphens">Crowdloan camphain for a parachain slot will begin after Kusama Parachains Launch Phase 3, when official Polkadot Crowdloan module will be available in Mainnet. Estimated summer 2021. Do not miss announcements on <g-link to="https://twitter.com/AIRA_Robonomics">Twitter</g-link></p>
-
-        </Card>
-
-        <Card orientation="vertical" back="transparent">
-
-          <div class="image">
-            <g-image src="~/assets/images/plo-girl-3.png" />
-          </div>
-
-          <h3>3.Go</h3>
-          <p class="hyphens">Find Robonomics Parachain in 'Ongoing' during 3rd-5th slot Kusama Parachains Auction and contribute. You can follow <g-link to="https://blog.aira.life/how-to-participate-in-parachain-auctions-crowdloan-module-guide-by-robonomics-53bad74d2e77">this guide</g-link> to contribute.</p>
-
-        </Card>
 
       </section>
+
+    
+        <!-- <div class="auction-product-desc">
+          <h3>Robonomics parachain in Kusama</h3>
+          <ul>
+            <li><a href="#">Great potential</a> for IoT systems</li>
+            <li><a href="#">Scientific approach</a> in research and practice</li>
+            <li><a href="#">Real development strategy</a> for the next 2 years</li>
+          </ul>
+        </div> -->
+
 
       <hr class="animate" v-in-viewport.once/>
 
@@ -279,6 +328,7 @@
 
 
 <script>
+// import Land from '../templates/Land.vue'
 
   export default {
     components: {
@@ -304,7 +354,9 @@
         statusSubmit: 'none',
         recaptchaSitekey: "6LeWbWQUAAAAAPkpf_6AokhGBcvnOexOpbARwk6Z",
         // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost,
-        parachainTab: 1
+        parachainTab: 1,
+        checkedFlags: [],
+        selectedWay: 1
       }
     },
 
@@ -335,6 +387,12 @@
           }
         }
       },
+
+      computed: {
+        // checkedFlagsCrowdloan: function() {
+        //   return this.checkedFlags.size
+        // }
+      }
   }
 </script>
 
@@ -369,6 +427,71 @@
     padding-bottom: calc(var(--space) * 3);
   }
   /*end BASICS*/
+
+  /* AUCTION PARTICIPATION */
+  .auction-support-action {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 110%;
+    font-weight: 500;
+
+    position: relative; // for waiting tip
+    min-height: 400px; // for waiting tip
+
+    select {
+      background-image: url('~@/assets/images/3.gif');
+			background-size: 2.8rem;
+      background-repeat: no-repeat;
+      background-position: calc(100% - 0.4rem) calc(50% + 0.4rem);
+    }
+
+    .tip-container {
+      margin-left: 0.5rem
+    }
+  }
+
+  .participate-2-exchanges {
+    dt img {
+      max-width: 200px;
+    }
+  }
+
+
+  .auction-support-wait {
+    --auction-support-wait-size: 250px;
+    position: absolute;
+    bottom: 0;
+    right: calc(var(--auction-support-wait-size) * (-1) + 50px);
+    z-index: 10;
+   
+    width: var(--auction-support-wait-size);
+    height: var(--auction-support-wait-size);
+    background-color: var(--color-light);
+    padding: 20px;
+    border-radius: calc(var(--auction-support-wait-size) /2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+    text-align: center;
+
+    animation: FloatY 5s linear 0.4s infinite;
+
+    img {
+      display: block;
+      width: 60%;
+      margin: 0 auto 10px;
+    }
+
+    @media screen and(max-width: 960px) {
+      position: static;
+      margin: 30px auto;
+    }
+  }
+  /* end AUCTION PARTICIPATION */
 
   /* ROBONOMICS KUSAMA PARACHAIN INFO */
   .kusama-parachain {
