@@ -11,7 +11,6 @@ abstract: "Robonomics Kusama Crowdloan strategy and FAQ"
 
 During the summer of 2021, we’ll see the first five auctions that will allow projects to rent Kusama network slots for a period of 48 weeks (or 1 year). Becoming one of Kusama's parachains is a good way to provide access to your Substrate project within the Polkadot ecosystem, implement currently unavailable Blockchain network security to small projects, as well as initiate the integration process with other ecosystem projects as soon as possible. The goal of Robonomics for 2022 is to become a fully functioning conductor of IoT projects to the Polkadot ecosystem. This is why all of the aforementioned benefits of launching a Kusama network are important to us. And in general, our strategy has already been published a long time ago. Kusama first, while Polkadot is a vision. In this post, we’ll dissect the use of the Cowdloan module in detail and take a look at the parachain update plan after launching. 
 
-
 ## Kusama crowdloans have started!
 
 The following is the case assuming that no significant and unexpected issues are found with the relay-chain logic. (In such a case, all options should remain on the table for network governance, including pausing or postponing any scheduled or ongoing auctions.)
@@ -53,7 +52,7 @@ At the start of April, Robonomics practised participating in auctions by using t
 
 Also, it’s worth mentioning that on the official [Robonomics site](https://robonomics.network/kusama-slot ), functionality for interacting with the Crowdloan module will be made available.
 
-
+![RoboCrowdloanGIF](./images/KusamaCrowdloan/crowdloan2.gif)
 This is what Crowdloan participation will look like on the Robonomics site after June 28th. 
 
 Instructions on how to use the Crowdloan interface module through the Robonomics website will be published closer to the start of the third auction. 
@@ -64,7 +63,7 @@ Instructions on how to use the Crowdloan interface module through the Robonomics
 
 Developers could publish the Crowdloan module today, but then we would have to implement limits. As can be noticed, the first 4 projects that published their Crowdloan modules established a 1 million KSM token limit. 
 
-We’re placing our bets on 100,000 KSM being enough to win one of the Kusama network auctions, but are also reserving space for ourselves to quickly adjust the limit if we come to understand that more KSM tokens will need to be collected by the conclusion of the first and second rounds. In general, we’re trying to manoeuvre in search of an optimal rental cost for a slot. 
+We’re placing our bets on 100,000 KSM being enough to win one of the Kusama network auctions, but are also reserving space for ourselves to quickly adjust the limit if we come to understand that more KSM tokens will need to be collected by the conclusion of the first and second rounds. In general, we’re trying to manoeuvre in search of an optimal rental cost for a slot.
 
 ### What will happen if Robonomics doesn’t win the 5th auction? 
 
@@ -114,4 +113,4 @@ https://robonomics.network/blog/robobank-introduction/
 - Ecosystem integration updates (before the end of the year). Further, we will focus attention on integrations with other parachains to expand the capabilities of IoT projects that are interested in what Polkadot can do. 
 
 
-> Stay tuned and follow our updates [on Twitter](https://twitter.com/AIRA_Robonomics)! 
+Stay tuned and follow our updates [on Twitter](https://twitter.com/AIRA_Robonomics)! 
