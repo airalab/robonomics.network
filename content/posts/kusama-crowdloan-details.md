@@ -102,9 +102,9 @@ A parachain comes to life inseparably from the moment auction results are conclu
 
 - XRT transfers between balances
 
-- Launch of IoT devices using XRT as payment for transactions 
+- Launch of IoT devices using XRT for paying transaction fees 
 
-- Sending IoT device telemetry using XRT as payment for transactions 
+- Sending IoT device telemetry using XRT for paying transaction fees 
 
 - Sudo
 
