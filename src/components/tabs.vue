@@ -80,9 +80,7 @@ export default {
         
         this.tabs = this.$children;
 
-        console.log('tab ' + window.location.hash)
-        console.log('findTab ' + this.findTab(window.location.hash))
-        console.log('$children ' + this.$children)
+        console.log(this.$children)
 
         if (window.location.hash){
             const selectedTab = this.findTab(window.location.hash);
@@ -92,8 +90,6 @@ export default {
     },
     methods: {
         findTab(hash) {
-            console.log('this.tabs ' + this.tabs)
-            console.log('hash ' + hash)
             return this.tabs.find(tab => '#' + tab.name.toLowerCase().replace(/ /g, '-') === hash);
         },
 
