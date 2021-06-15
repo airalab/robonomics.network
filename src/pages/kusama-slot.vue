@@ -4,6 +4,7 @@
     <MetaInfo
       :pageTitle = "'Robonomics slot in Kusama'"
       :pageDescription = "'Help Robonomics lease a parachain slot and gain Kusama’s distributed computing power to service up to 10,000 digital twins of IoT devices at once.'"
+      :pageImage = "'/website_cover_crowdloan.jpg'"
     />
 
     <div class="auction page">
