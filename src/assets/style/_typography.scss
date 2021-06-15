@@ -154,7 +154,11 @@ hr {
   border: 0;
   outline: 0;
   height: 1rem;
-  background-color: #fff
+  background-color: #fff;
+
+  &.no-margins {
+    margin: 0;
+  }
 }
 
 .hyphens{

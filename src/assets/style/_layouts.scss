@@ -5,6 +5,8 @@
   &__solid{
   	background-color: var(--color-light);
 	padding: 1rem;
+	margin-top: 0;
+  	margin-bottom: 0;
 
   	h1, h2, h3, h4, h5 {
   		margin-bottom: var(--space-text);
@@ -130,4 +132,34 @@
 	to{
 		transform: scaleX(1);
 	}
+}
+
+
+
+.faq {
+  .faq-q {
+	  &:before{
+		  content: "Q.";
+	  }
+
+	  text-align: left;
+	  font-weight: bold;
+	  color: var(--color-red)
+  }
+
+  .faq-a {
+	&:before{
+		content: "A.";
+	}
+  }
+
+  .faq-q, .faq-a {
+	&:before{
+		display: inline-block;
+		font-size: 200%;
+		font-weight: bold;
+		line-height: 1;
+	}
+  }
+
 }

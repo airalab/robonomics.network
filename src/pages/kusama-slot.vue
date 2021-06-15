@@ -322,6 +322,88 @@
         </section>
       </section>
 
+      <hr class="animate no-margins" v-in-viewport.once/>
+
+      <section class="section__solid section__darkgray layout">
+        
+          <h2 class="animate" v-in-viewport.once>Your questions</h2>
+
+          <div class="layout__text hyphens faq">
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">How long will the auction for Robonomics parachain slot last?</h3>
+              <article class="faq-a">
+               Robonomics starts the Crowdloan module from the 3rd auction (<g-link to="https://polkadot.network/kusama-parachain-auctions/">2021/06/29, 12:00 GMT</g-link>). Contributions 
+               will be accepted at any point from the start and before their success or end of 5th 
+               auction (<g-link to="https://polkadot.network/kusama-parachain-auctions/">2021/07/13, 12:00 GMT + duration of 5th auction</g-link>). Before participating in 
+               the crowdloan, double-check that the campaign is live <g-link to="https://twitter.com/AIRA_Robonomics">on Twitter</g-link>. Please, remember that all crowdloan contributions 
+               are handled by the Crowdloan module’s logic where a campaign is identified by index, not by address. Never transfer tokens to an address 
+               in support of a campaign.
+              </article>
+            </section>
+
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">Why does Robonomics participation start only from the third round?</h3>
+              <article class="faq-a">
+               Developers could publish the Crowdloan module today, but then we would have to implement limits. As can be noticed, the first 4 projects that published their Crowdloan modules established a 1 million KSM token limit. We’re placing our bets on 100,000 KSM being enough to win one of the Kusama network auctions, but are also reserving space for ourselves to quickly adjust the limit if we come to understand that more KSM tokens will need to be collected by the conclusion of the first and second rounds. In general, we’re trying to manoeuvre in search of an optimal rental cost for a slot.
+              </article>
+            </section>
+
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">Will it be possible to participate in the Robonomics crowdloan through exchanges?</h3>
+              <article class="faq-a">
+               Some well-known exchanges like Kraken and Okex are already providing crowdloan support for their users. On this 
+               page you can find participation module with different ways to support Robonomics in auction. We will update the list of relevant exchanges that support interaction with the Crowdloan module at the start of the 3rd auction.
+              </article>
+            </section>
+
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">Do I have to unbond my KSM to participate in auction?</h3>
+              <article class="faq-a">
+               You need to unbond your KSM, if you are currently staking (bonding) it. If you are going to 
+               participate in crowdloan campaign through the exchange, please, contact it directly for more details. Read <g-link to="https://guide.kusama.network/docs/en/mirror-maintain-guides-how-to-stop-validating#unbond-your-tokens">how to unbond your KSM</g-link> on Kusama WIKI.
+              </article>
+            </section>
+
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">How long will the KSM tokens be locked in case of successful campaign?</h3>
+              <article class="faq-a">
+               Your KSM will be locked for the full duration of the Robonomics parachain lease. This will in in total 48 weeks after winning the auction.
+              </article>
+            </section>
+
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">Will my KSM be returned after the parachain lease ends?</h3>
+              <article class="faq-a">
+               Yes, your KSM will be automatically returned to you when the parachain lease ends.
+              </article>
+            </section>
+            
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">How/when will rewards be distributed?</h3>
+              <article class="faq-a">
+               You'll get 1 XRT per 1 KSM contribution in Robonomics crowdloan for a slot on Kusama. 25% right after the win, 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks).
+              </article>
+            </section>
+
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">What will happen to my KSM if Robonomics doesn’t win the 3rd-5th auctions?</h3>
+              <article class="faq-a">
+               If Robonomics does not win the 3th auction, it will continue to bid in the subsequent auctions. If Robonomics doesn’t win any auctions, the crowdloan will end, the funds will be returned to holders.
+              </article>
+            </section>
+
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">What will happen to Robonomics parachain if it doesn’t win the 3rd-5th auctions?</h3>
+              <article class="faq-a">
+               If Robonomics fails to win any auction in this auction period, it will prepare for the next auction period 48 weeks later. If next period will be also unsuccessful, the parachain will turn into a <g-link to="https://wiki.polkadot.network/docs/en/learn-parathreads#docsNav">parathread</g-link>. However, developers have already published preparation plans for future slot auctions: here’s a publication from October 26th, 2020, <g-link to="https://robonomics.network/blog/robonomics-parachain-lease-offering/">Robonomics Parachain Lease Offering, On-chain Governance Strategy</g-link>. We also have a secret plan concerning the development of an algorithm to be built into the Robonomics protocol, which will autonomously generate beneficial bonding terms for KSM/DOT holders that will also benefit Robonomics. In general, we contemplate over medium-term issues in advance and continue to think about important matters such as maintaining Robobomics in the state of a parachain today.
+              </article>
+            </section>
+
+          </div>
+
+
+      </section>
+
     </div>
 
   </layout>
