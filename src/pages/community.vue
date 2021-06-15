@@ -13,15 +13,36 @@
 
     <section class="layout layout__text">
 
-      <tabs>
+      <div class="tabs">
+        <ul class="tabs__list">
+          <li :class="{ 'is-active': activeTab == '#docs' }">
+            <a href="#docs" @click="setTab('#docs')">Docs</a>
+          </li>
 
-          <tab name="Docs" :selected="true">
-              <share :assets="docs"/>
-          </tab>
+          <li :class="{ 'is-active': activeTab == '#token' }">
+            <a href="#token" @click="setTab('#token')">Token</a>
+          </li>
 
-          <tab name="Token">
+          <li :class="{ 'is-active': activeTab == '#science' }">
+            <a href="#science" @click="setTab('#science')">Science</a>
+          </li>
 
-              <p class="hyphens"><strong>There are 2 tokens in Robonomics for now: XRT and RWS. Please, research the information below carefully before buying or asking questions in Community. You are welcome!</strong></p>
+          <li :class="{ 'is-active': activeTab == '#assets' }">
+            <a href="#assets" @click="setTab('#assets')">Assets</a>
+          </li>
+
+          <li :class="{ 'is-active': activeTab == '#intouch' }">
+            <a href="#intouch" @click="setTab('#intouch')">Intouch</a>
+          </li>
+        </ul>
+
+        <div class="tabs__content">
+          <div v-show="activeTab == '#docs'">
+            <share :assets="docs"/>
+          </div>
+
+          <div v-show="activeTab == '#token'">
+            <p class="hyphens"><strong>There are 2 tokens in Robonomics for now: XRT and RWS. Please, research the information below carefully before buying or asking questions in Community. You are welcome!</strong></p>
 
 
               <div class="section oldy token">
@@ -106,21 +127,26 @@
                   <li>Robonomics (robonomics.network) and / or the AIRA (Airalab) team member WILL NOT send you any personal messages before you ask yourself for our help. Beware of messages containing any fake addresses or asking you personal data.</li>
                 </ol>
               </section>
+          </div>
 
-            </tab>
 
-          <tab name="Science">
-              <share :assets="science" :classes="'tab-science'"/>
-          </tab>
+          <div v-show="activeTab == '#science'">
+            <share :assets="science" :classes="'tab-science'"/>
+          </div>
 
-          <tab name="Assets">
+
+          <div v-show="activeTab == '#assets'">
             <share :assets="assets"/>
-          </tab>
+          </div>
 
-          <tab name="Intouch">
+          <div v-show="activeTab == '#intouch'">
             <share :assets="intouch" :classes="'tab-intouch'"/>
-          </tab>
-      </tabs>
+          </div>
+          
+        </div>
+      </div>
+
+    
     </section>
 
   </layout>
@@ -138,12 +164,15 @@
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       share: () => import('~/components/Share.vue'),
-      tabs: () => import('~/components/tabs.vue'),
-      tab: () => import('~/components/tab.vue'),
       IconCopy: () => import('~/components/IconCopy.vue'),
       tip: () => import('~/components/tip.vue'),
     },
 
+    data() {
+      return {
+        activeTab: '#token'
+      }
+    },
 
     computed: {
       assets () {
@@ -158,7 +187,24 @@
       intouch () {
         return intouch
       }
-    }
+    },
+
+    methods: {
+      setTab(newtab) {
+        this.activeTab = newtab
+      }
+    },
+
+    mounted() {
+
+      if(window.location.hash){
+            this.setTab(window.location.hash)
+      }
+      else{
+        window.location.hash = this.activeTab
+      }
+
+    },
 
   }
 
@@ -224,6 +270,38 @@
         &:last-child { margin-bottom: 0; }
       }
     }
+  }
+
+
+
+  .tabs {
+    &__list {
+        list-style: none;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin-left: 2rem;
+
+            a {
+              text-transform: uppercase;
+              letter-spacing: 0.05rem;
+              text-decoration: none;
+              font-weight: 400;
+            }
+
+            &.is-active a {
+              color: var(--color-text);
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
   }
 
 </style>

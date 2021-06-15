@@ -80,7 +80,7 @@ export default {
         
         this.tabs = this.$children;
 
-        console.log(this.$children)
+        console.log(this.$slots.default[0].componentOptions.propsData.name)
 
         if (window.location.hash){
             const selectedTab = this.findTab(window.location.hash);
