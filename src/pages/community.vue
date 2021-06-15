@@ -170,7 +170,7 @@
 
     data() {
       return {
-        activeTab: '#token'
+        activeTab: '#docs'
       }
     },
 
