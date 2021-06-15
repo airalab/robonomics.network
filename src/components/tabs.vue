@@ -80,6 +80,9 @@ export default {
         
         this.tabs = this.$children;
 
+        console.log(window.location.hash)
+        console.log(this.findTab(window.location.hash))
+
         if (window.location.hash){
             const selectedTab = this.findTab(window.location.hash);
             this.selectTab(selectedTab)
