@@ -33,6 +33,14 @@
 	 }
   }
 
+  &__darkpurple {
+	background-color: var(--color-purple);
+
+	&, a:not(.button), .link {
+		color: var(--color-light);
+	 }
+  }
+
   &__gradient-purpleblue {
 	background: var(--color-gradient-purpleblue);
 

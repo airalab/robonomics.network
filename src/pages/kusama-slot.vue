@@ -84,16 +84,16 @@
 
               <ul class="hyphens">
                 <li>
-                  <strong>Get 1KSM = 1XRT:</strong>
-                  XRT is ERC-20 token, available on Uniswap, Huobi, and in addition on PancakeSwap
+                  <strong>Get rewards:</strong>
+                  per 1 KSM contributed, 1 XRT is rewarded
                 </li>
+
+                <li><strong>Receive increased staking:</strong> 125% return for the next 48 weeks</li>
 
                 <li>
                   <strong>Quick rewards available:</strong>
                   25% right after the win, 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks)
                 </li>
-
-                <li>Receive increased staking of <strong>125% return</strong> for the next 48 weeks</li>
 
                 <li>
                   <strong>Contribute to the future:</strong>
@@ -324,7 +324,7 @@
 
       <hr class="animate no-margins" v-in-viewport.once/>
 
-      <section class="section__solid section__darkgray layout">
+      <section class="section__solid section__darkpurple layout">
         
           <h2 class="animate" v-in-viewport.once>Your questions</h2>
 
@@ -381,7 +381,8 @@
             <section class="animate" v-in-viewport.once>
               <h3 class="faq-q">How/when will rewards be distributed?</h3>
               <article class="faq-a">
-               You'll get 1 XRT per 1 KSM contribution in Robonomics crowdloan for a slot on Kusama. 25% right after the win, 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks).
+                You will have the option of getting 100% parachain native token after the successful launch of the Robonomics parachain or 25% ERC-20 token right after the win (quick reward option)
+                plus 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks).
               </article>
             </section>
 
