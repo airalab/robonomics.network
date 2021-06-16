@@ -10,19 +10,24 @@ abstract: "Robonomics rewards the Kusama Parachain auction participants!"
 import Card from '~/components/TextCard.vue'
 import Button from '~/components/Button.vue'
 
-<section class="animate-inside" v-in-viewport.once>
+<div class="animate-inside" v-in-viewport.once>
 
 ## 1 KSM = 1 XRT
 
-</section>
+</div>
 
-**Actual information available here: https://robonomics.network/kusama-slot**
+<div class="text_abstract layout layout__text animate post_abstract in-viewport animate-inside" v-in-viewport.once>
 
-**Every participant will be rewarded with XRT.** Per 1 KSM contributed, 1 XRT is rewarded.
+Every participant will be rewarded with XRT
 
-- Get 1KSM = 1XRT: XRT is ERC-20 token, available on Uniswap, Huobi, and in addition on PancakeSwap
-- Quick rewards available: 25% right after the win, 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks)
+</div>
+
+> The most relevant information is available here: https://robonomics.network/kusama-slot
+
+- Get rewards: per 1 KSM contributed, 1 XRT is rewarded
+- XRT for now is available on Uniswap, Huobi, and in addition on PancakeSwap
 - Receive increased staking of 125% return for the next 48 weeks
+- Quick rewards option: 25% right after the win, 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks)
 - Contribute to the future: Robonomics integrates new technologies into the real economy 
 
 Crowdloan limit: 100,000 KSM
