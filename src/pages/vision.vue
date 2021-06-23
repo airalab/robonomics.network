@@ -159,7 +159,7 @@ elements in the chain of providing the user with services. In other words, where
 
       </section>
 
-      <hr/>
+      <!-- <hr/>
 
        <section class="vision-fathers layout layout__content">
 
@@ -177,7 +177,7 @@ elements in the chain of providing the user with services. In other words, where
         </article>
         
 
-      </section>
+      </section> -->
 
     </div>
 
