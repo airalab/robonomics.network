@@ -3,7 +3,8 @@
 
     <MetaInfo
       :pageTitle = "'Robonomics Network Vision'"
-      :pageDescription = "''"
+      :pageDescription = "'We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution.'"
+      :pageImage = "'/website_cover_vision.jpg'"
     />
 
     <div class="page vision">
@@ -132,13 +133,11 @@
 
       <hr/>
 
-      <section class="vision-fathers layout layout__content">
+      <section class="vision-fathers vision-cps layout layout__content">
 
         <div class="vision-fathers-image">
           <h2>Automation in the supply chain</h2>
-          <!-- <i>Inspired by Norbert Wiener</i>
-          
-          <g-image alt="" src="~/assets/images/person-norbert-wiener.png" /> -->
+          <g-image src="~/assets/images/industry-4-0-robonomics.png" />
         </div>
 
         <article class="hyphens">
@@ -597,7 +596,7 @@ elements in the chain of providing the user with services. In other words, where
 
   }
 
-  /* 5, 6 ----- */
+  /* 5, 6, 7 ----- */
   .vision-fathers {
 
     a {
@@ -635,12 +634,39 @@ elements in the chain of providing the user with services. In other words, where
     img {
       display: block;
       width: 80%;
-      margin: var(--space) auto 0
+      margin: var(--space) auto var(--space)
     }
 
     h2 {
       text-align: left;
       margin: 0 0 calc(var(--space)/2);
+    }
+  }
+
+  /* 6 ----- */
+  .vision-cps {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0 !important;
+
+    h2 {
+      max-width: 500px;
+      text-align: left;
+      padding-left: var(--space)
+    }
+
+    img {
+      display: block;
+      width: 90%;
+      max-width: 1000px;
+      margin: calc(var(--space)*3) 0 var(--space)
+    }
+
+    article {
+      padding-left: var(--space)
+    }
+
+    .vision-fathers-image {
+      max-width: 100%;
     }
   }
 </style>
