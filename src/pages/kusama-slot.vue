@@ -125,8 +125,68 @@
               </div>
             </div>
 
-            <div>
-              <small>Choose the way:</small>
+
+            <!-- CALC -->
+            <!-- <div class="form-line">
+              <small>Choose contribution amount:</small>
+              <div class="input-signed-right">
+                <input id="contribution" class="block" type="number" placeholder="0" value="10" required/>
+                <label for="contribution" class="sign">KSM</label>
+              </div>
+            </div>
+
+
+            <div class="form-line">
+              <small>Estimate stake KSM to contribute Robonomics auction rewards:</small>
+
+              <div class="calc-line">
+                <div class="calc-line-1">
+                  <b>Robonomics Kusama Parachain</b>
+                </div>
+                <div class="calc-line-2">
+                  <b>Kusama Relay Chain</b>
+                </div>
+              </div>
+
+              <div class="calc-line">
+                <div class="calc-line-1">
+                  <small>Annual XRT staking return</small>
+                  <span><input type="text" value="278.25%" required class="small" disabled/></span>
+                </div>
+                <div class="calc-line-2">
+                  <small>Annual KSM staking return</small>
+                  <input type="text" value="17%" required class="small"/>
+                </div>
+              </div>
+
+              <div class="calc-line">
+                <div class="calc-line-1">
+                  <small>XRT price, DAI</small>
+                  <input type="text" value="$12" required class="small"/>
+                </div>
+                <div class="calc-line-2">
+                  <small>KSM price, DAI</small>
+                  <input type="text" value="$178" required class="small"/>
+                </div>
+              </div>
+
+              <div class="calc-line highlight">
+                <div class="calc-line-1">
+                   <small>Annual Reward, XRT</small>
+                    <span>3.78 ($45.39)</span>
+                </div>
+                <div class="calc-line-2">
+                  <small>Annual Reward, KSM</small>
+                  <span>0.17 ($30.26)</span>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!-- end of CALC -->
+
+            <div class="form-line">
+              <small>Choose the way to contribute:</small>
               <select class="block" v-model="selectedWay">
                 <option selected value="1">1 - On website</option>
                 <option value="2">2 - On Polkadot Substrate portal</option>
@@ -157,8 +217,8 @@
                     </tip>
                   </label>
                 </section>
-
-                <Button label="Connect Polkadot.js extension" :button="checkedFlags.length==3?'primary block green large':'primary block large'" disabled="true"/>
+                <!-- <Button label="Connect Polkadot.js extension" button="primary block green large" :disabled="checkedFlags.length!=3" /> -->
+                <Button label="Connect Polkadot.js extension" button="primary block green large" disabled="true" />
               </form>
             </section>
 
@@ -186,16 +246,6 @@
           </div>
 
       </section>
-
-    
-        <!-- <div class="auction-product-desc">
-          <h3>Robonomics parachain in Kusama</h3>
-          <ul>
-            <li><a href="#">Great potential</a> for IoT systems</li>
-            <li><a href="#">Scientific approach</a> in research and practice</li>
-            <li><a href="#">Real development strategy</a> for the next 2 years</li>
-          </ul>
-        </div> -->
 
 
       <hr class="animate" v-in-viewport.once/>
@@ -513,6 +563,26 @@
   /*end BASICS*/
 
   /* AUCTION PARTICIPATION */
+  .auction-support {
+    .input-signed-right {
+
+      input:not(:placeholder-shown) {
+        border-color: var(--color-blue);
+        color: var(--color-blue);
+
+        & + .sign {
+          color: var(--color-blue)
+        }
+      }
+      
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: var(--color-blue);
+      border-color: var(--color-blue) !important;
+    }
+  }
+
   .auction-support-action {
     max-width: 600px;
     margin: 0 auto;
@@ -575,6 +645,53 @@
       margin: 30px auto;
     }
   }
+
+  .calc-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 75%;
+
+    .calc-line-1, .calc-line-2 {
+      color: #fff;
+      align-items: stretch;
+      padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);
+    }
+
+    .calc-line-1 {
+      background: var(--color-blue);
+    }
+
+    .calc-line-2 {
+      background: var(--color-gray-mid);
+    }
+
+    small {
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    input {
+      background-color: rgba(0, 0, 0, 0.301);
+      border-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      width: 100px;
+      max-width: 100%;
+
+      &[disabled] {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &.highlight {
+      font-size: 110%;
+
+      .calc-line-1 { background-color: #4365fd; }
+      .calc-line-2 { background-color: rgb(173, 173, 173); }
+    }
+  }
+
+ 
   /* end AUCTION PARTICIPATION */
 
   /* ROBONOMICS KUSAMA PARACHAIN INFO */

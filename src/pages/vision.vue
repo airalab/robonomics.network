@@ -6,7 +6,7 @@
       :pageDescription = "''"
     />
 
-    <div class="page">
+    <div class="page vision">
 
       <section class="vision-banner page-banner section section__solid section__blue">
         <div class="vision-logo" >
@@ -69,17 +69,114 @@
             <h2>From smart contracts to cross chain IoT platform</h2>
             <p>Robonomics project is over six years old, 
               and it is difficult even for core developers to say the exact day or month when the first steps were taken.</p>
-              <p>In fact, we started preparing for the first experiment on economically meaningful communication 
+            <p>In fact, we started preparing for the first experiment on economically meaningful communication 
                 of people and machines with smart contracts in 2014, but roughly we coincide the start of  
                 the project with the first days of the Ethereum network.</p>
-                <p>By the beginning of 2021, the development team was able to preserve the strongest elements of 
+            <p>By the beginning of 2021, the development team was able to preserve the strongest elements of 
                   the architecture in Robonomics and complement the techno-economic protocol developed in 2015-2019 over 
-                  Ethereum and IPFS with elements of the cloud IoT platform based on parachaine Polkadot.</p>
+                  Ethereum and IPFS with elements of the cloud IoT platform based on parachain Polkadot.</p>
           </div>
         </div>
 
         <g-link class="vision-beginning-link" to="https://youtu.be/V_3rcP2Duv0"><g-image alt="Youtube video" src="~/assets/images/youtube.png" /></g-link>
         <g-image aria-hidden="true" class="bg" alt="" src="~/assets/images/wintercoding.png" />
+      </section>
+
+      <section class="vision-cybernetics section__solid">
+        <div class="layout layout__content">
+          <article>
+            <h2>On the border of cybernetics and economics</h2>
+            <p class="hyphens">We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution.</p>
+            <p class="hyphens">Since 2017 we publish <g-link to="/community#science">research articles</g-link> representing to the academic community concepts united by the idea of the robot economy. 
+              Below we would like to present the most general, important explanation why the robot economy is an inevitable and obvious solution in the wake of the new industrial revolution.</p>
+          </article>
+          <div class="bg" aria-hidden="true"><g-image alt="" src="~/assets/images/cybernetics-girls.png" /></div>
+          <div class="numbers" aria-hidden="true">
+            <span>010001010100101010101001010101000100101001000101010010101010100101010100010010100100010101001010101010010101001001010101000100101001000101010010101010100101010100010010100100010101001010101010010101010001001010100101001010001001010010001010100101010101001010101000100101010001001010101000100101001000101010010101010100101010100010010100100010101001</span>
+            <span>010001010100101010101001010101000100101001000101010010101010100101010100010010100100010101001010101010010101001001010101000100101001000101010010101010100101010100010010100100010101001010101010010101010001001010100101001010001001010010001010100101010101001010101000100101010001001010101000100101001000101010010101010100101010100010010100100010101001</span>
+            <span>010001010100101010101001010101000100101001000101010010101010100101010100010010100100010101001010101010010101001001010101000100101001000101010010101010100101010100010010100100010101001010101010010101010001001010100101001010001001010010001010100101010101001010101000100101010001001010101000100101001000101010010101010100101010100010010100100010101001</span>
+            <span>010001010100101010101001010101000100101001000101010010101010100101010100010010100100010101001010101010010101001001010101000100101001000101010010101010100101010100010010100100010101001010101010010101010001001010100101001010001001010010001010100101010101001010101000100101010001001010101000100101001000101010010101010100101010100010010100100010101001</span>
+            <span>010001010100101010101001010101000100101001000101010010101010100101010100010010100100010101001010101010010101001001010101000100101001000101010010101010100101010100010010100100010101001010101010010101010001001010100101001010001001010010001010100101010101001010101000100101010001001010101000100101001000101010010101010100101010100010010100100010101001</span>
+            <span>010001010100101010101001010101000100101001000101010010101010100101010100010010100100010101001010101010010101001001010101000100101001000101010010101010100101010100010010100100010101001010101010010101010001001010100101001010001001010010001010100101010101001010101000100101010001001010101000100101001000101010010101010100101010100010010100100010101001</span>
+            <span>010001010100101010101001010101000100101001000101010010101010100101010100010010100100010101001010101010010101001001010101000100101001000101010010101010100101010100010010100100010101001010101010010101010001001010100101001010001001010010001010100101010101001010101000100101010001001010101000100101001000101010010101010100101010100010010100100010101001</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="vision-fathers layout layout__content">
+
+        <div class="vision-fathers-image">
+          <h2>Move Towards the Factory of the Future</h2>
+          <i>Inspired by Ronald Coase</i>
+          
+          <g-image alt="" src="~/assets/images/person-ronald-coase.png" style="margin-top: 0"/>
+        </div>
+
+        <article class="hyphens">
+          <p>The Nobel Prize laureate in economics Ronald Coase in his highly influential essay "The Nature of the Firm" (1937) tries to figure out on what conditions should we expect firms to emerge, because in fact "production could be carried on without any organization (that is, firms) at all".
+             He consider the conditions under which it makes sense for an entrepreneur to seek hired help instead of contracting out for some particular task. To answer on this question he introduces the concept of transaction costs.</p>
+          <p>Imagine vehicle purchase: try to buy a car for parts, and calculate how much money and time you will spend just to collect all the components in your garage.</p>
+          <p>Nowadays the idea of reducing transaction costs is not new. 
+            Production, logistics and retail actors over the past 50 years have already done a lot to automate their work. 
+            However, with the rise of robotics and machine learning this task becomes relevant again. 
+            The question is, is lights-out manufacturing truly realistic?
+            <!-- with the pandemic supply chain disruptions over past years --></p>
+          <p>There are already some examples of machine-led manufacturing. Using robotics allows them 
+            <g-link to="https://www.automation.com/en-us/articles/february-2020/how-bright-is-the-future-of-automation">to operate unsupervised for up to 30 days at a time</g-link>, 
+            <g-link to="https://www.assemblymag.com/articles/90173-automation-profiles--robots-help-philips-shave-assembly-costs-?v=preview">hire a small number of staff to oversee quality assurance</g-link>, 
+            <g-link to="https://internetofbusiness.com/success-stories-five-companies-smart-factories-can-learn/">to reduce downtime</g-link>. 
+            But also there may be some limitations. One such limitation is setting up the interaction of many related elements (control systems + robotics + IoT + clouds + API to Human).</p>
+        </article>
+
+      </section>
+
+      <hr/>
+
+      <section class="vision-fathers layout layout__content">
+
+        <div class="vision-fathers-image">
+          <h2>Automation in the supply chain</h2>
+          <!-- <i>Inspired by Norbert Wiener</i>
+          
+          <g-image alt="" src="~/assets/images/person-norbert-wiener.png" /> -->
+        </div>
+
+        <article class="hyphens">
+          <p>The key element in setting up of interaction among various related automated components within robotics and lights-out manufacturing is the idea of cyber-physical system (CPS).</p>
+          <p>It is interesting to note that сyber-physical system is the principle idea behind the implementation of Industry 4.0 solutions. This 
+            is what the future of our life in Smart Cities looks like: autopilot taxi on your phone, drone selfie in the park for 
+            Instagram, subscription to air pollution data from thousands of local sensors, a network of 3D printers at metro stations, 
+            your home robot Rosie with access to Amazon, a smart factory that can rebuild the production cycle autonomously or work 
+            directly with the customer.</p>
+            <p>CPS is complex structure ensuring that machines/plant equipment, logistics systems, work-in-progress components, 
+              and other elements (including application on the phone, AI cloud service for data processing, software for publishing 
+              data, people) directly communicate with each other to achieve collaboration. Such interconnected systems provide new functionalities 
+              for increasing efficiency, productivity, and the autonomous operation of production processes.</p>
+              <p>The most interesting thing in the CPS design process is to find a fine line between a sufficient and not yet excessive number of automated
+elements in the chain of providing the user with services. In other words, where is the edge of the CPS size? To answer this question, we should refer Norbert Wiener.</p>
+        </article>
+        
+
+      </section>
+
+      <hr/>
+
+       <section class="vision-fathers layout layout__content">
+
+        <div class="vision-fathers-image">
+          <h2>Self-regulating systems</h2>
+          <i>Inspired by Norbert Wiener</i>
+          
+          <g-image alt="" src="~/assets/images/person-norbert-wiener.png" />
+        </div>
+
+        <article class="hyphens">
+          <p>In 1948 a professor of mathematics at the MIT Norbert Wiener published one of the most seminal works
+             "Cybernetics: Or Control and Communication in the Animal and the Machine". </p>
+          
+        </article>
+        
+
       </section>
 
     </div>
@@ -108,6 +205,18 @@
 </script>
 
 <style scoped lang="scss">
+
+  .vision {
+    article {
+      text-align: left;
+
+      h2 {
+        text-align: left;
+      }
+    }
+  }
+
+  /* 1 ---- */
   .vision-banner {
     position: relative;
     background: var(--color-gradient-mars);
@@ -230,7 +339,6 @@
       width: 100%;
     }
 
-    h2 { font-weight: bold; }
     h4 { margin-top: 0; font-style: italic;}
 
     @media screen and (max-width: 1280px) {
@@ -366,6 +474,173 @@
       right: calc(var(--space)*2);
       top: auto;
       left: auto;
+    }
+
+    animation: FloatY 2s linear 0.4s infinite;
+  }
+
+  /* 4 ----- */
+  .vision-cybernetics {
+    background-image: radial-gradient(circle at 80%, #a6fcf6, #1717b0 50%);
+    color: #fff;
+    padding-top: calc(var(--space)*3);
+    padding-bottom: calc(var(--space)*3);
+    overflow: hidden;
+
+    position: relative;
+
+    article {
+      max-width: 50%;
+      position: relative;
+      z-index: 2;
+    }
+
+    a {
+      color: #fff;
+      font-weight: 500;
+
+      &:hover {
+        color: var(--color-blue-light)
+      }
+    }
+
+    .bg {
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+      z-index: 1;
+
+      img {
+        display: block;
+        max-width: 1400px;
+      }
+    }
+
+    .numbers {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 60%;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+
+      span {
+        display: inline-block;
+        font-family: var(--font-family-code);
+        color: var(--color-blue-light);
+
+        &:nth-child(n) {
+          animation: NumbersDown 160s linear 0.2s infinite;
+        }
+
+        &:nth-child(2n) {
+          animation: NumbersUp 160s linear 0.2s infinite;
+        }
+
+        @keyframes NumbersDown {
+          0% {
+            transform: translateY(-100%);
+          }
+          100%{
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes NumbersUp {
+          0% {
+            transform: translateY(0);
+          }
+          100%{
+            transform: translateY(-100%);
+          }
+        }
+      }
+    }
+
+
+    @media screen and (max-width: 1600px) {
+      .bg {
+        left: 20%;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .bg {
+        left: 30%;
+
+        img {
+          max-width: 1000px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      padding-bottom: 0 !important;
+
+      article {
+        max-width: 100%;
+      }
+
+      .bg {
+        position: static;
+
+        img {
+          max-width: 140%;
+          margin-left: - 20%;
+        }
+      }
+
+      .numbers {
+        opacity: 0.3;
+      }
+    }
+
+  }
+
+  /* 5, 6 ----- */
+  .vision-fathers {
+
+    a {
+      color: var(--color-dark)
+    }
+
+    @media screen and (min-width: 1100px){
+      display: grid;
+      grid-template-columns: 500px 1fr;
+    }
+
+    @media screen and (min-width: 1500px){
+      article {
+        column-count: 2;
+        column-fill: auto;
+      }
+    }
+
+    @media screen and (max-width: 1100px) and (min-width: 560px){
+      column-count: 2;
+      column-gap: var(--space);
+    }
+
+    @media screen and (max-width: 1100px) {
+      .vision-coase-image {
+        margin-bottom: calc(var(--space)*2);
+      }
+    }
+  }
+
+  .vision-fathers-image {
+    max-width: 550px;
+    text-align: left;
+
+    img {
+      display: block;
+      width: 80%;
+      margin: var(--space) auto 0
+    }
+
+    h2 {
+      text-align: left;
+      margin: 0 0 calc(var(--space)/2);
     }
   }
 </style>

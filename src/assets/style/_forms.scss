@@ -29,8 +29,17 @@ input:not(.button) {
 		border-color: var(--color-dark)
 	}
 
-	&:valid {
-		border-color: var(--color-green)
+	// &:valid:not(:placeholder-shown) {
+	// 	border-color: var(--color-green)
+	// }
+
+	&:not(:placeholder-shown) {
+		border-color: var(--color-dark)
+	}
+
+	&.small {
+		font-size: 90%;
+		padding: .3rem .5rem;
 	}
 }
 
@@ -73,7 +82,33 @@ select {
 	cursor: pointer;
 }
 
+.form-line {
+	margin-bottom: var(--space);
+}
+
 .label {
 	display: flex;
 	align-items: center;
+}
+
+.input-signed-right {
+	position: relative;
+
+	.sign {
+		position: absolute;
+		right: 0.4rem;
+		top: 0.4rem;
+		background-color: var(--body-bg);
+		color: var(--border-color);
+	}
+
+	input:focus + .sign, input:not(:placeholder-shown) + .sign {
+		color: var(--color-dark)
+	}
+}
+
+.msg-error {
+	font-size: calc( var(--base-font-size) * 0.8 );
+	color: var(--color-red);
+	font-weight: 500;
 }
