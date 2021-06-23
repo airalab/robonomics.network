@@ -15,12 +15,12 @@
 
       <section class="homepage__description">
 
-        <div class="layout__content">
+        <div class="layout layout__content">
           <Navigation />
+          <g-link class="badge" to="https://github.com/w3f/General-Grants-Program/blob/master/grants/accepted_grant_applications.md"><g-image src="~/assets/images/web3_foundation_grants_badge_black.png" /></g-link>
         </div>
 
-
-        <div class="roboHands" v-in-viewport.once>
+        <div class="roboHands" v-in-viewport.once aria-hidden="true">
           <div class="roboHands__move left">
             <div class="roboHands__left">
               <g-image src="~/assets/images/robotHand1-1.svg" class="roboHands__left__1" />
@@ -239,6 +239,12 @@ query {
       top: 0;
       left: calc(50% - 152px);
     }
+  }
+
+  .badge {
+    display: inline-block;
+    max-width: 200px;
+    margin-top: var(--space)
   }
 </style>
 

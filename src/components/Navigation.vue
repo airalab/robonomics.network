@@ -24,9 +24,9 @@
 
 <style lang="scss">
 	.menu{
-      // max-width: 320px;
-      display: inline-block;
-      margin: calc(var(--space)/2) var(--space);
+      max-width: 880px;
+      display: block;
+      margin: calc(var(--space)/2) auto;
 
       div {
         padding: 1rem 0;
