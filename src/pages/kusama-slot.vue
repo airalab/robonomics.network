@@ -12,7 +12,7 @@
 
       <section class="page-banner auction-banner section section__solid section__blue">
         <h1 class="auction-parachain-title clean">Crowdloan for Robonomics on Kusama</h1>
-        
+
         <div class="auction-banner-cols layout__content">
           <div class="auction-banner-kusama">
             <div class="kusama-wrap" v-in-viewport.once>
@@ -79,7 +79,7 @@
           </div>
 
           <div class="auction-banner-details">
-            
+
               <p><strong>Support Robonomics in the Kusama slots auction</strong></p>
 
               <ul class="hyphens">
@@ -102,21 +102,21 @@
               </ul>
 
           </div>
-          
+
         </div>
       </section>
-      
+
 
       <Abstract text="Robonomics crowdloan campaign for a parachain slot starts on the eve of Third Kusama Parachain Slot auction, 2021/06/28! Contribute and get rewards." />
 
       <hr class="animate" v-in-viewport.once/>
 
       <section class="auction-support layout">
-          
+
           <h2 class="animate" v-in-viewport.once>Participate in the Robonomics crowdloan</h2>
 
           <p class="layout__text animate" v-in-viewport.once><i>By participating in the Robonomics crowdloan you lock your KSM for a period of time 48 weeks to help Robonomics lease a parachain slot and gain Kusama’s distributed computing power to service up to 10,000 digital twins of IoT devices at once.</i></p>
-          
+
           <div class="auction-support-action animate" v-in-viewport.once>
             <div class="auction-support-wait">
               <div>
@@ -130,7 +130,7 @@
             <!-- <div class="form-line">
               <small>Choose contribution amount:</small>
               <div class="input-signed-right">
-                <input id="contribution" class="block" type="number" placeholder="0" value="10" required/>
+                <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
                 <label for="contribution" class="sign">KSM</label>
               </div>
             </div>
@@ -151,36 +151,36 @@
               <div class="calc-line">
                 <div class="calc-line-1">
                   <small>Annual XRT staking return</small>
-                  <span><input type="text" value="278.25%" required class="small" disabled/></span>
+                  <span><input v-model="staking_xrt" type="text" required class="small" disabled/></span>
                 </div>
                 <div class="calc-line-2">
                   <small>Annual KSM staking return</small>
-                  <input type="text" value="17%" required class="small"/>
+                  <input v-model="staking_ksm" type="text" required class="small"/>
                 </div>
               </div>
 
               <div class="calc-line">
                 <div class="calc-line-1">
                   <small>XRT price, DAI</small>
-                  <input type="text" value="$12" required class="small"/>
+                  <input v-model="price_xrt" type="text" required class="small"/>
                 </div>
                 <div class="calc-line-2">
                   <small>KSM price, DAI</small>
-                  <input type="text" value="$178" required class="small"/>
+                  <input v-model="price_ksm" type="text" required class="small"/>
                 </div>
               </div>
 
               <div class="calc-line highlight">
                 <div class="calc-line-1">
                    <small>Annual Reward, XRT</small>
-                    <span>3.78 ($45.39)</span>
+                    <span>{{ reward_xrt }} (${{reward_xrt_usd}})</span>
                 </div>
                 <div class="calc-line-2">
                   <small>Annual Reward, KSM</small>
-                  <span>0.17 ($30.26)</span>
+                  <span>{{ reward_ksm }} (${{reward_ksm_usd}})</span>
                 </div>
               </div>
-             
+
             </div> -->
 
             <!-- end of CALC -->
@@ -195,7 +195,7 @@
             </div>
 
             <section id="participate-1" v-if="selectedWay==1">
-          
+
               <form>
                 <section>
                   <label class="block label">
@@ -209,8 +209,8 @@
                   </label>
 
                   <label class="block label">
-                    <input type="checkbox" class="big" required  v-model="checkedFlags" value="crowdloan-flag-3" /> 
-                    <span>My KSM has been unbonded</span> 
+                    <input type="checkbox" class="big" required  v-model="checkedFlags" value="crowdloan-flag-3" />
+                    <span>My KSM has been unbonded</span>
                     <tip summary="☝️" position="right-bottom" class="inline-block-clear">
                       Supporters who are currently staking (bonding) their KSM will need to unstake prior to bonding their KSM to the crowdloan module.
                       Kusama has a delayed exit period ~ 7 days. <g-link to="https://wiki.polkadot.network/docs/en/maintain-guides-how-to-unbond">How to unbond KSM</g-link>
@@ -225,7 +225,7 @@
             <section id="participate-3" v-if="selectedWay==3">
               <p>Here are examples of exchanges that have announced supporting Kusama Parachain Slot Auction. More details expected closer to the Third Kusama Parachain Slot auction beginning.</p>
               <dl class="participate-2-exchanges">
-                
+
                 <dt><g-link to="https://www.kraken.com/learn/parachain-auctions"><g-image src="~/assets/images/kraken-logo.webp"/></g-link></dt>
                 <dd><g-link to="https://www.kraken.com/learn/parachain-auctions">https://www.kraken.com/</g-link></dd>
 
@@ -242,7 +242,7 @@
                <p>In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions: <g-link style="display:block;word-break: break-all;" to="https://twitter.com/AIRA_Robonomics/status/1377653645827833860">https://twitter.com/AIRA_Robonomics/status/1377653645827833860</g-link></p>
             </section>
 
-          
+
           </div>
 
       </section>
@@ -252,7 +252,7 @@
 
       <section class="animate" v-in-viewport.once>
         <h2 class="layout">Choose your strategy</h2>
-        
+
         <section class="auction-steps grid-3 animate-inside layout layout__content" v-in-viewport.once>
 
         <Card orientation="vertical" back="transparent">
@@ -267,7 +267,7 @@
         </Card>
 
         <Card orientation="vertical" back="transparent">
-          
+
           <div class="image">
             <g-image src="~/assets/images/plo-holder-2.png" />
           </div>
@@ -298,9 +298,9 @@
             <p class="hyphens">The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific parachains, including:</p>
 
             <div class="parachains-overview">
-   
+
               <div class="parachains-overview-description">
-                
+
                 <div class="item" :class="(parachainTab == 1) ?'active':''">
                   <h4>Smart leasing parachain </h4>
                   <p class="hyphens">Recoup your investment in the high-value robots by renting out it with a mechanism for tokenizing robots’ labor.</p>
@@ -321,16 +321,16 @@
                   <h4>Distributed Sky parachain</h4>
                   <p class="hyphens">Blockchain techonologies to control the traffic of drones (automated planning of drone flight paths, decentralized payment regulations, smart contract for transactions)</p>
                 </div>
-                
+
               </div>
 
                <div class="parachains-overview-line">
-              
+
                   <div class="item" :class="(parachainTab == 1) ?'active':''" @click="parachainTab=1">
                     <g-image src="~/assets/images/parachain-i-leasing.png" />
                     <p class="item-title">Smart rental and leasing</p>
                   </div>
-                  
+
                   <div class="item" :class="(parachainTab == 2) ?'active':''" @click="parachainTab=2">
                     <g-image src="~/assets/images/parachain-i-robot-as-a-service.png" />
                     <p class="item-title">Robot as a Service</p>
@@ -340,7 +340,7 @@
                     <g-image src="~/assets/images/parachain-i-rws.png" />
                     <p class="item-title">"Cloud" for IoT applications</p>
                   </div>
-                  
+
                   <div class="item" :class="(parachainTab == 4) ?'active':''" @click="parachainTab=4">
                     <g-image src="~/assets/images/parachain-i-enviromental.png" />
                     <p class="item-title">Environmental mitigation</p>
@@ -368,25 +368,25 @@
             <div class="slot slot-left"></div>
             <div class="slot slot-right"></div>
           </div>
-  
+
         </section>
       </section>
 
       <hr class="animate no-margins" v-in-viewport.once/>
 
       <section class="section__solid section__darkpurple layout">
-        
+
           <h2 class="animate" v-in-viewport.once>Your questions</h2>
 
           <div class="layout__text hyphens faq">
             <section class="animate" v-in-viewport.once>
               <h3 class="faq-q">How long will the auction for Robonomics parachain slot last?</h3>
               <article class="faq-a">
-               Robonomics starts the Crowdloan module from the 3rd auction (<g-link to="https://polkadot.network/kusama-parachain-auctions/">2021/06/29, 12:00 GMT</g-link>). Contributions 
-               will be accepted at any point from the start and before their success or end of 5th 
-               auction (<g-link to="https://polkadot.network/kusama-parachain-auctions/">2021/07/13, 12:00 GMT + duration of 5th auction</g-link>). Before participating in 
-               the crowdloan, double-check that the campaign is live <g-link to="https://twitter.com/AIRA_Robonomics">on Twitter</g-link>. Please, remember that all crowdloan contributions 
-               are handled by the Crowdloan module’s logic where a campaign is identified by index, not by address. Never transfer tokens to an address 
+               Robonomics starts the Crowdloan module from the 3rd auction (<g-link to="https://polkadot.network/kusama-parachain-auctions/">2021/06/29, 12:00 GMT</g-link>). Contributions
+               will be accepted at any point from the start and before their success or end of 5th
+               auction (<g-link to="https://polkadot.network/kusama-parachain-auctions/">2021/07/13, 12:00 GMT + duration of 5th auction</g-link>). Before participating in
+               the crowdloan, double-check that the campaign is live <g-link to="https://twitter.com/AIRA_Robonomics">on Twitter</g-link>. Please, remember that all crowdloan contributions
+               are handled by the Crowdloan module’s logic where a campaign is identified by index, not by address. Never transfer tokens to an address
                in support of a campaign.
               </article>
             </section>
@@ -401,7 +401,7 @@
             <section class="animate" v-in-viewport.once>
               <h3 class="faq-q">Will it be possible to participate in the Robonomics crowdloan through exchanges?</h3>
               <article class="faq-a">
-               Some well-known exchanges like Kraken and Okex are already providing crowdloan support for their users. On this 
+               Some well-known exchanges like Kraken and Okex are already providing crowdloan support for their users. On this
                page you can find participation module with different ways to support Robonomics in auction. We will update the list of relevant exchanges that support interaction with the Crowdloan module at the start of the 3rd auction.
               </article>
             </section>
@@ -409,7 +409,7 @@
             <section class="animate" v-in-viewport.once>
               <h3 class="faq-q">Do I have to unbond my KSM to participate in auction?</h3>
               <article class="faq-a">
-               You need to unbond your KSM, if you are currently staking (bonding) it. If you are going to 
+               You need to unbond your KSM, if you are currently staking (bonding) it. If you are going to
                participate in crowdloan campaign through the exchange, please, contact it directly for more details. Read <g-link to="https://guide.kusama.network/docs/en/mirror-maintain-guides-how-to-stop-validating#unbond-your-tokens">how to unbond your KSM</g-link> on Kusama WIKI.
               </article>
             </section>
@@ -427,7 +427,7 @@
                Yes, your KSM will be automatically returned to you when the parachain lease ends.
               </article>
             </section>
-            
+
             <section class="animate" v-in-viewport.once>
               <h3 class="faq-q">How/when will rewards be distributed?</h3>
               <article class="faq-a">
@@ -490,7 +490,13 @@
         // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost,
         parachainTab: 1,
         checkedFlags: [],
-        selectedWay: 1
+        selectedWay: 1,
+
+        contribution: 1,
+        staking_xrt: 278.25,
+        staking_ksm: 17,
+        price_xrt: 0,
+        price_ksm: 0,
       }
     },
 
@@ -519,10 +525,32 @@
             .catch(error => this.statusSubmit = 'error')
 
           }
+        },
+
+        async getPrice(tickerName) {
+          const result = await fetch(
+            `https://min-api.cryptocompare.com/data/price?fsym=${tickerName}&tsyms=USD&api_key=9c9ca216c454cd2390092e573894a6e10ddff03ef3a4e153996ef358fe9d33d8`
+          );
+          const data = await result.json();
+          return data.USD
+        },
+        async updatePrices() {
+          this.price_xrt = await this.getPrice('XRT');
+          this.price_ksm = await this.getPrice('KSM');
         }
       },
 
+      // async created() {
+      //   this.updatePrices()
+      // },
+
       computed: {
+
+        reward_xrt() { return (this.staking_xrt / 100 + 1).toFixed(2) },
+        reward_xrt_usd() { return (this.price_xrt * this.reward_xrt).toFixed(2) },
+        reward_ksm() { return this.price_ksm > 0 ? (this.reward_ksm_usd / this.price_ksm).toFixed(2) : 0 } ,
+        reward_ksm_usd() { return (this.contribution * (this.staking_ksm / 100) * this.price_ksm).toFixed(2) },
+
         // checkedFlagsCrowdloan: function() {
         //   return this.checkedFlags.size
         // }
@@ -574,7 +602,7 @@
           color: var(--color-blue)
         }
       }
-      
+
     }
 
     input[type="checkbox"]:checked {
@@ -618,7 +646,7 @@
     bottom: 0;
     right: calc(var(--auction-support-wait-size) * (-1) + 50px);
     z-index: 10;
-   
+
     width: var(--auction-support-wait-size);
     height: var(--auction-support-wait-size);
     background-color: var(--color-light);
@@ -691,13 +719,13 @@
     }
   }
 
- 
+
   /* end AUCTION PARTICIPATION */
 
   /* ROBONOMICS KUSAMA PARACHAIN INFO */
   .kusama-parachain {
     margin: 0; // temp
-    
+
     section {
       margin: 0;
     }
@@ -900,7 +928,7 @@
 
   /* SUBSRIBTION FORM */
   .auction-submition {
-    
+
     position: relative;
 
     .load, .wait, .error {
@@ -908,9 +936,9 @@
       height: 0;
 	    opacity: 0;
     }
-    
+
     .load {
-      
+
       text-align: center;
 
       p {
@@ -921,7 +949,7 @@
     }
 
     .load-bird {
-  
+
       position: absolute;
       top: -24px;
       left: calc(50% - 74px);
@@ -1002,7 +1030,7 @@
     }
 
     &.status-load {
-      
+
       .load {
         animation: FadeIn 0.3s var(--animation-bump) forwards;
 
@@ -1036,7 +1064,7 @@
     }
 
     &.status-wait {
-      
+
       .wait {
         animation: FadeIn 0.3s var(--animation-bump) forwards;
       }
@@ -1045,7 +1073,7 @@
     }
 
     &.status-error {
-      
+
       .error {
         animation: FadeIn 0.3s var(--animation-bump) forwards;
         color: var(--color-red);
@@ -1236,7 +1264,7 @@
 
     .bubble {
       background-color: #fff;
-      
+
       &, &:after {
         width: var(--bubble-size);
         height: var(--bubble-size);
@@ -1255,7 +1283,7 @@
       animation-fill-mode: forwards;
     }
 
-    .bubble.robonomics 
+    .bubble.robonomics
       {
         left: calc(var(--kusama-size) + var(--bubble-size) * 1.3);
         animation-duration: calc(var(--duration-bubble)/2);
@@ -1273,7 +1301,7 @@
           content: "";
           background-color: rgba(255, 255, 255, 0.5);
           animation: pulse 2s infinite;
-        
+
           top: 0;
           left: 0;
         }
@@ -1344,7 +1372,7 @@
           width: calc(var(--kusama-size) * 0.4);
         }
       }
-        
+
     }
 
   @media screen and (max-width: 1140px) {
@@ -1369,7 +1397,7 @@
 
   @media screen and (max-width: 820px) {
 
-    .auction-banner-cols { 
+    .auction-banner-cols {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto auto var(--kusama-size);
       column-gap: 0;
@@ -1394,7 +1422,7 @@
         right: auto;
         transform: scale(0.8);
       }
-    } 
+    }
   }
 
 
