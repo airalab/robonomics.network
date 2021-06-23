@@ -262,7 +262,7 @@
           </div>
 
           <h3>For KSM holders</h3>
-          <p class="hyphens">Robonomics PLO may be interesting for stakeholders who are looking for ways to diversify their KSM stake next 48 weeks inside the ecosystem. <g-link to="/community#token">XRT</g-link> is ERC-20 token, available on Uniswap, Huobi, and in addition on PancakeSwap.</p>
+          <p class="hyphens">Robonomics PLO may be interesting for stakeholders who are looking for ways to diversify their KSM stake next 48 weeks inside the ecosystem. <g-link to="/community#token">XRT</g-link> for now is available on Uniswap, Huobi, and in addition on PancakeSwap.</p>
 
         </Card>
 
