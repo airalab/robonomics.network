@@ -219,6 +219,8 @@ query {
       position: relative;
       overflow: hidden;
       padding-bottom: 10px;
+      margin-top: var(--space);
+      margin-bottom: var(--space);
     }
 
      .roboHands{
