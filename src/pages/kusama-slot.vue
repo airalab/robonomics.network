@@ -151,22 +151,34 @@
               <div class="calc-line">
                 <div class="calc-line-1">
                   <small>Annual XRT staking return</small>
-                  <span><input v-model="staking_xrt" type="text" required class="small" disabled/></span>
+                  <div class="calc-input-signed-right">
+                    <input id="staking_xrt" v-model="staking_xrt" type="text" required class="small" disabled/>
+                    <label for="staking_xrt" class="sign">%</label>
+                  </div>
                 </div>
                 <div class="calc-line-2">
                   <small>Annual KSM staking return</small>
-                  <input v-model="staking_ksm" type="text" required class="small"/>
+                  <div class="calc-input-signed-right">
+                    <input id="staking_ksm" v-model="staking_ksm" type="text" required class="small"/>
+                    <label for="staking_ksm" class="sign">%</label>
+                  </div>
                 </div>
               </div>
 
               <div class="calc-line">
                 <div class="calc-line-1">
                   <small>XRT price, DAI</small>
-                  <input v-model="price_xrt" type="text" required class="small"/>
+                  <div class="calc-input-signed-left">
+                    <label for="price_xrt" class="sign">$</label>
+                    <input id="price_xrt" v-model="price_xrt" type="text" required class="small"/>
+                  </div>
                 </div>
                 <div class="calc-line-2">
                   <small>KSM price, DAI</small>
-                  <input v-model="price_ksm" type="text" required class="small"/>
+                  <div class="calc-input-signed-left">
+                    <label for="price_ksm" class="sign">$</label>
+                    <input id="price_ksm" v-model="price_ksm" type="text" required class="small"/>
+                  </div>
                 </div>
               </div>
 
@@ -197,6 +209,8 @@
             <section id="participate-1" v-if="selectedWay==1">
 
               <form>
+                <!-- STEP 1 -->
+                  
                 <section>
                   <label class="block label">
                     <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-1"/>
@@ -217,7 +231,39 @@
                     </tip>
                   </label>
                 </section>
+              
                 <!-- <Button label="Connect Polkadot.js extension" button="primary block green large" :disabled="checkedFlags.length!=3" /> -->
+                
+                <!-- end STEP 1 -->
+
+
+                <!-- STEP 2 -->
+
+             
+                <!-- <section>
+                  <label class="block label">
+                    <small>Your contribution:</small>
+                    <div class="input-signed-right">
+                      <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
+                      <label for="contribution" class="sign">KSM</label>
+                    </div>
+                  </label>
+
+                  <label class="block label">
+                    <small>Your email (not necessary):</small>
+                    <input type="email" class="big block" value="" placeholder="Type your email"/>
+                  </label>
+
+                  <label class="block label">
+                    <input type="checkbox" class="big" required value="" checked="true"/>
+                    <small>I agree to receive email communications from Robonomics</small>
+                  </label>
+                </section>
+
+                <Button label="Submit contribution" button="primary block green large" />  -->
+
+                <!-- end STEP 2 -->
+                
                 <Button label="Connect Polkadot.js extension" button="primary block green large" disabled="true" />
               </form>
             </section>
@@ -540,9 +586,9 @@
         }
       },
 
-      // async created() {
-      //   this.updatePrices()
-      // },
+      async created() {
+        this.updatePrices()
+      },
 
       computed: {
 
@@ -608,6 +654,10 @@
     input[type="checkbox"]:checked {
       background-color: var(--color-blue);
       border-color: var(--color-blue) !important;
+    }
+
+    label.block {
+      margin-bottom: var(--space)
     }
   }
 
@@ -716,6 +766,29 @@
 
       .calc-line-1 { background-color: #4365fd; }
       .calc-line-2 { background-color: rgb(173, 173, 173); }
+    }
+  }
+
+  .calc-input-signed-right, .calc-input-signed-left {
+    position: relative;
+    display: inline-block;
+
+    .sign {
+      position: absolute;
+      right: 0.4rem;
+      top: 0.3rem
+    }
+  }
+
+  .calc-input-signed-left {
+
+    .sign {
+      left: 0.4rem;
+      right: auto;
+    }
+
+    input {
+      padding-left: 1.2rem;
     }
   }
 
