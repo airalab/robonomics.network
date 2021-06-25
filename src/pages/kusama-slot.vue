@@ -539,8 +539,8 @@
         selectedWay: 1,
 
         contribution: 1,
-        staking_xrt: 278.25,
-        staking_ksm: 17,
+        staking_xrt: 100,
+        staking_ksm: 15,
         price_xrt: 0,
         price_ksm: 0,
       }
@@ -592,8 +592,8 @@
 
       computed: {
 
-        reward_xrt() { return ((this.contribution * (this.staking_xrt / 100)) + 1).toFixed(2) },
-        reward_xrt_usd() { return (this.price_xrt * this.reward_xrt).toFixed(2) },
+        reward_xrt() { return (this.reward_xrt_usd / this.price_xrt).toFixed(2) },
+        reward_xrt_usd() { return (this.reward_ksm_usd * 1.5).toFixed(2) },
         reward_ksm() { return this.price_ksm > 0 ? (this.reward_ksm_usd / this.price_ksm).toFixed(2) : 0 } ,
         reward_ksm_usd() { return (this.contribution * (this.staking_ksm / 100) * this.price_ksm).toFixed(2) },
 
