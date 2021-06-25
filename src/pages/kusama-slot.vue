@@ -210,7 +210,7 @@
 
               <form>
                 <!-- STEP 1 -->
-                  
+
                 <section>
                   <label class="block label">
                     <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-1"/>
@@ -231,15 +231,15 @@
                     </tip>
                   </label>
                 </section>
-              
+
                 <!-- <Button label="Connect Polkadot.js extension" button="primary block green large" :disabled="checkedFlags.length!=3" /> -->
-                
+
                 <!-- end STEP 1 -->
 
 
                 <!-- STEP 2 -->
 
-             
+
                 <!-- <section>
                   <label class="block label">
                     <small>Your contribution:</small>
@@ -263,7 +263,7 @@
                 <Button label="Submit contribution" button="primary block green large" />  -->
 
                 <!-- end STEP 2 -->
-                
+
                 <Button label="Connect Polkadot.js extension" button="primary block green large" disabled="true" />
               </form>
             </section>
@@ -586,13 +586,13 @@
         }
       },
 
-      async created() {
-        this.updatePrices()
-      },
+      // created() {
+      //   this.updatePrices()
+      // },
 
       computed: {
 
-        reward_xrt() { return (this.staking_xrt / 100 + 1).toFixed(2) },
+        reward_xrt() { return ((this.contribution * (this.staking_xrt / 100)) + 1).toFixed(2) },
         reward_xrt_usd() { return (this.price_xrt * this.reward_xrt).toFixed(2) },
         reward_ksm() { return this.price_ksm > 0 ? (this.reward_ksm_usd / this.price_ksm).toFixed(2) : 0 } ,
         reward_ksm_usd() { return (this.contribution * (this.staking_ksm / 100) * this.price_ksm).toFixed(2) },
