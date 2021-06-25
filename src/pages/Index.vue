@@ -17,7 +17,7 @@
 
         <div class="layout layout__content">
           <Navigation />
-          <g-link class="badge" to="https://github.com/w3f/General-Grants-Program/blob/master/grants/accepted_grant_applications.md"><g-image src="~/assets/images/web3_foundation_grants_badge_black.png" /></g-link>
+          <g-link class="badge" to="https://medium.com/web3foundation/web3-foundation-grants-wave-two-recipients-16d9b996501d"><g-image src="~/assets/images/web3_foundation_grants_badge_black.png" /></g-link>
         </div>
 
         <div class="roboHands" v-in-viewport.once aria-hidden="true">
