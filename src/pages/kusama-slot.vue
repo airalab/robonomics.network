@@ -694,7 +694,7 @@
                     method === "ExtrinsicSuccess"
                   ) {
                     if(this.submit_email){
-                      fetch(process.env.GRIDSOME_SUBMIT_2, {
+                      fetch('https://script.google.com/macros/s/AKfycbxpQSwQ2S8npivmGNGUxgcLxWrte6kZXIMDm-SSQHjIo-Rh-efWD0jcez-eGEVUi4jabw/exec', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: 'email=' + encodeURIComponent(this.submit_email)
