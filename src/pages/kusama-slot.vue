@@ -10,94 +10,57 @@
     <div class="auction page">
 
 
-      <section class="page-banner auction-banner section section__solid section__blue">
-        <h1 class="auction-parachain-title clean">Crowdloan for Robonomics on Kusama</h1>
+      <section class="page-banner auction-banner section section__solid section__red">
+        <h1 class="auction-parachain-title clean">Crowdloan for Robonomics on Kusama Started!</h1>
+        <div class="auction-parachain-subtitle">Robonomics integrates Polkadot technologies into the IoT market. Support Robonomics in the Kusama slots auction, let's go to the future</div>
 
         <div class="auction-banner-cols layout__content">
-          <div class="auction-banner-kusama">
-            <div class="kusama-wrap" v-in-viewport.once>
-              <div class="kusama"><g-image src="~/assets/images/kusama.png" alt="Kusama Relay Chain"/></div>
-              <div class="slot busy slot-1"><span>1</span></div>
-              <div class="slot busy slot-2"><span>2</span></div>
-              <div class="slot empty slot-3"><span>3</span></div>
-              <div class="slot empty slot-4"><span>4</span></div>
-              <div class="slot empty slot-5"><span>5</span></div>
-              <!-- <div class="slot empty slot-6"><span>6</span></div> -->
-              <div class="bubble robonomics">
-                <g-image src="~/assets/images/robonomics.png" alt="Robonomics Parachain"/>
-              </div>
-              <div class="bubble empty bubble-1"></div>
-              <div class="bubble empty bubble-2"></div>
-              <div class="bubble empty bubble-3"></div>
-              <div class="bubble empty bubble-4"></div>
-              <div class="bubble empty bubble-5"></div>
+
+            <div class="auction-statistics">
+              <div class="auction-statistics-sum">{{info_contributed}} KSM</div>
+              <div class="auction-statistics-accounts">from {{info_count}} contributors so far</div>
+              <div class="auction-statistics-id">Robonomics Parathread ID = 2077</div>
             </div>
-          </div>
 
-          <div class="auction-banner-form align-center">
-            <h3>Waiting for the 3rd-5th slot auctions</h3>
-            <g-image class="astronaut" alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
-            <Button label="Stay tuned on Twitter" link="https://twitter.com/AIRA_Robonomics" button="primary green large"/>
-            <p>
-              or<br/>
+            <div class="auction-banner-form align-center">
+              <g-image class="astronaut" alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
+              <!-- <Button label="Contribute now" button="primary large green" @click="GoToSubmit"/> -->
+              <a href="#crowdloan" class="button primary large green" v-smooth-scroll="{offset: -100}">Contribute now</a>
+            </div>
 
-              <tip summary="Add your email to whitelist" position="center-top" :summaryScale="false" :summaryButton="false" :summaryLink="true" class="inline-block">
-                <!-- <form @submit="handleSubmit" :class="'status-'+statusSubmit"> -->
-                <form @submit.prevent="onSubmit" class="auction-submition" :class="'status-'+statusSubmit">
-                  <div><input type="email" placeholder="Your email" v-model="email" name="email" required class="block"/></div>
-                  <div><label><input type="checkbox" name="agreement" required/> <small>Please, confirm you agree with <a href="/privacy" target="_blank">privacy rules</a></small></label></div>
-                  <div>
-                    <vue-recaptcha
-                      ref="invisibleRecaptcha"
-                      @verify="onVerify"
-                      size="invisible"
-                      :sitekey="recaptchaSitekey">
-                    </vue-recaptcha>
-
-                    <Button label="Submit" button="border block"/>
-                  </div>
-
-                  <div class="load">
-                    <div class="load-bird">
-                      <g-image src="/assets/kusama-karate-body.png" class="bird-body"/>
-                      <g-image src="/assets/kusama-karate-tale.png" class="bird-tale"/>
-                      <g-image src="/assets/kusama-karate-wing-1.png" class="bird-wing-1"/>
-                      <g-image src="/assets/kusama-karate-wing-2.png" class="bird-wing-2"/>
-                      <g-image src="/assets/kusama-karate-ribbons.png" class="bird-ribbons"/>
-                      <g-image src="/assets/kusama-karate-hair.png" class="bird-hair"/>
-                      <g-image src="/assets/kusama-karate-leg.png" class="bird-leg"/>
-                    </div>
-                    <p><b>You are in the list now. We'll send you email when auction will start!</b></p>
-                  </div>
-
-                  <div class="wait"><g-image src="~/assets/images/robonomics.png" alt="Robonomics Parachain"/></div>
-                  <div class="error">Something went wrong. Please, check your connection or try later.</div>
-
-                </form>
-              </tip>
-            </p>
-          </div>
 
           <div class="auction-banner-details">
 
-              <p><strong>Support Robonomics in the Kusama slots auction</strong></p>
-
               <ul class="hyphens">
-                <li>
-                  <strong>Get rewards:</strong>
-                  per 1 KSM contributed, 1 XRT is rewarded
-                </li>
-
-                <li><strong>Receive increased staking:</strong> 125% return for the next 48 weeks</li>
 
                 <li>
-                  <strong>Quick rewards available:</strong>
-                  25% right after the win, 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks)
+                  <strong>3.5 XRT</strong>
+                  For each KSM. This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain.
                 </li>
 
                 <li>
-                  <strong>Contribute to the future:</strong>
-                  Robonomics integrates new technologies into the real economy
+                  <strong>5 XRT</strong>
+                  Increased reward for participants in the collection of the first 35,000 KSM
+                </li>
+
+                <li>
+                  <strong>135,000 KSM</strong>
+                  Total collection limit. This strategy will help to launch Robonomics parachain at the lowest price for end users.
+                </li>
+
+                <li>
+                  <strong>Quick rewards</strong>
+                  You can get 50% of reward in the first month after the launch of the network
+                </li>
+
+                <li>
+                  <strong>Exclusive APR up to 100%</strong>
+                  Full reward will be received after one year of staking with increased income up to 100%
+                </li>
+
+                <li>
+                  <strong>Parachain native token</strong>
+                  All XRT tokens will be distributed in the Robonomics parachain
                 </li>
               </ul>
 
@@ -107,27 +70,16 @@
       </section>
 
 
-      <Abstract text="Robonomics crowdloan campaign for a parachain slot starts on the eve of Third Kusama Parachain Slot auction, 2021/06/28! Contribute and get rewards." />
-
-      <hr class="animate" v-in-viewport.once/>
-
-      <section class="auction-support layout">
+      <section id="crowdloan" class="auction-support layout">
 
           <h2 class="animate" v-in-viewport.once>Participate in the Robonomics crowdloan</h2>
 
           <p class="layout__text animate" v-in-viewport.once><i>By participating in the Robonomics crowdloan you lock your KSM for a period of time 48 weeks to help Robonomics lease a parachain slot and gain Kusama’s distributed computing power to service up to 10,000 digital twins of IoT devices at once.</i></p>
 
           <div class="auction-support-action animate" v-in-viewport.once>
-            <div class="auction-support-wait">
-              <div>
-                  <g-image alt="" src="~/assets/images/plo-girl-1.png" aria-hidden="true"/>
-                  <b>Crowdloan campaign will start <br/>on 28 June 2021</b>
-              </div>
-            </div>
-
 
             <!-- CALC -->
-            <!-- <div class="form-line">
+            <div class="form-line">
               <small>Choose contribution amount:</small>
               <div class="input-signed-right">
                 <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
@@ -185,32 +137,35 @@
               <div class="calc-line highlight">
                 <div class="calc-line-1">
                    <small>Annual Reward, XRT</small>
-                    <span>{{ reward_xrt }} (${{reward_xrt_usd}})</span>
+                    <span>{{ reward_xrt }} XRT</span>
+                    <small>${{reward_xrt_usd}}</small>
                 </div>
                 <div class="calc-line-2">
                   <small>Annual Reward, KSM</small>
-                  <span>{{ reward_ksm }} (${{reward_ksm_usd}})</span>
+                  <span>{{ reward_ksm }} KSM</span>
+                  <small>${{reward_ksm_usd}}</small>
                 </div>
               </div>
 
-            </div> -->
+            </div>
 
             <!-- end of CALC -->
 
             <div class="form-line">
               <small>Choose the way to contribute:</small>
-              <select class="block" v-model="selectedWay">
+              <select class="block robot" v-model="selectedWay">
                 <option selected value="1">1 - On website</option>
                 <option value="2">2 - On Polkadot Substrate portal</option>
                 <option value="3">3 - Via exchanges</option>
               </select>
             </div>
 
-            <section id="participate-1" v-if="selectedWay==1">
+            <section id="participate-1" class="loading" v-if="selectedWay==1">
 
               <form>
                 <!-- STEP 1 -->
 
+                <template v-if="!isApi">
                 <section>
                   <label class="block label">
                     <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-1"/>
@@ -232,39 +187,112 @@
                   </label>
                 </section>
 
-                <!-- <Button label="Connect Polkadot.js extension" button="primary block green large" :disabled="checkedFlags.length!=3" /> -->
+                <p v-if="status_noextension" class="error">Please check if you have installed polkadot{.js} extension</p>
 
+                <Button type="button" @click="connect" button="primary block green large" :disabled="isСonnection || checkedFlags.length!=3" :class="crowdloan_loading?'loading':''">
+                  <span class="text">Connect Polkadot.js extension</span>
+                </Button>
+                </template>
                 <!-- end STEP 1 -->
 
 
                 <!-- STEP 2 -->
 
+                <template v-else-if="isApi && !success">
+                <section>
+                  
+                  <template v-if="accounts.length > 0">
+                    <label class="block label">
+                      <small>Select an account:</small>
+                      <select v-model="account" class="block">
+                        <option
+                          v-for="(item, index) in accounts"
+                          :key="index"
+                          :value="item.address"
+                        >
+                          {{ item.meta.name }} - {{ item.address.slice(0, 6) + "..." + item.address.slice(-6) }}
+                        </option>
+                      </select>
+                    </label>
 
-                <!-- <section>
-                  <label class="block label">
-                    <small>Your contribution:</small>
-                    <div class="input-signed-right">
-                      <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
-                      <label for="contribution" class="sign">KSM</label>
-                    </div>
-                  </label>
+                    <label class="block label">
+                      <small>The balance of selected account:</small>
+                      <p>{{balanceView}}</p>
+                    </label>
 
-                  <label class="block label">
-                    <small>Your email (not necessary):</small>
-                    <input type="email" class="big block" value="" placeholder="Type your email"/>
-                  </label>
+                    <label class="block label">
+                      <small>Your contribution:</small>
+                      <div class="input-signed-right" :class="validateBalance?'':'error'">
+                        <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
+                        <label for="contribution" class="sign">KSM</label>
+                      </div>
+                      <div class="msg-error" v-if="!validateBalance">Insufficient or incorrectly entered balance</div>
+                    </label>
 
-                  <label class="block label">
-                    <input type="checkbox" class="big" required value="" checked="true"/>
-                    <small>I agree to receive email communications from Robonomics</small>
-                  </label>
+                    <label class="block label">
+                      <small>Your email (not necessary):</small>
+                      <input type="email" class="big block" value="" placeholder="Type your email" v-model="submit_email" :class="!validateEmail?'error':''"/>
+                      <div class="msg-error" v-if="!validateEmail&!agree_email">Please agree to receive emails from Robonomics or do not fill this field</div>
+                    </label>
+
+                    <label class="block label" v-show="submit_email">
+                      <input v-model="agree_email" type="checkbox" class="big" required />
+                      <small>I agree to receive email communications from Robonomics</small>
+                    </label>
+
+                    <details class="contribution-disclamer">
+                      <summary><b>Most important to know</b></summary>
+                      <article class="hyphens">
+                        <p>The Robonomics development team are early adopters of Polkadot technologies, and we understand that the current technical implementation of the Kusama Relay chain and Substrate framework may contain errors or be revised this year and next. This is important for the crowdloan campaigners to understand as well.</p>
+                        <p>The entire Polkadot ecosystem is undergoing a process of formation that can take an indefinite time. It's also important for you to keep in mind every time when you study any plans of the developers.</p>
+                        <p>Ladies and gentlemen, you are participating in this great experiment at your own peril and risk.</p>
+                        <p>Welcome to our journey!</p>
+                      </article>
+                    </details>
+                  </template>
+
+                  <template v-else>
+                    <label class="block label error">
+                      <small>No account found, please add account in your wallet extension or unlock it</small>
+                    </label>
+                  </template>
+                  
                 </section>
 
-                <Button label="Submit contribution" button="primary block green large" />  -->
+                <p v-if="status_transaction_broken" class="error">Something wrong with the transaction. Please don't worry and ask for help in <g-link to="https://t.me/robonomics">Robonomics Telegram Community</g-link></p>
+                <p v-if="status_transaction_notdone" class="error">The transaction was not executed. Please don't worry and ask for help in <g-link to="https://t.me/robonomics">Robonomics Telegram Community</g-link></p>
 
+                <Button type="button" @click="send" button="primary block green large" :disabled="!validateSend" :class="crowdloan_loading?'loading':''">
+                  <span class="text">Submit contribution</span>
+                </Button>
+                </template>
                 <!-- end STEP 2 -->
 
-                <Button label="Connect Polkadot.js extension" button="primary block green large" disabled="true" />
+
+                <!-- STEP 3 -->
+                <section v-if="success" class="crowdloan-step-3 active">
+                  <h3>Your contribution {{contribution}} KSM accepted!</h3>
+                  <div class="load-bird" aria-hidden="true" v-in-viewport.once>
+                    <g-image src="/assets/kusama-karate-body.png" class="bird-body"/>
+                    <g-image src="/assets/kusama-karate-tale.png" class="bird-tale"/>
+                    <g-image src="/assets/kusama-karate-wing-1.png" class="bird-wing-1"/>
+                    <g-image src="/assets/kusama-karate-wing-2.png" class="bird-wing-2"/>
+                    <g-image src="/assets/kusama-karate-ribbons.png" class="bird-ribbons"/>
+                    <g-image src="/assets/kusama-karate-hair.png" class="bird-hair"/>
+                    <g-image src="/assets/kusama-karate-leg.png" class="bird-leg"/>
+                  </div>
+                  <div class="contribution-share">
+                    <div><small>Share great news:</small></div>
+                    <div class="nowrap">
+                      <a href="https://twitter.com/intent/tweet?text=🤖%20My%20$KSM%20work%20for%20%23IoT%20future%20in%20%40AIRA_Robonomics%20Crowdloan&url=https%3A%2F%2Frobonomics.network%2Fkusama-slot%2F" target="_blank" class="inline-block"><g-image alt="On Twitter" src="~/assets/images/twitter.png"/></a>                    </div>
+                  </div>
+                  <Button type="button" @click="more" button="primary block green large">
+                    <span class="text">Contribute more</span>
+                  </Button>
+                </section>
+                <!-- end STEP 3 -->
+
+
               </form>
             </section>
 
@@ -440,7 +468,7 @@
             <section class="animate" v-in-viewport.once>
               <h3 class="faq-q">Why does Robonomics participation start only from the third round?</h3>
               <article class="faq-a">
-               Developers could publish the Crowdloan module today, but then we would have to implement limits. As can be noticed, the first 4 projects that published their Crowdloan modules established a 1 million KSM token limit. We’re placing our bets on 100,000 KSM being enough to win one of the Kusama network auctions, but are also reserving space for ourselves to quickly adjust the limit if we come to understand that more KSM tokens will need to be collected by the conclusion of the first and second rounds. In general, we’re trying to manoeuvre in search of an optimal rental cost for a slot.
+               Developers could publish the Crowdloan module today, but then we would have to implement limits. As can be noticed, the first 4 projects that published their Crowdloan modules established a 1 million KSM token limit. We’re placing our bets on 100,000 KSM (updated 135,000 KSM) being enough to win one of the Kusama network auctions, but are also reserving space for ourselves to quickly adjust the limit if we come to understand that more KSM tokens will need to be collected by the conclusion of the first and second rounds. In general, we’re trying to manoeuvre in search of an optimal rental cost for a slot.
               </article>
             </section>
 
@@ -453,10 +481,24 @@
             </section>
 
             <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">Will it be possible to participate in the Robonomics crowdloan with KSM that are hold on the Ledger?</h3>
+              <article class="faq-a">
+               Ledger-based accounts cannot participate directly in crowdloans, as the Ledger app does not support the crowdloan.contribute extrinsic. <g-link to="https://twitter.com/Ledger_Support/">Ledger Support</g-link>
+              </article>
+            </section>
+
+            <section class="animate" v-in-viewport.once>
               <h3 class="faq-q">Do I have to unbond my KSM to participate in auction?</h3>
               <article class="faq-a">
                You need to unbond your KSM, if you are currently staking (bonding) it. If you are going to
                participate in crowdloan campaign through the exchange, please, contact it directly for more details. Read <g-link to="https://guide.kusama.network/docs/en/mirror-maintain-guides-how-to-stop-validating#unbond-your-tokens">how to unbond your KSM</g-link> on Kusama WIKI.
+              </article>
+            </section>
+
+            <section class="animate" v-in-viewport.once>
+              <h3 class="faq-q">Is there a minimum contribution amount to participate in the crowdloan?</h3>
+              <article class="faq-a">
+               There is a small minimum built into Kusama by default (0.1 KSM) largely for scalability purposes and is not intended to prohibit small contributions. Robonomics team did not set any required minimum for contribution, you are welcome at any amount that is valid for Kusama conducted crowdloans.
               </article>
             </section>
 
@@ -477,8 +519,8 @@
             <section class="animate" v-in-viewport.once>
               <h3 class="faq-q">How/when will rewards be distributed?</h3>
               <article class="faq-a">
-                You will have the option of getting 100% parachain native token after the successful launch of the Robonomics parachain or 25% ERC-20 token right after the win (quick reward option)
-                plus 75% after the successful launch of the Robonomics parachain (est. 2-4 weeks).
+                You can get 50% of reward in the first month after the launch of the network. Full reward will be distributed after one year of staking with increased income up to 100%.
+                For example, if you are entitled to a standard reward of 3.5 XRT for 1 KSM, then in the first month after the launch of the network you can receive 1.725 XRT for each 1 KSM.
               </article>
             </section>
 
@@ -508,7 +550,20 @@
 
 
 <script>
-// import Land from '../templates/Land.vue'
+  let initApi
+  let getAccounts
+  let getAccount
+  let config
+  if (process.isClient) {
+    const chain = require("../utils/chain");
+    initApi = chain.initApi
+    getAccounts = chain.getAccounts
+    getAccount = chain.getAccount
+    config = chain.config
+  }
+  // import { initApi, getAccounts, getAccount, parseBlock, config } from "../utils/chain";
+  import { saveEmail, getStat } from "../utils/api";
+  import { bnToBn } from "@polkadot/util";
 
   export default {
     components: {
@@ -516,24 +571,14 @@
       Abstract: () => import("~/components/TextAbstract.vue"),
       Button: () => import("~/components/Button.vue"),
       tip: () => import("~/components/tip.vue"),
-      VueRecaptcha: () => import("vue-recaptcha")
+      Card: () => import("~/components/TextCard.vue")
     },
 
-    metaInfo: {
-      script: [
-        {
-          src: 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
-          body: true
-        }
-      ]
-    },
 
     data () {
       return {
         email: null,
         statusSubmit: 'none',
-        recaptchaSitekey: "6LeWbWQUAAAAAPkpf_6AokhGBcvnOexOpbARwk6Z",
-        // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost,
         parachainTab: 1,
         checkedFlags: [],
         selectedWay: 1,
@@ -543,63 +588,197 @@
         staking_ksm: 15,
         price_xrt: 0,
         price_ksm: 0,
+
+        submit_email: null,
+
+        isСonnection: false,
+        step: 1,
+        isApi: false,
+        api: null,
+        amount: 0,
+        success: false,
+        error: "",
+        isWrite: false,
+        account: null,
+        accounts: [],
+        agree_email: true,
+        info_count: 0,
+        info_contributed: 0,
+        balance: '0',
+        listenerBalance: null,
+
+        status_noaccount: false,
+        status_noextension: false,
+        status_transaction_broken: false,
+        status_transaction_notdone: false,
+
+        crowdloan_loading: false,
       }
     },
 
     methods: {
-
-      onSubmit: function () {
-        this.$refs.invisibleRecaptcha.execute()
-      },
-
-      onVerify: function (response) {
-        if(response) {
-          this.statusSubmit = 'wait'
-
-            let request = ''
-
-            if(this.email){
-              request = 'email=' + encodeURIComponent(this.email)
-            }
-
-            fetch('https://script.google.com/macros/s/AKfycbzkKvOsGaZK6M-6oxd6aAzP75hTfcgoEuXX8Q0WrrXNQQ2o4qu0BeMtdnJm7llQJaDI/exec', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-              body: request
-            })
-            .then(() => this.statusSubmit = 'load')
-            .catch(error => this.statusSubmit = 'error')
-
-          }
-        },
 
         async getPrice(tickerName) {
           const result = await fetch(
             `https://min-api.cryptocompare.com/data/price?fsym=${tickerName}&tsyms=USD&api_key=9c9ca216c454cd2390092e573894a6e10ddff03ef3a4e153996ef358fe9d33d8`
           );
           const data = await result.json();
-          return data.USD
+          return Number(data.USD)
         },
         async updatePrices() {
           this.price_xrt = await this.getPrice('XRT');
           this.price_ksm = await this.getPrice('KSM');
+        },
+        async connect() {
+          //loading
+          this.crowdloan_loading = true;
+
+          this.isСonnection = true;
+          this.status_noextension = false;
+          this.status_noaccount = false;
+          try {
+            this.api = await initApi();
+            this.accounts = await getAccounts(this.api);
+            if (this.accounts.length === 0) {
+              console.log('not accounts'); //
+              this.status_noaccount = true;
+            }
+            this.account = this.accounts[0]?.address;
+            if (this.account) {
+              let { data: { free: balance } } = await this.api.query.system.account(this.account);
+              this.balance = balance
+            }
+            //2
+            this.crowdloan_loading = false;
+            this.isСonnection = false
+            this.isApi = true;
+          } catch (error) {
+            //-
+            this.crowdloan_loading = false;
+            this.isСonnection = false
+            console.log(error.message);
+            this.status_noextension = true;
+          }
+        },
+        async send() {
+          try {
+            //loading
+            this.crowdloan_loading = true;
+
+            this.error = "";
+            this.isWrite = true;
+            this.status_transaction_broken = false;
+            this.status_transaction_notdone = false;
+            const account = await getAccount(this.api, this.account);
+            const amount = bnToBn(this.contribution)
+            const tx = await this.api.tx.crowdloan.contribute(config.paraId, amount.mul(bnToBn('1000000000000')).toString(), null)
+              .signAsync(account.meta.isInjected ? account.address : account);
+
+            await tx.send(result => {
+              if (result.status.isInBlock) {
+                console.log(result.status.asInBlock.toString());
+                result.events.forEach(events => {
+                  const {
+                    event: { data, method, section }
+                  } = events;
+
+                  if (section === "system" && method === "ExtrinsicFailed") {
+                    console.log("error", data.toString()); // Транзакция с ошибками
+                    this.status_transaction_broken = true;
+                    //-
+                    this.crowdloan_loading = false;
+                    this.error = 'Error';
+                    this.isWrite = false;
+                  } else if (
+                    section === "system" &&
+                    method === "ExtrinsicSuccess"
+                  ) {
+                    if(this.submit_email){
+                      fetch(process.env.GRIDSOME_SUBMIT_2, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: 'email=' + encodeURIComponent(this.submit_email)
+                      })
+                    }
+                    console.log("ok");
+                    this.isWrite = false;
+                    this.success = true;
+                    //3
+                  }
+                });
+              } else if (result.status.isFinalized) {
+                console.log("isFinalized");
+              }
+            });
+          } catch (error) {
+            //-
+            this.crowdloan_loading = false;
+            console.log(error); // кнопка нажата, транз не отправляется
+            this.status_transaction_notdone = true;
+            this.error = error.message;
+            this.isWrite = false;
+          }
+        },
+        async more() {
+          //2
+          this.crowdloan_loading = false;
+          this.success = false;
+        },
+        async updateInfo() {
+          const info = await getStat();
+          this.info_count = info.count;
+          this.info_contributed = Number(info.amountUnit).toFixed(2);
+        },
+      },
+
+      created() {
+        this.updateInfo()
+        setInterval(() => {
+          this.updateInfo()
+        }, 5000);
+        this.updatePrices()
+      },
+
+      watch: {
+        account: async function (newValue) {
+          if (this.listenerBalance !== null) {
+            this.listenerBalance()
+          }
+          this.listenerBalance = await this.api.query.system.account(newValue, ({ data: { free: balance } }) => {
+            this.balance = balance
+          });
         }
       },
 
-      // created() {
-      //   this.updatePrices()
-      // },
-
       computed: {
-
-        reward_xrt() { return (this.reward_xrt_usd / this.price_xrt).toFixed(2) },
-        reward_xrt_usd() { return (this.reward_ksm_usd * 1.5).toFixed(2) },
-        reward_ksm() { return this.price_ksm > 0 ? (this.reward_ksm_usd / this.price_ksm).toFixed(2) : 0 } ,
-        reward_ksm_usd() { return (this.contribution * (this.staking_ksm / 100) * this.price_ksm).toFixed(2) },
-
-        // checkedFlagsCrowdloan: function() {
-        //   return this.checkedFlags.size
-        // }
+        validateBalance() {
+          if (Number(this.contribution) > 0) {
+            const amount = bnToBn(this.contribution)
+            const balance = bnToBn(this.balance)
+            if (balance.gt(amount.mul(bnToBn('1000000000000')))) {
+              return true
+            }
+          }
+          return false
+        },
+        validateEmail() {
+          if ((!this.submit_email || (this.agree_email && /\S+@\S+\.\S+/.test(this.submit_email)))) {
+            return true
+          }
+          return false
+        },
+        validateSend() {
+          if (this.validateBalance && !this.isWrite && this.validateEmail) {
+            return true
+          }
+          return false
+        },
+        koef() { return Number(this.info_contributed) < 35000 ? 5 : 3.5 },
+        reward_xrt() { return (this.contribution * this.koef).toFixed(2) },
+        reward_xrt_usd() { return (this.price_xrt * this.reward_xrt).toFixed(2) },
+        reward_ksm() { return (this.contribution * (this.staking_ksm / 100)).toFixed(2) } ,
+        reward_ksm_usd() { return (this.price_ksm * this.reward_ksm).toFixed(2) },
+        balanceView() {return Number(this.balance) > 0 ? this.balance.toHuman() : "-"}
       }
   }
 </script>
@@ -637,19 +816,51 @@
   /*end BASICS*/
 
   /* AUCTION PARTICIPATION */
-  .auction-support {
-    .input-signed-right {
+  .button.loading {
+    .text {
+      display: none;
+    }
 
-      input:not(:placeholder-shown) {
-        border-color: var(--color-blue);
-        color: var(--color-blue);
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1.2rem;
+      width: 1.2rem;
+      border-radius: calc(1.2rem/2);
+      border-width: 2px 2px 0 0;
+      border-style: solid;
 
-        & + .sign {
-          color: var(--color-blue)
-        }
+      animation: 0.8s Rotate ease-in-out infinite;
+
+      @keyframes Rotate
+      {
+        0%
+          {
+            transform:rotate(0deg);
+          }
+        100%
+          {
+            transform:rotate(360deg);
+          }
       }
 
     }
+  }
+
+
+  .auction-support {
+    // .input-signed-right {
+
+    //   input:not(:placeholder-shown) {
+    //     border-color: var(--color-blue);
+    //     color: var(--color-blue);
+
+    //     & + .sign {
+    //       color: var(--color-blue)
+    //     }
+    //   }
+
+    // }
 
     input[type="checkbox"]:checked {
       background-color: var(--color-blue);
@@ -670,13 +881,6 @@
 
     position: relative; // for waiting tip
     min-height: 400px; // for waiting tip
-
-    select {
-      background-image: url('~@/assets/images/3.gif');
-			background-size: 2.8rem;
-      background-repeat: no-repeat;
-      background-position: calc(100% - 0.4rem) calc(50% + 0.4rem);
-    }
 
     .tip-container {
       margin-left: 0.5rem
@@ -737,6 +941,7 @@
 
     .calc-line-1 {
       background: var(--color-blue);
+      text-align: right;
     }
 
     .calc-line-2 {
@@ -791,6 +996,154 @@
       padding-left: 1.2rem;
     }
   }
+
+
+
+  /* STEP 3 */
+  .load-bird {
+      position: relative;
+      width: 148px;
+      height: 180px;
+
+      img { position: absolute; }
+
+      img:not(.bird-body) {
+        animation-delay: 0.6s;
+        animation-duration: 0.8s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-fill-mode: forwards;
+      }
+
+      .bird-body {
+        width: 148px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .bird-tale {
+        width: 58px;
+        top: 100px;
+        left: -35px;
+        z-index: 0;
+
+        transform-origin: 0 100%;
+      }
+
+      .bird-wing-1 {
+        width: 47px;
+        top: 42px;
+        left: 23px;
+        z-index: 2;
+
+        transform-origin: 0 0;
+      }
+
+      .bird-wing-2 {
+        width: 67px;
+        top: 42px;
+        left: 120px;
+        z-index: 0;
+
+        transform-origin: 0 0;
+      }
+
+      .bird-ribbons {
+        width: 63px;
+        top: 37px;
+        left: -8px;
+        z-index: 0;
+
+        transform-origin: 100% 50%;
+      }
+
+      .bird-hair {
+        width: 14px;
+        top: -10px;
+        left: 72px;
+        z-index: 0;
+
+        transform-origin: 100% 50%;
+      }
+
+      .bird-leg {
+        width: 37px;
+        top: 127px;
+        left: 63px;
+        z-index: 3;
+
+        transform-origin: 100% 0;
+      }
+    }
+
+    .crowdloan-step-3{
+      &.active .in-viewport{
+        .bird-tale { animation-name: birdTale; }
+        .bird-wing-1 { animation-name: birdWing1; }
+        .bird-wing-2 { animation-name: birdWing2; }
+        .bird-ribbons { animation-name: birdRibbons; }
+        .bird-hair { animation-name: birdHair; }
+        .bird-leg { animation-name: birdLeg; }
+      }
+
+      .load-bird {
+        margin: 0 auto
+      }
+    }
+
+    .contribution-share {
+      margin-top: calc(var(--space)*0.5);
+      margin-bottom: var(--space);
+      text-align: center;
+
+      a {
+        width: 3rem;
+
+        img {
+          display: block;
+        }
+
+        &:not(:last-child) {
+          margin-right: 0.8rem;
+        }
+      }
+
+      div:not(:last-child) {
+        margin-bottom: 0.4rem;
+      }
+    }
+
+    @keyframes birdTale {
+      to{
+        transform: rotate(25deg) translateX(-20px) translateY(-20px);
+      }
+    }
+    @keyframes birdWing1 {
+      to{
+        transform: rotate(-50deg) translateX(-25px) translateY(-10px);
+      }
+    }
+    @keyframes birdWing2 {
+      to{
+        transform: rotate(-50deg) translateX(-25px) translateY(30px);
+      }
+    }
+    @keyframes birdRibbons {
+      to{
+        transform: rotate(30deg) translateX(-20px);
+      }
+    }
+    @keyframes birdHair {
+      to{
+        transform: rotate(-30deg);
+      }
+    }
+    @keyframes birdLeg {
+      to{
+        transform: rotate(-110deg) translateX(10px) translateY(20px);
+      }
+    }
+  /* end of STEP 3 */
 
 
   /* end AUCTION PARTICIPATION */
@@ -999,200 +1352,60 @@
   /* end ROBONOMICS KUSAMA PARACHAIN INFO */
 
 
-  /* SUBSRIBTION FORM */
-  .auction-submition {
 
-    position: relative;
-
-    .load, .wait, .error {
-      visibility: hidden;
-      height: 0;
-	    opacity: 0;
+  .contribution-disclamer {
+    summary {
+      color: var(--color-blue);
+      cursor: pointer;
     }
 
-    .load {
+    &[open] summary {
+      margin-bottom: calc(var(--space) * 0.5);
+    }
 
-      text-align: center;
+    article {
+      font-size: 80%;
 
       p {
-        position: relative;
-        top: -40px;
-        text-shadow: 1px 0 0 #fff;
-      }
-    }
-
-    .load-bird {
-
-      position: absolute;
-      top: -24px;
-      left: calc(50% - 74px);
-      width: 148px;
-      height: 180px;
-
-      transform: scale(0.7);
-
-      img { position: absolute; }
-
-      img:not(.bird-body) {
-        animation-delay: 0.6s;
-        animation-duration: 0.8s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        animation-fill-mode: forwards;
-      }
-
-      .bird-body {
-        width: 148px;
-        top: 0;
-        left: 0;
-        z-index: 1;
-      }
-
-      .bird-tale {
-        width: 58px;
-        top: 100px;
-        left: -35px;
-        z-index: 0;
-
-        transform-origin: 0 100%;
-      }
-
-      .bird-wing-1 {
-        width: 47px;
-        top: 42px;
-        left: 23px;
-        z-index: 2;
-
-        transform-origin: 0 0;
-      }
-
-      .bird-wing-2 {
-        width: 67px;
-        top: 42px;
-        left: 120px;
-        z-index: 0;
-
-        transform-origin: 0 0;
-      }
-
-      .bird-ribbons {
-        width: 63px;
-        top: 37px;
-        left: -8px;
-        z-index: 0;
-
-        transform-origin: 100% 50%;
-      }
-
-      .bird-hair {
-        width: 14px;
-        top: -10px;
-        left: 72px;
-        z-index: 0;
-
-        transform-origin: 100% 50%;
-      }
-
-      .bird-leg {
-        width: 37px;
-        top: 127px;
-        left: 63px;
-        z-index: 3;
-
-        transform-origin: 100% 0;
-      }
-    }
-
-    &.status-load {
-
-      .load {
-        animation: FadeIn 0.3s var(--animation-bump) forwards;
-
-        .bird-tale { animation-name: birdTale; }
-        .bird-wing-1 { animation-name: birdWing1; }
-        .bird-wing-2 { animation-name: birdWing2; }
-        .bird-ribbons { animation-name: birdRibbons; }
-        .bird-hair { animation-name: birdHair; }
-        .bird-leg { animation-name: birdLeg; }
-      }
-
-      & > *:not(.load), button { pointer-events: none; opacity: 0.1; }
-    }
-
-    .wait {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-
-      img {
-        width: 90px;
-        animation: pulse 1.5s infinite;
-      }
-    }
-
-    &.status-wait {
-
-      .wait {
-        animation: FadeIn 0.3s var(--animation-bump) forwards;
-      }
-
-      & > *:not(.wait), button { pointer-events: none; opacity: 0.5; }
-    }
-
-    &.status-error {
-
-      .error {
-        animation: FadeIn 0.3s var(--animation-bump) forwards;
-        color: var(--color-red);
-        height: auto;
+        margin-bottom: calc(var(--space) * 0.5);
       }
     }
   }
-  @keyframes birdTale {
-    to{
-      transform: rotate(25deg) translateX(-20px) translateY(-20px);
-    }
-  }
-  @keyframes birdWing1 {
-    to{
-      transform: rotate(-50deg) translateX(-25px) translateY(-10px);
-    }
-  }
-  @keyframes birdWing2 {
-    to{
-      transform: rotate(-50deg) translateX(-25px) translateY(30px);
-    }
-  }
-  @keyframes birdRibbons {
-    to{
-      transform: rotate(30deg) translateX(-20px);
-    }
-  }
-  @keyframes birdHair {
-    to{
-      transform: rotate(-30deg);
-    }
-  }
-  @keyframes birdLeg {
-    to{
-      transform: rotate(-110deg) translateX(10px) translateY(20px);
-    }
-  }
-  /* end SUBSRIBTION FORM */
 
+  .auction-statistics {
+    position: absolute;
+    top: 0;
+    left: calc(50% + 160px);
+    // right: calc(var(--space)*2);
 
-  // .auction-parachain-title:after {
-  //   content: " ++";
+    &:before, &:after {
+      content:"";
+      display: block;
+      height: 30px;
+      width: 1px;
+      background: var(--color-light);
+    }
 
-  //   opacity: 0;
-  //   animation: blink var(--duration-mainpic) ease-out 0.1s forwards;
-  // }
+    @media screen and (max-width:960px) {
+      position: static;
+      margin: var(--space) auto;
+      text-align: center;
+
+      &:before, &:after { display: none; }
+    }
+  }
+
+  .auction-statistics-sum {
+    font-weight: bold;
+    font-size: 150%;
+  }
+
+  .auction-parachain-subtitle {
+    display:block;
+    margin: 0 auto;
+    max-width:800px;
+    font-style: italic;
+  }
 
   .astronaut {
     display: block;
@@ -1209,30 +1422,60 @@
   .auction-banner {
     overflow: hidden;
     text-align: center;
+    padding-top: calc(var(--space) * 2);
+    padding-bottom: calc(var(--space) * 2);
+    // position: relative;
 
     .button, h2, h3 {
       margin-bottom: calc(var(--space)/2);
     }
 
+    .button {
+      width: 100%;
+      position: relative;
+    }
+
     ul {
       font-size: 90%;
       list-style: none;
-      margin-left: 0;
+    }
+  }
 
-      li{
-        &::before {
-          content: "✓";
-          margin-right: 0.3rem;
-        }
+  .auction-banner-details {
+    strong {
+      font-size: 150%;
+      display: block;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: calc(var(--space)*2);
+
+      li {
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width:650px) {
+        grid-template-columns: 1fr;
       }
     }
   }
 
+  .auction-banner-form {
+    max-width: 800px;
+
+    margin: calc(var(--space)*2) auto;
+    text-align: center;
+
+    .button {
+      max-width: 500px;
+    }
+  }
+
   .auction-banner-cols {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: calc(var(--space) * 2);
     text-align: left;
+    position: relative;
   }
 
   .auction-banner-kusama {
@@ -1244,268 +1487,6 @@
     }
   }
 
-  /* KUSAMA SCENE */
-  .kusama-wrap {
-    position: absolute;
-    width: var(--kusama-size);
-    height: var(--kusama-size);
-
-    .kusama, .slot, .slot span, .bubble
-    {
-      display: flex;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-    }
-
-    .kusama {
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      width: var(--kusama-size);
-      height: var(--kusama-size);
-      border-radius: calc(var(--kusama-size)/2);
-      background-color: var(--color-polka);
-
-      img {
-        width: calc(var(--kusama-size) * 0.7);
-      }
-    }
-
-     .slot {
-      position: absolute;
-
-      &, &:after, &:before {
-        width: var(--slot-size);
-        height: var(--slot-size);
-        border-radius: 0.4rem;
-      }
-
-      &:before {
-        content: "";
-        background-color: var(--color-slot);
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-      }
-
-      span {
-        width: 1.8rem;
-        height: 1.8rem;
-        border-radius: 0.6rem;
-
-        font-weight: 500;
-
-        background-color: #fff;
-        color: var(--color-slot);
-
-        position: relative;
-        z-index: 2;
-      }
-
-      &.busy {
-
-        &:before { background-color: var(--color-polka); }
-
-        span {
-          color: var(--color-polka);
-        }
-
-      }
-
-      &.empty {
-        &:after {
-          content: "";
-          background-color: rgba(255, 255, 255, 0.5);
-          animation: var(--duration-bubble) pulse 2s infinite;
-
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-    }
-
-    .slot-1 { left: calc(var(--kusama-size) * 0.5); top: calc(var(--slot-size) * (-1.4)); }
-    .slot-2 { left: calc(var(--kusama-size) * 0.5 + var(--kusama-size) * 0.3); top: calc(var(--slot-size) * (-0.7)); }
-    .slot-3 { left: calc(var(--kusama-size) * 0.5 + var(--kusama-size) * 0.5); top: var(--slot-size); }
-    .slot-4 { left: calc(var(--kusama-size) * 0.5 + var(--kusama-size) * 0.6); top: calc(var(--slot-size) * 3); }
-    .slot-5 { left: calc(var(--kusama-size) * 0.5 + var(--kusama-size) * 0.5); top: calc(var(--slot-size) * 5); }
-    .slot-6 { left: calc(var(--kusama-size) * 0.5 + var(--kusama-size) * 0.3); top: calc(var(--slot-size) * 6.4); }
-
-    .bubble {
-      background-color: #fff;
-
-      &, &:after {
-        width: var(--bubble-size);
-        height: var(--bubble-size);
-        border-radius: calc(var(--bubble-size)/2);
-      }
-
-      position: absolute;
-      bottom: 50%;
-      opacity: 0;
-      transform: scale(1.2) translateY(calc(var(--kusama-size)*1.2));
-
-      animation-name: buble;
-      animation-delay: var(--delay-bubble);
-      animation-duration: var(--duration-bubble);
-      animation-timing-function: ease-out;
-      animation-fill-mode: forwards;
-    }
-
-    .bubble.robonomics
-      {
-        left: calc(var(--kusama-size) + var(--bubble-size) * 1.3);
-        animation-duration: calc(var(--duration-bubble)/2);
-        animation-name: bubleRobonomics;
-
-        img {
-          position: absolute;
-          z-index: 1;
-          width: calc(var(--bubble-size) * 0.6);
-          top: calc(50% - (var(--bubble-size) * 0.6)/2);
-          left: calc(50% - (var(--bubble-size) * 0.6)/2);
-        }
-
-        &:after {
-          content: "";
-          background-color: rgba(255, 255, 255, 0.5);
-          animation: pulse 2s infinite;
-
-          top: 0;
-          left: 0;
-        }
-      }
-
-    .bubble-1 { left: calc(var(--kusama-size) - 5rem); animation-duration: calc(var(--duration-bubble)*1.2); }
-    .bubble-2 { left: calc(var(--kusama-size) + 3rem); animation-duration: calc(var(--duration-bubble)*1.4); }
-    .bubble-3 { left: calc(var(--kusama-size) - 10rem); }
-    .bubble-4 { left: calc(var(--kusama-size) + 5rem); animation-duration: calc(var(--duration-bubble)/1.2); }
-    .bubble-5 { left: calc(var(--kusama-size) + 1.5rem); animation-duration: calc(var(--duration-bubble)/1.4); }
-
-    @keyframes buble {
-      from {
-        transform: scale(1.2) translateY(calc(var(--kusama-size)*1.2));
-        opacity: 0;
-      }
-      50%{
-        opacity: 1;
-      }
-      to {
-        transform: scale(1) translateY(calc(var(--kusama-size) * (-1)));
-        opacity: 0;
-      }
-    }
-
-    @keyframes bubleRobonomics {
-      from {
-        transform: scale(1.2) translateY(calc(var(--kusama-size)*1.2));
-        opacity: 0;
-      }
-      to{
-        transform: scale(1) translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-  }
-
-  .kusama-wrap {
-      .bubble, .bubble:after, .slot.empty, .slot.empty:after {
-      animation-play-state: paused;
-    }
-  }
-
-  .kusama-wrap.in-viewport {
-    .bubble, .bubble:after, .slot.empty, .slot.empty:after {
-      animation-play-state: running;
-    }
-  }
-  /* end of KUSAMA SCENE */
-
-
-  @media screen and (max-width: 1440px){
-      .kusama {
-        img {
-          width: calc(var(--kusama-size) * 0.4);
-        }
-      }
-
-    }
-
-  @media screen and (max-width: 1140px) {
-    .auction-banner-cols {
-      grid-template-columns: repeat(2, 1fr);
-
-      .auction-banner-form {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-      }
-
-      .auction-banner-kusama {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-      }
-      .auction-banner-details {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-      }
-    }
-  }
-
-  @media screen and (max-width: 820px) {
-
-    .auction-banner-cols {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto auto var(--kusama-size);
-      column-gap: 0;
-      row-gap: calc(var(--space)*4);
-      padding-left: var(--space);
-      padding-right: var(--space);
-
-      .auction-banner-kusama, .auction-banner-details, .auction-banner-form {
-        grid-column: auto;
-      }
-
-      .auction-banner-kusama {
-        grid-row: 3 / 4;
-      }
-
-      .auction-banner-details {
-        grid-row: 2 / 3;
-      }
-
-      .kusama-wrap {
-        left: calc(50% - var(--kusama-size)*0.75);
-        right: auto;
-        transform: scale(0.8);
-      }
-    }
-  }
-
-
-  @media screen and (max-width: 375px) {
-    .auction-banner-cols {
-      .kusama-wrap {
-        transform: scale(0.7);
-      }
-    }
-  }
 
 
   .auction-steps {

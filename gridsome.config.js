@@ -15,7 +15,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-yandex-metrika',
       options: {
-	      id: 47762995,
+	      id: process.env.YA_ID,
 	      options:  {
 	        clickmap:true,
 	        trackLinks:true,
@@ -24,18 +24,12 @@ module.exports = {
 	      }
 	    }
     },
-    // {
-    //   use: "@gridsome/plugin-google-analytics",
-    //   options: {
-    //     id: "UA-169310127-1",
-    //   },
-    // }
 
     {
       // Google Tag Manager
       use: 'gridsome-plugin-gtm',
       options: {
-        id: 'GTM-WJ83CPC',
+        id: process.env.GA_ID,
         enabled: true,
         debug: false
       }

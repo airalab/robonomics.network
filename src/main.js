@@ -23,6 +23,9 @@ export default function (Vue, { router, head, isClient }) {
     ) {
       global.location.href = global.location.origin;
     }
+
+    const vueSmoothScroll = require('vue2-smooth-scroll').default;
+    Vue.use(vueSmoothScroll);
   }
   // Set default layout as a global component
   Vue.component('layout', Default)

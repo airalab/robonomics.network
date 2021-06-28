@@ -220,6 +220,7 @@ elements in the chain of providing the user with services. In other words, where
     position: relative;
     background: var(--color-gradient-mars);
     min-height: 450px;
+    overflow: hidden;
 
     h1 {
       margin-top: calc(var(--space) * 0.5);

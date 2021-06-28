@@ -9,7 +9,7 @@
           <div class="layout__content">
             <div id="banner-auction">
               <g-image alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
-              ROBONOMICS PARACHAIN AUCTION
+              ROBONOMICS PARACHAIN CROWDLOAN STARTED
             </div>
           </div>
         </a>
@@ -63,8 +63,8 @@ query {
     text-decoration: none;
     overflow: hidden;
 
-    background-color: var(--color-blue);
-    color: var(--color-blue-light) !important;
+    background-color: var(--color-red);
+    color: var(--color-light) !important;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -162,17 +162,37 @@ query {
     text-decoration: none;
   }
 
+  body {
+ 
+    &:before, &:after {
+      content:"";
+      position: fixed;
+      background-color: var(--body-bg);
+      width: 100%;
+      left: 0;
+      z-index: 1000;
+    }
+
+    &:before {
+      top: 0;
+      height: var(--screen-padding-top);
+    }
+
+    &:after {
+      bottom: 0;
+      height: var(--screen-padding-bottom);
+    }
+  }
+
 .screen {
-  height: 100%;
-	overflow: hidden;
 	position: relative;
-
-	background-color: var(--color-gray-light);
-	border-style: solid;
+  border-style: solid;
   border-color: var(--body-bg);
-  border-width: var(--screen-padding-top) var(--screen-padding-right) var(--screen-padding-bottom) var(--screen-padding-left);
+  border-width: 0 var(--screen-padding-right) 0 var(--screen-padding-left);
+	background-color: var(--color-gray-light);
+  padding-top: calc(var(--screen-padding-top));
+  padding-bottom: calc(var(--screen-padding-bottom));
 
-	overflow-y: scroll;
 	&::-webkit-scrollbar { display: none; }
 	scrollbar-width: none;
 
@@ -184,7 +204,7 @@ query {
 
 // for pages with banner
 .screen.banner {
- border-top-width: calc(var(--screen-padding-top) + var(--space-bannertop));
+ padding-top: calc(var(--screen-padding-top) + var(--space-bannertop));
 }
 
 </style>
