@@ -200,7 +200,7 @@
 
                 <template v-else-if="isApi && !success">
                 <section>
-                  
+
                   <template v-if="accounts.length > 0">
                     <label class="block label">
                       <small>Select an account:</small>
@@ -256,7 +256,7 @@
                       <small>No account found, please add account in your wallet extension or unlock it</small>
                     </label>
                   </template>
-                  
+
                 </section>
 
                 <p v-if="status_transaction_broken" class="error">Something wrong with the transaction. Please don't worry and ask for help in <g-link to="https://t.me/robonomics">Robonomics Telegram Community</g-link></p>
@@ -670,8 +670,8 @@
             this.status_transaction_broken = false;
             this.status_transaction_notdone = false;
             const account = await getAccount(this.api, this.account);
-            const amount = bnToBn(this.contribution)
-            const tx = await this.api.tx.crowdloan.contribute(config.paraId, amount.mul(bnToBn('1000000000000')).toString(), null)
+            const amount = bnToBn(Number(this.contribution)*1000000000000)
+            const tx = await this.api.tx.crowdloan.contribute(config.paraId, amount.toString(), null)
               .signAsync(account.meta.isInjected ? account.address : account);
 
             await tx.send(result => {
@@ -753,9 +753,9 @@
       computed: {
         validateBalance() {
           if (Number(this.contribution) > 0) {
-            const amount = bnToBn(this.contribution)
+            const amount = bnToBn(Number(this.contribution)*1000000000000)
             const balance = bnToBn(this.balance)
-            if (balance.gt(amount.mul(bnToBn('1000000000000')))) {
+            if (balance.gt(amount)) {
               return true
             }
           }
