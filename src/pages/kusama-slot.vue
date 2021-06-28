@@ -69,6 +69,8 @@
         </div>
       </section>
 
+      <hr class="animate no-margins" v-in-viewport.once/>
+
 
       <section id="crowdloan" class="auction-support layout">
 
@@ -362,6 +364,49 @@
 
       </div>
 
+      </section>
+
+      <hr class="animate no-margins" v-in-viewport.once/>
+
+      <section class="kusama-polkadot-ecosystem section__solid section__lightblue">
+        <h2>Robonomics in Polkadot ecosystem</h2>
+
+        <div class="grid-3 animate-inside layout layout__content" v-in-viewport.once>
+
+        <Card orientation="vertical" back="transparent" link="https://youtu.be/rbjOmJmilAg">
+
+          <p>
+            <g-image alt="Video from Polkadot Decoded 2021" src="~/assets/images/Sergei-Polkadot-may-2021.png"/>
+          </p>
+
+          <h3>Polkadot Decoded 2021</h3>
+          <p class="hyphens">On May 19, on the main stage of Polkadot Decoded, Sergey Lonshakov spoke about the concept of Smart cities and Polkadot services that are possible within this.</p>
+
+        </Card>
+
+        <Card orientation="vertical" back="transparent" link="https://youtu.be/31zXeUq3htE">
+
+          <p>
+            <g-image alt="Kusama on Mars video" src="~/assets/images/Kusama-On-Mars.png"/>
+          </p>
+
+          <h3>Kusama on Mars</h3>
+          <p class="hyphens">On Hackusama (a 7-week online hackathon) we inspired with an idea of architecture impossible without KUSAMA. Watch the video and read in the description what was done during the hackathon.</p>
+
+        </Card>
+
+        <Card orientation="vertical" back="transparent" link="https://opensea.io/assets/0x8cb813bf27dc744fc5fb6ba7515504de45d39e08/24">
+
+          <p>
+            <g-image alt="Robonomics PolkaPet" src="~/assets/images/robonomics-nft-3.png"/>
+          </p>
+
+          <h3>Robonomics PolkaPet</h3>
+          <p class="hyphens">PolkaPet is collectible NFT card embodied as an artistic creature, represents a specific project within the Polkadot ecosystem. Robonomics PolkaPets owners can get some additional bonuses.</p>
+
+        </Card>
+
+        </div>
       </section>
 
       <section class="kusama-parachain">
