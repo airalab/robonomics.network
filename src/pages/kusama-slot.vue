@@ -322,12 +322,12 @@
       </section>
 
 
-      <hr class="animate" v-in-viewport.once/>
+      <hr class="animate no-margins" v-in-viewport.once/>
 
-      <section class="animate" v-in-viewport.once>
+      <section class="animate section__dotted section__solid" v-in-viewport.once>
         <h2 class="layout">Choose your strategy</h2>
 
-        <section class="auction-steps grid-3 animate-inside layout layout__content" v-in-viewport.once>
+        <div class="auction-steps grid-3 animate-inside layout layout__content" v-in-viewport.once>
 
         <Card orientation="vertical" back="transparent">
 
@@ -360,7 +360,7 @@
           <p class="hyphens">Robonomics already has complex ecosystem for connecting real world to <g-link to="https://web3-technology-stack.readthedocs.io">Web3 Technology Stack</g-link>. It's free, it's opensource, everybody can try it for IoT and Smart services. With Polkadot it can be even more cost-effective.</p>
         </Card>
 
-      </section>
+      </div>
 
       </section>
 
@@ -1497,6 +1497,10 @@
 
     h3 {
       margin-top: 0;
+    }
+
+    .card {
+      padding-bottom: 0;
     }
 
     @media screen and (max-width: 400px) {
