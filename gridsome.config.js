@@ -29,7 +29,7 @@ module.exports = {
       // Google Tag Manager
       use: 'gridsome-plugin-gtm',
       options: {
-        id: GTM-WJ83CPC,
+        id: 'GTM-WJ83CPC',
         enabled: true,
         debug: false
       }
