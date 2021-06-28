@@ -13,7 +13,7 @@ import { blake2AsU8a } from "@polkadot/util-crypto";
 export const config = {
   endpoint: "wss://kusama-rpc.polkadot.io",
   types: {
-    "ValidationCodeHash": "Vec<u8>"
+    "ValidationCodeHash": "Hash"
   },
   paraId: 2077
 };
