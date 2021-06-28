@@ -1,7 +1,10 @@
 <template>
 
   <g-link v-if="link" :to="link" :class="classes" :style="{transform: 'scale('+scale+')'}">{{label}}</g-link>
-  <button v-else :class="classes" :style="{transform: 'scale('+scale+')'}" type="submit" :disabled="disabled">{{label}}</button>
+  <button v-else :class="classes" :style="{transform: 'scale('+scale+')'}" type="submit" :disabled="disabled" @click="$emit('click')">
+    <template v-if="label">{{label}}</template>
+    <template v-else><slot/></template>
+  </button>
 
 </template>
 
@@ -38,6 +41,10 @@ export default {
     disabled: { 
       type: Boolean,
       default: false
+    },
+
+    click: {
+      type: Function
     }
   },
 

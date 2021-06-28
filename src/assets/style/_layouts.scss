@@ -13,7 +13,7 @@
   	}
   }
 
-  &__blue {
+  &__blue,  &__red,  &__darkgray, &__darkpurple, &__gradient-purpleblue  {
 	  background-color: var(--color-blue);
 	  
 	 &, a:not(.button), .link {
@@ -27,26 +27,18 @@
 
   &__darkgray {
 	background-color: var(--color-darkgray);
-
-	&, a:not(.button), .link {
-		color: var(--color-light);
-	 }
   }
 
   &__darkpurple {
 	background-color: var(--color-purple);
-
-	&, a:not(.button), .link {
-		color: var(--color-light);
-	 }
   }
 
   &__gradient-purpleblue {
 	background: var(--color-gradient-purpleblue);
+  }
 
-	&, a:not(.button), .link {
-		color: var(--color-light);
-	 }
+  &__red {
+	background: var(--color-red);
   }
 
   section:first-child {

@@ -80,6 +80,17 @@ input[type="checkbox"] {
 
 select {
 	cursor: pointer;
+	background-image: url('~@/assets/images/select-arrow-dark.png');
+	background-size: 1rem;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 0.6rem) 50%;
+	padding-right: 2.2rem;
+
+	&.robot {
+		background-image: url('~@/assets/images/3.gif');
+		background-size: 2.8rem;
+		background-position: calc(100% - 0.4rem) calc(50% + 0.4rem);
+	  }
 }
 
 .form-line {
@@ -111,4 +122,24 @@ select {
 	font-size: calc( var(--base-font-size) * 0.8 );
 	color: var(--color-red);
 	font-weight: 500;
+}
+
+.error {
+	&, input {
+		color: var(--color-red) !important;
+	}
+}
+
+.error input, input.error {
+	border-color: var(--color-red) !important;
+}
+
+.msg-ok {
+	font-size: calc( var(--base-font-size) * 0.8 );
+	color: var(--color-green);
+	font-weight: 500;
+}
+
+.ok {
+	color: var(--color-green);
 }
