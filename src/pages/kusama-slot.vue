@@ -595,19 +595,22 @@
 
 
 <script>
+  let getProvider
   let initApi
   let getAccounts
   let getAccount
+  let getStat
   let config
   if (process.isClient) {
     const chain = require("../utils/chain");
+    getProvider = chain.getProvider
     initApi = chain.initApi
     getAccounts = chain.getAccounts
     getAccount = chain.getAccount
+    getStat = chain.getStat
     config = chain.config
   }
-  // import { initApi, getAccounts, getAccount, parseBlock, config } from "../utils/chain";
-  import { saveEmail, getStat } from "../utils/api";
+  import { getStat as getStatServer } from "../utils/api";
   import { bnToBn } from "@polkadot/util";
 
   export default {
@@ -640,6 +643,7 @@
         step: 1,
         isApi: false,
         api: null,
+        provider: null,
         amount: 0,
         success: false,
         error: "",
@@ -682,7 +686,6 @@
           this.status_noextension = false;
           this.status_noaccount = false;
           try {
-            this.api = await initApi();
             this.accounts = await getAccounts(this.api);
             if (this.accounts.length === 0) {
               console.log('not accounts'); //
@@ -770,18 +773,29 @@
           this.success = false;
         },
         async updateInfo() {
-          const info = await getStat();
+          let info
+          if (this.api && this.provider.isConnected) {
+            info = await getStat(this.api)
+          } else {
+            info = await getStatServer();
+          }
           this.info_count = info.count;
           this.info_contributed = Number(info.amountUnit).toFixed(2);
         },
       },
 
-      created() {
+      async created() {
         this.updateInfo()
         setInterval(() => {
           this.updateInfo()
         }, 5000);
         this.updatePrices()
+        try {
+          this.provider = getProvider();
+          this.api = await initApi();
+        } catch (error) {
+          console.log(error);
+        }
       },
 
       watch: {
