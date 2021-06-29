@@ -23,16 +23,15 @@ export default {
   // data() {
         
   //       return {
-  //           title: this.pageTitle + ' / Robonomics.network',
-  //           url: '',
-  //           img: ''
+  //           url: this.$static.metadata.siteUrl + this.$route.fullPath,
   //       };
         
   //   },
 
-  mounted() {
-    this.url = window.location.href
-  },
+  // mounted() {
+  //   this.url = this.$static.metadata.siteUrl + this.$route.fullPath
+  //   console.log(this.url)
+  // },
 
   computed: {
     image() {
@@ -46,6 +45,10 @@ export default {
 
     title() {
       return this.pageTitle + ' / ' + this.$static.metadata.siteName
+    },
+
+    url(){
+      return this.$static.metadata.siteUrl + this.$route.fullPath
     }
   },
 
@@ -63,7 +66,7 @@ export default {
         { property: "og:image", content: this.image },
         { property: "og:image:width", content: this.pageImageWidth },
         { property: "og:image:height", content: this.pageImageHeight },
-        { property: "og:url", content: this.$static.metadata.siteUrl },
+        { property: "og:url", content: this.url },
         // {
         //   property: "og:url",
         //   content: window.location.href
