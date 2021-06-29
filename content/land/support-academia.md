@@ -111,7 +111,7 @@ This will open the way for projects such as: [drones](https://youtu.be/Pw98u0huG
 
 ## Our support team
 
-<Card :image="'/land/support-academia/Ivan-Berman.jpg'" :link="'https://scholar.google.com/citations?user=jo5zE10AAAAJ'" :imageSize="'big'">
+<Card :image="'/land/support-academia/Ivan-Berman.jpg'" :link="'https://scholar.google.com/citations?user=jo5zE10AAAAJ'" imageSize="mid">
 
 ### Ivan Berman
 Chief Coordinator, responsible for liaison between the academy, Robonomics technical support and the Kusama community and helping teams during the preparation of robots and results.
@@ -119,28 +119,28 @@ Chief Coordinator, responsible for liaison between the academy, Robonomics techn
 </Card>
 
 
-<Card :image="'/land/support-academia/Maria-Sigutina.jpg'" :link="'https://int.itmo.ru/en/departments/structure/22'" :imageSize="'big'">
+<Card :image="'/land/support-academia/Maria-Sigutina.jpg'" :link="'https://int.itmo.ru/en/departments/structure/22'" imageSize="mid">
 
 ### Maria Sigutina
 Liaison Officer of ITMO’s European Liaison Office in Brussels, responsible for negotiating / corresponding with representatives of universities.
 
 </Card>
 
-<Card :image="'/land/support-academia/Vadim-Manaenko.jpg'" :link="'https://twitter.com/vadim_manaenko'" :imageSize="'big'">
+<Card :image="'/land/support-academia/Vadim-Manaenko.jpg'" :link="'https://twitter.com/vadim_manaenko'" imageSize="mid">
 
 ### Vadim Manaenko
 Robonomics Engineer, responsible for technical support of academic teams.
 
 </Card>
 
-<Card :image="'/land/support-academia/Alexander-Kapitonov.jpg'" :link="'https://scholar.google.com/citations?user=J3HFpjoAAAAJ'" :imageSize="'big'">
+<Card :image="'/land/support-academia/Alexander-Kapitonov.jpg'" :link="'https://scholar.google.com/citations?user=J3HFpjoAAAAJ'" imageSize="mid">
 
 ### Alexander Kapitonov
 Academic Advisor, responsible for consulting teams in setting up experiments.
 
 </Card>
 
-<Card :image="'/land/support-academia/Fabio-Bonsignorio.jpg'" :link="'http://www.heronrobots.com/about/people-info/15-fabio-bonsignorio'" :imageSize="'big'">
+<Card :image="'/land/support-academia/Fabio-Bonsignorio.jpg'" :link="'http://www.heronrobots.com/about/people-info/15-fabio-bonsignorio'" imageSize="mid">
 
 ### Fabio Bonsignorio
 Academic Advisor, responsible for checking the results of experiments.
@@ -164,5 +164,3 @@ Academic Advisor, responsible for checking the results of experiments.
 </section>
 
 <Button :link="'https://share.hsforms.com/1yfFteDkHTEi_L_YSqvEmnQ535vx'" :label="'Contact us'" :scale="'1.4'" :button="'primary'"/>
-
----

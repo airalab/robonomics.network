@@ -603,7 +603,28 @@
             </section>
 
           </div>
+      </section>
 
+      <hr class="animate no-margins" v-in-viewport.once/>
+
+      <section class="animate section__darkpurple section__solid" v-in-viewport.once>
+        <h2 class="layout">Follow latest updates</h2>
+
+        <div class="grid-3 animate-inside layout layout__content" v-in-viewport.once>
+
+        <Card orientation="vertical" back="white" link="https://twitter.com/AIRA_Robonomics" imageLocal="avatars/twitter.jpg" imageSize="mid">
+          <h3>Robonomics official Twitter</h3>
+        </Card>
+
+        <Card orientation="vertical" back="white" link="https://twitter.com/EnsRationis" imageLocal="avatars/Sergey-Lonshakov.jpg" imageSize="mid">
+          <h3>Software architect Twitter</h3>
+        </Card>
+
+        <Card orientation="vertical" back="white" link="https://t.me/robonomics" imageLocal="avatars/telegram.jpg" imageSize="mid">
+          <h3>Robonomics Telegram Community</h3>
+        </Card>
+
+      </div>
 
       </section>
 

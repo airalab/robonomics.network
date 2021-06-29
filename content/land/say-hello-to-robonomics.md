@@ -45,11 +45,10 @@ https://www.youtube.com/embed/IEgvXcj3nSo
 
 <section class="layout__text">
 
-<Card :link="'https://discourse.robonomics.network/'" :back="'gradient'">
+<Card :icon="'/icons/icon-forum.png'" :link="'https://discourse.robonomics.network/'">
 
-### Want to talk with core Robonomics DAO developers?
-
-<Button :link="'https://discourse.robonomics.network/'" :label="'Visit Robonomics Network forum'"/>
+### Visit our forum!
+A place to ask and answer on Robonomics questions.
 
 </Card>
 
