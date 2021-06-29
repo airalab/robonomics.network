@@ -13,7 +13,7 @@ import { blake2AsU8a } from "@polkadot/util-crypto";
 export const config = {
   endpoint: "wss://kusama-rpc.polkadot.io",
   types: {
-    "ValidationCodeHash": "Hash"
+    ValidationCodeHash: "Hash"
   },
   paraId: 2077
 };
@@ -24,7 +24,7 @@ export function getProvider() {
   if (!provider) {
     provider = new WsProvider(config.endpoint);
   }
-  return provider
+  return provider;
 }
 export async function initApi() {
   api = await ApiPromise.create({
@@ -47,7 +47,7 @@ export async function getExtension() {
 function onLoad() {
   return new Promise(function(resolve, reject) {
     setTimeout(() => {
-      return reject(new Error('no extension'));
+      return reject(new Error("no extension"));
     }, 3000);
     const interval = setInterval(() => {
       if (Object.keys(window.injectedWeb3).length > 0) {
@@ -77,14 +77,14 @@ export async function initAccounts(api, config = {}) {
   );
 
   isInitAccounts = true;
-  return accounts;
+  return keyring.getPairs();
 }
 
 export function getAccounts(
   api,
   config = {
     isDevelopment: false,
-    type: "sr25519"
+    type: "ed25519"
   }
 ) {
   if (isInitAccounts) {
@@ -137,7 +137,10 @@ export async function getStat(api) {
   const fund = (await api.query.crowdloan.funds(config.paraId)).toJSON();
   const index = api.createType("u32", fund.trieIndex);
   const childKey = createChildKey(index);
-  const contributors = (await api.rpc.childstate.getKeys(childKey, "0x")).toArray();
+  const contributors = (await api.rpc.childstate.getKeys(
+    childKey,
+    "0x"
+  )).toArray();
   return {
     amountUnit: toUnit(
       hexToBn(fund.raised).toString(),
