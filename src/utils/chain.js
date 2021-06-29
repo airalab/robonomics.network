@@ -17,17 +17,18 @@ export const config = {
   },
   paraId: 2077
 };
-// export const config = {
-//   endpoint: "wss://kusama-rpc.polkadot.io",
-//   types: {},
-//   paraId: 2000
-// };
 
+let provider;
 let api;
+export function getProvider() {
+  if (!provider) {
+    provider = new WsProvider(config.endpoint);
+  }
+  return provider
+}
 export async function initApi() {
-  const provider = new WsProvider(config.endpoint);
   api = await ApiPromise.create({
-    provider,
+    provider: getProvider(),
     types: config.types
   });
   return api;
@@ -130,6 +131,20 @@ function toUnit(balance, decimals) {
   const base = new BN(10).pow(new BN(decimals));
   const dm = new BN(balance).divmod(base);
   return parseFloat(dm.div.toString() + "." + dm.mod.toString());
+}
+
+export async function getStat(api) {
+  const fund = (await api.query.crowdloan.funds(config.paraId)).toJSON();
+  const index = api.createType("u32", fund.trieIndex);
+  const childKey = createChildKey(index);
+  const contributors = (await api.rpc.childstate.getKeys(childKey, "0x")).toArray();
+  return {
+    amountUnit: toUnit(
+      hexToBn(fund.raised).toString(),
+      api.registry.chainDecimals[0]
+    ),
+    count: contributors.length
+  };
 }
 
 export async function parseBlock(api, number = null) {
