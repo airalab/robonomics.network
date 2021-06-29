@@ -13,16 +13,20 @@
   	}
   }
 
-  &__blue,  &__red,  &__darkgray, &__darkpurple, &__gradient-purpleblue, &__lightblue  {
+  &__blue,  &__red,  &__darkgray, &__darkpurple, &__gradient-purpleblue, &__lightblue, &__black  {
 	  background-color: var(--color-blue);
 	  
-	 &, a:not(.button), .link {
+	 &, a:not(.button), .link, .card.transparent {
 		color: var(--color-light);
 	 }
 
 	 a:not(.button):hover, .link:hover {
 		 color: var(--color-green)
 	 }
+  }
+
+  &__black {
+	background-color: #000;
   }
 
   &__darkgray {

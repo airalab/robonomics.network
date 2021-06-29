@@ -1,16 +1,18 @@
 <template>
-  <div class="card" :class="classes" @focusin="isActive = true" @focusout="isActive = false" tabindex="0">
-  
-    <div v-if="icon" class="icon"><img alt="" :src="icon"/></div>
-    <div v-if="image" class="image" :class="{imageRound: imageRound}">
-      <g-image alt="" :src="image"/>
+
+  <div :class="card_classes">
+
+    <div v-if="icon || image || imageLocal" :class="pic_classes">
+      <g-image aria-hidden="true" :src="pic_src"/>
     </div>
-    
+
     <div class="content">
       <slot/>
     </div>
 
-    <g-link class="link" v-if="link" :to="link">Link</g-link>
+    <g-link v-if="link" :class="link_classes" :to="link">
+      <template v-if="linkText">{{linkText}}</template>
+    </g-link>
 
   </div>
 </template>
@@ -29,56 +31,38 @@ export default {
     },
 
   props: {
-    link: {
-      type: String,
-    },
+    link: { type: String },
+    linkText: { type: String },
 
-    icon: {
+    icon: { type: String },
+    image: { type: String },
+    imageLocal: { type: String },
+    imageSize: {
       type: String,
+      default: 'small',
+      validator: function (value) {
+        return ['small', 'mid', 'big'].indexOf(value) !== -1;
+      }
     },
-
-    image: {
-      type: String,
-    },
-
-    button: {
-      type: String,
+    imageRound: {
+      type: Boolean,
+      default: true,
     },
 
     orientation: {
       type: String,
       default: 'gorizontal',
+      validator: function (value) {
+        return ['gorizontal', 'vertical'].indexOf(value) !== -1;
+      }
     },
 
     back: {
       type: String,
       default: 'white',
       validator: function (value) {
-        return ['white', 'gradient', 'transparent'].indexOf(value) !== -1;
+        return ['transparent', 'white', 'blue', 'gradient'].indexOf(value) !== -1;
       }
-    },
-
-    imageSize: {
-      type: String,
-      default: 'small',
-      validator: function (value) {
-        return ['small', 'big'].indexOf(value) !== -1;
-      }
-    },
-    
-    popup: {
-      type: Boolean,
-      default: false,
-    },
-
-    imageRound: {
-      type: Boolean,
-      default: true,
-    },
-
-    classList: {
-      type: String,
-      default: '',
     },
 
   },
@@ -86,21 +70,43 @@ export default {
 
   computed: {
 
-
-    classes() {
+    card_classes() {
       return {
-        [`card-icon`]: this.icon,
-        [`card-image`]: this.image,
-        [`card-link`]: this.link || this.popup,
+        [`card`]: true,
+        [`icon`]: this.icon,
+        [`image`]: this.image || this.imageLocal,
+        [`${this.orientation}`]: true,
+        [`${this.back}`]: true,
         [`oldy`]: this.back != `transparent`,
         [`oldy__link`]: this.link || this.popup,
-        [`card-${this.back}`]: true,
-        [`card-imageSize-${this.imageSize}`]: this.icon || this.image,
-        [`${this.orientation}`]: true,
-        [`card-popup`]: this.popup,
-        [`active`]: this.isActive,
-        [`${this.classList}`]: true
       };
+    },
+
+    pic_classes() {
+      return {
+        [`pic`]: true,
+        [`round`]: this.imageRound,
+        [`icon`]: this.icon,
+        [`image`]: this.image || this.imageLocal,
+        [`${this.imageSize}`]: true,
+      };
+    },
+
+    link_classes() {
+      return {
+        [`link`]: true,
+        [`text`]: this.linkText,
+        [`overlap`]: !this.linkText,
+      };
+    },
+
+    pic_src() {
+      if (this.icon || this.image) {
+        return this.icon || this.image
+      }
+      if (this.imageLocal) {
+        return require(`!!assets-loader!@/assets/images/${this.imageLocal}`)
+      }
     },
   },
 
@@ -109,250 +115,129 @@ export default {
 
 
 <style lang="scss">
+
   .card {
     position: relative;
     padding: var(--space);
     margin-bottom: var(--space);
+    font-weight: 300;
 
-    h1, h2, h3, h4, h5 {
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-    }
+    /* ORIENTATION */
+    
+    display: grid;
+    gap: var(--space);
+    align-content: start; 
+    align-items: start;
 
-    .content {
-      font-size: 90%;
-
-      p:not(:last-child) {
-        margin-bottom: calc(var(--space-text) * 0.5);
-      }
-    }
-
-    .content > *:not(:first-child) {
-      margin-top: 1rem;
-    }
-
-
-
-    &-white { 
-      background: #fff;
-    }
-
-    &-gradient { 
-      background: linear-gradient(45deg,  #5DC0DF, #355bd6, var(--link-color-hover), #355bd6, #5DC0DF);
-      color: #fff;
-
-      padding-top: calc(var(--space)*2);
-      padding-bottom: calc(var(--space)*2);
-
-      .button__border {
-        border-color: #fff;
-        color: #fff;
-        background-color: transparent;
-      }
-    }
-
-    &-transparent {
-      background-color: transparent;
-      // border-top: 1px dashed var(--text-color);
-      font-weight: 400;
+    &.vertical {
+      &, h1, h2, h3, h4, h5 { text-align: center; }
+      &.icon, &.image { grid-template-rows: auto 1fr; } //pic + content
     }
 
     &.gorizontal {
-      h1, h2, h3, h4, h5 {
-        text-align: left;
+      &, h1, h2, h3, h4, h5 { text-align: left; }
+      &.icon, &.image { grid-template-columns: auto 1fr; } //pic + content
+    }
+
+    /* end of ORIENTATION */
+
+    /* COLORING */
+    --color-back: transparent;
+    --color-text: #000;
+    --color-iconback: #000; 
+    
+    background-color: var(--color-back);
+    color: var(--color-text);
+
+    .pic.round.icon { background-color: var(--color-iconback); }
+
+    &.oldy__link:hover {
+      transform: translateY(.2rem);
+
+      .pic.round.icon {
+        --color-iconback: var(--link-color);
       }
     }
 
-    &.vertical {
-      text-align: center;
+    &.white {
+      --color-back: #fff;
+      --color-text: #000;
+    }
 
-      .image img {
-        margin: 0 auto;
+
+    &.blue {
+      --oldy-box-color: #fff;
+      --color-back: var(--link-color);
+      --color-text: #fff;
+
+      .pic.round.icon {
+        background-color: #000;
       }
 
-      @media screen and (max-width: 500px){
-        display: block;
-
-        .image, .icon {
-          margin-bottom: var(--space);
+      &.oldy__link:hover {
+        .pic.round.icon {
+          background-color: var(--link-color);
         }
       }
-
     }
-
-    &.pin {
-      --oldy-box-color: var(--color-green);
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        display: block;
-        width: 0;
-        height: 0;
-        border-left: 50px solid transparent;
-        border-right: 0 solid transparent;
-        border-top: 50px solid var(--oldy-box-color);
-      }
-    }
+    /* end of COLORING */
 
 
+    /* PICTURES */
 
+    .pic {
+      margin: 0 auto;
+      overflow: hidden;
 
+      /* Centering image within */
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    &-icon, &-image {
-      display: grid;
-      gap: var(--space);
-      text-align: left;
-
-      .imageRound, .icon {
-           background-color: var(--text-color);
-          // background-color: var(--color-green);
-          // background: linear-gradient(45deg,  #5DC0DF, #355bd6, var(--link-color-hover), #355bd6, #5DC0DF);
-
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-      
-      .icon {
+      &.round.icon {
         img {
-          display: inline-block;
           max-width: 60%;
           max-height: 60%;
         }
       }
+
+      /* PICTURES -- SIZING */
+      --image-size: 5rem;
+      width: var(--image-size);
+      &.round {
+        height: var(--image-size);
+        border-radius: calc(var(--image-size)*2);
+      }
+
+      &.mid { --image-size: 10rem }
+      &.big { --image-size: 15rem}
     }
 
+    /*end of PICTURES */
 
-    &-image {
-      
-        .image {
-          overflow: hidden;
-
-          img {
-            display: block;
-            // max-width: 100%;
-            width: auto;
-            max-height: 100%;
-          }
-        }
-     }
-
-
-
-
-    &-link {
-      position: relative;
-
-      &:hover {
-        // color: var(--link-color-hover);
-        transform: translateY(.2rem);
-
-        // .icon{
-        //   background-color: var(--link-color-hover);
-        // }
-    }
-
-      .link {
+    /* LINK */
+    .link {
+      &.overlap {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.0;
-        overflow: hidden;
-        text-indent: -9999px;
-        z-index: 0;
-      }
-
-      .icon {
-        background-color: var(--link-color);
+        opacity: 0;
+        z-index: 1;
       }
     }
+    /* end of LINK */
+
+    /* CONTENT */
+    .content {
+      h1, h2, h3, h4, h5, p {
+        &:not(:last-child) {
+          margin-bottom: calc(var(--space) * 0.7);
+        }
+      }
+    }
+    /* end of CONTENT */
 
   }
-
-
-  .card-imageSize-small {
-    &.gorizontal {
-      grid-template-columns: 70px auto;
-
-      .icon, .imageRound {
-        width: 70px;
-        height: 70px;
-        border-radius: 35px;
-      }
-
-    }
-
-    &.vertical {
-      grid-template-rows: 100px auto;
-      justify-items: center;
-      text-align: center;
-
-      .icon, .imageRound {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-      }
-
-    }
-  }
-
-  .card-imageSize-big {
-
-    &.gorizontal {
-          grid-template-columns: 120px auto;
-
-          .icon, .imageRound {
-            width: 120px;
-            height: 120px;
-            border-radius: 60px;
-          }
-
-      }
-
-    &.vertical {
-      grid-template-rows: 300px auto;
-      justify-items: center;
-      text-align: center;
-
-      .icon, .imageRound {
-        width: 180px;
-        height: 180px;
-        border-radius: 90px;
-      }
-    }
-  }
-
-
-  .card-popup {
-    .content > .button { pointer-events: none; }
-  }
-
-  .card .popup {
-      position: absolute;
-      top: calc(var(--space)/2*(-1));
-      left: 0;
-      right: 0;
-      bottom: 0;
-
-      padding: calc(var(--space)/2);
-
-      background-color: var(--color-light);
-
-      transform-origin: 50% 100%;
-      transform: scale(0);
-
-      z-index: 1;
-      cursor: default
-    }
-
-
-    .card.active .popup {
-      transform: scale(1);
-    }
 </style>
