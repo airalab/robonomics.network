@@ -159,6 +159,7 @@
                 <option selected value="1">1 - On website</option>
                 <option value="2">2 - On Polkadot Substrate portal</option>
                 <option value="3">3 - Via exchanges</option>
+                <option value="4">4 - Fearless DeFi Wallet</option>
               </select>
             </div>
 
@@ -166,7 +167,6 @@
 
               <form>
                 <!-- STEP 1 -->
-
                 <template v-if="!isApi">
                 <section>
                   <label class="block label">
@@ -199,7 +199,6 @@
 
 
                 <!-- STEP 2 -->
-
                 <template v-else-if="isApi && !success">
                 <section>
 
@@ -318,11 +317,31 @@
                <p>In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions: <g-link style="display:block;word-break: break-all;" to="https://twitter.com/AIRA_Robonomics/status/1377653645827833860">https://twitter.com/AIRA_Robonomics/status/1377653645827833860</g-link></p>
             </section>
 
+            <section id="participate-4" v-if="selectedWay==4">
+              <p>You can also contribute to Robonomics crowdloan via <g-link to="https://fearlesswallet.io">Fearless DeFi Wallet</g-link>. We checked it and here are screenshots of the process:</p>
+
+              <div class="grid-3">
+                <g-link to="/assets/crowdloan/fearless-1.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-1.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 1"/></g-link>
+                <g-link to="/assets/crowdloan/fearless-2.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-2.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 2"/></g-link>
+                <g-link to="/assets/crowdloan/fearless-3.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-3.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 3"/></g-link>
+                <g-link to="/assets/crowdloan/fearless-4.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-4.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 4"/></g-link>
+                <g-link to="/assets/crowdloan/fearless-5.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-5.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 5"/></g-link>
+                <g-link to="/assets/crowdloan/fearless-6.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-6.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 6"/></g-link>
+              </div>
+            </section>
+
 
           </div>
 
       </section>
 
+
+      <hr class="animate no-margins" v-in-viewport.once/>
+
+      <section>
+        <Abstract text="'By winning a Parachain slot in the Kusama we will open the doors for hundreds of IoT developers to the Polkadot ecosystem and help them take their first steps under the guidance of experienced teachers and roboticists.'" />
+        <g-link to="/blog/crowdloan-letter-from-robonomics-co-founder/">Letter from Robonomics co-founder</g-link>
+      </section>
 
       <hr class="animate no-margins" v-in-viewport.once/>
 
