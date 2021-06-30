@@ -158,7 +158,7 @@
               <select class="block robot" v-model="selectedWay">
                 <option selected value="1">1 - On website</option>
                 <option value="2">2 - On Polkadot Substrate portal</option>
-                <option value="3">3 - Via exchanges</option>
+                <option value="3">3 - Kraken Exchange</option>
                 <option value="4">4 - Fearless DeFi Wallet</option>
               </select>
             </div>
@@ -298,22 +298,14 @@
             </section>
 
             <section id="participate-3" v-if="selectedWay==3">
-              <p>Here are examples of exchanges that have announced supporting Kusama Parachain Slot Auction. More details expected closer to the Third Kusama Parachain Slot auction beginning.</p>
-              <dl class="participate-2-exchanges">
-
-                <dt><g-link to="https://www.kraken.com/learn/parachain-auctions"><g-image src="~/assets/images/kraken-logo.webp"/></g-link></dt>
-                <dd><g-link to="https://www.kraken.com/learn/parachain-auctions">https://www.kraken.com/</g-link></dd>
-
-                <dt><g-link to="https://www.okex.com/"><g-image src="~/assets/images/okex-logo.png"/></g-link></dt>
-                <dd><g-link to="https://www.okex.com/">https://www.okex.com/</g-link></dd>
-
-                <dt><g-link to="https://www.kucoin.com/news/en-kucoin-will-support-the-kusama-slot-auction"><g-image src="~/assets/images/kucoin-logo.png"/></g-link></dt>
-                <dd><g-link to="https://www.kucoin.com/news/en-kucoin-will-support-the-kusama-slot-auction">https://www.kucoin.com/</g-link></dd>
-              </dl>
+              <p><g-link to="https://www.kraken.com/"><g-image style="max-width:300px" alt="Kraken exchange logo" src="~/assets/images/kraken-logo.webp"/></g-link></p>
+              <p>We are on Kraken's Parachain Auction Platform</p>
+              <p><g-link to="https://support.kraken.com/hc/en-us/articles/360060824412">Overview of parachain auctions on Kraken</g-link></p>
+              <p><g-link to="https://blog.kraken.com/post/9438/kraken-breaks-new-ground-with-first-of-its-kind-parachain-auction-platform/">Blog post from Kraken</g-link></p>
             </section>
 
              <section id="participate-2" v-if="selectedWay==2" style="width:80%">
-               <p><g-link to="https://polkadot.js.org/apps/#/parachains/crowdloan">https://polkadot.js.org/apps/#/parachains/crowdloan</g-link></p>
+               <p><g-link style="display:block;word-break: break-all;" to="https://polkadot.js.org/apps/#/parachains/crowdloan">https://polkadot.js.org/apps/#/parachains/crowdloan</g-link></p>
                <p>In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions: <g-link style="display:block;word-break: break-all;" to="https://twitter.com/AIRA_Robonomics/status/1377653645827833860">https://twitter.com/AIRA_Robonomics/status/1377653645827833860</g-link></p>
             </section>
 

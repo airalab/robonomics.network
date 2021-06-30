@@ -11,13 +11,17 @@
 html {
   font-size: 100%;
 
-	// @media screen and (max-device-width: 1000px) {
-	@media screen and (max-width: 1000px) {
+  // It's important for high res narrow devices
+	@media screen and (max-device-width: 1000px) {
+  // It's for testing out on desktop
+	// @media screen and (max-width: 1000px) {
 		font-size: 80%;
 	}
 
-	// @media screen and (min-device-width: 1660px) {
-	@media screen and (min-width: 1660px) {
+  // It's important for high res narrow devices
+	@media screen and (min-device-width: 1660px) {
+    // It's for testing out on desktop
+	// @media screen and (min-width: 1660px) {
 		font-size: 110%;
 	}
 }
@@ -250,8 +254,12 @@ table {
   }
 }
 
-p, ul, ol, li, blockquote, table, dd {
+p, ul, ol, blockquote, table, dd {
   @extend %margin_text;
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.6rem;
 }
 
 
