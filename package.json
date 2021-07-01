@@ -16,7 +16,7 @@
     "@polkadot/ui-keyring": "^0.82.1",
     "@polkadot/util": "^6.10.1",
     "@polkadot/util-crypto": "^6.10.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "gridsome": "^0.7.0",
     "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-remark-prismjs-all": "^0.4.8",
