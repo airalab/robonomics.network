@@ -1,6 +1,6 @@
 ---
 title: Robonomics Network x Ocean Protocol p. 2&#58; Monetizing Data from Robots and IoT Devices
-date: 2021-07-1
+date: 2021-07-01
 published: true
 tags: ['Collaborations']
 cover_image: ./images/ocean-protocol-p-2/Robonomics_Ocean_p_2.jpg
