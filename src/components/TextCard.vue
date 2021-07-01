@@ -65,6 +65,14 @@ export default {
       }
     },
 
+    alignContent: {
+      type: String,
+      default: 'none',
+      validator: function (value) {
+        return ['left', 'center', 'right', 'none'].indexOf(value) !== -1;
+      }
+    },
+
   },
 
 
@@ -77,6 +85,7 @@ export default {
         [`image`]: this.image || this.imageLocal,
         [`${this.orientation}`]: true,
         [`${this.back}`]: true,
+        [`alignContent-${this.alignContent}`]: true,
         [`oldy`]: this.back != `transparent`,
         [`oldy__link`]: this.link || this.popup,
       };
@@ -123,19 +132,39 @@ export default {
     font-weight: 300;
 
     /* ORIENTATION */
+
+    &.alignContent-center { 
+      &, h1, h2, h3, h4, h5 { text-align: center; }
+    }
+
+    &.alignContent-left {
+      &, h1, h2, h3, h4, h5 { text-align: left; }
+    }
+
+    &.alignContent-right {
+      &, h1, h2, h3, h4, h5 { text-align: right; }
+    }
     
-    display: grid;
-    gap: var(--space);
-    align-content: start; 
-    align-items: start;
+    &.icon, &.image {
+      display: grid;
+      gap: var(--space);
+      align-content: start; 
+      align-items: start;
+    }
 
     &.vertical {
-      &, h1, h2, h3, h4, h5 { text-align: center; }
+      &.alignContent-none {
+        &, h1, h2, h3, h4, h5 { text-align: center; }
+      }
+
       &.icon, &.image { grid-template-rows: auto 1fr; } //pic + content
     }
 
     &.gorizontal {
-      &, h1, h2, h3, h4, h5 { text-align: left; }
+      &.alignContent-none {
+        &, h1, h2, h3, h4, h5 { text-align: left; }
+      }
+
       &.icon, &.image { grid-template-columns: auto 1fr; } //pic + content
     }
 

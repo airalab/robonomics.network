@@ -53,12 +53,18 @@ module.exports = {
           },
         },
         plugins: [
-          // ['remark-highlight.js'],
-          // ['remark-autolink-headings', {content: {
-          //   type: 'text',
-          //   value: '#'
-          // }}],
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
+           
+           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
+          //  ['gridsome-plugin-remark-prismjs-all', {
+          //     noInlineHighlight: false,
+          //     showLineNumbers: true,     //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+          //     prompt: {                   //  `require("prismjs/plugins/command-line/prism-command-line.css");`
+          //         user: `root`,
+          //         host: `localhost`,
+          //         global: false,
+          //     }
+          // }],
+          ['remark-highlight.js'],
         ]
       }
     },
@@ -72,12 +78,17 @@ module.exports = {
         route: '/land/:path',
         template: './src/templates/Land.vue',
         plugins: [
-          // ['remark-highlight.js'],
-          // ['remark-autolink-headings', {content: {
-          //   type: 'text',
-          //   value: '#'
-          // }}],
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
+          // ['gridsome-plugin-remark-prismjs-all', {
+          //   noInlineHighlight: false,
+          //   showLineNumbers: true,     //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+          //   prompt: {                   //  `require("prismjs/plugins/command-line/prism-command-line.css");`
+          //       user: `root`,
+          //       host: `localhost`,
+          //       global: false,
+          //   }
+          // }],
+          ['remark-highlight.js'],
         ]
       }
     },
@@ -91,24 +102,33 @@ module.exports = {
         route: '/community/:path',
         template: './src/templates/Community.vue',
         plugins: [
-          // ['remark-highlight.js'],
-          // ['remark-autolink-headings', {content: {
-          //   type: 'text',
-          //   value: '#'
-          // }}],
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
+           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
+          //  ['gridsome-plugin-remark-prismjs-all', {
+          //    noInlineHighlight: false,
+          //    showLineNumbers: true,     //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+          //    prompt: {                   //  `require("prismjs/plugins/command-line/prism-command-line.css");`
+          //        user: `root`,
+          //        host: `localhost`,
+          //        global: false,
+          //    }
+          // }],
+          ['remark-highlight.js'],
         ]
       }
     },
     
   ],
 
-  transformers: {
-    remark: {
-      // global remark options
-      autolinkHeadings: false
-    }
-  },
+  // transformers: {
+  //   remark: {
+  //     // global remark options
+  //     autolinkHeadings: false,
+  //     plugins: [
+  //       ['remark-highlight.js'],
+  //       ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
+  //     ]
+  //   }
+  // },
 
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')

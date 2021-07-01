@@ -1,7 +1,9 @@
 import '~/assets/style/index.scss'
 import Default from '~/layouts/Default.vue'
-
 import Vue from 'vue'
+
+require("prismjs/plugins/line-numbers/prism-line-numbers.css");
+require("prismjs/plugins/command-line/prism-command-line.css");
 
 // directive for animation in view
 import inViewportDirective from 'vue-in-viewport-directive'
