@@ -6,13 +6,14 @@
       <g-image aria-hidden="true" :src="pic_src"/>
     </div>
 
-    <div class="content">
+    <div class="content" v-if="hasDefaultSlot">
       <slot/>
     </div>
 
-    <g-link v-if="link" :class="link_classes" :to="link">
+    <g-link v-if="link && !linkButton" :class="link_classes" :to="link">
       <template v-if="linkText">{{linkText}}</template>
     </g-link>
+    <Button v-if="link && linkText && linkButton" :link="link" :label="linkText" button="primary" class="large"/>
 
   </div>
 </template>
@@ -24,6 +25,10 @@
 
 export default {
 
+  components: {
+      Button: () => import("~/components/Button.vue"),
+  },
+
   data() {
         return {
             isActive: false
@@ -33,6 +38,14 @@ export default {
   props: {
     link: { type: String },
     linkText: { type: String },
+    linkButton: {
+      type: Boolean,
+      default: false,
+    },
+    overlap: {
+      type: Boolean,
+      default: true,
+    },
 
     icon: { type: String },
     image: { type: String },
@@ -105,7 +118,7 @@ export default {
       return {
         [`link`]: true,
         [`text`]: this.linkText,
-        [`overlap`]: !this.linkText,
+        [`overlap`]: this.overlap
       };
     },
 
@@ -116,6 +129,10 @@ export default {
       if (this.imageLocal) {
         return require(`!!assets-loader!@/assets/images/${this.imageLocal}`)
       }
+    },
+
+    hasDefaultSlot () {
+      return !!this.$slots.default
     },
   },
 
