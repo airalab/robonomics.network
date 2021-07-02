@@ -432,7 +432,7 @@
               <div class="parachains-overview-description">
 
                 <div class="item" :class="(parachainTab == 1) ?'active':''">
-                  <h4>Smart leasing parachain </h4>
+                  <h4>Smart leasing parachain</h4>
                   <p class="hyphens">Recoup your investment in the high-value robots by renting out it with a mechanism for tokenizing robots’ labor.</p>
                 </div>
                 <div class="item" :class="(parachainTab == 2) ?'active':''">
@@ -515,7 +515,7 @@
                Robonomics starts the Crowdloan module from the 3rd auction (<g-link to="https://polkadot.network/kusama-parachain-auctions/">2021/06/29, 12:00 GMT</g-link>). Contributions
                will be accepted at any point from the start and before their success or end of 5th
                auction (<g-link to="https://polkadot.network/kusama-parachain-auctions/">2021/07/13, 12:00 GMT + duration of 5th auction</g-link>). Before participating in
-               the crowdloan, double-check that the campaign is live <g-link to="https://twitter.com/AIRA_Robonomics">on Twitter</g-link>. Please, remember that all crowdloan contributions
+               the crowdloan, double-check that the campaign is live <g-link to="https://twitter.com/AIRA_Robonomics">on Twitter</g-link>. Please remember that all crowdloan contributions
                are handled by the Crowdloan module’s logic where a campaign is identified by index, not by address. Never transfer tokens to an address
                in support of a campaign.
               </article>
