@@ -611,7 +611,7 @@
         </Card>
 
         <Card orientation="vertical" back="white" link="https://t.me/robonomics" imageLocal="avatars/telegram.jpg" imageSize="mid">
-          <h3>RRobonomics电报社群</h3>
+          <h3>Robonomics电报社群</h3>
         </Card>
 
       </div>
