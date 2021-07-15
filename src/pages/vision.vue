@@ -10,7 +10,7 @@
     <div class="page vision">
 
       <section class="vision-banner page-banner section section__solid section__blue">
-        <div class="vision-logo" >
+        <div class="vision-logo" v-in-viewport.once>
           <g-image class="logo" alt="Robonomics logo" src="~/assets/images/robonomics-logo.svg" />
           <g-image class="earth" alt="Earth" src="~/assets/images/earth.png" />
         </div>
@@ -158,7 +158,7 @@ elements in the chain of providing the user with services. In other words, where
 
       </section>
 
-      <!-- <hr/>
+      <hr/>
 
        <section class="vision-fathers layout layout__content">
 
@@ -171,12 +171,216 @@ elements in the chain of providing the user with services. In other words, where
 
         <article class="hyphens">
           <p>In 1948 a professor of mathematics at the MIT Norbert Wiener published one of the most seminal works
-             "Cybernetics: Or Control and Communication in the Animal and the Machine". </p>
+             "Cybernetics: Or Control and Communication in the Animal and the Machine". He used the term "cybernetics" as self-regulating mechanisms for the first time and, so, this publication is considered a recognized Cybernetic birthday.</p>
+          <p>Norbert Wiener says about viability of interdisciplinary science approach. For example he drew the parallels between automated control systems and challenges of scaling and complexity increasing of human society.
           
+            <!-- He used the term "cybernetics" as self-regulating mechanisms for the first time. While researching the foundations for the mathematical treatment of the feedback in automated control systems and more complex systems such as automated navigation Norbert Wiener drew the parallels between digital computer and the nerve structure in organism, in other words, brain. -->
+            </p>
+
+            <p>So, in other words, the cybernetic approach can be applied equally to psychotherapy, biology and automated navigation.
+              It is based on the function of the system, how the individual actions are controlled and how the individual nodes interact with each other.</p>
+              <p>Taking into account Ronald Coase's and Norbert Wiener's publications, following up the development of Industry 4.0, we can consider using CPS as an economic agent, while designing robotized services. To regulate the size of the CPS and adapt to the changing needs of the individuals we can use market mechanism.
+              </p>
+              <p>And what’s so scientifically interesting, taking as a basis the idea of the restrictions imposed by the market on the size of the firm, we can say that the limit of the increase in CPS will always be determined by the market and nothing else is required for this.</p>
+              <p>Robofirms are an ideal representation for cyber-physical systems.
+                They are a fairly autonomous unit capable of providing services to both humans and other robots for money. As a result, the robot economy appears to us to be a general set of CPSs that provide services and goods directly to the market.</p>
         </article>
         
 
-      </section> -->
+      </section>
+
+      <section class="vision-industry40 section__solid section__lightblue">
+        <div class="layout layout__content">
+          <div>
+            <h2>
+              <b>Bitcoin</b> 
+              & Industry 4.0
+            </h2>
+
+            <div class="industry40">
+              <div>
+                <g-image aria-hidden="true" src="~/assets/images/industy-1.png" />
+                <div class="text">
+                  <h5>Industry 1.0</h5>
+                  <small>Mechanization: <br/>replacement of muscle power with steam energy.</small>
+                  <small class="text-color-blue">1784 г.</small>
+                </div>
+              </div>
+
+              <div>
+                <g-image aria-hidden="true" src="~/assets/images/industy-2.png" />
+                <div class="text">
+                  <h5>Industry 2.0</h5>
+                  <small>Electrification: <br/>introduction of assembly-line production.</small>
+                  <small class="text-color-blue">1870 г.</small>
+                </div>
+              </div>
+
+              <div>
+                <g-image aria-hidden="true" src="~/assets/images/industy-3.png" />
+                <div class="text">
+                  <h5>Industry 3.0</h5>
+                  <small>Automation: <br/>introduction of automated systems with CNC.</small>
+                  <small class="text-color-blue">1969 г.</small>
+                </div>
+              </div>
+
+              <div>
+                <g-image aria-hidden="true" src="~/assets/images/industy-4.png" />
+                <div class="text">
+                  <h5>Industry 4.0</h5>
+                  <small>Smart production: <br/>development of cyber physical systems.</small>
+                  <small class="text-color-blue">Now</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="robot hyphens text-col-2">
+            <p>In the world of robofirms it turns out to be natural to provide robots with access to social institutions that previously were only needed by humans.</p>
+            <p>Social institutions do not appear because we are people and physiologically a person cannot live without banks, contracts, and other instruments of society. But only because a person, at some point in time, entered the path of more complex relations in society and took an important step towards accelerating the processes of those around us.</p>
+            <p>Money and contracts should become available to robots, not because this is a sick fantasy of robot fans who have forgotten what Skynet is. But only because the new industrial revolution sets itself the task of building complex automated chains, the processes in which will affect the exchange of both technical information and economic information, and will also proceed at a speed inaccessible to humans.</p>
+            <g-image aria-hidden="true" src="~/assets/images/robot-w-bitcoin.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="vision-bitcoin">
+        <div class="layout layout__content hyphens text-col-3">
+       
+            <p>One of the examples of our experiments: trading cars for space on the road. What a person would absolutely not do in traffic, the car will do for you without difficulties: you want to rebuild to a neighboring line, your car and your neighbor's car exchange offers on the cost of such an operation at a rate of 1000 sentences per second, they will reveal an equilibrium price offer, and so you are already in the next faster moving lane. This means that now it will become available to “charge” your uber to spend a little more than usual and you will notice how the machines part in front of you, and you will not even know that thousands of messages are flowing between the robots.</p>
+            <p>Robots need money that will be directly available to them in order to be able to perform operations without a person at the speed with which only machines can make decisions. And all this is solely for a person to enjoy life in the Smart City!</p>
+            <p>And here we smoothly come to the first electronic cash - Bitcoin. The fact that Bitcoin can be stored in your account on the principle of not a bank, but cash in your wallet makes it the first money that the robot can manage independently, more precisely autonomously. At the same time, today we can already say that Bitcoin is not just electronic cash, but a truly global financial institution.</p>
+            <p class="vision-bitcoin-conslution">As a result: an event not invented by us, but clearly falling into our vision, makes Bitcoin the first money for robots, or, if we look even deeper, it is precisely that social institution that will help the formation of robotic firms.</p>
+    
+            <g-image aria-hidden="true" src="~/assets/images/vision-bitcoin-robots.png" />
+        </div>
+      </section>
+
+      <hr/>
+
+      <section class="layout layout__content">
+        <div class="text-col-3">
+          <h2>
+            <b>Smart contracts</b><br/>
+            Ethereum
+          </h2>
+          <p class="hyphens">Bitcoin became the first money available to robots. Meanwhile we can't talk about Bitcoin in its current form as a tool for full-fledged technical and economic exchange.</p>
+          <p class="hyphens">
+            Now we already have smart contracts, DeFi markets and a decentralized infrastructure for exchanging messages between robots that 
+            open up the possibility for humanity to create a fully automated part of the human economy - the robot economy.
+          </p>
+          <p class="hyphens">
+            One of the great opportunity to build the economy of robots is <g-link to="https://ethereum.org/">Ethereum</g-link> technology. With Ethereum functionality 
+            robots are able not only exchange money, but to enter into contracts with humans and among themselves.
+          </p>
+          <p class="hyphens">
+            But what's the point of machine to machine (m2m) contract based communication? That's a great question! Let's go back to CPS. When we talk about direct communications between sensors, machine equipment or any other elements 
+            we still talk about collaboration within one regulated system. 
+            But if we want smart cities services to be alive (or even smart home in some cases), we need establish communication with various third-party elements.
+          </p>
+          <p class="hyphens">
+            Let's imagine drone delivery service. If drone, for example, is DHL's property how it can access to Amazon's warehouses or access to over the entire airspace of the city? Is it be a monopoly? This is a major challenge for many 4th industrial revolution initiatives!
+          </p>
+          <p class="hyphens">
+            Nearly every corporation says it needs nearly complete rights to its surroundings because they don’t know how to securely set up the exchange of technical information between automated systems outside of their own internal corporate structure. 
+            At the same time, if you look at the processes where a person works, then we see that the cooperation of different corporations is still present today. 
+            You can easily order door-to-door delivery of purchased goods on the Amazon website, and the courier will be able to drive a car along city roads, receive an order at the warehouse and bring it to you.
+          </p>
+          <p class="hyphens">
+            What's the difference? In the first case there is no way to build a contractual relationship between machines, and in the second case, in the world of people, contractual relations already exist.
+          </p>
+          <g-image alt="" src="~/assets/images/vision-ethereum.png" />
+        </div>
+      </section>
+
+
+      <hr/>
+
+      <section class="layout layout__content">
+        <div class="text-col-3">
+          <h2>
+            <b>Parachains</b><br/>
+            Polkadot
+          </h2>
+          <p class="hyphens">
+            The main difficulty that Robonomics faces today is the high price for launching an IoT device using Ethereum. 
+            In Ethereum you have to pay a commission on each transaction in terms of US dollars in the range of $10 to $100. 
+            It is quite expensive for most cases from the real economy, be it a car-sharing trip, renting a smart apartment, drone delivery or 3D printing of your favorite anime hero to order.
+          </p>
+          <p class="hyphens">
+            Out of fairness, we would like to note that for there are profitable scenarios even with transaction fees in the Ethereum network of 2018 - 2019. For example, automated carbon footprint offset transactions or transferring the order from the website directly to the production. 
+            But still, for the mass application of the web3 technologies in the field of IoT, a reduction in the price that the cloud charges from the connected device is required.
+          </p>
+          <p class="hyphens">
+            Looking for an opportunity to reduce the cost of interacting with an IoT device, Robonomics developers have studied alternative developments to Ethereum. 
+            Our choice settled on the <g-link to="https://polkadot.network">Polkadot</g-link> architecture, which would allow us to run our own blockchain, within a common network, in which security is ensured by validators independent of our project.
+          </p>
+          <g-image alt="" src="~/assets/images/vision-polkadot.png" />
+        </div>
+      </section>
+
+      <section class="vision-chains section section__solid">
+        <div class="layout layout__content">
+          <h2>Freedom of choice</h2>
+
+          <div class="grid-2" v-in-viewport.once>
+            <div>
+              <h4>Polkadot</h4>
+              <p>A network of heterogeneous blockchains</p>
+              <p>On-Chain Governance</p>
+              <p>Slots Auction</p>
+            </div>
+            <div>
+              <h4>Ethereum 2.0</h4>
+              <p>A network of homogeneous shards</p>
+              <p><g-link to="https://vitalik.ca/general/2017/12/17/voting.html">Prevention the tyranny of the crowd</g-link></p>
+              <p>Transaction Fee</p>
+            </div>
+          </div>
+
+          <div class="text-col-3 hyphens">
+            
+            <p>You may notice that the comparison between Ethereum and Polkadot does not show a clear superiority of one technology over another. Both of these approaches are extremely interesting for Robonomics. We would like to support each of these networks and give the choice to users of Robonomics.</p>
+            <p><b>Strong claim:</b> we hope Ethereum 2.0 launch will resolve the issue of high transaction fee. By 2021 developers of Robonomics sure this is one of the crucial details for increasing the capacity of the network.</p>
+            <p>At the same time Robonomics parachain in Kusama or Polkadot enables us to use functions that are not available to smart contract developers in Ethereum. 
+              The key difference for developers is that in Polkadot/Kusama there is a possibility to customize the communication protocol and thus have access to global variables.
+            </p>
+            <p>An interesting example: when we were finishing the implementation of the robot economy protocol on top of Ethereum, one of the tasks was to determine the gas consumed to execute the transaction. It is extremely difficult to calculate the consumed gas inside a smart contract, although any wallet could calculate the required gas without any problems - the reason for the inaccessibility of the communication protocol itself during the execution of the smart contract code in the EVM.</p>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="vision-fathers layout layout__content">
+
+        <div class="vision-fathers-image">
+          <h2>Open questions of teleology</h2>
+          <i>and Mises's treatise</i>
+          
+          <g-image alt="" src="~/assets/images/person-mises.png" />
+        </div>
+
+        <article class="hyphens">
+          <p>In conclusion, we would like to mention that there are questions that remain open from a global point of view. 
+            What is the goal of robots?
+          </p>
+          <p>In fact, the economy of people is often associated with the conscientiousness of performing tasks within the framework of the contract, the desire of the parties to achieve a result, the opportunistic and altruistic behavior of the individual in society. 
+            All of these principles are hard to apply to the robot economy. 
+            What are the motives of the robot economy? It's an open question that we need to research and discuss in society for better understanding and applying robots.
+          </p>
+          <p>For the start we suggest to look at Mises's work "Human Action: A Treatise on Economics" (praxeological approach) and at early article by Norbert Wiener "Behavior, Purpose and Teleology" (teleological vision).</p>
+          <p>Praxeology inspires us with interesting ideas about human behavior without direct dependence on the purposes. 
+            This gives us the opportunity to work on the processes of the economy of robots conditionally as with a black 
+            box without delving into the ultimate goals. At the same time, teleology poses a challenge to explain causes.</p>
+            <p>We hope that somewhere at the junction of the works of Mises and Wiener, a point for further development of the 
+              robot economy may be found, not just as a protocol of interaction between people and machines of a 
+              praxeological nature, but taking into account the teleological elements of building interspecies communication.</p>
+        </article>
+        
+
+      </section>
 
     </div>
 
@@ -273,6 +477,8 @@ elements in the chain of providing the user with services. In other words, where
       width: 130px;
       position: relative;
       z-index: 1;
+
+      transform: translateX(10%);
     }
 
     .earth {
@@ -282,6 +488,26 @@ elements in the chain of providing the user with services. In other words, where
       top: - 70px;
       opacity: 0.5;
       z-index: 0;
+
+      transform: translateX(-10%);
+    }
+
+    visibility: hidden;
+		opacity: 0;
+    
+
+    &.in-viewport {
+      animation: FadeIn 2s 0.4s linear forwards;
+
+      .logo, .earth {
+        animation: logoAnimation 2s 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      }
+    }
+
+    @keyframes logoAnimation {
+      to{
+        transform: translateX(0);
+      }
     }
   }
 
@@ -332,6 +558,7 @@ elements in the chain of providing the user with services. In other words, where
 
   .vision-iot {
     // margin-bottom: 0;
+    padding-right: 0;
 
     .vision-iot-pic {
       justify-self: center;
@@ -340,6 +567,10 @@ elements in the chain of providing the user with services. In other words, where
     }
 
     h4 { margin-top: 0; font-style: italic;}
+
+    .text-col-2 {
+      padding-right: var(--space);
+    }
 
     @media screen and (max-width: 1280px) {
       .text-col-2 {
@@ -668,6 +899,157 @@ elements in the chain of providing the user with services. In other words, where
 
     .vision-fathers-image {
       max-width: 100%;
+    }
+  }
+
+  /* 7 ----- */
+  .vision-industry40 {
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.5fr 2fr;
+      gap: calc(var(--space) * 2);
+
+      h2 {
+        text-align: left;
+
+        b {
+          display: block;
+        }
+      }
+
+      .robot {
+        img {
+          float: right;
+          width: 10rem;
+          margin: 1rem;
+        }
+      }
+
+      .industry40 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: calc(var(--space) *  0.7);
+        align-items: end;
+
+        img {
+          margin: 0 auto;
+        }
+
+        .text {
+          text-align: left;
+          margin-top: var(--space);
+          padding: 0 0.5rem;
+          line-height: 1.1;
+
+          h5 {
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: normal;
+            text-align: left;
+          }
+
+          small {
+            display: block;
+            margin-top: 0.5rem;
+          }
+
+          .text-color-blue {
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1280px) {
+        grid-template-columns: 1fr;
+      }
+
+      @media screen and (max-width: 750px) {
+          
+          .industry40 {
+            grid-template-columns: 1fr;
+
+            & > div {
+              display: grid;
+              grid-template-columns: 120px 1fr;
+              align-items: center;
+              gap: var(--space)
+            }
+          }
+
+          .robot img {
+            float: none;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+
+    }
+
+  }
+
+  /* 8 ----- */
+  .vision-bitcoin {
+
+    .vision-bitcoin-conslution {
+      text-align: left;
+      font-style: italic;
+      font-size: 120%;
+      font-weight: 500;
+    }
+  }
+
+  /* ----- */
+  .vision-chains {
+    & , a { color: #fff; }
+    background: linear-gradient(to right, #e60f79, #262049 60%, #81a8f8);
+    background-position:  0;
+    background-size: 200%;
+    animation: 15s TextGradient linear infinite;
+
+    .grid-2 {
+
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: calc(var(--space) * 2) 0;
+
+      div:first-child {
+        &, h4 { text-align: right; }
+        position: relative;
+        padding-right: var(--space);
+
+        &:after {
+          content:"";
+          display: block;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 1px;
+          height: 100%;
+          background: #fff;
+          transform: scaleY(0);
+          transform-origin: 50% 100%;
+        }
+      }
+
+      div:last-child {
+        &, h4 { text-align: left; }
+      }
+
+      p {
+        margin-bottom: 1rem;
+        font-size: 80%;
+      }
+
+      &.in-viewport div:first-child:after {
+        animation: ScaleY 0.4s ease-out 0.4s forwards;
+      }
+    }
+
+    .text-col-3 {
+      @media screen and (max-width: 1100px) {
+        column-count: 1;
+      }
     }
   }
 </style>
