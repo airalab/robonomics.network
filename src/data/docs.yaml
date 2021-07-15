@@ -15,7 +15,17 @@
   # buttonicon: '&#8595;'
   options:
     - link: 'https://gateway.pinata.cloud/ipfs/QmNNdLG3vuTsJtZtNByWaDTKRYPcBZSZcsJ1FY6rTYCixQ/Robonomics_keypoint_March_2021.pdf'
-      text: '.pdf in IPFS'
+      text: 'English'
+    - link: 'https://ipfs.io/ipfs/QmYeTLzZXff66DDbhhPWhid1b5F5JKJgjeP5hXLKbHydLw'
+      text: 'Deutsche'
+    - link: 'https://ipfs.io/ipfs/QmZruv1hHN2WkPntecri5vJuB1Vk24k5we4tW4NcdjRDbu'
+      text: 'Español'
+    - link: 'https://ipfs.io/ipfs/QmRGCnTQLGbSg8fnY5kLFRS26ULkwJuDjMLXLAaKUqmtxP'
+      text: '日本語'
+    - link: 'https://ipfs.io/ipfs/QmcLCPHxBWCGpVQiQLAAcCGUEw2o1fVpA6m1tZXKFuvbbd'
+      text: '한국어'
+    - link: 'https://ipfs.io/ipfs/QmabrWVCpYqNdyR1WLnGg7kNfhPp1Zms9cX8CUzQRcrAMy'
+      text: '中国人'
       
 - title: 'White Paper / May 12, 2018'
   description: 'If you want to go deeper into learning Robonomics Network, read this document (.pdf ~ 2 MB).'
