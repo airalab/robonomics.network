@@ -1030,6 +1030,7 @@ elements in the chain of providing the user with services. In other words, where
           transform: scaleY(0);
           transform-origin: 50% 100%;
         }
+
       }
 
       div:last-child {
@@ -1044,6 +1045,21 @@ elements in the chain of providing the user with services. In other words, where
       &.in-viewport div:first-child:after {
         animation: ScaleY 0.4s ease-out 0.4s forwards;
       }
+
+
+      @media screen and (max-width: 570px) {
+          grid-template-columns: 1fr;
+
+          div {
+            &, h4 { text-align: left !important; }
+
+            &:after {
+              display: none !important;
+            }
+          }
+        }
+
+      
     }
 
     .text-col-3 {
