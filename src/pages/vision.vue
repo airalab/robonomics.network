@@ -843,7 +843,7 @@ elements in the chain of providing the user with services. In other words, where
     @media screen and (min-width: 1500px){
       article {
         column-count: 2;
-        column-fill: auto;
+        // column-fill: auto;
       }
     }
 
