@@ -86,9 +86,9 @@
       <section class="vision-cybernetics section__solid">
         <div class="layout layout__content">
           <article>
-            <h2>On the border of cybernetics and economics</h2>
+            <h2>On the edge of cybernetics and economics</h2>
             <p class="hyphens">We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution.</p>
-            <p class="hyphens">Since 2017 we publish <g-link to="/community#science">research articles</g-link> representing to the academic community concepts united by the idea of the robot economy. 
+            <p class="hyphens">Since 2017 we have been publishing <g-link to="/community#science">research articles</g-link> representing to the academic community concepts united by the idea of the robot economy. 
               Below we would like to present the most general, important explanation why the robot economy is an inevitable and obvious solution in the wake of the new industrial revolution.</p>
           </article>
           <div class="bg" aria-hidden="true"><g-image alt="" src="~/assets/images/cybernetics-girls.png" /></div>
@@ -115,8 +115,8 @@
 
         <article class="hyphens">
           <p>The Nobel Prize laureate in economics Ronald Coase in his highly influential essay "The Nature of the Firm" (1937) tries to figure out on what conditions should we expect firms to emerge, because in fact "production could be carried on without any organization (that is, firms) at all".
-             He consider the conditions under which it makes sense for an entrepreneur to seek hired help instead of contracting out for some particular task. To answer on this question he introduces the concept of transaction costs.</p>
-          <p>Imagine vehicle purchase: try to buy a car for parts, and calculate how much money and time you will spend just to collect all the components in your garage.</p>
+             He considered the conditions under which it makes sense for an entrepreneur to seek hired help instead of contracting out for some particular task. To answer on this question he introduces the concept of transaction costs.</p>
+          <p>Imagine vehicle purchase: try to buy a car for parts, and calculate how much money and time you will spend just to assemble all the components in your garage.</p>
           <p>Nowadays the idea of reducing transaction costs is not new. 
             Production, logistics and retail actors over the past 50 years have already done a lot to automate their work. 
             However, with the rise of robotics and machine learning this task becomes relevant again. 
@@ -172,7 +172,7 @@ elements in the chain of providing the user with services. In other words, where
         <article class="hyphens">
           <p>In 1948 a professor of mathematics at the MIT Norbert Wiener published one of the most seminal works
              "Cybernetics: Or Control and Communication in the Animal and the Machine". He used the term "cybernetics" as self-regulating mechanisms for the first time and, so, this publication is considered a recognized Cybernetic birthday.</p>
-          <p>Norbert Wiener says about viability of interdisciplinary science approach. For example he drew the parallels between automated control systems and challenges of scaling and complexity increasing of human society.
+          <p>Norbert Wiener speaks about viability of interdisciplinary science approach. For example he drew the parallels between automated control systems and challenges of scaling and complexity increasing of human society.
           
             <!-- He used the term "cybernetics" as self-regulating mechanisms for the first time. While researching the foundations for the mathematical treatment of the feedback in automated control systems and more complex systems such as automated navigation Norbert Wiener drew the parallels between digital computer and the nerve structure in organism, in other words, brain. -->
             </p>
@@ -281,7 +281,7 @@ elements in the chain of providing the user with services. In other words, where
             But if we want smart cities services to be alive (or even smart home in some cases), we need establish communication with various third-party elements.
           </p>
           <p class="hyphens">
-            Let's imagine drone delivery service. If drone, for example, is DHL's property how it can access to Amazon's warehouses or access to over the entire airspace of the city? Is it be a monopoly? This is a major challenge for many 4th industrial revolution initiatives!
+            Let's imagine drone delivery service. If a drone, for example, is DHL's property how it can access to Amazon's warehouses or access to over the entire airspace of the city? Is it be a monopoly? This is a major challenge for many 4th industrial revolution initiatives!
           </p>
           <p class="hyphens">
             Nearly every corporation says it needs nearly complete rights to its surroundings because they don’t know how to securely set up the exchange of technical information between automated systems outside of their own internal corporate structure. 
@@ -343,7 +343,7 @@ elements in the chain of providing the user with services. In other words, where
           <div class="text-col-3 hyphens">
             
             <p>You may notice that the comparison between Ethereum and Polkadot does not show a clear superiority of one technology over another. Both of these approaches are extremely interesting for Robonomics. We would like to support each of these networks and give the choice to users of Robonomics.</p>
-            <p><b>Strong claim:</b> we hope Ethereum 2.0 launch will resolve the issue of high transaction fee. By 2021 developers of Robonomics sure this is one of the crucial details for increasing the capacity of the network.</p>
+            <p><b>Strong claim:</b> we hope Ethereum 2.0 launch will resolve the issue of high transaction fee. By 2021 developers of Robonomics are sure this is one of the crucial details for increasing the capacity of the network.</p>
             <p>At the same time Robonomics parachain in Kusama or Polkadot enables us to use functions that are not available to smart contract developers in Ethereum. 
               The key difference for developers is that in Polkadot/Kusama there is a possibility to customize the communication protocol and thus have access to global variables.
             </p>
