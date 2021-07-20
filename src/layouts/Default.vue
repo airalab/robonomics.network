@@ -2,7 +2,8 @@
   <transition name="fade" appear>
    
   
-    <div class="screen" :class="BannerLink('/kusama-slot')?'banner':''">
+    <div class="screen">
+    <!-- <div class="screen" :class="BannerLink('/kusama-slot')?'banner':''"> -->
 
       <header class="header">
         <!-- <a class="banner-top" href="/kusama-slot" v-if="BannerLink('/kusama-slot')">
