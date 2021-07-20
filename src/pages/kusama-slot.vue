@@ -11,21 +11,20 @@
 
 
       <section class="page-banner auction-banner section section__solid section__red">
-        <h1 class="auction-parachain-title clean">Crowdloan for Robonomics on Kusama Started!</h1>
-        <div class="auction-parachain-subtitle">Robonomics integrates Polkadot technologies into the IoT market. Support Robonomics in the Kusama slots auction, let's go to the future</div>
+        <h1 class="auction-parachain-title clean">Robonomics Parathread on Kusama [ID: 2077]</h1>
+        <div class="auction-parachain-subtitle">Summer crowdloan campaign for Robonomics on Kusama has ended. Robonomics team greatly values the support from the community, thanks to all contributors all over the word! We did not get a slot during these 5 auctions, so we are moving forward with <g-link to="/blog/kusama-crowdloan-guaranteed-rewards/">Plan B</g-link></div>
 
         <div class="auction-banner-cols layout__content">
 
             <div class="auction-statistics">
-              <div class="auction-statistics-sum">{{info_contributed}} KSM</div>
-              <div class="auction-statistics-accounts">from {{info_count}} contributors so far</div>
+              <div class="auction-statistics-sum">27013.30 KSM received</div>
+              <div class="auction-statistics-accounts">from 993 contributors</div>
               <div class="auction-statistics-id">Robonomics Parathread ID = 2077</div>
             </div>
 
             <div class="auction-banner-form align-center">
-              <g-image class="astronaut" alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
-              <!-- <Button label="Contribute now" button="primary large green" @click="GoToSubmit"/> -->
-              <a href="#crowdloan" class="button primary large green" v-smooth-scroll="{offset: -100}">Contribute now</a>
+              <g-image class="astronaut" aria-hidden="true" src="~/assets/images/rewardsHand.png" />
+              <a href="https://twitter.com/AIRA_Robonomics/" class="button primary large green">Updates on Twitter</a>
             </div>
 
 
@@ -69,318 +68,13 @@
         </div>
       </section>
 
-      <hr class="animate no-margins" v-in-viewport.once/>
-
-
-      <section id="crowdloan" class="auction-support layout">
-
-          <h2 class="animate" v-in-viewport.once>Participate in the Robonomics crowdloan</h2>
-
-          <p class="layout__text animate" v-in-viewport.once><i>By participating in the Robonomics crowdloan you lock your KSM for a period of time 48 weeks to help Robonomics lease a parachain slot and gain Kusama’s distributed computing power to service up to 10,000 digital twins of IoT devices at once.</i></p>
-
-          <div class="auction-support-action animate" v-in-viewport.once>
-
-            <!-- CALC -->
-            <div class="form-line">
-              <small>Choose contribution amount:</small>
-              <div class="input-signed-right">
-                <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
-                <label for="contribution" class="sign">KSM</label>
-              </div>
-            </div>
-
-
-            <div class="form-line">
-              <small>Estimate stake KSM to contribute Robonomics auction rewards:</small>
-
-              <div class="calc-line">
-                <div class="calc-line-1">
-                  <b>Robonomics Kusama Parachain</b>
-                </div>
-                <div class="calc-line-2">
-                  <b>Kusama Relay Chain</b>
-                </div>
-              </div>
-
-              <div class="calc-line">
-                <div class="calc-line-1">
-                  <small>Annual XRT staking return</small>
-                  <div class="calc-input-signed-right">
-                    <input id="staking_xrt" v-model="staking_xrt" type="text" required class="small" disabled/>
-                    <label for="staking_xrt" class="sign">%</label>
-                  </div>
-                </div>
-                <div class="calc-line-2">
-                  <small>Annual KSM staking return</small>
-                  <div class="calc-input-signed-right">
-                    <input id="staking_ksm" v-model="staking_ksm" type="text" required class="small"/>
-                    <label for="staking_ksm" class="sign">%</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="calc-line">
-                <div class="calc-line-1">
-                  <small>XRT price, DAI</small>
-                  <div class="calc-input-signed-left">
-                    <label for="price_xrt" class="sign">$</label>
-                    <input id="price_xrt" v-model="price_xrt" type="text" required class="small"/>
-                  </div>
-                </div>
-                <div class="calc-line-2">
-                  <small>KSM price, DAI</small>
-                  <div class="calc-input-signed-left">
-                    <label for="price_ksm" class="sign">$</label>
-                    <input id="price_ksm" v-model="price_ksm" type="text" required class="small"/>
-                  </div>
-                </div>
-              </div>
-
-              <div class="calc-line highlight">
-                <div class="calc-line-1">
-                   <small>Annual Reward, XRT</small>
-                    <span>{{ reward_xrt }} XRT</span>
-                    <small>${{reward_xrt_usd}}</small>
-                </div>
-                <div class="calc-line-2">
-                  <small>Annual Reward, KSM</small>
-                  <span>{{ reward_ksm }} KSM</span>
-                  <small>${{reward_ksm_usd}}</small>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- end of CALC -->
-
-            <div class="form-line">
-              <small>Choose the way to contribute:</small>
-              <select class="block robot" v-model="selectedWay">
-                <option selected value="1">1 - On website</option>
-                <option value="2">2 - On Polkadot Substrate portal</option>
-                <option value="3">3 - Kraken Exchange</option>
-                <option value="4">4 - Fearless DeFi Wallet</option>
-              </select>
-            </div>
-
-            <section id="participate-1" class="loading" v-if="selectedWay==1">
-
-              <form>
-                <!-- STEP 1 -->
-                <template v-if="!isApi">
-                <section>
-                  <label class="block label">
-                    <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-1"/>
-                    <span>I have installed the <g-link to="https://polkadot.js.org/extension/">Polkadot.js browser extension</g-link></span>
-                  </label>
-
-                  <label class="block label">
-                    <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-2" />
-                    <span>I have KSM in my Polkadot.js account</span>
-                  </label>
-
-                  <label class="block label">
-                    <input type="checkbox" class="big" required  v-model="checkedFlags" value="crowdloan-flag-3" />
-                    <span>My KSM has been unbonded</span>
-                    <tip summary="☝️" position="right-bottom" class="inline-block-clear">
-                      Supporters who are currently staking (bonding) their KSM will need to unstake prior to bonding their KSM to the crowdloan module.
-                      Kusama has a delayed exit period ~ 7 days. <g-link to="https://wiki.polkadot.network/docs/en/maintain-guides-how-to-unbond">How to unbond KSM</g-link>
-                    </tip>
-                  </label>
-                </section>
-
-                <p v-if="status_noextension" class="error">Please check if you have installed polkadot{.js} extension</p>
-
-                <Button type="button" @click="connect" button="primary block green large" :disabled="isСonnection || checkedFlags.length!=3" :class="crowdloan_loading?'loading':''">
-                  <span class="text">Connect Polkadot.js extension</span>
-                </Button>
-                </template>
-                <!-- end STEP 1 -->
-
-
-                <!-- STEP 2 -->
-                <template v-else-if="isApi && !success">
-                <section>
-
-                  <template v-if="accounts.length > 0">
-                    <label class="block label">
-                      <small>Select an account:</small>
-                      <select v-model="account" class="block">
-                        <option
-                          v-for="(item, index) in accounts"
-                          :key="index"
-                          :value="item.address"
-                        >
-                          {{ item.meta.name }} - {{ item.address.slice(0, 6) + "..." + item.address.slice(-6) }}
-                        </option>
-                      </select>
-                    </label>
-
-                    <label class="block label">
-                      <small>The balance of selected account:</small>
-                      <p>{{balanceView}}</p>
-                    </label>
-
-                    <label class="block label">
-                      <small>Your contribution:</small>
-                      <div class="input-signed-right" :class="validateBalance?'':'error'">
-                        <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
-                        <label for="contribution" class="sign">KSM</label>
-                      </div>
-                      <div class="msg-error" v-if="!validateBalance">Insufficient or incorrectly entered balance</div>
-                    </label>
-
-                    <label class="block label">
-                      <small>Your email (not necessary):</small>
-                      <input type="email" class="big block" value="" placeholder="Type your email" v-model="submit_email" :class="!validateEmail?'error':''"/>
-                      <div class="msg-error" v-if="!validateEmail&!agree_email">Please agree to receive emails from Robonomics or do not fill this field</div>
-                    </label>
-
-                    <label class="block label" v-show="submit_email">
-                      <input v-model="agree_email" type="checkbox" class="big" required />
-                      <small>I agree to receive email communications from Robonomics</small>
-                    </label>
-
-                    <details class="contribution-disclamer">
-                      <summary><b>Most important to know</b></summary>
-                      <article class="hyphens">
-                        <p>The Robonomics development team are early adopters of Polkadot technologies, and we understand that the current technical implementation of the Kusama Relay chain and Substrate framework may contain errors or be revised this year and next. This is important for the crowdloan campaigners to understand as well.</p>
-                        <p>The entire Polkadot ecosystem is undergoing a process of formation that can take an indefinite time. It's also important for you to keep in mind every time when you study any plans of the developers.</p>
-                        <p>Ladies and gentlemen, you are participating in this great experiment at your own peril and risk.</p>
-                        <p>Welcome to our journey!</p>
-                      </article>
-                    </details>
-                  </template>
-
-                  <template v-else>
-                    <label class="block label error">
-                      <small>No account found, please add account in your wallet extension or unlock it</small>
-                    </label>
-                  </template>
-
-                </section>
-
-                <p v-if="status_transaction_broken" class="error">Something wrong with the transaction. Please don't worry and ask for help in <g-link to="https://t.me/robonomics">Robonomics Telegram Community</g-link></p>
-                <p v-if="status_transaction_notdone" class="error">The transaction was not executed. Please don't worry and ask for help in <g-link to="https://t.me/robonomics">Robonomics Telegram Community</g-link></p>
-
-                <Button type="button" @click="send" button="primary block green large" :disabled="!validateSend" :class="crowdloan_loading?'loading':''">
-                  <span class="text">Submit contribution</span>
-                </Button>
-                </template>
-                <!-- end STEP 2 -->
-
-
-                <!-- STEP 3 -->
-                <section v-if="success" class="crowdloan-step-3 active">
-                  <h3>Your contribution {{contribution}} KSM accepted!</h3>
-                  <div class="load-bird" aria-hidden="true" v-in-viewport.once>
-                    <g-image src="/assets/kusama-karate-body.png" class="bird-body"/>
-                    <g-image src="/assets/kusama-karate-tale.png" class="bird-tale"/>
-                    <g-image src="/assets/kusama-karate-wing-1.png" class="bird-wing-1"/>
-                    <g-image src="/assets/kusama-karate-wing-2.png" class="bird-wing-2"/>
-                    <g-image src="/assets/kusama-karate-ribbons.png" class="bird-ribbons"/>
-                    <g-image src="/assets/kusama-karate-hair.png" class="bird-hair"/>
-                    <g-image src="/assets/kusama-karate-leg.png" class="bird-leg"/>
-                  </div>
-                  <div class="contribution-share">
-                    <div><small>Share great news:</small></div>
-                    <div class="nowrap">
-                      <a href="https://twitter.com/intent/tweet?text=🤖%20My%20$KSM%20work%20for%20%23IoT%20future%20in%20%40AIRA_Robonomics%20Crowdloan&url=https%3A%2F%2Frobonomics.network%2Fkusama-slot%2F" target="_blank" class="inline-block"><g-image alt="On Twitter" src="~/assets/images/twitter.png"/></a>                    </div>
-                  </div>
-                  <Button type="button" @click="more" button="primary block green large">
-                    <span class="text">Contribute more</span>
-                  </Button>
-                </section>
-                <!-- end STEP 3 -->
-
-
-              </form>
-            </section>
-
-            <section id="participate-3" v-if="selectedWay==3">
-              <p><g-link to="https://www.kraken.com/"><g-image style="max-width:300px" alt="Kraken exchange logo" src="~/assets/images/kraken-logo.webp"/></g-link></p>
-              <p>We are on Kraken's Parachain Auction Platform</p>
-              <p><g-link to="https://support.kraken.com/hc/en-us/articles/360060824412">Overview of parachain auctions on Kraken</g-link></p>
-              <p><g-link to="https://blog.kraken.com/post/9438/kraken-breaks-new-ground-with-first-of-its-kind-parachain-auction-platform/">Blog post from Kraken</g-link></p>
-            </section>
-
-             <section id="participate-2" v-if="selectedWay==2" style="width:80%">
-               <p><g-link style="display:block;word-break: break-all;" to="https://polkadot.js.org/apps/#/parachains/crowdloan">https://polkadot.js.org/apps/#/parachains/crowdloan</g-link></p>
-               <p>In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions: <g-link style="display:block;word-break: break-all;" to="https://twitter.com/AIRA_Robonomics/status/1377653645827833860">https://twitter.com/AIRA_Robonomics/status/1377653645827833860</g-link></p>
-            </section>
-
-            <section id="participate-4" v-if="selectedWay==4">
-              <p>You can also contribute to Robonomics crowdloan via <g-link to="https://fearlesswallet.io">Fearless DeFi Wallet</g-link>. We checked it and here are screenshots of the process:</p>
-
-              <div class="grid-3">
-                <g-link to="/assets/crowdloan/fearless-1.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-1.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 1"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-2.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-2.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 2"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-3.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-3.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 3"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-4.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-4.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 4"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-5.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-5.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 5"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-6.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-6.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 6"/></g-link>
-              </div>
-            </section>
-
-
-          </div>
-
-      </section>
-
-
-      <hr class="animate no-margins" v-in-viewport.once/>
-
-      <section>
-        <Abstract text="'By winning a Parachain slot in the Kusama we will open the doors for hundreds of IoT developers to the Polkadot ecosystem and help them take their first steps under the guidance of experienced teachers and roboticists.'" />
-        <g-link to="/blog/crowdloan-letter-from-robonomics-co-founder/">Letter from Robonomics co-founder</g-link>
-      </section>
-
-      <hr class="animate no-margins" v-in-viewport.once/>
-
-      <section class="animate section__dotted section__solid" v-in-viewport.once>
-        <h2 class="layout">Choose your strategy</h2>
-
-        <div class="auction-steps grid-3 animate-inside layout layout__content" v-in-viewport.once>
-
-        <Card orientation="vertical" back="transparent">
-
-          <div class="image">
-            <g-image alt="" src="~/assets/images/plo-holder-1.png"/>
-          </div>
-
-          <h3>For KSM holders</h3>
-          <p class="hyphens">Robonomics PLO may be interesting for stakeholders who are looking for ways to diversify their KSM stake next 48 weeks inside the ecosystem. <g-link to="/community#token">XRT</g-link> for now is available on Uniswap, Huobi, and in addition on PancakeSwap.</p>
-
-        </Card>
-
-        <Card orientation="vertical" back="transparent">
-
-          <div class="image">
-            <g-image src="~/assets/images/plo-holder-2.png" />
-          </div>
-
-          <h3>For XRT holders</h3>
-          <p class="hyphens">Gain value for your XRT by winning Kusama Slot with Robonomics network great potential for scaling. <g-link to="/blog">Read development plans in our blog</g-link></p>
-        </Card>
-
-        <Card orientation="vertical" back="transparent">
-
-          <div class="image">
-            <g-image src="~/assets/images/plo-holder-3.png" />
-          </div>
-
-          <h3>For tech-inspired</h3>
-          <p class="hyphens">Robonomics already has complex ecosystem for connecting real world to <g-link to="https://web3-technology-stack.readthedocs.io">Web3 Technology Stack</g-link>. It's free, it's opensource, everybody can try it for IoT and Smart services. With Polkadot it can be even more cost-effective.</p>
-        </Card>
-
-      </div>
-
-      </section>
 
       <hr class="animate no-margins" v-in-viewport.once/>
 
       <section class="kusama-polkadot-ecosystem section__solid section__lightblue">
         <h2>Robonomics in Polkadot ecosystem</h2>
+
+        <Abstract text="Robonomics integrates Polkadot technologies into the IoT market. With Robonomics Parachain we will open the doors for hundreds of IoT developers to the Polkadot ecosystem and help them take their first steps under the guidance of experienced teachers and roboticists."/>
 
         <div class="grid-3 animate-inside layout layout__content" v-in-viewport.once>
 
@@ -627,250 +321,13 @@
 
 
 <script>
-  let getProvider
-  let initApi
-  let getAccounts
-  let getAccount
-  let getStat
-  let config
-  if (process.isClient) {
-    const chain = require("../utils/chain");
-    getProvider = chain.getProvider
-    initApi = chain.initApi
-    getAccounts = chain.getAccounts
-    getAccount = chain.getAccount
-    getStat = chain.getStat
-    config = chain.config
-  }
-  import { getStat as getStatServer } from "../utils/api";
-  import { bnToBn } from "@polkadot/util";
-
+  
   export default {
     components: {
       MetaInfo: () => import("~/components/MetaInfo.vue"),
       Abstract: () => import("~/components/TextAbstract.vue"),
-      Button: () => import("~/components/Button.vue"),
-      tip: () => import("~/components/tip.vue"),
       Card: () => import("~/components/TextCard.vue")
-    },
-
-
-    data () {
-      return {
-        email: null,
-        statusSubmit: 'none',
-        parachainTab: 1,
-        checkedFlags: [],
-        selectedWay: 1,
-
-        contribution: 1,
-        staking_xrt: 100,
-        staking_ksm: 15,
-        price_xrt: 0,
-        price_ksm: 0,
-
-        submit_email: null,
-
-        isСonnection: false,
-        step: 1,
-        isApi: false,
-        api: null,
-        provider: null,
-        amount: 0,
-        success: false,
-        error: "",
-        isWrite: false,
-        account: null,
-        accounts: [],
-        agree_email: true,
-        info_count: 0,
-        info_contributed: 0,
-        balance: '0',
-        listenerBalance: null,
-
-        status_noaccount: false,
-        status_noextension: false,
-        status_transaction_broken: false,
-        status_transaction_notdone: false,
-
-        crowdloan_loading: false,
-      }
-    },
-
-    methods: {
-
-        async getPrice(tickerName) {
-          const result = await fetch(
-            `https://min-api.cryptocompare.com/data/price?fsym=${tickerName}&tsyms=USD&api_key=9c9ca216c454cd2390092e573894a6e10ddff03ef3a4e153996ef358fe9d33d8`
-          );
-          const data = await result.json();
-          return Number(data.USD)
-        },
-        async updatePrices() {
-          this.price_xrt = await this.getPrice('XRT');
-          this.price_ksm = await this.getPrice('KSM');
-        },
-        async connect() {
-          //loading
-          this.crowdloan_loading = true;
-
-          this.isСonnection = true;
-          this.status_noextension = false;
-          this.status_noaccount = false;
-          try {
-            this.accounts = await getAccounts(this.api);
-            if (this.accounts.length === 0) {
-              console.log('not accounts'); //
-              this.status_noaccount = true;
-            }
-            this.account = this.accounts[0]?.address;
-            if (this.account) {
-              let { data: { free: balance } } = await this.api.query.system.account(this.account);
-              this.balance = balance
-            }
-            //2
-            this.crowdloan_loading = false;
-            this.isСonnection = false
-            this.isApi = true;
-          } catch (error) {
-            //-
-            this.crowdloan_loading = false;
-            this.isСonnection = false
-            console.log(error.message);
-            this.status_noextension = true;
-          }
-        },
-        async send() {
-          try {
-            //loading
-            this.crowdloan_loading = true;
-
-            this.error = "";
-            this.isWrite = true;
-            this.status_transaction_broken = false;
-            this.status_transaction_notdone = false;
-            const account = await getAccount(this.api, this.account);
-            const amount = bnToBn(Number(this.contribution)*1000000000000)
-            const tx = await this.api.tx.crowdloan.contribute(config.paraId, amount.toString(), null)
-              .signAsync(account.meta.isInjected ? account.address : account);
-
-            await tx.send(result => {
-              if (result.status.isInBlock) {
-                console.log(result.status.asInBlock.toString());
-                result.events.forEach(events => {
-                  const {
-                    event: { data, method, section }
-                  } = events;
-
-                  if (section === "system" && method === "ExtrinsicFailed") {
-                    console.log("error", data.toString()); // Транзакция с ошибками
-                    this.status_transaction_broken = true;
-                    //-
-                    this.crowdloan_loading = false;
-                    this.error = 'Error';
-                    this.isWrite = false;
-                  } else if (
-                    section === "system" &&
-                    method === "ExtrinsicSuccess"
-                  ) {
-                    if(this.submit_email){
-                      fetch('https://script.google.com/macros/s/AKfycbxpQSwQ2S8npivmGNGUxgcLxWrte6kZXIMDm-SSQHjIo-Rh-efWD0jcez-eGEVUi4jabw/exec', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                        body: 'email=' + encodeURIComponent(this.submit_email)
-                      })
-                    }
-                    console.log("ok");
-                    this.isWrite = false;
-                    this.success = true;
-                    //3
-                  }
-                });
-              } else if (result.status.isFinalized) {
-                console.log("isFinalized");
-              }
-            });
-          } catch (error) {
-            //-
-            this.crowdloan_loading = false;
-            console.log(error); // кнопка нажата, транз не отправляется
-            this.status_transaction_notdone = true;
-            this.error = error.message;
-            this.isWrite = false;
-          }
-        },
-        async more() {
-          //2
-          this.crowdloan_loading = false;
-          this.success = false;
-        },
-        async updateInfo() {
-          let info
-          if (this.api && this.provider.isConnected) {
-            info = await getStat(this.api)
-          } else {
-            info = await getStatServer();
-          }
-          this.info_count = info.count;
-          this.info_contributed = Number(info.amountUnit).toFixed(2);
-        },
-      },
-
-      async created() {
-        this.updateInfo()
-        setInterval(() => {
-          this.updateInfo()
-        }, 5000);
-        this.updatePrices()
-        try {
-          this.provider = getProvider();
-          this.api = await initApi();
-        } catch (error) {
-          console.log(error);
-        }
-      },
-
-      watch: {
-        account: async function (newValue) {
-          if (this.listenerBalance !== null) {
-            this.listenerBalance()
-          }
-          this.listenerBalance = await this.api.query.system.account(newValue, ({ data: { free: balance } }) => {
-            this.balance = balance
-          });
-        }
-      },
-
-      computed: {
-        validateBalance() {
-          if (Number(this.contribution) > 0) {
-            const amount = bnToBn(Number(this.contribution)*1000000000000)
-            const balance = bnToBn(this.balance)
-            if (balance.gt(amount)) {
-              return true
-            }
-          }
-          return false
-        },
-        validateEmail() {
-          if ((!this.submit_email || (this.agree_email && /\S+@\S+\.\S+/.test(this.submit_email)))) {
-            return true
-          }
-          return false
-        },
-        validateSend() {
-          if (this.validateBalance && !this.isWrite && this.validateEmail) {
-            return true
-          }
-          return false
-        },
-        koef() { return Number(this.info_contributed) < 35000 ? 5 : 3.5 },
-        reward_xrt() { return (this.contribution * this.koef).toFixed(2) },
-        reward_xrt_usd() { return (this.price_xrt * this.reward_xrt).toFixed(2) },
-        reward_ksm() { return (this.contribution * (this.staking_ksm / 100)).toFixed(2) } ,
-        reward_ksm_usd() { return (this.price_ksm * this.reward_ksm).toFixed(2) },
-        balanceView() {return Number(this.balance) > 0 ? this.balance.toHuman() : "-"}
-      }
+    }
   }
 </script>
 
@@ -1506,7 +963,17 @@
 
     opacity: 0;
     transform: translateY(0.6rem);
-    animation: blink var(--duration-mainpic) ease-out var(--delay-mainpic) forwards;
+    animation: FadeIn 1s ease-out 0.5s forwards, ImgAppear 0.8s ease-out 0.5s forwards;
+    // animation: blink var(--duration-mainpic) ease-out var(--delay-mainpic) forwards;
+  }
+
+  @keyframes ImgAppear {
+    0% {
+      transform: translateY(6rem);
+    }
+    100%{
+      transform: translateY(0.6rem);
+    }
   }
 
 

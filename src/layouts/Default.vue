@@ -5,14 +5,14 @@
     <div class="screen" :class="BannerLink('/kusama-slot')?'banner':''">
 
       <header class="header">
-        <a class="banner-top" href="/kusama-slot" v-if="BannerLink('/kusama-slot')">
+        <!-- <a class="banner-top" href="/kusama-slot" v-if="BannerLink('/kusama-slot')">
           <div class="layout__content">
             <div id="banner-auction">
               <g-image alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
               ROBONOMICS PARACHAIN CROWDLOAN STARTED
             </div>
           </div>
-        </a>
+        </a> -->
 
         <div class="header-content">
           <div class="header-logo">
@@ -20,6 +20,7 @@
           </div>
           <nav class="header-nav sidetext">
               <g-link to="/community#intouch">Community</g-link>
+              <g-link to="/kusama-slot">Kusama slot</g-link>
               <g-link to="/vision">Vision</g-link>
               <g-link to="/blog">Blog</g-link>
           </nav>
