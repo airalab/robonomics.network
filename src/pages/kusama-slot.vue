@@ -24,7 +24,7 @@
 
             <div class="auction-banner-form align-center">
               <g-image class="astronaut" aria-hidden="true" src="~/assets/images/rewardsHand.png" />
-              <a href="https://twitter.com/AIRA_Robonomics/" class="button primary large green">Updates on Twitter</a>
+              <g-link to="https://twitter.com/AIRA_Robonomics/" class="button primary large green">Updates on Twitter</g-link>
             </div>
 
 
