@@ -327,6 +327,12 @@
       MetaInfo: () => import("~/components/MetaInfo.vue"),
       Abstract: () => import("~/components/TextAbstract.vue"),
       Card: () => import("~/components/TextCard.vue")
+    },
+
+    data () {
+      return {
+        parachainTab: 1
+      }
     }
   }
 </script>
