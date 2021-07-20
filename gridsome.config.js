@@ -12,29 +12,7 @@ module.exports = {
   titleTemplate: '%s',
 
   plugins: [
-    {
-      use: 'gridsome-plugin-yandex-metrika',
-      options: {
-	      id: 47762995,
-	      options:  {
-	        clickmap:true,
-	        trackLinks:true,
-	        accurateTrackBounce:true,
-	        webvisor:true
-	      }
-	    }
-    },
-
-    {
-      // Google Tag Manager
-      use: 'gridsome-plugin-gtm',
-      options: {
-        id: 'GTM-WJ83CPC',
-        enabled: true,
-        debug: false
-      }
-    },
-
+    
     {
       // Create posts from markdown files
       use: "@gridsome/vue-remark",
@@ -54,16 +32,7 @@ module.exports = {
         },
         plugins: [
            
-           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-          //  ['gridsome-plugin-remark-prismjs-all', {
-          //     noInlineHighlight: false,
-          //     showLineNumbers: true,     //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
-          //     prompt: {                   //  `require("prismjs/plugins/command-line/prism-command-line.css");`
-          //         user: `root`,
-          //         host: `localhost`,
-          //         global: false,
-          //     }
-          // }],
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
           ['remark-highlight.js'],
         ]
       }
@@ -79,15 +48,6 @@ module.exports = {
         template: './src/templates/Land.vue',
         plugins: [
           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-          // ['gridsome-plugin-remark-prismjs-all', {
-          //   noInlineHighlight: false,
-          //   showLineNumbers: true,     //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
-          //   prompt: {                   //  `require("prismjs/plugins/command-line/prism-command-line.css");`
-          //       user: `root`,
-          //       host: `localhost`,
-          //       global: false,
-          //   }
-          // }],
           ['remark-highlight.js'],
         ]
       }
@@ -103,32 +63,12 @@ module.exports = {
         template: './src/templates/Community.vue',
         plugins: [
            ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-          //  ['gridsome-plugin-remark-prismjs-all', {
-          //    noInlineHighlight: false,
-          //    showLineNumbers: true,     //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
-          //    prompt: {                   //  `require("prismjs/plugins/command-line/prism-command-line.css");`
-          //        user: `root`,
-          //        host: `localhost`,
-          //        global: false,
-          //    }
-          // }],
           ['remark-highlight.js'],
         ]
       }
     },
     
   ],
-
-  // transformers: {
-  //   remark: {
-  //     // global remark options
-  //     autolinkHeadings: false,
-  //     plugins: [
-  //       ['remark-highlight.js'],
-  //       ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
-  //     ]
-  //   }
-  // },
 
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
