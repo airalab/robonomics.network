@@ -353,7 +353,53 @@ elements in the chain of providing the user with services. In other words, where
         </div>
       </section>
 
-      <section class="vision-fathers layout layout__content">
+      <section class="section section__solid section__darkgray">
+        <div class="vision-books layout layout__content">
+          <div>
+            <h2>Have you read this?</h2>
+            <p class="layout__text"><i>Great books lead to great ideas. If you're after more inspiration about human-machine communication, try reading science fiction books. Mark the books you’ve already read and see what else can we offer you for further reflection.</i></p>
+            <div class="vision-books-books">
+              <div class="book" @click="markBook($event)">
+                Do Androids Dream of Electric Sheep?
+                <small>Philip K. Dick</small>
+                <span></span>
+              </div>
+
+              <div class="book" @click="markBook($event)">
+                Autofac
+                <small>Philip K. Dick</small>
+                <span></span>
+              </div>
+
+              <div class="book" @click="markBook($event)">
+                I, Robot
+                <small>Isaac Asimov</small>
+                <span></span>
+              </div>
+
+              <div class="book" @click="markBook($event)">
+                The Bicentennial Man
+                <small>Isaac Asimov</small>
+                <span></span>
+              </div>
+
+              <div class="book" @click="markBook($event)">
+                Neuromancer
+                <small>William Gibson</small>
+                <span></span>
+              </div>
+
+              <div class="book" @click="markBook($event)">
+                Marionettes, Inc.
+                <small>Ray Bradbury</small>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="teleology" class="vision-fathers layout layout__content" v-show="booksMarked > 1">
 
         <div class="vision-fathers-image">
           <h2>Open questions of teleology</h2>
@@ -382,6 +428,8 @@ elements in the chain of providing the user with services. In other words, where
 
       </section>
 
+      
+
     </div>
 
   </layout>
@@ -393,6 +441,7 @@ elements in the chain of providing the user with services. In other words, where
   import Parallax from 'parallax-js'
 
   export default {
+    
     components: {
       MetaInfo: () => import("~/components/MetaInfo.vue"),
       Abstract: () => import("~/components/TextAbstract.vue"),
@@ -400,9 +449,39 @@ elements in the chain of providing the user with services. In other words, where
       tip: () => import("~/components/tip.vue")
     },
 
+    data() {
+        return {
+            booksMarked: 0,
+            scrolled: false
+        }
+    },
+
     mounted() {
       var scene = document.getElementById('parallax-iotapp');
       var parallaxInstance = new Parallax(scene);
+    },
+
+    methods: {
+      markBook: function(e) {
+        e.target.classList.toggle('active');
+        if(e.target.classList.contains('active')){
+          this.booksMarked ++;
+        }
+        else{
+          this.booksMarked --
+        }
+
+        if(this.booksMarked > 2 && !this.scrolled){
+            this.$smoothScroll({
+              scrollTo: document.getElementById('teleology'),
+              duration: 1000,
+              updateHistory: false,
+              offset: -100
+          });
+
+          this.scrolled = true;
+        }
+      }
     }
   }
 </script>
@@ -1051,7 +1130,7 @@ elements in the chain of providing the user with services. In other words, where
           grid-template-columns: 1fr;
 
           div {
-            &, h4 { text-align: left !important; }
+            &, h4 { text-align: center !important; }
 
             &:after {
               display: none !important;
@@ -1068,4 +1147,84 @@ elements in the chain of providing the user with services. In other words, where
       }
     }
   }
+
+  /* ----- */
+
+  .vision-books-books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space);
+    text-align: left;
+
+    @media screen and (min-width:1520px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @media screen and (max-width: 870px) {
+      grid-template-columns: 1fr;
+    }
+
+    .book {
+      display: grid;
+      align-content: space-between; 
+      text-decoration: none;
+      background-color: var(--color-gray-mid);
+      padding: var(--space);
+      font-weight: bold;
+      letter-spacing: normal;
+      position: relative;
+      cursor: pointer;
+
+      box-shadow: 4px 4px 0 #000;
+
+      * {
+        pointer-events: none;
+      }
+
+      span {
+        --switch-size: 34px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+        position: absolute;
+        width: var(--switch-size);
+        height: var(--switch-size);
+        border-radius: calc(var(--switch-size) * 2);
+        background: #fff;
+        bottom: calc(var(--space) * 0.5);
+        right: calc(var(--space) * 0.5);
+      }
+
+      small {
+        display: block;
+        margin-top: var(--space)
+      }
+
+      &:nth-child(1):hover, &:nth-child(1).active { background-color: #cd76ff; }
+      &:nth-child(2):hover, &:nth-child(2).active { background-color: #0ccfd6; }
+      &:nth-child(3):hover, &:nth-child(3).active { background-color: #f126bf; }
+      &:nth-child(4):hover, &:nth-child(4).active { background-color: #f74873; }
+      &:nth-child(5):hover, &:nth-child(5).active { background-color: #9865f7; }
+      &:nth-child(6):hover, &:nth-child(6).active { background-color: #36b85d; }
+
+      &.active {
+        span {
+          background: var(--color-darkgray);
+          text-align: center;
+          
+          &:before {
+            content: "+";
+            font-weight: 300;
+            line-height: 1;
+            font-size: 2rem;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+
+    }
+  }
+
 </style>
