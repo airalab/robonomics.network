@@ -6,18 +6,6 @@
       <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
     </div>
 
-
-    <div class="msg">
-      <div class="msg__info msg__solid" v-if="!this.cookiePolicyAccepted()" id="alert-cookiePolicy">
-        This website uses cookies. <g-link to="/cookie-policy">Read Cookie Policy</g-link>
-        <button @click="this.cookiePolicySet" class="button m-space-left">Ok</button>
-      </div>
-
-      <!-- <a id="msg-editbutton" class="button button__border button__icon" href="https://github.com/airalab/robonomics.network/issues" target="_blank">
-        <span class="icon">&#9998;</span>
-        <small>Edit website</small>
-      </a> -->
-    </div>
   </footer>
 </template>
 
@@ -38,49 +26,6 @@
     }
   }
 
-
-  .msg{
-    position: fixed;
-    bottom: calc( var(--screen-padding-bottom) + 1rem );
-    right: calc( var(--screen-padding-right) + 0.6rem );
-    max-width: calc( 100% - 2*(var(--screen-padding-left) + 0.4rem) ) ;
-
-    visibility: hidden;
-    opacity: 0;
-    animation: FadeIn 0.2s ease-in 0.7s forwards;
-
-    &__solid {
-      padding: 0.4rem;
-    
-      &, .button { font-size: 90%; }
-      a { font-weight: 500; }
-    }
-
-    &__info{
-      background-color: var(--link-color);
-
-      &, a { color: var(--text-color-invert); }
-      a:hover{ color: var(--text-color); }
-
-      .button {
-        background-color: var(--color-dark);
-        color: var(--color-light);
-
-        &:hover{
-          background-color: var(--color-light);
-          color: var(--color-dark);
-        }
-      }
-    }
-  }
-
-  #msg-editbutton {
-    @media screen and (max-width: 450px) {
-      padding-right: 0;
-      small { display: none; }
-      .icon { margin-right: 0; border: 0; }
-    }
-  }
 </style>
 
 
