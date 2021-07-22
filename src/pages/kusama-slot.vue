@@ -10,7 +10,7 @@
     <div class="auction page">
 
 
-      <section class="page-banner auction-banner section section__solid section__red">
+      <section class="layout page-banner auction-banner section section__solid section__red">
         <h1 class="auction-parachain-title clean">Robonomics Parathread on Kusama [ID: 2077]</h1>
         <div class="auction-parachain-subtitle">Summer crowdloan campaign for Robonomics on Kusama has ended. Robonomics team greatly values the support from the community, thanks to contributors all over the word! We did not get a slot during these 5 auctions, so we are moving forward with <g-link to="/blog/kusama-crowdloan-guaranteed-rewards/">Plan B</g-link></div>
 
