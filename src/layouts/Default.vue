@@ -194,6 +194,7 @@ query {
 	background-color: var(--color-gray-light);
   padding-top: calc(var(--screen-padding-top));
   padding-bottom: calc(var(--screen-padding-bottom));
+  height: 100vh;
 
 	&::-webkit-scrollbar { display: none; }
 	scrollbar-width: none;

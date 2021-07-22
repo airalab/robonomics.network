@@ -269,18 +269,21 @@ query {
 
     mounted() {
       this.cookieCalendar();
-    },
-
-    updated() {
       this.scale();
       window.addEventListener('load', this.scale);
       window.addEventListener('resize', this.scale);
     },
 
-    beforeDestroy() {
-      window.removeEventListener('load', this.scale);
-      window.removeEventListener('resize', this.scale);
-    },
+    // updated() {
+    //   this.scale();
+    //   window.addEventListener('load', this.scale);
+    //   window.addEventListener('resize', this.scale);
+    // },
+
+    // beforeDestroy() {
+    //   window.removeEventListener('load', this.scale);
+    //   window.removeEventListener('resize', this.scale);
+    // },
 
     methods: {
       //for scaling animation 'Hands'
