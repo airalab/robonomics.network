@@ -3,12 +3,12 @@ title: XRT token distribution Q2 2021 - Q1 2022
 date: 2021-03-18
 published: true
 tags: ['XRT', 'Tokens', 'Robonomics parachain']
-cover_image: ./images/distribution-plan2021/Release_Blog.jpg
+cover_image: ./images/XRT-distribution/Release_Blog.jpg
 description: "Article provides a deep dive into the XRT distribution plan"
 abstract: "Article provides a deep dive into the XRT distribution plan"
 ---
 
-[![HowToGIF](./images/distribution-plan2021/XRTdisthowto.gif)](https://robonomics.network/community#token)
+[![How to find distribution plan, guide for website, gif](./images/XRT-distribution/XRTdisthowto.gif)](https://robonomics.network/community#token)
 
 *Updated XRT distribution plan available at [https://robonomics.network/community#token](https://robonomics.network/community#token)*
 
@@ -28,7 +28,7 @@ The article split into three stages:
 
 During the Q1 2020 - Q1 2021 period, XRT circulation consists of 1,268,496 XRT.
 
-![2020-2021](./images/distribution-plan2021/CircNow.png)
+![2020-2021](./images/XRT-distribution/CircNow.png)
 
 Let’s go through each variable:
 - AIRA -> XRT holders swapped 686,640 out of 1,000,000 using the alembic smart contract;
@@ -48,7 +48,7 @@ Let’s go through each variable:
 
 ### “Now” stage covers the Q2 2021 - Q1 2022 period:
 
-![now2021](./images/distribution-plan2021/Total2021.png)
+![now2021](./images/XRT-distribution/Total2021.png)
 
 7,000,000 XRT locked until Robonomics developers DAO will merge tokenomics on Ethereum and Kusama.
 
@@ -81,7 +81,7 @@ Up to 502,000 XRT will be added to the circulation supply during the Q2 2021 - Q
 
   - “Big Bag” private sales for smart-money investors, who will contribute to different aspects of the Robonomics growth.
 
-![inf](./images/distribution-plan2021/Inflation.png)
+![inf](./images/XRT-distribution/Inflation.png)
 
 ### XRT inflation Q2 2021 - Q1 2022:
 
@@ -95,7 +95,7 @@ Up to 502,000 XRT will be added to the circulation supply during the Q2 2021 - Q
 
 When Kusama & Ethereum bridges become stable & reliable, Robonomics Developers DAO will merge the tokenomics and enter the Interoperability era of Robonomics.
 
-![fut](./images/distribution-plan2021/TotalAmount.png)
+![fut](./images/XRT-distribution/TotalAmount.png)
 
 - Total circulation will increase by approximately 502,100 XRT, released by Robonomics developers DAO during Q2 2021 - Q1 2022. Thus, a new total expected XRT circulation is 1,770,596 XRT;
 
