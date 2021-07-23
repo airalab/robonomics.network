@@ -23,9 +23,9 @@ After connecting the Robonomics parachain to the Frontier Relay chain we can hav
 
 ## XCMP and integration with Kusama parachains
 
-Maybe only one disadvantage today (in 2021), when we are talking about the lifecycle in a Frontier network and not about the main Kusama network, is a lack of integration via XCMP.
+Maybe only one disadvantage today (in 2021), when we are talking about the lifecycle in a Frontier network and not about the main Kusama network, is a lack of integration via [XCMP](https://wiki.polkadot.network/docs/learn-crosschain#overview-of-xcmp).
 
-But it does not mean that you cannot execute technical integration tasks and prepare a Robonomics parachain to work with Karura, Moonriver and Khala. It is those three blockchains that are interesting for the Robonomics team in terms of integration of already existing solutions. We can start maintaining work in a Frontier network of Robonomics parachain iteration with copies of the mentioned projects, after release of public documentation and first samples of using Kusama (how to create trading pair on Karura, connect all functions of parachain with solidity/ink smart contracts in Moonriver, or to provide data privacy with Khala).
+But it does not mean that you cannot execute technical integration tasks and prepare a Robonomics parachain to work with Karura, Moonriver and Khala. It is those three parachains that are interesting for the Robonomics team in terms of integration. We can start maintaining work in a Frontier network with copies of the mentioned projects, but only after release of public documentation and first samples of using Kusama (how to create trading pair on Karura, connect functions of parachain with solidity/ink smart contracts in Moonriver, or to provide data privacy with Khala).
 
 I’m personally expecting that the process of parachains integration would be executed very carefully in the first year, and maybe other projects will also work together in sandboxes and after it transfer integration mechanisms to Kusama network. So, Robonomics could be in the Kusama network right to the moment of active integration between the projects.
 
@@ -37,13 +37,13 @@ We are expecting that the genesis block will be formed during the period from 28
 
 Important information for XRT holders in the Ethereum network: To participate in the parachain’s genesis block and participate in staking, you can use dapp exodus till 28th of July. After 28th of July the opportunity to transfer XRT tokens into Ethereum to Frontier will still be available. But this process will be executed by the technical committee of the network and not more often than once a week.
 
-Also we would like to notice, that the exit from Ethereum would not allow you to go back till the moment when Robonomics parachain will be included in the Kusama network, and when there will be the bridge that has similar functionality as in Ethereum. The situation is similar to the process of transfer to Ethereum 2.0 for ETH holders.
+Also we would like to notice, that the exodus would not allow you to go back till the moment when Robonomics parachain will be connected to the Kusama network, and when there will be suitable bridge to Ethereum. The situation is ~ similar to the process of transfer to Ethereum 2.0 for ETH holders.
 
 ## XRT staking
 
 XRT staking in Robonomics parachain aims to split the capacity between two options of payments: for transaction or for subscription. You can read more about this in the article [“RWS overview, part 2 “Heterogeneous tokenomics”](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855) on Medium.
 
-The proposed basis of remuneration for the staking by developers will be 10%. This amount helps to launch the parachain. In the future, the reward will be determined by democration module for XRT holders, similar to Polkadot model. 
+The basis of reward for the staking will be ~ 10%. This amount helps to launch the parachain. In the future, the reward will be determined by [Democracy pallet](https://substrate.dev/rustdocs/latest/pallet_democracy/) for XRT holders. 
 
 Crowdloan contributors will get increased reward rate — 50%. Thus, it will help us to test the mechanism: “Parachain, which always wins”, which will propose adaptive reward for staking Robonomics to the reward for staking in Kusama / Polkadot relay chain and considering XRT price to KSM/DOT. We will explain later in detail about this mechanism and after a few tests. 
 
