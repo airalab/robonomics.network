@@ -92,9 +92,9 @@ The final task for the 48 weeks of existence in the Kusama network is the transf
 
 </Card>
 
-<Card :image="'/avatars/Sergei-Lonshakov.jpg'" :back="'transparent'" imageSize="big">
+<Card :image="'/avatars/Sergei-Lonshakov.jpg'" :back="'transparent'" imageSize="big" alignContentV="middle">
 
-EnsRationis
+#### EnsRationis
 
 Robonomics network architect
 

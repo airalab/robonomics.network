@@ -86,6 +86,14 @@ export default {
       }
     },
 
+    alignContentV: {
+      type: String,
+      default: 'top',
+      validator: function (value) {
+        return ['middle', 'top'].indexOf(value) !== -1;
+      }
+    },
+
   },
 
 
@@ -99,6 +107,7 @@ export default {
         [`${this.orientation}`]: true,
         [`${this.back}`]: true,
         [`alignContent-${this.alignContent}`]: true,
+        [`alignContentV-${this.alignContentV}`]: true,
         [`oldy`]: this.back != `transparent`,
         [`oldy__link`]: this.link || this.popup,
       };
@@ -150,18 +159,6 @@ export default {
 
     /* ORIENTATION */
 
-    &.alignContent-center { 
-      &, h1, h2, h3, h4, h5 { text-align: center; }
-    }
-
-    &.alignContent-left {
-      &, h1, h2, h3, h4, h5 { text-align: left; }
-    }
-
-    &.alignContent-right {
-      &, h1, h2, h3, h4, h5 { text-align: right; }
-    }
-    
     &.icon, &.image {
       display: grid;
       gap: var(--space);
@@ -182,7 +179,27 @@ export default {
         &, h1, h2, h3, h4, h5 { text-align: left; }
       }
 
-      &.icon, &.image { grid-template-columns: auto 1fr; } //pic + content
+      @media screen and (min-width: 550px) {
+        &.icon, &.image { grid-template-columns: auto 1fr; } //pic + content
+      }
+      
+    }
+
+    &.alignContent-center { 
+      &, h1, h2, h3, h4, h5 { text-align: center; }
+    }
+
+    &.alignContent-left {
+      &, h1, h2, h3, h4, h5 { text-align: left; }
+    }
+
+    &.alignContent-right {
+      &, h1, h2, h3, h4, h5 { text-align: right; }
+    }
+
+    &.alignContentV-middle {
+      align-content: center; 
+      align-items: center;
     }
 
     /* end of ORIENTATION */
