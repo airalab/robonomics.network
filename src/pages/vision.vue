@@ -46,10 +46,10 @@
           <h2>Build your IoT services on Robonomics <sup>*</sup></h2>
           <p><i>* taking full advantage of decentralized architecture</i></p>
           <p class="hyphens">In the light of a complex and unstable international situation, such as trade wars, economic, diplomatic and political sanctions, 
-            attempts to block internet services in various regions of the world 
+            attempts to block internet services in various regions of the world, 
             IoT device/application manufacturers are facing an increasing challenge  
-            to guarantee the quality service of its users throughout the lifetime of the sold Iot devices.</p>
-          <p>As a solution to such problems, the Robonomics project proposes to use a globally accessible network built with blockchain-supported technologies such as IPFS, Ethereum, Polkadot.</p>
+            to guarantee the quality service of its users throughout the lifetime of the sold IoT devices.</p>
+          <p>As a solution to such problems, the Robonomics project proposes to use a globally accessible network built with decentralized open-source technologies such as IPFS, Ethereum, Polkadot.</p>
         </div>
         <div class="vision-iot-pic">
           <div id="parallax-iotapp" aria-hidden="true">
@@ -86,7 +86,7 @@
       <section class="vision-cybernetics section__solid">
         <div class="layout layout__content">
           <article>
-            <h2>On the edge of cybernetics and economics</h2>
+            <h2>At the frontier of cybernetics and economics</h2>
             <p class="hyphens">We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution.</p>
             <p class="hyphens">Since 2017 we have been publishing <g-link to="/community#science">research articles</g-link> representing to the academic community concepts united by the idea of the robot economy. 
               Below we would like to present the most general, important explanation why the robot economy is an inevitable and obvious solution in the wake of the new industrial revolution.</p>
@@ -117,7 +117,7 @@
           <p>The Nobel Prize laureate in economics Ronald Coase in his highly influential essay "The Nature of the Firm" (1937) tries to figure out on what conditions should we expect firms to emerge, because in fact "production could be carried on without any organization (that is, firms) at all".
              He considered the conditions under which it makes sense for an entrepreneur to seek hired help instead of contracting out for some particular task. To answer on this question he introduces the concept of transaction costs.</p>
           <p>Imagine vehicle purchase: try to buy a car for parts, and calculate how much money and time you will spend just to assemble all the components in your garage.</p>
-          <p>Nowadays the idea of reducing transaction costs is not new. 
+          <p>Nowadays the idea of reducing transaction costs has become firmly established. 
             Production, logistics and retail actors over the past 50 years have already done a lot to automate their work. 
             However, with the rise of robotics and machine learning this task becomes relevant again. 
             The question is, is lights-out manufacturing truly realistic?
@@ -126,7 +126,7 @@
             <g-link to="https://www.automation.com/en-us/articles/february-2020/how-bright-is-the-future-of-automation">to operate unsupervised for up to 30 days at a time</g-link>, 
             <g-link to="https://www.assemblymag.com/articles/90173-automation-profiles--robots-help-philips-shave-assembly-costs-?v=preview">hire a small number of staff to oversee quality assurance</g-link>, 
             <g-link to="https://internetofbusiness.com/success-stories-five-companies-smart-factories-can-learn/">to reduce downtime</g-link>. 
-            But also there may be some limitations. One such limitation is setting up the interaction of many related elements (control systems + robotics + IoT + clouds + API to Human).</p>
+            But also there may be some limitations. One such limitation is setting up the interaction of many related elements (control systems + robotics + IoT + clouds + API to human).</p>
         </article>
 
       </section>
@@ -152,7 +152,7 @@
               data, people) directly communicate with each other to achieve collaboration. Such interconnected systems provide new functionalities 
               for increasing efficiency, productivity, and the autonomous operation of production processes.</p>
               <p>The most interesting thing in the CPS design process is to find a fine line between a sufficient and not yet excessive number of automated
-elements in the chain of providing the user with services. In other words, where is the edge of the CPS size? To answer this question, we should refer Norbert Wiener.</p>
+elements in the chain of providing the user with services. In other words, where is the limit of the CPS size? To answer this question, we should refer Norbert Wiener.</p>
         </article>
         
 
@@ -172,17 +172,12 @@ elements in the chain of providing the user with services. In other words, where
         <article class="hyphens">
           <p>In 1948 a professor of mathematics at the MIT Norbert Wiener published one of the most seminal works
              "Cybernetics: Or Control and Communication in the Animal and the Machine". He used the term "cybernetics" as self-regulating mechanisms for the first time and, so, this publication is considered a recognized Cybernetic birthday.</p>
-          <p>Norbert Wiener speaks about viability of interdisciplinary science approach. For example he drew the parallels between automated control systems and challenges of scaling and complexity increasing of human society.
-          
-            <!-- He used the term "cybernetics" as self-regulating mechanisms for the first time. While researching the foundations for the mathematical treatment of the feedback in automated control systems and more complex systems such as automated navigation Norbert Wiener drew the parallels between digital computer and the nerve structure in organism, in other words, brain. -->
-            </p>
-
-            <p>So, in other words, the cybernetic approach can be applied equally to psychotherapy, biology and automated navigation.
+          <p>Norbert Wiener speaks about viability of interdisciplinary science approach. For example he drew the parallels between automated control systems and challenges of scaling and complexity increasing of human society.</p>
+          <p>So, in other words, the cybernetic approach can be applied equally to psychotherapy, biology and automated navigation.
               It is based on the function of the system, how the individual actions are controlled and how the individual nodes interact with each other.</p>
-              <p>Taking into account Ronald Coase's and Norbert Wiener's publications, following up the development of Industry 4.0, we can consider using CPS as an economic agent, while designing robotized services. To regulate the size of the CPS and adapt to the changing needs of the individuals we can use market mechanism.
-              </p>
-              <p>And what’s so scientifically interesting, taking as a basis the idea of the restrictions imposed by the market on the size of the firm, we can say that the limit of the increase in CPS will always be determined by the market and nothing else is required for this.</p>
-              <p>Robofirms are an ideal representation for cyber-physical systems.
+          <p>Taking into account Ronald Coase's and Norbert Wiener's publications, following up the development of Industry 4.0, we can consider using CPS as an economic agent, while designing robotized services. To regulate the size of the CPS and adapt to the changing needs of the individuals we can use market mechanism.</p>
+          <p>And what’s so scientifically interesting, taking as a basis the idea of the restrictions imposed by the market on the size of the firm, we can say that the limit of the increase in CPS will always be determined by the market and nothing else is required for this.</p>
+          <p>Robofirms are an ideal representation for cyber-physical systems.
                 They are a fairly autonomous unit capable of providing services to both humans and other robots for money. As a result, the robot economy appears to us to be a general set of CPSs that provide services and goods directly to the market.</p>
         </article>
         
@@ -249,7 +244,7 @@ elements in the chain of providing the user with services. In other words, where
       <section class="vision-bitcoin">
         <div class="layout layout__content hyphens text-col-3">
        
-            <p>One of the examples of our experiments: trading cars for space on the road. What a person would absolutely not do in traffic, the car will do for you without difficulties: you want to rebuild to a neighboring line, your car and your neighbor's car exchange offers on the cost of such an operation at a rate of 1000 sentences per second, they will reveal an equilibrium price offer, and so you are already in the next faster moving lane. This means that now it will become available to “charge” your uber to spend a little more than usual and you will notice how the machines part in front of you, and you will not even know that thousands of messages are flowing between the robots.</p>
+            <p>One of the examples of our experiments: trading cars for space on the road. What a person would absolutely not do in traffic, the car will do for you without difficulties: you want to switch lanes, your car and your neighbor's car exchange offers on the cost of such an operation at a rate of 1000 sentences per second, they will reveal an equilibrium price offer, and so you are already in the next faster moving lane. This means that now it will become available to “charge” your uber to spend a little more than usual and you will notice how the machines part in front of you, and you will not even know that thousands of messages are flowing between the robots.</p>
             <p>Robots need money that will be directly available to them in order to be able to perform operations without a person at the speed with which only machines can make decisions. And all this is solely for a person to enjoy life in the Smart City!</p>
             <p>And here we smoothly come to the first electronic cash - Bitcoin. The fact that Bitcoin can be stored in your account on the principle of not a bank, but cash in your wallet makes it the first money that the robot can manage independently, more precisely autonomously. At the same time, today we can already say that Bitcoin is not just electronic cash, but a truly global financial institution.</p>
             <p class="vision-bitcoin-conslution">As a result: an event not invented by us, but clearly falling into our vision, makes Bitcoin the first money for robots, or, if we look even deeper, it is precisely that social institution that will help the formation of robotic firms.</p>
@@ -284,8 +279,8 @@ elements in the chain of providing the user with services. In other words, where
             Let's imagine drone delivery service. If a drone, for example, is DHL's property how it can access to Amazon's warehouses or access to over the entire airspace of the city? Is it be a monopoly? This is a major challenge for many 4th industrial revolution initiatives!
           </p>
           <p class="hyphens">
-            Nearly every corporation says it needs nearly complete rights to its surroundings because they don’t know how to securely set up the exchange of technical information between automated systems outside of their own internal corporate structure. 
-            At the same time, if you look at the processes where a person works, then we see that the cooperation of different corporations is still present today. 
+            Most corporations say they need almost complete rights to its surroundings because they don’t know how to securely set up the exchange of technical information between automated systems outside of their own internal corporate structure. 
+            At the same time, if you look at the processes where a person works, then we see that the cooperation of different corporations has been long and successfully existed. 
             You can easily order door-to-door delivery of purchased goods on the Amazon website, and the courier will be able to drive a car along city roads, receive an order at the warehouse and bring it to you.
           </p>
           <p class="hyphens">
@@ -310,7 +305,7 @@ elements in the chain of providing the user with services. In other words, where
             It is quite expensive for most cases from the real economy, be it a car-sharing trip, renting a smart apartment, drone delivery or 3D printing of your favorite anime hero to order.
           </p>
           <p class="hyphens">
-            Out of fairness, we would like to note that for there are profitable scenarios even with transaction fees in the Ethereum network of 2018 - 2019. For example, automated carbon footprint offset transactions or transferring the order from the website directly to the production. 
+            Out of fairness, we would like to note that there are profitable scenarios even with transaction fees in the Ethereum network of 2018 - 2019. For example, automated carbon footprint offset transactions or transferring the order from the website directly to the production. 
             But still, for the mass application of the web3 technologies in the field of IoT, a reduction in the price that the cloud charges from the connected device is required.
           </p>
           <p class="hyphens">
@@ -403,13 +398,13 @@ elements in the chain of providing the user with services. In other words, where
 
         <div class="vision-fathers-image">
           <h2>Open questions of teleology</h2>
-          <i>and Mises's treatise</i>
+          <i>and a treatise by L. von Mises</i>
           
           <g-image alt="" src="~/assets/images/person-mises.png" />
         </div>
 
         <article class="hyphens">
-          <p>In conclusion, we would like to mention that there are questions that remain open from a global point of view. 
+          <p>In conclusion, we would like to mention questions that remain open from a global point of view. 
             What is the goal of robots?
           </p>
           <p>In fact, the economy of people is often associated with the conscientiousness of performing tasks within the framework of the contract, the desire of the parties to achieve a result, the opportunistic and altruistic behavior of the individual in society. 
