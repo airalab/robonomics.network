@@ -164,36 +164,14 @@ query {
     text-decoration: none;
   }
 
-  body {
- 
-    &:before, &:after {
-      content:"";
-      position: fixed;
-      background-color: var(--body-bg);
-      width: 100%;
-      left: 0;
-      z-index: 1000;
-    }
-
-    &:before {
-      top: 0;
-      height: var(--screen-padding-top);
-    }
-
-    &:after {
-      bottom: 0;
-      height: var(--screen-padding-bottom);
-    }
-  }
 
 .screen {
 	position: relative;
   border-style: solid;
-  border-color: var(--body-bg);
+  border-color: #fff;
   border-width: 0 var(--screen-padding-right) 0 var(--screen-padding-left);
-	background-color: var(--color-gray-light);
-  padding-top: calc(var(--screen-padding-top));
-  padding-bottom: calc(var(--screen-padding-bottom));
+  padding-top: var(--screen-padding-top);
+  padding-bottom: var(--screen-padding-bottom);
   height: 100vh;
 
 	&::-webkit-scrollbar { display: none; }
@@ -203,6 +181,21 @@ query {
 	// 		<text x="30" y="30" font-size="12" style="fill:#ccc">•</text>\
 	// 		</svg>');
 	// 		background-size: 60px 60px;
+
+  &:after {
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--screen-padding-bottom);
+    background: #fff;
+    z-index: 1000;
+  }
+}
+
+.screen-content {
+  background-color: var(--color-gray-light);
 }
 
 // for pages with banner
