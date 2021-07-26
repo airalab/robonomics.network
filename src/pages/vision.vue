@@ -279,7 +279,7 @@ elements in the chain of providing the user with services. In other words, where
             Let's imagine drone delivery service. If a drone, for example, is DHL's property how it can access to Amazon's warehouses or access to over the entire airspace of the city? Is it be a monopoly? This is a major challenge for many 4th industrial revolution initiatives!
           </p>
           <p class="hyphens">
-            Most corporations say they need almost complete rights to its surroundings because they don’t know how to securely set up the exchange of technical information between automated systems outside of their own internal corporate structure. 
+            Most corporations say they need nearly complete rights to its surroundings because they don’t know how to securely set up the exchange of technical information between automated systems outside of their own internal corporate structure. 
             At the same time, if you look at the processes where a person works, then we see that the cooperation of different corporations has been long and successfully existed. 
             You can easily order door-to-door delivery of purchased goods on the Amazon website, and the courier will be able to drive a car along city roads, receive an order at the warehouse and bring it to you.
           </p>
