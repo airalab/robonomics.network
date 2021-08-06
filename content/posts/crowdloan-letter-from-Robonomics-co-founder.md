@@ -2,7 +2,7 @@
 title: Letter from Robonomics co-founder
 date: 2021-06-28
 published: true
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
+tags: ['Tokens', 'Robonomics parachain', 'Kusama', 'Events']
 cover_image: ./images/crowdloan-letter-from-Robonomics-co-founder/crowdloan-letter-from-Robonomics-co-founder_blog.jpg
 description: "Robonomics network architect Sergey Lonshakov welcomes you to join our Polkadot ecosystem journey, crowdloan starts."
 abstract: "Robonomics network architect Sergey Lonshakov welcomes you to join our Polkadot ecosystem journey, crowdloan starts."
