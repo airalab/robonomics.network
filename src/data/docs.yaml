@@ -16,6 +16,8 @@
   options:
     - link: 'https://gateway.pinata.cloud/ipfs/QmNNdLG3vuTsJtZtNByWaDTKRYPcBZSZcsJ1FY6rTYCixQ/Robonomics_keypoint_March_2021.pdf'
       text: 'English'
+    - link: 'https://ipfs.io/ipfs/QmTMa9QxQnKEfhfqcgtnGuo3TnUvtwt57iH9VPbgSzGqHW'
+      text: 'Русский'
     - link: 'https://ipfs.io/ipfs/QmYeTLzZXff66DDbhhPWhid1b5F5JKJgjeP5hXLKbHydLw'
       text: 'Deutsche'
     - link: 'https://ipfs.io/ipfs/QmZruv1hHN2WkPntecri5vJuB1Vk24k5we4tW4NcdjRDbu'
