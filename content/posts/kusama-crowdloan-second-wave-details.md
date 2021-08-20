@@ -18,7 +18,7 @@ Below you will find the final parameters of the second crowdloan of the Robonomi
 
 During the first auctions of the Kusama network, Robonomics published a crowdloan module for the start of the 3rd auction. It was necessary to try to guess the sufficient fundraising limit. As a result, it was decided to set a collection limit of 135,000 KSM. If you look at the results of auctions from the 3rd to the 5th, then the limit was chosen, we can say with pinpoint accuracy:
 
-![An Overview of the First Five Parachain Slot Auctions on Kusama](./images/auctions-on-kusama-overview.png)
+![An Overview of the First Five Parachain Slot Auctions on Kusama](./images/kusama-crowdloan-second-wave-details/auctions-on-kusama-overview.png)
 *Source: Making History: [An Overview of the First Five Parachain Slot Auctions on Kusama](https://polkadot.network/making-history-an-overview-of-the-first-five-parachain-slot-auctions-on-kusama/)*
 
 Also, as can be seen from the statistics of the last Robonomics crowdloan company, about ~ 27,000 KSM were collected in total. Among the projects that participated in the first wave of auctions, such a volume allowed the project to be on the 7th line, i.e. become the second project among those who did not receive a slot in the first wave. In general, we are confident that the second wave of auctions should be successful not only for the Kusama chain, but also for us personally. In general, in order to successfully pass the second wave of auctions, we want to do the main thing - not to change the conditions of participation…
