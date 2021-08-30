@@ -172,7 +172,7 @@
             <p>{{$ts("Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.")}}</p>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/">
+          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/ros-smart-projects/">
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/demo/wiki-for-smart-cities.png" />
 
