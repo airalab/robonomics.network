@@ -2,6 +2,7 @@
 title: Kusama Parachain Lease Offering, April 2021
 date: 2021-04-17
 published: true
+locale: 'en'
 tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/Kusama-Parachain-auction/Kusama-Parachain-auction.jpg
 description: "Robonomics rewards the Kusama Parachain auction participants!"

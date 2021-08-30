@@ -29,6 +29,14 @@
     - link: 'https://t.me/robonomicsfr'
       text: 'Français '
 
+- title: 'Discord'
+  description: 'Technical questions & other insides.'
+  img: 'logos/discord.png'
+  buttonicon: '+'
+  options:
+    - link: 'https://discord.com/invite/5UWNGNaAUf'
+      text: 'Join chat'
+
 - title: 'Element (Riot), Robonomics technical'
   description: 'Technical questions & other insides.'
   img: 'element.png'
@@ -63,25 +71,3 @@
   options:
     - link: 'https://www.youtube.com/c/Airalab'
       text: 'Watch videos'
-
-- title: 'Google Form "Add me to Whitelist"'
-  description: 'Submit this form, if you are interested in Robonomics or XRT tokenomics. We will send you by e-mail some important news.'
-  img: 'googleform.png'
-  buttonicon: '↗'
-  options:
-    - link: 'https://forms.gle/i1mjHMfyfhyX7jEC6'
-      text: 'English'
-    - link: 'https://forms.gle/apnNsW8ZwiVxapoe7'
-      text: 'Russian'
-
-- title: 'Google Form "I have read the Robonomics whitepaper"'
-  description: 'It is important for us that you understand the basic concepts of XRT token economy. So, we ask everyone to take a short test which will reveal your understanding of Chapter 6, “Robonomics Token, XRT”. Your answers to the test will be reviewed by the Airalab team, after which you will receive an email with explanations for each answer.'
-  img: 'googleform.png'
-  buttonicon: '↗'
-  options:
-    - link: 'https://forms.gle/4XfPtG3E83FkaWbs8'
-      text: 'English'
-    - link: 'https://forms.gle/HgyqST64CNTWd9Sq5'
-      text: 'Russian'
-
-

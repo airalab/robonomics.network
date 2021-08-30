@@ -12,7 +12,7 @@
 	animation: FadeIn 0.1s var(--animation-bump) 0.1s forwards;
   }
 
-.animate-inside {
+.animate-inside, .animate-inside-fast {
 	& > * {
 		visibility: hidden;
 		opacity: 0;
@@ -39,6 +39,23 @@
 	}
 }
 
+.animate-inside-fast {
+	&.in-viewport {
+		& > * {
+			animation-delay: 0.5s;
+			animation-duration: 0.2s;
+
+			@for $i from 0 to 50 {
+				
+				&:nth-child(#{$i + 1}) {
+					animation-delay: 0.2s + 0.02*$i;
+				}
+
+			}
+		}
+	}
+}
+
 .animate:not(hr) {
 	visibility: hidden;
 	opacity: 0;
@@ -56,28 +73,28 @@
   
 @keyframes FadeOut
 	{
-	  0% {
-	    visibility: visible;
-		opacity: 1;
-	  }
-	  100% {
+		from {
+			visibility: visible;
+			opacity: 1;
+		}
+
+	  to {
 	    visibility: hidden;
 		opacity: 0;
 	  }
 	}
 
 
-@keyframes FadeIn
-	{
-	  0% {
+@keyframes FadeIn {
+	to {
+	    visibility: visible;
+		opacity: 1;
+	}
+	from {
 	    visibility: hidden;
 		opacity: 0;
 	  }
-	  100% {
-	    visibility: visible;
-		opacity: 1;
-	  }
-	}
+}
 
 
 
@@ -118,12 +135,16 @@
 		transform: translateY(0);
 	}
 
-	33.3% {
+	25% {
 		transform: translateY(-5%);
 	}
 
-	66.6% {
+	75% {
 		transform: translateY(5%);
+	}
+
+	100% {
+		transform: translateY(0);
 	}
 }
 
@@ -137,10 +158,7 @@
 }
 
 @keyframes FloatYUp {
-	0% {
-		transform: translateY(5%);
-	}
-	100%{
+	to{
 		transform: translateY(0);
 	}
 }
@@ -176,6 +194,25 @@
 	}
 	100%{
 	  background-position: 0; 
+	}
+  }
+
+
+  @keyframes typing {
+	from {
+	  width: 0
+	}
+  }
+
+  @keyframes unTyping {
+	to {
+	  width: 0
+	}
+  }
+	  
+  @keyframes blinkLine {
+	50% {
+	  border-color: transparent
 	}
   }
 

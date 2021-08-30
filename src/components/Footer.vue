@@ -1,28 +1,90 @@
 <template>
-  <footer>
+  <footer class="animate-inside" v-in-viewport.once>
+    <div class="layout layout__content">
+      <section class="grid-4">
 
-    <div class="sidetext sidetext-left">
-      <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
-      <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
+        <div>
+          <g-image aria-hidden="true" src="~/assets/images/robonomics-polkapet.png" />
+          <g-link to="https://medium.com/web3foundation/web3-foundation-grants-wave-two-recipients-16d9b996501d"><g-image aria-hidden="true" src="~/assets/images/web3_foundation_grants_badge_black_white.png" /></g-link>
+        </div>
+
+        <div>
+          <h4>Use Robonomics</h4>
+          <ul class="animate-inside" v-in-viewport.once>
+            <li><g-link to="https://dapp.robonomics.network/#/">Dapp</g-link></li>
+            <li><g-link to="https://github.com/airalab">GitHub</g-link></li>
+            <li><g-link to="https://wiki.robonomics.network/">WIKI</g-link></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contribute</h4>
+          <ul class="animate-inside" v-in-viewport.once>
+            <li><g-link to="https://wiki.robonomics.network/docs/en/contributing/">Development</g-link></li>
+            <li><g-link to="https://wiki.robonomics.network/docs/en/translate-wiki/">Translation</g-link></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="animate-inside" v-in-viewport.once>
+            <li><a @click.prevent="loadPage('/community/#docs')" href="/community/#docs">Documents</a></li>
+            <li><a @click.prevent="loadPage('/community/#token')" href="/community#token">Token</a></li>
+            <li><a @click.prevent="loadPage('/community/#science')" href="/community/#science">Science</a></li>
+            <li><a @click.prevent="loadPage('/community/#assets')" href="/community#assets">Logo and brand assets</a></li>
+            <li><a @click.prevent="loadPage('/community/#intouch')" href="/community#intouch">Contact us and community</a></li>
+          </ul>
+        </div>
+
+      </section>
+
+      <p class="footer-line align-right">© 2021 {{$ts('This site is maintained by Airalab DAO')}} {{$ts('and')}} <g-link to="https://github.com/airalab/robonomics.network">{{$ts('opened')}}</g-link> {{$ts('for your suggestions')}}.</p>
     </div>
-
   </footer>
 </template>
 
 
 <style lang="scss">
 
-.sidetext-left {
-    position:  fixed;
-    left: calc(var(--screen-padding-left)/4);
-    bottom: calc(var(--screen-padding-bottom)/1.8);
+  footer {
+    background: var(--color-darkgray);
+    border-top: 10px solid #fff;
+    color: #fff;
+    padding: calc(var(--space) * 0.5) 0;
+    font-family: var(--font-family-code);
 
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-    white-space: nowrap;
     
-    &, a {
-      &.active--exact { opacity: .5; }
+    .layout {
+      text-align: left;
+    }
+
+    h4 {
+      text-align: left;
+    }
+
+     a {
+        text-decoration: none;
+        color: #00FFFF !important;
+
+        &:hover {
+          color: #fff !important
+        }
+      }
+
+    .grid-4 > div:not(:first-child) {
+      // border-top: 1px solid var(--color-gray-mid);
+      padding: var(--space);
+      background: #333;
+
+      ul {
+        list-style: none;
+        margin-left: 0;
+      }
+    }
+
+    .footer-line {
+      padding: var(--space) 0;
+      border-top: 1px solid var(--color-gray-mid);
+      color: var(--color-gray-mid);
     }
   }
 
@@ -30,46 +92,18 @@
 
 
 <script>
-  import axios from 'axios'
-  import moment from 'moment'
 
   export default {
-    data () {
-      return {
-        release: null,
-        update: null,
-        releaseTime: null,
-        releaseLink: null
-      }
-    },
-
     methods: {
-      cookiePolicyAccepted(){
-        return this.$cookies.get('cookiePolicy');
-      },
-      cookiePolicySet(){
-        // https://www.npmjs.com/package/vue-cookies
-        // 30 day after, expire, '' current path , browser default
-        this.$cookies.config(60 * 60 * 24 * 30,'');
-        this.$cookies.set('cookiePolicy','accepted');
-        document.querySelector('#alert-cookiePolicy').style.display="none";
-      }
-    },
+      loadPage(newpath) {
+        window.location.href = newpath
 
-    async mounted () {
-      try {
-        const results = await axios.get(
-          'https://api.github.com/repos/airalab/robonomics/releases/latest'
-        )
+        if(window.location.pathname === '/community/') {
+          location.reload()
+        }
 
-        this.release = results.data;
-        this.update = this.release['published_at'];
-        this.releaseTime = moment(this.update).from();
-        this.releaseLink = this.release['html_url'];
-
-      } catch (error) {
-        console.log(error)
       }
     }
+
   }
 </script>

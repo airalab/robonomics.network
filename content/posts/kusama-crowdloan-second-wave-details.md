@@ -115,7 +115,7 @@ No plan B rewards
 
 ## Roadmap for the development of the Robonomics parachain in the Kusama network Q3 - Q4 2021
 
-Today, the Robonomics parachain is undergoing a process of further development and testing inside an up-to-date copy of Kusam, supported by the developers, called Frontier Network. By mid-September, we will have to finish checking the functionality of the update 1.1 Staking and 1.2 Treasury and Technical committee updates of the [Frontier network](/blog/robonomics-frontier/), which in turn will significantly reduce the time to implement these updates after the launch in Kusama. Also, all balances of parachain users in the Frontier network will be transferred to the Robonomics parachain managed by Kusama ASAP.
+Today, the Robonomics parachain is undergoing a process of further development and testing inside an up-to-date copy of Kusama, supported by the developers, called Frontier Network. By mid-September, we will have to finish checking the functionality of the update 1.1 Staking and 1.2 Treasury and Technical committee updates of the [Frontier network](/blog/robonomics-frontier/), which in turn will significantly reduce the time to implement these updates after the launch in Kusama. Also, all balances of parachain users in the Frontier network will be transferred to the Robonomics parachain managed by Kusama ASAP.
 
 Thus, the updated roadmap for the development of the Robonomics parachain for the period of slot leasing will look like this:
 

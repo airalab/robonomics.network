@@ -2,7 +2,7 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "'Robonomics Network Vision'"
+      :pageTitle = "$ts('Vision page title')"
       :pageDescription = "'We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution.'"
       :pageImage = "'/website_cover_vision.jpg'"
     />
@@ -24,7 +24,7 @@
           IoT applications
         </h1>
 
-        <div class="vision-subtitle"><span class="text">Robonomics network vision</span></div>
+        <div class="vision-subtitle"><span class="text">{{$ts('Vision page title')}}</span></div>
         <g-image class="vision-city" alt="You'll love the future" src="~/assets/images/city.png" />
         <div class="vision-decortext left">
           $ robonomics io<br/>

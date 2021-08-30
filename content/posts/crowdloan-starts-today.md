@@ -2,6 +2,7 @@
 title: Robonomics Crowdloan final parameters and 48 weeks roadmap
 date: 2021-06-28
 published: true
+locale: 'en'
 tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/crowdloan-starts-today/Crowdloan_final_parameters_Roadmap_blog.jpg
 # canonical_url: false

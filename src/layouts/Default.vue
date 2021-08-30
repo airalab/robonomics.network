@@ -19,12 +19,21 @@
           <div class="header-logo">
             <g-link to="/"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
           </div>
-          <nav class="header-nav sidetext">
-              <g-link to="/community#intouch">Community</g-link>
-              <g-link to="/kusama-slot">Kusama slot</g-link>
-              <g-link to="/vision">Vision</g-link>
-              <g-link to="/blog">Blog</g-link>
-          </nav>
+
+          <div class="header-side">
+
+            <nav class="header-nav sidetext">
+                <g-link to="/intro">{{$ts('Intro')}}</g-link>
+                <g-link to="/vision">Vision</g-link>
+                <!-- <g-link to="/kusama-slot">{{$ts('Crowdloan')}}</g-link> -->
+                <g-link to="/blog">{{$ts('Blog')}}</g-link>
+            </nav>
+
+            <languageSwitcher/>
+
+          </div>
+
+          
         </div>
       </header>
 
@@ -34,7 +43,10 @@
         <ClientOnly> <Footer/> </ClientOnly>
       </div>
 
-      
+      <div class="sidetext sidetext-left">
+        <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
+        <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
+      </div>
 
     </div>
   
@@ -53,58 +65,28 @@ query {
 
 <style lang="scss">
 
-  .banner-top {
-    height: var(--space-bannertop);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  // .banner-top {
+  //   height: var(--space-bannertop);
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
 
-    padding-right: var(--screen-padding-right);
-    padding-left: var(--screen-padding-right);
+  //   padding-right: var(--screen-padding-right);
+  //   padding-left: var(--screen-padding-right);
 
-    text-decoration: none;
-    overflow: hidden;
+  //   text-decoration: none;
+  //   overflow: hidden;
 
-    background-color: var(--color-red);
-    color: var(--color-light) !important;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  //   background-color: var(--color-red);
+  //   color: var(--color-light) !important;
+  //   font-weight: 500;
+  //   text-transform: uppercase;
+  //   letter-spacing: 2px;
 
-    &:hover {
-      color: #fff !important;
-    }
-  }
-
-  #banner-auction {
-    position: relative;
-    display: inline-block;
-
-    &:after {
-      content: " ++";
-      opacity: 0;
-      animation: blink 1s ease-out 0.3s forwards;
-    }
-
-    img {
-      position: absolute;
-      width: 85px;
-      left: -100px;
-      top: -10px;
-      transform: translateY(100%);
-      animation: BannerAuctionPic 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards;
-    }
-
-    @media screen and (max-width: 560px) {
-      img { display: none; }
-    }
-  }
-
-  @keyframes BannerAuctionPic {
-    to {
-      transform: translateY(0);
-    }
-  }
+  //   &:hover {
+  //     color: #fff !important;
+  //   }
+  // }
 
   .header {
     --logo-padding: 0.6rem;
@@ -147,16 +129,20 @@ query {
   }
 
 
-  @media screen and (max-width:840px) {
-    .header {
-      align-items: center;
-    }
-  }
+  // @media screen and (max-width:840px) {
+  //   .header {
+  //     align-items: center;
+  //   }
+  // }
 
   .sidetext {
     font-family: var(--font-family-code);
     font-size: calc(var(--base-font-size) * 0.8);
     text-transform: uppercase;
+
+    @media screen and (max-width: 350px) {
+      font-size: 70%;
+    }
   }
 
   .sidetext a:not(.button) {
@@ -164,9 +150,24 @@ query {
     text-decoration: none;
   }
 
+  .sidetext-left {
+    position:  fixed;
+    left: calc(var(--screen-padding-left)/4);
+    bottom: calc(var(--screen-padding-bottom)/1.8);
+
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    
+    &, a {
+      &.active--exact { opacity: .5; }
+    }
+  }
+
 
 .screen {
 	position: relative;
+  background-color: var(--color-gray-light);
   border-style: solid;
   border-color: #fff;
   border-width: 0 var(--screen-padding-right) 0 var(--screen-padding-left);
@@ -196,11 +197,24 @@ query {
 
 .screen-content {
   background-color: var(--color-gray-light);
+  // padding-bottom: var(--space);
 }
 
 // for pages with banner
-.screen.banner {
- padding-top: calc(var(--screen-padding-top) + var(--space-bannertop));
+// .screen.banner {
+//  padding-top: calc(var(--screen-padding-top) + var(--space-bannertop));
+// }
+
+.header-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > * {
+    &:not(:last-child) {
+      margin-right: var(--space);
+    }
+  }
 }
 
 </style>
@@ -208,9 +222,22 @@ query {
 
 <script>
 
+import axios from 'axios'
+import moment from 'moment'
+
 export default {
+
   components: {
-    Footer: () => import('~/components/Footer.vue')
+    Footer: () => import('~/components/Footer.vue'),
+    languageSwitcher: () => import('~/components/languageSwitcher.vue'),
+  },
+  data () {
+    return {
+      release: null,
+      update: null,
+      releaseTime: null,
+      releaseLink: null
+    }
   },
   methods: {
     BannerLink(p) {
@@ -218,6 +245,21 @@ export default {
       current = current.replace(/\/$/,'')
       return current != p
     }
-  }
+  },
+  async mounted () {
+      try {
+        const results = await axios.get(
+          'https://api.github.com/repos/airalab/robonomics/releases/latest'
+        )
+
+        this.release = results.data;
+        this.update = this.release['published_at'];
+        this.releaseTime = moment(this.update).from();
+        this.releaseLink = this.release['html_url'];
+
+      } catch (error) {
+        console.log(error)
+      }
+    }
 }
 </script>

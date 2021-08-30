@@ -2,6 +2,7 @@
 title: Robonomics Crowdloan unveils plan B to win with plan A
 date: 2021-07-02
 published: true
+locale: 'en'
 tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/kusama-crowdloan-guaranteed-rewards/Crowdloan_plan_A_B_blog.jpg
 description: "Risk-free contribution in Robonomics Crowdloan announcement. Each participant of the summer crowdloan campaign will get 3.5 XRT and an NFT Robonomics Pioneer card."

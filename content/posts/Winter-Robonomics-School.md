@@ -2,6 +2,7 @@
 title: Robonomics Winter School 2021
 date: 2021-01-13
 published: true
+locale: 'en'
 tags: ['Events']
 cover_image: ./images/robonomics-school/WS-robonomics-2021-Blog.jpg
 description: "Free online Master Classes and Lectures open for attendees. Try to build Dapps and Web Services for IoT on Polkadot Parachain in time of Robonomics Winter School 2021 (from 10 to 24 February)"

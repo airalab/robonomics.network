@@ -4,7 +4,7 @@
     <MetaInfo
       :pageTitle = "$page.post.title"
       :pageDescription = "$page.post.description"
-      :pageImage = "$page.post.cover_image.src"
+      :pageImage = "$page.post.cover_image ? $page.post.cover_image.src : ''"
       :pageImageHeight = "'576'"
     />
 

@@ -1,0 +1,23 @@
+- path: '/'
+  component: './src/pages/index.vue'
+  typename: 'page'
+  
+- path: '/vision/'
+  component: './src/pages/vision.vue'
+  typename: 'page'
+
+- path: '/kusama-slot/'
+  component: './src/pages/kusama-slot.vue'
+  typename: 'page'
+
+- path: '/community/'
+  component: './src/pages/community.vue'
+  typename: 'page'
+
+- path: '/intro/'
+  component: './src/pages/intro.vue'
+  typename: 'page'
+
+- path: '/blog/'
+  component: './src/pages/blog.vue'
+  typename: 'component'
