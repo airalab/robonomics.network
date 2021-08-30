@@ -39,7 +39,7 @@ export default {
         return this.$static.metadata.siteUrl + this.pageImage
       }
       else{
-        return this.$static.metadata.siteUrl + '/website_cover.png'
+        return this.$static.metadata.siteUrl + '/website_cover.jpg'
       }
     },
 
