@@ -18,6 +18,7 @@
     "@polkadot/util-crypto": "^6.10.1",
     "axios": "^0.21.1",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-remark-prismjs-all": "^0.4.8",
     "gridsome-plugin-translateit": "^1.0.7",
     "gridsome-scroll-reveal": "^1.0.11",
     "gridsome-source-github-api": "^0.2.0",
