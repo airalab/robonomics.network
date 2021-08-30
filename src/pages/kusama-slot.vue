@@ -32,8 +32,14 @@
             </div>
 
             <div>
-                <div class="text-huge"><b>{{info_contributed}} KSM</b></div>
-                <p>{{$ts('Crowdloan2 banner from')}} {{info_count}} {{$ts('Crowdloan2 banner contributors so far')}}</p>
+                <div class="text-huge"><b>
+                  <template v-if="info_contributed > 0">{{info_contributed}}</template> 
+                  <template v-else><span class="loader-text"></span></template> 
+                KSM</b></div>
+                <p>{{$ts('Crowdloan2 banner from')}} 
+                  <template v-if="info_count > 0">{{info_count}}</template> 
+                  <template v-else><span class="loader-text-s"></span></template> 
+                  {{$ts('Crowdloan2 banner contributors so far')}}</p>
                 <div class="text-little">{{$ts('Robonomics Parathread ID')}} = 2077</div>
                 <div class="text-little"><g-link to="https://kusama.network/auctions/">{{$ts('About Kusama auctions')}}</g-link></div>
               </div>
@@ -784,6 +790,37 @@
     padding-top: calc(var(--space) * 3);
     padding-bottom: calc(var(--space) * 3);
   }
+
+  .loader-text, .loader-text-s {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.541);
+
+    animation: 0.8s spin ease-in-out infinite;
+  }
+
+  .loader-text-s {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+  }
+
+  @keyframes spin
+  {
+    0%
+      {
+        transform:rotate(0deg);
+      }
+    100%
+      {
+        transform:rotate(360deg);
+      }
+  }
+
   /*end BASICS*/
 
   /* AUCTION PARTICIPATION */
