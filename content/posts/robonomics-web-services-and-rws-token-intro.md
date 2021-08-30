@@ -2,6 +2,7 @@
 title: Robonomics Web Services and RWS token intro
 date: 2021-02-25
 published: true
+locale: 'en'
 tags: ['RWS', 'Tokens', 'Robonomics parachain']
 cover_image: ./images/robonomics-web-services-and-rws-token-intro/logo.jpeg
 description: "Meet the first RWS IoT Core services. Decentralized infrastructure services over IPFS, Ethereum, and Polkadot for Robotics and IoT. For industrial, consumer, and commercial solutions"

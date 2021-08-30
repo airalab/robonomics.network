@@ -2,6 +2,7 @@
 title: Robonomics Hackathon v0&#58; building a smart place
 date: 2021-04-13
 published: true
+locale: 'en'
 tags: ['smart place', 'Robonomics hackathon']
 cover_image: ./images/robonomics-hackathon/Hackathon_BLOG.jpg
 description: "We are launching our first online hackathon from April 9th to May 2d, 2021! Check out the details."

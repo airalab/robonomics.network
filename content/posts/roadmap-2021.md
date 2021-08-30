@@ -2,6 +2,7 @@
 title: Trajectory of Robonomics Development 2021, Part 1
 date: 2021-02-18
 published: true
+locale: 'en'
 tags: ['Roadmap', 'Robonomics parachain']
 cover_image: ./images/roadmap-2021/1.jpg
 # canonical_url: false

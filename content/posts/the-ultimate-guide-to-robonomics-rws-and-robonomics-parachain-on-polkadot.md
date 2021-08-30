@@ -2,6 +2,7 @@
 title: The ultimate guide to Robonomics, RWS and Robonomics parachain on Polkadot
 date: 2021-02-25
 published: true
+locale: 'en'
 tags: ['RWS', 'Tokens', 'Robonomics parachain']
 cover_image: ./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-logo.jpg
 description: "This article delves into the connection between Robonomics platform, its parachain on the Polkadot ecosystem and the Robonomics Web Services (RWS)"

@@ -4,6 +4,9 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const yaml = require('js-yaml')
+const fs   = require('fs')
+
 module.exports = {
   siteName: 'Robonomics Network',
   siteDescription: 'Futuristic, secure, and server-less IoT platform on top of Ethereum && Polkadot. Bringing economy of robots into the 4th industrial revolution.',
@@ -19,7 +22,8 @@ module.exports = {
       options: {
         typeName: "Post",
         baseDir: "content/posts",
-        route: '/blog/:path',
+        // route: '/blog/:path',
+        pathPrefix: '/blog',
         template: './src/templates/Post.vue',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
@@ -67,6 +71,17 @@ module.exports = {
         ]
       }
     },
+
+    {
+      use: "gridsome-plugin-translateit",
+      options: {
+        locales: ["en", "ru", "zh"],
+        defaultLocale: "en",
+        translations: yaml.load(fs.readFileSync('./src/data/locales/translations.yaml', 'utf8')),
+        collections: ['blog'],
+        routes: yaml.load(fs.readFileSync('./src/data/locales/routes.yaml', 'utf8')),
+      }
+    },
     
   ],
 
@@ -77,4 +92,4 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
   }
-}
+};

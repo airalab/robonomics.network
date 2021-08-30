@@ -2,6 +2,7 @@
 title: XRT token distribution Q2 2021 - Q1 2022
 date: 2021-03-18
 published: true
+locale: 'en'
 tags: ['XRT', 'Tokens', 'Robonomics parachain']
 cover_image: ./images/XRT-distribution/Release_Blog.jpg
 description: "Article provides a deep dive into the XRT distribution plan"

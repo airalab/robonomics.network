@@ -2,6 +2,7 @@
 title: Robonomics Network x Ocean Protocol Collaboration p.1
 date: 2021-01-12
 published: true
+locale: 'en'
 tags: ['Collaborations']
 cover_image: ./images/OCEAN-p1/Robonomics_Ocean_1.jpg
 # canonical_url: false

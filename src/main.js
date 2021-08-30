@@ -16,24 +16,12 @@ Vue.use(VueCookies)
 
 
 export default function (Vue, { router, head, isClient }) {
-  head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
+  // head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
 
   if (isClient) {
-    if (
-      global.location.pathname === "/en/" ||
-      global.location.pathname === "/en"
-    ) {
-      global.location.href = global.location.origin;
-    }
-
     const vueSmoothScroll = require('vue2-smooth-scroll').default;
     Vue.use(vueSmoothScroll);
   }
   // Set default layout as a global component
   Vue.component('layout', Default)
-
-  // head.script.push({
-  //   src: "https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit",
-  //   body: true
-  // })
 }

@@ -1,0 +1,1151 @@
+# Basics
+
+- alias: Robonomics network
+  en: Robonomics network
+  ru: Сеть Робономика
+
+# this means email 'contact us at email@address'
+- alias: contact us at
+  en: contact us at
+  ru: пишите на email
+
+- alias: or
+  en: or
+  ru: или
+
+- alias: and
+  en: and
+  ru: и
+  zh: 和
+
+- alias: send
+  en: send
+  ru: отправьте
+
+- alias: opened
+  en: opened
+  ru: открыт
+  zh: 打开
+
+- alias: Sergei Lonshakov
+  en: Sergei Lonshakov
+  ru: Сергей Лоншаков
+  zh: Sergei Lonshakov
+
+- alias: software architect
+  en: software architect
+  ru: архитектор ПО
+  zh: 件架构师
+
+- alias: Norbert Wiener
+  en: Norbert Wiener
+  ru: Норберт Винер
+  zh: 诺伯特·维纳
+
+- alias: cybernetics
+  en: cybernetics
+  ru: кибернетика
+  zh: 控制论
+
+- alias: Digital twin
+  en: Digital twin
+  ru: Цифровой двойник
+
+- alias: IoT Device
+  en: IoT Device
+  ru: IoT устройство
+  zh: 物联网设备
+
+- alias: Robonomics tools
+  en: Robonomics tools
+  ru: Инструменты Робономики
+  zh: Robonomics包含内容 # this is most Robonomics contains, needs to be translated
+
+- alias: Robonomics Connectivity
+  en: Robonomics Connectivity
+  ru: Совместимость Робономики
+  zh: Robonomics互连性
+
+- alias: economy of robots
+  en: economy of robots
+  ru: экономика роботов
+  zh: 机器人经济
+
+
+# Top navigation
+
+- alias: Intro
+  en: Intro
+  ru: Введение
+  zh: 介绍
+
+- alias: Crowdloan
+  en: Crowdloan
+  ru: Crowdloan
+  zh: 众贷
+
+- alias: Blog
+  en: Blog
+  ru: Блог
+  zh: 博客
+
+# Footer
+
+- alias: This site is maintained by Airalab DAO
+  en: This site is maintained by Airalab DAO
+  ru: Этот сайт поддерживается Airalab DAO
+  zh: 本网站由 Airalab DAO 维护
+
+- alias: for your suggestions
+  en: for your suggestions
+  ru: для ваших предложений
+  zh: 对于您的建议
+
+
+# 404
+
+- alias: 404_title
+  en: This page not found
+  ru: Страница не найдена
+  zh: 未找到此页面
+
+- alias: 404string_1
+  en: There can be many reasons for this, for example
+  ru: У этого может быть много причин, например
+  zh: 这可能有很多原因，例如
+
+- alias: 404reason_1
+  en: there is a typo in the URL
+  ru: в url опечатка
+  zh: 网址中有一个错字
+
+- alias: 404reason_2
+  en: such a page has never existed
+  ru: такой страницы никогда не существовало
+  zh: 这样的页面从未存在过
+
+- alias: 404reason_3
+  en: the page was deleted for some reason or the content was merged with another page
+  ru: страницу по какой-то причине удалили или совместили контент с другой страницей
+  zh: 页面因某种原因被删除或内容与另一个页面合并
+
+- alias: This page may need translation
+  en: This page may need to be translated
+  ru: Возможно, эта страница нуждается в переводе
+  zh: 此页面可能需要翻译
+
+- alias: If you want to help us with translation
+  en: If you want to help us translate
+  ru: Если вы хотите помочь нам с переводом
+  zh: 如果您想帮助我们进行翻译
+
+
+# BLOG
+
+- alias: Robonomics blog
+  en: Robonomics blog
+  ru: Блог Робономики
+  zh: Robonomics博客
+
+- alias: No posts yet
+  en: No posts yet
+  ru: Пока нет публикаций
+  zh: 还没有帖子
+
+
+# INDEX
+
+- alias: Meta title Index
+  en: Home
+  ru: Главная
+  zh: 主页
+
+- alias: Meta description Index
+  en: Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user’s privacy.
+  ru: Робономика - это децентрализованное облако хранения цифровых двойников IoT устройств, поддерживающее технико-экономический формат коммуникации машин и людей и приватные приложения пользователей.
+  zh: Robonomics 是一个分散的物联网设备数字孪生存储云，支持机器与人以及私人用户应用程序之间的技术经济通信格式。
+
+- alias: Get started GetStartedBlock
+  en: Get started
+  ru: Начало
+  zh: 开始
+
+- alias: Explore Robonomics GetStartedBlock
+  en: Explore Robonomics
+  ru: Откройте для себя Робономику
+  zh: 探索Robonomics
+
+- alias: Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more
+  en: Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more
+  ru: Робономика - доступная для всех технология с открытым исходным кодом для рынка IoT. Узнайте больше
+  zh: Robonomics 是一项面向物联网市场的开源技术，可供所有人使用。 阅读执行摘要以了解更多信息
+
+- alias: Get XRT GetStartedBlock
+  en: Get XRT
+  ru: Токен XRT
+  zh: 获取 XRT
+
+- alias: XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain
+  en: XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain
+  ru: XRT - протокольный токен, который позволяет управлять IoT-устройствами поверх сети Ethereum и парачейна Робономики
+  zh: XRT 是一种实用代币，可以控制以太坊网络和 Robonomics 平行链上的物联网设备
+
+- alias: Use a dapp GetStartedBlock
+  en: Use a dapp
+  ru: Используйте Dapp
+  zh: 使用 dapp
+
+- alias: Take a look at the Beta version of decentralized application for managing IoT devices
+  en: Take a look at the Beta version of decentralized application for managing IoT devices
+  ru: Взгляните на бета-версию децентрализованного приложения для управления IoT-устройствами
+  zh: 查看用于管理 IoT 设备的去中心化应用程序的 Beta 版
+
+- alias: Start building GetStartedBlock
+  en: Start building
+  ru: Попробуйте на практике
+  zh: 开始搭建
+
+- alias: Learn Robonomics through tutorials and practically useful experimenting in Robonomics WIKI
+  en: Learn Robonomics through tutorials and practically useful experimenting in Robonomics WIKI
+  ru: Изучите Робономику с помощью учебных пособий и практически полезных экспериментов в WIKI Робономики
+  zh: 通过教程和 Robonomics WIKI 中的实用实验学习 Robonomics
+
+- alias: Robonomics objectives
+  en: Robonomics objectives
+  ru: Задачи Робономики
+  zh: Robonomics 目标
+
+- alias: Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed
+  en: Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed
+  ru: Опираясь на достижения облачных платформ, Робономика ставит своей задачей предложить IoT-рынку более безопасные и продвинутые интернет решения на каждом этапе коммуникации человека и машины. Ниже приводятся основные задачи, для которых Робономика разрабатывается
+
+- alias: IoT device management with a decentralized cloud
+  en: IoT device management with a decentralized cloud
+  ru: Управление IoT-устройством с помощью децентрализованного облака
+  zh: 使用分散式云进行物联网设备管理
+
+- alias: Blockchain networks have all the parameters to ensure the highest level of security for device launch and receiving telemetry. Interaction with a device can actually be described by changing the state of the digital twin stored in the blockchain network and delivering information about these changes to the physical device. In the case of using a permissionless blockchain, we can be sure of the global availability of providers, as well as a high level of data protection of the digital twin from unwanted changes.
+  en: Blockchain networks have all the parameters to ensure the highest level of security for device launch and receiving telemetry. Interaction with a device can actually be described by changing the state of the digital twin stored in the blockchain network and delivering information about these changes to the physical device. In the case of using a permissionless blockchain, we can be sure of the global availability of providers, as well as a high level of data protection of the digital twin from unwanted changes.
+  ru: Блокчейн сети обладают всеми параметрами для обеспечения наивысшей степени безопасности запуска устройства и получения телеметрии. Взаимодействие с устройством фактически можно описать изменением состояния цифрового двойника, хранящегося в блокчейн сети, и доставкой информации об изменениях физическому устройству. В случае использования permissionless blockchain мы можем быть уверены в глобальной доступности провайдеров, а также высоком уровне защиты данных цифрового двойника от нежелательных изменений.
+
+- alias: Techno-economic transactions between humans and machines
+  en: Techno-economic transactions between humans and machines
+  ru: Технико-экономические транзакции между людьми и машинами
+  zh: 人与机器之间的技术经济交易
+
+- alias: We can talk about institutional achievements in terms of access of automated systems directly to digital markets through cryptocurrencies and smart contracts. For example, Ethereum already implements most of the basic tools of economic activity. The applications created today to connect the end user and IoT devices will be much more efficient if the payment and terms of service are inseparable from the launch parameters of the device.
+  en: We can talk about institutional achievements in terms of access of automated systems directly to digital markets through cryptocurrencies and smart contracts. For example, Ethereum already implements most of the basic tools of economic activity. The applications created today to connect the end user and IoT devices will be much more efficient if the payment and terms of service are inseparable from the launch parameters of the device.
+  ru: Мы можем говорить об институциональных достижениях в плане доступа автоматических систем напрямую к цифровым рынкам посредством криптовалют и умных контрактов. Например, Ethereum уже реализует большинство базовых инструментов экономической деятельности. Приложения, создаваемые сегодня для связи конечного пользователя и IoT-устройства, будут намного эффективнее, если оплата и условия оказания услуги будут неразрывны с параметрами запуска устройства.
+
+- alias: Serverless IoT applications for users
+  en: Serverless IoT applications for users
+  ru: Serverless IoT-приложения пользователей
+
+- alias: The question of the privacy of users of modern applications should not be stuck in the inability of companies to use modern advances in the field of web3. There is no need to authenticate or require connection to specific servers to access telemetry and control the device.
+  en: The question of the privacy of users of modern applications should not be stuck in the inability of companies to use modern advances in the field of web3. There is no need to authenticate or require connection to specific servers to access telemetry and control the device.
+  ru: Вопрос приватности пользователей современных приложений не должен утыкаться в неумение компаний использовать современные достижения из области web3. Нет необходимости производить аутентификацию или требовать подключения к конкретным серверам для доступа к телеметрии и управления устройством.
+
+- alias: What you can build with Robonomics right now
+  en: What you can build with Robonomics right now
+  ru: Что вы можете построить с помощью Робономики прямо сейчас
+
+- alias: Control Mars Curiosity rover
+  en: Control Mars Curiosity rover
+  ru: Управляйте марсоходом Curiosity
+
+- alias: Make Mars Curiosity rover move under Robonomics Parachain control
+  en: Make Mars Curiosity rover move under Robonomics Parachain control
+  ru: Заставьте марсоход Curiosity двигаться под контролем парачейна Робономики
+
+- alias: Connect ROS-compatibale Drone
+  en: Connect ROS-compatibale Drone
+  ru: Подключите ROS-совместимый дрон
+
+- alias: You can control any ROS-compatitable robot with Robonomics parachain control
+  en: You can control any ROS-compatitable robot with Robonomics parachain control
+  ru: Вы можете управлять любым ROS-совместимым роботом с помощью парачейна Робономики
+
+- alias: Launch Kuka manipulator
+  en: Launch Kuka manipulator
+  ru: Запустите манипулятор Kuka
+
+- alias: Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.
+  en: Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.
+  ru: Отправьте транзакцию в парачейне Робономики, запустите манипулятор Kuka и получите телеметрию робота в IPFS.
+
+- alias: ROS-based Projects for Smart Spaces
+  en: ROS-based Projects for Smart Spaces
+  ru: Проекты на базе ROS для умных пространств
+
+- alias: Here, you’ll find a modest list of ROS-based projects that are dedicated to robots and IoT-devices that are meant for use in a home or office environment
+  en: Here, you’ll find a modest list of ROS-based projects that are dedicated to robots and IoT-devices that are meant for use in a home or office environment
+  ru: Здесь вы найдете скромный список проектов на базе ROS, посвященных роботам и IoT-устройствам, которые предназначены для использования в домашних или офисных условиях.
+  
+
+# Vision page
+
+- alias: Vision page title
+  en: Robonomics network vision
+  ru: Концепция сети Робономика
+
+
+# Intro
+
+- alias: Intro for devs
+  en: Building Dapps && Web Services for IoT on Robonomics Parachain
+  ru: Создание децентрализованных приложений и веб-сервисов для Интернета вещей на парачейне Робономики
+  zh: 在Robonomics平行链上构建物联网去中心化应用 (DApp) 和Web服务
+
+- alias: Let us remember that the automatic machine is the precise economic equivalent of slave labor. Any labor which competes with slave labor must accept the economic consequences of slave labor.
+  en: Let us remember that the automatic machine is the precise economic equivalent of slave labor. Any labor which competes with slave labor must accept the economic consequences of slave labor.
+  ru: Давайте вспомним, что робот - это точный экономический эквивалент рабского труда. Любой труд, конкурирующий с рабским, должен принять экономические последствия рабского труда.
+  zh: 我们不要忘记，自动机器在经济上完全等同于被奴役的劳动力。任何 与被奴役劳动力竞争的劳动力都必须接受被奴役劳动力的经济后果。
+
+- alias: Robots are like grown-up children today – they already can manage money, and enter into legal relations, be independent.
+  en: Robots are like grown-up children today – they already can manage money, and enter into legal relations, be independent.
+  ru: Сегодня роботы похожи на повзрослевших детей - они уже могут управлять деньгами, вступать в правоотношения, быть независимыми.
+  zh: 如今，机器人就像已经长大的孩子——它们已经可以管理金钱，进入法务部门，并能独立运作。
+
+- alias: The future of humanity itself depends on how we teach robots to handle their capabilities.
+  en: The future of humanity itself depends on how we teach robots to handle their capabilities.
+  ru: Будущее человечества зависит от того, как мы научим роботов управлять своими возможностями.
+  zh: 人类自身的未来取决于我们如何教机器人处理它们的能力。
+
+- alias: What is Robonomics?
+  en: What is Robonomics?
+  ru: Что такое Робономика?
+  zh: 什么是Robonomics？
+
+- alias: Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
+  en: Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
+  ru: Робономика - это платформа с открытым исходным кодом для приложений Интернета вещей. Мы поддерживаем новое поколение интернет-технологий (web3), которые реализуют обмен технической и экономической информацией в форме атомарных транзакций между пользовательскими приложениями, сервисами Интернета вещей и сложной робототехникой.
+  zh: Robonomics是一个用于物联网应用的开源平台。我们支持新一代互联网技术 (web3)，这些技术在用户应用程序、物联网服务和复杂机器人之间以原子交易的形式实现技术和经济信息的交换。
+
+- alias: User (D)App
+  en: User (D)App
+  ru: Приложение
+
+- alias: Function request
+  en: Function request
+  ru: Запрос
+
+- alias: Report
+  en: Report
+  ru: Отчет
+
+- alias: Control
+  en: Control
+  ru: Действие
+
+- alias: Log
+  en: Log
+  ru: Лог
+
+- alias: Operate with digital twins of IoT devices
+  en: Operate with digital twins of IoT devices
+  ru: Работа с цифровыми двойниками IoT-устройств
+  zh: 使用物联网设备的数字孪生进行操作
+
+- alias: The first tools of the robot economy
+  en: "The first tools of the robot economy: money for robots, contracts for robots"
+  ru: "Первые инструменты экономики роботов: деньги и контракты для роботов"
+  zh: "机器人经济学的第一个工具：机器人的资金，机器人的合同"
+
+- alias: Software for connecting devices to a decentralized cloud
+  en: Software for connecting devices to a decentralized cloud
+  ru: ПО для подключения устройств к децентрализованному облаку
+  zh: 用于将设备连接到去中心化云端的软件
+
+- alias: API library for custom IoT applications
+  en: API library for custom IoT applications
+  ru: Библиотека API для пользовательских приложений Интернета вещей
+  zh: 定制物联网应用程序的API库
+
+- alias: Robonomics contains a complete set of tools for developing IoT applications, both on the robotics and the user interface sides. Communication between the user and device happens using the most successful technologies from the Web3 world – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure applications for Smart Cities and Industry 4.0.
+  en: Robonomics contains a complete set of tools for developing IoT applications, both on the robotics and the user interface sides. Communication between the user and device happens using the most successful technologies from the Web3 world – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure applications for Smart Cities and Industry 4.0.
+  ru: Робономика содержит полный набор инструментов для разработки приложений Интернета вещей, как для робототехники, так и для пользовательского интерфейса. Связь между пользователем и устройством происходит с использованием самых успешных технологий из мира Web3 - IPFS, Ethereum и Polkadot. Таким образом, разработчики могут создавать современные и безопасные приложения для умных городов и Индустрии 4.0.
+  zh: Robonomics包含用于在机器人和用户界面端开发物联网应用程序的一整套工具。用户和设备之间的通信使用Web3世界中最成功的技术——IPFS、以太坊和Polkadot。因此，开发人员可以为智慧城市和工业4.0打造现代化的安全应用程序。
+
+- alias: Robonomics contains a set of software for connecting
+  en: "For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS)."
+  ru: "Для удобства разработчиков Робономика содержит набор ПО для подключения: устройств Интернета вещей, использующих протокол HTTP/MQTT, сложных роботизированных систем, использующих операционную систему роботов (ROS)."
+  zh: "为了方便开发人员，Robonomics包含一整套互连性工具：使用HTTP/MQTT协议的物联网设备，使用机器人操作系统 (ROS) 的复杂机器人系统。"
+
+- alias: Connect a sensor
+  en: Connect a sensor
+  ru: Подключите сенсор
+  zh: 连接传感器
+
+- alias: to the Robonomics network
+  en: to the Robonomics network
+  ru: к сети Робономика
+  zh: 与Robonomics网络建立连接。
+
+- alias: Try
+  en: Try
+  ru: Попробуйте
+  zh: 试用
+
+- alias: a simple prototyping tool
+  en: a simple prototyping tool
+  ru: простой инструмент для создания прототипов
+  zh: 简单的原型制作工具
+
+- alias: Start building your own cyber physical system with
+  en: Start building your own cyber physical system with
+  ru: Начните строить свою кибер-физическую систему с
+  zh: 开始使用构建您自己的网络物理系统
+
+- alias: Aira OS
+  en: Aira OS
+  ru: Aira ОС
+  zh: Aira OS
+
+- alias: Robonomics Supports Hundreds of Robots Out of the Box
+  en: Robonomics Supports Hundreds of Robots Out of the Box
+  ru: Робономика поддерживает сотни роботов из коробки
+  zh: Robonomics支持上百种机器人开箱即用
+
+- alias: Platform users can connect ROS-compatible robots to digital economy in a matter of minutes. For a complete list of supported robots, please follow the link
+  en: Platform users can connect ROS-compatible robots to digital economy in a matter of minutes. For a complete list of supported robots, please follow the link
+  ru: Пользователи платформы могут подключить роботов, совместимых с ROS, к цифровой экономике за считанные минуты. Чтобы увидеть полный список поддерживаемых роботов, перейдите по ссылке
+  zh: 平台用户可以将兼容ROS的机器人在数分钟内连接至数字经济。如需了解适用的机器人完整列表，请访问链接
+
+- alias: Decentralized Cloud infrastructure for IoT
+  en: Decentralized Cloud infrastructure for IoT
+  ru: Децентрализованная структура облака для Интернета вещей
+  zh: 适用于物联网的去中心化云基础架构
+
+- alias: Robonomics Web Services (RWS) is the basic infrastructural service for Robotics and IoT on top of Robonomics Parachain and IPFS
+  en: Robonomics Web Services (RWS) is the basic infrastructural service for Robotics and IoT on top of Robonomics Parachain and IPFS
+  ru: Веб-сервисы Робономики (RWS) - это базовый инфраструктурный сервис для робототехники и Интернета вещей на основе парачейна Робономики и IPFS
+  zh: Robonomics Web服务 (RWS) 是基于Robonomics平行链和IPFS的机器人和物联网基础架构服务。
+
+- alias: Core RWS features available for IoT today
+  en: Core RWS features available for IoT today
+  ru: Основные функции RWS, доступные для Интернета вещей сегодня
+  zh: 适用于当今物联网的核心RWS功能
+
+- alias: RWS PubSub Message Broker
+  en: RWS PubSub Message Broker
+  ru: Брокер сообщений RWS PubSub
+  zh: RWS PubSub消息代理。
+
+- alias: RWS Data Blockchainization Service
+  en: RWS Data Blockchainization Service
+  ru: Сервис RWS для блокчейнизации данных
+  zh: RWS：数据区块链化服务。
+
+- alias: RWS Robot Actions
+  en: RWS Robot Actions
+  ru: Действия роботов с RWS
+  zh: RWS：机器动作。
+
+- alias: Use unlimited messaging over a p2p network based on IPFS protocol
+  en: Use unlimited messaging over a p2p network based on IPFS protocol
+  ru: Используйте неограниченный обмен сообщениями по сети p2p на основе протокола IPFS
+  zh: 在基于IPFS协议的p2p网络上使用无限制的消息传递。
+
+- alias: Put data into IPFS and store hashes in a public Blockchain
+  en: Put data into IPFS and store hashes in a public Blockchain
+  ru: Помещайте данные в IPFS и храните хэши в публичной цепочке блоков
+  zh: 将数据存放到IPFS并在公共区块链中储存其哈希值。
+
+- alias: Switch on / off; launch or stop your IoT devices under the control of a decentralized computer
+  en: Switch on / off; launch or stop your IoT devices under the control of a decentralized computer
+  ru: Запускайте и останавливайте свои IoT-устройства под управлением децентрализованного компьютера
+  zh: 开关开启/关闭；在去中心化的电脑控制下启动或停止您的物联网设备。
+
+- alias: Heart of Your IoT Application - Digital Twin on Blockchain
+  en: Heart of Your IoT Application - Digital Twin on Blockchain
+  ru: Сердце вашего IoT-приложения - цифровой двойник на блокчейне
+  zh: 您物联网应用程序的核心 - 区块链上的数字孪生
+
+- alias: In the technical architecture, IoT digital twins provide the visibility and monitoring of things and related events (e.g., using IoT devices to automatically capture the origin of a product), and blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events
+  en: In the technical architecture, IoT digital twins provide the visibility and monitoring of things and related events (e.g., using IoT devices to automatically capture the origin of a product), and blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events
+  ru: В технической архитектуре цифровые двойники IoT обеспечивают видимость и мониторинг вещей и связанных с ними событий (например, с помощью устройств IoT для автоматического определения происхождения продукта), а блокчейн позволяет поделиться единой версией истины о состоянии этих вещей на протяжении их жизненных циклов и связанных с ними бизнес-событий
+  zh: 在技术架构中，物联网数字孪生提供了物和相关活动的可见性和监控（例如：使用物联网设备自动捕获产品的源产地），而区块链支持共享单一版本的真相，以了解它们的生命周期和相关的业务活动。
+
+- alias: from Gartner research
+  en: from Gartner research
+  ru: из исследования Gartner
+  zh: 来自Gartner（高德纳）研究报告
+
+- alias: Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.
+  en: Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.
+  ru: Парачейн Робономики дает возможность создать модель цифрового двойника и обновлять ее состояние каждые 6 секунд.
+  zh: Robonomics平行链提供了机会，可以创建数字孪生模型并每6秒更新一次状态。
+
+- alias: App Store for Robotics - Robonomics Marketplace
+  en: App Store for Robotics - Robonomics Marketplace
+  ru: Магазин приложений для робототехники - торговая площадка Робономики
+  zh: 机器人的应用商店 - Robonomics Marketplace
+
+- alias: Companies that design and manufacture IoT-connected products and equipment should adopt a flexible digital twin delivery model to lower barriers to adoption, such as offering digital twins via marketplaces, rather than only offering digital twins via their own, proprietary, delivery model
+  en: Companies that design and manufacture IoT-connected products and equipment should adopt a flexible digital twin delivery model to lower barriers to adoption, such as offering digital twins via marketplaces, rather than only offering digital twins via their own, proprietary, delivery model
+  ru: Компании, которые разрабатывают и производят продукты и оборудование, подключаемые к Интернету вещей, должны принять гибкую модель доставки цифровых двойников, чтобы снизить барьеры для внедрения. Например, предлагать цифровых двойников через торговые площадки, а не только через их собственную запатентованную модель доставки
+  zh: 设计和制造物联网连接产品和设备的公司应采用灵活的数字孪生交付模式来降低采用障碍（例如通过市场提供）数字孪生，而不是仅通过他们自己的专有交付模型提供数字孪生。
+
+- alias: The developed digital twin model can be directly linked with additional services that your company provides for the IoT industry.
+  en: The developed digital twin model can be directly linked with additional services that your company provides for the IoT industry.
+  ru: Разработанную модель цифрового двойника можно напрямую связать с дополнительными услугами, которые ваша компания предоставляет для индустрии Интернета вещей.
+  zh: 开发数字孪生模型可以直接与您的公司为物联网行业提供的附加服务相关联
+
+- alias: To make a delivery process convenient and simple for hundreds of customers, we have added a section of the services for robots marketplace. Take a look at the first examples of the implemented bundles of digital twin model + company automated service.
+  en: To make a delivery process convenient and simple for hundreds of customers, we have added a section of the services for robots marketplace. Take a look at the first examples of the implemented bundles of digital twin model + company automated service.
+  ru: Чтобы сделать процесс доставки удобным и простым для сотен клиентов, мы добавили раздел сервисов для торговой площадки роботов. Ознакомьтесь с первыми примерами реализованных связок модель цифрового двойника + автоматизированный сервис компании.
+  zh: 为了使数百名客户的交付过程更加方便和简单，我们为机器人市场添加了一部分服务。查看已实施的数字孪生模型和公司自动化服务捆绑包的第一个示例。
+
+- alias: You've got an idea for your service for robots or users? Then proceed to the step-by-step instructions for building your IoT application on the Robonomics platform.
+  en: You've got an idea for your service for robots or users? Then proceed to the step-by-step instructions for building your IoT application on the Robonomics platform.
+  ru: У вас есть идея для вашего сервиса для роботов или пользователей? Тогда переходите к пошаговым инструкциям по созданию своего IoT-приложения на платформе Робономики.
+  zh: 您有为机器人或用户提供服务的想法吗？然后继续执行在Robonomics平台上构建物联网应用程序的分步说明。
+
+
+
+# kusama-slot (Crowdloan 2nd wave)
+
+- alias: Crowdloan for Robonomics on Kusama 2nd wave
+  en: Crowdloan for Robonomics on Kusama 2nd wave
+  ru: Краудлоан для Робономики на Kusama, вторая волна
+  zh: Robonomics开启Kusama的第二轮众贷
+
+- alias: Crowdloan Description
+  en: Robonomics integrates Polkadot technologies into the IoT market. Support Robonomics in the Kusama slots auction, let's go to the future together
+  ru: Робономика интегрирует технологии Polkadot на рынок IoT. Поддержите Робономику на аукционе слотов Kusama, давайте строить будущее вместе
+  zh: Robonomics将波卡技术融入物联网市场。支持Robonomics的Kusama插槽拍卖，共同迈向未来
+
+- alias: Get annual staking return
+  en: Get annual staking return
+  ru: Получите годовой доход от стейкинга
+  zh: 年度质押回报率
+
+- alias: at current price
+  en: at current price
+  ru: по текущей цене
+  zh: 现价
+
+- alias: Contribute
+  en: Contribute
+  ru: Участвовать
+  zh: 贡献
+
+- alias: Crowdloan2 banner from
+  en: from
+  ru: от
+  zh: 迄今已有
+
+- alias: Crowdloan2 banner contributors so far
+  en: contributors so far
+  ru: участников на данный момент
+  zh: 位贡献者
+
+- alias: Robonomics Parathread ID
+  en: Robonomics Parathread ID
+  ru: ID паратреда Робономики
+  zh: Robonomics平行线程ID
+
+- alias: About Kusama auctions
+  en: About Kusama auctions
+  ru: Об аукционах Kusama
+  zh: 关于Kusama拍卖
+
+- alias: For each KSM. This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain
+  en: For each KSM. This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain
+  ru: За каждый KSM. Это примерно в 1,5 раза выгоднее, чем стейкинга KSM в Kusama Relay Chain
+  zh: 对于每个KSM。利润比Kusama中继链中的KSM质押高约1.5倍。
+
+- alias: Increased reward for participants in the collection of the first 35,000 KSM
+  en: Increased reward for participants in the collection of the first 35,000 KSM
+  ru: Повышенное вознаграждение для участников при сборе первых 35,000 KSM
+  zh: 增加首批35,000 KSM参与者的奖励
+
+- alias: Total collection limit. This strategy will help to launch Robonomics parachain at the lowest price for end users
+  en: Total collection limit. This strategy will help to launch Robonomics parachain at the lowest price for end users
+  ru: Общий лимит сбора. Эта стратегия поможет запустить парачейн Робономики по самой низкой цене для конечных пользователей.
+  zh: 总收集限额。该策略将有助于以最低价格为最终用户推出Robonomics平行链。
+
+- alias: Quick rewards
+  en: Quick rewards
+  ru: Быстрые вознаграждения
+  zh: 快速奖励
+
+- alias: You can get 50% of reward in the first month after the launch of the network
+  en: You can get 50% of reward in the first month after the launch of the network
+  ru: 50% вознаграждения будут доступны в первый месяц после запуска сети
+  zh: 网络上线后第一个月即可获得50%的奖励
+
+- alias: Exclusive APR up to 100%
+  en: Exclusive APR up to 100%
+  ru: Эксклюзивный APR до 100%
+  zh: 高达100%的专属APR
+
+- alias: Full reward will be received after one year of staking with increased income up to 100%
+  en: Full reward will be received after one year of staking with increased income up to 100%
+  ru: Полное вознаграждение будет получено через год после стейкинга с увеличением дохода до 100%
+  zh: 质押一年后将获得全额奖励，收入提升高达100%
+
+- alias: Parachain native token
+  en: Parachain native token
+  ru: Нативный токен парачейна
+  zh: 平行链原生代币
+
+- alias: All XRT tokens will be distributed in the Robonomics parachain
+  en: All XRT tokens will be distributed in the Robonomics parachain
+  ru: Все XRT токены будут распределены в парачейне Робономики
+  zh: 所有XRT代币都将分布在Robonomics平行链中
+
+- alias: Participate in the Robonomics crowdloan
+  en: Participate in the Robonomics crowdloan
+  ru: Участвуйте в краудлоан кампании Робономики
+  zh: 如何参与Robonomics众贷
+
+- alias: By participating in the Robonomics crowdloan you lock your KSM for a period of time 48 weeks to help Robonomics lease a parachain slot and gain Kusama’s distributed computing power to service up to 10,000 digital twins of IoT devices at once.
+  en: By participating in the Robonomics crowdloan you lock your KSM for a period of time 48 weeks to help Robonomics lease a parachain slot and gain Kusama’s distributed computing power to service up to 10,000 digital twins of IoT devices at once.
+  ru: Участвуя в краудлоан кампании Робономики, вы блокируете свои KSM на 48 недель, чтобы помочь Робономике арендовать слот парачейна и получить распределенные вычислительные мощности Kusama для одновременного обслуживания до 10,000 цифровых двойников IoT-устройств.
+  zh: 参与Robonomics众贷后，KSM将锁定48周，帮助Robonomics租赁平行链插槽，并获得Kusama的分布式算力，同时为多达10,000个数字孪生物联网设备提供服务。
+
+- alias: Choose the way to contribute
+  en: Choose the way to contribute
+  ru: Выберите способ участия
+  zh: 选择贡献方式
+
+- alias: On website
+  en: On website
+  ru: На сайте
+  zh: 在网站上
+
+- alias: On Polkadot Substrate portal
+  en: On Polkadot Substrate portal
+  ru: На портале Polkadot Substrate
+  zh: 在波卡Substrate门户上
+
+- alias: Kraken Exchange
+  en: Kraken Exchange
+  ru: Биржа Kraken
+  zh: Kraken交易所
+
+- alias: Fearless DeFi Wallet
+  en: Fearless DeFi Wallet
+  ru: Кошелек Fearless DeFi
+  zh: Fearless DeFi钱包
+
+- alias: I have installed the
+  en: I have installed the
+  ru: Я установил
+  zh: 我已经安装了
+
+- alias: Polkadot.js browser extension
+  en: Polkadot.js browser extension
+  ru: расширение для браузера Polkadot.js
+  zh: Polkadot.js浏览器扩展
+
+- alias: I have KSM in my Polkadot.js account
+  en: I have KSM in my Polkadot.js account
+  ru: У меня есть KSM токены в моем аккаунте Polkadot.js
+  zh: 我的Polkadot.js账户中有KSM
+
+- alias: My KSM has been unbonded
+  en: My KSM has been unbonded
+  ru: Мои KSM токены разлочены
+  zh: 我的KSM已解除绑定
+
+- alias: Supporters who are currently staking (bonding) their KSM will need to unstake prior to bonding their KSM to the crowdloan module. Kusama has a delayed exit period ~ 7 days.
+  en: Supporters who are currently staking (bonding) their KSM will need to unstake prior to bonding their KSM to the crowdloan module. Kusama has a delayed exit period ~ 7 days.
+  ru: Участникам, которые в настоящее время занимаются стейкингом (привязывают) свои KSM, необходимо будет отказаться от стейкинга перед тем, как привязать свой KSM к модулю Crowdloan. Kusama имеет отложенный период выхода ~ 7 дней.
+  zh: 目前已经质押（绑定）KSM的支持者需要首先解除质押，方可将KSM绑定到众贷模块。Kusama有约7天的延迟退出期。
+
+- alias: How to unbond KSM
+  en: How to unbond KSM
+  ru: Как разлочить KSM
+  zh: 如何解绑KSM
+
+- alias: Please check if you have installed polkadot{.js} extension
+  en: Please check if you have installed polkadot{.js} extension
+  ru: Пожалуйста, проверьте, установлено ли у вас расширение polkadot{.js}
+  zh: 请检查您是否安装了polkadot{.js}扩展
+
+- alias: Connect Polkadot.js extension
+  en: Connect Polkadot.js extension
+  ru: Подключите расширение Polkadot.js
+  zh: 连接Polkadot.js扩展
+  
+- alias: Select an account
+  en: Select an account
+  ru: Выберите аккаунт
+  zh: 选择一个账号
+
+- alias: The balance of selected account
+  en: The balance of selected account
+  ru: Баланс выбранного аккаунта
+  zh: 所选账户余额
+
+- alias: Your contribution
+  en: Your contribution
+  ru: Введите сумму
+  zh: 您的贡献值
+
+- alias: Insufficient or incorrectly entered balance
+  en: Insufficient or incorrectly entered balance
+  ru: Недостаточный или неверно введенный баланс
+  zh: 余额不足或输入错误
+
+- alias: Your email (not necessary)
+  en: Your email (not necessary)
+  ru: Ваш email (не обязательно)
+  zh: 您的电子邮件（非必需）
+
+- alias: Please agree to receive emails from Robonomics or do not fill this field
+  en: Please agree to receive emails from Robonomics or do not fill this field
+  ru: Пожалуйста, дайте согласие на получение email рассылки от Робономики или не заполняйте это поле
+  zh: 请同意接收Robonomics的电子邮件或不填写此字段
+
+- alias: I agree to receive email communications from Robonomics
+  en: I agree to receive email communications from Robonomics
+  ru: Я согласен получать email рассылку от Робономики
+  zh: 我同意接收Robonomics的电子邮件通讯
+
+- alias: Most important to know
+  en: Most important to know
+  ru: Важно знать
+  zh: 重要须知
+
+- alias: The Robonomics development team are early adopters of Polkadot technologies, and we understand that the current technical implementation of the Kusama Relay chain and Substrate framework may contain errors or be revised this year and next. This is important for the crowdloan campaigners to understand as well.
+  en: The Robonomics development team are early adopters of Polkadot technologies, and we understand that the current technical implementation of the Kusama Relay chain and Substrate framework may contain errors or be revised this year and next. This is important for the crowdloan campaigners to understand as well.
+  ru: Команда разработчиков Робономики является одним из первых последователей технологий Polkadot, и мы понимаем, что текущая техническая реализация Kusama Relay Chain и платформы Substrate может содержать ошибки или быть пересмотрена в этом и следующем году. Это важно понимать и участникам краудлоан кампании.
+  zh: Robonomics开发团队是波卡技术的早期采用者，我们了解到，目前Kusama中继链和Substrate框架的技术实现可能包含错误，或在今明两年进行修订。众贷活动人士需要了解这一点也很重要。
+
+- alias: "The entire Polkadot ecosystem is undergoing a process of formation that can take an indefinite time. It's also important for you to keep in mind every time when you study any plans of the developers."
+  en: "The entire Polkadot ecosystem is undergoing a process of formation that can take an indefinite time. It's also important for you to keep in mind every time when you study any plans of the developers."
+  ru: Вся экосистема Polkadot находится в процессе формирования, который может занять неопределенное время. Это тоже важно помнить, когда вы изучаете какие-либо планы разработчиков.
+  zh: 整个波卡生态系统正在经历一个成形过程，而这个过程可能需要无限的时间。在您每次研究开发者的任何计划时，记住这一点也很重要。
+
+- alias: Ladies and gentlemen, you are participating in this great experiment at your own peril and risk.
+  en: Ladies and gentlemen, you are participating in this great experiment at your own peril and risk.
+  ru: Дамы и господа, вы участвуете в этом грандиозном эксперименте на свой страх и риск.
+  zh: 女士们，先生们，参与这个伟大的征程需要自担风险。
+
+- alias: Welcome to our journey!
+  en: Welcome to our journey!
+  ru: Добро пожаловать в наше путешествие!
+  zh: 欢迎加入我们的征程！
+
+- alias: No account found, please add account in your wallet extension or unlock it
+  en: No account found, please add account in your wallet extension or unlock it
+  ru: Аккаунт не найден, пожалуйста, добавьте аккаунт в расширение кошелька для вашего браузера или разблокируйте его
+  zh: 未找到账号，请在您的钱包扩展中添加账户或将其解锁
+
+- alias: "Something wrong with the transaction. Please don't worry and ask for help in"
+  en: "Something wrong with the transaction. Please don't worry and ask for help in"
+  ru: Что-то не так с транзакцией. Пожалуйста, не волнуйтесь и обратитесь за помощью в
+  zh: 交易出现问题。请不要担心，并在
+
+- alias: "The transaction was not executed. Please don't worry and ask for help in"
+  en: "The transaction was not executed. Please don't worry and ask for help in"
+  ru: Транзакция не выполнена. Пожалуйста, не волнуйтесь и обратитесь за помощью в
+  zh: 交易没有执行。请不要担心，并在
+
+- alias: Robonomics Telegram Community
+  en: Robonomics Telegram Community
+  ru: Telegram-сообщество Робономики
+  zh: Robonomics Telegram社区寻求帮助
+
+- alias: Submit contribution
+  en: Submit contribution
+  ru: Подтвердите участие
+  zh: 提交贡献值
+
+- alias: Your contribution
+  en: Your contribution
+  ru: Ваш вклад
+  zh: 您贡献的
+
+- alias: accepted
+  en: accepted
+  ru: принят
+  zh: 已接受
+
+- alias: Share great news
+  en: Share great news
+  ru: Поделитесь отличными новостями
+  zh: 分享好消息
+
+- alias: Contribute more
+  en: Contribute more
+  ru: Повторить
+  zh: 贡献更多
+
+- alias: "We are on Kraken's Parachain Auction Platform"
+  en: "We are on Kraken's Parachain Auction Platform"
+  ru: Мы на платформе аукциона парачейна Kraken
+  zh: 我们在Kraken的平行链拍卖平台上
+
+- alias: Overview of parachain auctions on Kraken
+  en: Overview of parachain auctions on Kraken
+  ru: Обзор аукционов парачейна на Kraken
+  zh: Kraken平行链拍卖概述
+
+- alias: In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions
+  en: In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions
+  ru: В начале апреля Робономика провела репетицию участия в аукционах с использованием модуля Crowdloan в сети Rococo. Вы можете посмотреть ветку в Twitter, чтобы поближе познакомиться с возможностью использования стандартного интерфейса для участия сообщества в аукционах Polkadot
+  zh: 4月初，Robonomics利用Rococo网络中的众贷模块进行了参与拍卖的预演。您可以观看Twitter的推文，进一步了解在波卡拍卖中使用标准界面进行社区参与的可能性
+
+- alias: You can also contribute to Robonomics crowdloan via
+  en: You can also contribute to Robonomics crowdloan via
+  ru: Вы также можете участвовать в краудлоан кампании Робономики через
+  zh: 您还可以通过
+
+- alias: We checked it and here are screenshots of the process
+  en: We checked it and here are screenshots of the process
+  ru: Мы проверили, вот скриншоты процесса
+  zh: 参与Robonomics众贷。我们已进行核查，该过程的屏幕截图如下
+
+- alias: By winning a Parachain slot in the Kusama we will open the doors for hundreds of IoT developers to the Polkadot ecosystem and help them take their first steps under the guidance of experienced teachers and roboticists.
+  en: By winning a Parachain slot in the Kusama we will open the doors for hundreds of IoT developers to the Polkadot ecosystem and help them take their first steps under the guidance of experienced teachers and roboticists.
+  ru: Выиграв слот парачейна в Kusama, мы откроем двери для сотен IoT-разработчиков в экосистему Polkadot и поможем им сделать первые шаги под руководством опытных учителей и робототехников.
+  zh: 赢得Kusama的平行链插槽之后，我们将为数百名物联网开发者打开通往波卡生态系统的大门，并帮助他们在经验丰富的教师和机器人专家的指导下迈出第一步。
+
+- alias: Sergei Lonshakov, Robonomics network architect
+  en: Sergei Lonshakov, Robonomics network architect
+  ru: Сергей Лоншаков, архитектор сети Робономика
+  zh: Sergei Lonshakov 软件架构师
+
+- alias: Choose your strategy
+  en: Choose your strategy
+  ru: Выберите свою стратегию
+  zh: 选择您的策略
+
+- alias: For KSM holders
+  en: For KSM holders
+  ru: Для держателей KSM
+  zh: 对于KSM持有者
+
+- alias: Robonomics PLO may be interesting for stakeholders who are looking for ways to diversify their KSM stake next 48 weeks inside the ecosystem.
+  en: Robonomics PLO may be interesting for stakeholders who are looking for ways to diversify their KSM stake next 48 weeks inside the ecosystem.
+  ru: PLO Робономики может быть интересно стейкхолдерам, которые ищут способы диверсифицировать свою долю в KSM в следующие 48 недель внутри экосистемы.
+  zh: 希望在未来48周内在生态系统内实现KSM质押多元化的利益相关者可能对Robonomics PLO感兴趣。
+
+- alias: for now is available on Uniswap, Huobi, and in addition on PancakeSwap.
+  en: for now is available on Uniswap, Huobi, and in addition on PancakeSwap.
+  ru: на данный момент доступен на Uniswap, Huobi и, кроме того, на PancakeSwap.
+  zh: 目前可在Uniswap、Huobi以及PancakeSwap上使用。
+
+- alias: For XRT holders
+  en: For XRT holders
+  ru: Для держателей XRT
+  zh: 对于XRT持有者
+
+- alias: Gain value for your XRT by winning Kusama Slot with Robonomics network great potential for scaling.
+  en: Gain value for your XRT by winning Kusama Slot with Robonomics network great potential for scaling.
+  ru: Получите прибыль от своих XRT, выиграв слот Kusama с большим потенциалом для масштабирования сети Робономика.
+  zh: 与Robonomics网络的巨大扩展潜力共同携手，赢得Kusama插槽，为您的XRT创造更多价值。
+
+- alias: Read development plans in our blog
+  en: Read development plans in our blog
+  ru: Ознакомьтесь с планами по разработке в нашем блоге
+  zh: 阅读博客中的发展计划
+
+- alias: For tech-inspired
+  en: For tech-inspired
+  ru: Для увлеченных технологиями
+  zh: 受技术启发
+
+- alias: Robonomics already has complex ecosystem for connecting real world to
+  en: Robonomics already has complex ecosystem for connecting real world to
+  ru: Робономика уже имеет сложную экосистему для подключения реального мира к
+  zh: Robonomics已经拥有将现实世界连接到
+
+- alias: Web3 Technology Stack Crowdloan 2
+  en: Web3 Technology Stack
+  ru: стеку Web3 технологий
+  zh: Web 3技术堆栈
+
+- alias: It's free, it's opensource, everybody can try it for IoT and Smart services. With Polkadot it can be even more cost-effective.
+  en: It's free, it's opensource, everybody can try it for IoT and Smart services. With Polkadot it can be even more cost-effective.
+  ru: Это бесплатная технология с открытым исходным кодом, её может попробовать каждый для IoT и Умных сервисов. С Polkadot эта технология может стать ещё более рентабельной.
+  zh: 的复杂生态系统。该系统是免费和开源的，人人都可以尝试用于物联网和智能服务。有了波卡，它可以更具成本效益。
+
+- alias: Roadmap of the Robonomics parachain
+  en: Roadmap of the Robonomics parachain
+  ru: Дорожная карта парачейна Робономики
+  zh: Robonomics平行链的路线图
+  
+- alias: "Part 1: Establishing core functionality"
+  en: "Part 1: Establishing core functionality"
+  ru: "Часть 1: Создание основной функциональности"
+  zh: "第1部分：建立核心功能"
+
+- alias: In 3 months after the Robonomics parachain launch, Robonomics developers are going to activate the core functionally that’s been developing during 2019-2021, and also supplement the network with modules that have proven themselves in the Polkadot and Kusama ecosystems.
+  en: In 3 months after the Robonomics parachain launch, Robonomics developers are going to activate the core functionally that’s been developing during 2019-2021, and also supplement the network with modules that have proven themselves in the Polkadot and Kusama ecosystems.
+  ru: Через 3 месяца после запуска парачейна Робономики разработчики Робономики намерены активировать основной функционал, который развивался в течение 2019-2021 годов, а также дополнить сеть модулями, зарекомендовавшими себя в экосистемах Polkadot и Kusama.
+  zh: 在Robonomics平行链发布后的3个月内，Robonomics开发者将激活2019-2021年期间一直在开发的核心功能，并利用在波卡和Kusama生态系统中充分自我证明的模块补充网络。
+  
+- alias: "Genesis state: (0 week)"
+  en: "Genesis state: (0 week)"
+  ru: "Генезис: (0 неделя)"
+  zh: "创世纪状态：（0周)"
+
+- alias: Launch of the starter pack of Robonomics parachain functions with IoT management services and collators reward systems.
+  en: Launch of the starter pack of Robonomics parachain functions with IoT management services and collators reward systems.
+  ru: Запуск стартового пакета функций парачейна Робономики с сервисами управления IoT и системами вознаграждения коллаторов.
+  zh: 推出具有物联网管理服务和收集者奖励系统的Robonomics平行链功能入门包。
+
+- alias: Update
+  en: Update
+  ru: Обновление
+  zh: 更新
+
+- alias: Staking and allowing transfers (0 - 1 week). Will allow you to transfer XRT and stake your XRT with a 10% APR for all token holders and 50% for Crowdloan participants.
+  en: Staking and allowing transfers (0 - 1 week). Will allow you to transfer XRT and stake your XRT with a 10% APR for all token holders and 50% for Crowdloan participants.
+  ru: Стейкинг и разрешение переводов (0 - 1 неделя). Позволит вам переводить XRT и заниматься стейкингом XRT с годовой процентной ставкой 10% для всех держателей токенов и 50% для участников краудлоан кампании.
+  zh: 质押和允许转让（0 - 1周）。将允许您转让XRT，并可质押XRT，所有代币持有者的年化收益率为10%，众贷参与者的年化收益率为 50%。
+
+- alias: Treasury and Technical committee (2 - 3 week). Will allow transferring a share of the DAO funds from Ethereum to the parachain. The Technical Committee can produce emergency referenda. These are used for emergency bug fixes or rapid implementation of new but battle-tested features into the runtime.
+  en: Treasury and Technical committee (2 - 3 week). Will allow transferring a share of the DAO funds from Ethereum to the parachain. The Technical Committee can produce emergency referenda. These are used for emergency bug fixes or rapid implementation of new but battle-tested features into the runtime.
+  ru: Сокровищница и Технический комитет (2 - 3 неделя). Позволит перевести часть средств DAO из Ethereum в парачейн. Технический комитет может проводить экстренные референдумы. Они используются для экстренного исправления ошибок или быстрого внедрения новых (но проверенных на деле) функций в среду выполнения.
+  zh: 金库和技术委员会（2 - 3周）。允许一部分DAO资金从以太坊转移至平行链上。技术委员会可以发起紧急公投。这些用于紧急错误修复或在运行时中快速实现新的但经过实战测试的功能。
+
+- alias: RWS (4 - 5 week). Will allow using IoT management functions with not only commission payments in XRT but a monthly subscription as well.
+  en: RWS (4 - 5 week). Will allow using IoT management functions with not only commission payments in XRT but a monthly subscription as well.
+  ru: RWS (4 - 5 неделя). Позволит использовать функции управления IoT не только с комиссионными выплатами в XRT, но и с ежемесячной подпиской.
+  zh: RWS（4 - 5周）。允许使用物联网管理功能，XRT可以佣金支付，也可以按月订阅。
+
+- alias: Robot-as-a-service (6 - 7 week). Will allow to implement a control process for the provision of automated services and use payments within transactions to launch devices.
+  en: Robot-as-a-service (6 - 7 week). Will allow to implement a control process for the provision of automated services and use payments within transactions to launch devices.
+  ru: Robot-as-a-Service (6 - 7 неделя). Позволит внедрить процесс контроля за предоставлением автоматизированных услуг и использовать платежи в транзакциях для запуска устройств.
+  zh: 机器人即服务（6 - 7周）。允许提供自动化服务的控制流程，并使用交易内付款来启动设备。
+  
+- alias: XCMP functionality and Robobank (8 - 9 week). The solution is based on the Polkadot XCMP architecture that will allow any parachain to get access to IoT device management with payment in a native token.
+  en: XCMP functionality and Robobank (8 - 9 week). The solution is based on the Polkadot XCMP architecture that will allow any parachain to get access to IoT device management with payment in a native token.
+  ru: Функциональность XCMP и Робобанк (8 - 9 неделя). Решение основано на архитектуре Polkadot XCMP, которая позволит любому парачейну получить доступ к управлению IoT-устройством с оплатой собственным токеном.
+  zh: XCMP功能和Robobank（8 - 9周）。该解决方案基于波卡XCMP架构，允许任何平行链通过原生代币支付访问物联网设备管理。
+
+- alias: Democracy and Remove Sudo (10 - 11 week). Developers won’t have the ability to interfere with the operations of the network without the involvement of the technical committee or voting of parachain native token holders.
+  en: Democracy and Remove Sudo (10 - 11 week). Developers won’t have the ability to interfere with the operations of the network without the involvement of the technical committee or voting of parachain native token holders.
+  ru: Демократия и удаление Sudo (10 - 11 неделя). Разработчики не смогут вмешиваться в работу сети без участия технического комитета или голосования владельцев нативных токенов парачейна.
+  zh: Democracy（民主）和去除Sudo（10 - 11周）。届时，如果没有技术委员会的参与或平行链原生代币持有者的投票，开发者将无法影响网络运行。
+  
+- alias: "Part 2: Launch services based on Robonomics R&D"
+  en: "Part 2: Launch services based on Robonomics R&D"
+  ru: "Часть 2: Запуск сервисов на основе R&D Робономики"
+  zh: "第2部分：基于Robonomics研发的启动服务"
+
+- alias: 2nd part of Robonomics parachain growth in Kusama designated to the launch of services based on previous Robonomics team’s R&D projects.
+  en: 2nd part of Robonomics parachain growth in Kusama designated to the launch of services based on previous Robonomics team’s R&D projects.
+  ru: Вторая часть развития парачейна Робономики в Kusama, направленная на запуск услуг, основана на предыдущих R&D проектах команды Робономики.
+  zh: Robonomics的Kusama平行链增长的第2部分，旨在基于Robonomics团队以前的研发项目推出服务。
+
+- alias: Globally available digital passports of products
+  en: Globally available digital passports of products
+  ru: Доступные во всем мире цифровые паспорта продуктов
+  zh: 全球可用的产品数字护照
+
+- alias: By supplementing the status of digital twins with information about the produced products, customers will be able to issue digital passports protected against changes and loss of information in the future. This use case is already implemented as a pilot at the enterprise that’s producing drones. The solution used for quality control during packaging with video recording.
+  en: By supplementing the status of digital twins with information about the produced products, customers will be able to issue digital passports protected against changes and loss of information in the future. This use case is already implemented as a pilot at the enterprise that’s producing drones. The solution used for quality control during packaging with video recording.
+  ru: Дополнив статус цифровых двойников информацией о производимых продуктах, заказчики смогут выдавать цифровые паспорта, защищенные от изменений и потери информации в будущем. Этот вариант использования уже реализован в качестве пилотного на предприятии, производящем дроны. Решение, используемое для контроля качества при упаковке с видеозаписью.
+  zh: 通过利用产品生产相关信息补充数字孪生的状态，客户将能够签发数字护照，以防止未来信息更改和丢失。这个用例已经在生产无人机的企业中作为试点实施。解决方案用于在包装过程中，通过录制视频控制质量。
+
+- alias: Smart leasing of IoT & Robotics
+  en: Smart leasing of IoT & Robotics
+  ru: Умный лизинг IoT и робототехники
+  zh: 物联网和机器人智能租赁
+
+- alias: We’ll demonstrate the ability to use the Robonomics parachain for leasing an IoT/Robotics device. Using the example of 2 robots controlled by Robonomics parachain in 2 different industries. The first use case - an educational program based on Boston Dynamics SDK, during which developers will learn how to control the famous robot dog - Spot. The second one - an industrial manipulator sold under a leasing agreement in the United States. Both robots will provide customers with automatically generated reports at the end of the user session.
+  en: We’ll demonstrate the ability to use the Robonomics parachain for leasing an IoT/Robotics device. Using the example of 2 robots controlled by Robonomics parachain in 2 different industries. The first use case - an educational program based on Boston Dynamics SDK, during which developers will learn how to control the famous robot dog - Spot. The second one - an industrial manipulator sold under a leasing agreement in the United States. Both robots will provide customers with automatically generated reports at the end of the user session.
+  ru: Мы продемонстрируем возможность использования парачейна Робономики для аренды IoT-устройства/устройства робототехники на примере двух роботов, управляемых парачейном Робономики, в двух разных отраслях. Первый вариант использования - образовательная программа на базе Boston Dynamics SDK, в ходе которой разработчики научатся управлять знаменитым роботом-собакой Спотом. Второй - промышленный манипулятор, продаваемый по договору лизинга в США. Оба робота будут предоставлять клиентам автоматически сгенерированные отчеты в конце пользовательского сеанса.
+  zh: 我们将展示使用Robonomics平行链租赁物联网/机器人设备的能力。以Robonomics平行链控制的2个不同行业的2个机器人为例。第一个用例 - 基于Boston Dynamics SDK的教育程序，在此期间，开发者将学习如何控制著名的机器狗 - Spot。第二个用例 - 在美国根据租赁协议出售的工业机械手。两个机器人都会在用户会话结束时为客户提供自动生成的报告。
+
+- alias: Environmental mitigation services for smart buildings with real carbon credits
+  en: Environmental mitigation services for smart buildings with real carbon credits
+  ru: Услуги по смягчению воздействия на окружающую среду для умных зданий с реальными квотами на выбросы углерода
+  zh: 具有真实碳信用的智能建筑环境保护服务
+
+- alias: It will allow customers to automatically collect information about the electricity consumption of the household or apartment building, burn carbon credits, and store a report in the parachain.
+  en: It will allow customers to automatically collect information about the electricity consumption of the household or apartment building, burn carbon credits, and store a report in the parachain.
+  ru: Это позволит клиентам автоматически собирать информацию о потреблении электроэнергии в частном или многоквартирном доме, сжигать квоты на выбросы углерода и хранить отчет в парачейне.
+  zh: 其将允许客户自动收集有关家庭或公寓楼用电量、燃烧碳信用的信息，并将报告存储在平行链中。
+
+- alias: Fault-tolerant civil sensors network
+  en: Fault-tolerant civil sensors network
+  ru: Отказоустойчивая гражданская сенсорная сеть
+  zh: 容错民用传感器网络
+
+- alias: A complete set of software modules for creating a sensor network in a city or enterprise to track the desired indicators and provide access to them without a central point of failure. Today it is being tested in one of Russian’s industrial cities - Togliatti.
+  en: A complete set of software modules for creating a sensor network in a city or enterprise to track the desired indicators and provide access to them without a central point of failure. Today it is being tested in one of Russian’s industrial cities - Togliatti.
+  ru: Полный набор программных модулей для создания сенсорной сети в городе или на предприятии для отслеживания требуемых показателей и обеспечения доступа к ним без центральной точки отказа. Сегодня он проходит испытания в одном из промышленных городов России - Тольятти.
+  zh: 套完整的软件模块，用于在城市或企业中创建传感器网络，追踪和访问所需指标，而不会出现中心故障点。今天，正在俄罗斯的工业城市之一陶里亚蒂进行测试。
+
+- alias: Self-driving cars and drones traffic management solution to avoid route collisions in public areas
+  en: Self-driving cars and drones traffic management solution to avoid route collisions in public areas
+  ru: Решение для управления движением беспилотных автомобилей и дронов во избежание столкновений на маршрутах в общественных местах
+  zh: 自动驾驶汽车和无人机交通管理解决方案，避免公共区域的路线冲突。
+
+- alias: It’ll allow managing a fleet of drones with publicly monitored access to route changes to public agencies responsible for local security and efficiency of air space and roads
+  en: It’ll allow managing a fleet of drones with publicly monitored access to route changes to public agencies responsible for local security and efficiency of air space and roads
+  ru: Оно позволит управлять парком дронов с публично контролируемым доступом к изменениям маршрутов государственным органам, ответственным за местную безопасность и эффективность воздушного пространства и дорог.
+  zh: 其允许管理一支无人机队伍，通 过公开监控访问，向负责当地安全和空域和道路效率的公共机构传输变动情况。
+
+- alias: Ecosystem integration updates
+  en: Ecosystem integration updates
+  ru: Обновления интеграции экосистемы
+  zh: 生态系统集成更新
+
+- alias: We will focus on integrations with other parachains to expand the capabilities of IoT projects that are interested in the Polkadot ecosystem’s features.
+  en: We will focus on integrations with other parachains to expand the capabilities of IoT projects that are interested in the Polkadot ecosystem’s features.
+  ru: Мы сосредоточимся на интеграции с другими парачейнами, чтобы расширить возможности IoT-проектов, которые заинтересованы в функциях экосистемы Polkadot.
+  zh: 我们将专注于与其他平行链的集成，扩展对波卡生态系统功能感兴趣的物联网项目的能力。
+  
+- alias: "Part 3: Transform into Robonomics Relay Chain"
+  en: "Part 3: Transform into Robonomics Relay Chain"
+  ru: "Часть 3: Преобразование в Relay Chain Робономики"
+  zh: "第3部分：转变为Robonomics中继链"
+
+- alias: The final task for the 48 weeks of existence in the Kusama network is the transformation of the Robonomics parachain into the Robonomics Relay Chain. This is our vision of the future of Robonomics, as a complete segment of the Polkadot infrastructure specifically prepared for working with IoT devices.
+  en: The final task for the 48 weeks of existence in the Kusama network is the transformation of the Robonomics parachain into the Robonomics Relay Chain. This is our vision of the future of Robonomics, as a complete segment of the Polkadot infrastructure specifically prepared for working with IoT devices.
+  ru: Последняя задача за 48 недель существования в сети Kusama - преобразование парачейна Робономики в Relay Chain Робономики. Это наше видение будущего Робономики как законченного сегмента инфраструктуры Polkadot, специально подготовленного для работы с IoT-устройствами.
+  zh: 加入Kusama网络48周的最后一项任务是将Robonomics平行链转变为Robonomics中继链。这是我们对Robonomics的未来愿景，作为专门为物联网设备打造的波卡基础设施的一个完整部分。
+
+- alias: Robonomics in Polkadot ecosystem
+  en: Robonomics in Polkadot ecosystem
+  ru: Робономика в экосистеме Polkadot
+  zh: 波卡生态系统中的Robonomics
+
+- alias: Polkadot Decoded 2021
+  en: Polkadot Decoded 2021
+  ru: Polkadot Decoded 2021
+  zh: 2021年Polkadot Decoded大会
+
+- alias: On May 19, on the main stage of Polkadot Decoded, Sergey Lonshakov spoke about the concept of Smart cities and Polkadot services that are possible within this.
+  en: On May 19, on the main stage of Polkadot Decoded, Sergey Lonshakov spoke about the concept of Smart cities and Polkadot services that are possible within this.
+  ru: 19 мая на главной сцене Polkadot Decoded Сергей Лоншаков рассказал о концепции Умных городов и сервисах Polkadot, возможных в рамках данной концепции.
+  zh: 25月19日，在Polkadot Decoded大会的主讲台上，Sergey Lonshakov谈到了智慧城市的概念和其中可能的波卡服务。
+
+- alias: Kusama on Mars
+  en: Kusama on Mars
+  ru: Kusama на Марсе
+  zh: Kusama在火星上
+
+- alias: On Hackusama (a 7-week online hackathon) we inspired with an idea of architecture impossible without KUSAMA. Watch the video and read in the description what was done during the hackathon.
+  en: On Hackusama (a 7-week online hackathon) we inspired with an idea of architecture impossible without KUSAMA. Watch the video and read in the description what was done during the hackathon.
+  ru: На Hackusama (7-недельный онлайн-хакатон) мы вдохновились идеей архитектуры, невозможной без KUSAMA. Посмотрите видео и прочтите в описании, что было сделано во время хакатона.
+  zh: 在Hackusama（为期7周的线上黑客马拉松）期间，我们的灵感来自没有KUSAMA将无以成架构的理念。观看视频，并阅读描述中的我们在黑客马拉松期间的盛举。
+
+- alias: Robonomics PolkaPet
+  en: Robonomics PolkaPet
+  ru: Robonomics PolkaPet
+  zh: Robonomics PolkaPet
+
+- alias: PolkaPet is collectible NFT card embodied as an artistic creature, represents a specific project within the Polkadot ecosystem. Robonomics PolkaPets owners can get some additional bonuses.
+  en: PolkaPet is collectible NFT card embodied as an artistic creature, represents a specific project within the Polkadot ecosystem. Robonomics PolkaPets owners can get some additional bonuses.
+  ru: PolkaPet - это коллекционная карта NFT, воплощенная в виде художественного существа, представляющая собой конкретный проект в экосистеме Polkadot. Владельцы PolkaPets Робономики могут получить дополнительные бонусы.
+  zh: PolkaPet是一种具有收藏价值的NFT卡，体现为一种艺术生物，代表波卡生态系统中的一个特定项目。Robonomics PolkaPets拥有者可以获得一些额外的奖金。
+
+- alias: Robonomics Relay Chain on Polkadot
+  en: Robonomics Relay Chain on Polkadot
+  ru: Relay Chain Робономики в Polkadot
+  zh: 波卡上的Robonomics中继链
+
+- alias: Kusama parachain is great opportunity for Robonomics to scale network up to 1 million IoT systems connected in real-time without any centrilized regulators.
+  en: Kusama parachain is great opportunity for Robonomics to scale network up to 1 million IoT systems connected in real-time without any centrilized regulators.
+  ru: Парачейн Kusama - прекрасная возможность для Робономики расширить сеть до 1 миллиона IoT-систем, подключенных в режиме реального времени без каких-либо централизованных регуляторов.
+  zh: Kusama平行链是Robonomics将网络扩展到100万个实时连接的物联网系统的绝佳机会，无需任何中心化监管机构。
+
+- alias: The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific parachains, including
+  en: The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific parachains, including
+  ru: Команда разработчиков Робономики сформировала план на 2 года в рамках слота Kusama. Мы постараемся построить на основе нашей существующей работы и разработки нового программного обеспечения 5 конкретных парачейнов, в том числе
+  zh: Robonomics开发团队制定了2年的Kusama插槽计划。我们将尝试在现有的工作和新软件开发的基础上继续开发5个特定的平行链，包括
+
+- alias: Smart leasing parachain
+  en: Smart leasing parachain
+  ru: Парачейн умного лизинга
+  zh: 智能租赁平行链
+
+- alias: Recoup your investment in the high-value robots by renting out it with a mechanism for tokenizing robots’ labor.
+  en: Recoup your investment in the high-value robots by renting out it with a mechanism for tokenizing robots’ labor.
+  ru: Окупите свои вложения в дорогостоящих роботов, сдав их в аренду с механизмом токенизации труда роботов.
+  zh: 通过代币化的机制出租机器人的劳动，收回您对高价值机器人的投资。
+
+- alias: Robot as a Service (RaaS) parachain
+  en: Robot as a Service (RaaS) parachain
+  ru: Парачейн Robot as a Service (RaaS)
+  zh: 机器人即服务 (RaaS) 平行链（机器人即服务是一个著名范例）
+
+- alias: Get and provide direct robot services without cashiers, clerks or centrilized cloud providers.
+  en: Get and provide direct robot services without cashiers, clerks or centrilized cloud providers.
+  ru: Получите и предоставьте прямые услуги роботов без кассиров, менеджеров или централизованных облачных провайдеров.
+  zh: 获取并提供直接的机器人服务，无需收银员、文员或集中式云提供商。
+
+- alias: RWS parachain
+  en: RWS parachain
+  ru: Парачейн RWS
+  zh: RWS平行链
+
+- alias: Robonomics Web Services (RWS) will provide decentralized infrastructure for IoT solutions.
+  en: Robonomics Web Services (RWS) will provide decentralized infrastructure for IoT solutions.
+  ru: Веб-сервисы Робономики (RWS) предоставят децентрализованную инфраструктуру для IoT-решений.
+  zh: Robonomics Web Services (RWS) 将为物联网解决方案提供去中心化的基础设施
+
+- alias: DAO IPCI parachain
+  en: DAO IPCI parachain
+  ru: Парачейн DAO IPCI
+  zh: DAO IPCI平行链
+
+- alias: The Robonomics network provides technology for environmental mitigation service DAO IPCI.
+  en: The Robonomics network provides technology for environmental mitigation service DAO IPCI.
+  ru: Сеть Робономики предоставляет технологии для сервиса защиты окружающей среды DAO IPCI.
+  zh: Robonomics网络为环境保护服务DAO IPCI提供技术。
+
+- alias: Distributed Sky parachain
+  en: Distributed Sky parachain
+  ru: Distributed Sky平行链
+  zh: Парачейн Distributed Sky
+
+- alias: Blockchain techonologies to control the traffic of drones (automated planning of drone flight paths, decentralized payment regulations, smart contract for transactions)
+  en: Blockchain techonologies to control the traffic of drones (automated planning of drone flight paths, decentralized payment regulations, smart contract for transactions)
+  ru: Блокчейн-технологии для управления движением дронов (автоматическое планирование маршрутов полета дронов, децентрализованные правила оплаты, смарт-контракт для транзакций)
+  zh: 控制无人机流量的区块链技术（无人机飞行路径的自动规划、去中心化支付规则、智能交易合约）
+
+- alias: Smart rental and leasing
+  en: Smart rental and leasing
+  ru: Умная аренда и лизинг
+  zh: 智能租赁
+
+- alias: Robot as a Service
+  en: Robot as a Service
+  ru: Робот как услуга
+  zh: 机器人即服务
+
+- alias: '"Cloud" for IoT applications'
+  en: '"Cloud" for IoT applications'
+  ru: '"Облако" для IoT-приложений'
+  zh: '物联网“云”应用'
+
+- alias: Environmental mitigation
+  en: Environmental mitigation
+  ru: Снижение воздействия на окружающую среду
+  zh: 环境保护
+
+- alias: Drone vehicle traffic
+  en: Drone vehicle traffic
+  ru: Трафик дронов
+  zh: 无人机车辆流量
+
+- alias: Follow latest updates Crowdloan 2
+  en: Follow latest updates
+  ru: Следите за последними обновлениями
+  zh: 关注最新动态
+
+- alias: Robonomics official Twitter Crowdloan 2
+  en: Robonomics official Twitter
+  ru: Официальный Twitter Робономики
+  zh: Robonomics官方Twitter
+
+- alias: Software architect Twitter Crowdloan 2
+  en: Software architect Twitter
+  ru: Twitter архитектора программного обеспечения
+  zh: 软件架构师Twitter
+
+- alias: Robonomics Telegram Community Crowdloan 2
+  en: Robonomics Telegram Community
+  ru: Telegram-сообщество Робономики
+  zh: Robonomics Telegram社区
