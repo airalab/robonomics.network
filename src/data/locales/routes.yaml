@@ -1,6 +1,6 @@
-- path: '/'
-  component: './src/pages/index.vue'
-  typename: 'page'
+# - path: '/'
+#   component: './src/pages/index.vue'
+#   typename: 'page'
   
 - path: '/vision/'
   component: './src/pages/vision.vue'
