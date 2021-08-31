@@ -226,7 +226,52 @@
 	}
 }
 
-
+// Full height screen
 .slide {
 	min-height: calc(100vh - var(--screen-padding-top) - var(--screen-padding-bottom));
+}
+
+// Robo girl loves PolkaPet + text
+.polkapetBonuses {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: calc(var(--space)*2);
+	align-items: start;
+
+	@media screen and (max-width: 920px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (max-width: 720px) {
+		grid-template-columns: 1fr;
+	}
+
+	h2, h3, h4, h5, & { text-align: left; }
+
+	.polkapetBonuses-img {
+		position: relative;
+		min-height: 300px;
+
+		& > svg {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 1;
+			width: 30%;
+			max-width: 370px;
+		}
+	}
+
+	.polkapet {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 80%;
+		max-width: 670px;
+		z-index: 0;
+	}
+
+	.polkapetBonuses-text {
+		max-width: 800px;
+	}
 }
