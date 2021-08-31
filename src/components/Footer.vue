@@ -5,7 +5,7 @@
 
         <div>
           <g-image aria-hidden="true" src="~/assets/images/robonomics-polkapet.png" />
-          <g-link to="https://medium.com/web3foundation/web3-foundation-grants-wave-two-recipients-16d9b996501d"><g-image aria-hidden="true" src="~/assets/images/web3_foundation_grants_badge_black_white.png" /></g-link>
+          <g-link id="footer-web3Badge" to="https://medium.com/web3foundation/web3-foundation-grants-wave-two-recipients-16d9b996501d"><g-image aria-hidden="true" src="~/assets/images/web3_foundation_grants_badge_black_white.png" /></g-link>
         </div>
 
         <div>
@@ -86,6 +86,12 @@
       border-top: 1px solid var(--color-gray-mid);
       color: var(--color-gray-mid);
     }
+  }
+
+  #footer-web3Badge {
+    display: block;
+    max-width: 200px;
+    margin-top: var(--space)
   }
 
 </style>
