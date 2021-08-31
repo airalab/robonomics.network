@@ -85,6 +85,26 @@
 
           </div>
 
+          <hr class="animate" v-in-viewport.once/>
+
+          <div class="polkapetBonuses layout layout__content">
+
+            <div class="polkapetBonuses-img animate-inside" v-in-viewport.once>
+              <SvgLovelyRoboGirl class="animate"/>
+              <g-image class="polkapet" src="~/assets/images/robonomics-nft.png" />
+            </div>
+
+            <div class="polkapetBonuses-text hyphens animate-inside" v-in-viewport.once>
+              <h3>How to maximize the reward with Polkapets NFT</h3>
+              <p><b>Let's consider an example:</b></p>
+              <ul>
+                <li>Alice bonded 1 KSM for Robonomics crowdloan within the first 35k KSM;</li>
+                <li>After X time period (not decided by the DAO yet), Alice will have to visit Robonomics dApp to maximize the reward by signing a message from an Ethereum wallet with NFT.</li>
+              </ul>
+              <p><i>The bonus is available regardless, she got NFT before or after bonding KSM.</i></p>
+            </div>
+          </div>
+
       </section>
 
       <hr class="animate no-margins" v-in-viewport.once/>
@@ -537,7 +557,8 @@
       Abstract: () => import("~/components/TextAbstract.vue"),
       Button: () => import("~/components/Button.vue"),
       tip: () => import("~/components/tip.vue"),
-      Card: () => import("~/components/TextCard.vue")
+      Card: () => import("~/components/TextCard.vue"),
+      SvgLovelyRoboGirl: () => import("~/components/svg/LovelyRoboGirl.vue"),
     },
 
 
@@ -807,18 +828,6 @@
     height: 1rem;
     width: 1rem;
     border-radius: 1rem;
-  }
-
-  @keyframes spin
-  {
-    0%
-      {
-        transform:rotate(0deg);
-      }
-    100%
-      {
-        transform:rotate(360deg);
-      }
   }
 
   /*end BASICS*/
