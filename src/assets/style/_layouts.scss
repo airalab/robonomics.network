@@ -214,6 +214,15 @@
 	
 	h2, h3, h4, h5, & { text-align: left; }
 	h2, h3, h4, h5 { margin-top: 0; }
+
+	@media screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+
+		h2, h3, h4, h5 {
+			margin-top: var(--space);
+			margin-bottom: 0;
+		}
+	}
 }
 
 
