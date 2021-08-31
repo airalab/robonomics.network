@@ -549,7 +549,45 @@
     config = chain.config
   }
   import { getStat as getStatServer } from "../utils/api";
-  import { bnToBn } from "@polkadot/util";
+  import { bnToBn, formatBalance as fb } from "@polkadot/util";
+
+  const M_LENGTH = 6 + 1;
+  const K_LENGTH = 3 + 1;
+  function applyFormat(
+    value,
+    [decimals, token],
+    withCurrency = true,
+    withSi = false,
+    _isShort = false
+  ) {
+    const [prefix, postfix] = fb(value, {
+      decimals,
+      forceUnit: "-",
+      withSi: false
+    }).split(".");
+
+    const isShort = _isShort || (withSi && prefix.length >= K_LENGTH);
+    const unitPost = withCurrency ? token : "";
+
+    if (prefix.length > M_LENGTH) {
+      const [major, rest] = fb(value, {
+        decimals,
+        withUnit: false
+      }).split(".");
+      const minor = rest.substr(0, 4);
+      const unit = rest.substr(4);
+
+      return `${major}.${minor} ${unit.trim()}${unit ? unitPost : unitPost}`;
+    }
+
+    return `${prefix}${isShort ? "" : "."}${
+      !isShort && `0000${postfix || ""}`.slice(-4)
+    } ${unitPost}`;
+  }
+
+  function formatBalance(v, decimals = 12, unit = "KSM") {
+    return applyFormat(v.toString(), [decimals, unit]).replace(",", "");
+  }
 
   export default {
     components: {
@@ -632,8 +670,8 @@
             }
             this.account = this.accounts[0]?.address;
             if (this.account) {
-              let { data: { free: balance } } = await this.api.query.system.account(this.account);
-              this.balance = balance
+              let data = await this.api.query.system.account(this.account);
+              this.balance = data.data.free.add(data.data.reserved).sub(data.data.miscFrozen)
             }
             //2
             this.crowdloan_loading = false;
@@ -742,8 +780,8 @@
           if (this.listenerBalance !== null) {
             this.listenerBalance()
           }
-          this.listenerBalance = await this.api.query.system.account(newValue, ({ data: { free: balance } }) => {
-            this.balance = balance
+          this.listenerBalance = await this.api.query.system.account(this.account, (data) => {
+            this.balance = data.data.free.add(data.data.reserved).sub(data.data.miscFrozen)
           });
         }
       },
@@ -776,7 +814,7 @@
         reward_xrt_usd() { return (this.price_xrt * this.reward_xrt).toFixed(2) },
         reward_ksm() { return (this.contribution * (this.staking_ksm / 100)).toFixed(2) } ,
         reward_ksm_usd() { return (this.price_ksm * this.reward_ksm).toFixed(2) },
-        balanceView() {return Number(this.balance) > 0 ? this.balance.toHuman() : "-"}
+        balanceView() { return Number(this.balance) > 0 ? formatBalance(this.balance) : "-" }
       }
   }
 </script>
@@ -1434,7 +1472,7 @@
   //   // transform: translateY(0.6rem);
   //   // animation: blink var(--duration-mainpic) ease-out var(--delay-mainpic) forwards;
   // }
-  
+
   .banner-astronauts {
       display: block;
       margin: 0 auto;
