@@ -219,8 +219,9 @@
 		grid-template-columns: 1fr;
 
 		h2, h3, h4, h5 {
-			margin-top: var(--space);
+			margin-top: calc(var(--space) * 2);
 			margin-bottom: 0;
+			font-weight: bold;
 		}
 	}
 }
