@@ -168,17 +168,17 @@
 - alias: Get started GetStartedBlock
   en: Get started
   ru: Начало
-  zh: 开始
+  zh: 新手入门
 
 - alias: Explore Robonomics GetStartedBlock
   en: Explore Robonomics
   ru: Откройте для себя Робономику
-  zh: 探索Robonomics
+  zh: 探索 Robonomics
 
 - alias: Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more
   en: Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more
   ru: Робономика - доступная для всех технология с открытым исходным кодом для рынка IoT. Узнайте больше
-  zh: Robonomics 是一项面向物联网市场的开源技术，可供所有人使用。 阅读执行摘要以了解更多信息
+  zh: Robonomics 是一项面向物联网市场的开源技术，可供所有人使用。阅读执行摘要，了解详情
 
 - alias: Get XRT GetStartedBlock
   en: Get XRT
@@ -188,98 +188,112 @@
 - alias: XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain
   en: XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain
   ru: XRT - протокольный токен, который позволяет управлять IoT-устройствами поверх сети Ethereum и парачейна Робономики
-  zh: XRT 是一种实用代币，可以控制以太坊网络和 Robonomics 平行链上的物联网设备
+  zh: XRT 是一种效用代币，可以控制以太坊和 Robonomics 平行链之上的物联网设备
 
 - alias: Use a dapp GetStartedBlock
   en: Use a dapp
   ru: Используйте Dapp
-  zh: 使用 dapp
+  zh: 使用 Dapp
 
 - alias: Take a look at the Beta version of decentralized application for managing IoT devices
   en: Take a look at the Beta version of decentralized application for managing IoT devices
   ru: Взгляните на бета-версию децентрализованного приложения для управления IoT-устройствами
-  zh: 查看用于管理 IoT 设备的去中心化应用程序的 Beta 版
+  zh: 查看物联网设备去中心化管理应用程序的测试版本
 
 - alias: Start building GetStartedBlock
   en: Start building
   ru: Попробуйте на практике
-  zh: 开始搭建
+  zh: 开始构建
 
 - alias: Learn Robonomics through tutorials and practically useful experimenting in Robonomics WIKI
   en: Learn Robonomics through tutorials and practically useful experimenting in Robonomics WIKI
   ru: Изучите Робономику с помощью учебных пособий и практически полезных экспериментов в WIKI Робономики
-  zh: 通过教程和 Robonomics WIKI 中的实用实验学习 Robonomics
+  zh: 通过 Robonomics WIKI 中的教程和实用体验，了解 Robonomics
 
 - alias: Robonomics objectives
   en: Robonomics objectives
   ru: Задачи Робономики
-  zh: Robonomics 目标
+  zh: Robonomics 的目标
 
 - alias: Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed
   en: Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed
   ru: Опираясь на достижения облачных платформ, Робономика ставит своей задачей предложить IoT-рынку более безопасные и продвинутые интернет решения на каждом этапе коммуникации человека и машины. Ниже приводятся основные задачи, для которых Робономика разрабатывается
+  zh: Robonomics 基于云平台的成果，其目标是在人机通信的各个阶段为物联网市场提供更加安全和更加先进的互联网解决方案。开发 Robonomics 的主要任务有：
 
 - alias: IoT device management with a decentralized cloud
   en: IoT device management with a decentralized cloud
   ru: Управление IoT-устройством с помощью децентрализованного облака
-  zh: 使用分散式云进行物联网设备管理
+  zh: 通过去中心化的云，管理物联网设备
 
 - alias: Blockchain networks have all the parameters to ensure the highest level of security for device launch and receiving telemetry. Interaction with a device can actually be described by changing the state of the digital twin stored in the blockchain network and delivering information about these changes to the physical device. In the case of using a permissionless blockchain, we can be sure of the global availability of providers, as well as a high level of data protection of the digital twin from unwanted changes.
   en: Blockchain networks have all the parameters to ensure the highest level of security for device launch and receiving telemetry. Interaction with a device can actually be described by changing the state of the digital twin stored in the blockchain network and delivering information about these changes to the physical device. In the case of using a permissionless blockchain, we can be sure of the global availability of providers, as well as a high level of data protection of the digital twin from unwanted changes.
   ru: Блокчейн сети обладают всеми параметрами для обеспечения наивысшей степени безопасности запуска устройства и получения телеметрии. Взаимодействие с устройством фактически можно описать изменением состояния цифрового двойника, хранящегося в блокчейн сети, и доставкой информации об изменениях физическому устройству. В случае использования permissionless blockchain мы можем быть уверены в глобальной доступности провайдеров, а также высоком уровне защиты данных цифрового двойника от нежелательных изменений.
+  zh: 区块链网络具有所有参数，以确保设备启动和接收遥测的最高安全级别。与设备的交互实际上可以通过更改存储在区块链网络中的数字孪生状态并将更改信息传递给物理设备进行描述。在使用无需许可区块链的情况下，我们可以确保提供者的全球可用性，以及数字孪生的高级数据保护，免受不必要的更改。
 
 - alias: Techno-economic transactions between humans and machines
   en: Techno-economic transactions between humans and machines
   ru: Технико-экономические транзакции между людьми и машинами
-  zh: 人与机器之间的技术经济交易
+  zh: 人机之间的技术经济交易
 
 - alias: We can talk about institutional achievements in terms of access of automated systems directly to digital markets through cryptocurrencies and smart contracts. For example, Ethereum already implements most of the basic tools of economic activity. The applications created today to connect the end user and IoT devices will be much more efficient if the payment and terms of service are inseparable from the launch parameters of the device.
   en: We can talk about institutional achievements in terms of access of automated systems directly to digital markets through cryptocurrencies and smart contracts. For example, Ethereum already implements most of the basic tools of economic activity. The applications created today to connect the end user and IoT devices will be much more efficient if the payment and terms of service are inseparable from the launch parameters of the device.
   ru: Мы можем говорить об институциональных достижениях в плане доступа автоматических систем напрямую к цифровым рынкам посредством криптовалют и умных контрактов. Например, Ethereum уже реализует большинство базовых инструментов экономической деятельности. Приложения, создаваемые сегодня для связи конечного пользователя и IoT-устройства, будут намного эффективнее, если оплата и условия оказания услуги будут неразрывны с параметрами запуска устройства.
+  zh: 我们可以谈论自动化系统通过加密货币和智能合约直接进入数字市场方面的机构成就。例如，以太坊已经实现了经济活动的大部分基本工具。如果付款和服务条款与设备的启动参数密不可分，那么，今天为连接终端用户和物联网设备而创建的应用程序将更加高效。
 
 - alias: Serverless IoT applications for users
   en: Serverless IoT applications for users
   ru: Serverless IoT-приложения пользователей
+  zh: 面向用户的无服务器物联网应用
 
 - alias: The question of the privacy of users of modern applications should not be stuck in the inability of companies to use modern advances in the field of web3. There is no need to authenticate or require connection to specific servers to access telemetry and control the device.
   en: The question of the privacy of users of modern applications should not be stuck in the inability of companies to use modern advances in the field of web3. There is no need to authenticate or require connection to specific servers to access telemetry and control the device.
   ru: Вопрос приватности пользователей современных приложений не должен утыкаться в неумение компаний использовать современные достижения из области web3. Нет необходимости производить аутентификацию или требовать подключения к конкретным серверам для доступа к телеметрии и управления устройством.
+  zh: 现代应用程序用户的隐私问题不应该停留在公司无法使用 web3 领域的现代进步中。无需验证或要求连接到特定服务器即可访问遥测和控制设备。
 
 - alias: What you can build with Robonomics right now
   en: What you can build with Robonomics right now
   ru: Что вы можете построить с помощью Робономики прямо сейчас
+  zh: 现在可以使用 Robonomics 构建的项目
 
 - alias: Control Mars Curiosity rover
   en: Control Mars Curiosity rover
   ru: Управляйте марсоходом Curiosity
+  zh: 控制好奇号火星探测车
 
 - alias: Make Mars Curiosity rover move under Robonomics Parachain control
   en: Make Mars Curiosity rover move under Robonomics Parachain control
   ru: Заставьте марсоход Curiosity двигаться под контролем парачейна Робономики
+  zh: 好奇号火星探测车在 Robonomics 平行链控制下移动
 
 - alias: Connect ROS-compatibale Drone
   en: Connect ROS-compatibale Drone
   ru: Подключите ROS-совместимый дрон
+  zh: 连接兼容 ROS 的无人机
 
 - alias: You can control any ROS-compatitable robot with Robonomics parachain control
   en: You can control any ROS-compatitable robot with Robonomics parachain control
   ru: Вы можете управлять любым ROS-совместимым роботом с помощью парачейна Робономики
+  zh: 可以使用 Robonomics 平行链控制任何 兼容 ROS 的机器人
 
 - alias: Launch Kuka manipulator
   en: Launch Kuka manipulator
   ru: Запустите манипулятор Kuka
+  zh: 启动 Kuka 机械臂
 
 - alias: Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.
   en: Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.
   ru: Отправьте транзакцию в парачейне Робономики, запустите манипулятор Kuka и получите телеметрию робота в IPFS.
+  zh: 在 Robonomics 平行链中发送交易，启动 Kuka 机械臂，并在 IPFS 中获取机器人的遥测数据。
 
 - alias: ROS-based Projects for Smart Spaces
   en: ROS-based Projects for Smart Spaces
   ru: Проекты на базе ROS для умных пространств
+  zh: 基于 ROS 的智能空间项目
 
 - alias: Here, you’ll find a modest list of ROS-based projects that are dedicated to robots and IoT-devices that are meant for use in a home or office environment
   en: Here, you’ll find a modest list of ROS-based projects that are dedicated to robots and IoT-devices that are meant for use in a home or office environment
   ru: Здесь вы найдете скромный список проектов на базе ROS, посвященных роботам и IoT-устройствам, которые предназначены для использования в домашних или офисных условиях.
+  zh: 在这里，您将找到一份基于 ROS 的合适项目列表，这些项目专门针对用于家庭或办公环境的机器人和物联网设备
   
 
 # Vision page
