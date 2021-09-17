@@ -179,8 +179,12 @@ export default {
         &, h1, h2, h3, h4, h5 { text-align: left; }
       }
 
-      @media screen and (min-width: 550px) {
+      @media screen and (min-width: 650px) {
         &.icon, &.image { grid-template-columns: auto 1fr; } //pic + content
+      }
+
+      @media screen and (max-width: 650px) {
+        &.icon, &.image { grid-template-columns: 1fr; }
       }
       
     }
