@@ -115,6 +115,8 @@ query($id: ID!) {
     strong, b {
       background-color: #f8ffb5;
     }
+
+    a { word-break: break-all; }
   }
 </style>
 
