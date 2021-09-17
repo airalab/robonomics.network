@@ -22,7 +22,7 @@ Parachains do not need staking in their core functionality. Parachains are secur
 
 #### Reinventing Staking
 
-Parachains that want to take advantage of the "wisdom of the crowd" and assign tasks to the community need to reinvent staking. At Robonomics, that's what we did. The staking architecture in the Robonomics parachain is unique and specific to the issues that we solve for the IoT market. We offer two ways to pay for the basic functionality of smart devices: per transaction or by monthly subscription.
+Parachains that want to take advantage of the "wisdom of the crowd" and assign tasks to the community need to reinvent staking. At Robonomics, that's what we did. The staking architecture in the Robonomics parachain is unique and specific to the blockchain issues that we solve for the IoT market. We offer two ways to pay for the basic functionality of smart devices: per transaction or by monthly subscription.
 
 Per-transaction payment is self-explanatory. The subscription function needs a little explanation. Some IoT use cases need to periodically access cloud functions, and it is highly undesirable for these to fail. The gas-price mechanism still does not fully solve this problem, especially when it comes to guaranteeing transactions on every block. With this in mind, we came up with the idea of using the staking mechanism to manage a guaranteed quota with a subscription model. On the Substrate side, we did a little trick, based on zero-weight transaction priority processing. If an IoT device activates a subscription, then all its transactions will have priority over any others, except of course other zero-weight transactions. As more tokens go into the network's staking pool, more subscriptions will become available to users. 
 
