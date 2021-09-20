@@ -1,5 +1,5 @@
 ---
-title: "Up to version 1.2: staking, tech comm and treasury"
+title: "最高到 1.2 版：质押、技术传播和司库"
 date: 2021-09-17
 published: true
 locale: 'zh'
