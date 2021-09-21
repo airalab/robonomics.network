@@ -6,14 +6,11 @@
     <!-- <div class="screen" :class="BannerLink('/kusama-slot')?'banner':''"> -->
 
       <header class="header">
-        <!-- <a class="banner-top" href="/kusama-slot" v-if="BannerLink('/kusama-slot')">
+        <g-link class="banner-top" to="https://dapp.robonomics.network/#/staking/">
           <div class="layout__content">
-            <div id="banner-auction">
-              <g-image alt="Astronaut on Mars with Robonomics and Kusama" src="~/assets/images/robonomics-kusama-mars.png" />
-              ROBONOMICS PARACHAIN CROWDLOAN STARTED
-            </div>
+            Stake XRT 🤖
           </div>
-        </a> -->
+        </g-link>
 
         <div class="header-content">
           <div class="header-logo">
@@ -65,28 +62,36 @@ query {
 
 <style lang="scss">
 
-  // .banner-top {
-  //   height: var(--space-bannertop);
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
+  .banner-top {
+    height: var(--space-bannertop);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  //   padding-right: var(--screen-padding-right);
-  //   padding-left: var(--screen-padding-right);
+    padding-right: var(--screen-padding-right);
+    padding-left: var(--screen-padding-right);
 
-  //   text-decoration: none;
-  //   overflow: hidden;
+    text-decoration: none;
+    overflow: hidden;
 
-  //   background-color: var(--color-red);
-  //   color: var(--color-light) !important;
-  //   font-weight: 500;
-  //   text-transform: uppercase;
-  //   letter-spacing: 2px;
+    background-color: var(--color-purple-mid);
+    color: var(--color-light) !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
-  //   &:hover {
-  //     color: #fff !important;
-  //   }
-  // }
+    text-shadow: 2px 2px 0px var(--color-blue);
+    font-family: var(--font-family-code);
+
+    // background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
+		// 	<text x="20" y="20" font-size="10" style="fill:#ccc">🤖</text>\
+		// 	</svg>');
+		// 	background-size: 30px 30px;
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
 
   .header {
     --logo-padding: 0.6rem;
