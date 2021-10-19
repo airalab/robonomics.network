@@ -22,7 +22,8 @@
             <nav class="header-nav sidetext">
                 <g-link to="/intro">{{$ts('Intro')}}</g-link>
                 <g-link to="/vision">Vision</g-link>
-                <g-link to="/kusama-slot">{{$ts('Crowdloan')}}</g-link>
+                <!-- <g-link to="/kusama-slot">{{$ts('Crowdloan')}}</g-link> -->
+                <g-link to="/community/#docs">{{$ts('Docs')}}</g-link>
                 <g-link to="/blog">{{$ts('Blog')}}</g-link>
             </nav>
 
