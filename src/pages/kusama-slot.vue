@@ -2,7 +2,7 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Crowdloan for Robonomics on Kusama 2nd wave')"
+      :pageTitle = "$ts('Crowdloan for Robonomics on Kusama')"
       :pageDescription = "$ts('Crowdloan Description')"
       :pageImage = "'/website_cover_crowdloan.jpg'"
     />
@@ -10,18 +10,19 @@
     <div class="auction page">
 
 
-      <section class=" page-banner section section__solid section__red">
+      <section class="page-banner section section__solid section__red">
         <div class="layout layout__content">
-          <h1 class="auction-parachain-title clean">{{$ts('Crowdloan for Robonomics on Kusama 2nd wave')}}</h1>
+          <h1 class="auction-parachain-title clean">{{$ts('Crowdloan for Robonomics on Kusama')}}</h1>
           <p class="layout__text text-big"><i>{{$ts('Crowdloan Description')}}</i></p>
 
-          <div class="grid-3 grid-valign-top align-left">
+          <!-- <div class="grid-3 grid-valign-top align-left"> -->
+          <div>
 
             <div>
-              <g-image class="banner-astronauts" :alt="$ts('Crowdloan for Robonomics on Kusama 2nd wave')" src="~/assets/images/robonomics-kusama-astronauts.png" />
+              <g-image class="banner-astronauts" :alt="$ts('Crowdloan for Robonomics on Kusama')" src="~/assets/images/robonomics-kusama-astronauts.png" />
             </div>
 
-            <div>
+            <!-- <div>
               <div class="input-signed-right">
                 <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
                 <label for="contribution" class="sign">KSM</label>
@@ -42,7 +43,7 @@
                   {{$ts('Crowdloan2 banner contributors so far')}}</p>
                 <div class="text-little">{{$ts('Robonomics Parathread ID')}} = 2077</div>
                 <div class="text-little"><g-link to="https://kusama.network/auctions/">{{$ts('About Kusama auctions')}}</g-link></div>
-              </div>
+              </div> -->
           </div>
 
         </div>
@@ -108,7 +109,7 @@
       </section>
 
       <hr class="animate no-margins" v-in-viewport.once/>
-
+<!-- 
       <section id="crowdloan" class="auction-support layout">
 
           <h2 class="animate" v-in-viewport.once>{{$ts('Participate in the Robonomics crowdloan')}}</h2>
@@ -130,7 +131,7 @@
             <section id="participate-1" class="loading" v-if="selectedWay==1">
 
               <form>
-                <!-- STEP 1 -->
+              
                 <template v-if="!isApi">
                 <section>
                   <label class="block label">
@@ -159,10 +160,7 @@
                   <span class="text">{{$ts('Connect Polkadot.js extension')}}</span>
                 </Button>
                 </template>
-                <!-- end STEP 1 -->
-
-
-                <!-- STEP 2 -->
+      
                 <template v-else-if="isApi && !success">
                 <section>
 
@@ -231,10 +229,7 @@
                   <span class="text">{{$ts('Submit contribution')}}</span>
                 </Button>
                 </template>
-                <!-- end STEP 2 -->
-
-
-                <!-- STEP 3 -->
+          
                 <section v-if="success" class="crowdloan-step-3 active">
                   <h3>{{$ts('Your contribution')}} {{contribution}} KSM {{$ts('accepted')}}!</h3>
                   <div class="load-bird" aria-hidden="true" v-in-viewport.once>
@@ -255,7 +250,6 @@
                     <span class="text">{{$ts('Contribute more')}}</span>
                   </Button>
                 </section>
-                <!-- end STEP 3 -->
 
 
               </form>
@@ -265,7 +259,6 @@
               <p><g-link to="https://www.kraken.com/"><g-image style="max-width:300px" alt="Kraken exchange logo" src="~/assets/images/kraken-logo.webp"/></g-link></p>
               <p>{{$ts("We are on Kraken's Parachain Auction Platform")}}</p>
               <p><g-link to="https://support.kraken.com/hc/en-us/articles/360060824412">{{$ts("Overview of parachain auctions on Kraken")}}</g-link></p>
-              <!-- <p><g-link to="https://blog.kraken.com/post/9438/kraken-breaks-new-ground-with-first-of-its-kind-parachain-auction-platform/">Blog post from Kraken</g-link></p> -->
             </section>
 
              <section id="participate-2" v-if="selectedWay==2" style="width:80%">
@@ -289,7 +282,7 @@
 
           </div>
 
-      </section>
+      </section> -->
 
 
       <hr class="animate no-margins" v-in-viewport.once/>
@@ -843,6 +836,10 @@
     --duration-bubble: 3s;
     --bubble-size: 6rem;
     --slot-size: 3rem;
+  }
+
+  .page-banner .layout {
+    padding-top: calc(var(--space)*2)
   }
 
   .section__solid {

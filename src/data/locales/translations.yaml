@@ -79,10 +79,15 @@
   ru: Введение
   zh: 介绍
 
-- alias: Crowdloan
-  en: Crowdloan
-  ru: Crowdloan
-  zh: 众贷
+# - alias: Crowdloan
+#   en: Crowdloan
+#   ru: Crowdloan
+#   zh: 众贷
+
+- alias: Docs
+  en: Docs
+  ru: Документы
+  zh: 文档
 
 - alias: Blog
   en: Blog
@@ -517,12 +522,12 @@
 
 
 
-# kusama-slot (Crowdloan 2nd wave)
+# kusama-slot
 
-- alias: Crowdloan for Robonomics on Kusama 2nd wave
-  en: Crowdloan for Robonomics on Kusama 2nd wave
-  ru: Краудлоан для Робономики на Kusama, вторая волна
-  zh: Robonomics开启Kusama的第二轮众贷
+- alias: Crowdloan for Robonomics on Kusama
+  en: Crowdloan for Robonomics on Kusama
+  ru: Краудлоан для Робономики на Kusama
+  zh: 在 Kusama 上为 Robonomics 提供众包
 
 - alias: Crowdloan Description
   en: Robonomics integrates Polkadot technologies into the IoT market. Support Robonomics in the Kusama slots auction, let's go to the future together
