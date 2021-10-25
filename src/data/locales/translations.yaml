@@ -569,20 +569,50 @@
   ru: Об аукционах Kusama
   zh: 关于Kusama拍卖
 
-- alias: For each KSM. This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain
-  en: For each KSM. This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain
-  ru: За каждый KSM. Это примерно в 1,5 раза выгоднее, чем стейкинга KSM в Kusama Relay Chain
-  zh: 对于每个KSM。利润比Kusama中继链中的KSM质押高约1.5倍。
+# - alias: For each KSM. This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain
+#   en: For each KSM. This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain
+#   ru: За каждый KSM. Это примерно в 1,5 раза выгоднее, чем стейкинга KSM в Kusama Relay Chain
+#   zh: 对于每个KSM。利润比Kusama中继链中的KSM质押高约1.5倍。
 
-- alias: Increased reward for participants in the collection of the first 6,300 KSM
-  en: Increased reward for participants in the collection of the first 6,300 KSM
-  ru: Повышенное вознаграждение для участников при сборе первых 6,300 KSM
-  zh: 增加首批6,300 KSM参与者的奖励
+- alias: For each KSM.
+  en: For each KSM.
+  ru: За каждый KSM.
+  zh: 对于每个KSM。
 
-- alias: For Robonomics Pioneer NFT holders
-  en: For Robonomics Pioneer NFT holders
-  ru: Для владельцев NFT Robonomics Pioneer
-  zh: Robonomics Pioneer NFT 持有者
+- alias: This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain.
+  en: This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain.
+  ru: Это примерно в 1,5 раза выгоднее, чем стейкинга KSM в Kusama Relay Chain.
+  zh: 利润比Kusama中继链中的KSM质押高约1.5倍。
+
+# - alias: Increased reward for participants in the collection of the first 6,300 KSM
+#   en: Increased reward for participants in the collection of the first 6,300 KSM
+#   ru: Повышенное вознаграждение для участников при сборе первых 6,300 KSM
+#   zh: 增加首批6,300 KSM参与者的奖励
+
+- alias: Increased rewards
+  en: Increased rewards
+  ru: Повышенные вознаграждения
+  zh: 增加奖励
+
+- alias: for participants in the collection of the first 6,300 KSM
+  en: for participants in the collection of the first 6,300 KSM
+  ru: для участников при сборе первых 6,300 KSM
+  zh: 用于收集首批 6,300 KSM 的参与者
+
+# - alias: For Robonomics Pioneer NFT holders
+#   en: For Robonomics Pioneer NFT holders
+#   ru: Для владельцев NFT Robonomics Pioneer
+#   zh: Robonomics Pioneer NFT 持有者
+
+- alias: for Robonomics Pioneer NFT holders who bond the first 27,000 KSM
+  en: for Robonomics Pioneer NFT holders who bond the first 27,000 KSM
+  ru: для держателей NFT Robonomics Pioneer, которые размещают первые 27 000 KSM
+  zh: 适用于绑定前 27,000 个 KSM 的 Robonomics Pioneer NFT 持有者
+
+- alias: Regular rewards for those who do not fall into the indicated conditions in increased rewards.
+  en: Regular rewards for those who do not fall into the indicated conditions in increased rewards.
+  ru: Регулярные награды для тех, кто не попадает в указанные условия в повышенных наградах
+  zh: 不属于指定条件者的定期奖励增加奖励。
 
 - alias: Extra reward 6 XRT instead of 3.5 XRT for Robonomics Pioneer NFT holders who bond the first 27,000 KSM
   en: Extra reward 6 XRT instead of 3.5 XRT for Robonomics Pioneer NFT holders who bond the first 27,000 KSM
