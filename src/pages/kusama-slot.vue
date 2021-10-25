@@ -52,7 +52,31 @@
       <hr class="no-margins" />
 
       <section class="section section__solid section__darkgray">
-         <div class="layout layout__content grid-3 hyphens animate-inside" v-in-viewport.once>
+        <div class="layout layout__content grid-3 hyphens animate-inside" v-in-viewport.once>
+          <div>
+            <div class="text-huge"><strong>6 XRT</strong></div>
+            <p>{{$ts('For each KSM.')}} {{$ts('Increased rewards')}}:</p>
+        
+            <p>&bull;&nbsp;{{$ts('for participants in the collection of the first 6,300 KSM')}}<br/>
+            &bull;&nbsp;{{$ts('for Robonomics Pioneer NFT holders who bond the first 27,000 KSM')}}</p>
+     
+          </div>
+
+          <div>
+            <div class="text-huge"><strong>3.5 XRT</strong></div>
+            <p>{{$ts('For each KSM.')}} {{$ts('Regular rewards for those who do not fall into the indicated conditions in increased rewards.')}}</p>
+            <p>{{$ts('This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain.')}}</p>
+          </div>
+
+          <div>
+            <div class="text-huge"><strong>{{$ts('Quick rewards')}}</strong></div>
+            <p>{{$ts('You can get 50% of reward in the first month after the launch of the network')}}</p>
+            <div class="text-huge"><strong>{{$ts('Parachain native token')}}</strong></div>
+            <p>{{$ts('All XRT tokens will be distributed in the Robonomics parachain')}}</p>
+          </div>
+        </div>
+
+         <!-- <div class="layout layout__content grid-3 hyphens animate-inside" v-in-viewport.once>
 
             <div>
               <p class="text-huge"><strong>3.5 XRT</strong></p>
@@ -84,7 +108,7 @@
               {{$ts('All XRT tokens will be distributed in the Robonomics parachain')}}
             </div>
 
-          </div>
+          </div> -->
 
       </section>
 
@@ -727,7 +751,8 @@
           if (this.api && this.provider.isConnected) {
             info = await getStat(this.api)
           } else {
-            info = await getStatServer();
+            // info = await getStatServer();
+            info = { count:0, amountUnit:0 };
           }
           this.info_count = info.count;
           this.info_contributed = Number(info.amountUnit).toFixed(2);
