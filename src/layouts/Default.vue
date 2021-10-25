@@ -2,13 +2,13 @@
   <transition name="fade" appear>
    
   
-    <div class="screen">
-    <!-- <div class="screen" :class="BannerLink('/kusama-slot')?'banner':''"> -->
+    <!-- <div class="screen"> -->
+    <div class="screen" :class="BannerLink('/kusama-slot/')?'banner':''">
 
       <header class="header">
-        <g-link class="banner-top" to="https://dapp.robonomics.network/#/staking/">
+        <g-link class="banner-top" to="/kusama-slot" v-if="!BannerLink('/kusama-slot/')">
           <div class="layout__content">
-            Stake XRT 🤖
+            Join Crowdloan 🤖
           </div>
         </g-link>
 
@@ -75,13 +75,15 @@ query {
     text-decoration: none;
     overflow: hidden;
 
-    background-color: var(--color-purple-mid);
+    background-color: var(--color-red);
+    // background-color: var(--color-purple-mid);
     color: var(--color-light) !important;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    text-shadow: 2px 2px 0px var(--color-blue);
+    text-shadow: 2px 2px 0px #AF0098;
+    // text-shadow: 2px 2px 0px var(--color-blue);
     font-family: var(--font-family-code);
 
     // background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
@@ -91,6 +93,7 @@ query {
 
     &:hover {
       color: #fff !important;
+      background-color: #AF0098;
     }
   }
 
@@ -207,9 +210,9 @@ query {
 }
 
 // for pages with banner
-// .screen.banner {
-//  padding-top: calc(var(--screen-padding-top) + var(--space-bannertop));
-// }
+.screen:not(.banner) {
+ padding-top: calc(var(--screen-padding-top) + var(--space-bannertop));
+}
 
 .header-side {
   display: flex;
@@ -248,8 +251,9 @@ export default {
   methods: {
     BannerLink(p) {
       let current = this.$router.currentRoute.path
-      current = current.replace(/\/$/,'')
-      return current != p
+      // current = current.replace(/\/$/,'')
+      // return current != p
+      return current.includes(p)
     }
   },
   async mounted () {

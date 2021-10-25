@@ -15,14 +15,14 @@
           <h1 class="auction-parachain-title clean">{{$ts('Crowdloan for Robonomics on Kusama')}}</h1>
           <p class="layout__text text-big"><i>{{$ts('Crowdloan Description')}}</i></p>
 
-          <!-- <div class="grid-3 grid-valign-top align-left"> -->
-          <div>
+          <div class="grid-3 grid-valign-top align-left">
+          <!-- <div> -->
 
             <div>
               <g-image class="banner-astronauts" :alt="$ts('Crowdloan for Robonomics on Kusama')" src="~/assets/images/robonomics-kusama-astronauts.png" />
             </div>
 
-            <!-- <div>
+            <div>
               <div class="input-signed-right">
                 <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
                 <label for="contribution" class="sign">KSM</label>
@@ -43,7 +43,7 @@
                   {{$ts('Crowdloan2 banner contributors so far')}}</p>
                 <div class="text-little">{{$ts('Robonomics Parathread ID')}} = 2077</div>
                 <div class="text-little"><g-link to="https://kusama.network/auctions/">{{$ts('About Kusama auctions')}}</g-link></div>
-              </div> -->
+              </div>
           </div>
 
         </div>
@@ -60,13 +60,13 @@
             </div>
 
             <div>
-              <p class="text-huge"><strong>5 XRT</strong></p>
-              {{$ts('Increased reward for participants in the collection of the first 35,000 KSM')}}
+              <p class="text-huge"><strong>6 XRT</strong></p>
+              {{$ts('Increased reward for participants in the collection of the first 6,300 KSM')}}
             </div>
 
             <div>
-              <p class="text-huge"><strong>135,000 KSM</strong></p>
-              {{$ts('Total collection limit. This strategy will help to launch Robonomics parachain at the lowest price for end users')}}
+              <p class="text-huge"><strong>{{$ts('For Robonomics Pioneer NFT holders')}}</strong></p>
+              {{$ts('Extra reward 6 XRT instead of 3.5 XRT for Robonomics Pioneer NFT holders who bond the first 27,000 KSM')}}
             </div>
 
             <div>
@@ -86,30 +86,10 @@
 
           </div>
 
-          <hr class="animate" v-in-viewport.once/>
-
-          <div class="polkapetBonuses layout layout__content">
-
-            <div class="polkapetBonuses-img animate-inside" v-in-viewport.once>
-              <SvgLovelyRoboGirl class="animate"/>
-              <g-image class="polkapet" src="~/assets/images/robonomics-nft.png" />
-            </div>
-
-            <div class="polkapetBonuses-text hyphens animate-inside" v-in-viewport.once>
-              <h3>How to maximize the reward with Polkapets NFT</h3>
-              <p><b>Let's consider an example:</b></p>
-              <ul>
-                <li>Alice bonded 1 KSM for Robonomics crowdloan within the first 35k KSM;</li>
-                <li>After X time period (not decided by the DAO yet), Alice will have to visit Robonomics dApp to maximize the reward by signing a message from an Ethereum wallet with NFT.</li>
-              </ul>
-              <p><i>The bonus is available regardless, she got NFT before or after bonding KSM.</i></p>
-            </div>
-          </div>
-
       </section>
 
       <hr class="animate no-margins" v-in-viewport.once/>
-<!-- 
+
       <section id="crowdloan" class="auction-support layout">
 
           <h2 class="animate" v-in-viewport.once>{{$ts('Participate in the Robonomics crowdloan')}}</h2>
@@ -282,7 +262,7 @@
 
           </div>
 
-      </section> -->
+      </section>
 
 
       <hr class="animate no-margins" v-in-viewport.once/>
@@ -802,7 +782,7 @@
           }
           return false
         },
-        koef() { return Number(this.info_contributed) < 35000 ? 5 : 3.5 },
+        koef() { return Number(this.info_contributed) < 6300 ? 6 : 3.5 },
         reward_xrt() { return (this.contribution * this.koef).toFixed(2) },
         reward_xrt_usd() { return (this.price_xrt * this.reward_xrt).toFixed(2) },
         reward_ksm() { return (this.contribution * (this.staking_ksm / 100)).toFixed(2) } ,
@@ -839,7 +819,7 @@
   }
 
   .page-banner .layout {
-    padding-top: calc(var(--space)*2)
+    padding-top: 0
   }
 
   .section__solid {
