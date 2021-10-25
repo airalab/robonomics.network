@@ -574,10 +574,20 @@
   ru: За каждый KSM. Это примерно в 1,5 раза выгоднее, чем стейкинга KSM в Kusama Relay Chain
   zh: 对于每个KSM。利润比Kusama中继链中的KSM质押高约1.5倍。
 
-- alias: Increased reward for participants in the collection of the first 35,000 KSM
-  en: Increased reward for participants in the collection of the first 35,000 KSM
-  ru: Повышенное вознаграждение для участников при сборе первых 35,000 KSM
-  zh: 增加首批35,000 KSM参与者的奖励
+- alias: Increased reward for participants in the collection of the first 6,300 KSM
+  en: Increased reward for participants in the collection of the first 6,300 KSM
+  ru: Повышенное вознаграждение для участников при сборе первых 6,300 KSM
+  zh: 增加首批6,300 KSM参与者的奖励
+
+- alias: For Robonomics Pioneer NFT holders
+  en: For Robonomics Pioneer NFT holders
+  ru: Для владельцев NFT Robonomics Pioneer
+  zh: Robonomics Pioneer NFT 持有者
+
+- alias: Extra reward 6 XRT instead of 3.5 XRT for Robonomics Pioneer NFT holders who bond the first 27,000 KSM
+  en: Extra reward 6 XRT instead of 3.5 XRT for Robonomics Pioneer NFT holders who bond the first 27,000 KSM
+  ru: Дополнительное вознаграждение 6 XRT вместо 3,5 XRT для держателей NFT Robonomics Pioneer, которые забондят первые 27000 KSM
+  zh: 额外奖励 6 XRT 而不是 3.5 XRT 给绑定前 27,000 KSM 的 Robonomics Pioneer NFT 持有者
 
 - alias: Total collection limit. This strategy will help to launch Robonomics parachain at the lowest price for end users
   en: Total collection limit. This strategy will help to launch Robonomics parachain at the lowest price for end users
