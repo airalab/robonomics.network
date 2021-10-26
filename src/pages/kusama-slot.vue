@@ -27,7 +27,6 @@
                 <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
                 <label for="contribution" class="sign">KSM</label>
               </div>
-              <div>{{$ts('Get annual staking return')}} {{ staking_xrt }} %</div>
               <p>{{ reward_xrt }} XRT [${{reward_xrt_usd}} {{$ts('at current price')}}]</p>
               <a href="#crowdloan" class="button primary large green" v-smooth-scroll="{offset: -100}">{{$ts('Contribute')}}</a>
             </div>
@@ -52,6 +51,7 @@
       <hr class="no-margins" />
 
       <section class="section section__solid section__darkgray">
+        <h2>{{$ts('Get annual staking return')}} {{ staking_xrt }}%</h2>
         <div class="layout layout__content grid-3 hyphens animate-inside" v-in-viewport.once>
           <div>
             <div class="text-huge"><strong>6 XRT</strong></div>
