@@ -8,7 +8,7 @@
       <header class="header">
         <g-link class="banner-top" to="/kusama-slot" v-if="!BannerLink('/kusama-slot/')">
           <div class="layout__content">
-            Join Crowdloan 🤖
+            {{$ts('Join Crowdloan')}} 🤖
           </div>
         </g-link>
 
