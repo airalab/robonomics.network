@@ -6,7 +6,7 @@ locale: 'en'
 tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/kusama-crowdloan-third-wave-details/cover.jpg
 description: "Over the past 4 months, the most anticipated and user-friendly projects from the world of DeFi, smart contracts/EVM, and the first mechanisms to ensure user privacy have been integrated into the Kusama ecosystem. Perhaps the time has come for mechanisms to integrate with the real economy by putting IoT devices under Kusama's control... We will find out if this is the case during the third round of auctions."
-abstract: "Over the past 4 months, the most anticipated and user-friendly projects from the world of DeFi, smart contracts/EVM, and the first mechanisms to ensure user privacy have been integrated into the Kusama ecosystem. Perhaps the time has come for mechanisms to integrate with the real economy by putting IoT devices under Kusama's control... We will find out if this is the case during the third round of auctions."
+abstract: "Over the past 4 months, the most anticipated and user-friendly projects from the world of DeFi, smart contracts/EVM, and the first mechanisms to ensure user privacy have been integrated into the Kusama ecosystem. Perhaps the time has come for mechanisms to integrate with the real economy by putting IoT devices under Kusama's control... We will find out if this is the case during <a href='/kusama-slot/'>the third round of auctions</a>."
 ---
 import Card from '~/components/TextCard.vue'
 
@@ -14,11 +14,16 @@ Below you will find some statistics from the past two Robonomics crowdloan campa
 
 ## Following in the footsteps of the first and second crowdloan campaigns
 
-During the first round of auctions on Kusama, Robonomics published a crowdloan module for the start of the third auction and a total of 27,000 KSM was collected. Source: Making History: [An Overview of the First Five Parachain Slot Auctions on Kusama](https://polkadot.network/making-history-an-overview-of-the-first-five-parachain-slot-auctions-on-kusama/)
+During the first round of auctions on Kusama, Robonomics published a crowdloan module for the start of the third auction and a total of 27,000 KSM was collected.
+
+!["An Overview of the First Five Parachain Slot Auctions on Kusama"](./images/kusama-crowdloan-third-wave-details/image3.png)
+*Source: [Making History: An Overview of the First Five Parachain Slot Auctions on Kusama](https://polkadot.network/making-history-an-overview-of-the-first-five-parachain-slot-auctions-on-kusama/)*
 
 During the second crowdloan campaign, fate conspired against us. The Robonomics developers expected to regain support from at least half of the participants of the first crowdloan campaign, so we were hoping to receive at least 15,000 KSM in the first few days of our crowdloan,  this would have helped us  make our way into the top five projects of the second round, allowing us to be on the radars of KSM holders who hadn't yet decided on what project to choose. However,  KILT bursting onto the scene with the MOVR token made waves throughout the whole community, giving them an undeniable advantage over the rest of the participants at the start.
 
 At the same time, with KILT receiving the maximum amount of investment from the community, pack leaders emerged from the projects that had collected more than 20,000 KSM tokens on the second day of the second round of auctions. Unfortunately, this led to Robonomics failing to enter the community's shortlist during the first few days of the second round, and thus did not receive much attention. The battle for slots between Calamari, Basilisk Heiko and Altair saw extremely high stakes and unexpected twists (thanks to the auction mechanism with a candle for the special effects during the Heiko vs. Altair battle).
+
+!["Kusama Crowdloan Timeline"](./images/kusama-crowdloan-third-wave-details/image2.png)
 
 How much will Robonomics raise in the third round? Will it be comparable to the first campaign, in the region of 20k - 30k KSM tokens? Or more akin to the results of the second round, around 3k to 10k KSM? Only holders of Kusama Relay Chain tokens know the answer. Most importantly, we expect a reduction in fundraising requirements to win one of the next auctions on the Kusama network.
 
