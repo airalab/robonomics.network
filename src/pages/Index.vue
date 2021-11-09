@@ -148,7 +148,7 @@
             <p>{{$ts('Make Mars Curiosity rover move under Robonomics Parachain control')}}</p>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/connect-any-ros-compatitable-robot-under-robonomics-parachain-control-1/">
+          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/connect-any-ros-compatible-robot-under-robonomics-parachain-control-1/">
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/demo/connect-drone.png" />
 
@@ -156,8 +156,8 @@
                 <g><polygon class="st0" points="25.3,18.8 16.2,33.4 33.8,33.4"/><polygon class="st1" points="25.3,3.1 2.8,41.2 47.2,41.2"/><circle class="st0" cx="25" cy="3.1" r="3.1"/><g><circle class="st0" cx="46.9" cy="41.2" r="3.1"/><circle class="st0" cx="3.1" cy="41.2" r="3.1"/></g></g>
               </svg>
             </div>
-            <h3>{{$ts('Connect ROS-compatibale Drone')}}</h3>
-            <p>{{$ts('You can control any ROS-compatitable robot with Robonomics parachain control')}}</p>
+            <h3>{{$ts('Connect ROS-compatible Drone')}}</h3>
+            <p>{{$ts('You can control any ROS-compatible robot with Robonomics parachain control')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/kuka/">
