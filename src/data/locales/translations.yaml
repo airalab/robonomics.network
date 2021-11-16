@@ -354,8 +354,8 @@
   es: Conectar el dron compatible con ROS
   ko: ROS 호환 드론 연결
 
-- alias: You can control any ROS-compatitable robot with Robonomics parachain control
-  en: You can control any ROS-compatitable robot with Robonomics parachain control
+- alias: You can control any ROS-compatible robot with Robonomics parachain control
+  en: You can control any ROS-compatible robot with Robonomics parachain control
   ru: Вы можете управлять любым ROS-совместимым роботом с помощью парачейна Робономики
   zh: 可以使用 Robonomics 平行链控制任何 兼容 ROS 的机器人
   es: Puede controlar cualquier robot compatible con ROS con el control de la parachain de Robonomics
