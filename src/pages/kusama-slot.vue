@@ -22,16 +22,17 @@
               <g-image class="banner-astronauts" :alt="$ts('Crowdloan for Robonomics on Kusama')" src="~/assets/images/robonomics-kusama-astronauts.png" />
             </div>
 
-            <div>
+            <!-- <div>
               <div class="input-signed-right">
                 <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
                 <label for="contribution" class="sign">KSM</label>
               </div>
               <p>{{ reward_xrt }} XRT [${{reward_xrt_usd}} {{$ts('at current price')}}]</p>
               <a href="#crowdloan" class="button primary large green" v-smooth-scroll="{offset: -100}">{{$ts('Contribute')}}</a>
-            </div>
+            </div> -->
 
             <div>
+                
                 <div class="text-huge"><b>
                   <template v-if="info_contributed > 0">{{info_contributed}}</template> 
                   <template v-else><span class="loader-text"></span></template> 
@@ -39,11 +40,19 @@
                 <p>{{$ts('Crowdloan2 banner from')}} 
                   <template v-if="info_count > 0">{{info_count}}</template> 
                   <template v-else><span class="loader-text-s"></span></template> 
-                  {{$ts('Crowdloan2 banner contributors so far')}}</p>
+                  {{$ts('Crowdloan From contributors')}}</p>
+                  <p>{{$ts('Raised, but not enough to get slot')}}</p>
                 <div class="text-little">{{$ts('Robonomics Parathread ID')}} = 2077</div>
                 <div class="text-little"><g-link to="https://kusama.network/auctions/">{{$ts('About Kusama auctions')}}</g-link></div>
               </div>
+
+              <div>
+                <p class="text-huge"><b>{{$ts('Thanks for all participants!')}}</b></p>
+                <p><i>Stay connected, stay tuned</i></p>
+              </div>
           </div>
+
+          
 
         </div>
       </section>
@@ -76,44 +85,10 @@
           </div>
         </div>
 
-         <!-- <div class="layout layout__content grid-3 hyphens animate-inside" v-in-viewport.once>
-
-            <div>
-              <p class="text-huge"><strong>3.5 XRT</strong></p>
-              {{$ts('For each KSM. This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>6 XRT</strong></p>
-              {{$ts('Increased reward for participants in the collection of the first 6,300 KSM')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>{{$ts('For Robonomics Pioneer NFT holders')}}</strong></p>
-              {{$ts('Extra reward 6 XRT instead of 3.5 XRT for Robonomics Pioneer NFT holders who bond the first 27,000 KSM')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>{{$ts('Quick rewards')}}</strong></p>
-              {{$ts('You can get 50% of reward in the first month after the launch of the network')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>{{$ts('Exclusive APR up to 100%')}}</strong></p>
-              {{$ts('Full reward will be received after one year of staking with increased income up to 100%')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>{{$ts('Parachain native token')}}</strong></p>
-              {{$ts('All XRT tokens will be distributed in the Robonomics parachain')}}
-            </div>
-
-          </div> -->
-
       </section>
 
       <hr class="animate no-margins" v-in-viewport.once/>
-
+<!-- 
       <section id="crowdloan" class="auction-support layout">
 
           <h2 class="animate" v-in-viewport.once>{{$ts('Participate in the Robonomics crowdloan')}}</h2>
@@ -286,7 +261,7 @@
 
           </div>
 
-      </section>
+      </section> -->
 
 
       <hr class="animate no-margins" v-in-viewport.once/>
