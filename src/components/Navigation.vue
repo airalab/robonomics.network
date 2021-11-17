@@ -22,30 +22,33 @@
 </template>
 
 
-<style lang="scss">
+<style scoped>
 	.menu{
       max-width: 880px;
       display: block;
       margin: calc(var(--space)/2) auto;
+  }
 
-      div {
+  .menu div {
+
         padding: 1rem 0;
         border-bottom: 1px dotted var(--color-gray);
         margin-bottom: 1rem;
+  }
 
-        &:last-child {
+        .menu div:last-child {
           border-bottom: 0;
           margin-bottom: 0;
         }
 
-        p {
+        .menu div p {
           font-size: 0.85rem;
           line-height: 1.2;
           margin-bottom: 0;
         }
-      }
+      
 
-      a{
+      .menu div a{
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 0.05rem;
@@ -53,10 +56,9 @@
 
         display: block;
         margin-bottom: 0.1rem;
-
-        &::after {
+      }
+    
+    .menu div a::after {
           display: none !important
         }
-      }
-    }
 </style>

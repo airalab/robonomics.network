@@ -9,7 +9,7 @@ description: "Article provides a deep dive into the XRT distribution plan"
 abstract: "Article provides a deep dive into the XRT distribution plan"
 ---
 
-[![How to find distribution plan, guide for website, gif](./images/XRT-distribution/XRTdisthowto.gif)](https://robonomics.network/community#token)
+<!-- [![How to find distribution plan, guide for website, gif](./images/XRT-distribution/XRTdisthowto.gif)](https://robonomics.network/community#token) -->
 
 *Updated XRT distribution plan available at [https://robonomics.network/community#token](https://robonomics.network/community#token)*
 

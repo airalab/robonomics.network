@@ -43,7 +43,7 @@
 </template>
 
 
-<style lang="scss">
+<style scoped>
 
   footer {
     background: var(--color-darkgray);
@@ -51,41 +51,38 @@
     color: #fff;
     padding: calc(var(--space) * 0.5) 0;
     font-family: var(--font-family-code);
+  }
 
+
+  .layout {
+    text-align: left;
+  }
+
+  h4 {
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: #00FFFF !important;
+  }
+
+  .grid-4 > div:not(:first-child) {
     
-    .layout {
-      text-align: left;
-    }
+    padding: var(--space);
+    background: #333;
+  }
 
-    h4 {
-      text-align: left;
-    }
+  .grid-4 > div:not(:first-child) ul {
+    list-style: none;
+    margin-left: 0;
+  }
+    
 
-     a {
-        text-decoration: none;
-        color: #00FFFF !important;
-
-        &:hover {
-          color: #fff !important
-        }
-      }
-
-    .grid-4 > div:not(:first-child) {
-      // border-top: 1px solid var(--color-gray-mid);
-      padding: var(--space);
-      background: #333;
-
-      ul {
-        list-style: none;
-        margin-left: 0;
-      }
-    }
-
-    .footer-line {
-      padding: var(--space) 0;
-      border-top: 1px solid var(--color-gray-mid);
-      color: var(--color-gray-mid);
-    }
+  .footer-line {
+    padding: var(--space) 0;
+    border-top: 1px solid var(--color-gray-mid);
+    color: var(--color-gray-mid);
   }
 
   #footer-web3Badge {

@@ -35,9 +35,7 @@ module.exports = {
           },
         },
         plugins: [
-           
           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-          ['remark-highlight.js'],
         ]
       }
     },
@@ -52,7 +50,6 @@ module.exports = {
         template: './src/templates/Land.vue',
         plugins: [
           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-          ['remark-highlight.js'],
         ]
       }
     },
@@ -67,7 +64,6 @@ module.exports = {
         template: './src/templates/Community.vue',
         plugins: [
            ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-          ['remark-highlight.js'],
         ]
       }
     },
@@ -85,11 +81,11 @@ module.exports = {
     
   ],
 
-  chainWebpack: config => {
-    const svgRule = config.module.rule('svg')
-    svgRule.uses.clear()
-    svgRule
-      .use('vue-svg-loader')
-      .loader('vue-svg-loader')
-  }
+  // chainWebpack: config => {
+  //   const svgRule = config.module.rule('svg')
+  //   svgRule.uses.clear()
+  //   svgRule
+  //     .use('vue-svg-loader')
+  //     .loader('vue-svg-loader')
+  // }
 };

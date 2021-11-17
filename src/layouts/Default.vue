@@ -8,7 +8,7 @@
       <header class="header">
         <g-link class="banner-top" to="/kusama-slot" v-if="!BannerLink('/kusama-slot/')">
           <div class="layout__content">
-            {{$ts('Join Crowdloan')}} 🤖
+            {{$ts('Crowdloan ended, get ready for the next round')}} -> 🤖
           </div>
         </g-link>
 
@@ -61,7 +61,7 @@ query {
 </static-query>
 
 
-<style lang="scss">
+<style scoped>
 
   .banner-top {
     height: var(--space-bannertop);
@@ -76,26 +76,25 @@ query {
     overflow: hidden;
 
     background-color: var(--color-red);
-    // background-color: var(--color-purple-mid);
     color: var(--color-light) !important;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
 
     text-shadow: 2px 2px 0px #AF0098;
-    // text-shadow: 2px 2px 0px var(--color-blue);
     font-family: var(--font-family-code);
 
-    // background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
-		// 	<text x="20" y="20" font-size="10" style="fill:#ccc">🤖</text>\
-		// 	</svg>');
-		// 	background-size: 30px 30px;
-
-    &:hover {
-      color: #fff !important;
-      background-color: #AF0098;
-    }
+    /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
+			<text x="20" y="20" font-size="10" style="fill:#ccc">🤖</text>\
+			</svg>');
+			background-size: 30px 30px; */
   }
+
+  .banner-top:hover {
+    color: #fff !important;
+    background-color: #AF0098;
+  }
+  
 
   .header {
     --logo-padding: 0.6rem;
@@ -107,25 +106,22 @@ query {
     z-index:1000;
 
     background-color: var(--body-bg);
+  }
 
-    &-logo {
+    .header-logo {
       width: calc( var(--screen-padding-left) - calc(var(--logo-padding)*1.5));
       background-color: var(--body-bg);
-
-      a, img { display: block; }
     }
 
-    &-nav{
-  
-      a:not(:last-child) {
+      .header-logo a, .header-logo img { display: block; }
+    
+
+    .header-nav a:not(:last-child) {
         margin-right: var(--space);
       }
 
-      a {
-        &.active--exact { opacity: .5; }
-      }
-    }
-  }
+      .header-nav a.active--exact { opacity: .5; }
+  
 
   .header-content {
     display: flex;
@@ -137,22 +133,15 @@ query {
     padding-right: var(--screen-padding-right);
   }
 
-
-  // @media screen and (max-width:840px) {
-  //   .header {
-  //     align-items: center;
-  //   }
-  // }
-
   .sidetext {
     font-family: var(--font-family-code);
     font-size: calc(var(--base-font-size) * 0.8);
     text-transform: uppercase;
-
-    @media screen and (max-width: 350px) {
-      font-size: 70%;
-    }
   }
+
+  @media screen and (max-width: 350px) {
+      .sidetext { font-size: 70%; }
+    }
 
   .sidetext a:not(.button) {
     color: var(--text-color);
@@ -167,11 +156,9 @@ query {
     transform: rotate(-90deg);
     transform-origin: 0 0;
     white-space: nowrap;
-    
-    &, a {
-      &.active--exact { opacity: .5; }
-    }
   }
+
+  .sidetext-left.active--exact, .sidetext-left a.active--exact { opacity: .5; }
 
 
 .screen {
@@ -183,16 +170,13 @@ query {
   padding-top: var(--screen-padding-top);
   padding-bottom: var(--screen-padding-bottom);
   height: 100vh;
+  	scrollbar-width: none;
+}
 
-	&::-webkit-scrollbar { display: none; }
-	scrollbar-width: none;
+	.screen::-webkit-scrollbar { display: none; }
 
-	// background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">\
-	// 		<text x="30" y="30" font-size="12" style="fill:#ccc">•</text>\
-	// 		</svg>');
-	// 		background-size: 60px 60px;
 
-  &:after {
+  .screen:after {
     content: "";
     position: fixed;
     left: 0;
@@ -202,14 +186,12 @@ query {
     background: #fff;
     z-index: 1000;
   }
-}
+
 
 .screen-content {
   background-color: var(--color-gray-light);
-  // padding-bottom: var(--space);
 }
 
-// for pages with banner
 .screen:not(.banner) {
  padding-top: calc(var(--screen-padding-top) + var(--space-bannertop));
 }
@@ -218,13 +200,11 @@ query {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  & > * {
-    &:not(:last-child) {
+.header-side > *:not(:last-child) {
       margin-right: var(--space);
     }
-  }
-}
 
 </style>
 

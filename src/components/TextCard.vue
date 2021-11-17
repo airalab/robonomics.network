@@ -149,59 +149,73 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style scoped>
 
   .card {
     position: relative;
     padding: var(--space);
     margin-bottom: var(--space);
     font-weight: 300;
+  }
 
     /* ORIENTATION */
 
-    &.icon, &.image {
+    .card.icon, .card.image {
       display: grid;
       gap: var(--space);
       align-content: start; 
       align-items: start;
     }
 
-    &.vertical {
-      &.alignContent-none {
-        &, h1, h2, h3, h4, h5 { text-align: center; }
-      }
+    .card.vertical.alignContent-none,
+    .card.vertical.alignContent-none h1,
+    .card.vertical.alignContent-none h2,
+    .card.vertical.alignContent-none h3,
+    .card.vertical.alignContent-none h4,
+    .card.vertical.alignContent-none h5,
 
-      &.icon, &.image { grid-template-rows: auto 1fr; } //pic + content
+    .card.alignContent-center,
+    .card.alignContent-center h1,
+    .card.alignContent-center h2,
+    .card.alignContent-center h3,
+    .card.alignContent-center h4,
+    .card.alignContent-center h5
+    { text-align: center; }
+
+    .card.vertical.icon, .card.vertical.image { grid-template-rows: auto 1fr; } /* pic + content */
+
+    .card.gorizontal.alignContent-none,
+    .card.gorizontal.alignContent-none h1,
+    .card.gorizontal.alignContent-none h2,
+    .card.gorizontal.alignContent-none h3,
+    .card.gorizontal.alignContent-none h4,
+    .card.gorizontal.alignContent-none h5,
+
+    .card.alignContent-left,
+    .card.alignContent-left h1,
+    .card.alignContent-left h2,
+    .card.alignContent-left h3,
+    .card.alignContent-left h4,
+    .card.alignContent-left h5
+    { text-align: left; }
+
+    .card.alignContent-right,
+    .card.alignContent-right h1,
+    .card.alignContent-right h2,
+    .card.alignContent-right h3,
+    .card.alignContent-right h4,
+    .card.alignContent-right h5
+    { text-align: right; }
+    
+    @media screen and (min-width: 650px) {
+      .card.gorizontal.icon, .card.gorizontal.image { grid-template-columns: auto 1fr; } /* pic + content */
     }
 
-    &.gorizontal {
-      &.alignContent-none {
-        &, h1, h2, h3, h4, h5 { text-align: left; }
-      }
-
-      @media screen and (min-width: 650px) {
-        &.icon, &.image { grid-template-columns: auto 1fr; } //pic + content
-      }
-
-      @media screen and (max-width: 650px) {
-        &.icon, &.image { grid-template-columns: 1fr; }
-      }
-      
+    @media screen and (max-width: 650px) {
+      .card.gorizontal.icon, .card.gorizontal.image { grid-template-columns: 1fr; }
     }
 
-    &.alignContent-center { 
-      &, h1, h2, h3, h4, h5 { text-align: center; }
-    }
-
-    &.alignContent-left {
-      &, h1, h2, h3, h4, h5 { text-align: left; }
-    }
-
-    &.alignContent-right {
-      &, h1, h2, h3, h4, h5 { text-align: right; }
-    }
-
-    &.alignContentV-middle {
+    .card.alignContentV-middle {
       align-content: center; 
       align-items: center;
     }
@@ -209,50 +223,50 @@ export default {
     /* end of ORIENTATION */
 
     /* COLORING */
-    --color-back: transparent;
-    --color-text: #000;
-    --color-iconback: #000; 
-    
-    background-color: var(--color-back);
-    color: var(--color-text);
-
-    .pic.round.icon { background-color: var(--color-iconback); }
-
-    &.oldy__link:hover {
-      transform: translateY(.2rem);
-
-      .pic.round.icon {
-        --color-iconback: var(--link-color);
-      }
+    .card {
+      --color-back: transparent;
+      --color-text: #000;
+      --color-iconback: #000; 
+      
+      background-color: var(--color-back);
+      color: var(--color-text);
     }
 
-    &.white {
+    .card .pic.round.icon { background-color: var(--color-iconback); }
+
+    .card.oldy__link:hover {
+      transform: translateY(.2rem);
+    }
+
+    .card.oldy__link:hover .pic.round.icon {
+        --color-iconback: var(--link-color);
+      }
+
+    .card.white {
       --color-back: #fff;
       --color-text: #000;
     }
 
 
-    &.blue {
+    .card.blue {
       --oldy-box-color: #fff;
       --color-back: var(--link-color);
       --color-text: #fff;
+    }
 
-      .pic.round.icon {
+    .card.blue .pic.round.icon {
         background-color: #000;
       }
 
-      &.oldy__link:hover {
-        .pic.round.icon {
+      .card.blue.oldy__link:hover .pic.round.icon {
           background-color: var(--link-color);
-        }
       }
-    }
     /* end of COLORING */
 
 
     /* PICTURES */
 
-    .pic {
+    .card .pic {
       margin: 0 auto;
       overflow: hidden;
 
@@ -261,30 +275,29 @@ export default {
       justify-content: center;
       align-items: center;
 
-      &.round.icon {
-        img {
-          max-width: 60%;
-          max-height: 60%;
-        }
-      }
-
       /* PICTURES -- SIZING */
       --image-size: 5rem;
       width: var(--image-size);
-      &.round {
+    }
+
+    .card .pic.round.icon img {
+          max-width: 60%;
+          max-height: 60%;
+        }
+
+      .card .pic.round {
         height: var(--image-size);
         border-radius: calc(var(--image-size)*2);
       }
 
-      &.mid { --image-size: 10rem }
-      &.big { --image-size: 15rem}
-    }
+      .card .pic.mid { --image-size: 10rem }
+      .card .pic.big { --image-size: 15rem}
+    
 
     /*end of PICTURES */
 
     /* LINK */
-    .link {
-      &.overlap {
+    .link.overlap {
         position: absolute;
         top: 0;
         left: 0;
@@ -293,18 +306,20 @@ export default {
         opacity: 0;
         z-index: 1;
       }
-    }
+    
     /* end of LINK */
 
     /* CONTENT */
-    .content {
-      h1, h2, h3, h4, h5, p {
-        &:not(:last-child) {
-          margin-bottom: calc(var(--space) * 0.7);
-        }
-      }
+    .card .content h1:not(:last-child),
+    .card .content h2:not(:last-child),
+    .card .content h3:not(:last-child),
+    .card .content h4:not(:last-child),
+    .card .content h5:not(:last-child),
+    .card .content p:not(:last-child)
+    {
+      margin-bottom: calc(var(--space) * 0.7);
     }
     /* end of CONTENT */
 
-  }
+  
 </style>

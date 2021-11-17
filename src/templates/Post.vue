@@ -92,31 +92,31 @@ query($id: ID!) {
 </script>
 
 
-<style lang="scss">
+<style scoped>
   .post {
     padding: var(--space);
     text-align: left;
     font-weight: 400;
+  }
 
-    &__header {
+  .post__header {
       margin-top: var(--space-text);
       max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
+  }
 
-      img {
-        display: block;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+  .post__header img {
+      display: block;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    strong, b {
+  .post strong, .post b {
       background-color: #f8ffb5;
     }
 
-    a { word-break: break-all; }
-  }
+  .post a { word-break: break-all; }
 </style>
 

@@ -96,25 +96,20 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
   .icon-tool{
     width: 1.2rem;
   }
 
-  .link-copy {
-    svg { display: none; }
-    svg.copy { display: block; }
-  }
+  .link-copy svg { display: none; }
+  .link-copy svg.copy { display: block; }
+  
+  .link-copy svg { display: none; }
+  .link-copy svg.ok { display: block; }
 
-  .link-copy-ok {
-    svg { display: none; }
-    svg.ok { display: block; }
-  }
+  .link-copy svg { display: none; }
+  .link-copy svg.error { display: block; }
 
-  .link-copy-error {
-    svg { display: none; }
-    svg.error { display: block; }
-  }
 
 </style>

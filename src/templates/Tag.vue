@@ -48,10 +48,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  .layout__title__tag {
-    h1 { margin-bottom: 0; }
-    h2 { margin-top: 0; }
-  }
+<style scoped>
+  .layout__title__tag h1 { margin-bottom: 0; }
+  .layout__title__tag h2 { margin-top: 0; }
 </style>
 

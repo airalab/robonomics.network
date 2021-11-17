@@ -481,17 +481,17 @@ elements in the chain of providing the user with services. In other words, where
   }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 
-  .vision {
-    article {
+
+    .vision article {
       text-align: left;
-
-      h2 {
-        text-align: left;
-      }
     }
-  }
+
+    .vision article h2 {
+      text-align: left;
+    }
+  
 
   /* 1 ---- */
   .vision-banner {
@@ -499,36 +499,39 @@ elements in the chain of providing the user with services. In other words, where
     background: var(--color-gradient-mars);
     min-height: 450px;
     overflow: hidden;
+  }
 
-    h1 {
+    .vision-banner h1 {
       margin-top: calc(var(--space) * 0.5);
+    }
 
 
-      b {
+      .vision-banner h1 b {
         display: inline-block;
         margin-right: var(--space);
         font-weight: 700;
         font-size: 80%;
-
-        &:last-child {
-          margin-right: 0;
-        }
       }
 
-      @media screen and (max-width:800px) {
-        font-size: calc(var(--base-font-size) * 2);
+        .vision-banner h1 b:last-child {
+          margin-right: 0;
+        }
+      
 
-        p { font-size: 70%; }
+      @media screen and (max-width:800px) {
+        .vision-banner { font-size: calc(var(--base-font-size) * 2); }
+
+        .vision-banner p { font-size: 70%; }
       }
 
       @media screen and (max-width: 400px) {
-        p {
+        .vision-banner p {
           margin-bottom: calc(var(--space)*1.5);
         }
       }
-    }
+    
 
-    .vision-city {
+    .vision-banner .vision-city {
       position: absolute;
       bottom: 0;
       width: 580px;
@@ -536,18 +539,21 @@ elements in the chain of providing the user with services. In other words, where
       z-index: 0;
     }
 
-    & > *:not(.vision-city .vision-banner .vision-decortext) {
+    .vision-banner > *:not(.vision-city):not(.vision-banner):not(.vision-decortext) {
       position: relative;
       z-index: 1;
     }
-  }
+  
 
   .vision-logo {
     position: relative;
     z-index: 1;
     margin-top: calc(var(--space) * 1.7);
+    visibility: hidden;
+		opacity: 0;
+  }
 
-    .logo {
+    .vision-logo .logo {
       width: 130px;
       position: relative;
       z-index: 1;
@@ -555,7 +561,7 @@ elements in the chain of providing the user with services. In other words, where
       transform: translateX(10%);
     }
 
-    .earth {
+    .vision-logo .earth {
       position: absolute;
       width: 250px;
       left: calc(50% - 45px);
@@ -566,24 +572,21 @@ elements in the chain of providing the user with services. In other words, where
       transform: translateX(-10%);
     }
 
-    visibility: hidden;
-		opacity: 0;
     
-
-    &.in-viewport {
+    .vision-logo.in-viewport {
       animation: FadeIn 2s 0.4s linear forwards;
+    }
 
-      .logo, .earth {
+    .vision-logo.in-viewport .logo, .vision-logo.in-viewport .earth {
         animation: logoAnimation 2s 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
       }
-    }
 
     @keyframes logoAnimation {
       to{
         transform: translateX(0);
       }
     }
-  }
+  
 
   .vision-subtitle {
     position: absolute;
@@ -593,8 +596,9 @@ elements in the chain of providing the user with services. In other words, where
     right: 0;
     text-align: center;
     white-space: nowrap;
+  }
 
-    .text {
+    .vision-subtitle .text {
       display: inline-block;
       padding: 0 0.4rem;
       margin: 0;
@@ -602,37 +606,38 @@ elements in the chain of providing the user with services. In other words, where
       color: #fff;
       font-weight: 300;
     }
-  }
+
 
   .vision-decortext {
     position: absolute;
     z-index: 0;
     text-align: left;
     opacity: 0.4;
+  }
     
-    &.left {
+    .vision-decortext.left {
       font-size: 60%;
       bottom: 30px;
       left: 50px;
     }
 
-    &.right {
+    .vision-decortext.right {
       top: 30px;
       right: 30px;
       max-width: 250px;
-
-      @media screen and (max-width: 500px) {
-        right: 10px;        
-      }
     }
-  }
+
+    @media screen and (max-width: 500px) {
+        .vision-decortext.right { right: 10px; }       
+      }
+  
 
 
   /* 2 ---- */
 
   .vision-iot {
-    // margin-bottom: 0;
     padding-right: 0;
+  }
 
     .vision-iot-pic {
       justify-self: center;
@@ -658,27 +663,29 @@ elements in the chain of providing the user with services. In other words, where
       }
 
       .vision-iot-pic {
-        // transform: scale(0.8);
         grid-row-start: 1;
         align-self: center;
         overflow: hidden;
       }
 
-      grid-template-columns: 1fr;
-      grid-template-rows: 400px 1fr;
+      .vision-iot {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr;
+      }
     }
-  }
+  
 
   #parallax-iotapp {
     position: relative;
     width: 516px;
     height: 545px;
     margin: 0 auto;
+  }
 
-    img {
+   #parallax-iotapp img {
       position: absolute;
     }
-  }
+  
 
   .parallax-layer {
     position: absolute;
@@ -738,8 +745,9 @@ elements in the chain of providing the user with services. In other words, where
     padding-bottom: calc(var(--space) * 2);
     overflow: hidden;
     margin-bottom: 0;
+  }
 
-    .bg {
+    .vision-beginning .bg {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -748,23 +756,25 @@ elements in the chain of providing the user with services. In other words, where
     }
 
     @media screen and (max-width: 660px) {
-      padding-bottom: 200px;
+      .vision-beginning { padding-bottom: 200px; }
     }
-  }
 
+  .vision-beginning-text, .vision-beginning-text h2 { text-align: left; }
   .vision-beginning-text {
-    &, h2 { text-align: left; }
     width: 50%;
     float: right;
     position: relative;
     z-index: 1;
     max-width: 700px;
+  }
 
     @media screen and (max-width: 660px) {
-      float: none;
-      width: 100%;
+      .vision-beginning-text {
+        float: none;
+        width: 100%;
+      }
     }
-  }
+  
 
   .vision-beginning-link {
     position: absolute;
@@ -774,15 +784,19 @@ elements in the chain of providing the user with services. In other words, where
 
     width: 100px;
 
-    @media screen and (max-width: 660px) {
-      bottom: calc(var(--space)*2);
-      right: calc(var(--space)*2);
-      top: auto;
-      left: auto;
-    }
+    
 
     animation: FloatY 2s linear 0.4s infinite;
   }
+
+  @media screen and (max-width: 660px) {
+      .vision-beginning-link {
+        bottom: calc(var(--space)*2);
+      right: calc(var(--space)*2);
+      top: auto;
+      left: auto;
+      }
+    }
 
   /* 4 ----- */
   .vision-cybernetics {
@@ -793,52 +807,55 @@ elements in the chain of providing the user with services. In other words, where
     overflow: hidden;
 
     position: relative;
+  }
 
-    article {
+    .vision-cybernetics article {
       max-width: 50%;
       position: relative;
       z-index: 2;
     }
 
-    a {
+    .vision-cybernetics a {
       color: #fff;
       font-weight: 500;
-
-      &:hover {
-        color: var(--color-blue-light)
-      }
     }
 
-    .bg {
+    .vision-cybernetics a:hover {
+        color: var(--color-blue-light)
+      }
+
+    .vision-cybernetics .bg {
       position: absolute;
       bottom: 0;
       left: 40%;
       z-index: 1;
+    }
 
-      img {
+    .vision-cybernetics .bg img {
         display: block;
         max-width: 1400px;
       }
-    }
 
-    .numbers {
+    .vision-cybernetics .numbers {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 60%;
       writing-mode: vertical-lr;
       text-orientation: upright;
+    }
 
-      span {
+    .vision-cybernetics .numbers span {
         display: inline-block;
         font-family: var(--font-family-code);
         color: var(--color-blue-light);
+      }
 
-        &:nth-child(n) {
+    .vision-cybernetics .numbers span:nth-child(n) {
           animation: NumbersDown 160s linear 0.2s infinite;
         }
 
-        &:nth-child(2n) {
+        .vision-cybernetics .numbers span:nth-child(2n) {
           animation: NumbersUp 160s linear 0.2s infinite;
         }
 
@@ -859,71 +876,71 @@ elements in the chain of providing the user with services. In other words, where
             transform: translateY(-100%);
           }
         }
-      }
-    }
 
 
     @media screen and (max-width: 1600px) {
-      .bg {
+      .vision-cybernetics .bg {
         left: 20%;
       }
     }
 
     @media screen and (max-width: 1200px) {
-      .bg {
+      .vision-cybernetics .bg {
         left: 30%;
+      }
 
-        img {
+      .vision-cybernetics .bg img {
           max-width: 1000px;
         }
-      }
     }
 
     @media screen and (max-width: 1000px) {
-      padding-bottom: 0 !important;
+      .vision-cybernetics { padding-bottom: 0 !important; }
 
-      article {
+      .vision-cybernetics article {
         max-width: 100%;
       }
 
-      .bg {
+      .vision-cybernetics .bg {
         position: static;
+      }
 
-        img {
+      .vision-cybernetics .bg img {
           max-width: 140%;
           margin-left: - 20%;
         }
-      }
 
-      .numbers {
+      .vision-cybernetics .numbers {
         opacity: 0.3;
       }
     }
 
-  }
+  
 
   /* 5, 6, 7 ----- */
-  .vision-fathers {
 
-    a {
+    .vision-fathers a {
       color: var(--color-dark)
     }
 
     @media screen and (min-width: 1100px){
-      display: grid;
+      .vision-fathers {
+        display: grid;
       grid-template-columns: 500px 1fr;
+      }
     }
 
     @media screen and (min-width: 1500px){
-      article {
+      .vision-fathers article {
         column-count: 2;
-        // column-fill: auto;
       }
     }
 
     @media screen and (max-width: 1100px) and (min-width: 560px){
-      column-count: 2;
-      column-gap: var(--space);
+      .vision-fathers {
+        column-count: 2;
+        column-gap: var(--space);
+      }
     }
 
     @media screen and (max-width: 1100px) {
@@ -931,168 +948,175 @@ elements in the chain of providing the user with services. In other words, where
         margin-bottom: calc(var(--space)*2);
       }
     }
-  }
+  
 
   .vision-fathers-image {
     max-width: 550px;
     text-align: left;
+  }
 
-    img {
+    .vision-fathers-image img {
       display: block;
       width: 80%;
       margin: var(--space) auto var(--space)
     }
 
-    h2 {
+    .vision-fathers-image h2 {
       text-align: left;
       margin: 0 0 calc(var(--space)/2);
     }
-  }
+  
 
   /* 6 ----- */
   .vision-cps {
     grid-template-columns: 1fr 1fr;
     padding-left: 0 !important;
+  }
 
-    h2 {
+  .vision-cps h2 {
       max-width: 500px;
       text-align: left;
       padding-left: var(--space)
     }
 
-    img {
+    .vision-cps img {
       display: block;
       width: 90%;
       max-width: 1000px;
       margin: calc(var(--space)*3) 0 var(--space)
     }
 
-    article {
+    .vision-cps article {
       padding-left: var(--space)
     }
 
-    .vision-fathers-image {
+    .vision-cps .vision-fathers-image {
       max-width: 100%;
     }
-  }
 
   /* 7 ----- */
-  .vision-industry40 {
 
-    .layout {
+
+    .vision-industry40 .layout {
       display: grid;
       grid-template-columns: 1.5fr 2fr;
       gap: calc(var(--space) * 2);
+    }
 
-      h2 {
-        text-align: left;
+    .vision-industry40 .layout h2 {
+      text-align: left;
+    }
 
-        b {
-          display: block;
-        }
+      .vision-industry40 .layout h2 b {
+        display: block;
       }
 
-      .robot {
-        img {
+      .vision-industry40 .robot img {
           float: right;
           width: 10rem;
           margin: 1rem;
-        }
       }
 
-      .industry40 {
+      .vision-industry40 .industry40 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: calc(var(--space) *  0.7);
         align-items: end;
+      }
 
-        img {
+        .vision-industry40 .industry40 img {
           margin: 0 auto;
         }
 
-        .text {
+        .vision-industry40 .industry40 .text {
           text-align: left;
           margin-top: var(--space);
           padding: 0 0.5rem;
           line-height: 1.1;
+        }
 
-          h5 {
+        .vision-industry40 .industry40 .text h5 {
             margin: 0;
             font-weight: bold;
             letter-spacing: normal;
             text-align: left;
           }
 
-          small {
+          .vision-industry40 .industry40 .text small {
             display: block;
             margin-top: 0.5rem;
           }
 
-          .text-color-blue {
+          .vision-industry40 .industry40 .text .text-color-blue {
             font-weight: bold;
           }
-        }
-      }
+        
+      
 
       @media screen and (max-width: 1280px) {
-        grid-template-columns: 1fr;
+        .vision-industry40 { grid-template-columns: 1fr; }
       }
 
       @media screen and (max-width: 750px) {
           
-          .industry40 {
+          .vision-industry40 .industry40 {
             grid-template-columns: 1fr;
+          }
 
-            & > div {
+          .vision-industry40 .industry40 > div {
               display: grid;
               grid-template-columns: 120px 1fr;
               align-items: center;
               gap: var(--space)
             }
-          }
+          
 
-          .robot img {
+          .vision-industry40 .robot img {
             float: none;
             display: block;
             margin: 0 auto;
           }
-        }
+        
 
     }
 
-  }
+  
 
   /* 8 ----- */
-  .vision-bitcoin {
-
-    .vision-bitcoin-conslution {
+  .vision-bitcoin .vision-bitcoin-conslution {
       text-align: left;
       font-style: italic;
       font-size: 120%;
       font-weight: 500;
     }
-  }
 
   /* ----- */
-  .vision-chains {
-    & , a { color: #fff; }
-    background: linear-gradient(to right, #e60f79, #262049 60%, #81a8f8);
-    background-position:  0;
-    background-size: 200%;
-    animation: 15s TextGradient linear infinite;
 
-    .grid-2 {
+    .vision-chains, .vision-chains a { color: #fff; }
+    .vision-chains {
+      background: linear-gradient(to right, #e60f79, #262049 60%, #81a8f8);
+      background-position:  0;
+      background-size: 200%;
+      animation: 15s TextGradient linear infinite;
+    }
+
+    .vision-chains .grid-2 {
 
       text-transform: uppercase;
       letter-spacing: 1px;
       margin: calc(var(--space) * 2) 0;
+    }
 
-      div:first-child {
-        &, h4 { text-align: right; }
+     .vision-chains .grid-2 div:first-child {
         position: relative;
         padding-right: var(--space);
+        text-align: right;
 
-        &:after {
+      }
+
+      .vision-chains .grid-2 div:first-child h4 { text-align: right; }
+
+      .vision-chains .grid-2 div:first-child:after {
           content:"";
           display: block;
           position: absolute;
@@ -1105,43 +1129,35 @@ elements in the chain of providing the user with services. In other words, where
           transform-origin: 50% 100%;
         }
 
-      }
+     .vision-chains .grid-2 div, .vision-chains .grid-2 div h4 { text-align: left; }
+      
 
-      div:last-child {
-        &, h4 { text-align: left; }
-      }
-
-      p {
+      .vision-chains .grid-2 p {
         margin-bottom: 1rem;
         font-size: 80%;
       }
 
-      &.in-viewport div:first-child:after {
+      .vision-chains .grid-2.in-viewport div:first-child:after {
         animation: ScaleY 0.4s ease-out 0.4s forwards;
       }
 
 
       @media screen and (max-width: 570px) {
-          grid-template-columns: 1fr;
+          .vision-chains .grid-2 { grid-template-columns: 1fr; }
 
-          div {
-            &, h4 { text-align: center !important; }
+          .vision-chains .grid-2 div, .vision-chains .grid-2 div h4 { text-align: center !important; }
 
-            &:after {
+          .vision-chains .grid-2 div:after {
               display: none !important;
             }
-          }
+          
         }
 
       
-    }
-
-    .text-col-3 {
+    
       @media screen and (max-width: 1100px) {
-        column-count: 1;
+        .text-col-3 { column-count: 1; }
       }
-    }
-  }
 
   /* ----- */
 
@@ -1150,16 +1166,17 @@ elements in the chain of providing the user with services. In other words, where
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space);
     text-align: left;
+  }
 
     @media screen and (min-width:1520px) {
-      grid-template-columns: repeat(6, 1fr);
+      .vision-books-books { grid-template-columns: repeat(6, 1fr); }
     }
 
     @media screen and (max-width: 870px) {
-      grid-template-columns: 1fr;
+      .vision-books-books { grid-template-columns: 1fr; }
     }
 
-    .book {
+    .vision-books-books .book {
       display: grid;
       align-content: space-between; 
       text-decoration: none;
@@ -1171,12 +1188,13 @@ elements in the chain of providing the user with services. In other words, where
       cursor: pointer;
 
       box-shadow: 4px 4px 0 #000;
+    }
 
-      * {
+      .vision-books-books .book * {
         pointer-events: none;
       }
 
-      span {
+      .vision-books-books .book span {
         --switch-size: 34px;
         display: grid;
         justify-items: center;
@@ -1191,24 +1209,24 @@ elements in the chain of providing the user with services. In other words, where
         right: calc(var(--space) * 0.5);
       }
 
-      small {
+      .vision-books-books .book small {
         display: block;
         margin-top: var(--space)
       }
 
-      &:nth-child(1):hover, &:nth-child(1).active { background-color: #cd76ff; }
-      &:nth-child(2):hover, &:nth-child(2).active { background-color: #0ccfd6; }
-      &:nth-child(3):hover, &:nth-child(3).active { background-color: #f126bf; }
-      &:nth-child(4):hover, &:nth-child(4).active { background-color: #f74873; }
-      &:nth-child(5):hover, &:nth-child(5).active { background-color: #9865f7; }
-      &:nth-child(6):hover, &:nth-child(6).active { background-color: #36b85d; }
+      .vision-books-books .book:nth-child(1):hover, .vision-books-books .book:nth-child(1).active { background-color: #cd76ff; }
+      .vision-books-books .book:nth-child(2):hover, .vision-books-books .book:nth-child(2).active { background-color: #0ccfd6; }
+      .vision-books-books .book:nth-child(3):hover, .vision-books-books .book:nth-child(3).active { background-color: #f126bf; }
+      .vision-books-books .book:nth-child(4):hover, .vision-books-books .book:nth-child(4).active { background-color: #f74873; }
+      .vision-books-books .book:nth-child(5):hover, .vision-books-books .book:nth-child(5).active { background-color: #9865f7; }
+      .vision-books-books .book:nth-child(6):hover, .vision-books-books .book:nth-child(6).active { background-color: #36b85d; }
 
-      &.active {
-        span {
+      .vision-books-books .book.active span {
           background: var(--color-darkgray);
           text-align: center;
+        }
           
-          &:before {
+          .vision-books-books .book.active span:before {
             content: "+";
             font-weight: 300;
             line-height: 1;
@@ -1216,10 +1234,7 @@ elements in the chain of providing the user with services. In other words, where
             display: inline-block;
             vertical-align: middle;
           }
-        }
-      }
-
-    }
-  }
+    
+  
 
 </style>

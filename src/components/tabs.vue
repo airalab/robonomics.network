@@ -22,40 +22,35 @@
 </template>
 
 
-<style lang="scss">
+<style scoped>
 
-  .tabs {
-    &__list {
+
+    .tabs__list {
         list-style: none;
         width: 100%;
         margin-left: 0;
         text-align: center;
-
-        li {
+    }
+    
+     .tabs__list li {
             display: inline-block;
             margin-left: 2rem;
+        }
 
-            &:first-child {
+        .tabs__list li:first-child {
                 margin-left: 0;
             }
-        }
-    }
-
-    &__item {
-    
-        a {
+            
+  .tabs__item a {
           text-transform: uppercase;
           letter-spacing: 0.05rem;
           text-decoration: none;
           font-weight: 400;
         }
 
-        &.is-active a {
+        .tabs__item.is-active a {
           color: var(--color-text);
         }
-    }
-    
-  }
 
   
 </style>

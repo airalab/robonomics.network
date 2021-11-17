@@ -147,88 +147,103 @@
 
 </template>
 
-<style scoped lang="scss">
+<style scoped>
    .st0{fill:#D7C2FF;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:#C0CEFF;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{fill:#E64C80;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st3{opacity:0.14;}
-	.st4{fill:#03A5ED;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st5{fill:#ED1E79;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st6{fill:#E1E9FF;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st7{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st8{opacity:8.000000e-02;}
-	.st9{fill:#ED1E79;}
-	.st10{fill:#E6E6E6;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st11{fill:#B3B3B3;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st12{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st13{fill:#ED1E79;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .st1{fill:#C0CEFF;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .st2{fill:#E64C80;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .st3{opacity:0.14;}
+    .st4{fill:#03A5ED;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st5{fill:#ED1E79;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st6{fill:#E1E9FF;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .st7{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .st8{opacity:8.000000e-02;}
+    .st9{fill:#ED1E79;}
+    .st10{fill:#E6E6E6;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .st11{fill:#B3B3B3;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .st12{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .st13{fill:#ED1E79;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
     .heart { fill:#ED1E79; }
     
-    .animate.in-viewport {
-        .head {
+        .animate.in-viewport .head {
             transform-origin: 50% 50%;
             transform: rotate(3deg);
         }
 
-        .hands {
+        .animate.in-viewport .hands {
             transform-origin: 100% 100%;
             transform: rotate(6deg);
         }
 
-        .body {
+        .animate.in-viewport .body {
             transform-origin: 0 100%;
             transform: rotate(-3deg);
         }
 
-        .curl {
+        .animate.in-viewport .curl {
             transform-origin: 50% 0;
             transform: rotate(-7deg);
         }
 
-        .tail {
+        .animate.in-viewport .tail {
             transform-origin: 50% 50%;
             transform: rotate(3deg);
 
-            .st4 {
+        }
+
+        .animate.in-viewport .tail .st4 {
                 transform-origin: 50% 10%;
                 transform: rotate(-10deg);
             }
-        }
 
-        .mouth {
+        .animate.in-viewport .mouth {
             transform-origin: 50% 50%;
             transform: rotate(5deg);
         }
 
-        .eye {
+        .animate.in-viewport .eye {
             transform: translateY(1%);
-
-            path:not(.main) {
-                transform: translateY(-2%);
-            }
         }
 
-        .skirt {
+        .animate.in-viewport .eye path:not(.main) {
+                transform: translateY(-2%);
+            }
+
+        .animate.in-viewport .skirt {
             transform-origin: 0% 100%;
             transform: rotate(-4deg);
         }
 
-        .head, .hands, .body, .curl, .tail, .tail .st4, .mouth, .eye, .eye path, .skirt {
+        .animate.in-viewport .head,
+        .animate.in-viewport .hands, 
+        .animate.in-viewport .body,
+        .animate.in-viewport .curl,
+        .animate.in-viewport .tail,
+        .animate.in-viewport .tail .st4,
+        .animate.in-viewport .mouth,
+        .animate.in-viewport .eye,
+        .animate.in-viewport .eye path,
+        .animate.in-viewport .skirt {
             animation: rotateNull 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s forwards;
         }
 
-        .hands, .curl, .tail, .mouth, .eye, .eye path, .skirt {
+        .animate.in-viewport .hands,
+        .animate.in-viewport .curl,
+        .animate.in-viewport .tail,
+        .animate.in-viewport .mouth,
+        .animate.in-viewport .eye,
+        .animate.in-viewport .eye path,
+        .animate.in-viewport .skirt {
             animation-delay: 0.6s;
             animation-duration: 1.2s;
             animation-timing-function: linear;
         }
 
-        .eye, .eye path {
+        .animate.in-viewport .eye, .animate.in-viewport .eye path {
             animation-name: FloatYUp;
         }
 
-        .cheeks {
+        .animate.in-viewport .cheeks {
             opacity: 0.2;
             animation: CheekPale 6s linear 3s infinite;
         }
@@ -245,23 +260,20 @@
             }
         }
 
-        .heart {
+        .animate.in-viewport .heart {
             transform: translateX(100px) translateY(100px);
             opacity: 0;
             visibility: hidden;
             animation: FadeInOut 3s linear 1s infinite, FloatYUp 3s linear 1s infinite;
-
-            &:nth-child(1) { animation-delay: 2s;  }
-            &:nth-child(2) { animation-delay: 3s;  }
-            &:nth-child(3) { animation-delay: 4s;  }
-            &:nth-child(4) { animation-delay: 5s;  }
-            &:nth-child(5) { animation-delay: 6s;  }
         }
-    }
 
-    .hearts {
-        &:nth-child(1) {  transform: translate(-30px, 60px); }
-        &:nth-child(2) {  transform: translate(50px, -10px); }
-        &:nth-child(3) {  transform: translate(0px, 10px); }
-    }
+        .animate.in-viewport .heart:nth-child(1) { animation-delay: 2s;  }
+        .animate.in-viewport .heart:nth-child(2) { animation-delay: 3s;  }
+        .animate.in-viewport .heart:nth-child(3) { animation-delay: 4s;  }
+        .animate.in-viewport .heart:nth-child(4) { animation-delay: 5s;  }
+        .animate.in-viewport .heart:nth-child(5) { animation-delay: 6s;  }
+        
+         .hearts:nth-child(1) {  transform: translate(-30px, 60px); }
+        .hearts:nth-child(2) {  transform: translate(50px, -10px); }
+        .hearts:nth-child(3) {  transform: translate(0px, 10px); }
 </style>

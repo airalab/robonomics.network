@@ -42,7 +42,3 @@ query{
 
 </script>
 
-
-<style lang="scss">
- 
-</style>
