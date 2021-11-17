@@ -35,12 +35,13 @@
 
 
 
-<style lang="scss">
+<style scoped>
 
   .share {
     margin-bottom: var(--space);
+  }
 
-    &__link {
+    .share__link {
       display: grid;
       grid-template-columns: 1fr 3fr 1fr;
       gap: calc(var(--space)/2);
@@ -48,75 +49,64 @@
       text-decoration: none;
       color: var(--color-text) !important;
       text-align: left;
-      // background-color: var(--color-light);
       padding: 1rem;
-
-      &:last-child { margin-bottom: 0; }
-      &:after { display: none !important; }
-
-      // &:hover {
-      //   box-shadow: 0 .2rem 0 var(--link-color);
-      // }
-
-      &:visited { color: var(--link-color-visited) !important; }
-
-      @media screen and (max-width: 450px) {
-        grid-template-columns: 1fr !important;
-      }
     }
 
-    &__title, &__description {
+      .share__link:last-child { margin-bottom: 0; }
+      .share__link:after { display: none !important; }
+
+      .share__link:visited { color: var(--link-color-visited) !important; }
+
+      @media screen and (max-width: 450px) {
+        .share__link { grid-template-columns: 1fr !important; }
+      }
+    
+
+    .share__title, .share__description {
       display: block;
     }
 
-    &__title {
+    .share__title {
       font-weight: 500;
       line-height: 1.2;
     }
 
-    &__description {
+  .share__description {
       margin-top: 0.5rem;
     }
 
-    &__img {
-
-      img {
+      .share__img img {
         display: block;
         max-width: 100%;
       }
 
       @media screen and (max-width: 450px) {
-        display: none;
+        .share__img { display: none; }
       }
 
-    }
 
-    &__buttons {
-    
       @media screen and (min-width: 450px) {
-        justify-self: end;
+        .share__buttons { justify-self: end; }
       }
-    }
+    
 
-    .button {
+    .share .button {
       display: inline-block;
       white-space: nowrap;
     }
 
-  }
+  
 
 
-  .tab-science {
-    .share__link {
+  .tab-science .share__link {
       grid-template-columns: 4fr 1fr;
     }
-  }
+  
 
-  .tab-intouch {
-    .share__link {
+  .tab-intouch .share__link {
       grid-template-columns: minmax(auto, 60px) 3fr 1fr;
     }
-  }
+  
   
 </style>
 

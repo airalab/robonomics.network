@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped>
   .post-meta {
     font-size: 90%;
     margin-bottom: calc(var(--space)*2);
@@ -34,17 +34,17 @@ export default {
     padding: var(--space) 0;
 
     text-align: center;
-
-    span, a {
-      margin-left: .4rem;
-
-      &:first-child {
-        margin-left: 0;
-      }
-    }
   }
 
-  span.divide {
+  .post-meta span, .post-meta a {
+    margin-left: .4rem;
+  }
+
+  .post-meta span:first-child, .post-meta a:first-child {
+    margin-left: 0;
+  }
+
+  .post-meta span.divide {
     margin-left: 0;
   }
 </style>

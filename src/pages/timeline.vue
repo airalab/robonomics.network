@@ -61,33 +61,36 @@
   </layout>
 </template>
 
-<style lang="scss">
+<style scoped>
 
   .timeline {
     text-align: left;
     padding: var(--space) 0;
+  }
 
     @media screen and (min-width: 720px) {
-      border-left: 3px solid var(--color-green);
-      padding-left: 0.8rem;
+      .timeline {
+        border-left: 3px solid var(--color-green);
+        padding-left: 0.8rem
+      }
     }
 
-    &:first-child { padding-top: 0; }
-    &:last-child { padding-bottom: 0; }
+    .timeline:first-child { padding-top: 0; }
+    .timeline:last-child { padding-bottom: 0; }
 
-    &__time{
+    .timeline__time{
       margin-bottom: 0;
     }
 
-    &__title {
+    .timeline__title {
       margin-top: 0;
       margin-bottom: var(--space-text);
     }
 
-    &__current {
+    .timeline__current {
       border-color: var(--text-color);
     }
-  }
+  
 </style>
 
 <script>

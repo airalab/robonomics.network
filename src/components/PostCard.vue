@@ -20,17 +20,18 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped>
   .post-card {
     background-color: var(--color-light);
     position: relative;
+  }
 
-    &:hover {
+    .post-card:hover {
       transform: translateY(-3px);
       box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
 
-    h4 {
+    .post-card h4 {
       padding-top: calc(var(--space)/2);
       text-transform: none;
       font-weight: 500;
@@ -39,7 +40,7 @@ export default {
     }
 
 
-    &__link {
+    .post-card__link {
       position: absolute;
       top: 0;
       left: 0;
@@ -51,29 +52,29 @@ export default {
       z-index: 0;
     }
 
-    &__header {
+    .post-card__header {
       margin-bottom: calc(var(--space)/2);
-
-      img {
+    }
+      .post-card__header img {
         display:block;
       }
-    }
-
-    &__content {
+    
+    .post-card__content {
       padding-left: calc(var(--space)/2);
       padding-right: calc(var(--space)/2);
       padding-bottom: calc(var(--space)/2);
       font-size: 90%;
       text-align: left;
-
-      h4 {
-        margin-bottom: calc(var(--space)/2);
-      }
     }
 
-    &__description {
+     .post-card__content h4 {
+        margin-bottom: calc(var(--space)/2);
+      }
+    
+
+    .post-card__description {
       margin-bottom: 0;
       font-size: calc(var(--base-font-size)*0.9);
     }
-  }
+  
 </style>

@@ -22,28 +22,40 @@
               <g-image class="banner-astronauts" :alt="$ts('Crowdloan for Robonomics on Kusama')" src="~/assets/images/robonomics-kusama-astronauts.png" />
             </div>
 
-            <div>
+            <!-- <div>
               <div class="input-signed-right">
                 <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
                 <label for="contribution" class="sign">KSM</label>
               </div>
               <p>{{ reward_xrt }} XRT [${{reward_xrt_usd}} {{$ts('at current price')}}]</p>
               <a href="#crowdloan" class="button primary large green" v-smooth-scroll="{offset: -100}">{{$ts('Contribute')}}</a>
-            </div>
+            </div> -->
 
             <div>
+                
                 <div class="text-huge"><b>
-                  <template v-if="info_contributed > 0">{{info_contributed}}</template> 
-                  <template v-else><span class="loader-text"></span></template> 
+                  4009
+                  <!-- <template v-if="info_contributed > 0">{{info_contributed}}</template> 
+                  <template v-else><span class="loader-text"></span></template>  -->
                 KSM</b></div>
-                <p>{{$ts('Crowdloan2 banner from')}} 
-                  <template v-if="info_count > 0">{{info_count}}</template> 
-                  <template v-else><span class="loader-text-s"></span></template> 
-                  {{$ts('Crowdloan2 banner contributors so far')}}</p>
+                <p>
+                  {{$ts('Crowdloan2 banner from')}}
+                  744
+                  <!-- <template v-if="info_count > 0">{{info_count}}</template>  -->
+                  <!-- <template v-else><span class="loader-text-s"></span></template>  -->
+                  {{$ts('Crowdloan From contributors')}}</p>
+                  <p>{{$ts('Raised, but not enough to get slot')}}</p>
                 <div class="text-little">{{$ts('Robonomics Parathread ID')}} = 2077</div>
                 <div class="text-little"><g-link to="https://kusama.network/auctions/">{{$ts('About Kusama auctions')}}</g-link></div>
               </div>
+
+              <div>
+                <p class="text-huge"><b>{{$ts('Thanks for all participants!')}}</b></p>
+                <p><i>Stay connected, stay tuned</i></p>
+              </div>
           </div>
+
+          
 
         </div>
       </section>
@@ -76,52 +88,14 @@
           </div>
         </div>
 
-         <!-- <div class="layout layout__content grid-3 hyphens animate-inside" v-in-viewport.once>
-
-            <div>
-              <p class="text-huge"><strong>3.5 XRT</strong></p>
-              {{$ts('For each KSM. This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>6 XRT</strong></p>
-              {{$ts('Increased reward for participants in the collection of the first 6,300 KSM')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>{{$ts('For Robonomics Pioneer NFT holders')}}</strong></p>
-              {{$ts('Extra reward 6 XRT instead of 3.5 XRT for Robonomics Pioneer NFT holders who bond the first 27,000 KSM')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>{{$ts('Quick rewards')}}</strong></p>
-              {{$ts('You can get 50% of reward in the first month after the launch of the network')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>{{$ts('Exclusive APR up to 100%')}}</strong></p>
-              {{$ts('Full reward will be received after one year of staking with increased income up to 100%')}}
-            </div>
-
-            <div>
-              <p class="text-huge"><strong>{{$ts('Parachain native token')}}</strong></p>
-              {{$ts('All XRT tokens will be distributed in the Robonomics parachain')}}
-            </div>
-
-          </div> -->
-
       </section>
 
       <hr class="animate no-margins" v-in-viewport.once/>
-
+<!-- 
       <section id="crowdloan" class="auction-support layout">
-
           <h2 class="animate" v-in-viewport.once>{{$ts('Participate in the Robonomics crowdloan')}}</h2>
-
           <p class="layout__text animate" v-in-viewport.once><i>{{$ts('By participating in the Robonomics crowdloan you lock your KSM for a period of time 48 weeks to help Robonomics lease a parachain slot and gain Kusama’s distributed computing power to service up to 10,000 digital twins of IoT devices at once.')}}</i></p>
-
           <div class="auction-support-action animate" v-in-viewport.once>
-
             <div class="form-line">
               <small>{{$ts('Choose the way to contribute')}}</small>
               <select class="block robot" v-model="selectedWay">
@@ -131,9 +105,7 @@
                 <option value="4">4 - {{$ts('Fearless DeFi Wallet')}}</option>
               </select>
             </div>
-
             <section id="participate-1" class="loading" v-if="selectedWay==1">
-
               <form>
               
                 <template v-if="!isApi">
@@ -142,12 +114,10 @@
                     <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-1"/>
                     <span>{{$ts('I have installed the')}} <g-link to="https://polkadot.js.org/extension/">{{$ts('Polkadot.js browser extension')}}</g-link></span>
                   </label>
-
                   <label class="block label">
                     <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-2" />
                     <span>{{$ts('I have KSM in my Polkadot.js account')}}</span>
                   </label>
-
                   <label class="block label">
                     <input type="checkbox" class="big" required  v-model="checkedFlags" value="crowdloan-flag-3" />
                     <span>{{$ts('My KSM has been unbonded')}}</span>
@@ -157,9 +127,7 @@
                     </tip>
                   </label>
                 </section>
-
                 <p v-if="status_noextension" class="error">{{$ts('Please check if you have installed polkadot{.js} extension')}}</p>
-
                 <Button type="button" @click="connect" button="primary block green large" :disabled="isСonnection || checkedFlags.length!=3" :class="crowdloan_loading?'loading':''">
                   <span class="text">{{$ts('Connect Polkadot.js extension')}}</span>
                 </Button>
@@ -167,7 +135,6 @@
       
                 <template v-else-if="isApi && !success">
                 <section>
-
                   <template v-if="accounts.length > 0">
                     <label class="block label">
                       <small>{{$ts('Select an account')}}:</small>
@@ -181,12 +148,10 @@
                         </option>
                       </select>
                     </label>
-
                     <label class="block label">
                       <small>{{$ts('The balance of selected account')}}:</small>
                       <p>{{balanceView}}</p>
                     </label>
-
                     <label class="block label">
                       <small>{{$ts('Your contribution')}}:</small>
                       <div class="input-signed-right" :class="validateBalance?'':'error'">
@@ -195,18 +160,15 @@
                       </div>
                       <div class="msg-error" v-if="!validateBalance">{{$ts('Insufficient or incorrectly entered balance')}}</div>
                     </label>
-
                     <label class="block label">
                       <small>{{$ts('Your email (not necessary)')}}:</small>
                       <input type="email" class="big block" value="" placeholder="Type your email" v-model="submit_email" :class="!validateEmail?'error':''"/>
                       <div class="msg-error" v-if="!validateEmail&!agree_email">{{$ts('Please agree to receive emails from Robonomics or do not fill this field')}}</div>
                     </label>
-
                     <label class="block label" v-show="submit_email">
                       <input v-model="agree_email" type="checkbox" class="big" required />
                       <small>{{$ts('I agree to receive email communications from Robonomics')}}</small>
                     </label>
-
                     <details class="contribution-disclamer">
                       <summary><b>{{$ts('Most important to know')}}</b></summary>
                       <article class="hyphens">
@@ -217,18 +179,14 @@
                       </article>
                     </details>
                   </template>
-
                   <template v-else>
                     <label class="block label error">
                       <small>{{$ts('No account found, please add account in your wallet extension or unlock it')}}</small>
                     </label>
                   </template>
-
                 </section>
-
                 <p v-if="status_transaction_broken" class="error">{{$ts("Something wrong with the transaction. Please don't worry and ask for help in")}} <g-link to="https://t.me/robonomics">{{$ts('Robonomics Telegram Community')}}</g-link></p>
                 <p v-if="status_transaction_notdone" class="error">{{$ts("The transaction was not executed. Please don't worry and ask for help in")}} <g-link to="https://t.me/robonomics">{{$ts('Robonomics Telegram Community')}}</g-link></p>
-
                 <Button type="button" @click="send" button="primary block green large" :disabled="!validateSend" :class="crowdloan_loading?'loading':''">
                   <span class="text">{{$ts('Submit contribution')}}</span>
                 </Button>
@@ -254,25 +212,19 @@
                     <span class="text">{{$ts('Contribute more')}}</span>
                   </Button>
                 </section>
-
-
               </form>
             </section>
-
             <section id="participate-3" v-if="selectedWay==3">
               <p><g-link to="https://www.kraken.com/"><g-image style="max-width:300px" alt="Kraken exchange logo" src="~/assets/images/kraken-logo.webp"/></g-link></p>
               <p>{{$ts("We are on Kraken's Parachain Auction Platform")}}</p>
               <p><g-link to="https://support.kraken.com/hc/en-us/articles/360060824412">{{$ts("Overview of parachain auctions on Kraken")}}</g-link></p>
             </section>
-
              <section id="participate-2" v-if="selectedWay==2" style="width:80%">
                <p><g-link style="display:block;word-break: break-all;" to="https://polkadot.js.org/apps/#/parachains/crowdloan">https://polkadot.js.org/apps/#/parachains/crowdloan</g-link></p>
                <p>{{$ts('In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions')}}: <g-link style="display:block;word-break: break-all;" to="https://twitter.com/AIRA_Robonomics/status/1377653645827833860">https://twitter.com/AIRA_Robonomics/status/1377653645827833860</g-link></p>
             </section>
-
             <section id="participate-4" v-if="selectedWay==4">
               <p>{{$ts('You can also contribute to Robonomics crowdloan via')}} <g-link to="https://fearlesswallet.io">{{$ts('Fearless DeFi Wallet')}}</g-link>. {{$ts('We checked it and here are screenshots of the process')}}:</p>
-
               <div class="grid-3">
                 <g-link to="/assets/crowdloan/fearless-1.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-1.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 1"/></g-link>
                 <g-link to="/assets/crowdloan/fearless-2.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-2.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 2"/></g-link>
@@ -282,11 +234,8 @@
                 <g-link to="/assets/crowdloan/fearless-6.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-6.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 6"/></g-link>
               </div>
             </section>
-
-
           </div>
-
-      </section>
+      </section> -->
 
 
       <hr class="animate no-margins" v-in-viewport.once/>
@@ -515,9 +464,12 @@
           <h3>{{$ts('Software architect Twitter Crowdloan 2')}}</h3>
         </Card>
 
-        <Card orientation="vertical" back="white" link="https://t.me/robonomics" imageLocal="avatars/telegram.jpg" imageSize="mid">
-          <h3>{{$ts('Robonomics Telegram Community Crowdloan 2')}}</h3>
+        <Card orientation="vertical" back="white" link="https://discord.com/invite/5UWNGNaAUf" imageLocal="logos/discord.png" imageSize="mid">
+          <h3>Robonomics Discord Community</h3>
         </Card>
+        <!-- <Card orientation="vertical" back="white" link="https://t.me/robonomics" imageLocal="avatars/telegram.jpg" imageSize="mid">
+          <h3>{{$ts('Robonomics Telegram Community Crowdloan 2')}}</h3>
+        </Card> -->
 
       </div>
 
@@ -817,17 +769,15 @@
   }
 </script>
 
-<style lang="scss">
+<style>
   body {
     --tip-width: 22rem;
   }
 
-  .page-banner {
-    .tip, .tip a { color: var(--color-dark)}
-  }
+  .page-banner .tip, .page-banner .tip a { color: var(--color-dark)}
 </style>
 
-<style scoped lang="scss">
+<style scoped>
 
   /*BASICS*/
   .auction {
@@ -873,12 +823,11 @@
   /*end BASICS*/
 
   /* AUCTION PARTICIPATION */
-  .button.loading {
-    .text {
-      display: none;
-    }
+  .button.loading .text {
+    display: none;
+  }
 
-    &:before {
+  .button.loading:before {
       content: "";
       display: inline-block;
       height: 1.2rem;
@@ -888,46 +837,29 @@
       border-style: solid;
 
       animation: 0.8s Rotate ease-in-out infinite;
-
-      @keyframes Rotate
-      {
-        0%
-          {
-            transform:rotate(0deg);
-          }
-        100%
-          {
-            transform:rotate(360deg);
-          }
-      }
-
     }
-  }
+
+  @keyframes Rotate
+    {
+      0%
+        {
+          transform:rotate(0deg);
+        }
+      100%
+        {
+          transform:rotate(360deg);
+        }
+    }
 
 
-  .auction-support {
-    // .input-signed-right {
-
-    //   input:not(:placeholder-shown) {
-    //     border-color: var(--color-blue);
-    //     color: var(--color-blue);
-
-    //     & + .sign {
-    //       color: var(--color-blue)
-    //     }
-    //   }
-
-    // }
-
-    input[type="checkbox"]:checked {
+  .auction-support input[type="checkbox"]:checked {
       background-color: var(--color-blue);
       border-color: var(--color-blue) !important;
     }
 
-    label.block {
+  .auction-support label.block {
       margin-bottom: var(--space)
     }
-  }
 
   .auction-support-action {
     max-width: 600px;
@@ -936,18 +868,16 @@
     font-size: 110%;
     font-weight: 500;
 
-    position: relative; // for waiting tip
-    min-height: 400px; // for waiting tip
-
-    .tip-container {
-      margin-left: 0.5rem
-    }
+    position: relative; /* for waiting tip */
+    min-height: 400px; /* for waiting tip */
   }
 
-  .participate-2-exchanges {
-    dt img {
-      max-width: 200px;
+  .auction-support-action .tip-container {
+      margin-left: 0.5rem
     }
+
+  .participate-2-exchanges dt img {
+      max-width: 200px;
   }
 
 
@@ -972,87 +902,86 @@
     text-align: center;
 
     animation: FloatY 5s linear 0.4s infinite;
+  }
 
-    img {
+  .auction-support-wait img {
       display: block;
       width: 60%;
       margin: 0 auto 10px;
     }
 
     @media screen and(max-width: 960px) {
-      position: static;
-      margin: 30px auto;
+      .auction-support-wait {
+        position: static;
+        margin: 30px auto;
+      }
     }
-  }
 
   .calc-line {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 75%;
+  }
 
-    .calc-line-1, .calc-line-2 {
-      color: #fff;
-      align-items: stretch;
-      padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);
-    }
+  .calc-line-1, .calc-line-2 {
+    color: #fff;
+    align-items: stretch;
+    padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);
+  }
 
-    .calc-line-1 {
-      background: var(--color-blue);
-      text-align: right;
-    }
+  .calc-line-1 {
+    background: var(--color-blue);
+    text-align: right;
+  }
 
-    .calc-line-2 {
-      background: var(--color-gray-mid);
-    }
+  .calc-line-2 {
+    background: var(--color-gray-mid);
+  }
 
-    small {
-      display: block;
-      margin-bottom: 0.3rem;
-    }
+  .calc-line small {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
 
-    input {
+  .calc-line input {
       background-color: rgba(0, 0, 0, 0.301);
       border-color: rgba(0, 0, 0, 0.6);
       color: #fff;
       width: 100px;
       max-width: 100%;
-
-      &[disabled] {
-        background-color: rgba(0, 0, 0, 0.1);
-        border-color: rgba(0, 0, 0, 0.1);
-      }
-    }
-
-    &.highlight {
-      font-size: 110%;
-
-      .calc-line-1 { background-color: #4365fd; }
-      .calc-line-2 { background-color: rgb(173, 173, 173); }
-    }
   }
+
+  .calc-line[disabled] {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .calc-line.highlight {
+    font-size: 110%;
+  }
+
+  .calc-line-1 { background-color: #4365fd; }
+  .calc-line-2 { background-color: rgb(173, 173, 173); }
 
   .calc-input-signed-right, .calc-input-signed-left {
     position: relative;
     display: inline-block;
+  }
 
-    .sign {
+   .calc-input-signed-right .sign, .calc-input-signed-left .sign{
       position: absolute;
       right: 0.4rem;
       top: 0.3rem
     }
+
+  .calc-input-signed-left .sign {
+    left: 0.4rem;
+    right: auto;
   }
 
-  .calc-input-signed-left {
-
-    .sign {
-      left: 0.4rem;
-      right: auto;
-    }
-
-    input {
+  .calc-input-signed-left input {
       padding-left: 1.2rem;
     }
-  }
 
 
 
@@ -1061,60 +990,61 @@
       position: relative;
       width: 148px;
       height: 180px;
+  }
 
-      img { position: absolute; }
+  .load-bird img { position: absolute; }
 
-      img:not(.bird-body) {
-        animation-delay: 0.6s;
-        animation-duration: 0.8s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        animation-fill-mode: forwards;
-      }
+  .load-bird img:not(.bird-body) {
+      animation-delay: 0.6s;
+      animation-duration: 0.8s;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation-fill-mode: forwards;
+  }
 
-      .bird-body {
-        width: 148px;
-        top: 0;
-        left: 0;
-        z-index: 1;
-      }
+  .load-bird .bird-body {
+    width: 148px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 
-      .bird-tale {
-        width: 58px;
-        top: 100px;
-        left: -35px;
-        z-index: 0;
+  .load-bird .bird-tale {
+    width: 58px;
+    top: 100px;
+    left: -35px;
+    z-index: 0;
 
-        transform-origin: 0 100%;
-      }
+    transform-origin: 0 100%;
+  }
 
-      .bird-wing-1 {
-        width: 47px;
-        top: 42px;
-        left: 23px;
-        z-index: 2;
+  .load-bird .bird-wing-1 {
+      width: 47px;
+      top: 42px;
+      left: 23px;
+      z-index: 2;
 
-        transform-origin: 0 0;
-      }
+      transform-origin: 0 0;
+    }
 
-      .bird-wing-2 {
-        width: 67px;
-        top: 42px;
-        left: 120px;
-        z-index: 0;
+   .load-bird .bird-wing-2 {
+      width: 67px;
+      top: 42px;
+      left: 120px;
+      z-index: 0;
 
-        transform-origin: 0 0;
-      }
+      transform-origin: 0 0;
+    }
 
-      .bird-ribbons {
-        width: 63px;
-        top: 37px;
-        left: -8px;
-        z-index: 0;
+    .load-bird .bird-ribbons {
+      width: 63px;
+      top: 37px;
+      left: -8px;
+      z-index: 0;
 
-        transform-origin: 100% 50%;
-      }
+      transform-origin: 100% 50%;
+    }
 
-      .bird-hair {
+    .load-bird .bird-hair {
         width: 14px;
         top: -10px;
         left: 72px;
@@ -1123,7 +1053,7 @@
         transform-origin: 100% 50%;
       }
 
-      .bird-leg {
+    .load-bird .bird-leg {
         width: 37px;
         top: 127px;
         left: 63px;
@@ -1131,44 +1061,42 @@
 
         transform-origin: 100% 0;
       }
-    }
 
-    .crowdloan-step-3{
-      &.active .in-viewport{
-        .bird-tale { animation-name: birdTale; }
-        .bird-wing-1 { animation-name: birdWing1; }
-        .bird-wing-2 { animation-name: birdWing2; }
-        .bird-ribbons { animation-name: birdRibbons; }
-        .bird-hair { animation-name: birdHair; }
-        .bird-leg { animation-name: birdLeg; }
-      }
 
-      .load-bird {
-        margin: 0 auto
-      }
+    .crowdloan-step-3.active .in-viewport .bird-tale { animation-name: birdTale; }
+    .crowdloan-step-3.active .in-viewport .bird-wing-1 { animation-name: birdWing1; }
+    .crowdloan-step-3.active .in-viewport .bird-wing-2 { animation-name: birdWing2; }
+    .crowdloan-step-3.active .in-viewport .bird-ribbons { animation-name: birdRibbons; }
+    .crowdloan-step-3.active .in-viewport .bird-hair { animation-name: birdHair; }
+    .crowdloan-step-3.active .in-viewport .bird-leg { animation-name: birdLeg; }
+
+    .crowdloan-step-3.active .in-viewport .load-bird {
+      margin: 0 auto
     }
 
     .contribution-share {
       margin-top: calc(var(--space)*0.5);
       margin-bottom: var(--space);
       text-align: center;
+    }
 
-      a {
+    .contribution-share a {
         width: 3rem;
+    }
 
-        img {
+     .contribution-share a img {
           display: block;
         }
 
-        &:not(:last-child) {
+      .contribution-share a:not(:last-child) {
           margin-right: 0.8rem;
         }
-      }
+      
 
-      div:not(:last-child) {
+      .contribution-share div:not(:last-child) {
         margin-bottom: 0.4rem;
       }
-    }
+    
 
     @keyframes birdTale {
       to{
@@ -1207,22 +1135,24 @@
 
   /* ROBONOMICS KUSAMA PARACHAIN INFO */
   .kusama-parachain {
-    margin: 0; // temp
+    margin: 0; /* temp */
+  }
 
-    section {
-      margin: 0;
-    }
+  .kusama-parachain section {
+    margin: 0;
+  }
 
-    .parachains-overview {
+  .kusama-parachain .parachains-overview {
       margin-top: calc(var(--space) * 2);
       padding-bottom: 10px;
       border-bottom: 2px dashed #fff;
       position: relative;
       font-size: 90%;
+  }
 
-      h4 { font-size: var(--base-font-size); font-weight: bold; }
+  .kusama-parachain h4 { font-size: var(--base-font-size); font-weight: bold; }
 
-      &:after {
+   .kusama-parachain:after {
         content: "";
         height: 40px;
         width: 1px;
@@ -1230,16 +1160,14 @@
         position: absolute;
         bottom: -55px;
         left: calc(50% - 1px);
-      }
-    }
   }
 
   .kusama-parachain-intro {
     font-family: var(--font-family-code);
+  }
 
-    h2 {
-      margin-bottom: calc(var(--space)*2);
-    }
+  .kusama-parachain-intro h2 {
+    margin-bottom: calc(var(--space)*2);
   }
 
   .parachains-overview-line {
@@ -1250,63 +1178,65 @@
     /* scroll */
     width: 100%;
     overflow-x: auto;
-    &::-webkit-scrollbar { display: none; }
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
 
-    .item {
+  .parachains-overview-line::-webkit-scrollbar { display: none; }
+
+  .parachains-overview-line .item {
       opacity: 0.5;
       transform: scale(0.7);
       cursor: pointer;
+  }
 
-      &.active {
-        opacity: 1;
-        transform: scale(1);
-      }
+  .parachains-overview-line .item.active {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-      &:hover {
-        transform: scale(1);
-      }
+  .parachains-overview-line .item:hover {
+      transform: scale(1);
+    }
 
-      img {
+  .parachains-overview-line .item img {
         height: 100px;
         width: auto;
+  }
 
-        @media screen and (max-width: 700px) {
-          height: 50px;
-        }
-      }
-    }
+  @media screen and (max-width: 700px) {
+    .parachains-overview-line .item img { height: 50px; }
+  }
 
-    .item-title {
-      font-weight: bold;
-      font-family: var(--font-family);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 0.8rem;
-      color: #88bcff;
-    }
+  .parachains-overview-line .item-title {
+    font-weight: bold;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: #88bcff;
   }
 
   .parachains-overview-description {
     margin-top: var(--space);
     margin-bottom: var(--space);
+  }
 
-    .item {
-      opacity: 0;
-      display: none;
+  .parachains-overview-description .item {
+    opacity: 0;
+    display: none;
+  }
 
-      &.active {
+   .parachains-overview-description .item.active {
         display: block;
         animation: opacity 0.5s linear 0.2s forwards;
       }
 
-      h4 {
+    .parachains-overview-description .item h4 {
         margin-bottom: 10px;
       }
-    }
-  }
-
+    
+  
   @keyframes opacity {
     to {
       opacity: 1;
@@ -1322,8 +1252,9 @@
     height: 230px;
 
     position: relative;
+  }
 
-    .overflowHide {
+  .draw-polkadotParachain .overflowHide {
       overflow: hidden;
       position: absolute;
       top: 0;
@@ -1332,8 +1263,7 @@
       bottom: 0;
     }
 
-    .polkadot {
-      &:after {
+  .draw-polkadotParachain .polkadot:after {
         content: "";
         display: block;
         width: var(--size-polkadot);
@@ -1346,10 +1276,9 @@
         top: 65px;
         left: calc(50% - var(--size-polkadot)/2 - 20px);
         z-index: 0;
-      }
     }
 
-    .i-polkadot {
+    .draw-polkadotParachain .i-polkadot {
       position: absolute;
       left: calc(50% - var(--size-polkadot-logo)/2);
       bottom: 28px;
@@ -1358,84 +1287,83 @@
       width: var(--size-polkadot-logo);
     }
 
-    .slot {
+    .draw-polkadotParachain .slot {
       position: absolute;
       width: var(--size-slot);
       height: 135px;
       z-index: 0;
-
-      &:before, &:after {
-        content: "";
-        display: block;
-      }
-
-      &:before {
-        width: var(--size-slot);
-        height: var(--size-slot);
-        border-radius: calc(var(--size-slot)/2);
-        background-color: var(--color-polka);
-      }
-
-      &:after {
-        width: 1px;
-        height: 100%;
-        border-left: 2px dashed var(--color-polka);
-
-        position: absolute;
-        bottom: 0;
-        left: calc(50% - 1px);
-      }
-
-      &.slot-center {
-        top: calc((-1) * var(--size-slot)/2);
-        left: calc(50% - var(--size-slot)/2);
-      }
-
-      &.slot-left, &.slot-right {
-        opacity: 0.5;
-      }
-
-      &.slot-left {
-        bottom: 0;
-        left: calc(50% - 460px - var(--size-slot)/2);
-      }
-
-      &.slot-right {
-        bottom: 0;
-        left: calc(50% + 460px - var(--size-slot)/2);
-      }
     }
-  }
+
+    .draw-polkadotParachain .slot:before, .draw-polkadotParachain .slot:after {
+      content: "";
+      display: block;
+    }
+
+    .draw-polkadotParachain .slot:before {
+      width: var(--size-slot);
+      height: var(--size-slot);
+      border-radius: calc(var(--size-slot)/2);
+      background-color: var(--color-polka);
+    }
+
+    .draw-polkadotParachain .slot:after {
+      width: 1px;
+      height: 100%;
+      border-left: 2px dashed var(--color-polka);
+
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 1px);
+    }
+
+    .draw-polkadotParachain .slot.slot-center {
+      top: calc((-1) * var(--size-slot)/2);
+      left: calc(50% - var(--size-slot)/2);
+    }
+
+    .draw-polkadotParachain .slot.slot-left, .draw-polkadotParachain .slot.slot-right {
+      opacity: 0.5;
+    }
+
+    .draw-polkadotParachain .slot.slot-left {
+      bottom: 0;
+      left: calc(50% - 460px - var(--size-slot)/2);
+    }
+
+    .draw-polkadotParachain .slot.slot-right {
+      bottom: 0;
+      left: calc(50% + 460px - var(--size-slot)/2);
+    }
+
   /* end ROBONOMICS KUSAMA PARACHAIN INFO */
 
 
 
-  .contribution-disclamer {
-    summary {
+  
+    .contribution-disclamer summary {
       color: var(--color-blue);
       cursor: pointer;
     }
 
-    &[open] summary {
+    .contribution-disclamer[open] summary {
       margin-bottom: calc(var(--space) * 0.5);
     }
 
-    article {
+    .contribution-disclamer article {
       font-size: 80%;
+    }
 
-      p {
+    .contribution-disclamer article p {
         margin-bottom: calc(var(--space) * 0.5);
       }
-    }
-  }
 
   .auction-statistics {
     position: absolute;
     top: 0;
     left: calc(50% + 160px);
-    // right: calc(var(--space)*2);
+  }
 
-    &:before, &:after {
+    .auction-statistics:before, .auction-statistics:after {
       content:"";
       display: block;
       height: 30px;
@@ -1444,36 +1372,20 @@
     }
 
     @media screen and (max-width:960px) {
-      position: static;
+      .auction-statistics {
+        position: static;
       margin: var(--space) auto;
       text-align: center;
+      }
 
-      &:before, &:after { display: none; }
+      .auction-statistics:before, .auction-statistics:after { display: none; }
     }
-  }
+  
 
   .auction-statistics-sum {
     font-weight: bold;
     font-size: 150%;
   }
-
-  // .auction-parachain-subtitle {
-  //   display:block;
-  //   margin: 0 auto;
-  //   max-width:800px;
-  //   font-style: italic;
-  // }
-
-  // .astronaut {
-  //   display: block;
-  //   margin: 0 auto;
-  //   width: 300px;
-  //   max-width: 100%;
-
-  //   // opacity: 0;
-  //   // transform: translateY(0.6rem);
-  //   // animation: blink var(--duration-mainpic) ease-out var(--delay-mainpic) forwards;
-  // }
 
   .banner-astronauts {
       display: block;
@@ -1492,68 +1404,68 @@
     @media screen and (max-width: 800px) {
       padding-bottom: calc(var(--space) * 2)
     }
+  }
 
-    .grid-3 {
+    .page-banner .grid-3 {
       margin-top: calc(var(--space) * 2)
     }
 
-    .grid-3 > div:not(:first-child) {
+    .page-banner .grid-3 > div:not(:first-child) {
       margin-bottom: var(--space);
       padding-top: var(--space);
     }
 
-    .layout {
+    .page-banner .layout {
       margin-bottom: 0
     }
 
-    .button, h2, h3 {
+    .page-banner .button, .page-banner h2, .page-banner h3 {
       margin-bottom: calc(var(--space)/2);
     }
 
-    .button {
+    .page-banner .button {
       width: 100%;
       position: relative;
     }
 
-    ul {
+    .page-banner ul {
       font-size: 90%;
       list-style: none;
     }
 
 
-  }
 
-  .auction-banner-details {
-    strong {
+    .auction-banner-details strong {
       font-size: 150%;
       display: block;
     }
 
-    ul {
+    .auction-banner-details ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: calc(var(--space)*2);
+    }
 
-      li {
+      .auction-banner-details ul li {
         margin-bottom: 0;
       }
 
       @media screen and (max-width:650px) {
-        grid-template-columns: 1fr;
+        .auction-banner-details { grid-template-columns: 1fr; }
       }
-    }
-  }
+    
 
   .auction-banner-form {
     max-width: 800px;
 
     margin: calc(var(--space)*2) auto;
     text-align: center;
+  }
 
-    .button {
+    .auction-banner-form .button {
       max-width: 500px;
     }
-  }
+  
 
   .auction-banner-cols {
     text-align: left;
@@ -1562,34 +1474,31 @@
 
   .auction-banner-kusama {
     position: relative;
+  }
 
-    .kusama-wrap {
+    .auction-banner-kusama .kusama-wrap {
       top: calc(50% - var(--kusama-size)/2);
       right: calc(var(--slot-size) * 4);
     }
-  }
 
 
-
-  .auction-steps {
-
-    img {
+    .auction-steps img {
       width: 60%
     }
 
-    h3 {
+    .auction-steps h3 {
       margin-top: 0;
     }
 
-    .card {
+    .auction-steps .card {
       padding-bottom: 0;
     }
 
     @media screen and (max-width: 400px) {
-      img {
+      .auction-steps img {
         width: 100%
       }
     }
-  }
+  
 
 </style>

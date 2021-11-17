@@ -1,19 +1,19 @@
-import '~/assets/style/index.scss'
+import '~/assets/style/_animation.css'
+import '~/assets/style/_base.css'
+import '~/assets/style/_buttons.css'
+import '~/assets/style/_forms.css'
+import '~/assets/style/_layouts.css'
+import '~/assets/style/_reset.css'
+import '~/assets/style/_typography.css'
+import '~/assets/style/_utils.css'
+import '~/assets/style/_variables.css'
+
 import Default from '~/layouts/Default.vue'
 import Vue from 'vue'
-
-require("prismjs/plugins/line-numbers/prism-line-numbers.css");
-require("prismjs/plugins/command-line/prism-command-line.css");
 
 // directive for animation in view
 import inViewportDirective from 'vue-in-viewport-directive'
 Vue.directive('in-viewport', inViewportDirective)
-
-// for Home page now
-import VueCookies from 'vue-cookies'
-Vue.use(VueCookies)
-
-
 
 export default function (Vue, { router, head, isClient }) {
   // head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }

@@ -50,27 +50,26 @@
 </script>
 
 
-<style lang="scss">
+<style scoped>
   .relatedPosts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: start;
-
-    @media screen and (max-width:570px){
-       grid-template-columns: 1fr;
+  }
+  @media screen and (max-width:570px){
+       .relatedPosts { grid-template-columns: 1fr; }
     }
 
-    .post-card:not(:last-child) {
+    .relatedPosts .post-card:not(:last-child) {
       margin-bottom: var(--space);
     }
 
-    .post-card__header { 
+    .relatedPosts .post-card__header { 
       margin-bottom : 0;
     }
 
-    h4 {
+    .relatedPosts h4 {
       font-size: 90%
     }
-  }
 </style>

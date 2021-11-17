@@ -54,7 +54,7 @@ At the start of April, Robonomics practised participating in auctions by using t
 
 Also, it’s worth mentioning that on the official [Robonomics site](/kusama-slot), functionality for interacting with the Crowdloan module will be made available.
 
-![How to participate in Robonomics Crowdloan on Kusama](./images/kusama-crowdloan-details/crowdloan2.gif)
+<!-- ![How to participate in Robonomics Crowdloan on Kusama](./images/kusama-crowdloan-details/crowdloan2.gif) -->
 This is what Crowdloan participation will look like on the Robonomics site after June 28th. 
 
 Instructions on how to use the Crowdloan interface module through the Robonomics website will be published closer to the start of the third auction. 

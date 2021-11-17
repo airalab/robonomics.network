@@ -52,15 +52,6 @@ query Community ($id: ID!) {
 </script>
 
 
-<style lang="scss">
-  .landing {
-    text-align: center;
-
-    h1,h2,h3,h4,h5 {
-      a[aria-hidden="true"]{
-        display: none;
-      }
-    }
-  }
+<style scoped>
+  .landing { text-align: center; }
 </style>
-

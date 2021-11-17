@@ -211,7 +211,7 @@
 </script>
 
 
-<style lang="scss">
+<style scoped>
 
   .address {
     word-break: break-word;
@@ -222,21 +222,22 @@
   .token {
     padding: var(--space);
     text-align: center;
+  }
 
-    &__sign {
+  .token__sign {
       display: block;
       max-width: 100%;
       width: 10rem;
       margin: 0 auto calc(var(--space)/2);
-    }
+  }
 
-    .section {
-      padding: calc(var(--space)/2) 0 var(--space-text);
+  .section {
+    padding: calc(var(--space)/2) 0 var(--space-text);
+  }
 
-      &:not(:last-child) {
-        border-bottom: 2px dotted var(--color-dark);
-      }
-    }
+  .section:not(:last-child) {
+    border-bottom: 2px dotted var(--color-dark);
+  }
 
     h2, h3 {
       margin-top: 0;
@@ -250,58 +251,53 @@
     li {
       margin-bottom: calc(var(--space-text)/2);
     }
-  }
+  
 
   @media screen and (max-width: 600px) {
     .token {
       text-align: left;
+    }
 
-      &__title {
+    .token__title {
         display: grid;
         grid-template-columns: 3rem 3fr;
         gap: calc( var(--space)/2 );
         align-items: center;
-
-        h4 { margin: 0; }
-      }
-
-      .section {
-        &:first-child { margin-top: 0; }
-        &:last-child { margin-bottom: 0; }
-      }
     }
+
+    .token h4 { margin: 0; }
+      
+    .section:first-child { margin-top: 0; }
+    .section:last-child { margin-bottom: 0; }
   }
 
 
 
-  .tabs {
-    &__list {
-        list-style: none;
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
+  .tabs__list {
+    list-style: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
 
-        li {
-            display: inline-block;
-            margin-left: 2rem;
+  .tabs li {
+    display: inline-block;
+    margin-left: 2rem;
+  }
 
-            a {
-              text-transform: uppercase;
-              letter-spacing: 0.05rem;
-              text-decoration: none;
-              font-weight: 400;
-            }
+  .tabs a {
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    font-weight: 400;
+  }
 
-            &.is-active a {
-              color: var(--color-text);
-            }
+  .tabs.is-active a {
+    color: var(--color-text);
+  }
 
-            &:first-child {
-                margin-left: 0;
-            }
-        }
-    }
-
+  .tabs:first-child {
+    margin-left: 0;
   }
 
 </style>

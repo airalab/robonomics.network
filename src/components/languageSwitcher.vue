@@ -18,8 +18,6 @@
   select {
     background-image: none;
     padding: 0.4rem 0.8rem;
-    /* text-transform: uppercase;
-    letter-spacing: 1px; */
     font-size: 70%;
   }
 </style>
