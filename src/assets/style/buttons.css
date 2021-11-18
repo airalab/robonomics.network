@@ -1,0 +1,147 @@
+.button, button
+	{
+		padding: .5rem .8rem;
+		text-decoration: none;
+		text-align: center;
+
+		border: 0;
+		
+		display: inline-block;
+		vertical-align: middle;
+		vertical-align: -moz-middle-with-baseline;
+		vertical-align: -webkit-baseline-middle;
+
+		cursor: pointer;
+	}
+
+		.button[disabled], button[disabled] {
+			pointer-events: none;
+			filter: grayscale(1);
+			opacity: 0.4;
+		}
+		
+		.button, .button select, button, button select {
+			font-family: var(--font-family-code);
+  			font-weight: bold;
+  			font-size: var(--base-font-size);
+  			line-height: 1;
+  		}
+
+  		.button.primary, button.primary {
+			box-shadow: 2px 2px 0 var(--link-color-rgba);
+		}
+
+		.button.primary, button.primary, .button.primary select, button.primary select {
+			background-color: var(--link-color);
+			color: var(--color-light);
+			border: 1px solid var(--link-color);
+		}
+
+		.button.primary svg, button.primary svg { fill: var(--color-light); }
+
+		.button.primary .button-icon, button.primary .button-icon {
+			fill: var(--color-light);
+		}
+
+		.button.primary:hover, button.primary:hover{
+			box-shadow: 4px 4px 0 var(--color-dark);
+		}
+
+		.button.border, button.border {
+			background-color: var(--color-light);
+			border: 1px solid var(--link-color);
+			color: var(--link-color);
+		}
+
+		.button.border .icon, button.border .icon { border-color: var(--link-color); }
+
+		.button.border .button-icon, button.border .button-icon {
+			fill:  var(--link-color);
+		}
+
+		.button.border:hover, button.border:hover {
+			background-color: var(--link-color);
+			color: var(--color-light);
+		}
+
+		.button.border .icon, button.border .icon { border-color: var(--color-light); }
+
+		.button.border .button-icon, button.border .button-icon {
+			fill: var(--color-light);
+		}
+		
+
+		.button.select, button.select {
+			overflow: hidden;
+		}
+
+		.button.select select, button.select select {
+			display: inline-block;
+			vertical-align: middle;
+
+			-webkit-appearance: none;
+			appearance: none;
+			background-color: rgba(0,0,0,0.3);
+			font-size: 80%;
+			padding: .5rem;
+
+			background-image: url('/select-arrow.svg');
+			background-repeat: no-repeat;
+			background-position: 90% 50%;
+
+			padding-right: 26px;
+		}
+		
+
+		.button__icon {
+			display: inline-block;
+			padding: 0 0 0 .5rem;
+		}
+
+		.button__icon .icon {
+			display: inline-block;
+			vertical-align: middle;
+			padding: .8rem;
+
+			margin-left: .5rem;
+			border-left: 1px solid rgba(0,0,0,0.3);
+		}
+
+		.button.block, button.block{
+			display: block;
+			width: 100%;
+			margin: calc(var(--space)/2) 0;
+		}
+
+		.button.small, button.small {
+			padding: 0.3rem;
+		}
+
+		.button.large, button.large {
+			padding: 0.8rem 1.4rem;
+			font-size: calc(var(--base-font-size) * 1.2);
+		}
+
+		.button.green, button.green {
+			background-color: var(--color-green);
+			border-color: var(--color-green);
+			box-shadow: 2px 2px 0 var(--color-green-rgba);
+		}
+
+		.button.orange, button.orange {
+			background-color: var(--color-orange);
+			border-color: var(--color-orange);
+			box-shadow: 2px 2px 0 var(--color-orange-rgba);
+		}
+	
+
+
+.icon{
+	display: inline-block;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: bold;
+}
+
+.icon:not(:last-child) {
+	margin-right: 0.5rem;
+}
