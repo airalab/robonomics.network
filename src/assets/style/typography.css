@@ -1,0 +1,277 @@
+html {
+  font-size: 100%;
+}
+
+/*It's important for high res narrow devices
+	@media screen and (max-device-width: 350px) {
+  It's for testing out on desktop*/
+  @media screen and (max-width: 350px) {
+    html { font-size: 80%; }
+  }
+
+  /*It's important for high res narrow devices
+	@media screen and (max-device-width: 1000px) {
+  It's for testing out on desktop*/
+	@media screen and (max-width: 1000px) {
+		html { font-size: 90%; }
+	}
+
+  /*It's important for high res narrow devices
+	@media screen and (min-device-width: 1660px) {
+  It's for testing out on desktop*/
+	@media screen and (min-width: 1660px) {
+		html { font-size: 110%; }
+	}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--base-font-size);
+  line-height: 1.5;
+}
+
+h1 { font-size: calc(var(--base-font-size) * 2) }
+h2 { font-size: calc(var(--base-font-size) * 1.8) }
+h3 { font-size: calc(var(--base-font-size) * 1.2) }
+h4 { font-size: calc(var(--base-font-size) * 1.1) }
+h5 { font-size: calc(var(--base-font-size) * 0.8) }
+
+h1, h2, h3, h4, h5 {
+  transition: color .6s;
+  
+  font-family: var(--font-family-code);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  margin-top: calc(var(--space)*2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: var(--space);
+}
+
+h1:not(.clean), .text-gradient {
+  display: inline-block;
+  background: linear-gradient(to right , var(--color-green), #11a075, #5DC0DF, #355bd6, #5DC0DF, #11a075, var(--color-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-position:  0; 
+  background-size: 200%;
+  animation: 12s TextGradient linear infinite;
+}
+
+h2, h3, h4, h5 {
+  margin-bottom: var(--space-text);
+}
+
+h2:first-child, h3:first-child, h4:first-child, h5:first-child { margin-top: 0 }
+h2:last-child, h3:last-child, h4:last-child, h5:last-child { margin-bottom: 0 }
+
+
+
+small, .text__small, .text-small { font-size: 70%; line-height: 1.2; }
+.text-little { font-size: 80%; }
+.text-big { font-size: 120%; line-height: 1.6; }
+.text-huge { font-size: 160%; line-height: 1.2; }
+
+strong, b {
+  font-weight: 500;
+}
+
+blockquote {
+  font-size: 110%;
+  font-weight: 300;
+  font-style: italic;
+  padding: var(--space);
+  background-color: var(--text-color-invert);
+
+  border-left: 1px solid var(--text-color);
+}
+
+em {
+  font-style: italic;
+}
+
+ul { 
+  margin-left: 1rem;
+}
+
+ol { 
+  list-style-type: decimal; 
+  margin-left: var(--space-text);
+}
+
+ol li {
+  margin-bottom: .6rem;
+}
+
+
+a:not(.button), .link:not(.button) {
+  color: var(--link-color);
+  transition: all .2s, color .2s;
+}
+
+a:not(.button):hover, .link:not(.button):hover {
+  color: var(--link-color-hover);
+}
+
+a:not(.button).dashed, .link:not(.button).dashed {
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor
+}
+
+
+hr {
+  margin: calc(var(--space-text)*2) 0;
+  border: 0;
+  outline: 0;
+  height: 1rem;
+  background-color: #fff;
+}
+
+  hr.no-margins {
+    margin: 0;
+  }
+
+  hr.hr-thick {
+    height: 1px;
+  }
+
+
+.hyphens{
+  text-align: justify !important;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.align-right { text-align: right; }
+.align-left { text-align: left; }
+.text-center, .align-center { text-align: center; }
+
+.ul-nostyle {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+code {
+  max-width: 100%;
+  overflow-x: scroll;
+
+  display: inline-block;
+  vertical-align: middle;
+  vertical-align: -moz-middle-with-baseline;
+  vertical-align: -webkit-baseline-middle;
+
+  /* hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+code::-webkit-scrollbar { display: none; }
+
+
+
+table {
+  margin-bottom: var(--space-text);
+  background-color: var(--text-color-invert);
+}
+
+table thead th {
+  text-align: left;
+  font-weight: bold;
+}
+
+table th, table td {
+  padding: .5rem;
+  border: 1px solid var(--border-color);
+  font-size: 90%;
+}
+
+table tbody tr:hover {
+    background-color: var(--color-gray-light);
+}
+
+
+@media screen and (max-width: 700px){
+  table.mobile {
+    border: 1px solid var(--border-color);
+  }
+
+  table.mobile td, table.mobile th {
+    display: none;
+  }
+
+  table.mobile, tbody, tr, [data-th] {
+      display: block;
+      width: 100%;
+  }
+  
+  table.mobile [data-th] { border-width: 0; }
+
+  table.mobile tr:not(:last-child) {
+    border-width: 0 0 2px;
+    border-style: dashed;
+    border-color: var(--border-color);
+  }
+
+  table.mobile [data-th]:before {
+    content: attr(data-th);
+    display: block;
+    font-weight: 700;
+    margin-bottom: calc(var(--space) * 0.2);
+  }
+}
+
+p, ul, ol, blockquote, table, dd {
+  margin-bottom: var(--space-text);
+}
+
+p:last-child, ul:last-child, ol:last-child, blockquote:last-child, table:last-child, dd:last-child {
+  margin-bottom: 0;
+}
+
+li:not(:last-child) {
+  margin-bottom: var(--space);
+}
+
+.post h2, .post h3, .post h4, .post h5 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.post code {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #b5deff;
+  font-weight: bold;
+}
+
+.text-col-2, .text-col-3 {
+  column-count: 2;
+  column-gap: var(--space);
+
+  @media screen and (max-width: 750px) {
+    column-count: 1 !important;
+  }
+}
+
+*[class*=text-col-], *[class*=text-col-] h1, *[class*=text-col-] h2, *[class*=text-col-] h3, *[class*=text-col-] h4, *[class*=text-col-] h5 { text-align: left; }
+
+.text-col-3 {
+  column-count: 3;
+
+  @media screen and (max-width: 1100px) {
+    column-count: 2;
+  }
+}
+
+.text-col-nobreak {
+  break-inside: avoid-column;
+}
+
+.text-color-blue { color: var(--color-blue) }

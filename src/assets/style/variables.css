@@ -1,0 +1,75 @@
+body {
+
+	--base-font-size: 1.2rem;
+	--font-family: 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
+	--color-dark: #000000;
+	--color-darkgray: rgb(37, 37, 37);
+	--color-light: #ffffff;
+	--color-gray: #ccc;
+	--color-gray-mid: rgb(143, 143, 143);
+	--color-gray-light: #f2f2f2;
+	--color-green: #5fce05;
+	--color-orangeYellow: #f5a106;
+	--color-orange: #E9510E;
+	--color-red: #ee005b;
+	--color-pink: #ff7aad;
+
+	--color-blue-lighter: #ade5ff;
+	--color-blue-light: #70d2ff;
+	--color-blue-mid: #03A5ED;
+	--color-blue: #2949D3;
+	--color-blue-dark: #000066;
+
+	--color-purple-lighter: #c7d2ff;
+	--color-purple-light: #97aafd;
+	--color-purple-mid: #5a73e2;
+	--color-purple: #221363;
+	--color-purple-dark: #1A1341;
+
+ 	--body-bg: var(--color-light);
+ 	--text-color: #000000;
+	--text-color-invert: #ffffff;
+	--border-color: var(--color-gray); /* deprecated use instead --color-border */
+	--color-border: var(--color-gray);
+	--color-blockquote: #e2e1e1;
+
+ 	--link-color: var(--color-blue-mid); /* deprecated use instead --color-link */
+ 	--link-color-hover: var(--color-blue);
+	--link-color-visited: #660099;
+
+	--color-link: var(--color-blue-mid);
+
+	--link-color-rgba: #03a7ed93;
+	--color-green-rgba: #5fce0581;
+	--color-orange-rgba: #e9500eab;
+
+	--color-gradient-blue: linear-gradient(var(--color-blue-dark), var(--color-blue-mid)); /* refactor */
+	--color-gradient-purpleblue: linear-gradient(var(--color-blue-mid), var(--color-purple));
+	--color-gradient-mars: linear-gradient(var(--color-blue) 30%, #25bfe8 85%, #f0d283 100%);
+	--color-gradient-purplelight: radial-gradient(var(--color-blue-lighter), var(--color-purple-lighter));
+	
+	--animation-bump: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+ 	
+
+  --space: 2rem;
+  --space-text: 2rem;
+  --content-width: 1660px;
+  --text-width: 980px;
+  --tip-width: 16rem;
+
+  --screen-padding-top: 3rem;
+  --screen-padding-right: 1rem;
+  --screen-padding-bottom: 1rem;
+  --screen-padding-left: 3rem;
+
+	--space-bannertop: 4rem;
+}
+
+
+@media screen and (max-width: 450px) {
+	body {
+		--space: 1.2rem;
+	}
+}

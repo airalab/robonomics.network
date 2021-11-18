@@ -1,0 +1,382 @@
+.hide {
+	visibility: visible;
+	opacity: 1;
+  
+	animation: FadeOut 0.1s var(--animation-bump) 0.1s forwards;
+  }
+  
+.show {
+	visibility: hidden;
+	opacity: 0;
+  
+	animation: FadeIn 0.1s var(--animation-bump) 0.1s forwards;
+  }
+
+
+.animate-inside > *, .animate-inside-fast > * {
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(5%);
+}
+
+.animate-inside.in-viewport > *, .animate-inside-fast.in-viewport > * {
+
+		animation-name: FadeIn, FloatYUp;
+		animation-timing-function: linear;
+		animation-delay: 0.5s;
+		animation-fill-mode: forwards;
+
+		animation-duration: 0.5s;
+	}
+
+
+.animate-inside.in-viewport > *:nth-child(0), .animate-inside-fast.in-viewport > *:nth-child(0) {
+	animation-delay: calc(0.5s + 0.2 * 0);
+}
+
+.animate-inside.in-viewport > *:nth-child(1), .animate-inside-fast.in-viewport > *:nth-child(1) {
+	animation-delay: calc(0.5s + 0.2 * 1);
+}
+
+.animate-inside.in-viewport > *:nth-child(2), .animate-inside-fast.in-viewport > *:nth-child(2) {
+	animation-delay: calc(0.5s + 0.2 * 2);
+}
+
+.animate-inside.in-viewport > *:nth-child(3), .animate-inside-fast.in-viewport > *:nth-child(3) {
+	animation-delay: calc(0.5s + 0.2 * 3);
+}
+
+.animate-inside.in-viewport > *:nth-child(4), .animate-inside-fast.in-viewport > *:nth-child(4) {
+	animation-delay: calc(0.5s + 0.2 * 4);
+}
+
+.animate-inside.in-viewport > *:nth-child(5), .animate-inside-fast.in-viewport > *:nth-child(5) {
+	animation-delay: calc(0.5s + 0.2 * 5);
+}
+
+.animate-inside.in-viewport > *:nth-child(6), .animate-inside-fast.in-viewport > *:nth-child(6) {
+	animation-delay: calc(0.5s + 0.2 * 6);
+}
+
+.animate-inside.in-viewport > *:nth-child(7), .animate-inside-fast.in-viewport > *:nth-child(7) {
+	animation-delay: calc(0.5s + 0.2 * 7);
+}
+
+.animate-inside.in-viewport > *:nth-child(8), .animate-inside-fast.in-viewport > *:nth-child(8) {
+	animation-delay: calc(0.5s + 0.2 * 8);
+}
+
+.animate-inside.in-viewport > *:nth-child(9), .animate-inside-fast.in-viewport > *:nth-child(9) {
+	animation-delay: calc(0.5s + 0.2 * 9);
+}
+
+.animate-inside.in-viewport > *:nth-child(10), .animate-inside-fast.in-viewport > *:nth-child(10) {
+	animation-delay: calc(0.5s + 0.2 * 10);
+}
+
+.animate-inside.in-viewport > *:nth-child(11), .animate-inside-fast.in-viewport > *:nth-child(11) {
+	animation-delay: calc(0.5s + 0.2 * 11);
+}
+
+.animate-inside.in-viewport > *:nth-child(12), .animate-inside-fast.in-viewport > *:nth-child(12) {
+	animation-delay: calc(0.5s + 0.2 * 12);
+}
+
+.animate-inside.in-viewport > *:nth-child(13), .animate-inside-fast.in-viewport > *:nth-child(13) {
+	animation-delay: calc(0.5s + 0.2 * 13);
+}
+
+.animate-inside.in-viewport > *:nth-child(14), .animate-inside-fast.in-viewport > *:nth-child(14) {
+	animation-delay: calc(0.5s + 0.2 * 14);
+}
+
+.animate-inside.in-viewport > *:nth-child(15), .animate-inside-fast.in-viewport > *:nth-child(15) {
+	animation-delay: calc(0.5s + 0.2 * 15);
+}
+
+.animate-inside.in-viewport > *:nth-child(16), .animate-inside-fast.in-viewport > *:nth-child(16) {
+	animation-delay: calc(0.5s + 0.2 * 16);
+}
+
+.animate-inside.in-viewport > *:nth-child(17), .animate-inside-fast.in-viewport > *:nth-child(17) {
+	animation-delay: calc(0.5s + 0.2 * 17);
+}
+
+.animate-inside.in-viewport > *:nth-child(18), .animate-inside-fast.in-viewport > *:nth-child(18) {
+	animation-delay: calc(0.5s + 0.2 * 18);
+}
+
+.animate-inside.in-viewport > *:nth-child(19), .animate-inside-fast.in-viewport > *:nth-child(19) {
+	animation-delay: calc(0.5s + 0.2 * 19);
+}
+
+.animate-inside.in-viewport > *:nth-child(20), .animate-inside-fast.in-viewport > *:nth-child(20) {
+	animation-delay: calc(0.5s + 0.2 * 20);
+}
+
+
+.animate-inside-fast.in-viewport > * {
+	animation-delay: 0.5s;
+	animation-duration: 0.2s;
+}
+
+.animate-inside-fast.in-viewport > *:nth-child(0) {
+	animation-delay: calc(0.2s + 0.2 * 0);
+}
+.animate-inside-fast.in-viewport > *:nth-child(1) {
+	animation-delay: calc(0.2s + 0.2 * 1);
+}
+.animate-inside-fast.in-viewport > *:nth-child(2) {
+	animation-delay: calc(0.2s + 0.2 * 2);
+}
+.animate-inside-fast.in-viewport > *:nth-child(3) {
+	animation-delay: calc(0.2s + 0.2 * 3);
+}
+.animate-inside-fast.in-viewport > *:nth-child(4) {
+	animation-delay: calc(0.2s + 0.2 * 4);
+}
+.animate-inside-fast.in-viewport > *:nth-child(5) {
+	animation-delay: calc(0.2s + 0.2 * 5);
+}
+.animate-inside-fast.in-viewport > *:nth-child(6) {
+	animation-delay: calc(0.2s + 0.2 * 6);
+}
+.animate-inside-fast.in-viewport > *:nth-child(7) {
+	animation-delay: calc(0.2s + 0.2 * 7);
+}
+.animate-inside-fast.in-viewport > *:nth-child(8) {
+	animation-delay: calc(0.2s + 0.2 * 8);
+}
+.animate-inside-fast.in-viewport > *:nth-child(9) {
+	animation-delay: calc(0.2s + 0.2 * 9);
+}
+.animate-inside-fast.in-viewport > *:nth-child(10) {
+	animation-delay: calc(0.2s + 0.2 * 10);
+}
+.animate-inside-fast.in-viewport > *:nth-child(11) {
+	animation-delay: calc(0.2s + 0.2 * 11);
+}
+.animate-inside-fast.in-viewport > *:nth-child(12) {
+	animation-delay: calc(0.2s + 0.2 * 12);
+}
+.animate-inside-fast.in-viewport > *:nth-child(13) {
+	animation-delay: calc(0.2s + 0.2 * 13);
+}
+.animate-inside-fast.in-viewport > *:nth-child(14) {
+	animation-delay: calc(0.2s + 0.2 * 14);
+}
+.animate-inside-fast.in-viewport > *:nth-child(15) {
+	animation-delay: calc(0.2s + 0.2 * 15);
+}
+.animate-inside-fast.in-viewport > *:nth-child(16) {
+	animation-delay: calc(0.2s + 0.2 * 16);
+}
+.animate-inside-fast.in-viewport > *:nth-child(17) {
+	animation-delay: calc(0.2s + 0.2 * 17);
+}
+.animate-inside-fast.in-viewport > *:nth-child(18) {
+	animation-delay: calc(0.2s + 0.2 * 18);
+}
+.animate-inside-fast.in-viewport > *:nth-child(19) {
+	animation-delay: calc(0.2s + 0.2 * 19);
+}
+.animate-inside-fast.in-viewport > *:nth-child(20) {
+	animation-delay: calc(0.2s + 0.2 * 20);
+}
+
+.animate:not(hr) {
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(5%);
+}
+
+.animate:not(hr).in-viewport {
+	animation-name: FadeIn, FloatYUp;
+	animation-timing-function: linear;
+	animation-delay: 0.3s;
+	animation-fill-mode: forwards;
+	animation-duration: 0.5s;
+}
+
+  
+@keyframes FadeOut
+	{
+		from {
+			visibility: visible;
+			opacity: 1;
+		}
+
+	  to {
+	    visibility: hidden;
+		opacity: 0;
+	  }
+	}
+
+
+@keyframes FadeIn {
+	to {
+	    visibility: visible;
+		opacity: 1;
+	}
+	from {
+	    visibility: hidden;
+		opacity: 0;
+	  }
+}
+
+@keyframes FadeInOut {
+	0% {
+	    visibility: hidden;
+		opacity: 0;
+	}
+	50% {
+	    visibility: visible;
+		opacity: 1;
+	  }
+	100% {
+	    visibility: hidden;
+		opacity: 0;
+	}
+}
+
+
+
+@keyframes Scale
+	{
+	  0% {
+	    transform: scale(0);
+	  }
+	  100% {
+	    transform: scale(1);
+	  }
+	}
+
+
+
+@keyframes ScaleX
+	{
+	  0% {
+	    transform: scaleX(0);
+	  }
+	  100% {
+	    transform: scaleX(1);
+	  }
+	}
+
+@keyframes ScaleY
+	{
+	  0% {
+	    transform: scaleY(0);
+	  }
+	  100% {
+	    transform: scaleY(1);
+	  }
+	}
+
+@keyframes FloatY {
+	0% {
+		transform: translateY(0);
+	}
+
+	25% {
+		transform: translateY(-5%);
+	}
+
+	75% {
+		transform: translateY(5%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes FloatYDown {
+	0% {
+		transform: translateY(-5%);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@keyframes FloatYUp {
+	to{
+		transform: translateY(0);
+	}
+}
+
+/* recommended animation: blink 1s ease-out 0.3s forwards; */
+@keyframes blink {
+    0%{
+      opacity: 0;
+    }
+    20%{
+      opacity: 1;
+    }
+    40%{
+      opacity: 0;
+    }
+    60%{
+      opacity: 1;
+    }
+    80%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes TextGradient {
+	0%{
+	  background-position: 0; 
+	}
+	50%{
+	  background-position: 100%; 
+	}
+	100%{
+	  background-position: 0; 
+	}
+  }
+
+
+  @keyframes typing {
+	from {
+	  width: 0
+	}
+  }
+
+  @keyframes unTyping {
+	to {
+	  width: 0
+	}
+  }
+	  
+  @keyframes blinkLine {
+	50% {
+	  border-color: transparent
+	}
+  }
+
+
+  @keyframes spin
+  {
+    0%
+      {
+        transform: rotate(0deg);
+      }
+    100%
+      {
+        transform: rotate(360deg);
+      }
+  }
+
+
+  @keyframes rotateNull {
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+
