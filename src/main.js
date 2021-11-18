@@ -1,12 +1,12 @@
-import '~/assets/style/animation.css'
-import '~/assets/style/base.css'
-import '~/assets/style/buttons.css'
-import '~/assets/style/forms.css'
-import '~/assets/style/layouts.css'
-import '~/assets/style/reset.css'
-import '~/assets/style/typography.css'
-import '~/assets/style/utils.css'
-import '~/assets/style/variables.css'
+require('~/assets/style/base.css')
+require('~/assets/style/animation.css')
+require('~/assets/style/buttons.css')
+require('~/assets/style/forms.css')
+require('~/assets/style/layouts.css')
+require('~/assets/style/reset.css')
+require('~/assets/style/typography.css')
+require('~/assets/style/utils.css')
+require('~/assets/style/variables.css')
 
 import Default from '~/layouts/Default.vue'
 import Vue from 'vue'

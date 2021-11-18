@@ -711,30 +711,30 @@
         },
       },
 
-      async created() {
-        this.updateInfo()
-        setInterval(() => {
-          this.updateInfo()
-        }, 5000);
-        this.updatePrices()
-        try {
-          this.provider = getProvider();
-          this.api = await initApi();
-        } catch (error) {
-          console.log(error);
-        }
-      },
+      // async created() {
+      //   this.updateInfo()
+      //   setInterval(() => {
+      //     this.updateInfo()
+      //   }, 5000);
+      //   this.updatePrices()
+      //   try {
+      //     this.provider = getProvider();
+      //     this.api = await initApi();
+      //   } catch (error) {
+      //     console.log(error);
+      //   }
+      // },
 
-      watch: {
-        account: async function (newValue) {
-          if (this.listenerBalance !== null) {
-            this.listenerBalance()
-          }
-          this.listenerBalance = await this.api.query.system.account(this.account, (data) => {
-            this.balance = data.data.free.add(data.data.reserved).sub(data.data.miscFrozen)
-          });
-        }
-      },
+      // watch: {
+      //   account: async function (newValue) {
+      //     if (this.listenerBalance !== null) {
+      //       this.listenerBalance()
+      //     }
+      //     this.listenerBalance = await this.api.query.system.account(this.account, (data) => {
+      //       this.balance = data.data.free.add(data.data.reserved).sub(data.data.miscFrozen)
+      //     });
+      //   }
+      // },
 
       computed: {
         validateBalance() {
@@ -1152,7 +1152,7 @@
 
   .kusama-parachain h4 { font-size: var(--base-font-size); font-weight: bold; }
 
-   .kusama-parachain:after {
+   /* .kusama-parachain:after {
         content: "";
         height: 40px;
         width: 1px;
@@ -1160,7 +1160,7 @@
         position: absolute;
         bottom: -55px;
         left: calc(50% - 1px);
-  }
+  } */
 
   .kusama-parachain-intro {
     font-family: var(--font-family-code);
