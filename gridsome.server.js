@@ -16,13 +16,13 @@ module.exports = function (api) {
 
 
   api.createManagedPages(({ createPage }) => {
-    // createPage({
-    //       path: '/test/',
-    //       component: 'src/pages/redirect.vue',
-    //       context: {
-    //         redirect: '/intro/'
-    //       }
-    //   })
+    createPage({
+          path: '/test/',
+          component: 'src/pages/redirect.vue',
+          context: {
+            redirect: '/'
+          }
+      })
   })
 
 

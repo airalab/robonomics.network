@@ -24,7 +24,8 @@ export default function (Vue, { router, head, isClient }) {
 
     router.beforeEach((to, from, next) => {
       if(to.fullPath === '/en/') {
-        next('/')
+        console.log(to.fullPath)
+        // next('/')
       } else {
         next()
       }
