@@ -21,7 +21,16 @@ export default function (Vue, { router, head, isClient }) {
   if (isClient) {
     const vueSmoothScroll = require('vue2-smooth-scroll').default;
     Vue.use(vueSmoothScroll);
+
+    router.beforeEach((to, from, next) => {
+      if(to.fullPath === '/en/') {
+        next('/')
+      } else {
+        next()
+      }
+    })
   }
   // Set default layout as a global component
   Vue.component('layout', Default)
+  
 }

@@ -14,6 +14,19 @@ module.exports = function (api) {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
   })
 
+
+  api.createManagedPages(({ createPage }) => {
+    // createPage({
+    //       path: '/test/',
+    //       component: 'src/pages/redirect.vue',
+    //       context: {
+    //         redirect: '/intro/'
+    //       }
+    //   })
+  })
+
+
+
   // api.createManagedPages(async ({ graphql, createPage}) => {
   //   // Use the Pages API here: https://gridsome.org/docs/pages-api
   //   const {data} = await graphql(`{
