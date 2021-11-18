@@ -6,7 +6,7 @@
 export default {
   metaInfo() {
         return {
-            title: `Redirecting to https://robonomics.network/${this.$context.redirect}`,
+            // title: `Redirecting to https://robonomics.network/${this.$context.redirect}`,
             meta: [
                 {
                     'http-equiv': 'refresh',
