@@ -17,7 +17,7 @@ module.exports = function (api) {
 
   api.createManagedPages(({ createPage }) => {
     createPage({
-          path: '/test/',
+          path: '/en/',
           component: 'src/pages/redirect.vue',
           context: {
             redirect: '/'
