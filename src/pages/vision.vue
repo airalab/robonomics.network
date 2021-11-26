@@ -519,7 +519,7 @@ elements in the chain of providing the user with services. In other words, where
       
 
       @media screen and (max-width:800px) {
-        .vision-banner { font-size: calc(var(--base-font-size) * 2); }
+        /* .vision-banner { font-size: calc(var(--base-font-size) * 2); } */
 
         .vision-banner p { font-size: 70%; }
       }
@@ -529,7 +529,6 @@ elements in the chain of providing the user with services. In other words, where
           margin-bottom: calc(var(--space)*1.5);
         }
       }
-    
 
     .vision-banner .vision-city {
       position: absolute;
@@ -589,13 +588,13 @@ elements in the chain of providing the user with services. In other words, where
   
 
   .vision-subtitle {
-    position: absolute;
+    /* position: absolute;
     z-index: 1;
     bottom: 20px;
     left: 0;
-    right: 0;
+    right: 0; */
     text-align: center;
-    white-space: nowrap;
+    /* white-space: nowrap; */
   }
 
     .vision-subtitle .text {
@@ -627,9 +626,10 @@ elements in the chain of providing the user with services. In other words, where
       max-width: 250px;
     }
 
-    @media screen and (max-width: 500px) {
-        .vision-decortext.right { right: 10px; }       
-      }
+    @media screen and (max-width:700px) {
+        .vision-decortext { display: none; }
+    }
+    
   
 
 
@@ -1054,7 +1054,13 @@ elements in the chain of providing the user with services. In other words, where
       
 
       @media screen and (max-width: 1280px) {
-        .vision-industry40 { grid-template-columns: 1fr; }
+        .vision-industry40 .layout { grid-template-columns: 1fr; }
+
+        .vision-industry40 .robot img {
+            float: none;
+            display: block;
+            margin: 0 auto;
+          }
       }
 
       @media screen and (max-width: 750px) {
@@ -1069,15 +1075,6 @@ elements in the chain of providing the user with services. In other words, where
               align-items: center;
               gap: var(--space)
             }
-          
-
-          .vision-industry40 .robot img {
-            float: none;
-            display: block;
-            margin: 0 auto;
-          }
-        
-
     }
 
   

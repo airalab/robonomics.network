@@ -24,12 +24,16 @@ img {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space);
+}
 
-    @media screen and (max-width: 970px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (max-width: 970px) {
+  .blog_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-    @media screen and (max-width: 620px) {
-      grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 620px) {
+  .blog_grid {
+    grid-template-columns: 1fr;
+  }
 }

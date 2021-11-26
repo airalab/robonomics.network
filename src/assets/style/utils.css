@@ -148,8 +148,10 @@
   left: calc(50% - 200px);
   width: 400px;
   max-width: 400px; /* rewrite */
+}
 
-  @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
+  .img-back img {
     left: 10px;
   }
 }

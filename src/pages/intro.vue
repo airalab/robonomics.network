@@ -529,6 +529,8 @@
   .introDigitalTwins img {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
   }
 
   .introMarketplace {
@@ -568,9 +570,10 @@
         color: var(--link-color);
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-size: 70%;
+        font-size: 60%;
         font-weight: 500;
         border-radius: 4px;
+        text-align: left;
       }
 
     .marketplace-add {
@@ -599,7 +602,7 @@
     }
 
     @media screen and (max-width: 1330px) {
-      .marketplace-add { grid-template-columns: 1fr; }
+      .introMarketplace { grid-template-columns: 1fr; }
 
       .marketplace-add .img {
         grid-row-start: 2;

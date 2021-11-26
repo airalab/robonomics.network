@@ -241,12 +241,16 @@
 	gap: calc(var(--space)*2);
 	align-items: start;
 	text-align: left;
+}
 
-	@media screen and (max-width: 920px) {
+@media screen and (max-width: 920px) {
+	.polkapetBonuses {
 		grid-template-columns: 1fr 1fr;
 	}
+}
 
-	@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) {
+	.polkapetBonuses {
 		grid-template-columns: 1fr;
 	}
 }

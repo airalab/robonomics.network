@@ -249,15 +249,15 @@ query {
   }
 
   @media screen and (max-width: 720px) {
-    #banner { font-size: calc(var(--base-font-size) * 1.5); }
+    #banner h1 { font-size: calc(var(--base-font-size) * 1.5); }
   }
 
   @media screen and (max-width: 580px) {
-    #banner { font-size: calc(var(--base-font-size) * 1.2); }
+    #banner h1 { font-size: calc(var(--base-font-size) * 1.2); }
   }
 
   @media screen and (max-width: 475px) {
-    #banner { font-size: calc(var(--base-font-size) * 1); }
+    #banner h1 { font-size: calc(var(--base-font-size) * 1); }
 
     .typing-1, .typing-2, .typing-3 {
       border-right-width: 1px;
@@ -265,7 +265,7 @@ query {
   }
 
   @media screen and (max-width: 400px) {
-    #banner { font-size: calc(var(--base-font-size) * 0.8); }
+    #banner h1 { font-size: calc(var(--base-font-size) * 0.8); }
   }
 
   #logo {
@@ -422,13 +422,14 @@ query {
   }
   
   @media screen and (max-width: 1100px) {
-      .goals, .goals:nth-child(2n) {
+      .goals > section {
         grid-template-columns: 1fr 1fr;
       }
     }
 
     @media screen and (max-width: 760px) {
-      .goals, .goals:nth-child(2n) {
+
+      .goals > section {
         grid-template-columns: 1fr;
       }
 
