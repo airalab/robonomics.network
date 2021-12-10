@@ -15,9 +15,9 @@
 
            <div class="grid-5">
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">Collection limit</div>
+               <div class="text-title m-b-0">Campaign Cap</div>
                <div>47,425.5262 KSM</div>
-               <details>
+               <details @click="infoDetails">
                  <summary>i</summary>
                  Based on fees assessment of the 15th auction, Geshiro
                </details>
@@ -26,7 +26,7 @@
              <div class="oldy dark bg-blue align-left">
                <div class="text-title m-b-0">Duration</div>
                <div>5 weeks</div>
-               <details>
+               <details @click="infoDetails">
                  <summary>i</summary>
                  We assume that one crowdloan campaign should aim to collect for 5 weeks. In case of failure, the oracle will have to shift the sample estimate of the median fees and camphain starts again.
                </details>
@@ -35,7 +35,7 @@
              <div class="oldy dark bg-blue align-left">
                <div class="text-title m-b-0">Remuneration</div>
                <div>4.20 XRT</div>
-               <details>
+               <details @click="infoDetails">
                  <summary>i</summary>
                   1 KSM ~ 370$ APR = 19%,<br/>
                   1XRT ~ 17$
@@ -45,16 +45,16 @@
              <div class="oldy dark bg-blue align-left">
                <div class="text-title m-b-0">Extra 1XRT EACH KSM</div>
                <div>For pioneer NFT cardholders</div>
-               <details>
+               <details @click="infoDetails">
                  <summary>i</summary>
-                 Any contributor in the past auctions can <g-link to="https://dapp.robonomics.network/#/pioneer">claim</g-link> Pioneer nft <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">card</g-link>
+                 Pioneer NFT cardholders will receive an extra 1 XRT for each KSM Bonded. Any contributor in the past auctions can <g-link to="https://dapp.robonomics.network/#/pioneer">claim</g-link> Pioneer nft <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">card</g-link>
                </details>
              </div>
 
              <div class="oldy dark bg-blue align-left">
                <div class="text-title m-b-0">Distribution rewards</div>
                <div>Monthly</div>
-               <details>
+               <details @click="infoDetails">
                  <summary>i</summary>
                  Proportionally equal shares for 12 months. The treasury performs by generating new tokens in the parachain
                </details>
@@ -603,6 +603,36 @@ query {
     },
 
     methods: {
+
+        infoDetails(e){
+
+          
+
+          /* This operates with details in crowdloan info - synch open/close */
+          if ( window.innerWidth > 880 ) {
+            let details = document.querySelectorAll('#info .grid-5 details');
+
+            console.log(e.target.parentElement.open)
+
+            for (let el of details) {
+                console.log(el.open)
+              }
+
+            if(!e.target.parentElement.open) {
+              for (let el of details) {
+                if(el !== e.target.parentElement){
+                  el.open = true;
+                }
+              }
+            } else {
+              for (let el of details) {
+                if(el !== e.target.parentElement){
+                  el.open = false;
+                }
+              }
+            }
+          }
+        },
 
         async getPrice(tickerName) {
           const result = await fetch(
