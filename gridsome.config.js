@@ -53,21 +53,7 @@ module.exports = {
         ]
       }
     },
-
-    {
-      // Create posts from markdown files
-      use: "@gridsome/vue-remark",
-      options: {
-        typeName: "Community",
-        baseDir: "content/community",
-        route: '/community/:path',
-        template: './src/templates/Community.vue',
-        plugins: [
-           ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-        ]
-      }
-    },
-
+    
     {
       use: "gridsome-plugin-translateit",
       options: {

@@ -6,57 +6,25 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+
+  // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  api.loadSource(async store => {
+    store.addMetadata('home', 'https://robonomics.network')
+    store.addMetadata('discord', 'https://discord.gg/JpaN2XAmqY')
+    store.addMetadata('twitter', 'https://twitter.com/AIRA_Robonomics')
   })
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
 
-
+  // Use the Pages API here: https://gridsome.org/docs/pages-api/
   api.createManagedPages(({ createPage }) => {
-    createPage({
+    createPage(
+      {
           path: '/en/',
           component: 'src/pages/redirect.vue',
           context: {
             redirect: '/'
           }
-      })
+      }
+    )
   })
-
-
-
-  // api.createManagedPages(async ({ graphql, createPage}) => {
-  //   // Use the Pages API here: https://gridsome.org/docs/pages-api
-  //   const {data} = await graphql(`{
-  //     allPost {
-  //       edges {
-  //         previous {
-  //           id
-  //         }
-  //         next {
-  //           id
-  //         }
-  //         node {
-  //           id
-  //           path
-  //         }
-  //       }
-  //     }
-  //   }
-  //   `)
-
-  //   data.allPost.edges.forEach(function (element) {
-  //     createPage({
-  //       path: element.node.path,
-  //       component: './src/templates/Post.vue',
-  //       context: {
-  //         previousElement: (element.previous) ? element.previous.id : '##empty##',
-  //         nextElement: (element.next) ? element.next.id : '##empty##',
-  //         id: element.node.id
-  //       }
-  //     })
-  //   })
-  // })
 }

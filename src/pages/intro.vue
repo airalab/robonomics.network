@@ -8,9 +8,9 @@
     />
 
     <div class="page">
-      <section class="section section__solid section__dotted_darkblue">
+      <section class="section section__solid section__dotted_darkblue wide">
         <h1 class="layout layout__text clean">{{$ts('Intro for devs')}}</h1>
-        <div class="layout layout__text introSubtitle animate" v-in-viewport.once>{{$ts('Sergei Lonshakov')}}, {{$ts('software architect')}}</div>
+        <div class="layout layout__text animate subtitle" v-in-viewport.once>{{$ts('Sergei Lonshakov')}}, {{$ts('software architect')}}</div>
       </section>
 
       <section class="section">
@@ -301,26 +301,6 @@
 
   @media screen and (max-width: 350px) {
     h1 { font-size: calc(var(--base-font-size) * 1) }
-  }
-
-  .introSubtitle {
-    font-size: 90%;
-    font-style: italic;
-    text-align: center;
-  }
-
-  .introSubtitle:before {
-      content: "";
-      display: block;
-      height: 1px;
-      width: 2rem;
-      background-color: #fff;
-      margin: 0 auto 0.4rem;
-  }
-
-  .section__solid {
-    padding-top: calc(var(--space) * 4);
-    padding-bottom: calc(var(--space) * 4);
   }
 
 

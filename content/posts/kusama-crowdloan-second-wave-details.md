@@ -162,8 +162,6 @@ The final task for the 48 weeks of existence in the Kusama network is the transf
 
 Kusama is an experimental network, and the main thing for which it is worth participating in any activity around this network is the desire to be involved in a large experiment. When deciding whether you will help Robonomics during the second crowdloan company or not, the only significant question for you should be - do I want to see the functionality of connecting IoT devices from the real world under the control of the Kusama network in the near future? If you answer is yes, then you are as crazy as we are - you want to turn the world around, which means you are welcome on board!
 
-<!-- > Stay tuned and follow our updates [on Twitter](https://twitter.com/AIRA_Robonomics) -->
-
 <Card :icon="'/icons/icon-notification.png'" :link="'https://twitter.com/AIRA_Robonomics'">
 
 ### Join our Twitter

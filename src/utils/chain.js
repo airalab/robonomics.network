@@ -15,7 +15,7 @@ export const config = {
   types: {
     ValidationCodeHash: "Hash"
   },
-  paraId: 2077
+  paraId: 2048
 };
 
 let provider;

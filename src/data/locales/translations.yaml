@@ -12,6 +12,9 @@
 - alias: or
   en: or
   ru: или
+  zh: 或
+  es: o
+  ko: 또는
 
 - alias: and
   en: and
@@ -86,10 +89,9 @@
   es: Intro #GT
   ko: 소개 #GT
 
-# - alias: Crowdloan
-#   en: Crowdloan
-#   ru: Crowdloan
-#   zh: 众贷
+- alias: Kusama slot
+  en: Kusama slot
+  ru: Kusama слот
 
 - alias: Docs
   en: Docs
@@ -100,6 +102,22 @@
   en: Blog
   ru: Блог
   zh: 博客
+
+- alias: Nav Learn
+  en: Learn
+  ru: Теория
+
+- alias: Nav Use
+  en: Use
+  ru: Практика
+
+- alias: Nav Tokenomics
+  en: Tokenomics
+  ru: Токеномика
+
+- alias: Nav Community
+  en: Community
+  ru: Сообщество
 
 # Top Banner
 
@@ -989,12 +1007,12 @@
   es: Compruebe si instaló la extensión polkadot {.js}
   ko: polkadot{.js} 확장 프로그램을 설치했는지 확인
 
-- alias: Connect Polkadot.js extension
-  en: Connect Polkadot.js extension
-  ru: Подключите расширение Polkadot.js
-  zh: 连接Polkadot.js扩展
-  es: Conecte la extensión Polkadot.js
-  ko: Polkadot.js 확장 프로그램에 연결
+# - alias: Connect Polkadot.js extension
+#   en: Connect Polkadot.js extension
+#   ru: Подключите расширение Polkadot.js
+#   zh: 连接Polkadot.js扩展
+#   es: Conecte la extensión Polkadot.js
+#   ko: Polkadot.js 확장 프로그램에 연결
   
 - alias: Select an account
   en: Select an account
@@ -1514,12 +1532,12 @@
   es: PolkaPet es una tarjeta NFT coleccionable que encarna una criatura artística y representa un proyecto específico dentro del ecosistema Polkadot. Los propietarios de Robonomics PolkaPets pueden obtener algunas bonificaciones adicionales.
   ko: PolkaPet은 예술적인 생명체로 구현된 수집 가능한 NFT 카드로 Polkadot 생태계 내의 특정 프로젝트를 나타냅니다. Robonomics PolkaPet 소유자는 추가 보너스를 받을 수 있습니다.
 
-- alias: Robonomics Relay Chain on Polkadot
-  en: Robonomics Relay Chain on Polkadot
-  ru: Relay Chain Робономики в Polkadot
-  zh: 波卡上的Robonomics中继链
-  es: Relay chain de Robonomics en Polkadot
-  ko: Polkadot의 Robonomics 릴레이 체인
+# - alias: Robonomics Relay Chain on Polkadot
+#   en: Robonomics Relay Chain on Polkadot
+#   ru: Relay Chain Робономики в Polkadot
+#   zh: 波卡上的Robonomics中继链
+#   es: Relay chain de Robonomics en Polkadot
+#   ko: Polkadot의 Robonomics 릴레이 체인
 
 - alias: Kusama parachain is great opportunity for Robonomics to scale network up to 1 million IoT systems connected in real-time without any centrilized regulators.
   en: Kusama parachain is great opportunity for Robonomics to scale network up to 1 million IoT systems connected in real-time without any centrilized regulators.
@@ -1528,19 +1546,19 @@
   es: La parachain de Kusama es una gran oportunidad para que Robonomics escale la red hasta 1 millón de sistemas de IoT conectados en tiempo real sin ningún regulador centralizado.
   ko: Kusama 파라체인은 Robonomics가 중앙 집중식 규제기관 없이 실시간으로 연결된 최대 100만 대의 IoT 시스템으로 네트워크를 확장할 좋은 기회입니다.
 
-- alias: The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific parachains, including
-  en: The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific parachains, including
-  ru: Команда разработчиков Робономики сформировала план на 2 года в рамках слота Kusama. Мы постараемся построить на основе нашей существующей работы и разработки нового программного обеспечения 5 конкретных парачейнов, в том числе
-  zh: Robonomics开发团队制定了2年的Kusama插槽计划。我们将尝试在现有的工作和新软件开发的基础上继续开发5个特定的平行链，包括
-  es: El equipo de desarrolladores de Robonomics creó un plan de 2 años dentro del slot de Kusama. Intentaremos basarnos en nuestro trabajo existente y el desarrollo de nuevo software en 5 parachains específicas, que incluyen
-  ko: Robonomics 개발팀은 Kusama 슬롯에 대한 2년 계획을 수립했습니다. 우리는 기존 작업과 다음을 포함한 새로운 소프트웨어 개발을 기반으로 5개의 특정 파라체인을 구축하려고 노력할 것입니다.
+- alias: The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific features, including
+  en: The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific features, including
+  ru: Команда разработчиков Робономики сформировала план на 2 года в рамках слота Kusama. Мы постараемся построить на основе нашей существующей работы и разработки нового программного обеспечения 5 конкретных функций, в том числе
+  zh: Robonomics开发团队制定了2年的Kusama插槽计划。我们将尝试在现有的工作和新软件开发的基础上继续开发5个特定的平行链，包括 # parachains - > features
+  es: El equipo de desarrolladores de Robonomics creó un plan de 2 años dentro del slot de Kusama. Intentaremos basarnos en nuestro trabajo existente y el desarrollo de nuevo software en 5 parachains específicas, que incluyen # parachains - > features
+  ko: Robonomics 개발팀은 Kusama 슬롯에 대한 2년 계획을 수립했습니다. 우리는 기존 작업과 다음을 포함한 새로운 소프트웨어 개발을 기반으로 5개의 특정 파라체인을 구축하려고 노력할 것입니다. # parachains - > features
 
-- alias: Smart leasing parachain
-  en: Smart leasing parachain
-  ru: Парачейн умного лизинга
-  zh: 智能租赁平行链
-  es: Parachain de arrendamiento inteligente
-  ko: 파라체인에 대한 스마트 임대
+- alias: Smart leasing
+  en: Smart leasing
+  ru: Умный лизинг
+  # zh: 智能租赁平行链
+  # es: Parachain de arrendamiento inteligente
+  # ko: 파라체인에 대한 스마트 임대
 
 - alias: Recoup your investment in the high-value robots by renting out it with a mechanism for tokenizing robots’ labor.
   en: Recoup your investment in the high-value robots by renting out it with a mechanism for tokenizing robots’ labor.
@@ -1549,12 +1567,12 @@
   es: Recupere la inversión en los robots de alto valor alquilándolos con un mecanismo para tokenizar su trabajo.
   ko: 로봇의 노동을 토큰화하는 메커니즘을 통해 고부가가치 로봇을 임대하여 그에 대한 투자를 회수할 수 있습니다.
 
-- alias: Robot as a Service (RaaS) parachain
-  en: Robot as a Service (RaaS) parachain
-  ru: Парачейн Robot as a Service (RaaS)
-  zh: 机器人即服务 (RaaS) 平行链（机器人即服务是一个著名范例）
-  es: Parachain Robot as a Service (RaaS)
-  ko: 서비스로서의 로봇(RaaS) 파라체인
+- alias: Robot as a Service (RaaS)
+  en: Robot as a Service (RaaS)
+  ru: Робот как услуга (RaaS)
+  zh: 机器人即服务 (RaaS)
+  es: Robot as a Service (RaaS)
+  ko: 서비스로서의 로봇(RaaS)
 
 - alias: Get and provide direct robot services without cashiers, clerks or centrilized cloud providers.
   en: Get and provide direct robot services without cashiers, clerks or centrilized cloud providers.
@@ -1563,13 +1581,6 @@
   es: Obtenga y proporcione servicios de robot directo sin cajeros, empleados o proveedores de nube centralizados.
   ko: 캐셔, 점원 또는 중앙 집중식 클라우드 업체 없이 직접 로봇 서비스를 받고 제공할 수 있습니다.
 
-- alias: RWS parachain
-  en: RWS parachain
-  ru: Парачейн RWS
-  zh: RWS平行链
-  es: Parachain RWS
-  ko: RWS 파라체인
-
 - alias: Robonomics Web Services (RWS) will provide decentralized infrastructure for IoT solutions.
   en: Robonomics Web Services (RWS) will provide decentralized infrastructure for IoT solutions.
   ru: Веб-сервисы Робономики (RWS) предоставят децентрализованную инфраструктуру для IoT-решений.
@@ -1577,26 +1588,12 @@
   es: Los servicios web de Robonomics (RWS) proporcionarán una infraestructura descentralizada para las soluciones de IoT.
   ko: Robonomics Web Services(RWS)는 IoT 솔루션을 위한 분산형 인프라를 제공합니다.
 
-- alias: DAO IPCI parachain
-  en: DAO IPCI parachain
-  ru: Парачейн DAO IPCI
-  zh: DAO IPCI平行链
-  es: Parachain DAO IPCI
-  ko: DAO IPCI 파라체인
-
 - alias: The Robonomics network provides technology for environmental mitigation service DAO IPCI.
   en: The Robonomics network provides technology for environmental mitigation service DAO IPCI.
   ru: Сеть Робономики предоставляет технологии для сервиса защиты окружающей среды DAO IPCI.
   zh: Robonomics网络为环境保护服务DAO IPCI提供技术。
   es: La red Robonomics proporciona tecnología para el servicio de mitigación ambiental DAO IPCI.
   ko: Robonomics 네트워크는 환경 영향 완화 서비스 DAO IPCI를 위한 기술을 제공합니다.
-
-- alias: Distributed Sky parachain
-  en: Distributed Sky parachain
-  ru: Distributed Sky平行链
-  zh: Парачейн Distributed Sky
-  es: Parachain Distributed Sky
-  ko: Distributed Sky 파라체인
 
 - alias: Blockchain techonologies to control the traffic of drones (automated planning of drone flight paths, decentralized payment regulations, smart contract for transactions)
   en: Blockchain techonologies to control the traffic of drones (automated planning of drone flight paths, decentralized payment regulations, smart contract for transactions)
@@ -1661,9 +1658,232 @@
   es: Twitter arquitecto de software
   ko: 소프트웨어 아키텍트 트위터
 
-- alias: Robonomics Telegram Community Crowdloan 2
-  en: Robonomics Telegram Community
-  ru: Telegram-сообщество Робономики
-  zh: Robonomics Telegram社区
-  es: Comunidad de Telegram de Robonomics
-  ko: Robonomics 텔레그램 커뮤니티
+# - alias: Robonomics Telegram Community Crowdloan 2
+#   en: Robonomics Telegram Community
+#   ru: Telegram-сообщество Робономики
+#   zh: Robonomics Telegram社区
+#   es: Comunidad de Telegram de Robonomics
+#   ko: Robonomics 텔레그램 커뮤니티
+
+
+# Page /xrt/
+
+- alias: Robonomics token
+  en: Robonomics token
+  ru: Токен Робономики
+  zh: Robonomics代币
+  es: Ficha de Robonomics
+  ko: 로보노믹스 토큰
+
+- alias: XRT is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain.
+  en: XRT is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain.
+  ru: XRT - это служебный токен, который позволяетт управлять IoT-устройствами поверх сети Ethereum и парачейна Робономики.
+  zh: XRT是一种效用代币，将使控制以太坊网络和Robonomics平行链之上的物联网设备成为可能。
+  es: XRT es el token de utilidad que hará posible el control de dispositivos IoT sobre las parachains de Robonomics y la red de Ethereum.
+  ko: XRT는 이더리움 네트워크 및 로보노믹스 파라체인과 더불어 IoT 장치를 제어할 수 있게 해주는 유틸리티 토큰입니다.
+
+- alias: Ethereum ecosystem
+  en: Ethereum ecosystem
+  ru: Экосистема Ethereum
+  zh: 以太坊生态系统
+  es: Ecosistema de Ethereum
+  ko: 이더리움 생태계
+
+- alias: XRT is available as ERC-20 token
+  en: XRT is available as ERC-20 token
+  ru: XRT доступен как ERC-20 токен
+  zh: XRT可用作ERC-20代币
+  es: XRT está disponible como token ERC-20
+  ko: XRT는 ERC-20 토큰으로 사용할수 있습니다
+
+- alias: Polkadot Ecosystem
+  en: Polkadot Ecosystem
+  ru: Экосистема Polkadot
+  zh: 波卡生态系统
+  es: Ecosistema de Polkadot
+  ko: 폴카닷 생태계
+
+- alias: XRT is available as Robonomics parachain native token
+  en: XRT is available as Robonomics parachain native token
+  ru: XRT доступен как нативный токен парачейна Робономики
+  zh: XRT可用作Robonomics平行链原生代币
+  es: XRT está disponible como token nativo de las parachains de Robonomics
+  ko: XRT는 로보노믹스 파라체인 기본토큰으로 사용할 수 있습니다
+
+- alias: Be careful!
+  en: Be careful!
+  ru: Будьте осторожны!
+  zh: 请务必谨慎！
+  es: Tenga cuidado.
+  ko: 조심하세요!
+  
+- alias: Check the address of token while buying. Do not copy the address from chats or any private messages, view it on Etherscan for ERC-20.
+  en: Check the address of token while buying. Do not copy the address from chats or any private messages, view it on Etherscan for ERC-20.
+  ru: Проверяйте адрес токена при покупке. Не копируйте адрес из чатов или личных сообщений, просматривайте его на Etherscan для ERC-20.
+  zh: 购买时一定要查看代币地址。不要从聊天或任何私人消息中复制地址，请在Etherscan for ERC-20上查看。
+  es: Verifique la dirección del token mientras compra. No copie la dirección de chats o mensajes privados, véala en Etherscan para ERC-20.
+  ko: 구매 시 토큰의 주소를확인하세요. 채팅이나 개인 메시지에서 주소를 복사하지 말고, ERC-20은 Etherscan에서 확인하세요.
+
+- alias: What you can do with XRT right now?
+  en: What you can do with XRT right now?
+  ru: Что вы можете сделать с XRT прямо сейчас?
+  zh: 您现在可以使用XRT做些什么？
+  es: ¿Qué puede hacer con XRT ahora mismo?
+  ko: 지금 XRT로 무엇을 할 수 있을까요?
+
+- alias: Buy IoT subscriptions
+  en: Buy IoT subscriptions
+  ru: Купить IoT-подписки
+  zh: 购买物联网订阅
+  es: Compre suscripciones de IoT
+  ko: IoT 구독 신청
+
+- alias: We are launching Robonomics Web Services. This sustainable subscription model for IoT devices makes possible to execute zero-weight transactions in blockchain.
+  en: We are launching Robonomics Web Services. This sustainable subscription model for IoT devices makes possible to execute zero-weight transactions in blockchain.
+  ru: Мы запускаем веб-сервисы Робономики. Эта устойчивая модель подписки для IoT-устройств позволяет выполнять транзакции с нулевым весом в блокчейне.
+  zh: 我们即将推出Robonomics Web服务。物联网设备的这种可持续订阅模式让区块链中执行零权重交易成为可能。
+  es: Estamos lanzando los Servicios web de Robonomics. Este modelo de suscripción sostenible para los dispositivos IoT hace posible ejecutar transacciones de peso cero en la blockchain.
+  ko: 당사에서 로보노믹스 웹 서비스를출시할 예정입니다. IoT 장치를 위한 이 지속 가능한 구독 모델을 통해 블록체인에서 가중치 제로 트랜잭션을 실행할 수 있습니다.
+
+- alias: Learn more
+  en: Learn more
+  ru: Узнать больше
+  zh: 了解详情
+  es: Más información
+  ko: 자세히 알아보기
+
+- alias: Buy RWS
+  en: Buy RWS
+  ru: Купить RWS
+  zh: 购买RWS
+  es: Compre RWS
+  ko: RWS 구매
+
+- alias: Trade
+  en: Trade
+  ru: Торговать
+  zh: 交易
+  es: Comercio
+  ko: 거래
+
+- alias: You may buy and sell XRT as an ERC-20 token. The below buttons will take you to the relevant DEXs (Decentralized Exchanges). Please, always double-check the token contract address when buying from a DEX.
+  en: You may buy and sell XRT as an ERC-20 token. The below buttons will take you to the relevant DEXs (Decentralized Exchanges). Please, always double-check the token contract address when buying from a DEX.
+  ru: Вы можете покупать и продавать XRT как токены ERC-20. Кнопки ниже переведут вас на соответствующие DEX (децентрализованные биржи). Пожалуйста, всегда перепроверяйте адрес контракта токена при покупке на DEX.
+  zh: 您可以将XRT作为ERC-20代币买卖。以下按钮将带您进入相关的DEX（去中心化交易所）。从DEX购买时，请务必仔细核对代币合约地址
+  es: Puede comprar y vender XRT como un token ERC-20. Los botones a continuación lo llevarán a los DEX (intercambios descentralizados) relevantes. Siempre verifique dos veces la dirección del contrato del token cuando compre en un DEX.
+  ko: XRT를 ERC-20 토큰으로 사고팔 수 있습니다. 아래버튼을 누르면 관련 DEX(탈중앙화거래소)로 이동합니다. DEX에서구매할 때 항상 토큰 계약 주소를다시 확인하세요.
+
+- alias: Watch markets on Coingecko
+  en: Watch markets on Coingecko
+  ru: Смотреть площадки на Coingecko
+  zh: 在 Coingecko 上观察市场 #GT
+  es: Observe los mercados en Coingecko #GT
+  ko: Coingecko에서 시장 보기 #GT
+
+- alias: Stake
+  en: Stake
+  ru: Стейкать
+  zh: 质押
+  es: Inversión
+  ko: 베팅액
+  
+# Used also on page kusama-slot
+- alias: "Take part in our unique staking program: rewarding stakeholders and enabling more zero-weight transactions for IoT devices."
+  en: "Take part in our unique staking program: rewarding stakeholders and enabling more zero-weight transactions for IoT devices."
+  ru: "Примите участие в нашей уникальной программе стейкинга: вознаграждение стейкхолдеров и обеспечение большего количества транзакций с нулевым весом для IoT-устройств."
+  zh: "参与我们独特的权益质押计划：奖励权益持有者并实现更多用于物联网设备的零权重交易。"
+  es: "Participe en nuestro exclusivo programa de inversión: recompensa a las partes interesadas y permite más transacciones de peso cero para los dispositivos IoT."
+  ko: "당사의 고유한 스테이킹 프로그램에 참여하세요. 이해관계자에게 보상을 제공하고 IoT 장치 관련 가중치가 없는 거래를 더 많이 허용합니다."
+
+- alias: Please note that staking is only available for the parachain native XRT token.
+  en: Please note that staking is only available for the parachain native XRT token.
+  ru: Пожалуйста, обратите внимание, что стейкинг доступен только для нативного XRT токена парачейна.
+  zh: 请注意，权益质押仅适用于平行链原生XRT代币。
+  es: Tenga en cuenta que la inversión solo está disponible para el token XRT nativo de la parachain.
+  ko: 스테이킹은 파라체인 네이티브XRT 토큰에만 사용할 수 있습니다.
+
+- alias: Stake XRT in dapp
+  en: Stake XRT in dapp
+  ru: Застейкайте XRT в dapp
+  zh: 在dapp中质押XRT
+  es: Inversión XRT en dapp
+  ko: dapp에서 XRT 스테이킹
+
+- alias: All products listed on this page are not official endorsements, and are provided for informational purposes only.
+  en: All products listed on this page are not official endorsements, and are provided for informational purposes only.
+  ru: Все продукты, перечисленные на этой странице, не являются официальными рекомендациями и предназначены только для информационных целей.
+  zh: 此页面上列出的所有产品均非官方认可，仅供参考。
+  es: Todos los productos enumerados en esta página no son respaldos oficiales y se proporcionan solo con fines informativos.
+  ko: 이 페이지에 나열된 모든 제품은 공식 추천이 아닌 정보 제공 목적으로만 제공됩니다.
+
+- alias: Token distribution
+  en: Token distribution
+  ru: Дистрибуция токена
+  zh: 代币分发
+  es: Distribución de tokens
+  ko: 토큰 유통
+
+- alias: Robonomics is a dynamically developing project that does not stand still. Token distribution varies depending on the stage of the project development. We are planning the next changes in 2022. Check out the current state and plans.
+  en: Robonomics is a dynamically developing project that does not stand still. Token distribution varies depending on the stage of the project development. We are planning the next changes in 2022. Check out the current state and plans.
+  ru: Робономика - это динамично развивающийся проект, который не стоит на месте. Дистрибуция токена варьируется в зависимости от стадии развития проекта. Следующие изменения мы планируем в 2022 году. Ознакомьтесь с текущим состоянием и планами.
+  zh: Robonomics是一个动态发展的项目，不会停滞不动。代币分发因项目开发阶段而异。我们计划在2022年进行下一次更改。查看当前状态和计划。
+  es: Robonomics es un proyecto de desarrollo dinámico que no se detiene. La distribución de tokens varía según la etapa de desarrollo del proyecto. Estamos planificando los próximos cambios en 2022. Consulte el estado actual y los planes.
+  ko: 로보노믹스는 멈추지 않고 역동적으로 발전하는 프로젝트입니다. 토큰 배포는 프로젝트 개발 단계에 따라 다릅니다. 2022년에 변화를 계획하고 있습니다. 현황과 계획을 확인하세요.
+  
+- alias: XRT distribution release, March 2021
+  en: XRT distribution release, March 2021
+  ru: Релиз дистрибуции токена, март 2021
+  zh: 代币分发发布，2021年3月
+  es: Lanzamiento de distribución de tokens, marzo de 2021
+  ko: 토큰 배포 릴리스, 2021년 3월
+
+- alias: XRT Fundamentals
+  en: XRT Fundamentals
+  ru: Основы XRT
+  zh: XRT基础
+  es: Fundamentos de XRT
+  ko: XRT 기본 사항
+
+- alias: The economy of the token is directly related to the implementation of the network. Read Robonomics White paper from May 12, 2018 and prepare for updates.
+  en: The economy of the token is directly related to the implementation of the network. Read Robonomics White paper from May 12, 2018 and prepare for updates.
+  ru: Экономика токена напрямую связана с реализацией сети. Прочтите whitepaper Робономики от 12 мая 2018 года и приготовьтесь к обновлениям.
+  zh: 代币的经济性与网络的实施直接相关。请阅读2018年5月12日的《Robonomics白皮书》了解最新内容。
+  es: La economía del token se relaciona de manera directa con la implementación de la red. Lea el Informe técnico de Robonomics del 12 de mayo de 2018 y prepárese para las actualizaciones.
+  ko: 토큰의 경제는 네트워크 구현과 직접적인 관련이 있습니다. 2018년 5월 12일자 로보노믹스 백서를 읽고업데이트를 준비하세요.
+
+- alias: Robonomics White paper, May 12, 2018
+  en: Robonomics White paper, May 12, 2018
+  ru: Whitepaper Робономики, 12 мая 2018 года
+  zh: Robonomics白皮书，2018年5月12日
+  es: Informe técnico de Robonomics, 12 de mayo de 2018
+  ko: 로보노믹스 백서, 2018년 5월 12일
+
+- alias: Other links
+  en: Other links
+  ru: Другие ссылки
+  zh: 其他链接
+  es: Otros enlaces
+  ko: 기타 링크
+
+- alias: View F.A.Q. and chat with us in Discord
+  en: View F.A.Q. and chat with us in Discord
+  ru: Посмотрите F.A.Q. и пообщайтесь с нами в Discord
+  zh: 在Discord中查看常见问题并与我们聊天
+  es: Vea las preguntas frecuentes y chatee con nosotros en Discord
+  ko: FAQ를 보고 Discord에서 채팅하기
+
+
+
+
+
+
+
+  # Components
+
+  # Kusama Slot Banner
+- alias: Want to be a part of the future?
+  en: Want to be a part of the future?
+  ru: Хотите быть частью будущего?
+  zh: 想成为未来的一部分吗？ #GT
+  es: ¿Quieres ser parte del futuro? #GT
+  ko: 미래의 일부를 원하십니까? #GT

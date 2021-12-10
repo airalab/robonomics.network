@@ -1,6 +1,6 @@
 <template>
 
-    <select v-if="$localesList" tabindex="0" @change="changelocale($event)" class="oldy">
+    <select v-if="$localesList" tabindex="0" @change="changelocale($event)" class="oldy dark">
   
       <template v-for="(item,key) in $localesList">
         <option v-bind:key="key" :selected="item == $locale" v-bind:value="item">
@@ -19,6 +19,7 @@
     background-image: none;
     padding: 0.4rem 0.8rem;
     font-size: 70%;
+    color: #000;
   }
 </style>
 

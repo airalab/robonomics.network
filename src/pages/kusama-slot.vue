@@ -7,191 +7,163 @@
       pageImage = "/website_cover_crowdloan.jpg"
     />
 
-    <div class="auction page">
+    <div class="page">
+       <section id="info" class="section__solid section__blue">
+         <div class="content layout laouyt__content">
+           <h1>Robonomics Kusama crowdloan</h1>
+           <p id="info-subtitle">New era of autonomous oracle based crowdloan opened now</p>
 
+           <div class="grid-5">
+             <div class="oldy dark bg-blue align-left">
+               <div class="text-title m-b-0">Collection limit</div>
+               <div>47,425.5262 KSM</div>
+               <details>
+                 <summary>i</summary>
+                 Based on fees assessment of the 15th auction, Geshiro
+               </details>
+             </div>
 
-      <section class="page-banner section section__solid section__red">
-        <div class="layout layout__content">
-          <h1 class="auction-parachain-title clean">{{$ts('Crowdloan for Robonomics on Kusama')}}</h1>
-          <p class="layout__text text-big"><i>{{$ts('Crowdloan Description')}}</i></p>
+             <div class="oldy dark bg-blue align-left">
+               <div class="text-title m-b-0">Duration</div>
+               <div>5 weeks</div>
+               <details>
+                 <summary>i</summary>
+                 We assume that one crowdloan campaign should aim to collect for 5 weeks. In case of failure, the oracle will have to shift the sample estimate of the median fees and camphain starts again.
+               </details>
+             </div>
 
-          <div class="grid-3 grid-valign-top align-left">
-          <!-- <div> -->
+             <div class="oldy dark bg-blue align-left">
+               <div class="text-title m-b-0">Remuneration</div>
+               <div>4.20 XRT</div>
+               <details>
+                 <summary>i</summary>
+                  1 KSM ~ 370$ APR = 19%,<br/>
+                  1XRT ~ 17$
+               </details>
+             </div>
 
-            <div>
-              <g-image class="banner-astronauts" :alt="$ts('Crowdloan for Robonomics on Kusama')" src="~/assets/images/robonomics-kusama-astronauts.png" />
-            </div>
+             <div class="oldy dark bg-blue align-left">
+               <div class="text-title m-b-0">Extra 1XRT EACH KSM</div>
+               <div>For pioneer NFT cardholders</div>
+               <details>
+                 <summary>i</summary>
+                 Any contributor in the past auctions can <g-link to="https://dapp.robonomics.network/#/pioneer">claim</g-link> Pioneer nft <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">card</g-link>
+               </details>
+             </div>
 
-            <!-- <div>
-              <div class="input-signed-right">
+             <div class="oldy dark bg-blue align-left">
+               <div class="text-title m-b-0">Distribution rewards</div>
+               <div>Monthly</div>
+               <details>
+                 <summary>i</summary>
+                 Proportionally equal shares for 12 months. The treasury performs by generating new tokens in the parachain
+               </details>
+             </div>
+           </div>
+
+           <p class="info-tip">These terms & conditions <a href="/blog/automating-kusama-crowdloan-campaigns/" target="_blank">counted by algorithm</a></p>
+
+           <g-image id="info-girl" aria-hidden="true" alt="" src="~/assets/images/kusama-cosmogirl-sitting.png" />
+
+         </div>
+         
+         <div id="info-numbers">
+           <MovingNumbers/>
+         </div>
+       </section>
+
+       <section id="a-contribution" class="section__solid section__darkgray">
+         <form class="contribution layout">
+           <template v-if="!isApi">
+             <div class="input-signed-right">
                 <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
                 <label for="contribution" class="sign">KSM</label>
               </div>
-              <p>{{ reward_xrt }} XRT [${{reward_xrt_usd}} {{$ts('at current price')}}]</p>
-              <a href="#crowdloan" class="button primary large green" v-smooth-scroll="{offset: -100}">{{$ts('Contribute')}}</a>
-            </div> -->
-
-            <div>
-                
-                <div class="text-huge"><b>
-                  4009
-                  <!-- <template v-if="info_contributed > 0">{{info_contributed}}</template> 
-                  <template v-else><span class="loader-text"></span></template>  -->
-                KSM</b></div>
-                <p>
-                  {{$ts('Crowdloan2 banner from')}}
-                  744
-                  <!-- <template v-if="info_count > 0">{{info_count}}</template>  -->
-                  <!-- <template v-else><span class="loader-text-s"></span></template>  -->
-                  {{$ts('Crowdloan From contributors')}}</p>
-                  <p>{{$ts('Raised, but not enough to get slot')}}</p>
-                <div class="text-little">{{$ts('Robonomics Parathread ID')}} = 2077</div>
-                <div class="text-little"><g-link to="https://kusama.network/auctions/">{{$ts('About Kusama auctions')}}</g-link></div>
-              </div>
-
-              <div>
-                <p class="text-huge"><b>{{$ts('Thanks for all participants!')}}</b></p>
-                <p><i>Stay connected, stay tuned</i></p>
-              </div>
-          </div>
-
-          
-
-        </div>
-      </section>
-
-      <hr class="no-margins" />
-
-      <section class="section section__solid section__darkgray">
-        <h2>{{$ts('Get annual staking return')}} {{ staking_xrt }}%</h2>
-        <div class="layout layout__content grid-3 hyphens animate-inside" v-in-viewport.once>
-          <div>
-            <div class="text-huge"><strong>6 XRT</strong></div>
-            <p>{{$ts('For each KSM.')}} {{$ts('Increased rewards')}}:</p>
-        
-            <p>&bull;&nbsp;{{$ts('for participants in the collection of the first 6,300 KSM')}}<br/>
-            &bull;&nbsp;{{$ts('for Robonomics Pioneer NFT holders who bond the first 27,000 KSM')}}</p>
-     
-          </div>
-
-          <div>
-            <div class="text-huge"><strong>3.5 XRT</strong></div>
-            <p>{{$ts('For each KSM.')}} {{$ts('Regular rewards for those who do not fall into the indicated conditions in increased rewards.')}}</p>
-            <p>{{$ts('This is ~ 1.5 times more profitable than staking KSM in the Kusama Relay Chain.')}}</p>
-          </div>
-
-          <div>
-            <div class="text-huge"><strong>{{$ts('Quick rewards')}}</strong></div>
-            <p>{{$ts('You can get 50% of reward in the first month after the launch of the network')}}</p>
-            <div class="text-huge"><strong>{{$ts('Parachain native token')}}</strong></div>
-            <p>{{$ts('All XRT tokens will be distributed in the Robonomics parachain')}}</p>
-          </div>
-        </div>
-
-      </section>
-
-      <hr class="animate no-margins" v-in-viewport.once/>
-<!-- 
-      <section id="crowdloan" class="auction-support layout">
-          <h2 class="animate" v-in-viewport.once>{{$ts('Participate in the Robonomics crowdloan')}}</h2>
-          <p class="layout__text animate" v-in-viewport.once><i>{{$ts('By participating in the Robonomics crowdloan you lock your KSM for a period of time 48 weeks to help Robonomics lease a parachain slot and gain Kusama’s distributed computing power to service up to 10,000 digital twins of IoT devices at once.')}}</i></p>
-          <div class="auction-support-action animate" v-in-viewport.once>
-            <div class="form-line">
-              <small>{{$ts('Choose the way to contribute')}}</small>
-              <select class="block robot" v-model="selectedWay">
-                <option selected value="1">1 - {{$ts('On website')}}</option>
-                <option value="2">2 - {{$ts('On Polkadot Substrate portal')}}</option>
-                <option value="3">3 - {{$ts('Kraken Exchange')}}</option>
-                <option value="4">4 - {{$ts('Fearless DeFi Wallet')}}</option>
-              </select>
-            </div>
-            <section id="participate-1" class="loading" v-if="selectedWay==1">
-              <form>
-              
-                <template v-if="!isApi">
-                <section>
-                  <label class="block label">
+              <section class="checks">
+                <label class="block label">
                     <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-1"/>
                     <span>{{$ts('I have installed the')}} <g-link to="https://polkadot.js.org/extension/">{{$ts('Polkadot.js browser extension')}}</g-link></span>
-                  </label>
-                  <label class="block label">
+                </label>
+                <label class="block label">
                     <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-2" />
                     <span>{{$ts('I have KSM in my Polkadot.js account')}}</span>
-                  </label>
-                  <label class="block label">
+                </label>
+                <label class="block label">
                     <input type="checkbox" class="big" required  v-model="checkedFlags" value="crowdloan-flag-3" />
                     <span>{{$ts('My KSM has been unbonded')}}</span>
                     <tip summary="☝️" position="right-bottom" class="inline-block-clear">
                       {{$ts('Supporters who are currently staking (bonding) their KSM will need to unstake prior to bonding their KSM to the crowdloan module. Kusama has a delayed exit period ~ 7 days.')}} 
                       <g-link to="https://wiki.polkadot.network/docs/en/maintain-guides-how-to-unbond">{{$ts('How to unbond KSM')}}</g-link>
                     </tip>
-                  </label>
-                </section>
-                <p v-if="status_noextension" class="error">{{$ts('Please check if you have installed polkadot{.js} extension')}}</p>
-                <Button type="button" @click="connect" button="primary block green large" :disabled="isСonnection || checkedFlags.length!=3" :class="crowdloan_loading?'loading':''">
-                  <span class="text">{{$ts('Connect Polkadot.js extension')}}</span>
-                </Button>
+                </label>
+              </section>
+              <p v-if="status_noextension" class="error">{{$ts('Please check if you have installed polkadot{.js} extension')}}</p>
+              <p v-if="checkedFlags.length!=3 && connect_clicked" class="error">{{$ts('Please check carefully all info above')}}</p>
+              <!-- <Button type="button" @click="connect" button="primary block green large" :disabled="isСonnection || checkedFlags.length!=3" :class="crowdloan_loading?'loading':''"> -->
+              <Button type="button" @click="connect" button="primary block green large" :class="crowdloan_loading?'loading':''">
+                <span class="text">{{$ts('Contribute')}}</span>
+              </Button>
+            </template>
+
+            <template v-else-if="isApi && !success">
+                  <section>
+                    <template v-if="accounts.length > 0">
+                      <label class="block label">
+                        <small>{{$ts('Select an account')}}:</small>
+                        <select v-model="account" class="block">
+                          <option
+                            v-for="(item, index) in accounts"
+                            :key="index"
+                            :value="item.address"
+                          >
+                            {{ item.meta.name }} - {{ item.address.slice(0, 6) + "..." + item.address.slice(-6) }}
+                          </option>
+                        </select>
+                      </label>
+                      <label class="block label">
+                        <small>{{$ts('The balance of selected account')}}:</small>
+                        <p>{{balanceView}}</p>
+                      </label>
+                      <label class="block label">
+                        <small>{{$ts('Your contribution')}}:</small>
+                        <div class="input-signed-right" :class="validateBalance?'':'error'">
+                          <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
+                          <label for="contribution" class="sign">KSM</label>
+                        </div>
+                        <div class="msg-error" v-if="!validateBalance">{{$ts('Insufficient or incorrectly entered balance')}}</div>
+                      </label>
+                      <label class="block label">
+                        <small>{{$ts('Your email (not necessary)')}}:</small>
+                        <input type="email" class="big block" value="" placeholder="Type your email" v-model="submit_email" :class="!validateEmail?'error':''"/>
+                        <div class="msg-error" v-if="!validateEmail&!agree_email">{{$ts('Please agree to receive emails from Robonomics or do not fill this field')}}</div>
+                      </label>
+                      <label class="block label" v-show="submit_email">
+                        <input v-model="agree_email" type="checkbox" class="big" required />
+                        <small>{{$ts('I agree to receive email communications from Robonomics')}}</small>
+                      </label>
+                      <details class="contribution-disclamer dashed">
+                        <summary><b>{{$ts('Most important to know')}}</b></summary>
+                        <article class="hyphens">
+                          <p>{{$ts('The Robonomics development team are early adopters of Polkadot technologies, and we understand that the current technical implementation of the Kusama Relay chain and Substrate framework may contain errors or be revised this year and next. This is important for the crowdloan campaigners to understand as well.')}}</p>
+                          <p>{{$ts("The entire Polkadot ecosystem is undergoing a process of formation that can take an indefinite time. It's also important for you to keep in mind every time when you study any plans of the developers.")}}</p>
+                          <p>{{$ts('Ladies and gentlemen, you are participating in this great experiment at your own peril and risk.')}}</p>
+                          <p>{{$ts('Welcome to our journey!')}}</p>
+                        </article>
+                      </details>
+                    </template>
+                    <template v-else>
+                      <label class="block label error">
+                        <small>{{$ts('No account found, please add account in your wallet extension or unlock it')}}</small>
+                      </label>
+                    </template>
+                  </section>
+                  <p v-if="status_transaction_broken" class="error">{{$ts("Something wrong with the transaction. Please don't worry and ask for help in")}} <g-link to="https://t.me/robonomics">{{$ts('Robonomics Telegram Community')}}</g-link></p>
+                  <p v-if="status_transaction_notdone" class="error">{{$ts("The transaction was not executed. Please don't worry and ask for help in")}} <g-link to="https://t.me/robonomics">{{$ts('Robonomics Telegram Community')}}</g-link></p>
+                  <Button type="button" @click="send" button="primary block green large" :disabled="!validateSend" :class="crowdloan_loading?'loading':''">
+                    <span class="text">{{$ts('Submit contribution')}}</span>
+                  </Button>
                 </template>
-      
-                <template v-else-if="isApi && !success">
-                <section>
-                  <template v-if="accounts.length > 0">
-                    <label class="block label">
-                      <small>{{$ts('Select an account')}}:</small>
-                      <select v-model="account" class="block">
-                        <option
-                          v-for="(item, index) in accounts"
-                          :key="index"
-                          :value="item.address"
-                        >
-                          {{ item.meta.name }} - {{ item.address.slice(0, 6) + "..." + item.address.slice(-6) }}
-                        </option>
-                      </select>
-                    </label>
-                    <label class="block label">
-                      <small>{{$ts('The balance of selected account')}}:</small>
-                      <p>{{balanceView}}</p>
-                    </label>
-                    <label class="block label">
-                      <small>{{$ts('Your contribution')}}:</small>
-                      <div class="input-signed-right" :class="validateBalance?'':'error'">
-                        <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
-                        <label for="contribution" class="sign">KSM</label>
-                      </div>
-                      <div class="msg-error" v-if="!validateBalance">{{$ts('Insufficient or incorrectly entered balance')}}</div>
-                    </label>
-                    <label class="block label">
-                      <small>{{$ts('Your email (not necessary)')}}:</small>
-                      <input type="email" class="big block" value="" placeholder="Type your email" v-model="submit_email" :class="!validateEmail?'error':''"/>
-                      <div class="msg-error" v-if="!validateEmail&!agree_email">{{$ts('Please agree to receive emails from Robonomics or do not fill this field')}}</div>
-                    </label>
-                    <label class="block label" v-show="submit_email">
-                      <input v-model="agree_email" type="checkbox" class="big" required />
-                      <small>{{$ts('I agree to receive email communications from Robonomics')}}</small>
-                    </label>
-                    <details class="contribution-disclamer">
-                      <summary><b>{{$ts('Most important to know')}}</b></summary>
-                      <article class="hyphens">
-                        <p>{{$ts('The Robonomics development team are early adopters of Polkadot technologies, and we understand that the current technical implementation of the Kusama Relay chain and Substrate framework may contain errors or be revised this year and next. This is important for the crowdloan campaigners to understand as well.')}}</p>
-                        <p>{{$ts("The entire Polkadot ecosystem is undergoing a process of formation that can take an indefinite time. It's also important for you to keep in mind every time when you study any plans of the developers.")}}</p>
-                        <p>{{$ts('Ladies and gentlemen, you are participating in this great experiment at your own peril and risk.')}}</p>
-                        <p>{{$ts('Welcome to our journey!')}}</p>
-                      </article>
-                    </details>
-                  </template>
-                  <template v-else>
-                    <label class="block label error">
-                      <small>{{$ts('No account found, please add account in your wallet extension or unlock it')}}</small>
-                    </label>
-                  </template>
-                </section>
-                <p v-if="status_transaction_broken" class="error">{{$ts("Something wrong with the transaction. Please don't worry and ask for help in")}} <g-link to="https://t.me/robonomics">{{$ts('Robonomics Telegram Community')}}</g-link></p>
-                <p v-if="status_transaction_notdone" class="error">{{$ts("The transaction was not executed. Please don't worry and ask for help in")}} <g-link to="https://t.me/robonomics">{{$ts('Robonomics Telegram Community')}}</g-link></p>
-                <Button type="button" @click="send" button="primary block green large" :disabled="!validateSend" :class="crowdloan_loading?'loading':''">
-                  <span class="text">{{$ts('Submit contribution')}}</span>
-                </Button>
-                </template>
-          
+
                 <section v-if="success" class="crowdloan-step-3 active">
                   <h3>{{$ts('Your contribution')}} {{contribution}} KSM {{$ts('accepted')}}!</h3>
                   <div class="load-bird" aria-hidden="true" v-in-viewport.once>
@@ -212,122 +184,83 @@
                     <span class="text">{{$ts('Contribute more')}}</span>
                   </Button>
                 </section>
-              </form>
-            </section>
-            <section id="participate-3" v-if="selectedWay==3">
-              <p><g-link to="https://www.kraken.com/"><g-image style="max-width:300px" alt="Kraken exchange logo" src="~/assets/images/kraken-logo.webp"/></g-link></p>
-              <p>{{$ts("We are on Kraken's Parachain Auction Platform")}}</p>
-              <p><g-link to="https://support.kraken.com/hc/en-us/articles/360060824412">{{$ts("Overview of parachain auctions on Kraken")}}</g-link></p>
-            </section>
-             <section id="participate-2" v-if="selectedWay==2" style="width:80%">
-               <p><g-link style="display:block;word-break: break-all;" to="https://polkadot.js.org/apps/#/parachains/crowdloan">https://polkadot.js.org/apps/#/parachains/crowdloan</g-link></p>
-               <p>{{$ts('In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions')}}: <g-link style="display:block;word-break: break-all;" to="https://twitter.com/AIRA_Robonomics/status/1377653645827833860">https://twitter.com/AIRA_Robonomics/status/1377653645827833860</g-link></p>
-            </section>
-            <section id="participate-4" v-if="selectedWay==4">
-              <p>{{$ts('You can also contribute to Robonomics crowdloan via')}} <g-link to="https://fearlesswallet.io">{{$ts('Fearless DeFi Wallet')}}</g-link>. {{$ts('We checked it and here are screenshots of the process')}}:</p>
-              <div class="grid-3">
-                <g-link to="/assets/crowdloan/fearless-1.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-1.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 1"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-2.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-2.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 2"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-3.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-3.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 3"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-4.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-4.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 4"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-5.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-5.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 5"/></g-link>
-                <g-link to="/assets/crowdloan/fearless-6.jpg" target="_blank"><g-image src="~/assets/images/crowdloan/fearless-6.jpg" alt="Robonomics Crowdloan in Fearless wallet screenshot 6"/></g-link>
-              </div>
-            </section>
-          </div>
-      </section> -->
+         </form>
 
+         <details class="dashed layout layout__text">
+           <summary>Other ways to contribute</summary>
+            <div class="oldy">
+              <p class="text-title">1. {{$ts('On Polkadot Substrate portal')}}</p>
+              <p><g-link style="display:block;word-break: break-all;" to="https://polkadot.js.org/apps/#/parachains/crowdloan">https://polkadot.js.org/apps/#/parachains/crowdloan</g-link></p>
+              <p>{{$ts('In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions')}}: <g-link style="display:block;word-break: break-all;" to="https://twitter.com/AIRA_Robonomics/status/1377653645827833860">https://twitter.com/AIRA_Robonomics/status/1377653645827833860</g-link></p>
+            </div>
+            <div class="oldy">
+              <p class="text-title">2. {{$ts('Fearless DeFi Wallet')}}</p>
+              <p><g-link to="https://fearlesswallet.io">https://fearlesswallet.io</g-link></p>
+            </div>
+         </details>
+       </section>
 
-      <hr class="animate no-margins" v-in-viewport.once/>
+       <hr class="animate no-margins" v-in-viewport.once/>
 
-      <section>
-        <Abstract :text="$ts('By winning a Parachain slot in the Kusama we will open the doors for hundreds of IoT developers to the Polkadot ecosystem and help them take their first steps under the guidance of experienced teachers and roboticists.')" />
-        <i>{{$ts('Sergei Lonshakov, Robonomics network architect')}}</i>
-      </section>
+       <section id="statistics" class="section__solid section__darkgray">
+         <div class="grid-3">
+           <div>
+             <div class="text-title m-b-0">{{$ts('Robonomics Parathread ID')}}</div>
+             <div>2048</div>
+           </div>
+           <div>
+             <div class="text-title m-b-0">Raised so far</div>
+             <div>
+                <template v-if="info_contributed > 0">{{info_contributed}} KSM</template> 
+                <template v-else><span class="loader-text-s"></span></template>
+             </div>
+           </div>
+           <div>
+             <div class="text-title m-b-0">Our contributors</div>
+             <div>
+              <template v-if="info_count > 0">{{info_count}}</template>
+              <template v-else><span class="loader-text-s"></span></template>
+             </div>
+           </div>
+         </div>
+       </section>
 
-      <hr class="animate no-margins" v-in-viewport.once/>
+       <section class="layout layout__text">
+         <h2>Quick intro to Robonomics</h2>
 
-      <section class="animate section__dotted section__solid" v-in-viewport.once>
-        <h2 class="layout">{{$ts('Choose your strategy')}}</h2>
+         <div class="oldy-wrap-count">
+           <section class="oldy dark">
+            <div class="oldy-count-content">
+              {{$ts('Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}
+            </div>
+          </section>
 
-        <div class="auction-steps grid-3 animate-inside layout layout__content" v-in-viewport.once>
+           <section class="oldy dark">
+            <div class="oldy-count-content">
+              Robonomics project is over six years old. We started preparing for the first experiment on economically meaningful communication of people and machines with smart contracts in 2014. By the beginning of 2021, the development team was able to preserve the strongest elements of the architecture in Robonomics and complement the techno-economic protocol developed in 2015-2019 over Ethereum and IPFS with elements of the cloud IoT platform based on parachain Polkadot.
+            </div>
+          </section>
 
-        <Card orientation="vertical" back="transparent">
+          <section class="oldy dark">
+            <div class="oldy-count-content">
+              {{$ts('Robonomics contains a complete set of tools for developing IoT applications, both on the robotics and the user interface sides. Communication between the user and device happens using the most successful technologies from the Web3 world – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure applications for Smart Cities and Industry 4.0.')}}
+            </div>
+          </section>
 
-          <div class="image">
-            <g-image alt="" src="~/assets/images/plo-holder-1.png"/>
-          </div>
+          <section class="oldy dark">
+            <div class="oldy-count-content">
+              {{$ts('We are launching Robonomics Web Services. This sustainable subscription model for IoT devices makes possible to execute zero-weight transactions in blockchain.')}}
+            </div>
+          </section>
+         </div>
 
-          <h3>{{$ts('For KSM holders')}}</h3>
-          <p class="hyphens">{{$ts('Robonomics PLO may be interesting for stakeholders who are looking for ways to diversify their KSM stake next 48 weeks inside the ecosystem.')}} <g-link to="/community#token">XRT</g-link> {{$ts('for now is available on Uniswap, Huobi, and in addition on PancakeSwap.')}}</p>
+         <a href="#a-contribution" class="dashed text-big" v-smooth-scroll="{ updateHistory: false, offset: -250 }">Go to contribution</a>
+       </section>
 
-        </Card>
-
-        <Card orientation="vertical" back="transparent">
-
-          <div class="image">
-            <g-image src="~/assets/images/plo-holder-2.png" />
-          </div>
-
-          <h3>{{$ts('For XRT holders')}}</h3>
-          <p class="hyphens">{{$ts('Gain value for your XRT by winning Kusama Slot with Robonomics network great potential for scaling.')}} <g-link to="/blog">{{$ts('Read development plans in our blog')}}</g-link></p>
-        </Card>
-
-        <Card orientation="vertical" back="transparent">
-
-          <div class="image">
-            <g-image src="~/assets/images/plo-holder-3.png" />
-          </div>
-
-          <h3>{{$ts('For tech-inspired')}}</h3>
-          <p class="hyphens">{{$ts('Robonomics already has complex ecosystem for connecting real world to')}} <g-link to="https://web3-technology-stack.readthedocs.io">{{$ts('Web3 Technology Stack Crowdloan 2')}}</g-link>. {{$ts("It's free, it's opensource, everybody can try it for IoT and Smart services. With Polkadot it can be even more cost-effective.")}}</p>
-        </Card>
-
-      </div>
-
-      </section>
-
-      <hr class="animate no-margins" v-in-viewport.once/>
-
-      <section class="animate section__dotted section__solid" v-in-viewport.once>
-        <h2 class="layout">{{$ts('Roadmap of the Robonomics parachain')}}</h2>
-
-        <div class="roadmap layout layout__text animate-inside" v-in-viewport.once>
-          <h3>{{$ts('Part 1: Establishing core functionality')}}</h3>
-          <div class="hyphens">
-            <p><b>{{$ts('In 3 months after the Robonomics parachain launch, Robonomics developers are going to activate the core functionally that’s been developing during 2019-2021, and also supplement the network with modules that have proven themselves in the Polkadot and Kusama ecosystems.')}}</b></p>
-            <p><b>{{$ts('Genesis state: (0 week)')}}</b> {{$ts('Launch of the starter pack of Robonomics parachain functions with IoT management services and collators reward systems.')}}</p>
-            <p><b>{{$ts('Update')}} 1.1</b> {{$ts('Staking and allowing transfers (0 - 1 week). Will allow you to transfer XRT and stake your XRT with a 10% APR for all token holders and 50% for Crowdloan participants.')}}</p>
-            <p><b>{{$ts('Update')}} 1.2</b> {{$ts('Treasury and Technical committee (2 - 3 week). Will allow transferring a share of the DAO funds from Ethereum to the parachain. The Technical Committee can produce emergency referenda. These are used for emergency bug fixes or rapid implementation of new but battle-tested features into the runtime.')}}</p>
-            <p><b>{{$ts('Update')}} 1.3</b> {{$ts('RWS (4 - 5 week). Will allow using IoT management functions with not only commission payments in XRT but a monthly subscription as well.')}}</p>
-            <p><b>{{$ts('Update')}} 1.4</b> {{$ts('Robot-as-a-service (6 - 7 week). Will allow to implement a control process for the provision of automated services and use payments within transactions to launch devices.')}}</p>
-            <p><b>{{$ts('Update')}} 1.5</b> {{$ts('XCMP functionality and Robobank (8 - 9 week). The solution is based on the Polkadot XCMP architecture that will allow any parachain to get access to IoT device management with payment in a native token.')}}</p>
-            <p><b>{{$ts('Update')}} 1.6</b> {{$ts('Democracy and Remove Sudo (10 - 11 week). Developers won’t have the ability to interfere with the operations of the network without the involvement of the technical committee or voting of parachain native token holders.')}}</p>
-          </div>
-          <h3>{{$ts('Part 2: Launch services based on Robonomics R&D')}}</h3>
-          <div class="hyphens">
-            <p><b>{{$ts('2nd part of Robonomics parachain growth in Kusama designated to the launch of services based on previous Robonomics team’s R&D projects.')}}</b></p>
-            <p><b>{{$ts('Globally available digital passports of products')}}</b> {{$ts('By supplementing the status of digital twins with information about the produced products, customers will be able to issue digital passports protected against changes and loss of information in the future. This use case is already implemented as a pilot at the enterprise that’s producing drones. The solution used for quality control during packaging with video recording.')}}</p>
-            <p><b>{{$ts('Smart leasing of IoT & Robotics')}}</b> {{$ts('We’ll demonstrate the ability to use the Robonomics parachain for leasing an IoT/Robotics device. Using the example of 2 robots controlled by Robonomics parachain in 2 different industries. The first use case - an educational program based on Boston Dynamics SDK, during which developers will learn how to control the famous robot dog - Spot. The second one - an industrial manipulator sold under a leasing agreement in the United States. Both robots will provide customers with automatically generated reports at the end of the user session.')}}</p>
-            <p><b>{{$ts('Environmental mitigation services for smart buildings with real carbon credits')}}</b> {{$ts('It will allow customers to automatically collect information about the electricity consumption of the household or apartment building, burn carbon credits, and store a report in the parachain.')}}</p>
-            <p><b>{{$ts('Fault-tolerant civil sensors network')}}</b> {{$ts('A complete set of software modules for creating a sensor network in a city or enterprise to track the desired indicators and provide access to them without a central point of failure. Today it is being tested in one of Russian’s industrial cities - Togliatti.')}}</p>
-            <p><b>{{$ts('Self-driving cars and drones traffic management solution to avoid route collisions in public areas')}}</b> {{$ts('It’ll allow managing a fleet of drones with publicly monitored access to route changes to public agencies responsible for local security and efficiency of air space and roads')}}.</p>
-            <p><b>{{$ts('Ecosystem integration updates')}}</b> {{$ts('We will focus on integrations with other parachains to expand the capabilities of IoT projects that are interested in the Polkadot ecosystem’s features.')}}</p>
-          </div>
-            <h3>{{$ts('Part 3: Transform into Robonomics Relay Chain')}}</h3>
-          <div class="hyphens">
-            <p><b>{{$ts('The final task for the 48 weeks of existence in the Kusama network is the transformation of the Robonomics parachain into the Robonomics Relay Chain. This is our vision of the future of Robonomics, as a complete segment of the Polkadot infrastructure specifically prepared for working with IoT devices.')}}</b></p>
-          </div>
-        </div>
-
-      </section>
-
-      <hr class="animate no-margins" v-in-viewport.once/>
-
-      <section class="kusama-polkadot-ecosystem section__solid section__lightblue">
+      <section class="section__solid section__lightblue animate" v-in-viewport.once>
         <h2>{{$ts('Robonomics in Polkadot ecosystem')}}</h2>
 
-        <div class="grid-3 animate-inside layout layout__content" v-in-viewport.once>
+        <div class="grid-3 layout layout__content">
 
         <Card orientation="vertical" back="transparent" link="https://youtu.be/rbjOmJmilAg">
 
@@ -367,35 +300,35 @@
 
       <hr class="animate no-margins" v-in-viewport.once/>
 
-      <section class="kusama-parachain">
-        <section class="kusama-parachain-intro section__solid section__gradient-purpleblue">
+      <section class="parachain animate" v-in-viewport.once>
+        <section class="parachain-intro section__solid section__gradient-purpleblue">
           <div class="layout layout__text animate-inside" v-in-viewport.once>
-            <h2>{{$ts('Robonomics Relay Chain on Polkadot')}}</h2>
+            <h2>Why parachain</h2>
             <p class="hyphens">{{$ts('Kusama parachain is great opportunity for Robonomics to scale network up to 1 million IoT systems connected in real-time without any centrilized regulators.')}}</p>
-            <p class="hyphens">{{$ts('The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific parachains, including')}}:</p>
+            <p class="hyphens">{{$ts('The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific features, including')}}:</p>
 
             <div class="parachains-overview">
 
               <div class="parachains-overview-description">
 
                 <div class="item" :class="(parachainTab == 1) ?'active':''">
-                  <h4>{{$ts('Smart leasing parachain')}}</h4>
+                  <h4>{{$ts('Smart leasing')}}</h4>
                   <p class="hyphens">{{$ts('Recoup your investment in the high-value robots by renting out it with a mechanism for tokenizing robots’ labor.')}}</p>
                 </div>
                 <div class="item" :class="(parachainTab == 2) ?'active':''">
-                  <h4>{{$ts('Robot as a Service (RaaS) parachain')}}</h4>
+                  <h4>{{$ts('Robot as a Service (RaaS)')}}</h4>
                   <p class="hyphens">{{$ts('Get and provide direct robot services without cashiers, clerks or centrilized cloud providers.')}}</p>
                 </div>
                 <div class="item" :class="(parachainTab == 3) ?'active':''">
-                  <h4>{{$ts('RWS parachain')}}</h4>
+                  <h4>RWS</h4>
                   <p class="hyphens">{{$ts('Robonomics Web Services (RWS) will provide decentralized infrastructure for IoT solutions.')}}</p>
                 </div>
                 <div class="item" :class="(parachainTab == 4) ?'active':''">
-                  <h4>{{$ts('DAO IPCI parachain')}}</h4>
+                  <h4>DAO IPCI</h4>
                   <p class="hyphens">{{$ts('The Robonomics network provides technology for environmental mitigation service DAO IPCI.')}}</p>
                 </div>
                 <div class="item" :class="(parachainTab == 5) ?'active':''">
-                  <h4>{{$ts('Distributed Sky parachain')}}</h4>
+                  <h4>Distributed Sky</h4>
                   <p class="hyphens">{{$ts('Blockchain techonologies to control the traffic of drones (automated planning of drone flight paths, decentralized payment regulations, smart contract for transactions)')}}</p>
                 </div>
 
@@ -451,12 +384,83 @@
 
       <hr class="animate no-margins" v-in-viewport.once/>
 
+
+      <section id="strategy" class="animate section__solid section__darkpurple" v-in-viewport.once>
+
+        <div class="layout layout__content">
+          <h2>{{$ts('Choose your strategy')}}</h2>
+
+          <section class="grid-3 animate-inside" v-in-viewport.once>
+            
+            <div>
+              <div class="img"><g-image alt="" src="~/assets/images/plo-holder-1.png"/></div>
+              <h3>{{$ts('For KSM holders')}}</h3>
+              <p class="hyphens">{{$ts('Robonomics PLO may be interesting for stakeholders who are looking for ways to diversify their KSM stake next 48 weeks inside the ecosystem.')}} <g-link to="/xrt/">XRT</g-link> {{$ts('for now is available on Uniswap, Huobi, and in addition on PancakeSwap.')}}</p>
+            </div>
+
+            <div>
+              <div class="img"><g-image alt="" src="~/assets/images/plo-holder-2.png"/></div>
+              <h3>{{$ts('For XRT holders')}}</h3>
+              <p class="hyphens">{{$ts('Gain value for your XRT by winning Kusama Slot with Robonomics network great potential for scaling.')}}&nbsp;{{$ts('Take part in our unique staking program: rewarding stakeholders and enabling more zero-weight transactions for IoT devices.')}}</p>
+            </div>
+
+            <div>
+              <div class="img"><g-image alt="" src="~/assets/images/plo-holder-3.png"/></div>
+              <h3>{{$ts('For tech-inspired')}}</h3>
+              <p class="hyphens">{{$ts('Robonomics already has complex ecosystem for connecting real world to')}} <g-link to="https://web3-technology-stack.readthedocs.io">{{$ts('Web3 Technology Stack Crowdloan 2')}}</g-link>. {{$ts("It's free, it's opensource, everybody can try it for IoT and Smart services. With Polkadot it can be even more cost-effective.")}}</p>
+            </div>
+
+          </section>
+
+          <a href="#a-contribution" class="text-color-red dashed text-big" v-smooth-scroll="{ updateHistory: false, offset: -250 }">Go to contribution</a>
+
+        </div>
+      </section>
+
+
+      <hr class="animate no-margins" v-in-viewport.once/>
+
+      <section class="animate section__dotted section__solid" v-in-viewport.once>
+        <h2 class="layout">{{$ts('Roadmap of the Robonomics parachain')}}</h2>
+
+        <div class="roadmap layout layout__text animate-inside" v-in-viewport.once>
+          <h3>{{$ts('Part 1: Establishing core functionality')}}</h3>
+          <div class="hyphens">
+            <p><b>{{$ts('In 3 months after the Robonomics parachain launch, Robonomics developers are going to activate the core functionally that’s been developing during 2019-2021, and also supplement the network with modules that have proven themselves in the Polkadot and Kusama ecosystems.')}}</b></p>
+            <p><b>{{$ts('Genesis state: (0 week)')}}</b> {{$ts('Launch of the starter pack of Robonomics parachain functions with IoT management services and collators reward systems.')}}</p>
+            <p><b>{{$ts('Update')}} 1.1</b> {{$ts('Staking and allowing transfers (0 - 1 week). Will allow you to transfer XRT and stake your XRT with a 10% APR for all token holders and 50% for Crowdloan participants.')}}</p>
+            <p><b>{{$ts('Update')}} 1.2</b> {{$ts('Treasury and Technical committee (2 - 3 week). Will allow transferring a share of the DAO funds from Ethereum to the parachain. The Technical Committee can produce emergency referenda. These are used for emergency bug fixes or rapid implementation of new but battle-tested features into the runtime.')}}</p>
+            <p><b>{{$ts('Update')}} 1.3</b> {{$ts('RWS (4 - 5 week). Will allow using IoT management functions with not only commission payments in XRT but a monthly subscription as well.')}}</p>
+            <p><b>{{$ts('Update')}} 1.4</b> {{$ts('Robot-as-a-service (6 - 7 week). Will allow to implement a control process for the provision of automated services and use payments within transactions to launch devices.')}}</p>
+            <p><b>{{$ts('Update')}} 1.5</b> {{$ts('XCMP functionality and Robobank (8 - 9 week). The solution is based on the Polkadot XCMP architecture that will allow any parachain to get access to IoT device management with payment in a native token.')}}</p>
+            <p><b>{{$ts('Update')}} 1.6</b> {{$ts('Democracy and Remove Sudo (10 - 11 week). Developers won’t have the ability to interfere with the operations of the network without the involvement of the technical committee or voting of parachain native token holders.')}}</p>
+          </div>
+          <h3>{{$ts('Part 2: Launch services based on Robonomics R&D')}}</h3>
+          <div class="hyphens">
+            <p><b>{{$ts('2nd part of Robonomics parachain growth in Kusama designated to the launch of services based on previous Robonomics team’s R&D projects.')}}</b></p>
+            <p><b>{{$ts('Globally available digital passports of products')}}</b> {{$ts('By supplementing the status of digital twins with information about the produced products, customers will be able to issue digital passports protected against changes and loss of information in the future. This use case is already implemented as a pilot at the enterprise that’s producing drones. The solution used for quality control during packaging with video recording.')}}</p>
+            <p><b>{{$ts('Smart leasing of IoT & Robotics')}}</b> {{$ts('We’ll demonstrate the ability to use the Robonomics parachain for leasing an IoT/Robotics device. Using the example of 2 robots controlled by Robonomics parachain in 2 different industries. The first use case - an educational program based on Boston Dynamics SDK, during which developers will learn how to control the famous robot dog - Spot. The second one - an industrial manipulator sold under a leasing agreement in the United States. Both robots will provide customers with automatically generated reports at the end of the user session.')}}</p>
+            <p><b>{{$ts('Environmental mitigation services for smart buildings with real carbon credits')}}</b> {{$ts('It will allow customers to automatically collect information about the electricity consumption of the household or apartment building, burn carbon credits, and store a report in the parachain.')}}</p>
+            <p><b>{{$ts('Fault-tolerant civil sensors network')}}</b> {{$ts('A complete set of software modules for creating a sensor network in a city or enterprise to track the desired indicators and provide access to them without a central point of failure. Today it is being tested in one of Russian’s industrial cities - Togliatti.')}}</p>
+            <p><b>{{$ts('Self-driving cars and drones traffic management solution to avoid route collisions in public areas')}}</b> {{$ts('It’ll allow managing a fleet of drones with publicly monitored access to route changes to public agencies responsible for local security and efficiency of air space and roads')}}.</p>
+            <p><b>{{$ts('Ecosystem integration updates')}}</b> {{$ts('We will focus on integrations with other parachains to expand the capabilities of IoT projects that are interested in the Polkadot ecosystem’s features.')}}</p>
+          </div>
+            <h3>{{$ts('Part 3: Transform into Robonomics Relay Chain')}}</h3>
+          <div class="hyphens">
+            <p><b>{{$ts('The final task for the 48 weeks of existence in the Kusama network is the transformation of the Robonomics parachain into the Robonomics Relay Chain. This is our vision of the future of Robonomics, as a complete segment of the Polkadot infrastructure specifically prepared for working with IoT devices.')}}</b></p>
+          </div>
+        </div>
+
+      </section>
+
+      <hr class="animate no-margins" v-in-viewport.once/>
+
       <section class="animate section__darkgray section__solid" v-in-viewport.once>
         <h2 class="layout">{{$ts('Follow latest updates Crowdloan 2')}}</h2>
 
         <div class="grid-3 animate-inside layout layout__content" v-in-viewport.once>
 
-        <Card orientation="vertical" back="white" link="https://twitter.com/AIRA_Robonomics" imageLocal="avatars/twitter.png" imageSize="mid">
+        <Card orientation="vertical" back="white" :link="$static.metadata.twitter" imageLocal="avatars/twitter.png" imageSize="mid">
           <h3>{{$ts('Robonomics official Twitter Crowdloan 2')}}</h3>
         </Card>
 
@@ -464,12 +468,9 @@
           <h3>{{$ts('Software architect Twitter Crowdloan 2')}}</h3>
         </Card>
 
-        <Card orientation="vertical" back="white" link="https://discord.com/invite/5UWNGNaAUf" imageLocal="logos/discord.png" imageSize="mid">
+        <Card orientation="vertical" back="white" :link="$static.metadata.discord" imageLocal="logos/discord.png" imageSize="mid">
           <h3>Robonomics Discord Community</h3>
         </Card>
-        <!-- <Card orientation="vertical" back="white" link="https://t.me/robonomics" imageLocal="avatars/telegram.jpg" imageSize="mid">
-          <h3>{{$ts('Robonomics Telegram Community Crowdloan 2')}}</h3>
-        </Card> -->
 
       </div>
 
@@ -479,6 +480,16 @@
 
   </layout>
 </template>
+
+
+<static-query>
+query {
+  metadata {
+    discord,
+    twitter
+  }
+}
+</static-query>
 
 
 <script>
@@ -541,11 +552,10 @@
   export default {
     components: {
       MetaInfo: () => import("~/components/MetaInfo.vue"),
-      Abstract: () => import("~/components/TextAbstract.vue"),
       Button: () => import("~/components/Button.vue"),
-      tip: () => import("~/components/tip.vue"),
       Card: () => import("~/components/TextCard.vue"),
-      SvgLovelyRoboGirl: () => import("~/components/svg/LovelyRoboGirl.vue"),
+      MovingNumbers: () => import("~/components/decor/MovingNumbers.vue"),
+      tip: () => import("~/components/tip.vue"),
     },
 
 
@@ -588,6 +598,7 @@
         status_transaction_notdone: false,
 
         crowdloan_loading: false,
+        connect_clicked: false //this is for error message to check input[checkbox] on step 1
       }
     },
 
@@ -607,6 +618,7 @@
         async connect() {
           //loading
           this.crowdloan_loading = true;
+          this.connect_clicked = true;
 
           this.isСonnection = true;
           this.status_noextension = false;
@@ -614,7 +626,7 @@
           try {
             this.accounts = await getAccounts(this.api);
             if (this.accounts.length === 0) {
-              console.log('not accounts'); //
+              console.log('no accounts'); //
               this.status_noaccount = true;
             }
             this.account = this.accounts[0]?.address;
@@ -711,30 +723,30 @@
         },
       },
 
-      // async created() {
-      //   this.updateInfo()
-      //   setInterval(() => {
-      //     this.updateInfo()
-      //   }, 5000);
-      //   this.updatePrices()
-      //   try {
-      //     this.provider = getProvider();
-      //     this.api = await initApi();
-      //   } catch (error) {
-      //     console.log(error);
-      //   }
-      // },
+      async created() {
+        this.updateInfo()
+        setInterval(() => {
+          this.updateInfo()
+        }, 5000);
+        this.updatePrices()
+        try {
+          this.provider = getProvider();
+          this.api = await initApi();
+        } catch (error) {
+          console.log(error);
+        }
+      },
 
-      // watch: {
-      //   account: async function (newValue) {
-      //     if (this.listenerBalance !== null) {
-      //       this.listenerBalance()
-      //     }
-      //     this.listenerBalance = await this.api.query.system.account(this.account, (data) => {
-      //       this.balance = data.data.free.add(data.data.reserved).sub(data.data.miscFrozen)
-      //     });
-      //   }
-      // },
+      watch: {
+        account: async function (newValue) {
+          if (this.listenerBalance !== null) {
+            this.listenerBalance()
+          }
+          this.listenerBalance = await this.api.query.system.account(this.account, (data) => {
+            this.balance = data.data.free.add(data.data.reserved).sub(data.data.miscFrozen)
+          });
+        }
+      },
 
       computed: {
         validateBalance() {
@@ -769,60 +781,119 @@
   }
 </script>
 
-<style>
-  body {
-    --tip-width: 22rem;
-  }
-
-  .page-banner .tip, .page-banner .tip a { color: var(--color-dark)}
-</style>
 
 <style scoped>
 
-  /*BASICS*/
-  .auction {
+  .page {
     --color-polka: #E6007A;
     --color-polka-dark: #9c0053;
-    --color-slot: var(--link-color);
-    --kusama-size: 20rem;
-    --delay-mainpic: 1s;
-    --duration-mainpic: 0.6s;
-    --delay-bubble: calc(0.2s + var(--delay-mainpic) + var(--duration-mainpic));
-    --duration-bubble: 3s;
-    --bubble-size: 6rem;
-    --slot-size: 3rem;
   }
 
-  .page-banner .layout {
-    padding-top: 0
+  /* Section Top */
+  #info {
+    --girl-w: 300px;
+    font-family: var(--font-family-code);
+    padding-bottom: calc(var(--girl-w) - 10px);
   }
 
-  .section__solid {
-    padding-top: calc(var(--space) * 3);
-    padding-bottom: calc(var(--space) * 3);
+  #info .content, #info {
+    position: relative;
+    z-index: 1;
   }
 
-  .loader-text, .loader-text-s {
+  #info-numbers{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  #info .numbers {
+    opacity: .4;
+  }
+
+  #info-subtitle {
+    font-style: italic;
+    background-color: var(--color-red);
     display: inline-block;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 2rem;
-    border-width: 2px 2px 0 0;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.541);
-
-    animation: 0.8s spin ease-in-out infinite;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
-  .loader-text-s {
-    height: 1rem;
-    width: 1rem;
-    border-radius: 1rem;
+  #info h1 { margin-top: 0; margin-bottom: 0; }
+
+  #info .grid-5{
+    font-size: 80%;
   }
 
-  /*end BASICS*/
+  .info-tip {
+    font-size: 80%;
+    margin-top: calc(var(--space) * 0.5)
+  }
 
-  /* AUCTION PARTICIPATION */
+  .info-tip a {
+    color: var(--color-light)
+  }
+
+  #info-girl {
+    max-width: var(--girl-w);
+    position: absolute;
+    bottom: calc((80px + var(--girl-w)) * (-1));
+    left: calc(50% - var(--girl-w)/2)
+  }
+
+  @media screen and (max-width: 480px) {
+    #info {
+      --girl-w: 200px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    #info {
+      padding-bottom: calc(var(--girl-w) + 20px);
+    }
+  }
+  /* end of Section Top */
+
+  /* Section Contribute */
+  .contribution {
+    max-width: 760px;
+    margin: var(--space) auto;
+    text-align: left;
+    font-family: var(--font-family-code);
+  }
+
+  .contribution span a {
+    color: var(--color-light)
+  }
+
+  .contribution details[class*='tip'] {
+    margin-left: calc(var(--space)*0.5)
+  }
+
+  .contribution input[type="checkbox"] {
+    float: left
+  }
+
+  .contribution > div {
+    margin-bottom: var(--space);
+  }
+
+  .contribution .checks {
+    font-size: 80%;
+  }
+
+  .input-signed-right input {
+    padding: calc(var(--space) * 0.5)
+  }
+
+  .input-signed-right .sign {
+    top: 0.8rem
+  }
+
   .button.loading .text {
     display: none;
   }
@@ -851,145 +922,31 @@
         }
     }
 
+    .loader-text, .loader-text-s {
+      display: inline-block;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 2rem;
+      border-width: 2px 2px 0 0;
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.541);
 
-  .auction-support input[type="checkbox"]:checked {
-      background-color: var(--color-blue);
-      border-color: var(--color-blue) !important;
+      animation: 0.8s spin ease-in-out infinite;
     }
 
-  .auction-support label.block {
-      margin-bottom: var(--space)
+    .loader-text-s {
+      height: 1rem;
+      width: 1rem;
+      border-radius: 1rem;
     }
+  /* end of Section Contribute */
 
-  .auction-support-action {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-    font-size: 110%;
-    font-weight: 500;
-
-    position: relative; /* for waiting tip */
-    min-height: 400px; /* for waiting tip */
-  }
-
-  .auction-support-action .tip-container {
-      margin-left: 0.5rem
-    }
-
-  .participate-2-exchanges dt img {
-      max-width: 200px;
-  }
-
-
-  .auction-support-wait {
-    --auction-support-wait-size: 250px;
-    position: absolute;
-    bottom: 0;
-    right: calc(var(--auction-support-wait-size) * (-1) + 50px);
-    z-index: 10;
-
-    width: var(--auction-support-wait-size);
-    height: var(--auction-support-wait-size);
-    background-color: var(--color-light);
-    padding: 20px;
-    border-radius: calc(var(--auction-support-wait-size) /2);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 15px;
-    text-align: center;
-
-    animation: FloatY 5s linear 0.4s infinite;
-  }
-
-  .auction-support-wait img {
-      display: block;
-      width: 60%;
-      margin: 0 auto 10px;
-    }
-
-    @media screen and(max-width: 960px) {
-      .auction-support-wait {
-        position: static;
-        margin: 30px auto;
-      }
-    }
-
-  .calc-line {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 75%;
-  }
-
-  .calc-line-1, .calc-line-2 {
-    color: #fff;
-    align-items: stretch;
-    padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);
-  }
-
-  .calc-line-1 {
-    background: var(--color-blue);
-    text-align: right;
-  }
-
-  .calc-line-2 {
-    background: var(--color-gray-mid);
-  }
-
-  .calc-line small {
-    display: block;
-    margin-bottom: 0.3rem;
-  }
-
-  .calc-line input {
-      background-color: rgba(0, 0, 0, 0.301);
-      border-color: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      width: 100px;
-      max-width: 100%;
-  }
-
-  .calc-line[disabled] {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-color: rgba(0, 0, 0, 0.1);
-  }
-
-  .calc-line.highlight {
-    font-size: 110%;
-  }
-
-  .calc-line-1 { background-color: #4365fd; }
-  .calc-line-2 { background-color: rgb(173, 173, 173); }
-
-  .calc-input-signed-right, .calc-input-signed-left {
-    position: relative;
-    display: inline-block;
-  }
-
-   .calc-input-signed-right .sign, .calc-input-signed-left .sign{
-      position: absolute;
-      right: 0.4rem;
-      top: 0.3rem
-    }
-
-  .calc-input-signed-left .sign {
-    left: 0.4rem;
-    right: auto;
-  }
-
-  .calc-input-signed-left input {
-      padding-left: 1.2rem;
-    }
-
-
-
-  /* STEP 3 */
+  /* Section Contribute Step 3 */
   .load-bird {
       position: relative;
       width: 148px;
       height: 180px;
+      margin: 0 auto
   }
 
   .load-bird img { position: absolute; }
@@ -1128,21 +1085,25 @@
         transform: rotate(-110deg) translateX(10px) translateY(20px);
       }
     }
-  /* end of STEP 3 */
+  /* end of Section Contribute Step 3 */
 
-
-  /* end AUCTION PARTICIPATION */
-
-  /* ROBONOMICS KUSAMA PARACHAIN INFO */
-  .kusama-parachain {
-    margin: 0; /* temp */
+  /* Section 'Choose your strategy' */
+  #strategy .grid-3 { gap: calc(var(--space) * 3) }
+  #strategy.section__darkpurple a { color: var(--color-blue-mid) }
+  #strategy img { width: 60% }
+  @media screen and (max-width: 400px) {
+    #strategy img {
+      width: 100%
+    }
   }
+  /* end of Section 'Choose your strategy' */
 
-  .kusama-parachain section {
-    margin: 0;
-  }
 
-  .kusama-parachain .parachains-overview {
+  /* Section 'Why parachain' */
+  .parachain { margin: 0; }
+  .parachain section { margin: 0; }
+
+  .parachain .parachains-overview {
       margin-top: calc(var(--space) * 2);
       padding-bottom: 10px;
       border-bottom: 2px dashed #fff;
@@ -1150,23 +1111,13 @@
       font-size: 90%;
   }
 
-  .kusama-parachain h4 { font-size: var(--base-font-size); font-weight: bold; }
+  .parachain h4 { font-size: var(--base-font-size); font-weight: bold; }
 
-   /* .kusama-parachain:after {
-        content: "";
-        height: 40px;
-        width: 1px;
-        border-left: 2px dashed #fff;
-        position: absolute;
-        bottom: -55px;
-        left: calc(50% - 1px);
-  } */
-
-  .kusama-parachain-intro {
+  .parachain-intro {
     font-family: var(--font-family-code);
   }
 
-  .kusama-parachain-intro h2 {
+  .parachain-intro h2 {
     margin-bottom: calc(var(--space)*2);
   }
 
@@ -1335,170 +1286,21 @@
       left: calc(50% + 460px - var(--size-slot)/2);
     }
 
-  /* end ROBONOMICS KUSAMA PARACHAIN INFO */
+  /* end of Section 'Why parachain' */
 
 
-
-  
-    .contribution-disclamer summary {
-      color: var(--color-blue);
-      cursor: pointer;
-    }
-
-    .contribution-disclamer[open] summary {
-      margin-bottom: calc(var(--space) * 0.5);
-    }
-
-    .contribution-disclamer article {
-      font-size: 80%;
-    }
-
-    .contribution-disclamer article p {
-        margin-bottom: calc(var(--space) * 0.5);
-      }
-
-  .auction-statistics {
-    position: absolute;
-    top: 0;
-    left: calc(50% + 160px);
-  }
-
-    .auction-statistics:before, .auction-statistics:after {
-      content:"";
-      display: block;
-      height: 30px;
-      width: 1px;
-      background: var(--color-light);
-    }
-
-    @media screen and (max-width:960px) {
-      .auction-statistics {
-        position: static;
-      margin: var(--space) auto;
-      text-align: center;
-      }
-
-      .auction-statistics:before, .auction-statistics:after { display: none; }
-    }
-  
-
-  .auction-statistics-sum {
-    font-weight: bold;
-    font-size: 150%;
-  }
-
-  .banner-astronauts {
-      display: block;
-      margin: 0 auto;
-      width: 330px;
-      max-width: 100%;
-  }
-
-  .page-banner {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding-top: calc(var(--space) * 2);
-    padding-bottom: 0.5rem;
-
-    @media screen and (max-width: 800px) {
-      padding-bottom: calc(var(--space) * 2)
-    }
-  }
-
-    .page-banner .grid-3 {
-      margin-top: calc(var(--space) * 2)
-    }
-
-    .page-banner .grid-3 > div:not(:first-child) {
-      margin-bottom: var(--space);
-      padding-top: var(--space);
-    }
-
-    .page-banner .layout {
-      margin-bottom: 0
-    }
-
-    .page-banner .button, .page-banner h2, .page-banner h3 {
-      margin-bottom: calc(var(--space)/2);
-    }
-
-    .page-banner .button {
-      width: 100%;
-      position: relative;
-    }
-
-    .page-banner ul {
-      font-size: 90%;
-      list-style: none;
-    }
-
-
-
-    .auction-banner-details strong {
-      font-size: 150%;
-      display: block;
-    }
-
-    .auction-banner-details ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: calc(var(--space)*2);
-    }
-
-      .auction-banner-details ul li {
-        margin-bottom: 0;
-      }
-
-      @media screen and (max-width:650px) {
-        .auction-banner-details { grid-template-columns: 1fr; }
-      }
-    
-
-  .auction-banner-form {
-    max-width: 800px;
-
-    margin: calc(var(--space)*2) auto;
-    text-align: center;
-  }
-
-    .auction-banner-form .button {
-      max-width: 500px;
-    }
-  
-
-  .auction-banner-cols {
+  /* Section 'Statistics' */
+  #statistics {
     text-align: left;
-    position: relative;
+    font-family: var(--font-family-code);
+    padding: 0;
+    font-size: 90%;
   }
 
-  .auction-banner-kusama {
-    position: relative;
-  }
-
-    .auction-banner-kusama .kusama-wrap {
-      top: calc(50% - var(--kusama-size)/2);
-      right: calc(var(--slot-size) * 4);
-    }
-
-
-    .auction-steps img {
-      width: 60%
-    }
-
-    .auction-steps h3 {
-      margin-top: 0;
-    }
-
-    .auction-steps .card {
-      padding-bottom: 0;
-    }
-
-    @media screen and (max-width: 400px) {
-      .auction-steps img {
-        width: 100%
-      }
-    }
-  
+  #statistics .grid-3 { gap: 0; }
+  #statistics .grid-3 > div { padding: var(--space); }
+  #statistics .grid-3 > div:nth-child(2) { background-color: #141414; }
+  #statistics .grid-3 > div:nth-child(3) { background-color: #000; }
+  /* end of Section 'Statistics' */
 
 </style>

@@ -25,7 +25,7 @@
           </ul>
         </div>
 
-        <div>
+        <!-- <div>
           <ul class="animate-inside" v-in-viewport.once>
             <li><a @click.prevent="loadPage('/community/#docs')" href="/community/#docs">Documents</a></li>
             <li><a @click.prevent="loadPage('/community/#token')" href="/community#token">Token</a></li>
@@ -33,7 +33,7 @@
             <li><a @click.prevent="loadPage('/community/#assets')" href="/community#assets">Logo and brand assets</a></li>
             <li><a @click.prevent="loadPage('/community/#intouch')" href="/community#intouch">Contact us and community</a></li>
           </ul>
-        </div>
+        </div> -->
 
       </section>
 

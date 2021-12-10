@@ -20,6 +20,7 @@ body {
 	--color-blue-light: #70d2ff;
 	--color-blue-mid: #03A5ED;
 	--color-blue: #2949D3;
+	--color-blue-dark-mid: #072089;
 	--color-blue-dark: #000066;
 
 	--color-purple-lighter: #c7d2ff;
@@ -36,10 +37,11 @@ body {
 	--color-blockquote: #e2e1e1;
 
  	--link-color: var(--color-blue-mid); /* deprecated use instead --color-link */
- 	--link-color-hover: var(--color-blue);
+ 	--link-color-hover: var(--color-blue); /* deprecated use instead --color-link-hover */
 	--link-color-visited: #660099;
 
-	--color-link: var(--color-blue-mid);
+	--color-link: var(--color-blue);
+	--color-link-hover: var(--color-purple-mid);
 
 	--link-color-rgba: #03a7ed93;
 	--color-green-rgba: #5fce0581;

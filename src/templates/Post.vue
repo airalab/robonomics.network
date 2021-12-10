@@ -23,7 +23,7 @@
     </div>
 
 
-    <section class="post layout layout__text">
+    <section class="post layout layout__text hyphens">
        <VueRemarkContent />
     </section>
 
@@ -92,7 +92,7 @@ query($id: ID!) {
 </script>
 
 
-<style scoped>
+<style>
   .post {
     padding: var(--space);
     text-align: left;
@@ -113,10 +113,14 @@ query($id: ID!) {
       margin-right: auto;
     }
 
-  .post strong, .post b {
+  /* .post strong, .post b {
       background-color: #f8ffb5;
-    }
+    } */
 
   .post a { word-break: break-all; }
+
+  .post h2 strong, .post h3 strong, .post h4 strong, .post h5 strong {
+    color: var(--color-green);
+  }
 </style>
 
