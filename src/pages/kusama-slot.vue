@@ -197,6 +197,10 @@
               <p class="text-title">2. {{$ts('Fearless DeFi Wallet')}}</p>
               <p><g-link to="https://fearlesswallet.io">https://fearlesswallet.io</g-link></p>
             </div>
+            <div class="oldy">
+              <p class="text-title">3. Nova Wallet</p>
+              <p><g-link to="https://novawallet.io">https://novawallet.io</g-link></p>
+            </div>
          </details>
        </section>
 
