@@ -10,7 +10,7 @@
 
         <div class="layout layout__content">
 
-          <h1 class="clean">
+          <h1>
             <div class="typing-1">Welcome to Robonomics network</div>
             <div class="typing-2">Building Dapps for IoT market</div>
             <div class="typing-3">Contribute to economy of robots</div>
@@ -215,6 +215,7 @@ query {
       text-transform: none;
       letter-spacing: 0;
       position: relative;
+      margin-top: calc(var(--space) * 2);
   }
 
   .typing-1, .typing-2, .typing-3 {

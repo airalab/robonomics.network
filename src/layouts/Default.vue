@@ -2,15 +2,15 @@
   <transition name="fade" appear>
    
   
-    <div class="screen">
-    <!-- <div class="screen" :class="BannerLink('/kusama-slot/')?'banner':''"> -->
+    <!-- <div class="screen"> -->
+    <div class="screen" :class="BannerLink('/kusama-slot/')?'banner':''">
 
       <header class="header">
-        <!-- <g-link class="banner-top" to="/kusama-slot" v-if="!BannerLink('/kusama-slot/')">
+        <g-link class="banner-top" to="/kusama-slot" v-if="!BannerLink('/kusama-slot/')">
           <div class="layout__content">
-            {{$ts('Crowdloan ended, get ready for the next round')}} -> 🤖
+            {{$ts('Crowdloan for Robonomics on Kusama')}} {{$ts('opened')}}
           </div>
-        </g-link> -->
+        </g-link>
 
         <div class="header-content">
           <div class="header-logo">
@@ -122,13 +122,14 @@ query {
     text-decoration: none;
     overflow: hidden;
 
-    background-color: var(--color-red);
+    background-color: var(--color-green);
+    /* background-color: var(--color-red); */
     color: var(--color-light) !important;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    text-shadow: 2px 2px 0px #AF0098;
+    text-shadow: 2px 2px 0px #3d8800;
     font-family: var(--font-family-code);
 
     /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
