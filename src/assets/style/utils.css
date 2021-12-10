@@ -246,12 +246,13 @@
   right: 0;
 }
 
-.oldy details summary::-webkit-details-marker, .oldy details summary::marker {
+.oldy details summary::marker, .oldy details summary::-webkit-details-marker {
   display: none;
 }
 
 .oldy.bg-blue details summary {
   background-color: var(--color-blue-dark-mid);
+  list-style: none /* for hiding marker in Chrome*/
 }
 
 .oldy.bg-blue details[open] summary {
