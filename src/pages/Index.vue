@@ -215,7 +215,6 @@ query {
       text-transform: none;
       letter-spacing: 0;
       position: relative;
-      margin-top: calc(var(--space) * 2);
   }
 
   .typing-1, .typing-2, .typing-3 {
