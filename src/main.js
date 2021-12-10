@@ -21,6 +21,27 @@ export default function (Vue, { router, head, isClient }) {
   if (isClient) {
     const vueSmoothScroll = require('vue2-smooth-scroll').default;
     Vue.use(vueSmoothScroll);
+
+
+    //Rewrite route
+    router.beforeEach(async (to, from, next) => {
+
+        // do not rewrite build paths
+        if (process.isServer) {
+          return next()
+        }
+
+        if (to.path === "/community/") {
+          if (to.hash === "#token") {
+            return next({
+              path: '/xrt/',
+              replace: true
+            })
+          }
+        } else {
+          return next()
+        }
+    })
   }
   // Set default layout as a global component
   Vue.component('layout', Default)

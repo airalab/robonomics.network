@@ -63,6 +63,7 @@ input[type="checkbox"]:checked:after {
 	color: #fff;
 	font-weight: 500;
 	font-size: 1.7rem;
+	line-height: 1;
 }
 
 input[type="checkbox"].big {
@@ -72,7 +73,7 @@ input[type="checkbox"].big {
 
 input[type="checkbox"].big:checked:after {
 	font-size: 2.5rem;
-	top: -0.9rem;
+	top: -0.5rem;
 }
 
 

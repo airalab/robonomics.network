@@ -2,15 +2,15 @@
   <transition name="fade" appear>
    
   
-    <!-- <div class="screen"> -->
-    <div class="screen" :class="BannerLink('/kusama-slot/')?'banner':''">
+    <div class="screen">
+    <!-- <div class="screen" :class="BannerLink('/kusama-slot/')?'banner':''"> -->
 
       <header class="header">
-        <g-link class="banner-top" to="/kusama-slot" v-if="!BannerLink('/kusama-slot/')">
+        <!-- <g-link class="banner-top" to="/kusama-slot" v-if="!BannerLink('/kusama-slot/')">
           <div class="layout__content">
             {{$ts('Crowdloan ended, get ready for the next round')}} -> 🤖
           </div>
-        </g-link>
+        </g-link> -->
 
         <div class="header-content">
           <div class="header-logo">
@@ -19,14 +19,28 @@
 
           <div class="header-side">
 
-            <nav class="header-nav sidetext">
-                <g-link to="/intro">{{$ts('Intro')}}</g-link>
-                <g-link to="/vision">Vision</g-link>
-                <!-- <g-link to="/kusama-slot">{{$ts('Crowdloan')}}</g-link> -->
-                <g-link to="/community/#docs">{{$ts('Docs')}}</g-link>
-                <g-link to="/blog">{{$ts('Blog')}}</g-link>
-            </nav>
+            <!-- <nav class="header-nav sidetext">
+                <ul>
+                  <li>
+                    <span tabindex="0">Learn</span>
+                    <ul>
+                      <li><g-link to="/intro">{{$ts('Intro')}}</g-link></li>
+                      <li><g-link to="/vision">Vision</g-link></li>
+                      <li><g-link to="https://wiki.robonomics.network">Wiki</g-link></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span tabindex="0">Learn</span>
+                    <ul>
+                      <li><g-link to="/intro">{{$ts('Intro')}}</g-link></li>
+                      <li><g-link to="/vision">Vision</g-link></li>
+                      <li><g-link to="https://wiki.robonomics.network">Wiki</g-link></li>
+                    </ul>
+                  </li>
+                </ul>
+            </nav> -->
 
+            <HeaderNav/>
             <languageSwitcher/>
 
           </div>
@@ -62,6 +76,39 @@ query {
 
 
 <style scoped>
+
+  /* .header-nav ul {
+    list-style: none;
+  }
+
+  .header-nav ul, .header-nav li {
+    margin: 0;
+  }
+
+  .header-nav ul li {
+    display: inline-block;
+  }
+
+  .header-nav > ul li:not(:last-child) {
+    margin-right: var(--space);
+  }
+
+  .header-nav ul ul {
+    display: none;
+  }
+
+  .header-nav ul ul li {
+    display: block;
+  }
+
+  .header-nav span {
+    cursor: pointer;
+  }
+
+  .header-nav span:focus > ul {
+    display: block;
+  } */
+
 
   .banner-top {
     height: var(--space-bannertop);
@@ -113,16 +160,8 @@ query {
       background-color: var(--body-bg);
     }
 
-      .header-logo a, .header-logo img { display: block; }
-    
-
-    .header-nav a:not(:last-child) {
-        margin-right: var(--space);
-      }
-
-      .header-nav a.active--exact { opacity: .5; }
+  .header-logo a, .header-logo img { display: block; }
   
-
   .header-content {
     display: flex;
     justify-content: space-between;
@@ -192,9 +231,9 @@ query {
   background-color: var(--color-gray-light);
 }
 
-.screen:not(.banner) {
+/* .screen:not(.banner) {
  padding-top: calc(var(--screen-padding-top) + var(--space-bannertop));
-}
+} */
 
 .header-side {
   display: flex;
@@ -219,6 +258,7 @@ export default {
   components: {
     Footer: () => import('~/components/Footer.vue'),
     languageSwitcher: () => import('~/components/languageSwitcher.vue'),
+    HeaderNav: () => import('~/components/HeaderNav.vue'),
   },
   data () {
     return {
