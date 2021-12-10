@@ -103,9 +103,8 @@
 	  margin-top: 0;
   }
 
-  section > h1, section > h2, section > h3,
-  .section > h1, .section > h2, .section > h3,
-  section > .layout > h1 {
+ section > h2, section > h3,
+.section > h2, .section > h3 {
 	  margin-top: 0;
   }
 
