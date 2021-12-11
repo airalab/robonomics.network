@@ -10,7 +10,20 @@
                 <Card link="/xrt/" image="/website_cover_token.jpg" :imageRound="false" orientation="vertical" imageSize="block">
                     <h3>{{$ts('Robonomics token')}}, XRT</h3>
                 </Card>
+
+                <Card link="/papers/" orientation="vertical">
+                    <h3>Papers</h3>
+                </Card>
+
+                <Card link="/books/" orientation="vertical">
+                    <h3>Books</h3>
+                </Card>
+
+                <Card link="/contact/" orientation="vertical">
+                    <h3>Social media links</h3>
+                </Card>
             </section>
+            
         </div>
     </layout>
 </template>

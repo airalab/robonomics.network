@@ -1,6 +1,6 @@
 <template>
 
-  <g-link :to="asset.options[selected].link" class="share__link oldy oldy__link" v-on:click="selectInButton">
+  <g-link :to="asset.options[selected].link" class="share__link oldy oldy__link" :class="{ 'no-image': !asset.img }" v-on:click="selectInButton">
       <div class="share__col share__img" v-if="asset.img">
         <g-image :src="require('!!assets-loader!~/assets/images/'+asset.img)"/>
       </div>
@@ -43,7 +43,7 @@
 
     .share__link {
       display: grid;
-      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-columns: 100px 3fr 1fr;
       gap: calc(var(--space)/2);
 
       text-decoration: none;
@@ -98,15 +98,9 @@
   
 
 
-  .tab-science .share__link {
+  .no-image.share__link {
       grid-template-columns: 4fr 1fr;
     }
-  
-
-  .tab-intouch .share__link {
-      grid-template-columns: minmax(auto, 60px) 3fr 1fr;
-    }
-  
   
 </style>
 
