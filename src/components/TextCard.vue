@@ -6,10 +6,6 @@
       <g-image aria-hidden="true" :src="pic_src"/>
     </div>
 
-    <!-- <div v-if="imageLocal" :class="pic_classes">
-      <g-image aria-hidden="true" :src="require(`!!assets-loader!@/assets/images/${pic_src}`)"/>
-    </div> -->
-
     <div class="content" v-if="hasDefaultSlot">
       <slot/>
     </div>
