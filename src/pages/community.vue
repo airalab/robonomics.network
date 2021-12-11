@@ -30,7 +30,7 @@ export default {
             meta: [
                 {
                     'http-equiv': 'refresh',
-                    content: `0; url="${this.redirect}"`
+                    content: `0; url="${this.$static.metadata.home}${this.redirect}"`
                 }
             ],
 
@@ -55,7 +55,7 @@ export default {
                 return this.$static.metadata.home + '/xrt/'
             }
             else {
-                return this.$static.metadata.home
+                '/'
             }
           }
       }
