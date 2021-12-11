@@ -6,6 +6,10 @@
       <g-image aria-hidden="true" :src="pic_src"/>
     </div>
 
+    <!-- <div v-if="imageLocal" :class="pic_classes">
+      <g-image aria-hidden="true" :src="require(`!!assets-loader!@/assets/images/${pic_src}`)"/>
+    </div> -->
+
     <div class="content" v-if="hasDefaultSlot">
       <slot/>
     </div>
@@ -54,7 +58,7 @@ export default {
       type: String,
       default: 'small',
       validator: function (value) {
-        return ['small', 'mid', 'big'].indexOf(value) !== -1;
+        return ['small', 'mid', 'big', 'block'].indexOf(value) !== -1;
       }
     },
     imageRound: {
@@ -292,6 +296,7 @@ export default {
 
       .card .pic.mid { --image-size: 10rem }
       .card .pic.big { --image-size: 15rem}
+      .card .pic.block { --image-size: 100%}
     
 
     /*end of PICTURES */

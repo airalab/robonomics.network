@@ -7,9 +7,7 @@
       :pageImage = "'/website_cover_blog.png'"
     />
 
-    <div class="layout__title blog_title">
-      <h1 v-if="$ts('Robonomics blog')">{{$ts('Robonomics blog')}}</h1>
-    </div>
+    <h1 v-if="$ts('Robonomics blog')" class="layout layout__content">{{$ts('Robonomics blog')}}</h1>
 
     <div v-if="$page.posts.edges.length === 0" class="align-center layout">
       <blockquote>{{$ts('No posts yet')}}</blockquote>

@@ -1,5 +1,12 @@
 <template>
     <layout>
+        <MetaInfo
+            :pageTitle = "$ts('Robonomics token') + ', XRT'"
+            :pageDescription = "$ts('XRT is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain.')"
+            pageImage = "/website_cover_token.jpg"
+            pageImageHeight = "650" 
+        />
+
         <section id="banner" class="section__solid section__blue">
             <div class="layout layout__text">
                 <h1 class="clean">{{$ts('Robonomics token')}}, XRT</h1>
@@ -151,6 +158,7 @@ query {
     export default {
         components: {
             Card: () => import('~/components/TextCard.vue'),
+            MetaInfo: () => import("~/components/MetaInfo.vue"),
         },
 
         mounted() {
