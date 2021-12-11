@@ -742,16 +742,18 @@ query {
       },
 
       async created() {
-        this.updateInfo()
-        setInterval(() => {
+        if (process.isClient) {
           this.updateInfo()
-        }, 5000);
-        this.updatePrices()
-        try {
-          this.provider = getProvider();
-          this.api = await initApi();
-        } catch (error) {
-          console.log(error);
+          setInterval(() => {
+            this.updateInfo()
+          }, 5000);
+          this.updatePrices()
+          try {
+            this.provider = getProvider();
+            this.api = await initApi();
+          } catch (error) {
+            console.log(error);
+          }
         }
       },
 
