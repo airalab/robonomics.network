@@ -25,40 +25,15 @@ query {
 
 <script>
 export default {
-  metaInfo() {
-        return {
-            meta: [
-                {
-                    'http-equiv': 'refresh',
-                    content: `0; url="${this.$static.metadata.home}${this.redirect}"`
-                }
-            ],
-
-            link: () => [
-                {
-                    rel: 'canonical',
-                    href: `${this.$static.metadata.home}${this.redirect}`,
-                    id: 'canonical',
-                },
-            ],
-        }
-  },
 
   components: {
       Card: () => import("~/components/TextCard.vue"),
   },
 
-  computed: {
-      redirect(){
-          if (process.isClient) {
-              if(location.hash === "#token"){
-                return this.$static.metadata.home + '/xrt/'
-            }
-            else {
-                '/'
-            }
-          }
-      }
+  mounted() {
+        if(location.hash === "#token"){
+            location.replace(this.$static.metadata.home + '/xrt/');
+        }
   }
 }
 </script>
