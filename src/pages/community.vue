@@ -47,6 +47,18 @@ export default {
         if(location.hash === "#token"){
             location.replace(this.$static.metadata.home + '/xrt/');
         }
+
+        if(location.hash === "#intouch"){
+            location.replace(this.$static.metadata.home + '/contact/');
+        }
+
+        if(location.hash === "#science"){
+            location.replace(this.$static.metadata.home + '/papers/');
+        }
+
+        if(location.hash === "#docs"){
+            location.replace(this.$static.metadata.home + '/books/');
+        }
   }
 }
 </script>
