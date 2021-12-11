@@ -18,6 +18,18 @@
   component: './src/pages/xrt.vue'
   typename: 'page'
 
+- path: '/books/'
+  component: './src/pages/books.vue'
+  typename: 'page'
+
+- path: '/papers/'
+  component: './src/pages/papers.vue'
+  typename: 'page'
+
+- path: '/contact/'
+  component: './src/pages/contact.vue'
+  typename: 'page'
+
 - path: '/blog/'
   component: './src/pages/blog.vue'
   typename: 'component'
