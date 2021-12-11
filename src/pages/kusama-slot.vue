@@ -633,6 +633,18 @@ query {
           }
         },
 
+         async getPrice(tickerName) {
+           const result = await fetch(
+             `https://min-api.cryptocompare.com/data/price?fsym=${tickerName}&tsyms=USD&api_key=9c9ca216c454cd2390092e573894a6e10ddff03ef3a4e153996ef358fe9d33d8`
+           );
+           const data = await result.json();
+           return Number(data.USD)
+         },
+         async updatePrices() {
+           this.price_xrt = await this.getPrice('XRT');
+           this.price_ksm = await this.getPrice('KSM');
+         },
+
         async connect() {
           //loading
           this.crowdloan_loading = true;
