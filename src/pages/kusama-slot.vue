@@ -5,7 +5,7 @@
       :pageTitle = "$ts('Crowdloan for Robonomics on Kusama')"
       :pageDescription = "$ts('Crowdloan Description')"
       pageImage = "/website_cover_crowdloan.jpg"
-      pageImageHeight = "694"
+      pageImageHeight = "652"
     />
 
     <div class="page">
