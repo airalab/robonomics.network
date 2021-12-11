@@ -742,7 +742,7 @@ query {
       },
 
       async created() {
-        if (process.isClient) {
+        
           this.updateInfo()
           setInterval(() => {
             this.updateInfo()
@@ -754,7 +754,7 @@ query {
           } catch (error) {
             console.log(error);
           }
-        }
+        
       },
 
       watch: {
