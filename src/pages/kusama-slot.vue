@@ -698,7 +698,7 @@ query {
                     method === "ExtrinsicSuccess"
                   ) {
                     if(this.submit_email){
-                      fetch('https://script.google.com/macros/s/AKfycbwHjIRGZBAeSBYc8wLW96901ftFa5fb-REK8_ymQ45UD2Pz-MIsfEbaUojd59p2F9dcWA/exec', {
+                      fetch('https://script.google.com/macros/s/AKfycbw3YuJ8ECkcuEXsRouBSgCrReo4zqpONNNg9Pkcf2nVW05pqrj8TwssSWmF4k_PGDwb6A/exec', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: 'email=' + encodeURIComponent(this.submit_email)
