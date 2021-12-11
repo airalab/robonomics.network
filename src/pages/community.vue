@@ -11,9 +11,6 @@
                     <h3>{{$ts('Robonomics token')}}, XRT</h3>
                 </Card>
             </section>
-
-
-            <p>{{redirect}}</p>
         </div>
     </layout>
 </template>
@@ -55,6 +52,9 @@ export default {
       redirect(){
           if(location.hash === "#token"){
               return this.$static.metadata.home + '/xrt/'
+          }
+          else {
+              return this.$static.metadata.home
           }
       }
   }
