@@ -2,11 +2,11 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "'Papers'"
+      :pageTitle = "$ts('Nav Papers')"
     />
 
     <section class="layout layout__text">
-        <h1>Papers</h1>
+        <h1>{{$ts('Nav Papers')}}</h1>
         <share :assets="papers"/>
     </section>
 

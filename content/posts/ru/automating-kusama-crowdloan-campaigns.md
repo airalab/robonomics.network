@@ -97,7 +97,7 @@ import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'
 
 <Card>
 
-### Extra
+### Бонус
 
 Держатели NFT карт пионеров получат экстра 1 XRT за каждый KSM
 
@@ -105,7 +105,7 @@ import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'
 
 <Card>
 
-### Дистрибуция вознаграждения **Ежемесячно**
+### Распределение вознаграждения **Ежемесячно**
 
 Пропорционально равными долями в течение 12 месяцев. Выполняет сокровищница, генерируя новые токены в парачейне.
 
