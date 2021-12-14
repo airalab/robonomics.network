@@ -230,6 +230,68 @@
          </div>
        </section>
 
+       <!-- <hr/>
+
+      <section class="layout layout__text">
+        <h2>Leadership board</h2>
+
+        <div id="leadership-wrap">
+          <table id="leadership" class=" fullwidth align-left">
+            <thead>
+              <tr>
+                <th>Contributor</th>
+                <th>Contribution amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">200 KSM</td>
+              </tr>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">100 KSM</td>
+              </tr>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">10.0000000076 KSM</td>
+              </tr>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">10 KSM</td>
+              </tr>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">8 KSM</td>
+              </tr>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">6.9 KSM</td>
+              </tr>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">6.9 KSM</td>
+              </tr>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">6.9 KSM</td>
+              </tr>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">6.9 KSM</td>
+              </tr>
+              <tr>
+                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
+                <td data-th="Contribution amount">6.9 KSM</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </section> -->
+
+      <hr/>
+
        <section class="layout layout__text">
          <h2>Quick intro to Robonomics</h2>
 
@@ -819,6 +881,21 @@ query {
   .page {
     --color-polka: #E6007A;
     --color-polka-dark: #9c0053;
+  }
+
+  #leadership-wrap {
+      max-height: 450px;
+      overflow: auto;
+  }
+    
+  @media screen and (max-width: 700px){
+    #leadership {
+      table-layout: fixed;
+    }
+
+    #leadership td {
+      overflow: scroll;
+    }
   }
 
   /* Section Top */

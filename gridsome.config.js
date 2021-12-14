@@ -64,6 +64,21 @@ module.exports = {
         routes: yaml.load(fs.readFileSync('./src/data/locales/routes.yaml', 'utf8')),
       }
     },
+
+    {
+      use: '@gridsome/plugin-sitemap'
+      // options: {
+      //   include: ['/blog', '/blog/**']
+      //   // exclude: ['/exclude-me'],
+      //   // config: {
+      //   //   '/blog/*': {
+      //   //     changefreq: 'monthly',
+      //   //     priority: 0.5,
+      //   //     lastmod: '2021-12-10',
+      //   //   }
+      //   // }
+      // }
+    }
     
   ],
 
