@@ -229,7 +229,7 @@ table tbody tr:hover {
     display: none;
   }
 
-  table.mobile, tbody, tr, [data-th] {
+  table.mobile, table.mobile tbody, table.mobile tr, table.mobile [data-th] {
       display: block;
       width: 100%;
   }
