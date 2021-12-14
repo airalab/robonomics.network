@@ -2,11 +2,11 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "'Social media links'"
+      :pageTitle = "$ts('Nav Contact')"
     />
 
     <section class="layout layout__text">
-        <h1>Social media links</h1>
+        <h1>{{$ts('Nav Contact')}}</h1>
         <share :assets="contact"/>
     </section>
 

@@ -11,30 +11,30 @@
     <div class="page">
        <section id="info" class="section__solid section__blue">
          <div class="content layout laouyt__content">
-           <h1>Robonomics Kusama crowdloan</h1>
+           <h1>{{$ts('Crowdloan for Robonomics on Kusama')}}</h1>
            <p id="info-subtitle">New era of autonomous oracle based crowdloan opened now</p>
 
            <div class="grid-5">
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">Campaign Cap</div>
+               <div class="text-title m-b-0">{{$ts('Campaign Cap')}}</div>
                <div>47,425.5262 KSM</div>
                <details>
                  <summary @click="infoDetails">i</summary>
-                 Based on fees assessment of the 15th auction, Geshiro
+                 {{$ts('Based on fees assessment of the 15th auction, Geshiro')}}
                </details>
              </div>
 
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">Duration</div>
-               <div>5 weeks</div>
+               <div class="text-title m-b-0">{{$ts('Duration')}}</div>
+               <div>5 {{$ts('weeks')}}</div>
                <details>
                  <summary @click="infoDetails">i</summary>
-                 We assume that one crowdloan campaign should aim to collect for 5 weeks. In case of failure, the oracle will have to shift the sample estimate of the median fees and camphain starts again.
+                {{$ts('We assume that one Crowdloan Campaign should aim to collect for 5 weeks.')}} <g-link to="/blog/automating-kusama-crowdloan-campaigns/">{{$ts('Learn more')}}</g-link>
                </details>
              </div>
 
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">Remuneration</div>
+               <div class="text-title m-b-0">{{$ts('Remuneration')}}</div>
                <div>4.20 XRT</div>
                <details>
                  <summary @click="infoDetails">i</summary>
@@ -44,20 +44,20 @@
              </div>
 
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">Extra 1XRT EACH KSM</div>
-               <div>For pioneer NFT cardholders</div>
+               <div class="text-title m-b-0">{{$ts('Bonus')}}</div>
+               <div>{{$ts('1XRT for each KSM')}} {{$ts('for «Pioneer NFT» cardholders')}}</div>
                <details>
                  <summary @click="infoDetails">i</summary>
-                 Pioneer NFT cardholders will receive an extra 1 XRT for each KSM Bonded. Any contributor in the past auctions can <g-link to="https://dapp.robonomics.network/#/pioneer">claim</g-link> Pioneer nft <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">card</g-link>
+                 {{$ts('Pioneer NFT cardholders will receive an extra 1XRT for each KSM')}}. {{$ts('Any contributor in the past auctions can')}} <g-link to="https://dapp.robonomics.network/#/pioneer">{{$ts('claim')}}</g-link> Pioneer nft <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">card</g-link>
                </details>
              </div>
 
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">Distribution rewards</div>
-               <div>Monthly</div>
+               <div class="text-title m-b-0">{{$ts('Distribution rewards')}}</div>
+               <div>{{$ts('Monthly')}}</div>
                <details>
                  <summary @click="infoDetails">i</summary>
-                 Proportionally equal shares for 12 months. The treasury performs by generating new tokens in the parachain
+                 {{$ts('Proportionally equal shares for 12 months. The treasury performs by generating new tokens in the parachain')}}
                </details>
              </div>
            </div>

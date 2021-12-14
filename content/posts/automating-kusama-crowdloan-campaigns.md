@@ -15,7 +15,8 @@ import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'
 
 The initial parachain slot auctions and their associated crowdloans suffered from a first mover disadvantage that caused their prices to be difficult to predict and often too high.  This disadvantage is common in any new market undergoing price discovery, especially markets like the parachain auctions where teams are launching diverse products with diverse needs.
 
-The experience and data from the first cohort of teams who have secured crowdloans can now provide a foundation that future teams can build from to better price, and automate the process of securing crowdloans and winning auctions. 						
+The experience and data from the first cohort of teams who have secured crowdloans can now provide a foundation that future teams can build from to better price, and automate the process of securing crowdloans and winning auctions.
+					
 The Robonomic core developers will implement an automated oracle beginning with the 4th parachain crowdloan campaign in order to participate in future Kusama parachain slot auctions. This mechanism will allow the robonomics team to automate payment of each future parachain slot lease at renewal.  The robonomics team hopes that this effort will inspire other future teams to use or implement their own automated process to better streamline and reduce the downside risks for teams of the overall slot auction system.
 
 ## Parameters currently independently determined by Parachains
@@ -97,7 +98,7 @@ Based on fees assessment of the 15th auction, Geshiro
 
 <Card>
 
-### Extra
+### Bonus
 
 Pioneer NFT cardholders will receive an extra 1XRT for each KSM
 

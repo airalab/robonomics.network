@@ -119,6 +119,18 @@
   en: Community
   ru: Сообщество
 
+- alias: Nav Papers
+  en: Papers
+  ru: Статьи
+
+- alias: Nav Books
+  en: Books
+  ru: Книги
+
+- alias: Nav Contact
+  en: Contact
+  ru: Контакты
+
 # Top Banner
 
 - alias: Join Crowdloan
@@ -732,6 +744,113 @@
   es: ¡Gracias por todos los participantes! #GT
   ko: 모든 참가자들에게 감사드립니다! #GT
 
+
+
+- alias: Campaign Cap
+  en: Campaign Cap
+  ru: Лимит сбора
+  zh: 收集限制
+  es: Límite de colección
+  ko: 모금 한도
+
+- alias: Based on fees assessment of the 15th auction, Geshiro
+  en: Based on fees assessment of the 15th auction, Geshiro
+  ru: На основе оценки сборов 15 аукциона, Geshiro
+  zh: 根据第15次拍卖的费用评估，Geshiro
+  es: Basado en la evaluación de tarifas de la 15a subasta, Geshiro
+  ko: 15차 경매 수수료 평가 기준, Geshiro
+
+- alias: Duration
+  en: Duration
+  ru: Продолжительность
+  zh: 期限
+  es: Duración
+  ko: 기간
+
+- alias: weeks
+  en: weeks
+  ru: недель
+  zh: 周
+  es: semanas
+  ko: 주
+
+- alias: We assume that one Crowdloan Campaign should aim to collect for 5 weeks.
+  en: We assume that one Crowdloan Campaign should aim to collect for 5 weeks.
+  ru: Мы предполагаем, что одна crowdloan кампания должна быть нацелена на сборы в течение 5 недель.
+  zh: 我们假设一项众贷活动的目标是收集5周。
+  es: Suponemos que una campaña de préstamos colectivos debe tener como objetivo cobrar durante 5 semanas.
+  ko: 우리는 하나의 크라우드론 캠페인이 5주 동안의 모금을 달성할 수 있다고 가정합니다.
+
+- alias: Remuneration
+  en: Remuneration
+  ru: Вознаграждение
+  zh: 报酬
+  es: Remuneración
+  ko: 보수
+
+- alias: Bonus
+  en: Bonus
+  ru: Бонус
+  zh: 额外奖励
+  es: Bonificación extra
+  ko: 추가 보너스
+
+- alias: for «Pioneer NFT» cardholders
+  en: for «Pioneer NFT» cardholders
+  ru: для держателей карт «Pioneer NFT»
+  zh: 对于«先锋 NFT»持卡人 #GT
+  es: para titulares de tarjetas «Pioneer NFT» #GT
+  ko: «Pioneer NFT» 카드 소지자용 #GT
+
+- alias: 1XRT for each KSM
+  en: 1XRT for each KSM
+  ru: 1XRT за каждый KSM
+  zh: 每个 KSM 1XRT #GT
+  es: 1XRT para cada KSM #GT
+  ko: 각 KSM에 대해 1XRT #GT
+
+- alias: Any contributor in the past auctions can
+  en: Any contributor in the past auctions can
+  ru: Любой участник прошлых аукционов может
+  zh: 过去拍卖中的任何贡献者都可以 #GT
+  es: Cualquier colaborador en subastas pasadas puede #GT
+  ko: 과거 경매에 참여한 모든 기여자는 #GT
+
+- alias: claim
+  en: claim
+  ru: подать заявку на
+  zh: 宣称 #GT
+  es: afirmar #GT
+  ko: 주장하다 #GT
+
+- alias: Pioneer NFT cardholders will receive an extra 1XRT for each KSM
+  en: Pioneer NFT cardholders will receive an extra 1XRT for each KSM
+  ru: Держатели NFT карт пионеров получат экстра 1 XRT за каждый KSM
+  zh: Pioneer NFT持卡人每个KSM将获得额外的1XRT
+  es: Los titulares de tarjetas Pioneer NFT recibirán un 1XRT adicional por cada KSM
+  ko: Pioneer NFT 카드 보유자는 KSM당 1XRT를 추가로 받습니다.
+  
+- alias: Distribution rewards
+  en: Distribution rewards
+  ru: Распределение вознаграждения
+  zh: 分配奖励
+  es: Recompensas de distribución
+  ko: 분배 보상
+
+- alias: Monthly
+  en: Monthly
+  ru: Ежемесячно
+  zh: 每月
+  es: Mensuales
+  ko: 월간
+
+- alias: Proportionally equal shares for 12 months. The treasury performs by generating new tokens in the parachain
+  en: Proportionally equal shares for 12 months. The treasury performs by generating new tokens in the parachain
+  ru: Пропорционально равными долями в течение 12 месяцев. Выполняет сокровищница, генерируя новые токены в парачейне.
+  zh: 12个月按比例相等的份额。金库通过在平行链中生成新代币来执行。
+  es: Partes proporcionalmente iguales durante 12 meses. La tesorería funciona con la generación de nuevos tokens en la parachain.
+  ko: 12개월 동안 비례적으로 동일하게 나눕니다. 파라체인 금고에서 새로운 토큰을 생성합니다.
+  
 
 
 - alias: Crowdloan for Robonomics on Kusama
@@ -1885,6 +2004,6 @@
 - alias: Want to be a part of the future?
   en: Want to be a part of the future?
   ru: Хотите быть частью будущего?
-  zh: 想成为未来的一部分吗？ #GT
-  es: ¿Quieres ser parte del futuro? #GT
-  ko: 미래의 일부를 원하십니까? #GT
+  zh: 想成为未来一员吗？
+  es: ¿Quiere ser parte del futuro?
+  ko: 미래를 함께하는 일원이 되고 싶으신가요?

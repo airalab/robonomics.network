@@ -39,9 +39,9 @@
                 <summary>{{$ts('Nav Community')}}</summary>
                 <ul class="oldy dark">
                     <!-- <li><g-link to="/community/wallpapers">Wallpapers</g-link></li> -->
-                    <li><g-link to="/papers">Papers</g-link></li>
-                    <li><g-link to="/books">Books</g-link></li>
-                    <li><g-link to="/contact">Contact</g-link></li>
+                    <li><g-link to="/papers">{{$ts('Nav Papers')}}</g-link></li>
+                    <li><g-link to="/books">{{$ts('Nav Books')}}</g-link></li>
+                    <li><g-link to="/contact">{{$ts('Nav Contact')}}</g-link></li>
                     <li><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
                 </ul>
             </details>
