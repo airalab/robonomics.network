@@ -65,20 +65,20 @@ module.exports = {
       }
     },
 
-    {
-      use: '@gridsome/plugin-sitemap'
-      // options: {
-      //   include: ['/blog', '/blog/**']
-      //   // exclude: ['/exclude-me'],
-      //   // config: {
-      //   //   '/blog/*': {
-      //   //     changefreq: 'monthly',
-      //   //     priority: 0.5,
-      //   //     lastmod: '2021-12-10',
-      //   //   }
-      //   // }
-      // }
-    }
+    // {
+    //   use: '@gridsome/plugin-sitemap'
+    //   // options: {
+    //   //   include: ['/blog', '/blog/**']
+    //   //   // exclude: ['/exclude-me'],
+    //   //   // config: {
+    //   //   //   '/blog/*': {
+    //   //   //     changefreq: 'monthly',
+    //   //   //     priority: 0.5,
+    //   //   //     lastmod: '2021-12-10',
+    //   //   //   }
+    //   //   // }
+    //   // }
+    // }
     
   ],
 
