@@ -17,7 +17,7 @@
     "@polkadot/util-crypto": "^7.9.2",
     "axios": "^0.24.0",
     "gridsome": "^0.7.23",
-    "gridsome-plugin-translateit": "^1.0.7",
+    "gridsome-plugin-translateit": "^1.0.8",
     "gridsome-source-github-api": "^0.2.0",
     "parallax-js": "^3.1.0",
     "vue-in-viewport-directive": "^2.0.2",
