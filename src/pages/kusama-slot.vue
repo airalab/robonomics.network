@@ -244,47 +244,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">200 KSM</td>
+              <tr v-for="(contributor, k) in contributors" :key="k">
+                <td data-th="Contributor">{{contributor.signer}}</td>
+                <td data-th="Contribution amount">{{contributor.total_amount}} KSM</td>
               </tr>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">100 KSM</td>
-              </tr>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">10.0000000076 KSM</td>
-              </tr>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">10 KSM</td>
-              </tr>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">8 KSM</td>
-              </tr>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">6.9 KSM</td>
-              </tr>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">6.9 KSM</td>
-              </tr>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">6.9 KSM</td>
-              </tr>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">6.9 KSM</td>
-              </tr>
-              <tr>
-                <td data-th="Contributor">1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F</td>
-                <td data-th="Contribution amount">6.9 KSM</td>
-              </tr>
-              
             </tbody>
           </table>
         </div>
@@ -575,7 +538,7 @@ query {
     getStat = chain.getStat
     config = chain.config
   }
-  import { getStat as getStatServer } from "../utils/api";
+  import { getContributors } from "../utils/api";
   import { bnToBn, formatBalance as fb } from "@polkadot/util";
 
   const M_LENGTH = 6 + 1;
@@ -665,7 +628,9 @@ query {
         status_transaction_notdone: false,
 
         crowdloan_loading: false,
-        connect_clicked: false //this is for error message to check input[checkbox] on step 1
+        connect_clicked: false, //this is for error message to check input[checkbox] on step 1
+
+        contributors: []
       }
     },
 
@@ -802,6 +767,9 @@ query {
           this.crowdloan_loading = false;
           this.success = false;
         },
+        async updateContributors() {
+          this.contributors = await getContributors()
+        },
         async updateInfo() {
           let info
           if (this.api && this.provider.isConnected) {
@@ -821,6 +789,10 @@ query {
           setInterval(() => {
             this.updateInfo()
           }, 5000);
+          this.updateContributors()
+          setInterval(() => {
+            this.updateContributors()
+          }, 10000);
           this.updatePrices()
           try {
             this.provider = getProvider();
