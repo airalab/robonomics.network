@@ -230,10 +230,12 @@
          </div>
        </section>
 
-       <!-- <hr/>
+       <hr/>
 
       <section class="layout layout__text">
         <h2>Leadership board</h2>
+
+        <p class="hyphens">Great news, everyone! <g-link to="https://www.rmrk.app">RMRK</g-link> will reward the top 500 crowdloaners participating in Robonomic’s crowdloan. These champions will be airdropped a special Kanaria-compatible item - a child NFT that can be equipped onto one’s Kanaria bird, and may bestow advantages in RMRK’s metaverse.</p>
 
         <div id="leadership-wrap">
           <table id="leadership" class=" fullwidth align-left">
@@ -251,7 +253,12 @@
             </tbody>
           </table>
         </div>
-      </section> -->
+
+        <div class="robogirl" aria-hidden="true">
+          <LovelyRoboGirl class="animate" v-in-viewport.once/>
+        </div>
+        
+      </section>
 
       <hr/>
 
@@ -586,6 +593,7 @@ query {
       Card: () => import("~/components/TextCard.vue"),
       MovingNumbers: () => import("~/components/decor/MovingNumbers.vue"),
       tip: () => import("~/components/tip.vue"),
+      LovelyRoboGirl: () => import("~/components/decor/LovelyRoboGirl.vue"),
     },
 
 
@@ -855,9 +863,16 @@ query {
     --color-polka-dark: #9c0053;
   }
 
+  .robogirl {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
   #leadership-wrap {
       max-height: 450px;
       overflow: auto;
+      margin-top: calc(var(--space)*2);
+      margin-bottom: calc(var(--space)*2);
   }
     
   @media screen and (max-width: 700px){
