@@ -230,7 +230,7 @@
          </div>
        </section>
 
-       <hr/>
+       <hr class="no-margins"/>
 
       <section class="layout layout__text">
         <h2>Leadership board</h2>
