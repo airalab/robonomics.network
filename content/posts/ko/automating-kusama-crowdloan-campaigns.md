@@ -3,7 +3,7 @@ title: 크라우드론 캠페인 자동화
 date: 2021-12-08
 published: true
 locale: 'ko'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
+# tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/automating-kusama-crowdloan-campaigns/cover.jpg
 description: "파라체인 슬롯 경매와 관련 크라우드론의 초창기에는 가격을 예측하기 어렵고 너무 비싼 경우가 많아 초기 진입자들에게 불리했습니다. 이러한 단점은 가격이 정해지는 과정에 있는 모든 새로운 시장, 특히 다양한 니즈에 맞춰 여러 제품이 출시되는 파라체인 경매와 같은 시장에선 일반적입니다."
 abstract: "파라체인 슬롯 경매와 관련 크라우드론의 초창기에는 가격을 예측하기 어렵고 너무 비싼 경우가 많아 초기 진입자들에게 불리했습니다. 이러한 단점은 가격이 정해지는 과정에 있는 모든 새로운 시장, 특히 다양한 니즈에 맞춰 여러 제품이 출시되는 파라체인 경매와 같은 시장에선 일반적입니다."
