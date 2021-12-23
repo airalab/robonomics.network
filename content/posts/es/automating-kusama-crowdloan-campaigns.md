@@ -3,7 +3,7 @@ title: Automatización de campañas de préstamos colectivos (crowdloan)
 date: 2021-12-08
 published: true
 locale: 'es'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
+# tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/automating-kusama-crowdloan-campaigns/cover.jpg
 description: "Las subastas iniciales de slots de parachain y sus préstamos colectivos asociados se vieron perjudicados por ser los primeros en llegar al mercado, lo que hizo que sus precios fueran difíciles de predecir y, a menudo, demasiado altos. Esta desventaja es común en cualquier mercado nuevo en el cual los precios todavía no están claros, especialmente mercados como las subastas de parachain, donde diferentes equipos lanzan productos diversos con necesidades diversas."
 abstract: "Las subastas iniciales de slots de parachain y sus préstamos colectivos asociados se vieron perjudicados por ser los primeros en llegar al mercado, lo que hizo que sus precios fueran difíciles de predecir y, a menudo, demasiado altos. Esta desventaja es común en cualquier mercado nuevo en el cual los precios todavía no están claros, especialmente mercados como las subastas de parachain, donde diferentes equipos lanzan productos diversos con necesidades diversas."
