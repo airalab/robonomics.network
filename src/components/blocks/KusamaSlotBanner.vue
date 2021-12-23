@@ -33,3 +33,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+  .card {
+    margin-top: calc(var(--space) * 2)
+  }
+</style>
