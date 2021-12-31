@@ -28,11 +28,11 @@ Further information on our plans for this user category, next year.
 
 During 2020, a basic architecture was developed for representing the parachain as a familiar cloud for IoT devices. Moving forward, part of the future infrastructure of Robonomics in a parachain format, will be called RWS.
 
-In 2021, numerous experiments were conducted to connect popular smart home solutions to RWS services. Developers are now ready to provide a monthly subscription service for those who already use a home IoT infrastructure and would like to try web3-based services. 
+In 2021, numerous [experiments were conducted to connect popular smart home solutions to RWS services](https://youtu.be/H-w2FX-zd0M). Developers are now ready to provide a monthly subscription service for those who already use a home IoT infrastructure and would like to try web3-based services. 
 
 Some of the specific actions we have completed, to connect a smart home controlled by the Kusama network, are as follows:
 
-* Completed the initial connection with Home Assistant, the most famous opensource solution in the field of smart home control, and will continue to develop this area to decouple the existing IoT hubs in homes from cloud services;
+* Completed the initial connection with [Home Assistant](https://github.com/home-assistant), the most famous opensource solution in the field of smart home control, and will continue to develop this area to decouple the existing IoT hubs in homes from cloud services;
 * Started the release and global distribution of the first IoT hub, which will be [compatible with sensors operating under the Zigbee protocol](https://www.amazon.com/zigbee-sensor/s?k=zigbee+sensor) in the spring of 2022;
 * Continuation of the [series of publications and instructions](https://blog.aira.life/coworking-for-crypto-anarchists-p1-5ebecb252f2d) on how to organise space in a team without the tyranny of the administrator, but only with a light electric shock from Rosie's home robot.
 
@@ -62,7 +62,9 @@ For the third year in a row, the city of Tolyatti – incidentally where many pr
 
 Find out more on the [website](https://airalab.org/en/) of the non-profit organisation Airalab Rus, Tolyatti.
 
-By the way, the touch map is globally available– feel free to connect as tens of those interested have already done. Here's a sample video from the community – [Cool Tech | Robonomics Decentralised Sensor Network - How to Connect a Sensor](https://youtu.be/AQ7ZzgbN7jU)
+By the way, the touch map is globally available– feel free to connect as tens of those interested have already done. Here's a sample video from the community:
+
+https://youtu.be/AQ7ZzgbN7jU
 
 ### Feek - quality control system for small factories
 
@@ -86,7 +88,8 @@ Throughout the year the Robonomics custdev team conducted interviews with develo
 * Geography: European countries (36%), India (22%), USA (19%), other countries (23%)
 * Areas of activity: ROS developers, robotics engineers, IoT engineers, startup founders, students and professors: Computer science, Robotics, Mechanical Engineering
 
-In general, robotic and IoT software developers still vaguely understand the concept of web3, or know about it, but do not use these technologies in their professional work. For some respondents, the idea of using blockchain and smart contracts to securely manage a network of devices was quite a surprise. Nevertheless, discussing the general problems of robotics, many developers have come to the same conclusions that we have come to: for the full-scale implementation of robotic devices in the future, the question of their reliable authentication will inevitably arise. Web3 technologies can be a possible solution, which, moreover, will make it possible to democratize and decentralize access to robots for all of humanity. 
+In general, robotic and IoT software developers still vaguely understand the concept of web3, or know about it, but do not use these technologies in their professional work. For some respondents, the idea of using blockchain and smart contracts to securely manage a network of devices was quite a surprise. Nevertheless, discussing the general problems of robotics, many developers have come to the same conclusions that we have come to: for the full-scale implementation of robotic devices in the future, the question of their reliable authentication will inevitably arise. Web3 technologies can be a possible solution, which, moreover, will make it possible to democratize and decentralize access to robots for all of humanity.
+
 Overall, the responses highlight the idea that the manufacturing industry wants to change its old business model, but does not yet know how to do it painlessly. Several specialists from B2B industries in interviews noted that large companies, on the one hand, are worried about the reliability of IoT connectivity through conventional networks, but on the other hand, they are not yet ready for web3 solutions as an alternative. The respondents were advised to demonstrate streamlined use cases that provide more profitable and less costly security than current, centralized solutions. A niche is open here for solutions like Robonomics, and according to one respondent, the motto “be robotically capable, but human readable” is a good approach to disseminate our ideas. The main obstacle was most often called the legal nuances of blockchains and cryptocurrencies, as well as the fact that we propose to preserve the confidentiality of data sent by user devices, which may contradict the business models of some companies.
 
 Among the most frequent mentions in the stories of respondents was the problem of the high cost and complexity of deploying robotic solutions. Our common conclusion with the respondents was that the application of the concept of “robot-as-a-service” and smart leasing can make IoT and robots more accessible. 
