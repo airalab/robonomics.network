@@ -11,58 +11,40 @@
     <div class="page">
        <section id="info" class="section__solid section__blue">
          <div class="content layout laouyt__content">
-           <h1>{{$ts('Crowdloan for Robonomics on Kusama')}}</h1>
-           <p id="info-subtitle">New era of autonomous oracle based crowdloan opened now</p>
+           <h1>Robonomics won parachain slot on Kusama</h1>
+           <p id="info-subtitle">Dotsama for robots program initiated</p>
 
-           <div class="grid-5">
+           <div class="grid-3">
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">{{$ts('Campaign Cap')}}</div>
-               <div>47,425.5262 KSM</div>
-               <details>
-                 <summary @click="infoDetails">i</summary>
-                 {{$ts('Based on fees assessment of the 15th auction, Geshiro')}}
-               </details>
+               <div class="text-title">Global parameters</div>
+               <div class="text-small">
+                  <p><b>Auction:</b> 20</p>
+                  <p><b>Lease Period:</b> 18 - 25</p>
+                  <p><b>Retroactive Auction Ending Block:</b> 10751100</p>
+                  <p><b>Best Bid:</b> 13,236 $KSM</p>
+                  <p><g-link to="https://kusama.subscan.io/bid_history/?bid_id=20-18-25"><b>Check status of your bid on Subscan</b></g-link></p>
+               </div>
              </div>
 
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">{{$ts('Duration')}}</div>
-               <div>5 {{$ts('weeks')}}</div>
-               <details>
-                 <summary @click="infoDetails">i</summary>
-                {{$ts('We assume that one Crowdloan Campaign should aim to collect for 5 weeks.')}} <g-link to="/blog/automating-kusama-crowdloan-campaigns/">{{$ts('Learn more')}}</g-link>
-               </details>
+               <div class="text-title">{{$ts('Remuneration')}} summary</div>
+               <div class="text-small">
+                  <p>4.20 XRT each KSM</p>
+                  <p>1 XRT extra each KSM for <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">«Pioneer NFT»</g-link> cardholders</p>
+                  <p>+ Robonomics Pioneer NFT for all contributors</p>
+                  <p><g-link to="https://singular.rmrk.app/collectibles/10784769-466f0fac505a3db71a-CC-ROBONOMICS-0000000000000024"><b>+ Robonomics Clanary Collection</b></g-link> for 500 top contributors</p>
+               </div>
              </div>
 
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">{{$ts('Remuneration')}}</div>
-               <div>4.20 XRT</div>
-               <details>
-                 <summary @click="infoDetails">i</summary>
-                  1 KSM ~ 370$ APR = 19%,<br/>
-                  1XRT ~ 17$
-               </details>
-             </div>
-
-             <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">{{$ts('Bonus')}}</div>
-               <div>{{$ts('1XRT for each KSM')}} {{$ts('for «Pioneer NFT» cardholders')}}</div>
-               <details>
-                 <summary @click="infoDetails">i</summary>
-                 {{$ts('Pioneer NFT cardholders will receive an extra 1XRT for each KSM')}}. {{$ts('Any contributor in the past auctions can')}} <g-link to="https://dapp.robonomics.network/#/pioneer">{{$ts('claim')}}</g-link> Pioneer nft <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">card</g-link>
-               </details>
-             </div>
-
-             <div class="oldy dark bg-blue align-left">
-               <div class="text-title m-b-0">{{$ts('Distribution rewards')}}</div>
-               <div>{{$ts('Monthly')}}</div>
-               <details>
-                 <summary @click="infoDetails">i</summary>
-                 {{$ts('Proportionally equal shares for 12 months. The treasury performs by generating new tokens in the parachain')}}
-               </details>
+               <div class="text-title">Plans</div>
+               <div class="text-small">
+                  <p>Robonomics will be onboarded in ~2 weeks</p>
+                  <p>We will focus on Kusama apps for IoT startups and smart home infrastructure, read more <g-link to="/blog/trajectory-2022-heading-for-product-launches/">here</g-link></p>
+                  <p>Monthly IoT subscriptions for your home infrastructure will be available before end of the month with start price 0.5 XRT. <g-link to="https://www.youtube.com/watch?v=H-w2FX-zd0M">Have a look on example</g-link></p>
+               </div>
              </div>
            </div>
-
-           <p class="info-tip">These terms & conditions <a href="/blog/automating-kusama-crowdloan-campaigns/" target="_blank">counted by algorithm</a></p>
 
            <g-image id="info-girl" aria-hidden="true" alt="" src="~/assets/images/kusama-cosmogirl-sitting.png" />
 
@@ -74,161 +56,13 @@
        </section>
 
        <section id="a-contribution" class="section__solid section__darkgray">
-         <form class="contribution layout">
-           <template v-if="!isApi">
-             <div class="input-signed-right">
-                <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
-                <label for="contribution" class="sign">KSM</label>
-              </div>
-              <section class="checks">
-                <label class="block label">
-                    <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-1"/>
-                    <span>{{$ts('I have installed the')}} <g-link to="https://polkadot.js.org/extension/">{{$ts('Polkadot.js browser extension')}}</g-link></span>
-                </label>
-                <label class="block label">
-                    <input type="checkbox" class="big" required v-model="checkedFlags" value="crowdloan-flag-2" />
-                    <span>{{$ts('I have KSM in my Polkadot.js account')}}</span>
-                </label>
-                <label class="block label">
-                    <input type="checkbox" class="big" required  v-model="checkedFlags" value="crowdloan-flag-3" />
-                    <span>{{$ts('My KSM has been unbonded')}}</span>
-                    <tip summary="☝️" position="right-bottom" class="inline-block-clear">
-                      {{$ts('Supporters who are currently staking (bonding) their KSM will need to unstake prior to bonding their KSM to the crowdloan module. Kusama has a delayed exit period ~ 7 days.')}} 
-                      <g-link to="https://wiki.polkadot.network/docs/en/maintain-guides-how-to-unbond">{{$ts('How to unbond KSM')}}</g-link>
-                    </tip>
-                </label>
-              </section>
-              <p v-if="status_noextension" class="error">{{$ts('Please check if you have installed polkadot{.js} extension')}}</p>
-              <p v-if="checkedFlags.length!=3 && connect_clicked" class="error">{{$ts('Please check carefully all info above')}}</p>
-              <!-- <Button type="button" @click="connect" button="primary block green large" :disabled="isСonnection || checkedFlags.length!=3" :class="crowdloan_loading?'loading':''"> -->
-              <Button type="button" @click="connect" button="primary block green large" :class="crowdloan_loading?'loading':''">
-                <span class="text">{{$ts('Contribute')}}</span>
-              </Button>
-            </template>
 
-            <template v-else-if="isApi && !success">
-                  <section>
-                    <template v-if="accounts.length > 0">
-                      <label class="block label">
-                        <small>{{$ts('Select an account')}}:</small>
-                        <select v-model="account" class="block">
-                          <option
-                            v-for="(item, index) in accounts"
-                            :key="index"
-                            :value="item.address"
-                          >
-                            {{ item.meta.name }} - {{ item.address.slice(0, 6) + "..." + item.address.slice(-6) }}
-                          </option>
-                        </select>
-                      </label>
-                      <label class="block label">
-                        <small>{{$ts('The balance of selected account')}}:</small>
-                        <p>{{balanceView}}</p>
-                      </label>
-                      <label class="block label">
-                        <small>{{$ts('Your contribution')}}:</small>
-                        <div class="input-signed-right" :class="validateBalance?'':'error'">
-                          <input v-model="contribution" id="contribution" class="block" type="number" placeholder="0" required/>
-                          <label for="contribution" class="sign">KSM</label>
-                        </div>
-                        <div class="msg-error" v-if="!validateBalance">{{$ts('Insufficient or incorrectly entered balance')}}</div>
-                      </label>
-                      <label class="block label">
-                        <small>{{$ts('Your email (not necessary)')}}:</small>
-                        <input type="email" class="big block" value="" placeholder="Type your email" v-model="submit_email" :class="!validateEmail?'error':''"/>
-                        <div class="msg-error" v-if="!validateEmail&!agree_email">{{$ts('Please agree to receive emails from Robonomics or do not fill this field')}}</div>
-                      </label>
-                      <label class="block label" v-show="submit_email">
-                        <input v-model="agree_email" type="checkbox" class="big" required />
-                        <small>{{$ts('I agree to receive email communications from Robonomics')}}</small>
-                      </label>
-                      <details class="contribution-disclamer dashed">
-                        <summary><b>{{$ts('Most important to know')}}</b></summary>
-                        <article class="hyphens">
-                          <p>{{$ts('The Robonomics development team are early adopters of Polkadot technologies, and we understand that the current technical implementation of the Kusama Relay chain and Substrate framework may contain errors or be revised this year and next. This is important for the crowdloan campaigners to understand as well.')}}</p>
-                          <p>{{$ts("The entire Polkadot ecosystem is undergoing a process of formation that can take an indefinite time. It's also important for you to keep in mind every time when you study any plans of the developers.")}}</p>
-                          <p>{{$ts('Ladies and gentlemen, you are participating in this great experiment at your own peril and risk.')}}</p>
-                          <p>{{$ts('Welcome to our journey!')}}</p>
-                        </article>
-                      </details>
-                    </template>
-                    <template v-else>
-                      <label class="block label error">
-                        <small>{{$ts('No account found, please add account in your wallet extension or unlock it')}}</small>
-                      </label>
-                    </template>
-                  </section>
-                  <p v-if="status_transaction_broken" class="error">{{$ts("Something wrong with the transaction. Please don't worry and ask for help in")}} <g-link to="https://t.me/robonomics">{{$ts('Robonomics Telegram Community')}}</g-link></p>
-                  <p v-if="status_transaction_notdone" class="error">{{$ts("The transaction was not executed. Please don't worry and ask for help in")}} <g-link to="https://t.me/robonomics">{{$ts('Robonomics Telegram Community')}}</g-link></p>
-                  <Button type="button" @click="send" button="primary block green large" :disabled="!validateSend" :class="crowdloan_loading?'loading':''">
-                    <span class="text">{{$ts('Submit contribution')}}</span>
-                  </Button>
-                </template>
-
-                <section v-if="success" class="crowdloan-step-3 active">
-                  <h3>{{$ts('Your contribution')}} {{contribution}} KSM {{$ts('accepted')}}!</h3>
-                  <div class="load-bird" aria-hidden="true" v-in-viewport.once>
-                    <g-image src="/assets/kusama-karate-body.png" class="bird-body"/>
-                    <g-image src="/assets/kusama-karate-tale.png" class="bird-tale"/>
-                    <g-image src="/assets/kusama-karate-wing-1.png" class="bird-wing-1"/>
-                    <g-image src="/assets/kusama-karate-wing-2.png" class="bird-wing-2"/>
-                    <g-image src="/assets/kusama-karate-ribbons.png" class="bird-ribbons"/>
-                    <g-image src="/assets/kusama-karate-hair.png" class="bird-hair"/>
-                    <g-image src="/assets/kusama-karate-leg.png" class="bird-leg"/>
-                  </div>
-                  <div class="contribution-share">
-                    <div><small>{{$ts('Share great news')}}:</small></div>
-                    <div class="nowrap">
-                      <a href="https://twitter.com/intent/tweet?text=🤖%20My%20$KSM%20work%20for%20%23IoT%20future%20in%20%40AIRA_Robonomics%20Crowdloan&url=https%3A%2F%2Frobonomics.network%2Fkusama-slot%2F" target="_blank" class="inline-block"><g-image alt="On Twitter" src="~/assets/images/twitter.png"/></a></div>
-                  </div>
-                  <Button type="button" @click="more" button="primary block green large">
-                    <span class="text">{{$ts('Contribute more')}}</span>
-                  </Button>
-                </section>
-         </form>
-
-         <details class="dashed layout layout__text">
-           <summary>Other ways to contribute</summary>
-            <div class="oldy">
-              <p class="text-title">1. {{$ts('On Polkadot Substrate portal')}}</p>
-              <p><g-link style="display:block;word-break: break-all;" to="https://polkadot.js.org/apps/#/parachains/crowdloan">https://polkadot.js.org/apps/#/parachains/crowdloan</g-link></p>
-              <p>{{$ts('In early April, Robonomics held a rehearsal of participation in auctions using the Crowdloan module in the Rococo network. You can watch the Twitter thread for a closer look at the possibility of using the standard interface for community participation in Polkadot auctions')}}: <g-link style="display:block;word-break: break-all;" to="https://twitter.com/AIRA_Robonomics/status/1377653645827833860">https://twitter.com/AIRA_Robonomics/status/1377653645827833860</g-link></p>
-            </div>
-            <div class="oldy">
-              <p class="text-title">2. {{$ts('Fearless DeFi Wallet')}}</p>
-              <p><g-link to="https://fearlesswallet.io">https://fearlesswallet.io</g-link></p>
-            </div>
-            <div class="oldy">
-              <p class="text-title">3. Nova Wallet</p>
-              <p><g-link to="https://novawallet.io">https://novawallet.io</g-link></p>
-            </div>
-         </details>
-       </section>
-
-       <hr class="animate no-margins" v-in-viewport.once/>
-
-       <section id="statistics" class="section__solid section__darkgray">
-         <div class="grid-3">
-           <div>
-             <div class="text-title m-b-0">{{$ts('Robonomics Parathread ID')}}</div>
-             <div>2048</div>
-           </div>
-           <div>
-             <div class="text-title m-b-0">Raised so far</div>
-             <div>
-                <template v-if="info_contributed > 0">{{info_contributed}} KSM</template> 
-                <template v-else><span class="loader-text-s"></span></template>
-             </div>
-           </div>
-           <div>
-             <div class="text-title m-b-0">Our contributors</div>
-             <div>
-              <template v-if="info_count > 0">{{info_count}}</template>
-              <template v-else><span class="loader-text-s"></span></template>
-             </div>
-           </div>
+         <div class="contribution layout">
+           <h3>Subscribe to email news & updates</h3>
+           <Subscribtion />
          </div>
        </section>
+
 
        <hr class="no-margins"/>
 
@@ -238,7 +72,7 @@
         <p class="hyphens">Great news, everyone! <g-link to="https://www.rmrk.app">RMRK</g-link> will reward the top 500 crowdloaners participating in Robonomic’s crowdloan. These champions will be airdropped a special Kanaria-compatible item - a child NFT that can be equipped onto one’s Kanaria bird, and may bestow advantages in RMRK’s metaverse.</p>
 
         <div id="leadership-wrap">
-          <table id="leadership" class=" fullwidth align-left">
+          <table id="leadership" class="fullwidth align-left">
             <thead>
               <tr>
                 <th>Contributor</th>
@@ -291,7 +125,7 @@
           </section>
          </div>
 
-         <a href="#a-contribution" class="dashed text-big" v-smooth-scroll="{ updateHistory: false, offset: -250 }">Go to contribution</a>
+         <a href="#a-contribution" class="dashed text-big" v-smooth-scroll="{ updateHistory: false, offset: -250 }">Email updates</a>
        </section>
 
       <section class="section__solid section__lightblue animate" v-in-viewport.once>
@@ -449,7 +283,7 @@
 
           </section>
 
-          <a href="#a-contribution" class="text-color-red dashed text-big" v-smooth-scroll="{ updateHistory: false, offset: -250 }">Go to contribution</a>
+          <a href="#a-contribution" class="text-color-red dashed text-big" v-smooth-scroll="{ updateHistory: false, offset: -250 }">Email updates</a>
 
         </div>
       </section>
@@ -594,6 +428,7 @@ query {
       MovingNumbers: () => import("~/components/decor/MovingNumbers.vue"),
       tip: () => import("~/components/tip.vue"),
       LovelyRoboGirl: () => import("~/components/decor/LovelyRoboGirl.vue"),
+      Subscribtion: () => import("~/components/utils/forms.vue"),
     },
 
 
@@ -638,178 +473,185 @@ query {
         crowdloan_loading: false,
         connect_clicked: false, //this is for error message to check input[checkbox] on step 1
 
-        contributors: []
+        contributors: [],
+
+        //  recaptchaSitekey: "6LeWbWQUAAAAAPkpf_6AokhGBcvnOexOpbARwk6Z",
+        recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost,
       }
     },
 
+
     methods: {
 
-        infoDetails(e){
+      infoDetails(e){
+        /* This operates with details in crowdloan info - synch open/close */
+        if ( window.innerWidth > 880 ) {
+          let details = document.querySelectorAll('#info .grid-5 details');
 
-          
-
-          /* This operates with details in crowdloan info - synch open/close */
-          if ( window.innerWidth > 880 ) {
-            let details = document.querySelectorAll('#info .grid-5 details');
-
-            if(!e.target.parentElement.open) {
-              for (let el of details) {
-                if(el !== e.target.parentElement){
-                  el.open = true;
-                }
+          if(!e.target.parentElement.open) {
+            for (let el of details) {
+              if(el !== e.target.parentElement){
+                el.open = true;
               }
-            } else {
-              for (let el of details) {
-                if(el !== e.target.parentElement){
-                  el.open = false;
-                }
+            }
+          } else {
+            for (let el of details) {
+              if(el !== e.target.parentElement){
+                el.open = false;
               }
             }
           }
-        },
+        }
+      },
 
-         async getPrice(tickerName) {
-           const result = await fetch(
-             `https://min-api.cryptocompare.com/data/price?fsym=${tickerName}&tsyms=USD&api_key=9c9ca216c454cd2390092e573894a6e10ddff03ef3a4e153996ef358fe9d33d8`
-           );
-           const data = await result.json();
-           return Number(data.USD)
-         },
-         async updatePrices() {
-           this.price_xrt = await this.getPrice('XRT');
-           this.price_ksm = await this.getPrice('KSM');
-         },
+      async getPrice(tickerName) {
+        const result = await fetch(
+          `https://min-api.cryptocompare.com/data/price?fsym=${tickerName}&tsyms=USD&api_key=9c9ca216c454cd2390092e573894a6e10ddff03ef3a4e153996ef358fe9d33d8`
+        );
+        const data = await result.json();
+        return Number(data.USD)
+      },
 
-        async connect() {
-          //loading
-          this.crowdloan_loading = true;
-          this.connect_clicked = true;
+      async updatePrices() {
+        this.price_xrt = await this.getPrice('XRT');
+        this.price_ksm = await this.getPrice('KSM');
+      },
 
-          this.isСonnection = true;
-          this.status_noextension = false;
-          this.status_noaccount = false;
-          try {
-            this.accounts = await getAccounts(this.api);
-            if (this.accounts.length === 0) {
-              console.log('no accounts'); //
-              this.status_noaccount = true;
-            }
-            this.account = this.accounts[0]?.address;
-            if (this.account) {
-              let data = await this.api.query.system.account(this.account);
-              this.balance = data.data.free.add(data.data.reserved).sub(data.data.miscFrozen)
-            }
-            //2
-            this.crowdloan_loading = false;
-            this.isСonnection = false
-            this.isApi = true;
-          } catch (error) {
-            //-
-            this.crowdloan_loading = false;
-            this.isСonnection = false
-            console.log(error.message);
-            this.status_noextension = true;
+      async connect() {
+        //loading
+        this.crowdloan_loading = true;
+        this.connect_clicked = true;
+
+        this.isСonnection = true;
+        this.status_noextension = false;
+        this.status_noaccount = false;
+        try {
+          this.accounts = await getAccounts(this.api);
+          if (this.accounts.length === 0) {
+            console.log('no accounts'); //
+            this.status_noaccount = true;
           }
-        },
-        async send() {
-          try {
-            //loading
-            this.crowdloan_loading = true;
-
-            this.error = "";
-            this.isWrite = true;
-            this.status_transaction_broken = false;
-            this.status_transaction_notdone = false;
-            const account = await getAccount(this.api, this.account);
-            const amount = bnToBn(Number(this.contribution)*1000000000000)
-            const tx = await this.api.tx.crowdloan.contribute(config.paraId, amount.toString(), null)
-              .signAsync(account.meta.isInjected ? account.address : account);
-
-            await tx.send(result => {
-              if (result.status.isInBlock) {
-                console.log(result.status.asInBlock.toString());
-                result.events.forEach(events => {
-                  const {
-                    event: { data, method, section }
-                  } = events;
-
-                  if (section === "system" && method === "ExtrinsicFailed") {
-                    console.log("error", data.toString()); // Транзакция с ошибками
-                    this.status_transaction_broken = true;
-                    //-
-                    this.crowdloan_loading = false;
-                    this.error = 'Error';
-                    this.isWrite = false;
-                  } else if (
-                    section === "system" &&
-                    method === "ExtrinsicSuccess"
-                  ) {
-                    if(this.submit_email){
-                      fetch('https://script.google.com/macros/s/AKfycbw3YuJ8ECkcuEXsRouBSgCrReo4zqpONNNg9Pkcf2nVW05pqrj8TwssSWmF4k_PGDwb6A/exec', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                        body: 'email=' + encodeURIComponent(this.submit_email)
-                      })
-                    }
-                    console.log("ok");
-                    this.isWrite = false;
-                    this.success = true;
-                    //3
-                  }
-                });
-              } else if (result.status.isFinalized) {
-                console.log("isFinalized");
-              }
-            });
-          } catch (error) {
-            //-
-            this.crowdloan_loading = false;
-            console.log(error); // кнопка нажата, транз не отправляется
-            this.status_transaction_notdone = true;
-            this.error = error.message;
-            this.isWrite = false;
+          this.account = this.accounts[0]?.address;
+          if (this.account) {
+            let data = await this.api.query.system.account(this.account);
+            this.balance = data.data.free.add(data.data.reserved).sub(data.data.miscFrozen)
           }
-        },
-        async more() {
           //2
           this.crowdloan_loading = false;
-          this.success = false;
-        },
-        async updateContributors() {
-          this.contributors = await getContributors()
-        },
-        async updateInfo() {
-          let info
-          if (this.api && this.provider.isConnected) {
-            info = await getStat(this.api)
-          } else {
-            // info = await getStatServer();
-            info = { count:0, amountUnit:0 };
-          }
-          this.info_count = info.count;
-          this.info_contributed = Number(info.amountUnit).toFixed(2);
-        },
+          this.isСonnection = false
+          this.isApi = true;
+        } catch (error) {
+          //-
+          this.crowdloan_loading = false;
+          this.isСonnection = false
+          console.log(error.message);
+          this.status_noextension = true;
+        }
       },
 
-      async created() {
-        
-          this.updateInfo()
-          setInterval(() => {
-            this.updateInfo()
-          }, 5000);
-          this.updateContributors()
-          setInterval(() => {
-            this.updateContributors()
-          }, 10000);
-          this.updatePrices()
-          try {
-            this.provider = getProvider();
-            this.api = await initApi();
-          } catch (error) {
-            console.log(error);
-          }
-        
+      async send() {
+        try {
+          //loading
+          this.crowdloan_loading = true;
+
+          this.error = "";
+          this.isWrite = true;
+          this.status_transaction_broken = false;
+          this.status_transaction_notdone = false;
+          const account = await getAccount(this.api, this.account);
+          const amount = bnToBn(Number(this.contribution)*1000000000000)
+          const tx = await this.api.tx.crowdloan.contribute(config.paraId, amount.toString(), null)
+            .signAsync(account.meta.isInjected ? account.address : account);
+
+          await tx.send(result => {
+            if (result.status.isInBlock) {
+              console.log(result.status.asInBlock.toString());
+              result.events.forEach(events => {
+                const {
+                  event: { data, method, section }
+                } = events;
+
+                if (section === "system" && method === "ExtrinsicFailed") {
+                  console.log("error", data.toString()); // Транзакция с ошибками
+                  this.status_transaction_broken = true;
+                  //-
+                  this.crowdloan_loading = false;
+                  this.error = 'Error';
+                  this.isWrite = false;
+                } else if (
+                  section === "system" &&
+                  method === "ExtrinsicSuccess"
+                ) {
+                  if(this.submit_email){
+                    fetch('https://script.google.com/macros/s/AKfycbw3YuJ8ECkcuEXsRouBSgCrReo4zqpONNNg9Pkcf2nVW05pqrj8TwssSWmF4k_PGDwb6A/exec', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                      body: 'email=' + encodeURIComponent(this.submit_email)
+                    })
+                  }
+                  console.log("ok");
+                  this.isWrite = false;
+                  this.success = true;
+                  //3
+                }
+              });
+            } else if (result.status.isFinalized) {
+              console.log("isFinalized");
+            }
+          });
+        } catch (error) {
+          //-
+          this.crowdloan_loading = false;
+          console.log(error); // кнопка нажата, транз не отправляется
+          this.status_transaction_notdone = true;
+          this.error = error.message;
+          this.isWrite = false;
+        }
       },
+
+      async more() {
+        //2
+        this.crowdloan_loading = false;
+        this.success = false;
+      },
+
+      async updateContributors() {
+        this.contributors = await getContributors()
+      },
+
+      async updateInfo() {
+        let info
+
+        if (this.api && this.provider.isConnected) {
+          info = await getStat(this.api)
+        } else {
+          // info = await getStatServer();
+          info = { count:0, amountUnit:0 };
+        }
+        this.info_count = info.count;
+        this.info_contributed = Number(info.amountUnit).toFixed(2);
+      }
+
+    },
+
+    async created() {
+      
+        this.updateInfo()
+        setInterval(() => {
+          this.updateInfo()
+        }, 5000);
+        this.updateContributors()
+        setInterval(() => {
+          this.updateContributors()
+        }, 10000);
+        this.updatePrices()
+        try {
+          this.provider = getProvider();
+          this.api = await initApi();
+        } catch (error) {
+          console.log(error);
+        }
+    },
 
       watch: {
         account: async function (newValue) {
