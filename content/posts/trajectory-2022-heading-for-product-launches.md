@@ -66,11 +66,11 @@ By the way, the touch map is globally available– feel free to connect as tens 
 
 https://youtu.be/AQ7ZzgbN7jU
 
-### Feek - quality control system for small factories
+### Feecc - quality control system for small factories
 
-A student group from ITMO together with Multiagentnye Sistemy LLC created and tested a quality control system at two enterprises that can be easily integrated into an assembler's workplace or into an element of a conveyor line. The system will be offered at a low price and features a high data protection level.
+A student group from ITMO together with LLC "Multi-agent systems" created and tested a quality control system at two enterprises that can be easily integrated into an assembler's workplace or into an element of a conveyor line. The system will be offered at a low price and features a high data protection level.
 
-The Feek hardware and software complex will be available for purchase in 2022 at https://multi-agent.io/
+The Feecc hardware and software complex will be available for purchase in 2022 at https://multi-agent.io/
 
 ### A portal from the metaverse to the real world
 
