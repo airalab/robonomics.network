@@ -94,10 +94,6 @@ small, .text__small, .text-small { font-size: 70%; line-height: 1.2; }
 .text-huge { font-size: 160%; line-height: 1.2; }
 .text-huge-light { font-size: 160%; line-height: 1.6; font-weight: 300; }
 
-strong, b {
-  font-weight: 500;
-}
-
 blockquote {
   font-size: 110%;
   font-weight: 300;
