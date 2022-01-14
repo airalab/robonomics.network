@@ -32,7 +32,7 @@
                   <p>4.20 XRT each KSM</p>
                   <p>1 XRT extra each KSM for <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">«Pioneer NFT»</g-link> cardholders</p>
                   <p>+ Robonomics Pioneer NFT for all contributors</p>
-                  <p><g-link to="https://singular.rmrk.app/collectibles/10784769-466f0fac505a3db71a-CC-ROBONOMICS-0000000000000024"><b>+ Robonomics Clanary Collection</b></g-link> for 500 top contributors</p>
+                  <p><g-link to="https://kanaria.rmrk.app/"><b>+ Robonomics Clanary Collection</b></g-link> for 500 top contributors</p>
                </div>
              </div>
 
