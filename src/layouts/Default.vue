@@ -7,9 +7,7 @@
 
       <header class="header">
         <g-link class="banner-top" to="/kusama-slot" v-if="!BannerLink('/kusama-slot/')">
-          <div class="layout__content">
-            {{$ts('Crowdloan for Robonomics on Kusama')}} {{$ts('opened')}}
-          </div>
+          <div class="layout__content">Robonomics won parachain slot on Kusama</div>
         </g-link>
 
         <div class="header-content">
