@@ -21,6 +21,7 @@
                   <p><b>Auction:</b> 20</p>
                   <p><b>Lease Period:</b> 18 - 25</p>
                   <p><b>Retroactive Auction Ending Block:</b> 10751100</p>
+                  <p><b>Last valid contribution block:</b> 10751068</p>
                   <p><b>Best Bid:</b> 13,236 $KSM</p>
                   <p><g-link to="https://kusama.subscan.io/bid_history/?bid_id=20-18-25"><b>Check status of your bid on Subscan</b></g-link></p>
                </div>
