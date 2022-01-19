@@ -1,12 +1,13 @@
 ---
 title: "Парачейн Робономики на Кусама: первая неделя, отчёт"
 date: 2022-01-18
-published: false
+published: true
 locale: 'ru'
 # tags: ['Robonomics parachain', 'Kusama']
 cover_image: ./images/parachain-on-kusama-first-week-report/cover.jpg
 description: "С момента запуска парачейна Робономики получилось выполнить довольно большой список работ. За что отдельное спасибо каждому, кто оторвался от салатов, шампанского и поездок по родственникам уже 2 и 3 января :) Ниже рассказываю  о том, в чем лично участвовал."
 abstract: "С момента запуска парачейна Робономики получилось выполнить довольно большой список работ. За что отдельное спасибо каждому, кто оторвался от салатов, шампанского и поездок по родственникам уже 2 и 3 января :) Ниже рассказываю  о том, в чем лично участвовал."
+author: '@ensrationis'
 ---
 import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'
 import Card from '~/components/TextCard.vue'

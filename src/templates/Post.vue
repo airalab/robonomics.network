@@ -13,7 +13,8 @@
     </div>
 
     <div class="layout">
-      <PostMeta :post="$page.post" />
+      <PostMeta :post="$page.post" :author="$page.post.author" />
+      <!-- <post-author v-if="$page.post.author" :author="$page.post.author"/> -->
     </div>
 
     <Abstract v-if="$page.post.abstract" :text="$page.post.abstract" :className="'post_abstract'"/>
@@ -50,6 +51,7 @@ query($id: ID!) {
     cover_image (width: 2000, quality: 100)
     description
     path
+    author
     date (format: "MMMM D, YYYY")
     content
     related
@@ -85,6 +87,7 @@ query($id: ID!) {
       PostCard: () => import('~/components/PostCard.vue'),
       PostRelated: () => import('~/components/PostRelated.vue'),
       Abstract: () => import('~/components/TextAbstract.vue'),
+      PostAuthor: () => import('~/components/blocks/PostAuthor.vue'),
     }
 
   }
