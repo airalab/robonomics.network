@@ -1,12 +1,13 @@
 ---
 title: "Robonomics parachain on Kusama: first week's report"
 date: 2022-01-18
-published: false
+published: true
 locale: 'en'
 tags: ['Robonomics parachain', 'Kusama']
 cover_image: ./images/parachain-on-kusama-first-week-report/cover.jpg
 description: "Since the launch of the Robonomics parachain, we have managed to complete a fairly large range of tasks, and for that, my special thanks goes out to everyone who broke away early from nice meals, champagne, and trips to friends & family on January 2nd and 3rd :) The below information is what I personally participated in and what I want to tell you about."
 abstract: "Since the launch of the Robonomics parachain, we have managed to complete a fairly large range of tasks, and for that, my special thanks goes out to everyone who broke away early from nice meals, champagne, and trips to friends & family on January 2nd and 3rd :) The below information is what I personally participated in and what I want to tell you about."
+author: '@ensrationis'
 ---
 import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'
 import Card from '~/components/TextCard.vue'

@@ -12,7 +12,7 @@
        <section id="info" class="section__solid section__blue">
          <div class="content layout laouyt__content">
            <h1>Robonomics won parachain slot on Kusama</h1>
-           <p id="info-subtitle">Dotsama for robots program initiated</p>
+           <p id="info-subtitle">Dotsama for robots program initiated <g-link to="/blog/parachain-on-kusama-first-week-report/">Read first report</g-link></p>
 
            <div class="grid-3">
              <div class="oldy dark bg-blue align-left">
@@ -20,15 +20,15 @@
                <div class="text-small">
                   <p><b>Auction:</b> 20</p>
                   <p><b>Lease Period:</b> 18 - 25</p>
-                  <p><b>Retroactive Auction Ending Block:</b> 10751100</p>
-                  <p><b>Last valid contribution block:</b> 10751068</p>
+                  <p><b>Retroactive Auction Ending Block:</b> 10,751,100</p>
+                  <p><b>Last valid contribution block:</b> 10,784,569</p>
                   <p><b>Best Bid:</b> 13,236 $KSM</p>
                   <p><g-link to="https://kusama.subscan.io/bid_history/?bid_id=20-18-25"><b>Check status of your bid on Subscan</b></g-link></p>
                </div>
              </div>
 
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title">{{$ts('Remuneration')}} summary</div>
+               <div class="text-title">Remuneration summary</div>
                <div class="text-small">
                   <p>4.20 XRT each KSM</p>
                   <p>1 XRT extra each KSM for <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">«Pioneer NFT»</g-link> cardholders</p>
@@ -759,7 +759,15 @@ query {
     background-color: var(--color-red);
     display: inline-block;
     padding-left: 0.5rem;
+    /* padding-right: 0.5rem; */
+  }
+
+  #info-subtitle a {
+    display: inline-block;
+    background-color: var(--color-green);
+    padding-left: 0.5rem;
     padding-right: 0.5rem;
+    color: var(--color-light)
   }
 
   #info h1 { margin-top: 0; margin-bottom: 0; }
