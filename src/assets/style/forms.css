@@ -1,4 +1,4 @@
-input, select{
+input, select, button{
 	appearance: none;
 
 	padding: .5rem .8rem;
@@ -48,6 +48,7 @@ input[type="checkbox"] {
 	position: relative;
 	margin-right: 1rem;
 	border-color: var(--border-color) !important;
+	text-align: center;
 }
 
 input[type="checkbox"]:checked {
@@ -57,12 +58,9 @@ input[type="checkbox"]:checked {
 
 input[type="checkbox"]:checked:after {
 	content:"✓";
-	position: absolute;
-	top: -0.6rem;
-	left: 0.1rem;
 	color: #fff;
 	font-weight: 500;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	line-height: 1;
 }
 
@@ -96,9 +94,13 @@ select.robot {
 	margin-bottom: var(--space);
 }
 
-.label {
+/* .label {
 	display: flex;
 	align-items: center;
+} */
+
+label {
+	font-size: 80%;
 }
 
 .input-signed-right {
@@ -139,4 +141,20 @@ select.robot {
 
 .ok {
 	color: var(--color-green);
+}
+
+input[type="submit"], button {
+    border-color: var(--color-blue);
+    background-color: var(--color-blue);
+    color: var(--color-light);
+    /* margin-top: var(--space); */
+	text-transform: uppercase;
+	letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
 }
