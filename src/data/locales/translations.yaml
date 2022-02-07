@@ -80,6 +80,29 @@
   zh: 机器人经济
 
 
+# UserForm
+
+- alias: Your email
+  en: Your email
+  ru: Ваш email
+
+- alias: required
+  en: required
+  ru: обязательно
+
+- alias: I agree to receive emails
+  en: I agree to receive emails
+  ru: Я даю согласие на получение email
+
+- alias: Send
+  en: Send
+  ru: Отправить
+
+- alias: Thanks, your application has been sent!
+  en: Thanks, your application has been sent!
+  ru: Спасибо, ваш запрос принят!
+
+
 # Top navigation
 
 - alias: Intro

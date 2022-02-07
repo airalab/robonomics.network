@@ -78,6 +78,13 @@ module.exports = {
       //   //   }
       //   // }
       // }
+    },
+
+    {
+      use: "gridsome-plugin-google-sheets-post",
+      options: {
+        script: process.env.FORM_SCRIPT
+      }
     }
     
   ],
