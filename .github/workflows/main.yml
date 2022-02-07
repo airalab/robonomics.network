@@ -30,6 +30,10 @@ jobs:
           sudo npm install --global @gridsome/cli
           npm ci
           gridsome build
+        env:
+          FORM_SCRIPT: ${{ secrets.FORM_SCRIPT }}
+          GRIDSOME_RECAPTCHA: ${{ secrets.GRIDSOME_RECAPTCHA }}
+
       - name: Deploy
         #uses: JamesIves/github-pages-deploy-action@3.7.1
         #with:
