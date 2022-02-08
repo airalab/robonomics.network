@@ -14,7 +14,7 @@ The participants of the winter school will have three lectures and gain a lot of
 
 <Card>
 
-### Получить уведомление о начале зимней школы 2022
+### Get notified when Winter School 2022 starts
 
 <UserForm comment="website post schedule"/>
 
