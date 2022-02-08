@@ -59,7 +59,7 @@
             <p>{{$ts('Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more')}}</p>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="/community/#token">
+          <g-link class="oldy oldy__link" to="/xrt">
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-2.png" />
             </div>
