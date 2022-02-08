@@ -14,6 +14,14 @@ The participants of the winter school will have three lectures and gain a lot of
 
 <Card>
 
+### Получить уведомление о начале зимней школы 2022
+
+<UserForm comment="website post schedule"/>
+
+</Card>
+
+<Card>
+
 ### February 22 / Lesson 1 / Broadcast through black mirror
 
 Greetings from the developers, an overview of the Robonomics platform, and the first practical task - to see your reflection in a black mirror.
