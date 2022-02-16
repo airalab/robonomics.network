@@ -3,11 +3,11 @@
    
   
     <!-- <div class="screen"> -->
-    <div class="screen" :class="BannerLink('/kusama-slot/')?'banner':''">
+    <div class="screen banner">
 
       <header class="header">
-        <g-link class="banner-top" to="/kusama-slot" v-if="!BannerLink('/kusama-slot/')">
-          <div class="layout__content">Robonomics won parachain slot on Kusama</div>
+        <g-link class="banner-top" to="https://robonomics.academy">
+          <div class="layout__content">Join online winter school of Robonomics. Start from Febrary 22, 2022</div>
         </g-link>
 
         <div class="header-content">
@@ -16,27 +16,6 @@
           </div>
 
           <div class="header-side">
-
-            <!-- <nav class="header-nav sidetext">
-                <ul>
-                  <li>
-                    <span tabindex="0">Learn</span>
-                    <ul>
-                      <li><g-link to="/intro">{{$ts('Intro')}}</g-link></li>
-                      <li><g-link to="/vision">Vision</g-link></li>
-                      <li><g-link to="https://wiki.robonomics.network">Wiki</g-link></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span tabindex="0">Learn</span>
-                    <ul>
-                      <li><g-link to="/intro">{{$ts('Intro')}}</g-link></li>
-                      <li><g-link to="/vision">Vision</g-link></li>
-                      <li><g-link to="https://wiki.robonomics.network">Wiki</g-link></li>
-                    </ul>
-                  </li>
-                </ul>
-            </nav> -->
 
             <HeaderNav/>
             <languageSwitcher/>
@@ -75,39 +54,6 @@ query {
 
 <style scoped>
 
-  /* .header-nav ul {
-    list-style: none;
-  }
-
-  .header-nav ul, .header-nav li {
-    margin: 0;
-  }
-
-  .header-nav ul li {
-    display: inline-block;
-  }
-
-  .header-nav > ul li:not(:last-child) {
-    margin-right: var(--space);
-  }
-
-  .header-nav ul ul {
-    display: none;
-  }
-
-  .header-nav ul ul li {
-    display: block;
-  }
-
-  .header-nav span {
-    cursor: pointer;
-  }
-
-  .header-nav span:focus > ul {
-    display: block;
-  } */
-
-
   .banner-top {
     height: var(--space-bannertop);
     display: flex;
@@ -120,14 +66,15 @@ query {
     text-decoration: none;
     overflow: hidden;
 
-    background-color: var(--color-green);
+    background-color: #F4E282;
     /* background-color: var(--color-red); */
-    color: var(--color-light) !important;
-    font-weight: 500;
+    color: #534E4B !important;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 90%;
+    line-height: 1;
 
-    text-shadow: 2px 2px 0px #3d8800;
     font-family: var(--font-family-code);
 
     /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
