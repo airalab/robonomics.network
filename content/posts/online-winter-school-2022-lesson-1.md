@@ -1,7 +1,7 @@
 ---
 title: "February 22 / Lesson 1 / Broadcasting through the black mirror"
 date: 2022-02-22
-published: false
+published: true
 locale: 'en'
 cover_image: ./images/online-winter-school-2022-lesson-1/cover.jpg
 description: "Greetings to all participants of the Winter School of Robonomics 2022! In the coming week, we will be holding lectures, practical exercises and have community discussions in Discord around one question: 'How can we build IoT applications based on new Internet technologies?' Let's move on to the first lesson, from which some members of our team had goosebumps..."
