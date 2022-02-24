@@ -38,6 +38,13 @@ https://telescope.merklebot.com
 
 </Card>
 
+<Card>
+
+### Вот как выглядит весь процесс:
+
+https://youtu.be/q7yaqlmrzZs
+
+</Card>
 
 <Card>
 

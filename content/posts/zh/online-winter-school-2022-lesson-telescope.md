@@ -38,6 +38,14 @@ We hope you enjoy it!
 
 </Card>
 
+<Card>
+
+### Here is how the whole process will go:
+
+https://youtu.be/q7yaqlmrzZs
+
+</Card>
+
 
 <Card>
 
