@@ -1,6 +1,6 @@
 ---
 title: "February 23 / Lesson 2 / The Robonomics Whitepaper 2022. Chapter 1. At the junction cybernetics and economics"
-date: 2022-02-23
+date: 2022-02-23T08:30:00
 published: true
 locale: 'en'
 cover_image: ./images/online-winter-school-2022-lesson-2/cover.jpg
@@ -51,6 +51,6 @@ After reading the chapter, be sure to pass the test for the second lesson in ord
 
 If you'd like to receive email notifications about lessons start and some helpful materials, feel free to subscribe:
 
-<UserForm comment="robonomics.network lesson 1"/>
+<UserForm comment="robonomics.network lesson 2"/>
 
 </Card>
