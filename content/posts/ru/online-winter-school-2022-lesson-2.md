@@ -51,6 +51,6 @@ import Button from '~/components/Button.vue'
 
 If you'd like to receive email notifications about lessons start and some helpful materials, feel free to subscribe:
 
-<UserForm comment="robonomics.network lesson 1"/>
+<UserForm comment="robonomics.network lesson 2"/>
 
 </Card>
