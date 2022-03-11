@@ -6,9 +6,9 @@
     <div class="screen banner">
 
       <header class="header">
-        <g-link class="banner-top" to="/blog">
+        <!-- <g-link class="banner-top" to="/blog">
           <div class="layout__content">Jump into the online winter school of Robonomics till Febrary 28, 2022!</div>
-        </g-link>
+        </g-link> -->
 
         <div class="header-content">
           <div class="header-logo">
