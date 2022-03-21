@@ -47,6 +47,8 @@
   zh: 诺伯特·维纳
   es: Norbert Wiener
   ko: 노버트 위너(Norbert Wiener)
+  de: Norbert Wiener
+  ja: Norbert Wiener
 
 - alias: cybernetics
   en: cybernetics
@@ -54,6 +56,8 @@
   zh: 控制论
   es: cybernetics
   ko: 사이버네틱스
+  de: Kybernetik
+  ja: Cybernetics
 
 - alias: Digital twin
   en: Digital twin
@@ -525,6 +529,7 @@
   es: Construir dApps y servicios web para IoT en la parachain de Robonomics
   ko: Robonomics Parachain에서 IoT용 DApp 및 웹 서비스 구축
   de: Aufbau von Dapps und Webservices für IoT auf Robonomics Parachain
+  ja: RobonomicsパラチェーンでIoT向けのDapps && Webサービスを構築
 
 - alias: Let us remember that the automatic machine is the precise economic equivalent of slave labor. Any labor which competes with slave labor must accept the economic consequences of slave labor.
   en: Let us remember that the automatic machine is the precise economic equivalent of slave labor. Any labor which competes with slave labor must accept the economic consequences of slave labor.
@@ -606,8 +611,8 @@
   zh: "机器人经济学的第一个工具：机器人的资金，机器人的合同"
   es: "Las primeras herramientas de la economía robótica: dinero y contratos para robots"
   ko: "로봇 경제의 첫 번째 도구: 로봇에 드는 돈, 로봇에 대한 계약"
-  de: "The first tools of the robot economy: money for robots, contracts for robots"
-  ja: ロボット経済の最初のツール：ロボットのためのお金、ロボットのための契約
+  de: "Die ersten Werkzeuge der Roboterwirtschaft: Geld für Roboter, Verträge für Roboter"
+  ja: "ロボット経済の最初のツール：ロボットのためのお金、ロボットのための契約"
 
 - alias: Software for connecting devices to a decentralized cloud
   en: Software for connecting devices to a decentralized cloud
@@ -701,6 +706,7 @@
   es: Robonomics es compatible con cientos de robots listo para usar
   ko: Robonomics로 즉시 사용할 수 있는 로봇 수백 대 지원 가능
   de: Robonomics unterstützt Hunderte von Robotern Out of the Box
+  ja: Robonomicsに含まれるもの
 
 - alias: Platform users can connect ROS-compatible robots to digital economy in a matter of minutes. For a complete list of supported robots, please follow the link
   en: Platform users can connect ROS-compatible robots to digital economy in a matter of minutes. For a complete list of supported robots, please follow the link
