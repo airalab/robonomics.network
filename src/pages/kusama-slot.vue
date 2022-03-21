@@ -65,37 +65,37 @@
        </section>
 
 
-       <hr class="no-margins"/>
+<!--       <hr class="no-margins"/>-->
 
-      <section class="layout layout__text">
-        <h2>Leadership board</h2>
+<!--      <section class="layout layout__text">-->
+<!--        <h2>Leadership board</h2>-->
 
-        <p class="hyphens">Great news, everyone! <g-link to="https://www.rmrk.app">RMRK</g-link> will reward the top 500 crowdloaners participating in Robonomic’s crowdloan. These champions will be airdropped a special Kanaria-compatible item - a child NFT that can be equipped onto one’s Kanaria bird, and may bestow advantages in RMRK’s metaverse.</p>
+<!--        <p class="hyphens">Great news, everyone! <g-link to="https://www.rmrk.app">RMRK</g-link> will reward the top 500 crowdloaners participating in Robonomic’s crowdloan. These champions will be airdropped a special Kanaria-compatible item - a child NFT that can be equipped onto one’s Kanaria bird, and may bestow advantages in RMRK’s metaverse.</p>-->
 
-        <div id="leadership-wrap">
-          <table id="leadership" class="fullwidth align-left">
-            <thead>
-              <tr>
-                <th>Contributor</th>
-                <th>Contribution amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(contributor, k) in contributors" :key="k">
-                <td data-th="Contributor">{{contributor.signer}}</td>
-                <td data-th="Contribution amount">{{contributor.total_amount}} KSM</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+<!--        <div id="leadership-wrap">-->
+<!--          <table id="leadership" class="fullwidth align-left">-->
+<!--            <thead>-->
+<!--              <tr>-->
+<!--                <th>Contributor</th>-->
+<!--                <th>Contribution amount</th>-->
+<!--              </tr>-->
+<!--            </thead>-->
+<!--            <tbody>-->
+<!--              <tr v-for="(contributor, k) in contributors" :key="k">-->
+<!--                <td data-th="Contributor">{{contributor.signer}}</td>-->
+<!--                <td data-th="Contribution amount">{{contributor.total_amount}} KSM</td>-->
+<!--              </tr>-->
+<!--            </tbody>-->
+<!--          </table>-->
+<!--        </div>-->
 
-        <div class="robogirl" aria-hidden="true">
-          <LovelyRoboGirl class="animate" v-in-viewport.once/>
-        </div>
-        
-      </section>
+<!--        <div class="robogirl" aria-hidden="true">-->
+<!--          <LovelyRoboGirl class="animate" v-in-viewport.once/>-->
+<!--        </div>-->
+<!--        -->
+<!--      </section>-->
 
-      <hr/>
+<!--      <hr/>-->
 
        <section class="layout layout__text">
          <h2>Quick intro to Robonomics</h2>
