@@ -6,9 +6,11 @@
     <div class="screen banner">
 
       <header class="header">
-        <!-- <g-link class="banner-top" to="/blog">
-          <div class="layout__content">Jump into the online winter school of Robonomics till Febrary 28, 2022!</div>
-        </g-link> -->
+        <g-link class="banner-top" to="https://twitter.com/krakenfx/status/1507081935520256007">
+          <div class="layout__content">
+            <g-image src="~/assets/images/kraken-logo.svg" />
+            Kraken has announced the listing and activated trading for native parachain XRT</div>
+        </g-link>
 
         <div class="header-content">
           <div class="header-logo">
@@ -66,9 +68,9 @@ query {
     text-decoration: none;
     overflow: hidden;
 
-    background-color: #F4E282;
+    background-color: #5848d5;
     /* background-color: var(--color-red); */
-    color: #534E4B !important;
+    color: #fff !important;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -86,6 +88,11 @@ query {
   .banner-top:hover {
     color: #fff !important;
     background-color: #AF0098;
+  }
+
+  .banner-top img {
+    display: inline;
+    max-width: 20px;
   }
   
 
