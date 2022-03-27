@@ -48,7 +48,8 @@
                         <p class="text-small">
                             <b>{{$ts('XRT is available as Robonomics parachain native token')}}:</b>
                         </p>
-                        <g-link to="https://robonomics.subscan.io" class="out">Subscan</g-link>
+                        <g-link to="https://robonomics.subscan.io" class="out">Subscan</g-link><br/>
+                        <g-link to="https://blog.kraken.com/post/13421/robonomics-xrt-trading-starts-march-24-deposit-now/" class="out">Kraken</g-link>
                     </div>
                 </section>
          
