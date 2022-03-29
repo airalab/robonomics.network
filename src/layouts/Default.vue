@@ -8,7 +8,7 @@
       <header class="header">
         <g-link class="banner-top" to="https://twitter.com/krakenfx/status/1507081935520256007">
           <div class="layout__content">
-            <g-image src="~/assets/images/kraken-logo.svg" />
+            <g-image src="~/assets/images/kraken-logo.png" />
             Kraken has announced the listing and activated trading for native parachain XRT</div>
         </g-link>
 
