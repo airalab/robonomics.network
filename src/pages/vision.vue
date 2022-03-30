@@ -316,7 +316,7 @@ elements in the chain of providing the user with services. In other words, where
           <div class="grid-2" v-in-viewport.once>
             <div>
               <h4>Polkadot</h4>
-              <p>A network of heterogeneous blockchains</p>
+              <p>A heterogeneous network of blockchains</p>
               <p><g-link to="https://wiki.polkadot.network/docs/maintain-guides-democracy">On-Chain Governance</g-link></p>
               <p>Slots Auction</p>
             </div>
