@@ -1500,7 +1500,7 @@ h4 {
 .vision-architecture .bg {
   position: absolute;
   bottom: -20px;
-  right: -10px;
+  left: 55%;
   z-index: 1;
   height: 100%;
 
@@ -1516,9 +1516,12 @@ h4 {
   .vision-architecture .bg {
     position: relative;
     bottom: -8rem;
+    left: 10%;
+    height: auto;
   }
   .vision-architecture .bg img {
-    height: 80%;
+    height: auto;
+    width: 80%;
   }
   .vision-architecture article {
     max-width: 100%;
