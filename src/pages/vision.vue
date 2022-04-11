@@ -565,7 +565,7 @@
       <hr/>
 
 
-      <section class="vision-iot-classification layout laouyt__content">
+      <section class="vision-iot-classification layout layout__content">
         <div>
           <h2>Classification <strong>of iot devices</strong></h2>
           <g-image src="~/assets/images/iot-classification.svg"/>
