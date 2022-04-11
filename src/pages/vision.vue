@@ -1512,11 +1512,23 @@ h4 {
   height: 100%;
 }
 
+@media screen and (max-width: 1000px) {
+  .vision-architecture .bg {
+    position: relative;
+    bottom: -8rem;
+  }
+  .vision-architecture .bg img {
+    height: 80%;
+  }
+  .vision-architecture article {
+    max-width: 100%;
+  }
+}
+
 /* vision digital twin */
 
 .vision-digital-twin {
   grid-template-columns: 1fr 1fr;
-  padding-left: 0 !important;
 }
 
 .vision-digital-twin img {
@@ -1525,6 +1537,12 @@ h4 {
   padding-left: var(--space);
   width: 100%;
   max-width: 1000px;
+}
+@media screen and (max-width: 1100px) {
+  .vision-digital-twin p:first-child {
+    margin-top: var(--space);
+  }
+
 }
 
 @media screen and (min-width: 1100px) {
@@ -1552,7 +1570,6 @@ h4 {
 
 .vision-iot-classification {
   grid-template-columns: 1fr 1fr;
-  padding-left: 0 !important;
 }
 
 .vision-iot-classification h3 {
