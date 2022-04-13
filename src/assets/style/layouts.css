@@ -60,6 +60,10 @@
   .section__blue {
 	background-color: var(--color-blue);
   }
+
+  .section__blue-lightest {
+	  background-color: var(--color-blue-lightest);
+  }
   
   .section__darkgray {
 	background-color: var(--color-darkgray);
