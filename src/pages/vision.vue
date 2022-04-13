@@ -169,7 +169,7 @@
 
       <hr/>
 
-       <section class="vision-fathers layout layout__content">
+      <section class="vision-fathers layout layout__content">
 
         <div class="vision-fathers-image">
           <h2>Self-regulating systems</h2>
@@ -424,26 +424,6 @@
               <g-image src="~/assets/images/vision-chains-gas-payment.svg"/>
             </div>
           </div>
-<!--          <div class="text-col-3 hyphens">-->
-
-<!--            <p>You may notice that the comparison between Ethereum and Polkadot does not show a clear superiority of one-->
-<!--              technology over another. Both of these approaches are extremely interesting for Robonomics. We would like-->
-<!--              to support each of these networks and give the choice to users of Robonomics.</p>-->
-<!--            <p><b>Strong claim:</b> we hope Ethereum 2.0 launch will resolve the issue of high transaction fee. By 2021-->
-<!--              developers of Robonomics are sure this is one of the crucial details for increasing the capacity of the-->
-<!--              network.</p>-->
-<!--            <p>At the same time Robonomics parachain in Kusama or Polkadot enables us to use functions that are not-->
-<!--              available to smart contract developers in Ethereum.-->
-<!--              The key difference for developers is that in Polkadot/Kusama there is a possibility to customize the-->
-<!--              communication protocol and thus have access to global variables.-->
-<!--            </p>-->
-<!--            <p>An interesting example: when we were finishing the implementation of the robot economy protocol on top of-->
-<!--              Ethereum, one of the tasks was to determine the gas consumed to execute the transaction. It is extremely-->
-<!--              difficult to calculate the consumed gas inside a smart contract, although any wallet could calculate the-->
-<!--              required gas without any problems - the reason for the inaccessibility of the communication protocol-->
-<!--              itself during the execution of the smart contract code in the EVM.</p>-->
-
-<!--          </div>-->
         </div>
       </section>
 
@@ -476,7 +456,6 @@
 
 
       </section>
-
 
       <section class="vision-architecture section__solid">
         <div class="layout layout__content">
@@ -564,7 +543,6 @@
 
       <hr/>
 
-
       <section class="vision-iot-classification layout layout__content">
         <div>
           <h2>Classification <strong>of iot devices</strong></h2>
@@ -606,6 +584,232 @@
         </div>
       </section>
 
+      <hr/>
+
+      <section class="vision-iot-providers layout layout__content">
+        <div class="grid-2">
+          <div>
+            <h3>internet of things providers</h3>
+            <article class="hyphens">
+              <g-image src="~/assets/images/vision-iot-providers.svg"/>
+              <p>
+                The main job of IoT providers is providing users with remote access to data and analytics, as well as
+                management of smart devices over the Internet. The main criteria for the quality of the provider is
+                security of operations, stability of connection and availability of the provider from anywhere in the
+                world.</p>
+              <p>The standard scheme for working with an IoT provider includes: installing software on a compatible
+                with the cloud smart device, setting up cloud-side management services after the first successful
+                connection of a device, connection of various kinds of analytical services.</p>
+            </article>
+          </div>
+          <div>
+            <h3>digital twins are the heart of the internet of things</h3>
+            <article class="hyphens">
+              <g-image src="~/assets/images/vision-digital-twin-small.svg"/>
+              <p>Speaking of digital twins, it should be noted that architecturally their implementation is required;
+                as a refusal to give the user direct access to control devices and change their states. Out of the most
+                obvious reasons for rejection are, first, the presence of their own requirements and conditions in the
+                devices just before the launch. Second, if multiple user devices must access a single data source,
+                giving personalized control to each user can be critical. Lastly, it is extremely useful to keep the
+                last actual state of the device available in case it goes out of operation.</p>
+              <p>As a result, we have a separation of the loop of information exchange with the user and the actual
+                generation of actual data by the sensors. To illustrate this principle, below is the process of the
+                user working with an IoT device using a digital twin.</p>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <hr/>
+
+      <section class="vision-data-flows layout layout__content">
+        <article class="hyphens">
+          <h3>iot data flows in cloud services</h3>
+          <div class="grid-2">
+            <g-image src="~/assets/images/vision-data-flows-1.svg"/>
+            <div>
+              <p>1.</p>
+              <p>1. Input values for cloud triggers. For example, the cloud service sends various notifications to the
+                user in the event of a report from a car alarm sensor about a strike.</p>
+            </div>
+          </div>
+          <div class="grid-2">
+            <g-image src="~/assets/images/vision-data-flows-2.svg"/>
+            <div>
+              <p>2.</p>
+              <p>Output data for complex analytics that cannot be produced at the edge level. For example, when
+                processing video for face recognition in a crowd.</p>
+            </div>
+          </div>
+          <div class="grid-2">
+            <g-image src="~/assets/images/vision-data-flows-3.svg"/>
+            <div>
+              <p>3.</p>
+              <p>The basis for forming a digital twin of the device in order to create a cast of its state. For
+                example, at the user’s request in the mobile app or on the website.</p>
+            </div>
+
+          </div>
+        </article>
+      </section>
+
+      <hr/>
+
+      <section class="vision-data-flows layout layout__content">
+        <article class="hyphens">
+          <h3>popular examples of iot solutions</h3>
+          <div class="grid-2">
+            <g-image src="~/assets/images/vision-data-flows-4.svg"/>
+            <div>
+              <p>1.</p>
+              <p>A typical smart home system provides a wide range of options for controlling your living space. With its help you can remotely control the door locks, setting up one-time or regular access to the room as family and friends, and for maintenance or delivery personnel. With numerous sensors and recording devices, the system is able to include video recording when triggering motion sensors, autonomously make decisions to shut off the water supply when a leak is detected in the water system, start a scheduled robot vacuum cleaner, providing a cleaning report to the user app, change the room temperature to the optimal value depending on your schedule.</p>
+            </div>
+          </div>
+          <div class="grid-2">
+            <g-image src="~/assets/images/vision-data-flows-5.svg"/>
+            <div>
+              <p>2.</p>
+              <p>Smart cars. Providing the car’s onboard electronics with access to mobile Internet, the user gets access to remote control of various car functions directly from his smartphone: opening doors, turning on the air conditioner, controlling the headlights. If such cars are used for carsharing, then you can create an interactive map of the location of cars with their status, the remaining fuel, etc. for the clients of this service.</p>
+            </div>
+          </div>
+          <div class="grid-2">
+            <g-image src="~/assets/images/vision-data-flows-6.svg"/>
+            <div>
+              <p>3.</p>
+              <p>Smart equipment leasing system. The company installs robotic manipulators on the conveyor line under a contract with payment for the number of operations or for the time of the robot. Manipulators regularly provide a log of operations performed, errors and warnings. The robot’s leasing fee is calculated on the basis of this, as well as the vendor’s predictive maintenance of the robots.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <hr/>
+
+      <section class="vision-current-problems layout layout__content">
+        <article class="hyphens">
+          <div>
+            <h2><strong>current problems</strong><br/> of building IoT solutions</h2>
+            <h3>global availability</h3>
+            <article class="hyphens">
+              <p>The standard client-server architecture requires specifying endpoints when routing messages from IoT devices. Thus, during the life of a smart device, the lack of connection will mean a limitation in the ability to control and interact with the device.</p>
+              <p>For example, the trade war between China and the United States is already a sword of Damocles hanging over thousands of consumers of Chinese smart appliances in the United States and vice versa. At any moment, the blocking of Xiaomi servers by the U.S. authorities could affect users of devices that connect to the manufacturer’s cloud services.</p>
+              <p>Being in the immediate vicinity of an IoT device, you can’t control it from a mobile app if there is no connection to the servers, through which the user authentication and telemetry collection from the devices themselves are provided. That is, the device is actually controlled by the cloud, not the user.</p>
+            </article>
+            <h3>CYBERSECURITY</h3>
+            <article class="hyphens">
+              <p>The most important reason for the low cybersecurity of most IoT solutions stems from the problematic legacy of cloud client-server architecture. For example, the most common smart home architecture right now is usually an IoT hub, connected to a cloud service. Thus, a typical IoT system is a central control element connected to multiple external systems. Certainly, the cloud service is more secure than low-level devices, but the consolidation of centralized control over hundreds of thousands of such systems makes any security breaches and leaks a massive disaster.</p>
+              <p>The cloud service servers are subject to all the typical cybersecurity problems: network attacks, DoS attacks (driving the system to failure), malicious modifications, user session hijacking, etc. But strong threats also include unintentional problems such as design errors, misuse or natural disasters that cause servers to fail. Also another definitely important point is the need in principle to trust the cloud and the people who maintain it.</p>
+              <p>All of this is exacerbated by the scale of IoT solutions. The number of IoT devices belonging to the same system can exceed hundreds or thousands, and at the same time by their nature IoT devices have less computing power, which makes it much more difficult to deploy firewalls and anti- viruses for them. Unfortunately the most pernicious factor is the fact that IoT devices are functioning CPSs, so threats to cybersecurity a real ready manifested at the physical level.</p>
+            </article>
+          </div>
+          <div>
+            <h3>data privacy</h3>
+            <article class="hyphens">
+              <p>The privacy point needs to be separated from cybersecurity, because this problem is specific to IoT systems. Due to the large number and varied device types that are much more integrated into the physical world than just computers and smartphones, the range of types of private data is multiplied. It’s no longer just GPS location, shopping records, financial transactions and photos, but also a permanent record of video and conversations, voice prints, health conditions and even a list of a person’s habits. Among the types of threats related to privacy are:</p>
+              <p>The creepiest part is that users have little or no awareness that they are giving up their privacy because they have almost no idea what data is being collected and how it is being used. The threat to privacy grows not only from intruders, but also from organizations and government agencies precisely because of this. The cloud IoT services typically require maximum data transfer from devices, and there are no ways to prohibit or narrow data transfer («Accept the Terms or Piss Off»). Moreover, despite the fact that the collected data is an asset and has real value, the person it is collected from is not only denied the right to actively dispose of that data, but even is denied any compensation for their own data’s collection and usage.</p>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="vision-main-tasks section__solid section__blue-lightest">
+        <div class="layout layout__content">
+          <article class="hyphens">
+            <h2><strong>main tasks</strong><br/>of robonomics architecture</h2>
+            <p>Building on the achievements and challenges of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. Below are the main tasks that Robonomics is aimed at:</p>
+            <div>
+              <h3>1 >> </h3>
+              <h3>MANAGING AN IOT DEVICE USING A DECENTRALIZED CLOUD</h3>
+            </div>
+            <p>Blockchain networks have all the capabilities to provide the highest degree of security for running a device and getting its telemetry. The interaction with the device can actually be described by changing the state of the digital twin stored in the blockchain network and sending information about these changes. In the case of a permissionless blockchain, we can talk about the guarantees of global availability of providers for IoT, as well as a high level of protection of digital twin data from unwanted changes.</p>
+            <div>
+              <h3>2 >> </h3>
+              <h3>PERFORMING TECHNICAL AND ECONOMIC TRANSACTION BETWEEN PEOPLE AND MACHINES</h3>
+            </div>
+            <p>Thanks to the mechanism of cryptocurrencies and smart contracts, we can provide access to automated systems directly to digital markets. For example, Ethereum already implements most of the basic tools of economic activity that can be used in the operation of autonomous devices. The applications created for the interaction between the end user and the IoT device will be much more effective if the terms of service and payment for it are inseparable from the launch parameters of the device.</p>
+            <div>
+              <h3>3 >> </h3>
+              <h3>ERVERLESS IOT APPLICATIONS FOR USERS</h3>
+            </div>
+            <p>Modern advances in web3-technology can solve the issue of user privacy. With web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.</p>
+          </article>
+          <div>
+            <g-image src="~/assets/images/vision-main-tasks.svg"/>
+            <p>Robonomics is a decentralized cloud for digital twins of IoT devices. Robonomics supports the
+              techno-economic format for communication, as well as providing private applications for users</p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="no-margins"/>
+
+      <section class="vision-basic-components section__solid section__blue-lightest">
+        <div class="layout layout__content">
+          <h2><strong>basic components</strong><br/>of robonomics architecture</h2>
+          <div class="grid-2">
+            <div class="grid-3">
+              <g-image src="~/assets/images/vision-basic-components-1.svg"/>
+              <g-image src="~/assets/images/vision-basic-components-2.svg"/>
+              <g-image src="~/assets/images/vision-basic-components-3.svg"/>
+              <div>
+                <div><h2>1.</h2></div>
+                <p>A human interface to access the system</p>
+              </div>
+              <div>
+                <div><h2>2.</h2></div>
+                <p>A communication protocol</p>
+              </div>
+              <div>
+                <div><h2>3.</h2></div>
+                <p>A machine interface</p>
+              </div>
+            </div>
+            <article class="hyphens">
+              <div>
+                <h3>1 >> </h3>
+                <h3>human interface:</h3>
+              </div>
+              <p>We propose the use of decentralized applications (dapps) as the main way to connect users to control smart devices over the Internet. Thus, we will be able to provide the most secure (in terms of data) user interface to the system, which will be able to simultaneously work in the conditions of the local city network, and through a common global network.</p>
+              <div>
+                <h3>2 >> </h3>
+                <h3>communication protocol:</h3>
+              </div>
+              <p>Its role is played by the Robonomics network, a specification developed by the project team that implements a decentralized network of providers that provide the transmission, processing and storage of information needed to run IoT devices. In fact, it is an implementation of a function-specific node for IPFS, Ethereum, and Polkadot networks.</p>
+              <div>
+                <h3>3 >> </h3>
+                <h3>machine interface:</h3>
+              </div>
+              <p>We have chosen the most well-known robotics framework called Robot Operating System Robot Operating System (ROS) as the standard interface for integrating any compatible cyber-physical system. Robonomics supports several uses for ROS. The implementation of Robonomics for the Ethereum network is in the form of the ROS package robonomics_comm. For the ROS 2 architecture, we implement support for Robonomics as a middleware layer (see «Robonomics as ROS 2 Middleware» for details). When the use of ROS is redundant (e.g., when working with IoT devices), a Python robonomics-interface module has been developed. It helps to access the functions of Robonomics natively and works with both local and private and remote and public nodes.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <hr class="no-margins"/>
+
+      <section class="vision-simple-representation section__solid section__blue-lightest">
+        <div class="layout layout__content">
+          <h2><strong>A simple representation</strong><br/>of robonomics architecture</h2>
+          <div class="grid-2">
+            <div>
+              <p>Here is a general diagram of the complete device startup cycle using the Robonomics platform:</p>
+              <ol>
+                <li>The user’s decentralized application sends a request for a device control function through the Robonomics network.</li>
+                <li>The Robonomics network provides request translation using libp2p and captures events in Ethereum blockchain or Robonomics parachain.</li>
+                <li>The control of the device is provided by a decentralized network, which is guaranteed to store the necessary information to run the IoT device.</li>
+                <li>The IoT device independently receives information from Ethereum and Polkadot networks about the current state of the digital twin. This ensures that the device can be started safely only after the technical and economic start-up parameters have been settled.</li>
+                <li>As a result of the operation, the IoT device publishes a log of completed operations, which can be used as evidence of the service provided or for debugging errors.</li>
+                <li>The log is transformed into a report for the user and becomes available in his dapp.</li>
+              </ol>
+            </div>
+            <g-image src="~/assets/images/vision-simple-representation.svg"/>
+          </div>
+
+        </div>
+      </section>
+
+
+      
       <section class="section section__solid section__darkgray">
         <div class="vision-books layout layout__content">
           <div>
@@ -1373,7 +1577,7 @@ h4 {
   display: block;
   content: '';
   width: 200%;
-  height: 2px;
+  height: 1px;
   background-image: linear-gradient(to right, transparent, transparent 50%, #A6FCF6 50%, #A6FCF6);
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -1449,25 +1653,47 @@ h4 {
 .vision-chains .grid-2 p {
   text-transform: none;
   margin-top: 1rem;
-  /*font-size: 80%;*/
 }
-
-.vision-chains .grid-2.in-viewport div:first-child:after {
-  animation: ScaleY 0.4s ease-out 0.4s forwards;
-}
-
 
 @media screen and (max-width: 570px) {
   .vision-chains .grid-2 {
     grid-template-columns: 1fr;
   }
 
+  .vision-chains .grid-2:after {
+    display: none;
+  }
+
+
+  .vision-chains .grid-2:nth-child(1) div:first-child:after {
+    display: none;
+  }
+
   .vision-chains .grid-2 div, .vision-chains .grid-2 div h4 {
     text-align: center !important;
   }
 
-  .vision-chains .grid-2 div:after {
+  .vision-chains .grid-2 div:last-child:after {
     display: none !important;
+  }
+
+  .vision-chains .grid-2:not(:first-child) div:nth-child(odd) img {
+    margin-right: 50%;
+    height: auto;
+    width: 60%;
+  }
+  .vision-chains .grid-2:not(:first-child) div:nth-child(odd) p {
+    text-align: left;
+  }
+
+  .vision-chains .grid-2:not(:first-child) div:nth-child(even) img {
+    margin-left: 40%;
+    height: auto;
+    width: 60%;
+  }
+
+  .vision-chains .grid-2:not(:first-child) div:nth-child(even) p {
+    text-align: right;
   }
 
 }
@@ -1541,22 +1767,32 @@ h4 {
   width: 100%;
   max-width: 1000px;
 }
+
+@media screen and (max-width: 1000px) {
+  .vision-digital-twin {
+    grid-template-columns: 400px 1fr;
+    column-gap: calc(var(--space) * 2);
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .vision-digital-twin p:first-child {
     margin-top: var(--space);
   }
-
 }
 
 @media screen and (min-width: 1100px) {
   .vision-digital-twin {
     display: grid;
-    grid-template-columns: 700px 1fr;
+    grid-template-columns: 500px 1fr;
     column-gap: calc(var(--space) * 2);
   }
 }
 
 @media screen and (min-width: 1500px) {
+  .vision-digital-twin {
+    grid-template-columns: 700px 1fr;
+  }
   .vision-digital-twin article {
     column-count: 2;
   }
@@ -1576,7 +1812,7 @@ h4 {
 }
 
 .vision-iot-classification h3 {
-  font-size: 1.9rem;
+  font-size: 1.75rem;
   font-weight: 700;
   padding-right: 10px;
   padding-bottom: 5px;
@@ -1592,7 +1828,6 @@ h4 {
 .vision-iot-classification > div > img {
   padding-top: calc(var(--space) * 4);
   width: 80%;
-
 }
 
 .vision-iot-classification div:nth-child(2) div {
@@ -1611,16 +1846,350 @@ h4 {
   text-align: left;
 }
 
+@media screen and (max-width: 800px) {
 
+  .vision-iot-classification > div > img {
+    padding-top: calc(var(--space) * 2);
+    width: 80%;
+  }
+
+  .vision-iot-classification div:nth-child(2) div {
+    grid-template-columns: 1fr;
+  }
+  .vision-iot-classification div:nth-child(2) > div img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: var(--space);
+    padding-bottom: var(--space);
+  }
+}
 
 @media screen and (min-width: 1100px) {
   .vision-iot-classification {
     display: grid;
-    /*grid-template-columns: 500px 1fr;*/
   }
 }
 
 
+/* IoT providers */
+
+.vision-iot-providers h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+  display: inline;
+  background-color: var(--color-blue-lighter);
+}
+
+.vision-iot-providers article {
+  margin-top: var(--space);
+  column-count: 2;
+}
+
+.vision-iot-providers img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.vision-iot-providers .grid-2 {
+  margin-top: var(--space);
+}
+
+.vision-iot-providers .grid-2 div {
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .vision-iot-providers > .grid-2 article {
+    column-count: 1;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .vision-iot-providers > .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* vision-data-flows */
+
+.vision-data-flows h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+  display: inline;
+  background-color: var(--color-blue-lighter);
+}
+
+.vision-data-flows div {
+  text-align: left;
+}
+
+.vision-data-flows article .grid-2 img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+.vision-data-flows article .grid-2 div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space);
+}
+.vision-data-flows h3 ~ .grid-2 {
+  padding-top: var(--space);
+}
+
+.vision-data-flows article .grid-2 {
+  grid-template-columns: 1fr 3fr;
+}
+
+@media screen and (max-width: 1100px) {
+  .vision-data-flows article .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .vision-data-flows article .grid-2 > img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+  }
+
+}
+
+/* vision-current-problems */
+
+.vision-current-problems div {
+  text-align: left;
+}
+
+.vision-current-problems h2 {
+  text-align: left;
+}
+
+.vision-current-problems h3 {
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1.3;
+  display: inline-block;
+  background-color: var(--color-orange);
+  color: var(--color-light);
+}
+
+.vision-current-problems article {
+  column-count: 2;
+}
+
+@media screen and (max-width: 1100px) {
+  .vision-current-problems article {
+    column-count: 1;
+  }
+
+}
+
+
+/* vision main tasks */
+
+.vision-main-tasks {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: var(--space);
+}
+
+.vision-main-tasks article {
+  column-count: 2;
+  gap: var(--space);
+}
+
+.vision-main-tasks p:not:nth-child(1) {
+  margin-top: var(--space);
+  margin-left: calc(var(--space) * 3);
+}
+
+.vision-main-tasks p {
+  margin-left: 0;
+}
+
+.vision-main-tasks div {
+  text-align: left;
+}
+
+.vision-main-tasks h2, .vision-main-tasks h3 {
+  text-align: left;
+}
+
+.vision-main-tasks h3 {
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: calc(var(--space) * 0.15);
+  font-weight: 700;
+}
+
+.vision-main-tasks div h3:first-child {
+  white-space: nowrap;
+}
+
+.vision-main-tasks div h3:not:first-child {
+  width: 100%;
+}
+
+.vision-main-tasks div ~ p {
+  padding-left: calc(var(--space) * 3);
+}
+
+.vision-main-tasks article div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space);
+  background-color: var(--color-light);
+}
+
+.vision-main-tasks article ~ div {
+  margin-top: var(--space);
+  width:100%;
+  position: relative;
+}
+
+.vision-main-tasks article ~ div > img {
+  width: 100%;
+}
+
+.vision-main-tasks article ~ div > p {
+  position: absolute;
+  color: var(--color-light);
+  width: 26%;
+  height: 25%;
+  left: 37.5%;
+  top: 55%;
+}
+
+@media screen and (max-width: 1100px) {
+  .vision-main-tasks article {
+    column-count: 1;
+  }
+}
+
+@media screen and (min-width: 890px) and (max-width: 1200px){
+  .vision-main-tasks article ~ div > p {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .vision-main-tasks article ~ div > p {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 810px){
+  .vision-main-tasks article ~ div > p {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .vision-main-tasks article ~ div > p {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .vision-main-tasks article ~ div > p {
+    font-size: 35%;
+  }
+}
+
+
+/* basic components */
+
+.vision-basic-components h2, .vision-basic-components h3 {
+  text-align: left;
+}
+
+.vision-basic-components h3 {
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: calc(var(--space) * 0.15);
+  font-weight: 700;
+}
+
+.vision-basic-components article div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space);
+  background-color: var(--color-light);
+}
+
+.vision-basic-components .grid-3 img {
+  width: 90%;
+  margin: auto;
+}
+
+.vision-basic-components .grid-3 div div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-light);
+  border-radius: 50%;
+  position: relative;
+}
+
+.vision-basic-components .grid-3 div div h2 {
+  position: absolute;
+  white-space: nowrap;
+  left: 15px;
+  letter-spacing: -0.3rem;
+}
+
+.vision-basic-components .grid-3 div div ~ p {
+  margin-top: calc(var(--space) * 0.5);
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .vision-basic-components .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .vision-basic-components .grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* simple representation */
+
+.vision-simple-representation h2,
+.vision-simple-representation h3,
+.vision-simple-representation li,
+.vision-simple-representation p {
+  text-align: left;
+}
+
+.vision-simple-representation li {
+  padding-left: var(--space);
+}
+
+.vision-simple-representation .grid-2 {
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.vision-simple-representation img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .vision-simple-representation .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ----- */
 
