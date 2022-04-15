@@ -9,7 +9,7 @@
 
     <div class="page vision">
 
-      <section class="vision-banner page-banner section section__solid section__blue">
+      <section class="vision-banner page-banner section section__solid section__blue animate-inside" v-in-viewport.once>
         <div class="vision-logo" v-in-viewport.once>
           <g-image class="logo" alt="Robonomics logo" src="~/assets/images/robonomics-logo.svg" />
           <g-image class="earth" alt="Earth" src="~/assets/images/earth.png" />
@@ -41,7 +41,7 @@
         <div class="vision-decortext right">At the frontier of cybernetics and economics</div>
       </section>
 
-      <section class="vision-iot layout layout__content grid-2">
+      <section class="vision-iot layout layout__content grid-2 animate-inside" v-in-viewport.once>
         <div class="text-col-2">
           <h2>Build your IoT services on Robonomics platform <sup>*</sup></h2>
           <p><i>* taking full advantage of decentralized architecture</i></p>
@@ -65,7 +65,7 @@
         </div>
       </section>
 
-      <section class="vision-beginning section__solid">
+      <section class="vision-beginning section__solid animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <div class="hyphens vision-beginning-text">
             <h2>From smart contracts to cross chain IoT platform</h2>
@@ -83,7 +83,7 @@
         <g-image aria-hidden="true" class="bg" alt="" src="~/assets/images/wintercoding.png" />
       </section>
 
-      <section class="vision-cybernetics section__solid">
+      <section class="vision-cybernetics section__solid animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <article>
             <h2>At the frontier of cybernetics and economics</h2>
@@ -105,7 +105,7 @@
         </div>
       </section>
 
-      <section class="vision-fathers layout layout__content">
+      <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
           <h2>Move Towards the Factory of the Future</h2>
@@ -141,7 +141,7 @@
 
       <hr/>
 
-      <section class="vision-fathers vision-cps layout layout__content">
+      <section class="vision-fathers vision-cps layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
           <h2>Automation in the supply chain</h2>
@@ -169,7 +169,7 @@
 
       <hr/>
 
-      <section class="vision-fathers layout layout__content">
+      <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
           <h2>Self-regulating systems</h2>
@@ -206,7 +206,7 @@
 
       </section>
 
-      <section class="vision-industry40 section__solid section__lightblue">
+      <section class="vision-industry40 section__solid section__lightblue animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <div>
             <h2>
@@ -270,7 +270,7 @@
         </div>
       </section>
 
-      <section class="vision-bitcoin">
+      <section class="vision-bitcoin animate-inside" v-in-viewport.once>
         <div class="layout layout__content hyphens text-col-3">
 
           <p>One of the examples of our experiments: negotiating road space and right of way payments for autonomous
@@ -296,7 +296,7 @@
 
       <hr/>
 
-      <section class="layout layout__content">
+      <section class="layout layout__content animate-inside" v-in-viewport.once>
         <div class="text-col-3">
           <h2>
             <b>Smart contracts</b><br/>
@@ -348,7 +348,7 @@
 
       <hr/>
 
-      <section class="layout layout__content">
+      <section class="layout layout__content animate-inside" v-in-viewport.once>
         <div class="text-col-3">
           <h2>
             <b>Parachains</b><br/>
@@ -381,7 +381,7 @@
         </div>
       </section>
 
-      <section class="vision-chains section section__solid">
+      <section class="vision-chains section section__solid animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
 
           <div class="grid-2" v-in-viewport.once>
@@ -427,7 +427,7 @@
         </div>
       </section>
 
-      <section class="vision-fathers layout layout__content">
+      <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
           <h2>open questions of teleology</h2>
@@ -457,7 +457,7 @@
 
       </section>
 
-      <section class="vision-architecture section__solid">
+      <section class="vision-architecture section__solid animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <article>
             <h2>robonomics architecture</h2>
@@ -481,7 +481,7 @@
         </div>
       </section>
 
-      <section class="vision-fathers layout layout__content">
+      <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
           <h2>Overview of the state of the internet of things <br/> <strong>(IOT)</strong></h2>
@@ -515,7 +515,7 @@
 
       <hr/>
 
-      <section class="vision-digital-twin layout layout__content">
+      <section class="vision-digital-twin layout layout__content animate-inside" v-in-viewport.once>
         <g-image src="~/assets/images/vision-digital-twin.svg"/>
         <article class="hyphens">
           <p>The development and application of the Internet of Things has shown that solving typical problems is not
@@ -543,7 +543,7 @@
 
       <hr/>
 
-      <section class="vision-iot-classification layout layout__content">
+      <section class="vision-iot-classification layout layout__content animate-inside" v-in-viewport.once>
         <div>
           <h2>Classification <strong>of iot devices</strong></h2>
           <g-image src="~/assets/images/iot-classification.svg"/>
@@ -586,7 +586,7 @@
 
       <hr/>
 
-      <section class="vision-iot-providers layout layout__content">
+      <section class="vision-iot-providers layout layout__content animate-inside" v-in-viewport.once>
         <div class="grid-2">
           <div>
             <h3>internet of things providers</h3>
@@ -623,7 +623,7 @@
 
       <hr/>
 
-      <section class="vision-data-flows layout layout__content">
+      <section class="vision-data-flows layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
           <h3>iot data flows in cloud services</h3>
           <div class="grid-2">
@@ -656,7 +656,7 @@
 
       <hr/>
 
-      <section class="vision-data-flows layout layout__content">
+      <section class="vision-data-flows layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
           <h3>popular examples of iot solutions</h3>
           <div class="grid-2">
@@ -685,7 +685,7 @@
 
       <hr/>
 
-      <section class="vision-current-problems layout layout__content">
+      <section class="vision-current-problems layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
           <div>
             <h2><strong>current problems</strong><br/> of building IoT solutions</h2>
@@ -712,7 +712,7 @@
         </article>
       </section>
 
-      <section class="vision-main-tasks section__solid section__blue-lightest">
+      <section class="vision-main-tasks section__solid section__blue-lightest animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <article class="hyphens">
             <h2><strong>main tasks</strong><br/>of robonomics architecture</h2>
@@ -743,7 +743,7 @@
 
       <hr class="no-margins"/>
 
-      <section class="vision-basic-components section__solid section__blue-lightest">
+      <section class="vision-basic-components section__solid section__blue-lightest animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <h2><strong>basic components</strong><br/>of robonomics architecture</h2>
           <div class="grid-2">
@@ -787,7 +787,7 @@
 
       <hr class="no-margins"/>
 
-      <section class="vision-simple-representation section__solid section__blue-lightest">
+      <section class="vision-simple-representation section__solid section__blue-lightest animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <h2><strong>A simple representation</strong><br/>of robonomics architecture</h2>
           <div class="grid-2">
