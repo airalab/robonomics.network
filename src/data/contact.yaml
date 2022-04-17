@@ -7,15 +7,15 @@
       text: 'Follow us'
 
 - title: 'Discord'
-  description: 'Technical questions & other insides.'
+  description: 'Chat with us and our community. Feel free to ask any questions and discuss your suggestions.'
   img: 'logos/discord.png'
   buttonicon: '+'
   options:
-    - link: 'https://discord.com/invite/5UWNGNaAUf'
+    - link: 'https://discord.gg/JpaN2XAmqY'
       text: 'Join chat'
 
 - title: 'Telegram chat'
-  description: 'Chat with us and our community. Feel free to ask any questions and discuss your suggestions.'
+  description: 'Local communities & news. You are welcome!'
   img: 'telegram.png'
   buttonicon: '+'
   options:
@@ -36,13 +36,13 @@
     - link: 'https://riot.im/app/#/room/#robonomics:matrix.org'
       text: 'Join chat'
 
-- title: 'Forum'
-  description: 'Discuss any topic related to Robonomics'
-  img: 'forum.png'
-  buttonicon: '↗'
-  options:
-    - link: 'https://discourse.robonomics.network'
-      text: 'Visit forum'
+# - title: 'Forum'
+#   description: 'Discuss any topic related to Robonomics'
+#   img: 'forum.png'
+#   buttonicon: '↗'
+#   options:
+#     - link: 'https://discourse.robonomics.network'
+#       text: 'Visit forum'
 
 
 - title: 'Medium Blog'
