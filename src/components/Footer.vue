@@ -25,6 +25,14 @@
           </ul>
         </div>
 
+        <div>
+          <h4>Stay tunned</h4>
+          <ul class="animate-inside" v-in-viewport.once>
+            <li><g-link :to="$static.metadata.discord">Discord</g-link></li>
+            <li><g-link :to="$static.metadata.twitter">Twitter</g-link></li>
+          </ul>
+        </div>
+
         <!-- <div>
           <ul class="animate-inside" v-in-viewport.once>
             <li><a @click.prevent="loadPage('/community/#docs')" href="/community/#docs">Documents</a></li>
@@ -41,6 +49,16 @@
     </div>
   </footer>
 </template>
+
+
+<static-query>
+query {
+  metadata {
+    discord,
+    twitter
+  }
+}
+</static-query>
 
 
 <style scoped>
