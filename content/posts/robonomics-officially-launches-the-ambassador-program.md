@@ -13,7 +13,7 @@ import RoboListItem from '~/components/blocks/ListItem.vue'
 
 Over the past years, the Robonomics project has been developing dynamically. At the moment, the Robonomics network itself has been developed, there are ready-made usecases, a lot of technical information around the network, educational content for the community, and much more. The concept of the Robonomics network is quite extensive and complex, so we need people with differing experience and backgrounds to explain and promote the essence of Robonomics to a wider audience around the world. The Robonomics team invites everyone who is passionate about the idea of the project, and is ready to contribute to the development and promotion of Robonomics in the international arena for cooperation.
 
-If you are tech-inspired (polkadot/ethereum/ipfs/ros etc), then Robonomics is ready to offer you the following directions of work:
+If you are inspired by the industry of modern Internet technologies such as Polkadot, Ethereum, IPFS, ROS etc., then Robonomics is ready to offer you the following directions of work:
 
 <robo-list>
 
