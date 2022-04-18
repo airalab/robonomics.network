@@ -11,9 +11,9 @@ import Card from '~/components/TextCard.vue'
 import RoboList from '~/components/blocks/List.vue'
 import RoboListItem from '~/components/blocks/ListItem.vue'
 
-In den letzten Jahren hat sich das Robonomics-Projekt dynamisch entwickelt. Unter anderem ist das Robonomics-Netz entwickelt worden, es gibt fertige Anwendungsfälle, eine Menge technischer Informationen rund um das Netzwerk, Bildungsinhalte für die Community und vieles mehr. Das Konzept des Robonomics-Netzwerks ist recht umfangreich und komplex, daher brauchen wir Menschen mit unterschiedlichen Erfahrungen und Hintergrundkenntnisse, um die Essenz von Robonomics einem breiteren Publikum auf der ganzen Welt zu erklären und zu vermitteln. Das Robonomics-Team lädt alle ein, die sich für die Idee des Projekts begeistern und bereit sind, zur Entwicklung und Förderung von Robonomics in der internationalen Arena ihren Beitrag zu leisten.
+In den letzten Jahren hat sich das Robonomics-Projekt dynamisch entwickelt. Unter anderem ist das Robonomics-Netz entwickelt worden, es gibt fertige Anwendungsfälle, eine Menge technischer Informationen rund um das Netzwerk, Bildungsinhalte für die Community und vieles mehr. Das Konzept des Robonomics-Netzwerks ist recht umfangreich und komplex, daher brauchen wir jene mit unterschiedlichen Erfahrungen und Hintergrundkenntnisse um die Essenz von Robonomics einem breiteren Publikum auf der ganzen Welt zu erklären und zu vermitteln. Das Robonomics-Team lädt alle ein die sich für die Idee des Projekts begeistern und bereit sind, zur Entwicklung und Förderung von Robonomics in der internationalen Arena ihren Beitrag zu leisten.
 
-Wenn Sie ein "Geek" sind - ein Entwickler aus der technischen Welt (polkadot/ethereum/ipfs/ros etc), dann ist Robonomics bereit, Ihnen die folgenden Arbeitsbereiche anzubieten:
+Wenn ihr euch für moderne Internettechnologien wie Polkadot, Ethereum, IPFS, ROS usw. begeistert, dann können wir von Robonomics folgende Arbeitsbereiche anbieten:
 
 <robo-list>
 
@@ -22,7 +22,7 @@ Arbeit mit technischer Dokumentation, Anleitungen und Tutorials
 </robo-list-item>
 
 <robo-list-item>
-Organisation von Veranstaltungen - lokale Online-/Offline-Meetups, Teilnahme an thematischen Konferenzen im Namen von Robonomics, Organisation von Hackathons, die auf Robonomics-Technologien basieren, Teilnahme an Hackathons Dritter im Namen von Robonomics
+Organisation von Veranstaltungen - lokale Online-/Offline-Meetups, Teilnahme an thematischen Konferenzen im Namen von Robonomics, Organisation von Hackathons die auf Robonomics-Technologien basieren, Teilnahme an Hackathons Dritter im Namen von Robonomics
 </robo-list-item>
 
 <robo-list-item>
@@ -39,6 +39,6 @@ Arbeit mit der Community - Chat-Administration, Forenmoderation, Arbeit mit vers
 
 </robo-list>
 
-Wenn Sie keinen technischen Hintergrund haben, aber ein eigenes Projekt mit dem sie Robonomics verbinden möchten, dann können Sie sich auch dem Team von Ambassador anschließen.
+Falls du keinen technischen Hintergrund vorweisen kannst aber ein eigenes Projekt hast mit dem du Robonomics verbinden möchtest, kannst du dich ebenfalls dem Team von Ambassador anschließen.
 
-Bleiben Sie dran - in Kürze werden wir eine Anleitung und einen Fahrplan veröffentlichen, wie man Ambassador wird sowie weitere nützliche Informationen für die Community.
+Bleibt dran - in Kürze werden wir eine Anleitung veröffentlichen wie man Ambassador werden kann sowie weitere nützliche Informationen für die Community preisgeben.
