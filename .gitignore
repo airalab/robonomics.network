@@ -8,3 +8,4 @@ dist
 .env.*
 backup
 .vscode
+.idea
