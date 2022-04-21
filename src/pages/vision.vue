@@ -65,9 +65,9 @@
         </div>
       </section>
 
-      <section class="vision-beginning section__solid animate-inside" v-in-viewport.once>
+      <section class="vision-beginning section__solid">
         <div class="layout layout__content">
-          <div class="hyphens vision-beginning-text">
+          <div class="hyphens vision-beginning-text animate-inside" v-in-viewport.once>
             <h2>From smart contracts to cross chain IoT platform</h2>
             <p>The Robonomics project is over 6 years old. We started to prepare for the first experiment demonstrating
               human-machine communication using an independent decentralized provider network in 2015, from the early
@@ -78,7 +78,6 @@
               enable interaction with devices under the control of a global decentralized computer.</p>
           </div>
         </div>
-
         <g-link class="vision-beginning-link" to="https://youtu.be/V_3rcP2Duv0"><g-image alt="Youtube video" src="~/assets/images/youtube.png" /></g-link>
         <g-image aria-hidden="true" class="bg" alt="" src="~/assets/images/wintercoding.png" />
       </section>
@@ -93,7 +92,7 @@
             <p class="hyphens">In our articles between 2017 and 2020, we presented the scientific community with many
               concepts and solutions united around the idea of the robot economy, an economic system in which robotic
               devices act as independent agents capable of performing key economic activities, previously reserved for
-              humans. You can read the scientific articles at <g-link to="/community#science">this link</g-link>.
+              humans. You can read the scientific articles at <g-link to="/papers">this link</g-link>.
             </p>
             <p class="hyphens">We would like to justify the emergence of the robot economy and explain in general terms
               why we believe that this concept is the inevitable and obvious answer to the functioning of the
@@ -141,21 +140,47 @@
 
       <hr/>
 
+      <section class="vision-fathers vision-get-rid layout layout__content animate-inside" v-in-viewport.once>
+        <article class="hyphens">
+          The idea of reducing transaction costs through the ability of all participants in the business process
+          (production, logistics, consumption) to unite at a closer level
+          <g-link to="https://ieeexplore.ieee.org/abstract/document/8792577">clearly correlates</g-link> with the
+          problems and
+          challenges faced by manufacturers of automation solutions. Over the past 50 years, the standard/regular
+          operations of most business processes of large companies have been almost completely automated. The
+          manufacturers are essentially left with the task of building secure communication between fully automated
+          parts of the supply chain, and this task is a factor holding back further reduction of transaction costs
+          through automation. The desire to market more competitive products or services compared to partially automated
+          <g-link to="https://ieeexplore.ieee.org/abstract/document/8760733">firms spurs the search for solutions to</g-link>
+          these challenges. It seems that everything is heading towards the
+          emergence of robofirms — organizations in which the entire business process cycle is fully automated and does
+          not require human participation, except as beneficiaries and consumers.
+        </article>
+        <div class="vision-fathers-image">
+          <h2>Get rid of transaction costs</h2>
+          <g-image src="~/assets/images/vision-get-rid.svg"/>
+        </div>
+
+      </section>
+
+      <hr/>
+
       <section class="vision-fathers vision-cps layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
-          <h2>Automation in the supply chain</h2>
+          <h2>Our future in Smart Cities</h2>
           <g-image src="~/assets/images/industry-4-0-robonomics.png" />
         </div>
 
         <article class="hyphens">
-          <p>The key element in setting up of interaction among various related automated components within robotics and
-            lights-out manufacturing is the idea of cyber-physical system (CPS).</p>
-          <p>It is interesting to note that сyber-physical system is the principle idea behind the implementation of
-            Industry 4.0 solutions. This is what the future of our life in Smart Cities looks like: autopilot taxi on
-            your phone, drone selfie in the park for Instagram, subscription to air pollution data from thousands of
-            local sensors, a network of 3D printers at metro stations, your home robot Rosie with access to Amazon, a
-            smart factory that can rebuild the production cycle autonomously or work directly with the customer.</p>
+          <p>The task that automation manufacturers are facing today has a specific name — the construction of
+            cyber-physical systems (abbreviated as CPS). By
+            <g-link to="https://ieeexplore.ieee.org/abstract/document/4519604">definition</g-link>, a CPS is a strong
+            unification and mutual integration of multiple computational, networking, and physical processes.</p>
+          <p>The tasks of building CPS are central to any idea described in the new (fourth) industrial revolution.
+            Therefore, CPS is the cornerstone of our future life in Smart Cities, manifesting itself everywhere.
+            Examples of cyber-physical systems of the future are: Uber autopilot, drone selfies, network of 3D printers
+            in metro stations.</p>
           <p>CPS is a complex structure of many connected elements: from the app on the phone, it extends to controlling
             the drone in flight over the city, and then proceeds to publishing the resulting photos to Instagram, but
             only after processing by cloud AI.</p>
@@ -211,7 +236,7 @@
           <div>
             <h2>
               <b>Bitcoin</b> 
-              & Industry 4.0
+              & money for robots
             </h2>
 
             <div class="industry40">
@@ -1062,6 +1087,20 @@ h4 {
   font-style: italic;
   font-weight: 500;
 }
+
+/*  */
+
+.vision-get-rid article {
+  margin-right: var(--space);
+}
+
+@media screen and (min-width: 1100px) {
+  .vision-fathers.vision-get-rid {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+  }
+}
+
 
 
 /* 6 ----- */
