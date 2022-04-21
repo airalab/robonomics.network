@@ -1093,6 +1093,10 @@ h4 {
 
 /* 7 ----- */
 
+.vision-industry40 small {
+  font-size: 60%; line-height: 1.2;
+}
+
 
 .vision-industry40 .layout {
   display: grid;
