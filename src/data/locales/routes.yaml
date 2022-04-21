@@ -6,6 +6,10 @@
   component: './src/pages/vision.vue'
   typename: 'page'
 
+- path: '/architecture/'
+  component: './src/pages/architecture.vue'
+  typename: 'page'
+
 - path: '/kusama-slot/'
   component: './src/pages/kusama-slot.vue'
   typename: 'page'
