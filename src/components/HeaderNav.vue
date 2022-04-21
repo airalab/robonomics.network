@@ -15,6 +15,7 @@
                 <ul class="oldy dark">
                     <li><g-link to="/intro">{{$ts('Intro')}}</g-link></li>
                     <li><g-link to="/vision">Vision</g-link></li>
+                    <li><g-link to="/architecture">Architecture</g-link></li>
                 </ul>
             </details>
 
