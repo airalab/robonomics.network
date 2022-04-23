@@ -40,6 +40,7 @@
                 <summary>{{$ts('Nav Community')}}</summary>
                 <ul class="oldy dark">
                     <!-- <li><g-link to="/community/wallpapers">Wallpapers</g-link></li> -->
+                    <li><g-link to="/ambassador-program">{{$ts('Ambassador program')}}</g-link></li>
                     <li><g-link to="/papers">{{$ts('Nav Papers')}}</g-link></li>
                     <li><g-link to="/books">{{$ts('Nav Books')}}</g-link></li>
                     <li><g-link to="/contact">{{$ts('Nav Contact')}}</g-link></li>
@@ -86,10 +87,11 @@
     }
 
     li {
-        margin: 0 calc(var(--space)*0.5) calc(var(--space)*0.5);
+        margin: 0 calc(var(--space)*0.35) calc(var(--space)*0.35);
         text-transform: none;
         letter-spacing: 0;
         font-weight: bold;
+        text-transform: uppercase;
     }
 
     li:first-child {

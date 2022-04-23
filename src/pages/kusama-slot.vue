@@ -770,7 +770,7 @@ query {
     color: var(--color-light)
   }
 
-  #info h1 { margin-top: 0; margin-bottom: 0; }
+  #info h1 { margin-bottom: 0; }
 
   #info .grid-5{
     font-size: 80%;

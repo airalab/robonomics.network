@@ -6,10 +6,23 @@
 export default {
   name: 'RoboListItem',
 
+
+  props: {
+
+    color: {
+      type: String,
+      default: 'dark',
+      validator: function (value) {
+        return ['dark', 'green', 'gray'].indexOf(value) !== -1;
+      }
+    },
+  },
+
   computed: {
     classList() {
       return {
         [`robo-list-item`]: true,
+        [`robo-list-item-${this.color}`]: this.color,
       };
     }
   },
@@ -21,6 +34,11 @@ export default {
     ol.robo-list {
       counter-reset: counter;
       margin-left: 0;
+
+      --item-color: var(--color-dark);
+      --color-text: var(--color-dark);
+      --color-titles: var(--color-dark);
+      --color-links: var(--color-blue);
     }
 
     ol.robo-list li {
@@ -30,9 +48,25 @@ export default {
       grid-template-columns: 5rem auto;
       padding-left: 0;
       margin-bottom: var(--space);
-      box-shadow: .2rem .2rem 0 var(--color-dark);
+      box-shadow: .2rem .2rem 0 var(--item-color);
       position: relative;
       font-weight: bold;
+
+      color: var(--color-text);
+    }
+
+    ol.robo-list li h1,
+    ol.robo-list li h2,
+    ol.robo-list li h3,
+    ol.robo-list li h4,
+    ol.robo-list li h5
+    {
+      color: var(--color-titles);
+      text-align: left;
+    }
+
+    ol.robo-list li a {
+      color: var(--color-links)
     }
 
     ol.robo-list li:before {
@@ -53,18 +87,27 @@ export default {
       top: 0;
       height: 100%;
       width: 5rem;
-      background-color: var(--color-dark);
+      background-color: var(--item-color);
       z-index: 0;
     }
 
     .robo-list-item-content {
       background-color: var(--color-light);
-      /* padding: calc(var(--space)*0.5); */
       padding: var(--space);
     }
 
     ol.robo-list li:before, .robo-list-item-content {
       position: relative;
       z-index: 1;
+    }
+
+    ol .robo-list-item-green {
+      --item-color: var(--color-green);
+      --color-titles: var(--color-green);
+    }
+
+    ol .robo-list-item-gray {
+      --item-color: var(--color-gray-dark);
+      --color-text: var(--color-gray-dark);
     }
 </style>

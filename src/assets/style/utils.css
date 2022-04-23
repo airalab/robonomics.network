@@ -166,7 +166,7 @@
   .grid-5 { grid-template-columns: 1fr; }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:990px){
   .grid-4 { grid-template-columns: repeat(2,1fr); }
   .grid-3 { grid-template-columns: 1fr; }
 }
@@ -282,4 +282,21 @@
 .oldy-count-content {
   padding: var(--oldy-padding);
   text-align: left;
+}
+
+.no-margins {
+  margin: 0 !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.list-simple {
+  list-style: none;
+  margin-left: 0;
+}
+
+.list-simple li {
+  margin-bottom: 0.2rem;
 }

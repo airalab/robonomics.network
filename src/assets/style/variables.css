@@ -9,11 +9,15 @@ body {
 	--color-light: #ffffff;
 	--color-gray: #ccc;
 	--color-gray-mid: rgb(143, 143, 143);
+	--color-gray-dark: #646464;
 	--color-gray-light: #f2f2f2;
+	--color-green-light: #a4ff59;
 	--color-green: #5fce05;
+	--color-green-dark: #1ca50d;
 	--color-orangeYellow: #f5a106;
 	--color-orange: #E9510E;
 	--color-red: #ee005b;
+	--color-red-dark: #bd044b;
 	--color-pink: #ff7aad;
 
 	--color-blue-lightest: #DCE8FF;
@@ -26,7 +30,8 @@ body {
 
 	--color-purple-lighter: #c7d2ff;
 	--color-purple-light: #97aafd;
-	--color-purple-mid: #5a73e2;
+	--color-purple-mid: #737CF8;
+	--color-purple-mid-dark: #5963e2;
 	--color-purple: #221363;
 	--color-purple-dark: #1A1341;
 
@@ -59,7 +64,7 @@ body {
   --space: 2rem;
   --space-text: 2rem;
   --content-width: 1660px;
-  --text-width: 980px;
+  --text-width: 780px;
   --tip-width: 16rem;
 
   --screen-padding-top: 3rem;

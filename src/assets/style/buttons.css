@@ -44,9 +44,9 @@
 			fill: var(--color-light);
 		}
 
-		.button.primary:hover, button.primary:hover{
+		/* .button.primary:hover, button.primary:hover{
 			box-shadow: 4px 4px 0 var(--color-dark);
-		}
+		} */
 
 		.button.border, button.border {
 			background-color: var(--color-light);
