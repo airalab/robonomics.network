@@ -4,6 +4,22 @@
       :is="link ? 'a' : 'button'"
       :href="link"
       :class="classes"
+      :disabled="disabled"
+      @click="$emit('click')"
+      :style="{transform: 'scale('+scale+')'}"
+      :v-smooth-scroll="anchor ? '{ updateHistory: false, offset: -250 }' : null"
+    >
+
+      <template v-if="label">{{label}}</template>
+      <template v-else><slot/></template>
+
+  </component>
+
+
+  <!-- <a 
+      v-if="link"
+      :href="link"
+      :class="classes"
       :target="external() ? '_blank' : null"
       :rel="external() ? 'noopener' : null"
       :disabled="disabled"
@@ -15,7 +31,21 @@
       <template v-if="label">{{label}}</template>
       <template v-else><slot/></template>
 
-  </component>
+  </a>
+
+
+  <button 
+      v-else
+      :class="classes"
+      :disabled="disabled"
+      @click="$emit('click')"
+      :style="{transform: 'scale('+scale+')'}"
+    >
+
+      <template v-if="label">{{label}}</template>
+      <template v-else><slot/></template>
+
+  </button> -->
 
 </template>
 
@@ -80,19 +110,6 @@ export default {
         [`button-${this.color}`]: this.color,
       };
     },
-  },
-
-  methods: {
-    external() {
-      
-      if( this.link ) {
-        let parser = document.createElement('a')
-        parser.href = this.link
-        if (  parser.host !== window.location.host ) {
-          return true
-        }
-      }
-    }
   },
 
 }
