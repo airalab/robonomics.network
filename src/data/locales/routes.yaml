@@ -37,3 +37,7 @@
 - path: '/blog/'
   component: './src/pages/blog.vue'
   typename: 'component'
+
+- path: '/ambassador-program/'
+  component: './src/pages/ambassador-program.vue'
+  typename: 'page'
