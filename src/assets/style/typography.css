@@ -47,14 +47,14 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  padding-top: calc(var(--space) * 2);
+  /* padding-top: calc(var(--space) * 2); */
   margin-bottom: var(--space);
   text-align: center;
 }
 
 h2, h3, h4, h5 {
   margin-bottom: var(--space-text);
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 h2:first-child, h3:first-child, h4:first-child, h5:first-child { margin-top: 0 }
@@ -93,6 +93,8 @@ small, .text__small, .text-small { font-size: 70%; line-height: 1.2; }
 .text-big-light { font-size: 120%; line-height: 1.6; font-weight: 300; }
 .text-huge { font-size: 160%; line-height: 1.2; }
 .text-huge-light { font-size: 160%; line-height: 1.6; font-weight: 300; }
+
+.text-small p:not(:last-child), .text-little p:not(:last-child) { margin-bottom: calc(var(--space-text) * 0.5);}
 
 blockquote {
   font-size: 110%;
@@ -168,7 +170,7 @@ hr {
 }
 
 .align-right { text-align: right; }
-.align-left { text-align: left; }
+.text-left, .align-left { text-align: left; }
 .text-center, .align-center { text-align: center; }
 
 .ul-nostyle {
@@ -305,3 +307,10 @@ li:not(:last-child) {
 .text-color-red, a.text-color-red { color: var(--color-red) !important }
 
 a.text-color-red:hover { opacity: 0.8;}
+
+.label-red {
+  display: inline-block;
+  padding: 0 0.2rem;
+  background-color: var(--color-red);
+  color: var(--color-light)
+}

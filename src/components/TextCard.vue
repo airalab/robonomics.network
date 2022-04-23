@@ -74,7 +74,15 @@ export default {
       type: String,
       default: 'white',
       validator: function (value) {
-        return ['transparent', 'white', 'blue', 'gradient'].indexOf(value) !== -1;
+        return ['transparent', 'white', 'darkblue', 'gradient'].indexOf(value) !== -1;
+      }
+    },
+
+    shadow: {
+      type: String,
+      default: 'gray',
+      validator: function (value) {
+        return ['light', 'gray', 'dark'].indexOf(value) !== -1;
       }
     },
 
@@ -105,7 +113,8 @@ export default {
         [`icon`]: this.icon,
         [`image`]: this.image || this.imageLocal,
         [`${this.orientation}`]: true,
-        [`${this.back}`]: true,
+        [`${this.back}`]: this.back,
+        [`card-shadow-${this.shadow}`]: this.shadow,
         [`alignContent-${this.alignContent}`]: true,
         [`alignContentV-${this.alignContentV}`]: true,
         [`oldy`]: this.back != `transparent`,
@@ -243,20 +252,35 @@ export default {
       }
 
     .card.white {
-      --color-back: #fff;
-      --color-text: #000;
+      --color-back: var(--color-light);
+      --color-text: var(--color-dark);
     }
-
-
     .card.blue {
-      --oldy-box-color: #fff;
       --color-back: var(--link-color);
-      --color-text: #fff;
+      --color-text: var(--color-light);
     }
+    .card.darkblue {
+      --color-back: var(--color-blue);
+      --color-text: var(--color-light);
+    }
+
+    .card-shadow-light {
+      --oldy-box-color: var(--color-light);
+    }
+
+    .card-shadow-gray {
+      --oldy-box-color: var(--color-gray);
+    }
+
+    .card-shadow-dark {
+      --oldy-box-color: var(--color-dark);
+    }
+
+
 
     .card.blue .pic.round.icon {
         background-color: #000;
-      }
+    }
 
       .card.blue.oldy__link:hover .pic.round.icon {
           background-color: var(--link-color);
