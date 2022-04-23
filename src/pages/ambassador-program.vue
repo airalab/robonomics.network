@@ -2,9 +2,9 @@
     <layout>
         <MetaInfo
             :pageTitle = "$ts('Robonomics Ambassador Program')"
-            :pageDescription = "$ts('XRT is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain.')"
-            pageImage = "/website_cover_token.jpg"
-            pageImageHeight = "650" 
+            :pageDescription = "$ts('Robonomics team invites you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')"
+            pageImage = "/website_cover_ambassador.jpg"
+            pageImageHeight = "650"
         />
 
         <section id="banner" class="section__solid section__blue">
@@ -16,7 +16,6 @@
 
                     <section class="text-abstract text-little">
                         <p><b>{{$ts('For all passionate about Robonomics and inspired by web3.')}}</b></p>
-                        <!-- <p><b>{{$ts('For all passionate about Robonomics')}} <br/> {{$ts('and inspired by web3.')}}</b></p> -->
                         <p>{{$ts('Robonomics team invites you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')}}</p>
                     </section>
                 </div>
@@ -54,7 +53,7 @@
         </section>
 
         <section id="steps" class="section__solid section__darkgray">
-            <img id="steps-i" aria-hidden="true" src="../assets/images/ambassadors.png" />
+            <div id="steps-i"><img aria-hidden="true" src="../assets/images/ambassadors.png" /></div>
             <div class="layout">
                 <h2>How to become an ambassador?</h2>
             </div>
@@ -174,11 +173,6 @@ query {
         letter-spacing: 1px;
     }
 
-    .button {
-        padding-top: 0.2rem !important;
-        padding-bottom: 0.2rem !important;
-    }
-
     .button-icon {
         max-height: 50px;
         vertical-align: middle;
@@ -194,10 +188,18 @@ query {
     }
 
     #steps-i {
+        overflow: hidden;
         position: absolute;
-        width: 1000px;
-        top: -100px;
-        left: calc(50% - 500px)
+        top: -80px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+
+    #steps-i img {
+        width: 800px;
+        max-width: 800px;
     }
 
     .tip {
@@ -211,5 +213,24 @@ query {
 
     h2 {
         font-weight: 400;
+    }
+
+
+    @media screen and (min-width: 430px) {
+       .button {
+            padding-top: 0.2rem !important;
+            padding-bottom: 0.2rem !important;
+        }
+    }
+
+    @media screen and (max-width: 430px) {
+
+        .button {
+            display: block;
+        }
+
+        .button-icon {
+            display: none;
+        }
     }
 </style>
