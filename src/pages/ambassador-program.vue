@@ -2,7 +2,7 @@
     <layout>
         <MetaInfo
             :pageTitle = "$ts('Robonomics Ambassador Program')"
-            :pageDescription = "$ts('Robonomics team invites you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')"
+            :pageDescription = "$ts('We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')"
             pageImage = "/website_cover_ambassador.jpg"
             pageImageHeight = "650"
         />
@@ -16,7 +16,7 @@
 
                     <section class="text-abstract text-little">
                         <p><b>{{$ts('For all passionate about Robonomics and inspired by web3.')}}</b></p>
-                        <p>{{$ts('Robonomics team invites you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')}}</p>
+                        <p>{{$ts('We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')}}</p>
                     </section>
                 </div>
 
