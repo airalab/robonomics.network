@@ -9,7 +9,7 @@
 
     <div class="page vision">
 
-      <section class="vision-banner page-banner section section__solid section__blue animate-inside" v-in-viewport.once>
+      <section class="vision-banner page-banner section section__solid section__blue">
         <div class="vision-logo" v-in-viewport.once>
           <g-image class="logo" alt="Robonomics logo" src="~/assets/images/robonomics-logo.svg" />
           <g-image class="earth" alt="Earth" src="~/assets/images/earth.png" />
