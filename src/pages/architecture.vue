@@ -9,7 +9,7 @@
       <section class="architecture-banner section__solid animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <article>
-            <h2>robonomics architecture</h2>
+            <h1>robonomics architecture</h1>
             <p class="hyphens">The main idea that the authors of Robonomics tried to convey before - is the natural, logical,
               and seemingly inevitable evolution from the current level of the economy into fully automated services.
               Automated services will need to have both the ability to speak the language of human economics and also
@@ -437,8 +437,11 @@ export default {
     padding-top: calc(var(--space) * 3);
     padding-bottom: calc(var(--space) * 3);
     overflow: hidden;
-
     position: relative;
+  }
+
+  .architecture-banner h1 {
+    text-align: left;
   }
 
   .architecture-banner article {
