@@ -35,7 +35,7 @@
         <div class="vision-fathers-image">
           <h2>Overview of the state of the internet of things <br/> <strong>(IOT)</strong></h2>
 
-          <g-image alt="" src="~/assets/images/person-victor-glushkov.svg"/>
+          <g-image alt="" src="~/assets/images/person-victor-glushkov.png"/>
         </div>
 
         <article class="hyphens">
@@ -65,7 +65,7 @@
       <hr/>
 
       <section class="architecture-digital-twin layout layout__content animate-inside" v-in-viewport.once>
-        <g-image src="~/assets/images/vision-digital-twin.svg"/>
+        <g-image src="~/assets/images/vision-digital-twin.png"/>
         <article class="hyphens">
           <p>The development and application of the Internet of Things has shown that solving typical problems is not
             enough. Completely new concepts and principles, based on earlier mistakes and identified shortcomings, have
@@ -704,6 +704,10 @@ export default {
     display: inline-block;
     background-color: var(--color-orange);
     color: var(--color-light);
+  }
+
+  .architecture-current-problems article h3 {
+    margin-top: calc(var(--space));
   }
 
   .architecture-current-problems article {
