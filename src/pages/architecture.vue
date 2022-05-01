@@ -175,30 +175,25 @@
       <section class="architecture-data-flows layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
           <h3>iot data flows in cloud services</h3>
-          <div class="grid-2">
-            <g-image src="~/assets/images/vision-data-flows-1.svg"/>
-            <div>
-              <p>1.</p>
-              <p>1. Input values for cloud triggers. For example, the cloud service sends various notifications to the
-                user in the event of a report from a car alarm sensor about a strike.</p>
-            </div>
-          </div>
-          <div class="grid-2">
-            <g-image src="~/assets/images/vision-data-flows-2.svg"/>
-            <div>
-              <p>2.</p>
-              <p>Output data for complex analytics that cannot be produced at the edge level. For example, when
-                processing video for face recognition in a crowd.</p>
-            </div>
-          </div>
-          <div class="grid-2">
-            <g-image src="~/assets/images/vision-data-flows-3.svg"/>
-            <div>
-              <p>3.</p>
-              <p>The basis for forming a digital twin of the device in order to create a cast of its state. For
-                example, at the user’s request in the mobile app or on the website.</p>
-            </div>
-
+          <div class="grid-3">
+              <g-image src="~/assets/images/vision-data-flows-1.svg"/>
+              <div>
+                <p>1.</p>
+                <p>Input values for cloud triggers. For example, the cloud service sends various notifications to the
+                  user in the event of a report from a car alarm sensor about a strike.</p>
+              </div>
+              <g-image src="~/assets/images/vision-data-flows-2.svg"/>
+              <div>
+                <p>2.</p>
+                <p>Output data for complex analytics that cannot be produced at the edge level. For example, when
+                  processing video for face recognition in a crowd.</p>
+              </div>
+              <g-image src="~/assets/images/vision-data-flows-3.svg"/>
+              <div>
+                <p>3.</p>
+                <p>The basis for forming a digital twin of the device in order to create a cast of its state. For
+                  example, at the user’s request in the mobile app or on the website.</p>
+              </div>
           </div>
         </article>
       </section>
@@ -208,21 +203,17 @@
       <section class="architecture-data-flows layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
           <h3>popular examples of iot solutions</h3>
-          <div class="grid-2">
+          <div class="grid-3">
             <g-image src="~/assets/images/vision-data-flows-4.svg"/>
             <div>
               <p>1.</p>
               <p>A typical smart home system provides a wide range of options for controlling your living space. With its help you can remotely control the door locks, setting up one-time or regular access to the room as family and friends, and for maintenance or delivery personnel. With numerous sensors and recording devices, the system is able to include video recording when triggering motion sensors, autonomously make decisions to shut off the water supply when a leak is detected in the water system, start a scheduled robot vacuum cleaner, providing a cleaning report to the user app, change the room temperature to the optimal value depending on your schedule.</p>
             </div>
-          </div>
-          <div class="grid-2">
             <g-image src="~/assets/images/vision-data-flows-5.svg"/>
             <div>
               <p>2.</p>
               <p>Smart cars. Providing the car’s onboard electronics with access to mobile Internet, the user gets access to remote control of various car functions directly from his smartphone: opening doors, turning on the air conditioner, controlling the headlights. If such cars are used for carsharing, then you can create an interactive map of the location of cars with their status, the remaining fuel, etc. for the clients of this service.</p>
             </div>
-          </div>
-          <div class="grid-2">
             <g-image src="~/assets/images/vision-data-flows-6.svg"/>
             <div>
               <p>3.</p>
@@ -301,15 +292,15 @@
               <g-image src="~/assets/images/vision-basic-components-2.svg"/>
               <g-image src="~/assets/images/vision-basic-components-3.svg"/>
               <div>
-                <div><h2>1.</h2></div>
+                <div><h2>1</h2></div>
                 <p>A human interface to access the system</p>
               </div>
               <div>
-                <div><h2>2.</h2></div>
+                <div><h2>2</h2></div>
                 <p>A communication protocol</p>
               </div>
               <div>
-                <div><h2>3.</h2></div>
+                <div><h2>3</h2></div>
                 <p>A machine interface</p>
               </div>
             </div>
@@ -656,10 +647,22 @@ export default {
     text-align: left;
   }
 
-  .architecture-data-flows article .grid-2 img {
-    width: 80%;
-    margin-left: 10%;
+  .architecture-data-flows .grid-3 {
+    margin-top: var(--space);
+    grid-template-columns: repeat(3, 1fr);
+
   }
+
+  .architecture-data-flows .grid-3 img {
+    grid-row: 1;
+    width: auto;
+    margin: auto;
+  }
+
+  .architecture-data-flows .grid-3 div {
+    grid-row: 2;
+  }
+
 
   .architecture-data-flows article .grid-2 div {
     display: flex;
@@ -683,7 +686,19 @@ export default {
       margin-right: auto;
       max-width: 50%;
     }
+  }
 
+  @media screen and (max-width: 950px) {
+    .architecture-data-flows article .grid-3 {
+      grid-template-columns: 1fr;
+    }
+    .architecture-data-flows article .grid-3 img {
+      grid-row: auto;
+      width: 60%;
+    }
+    .architecture-data-flows article .grid-3 div {
+      grid-row: auto;
+    }
   }
 
   /* Current problems */
@@ -767,7 +782,7 @@ export default {
   }
 
   .architecture-main-tasks div ~ p {
-    padding-left: calc(var(--space) * 3);
+    margin-top: var(--space);
   }
 
   .architecture-main-tasks article div {
@@ -853,8 +868,12 @@ export default {
     background-color: var(--color-light);
   }
 
+  .architecture-basic-components .grid-3 {
+    height: 80%;
+  }
+
   .architecture-basic-components .grid-3 img {
-    width: 90%;
+    height: 80%;
     margin: auto;
   }
 
@@ -879,6 +898,10 @@ export default {
   .architecture-basic-components .grid-3 div div ~ p {
     margin-top: calc(var(--space) * 0.5);
   }
+
+  .architecture-basic-components article p {
+    margin-top: var(--space);
+  }
   
   @media screen and (max-width: 1100px) {
     .architecture-basic-components .grid-2 {
@@ -886,6 +909,7 @@ export default {
     }
     .architecture-basic-components .grid-3 {
       grid-template-columns: 1fr 1fr 1fr;
+      height: 100%;
     }
   }
 
