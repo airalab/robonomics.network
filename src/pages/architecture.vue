@@ -274,9 +274,11 @@
             <p>Modern advances in web3-technology can solve the issue of user privacy. With web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.</p>
           </article>
           <div>
-            <g-image src="~/assets/images/vision-main-tasks.svg"/>
-            <p>Robonomics is a decentralized cloud for digital twins of IoT devices. Robonomics supports the
-              techno-economic format for communication, as well as providing private applications for users</p>
+            <div>
+              <g-image  src="~/assets/images/robonomics-logo.png"/>
+              <p>Robonomics is a decentralized cloud for digital twins of IoT devices. Robonomics supports the
+                techno-economic format for communication, as well as providing private applications for users</p>
+            </div>
           </div>
         </div>
       </section>
@@ -354,6 +356,8 @@
 </template>
 
 <script>
+
+
 export default {
   name: "architecture",
 
@@ -794,56 +798,58 @@ export default {
 
   .architecture-main-tasks article ~ div {
     margin-top: var(--space);
-    width:100%;
-    position: relative;
+    background-image: url('~@/assets/images/main-tasks-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: calc(var(--space) * 7);
+    padding-bottom: calc(var(--space) * 6);
+  }
+  .architecture-main-tasks article ~ div > div {
+    max-width: 22vw;
+    margin: auto;
   }
 
-  .architecture-main-tasks article ~ div > img {
-    width: 100%;
+  .architecture-main-tasks article ~ div img {
+    padding: 0 var(--space) calc(var(--space) * 2);
   }
 
-  .architecture-main-tasks article ~ div > p {
-    position: absolute;
+  .architecture-main-tasks article ~ div p {
     color: var(--color-light);
-    width: 26%;
-    height: 25%;
-    left: 37.5%;
-    top: 55%;
+    padding: var(--space);
+    background-color: var(--color-purple);
+  }
+
+  @media screen and (max-width: 1280px) {
+    .architecture-main-tasks article ~ div > div {
+      max-width: 25vw;
+    }
   }
 
   @media screen and (max-width: 1100px) {
     .architecture-main-tasks article {
       column-count: 1;
     }
-  }
-
-  @media screen and (min-width: 890px) and (max-width: 1200px){
-    .architecture-main-tasks article ~ div > p {
-      font-size: 80%;
-    }
-  }
-
-  @media screen and (max-width: 890px) {
-    .architecture-main-tasks article ~ div > p {
-      font-size: 70%;
+    .architecture-main-tasks article ~ div > div {
+      max-width: 35vw;
     }
   }
 
   @media screen and (max-width: 810px){
-    .architecture-main-tasks article ~ div > p {
-      font-size: 55%;
+    .architecture-main-tasks article ~ div > div {
+      max-width: 45vw;
     }
   }
 
   @media screen and (max-width: 670px) {
-    .architecture-main-tasks article ~ div > p {
-      font-size: 45%;
+    .architecture-main-tasks article ~ div > div {
+      max-width: 55vw;
     }
   }
 
   @media screen and (max-width: 580px) {
-    .architecture-main-tasks article ~ div > p {
-      font-size: 35%;
+    .architecture-main-tasks article ~ div > div {
+      max-width: 65vw;
     }
   }
 
