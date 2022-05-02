@@ -802,8 +802,8 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: calc(var(--space) * 7);
-    padding-bottom: calc(var(--space) * 6);
+    padding-top: calc(var(--space) * 9);
+    padding-bottom: calc(var(--space) * 7.5);
   }
   .architecture-main-tasks article ~ div > div {
     max-width: 22vw;
@@ -830,12 +830,20 @@ export default {
     .architecture-main-tasks article {
       column-count: 1;
     }
+    .architecture-main-tasks article ~ div {
+      padding-top: calc(var(--space) * 7);
+      padding-bottom: calc(var(--space) * 5.5);
+    }
     .architecture-main-tasks article ~ div > div {
       max-width: 35vw;
     }
   }
 
   @media screen and (max-width: 810px){
+    .architecture-main-tasks article ~ div {
+      padding-top: calc(var(--space) * 5.5);
+      padding-bottom: calc(var(--space) * 5.5);
+    }
     .architecture-main-tasks article ~ div > div {
       max-width: 45vw;
     }
@@ -848,6 +856,10 @@ export default {
   }
 
   @media screen and (max-width: 580px) {
+    .architecture-main-tasks article ~ div {
+      padding-top: calc(var(--space) * 6.5);
+      padding-bottom: calc(var(--space) * 5.5);
+    }
     .architecture-main-tasks article ~ div > div {
       max-width: 65vw;
     }
