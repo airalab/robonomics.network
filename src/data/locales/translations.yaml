@@ -2357,11 +2357,175 @@
   es: Vea las preguntas frecuentes y chatee con nosotros en Discord
   ko: FAQ를 보고 Discord에서 채팅하기
 
+# Ambassador program
 
+- alias: Robonomics Ambassador Program
+  en: Robonomics Ambassador Program
+  ru: ПРОГРАММА ДЛЯ АМБАССАДОРОВ РОБОНОМИКИ
 
+- alias: Latest update
+  en: Latest update
+  ru: Последнее обновление
 
+- alias: For all passionate about Robonomics and inspired by web3.
+  en: For all passionate about Robonomics and inspired by web3.
+  ru: Для всех увлеченных Робономикой и вдохновленных web3.
 
+- alias: We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.
+  en: We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.
+  ru: Приглашаем вас внести свой вклад в развитие и продвижение Робономики на международной арене.
 
+- alias: Learn
+  en: Learn
+  ru: Learn
+
+- alias: Theory & practice from Robonomics
+  en: Theory & practice from Robonomics
+  ru: ТЕОРИЯ И ПРАКТИКА ОТ РОБОНОМИКИ
+
+- alias: Make content
+  en: Make content
+  ru: ДЕЛАЙТЕ КОНТЕНТ
+
+- alias: Documentation, instructions,  tutorials, Localization, scientific papers
+  en: Documentation, instructions,  tutorials, Localization, scientific papers
+  ru: ДОКУМЕНТАЦИЯ, ИНСТРУКЦИИ, ТУТОРИАЛЫ, ЛОКАЛИЦАЦИЯ, НАУЧНЫЕ СТАТЬИ
+
+- alias: Communicate
+  en: Communicate
+  ru: ОБЩАЙТЕСЬ
+
+- alias: Online and offline (meetups, conferences, social networks, collaborations)
+  en: Online and offline (meetups, conferences, social networks, collaborations)
+  ru: ОНЛАЙН И ОФФЛАЙН (МИТАПЫ, КОНФЕРЕНЦИИ, СОЦИАЛЬНЫЕ СЕТИ, КОЛЛАБОРАЦИИ)
+
+- alias: Get rewards
+  en: Get rewards
+  ru: ПОЛУЧАЙТЕ ВОЗНАГРАЖДЕНИЯ
+
+- alias: XRT reward every month, extra bonuses and gifts for top 5 ambassadors
+  en: XRT reward every month, extra bonuses and gifts for top 5 ambassadors
+  ru: ОЗНАГРАЖДЕНИЯ В XRT КАЖДЫЙ МЕСЯЦ, ДОПОЛНИТЕЛЬНЫЕ БОНУСЫ И ПОДАРКИ ДЛЯ ТОП-5 СРЕДИ АМБАССАДОРОВ
+
+- alias: Get your role, ambassador
+  en: Get your role, ambassador
+  ru: ПОЛУЧИ СВОЮ РОЛЬ, АМБАССАДОР
+
+- alias: How to become an ambassador?
+  en: How to become an ambassador?
+  ru: КАК СТАТЬ АМБАССАДОРОМ?
+
+- alias: Tell us more about you
+  en: Tell us more about you
+  ru: РАССКАЖИТЕ НАМ О СЕБЕ
+
+- alias: Fill out the questionnaire
+  en: Fill out the questionnaire
+  ru: ЗАПОЛНИТЕ АНКЕТУ
+
+- alias: Start
+  en: Start
+  ru: СТАРТ
+
+- alias: Wait for your invitation to the special Discord chat for ambassadors
+  en: Wait for your invitation to the special Discord chat for ambassadors
+  ru: ПОДОЖДИТЕ ПРИГЛАШЕНИЯ В СПЕЦИАЛЬНЫЙ ЧАТ ДЛЯ АМБАССАДОРОВ В DISCORD
+
+- alias: The number of participants in the program is limited
+  en: The number of participants in the program is limited
+  ru: КОЛИЧЕСТВО УЧАСТНИКОВ ПРОГРАММЫ ОГРАНИЧЕНО
+
+- alias: For content makers
+  en: For content makers
+  ru: ДЛЯ СОЗДАТЕЛЕЙ КОНТЕНТА
+
+- alias: 'What you may do:'
+  en: 'What you may do:'
+  ru: 'Что вы можете делать:'
+
+- alias: 1) work with technical documentation, instructions and tutorials;
+  en: 1) work with technical documentation, instructions and tutorials;
+  ru: 1) работать с технической документацией, инструкциями и туториалами;
+
+- alias: 2) translate content into your native language;
+  en: 2) translate content into your native language;
+  ru: 2) переводить контент на свой родной язык;
+
+- alias: 3) make scientific papers based on Robonomics technologies;
+  en: 3) make scientific papers based on Robonomics technologies;
+  ru: 3) писать научные статьи по технологиям Робономики;
+
+- alias: 4) popularize ideas of Robonomics.
+  en: 4) popularize ideas of Robonomics.
+  ru: 4) популяризовать идеи Робономики.
+
+- alias: 'How:'
+  en: 'How:'
+  ru: 'Как:'
+
+- alias: 1) make pull requests on Github for
+  en: 1) make pull requests on Github for
+  ru: 1) сделать пул-реквест на Github для
+
+- alias: website
+  en: website
+  ru: website
+
+- alias: wiki
+  en: wiki
+  ru: wiki
+
+- alias: 2) discuss what we need to translate in ambassador chat;
+  en: 2) discuss what we need to translate in ambassador chat;
+  ru: 2) узнать в чате амбассадоров, какие материалы требуется перевести;
+
+- alias: 3) create video and text content, try to make it unique for your followers;
+  en: 3) create video and text content, try to make it unique for your followers;
+  ru: 3) создать видео или написать статью/пост - попробуйте сделать уникальный контент для своих подписчиков;
+
+- alias: 4) share progress with other ambassadors and team.
+  en: 4) share progress with other ambassadors and team.
+  ru: 4) поделиться своими результатами с другими амбассадорами и командой в чате.
+
+- alias: For community helpers
+  en: For community helpers
+  ru: ДЛЯ ПОДДЕРЖКИ СООБЩЕСТВА
+
+- alias: 'What you may do:'
+  en: 'What you may do:'
+  ru: 'Что вы можете делать:'
+
+- alias: 1) organize local offline meetups and hackathons based on Robonomics technologies;
+  en: 1) organize local offline meetups and hackathons based on Robonomics technologies;
+  ru: 1) организовывать локальные митапы и хакатоны, основанные на технологиях Робономики;
+
+- alias: 2) participate in thematic conferences on behalf of Robonomics;
+  en: 2) participate in thematic conferences on behalf of Robonomics;
+  ru: 2) представлять Робономику на тематических конференциях;
+
+- alias: '3) work online with community: online meetups and hackathons, chat administration, forum moderation, various social networks;'
+  en: '3) work online with community: online meetups and hackathons, chat administration, forum moderation, various social networks;'
+  ru: '3) работать с сообществом онлайн: онлайн митапы и хакатоны, администрирование чатов, модерация форумов, работа с различными социальными сетями;'
+
+- alias: 4) communicate with other projects for collaboration.
+  en: 4) communicate with other projects for collaboration.
+  ru: 4) общаться с другими проектами на предмет коллабораций с Робономикой.
+
+- alias: 1) make your suggestion in ambassador’s chat;
+  en: 1) make your suggestion in ambassador’s chat;
+  ru: 1) предложите идею в чате амбассадоров;
+
+- alias: 2) get merchandise if needed for offline events;
+  en: 2) get merchandise if needed for offline events;
+  ru: 2) получите мерч для оффлайн-мероприятий, если необходимо;
+
+- alias: 3) share progress with other ambassadors and team.
+  en: 3) share progress with other ambassadors and team.
+  ru: 3) поделитесь своими успехами в чате.
+
+- alias: Get all our support and visual materials in ambassador’s chat
+  en: Get all our support and visual materials in ambassador’s chat
+  ru: ПОЛУЧИТЕ НАШУ ПОЛНУЮ ПОДДЕРЖКУ И ВИЗУАЛЬНЫЕ МАТЕРИАЛЫ В ЧАТЕ АМБАССАДОРОВ
 
   # Components
 
