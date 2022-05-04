@@ -1,9 +1,9 @@
 <template>
   <layout>
     <MetaInfo
-      pageTitle = "Architecture page"
+      :pageTitle = "$ts('Architecture title')"
       pageDescription = "We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution."
-      :pageImage="'/website_cover_vision.jpg'"
+      :pageImage="'/website_cover_architecture.jpg'"
     />
     <div class="page architecture">
       <section class="architecture-banner section__solid animate-inside" v-in-viewport.once>
@@ -806,8 +806,12 @@ export default {
     padding-bottom: calc(var(--space) * 7.5);
   }
   .architecture-main-tasks article ~ div > div {
-    max-width: 22vw;
+    width: 22vw;
+    max-width: 500px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .architecture-main-tasks article ~ div img {

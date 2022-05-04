@@ -519,6 +519,10 @@
   en: Robonomics network vision
   ru: Концепция сети Робономика
 
+# Architecture page
+- alias: Architecture title
+  en: Robonomics network architecture
+  ru: Архитектура сети Робономика
 
 # Intro
 
