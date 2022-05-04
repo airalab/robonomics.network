@@ -15,6 +15,7 @@
   zh: 或
   es: o
   ko: 또는
+  de: oder
 
 - alias: and
   en: and
@@ -2362,170 +2363,339 @@
 - alias: Robonomics Ambassador Program
   en: Robonomics Ambassador Program
   ru: ПРОГРАММА ДЛЯ АМБАССАДОРОВ РОБОНОМИКИ
+  de: Robonomics Ambassador Programm
+  zh: Robonomics大使计划
+  ko: ROBONOMICS 앰배서더 프로그램
+  ja: ROBONOMICSアンバサダープログラム
 
 - alias: Latest update
   en: Latest update
   ru: Последнее обновление
+  de: Letztes Update
+  zh: 最新更新日期
+  ko: 최신 업데이트
+  ja: 最新更新
 
 - alias: For all passionate about Robonomics and inspired by web3.
   en: For all passionate about Robonomics and inspired by web3.
   ru: Для всех увлеченных Робономикой и вдохновленных web3.
+  de: Für alle die sich für Robonomics begeistern und von web3 inspiriert sind.
+  zh: 面向对Robonomics充满激情，并深受web3启发的所有人开放。
+  ko: 로보노믹스에 대한 열정을 가진 분들과 web3에서 영감을 받은 모든분들을 위해.
+  ja: Robonomicsに情熱を持ち、web3に刺激されたすべての方へ。
 
 - alias: We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.
   en: We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.
   ru: Приглашаем вас внести свой вклад в развитие и продвижение Робономики на международной арене.
+  de: Wir laden Sie ein zur Entwicklung und Förderung von Robonomics in der internationalen Zusammenarbeit beizutragen.
+  zh: 我们诚邀各位助力Robonomics在国际合作领域的发展和推广。
+  ko: 국제 협력의 장에서 로보노믹스의 발전과 진흥에 기여해 주시기 바랍니다.
+  ja: 国際的な協力の場でRobonomicsの発展と普及に貢献しましょう。
 
 - alias: Learn
   en: Learn
-  ru: Learn
+  ru: УЧИТЕСЬ
+  de: Lerne
+  zh: 学习
+  ko: 배우기
+  ja: 学ぶ
 
 - alias: Theory & practice from Robonomics
   en: Theory & practice from Robonomics
   ru: ТЕОРИЯ И ПРАКТИКА ОТ РОБОНОМИКИ
+  de: Theorie und Praxis von Robonomic
+  zh: Robonomics的理论与实践
+  ko: 로보노믹스의 이론 및 실습
+  ja: ROBONOMICSの理論と実践
 
 - alias: Make content
   en: Make content
   ru: ДЕЛАЙТЕ КОНТЕНТ
+  de: Inhalte erstellen
+  zh: 制作内容
+  ko: 콘텐츠 만들기
+  ja: コンテンツを作る
 
 - alias: Documentation, instructions,  tutorials, Localization, scientific papers
   en: Documentation, instructions,  tutorials, Localization, scientific papers
   ru: ДОКУМЕНТАЦИЯ, ИНСТРУКЦИИ, ТУТОРИАЛЫ, ЛОКАЛИЦАЦИЯ, НАУЧНЫЕ СТАТЬИ
+  de: Dokumentation, Anleitungen, Tutorials, Lokalisierung, Wissenschaftliche Arbeiten
+  zh: 文档、说明、教程、本地化、科学论文
+  ko: 문서, 지침, 자습서, 현지화, 과학 논문
+  ja: 文献、説明書、チュートリアル、ローカリゼーション、学術論文
 
 - alias: Communicate
   en: Communicate
   ru: ОБЩАЙТЕСЬ
+  de: Kommunikation
+  zh: 沟通
+  ko: 커뮤니케이션
+  ja: 伝える
 
 - alias: Online and offline (meetups, conferences, social networks, collaborations)
   en: Online and offline (meetups, conferences, social networks, collaborations)
   ru: ОНЛАЙН И ОФФЛАЙН (МИТАПЫ, КОНФЕРЕНЦИИ, СОЦИАЛЬНЫЕ СЕТИ, КОЛЛАБОРАЦИИ)
+  de: ONLINE und OFFLINE (Meetings, Konferenzen, Soziale Netzwerke, Kooperationen)
+  zh: 线上和线下（见面会、会议、社交网络、协作）
+  ko: 온라인 및 오프라인(미팅, 콘퍼런스, 소셜 네트워크, 협업)
+  ja: オンラインおよびオフライン（ミートアップ、カンファレンス、ソーシャルネットワーク、コラボレーション）
 
 - alias: Get rewards
   en: Get rewards
   ru: ПОЛУЧАЙТЕ ВОЗНАГРАЖДЕНИЯ
+  de: Erhalte Belohnungen
+  zh: 获得奖励
+  ko: 보상받기
+  ja: リワードを得る
 
 - alias: XRT reward every month, extra bonuses and gifts for top 5 ambassadors
   en: XRT reward every month, extra bonuses and gifts for top 5 ambassadors
   ru: ОЗНАГРАЖДЕНИЯ В XRT КАЖДЫЙ МЕСЯЦ, ДОПОЛНИТЕЛЬНЫЕ БОНУСЫ И ПОДАРКИ ДЛЯ ТОП-5 СРЕДИ АМБАССАДОРОВ
+  de: XRT-Belohnung jedes Monat, Zusätzliche Prämien und Geschenke für die 5 besten Ambassadors
+  zh: 每月XRT奖励，前5名推广大使还将获得额外奖励和礼品
+  ko: 매월 XRT 보상, 상위 5명의 앰배서더를 위한 추가 보너스 및 선물
+  ja: 毎月のXRTリワードに加え、上位5名のアンバサダーには追加ボーナスやギフトをプレゼント
 
 - alias: Get your role, ambassador
   en: Get your role, ambassador
   ru: ПОЛУЧИ СВОЮ РОЛЬ, АМБАССАДОР
+  de:
+  zh:
+  ko:
+  ja:
 
 - alias: How to become an ambassador?
   en: How to become an ambassador?
   ru: КАК СТАТЬ АМБАССАДОРОМ?
+  de: Wie wird man Ambassador?
+  zh: 如何成为大使？
+  ko: 앰배서더가 되려면 어떻게 해야 하나요?
+  ja: アンバサダーになる方法
 
 - alias: Tell us more about you
   en: Tell us more about you
   ru: РАССКАЖИТЕ НАМ О СЕБЕ
+  de: Erzähle uns mehr von dir
+  zh: 向我们介绍您自己
+  ko: 자기 소개를 해주세요
+  ja: あなたのことをもっと教えてください
 
 - alias: Fill out the questionnaire
   en: Fill out the questionnaire
   ru: ЗАПОЛНИТЕ АНКЕТУ
+  de: Fülle den Fragebogen aus
+  zh: 填写问卷
+  ko: 설문지 작성
+  ja: アンケートに答える
 
 - alias: Start
   en: Start
   ru: СТАРТ
+  de: Start
+  zh: 开始
+  ko: 시작
+  ja: 始める
 
 - alias: Wait for your invitation to the special Discord chat for ambassadors
   en: Wait for your invitation to the special Discord chat for ambassadors
   ru: ПОДОЖДИТЕ ПРИГЛАШЕНИЯ В СПЕЦИАЛЬНЫЙ ЧАТ ДЛЯ АМБАССАДОРОВ В DISCORD
+  de: Warte auf die Einladung zum speziellen Discord-Chat für Ambassador
+  zh: 等待邀请您加入大使专属Discord聊天
+  ko: 앰배서더를 위한 특별 디스코드 채팅 초대 대기
+  ja: Discordのアンバサダー向け特別チャットへの招待状をお待ちください
 
 - alias: The number of participants in the program is limited
   en: The number of participants in the program is limited
   ru: КОЛИЧЕСТВО УЧАСТНИКОВ ПРОГРАММЫ ОГРАНИЧЕНО
+  de: Die Anzahl der Teilnehmer am Programm sind begrenzt
+  zh: 本计划的参与者人数有限
+  ko: 프로그램의 참가자 수는 제한되어 있습니다.
+  ja: プログラムへの参加人数には制限があります
 
 - alias: For content makers
   en: For content makers
   ru: ДЛЯ СОЗДАТЕЛЕЙ КОНТЕНТА
+  de: Für Inhaltsanbieter
+  zh: 对于内容制作者
+  ko: 콘텐츠 제작자용
+  ja: コンテンツ制作者の方へ
 
 - alias: 'What you may do:'
   en: 'What you may do:'
   ru: 'Что вы можете делать:'
+  de: 'Was du eventuell machen kannst:'
+  zh: '您可能要做的事情：'
+  ko: '하는 일:'
+  ja: 'ご協力いただけること：'
 
 - alias: 1) work with technical documentation, instructions and tutorials;
   en: 1) work with technical documentation, instructions and tutorials;
   ru: 1) работать с технической документацией, инструкциями и туториалами;
+  de: 1) Arbeiten mit technischen Dokumente, Anleitungen und Tutorials
+  zh: 1) 处理技术文档、说明和教程；
+  ko: 1) 기술 문서, 지침 및 자습서를 참고하여 작업
+  ja: 1）技術文書、説明書、チュートリアルに目を通す。
 
 - alias: 2) translate content into your native language;
   en: 2) translate content into your native language;
   ru: 2) переводить контент на свой родной язык;
+  de: 2) Übersetzen der Inhalte in deiner Mutterspache
+  zh: 2) 将内容翻译为您的母语；
+  ko: 2) 콘텐츠를 모국어로 번역
+  ja: 2）コンテンツを母語に翻訳する。
 
 - alias: 3) make scientific papers based on Robonomics technologies;
   en: 3) make scientific papers based on Robonomics technologies;
   ru: 3) писать научные статьи по технологиям Робономики;
+  de: 3) wissenschaftliche Arbeiten auf der Grundlage von Robonomics-Technologien verfassen
+  zh: 3) 以Robonomics为基础，提出科学论文；
+  ko: 3) 로보노믹스 기술에 기반한 과학 논문 작성
+  ja: 3）Robonomics技術に基づいた学術論文を執筆する。
 
 - alias: 4) popularize ideas of Robonomics.
   en: 4) popularize ideas of Robonomics.
   ru: 4) популяризовать идеи Робономики.
+  de: 4) die Ideen der Robonomics verbreiten
+  zh: 4 ) 推广Robonomics理念。
+  ko: 4) 로보노믹스의 아이디어를 대중화.
+  ja: 4）Robonomicsのアイデアを広める。
 
 - alias: 'How:'
   en: 'How:'
   ru: 'Как:'
+  de: 'Wie das funktioniert:'
+  zh: '如何运作：'
+  ko: '방법:'
+  ja: 'その方法：'
 
+# TODO find out what to do with this links in zh, ko and ja languages
 - alias: 1) make pull requests on Github for
   en: 1) make pull requests on Github for
   ru: 1) сделать пул-реквест на Github для
-
+  de: 1) Erstelle Pull-Requests auf Github für die
+  zh: 
+  ko:
+  ja:
+# TODO find out what to do with this links in zh, ko and ja languages
 - alias: website
   en: website
   ru: website
-
+  de: Website
+  zh:
+  ko:
+  ja:
+# TODO find out what to do with this links in zh, ko and ja languages
 - alias: wiki
   en: wiki
   ru: wiki
+  de: Wiki
+  zh:
+  ko:
+  ja:
 
 - alias: 2) discuss what we need to translate in ambassador chat;
   en: 2) discuss what we need to translate in ambassador chat;
   ru: 2) узнать в чате амбассадоров, какие материалы требуется перевести;
+  de: 2) im Ambassador-Chat besprechen was wir übersetzen sollten
+  zh: 2) 在大使聊天中讨论我们需要翻译的内容；
+  ko: 2) 앰배서더 채팅에서 번역해야 하는 내용에 대해 논의
+  ja: 2）アンバサダーチャットで翻訳すべきものについて話し合う。
 
 - alias: 3) create video and text content, try to make it unique for your followers;
   en: 3) create video and text content, try to make it unique for your followers;
   ru: 3) создать видео или написать статью/пост - попробуйте сделать уникальный контент для своих подписчиков;
+  de: 3) Erstelle Video- und Textinhalte und versuche diese für deine Follower einzigartig zu gestalten
+  zh: 3) 创建对您的粉丝而言独一无二的视频和文本内容；
+  ko: 3) 동영상 및 텍스트 콘텐츠를 만들고 해당 콘텐츠를 팔로워에게 고유하게 만들기
+  ja: 3）動画やテキストコンテンツを作り、フォロワーに合ったユニークなものにするよう心がける。
 
 - alias: 4) share progress with other ambassadors and team.
   en: 4) share progress with other ambassadors and team.
   ru: 4) поделиться своими результатами с другими амбассадорами и командой в чате.
+  de: 4) die Fortschritte mit anderen Ambassadoren und dem Team teilen
+  zh: 4) 与其他大使和团队分享进展情况。
+  ko: 4) 다른 앰배서더 및 팀과 진행 상황을 공유.
+  ja: 4）ほかのアンバサダーやチームと進捗を共有する。
 
 - alias: For community helpers
   en: For community helpers
   ru: ДЛЯ ПОДДЕРЖКИ СООБЩЕСТВА
+  de: Für Unterstützer der Community
+  zh: 对于社区助手
+  ko: 커뮤니티 도우미
+  ja: コミュニティーヘルパーの方へ
 
 - alias: 'What you may do:'
   en: 'What you may do:'
   ru: 'Что вы можете делать:'
+  de: 'Was du eventuell machen kannst:'
+  zh: '您可能要做的事情：'
+  ko: '하는 일:'
+  ja: 'ご協力いただけること：'
 
 - alias: 1) organize local offline meetups and hackathons based on Robonomics technologies;
   en: 1) organize local offline meetups and hackathons based on Robonomics technologies;
   ru: 1) организовывать локальные митапы и хакатоны, основанные на технологиях Робономики;
+  de: 1) Organisation lokaler Offline-Treffen und Hackathons auf der Grundlage von Robonomics-Technologien
+  zh: 1) 组织基于Robonomics技术的本地线下见面会和黑客马拉松；
+  ko: 1) 로보노믹스 기술을 기반으로 현지 오프라인 미팅 및 해커톤 주최
+  ja: 1）Robonomics技術をベースにして、地域のオフラインミートアップやハッカソンを開催する。
 
 - alias: 2) participate in thematic conferences on behalf of Robonomics;
   en: 2) participate in thematic conferences on behalf of Robonomics;
   ru: 2) представлять Робономику на тематических конференциях;
+  de: 2) Teilnahme an thematischen Konferenzen im Namen von Robonomics
+  zh: 2) 代表Robonomics参加专题会议；
+  ko: 2) 로보노믹스를 대표하여 주제 콘퍼런스에 참여
+  ja: 2）Robonomicsを代表してテーマカンファレンスに参加する。
 
 - alias: '3) work online with community: online meetups and hackathons, chat administration, forum moderation, various social networks;'
   en: '3) work online with community: online meetups and hackathons, chat administration, forum moderation, various social networks;'
   ru: '3) работать с сообществом онлайн: онлайн митапы и хакатоны, администрирование чатов, модерация форумов, работа с различными социальными сетями;'
+  de: '3) Online mit der Community: Online-Treffen und -Hackathons, Chat-Administration, Forenmoderation, verschiedene soziale Netzwerke;'
+  zh: '3) 与社区在线合作：包括在线见面会和黑客马拉松、聊天管理、论坛管理、各种社交网络；'
+  ko: '3) 온라인 커뮤니티와의 협력: 온라인 미팅 및 해커톤, 채팅 관리, 포럼 중재, 다양한 소셜 네트워크'
+  ja: '3）オンラインミートアップやハッカソン、チャット管理、フォーラムのモデレーション、さまざまなソーシャルネットワークなどで、オンラインでコミュニティと連携する。'
 
 - alias: 4) communicate with other projects for collaboration.
   en: 4) communicate with other projects for collaboration.
   ru: 4) общаться с другими проектами на предмет коллабораций с Робономикой.
+  de: 4) Kommunikation mit anderen Projekten zur Zusammenarbeit.
+  zh: 4) 与其他合作项目沟通。
+  ko: 4) 협업을 위해 다른 프로젝트와 소통.
+  ja: 4）ほかのプロジェクトとコミュニケーションを取り、コラボレーションを図る。
 
 - alias: 1) make your suggestion in ambassador’s chat;
   en: 1) make your suggestion in ambassador’s chat;
   ru: 1) предложите идею в чате амбассадоров;
+  de: 1) Mach deine Vorschläge im Ambassador Chat
+  zh: 1) 在大使聊天中提出建议；
+  ko: 1) 앰배서더의 채팅에서 제안하기
+  ja: 1）アンバサダーチャットで提案する。
 
 - alias: 2) get merchandise if needed for offline events;
   en: 2) get merchandise if needed for offline events;
   ru: 2) получите мерч для оффлайн-мероприятий, если необходимо;
+  de: 2) Bei Bedarf Werbematerial für offline Veranstaltungen bestellen
+  zh: 2) 如果线下活动需要，获取商品；
+  ko: 2) 오프라인 행사에 필요한 경우 상품 구매하기
+  ja: 2）必要に応じてオフラインイベント用のグッズを入手する。
 
 - alias: 3) share progress with other ambassadors and team.
   en: 3) share progress with other ambassadors and team.
   ru: 3) поделитесь своими успехами в чате.
+  de: 3) die Fortschritte mit anderen Ambassadoren und dem Team teilen
+  zh: 3) 与其他大使和团队分享进展情况。
+  ko: 3) 다른 앰배서더 및 팀과 진행 상황을 공유.
+  ja: 3）ほかのアンバサダーやチームと進捗を共有する。
 
 - alias: Get all our support and visual materials in ambassador’s chat
   en: Get all our support and visual materials in ambassador’s chat
   ru: ПОЛУЧИТЕ НАШУ ПОЛНУЮ ПОДДЕРЖКУ И ВИЗУАЛЬНЫЕ МАТЕРИАЛЫ В ЧАТЕ АМБАССАДОРОВ
+  de: Erhalte all unsere Unterstützungs- und visuelle Informationen im Ambassador Chat
+  zh: 通过大使聊天，获取我们的所有支持和视觉材料
+  ko: 앰배서더의 채팅에서 모든 지원과 시각 자료를 얻으세요
+  ja: アンバサダーチャットで全面的サポートとビジュアル資料を入手しましょう
 
   # Components
 
