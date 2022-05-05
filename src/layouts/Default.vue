@@ -6,10 +6,8 @@
     <div class="screen banner">
 
       <header class="header">
-        <g-link class="banner-top" to="https://twitter.com/krakenfx/status/1507081935520256007">
-          <div class="layout__content">
-            <g-image src="~/assets/images/kraken-logo.svg" />
-            Kraken has announced the listing and activated trading for native parachain XRT</div>
+        <g-link class="banner-top" to="/ambassador-program">
+          <div class="layout__content">We launched Ambassador Program, join!</div>
         </g-link>
 
         <div class="header-content">
@@ -57,6 +55,7 @@ query {
 <style scoped>
 
   .banner-top {
+    position: relative;
     height: var(--space-bannertop);
     display: flex;
     justify-content: center;
@@ -68,16 +67,18 @@ query {
     text-decoration: none;
     overflow: hidden;
 
-    background-color: #5848d5;
+    background-color: var(--color-blue);
+    background-image: url(/ambassador-pattern.jpg);
     /* background-color: var(--color-red); */
     color: #fff !important;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 90%;
+    /* font-size: 90%; */
     line-height: 1;
 
     font-family: var(--font-family-code);
+    text-shadow: 1px 1px 0 #000;
 
     /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
 			<text x="20" y="20" font-size="10" style="fill:#ccc">🤖</text>\
@@ -85,16 +86,28 @@ query {
 			background-size: 30px 30px; */
   }
 
-  .banner-top:hover {
-    color: #fff !important;
-    background-color: #AF0098;
+  @media screen and (min-width: 700px) {
+    .banner-top {
+      font-size: 150%;
+    }
   }
 
-  .banner-top img {
-    display: inline;
-    max-width: 20px;
+  .banner-top:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
-  
+
+  .banner-top > div {
+    position: relative;
+    z-index: 1;
+  }
+
 
   .header {
     --logo-padding: 0.6rem;
