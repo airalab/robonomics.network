@@ -69,6 +69,8 @@ query {
 
     background-color: var(--color-blue);
     background-image: url(/ambassador-pattern.jpg);
+    background-position: 0 50%;
+    background-repeat: repeat-x;
     /* background-color: var(--color-red); */
     color: #fff !important;
     font-weight: bold;
