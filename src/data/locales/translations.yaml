@@ -16,6 +16,7 @@
   es: o
   ko: 또는
   de: oder
+  ja: や
 
 - alias: and
   en: and
@@ -2573,25 +2574,27 @@
   en: 1) make pull requests on Github for
   ru: 1) сделать пул-реквест на Github для
   de: 1) Erstelle Pull-Requests auf Github für die
-  zh: 
-  ko:
-  ja:
+  zh: 在Github上，为
+  ko: 1) GitHub에서 pull 요청하기
+  ja: 1）GitHubでプルリクエストを行う
+
 # TODO find out what to do with this links in zh, ko and ja languages
 - alias: website
   en: website
   ru: website
   de: Website
-  zh:
-  ko:
-  ja:
+  zh: 网站或
+  ko: 웹사이트
+  ja: Webサイト
+
 # TODO find out what to do with this links in zh, ko and ja languages
 - alias: wiki
   en: wiki
   ru: wiki
   de: Wiki
-  zh:
-  ko:
-  ja:
+  zh: wiki发出拉取请求
+  ko: 위키용
+  ja: Wikiの場合
 
 - alias: 2) discuss what we need to translate in ambassador chat;
   en: 2) discuss what we need to translate in ambassador chat;
