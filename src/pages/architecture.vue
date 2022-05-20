@@ -65,7 +65,10 @@
       <hr/>
 
       <section class="architecture-digital-twin layout layout__content animate-inside" v-in-viewport.once>
-        <g-image src="~/assets/images/vision-digital-twin.png"/>
+        <div>
+          <h2>New challenges</h2>
+          <g-image src="~/assets/images/vision-digital-twin.png"/>
+        </div>
         <article class="hyphens">
           <p>The development and application of the Internet of Things has shown that solving typical problems is not
             enough. Completely new concepts and principles, based on earlier mistakes and identified shortcomings, have
@@ -95,31 +98,31 @@
       <section class="architecture-iot-classification layout layout__content animate-inside" v-in-viewport.once>
         <div>
           <h2>Classification <strong>of iot devices</strong></h2>
-          <g-image src="~/assets/images/iot-classification.svg"/>
+          <g-image src="~/assets/images/iot-classification.png"/>
         </div>
         <div>
           <div>
-            <g-image src="~/assets/images/vision-embedded-systems.svg"/>
+            <g-image src="~/assets/images/embedded-systems.png"/>
             <div>
               <h3>Embedded iot systems</h3>
-              <p>Such systems have no user interfaces and typically used at the lowes level of the IoT ecosystems to
+              <p>Such systems have no user interfaces and are typically used at the lowest level of the IoT ecosystems to
                 provide basic functionality. Have to be energy efficient and small. Have limited computing and
-                communication resources. IoT gateways or controllers are usually act as signal receivers.</p>
+                communication resources. IoT gateways or controllers usually act as signal receivers.</p>
             </div>
           </div>
           <div>
-            <g-image src="~/assets/images/vision-edge-systems.svg"/>
+            <g-image src="~/assets/images/edge-systems.png"/>
             <div>
               <h3>EDGE-SYSTEMS: IOT GATEWAYS AND CONTROLLERS</h3>
               <p>These systems act as a link between locally accessible embedded systems and the global Internet. They
                 typically support multiple communication protocols of embedded systems and transfer telemetry from
-                devices to the cloud and control signals backwards. Often these devices are more sophisticated version
-                of the WiFi router, equipped ith a single board computer to perform primary processing of information
+                devices to the cloud and control signals backwards. Often these devices are a more sophisticated version
+                of the WiFi router, equipped with a single board computer to perform primary processing of information
                 from devices without leaving the local network.</p>
             </div>
           </div>
           <div>
-            <g-image src="~/assets/images/vision-autonomous-systems.svg"/>
+            <g-image src="~/assets/images/autonomous-systems.png"/>
             <div>
               <h3>autonomous systems</h3>
               <p>This class includes complex automata (such as Spot from Boston Dynamics), which have a control
@@ -140,13 +143,13 @@
           <div>
             <h3>internet of things providers</h3>
             <article class="hyphens">
-              <g-image src="~/assets/images/vision-iot-providers.svg"/>
+              <g-image src="~/assets/images/iot-providers.png"/>
               <p>
                 The main job of IoT providers is providing users with remote access to data and analytics, as well as
                 management of smart devices over the Internet. The main criteria for the quality of the provider is
                 security of operations, stability of connection and availability of the provider from anywhere in the
                 world.</p>
-              <p>The standard scheme for working with an IoT provider includes: installing software on a compatible
+              <p>The standard scheme for working with an IoT provider includes: installing software compatible
                 with the cloud smart device, setting up cloud-side management services after the first successful
                 connection of a device, connection of various kinds of analytical services.</p>
             </article>
@@ -154,7 +157,7 @@
           <div>
             <h3>digital twins are the heart of the internet of things</h3>
             <article class="hyphens">
-              <g-image src="~/assets/images/vision-digital-twin-small.svg"/>
+              <g-image src="~/assets/images/digital-twin-small.png"/>
               <p>Speaking of digital twins, it should be noted that architecturally their implementation is required;
                 as a refusal to give the user direct access to control devices and change their states. Out of the most
                 obvious reasons for rejection are, first, the presence of their own requirements and conditions in the
@@ -176,19 +179,19 @@
         <article class="hyphens">
           <h3>iot data flows in cloud services</h3>
           <div class="grid-3">
-              <g-image src="~/assets/images/vision-data-flows-1.svg"/>
+              <g-image src="~/assets/images/data-flows-1.png"/>
               <div>
                 <p>1.</p>
                 <p>Input values for cloud triggers. For example, the cloud service sends various notifications to the
                   user in the event of a report from a car alarm sensor about a strike.</p>
               </div>
-              <g-image src="~/assets/images/vision-data-flows-2.svg"/>
+              <g-image src="~/assets/images/data-flows-2.png"/>
               <div>
                 <p>2.</p>
                 <p>Output data for complex analytics that cannot be produced at the edge level. For example, when
                   processing video for face recognition in a crowd.</p>
               </div>
-              <g-image src="~/assets/images/vision-data-flows-3.svg"/>
+              <g-image src="~/assets/images/data-flows-3.png"/>
               <div>
                 <p>3.</p>
                 <p>The basis for forming a digital twin of the device in order to create a cast of its state. For
@@ -204,17 +207,17 @@
         <article class="hyphens">
           <h3>popular examples of iot solutions</h3>
           <div class="grid-3">
-            <g-image src="~/assets/images/vision-data-flows-4.svg"/>
+            <g-image src="~/assets/images/data-flows-4.png"/>
             <div>
               <p>1.</p>
               <p>A typical smart home system provides a wide range of options for controlling your living space. With its help you can remotely control the door locks, setting up one-time or regular access to the room as family and friends, and for maintenance or delivery personnel. With numerous sensors and recording devices, the system is able to include video recording when triggering motion sensors, autonomously make decisions to shut off the water supply when a leak is detected in the water system, start a scheduled robot vacuum cleaner, providing a cleaning report to the user app, change the room temperature to the optimal value depending on your schedule.</p>
             </div>
-            <g-image src="~/assets/images/vision-data-flows-5.svg"/>
+            <g-image src="~/assets/images/data-flows-5.png"/>
             <div>
               <p>2.</p>
               <p>Smart cars. Providing the car’s onboard electronics with access to mobile Internet, the user gets access to remote control of various car functions directly from his smartphone: opening doors, turning on the air conditioner, controlling the headlights. If such cars are used for carsharing, then you can create an interactive map of the location of cars with their status, the remaining fuel, etc. for the clients of this service.</p>
             </div>
-            <g-image src="~/assets/images/vision-data-flows-6.svg"/>
+            <g-image src="~/assets/images/data-flows-6.png"/>
             <div>
               <p>3.</p>
               <p>Smart equipment leasing system. The company installs robotic manipulators on the conveyor line under a contract with payment for the number of operations or for the time of the robot. Manipulators regularly provide a log of operations performed, errors and warnings. The robot’s leasing fee is calculated on the basis of this, as well as the vendor’s predictive maintenance of the robots.</p>
@@ -239,13 +242,13 @@
             <article class="hyphens">
               <p>The most important reason for the low cybersecurity of most IoT solutions stems from the problematic legacy of cloud client-server architecture. For example, the most common smart home architecture right now is usually an IoT hub, connected to a cloud service. Thus, a typical IoT system is a central control element connected to multiple external systems. Certainly, the cloud service is more secure than low-level devices, but the consolidation of centralized control over hundreds of thousands of such systems makes any security breaches and leaks a massive disaster.</p>
               <p>The cloud service servers are subject to all the typical cybersecurity problems: network attacks, DoS attacks (driving the system to failure), malicious modifications, user session hijacking, etc. But strong threats also include unintentional problems such as design errors, misuse or natural disasters that cause servers to fail. Also another definitely important point is the need in principle to trust the cloud and the people who maintain it.</p>
-              <p>All of this is exacerbated by the scale of IoT solutions. The number of IoT devices belonging to the same system can exceed hundreds or thousands, and at the same time by their nature IoT devices have less computing power, which makes it much more difficult to deploy firewalls and anti- viruses for them. Unfortunately the most pernicious factor is the fact that IoT devices are functioning CPSs, so threats to cybersecurity a real ready manifested at the physical level.</p>
+              <p>All of this is exacerbated by the scale of IoT solutions. The number of IoT devices belonging to the same system can exceed hundreds or thousands, and at the same time by their nature IoT devices have less computing power, which makes it much more difficult to deploy firewalls and anti- viruses for them. Unfortunately the most pernicious factor is the fact that IoT devices are functioning CPSs, so threats to cybersecurity are real ready manifested at the physical level.</p>
             </article>
           </div>
           <div>
             <h3>data privacy</h3>
             <article class="hyphens">
-              <p>The privacy point needs to be separated from cybersecurity, because this problem is specific to IoT systems. Due to the large number and varied device types that are much more integrated into the physical world than just computers and smartphones, the range of types of private data is multiplied. It’s no longer just GPS location, shopping records, financial transactions and photos, but also a permanent record of video and conversations, voice prints, health conditions and even a list of a person’s habits. Among the types of threats related to privacy are:</p>
+              <p>The privacy point needs to be separated from cybersecurity, because this problem is specific to IoT systems. Due to the large number and varied device types that are much more integrated into the physical world than just computers and smartphones, the range of types of private data is multiplied. It’s no longer just GPS location, shopping records, financial transactions and photos, but also a permanent record of video and conversations, voice prints, health conditions and even a list of a person’s habits. Among the types of threats related to privacy are: identification of information, localization and tracking, profiling, inventory attack, data linking attack.</p>
               <p>The creepiest part is that users have little or no awareness that they are giving up their privacy because they have almost no idea what data is being collected and how it is being used. The threat to privacy grows not only from intruders, but also from organizations and government agencies precisely because of this. The cloud IoT services typically require maximum data transfer from devices, and there are no ways to prohibit or narrow data transfer («Accept the Terms or Piss Off»). Moreover, despite the fact that the collected data is an asset and has real value, the person it is collected from is not only denied the right to actively dispose of that data, but even is denied any compensation for their own data’s collection and usage.</p>
             </article>
           </div>
@@ -482,9 +485,14 @@ export default {
     grid-template-columns: 1fr 1fr;
   }
 
+  .architecture-digital-twin h2 {
+    text-align: left;
+  }
+
   .architecture-digital-twin img {
     display: block;
     text-align: left;
+    margin-top: calc(var(--space) * 3);
     padding-left: var(--space);
     width: 100%;
     max-width: 1000px;
@@ -531,6 +539,10 @@ export default {
 
   .architecture-iot-classification {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .architecture-iot-classification h2 {
+    text-align: left;
   }
 
   .architecture-iot-classification h3 {
@@ -659,7 +671,7 @@ export default {
 
   .architecture-data-flows .grid-3 img {
     grid-row: 1;
-    width: auto;
+    width: 60%;
     margin: auto;
   }
 
