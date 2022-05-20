@@ -158,7 +158,7 @@
         </article>
         <div class="vision-fathers-image">
           <h2>Get rid of transaction costs</h2>
-          <g-image src="~/assets/images/vision-get-rid.svg"/>
+          <g-image src="~/assets/images/vision-get-rid.png"/>
         </div>
 
       </section>
@@ -411,42 +411,42 @@
 
           <div class="grid-2" v-in-viewport.once>
             <div>
-              <g-image src="~/assets/images/vision-chains-polkadot.svg"/>
+              <g-image src="~/assets/images/vision-chains-polkadot.png"/>
               <h2>Polkadot</h2>
             </div>
             <div>
               <h2>Ethereum 2.0</h2>
-              <g-image src="~/assets/images/vision-chains-etherium.svg"/>
+              <g-image src="~/assets/images/vision-chains-ethereum.png"/>
             </div>
           </div>
           <div class="grid-2">
             <div>
               <p>Heterogeneous Blockchain Network</p>
-              <g-image src="~/assets/images/vision-chains-parachain.svg"/>
+              <g-image src="~/assets/images/vision-chains-parachain.png"/>
             </div>
             <div>
               <p>Homogeneous Shard Network</p>
-              <g-image src="~/assets/images/vision-chains-shard-network.svg"/>
+              <g-image src="~/assets/images/vision-chains-shard-network.png"/>
             </div>
           </div>
           <div class="grid-2">
             <div>
               <p>On-chain protocol control</p>
-              <g-image src="~/assets/images/vision-chains-polkadot-hammer.svg"/>
+              <g-image src="~/assets/images/vision-chains-polkadot-hammer.png"/>
             </div>
             <div>
               <p>Protection against the tyranny of the crowd</p>
-              <g-image src="~/assets/images/vision-chains-tyranny.svg"/>
+              <g-image src="~/assets/images/vision-chains-tyranny.png"/>
             </div>
           </div>
           <div class="grid-2">
             <div>
               <p>Auction of bandwidth in the common network</p>
-              <g-image src="~/assets/images/vision-chains-auction.svg"/>
+              <g-image src="~/assets/images/vision-chains-auction.png"/>
             </div>
             <div>
               <p>Payment for gas by users</p>
-              <g-image src="~/assets/images/vision-chains-gas-payment.svg"/>
+              <g-image src="~/assets/images/vision-chains-gas-payment.png"/>
             </div>
           </div>
         </div>
@@ -458,7 +458,7 @@
           <h2>open questions of teleology</h2>
           <i>Inspired by Norbert Wiener</i>
 
-          <g-image alt="" src="~/assets/images/person-lugwig-von-mises.svg"/>
+          <g-image alt="" src="~/assets/images/person-lugwig-von-mises.png"/>
         </div>
 
         <article class="hyphens">
