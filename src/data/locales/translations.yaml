@@ -418,7 +418,7 @@
 
 - alias: Serverless IoT applications for users
   en: Serverless IoT applications for users
-  ru: Serverless IoT-приложения пользователей
+  ru: Бессерверные IoT-приложения пользователей
   zh: 面向用户的无服务器物联网应用
   es: Aplicaciones de IoT sin servidor para usuarios
   ko: 사용자를 위한 서버리스 IoT 애플리케이션
@@ -488,14 +488,14 @@
   de: Kuka-Manipulator starten
   ja: Kukaマニピュレーターを起動
 
-#- alias: Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.
-#  en: Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.
-#  ru: Отправьте транзакцию в парачейне Робономики, запустите манипулятор Kuka и получите телеметрию робота в IPFS.
-#  zh: 在 Robonomics 平行链中发送交易，启动 Kuka 机械臂，并在 IPFS 中获取机器人的遥测数据。
-#  es: Envíe la transacción en la parachain de Robonomics, inicie el manipulador Kuka y obtenga la telemetría del robot en IPFS.
-#  ko: 로보노믹스 파라체인에서 트랜잭션을 보내고 Kuka 조작기를 실행하고 IPFS에서 로봇의 원격 측정을 가져옵니다.
-#  de: Senden Sie die Transaktion in Robonomics-Parachain, starten Sie den Kuka-Manipulator und rufen Sie die Telemetrie des Roboters in IPFS ab.
-#  ja: Robonomicsパラチェーンでトランザクションを送信し、Kukaマニピュレーターを起動して、IPFSでロボットのテレメトリを取得します。
+- alias: Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.
+  en: Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.
+  ru: Отправьте транзакцию в парачейне Робономики, запустите манипулятор Kuka и получите телеметрию робота в IPFS.
+  zh: 在 Robonomics 平行链中发送交易，启动 Kuka 机械臂，并在 IPFS 中获取机器人的遥测数据。
+  es: Envíe la transacción en la parachain de Robonomics, inicie el manipulador Kuka y obtenga la telemetría del robot en IPFS.
+  ko: 로보노믹스 파라체인에서 트랜잭션을 보내고 Kuka 조작기를 실행하고 IPFS에서 로봇의 원격 측정을 가져옵니다.
+  de: Senden Sie die Transaktion in Robonomics-Parachain, starten Sie den Kuka-Manipulator und rufen Sie die Telemetrie des Roboters in IPFS ab.
+  ja: Robonomicsパラチェーンでトランザクションを送信し、Kukaマニピュレーターを起動して、IPFSでロボットのテレメトリを取得します。
 
 - alias: ROS-based Projects for Smart Spaces
   en: ROS-based Projects for Smart Spaces
