@@ -1,7 +1,7 @@
 ---
 title: 'Release 2.0 & XCM support'
 date: 2022-06-09
-published: false
+published: true
 locale: 'en'
 cover_image: ./images/release_2.0_&_xcm_support/cover.jpg
 description: "Release 2.0 is a very important milestone for our project & community, as it opens up the possibility of integrating Robonomics with other parachains in the Kusama ecosystem. In the coming months, the project R&D team will devote itself to integrations with the Statemine, Karura, Moonriver, Crust and KILT parachains."
