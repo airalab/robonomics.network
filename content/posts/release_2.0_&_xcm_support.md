@@ -8,7 +8,7 @@ description: "Release 2.0 is a very important milestone for our project & commun
 abstract: "Release 2.0 and XCM support are here!"
 ---
 
-Release 2.0 is a very important milestone for our project & community, as it opens up the possibility of integrating Robonomics with other parachains in the Kusama ecosystem. In the coming months, the project R&D team will devote itself to integrations with the Statemine, Karura, Moonriver, Crust and KILT parachains.
+[Release 2.0](https://github.com/airalab/robonomics/releases/tag/v2.0.0) is a very important milestone for our project & community, as it opens up the possibility of integrating Robonomics with other parachains in the Kusama ecosystem. In the coming months, the project R&D team will devote itself to integrations with the Statemine, Karura, Moonriver, Crust and KILT parachains.
 
 We took the first steps towards parachain communication 1.5 years ago, [demonstrating the exchange of messages between two blockchains](https://wiki.robonomics.network/docs/en/cross-chain-messages/) during a master class in St. Petersburg. Last year, [Gav published a series of articles in which XCMP was modified](https://medium.com/polkadot-network/xcm-the-cross-consensus-message-format-3b77b1373392) - it was turned into cross-consensus messaging (XCM) and received it’s first version number above zero.
 
@@ -20,7 +20,7 @@ Adhering to the view that Kusama itself is a heterogeneous network, the Robonomi
 
 We will maximize our usage of the features from other parachains which can help to implement smart home/city or industrial scenarios when possible. For example, this year we plan to use the existing solutions of other parachains (not create our own solutions for): (1) personal balances of user access tokens, (2) dapp and IoT device user identification system, (3) large file storage, (4) use of IoT devices in work smart contracts.
 
-At the time of the release of version 2.0, Robonomics is ready for integration with any parachain running on the Kusama network. The software implementation of XCM v1 support can be found in [the alpha runtime directory](https://github.com/airalab/robonomics/tree/master/runtime/alpha) of the main Robonomics repository on Substrate.
+At the time of the release of version 2.0, Robonomics is ready for integration with any parachain running on the Kusama network. The software implementation of XCM support can be found in [the alpha runtime directory](https://github.com/airalab/robonomics/tree/master/runtime/alpha) of the main Robonomics repository on Substrate.
 
 In May and June 2022, compatibility tests with the Relay chain were already carried out on Rococo network using the example of teleporting the native Rococo Relay Chain token - ROC (analogous to KSM, but on the Rococo test network) - to the Robonomics parachain.
 
