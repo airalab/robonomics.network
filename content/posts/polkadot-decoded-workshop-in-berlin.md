@@ -5,7 +5,7 @@ published: true
 locale: 'en'
 cover_image: ./images/polkadot-decoded-workshop-in-berlin/cover.jpg
 description: "The Robonomics team wants to impact the Kusama network development with scenarios for personal use in your home! We will show: how you can interact with the most popular sensors (such as Aqara/Xiaomi) over Kusama, how you can connect up a co-working space to be under the control of a Kusama Parachain, and more…"
-abstract: "Time: 11:50 Berlin Time"
+abstract: "Date: 29 June. Time: 11:50 Berlin Time"
 ---
 
 The Robonomics team wants to impact the Kusama network development with scenarios for personal use in your home! We will show: how you can interact with the most popular sensors (such as Aqara/Xiaomi) over Kusama, how you can connect up a co-working space to be under the control of a Kusama Parachain, and more…
