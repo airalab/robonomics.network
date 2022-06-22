@@ -45,7 +45,7 @@
 
       </section>
 
-      <p class="footer-line align-right">© 2021 {{$ts('This site is maintained by Airalab DAO')}} {{$ts('and')}} <g-link to="https://github.com/airalab/robonomics.network">{{$ts('opened')}}</g-link> {{$ts('for your suggestions')}}.</p>
+      <p class="footer-line align-right">© {{year}} {{$ts('This site is maintained by Airalab DAO')}} {{$ts('and')}} <g-link to="https://github.com/airalab/robonomics.network">{{$ts('opened')}}</g-link> {{$ts('for your suggestions')}}.</p>
     </div>
   </footer>
 </template>
@@ -124,7 +124,9 @@ query {
         }
 
       }
+    },
+    computed: {
+      year: () => (new Date).getFullYear()
     }
-
   }
 </script>
