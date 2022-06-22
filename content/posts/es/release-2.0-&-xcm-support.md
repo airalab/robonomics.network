@@ -3,7 +3,7 @@ title: 'Release 2.0 & Compatibilidad XCM'
 date: 2022-06-09
 published: true
 locale: 'es'
-cover_image: ./images/release_2.0_&_xcm_support/cover.jpg
+cover_image: ./images/release-2.0-&-xcm-support/cover.jpg
 description: "Release 2.0 es un hito muy importante para nuestro proyecto y comunidad, ya que abre la posibilidad de integrar Robonomics con otras parachains en el ecosistema de Kusama Network. En los próximos meses, el equipo de R&D del proyecto se dedicará a las integraciones con las parachains Statemine, Karura Network, Moonriver Network, Crust Network y KILT Protocol."
 abstract: "¡La versión 2.0 y la compatibilidad con XCM están aquí!"
 ---
