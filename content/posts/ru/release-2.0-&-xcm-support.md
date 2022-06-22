@@ -3,7 +3,7 @@ title: 'Релиз 2.0 & поддержка XCM'
 date: 2022-06-09
 published: true
 locale: 'ru'
-cover_image: ./images/release_2.0_&_xcm_support/cover.jpg
+cover_image: ./images/release-2.0-&-xcm-support/cover.jpg
 description: "Релиз 2.0 очень важен для сообщества проекта, так как открывает возможность интеграции Робономики с другими парачейнами в экосистеме Kusama. Ближайшие месяцы R&D команда проекта посвятит интеграциям с парачейнами Statemine, Karura, Moonriver, Crust и KILT."
 abstract: "Релиз 2.0 и поддержка XCM уже здесь!"
 ---
