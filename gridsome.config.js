@@ -57,7 +57,7 @@ module.exports = {
     {
       use: "gridsome-plugin-translateit",
       options: {
-        locales: ["en", "ru", "zh", "es", "ko", "de", "ja"],
+        locales: ["en", "ru", "zh", "es", "ko", "de", "ja", "pt", "az"],
         defaultLocale: "en",
         translations: yaml.load(fs.readFileSync('./src/data/locales/translations.yaml', 'utf8')),
         collections: ['blog'],
