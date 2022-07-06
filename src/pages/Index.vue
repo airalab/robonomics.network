@@ -47,7 +47,7 @@
 
       <section class="section__whitespace">
         <div class="layout layout__text align-center">
-          <h2>{{$ts('Get started GetStartedBlock')}}</h2>
+          <h2>{{$ts('Get started')}}</h2>
         </div>
 
         <section class="index-getstarted layout layout__content grid-2 animate-inside" v-in-viewport.once>
@@ -55,7 +55,7 @@
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-1.png" />
             </div>
-            <h3>{{$ts('Explore Robonomics GetStartedBlock')}}</h3>
+            <h3>{{$ts('Explore Robonomics')}}</h3>
             <p>{{$ts('Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more')}}</p>
           </g-link>
 
@@ -63,7 +63,7 @@
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-2.png" />
             </div>
-            <h3>{{$ts('Get XRT GetStartedBlock')}}</h3>
+            <h3>{{$ts('Get XRT')}}</h3>
             <p>{{$ts('XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain')}}</p>
           </g-link>
 
@@ -71,7 +71,7 @@
           <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-3.png" />
             </div>
-            <h3>{{$ts('Use a dapp GetStartedBlock')}}</h3>
+            <h3>{{$ts('Use a Dapp')}}</h3>
             <p>{{$ts('Take a look at the Beta version of decentralized application for managing IoT devices')}}</p>
           </g-link>
 
@@ -79,7 +79,7 @@
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-4.png" />
             </div>
-            <h3>{{$ts('Start building GetStartedBlock')}}</h3>
+            <h3>{{$ts('Start building')}}</h3>
             <p>{{$ts('Learn Robonomics through tutorials and practically useful experimenting in Robonomics WIKI')}}</p>
           </g-link>
         </section>

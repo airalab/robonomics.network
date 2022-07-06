@@ -2,14 +2,14 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Intro for devs')"
+      :pageTitle = "$ts('Building Dapps && Web Services for IoT on Robonomics Parachain')"
       :pageDescription = "$ts('The future of humanity itself depends on how we teach robots to handle their capabilities.')"
       :pageImage = "'/website_cover.jpg'"
     />
 
     <div class="page">
       <section class="section section__solid section__dotted_darkblue wide">
-        <h1 class="layout layout__text clean">{{$ts('Intro for devs')}}</h1>
+        <h1 class="layout layout__text clean">{{$ts('Building Dapps && Web Services for IoT on Robonomics Parachain')}}</h1>
         <div class="layout layout__text animate subtitle" v-in-viewport.once>{{$ts('Sergei Lonshakov')}}, {{$ts('software architect')}}</div>
       </section>
 
@@ -121,7 +121,7 @@
           <section class="layout layout__content">
             <section class="animate-inside" v-in-viewport.once>
               <h2>{{$ts('Robonomics Connectivity')}}</h2>
-              <p class="layout__text" v-html="$ts('Robonomics contains a set of software for connecting')" />
+              <p class="layout__text" v-html="$ts('For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS).')" />
             </section>
 
             <div class="introTools grid-3 animate-inside" v-in-viewport.once>
