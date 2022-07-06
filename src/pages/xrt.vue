@@ -107,7 +107,7 @@
 
         <section >
             <div class="layout layout__text">
-                <h2>{{$ts('XRT Fundamentals')}}</h2>
+                <h2>{{$ts('XRT fundamentals')}}</h2>
                 <p class="text-big-light hyphens">{{$ts('The economy of the token is directly related to the implementation of the network. Read Robonomics White paper from May 12, 2018 and prepare for updates.')}}</p>
                 
                 <g-link class="oldy oldy__link oldy__card" to="https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf">
