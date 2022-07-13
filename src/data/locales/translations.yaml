@@ -1073,6 +1073,7 @@
     \ && Web\u30B5\u30FC\u30D3\u30B9\u3092\u69CB\u7BC9"
   ko: "Robonomics Parachain\uC5D0\uC11C IoT\uC6A9 DApp \uBC0F \uC6F9 \uC11C\uBE44\uC2A4\
     \ \uAD6C\uCD95"
+  pt: "Construindo DApps && Servi\xE7os Web para IoT na Parachain Robonomics "
   ru: "\u0421\u043E\u0437\u0434\u0430\u043D\u0438\u0435 \u0434\u0435\u0446\u0435\u043D\
     \u0442\u0440\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u044B\u0445\
     \ \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439 \u0438 \u0432\u0435\
@@ -1113,6 +1114,9 @@
     \ \uBAA8\uB4E0 \uB178\uB3D9\uC740 \uB178\uC608 \uB178\uB3D9\uC758 \uACBD\uC81C\
     \uC801 \uACB0\uACFC \uB610\uD55C \uBC1B\uC544\uB4E4\uC5EC\uC57C \uD569\uB2C8\uB2E4\
     ."
+  pt: "Lembremos que a m\xE1quina autom\xE1tica \xE9 o equivalente econ\xF4mico exato\
+    \ do trabalho escravo\". Qualquer trabalho que concorra com o trabalho escravo\
+    \ deve aceitar as consequ\xEAncias econ\xF4micas do trabalho escravo."
   ru: "\u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u0432\u0441\u043F\u043E\u043C\u043D\
     \u0438\u043C, \u0447\u0442\u043E \u0440\u043E\u0431\u043E\u0442 - \u044D\u0442\
     \u043E \u0442\u043E\u0447\u043D\u044B\u0439 \u044D\u043A\u043E\u043D\u043E\u043C\
@@ -1152,6 +1156,8 @@
     \ \uAC19\uC2B5\uB2C8\uB2E4. \uC774\uBBF8 \uD654\uD3D0\uB97C \uB2E4\uB8E8\uACE0\
     \ \uBC95\uC801 \uAD00\uACC4\uB97C \uB9FA\uC744 \uC218 \uC788\uC73C\uBA70 \uB3C5\
     \uB9BD\uC801\uC73C\uB85C \uD589\uB3D9\uD569\uB2C8\uB2E4."
+  pt: "Os rob\xF4s s\xE3o como crian\xE7as adultas hoje em dia - eles j\xE1 podem\
+    \ administrar dinheiro, entrar em rela\xE7\xF5es jur\xEDdicas, ser independentes."
   ru: "\u0421\u0435\u0433\u043E\u0434\u043D\u044F \u0440\u043E\u0431\u043E\u0442\u044B\
     \ \u043F\u043E\u0445\u043E\u0436\u0438 \u043D\u0430 \u043F\u043E\u0432\u0437\u0440\
     \u043E\u0441\u043B\u0435\u0432\u0448\u0438\u0445 \u0434\u0435\u0442\u0435\u0439\
@@ -1185,6 +1191,8 @@
   ko: "\uC778\uB958\uC758 \uBBF8\uB798\uB294 \uB85C\uBD07\uC5D0\uAC8C \uC790\uC2E0\
     \uC758 \uB2A5\uB825\uC744 \uB2E4\uB8E8\uB294 \uBC29\uBC95\uC744 \uC5B4\uB5BB\uAC8C\
     \ \uAD50\uC721\uD558\uB290\uB0D0\uC5D0 \uB2EC\uB824 \uC788\uC2B5\uB2C8\uB2E4."
+  pt: "O futuro da pr\xF3pria humanidade depende de como ensinamos os rob\xF4s a lidar\
+    \ com suas capacidades."
   ru: "\u0411\u0443\u0434\u0443\u0449\u0435\u0435 \u0447\u0435\u043B\u043E\u0432\u0435\
     \u0447\u0435\u0441\u0442\u0432\u0430 \u0437\u0430\u0432\u0438\u0441\u0438\u0442\
     \ \u043E\u0442 \u0442\u043E\u0433\u043E, \u043A\u0430\u043A \u043C\u044B \u043D\
@@ -1202,6 +1210,7 @@
   it: "CHE COS'\xC8 ROBONOMICS?"
   ja: "Robonomics\u3068\u306F\u4F55\u304B\uFF1F"
   ko: "Robonomics\uB780 \uBB34\uC5C7\uC778\uAC00\uC694?"
+  pt: "O que \xE9 Robonomics?"
   ru: "\u0427\u0442\u043E \u0442\u0430\u043A\u043E\u0435 \u0420\u043E\u0431\u043E\u043D\
     \u043E\u043C\u0438\u043A\u0430?"
   zh: "\u4EC0\u4E48\u662FRobonomics\uFF1F"
@@ -1249,6 +1258,11 @@
     \ \uD2B8\uB79C\uC7AD\uC158 \uD615\uD0DC\uB85C \uAE30\uC220 \uBC0F \uACBD\uC81C\
     \ \uC815\uBCF4\uB97C \uAD50\uD658\uD558\uB294 \uCC28\uC138\uB300 \uC778\uD130\uB137\
     \ \uAE30\uC220(Web3)\uC744 \uC9C0\uC6D0\uD569\uB2C8\uB2E4."
+  pt: "A Robonomics \xE9 uma plataforma de c\xF3digo aberto para aplica\xE7\xF5es\
+    \ IoT. Apoiamos uma nova gera\xE7\xE3o de tecnologias de Internet (web3) que implementa\
+    \ a troca de informa\xE7\xF5es t\xE9cnicas e econ\xF4micas na forma de transa\xE7\
+    \xF5es at\xF4micas entre aplica\xE7\xF5es dos usu\xE1rios, servi\xE7os de IoT\
+    \ e rob\xF3tica complexa."
   ru: "\u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0430 - \u044D\u0442\
     \u043E \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0430 \u0441 \u043E\u0442\
     \u043A\u0440\u044B\u0442\u044B\u043C \u0438\u0441\u0445\u043E\u0434\u043D\u044B\
@@ -1281,26 +1295,31 @@
   az: "T\u0259tbiq"
   en: User (D)App
   it: User (D)App
+  pt: .nan
   ru: "\u041F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435"
 - alias: Function request
   az: "Funksiona\u0131 sor\u011Fu"
   en: Function request
   it: Function request
+  pt: "Solicita\xE7\xE3o de fun\xE7\xE3o"
   ru: "\u0417\u0430\u043F\u0440\u043E\u0441"
 - alias: Report
   az: Hesabat
   en: Report
   it: Report
+  pt: "Relat\xF3rio"
   ru: "\u041E\u0442\u0447\u0435\u0442"
 - alias: Control
   az: "R\u0259q\u0259msal \u0259kiz"
   en: Control
   it: Control
+  pt: Controle
   ru: "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435"
 - alias: Log
   az: Kontrol
   en: Log
   it: Log
+  pt: Registro
   ru: "\u041B\u043E\u0433"
 - alias: Operate with digital twins of IoT devices
   az: Qeyd
@@ -1312,6 +1331,7 @@
     \u3067\u52D5\u4F5C"
   ko: "IoT \uAE30\uAE30\uC758 \uB514\uC9C0\uD138 \uD2B8\uC708\uC744 \uC0AC\uC6A9\uD558\
     \uC5EC \uC791\uB3D9"
+  pt: "Operar com g\xEAmeos digitais de dispositivos IoT"
   ru: "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u0446\u0438\u0444\u0440\u043E\u0432\
     \u044B\u043C\u0438 \u0434\u0432\u043E\u0439\u043D\u0438\u043A\u0430\u043C\u0438\
     \ IoT-\u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432"
@@ -1330,6 +1350,8 @@
     \u30DC\u30C3\u30C8\u306E\u305F\u3081\u306E\u5951\u7D04"
   ko: "\uB85C\uBD07 \uACBD\uC81C\uC758 \uCCAB \uBC88\uC9F8 \uB3C4\uAD6C: \uB85C\uBD07\
     \uC5D0 \uB4DC\uB294 \uB3C8, \uB85C\uBD07\uC5D0 \uB300\uD55C \uACC4\uC57D"
+  pt: "As primeiras ferramentas da economia dos rob\xF4s: dinheiro para rob\xF4s,\
+    \ contratos para rob\xF4s"
   ru: "\u041F\u0435\u0440\u0432\u044B\u0435 \u0438\u043D\u0441\u0442\u0440\u0443\u043C\
     \u0435\u043D\u0442\u044B \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0438\
     \ \u0440\u043E\u0431\u043E\u0442\u043E\u0432: \u0434\u0435\u043D\u044C\u0433\u0438\
@@ -1347,6 +1369,7 @@
     \u63A5\u7D9A\u3059\u308B\u305F\u3081\u306E\u30BD\u30D5\u30C8\u30A6\u30A7\u30A2"
   ko: "\uBD84\uC0B0\uD615 \uD074\uB77C\uC6B0\uB4DC\uC5D0 \uAE30\uAE30\uB97C \uC5F0\
     \uACB0\uD560 \uC218 \uC788\uB294 \uC18C\uD504\uD2B8\uC6E8\uC5B4"
+  pt: Software para conectar dispositivos a uma nuvem descentralizada
   ru: "\u041F\u041E \u0434\u043B\u044F \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\
     \u043D\u0438\u044F \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432 \u043A\
     \ \u0434\u0435\u0446\u0435\u043D\u0442\u0440\u0430\u043B\u0438\u0437\u043E\u0432\
@@ -1364,6 +1387,7 @@
     \u7528\u306EAPI\u30E9\u30A4\u30D6\u30E9\u30EA"
   ko: "\uB9DE\uCDA4\uD615 IoT \uC560\uD50C\uB9AC\uCF00\uC774\uC158\uC744 \uC704\uD55C\
     \ API \uB77C\uC774\uBE0C\uB7EC\uB9AC"
+  pt: .nan
   ru: "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 API \u0434\u043B\
     \u044F \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\
     \u0441\u043A\u0438\u0445 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\
@@ -1421,6 +1445,12 @@
     . \uB530\uB77C\uC11C \uAC1C\uBC1C\uC790\uB294 \uC2A4\uB9C8\uD2B8 \uC2DC\uD2F0\
     \ \uBC0F Industry 4.0\uC6A9 \uCD5C\uC2E0 \uBCF4\uC548 \uC560\uD50C\uB9AC\uCF00\
     \uC774\uC158\uC744 \uB9CC\uB4E4 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  pt: "A Robonomics possui um conjunto completo de ferramentas para o desenvolvimento\
+    \ de aplica\xE7\xF5es IOT, tanto no lado da rob\xF3tica quanto no da interface\
+    \ do usu\xE1rio. A comunica\xE7\xE3o entre o usu\xE1rio e o dispositivo acontece\
+    \ utilizando as tecnologias de maior sucesso do mundo Web3 - IPFS, Ethereum, e\
+    \ Polkadot. Assim, os desenvolvedores podem criar aplica\xE7\xF5es modernas e\
+    \ seguras para Cidades Inteligentes e para a Ind\xFAstria 4.0."
   ru: "\u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0430 \u0441\u043E\u0434\
     \u0435\u0440\u0436\u0438\u0442 \u043F\u043E\u043B\u043D\u044B\u0439 \u043D\u0430\
     \u0431\u043E\u0440 \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\
@@ -1485,6 +1515,9 @@
     \ \uBCF5\uC7A1\uD55C \uB85C\uBD07\uACF5\uD559 \uC2DC\uC2A4\uD15C\uACFC \uAC19\uC740\
     \ \uC5F0\uACB0\uC6A9 \uC18C\uD504\uD2B8\uC6E8\uC5B4 \uBAA8\uC74C\uC774 \uD3EC\uD568\
     \uB418\uC5B4 \uC788\uC2B5\uB2C8\uB2E4."
+  pt: "Para a conveni\xEAncia dos desenvolvedores, a Robonomics cont\xE9m um conjunto\
+    \ de softwares para conex\xF5es: dispositivos IoT usando o protocolo HTTP/MQTT,\
+    \ sistemas rob\xF3ticos complexos usando o Robot Operating System (ROS)."
   ru: "\u0414\u043B\u044F \u0443\u0434\u043E\u0431\u0441\u0442\u0432\u0430 \u0440\u0430\
     \u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u043E\u0432 \u0420\u043E\
     \u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0430 \u0441\u043E\u0434\u0435\u0440\
@@ -1514,6 +1547,7 @@
   ja: "\u30BB\u30F3\u30B5\u30FC\u3092Robonomics\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\
     \u306B\u63A5\u7D9A"
   ko: "\uC13C\uC11C \uC5F0\uACB0"
+  pt: Conecte um sensor
   ru: "\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u0441\u0435\u043D\
     \u0441\u043E\u0440"
   zh: "\u8FDE\u63A5\u4F20\u611F\u5668"
@@ -1534,6 +1568,7 @@
   it: alla rete di Robonomics
   ja: "\u3057\u307E\u3059\u3002"
   ko: "Robonomics \uB124\uD2B8\uC6CC\uD06C\uC5D0"
+  pt: "\xE0 rede Robonomis"
   ru: "\u043A \u0441\u0435\u0442\u0438 \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\
     \u043A\u0430"
   zh: "\u4E0ERobonomics\u7F51\u7EDC\u5EFA\u7ACB\u8FDE\u63A5\u3002"
@@ -1545,6 +1580,7 @@
   it: Prova
   ja: ' '
   ko: "\uC0AC\uC6A9\uD574\uBCF4\uAE30"
+  pt: Experimente
   ru: "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435"
   zh: "\u8BD5\u7528"
 - alias: a simple prototyping tool
@@ -1561,6 +1597,7 @@
     \u306A\u30D7\u30ED\u30C8\u30BF\u30A4\u30D4\u30F3\u30B0\u30C4\u30FC\u30EB\u3067\
     \u3059\u3002"
   ko: "\uAC04\uB2E8\uD55C \uD504\uB85C\uD1A0\uD0C0\uC774\uD551 \uB3C4\uAD6C"
+  pt: uma ferramenta simples de prototipagem
   ru: "\u043F\u0440\u043E\u0441\u0442\u043E\u0439 \u0438\u043D\u0441\u0442\u0440\u0443\
     \u043C\u0435\u043D\u0442 \u0434\u043B\u044F \u0441\u043E\u0437\u0434\u0430\u043D\
     \u0438\u044F \u043F\u0440\u043E\u0442\u043E\u0442\u0438\u043F\u043E\u0432"
@@ -1574,6 +1611,7 @@
   ja: ' '
   ko: "\uB85C \uB098\uB9CC\uC758 \uAC00\uC0C1 \uBB3C\uB9AC \uC2DC\uC2A4\uD15C \uAD6C\
     \uCD95 \uC2DC\uC791"
+  pt: "Comece construir seu pr\xF3prio sistema f\xEDsico cibern\xE9tico com o"
   ru: "\u041D\u0430\u0447\u043D\u0438\u0442\u0435 \u0441\u0442\u0440\u043E\u0438\u0442\
     \u044C \u0441\u0432\u043E\u044E \u043A\u0438\u0431\u0435\u0440-\u0444\u0438\u0437\
     \u0438\u0447\u0435\u0441\u043A\u0443\u044E \u0441\u0438\u0441\u0442\u0435\u043C\
@@ -1587,6 +1625,7 @@
   ja: "Aira OS \u3092\u4F7F\u7528\u3057\u3066\u72EC\u81EA\u306E\u30B5\u30A4\u30D0\u30FC\
     \u30D5\u30A3\u30B8\u30AB\u30EB\u30B7\u30B9\u30C6\u30E0\u306E\u69CB\u7BC9\u3092\
     \ \u958B\u59CB\u3057\u307E\u3059\u3002"
+  pt: SO Aira
 - alias: Robonomics Supports Hundreds of Robots Out of the Box
   az: "Robonomics IO \u2014 prototipl\u0259r yaratmaq \xFC\xE7\xFCn sad\u0259 al\u0259\
     t"
@@ -1597,6 +1636,7 @@
   ja: "Robonomics\u306B\u542B\u307E\u308C\u308B\u3082\u306E"
   ko: "Robonomics\uB85C \uC989\uC2DC \uC0AC\uC6A9\uD560 \uC218 \uC788\uB294 \uB85C\
     \uBD07 \uC218\uBC31 \uB300 \uC9C0\uC6D0 \uAC00\uB2A5"
+  pt: "Robonomics suporta centenas de rob\xF4s prontos para uso"
   ru: "\u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0430 \u043F\u043E\u0434\
     \u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 \u0441\u043E\u0442\u043D\
     \u0438 \u0440\u043E\u0431\u043E\u0442\u043E\u0432 \u0438\u0437 \u043A\u043E\u0440\
@@ -1629,6 +1669,9 @@
     \uC81C\uC5D0 \uC5F0\uACB0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC5D0\uC11C\
     \ \uC9C0\uC6D0\uB418\uB294 \uB85C\uBD07\uC758 \uC804\uCCB4 \uBAA9\uB85D\uC744\
     \ \uD655\uC778\uD558\uC138\uC694"
+  pt: "Os usu\xE1rios da plataforma podem conectar rob\xF4s compat\xEDveis com ROS\
+    \ \xE0 economia digital em quest\xE3o de minutos. Para uma lista completa de rob\xF4\
+    s compat\xEDveis, por favor, siga o link"
   ru: "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438 \u043F\
     \u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B \u043C\u043E\u0433\u0443\u0442\
     \ \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0440\u043E\u0431\
@@ -1655,6 +1698,7 @@
     \u30D5\u30E9\u30B9\u30C8\u30E9\u30AF\u30C1\u30E3"
   ko: "IoT\uB97C \uC704\uD55C \uBD84\uC0B0\uD615 \uD074\uB77C\uC6B0\uB4DC \uC778\uD504\
     \uB77C"
+  pt: Infraestrutura de nuvem descentralizada para IoT
   ru: "\u0414\u0435\u0446\u0435\u043D\u0442\u0440\u0430\u043B\u0438\u0437\u043E\u0432\
     \u0430\u043D\u043D\u0430\u044F \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\
     \u0430 \u043E\u0431\u043B\u0430\u043A\u0430 \u0434\u043B\u044F \u0418\u043D\u0442\
@@ -1680,6 +1724,8 @@
     \ IPFS\uB97C \uAE30\uBC18\uC73C\uB85C \uD558\uB294 \uB85C\uBD07\uACF5\uD559 \uBC0F\
     \ IoT\uC6A9 \uAE30\uBCF8 \uC778\uD504\uB77C \uC11C\uBE44\uC2A4\uC785\uB2C8\uB2E4\
     ."
+  pt: "Robonomics Web Services (RWS) \xE9 o servi\xE7o b\xE1sico de infraestrutura\
+    \ para Rob\xF3tica e IoT na Parachain Robonomics e IPFS"
   ru: "\u0412\u0435\u0431-\u0441\u0435\u0440\u0432\u0438\u0441\u044B \u0420\u043E\u0431\
     \u043E\u043D\u043E\u043C\u0438\u043A\u0438 (RWS) - \u044D\u0442\u043E \u0431\u0430\
     \u0437\u043E\u0432\u044B\u0439 \u0438\u043D\u0444\u0440\u0430\u0441\u0442\u0440\
@@ -1703,6 +1749,7 @@
     \u80FD"
   ko: "\uD604\uC7AC IoT\uC5D0 \uC0AC\uC6A9\uD560 \uC218 \uC788\uB294 \uD575\uC2EC\
     \ RWS \uAE30\uB2A5"
+  pt: "Principais recursos RWS dispon\xEDveis para IoT hoje"
   ru: "\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u0444\u0443\u043D\u043A\u0446\
     \u0438\u0438 RWS, \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0435 \u0434\
     \u043B\u044F \u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0430 \u0432\u0435\
@@ -1720,6 +1767,7 @@
   it: BROKER DI MESSAGGI PUBSUB RWS
   ja: "PubSub\u30E1\u30C3\u30BB\u30FC\u30B8\u30D6\u30ED\u30FC\u30AB\u30FC\u3002"
   ko: "RWS PubSub \uBA54\uC2DC\uC9C0 \uBE0C\uB85C\uCEE4"
+  pt: .nan
   ru: "\u0411\u0440\u043E\u043A\u0435\u0440 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\
     \u0438\u0439 RWS PubSub"
   zh: "RWS PubSub\u6D88\u606F\u4EE3\u7406\u3002"
@@ -1733,6 +1781,7 @@
   ja: "\u30C7\u30FC\u30BF\u30D6\u30ED\u30C3\u30AF\u30C1\u30A7\u30FC\u30F3\u5316\u30B5\
     \u30FC\u30D3\u30B9\u3002"
   ko: "RWS \uB370\uC774\uD130 \uBE14\uB85D\uCCB4\uC778\uD654 \uC11C\uBE44\uC2A4"
+  pt: "Servi\xE7o de Blockchainiza\xE7\xE3o de Dados RWS"
   ru: "\u0421\u0435\u0440\u0432\u0438\u0441 RWS \u0434\u043B\u044F \u0431\u043B\u043E\
     \u043A\u0447\u0435\u0439\u043D\u0438\u0437\u0430\u0446\u0438\u0438 \u0434\u0430\
     \u043D\u043D\u044B\u0445"
@@ -1747,6 +1796,7 @@
   it: AZIONI DEI ROBOT RWS
   ja: "\u30ED\u30DC\u30C3\u30C8\u30A2\u30AF\u30B7\u30E7\u30F3\u3002"
   ko: "RWS \uB85C\uBD07 \uC791\uB3D9"
+  pt: .nan
   ru: "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u0440\u043E\u0431\u043E\u0442\
     \u043E\u0432 \u0441 RWS"
   zh: "RWS\uFF1A\u673A\u5668\u52A8\u4F5C\u3002"
@@ -1765,6 +1815,7 @@
   ko: "IPFS \uD504\uB85C\uD1A0\uCF5C\uC744 \uAE30\uBC18\uC73C\uB85C p2p \uB124\uD2B8\
     \uC6CC\uD06C\uB97C \uD1B5\uD574 \uBB34\uC81C\uD55C \uBA54\uC2DC\uC9C0\uB97C \uBCF4\
     \uB0C5\uB2C8\uB2E4"
+  pt: "Use mensagens ilimitadas atrav\xE9s de uma rede p2p baseada no protocolo IPFS"
   ru: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u043D\u0435\
     \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043D\u044B\u0439 \u043E\
     \u0431\u043C\u0435\u043D \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F\
@@ -1785,6 +1836,7 @@
     \u30F3\u306B\u4FDD\u5B58\u3057\u307E\u3059\u3002"
   ko: "IPFS\uC5D0 \uB370\uC774\uD130\uB97C \uC785\uB825\uD55C \uB2E4\uC74C \uACF5\uC6A9\
     \ \uBE14\uB85D\uCCB4\uC778\uC5D0 \uD574\uC2DC\uB97C \uC800\uC7A5\uD569\uB2C8\uB2E4"
+  pt: "Coloque dados no IPFS e armazene hashes em uma Blockchain p\xFAblica"
   ru: "\u041F\u043E\u043C\u0435\u0449\u0430\u0439\u0442\u0435 \u0434\u0430\u043D\u043D\
     \u044B\u0435 \u0432 IPFS \u0438 \u0445\u0440\u0430\u043D\u0438\u0442\u0435 \u0445\
     \u044D\u0448\u0438 \u0432 \u043F\u0443\u0431\u043B\u0438\u0447\u043D\u043E\u0439\
@@ -1810,6 +1862,8 @@
   ko: "\uCF1C\uAE30/\uB044\uAE30\uB97C \uBE44\uB86F\uD574 \uBD84\uC0B0\uD615 \uCEF4\
     \uD4E8\uD130\uC758 \uC81C\uC5B4 \uD558\uC5D0 IoT \uAE30\uAE30\uC758 \uC791\uB3D9\
     \uC744 \uC2DC\uC791\uD558\uAC70\uB098 \uBA48\uCDA5\uB2C8\uB2E4"
+  pt: Ligar / desligar; inicie ou pare seus dispositivos IoT sob o controle de um
+    computador descentralizado
   ru: "\u0417\u0430\u043F\u0443\u0441\u043A\u0430\u0439\u0442\u0435 \u0438 \u043E\u0441\
     \u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0439\u0442\u0435 \u0441\
     \u0432\u043E\u0438 IoT-\u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430\
@@ -1831,6 +1885,7 @@
     \u30EB\u30C4\u30A4\u30F3"
   ko: "IoT \uC560\uD50C\uB9AC\uCF00\uC774\uC158\uC758 \uD575\uC2EC - \uBE14\uB85D\uCCB4\
     \uC778\uC5D0\uC11C\uC758 \uB514\uC9C0\uD138 \uD2B8\uC708"
+  pt: "O cora\xE7\xE3o de sua aplica\xE7\xE3o IoT - G\xEAmeos Digitais em Blockchain"
   ru: "\u0421\u0435\u0440\u0434\u0446\u0435 \u0432\u0430\u0448\u0435\u0433\u043E IoT-\u043F\
     \u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F - \u0446\u0438\u0444\u0440\
     \u043E\u0432\u043E\u0439 \u0434\u0432\u043E\u0439\u043D\u0438\u043A \u043D\u0430\
@@ -1887,6 +1942,11 @@
     \uBC18\uC5D0 \uAC78\uCCD0 \uC774\uB7EC\uD55C \uC0AC\uBB3C\uC758 \uC0C1\uD0DC\uC5D0\
     \ \uAD00\uD574 \uACF5\uC720\uB41C \uB2E8\uC77C \uBC84\uC804\uC758 \uC9C4\uC2E4\
     (single version of the truth, SVOT)\uC744 \uD65C\uC131\uD654\uD569\uB2C8\uB2E4"
+  pt: "Na arquitetura t\xE9cnica, os g\xEAmeos digitais IoT fornecem a visibilidade\
+    \ e o monitoramento de coisas e eventos relacionados (por exemplo, usando dispositivos\
+    \ IoT para capturar automaticamente a origem de um produto), e a blockchain permite\
+    \ a vers\xE3o \xFAnica compartilhada da verdade quanto ao estado dessas coisas\
+    \ em seus ciclos de vida e eventos de neg\xF3cios associados"
   ru: "\u0412 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0430\
     \u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435 \u0446\u0438\u0444\
     \u0440\u043E\u0432\u044B\u0435 \u0434\u0432\u043E\u0439\u043D\u0438\u043A\u0438\
@@ -1926,6 +1986,7 @@
   it: dalla ricerca di Gartner
   ja: "\u30AC\u30FC\u30C8\u30CA\u30FC\u306E\u8ABF\u67FB\u3088\u308A"
   ko: "\uCD9C\uCC98: \uAC00\uD2B8\uB108 \uB9AC\uC11C\uCE58(Gartner research)"
+  pt: da pesquisa de Gartner
   ru: "\u0438\u0437 \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\
     \u044F Gartner"
   zh: "\u6765\u81EAGartner\uFF08\u9AD8\u5FB7\u7EB3\uFF09\u7814\u7A76\u62A5\u544A"
@@ -1949,6 +2010,8 @@
   ko: "Robonomics Parachain\uC740 \uB514\uC9C0\uD138 \uD2B8\uC708 \uBAA8\uB378\uC744\
     \ \uC0DD\uC131\uD558\uACE0 6\uCD08\uB9C8\uB2E4 \uC0C1\uD0DC\uB97C \uC5C5\uB370\
     \uC774\uD2B8\uD560 \uAE30\uD68C\uB97C \uC81C\uACF5\uD569\uB2C8\uB2E4."
+  pt: "A Parachain Robonomics oferece a oportunidade de criar um modelo de g\xEAmeo\
+    \ digital e atualizar seu estado a cada 6 segundos."
   ru: "\u041F\u0430\u0440\u0430\u0447\u0435\u0439\u043D \u0420\u043E\u0431\u043E\u043D\
     \u043E\u043C\u0438\u043A\u0438 \u0434\u0430\u0435\u0442 \u0432\u043E\u0437\u043C\
     \u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0441\u043E\u0437\u0434\u0430\u0442\
@@ -1971,6 +2034,7 @@
     \u30FC\u30B1\u30C3\u30C8\u30D7\u30EC\u30A4\u30B9"
   ko: "\uB85C\uBD07\uACF5\uD559\uC6A9 App Store - Robonomics \uB9C8\uCF13\uD50C\uB808\
     \uC774\uC2A4"
+  pt: "App Store para Rob\xF3tica - Robonomics Marketplace"
   ru: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D \u043F\u0440\u0438\u043B\u043E\u0436\
     \u0435\u043D\u0438\u0439 \u0434\u043B\u044F \u0440\u043E\u0431\u043E\u0442\u043E\
     \u0442\u0435\u0445\u043D\u0438\u043A\u0438 - \u0442\u043E\u0440\u0433\u043E\u0432\
@@ -2024,6 +2088,11 @@
     \ \uC544\uB2CC \uB9C8\uCF13\uD50C\uB808\uC774\uC2A4\uB97C \uD1B5\uD55C \uB514\uC9C0\
     \uD138 \uD2B8\uC708 \uC81C\uACF5 \uB4F1\uC5D0 \uB300\uD55C \uCC44\uD0DD \uC7A5\
     \uBCBD\uC744 \uB0AE\uCDB0\uC57C \uD569\uB2C8\uB2E4"
+  pt: "As empresas que projetam e fabricam produtos e equipamentos conectados \xE0\
+    \ IoT devem adotar um modelo flex\xEDvel de entrega de g\xEAmeos digitais para\
+    \ reduzir as barreiras \xE0 ado\xE7\xE3o, como oferecer g\xEAmeos digitais por\
+    \ meio de marketplaces, em vez de oferecer apenas g\xEAmeos digitais por meio\
+    \ de seu pr\xF3prio modelo de entrega propriet\xE1rio"
   ru: "\u041A\u043E\u043C\u043F\u0430\u043D\u0438\u0438, \u043A\u043E\u0442\u043E\u0440\
     \u044B\u0435 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\
     \u044E\u0442 \u0438 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u044F\u0442\
@@ -2071,6 +2140,8 @@
     \uB7EC\uBD84\uC758 \uD68C\uC0AC\uC5D0\uC11C IoT \uC0B0\uC5C5\uC744 \uC704\uD574\
     \ \uC81C\uACF5\uD558\uB294 \uCD94\uAC00 \uC11C\uBE44\uC2A4\uC640 \uC9C1\uC811\
     \ \uC5F0\uACB0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  pt: "O modelo de g\xEAmeo digital desenvolvido pode ser diretamente vinculado a\
+    \ servi\xE7os adicionais que sua empresa fornece para o setor de IoT."
   ru: "\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u043D\u043D\u0443\u044E\
     \ \u043C\u043E\u0434\u0435\u043B\u044C \u0446\u0438\u0444\u0440\u043E\u0432\u043E\
     \u0433\u043E \u0434\u0432\u043E\u0439\u043D\u0438\u043A\u0430 \u043C\u043E\u0436\
@@ -2125,6 +2196,10 @@
     \ \uD68C\uC0AC \uC790\uB3D9\uD654 \uC11C\uBE44\uC2A4\uB85C \uAD6C\uD604\uB41C\
     \ \uBC88\uB4E4\uC758 \uCCAB \uBC88\uC9F8 \uC608\uC2DC\uB97C \uC0B4\uD3B4\uBCF4\
     \uC138\uC694."
+  pt: "Para tornar um processo de entrega conveniente e simples para centenas de clientes,\
+    \ adicionamos uma se\xE7\xE3o de servi\xE7os para o mercado de rob\xF4s. D\xEA\
+    \ uma olhada nos primeiros exemplos dos pacotes de modelos de g\xEAmeos digitais\
+    \ implementados + servi\xE7o automatizado da empresa."
   ru: "\u0427\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u043F\
     \u0440\u043E\u0446\u0435\u0441\u0441 \u0434\u043E\u0441\u0442\u0430\u0432\u043A\
     \u0438 \u0443\u0434\u043E\u0431\u043D\u044B\u043C \u0438 \u043F\u0440\u043E\u0441\
@@ -2176,6 +2251,9 @@
     ? \uADF8\uB807\uB2E4\uBA74 Robonomics \uD50C\uB7AB\uD3FC\uC5D0\uC11C \uB2E8\uACC4\
     \uBCC4 \uC548\uB0B4\uC5D0 \uB530\uB77C \uB098\uB9CC\uC758 IoT \uC560\uD50C\uB9AC\
     \uCF00\uC774\uC158\uC744 \uAD6C\uCD95\uD574\uBCF4\uC138\uC694."
+  pt: "Voc\xEA tem uma ideia para o seu servi\xE7o para rob\xF4s ou usu\xE1rios? Em\
+    \ seguida, prossiga com as instru\xE7\xF5es passo a passo para criar seu aplicativo\
+    \ IoT na plataforma Robonomics."
   ru: "\u0423 \u0432\u0430\u0441 \u0435\u0441\u0442\u044C \u0438\u0434\u0435\u044F\
     \ \u0434\u043B\u044F \u0432\u0430\u0448\u0435\u0433\u043E \u0441\u0435\u0440\u0432\
     \u0438\u0441\u0430 \u0434\u043B\u044F \u0440\u043E\u0431\u043E\u0442\u043E\u0432\
