@@ -5291,31 +5291,14 @@
     \u042F \u0418\u041D\u0422\u0415\u0420\u041D\u0415\u0422\u0410 \u0412\u0415\u0429\
     \u0415\u0419 (IOT)"
   tr: "Nesnelerin \u0130nternetinin Durumuna Genel Bak\u0131\u015F (IoT)"
-- alias: The issue of network accessibility of automatic devices has been discussed
-    all over the planet since the 60s, and already at that time quite serious attempts
-    were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed
-    and partially implemented the automated collection of information on the production
-    volumes of an individual plant as part of the design of the OGAS national information
-    system in the 60s and 70s. It is widely known how the Coca-Cola vending machine
-    was connected to the ARPANET in the 1980s so that the machines could report the
-    availability of drinks and their temperature.
-  en: The issue of network accessibility of automatic devices has been discussed all
-    over the planet since the 60s, and already at that time quite serious attempts
-    were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed
-    and partially implemented the automated collection of information on the production
-    volumes of an individual plant as part of the design of the OGAS national information
-    system in the 60s and 70s. It is widely known how the Coca-Cola vending machine
-    was connected to the ARPANET in the 1980s so that the machines could report the
-    availability of drinks and their temperature.
+- alias: The issue of network accessibility of automatic devices has been discussed all over the planet since the 60s, and already at that time quite serious attempts were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed and partially implemented the automated collection of information on the production volumes of an individual plant as part of the design of the
+  en: The issue of network accessibility of automatic devices has been discussed all over the planet since the 60s, and already at that time quite serious attempts were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed and partially implemented the automated collection of information on the production volumes of an individual plant as part of the design of the
   it: "La questione sull'accessibilit\xE0 alla rete dei dispositivi automatici, \xE8\
     \ stata discussa in tutto il pianeta dagli anni '60 e gi\xE0 a quel tempo sono\
     \ stati fatti dei tentativi piuttosto seri per risolverlo. Ad esempio, il cibernetico\
     \ sovietico Viktor Glushkov ha proposto e parzialmente implementato la raccolta\
     \ automatica di informazioni sui volumi di produzione di un singolo impianto,\
-    \ come parte della progettazione del sistema informativo nazionale OGAS, negli\
-    \ anni '60 e '70. \xC8 noto che i distributori automatici di Coca-Cola fossero\
-    \ collegati ad ARPANET negli anni '80, in modo che potessero segnalare la disponibilit\xE0\
-    \ di bevande e la loro temperatura."
+    \ come parte della progettazione del sistema informativo nazionale"
   pt: "A quest\xE3o da acessibilidade da rede de dispositivos autom\xE1ticos tem sido\
     \ discutida em todo o planeta desde os anos 60, e j\xE1 naquela \xE9poca foram\
     \ feitas tentativas bastante s\xE9rias para resolv\xEA-lo. Por exemplo, o ciberneticista\
@@ -5351,22 +5334,41 @@
     \ \u043F\u0440\u043E\u0435\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\
     \u044F \u043D\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u043E\u0439\
     \ \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\
-    \u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u041E\u0413\u0410\u0421 \u0432\
-    \ 60-70-\u0445 \u0433\u043E\u0434\u0430\u0445. \u0428\u0438\u0440\u043E\u043A\u043E\
-    \ \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E, \u043A\u0430\u043A 1980-\u044B\
-    \u0445 \u0442\u043E\u0440\u0433\u043E- \u0432\u044B\u0439 \u0430\u0432\u0442\u043E\
-    \u043C\u0430\u0442 Coca-Cola \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u043B\
-    \u0438 \u043A ARPANET, \u0447\u0442\u043E\u0431\u044B \u0430\u0432\u0442\u043E\
-    \u043C\u0430\u0442 \u043C\u043E\u0433 \u0441\u043E\u043E\u0431\u0449\u0430\u0442\
-    \u044C \u043E \u043D\u0430\u043B\u0438\u0447\u0438\u0438 \u043D\u0430\u043F\u0438\
-    \u0442\u043A\u043E\u0432 \u0438 \u0438\u0445 \u0442\u0435\u043C\u043F\u0435\u0440\
-    \u0430\u0442\u0443\u0440\u0435."
+    \u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B"
   tr: "Otomatik cihazlar\u0131n a\u011F eri\u015Filebilirli\u011Fi konusu, 60'l\u0131\
     \ y\u0131llardan beri t\xFCm gezegende tart\u0131\u015F\u0131l\u0131yor ve o zamanlar\
     \ bunu \xE7\xF6zmek i\xE7in olduk\xE7a ciddi giri\u015Fimlerde bulunuldu. \xD6\
     rne\u011Fin, Sovyet sibernetik\xE7i Viktor Glushkov, 60'l\u0131 ve 70'li y\u0131\
-    llarda OGAS ulusal bilgi sisteminin tasar\u0131m\u0131n\u0131n bir par\xE7as\u0131\
-    \ olarak tek bir tesisin \xFCretim hacimleri hakk\u0131nda otomatik bilgi toplamay\u0131\
+    llarda"
+- alias: OGAS
+  en: OGAS
+  it: OGAS
+  pt: OGAS
+  ru: "\u041E\u0413\u0410\u0421"
+  tr: OGAS
+- alias: national information system in the 60s and 70s. It is widely known how the
+    Coca-Cola vending machine was connected to the ARPANET in the 1980s so that the
+    machines could report the availability of drinks and their temperature.
+  en: national information system in the 60s and 70s. It is widely known how the Coca-Cola
+    vending machine was connected to the ARPANET in the 1980s so that the machines
+    could report the availability of drinks and their temperature.
+  it: ", negli anni '60 e '70. \xC8 noto che i distributori automatici di Coca-Cola\
+    \ fossero collegati ad ARPANET negli anni '80, in modo che potessero segnalare\
+    \ la disponibilit\xE0 di bevande e la loro temperatura."
+  pt: "nos anos 60 e 70. \xC9 amplamente conhecido como a m\xE1quina de venda autom\xE1\
+    tica da Coca-Cola foi conectada \xE0 ARPANET na d\xE9cada de 1980 para que as\
+    \ m\xE1quinas pudessem informar a disponibilidade de bebidas e sua temperatura."
+  ru: "\u0432 60-70-\u0445 \u0433\u043E\u0434\u0430\u0445. \u0428\u0438\u0440\u043E\
+    \u043A\u043E \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E, \u043A\u0430\u043A\
+    \ 1980-\u044B\u0445 \u0442\u043E\u0440\u0433\u043E- \u0432\u044B\u0439 \u0430\u0432\
+    \u0442\u043E\u043C\u0430\u0442 Coca-Cola \u043F\u043E\u0434\u043A\u043B\u044E\u0447\
+    \u0438\u043B\u0438 \u043A ARPANET, \u0447\u0442\u043E\u0431\u044B \u0430\u0432\
+    \u0442\u043E\u043C\u0430\u0442 \u043C\u043E\u0433 \u0441\u043E\u043E\u0431\u0449\
+    \u0430\u0442\u044C \u043E \u043D\u0430\u043B\u0438\u0447\u0438\u0438 \u043D\u0430\
+    \u043F\u0438\u0442\u043A\u043E\u0432 \u0438 \u0438\u0445 \u0442\u0435\u043C\u043F\
+    \u0435\u0440\u0430\u0442\u0443\u0440\u0435."
+  tr: "ulusal bilgi sisteminin tasar\u0131m\u0131n\u0131n bir par\xE7as\u0131 olarak\
+    \ tek bir tesisin \xFCretim hacimleri hakk\u0131nda otomatik bilgi toplamay\u0131\
     \ \xF6nerdi ve k\u0131smen uygulad\u0131. Coca-Cola otomat\u0131n\u0131n 1980'lerde\
     \ ARPANET'e nas\u0131l ba\u011Fland\u0131\u011F\u0131 yayg\u0131n olarak biliniyor,\
     \ b\xF6ylece makineler i\xE7eceklerin mevcudiyetini ve s\u0131cakl\u0131klar\u0131\
@@ -6204,6 +6206,46 @@
     \ Son olarak, cihaz\u0131n devre d\u0131\u015F\u0131 kalmas\u0131 durumunda cihaz\u0131\
     n son fiili durumunu kullan\u0131labilir durumda tutmak son derece yararl\u0131\
     d\u0131r."
+- alias: As a result, we have a separation of the loop of information exchange with
+    the user and the actual generation of actual data by the sensors. To illustrate
+    this principle, below is the process of the user working with an IoT device using
+    a digital twin.
+  en: As a result, we have a separation of the loop of information exchange with the
+    user and the actual generation of actual data by the sensors. To illustrate this
+    principle, below is the process of the user working with an IoT device using a
+    digital twin.
+  it: .nan
+  pt: .nan
+  ru: "\u041F\u0440\u044F\u043C\u043E \u0441\u0435\u0439\u0447\u0430\u0441 \u043D\u0430\
+    \ \u043D\u0430\u0448\u0438\u0445 \u0433\u043B\u0430\u0437\u0430\u0445 \u043F\u0440\
+    \u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442 \u0441\u0442\u0430\u043D\u043E\
+    \u0432\u043B\u0435\u043D\u0438\u0435 \u0446\u0435\u043B\u043E\u0433\u043E \u0441\
+    \u0435\u0433\u043C\u0435\u043D\u0442\u0430 \u0441\u0435\u0442\u0438, \u0441\u043F\
+    \u0440\u043E\u0435\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\
+    \u0433\u043E \u0438 \u0443\u0434\u043E\u0431\u043D\u043E\u0433\u043E \u043D\u0435\
+    \ \u0434\u043B\u044F \u043B\u044E\u0434\u0435\u0439, \u0430 \u0434\u043B\u044F\
+    \ \u043C\u0430\u0448\u0438\u043D. \u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442\
+    \ \u0432\u0435\u0449\u0435\u0439 \u2014 \u044D\u0442\u043E \u0443\u0436\u0435\
+    \ \u043D\u0435 \u043F\u0440\u043E\u0441\u0442\u043E \u043C\u0435\u0445\u0430\u043D\
+    \u0438\u043A\u0430 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\
+    \u044F \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430 \u043A \u0441\
+    \u0435\u0442\u0438, \u043D\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u0441\u0435\
+    \u0440\u0432\u0438\u0441\u044B \u0438 \u0441\u043B\u0443\u0436\u0431\u044B, \u0441\
+    \u043E\u0437\u0434\u0430\u043D\u043D\u044B\u0435 \u0438 \u0434\u043E\u0441\u0442\
+    \u0443\u043F\u043D\u044B\u0435 \u0438\u043C\u0435\u043D\u043D\u043E \u0443\u0441\
+    \u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430\u043C. \u0418\u043D\u0442\u0435\
+    \u0440\u043D\u0435\u0442 \u0432\u0435\u0449\u0435\u0439 \u043D\u0435 \u0442\u043E\
+    \u043B\u044C\u043A\u043E \u0441\u0432\u044F\u0437\u044B\u0432\u0430\u0435\u0442\
+    \ \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u0438\
+    \ \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E, \u043D\u043E \u0438\
+    \ \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u0443\u0441\u0442\u0440\u043E\
+    \u0439\u0441\u0442\u0432\u0430\u043C \u0441\u043F\u0440\u0430\u0432\u043B\u044F\
+    \u0442\u044C\u0441\u044F \u0441 \u0437\u0430\u0434\u0430\u0447\u0430\u043C\u0438\
+    \ \u043F\u043E \u043E\u043A\u0430\u0437\u0430\u043D\u0438\u044E \u0443\u0441\u043B\
+    \u0443\u0433\u0438 \u0434\u043B\u044F \u0447\u0435\u043B\u043E\u0432\u0435\u043A\
+    \u0430, \u043D\u043E \u0430\u0432\u0442\u043E\u043D\u043E\u043C\u043D\u043E \u043E\
+    \u0442 \u043D\u0435\u0433\u043E."
+  tr: .nan
 - alias: IOT DATA FLOWS IN CLOUD SERVICES
   en: IOT DATA FLOWS IN CLOUD SERVICES
   it: FLUSSI DI DATI IOT NEI SERVIZI CLOUD
@@ -7302,16 +7344,8 @@
     \ \u0414\u041B\u042F \u041F\u041E\u041B\u042C\u0417\u041E\u0412\u0410\u0422\u0415\
     \u041B\u0415\u0419"
   tr: "KULLANICILAR \u0130\xC7\u0130N SUNUCUSIZ IOT UYGULAMALARI"
-- alias: 'Modern advances in web3-technology can solve the issue of user privacy.
-    With web3 there is no need to authenticate or require connection to specific servers
-    to access telemetry and control the device.
-
-    '
-  en: 'Modern advances in web3-technology can solve the issue of user privacy. With
-    web3 there is no need to authenticate or require connection to specific servers
-    to access telemetry and control the device.
-
-    '
+- alias: 'Modern advances in web3-technology can solve the issue of user privacy. With web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.'
+  en: 'Modern advances in web3-technology can solve the issue of user privacy. With web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.'
   it: "\"I moderni progressi delle tecnologie web3 possono risolvere il problema della\
     \ privacy degli utenti. Con il web3 non \xE8 necessario autenticarsi o richiedere\
     \ la connessione a server specifici per accedere alla telemetria e controllare\

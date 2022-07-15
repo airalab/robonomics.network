@@ -29,20 +29,8 @@
         </div>
 
         <article class="hyphens">
-          <p>{{$ts(`The issue of network accessibility of automatic devices has been discussed all over the planet since the
-            60s, and already at that time quite serious attempts were made to solve it. For example, the Soviet
-            cyberneticist Viktor Glushkov proposed and partially implemented the automated collection of information on
-            the production volumes of an individual plant as part of the design of the`)}}
-            <g-link to="https://en.wikipedia.org/wiki/OGAS">OGAS</g-link> {{$ts(`national information system
-            in the 60s and 70s. It is widely known how the Coca-Cola vending machine was connected to the ARPANET in the
-            1980s so that the machines could report the availability of drinks and their temperature.`)}}</p>
-          <p>{{$ts(`But still, the actual development of IoT is happening today, due to the widespread use of enabling
-            technologies. The main drivers of the rapid evolution of Internet of Things applications are the results of
-            the development of many areas – from wireless communications of various ranges and embedded devices, to
-            cloud analytics and machine learning. The number of IoT devices has been growing steadily over the past 10
-            years (with a forecast of 25 billion units by 2030), and this has spurred researchers and developers to
-            create new IoT applications in various areas such as healthcare, home automation, agribusiness,
-            environmental protection.`)}}</p>
+          <p>{{$ts(`The issue of network accessibility of automatic devices has been discussed all over the planet since the 60s, and already at that time quite serious attempts were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed and partially implemented the automated collection of information on the production volumes of an individual plant as part of the design of the`)}} <g-link to="https://en.wikipedia.org/wiki/OGAS">{{$ts(`OGAS`)}}</g-link> {{$ts(`national information system in the 60s and 70s. It is widely known how the Coca-Cola vending machine was connected to the ARPANET in the 1980s so that the machines could report the availability of drinks and their temperature.`)}}</p>
+          <p>{{$ts(`But still, the actual development of IoT is happening today, due to the widespread use of enabling technologies. The main drivers of the rapid evolution of Internet of Things applications are the results of the development of many areas – from wireless communications of various ranges and embedded devices, to cloud analytics and machine learning. The number of IoT devices has been growing steadily over the past 10 years (with a forecast of 25 billion units by 2030), and this has spurred researchers and developers to create new IoT applications in various areas such as healthcare, home automation, agribusiness, environmental protection.`)}}</p>
           <p>{{$ts(`We are more interested in the process of building IoT-systems and the tasks that arise in this process. Over the years of research, many different architectures have been proposed, and by averaging them, we can distinguish three basic components of an IoT system: devices, network infrastructure, analytical, computing and control machines.`)}}</p>
         </article>
 
