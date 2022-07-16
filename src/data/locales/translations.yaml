@@ -5291,8 +5291,16 @@
     \u042F \u0418\u041D\u0422\u0415\u0420\u041D\u0415\u0422\u0410 \u0412\u0415\u0429\
     \u0415\u0419 (IOT)"
   tr: "Nesnelerin \u0130nternetinin Durumuna Genel Bak\u0131\u015F (IoT)"
-- alias: The issue of network accessibility of automatic devices has been discussed all over the planet since the 60s, and already at that time quite serious attempts were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed and partially implemented the automated collection of information on the production volumes of an individual plant as part of the design of the
-  en: The issue of network accessibility of automatic devices has been discussed all over the planet since the 60s, and already at that time quite serious attempts were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed and partially implemented the automated collection of information on the production volumes of an individual plant as part of the design of the
+- alias: The issue of network accessibility of automatic devices has been discussed
+    all over the planet since the 60s, and already at that time quite serious attempts
+    were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed
+    and partially implemented the automated collection of information on the production
+    volumes of an individual plant as part of the design of the
+  en: The issue of network accessibility of automatic devices has been discussed all
+    over the planet since the 60s, and already at that time quite serious attempts
+    were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed
+    and partially implemented the automated collection of information on the production
+    volumes of an individual plant as part of the design of the
   it: "La questione sull'accessibilit\xE0 alla rete dei dispositivi automatici, \xE8\
     \ stata discussa in tutto il pianeta dagli anni '60 e gi\xE0 a quel tempo sono\
     \ stati fatti dei tentativi piuttosto seri per risolverlo. Ad esempio, il cibernetico\
@@ -7344,8 +7352,12 @@
     \ \u0414\u041B\u042F \u041F\u041E\u041B\u042C\u0417\u041E\u0412\u0410\u0422\u0415\
     \u041B\u0415\u0419"
   tr: "KULLANICILAR \u0130\xC7\u0130N SUNUCUSIZ IOT UYGULAMALARI"
-- alias: 'Modern advances in web3-technology can solve the issue of user privacy. With web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.'
-  en: 'Modern advances in web3-technology can solve the issue of user privacy. With web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.'
+- alias: Modern advances in web3-technology can solve the issue of user privacy. With
+    web3 there is no need to authenticate or require connection to specific servers
+    to access telemetry and control the device.
+  en: Modern advances in web3-technology can solve the issue of user privacy. With
+    web3 there is no need to authenticate or require connection to specific servers
+    to access telemetry and control the device.
   it: "\"I moderni progressi delle tecnologie web3 possono risolvere il problema della\
     \ privacy degli utenti. Con il web3 non \xE8 necessario autenticarsi o richiedere\
     \ la connessione a server specifici per accedere alla telemetria e controllare\
@@ -7819,3 +7831,2068 @@
     \u043E\u0441\u0442\u0443\u043F\u0435\u043D \u0432 \u0435\u0433\u043E dapp."
   tr: "G\xFCnl\xFCk, kullan\u0131c\u0131 i\xE7in bir rapora d\xF6n\xFC\u015Ft\xFC\
     r\xFCl\xFCr ve dapp'inde kullan\u0131labilir hale gelir."
+# data_vision_page
+
+- alias: At the frontier of cybernetics and economics
+  az: "Kibernetika v\u0259 iqtisadiyyat\u0131n s\u0259rh\u0259ddind\u0259"
+  en: At the frontier of cybernetics and economics
+  it: Alla frontiera fra la cibernetica e l'economia
+  pt: "Na fronteira da cibern\xE9tica e da economia"
+  tr: "Sibernetik ve ekonominin s\u0131n\u0131rlar\u0131nda"
+- alias: "Secure Serverless Futuristic\n IoT applications "
+  az: "T\u0259hl\xFCk\u0259siz Serversiz Futuristik IoT t\u0259tbiql\u0259ri"
+  en: "Secure Serverless Futuristic\n IoT applications "
+  it: "Futuristico Serverless Sicuro\n  Applicazioni IoT"
+  pt: "Aplica\xE7\xF5es IoT Futuristas Sem Servidor"
+  tr: "G\xFCvenli Sunucusuz F\xFCt\xFCristik\n  IoT uygulamalar\u0131 "
+- alias: Robonomics network vision
+  az: "Robonomika \u015F\u0259b\u0259k\u0259sinin konsepsiyas\u0131"
+  en: Robonomics network vision
+  it: La visione di Robonomics Network
+  pt: "Vis\xE3o da rede Robonomics"
+  tr: "Robonomics a\u011F\u0131 vizyonu"
+- alias: BUILD YOUR IOT SERVICES ON ROBONOMICS PLATFORM
+  az: "IOT X\u0130DM\u018FTL\u018FR\u0130N\u0130Z\u0130 ROBONOM\u0130KA PLATFORMASINDA\
+    \ QURUN"
+  en: BUILD YOUR IOT SERVICES ON ROBONOMICS PLATFORM
+  it: COSTRUISCI I TUOI SERVIZI IOT SULLA PIATTAFORMA ROBONOMICA
+  pt: "CONSTRUA SEUS SERVI\xC7OS IoT NA PLATAFORMA ROBONOMICS"
+  tr: "IOT H\u0130ZMETLER\u0130N\u0130Z\u0130 ROBONOMICS PLATFORMUNDA OLU\u015ETURUN"
+- alias: taking full advantage of decentralized architecture
+  az: "m\u0259rk\u0259zl\u0259\u015Fdirilm\u0259mi\u015F arxitekturan\u0131n b\xFC\
+    t\xFCn \xFCst\xFCnl\xFCkl\u0259rind\u0259n istifad\u0259 etm\u0259kl\u0259"
+  en: taking full advantage of decentralized architecture
+  it: sfruttando appieno l'architettura decentralizzata
+  pt: "aproveitando ao m\xE1ximo a arquitetura descentralizada"
+  tr: merkezi olmayan mimariden tam olarak yararlanmak
+- alias: Robonomics allows users to connect to smart devices using decentralized applications
+    (dapp) that do not require the user data transfer for authentication. Communication
+    takes place via a decentralized network of providers without a single point of
+    failure, and the device independently obtains information from the blockchain
+    network to run for execution or transmit data remotely. Thus, Robonomics provides
+    a high level of device cybersecurity and user data privacy at all stages of communication
+    from the user application to the launch of the smart device.
+  az: "Robonomics istifad\u0259\xE7il\u0259r\u0259 autentifikasiya \xFC\xE7\xFCn istifad\u0259\
+    \xE7i m\u0259lumatlar\u0131n\u0131n \xF6t\xFCr\xFClm\u0259sini t\u0259l\u0259\
+    b etm\u0259y\u0259n m\u0259rk\u0259zl\u0259\u015Fdirilm\u0259mi\u015F proqramlardan\
+    \ (dapp) istifad\u0259 ed\u0259r\u0259k a\u011F\u0131ll\u0131 cihazlara qo\u015F\
+    ulma\u011Fa imkan verir. Rabit\u0259 m\u0259rk\u0259zl\u0259\u015Fdirilm\u0259\
+    mi\u015F provayderl\u0259r \u015F\u0259b\u0259k\u0259si vasit\u0259sil\u0259 t\u0259\
+    k bir nasazl\u0131q n\xF6qt\u0259si olmadan ba\u015F verir v\u0259 cihaz i\u015F\
+    l\u0259m\u0259k, icra etm\u0259k v\u0259 ya m\u0259lumatlar\u0131 uzaqdan \xF6\
+    t\xFCrm\u0259k \xFC\xE7\xFCn m\xFCst\u0259qil olaraq blok\xE7eyn \u015F\u0259\
+    b\u0259k\u0259sind\u0259n m\u0259lumat \u0259ld\u0259 edir. Bel\u0259likl\u0259\
+    , Robonomics istifad\u0259\xE7i t\u0259tbiqind\u0259n tutmu\u015F smart cihaz\u0131\
+    n i\u015F\u0259 sal\u0131nmas\u0131na q\u0259d\u0259r kommunikasiyan\u0131n b\xFC\
+    t\xFCn m\u0259rh\u0259l\u0259l\u0259rind\u0259 cihaz\u0131n y\xFCks\u0259k s\u0259\
+    viyy\u0259d\u0259 kibert\u0259hl\xFCk\u0259sizliyini v\u0259 istifad\u0259\xE7\
+    i m\u0259lumatlar\u0131n\u0131n m\u0259xfiliyini t\u0259min edir."
+  en: Robonomics allows users to connect to smart devices using decentralized applications
+    (dapp) that do not require the user data transfer for authentication. Communication
+    takes place via a decentralized network of providers without a single point of
+    failure, and the device independently obtains information from the blockchain
+    network to run for execution or transmit data remotely. Thus, Robonomics provides
+    a high level of device cybersecurity and user data privacy at all stages of communication
+    from the user application to the launch of the smart device.
+  it: Robonomics consente agli utenti di connettersi agli smart device utilizzando
+    applicazioni decentralizzate (dapp), che non richiedono il trasferimento dei dati
+    utente per l'autenticazione. La comunicazione avviene tramite una rete decentralizzata
+    di provider senza un punto di errore singolo e il dispositivo ottiene, in modo
+    indipendente, informazioni dalla rete blockchain per l'esecuzione o la trasmissione
+    dei dati in remoto. Pertanto, Robonomics fornisce un elevato livello di sicurezza
+    informatica del dispositivo e di privacy sui dati degli utenti in tutte le fasi
+    della comunicazione, dall'applicazione utente al lancio dello smart device.
+  pt: "A Robonomics permite que os usu\xE1rios se conectem a dispositivos inteligentes\
+    \ usando aplicativos descentralizados (dapp) que n\xE3o exigem a transfer\xEA\
+    ncia de dados do usu\xE1rio para autentica\xE7\xE3o. A comunica\xE7\xE3o ocorre\
+    \ por meio de uma rede descentralizada de provedores sem um \xFAnico ponto de\
+    \ falha, e o dispositivo obt\xE9m informa\xE7\xF5es de forma independente da rede\
+    \ da blockchain para executar ou transmitir dados remotamente. Assim, a Robonomics\
+    \ fornece um alto n\xEDvel de seguran\xE7a cibern\xE9tica do dispositivo e privacidade\
+    \ dos dados do usu\xE1rio em todas as etapas da comunica\xE7\xE3o, desde o aplicativo\
+    \ do usu\xE1rio at\xE9 o lan\xE7amento do dispositivo inteligente."
+  tr: "Robonomics, kullan\u0131c\u0131lar\u0131n kimlik do\u011Frulama i\xE7in kullan\u0131\
+    c\u0131 veri aktar\u0131m\u0131 gerektirmeyen merkezi olmayan uygulamalar\u0131\
+    \ (dapp) kullanarak ak\u0131ll\u0131 cihazlara ba\u011Flanmas\u0131na olanak tan\u0131\
+    r. \u0130leti\u015Fim, merkezi olmayan bir sa\u011Flay\u0131c\u0131 a\u011F\u0131\
+    \ arac\u0131l\u0131\u011F\u0131yla tek bir ar\u0131za noktas\u0131 olmaks\u0131\
+    z\u0131n ger\xE7ekle\u015Fir ve cihaz, y\xFCr\xFCtme i\xE7in \xE7al\u0131\u015F\
+    t\u0131rmak veya verileri uzaktan iletmek i\xE7in blok zinciri a\u011F\u0131ndan\
+    \ ba\u011F\u0131ms\u0131z olarak bilgi al\u0131r. B\xF6ylece Robonomics, kullan\u0131\
+    c\u0131 uygulamas\u0131ndan ak\u0131ll\u0131 cihaz\u0131n kullan\u0131ma sunulmas\u0131\
+    na kadar ileti\u015Fimin t\xFCm a\u015Famalar\u0131nda y\xFCksek d\xFCzeyde cihaz\
+    \ siber g\xFCvenli\u011Fi ve kullan\u0131c\u0131 veri gizlili\u011Fi sa\u011F\
+    lar."
+- alias: FROM SMART CONTRACTS TO CROSS CHAIN IOT PLATFORM
+  az: "SMART M\xDCQAV\u0130L\u018FL\u018FRD\u018FN KROS \xC7EYN IOT PLATFORMASINA"
+  en: FROM SMART CONTRACTS TO CROSS CHAIN IOT PLATFORM
+  it: DAGLI SMART CONTRACT ALLA PIATTAFORMA IOT CROSS CHAIN
+  pt: DE SMART CONTRACTS A PLATAFORMA  IOT CROSS CHAIN
+  tr: "AKILLI S\xD6ZLE\u015EMELERDEN \xC7APRAZ Z\u0130NC\u0130R IOT PLATFORMUNA"
+- alias: The Robonomics project is over 6 years old. We started to prepare for the
+    first experiment demonstrating human-machine communication using an independent
+    decentralized provider network in 2015, from the early days of the Ethereum network.
+    By early 2021, the project team managed to create a techno-economic machine communication
+    protocol running on top of Ethereum and IPFS, and complement it with elements
+    of a cloud-based IoT platform based on the Polkadot parachain.
+  az: "Robonomics layih\u0259sinin 6 ild\u0259n \xE7ox ya\u015F\u0131 var. Biz Ethereum\
+    \ \u015F\u0259b\u0259k\u0259sinin ilk g\xFCnl\u0259rind\u0259n 2015-ci ild\u0259\
+    \ m\xFCst\u0259qil m\u0259rk\u0259zl\u0259\u015Fdirilm\u0259mi\u015F provayder\
+    \ \u015F\u0259b\u0259k\u0259sind\u0259n istifad\u0259 ed\u0259r\u0259k insan-ma\u015F\
+    \u0131n rabit\u0259sini n\xFCmayi\u015F etdir\u0259n ilk t\u0259cr\xFCb\u0259\
+    y\u0259 haz\u0131rla\u015Fma\u011Fa ba\u015Flad\u0131q. 2021-ci ilin \u0259vv\u0259\
+    lin\u0259 q\u0259d\u0259r layih\u0259 komandas\u0131 Ethereum v\u0259 IPFS \xFC\
+    z\u0259rind\u0259 i\u015Fl\u0259y\u0259n texno-iqtisadi ma\u015F\u0131n rabit\u0259\
+    \ protokolu yaratma\u011Fa v\u0259 onu Polkadot para\xE7eyn \u0259sas\u0131nda\
+    \ bulud \u0259sasl\u0131 IoT platformas\u0131n\u0131n elementl\u0259ri il\u0259\
+    \ tamamlama\u011Fa nail oldu."
+  en: The Robonomics project is over 6 years old. We started to prepare for the first
+    experiment demonstrating human-machine communication using an independent decentralized
+    provider network in 2015, from the early days of the Ethereum network. By early
+    2021, the project team managed to create a techno-economic machine communication
+    protocol running on top of Ethereum and IPFS, and complement it with elements
+    of a cloud-based IoT platform based on the Polkadot parachain.
+  it: "Il progetto Robonomics ha pi\xF9 di 6 anni. Abbiamo iniziato a prepararci per\
+    \ il primo esperimento che dimostra la comunicazione uomo-macchina nel 2015, utilizzando\
+    \ una rete di provider decentralizzati e indipendenti, dai primi giorni della\
+    \ rete Ethereum. All'inizio del 2021, il team del progetto \xE8 riuscito a creare\
+    \ un protocollo di comunicazione macchina tecno-economico, eseguito su Ethereum\
+    \ e IPFS. Completandolo con elementi di una piattaforma IoT basata su cloud, costruita\
+    \ su una parachain Polkadot."
+  pt: "O projeto Robonomics tem mais de 6 anos. Come\xE7amos a nos preparar para o\
+    \ primeiro experimento demonstrando a comunica\xE7\xE3o homem-m\xE1quina usando\
+    \ uma rede de provedores descentralizada independente em 2015, desde os primeiros\
+    \ dias da rede Ethereum. No in\xEDcio de 2021, a equipe do projeto conseguiu criar\
+    \ um protocolo de comunica\xE7\xE3o de m\xE1quina tecnoecon\xF4mico executado\
+    \ em Ethereum e IPFS e complement\xE1-lo com elementos de uma plataforma de IoT\
+    \ baseada em nuvem com base em parachain na Polkadot."
+  tr: "Robonomics projesi 6 y\u0131ldan daha fazla bir ge\xE7mi\u015Fe sahiptir. Ethereum\
+    \ a\u011F\u0131n\u0131n ilk g\xFCnlerinden itibaren 2015 y\u0131l\u0131nda ba\u011F\
+    \u0131ms\u0131z bir merkezi olmayan sa\u011Flay\u0131c\u0131 a\u011F\u0131 kullanarak\
+    \ insan-makine ileti\u015Fimini g\xF6steren ilk deney i\xE7in haz\u0131rlanmaya\
+    \ ba\u015Flad\u0131k. 2021'in ba\u015Flar\u0131nda proje ekibi Ethereum ve IPFS\
+    \ \xFCzerinde \xE7al\u0131\u015Fan bir tekno-ekonomik makine ileti\u015Fim protokol\xFC\
+    \ olu\u015Fturduk ve bunu Polkadot para zincirine dayal\u0131 bulut tabanl\u0131\
+    \ bir IoT platformunun unsurlar\u0131yla tamamlad\u0131k."
+- alias: As a result, today, we already have a hybrid platform for creating futuristic
+    IoT applications that enable interaction with devices under the control of a global
+    decentralized computer.
+  az: "N\u0259tic\u0259d\u0259, bu g\xFCn biz qlobal m\u0259rk\u0259zl\u0259\u015F\
+    dirilm\u0259mi\u015F komp\xFCterin n\u0259zar\u0259ti alt\u0131nda olan cihazlarla\
+    \ qar\u015F\u0131l\u0131ql\u0131 \u0259laq\u0259y\u0259 imkan ver\u0259n futuristik\
+    \ IoT proqramlar\u0131n\u0131n yarad\u0131lmas\u0131 \xFC\xE7\xFCn art\u0131q\
+    \ hibrid platformaya sahibik."
+  en: As a result, today, we already have a hybrid platform for creating futuristic
+    IoT applications that enable interaction with devices under the control of a global
+    decentralized computer.
+  it: "Come risultato, oggi disponiamo gi\xE0 di una piattaforma ibrida per la creazione\
+    \ di applicazioni IoT futuristiche, che consentono l'interazione con i dispositivi\
+    \ sotto il controllo di un computer decentralizzato globale."
+  pt: "Como resultado, hoje j\xE1 temos uma plataforma h\xEDbrida para criar aplicativos\
+    \ IoT futuristas que permitem a intera\xE7\xE3o com dispositivos sob o controle\
+    \ de um computador global descentralizado."
+  tr: "Sonu\xE7 olarak, bug\xFCn, k\xFCresel bir merkezi olmayan bilgisayar\u0131\
+    n kontrol\xFC alt\u0131ndaki cihazlarla etkile\u015Fimi m\xFCmk\xFCn k\u0131lan\
+    \ f\xFCt\xFCristik IoT uygulamalar\u0131 olu\u015Fturmak i\xE7in halihaz\u0131\
+    rda hibrit bir platforma sahibiz."
+- alias: AT THE FRONTIER OF CYBERNETICS AND ECONOMICS
+  az: "Kibernetika v\u0259 iqtisadiyyat\u0131n s\u0259rh\u0259ddind\u0259"
+  en: AT THE FRONTIER OF CYBERNETICS AND ECONOMICS
+  it: ALLA FRONTIERA FRA LA CIBERNETICA E L'ECONOMIA
+  pt: "NA FRONTEIRA DA CIBERN\xC9TICA E DA ECONOMIA"
+  tr: "S\u0130BERNET\u0130K VE EKONOM\u0130N\u0130N SINIRINDA"
+- alias: The creators of Robonomics are experimenters, engineers, and scientists who
+    care to understand the scientific validity of the approach and achieve clarity
+    in presenting the principles that should form the basis of the entire architecture
+    of the software solution.
+  az: "Robonomikan\u0131n yarad\u0131c\u0131lar\u0131 yana\u015Fman\u0131n elmi \u0259\
+    sasl\u0131l\u0131\u011F\u0131n\u0131 ba\u015Fa d\xFC\u015Fm\u0259y\u0259 v\u0259\
+    \ proqram h\u0259llinin b\xFCt\xFCn arxitekturas\u0131n\u0131n \u0259sas\u0131\
+    n\u0131 t\u0259\u015Fkil etm\u0259li olan prinsipl\u0259ri t\u0259qdim etm\u0259\
+    kd\u0259 ayd\u0131nl\u0131\u011Fa nail olma\u011Fa \xE7al\u0131\u015Fan eksperiment\xE7\
+    il\u0259r, m\xFCh\u0259ndisl\u0259r v\u0259 aliml\u0259rdir."
+  en: The creators of Robonomics are experimenters, engineers, and scientists who
+    care to understand the scientific validity of the approach and achieve clarity
+    in presenting the principles that should form the basis of the entire architecture
+    of the software solution.
+  it: "\"I creatori di Robonomics sono sperimentatori, ingegneri e scienziati, che\
+    \ si preoccupano di capire la validit\xE0 scientifica dell'approccio e avere chiarezza\
+    \ nel presentare i principi che dovrebbero costituire le basi dell'intera architettura\
+    \ della soluzione software."
+  pt: "Os criadores da Robonomics s\xE3o experimentadores, engenheiros e cientistas\
+    \ que se preocupam em entender a validade cient\xEDfica da abordagem e obter clareza\
+    \ na apresenta\xE7\xE3o dos princ\xEDpios que devem formar a base de toda a arquitetura\
+    \ da solu\xE7\xE3o de software."
+  tr: "Robonomics'in yarat\u0131c\u0131lar\u0131, yakla\u015F\u0131m\u0131n bilimsel\
+    \ ge\xE7erlili\u011Fini anlamaya \xF6zen g\xF6steren ve yaz\u0131l\u0131m \xE7\
+    \xF6z\xFCm\xFCn\xFCn t\xFCm mimarisinin temelini olu\u015Fturmas\u0131 gereken\
+    \ ilkeleri sunmada netlik elde eden deneyciler, m\xFChendisler ve bilim adamlar\u0131\
+    d\u0131r."
+- alias: In our articles between 2017 and 2020, we presented the scientific community
+    with many concepts and solutions united around the idea of the robot economy,
+    an economic system in which robotic devices act as independent agents capable
+    of performing key economic activities, previously reserved for humans. You can
+    read the scientific articles at
+  az: "2017 v\u0259 2020-ci ill\u0259r aras\u0131ndak\u0131 m\u0259qal\u0259l\u0259\
+    rimizd\u0259 c\u0259miyy\u0259t\u0259 robot iqtisadiyyat\u0131 ideyas\u0131 \u0259\
+    traf\u0131nda birl\u0259\u015Fmi\u015F bir \xE7ox h\u0259ll yollar\u0131 t\u0259\
+    qdim etdik. Bu, robot cihazlar\u0131n \u0259vv\u0259ll\u0259r insanlar \xFC\xE7\
+    \xFCn n\u0259z\u0259rd\u0259 tutulmu\u015F \u0259sas iqtisadi f\u0259aliyy\u0259\
+    tl\u0259ri yerin\u0259 yetir\u0259 bil\u0259n m\xFCst\u0259qil agentl\u0259r kimi\
+    \ \xE7\u0131x\u0131\u015F etdiyi iqtisadi sistemdir. Elmi m\u0259qal\u0259l\u0259\
+    ri bu"
+  en: In our articles between 2017 and 2020, we presented the scientific community
+    with many concepts and solutions united around the idea of the robot economy,
+    an economic system in which robotic devices act as independent agents capable
+    of performing key economic activities, previously reserved for humans. You can
+    read the scientific articles at
+  it: "Nei nostri articoli pubblicati fra il 2017 e il 2020, abbiamo presentato alla\
+    \ comunit\xE0 scientifica molti concetti e soluzioni uniti intorno all'idea di\
+    \ robot economy, un sistema economico dove i dispositivi robotici agiscono come\
+    \ agenti indipendenti, in grado di svolgere attivit\xE0 economiche chiave precedentemente\
+    \ riservate all'umano. Potete leggere gli articoli scientifici a"
+  pt: "Em nossos artigos entre 2017 e 2020, apresentamos \xE0 comunidade cient\xED\
+    fica muitos conceitos e solu\xE7\xF5es unidos em torno da ideia da economia rob\xF3\
+    tica, um sistema econ\xF4mico no qual dispositivos rob\xF3ticos atuam como agentes\
+    \ independentes capazes de realizar atividades econ\xF4micas fundamentais, antes\
+    \ reservadas aos humanos. Voc\xEA pode ler os artigos cient\xEDficos"
+  tr: "2017-2020 y\u0131llar\u0131 aras\u0131ndaki makalelerimizde, bilim camias\u0131\
+    na, daha \xF6nce insanlar i\xE7in ayr\u0131lm\u0131\u015F, temel ekonomik faaliyetleri\
+    \ ger\xE7ekle\u015Ftirebilen ba\u011F\u0131ms\u0131z ajanlar olarak robotik cihazlar\u0131\
+    n hareket etti\u011Fi bir ekonomik sistem olan robot ekonomisi fikri etraf\u0131\
+    nda birle\u015Fmi\u015F bir\xE7ok kavram ve \xE7\xF6z\xFCm\xFC sunduk. Bilimsel\
+    \ makaleleri bu"
+- alias: this link
+  az: "linkd\u0259n oxuya bil\u0259rsiniz"
+  en: this link
+  it: questo link
+  pt: neste link
+  tr: linkten okuyabilirsiniz
+- alias: We would like to justify the emergence of the robot economy and explain in
+    general terms why we believe that this concept is the inevitable and obvious answer
+    to the functioning of the large-scale robotic systems of the new industrial revolution.
+  az: "Robot iqtisadiyyat\u0131n\u0131n meydana g\u0259lm\u0259sini \u0259sasland\u0131\
+    rmaq v\u0259 \xFCmumi \u015F\u0259kild\u0259 izah etm\u0259k ist\u0259rdik ki,\
+    \ n\u0259 \xFC\xE7\xFCn bu x\xFCsusi konsepsiya yeni s\u0259naye inqilab\u0131\
+    n\u0131n irimiqyasl\u0131 robot sisteml\u0259rinin i\u015Fl\u0259m\u0259si sual\u0131\
+    na qa\xE7\u0131lmaz v\u0259 a\u015Fkar cavab oldu\u011Funa inan\u0131r\u0131q."
+  en: We would like to justify the emergence of the robot economy and explain in general
+    terms why we believe that this concept is the inevitable and obvious answer to
+    the functioning of the large-scale robotic systems of the new industrial revolution.
+  it: "Vorremmo giustificare l'emergere della robot economy e spiegare, in termini\
+    \ generici, perch\xE9 riteniamo che questo concetto sia la risposta inevitabile\
+    \ e ovvia al funzionamento di sistemi robotici su larga scala nella nuova rivoluzione\
+    \ industriale.\""
+  pt: "Gostar\xEDamos de justificar o surgimento da economia rob\xF3tica e explicar\
+    \ em termos gerais por que acreditamos que esse conceito \xE9 a resposta inevit\xE1\
+    vel e \xF3bvia para o funcionamento dos sistemas rob\xF3ticos de grande escala\
+    \ na nova revolu\xE7\xE3o industrial."
+  tr: "Robot ekonomisinin ortaya \xE7\u0131k\u0131\u015F\u0131n\u0131 hakl\u0131 \xE7\
+    \u0131karmak ve bu kavram\u0131n neden yeni sanayi devriminin b\xFCy\xFCk \xF6\
+    l\xE7ekli robotik sistemlerinin i\u015Fleyi\u015Fine ka\xE7\u0131n\u0131lmaz ve\
+    \ a\xE7\u0131k bir cevap oldu\u011Funa inand\u0131\u011F\u0131m\u0131z\u0131 genel\
+    \ terimlerle a\xE7\u0131klamak istiyoruz."
+- alias: MOVE TOWARDS THE FACTORY OF THE FUTURE
+  az: "G\u018FL\u018FC\u018FY\u0130N FABR\u0130K\u0130N\u018F DO\u011ERU H\u018FR\u018F\
+    K\u018FT ED\u0130N"
+  en: MOVE TOWARDS THE FACTORY OF THE FUTURE
+  it: MUOVERSI VERSO L'INDUSTRIA DEL FUTURO
+  pt: "RUMO \xC0 F\xC1BRICA DO FUTURO"
+  tr: "GELECE\u011E\u0130N FABR\u0130KASINA DO\u011ERU"
+- alias: Inspired by Ronald Coase
+  az: "Ronald Kouzdan ilhamlan\u0131b"
+  en: Inspired by Ronald Coase
+  it: Ispirato da Ronald Coase
+  pt: Inspirado por Ronald Coase
+  tr: "Ronald Coase'den ilham al\u0131nm\u0131\u015Ft\u0131r"
+- alias: "The Nobel laureate in economics Ronald Coase in his 1937 work \u201CThe\
+    \ Nature of the Firm\u201D best demonstrated the dichotomy \xABhierarchy vs free\
+    \ market\xBB and gave an explanation of the reasons for the existence of organizations,\
+    \ in particular firms. Coase discusses the impact of transaction costs (the cost\
+    \ of collecting and processing information) to make decisions about the conclusion\
+    \ of a contract and to monitor its implementation. The firm, with all its hierarchical\
+    \ extra-market structure, is formed as the most efficient way to provide the consumer\
+    \ with the target product with the lowest transaction costs at the moment, when\
+    \ the transactional effort to create the same product through multiple exchanges\
+    \ on the market between individuals becomes much higher. To best visualize this\
+    \ process, look at the illustrative example of buying a car. Try to buy a car\
+    \ by the parts and calculate how much money and time you will spend just to assemble\
+    \ all the components in your garage. The risks and negotiation costs of buying\
+    \ parts are too high compared to Tesla\u2019s off-the-shelf Model X."
+  az: "\u0130qtisadiyyat \xFCzr\u0259 Nobel m\xFCkafat\u0131 laureat\u0131 Ronald\
+    \ Kouz 1937-ci ild\u0259 yazd\u0131\u011F\u0131 \u201CFirman\u0131n T\u0259bi\u0259\
+    ti\u201D \u0259s\u0259rind\u0259 \u201Ciyerarxiyaya qar\u015F\u0131 azad bazar\u201D\
+    \ dixotomiyas\u0131n\u0131 \u0259n yax\u015F\u0131 \u015F\u0259kild\u0259 n\xFC\
+    mayi\u015F etdirdi v\u0259 t\u0259\u015Fkilatlar\u0131n, x\xFCsus\u0259n d\u0259\
+    \ firmalar\u0131n m\xF6vcudlu\u011Funun s\u0259b\u0259bl\u0259rini izah etdi.\
+    \ Kouz \u0259m\u0259liyyat x\u0259rcl\u0259rinin (m\u0259lumatlar\u0131n toplanmas\u0131\
+    \ v\u0259 emal\u0131 x\u0259rcl\u0259ri) m\xFCqavil\u0259 ba\u011Flamaq q\u0259\
+    rar\u0131na v\u0259 onun icras\u0131na n\u0259zar\u0259t\u0259 t\u0259sirini m\xFC\
+    zakir\u0259 edir. Firma, iyerarxik bazardank\u0259nar strukturu il\u0259, haz\u0131\
+    rda istehlak\xE7\u0131ya \u0259n a\u015Fa\u011F\u0131 \u0259m\u0259liyyat x\u0259\
+    rcl\u0259ri il\u0259 h\u0259d\u0259f m\u0259hsulu t\u0259min etm\u0259yin \u0259\
+    n s\u0259m\u0259r\u0259li yolu kimi formala\u015Fm\u0131\u015Fd\u0131r. Bu prosesi\
+    \ vizualla\u015Fd\u0131rmaq \xFC\xE7\xFCn avtomobil alma\u011F\u0131n ill\xFC\
+    strativ n\xFCmun\u0259sin\u0259 bax\u0131n. T\u0259s\u0259vv\xFCr edin ki, bir\
+    \ avtomobili hiss\u0259-hiss\u0259 alma\u011Fa \xE7al\u0131\u015F\u0131rs\u0131\
+    n\u0131z v\u0259 qaraj\u0131n\u0131zdak\u0131 b\xFCt\xFCn komponentl\u0259ri y\u0131\
+    \u011Fmaq \xFC\xE7\xFCn n\u0259 q\u0259d\u0259r pul v\u0259 vaxt s\u0259rf ed\u0259\
+    c\u0259yinizi hesablay\u0131n. Hiss\u0259l\u0259rin al\u0131nmas\u0131n\u0131\
+    n riskl\u0259ri v\u0259 dan\u0131\u015F\u0131qlar x\u0259rcl\u0259ri haz\u0131\
+    r Tesla Model X il\u0259 m\xFCqayis\u0259d\u0259 \xE7ox y\xFCks\u0259kdir."
+  en: "The Nobel laureate in economics Ronald Coase in his 1937 work \u201CThe Nature\
+    \ of the Firm\u201D best demonstrated the dichotomy \xABhierarchy vs free market\xBB\
+    \ and gave an explanation of the reasons for the existence of organizations, in\
+    \ particular firms. Coase discusses the impact of transaction costs (the cost\
+    \ of collecting and processing information) to make decisions about the conclusion\
+    \ of a contract and to monitor its implementation. The firm, with all its hierarchical\
+    \ extra-market structure, is formed as the most efficient way to provide the consumer\
+    \ with the target product with the lowest transaction costs at the moment, when\
+    \ the transactional effort to create the same product through multiple exchanges\
+    \ on the market between individuals becomes much higher. To best visualize this\
+    \ process, look at the illustrative example of buying a car. Try to buy a car\
+    \ by the parts and calculate how much money and time you will spend just to assemble\
+    \ all the components in your garage. The risks and negotiation costs of buying\
+    \ parts are too high compared to Tesla\u2019s off-the-shelf Model X."
+  it: "Il premio Nobel per l'economia Ronald Coase, nel suo lavoro del 1937 \"The\
+    \ Nature of the Firm\", ha dimostrato al meglio la dicotomia <<gerarchia vs libero\
+    \ mercato>> e ha spiegato le ragioni dell'esistenza di organizzazioni come le\
+    \ imprese. Coase discute l'impatto dei costi di transazione (il costo di raccolta\
+    \ ed elaborazione delle informazioni), per prendere decisioni in merito alla conclusione\
+    \ di un contratto e per monitorarne l'attuazione. L'azienda, con tutta la sua\
+    \ struttura gerarchica extra-mercato, si configura come il metofo pi\xF9 efficiente\
+    \ per fornire il prodotto target al consumatore, con i costi di transazione pi\xF9\
+    \ bassi al momento, quando lo sforzo transazionale per creare lo stesso prodotto,\
+    \ attraverso pi\xF9 scambi di mercato tra individui, diventa molto pi\xF9 alto.Per\
+    \ visualizzare al meglio questo processo, guarda l'esempio illustrativo dell'acquisto\
+    \ di un'auto. Provate ad acquistare un'auto per componenti, poi calcolate quanto\
+    \ tempo e denaro impieghereste per assemblarla nel vostro garage. I rischi e la\
+    \ negoziazione dei prezzi d'acquisto dei componenti, sono troppo elevati rispetto\
+    \ a una Model X standard di Tesla."
+  pt: "O Pr\xEAmio Nobel de Economia Ronald Coase em seu trabalho de 1937 \u201CThe\
+    \ Nature of the Firm\u201D demonstrou melhor  a dicotomia \u201Chierarquia vs\
+    \ livre mercado\u201D e deu uma explica\xE7\xE3o das raz\xF5es da exist\xEAncia\
+    \ das organiza\xE7\xF5es, em particular as empresas. Coase discute o impacto dos\
+    \ custos de transa\xE7\xE3o (o custo de coleta e processamento de informa\xE7\xF5\
+    es) para tomar decis\xF5es sobre a celebra\xE7\xE3o de um contrato e monitorar\
+    \ sua implementa\xE7\xE3o. A empresa, com toda sua estrutura hier\xE1rquica extramercado,\
+    \ se constitui como a forma mais eficiente de fornecer ao consumidor o produto\
+    \ alvo com os menores custos de transa\xE7\xE3o no momento, momento em que o esfor\xE7\
+    o transacional para criar o mesmo produto por meio de m\xFAltiplas trocas no mercado\
+    \ entre os indiv\xEDduos torna-se muito maior. Para visualizar melhor esse processo,\
+    \ veja o exemplo ilustrativo da compra de um carro. Tente comprar um carro pelas\
+    \ pe\xE7as e calcule quanto dinheiro e tempo voc\xEA gastar\xE1 apenas para montar\
+    \ todos os componentes em sua garagem. Os riscos e custos de negocia\xE7\xE3o\
+    \ da compra de pe\xE7as s\xE3o muito altos em compara\xE7\xE3o com o Model X da\
+    \ Tesla."
+  tr: "Ekonomide Nobel \xF6d\xFCll\xFC Ronald Coase, 1937 tarihli \u201CFirman\u0131\
+    n Do\u011Fas\u0131\u201D adl\u0131 \xE7al\u0131\u015Fmas\u0131nda, \u201Chiyerar\u015F\
+    iye kar\u015F\u0131 serbest piyasa\u201D ikilemini en iyi \u015Fekilde g\xF6stermi\u015F\
+    \ ve kurulu\u015Flar\u0131n, \xF6zellikle de firmalar\u0131n varl\u0131\u011F\u0131\
+    n\u0131n nedenlerine ili\u015Fkin bir a\xE7\u0131klama yapm\u0131\u015Ft\u0131\
+    r. Coase, bunun etkisini \u015Fu \u015Fekilde tart\u0131\u015Fmaktad\u0131r. Bir\
+    \ s\xF6zle\u015Fmenin akdedilmesine ili\u015Fkin kararlar almak ve uygulanmas\u0131\
+    n\u0131 izlemek i\xE7in i\u015Flem maliyetlerinin (bilgi toplama ve i\u015Fleme\
+    \ maliyeti) t\xFCm hiyerar\u015Fik piyasa d\u0131\u015F\u0131 yap\u0131s\u0131\
+    \ ile firma, t\xFCketiciyi sa\u011Flaman\u0131n en verimli yolu olarak olu\u015F\
+    turulmu\u015Ftur. En d\xFC\u015F\xFCk i\u015Flem maliyetine sahip hedef \xFCr\xFC\
+    nle, piyasada bireyler aras\u0131ndaki \xE7oklu al\u0131\u015Fveri\u015Fler yoluyla\
+    \ ayn\u0131 \xFCr\xFCn\xFC yaratmaya y\xF6nelik i\u015Flemsel \xE7aban\u0131n\
+    \ \xE7ok daha y\xFCksek oldu\u011Fu anda bu ger\xE7ekle\u015Fir. Bu s\xFCreci\
+    \ en iyi \u015Fekilde g\xF6rselle\u015Ftirmek i\xE7in, bir araba sat\u0131n alman\u0131\
+    n a\xE7\u0131klay\u0131c\u0131 \xF6rne\u011Fine bak\u0131n. Par\xE7alar\u0131\
+    na g\xF6re bir araba almaya \xE7al\u0131\u015F\u0131n ve garaj\u0131n\u0131zdaki\
+    \ t\xFCm bile\u015Fenleri bir araya getirmek i\xE7in ne kadar para ve zaman harcayaca\u011F\
+    \u0131n\u0131z\u0131 hesaplay\u0131n. Par\xE7a sat\u0131n alma maliyetleri, Tesla'n\u0131\
+    n haz\u0131r Model X'ine k\u0131yasla \xE7ok y\xFCksek."
+- alias: "Nevertheless, this does not lead to the emergence of the world\u2019s only\
+    \ firm for the production of everything. The point is that the same transaction\
+    \ costs also impose restrictions on the size of firms. Coase writes:"
+  az: "Buna baxmayaraq, bu, d\xFCnyada h\u0259r \u015Feyin istehsal\u0131 \xFCzr\u0259\
+    \ yegan\u0259 firman\u0131n yaranmas\u0131na g\u0259tirib \xE7\u0131xarm\u0131\
+    r. Bunun s\u0259b\u0259bi, eyni \u0259m\u0259liyyat x\u0259rcl\u0259rinin firmalar\u0131\
+    n \xF6l\xE7\xFCs\xFC il\u0259 ba\u011Fl\u0131 m\u0259hdudiyy\u0259tl\u0259r qoymas\u0131\
+    d\u0131r. Kouz yazd\u0131\u011F\u0131 kimi:"
+  en: "Nevertheless, this does not lead to the emergence of the world\u2019s only\
+    \ firm for the production of everything. The point is that the same transaction\
+    \ costs also impose restrictions on the size of firms. Coase writes:"
+  it: 'Tuttavia, questo non porta all''emergere di un''unica azienda al mondo che
+    produca tutto. Gli stessi costi di transazione impongono anche delle restrizioni
+    alle dimensioni stesse delle imprese. Coase scrive:'
+  pt: "No entanto, isso n\xE3o leva ao surgimento da \xFAnica empresa do mundo para\
+    \ a produ\xE7\xE3o de tudo. A quest\xE3o \xE9 que os mesmos custos de transa\xE7\
+    \xE3o tamb\xE9m imp\xF5em restri\xE7\xF5es ao tamanho das empresas. Coase escreve:"
+  tr: "Yine de bu, her \u015Feyin \xFCretimi i\xE7in d\xFCnyan\u0131n tek bir firmas\u0131\
+    n\u0131n ortaya \xE7\u0131kmas\u0131na yol a\xE7maz. Buradaki ana nokta, ayn\u0131\
+    \ i\u015Flem maliyetlerinin firmalar\u0131n b\xFCy\xFCkl\xFC\u011F\xFCne de k\u0131\
+    s\u0131tlamalar getirmesidir. Coase \u015F\xF6yle yaz\u0131yor:"
+- alias: "\u201C...a firm will tend to expand until the costs of organising an extra\
+    \ transaction within the firm become equal to the costs of carrying out the same\
+    \ transaction by means of an exchange on the open market...\u201D"
+  az: "\"...firma daxilind\u0259 \u0259lav\u0259 \u0259m\u0259liyyat\u0131n t\u0259\
+    \u015Fkili x\u0259rcl\u0259ri a\xE7\u0131q bazarda m\xFCbadil\u0259 yolu il\u0259\
+    \ eyni \u0259m\u0259liyyat\u0131n h\u0259yata ke\xE7irilm\u0259si x\u0259rcl\u0259\
+    rin\u0259 b\u0259rab\u0259r olana q\u0259d\u0259r firma geni\u015Fl\u0259nm\u0259\
+    y\u0259 meylli olacaq...\""
+  en: "\u201C...a firm will tend to expand until the costs of organising an extra\
+    \ transaction within the firm become equal to the costs of carrying out the same\
+    \ transaction by means of an exchange on the open market...\u201D"
+  it: "\"...un'azienda tender\xE0 ad espandersi fino a quando, i costi per l'organizzazione\
+    \ di una transazione extra all'interno dell'impresa, non diventeranno uguali ai\
+    \ costi per eseguire la stessa transazione tramite uno scambio sul mercato aperto...\"\
+    \                                                                            \
+    \       "
+  pt: "\u201C...uma empresa tender\xE1 a se expandir at\xE9 que os custos de organizar\
+    \ uma transa\xE7\xE3o extra dentro da empresa se tornem iguais aos custos de realizar\
+    \ a mesma transa\xE7\xE3o por meio de uma troca no mercado aberto...\u201D"
+  tr: "\u201C...bir firma, firma i\xE7inde fazladan bir i\u015Flem d\xFCzenlemenin\
+    \ maliyeti, ayn\u0131 i\u015Flemi a\xE7\u0131k piyasada bir takas yoluyla ger\xE7\
+    ekle\u015Ftirmenin maliyetine e\u015Fit oluncaya kadar geni\u015Fleme e\u011F\
+    iliminde olacakt\u0131r...\u201D"
+- alias: In other words, the more complex the hierarchy within the firm, the greater
+    the internal costs, and at some point, they turn out to be excessive compared
+    to the costs of returning to the market. Therefore, to ensure their growth as
+    one of the drivers, entrepreneurs are looking for ways to reduce these costs.
+  az: "Ba\u015Fqa s\xF6zl\u0259, firma daxilind\u0259 iyerarxiya n\u0259 q\u0259d\u0259\
+    r m\xFCr\u0259kk\u0259bdirs\u0259, daxili x\u0259rcl\u0259r bir o q\u0259d\u0259\
+    r \xE7ox olur. Bu o dem\u0259kdir ki, m\xFC\u0259yy\u0259n bir n\xF6qt\u0259d\u0259\
+    \ daxili x\u0259rcl\u0259r s\u0259rb\u0259st bazardan istifad\u0259 x\u0259rcl\u0259\
+    ri il\u0259 m\xFCqayis\u0259d\u0259 h\u0259ddind\u0259n art\u0131q olur. Buna\
+    \ g\xF6r\u0259 d\u0259, inki\u015Faf\u0131 t\u0259min etm\u0259k \xFC\xE7\xFC\
+    n (bu, biznesin \u0259sas g\xF6st\u0259ricil\u0259rind\u0259n biridir) sahibkarlar\
+    \ h\u0259mi\u015F\u0259 bu x\u0259rcl\u0259ri azaltmaq yollar\u0131n\u0131 axtar\u0131\
+    rlar."
+  en: In other words, the more complex the hierarchy within the firm, the greater
+    the internal costs, and at some point, they turn out to be excessive compared
+    to the costs of returning to the market. Therefore, to ensure their growth as
+    one of the drivers, entrepreneurs are looking for ways to reduce these costs.
+  it: "In altre parole, pi\xF9 complessa \xE8 la gerarchia in un'impresa, maggiori\
+    \ saranno i suoi costi interni, che a un certo punto risulteranno eccessivi rispetto\
+    \ al costo di tornare al mercato. Per garantire che la crescita sia come un motore,\
+    \ gli imprenditori sono alla ricerca di metodi per ridurre questi costi\"."
+  pt: "Em outras palavras, quanto mais complexa a hierarquia dentro da empresa, maiores\
+    \ s\xE3o os custos internos e, em algum momento, tornam-se excessivos em rela\xE7\
+    \xE3o aos custos de retorno ao mercado. Por isso, para garantir seu crescimento\
+    \ como um dos impulsionadores, os empreendedores buscam formas de reduzir esses\
+    \ custos."
+  tr: "Ba\u015Fka bir deyi\u015Fle, firma i\xE7indeki hiyerar\u015Fi ne kadar karma\u015F\
+    \u0131ksa, i\xE7 maliyetler o kadar b\xFCy\xFCk olur ve bir noktada, piyasaya\
+    \ geri d\xF6nme maliyetlerine k\u0131yasla a\u015F\u0131r\u0131 olduklar\u0131\
+    \ ortaya \xE7\u0131kar. Bu nedenle, itici g\xFC\xE7lerden biri olarak b\xFCy\xFC\
+    melerini sa\u011Flamak i\xE7in giri\u015Fimciler bu maliyetleri d\xFC\u015F\xFC\
+    rmenin yollar\u0131n\u0131 ar\u0131yorlar."
+- alias: GET RID OF TRANSACTION COSTS
+  az: "\u018FM\u018FL\u0130YYAT X\u018FRCL\u018FR\u0130ND\u018FN QURTARIN"
+  en: GET RID OF TRANSACTION COSTS
+  it: ELIMINA I COSTI DI TRANSAZIONE
+  pt: "LIVRE-SE DOS CUSTOS DE TRANSA\xC7\xC3O"
+  tr: "\u0130\u015ELEM MAL\u0130YETLER\u0130NDEN KURTULUN"
+- alias: The idea of reducing transaction costs through the ability of all participants
+    in the business process (production, logistics, consumption) to unite at a closer
+    level
+  az: "Biznes prosesinin b\xFCt\xFCn i\u015Ftirak\xE7\u0131lar\u0131n\u0131n (istehsal,\
+    \ logistika, istehlak) daha yax\u0131n s\u0259viyy\u0259d\u0259 birl\u0259\u015F\
+    dirilm\u0259si yolu il\u0259 tranzaksiya x\u0259rcl\u0259rinin azald\u0131lmas\u0131\
+    \ ideyas\u0131 avtomatla\u015Fd\u0131rma h\u0259ll\u0259ri istehsal\xE7\u0131\
+    lar\u0131n\u0131n \xFCzl\u0259\u015Fdiyi"
+  en: The idea of reducing transaction costs through the ability of all participants
+    in the business process (production, logistics, consumption) to unite at a closer
+    level
+  it: "L'idea di ridurre i costi di transazione, attraverso la capacit\xE0 di tutti\
+    \ i partecipanti al processo aziendale (produzione, logistica, consumo) di unirsi\
+    \ a un livello pi\xF9 stretto, \xE8"
+  pt: "A ideia de reduzir os custos de transa\xE7\xE3o atrav\xE9s da capacidade de\
+    \ todos os participantes no processo de neg\xF3cios (produ\xE7\xE3o, log\xEDstica,\
+    \ consumo) se unirem em um n\xEDvel mais pr\xF3ximo se"
+  tr: "\u0130\u015F s\xFCrecindeki (\xFCretim, lojistik, t\xFCketim) t\xFCm kat\u0131\
+    l\u0131mc\u0131lar\u0131n daha yak\u0131n bir"
+- alias: clearly correlates
+  az: "probleml\u0259r v\u0259 \xE7\u0259tinlikl\u0259rl\u0259 ayd\u0131n \u015F\u0259\
+    kild\u0259 \u0259laq\u0259l\u0259ndirilir"
+  en: clearly correlates
+  it: chiaramente correlata
+  pt: correlaciona claramente
+  tr: "d\xFCzeyde birle\u015Fme yetene\u011Fi yoluyla i\u015Flem maliyetlerini"
+- alias: with the problems and challenges faced by manufacturers of automation solutions.
+    Over the past 50 years, the standard/regular operations of most business processes
+    of large companies have been almost completely automated. The manufacturers are
+    essentially left with the task of building secure communication between fully
+    automated parts of the supply chain, and this task is a factor holding back further
+    reduction of transaction costs through automation. The desire to market more competitive
+    products or services compared to partially automated
+  az: ". Son 50 il \u0259rzind\u0259 b\xF6y\xFCk \u015Firk\u0259tl\u0259rin \u0259\
+    ks\u0259r biznes prosesl\u0259rinin standart/m\xFCnt\u0259z\u0259m \u0259m\u0259\
+    liyyatlar\u0131 dem\u0259k olar ki, tamamil\u0259 avtomatla\u015Fd\u0131r\u0131\
+    lm\u0131\u015Fd\u0131r. \u0130stehsal\xE7\u0131lar, \u0259sas\u0259n, t\u0259\
+    chizat z\u0259ncirinin tam avtomatla\u015Fd\u0131r\u0131lm\u0131\u015F hiss\u0259\
+    l\u0259ri aras\u0131nda t\u0259hl\xFCk\u0259siz rabit\u0259 qurma\u011F\u0131\
+    \ t\u0259rk edirl\u0259r v\u0259 bu m\u0259s\u0259l\u0259 avtomatla\u015Fd\u0131\
+    rma vasit\u0259sil\u0259 tranzaksiya x\u0259rcl\u0259rinin daha da azald\u0131\
+    lmas\u0131na mane olan amildir. Qism\u0259n avtomatla\u015Fd\u0131r\u0131lm\u0131\
+    \u015F firmalar \u0259v\u0259zin\u0259 daha r\u0259qab\u0259tqabiliyy\u0259tli\
+    \ m\u0259hsul v\u0259 ya xidm\u0259tl\u0259rin bazara \xE7\u0131xar\u0131lmas\u0131"
+  en: with the problems and challenges faced by manufacturers of automation solutions.
+    Over the past 50 years, the standard/regular operations of most business processes
+    of large companies have been almost completely automated. The manufacturers are
+    essentially left with the task of building secure communication between fully
+    automated parts of the supply chain, and this task is a factor holding back further
+    reduction of transaction costs through automation. The desire to market more competitive
+    products or services compared to partially automated
+  it: "ai problemi e alle sfide affrontate dai produttori di soluzioni automatizzate.\
+    \ Negli ultimi 50 anni, le operazioni standard per la maggior parte dei processi\
+    \ aziendali delle grandi imprese, sono state quasi completamente automatizzate.\
+    \ I produttori hanno il compito di creare una comunicazione sicura fra le parti\
+    \ totalmente automatizzate della catena di approvvigionamento, e questo fattore\
+    \ impedisce un'ulteriore riduzione dei costi di transazione attraverso l'automazione.\
+    \ Il desiderio di commercializzare prodotti o servizi pi\xF9 competitivi rispetto\
+    \ alle aziende parzialmente automatizzate,"
+  pt: "com os problemas e desafios enfrentados pelos fabricantes de solu\xE7\xF5es\
+    \ de automa\xE7\xE3o. Nos \xFAltimos 50 anos, as opera\xE7\xF5es padr\xE3o/regulares\
+    \ da maioria dos processos de neg\xF3cios de grandes empresas foram quase totalmente\
+    \ automatizadas. Os fabricantes ficam essencialmente com a tarefa de construir\
+    \ uma comunica\xE7\xE3o segura entre as partes totalmente automatizadas da cadeia\
+    \ de suprimentos, e essa tarefa \xE9 um fator que impede uma maior redu\xE7\xE3\
+    o dos custos de transa\xE7\xE3o por meio da automa\xE7\xE3o. O desejo de comercializar\
+    \ produtos ou servi\xE7os mais competitivos em rela\xE7\xE3o \xE0s empresas parcialmente\
+    \ automatizadas"
+  tr: "azaltma fikri, otomasyon \xE7\xF6z\xFCmleri \xFCreticilerinin kar\u015F\u0131\
+    la\u015Ft\u0131\u011F\u0131 sorunlar ve zorluklarla a\xE7\u0131k\xE7a ili\u015F\
+    kilidir. Son 50 y\u0131lda, b\xFCy\xFCk \u015Firketlerin \xE7o\u011Fu i\u015F\
+    \ s\xFCre\xE7lerinin standart/d\xFCzenli i\u015Flemleri neredeyse tamamen otomatikle\u015F\
+    tirildi. Tedarik zincirinin tam otomatik par\xE7alar\u0131 aras\u0131nda g\xFC\
+    venli ileti\u015Fim kurma g\xF6revi esasen \xFCreticilere b\u0131rak\u0131lm\u0131\
+    \u015Ft\u0131r ve bu g\xF6rev, otomasyon yoluyla i\u015Flem maliyetlerinin daha\
+    \ da azalt\u0131lmas\u0131n\u0131 engelleyen bir fakt\xF6rd\xFCr. K\u0131smen\
+    \ otomatikle\u015Ftirilmi\u015F firmalara k\u0131yasla daha rekabet\xE7i \xFC\
+    r\xFCn veya"
+- alias: firms spurs the search for solutions to
+  az: "ist\u0259yi bu probleml\u0259rin h\u0259lli yollar\u0131n\u0131n"
+  en: firms spurs the search for solutions to
+  it: stimola la ricerca di soluzioni
+  pt: "estimula a busca de solu\xE7\xF5es"
+  tr: "hizmet pazarlama arzusu, bu zorluklara \xE7\xF6z\xFCm"
+- alias: "these challenges. It seems that everything is heading towards the emergence\
+    \ of robofirms \u2014 organizations in which the entire business process cycle\
+    \ is fully automated and does not require human participation, except as beneficiaries\
+    \ and consumers."
+  az: "axtar\u0131\u015F\u0131na t\u0259kan verir. G\xF6r\xFCnd\xFCy\xFC kimi, h\u0259\
+    r \u015Fey robot firmalar\u0131n yaranmas\u0131na do\u011Fru gedir - b\xFCt\xFC\
+    n i\u015F prosesinin tam avtomatla\u015Fd\u0131r\u0131ld\u0131\u011F\u0131 v\u0259\
+    \ benefisiarlar v\u0259 istehlak\xE7\u0131lar istisna olmaqla, insan i\u015Ftirak\u0131\
+    n\u0131 t\u0259l\u0259b etm\u0259y\u0259n t\u0259\u015Fkilatlar."
+  en: "these challenges. It seems that everything is heading towards the emergence\
+    \ of robofirms \u2014 organizations in which the entire business process cycle\
+    \ is fully automated and does not require human participation, except as beneficiaries\
+    \ and consumers."
+  it: "a queste sfide. Sembra che ci stiamo dirigendo verso l'emergere delle robofirm-\
+    \ imprese nelle quali l'intero ciclo dei processi aziendali \xE8 completamente\
+    \ automatizzato e non richiede la partecipazione umana, se non come beneficiari\
+    \ e consumatori."
+  pt: "para esses desafios. Parece que tudo est\xE1 caminhando para o surgimento das\
+    \ empresas robotizadas \u2013 organiza\xE7\xF5es em que todo o ciclo de processos\
+    \ de neg\xF3cios \xE9 totalmente automatizado e n\xE3o requer participa\xE7\xE3\
+    o humana, exceto como benefici\xE1rios e consumidores."
+  tr: "aray\u0131\u015Flar\u0131n\u0131 te\u015Fvik eder. G\xF6r\xFCn\xFC\u015Fe g\xF6\
+    re her \u015Fey robofirmlerin(robot firmalar\u0131n\u0131n) - t\xFCm i\u015F s\xFC\
+    reci d\xF6ng\xFCs\xFCn\xFCn tamamen otomatik oldu\u011Fu ve yararlan\u0131c\u0131\
+    lar ve t\xFCketiciler d\u0131\u015F\u0131nda insan kat\u0131l\u0131m\u0131 gerektirmeyen\
+    \ organizasyonlar\u0131n - ortaya \xE7\u0131kmas\u0131na do\u011Fru gidiyor."
+- alias: OUR FUTURE IN SMART CITIES
+  az: "A\u011EILLI \u015E\u018FH\u018FRL\u018FRD\u018F G\u018FL\u018FC\u018FY\u0130\
+    M\u0130Z"
+  en: OUR FUTURE IN SMART CITIES
+  it: IL NOSTRO FUTURO NELLE SMART CITIES
+  pt: NOSSO FUTURO EM CIDADES INTELIGENTES
+  tr: "AKILLI \u015EEH\u0130RLERDE GELECE\u011E\u0130M\u0130Z"
+- alias: "The task that automation manufacturers are facing today has a specific name\
+    \ \u2014 the construction of cyber-physical systems (abbreviated as CPS). By"
+  az: "Bu g\xFCn avtomatla\u015Fd\u0131rma istehsal\xE7\u0131lar\u0131n\u0131n qar\u015F\
+    \u0131s\u0131nda duran tap\u015F\u0131r\u0131\u011F\u0131n x\xFCsusi ad\u0131\
+    \ var - kiber-fiziki sisteml\u0259rin qurulmas\u0131 (q\u0131sald\u0131lm\u0131\
+    \u015F CPS). T\u0259rifin\u0259"
+  en: "The task that automation manufacturers are facing today has a specific name\
+    \ \u2014 the construction of cyber-physical systems (abbreviated as CPS). By"
+  it: 'Il compito che i produttori di automazione devono affrontare oggi ha un nome
+    specifico: la costruzione di sistemi cyber-fisici (abbreviati in CPS). Per'
+  pt: "A tarefa que os fabricantes de automa\xE7\xE3o enfrentam hoje tem um nome espec\xED\
+    fico - a constru\xE7\xE3o de sistemas ciber-f\xEDsicos (Construction of cyber-physical\
+    \ systems ou CPS). Por"
+  tr: "Bug\xFCn otomasyon \xFCreticilerinin kar\u015F\u0131 kar\u015F\u0131ya oldu\u011F\
+    u g\xF6revin belirli bir ad\u0131 vard\u0131r: - siber-fiziksel sistemlerin (CPS\
+    \ olarak k\u0131salt\u0131l\u0131r) in\u015Fas\u0131. Tan\u0131m"
+- alias: definition,
+  az: "g\xF6r\u0259,"
+  en: definition,
+  it: CPS
+  pt: "defini\xE7\xE3o,"
+  tr: olarak,
+- alias: a CPS is a strong unification and mutual integration of multiple computational,
+    networking, and physical processes.
+  az: "CPS \xE7oxsayl\u0131 hesablama, \u015F\u0259b\u0259k\u0259 v\u0259 fiziki prosesl\u0259\
+    rin g\xFCcl\xFC birl\u0259\u015Fm\u0259si v\u0259 qar\u015F\u0131l\u0131ql\u0131\
+    \ inteqrasiyas\u0131d\u0131r."
+  en: a CPS is a strong unification and mutual integration of multiple computational,
+    networking, and physical processes.
+  it: si intende una forte unificazione e integrazione reciproca, di molteplici processi
+    computazionali, di networking e fisici.
+  pt: "um CPS \xE9 uma forte unifica\xE7\xE3o e integra\xE7\xE3o m\xFAtua de v\xE1\
+    rios processos computacionais, de rede e f\xEDsicos."
+  tr: "bir CPS, \xE7oklu hesaplama, a\u011F olu\u015Fturma ve fiziksel s\xFCre\xE7\
+    lerin g\xFC\xE7l\xFC bir birle\u015Fimi ve kar\u015F\u0131l\u0131kl\u0131 entegrasyonudur."
+- alias: 'The tasks of building CPS are central to any idea described in the new (fourth)
+    industrial revolution. Therefore, CPS is the cornerstone of our future life in
+    Smart Cities, manifesting itself everywhere. Examples of cyber-physical systems
+    of the future are: Uber autopilot, drone selfies, network of 3D printers in metro
+    stations.'
+  az: "CPS-nin qurulmas\u0131 tap\u015F\u0131r\u0131\u011Flar\u0131 yeni (d\xF6rd\xFC\
+    nc\xFC) s\u0259naye inqilab\u0131nda t\u0259svir olunan h\u0259r hans\u0131 bir\
+    \ ideyan\u0131n m\u0259rk\u0259zidir. Buna g\xF6r\u0259 d\u0259, CPS h\u0259r\
+    \ yerd\u0259 \xF6z\xFCn\xFC g\xF6st\u0259r\u0259n A\u011F\u0131ll\u0131 \u015E\
+    \u0259h\u0259rl\u0259rd\u0259 g\u0259l\u0259c\u0259k h\u0259yat\u0131m\u0131z\u0131\
+    n t\u0259m\u0259l da\u015F\u0131d\u0131r. G\u0259l\u0259c\u0259yin kiber-fiziki\
+    \ sisteml\u0259rinin n\xFCmun\u0259l\u0259ri:\n- H\u0259r smartfonda \u201CUber\u201D\
+    \ kimi avtopilot xidm\u0259tl\u0259ri;\n- Instagram \xFC\xE7\xFCn parkda dron\
+    \ selfil\u0259ri;\n- Minl\u0259rl\u0259 yerli sensordan havan\u0131n \xE7irkl\u0259\
+    nm\u0259si m\u0259lumatlar\u0131na abun\u0259;\n- Metro stansiyalar\u0131nda 3D\
+    \ printerl\u0259r \u015F\u0259b\u0259k\u0259si;\n- Amazon-a \xE7\u0131x\u0131\u015F\
+    \u0131 olan ev robotu Rosie;\n- \u0130stehsal d\xF6vr\xFCn\xFC avtonom \u015F\u0259\
+    kild\u0259 yenid\u0259n quran v\u0259 ya birba\u015Fa m\xFC\u015Ft\u0259ri il\u0259\
+    \ i\u015Fl\u0259y\u0259n a\u011F\u0131ll\u0131 fabrik"
+  en: 'The tasks of building CPS are central to any idea described in the new (fourth)
+    industrial revolution. Therefore, CPS is the cornerstone of our future life in
+    Smart Cities, manifesting itself everywhere. Examples of cyber-physical systems
+    of the future are: Uber autopilot, drone selfies, network of 3D printers in metro
+    stations.'
+  it: "La creazione dei CPS \xE8 centrale per ogni idea descritta nella nuova (quarta)\
+    \ rivoluzione industriale. Pertanto, i CPS sono la pietra angolare della nostra\
+    \ futura vita nelle Smart Cities e si manifestano ovunque. Alcuni esempi di sistemi\
+    \ cyber-fisici del futuro sono: un pilota automatico Uber, i selfie coi droni\
+    \ o una rete di stampanti 3D nelle stazioni della metropolitana."
+  pt: "As tarefas de constru\xE7\xE3o do CPS s\xE3o centrais para qualquer ideia descrita\
+    \ na nova (quarta) revolu\xE7\xE3o industrial. Portanto, o CPS \xE9 a pedra angular\
+    \ de nossa vida futura nas Cidades Inteligentes, manifestando-se em todos os lugares.\
+    \ Exemplos de sistemas ciberf\xEDsicos do futuro s\xE3o: piloto autom\xE1tico\
+    \ Uber, selfies de drones, rede de impressoras 3D em esta\xE7\xF5es de metr\xF4\
+    ."
+  tr: "CPS olu\u015Fturma g\xF6revleri, yeni (d\xF6rd\xFCnc\xFC) sanayi devriminde\
+    \ tan\u0131mlanan herhangi bir fikrin merkezinde yer al\u0131r. Bu nedenle CPS,\
+    \ Ak\u0131ll\u0131 \u015Eehirlerdeki gelecekteki ya\u015Fam\u0131m\u0131z\u0131\
+    n temel ta\u015F\u0131d\u0131r ve her yerde kendini g\xF6sterir. Gelece\u011F\
+    in siber-fiziksel sistemlerine \xF6rnekler: Uber otopilot, drone selfie'leri,\
+    \ metro istasyonlar\u0131ndaki 3D yaz\u0131c\u0131 a\u011F\u0131."
+- alias: 'CPS is a complex structure of many connected elements: from the app on the
+    phone, it extends to controlling the drone in flight over the city, and then proceeds
+    to publishing the resulting photos to Instagram, but only after processing by
+    cloud AI.'
+  az: "CPS bir \xE7ox \u0259laq\u0259li elementl\u0259rd\u0259n ibar\u0259t m\xFC\
+    r\u0259kk\u0259b strukturlard\u0131r: telefondak\u0131 proqramdan \u015F\u0259\
+    h\u0259r \xFCz\u0259rind\u0259 u\xE7u\u015F zaman\u0131 dronun idar\u0259 edilm\u0259\
+    sin\u0259 q\u0259d\u0259r uzan\u0131r v\u0259 sonra \u0259ld\u0259 edil\u0259\
+    n foto\u015F\u0259kill\u0259ri Instagram-da d\u0259rc etm\u0259y\u0259 davam edir,\
+    \ ancaq bulud AI t\u0259r\u0259find\u0259n emal edildikd\u0259n sonra"
+  en: 'CPS is a complex structure of many connected elements: from the app on the
+    phone, it extends to controlling the drone in flight over the city, and then proceeds
+    to publishing the resulting photos to Instagram, but only after processing by
+    cloud AI.'
+  it: "Un CPS \xE8 una struttura complessa di molti elementi connessi: dall'app sul\
+    \ telefono, si estende al controllo del drone in volo sulla citt\xE0, per poi\
+    \ procedere alla pubblicazione delle foto su Instagram, ma solo dopo un'elaborazione\
+    \ tramite AI cloud."
+  pt: "O CPS \xE9 uma estrutura complexa com muitos elementos conectados: do aplicativo\
+    \ no telefone, ele se estende ao controle do drone em voo sobre a cidade e depois\
+    \ publica as fotos resultantes no Instagram, mas somente ap\xF3s o processamento\
+    \ pela IA na nuvem."
+  tr: "CPS, birbirine ba\u011Fl\u0131 bir\xE7ok \xF6\u011Feden olu\u015Fan karma\u015F\
+    \u0131k bir yap\u0131d\u0131r: telefondaki uygulamadan, dronun \u015Fehir \xFC\
+    zerinde u\xE7u\u015Funu kontrol etmeye kadar uzan\u0131r ve ard\u0131ndan ortaya\
+    \ \xE7\u0131kan foto\u011Fraflar\u0131 Instagram'da yay\u0131nlamaya devam eder,\
+    \ ancak yaln\u0131zca bulut AI taraf\u0131ndan i\u015Flendikten sonra."
+- alias: The most important thing in the CPS design process is to find the fine line
+    between sufficient and excessive number of automated elements in the service user
+    supply chain. In other words, where is the size limit of the CPS? To answer this
+    question, we should turn to the famous mathematician Norbert Wiener.
+  az: .nan
+  en: The most important thing in the CPS design process is to find the fine line
+    between sufficient and excessive number of automated elements in the service user
+    supply chain. In other words, where is the size limit of the CPS? To answer this
+    question, we should turn to the famous mathematician Norbert Wiener.
+  it: "La cosa pi\xF9 importante nel processo di progettazione di un CPS, \xE8 trovare\
+    \ un giusto equilibrio nel numero di elementi automatizzati all'interno della\
+    \ catena che fornisce il servizio all'utente. In altre parole, dov'\xE8 il limite\
+    \ nelle dimensioni del CPS? Per rispondere a questa domanda, dovremmo rivolgerci\
+    \ al famoso matematico Norbert Wiener."
+  pt: "A coisa mais importante no processo de design do CPS \xE9 encontrar a linha\
+    \ t\xEAnue entre o n\xFAmero suficiente e excessivo de elementos automatizados\
+    \ na cadeia de suprimentos do usu\xE1rio do servi\xE7o. Em outras palavras, onde\
+    \ est\xE1 o limite de tamanho do CPS? Para responder a esta pergunta, devemos\
+    \ recorrer ao famoso matem\xE1tico Norbert Wiener."
+  tr: "CPS tasar\u0131m s\xFCrecindeki en \xF6nemli \u015Fey, hizmet kullan\u0131\
+    c\u0131s\u0131 tedarik zincirindeki yeterli ve a\u015F\u0131r\u0131 say\u0131\
+    da otomatik \xF6\u011Fe aras\u0131ndaki ince \xE7izgiyi bulmakt\u0131r. Ba\u015F\
+    ka bir deyi\u015Fle, CPS'nin boyut s\u0131n\u0131r\u0131 nerede? Bu soruyu cevaplamak\
+    \ i\xE7in \xFCnl\xFC matematik\xE7i Norbert Wiener'e kulak vermeliyiz."
+- alias: SELF-REGULATING SYSTEMS
+  az: "\xD6Z\xDCN\xDC T\u018FNZ\u0130M ED\u018FN S\u0130STEML\u018FR"
+  en: SELF-REGULATING SYSTEMS
+  it: SISTEMI DI AUTOREGOLAZIONE
+  pt: "SISTEMAS AUTO-REGUL\xC1VEIS"
+  tr: "KEND\u0130N\u0130 DENETLEYEN S\u0130STEMLER"
+- alias: 'In 1948 a professor of mathematics at the MIT Norbert Wiener published one
+    of the most seminal works "Cybernetics: Or Control and Communication in the Animal
+    and the Machine". He used the term "cybernetics" as self-regulating mechanisms
+    for the first time and, so, this publication is considered a recognized Cybernetic
+    birthday.'
+  az: "1948-ci ild\u0259 MIT-nin riyaziyyat professoru Norbert Wiener \u0259n \u0259\
+    sas \u0259s\u0259rl\u0259rd\u0259n birini n\u0259\u015Fr etdirdi \"Kibernetika:\
+    \ V\u0259 ya Heyvanlarda v\u0259 Ma\u015F\u0131nlarda N\u0259zar\u0259t v\u0259\
+    \ Rabit\u0259\". O, \"kibernetika\" terminini ilk d\u0259f\u0259 \xF6z\xFCn\xFC\
+    t\u0259nziml\u0259y\u0259n mexanizml\u0259r kimi istifad\u0259 etmi\u015Fdir v\u0259\
+    \ buna g\xF6r\u0259 d\u0259 bu n\u0259\u015Fr tan\u0131nm\u0131\u015F Kibernetik\
+    \ ad g\xFCn\xFC hesab olunur."
+  en: 'In 1948 a professor of mathematics at the MIT Norbert Wiener published one
+    of the most seminal works "Cybernetics: Or Control and Communication in the Animal
+    and the Machine". He used the term "cybernetics" as self-regulating mechanisms
+    for the first time and, so, this publication is considered a recognized Cybernetic
+    birthday.'
+  it: "Nel 1948 un professore di matematica dell MIT, Norbert Wiener, pubblic\xF2\
+    \ un testo estremamente importante \"\"Cybernetics: Or Control and Communication\
+    \ in the Animal and the Machine\"\". Utilizz\xF2 per la prima volta il termine\
+    \ \"\"cibernetica\"\" per riferirsi a dei meccanismi di autoregolazione.Questa\
+    \ pubblicazione viene quindi considerata e ricordata come un compleanno cibernetico."
+  pt: "Em 1948, um professor de matem\xE1tica do MIT, Norbert Wiener publicou um dos\
+    \ trabalhos mais importantes \"Cibern\xE9tica: Ou Controle e Comunica\xE7\xE3\
+    o no Animal e na M\xE1quina\". Ele usou pela primeira vez o termo \"cibern\xE9\
+    tica\" como mecanismos autorreguladores e, por isso, esta publica\xE7\xE3o \xE9\
+    \ considerada um anivers\xE1rio cibern\xE9tico reconhecido."
+  tr: "1948'de MIT'de matematik profes\xF6r\xFC Norbert Wiener en ufuk a\xE7\u0131\
+    c\u0131 \xE7al\u0131\u015Fmalardan birini yay\u0131nlad\u0131 \"Sibernetik: Hayvan\
+    \ ve Makinede Kontrol ve \u0130leti\u015Fim\". \"Sibernetik\" terimini kendi kendini\
+    \ d\xFCzenleyen mekanizmalar olarak kulland\u0131. ilk kez ve bu nedenle, bu yay\u0131\
+    n, tan\u0131nan bir Sibernetik do\u011Fum g\xFCn\xFC olarak kabul edilir."
+- alias: Norbert Wiener speaks about viability of interdisciplinary science approach.
+    For example he drew the parallels between automated control systems and challenges
+    of scaling and complexity increasing of human society.
+  az: "Norbert Wiener f\u0259nl\u0259raras\u0131 elmi yana\u015Fman\u0131n h\u0259\
+    yat qabiliy\u0259tind\u0259n dan\u0131\u015F\u0131r. M\u0259s\u0259l\u0259n, o,\
+    \ avtomatla\u015Fd\u0131r\u0131lm\u0131\u015F idar\u0259etm\u0259 sisteml\u0259\
+    ri il\u0259 insan c\u0259miyy\u0259tinin miqyas\u0131 v\u0259 m\xFCr\u0259kk\u0259\
+    bliyinin artmas\u0131 probleml\u0259ri aras\u0131nda paralell\u0259r \xE7\u0259\
+    kdi. "
+  en: Norbert Wiener speaks about viability of interdisciplinary science approach.
+    For example he drew the parallels between automated control systems and challenges
+    of scaling and complexity increasing of human society.
+  it: "Norbert Wiener parla della fattibilit\xE0 dell'approccio scientifico interdisciplinare.\
+    \ Ad esempio, ha tracciato dei parallelismi fra i sistemi di controllo automatizzati\
+    \ e le sfide sul ridimensionamento e sull'aumento della complessit\xE0 della societ\xE0\
+    \ umana."
+  pt: "Norbert Wiener fala sobre a viabilidade da abordagem interdisciplinar da ci\xEA\
+    ncia. Por exemplo, ele tra\xE7ou os paralelos entre os sistemas de controle automatizados\
+    \ e os desafios de dimensionamento e aumento da complexidade da sociedade humana."
+  tr: "Norbert Wiener, disiplinler aras\u0131 bilim yakla\u015F\u0131m\u0131n\u0131\
+    n uygulanabilirli\u011Finden bahsediyordu. \xD6rne\u011Fin, otomatik kontrol sistemleri\
+    \ ile insan toplumunun \xF6l\xE7eklenmesi ve karma\u015F\u0131kl\u0131\u011F\u0131\
+    n\u0131n artmas\u0131 zorluklar\u0131 aras\u0131ndaki paralellikleri \xE7izdi."
+- alias: So, in other words, the cybernetic approach can be applied equally to psychotherapy,
+    biology and automated navigation. It is based on the function of the system, how
+    the individual actions are controlled and how the individual nodes interact with
+    each other.
+  az: "Ba\u015Fqa s\xF6zl\u0259, kibernetik yana\u015Fma psixoterapiya, biologiya\
+    \ v\u0259 avtomatla\u015Fd\u0131r\u0131lm\u0131\u015F naviqasiyaya b\u0259rab\u0259\
+    r \u015F\u0259kild\u0259 t\u0259tbiq oluna bil\u0259r. Bu, sistemin funksiyas\u0131\
+    na, f\u0259rdi h\u0259r\u0259k\u0259tl\u0259rin nec\u0259 idar\u0259 olundu\u011F\
+    una v\u0259 f\u0259rdi qov\u015Faqlar\u0131n bir-biri il\u0259 nec\u0259 qar\u015F\
+    \u0131l\u0131ql\u0131 \u0259laq\u0259sin\u0259 \u0259saslan\u0131r."
+  en: So, in other words, the cybernetic approach can be applied equally to psychotherapy,
+    biology and automated navigation. It is based on the function of the system, how
+    the individual actions are controlled and how the individual nodes interact with
+    each other.
+  it: "In altre parole, l'approccio cibernetico pu\xF2 essere applicato in egual misura\
+    \ alla psicoterapia, alla biologia e alla navigazione automatizzata. Si basa sulla\
+    \ funzione del sistema, su come vengono controllate le singole azioni e su come\
+    \ i singoli nodi interagiscono fra loro."
+  pt: "Assim, em outras palavras, a abordagem cibern\xE9tica pode ser aplicada igualmente\
+    \ \xE0 psicoterapia, biologia e navega\xE7\xE3o automatizada. \xC9 baseado na\
+    \ fun\xE7\xE3o do sistema, como as a\xE7\xF5es individuais s\xE3o controladas\
+    \ e como os n\xF3s individuais interagem entre si."
+  tr: "Ba\u015Fka bir deyi\u015Fle, sibernetik yakla\u015F\u0131m psikoterapiye, biyolojiye\
+    \ ve otomatik navigasyona e\u015Fit olarak uygulanabilir. Sistemin i\u015Flevine,\
+    \ bireysel eylemlerin nas\u0131l kontrol edildi\u011Fine ve bireysel d\xFC\u011F\
+    \xFCmlerin birbirleriyle nas\u0131l etkile\u015Fime girdi\u011Fine dayan\u0131\
+    r."
+- alias: Taking into account Ronald Coase's and Norbert Wiener's publications, following
+    up the development of Industry 4.0, we can consider using CPS as an economic agent,
+    while designing robotized services. To regulate the size of the CPS and adapt
+    to the changing needs of the individuals we can use market mechanism.
+  az: "Ronald Coase v\u0259 Norbert Wiener-in n\u0259\u015Frl\u0259rini n\u0259z\u0259\
+    r\u0259 alaraq, S\u0259naye 4.0-\u0131n inki\u015Faf\u0131n\u0131 izl\u0259m\u0259\
+    kl\u0259, biz robotla\u015Fd\u0131r\u0131lm\u0131\u015F xidm\u0259tl\u0259rin\
+    \ layih\u0259l\u0259ndirilm\u0259si zaman\u0131 CPS-d\u0259n iqtisadi agent kimi\
+    \ istifad\u0259 etm\u0259yi n\u0259z\u0259rd\u0259n ke\xE7ir\u0259 bil\u0259rik.\
+    \ CPS-in \xF6l\xE7\xFCs\xFCn\xFC t\u0259nziml\u0259m\u0259k v\u0259 insanlar\u0131\
+    n d\u0259yi\u015F\u0259n ehtiyaclar\u0131na uy\u011Funla\u015Fmaq \xFC\xE7\xFC\
+    n biz bazar mexanizmind\u0259n istifad\u0259 ed\u0259 bil\u0259rik."
+  en: Taking into account Ronald Coase's and Norbert Wiener's publications, following
+    up the development of Industry 4.0, we can consider using CPS as an economic agent,
+    while designing robotized services. To regulate the size of the CPS and adapt
+    to the changing needs of the individuals we can use market mechanism.
+  it: Tenendo conto delle pubblicazioni di Ronald Coase e Norbert Wiener e seguendo
+    lo sviluppo dell'Industria 4.0, possiamo considerare l'utilizzo di un CPS come
+    un agente economico, durante la progettazione di servizi robotizzati. Per regolare
+    le dimensioni del CPS e adattarci alle mutevoli esigenze degli individui, possiamo
+    utilizzare i meccanismi del mercato.
+  pt: "Levando em conta as publica\xE7\xF5es de Ronald Coase e Norbert Wiener, acompanhando\
+    \ o desenvolvimento da Ind\xFAstria 4.0, podemos considerar o uso do CPS como\
+    \ um agente econ\xF4mico, ao projetar servi\xE7os robotizados. Para regular o\
+    \ tamanho do CPS e se adaptar \xE0s necessidades de mudan\xE7a dos indiv\xEDduos,\
+    \ podemos usar o mecanismo de mercado."
+  tr: "Ronald Coase ve Norbert Wiener'in yay\u0131nlar\u0131n\u0131 dikkate alarak,\
+    \ End\xFCstri 4.0'\u0131n geli\u015Fimini takip ederek, robotize hizmetleri tasarlarken\
+    \ CPS'yi ekonomik bir ajan olarak kullanmay\u0131 d\xFC\u015F\xFCnebiliriz. CPS'nin\
+    \ boyutunu d\xFCzenlemek ve bireylerin de\u011Fi\u015Fen ihtiya\xE7lar\u0131na\
+    \ uyum sa\u011Flamak i\xE7in piyasa mekanizmas\u0131n\u0131 kullanabiliriz."
+- alias: "And what\u2019s so scientifically interesting, taking as a basis the idea\
+    \ of the restrictions imposed by the market on the size of the firm, we can say\
+    \ that the limit of the increase in CPS will always be determined by the market\
+    \ and nothing else is required for this."
+  az: "V\u0259 elmi c\u0259h\u0259td\u0259n maraql\u0131 olan, bazar\u0131n firman\u0131\
+    n \xF6l\xE7\xFCs\xFCn\u0259 qoydu\u011Fu m\u0259hdudiyy\u0259tl\u0259r ideyas\u0131\
+    n\u0131 \u0259sas g\xF6t\xFCr\u0259r\u0259k, CPS-nin b\xF6y\xFCm\u0259 h\u0259\
+    ddinin h\u0259mi\u015F\u0259 bazar t\u0259r\u0259find\u0259n m\xFC\u0259yy\u0259\
+    n edil\u0259c\u0259yini s\xF6yl\u0259m\u0259k olar v\u0259 bunun \xFC\xE7\xFC\
+    n ba\u015Fqa he\xE7 n\u0259 t\u0259l\u0259b olunmur. "
+  en: "And what\u2019s so scientifically interesting, taking as a basis the idea of\
+    \ the restrictions imposed by the market on the size of the firm, we can say that\
+    \ the limit of the increase in CPS will always be determined by the market and\
+    \ nothing else is required for this."
+  it: "La cosa scientificamente interessante in tutto questo, \xE8 che prendendo come\
+    \ base l'idea dei vincoli imposti dal mercato alle dimensioni di un'impresa, possiamo\
+    \ dire che il limite all'aumento di un CPS, sar\xE0 sempre determinato solo dal\
+    \ mercato."
+  pt: "E o que \xE9 t\xE3o interessante cientificamente, tomando como base a ideia\
+    \ das restri\xE7\xF5es impostas pelo mercado ao tamanho da empresa, podemos dizer\
+    \ que o limite do aumento do CPS ser\xE1 sempre determinado pelo mercado e nada\
+    \ mais \xE9 necess\xE1rio para isto."
+  tr: "Ve bilimsel olarak ilgin\xE7 olan \u015Fey, piyasan\u0131n firman\u0131n b\xFC\
+    y\xFCkl\xFC\u011F\xFCne getirdi\u011Fi k\u0131s\u0131tlamalar fikrini temel alarak,\
+    \ CPS'deki art\u0131\u015F\u0131n s\u0131n\u0131r\u0131n\u0131n her zaman piyasa\
+    \ taraf\u0131ndan belirlenece\u011Fini ve bunun i\xE7in ba\u015Fka hi\xE7bir \u015F\
+    eye gerek olmad\u0131\u011F\u0131n\u0131 s\xF6yleyebiliriz."
+- alias: Robofirms are an ideal representation for cyber-physical systems. They are
+    a fairly autonomous unit capable of providing services to both humans and other
+    robots for money. As a result, the robot economy appears to us to be a general
+    set of CPSs that provide services and goods directly to the market.
+  az: "Robofirmalar kiberfiziki sisteml\u0259r \xFC\xE7\xFCn ideal t\u0259msil\xE7\
+    ilikdir. Onlar pul m\xFCqabilind\u0259 h\u0259m insanlara, h\u0259m d\u0259 dig\u0259\
+    r robotlara xidm\u0259t g\xF6st\u0259r\u0259 bil\u0259n kifay\u0259t q\u0259d\u0259\
+    r muxtar b\xF6lm\u0259dir. N\u0259tic\u0259 etibaril\u0259, robot iqtisadiyyat\u0131\
+    \ biz\u0259 birba\u015Fa bazara xidm\u0259tl\u0259r v\u0259 mallar t\u0259qdim\
+    \ ed\u0259n \xFCmumi CPS-l\u0259r d\u0259sti kimi g\xF6r\xFCn\xFCr."
+  en: Robofirms are an ideal representation for cyber-physical systems. They are a
+    fairly autonomous unit capable of providing services to both humans and other
+    robots for money. As a result, the robot economy appears to us to be a general
+    set of CPSs that provide services and goods directly to the market.
+  it: "Le Robofirm sono una rappresentazione ideale dei sistemi cyber-fisici. Sono\
+    \ unit\xE0 abbastanza autonome, in grado di fornire servizi sia agli esseri umani\
+    \ che ad altri robot in cambio di denaro. Pensiamo che l'economia robotica sia\
+    \ un insieme generale di CPS, che forniscono servizi e beni direttamente al mercato\
+    \ stesso."
+  pt: "Empresas robotizadas s\xE3o uma representa\xE7\xE3o ideal para sistemas ciber-f\xED\
+    sicos. Eles s\xE3o uma unidade bastante aut\xF4noma capaz de fornecer servi\xE7\
+    os a humanos e outros rob\xF4s por dinheiro. Como resultado, a economia rob\xF3\
+    tica nos parece ser um conjunto geral de CPSs que fornecem servi\xE7os e bens\
+    \ diretamente ao mercado."
+  tr: "Robofirms, siber-fiziksel sistemler i\xE7in ideal bir temsildir. Hem insanlara\
+    \ hem de di\u011Fer robotlara para kar\u015F\u0131l\u0131\u011F\u0131nda hizmet\
+    \ verebilen olduk\xE7a \xF6zerk bir birimdir. Sonu\xE7 olarak, robot ekonomisi\
+    \ bize do\u011Frudan pazara hizmet ve mal sa\u011Flayan genel bir CPS seti gibi\
+    \ g\xF6r\xFCn\xFCyor."
+- alias: BITCOIN
+  az: BITCOIN
+  en: BITCOIN
+  it: BITCOIN
+  pt: BITCOIN
+  tr: "B\u0130TCO\u0130N"
+- alias: MONEY FOR ROBOTS
+  az: "ROBOTLAR \xDC\xC7\xDCN PUL"
+  en: MONEY FOR ROBOTS
+  it: DENARO PER I ROBOT
+  pt: "DINHEIRO PARA ROB\xD4S"
+  tr: "ROBOTLAR \u0130\xC7\u0130N PARA"
+- alias: In the world of robofirms it turns out to be natural to provide robots with
+    access to social institutions that previously were only needed by humans.
+  az: "D\xF6rd\xFCnc\xFC s\u0259naye inqilab\u0131 dal\u011Fas\u0131nda robotlar\u0131\
+    n geni\u015Fl\u0259nm\u0259sinin \u0259n \xE7ox ehtimal olunan formas\u0131 kimi\
+    \ robot firmalarla ba\u011Fl\u0131 iddialar\u0131m\u0131z do\u011Frudursa, robotlara\
+    \ \u0259vv\u0259ll\u0259r yaln\u0131z insanlara ehtiyac duyulan v\u0259 m\xF6\
+    vcud olan bir \xE7ox sosial institutlara giri\u015Fin t\u0259min edilm\u0259si\
+    \ t\u0259biidir."
+  en: In the world of robofirms it turns out to be natural to provide robots with
+    access to social institutions that previously were only needed by humans.
+  it: Nel mondo delle robofirm, risulta naturale fornire ai robot l'accesso a tutte
+    quelle istituzioni sociali, che in passato erano utili solo agli esseri umani.
+  pt: "No mundo das empresas rob\xF3ticas, \xE9 natural fornecer aos rob\xF4s acesso\
+    \ a institui\xE7\xF5es sociais que antes eram necess\xE1rias apenas para humanos."
+  tr: "Robofirms d\xFCnyas\u0131nda, robotlar\u0131n daha \xF6nce sadece insanlar\u0131\
+    n ihtiya\xE7 duydu\u011Fu sosyal kurumlara eri\u015Fimini sa\u011Flamak do\u011F\
+    al g\xF6r\xFCn\xFCyor."
+- alias: Social institutions do not appear because we are people and physiologically
+    a person cannot live without banks, contracts, and other instruments of society.
+    But only because a person, at some point in time, entered the path of more complex
+    relations in society and took an important step towards accelerating the processes
+    of those around us.
+  az: "Sosial institutlar ona g\xF6r\u0259 yaranmay\u0131b ki, biz insanlar banklar,\
+    \ m\xFCqavil\u0259l\u0259r v\u0259 dig\u0259r sosial al\u0259tl\u0259r olmadan\
+    \ Homo Sapiens n\xF6v\xFC kimi m\xF6vcud ola bilm\u0259rik. \u018Fsl s\u0259b\u0259\
+    b odur ki, insan ke\xE7mi\u015Fd\u0259 hans\u0131sa m\u0259qamda c\u0259miyy\u0259\
+    td\u0259 daha m\xFCr\u0259kk\u0259b m\xFCnasib\u0259tl\u0259r\u0259 q\u0259d\u0259\
+    m qoyub v\u0259 \u0259traf\u0131m\u0131zda ged\u0259n prosesl\u0259ri s\xFCr\u0259\
+    tl\u0259ndirm\u0259k istiqam\u0259tind\u0259 m\xFCh\xFCm add\u0131m at\u0131b."
+  en: Social institutions do not appear because we are people and physiologically
+    a person cannot live without banks, contracts, and other instruments of society.
+    But only because a person, at some point in time, entered the path of more complex
+    relations in society and took an important step towards accelerating the processes
+    of those around us.
+  it: "Le istituzioni sociali non appaiono perch\xE9 siamo persone e fisiologicamente\
+    \ una persona non pu\xF2 vivere senza banche, contratti e altri strumenti della\
+    \ societ\xE0. Ma solo perch\xE9 una persona, ad un certo punto \xE8 entrata in\
+    \ un percorso di relazioni sociali pi\xF9 complesse e ha fatto un passo importante\
+    \ verso l'accelerazione dei processi di ci\xF2 che ci circonda."
+  pt: "As institui\xE7\xF5es sociais n\xE3o aparecem porque somos pessoas e fisiologicamente\
+    \ uma pessoa n\xE3o pode viver sem bancos, contratos e outros instrumentos da\
+    \ sociedade. Mas s\xF3 porque uma pessoa, em algum momento, entrou no caminho\
+    \ das rela\xE7\xF5es mais complexas da sociedade e deu um passo importante para\
+    \ acelerar os processos daqueles que nos cercam."
+  tr: "Sosyal kurumlar bizler insan\u0131z diye ortaya \xE7\u0131kmaz ve fizyolojik\
+    \ olarak bir insan bankalar, s\xF6zle\u015Fmeler ve toplumun di\u011Fer ara\xE7\
+    lar\u0131 olmadan ya\u015Fayamaz. Ancak sadece bir noktada bir ki\u015Fi, toplumda\
+    \ daha karma\u015F\u0131k ili\u015Fkiler yoluna girdi\u011Fi ve \xE7evremizdekilerin\
+    \ s\xFCre\xE7lerini h\u0131zland\u0131rmak i\xE7in \xF6nemli bir ad\u0131m att\u0131\
+    \u011F\u0131 i\xE7in."
+- alias: Money and contracts should become available to robots, not because this is
+    a sick fantasy of robot fans who have forgotten what Skynet is. But only because
+    the new industrial revolution sets itself the task of building complex automated
+    chains, the processes in which will affect the exchange of both technical information
+    and economic information, and will also proceed at a speed inaccessible to humans.
+  az: "Pul v\u0259 m\xFCqavil\u0259l\u0259r robotlar \xFC\xE7\xFCn \u0259l\xE7atan\
+    \ olmal\u0131d\u0131r, \xE7\xFCnki bu, Skynet-in n\u0259 oldu\u011Funu unutmu\u015F\
+    \ robot h\u0259v\u0259skarlar\u0131n\u0131n x\u0259st\u0259 fantaziyas\u0131 oldu\u011F\
+    una g\xF6r\u0259 deyil, yaln\u0131z ona g\xF6r\u0259 ki, yeni s\u0259naye inqilab\u0131\
+    \ m\xFCr\u0259kk\u0259b avtomatla\u015Fd\u0131r\u0131lm\u0131\u015F z\u0259ncirl\u0259\
+    r qurmaq m\u0259qs\u0259dini qoyur. Bu prosesl\u0259r h\u0259m texniki informasiya,\
+    \ h\u0259m d\u0259 iqtisadi informasiya m\xFCbadil\u0259sin\u0259 t\u0259sir g\xF6\
+    st\u0259r\u0259c\u0259k, h\u0259m d\u0259 insanlar \xFC\xE7\xFCn \u0259l\xE7atmaz\
+    \ s\xFCr\u0259tl\u0259 davam ed\u0259c\u0259k."
+  en: Money and contracts should become available to robots, not because this is a
+    sick fantasy of robot fans who have forgotten what Skynet is. But only because
+    the new industrial revolution sets itself the task of building complex automated
+    chains, the processes in which will affect the exchange of both technical information
+    and economic information, and will also proceed at a speed inaccessible to humans.
+  it: "Denaro e contratti dovrebbero diventare disponibili per i robot, non perch\xE9\
+    \ questa sia la fantasia malata di alcuni fanatici dei robot che si sono dimenticati\
+    \ di Skynet. Ma solo perch\xE9 la nuova rivoluzione industriale si pone il compito\
+    \ di costruire delle complesse catene automatizzate, i cui processi influenzeranno\
+    \ lo scambio sia delle informazioni tecniche, che di quelle economiche e procederanno\
+    \ a una velocit\xE0 inaccessibile all'uomo."
+  pt: "Dinheiro e contratos devem estar dispon\xEDveis para rob\xF4s, n\xE3o porque\
+    \ isso seja uma fantasia doentia de f\xE3s de rob\xF4s que esqueceram o que \xE9\
+    \ a Skynet. Mas apenas porque a nova revolu\xE7\xE3o industrial se prop\xF5e a\
+    \ construir cadeias automatizadas complexas, cujos processos afetar\xE3o a troca\
+    \ de informa\xE7\xF5es t\xE9cnicas e econ\xF4micas, e tamb\xE9m prosseguir\xE3\
+    o em uma velocidade inacess\xEDvel aos humanos\u201D."
+  tr: "Para ve s\xF6zle\u015Fmeler robotlar\u0131n kullan\u0131m\u0131na sunulmal\u0131\
+    , \xE7\xFCnk\xFC bu Skynet'in ne oldu\u011Funu unutmu\u015F robot hayranlar\u0131\
+    n\u0131n hasta bir fantezisi de\u011Fil. Ancak yeni sanayi devrimi, hem teknik\
+    \ bilgi hem de ekonomik bilgi al\u0131\u015Fveri\u015Fini etkileyecek ve ayn\u0131\
+    \ zamanda insanlar\u0131n eri\u015Femeyece\u011Fi bir h\u0131zda ilerleyecek olan\
+    \ karma\u015F\u0131k otomatik zincirler in\u015Fa etme g\xF6revini \xFCstlendi\u011F\
+    i i\xE7in."
+- alias: Industry 1.0
+  az: "S\u0259naye 1.0"
+  en: Industry 1.0
+  it: Industria 1.0
+  pt: "Ind\xFAstria 1.0"
+  tr: "End\xFCstri 1.0"
+- alias: 'Mechanization: '
+  az: 'Mexanizasiya:'
+  en: 'Mechanization: '
+  it: 'Meccanizzazione:'
+  pt: "Mecaniza\xE7\xE3o:"
+  tr: 'mekanizasyon:'
+- alias: 'replacement of muscle power with steam energy.
+
+    '
+  az: "\u018Fz\u0259l\u0259 g\xFCc\xFCn\xFCn buxar enerjisi il\u0259 \u0259v\u0259\
+    z edilm\u0259si."
+  en: 'replacement of muscle power with steam energy.
+
+    '
+  it: sostituzione della forza muscolare con energia a vapore.
+  pt: "substitui\xE7\xE3o da for\xE7a muscular pela energia do vapor."
+  tr: "kas g\xFCc\xFCn\xFCn buhar enerjisi ile de\u011Fi\u015Ftirilmesi."
+- alias: "1784 \u0433."
+  az: "1784-c\xFC il"
+  en: "1784 \u0433."
+  it: "1784 \u0433."
+  pt: Ano de 1784.
+  tr: 1784 r.
+- alias: Industry 2.0
+  az: "S\u0259naye 2.0"
+  en: Industry 2.0
+  it: Industria 2.0
+  pt: "Ind\xFAstria 2.0"
+  tr: "End\xFCstri 2.0"
+- alias: 'Electrification: '
+  az: "Elektrikl\u0259\u015Fdirm\u0259:"
+  en: 'Electrification: '
+  it: 'Elettrificazione:'
+  pt: "Eletrifica\xE7\xE3o:"
+  tr: 'elektrifikasyon:'
+- alias: introduction of assembly-line production.
+  az: "Konveyer istehsal\u0131n\u0131n t\u0259tbiqi."
+  en: introduction of assembly-line production.
+  it: introduzione della produzione su catena di montaggio.
+  pt: "introdu\xE7\xE3o da produ\xE7\xE3o em linha de montagem."
+  tr: "montaj hatt\u0131 \xFCretimine giri\u015F."
+- alias: "1870 \u0433."
+  az: 1870-ci il
+  en: "1870 \u0433."
+  it: "1870 \u0433."
+  pt: Ano de 1870.
+  tr: 1870 r.
+- alias: Industry 3.0
+  az: "S\u0259naye 3.0"
+  en: Industry 3.0
+  it: Industria 3.0
+  pt: "Ind\xFAstria 3.0"
+  tr: "End\xFCstri 3.0"
+- alias: 'Automation: '
+  az: "Avtomatla\u015Fd\u0131rma:"
+  en: 'Automation: '
+  it: 'Automazione:'
+  pt: "Automa\xE7\xE3o:"
+  tr: 'Otomasyon:'
+- alias: introduction of automated systems with CNC.
+  az: "CNC il\u0259 avtomatla\u015Fd\u0131r\u0131lm\u0131\u015F sisteml\u0259rin t\u0259\
+    tbiqi."
+  en: introduction of automated systems with CNC.
+  it: introduzione di sistemi automatizzati con CNC.
+  pt: "introdu\xE7\xE3o de sistemas automatizados com CNC."
+  tr: "CNC ile otomatik sistemlerin tan\u0131t\u0131m\u0131."
+- alias: "1969 \u0433."
+  az: 1969-cu il
+  en: "1969 \u0433."
+  it: "1969 \u0433."
+  pt: Ano de 1969.
+  tr: 1969 r.
+- alias: Industry 4.0
+  az: "S\u0259naye 4.0"
+  en: Industry 4.0
+  it: Industria 4.0
+  pt: "Ind\xFAstria 4.0"
+  tr: "End\xFCstri 4.0"
+- alias: 'Smart production:'
+  az: "A\u011F\u0131ll\u0131 istehsal:"
+  en: 'Smart production:'
+  it: 'Produzione intelligente:'
+  pt: "Produ\xE7\xE3o inteligente:"
+  tr: "Ak\u0131ll\u0131 \xFCretim:"
+- alias: development of cyber physical systems.
+  az: "Kiberfiziki sisteml\u0259rin inki\u015Faf\u0131."
+  en: development of cyber physical systems.
+  it: sviluppo di sistemi cyber-fisici.
+  pt: "desenvolvimento de sistemas f\xEDsicos cibern\xE9ticos."
+  tr: "siber fiziksel sistemlerin geli\u015Ftirilmesi."
+- alias: Now
+  az: "\u0130ndi"
+  en: Now
+  it: Adesso
+  pt: Atualmente.
+  tr: "\u015Eimdi"
+- alias: "One of the examples of our experiments: negotiating road space and right\
+    \ of way payments for autonomous vehicles to reduce congestion. What a person\
+    \ would absolutely not do in traffic, the car will do for you without difficulties:\
+    \ you want to switch lanes, your car and your neighbor's car exchange offers on\
+    \ the cost of such an operation at a rate of hundreds msgs per second, they will\
+    \ reveal an equilibrium price, and so you are already in the next faster moving\
+    \ lane. This means that now it will become available to \u201Ccharge\u201D your\
+    \ ride with uber and make it faster."
+  az: "Eksperimentl\u0259rimizin n\xFCmun\u0259l\u0259rind\u0259n biri: t\u0131xaclar\u0131\
+    \ azaltmaq \xFC\xE7\xFCn avtonom n\u0259qliyyat vasit\u0259l\u0259ri \xFC\xE7\xFC\
+    n yol sah\u0259si v\u0259 ke\xE7id haqq\u0131n\u0131n \xF6d\u0259nilm\u0259si\
+    \ il\u0259 ba\u011Fl\u0131 dan\u0131\u015F\u0131qlar\u0131n apar\u0131lmas\u0131\
+    . Bir insan\u0131n t\u0131xacda q\u0259tiyy\u0259n etm\u0259y\u0259c\u0259yi \u015F\
+    eyi, avtomobil sizin \xFC\xE7\xFCn \xE7\u0259tinlik \xE7\u0259km\u0259d\u0259\
+    n ed\u0259c\u0259k: siz zolaqlar\u0131, avtomobilinizi v\u0259 qon\u015Funuzun\
+    \ avtomobil m\xFCbadil\u0259sini saniy\u0259d\u0259 y\xFCzl\u0259rl\u0259 mesaj\
+    \ s\xFCr\u0259tind\u0259 bel\u0259 bir \u0259m\u0259liyyat\u0131n qiym\u0259ti\
+    \ il\u0259 ba\u011Fl\u0131 t\u0259klifl\u0259rini d\u0259yi\u015Fm\u0259k ist\u0259\
+    yirsiniz, onlar tarazl\u0131q qiym\u0259tini ortaya \xE7\u0131xaracaq v\u0259\
+    \ bel\u0259likl\u0259, siz art\u0131q n\xF6vb\u0259ti daha s\xFCr\u0259tli h\u0259\
+    r\u0259k\u0259t zola\u011F\u0131ndas\u0131n\u0131z. Bu o dem\u0259kdir ki, indi\
+    \ siz \u0259lav\u0259 \xF6d\u0259ni\u015F il\u0259 \u201CUber\u201D gedi\u015F\
+    inizi s\xFCr\u0259tl\u0259ndir\u0259 bil\u0259c\u0259ksiniz."
+  en: "One of the examples of our experiments: negotiating road space and right of\
+    \ way payments for autonomous vehicles to reduce congestion. What a person would\
+    \ absolutely not do in traffic, the car will do for you without difficulties:\
+    \ you want to switch lanes, your car and your neighbor's car exchange offers on\
+    \ the cost of such an operation at a rate of hundreds msgs per second, they will\
+    \ reveal an equilibrium price, and so you are already in the next faster moving\
+    \ lane. This means that now it will become available to \u201Ccharge\u201D your\
+    \ ride with uber and make it faster."
+  it: "Uno degli esempi dei nostri esperimenti: la negoziazione dello spazio stradale\
+    \ e il pagamento sul diritto di precedenza per i veicoli autonomi, in modo da\
+    \ ridurre la congestione. Quello che una persona non farebbe mai nel traffico,\
+    \ lo far\xE0 l'auto al posto suo e senza difficolt\xE0: se volete cambiare corsia,\
+    \ la vostra auto e quella del vicino si scambieranno offerte sul costo di tale\
+    \ operazione a una velocit\xE0 di centinaia di msg al secondo, fino a trovare\
+    \ un equilibrio economico. Vi ritroverete quindi subito nella prossima corsia\
+    \ pi\xF9 veloce. Questo significa che ora sar\xE0 possibile pagare un extra per\
+    \ rendere pi\xF9 veloce la vostra corsa con uber."
+  pt: "Um dos exemplos de nossos experimentos: negociar espa\xE7o vi\xE1rio e pagamentos\
+    \ de direito de passagem para ve\xEDculos aut\xF4nomos para reduzir o congestionamento.\
+    \ O que uma pessoa absolutamente n\xE3o faria no tr\xE2nsito, o carro far\xE1\
+    \ por voc\xEA sem dificuldades: voc\xEA quer mudar de faixa, o seu carro e o carro\
+    \ do seu vizinho 'conversam\" sobre o custo de tal opera\xE7\xE3o a uma taxa de\
+    \ centenas de msgs por segundo, eles revelar\xE3o um pre\xE7o de equil\xEDbrio\
+    \ e, portanto, voc\xEA j\xE1 est\xE1 na outra faixa. Isso significa que agora\
+    \ estar\xE1 dispon\xEDvel para \u201Ccarregar\u201D sua carona com o uber e torn\xE1\
+    -la mais r\xE1pida."
+  tr: "Deneylerimizin \xF6rneklerinden biri \u015Fu \u015Fekilde: s\u0131k\u0131\u015F\
+    \u0131kl\u0131\u011F\u0131 azaltmak i\xE7in otonom ara\xE7lar i\xE7in yol alan\u0131\
+    \ ve ge\xE7i\u015F hakk\u0131 \xF6demelerinin pazarl\u0131\u011F\u0131. Trafikte\
+    \ bir ki\u015Finin robotlar olmadan kesinlikle yapamayaca\u011F\u0131 bir \u015F\
+    ey d\xFC\u015F\xFCnelim. Araba sizin i\xE7in zorluk \xE7ekmeden yapacak: \u015F\
+    erit de\u011Fi\u015Ftirmek istiyorsunuz, araba ve kom\u015Funuzun arabas\u0131\
+    \ b\xF6yle bir i\u015Flemin maliyetine saniyede y\xFCzlerce mesaj h\u0131z\u0131\
+    nda teklif verirse, bir denge fiyat\u0131 ortaya \xE7\u0131karacak ve bu y\xFC\
+    zden zaten bir sonraki daha h\u0131zl\u0131 hareket eden \u015Feride ge\xE7eceksiniz.Bu,\
+    \ \u015Fimdi kullan\u0131labilir hale gelece\u011Fi anlam\u0131na geliyor yolculu\u011F\
+    unuzu uber ile \"\u015Farj etmek\" ve daha h\u0131zl\u0131 hale getirmek i\xE7\
+    in."
+- alias: Robots need money that will be directly available to them in order to be
+    able to perform operations without a person at the speed with which only machines
+    can make decisions. And all this is solely for a person to enjoy life in the Smart
+    City!
+  az: "Robotlar yaln\u0131z ma\u015F\u0131nlar\u0131n q\u0259rar ver\u0259 bil\u0259\
+    c\u0259yi s\xFCr\u0259tl\u0259 \u0259m\u0259liyyatlar h\u0259yata ke\xE7ir\u0259\
+    \ bilm\u0259k \xFC\xE7\xFCn pulu birba\u015Fa idar\u0259 etm\u0259lidirl\u0259\
+    r. B\xFCt\xFCn bunlar yaln\u0131z insan\u0131n A\u011F\u0131ll\u0131 \u015E\u0259\
+    h\u0259rd\u0259 h\u0259yatdan h\u0259zz almas\u0131 \xFC\xE7\xFCn n\u0259z\u0259\
+    rd\u0259 tutulub!"
+  en: Robots need money that will be directly available to them in order to be able
+    to perform operations without a person at the speed with which only machines can
+    make decisions. And all this is solely for a person to enjoy life in the Smart
+    City!
+  it: "I robot hanno bisogno di denaro, che sar\xE0 direttamente a loro disposizione\
+    \ per poter eseguire operazioni in autonomia, alla velocit\xE0 cui solo le macchine\
+    \ possono prendere decisioni. E tutto questo unicamente per le persone che si\
+    \ vogliono godere la vita nella Smart City!"
+  pt: "Os rob\xF4s precisam de dinheiro que esteja diretamente dispon\xEDvel para\
+    \ eles para poder realizar opera\xE7\xF5es sem uma pessoa na velocidade com que\
+    \ apenas as m\xE1quinas podem tomar decis\xF5es. E tudo isso \xE9 apenas para\
+    \ uma pessoa aproveitar a vida na Cidade Inteligente!"
+  tr: "Robotlar, yaln\u0131zca makinelerin karar verebilece\u011Fi h\u0131zda, bir\
+    \ ki\u015Fi olmadan i\u015Flemleri ger\xE7ekle\u015Ftirebilmek i\xE7in do\u011F\
+    rudan ellerinde olacak paraya ihtiya\xE7 duyarlar. Ve t\xFCm bunlar sadece bir\
+    \ ki\u015Finin Ak\u0131ll\u0131 \u015Eehir'de hayattan zevk almas\u0131 i\xE7\
+    indir!"
+- alias: And here we smoothly come to the first electronic cash - Bitcoin. The fact
+    that Bitcoin can be stored in your account on the principle of not a bank, but
+    cash in your wallet makes it the first money that the robot can manage independently,
+    more precisely autonomously. At the same time, today we can already say that Bitcoin
+    is not just electronic cash, but a truly global financial institution.
+  az: "Burada biz asanl\u0131qla ilk r\u0259q\u0259msal na\u011Fd pula - kriptovalyutalara\
+    \ v\u0259 ilk n\xF6vb\u0259d\u0259 Bitcoin-\u0259 g\u0259lirik. Kriptovalyuta\
+    \ na\u011Fd pul x\xFCsusiyy\u0259tin\u0259 malikdir, \xE7\xFCnki o, hesab\u0131\
+    n\u0131zda bank prinsipin\u0259 uy\u011Fun deyil, pul kis\u0259sind\u0259n istifad\u0259\
+    \ edirmi\u015F kimi saxlan\u0131l\u0131r. Bitcoin bir robotun avtonom \u015F\u0259\
+    kild\u0259 idar\u0259 ed\u0259 bil\u0259c\u0259yi ilk puldur. \xDCst\u0259lik,\
+    \ kriptovalyutalar bu g\xFCn art\u0131q h\u0259qiq\u0259t\u0259n qlobal maliyy\u0259\
+    \ institutudur v\u0259 \xE7ox g\xFCman ki, o, insan c\u0259miyy\u0259tind\u0259\
+    \ robot firmalar t\u0259r\u0259find\u0259n pul toplamaq \xFC\xE7\xFCn \u0259sas\
+    \ vasit\u0259y\u0259 \xE7evril\u0259c\u0259k."
+  en: And here we smoothly come to the first electronic cash - Bitcoin. The fact that
+    Bitcoin can be stored in your account on the principle of not a bank, but cash
+    in your wallet makes it the first money that the robot can manage independently,
+    more precisely autonomously. At the same time, today we can already say that Bitcoin
+    is not just electronic cash, but a truly global financial institution.
+  it: "E qui arriviamo direttamente al denaro elettronico: Bitcoin. Il fatto che Bitcoin\
+    \ possa essere immagazzinato su un account, non secondo il principio di una banca,\
+    \ ma secondo quello dei contanti in un portafogli, lo rende la prima forma di\
+    \ denaro che un robot pu\xF2 gestire autonomamente. Allo stesso tempo, oggi possiamo\
+    \ gi\xE0 affermare che Bitcoin non \xE8 solo denaro elettronico, ma un vero e\
+    \ proprio istituto finanziario globale."
+  pt: "E aqui chegamos sem problemas ao primeiro dinheiro eletr\xF4nico - Bitcoin.\
+    \ O fato de que o Bitcoin pode ser armazenado em sua conta no princ\xEDpio de\
+    \ n\xE3o ser um banco, mas dinheiro em sua carteira torna o primeiro dinheiro\
+    \ que o rob\xF4 pode gerenciar de forma independente, mais precisamente de forma\
+    \ aut\xF4noma. Ao mesmo tempo, hoje j\xE1 podemos dizer que o Bitcoin n\xE3o \xE9\
+    \ apenas dinheiro eletr\xF4nico, mas uma institui\xE7\xE3o financeira verdadeiramente\
+    \ global."
+  tr: "Ve burada sorunsuz bir \u015Fekilde ilk elektronik paraya geliyoruz - Bitcoin.\
+    \ Bitcoin'in banka de\u011Fil, c\xFCzdan\u0131n\u0131zdaki nakit prensibiyle hesab\u0131\
+    n\u0131zda saklanabilmesi, onu robotun ba\u011F\u0131ms\u0131z, daha do\u011F\
+    rusu otonom olarak y\xF6netebildi\u011Fi ilk para yap\u0131yor. Ayn\u0131 zamanda\
+    \ bug\xFCn Bitcoin'in sadece elektronik para de\u011Fil, ger\xE7ek anlamda k\xFC\
+    resel bir finans kurumu oldu\u011Funu \u015Fimdiden s\xF6yleyebiliriz."
+- alias: 'As a result: an event not invented by us, but clearly falling into our vision,
+    makes Bitcoin the first money for robots, or, if we look even deeper, it is precisely
+    that social institution that will help the formation of robotic firms.'
+  az: "N\u0259tic\u0259 olaraq: bizim icad etm\u0259diyimiz, lakin a\xE7\u0131q-ayd\u0131\
+    n bizim vizyonumuza daxil olan odur ki, Bitcoin robotlar \xFC\xE7\xFCn ilk puldur\
+    \ v\u0259 ya daha d\u0259rind\u0259n baxsaq, robot firmalar\u0131n formala\u015F\
+    mas\u0131na k\xF6m\u0259k ed\u0259c\u0259k m\u0259hz h\u0259min sosial qurumdur."
+  en: 'As a result: an event not invented by us, but clearly falling into our vision,
+    makes Bitcoin the first money for robots, or, if we look even deeper, it is precisely
+    that social institution that will help the formation of robotic firms.'
+  it: "Di conseguenza: un evento non inventato da noi, ma che chiaramente rientra\
+    \ nella nostra visione, fa di Bitcoin il primo denaro per i robot, o guardandolo\
+    \ ancor pi\xF9 in profondit\xE0, \xE8 proprio quell'istituto sociale che contribuir\xE0\
+    \ alla formazione delle robofirm."
+  pt: "Como resultado: um evento n\xE3o inventado por n\xF3s, mas claramente enquadrado\
+    \ em nossa vis\xE3o, faz do Bitcoin o primeiro dinheiro para rob\xF4s, ou, se\
+    \ olharmos ainda mais fundo, \xE9 justamente essa institui\xE7\xE3o social que\
+    \ ajudar\xE1 na forma\xE7\xE3o de empresas rob\xF3ticas."
+  tr: "Sonu\xE7 olarak: Bizim taraf\u0131m\u0131zdan icat edilmemi\u015F, ancak a\xE7\
+    \u0131k\xE7a vizyonumuza giren bir olay, Bitcoin'i robotlar i\xE7in ilk para haline\
+    \ getiriyor veya daha da derine inersek, robotik firmalar\u0131n olu\u015Fumuna\
+    \ yard\u0131mc\u0131 olacak tam da bu sosyal kurum."
+- alias: SMART CONTRACTS
+  az: "SMART M\xDCQAV\u0130L\u018FL\u018FR"
+  en: SMART CONTRACTS
+  it: SMART CONTRACTS
+  pt: SMART CONTRACTS
+  tr: "AKILLI S\xD6ZLE\u015EMELER"
+- alias: ETHEREUM
+  az: ETHEREUM
+  en: ETHEREUM
+  it: ETHEREUM
+  pt: ETHEREUM
+  tr: ETHEREUM
+- alias: Bitcoin became the first money available to robots. Meanwhile we can't talk
+    about Bitcoin in its current form as a tool for full-fledged technical and economic
+    exchange.
+  az: "Bitcoin robotlar \xFC\xE7\xFCn m\xF6vcud olan ilk pul oldu. Bu arada, tam h\xFC\
+    quqlu texniki v\u0259 iqtisadi m\xFCbadil\u0259 \xFC\xE7\xFCn bir vasit\u0259\
+    \ kimi haz\u0131rk\u0131 formada Bitcoin haqq\u0131nda dan\u0131\u015Fa bilm\u0259\
+    rik."
+  en: Bitcoin became the first money available to robots. Meanwhile we can't talk
+    about Bitcoin in its current form as a tool for full-fledged technical and economic
+    exchange.
+  it: "Bitcoin \xE8 diventato il primo denaro disponibile per i robot. Nel frattempo\
+    \ per\xF2, non possiamo parlarne nella sua forma attuale come strumento di scambio\
+    \ tecnico ed economico a tutti gli effetti."
+  pt: "Bitcoin se tornou o primeiro dinheiro dispon\xEDvel para rob\xF4s. Enquanto\
+    \ isso, n\xE3o podemos falar sobre o Bitcoin em sua forma atual como uma ferramenta\
+    \ para troca t\xE9cnica e econ\xF4mica completa."
+  tr: "Bitcoin, robotlar\u0131n kullanabilece\u011Fi ilk para oldu. Bu arada, tam\
+    \ te\u015Fekk\xFCll\xFC teknik ve ekonomik de\u011Fi\u015Fim i\xE7in bir ara\xE7\
+    \ olarak mevcut haliyle Bitcoin hakk\u0131nda konu\u015Famay\u0131z."
+- alias: Now we already have smart contracts, DeFi markets and a decentralized infrastructure
+    for exchanging messages between robots that open up the possibility for humanity
+    to create a fully automated part of the human economy - the robot economy.
+  az: "\u0130ndi bizd\u0259 art\u0131q a\u011F\u0131ll\u0131 m\xFCqavil\u0259l\u0259\
+    r, DeFi bazarlar\u0131 v\u0259 robotlar aras\u0131nda mesaj m\xFCbadil\u0259si\
+    \ \xFC\xE7\xFCn m\u0259rk\u0259zl\u0259\u015Fdirilm\u0259mi\u015F infrastruktur\
+    \ var ki, bu da b\u0259\u015F\u0259riyy\u0259t \xFC\xE7\xFCn insan iqtisadiyyat\u0131\
+    n\u0131n tam avtomatla\u015Fd\u0131r\u0131lm\u0131\u015F hiss\u0259sini \u2013\
+    \ robot iqtisadiyyat\u0131n\u0131 yaratmaq imkan\u0131n\u0131 a\xE7\u0131r\n"
+  en: Now we already have smart contracts, DeFi markets and a decentralized infrastructure
+    for exchanging messages between robots that open up the possibility for humanity
+    to create a fully automated part of the human economy - the robot economy.
+  it: "Ora abbiamo gi\xE0 gli smart contract, i mercati DeFi e un'infrastruttura decentralizzata\
+    \ per lo scambio di messaggi tra robot, che aprono alla possibilit\xE0 per la\
+    \ razza umana di creare una parte dell'economia completamente automatizzata: la\
+    \ robot economy."
+  pt: "Agora j\xE1 temos contratos inteligentes, mercados DeFi e uma infraestrutura\
+    \ descentralizada para troca de mensagens entre rob\xF4s que abrem a possibilidade\
+    \ para a humanidade criar uma parte totalmente automatizada da economia humana\
+    \ - a economia rob\xF3tica."
+  tr: "Art\u0131k, insanl\u0131\u011F\u0131n insan ekonomisinin tam otomatik bir par\xE7\
+    as\u0131n\u0131 - robot ekonomisini - yaratma olas\u0131l\u0131\u011F\u0131n\u0131\
+    \ a\xE7an robotlar aras\u0131nda mesaj al\u0131\u015Fveri\u015Fi yapmak i\xE7\
+    in ak\u0131ll\u0131 s\xF6zle\u015Fmelere, DeFi pazarlar\u0131na ve merkezi olmayan\
+    \ bir altyap\u0131ya sahibiz."
+- alias: One of the great opportunity to build the economy of robots is
+  az: "Robotlar\u0131n iqtisadiyyat\u0131n\u0131 qurmaq \xFC\xE7\xFCn \u0259la f\xFC\
+    rs\u0259tl\u0259rd\u0259n biri"
+  en: One of the great opportunity to build the economy of robots is
+  it: "Una delle grandi opportunit\xE0 per creare la robot economy, \xE8 la tecnologia\
+    \ di "
+  pt: "Uma das grandes oportunidades para construir a economia dos rob\xF4s \xE9 a\
+    \ tecnologia da"
+  tr: "Robotlar\u0131n ekonomisini in\u015Fa etmek i\xE7in en b\xFCy\xFCk f\u0131\
+    rsatlardan biri"
+- alias: Ethereum
+  az: Ethereum
+  en: Ethereum
+  it: Ethereum.
+  pt: Ethereum.
+  tr: Ethereum
+- alias: Ethereum
+  az: Ethereum
+  en: Ethereum
+  it: Ethereum
+  pt: Ethereum
+  tr: Ethereum
+- alias: Ethereum
+  az: Ethereum
+  en: Ethereum
+  it: Ethereum.
+  pt: Ethereum.
+  tr: Ethereum
+- alias: Ethereum
+  az: Ethereum
+  en: Ethereum
+  it: Ethereum
+  pt: Ethereum
+  tr: Ethereum
+- alias: technology. With Ethereum functionality robots are able not only exchange
+    money, but to enter into contracts with humans and among themselves.
+  az: "texnologiyas\u0131d\u0131r. Ethereum funksionall\u0131\u011F\u0131 il\u0259\
+    \ robotlar n\u0259inki pul m\xFCbadil\u0259si, h\u0259m d\u0259 insanlarla v\u0259\
+    \ \xF6z aralar\u0131nda m\xFCqavil\u0259l\u0259r ba\u011Flaya bilirl\u0259r."
+  en: technology. With Ethereum functionality robots are able not only exchange money,
+    but to enter into contracts with humans and among themselves.
+  it: "Con le sue funzionalit\xE0, i robot sono in grado non solo di scambiare denaro,\
+    \ ma di stipulare contratti fra loro e gli esseri umani."
+  pt: "Com a funcionalidades da Ethereum, os rob\xF4s s\xE3o capazes n\xE3o apenas\
+    \ de trocar dinheiro, mas de firmar contratos com humanos e entre si."
+  tr: "teknolojisidir. Ethereum i\u015Flevselli\u011Fi ile robotlar sadece para al\u0131\
+    \u015Fveri\u015Fi yapmakla kalmaz, ayn\u0131 zamanda insanlarla ve kendi aralar\u0131\
+    nda s\xF6zle\u015Fmeler yapabilirler."
+- alias: But what's the point of machine to machine (m2m) contract based communication?
+    That's a great question! Let's go back to CPS. When we talk about direct communications
+    between sensors, machine equipment or any other elements we still talk about collaboration
+    within one regulated system. But if we want smart cities services to be alive
+    (or even smart home in some cases), we need establish communication with various
+    third-party elements.
+  az: "B\u0259s ma\u015F\u0131ndan ma\u015F\u0131na (m2m) m\xFCqavil\u0259 \u0259\
+    sasl\u0131 rabit\u0259nin n\u0259 m\u0259nas\u0131 var? Bu, \u0259la suald\u0131\
+    r! G\u0259lin CPS-\u0259 qay\u0131daq. Sensorlar, ma\u015F\u0131n avadanl\u0131\
+    \u011F\u0131 v\u0259 ya h\u0259r hans\u0131 dig\u0259r elementl\u0259r aras\u0131\
+    nda birba\u015Fa \u0259laq\u0259 haqq\u0131nda dan\u0131\u015Fark\u0259n, h\u0259\
+    l\u0259 d\u0259 bir t\u0259nziml\u0259n\u0259n sistem daxilind\u0259 \u0259m\u0259\
+    kda\u015Fl\u0131q haqq\u0131nda dan\u0131\u015F\u0131r\u0131q. Ancaq a\u011F\u0131\
+    ll\u0131 \u015F\u0259h\u0259r xidm\u0259tl\u0259rinin (b\u0259zi hallarda h\u0259\
+    tta a\u011F\u0131ll\u0131 ev) canl\u0131 olmas\u0131n\u0131 ist\u0259yiriks\u0259\
+    , m\xFCxt\u0259lif \xFC\xE7\xFCnc\xFC t\u0259r\u0259f elementl\u0259ri il\u0259\
+    \ \u0259laq\u0259 qurmal\u0131y\u0131q."
+  en: But what's the point of machine to machine (m2m) contract based communication?
+    That's a great question! Let's go back to CPS. When we talk about direct communications
+    between sensors, machine equipment or any other elements we still talk about collaboration
+    within one regulated system. But if we want smart cities services to be alive
+    (or even smart home in some cases), we need establish communication with various
+    third-party elements.
+  it: "Ma qual \xE8 lo scopo della comunicazione basata su contratto da macchina a\
+    \ macchina (m2m)? \xC8 un'ottima domanda! Torniamo ai CPS. Quando si parla di\
+    \ comunicazioni dirette tra sensori, apparecchiature della macchina o qualsiasi\
+    \ altro elemento, si tratta sempre di collaborazione all'interno di un sistema\
+    \ regolamentato. Ma se vogliamo che i servizi delle smart city siano attivi (o\
+    \ anche smart home in alcuni casi), dobbiamo stabilire una comunicazione con vari\
+    \ elementi di terze parti."
+  pt: "Mas qual \xE9 o objetivo da comunica\xE7\xE3o baseada em contrato m\xE1quina\
+    \ a m\xE1quina (m2m)? Essa \xE9 uma \xF3tima pergunta! Voltemos ao CPS. Quando\
+    \ falamos de comunica\xE7\xF5es diretas entre sensores, equipamentos de m\xE1\
+    quinas ou quaisquer outros elementos, ainda falamos de colabora\xE7\xE3o dentro\
+    \ de um sistema regulado. Mas se queremos que os servi\xE7os de cidades inteligentes\
+    \ estejam vivos (ou at\xE9 mesmo casas inteligentes em alguns casos), precisamos\
+    \ estabelecer comunica\xE7\xE3o com v\xE1rios elementos de terceiros."
+  tr: "Ancak makineden makineye (m2m) s\xF6zle\u015Fmeye dayal\u0131 ileti\u015Fimin\
+    \ anlam\u0131 nedir? Bu harika bir soru! CPS'ye geri d\xF6nelim. Sens\xF6rler,\
+    \ makine ekipman\u0131 veya di\u011Fer unsurlar aras\u0131ndaki do\u011Frudan\
+    \ ileti\u015Fimden bahsetti\u011Fimizde, yine de d\xFCzenlenmi\u015F bir sistem\
+    \ i\xE7indeki i\u015Fbirli\u011Finden bahsediyoruz. Ancak ak\u0131ll\u0131 \u015F\
+    ehir hizmetlerinin canl\u0131 (hatta baz\u0131 durumlarda ak\u0131ll\u0131 ev)\
+    \ olmas\u0131n\u0131 istiyorsak, \xE7e\u015Fitli \xFC\xE7\xFCnc\xFC taraf unsurlarla\
+    \ ileti\u015Fim kurmam\u0131z gerekir."
+- alias: Let's imagine drone delivery service. If a drone, for example, is DHL's property
+    how it can access to Amazon's warehouses or access to over the entire airspace
+    of the city? Is it be a monopoly? This is a major challenge for many 4th industrial
+    revolution initiatives!
+  az: "Dron \xE7atd\u0131r\u0131lma xidm\u0259tini t\u0259s\u0259vv\xFCr ed\u0259\
+    k. M\u0259s\u0259l\u0259n, bir dron DHL-in m\xFClkiyy\u0259tidirs\u0259, o, Amazon-un\
+    \ anbarlar\u0131na v\u0259 ya \u015F\u0259h\u0259rin b\xFCt\xFCn hava m\u0259\
+    kan\u0131na nec\u0259 daxil ola bil\u0259r? Bu monopoliyad\u0131r? Bu, bir \xE7\
+    ox 4-c\xFC s\u0259naye inqilab\u0131 t\u0259\u015F\u0259bb\xFCsl\u0259ri \xFC\xE7\
+    \xFCn b\xF6y\xFCk problemdir!"
+  en: Let's imagine drone delivery service. If a drone, for example, is DHL's property
+    how it can access to Amazon's warehouses or access to over the entire airspace
+    of the city? Is it be a monopoly? This is a major challenge for many 4th industrial
+    revolution initiatives!
+  it: "Immaginiamo un servizio di consegna coi droni. Se un drone, ad esempio, \xE8\
+    \ di propriet\xE0 di DHL, come pu\xF2 accedere ai magazzini di Amazon o accedere\
+    \ all'intero spazio aereo della citt\xE0? Sar\xE0 un monopolio? Questa \xE8 una\
+    \ grande sfida per molte iniziative della quarta rivoluzione industriale!"
+  pt: "Vamos imaginar o servi\xE7o de entrega por drones. Se um drone, por exemplo,\
+    \ \xE9 propriedade da DHL, como ela pode acessar os armaz\xE9ns da Amazon ou acessar\
+    \ todo o espa\xE7o a\xE9reo da cidade? Ser\xE1 um monop\xF3lio? Este \xE9 um grande\
+    \ desafio para muitas iniciativas da 4\xAA revolu\xE7\xE3o industrial!"
+  tr: "Drone teslimat hizmetini d\xFC\u015F\xFCnelim. \xD6rne\u011Fin bir drone, DHL'in\
+    \ m\xFClk\xFCyse, Amazon'un depolar\u0131na nas\u0131l eri\u015Febilir veya \u015F\
+    ehrin t\xFCm hava sahas\u0131na nas\u0131l eri\u015Febilir? Tekel mi olacak? Bu,\
+    \ bir\xE7ok 4. sanayi devrimi giri\u015Fimi i\xE7in b\xFCy\xFCk bir zorluktur!"
+- alias: "Most corporations say they need nearly complete rights to its surroundings\
+    \ because they don\u2019t know how to securely set up the exchange of technical\
+    \ information between automated systems outside of their own internal corporate\
+    \ structure. At the same time, if you look at the processes where a person works,\
+    \ then we see that the cooperation of different corporations has been long and\
+    \ successfully existed. You can easily order door-to-door delivery of purchased\
+    \ goods on the Amazon website, and the courier will be able to drive a car along\
+    \ city roads, receive an order at the warehouse and bring it to you."
+  az: "\u018Fks\u0259r korporasiyalar \xF6z daxili korporativ strukturlar\u0131ndan\
+    \ k\u0259narda avtomatla\u015Fd\u0131r\u0131lm\u0131\u015F sisteml\u0259r aras\u0131\
+    nda texniki m\u0259lumat m\xFCbadil\u0259sini nec\u0259 t\u0259hl\xFCk\u0259siz\
+    \ qurma\u011F\u0131 bilm\u0259dikl\u0259rin\u0259 g\xF6r\u0259 \u0259traflar\u0131\
+    na dem\u0259k olar ki, tam h\xFCquqlara ehtiyac duyduqlar\u0131n\u0131 s\xF6yl\u0259\
+    yirl\u0259r. Eyni zamanda, insan m\xFCnasib\u0259tl\u0259rini \u0259hat\u0259\
+    \ ed\u0259n prosesl\u0259r\u0259 n\u0259z\u0259r salsaq, ayd\u0131n g\xF6r\u0259\
+    rik ki, m\xFCxt\u0259lif korporasiyalar aras\u0131nda \u0259m\u0259kda\u015Fl\u0131\
+    q \u0259n \xE7ox yay\u0131lm\u0131\u015F t\u0259cr\xFCb\u0259dir. Siz Amazon-da\
+    \ asanl\u0131qla qap\u0131dan qap\u0131ya \xE7atd\u0131r\u0131lma sifari\u015F\
+    \ ed\u0259 bil\u0259rsiniz v\u0259 kuryer \u015F\u0259h\u0259r yollar\u0131nda\
+    \ asanl\u0131qla avtomobiliniz\u0259 q\u0259d\u0259r gedib, anbarda sifari\u015F\
+    inizi al\u0131b siz\u0259 \xE7atd\u0131racaq."
+  en: "Most corporations say they need nearly complete rights to its surroundings\
+    \ because they don\u2019t know how to securely set up the exchange of technical\
+    \ information between automated systems outside of their own internal corporate\
+    \ structure. At the same time, if you look at the processes where a person works,\
+    \ then we see that the cooperation of different corporations has been long and\
+    \ successfully existed. You can easily order door-to-door delivery of purchased\
+    \ goods on the Amazon website, and the courier will be able to drive a car along\
+    \ city roads, receive an order at the warehouse and bring it to you."
+  it: "La maggior parte delle aziende afferma di aver bisogno di diritti quasi completi\
+    \ sull'ambiente circostante, perch\xE9 non sa come impostare in modo sicuro lo\
+    \ scambio di informazioni tecniche tra sistemi automatizzati al di fuori della\
+    \ propria struttura aziendale interna. Allo stesso tempo, se osserviamo i processi\
+    \ in cui una persona lavora, vediamo che la cooperazione di diverse societ\xE0\
+    \ \xE8 stata lunga ed \xE8 esistita con successo. Puoi facilmente ordinare la\
+    \ consegna porta a porta della merce acquistata sul sito di Amazon, e il corriere\
+    \ sar\xE0 in grado di guidare un'auto lungo le strade cittadine, ricevere un ordine\
+    \ al magazzino e portartelo."
+  pt: "A maioria das corpora\xE7\xF5es diz que precisa de direitos quase completos\
+    \ sobre seus arredores porque n\xE3o sabe como configurar com seguran\xE7a a troca\
+    \ de informa\xE7\xF5es t\xE9cnicas entre sistemas automatizados fora de sua pr\xF3\
+    pria estrutura corporativa interna. Ao mesmo tempo, se voc\xEA observar os processos\
+    \ em que uma pessoa trabalha, veremos que a coopera\xE7\xE3o de diferentes corpora\xE7\
+    \xF5es \xE9 longa e existe com sucesso. Voc\xEA pode facilmente solicitar a entrega\
+    \ porta a porta de mercadorias compradas no site da Amazon, e o correio poder\xE1\
+    \ dirigir um carro pelas estradas da cidade, receber um pedido no armaz\xE9m e\
+    \ traz\xEA-lo para voc\xEA."
+  tr: "\xC7o\u011Fu \u015Firket, kendi kurumsal yap\u0131lar\u0131n\u0131n d\u0131\
+    \u015F\u0131nda otomatik sistemler aras\u0131nda teknik bilgi al\u0131\u015Fveri\u015F\
+    ini g\xFCvenli bir \u015Fekilde nas\u0131l kuracaklar\u0131n\u0131 bilmediklerinden,\
+    \ \xE7evreleri \xFCzerinde neredeyse tam haklara ihtiya\xE7lar\u0131 oldu\u011F\
+    unu s\xF6yl\xFCyor. Ayn\u0131 zamanda bir ki\u015Finin \xE7al\u0131\u015Ft\u0131\
+    \u011F\u0131 s\xFCre\xE7lere bakarsan\u0131z, farkl\u0131 kurumlar\u0131n i\u015F\
+    birli\u011Finin uzun s\xFCredir var oldu\u011Funu ve ba\u015Far\u0131l\u0131 bir\
+    \ \u015Fekilde var oldu\u011Funu g\xF6r\xFCyoruz. Amazon web sitesinde sat\u0131\
+    n al\u0131nan mallar\u0131n kap\u0131dan kap\u0131ya teslimat\u0131n\u0131 kolayca\
+    \ sipari\u015F edebilirsiniz ve kurye \u015Fehir yollar\u0131nda araba kullanabilir,\
+    \ depoda sipari\u015F alabilir ve size getirebilir."
+- alias: What's the difference? In the first case there is no way to build a contractual
+    relationship between machines, and in the second case, in the world of people,
+    contractual relations already exist.
+  az: "Bu v\u0259ziyy\u0259tl\u0259r nec\u0259 f\u0259rqlidir? Birinci halda ma\u015F\
+    \u0131nlar aras\u0131nda m\xFCqavil\u0259 \u0259laq\u0259si qurmaq m\xFCmk\xFC\
+    n deyil. \u0130kinci halda, m\xFCqavil\u0259 m\xFCnasib\u0259tl\u0259ri insan\
+    \ al\u0259mind\u0259 q\u0259dim zamanlardan qurulmu\u015Fdur."
+  en: What's the difference? In the first case there is no way to build a contractual
+    relationship between machines, and in the second case, in the world of people,
+    contractual relations already exist.
+  it: "Qual \xE8 la differenza? Nel primo caso non c'\xE8 modo per creare un rapporto\
+    \ contrattuale fra macchine, mentre nel mondo delle persone i rapporti contrattuali\
+    \ esistono gi\xE0."
+  pt: "Qual \xE9 a diferen\xE7a? No primeiro caso n\xE3o h\xE1 como construir uma\
+    \ rela\xE7\xE3o contratual entre m\xE1quinas, e no segundo caso, no mundo das\
+    \ pessoas, j\xE1 existem rela\xE7\xF5es contratuais."
+  tr: "Fark ne? \u0130lk durumda, makineler aras\u0131nda s\xF6zle\u015Fmeye dayal\u0131\
+    \ bir ili\u015Fki kurman\u0131n bir yolu yoktur ve ikinci durumda, insanlar\u0131\
+    n d\xFCnyas\u0131nda s\xF6zle\u015Fmeye dayal\u0131 ili\u015Fkiler zaten mevcuttur."
+- alias: PARACHAINS
+  az: "PARA\xC7EYNL\u018FR"
+  en: PARACHAINS
+  it: PARACHAIN DI
+  pt: 'PARACHAINS DA '
+  tr: "M\xDCZAYEDELER\u0130"
+- alias: POLKADOT
+  az: POLKADOT
+  en: POLKADOT
+  it: POLKADOT
+  pt: POLKADOT
+  tr: POLKADOT
+- alias: The main difficulty that Robonomics faces today is the high price for launching
+    an IoT device using Ethereum. In Ethereum you have to pay a commission on each
+    transaction in terms of US dollars in the range of $10 to $100. It is quite expensive
+    for most cases from the real economy, be it a car-sharing trip, renting a smart
+    apartment, drone delivery or 3D printing of your favorite anime hero to order.
+  az: "Robonomics-in \xFCzl\u0259\u015Fdiyi bu g\xFCn\xFCn \u0259sas problemi Ethereum\
+    \ smart m\xFCqavil\u0259l\u0259rind\u0259n istifad\u0259 ed\u0259r\u0259k IoT\
+    \ cihaz\u0131n\u0131 idar\u0259 etm\u0259yin y\xFCks\u0259k qiym\u0259tidir. Haz\u0131\
+    rk\u0131 v\u0259ziyy\u0259tind\u0259 Ethereum real iqtisadiyyat\u0131n bir \xE7\
+    ox sah\u0259l\u0259rind\u0259 10 il\u0259 100 AB\u015E dollar\u0131 aras\u0131\
+    nda d\u0259yi\u015F\u0259n r\xFCsumlar\u0131n \xF6d\u0259nilm\u0259si z\u0259\
+    rur\u0259ti il\u0259 \u0259laq\u0259dar az istifad\u0259 edilir. \u0130st\u0259\
+    r avtomobil payla\u015Fma s\u0259f\u0259ri, a\u011F\u0131ll\u0131 m\u0259nzil\
+    \ kiray\u0259si, drone \xE7atd\u0131r\u0131lmas\u0131 v\u0259 ya sifari\u015F\
+    \ etdiyiniz sevimli anime q\u0259hr\u0259man\u0131n\u0131z\u0131n 3D \xE7ap\u0131\
+    \ olsun, real iqtisadiyyatdan \u0259ks\u0259r hallarda olduqca baha ba\u015Fa\
+    \ g\u0259lir."
+  en: The main difficulty that Robonomics faces today is the high price for launching
+    an IoT device using Ethereum. In Ethereum you have to pay a commission on each
+    transaction in terms of US dollars in the range of $10 to $100. It is quite expensive
+    for most cases from the real economy, be it a car-sharing trip, renting a smart
+    apartment, drone delivery or 3D printing of your favorite anime hero to order.
+  it: "La principale difficolt\xE0 che Robonomics deve affrontare oggi, \xE8 il costo\
+    \ elevato per il lancio di un dispositivo IoT utilizzando la rete Ethereum. Bisogna\
+    \ infatti pagare una commissione su ogni transazione, che in termini di dollari\
+    \ USA ha un costo tra i $10 e i $100. Questo lo rende costoso per buona parte\
+    \ dei casi dell'economia reale, che si tratti di un viaggio in car-sharing, dell'affitto\
+    \ di una smart house, della consegna coi droni o della stampa 3D del tuo anime\
+    \ preferito su ordinazione."
+  pt: "A principal dificuldade que a Robonomics enfrenta hoje \xE9 o alto pre\xE7\
+    o para lan\xE7ar um dispositivo IoT usando a Ethereum. Na Ethereum voc\xEA tem\
+    \ que pagar uma comiss\xE3o sobre cada transa\xE7\xE3o em termos de d\xF3lares\
+    \ americanos, na faixa de US$ 10 a US$ 100. \xC9 bastante caro para a maioria\
+    \ dos casos da economia real, seja uma viagem de compartilhamento de carro, aluguel\
+    \ de um apartamento inteligente, entrega por drones ou ordenar a impress\xE3o\
+    \ em 3D de seu her\xF3i anime favorito."
+  tr: "Bug\xFCn Robonomics'in kar\u015F\u0131la\u015Ft\u0131\u011F\u0131 ana zorluk,\
+    \ Ethereum kullanarak bir IoT cihaz\u0131 ba\u015Flatman\u0131n y\xFCksek fiyat\u0131\
+    d\u0131r. Ethereum'da, her i\u015Flem i\xE7in ABD dolar\u0131 cinsinden 10 ila\
+    \ 100 dolar aras\u0131nda bir komisyon \xF6demeniz gerekir. \xC7o\u011Fu i\xE7\
+    in olduk\xE7a pahal\u0131d\u0131r. Ger\xE7ek ekonomiden vakalar, araba payla\u015F\
+    \u0131m gezisi, ak\u0131ll\u0131 bir daire kiralama, drone teslimat\u0131 veya\
+    \ sipari\u015F vermek i\xE7in en sevdi\u011Finiz anime kahraman\u0131n\u0131n\
+    \ 3D bask\u0131s\u0131 olsun."
+- alias: Out of fairness, we would like to note that there are profitable scenarios
+    even with transaction fees in the Ethereum network of 2018 - 2019. For example,
+    automated carbon footprint offset transactions or transferring the order from
+    the website directly to the production. But still, for the mass application of
+    the web3 technologies in the field of IoT, a reduction in the price that the cloud
+    charges from the connected device is required.
+  az: "\u018Fdal\u0259tli olmaq \xFC\xE7\xFCn, biz bu \u0259m\u0259liyyat qiym\u0259\
+    tinin (v\u0259 h\u0259tta daha \xE7oxunun) faydal\u0131 ola bil\u0259c\u0259yi\
+    \ ssenaril\u0259ri g\xF6rm\xFC\u015F\xFCk: m\u0259s\u0259l\u0259n, b\u0259rpa\
+    \ olunan enerji m\u0259nb\u0259l\u0259ri \xFC\xE7\xFCn ya\u015F\u0131l sertifikatlar\u0131\
+    n avtomatla\u015Fd\u0131r\u0131lm\u0131\u015F \u015F\u0259kild\u0259 verilm\u0259\
+    si v\u0259 ya b2b sifari\u015Finin \u0130nternet sayt\u0131ndan birba\u015Fa istehsala\
+    \ \xF6t\xFCr\xFClm\u0259si. Bununla bel\u0259, IoT sah\u0259sind\u0259 web3-texnologiyas\u0131\
+    n\u0131n k\xFCtl\u0259vi t\u0259tbiqi v\u0259 q\u0259bulu \xFC\xE7\xFCn h\u0259\
+    r bir qo\u015Fulan cihaz \xFC\xE7\xFCn xidm\u0259t protokolu il\u0259 hesablanan\
+    \ qiym\u0259td\u0259 \u0259h\u0259miyy\u0259tli azalma olmal\u0131d\u0131r."
+  en: Out of fairness, we would like to note that there are profitable scenarios even
+    with transaction fees in the Ethereum network of 2018 - 2019. For example, automated
+    carbon footprint offset transactions or transferring the order from the website
+    directly to the production. But still, for the mass application of the web3 technologies
+    in the field of IoT, a reduction in the price that the cloud charges from the
+    connected device is required.
+  it: "Per correttezza, vorremmo far notare che esistono scenari redditizi anche con\
+    \ i costi di transazione della rete Ethereum tra 2018 - 2019. Come transazioni\
+    \ automatizzate di compensazione perle emissioni di CO2 o il trasferimento di\
+    \ un ordine dal sito web direttamente alla produzione. Tuttavia, per l'applicazione\
+    \ di massa delle tecnologie web3 nel campo dell'IoT, \xE8 necessaria una riduzione\
+    \ del prezzo che il cloud addebita dal dispositivo connesso\r\n"
+  pt: "Por justi\xE7a, gostar\xEDamos de observar que existem cen\xE1rios lucrativos\
+    \ mesmo com as taxas de transa\xE7\xE3o na rede Ethereum de 2018 - 2019. Por exemplo,\
+    \ transa\xE7\xF5es automatizadas de compensa\xE7\xE3o de pegada de carbono ou\
+    \ transfer\xEAncia do pedido do site diretamente para a produ\xE7\xE3o. Mas ainda\
+    \ assim, para a aplica\xE7\xE3o em massa das tecnologias web3 no campo da IoT,\
+    \ \xE9 necess\xE1ria uma redu\xE7\xE3o no pre\xE7o que a nuvem cobra do dispositivo\
+    \ conectado."
+  tr: "D\xFCr\xFCst olmak gerekirse, 2018 - 2019 Ethereum a\u011F\u0131nda i\u015F\
+    lem \xFCcretleriyle bile karl\u0131 senaryolar oldu\u011Funu belirtmek isteriz.\
+    \ \xD6rne\u011Fin, otomatik karbon ayak izi ofset i\u015Flemleri veya sipari\u015F\
+    in web sitesinden do\u011Frudan \xFCretime aktar\u0131lmas\u0131. Ancak yine de\
+    \ web3 teknolojilerinin IoT alan\u0131nda toplu olarak uygulanmas\u0131 i\xE7\
+    in bulutun ba\u011Fl\u0131 cihazdan ald\u0131\u011F\u0131 \xFCcretin d\xFC\u015F\
+    \xFCr\xFClmesi gerekiyor."
+- alias: Looking for an opportunity to reduce the cost of interacting with an IoT
+    device, Robonomics developers have studied alternative developments to Ethereum.
+    Our choice settled on the
+  az: "IoT cihaz\u0131 il\u0259 qar\u015F\u0131l\u0131ql\u0131 \u0259laq\u0259nin\
+    \ d\u0259y\u0259rini azaltmaq \xFC\xE7\xFCn bir f\xFCrs\u0259t axtaran Robonomics\
+    \ t\u0259rtibat\xE7\u0131lar\u0131 Ethereum-a alternativ h\u0259ll\u0259ri ara\u015F\
+    d\u0131rd\u0131lar. Se\xE7imimiz, t\u0259hl\xFCk\u0259sizliyin layih\u0259mizd\u0259\
+    n as\u0131l\u0131 olmayan validatorlar t\u0259r\u0259find\u0259n t\u0259min edildiyi\
+    \ \xFCmumi \u015F\u0259b\u0259k\u0259 daxilind\u0259 \xF6z blok\xE7eynimizi idar\u0259\
+    \ etm\u0259y\u0259 imkan ver\u0259n"
+  en: Looking for an opportunity to reduce the cost of interacting with an IoT device,
+    Robonomics developers have studied alternative developments to Ethereum. Our choice
+    settled on the
+  it: "Alla ricerca di un'opportunit\xE0 per ridurre i costi di interazione coi dispositivi\
+    \ IoT, gli sviluppatori di Robonomics hanno studiato sviluppi alternativi a Ethereum.\
+    \ La nostra scelta si \xE8 basata sull'architettura di"
+  pt: "Procurando uma oportunidade para reduzir o custo de intera\xE7\xE3o com um\
+    \ dispositivo IoT, os desenvolvedores da Robonomics estudaram desenvolvimentos\
+    \ alternativos ao Ethereum. Nossa escolha se baseou na arquitetura da"
+  tr: "Bir IoT cihaz\u0131yla etkile\u015Fim maliyetini azaltmak i\xE7in bir f\u0131\
+    rsat arayan Robonomics geli\u015Ftiricileri, Ethereum'a alternatif geli\u015F\
+    tirmeler \xFCzerinde \xE7al\u0131\u015Ft\u0131. Se\xE7imimiz, g\xFCvenli\u011F\
+    in projemizden ba\u011F\u0131ms\u0131z do\u011Frulay\u0131c\u0131lar taraf\u0131\
+    ndan sa\u011Fland\u0131\u011F\u0131 ortak bir a\u011F i\xE7inde kendi blok zincirimizi\
+    \ \xE7al\u0131\u015Ft\u0131rmam\u0131za izin verecek olan"
+- alias: architecture, which would allow us to run our own blockchain, within a common
+    network, in which security is ensured by validators independent of our project.
+  az: "arxitekturas\u0131nda q\u0259rarla\u015Fd\u0131."
+  en: architecture, which would allow us to run our own blockchain, within a common
+    network, in which security is ensured by validators independent of our project.
+  it: ", che ci avrebbe consentito di eseguire la nostra blockchain all'interno di\
+    \ una rete comune, in cui la sicurezza \xE8 garantita da validatori indipendenti\
+    \ dal nostro progetto."
+  pt: ", que nos permitiria rodar nossa pr\xF3pria blockchain, dentro de uma rede\
+    \ comum, na qual a seguran\xE7a \xE9 garantida por validadores independentes do\
+    \ nosso projeto."
+  tr: mimarisine karar verdi.
+- alias: Polkadot
+  az: Polkadot
+  en: Polkadot
+  it: Polkadot
+  pt: Polkadot
+  tr: Polkadot
+- alias: Freedom of choice
+  az: "Se\xE7im azadl\u0131\u011F\u0131"
+  en: Freedom of choice
+  it: Freedom of choice
+  pt: Liberdade de escolha
+  tr: "Se\xE7me \xF6zg\xFCrl\xFC\u011F\xFC"
+- alias: Heterogeneous Blockchain Network
+  az: "Heterojen Blok\xE7eyn \u015E\u0259b\u0259k\u0259si"
+  en: Heterogeneous Blockchain Network
+  it: Reti Blockchain Eterogenee
+  pt: "Rede Blockchain Heterog\xEAnea"
+  tr: "Heterojen Blockchain A\u011F\u0131"
+- alias: Homogeneous Shard Network
+  az: "Homojen \u015Eard \u015E\u0259b\u0259k\u0259si"
+  en: Homogeneous Shard Network
+  it: Reti Shard Omogenee
+  pt: "Rede de Shards Homog\xEAneos"
+  tr: "Homojen Par\xE7a A\u011F\u0131"
+- alias: Slots Auction
+  az: Slot auksionu
+  en: Slots Auction
+  it: Aste per gli Slot
+  pt: "Leil\xE3o de slots"
+  tr: "Slot M\xFCzayedeleri"
+- alias: On-chain protocol control
+  az: "Z\u0259ncir \xFCz\u0259rind\u0259 protokol n\u0259zar\u0259ti"
+  en: On-chain protocol control
+  it: Protocollo di controllo on-chain
+  pt: Controle de protocolo on-chain
+  tr: "Zincir-i\xE7i protokol kontrol\xFC"
+- alias: Protection against the tyranny of the crowd
+  az: "K\xFCtl\u0259nin z\xFClm\xFCnd\u0259n m\xFCdafi\u0259"
+  en: Protection against the tyranny of the crowd
+  it: Protezione contro la tirannia della folla
+  pt: "Prote\xE7\xE3o contra a tirania da multid\xE3o"
+  tr: "Kalabal\u0131\u011F\u0131n zorbal\u0131\u011F\u0131na kar\u015F\u0131 koruma"
+- alias: Auction of bandwidth in the common network
+  az: "\xDCmumi \u015F\u0259b\u0259k\u0259d\u0259 bant geni\u015Fliyi auksionu"
+  en: Auction of bandwidth in the common network
+  it: Asta di banda sulla rete comune
+  pt: "Leil\xE3o de largura de banda na rede comum"
+  tr: "Ortak a\u011Fda bant geni\u015Fli\u011Fi a\xE7\u0131k art\u0131rmas\u0131"
+- alias: Payment for gas by users
+  az: "\u0130stifad\u0259\xE7il\u0259r t\u0259r\u0259find\u0259n qaz\u0131n \xF6d\u0259\
+    nilm\u0259si"
+  en: Payment for gas by users
+  it: Pagamento del gas da parte degli utenti
+  pt: "Pagamento de gas pelos usu\xE1rios"
+  tr: "Kullan\u0131c\u0131lar taraf\u0131ndan gaz i\xE7in \xF6deme"
+- alias: Have you read this?
+  az: Siz bunu oxumusunuz?
+  en: Have you read this?
+  it: Hai letto questi?
+  pt: "Voc\xEA leu isso?"
+  tr: Bunu okudunuz mu?
+- alias: OPEN QUESTIONS OF TELEOLOGY
+  az: "TELEOLOG\u0130YANIN A\xC7IQ SUALLARI"
+  en: OPEN QUESTIONS OF TELEOLOGY
+  it: DOMANDE APERTE DELLA TELEOLOGIA
+  pt: "QUEST\xD5ES ABERTAS DE TELEOLOGIA"
+  tr: "TELOLOJ\u0130 A\xC7IK SORULARI"
+- alias: Inspired by Norbert Wiener
+  az: "Norbert Wiener-d\u0259n ilhamlan\u0131b"
+  en: Inspired by Norbert Wiener
+  it: Ispirato da Norbert Wiener
+  pt: Inspirado por Norbert Wiener
+  tr: "Norbert Wiener'den ilham al\u0131nm\u0131\u015Ft\u0131r"
+- alias: "One extremely popular question that still remains open \u2014 the purposefulness\
+    \ of robots when providing services to people. This is a specific but academically\
+    \ important question. The fact is that human economics often includes factors\
+    \ related to the good faith performance of tasks in a contract, the desire of\
+    \ the parties to achieve a result, and the opportunistic and altruistic behavior\
+    \ of the individual in society. It is difficult to talk about such issues in robotics\
+    \ today, so the developers of Robonomics would like to leave teleological issues\
+    \ open for further study, and focus their attention on the praxeological part\
+    \ of robots\u2019 behavior as economic agents. Regarding goal setting, an early\
+    \ article by Norbert Wiener and his colleagues \u201CBehavior, Purpose and Teleology\u201D\
+    , as well as the work of the American economist and philosopher Ludwig von Mises\
+    \ on human activity can be considered as points of reference."
+  az: "H\u0259l\u0259 d\u0259 a\xE7\u0131q qalan olduqca populyar bir sual - insanlara\
+    \ xidm\u0259t g\xF6st\u0259r\u0259rk\u0259n robotlar\u0131n m\u0259qs\u0259dy\xF6\
+    nl\xFCl\xFCy\xFC. Bu spesifik, lakin akademik bax\u0131mdan vacib suald\u0131\
+    r. M\u0259s\u0259l\u0259 buras\u0131ndad\u0131r ki, insan iqtisadiyyat\u0131 \xE7\
+    ox vaxt m\xFCqavil\u0259d\u0259ki tap\u015F\u0131r\u0131qlar\u0131n vicdanla yerin\u0259\
+    \ yetirilm\u0259si, t\u0259r\u0259fl\u0259rin n\u0259tic\u0259 \u0259ld\u0259\
+    \ etm\u0259k ist\u0259yi, f\u0259rdin c\u0259miyy\u0259td\u0259 f\xFCrs\u0259\
+    t\xE7i v\u0259 f\u0259dakar davran\u0131\u015F\u0131 il\u0259 ba\u011Fl\u0131\
+    \ amill\u0259ri ehtiva edir. Bu g\xFCn robototexnika sah\u0259sind\u0259 bu c\xFC\
+    r m\u0259s\u0259l\u0259l\u0259rd\u0259n dan\u0131\u015Fmaq \xE7\u0259tindir, ona\
+    \ g\xF6r\u0259 d\u0259 Robonimikan\u0131n t\u0259rtibat\xE7\u0131lar\u0131 teleoloji\
+    \ m\u0259s\u0259l\u0259l\u0259ri \u0259lav\u0259 ara\u015Fd\u0131rma \xFC\xE7\xFC\
+    n a\xE7\u0131q qoymaq v\u0259 diqq\u0259tl\u0259rini iqtisadi agentl\u0259r kimi\
+    \ robotlar\u0131n davran\u0131\u015F\u0131n\u0131n prakseoloji hiss\u0259sin\u0259\
+    \ y\xF6n\u0259ltm\u0259k ist\u0259yirl\u0259r. M\u0259qs\u0259dl\u0259rin qoyulmas\u0131\
+    \ il\u0259 ba\u011Fl\u0131 Norbert Wiener v\u0259 onun h\u0259mkarlar\u0131n\u0131\
+    n \u201CDavran\u0131\u015F, m\u0259qs\u0259d v\u0259 teleologiya\u201D adl\u0131\
+    \ ilk m\u0259qal\u0259si, el\u0259c\u0259 d\u0259 amerikal\u0131 iqtisad\xE7\u0131\
+    \ v\u0259 filosof L\xFCdviq fon Mizesin insan f\u0259aliyy\u0259ti il\u0259 ba\u011F\
+    l\u0131 i\u015Fi istinad n\xF6qt\u0259l\u0259ri kimi q\u0259bul edil\u0259 bil\u0259\
+    r."
+  en: "One extremely popular question that still remains open \u2014 the purposefulness\
+    \ of robots when providing services to people. This is a specific but academically\
+    \ important question. The fact is that human economics often includes factors\
+    \ related to the good faith performance of tasks in a contract, the desire of\
+    \ the parties to achieve a result, and the opportunistic and altruistic behavior\
+    \ of the individual in society. It is difficult to talk about such issues in robotics\
+    \ today, so the developers of Robonomics would like to leave teleological issues\
+    \ open for further study, and focus their attention on the praxeological part\
+    \ of robots\u2019 behavior as economic agents. Regarding goal setting, an early\
+    \ article by Norbert Wiener and his colleagues \u201CBehavior, Purpose and Teleology\u201D\
+    , as well as the work of the American economist and philosopher Ludwig von Mises\
+    \ on human activity can be considered as points of reference."
+  it: "Una domanda estremamente popolare che rimane ancora aperta- la finalit\xE0\
+    \ dei robot quando forniscono servizi alle persone. Questa \xE8 una domanda specifica\
+    \ ma accademicamente importante. Il fatto \xE8 che l'economia umana spesso include\
+    \ fattori legati all'esecuzione in buona fede dei compiti su un contratto, il\
+    \ desiderio delle parti di ottenere un risultato e il comportamento opportunistico\
+    \ e altruistico dell'individuo nella societ\xE0. \xC8 difficile parlare di questi\
+    \ problemi oggi nella robotica, quindi gli sviluppatori di Robonomics vorrebbero\
+    \ lasciare le questioni teleologiche aperte per ulteriori studi, e focalizzare\
+    \ la loro attenzione sulla parte prasseologica del comportamento dei robot come\
+    \ agenti economici.Per quanto riguarda la definizione degli obiettivi, un primo\
+    \ articolo di Norbert Wiener e dei suoi colleghi \"\"Behavior, Purpose and Teleology\"\
+    \", nonch\xE9 i lavori dell'economista e filosofo americano Ludwig von Mises sull'attivit\xE0\
+    \ umana possono essere considerati come degli spunti."
+  pt: "Uma quest\xE3o extremamente popular que ainda permanece em aberto - a finalidade\
+    \ dos rob\xF4s na presta\xE7\xE3o de servi\xE7os \xE0s pessoas. Esta \xE9 uma\
+    \ quest\xE3o espec\xEDfica, mas academicamente importante. O fato \xE9 que a economia\
+    \ humana geralmente inclui fatores relacionados ao desempenho de boa f\xE9 das\
+    \ tarefas em um contrato, o desejo das partes de alcan\xE7ar um resultado, e o\
+    \ comportamento oportunista e altru\xEDsta do indiv\xEDduo na sociedade. \xC9\
+    \ dif\xEDcil falar sobre tais quest\xF5es na rob\xF3tica hoje, ent\xE3o os desenvolvedores\
+    \ da Robonomics gostariam de deixar quest\xF5es teleol\xF3gicas abertas para um\
+    \ estudo mais aprofundado, e concentram sua aten\xE7\xE3o na parte praxeol\xF3\
+    gica do comportamento dos rob\xF4s como agentes econ\xF4micos. Em rela\xE7\xE3\
+    o ao estabelecimento de metas, um artigo inicial de Norbert Wiener e seus colegas\
+    \ \u201CBehavior, Purpose and Teleology\u201D, bem como o trabalho do economista\
+    \ e fil\xF3sofo americano Ludwig von Mises sobre a atividade humana podem ser\
+    \ considerados como pontos de refer\xEAncia."
+  tr: "H\xE2l\xE2 a\xE7\u0131k kalan son derece pop\xFCler bir soru - insanlara hizmet\
+    \ sunarken robotlar\u0131n amac\u0131. Bu \xF6zel ama akademik a\xE7\u0131dan\
+    \ \xF6nemli bir soru. Ger\xE7ek \u015Fu ki, insan ekonomisi genellikle bir s\xF6\
+    zle\u015Fmedeki g\xF6revlerin iyi niyetli performans\u0131yla ilgili fakt\xF6\
+    rleri i\xE7erir, taraflar\u0131n bir sonuca ula\u015Fma arzusu ve bireyin toplumdaki\
+    \ f\u0131rsat\xE7\u0131 ve fedakar davran\u0131\u015Flar\u0131.G\xFCn\xFCm\xFC\
+    zde robotikte bu t\xFCr konular hakk\u0131nda konu\u015Fmak zordur, bu nedenle\
+    \ Robonomics geli\u015Ftiricileri teleolojik konular\u0131 daha fazla \xE7al\u0131\
+    \u015Fmaya a\xE7\u0131k b\u0131rakmak isterler, ve dikkatlerini, ekonomik ajanlar\
+    \ olarak robotlar\u0131n davran\u0131\u015Flar\u0131n\u0131n praksiolojik k\u0131\
+    sm\u0131na odaklarlar.Hedef belirleme ile ilgili olarak, Norbert Wiener ve meslekta\u015F\
+    lar\u0131n\u0131n \u201CBehavior, Purpose and Teleology\u201D adl\u0131 ilk makalesinin\
+    \ yan\u0131 s\u0131ra Amerikal\u0131 ekonomist ve filozof Ludwig von'un \xE7al\u0131\
+    \u015Fmas\u0131 \u0130nsan etkinli\u011Fine ili\u015Fkin yanl\u0131\u015Flar,\
+    \ referans noktalar\u0131 olarak kabul edilebilir."
+- alias: Mises, in his book
+  az: Mizes
+  en: Mises, in his book
+  it: Mises, nel suo libro
+  pt: Mises, em seu livro
+  tr: Mises,
+- alias: "\xABHuman Action: A Treatise of Economics\xBB"
+  az: "\"\u0130nsan F\u0259aliyy\u0259ti: \u0130qtisadiyyat\u0131n risal\u0259si\""
+  en: "\xABHuman Action: A Treatise of Economics\xBB"
+  it: "\xABL'azione umana: un trattato di economia\xBB"
+  pt: "\xABHuman Action: A Treatise of Economics\xBB"
+  tr: "\xABHuman Action: A Treatise of Economics\xBB"
+- alias: ', looks at the human being in economics from a praxeological perspective.
+    Praxeology gives us an interesting insight into human behavior without a direct
+    correlation to the ultimate goal. By continuing to study the phenomena in human
+    economics from the perspective of the processes themselves, separated from the
+    end goals, we can understand more about the framework that can be formed for a
+    robot economy, so as not to delve into questions of machine teleology.'
+  az: "kitab\u0131nda iqtisadiyyatda insana prakseoloji prizmadan bax\u0131r. Prakseologiya\
+    \ biz\u0259 son m\u0259qs\u0259dl\u0259 birba\u015Fa \u0259laq\u0259si olmayan\
+    \ insan davran\u0131\u015F\u0131 haqq\u0131nda maraql\u0131 bir fikir verir. \u0130\
+    nsan iqtisadiyyat\u0131ndak\u0131 hadis\u0259l\u0259ri prosesl\u0259rin \xF6z\
+    \ n\xF6qteyi-n\u0259z\u0259rind\u0259n, son m\u0259qs\u0259dl\u0259rd\u0259n ayr\u0131\
+    laraq \xF6yr\u0259nm\u0259y\u0259 davam etm\u0259kl\u0259, ma\u015F\u0131n teleologiyas\u0131\
+    \ suallar\u0131na girm\u0259m\u0259k \xFC\xE7\xFCn robot iqtisadiyyat\u0131 \xFC\
+    \xE7\xFCn formala\u015Fa bil\u0259n \xE7\u0259r\xE7iv\u0259 haqq\u0131nda daha\
+    \ \xE7ox ba\u015Fa d\xFC\u015F\u0259 bil\u0259rik."
+  en: ', looks at the human being in economics from a praxeological perspective. Praxeology
+    gives us an interesting insight into human behavior without a direct correlation
+    to the ultimate goal. By continuing to study the phenomena in human economics
+    from the perspective of the processes themselves, separated from the end goals,
+    we can understand more about the framework that can be formed for a robot economy,
+    so as not to delve into questions of machine teleology.'
+  it: ", guarda all'essere umano nell'economia da una prospettiva prasseologica. La\
+    \ prasseologia ci offre una visione interessante del comportamento umano senza\
+    \ una correlazione diretta con l'obiettivo finale. Continuando a studiare i fenomeni\
+    \ nell'economia umana dal punto di vista dei processi stessi, separati dagli obiettivi\
+    \ finali, possiamo comprendere meglio il framework che si pu\xF2 creare per un'economia\
+    \ robotica, cos\xEC per non approfondire questioni di teleologia sulle macchine."
+  pt: ", analisa o ser humano na economia a partir de uma perspectiva praxeol\xF3\
+    gica. A praxeologia nos d\xE1 uma vis\xE3o interessante do comportamento humano\
+    \ sem uma correla\xE7\xE3o direta com o objetivo final. Continuando a estudar\
+    \ os fen\xF4menos na economia humana a partir da perspectiva dos pr\xF3prios processos,\
+    \ separados dos objetivos finais, podemos entender mais sobre a estrutura que\
+    \ pode ser formada para uma economia rob\xF3tica, para n\xE3o nos aprofundarmos\
+    \ em quest\xF5es de teleologia das m\xE1quinas."
+  tr: "adl\u0131 kitab\u0131nda, iktisatta insana praksiolojik bir perspektiften bakar.\
+    \ Praxeology, nihai hedefle do\u011Frudan bir ili\u015Fkisi olmaks\u0131z\u0131\
+    n, insan davran\u0131\u015F\u0131na ili\u015Fkin ilgin\xE7 bir i\xE7g\xF6r\xFC\
+    \ sa\u011Flar. \u0130nsan ekonomisindeki fenomenleri, nihai hedeflerden ayr\u0131\
+    \ olarak s\xFCre\xE7lerin kendi perspektifinden incelemeye devam ederek, makine\
+    \ teleolojisi sorular\u0131na girmemek i\xE7in bir robot ekonomisi i\xE7in olu\u015F\
+    turulabilecek \xE7er\xE7eve hakk\u0131nda daha fazla \u015Fey anlayabiliriz."
+- alias: "Great books lead to great ideas. If you're after more inspiration about\
+    \ human-machine communication, try reading science fiction books. Mark the books\
+    \ you\u2019ve already read and see what else can we offer you for further reflection."
+  az: "\u018Fla kitablar \u0259la ideyalara s\u0259b\u0259b olur. \u018Fg\u0259r insan-ma\u015F\
+    \u0131n \u0259laq\u0259si haqq\u0131nda daha \xE7ox ilham axtar\u0131rs\u0131\
+    n\u0131zsa, elmi fantastika kitablar\u0131n\u0131 oxuma\u011Fa \xE7al\u0131\u015F\
+    \u0131n. Art\u0131q oxudu\u011Funuz kitablar\u0131 qeyd edin v\u0259 daha \u0259\
+    trafl\u0131 d\xFC\u015F\xFCnm\u0259k \xFC\xE7\xFCn siz\u0259 ba\u015Fqa n\u0259\
+    \ t\u0259klif ed\u0259 bil\u0259c\u0259yimiz\u0259 bax\u0131n."
+  en: "Great books lead to great ideas. If you're after more inspiration about human-machine\
+    \ communication, try reading science fiction books. Mark the books you\u2019ve\
+    \ already read and see what else can we offer you for further reflection."
+  it: "I grandi libri portano a grandi idee. Se cercate pi\xF9 ispirazione sulla comunicazione\
+    \ uomo-macchina, provate a leggere libri di fantascienza. Segnate i libri che\
+    \ avete gi\xE0 letto e guardate cos'altro possiamo offrirvi per ulteriori riflessioni."
+  pt: "Grandes livros levam a grandes ideias. Se voc\xEA est\xE1 atr\xE1s de mais\
+    \ inspira\xE7\xE3o sobre comunica\xE7\xE3o homem-m\xE1quina, tente ler livros\
+    \ de fic\xE7\xE3o cient\xEDfica. Marque os livros que voc\xEA j\xE1 leu e veja\
+    \ o que mais podemos lhe oferecer para uma reflex\xE3o mais aprofundada."
+  tr: "Harika kitaplar harika fikirlere yol a\xE7ar. \u0130nsan-makine ileti\u015F\
+    imi hakk\u0131nda daha fazla ilham almak istiyorsan\u0131z, bilim kurgu kitaplar\u0131\
+    \ okumay\u0131 deneyin. Halihaz\u0131rda okudu\u011Funuz kitaplar\u0131 i\u015F\
+    aretleyin ve daha fazla d\xFC\u015F\xFCnmeniz i\xE7in size ba\u015Fka neler sunabilece\u011F\
+    imizi g\xF6r\xFCn."
+- alias: Do Androids Dream of Electric Sheep?
+  az: "Blade Runner: Android-l\u0259r elektrik qoyunlar\u0131 x\u0259yal edirmi?"
+  en: Do Androids Dream of Electric Sheep?
+  it: Il Cacciatore di Androidi
+  pt: "Androides Sonham Com Ovelhas El\xE9tricas?"
+  tr: Do Androids Dream of Electric Sheep?
+- alias: Philip K. Dick
+  az: Filip K. Dik
+  en: Philip K. Dick
+  it: Philip K. Dick
+  pt: Philip K. Dick
+  tr: Philip K. Dick
+- alias: Autofac
+  az: Autofac
+  en: Autofac
+  it: Autofac
+  pt: Autofac
+  tr: Autofac
+- alias: I, Robot
+  az: "M\u0259n, Robot"
+  en: I, Robot
+  it: Io, Robot
+  pt: "Eu, Rob\xF4"
+  tr: I, Robot
+- alias: Isaac Asimov
+  az: Ayzek Azimov
+  en: Isaac Asimov
+  it: Isaac Asimov
+  pt: Isaac Asimov
+  tr: Isaac Asimov
+- alias: The Bicentennial Man
+  az: "\u0130ki y\xFCz ya\u015Fl\u0131 adam"
+  en: The Bicentennial Man
+  it: Antologia del Bicentenario
+  pt: O Homem Bicentenario
+  tr: The Bicentennial Man
+- alias: Neuromancer
+  az: Neuromanser
+  en: Neuromancer
+  it: Neuromante
+  pt: Neuromancer
+  tr: Neuromancer
+- alias: William Gibson
+  az: Vilyam Gibson
+  en: William Gibson
+  it: William Gibson
+  pt: William Gibson
+  tr: William Gibson
+- alias: Marionettes, Inc.
+  az: "Marionetl\u0259r, Inc."
+  en: Marionettes, Inc.
+  it: Marionettes, Inc.
+  pt: Marionettes, Inc.
+  tr: Marionettes, Inc.
+- alias: Ray Bradbury
+  az: Rey Bredberi
+  en: Ray Bradbury
+  it: Ray Bradbury
+  pt: Ray Bradbury
+  tr: Ray Bradbury
+- alias: Open questions of teleology
+  az: "Teleologiyan\u0131n a\xE7\u0131q suallar\u0131"
+  en: Open questions of teleology
+  it: Domande aperte di teleologia
+  pt: "Quest\xF5es abertas de teleologia"
+  tr: "Teleolojinin a\xE7\u0131k sorular\u0131"
+- alias: and a treatise by L. von Mises
+  az: "v\u0259 L. von Mizesin traktat\u0131"
+  en: and a treatise by L. von Mises
+  it: e un trattato di L. von Mises
+  pt: e um tratado de L. von Mises
+  tr: ve L. von Mises'in bir incelemesi
+- alias: In conclusion, we would like to mention questions that remain open from a
+    global point of view. What is the goal of robots?
+  az: "Sonda qlobal n\xF6qteyi-n\u0259z\u0259rd\u0259n a\xE7\u0131q qalan suallar\u0131\
+    \ qeyd etm\u0259k ist\u0259rdik. Robotlar\u0131n m\u0259qs\u0259di n\u0259dir?"
+  en: In conclusion, we would like to mention questions that remain open from a global
+    point of view. What is the goal of robots?
+  it: "In conclusione, vorremmo porre domande che rimangono aperte da un punto di\
+    \ vista globale. Qual \xE8 l'obiettivo dei robot?"
+  pt: "Para concluir, gostar\xEDamos de mencionar quest\xF5es que permanecem em aberto\
+    \ de um ponto de vista global. Qual \xE9 o objetivo dos rob\xF4s?"
+  tr: "Sonu\xE7 olarak, k\xFCresel bir bak\u0131\u015F a\xE7\u0131s\u0131yla a\xE7\
+    \u0131k kalan sorulara de\u011Finmek istiyoruz. Robotlar\u0131n amac\u0131 nedir?"
+- alias: In fact, the economy of people is often associated with the conscientiousness
+    of performing tasks within the framework of the contract, the desire of the parties
+    to achieve a result, the opportunistic and altruistic behavior of the individual
+    in society. All of these principles are hard to apply to the robot economy. What
+    are the motives of the robot economy? It's an open question that we need to research
+    and discuss in society for better understanding and applying robots.
+  az: "\u018Fslind\u0259 insanlar\u0131n iqtisadiyyat\u0131 \xE7ox vaxt m\xFCqavil\u0259\
+    \ \xE7\u0259r\xE7iv\u0259sind\u0259 tap\u015F\u0131r\u0131qlar\u0131n vicdanla\
+    \ yerin\u0259 yetirilm\u0259si, t\u0259r\u0259fl\u0259rin n\u0259tic\u0259 \u0259\
+    ld\u0259 etm\u0259k ist\u0259yi, f\u0259rdin c\u0259miyy\u0259td\u0259 f\xFCrs\u0259\
+    t\xE7i v\u0259 f\u0259dakar davran\u0131\u015F\u0131 il\u0259 \u0259laq\u0259\
+    l\u0259ndirilir. B\xFCt\xFCn bu prinsipl\u0259ri robot iqtisadiyyat\u0131na t\u0259\
+    tbiq etm\u0259k \xE7\u0259tindir. Robot iqtisadiyyat\u0131n\u0131n motivl\u0259\
+    ri hans\u0131lard\u0131r? Robotlar\u0131 daha yax\u015F\u0131 ba\u015Fa d\xFC\u015F\
+    m\u0259k v\u0259 t\u0259tbiq etm\u0259k \xFC\xE7\xFCn c\u0259miyy\u0259td\u0259\
+    \ ara\u015Fd\u0131rmal\u0131 v\u0259 m\xFCzakir\u0259 etm\u0259li oldu\u011Fumuz\
+    \ a\xE7\u0131q bir suald\u0131r. "
+  en: In fact, the economy of people is often associated with the conscientiousness
+    of performing tasks within the framework of the contract, the desire of the parties
+    to achieve a result, the opportunistic and altruistic behavior of the individual
+    in society. All of these principles are hard to apply to the robot economy. What
+    are the motives of the robot economy? It's an open question that we need to research
+    and discuss in society for better understanding and applying robots.
+  it: "Infatti, l'economia delle persone \xE8 spesso associata alla coscienziosit\xE0\
+    \ di svolgere compiti nell'ambito del contratto, al desiderio delle parti di raggiungere\
+    \ un risultato, al comportamento opportunistico e altruistico dell'individuo nella\
+    \ societ\xE0. Tutti questi principi sono difficili da applicare all'economia robotica.\
+    \ Quali sono i motivi dell'economia robotica? \xC8 una questione aperta che dobbiamo\
+    \ ricercare e discutere nella societ\xE0, per una migliore comprensione e applicazione\
+    \ dei robot."
+  pt: "De fato, a economia das pessoas est\xE1 muitas vezes associada \xE0 consci\xEA\
+    ncia de realizar tarefas no \xE2mbito do contrato, ao desejo das partes de alcan\xE7\
+    ar um resultado, ao comportamento oportunista e altru\xEDsta do indiv\xEDduo na\
+    \ sociedade. Todos esses princ\xEDpios s\xE3o dif\xEDceis de aplicar \xE0 economia\
+    \ dos rob\xF4s. Quais s\xE3o os motivos da economia rob\xF3tica? \xC9 uma quest\xE3\
+    o em aberto que precisamos pesquisar e discutir na sociedade para melhor compreens\xE3\
+    o e aplica\xE7\xE3o dos rob\xF4s."
+  tr: "Asl\u0131nda, insanlar\u0131n ekonomisi genellikle s\xF6zle\u015Fme \xE7er\xE7\
+    evesinde g\xF6revleri yerine getirme vicdan\u0131, taraflar\u0131n bir sonuca\
+    \ ula\u015Fma arzusu, bireyin toplumdaki f\u0131rsat\xE7\u0131 ve fedakar davran\u0131\
+    \u015Flar\u0131 ile ili\u015Fkilendirilir. T\xFCm bu ilkelerin robot ekonomisine\
+    \ uygulanmas\u0131 zordur. Robot ekonomisinin nedenleri nelerdir? Robotlar\u0131\
+    \ daha iyi anlamak ve uygulamak i\xE7in toplumda ara\u015Ft\u0131rmam\u0131z ve\
+    \ tart\u0131\u015Fmam\u0131z gereken a\xE7\u0131k bir soru."
+- alias: 'For the start we suggest to look at Mises''s work "Human Action: A Treatise
+    on Economics" (praxeological approach) and at early article by Norbert Wiener
+    "Behavior, Purpose and Teleology" (teleological vision).'
+  az: "Ba\u015Flan\u011F\u0131c \xFC\xE7\xFCn Mizesin \"\u0130nsan F\u0259aliyy\u0259\
+    ti: \u0130qtisadiyyat \xFCzr\u0259 Traktat\" (prakseoloji yana\u015Fma) \u0259\
+    s\u0259rin\u0259 v\u0259 Norbert Vinerin \"Davran\u0131\u015F, M\u0259qs\u0259\
+    d v\u0259 Teleologiya\" adl\u0131 ilk m\u0259qal\u0259sin\u0259 (teleoloji bax\u0131\
+    \u015F) baxma\u011F\u0131 t\u0259klif edirik."
+  en: 'For the start we suggest to look at Mises''s work "Human Action: A Treatise
+    on Economics" (praxeological approach) and at early article by Norbert Wiener
+    "Behavior, Purpose and Teleology" (teleological vision).'
+  it: 'Per cominciare, vi suggeriamo di porre uno sguardo al lavoro di Mises "Human
+    Action: A Treatise on Economics" (approccio prasseologico) e al primo articolo
+    di Norbert Wiener "Behavior, Purpose and Teleology" (visione teleologica).'
+  pt: "Para come\xE7ar, sugerimos olhar para a obra de Mises \"\"Human Action: A Treatise\
+    \ on Economics\"\" (abordagem praxeol\xF3gica) e para o artigo inicial de Norbert\
+    \ Wiener \"\"Behavior, Purpose and Teleology\"\" (vis\xE3o teleol\xF3gica)."
+  tr: "Ba\u015Flang\u0131\xE7 \u200B\u200Bolarak, Mises'in \"\u0130nsan Eylemi: Ekonomi\
+    \ \xDCzerine Bir \u0130nceleme\" (praxeological yakla\u015F\u0131m) adl\u0131\
+    \ \xE7al\u0131\u015Fmas\u0131na ve Norbert Wiener'in \"Behavior, Purpose and Teleology\"\
+    \" (teleolojik vizyon) adl\u0131 ilk makalesine bakmay\u0131 \xF6neriyoruz."
+- alias: Praxeology inspires us with interesting ideas about human behavior without
+    direct dependence on the purposes. This gives us the opportunity to work on the
+    processes of the economy of robots conditionally as with a black box without delving
+    into the ultimate goals. At the same time, teleology poses a challenge to explain
+    causes.
+  az: "Prakseologiya bizi m\u0259qs\u0259dl\u0259rd\u0259n birba\u015Fa as\u0131l\u0131\
+    \ olmadan insan davran\u0131\u015F\u0131 haqq\u0131nda maraql\u0131 fikirl\u0259\
+    rl\u0259 ruhland\u0131r\u0131r. Bu, biz\u0259 \u015F\u0259rti olaraq robotlar\u0131\
+    n iqtisadiyyat prosesl\u0259rinin \xFCz\u0259rind\u0259 son m\u0259qs\u0259dl\u0259\
+    r\u0259 varmadan qara qutu il\u0259 i\u015Fl\u0259m\u0259k imkan\u0131 verir.\
+    \ Bu, biz\u0259 \u015F\u0259rti olaraq robot iqtisadiyyat\u0131n\u0131n prosesl\u0259\
+    ri \xFCz\u0259rind\u0259, qara qutuda oldu\u011Fu kimi, yekun m\u0259qs\u0259\
+    dl\u0259r\u0259 varmadan i\u015Fl\u0259m\u0259k imkan\u0131 verir. Eyni zamanda,\
+    \ teleologiya s\u0259b\u0259bl\u0259ri izah etm\u0259kd\u0259 \xE7\u0259tinlik\
+    \ yarad\u0131r."
+  en: Praxeology inspires us with interesting ideas about human behavior without direct
+    dependence on the purposes. This gives us the opportunity to work on the processes
+    of the economy of robots conditionally as with a black box without delving into
+    the ultimate goals. At the same time, teleology poses a challenge to explain causes.
+  it: "La prasseologia ci ispira idee interessanti sul comportamento umano senza dipendenza\
+    \ diretta dagli scopi. Questo ci d\xE0 l'opportunit\xE0 di lavorare sui processi\
+    \ dell'economia dei robot in modo condizionale, come con una scatola nera, senza\
+    \ approfondire gli obiettivi finali. Allo stesso tempo, la teleologia pone una\
+    \ sfida per spiegare le cause."
+  pt: "A praxeologia nos inspira com ideias interessantes sobre o comportamento humano\
+    \ sem depend\xEAncia direta dos prop\xF3sitos. Isso nos d\xE1 a oportunidade de\
+    \ trabalhar nos processos da economia rob\xF3tica condicionalmente como com uma\
+    \ caixa preta sem nos aprofundarmos nos objetivos finais. Ao mesmo tempo, a teleologia\
+    \ representa um desafio para explicar as causas."
+  tr: "Praxeology, ama\xE7lara do\u011Frudan ba\u011F\u0131ml\u0131 olmadan insan\
+    \ davran\u0131\u015F\u0131 hakk\u0131nda ilgin\xE7 fikirlerle bize ilham verir.\
+    \ Bu bize, nihai hedeflere dalmadan, bir kara kutu gibi ko\u015Fullu olarak robot\
+    \ ekonomisinin s\xFCre\xE7leri \xFCzerinde \xE7al\u0131\u015Fma f\u0131rsat\u0131\
+    \ verir. Ayn\u0131 zamanda, teleoloji, nedenleri a\xE7\u0131klamak i\xE7in bir\
+    \ zorluk te\u015Fkil eder."
+- alias: We hope that somewhere at the junction of the works of Mises and Wiener,
+    a point for further development of the robot economy may be found, not just as
+    a protocol of interaction between people and machines of a praxeological nature,
+    but taking into account the teleological elements of building interspecies communication.
+  az: "\xDCmid edirik ki, Mises v\u0259 Wiener i\u015Fl\u0259rinin k\u0259si\u015F\
+    diyi yerd\u0259 robot iqtisadiyyat\u0131n\u0131n daha da inki\u015Faf\u0131 \xFC\
+    \xE7\xFCn bir n\xF6qt\u0259 tap\u0131la bil\u0259r, yaln\u0131z prakseoloji xarakterli\
+    \ insanlar\u0131n v\u0259 ma\u015F\u0131nlar\u0131n qar\u015F\u0131l\u0131ql\u0131\
+    \ \u0259laq\u0259si \xFC\xE7\xFCn bir protokol kimi yox, h\u0259m d\u0259 n\xF6\
+    vl\u0259raras\u0131 \xFCnsiyy\u0259tin qurulmas\u0131n\u0131n teleoloji elementl\u0259\
+    rini n\u0259z\u0259r\u0259 alaraq."
+  en: We hope that somewhere at the junction of the works of Mises and Wiener, a point
+    for further development of the robot economy may be found, not just as a protocol
+    of interaction between people and machines of a praxeological nature, but taking
+    into account the teleological elements of building interspecies communication.
+  it: Ci auguriamo che da qualche parte, nell'incrocio dei lavori di Mises e Wiener,
+    si possa trovare un punto per un ulteriore sviluppo dell'economia robotica, non
+    solo come protocollo di interazione fra persone e macchine di natura prasseologica,
+    ma tenendo conto dell'aspetto teleologico nella creazione di elementi per la comunicazione
+    interspecie.
+  pt: "Esperamos que em algum lugar na jun\xE7\xE3o dos trabalhos de Mises e Wiener,\
+    \ possa ser encontrado um ponto para um maior desenvolvimento da economia rob\xF3\
+    tica, n\xE3o apenas como um protocolo de intera\xE7\xE3o entre pessoas e m\xE1\
+    quinas de natureza praxeol\xF3gica, mas levando em conta o elementos da constru\xE7\
+    \xE3o de comunica\xE7\xE3o interesp\xE9cies."
+  tr: "Mises ve Wiener'in \xE7al\u0131\u015Fmalar\u0131n\u0131n kesi\u015Fti\u011F\
+    i bir yerde, robot ekonomisinin daha da geli\u015Ftirilmesi i\xE7in bir noktan\u0131\
+    n bulunabilece\u011Fini umuyoruz, sadece insanlar ve makineler aras\u0131nda prakseolojik\
+    \ nitelikte bir etkile\u015Fim protokol\xFC olarak de\u011Fil, teleolojik t\xFC\
+    rler aras\u0131 ileti\u015Fim kurma unsurlar\u0131 olarak d\xFC\u015F\xFCn\xFC\
+    yoruz."
