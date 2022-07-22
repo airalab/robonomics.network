@@ -28,7 +28,7 @@ There are two main objectives that we are looking to achieve together:
   <img src="./images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
 </p>
 
-Robonomics team has already started exploring Crust Network and has been impressed by the diligent approach to documentation. You can already launch a [Boston Dynamics robot in Bay Area lab](https://spot.merklebot.com) via a Robonomics parachain transaction, whilst the data will be recorded on Crust. Feel free to try it out for yourself on [spot.merklebot.com](https://t.co/oX6wfj9vVO).
+Robonomics team has already started exploring Crust Network and has been impressed by the diligent approach to documentation. You can already launch a [Boston Dynamics robot in Bay Area lab](https://spot.merklebot.com) via a Robonomics parachain transaction, whilst the data will be recorded on Crust. Feel free to try it out for yourself on [spot.merklebot.com](https://spot.merklebot.com).
 
 ![Demo web app](./images/robonomics-and-crust-networks-strategic-partnership/demo.png)
 
