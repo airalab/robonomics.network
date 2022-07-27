@@ -1,5 +1,5 @@
 ---
-title: 7 years of Robonomics development and burning 7 million XRT
+title: 7 лет развития Робономики и сжигание 7 млн XRT
 date: 2022-07-27
 published: true
 locale: 'ru'
