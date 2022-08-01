@@ -35,7 +35,7 @@ We decided to postpone the distribution of the community’s 70% of the XRT init
 
 ![Ethereum 1.0 Stage](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-2.png)
 
-It was a difficult time for us, we lost some of our dear project participants, and every month the situation did not get easier. Fortunately, work on Robonomics continued to be maintained by a group of 5-6 developers. That year, we decided to try out a new blockchain, similar (but a little different) to Ethereum 2.0. This blockchain was proposed by the Parity team, who were already familiar faces for the entire Ethereum community, and it was also led by Gavid Wood. That is how we started working on the Robonomics implementation for Polkadot.
+It was a difficult time for us, we lost some of our dear project participants, and every month the situation did not get easier. Fortunately, work on Robonomics continued to be maintained by a group of 5-6 developers. That year, we decided to try out a new blockchain, similar (but a little different) to Ethereum 2.0. This blockchain was proposed by the Parity team, who were already familiar faces for the entire Ethereum community, and it was also led by Gavin Wood. That is how we started working on the Robonomics implementation for Polkadot.
 
 By mid-2019, the Robonomics development team was one of the first to launch their own network/blockchain on Substrate. And by the spring of 2020, the implementation of Robonomics for Polkadot already had almost all the basic functionality that we wanted to present to the crypto community before entering the IoT market. We worked without money for several years, eating Chinese noodles and drawing diagrams.
 
