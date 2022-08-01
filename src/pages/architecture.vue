@@ -241,7 +241,7 @@
               </div>
               <div>
                 <div><h2>3</h2></div>
-                <p>{{$ts(`machine interface`)}}</p>
+                <p>{{$ts(`A machine interface`)}}</p>
               </div>
             </div>
             <article class="hyphens">
