@@ -392,30 +392,12 @@
         </div>
 
         <article class="hyphens">
-          <p>{{$ts(`In conclusion, we would like to mention questions that remain open from a global point of view.
-            What is the goal of robots?`)}}
+          <p>{{$ts(`In conclusion, we would like to mention questions that remain open from a global point of view. What is the goal of robots?`)}}
           </p>
-          <p>{{$ts(`In fact, the economy of people is often associated with the conscientiousness of performing tasks within
-            the framework of the contract, the desire of the parties to achieve a result, the opportunistic and
-            altruistic behavior of the individual in society.
-            All of these principles are hard to apply to the robot economy.
-            What are the motives of the robot economy? It's an open question that we need to research and discuss in
-            society for better understanding and applying robots.`)}}
-          </p>
-          <p>{{$ts(`For the start we suggest to look at Mises's work "Human Action: A Treatise on Economics" (praxeological
-            approach) and at early article by Norbert Wiener "Behavior, Purpose and Teleology" (teleological
-            vision).`)}}</p>
-          <p>{{$ts(`Praxeology inspires us with interesting ideas about human behavior without direct dependence on the
-            purposes.
-            This gives us the opportunity to work on the processes of the economy of robots conditionally as with a
-            black
-            box without delving into the ultimate goals. At the same time, teleology poses a challenge to explain
-            causes.`)}}</p>
-          <p>{{$ts(`We hope that somewhere at the junction of the works of Mises and Wiener, a point for further development of
-            the
-            robot economy may be found, not just as a protocol of interaction between people and machines of a
-            praxeological nature, but taking into account the teleological elements of building interspecies
-            communication.`)}}</p>
+          <p>{{$ts(`In fact, the economy of people is often associated with the conscientiousness of performing tasks within the framework of the contract, the desire of the parties to achieve a result, the opportunistic and altruistic behavior of the individual in society. All of these principles are hard to apply to the robot economy. What are the motives of the robot economy? It's an open question that we need to research and discuss in society for better understanding and applying robots.`)}}</p>
+          <p>{{$ts(`For the start we suggest to look at Mises's work "Human Action: A Treatise on Economics" (praxeological approach) and at early article by Norbert Wiener "Behavior, Purpose and Teleology" (teleological vision).`)}}</p>
+          <p>{{$ts(`Praxeology inspires us with interesting ideas about human behavior without direct dependence on the purposes. This gives us the opportunity to work on the processes of the economy of robots conditionally as with a black box without delving into the ultimate goals. At the same time, teleology poses a challenge to explain causes.`)}}</p>
+          <p>{{$ts(`We hope that somewhere at the junction of the works of Mises and Wiener, a point for further development of the robot economy may be found, not just as a protocol of interaction between people and machines of a praxeological nature, but taking into account the teleological elements of building interspecies communication.`)}}</p>
         </article>
 
 

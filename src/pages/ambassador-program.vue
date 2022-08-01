@@ -88,7 +88,7 @@
 
             <b>{{$ts('How:')}}</b><br/>
             <ul class="list-simple">
-                <li>{{$ts('1) make pull requests on Github for')}} <g-link to="https://github.com/airalab/robonomics.network">{{$ts('website')}}</g-link> {{$ts('or')}} <g-link to="https://wiki.robonomics.network/docs/contributing/">{{$ts('wiki')}}</g-link> ;</li>
+                <li>{{$ts('1) make pull requests on GitHub for')}} <g-link to="https://github.com/airalab/robonomics.network">{{$ts('website')}}</g-link> {{$ts('or')}} <g-link to="https://wiki.robonomics.network/docs/contributing/">{{$ts('wiki')}}</g-link> ;</li>
                 <li>{{$ts('2) discuss what we need to translate in ambassador chat;')}}</li>
                 <li>{{$ts('3) create video and text content, try to make it unique for your followers;')}}</li>
                 <li>{{$ts('4) share progress with other ambassadors and team.')}}</li>
