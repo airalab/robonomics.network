@@ -3,7 +3,7 @@ title: 7 years of Robonomics development and burning 7 million XRT
 date: 2022-07-27
 published: true
 locale: 'en'
-tags: ['Events']
+tags: ['Events', 'Robonomics parachain']
 cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
 description: "For Robonomics, there is still much of our roadmap ahead of us, and many things will happen for the first time."
@@ -39,7 +39,7 @@ It was a difficult time for us, we lost some of our dear project participants, a
 
 By mid-2019, the Robonomics development team was one of the first to launch their own network/blockchain on Substrate. And by the spring of 2020, the implementation of Robonomics for Polkadot already had almost all the basic functionality that we wanted to present to the crypto community before entering the IoT market. We worked without money for several years, eating Chinese noodles and drawing diagrams.
 
-Then a small miracle happened…
+Then a small miracle happened...
 
 The emergence of a large-scale DeFi segment (in particular, Uniswap in 2020), the interest of the entire crypto community in Polkadot projects, and the presence of an existing Ethereum-based tokenomics have moved interest in XRT off the ground.
 

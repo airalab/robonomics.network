@@ -3,7 +3,7 @@ title: 7 лет развития Робономики и сжигание 7 мл
 date: 2022-07-27
 published: true
 locale: 'ru'
-tags: ['Events']
+tags: ['Events', 'Robonomics parachain']
 cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
 description: "Для Робономики многое ещё только впереди или происходит впервые."
