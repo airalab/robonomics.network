@@ -2,7 +2,7 @@
 title: 7 AÑOS DE DESARROLLO DE ROBONOMICS Y QUEMA DE 7 MILLONES DE XRT
 date: 2022-07-27
 published: true
-locale: 'sp'
+locale: 'es'
 tags: ['Events', 'Robonomics parachain']
 cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
