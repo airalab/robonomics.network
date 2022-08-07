@@ -9018,6 +9018,10 @@
   fr: "\xC0 la fronti\xE8re de la cybern\xE9tique et de l\u2019\xE9conomie"
   it: Alla frontiera fra la cibernetica e l'economia
   pt: "Na fronteira da cibern\xE9tica e da economia"
+  ru: "\u041D\u0430 \u0441\u0442\u044B\u043A\u0435 \u043A\u0438\u0431\u0435\u0440\u043D\
+    \u0435\u0442\u0438\u043A\u0438 \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\
+    \u043A\u0438"
+  sp: "En la frontera de la cibern\xE9tica y la econom\xEDa"
   tr: "Sibernetik ve ekonominin s\u0131n\u0131rlar\u0131nda"
 - alias: "Secure Serverless Futuristic\n IoT applications "
   az: "T\u0259hl\xFCk\u0259siz Serversiz Futuristik IoT t\u0259tbiql\u0259ri"
@@ -9025,6 +9029,11 @@
   fr: " Futuriste sans serveur s\xE9curis\xE9 Applications IdO "
   it: "Futuristico Serverless Sicuro\n  Applicazioni IoT"
   pt: "Aplica\xE7\xF5es IoT Futuristas Sem Servidor"
+  ru: "\u0411\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u044B\u0435 \u0431\u0435\u0441\
+    \u0441\u0435\u0440\u0432\u0435\u0440\u043D\u044B\u0435 \u0444\u0443\u0442\u0443\
+    \u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 IoT-\u043F\u0440\
+    \u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F"
+  sp: Aplicaciones IoT futuristas seguras sin servidor
   tr: "G\xFCvenli Sunucusuz F\xFCt\xFCristik\n  IoT uygulamalar\u0131 "
 - alias: Robonomics network vision
   az: "Robonomika \u015F\u0259b\u0259k\u0259sinin konsepsiyas\u0131"
@@ -9032,6 +9041,9 @@
   fr: "Vision du r\xE9seau Robonomics"
   it: La visione di Robonomics Network
   pt: "Vis\xE3o da rede Robonomics"
+  ru: "\u041A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u044F \u0441\u0435\u0442\u0438\
+    \ \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0430"
+  sp: "Visi\xF3n de Robonomics network"
   tr: "Robonomics a\u011F\u0131 vizyonu"
 - alias: BUILD YOUR IOT SERVICES ON ROBONOMICS PLATFORM
   az: "IOT X\u0130DM\u018FTL\u018FR\u0130N\u0130Z\u0130 ROBONOM\u0130KA PLATFORMASINDA\
@@ -9040,6 +9052,10 @@
   fr: "D\xC9VELOPPEZ VOS SERVICES IOT SUR LA PLATEFORME ROBONOMICS "
   it: COSTRUISCI I TUOI SERVIZI IOT SULLA PIATTAFORMA ROBONOMICA
   pt: "CONSTRUA SEUS SERVI\xC7OS IoT NA PLATAFORMA ROBONOMICS"
+  ru: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439\u0442\u0435 \u0432\u0430\u0448\u0438\
+    \ IOT \u0441\u0435\u0440\u0432\u0438\u0441\u044B \u043D\u0430 \u043F\u043B\u0430\
+    \u0442\u0444\u043E\u0440\u043C\u0435 Robonomics"
+  sp: CONSTRUYA SUS SERVICIOS IOT EN LA PLATAFORMA DE ROBONOMICS
   tr: "IOT H\u0130ZMETLER\u0130N\u0130Z\u0130 ROBONOMICS PLATFORMUNDA OLU\u015ETURUN"
 - alias: taking full advantage of decentralized architecture
   az: "m\u0259rk\u0259zl\u0259\u015Fdirilm\u0259mi\u015F arxitekturan\u0131n b\xFC\
@@ -9048,6 +9064,11 @@
   fr: "profiter pleinement de l\u2019architecture d\xE9centralis\xE9e"
   it: sfruttando appieno l'architettura decentralizzata
   pt: "aproveitando ao m\xE1ximo a arquitetura descentralizada"
+  ru: "\u043F\u043E\u043B\u0443\u0447\u0430\u044F \u0432\u0441\u0435 \u043F\u0440\u0435\
+    \u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0434\u0435\u0446\u0435\
+    \u043D\u0442\u0440\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u043E\
+    \u0439 \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u044B"
+  sp: "Aprovechando al m\xE1ximo la arquitectura descentralizada"
   tr: merkezi olmayan mimariden tam olarak yararlanmak
 - alias: Robonomics allows users to connect to smart devices using decentralized applications
     (dapp) that do not require the user data transfer for authentication. Communication
@@ -9105,6 +9126,56 @@
     \ fornece um alto n\xEDvel de seguran\xE7a cibern\xE9tica do dispositivo e privacidade\
     \ dos dados do usu\xE1rio em todas as etapas da comunica\xE7\xE3o, desde o aplicativo\
     \ do usu\xE1rio at\xE9 o lan\xE7amento do dispositivo inteligente."
+  ru: "\u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0430 \u043F\u043E\u0437\
+    \u0432\u043E\u043B\u044F\u0435\u0442 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\
+    \u0438\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\
+    \u043B\u0435\u0439 \u043A \u0443\u043C\u043D\u044B\u043C \u0443\u0441\u0442\u0440\
+    \u043E\u0439\u0441\u0442\u0432\u0430\u043C \u0441 \u043F\u043E\u043C\u043E\u0449\
+    \u044C\u044E \u0434\u0435\u0446\u0435\u043D\u0442\u0440\u0430\u043B\u0438\u0437\
+    \u043E\u0432\u0430\u043D\u043D\u044B\u0445 \u043F\u0440\u0438\u043B\u043E\u0436\
+    \u0435\u043D\u0438\u0439 (dapp), \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043D\
+    \u0435 \u0442\u0440\u0435\u0431\u0443\u044E\u0442 \u043F\u0435\u0440\u0435\u0434\
+    \u0430\u0447\u0438 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\
+    \u043B\u044C\u0441\u043A\u0438\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0434\
+    \u043B\u044F \u0430\u0443\u0442\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\
+    \u0446\u0438\u0438. \u041A\u043E\u043C\u043C\u0443\u043D\u0438\u043A\u0430\u0446\
+    \u0438\u044F \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442 \u0447\
+    \u0435\u0440\u0435\u0437 \u0434\u0435\u0446\u0435\u043D\u0442\u0440\u0430\u043B\
+    \u0438\u0437\u043E\u0432\u0430\u043D\u043D\u0443\u044E \u0441\u0435\u0442\u044C\
+    \ \u043F\u0440\u043E\u0432\u0430\u0439\u0434\u0435\u0440\u043E\u0432 \u0431\u0435\
+    \u0437 \u0435\u0434\u0438\u043D\u043E\u0439 \u0442\u043E\u0447\u043A\u0438 \u043E\
+    \u0442\u043A\u0430\u0437\u0430, \u0430 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\
+    \u0442\u0432\u043E \u0441\u0430\u043C\u043E\u0441\u0442\u043E\u044F\u0442\u0435\
+    \u043B\u044C\u043D\u043E \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u0442 \u0438\
+    \u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u0438\u0437 \u0431\u043B\
+    \u043E\u043A\u0447\u0435\u0439\u043D-\u0441\u0435\u0442\u0438 \u0434\u043B\u044F\
+    \ \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u043D\u0430 \u0438\u0441\u043F\u043E\
+    \u043B\u043D\u0435\u043D\u0438\u0435 \u0438\u043B\u0438 \u043F\u0435\u0440\u0435\
+    \u0434\u0430\u0447\u0438 \u0434\u0430\u043D\u043D\u044B\u0445 \u0443\u0434\u0430\
+    \u043B\u0451\u043D\u043D\u043E. \u0422\u0430\u043A\u0438\u043C \u043E\u0431\u0440\
+    \u0430\u0437\u043E\u043C, \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\
+    \u0430 \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u0435\u0442\
+    \ \u0432\u044B\u0441\u043E\u043A\u0438\u0439 \u0443\u0440\u043E\u0432\u0435\u043D\
+    \u044C \u043A\u0438\u0431\u0435\u0440\u0431\u0435\u0437\u043E\u043F\u0430\u0441\
+    \u043D\u043E\u0441\u0442\u0438 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\
+    \u0432 \u0438 \u043F\u0440\u0438\u0432\u0430\u0442\u043D\u043E\u0441\u0442\u0438\
+    \ \u0434\u0430\u043D\u043D\u044B\u0445 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\
+    \u0430\u0442\u0435\u043B\u0435\u0439 \u043D\u0430 \u0432\u0441\u0435\u0445 \u044D\
+    \u0442\u0430\u043F\u0430\u0445 \u043A\u043E\u043C\u043C\u0443\u043D\u0438\u043A\
+    \u0430\u0446\u0438\u0438 \u043E\u0442 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\
+    \u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u043F\u0440\u0438\
+    \u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0434\u043E \u0437\u0430\u043F\u0443\
+    \u0441\u043A\u0430 \u0443\u043C\u043D\u043E\u0433\u043E \u0443\u0441\u0442\u0440\
+    \u043E\u0439\u0441\u0442\u0432\u0430."
+  sp: "Robonomics permite a los usuarios conectarse a dispositivos inteligentes utilizando\
+    \ aplicaciones descentralizadas (dapp) que no requieren la transferencia de datos\
+    \ del usuario para la autenticaci\xF3n. La comunicaci\xF3n se lleva a cabo a trav\xE9\
+    s de una red descentralizada de proveedores sin un solo punto de falla, y el dispositivo\
+    \ obtiene informaci\xF3n de forma independiente de la blockchain para ejecutar\
+    \ o transmitir datos de forma remota. Por lo tanto, Robonomics brinda un alto\
+    \ nivel de ciberseguridad del dispositivo y privacidad de los datos del usuario\
+    \ en todas las etapas de la comunicaci\xF3n, desde la aplicaci\xF3n del usuario\
+    \ hasta el lanzamiento del dispositivo inteligente."
   tr: "Robonomics, kullan\u0131c\u0131lar\u0131n kimlik do\u011Frulama i\xE7in kullan\u0131\
     c\u0131 veri aktar\u0131m\u0131 gerektirmeyen merkezi olmayan uygulamalar\u0131\
     \ (dapp) kullanarak ak\u0131ll\u0131 cihazlara ba\u011Flanmas\u0131na olanak tan\u0131\
@@ -9123,6 +9194,11 @@
   fr: "DES SMART CONTRACTS \xC0 LA PLATEFORME CROSS CHAIN"
   it: DAGLI SMART CONTRACT ALLA PIATTAFORMA IOT CROSS CHAIN
   pt: DE SMART CONTRACTS A PLATAFORMA  IOT CROSS CHAIN
+  ru: "\u041E\u0442 \u0441\u043C\u0430\u0440\u0442 \u043A\u043E\u043D\u0442\u0440\u0430\
+    \u043A\u0442\u043E\u0432 \u0434\u043E \u043A\u0440\u043E\u0441\u0441\u043F\u043B\
+    \u0430\u0442\u0444\u043E\u0440\u043C\u0435\u043D\u043D\u043E\u0439 IOT \u043F\u043B\
+    \u0430\u0442\u0444\u043E\u0440\u043C\u044B"
+  sp: DE LOS CONTRATOS INTELIGENTES A LA PLATAFORMA IOT DE CADENA CRUZADA
   tr: "AKILLI S\xD6ZLE\u015EMELERDEN \xC7APRAZ Z\u0130NC\u0130R IOT PLATFORMUNA"
 - alias: The Robonomics project is over 6 years old. We started to prepare for the
     first experiment demonstrating human-machine communication using an independent
@@ -9168,6 +9244,42 @@
     \ um protocolo de comunica\xE7\xE3o de m\xE1quina tecnoecon\xF4mico executado\
     \ em Ethereum e IPFS e complement\xE1-lo com elementos de uma plataforma de IoT\
     \ baseada em nuvem com base em parachain na Polkadot."
+  ru: "\"\u041F\u0440\u043E\u0435\u043A\u0442\u0443 \u0420\u043E\u0431\u043E\u043D\
+    \u043E\u043C\u0438\u043A\u0430 \u0443\u0436\u0435 \u0431\u043E\u043B\u0435\u0435\
+    \ 6 \u043B\u0435\u0442. \u0413\u043E\u0442\u043E\u0432\u0438\u0442\u044C\u0441\
+    \u044F \u043A \u043F\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044E \u043F\
+    \u0435\u0440\u0432\u043E\u0433\u043E \u044D\u043A\u0441\u043F\u0435\u0440\u0438\
+    \u043C\u0435\u043D\u0442\u0430, \u0434\u0435\u043C\u043E\u043D\u0441\u0442\u0440\
+    \u0438-\n\u0440\u0443\u044E\u0449\u0435\u0433\u043E \u043A\u043E\u043C\u043C\u0443\
+    \u043D\u0438\u043A\u0430\u0446\u0438\u044E \u043B\u044E\u0434\u0435\u0439 \u0438\
+    \ \u043C\u0430\u0448\u0438\u043D \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\
+    \u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043D\u0435\u0437\u0430\u0432\u0438\
+    \u0441\u0438\u043C\u043E\u0439 \u0434\u0435\u0446\u0435\u043D\u0442\u0440\u0430\
+    \u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u043E\u0439 \u0441\u0435\u0442\
+    \u0438\n\u043F\u0440\u043E\u0432\u0430\u0439\u0434\u0435\u0440\u043E\u0432, \u043C\
+    \u044B \u043D\u0430\u0447\u0430\u043B\u0438 \u0432 2015 \u0433\u043E\u0434\u0443\
+    \ - \u0441 \u043F\u0435\u0440\u0432\u044B\u0445 \u0434\u043D\u0435\u0439 \u0441\
+    \u0443\u0449\u0435\u0441\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u044F \u0441\
+    \u0435\u0442\u0438 Ethereum. \u041A \u043D\u0430\u0447\u0430\u043B\u0443 2021\
+    \ \u0433\u043E\u0434\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u0435 \u043F\u0440\
+    \u043E\u0435\u043A\u0442\u0430 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0441\
+    \u043E\u0437\u0434\u0430\u0442\u044C \u043F\u0440\u043E\u0442\u043E\u043A\u043E\
+    \u043B \u0442\u0435\u0445\u043D\u0438\u043A\u043E- \u044D\u043A\u043E\u043D\u043E\
+    \u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u043A\u043E\u043C\u043C\u0443\
+    \u043D\u0438\u043A\u0430\u0446\u0438\u0438 \u043C\u0430\u0448\u0438\u043D, \u0440\
+    \u0430\u0431\u043E\u0442\u0430\u044E\u0449\u0438\u0439 \u043F\u043E\u0432\u0435\
+    \u0440\u0445 Ethereum \u0438 IPFS, \u0438 \u0434\u043E\u043F\u043E\u043B\u043D\
+    \u0438\u0442\u044C \u0435\u0433\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\
+    \u0430\u043C\u0438 \u043E\u0431\u043B\u0430\u0447\u043D\u043E\u0439 IoT-\u043F\
+    \u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B \u043D\u0430 \u0431\u0430\u0437\
+    \u0435 \u043F\u0430\u0440\u0430\u0447\u0435\u0439\u043D\u0430 Polkadot.\""
+  sp: "El proyecto Robonomics tiene m\xE1s de 6 a\xF1os. Comenzamos a prepararnos\
+    \ para el primer experimento que demostr\xF3 la comunicaci\xF3n hombre-m\xE1quina\
+    \ utilizando una red de proveedor descentralizada independiente en 2015, desde\
+    \ los primeros d\xEDas de la red Ethereum. A principios de 2021, el equipo del\
+    \ proyecto logr\xF3 crear un protocolo de comunicaci\xF3n de m\xE1quina tecnoecon\xF3\
+    mico que se ejecuta sobre Ethereum e IPFS, y lo complement\xF3 con elementos de\
+    \ una plataforma IoT (basada en la nube) basada en la parachain de Polkadot."
   tr: "Robonomics projesi 6 y\u0131ldan daha fazla bir ge\xE7mi\u015Fe sahiptir. Ethereum\
     \ a\u011F\u0131n\u0131n ilk g\xFCnlerinden itibaren 2015 y\u0131l\u0131nda ba\u011F\
     \u0131ms\u0131z bir merkezi olmayan sa\u011Flay\u0131c\u0131 a\u011F\u0131 kullanarak\
@@ -9197,6 +9309,23 @@
   pt: "Como resultado, hoje j\xE1 temos uma plataforma h\xEDbrida para criar aplicativos\
     \ IoT futuristas que permitem a intera\xE7\xE3o com dispositivos sob o controle\
     \ de um computador global descentralizado."
+  ru: "\u0412 \u0438\u0442\u043E\u0433\u0435, \u0443\u0436\u0435 \u0441\u0435\u0433\
+    \u043E\u0434\u043D\u044F \u043C\u044B \u0438\u043C\u0435\u0435\u043C \u0433\u0438\
+    \u0431\u0440\u0438\u0434\u043D\u0443\u044E \u043F\u043B\u0430\u0442\u0444\u043E\
+    \u0440\u043C\u0443 \u0434\u043B\u044F \u0441\u043E\u0437\u0434\u0430\u043D\u0438\
+    \u044F \u0444\u0443\u0442\u0443\u0440\u0438\u0441\u0442\u0438\u0447\u043D\u044B\
+    \u0445 IoT-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439, \u043E\
+    \u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u0445\
+    \ \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\
+    \u0435 \u0441 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430\u043C\
+    \u0438, \u043D\u0430\u0445\u043E\u0434\u044F\u0449\u0438\u043C\u0438\u0441\u044F\
+    \ \u043F\u043E\u0434 \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u0435\u043C \u043C\
+    \u0438\u0440\u043E\u0432\u043E\u0433\u043E \u0434\u0435\u0446\u0435\u043D\u0442\
+    \u0440\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u043E\u0433\u043E\
+    \ \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u0430."
+  sp: "Como resultado, hoy ya contamos con una plataforma h\xEDbrida para crear aplicaciones\
+    \ IoT futuristas que permiten la interacci\xF3n con dispositivos bajo el control\
+    \ de una computadora descentralizada global."
   tr: "Sonu\xE7 olarak, bug\xFCn, k\xFCresel bir merkezi olmayan bilgisayar\u0131\
     n kontrol\xFC alt\u0131ndaki cihazlarla etkile\u015Fimi m\xFCmk\xFCn k\u0131lan\
     \ f\xFCt\xFCristik IoT uygulamalar\u0131 olu\u015Fturmak i\xE7in halihaz\u0131\
@@ -9207,6 +9336,10 @@
   fr: "\xC0 LA FRONTI\xC8RE DE LA CYBERN\xC9TIQUE ET DE L\u2019\xC9CONOMIE"
   it: ALLA FRONTIERA FRA LA CIBERNETICA E L'ECONOMIA
   pt: "NA FRONTEIRA DA CIBERN\xC9TICA E DA ECONOMIA"
+  ru: "\u041D\u0430 \u0441\u0442\u044B\u043A\u0435 \u043A\u0438\u0431\u0435\u0440\u043D\
+    \u0435\u0442\u0438\u043A\u0438 \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\
+    \u043A\u0438"
+  sp: "EN LA FRONTERA DE LA CIBERN\xC9TICA Y LA ECONOM\xCDA"
   tr: "S\u0130BERNET\u0130K VE EKONOM\u0130N\u0130N SINIRINDA"
 - alias: The creators of Robonomics are experimenters, engineers, and scientists who
     care to understand the scientific validity of the approach and achieve clarity
@@ -9235,6 +9368,27 @@
     \ que se preocupam em entender a validade cient\xEDfica da abordagem e obter clareza\
     \ na apresenta\xE7\xE3o dos princ\xEDpios que devem formar a base de toda a arquitetura\
     \ da solu\xE7\xE3o de software."
+  ru: "\u0421\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u0438 \u0420\u043E\u0431\u043E\
+    \u043D\u043E\u043C\u0438\u043A\u0438 - \u044D\u043A\u0441\u043F\u0435\u0440\u0438\
+    \u043C\u0435\u043D\u0442\u0430\u0442\u043E\u0440\u044B, \u0438\u043D\u0436\u0435\
+    \u043D\u0435\u0440\u044B \u0438 \u0443\u0447\u0435\u043D\u044B\u0435, \u043A\u043E\
+    \u0442\u043E\u0440\u044B\u043C \u0432\u0430\u0436\u043D\u043E \u0440\u0430\u0437\
+    \u043E\u0431\u0440\u0430\u0442\u044C\u0441\u044F \u0432 \u043D\u0430\u0443\u0447\
+    \u043D\u043E\u0439 \u043E\u0431\u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\
+    \u043E\u0441\u0442\u0438 \u043F\u043E\u0434\u0445\u043E\u0434\u0430 \u0438 \u0434\
+    \u043E\u0441\u0442\u0438\u0433\u043D\u0443\u0442\u044C \u044F\u0441\u043D\u043E\
+    \u0441\u0442\u0438 \u0432 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\
+    \u0435\u043D\u0438\u0438 \u043F\u0440\u0438\u043D\u0446\u0438\u043F\u043E\u0432\
+    , \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0434\u043E\u043B\u0436\u043D\u044B\
+    \ \u0431\u044B\u0442\u044C \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u044B \u0432\
+    \ \u043E\u0441\u043D\u043E\u0432\u0443 \u0432\u0441\u0435\u0439 \u0430\u0440\u0445\
+    \u0438\u0442\u0435\u043A\u0442\u0443\u0440\u044B \u043F\u0440\u043E\u0433\u0440\
+    \u0430\u043C\u043C\u043D\u043E\u0433\u043E \u0440\u0435\u0448\u0435\u043D\u0438\
+    \u044F."
+  sp: "Los creadores de Robonomics son experimentadores, ingenieros y cient\xEDficos\
+    \ que se preocupan por comprender la validez cient\xEDfica del enfoque y lograr\
+    \ claridad al presentar los principios que deben formar la base de toda la arquitectura\
+    \ de la soluci\xF3n de software."
   tr: "Robonomics'in yarat\u0131c\u0131lar\u0131, yakla\u015F\u0131m\u0131n bilimsel\
     \ ge\xE7erlili\u011Fini anlamaya \xF6zen g\xF6steren ve yaz\u0131l\u0131m \xE7\
     \xF6z\xFCm\xFCn\xFCn t\xFCm mimarisinin temelini olu\u015Fturmas\u0131 gereken\
@@ -9274,6 +9428,38 @@
     tica, um sistema econ\xF4mico no qual dispositivos rob\xF3ticos atuam como agentes\
     \ independentes capazes de realizar atividades econ\xF4micas fundamentais, antes\
     \ reservadas aos humanos. Voc\xEA pode ler os artigos cient\xEDficos"
+  ru: "\u0412 \u0441\u0432\u043E\u0438\u0445 \u0441\u0442\u0430\u0442\u044C\u044F\u0445\
+    \ \u0432 \u043F\u0435\u0440\u0438\u043E\u0434 \u0441 2017 \u043F\u043E 2020 \u0433\
+    \u043E\u0434 \u043C\u044B \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\
+    \u043B\u0438 \u043D\u0430\u0443\u0447\u043D\u043E\u043C\u0443 \u0441\u043E\u043E\
+    \u0431\u0449\u0435\u0441\u0442\u0432\u0443 \u043C\u043D\u043E\u0436\u0435\u0441\
+    \u0442\u0432\u043E \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0439 \u0438\
+    \ \u0440\u0435\u0448\u0435\u043D\u0438\u0439, \u043E\u0431\u044A\u0435\u0434\u0438\
+    \u043D\u0435\u043D\u043D\u044B\u0445 \u0432\u043E\u043A\u0440\u0443\u0433 \u0438\
+    \u0434\u0435\u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0438 \u0440\
+    \u043E\u0431\u043E\u0442\u043E\u0432 \u2014 \u044D\u043A\u043E\u043D\u043E\u043C\
+    \u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\
+    \u044B, \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u0440\u043E\u0431\u043E\
+    \u0442\u043E\u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435\
+    \ \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430 \u0432\u044B\u0441\
+    \u0442\u0443\u043F\u0430\u044E\u0442 \u043A\u0430\u043A \u043D\u0435\u0437\u0430\
+    \u0432\u0438\u0441\u0438\u043C\u044B\u0435 \u0430\u0433\u0435\u043D\u0442\u044B\
+    , \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u044B\u0435 \u043A \u0432\u044B\u043F\
+    \u043E\u043B\u043D\u0435\u043D\u0438\u044E \u043A\u043B\u044E\u0447\u0435\u0432\
+    \u044B\u0445 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\
+    \u0438\u0445 \u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u0435\u0439\
+    , \u0440\u0430\u043D\u0435\u0435 \u043F\u0440\u0438\u0441\u0443\u0449\u0438\u0445\
+    \ \u0442\u043E\u043B\u044C\u043A\u043E \u0447\u0435\u043B\u043E\u0432\u0435\u043A\
+    \u0443. \u0421 \u043D\u0430\u0443\u0447\u043D\u044B\u043C\u0438 \u0441\u0442\u0430\
+    \u0442\u044C\u044F\u043C\u0438 \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435\
+    \ \u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u0442\u044C\u0441\u044F \u043F\
+    \u043E"
+  sp: "En nuestros art\xEDculos entre 2017 y 2020, presentamos a la comunidad cient\xED\
+    fica muchos conceptos y soluciones unidos en torno a la idea de la econom\xED\
+    a rob\xF3tica, un sistema econ\xF3mico en el que los dispositivos rob\xF3ticos\
+    \ act\xFAan como agentes independientes capaces de realizar actividades econ\xF3\
+    micas clave, antes reservadas para los humanos. Puedes leer los art\xEDculos cient\xED\
+    ficos en este enlace."
   tr: "2017-2020 y\u0131llar\u0131 aras\u0131ndaki makalelerimizde, bilim camias\u0131\
     na, daha \xF6nce insanlar i\xE7in ayr\u0131lm\u0131\u015F, temel ekonomik faaliyetleri\
     \ ger\xE7ekle\u015Ftirebilen ba\u011F\u0131ms\u0131z ajanlar olarak robotik cihazlar\u0131\
@@ -9289,6 +9475,11 @@
     \ robotiques \xE0 grande \xE9chelle de la nouvelle r\xE9volution industrielle."
   it: questo link
   pt: neste link
+  ru: "\u0434\u0430\u043D\u043D\u043E\u0439 \u0441\u0441\u044B\u043B\u043A\u0435"
+  sp: "Nos gustar\xEDa justificar el surgimiento de la econom\xEDa rob\xF3tica y explicar\
+    \ en t\xE9rminos generales por qu\xE9 creemos que este concepto es la respuesta\
+    \ inevitable y obvia al funcionamiento de los sistemas rob\xF3ticos a gran escala\
+    \ de la nueva revoluci\xF3n industrial."
   tr: linkten okuyabilirsiniz
 - alias: We would like to justify the emergence of the robot economy and explain in
     general terms why we believe that this concept is the inevitable and obvious answer
@@ -9310,6 +9501,25 @@
     \ em termos gerais por que acreditamos que esse conceito \xE9 a resposta inevit\xE1\
     vel e \xF3bvia para o funcionamento dos sistemas rob\xF3ticos de grande escala\
     \ na nova revolu\xE7\xE3o industrial."
+  ru: "\u0412 \u044D\u0442\u043E\u0439 \u0433\u043B\u0430\u0432\u0435 \u043C\u044B\
+    \ \u0445\u043E\u0442\u0435\u043B\u0438 \u0431\u044B \u043E\u0431\u043E\u0441\u043D\
+    \u043E\u0432\u0430\u0442\u044C \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\
+    \u0435 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0438 \u0440\u043E\u0431\
+    \u043E\u0442\u043E\u0432 \u0438 \u043E\u0431\u044A\u044F\u0441\u043D\u0438\u0442\
+    \u044C \u0432 \u043E\u0431\u0449\u0438\u0445 \u0447\u0435\u0440\u0442\u0430\u0445\
+    , \u043F\u043E\u0447\u0435\u043C\u0443 \u043C\u044B \u0441\u0447\u0438\u0442\u0430\
+    \u0435\u043C, \u0447\u0442\u043E \u0438\u043C\u0435\u043D\u043D\u043E \u044D\u0442\
+    \u043E \u043F\u043E\u043D\u044F\u0442\u0438\u0435 \u044F\u0432\u043B\u044F\u0435\
+    \u0442\u0441\u044F \u043D\u0435\u0438\u0437\u0431\u0435\u0436\u043D\u044B\u043C\
+    \ \u0438 \u044F\u0432\u043D\u044B\u043C \u043E\u0442\u0432\u0435\u0442\u043E\u043C\
+    \ \u043D\u0430 \u0432\u043E\u043F\u0440\u043E\u0441 \u0444\u0443\u043D\u043A\u0446\
+    \u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u043A\u0440\
+    \u0443\u043F\u043D\u043E\u043C\u0430\u0441\u0448\u0442\u0430\u0431\u043D\u044B\
+    \u0445 \u0440\u043E\u0431\u043E\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\
+    \u043D\u043D\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C \u043D\u043E\u0432\
+    \u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\
+    \u0439 \u0440\u0435\u0432\u043E\u043B\u044E\u0446\u0438\u0438."
+  sp: "AVANZA HACIA LA F\xC1BRICA DEL FUTURO"
   tr: "Robot ekonomisinin ortaya \xE7\u0131k\u0131\u015F\u0131n\u0131 hakl\u0131 \xE7\
     \u0131karmak ve bu kavram\u0131n neden yeni sanayi devriminin b\xFCy\xFCk \xF6\
     l\xE7ekli robotik sistemlerinin i\u015Fleyi\u015Fine ka\xE7\u0131n\u0131lmaz ve\
@@ -9322,6 +9532,9 @@
   fr: "Inspir\xE9 par Ronald Coase"
   it: MUOVERSI VERSO L'INDUSTRIA DEL FUTURO
   pt: "RUMO \xC0 F\xC1BRICA DO FUTURO"
+  ru: "\u041F\u0443\u0442\u044C \u043A \u0437\u0430\u0432\u043E\u0434\u0443 \u0431\
+    \u0443\u0434\u0443\u0449\u0435\u0433\u043E"
+  sp: Inspirado por Ronald Coase
   tr: "GELECE\u011E\u0130N FABR\u0130KASINA DO\u011ERU"
 - alias: Inspired by Ronald Coase
   az: "Ronald Kouzdan ilhamlan\u0131b"
@@ -9346,6 +9559,25 @@
     \ au mod\xE8le X standard de Tesla."
   it: Ispirato da Ronald Coase
   pt: Inspirado por Ronald Coase
+  ru: "\u0412\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u0451\u043D\u043D\u044B\u0439\
+    \ \u0420\u043E\u043B\u0430\u043D\u0434\u043E\u043C \u041A\u043E\u0443\u0437\u043E\
+    \u043C"
+  sp: "El premio Nobel de econom\xEDa Ronald Coase en su obra de 1937 \u201CLa naturaleza\
+    \ de la empresa\u201D demostr\xF3 mejor la dicotom\xEDa \xABjerarqu\xEDa vs libre\
+    \ mercado\xBB y dio una explicaci\xF3n de las razones de la existencia de las\
+    \ organizaciones, en particular las empresas. Coase analiza el impacto de los\
+    \ costos de transacci\xF3n (el costo de recopilar y procesar informaci\xF3n) para\
+    \ tomar decisiones sobre la conclusi\xF3n de un contrato y monitorear su implementaci\xF3\
+    n. La empresa, con toda su estructura jer\xE1rquica extra-mercado, se constituye\
+    \ como la forma m\xE1s eficiente de brindar al consumidor el producto objetivo\
+    \ con los menores costos de transacci\xF3n en el momento, cuando el esfuerzo transaccional\
+    \ de crear el mismo producto a trav\xE9s de m\xFAltiples intercambios en el mercado\
+    \ entre los individuos se vuelve mucho mayor. Para visualizar mejor este proceso,\
+    \ mire el ejemplo ilustrativo de comprar un autom\xF3vil. Intente comprar un autom\xF3\
+    vil por partes y calcule cu\xE1nto dinero y tiempo gastar\xE1 solo para ensamblar\
+    \ todos los componentes en su garaje. Los riesgos y los costos de negociaci\xF3\
+    n de la compra de piezas son demasiado altos en comparaci\xF3n con el Modelo X\
+    \ listo para usar de Tesla."
   tr: "Ronald Coase'den ilham al\u0131nm\u0131\u015Ft\u0131r"
 - alias: "The Nobel laureate in economics Ronald Coase in his 1937 work \u201CThe\
     \ Nature of the Firm\u201D best demonstrated the dichotomy \xABhierarchy vs free\
@@ -9431,6 +9663,81 @@
     \ todos os componentes em sua garagem. Os riscos e custos de negocia\xE7\xE3o\
     \ da compra de pe\xE7as s\xE3o muito altos em compara\xE7\xE3o com o Model X da\
     \ Tesla."
+  ru: "\u041D\u043E\u0431\u0435\u043B\u0435\u0432\u0441\u043A\u0438\u0439 \u043B\u0430\
+    \u0443\u0440\u0435\u0430\u0442 \u043F\u043E \u044D\u043A\u043E\u043D\u043E\u043C\
+    \u0438\u043A\u0435 \u0420\u043E\u043D\u0430\u043B\u044C\u0434 \u041A\u043E\u0443\
+    \u0437 \u0432 \u0441\u0432\u043E\u0435\u0439 \u0440\u0430\u0431\u043E\u0442\u0435\
+    \ 1937 \u0433\u043E\u0434\u0430 \u201CThe Nature of the Firm\u201D\n\u043B\u0443\
+    \u0447\u0448\u0435 \u0432\u0441\u0435\u0433\u043E \u043F\u0440\u043E\u0434\u0435\
+    \u043C\u043E\u043D\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u043B \u0434\
+    \u0438\u0445\u043E\u0442\u043E\u043C\u0438\u044E \u201C\u0438\u0435\u0440\u0430\
+    \u0440\u0445\u0438\u044F vs \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439\
+    \ \u0440\u044B\u043D\u043E\u043A\u201D \u0438 \u0434\u0430\u043B \u043E\u0431\u044A\
+    \u044F\u0441\u043D\u0435\u043D\u0438\u0435 \u043F\u0440\u0438\u0447\u0438\u043D\
+    \n\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u044F\
+    \ \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0439, \u0432 \u0447\
+    \u0430\u0441\u0442\u043D\u043E\u0441\u0442\u0438 \u0444\u0438\u0440\u043C. \u041A\
+    \u043E\u0443\u0437 \u0440\u0430\u0441\u0441\u0443\u0436\u0434\u0430\u0435\u0442\
+    \ \u043E \u0432\u043B\u0438\u044F\u043D\u0438\u0438 \u0442\u0440\u0430\u043D\u0441\
+    \u0430\u043A\u0446\u0438\u043E\u043D\u043D\u044B\u0445 \u0438\u0437\u0434\u0435\
+    \u0440\u0436\u0435\u043A (\u0438\u0437\u0434\u0435\u0440\u0436\u0435\u043A \u043D\
+    \u0430 \u0441\u0431\u043E\u0440 \u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\
+    \u043A\u0443 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438) \u043D\
+    \u0430 \u043F\u0440\u0438\u043D\u044F-\n\u0442\u0438\u0435 \u0440\u0435\u0448\u0435\
+    \u043D\u0438\u0439 \u043E \u0437\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u0438\
+    \u0438 \u043A\u043E\u043D\u0442\u0440\u0430\u043A\u0442\u0430 \u0438 \u043D\u0430\
+    \ \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044C \u0435\u0433\u043E \u0432\u044B\
+    \u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F. \u0424\u0438\u0440\u043C\u0430\
+    \ \u0441\u043E \u0432\u0441\u0435\u0439 \u0441\u0432\u043E\u0435\u0439 \u0438\u0435\
+    \u0440\u0430\u0440\u0445\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0432\u043D\
+    \u0435-\u0440\u044B\u043D\u043E\u0447\u043D\u043E\u0439 \u0441\u0442\u0440\u0443\
+    \u043A\u0442\u0443\u0440\u043E\u0439 \u043E\u0431\u0440\u0430\u0437\u0443\u0435\
+    \u0442\u0441\u044F \u043A\u0430\u043A \u043D\u0430\u0438\u0431\u043E\u043B\u0435\
+    \u0435 \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u044B\u0439 \u0441\
+    \u043F\u043E\u0441\u043E\u0431 \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\
+    \u0432\u0438\u0442\u044C \u043F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\
+    \u043B\u044E \u0446\u0435\u043B\u0435\u0432\u043E\u0439 \u043F\u0440\u043E\u0434\
+    \u0443\u043A\u0442 \u0441 \u043D\u0430\u0438\u043C\u0435\u043D\u044C\u0448\u0438\
+    \u043C\u0438 \u0442\u0440\u0430\u043D\u0441\u0430\u043A\u0446\u0438\u043E\u043D\
+    \u043D\u044B\u043C\u0438 \u0438\u0437\u0434\u0435\u0440\u0436\u043A\u0430\u043C\
+    \u0438 \u0432 \u0442\u043E\u0442 \u043C\u043E\u043C\u0435\u043D\u0442, \u043A\u043E\
+    \u0433\u0434\u0430 \u0442\u0440\u0430\u043D\u0441\u0430\u043A\u0446\u0438\u043E\
+    \u043D\u043D\u044B\u0435\n\u0443\u0441\u0438\u043B\u0438\u044F \u043F\u043E \u0441\
+    \u043E\u0437\u0434\u0430\u043D\u0438\u044E \u0442\u043E\u0433\u043E \u0436\u0435\
+    \ \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u0430 \u043F\u0443\u0442\u0435\u043C\
+    \ \u043C\u043D\u043E\u0436\u0435\u0441\u0442\u0432\u0430 \u043E\u0431\u043C\u0435\
+    \u043D\u043D\u044B\u0445 \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u0439 \u043D\
+    \u0430 \u0440\u044B\u043D\u043A\u0435 \u043C\u0435\u0436\u0434\u0443 \u0438\u043D\
+    \u0434\u0438\u0432\u0438\u0434\u0430\u043C\u0438 \u0441\u0442\u0430\u043D\u043E\
+    \u0432\u044F\u0442\u0441\u044F \u0437\u043D\u0430\u0447\u0438\u0442\u0435\u043B\
+    \u044C\u043D\u043E \u0432\u044B\u0448\u0435. \u0427\u0442\u043E\u0431\u044B \u043B\
+    \u0443\u0447\u0448\u0435\n\u0432\u0441\u0435\u0433\u043E \u043F\u0440\u0435\u0434\
+    \u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0441\u0435\u0431\u0435 \u044D\u0442\
+    \u043E\u0442 \u043F\u0440\u043E\u0446\u0435\u0441\u0441, \u043F\u043E\u0441\u043C\
+    \u043E\u0442\u0440\u0438\u0442\u0435\u043D\u0430 \u043F\u043E\u043A\u0430\u0437\
+    \u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u043F\u0440\u0438\u043C\u0435\
+    \u0440 \u0441 \u043F\u043E\u043A\u0443\u043F\u043A\u043E\u0439 \u0430\u0432\u0442\
+    \u043E\u043C\u043E\u0431\u0438\u043B\u044F.\n\u041F\u043E\u043F\u0440\u043E\u0431\
+    \u0443\u0439\u0442\u0435 \u043A\u0443\u043F\u0438\u0442\u044C \u0430\u0432\u0442\
+    \u043E\u043C\u043E\u0431\u0438\u043B\u044C \u043F\u043E \u0437\u0430\u043F\u0447\
+    \u0430\u0441\u0442\u044F\u043C \u0438 \u043F\u043E\u0441\u0447\u0438\u0442\u0430\
+    \u0439\u0442\u0435, \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0441\u0440\u0435\
+    \u0434\u0441\u0442\u0432 \u0438 \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u0432\
+    \u044B \u043F\u043E\u0442\u0440\u0430\u0442\u0438\u0442\u0435, \u0447\u0442\u043E\
+    \u0431\u044B \u043F\u0440\u043E\u0441\u0442\u043E \u0441\u043E\u0431\u0440\u0430\
+    \u0442\u044C \u0432\u0441\u0435 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442\
+    \u0443\u044E\u0449\u0438\u0435 \u0432 \u0441\u0432\u043E\u0451\u043C \u0433\u0430\
+    \u0440\u0430\u0436\u0435. \u0420\u0438\u0441\u043A\u0438 \u0438 \u0438\u0437\u0434\
+    \u0435\u0440\u0436\u043A\u0438 \u043D\u0430 \u043F\u0435\u0440\u0435\u0433\u043E\
+    \u0432\u043E\u0440\u044B \u043F\u0440\u0438 \u043F\u043E\u043A\u0443\u043F\u043A\
+    \u0435 \u0434\u0435\u0442\u0430\u043B\u0435\u0439 \u0441\u043B\u0438\u0448\u043A\
+    \u043E\u043C \u0432\u044B\u0441\u043E\u043A\u0438 \u043F\u043E \u0441\u0440\u0430\
+    \u0432\u043D\u0435\u043D\u0438\u044E \u0441 \u0433\u043E\u0442\u043E\u0432\u044B\
+    \u043C \u043A \u0443\u043F\u043E\u0442\u0440\u0435\u0431\u043B\u0435\u043D\u0438\
+    \u044E Model X \u043E\u0442 \u0444\u0438\u0440\u043C\u044B Tesla. "
+  sp: "Sin embargo, esto no conduce al surgimiento de la \xFAnica empresa del mundo\
+    \ para la producci\xF3n de todo. El punto es que los mismos costos de transacci\xF3\
+    n tambi\xE9n imponen restricciones sobre el tama\xF1o de las empresas. Coase escribe:"
   tr: "Ekonomide Nobel \xF6d\xFCll\xFC Ronald Coase, 1937 tarihli \u201CFirman\u0131\
     n Do\u011Fas\u0131\u201D adl\u0131 \xE7al\u0131\u015Fmas\u0131nda, \u201Chiyerar\u015F\
     iye kar\u015F\u0131 serbest piyasa\u201D ikilemini en iyi \u015Fekilde g\xF6stermi\u015F\
@@ -9473,6 +9780,22 @@
   pt: "No entanto, isso n\xE3o leva ao surgimento da \xFAnica empresa do mundo para\
     \ a produ\xE7\xE3o de tudo. A quest\xE3o \xE9 que os mesmos custos de transa\xE7\
     \xE3o tamb\xE9m imp\xF5em restri\xE7\xF5es ao tamanho das empresas. Coase escreve:"
+  ru: "\u0422\u0435\u043C \u043D\u0435 \u043C\u0435\u043D\u0435\u0435, \u044D\u0442\
+    \u043E \u043D\u0435 \u043F\u0440\u0438\u0432\u043E\u0434\u0438\u0442 \u043A \u0432\
+    \u043E\u0437\u043D\u0438\u043A\u043D\u043E\u0432\u0435\u043D\u0438\u044E \u0435\
+    \u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0439 \u0432 \u043C\
+    \u0438\u0440\u0435 \u0444\u0438\u0440\u043C\u044B \u043F\u043E \u043F\u0440\u043E\
+    \u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0443 \u0432\u0441\u0435\u0433\
+    \u043E.\n\u0412\u0441\u0435 \u0434\u0435\u043B\u043E \u0432 \u0442\u043E\u043C\
+    , \u0447\u0442\u043E \u0442\u0435 \u0436\u0435 \u0442\u0440\u0430\u043D\u0441\u0430\
+    \u043A\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0438\u0437\u0434\u0435\u0440\
+    \u0436\u043A\u0438\u043D\u0430\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u044E\
+    \u0442 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F \u0438\
+    \ \u043D\u0430 \u0440\u0430\u0437\u043C\u0435\u0440 \u0444\u0438\u0440\u043C.\
+    \ \u041A\u043E\u0443\u0437 \u043F\u0438\u0448\u0435\u0442:"
+  sp: "\u201C...una empresa tender\xE1 a expandirse hasta que los costos de organizar\
+    \ una transacci\xF3n adicional dentro de la empresa sean iguales a los costos\
+    \ de realizar la misma transacci\xF3n mediante un intercambio en el mercado abierto...\u201D"
   tr: "Yine de bu, her \u015Feyin \xFCretimi i\xE7in d\xFCnyan\u0131n tek bir firmas\u0131\
     n\u0131n ortaya \xE7\u0131kmas\u0131na yol a\xE7maz. Buradaki ana nokta, ayn\u0131\
     \ i\u015Flem maliyetlerinin firmalar\u0131n b\xFCy\xFCkl\xFC\u011F\xFCne de k\u0131\
@@ -9502,6 +9825,25 @@
   pt: "\u201C...uma empresa tender\xE1 a se expandir at\xE9 que os custos de organizar\
     \ uma transa\xE7\xE3o extra dentro da empresa se tornem iguais aos custos de realizar\
     \ a mesma transa\xE7\xE3o por meio de uma troca no mercado aberto...\u201D"
+  ru: "\xAB...\u0444\u0438\u0440\u043C\u0430 \u0431\u0443\u0434\u0435\u0442 \u0441\
+    \u0442\u0440\u0435\u043C\u0438\u0442\u044C\u0441\u044F \u043A \u0440\u0430\u0441\
+    \u0448\u0438\u0440\u0435\u043D\u0438\u044E \u0434\u043E \u0442\u0435\u0445 \u043F\
+    \u043E\u0440, \u043F\u043E\u043A\u0430 \u0437\u0430\u0442\u0440\u0430\u0442\u044B\
+    \ \u043D\u0430 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044E\
+    \ \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E\
+    \u0439 \u0441\u0434\u0435\u043B\u043A\u0438 \u0432\u043D\u0443\u0442\u0440\u0438\
+    \ \u0444\u0438\u0440\u043C\u044B \u043D\u0435 \u0441\u0440\u0430\u0432\u043D\u044F\
+    \u044E\u0442\u0441\u044F \u0441 \u0437\u0430\u0442\u0440\u0430\u0442\u0430\u043C\
+    \u0438 \u043D\u0430 \u043F\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u0435\
+    \ \u0442\u043E\u0439 \u0436\u0435 \u0441\u0434\u0435\u043B\u043A\u0438 \u043F\u043E\
+    \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u043E\u043C \u043E\u0431\u043C\u0435\
+    \u043D\u0430 \u043D\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u043E\u043C \u0440\
+    \u044B\u043D\u043A\u0435\u2026\xBB"
+  sp: "En otras palabras, cuanto m\xE1s compleja es la jerarqu\xEDa dentro de la empresa,\
+    \ mayores son los costos internos y, en alg\xFAn momento, resultan excesivos en\
+    \ comparaci\xF3n con los costos de regresar al mercado. Por lo tanto, para asegurar\
+    \ su crecimiento como uno de los motores, los empresarios buscan formas de reducir\
+    \ estos costos."
   tr: "\u201C...bir firma, firma i\xE7inde fazladan bir i\u015Flem d\xFCzenlemenin\
     \ maliyeti, ayn\u0131 i\u015Flemi a\xE7\u0131k piyasada bir takas yoluyla ger\xE7\
     ekle\u015Ftirmenin maliyetine e\u015Fit oluncaya kadar geni\u015Fleme e\u011F\
@@ -9533,6 +9875,27 @@
     \xE3o aos custos de retorno ao mercado. Por isso, para garantir seu crescimento\
     \ como um dos impulsionadores, os empreendedores buscam formas de reduzir esses\
     \ custos."
+  ru: "\u0414\u0440\u0443\u0433\u0438\u043C\u0438 \u0441\u043B\u043E\u0432\u0430\u043C\
+    \u0438, \u0447\u0435\u043C \u0441\u043B\u043E\u0436\u043D\u0435\u0435 \u0438\u0435\
+    \u0440\u0430\u0440\u0445\u0438\u044F \u0432\u043D\u0443\u0442\u0440\u0438 \u0444\
+    \u0438\u0440\u043C\u044B, \u0442\u0435\u043C \u0431\u043E\u043B\u044C\u0448\u0435\
+    \ \u0432\u043D\u0443\u0442\u0440\u0435\u043D\u043D\u0438\u0445 \u0438\u0437\u0434\
+    \u0435\u0440\u0436\u0435\u043A, \u0438 \u0432 \u043A\u0430\u043A\u043E\u0439-\u0442\
+    \u043E \u043C\u043E\u043C\u0435\u043D\u0442 \u043E\u043D\u0438 \u043E\u043A\u0430\
+    \u0437\u044B\u0432\u0430\u044E\u0442\u0441\u044F \u0438\u0437\u0431\u044B\u0442\
+    \u043E\u0447\u043D\u044B\u043C\u0438 \u043F\u043E \u0441\u0440\u0430\u0432\u043D\
+    \u0435\u043D\u0438\u044E \u0441 \u0438\u0437\u0434\u0435\u0440\u0436\u043A\u0430\
+    \u043C\u0438 \u043F\u0440\u0438 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0435\
+    \u043D\u0438\u0438 \u043A \u0440\u044B\u043D\u043A\u0443. \u041F\u043E\u044D\u0442\
+    \u043E\u043C\u0443, \u0447\u0442\u043E\u0431\u044B \u043E\u0431\u0435\u0441\u043F\
+    \u0435\u0447\u0438\u0442\u044C \u0441\u0432\u043E\u0439 \u0440\u043E\u0441\u0442\
+    \ \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043E\u0434\u043D\u043E\
+    \u0433\u043E \u0438\u0437 \u0434\u0440\u0430\u0439\u0432\u0435\u0440\u043E\u0432\
+    , \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0442\u0435\
+    \u043B\u0438 \u0438\u0449\u0443\u0442 \u0441\u043F\u043E\u0441\u043E\u0431\u044B\
+    \ \u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C \u044D\u0442\u0438 \u0438\
+    \u0437\u0434\u0435\u0440\u0436\u043A\u0438."
+  sp: "LIB\xC9RESE DE LOS COSTOS DE TRANSACCI\xD3N"
   tr: "Ba\u015Fka bir deyi\u015Fle, firma i\xE7indeki hiyerar\u015Fi ne kadar karma\u015F\
     \u0131ksa, i\xE7 maliyetler o kadar b\xFCy\xFCk olur ve bir noktada, piyasaya\
     \ geri d\xF6nme maliyetlerine k\u0131yasla a\u015F\u0131r\u0131 olduklar\u0131\
@@ -9561,6 +9924,24 @@
     \ consommateurs."
   it: ELIMINA I COSTI DI TRANSAZIONE
   pt: "LIVRE-SE DOS CUSTOS DE TRANSA\xC7\xC3O"
+  ru: "\u0418\u0437\u0431\u0430\u0432\u044C\u0442\u0435\u0441\u044C \u043E\u0442 \u043A\
+    \u043E\u0441\u0438\u043C\u043C\u0438\u0439"
+  sp: "La idea de reducir los costos de transacci\xF3n a trav\xE9s de la capacidad\
+    \ de todos los participantes en el proceso comercial (producci\xF3n, log\xEDstica,\
+    \ consumo) para unirse en un nivel m\xE1s cercano se correlaciona claramente con\
+    \ los problemas y desaf\xEDos que enfrentan los fabricantes de soluciones de automatizaci\xF3\
+    n. Durante los \xFAltimos 50 a\xF1os, las operaciones est\xE1ndar/regulares de\
+    \ la mayor\xEDa de los procesos comerciales de las grandes empresas se han automatizado\
+    \ casi por completo. Los fabricantes se quedan esencialmente con la tarea de construir\
+    \ una comunicaci\xF3n segura entre las partes totalmente automatizadas de la cadena\
+    \ de suministro, y esta tarea es un factor que frena una mayor reducci\xF3n de\
+    \ los costos de transacci\xF3n a trav\xE9s de la automatizaci\xF3n. El deseo de\
+    \ comercializar productos o servicios m\xE1s competitivos en comparaci\xF3n con\
+    \ las empresas parcialmente automatizadas estimula la b\xFAsqueda de soluciones\
+    \ para estos desaf\xEDos. Parece que todo se encamina hacia el surgimiento de\
+    \ las roboempresas, organizaciones en las que todo el ciclo del proceso comercial\
+    \ est\xE1 completamente automatizado y no requiere la participaci\xF3n humana,\
+    \ excepto como beneficiarios y consumidores."
   tr: "\u0130\u015ELEM MAL\u0130YETLER\u0130NDEN KURTULUN"
 - alias: The idea of reducing transaction costs through the ability of all participants
     in the business process (production, logistics, consumption) to unite at a closer
@@ -9580,6 +9961,18 @@
   pt: "A ideia de reduzir os custos de transa\xE7\xE3o atrav\xE9s da capacidade de\
     \ todos os participantes no processo de neg\xF3cios (produ\xE7\xE3o, log\xEDstica,\
     \ consumo) se unirem em um n\xEDvel mais pr\xF3ximo se"
+  ru: "\u0418\u0434\u0435\u044F \u0441\u043D\u0438\u0436\u0435\u043D\u0438\u044F \u0442\
+    \u0440\u0430\u043D\u0441\u0430\u043A\u0446\u0438\u043E\u043D\u043D\u044B\u0445\
+    \ \u0438\u0437\u0434\u0435\u0440\u0436\u0435\u043A \u0437\u0430 \u0441\u0447\u0451\
+    \u0442 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0432\
+    \u0441\u0435\u0445 \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u0432\
+    \ \u0431\u0438\u0437\u043D\u0435\u0441-\u043F\u0440\u043E\u0446\u0435\u0441\u0441\
+    \u0430 (\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0441\u0432\
+    \u043E, \u043B\u043E\u0433\u0438\u0441\u0442\u0438\u043A\u0430, \u043F\u043E\u0442\
+    \u0440\u0435\u0431\u043B\u0435\u043D\u0438\u0435) \u043E\u0431\u044A\u0435\u0434\
+    \u0438\u043D\u0438\u0442\u044C\u0441\u044F \u043D\u0430 \u0431\u043E\u043B\u0435\
+    \u0435 \u0442\u0435\u0441\u043D\u043E\u043C \u0443\u0440\u043E\u0432\u043D\u0435"
+  sp: NUESTRO FUTURO EN LAS CIUDADES INTELIGENTES
   tr: "\u0130\u015F s\xFCrecindeki (\xFCretim, lojistik, t\xFCketim) t\xFCm kat\u0131\
     l\u0131mc\u0131lar\u0131n daha yak\u0131n bir"
 - alias: clearly correlates
@@ -9593,6 +9986,13 @@
     \ r\xE9seaux et physiques."
   it: chiaramente correlata
   pt: correlaciona claramente
+  ru: "\u044F\u0432\u043D\u043E \u043A\u043E\u0440\u0440\u0435\u043B\u0438\u0440\u0443\
+    \u0435\u0442"
+  sp: "La tarea a la que se enfrentan los fabricantes de automatizaci\xF3n hoy en\
+    \ d\xEDa tiene un nombre espec\xEDfico: la construcci\xF3n de sistemas ciberf\xED\
+    sicos (abreviados como CPS). Por definici\xF3n , un CPS es una fuerte unificaci\xF3\
+    n e integraci\xF3n mutua de m\xFAltiples procesos inform\xE1ticos, de red y f\xED\
+    sicos."
   tr: "d\xFCzeyde birle\u015Fme yetene\u011Fi yoluyla i\u015Flem maliyetlerini"
 - alias: with the problems and challenges faced by manufacturers of automation solutions.
     Over the past 50 years, the standard/regular operations of most business processes
@@ -9642,6 +10042,53 @@
     o dos custos de transa\xE7\xE3o por meio da automa\xE7\xE3o. O desejo de comercializar\
     \ produtos ou servi\xE7os mais competitivos em rela\xE7\xE3o \xE0s empresas parcialmente\
     \ automatizadas"
+  ru: " \u0441 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430\u043C\u0438 \u0438\
+    \ \u0437\u0430\u0434\u0430\u0447\u0430\u043C\u0438, \u043A\u043E\u0442\u043E\u0440\
+    \u044B\u0435 \u0441\u0442\u043E\u044F\u0442 \u043F\u0435\u0440\u0435\u0434 \u043F\
+    \u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044F\u043C\
+    \u0438 \u0440\u0435\u0448\u0435\u043D\u0438\u0439 \u0434\u043B\u044F \u0430\u0432\
+    \u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438. \u0417\u0430\
+    \ \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435 50 \u043B\u0435\u0442\
+    \ \u043F\u043E\u0447\u0442\u0438 \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\
+    \u044E \u0431\u044B\u043B\u0438 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\
+    \u0437\u0438\u0440\u043E\u0432\u0430\u043D\u044B \u0441\u0442\u0430\u043D\u0434\
+    \u0430\u0440\u0442\u043D\u044B\u0435/\u0440\u0435\u0433\u0443\u043B\u044F\u0440\
+    \u043D\u044B\u0435 \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u0438 \u0431\u043E\
+    \u043B\u044C\u0448\u0438\u043D\u0441\u0442\u0432\u0430 \u0431\u0438\u0437\u043D\
+    \u0435\u0441-\u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0432 \u043A\u0440\
+    \u0443\u043F\u043D\u044B\u0445 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0439\
+    . \u041F\u0435\u0440\u0435\u0434 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\
+    \u0438\u0442\u0435\u043B\u044F\u043C\u0438 \u043F\u043E \u0441\u0443\u0442\u0438\
+    \ \u043E\u0441\u0442\u0430\u043B\u0430\u0441\u044C \u0437\u0430\u0434\u0430\u0447\
+    \u0430 \u0432\u044B\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u043D\u0438\u044F\
+    \ \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0439 \u043A\u043E\u043C\
+    \u043C\u0443\u043D\u0438\u043A\u0430\u0446\u0438\u0438 \u043C\u0435\u0436\u0434\
+    \u0443 \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u0430\u0432\u0442\
+    \u043E\u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\
+    \u044B\u043C\u0438 \u0443\u0447\u0430\u0441\u0442\u043A\u0430\u043C\u0438 \u0446\
+    \u0435\u043F\u043E\u0447\u0435\u043A \u043E\u0431\u0435\u0441\u043F\u0435\u0447\
+    \u0435\u043D\u0438\u044F, \u0438 \u0434\u0430\u043D\u043D\u0430\u044F \u0437\u0430\
+    \u0434\u0430\u0447\u0430 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0444\
+    \u0430\u043A\u0442\u043E\u0440\u043E\u043C, \u0441\u0434\u0435\u0440\u0436\u0438\
+    \u0432\u0430\u044E\u0449\u0438\u043C \u0434\u0430\u043B\u044C\u043D\u0435\u0439\
+    \u0448\u0435\u0435 \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u0435\
+    \ \u0442\u0440\u0430\u043D\u0441\u0430\u043A\u0446\u0438\u043E\u043D\u043D\u044B\
+    \u0445 \u0438\u0437\u0434\u0435\u0440\u0436\u0435\u043A \u0437\u0430 \u0441\u0447\
+    \u0451\u0442 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\
+    \u0438\u0438. \u0421\u0442\u0440\u0435\u043C\u043B\u0435\u043D\u0438\u0435 \u0432\
+    \u044B\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u043D\u0430 \u0440\u044B\u043D\
+    \u043E\u043A \u0431\u043E\u043B\u0435\u0435 \u043A\u043E\u043D\u043A\u0443\u0440\
+    \u0435\u043D\u0442\u043D\u0443\u044E \u043F\u0440\u043E\u0434\u0443\u043A\u0446\
+    \u0438\u044E \u0438\u043B\u0438 \u0443\u0441\u043B\u0443\u0433\u0438 \u043F\u043E\
+    \ \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u044E \u0441 \u0447\u0430\u0441\
+    \u0442\u0438\u0447\u043D\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\
+    \u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C\u0438 \u0444\u0438\
+    \u0440\u043C\u0430\u043C\u0438,"
+  sp: "Las tareas de construcci\xF3n de CPS son centrales para cualquier idea descrita\
+    \ en la nueva (cuarta) revoluci\xF3n industrial. Por lo tanto, CPS es la piedra\
+    \ angular de nuestra vida futura en Smart Cities, manifest\xE1ndose en todas partes.\
+    \ Ejemplos de sistemas ciberf\xEDsicos del futuro son: piloto autom\xE1tico de\
+    \ Uber, selfies con drones, red de impresoras 3D en estaciones de metro."
   tr: "azaltma fikri, otomasyon \xE7\xF6z\xFCmleri \xFCreticilerinin kar\u015F\u0131\
     la\u015Ft\u0131\u011F\u0131 sorunlar ve zorluklarla a\xE7\u0131k\xE7a ili\u015F\
     kilidir. Son 50 y\u0131lda, b\xFCy\xFCk \u015Firketlerin \xE7o\u011Fu i\u015F\
@@ -9662,6 +10109,12 @@
     \ par l\u2019IA cloud."
   it: stimola la ricerca di soluzioni
   pt: "estimula a busca de solu\xE7\xF5es"
+  ru: "\u043F\u043E\u0434\u0441\u0442\u0435\u0433\u0438\u0432\u0430\u0435\u0442 \u043F\
+    \u043E\u0438\u0441\u043A \u0440\u0435\u0448\u0435\u043D\u0438\u044F"
+  sp: "CPS es una estructura compleja de muchos elementos conectados: desde la aplicaci\xF3\
+    n en el tel\xE9fono, se extiende para controlar el dron en vuelo sobre la ciudad\
+    \ y luego procede a publicar las fotos resultantes en Instagram, pero solo despu\xE9\
+    s de procesarlas en la nube AI."
   tr: "hizmet pazarlama arzusu, bu zorluklara \xE7\xF6z\xFCm"
 - alias: "these challenges. It seems that everything is heading towards the emergence\
     \ of robofirms \u2014 organizations in which the entire business process cycle\
@@ -9690,6 +10143,25 @@
     \ empresas robotizadas \u2013 organiza\xE7\xF5es em que todo o ciclo de processos\
     \ de neg\xF3cios \xE9 totalmente automatizado e n\xE3o requer participa\xE7\xE3\
     o humana, exceto como benefici\xE1rios e consumidores."
+  ru: "\u044D\u0442\u0438\u0445 \u0437\u0430\u0434\u0430\u0447. \u0418 \u043F\u043E\
+    \ \u0432\u0441\u0435\u0439 \u0432\u0438\u0434\u0438\u043C\u043E\u0441\u0442\u0438\
+    \ \u0432\u0441\u0435 \u0438\u0434\u0435\u0442 \u043A \u043F\u043E\u044F\u0432\u043B\
+    \u0435\u043D\u0438\u044E \u0440\u043E\u0431\u043E\u0444\u0438\u0440\u043C \u2014\
+    \ \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0439, \u0432 \u043A\
+    \u043E\u0442\u043E\u0440\u044B\u0445 \u0432\u0435\u0441\u044C \u0446\u0438\u043A\
+    \u043B \u0431\u0438\u0437\u043D\u0435\u0441-\u043F\u0440\u043E\u0446\u0435\u0441\
+    \u0441\u0430 \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u0430\u0432\
+    \u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\
+    \ \u0438 \u043D\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u0443\u0447\u0430\
+    \u0441\u0442\u0438\u044F \u043B\u044E\u0434\u0435\u0439, \u0440\u0430\u0437\u0432\
+    \u0435 \u0447\u0442\u043E \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\
+    \ \u0431\u0435\u043D\u0435\u0444\u0438\u0446\u0438\u0430\u0440\u043E\u0432 \u0438\
+    \ \u043F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u0435\u0439."
+  sp: "Lo m\xE1s importante en el proceso de dise\xF1o de CPS es encontrar la delgada\
+    \ l\xEDnea entre un n\xFAmero suficiente y excesivo de elementos automatizados\
+    \ en la cadena de suministro del usuario del servicio. En otras palabras, \xBF\
+    d\xF3nde est\xE1 el l\xEDmite de tama\xF1o de la CPS? Para responder a esta pregunta,\
+    \ debemos recurrir al famoso matem\xE1tico Norbert Wiener."
   tr: "aray\u0131\u015Flar\u0131n\u0131 te\u015Fvik eder. G\xF6r\xFCn\xFC\u015Fe g\xF6\
     re her \u015Fey robofirmlerin(robot firmalar\u0131n\u0131n) - t\xFCm i\u015F s\xFC\
     reci d\xF6ng\xFCs\xFCn\xFCn tamamen otomatik oldu\u011Fu ve yararlan\u0131c\u0131\
@@ -9702,6 +10174,9 @@
   fr: "SYST\xC8MES D'AUTO-R\xC9GULATION"
   it: IL NOSTRO FUTURO NELLE SMART CITIES
   pt: NOSSO FUTURO EM CIDADES INTELIGENTES
+  ru: "\u041D\u0430\u0448\u0435 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 \u0432\
+    \ \u0443\u043C\u043D\u044B\u0445 \u0433\u043E\u0440\u043E\u0434\u0430\u0445"
+  sp: SISTEMAS AUTORREGULADORES
   tr: "AKILLI \u015EEH\u0130RLERDE GELECE\u011E\u0130M\u0130Z"
 - alias: "The task that automation manufacturers are facing today has a specific name\
     \ \u2014 the construction of cyber-physical systems (abbreviated as CPS). By"
@@ -9722,6 +10197,21 @@
   pt: "A tarefa que os fabricantes de automa\xE7\xE3o enfrentam hoje tem um nome espec\xED\
     fico - a constru\xE7\xE3o de sistemas ciber-f\xEDsicos (Construction of cyber-physical\
     \ systems ou CPS). Por"
+  ru: "\u0423 \u0437\u0430\u0434\u0430\u0447\u0438, \u043A\u043E\u0442\u043E\u0440\
+    \u0430\u044F \u0441\u0435\u0433\u043E\u0434\u043D\u044F \u0441\u0442\u0430\u0432\
+    \u0438\u0442\u0441\u044F \u043F\u0435\u0440\u0435\u0434 \u043F\u0440\u043E\u0438\
+    \u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044F\u043C\u0438 \u0430\u0432\
+    \u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u0438, \u0435\u0441\
+    \u0442\u044C \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u043E\u0435 \u043D\
+    \u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u2014 \u043F\u043E\u0441\u0442\u0440\
+    \u043E\u0435\u043D\u0438\u0435 \u043A\u0438\u0431\u0435\u0440-\u0444\u0438\u0437\
+    \u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\u0438\u0441\u0442\u0435\u043C\
+    \ (\u0441\u043E\u043A\u0440. \u041A\u0424\u0421). \u041F\u043E"
+  sp: "En 1948, un profesor de matem\xE1ticas en el MIT, Norbert Wiener, public\xF3\
+    \ uno de los trabajos m\xE1s importantes, \"Cybernetics: Or Control and Communication\
+    \ in the Animal and the Machine\". Utiliz\xF3 por primera vez el t\xE9rmino \"\
+    cibern\xE9tica\" como mecanismo de autorregulaci\xF3n y, por ello, esta publicaci\xF3\
+    n es considerada un cumplea\xF1os Cibern\xE9tico reconocido."
   tr: "Bug\xFCn otomasyon \xFCreticilerinin kar\u015F\u0131 kar\u015F\u0131ya oldu\u011F\
     u g\xF6revin belirli bir ad\u0131 vard\u0131r: - siber-fiziksel sistemlerin (CPS\
     \ olarak k\u0131salt\u0131l\u0131r) in\u015Fas\u0131. Tan\u0131m"
@@ -9734,6 +10224,10 @@
     \ croissante de la soci\xE9t\xE9 humaine."
   it: CPS
   pt: "defini\xE7\xE3o,"
+  ru: "\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u0438\u044E,"
+  sp: "Norbert Wiener habla sobre la viabilidad del enfoque cient\xEDfico interdisciplinario.\
+    \ Por ejemplo, traz\xF3 los paralelismos entre los sistemas de control automatizados\
+    \ y los desaf\xEDos de escalar y aumentar la complejidad de la sociedad humana."
   tr: olarak,
 - alias: a CPS is a strong unification and mutual integration of multiple computational,
     networking, and physical processes.
@@ -9751,6 +10245,18 @@
     computazionali, di networking e fisici.
   pt: "um CPS \xE9 uma forte unifica\xE7\xE3o e integra\xE7\xE3o m\xFAtua de v\xE1\
     rios processos computacionais, de rede e f\xEDsicos."
+  ru: "\u041A\u0424\u0421 \u2014 \u044D\u0442\u043E \u043F\u0440\u043E\u0447\u043D\
+    \u043E\u0435 \u043E\u0431\u044A\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435\
+    \ \u0438 \u0432\u0437\u0430\u0438\u043C\u043D\u0430\u044F \u0438\u043D\u0442\u0435\
+    \u0433\u0440\u0430\u0446\u0438\u044F \u043C\u043D\u043E\u0436\u0435\u0441\u0442\
+    \u0432\u0430 \u0432\u044B\u0447\u0438\u0441\u043B\u0438\u0442\u0435\u043B\u044C\
+    \u043D\u044B\u0445, \u0441\u0435\u0442\u0435\u0432\u044B\u0445 \u0438 \u0444\u0438\
+    \u0437\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u043E\u0446\u0435\
+    \u0441\u0441\u043E\u0432."
+  sp: "Entonces, en otras palabras, el enfoque cibern\xE9tico se puede aplicar por\
+    \ igual a la psicoterapia, la biolog\xEDa y la navegaci\xF3n automatizada. Se\
+    \ basa en la funci\xF3n del sistema, c\xF3mo se controlan las acciones individuales\
+    \ y c\xF3mo los nodos individuales interact\xFAan entre s\xED."
   tr: "bir CPS, \xE7oklu hesaplama, a\u011F olu\u015Fturma ve fiziksel s\xFCre\xE7\
     lerin g\xFC\xE7l\xFC bir birle\u015Fimi ve kar\u015F\u0131l\u0131kl\u0131 entegrasyonudur."
 - alias: 'The tasks of building CPS are central to any idea described in the new (fourth)
@@ -9793,6 +10299,33 @@
     \ Exemplos de sistemas ciberf\xEDsicos do futuro s\xE3o: piloto autom\xE1tico\
     \ Uber, selfies de drones, rede de impressoras 3D em esta\xE7\xF5es de metr\xF4\
     ."
+  ru: "\u0417\u0430\u0434\u0430\u0447\u0438 \u043F\u043E \u043F\u043E\u0441\u0442\u0440\
+    \u043E\u0435\u043D\u0438\u044E \u041A\u0424\u0421 \u044F\u0432\u043B\u044F\u044E\
+    \u0442\u0441\u044F \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u044B\
+    \u043C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u043C \u043B\u044E\u0431\
+    \u043E\u0439 \u0438\u0434\u0435\u0438, \u043E\u043F\u0438\u0441\u044B\u0432\u0430\
+    \u0435\u043C\u043E\u0439 \u0432 \u0440\u0430\u043C\u043A\u0430\u0445 \u043D\u043E\
+    \u0432\u043E\u0439 (\u0447\u0435\u0442\u0432\u0451\u0440\u0442\u043E\u0439) \u043F\
+    \u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0439 \u0440\u0435\
+    \u0432\u043E\u043B\u044E\u0446\u0438\u04381. \u041F\u043E\u044D\u0442\u043E\u043C\
+    \u0443 \u041A\u0424\u0421 \u2014 \u044D\u0442\u043E \u043A\u0440\u0430\u0435\u0443\
+    \u0433\u043E\u043B\u044C\u043D\u044B\u0439 \u043A\u0430\u043C\u0435\u043D\u044C\
+    \ \u043D\u0430\u0448\u0435\u0439 \u0431\u0443\u0434\u0443\u0449\u0435\u0439 \u0436\
+    \u0438\u0437\u043D\u0438 \u0432 \u0423\u043C\u043D\u044B\u0445 \u0433\u043E\u0440\
+    \u043E\u0434\u0430\u0445, \u043F\u0440\u043E\u044F\u0432\u043B\u044F\u044E\u0449\
+    \u0438\u0439 \u0441\u0435\u0431\u044F \u0432\u0435\u0437\u0434\u0435. \u041A\u0438\
+    \u0431\u0435\u0440\u0444\u0438\u0437\u0438\u0447\u0435\u0441\u043A\u0438\u0435\
+    \ \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0431\u0443\u0434\u0443\u0449\u0435\
+    \u0433\u043E \u044D\u0442\u043E: a\u0432\u0442\u043E\u043F\u0438\u043B\u043E\u0442\
+    \u043D\u044B\u0439 Uber, \u0434\u0440\u043E\u043D-\u0441\u0435\u043B\u0444\u0438\
+    , \u0441\u0435\u0442\u044C 3D-\u043F\u0440\u0438\u043D\u0442\u0435\u0440\u043E\
+    \u0432 \u043D\u0430 \u0441\u0442\u0430\u043D\u0446\u0438\u044F\u0445 \u043C\u0435\
+    \u0442\u0440\u043E."
+  sp: "Teniendo en cuenta las publicaciones de Ronald Coase y Norbert Wiener, siguiendo\
+    \ el desarrollo de la Industria 4.0, podemos considerar utilizar CPS como agente\
+    \ econ\xF3mico, al dise\xF1ar servicios robotizados. Para regular el tama\xF1\
+    o de los CPS y adaptarnos a las necesidades cambiantes de los individuos podemos\
+    \ utilizar mecanismos de mercado."
   tr: "CPS olu\u015Fturma g\xF6revleri, yeni (d\xF6rd\xFCnc\xFC) sanayi devriminde\
     \ tan\u0131mlanan herhangi bir fikrin merkezinde yer al\u0131r. Bu nedenle CPS,\
     \ Ak\u0131ll\u0131 \u015Eehirlerdeki gelecekteki ya\u015Fam\u0131m\u0131z\u0131\
@@ -9826,6 +10359,25 @@
     \ no telefone, ele se estende ao controle do drone em voo sobre a cidade e depois\
     \ publica as fotos resultantes no Instagram, mas somente ap\xF3s o processamento\
     \ pela IA na nuvem."
+  ru: "\u041A\u0424\u0421 \u2014 \u044D\u0442\u043E \u0441\u043B\u043E\u0436\u043D\
+    \u0430\u044F \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430 \u043C\u043D\
+    \u043E\u0436\u0435\u0441\u0442\u0432\u0430 \u0441\u0432\u044F\u0437\u0430\u043D\
+    \u043D\u044B\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432: \u043E\
+    \u0442 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0432 \u0442\
+    \u0435\u043B\u0435\u0444\u043E\u043D\u0435 \u043E\u043D\u0430 \u043F\u0440\u043E\
+    \u0441\u0442\u0438\u0440\u0430\u0435\u0442\u0441\u044F \u043A \u0443\u043F\u0440\
+    \u0430\u0432\u043B\u0435\u043D\u0438\u044E \u0434\u0440\u043E\u043D\u043E\u043C\
+    \ \u0432 \u043F\u043E\u043B\u0451\u0442\u0435 \u043D\u0430\u0434 \u0433\u043E\u0440\
+    \u043E\u0434\u043E\u043C, \u0430 \u0437\u0430\u0442\u0435\u043C \u043F\u0435\u0440\
+    \u0435\u0445\u043E\u0434\u0438\u0442 \u043A \u043F\u0443\u0431\u043B\u0438\u043A\
+    \u0430\u0446\u0438\u0438 \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u043D\u044B\
+    \u0445 \u0444\u043E\u0442\u043E \u0432 Instagram, \u043D\u043E \u0442\u043E\u043B\
+    \u044C\u043A\u043E \u043F\u043E\u0441\u043B\u0435 \u043E\u0431\u0440\u0430\u0431\
+    \u043E\u0442\u043A\u0438 \u043E\u0431\u043B\u0430\u0447\u043D\u044B\u043C AI."
+  sp: "Y lo que es tan cient\xEDficamente interesante, tomando como base la idea de\
+    \ las restricciones impuestas por el mercado sobre el tama\xF1o de la empresa,\
+    \ podemos decir que el l\xEDmite del aumento de CPS siempre lo determinar\xE1\
+    \ el mercado y no se requiere nada m\xE1s para este."
   tr: "CPS, birbirine ba\u011Fl\u0131 bir\xE7ok \xF6\u011Feden olu\u015Fan karma\u015F\
     \u0131k bir yap\u0131d\u0131r: telefondaki uygulamadan, dronun \u015Fehir \xFC\
     zerinde u\xE7u\u015Funu kontrol etmeye kadar uzan\u0131r ve ard\u0131ndan ortaya\
@@ -9856,6 +10408,32 @@
     \ na cadeia de suprimentos do usu\xE1rio do servi\xE7o. Em outras palavras, onde\
     \ est\xE1 o limite de tamanho do CPS? Para responder a esta pergunta, devemos\
     \ recorrer ao famoso matem\xE1tico Norbert Wiener."
+  ru: "\u0421\u0430\u043C\u043E\u0435 \u0432\u0430\u0436\u043D\u043E\u0435 \u0432\
+    \ \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0435 \u043F\u0440\u043E\u0435\u043A\
+    \u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u041A\u0424\u0421 \u2014\
+    \ \u044D\u0442\u043E \u043D\u0430\u0439\u0442\u0438 \u0442\u043E\u043D\u043A\u0443\
+    \u044E \u0433\u0440\u0430\u043D\u044C \u043C\u0435\u0436\u0434\u0443 \u0434\u043E\
+    \u0441\u0442\u0430\u0442\u043E\u0447\u043D\u044B\u043C \u0438 \u0438\u0437\u0431\
+    \u044B\u0442\u043E\u0447\u043D\u044B\u043C \u043A\u043E\u043B\u0438\u0447\u0435\
+    \u0441\u0442\u0432\u043E\u043C \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\
+    \u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 \u044D\u043B\u0435\
+    \u043C\u0435\u043D\u0442\u043E\u0432 \u0432 \u0446\u0435\u043F\u043E\u0447\u043A\
+    \u0435 \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0435\u043D\u0438\u044F \u043F\
+    \u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u0443\u0441\
+    \u043B\u0443\u0433\u0430\u043C\u0438. \u0414\u0440\u0443\u0433\u0438\u043C\u0438\
+    \ \u0441\u043B\u043E\u0432\u0430\u043C\u0438, \u0433\u0434\u0435 \u043F\u0440\u0435\
+    \u0434\u0435\u043B \u0440\u0430\u0437\u043C\u0435\u0440\u0430 \u041A\u0424\u0421\
+    ? \u0414\u043B\u044F \u043E\u0442\u0432\u0435\u0442\u0430 \u043D\u0430 \u0434\u0430\
+    \u043D\u043D\u044B\u0439 \u0432\u043E\u043F\u0440\u043E\u0441 \u043D\u0430\u043C\
+    \ \u0441\u0442\u043E\u0438\u0442 \u043E\u0431\u0440\u0430\u0442\u0438\u0442\u044C\
+    \u0441\u044F \u043A \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E\u043C\u0443\
+    \ \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0443 \u041D\u043E\u0440\
+    \u0431\u0435\u0440\u0442\u0443 \u0412\u0438\u043D\u0435\u0440\u0443."
+  sp: "Las roboempresas son una representaci\xF3n ideal para los sistemas ciberf\xED\
+    sicos. Son una unidad bastante aut\xF3noma capaz de prestar servicios tanto a\
+    \ humanos como a otros robots a cambio de dinero. Como resultado, la econom\xED\
+    a de los robots nos parece un conjunto general de CPS que brindan servicios y\
+    \ bienes directamente al mercado."
   tr: "CPS tasar\u0131m s\xFCrecindeki en \xF6nemli \u015Fey, hizmet kullan\u0131\
     c\u0131s\u0131 tedarik zincirindeki yeterli ve a\u015F\u0131r\u0131 say\u0131\
     da otomatik \xF6\u011Fe aras\u0131ndaki ince \xE7izgiyi bulmakt\u0131r. Ba\u015F\
@@ -9867,6 +10445,9 @@
   fr: BITCOIN
   it: SISTEMI DI AUTOREGOLAZIONE
   pt: "SISTEMAS AUTO-REGUL\xC1VEIS"
+  ru: "\u0421\u0430\u043C\u043E\u0440\u0435\u0433\u0443\u043B\u0438\u0440\u0443\u0435\
+    \u043C\u044B\u0435 \u0441\u0438\u0441\u0442\u0435\u043C\u044B"
+  sp: BITCOIN
   tr: "KEND\u0130N\u0130 DENETLEYEN S\u0130STEMLER"
 - alias: 'In 1948 a professor of mathematics at the MIT Norbert Wiener published one
     of the most seminal works "Cybernetics: Or Control and Communication in the Animal
@@ -9896,6 +10477,30 @@
     o no Animal e na M\xE1quina\". Ele usou pela primeira vez o termo \"cibern\xE9\
     tica\" como mecanismos autorreguladores e, por isso, esta publica\xE7\xE3o \xE9\
     \ considerada um anivers\xE1rio cibern\xE9tico reconhecido."
+  ru: "\u0412 1948 \u0433\u043E\u0434\u0443 \u043F\u0440\u043E\u0444\u0435\u0441\u0441\
+    \u043E\u0440 \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0438 \u041C\
+    \u0430\u0441\u0441\u0430\u0447\u0443\u0441\u0435\u0442\u0441\u043A\u043E\u0433\
+    \u043E \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\
+    \u043A\u043E\u0433\u043E \u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442\u0430\
+    \ \u041D\u043E\u0440\u0431\u0435\u0440\u0442 \u0412\u0438\u043D\u0435\u0440 \u043E\
+    \u043F\u0443\u0431\u043B\u0438\u043A\u043E\u0432\u0430\u043B \u043E\u0434\u043D\
+    \u0443 \u0438\u0437 \u0441\u0430\u043C\u044B\u0445 \u043F\u043B\u043E\u0434\u043E\
+    \u0442\u0432\u043E\u0440\u043D\u044B\u0445 \u0440\u0430\u0431\u043E\u0442 \xAB\
+    \u041A\u0438\u0431\u0435\u0440\u043D\u0435\u0442\u0438\u043A\u0430: \u0438\u043B\
+    \u0438 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0438 \u0441\
+    \u0432\u044F\u0437\u044C \u0432 \u0436\u0438\u0432\u043E\u0442\u043D\u043E\u043C\
+    \ \u0438 \u043C\u0430\u0448\u0438\u043D\u0435\xBB. \u041E\u043D \u0432\u043F\u0435\
+    \u0440\u0432\u044B\u0435 \u0443\u043F\u043E\u0442\u0440\u0435\u0431\u0438\u043B\
+    \ \u0442\u0435\u0440\u043C\u0438\u043D \xAB\u043A\u0438\u0431\u0435\u0440\u043D\
+    \u0435\u0442\u0438\u043A\u0430\xBB \u043A\u0430\u043A \u0441\u0430\u043C\u043E\
+    \u0440\u0435\u0433\u0443\u043B\u0438\u0440\u0443\u044E\u0449\u0438\u0435\u0441\
+    \u044F \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C\u044B, \u0438 \u043F\u043E\
+    \u044D\u0442\u043E\u043C\u0443 \u044D\u0442\u0430 \u043F\u0443\u0431\u043B\u0438\
+    \u043A\u0430\u0446\u0438\u044F \u0441\u0447\u0438\u0442\u0430\u0435\u0442\u0441\
+    \u044F \u043F\u0440\u0438\u0437\u043D\u0430\u043D\u043D\u044B\u043C \u0434\u043D\
+    \u0435\u043C \u0440\u043E\u0436\u0434\u0435\u043D\u0438\u044F \u043A\u0438\u0431\
+    \u0435\u0440\u043D\u0435\u0442\u0438\u043A\u0438."
+  sp: DINERO PARA ROBOTS
   tr: "1948'de MIT'de matematik profes\xF6r\xFC Norbert Wiener en ufuk a\xE7\u0131\
     c\u0131 \xE7al\u0131\u015Fmalardan birini yay\u0131nlad\u0131 \"Sibernetik: Hayvan\
     \ ve Makinede Kontrol ve \u0130leti\u015Fim\". \"Sibernetik\" terimini kendi kendini\
@@ -9923,6 +10528,24 @@
   pt: "Norbert Wiener fala sobre a viabilidade da abordagem interdisciplinar da ci\xEA\
     ncia. Por exemplo, ele tra\xE7ou os paralelos entre os sistemas de controle automatizados\
     \ e os desafios de dimensionamento e aumento da complexidade da sociedade humana."
+  ru: "\u041D\u043E\u0440\u0431\u0435\u0440\u0442 \u0412\u0438\u043D\u0435\u0440 \u0433\
+    \u043E\u0432\u043E\u0440\u0438\u0442 \u043E \u0436\u0438\u0437\u043D\u0435\u0441\
+    \u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438 \u043C\u0435\u0436\
+    \u0434\u0438\u0441\u0446\u0438\u043F\u043B\u0438\u043D\u0430\u0440\u043D\u043E\
+    \u0433\u043E \u043D\u0430\u0443\u0447\u043D\u043E\u0433\u043E \u043F\u043E\u0434\
+    \u0445\u043E\u0434\u0430. \u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u043E\
+    \u043D \u043F\u0440\u043E\u0432\u0435\u043B \u043F\u0430\u0440\u0430\u043B\u043B\
+    \u0435\u043B\u0438 \u043C\u0435\u0436\u0434\u0443 \u0430\u0432\u0442\u043E\u043C\
+    \u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C\
+    \u0438 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438 \u0443\u043F\u0440\
+    \u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0438 \u043F\u0440\u043E\u0431\u043B\
+    \u0435\u043C\u0430\u043C\u0438 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\
+    \u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0443\u0441\u043B\u043E\u0436\
+    \u043D\u0435\u043D\u0438\u044F \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\
+    \u0441\u043A\u043E\u0433\u043E \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0430\
+    ."
+  sp: En el mundo de las roboempresas resulta natural proporcionar a los robots acceso
+    a instituciones sociales que antes solo necesitaban los humanos.
   tr: "Norbert Wiener, disiplinler aras\u0131 bilim yakla\u015F\u0131m\u0131n\u0131\
     n uygulanabilirli\u011Finden bahsediyordu. \xD6rne\u011Fin, otomatik kontrol sistemleri\
     \ ile insan toplumunun \xF6l\xE7eklenmesi ve karma\u015F\u0131kl\u0131\u011F\u0131\
@@ -9955,6 +10578,29 @@
     \ \xE0 psicoterapia, biologia e navega\xE7\xE3o automatizada. \xC9 baseado na\
     \ fun\xE7\xE3o do sistema, como as a\xE7\xF5es individuais s\xE3o controladas\
     \ e como os n\xF3s individuais interagem entre si."
+  ru: "\u0414\u0440\u0443\u0433\u0438\u043C\u0438 \u0441\u043B\u043E\u0432\u0430\u043C\
+    \u0438, \u043A\u0438\u0431\u0435\u0440\u043D\u0435\u0442\u0438\u0447\u0435\u0441\
+    \u043A\u0438\u0439 \u043F\u043E\u0434\u0445\u043E\u0434 \u043C\u043E\u0436\u0435\
+    \u0442 \u0431\u044B\u0442\u044C \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\
+    \ \u0432 \u0440\u0430\u0432\u043D\u043E\u0439 \u0441\u0442\u0435\u043F\u0435\u043D\
+    \u0438 \u043A \u043F\u0441\u0438\u0445\u043E\u0442\u0435\u0440\u0430\u043F\u0438\
+    \u0438, \u0431\u0438\u043E\u043B\u043E\u0433\u0438\u0438 \u0438 \u0430\u0432\u0442\
+    \u043E\u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\
+    \u043E\u0439 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0438. \u041E\u043D\
+    \ \u043E\u0441\u043D\u043E\u0432\u0430\u043D \u043D\u0430 \u0444\u0443\u043D\u043A\
+    \u0446\u0438\u0438 \u0441\u0438\u0441\u0442\u0435\u043C\u044B, \u043D\u0430 \u0442\
+    \u043E\u043C, \u043A\u0430\u043A \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u0438\
+    \u0440\u0443\u044E\u0442\u0441\u044F \u043E\u0442\u0434\u0435\u043B\u044C\u043D\
+    \u044B\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u0438 \u043A\u0430\
+    \u043A \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0435 \u0443\u0437\u043B\
+    \u044B \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\
+    \u0443\u044E\u0442 \u0434\u0440\u0443\u0433 \u0441 \u0434\u0440\u0443\u0433\u043E\
+    \u043C."
+  sp: "Las instituciones sociales no aparecen porque somos personas y fisiol\xF3gicamente\
+    \ una persona no puede vivir sin bancos, contratos y otros instrumentos de la\
+    \ sociedad. Pero solo porque una persona, en alg\xFAn momento, entr\xF3 en el\
+    \ camino de relaciones m\xE1s complejas en la sociedad y dio un paso importante\
+    \ para acelerar los procesos de quienes nos rodean."
   tr: "Ba\u015Fka bir deyi\u015Fle, sibernetik yakla\u015F\u0131m psikoterapiye, biyolojiye\
     \ ve otomatik navigasyona e\u015Fit olarak uygulanabilir. Sistemin i\u015Flevine,\
     \ bireysel eylemlerin nas\u0131l kontrol edildi\u011Fine ve bireysel d\xFC\u011F\
@@ -9993,6 +10639,36 @@
     \ um agente econ\xF4mico, ao projetar servi\xE7os robotizados. Para regular o\
     \ tamanho do CPS e se adaptar \xE0s necessidades de mudan\xE7a dos indiv\xEDduos,\
     \ podemos usar o mecanismo de mercado."
+  ru: "\u041F\u0440\u0438\u043D\u0438\u043C\u0430\u044F \u0432\u043E \u0432\u043D\u0438\
+    \u043C\u0430\u043D\u0438\u0435 \u043F\u0443\u0431\u043B\u0438\u043A\u0430\u0446\
+    \u0438\u0438 \u0420\u043E\u043D\u0430\u043B\u044C\u0434\u0430 \u041A\u043E\u0443\
+    \u0437\u0430 \u0438 \u041D\u043E\u0440\u0431\u0435\u0440\u0442\u0430 \u0412\u0438\
+    \u043D\u0435\u0440\u0430, \u0441\u043B\u0435\u0434\u044F\u0449\u0438\u0435 \u0437\
+    \u0430 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0435\u043C \u0418\u043D\u0434\
+    \u0443\u0441\u0442\u0440\u0438\u0438 4.0, \u043C\u044B \u043C\u043E\u0436\u0435\
+    \u043C \u0440\u0430\u0441\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\
+    \u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0438\u0441\u043F\
+    \u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u041A\u0424\u0421\
+    \ \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u044D\u043A\u043E\u043D\
+    \u043E\u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0430\u0433\u0435\
+    \u043D\u0442\u0430 \u043F\u0440\u0438 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\
+    \u0442\u043A\u0435 \u0440\u043E\u0431\u043E\u0442\u0438\u0437\u0438\u0440\u043E\
+    \u0432\u0430\u043D\u043D\u044B\u0445 \u0443\u0441\u043B\u0443\u0433. \u0427\u0442\
+    \u043E\u0431\u044B \u0440\u0435\u0433\u0443\u043B\u0438\u0440\u043E\u0432\u0430\
+    \u0442\u044C \u0440\u0430\u0437\u043C\u0435\u0440 \u041A\u0424\u0421 \u0438 \u0430\
+    \u0434\u0430\u043F\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F\
+    \ \u043A \u0438\u0437\u043C\u0435\u043D\u044F\u044E\u0449\u0438\u043C\u0441\u044F\
+    \ \u043F\u043E\u0442\u0440\u0435\u0431\u043D\u043E\u0441\u0442\u044F\u043C \u043B\
+    \u044E\u0434\u0435\u0439, \u043C\u044B \u043C\u043E\u0436\u0435\u043C \u0438\u0441\
+    \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0440\u044B\u043D\
+    \u043E\u0447\u043D\u044B\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C\
+    ."
+  sp: "El dinero y los contratos deber\xEDan estar disponibles para los robots, no\
+    \ porque esta sea una fantas\xEDa enfermiza de los fan\xE1ticos de los robots\
+    \ que han olvidado qu\xE9 es Skynet. Pero solo porque la nueva revoluci\xF3n industrial\
+    \ se impone la tarea de construir cadenas automatizadas complejas, cuyos procesos\
+    \ afectar\xE1n el intercambio de informaci\xF3n t\xE9cnica y econ\xF3mica, y tambi\xE9\
+    n avanzar\xE1n a una velocidad inaccesible para los humanos."
   tr: "Ronald Coase ve Norbert Wiener'in yay\u0131nlar\u0131n\u0131 dikkate alarak,\
     \ End\xFCstri 4.0'\u0131n geli\u015Fimini takip ederek, robotize hizmetleri tasarlarken\
     \ CPS'yi ekonomik bir ajan olarak kullanmay\u0131 d\xFC\u015F\xFCnebiliriz. CPS'nin\
@@ -10021,6 +10697,23 @@
     \ das restri\xE7\xF5es impostas pelo mercado ao tamanho da empresa, podemos dizer\
     \ que o limite do aumento do CPS ser\xE1 sempre determinado pelo mercado e nada\
     \ mais \xE9 necess\xE1rio para isto."
+  ru: "\u0418 \u0447\u0442\u043E \u043E\u0441\u043E\u0431\u0435\u043D\u043D\u043E\
+    \ \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E \u0441 \u0442\u043E\u0447\
+    \u043A\u0438 \u0437\u0440\u0435\u043D\u0438\u044F \u043D\u0430\u0443\u043A\u0438\
+    , \u0432\u0437\u044F\u0432 \u0437\u0430 \u043E\u0441\u043D\u043E\u0432\u0443 \u043F\
+    \u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043E\
+    \u0431 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F\u0445\
+    , \u043D\u0430\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u0435\u043C\u044B\u0445\
+    \ \u0440\u044B\u043D\u043A\u043E\u043C \u043D\u0430 \u0440\u0430\u0437\u043C\u0435\
+    \u0440 \u0444\u0438\u0440\u043C\u044B, \u043C\u043E\u0436\u043D\u043E \u0441\u043A\
+    \u0430\u0437\u0430\u0442\u044C, \u0447\u0442\u043E \u043F\u0440\u0435\u0434\u0435\
+    \u043B \u0440\u043E\u0441\u0442\u0430 \u041A\u0424\u0421 \u0432\u0441\u0435\u0433\
+    \u0434\u0430 \u0431\u0443\u0434\u0435\u0442 \u043E\u043F\u0440\u0435\u0434\u0435\
+    \u043B\u044F\u0442\u044C\u0441\u044F \u0440\u044B\u043D\u043A\u043E\u043C \u0438\
+    \ \u043D\u0438\u0447\u0435\u0433\u043E \u0434\u0440\u0443\u0433\u043E\u0433\u043E\
+    \ \u0434\u043B\u044F \u044D\u0442\u043E\u0433\u043E \u043D\u0435 \u0442\u0440\u0435\
+    \u0431\u0443\u0435\u0442\u0441\u044F."
+  sp: Industria 1.0
   tr: "Ve bilimsel olarak ilgin\xE7 olan \u015Fey, piyasan\u0131n firman\u0131n b\xFC\
     y\xFCkl\xFC\u011F\xFCne getirdi\u011Fi k\u0131s\u0131tlamalar fikrini temel alarak,\
     \ CPS'deki art\u0131\u015F\u0131n s\u0131n\u0131r\u0131n\u0131n her zaman piyasa\
@@ -10051,6 +10744,29 @@
     os a humanos e outros rob\xF4s por dinheiro. Como resultado, a economia rob\xF3\
     tica nos parece ser um conjunto geral de CPSs que fornecem servi\xE7os e bens\
     \ diretamente ao mercado."
+  ru: "\u0420\u043E\u0431\u043E\u0444\u0430\u0431\u0440\u0438\u043A\u0438 \u044F\u0432\
+    \u043B\u044F\u044E\u0442\u0441\u044F \u0438\u0434\u0435\u0430\u043B\u044C\u043D\
+    \u043E\u0435 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\
+    \u0438\u0435 \u0434\u043B\u044F \u043A\u0438\u0431\u0435\u0440\u0444\u0438\u0437\
+    \u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\u0438\u0441\u0442\u0435\u043C\
+    . \u041E\u043D\u0438 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\
+    \u044E\u0442 \u0441\u043E\u0431\u043E\u0439 \u0434\u043E\u0432\u043E\u043B\u044C\
+    \u043D\u043E \u0430\u0432\u0442\u043E\u043D\u043E\u043C\u043D\u0443\u044E \u0435\
+    \u0434\u0438\u043D\u0438\u0446\u0443, \u0441\u043F\u043E\u0441\u043E\u0431\u043D\
+    \u0443\u044E \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\
+    \u0442\u044C \u0443\u0441\u043B\u0443\u0433\u0438 \u043A\u0430\u043A \u043B\u044E\
+    \u0434\u044F\u043C, \u0442\u0430\u043A \u0438 \u0434\u0440\u0443\u0433\u0438\u043C\
+    \ \u0440\u043E\u0431\u043E\u0442\u0430\u043C \u0437\u0430 \u0434\u0435\u043D\u044C\
+    \u0433\u0438. \u0412 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u0435\
+    \ \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0430 \u0440\u043E\u0431\u043E\
+    \u0442\u043E\u0432 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0435\u0442 \u043F\
+    \u0435\u0440\u0435\u0434 \u043D\u0430\u043C\u0438 \u043A\u0430\u043A \u043E\u0431\
+    \u0449\u0438\u0439 \u043D\u0430\u0431\u043E\u0440 \u041A\u0424\u0421, \u043F\u0440\
+    \u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445\
+    \ \u0443\u0441\u043B\u0443\u0433\u0438 \u0438 \u0442\u043E\u0432\u0430\u0440\u044B\
+    \ \u043D\u0435\u043F\u043E\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043D\
+    \u043D\u043E \u043D\u0430 \u0440\u044B\u043D\u043E\u043A."
+  sp: "Mecanizaci\xF3n:"
   tr: "Robofirms, siber-fiziksel sistemler i\xE7in ideal bir temsildir. Hem insanlara\
     \ hem de di\u011Fer robotlara para kar\u015F\u0131l\u0131\u011F\u0131nda hizmet\
     \ verebilen olduk\xE7a \xF6zerk bir birimdir. Sonu\xE7 olarak, robot ekonomisi\
@@ -10062,6 +10778,8 @@
   fr: "remplacement de la puissance musculaire par de l\u2019\xE9nergie vapeur.\n"
   it: BITCOIN
   pt: BITCOIN
+  ru: "\u0411\u0438\u0442\u043A\u043E\u0438\u043D"
+  sp: "sustituci\xF3n de la fuerza muscular por energ\xEDa de vapor."
   tr: "B\u0130TCO\u0130N"
 - alias: MONEY FOR ROBOTS
   az: "ROBOTLAR \xDC\xC7\xDCN PUL"
@@ -10069,6 +10787,9 @@
   fr: "1784 \u0433."
   it: DENARO PER I ROBOT
   pt: "DINHEIRO PARA ROB\xD4S"
+  ru: "\u0414\u0435\u043D\u044C\u0433\u0438 \u0434\u043B\u044F \u0440\u043E\u0431\u043E\
+    \u0442\u043E\u0432"
+  sp: '1784'
   tr: "ROBOTLAR \u0130\xC7\u0130N PARA"
 - alias: In the world of robofirms it turns out to be natural to provide robots with
     access to social institutions that previously were only needed by humans.
@@ -10085,6 +10806,17 @@
     quelle istituzioni sociali, che in passato erano utili solo agli esseri umani.
   pt: "No mundo das empresas rob\xF3ticas, \xE9 natural fornecer aos rob\xF4s acesso\
     \ a institui\xE7\xF5es sociais que antes eram necess\xE1rias apenas para humanos."
+  ru: "\u0412 \u043C\u0438\u0440\u0435 \u0440\u043E\u0431\u043E\u0444\u0430\u0431\u0440\
+    \u0438\u043A \u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442\u0441\u044F\
+    \ \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u043C \u043F\
+    \u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0442\u044C \u0440\
+    \u043E\u0431\u043E\u0442\u0430\u043C \u0434\u043E\u0441\u0442\u0443\u043F \u043A\
+    \ \u0441\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u043C \u0438\u043D\u0441\
+    \u0442\u0438\u0442\u0443\u0442\u0430\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\
+    \u0435 \u0440\u0430\u043D\u044C\u0448\u0435 \u0431\u044B\u043B\u0438 \u043D\u0443\
+    \u0436\u043D\u044B \u0442\u043E\u043B\u044C\u043A\u043E \u043B\u044E\u0434\u044F\
+    \u043C."
+  sp: Industria 2.0
   tr: "Robofirms d\xFCnyas\u0131nda, robotlar\u0131n daha \xF6nce sadece insanlar\u0131\
     n ihtiya\xE7 duydu\u011Fu sosyal kurumlara eri\u015Fimini sa\u011Flamak hayat\u0131\
     n ola\u011Fan ak\u0131\u015F\u0131na uygun g\xF6r\xFCn\xFCyor."
@@ -10116,6 +10848,27 @@
     \ sociedade. Mas s\xF3 porque uma pessoa, em algum momento, entrou no caminho\
     \ das rela\xE7\xF5es mais complexas da sociedade e deu um passo importante para\
     \ acelerar os processos daqueles que nos cercam."
+  ru: "\u0421\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0435 \u0438\u043D\u0441\
+    \u0442\u0438\u0442\u0443\u0442\u044B \u0432\u043E\u0437\u043D\u0438\u043A\u0430\
+    \u044E\u0442 \u043D\u0435 \u043F\u043E\u0442\u043E\u043C\u0443, \u0447\u0442\u043E\
+    \ \u043C\u044B \u043B\u044E\u0434\u0438 \u0438 \u0444\u0438\u0437\u0438\u043E\u043B\
+    \u043E\u0433\u0438\u0447\u0435\u0441\u043A\u0438 \u0447\u0435\u043B\u043E\u0432\
+    \u0435\u043A \u043D\u0435 \u043C\u043E\u0436\u0435\u0442 \u0436\u0438\u0442\u044C\
+    \ \u0431\u0435\u0437 \u0431\u0430\u043D\u043A\u043E\u0432, \u043A\u043E\u043D\u0442\
+    \u0440\u0430\u043A\u0442\u043E\u0432 \u0438 \u0434\u0440\u0443\u0433\u0438\u0445\
+    \ \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u043E\u0432 \u043E\
+    \u0431\u0449\u0435\u0441\u0442\u0432\u0430. \u041D\u043E \u0442\u043E\u043B\u044C\
+    \u043A\u043E \u043F\u043E\u0442\u043E\u043C\u0443, \u0447\u0442\u043E \u0447\u0435\
+    \u043B\u043E\u0432\u0435\u043A \u0432 \u043A\u0430\u043A\u043E\u0439-\u0442\u043E\
+    \ \u043C\u043E\u043C\u0435\u043D\u0442 \u0432\u0440\u0435\u043C\u0435\u043D\u0438\
+    \ \u0432\u0441\u0442\u0443\u043F\u0438\u043B \u043D\u0430 \u043F\u0443\u0442\u044C\
+    \ \u0431\u043E\u043B\u0435\u0435 \u0441\u043B\u043E\u0436\u043D\u044B\u0445 \u043E\
+    \u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0439 \u0432 \u043E\u0431\u0449\u0435\
+    \u0441\u0442\u0432\u0435 \u0438 \u0441\u0434\u0435\u043B\u0430\u043B \u0432\u0430\
+    \u0436\u043D\u044B\u0439 \u0448\u0430\u0433 \u043A \u0443\u0441\u043A\u043E\u0440\
+    \u0435\u043D\u0438\u044E \u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0438\
+    \u0445 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0432."
+  sp: "Electrificaci\xF3n:"
   tr: "Sosyal kurumlar bizler insan\u0131z diye ortaya \xE7\u0131kmaz ve fizyolojik\
     \ olarak bir insan bankalar, s\xF6zle\u015Fmeler ve toplumun di\u011Fer ara\xE7\
     lar\u0131 olmadan ya\u015Fayamaz. Ancak sadece bir noktada bir ki\u015Fi, toplumda\
@@ -10154,6 +10907,35 @@
     \ construir cadeias automatizadas complexas, cujos processos afetar\xE3o a troca\
     \ de informa\xE7\xF5es t\xE9cnicas e econ\xF4micas, e tamb\xE9m prosseguir\xE3\
     o em uma velocidade inacess\xEDvel aos humanos\u201D."
+  ru: "\u0414\u0435\u043D\u044C\u0433\u0438 \u0438 \u043A\u043E\u043D\u0442\u0440\u0430\
+    \u043A\u0442\u044B \u0434\u043E\u043B\u0436\u043D\u044B \u0441\u0442\u0430\u0442\
+    \u044C \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u043C\u0438 \u0434\u043B\
+    \u044F \u0440\u043E\u0431\u043E\u0442\u043E\u0432 \u043D\u0435 \u043F\u043E\u0442\
+    \u043E\u043C\u0443, \u0447\u0442\u043E \u044D\u0442\u043E \u0431\u043E\u043B\u044C\
+    \u043D\u0430\u044F \u0444\u0430\u043D\u0442\u0430\u0437\u0438\u044F \u0444\u0430\
+    \u043D\u0430\u0442\u043E\u0432 \u0440\u043E\u0431\u043E\u0442\u043E\u0432, \u0437\
+    \u0430\u0431\u044B\u0432\u0448\u0438\u0445, \u0447\u0442\u043E \u0442\u0430\u043A\
+    \u043E\u0435 \u0421\u043A\u0430\u0439\u043D\u0435\u0442. \u041D\u043E \u0442\u043E\
+    \u043B\u044C\u043A\u043E \u043F\u043E\u0442\u043E\u043C\u0443, \u0447\u0442\u043E\
+    \ \u043D\u043E\u0432\u0430\u044F \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\
+    \u043D\u043D\u0430\u044F \u0440\u0435\u0432\u043E\u043B\u044E\u0446\u0438\u044F\
+    \ \u0441\u0442\u0430\u0432\u0438\u0442 \u043F\u0435\u0440\u0435\u0434 \u0441\u043E\
+    \u0431\u043E\u0439 \u0437\u0430\u0434\u0430\u0447\u0443 \u043F\u043E\u0441\u0442\
+    \u0440\u043E\u0435\u043D\u0438\u044F \u0441\u043B\u043E\u0436\u043D\u044B\u0445\
+    \ \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\
+    \u0430\u043D\u043D\u044B\u0445 \u0446\u0435\u043F\u043E\u0447\u0435\u043A, \u043F\
+    \u0440\u043E\u0446\u0435\u0441\u0441\u044B \u0432 \u043A\u043E\u0442\u043E\u0440\
+    \u044B\u0445 \u0431\u0443\u0434\u0443\u0442 \u0437\u0430\u0442\u0440\u0430\u0433\
+    \u0438\u0432\u0430\u0442\u044C \u043E\u0431\u043C\u0435\u043D \u043A\u0430\u043A\
+    \ \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0438\u043D\
+    \u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0435\u0439, \u0442\u0430\u043A \u0438\
+    \ \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0439\
+    \ \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0435\u0439, \u0430 \u0442\
+    \u0430\u043A\u0436\u0435 \u0431\u0443\u0434\u0443\u0442 \u043F\u0440\u043E\u0442\
+    \u0435\u043A\u0430\u0442\u044C \u0441 \u043D\u0435\u0434\u043E\u0441\u0442\u0443\
+    \u043F\u043D\u043E\u0439 \u0434\u043B\u044F \u0447\u0435\u043B\u043E\u0432\u0435\
+    \u043A\u0430 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C\u044E."
+  sp: "introducci\xF3n de la producci\xF3n en cadena."
   tr: "Para ve s\xF6zle\u015Fmeler robotlar\u0131n kullan\u0131m\u0131na sunulmal\u0131\
     , \xE7\xFCnk\xFC bu Skynet'in ne oldu\u011Funu unutmu\u015F robot hayranlar\u0131\
     n\u0131n hasta bir fantezisi de\u011Fil. Ancak yeni sanayi devrimi, hem teknik\
@@ -10167,6 +10949,8 @@
   fr: "1870 \u0433."
   it: Industria 1.0
   pt: "Ind\xFAstria 1.0"
+  ru: "\u0418\u043D\u0434\u0443\u0441\u0442\u0440\u0438\u044F 1.0"
+  sp: '1870'
   tr: "End\xFCstri 1.0"
 - alias: 'Mechanization: '
   az: 'Mexanizasiya:'
@@ -10174,6 +10958,8 @@
   fr: industrie 3.0
   it: 'Meccanizzazione:'
   pt: "Mecaniza\xE7\xE3o:"
+  ru: "\u041C\u0435\u0445\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F:"
+  sp: Industria 3.0
   tr: 'mekanizasyon:'
 - alias: 'replacement of muscle power with steam energy.
 
@@ -10186,6 +10972,10 @@
   fr: 'L''automatisation:'
   it: sostituzione della forza muscolare con energia a vapore.
   pt: "substitui\xE7\xE3o da for\xE7a muscular pela energia do vapor."
+  ru: "\u0437\u0430\u043C\u0435\u043D\u0430 \u043C\u044B\u0448\u0435\u0447\u043D\u043E\
+    \u0439 \u0441\u0438\u043B\u044B \u043F\u0430\u0440\u043E\u0432\u043E\u0439 \u044D\
+    \u043D\u0435\u0440\u0433\u0438\u0435\u0439."
+  sp: "Automatizaci\xF3n:"
   tr: "kas g\xFCc\xFCn\xFCn buhar enerjisi ile de\u011Fi\u015Ftirilmesi."
 - alias: "1784 \u0433."
   az: "1784-c\xFC il"
@@ -10193,6 +10983,8 @@
   fr: "introduction de syst\xE8mes automatis\xE9s avec CNC."
   it: "1784 \u0433."
   pt: Ano de 1784.
+  ru: "1784 \u0433."
+  sp: "introducci\xF3n de sistemas automatizados con CNC."
   tr: 1784 r.
 - alias: Industry 2.0
   az: "S\u0259naye 2.0"
@@ -10200,6 +10992,8 @@
   fr: "1969 \u0433."
   it: Industria 2.0
   pt: "Ind\xFAstria 2.0"
+  ru: "\u0418\u043D\u0434\u0443\u0441\u0442\u0440\u0438\u044F 2.0"
+  sp: '1969'
   tr: "End\xFCstri 2.0"
 - alias: 'Electrification: '
   az: "Elektrikl\u0259\u015Fdirm\u0259:"
@@ -10207,6 +11001,9 @@
   fr: l'industrie 4.0
   it: 'Elettrificazione:'
   pt: "Eletrifica\xE7\xE3o:"
+  ru: "\u042D\u043B\u0435\u043A\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\
+    \u044F:"
+  sp: Industria 4.0
   tr: 'elektrifikasyon:'
 - alias: introduction of assembly-line production.
   az: "Konveyer istehsal\u0131n\u0131n t\u0259tbiqi."
@@ -10214,6 +11011,10 @@
   fr: "Production intelligente\_:"
   it: introduzione della produzione su catena di montaggio.
   pt: "introdu\xE7\xE3o da produ\xE7\xE3o em linha de montagem."
+  ru: "\u0432\u043D\u0435\u0434\u0440\u0435\u043D\u0438\u0435 \u043A\u043E\u043D\u0432\
+    \u0435\u0439\u0435\u0440\u043D\u043E\u0433\u043E \u043F\u0440\u043E\u0438\u0437\
+    \u0432\u043E\u0434\u0441\u0442\u0432\u0430."
+  sp: "Producci\xF3n inteligente:"
   tr: "montaj hatt\u0131 \xFCretimine giri\u015F."
 - alias: "1870 \u0433."
   az: 1870-ci il
@@ -10221,6 +11022,8 @@
   fr: "d\xE9veloppement de syst\xE8mes cyberphysiques."
   it: "1870 \u0433."
   pt: Ano de 1870.
+  ru: "1870 \u0433."
+  sp: "desarrollo de sistemas ciberf\xEDsicos."
   tr: 1870 r.
 - alias: Industry 3.0
   az: "S\u0259naye 3.0"
@@ -10228,6 +11031,8 @@
   fr: Maintenant
   it: Industria 3.0
   pt: "Ind\xFAstria 3.0"
+  ru: "\u0418\u043D\u0434\u0443\u0441\u0442\u0440\u0438\u044F 3.0"
+  sp: Ahora
   tr: "End\xFCstri 3.0"
 - alias: 'Automation: '
   az: "Avtomatla\u015Fd\u0131rma:"
@@ -10244,6 +11049,17 @@
     \ uber et le rendre plus rapide."
   it: 'Automazione:'
   pt: "Automa\xE7\xE3o:"
+  ru: "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F\
+    :"
+  sp: "Uno de los ejemplos de nuestros experimentos: negociar pagos por espacio vial\
+    \ y derecho de paso para veh\xEDculos aut\xF3nomos para reducir la congesti\xF3\
+    n. Lo que una persona no har\xEDa absolutamente en el tr\xE1fico, el autom\xF3\
+    vil lo har\xE1 por usted sin dificultad: si desea cambiar de carril, su autom\xF3\
+    vil y las ofertas de intercambio de autom\xF3viles de su vecino sobre el costo\
+    \ de tal operaci\xF3n a una velocidad de cientos de mensajes por segundo, revelar\xE1\
+    n un precio de equilibrio, por lo que ya se encuentra en el siguiente carril de\
+    \ movimiento m\xE1s r\xE1pido. Esto significa que ahora estar\xE1 disponible para\
+    \ \"cargar\" su viaje con uber y hacerlo m\xE1s r\xE1pido."
   tr: 'Otomasyon:'
 - alias: introduction of automated systems with CNC.
   az: "CNC il\u0259 avtomatla\u015Fd\u0131r\u0131lm\u0131\u015F sisteml\u0259rin t\u0259\
@@ -10256,6 +11072,13 @@
     \ la Smart City!"
   it: introduzione di sistemi automatizzati con CNC.
   pt: "introdu\xE7\xE3o de sistemas automatizados com CNC."
+  ru: "\u0432\u043D\u0435\u0434\u0440\u0435\u043D\u0438\u0435 \u0430\u0432\u0442\u043E\
+    \u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\
+    \u0445 \u0441\u0438\u0441\u0442\u0435\u043C \u0441 \u0427\u041F\u0423."
+  sp: "Los robots necesitan dinero que estar\xE1 directamente disponible para ellos\
+    \ para poder realizar operaciones sin una persona a la velocidad con la que solo\
+    \ las m\xE1quinas pueden tomar decisiones. \xA1Y todo esto es \xFAnicamente para\
+    \ que una persona disfrute de la vida en la Ciudad Inteligente!"
   tr: "CNC ile otomatik sistemlerin tan\u0131t\u0131m\u0131."
 - alias: "1969 \u0433."
   az: 1969-cu il
@@ -10269,6 +11092,14 @@
     argent \xE9lectronique, mais une institution financi\xE8re vraiment mondiale."
   it: "1969 \u0433."
   pt: Ano de 1969.
+  ru: "1969 \u0433."
+  sp: "Y aqu\xED llegamos sin problemas al primer efectivo electr\xF3nico: Bitcoin.\
+    \ El hecho de que Bitcoin pueda almacenarse en su cuenta seg\xFAn el principio\
+    \ de que no es un banco, sino efectivo en su billetera, lo convierte en el primer\
+    \ dinero que el robot puede administrar de forma independiente, m\xE1s precisamente\
+    \ de forma aut\xF3noma. Al mismo tiempo, hoy ya podemos decir que Bitcoin no es\
+    \ solo dinero electr\xF3nico, sino una instituci\xF3n financiera verdaderamente\
+    \ global."
   tr: 1969 r.
 - alias: Industry 4.0
   az: "S\u0259naye 4.0"
@@ -10280,6 +11111,11 @@
     \ robotiques."
   it: Industria 4.0
   pt: "Ind\xFAstria 4.0"
+  ru: "\u0418\u043D\u0434\u0443\u0441\u0442\u0440\u0438\u044F 4.0"
+  sp: "Como resultado: un evento no inventado por nosotros, pero que cae claramente\
+    \ en nuestra visi\xF3n, convierte a Bitcoin en el primer dinero para los robots\
+    \ o, si miramos a\xFAn m\xE1s profundamente, es precisamente esa instituci\xF3\
+    n social la que ayudar\xE1 a la formaci\xF3n de empresas rob\xF3ticas."
   tr: "End\xFCstri 4.0"
 - alias: 'Smart production:'
   az: "A\u011F\u0131ll\u0131 istehsal:"
@@ -10287,6 +11123,9 @@
   fr: CONTRATS INTELLIGENTS
   it: 'Produzione intelligente:'
   pt: "Produ\xE7\xE3o inteligente:"
+  ru: "\u0423\u043C\u043D\u043E\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\
+    \u0441\u0442\u0432\u043E:"
+  sp: CONTRATOS INTELIGENTES
   tr: "Ak\u0131ll\u0131 \xFCretim:"
 - alias: development of cyber physical systems.
   az: "Kiberfiziki sisteml\u0259rin inki\u015Faf\u0131."
@@ -10294,6 +11133,10 @@
   fr: ETHEREUM
   it: sviluppo di sistemi cyber-fisici.
   pt: "desenvolvimento de sistemas f\xEDsicos cibern\xE9ticos."
+  ru: "\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u0438\u0431\
+    \u0435\u0440\u0444\u0438\u0437\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\
+    \u0438\u0441\u0442\u0435\u043C."
+  sp: ETHEREUM
   tr: "siber fiziksel sistemlerin geli\u015Ftirilmesi."
 - alias: Now
   az: "\u0130ndi"
@@ -10303,6 +11146,10 @@
     \ pour l\u2019\xE9change technique et \xE9conomique \xE0 part enti\xE8re."
   it: Adesso
   pt: Atualmente.
+  ru: "\u0421\u0435\u0439\u0447\u0430\u0441"
+  sp: "Bitcoin se convirti\xF3 en el primer dinero disponible para los robots. Mientras\
+    \ tanto, no podemos hablar de Bitcoin en su forma actual como una herramienta\
+    \ para el intercambio t\xE9cnico y econ\xF3mico completo."
   tr: "\u015Eimdi"
 - alias: "One of the examples of our experiments: negotiating road space and right\
     \ of way payments for autonomous vehicles to reduce congestion. What a person\
@@ -10358,6 +11205,51 @@
     \ e, portanto, voc\xEA j\xE1 est\xE1 na outra faixa. Isso significa que agora\
     \ estar\xE1 dispon\xEDvel para \u201Ccarregar\u201D sua carona com o uber e torn\xE1\
     -la mais r\xE1pida."
+  ru: "\u041E\u0434\u0438\u043D \u0438\u0437 \u043F\u0440\u0438\u043C\u0435\u0440\u043E\
+    \u0432 \u043D\u0430\u0448\u0438\u0445 \u044D\u043A\u0441\u043F\u0435\u0440\u0438\
+    \u043C\u0435\u043D\u0442\u043E\u0432: \u0441\u043E\u0433\u043B\u0430\u0441\u043E\
+    \u0432\u0430\u043D\u0438\u0435 \u0434\u043E\u0440\u043E\u0436\u043D\u043E\u0433\
+    \u043E \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u0430\
+    \ \u0438 \u043E\u043F\u043B\u0430\u0442\u044B \u043F\u0440\u0435\u0438\u043C\u0443\
+    \u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u043F\u0440\
+    \u043E\u0435\u0437\u0434\u0430 \u0434\u043B\u044F \u0430\u0432\u0442\u043E\u043D\
+    \u043E\u043C\u043D\u044B\u0445 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\
+    \u0442\u043D\u044B\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432 \u0441 \u0446\
+    \u0435\u043B\u044C\u044E \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\
+    \u044F \u0437\u0430\u0442\u043E\u0440\u043E\u0432. \u0422\u043E, \u0447\u0442\u043E\
+    \ \u0447\u0435\u043B\u043E\u0432\u0435\u043A \u043A\u0430\u0442\u0435\u0433\u043E\
+    \u0440\u0438\u0447\u0435\u0441\u043A\u0438 \u043D\u0435 \u0441\u0442\u0430\u043B\
+    \ \u0431\u044B \u0434\u0435\u043B\u0430\u0442\u044C \u0432 \u043F\u0440\u043E\u0431\
+    \u043A\u0435, \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044C \u0441\
+    \u0434\u0435\u043B\u0430\u0435\u0442 \u0437\u0430 \u0432\u0430\u0441 \u0431\u0435\
+    \u0437 \u0437\u0430\u0442\u0440\u0443\u0434\u043D\u0435\u043D\u0438\u0439: \u0432\
+    \u044B \u0445\u043E\u0442\u0438\u0442\u0435 \u043F\u0435\u0440\u0435\u0441\u0442\
+    \u0440\u043E\u0438\u0442\u044C\u0441\u044F, \u0432\u0430\u0448 \u0430\u0432\u0442\
+    \u043E\u043C\u043E\u0431\u0438\u043B\u044C \u0438 \u0430\u0432\u0442\u043E\u043C\
+    \u043E\u0431\u0438\u043B\u044C \u0432\u0430\u0448\u0435\u0433\u043E \u0441\u043E\
+    \u0441\u0435\u0434\u0430 \u043E\u0431\u043C\u0435\u043D\u0438\u0432\u0430\u044E\
+    \u0442\u0441\u044F \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\
+    \u044F\u043C\u0438 \u043E \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u0438\
+    \ \u0442\u0430\u043A\u043E\u0439 \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u0438\
+    \ \u0441\u043E \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C\u044E \u0441\u043E\
+    \u0442\u043D\u0438 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0439 \u0432\
+    \ \u0441\u0435\u043A\u0443\u043D\u0434\u0443, \u0432\u044B\u044F\u0432\u043B\u044F\
+    \u044E\u0442 \u0440\u0430\u0432\u043D\u043E\u0432\u0435\u0441\u043D\u0443\u044E\
+    \ \u0446\u0435\u043D\u0443, \u0438 \u0432\u043E\u0442 \u0432\u044B \u0443\u0436\
+    \u0435 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0435\u0441\u044C \u043D\u0430\
+    \ \u0431\u043E\u043B\u0435\u0435 \u0431\u044B\u0441\u0442\u0440\u043E\u0439 \u043F\
+    \u043E\u043B\u043E\u0441\u0435 \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F\
+    . \u042D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442, \u0447\u0442\u043E\
+    \ \u0441\u0435\u0439\u0447\u0430\u0441 \u0441\u0442\u0430\u043D\u0435\u0442 \u0434\
+    \u043E\u0441\u0442\u0443\u043F\u043D\u0430 \u043E\u043F\u0446\u0438\u044F \xAB\
+    \u0437\u0430\u0440\u044F\u0434\u0438\u0442\u044C\xBB \u0441\u0432\u043E\u044E\
+    \ \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u043D\u0430 uber \u0438 \u0441\u0434\
+    \u0435\u043B\u0430\u0442\u044C \u0435\u0435 \u0431\u044B\u0441\u0442\u0440\u0435\
+    \u0435."
+  sp: "Ahora ya tenemos contratos inteligentes, mercados DeFi y una infraestructura\
+    \ descentralizada para intercambiar mensajes entre robots que abren la posibilidad\
+    \ de que la humanidad cree una parte totalmente automatizada de la econom\xED\
+    a humana: la econom\xEDa rob\xF3tica."
   tr: "Deneylerimizin \xF6rneklerinden biri \u015Fu \u015Fekilde: s\u0131k\u0131\u015F\
     \u0131kl\u0131\u011F\u0131 azaltmak i\xE7in otonom ara\xE7lar i\xE7in yol alan\u0131\
     \ ve ge\xE7i\u015F hakk\u0131 \xF6demelerinin pazarl\u0131\u011F\u0131. Trafikte\
@@ -10396,6 +11288,25 @@
     \ eles para poder realizar opera\xE7\xF5es sem uma pessoa na velocidade com que\
     \ apenas as m\xE1quinas podem tomar decis\xF5es. E tudo isso \xE9 apenas para\
     \ uma pessoa aproveitar a vida na Cidade Inteligente!"
+  ru: "\u0420\u043E\u0431\u043E\u0442\u0430\u043C \u043D\u0443\u0436\u043D\u044B \u0434\
+    \u0435\u043D\u044C\u0433\u0438, \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\
+    \u0435 \u0438\u043C \u043D\u0430\u043F\u0440\u044F\u043C\u0443\u044E, \u0447\u0442\
+    \u043E\u0431\u044B \u0438\u043C\u0435\u0442\u044C \u0432\u043E\u0437\u043C\u043E\
+    \u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u043F\u043E\u043B\u043D\u044F\
+    \u0442\u044C \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u0438 \u0431\u0435\u0437\
+    \ \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430 \u0441\u043E \u0441\u043A\u043E\
+    \u0440\u043E\u0441\u0442\u044C\u044E, \u0434\u043E\u0441\u0442\u0443\u043F\u043D\
+    \u043E\u0439 \u0442\u043E\u043B\u044C\u043A\u043E \u043C\u0430\u0448\u0438\u043D\
+    \u0430\u043C. \u0418 \u0432\u0441\u0435 \u044D\u0442\u043E \u0438\u0441\u043A\u043B\
+    \u044E\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E \u0434\u043B\u044F \u0442\
+    \u043E\u0433\u043E, \u0447\u0442\u043E\u0431\u044B \u0447\u0435\u043B\u043E\u0432\
+    \u0435\u043A \u043D\u0430\u0441\u043B\u0430\u0436\u0434\u0430\u043B\u0441\u044F\
+    \ \u0436\u0438\u0437\u043D\u044C\u044E \u0432 \u0423\u043C\u043D\u043E\u043C \u0433\
+    \u043E\u0440\u043E\u0434\u0435!"
+  sp: "Una de las grandes oportunidades para construir la econom\xEDa de los robots\
+    \ es la tecnolog\xEDa Ethereum. Con la funcionalidad de Ethereum, los robots no\
+    \ solo pueden intercambiar dinero, sino tambi\xE9n celebrar contratos con humanos\
+    \ y entre ellos."
   tr: "Robotlar, yaln\u0131zca makinelerin karar verebilece\u011Fi h\u0131zda, bir\
     \ ki\u015Fi olmadan i\u015Flemleri ger\xE7ekle\u015Ftirebilmek i\xE7in do\u011F\
     rudan ellerinde olacak paraya ihtiya\xE7 duyarlar. Ve t\xFCm bunlar sadece bir\
@@ -10441,6 +11352,39 @@
     \ aut\xF4noma. Ao mesmo tempo, hoje j\xE1 podemos dizer que o Bitcoin n\xE3o \xE9\
     \ apenas dinheiro eletr\xF4nico, mas uma institui\xE7\xE3o financeira verdadeiramente\
     \ global."
+  ru: "\u0418 \u0432\u043E\u0442 \u043C\u044B \u043F\u043B\u0430\u0432\u043D\u043E\
+    \ \u043F\u043E\u0434\u0445\u043E\u0434\u0438\u043C \u043A \u043F\u0435\u0440\u0432\
+    \u043E\u0439 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u043E\u0439\
+    \ \u043D\u0430\u043B\u0438\u0447\u043D\u043E\u0441\u0442\u0438 \u2014 \u0431\u0438\
+    \u0442\u043A\u043E\u0439\u043D\u0443. \u0422\u043E\u0442 \u0444\u0430\u043A\u0442\
+    , \u0447\u0442\u043E \u0431\u0438\u0442\u043A\u043E\u0439\u043D \u043C\u043E\u0436\
+    \u0435\u0442 \u0445\u0440\u0430\u043D\u0438\u0442\u044C\u0441\u044F \u043D\u0430\
+    \ \u0432\u0430\u0448\u0435\u043C \u0441\u0447\u0435\u0442\u0435 \u043F\u043E \u043F\
+    \u0440\u0438\u043D\u0446\u0438\u043F\u0443 \u043D\u0435 \u0431\u0430\u043D\u043A\
+    \u0430, \u0430 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u0432\u0430\
+    \u0448\u0435\u043C \u043A\u043E\u0448\u0435\u043B\u044C\u043A\u0435, \u0434\u0435\
+    \u043B\u0430\u0435\u0442 \u0435\u0433\u043E \u043F\u0435\u0440\u0432\u044B\u043C\
+    \u0438 \u0434\u0435\u043D\u044C\u0433\u0430\u043C\u0438, \u043A\u043E\u0442\u043E\
+    \u0440\u044B\u043C\u0438 \u0440\u043E\u0431\u043E\u0442 \u043C\u043E\u0436\u0435\
+    \u0442 \u0440\u0430\u0441\u043F\u043E\u0440\u044F\u0436\u0430\u0442\u044C\u0441\
+    \u044F \u0441\u0430\u043C\u043E\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\
+    \u043D\u043E, \u0442\u043E\u0447\u043D\u0435\u0435 \u0430\u0432\u0442\u043E\u043D\
+    \u043E\u043C\u043D\u043E. \u041F\u0440\u0438 \u044D\u0442\u043E\u043C \u0443\u0436\
+    \u0435 \u0441\u0435\u0433\u043E\u0434\u043D\u044F \u043C\u043E\u0436\u043D\u043E\
+    \ \u0441\u043A\u0430\u0437\u0430\u0442\u044C, \u0447\u0442\u043E \u0411\u0438\u0442\
+    \u043A\u043E\u0439\u043D \u2014 \u044D\u0442\u043E \u043D\u0435 \u043F\u0440\u043E\
+    \u0441\u0442\u043E \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u044B\
+    \u0435 \u0434\u0435\u043D\u044C\u0433\u0438, \u0430 \u0434\u0435\u0439\u0441\u0442\
+    \u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E \u0433\u043B\u043E\u0431\u0430\
+    \u043B\u044C\u043D\u044B\u0439 \u0444\u0438\u043D\u0430\u043D\u0441\u043E\u0432\
+    \u044B\u0439 \u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442."
+  sp: "Pero, \xBFcu\xE1l es el punto de la comunicaci\xF3n basada en contratos de\
+    \ m\xE1quina a m\xE1quina (m2m)? \xA1Esa es una gran pregunta! Volvamos a CPS.\
+    \ Cuando hablamos de comunicaciones directas entre sensores, equipos de m\xE1\
+    quinas o cualquier otro elemento, seguimos hablando de colaboraci\xF3n dentro\
+    \ de un sistema regulado. Pero si queremos que los servicios de las ciudades inteligentes\
+    \ est\xE9n vivos (o incluso el hogar inteligente en algunos casos), debemos establecer\
+    \ comunicaci\xF3n con varios elementos de terceros."
   tr: "Ve burada sorunsuz bir \u015Fekilde ilk elektronik paraya geliyoruz - Bitcoin.\
     \ Bitcoin'in banka de\u011Fil, c\xFCzdan\u0131n\u0131zdaki nakit prensibiyle hesab\u0131\
     n\u0131zda saklanabilmesi, onu robotun ba\u011F\u0131ms\u0131z, daha do\u011F\
@@ -10470,6 +11414,26 @@
     \ em nossa vis\xE3o, faz do Bitcoin o primeiro dinheiro para rob\xF4s, ou, se\
     \ olharmos ainda mais fundo, \xE9 justamente essa institui\xE7\xE3o social que\
     \ ajudar\xE1 na forma\xE7\xE3o de empresas rob\xF3ticas."
+  ru: "\u0412 \u0438\u0442\u043E\u0433\u0435: \u0441\u043E\u0431\u044B\u0442\u0438\
+    \u0435, \u043F\u0440\u0438\u0434\u0443\u043C\u0430\u043D\u043D\u043E\u0435 \u043D\
+    \u0435 \u043D\u0430\u043C\u0438, \u043D\u043E \u044F\u0432\u043D\u043E \u043E\u0442\
+    \u043D\u043E\u0441\u044F\u0449\u0435\u0435\u0441\u044F \u043A \u043D\u0430\u0448\
+    \u0435\u0439 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438, \u0434\u0435\
+    \u043B\u0430\u0435\u0442 \u0411\u0438\u0442\u043A\u043E\u0439\u043D \u043F\u0435\
+    \u0440\u0432\u044B\u043C\u0438 \u0434\u0435\u043D\u044C\u0433\u0430\u043C\u0438\
+    \ \u0434\u043B\u044F \u0440\u043E\u0431\u043E\u0442\u043E\u0432, \u0438\u043B\u0438\
+    , \u0435\u0441\u043B\u0438 \u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0435\
+    \u0449\u0435 \u0433\u043B\u0443\u0431\u0436\u0435, \u0438\u043C\u0435\u043D\u043D\
+    \u043E \u0442\u0435\u043C \u0441\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u044B\
+    \u043C \u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442\u043E\u043C, \u043A\u043E\
+    \u0442\u043E\u0440\u044B\u0439 \u043F\u043E\u043C\u043E\u0436\u0435\u0442 \u0444\
+    \u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044E \u0440\u043E\
+    \u0431\u043E\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\
+    \u0445 \u0444\u0438\u0440\u043C."
+  sp: "Imaginemos el servicio de entrega de drones. Si un dron, por ejemplo, es propiedad\
+    \ de DHL, \xBFc\xF3mo puede acceder a los almacenes de Amazon o acceder a todo\
+    \ el espacio a\xE9reo de la ciudad? \xBFSer\xE1 un monopolio? \xA1Este es un gran\
+    \ desaf\xEDo para muchas iniciativas de la cuarta revoluci\xF3n industrial!"
   tr: "Sonu\xE7 olarak: Bizim taraf\u0131m\u0131zdan icat edilmemi\u015F, ancak a\xE7\
     \u0131k\xE7a vizyonumuza giren bir olay, Bitcoin'i robotlar i\xE7in ilk para haline\
     \ getiriyor veya daha da derine inersek, robotik firmalar\u0131n olu\u015Fumuna\
@@ -10490,6 +11454,17 @@
     \ \xE0 vous."
   it: SMART CONTRACTS
   pt: SMART CONTRACTS
+  ru: "\u0421\u041C\u0410\u0420\u0422 \u041A\u041E\u041D\u0422\u0420\u0410\u041A\u0422\
+    \u042B"
+  sp: "La mayor\xEDa de las corporaciones dicen que necesitan derechos casi completos\
+    \ sobre su entorno porque no saben c\xF3mo configurar de forma segura el intercambio\
+    \ de informaci\xF3n t\xE9cnica entre sistemas automatizados fuera de su propia\
+    \ estructura corporativa interna. Al mismo tiempo, si observa los procesos en\
+    \ los que trabaja una persona, vemos que la cooperaci\xF3n de diferentes corporaciones\
+    \ ha existido durante mucho tiempo y con \xE9xito. Puede solicitar f\xE1cilmente\
+    \ la entrega puerta a puerta de los productos comprados en el sitio web de Amazon,\
+    \ y el servicio de mensajer\xEDa podr\xE1 conducir un autom\xF3vil por las calles\
+    \ de la ciudad, recibir un pedido en el almac\xE9n y entreg\xE1rselo."
   tr: "AKILLI S\xD6ZLE\u015EMELER"
 - alias: ETHEREUM
   az: ETHEREUM
@@ -10500,6 +11475,10 @@
     j\xE0."
   it: ETHEREUM
   pt: ETHEREUM
+  ru: ETHEREUM
+  sp: "\xBFCu\xE1l es la diferencia? En el primer caso no hay forma de construir una\
+    \ relaci\xF3n contractual entre m\xE1quinas, y en el segundo caso, en el mundo\
+    \ de las personas, las relaciones contractuales ya existen."
   tr: ETHEREUM
 - alias: Bitcoin became the first money available to robots. Meanwhile we can't talk
     about Bitcoin in its current form as a tool for full-fledged technical and economic
@@ -10518,6 +11497,20 @@
   pt: "Bitcoin se tornou o primeiro dinheiro dispon\xEDvel para rob\xF4s. Enquanto\
     \ isso, n\xE3o podemos falar sobre o Bitcoin em sua forma atual como uma ferramenta\
     \ para troca t\xE9cnica e econ\xF4mica completa."
+  ru: "\u0411\u0438\u0442\u043A\u043E\u0439\u043D \u0441\u0442\u0430\u043B \u043F\u0435\
+    \u0440\u0432\u044B\u043C\u0438 \u0434\u0435\u043D\u044C\u0433\u0430\u043C\u0438\
+    , \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u043C\u0438 \u0434\u043B\u044F\
+    \ \u0440\u043E\u0431\u043E\u0442\u043E\u0432. \u041F\u0440\u0438 \u044D\u0442\u043E\
+    \u043C \u043C\u044B \u043D\u0435 \u043C\u043E\u0436\u0435\u043C \u0433\u043E\u0432\
+    \u043E\u0440\u0438\u0442\u044C \u043E \u0411\u0438\u0442\u043A\u043E\u0439\u043D\
+    \u0435 \u0432 \u0435\u0433\u043E \u043D\u044B\u043D\u0435\u0448\u043D\u0435\u043C\
+    \ \u0432\u0438\u0434\u0435 \u043A\u0430\u043A \u043E\u0431 \u0438\u043D\u0441\u0442\
+    \u0440\u0443\u043C\u0435\u043D\u0442\u0435 \u043F\u043E\u043B\u043D\u043E\u0446\
+    \u0435\u043D\u043D\u043E\u0433\u043E \u0442\u0435\u0445\u043D\u0438\u0447\u0435\
+    \u0441\u043A\u043E\u0433\u043E \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\
+    \u0447\u0435\u0441\u043A\u043E\u0433\u043E \u043E\u0431\u043C\u0435\u043D\u0430\
+    ."
+  sp: PARACHAINS
   tr: "Bitcoin, robotlar\u0131n kullanabilece\u011Fi ilk para oldu. Bu arada, tam\
     \ te\u015Fekk\xFCll\xFC teknik ve ekonomik de\u011Fi\u015Fim i\xE7in bir ara\xE7\
     \ olarak mevcut haliyle Bitcoin hakk\u0131nda konu\u015Famay\u0131z."
@@ -10542,6 +11535,25 @@
     \ descentralizada para troca de mensagens entre rob\xF4s que abrem a possibilidade\
     \ para a humanidade criar uma parte totalmente automatizada da economia humana\
     \ - a economia rob\xF3tica."
+  ru: "\u0421\u0435\u0439\u0447\u0430\u0441 \u0443 \u043D\u0430\u0441 \u0443\u0436\
+    \u0435 \u0435\u0441\u0442\u044C \u0441\u043C\u0430\u0440\u0442-\u043A\u043E\u043D\
+    \u0442\u0440\u0430\u043A\u0442\u044B, \u0440\u044B\u043D\u043A\u0438 DeFi \u0438\
+    \ \u0434\u0435\u0446\u0435\u043D\u0442\u0440\u0430\u043B\u0438\u0437\u043E\u0432\
+    \u0430\u043D\u043D\u0430\u044F \u0438\u043D\u0444\u0440\u0430\u0441\u0442\u0440\
+    \u0443\u043A\u0442\u0443\u0440\u0430 \u043E\u0431\u043C\u0435\u043D\u0430 \u0441\
+    \u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F\u043C\u0438 \u043C\u0435\u0436\
+    \u0434\u0443 \u0440\u043E\u0431\u043E\u0442\u0430\u043C\u0438, \u043A\u043E\u0442\
+    \u043E\u0440\u044B\u0435 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u044E\u0442\
+    \ \u043F\u0435\u0440\u0435\u0434 \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\
+    \u0441\u0442\u0432\u043E\u043C \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\
+    \u0441\u0442\u044C \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F \u043F\u043E\
+    \u043B\u043D\u043E\u0441\u0442\u044C\u044E \u0430\u0432\u0442\u043E\u043C\u0430\
+    \u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0439 \u0447\
+    \u0430\u0441\u0442\u0438 \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\u0441\
+    \u043A\u043E\u0439 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0438 \u2014\
+    \ \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0438 \u0440\u043E\u0431\u043E\
+    \u0442\u043E\u0432."
+  sp: POLKADOT
   tr: "Art\u0131k, insanl\u0131\u011F\u0131n insan ekonomisinin tam otomatik bir par\xE7\
     as\u0131n\u0131 - robot ekonomisini - yaratma olas\u0131l\u0131\u011F\u0131n\u0131\
     \ a\xE7an robotlar aras\u0131nda mesaj al\u0131\u015Fveri\u015Fi yapmak i\xE7\
@@ -10563,6 +11575,18 @@
     \ di "
   pt: "Uma das grandes oportunidades para construir a economia dos rob\xF4s \xE9 a\
     \ tecnologia da"
+  ru: "\u041E\u0434\u043D\u0430 \u0438\u0437 \u043F\u0440\u0435\u043A\u0440\u0430\u0441\
+    \u043D\u044B\u0445 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\
+    \u0435\u0439 \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u044D\u043A\
+    \u043E\u043D\u043E\u043C\u0438\u043A\u0443 \u0440\u043E\u0431\u043E\u0442\u043E\
+    \u0432 \u2014 \u044D\u0442\u043E"
+  sp: "La principal dificultad que enfrenta Robonomics hoy en d\xEDa es el alto precio\
+    \ por lanzar un dispositivo IoT usando Ethereum. En Ethereum, debe pagar una comisi\xF3\
+    n por cada transacci\xF3n en t\xE9rminos de d\xF3lares estadounidenses en el rango\
+    \ de $ 10 a $ 100. Es bastante caro para la mayor\xEDa de los casos de la econom\xED\
+    a real, ya sea un viaje para compartir un autom\xF3vil, alquilar un apartamento\
+    \ inteligente, entrega de drones o imprimir en 3D a pedido su h\xE9roe de anime\
+    \ favorito."
   tr: "Robotlar\u0131n ekonomisini in\u015Fa etmek i\xE7in en b\xFCy\xFCk f\u0131\
     rsatlardan biri"
 - alias: Ethereum
@@ -10571,6 +11595,8 @@
   fr: "QUESTIONS OUVERTES DE T\xC9L\xC9OLOGIE"
   it: Ethereum
   pt: Ethereum
+  ru: Ethereum
+  sp: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
   tr: Ethereum
 - alias: Ethereum
   az: Ethereum
@@ -10578,6 +11604,8 @@
   fr: "QUESTIONS OUVERTES DE T\xC9L\xC9OLOGIE"
   it: Ethereum
   pt: Ethereum
+  ru: Ethereum
+  sp: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
   tr: Ethereum
 - alias: Ethereum
   az: Ethereum
@@ -10585,6 +11613,8 @@
   fr: "QUESTIONS OUVERTES DE T\xC9L\xC9OLOGIE"
   it: Ethereum
   pt: Ethereum
+  ru: Ethereum
+  sp: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
   tr: Ethereum
 - alias: Ethereum
   az: Ethereum
@@ -10592,6 +11622,8 @@
   fr: "QUESTIONS OUVERTES DE T\xC9L\xC9OLOGIE"
   it: Ethereum
   pt: Ethereum
+  ru: Ethereum
+  sp: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
   tr: Ethereum
 - alias: technology. With Ethereum functionality robots are able not only exchange
     money, but to enter into contracts with humans and among themselves.
@@ -10610,6 +11642,21 @@
     \ ma di stipulare contratti fra loro e gli esseri umani."
   pt: "Com a funcionalidades da Ethereum, os rob\xF4s s\xE3o capazes n\xE3o apenas\
     \ de trocar dinheiro, mas de firmar contratos com humanos e entre si."
+  ru: "\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438. \u0411\u043B\u0430\
+    \u0433\u043E\u0434\u0430\u0440\u044F \u0444\u0443\u043D\u043A\u0446\u0438\u043E\
+    \u043D\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438 Ethereum \u0440\u043E\u0431\
+    \u043E\u0442\u044B \u043C\u043E\u0433\u0443\u0442 \u043D\u0435 \u0442\u043E\u043B\
+    \u044C\u043A\u043E \u043E\u0431\u043C\u0435\u043D\u0438\u0432\u0430\u0442\u044C\
+    \ \u0434\u0435\u043D\u044C\u0433\u0438, \u043D\u043E \u0438 \u0437\u0430\u043A\
+    \u043B\u044E\u0447\u0430\u0442\u044C \u043A\u043E\u043D\u0442\u0440\u0430\u043A\
+    \u0442\u044B \u0441 \u043B\u044E\u0434\u044C\u043C\u0438 \u0438 \u043C\u0435\u0436\
+    \u0434\u0443 \u0441\u043E\u0431\u043E\u0439."
+  sp: "En busca de una oportunidad para reducir el costo de interactuar con un dispositivo\
+    \ IoT, los desarrolladores de Robonomics han estudiado desarrollos alternativos\
+    \ a Ethereum. Nuestra elecci\xF3n se bas\xF3 en la arquitectura Polkadot , que\
+    \ nos permitir\xEDa ejecutar nuestra propia blockchain, dentro de una red com\xFA\
+    n, en la que la seguridad est\xE1 garantizada por validadores independientes de\
+    \ nuestro proyecto."
   tr: "teknolojisidir. Ethereum i\u015Flevselli\u011Fi ile robotlar sadece para al\u0131\
     \u015Fveri\u015Fi yapmakla kalmaz, ayn\u0131 zamanda insanlarla ve kendi aralar\u0131\
     nda s\xF6zle\u015Fmeler yapabilirler."
@@ -10651,6 +11698,36 @@
     \ de um sistema regulado. Mas se queremos que os servi\xE7os de cidades inteligentes\
     \ estejam vivos (ou at\xE9 mesmo casas inteligentes em alguns casos), precisamos\
     \ estabelecer comunica\xE7\xE3o com v\xE1rios elementos de terceiros."
+  ru: "\u041D\u043E \u0432 \u0447\u0435\u043C \u0441\u043C\u044B\u0441\u043B \u0432\
+    \u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F\
+    \ \u043C\u0435\u0436\u0434\u0443 \u043C\u0430\u0448\u0438\u043D\u0430\u043C\u0438\
+    \ (m2m) \u043D\u0430 \u043E\u0441\u043D\u043E\u0432\u0435 \u043A\u043E\u043D\u0442\
+    \u0440\u0430\u043A\u0442\u043E\u0432? \u042D\u0442\u043E \u043E\u0442\u043B\u0438\
+    \u0447\u043D\u044B\u0439 \u0432\u043E\u043F\u0440\u043E\u0441! \u0412\u0435\u0440\
+    \u043D\u0435\u043C\u0441\u044F \u043A \u041A\u0424\u0421. \u041A\u043E\u0433\u0434\
+    \u0430 \u043C\u044B \u0433\u043E\u0432\u043E\u0440\u0438\u043C \u043E \u043F\u0440\
+    \u044F\u043C\u043E\u0439 \u0441\u0432\u044F\u0437\u0438 \u043C\u0435\u0436\u0434\
+    \u0443 \u0434\u0430\u0442\u0447\u0438\u043A\u0430\u043C\u0438, \u043C\u0430\u0448\
+    \u0438\u043D\u043D\u044B\u043C \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\
+    \u0430\u043D\u0438\u0435\u043C \u0438\u043B\u0438 \u043B\u044E\u0431\u044B\u043C\
+    \u0438 \u0434\u0440\u0443\u0433\u0438\u043C\u0438 \u044D\u043B\u0435\u043C\u0435\
+    \u043D\u0442\u0430\u043C\u0438, \u043C\u044B \u0432\u0441\u0435 \u0440\u0430\u0432\
+    \u043D\u043E \u0433\u043E\u0432\u043E\u0440\u0438\u043C \u043E \u0441\u043E\u0442\
+    \u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0435 \u0432 \u0440\
+    \u0430\u043C\u043A\u0430\u0445 \u043E\u0434\u043D\u043E\u0439 \u0440\u0435\u0433\
+    \u0443\u043B\u0438\u0440\u0443\u0435\u043C\u043E\u0439 \u0441\u0438\u0441\u0442\
+    \u0435\u043C\u044B. \u041D\u043E \u0435\u0441\u043B\u0438 \u043C\u044B \u0445\u043E\
+    \u0442\u0438\u043C, \u0447\u0442\u043E\u0431\u044B \u0441\u0435\u0440\u0432\u0438\
+    \u0441\u044B \u0443\u043C\u043D\u043E\u0433\u043E \u0433\u043E\u0440\u043E\u0434\
+    \u0430 (\u0430 \u0432 \u043D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0441\
+    \u043B\u0443\u0447\u0430\u044F\u0445 \u0434\u0430\u0436\u0435 \u0443\u043C\u043D\
+    \u043E\u0433\u043E \u0434\u043E\u043C\u0430) \u0440\u0430\u0431\u043E\u0442\u0430\
+    \u043B\u0438, \u043D\u0430\u043C \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\
+    \u043C\u043E \u043D\u0430\u043B\u0430\u0434\u0438\u0442\u044C \u0441\u0432\u044F\
+    \u0437\u044C \u0441 \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u043C\u0438\
+    \ \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u043C\u0438 \u044D\u043B\u0435\
+    \u043C\u0435\u043D\u0442\u0430\u043C\u0438."
+  sp: Polkadot
   tr: "Ancak makineden makineye (m2m) s\xF6zle\u015Fmeye dayal\u0131 ileti\u015Fimin\
     \ anlam\u0131 nedir? Bu harika bir soru! CPS'ye geri d\xF6nelim. Sens\xF6rler,\
     \ makine ekipman\u0131 veya di\u011Fer unsurlar aras\u0131ndaki do\u011Frudan\
@@ -10682,6 +11759,26 @@
     \ \xE9 propriedade da DHL, como ela pode acessar os armaz\xE9ns da Amazon ou acessar\
     \ todo o espa\xE7o a\xE9reo da cidade? Ser\xE1 um monop\xF3lio? Este \xE9 um grande\
     \ desafio para muitas iniciativas da 4\xAA revolu\xE7\xE3o industrial!"
+  ru: "\u041F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u043C \u0441\u0435\u0431\
+    \u0435 \u0441\u043B\u0443\u0436\u0431\u0443 \u0434\u043E\u0441\u0442\u0430\u0432\
+    \u043A\u0438 \u0434\u0440\u043E\u043D\u0430\u043C\u0438. \u0415\u0441\u043B\u0438\
+    \ \u0434\u0440\u043E\u043D, \u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440,\
+    \ \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0441\u043E\u0431\u0441\u0442\
+    \u0432\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E DHL, \u043A\u0430\u043A\
+    \ \u043E\u043D \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043B\u0443\u0447\u0438\
+    \u0442\u044C \u0434\u043E\u0441\u0442\u0443\u043F \u043A \u0441\u043A\u043B\u0430\
+    \u0434\u0430\u043C Amazon \u0438\u043B\u0438 \u0434\u043E\u0441\u0442\u0443\u043F\
+    \ \u043A\u043E \u0432\u0441\u0435\u043C\u0443 \u0432\u043E\u0437\u0434\u0443\u0448\
+    \u043D\u043E\u043C\u0443 \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\
+    \u0442\u0432\u0443 \u0433\u043E\u0440\u043E\u0434\u0430? \u0411\u0443\u0434\u0435\
+    \u0442 \u043B\u0438 \u044D\u0442\u043E \u043C\u043E\u043D\u043E\u043F\u043E\u043B\
+    \u0438\u0435\u0439? \u042D\u0442\u043E \u0441\u0435\u0440\u044C\u0435\u0437\u043D\
+    \u044B\u0439 \u0432\u044B\u0437\u043E\u0432 \u0434\u043B\u044F \u043C\u043D\u043E\
+    \u0433\u0438\u0445 \u0438\u043D\u0438\u0446\u0438\u0430\u0442\u0438\u0432 \u0447\
+    \u0435\u0442\u0432\u0435\u0440\u0442\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\
+    \u0448\u043B\u0435\u043D\u043D\u043E\u0439 \u0440\u0435\u0432\u043E\u043B\u044E\
+    \u0446\u0438\u0438!"
+  sp: Ethereum
   tr: "Drone teslimat hizmetini d\xFC\u015F\xFCnelim. \xD6rne\u011Fin bir drone, DHL'in\
     \ m\xFClk\xFCyse, Amazon'un depolar\u0131na nas\u0131l eri\u015Febilir veya \u015F\
     ehrin t\xFCm hava sahas\u0131na nas\u0131l eri\u015Febilir? Tekel mi olacak? Bu,\
@@ -10734,6 +11831,47 @@
     \ porta a porta de mercadorias compradas no site da Amazon, e o correio poder\xE1\
     \ dirigir um carro pelas estradas da cidade, receber um pedido no armaz\xE9m e\
     \ traz\xEA-lo para voc\xEA."
+  ru: "\u0411\u043E\u043B\u044C\u0448\u0438\u043D\u0441\u0442\u0432\u043E \u043A\u043E\
+    \u0440\u043F\u043E\u0440\u0430\u0446\u0438\u0439 \u0433\u043E\u0432\u043E\u0440\
+    \u044F\u0442, \u0447\u0442\u043E \u0438\u043C \u043D\u0443\u0436\u043D\u044B \u043F\
+    \u043E\u0447\u0442\u0438 \u043F\u043E\u043B\u043D\u044B\u0435 \u043F\u0440\u0430\
+    \u0432\u0430 \u043D\u0430 \u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0443\
+    \u044E \u0438\u0445 \u0442\u0435\u0440\u0440\u0438\u0442\u043E\u0440\u0438\u044E\
+    , \u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E \u043E\u043D\u0438 \u043D\
+    \u0435 \u0437\u043D\u0430\u044E\u0442, \u043A\u0430\u043A \u0431\u0435\u0437\u043E\
+    \u043F\u0430\u0441\u043D\u043E \u043D\u0430\u0441\u0442\u0440\u043E\u0438\u0442\
+    \u044C \u043E\u0431\u043C\u0435\u043D \u0442\u0435\u0445\u043D\u0438\u0447\u0435\
+    \u0441\u043A\u043E\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\
+    \u0435\u0439 \u043C\u0435\u0436\u0434\u0443 \u0430\u0432\u0442\u043E\u043C\u0430\
+    \u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C\u0438\
+    \ \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438 \u0437\u0430 \u043F\u0440\
+    \u0435\u0434\u0435\u043B\u0430\u043C\u0438 \u0438\u0445 \u0441\u043E\u0431\u0441\
+    \u0442\u0432\u0435\u043D\u043D\u043E\u0439 \u0432\u043D\u0443\u0442\u0440\u0435\
+    \u043D\u043D\u0435\u0439 \u043A\u043E\u0440\u043F\u043E\u0440\u0430\u0442\u0438\
+    \u0432\u043D\u043E\u0439 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B\
+    . \u0412 \u0442\u043E \u0436\u0435 \u0432\u0440\u0435\u043C\u044F, \u0435\u0441\
+    \u043B\u0438 \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u043D\
+    \u0430 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u044B, \u0433\u0434\u0435 \u0440\
+    \u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0447\u0435\u043B\u043E\u0432\u0435\
+    \u043A, \u0442\u043E \u043C\u044B \u0432\u0438\u0434\u0438\u043C, \u0447\u0442\
+    \u043E \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\
+    \u0432\u043E \u0440\u0430\u0437\u043D\u044B\u0445 \u043A\u043E\u0440\u043F\u043E\
+    \u0440\u0430\u0446\u0438\u0439 \u0434\u0430\u0432\u043D\u043E \u0438 \u0443\u0441\
+    \u043F\u0435\u0448\u043D\u043E \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\
+    \u0435\u0442. \u0412\u044B \u043B\u0435\u0433\u043A\u043E \u043C\u043E\u0436\u0435\
+    \u0442\u0435 \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0434\u043E\u0441\
+    \u0442\u0430\u0432\u043A\u0443 \u043A\u0443\u043F\u043B\u0435\u043D\u043D\u044B\
+    \u0445 \u0442\u043E\u0432\u0430\u0440\u043E\u0432 \xAB\u043E\u0442 \u0434\u0432\
+    \u0435\u0440\u0438 \u0434\u043E \u0434\u0432\u0435\u0440\u0438\xBB \u043D\u0430\
+    \ \u0441\u0430\u0439\u0442\u0435 Amazon, \u0430 \u043A\u0443\u0440\u044C\u0435\
+    \u0440 \u0441\u043C\u043E\u0436\u0435\u0442 \u043F\u0440\u043E\u0435\u0445\u0430\
+    \u0442\u044C \u043D\u0430 \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\
+    \u0435 \u043F\u043E \u0434\u043E\u0440\u043E\u0433\u0430\u043C \u0433\u043E\u0440\
+    \u043E\u0434\u0430, \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0437\u0430\
+    \u043A\u0430\u0437 \u043D\u0430 \u0441\u043A\u043B\u0430\u0434\u0435 \u0438 \u043F\
+    \u0440\u0438\u0432\u0435\u0437\u0442\u0438 \u0435\u0433\u043E \u043A \u0432\u0430\
+    \u043C."
+  sp: "Libertad de elecci\xF3n"
   tr: "\xC7o\u011Fu \u015Firket, kendi kurumsal yap\u0131lar\u0131n\u0131n d\u0131\
     \u015F\u0131nda otomatik sistemler aras\u0131nda teknik bilgi al\u0131\u015Fveri\u015F\
     ini g\xFCvenli bir \u015Fekilde nas\u0131l kuracaklar\u0131n\u0131 bilmediklerinden,\
@@ -10762,6 +11900,18 @@
   pt: "Qual \xE9 a diferen\xE7a? No primeiro caso n\xE3o h\xE1 como construir uma\
     \ rela\xE7\xE3o contratual entre m\xE1quinas, e no segundo caso, no mundo das\
     \ pessoas, j\xE1 existem rela\xE7\xF5es contratuais."
+  ru: "\u041A\u0430\u043A\u0430\u044F \u0440\u0430\u0437\u043D\u0438\u0446\u0430?\
+    \ \u0412 \u043F\u0435\u0440\u0432\u043E\u043C \u0441\u043B\u0443\u0447\u0430\u0435\
+    \ \u043D\u0435\u0442 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\
+    \u0438 \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0434\u043E\u0433\
+    \u043E\u0432\u043E\u0440\u043D\u044B\u0435 \u043E\u0442\u043D\u043E\u0448\u0435\
+    \u043D\u0438\u044F \u043C\u0435\u0436\u0434\u0443 \u043C\u0430\u0448\u0438\u043D\
+    \u0430\u043C\u0438, \u0430 \u0432\u043E \u0432\u0442\u043E\u0440\u043E\u043C \u0441\
+    \u043B\u0443\u0447\u0430\u0435 \u0432 \u043C\u0438\u0440\u0435 \u043B\u044E\u0434\
+    \u0435\u0439 \u0434\u043E\u0433\u043E\u0432\u043E\u0440\u043D\u044B\u0435 \u043E\
+    \u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044F \u0443\u0436\u0435 \u0441\u0443\
+    \u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0442."
+  sp: "Red blockchain heterog\xE9nea"
   tr: "Fark ne? \u0130lk durumda, makineler aras\u0131nda s\xF6zle\u015Fmeye dayal\u0131\
     \ bir ili\u015Fki kurman\u0131n bir yolu yoktur ve ikinci durumda, insanlar\u0131\
     n d\xFCnyas\u0131nda s\xF6zle\u015Fmeye dayal\u0131 ili\u015Fkiler zaten mevcuttur."
@@ -10771,6 +11921,8 @@
   fr: "R\xE9seau Tesson homog\xE8ne"
   it: PARACHAIN DI
   pt: 'PARACHAINS DA '
+  ru: "\u041F\u0430\u0440\u0430\u0447\u0435\u0439\u043D\u044B"
+  sp: "Red fragmentada homog\xE9nea"
   tr: "M\xDCZAYEDELER"
 - alias: POLKADOT
   az: POLKADOT
@@ -10778,6 +11930,8 @@
   fr: "vente aux ench\xE8res \xE0 sous "
   it: POLKADOT
   pt: POLKADOT
+  ru: Polkadot
+  sp: Subasta de ranura
   tr: POLKADOT
 - alias: The main difficulty that Robonomics faces today is the high price for launching
     an IoT device using Ethereum. In Ethereum you have to pay a commission on each
@@ -10816,6 +11970,33 @@
     \ dos casos da economia real, seja uma viagem de compartilhamento de carro, aluguel\
     \ de um apartamento inteligente, entrega por drones ou ordenar a impress\xE3o\
     \ em 3D de seu her\xF3i anime favorito."
+  ru: "\u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u0442\u0440\u0443\u0434\u043D\
+    \u043E\u0441\u0442\u044C, \u0441 \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u0441\
+    \u0435\u0433\u043E\u0434\u043D\u044F \u0441\u0442\u0430\u043B\u043A\u0438\u0432\
+    \u0430\u0435\u0442\u0441\u044F \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\
+    \u043A\u0430, \u2014 \u044D\u0442\u043E \u0432\u044B\u0441\u043E\u043A\u0430\u044F\
+    \ \u0446\u0435\u043D\u0430 \u0437\u0430 \u0437\u0430\u043F\u0443\u0441\u043A IoT-\u0443\
+    \u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430 \u0441 \u0438\u0441\u043F\
+    \u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C Ethereum. \u0412\
+    \ Ethereum \u0432\u044B \u0434\u043E\u043B\u0436\u043D\u044B \u043F\u043B\u0430\
+    \u0442\u0438\u0442\u044C \u043A\u043E\u043C\u0438\u0441\u0441\u0438\u044E \u0437\
+    \u0430 \u043A\u0430\u0436\u0434\u0443\u044E \u0442\u0440\u0430\u043D\u0437\u0430\
+    \u043A\u0446\u0438\u044E \u0432 \u0434\u043E\u043B\u043B\u0430\u0440\u0430\u0445\
+    \ \u0421\u0428\u0410 \u0432 \u0434\u0438\u0430\u043F\u0430\u0437\u043E\u043D\u0435\
+    \ \u043E\u0442 10 \u0434\u043E 100 \u0434\u043E\u043B\u043B\u0430\u0440\u043E\u0432\
+    . \u042D\u0442\u043E \u0434\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E\
+    \ \u0434\u043E\u0440\u043E\u0433\u043E \u0434\u043B\u044F \u0431\u043E\u043B\u044C\
+    \u0448\u0438\u043D\u0441\u0442\u0432\u0430 \u0441\u043B\u0443\u0447\u0430\u0435\
+    \u0432 \u0438\u0437 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u0439 \u044D\u043A\
+    \u043E\u043D\u043E\u043C\u0438\u043A\u0438, \u0431\u0443\u0434\u044C \u0442\u043E\
+    \ \u043F\u043E\u0435\u0437\u0434\u043A\u0430 \u043D\u0430 \u043A\u0430\u0440\u0448\
+    \u0435\u0440\u0438\u043D\u0433\u0435, \u0430\u0440\u0435\u043D\u0434\u0430 \u0448\
+    \u0438\u043A\u0430\u0440\u043D\u043E\u0439 \u043A\u0432\u0430\u0440\u0442\u0438\
+    \u0440\u044B, \u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0430 \u0434\u0440\u043E\
+    \u043D\u0430\u043C\u0438 \u0438\u043B\u0438 3D-\u043F\u0435\u0447\u0430\u0442\u044C\
+    \ \u043B\u044E\u0431\u0438\u043C\u043E\u0433\u043E \u0430\u043D\u0438\u043C\u0435\
+    -\u0433\u0435\u0440\u043E\u044F \u043D\u0430 \u0437\u0430\u043A\u0430\u0437."
+  sp: Control de protocolo en cadena
   tr: "Bug\xFCn Robonomics'in kar\u015F\u0131la\u015Ft\u0131\u011F\u0131 ana zorluk,\
     \ Ethereum kullanarak bir IoT cihaz\u0131 ba\u015Flatman\u0131n y\xFCksek fiyat\u0131\
     d\u0131r. Ethereum'da, her i\u015Flem i\xE7in ABD dolar\u0131 cinsinden 10 ila\
@@ -10860,6 +12041,31 @@
     \ assim, para a aplica\xE7\xE3o em massa das tecnologias web3 no campo da IoT,\
     \ \xE9 necess\xE1ria uma redu\xE7\xE3o no pre\xE7o que a nuvem cobra do dispositivo\
     \ conectado."
+  ru: "\u0421\u043F\u0440\u0430\u0432\u0435\u0434\u043B\u0438\u0432\u043E\u0441\u0442\
+    \u0438 \u0440\u0430\u0434\u0438 \u043E\u0442\u043C\u0435\u0442\u0438\u043C, \u0447\
+    \u0442\u043E \u0435\u0441\u0442\u044C \u043F\u0440\u0438\u0431\u044B\u043B\u044C\
+    \u043D\u044B\u0435 \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0438 \u0434\u0430\
+    \u0436\u0435 \u0441 \u043A\u043E\u043C\u0438\u0441\u0441\u0438\u0435\u0439 \u0437\
+    \u0430 \u0442\u0440\u0430\u043D\u0437\u0430\u043A\u0446\u0438\u0438 \u0432 \u0441\
+    \u0435\u0442\u0438 Ethereum 2018 \u2013 2019 \u0433\u043E\u0434\u043E\u0432. \u041D\
+    \u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u0430\u0432\u0442\u043E\u043C\u0430\
+    \u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u0442\
+    \u0440\u0430\u043D\u0437\u0430\u043A\u0446\u0438\u0438 \u043A\u043E\u043C\u043F\
+    \u0435\u043D\u0441\u0430\u0446\u0438\u0438 \u0443\u0433\u043B\u0435\u0440\u043E\
+    \u0434\u043D\u043E\u0433\u043E \u0441\u043B\u0435\u0434\u0430 \u0438\u043B\u0438\
+    \ \u043F\u0435\u0440\u0435\u0434\u0430\u0447\u0430 \u0437\u0430\u043A\u0430\u0437\
+    \u0430 \u0441 \u0441\u0430\u0439\u0442\u0430 \u043D\u0430\u043F\u0440\u044F\u043C\
+    \u0443\u044E \u0432 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\
+    \u0432\u043E. \u041D\u043E \u0432\u0441\u0435 \u0436\u0435 \u0434\u043B\u044F\
+    \ \u043C\u0430\u0441\u0441\u043E\u0432\u043E\u0433\u043E \u043F\u0440\u0438\u043C\
+    \u0435\u043D\u0435\u043D\u0438\u044F \u0442\u0435\u0445\u043D\u043E\u043B\u043E\
+    \u0433\u0438\u0439 web3 \u0432 \u0441\u0444\u0435\u0440\u0435 IoT \u0442\u0440\
+    \u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0441\u043D\u0438\u0436\u0435\u043D\
+    \u0438\u0435 \u0446\u0435\u043D\u044B, \u043A\u043E\u0442\u043E\u0440\u0443\u044E\
+    \ \u043E\u0431\u043B\u0430\u043A\u043E \u0432\u0437\u0438\u043C\u0430\u0435\u0442\
+    \ \u0441 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u043D\u043E\u0433\
+    \u043E \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430."
+  sp: "Protecci\xF3n contra la tiran\xEDa de la multitud."
   tr: "D\xFCr\xFCst olmak gerekirse, 2018 - 2019 Ethereum a\u011F\u0131nda i\u015F\
     lem \xFCcretleriyle bile karl\u0131 senaryolar oldu\u011Funu belirtmek isteriz.\
     \ \xD6rne\u011Fin, otomatik karbon ayak izi ofset i\u015Flemleri veya sipari\u015F\
@@ -10887,6 +12093,18 @@
   pt: "Procurando uma oportunidade para reduzir o custo de intera\xE7\xE3o com um\
     \ dispositivo IoT, os desenvolvedores da Robonomics estudaram desenvolvimentos\
     \ alternativos ao Ethereum. Nossa escolha se baseou na arquitetura da"
+  ru: "\u0412 \u043F\u043E\u0438\u0441\u043A\u0430\u0445 \u0432\u043E\u0437\u043C\u043E\
+    \u0436\u043D\u043E\u0441\u0442\u0438 \u0441\u043D\u0438\u0437\u0438\u0442\u044C\
+    \ \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0432\u0437\u0430\u0438\
+    \u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u0441 IoT-\u0443\
+    \u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E\u043C \u0440\u0430\u0437\
+    \u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0438 \u0420\u043E\u0431\u043E\
+    \u043D\u043E\u043C\u0438\u043A\u0438 \u0438\u0437\u0443\u0447\u0438\u043B\u0438\
+    \ \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u043D\u044B\
+    \u0435 Ethereum \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438.\
+    \ \u041D\u0430\u0448 \u0432\u044B\u0431\u043E\u0440 \u043E\u0441\u0442\u0430\u043D\
+    \u043E\u0432\u0438\u043B\u0441\u044F \u043D\u0430"
+  sp: "Subasta de ancho de banda en la red com\xFAn"
   tr: "Bir IoT cihaz\u0131yla etkile\u015Fim maliyetini azaltmak i\xE7in bir f\u0131\
     rsat arayan Robonomics geli\u015Ftiricileri, Ethereum'a alternatif geli\u015F\
     tirmeler \xFCzerinde \xE7al\u0131\u015Ft\u0131. Se\xE7imimiz, g\xFCvenli\u011F\
@@ -10905,6 +12123,19 @@
   pt: ", que nos permitiria rodar nossa pr\xF3pria blockchain, dentro de uma rede\
     \ comum, na qual a seguran\xE7a \xE9 garantida por validadores independentes do\
     \ nosso projeto."
+  ru: "\u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435, \u043A\u043E\
+    \u0442\u043E\u0440\u0430\u044F \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u043B\
+    \u0430 \u0431\u044B \u043D\u0430\u043C \u0437\u0430\u043F\u0443\u0441\u0442\u0438\
+    \u0442\u044C \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439\
+    \ \u0431\u043B\u043E\u043A\u0447\u0435\u0439\u043D \u0432 \u043E\u0431\u0449\u0435\
+    \u0439 \u0441\u0435\u0442\u0438, \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u0439\
+    \ \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C \u043E\
+    \u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044F\
+    \ \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u044B\u043C\u0438 \u043E\
+    \u0442 \u043D\u0430\u0448\u0435\u0433\u043E \u043F\u0440\u043E\u0435\u043A\u0442\
+    \u0430 \u0432\u0430\u043B\u0438\u0434\u0430\u0442\u043E\u0440\u0430\u043C\u0438\
+    ."
+  sp: Pago de gas por parte de los usuarios.
   tr: mimarisine karar verdi.
 - alias: Polkadot
   az: Polkadot
@@ -10912,6 +12143,8 @@
   fr: Avez-vous lu ceci?
   it: Polkadot
   pt: Polkadot
+  ru: Polkadot
+  sp: "\xBFHas le\xEDdo esto?"
   tr: Polkadot
 - alias: Freedom of choice
   az: "Se\xE7im azadl\u0131\u011F\u0131"
@@ -10919,6 +12152,8 @@
   fr: "Inspir\xE9 par Norbert Wiener"
   it: Freedom of choice
   pt: Liberdade de escolha
+  ru: "\u0421\u0432\u043E\u0431\u043E\u0434\u0430 \u0432\u044B\u0431\u043E\u0440\u0430"
+  sp: Inspirado por Norbert Wiener
   tr: "Se\xE7me \xF6zg\xFCrl\xFC\u011F\xFC"
 - alias: Heterogeneous Blockchain Network
   az: "Heterojen Blok\xE7eyn \u015E\u0259b\u0259k\u0259si"
@@ -10941,6 +12176,22 @@
     \ de r\xE9f\xE9rence."
   it: Reti Blockchain Eterogenee
   pt: "Rede Blockchain Heterog\xEAnea"
+  ru: "\u0421\u0435\u0442\u044C \u0433\u0435\u0442\u0435\u0440\u043E\u0433\u0435\u043D\
+    \u043D\u044B\u0445 \u0431\u043B\u043E\u043A\u0447\u0435\u043D\u043E\u0432"
+  sp: "Una pregunta extremadamente popular que a\xFAn permanece abierta: el prop\xF3\
+    sito de los robots cuando brindan servicios a las personas. Esta es una pregunta\
+    \ espec\xEDfica pero acad\xE9micamente importante. El hecho es que la econom\xED\
+    a humana a menudo incluye factores relacionados con el desempe\xF1o de buena fe\
+    \ de las tareas en un contrato, el deseo de las partes de lograr un resultado\
+    \ y el comportamiento oportunista y altruista del individuo en la sociedad. Es\
+    \ dif\xEDcil hablar de estos temas en la rob\xF3tica hoy en d\xEDa, por lo que\
+    \ a los desarrolladores de Robonomics les gustar\xEDa dejar los temas teleol\xF3\
+    gicos abiertos para un estudio m\xE1s profundo y centrar su atenci\xF3n en la\
+    \ parte praxeol\xF3gica del comportamiento de los robots como agentes econ\xF3\
+    micos. Con respecto al establecimiento de objetivos, un art\xEDculo anterior de\
+    \ Norbert Wiener y sus colegas \"Behavior, Purpose and Teleology\", as\xED como\
+    \ el trabajo del economista y fil\xF3sofo estadounidense Ludwig von Mises sobre\
+    \ la actividad humana pueden ser considerados como puntos de referencia."
   tr: "Heterojen Blockchain A\u011F\u0131"
 - alias: Homogeneous Shard Network
   az: "Homojen \u015Eard \u015E\u0259b\u0259k\u0259si"
@@ -10955,6 +12206,16 @@
     \ ne pas plonger dans les questions de t\xE9l\xE9ologie des machines."
   it: Reti Shard Omogenee
   pt: "Rede de Shards Homog\xEAneos"
+  ru: "\u0421\u0435\u0442\u044C \u043E\u0434\u043D\u043E\u0440\u043E\u0434\u043D\u044B\
+    \u0445 \u0448\u0430\u0440\u0434"
+  sp: "Mises, en su libro \xABHuman Action: A Treatise of Economics\xBB, mira al ser\
+    \ humano en la econom\xEDa desde una perspectiva praxeol\xF3gica. La praxeolog\xED\
+    a nos brinda una visi\xF3n interesante del comportamiento humano sin una correlaci\xF3\
+    n directa con el objetivo final. Al continuar estudiando los fen\xF3menos de la\
+    \ econom\xEDa humana desde la perspectiva de los procesos mismos, separados de\
+    \ los objetivos finales, podemos entender m\xE1s sobre el marco que se puede formar\
+    \ para una econom\xEDa de robots, para no profundizar en cuestiones de teleolog\xED\
+    a de la m\xE1quina."
   tr: "Homojen Par\xE7a A\u011F\u0131"
 - alias: Slots Auction
   az: Slot auksionu
@@ -10965,6 +12226,11 @@
     \ et voyez ce que nous pouvons vous offrir pour une r\xE9flexion plus approfondie."
   it: Aste per gli Slot
   pt: "Leil\xE3o de slots"
+  ru: "\u0410\u0443\u043A\u0446\u0438\u043E\u043D \u0441\u043B\u043E\u0442\u043E\u0432"
+  sp: "Los grandes libros conducen a grandes ideas. Si busca m\xE1s inspiraci\xF3\
+    n sobre la comunicaci\xF3n hombre-m\xE1quina, intente leer libros de ciencia ficci\xF3\
+    n. Marque los libros que ya ha le\xEDdo y vea qu\xE9 m\xE1s podemos ofrecerle\
+    \ para una mayor reflexi\xF3n."
   tr: "Slot M\xFCzayedeleri"
 - alias: On-chain protocol control
   az: "Z\u0259ncir \xFCz\u0259rind\u0259 protokol n\u0259zar\u0259ti"
@@ -10972,6 +12238,9 @@
   fr: "Les andro\xEFdes r\xEAvent-ils de moutons \xE9lectriques ?"
   it: Protocollo di controllo on-chain
   pt: Controle de protocolo on-chain
+  ru: "On-chain \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043F\
+    \u0440\u043E\u0442\u043E\u043A\u043E\u043B\u043E\u043C"
+  sp: "Los androides sue\xF1an con ovejas el\xE9ctricas?"
   tr: "Zincir-i\xE7i protokol kontrol\xFC"
 - alias: Protection against the tyranny of the crowd
   az: "K\xFCtl\u0259nin z\xFClm\xFCnd\u0259n m\xFCdafi\u0259"
@@ -10979,6 +12248,9 @@
   fr: Philip K. Dick
   it: Protezione contro la tirannia della folla
   pt: "Prote\xE7\xE3o contra a tirania da multid\xE3o"
+  ru: "\u0417\u0430\u0449\u0438\u0442\u0430 \u043E\u0442 \u0442\u0438\u0440\u0430\u043D\
+    \u0438\u0438 \u0442\u043E\u043B\u043F\u044B"
+  sp: Philip K. Dick
   tr: "Kalabal\u0131\u011F\u0131n zorbal\u0131\u011F\u0131na kar\u015F\u0131 koruma"
 - alias: Auction of bandwidth in the common network
   az: "\xDCmumi \u015F\u0259b\u0259k\u0259d\u0259 bant geni\u015Fliyi auksionu"
@@ -10986,6 +12258,10 @@
   fr: Autofac
   it: Asta di banda sulla rete comune
   pt: "Leil\xE3o de largura de banda na rede comum"
+  ru: "\u0410\u0443\u043A\u0446\u0438\u043E\u043D\u044B \u043F\u0440\u043E\u043F\u0443\
+    \u0441\u043A\u043D\u043E\u0439 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\
+    \u0441\u0442\u0438 \u0432 \u043E\u0431\u0449\u0435\u0439 \u0441\u0435\u0442\u0438"
+  sp: Autofac
   tr: "Ortak a\u011Fda bant geni\u015Fli\u011Fi a\xE7\u0131k art\u0131rmas\u0131"
 - alias: Payment for gas by users
   az: "\u0130stifad\u0259\xE7il\u0259r t\u0259r\u0259find\u0259n qaz\u0131n \xF6d\u0259\
@@ -10994,6 +12270,9 @@
   fr: Je, Robot
   it: Pagamento del gas da parte degli utenti
   pt: "Pagamento de gas pelos usu\xE1rios"
+  ru: "\u041E\u043F\u043B\u0430\u0442\u0430 \u0433\u0430\u0437\u0430 \u043F\u043E\u043B\
+    \u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F\u043C\u0438"
+  sp: Yo, Robot
   tr: "Kullan\u0131c\u0131lar taraf\u0131ndan gaz i\xE7in \xF6deme"
 - alias: Have you read this?
   az: Siz bunu oxumusunuz?
@@ -11001,6 +12280,8 @@
   fr: Isaac Asimov
   it: Hai letto questi?
   pt: "Voc\xEA leu isso?"
+  ru: "\u0423\u0436\u0435 \u0447\u0438\u0442\u0430\u043B\u0438 \u044D\u0442\u043E?"
+  sp: Isaac Asimov
   tr: Bunu okudunuz mu?
 - alias: OPEN QUESTIONS OF TELEOLOGY
   az: "TELEOLOG\u0130YANIN A\xC7IQ SUALLARI"
@@ -11008,6 +12289,9 @@
   fr: "L\u2019homme du bicentenaire"
   it: DOMANDE APERTE DELLA TELEOLOGIA
   pt: "QUEST\xD5ES ABERTAS DE TELEOLOGIA"
+  ru: "\u041E\u0442\u043A\u0440\u044B\u0442\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\
+    \u0441\u044B \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"
+  sp: El hombre bicentenario
   tr: "TELOLOJ\u0130 A\xC7IK SORULARI"
 - alias: Inspired by Norbert Wiener
   az: "Norbert Wiener-d\u0259n ilhamlan\u0131b"
@@ -11015,6 +12299,10 @@
   fr: "N\xE9cromancien"
   it: Ispirato da Norbert Wiener
   pt: Inspirado por Norbert Wiener
+  ru: "\u0412\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044B\u0435\
+    \ \u041D\u043E\u0440\u0431\u0435\u0440\u0442\u043E\u043C \u0412\u043E\u043D\u0435\
+    \u0440\u043E\u043C"
+  sp: Neuromancer
   tr: "Norbert Wiener'den ilham al\u0131nm\u0131\u015Ft\u0131r"
 - alias: "One extremely popular question that still remains open \u2014 the purposefulness\
     \ of robots when providing services to people. This is a specific but academically\
@@ -11089,6 +12377,68 @@
     \ \u201CBehavior, Purpose and Teleology\u201D, bem como o trabalho do economista\
     \ e fil\xF3sofo americano Ludwig von Mises sobre a atividade humana podem ser\
     \ considerados como pontos de refer\xEAncia."
+  ru: "\u041E\u0434\u0438\u043D \u043A\u0440\u0430\u0439\u043D\u0435 \u043F\u043E\u043F\
+    \u0443\u043B\u044F\u0440\u043D\u044B\u0439 \u0432\u043E\u043F\u0440\u043E\u0441\
+    , \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0434\u043E \u0441\u0438\u0445 \u043F\
+    \u043E\u0440 \u043E\u0441\u0442\u0430\u0435\u0442\u0441\u044F \u043E\u0442\u043A\
+    \u0440\u044B\u0442\u044B\u043C \u2014 \u0446\u0435\u043B\u0435\u0443\u0441\u0442\
+    \u0440\u0435\u043C\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u044C \u0440\u043E\
+    \u0431\u043E\u0442\u043E\u0432 \u043F\u0440\u0438 \u043E\u043A\u0430\u0437\u0430\
+    \u043D\u0438\u0438 \u0443\u0441\u043B\u0443\u0433 \u043B\u044E\u0434\u044F\u043C\
+    . \u042D\u0442\u043E \u0441\u043F\u0435\u0446\u0438\u0444\u0438\u0447\u0435\u0441\
+    \u043A\u0438\u0439, \u043D\u043E \u0430\u043A\u0430\u0434\u0435\u043C\u0438\u0447\
+    \u0435\u0441\u043A\u0438 \u0432\u0430\u0436\u043D\u044B\u0439 \u0432\u043E\u043F\
+    \u0440\u043E\u0441. \u0414\u0435\u043B\u043E \u0432 \u0442\u043E\u043C, \u0447\
+    \u0442\u043E \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0430 \u0447\u0435\
+    \u043B\u043E\u0432\u0435\u043A\u0430 \u0447\u0430\u0441\u0442\u043E \u0432\u043A\
+    \u043B\u044E\u0447\u0430\u0435\u0442 \u0432 \u0441\u0435\u0431\u044F \u0444\u0430\
+    \u043A\u0442\u043E\u0440\u044B, \u0441\u0432\u044F\u0437\u0430\u043D\u043D\u044B\
+    \u0435 \u0441 \u0434\u043E\u0431\u0440\u043E\u0441\u043E\u0432\u0435\u0441\u0442\
+    \u043D\u044B\u043C \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0435\
+    \u043C \u0437\u0430\u0434\u0430\u0447 \u043F\u043E \u0434\u043E\u0433\u043E\u0432\
+    \u043E\u0440\u0443, \u0441\u0442\u0440\u0435\u043C\u043B\u0435\u043D\u0438\u0435\
+    \u043C \u0441\u0442\u043E\u0440\u043E\u043D \u043A \u0434\u043E\u0441\u0442\u0438\
+    \u0436\u0435\u043D\u0438\u044E \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\
+    \u0442\u0430, \u043E\u043F\u043F\u043E\u0440\u0442\u0443\u043D\u0438\u0441\u0442\
+    \u0438\u0447\u0435\u0441\u043A\u0438\u043C \u0438 \u0430\u043B\u044C\u0442\u0440\
+    \u0443\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u043F\u043E\
+    \u0432\u0435\u0434\u0435\u043D\u0438\u0435\u043C \u043B\u0438\u0447\u043D\u043E\
+    \u0441\u0442\u0438 \u0432 \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0435. \u041E\
+    \ \u0442\u0430\u043A\u0438\u0445 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430\
+    \u0445 \u0432 \u0440\u043E\u0431\u043E\u0442\u043E\u0442\u0435\u0445\u043D\u0438\
+    \u043A\u0435 \u0441\u0435\u0433\u043E\u0434\u043D\u044F \u0441\u043B\u043E\u0436\
+    \u043D\u043E \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C, \u043F\u043E\u044D\
+    \u0442\u043E\u043C\u0443 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\
+    \u0438\u043A\u0438 \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0438\
+    \ \u0445\u043E\u0442\u0435\u043B\u0438 \u0431\u044B \u043E\u0441\u0442\u0430\u0432\
+    \u0438\u0442\u044C \u0442\u0435\u043B\u0435\u043E\u043B\u043E\u0433\u0438\u0447\
+    \u0435\u0441\u043A\u0438\u0435 \u0432\u043E\u043F\u0440\u043E\u0441\u044B \u043E\
+    \u0442\u043A\u0440\u044B\u0442\u044B\u043C\u0438 \u0434\u043B\u044F \u0434\u0430\
+    \u043B\u044C\u043D\u0435\u0439\u0448\u0435\u0433\u043E \u0438\u0437\u0443\u0447\
+    \u0435\u043D\u0438\u044F, \u0430 \u0441\u043E\u0441\u0440\u0435\u0434\u043E\u0442\
+    \u043E\u0447\u0438\u0442\u044C \u0441\u0432\u043E\u0435 \u0432\u043D\u0438\u043C\
+    \u0430\u043D\u0438\u0435 \u043D\u0430 \u043F\u0440\u0430\u043A\u0441\u0438\u043E\
+    \u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0447\u0430\u0441\
+    \u0442\u0438 \u043F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0440\u043E\
+    \u0431\u043E\u0442\u043E\u0432 \u043A\u0430\u043A \u044D\u043A\u043E\u043D\u043E\
+    \u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0430\u0433\u0435\u043D\u0442\
+    \u043E\u0432. \u0412 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0438 \u0446\
+    \u0435\u043B\u0435\u043F\u043E\u043B\u0430\u0433\u0430\u043D\u0438\u044F \u043E\
+    \u0440\u0438\u0435\u043D\u0442\u0438\u0440\u0430\u043C\u0438 \u043C\u043E\u0436\
+    \u043D\u043E \u0441\u0447\u0438\u0442\u0430\u0442\u044C \u0440\u0430\u043D\u043D\
+    \u044E\u044E \u0441\u0442\u0430\u0442\u044C\u044E \u041D\u043E\u0440\u0431\u0435\
+    \u0440\u0442\u0430 \u0412\u0438\u043D\u0435\u0440\u0430 \u0438 \u0435\u0433\u043E\
+    \ \u043A\u043E\u043B\u043B\u0435\u0433 \xAB\u041F\u043E\u0432\u0435\u0434\u0435\
+    \u043D\u0438\u0435, \u0446\u0435\u043B\u044C \u0438 \u0442\u0435\u043B\u0435\u043E\
+    \u043B\u043E\u0433\u0438\u044F\xBB, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0440\
+    \u0430\u0431\u043E\u0442\u0443 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\
+    \u0441\u043A\u043E\u0433\u043E \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0441\
+    \u0442\u0430 \u0438 \u0444\u0438\u043B\u043E\u0441\u043E\u0444\u0430 \u041B\u044E\
+    \u0434\u0432\u0438\u0433\u0430 \u0444\u043E\u043D \u041C\u0438\u0437\u0435\u0441\
+    \u0430 \u043E \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\u0441\u043A\u043E\
+    \u0439 \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438\
+    ."
+  sp: William Gibson
   tr: "H\xE2l\xE2 a\xE7\u0131k kalan son derece pop\xFCler bir soru - insanlara hizmet\
     \ sunarken robotlar\u0131n amac\u0131. Bu \xF6zel ama akademik a\xE7\u0131dan\
     \ \xF6nemli bir soru. Ger\xE7ek \u015Fu ki, insan ekonomisi genellikle bir s\xF6\
@@ -11110,6 +12460,9 @@
   fr: Marionettes, Inc.
   it: Mises, nel suo libro
   pt: Mises, em seu livro
+  ru: "\u041C\u0438\u0437\u0435\u0440, \u0432 \u044D\u0442\u043E\u0439 \u043A\u043D\
+    \u0438\u0433\u0435"
+  sp: Marionetas, Inc.
   tr: Mises,
 - alias: "\xABHuman Action: A Treatise of Economics\xBB"
   az: "\"\u0130nsan F\u0259aliyy\u0259ti: \u0130qtisadiyyat\u0131n risal\u0259si\""
@@ -11117,6 +12470,8 @@
   fr: Ray Bradbury
   it: "\xABL'azione umana: un trattato di economia\xBB"
   pt: "\xABHuman Action: A Treatise of Economics\xBB"
+  ru: "\xABHuman Action: A Treatise of Economics\xBB"
+  sp: Ray Bradbury
   tr: "\xABHuman Action: A Treatise of Economics\xBB"
 - alias: ', looks at the human being in economics from a praxeological perspective.
     Praxeology gives us an interesting insight into human behavior without a direct
@@ -11153,6 +12508,35 @@
     \ separados dos objetivos finais, podemos entender mais sobre a estrutura que\
     \ pode ser formada para uma economia rob\xF3tica, para n\xE3o nos aprofundarmos\
     \ em quest\xF5es de teleologia das m\xE1quinas."
+  ru: ", \u0441\u043C\u043E\u0442\u0440\u0438\u0442 \u043D\u0430 \u0447\u0435\u043B\
+    \u043E\u0432\u0435\u043A\u0430 \u0432 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\
+    \u043A\u0435 \u0441 \u043F\u0440\u0430\u043A\u0441\u0438\u043E\u043B\u043E\u0433\
+    \u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0442\u043E\u0447\u043A\u0438 \u0437\
+    \u0440\u0435\u043D\u0438\u044F. \u041F\u0440\u0430\u043A\u0441\u0438\u043E\u043B\
+    \u043E\u0433\u0438\u044F \u0434\u0430\u0435\u0442 \u043D\u0430\u043C \u0438\u043D\
+    \u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435 \u043F\u0440\u0435\u0434\u0441\
+    \u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043E \u0447\u0435\u043B\u043E\
+    \u0432\u0435\u0447\u0435\u0441\u043A\u043E\u043C \u043F\u043E\u0432\u0435\u0434\
+    \u0435\u043D\u0438\u0438 \u0431\u0435\u0437 \u043F\u0440\u044F\u043C\u043E\u0439\
+    \ \u0441\u0432\u044F\u0437\u0438 \u0441 \u043A\u043E\u043D\u0435\u0447\u043D\u043E\
+    \u0439 \u0446\u0435\u043B\u044C\u044E. \u041F\u0440\u043E\u0434\u043E\u043B\u0436\
+    \u0430\u044F \u0438\u0437\u0443\u0447\u0430\u0442\u044C \u044F\u0432\u043B\u0435\
+    \u043D\u0438\u044F \u0432 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0435\
+    \ \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430 \u0441 \u0442\u043E\u0447\u043A\
+    \u0438 \u0437\u0440\u0435\u043D\u0438\u044F \u0441\u0430\u043C\u0438\u0445 \u043F\
+    \u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0432, \u043E\u0442\u0434\u0435\u043B\
+    \u0435\u043D\u043D\u044B\u0445 \u043E\u0442 \u043A\u043E\u043D\u0435\u0447\u043D\
+    \u044B\u0445 \u0446\u0435\u043B\u0435\u0439, \u043C\u044B \u043C\u043E\u0436\u0435\
+    \u043C \u043B\u0443\u0447\u0448\u0435 \u043F\u043E\u043D\u044F\u0442\u044C \u0440\
+    \u0430\u043C\u043A\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\
+    \u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u0441\u0444\u043E\u0440\u043C\u0438\
+    \u0440\u043E\u0432\u0430\u043D\u044B \u0434\u043B\u044F \u044D\u043A\u043E\u043D\
+    \u043E\u043C\u0438\u043A\u0438 \u0440\u043E\u0431\u043E\u0442\u043E\u0432, \u0447\
+    \u0442\u043E\u0431\u044B \u043D\u0435 \u0443\u0433\u043B\u0443\u0431\u043B\u044F\
+    \u0442\u044C\u0441\u044F \u0432 \u0432\u043E\u043F\u0440\u043E\u0441\u044B \u043C\
+    \u0430\u0448\u0438\u043D\u043D\u043E\u0439 \u0442\u0435\u043B\u0435\u043E\u043B\
+    \u043E\u0433\u0438\u0438."
+  sp: "Preguntas abiertas de la teleolog\xEDa"
   tr: "adl\u0131 kitab\u0131nda, iktisatta insana praksiolojik bir perspektiften bakar.\
     \ Praxeology, nihai hedefle do\u011Frudan bir ili\u015Fkisi olmaks\u0131z\u0131\
     n, insan davran\u0131\u015F\u0131na ili\u015Fkin ilgin\xE7 bir i\xE7g\xF6r\xFC\
@@ -11180,6 +12564,26 @@
     \ inspira\xE7\xE3o sobre comunica\xE7\xE3o homem-m\xE1quina, tente ler livros\
     \ de fic\xE7\xE3o cient\xEDfica. Marque os livros que voc\xEA j\xE1 leu e veja\
     \ o que mais podemos lhe oferecer para uma reflex\xE3o mais aprofundada."
+  ru: "\u0412\u0435\u043B\u0438\u043A\u0438\u0435 \u043A\u043D\u0438\u0433\u0438 \u043F\
+    \u0440\u0438\u0432\u043E\u0434\u044F\u0442 \u043A \u0432\u0435\u043B\u0438\u043A\
+    \u0438\u043C \u0438\u0434\u0435\u044F\u043C. \u0415\u0441\u043B\u0438 \u0432\u044B\
+    \ \u0445\u043E\u0442\u0438\u0442\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\
+    \u044C \u0431\u043E\u043B\u044C\u0448\u0435 \u0432\u0434\u043E\u0445\u043D\u043E\
+    \u0432\u0435\u043D\u0438\u044F \u043D\u0430 \u0442\u0435\u043C\u0443 \u043E\u0431\
+    \u0449\u0435\u043D\u0438\u044F \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430\
+    \ \u0441 \u043C\u0430\u0448\u0438\u043D\u043E\u0439, \u043F\u043E\u043F\u0440\u043E\
+    \u0431\u0443\u0439\u0442\u0435 \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C\
+    \ \u043D\u0430\u0443\u0447\u043D\u043E-\u0444\u0430\u043D\u0442\u0430\u0441\u0442\
+    \u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u043A\u043D\u0438\u0433\u0438. \u041E\
+    \u0442\u043C\u0435\u0442\u044C\u0442\u0435 \u043A\u043D\u0438\u0433\u0438, \u043A\
+    \u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u044B \u0443\u0436\u0435 \u043F\u0440\
+    \u043E\u0447\u0438\u0442\u0430\u043B\u0438, \u0438 \u043F\u043E\u0441\u043C\u043E\
+    \u0442\u0440\u0438\u0442\u0435, \u0447\u0442\u043E \u0435\u0449\u0435 \u043C\u044B\
+    \ \u043C\u043E\u0436\u0435\u043C \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0438\
+    \u0442\u044C \u0432\u0430\u043C \u0434\u043B\u044F \u0434\u0430\u043B\u044C\u043D\
+    \u0435\u0439\u0448\u0435\u0433\u043E \u0440\u0430\u0437\u043C\u044B\u0448\u043B\
+    \u0435\u043D\u0438\u044F."
+  sp: y un tratado de L. von Mises
   tr: "Harika kitaplar harika fikirlere yol a\xE7ar. \u0130nsan-makine ileti\u015F\
     imi hakk\u0131nda daha fazla ilham almak istiyorsan\u0131z, bilim kurgu kitaplar\u0131\
     \ okumay\u0131 deneyin. Halihaz\u0131rda okudu\u011Funuz kitaplar\u0131 i\u015F\
@@ -11192,6 +12596,11 @@
     \ d\u2019un point de vue global. Quel est le but des robots?"
   it: Il Cacciatore di Androidi
   pt: "Androides Sonham Com Ovelhas El\xE9tricas?"
+  ru: "\u041C\u0435\u0442\u0447\u0430\u044E\u0442 \u043B\u0438 \u0430\u043D\u0434\u0440\
+    \u043E\u0438\u0434\u044B \u043E\u0431 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\
+    \u043E\u0432\u0446\u0430\u0445?"
+  sp: "Para concluir, nos gustar\xEDa mencionar preguntas que permanecen abiertas\
+    \ desde un punto de vista global. \xBFCu\xE1l es el objetivo de los robots?"
   tr: Do Androids Dream of Electric Sheep?
 - alias: Philip K. Dick
   az: Filip K. Dik
@@ -11206,6 +12615,14 @@
     \ et appliquer les robots."
   it: Philip K. Dick
   pt: Philip K. Dick
+  ru: "\u0424\u0438\u043B\u0438\u043F K. \u0414\u0438\u043A"
+  sp: "De hecho, la econom\xEDa de las personas a menudo se asocia con la conciencia\
+    \ de realizar tareas en el marco del contrato, el deseo de las partes de lograr\
+    \ un resultado, el comportamiento oportunista y altruista del individuo en la\
+    \ sociedad. Todos estos principios son dif\xEDciles de aplicar a la econom\xED\
+    a de los robots. \xBFCu\xE1les son los motivos de la econom\xEDa de los robots?\
+    \ Es una pregunta abierta que necesitamos investigar y discutir en la sociedad\
+    \ para una mejor comprensi\xF3n y aplicaci\xF3n de los robots."
   tr: Philip K. Dick
 - alias: Autofac
   az: Autofac
@@ -11216,6 +12633,10 @@
     \ t\xE9l\xE9ologique)."
   it: Autofac
   pt: Autofac
+  ru: "\u0410\u0443\u0442\u043E\u0444\u0430\u043A"
+  sp: "Para empezar, sugerimos mirar el trabajo de Mises \"Human Action: A Treatise\
+    \ on Economics\" (enfoque praxeol\xF3gico) y el art\xEDculo anterior de Norbert\
+    \ Wiener \"Behavior, Purpose and Teleology\" (visi\xF3n teleol\xF3gica)."
   tr: Autofac
 - alias: I, Robot
   az: "M\u0259n, Robot"
@@ -11227,6 +12648,12 @@
     me temps, la t\xE9l\xE9ologie pose un d\xE9fi pour expliquer les causes."
   it: Io, Robot
   pt: "Eu, Rob\xF4"
+  ru: "\u042F \u0440\u043E\u0431\u043E\u0442"
+  sp: "La praxeolog\xEDa nos inspira ideas interesantes sobre el comportamiento humano\
+    \ sin dependencia directa de los prop\xF3sitos. Esto nos da la oportunidad de\
+    \ trabajar en los procesos de la econom\xEDa de los robots condicionalmente como\
+    \ con una caja negra sin profundizar en los objetivos finales. Al mismo tiempo,\
+    \ la teleolog\xEDa plantea un desaf\xEDo para explicar las causas."
   tr: I, Robot
 - alias: Isaac Asimov
   az: Ayzek Azimov
@@ -11238,6 +12665,12 @@
     \ des \xE9l\xE9ments t\xE9l\xE9ologiques de la communication intersp\xE9cifique."
   it: Isaac Asimov
   pt: Isaac Asimov
+  ru: "\u0410\u0439\u0437\u0435\u043A \u0410\u0437\u0438\u043C\u043E\u0432"
+  sp: "Esperamos que en alg\xFAn lugar de la uni\xF3n de los trabajos de Mises y Wiener\
+    \ se pueda encontrar un punto para un mayor desarrollo de la econom\xEDa del robot,\
+    \ no solo como un protocolo de interacci\xF3n entre personas y m\xE1quinas de\
+    \ naturaleza praxeol\xF3gica, sino teniendo en cuenta los elementos teleol\xF3\
+    gicos de la construcci\xF3n de la comunicaci\xF3n entre especies."
   tr: Isaac Asimov
 - alias: The Bicentennial Man
   az: "\u0130ki y\xFCz ya\u015Fl\u0131 adam"
@@ -11245,6 +12678,9 @@
   fr: .nan
   it: Antologia del Bicentenario
   pt: O Homem Bicentenario
+  ru: "\u0414\u0432\u0443\u0445\u0441\u043E\u0442\u043B\u0435\u0442\u043D\u0438\u0439\
+    \ \u0447\u0435\u043B\u043E\u0432\u0435\u043A"
+  sp: .nan
   tr: The Bicentennial Man
 - alias: Neuromancer
   az: Neuromanser
@@ -11252,6 +12688,8 @@
   fr: .nan
   it: Neuromante
   pt: Neuromancer
+  ru: "\u041D\u0435\u0439\u0440\u043E\u043C\u0430\u043D\u0442"
+  sp: .nan
   tr: Neuromancer
 - alias: William Gibson
   az: Vilyam Gibson
@@ -11259,6 +12697,8 @@
   fr: .nan
   it: William Gibson
   pt: William Gibson
+  ru: "\u0423\u0438\u043B\u044C\u044F\u043C \u0413\u0438\u0431\u0441\u043E\u043D"
+  sp: .nan
   tr: William Gibson
 - alias: Marionettes, Inc.
   az: "Marionetl\u0259r, Inc."
@@ -11266,6 +12706,8 @@
   fr: .nan
   it: Marionettes, Inc.
   pt: Marionettes, Inc.
+  ru: "\u041C\u0430\u0440\u0438\u043E\u043D\u0435\u0442\u043A\u0438, Inc."
+  sp: .nan
   tr: Marionettes, Inc.
 - alias: Ray Bradbury
   az: Rey Bredberi
@@ -11273,6 +12715,8 @@
   fr: .nan
   it: Ray Bradbury
   pt: Ray Bradbury
+  ru: "\u0420\u044D\u0439 \u0411\u0440\u044D\u0434\u0431\u0435\u0440\u0438"
+  sp: .nan
   tr: Ray Bradbury
 - alias: Open questions of teleology
   az: "Teleologiyan\u0131n a\xE7\u0131q suallar\u0131"
@@ -11280,6 +12724,9 @@
   fr: .nan
   it: Domande aperte di teleologia
   pt: "Quest\xF5es abertas de teleologia"
+  ru: "\u041E\u0442\u043A\u0440\u044B\u0442\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\
+    \u0441\u044B \u0442\u0435\u043B\u0435\u043E\u043B\u043E\u0433\u0438\u0438"
+  sp: .nan
   tr: "Teleolojinin a\xE7\u0131k sorular\u0131"
 - alias: and a treatise by L. von Mises
   az: "v\u0259 L. von Mizesin traktat\u0131"
@@ -11287,6 +12734,9 @@
   fr: .nan
   it: e un trattato di L. von Mises
   pt: e um tratado de L. von Mises
+  ru: "\u0438 \u0442\u0440\u0430\u043A\u0442\u0430\u0442 \u041B. \u0444\u043E\u043D\
+    \ \u041C\u0438\u0437\u0435\u0441\u0430"
+  sp: .nan
   tr: ve L. von Mises'in bir incelemesi
 - alias: In conclusion, we would like to mention questions that remain open from a
     global point of view. What is the goal of robots?
@@ -11299,6 +12749,15 @@
     \ vista globale. Qual \xE8 l'obiettivo dei robot?"
   pt: "Para concluir, gostar\xEDamos de mencionar quest\xF5es que permanecem em aberto\
     \ de um ponto de vista global. Qual \xE9 o objetivo dos rob\xF4s?"
+  ru: "\u0412 \u0437\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u0445\u043E\
+    \u0442\u0435\u043B\u043E\u0441\u044C \u0431\u044B \u0443\u043F\u043E\u043C\u044F\
+    \u043D\u0443\u0442\u044C \u0432\u043E\u043F\u0440\u043E\u0441\u044B, \u043A\u043E\
+    \u0442\u043E\u0440\u044B\u0435 \u043E\u0441\u0442\u0430\u044E\u0442\u0441\u044F\
+    \ \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u043C\u0438 \u0441 \u0433\u043B\u043E\
+    \u0431\u0430\u043B\u044C\u043D\u043E\u0439 \u0442\u043E\u0447\u043A\u0438 \u0437\
+    \u0440\u0435\u043D\u0438\u044F. \u041A\u0430\u043A\u043E\u0432\u0430 \u0446\u0435\
+    \u043B\u044C \u0440\u043E\u0431\u043E\u0442\u043E\u0432?"
+  sp: .nan
   tr: "Sonu\xE7 olarak, k\xFCresel bir bak\u0131\u015F a\xE7\u0131s\u0131yla a\xE7\
     \u0131k kalan sorulara de\u011Finmek istiyoruz. Robotlar\u0131n amac\u0131 nedir?"
 - alias: In fact, the economy of people is often associated with the conscientiousness
@@ -11339,6 +12798,36 @@
     \ dos rob\xF4s. Quais s\xE3o os motivos da economia rob\xF3tica? \xC9 uma quest\xE3\
     o em aberto que precisamos pesquisar e discutir na sociedade para melhor compreens\xE3\
     o e aplica\xE7\xE3o dos rob\xF4s."
+  ru: "\u041D\u0430 \u0441\u0430\u043C\u043E\u043C \u0434\u0435\u043B\u0435 \u044D\
+    \u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0430 \u043B\u044E\u0434\u0435\u0439\
+    \ \u0447\u0430\u0441\u0442\u043E \u0441\u0432\u044F\u0437\u0430\u043D\u0430 \u0441\
+    \ \u0434\u043E\u0431\u0440\u043E\u0441\u043E\u0432\u0435\u0441\u0442\u043D\u043E\
+    \u0441\u0442\u044C\u044E \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\
+    \u044F \u0437\u0430\u0434\u0430\u0447 \u0432 \u0440\u0430\u043C\u043A\u0430\u0445\
+    \ \u0434\u043E\u0433\u043E\u0432\u043E\u0440\u0430, \u0441\u0442\u0440\u0435\u043C\
+    \u043B\u0435\u043D\u0438\u0435\u043C \u0441\u0442\u043E\u0440\u043E\u043D \u043A\
+    \ \u0434\u043E\u0441\u0442\u0438\u0436\u0435\u043D\u0438\u044E \u0440\u0435\u0437\
+    \u0443\u043B\u044C\u0442\u0430\u0442\u0430, \u043E\u043F\u043F\u043E\u0440\u0442\
+    \u0443\u043D\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u0438\
+    \ \u0430\u043B\u044C\u0442\u0440\u0443\u0438\u0441\u0442\u0438\u0447\u0435\u0441\
+    \u043A\u0438\u043C \u043F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u0435\u043C\
+    \ \u043B\u0438\u0447\u043D\u043E\u0441\u0442\u0438 \u0432 \u043E\u0431\u0449\u0435\
+    \u0441\u0442\u0432\u0435. \u0412\u0441\u0435 \u044D\u0442\u0438 \u043F\u0440\u0438\
+    \u043D\u0446\u0438\u043F\u044B \u0442\u0440\u0443\u0434\u043D\u043E \u043F\u0440\
+    \u0438\u043C\u0435\u043D\u0438\u0442\u044C \u043A \u044D\u043A\u043E\u043D\u043E\
+    \u043C\u0438\u043A\u0435 \u0440\u043E\u0431\u043E\u0442\u043E\u0432. \u041A\u0430\
+    \u043A\u043E\u0432\u044B \u043C\u043E\u0442\u0438\u0432\u044B \u044D\u043A\u043E\
+    \u043D\u043E\u043C\u0438\u043A\u0438 \u0440\u043E\u0431\u043E\u0442\u043E\u0432\
+    ? \u042D\u0442\u043E \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0439 \u0432\u043E\
+    \u043F\u0440\u043E\u0441, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043D\u0430\
+    \u043C \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0438\u0441\
+    \u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u044C \u0438 \u043E\u0431\u0441\
+    \u0443\u0436\u0434\u0430\u0442\u044C \u0432 \u043E\u0431\u0449\u0435\u0441\u0442\
+    \u0432\u0435 \u0434\u043B\u044F \u043B\u0443\u0447\u0448\u0435\u0433\u043E \u043F\
+    \u043E\u043D\u0438\u043C\u0430\u043D\u0438\u044F \u0438 \u043F\u0440\u0438\u043C\
+    \u0435\u043D\u0435\u043D\u0438\u044F \u0440\u043E\u0431\u043E\u0442\u043E\u0432\
+    ."
+  sp: .nan
   tr: "Asl\u0131nda, insanlar\u0131n ekonomisi genellikle s\xF6zle\u015Fme \xE7er\xE7\
     evesinde g\xF6revleri yerine getirme vicdan\u0131, taraflar\u0131n bir sonuca\
     \ ula\u015Fma arzusu, bireyin toplumdaki f\u0131rsat\xE7\u0131 ve fedakar davran\u0131\
@@ -11364,6 +12853,17 @@
   pt: "Para come\xE7ar, sugerimos olhar para a obra de Mises \"\"Human Action: A Treatise\
     \ on Economics\"\" (abordagem praxeol\xF3gica) e para o artigo inicial de Norbert\
     \ Wiener \"\"Behavior, Purpose and Teleology\"\" (vis\xE3o teleol\xF3gica)."
+  ru: "\u0414\u043B\u044F \u043D\u0430\u0447\u0430\u043B\u0430 \u043F\u0440\u0435\u0434\
+    \u043B\u0430\u0433\u0430\u0435\u043C \u0432\u0437\u0433\u043B\u044F\u043D\u0443\
+    \u0442\u044C \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0443 \u041C\u0438\u0437\
+    \u0435\u0441\u0430 \xABHuman Action: A Treatise of Economics\xBB (\u043F\u0440\
+    \u0430\u043A\u0441\u0438\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\
+    \u0438\u0439 \u043F\u043E\u0434\u0445\u043E\u0434) \u0438 \u0440\u0430\u043D\u043D\
+    \u044E\u044E \u0441\u0442\u0430\u0442\u044C\u044E \u041D\u043E\u0440\u0431\u0435\
+    \u0440\u0442\u0430 \u0412\u0438\u043D\u0435\u0440\u0430 \"Behavior, Purpose and\
+    \ Teleology\" (\u0442\u0435\u043B\u0435\u043E\u043B\u043E\u0433\u0438\u0447\u0435\
+    \u0441\u043A\u043E\u0435 \u0432\u0438\u0434\u0435\u043D\u0438\u0435)."
+  sp: .nan
   tr: "Ba\u015Flang\u0131\xE7 \u200B\u200Bolarak, Mises'in \"\u0130nsan Eylemi: Ekonomi\
     \ \xDCzerine Bir \u0130nceleme\" (praxeological yakla\u015F\u0131m) adl\u0131\
     \ \xE7al\u0131\u015Fmas\u0131na ve Norbert Wiener'in \"Behavior, Purpose and Teleology\"\
@@ -11398,6 +12898,26 @@
     \ trabalhar nos processos da economia rob\xF3tica condicionalmente como com uma\
     \ caixa preta sem nos aprofundarmos nos objetivos finais. Ao mesmo tempo, a teleologia\
     \ representa um desafio para explicar as causas."
+  ru: "\u041F\u0440\u0430\u043A\u0441\u0438\u043E\u043B\u043E\u0433\u0438\u044F \u0432\
+    \u043D\u0443\u0448\u0430\u0435\u0442 \u043D\u0430\u043C \u0438\u043D\u0442\u0435\
+    \u0440\u0435\u0441\u043D\u044B\u0435 \u0438\u0434\u0435\u0438 \u043E \u0447\u0435\
+    \u043B\u043E\u0432\u0435\u0447\u0435\u0441\u043A\u043E\u043C \u043F\u043E\u0432\
+    \u0435\u0434\u0435\u043D\u0438\u0438 \u0432\u043D\u0435 \u043F\u0440\u044F\u043C\
+    \u043E\u0439 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438\
+    \ \u043E\u0442 \u0446\u0435\u043B\u0435\u0439. \u042D\u0442\u043E \u0434\u0430\
+    \u0435\u0442 \u043D\u0430\u043C \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\
+    \u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043D\u0430\
+    \u0434 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430\u043C\u0438 \u044D\u043A\
+    \u043E\u043D\u043E\u043C\u0438\u043A\u0438 \u0440\u043E\u0431\u043E\u0442\u043E\
+    \u0432 \u0443\u0441\u043B\u043E\u0432\u043D\u043E, \u043A\u0430\u043A \u0441 \u0447\
+    \u0435\u0440\u043D\u044B\u043C \u044F\u0449\u0438\u043A\u043E\u043C, \u043D\u0435\
+    \ \u0432\u043D\u0438\u043A\u0430\u044F \u0432 \u043A\u043E\u043D\u0435\u0447\u043D\
+    \u044B\u0435 \u0446\u0435\u043B\u0438. \u0412 \u0442\u043E \u0436\u0435 \u0432\
+    \u0440\u0435\u043C\u044F \u0442\u0435\u043B\u0435\u043E\u043B\u043E\u0433\u0438\
+    \u044F \u0431\u0440\u043E\u0441\u0430\u0435\u0442 \u0432\u044B\u0437\u043E\u0432\
+    \ \u043E\u0431\u044A\u044F\u0441\u043D\u0435\u043D\u0438\u044E \u043F\u0440\u0438\
+    \u0447\u0438\u043D."
+  sp: .nan
   tr: "Praxeology, ama\xE7lara do\u011Frudan ba\u011F\u0131ml\u0131 olmadan insan\
     \ davran\u0131\u015F\u0131 hakk\u0131nda ilgin\xE7 fikirlerle bize ilham verir.\
     \ Bu bize, nihai hedeflere dalmadan, bir kara kutu gibi ko\u015Fullu olarak robot\
@@ -11430,6 +12950,26 @@
     tica, n\xE3o apenas como um protocolo de intera\xE7\xE3o entre pessoas e m\xE1\
     quinas de natureza praxeol\xF3gica, mas levando em conta o elementos da constru\xE7\
     \xE3o de comunica\xE7\xE3o interesp\xE9cies."
+  ru: "\u041C\u044B \u043D\u0430\u0434\u0435\u0435\u043C\u0441\u044F, \u0447\u0442\
+    \u043E \u0433\u0434\u0435-\u0442\u043E \u043D\u0430 \u0441\u0442\u044B\u043A\u0435\
+    \ \u0440\u0430\u0431\u043E\u0442 \u041C\u0438\u0437\u0435\u0441\u0430 \u0438 \u0412\
+    \u0438\u043D\u0435\u0440\u0430 \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\
+    \u044C \u043D\u0430\u0439\u0434\u0435\u043D\u0430 \u0442\u043E\u0447\u043A\u0430\
+    \ \u0434\u0430\u043B\u044C\u043D\u0435\u0439\u0448\u0435\u0433\u043E \u0440\u0430\
+    \u0437\u0432\u0438\u0442\u0438\u044F \u044D\u043A\u043E\u043D\u043E\u043C\u0438\
+    \u043A\u0438 \u0440\u043E\u0431\u043E\u0442\u043E\u0432 \u043D\u0435 \u043F\u0440\
+    \u043E\u0441\u0442\u043E \u043A\u0430\u043A \u043F\u0440\u043E\u0442\u043E\u043A\
+    \u043E\u043B\u0430 \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\
+    \u0442\u0432\u0438\u044F \u043B\u044E\u0434\u0435\u0439 \u0438 \u043C\u0430\u0448\
+    \u0438\u043D \u043F\u0440\u0430\u043A\u0441\u0435\u043E\u043B\u043E\u0433\u0438\
+    \u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0445\u0430\u0440\u0430\u043A\u0442\
+    \u0435\u0440\u0430, \u0430 \u0441 \u0443\u0447\u0435\u0442\u043E\u043C \u0442\u0435\
+    \u043B\u0435\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u043E\u0433\
+    \u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u043F\u043E\u0441\u0442\
+    \u0440\u043E\u0435\u043D\u0438\u044F \u043C\u0435\u0436\u0432\u0438\u0434\u043E\
+    \u0432\u043E\u0439 \u043A\u043E\u043C\u043C\u0443\u043D\u0438\u043A\u0430\u0446\
+    \u0438\u0438."
+  sp: .nan
   tr: "Mises ve Wiener'in \xE7al\u0131\u015Fmalar\u0131n\u0131n kesi\u015Fti\u011F\
     i bir yerde, robot ekonomisinin daha da geli\u015Ftirilmesi i\xE7in bir noktan\u0131\
     n bulunabilece\u011Fini umuyoruz, sadece insanlar ve makineler aras\u0131nda prakseolojik\
