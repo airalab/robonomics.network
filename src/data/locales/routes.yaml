@@ -41,3 +41,7 @@
 - path: '/ambassador-program/'
   component: './src/pages/ambassador-program.vue'
   typename: 'page'
+
+- path: '/jobs/'
+  component: './src/pages/jobs.vue'
+  typename: 'component'

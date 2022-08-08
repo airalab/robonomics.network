@@ -39,6 +39,19 @@ module.exports = {
         ]
       }
     },
+    {
+      // Create jobs pages from markdown files
+      use: "@gridsome/vue-remark",
+      options: {
+        typeName: "Job",
+        baseDir: "content/jobs",
+        pathPrefix: '/jobs',
+        template: './src/templates/Job.vue',
+        plugins: [
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
+        ]
+      }
+    },
 
     {
       // Create posts from markdown files
@@ -60,7 +73,7 @@ module.exports = {
         locales: ["en", "ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr"],
         defaultLocale: "en",
         translations: yaml.load(fs.readFileSync('./src/data/locales/translations.yaml', 'utf8')),
-        collections: ['blog'],
+        collections: ['blog', 'jobs'],
         routes: yaml.load(fs.readFileSync('./src/data/locales/routes.yaml', 'utf8')),
       }
     },
