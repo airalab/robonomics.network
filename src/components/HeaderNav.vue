@@ -45,6 +45,7 @@
                     <li><g-link to="/books">{{$ts('Nav Books')}}</g-link></li>
                     <li><g-link to="/contact">{{$ts('Nav Contact')}}</g-link></li>
                     <li><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
+                    <li><g-link to="/jobs">{{$ts('Jobs')}}</g-link></li>
                 </ul>
             </details>
         </div>
