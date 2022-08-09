@@ -250,25 +250,31 @@
   de: Legen Sie los
   en: Get started
   es: Para empezar
+  fr: "D\xE9buter"
   it: PER INIZIARE
   ja: "\u59CB\u3081\u307E\u3057\u3087\u3046"
   ko: "\uC2DC\uC791\uD558\uAE30"
   pt: Iniciar
   ru: "\u041D\u0430\u0447\u0430\u043B\u043E"
+  sv: ''
   tr: "Ba\u015Fla"
+  uk: ''
   zh: "\u65B0\u624B\u5165\u95E8"
 - alias: Explore Robonomics
   az: "Robonomikan\u0131 k\u0259\u015Ff edin"
   de: Entdecken Sie Robonomics
   en: Explore Robonomics
   es: Explore Robonomics
+  fr: Explorez  Robonomics
   it: ESPLORARE ROBONOMICS
   ja: "Robonomics\u3092\u63A2\u308B"
   ko: "\uB85C\uBCF4\uB178\uBBF9\uC2A4 \uC0B4\uD3B4\uBCF4\uAE30"
   pt: Explorar Robonomics
   ru: "\u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u0434\u043B\u044F \u0441\u0435\
     \u0431\u044F \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0443"
+  sv: ''
   tr: "Robonomics'i Ke\u015Ffet"
+  uk: ''
   zh: "\u63A2\u7D22 Robonomics"
 - alias: Robonomics is an open-source technology for IoT market available for everyone.
     Read an executive summary to know more
@@ -282,6 +288,8 @@
     Read an executive summary to know more
   es: "Robonomics es una tecnolog\xEDa de c\xF3digo abierto para el mercado de IoT\
     \ disponible para todos. Lea un resumen ejecutivo para aprender m\xE1s"
+  fr: "Robonomics est une technologie open source pour le march\xE9 de l'IoT accessible\
+    \ \xE0 tous. Lire un r\xE9sum\xE9 pour en savoir plus"
   it: "Robonomics \xE8 una tecnologia open-source per il mercato IoT, disponibile\
     \ per chiunque. Leggi un\nriepilogo esecutivo per saperne di pi\xF9."
   ja: "Robonomics\u306F\u3001\u8AB0\u3082\u304C\u5229\u7528\u3067\u304D\u308BIoT\u5E02\
@@ -305,9 +313,11 @@
     \u043D\u0430\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435, \u043F\u0440\u043E\
     \u0447\u0438\u0442\u0430\u0439\u0442\u0435 \u043E\u0441\u043D\u043E\u0432\u043D\
     \u044B\u0435 \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u044F"
+  sv: ''
   tr: "Robonomics, IoT pazar\u0131 i\xE7in herkes taraf\u0131ndan kullan\u0131labilen\
     \ a\xE7\u0131k kaynakl\u0131 bir teknolojidir. Daha fazla bilgi i\xE7in bir y\xF6\
     netici \xF6zeti okuyun"
+  uk: ''
   zh: "Robonomics \u662F\u4E00\u9879\u9762\u5411\u7269\u8054\u7F51\u5E02\u573A\u7684\
     \u5F00\u6E90\u6280\u672F\uFF0C\u53EF\u4F9B\u6240\u6709\u4EBA\u4F7F\u7528\u3002\
     \u9605\u8BFB\u6267\u884C\u6458\u8981\uFF0C\u4E86\u89E3\u8BE6\u60C5"
@@ -316,12 +326,15 @@
   de: Holen Sie sich XRT
   en: Get XRT
   es: Obtenga XRT
+  fr: Obtenez XRT
   it: OTTIENI XRT
   ja: "XRT\u3092\u5165\u624B\u3059\u308B"
   ko: "XRT \uBC1B\uAE30"
   pt: Obter XRT
   ru: "\u0422\u043E\u043A\u0435\u043D XRT"
+  sv: ''
   tr: "XRT'yi al\u0131n"
+  uk: ''
   zh: "\u83B7\u53D6 XRT"
 - alias: XRT is the utility token that make it possible to control IoT devices on
     top of the Ethereum network and the Robonomics parachain
@@ -334,6 +347,8 @@
     of the Ethereum network and the Robonomics parachain
   es: XRT es el token de utilidad que hace posible el control de dispositivos IoT
     sobre las parachains de Ethereum y Robonomics
+  fr: "XRT est le jeton utilitaire qui permet de contr\xF4ler les appareils IoT sur\
+    \ le r\xE9seau Ethereum et le parachain Robonomics"
   it: "XRT \xE8 l'utility token che rende possibile il controllo dei dispositivi IoT\
     \ sulla rete Ethereum e sulla\r\nparachain di Robonomics."
   ja: "XRT\u306F\u3001\u30A4\u30FC\u30B5\u30EA\u30A2\u30E0\u3068Robonomics\u306E\u30D1\
@@ -353,9 +368,11 @@
     \u0430\u043C\u0438 \u043F\u043E\u0432\u0435\u0440\u0445 \u0441\u0435\u0442\u0438\
     \ Ethereum \u0438 \u043F\u0430\u0440\u0430\u0447\u0435\u0439\u043D\u0430 \u0420\
     \u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0438"
+  sv: ''
   tr: "XRT, Ethereum a\u011F\u0131 ve Robonomics parachain \xFCzerindeki IoT cihazlar\u0131\
     n\u0131 kontrol etmeyi m\xFCmk\xFCn k\u0131lan yard\u0131mc\u0131 dijital varl\u0131\
     kt\u0131r."
+  uk: ''
   zh: "XRT \u662F\u4E00\u79CD\u6548\u7528\u4EE3\u5E01\uFF0C\u53EF\u4EE5\u63A7\u5236\
     \u4EE5\u592A\u574A\u548C Robonomics \u5E73\u884C\u94FE\u4E4B\u4E0A\u7684\u7269\
     \u8054\u7F51\u8BBE\u5907"
@@ -364,12 +381,15 @@
   de: Verwenden Sie eine Dapp
   en: Use a Dapp
   es: Utilice una Dapp
+  fr: Utiliser une Dapp
   it: UTILIZZA UNA DAPP
   ja: "Dapp\u3092\u4F7F\u7528\u3059\u308B"
   ko: "Dapp \uC0AC\uC6A9"
   pt: Use un Dapp
   ru: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 Dapp"
+  sv: ''
   tr: Dapp Kullan
+  uk: ''
   zh: "\u4F7F\u7528 Dapp"
 - alias: Take a look at the Beta version of decentralized application for managing
     IoT devices
@@ -382,6 +402,8 @@
     devices
   es: "Eche un vistazo a la versi\xF3n Beta de la aplicaci\xF3n descentralizada para\
     \ administrar dispositivos IoT"
+  fr: "Jetez un \u0153il \xE0 la version b\xEAta de l'application d\xE9centralis\xE9\
+    e pour la gestion des appareils IoT"
   it: 'Dai un''occhiata alla beta delle applicazioni decentralizzate per la gestione
     di dispositivi IoT
 
@@ -399,8 +421,10 @@
     \u043E \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0434\u043B\
     \u044F \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F IoT-\u0443\
     \u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430\u043C\u0438"
+  sv: ''
   tr: "IoT cihazlar\u0131n\u0131 y\xF6netmek i\xE7in merkezi olmayan uygulaman\u0131\
     n Beta s\xFCr\xFCm\xFCne bir g\xF6z at\u0131n"
+  uk: ''
   zh: "\u67E5\u770B\u7269\u8054\u7F51\u8BBE\u5907\u53BB\u4E2D\u5FC3\u5316\u7BA1\u7406\
     \u5E94\u7528\u7A0B\u5E8F\u7684\u6D4B\u8BD5\u7248\u672C"
 - alias: Start building
@@ -408,13 +432,16 @@
   de: Mit dem Aufbau beginnen
   en: Start building
   es: Empiece a crear
+  fr: "Commencer \xE0 construire"
   it: INIZIA A COSTRUIRE
   ja: "\u958B\u767A\u3092\u59CB\u3081\u308B"
   ko: "\uAD6C\uCD95 \uC2DC\uC791\uD558\uAE30"
   pt: Comece a construir
   ru: "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u043D\u0430 \u043F\
     \u0440\u0430\u043A\u0442\u0438\u043A\u0435"
+  sv: ''
   tr: "\u0130n\u015Fa etmeye ba\u015Fla"
+  uk: ''
   zh: "\u5F00\u59CB\u6784\u5EFA"
 - alias: Learn Robonomics through tutorials and practically useful experimenting in
     Robonomics WIKI
@@ -426,6 +453,8 @@
     WIKI
   es: "Aprenda Robonomics a trav\xE9s de tutoriales y experimentos de utilidad pr\xE1\
     ctica en Robonomics WIKI"
+  fr: "Apprendre les robonomiques \xE0 travers des tutoriels et des exp\xE9riences\
+    \ pratiquement utiles dans Robonomics WIKI"
   it: "Impara di pi\xF9 su Robonomics grazie ai tutorial e ad alcuni utili esperimenti\
     \ pratici disponibili sul\r\nRobonomics WIKI"
   ja: "Robonomics WIKI\u306E\u30C1\u30E5\u30FC\u30C8\u30EA\u30A2\u30EB\u3068\u5B9F\
@@ -443,8 +472,10 @@
     \u043E\u043B\u0435\u0437\u043D\u044B\u0445 \u044D\u043A\u0441\u043F\u0435\u0440\
     \u0438\u043C\u0435\u043D\u0442\u043E\u0432 \u0432 WIKI \u0420\u043E\u0431\u043E\
     \u043D\u043E\u043C\u0438\u043A\u0438"
+  sv: ''
   tr: "Robonomics WIKI'de \xF6\u011Freticiler ve pratik olarak faydal\u0131 e\u011F\
     itimler yoluyla Robonomics \xF6\u011Frenin"
+  uk: ''
   zh: "\u901A\u8FC7 Robonomics WIKI \u4E2D\u7684\u6559\u7A0B\u548C\u5B9E\u7528\u4F53\
     \u9A8C\uFF0C\u4E86\u89E3 Robonomics"
 - alias: Robonomics objectives
@@ -452,13 +483,16 @@
   de: Robonomics-Ziele
   en: Robonomics objectives
   es: Objetivos de Robonomics
+  fr: Objectifs robonomics
   it: "GLI OBIETTIVI DI ROBONOMICS\r"
   ja: "Robonomics\u306E\u76EE\u7684"
   ko: "\uB85C\uBCF4\uB178\uBBF9\uC2A4 \uBAA9\uD45C"
   pt: Objetivos da Robonomics
   ru: "\u0417\u0430\u0434\u0430\u0447\u0438 \u0420\u043E\u0431\u043E\u043D\u043E\u043C\
     \u0438\u043A\u0438"
+  sv: ''
   tr: Robonomics hedefleri
+  uk: ''
   zh: "Robonomics \u7684\u76EE\u6807"
 - alias: Based on the achievements of cloud platforms, Robonomics aims to offer the
     IoT market safer and more advanced Internet solutions at every stage of human-machine
@@ -467,8 +501,7 @@
     \ Robonomika insan-ma\u015F\u0131n rabit\u0259sinin h\u0259r m\u0259rh\u0259l\u0259\
     sind\u0259 IoT bazar\u0131na daha t\u0259hl\xFCk\u0259siz v\u0259 daha t\u0259\
     kmil \u0130nternet h\u0259ll\u0259ri t\u0259klif etm\u0259yi h\u0259d\u0259fl\u0259\
-    yir. Robonomikan\u0131n inki\u015Faf etdirildiyi \u0259sas m\u0259qs\u0259dl\u0259\
-    r"
+    yir. Robonomika inki\u015Faf etdiyi \u0259sas m\u0259qs\u0259dl\u0259r:"
   de: "Basierend auf den Leistungen von Cloud-Plattformen zielt Robonomics darauf\
     \ ab, dem IoT-Markt in jeder Phase der Mensch-Maschine-Kommunikation sicherere\
     \ und fortschrittlichere Internetl\xF6sungen anzubieten. Dies sind die wichtigsten\
@@ -480,6 +513,10 @@
     \ como objetivo ofrecer al mercado de IoT soluciones de Internet m\xE1s seguras\
     \ y avanzadas en cada etapa de la comunicaci\xF3n hombre-m\xE1quina. He aqu\xED\
     \ las principales tareas para las que se est\xE1 desarrollando Robonomics"
+  fr: "Bas\xE9 sur les r\xE9alisations des plateformes cloud, Robonomics vise \xE0\
+    \ offrir au march\xE9 de l\u2019IoT des solutions Internet plus s\xFBres et plus\
+    \ avanc\xE9es \xE0 chaque \xE9tape de la communication homme-machine. Il y a les\
+    \ t\xE2ches principales pour lesquelles Robonomics est d\xE9velopp\xE9"
   it: "Basandosi sui risultati delle piattaforme cloud, Robonomics vuole offrire al\
     \ mercato IoT delle\nsoluzioni Internet pi\xF9 sicure e avanzate per ogni fase\
     \ della comunicazione uomo-macchina. Le\nprincipali funzioni per le quali si sta\
@@ -523,11 +560,13 @@
     \u043E\u0440\u044B\u0445 \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\
     \u0430 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0435\
     \u0442\u0441\u044F"
+  sv: ''
   tr: "Robonomics, bulut platformlar\u0131n\u0131n ba\u015Far\u0131lar\u0131na dayanarak,\
     \ insan-makine ileti\u015Fiminin her a\u015Famas\u0131nda IoT pazar\u0131na daha\
     \ g\xFCvenli ve daha geli\u015Fmi\u015F \u0130nternet \xE7\xF6z\xFCmleri sunmay\u0131\
     \ hedefliyor. Robonomics'in geli\u015Ftirilmekte oldu\u011Fu ana g\xF6revler vard\u0131\
     r"
+  uk: ''
   zh: "Robonomics \u57FA\u4E8E\u4E91\u5E73\u53F0\u7684\u6210\u679C\uFF0C\u5176\u76EE\
     \u6807\u662F\u5728\u4EBA\u673A\u901A\u4FE1\u7684\u5404\u4E2A\u9636\u6BB5\u4E3A\
     \u7269\u8054\u7F51\u5E02\u573A\u63D0\u4F9B\u66F4\u52A0\u5B89\u5168\u548C\u66F4\
@@ -539,6 +578,7 @@
   de: "IoT-Ger\xE4teverwaltung mit einer dezentralen Cloud"
   en: IoT device management with a decentralized cloud
   es: "Gesti\xF3n de dispositivos IoT con una nube descentralizada"
+  fr: "Gestion des appareils IoT avec un cloud d\xE9centralis\xE9"
   it: GESTIONE DEI DISPOSITIVI IOT CON UN CLOUD DECENTRALIZZATO
   ja: "\u5206\u6563\u578B\u30AF\u30E9\u30A6\u30C9\u306B\u3088\u308BIoT\u30C7\u30D0\
     \u30A4\u30B9\u7BA1\u7406"
@@ -550,7 +590,9 @@
     \u043E\u0449\u044C\u044E \u0434\u0435\u0446\u0435\u043D\u0442\u0440\u0430\u043B\
     \u0438\u0437\u043E\u0432\u0430\u043D\u043D\u043E\u0433\u043E \u043E\u0431\u043B\
     \u0430\u043A\u0430"
+  sv: ''
   tr: "Merkezi olmayan bir bulut ile IoT cihaz y\xF6netimi"
+  uk: ''
   zh: "\u901A\u8FC7\u53BB\u4E2D\u5FC3\u5316\u7684\u4E91\uFF0C\u7BA1\u7406\u7269\u8054\
     \u7F51\u8BBE\u5907"
 - alias: Blockchain networks have all the parameters to ensure the highest level of
@@ -597,6 +639,15 @@
     \ En el caso de utilizar una cadena de bloques sin permiso, podemos estar seguros\
     \ de la disponibilidad global de proveedores, as\xED como de un alto nivel de\
     \ protecci\xF3n de datos del gemelo digital frente a los cambios no deseados."
+  fr: "Les r\xE9seaux Blockchain ont tous les param\xE8tres pour assurer le plus haut\
+    \ niveau de s\xE9curit\xE9 pour le lancement et la r\xE9ception de dispositifs\
+    \ de t\xE9l\xE9m\xE9trie. L\u2019interaction avec un appareil peut en fait \xEA\
+    tre d\xE9crite en changeant l\u2019\xE9tat du jumeau num\xE9rique stock\xE9 dans\
+    \ le r\xE9seau blockchain et en fournissant des informations sur ces changements\
+    \ \xE0 l\u2019appareil physique. Dans le cas de l\u2019utilisation d\u2019une\
+    \ blockchain sans autorisation, nous pouvons \xEAtre s\xFBrs de la disponibilit\xE9\
+    \ globale des fournisseurs, ainsi que d\u2019un niveau \xE9lev\xE9 de protection\
+    \ des donn\xE9es du jumeau num\xE9rique contre les changements ind\xE9sirables."
   it: "Le reti blockchain dispongono di tutti i parametri necessari a garantire il\
     \ massimo livello di\r\nsicurezza per l'avvio dei dispositivi e la ricezione della\
     \ telemetria. L'interazione con un dispositivo\r\npu\xF2 essere descritta modificando\
@@ -680,6 +731,7 @@
     \ \u0434\u0432\u043E\u0439\u043D\u0438\u043A\u0430 \u043E\u0442 \u043D\u0435\u0436\
     \u0435\u043B\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0438\u0437\u043C\
     \u0435\u043D\u0435\u043D\u0438\u0439."
+  sv: ''
   tr: "Blokzinciri a\u011Flar\u0131, cihaz ba\u015Flatma ve telemetri alma i\xE7in\
     \ en y\xFCksek d\xFCzeyde g\xFCvenlik sa\u011Flamak i\xE7in t\xFCm parametrelere\
     \ sahiptir. Bir cihazla etkile\u015Fim, asl\u0131nda blok zinciri a\u011F\u0131\
@@ -689,6 +741,7 @@
     lar\u0131n k\xFCresel kullan\u0131labilirli\u011Finden ve dijital ikizin istenmeyen\
     \ de\u011Fi\u015Fikliklere kar\u015F\u0131 y\xFCksek d\xFCzeyde veri korumas\u0131\
     ndan emin olabiliriz."
+  uk: ''
   zh: "\u533A\u5757\u94FE\u7F51\u7EDC\u5177\u6709\u6240\u6709\u53C2\u6570\uFF0C\u4EE5\
     \u786E\u4FDD\u8BBE\u5907\u542F\u52A8\u548C\u63A5\u6536\u9065\u6D4B\u7684\u6700\
     \u9AD8\u5B89\u5168\u7EA7\u522B\u3002\u4E0E\u8BBE\u5907\u7684\u4EA4\u4E92\u5B9E\
@@ -706,6 +759,7 @@
   de: "Techno-\xF6konomische Transaktionen zwischen Mensch und Maschine"
   en: Techno-economic transactions between humans and machines
   es: "Transacciones tecnoecon\xF3micas entre humanos y m\xE1quinas"
+  fr: "Transactions techno-\xE9conomiques entre humains et machines"
   it: TRANSAZIONI TECNICO-ECONOMICHE TRA UMANI E MACCHINE
   ja: "\u4EBA\u9593\u3068\u6A5F\u68B0\u306E\u9593\u306E\u6280\u8853\u7D4C\u6E08\u7684\
     \u30C8\u30E9\u30F3\u30B6\u30AF\u30B7\u30E7\u30F3"
@@ -715,7 +769,9 @@
     \u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0442\u0440\u0430\u043D\u0437\u0430\
     \u043A\u0446\u0438\u0438 \u043C\u0435\u0436\u0434\u0443 \u043B\u044E\u0434\u044C\
     \u043C\u0438 \u0438 \u043C\u0430\u0448\u0438\u043D\u0430\u043C\u0438"
+  sv: ''
   tr: "\u0130nsanlar ve makineler aras\u0131ndaki tekno-ekonomik i\u015Flemler"
+  uk: ''
   zh: "\u4EBA\u673A\u4E4B\u95F4\u7684\u6280\u672F\u7ECF\u6D4E\u4EA4\u6613"
 - alias: We can talk about institutional achievements in terms of access of automated
     systems directly to digital markets through cryptocurrencies and smart contracts.
@@ -753,6 +809,14 @@
     \ creadas hoy para conectar al usuario final y los dispositivos IoT ser\xE1n mucho\
     \ m\xE1s efectivas si el pago y los t\xE9rminos de servicio son inseparables de\
     \ los par\xE1metros de lanzamiento del dispositivo."
+  fr: "Nous pouvons parler des r\xE9alisations institutionnelles en termes d\u2019\
+    acc\xE8s des syst\xE8mes automatis\xE9s directement aux march\xE9s num\xE9riques\
+    \ gr\xE2ce aux cryptomonnaies et aux contrats intelligents. Par exemple, Ethereum\
+    \ met d\xE9j\xE0 en \u0153uvre la plupart des outils de base de l\u2019activit\xE9\
+    \ \xE9conomique. Les applications cr\xE9\xE9es aujourd\u2019hui pour connecter\
+    \ l\u2019utilisateur final et les appareils IoT seront beaucoup plus efficaces\
+    \ si le paiement et les conditions de service sont indissociables des param\xE8\
+    tres de lancement de l\u2019appareil."
   it: "Possiamo parlare di risultati istituzionali in termini di accesso ai sistemi\
     \ automatizzati direttamente\r\nnei mercati digitali, attraverso criptovalute\
     \ e smart contract. Ad esempio, Ethereum implementa gi\xE0\r\nla maggior parte\
@@ -826,6 +890,7 @@
     \u044B\u0432\u043D\u044B \u0441 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\
     \u0430\u043C\u0438 \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0443\u0441\u0442\
     \u0440\u043E\u0439\u0441\u0442\u0432\u0430."
+  sv: ''
   tr: "Otomatik sistemlerin kripto paralar ve ak\u0131ll\u0131 s\xF6zle\u015Fmeler\
     \ arac\u0131l\u0131\u011F\u0131yla do\u011Frudan dijital pazarlara eri\u015Fimi\
     \ konusunda kurumsal ba\u015Far\u0131lardan bahsedebiliriz. \xD6rne\u011Fin, Ethereum,\
@@ -834,6 +899,7 @@
     \ i\xE7in bug\xFCn olu\u015Fturulan uygulamalar, \xF6deme ve hizmet ko\u015Fullar\u0131\
     n\u0131n cihaz\u0131n ba\u015Flatma parametrelerinden ayr\u0131lamaz olmas\u0131\
     \ durumunda \xE7ok daha verimli olacakt\u0131r."
+  uk: ''
   zh: "\u6211\u4EEC\u53EF\u4EE5\u8C08\u8BBA\u81EA\u52A8\u5316\u7CFB\u7EDF\u901A\u8FC7\
     \u52A0\u5BC6\u8D27\u5E01\u548C\u667A\u80FD\u5408\u7EA6\u76F4\u63A5\u8FDB\u5165\
     \u6570\u5B57\u5E02\u573A\u65B9\u9762\u7684\u673A\u6784\u6210\u5C31\u3002\u4F8B\
@@ -849,6 +915,7 @@
   de: "Serverlose IoT-Anwendungen f\xFCr Benutzer"
   en: Serverless IoT applications for users
   es: Aplicaciones de IoT sin servidor para usuarios
+  fr: Applications IoT sans serveur pour les utilisateurs
   it: "APPLICAZIONI IOT SENZA SERVER PER GLI UTENTI\r"
   ja: "\u30E6\u30FC\u30B6\u30FC\u5411\u3051\u306E\u30B5\u30FC\u30D0\u30FC\u30EC\u30B9\
     IoT\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3"
@@ -858,7 +925,9 @@
   ru: "\u0411\u0435\u0441\u0441\u0435\u0440\u0432\u0435\u0440\u043D\u044B\u0435 IoT-\u043F\
     \u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043F\u043E\u043B\u044C\
     \u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439"
+  sv: ''
   tr: "Kullan\u0131c\u0131lar i\xE7in Sunucusuz IoT uygulamalar\u0131"
+  uk: ''
   zh: "\u9762\u5411\u7528\u6237\u7684\u65E0\u670D\u52A1\u5668\u7269\u8054\u7F51\u5E94\
     \u7528"
 - alias: The question of the privacy of users of modern applications should not be
@@ -885,6 +954,11 @@
     \ avances modernos en el campo de la web3. No es necesario autenticarse ni requerir\
     \ conexi\xF3n a servidores espec\xEDficos para acceder a la telemetr\xEDa y controlar\
     \ el dispositivo."
+  fr: "La question de la vie priv\xE9e des utilisateurs des applications modernes\
+    \ ne devrait pas \xEAtre coinc\xE9 dans l\u2019incapacit\xE9 des entreprises \xE0\
+    \ utiliser les avanc\xE9es modernes dans le domaine du web3. Il n\u2019est pas\
+    \ n\xE9cessaire de s\u2019authentifier ou de se connecter \xE0 des serveurs sp\xE9\
+    cifiques pour acc\xE9der \xE0 la t\xE9l\xE9m\xE9trie et contr\xF4ler l\u2019appareil."
   it: "La questione della privacy degli utenti nelle moderne applicazioni, non dovrebbe\
     \ bloccarsi per\r\nl'incapacit\xE0 delle aziende di sfruttare gli ultimi progressi\
     \ nel campo del Web3. Non \xE8 necessario\r\nautenticarsi o richiedere la connessione\
@@ -931,11 +1005,13 @@
     \ \u043A \u0442\u0435\u043B\u0435\u043C\u0435\u0442\u0440\u0438\u0438 \u0438 \u0443\
     \u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0443\u0441\u0442\u0440\
     \u043E\u0439\u0441\u0442\u0432\u043E\u043C."
+  sv: ''
   tr: "Modern uygulamalar\u0131n kullan\u0131c\u0131lar\u0131n\u0131n mahremiyeti\
     \ sorusu, \u015Firketlerin web3 alan\u0131ndaki modern geli\u015Fmeleri kullanamamas\u0131\
     na tak\u0131l\u0131p kalmamal\u0131d\u0131r. Telemetriye eri\u015Fmek ve cihaz\u0131\
     \ kontrol etmek i\xE7in kimlik do\u011Frulamas\u0131 yapmaya veya belirli sunuculara\
     \ ba\u011Flant\u0131 gerektirmeye gerek yoktur."
+  uk: ''
   zh: "\u73B0\u4EE3\u5E94\u7528\u7A0B\u5E8F\u7528\u6237\u7684\u9690\u79C1\u95EE\u9898\
     \u4E0D\u5E94\u8BE5\u505C\u7559\u5728\u516C\u53F8\u65E0\u6CD5\u4F7F\u7528 web3\
     \ \u9886\u57DF\u7684\u73B0\u4EE3\u8FDB\u6B65\u4E2D\u3002\u65E0\u9700\u9A8C\u8BC1\
@@ -946,6 +1022,7 @@
   de: "Was Sie jetzt mit Robonomics bauen k\xF6nnen"
   en: What you can build with Robonomics right now
   es: "Qu\xE9 puede construir con Robonomics ahora mismo"
+  fr: "Ce que vous pouvez construire avec Robonomics d\xE8s maintenant"
   it: COSA PUOI CREARE ORA CON ROBONOMICS
   ja: "\u4ECARobonomics\u3067\u69CB\u7BC9\u3067\u304D\u308B\u3082\u306E"
   ko: "\uC9C0\uAE08 \uBC14\uB85C \uB85C\uBCF4\uB178\uBBF9\uC2A4\uB85C \uAD6C\uCD95\
@@ -955,13 +1032,16 @@
     \u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0441 \u043F\u043E\u043C\u043E\
     \u0449\u044C\u044E \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0438\
     \ \u043F\u0440\u044F\u043C\u043E \u0441\u0435\u0439\u0447\u0430\u0441"
+  sv: ''
   tr: "\u015Eu anda Robonomics ile yapabilecekleriniz"
+  uk: ''
   zh: "\u73B0\u5728\u53EF\u4EE5\u4F7F\u7528 Robonomics \u6784\u5EFA\u7684\u9879\u76EE"
 - alias: Control Mars Curiosity rover
   az: "Mars Curiosity robotunu idar\u0259 edin"
   de: Steuerung des Mars-Rovers Curiosity
   en: Control Mars Curiosity rover
   es: Controlar el rover Mars Curiosity
+  fr: "Contr\xF4le Mars Curiosity rover"
   it: CONTROLLA IL ROVER CURIOSITY SU MARTE
   ja: "\u706B\u661F\u63A2\u67FB\u6A5F\u30AD\u30E5\u30EA\u30AA\u30B7\u30C6\u30A3\u3092\
     \u5236\u5FA1\u3059\u308B"
@@ -969,7 +1049,9 @@
   pt: Controle o rover Mars Curiosity
   ru: "\u0423\u043F\u0440\u0430\u0432\u043B\u044F\u0439\u0442\u0435 \u043C\u0430\u0440\
     \u0441\u043E\u0445\u043E\u0434\u043E\u043C Curiosity"
+  sv: ''
   tr: Mars Merak gezicisini kontrol edin
+  uk: ''
   zh: "\u63A7\u5236\u597D\u5947\u53F7\u706B\u661F\u63A2\u6D4B\u8F66"
 - alias: Make Mars Curiosity rover move under Robonomics Parachain control
   az: "Mars Curiosity robotu Robonomics Parachain n\u0259zar\u0259ti alt\u0131nda\
@@ -978,6 +1060,7 @@
   en: Make Mars Curiosity rover move under Robonomics Parachain control
   es: Hacer que el rover Mars Curiosity se mueva bajo el control de la parachain de
     Robonomics
+  fr: "Faire bouger le rover Mars Curiosity sous le contr\xF4le de Robonomics Parachain"
   it: Fai muovere il rover Curiosity su Marte sotto il controllo della Parachain di
     Robonomics
   ja: "\u706B\u661F\u63A2\u67FB\u6A5F\u30AD\u30E5\u30EA\u30AA\u30B7\u30C6\u30A3\u3092\
@@ -991,8 +1074,10 @@
     \u044F \u043F\u043E\u0434 \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u0435\u043C\
     \ \u043F\u0430\u0440\u0430\u0447\u0435\u0439\u043D\u0430 \u0420\u043E\u0431\u043E\
     \u043D\u043E\u043C\u0438\u043A\u0438"
+  sv: ''
   tr: "Mars Merak gezicisini Robonomics Parachain kontrol\xFC alt\u0131nda hareket\
     \ ettirin"
+  uk: ''
   zh: "\u597D\u5947\u53F7\u706B\u661F\u63A2\u6D4B\u8F66\u5728 Robonomics \u5E73\u884C\
     \u94FE\u63A7\u5236\u4E0B\u79FB\u52A8"
 - alias: Connect ROS-compatible Drone
@@ -1000,13 +1085,16 @@
   de: "ROS-kompatible Drohne anschlie\xDFen"
   en: Connect ROS-compatible Drone
   es: Conectar el dron compatible con ROS
+  fr: Connecter drone compatible ROS
   it: CONNETTI UN DRONE ROS-COMPATIBILE
   ja: "ROS\u4E92\u63DB\u30C9\u30ED\u30FC\u30F3\u3092\u63A5\u7D9A\u3059\u308B"
   ko: "ROS \uD638\uD658 \uB4DC\uB860 \uC5F0\uACB0"
   pt: "Conecte Drones compat\xEDveis com ROS"
   ru: "\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u0435 ROS-\u0441\u043E\
     \u0432\u043C\u0435\u0441\u0442\u0438\u043C\u044B\u0439 \u0434\u0440\u043E\u043D"
+  sv: ''
   tr: "ROS uyumlu Drone'u ba\u011Flay\u0131n"
+  uk: ''
   zh: "\u8FDE\u63A5\u517C\u5BB9 ROS \u7684\u65E0\u4EBA\u673A"
 - alias: You can control any ROS-compatible robot with Robonomics parachain control
   az: "Siz Robonomics parachain n\u0259zar\u0259ti il\u0259 ist\u0259nil\u0259n ROS-uy\u011F\
@@ -1016,6 +1104,8 @@
   en: You can control any ROS-compatible robot with Robonomics parachain control
   es: Puede controlar cualquier robot compatible con ROS con el control de la parachain
     de Robonomics
+  fr: "Vous pouvez contr\xF4ler n\u2019importe quel robot compatible ROS avec Robonomics\
+    \ parachain control"
   it: Puoi controllare qualunque robot ROS-compatibile con la Parachain di Robonomics
   ja: "Robonomics\u30D1\u30E9\u30C1\u30A7\u30FC\u30F3\u5236\u5FA1\u3092\u4F7F\u7528\
     \u3057\u3066ROS\u4E92\u63DB\u30ED\u30DC\u30C3\u30C8\u3092\u5236\u5FA1\u3067\u304D\
@@ -1030,8 +1120,10 @@
     \u043E\u043C \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043F\u0430\u0440\
     \u0430\u0447\u0435\u0439\u043D\u0430 \u0420\u043E\u0431\u043E\u043D\u043E\u043C\
     \u0438\u043A\u0438"
+  sv: ''
   tr: "Robonomics parachain kontrol\xFC ile ROS uyumlu herhangi bir robotu kontrol\
     \ edebilirsiniz"
+  uk: ''
   zh: "\u53EF\u4EE5\u4F7F\u7528 Robonomics \u5E73\u884C\u94FE\u63A7\u5236\u4EFB\u4F55\
     \ \u517C\u5BB9 ROS \u7684\u673A\u5668\u4EBA"
 - alias: Launch Kuka manipulator
@@ -1039,13 +1131,16 @@
   de: Kuka-Manipulator starten
   en: Launch Kuka manipulator
   es: Lanzar el manipulador Kuka
+  fr: Lancez le manipulateur Kuka
   it: AVVIARE UN MANIPOLATORE KUKA
   ja: "Kuka\u30DE\u30CB\u30D4\u30E5\u30EC\u30FC\u30BF\u30FC\u3092\u8D77\u52D5"
   ko: "Kuka \uC870\uC791\uAE30 \uC2E4\uD589"
   pt: "Lan\xE7ar o manipulador Kuka"
   ru: "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u0435 \u043C\u0430\u043D\u0438\
     \u043F\u0443\u043B\u044F\u0442\u043E\u0440 Kuka"
+  sv: ''
   tr: "Kuka manip\xFClat\xF6r\xFCn\xFC ba\u015Flat\u0131n"
+  uk: ''
   zh: "\u542F\u52A8 Kuka \u673A\u68B0\u81C2"
 - alias: Send transaction in Robonomics parachain, launch Kuka manipulator and get
     robot's telemetry in IPFS.
@@ -1058,6 +1153,8 @@
     telemetry in IPFS.
   es: "Env\xEDe la transacci\xF3n en la parachain de Robonomics, inicie el manipulador\
     \ Kuka y obtenga la telemetr\xEDa del robot en IPFS."
+  fr: "Envoyez la transaction en Robonomics parachain, lancez le manipulateur Kuka\
+    \ et obtenez la t\xE9l\xE9m\xE9trie du robot en IPFS."
   it: Manda una transazione con la Parachain Robonomics, avvia il manipolatore Kuka
     e ottieni la telemetria del robot su IPFS
   ja: "Robonomics\u30D1\u30E9\u30C1\u30A7\u30FC\u30F3\u3067\u30C8\u30E9\u30F3\u30B6\
@@ -1078,8 +1175,10 @@
     \u043F\u0443\u043B\u044F\u0442\u043E\u0440 Kuka \u0438 \u043F\u043E\u043B\u0443\
     \u0447\u0438\u0442\u0435 \u0442\u0435\u043B\u0435\u043C\u0435\u0442\u0440\u0438\
     \u044E \u0440\u043E\u0431\u043E\u0442\u0430 \u0432 IPFS."
+  sv: ''
   tr: "\u0130\u015Flemi Robonomics parachain'de g\xF6nderin, Kuka manip\xFClat\xF6\
     r\xFCn\xFC ba\u015Flat\u0131n ve robotun telemetrisini IPFS'de al\u0131n."
+  uk: ''
   zh: "\u5728 Robonomics \u5E73\u884C\u94FE\u4E2D\u53D1\u9001\u4EA4\u6613\uFF0C\u542F\
     \u52A8 Kuka \u673A\u68B0\u81C2\uFF0C\u5E76\u5728 IPFS \u4E2D\u83B7\u53D6\u673A\
     \u5668\u4EBA\u7684\u9065\u6D4B\u6570\u636E\u3002"
@@ -1089,6 +1188,7 @@
   de: "ROS-basierte Projekte f\xFCr Smart Spaces"
   en: ROS-based Projects for Smart Spaces
   es: Proyectos basados en ROS para espacios inteligentes
+  fr: "Projets bas\xE9s sur ROS pour les espaces intelligents"
   it: PROGETTI PER SPAZI INTELLIGENTI BASATI SU ROS
   ja: "\u30B9\u30DE\u30FC\u30C8\u30B9\u30DA\u30FC\u30B9\u306E\u305F\u3081\u306EROS\u30D9\
     \u30FC\u30B9\u306E\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8"
@@ -1098,7 +1198,9 @@
   ru: "\u041F\u0440\u043E\u0435\u043A\u0442\u044B \u043D\u0430 \u0431\u0430\u0437\u0435\
     \ ROS \u0434\u043B\u044F \u0443\u043C\u043D\u044B\u0445 \u043F\u0440\u043E\u0441\
     \u0442\u0440\u0430\u043D\u0441\u0442\u0432"
+  sv: ''
   tr: "Ak\u0131ll\u0131 Alanlar i\xE7in ROS Tabanl\u0131 Projeler"
+  uk: ''
   zh: "\u57FA\u4E8E ROS \u7684\u667A\u80FD\u7A7A\u95F4\u9879\u76EE"
 - alias: "Here, you\u2019ll find a modest list of ROS-based projects that are dedicated\
     \ to robots and IoT-devices that are meant for use in a home or office environment"
@@ -1114,6 +1216,9 @@
   es: "Aqu\xED encontrar\xE1 una lista modesta de proyectos basados en ROS que est\xE1\
     n dedicados a robots y dispositivos IoT dise\xF1ados para su uso en el hogar o\
     \ en la oficina."
+  fr: "Ici, vous trouverez une liste modeste de projets bas\xE9s sur ROS qui sont\
+    \ d\xE9di\xE9s aux robots et aux appareils IoT destin\xE9s \xE0 \xEAtre utilis\xE9\
+    s \xE0 la maison ou au bureau"
   it: Qui troverai una modesta lista di progetti basati su ROS, dedicati ai robot
     e ai dispositivi IoT, che sono pensati per l'uso in ambiente domestico o d'ufficio
   ja: "\u3053\u3053\u3067\u306F\u3001\u5BB6\u5EAD\u3084\u30AA\u30D5\u30A3\u30B9\u74B0\
@@ -1139,9 +1244,11 @@
     \u043E\u0432\u0430\u043D\u0438\u044F \u0432 \u0434\u043E\u043C\u0430\u0448\u043D\
     \u0438\u0445 \u0438\u043B\u0438 \u043E\u0444\u0438\u0441\u043D\u044B\u0445 \u0443\
     \u0441\u043B\u043E\u0432\u0438\u044F\u0445."
+  sv: ''
   tr: "Burada, ev veya ofis ortam\u0131nda kullan\u0131lmas\u0131 ama\xE7lanan robotlara\
     \ ve IoT cihazlar\u0131na ayr\u0131lm\u0131\u015F ROS tabanl\u0131 projelerin\
     \ k\xFC\xE7\xFCk bir listesini bulacaks\u0131n\u0131z."
+  uk: ''
   zh: "\u5728\u8FD9\u91CC\uFF0C\u60A8\u5C06\u627E\u5230\u4E00\u4EFD\u57FA\u4E8E ROS\
     \ \u7684\u5408\u9002\u9879\u76EE\u5217\u8868\uFF0C\u8FD9\u4E9B\u9879\u76EE\u4E13\
     \u95E8\u9488\u5BF9\u7528\u4E8E\u5BB6\u5EAD\u6216\u529E\u516C\u73AF\u5883\u7684\
@@ -13021,4 +13128,3 @@
     \ \u041D\u0438\u0436\u0435 \u0432\u044B \u0443\u0432\u0438\u0434\u0438\u0442\u0435\
     \ \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0435 \u0432\u0430\u043A\u0430\u043D\
     \u0441\u0438\u0438."
-
