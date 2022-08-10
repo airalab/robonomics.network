@@ -11,38 +11,38 @@
     <div class="page">
        <section id="info" class="section__solid section__blue">
          <div class="content layout laouyt__content">
-           <h1>Robonomics won parachain slot on Kusama</h1>
-           <p id="info-subtitle">Dotsama for robots program initiated <g-link to="/blog/parachain-on-kusama-first-week-report/">Read first report</g-link></p>
+           <h1>{{$ts('Robonomics won parachain slot on Kusama')}}</h1>
+           <p id="info-subtitle">{{$ts('Dotsama for robots program initiated')}} <g-link to="/blog/parachain-on-kusama-first-week-report/">{{$ts('Read first report')}}</g-link></p>
 
            <div class="grid-3">
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title">Global parameters</div>
+               <div class="text-title">{{$ts('Global parameters')}}</div>
                <div class="text-small">
-                  <p><b>Auction:</b> 20</p>
-                  <p><b>Lease Period:</b> 18 - 25</p>
-                  <p><b>Retroactive Auction Ending Block:</b> 10,751,100</p>
-                  <p><b>Last valid contribution block:</b> 10,784,569</p>
-                  <p><b>Best Bid:</b> 13,236 $KSM</p>
-                  <p><g-link to="https://kusama.subscan.io/bid_history/?bid_id=20-18-25"><b>Check status of your bid on Subscan</b></g-link></p>
+                  <p><b>{{$ts('Auction:')}}</b> 20</p>
+                  <p><b>{{$ts('Lease Period:')}}</b> 18 - 25</p>
+                  <p><b>{{$ts('Retroactive Auction Ending Block:')}}</b> 10,751,100</p>
+                  <p><b>{{$ts('Last valid contribution block:')}}</b> 10,784,569</p>
+                  <p><b>{{$ts('Best Bid:')}}</b> 13,236 $KSM</p>
+                  <p><g-link to="https://kusama.subscan.io/bid_history/?bid_id=20-18-25"><b>{{$ts('Check status of your bid on Subscan')}}</b></g-link></p>
                </div>
              </div>
 
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title">Remuneration summary</div>
+               <div class="text-title">{{$ts('Remuneration summary')}}</div>
                <div class="text-small">
-                  <p>4.20 XRT each KSM</p>
-                  <p>1 XRT extra each KSM for <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">«Pioneer NFT»</g-link> cardholders</p>
-                  <p>+ Robonomics Pioneer NFT for all contributors</p>
-                  <p><g-link to="https://app.subsocial.network/@rmrkapp/robonomics-partnership-rmrk-goes-robotic-beep-boop-28764"><b>+ Robonomics Kanaria Collection</b></g-link> for 500 top contributors</p>
+                  <p>{{$ts('4.20 XRT each KSM')}}</p>
+                  <p>{{$ts('1 XRT extra each KSM for')}} <g-link to="https://opensea.io/assets/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">«{{$ts('Pioneer NFT')}}»</g-link> {{$ts('cardholders')}}</p>
+                  <p>+ {{$ts('Robonomics Pioneer NFT for all contributors')}}</p>
+                  <p><g-link to="https://app.subsocial.network/@rmrkapp/robonomics-partnership-rmrk-goes-robotic-beep-boop-28764"><b>+ {{$ts('Robonomics Kanaria Collection')}}</b></g-link> {{$ts('for 500 top contributors')}}</p>
                </div>
              </div>
 
              <div class="oldy dark bg-blue align-left">
-               <div class="text-title">Plans</div>
+               <div class="text-title">{{$ts('Plans')}}</div>
                <div class="text-small">
-                  <p>Robonomics will be onboarded in ~2 weeks</p>
-                  <p>We will focus on Kusama apps for IoT startups and smart home infrastructure, read more <g-link to="/blog/trajectory-2022-heading-for-product-launches/">here</g-link></p>
-                  <p>Monthly IoT subscriptions for your home infrastructure will be available before end of the month with start price 0.5 XRT. <g-link to="https://www.youtube.com/watch?v=H-w2FX-zd0M">Have a look on example</g-link></p>
+                  <p>{{$ts('Robonomics will be onboarded in ~2 weeks')}}</p>
+                  <p>{{$ts('We will focus on Kusama apps for IoT startups and smart home infrastructure, read more')}} <g-link to="/blog/trajectory-2022-heading-for-product-launches/">{{$ts('here')}}</g-link></p>
+                  <p>{{$ts('Monthly IoT subscriptions for your home infrastructure will be available before end of the month with start price 0.5 XRT.')}} <g-link to="https://www.youtube.com/watch?v=H-w2FX-zd0M">{{$ts('Have a look on example')}}</g-link></p>
                </div>
              </div>
            </div>
@@ -59,7 +59,7 @@
        <section id="a-contribution" class="section__solid section__darkgray">
 
          <div class="contribution layout">
-           <h3>Subscribe to email news & updates</h3>
+           <h3>{{$ts('Subscribe to email news & updates')}}</h3>
            <Subscribtion />
          </div>
        </section>
@@ -98,7 +98,7 @@
 <!--      <hr/>-->
 
        <section class="layout layout__text">
-         <h2>Quick intro to Robonomics</h2>
+         <h2>{{$ts('Quick intro to Robonomics')}}</h2>
 
          <div class="oldy-wrap-count">
            <section class="oldy dark">
@@ -109,7 +109,7 @@
 
            <section class="oldy dark">
             <div class="oldy-count-content">
-              Robonomics project is over six years old. We started preparing for the first experiment on economically meaningful communication of people and machines with smart contracts in 2014. By the beginning of 2021, the development team was able to preserve the strongest elements of the architecture in Robonomics and complement the techno-economic protocol developed in 2015-2019 over Ethereum and IPFS with elements of the cloud IoT platform based on parachain Polkadot.
+              {{$ts('The Robonomics project is over 6 years old. We started to prepare for the first experiment demonstrating human-machine communication using an independent decentralized provider network in 2015, from the early days of the Ethereum network. By early 2021, the project team managed to create a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain.')}}
             </div>
           </section>
 
@@ -126,7 +126,7 @@
           </section>
          </div>
 
-         <a href="#a-contribution" class="dashed text-big" v-smooth-scroll="{ updateHistory: false, offset: -250 }">Email updates</a>
+         <a href="#a-contribution" class="dashed text-big" v-smooth-scroll="{ updateHistory: false, offset: -250 }">{{$ts('Email updates')}}</a>
        </section>
 
       <section class="section__solid section__lightblue animate" v-in-viewport.once>
@@ -175,7 +175,7 @@
       <section class="parachain animate" v-in-viewport.once>
         <section class="parachain-intro section__solid section__gradient-purpleblue">
           <div class="layout layout__text animate-inside" v-in-viewport.once>
-            <h2>Why parachain</h2>
+            <h2>{{$ts('Why parachain')}}</h2>
             <p class="hyphens">{{$ts('Kusama parachain is great opportunity for Robonomics to scale network up to 1 million IoT systems connected in real-time without any centrilized regulators.')}}</p>
             <p class="hyphens">{{$ts('The Robonomics developers team formed plan for 2 years within Kusama slot. We will try to build on our existing work and new software development 5 specific features, including')}}:</p>
 
