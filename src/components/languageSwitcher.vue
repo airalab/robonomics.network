@@ -19,7 +19,11 @@
     background-image: none;
     padding: 0.4rem 0.8rem;
     font-size: 70%;
-    color: #000;
+    color: var(--color-text);
+  }
+
+  .dark-theme select {
+    --oldy-box-color: #fff
   }
 </style>
 
