@@ -540,7 +540,7 @@
       gap: calc(var(--space) * 0.5);
       padding: calc(var(--space)*2) calc(var(--space)*2) 280px;
       text-decoration: none;
-      background: linear-gradient(#03a7eda6, #03a7ed11);
+      background: var(--color-gradient-marketplace);
       border-radius: 4px;
     }
 
