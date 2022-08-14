@@ -5,6 +5,7 @@ body {
     --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
 	--color-dark: #000000;
+	--color-darkish: #333333;
 	--color-darkgray: rgb(37, 37, 37);
 	--color-light: #ffffff;
 	--color-gray: #ccc;
@@ -14,6 +15,7 @@ body {
 	--color-green-light: #a4ff59;
 	--color-green: #5fce05;
 	--color-green-dark: #1ca50d;
+	--color-yellow: #fee253;
 	--color-orangeYellow: #f5a106;
 	--color-orange: #E9510E;
 	--color-red: #ee005b;
@@ -42,9 +44,14 @@ body {
 	--color-border: var(--color-gray);
 	--color-blockquote: #e2e1e1;
 
+	--color-section-dotted: #e9e9e9;
+	--color-button-select: rgba(0,0,0,0.3);
+
  	--link-color: var(--color-blue-mid); /* deprecated use instead --color-link */
  	--link-color-hover: var(--color-blue); /* deprecated use instead --color-link-hover */
 	--link-color-visited: #660099;
+
+	--link-color-footer: #00FFFF;
 
 	--color-link: var(--color-blue);
 	--color-link-hover: var(--color-purple-mid);
@@ -57,9 +64,12 @@ body {
 	--color-gradient-purpleblue: linear-gradient(var(--color-blue-mid), var(--color-purple));
 	--color-gradient-mars: linear-gradient(var(--color-blue) 30%, #25bfe8 85%, #f0d283 100%);
 	--color-gradient-purplelight: radial-gradient(var(--color-blue-lighter), var(--color-purple-lighter));
+	--color-gradient-marketplace:  linear-gradient(#03a7eda6, #03a7ed11);
+	--color-gradient-vision-cybernetics: radial-gradient(circle at 80%, #a6fcf6, #1717b0 50%);
+	--color-gradient-architecture-banner: radial-gradient(circle at 80%, #AB02AC, #F25206 70%);
 	
 	--animation-bump: cubic-bezier(0.6, 0.04, 0.98, 0.335);
- 	
+
 
   --space: 2rem;
   --space-text: 2rem;
@@ -73,6 +83,48 @@ body {
   --screen-padding-left: 3rem;
 
 	--space-bannertop: 4.5rem;
+}
+
+/* body[data-theme="dark"] */
+body.dark-theme {
+	--color-dark: #fff;
+	--color-darkish: #3c3a3a;
+	--color-darkgray: rgb(19 19 19);
+	--color-light: #111;
+	--color-gray: rgb(229, 229, 229);
+	--color-gray-light: #151515;
+	--color-gray-mid: rgb(143, 143, 143);
+	--color-gray-dark: #b0b0b0;
+	--color-gray-light: #212121;
+
+	--color-gradient-purpleblue: linear-gradient(#2e576a, var(--color-purple));
+	--color-gradient-marketplace:  linear-gradient(	#696a6aa6, #03a7ed11);
+	--color-gradient-mars: linear-gradient(#1b2c7a 30%, #000000 85%, #7e631b 100%);
+	--color-gradient-vision-cybernetics: radial-gradient(circle at 80%, #000000, #24246e 50%);
+	--color-gradient-architecture-banner: radial-gradient(circle at 80%, #470047, #cf602a 70%);;
+	--color-gradient-purplelight: radial-gradient(var(--color-blue-lighter), #6d748d);
+
+
+	--color-blue-mid: #03A5ED;
+	--color-blue: #5f7af6;
+	--color-blue-lighter:#2a5b72;
+	--color-blue-lightest: #1e335c;
+	--color-purple-mid: #313568;
+	--color-purple-mid-dark: #5963e2;
+	--color-purple: #2d0719;
+
+	--text-color: #ffffff;
+	--text-color-invert: #000000;
+	--color-border: var(--color-gray);
+	--color-blockquote: #e2e1e1;
+
+	--link-color-footer: #e0e16e;
+
+	--color-section-dotted: #463e3e;
+
+	--color-button-select: rgb(235 235 235 / 30%);
+
+	--link-color-visited: #c457fb;
 }
 
 

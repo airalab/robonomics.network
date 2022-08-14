@@ -364,7 +364,7 @@ export default {
   /* Architecture banner */
 
   .architecture-banner {
-    background-image: radial-gradient(circle at 80%, #AB02AC, #F25206 70%);
+    background-image: var(--color-gradient-architecture-banner);
     color: #fff;
     padding-top: calc(var(--space) * 3);
     padding-bottom: calc(var(--space) * 3);
@@ -765,9 +765,9 @@ export default {
   }
 
   .architecture-main-tasks article ~ div p {
-    color: var(--color-light);
+    color: #fff;
     padding: var(--space);
-    background-color: var(--color-purple);
+    background-color:  #221363;
   }
 
   @media screen and (max-width: 1280px) {

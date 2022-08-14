@@ -31,6 +31,10 @@
   --oldy-box-color: #000
 }
 
+.dark-theme .oldy.dark  {
+  --oldy-box-color: #fff
+}
+
 .oldy.green {
   --oldy-box-color: var(--color-green);
 }

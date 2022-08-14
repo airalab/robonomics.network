@@ -64,11 +64,12 @@ query {
 <style scoped>
 
   footer {
-    background: var(--color-darkgray);
+    background-color: var(--color-darkgray);
     border-top: 10px solid #fff;
     color: #fff;
     padding: calc(var(--space) * 0.5) 0;
     font-family: var(--font-family-code);
+    transition: background-color 0.33s ease;
   }
 
 
@@ -82,13 +83,14 @@ query {
 
   a {
     text-decoration: none;
-    color: #00FFFF !important;
+    color: var(--link-color-footer) !important;
   }
 
   .grid-4 > div:not(:first-child) {
     
     padding: var(--space);
-    background: #333;
+    /* background: #333; */
+    background-color: var(--color-darkish);
   }
 
   .grid-4 > div:not(:first-child) ul {

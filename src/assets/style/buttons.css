@@ -82,7 +82,7 @@
 
 			-webkit-appearance: none;
 			appearance: none;
-			background-color: rgba(0,0,0,0.3);
+			background-color: var(--color-button-select);
 			font-size: 80%;
 			padding: .5rem;
 

@@ -16,7 +16,7 @@
           </div>
 
           <div class="header-side">
-
+            <ThemeSwitcher/>
             <HeaderNav/>
             <languageSwitcher/>
 
@@ -172,12 +172,12 @@ query {
 	position: relative;
   background-color: var(--color-gray-light);
   border-style: solid;
-  border-color: #fff;
+  border-color: var(--color-light);
   border-width: 0 var(--screen-padding-right) 0 var(--screen-padding-left);
   padding-top: var(--screen-padding-top);
   padding-bottom: var(--screen-padding-bottom);
   height: 100vh;
-  	scrollbar-width: none;
+  scrollbar-width: none;
 }
 
 	.screen::-webkit-scrollbar { display: none; }
@@ -190,7 +190,7 @@ query {
     bottom: 0;
     width: 100%;
     height: var(--screen-padding-bottom);
-    background: #fff;
+    background: var(--color-light);
     z-index: 1000;
   }
 
@@ -226,6 +226,7 @@ export default {
   components: {
     Footer: () => import('~/components/Footer.vue'),
     languageSwitcher: () => import('~/components/languageSwitcher.vue'),
+    ThemeSwitcher: () => import('~/components/ThemeSwitcher.vue'),
     HeaderNav: () => import('~/components/HeaderNav.vue'),
   },
   data () {

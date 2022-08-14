@@ -42,7 +42,7 @@
   .section__lightblue, .section__lightblue .card.transparent,
   .section__black,
   .section__dotted_darkblue  {
-	  color: var(--color-light);
+	  color: #fff;
   }
 
   .section__blue h1,
@@ -66,6 +66,10 @@
 	background-color: var(--color-blue);
   }
 
+	.dark-theme .section__blue {
+		background-color: #223695;
+	}
+
   .section__blue-lightest {
 	  background-color: var(--color-blue-lightest);
   }
@@ -87,11 +91,15 @@
   }
 
   .section__lightblue {
-	background: var(--link-color);
+		background: var(--link-color);
+  }
+
+	.dark-theme  .section__lightblue {
+		background: #1c4659;
   }
 
   .section__dotted {
-	background-color: #e9e9e9;
+	background-color: var(--color-section-dotted);
 	/*background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">\
 			<text x="20" y="20" font-size="20" style="fill:#ccc">•</text>\
 			</svg>');*/

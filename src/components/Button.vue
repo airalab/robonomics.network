@@ -153,6 +153,7 @@ export default {
 
   .button-violet {
     --b-color-background: var(--color-purple-mid);
+    color: #fff;
   }
   .button-violet:hover {
     --b-color-background: var(--color-dark);
