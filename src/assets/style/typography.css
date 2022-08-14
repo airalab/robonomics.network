@@ -64,6 +64,7 @@ h2:last-child, h3:last-child, h4:last-child, h5:last-child { margin-bottom: 0 }
   font-size: 90%;
   font-style: italic;
   text-align: center;
+  color: #fff;
 }
 
 .subtitle:before {
@@ -133,6 +134,10 @@ a:not(.button):hover, .link:not(.button):hover {
   color: var(--color-link-hover);
 }
 
+.dark-theme a:not(.button):hover, .link:not(.button):hover {
+  color: #aeb1d8
+}
+
 a:not(.button).dashed, .link:not(.button).dashed {
   text-decoration: none;
   border-bottom: 1px dashed currentColor
@@ -144,7 +149,7 @@ hr {
   border: 0;
   outline: 0;
   height: 1rem;
-  background-color: #fff;
+  background-color: var(--color-light);
 }
 
   hr.no-margins {

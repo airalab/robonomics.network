@@ -132,7 +132,7 @@ export default {
       email: null,
       status: 'none',
       recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA
-    //   recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
+      // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
     }
   },
 

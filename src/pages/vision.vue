@@ -754,6 +754,7 @@ h4 {
   position: relative;
   z-index: 1;
   max-width: 700px;
+  color: #000;
 }
 
 @media screen and (max-width: 660px) {
@@ -787,7 +788,7 @@ h4 {
 
 /* 4 ----- */
 .vision-cybernetics {
-  background-image: radial-gradient(circle at 80%, #a6fcf6, #1717b0 50%);
+  background-image: var(--color-gradient-vision-cybernetics);
   color: #fff;
   padding-top: calc(var(--space) * 3);
   padding-bottom: calc(var(--space) * 3);

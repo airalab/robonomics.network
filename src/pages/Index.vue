@@ -443,6 +443,10 @@ query {
       position: relative;
   }
 
+  .dark-theme .img-back {
+    background: #3e84b0;
+  }
+
   .index-cases .logo-wiki {
     position: absolute;
     top: calc(var(--space) * 0.5);
