@@ -10,6 +10,7 @@
   de: oder
   en: or
   es: o
+  fr: ou
   it: o il
   ja: "\u3084"
   ko: "\uB610\uB294"
@@ -20,8 +21,11 @@
 - alias: and
   de: und ist
   en: and
+  fr: et
+  it: e
   ja: ' '
   ru: "\u0438"
+  tr: ve
   zh: "\u548C"
 - alias: send
   en: send
@@ -2749,8 +2753,11 @@
   zh: "\u9002\u7528\u4E8E\u7ED1\u5B9A\u524D 27,000 \u4E2A KSM \u7684 Robonomics Pioneer\
     \ NFT \u6301\u6709\u8005"
 - alias: I agree to receive email communications from Robonomics
+  de: Ich bin damit einverstanden, E-Mail-Mitteilungen von Robonomics zu erhalten
   en: I agree to receive email communications from Robonomics
   es: "Acepto recibir comunicaciones por correo electr\xF3nico de Robonomics"
+  ja: "Robonomics\u304B\u3089\u306E\u30E1\u30FC\u30EB\u3092\u53D7\u4FE1\u3059\u308B\
+    \u3053\u3068\u306B\u540C\u610F\u3057\u307E\u3059"
   ko: "Robonomics \uC774\uBA54\uC77C \uC815\uBCF4 \uC218\uC2E0\uC5D0 \uB3D9\uC758\uD569\
     \uB2C8\uB2E4"
   ru: "\u042F \u0441\u043E\u0433\u043B\u0430\u0441\u0435\u043D \u043F\u043E\u043B\u0443\
@@ -2759,16 +2766,21 @@
   zh: "\u6211\u540C\u610F\u63A5\u6536Robonomics\u7684\u7535\u5B50\u90AE\u4EF6\u901A\
     \u8BAF"
 - alias: Most important to know
+  de: Das wichtigste Know-How
   en: Most important to know
   es: Importante saber
+  ja: "\u77E5\u3063\u3066\u304A\u304F\u3079\u304D\u6700\u3082\u91CD\u8981\u306A\u3053\
+    \u3068"
   ko: "\uC54C\uC544\uB46C\uC57C \uD560 \uC911\uC694 \uC0AC\uD56D"
   ru: "\u0412\u0430\u0436\u043D\u043E \u0437\u043D\u0430\u0442\u044C"
   zh: "\u91CD\u8981\u987B\u77E5"
 - alias: Welcome to our journey!
+  de: Willkommen auf unserer Reise!
   en: Welcome to our journey!
   es: "\xA1Les damos la bienvenida!"
-  ko: "\uC6B0\uB9AC\uC758 \uC5EC\uD589\uC5D0 \uC624\uC2E0 \uAC83\uC744 \uD658\uC601\
-    \uD569\uB2C8\uB2E4!"
+  ja: "\u79C1\u305F\u3061\u306E\u65C5\u3078\u3088\u3046\u3053\u305D\uFF01"
+  ko: "Robonomics \uC5EC\uC815\uC5D0 \uC624\uC2E0 \uAC83\uC744 \uD658\uC601\uD569\uB2C8\
+    \uB2E4!"
   ru: "\u0414\u043E\u0431\u0440\u043E \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\
     \u0442\u044C \u0432 \u043D\u0430\u0448\u0435 \u043F\u0443\u0442\u0435\u0448\u0435\
     \u0441\u0442\u0432\u0438\u0435!"
@@ -3342,10 +3354,10 @@
     \u306E\u7B2C2\u90E8\u306F\u3001\u4EE5\u524D\u306ERobonomics\u30C1\u30FC\u30E0\u306E\
     R&D\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306B\u57FA\u3065\u304F\u30B5\u30FC\u30D3\
     \u30B9\u306E\u958B\u59CB\u306B\u6C7A\u307E\u3063\u3066\u3044\u307E\u3059\u3002"
-  ko: "\uC774\uC804 Robonomics \uD300\uC758 R&D \uD504\uB85C\uC81D\uD2B8\uB97C \uAE30\
-    \uBC18\uC73C\uB85C \uD55C \uC11C\uBE44\uC2A4 \uCD9C\uC2DC\uB85C \uC9C0\uC815\uB41C\
-    \ Kusama\uC758 Robonomics \uD30C\uB77C\uCCB4\uC778 \uC131\uC7A5\uC758 \uB450 \uBC88\
-    \uC9F8 \uBD80\uBD84\uC785\uB2C8\uB2E4."
+  ko: "Kusama\uC758 Robonomics \uD30C\uB77C\uCCB4\uC778 \uC131\uC7A5\uC758 \uB450\
+    \ \uBC88\uC9F8 \uBD80\uBD84\uC73C\uB85C \uC774\uC804 Robonomics \uD300\uC758 R&D\
+    \ \uD504\uB85C\uC81D\uD2B8\uB97C \uAE30\uBC18\uC73C\uB85C \uD558\uAE30\uB85C \uC9C0\
+    \uC815\uB418\uC5C8\uC2B5\uB2C8\uB2E4."
   ru: "\u0412\u0442\u043E\u0440\u0430\u044F \u0447\u0430\u0441\u0442\u044C \u0440\u0430\
     \u0437\u0432\u0438\u0442\u0438\u044F \u043F\u0430\u0440\u0430\u0447\u0435\u0439\
     \u043D\u0430 \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0438 \u0432\
@@ -3927,7 +3939,7 @@
     \u043E\u0437\u043C\u043E\u0436\u043D\u044B\u0445 \u0432 \u0440\u0430\u043C\u043A\
     \u0430\u0445 \u0434\u0430\u043D\u043D\u043E\u0439 \u043A\u043E\u043D\u0446\u0435\
     \u043F\u0446\u0438\u0438."
-  zh: "25\u670819\u65E5\uFF0C\u5728Polkadot Decoded\u5927\u4F1A\u7684\u4E3B\u8BB2\u53F0\
+  zh: "5\u670819\u65E5\uFF0C\u5728Polkadot Decoded\u5927\u4F1A\u7684\u4E3B\u8BB2\u53F0\
     \u4E0A\uFF0CSergey Lonshakov\u8C08\u5230\u4E86\u667A\u6167\u57CE\u5E02\u7684\u6982\
     \u5FF5\u548C\u5176\u4E2D\u53EF\u80FD\u7684\u6CE2\u5361\u670D\u52A1\u3002"
 - alias: Kusama on Mars
@@ -3987,7 +3999,7 @@
   es: Robonomics PolkaPet
   ja: Robonomics PolkaPet
   ko: Robonomics PolkaPet
-  ru: Robonomics PolkaPet
+  ru: "PolkaPet \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0438"
   zh: Robonomics PolkaPet
 - alias: PolkaPet is collectible NFT card embodied as an artistic creature, represents
     a specific project within the Polkadot ecosystem. Robonomics PolkaPets owners
@@ -4275,8 +4287,7 @@
   ja: "Robot as a Service\uFF08\u30B5\u30FC\u30D3\u30B9\u3068\u3057\u3066\u306E\u30ED\
     \u30DC\u30C3\u30C8\uFF09"
   ko: "\uC11C\uBE44\uC2A4\uB85C\uC11C\uC758 \uB85C\uBD07(RaaS)"
-  ru: "\u0420\u043E\u0431\u043E\u0442 \u043A\u0430\u043A \u0443\u0441\u043B\u0443\u0433\
-    \u0430"
+  ru: Robot as a Service
   zh: "\u673A\u5668\u4EBA\u5373\u670D\u52A1"
 - alias: '"Cloud" for IoT applications'
   de: "\u201ECloud\u201C f\xFCr IoT-Anwendungen"
@@ -4304,7 +4315,7 @@
   en: Drone vehicle traffic
   es: "Tr\xE1fico de veh\xEDculos de drones"
   ja: "\u30C9\u30ED\u30FC\u30F3\u306E\u4EA4\u901A"
-  ko: "\uB4DC\uB860 \uCC28\uB7C9 \uAD50\uD1B5"
+  ko: "\uB4DC\uB860 \uAE30\uAE30 \uC6B4\uD56D"
   ru: "\u0422\u0440\u0430\u0444\u0438\u043A \u0434\u0440\u043E\u043D\u043E\u0432"
   zh: "\u65E0\u4EBA\u673A\u8F66\u8F86\u6D41\u91CF"
 - alias: Follow latest updates Crowdloan 2
@@ -4924,6 +4935,7 @@
   de: Robonomics Ambassador Programm
   en: Robonomics Ambassador Program
   es: Robonomics Ambassadors Program
+  fr: Programme des ambassadeurs en robonomique
   it: .nan
   ja: "ROBONOMICS\u30A2\u30F3\u30D0\u30B5\u30C0\u30FC\u30D7\u30ED\u30B0\u30E9\u30E0"
   ko: "ROBONOMICS \uC570\uBC30\uC11C\uB354 \uD504\uB85C\uADF8\uB7A8"
@@ -4938,6 +4950,7 @@
   de: Letztes Update
   en: Latest update
   es: "\xDAltima actualizaci\xF3n"
+  fr: "derni\xE8re mise \xE0 jour"
   it: Ultimo aggiornamento 23-04-2022
   ja: "\u6700\u65B0\u66F4\u65B0"
   ko: "\uCD5C\uC2E0 \uC5C5\uB370\uC774\uD2B8"
@@ -4952,6 +4965,7 @@
   de: "F\xFCr alle die sich f\xFCr Robonomics begeistern und von web3 inspiriert sind."
   en: For all passionate about Robonomics and inspired by web3.
   es: Para todos los apasionados de Robonomics Network e inspirados por Web3.
+  fr: "Pour tous les passionn\xE9s de robonomiques et inspir\xE9s par web3."
   it: Per tutti gli appassionati di Robonomics ispirati dal web3.
   ja: "Robonomics\u306B\u60C5\u71B1\u3092\u6301\u3061\u3001web3\u306B\u523A\u6FC0\u3055\
     \u308C\u305F\u3059\u3079\u3066\u306E\u65B9\u3078\u3002"
@@ -4977,6 +4991,8 @@
     the international arena for cooperation.
   es: "Te invitamos a contribuir al desarrollo y promoci\xF3n de la Robonomics en\
     \ el \xE1mbito internacional de la cooperaci\xF3n."
+  fr: "Nous vous invitons \xE0 contribuer au d\xE9veloppement et \xE0 la promotion\
+    \ des robonomiques sur la sc\xE8ne internationale pour la coop\xE9ration."
   it: Vi invitiamo a contribuire allo sviluppo e alla promozione di Robonomics, nell'arena
     internazionale per la cooperazione.
   ja: "\u56FD\u969B\u7684\u306A\u5354\u529B\u306E\u5834\u3067Robonomics\u306E\u767A\
@@ -5002,6 +5018,7 @@
   de: Lerne
   en: Learn
   es: Aprenda
+  fr: Apprendre
   it: IMPARA
   ja: "\u5B66\u3076"
   ko: "\uBC30\uC6B0\uAE30"
@@ -5014,6 +5031,7 @@
   de: Theorie und Praxis von Robonomic
   en: Theory & practice from Robonomics
   es: Teoria y Practica de Robonomics
+  fr: "Th\xE9orie et pratique de Robonomics"
   it: TEORIA E PRATICA DI ROBONOMICS
   ja: "ROBONOMICS\u306E\u7406\u8AD6\u3068\u5B9F\u8DF5"
   ko: "\uB85C\uBCF4\uB178\uBBF9\uC2A4\uC758 \uC774\uB860 \uBC0F \uC2E4\uC2B5"
@@ -5028,6 +5046,7 @@
   de: Inhalte erstellen
   en: Make content
   es: Haga Contenido
+  fr: Faire du contenu
   it: CREA CONTENUTI
   ja: "\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u4F5C\u308B"
   ko: "\uCF58\uD150\uCE20 \uB9CC\uB4E4\uAE30"
@@ -5057,6 +5076,7 @@
   de: Kommunikation
   en: Communicate
   es: Comunica
+  fr: communiquer
   it: COMUNICA
   ja: "\u4F1D\u3048\u308B"
   ko: "\uCEE4\uBBA4\uB2C8\uCF00\uC774\uC158"
@@ -5070,6 +5090,7 @@
   de: ONLINE und OFFLINE (Meetings, Konferenzen, Soziale Netzwerke, Kooperationen)
   en: Online and offline (meetups, conferences, social networks, collaborations)
   es: Online y Offline (Meetups, Conferencias, Social Networks, Colaboraciones)
+  fr: "En ligne et hors ligne (rencontres, conf\xE9rences, r\xE9seaux sociaux, collaborations)"
   it: ONLINE E OFFLINE (MEETUP, CONFERENZE, SOCIAL NETWORK, COLLABORAZIONI)
   ja: "\u30AA\u30F3\u30E9\u30A4\u30F3\u304A\u3088\u3073\u30AA\u30D5\u30E9\u30A4\u30F3\
     \uFF08\u30DF\u30FC\u30C8\u30A2\u30C3\u30D7\u3001\u30AB\u30F3\u30D5\u30A1\u30EC\
@@ -5093,6 +5114,7 @@
   de: Erhalte Belohnungen
   en: Get rewards
   es: Obtenga Recompensas
+  fr: "Obtenir des r\xE9compenses"
   it: OTTIENI RICOMPENSE
   ja: "\u30EA\u30EF\u30FC\u30C9\u3092\u5F97\u308B"
   ko: "\uBCF4\uC0C1\uBC1B\uAE30"
@@ -5108,6 +5130,8 @@
     \ 5 besten Ambassadors"
   en: XRT reward every month, extra bonuses and gifts for top 5 ambassadors
   es: XRT cada mes, extras y regalos para los Top 5 Ambassadors.
+  fr: "R\xE9compense XRT chaque mois, bonus et cadeaux suppl\xE9mentaires pour les\
+    \ 5 meilleurs ambassadeurs"
   it: PREMI IN XRT OGNI MESE, BONUS EXTRA E REGALI PER I PRIMI 5 AMBASSADOR
   ja: "\u6BCE\u6708\u306EXRT\u30EA\u30EF\u30FC\u30C9\u306B\u52A0\u3048\u3001\u4E0A\
     \u4F4D5\u540D\u306E\u30A2\u30F3\u30D0\u30B5\u30C0\u30FC\u306B\u306F\u8FFD\u52A0\
@@ -5140,6 +5164,7 @@
   de: Wie wird man Ambassador?
   en: How to become an ambassador?
   es: "\xBFC\xF3mo convertirse en Robonomics Ambassador?"
+  fr: Comment devenir ambassadeur ?
   it: COME DIVENTARE AMBASSADOR?
   ja: "\u30A2\u30F3\u30D0\u30B5\u30C0\u30FC\u306B\u306A\u308B\u65B9\u6CD5"
   ko: "\uC570\uBC30\uC11C\uB354\uAC00 \uB418\uB824\uBA74 \uC5B4\uB5BB\uAC8C \uD574\
@@ -5154,6 +5179,7 @@
   de: "Erz\xE4hle uns mehr von dir"
   en: Tell us more about you
   es: "Cu\xE9ntanos m\xE1s sobre ti"
+  fr: Dites-nous en plus sur vous
   it: "RACCONTACI DI PI\xD9 SU DI TE"
   ja: "\u3042\u306A\u305F\u306E\u3053\u3068\u3092\u3082\u3063\u3068\u6559\u3048\u3066\
     \u304F\u3060\u3055\u3044"
@@ -5168,6 +5194,7 @@
   de: "F\xFClle den Fragebogen aus"
   en: Fill out the questionnaire
   es: Llenando el siguiente formulario
+  fr: remplir le questionnaire
   it: COMPILA IL QUESTIONARIO
   ja: "\u30A2\u30F3\u30B1\u30FC\u30C8\u306B\u7B54\u3048\u308B"
   ko: "\uC124\uBB38\uC9C0 \uC791\uC131"
@@ -5181,6 +5208,7 @@
   de: Start
   en: Start
   es: Comienzo
+  fr: Commencer
   it: INIZIA
   ja: "\u59CB\u3081\u308B"
   ko: "\uC2DC\uC791"
@@ -5194,6 +5222,7 @@
   de: "Warte auf die Einladung zum speziellen Discord-Chat f\xFCr Ambassador"
   en: Wait for your invitation to the special Discord chat for ambassadors
   es: "Y espera la invitaci\xF3n al chat especial de Discord para Ambassadors!"
+  fr: "Attendez votre invitation au clavardage sp\xE9cial Discord pour les ambassadeurs"
   it: ATTENDI IL TUO INVITO ALLA CHAT SPECIALE SU DISCORD PER GLI AMBASSADOR
   ja: "Discord\u306E\u30A2\u30F3\u30D0\u30B5\u30C0\u30FC\u5411\u3051\u7279\u5225\u30C1\
     \u30E3\u30C3\u30C8\u3078\u306E\u62DB\u5F85\u72B6\u3092\u304A\u5F85\u3061\u304F\
@@ -5214,6 +5243,7 @@
   de: Die Anzahl der Teilnehmer am Programm sind begrenzt
   en: The number of participants in the program is limited
   es: "El n\xFAmero de participantes en el Ambassador Program es limitado"
+  fr: "Le nombre de participants au programme est limit\xE9"
   it: "IL NUMERO DI PARTECIPANTI AL PROGRAMMA \xC8 LIMITATO"
   ja: "\u30D7\u30ED\u30B0\u30E9\u30E0\u3078\u306E\u53C2\u52A0\u4EBA\u6570\u306B\u306F\
     \u5236\u9650\u304C\u3042\u308A\u307E\u3059"
@@ -5230,6 +5260,7 @@
   de: "F\xFCr Inhaltsanbieter"
   en: For content makers
   es: Para Creadores de Contenido
+  fr: "Pour les cr\xE9ateurs de contenu"
   it: PER I PRODUTTORI DI CONTENUTI
   ja: "\u30B3\u30F3\u30C6\u30F3\u30C4\u5236\u4F5C\u8005\u306E\u65B9\u3078"
   ko: "\uCF58\uD150\uCE20 \uC81C\uC791\uC790\uC6A9"
@@ -5243,6 +5274,7 @@
   de: 'Was du eventuell machen kannst:'
   en: 'What you may do:'
   es: 'Lo que puede hacer:'
+  fr: "Ce que vous pouvez faire\_:"
   it: 'Cosa puoi fare:'
   ja: "\u3054\u5354\u529B\u3044\u305F\u3060\u3051\u308B\u3053\u3068\uFF1A"
   ko: "\uD558\uB294 \uC77C:"
@@ -5257,6 +5289,7 @@
   de: 1) Arbeiten mit technischen Dokumente, Anleitungen und Tutorials
   en: 1) work with technical documentation, instructions and tutorials;
   es: "1) Trabajar con documentaci\xF3n t\xE9cnica, instrucciones y tutoriales;"
+  fr: 1) travailler avec la documentation technique, les instructions et les tutoriels;
   it: 1) lavorare con documentazione tecnica, istruzioni e tutorial;
   ja: "1) \u6280\u8853\u6587\u66F8\u3001\u8AAC\u660E\u66F8\u3001\u30C1\u30E5\u30FC\
     \u30C8\u30EA\u30A2\u30EB\u306B\u76EE\u3092\u901A\u3059\u3002"
@@ -5277,6 +5310,7 @@
   de: "2) \xDCbersetzen der Inhalte in deiner Mutterspache"
   en: 2) translate content into your native language;
   es: 2) Traducir contenido a su idioma nativo;
+  fr: 2) traduire le contenu dans votre langue maternelle;
   it: 2) tradurre i contenuti nella tua lingua madre;
   ja: "2) \u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u6BCD\u8A9E\u306B\u7FFB\u8A33\u3059\
     \u308B\u3002"
@@ -5294,6 +5328,7 @@
     verfassen
   en: 3) make scientific papers based on Robonomics technologies;
   es: "3) Realizar art\xEDculos cient\xEDficos basados en tecnolog\xEDas de Robonomics;"
+  fr: "3) r\xE9diger des articles scientifiques fond\xE9s sur les technologies robonomiques;"
   it: 3) realizzare articoli scientifici basati sulle tecnologie di Robonomics;
   ja: "3) Robonomics\u6280\u8853\u306B\u57FA\u3065\u3044\u305F\u5B66\u8853\u8AD6\u6587\
     \u3092\u57F7\u7B46\u3059\u308B\u3002"
@@ -5313,6 +5348,7 @@
   de: 4) die Ideen der Robonomics verbreiten
   en: 4) popularize ideas of Robonomics.
   es: 4) Popularizar las ideas de Robonomics.
+  fr: "4) vulgariser les id\xE9es de robonomique."
   it: 4) diffondere le idee di Robonomics.
   ja: "4) Robonomics\u306E\u30A2\u30A4\u30C7\u30A2\u3092\u5E83\u3081\u308B\u3002"
   ko: "4) \uB85C\uBCF4\uB178\uBBF9\uC2A4\uC758 \uC544\uC774\uB514\uC5B4\uB97C \uB300\
@@ -5328,6 +5364,7 @@
   de: 'Wie das funktioniert:'
   en: 'How:'
   es: "C\xF3mo:"
+  fr: 'Comment:'
   it: 'Come:'
   ja: "\u305D\u306E\u65B9\u6CD5\uFF1A"
   ko: "\uBC29\uBC95:"
@@ -5340,6 +5377,7 @@
   de: "1) Erstelle Pull-Requests auf Github f\xFCr die"
   en: 1) make pull requests on GitHub for
   es: "1) Hacer solicitudes de extracci\xF3n en Github para el"
+  fr: 1) faire des demandes de tirage sur GitHub pour
   it: 1) effettuare pull request su Github per il sito
   ja: "1) GitHub\u3067\u30D7\u30EB\u30EA\u30AF\u30A8\u30B9\u30C8\u3092\u884C\u3046"
   ko: "1) GitHub\uC5D0\uC11C pull \uC694\uCCAD\uD558\uAE30"
@@ -5353,6 +5391,7 @@
   de: Website
   en: website
   es: website
+  fr: site Internet
   it: web
   ja: "Web\u30B5\u30A4\u30C8"
   ko: "\uC6F9\uC0AC\uC774\uD2B8"
@@ -5365,6 +5404,7 @@
   de: Wiki
   en: wiki
   es: wiki
+  fr: wiki
   it: wiki;
   ja: "Wiki\u306E\u5834\u5408"
   ko: "\uC704\uD0A4\uC6A9"
@@ -5378,6 +5418,7 @@
   de: "2) im Ambassador-Chat besprechen was wir \xFCbersetzen sollten"
   en: 2) discuss what we need to translate in ambassador chat;
   es: 2) Discutir lo que necesitamos traducir en el chat de Ambassadors;
+  fr: 2) discuter de ce que nous devons traduire dans le clavardage des ambassadeurs;
   it: 2) discutere di cosa dobbiamo tradurre nella chat degli ambassador;
   ja: "2) \u30A2\u30F3\u30D0\u30B5\u30C0\u30FC\u30C1\u30E3\u30C3\u30C8\u3067\u7FFB\
     \u8A33\u3059\u3079\u304D\u3082\u306E\u306B\u3064\u3044\u3066\u8A71\u3057\u5408\
@@ -5401,6 +5442,8 @@
     \ einzigartig zu gestalten"
   en: 3) create video and text content, try to make it unique for your followers;
   es: "3) Crea contenido de video y texto, trata de hacerlo \xFAnico para tus seguidores;"
+  fr: "3) cr\xE9er du contenu vid\xE9o et textuel, essayer de le rendre unique pour\
+    \ vos abonn\xE9s;"
   it: 3) crea contenuti video e testuali, prova a renderli unici per i tuoi follower;
   ja: "3) \u52D5\u753B\u3084\u30C6\u30AD\u30B9\u30C8\u30B3\u30F3\u30C6\u30F3\u30C4\
     \u3092\u4F5C\u308A\u3001\u30D5\u30A9\u30ED\u30EF\u30FC\u306B\u5408\u3063\u305F\
@@ -5428,6 +5471,7 @@
   de: 4) die Fortschritte mit anderen Ambassadoren und dem Team teilen
   en: 4) share progress with other ambassadors and team.
   es: 4) Compartir el progreso con otros Ambassadors y el equipo.
+  fr: "4) partager les progr\xE8s avec les autres ambassadeurs et l\u2019\xE9quipe."
   it: 4) condividi i progressi con altri ambassador e col team.
   ja: "4) \u307B\u304B\u306E\u30A2\u30F3\u30D0\u30B5\u30C0\u30FC\u3084\u30C1\u30FC\
     \u30E0\u3068\u9032\u6357\u3092\u5171\u6709\u3059\u308B\u3002"
@@ -5447,6 +5491,7 @@
   de: "F\xFCr Unterst\xFCtzer der Community"
   en: For community helpers
   es: Para Ayudantes Comunitarios
+  fr: Pour les aidants communautaires
   it: PER I COMMUNITY HELPERS
   ja: "\u30B3\u30DF\u30E5\u30CB\u30C6\u30A3\u30FC\u30D8\u30EB\u30D1\u30FC\u306E\u65B9\
     \u3078"
@@ -5464,6 +5509,8 @@
   en: 1) organize local offline meetups and hackathons based on Robonomics technologies;
   es: "1) Organizar reuniones locales offline y hackatones basados en tecnolog\xED\
     as de Robonomics;"
+  fr: "1) organiser des meetups et des hackathons locaux hors ligne bas\xE9s sur les\
+    \ technologies robonomics;"
   it: 1) organizzare meetup e hackathon offline locali basati sulle tecnologie di
     Robonomics;
   ja: "1) Robonomics\u6280\u8853\u3092\u30D9\u30FC\u30B9\u306B\u3057\u3066\u3001\u5730\
@@ -5489,6 +5536,7 @@
   de: 2) Teilnahme an thematischen Konferenzen im Namen von Robonomics
   en: 2) participate in thematic conferences on behalf of Robonomics;
   es: "2) Participar en conferencias tem\xE1ticas en nombre de Robonomics;"
+  fr: "2) participer \xE0 des conf\xE9rences th\xE9matiques pour le compte de Robonomics;"
   it: 2) partecipare a convegni tematici per conto di Robonomics;
   ja: "2\uFF09Robonomics\u3092\u4EE3\u8868\u3057\u3066\u30C6\u30FC\u30DE\u30AB\u30F3\
     \u30D5\u30A1\u30EC\u30F3\u30B9\u306B\u53C2\u52A0\u3059\u308B\u3002"
@@ -5512,6 +5560,8 @@
     forum moderation, various social networks;'
   es: "3) Trabajar online con la comunidad: meetups y hackatones online, administraci\xF3\
     n de chat, moderaci\xF3n de foros, varias redes sociales;"
+  fr: "3) travailler en ligne avec la communaut\xE9\_: meetups et hackathons en ligne,\
+    \ administration de chat, mod\xE9ration de forum, divers r\xE9seaux sociaux;"
   it: '3) lavorare online con la community: meetup e hackathon online, amministrazione
     chat, moderazione forum, vari social network;'
   ja: "3\uFF09\u30AA\u30F3\u30E9\u30A4\u30F3\u30DF\u30FC\u30C8\u30A2\u30C3\u30D7\u3084\
@@ -5549,6 +5599,7 @@
   de: 4) Kommunikation mit anderen Projekten zur Zusammenarbeit.
   en: 4) communicate with other projects for collaboration.
   es: "4) Comunicarse con otros proyectos de colaboraci\xF3n."
+  fr: "4) communiquer avec d\u2019autres projets aux fins de collaboration."
   it: 4) comunicare con altri progetti di collaborazioni.
   ja: "4\uFF09\u307B\u304B\u306E\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3068\u30B3\u30DF\
     \u30E5\u30CB\u30B1\u30FC\u30B7\u30E7\u30F3\u3092\u53D6\u308A\u3001\u30B3\u30E9\
@@ -5568,6 +5619,7 @@
   de: "1) Mach deine Vorschl\xE4ge im Ambassador Chat"
   en: "1) make your suggestion in ambassador\u2019s chat;"
   es: 1) Haz tu sugerencia en el chat de Ambassadors;
+  fr: "1) faites votre suggestion dans la conversation de l\u2019ambassadeur;"
   it: 1) esponi i tuoi suggerimenti nella chat degli ambassador;
   ja: "1\uFF09\u30A2\u30F3\u30D0\u30B5\u30C0\u30FC\u30C1\u30E3\u30C3\u30C8\u3067\u63D0\
     \u6848\u3059\u308B\u3002"
@@ -5585,6 +5637,7 @@
   de: "2) Bei Bedarf Werbematerial f\xFCr offline Veranstaltungen bestellen"
   en: 2) get merchandise if needed for offline events;
   es: 2) Obtener merchandise si es necesario para eventos offline;
+  fr: "2) obtenir de la marchandise au besoin pour des \xE9v\xE9nements hors ligne;"
   it: 2) otteni merchandise, se necessario, per eventi offline;
   ja: "2\uFF09\u5FC5\u8981\u306B\u5FDC\u3058\u3066\u30AA\u30D5\u30E9\u30A4\u30F3\u30A4\
     \u30D9\u30F3\u30C8\u7528\u306E\u30B0\u30C3\u30BA\u3092\u5165\u624B\u3059\u308B\
@@ -5606,6 +5659,7 @@
   de: 3) die Fortschritte mit anderen Ambassadoren und dem Team teilen
   en: 3) share progress with other ambassadors and team.
   es: 3) Compartir el progreso con otros Ambassadors y el equipo.
+  fr: "3) partager les progr\xE8s avec les autres ambassadeurs et l\u2019\xE9quipe."
   it: 3)condividi i progressi con altri ambassador e col team.
   ja: "3\uFF09\u307B\u304B\u306E\u30A2\u30F3\u30D0\u30B5\u30C0\u30FC\u3084\u30C1\u30FC\
     \u30E0\u3068\u9032\u6357\u3092\u5171\u6709\u3059\u308B\u3002"
@@ -5625,6 +5679,8 @@
     \ Chat"
   en: "Get all our support and visual materials in ambassador\u2019s chat"
   es: Obtenga todo nuestro soporte y materiales visuales en el chat del embajador
+  fr: "Obtenez tout notre soutien et notre mat\xE9riel visuel dans le clavardage des\
+    \ ambassadeurs"
   it: OTTIENI TUTTO IL NOSTRO SUPPORTO E I MATERIALI VISIVI NELLA CHAT DEGLI AMBASSADOR
   ja: "\u30A2\u30F3\u30D0\u30B5\u30C0\u30FC\u30C1\u30E3\u30C3\u30C8\u3067\u5168\u9762\
     \u7684\u30B5\u30DD\u30FC\u30C8\u3068\u30D3\u30B8\u30E5\u30A2\u30EB\u8CC7\u6599\
@@ -5652,6 +5708,7 @@
 - alias: ARCHITECTURE
   az: "ARX\u0130TEKTURA"
   en: ARCHITECTURE
+  fr: ARCHITECTURE
   it: ARCHITETTURA
   pt: ARQUITETURA
   ru: "\u0410\u0420\u0425\u0418\u0422\u0415\u041A\u0422\u0423\u0420\u0410"
@@ -5660,6 +5717,7 @@
 - alias: ROBONOMICS ARCHITECTURE
   az: "ROBONOM\u0130KA ARXITEKTURAS\u0130"
   en: ROBONOMICS ARCHITECTURE
+  fr: ROBONOMICS ARCHITECTURE
   it: ARCHITETTURA DI ROBONOMICS
   pt: ARQUITETURA DA ROBONOMICS
   ru: "\u0410\u0420\u0425\u0418\u0422\u0415\u041A\u0422\u0423\u0420\u0410 \u042D\u041A\
@@ -5689,6 +5747,13 @@
     \ have both the ability to speak the language of human economics and also the\
     \ machines\u2019 own economics to perform various operations in the world around\
     \ them at a speed not available to humans."
+  fr: "L\u2019id\xE9e principale que les auteurs de Robonomics essay\xE9 de transmettre\
+    \ avant - est l\u2019\xE9volution naturelle, logique et apparemment in\xE9vitable\
+    \ du niveau actuel de l\u2019\xE9conomie en services enti\xE8rement automatis\xE9\
+    s. Les services automatis\xE9s devront avoir \xE0 la fois la capacit\xE9 de parler\
+    \ le langage de l\u2019\xE9conomie humaine et aussi la propre \xE9conomie des\
+    \ machines pour effectuer diverses op\xE9rations dans le monde qui les entoure\
+    \ \xE0 une vitesse qui n\u2019est pas disponible pour les humains."
   it: "L'idea principale che gli autori di Robonomics hanno cercato di trasmettere\
     \ per prima - \xE8 l'evoluzione naturale, logica e apparentemente inevitabile\
     \ dall'attuale tessuto economico a dei servizi completamente automatizzati. Questi\
@@ -5763,6 +5828,12 @@
     of technical information exchange through cloud services to the organization of
     technical-economic interaction through a decentralized, globally accessible network
     of providers.
+  fr: "Ensuite, nous aimerions vous montrer les domaines pratiques de l\u2019interaction\
+    \ homme-machine en utilisant la technologie moderne d\u2019Internet. Nous passerons\
+    \ de l\u2019architecture des dispositifs IoT familiers de l\u2019\xE9change d\u2019\
+    informations techniques par les services cloud \xE0 l\u2019organisation de l\u2019\
+    interaction technico-\xE9conomique par un r\xE9seau d\xE9centralis\xE9 et globalement\
+    \ accessible de fournisseurs."
   it: Successivamente, vorremmo mostrarvi le aree pratiche dell'interazione uomo-macchina
     utilizzando le moderne tecnologie Internet. Passeremo dalla familiare architettura
     dei dispositivi IoT per lo scambio di informazioni tecniche attraverso i servizi
@@ -5828,6 +5899,12 @@
     at the basics of the Internet of Things in order to highlight the problems and
     main challenges faced by the creators of IoT systems and to the solution of which
     Robonomics is aimed.
+  fr: "Pour commencer, nous devons faire une excursion dans la r\xE9gion qui est le\
+    \ plus clairement li\xE9e \xE0 la connexion r\xE9seau des syst\xE8mes automatis\xE9\
+    s. Apr\xE8s cela, nous examinerons les bases de l\u2019Internet des objets afin\
+    \ de mettre en \xE9vidence les probl\xE8mes et les principaux d\xE9fis auxquels\
+    \ sont confront\xE9s les cr\xE9ateurs de syst\xE8mes IoT et \xE0 la solution de\
+    \ laquelle Robonomics est vis\xE9."
   it: "Per cominciare, occorre fare un'escursione nell'area che \xE8 chiaramente pi\xF9\
     \ correlata alla connessione in rete degli impianti automatizzati. Successivamente\
     \ esamineremo le basi dell'Internet of Things, per evidenziarne i problemi e le\
@@ -5874,6 +5951,7 @@
   az: "\u018F\u015EY\u018FL\u018FR\u0130N \u0130NTERNET\u0130N\u0130N V\u018FZ\u0130\
     YY\u018FT\u0130N\u018F \u0130CMAL (IOT)"
   en: OVERVIEW OF THE STATE OF THE INTERNET OF THINGS (IOT)
+  fr: "APER\xC7U DE L\u2019\xC9TAT DE L\u2019INTERNET DES OBJETS"
   it: UNA PANORAMICA SULLO STATO DELL'INTERNET OF THINGS (IOT)
   pt: "VIS\xC3O GERAL DO ESTADO DA INTERNET DAS COISAS (IOT)"
   ru: "\u041E\u0411\u0417\u041E\u0420 \u0421\u041E\u0421\u0422\u041E\u042F\u041D\u0418\
@@ -5897,6 +5975,13 @@
     were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed
     and partially implemented the automated collection of information on the production
     volumes of an individual plant as part of the design of the
+  fr: "La question de l\u2019accessibilit\xE9 du r\xE9seau des dispositifs automatiques\
+    \ a \xE9t\xE9 discut\xE9e partout dans la plan\xE8te depuis les ann\xE9es 60,\
+    \ et d\xE9j\xE0 \xE0 cette \xE9poque des tentatives assez s\xE9rieuses ont \xE9\
+    t\xE9 faites pour le r\xE9soudre. Par exemple, le cybern\xE9ticien sovi\xE9tique\
+    \ Viktor Glushkov a propos\xE9 et partiellement mis en \u0153uvre la collecte\
+    \ automatis\xE9e d\u2019informations sur les volumes de production d\u2019une\
+    \ usine individuelle dans le cadre de la conception de la"
   it: "La questione sull'accessibilit\xE0 alla rete dei dispositivi automatici, \xE8\
     \ stata discussa in tutto il pianeta dagli anni '60 e gi\xE0 a quel tempo sono\
     \ stati fatti dei tentativi piuttosto seri per risolverlo. Ad esempio, il cibernetico\
@@ -5950,6 +6035,7 @@
 - alias: OGAS
   az: OGAS
   en: OGAS
+  fr: OGAS
   it: OGAS
   pt: OGAS
   ru: "\u041E\u0413\u0410\u0421"
@@ -5969,6 +6055,10 @@
   en: national information system in the 60s and 70s. It is widely known how the Coca-Cola
     vending machine was connected to the ARPANET in the 1980s so that the machines
     could report the availability of drinks and their temperature.
+  fr: "syst\xE8me d\u2019information national dans les ann\xE9es 60 et 70. Il est\
+    \ bien connu que le distributeur Coca-Cola a \xE9t\xE9 connect\xE9 \xE0 l\u2019\
+    ARPANET dans les ann\xE9es 1980 afin que les machines puissent d\xE9clarer la\
+    \ disponibilit\xE9 des boissons et leur temp\xE9rature."
   it: ", negli anni '60 e '70. \xC8 noto che i distributori automatici di Coca-Cola\
     \ fossero collegati ad ARPANET negli anni '80, in modo che potessero segnalare\
     \ la disponibilit\xE0 di bevande e la loro temperatura."
@@ -6026,6 +6116,17 @@
     \ over the past 10 years (with a forecast of 25 billion units by 2030), and this\
     \ has spurred researchers and developers to create new IoT applications in various\
     \ areas such as healthcare, home automation, agribusiness, environmental protection."
+  fr: "Mais encore, le d\xE9veloppement actuel de l\u2019IdO se produit aujourd\u2019\
+    hui, en raison de l\u2019utilisation g\xE9n\xE9ralis\xE9e des technologies habilitantes.\
+    \ Les principaux moteurs de l\u2019\xE9volution rapide des applications de l\u2019\
+    Internet des objets sont les r\xE9sultats du d\xE9veloppement de nombreux domaines\
+    \ \u2013 des communications sans fil de diverses gammes aux dispositifs embarqu\xE9\
+    s, en passant par l\u2019analyse en nuage et l\u2019apprentissage automatique.\
+    \ Le nombre de dispositifs IoT a augment\xE9 r\xE9guli\xE8rement au cours des\
+    \ 10 derni\xE8res ann\xE9es (avec une pr\xE9vision de 25\_milliards d\u2019unit\xE9\
+    s d\u2019ici 2030), ce qui a incit\xE9 les chercheurs et les d\xE9veloppeurs \xE0\
+    \ cr\xE9er de nouvelles applications IoT dans divers domaines tels que la sant\xE9\
+    , la domotique, l\u2019agro-industrie, protection de l\u2019environnement."
   it: "L'effettivo sviluppo dell'IoT sta avvenendo ora, grazie all'uso sempre pi\xF9\
     \ diffuso di tecnologie abilitanti. I principali fattori trainanti della rapida\
     \ evoluzione delle applicazioni Internet of Things, sono i risultati dello sviluppo\
@@ -6132,6 +6233,12 @@
     have been proposed, and by averaging them, we can distinguish three basic components
     of an IoT system: devices, network infrastructure, analytical, computing and control
     machines.'
+  fr: "Nous nous int\xE9ressons davantage au processus de construction de syst\xE8\
+    mes IoT et aux t\xE2ches qui en d\xE9coulent. Au fil des ann\xE9es de recherche,\
+    \ de nombreuses architectures diff\xE9rentes ont \xE9t\xE9 propos\xE9es, et en\
+    \ les faisant la moyenne, nous pouvons distinguer trois composants de base d\u2019\
+    un syst\xE8me IoT\_: les appareils, l\u2019infrastructure r\xE9seau, les machines\
+    \ analytiques, informatiques et de contr\xF4le."
   it: "Noi siamo pi\xF9 interessati al processo di creazione di sistemi IoT e ai compiti\
     \ che sorgono in questo processo. Negli anni di ricerca sono state proposte molte\
     \ architetture diverse e facendo una media, possiamo distinguere tre componenti\
@@ -6178,6 +6285,7 @@
 - alias: NEW CHALLENGES
   az: "YEN\u0130 \xC7\u018FT\u0130NL\u0130KL\u018FR"
   en: NEW CHALLENGES
+  fr: "NOUVEAUX D\xC9FIS"
   it: NUOVE SFIDE
   pt: NOVOS DESAFIOS
   ru: "\u041D\u043E\u0432\u044B\u0435 \u0432\u044B\u0437\u043E\u0432\u044B"
@@ -6226,6 +6334,20 @@
     \ systems between the cloud and devices taking over some of the cloud\u2019s functions.\
     \ Therefore, the creation of edge systems has become one of the new challenges\
     \ of building the Internet of Things."
+  fr: "Le d\xE9veloppement et l\u2019application de l\u2019Internet des objets ont\
+    \ montr\xE9 que la r\xE9solution de probl\xE8mes typiques ne suffit pas. Des concepts\
+    \ et des principes compl\xE8tement nouveaux, bas\xE9s sur des erreurs ant\xE9\
+    rieures et des lacunes identifi\xE9es, ont \xE9merg\xE9 de nos jours. Cette approche\
+    \ certainement pratique de l\u2019utilisation des services en nuage s\u2019est\
+    \ av\xE9r\xE9 avoir un certain nombre de lacunes critiques li\xE9es \xE0 l\u2019\
+    \xE9volutivit\xE9, la vie priv\xE9e et la s\xE9curit\xE9. Dans un effort pour\
+    \ r\xE9soudre ces probl\xE8mes, il a \xE9t\xE9 propos\xE9 de rapprocher le traitement\
+    \ des donn\xE9es, la logique et le calcul de l\u2019endroit imm\xE9diat o\xF9\
+    \ ils sont utilis\xE9s. Ainsi, les concepts de brouillard et d\u2019informatique\
+    \ de bord ont \xE9merg\xE9, avec des syst\xE8mes interm\xE9diaires entre le nuage\
+    \ et les appareils prenant en charge certaines fonctions du nuage. Par cons\xE9\
+    quent, la cr\xE9ation de syst\xE8mes de bord est devenue l\u2019un des nouveaux\
+    \ d\xE9fis de la construction de l\u2019Internet des objets."
   it: "Lo sviluppo e l'applicazione dell'Internet of Things ha dimostrato che la risoluzione\
     \ dei problemi tipici non basta. Al giorno d'oggi sono emersi concetti e principi\
     \ completamente nuovi, basati su errori precedenti e falle che sono state identificate.\
@@ -6364,6 +6486,14 @@
     \ its development. The Internet of Things acts as the main integrator of digital\
     \ twins, but this task is much more profound than the usual connectivity of IoT\
     \ devices."
+  fr: "Un autre d\xE9fi r\xE9cent pour la construction de l\u2019IdO a \xE9t\xE9 le\
+    \ concept du jumeau num\xE9rique - une version num\xE9rique de l\u2019\xE9quipement\
+    \ r\xE9el qui copie ses sp\xE9cifications et ses donn\xE9es historiques. Ce concept\
+    \ est \xE0 son meilleur dans les domaines o\xF9 il est n\xE9cessaire d\u2019avoir\
+    \ une sp\xE9cification pr\xE9cise et compl\xE8te d\u2019un processus et \xEAtre\
+    \ en mesure de pr\xE9dire son d\xE9veloppement. L\u2019Internet des objets est\
+    \ le principal int\xE9grateur des jumeaux num\xE9riques, mais cette t\xE2che est\
+    \ beaucoup plus profonde que la connectivit\xE9 habituelle des appareils IoT."
   it: "Un'altra sfida recente per la creazione dell'IoT \xE8 stata il concetto di\
     \ digital twin, una versione digitale di apparecchiature reali che ne copia le\
     \ specifiche e i dati storici. Questo concetto d\xE0 il meglio di s\xE9 nelle\
@@ -6450,6 +6580,13 @@
     available specifically to devices. The Internet of Things not only connects the
     user and the device, but also helps the devices to handle the tasks of providing
     a service for the person, but autonomously.
+  fr: "En ce moment, nous assistons \xE0 tout un segment du r\xE9seau, con\xE7u et\
+    \ pratique non pas pour les personnes, mais pour les machines. L'Internet des\
+    \ objets n'est plus seulement la m\xE9canique de connexion d'un appareil au r\xE9\
+    seau, mais davantage de services, cr\xE9\xE9s et disponibles sp\xE9cifiquement\
+    \ pour les appareils. L'Internet des objets connecte non seulement l'utilisateur\
+    \ et l'appareil, mais aide \xE9galement les appareils \xE0 g\xE9rer les t\xE2\
+    ches de fourniture d'un service \xE0 la personne, mais de mani\xE8re autonome."
   it: "In questo momento stiamo assistendo a un intero segmento della rete, pensato\
     \ e conveniente non per le persone, ma per le macchine. L'Internet of Things non\
     \ \xE8 pi\xF9 solo il meccanismo che connette un dispositivo alla rete, ma dei\
@@ -6511,6 +6648,7 @@
 - alias: CLASSIFICATION OF IOT DEVICES
   az: "IOT C\u0130HAZLARININ T\u018FSN\u0130FATI"
   en: CLASSIFICATION OF IOT DEVICES
+  fr: CLASSIFICATION DES DISPOSITIFS IOT
   it: CLASSIFICAZIONE DEI DISPOSITIVI IOT
   pt: "CLASSIFICA\xC7\xC3O DOS DISPOSITIVOS IOT"
   ru: "\u041A\u041B\u0410\u0421\u0421\u0418\u0424\u0418\u041A\u0410\u0426\u0418\u042F\
@@ -6520,6 +6658,7 @@
 - alias: EMBEDDED IOT SYSTEMS
   az: "QURULMU\u015E IOT S\u0130STEML\u018FR"
   en: EMBEDDED IOT SYSTEMS
+  fr: "SYST\xC8ME IOT ATTACH\xC9"
   it: SISTEMI IOT EMBEDDED
   pt: SISTEMAS IOT EMBARCADOS
   ru: "\u0412\u0421\u0422\u0420\u0410\u0418\u0412\u0410\u0415\u041C\u042B\u0415 IOT-\u0421\
@@ -6543,6 +6682,12 @@
     of the IoT ecosystems to provide basic functionality. Have to be energy efficient
     and small. Have limited computing and communication resources. IoT gateways or
     controllers usually act as signal receivers.
+  fr: "Ces syst\xE8mes n\u2019ont pas d\u2019interface utilisateur et sont g\xE9n\xE9\
+    ralement utilis\xE9s au niveau le plus bas des \xE9cosyst\xE8mes IoT pour fournir\
+    \ des fonctionnalit\xE9s de base. Doivent \xEAtre \xE9conomes en \xE9nergie et\
+    \ de petite taille. Ont des ressources informatiques et de communication limit\xE9\
+    es. Les passerelles ou les contr\xF4leurs IoT servent habituellement de r\xE9\
+    cepteurs de signaux."
   it: "Tali sistemi non hanno interfacce utente e sono generalmente utilizzati al\
     \ livello pi\xF9 basso degli ecosistemi IoT per fornire funzionalit\xE0 di base.\
     \ Devono essere piccoli ed efficienti dal punto di vista energetico. Disporre\
@@ -6595,6 +6740,7 @@
   az: "EDGE S\u0130STEMLER\u0130: IOT \u015EL\xDCZU V\u018F N\u018FZAR\u018FTL\u018F\
     R\u0130"
   en: 'EDGE-SYSTEMS: IOT GATEWAYS AND CONTROLLERS'
+  fr: "SYST\xC8MES DE BORDURE\_: IOT PASSERELLES ET CONTR\xD4LEURS"
   it: 'SISTEMI EDGE: GATEWAY IOT E CONTROLLER'
   pt: 'SISTEMAS EDGE: GATEWAYS E CONTROLADORES IOT'
   ru: "EDGE-\u0421\u0418\u0421\u0422\u0415\u041C\u042B: IOT-\u0428\u041B\u042E\u0417\
@@ -6626,6 +6772,14 @@
     signals backwards. Often these devices are a more sophisticated version of the
     WiFi router, equipped with a single board computer to perform primary processing
     of information from devices without leaving the local network.
+  fr: "Ces syst\xE8mes servent de lien entre les syst\xE8mes int\xE9gr\xE9s accessibles\
+    \ localement et l\u2019Internet mondial. Ils prennent g\xE9n\xE9ralement en charge\
+    \ plusieurs protocoles de communication de syst\xE8mes embarqu\xE9s et transf\xE8\
+    rent la t\xE9l\xE9m\xE9trie des appareils au nuage et contr\xF4lent les signaux\
+    \ \xE0 l\u2019envers. Souvent, ces appareils sont une version plus sophistiqu\xE9\
+    e du routeur WiFi, \xE9quip\xE9 d\u2019un ordinateur de carte unique pour effectuer\
+    \ le traitement primaire de l\u2019information \xE0 partir des appareils sans\
+    \ quitter le r\xE9seau local."
   it: "Questi sistemi fungono da collegamento tra i sistemi embedded accessibili localmente\
     \ e l'Internet globale. Solitamente supportano pi\xF9 protocolli di comunicazione\
     \ di sistemi embedded e trasferiscono la telemetria dai dispositivi al cloud e\
@@ -6694,6 +6848,7 @@
 - alias: AUTONOMOUS SYSTEMS
   az: "AVTONOM S\u0130STEML\u018FR"
   en: AUTONOMOUS SYSTEMS
+  fr: "SYST\xC8MES AUTONOMES"
   it: SISTEMI AUTONOMI
   pt: "SISTEMAS AUT\xD4NOMOS"
   ru: "\u0410\u0412\u0422\u041E\u041D\u041E\u041C\u041D\u042B\u0415 \u0421\u0418\u0421\
@@ -6727,6 +6882,14 @@
     necessary software for accessing the Internet of Things is installed directly
     on the computer of the stand-alone system. Data is collected and partially processed
     locally, then broadcast to the Internet similar to any full-fledged network device.
+  fr: "Cette classe comprend des complexes automatis\xE9s (tels que Spot de Boston\
+    \ Dynamics), qui ont un composant de contr\xF4le au niveau d'un ordinateur complet\
+    \ avec un processeur haute performance et une grande quantit\xE9 de m\xE9moire.\
+    \ Dans de tels cas, le robot est connect\xE9 \xE0 Internet sans solutions interm\xE9\
+    diaires suppl\xE9mentaires (syst\xE8mes de bord). Le logiciel n\xE9cessaire pour\
+    \ acc\xE9der \xE0 l'Internet des objets est install\xE9 directement sur l'ordinateur\
+    \ du syst\xE8me autonome. Les donn\xE9es sont recueillies et partiellement diffus\xE9\
+    es sur Internet comme tout dispositif de r\xE9seau \xE0 part enti\xE8re."
   it: "Questa classe include automi complessi (come lo Spot della Boston Dynamics),\
     \ che hanno una componente di controllo al livello di un computer completo con\
     \ un processore ad alte prestazioni e una grande quantit\xE0 di memoria. In questi\
@@ -6803,6 +6966,7 @@
 - alias: 'INTERNET OF THINGS PROVIDERS '
   az: "IoT T\u018FM\u0130NAT\xC7ILARI"
   en: 'INTERNET OF THINGS PROVIDERS '
+  fr: FOURNISSEURS INTERNET DES OBJETS
   it: FORNITORI DELL'INTERNET OF THINGS
   pt: PROVEDORES DE INTERNET DE COISAS
   ru: "\u041F\u0420\u041E\u0412\u0410\u0419\u0414\u0415\u0420\u042B \u0418\u041D\u0422\
@@ -6826,6 +6990,11 @@
     and analytics, as well as management of smart devices over the Internet. The main
     criteria for the quality of the provider is security of operations, stability
     of connection and availability of the provider from anywhere in the world.
+  fr: "Le travail principal des fournisseurs IoT est de fournir aux utilisateurs un\
+    \ acc\xE8s \xE0 distance aux donn\xE9es et aux analyses, ainsi que la gestion\
+    \ des appareils intelligents sur Internet. Les principaux crit\xE8res de qualit\xE9\
+    \ du fournisseur sont la s\xE9curit\xE9 des op\xE9rations, la stabilit\xE9 de\
+    \ la connexion et la disponibilit\xE9 du fournisseur de partout dans le monde."
   it: "Il compito principale dei provider IoT \xE8 fornire agli utenti l'accesso remoto\
     \ a dati e analisi, nonch\xE9 la gestione di dispositivi intelligenti su Internet.\
     \ I criteri principali per misurare la qualit\xE0 di un provider sono la sicurezza\
@@ -6885,6 +7054,11 @@
     compatible with the cloud smart device, setting up cloud-side management services
     after the first successful connection of a device, connection of various kinds
     of analytical services.'
+  fr: "Le sch\xE9ma standard pour travailler avec un fournisseur IoT comprend\_: l\u2019\
+    installation de logiciels compatibles avec le dispositif intelligent cloud, la\
+    \ mise en place de services de gestion c\xF4t\xE9 cloud apr\xE8s la premi\xE8\
+    re connexion r\xE9ussie d\u2019un dispositif, la connexion de divers types de\
+    \ services analytiques."
   it: "Lo schema standard per lavorare con un provider IoT \xE8 il seguente: installazione\
     \ di software compatibile con il cloud smart device, impostazione di servizi di\
     \ gestione lato cloud dopo la prima connessione riuscita con un dispositivo, connessione\
@@ -6928,6 +7102,7 @@
   az: "R\u018FQ\u018FMSAL \u018FK\u0130ZL\u018FR \u018F\u015EYALARIN \u0130NTERNET\u0130\
     N\u0130N \xDCR\u018FY\u0130D\u0130R"
   en: DIGITAL TWINS ARE THE HEART OF THE INTERNET OF THINGS
+  fr: "LES JUMEAUX NUM\xC9RIQUES SONT C\u0152UR DE L'INTERNET DES OBJETS"
   it: I DIGITAL TWIN SONO IL CUORE DELL'INTERNET OF THINGS
   pt: "G\xCAMEOS DIGITAIS S\xC3O O CORA\xC7\xC3O DA INTERNET DAS COISAS"
   ru: "\u0426\u0418\u0424\u0420\u041E\u0412\u042B\u0415 \u0414\u0412\u041E\u0419\u041D\
@@ -6966,6 +7141,16 @@
     giving personalized control to each user can be critical. Lastly, it is extremely
     useful to keep the last actual state of the device available in case it goes out
     of operation.
+  fr: "En parlant de jumeaux num\xE9riques, il convient de noter que leur mise en\
+    \ \u0153uvre architecturale est n\xE9cessaire, comme un refus de donner \xE0 l\u2019\
+    utilisateur un acc\xE8s direct aux dispositifs de contr\xF4le et de changer leur\
+    \ \xE9tat. Parmi les raisons les plus \xE9videntes de rejet sont, d\u2019abord,\
+    \ la pr\xE9sence de leurs propres exigences et conditions dans les appareils juste\
+    \ avant le lancement. Deuxi\xE8mement, si plusieurs appareils utilisateurs doivent\
+    \ acc\xE9der \xE0 une seule source de donn\xE9es, il peut \xEAtre essentiel de\
+    \ donner un contr\xF4le personnalis\xE9 \xE0 chaque utilisateur. Enfin, il est\
+    \ extr\xEAmement utile de garder le dernier \xE9tat r\xE9el de l\u2019appareil\
+    \ disponible en cas de panne."
   it: "Parlando di digital twin, va fatto notatre che a livello architettonico \xE8\
     \ richiesta la loro implementazione per non consentire all'utente di accedere\
     \ direttamente ai dispositivi di controllo e modificarne lo stato. Tra le ragioni\
@@ -7066,6 +7251,10 @@
     user and the actual generation of actual data by the sensors. To illustrate this
     principle, below is the process of the user working with an IoT device using a
     digital twin.
+  fr: "En cons\xE9quence, nous avons une s\xE9paration de la boucle d\u2019\xE9change\
+    \ d\u2019informations avec l\u2019utilisateur et la production r\xE9elle de donn\xE9\
+    es par les capteurs. Pour illustrer ce principe, voici le processus de l\u2019\
+    utilisateur travaillant avec un dispositif IoT utilisant un jumeau num\xE9rique."
   it: "Di conseguenza, abbiamo una separazione fra il ciclo di scambio di informazioni\
     \ con l'utente e l'effettiva generazione di dati da parte dei sensori. Per illustrare\
     \ questo principio, di seguito \xE8 riportato il processo di un utente che lavora\
@@ -7116,6 +7305,7 @@
   az: "BULUD X\u0130DM\u018FTL\u018FR\u0130ND\u018F IOT M\u018FLUMATLARININ H\u018F\
     R\u018FK\u018FT\u0130"
   en: IOT DATA FLOWS IN CLOUD SERVICES
+  fr: "IOT LES FLUX DE DONN\xC9ES DANS LES SERVICES CLOUD"
   it: FLUSSI DI DATI IOT NEI SERVIZI CLOUD
   pt: "FLUXOS DE DADOS DA IOT EM SERVI\xC7OS DE NUVEM"
   ru: "\u041F\u041E\u0422\u041E\u041A\u0418 IOT-\u0414\u0410\u041D\u041D\u042B\u0425\
@@ -7133,6 +7323,10 @@
   en: Input values for cloud triggers. For example, the cloud service sends various
     notifications to the user in the event of a report from a car alarm sensor about
     a strike.
+  fr: "Valeurs d\u2019entr\xE9e pour les d\xE9clencheurs de nuage. Par exemple, le\
+    \ service infonuagique envoie diverses notifications \xE0 l\u2019utilisateur en\
+    \ cas de signalement d\u2019une gr\xE8ve par un d\xE9tecteur d\u2019alarme de\
+    \ voiture."
   it: Valori di input per i cloud trigger. Ad esempio, il servizio cloud invia diverse
     notifiche all'utente in caso di segnalazione di un urto da parte di un sensore
     d'allarme per auto.
@@ -7167,6 +7361,9 @@
     l\u0259nm\u0259si."
   en: Output data for complex analytics that cannot be produced at the edge level.
     For example, when processing video for face recognition in a crowd.
+  fr: "Donn\xE9es de sortie pour les analyses complexes qui ne peuvent pas \xEAtre\
+    \ produites au niveau de la p\xE9riph\xE9rie. Par exemple, lors du traitement\
+    \ de la vid\xE9o pour la reconnaissance faciale dans une foule."
   it: Output di dati per analisi complesse che non possono essere prodotte a livello
     edge. Ad esempio, durante l'elaborazione di video per il riconoscimento facciale
     in mezzo alla folla.
@@ -7198,6 +7395,9 @@
   en: "The basis for forming a digital twin of the device in order to create a cast\
     \ of its state. For example, at the user\u2019s request in the mobile app or on\
     \ the website."
+  fr: "La base pour former un jumeau num\xE9rique de l\u2019appareil afin de cr\xE9\
+    er une fonte de son \xE9tat. Par exemple, \xE0 la demande de l\u2019utilisateur\
+    \ dans l\u2019application mobile ou sur le site Web."
   it: La base per formare un digital twin del dispositivo al fine di creare un cast
     del suo stato. Ad esempio, su richiesta dell'utente nell'app mobile o sul sito
     web.
@@ -7225,6 +7425,7 @@
   az: "IOT H\u018FLLL\u018FR\u0130N\u0130N M\u018FH\u015EUR N\xDCMUN\u018FL\u018F\
     R\u0130"
   en: POPULAR EXAMPLES OF IOT SOLUTIONS
+  fr: EXEMPLES POPULAIRES DE SOLUTIONS IOT
   it: ESEMPI POPOLARI DI SOLUZIONI IOT
   pt: "EXEMPLOS POPULARES DE SOLU\xC7\xD5ES DE IoT"
   ru: "\u041F\u041E\u041F\u0423\u041B\u042F\u0420\u041D\u042B\u0415 \u041F\u0420\u0418\
@@ -7264,6 +7465,17 @@
     system, start a scheduled robot vacuum cleaner, providing a cleaning report to
     the user app, change the room temperature to the optimal value depending on your
     schedule.
+  fr: "Un syst\xE8me de maison intelligente typique fournit un large \xE9ventail d\u2019\
+    options pour contr\xF4ler votre espace de vie. Avec son aide, vous pouvez contr\xF4\
+    ler \xE0 distance les serrures de porte, en installant un acc\xE8s unique ou r\xE9\
+    gulier \xE0 la chambre en tant que famille et amis, et pour le personnel d\u2019\
+    entretien ou de livraison. Avec de nombreux capteurs et dispositifs d\u2019enregistrement,\
+    \ le syst\xE8me est en mesure d\u2019inclure un enregistrement vid\xE9o lors du\
+    \ d\xE9clenchement des capteurs de mouvement, prendre des d\xE9cisions de mani\xE8\
+    re autonome pour couper l\u2019alimentation en eau lorsqu\u2019une fuite est d\xE9\
+    tect\xE9e dans le syst\xE8me d\u2019eau, d\xE9marrer un robot aspirateur programm\xE9\
+    , fournir un rapport de nettoyage \xE0 l\u2019application utilisateur, changer\
+    \ la temp\xE9rature ambiante \xE0 la valeur optimale en fonction de votre horaire."
   it: "Un tipico sistema smart house offre un'ampia gamma di opzioni per il controllo\
     \ del tuo spazio abitativo. Con il suo aiuto puoi controllare a distanza le serrature\
     \ delle porte, impostando un accesso singolo o regolare alle stanze, per familiari\
@@ -7375,6 +7587,13 @@
     \ the headlights. If such cars are used for carsharing, then you can create an\
     \ interactive map of the location of cars with their status, the remaining fuel,\
     \ etc. for the clients of this service."
+  fr: "Voitures intelligentes. Fournissant \xE0 l'\xE9lectronique embarqu\xE9e de\
+    \ la voiture un acc\xE8s \xE0 l'Internet mobile, l'utilisateur acc\xE8de au contr\xF4\
+    le \xE0 distance de diverses fonctions de la voiture directement depuis son smartphone\
+    \ : ouverture des portes, mise en marche de la climatisation, commande des phares.\
+    \ Si ces voitures sont utilis\xE9es pour l'autopartage, vous pouvez cr\xE9er une\
+    \ carte interactive de l'emplacement des voitures avec leur statut, le carburant\
+    \ restant, etc. pour les clients de ce service."
   it: "Auto intelligenti. Fornendo all'elettronica di bordo dell'auto l'accesso a\
     \ Internet mobile, l'utente ha accesso al controllo remoto di varie funzionalit\xE0\
     \ dell'auto direttamente dal proprio smartphone: apertura delle porte, accensione\
@@ -7455,6 +7674,13 @@
     \ performed, errors and warnings. The robot\u2019s leasing fee is calculated on\
     \ the basis of this, as well as the vendor\u2019s predictive maintenance of the\
     \ robots."
+  fr: "Syst\xE8me de location d\u2019\xE9quipement intelligent. La soci\xE9t\xE9 installe\
+    \ des manipulateurs robotiques sur la ligne de convoyeur en vertu d\u2019un contrat\
+    \ avec paiement pour le nombre d\u2019op\xE9rations ou pour le temps du robot.\
+    \ Les manipulateurs fournissent r\xE9guli\xE8rement un registre des op\xE9rations\
+    \ effectu\xE9es, des erreurs et des avertissements. Les frais de location du robot\
+    \ sont calcul\xE9s sur cette base, ainsi que la maintenance pr\xE9dictive des\
+    \ robots par le fournisseur."
   it: "Sistema di leasing per apparecchiature intelligenti. L'azienda installa manipolatori\
     \ robotici sulla linea di trasporto, con un contratto a pagamento per il numero\
     \ di operazioni o per il tempo del robot. I manipolatori forniscono regolarmente\
@@ -7510,6 +7736,7 @@
   az: "IOT H\u018FLLL\u018FR\u0130N\u0130N T\u0130K\u0130LM\u018FS\u0130N\u0130N \u0130\
     ND\u0130K\u0130 PROBLEML\u018FR\u0130"
   en: CURRENT PROBLEMS OF BUILDING IOT SOLUTIONS
+  fr: "PROBL\xC8MES ACTUELS DE CONSTRUCTION DE SOLUTIONS IOT"
   it: PROBLEMI ATTUALI NELLA COSTRUZIONE DI SOLUZIONI IOT
   pt: "PROBLEMAS ATUAIS DA CONSTRU\xC7\xC3O DE SOLU\xC7\xD5ES DE IOT"
   ru: "\u0410\u041A\u0422\u0423\u0410\u041B\u042C\u041D\u042B\u0415 \u041F\u0420\u041E\
@@ -7520,6 +7747,7 @@
 - alias: GLOBAL AVAILABILITY
   az: "QLOBAL M\xD6VCUDLUQ"
   en: GLOBAL AVAILABILITY
+  fr: "DISPONIBILIT\xC9 MONDIALE"
   it: "DISPONIBILIT\xC0 GLOBALE"
   pt: DISPONIBILIDADE GLOBAL
   ru: "\u0413\u041B\u041E\u0411\u0410\u041B\u042C\u041D\u0410\u042F \u0414\u041E\u0421\
@@ -7540,6 +7768,11 @@
     messages from IoT devices. Thus, during the life of a smart device, the lack of
     connection will mean a limitation in the ability to control and interact with
     the device.
+  fr: "L\u2019architecture client-serveur standard n\xE9cessite de sp\xE9cifier les\
+    \ endpoints lors du routage des messages depuis les p\xE9riph\xE9riques IoT. Ainsi,\
+    \ pendant la dur\xE9e de vie d\u2019un appareil intelligent, l\u2019absence de\
+    \ connexion se traduira par une limitation de la capacit\xE9 de contr\xF4ler et\
+    \ d\u2019interagir avec l\u2019appareil."
   it: "L'architettura client-server standard richiede la specifica degli endpoint\
     \ durante il routing dei messaggi dai dispositivi IoT. Significa che durante la\
     \ vita di uno smart device, la mancanza di connessione comporter\xE0 una limitazione\
@@ -7594,6 +7827,12 @@
     \ in the United States and vice versa. At any moment, the blocking of Xiaomi servers\
     \ by the U.S. authorities could affect users of devices that connect to the manufacturer\u2019\
     s cloud services."
+  fr: "Par exemple, la guerre commerciale entre la Chine et les \xC9tats-Unis est\
+    \ d\xE9j\xE0 une \xE9p\xE9e de Damocl\xE8s suspendue au-dessus de milliers de\
+    \ consommateurs d\u2019appareils intelligents chinois aux \xC9tats-Unis et vice\
+    \ versa. \xC0 tout moment, le blocage des serveurs Xiaomi par les autorit\xE9\
+    s am\xE9ricaines pourrait toucher les utilisateurs des appareils qui se connectent\
+    \ aux services infonuagiques du fabricant."
   it: "Ad esempio, la guerra commerciale tra Cina e Stati Uniti \xE8 gi\xE0 una spada\
     \ di Damocle che incombe su migliaia di consumatori di elettrodomestici intelligenti\
     \ cinesi negli Stati Uniti e viceversa. In qualsiasi momento, il blocco dei server\
@@ -7651,6 +7890,12 @@
     \ from a mobile app if there is no connection to the servers, through which the\
     \ user authentication and telemetry collection from the devices themselves are\
     \ provided. That is, the device is actually controlled by the cloud, not the user."
+  fr: "\xC9tant \xE0 proximit\xE9 imm\xE9diate d\u2019un appareil IoT, vous ne pouvez\
+    \ pas le contr\xF4ler \xE0 partir d\u2019une application mobile s\u2019il n\u2019\
+    y a pas de connexion aux serveurs, par laquelle l\u2019authentification de l\u2019\
+    utilisateur et la collecte de t\xE9l\xE9m\xE9trie \xE0 partir des appareils eux-m\xEA\
+    mes sont fournis. Autrement dit, l\u2019appareil est en fait contr\xF4l\xE9 par\
+    \ le nuage, pas l\u2019utilisateur."
   it: "Trovandosi nelle immediate vicinanze di un dispositivo IoT, non \xE8 possibile\
     \ controllarlo da un'app mobile se non \xE8 presente la connessione ai server,\
     \ attraverso i quali viene fornita l'autenticazione dell'utente e raccolta la\
@@ -7695,6 +7940,7 @@
 - alias: CYBERSECURITY
   az: "K\u0130BER T\u018FHL\xDCK\u018FS\u0130ZL\u0130K"
   en: CYBERSECURITY
+  fr: "Cybers\xE9curit\xE9"
   it: CYBERSECURITY
   pt: "CIBERSEGURAN\xC7A"
   ru: "\u041A\u0418\u0411\u0415\u0420\u0411\u0415\u0417\u041E\u041F\u0410\u0421\u041D\
@@ -7728,6 +7974,16 @@
     to multiple external systems. Certainly, the cloud service is more secure than
     low-level devices, but the consolidation of centralized control over hundreds
     of thousands of such systems makes any security breaches and leaks a massive disaster.
+  fr: "La raison la plus importante de la faible cybers\xE9curit\xE9 de la plupart\
+    \ des solutions IoT d\xE9coule de l'h\xE9ritage probl\xE9matique de l'architecture\
+    \ client-serveur cloud. Par exemple, l'architecture de maison intelligente la\
+    \ plus courante \xE0 l'heure actuelle est g\xE9n\xE9ralement un hub IoT, connect\xE9\
+    \ \xE0 un service cloud. Ainsi, un syst\xE8me IoT typique est un \xE9l\xE9ment\
+    \ de contr\xF4le central connect\xE9 \xE0 plusieurs syst\xE8mes externes. Certes,\
+    \ le service cloud est plus s\xE9curis\xE9 que les appareils de bas niveau, mais\
+    \ la consolidation du contr\xF4le centralis\xE9 sur des centaines de milliers\
+    \ de ces syst\xE8mes fait de toute faille de s\xE9curit\xE9 et fuite un d\xE9\
+    sastre massif."
   it: "Il motivo principale della scarsa sicurezza informatica nella maggior parte\
     \ delle soluzioni IoT, deriva dall'eredit\xE0 problematica dell'architettura client-server\
     \ cloud. Ad esempio, l'architettura della smart house pi\xF9 comune in questo\
@@ -7826,6 +8082,11 @@
     systems. Certainly, the cloud service is more secure than low-level devices, but
     the consolidation of centralized control over hundreds of thousands of such systems
     makes any security breaches and leaks a massive disaster.
+  fr: "Tout cela est exacerb\xE9 par l\u2019ampleur des solutions IoT. Le nombre de\
+    \ syst\xE8mes IoT. Certes, le service cloud est plus s\xE9curis\xE9 que les appareils\
+    \ de bas niveau, mais la consolidation du contr\xF4le centralis\xE9 sur des centaines\
+    \ de milliers de tels syst\xE8mes fait de toute br\xE8ches de s\xE9curit\xE9 et\
+    \ de fuites un d\xE9sastre massif."
   it: "Tutto ci\xF2 viene esasperato dalla portata delle soluzioni IoT, dalla quantit\xE0\
     \ di sistemi. Il servizio cloud \xE8 sicuramente pi\xF9 sicuro rispetto ai dispositivi\
     \ di basso livello, ma il consolidamento del controllo centralizzato su centinaia\
@@ -7901,6 +8162,14 @@
     such as design errors, misuse or natural disasters that cause servers to fail.
     Also another definitely important point is the need in principle to trust the
     cloud and the people who maintain it.'
+  fr: "Les serveurs de service cloud sont soumis \xE0 tous les probl\xE8mes de cybers\xE9\
+    curit\xE9 typiques\_: attaques r\xE9seau, attaques DoS (conduisant le syst\xE8\
+    me \xE0 la d\xE9faillance), modifications malveillantes, d\xE9tournement de session\
+    \ utilisateur, etc. Mais les menaces fortes comprennent \xE9galement des probl\xE8\
+    mes non intentionnels tels que les erreurs de conception, mauvais usage ou catastrophes\
+    \ naturelles qui causent la d\xE9faillance des serveurs. Un autre point certainement\
+    \ important est la n\xE9cessit\xE9 en principe de faire confiance au cloud et\
+    \ aux personnes qui le maintiennent."
   it: "I server cloud service sono soggetti a tutti i tipici problemi di cybersecurity:\
     \ i dispositivi appartenenti allo stesso sistema possono superare le centinaia\
     \ o migliaia e allo stesso tempo, per loro natura, i dispositivi IoT hanno una\
@@ -7966,6 +8235,7 @@
 - alias: DATA PRIVACY
   az: "M\u018FLUMATLARIN M\u018FXF\u0130LL\u0130Y\u0130"
   en: DATA PRIVACY
+  fr: "CONFIDENTIALIT\xC9 DES DONN\xC9ES"
   it: PRIVACY DEI DATI
   pt: PRIVACIDADE DE DADOS
   ru: "\u041F\u0420\u0418\u0412\u0410\u0422\u041D\u041E\u0421\u0422\u042C \u0414\u0410\
@@ -8004,6 +8274,18 @@
     \ conditions and even a list of a person\u2019s habits. Among the types of threats\
     \ related to privacy are: identification of information, localization and tracking,\
     \ profiling, inventory attack, data linking attack."
+  fr: "Le point de confidentialit\xE9 doit \xEAtre s\xE9par\xE9 de la cybers\xE9curit\xE9\
+    , car ce probl\xE8me est sp\xE9cifique aux syst\xE8mes IoT. En raison du grand\
+    \ nombre et des types d\u2019appareils vari\xE9s qui sont beaucoup plus int\xE9\
+    gr\xE9s dans le monde physique que seulement les ordinateurs et les smartphones,\
+    \ la gamme de types de donn\xE9es priv\xE9es est multipli\xE9e. Il ne s\u2019\
+    agit plus seulement de la localisation GPS, des relev\xE9s d\u2019achats, des\
+    \ transactions financi\xE8res et des photos, mais aussi d\u2019un enregistrement\
+    \ permanent de vid\xE9os et de conversations, d\u2019empreintes vocales, de probl\xE8\
+    mes de sant\xE9 et m\xEAme d\u2019une liste des habitudes d\u2019une personne.\
+    \ Parmi les types de menaces li\xE9es \xE0 la vie priv\xE9e sont\_: identification\
+    \ de l\u2019information, localisation et suivi, profilage, attaque d\u2019inventaire,\
+    \ attaque de couplage de donn\xE9es."
   it: "Il punto di privacy deve essere separato dalla sicurezza informatica, perch\xE9\
     \ questo problema \xE8 specifico dei sistemi IoT. A causa della gran quantit\xE0\
     \ e variet\xE0 di dispositivi, che sono molto pi\xF9 integrati nel mondo fisico\
@@ -8132,6 +8414,19 @@
     \ is an asset and has real value, the person it is collected from is not only\
     \ denied the right to actively dispose of that data, but even is denied any compensation\
     \ for their own data\u2019s collection and usage."
+  fr: "La partie la plus effrayante est que les utilisateurs ont peu ou pas conscience\
+    \ qu'ils renoncent \xE0 leur vie priv\xE9e, car ils n'ont presque aucune id\xE9\
+    e des donn\xE9es collect\xE9es et de la mani\xE8re dont elles sont utilis\xE9\
+    es. La menace pour la vie priv\xE9e augmente non seulement des intrus, mais aussi\
+    \ des organisations et des agences gouvernementales pr\xE9cis\xE9ment \xE0 cause\
+    \ de cela. Les services cloud IoT n\xE9cessitent g\xE9n\xE9ralement un transfert\
+    \ de donn\xE9es maximal \xE0 partir des appareils, et il n'existe aucun moyen\
+    \ d'interdire ou de restreindre le transfert de donn\xE9es (\"Accept the Terms\
+    \ or Piss Off\"). De plus, malgr\xE9 le fait que les donn\xE9es collect\xE9es\
+    \ sont un atout et ont une valeur r\xE9elle, la personne aupr\xE8s de laquelle\
+    \ elles sont collect\xE9es se voit non seulement refuser le droit de disposer\
+    \ activement de ces donn\xE9es, mais se voit m\xEAme refuser toute compensation\
+    \ pour la collecte et l'utilisation de ses propres donn\xE9es."
   it: "La parte pi\xF9 inquietante \xE8 che gli utenti hanno poca o nessuna consapevolezza\
     \ di rinunciare alla propria privacy perch\xE9 non hanno quasi idea di quali dati\
     \ vengono raccolti e di come vengono utilizzati. La minaccia alla privacy non\
@@ -8231,6 +8526,7 @@
 - alias: MAIN TASKS OF ROBONOMICS ARCHITECTURE
   az: "ROBONOM\u0130KA ARXITEKTURASININ \u018FSAS V\u018FZ\u0130F\u018FL\u018FR\u0130"
   en: MAIN TASKS OF ROBONOMICS ARCHITECTURE
+  fr: "PRINCIPALES T\xC2CHES DE L\u2019ARCHITECTURE ROBONOMICS"
   it: COMPITI PRINCIPALI DELL'ARCHITETTURA DI ROBONOMICS
   pt: PRINCIPAIS TAREFAS DA ARQUITETURA ROBONOMICS
   ru: "\u041E\u0421\u041D\u041E\u0412\u041D\u042B\u0415 \u0417\u0410\u0414\u0410\u0427\
@@ -8253,6 +8549,10 @@
     aims to offer the IoT market safer and more advanced Internet solutions at every
     stage of human-machine communication. Below are the main tasks that Robonomics
     is aimed at:'
+  fr: "S\u2019appuyant sur les r\xE9alisations et les d\xE9fis des plateformes cloud,\
+    \ Robonomics vise \xE0 offrir au march\xE9 de l\u2019IoT des solutions Internet\
+    \ plus s\xFBres et plus avanc\xE9es \xE0 chaque \xE9tape de la communication homme-machine.\
+    \ Voici les principales t\xE2ches que Robonomics vise \xE0\_:"
   it: "Basandosi sui risultati e sulle sfide delle piattaforme cloud, Robonomics mira\
     \ a offrire al mercato IoT soluzioni Internet pi\xF9 sicure e avanzate in ogni\
     \ fase della comunicazione uomo-macchina. Di seguito sono riportati i compiti\
@@ -8293,6 +8593,7 @@
     ST\u0130FAD\u018F ED\u0130L\u018FN IOT C\u0130HAZININ \u0130DAR\u018F ED\u0130\
     LM\u018FS\u0130"
   en: MANAGING AN IOT DEVICE USING A DECENTRALIZED CLOUD
+  fr: "GESTION D'UN APPAREIL IOT \xC0 L'AIDE D'UN CLOUD D\xC9CENTRALIS\xC9"
   it: GESTIONE DI UN DISPOSITIVO IOT MEDIANTE UN CLOUD DECENTRALIZZATO
   pt: GERENCIANDO UM DISPOSITIVO IOT USANDO UMA NUVEM DESCENTRALIZADA
   ru: "\u0423\u041F\u0420\u0410\u0412\u041B\u0415\u041D\u0418\u0415 IOT-\u0423\u0421\
@@ -8330,6 +8631,15 @@
     In the case of a permissionless blockchain, we can talk about the guarantees of
     global availability of providers for IoT, as well as a high level of protection
     of digital twin data from unwanted changes.
+  fr: "Les r\xE9seaux Blockchain ont toutes les capacit\xE9s pour fournir le plus\
+    \ haut degr\xE9 de s\xE9curit\xE9 pour faire fonctionner un appareil et obtenir\
+    \ sa t\xE9l\xE9m\xE9trie. L\u2019interaction avec l\u2019appareil peut effectivement\
+    \ \xEAtre d\xE9crite en changeant l\u2019\xE9tat du jumeau num\xE9rique stock\xE9\
+    \ dans le r\xE9seau blockchain et en envoyant des informations sur ces changements.\
+    \ Dans le cas d\u2019une blockchain sans autorisation, nous pouvons parler des\
+    \ garanties de disponibilit\xE9 mondiale des fournisseurs pour l\u2019IoT, ainsi\
+    \ que d\u2019un niveau \xE9lev\xE9 de protection des donn\xE9es num\xE9riques\
+    \ jumel\xE9es contre les changements ind\xE9sirables."
   it: "Le reti blockchain hanno la capacit\xE0 di fornire il massimo grado di sicurezza\
     \ nell'esecuzione di un dispositivo e ottenere la sua telemetria. L'interazione\
     \ con il dispositivo pu\xF2 essere effettivamente descritta modificando lo stato\
@@ -8400,6 +8710,8 @@
     QT\u0130SAD\u0130 \u018FM\u018FL\u0130YYATLARIN H\u018FYATA KE\xC7\u0130R\u0130\
     LM\u018FS\u0130"
   en: PERFORMING TECHNICAL AND ECONOMIC TRANSACTION BETWEEN PEOPLE AND MACHINES
+  fr: "EFFECTUER DES TRANSACTIONS TECHNIQUES ET \xC9CONOMIQUES ENTRE LES PERSONNES\
+    \ ET LES MACHINES"
   it: EFFETTUARE TRANSAZIONI TECNICHE ED ECONOMICHE TRA PERSONE E MACCHINE
   pt: "REALIZANDO TRANSA\xC7\xC3O T\xC9CNICA E ECON\xD4MICA ENTRE PESSOAS E M\xC1\
     QUINAS"
@@ -8437,6 +8749,14 @@
     between the end user and the IoT device will be much more effective if the terms
     of service and payment for it are inseparable from the launch parameters of the
     device.
+  fr: "Gr\xE2ce au m\xE9canisme des crypto-monnaies et des contrats intelligents,\
+    \ nous pouvons fournir un acc\xE8s aux syst\xE8mes automatis\xE9s directement\
+    \ aux march\xE9s num\xE9riques. Par exemple, Ethereum met d\xE9j\xE0 en \u0153\
+    uvre la plupart des outils de base de l'activit\xE9 \xE9conomique pouvant \xEA\
+    tre utilis\xE9s dans le fonctionnement d'appareils autonomes. Les applications\
+    \ cr\xE9\xE9es pour l'interaction entre l'utilisateur final et l'appareil IoT\
+    \ seront beaucoup plus efficaces si les conditions de service et de paiement sont\
+    \ indissociables des param\xE8tres de lancement de l'appareil."
   it: "Grazie al meccanismo delle criptovalute e degli smart contract, possiamo fornire\
     \ l'accesso ai sistemi automatizzati direttamente ai mercati digitali. Ad esempio,\
     \ Ethereum implementa gi\xE0 la maggior parte degli strumenti di base dell'attivit\xE0\
@@ -8504,6 +8824,7 @@
   az: "\u0130ST\u0130FAD\u018F\xC7\u0130L\u018FR \xDC\xC7\xDCN SERVERS\u0130Z IOT\
     \ T\u018FTB\u0130QL\u018FR\u0130"
   en: SERVERLESS IOT APPLICATIONS FOR USERS
+  fr: APPLICATIONS IOT SANS SERVEUR POUR LES UTILISATEURS
   it: APPLICAZIONI IOT SENZA SERVER PER GLI UTENTI
   pt: 'APLICATIVOS SEM SERVIDOR PARA USUARIOS DE IOT '
   ru: "SERVERLESS IOT-\u041F\u0420\u0418\u041B\u041E\u0416\u0415\u041D\u0418\u042F\
@@ -8522,6 +8843,10 @@
   en: Modern advances in web3-technology can solve the issue of user privacy. With
     web3 there is no need to authenticate or require connection to specific servers
     to access telemetry and control the device.
+  fr: "Les progr\xE8s modernes en web3-technologie peuvent r\xE9soudre la question\
+    \ de la vie priv\xE9e des utilisateurs. Avec web3, il n\u2019est pas n\xE9cessaire\
+    \ de s\u2019authentifier ou de se connecter \xE0 des serveurs sp\xE9cifiques pour\
+    \ acc\xE9der \xE0 la t\xE9l\xE9m\xE9trie et contr\xF4ler l\u2019appareil."
   it: "\"I moderni progressi delle tecnologie web3 possono risolvere il problema della\
     \ privacy degli utenti. Con il web3 non \xE8 necessario autenticarsi o richiedere\
     \ la connessione a server specifici per accedere alla telemetria e controllare\
@@ -8565,6 +8890,9 @@
   en: Robonomics is a decentralized cloud for digital twins of IoT devices. Robonomics
     supports the techno-economic format for communication, as well as providing private
     applications for users
+  fr: "Robonomics est un cloud d\xE9centralis\xE9 pour les jumeaux num\xE9riques de\
+    \ dispositifs IoT. Robonomics soutient le format techno-\xE9conomique pour la\
+    \ communication, ainsi que fournir des applications priv\xE9es pour les utilisateurs"
   it: "Robonomics \xE8 un cloud decentralizzato per i digital twin dei dispositivi\
     \ IoT. Robonomics supporta il formato tecnico-economico per la comunicazione,\
     \ oltre a fornire applicazioni private per gli utenti"
@@ -8595,6 +8923,7 @@
 - alias: BASIC COMPONENTS OF ROBONOMICS ARCHITECTURE
   az: "ROBONOM\u0130KA ARXITEKTURASININ \u018FSAS KOMPONENTL\u018FR\u0130"
   en: BASIC COMPONENTS OF ROBONOMICS ARCHITECTURE
+  fr: "COMPOSANTS DE BASE DE L\u2019ARCHITECTURE ROBONOMIQUE"
   it: COMPONENTI BASE DELL'ARCHITETTURA ROBONOMICA
   pt: "COMPONENTES B\xC1SICOS DA ARQUITETURA ROBONOMICS"
   ru: "\u0411\u0410\u0417\u041E\u0412\u042B\u0415 \u041A\u041E\u041C\u041F\u041E\u041D\
@@ -8605,6 +8934,7 @@
 - alias: A human interface to access the system
   az: "Sistem\u0259 daxil olmaq \xFC\xE7\xFCn insan interfeysi"
   en: A human interface to access the system
+  fr: "Une interface humaine pour acc\xE9der au syst\xE8me"
   it: Un'interfaccia umana per accedere al sistema
   pt: Uma interface humana para acessar o sistema
   ru: "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u0447\u0435\u043B\u043E\
@@ -8615,6 +8945,7 @@
 - alias: A communication protocol
   az: "Rabit\u0259 protokolu"
   en: A communication protocol
+  fr: Un protocole de communication
   it: Un protocollo di comunicazione
   pt: "Um protocolo de comunica\xE7\xE3o"
   ru: "\u041F\u0440\u043E\u0442\u043E\u043A\u043E\u043B \u043A\u043E\u043C\u043C\u0443\
@@ -8624,6 +8955,7 @@
 - alias: A machine interface
   az: "Ma\u015F\u0131n interfeysi"
   en: A machine interface
+  fr: Une interface machine
   it: Un'interfaccia macchina
   pt: "Uma interface de m\xE1quina"
   ru: "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u043C\u0430\u0448\u0438\
@@ -8633,6 +8965,7 @@
 - alias: HUMAN INTERFACE
   az: "\u0130NSAN \u0130NTERFEYS\u0130"
   en: HUMAN INTERFACE
+  fr: INTERFACE HUMAINE
   it: INTERFACCIA UMANA
   pt: INTERFACE HUMANA
   ru: "\u0418\u041D\u0422\u0415\u0420\u0424\u0415\u0419\u0421 \u0427\u0415\u041B\u041E\
@@ -8658,6 +8991,13 @@
     to provide the most secure (in terms of data) user interface to the system, which
     will be able to simultaneously work in the conditions of the local city network,
     and through a common global network.
+  fr: "Nous proposons l\u2019utilisation d\u2019applications d\xE9centralis\xE9es\
+    \ (dapps) comme principal moyen de connecter les utilisateurs pour contr\xF4ler\
+    \ les appareils intelligents sur Internet. Ainsi, nous serons en mesure de fournir\
+    \ l\u2019interface utilisateur la plus s\xE9curis\xE9e (en termes de donn\xE9\
+    es) au syst\xE8me, qui sera en mesure de travailler simultan\xE9ment dans les\
+    \ conditions du r\xE9seau de la ville locale, et \xE0 travers un r\xE9seau mondial\
+    \ commun."
   it: "Proponiamo l'uso di applicazioni decentralizzate (dapps) come metodo principale\
     \ per connettere gli utenti e controllare i dispositivi intelligenti su Internet.\
     \ Pertanto, saremo in grado di fornire al sistema l'interfaccia utente pi\xF9\
@@ -8713,6 +9053,7 @@
 - alias: COMMUNICATION PROTOCOL
   az: "RAB\u0130T\u018F PROTOKOLU"
   en: COMMUNICATION PROTOCOL
+  fr: PROTOCOLE DE COMMUNICATION
   it: PROTOCOLLO DI COMUNICAZIONE
   pt: "PROTOCOLO DE COMUNICA\xC7\xC3O"
   ru: "\u041F\u0420\u041E\u0422\u041E\u041A\u041E\u041B \u041A\u041E\u041C\u041C\u0423\
@@ -8736,6 +9077,13 @@
     the transmission, processing and storage of information needed to run IoT devices.
     In fact, it is an implementation of a function-specific node for IPFS, Ethereum,
     and Polkadot networks.
+  fr: "Son r\xF4le est jou\xE9 par le r\xE9seau Robonomics, une sp\xE9cification d\xE9\
+    velopp\xE9e par l\u2019\xE9quipe de projet qui met en \u0153uvre un r\xE9seau\
+    \ d\xE9centralis\xE9 de fournisseurs qui fournissent la transmission, le traitement\
+    \ et le stockage de l\u2019information n\xE9cessaire pour faire fonctionner les\
+    \ dispositifs IoT. En fait, il s\u2019agit d\u2019une impl\xE9mentation d\u2019\
+    un noeud sp\xE9cifique \xE0 une fonction pour les r\xE9seaux IPFS, Ethereum et\
+    \ Polkadot."
   it: "Il suo ruolo \xE8 svolto dalla rete Robonomics, una specifica sviluppata dal\
     \ project team che implementa una rete decentralizzata di provider che forniscono\
     \ la trasmissione, l'elaborazione e l'archiviazione delle informazioni necessarie\
@@ -8783,6 +9131,7 @@
 - alias: MACHINE INTERFACE
   az: "MA\u015EIN \u0130NTERFEYS\u0130"
   en: MACHINE INTERFACE
+  fr: INTERFACE MACHINE
   it: INTERFACCIA MACCHINA
   pt: "INTERFACE DA M\xC1QUINA"
   ru: "\u0418\u041D\u0422\u0415\u0420\u0424\u0415\u0419\u0421 \u041C\u0410\u0428\u0418\
@@ -8824,6 +9173,18 @@
     \ devices), a Python robonomics-interface module has been developed. It helps\
     \ to access the functions of Robonomics natively and works with both local and\
     \ private and remote and public nodes."
+  fr: "Nous avons choisi le cadre robotique le plus connu appel\xE9 Robot Operating\
+    \ System Robot Operating System (ROS) comme interface standard pour l\u2019int\xE9\
+    gration de tout syst\xE8me cyber-physique compatible. Robonomics supporte plusieurs\
+    \ utilisations pour ROS. L\u2019impl\xE9mentation de Robonomics pour le r\xE9\
+    seau Ethereum est sous la forme du paquet ROS robonomics_comm. Pour l\u2019architecture\
+    \ ROS 2, nous impl\xE9mentons le support pour Robonomics en tant que couche middleware\
+    \ (voir \xAB\_Robonomics as ROS 2 Middleware\_\xBB pour plus de d\xE9tails). Lorsque\
+    \ l\u2019utilisation de ROS est redondante (par exemple, lorsque vous travaillez\
+    \ avec des appareils IoT), un module d\u2019interface robotique Python a \xE9\
+    t\xE9 d\xE9velopp\xE9. Il permet d\u2019acc\xE9der aux fonctions de Robonomics\
+    \ nativement et fonctionne avec des n\u0153uds locaux et priv\xE9s et distants\
+    \ et publics."
   it: "Abbiamo scelto il framework di robotica pi\xF9 noto, chiamato Robot Operating\
     \ System (ROS), come interfaccia standard per l'integrazione di qualsiasi sistema\
     \ cyber-fisico compatibile. Robonomics supporta diversi usi per ROS. L'implementazione\
@@ -8912,6 +9273,7 @@
 - alias: A SIMPLE REPRESENTATION OF ROBONOMICS ARCHITECTURE
   az: "ROBONOM\u0130KA ARXITEKTURASININ SAD\u018F T\u018FMS\u0130L\u0130"
   en: A SIMPLE REPRESENTATION OF ROBONOMICS ARCHITECTURE
+  fr: "UNE SIMPLE REPR\xC9SENTATION DE L\u2019ARCHITECTURE ROBONOMIQUE"
   it: UNA SEMPLICE RAPPRESENTAZIONE DELL'ARCHITETTURA DI ROBONOMICS
   pt: "UMA REPRESENTA\xC7\xC3O SIMPLES DA ARQUITETURA ROBONOMICS"
   ru: "\u041F\u0420\u041E\u0421\u0422\u041E\u0415 \u041F\u0420\u0415\u0414\u0421\u0422\
@@ -8926,6 +9288,8 @@
     n tam i\u015F\u0259 sal\u0131nma d\xF6vr\xFCn\xFCn \xFCmumi diaqram\u0131 budur:"
   en: 'Here is a general diagram of the complete device startup cycle using the Robonomics
     platform:'
+  fr: "Voici un diagramme g\xE9n\xE9ral du cycle de d\xE9marrage complet de l\u2019\
+    appareil \xE0 l\u2019aide de la plateforme Robonomics\_:"
   it: "Di seguito \xE8 riportato un diagramma generale del ciclo completo di avvio\
     \ del dispositivo utilizzando la piattaforma Robonomics:"
   pt: "Aqui est\xE1 um diagrama geral do ciclo completo de inicializa\xE7\xE3o do\
@@ -8948,6 +9312,8 @@
     \ n\u0259zar\u0259t funksiyas\u0131 \xFC\xE7\xFCn sor\u011Fu g\xF6nd\u0259rir."
   en: "The user\u2019s decentralized application sends a request for a device control\
     \ function through the Robonomics network."
+  fr: "L\u2019application d\xE9centralis\xE9e de l\u2019utilisateur envoie une demande\
+    \ pour une fonction de contr\xF4le de p\xE9riph\xE9rique via le r\xE9seau Robonomics."
   it: L'applicazione decentralizzata dell'utente invia una richiesta per una funzione
     di controllo del dispositivo attraverso la rete Robonomics.
   pt: "O aplicativo descentralizado do usu\xE1rio envia uma solicita\xE7\xE3o para\
@@ -8974,6 +9340,8 @@
     \ v\u0259 ya Robonomika parachain-d\u0259 hadis\u0259l\u0259ri \xE7\u0259kir."
   en: The Robonomics network provides request translation using libp2p and captures
     events in Ethereum blockchain or Robonomics parachain.
+  fr: "Le r\xE9seau Robonomics fournit la traduction de requ\xEAte en utilisant libp2p\
+    \ et capture les \xE9v\xE9nements dans Ethereum blockchain ou Robonomics parachain."
   it: Il Robonomics network fornisce la traduzione delle richieste utilizzando libp2p
     e cattura gli eventi nella blockchain di Ethereum o nella parachain di Robonomics.
   pt: "A rede Robonomics fornece tradu\xE7\xE3o de solicita\xE7\xF5es usando libp2p\
@@ -8997,6 +9365,9 @@
     b\u0259k\u0259 t\u0259r\u0259find\u0259n t\u0259min edilir."
   en: The control of the device is provided by a decentralized network, which is guaranteed
     to store the necessary information to run the IoT device.
+  fr: "Le contr\xF4le de l\u2019appareil est assur\xE9 par un r\xE9seau d\xE9centralis\xE9\
+    , qui est garanti pour stocker les informations n\xE9cessaires au fonctionnement\
+    \ de l\u2019appareil IoT."
   it: "Il controllo del dispositivo \xE8 fornito da una rete decentralizzata, che\
     \ \xE8 garantita per memorizzare le informazioni necessarie a far funzionare il\
     \ dispositivo IoT."
@@ -9032,6 +9403,11 @@
     networks about the current state of the digital twin. This ensures that the device
     can be started safely only after the technical and economic start-up parameters
     have been settled.
+  fr: "Le dispositif IoT re\xE7oit ind\xE9pendamment des informations des r\xE9seaux\
+    \ Ethereum et Polkadot sur l\u2019\xE9tat actuel du jumeau num\xE9rique. Cela\
+    \ garantit que l\u2019appareil ne peut \xEAtre d\xE9marr\xE9 en toute s\xE9curit\xE9\
+    \ qu\u2019apr\xE8s que les param\xE8tres techniques et \xE9conomiques de d\xE9\
+    marrage ont \xE9t\xE9 fix\xE9s."
   it: Il dispositivo IoT riceve in modo indipendente le informazioni da Ethereum e
     Polkadot sullo stato attuale del digital twin. Questo garantisce che il dispositivo
     possa essere avviato in sicurezza, solo dopo che sono stati stabiliti i parametri
@@ -9076,6 +9452,9 @@
     \ edil\u0259 bil\u0259r."
   en: As a result of the operation, the IoT device publishes a log of completed operations,
     which can be used as evidence of the service provided or for debugging errors.
+  fr: "En cons\xE9quence de l\u2019op\xE9ration, le dispositif IoT publie un journal\
+    \ des op\xE9rations termin\xE9es, qui peut \xEAtre utilis\xE9 comme preuve du\
+    \ service fourni ou pour les erreurs de d\xE9bogage."
   it: "A seguito dell'operazione, il dispositivo IoT pubblica un registro delle operazioni\
     \ completate, che pu\xF2 essere utilizzato come prova del servizio fornito o per\
     \ il debug degli errori."
@@ -9106,6 +9485,8 @@
     \ m\xF6vcud olur."
   en: The log is transformed into a report for the user and becomes available in his
     dapp.
+  fr: "Le journal est transform\xE9 en rapport pour l\u2019utilisateur et devient\
+    \ disponible dans son dapp."
   it: Il log si trasforma in un report per l'utente e diventa disponibile sulla sua
     dapp.
   pt: "O log \xE9 transformado em relat\xF3rio para o usu\xE1rio e fica dispon\xED\
@@ -9306,7 +9687,12 @@
     \u0432\u043E\u0439 IOT \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B"
   sp: DE LOS CONTRATOS INTELIGENTES A LA PLATAFORMA IOT DE CADENA CRUZADA
   tr: "AKILLI S\xD6ZLE\u015EMELERDEN \xC7APRAZ Z\u0130NC\u0130R IOT PLATFORMUNA"
-- alias: The Robonomics project is over 6 years old. We started to prepare for the first experiment demonstrating human-machine communication using an independent decentralized provider network in 2015, from the early days of the Ethereum network. By early 2021, the project team managed to create a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain.
+- alias: The Robonomics project is over 6 years old. We started to prepare for the
+    first experiment demonstrating human-machine communication using an independent
+    decentralized provider network in 2015, from the early days of the Ethereum network.
+    By early 2021, the project team managed to create a techno-economic machine communication
+    protocol running on top of Ethereum and IPFS, and complement it with elements
+    of a cloud-based IoT platform based on the Polkadot parachain.
   az: "Robonomics layih\u0259sinin 6 ild\u0259n \xE7ox ya\u015F\u0131 var. Biz Ethereum\
     \ \u015F\u0259b\u0259k\u0259sinin ilk g\xFCnl\u0259rind\u0259n 2015-ci ild\u0259\
     \ m\xFCst\u0259qil m\u0259rk\u0259zl\u0259\u015Fdirilm\u0259mi\u015F provayder\
@@ -9345,7 +9731,7 @@
     \ um protocolo de comunica\xE7\xE3o de m\xE1quina tecnoecon\xF4mico executado\
     \ em Ethereum e IPFS e complement\xE1-lo com elementos de uma plataforma de IoT\
     \ baseada em nuvem com base em parachain na Polkadot."
-  ru: "\u041F\u0440\u043E\u0435\u043A\u0442\u0443 \u0420\u043E\u0431\u043E\u043D\
+  ru: "\"\u041F\u0440\u043E\u0435\u043A\u0442\u0443 \u0420\u043E\u0431\u043E\u043D\
     \u043E\u043C\u0438\u043A\u0430 \u0443\u0436\u0435 \u0431\u043E\u043B\u0435\u0435\
     \ 6 \u043B\u0435\u0442. \u0413\u043E\u0442\u043E\u0432\u0438\u0442\u044C\u0441\
     \u044F \u043A \u043F\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044E \u043F\
@@ -9373,7 +9759,7 @@
     \u0438\u0442\u044C \u0435\u0433\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\
     \u0430\u043C\u0438 \u043E\u0431\u043B\u0430\u0447\u043D\u043E\u0439 IoT-\u043F\
     \u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B \u043D\u0430 \u0431\u0430\u0437\
-    \u0435 \u043F\u0430\u0440\u0430\u0447\u0435\u0439\u043D\u0430 Polkadot."
+    \u0435 \u043F\u0430\u0440\u0430\u0447\u0435\u0439\u043D\u0430 Polkadot.\""
   sp: "El proyecto Robonomics tiene m\xE1s de 6 a\xF1os. Comenzamos a prepararnos\
     \ para el primer experimento que demostr\xF3 la comunicaci\xF3n hombre-m\xE1quina\
     \ utilizando una red de proveedor descentralizada independiente en 2015, desde\
