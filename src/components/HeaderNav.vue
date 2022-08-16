@@ -16,6 +16,7 @@
                     <li><g-link to="/intro">{{$ts('Intro')}}</g-link></li>
                     <li><g-link to="/vision">Vision</g-link></li>
                     <li><g-link to="/architecture">Architecture</g-link></li>
+                    <li><g-link to="https://robonomics.academy">Academy</g-link></li>
                 </ul>
             </details>
 
@@ -82,6 +83,48 @@
         white-space: nowrap;
     }
 
+    details>summary {
+        list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+        display: none
+    }
+
+    summary::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3.535' height='6.07' viewBox='0 0 3.535 6.07'%3E%3Cg id='Line_arrow_simple' data-name='Line arrow simple' transform='translate(0.707 0.707)'%3E%3Cpath id='Path_15' data-name='Path 15' d='M1246.738,26.138l2.328,2.328-2.328,2.328' transform='translate(-1246.738 -26.138)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+        position: absolute;
+        top: -2px;
+        left: -7px;
+    }
+
+    details[open] summary:before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.07' height='3.535' viewBox='0 0 6.07 3.535'%3E%3Cpath id='Path_15' data-name='Path 15' d='M1246.738,26.138l2.328,2.328-2.328,2.328' transform='translate(31.501 -1246.031) rotate(90)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E");
+        top: -3px;
+    }
+
+    .dark-theme summary::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3.535' height='6.07' viewBox='0 0 3.535 6.07'%3E%3Cg id='Line_arrow_simple' data-name='Line arrow simple' transform='translate(0.707 0.707)'%3E%3Cpath id='Path_15' data-name='Path 15' d='M1246.738,26.138l2.328,2.328-2.328,2.328' transform='translate(-1246.738 -26.138)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E ");
+    }
+
+    .dark-theme details[open] summary:before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.07' height='3.535' viewBox='0 0 6.07 3.535'%3E%3Cpath id='Path_15' data-name='Path 15' d='M1246.738,26.138l2.328,2.328-2.328,2.328' transform='translate(31.501 -1246.031) rotate(90)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E ");
+    }
+
+    .dark-theme .oldy {
+        background-color: #7A7B81;
+        border: 1px solid #000;
+        box-shadow: 0.2rem 0.2rem 0 #000;
+    }
+
+    .dark-theme .oldy li a {
+        color: #75FBFD;
+    }
+
+    .dark-theme .oldy li a:hover {
+        color: #a1a2f2;
+    }
+
     ul, li {
         padding: 0;
         margin: 0;
@@ -105,6 +148,13 @@
         font-size: 140%;
     }
 
+    li a {
+        font-weight: 400;
+        color: var(--color-blue-mid);
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
     .nav-toggler {
         width: 30px;
         height: 27px;
@@ -121,23 +171,37 @@
         background-color: var(--color-dark);  
     }
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 950px) {
+        .nav-content summary {
+            font-size: 0.7rem;
+        }
+
+        .nav-content summary::before {
+            top: -1px;
+        }
+    }
+
+    @media screen and (max-width: 660px) {
         .nav-toggler { display: flex; }
         .nav-content { display: none; }
 
         .nav-content {
             position: fixed;
             z-index: 10;
-            top: calc(var(--screen-padding-top) - 1px);
+            top: calc(var(--screen-padding-top) - -12px);
             left: 0;
             right: 120px;
             bottom: calc(var(--screen-padding-bottom) - 1px);
-            background: var(--color-light);
+            background-color: var(--color-light);
             padding: var(--space);
             font-size: calc(var(--base-font-size) * 0.9);
             transform: translateX(-20px);
             opacity: 0;
             animation: navContent 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+        }
+
+        .dark-theme .nav-content {
+            background-color: var(--body-bg);
         }
 
         .open .nav-content {
@@ -176,7 +240,7 @@
             margin-bottom: var(--space);
         }
     }
-    
+
 
 </style>
 
