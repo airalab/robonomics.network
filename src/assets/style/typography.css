@@ -152,6 +152,10 @@ hr {
   background-color: var(--color-light);
 }
 
+  .dark-theme hr {
+    background-color: var(--body-bg);
+  }
+
   hr.no-margins {
     margin: 0;
   }
