@@ -40,35 +40,7 @@
         </div>
 
         <div class="layout layout__content">
-          <div class="scheme">
-            <div class="scheme-item animate" v-in-viewport.once><div>{{$ts('User (D)App')}}</div></div>
-
-            <div class="scheme-a animate-inside" v-in-viewport.once>
-              <div class="scheme-a-right">
-                <span>{{$ts('Function request')}}</span>
-                <span aria-hidden="true" class="arrow">---------------&gt;</span>
-              </div>
-              <div class="scheme-a-left">
-                <span>{{$ts('Report')}}</span>
-                <span aria-hidden="true" class="arrow">&lt;---------------</span>
-              </div>
-            </div>
-
-            <div class="scheme-item animate" v-in-viewport.once><div>{{$ts('Digital twin')}}</div></div>
-
-            <div class="scheme-a animate-inside" v-in-viewport.once>
-              <div class="scheme-a-right">
-                <span>{{$ts('Control')}}</span>
-                <span aria-hidden="true" class="arrow">---------------></span>
-              </div>
-              <div class="scheme-a-left">
-                <span>{{$ts('Log')}}</span>
-                <span aria-hidden="true" class="arrow">&lt;---------------</span>
-              </div>
-            </div>
-
-            <div class="scheme-item animate" v-in-viewport.once><div>{{$ts('IoT Device')}}</div></div>
-          </div>
+          <Scheme/>
         </div> 
       </section>
 
@@ -618,7 +590,8 @@
     components: {
       MetaInfo: () => import("~/components/MetaInfo.vue"),
       Abstract: () => import("~/components/TextAbstract.vue"),
-      Card: () => import("~/components/TextCard.vue")
+      Card: () => import("~/components/TextCard.vue"),
+      Scheme: () => import("~/components/Scheme.vue")
     }
   }
 </script>

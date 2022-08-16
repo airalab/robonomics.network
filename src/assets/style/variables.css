@@ -85,7 +85,6 @@ body {
 	--space-bannertop: 4.5rem;
 }
 
-/* body[data-theme="dark"] */
 body.dark-theme {
 	--color-dark: #fff;
 	--color-darkish: #3c3a3a;
@@ -125,6 +124,8 @@ body.dark-theme {
 	--color-button-select: rgb(235 235 235 / 30%);
 
 	--link-color-visited: #c457fb;
+
+	--body-bg: #313238;
 }
 
 
