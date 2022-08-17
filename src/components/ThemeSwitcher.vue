@@ -1,10 +1,9 @@
 <template>
-  <button role="button" aria-label="Toggle dark/light" @click.prevent="toggleTheme" class="toggle-theme">
 
-  <span class="theme-wrapper" :class="{'dark-theme': darkTheme}">
+  <div  @click.prevent="toggleTheme" class="theme-wrapper" :class="{'dark-theme': darkTheme}" tabindex="0" >
 
   <!-- sun -->
-  <span class="theme-sun" :class="{'oldy dark': !darkTheme}">
+  <button aria-label="Toggle dark/light theme" class="theme-sun" :class="{'oldy dark': !darkTheme}">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.396" height="16.187" viewBox="0 0 16.396 16.187">
       <defs>
         <clipPath id="clip-path">
@@ -28,11 +27,11 @@
         </g>
       </g>
     </svg>
-  </span>
+  </button>
 
 
   <!-- moon -->
-  <span class="theme-moon">
+  <button class="theme-moon" aria-label="Toggle dark/light">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.913" height="15.173" viewBox="0 0 15.913 15.173">
       <defs>
         <clipPath id="clip-path">
@@ -45,12 +44,11 @@
         </g>
       </g>
     </svg>
-  </span>
-
-
-  </span>
-
   </button>
+
+
+  </div>
+
 </template>
 
 <script>
@@ -98,45 +96,38 @@ export default {
 
 <style>
 
-  .toggle-theme {
-    padding: 0;
-    background-color: #000;
-    border: 0;
-    color: #000;
-    cursor: pointer;
-  }
-
-  .toggle-theme:hover {
-    background-color: #000;
-  }
-
-  .toggle-theme:focus {
-    outline: none;
-  }
-
   .theme-wrapper {
-    display: inline-block;
     min-height: 27px;
     height: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     
   }
 
   .theme-sun, .theme-moon {
     padding: 4px 16px;
     height: 100%;
+    border: 1px solid #000;
+    background-color: #000;
   }
 
   .theme-sun:hover,
   .theme-moon:hover {
     opacity: .8;
+    border: 1px solid #000;
+    background-color: #000;
   }
 
   .theme-sun.dark {
-    /* margin-top: -10px; */
-    box-shadow: 0.2rem -0.2rem 0 #000;
+    margin-top: -3px;
+    background-color: #fff;
+    box-shadow: 0.2rem 0.2rem 0 #000;
     border: 1px solid #000;
+  }
+
+  .theme-sun svg {
+    width: 16px;
+    height: 16px;
   }
 
   .dark-theme .theme-sun svg {
@@ -145,55 +136,25 @@ export default {
 
   .dark-theme .theme-moon {
     background-color: #7A7B81;
-    box-shadow: -0.2rem 0.23rem 0rem #000;
+    box-shadow: -0.2rem 0.2rem 0rem #000;
     border: 1px solid #000;
-  }
-
-  /* styles for light theme icon */
-  svg:not(.dark) #bg {
-    fill: var(--color-blue-mid);
-  }
-
-  /* sun styles */
-  svg:not(.dark) #main-circle {
-    transform: translateX(100px);
-    fill: var(--color-yellow);
-  }
-
-  /* transitions for toggle */
-  #bg,
-  #stars,
-  #clouds,
-  #main-circle,
-  #moon-accents {
-    transition: all 0.3s ease-out;
-  }
-  
-  svg:not(.dark) #moon-accents {
-    transform: translate(121px, 19px); /* 100 + 21 */
-    opacity: 0;
-  }
-
-  svg:not(.dark) #stars {
-    opacity: 0;
-    transform: translate(69px, 18px);
-  }
-
-  svg.dark #clouds {
-    opacity: 0;
-    transform: translate(54px, 17px);
   }
 
   @media screen and (max-width: 950px) {
     .theme-moon, .theme-sun { padding:  4px 8px; } 
+
+    .theme-sun.dark {
+      margin-top: -4px;
+    }
   }
 
   @media screen and (max-width: 660px) {
     .theme-moon, .theme-sun { padding:  4px 16px; } 
-  }
 
-  @media screen and (max-width: 450px) {
-    .theme-moon, .theme-sun { padding:  4px 8px; } 
+    .theme-wrapper {
+      margin-top: 7px;
+    }
+
   }
 
 </style>
