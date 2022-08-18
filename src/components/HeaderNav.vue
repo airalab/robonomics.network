@@ -202,6 +202,10 @@
             animation: navContent 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         }
 
+        .nav-content summary {
+            font-size: 1.5rem;
+        }
+
         .dark-theme .nav-content {
             background-color: var(--body-bg);
         }

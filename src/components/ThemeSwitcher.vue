@@ -4,29 +4,29 @@
 
   <!-- sun -->
   <button aria-label="Toggle dark/light theme" class="theme-sun" :class="{'oldy dark': !darkTheme}">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.396" height="16.187" viewBox="0 0 16.396 16.187">
-      <defs>
-        <clipPath id="clip-path">
-          <rect id="Rectangle_6" data-name="Rectangle 6" width="16.396" height="16.187" fill="none"/>
-        </clipPath>
-      </defs>
-      <g id="Group_15" data-name="Group 15" transform="translate(-1467 114)">
-        <g id="Group_14" data-name="Group 14" transform="translate(1467 -114)">
-          <g id="Group_13" data-name="Group 13" clip-path="url(#clip-path)">
-            <path id="Path_19" data-name="Path 19" d="M130.463,129.434a4.65,4.65,0,1,1-4.65-4.65,4.65,4.65,0,0,1,4.65,4.65" transform="translate(-117.615 -121.13)"/>
-            <path id="Path_20" data-name="Path 20" d="M236.713.008a1.309,1.309,0,1,1-1.447,1.154A1.309,1.309,0,0,1,236.713.008" transform="translate(-228.368 0)"/>
-            <path id="Path_21" data-name="Path 21" d="M82.294,56.1a1.309,1.309,0,1,1-.367,1.814,1.309,1.309,0,0,1,.367-1.814" transform="translate(-79.316 -54.249)"/>
-            <path id="Path_22" data-name="Path 22" d="M.054,198.329a1.309,1.309,0,1,1,.885,1.626,1.309,1.309,0,0,1-.885-1.626" transform="translate(0 -191.61)"/>
-            <path id="Path_23" data-name="Path 23" d="M28.485,360.143a1.309,1.309,0,1,1,1.723.676,1.309,1.309,0,0,1-1.723-.676" transform="translate(-27.544 -347.818)"/>
-            <path id="Path_24" data-name="Path 24" d="M154.277,465.827a1.309,1.309,0,1,1,1.755-.589,1.309,1.309,0,0,1-1.755.589" transform="translate(-149.054 -449.777)"/>
-            <path id="Path_25" data-name="Path 25" d="M318.569,465.927a1.309,1.309,0,1,1,.965-1.579,1.309,1.309,0,0,1-.965,1.579" transform="translate(-307.672 -449.777)"/>
-            <path id="Path_26" data-name="Path 26" d="M444.5,360.405a1.309,1.309,0,1,1-.276-1.83,1.309,1.309,0,0,1,.276,1.83" transform="translate(-429.187 -347.826)"/>
-            <path id="Path_27" data-name="Path 27" d="M473.126,198.627a1.309,1.309,0,1,1-1.388-1.225,1.309,1.309,0,0,1,1.388,1.225" transform="translate(-456.732 -191.619)"/>
-            <path id="Path_28" data-name="Path 28" d="M391.068,56.3a1.309,1.309,0,1,1-1.85-.046,1.309,1.309,0,0,1,1.85.046" transform="translate(-377.425 -54.253)"/>
-          </g>
-        </g>
-      </g>
+
+    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.4 16.2" style="enable-background:new 0 0 16.4 16.2;" xml:space="preserve">
+      <path d="M12.8,8.3c0,2.6-2.1,4.6-4.7,4.6s-4.7-2.1-4.7-4.6c0-2.6,2.1-4.7,4.7-4.7S12.8,5.7,12.8,8.3L12.8,8.3"
+      />
+      <path d="M8.3,0c0.7,0.1,1.2,0.7,1.2,1.4S8.8,2.7,8.1,2.6S6.8,1.9,6.9,1.2c0,0,0,0,0,0C7,0.4,7.6-0.1,8.3,0"/>
+      <path d="M3,1.9c0.6-0.4,1.4-0.2,1.8,0.4S5,3.6,4.4,4C3.8,4.4,3,4.3,2.6,3.7c0,0,0,0,0,0C2.2,3.1,2.4,2.3,3,1.9
+      "/>
+      <path d="M0.1,6.7C0.3,6,1,5.6,1.7,5.8C2.4,6,2.8,6.8,2.6,7.5C2.4,8.2,1.6,8.5,0.9,8.3C0.2,8.1-0.2,7.4,0.1,6.7
+      C0.1,6.7,0.1,6.7,0.1,6.7"/>
+      <path d="M0.9,12.3c-0.3-0.7,0-1.4,0.7-1.7c0.7-0.3,1.4,0,1.7,0.7c0.3,0.7,0,1.4-0.7,1.7c0,0,0,0,0,0
+      C2,13.3,1.2,13,0.9,12.3"/>
+      <path d="M5.2,16c-0.6-0.3-0.9-1.1-0.6-1.8c0.3-0.6,1.1-0.9,1.8-0.6s0.9,1.1,0.6,1.8l0,0
+      C6.7,16.1,5.9,16.4,5.2,16"/>
+      <path d="M10.9,16.1c-0.7,0.2-1.4-0.3-1.6-1s0.3-1.4,1-1.6s1.4,0.3,1.6,1c0,0,0,0,0,0
+      C12,15.3,11.6,16,10.9,16.1"/>
+      <path d="M15.3,12.6c-0.4,0.6-1.2,0.7-1.8,0.3c-0.6-0.4-0.7-1.2-0.3-1.8s1.2-0.7,1.8-0.3c0,0,0,0,0,0
+      C15.6,11.2,15.7,12,15.3,12.6"/>
+      <path d="M16.4,7c0,0.7-0.5,1.3-1.2,1.4c-0.7,0-1.3-0.5-1.4-1.2c0-0.7,0.5-1.3,1.2-1.4
+      C15.7,5.7,16.3,6.3,16.4,7C16.4,7,16.4,7,16.4,7"/>
+      <path d="M13.6,2c0.5,0.5,0.5,1.4,0,1.9c-0.5,0.5-1.4,0.5-1.9,0c-0.5-0.5-0.5-1.4,0-1.9c0,0,0,0,0,0
+      C12.3,1.5,13.1,1.5,13.6,2"/>
     </svg>
+
   </button>
 
 
@@ -119,7 +119,7 @@ export default {
   }
 
   .theme-sun.dark {
-    margin-top: -3px;
+    margin-top: -0.19rem;
     background-color: #fff;
     box-shadow: 0.2rem 0.2rem 0 #000;
     border: 1px solid #000;
@@ -144,12 +144,16 @@ export default {
     .theme-moon, .theme-sun { padding:  4px 8px; } 
 
     .theme-sun.dark {
-      margin-top: -4px;
+      margin-top: -0.26em;
     }
   }
 
   @media screen and (max-width: 660px) {
     .theme-moon, .theme-sun { padding:  4px 16px; } 
+
+    .theme-sun.dark {
+      margin-top: -0.19rem;
+    }
 
     .theme-wrapper {
       margin-top: 7px;
