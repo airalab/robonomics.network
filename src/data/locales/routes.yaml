@@ -44,4 +44,8 @@
 
 - path: '/jobs/'
   component: './src/pages/jobs.vue'
-  typename: 'component'
+  typename: 'page'
+
+- path: '/timeline/'
+  component: './src/pages/timeline.vue'
+  typename: 'page'
