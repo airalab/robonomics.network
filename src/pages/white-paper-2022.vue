@@ -9,14 +9,7 @@
 
       <!-- main banner -->
       <section class="wp__banner page-banner section section__solid">
-          <h1 class="wp__title">
-              <b>{{$ts(`Robonomics Whitepaper 2022 Title_1_line`)}}</b>
-              <br/>
-              <b>{{$ts(`Robonomics Whitepaper 2022 Title_2_line`)}}</b>
-              <br/>
-              <b>{{$ts(`Robonomics Whitepaper 2022 Title_3_line`)}}</b>
-              <br/>
-          </h1>
+          <h1>{{$ts(`ROBONOMICS WHITEPAPER 2022 welcome guide`)}}</h1>
 
         <div class="small-colony">
           <g-image src="~/assets/images/white-paper-2022/small-colony.svg"  alt="small-colone"/>
@@ -30,13 +23,43 @@
 
         <div class="astronaut">
           <div id="parallax-astronaut">
-             <g-image  data-depth="0.2" src="~/assets/images/white-paper-2022/astronaut.svg"  alt="astronaut"/>
+            <div data-depth="0.2" class="parallax-astronaut__wrapper-logo">
+              <!-- <g-image  src="~/assets/images/white-paper-2022/astronaut-logo.svg"  alt="astronaut-logo"/> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="108.303" height="105.407" viewBox="0 0 108.303 105.407" class="logo-robonomics">
+                <g id="Group_749" data-name="Group 749" transform="translate(-881.549 -402.425)">
+                  <g id="Group_748" data-name="Group 748" transform="translate(881.549 402.425)">
+                    <g id="Group_747" data-name="Group 747" transform="translate(17.368 27.104)">
+                      <path class="triangle-2"  id="Path_830" data-name="Path 830" d="M962.656,444.057v44.2L999.366,507.6Z" transform="translate(-925.947 -444.057)" fill="#b2c1f3"/>
+                      <path id="Path_831" class="triangle-3" data-name="Path 831" d="M962.656,488.26,925.947,507.6h73.419Z" transform="translate(-925.947 -444.057)" fill="#213159"/>
+                      <path class="triangle-1"  id="Path_832" data-name="Path 832" d="M962.656,444.057,925.947,507.6l36.774-19.343Z" transform="translate(-925.947 -444.057)" fill="#00bdff"/>
+                    </g>
+                    <path class="line"  id="Path_833" data-name="Path 833" d="M935.51,398.995l-48.9,94.531h97.807Z" transform="translate(-881.549 -393.557)" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="2"/>
+                    <circle class="dot" id="Ellipse_88" data-name="Ellipse 88" cx="5.438" cy="5.438" r="5.438" transform="translate(0 94.531)" fill="#00bdff"/>
+                    <circle class="dot" id="Ellipse_89" data-name="Ellipse 89" cx="5.438" cy="5.438" r="5.438" transform="translate(97.427 94.531)" fill="#00bdff"/>
+                    <circle class="dot" id="Ellipse_90" data-name="Ellipse 90" cx="5.438" cy="5.438" r="5.438" transform="translate(48.591)" fill="#00bdff"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div data-depth="0.2" class="parallax-astronaut__wrapper">
+              <g-image src="~/assets/images/white-paper-2022/astronaut.svg"  alt="astronaut"/>
+            </div>
           </div>
         </div>
         <div class="yellow-robot">
-          <g-image src="~/assets/images/white-paper-2022/yellow-robot.svg"  alt="yellow-robot"/>
+          <Spot/>
         </div>
         <div class="small-robot__wrapper">
+          <div class="small-robot-antenna">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11.477" height="7.663" viewBox="0 0 11.477 7.663">
+              <g id="Group_754" data-name="Group 754" transform="translate(-688.611 -600.381)">
+                <circle class="circle" id="Ellipse_95" data-name="Ellipse 95" cx="0.988" cy="0.988" r="0.988" transform="translate(693.361 605.817)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+                <path class="line-1" id="Path_835" data-name="Path 835" d="M688.951,603.8a6.179,6.179,0,0,1,10.8,0" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+                <path class="line-2" id="Path_836" data-name="Path 836" d="M690,604.854a4.766,4.766,0,0,1,8.7,0" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+                <path class="line-3" id="Path_837" data-name="Path 837" d="M691.1,605.957a3.354,3.354,0,0,1,6.489,0" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+              </g>
+            </svg>
+          </div>
           <div class="small-robot">
             <g-image src="~/assets/images/white-paper-2022/small-robot.svg"  alt="small-robot"/>
           </div>
@@ -62,7 +85,7 @@
 
       <!-- text section -->
       <section class="section wp-introduction">
-        <div class="layout">
+        <div class="layout layout__text animate-inside in-viewport" data-in-viewport="i20" v-in-viewport.once>
           <p class="hyphens wp-introduction__text">
            {{$ts(`We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...`)}}
           </p>
@@ -279,6 +302,7 @@ export default {
   components: {
     Button: () => import("~/components/Button.vue"),
     MetaInfo: () => import("~/components/MetaInfo.vue"),
+    Spot: () => import("~/components/decor/Spot.vue"),
   },
 
   mounted() {
@@ -406,8 +430,10 @@ export default {
     z-index: 5;
   }
 
-  .wp__title {
+  h1 {
     position: relative;
+    padding-right: var(--space);
+    padding-left: var(--space);
     color: #fff;
     z-index: 25;
   }
@@ -441,16 +467,61 @@ export default {
     position: absolute;
     bottom: -10px;
     left: 50%;
-    z-index: 20;
-    animation: ScaleCenteredAbsolute 3s forwards cubic-bezier(0.075, 0.82, 0.165, 1), FadeIn 1s forwards linear;
-    -webkit-animation: ScaleCenteredAbsolute 3s forwards cubic-bezier(0.075, 0.82, 0.165, 1), FadeIn 1s forwards linear;
+    min-height: 404px;
+    max-width: 416px;
+    width: 100%;
+    animation: CenteredAbsoluteFloatY 3s forwards cubic-bezier(0.075, 0.82, 0.165, 1), FadeIn 1s forwards linear;
+    -webkit-animation: CenteredAbsoluteFloatY 3s forwards cubic-bezier(0.075, 0.82, 0.165, 1), FadeIn 1s forwards linear;
   }
+
+   .parallax-astronaut__wrapper {
+    position: relative;
+   }
+
+  .parallax-astronaut__wrapper-logo {
+    position: absolute;
+    top: 100px !important;
+    left: 5px  !important;
+    z-index: 30;
+  }
+
+  .logo-robonomics .dot {
+    opacity: 0;
+		animation: 3s FadeIn 1s ease forwards;
+
+	}
+
+	.logo-robonomics .line {
+		fill: transparent;
+		stroke: #03A5ED;
+		stroke-miterlimit:10;
+
+		stroke-dasharray: 700;
+		stroke-dashoffset: 700;
+		animation: 1s DrawSvgPath 1s ease-in-out forwards; 
+
+	}
+
+	.logo-robonomics .triangle-1
+		{
+			animation: 5s logo-triangle-1 0.5s linear infinite;
+		}
+
+	.logo-robonomics .triangle-2
+		{
+			animation: 5s logo-triangle-2 0.5s linear infinite;
+		}
+
+	.logo-robonomics .triangle-3
+		{
+			animation: 5s logo-triangle-3 0.5s linear infinite;
+		}
 
   .yellow-robot {
     position: absolute;
     left: 5%;
-    bottom: 10%;
-    z-index: 15;
+    bottom: 0;
+    z-index: 18;
   }
 
   .small-robot {
@@ -458,8 +529,9 @@ export default {
     left: 20%;
     bottom: calc(10% - 6px);
     z-index: 15;
-    animation: robotMove 5s infinite linear;
-    -webkit-animation: robotMove 5s infinite linear;
+    transform: translateX(-25vw);
+    animation: robotMove 25s infinite linear 1.5s;
+    -webkit-animation: robotMove 25s infinite linear 1.5s;
     
   }
 
@@ -468,8 +540,42 @@ export default {
     left: 20.2%;
     bottom: calc(10% - 10px);
     z-index: 15;
-    animation: robotMove 5s infinite linear;
-    -webkit-animation: robotMove 5s infinite linear;
+    transform: translateX(-25vw);
+    animation: robotMove 25s infinite linear 1.5s;
+    -webkit-animation: robotMove 25s infinite linear 1.5s;
+  }
+
+  .small-robot-antenna {
+    position: absolute;
+    left: 21.18%;
+    bottom: calc(10% + 61px);
+    z-index: 16;
+    transform: translateX(-25vw);
+    animation: robotMove 25s infinite linear 1.5s;
+    -webkit-animation: robotMove 25s infinite linear 1.5s;
+  }
+
+  .small-robot-antenna .circle {
+    opacity: 0;
+    animation: FadeIn 2s forwards linear;
+    -webkit-animation: FadeIn 2s forwards linear;
+  }
+
+  .small-robot-antenna .line-1 {
+    animation: FadeOut 2s infinite 0.7s linear;
+    -webkit-animation: FadeOut 2s infinite 0.7s linear;
+  }
+
+  .small-robot-antenna .line-2 {
+    opacity: 0;
+    animation: FadeOut 2s infinite 0.9s linear;
+    -webkit-animation: FadeOut 2s infinite 0.9s linear;
+  }
+
+  .small-robot-antenna .line-3 {
+    opacity: 0;
+    animation: FadeOut 2s infinite 1.2s linear;
+    -webkit-animation: FadeOut 2s infinite 1.2s linear;
   }
 
   .small-robot-wheel {
@@ -496,8 +602,8 @@ export default {
     top: 0;
     right: 0;
     opacity: 0;
-    animation: ScaleX 2s forwards linear 0.5s, FadeIn 1.5s forwards linear 0.8s;
-    -webkit-animation: ScaleX 2s forwards linear 0.5s, FadeIn 1.5s forwards linear 0.8s;
+    animation: MoveUp 2s forwards 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), FadeIn 1.5s forwards linear 0.8s;
+    -webkit-animation: MoveUp 2s forwards 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), FadeIn 1.5s forwards linear 0.8s;
   }
 
   .kusama {
@@ -505,8 +611,8 @@ export default {
     top: 15px;
     left: 15px;
     opacity: 0;
-    animation: ScaleX 2s forwards linear 0.8s, FadeIn 1.5s forwards linear 1s;
-    -webkit-animation: ScaleX 2s forwards linear 0.8s, FadeIn 1.5s forwards linear 1s;
+    animation: MoveUp 2s forwards 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),FadeIn 1.5s forwards linear 1s;
+    -webkit-animation: MoveUp 2s forwards 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), FadeIn 1.5s forwards linear 1s;
   }
 
   .ethereum {
@@ -514,8 +620,8 @@ export default {
     bottom: 0;
     right: 58px;
     opacity: 0;
-    animation: ScaleX 2s forwards linear 1.2s, FadeIn 1.5s forwards linear 1.5s;
-    -webkit-animation: ScaleX 2s forwards linear 1.2s, FadeIn 1.5s forwards linear 1.5s;
+    animation: MoveUp 2s forwards 0.3 cubic-bezier(0.075, 0.82, 0.165, 1),FadeIn 1.5s forwards linear 0.9s;
+    -webkit-animation: MoveUp 2s forwards 0.3 cubic-bezier(0.075, 0.82, 0.165, 1), FadeIn 1.5s forwards linear 0.9s;
   }
 
   .wp-introduction {
@@ -551,7 +657,7 @@ export default {
     margin-right: 2rem;
    }
 
-   .first-chapter__images--bottom {
+  .first-chapter__images--bottom {
     position: absolute;
     left: 0%;
     right: 0;
@@ -652,7 +758,6 @@ export default {
       width: auto;
       z-index: 10;
     }
-
 
     .console.first {
       bottom: 10%;
@@ -844,13 +949,6 @@ export default {
         width: 50%;
       }
 
-      .small-robot,
-      .small-robot-wheels
-       {
-        left: unset;
-        right: 10%;
-      }
-
       .glushkov {
         top: 35%;
         left: calc(100% - 626px);
@@ -873,6 +971,13 @@ export default {
         min-height: 688px;
       }
 
+      .astronaut {
+        min-height: unset;
+        height: 370px;
+        width: 380px;
+        overflow: hidden;
+      }
+
       .logos {
         display: none;
         left: 53%;
@@ -881,10 +986,6 @@ export default {
 
       .yellow-robot {
         display: none;
-      }
-
-      .astronaut {
-        width: 100%;
       }
 
       .chapter__images {

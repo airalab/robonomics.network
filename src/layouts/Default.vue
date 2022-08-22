@@ -92,7 +92,7 @@ query {
   }
 
   .header-logo {
-    padding-left: var(--screen-padding-left);
+    padding-left: calc(var(--screen-padding-left) - 9px);
     /* max-width: 283px;
     width: 100%; */
     /* width: calc( var(--screen-padding-left) - calc(var(--logo-padding)*1.5)); */
@@ -106,17 +106,14 @@ query {
     text-decoration: none;
   }
 
-    .header-logo a {
-      color: currentColor;
-    }
-
-
-  .header-logo svg {
-    max-width: 40px;
-    width: 100%;
-    flex-shrink: 0;
-    transition: fill 0.33s ease-in, stroke 0.33s ease-in;
+  .header-logo a {
+    color: currentColor;
   }
+
+  .header-logo a img {
+    margin-right: 20px;
+  }
+
 
   .dark-theme .header-logo a img {
     filter:  grayscale(1) invert(1);
