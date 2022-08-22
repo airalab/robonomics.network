@@ -118,8 +118,8 @@ query {
     transition: fill 0.33s ease-in, stroke 0.33s ease-in;
   }
 
-  .dark-theme .header-logo a svg path {
-    stroke: #fff;
+  .dark-theme .header-logo a img {
+    filter:  grayscale(1) invert(1);
   }
 
   .logo-text {

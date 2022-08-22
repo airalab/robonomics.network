@@ -15,6 +15,7 @@
                 <ul class="oldy dark">
                     <li><g-link to="/intro">{{$ts('Intro')}}</g-link></li>
                     <li><g-link to="/vision">Vision</g-link></li>
+                    <li><g-link to="/white-paper-2022">White Paper 2022</g-link></li>
                     <li><g-link to="/architecture">Architecture</g-link></li>
                     <li><g-link to="https://robonomics.academy">Academy</g-link></li>
                 </ul>
