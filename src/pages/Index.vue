@@ -316,51 +316,53 @@ query {
     position: absolute;
     left: 0;
     overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
+    transform: scale(0);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    /* opacity: 0;
+    visibility: hidden; */
   }
 
   .banner__images--left img:first-child {
     top: 0;
-    -webkit-animation: FadeIn 4s linear 2s forwards;
-    animation: FadeIn 1s linear 2s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
   }
 
   .banner__images--left img:nth-of-type(2) {
-    -webkit-animation: FadeIn 2s linear 3s forwards;
-    animation: FadeIn 2s linear 3s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
   }
 
   .banner__images--left img:nth-of-type(3) {
-    -webkit-animation: FadeIn 4s linear 2s forwards;
-    animation: FadeIn 1s linear 2s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
   }
 
   .banner__images--left img:nth-of-type(4) {
-    left: 30%;
+    left: 9%;
     bottom: 0%;
-    -webkit-animation: FadeIn 4s linear 5s forwards;
-    animation: FadeIn 1s linear 5s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
   }
 
   .banner__images--left img:nth-of-type(5) {
     top: -13%;
-    -webkit-animation: FadeIn 4s linear 4s forwards;
-    animation: FadeIn 1s linear 4s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
   }
 
   .banner__images--left img:nth-of-type(6) {
     top: 20%;
     left: 12%;
-    -webkit-animation: FadeIn 4s linear 3s forwards;
-    animation: FadeIn 1s linear 3s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
   }
 
   .banner__images--left img:nth-of-type(7) {
     top: 61%;
     left: 29%;
-    -webkit-animation: FadeIn 4s linear 3s forwards;
-    animation: FadeIn 1s linear 3s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
   }
 
   .banner__images--right {
@@ -372,56 +374,58 @@ query {
     position: absolute;
     right: 0;
     overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
+    transform: scale(0);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   }
 
   .banner__images--right img:first-child {
     top: 3%;
     right: 5%;
-    -webkit-animation: FadeIn 4s linear 3s forwards;
-    animation: FadeIn 1s linear 3s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
   }
 
   .banner__images--right img:nth-of-type(2) {
     top: 41%;
     right: 31%;
-    -webkit-animation: FadeIn 4s linear 2s forwards;
-    animation: FadeIn 1s linear 2s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
   }
 
   .banner__images--right img:nth-of-type(3) {
     bottom: 0;
-    -webkit-animation: FadeIn 4s linear 4s forwards;
-    animation: FadeIn 1s linear 4s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
   }
 
   .banner__images--right img:nth-of-type(4) {
     left: 23%;
     bottom: 0%;
-    -webkit-animation: FadeIn 4s linear 3s forwards;
-    animation: FadeIn 1s linear 3s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
   }
 
   .banner__images--right img:nth-of-type(5) {
     top: 58%;
     left: 3%;
-    -webkit-animation: FadeIn 4s linear 2s forwards;
-    animation: FadeIn 1s linear 2s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
   }
 
   .banner__images--right img:nth-of-type(6) {
     top: 14%;
     right: 29%;
-    -webkit-animation: FadeIn 4s linear 5s forwards;
-    animation: FadeIn 1s linear 5s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
   }
 
   .banner__images--right img:nth-of-type(7) {
     top: 10%;
     right: 12%;
-    -webkit-animation: FadeIn 4s linear 6s forwards;
-    animation: FadeIn 1s linear 6s forwards;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
   }
 
   #yoga-container {
@@ -557,6 +561,7 @@ query {
       left: 44%;
       z-index: 0;
       opacity: 0.4;
+      display: none;
     }
   }
 
