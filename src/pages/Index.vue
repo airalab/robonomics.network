@@ -22,7 +22,13 @@
           <!-- images left -->
 
           <div class="banner__images banner__images--left">
-            <g-image src="~/assets/images/banner-images-left.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/circle.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/crystal.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/painting.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/robot-1.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/robots-2.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/text.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/column.svg"  aria-hidden="true"/>
           </div>
 
           <div id="yoga-container">
@@ -46,11 +52,15 @@
 
           <!-- images right -->
           <div class="banner__images banner__images--right ">
-            <g-image src="~/assets/images/banner-images-right.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/cube.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/dron.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/factory.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/robot-3.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/robot-4.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/sign.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/polkadot.svg"  aria-hidden="true"/>
           </div>
           
-
-
         </div>
 
         <div aria-hidden="true" id="banner-top"></div>
@@ -260,13 +270,14 @@ query {
     visibility: hidden;
   }
 
-  .typing-2, .typing-3 {
+  .typing-1, .typing-2, .typing-3, .typing-static {
     position: absolute;
-    top: 5%;
+    top: 15%;
   }
 
   .typing-1 {
-    width: 29ch;
+    left: calc(50% - 29.5ch/2);
+    width: 29.5ch;
     animation: FadeIn 0.1s forwards, typing 2s steps(29), blinkLine .5s step-end infinite alternate, FadeOut 1s linear 3s forwards;
   }
   .typing-2 {
@@ -281,7 +292,8 @@ query {
   }
 
   .typing-static {
-    width: 30ch;
+    left: calc(50% - 29.5ch/2);
+    width: 29.5ch;
     animation: FadeIn 0.1s forwards 11s, typing 2s steps(31) 11s, blinkLine .5s step-end infinite alternate;
   }
   
@@ -289,23 +301,127 @@ query {
   .banner__images {
     position: absolute;
     top: 17%;
+    max-height: 630px;
+    height: 100%;
+    max-width: 394px;
+    width: 100%;
     z-index: 0;
-    transform-style: preserve-3d;
-    perspective: 300px;
-    overflow: hidden;
-    transform: scaleY(0);
-    opacity: 0;
-    visibility: hidden;
-    -webkit-animation: ScaleY 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards, FadeIn 1s linear 0.5s forwards;
-    animation: ScaleY 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards, FadeIn 1s linear 0.5s forwards;
   }
 
   .banner__images--left {
     left: 5%;
   }
 
+  .banner__images--left img {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .banner__images--left img:first-child {
+    top: 0;
+    -webkit-animation: FadeIn 4s linear 2s forwards;
+    animation: FadeIn 1s linear 2s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(2) {
+    -webkit-animation: FadeIn 2s linear 3s forwards;
+    animation: FadeIn 2s linear 3s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(3) {
+    -webkit-animation: FadeIn 4s linear 2s forwards;
+    animation: FadeIn 1s linear 2s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(4) {
+    left: 30%;
+    bottom: 0%;
+    -webkit-animation: FadeIn 4s linear 5s forwards;
+    animation: FadeIn 1s linear 5s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(5) {
+    top: -13%;
+    -webkit-animation: FadeIn 4s linear 4s forwards;
+    animation: FadeIn 1s linear 4s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(6) {
+    top: 20%;
+    left: 12%;
+    -webkit-animation: FadeIn 4s linear 3s forwards;
+    animation: FadeIn 1s linear 3s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(7) {
+    top: 61%;
+    left: 29%;
+    -webkit-animation: FadeIn 4s linear 3s forwards;
+    animation: FadeIn 1s linear 3s forwards;
+  }
+
   .banner__images--right {
     right: 5%;
+  }
+
+    
+  .banner__images--right img {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .banner__images--right img:first-child {
+    top: 3%;
+    right: 5%;
+    -webkit-animation: FadeIn 4s linear 3s forwards;
+    animation: FadeIn 1s linear 3s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(2) {
+    top: 41%;
+    right: 31%;
+    -webkit-animation: FadeIn 4s linear 2s forwards;
+    animation: FadeIn 1s linear 2s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(3) {
+    bottom: 0;
+    -webkit-animation: FadeIn 4s linear 4s forwards;
+    animation: FadeIn 1s linear 4s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(4) {
+    left: 23%;
+    bottom: 0%;
+    -webkit-animation: FadeIn 4s linear 3s forwards;
+    animation: FadeIn 1s linear 3s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(5) {
+    top: 58%;
+    left: 3%;
+    -webkit-animation: FadeIn 4s linear 2s forwards;
+    animation: FadeIn 1s linear 2s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(6) {
+    top: 14%;
+    right: 29%;
+    -webkit-animation: FadeIn 4s linear 5s forwards;
+    animation: FadeIn 1s linear 5s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(7) {
+    top: 10%;
+    right: 12%;
+    -webkit-animation: FadeIn 4s linear 6s forwards;
+    animation: FadeIn 1s linear 6s forwards;
   }
 
   #yoga-container {
@@ -333,7 +449,7 @@ query {
     margin-top: calc(var(--space)*2);
     padding: 20px;
     max-width: 100%;
-    background-color:rgb(39 66 207);
+    /* background-color:rgb(39 66 207); */
   }
 
   .layout__darkblue .scheme {
@@ -349,49 +465,85 @@ query {
   .numbers {
     left: 74%;
     z-index: 0;
-    opacity: 0.6;
+    opacity: 0.4;
   }
 
   @media screen and (max-width: 1260px) {
-    .banner__images {
-      top: 40%;
-    }
-
-    .banner__images img {
-      width: 60%;
-    }
 
     .banner__images--left {
       left: 0;
+      top: 9%;
     }
 
     .banner__images--right {
       right: 0;
+      top: 9%;
+    }
+
+    .banner__images--right img:nth-of-type(2) {
+      bottom: -5%
+    }
+
+    .banner__images--right img:nth-of-type(4) {
+      bottom: 1%
+    }
+
+    .banner__images--left img:nth-of-type(5) {
+      top: -7%
     }
   }
 
   @media screen and (max-width: 820px) {
 
     .banner__images {
-      top: 42%;
+      /* top: 42%; */
+      max-width: 235px;
     }
 
-    .banner__images img {
-      width: 40%;
+    .banner__images--left img:nth-of-type(2) {
+      top: 25%
     }
 
-    .banner__images--left {
-      left: -10%;
+    .banner__images--left img:nth-of-type(3) {
+      bottom: 0;
     }
 
-    .banner__images--right {
-      right: -10%;
+    .banner__images--left img:nth-of-type(4) {
+      left: 9%;
+      bottom: 0%;
+    }
+
+    .banner__images--left img:nth-of-type(5) {
+      top: 22%
+    }
+
+    .banner__images--left img:nth-of-type(6) {
+      top: 26%;
+    }
+
+    .banner__images--left img:nth-of-type(7) {
+      top: 61%;
+      left: -5%;
+    }
+
+    .banner__images--right img:nth-of-type(2) {
+      top: 50%;
+      right: 20%;
+    }
+
+    .banner__images--right img:nth-of-type(3) {
+      bottom: 12%;
+    }
+
+    .banner__images--right img:nth-of-type(7) {
+      top: 24%;
     }
   }
 
   @media screen and (max-width: 720px) {
     /* #banner h1 { font-size: calc(var(--base-font-size) * 1.5); } */
     .typing-1, .typing-2, .typing-3, .typing-static { font-size: calc(var(--base-font-size) * 1.5); }
+
   }
 
   @media screen and (max-width: 580px) {
@@ -399,6 +551,12 @@ query {
     /* #banner h1 { font-size: calc(var(--base-font-size) * 1.2); } */
     .banner__images {
       display: none;
+    }
+
+    .numbers {
+      left: 44%;
+      z-index: 0;
+      opacity: 0.4;
     }
   }
 
