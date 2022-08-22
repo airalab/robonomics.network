@@ -134,8 +134,13 @@
 			border-color: var(--color-orange);
 			box-shadow: 2px 2px 0 var(--color-orange-rgba);
 		}
-	
 
+		.button.white, button.white {
+			color: var(--color-dark);
+			background-color: var(--color-light);
+			border-color: var(--color-dark);
+			box-shadow: 2px 2px 0 var(--color-dark);
+		}
 
 .icon{
 	display: inline-block;

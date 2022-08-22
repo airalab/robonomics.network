@@ -1,8 +1,8 @@
 <template>
     
-    <nav class="sidetext">
+    <nav class="sidetext" :class="{'open': isOpen}">
 
-        <div class="nav-toggler oldy dark" tabindex="0">
+        <div class="nav-toggler oldy dark" tabindex="0" @click="isOpen = !isOpen">
             <div></div>
             <div></div>
             <div></div>
@@ -15,6 +15,7 @@
                 <ul class="oldy dark">
                     <li><g-link to="/intro">{{$ts('Intro')}}</g-link></li>
                     <li><g-link to="/vision">Vision</g-link></li>
+                    <li><g-link to="/white-paper-2022">White Paper 2022</g-link></li>
                     <li><g-link to="/architecture">Architecture</g-link></li>
                     <li><g-link to="https://robonomics.academy">Academy</g-link></li>
                 </ul>
@@ -85,6 +86,7 @@
 
     details>summary {
         list-style: none;
+        position: relative;
     }
 
     summary::-webkit-details-marker {
@@ -146,11 +148,12 @@
         content: "↗";
         margin-left: 0.1rem;
         font-size: 140%;
+        line-height: 0;
     }
 
     li a {
         font-weight: 400;
-        color: var(--color-blue-mid);
+        color: var(--color-dark);
         text-decoration: none;
         text-transform: capitalize;
     }
@@ -173,7 +176,7 @@
 
     @media screen and (max-width: 950px) {
         .nav-content summary {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
 
         .nav-content summary::before {
@@ -190,7 +193,7 @@
             z-index: 10;
             top: calc(var(--screen-padding-top) - -12px);
             left: 0;
-            right: 120px;
+            right: 0;
             bottom: calc(var(--screen-padding-bottom) - 1px);
             background-color: var(--color-light);
             padding: var(--space);
@@ -198,6 +201,10 @@
             transform: translateX(-20px);
             opacity: 0;
             animation: navContent 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+        }
+
+        .nav-content summary {
+            font-size: 1.5rem;
         }
 
         .dark-theme .nav-content {
@@ -246,6 +253,14 @@
 
 <script>
     export default {
+
+        data() {
+            return {
+                isOpen: false,
+            }
+        },
+
+
         mounted() {
 
             // Close all opened details on body click
@@ -261,9 +276,9 @@
 
             }
 
-            document.querySelector('.nav-toggler').addEventListener('click', function(){
-                document.body.querySelector('nav').classList.toggle('open');
-            });
+            // document.querySelector('.nav-toggler').addEventListener('click', function(){
+            //     document.body.querySelector('nav').classList.toggle('open');
+            // });
 
         }
     }
