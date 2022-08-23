@@ -25,20 +25,7 @@
           <div id="parallax-astronaut">
             <div data-depth="0.2" class="parallax-astronaut__wrapper-logo">
               <!-- <g-image  src="~/assets/images/white-paper-2022/astronaut-logo.svg"  alt="astronaut-logo"/> -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="108.303" height="105.407" viewBox="0 0 108.303 105.407" class="logo-robonomics">
-                <g id="Group_749" data-name="Group 749" transform="translate(-881.549 -402.425)">
-                  <g id="Group_748" data-name="Group 748" transform="translate(881.549 402.425)">
-                    <g id="Group_747" data-name="Group 747" transform="translate(17.368 27.104)">
-                      <path class="triangle-2"  id="Path_830" data-name="Path 830" d="M962.656,444.057v44.2L999.366,507.6Z" transform="translate(-925.947 -444.057)" fill="#b2c1f3"/>
-                      <path id="Path_831" class="triangle-3" data-name="Path 831" d="M962.656,488.26,925.947,507.6h73.419Z" transform="translate(-925.947 -444.057)" fill="#213159"/>
-                      <path class="triangle-1"  id="Path_832" data-name="Path 832" d="M962.656,444.057,925.947,507.6l36.774-19.343Z" transform="translate(-925.947 -444.057)" fill="#00bdff"/>
-                    </g>
-                    <path class="line"  id="Path_833" data-name="Path 833" d="M935.51,398.995l-48.9,94.531h97.807Z" transform="translate(-881.549 -393.557)" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="2"/>
-                    <circle class="dot" id="Ellipse_88" data-name="Ellipse 88" cx="5.438" cy="5.438" r="5.438" transform="translate(0 94.531)" fill="#00bdff"/>
-                    <circle class="dot" id="Ellipse_89" data-name="Ellipse 89" cx="5.438" cy="5.438" r="5.438" transform="translate(97.427 94.531)" fill="#00bdff"/>
-                    <circle class="dot" id="Ellipse_90" data-name="Ellipse 90" cx="5.438" cy="5.438" r="5.438" transform="translate(48.591)" fill="#00bdff"/>
-                  </g>
-                </g>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.45 100.44" width="100" height="100"><g id="Layer_2" data-name="Layer 2"><g><polygon class="cls-1" points="55.1 35.84 55.1 67.2 80.03 80.93 55.1 35.84"/><polygon class="cls-2" points="55.1 67.2 30.16 80.93 80.03 80.93 55.1 67.2"/><polygon class="cls-3" points="55.1 35.84 30.16 80.93 55.14 67.2 55.1 35.84"/><polygon class="cls-4" points="55.1 3.86 3.44 96.58 106.76 96.58 55.1 3.86"/><ellipse class="cls-3" cx="3.69" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-3" cx="106.76" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-3" cx="55.1" cy="3.86" rx="3.69" ry="3.86"/></g></g>
               </svg>
             </div>
             <div data-depth="0.2" class="parallax-astronaut__wrapper">
@@ -47,6 +34,12 @@
           </div>
         </div>
         <div class="yellow-robot">
+          <div class="yellow-robot-antenna">
+            <div class="circle first"></div>
+            <div class="circle second"></div>
+            <div class="circle third"></div>	
+            <div class="circle fourth"></div>
+          </div>
           <Spot/>
         </div>
         <div class="small-robot__wrapper">
@@ -322,7 +315,8 @@ export default {
   }
 
   .container--left {
-    padding-left: var(--space) ;
+    padding-left: calc(var(--space) * 7) ;
+    padding-right: var(--space);
   }
 
   .section__blue {
@@ -352,8 +346,8 @@ export default {
   }
 
   .chapter__title {
-    font-size: 1.5rem;
-    white-space: nowrap;
+    font-size: 1.2rem;
+    /* white-space: nowrap; */
     text-align: left;
   }
 
@@ -361,12 +355,18 @@ export default {
   .chapter__subtitle {
     margin-bottom: 0;
     font-size: 1.2rem;
-    white-space: nowrap;
+    text-transform: none;
+    /* white-space: nowrap; */
   }
 
   .chapter__list {
     margin-left: 0;
     list-style-type: '- ' ;
+  }
+
+  .chapter__descr {
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   .chapter__container {
@@ -376,7 +376,7 @@ export default {
    }
 
    .chapter__text {
-    width: calc(50% - 2rem);
+    width: calc(50% - 9rem);
    }
 
    .chapter__images {
@@ -397,6 +397,7 @@ export default {
   .chapter__item {
     margin-bottom: 0;
     font-size: 1rem;
+    font-weight: 500;
   }
 
   .button {
@@ -441,7 +442,7 @@ export default {
   .big-colony {
     position: absolute;
     left: 0;
-    bottom: 10vh;
+    bottom: 7vh;
     opacity: 0;
     animation: FadeIn 3s forwards linear;
   }
@@ -449,7 +450,7 @@ export default {
   .small-colony {
     position: absolute;
     right: 3%;
-    bottom: 10vh;
+    bottom: 7vh;
     opacity: 0;
     animation: FadeIn 3s forwards 0.2s linear;
   }
@@ -517,11 +518,112 @@ export default {
 			animation: 5s logo-triangle-3 0.5s linear infinite;
 		}
 
+    .logo-robonomics .inside-triangle {
+      width: 40px;
+    }
+
+    .cls-1{fill:#b2c1f3;}
+    .cls-2{fill:#213159;}
+    .cls-3{fill:#00bdff;}
+    .cls-4{fill:none;stroke:#00bdff;stroke-miterlimit:10;stroke-width:2px;}
+
   .yellow-robot {
     position: absolute;
     left: 5%;
-    bottom: 0;
+    bottom: 12px;
     z-index: 18;
+  }
+
+.yellow-robot-antenna{
+    position:absolute;
+    top: -50px;
+    left: 51%;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.25rem;
+    
+    -ms-transform:rotate(-45deg) translate(-100px);
+    -moz-transform:rotate(-45deg) translate(-100px);
+    -o-transform:rotate(-45deg) translate(-100px);
+    -webkit-transform:rotate(-45deg) translate(-100px);
+     transform:rotate(-45deg) translate(-100px);
+   }
+  .yellow-robot-antenna .circle {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    display:block;
+    width:100%;
+    height:100%;
+    font-size: 1rem;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-color: #fad109;
+    border-style:solid;
+    border-width:1em 1em 0 0 ;
+    -webkit-border-radius:0 100% 0 0;
+    border-radius:0 100% 0 0;
+    
+    opacity:0;
+    -o-animation: signalAnimation  3s infinite;
+    -moz-animation: signalAnimation  3s infinite;
+    -webkit-animation: signalAnimation  3s infinite;
+    animation: signalAnimation  3s infinite;
+    
+}
+
+  .yellow-robot-antenna .circle.first {
+      -o-animation-delay:800ms;
+      -moz-animation-delay:800ms;
+      -webkit-animation-delay:800ms;
+      animation-delay:800ms;
+  }
+
+  .yellow-robot-antenna .circle.second {
+      width:5em;
+      height:5em;
+      -o-animation-delay:400ms;
+      -moz-animation-delay:400ms;
+      -webkit-animation-delay:400ms;
+      animation-delay:400ms;
+  }
+
+    .yellow-robot-antenna .circle.third {
+      width: 3em;
+      height: 3em;
+    }
+
+    .yellow-robot-antenna .circle.fourth {
+      width: 1em;
+      height: 1em;
+      background-color: #fad109;
+      -o-animation-delay:1000ms;
+      -moz-animation-delay:1000ms;
+      -webkit-animation-delay:1000ms;
+      animation-delay:1000ms;
+    }
+
+  .yellow-robot-antenna .circle {
+    opacity: 0;
+    animation: FadeIn 2s linear;
+    -webkit-animation: FadeIn 2s linear;
+  }
+
+  .yellow-robot-antenna .line-1 {
+    animation: FadeIn 2s  0.7s linear;
+    -webkit-animation: FadeIn 2s  0.7s linear;
+  }
+
+  .yellow-robot-antenna .line-2 {
+    opacity: 0;
+    animation: FadeIn 2s 0.9s linear;
+    -webkit-animation: FadeIn 2s 0.9s linear;
+  }
+
+  .yellow-robot-antenna .line-3 {
+    opacity: 0;
+    animation: FadeIn 2s 1.2s linear;
+    -webkit-animation: FadeIn 2s  1.2s linear;
   }
 
   .small-robot {
@@ -547,7 +649,7 @@ export default {
 
   .small-robot-antenna {
     position: absolute;
-    left: 21.18%;
+    left: calc(20% + 20px);
     bottom: calc(10% + 61px);
     z-index: 16;
     transform: translateX(-25vw);
@@ -884,9 +986,10 @@ export default {
 
     /* media quires */
 
-    @media screen and (max-width: 1060px) {
+    @media screen and (max-width: 1360px) {
       .chapter__container {
         padding-right: var(--space);
+        padding-left: var(--space);
         flex-direction: column;
       }
 
@@ -932,6 +1035,17 @@ export default {
       }
 
 
+    }
+
+    @media screen and (max-width: 820px) {
+      
+      .yellow-robot {
+        display: none;
+      }
+
+      .small-robot__wrapper {
+        display: none;
+      }
     }
 
     @media screen and (max-width: 750px) {
@@ -982,10 +1096,6 @@ export default {
         display: none;
         left: 53%;
         top: 55%;
-      }
-
-      .yellow-robot {
-        display: none;
       }
 
       .chapter__images {
