@@ -961,18 +961,5 @@
       </g>
     </g>
     <path id="Path_829" data-name="Path 829" d="M857.9,428.55s32.912-66.6,108.455-56.046a9.494,9.494,0,0,1,4.256,1.742l3.488,2.537a3.76,3.76,0,0,1-1.333,6.7c-22.354,5.39-84.688,24.126-107.848,69.634C858.156,466.407,852.638,443.465,857.9,428.55Z" fill="#fff" opacity="0.26"/>
-    <g id="Group_749" data-name="Group 749">
-      <g id="Group_748" data-name="Group 748">
-        <g id="Group_747" data-name="Group 747">
-          <path id="Path_830" data-name="Path 830" d="M962.656,444.057v44.2L999.366,507.6Z" fill="#b2c1f3"/>
-          <path id="Path_831" data-name="Path 831" d="M962.656,488.26,925.947,507.6h73.419Z" fill="#213159"/>
-          <path id="Path_832" data-name="Path 832" d="M962.656,444.057,925.947,507.6l36.774-19.343Z" fill="#00bdff"/>
-        </g>
-        <path id="Path_833" data-name="Path 833" d="M962.656,398.995l-76.05,130.667h152.1Z" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="2"/>
-        <circle id="Ellipse_88" data-name="Ellipse 88" cx="5.438" cy="5.438" r="5.438" transform="translate(881.549 524.224)" fill="#00bdff"/>
-        <circle id="Ellipse_89" data-name="Ellipse 89" cx="5.438" cy="5.438" r="5.438" transform="translate(1033.268 524.224)" fill="#00bdff"/>
-        <circle id="Ellipse_90" data-name="Ellipse 90" cx="5.438" cy="5.438" r="5.438" transform="translate(957.218 393.557)" fill="#00bdff"/>
-      </g>
-    </g>
   </g>
 </svg>

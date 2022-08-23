@@ -50,9 +50,11 @@ h1 {
   padding-top: calc(var(--space) * 2);
   margin-bottom: var(--space);
   text-align: center;
+  line-height: 1.2
 }
 
 h2, h3, h4, h5 {
+  line-height: 1.2;
   margin-bottom: var(--space-text);
   /* font-weight: 400; */
 }
