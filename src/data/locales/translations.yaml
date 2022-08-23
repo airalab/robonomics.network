@@ -5713,7 +5713,7 @@
   it: ARCHITETTURA
   pt: ARQUITETURA
   ru: "\u0410\u0420\u0425\u0418\u0422\u0415\u041A\u0422\u0423\u0420\u0410"
-  sp: ARCHITECTURA
+  es: ARCHITECTURA
   tr: "M\u0130MAR\u0130"
 - alias: ROBONOMICS ARCHITECTURE
   az: "ROBONOM\u0130KA ARXITEKTURAS\u0130"
@@ -5724,7 +5724,7 @@
   ru: "\u0410\u0420\u0425\u0418\u0422\u0415\u041A\u0422\u0423\u0420\u0410 \u042D\u041A\
     \u041E\u041D\u041E\u041C\u0418\u041A\u0418 \u0420\u041E\u0411\u041E\u0422\u041E\
     \u0412"
-  sp: 'ARCHITECTURE DE ROBONOMICS '
+  es: 'ARCHITECTURE DE ROBONOMICS '
   tr: "ROBONOM\u0130CS M\u0130MAR\u0130S\u0130"
 - alias: "The main idea that the authors of Robonomics tried to convey before - is\
     \ the natural, logical, and seemingly inevitable evolution from the current level\
@@ -5796,7 +5796,7 @@
     \ \u043C\u0438\u0440\u0435 \u0441\u043E \u0441\u043A\u043E\u0440\u043E\u0441\u0442\
     \u044C\u044E, \u043D\u0435\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0439\
     \ \u043B\u044E\u0434\u044F\u043C."
-  sp: "La idea principal que los autores de Robonomics antes intentaron transmitir\
+  es: "La idea principal que los autores de Robonomics antes intentaron transmitir\
     \ es la evoluci\xF3n natural, l\xF3gica y aparentemente inevitable desde el nivel\
     \ actual de la econom\xEDa hacia servicios completamente automatizados. Los servicios\
     \ automatizados deber\xE1n tener tanto la capacidad de hablar el lenguaje de la\
@@ -5870,7 +5870,7 @@
     \u0430\u043D\u043D\u043E\u0439, \u0433\u043B\u043E\u0431\u0430\u043B\u044C\u043D\
     \u043E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0439 \u0441\u0435\u0442\
     \u0438 \u043F\u0440\u043E\u0432\u0430\u0439\u0434\u0435\u0440\u043E\u0432."
-  sp: "A continuaci\xF3n, nos gustar\xEDa mostrarle las \xE1reas pr\xE1cticas de la\
+  es: "A continuaci\xF3n, nos gustar\xEDa mostrarle las \xE1reas pr\xE1cticas de la\
     \ interacci\xF3n hombre-m\xE1quina utilizando la tecnolog\xEDa moderna de Internet.\
     \ Pasaremos de la arquitectura familiar de dispositivos IoT de intercambio de\
     \ informaci\xF3n t\xE9cnica a trav\xE9s de servicios en la nube, a la organizaci\xF3\
@@ -5936,7 +5936,7 @@
     \ \u043D\u0430 \u0440\u0435\u0448\u0435\u043D\u0438\u0435 \u043A\u043E\u0442\u043E\
     \u0440\u044B\u0445 \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0430\
     \ \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0430."
-  sp: "Para empezar, necesitamos hacer una excursi\xF3n al \xE1rea que est\xE1 m\xE1\
+  es: "Para empezar, necesitamos hacer una excursi\xF3n al \xE1rea que est\xE1 m\xE1\
     s claramente relacionada con la conexi\xF3n a la red de los sistemas automatizados.\
     \ A continuaci\xF3n, veremos los fundamentos del Internet de las Cosas para destacar\
     \ los problemas y principales retos a los que se enfrentan los creadores de sistemas\
@@ -5958,7 +5958,7 @@
   ru: "\u041E\u0411\u0417\u041E\u0420 \u0421\u041E\u0421\u0422\u041E\u042F\u041D\u0418\
     \u042F \u0418\u041D\u0422\u0415\u0420\u041D\u0415\u0422\u0410 \u0412\u0415\u0429\
     \u0415\u0419 (IOT)"
-  sp: "DESCRIPCI\xD3N GENERAL DEL ESTADO DE INTERNET DE LAS COSAS (IOT)"
+  es: "DESCRIPCI\xD3N GENERAL DEL ESTADO DE INTERNET DE LAS COSAS (IOT)"
   tr: "Nesnelerin \u0130nternetinin Durumuna Genel Bak\u0131\u015F (IoT)"
 - alias: The issue of network accessibility of automatic devices has been discussed
     all over the planet since the 60s, and already at that time quite serious attempts
@@ -6022,7 +6022,7 @@
     \u044F \u043D\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u043E\u0439\
     \ \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\
     \u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B"
-  sp: "El tema de la accesibilidad a la red de los dispositivos autom\xE1ticos se\
+  es: "El tema de la accesibilidad a la red de los dispositivos autom\xE1ticos se\
     \ ha discutido en todo el planeta desde los a\xF1os 60, y ya en ese momento se\
     \ hicieron intentos bastante serios para resolverlo. Por ejemplo, el cibern\xE9\
     tico sovi\xE9tico Viktor Glushkov mostr\xF3 e implement\xF3 parcialmente la recopilaci\xF3\
@@ -6040,7 +6040,7 @@
   it: OGAS
   pt: OGAS
   ru: "\u041E\u0413\u0410\u0421"
-  sp: OGAS
+  es: OGAS
   tr: OGAS
 - alias: national information system in the 60s and 70s. It is widely known how the
     Coca-Cola vending machine was connected to the ARPANET in the 1980s so that the
@@ -6075,7 +6075,7 @@
     \u0430\u0442\u044C \u043E \u043D\u0430\u043B\u0438\u0447\u0438\u0438 \u043D\u0430\
     \u043F\u0438\u0442\u043A\u043E\u0432 \u0438 \u0438\u0445 \u0442\u0435\u043C\u043F\
     \u0435\u0440\u0430\u0442\u0443\u0440\u0435."
-  sp: "en los a\xF1os 60 y 70. Es muy conocido c\xF3mo la m\xE1quina expendedora de\
+  es: "en los a\xF1os 60 y 70. Es muy conocido c\xF3mo la m\xE1quina expendedora de\
     \ Coca-Cola se conect\xF3 a ARPANET en la d\xE9cada de 1980 para que las m\xE1\
     quinas reportaran la disponibilidad de bebidas y su temperatura."
   tr: "ulusal bilgi sisteminin tasar\u0131m\u0131n\u0131n bir par\xE7as\u0131 olarak\
@@ -6195,7 +6195,7 @@
     \u0438\u0437\u0430\u0446\u0438\u044F, \u0430\u0433\u0440\u043E\u043F\u0440\u043E\
     \u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u044C, \u043E\u0445\
     \u0440\u0430\u043D\u0430 \u044D\u043A\u043E\u043B\u043E\u0433\u0438\u0438."
-  sp: "Pero a\xFAn as\xED, el desarrollo real de IoT est\xE1 ocurriendo hoy, debido\
+  es: "Pero a\xFAn as\xED, el desarrollo real de IoT est\xE1 ocurriendo hoy, debido\
     \ al uso generalizado de tecnolog\xEDas habilitadoras. Los principales impulsores\
     \ de la r\xE1pida evoluci\xF3n de las aplicaciones de Internet de las cosas son\
     \ los resultados del desarrollo de muchas \xE1reas, desde comunicaciones inal\xE1\
@@ -6271,7 +6271,7 @@
     \u0447\u0435\u0441\u043A\u0438\u0435, \u0432\u044B\u0447\u0438\u0441\u043B\u0438\
     \u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0438 \u0443\u043F\u0440\u0430\u0432\
     \u043B\u044F\u044E\u0449\u0438\u0435 \u043C\u0430\u0448\u0438\u043D\u044B."
-  sp: "Estamos m\xE1s interesados \u200B\u200Ben el proceso de construcci\xF3n de\
+  es: "Estamos m\xE1s interesados \u200B\u200Ben el proceso de construcci\xF3n de\
     \ sistemas IoT y las tareas que surgen en este proceso. A lo largo de los a\xF1\
     os de investigaci\xF3n, se han propuesto muchas arquitecturas diferentes y, al\
     \ promediarlas, podemos distinguir tres componentes b\xE1sicos de un sistema IoT:\
@@ -6290,7 +6290,7 @@
   it: NUOVE SFIDE
   pt: NOVOS DESAFIOS
   ru: "\u041D\u043E\u0432\u044B\u0435 \u0432\u044B\u0437\u043E\u0432\u044B"
-  sp: NUEVOS DESAFIOS
+  es: NUEVOS DESAFIOS
   tr: "YEN\u0130 MEYDAN OKUMALAR"
 - alias: "The development and application of the Internet of Things has shown that\
     \ solving typical problems is not enough. Completely new concepts and principles,\
@@ -6437,7 +6437,7 @@
     \u0438\u044F \u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0430 \u0432\u0435\
     \u0449\u0435\u0439 \u0441\u0442\u0430\u043B\u043E \u0441\u043E\u0437\u0434\u0430\
     \u043D\u0438\u0435 edge-\u0441\u0438\u0441\u0442\u0435\u043C."
-  sp: "El desarrollo y la aplicaci\xF3n del Internet de las Cosas ha demostrado que\
+  es: "El desarrollo y la aplicaci\xF3n del Internet de las Cosas ha demostrado que\
     \ no basta con resolver problemas t\xEDpicos. En la actualidad, han surgido conceptos\
     \ y principios completamente nuevos, basados en errores anteriores y deficiencias\
     \ identificadas. Este enfoque ciertamente conveniente de usar servicios en la\
@@ -6543,7 +6543,7 @@
     , \u0447\u0435\u043C \u043E\u0431\u044B\u0447\u043D\u043E\u0435 \u043F\u043E\u0434\
     \u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 IoT-\u0443\u0441\u0442\u0440\u043E\
     \u0439\u0441\u0442\u0432."
-  sp: "Otro desaf\xEDo reciente para construir IoT ha sido el concepto de gemelo digital:\
+  es: "Otro desaf\xEDo reciente para construir IoT ha sido el concepto de gemelo digital:\
     \ una versi\xF3n digital de un equipo real que copia sus especificaciones y datos\
     \ hist\xF3ricos. Este concepto es mejor en \xE1reas donde es necesario tener una\
     \ especificaci\xF3n precisa y completa de un proceso y poder predecir su desarrollo.\
@@ -6631,7 +6631,7 @@
     \u0443\u0433\u0438 \u0434\u043B\u044F \u0447\u0435\u043B\u043E\u0432\u0435\u043A\
     \u0430, \u043D\u043E \u0430\u0432\u0442\u043E\u043D\u043E\u043C\u043D\u043E \u043E\
     \u0442 \u043D\u0435\u0433\u043E."
-  sp: "En este momento estamos presenciando un segmento completo de la red, dise\xF1\
+  es: "En este momento estamos presenciando un segmento completo de la red, dise\xF1\
     ado y conveniente no para las personas, sino para las m\xE1quinas. El Internet\
     \ de las cosas ya no es solo la mec\xE1nica de conectar un dispositivo a la red,\
     \ sino m\xE1s servicios, creados y disponibles espec\xEDficamente para los dispositivos.\
@@ -6654,7 +6654,7 @@
   pt: "CLASSIFICA\xC7\xC3O DOS DISPOSITIVOS IOT"
   ru: "\u041A\u041B\u0410\u0421\u0421\u0418\u0424\u0418\u041A\u0410\u0426\u0418\u042F\
     \ IOT-\u0423\u0421\u0422\u0420\u041E\u0419\u0421\u0422\u0412"
-  sp: "CLASIFICACI\xD3N DE DISPOSITIVOS IOT"
+  es: "CLASIFICACI\xD3N DE DISPOSITIVOS IOT"
   tr: "IOT C\u0130HAZLARININ SINIFLANDIRILMASI"
 - alias: EMBEDDED IOT SYSTEMS
   az: "QURULMU\u015E IOT S\u0130STEML\u018FR"
@@ -6664,7 +6664,7 @@
   pt: SISTEMAS IOT EMBARCADOS
   ru: "\u0412\u0421\u0422\u0420\u0410\u0418\u0412\u0410\u0415\u041C\u042B\u0415 IOT-\u0421\
     \u0418\u0421\u0422\u0415\u041C\u042B"
-  sp: SISTEMAS IOT INTEGRADOS
+  es: SISTEMAS IOT INTEGRADOS
   tr: "G\xF6m\xFCl\xFC Nesnelerin \u0130nterneti Sistemleri"
 - alias: Such systems have no user interfaces and are typically used at the lowest
     level of the IoT ecosystems to provide basic functionality. Have to be energy
@@ -6726,7 +6726,7 @@
     \u043D\u043E \u0432\u044B\u0441\u0442\u0443\u043F\u0430\u044E\u0442 IoT-\u0448\
     \u043B\u044E\u0437\u044B \u0438\u043B\u0438 \u043A\u043E\u043D\u0442\u0440\u043E\
     \u043B\u043B\u0435\u0440\u044B.\n"
-  sp: "Dichos sistemas no tienen interfaces de usuario y, por lo general, se utilizan\
+  es: "Dichos sistemas no tienen interfaces de usuario y, por lo general, se utilizan\
     \ en el nivel m\xE1s bajo de los ecosistemas de IoT para proporcionar una funcionalidad\
     \ b\xE1sica. Tiene que ser energ\xE9ticamente eficiente y peque\xF1o. Disponer\
     \ de recursos inform\xE1ticos y de comunicaci\xF3n limitados. Las puertas de enlace\
@@ -6746,7 +6746,7 @@
   pt: 'SISTEMAS EDGE: GATEWAYS E CONTROLADORES IOT'
   ru: "EDGE-\u0421\u0418\u0421\u0422\u0415\u041C\u042B: IOT-\u0428\u041B\u042E\u0417\
     \u042B \u0418 \u041A\u041E\u041D\u0422\u0420\u041E\u041B\u041B\u0415\u0420\u042B"
-  sp: 'SISTEMAS EDGE: PUERTAS DE ENLACE Y CONTROLADORES IOT'
+  es: 'SISTEMAS EDGE: PUERTAS DE ENLACE Y CONTROLADORES IOT'
   tr: "EDGE S\u0130STEMLER\u0130: IOT A\u011E GE\xC7\u0130TLER\u0130 VE KONTROL C\u0130\
     HAZLARI"
 - alias: These systems act as a link between locally accessible embedded systems and
@@ -6831,7 +6831,7 @@
     \u0437 \u0432\u044B\u0432\u043E\u0434\u0430 \u0437\u0430 \u043F\u0440\u0435\u0434\
     \u0435\u043B\u044B \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u0441\
     \u0435\u0442\u0438."
-  sp: "Estos sistemas act\xFAan como enlace entre los sistemas integrados accesibles\
+  es: "Estos sistemas act\xFAan como enlace entre los sistemas integrados accesibles\
     \ localmente y la Internet global. Por lo general, admiten m\xFAltiples protocolos\
     \ de comunicaci\xF3n de sistemas integrados y transfieren la telemetr\xEDa de\
     \ los dispositivos a la nube y controlan las se\xF1ales hacia atr\xE1s. A menudo,\
@@ -6854,7 +6854,7 @@
   pt: "SISTEMAS AUT\xD4NOMOS"
   ru: "\u0410\u0412\u0422\u041E\u041D\u041E\u041C\u041D\u042B\u0415 \u0421\u0418\u0421\
     \u0422\u0415\u041C\u042B"
-  sp: "SISTEMAS AUT\xD3NOMOS"
+  es: "SISTEMAS AUT\xD3NOMOS"
   tr: "OTONOM S\u0130STEMLER"
 - alias: This class includes complex automata (such as Spot from Boston Dynamics),
     which have a control component on the level of a full computer with a high-performance
@@ -6946,7 +6946,7 @@
     \u043B\u043D\u043E\u0446\u0435\u043D\u043D\u043E\u043C\u0443 \u0441\u0435\u0442\
     \u0435\u0432\u043E\u043C\u0443 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\
     \u0432\u0443."
-  sp: "Esta clase incluye aut\xF3matas complejos (como Spot de Boston Dynamics), que\
+  es: "Esta clase incluye aut\xF3matas complejos (como Spot de Boston Dynamics), que\
     \ tienen un componente de control al nivel de una computadora completa con un\
     \ procesador de alto rendimiento y una gran cantidad de memoria. En tales casos,\
     \ el robot se conecta a Internet sin soluciones intermedias adicionales (sistemas\
@@ -6972,7 +6972,7 @@
   pt: PROVEDORES DE INTERNET DE COISAS
   ru: "\u041F\u0420\u041E\u0412\u0410\u0419\u0414\u0415\u0420\u042B \u0418\u041D\u0422\
     \u0415\u0420\u041D\u0415\u0422\u0410 \u0412\u0415\u0429\u0415\u0419"
-  sp: PROVEEDORES DE INTERNET DE LAS COSAS
+  es: PROVEEDORES DE INTERNET DE LAS COSAS
   tr: "Nesnelerin \u0130nterneti Sa\u011Flay\u0131c\u0131lar\u0131"
 - alias: The main job of IoT providers is providing users with remote access to data
     and analytics, as well as management of smart devices over the Internet. The main
@@ -7029,7 +7029,7 @@
     \u043D\u043E\u0441\u0442\u044C \u043F\u0440\u043E\u0432\u0430\u0439\u0434\u0435\
     \u0440\u0430 \u0438\u0437 \u043B\u044E\u0431\u043E\u0439 \u0442\u043E\u0447\u043A\
     \u0438 \u043C\u0438\u0440\u0430."
-  sp: "El trabajo principal de los proveedores de IoT es proporcionar a los usuarios\
+  es: "El trabajo principal de los proveedores de IoT es proporcionar a los usuarios\
     \ acceso remoto a datos y an\xE1lisis, as\xED como la gesti\xF3n de dispositivos\
     \ inteligentes a trav\xE9s de Internet. Los principales criterios de calidad del\
     \ proveedor son la seguridad de las operaciones, la estabilidad de la conexi\xF3\
@@ -7089,7 +7089,7 @@
     \ \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u043E\u0433\u043E \u0432\u0438\u0434\
     \u0430 \u0430\u043D\u0430\u043B\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0438\
     \u0445 \u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432."
-  sp: "El esquema est\xE1ndar para trabajar con un proveedor de IoT incluye: instalar\
+  es: "El esquema est\xE1ndar para trabajar con un proveedor de IoT incluye: instalar\
     \ software compatible con el dispositivo inteligente en la nube, configurar servicios\
     \ de administraci\xF3n del lado de la nube despu\xE9s de la primera conexi\xF3\
     n exitosa de un dispositivo, conexi\xF3n de varios tipos de servicios anal\xED\
@@ -7109,7 +7109,7 @@
   ru: "\u0426\u0418\u0424\u0420\u041E\u0412\u042B\u0415 \u0414\u0412\u041E\u0419\u041D\
     \u0418\u041A\u0418 \u2014 \u0421\u0415\u0420\u0414\u0426\u0415 \u0418\u041D\u0422\
     \u0415\u0420\u041D\u0415\u0422\u0410 \u0412\u0415\u0429\u0415\u0419"
-  sp: "LOS GEMELOS DIGITALES SON EL CORAZ\xD3N DEL INTERNET DE LAS COSAS"
+  es: "LOS GEMELOS DIGITALES SON EL CORAZ\xD3N DEL INTERNET DE LAS COSAS"
   tr: "D\u0130J\u0130TAL \u0130K\u0130ZLER \u0130NTERNET\u0130N KALB\u0130D\u0130R"
 - alias: Speaking of digital twins, it should be noted that architecturally their
     implementation is required; as a refusal to give the user direct access to control
@@ -7218,7 +7218,7 @@
     \ \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435 \u0430\u043A\u0442\u0443\
     \u0430\u043B\u044C\u043D\u043E\u0435 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\
     \u0438\u0435."
-  sp: "Hablando de gemelos digitales, cabe se\xF1alar que arquitect\xF3nicamente se\
+  es: "Hablando de gemelos digitales, cabe se\xF1alar que arquitect\xF3nicamente se\
     \ requiere su implementaci\xF3n; como un rechazo a dar al usuario acceso directo\
     \ a los dispositivos de control y cambiar sus estados. De las razones m\xE1s obvias\
     \ para el rechazo est\xE1n, en primer lugar, la presencia de sus propios requisitos\
@@ -7293,7 +7293,7 @@
     \u0443\u0433\u0438 \u0434\u043B\u044F \u0447\u0435\u043B\u043E\u0432\u0435\u043A\
     \u0430, \u043D\u043E \u0430\u0432\u0442\u043E\u043D\u043E\u043C\u043D\u043E \u043E\
     \u0442 \u043D\u0435\u0433\u043E."
-  sp: "Como resultado, tenemos una separaci\xF3n del bucle de intercambio de informaci\xF3\
+  es: "Como resultado, tenemos una separaci\xF3n del bucle de intercambio de informaci\xF3\
     n con el usuario y la generaci\xF3n actual de datos reales por parte de los sensores.\
     \ Para ilustrar este principio, a continuaci\xF3n se muestra el proceso del usuario\
     \ que trabaja con un dispositivo IoT utilizando un gemelo digital."
@@ -7312,7 +7312,7 @@
   ru: "\u041F\u041E\u0422\u041E\u041A\u0418 IOT-\u0414\u0410\u041D\u041D\u042B\u0425\
     \ \u0412 \u041E\u0411\u041B\u0410\u0427\u041D\u042B\u0425 \u0421\u0415\u0420\u0412\
     \u0418\u0421\u0410\u0425"
-  sp: FLUJOS DE DATOS IOT EN SERVICIOS EN LA NUBE
+  es: FLUJOS DE DATOS IOT EN SERVICIOS EN LA NUBE
   tr: "BULUT H\u0130ZMETLER\u0130NDE IOT VER\u0130 AKI\u015ELARI"
 - alias: Input values for cloud triggers. For example, the cloud service sends various
     notifications to the user in the event of a report from a car alarm sensor about
@@ -7347,7 +7347,7 @@
     \ \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u0443\u0432\u0435\u0434\
     \u043E\u043C\u043B\u0435\u043D\u0438\u044F \u043F\u043E\u043B\u044C\u0437\u043E\
     \u0432\u0430\u0442\u0435\u043B\u044E."
-  sp: "Valores de entrada para disparadores de nube. Por ejemplo, el servicio en la\
+  es: "Valores de entrada para disparadores de nube. Por ejemplo, el servicio en la\
     \ nube env\xEDa varias notificaciones al usuario en caso de un informe de un sensor\
     \ de alarma de autom\xF3vil acerca de una huelga."
   tr: "Bulut tetikleyicileri i\xE7in giri\u015F de\u011Ferleri. \xD6rne\u011Fin, bulut\
@@ -7380,7 +7380,7 @@
     \u0440\u0430\u0431\u043E\u0442\u043A\u0435 \u0432\u0438\u0434\u0435\u043E \u0434\
     \u043B\u044F \u0440\u0430\u0441\u043F\u043E\u0437\u043D\u0430\u0432\u0430\u043D\
     \u0438\u044F \u043B\u0438\u0446 \u0432 \u0442\u043E\u043B\u043F\u0435."
-  sp: "Datos de salida para an\xE1lisis complejos que no se pueden producir en el\
+  es: "Datos de salida para an\xE1lisis complejos que no se pueden producir en el\
     \ nivel de borde. Por ejemplo, al procesar video para reconocimiento facial en\
     \ una multitud."
   tr: "Edge d\xFCzeyinde \xFCretilemeyen karma\u015F\u0131k analitik i\xE7in \xE7\u0131\
@@ -7416,7 +7416,7 @@
     \u0430\u0442\u0435\u043B\u044F \u0432 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\
     \u043E\u043C \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0438\
     \u043B\u0438 \u043D\u0430 \u0441\u0430\u0439\u0442\u0435."
-  sp: "La base para formar un gemelo digital del dispositivo para crear un molde de\
+  es: "La base para formar un gemelo digital del dispositivo para crear un molde de\
     \ su estado. Por ejemplo, a petici\xF3n del usuario en la aplicaci\xF3n m\xF3\
     vil o en el sitio web."
   tr: "Durumunun bir d\xF6k\xFCm\xFCn\xFC olu\u015Fturmak i\xE7in cihaz\u0131n dijital\
@@ -7431,7 +7431,7 @@
   pt: "EXEMPLOS POPULARES DE SOLU\xC7\xD5ES DE IoT"
   ru: "\u041F\u041E\u041F\u0423\u041B\u042F\u0420\u041D\u042B\u0415 \u041F\u0420\u0418\
     \u041C\u0415\u0420\u042B IOT-\u0420\u0415\u0428\u0415\u041D\u0418\u0419"
-  sp: EJEMPLOS POPULARES DE SOLUCIONES IOT
+  es: EJEMPLOS POPULARES DE SOLUCIONES IOT
   tr: "IOT \xC7\xD6Z\xDCMLER\u0130N\u0130N POP\xDCLER \xD6RNEKLER\u0130"
 - alias: A typical smart home system provides a wide range of options for controlling
     your living space. With its help you can remotely control the door locks, setting
@@ -7544,7 +7544,7 @@
     \ \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\
     \u0442 \u0432\u0430\u0448\u0435\u0433\u043E \u0440\u0430\u0441\u043F\u0438\u0441\
     \u0430\u043D\u0438\u044F."
-  sp: "Un sistema dom\xE9stico inteligente t\xEDpico ofrece una amplia gama de opciones\
+  es: "Un sistema dom\xE9stico inteligente t\xEDpico ofrece una amplia gama de opciones\
     \ para controlar su espacio vital. Con su ayuda, puede controlar de forma remota\
     \ las cerraduras de las puertas, configurando el acceso \xFAnico o regular a la\
     \ habitaci\xF3n como familiares y amigos, y para el personal de mantenimiento\
@@ -7638,7 +7638,7 @@
     \u0437\u0430\u043D\u0438\u0435\u043C \u0438\u0445 \u0441\u0442\u0430\u0442\u0443\
     \u0441\u0430, \u043E\u0442\u0441\u0442\u0430\u0442\u043A\u043E\u0432 \u0442\u043E\
     \u043F\u043B\u0438\u0432\u0430, \u0438 \u0442. \u0434."
-  sp: "Coches inteligentes. Al proporcionar a la electr\xF3nica a bordo del autom\xF3\
+  es: "Coches inteligentes. Al proporcionar a la electr\xF3nica a bordo del autom\xF3\
     vil acceso a Internet m\xF3vil, el usuario obtiene acceso al control remoto de\
     \ varias funciones del autom\xF3vil directamente desde su tel\xE9fono inteligente:\
     \ abrir puertas, encender el aire acondicionado, controlar los faros. Si dichos\
@@ -7720,7 +7720,7 @@
     \u0432\u043D\u043E\u0435 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\
     \u043D\u0438\u0435 \u0440\u043E\u0431\u043E\u0442\u043E\u0432 \u0432\u0435\u043D\
     \u0434\u043E\u0440\u043E\u043C."
-  sp: "Sistema inteligente de arrendamiento de equipos. La empresa instala manipuladores\
+  es: "Sistema inteligente de arrendamiento de equipos. La empresa instala manipuladores\
     \ rob\xF3ticos en la l\xEDnea transportadora bajo un contrato con pago por el\
     \ n\xFAmero de operaciones o por el tiempo del robot. Los manipuladores proporcionan\
     \ regularmente un registro de las operaciones realizadas, errores y advertencias.\
@@ -7743,7 +7743,7 @@
   ru: "\u0410\u041A\u0422\u0423\u0410\u041B\u042C\u041D\u042B\u0415 \u041F\u0420\u041E\
     \u0411\u041B\u0415\u041C\u042B \u041F\u041E\u0421\u0422\u0420\u041E\u0415\u041D\
     \u0418\u042F IOT-\u0420\u0415\u0428\u0415\u041D\u0418\u0419"
-  sp: "PROBLEMAS ACTUALES DE LA CONSTRUCCI\xD3N DE SOLUCIONES IOT"
+  es: "PROBLEMAS ACTUALES DE LA CONSTRUCCI\xD3N DE SOLUCIONES IOT"
   tr: "IOT \xC7\xD6Z\xDCMLER\u0130 OLU\u015ETURMANIN MEVCUT SORUNLARI"
 - alias: GLOBAL AVAILABILITY
   az: "QLOBAL M\xD6VCUDLUQ"
@@ -7753,7 +7753,7 @@
   pt: DISPONIBILIDADE GLOBAL
   ru: "\u0413\u041B\u041E\u0411\u0410\u041B\u042C\u041D\u0410\u042F \u0414\u041E\u0421\
     \u0422\u0423\u041F\u041D\u041E\u0421\u0422\u042C"
-  sp: DISPONIBILIDAD GLOBAL
+  es: DISPONIBILIDAD GLOBAL
   tr: "K\xDCRESEL KULLANILAB\u0130L\u0130RL\u0130K"
 - alias: The standard client-server architecture requires specifying endpoints when
     routing messages from IoT devices. Thus, during the life of a smart device, the
@@ -7800,7 +7800,7 @@
     \u0439 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0438 \u0432\
     \u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F\
     \ \u0441 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E\u043C."
-  sp: "La arquitectura cliente-servidor est\xE1ndar requiere la especificaci\xF3n\
+  es: "La arquitectura cliente-servidor est\xE1ndar requiere la especificaci\xF3n\
     \ de puntos finales al enrutar mensajes desde dispositivos IoT. As\xED, durante\
     \ la vida de un dispositivo inteligente, la falta de conexi\xF3n supondr\xE1 una\
     \ limitaci\xF3n en la capacidad de control e interacci\xF3n con el dispositivo."
@@ -7863,7 +7863,7 @@
     \u044E\u0447\u0430\u0435\u043C\u044B\u0445 \u043A \u043E\u0431\u043B\u0430\u0447\
     \u043D\u044B\u043C \u0441\u0435\u0440\u0432\u0438\u0441\u0430\u043C \u043F\u0440\
     \u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044F."
-  sp: "Por ejemplo, la guerra comercial entre China y Estados Unidos ya es una espada\
+  es: "Por ejemplo, la guerra comercial entre China y Estados Unidos ya es una espada\
     \ de Damocles que se cierne sobre miles de consumidores de electrodom\xE9sticos\
     \ inteligentes chinos en Estados Unidos y viceversa. En cualquier momento, el\
     \ bloqueo de los servidores de Xiaomi por parte de las autoridades estadounidenses\
@@ -7928,7 +7928,7 @@
     \u0440\u0430\u0432\u043B\u044F\u0435\u0442 \u043E\u0431\u043B\u0430\u043A\u043E\
     , \u0430 \u043D\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\
     \u043B\u044C."
-  sp: "Al estar en las inmediaciones de un dispositivo IoT, no puede controlarlo desde\
+  es: "Al estar en las inmediaciones de un dispositivo IoT, no puede controlarlo desde\
     \ una aplicaci\xF3n m\xF3vil si no hay conexi\xF3n a los servidores, a trav\xE9\
     s de los cuales se proporciona la autenticaci\xF3n de usuario y la recopilaci\xF3\
     n de la telemetr\xEDa de los propios dispositivos. Es decir, el dispositivo en\
@@ -7946,7 +7946,7 @@
   pt: "CIBERSEGURAN\xC7A"
   ru: "\u041A\u0418\u0411\u0415\u0420\u0411\u0415\u0417\u041E\u041F\u0410\u0421\u041D\
     \u041E\u0421\u0422\u042C"
-  sp: "SEGURIDAD CIBERN\xC9TICA"
+  es: "SEGURIDAD CIBERN\xC9TICA"
   tr: "S\u0130BER G\xDCVENL\u0130K"
 - alias: The most important reason for the low cybersecurity of most IoT solutions
     stems from the problematic legacy of cloud client-server architecture. For example,
@@ -8048,7 +8048,7 @@
     \u0435\u0447\u043A\u0438 \u0441\u0442\u0430\u043D\u043E\u0432\u044F\u0442\u0441\
     \u044F \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u043D\u043E\u0439 \u043A\u0430\
     \u0442\u0430\u0441\u0442\u0440\u043E\u0444\u043E\u0439."
-  sp: "La raz\xF3n m\xE1s importante de la baja ciberseguridad de la mayor\xEDa de\
+  es: "La raz\xF3n m\xE1s importante de la baja ciberseguridad de la mayor\xEDa de\
     \ las soluciones de IoT se deriva del legado problem\xE1tico de la arquitectura\
     \ cliente-servidor en la nube. Por ejemplo, la arquitectura de un hogar inteligente\
     \ m\xE1s com\xFAn en este momento suele ser un centro de IoT, conectado a un servicio\
@@ -8128,7 +8128,7 @@
     \ \u043F\u0440\u043E\u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u0443\u0436\
     \u0435 \u0438 \u043D\u0430 \u0444\u0438\u0437\u0438\u0447\u0435\u0441\u043A\u043E\
     \u043C \u0443\u0440\u043E\u0432\u043D\u0435."
-  sp: "Los servidores de servicios en la nube est\xE1n sujetos a todos los problemas\
+  es: "Los servidores de servicios en la nube est\xE1n sujetos a todos los problemas\
     \ t\xEDpicos de ciberseguridad: ataques a la red, ataques DoS (que hacen que el\
     \ sistema falle), modificaciones maliciosas, secuestro de la sesi\xF3n del usuario,\
     \ etc. Pero las amenazas fuertes tambi\xE9n incluyen problemas no intencionales\
@@ -8219,7 +8219,7 @@
     \u0431\u043B\u0430\u043A\u0443 \u0438 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\
     \u0432\u0430\u044E\u0449\u0438\u043C \u0435\u0433\u043E \u0441\u043E\u0442\u0440\
     \u0443\u0434\u043D\u0438\u043A\u0430\u043C."
-  sp: "Todo esto se ve exacerbado por la escala de las soluciones de IoT. El n\xFA\
+  es: "Todo esto se ve exacerbado por la escala de las soluciones de IoT. El n\xFA\
     mero de sistemas IoT. Ciertamente, el servicio en la nube es m\xE1s seguro que\
     \ los dispositivos de bajo nivel, pero la consolidaci\xF3n del control centralizado\
     \ sobre cientos de miles de estos sistemas hace que cualquier brecha de seguridad\
@@ -8241,7 +8241,7 @@
   pt: PRIVACIDADE DE DADOS
   ru: "\u041F\u0420\u0418\u0412\u0410\u0422\u041D\u041E\u0421\u0422\u042C \u0414\u0410\
     \u041D\u041D\u042B\u0425"
-  sp: PRIVACIDAD DE DATOS
+  es: PRIVACIDAD DE DATOS
   tr: "VER\u0130 G\u0130ZL\u0130L\u0130\u011E\u0130"
 - alias: "The privacy point needs to be separated from cybersecurity, because this\
     \ problem is specific to IoT systems. Due to the large number and varied device\
@@ -8352,7 +8352,7 @@
     \u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E \u043F\u0440\u043E\u0444\u0438\
     \u043B\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F), \u043B\u0438\u043D\u043A\
     \u043E\u0432\u043A\u0430 \u0434\u0430\u043D\u043D\u044B\u0445."
-  sp: "El punto de privacidad debe separarse de la ciberseguridad, porque este problema\
+  es: "El punto de privacidad debe separarse de la ciberseguridad, porque este problema\
     \ es espec\xEDfico de los sistemas IoT. Debido a la gran cantidad y variedad de\
     \ tipos de dispositivos que est\xE1n mucho m\xE1s integrados en el mundo f\xED\
     sico que solo computadoras y tel\xE9fonos inteligentes, la gama de tipos de datos\
@@ -8498,7 +8498,7 @@
     \u0441\u0430\u0446\u0438\u044F \u0437\u0430 \u0438\u0445 \u0441\u0431\u043E\u0440\
     \ \u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\
     \u0435."
-  sp: "La parte m\xE1s espeluznante es que los usuarios tienen poca o ninguna conciencia\
+  es: "La parte m\xE1s espeluznante es que los usuarios tienen poca o ninguna conciencia\
     \ de que est\xE1n renunciando a su privacidad porque casi no tienen idea de qu\xE9\
     \ datos se recopilan y c\xF3mo se utilizan. La amenaza a la privacidad aumenta\
     \ no solo de los intrusos, sino tambi\xE9n de las organizaciones y agencias gubernamentales\
@@ -8533,7 +8533,7 @@
   ru: "\u041E\u0421\u041D\u041E\u0412\u041D\u042B\u0415 \u0417\u0410\u0414\u0410\u0427\
     \u0418 \u0410\u0420\u0425\u0418\u0422\u0415\u041A\u0422\u0423\u0420\u042B \u0420\
     \u041E\u0411\u041E\u041D\u041E\u041C\u0418\u041A\u0418"
-  sp: PRINCIPALES TAREAS DE LA ARQUITECTURA DE ROBONOMICS
+  es: PRINCIPALES TAREAS DE LA ARQUITECTURA DE ROBONOMICS
   tr: "ROBONOMICS M\u0130MAR\u0130S\u0130N\u0130N BA\u015ELICA G\xD6REVLER\u0130"
 - alias: 'Building on the achievements and challenges of cloud platforms, Robonomics
     aims to offer the IoT market safer and more advanced Internet solutions at every
@@ -8580,7 +8580,7 @@
     \u0434\u0430\u0447\u0438, \u043D\u0430 \u043A\u043E\u0442\u043E\u0440\u044B\u0435\
     \ \u043D\u0430\u0446\u0435\u043B\u0435\u043D\u0430 \u0420\u043E\u0431\u043E\u043D\
     \u043E\u043C\u0438\u043A\u0430:"
-  sp: "Sobre la base de los logros y desaf\xEDos de las plataformas en la nube, Robonomics\
+  es: "Sobre la base de los logros y desaf\xEDos de las plataformas en la nube, Robonomics\
     \ tiene como objetivo ofrecer al mercado de IoT soluciones de Internet m\xE1s\
     \ seguras y avanzadas en cada etapa de la comunicaci\xF3n hombre-m\xE1quina. A\
     \ continuaci\xF3n se detallan las principales tareas a las que se dirige Robonomics:"
@@ -8602,7 +8602,7 @@
     \u041E\u0429\u042C\u042E \u0414\u0415\u0426\u0415\u041D\u0422\u0420\u0410\u041B\
     \u0418\u0417\u041E\u0412\u0410\u041D\u041D\u041E\u0413\u041E \u041E\u0411\u041B\
     \u0410\u041A\u0410"
-  sp: "GESTI\xD3N DE UN DISPOSITIVO IOT MEDIANTE UNA NUBE DESCENTRALIZADA"
+  es: "GESTI\xD3N DE UN DISPOSITIVO IOT MEDIANTE UNA NUBE DESCENTRALIZADA"
   tr: "MERKEZ\u0130 OLMAYAN BULUT KULLANARAK B\u0130R IOT C\u0130HAZINI Y\xD6NETME"
 - alias: Blockchain networks have all the capabilities to provide the highest degree
     of security for running a device and getting its telemetry. The interaction with
@@ -8689,7 +8689,7 @@
     \u0432\u043E\u0439\u043D\u0438\u043A\u0430 \u043E\u0442 \u043D\u0435\u0436\u0435\
     \u043B\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0438\u0437\u043C\u0435\
     \u043D\u0435\u043D\u0438\u0439."
-  sp: "Las Blockchain tienen todas las capacidades para proporcionar el m\xE1s alto\
+  es: "Las Blockchain tienen todas las capacidades para proporcionar el m\xE1s alto\
     \ grado de seguridad para ejecutar un dispositivo y obtener su telemetr\xEDa.\
     \ La interacci\xF3n con el dispositivo en realidad se puede describir cambiando\
     \ el estado del gemelo digital almacenado en la blockchain y enviando informaci\xF3\
@@ -8721,7 +8721,7 @@
     \u0421\u041A\u0418\u0425 \u0422\u0420\u0410\u041D\u0417\u0410\u041A\u0426\u0418\
     \u0418 \u041C\u0415\u0416\u0414\u0423 \u041B\u042E\u0414\u042C\u041C\u0418 \u0418\
     \ \u041C\u0410\u0428\u0418\u041D\u0410\u041C\u0418\n "
-  sp: "REALIZACI\xD3N DE TRANSACCIONES T\xC9CNICAS Y ECON\xD3MICAS ENTRE PERSONAS\
+  es: "REALIZACI\xD3N DE TRANSACCIONES T\xC9CNICAS Y ECON\xD3MICAS ENTRE PERSONAS\
     \ Y M\xC1QUINAS"
   tr: "\u0130NSANLAR VE MAK\u0130NELER ARASINDA TEKN\u0130K VE EKONOM\u0130K \u0130\
     \u015ELEM YAPILMASI"
@@ -8805,7 +8805,7 @@
     \u0440\u0430\u043C\u0435\u0442\u0440\u0430\u043C\u0438 \u0437\u0430\u043F\u0443\
     \u0441\u043A\u0430 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430\
     ."
-  sp: "Gracias al mecanismo de las criptomonedas y los contratos inteligentes, podemos\
+  es: "Gracias al mecanismo de las criptomonedas y los contratos inteligentes, podemos\
     \ brindar acceso a sistemas automatizados directamente a los mercados digitales.\
     \ Por ejemplo, Ethereum ya implementa la mayor\xEDa de las herramientas b\xE1\
     sicas de actividad econ\xF3mica que se pueden utilizar en la operaci\xF3n de dispositivos\
@@ -8831,7 +8831,7 @@
   ru: "SERVERLESS IOT-\u041F\u0420\u0418\u041B\u041E\u0416\u0415\u041D\u0418\u042F\
     \ \u0414\u041B\u042F \u041F\u041E\u041B\u042C\u0417\u041E\u0412\u0410\u0422\u0415\
     \u041B\u0415\u0419"
-  sp: APLICACIONES IOT SIN SERVIDOR PARA USUARIOS
+  es: APLICACIONES IOT SIN SERVIDOR PARA USUARIOS
   tr: "KULLANICILAR \u0130\xC7\u0130N SUNUCUSIZ IOT UYGULAMALARI"
 - alias: Modern advances in web3-technology can solve the issue of user privacy. With
     web3 there is no need to authenticate or require connection to specific servers
@@ -8872,7 +8872,7 @@
     \u0443\u043F\u0430 \u043A \u0442\u0435\u043B\u0435\u043C\u0435\u0442\u0440\u0438\
     \u0438 \u0438 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0443\
     \u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E\u043C."
-  sp: "Los avances modernos en la tecnolog\xEDa web3 pueden resolver el problema de\
+  es: "Los avances modernos en la tecnolog\xEDa web3 pueden resolver el problema de\
     \ la privacidad del usuario. Con web3 no es necesario autenticarse ni requerir\
     \ conexi\xF3n a servidores espec\xEDficos para acceder a la telemetr\xEDa y controlar\
     \ el dispositivo."
@@ -8914,7 +8914,7 @@
     \u0435 \u043F\u0440\u0438\u0432\u0430\u0442\u043D\u044B\u0445 \u043F\u0440\u0438\
     \u043B\u043E\u0436\u0435\u043D\u0438\u0439 \u0434\u043B\u044F \u043F\u043E\u043B\
     \u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439."
-  sp: "Robonomics es una nube descentralizada para gemelos digitales de dispositivos\
+  es: "Robonomics es una nube descentralizada para gemelos digitales de dispositivos\
     \ IoT. Robonomics admite el formato tecnoecon\xF3mico para la comunicaci\xF3n,\
     \ adem\xE1s de proporcionar aplicaciones privadas para los usuarios."
   tr: "Robonomics, IoT cihazlar\u0131n\u0131n dijital ikizleri i\xE7in merkezi olmayan\
@@ -8930,7 +8930,7 @@
   ru: "\u0411\u0410\u0417\u041E\u0412\u042B\u0415 \u041A\u041E\u041C\u041F\u041E\u041D\
     \u0415\u041D\u0422\u042B\n\u0410\u0420\u0425\u0418\u0422\u0415\u041A\u0422\u0423\
     \u0420\u042B \u0420\u041E\u0411\u041E\u041D\u041E\u041C\u0418\u041A\u0418"
-  sp: "COMPONENTES B\xC1SICOS DE LA ARQUITECTURA DE ROBONOMICS"
+  es: "COMPONENTES B\xC1SICOS DE LA ARQUITECTURA DE ROBONOMICS"
   tr: "ROBONOMICS M\u0130MAR\u0130S\u0130N\u0130N TEMEL B\u0130LE\u015EENLER\u0130"
 - alias: A human interface to access the system
   az: "Sistem\u0259 daxil olmaq \xFC\xE7\xFCn insan interfeysi"
@@ -8941,7 +8941,7 @@
   ru: "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u0447\u0435\u043B\u043E\
     \u0432\u0435\u043A\u0430 \u0434\u043B\u044F \u0434\u043E\u0441\u0442\u0443\u043F\
     \u0430 \u043A \u0441\u0438\u0441\u0442\u0435\u043C\u0435"
-  sp: Una interfaz humana para acceder al sistema.
+  es: Una interfaz humana para acceder al sistema.
   tr: A human interface to access the system
 - alias: A communication protocol
   az: "Rabit\u0259 protokolu"
@@ -8951,7 +8951,7 @@
   pt: "Um protocolo de comunica\xE7\xE3o"
   ru: "\u041F\u0440\u043E\u0442\u043E\u043A\u043E\u043B \u043A\u043E\u043C\u043C\u0443\
     \u043D\u0438\u043A\u0430\u0446\u0438\u0438"
-  sp: "Un protocolo de comunicaci\xF3n"
+  es: "Un protocolo de comunicaci\xF3n"
   tr: "Bir ileti\u015Fim protokol\xFC"
 - alias: A machine interface
   az: "Ma\u015F\u0131n interfeysi"
@@ -8961,7 +8961,7 @@
   pt: "Uma interface de m\xE1quina"
   ru: "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u043C\u0430\u0448\u0438\
     \u043D\u044B"
-  sp: "Una interfaz de m\xE1quina"
+  es: "Una interfaz de m\xE1quina"
   tr: "Bir makine aray\xFCz\xFC"
 - alias: HUMAN INTERFACE
   az: "\u0130NSAN \u0130NTERFEYS\u0130"
@@ -8971,7 +8971,7 @@
   pt: INTERFACE HUMANA
   ru: "\u0418\u041D\u0422\u0415\u0420\u0424\u0415\u0419\u0421 \u0427\u0415\u041B\u041E\
     \u0412\u0415\u041A\u0410"
-  sp: INTERFAZ HUMANA
+  es: INTERFAZ HUMANA
   tr: "\u0130NSAN ARAY\xDCZ\xDC"
 - alias: We propose the use of decentralized applications (dapps) as the main way
     to connect users to control smart devices over the Internet. Thus, we will be
@@ -9038,7 +9038,7 @@
     \u0442\u0438, \u0442\u0430\u043A \u0438 \u0447\u0435\u0440\u0435\u0437 \u043E\u0431\
     \u0449\u0443\u044E \u0433\u043B\u043E\u0431\u0430\u043B\u044C\u043D\u0443\u044E\
     \ \u0441\u0435\u0442\u044C."
-  sp: "Proponemos el uso de aplicaciones descentralizadas (dapps) como la principal\
+  es: "Proponemos el uso de aplicaciones descentralizadas (dapps) como la principal\
     \ forma de conectar a los usuarios para controlar dispositivos inteligentes a\
     \ trav\xE9s de Internet. Por lo tanto, podremos proporcionar la interfaz de usuario\
     \ m\xE1s segura (en t\xE9rminos de datos) para el sistema, que podr\xE1 funcionar\
@@ -9059,7 +9059,7 @@
   pt: "PROTOCOLO DE COMUNICA\xC7\xC3O"
   ru: "\u041F\u0420\u041E\u0422\u041E\u041A\u041E\u041B \u041A\u041E\u041C\u041C\u0423\
     \u041D\u0418\u041A\u0410\u0426\u0418\u0418"
-  sp: "PROTOCOLO DE COMUNICACI\xD3N"
+  es: "PROTOCOLO DE COMUNICACI\xD3N"
   tr: "\u0130LET\u0130\u015E\u0130M PROTOKOL\xDC"
 - alias: Its role is played by the Robonomics network, a specification developed by
     the project team that implements a decentralized network of providers that provide
@@ -9116,7 +9116,7 @@
     \u0438\u0447\u043D\u043E\u0433\u043E \u043F\u043E \u0441\u0432\u043E\u0438\u043C\
     \ \u0444\u0443\u043D\u043A\u0446\u0438\u044F\u043C \u0443\u0437\u043B\u0430 \u0434\
     \u043B\u044F \u0441\u0435\u0442\u0435\u0439 IPFS, Ethereum, Polkadot."
-  sp: "Este rol lo desempe\xF1a la red de Robonomics, una especificaci\xF3n desarrollada\
+  es: "Este rol lo desempe\xF1a la red de Robonomics, una especificaci\xF3n desarrollada\
     \ por el equipo del proyecto que implementa una red descentralizada de proveedores\
     \ que proporcionan la transmisi\xF3n, el procesamiento y el almacenamiento de\
     \ la informaci\xF3n necesaria para ejecutar dispositivos IoT. De hecho, es una\
@@ -9137,7 +9137,7 @@
   pt: "INTERFACE DA M\xC1QUINA"
   ru: "\u0418\u041D\u0422\u0415\u0420\u0424\u0415\u0419\u0421 \u041C\u0410\u0428\u0418\
     \u041D\u042B"
-  sp: "INTERFAZ DE LA M\xC1QUINA"
+  es: "INTERFAZ DE LA M\xC1QUINA"
   tr: "MAK\u0130NE ARAY\xDCZ\xDC"
 - alias: "We have chosen the most well-known robotics framework called Robot Operating\
     \ System Robot Operating System (ROS) as the standard interface for integrating\
@@ -9248,7 +9248,7 @@
     \u0432\u0430\u0442\u043D\u044B\u043C, \u0442\u0430\u043A \u0438 \u0441 \u0443\u0434\
     \u0430\u043B\u0435\u043D\u043D\u044B\u043C \u0438 \u043F\u0443\u0431\u043B\u0438\
     \u0447\u043D\u044B\u043C \u0443\u0437\u043B\u043E\u043C."
-  sp: "Hemos elegido el marco de rob\xF3tica m\xE1s conocido llamado Robot Operating\
+  es: "Hemos elegido el marco de rob\xF3tica m\xE1s conocido llamado Robot Operating\
     \ System (ROS) como la interfaz est\xE1ndar para integrar cualquier sistema ciberf\xED\
     sico compatible. Robonomics admite varios usos para ROS. La implementaci\xF3n\
     \ de Robonomics para la red Ethereum tiene la forma del paquete ROS robonomics_comm.\
@@ -9281,7 +9281,7 @@
     \u0410\u0412\u041B\u0415\u041D\u0418\u0415 \u0410\u0420\u0425\u0418\u0422\u0415\
     \u041A\u0422\u0423\u0420\u042B \u0420\u041E\u0411\u041E\u041D\u041E\u041C\u0418\
     \u041A\u0418"
-  sp: "UNA SIMPLE REPRESENTACI\xD3N DE LA ARQUITECTURA DE ROBONOMICS"
+  es: "UNA SIMPLE REPRESENTACI\xD3N DE LA ARQUITECTURA DE ROBONOMICS"
   tr: "ROBONOMICS M\u0130MAR\u0130S\u0130N\u0130N BAS\u0130T B\u0130R TEMS\u0130L\u0130"
 - alias: 'Here is a general diagram of the complete device startup cycle using the
     Robonomics platform:'
@@ -9302,7 +9302,7 @@
     \u0442\u0432\u0430 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043F\u043B\
     \u0430\u0442\u0444\u043E\u0440\u043C\u044B \u0420\u043E\u0431\u043E\u043D\u043E\
     \u043C\u0438\u043A\u0438:"
-  sp: "Aqu\xED hay un diagrama general del ciclo completo de inicio del dispositivo\
+  es: "Aqu\xED hay un diagrama general del ciclo completo de inicio del dispositivo\
     \ utilizando la plataforma de Robonomics:"
   tr: "Robonomics platformunu kullanan bir cihaz ba\u015Flatma d\xF6ng\xFCs\xFCn\xFC\
     n genel bir \u015Femas\u0131:"
@@ -9329,7 +9329,7 @@
     \ \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E\u043C \u0447\u0435\
     \u0440\u0435\u0437 \u0441\u0435\u0442\u044C \u0420\u043E\u0431\u043E\u043D\u043E\
     \u043C\u0438\u043A\u0430."
-  sp: "La aplicaci\xF3n descentralizada del usuario env\xEDa una solicitud para una\
+  es: "La aplicaci\xF3n descentralizada del usuario env\xEDa una solicitud para una\
     \ funci\xF3n de control del dispositivo a trav\xE9s de la red de Robonomics."
   tr: "Kullan\u0131c\u0131n\u0131n merkezi olmayan uygulamas\u0131, Robonomics a\u011F\
     \u0131 arac\u0131l\u0131\u011F\u0131yla bir cihaz kontrol i\u015Flevi i\xE7in\
@@ -9354,7 +9354,7 @@
     \u0449\u044C\u044E libp2p \u0438 \u0444\u0438\u043A\u0441\u0438\u0440\u0443\u0435\
     \u0442 \u0441\u043E\u0431\u044B\u0442\u0438\u044F \u0432 Ethereum blockchain \u0438\
     \u043B\u0438 Robonomics parachain."
-  sp: "La red de Robonomics proporciona traducci\xF3n de solicitudes utilizando libp2p\
+  es: "La red de Robonomics proporciona traducci\xF3n de solicitudes utilizando libp2p\
     \ y captura eventos en la blockchain de Ethereum o Robonomics parachain."
   tr: "Robonomics a\u011F\u0131, libp2p kullanarak istek \xE7evirisi sa\u011Flar ve\
     \ Ethereum blok zinciri veya Robonomics parachain'deki olaylar\u0131 yakalar."
@@ -9385,7 +9385,7 @@
     \u0434\u0438\u043C\u0443\u044E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\
     \u0438\u044E \u0434\u043B\u044F \u0437\u0430\u043F\u0443\u0441\u043A\u0430 IoT-\u0443\
     \u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430."
-  sp: "El control del dispositivo lo proporciona una red descentralizada, que garantiza\
+  es: "El control del dispositivo lo proporciona una red descentralizada, que garantiza\
     \ almacenar la informaci\xF3n necesaria para ejecutar el dispositivo IoT."
   tr: "Cihaz\u0131n kontrol\xFC, IoT cihaz\u0131n\u0131 \xE7al\u0131\u015Ft\u0131\
     rmak i\xE7in gerekli bilgileri depolamas\u0131 garanti edilen merkezi olmayan\
@@ -9433,7 +9433,7 @@
     \u0441\u043A\u0438\u0445 \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\
     \u0435\u0441\u043A\u0438\u0445 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\
     \u043E\u0432 \u0437\u0430\u043F\u0443\u0441\u043A\u0430."
-  sp: "El dispositivo IoT recibe informaci\xF3n de forma independiente de las redes\
+  es: "El dispositivo IoT recibe informaci\xF3n de forma independiente de las redes\
     \ Ethereum y Polkadot sobre el estado actual del gemelo digital. Esto garantiza\
     \ que el dispositivo pueda iniciarse de manera segura solo despu\xE9s de que se\
     \ hayan establecido los par\xE1metros t\xE9cnicos y econ\xF3micos de puesta en\
@@ -9473,7 +9473,7 @@
     \u0442\u0432\u0430 \u043E\u043A\u0430\u0437\u0430\u043D\u043D\u043E\u0439 \u0443\
     \u0441\u043B\u0443\u0433\u0438 \u0438\u043B\u0438 \u0434\u043B\u044F \u043E\u0442\
     \u043B\u0430\u0434\u043A\u0438 \u043E\u0448\u0438\u0431\u043E\u043A."
-  sp: "Como resultado de la operaci\xF3n, el dispositivo IoT publica un registro de\
+  es: "Como resultado de la operaci\xF3n, el dispositivo IoT publica un registro de\
     \ operaciones completadas, que se puede utilizar como evidencia del servicio prestado\
     \ o para la depuraci\xF3n de errores."
   tr: "\u0130\u015Flemin bir sonucu olarak, IoT cihaz\u0131, sa\u011Flanan hizmetin\
@@ -9497,7 +9497,7 @@
     \u043B\u044F \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\
     \u044F \u0438 \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0434\
     \u043E\u0441\u0442\u0443\u043F\u0435\u043D \u0432 \u0435\u0433\u043E dapp."
-  sp: "El registro se transforma en un informe para el usuario y est\xE1 disponible\
+  es: "El registro se transforma en un informe para el usuario y est\xE1 disponible\
     \ en su dapp."
   tr: "G\xFCnl\xFCk, kullan\u0131c\u0131 i\xE7in bir rapora d\xF6n\xFC\u015Ft\xFC\
     r\xFCl\xFCr ve dapp'inde kullan\u0131labilir hale gelir."
@@ -9510,7 +9510,7 @@
   ru: "\u041D\u0430 \u0441\u0442\u044B\u043A\u0435 \u043A\u0438\u0431\u0435\u0440\u043D\
     \u0435\u0442\u0438\u043A\u0438 \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\
     \u043A\u0438"
-  sp: "En la frontera de la cibern\xE9tica y la econom\xEDa"
+  es: "En la frontera de la cibern\xE9tica y la econom\xEDa"
   tr: "Sibernetik ve ekonominin s\u0131n\u0131rlar\u0131nda"
 - alias: "Secure Serverless Futuristic\n IoT applications "
   az: "T\u0259hl\xFCk\u0259siz Serversiz Futuristik IoT t\u0259tbiql\u0259ri"
@@ -9522,7 +9522,7 @@
     \u0441\u0435\u0440\u0432\u0435\u0440\u043D\u044B\u0435 \u0444\u0443\u0442\u0443\
     \u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 IoT-\u043F\u0440\
     \u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F"
-  sp: Aplicaciones IoT futuristas seguras sin servidor
+  es: Aplicaciones IoT futuristas seguras sin servidor
   tr: "G\xFCvenli Sunucusuz F\xFCt\xFCristik\n  IoT uygulamalar\u0131 "
 - alias: Robonomics network vision
   az: "Robonomika \u015F\u0259b\u0259k\u0259sinin konsepsiyas\u0131"
@@ -9532,7 +9532,7 @@
   pt: "Vis\xE3o da rede Robonomics"
   ru: "\u041A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u044F \u0441\u0435\u0442\u0438\
     \ \u0420\u043E\u0431\u043E\u043D\u043E\u043C\u0438\u043A\u0430"
-  sp: "Visi\xF3n de Robonomics network"
+  es: "Visi\xF3n de Robonomics network"
   tr: "Robonomics a\u011F\u0131 vizyonu"
 - alias: BUILD YOUR IOT SERVICES ON ROBONOMICS PLATFORM
   az: "IOT X\u0130DM\u018FTL\u018FR\u0130N\u0130Z\u0130 ROBONOM\u0130KA PLATFORMASINDA\
@@ -9544,7 +9544,7 @@
   ru: "\u041F\u043E\u0441\u0442\u0440\u043E\u0439\u0442\u0435 \u0432\u0430\u0448\u0438\
     \ IOT \u0441\u0435\u0440\u0432\u0438\u0441\u044B \u043D\u0430 \u043F\u043B\u0430\
     \u0442\u0444\u043E\u0440\u043C\u0435 Robonomics"
-  sp: CONSTRUYA SUS SERVICIOS IOT EN LA PLATAFORMA DE ROBONOMICS
+  es: CONSTRUYA SUS SERVICIOS IOT EN LA PLATAFORMA DE ROBONOMICS
   tr: "IOT H\u0130ZMETLER\u0130N\u0130Z\u0130 ROBONOMICS PLATFORMUNDA OLU\u015ETURUN"
 - alias: taking full advantage of decentralized architecture
   az: "m\u0259rk\u0259zl\u0259\u015Fdirilm\u0259mi\u015F arxitekturan\u0131n b\xFC\
@@ -9557,7 +9557,7 @@
     \u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0434\u0435\u0446\u0435\
     \u043D\u0442\u0440\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u043E\
     \u0439 \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u044B"
-  sp: "Aprovechando al m\xE1ximo la arquitectura descentralizada"
+  es: "Aprovechando al m\xE1ximo la arquitectura descentralizada"
   tr: merkezi olmayan mimariden tam olarak yararlanmak
 - alias: Robonomics allows users to connect to smart devices using decentralized applications
     (dapp) that do not require the user data transfer for authentication. Communication
@@ -9656,7 +9656,7 @@
     \u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0434\u043E \u0437\u0430\u043F\u0443\
     \u0441\u043A\u0430 \u0443\u043C\u043D\u043E\u0433\u043E \u0443\u0441\u0442\u0440\
     \u043E\u0439\u0441\u0442\u0432\u0430."
-  sp: "Robonomics permite a los usuarios conectarse a dispositivos inteligentes utilizando\
+  es: "Robonomics permite a los usuarios conectarse a dispositivos inteligentes utilizando\
     \ aplicaciones descentralizadas (dapp) que no requieren la transferencia de datos\
     \ del usuario para la autenticaci\xF3n. La comunicaci\xF3n se lleva a cabo a trav\xE9\
     s de una red descentralizada de proveedores sin un solo punto de falla, y el dispositivo\
@@ -9686,7 +9686,7 @@
   ru: "\u041E\u0442 \u0441\u043C\u0430\u0440\u0442 \u043A\u043E\u043D\u0442\u0440\u0430\
     \u043A\u0442\u043E\u0432 \u0434\u043E \u043C\u0435\u0436\u0441\u0435\u0442\u0435\
     \u0432\u043E\u0439 IOT \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B"
-  sp: DE LOS CONTRATOS INTELIGENTES A LA PLATAFORMA IOT DE CADENA CRUZADA
+  es: DE LOS CONTRATOS INTELIGENTES A LA PLATAFORMA IOT DE CADENA CRUZADA
   tr: "AKILLI S\xD6ZLE\u015EMELERDEN \xC7APRAZ Z\u0130NC\u0130R IOT PLATFORMUNA"
 - alias: The Robonomics project is over 6 years old. We started to prepare for the
     first experiment demonstrating human-machine communication using an independent
@@ -9761,7 +9761,7 @@
     \u0430\u043C\u0438 \u043E\u0431\u043B\u0430\u0447\u043D\u043E\u0439 IoT-\u043F\
     \u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B \u043D\u0430 \u0431\u0430\u0437\
     \u0435 \u043F\u0430\u0440\u0430\u0447\u0435\u0439\u043D\u0430 Polkadot.\""
-  sp: "El proyecto Robonomics tiene m\xE1s de 6 a\xF1os. Comenzamos a prepararnos\
+  es: "El proyecto Robonomics tiene m\xE1s de 6 a\xF1os. Comenzamos a prepararnos\
     \ para el primer experimento que demostr\xF3 la comunicaci\xF3n hombre-m\xE1quina\
     \ utilizando una red de proveedor descentralizada independiente en 2015, desde\
     \ los primeros d\xEDas de la red Ethereum. A principios de 2021, el equipo del\
@@ -9811,7 +9811,7 @@
     \u0438\u0440\u043E\u0432\u043E\u0433\u043E \u0434\u0435\u0446\u0435\u043D\u0442\
     \u0440\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u043E\u0433\u043E\
     \ \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u0430."
-  sp: "Como resultado, hoy ya contamos con una plataforma h\xEDbrida para crear aplicaciones\
+  es: "Como resultado, hoy ya contamos con una plataforma h\xEDbrida para crear aplicaciones\
     \ IoT futuristas que permiten la interacci\xF3n con dispositivos bajo el control\
     \ de una computadora descentralizada global."
   tr: "Sonu\xE7 olarak, bug\xFCn, k\xFCresel bir merkezi olmayan bilgisayar\u0131\
@@ -9827,7 +9827,7 @@
   ru: "\u041D\u0430 \u0441\u0442\u044B\u043A\u0435 \u043A\u0438\u0431\u0435\u0440\u043D\
     \u0435\u0442\u0438\u043A\u0438 \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\
     \u043A\u0438"
-  sp: "EN LA FRONTERA DE LA CIBERN\xC9TICA Y LA ECONOM\xCDA"
+  es: "EN LA FRONTERA DE LA CIBERN\xC9TICA Y LA ECONOM\xCDA"
   tr: "S\u0130BERNET\u0130K VE EKONOM\u0130N\u0130N SINIRINDA"
 - alias: The creators of Robonomics are experimenters, engineers, and scientists who
     care to understand the scientific validity of the approach and achieve clarity
@@ -9873,7 +9873,7 @@
     \u0438\u0442\u0435\u043A\u0442\u0443\u0440\u044B \u043F\u0440\u043E\u0433\u0440\
     \u0430\u043C\u043C\u043D\u043E\u0433\u043E \u0440\u0435\u0448\u0435\u043D\u0438\
     \u044F."
-  sp: "Los creadores de Robonomics son experimentadores, ingenieros y cient\xEDficos\
+  es: "Los creadores de Robonomics son experimentadores, ingenieros y cient\xEDficos\
     \ que se preocupan por comprender la validez cient\xEDfica del enfoque y lograr\
     \ claridad al presentar los principios que deben formar la base de toda la arquitectura\
     \ de la soluci\xF3n de software."
@@ -9942,7 +9942,7 @@
     \u0442\u044C\u044F\u043C\u0438 \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435\
     \ \u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u0442\u044C\u0441\u044F \u043F\
     \u043E"
-  sp: "En nuestros art\xEDculos entre 2017 y 2020, presentamos a la comunidad cient\xED\
+  es: "En nuestros art\xEDculos entre 2017 y 2020, presentamos a la comunidad cient\xED\
     fica muchos conceptos y soluciones unidos en torno a la idea de la econom\xED\
     a rob\xF3tica, un sistema econ\xF3mico en el que los dispositivos rob\xF3ticos\
     \ act\xFAan como agentes independientes capaces de realizar actividades econ\xF3\
@@ -9964,7 +9964,7 @@
   it: questo link
   pt: neste link
   ru: "\u0434\u0430\u043D\u043D\u043E\u0439 \u0441\u0441\u044B\u043B\u043A\u0435"
-  sp: "Nos gustar\xEDa justificar el surgimiento de la econom\xEDa rob\xF3tica y explicar\
+  es: "Nos gustar\xEDa justificar el surgimiento de la econom\xEDa rob\xF3tica y explicar\
     \ en t\xE9rminos generales por qu\xE9 creemos que este concepto es la respuesta\
     \ inevitable y obvia al funcionamiento de los sistemas rob\xF3ticos a gran escala\
     \ de la nueva revoluci\xF3n industrial."
@@ -10007,7 +10007,7 @@
     \u043D\u043D\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C \u043D\u043E\u0432\
     \u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\
     \u0439 \u0440\u0435\u0432\u043E\u043B\u044E\u0446\u0438\u0438."
-  sp: "AVANZA HACIA LA F\xC1BRICA DEL FUTURO"
+  es: "AVANZA HACIA LA F\xC1BRICA DEL FUTURO"
   tr: "Robot ekonomisinin ortaya \xE7\u0131k\u0131\u015F\u0131n\u0131 hakl\u0131 \xE7\
     \u0131karmak ve bu kavram\u0131n neden yeni sanayi devriminin b\xFCy\xFCk \xF6\
     l\xE7ekli robotik sistemlerinin i\u015Fleyi\u015Fine ka\xE7\u0131n\u0131lmaz ve\
@@ -10022,7 +10022,7 @@
   pt: "RUMO \xC0 F\xC1BRICA DO FUTURO"
   ru: "\u041F\u0443\u0442\u044C \u043A \u0437\u0430\u0432\u043E\u0434\u0443 \u0431\
     \u0443\u0434\u0443\u0449\u0435\u0433\u043E"
-  sp: Inspirado por Ronald Coase
+  es: Inspirado por Ronald Coase
   tr: "GELECE\u011E\u0130N FABR\u0130KASINA DO\u011ERU"
 - alias: Inspired by Ronald Coase
   az: "Ronald Kouzdan ilhamlan\u0131b"
@@ -10050,7 +10050,7 @@
   ru: "\u0412\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u0451\u043D\u043D\u044B\u0439\
     \ \u0420\u043E\u043B\u0430\u043D\u0434\u043E\u043C \u041A\u043E\u0443\u0437\u043E\
     \u043C"
-  sp: "El premio Nobel de econom\xEDa Ronald Coase en su obra de 1937 \u201CLa naturaleza\
+  es: "El premio Nobel de econom\xEDa Ronald Coase en su obra de 1937 \u201CLa naturaleza\
     \ de la empresa\u201D demostr\xF3 mejor la dicotom\xEDa \xABjerarqu\xEDa vs libre\
     \ mercado\xBB y dio una explicaci\xF3n de las razones de la existencia de las\
     \ organizaciones, en particular las empresas. Coase analiza el impacto de los\
@@ -10223,7 +10223,7 @@
     \u0432\u043D\u0435\u043D\u0438\u044E \u0441 \u0433\u043E\u0442\u043E\u0432\u044B\
     \u043C \u043A \u0443\u043F\u043E\u0442\u0440\u0435\u0431\u043B\u0435\u043D\u0438\
     \u044E Model X \u043E\u0442 \u0444\u0438\u0440\u043C\u044B Tesla. "
-  sp: "Sin embargo, esto no conduce al surgimiento de la \xFAnica empresa del mundo\
+  es: "Sin embargo, esto no conduce al surgimiento de la \xFAnica empresa del mundo\
     \ para la producci\xF3n de todo. El punto es que los mismos costos de transacci\xF3\
     n tambi\xE9n imponen restricciones sobre el tama\xF1o de las empresas. Coase escribe:"
   tr: "Ekonomide Nobel \xF6d\xFCll\xFC Ronald Coase, 1937 tarihli \u201CFirman\u0131\
@@ -10281,7 +10281,7 @@
     \u0442 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F \u0438\
     \ \u043D\u0430 \u0440\u0430\u0437\u043C\u0435\u0440 \u0444\u0438\u0440\u043C.\
     \ \u041A\u043E\u0443\u0437 \u043F\u0438\u0448\u0435\u0442:"
-  sp: "\u201C...una empresa tender\xE1 a expandirse hasta que los costos de organizar\
+  es: "\u201C...una empresa tender\xE1 a expandirse hasta que los costos de organizar\
     \ una transacci\xF3n adicional dentro de la empresa sean iguales a los costos\
     \ de realizar la misma transacci\xF3n mediante un intercambio en el mercado abierto...\u201D"
   tr: "Yine de bu, her \u015Feyin \xFCretimi i\xE7in d\xFCnyan\u0131n tek bir firmas\u0131\
@@ -10327,7 +10327,7 @@
     \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u043E\u043C \u043E\u0431\u043C\u0435\
     \u043D\u0430 \u043D\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u043E\u043C \u0440\
     \u044B\u043D\u043A\u0435\u2026\xBB"
-  sp: "En otras palabras, cuanto m\xE1s compleja es la jerarqu\xEDa dentro de la empresa,\
+  es: "En otras palabras, cuanto m\xE1s compleja es la jerarqu\xEDa dentro de la empresa,\
     \ mayores son los costos internos y, en alg\xFAn momento, resultan excesivos en\
     \ comparaci\xF3n con los costos de regresar al mercado. Por lo tanto, para asegurar\
     \ su crecimiento como uno de los motores, los empresarios buscan formas de reducir\
@@ -10383,7 +10383,7 @@
     \u043B\u0438 \u0438\u0449\u0443\u0442 \u0441\u043F\u043E\u0441\u043E\u0431\u044B\
     \ \u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C \u044D\u0442\u0438 \u0438\
     \u0437\u0434\u0435\u0440\u0436\u043A\u0438."
-  sp: "LIB\xC9RESE DE LOS COSTOS DE TRANSACCI\xD3N"
+  es: "LIB\xC9RESE DE LOS COSTOS DE TRANSACCI\xD3N"
   tr: "Ba\u015Fka bir deyi\u015Fle, firma i\xE7indeki hiyerar\u015Fi ne kadar karma\u015F\
     \u0131ksa, i\xE7 maliyetler o kadar b\xFCy\xFCk olur ve bir noktada, piyasaya\
     \ geri d\xF6nme maliyetlerine k\u0131yasla a\u015F\u0131r\u0131 olduklar\u0131\
@@ -10414,7 +10414,7 @@
   pt: "LIVRE-SE DOS CUSTOS DE TRANSA\xC7\xC3O"
   ru: "\u0418\u0437\u0431\u0430\u0432\u044C\u0442\u0435\u0441\u044C \u043E\u0442 \u043A\
     \u043E\u043C\u0438\u0441\u0441\u0438\u0438"
-  sp: "La idea de reducir los costos de transacci\xF3n a trav\xE9s de la capacidad\
+  es: "La idea de reducir los costos de transacci\xF3n a trav\xE9s de la capacidad\
     \ de todos los participantes en el proceso comercial (producci\xF3n, log\xEDstica,\
     \ consumo) para unirse en un nivel m\xE1s cercano se correlaciona claramente con\
     \ los problemas y desaf\xEDos que enfrentan los fabricantes de soluciones de automatizaci\xF3\
@@ -10460,7 +10460,7 @@
     \u0440\u0435\u0431\u043B\u0435\u043D\u0438\u0435) \u043E\u0431\u044A\u0435\u0434\
     \u0438\u043D\u0438\u0442\u044C\u0441\u044F \u043D\u0430 \u0431\u043E\u043B\u0435\
     \u0435 \u0442\u0435\u0441\u043D\u043E\u043C \u0443\u0440\u043E\u0432\u043D\u0435"
-  sp: NUESTRO FUTURO EN LAS CIUDADES INTELIGENTES
+  es: NUESTRO FUTURO EN LAS CIUDADES INTELIGENTES
   tr: "\u0130\u015F s\xFCrecindeki (\xFCretim, lojistik, t\xFCketim) t\xFCm kat\u0131\
     l\u0131mc\u0131lar\u0131n daha yak\u0131n bir"
 - alias: clearly correlates
@@ -10476,7 +10476,7 @@
   pt: correlaciona claramente
   ru: "\u044F\u0432\u043D\u043E \u043A\u043E\u0440\u0440\u0435\u043B\u0438\u0440\u0443\
     \u0435\u0442"
-  sp: "La tarea a la que se enfrentan los fabricantes de automatizaci\xF3n hoy en\
+  es: "La tarea a la que se enfrentan los fabricantes de automatizaci\xF3n hoy en\
     \ d\xEDa tiene un nombre espec\xEDfico: la construcci\xF3n de sistemas ciberf\xED\
     sicos (abreviados como CPS). Por definici\xF3n , un CPS es una fuerte unificaci\xF3\
     n e integraci\xF3n mutua de m\xFAltiples procesos inform\xE1ticos, de red y f\xED\
@@ -10572,7 +10572,7 @@
     \u0442\u0438\u0447\u043D\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\
     \u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C\u0438 \u0444\u0438\
     \u0440\u043C\u0430\u043C\u0438,"
-  sp: "Las tareas de construcci\xF3n de CPS son centrales para cualquier idea descrita\
+  es: "Las tareas de construcci\xF3n de CPS son centrales para cualquier idea descrita\
     \ en la nueva (cuarta) revoluci\xF3n industrial. Por lo tanto, CPS es la piedra\
     \ angular de nuestra vida futura en Smart Cities, manifest\xE1ndose en todas partes.\
     \ Ejemplos de sistemas ciberf\xEDsicos del futuro son: piloto autom\xE1tico de\
@@ -10599,7 +10599,7 @@
   pt: "estimula a busca de solu\xE7\xF5es"
   ru: "\u043F\u043E\u0434\u0441\u0442\u0435\u0433\u0438\u0432\u0430\u0435\u0442 \u043F\
     \u043E\u0438\u0441\u043A \u0440\u0435\u0448\u0435\u043D\u0438\u044F"
-  sp: "CPS es una estructura compleja de muchos elementos conectados: desde la aplicaci\xF3\
+  es: "CPS es una estructura compleja de muchos elementos conectados: desde la aplicaci\xF3\
     n en el tel\xE9fono, se extiende para controlar el dron en vuelo sobre la ciudad\
     \ y luego procede a publicar las fotos resultantes en Instagram, pero solo despu\xE9\
     s de procesarlas en la nube AI."
@@ -10645,7 +10645,7 @@
     \u0435 \u0447\u0442\u043E \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\
     \ \u0431\u0435\u043D\u0435\u0444\u0438\u0446\u0438\u0430\u0440\u043E\u0432 \u0438\
     \ \u043F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u0435\u0439."
-  sp: "Lo m\xE1s importante en el proceso de dise\xF1o de CPS es encontrar la delgada\
+  es: "Lo m\xE1s importante en el proceso de dise\xF1o de CPS es encontrar la delgada\
     \ l\xEDnea entre un n\xFAmero suficiente y excesivo de elementos automatizados\
     \ en la cadena de suministro del usuario del servicio. En otras palabras, \xBF\
     d\xF3nde est\xE1 el l\xEDmite de tama\xF1o de la CPS? Para responder a esta pregunta,\
@@ -10664,7 +10664,7 @@
   pt: NOSSO FUTURO EM CIDADES INTELIGENTES
   ru: "\u041D\u0430\u0448\u0435 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 \u0432\
     \ \u0443\u043C\u043D\u044B\u0445 \u0433\u043E\u0440\u043E\u0434\u0430\u0445"
-  sp: SISTEMAS AUTORREGULADORES
+  es: SISTEMAS AUTORREGULADORES
   tr: "AKILLI \u015EEH\u0130RLERDE GELECE\u011E\u0130M\u0130Z"
 - alias: "The task that automation manufacturers are facing today has a specific name\
     \ \u2014 the construction of cyber-physical systems (abbreviated as CPS). By"
@@ -10695,7 +10695,7 @@
     \u043E\u0435\u043D\u0438\u0435 \u043A\u0438\u0431\u0435\u0440-\u0444\u0438\u0437\
     \u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\u0438\u0441\u0442\u0435\u043C\
     \ (\u0441\u043E\u043A\u0440. \u041A\u0424\u0421). \u041F\u043E"
-  sp: "En 1948, un profesor de matem\xE1ticas en el MIT, Norbert Wiener, public\xF3\
+  es: "En 1948, un profesor de matem\xE1ticas en el MIT, Norbert Wiener, public\xF3\
     \ uno de los trabajos m\xE1s importantes, \"Cybernetics: Or Control and Communication\
     \ in the Animal and the Machine\". Utiliz\xF3 por primera vez el t\xE9rmino \"\
     cibern\xE9tica\" como mecanismo de autorregulaci\xF3n y, por ello, esta publicaci\xF3\
@@ -10713,7 +10713,7 @@
   it: CPS
   pt: "defini\xE7\xE3o,"
   ru: "\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u0438\u044E,"
-  sp: "Norbert Wiener habla sobre la viabilidad del enfoque cient\xEDfico interdisciplinario.\
+  es: "Norbert Wiener habla sobre la viabilidad del enfoque cient\xEDfico interdisciplinario.\
     \ Por ejemplo, traz\xF3 los paralelismos entre los sistemas de control automatizados\
     \ y los desaf\xEDos de escalar y aumentar la complejidad de la sociedad humana."
   tr: olarak,
@@ -10741,7 +10741,7 @@
     \u043D\u044B\u0445, \u0441\u0435\u0442\u0435\u0432\u044B\u0445 \u0438 \u0444\u0438\
     \u0437\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u043E\u0446\u0435\
     \u0441\u0441\u043E\u0432."
-  sp: "Entonces, en otras palabras, el enfoque cibern\xE9tico se puede aplicar por\
+  es: "Entonces, en otras palabras, el enfoque cibern\xE9tico se puede aplicar por\
     \ igual a la psicoterapia, la biolog\xEDa y la navegaci\xF3n automatizada. Se\
     \ basa en la funci\xF3n del sistema, c\xF3mo se controlan las acciones individuales\
     \ y c\xF3mo los nodos individuales interact\xFAan entre s\xED."
@@ -10809,7 +10809,7 @@
     , \u0441\u0435\u0442\u044C 3D-\u043F\u0440\u0438\u043D\u0442\u0435\u0440\u043E\
     \u0432 \u043D\u0430 \u0441\u0442\u0430\u043D\u0446\u0438\u044F\u0445 \u043C\u0435\
     \u0442\u0440\u043E."
-  sp: "Teniendo en cuenta las publicaciones de Ronald Coase y Norbert Wiener, siguiendo\
+  es: "Teniendo en cuenta las publicaciones de Ronald Coase y Norbert Wiener, siguiendo\
     \ el desarrollo de la Industria 4.0, podemos considerar utilizar CPS como agente\
     \ econ\xF3mico, al dise\xF1ar servicios robotizados. Para regular el tama\xF1\
     o de los CPS y adaptarnos a las necesidades cambiantes de los individuos podemos\
@@ -10862,7 +10862,7 @@
     \u0445 \u0444\u043E\u0442\u043E \u0432 Instagram, \u043D\u043E \u0442\u043E\u043B\
     \u044C\u043A\u043E \u043F\u043E\u0441\u043B\u0435 \u043E\u0431\u0440\u0430\u0431\
     \u043E\u0442\u043A\u0438 \u043E\u0431\u043B\u0430\u0447\u043D\u044B\u043C AI."
-  sp: "Y lo que es tan cient\xEDficamente interesante, tomando como base la idea de\
+  es: "Y lo que es tan cient\xEDficamente interesante, tomando como base la idea de\
     \ las restricciones impuestas por el mercado sobre el tama\xF1o de la empresa,\
     \ podemos decir que el l\xEDmite del aumento de CPS siempre lo determinar\xE1\
     \ el mercado y no se requiere nada m\xE1s para este."
@@ -10917,7 +10917,7 @@
     \u0441\u044F \u043A \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E\u043C\u0443\
     \ \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0443 \u041D\u043E\u0440\
     \u0431\u0435\u0440\u0442\u0443 \u0412\u0438\u043D\u0435\u0440\u0443."
-  sp: "Las roboempresas son una representaci\xF3n ideal para los sistemas ciberf\xED\
+  es: "Las roboempresas son una representaci\xF3n ideal para los sistemas ciberf\xED\
     sicos. Son una unidad bastante aut\xF3noma capaz de prestar servicios tanto a\
     \ humanos como a otros robots a cambio de dinero. Como resultado, la econom\xED\
     a de los robots nos parece un conjunto general de CPS que brindan servicios y\
@@ -10935,7 +10935,7 @@
   pt: "SISTEMAS AUTO-REGUL\xC1VEIS"
   ru: "\u0421\u0430\u043C\u043E\u0440\u0435\u0433\u0443\u043B\u0438\u0440\u0443\u0435\
     \u043C\u044B\u0435 \u0441\u0438\u0441\u0442\u0435\u043C\u044B"
-  sp: BITCOIN
+  es: BITCOIN
   tr: "KEND\u0130N\u0130 DENETLEYEN S\u0130STEMLER"
 - alias: 'In 1948 a professor of mathematics at the MIT Norbert Wiener published one
     of the most seminal works "Cybernetics: Or Control and Communication in the Animal
@@ -10988,7 +10988,7 @@
     \u044F \u043F\u0440\u0438\u0437\u043D\u0430\u043D\u043D\u044B\u043C \u0434\u043D\
     \u0435\u043C \u0440\u043E\u0436\u0434\u0435\u043D\u0438\u044F \u043A\u0438\u0431\
     \u0435\u0440\u043D\u0435\u0442\u0438\u043A\u0438."
-  sp: DINERO PARA ROBOTS
+  es: DINERO PARA ROBOTS
   tr: "1948'de MIT'de matematik profes\xF6r\xFC Norbert Wiener en ufuk a\xE7\u0131\
     c\u0131 \xE7al\u0131\u015Fmalardan birini yay\u0131nlad\u0131 \"Sibernetik: Hayvan\
     \ ve Makinede Kontrol ve \u0130leti\u015Fim\". \"Sibernetik\" terimini kendi kendini\
@@ -11032,7 +11032,7 @@
     \u043D\u0435\u043D\u0438\u044F \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\
     \u0441\u043A\u043E\u0433\u043E \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0430\
     ."
-  sp: En el mundo de las roboempresas resulta natural proporcionar a los robots acceso
+  es: En el mundo de las roboempresas resulta natural proporcionar a los robots acceso
     a instituciones sociales que antes solo necesitaban los humanos.
   tr: "Norbert Wiener, disiplinler aras\u0131 bilim yakla\u015F\u0131m\u0131n\u0131\
     n uygulanabilirli\u011Finden bahsediyordu. \xD6rne\u011Fin, otomatik kontrol sistemleri\
@@ -11084,7 +11084,7 @@
     \u044B \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\
     \u0443\u044E\u0442 \u0434\u0440\u0443\u0433 \u0441 \u0434\u0440\u0443\u0433\u043E\
     \u043C."
-  sp: "Las instituciones sociales no aparecen porque somos personas y fisiol\xF3gicamente\
+  es: "Las instituciones sociales no aparecen porque somos personas y fisiol\xF3gicamente\
     \ una persona no puede vivir sin bancos, contratos y otros instrumentos de la\
     \ sociedad. Pero solo porque una persona, en alg\xFAn momento, entr\xF3 en el\
     \ camino de relaciones m\xE1s complejas en la sociedad y dio un paso importante\
@@ -11151,7 +11151,7 @@
     \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0440\u044B\u043D\
     \u043E\u0447\u043D\u044B\u0439 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C\
     ."
-  sp: "El dinero y los contratos deber\xEDan estar disponibles para los robots, no\
+  es: "El dinero y los contratos deber\xEDan estar disponibles para los robots, no\
     \ porque esta sea una fantas\xEDa enfermiza de los fan\xE1ticos de los robots\
     \ que han olvidado qu\xE9 es Skynet. Pero solo porque la nueva revoluci\xF3n industrial\
     \ se impone la tarea de construir cadenas automatizadas complejas, cuyos procesos\
@@ -11201,7 +11201,7 @@
     \ \u043D\u0438\u0447\u0435\u0433\u043E \u0434\u0440\u0443\u0433\u043E\u0433\u043E\
     \ \u0434\u043B\u044F \u044D\u0442\u043E\u0433\u043E \u043D\u0435 \u0442\u0440\u0435\
     \u0431\u0443\u0435\u0442\u0441\u044F."
-  sp: Industria 1.0
+  es: Industria 1.0
   tr: "Ve bilimsel olarak ilgin\xE7 olan \u015Fey, piyasan\u0131n firman\u0131n b\xFC\
     y\xFCkl\xFC\u011F\xFCne getirdi\u011Fi k\u0131s\u0131tlamalar fikrini temel alarak,\
     \ CPS'deki art\u0131\u015F\u0131n s\u0131n\u0131r\u0131n\u0131n her zaman piyasa\
@@ -11254,7 +11254,7 @@
     \ \u0443\u0441\u043B\u0443\u0433\u0438 \u0438 \u0442\u043E\u0432\u0430\u0440\u044B\
     \ \u043D\u0435\u043F\u043E\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043D\
     \u043D\u043E \u043D\u0430 \u0440\u044B\u043D\u043E\u043A."
-  sp: "Mecanizaci\xF3n:"
+  es: "Mecanizaci\xF3n:"
   tr: "Robofirms, siber-fiziksel sistemler i\xE7in ideal bir temsildir. Hem insanlara\
     \ hem de di\u011Fer robotlara para kar\u015F\u0131l\u0131\u011F\u0131nda hizmet\
     \ verebilen olduk\xE7a \xF6zerk bir birimdir. Sonu\xE7 olarak, robot ekonomisi\
@@ -11267,7 +11267,7 @@
   it: BITCOIN
   pt: BITCOIN
   ru: Bitcoin
-  sp: "sustituci\xF3n de la fuerza muscular por energ\xEDa de vapor."
+  es: "sustituci\xF3n de la fuerza muscular por energ\xEDa de vapor."
   tr: "B\u0130TCO\u0130N"
 - alias: MONEY FOR ROBOTS
   az: "ROBOTLAR \xDC\xC7\xDCN PUL"
@@ -11277,7 +11277,7 @@
   pt: "DINHEIRO PARA ROB\xD4S"
   ru: "\u0414\u0435\u043D\u044C\u0433\u0438 \u0434\u043B\u044F \u0440\u043E\u0431\u043E\
     \u0442\u043E\u0432"
-  sp: '1784'
+  es: '1784'
   tr: "ROBOTLAR \u0130\xC7\u0130N PARA"
 - alias: In the world of robofirms it turns out to be natural to provide robots with
     access to social institutions that previously were only needed by humans.
@@ -11304,7 +11304,7 @@
     \u0435 \u0440\u0430\u043D\u044C\u0448\u0435 \u0431\u044B\u043B\u0438 \u043D\u0443\
     \u0436\u043D\u044B \u0442\u043E\u043B\u044C\u043A\u043E \u043B\u044E\u0434\u044F\
     \u043C."
-  sp: Industria 2.0
+  es: Industria 2.0
   tr: "Robofirms d\xFCnyas\u0131nda, robotlar\u0131n daha \xF6nce sadece insanlar\u0131\
     n ihtiya\xE7 duydu\u011Fu sosyal kurumlara eri\u015Fimini sa\u011Flamak hayat\u0131\
     n ola\u011Fan ak\u0131\u015F\u0131na uygun g\xF6r\xFCn\xFCyor."
@@ -11356,7 +11356,7 @@
     \u0436\u043D\u044B\u0439 \u0448\u0430\u0433 \u043A \u0443\u0441\u043A\u043E\u0440\
     \u0435\u043D\u0438\u044E \u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0438\
     \u0445 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0432."
-  sp: "Electrificaci\xF3n:"
+  es: "Electrificaci\xF3n:"
   tr: "Sosyal kurumlar bizler insan\u0131z diye ortaya \xE7\u0131kmaz ve fizyolojik\
     \ olarak bir insan bankalar, s\xF6zle\u015Fmeler ve toplumun di\u011Fer ara\xE7\
     lar\u0131 olmadan ya\u015Fayamaz. Ancak sadece bir noktada bir ki\u015Fi, toplumda\
@@ -11423,7 +11423,7 @@
     \u0435\u043A\u0430\u0442\u044C \u0441 \u043D\u0435\u0434\u043E\u0441\u0442\u0443\
     \u043F\u043D\u043E\u0439 \u0434\u043B\u044F \u0447\u0435\u043B\u043E\u0432\u0435\
     \u043A\u0430 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C\u044E."
-  sp: "introducci\xF3n de la producci\xF3n en cadena."
+  es: "introducci\xF3n de la producci\xF3n en cadena."
   tr: "Para ve s\xF6zle\u015Fmeler robotlar\u0131n kullan\u0131m\u0131na sunulmal\u0131\
     , \xE7\xFCnk\xFC bu Skynet'in ne oldu\u011Funu unutmu\u015F robot hayranlar\u0131\
     n\u0131n hasta bir fantezisi de\u011Fil. Ancak yeni sanayi devrimi, hem teknik\
@@ -11438,7 +11438,7 @@
   it: Industria 1.0
   pt: "Ind\xFAstria 1.0"
   ru: "\u0418\u043D\u0434\u0443\u0441\u0442\u0440\u0438\u044F 1.0"
-  sp: '1870'
+  es: '1870'
   tr: "End\xFCstri 1.0"
 - alias: 'Mechanization: '
   az: 'Mexanizasiya:'
@@ -11447,7 +11447,7 @@
   it: 'Meccanizzazione:'
   pt: "Mecaniza\xE7\xE3o:"
   ru: "\u041C\u0435\u0445\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F:"
-  sp: Industria 3.0
+  es: Industria 3.0
   tr: 'mekanizasyon:'
 - alias: 'replacement of muscle power with steam energy.
 
@@ -11463,7 +11463,7 @@
   ru: "\u0437\u0430\u043C\u0435\u043D\u0430 \u043C\u044B\u0448\u0435\u0447\u043D\u043E\
     \u0439 \u0441\u0438\u043B\u044B \u043F\u0430\u0440\u043E\u0432\u043E\u0439 \u044D\
     \u043D\u0435\u0440\u0433\u0438\u0435\u0439."
-  sp: "Automatizaci\xF3n:"
+  es: "Automatizaci\xF3n:"
   tr: "kas g\xFCc\xFCn\xFCn buhar enerjisi ile de\u011Fi\u015Ftirilmesi."
 - alias: "1784 \u0433."
   az: "1784-c\xFC il"
@@ -11472,7 +11472,7 @@
   it: "1784 \u0433."
   pt: Ano de 1784.
   ru: "1784 \u0433."
-  sp: "introducci\xF3n de sistemas automatizados con CNC."
+  es: "introducci\xF3n de sistemas automatizados con CNC."
   tr: 1784 r.
 - alias: Industry 2.0
   az: "S\u0259naye 2.0"
@@ -11481,7 +11481,7 @@
   it: Industria 2.0
   pt: "Ind\xFAstria 2.0"
   ru: "\u0418\u043D\u0434\u0443\u0441\u0442\u0440\u0438\u044F 2.0"
-  sp: '1969'
+  es: '1969'
   tr: "End\xFCstri 2.0"
 - alias: 'Electrification: '
   az: "Elektrikl\u0259\u015Fdirm\u0259:"
@@ -11491,7 +11491,7 @@
   pt: "Eletrifica\xE7\xE3o:"
   ru: "\u042D\u043B\u0435\u043A\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\
     \u044F:"
-  sp: Industria 4.0
+  es: Industria 4.0
   tr: 'elektrifikasyon:'
 - alias: introduction of assembly-line production.
   az: "Konveyer istehsal\u0131n\u0131n t\u0259tbiqi."
@@ -11502,7 +11502,7 @@
   ru: "\u0432\u043D\u0435\u0434\u0440\u0435\u043D\u0438\u0435 \u043A\u043E\u043D\u0432\
     \u0435\u0439\u0435\u0440\u043D\u043E\u0433\u043E \u043F\u0440\u043E\u0438\u0437\
     \u0432\u043E\u0434\u0441\u0442\u0432\u0430."
-  sp: "Producci\xF3n inteligente:"
+  es: "Producci\xF3n inteligente:"
   tr: "montaj hatt\u0131 \xFCretimine giri\u015F."
 - alias: "1870 \u0433."
   az: 1870-ci il
@@ -11511,7 +11511,7 @@
   it: "1870 \u0433."
   pt: Ano de 1870.
   ru: "1870 \u0433."
-  sp: "desarrollo de sistemas ciberf\xEDsicos."
+  es: "desarrollo de sistemas ciberf\xEDsicos."
   tr: 1870 r.
 - alias: Industry 3.0
   az: "S\u0259naye 3.0"
@@ -11520,7 +11520,7 @@
   it: Industria 3.0
   pt: "Ind\xFAstria 3.0"
   ru: "\u0418\u043D\u0434\u0443\u0441\u0442\u0440\u0438\u044F 3.0"
-  sp: Ahora
+  es: Ahora
   tr: "End\xFCstri 3.0"
 - alias: 'Automation: '
   az: "Avtomatla\u015Fd\u0131rma:"
@@ -11539,7 +11539,7 @@
   pt: "Automa\xE7\xE3o:"
   ru: "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044F\
     :"
-  sp: "Uno de los ejemplos de nuestros experimentos: negociar pagos por espacio vial\
+  es: "Uno de los ejemplos de nuestros experimentos: negociar pagos por espacio vial\
     \ y derecho de paso para veh\xEDculos aut\xF3nomos para reducir la congesti\xF3\
     n. Lo que una persona no har\xEDa absolutamente en el tr\xE1fico, el autom\xF3\
     vil lo har\xE1 por usted sin dificultad: si desea cambiar de carril, su autom\xF3\
@@ -11563,7 +11563,7 @@
   ru: "\u0432\u043D\u0435\u0434\u0440\u0435\u043D\u0438\u0435 \u0430\u0432\u0442\u043E\
     \u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\
     \u0445 \u0441\u0438\u0441\u0442\u0435\u043C \u0441 \u0427\u041F\u0423."
-  sp: "Los robots necesitan dinero que estar\xE1 directamente disponible para ellos\
+  es: "Los robots necesitan dinero que estar\xE1 directamente disponible para ellos\
     \ para poder realizar operaciones sin una persona a la velocidad con la que solo\
     \ las m\xE1quinas pueden tomar decisiones. \xA1Y todo esto es \xFAnicamente para\
     \ que una persona disfrute de la vida en la Ciudad Inteligente!"
@@ -11581,7 +11581,7 @@
   it: "1969 \u0433."
   pt: Ano de 1969.
   ru: "1969 \u0433."
-  sp: "Y aqu\xED llegamos sin problemas al primer efectivo electr\xF3nico: Bitcoin.\
+  es: "Y aqu\xED llegamos sin problemas al primer efectivo electr\xF3nico: Bitcoin.\
     \ El hecho de que Bitcoin pueda almacenarse en su cuenta seg\xFAn el principio\
     \ de que no es un banco, sino efectivo en su billetera, lo convierte en el primer\
     \ dinero que el robot puede administrar de forma independiente, m\xE1s precisamente\
@@ -11600,7 +11600,7 @@
   it: Industria 4.0
   pt: "Ind\xFAstria 4.0"
   ru: "\u0418\u043D\u0434\u0443\u0441\u0442\u0440\u0438\u044F 4.0"
-  sp: "Como resultado: un evento no inventado por nosotros, pero que cae claramente\
+  es: "Como resultado: un evento no inventado por nosotros, pero que cae claramente\
     \ en nuestra visi\xF3n, convierte a Bitcoin en el primer dinero para los robots\
     \ o, si miramos a\xFAn m\xE1s profundamente, es precisamente esa instituci\xF3\
     n social la que ayudar\xE1 a la formaci\xF3n de empresas rob\xF3ticas."
@@ -11613,7 +11613,7 @@
   pt: "Produ\xE7\xE3o inteligente:"
   ru: "\u0423\u043C\u043D\u043E\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\
     \u0441\u0442\u0432\u043E:"
-  sp: CONTRATOS INTELIGENTES
+  es: CONTRATOS INTELIGENTES
   tr: "Ak\u0131ll\u0131 \xFCretim:"
 - alias: development of cyber physical systems.
   az: "Kiberfiziki sisteml\u0259rin inki\u015Faf\u0131."
@@ -11624,7 +11624,7 @@
   ru: "\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u0438\u0431\
     \u0435\u0440\u0444\u0438\u0437\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\
     \u0438\u0441\u0442\u0435\u043C."
-  sp: ETHEREUM
+  es: ETHEREUM
   tr: "siber fiziksel sistemlerin geli\u015Ftirilmesi."
 - alias: Now
   az: "\u0130ndi"
@@ -11635,7 +11635,7 @@
   it: Adesso
   pt: Atualmente.
   ru: "\u0421\u0435\u0439\u0447\u0430\u0441"
-  sp: "Bitcoin se convirti\xF3 en el primer dinero disponible para los robots. Mientras\
+  es: "Bitcoin se convirti\xF3 en el primer dinero disponible para los robots. Mientras\
     \ tanto, no podemos hablar de Bitcoin en su forma actual como una herramienta\
     \ para el intercambio t\xE9cnico y econ\xF3mico completo."
   tr: "\u015Eimdi"
@@ -11734,7 +11734,7 @@
     \ \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u043D\u0430 uber \u0438 \u0441\u0434\
     \u0435\u043B\u0430\u0442\u044C \u0435\u0435 \u0431\u044B\u0441\u0442\u0440\u0435\
     \u0435."
-  sp: "Ahora ya tenemos contratos inteligentes, mercados DeFi y una infraestructura\
+  es: "Ahora ya tenemos contratos inteligentes, mercados DeFi y una infraestructura\
     \ descentralizada para intercambiar mensajes entre robots que abren la posibilidad\
     \ de que la humanidad cree una parte totalmente automatizada de la econom\xED\
     a humana: la econom\xEDa rob\xF3tica."
@@ -11791,7 +11791,7 @@
     \u0435\u043A \u043D\u0430\u0441\u043B\u0430\u0436\u0434\u0430\u043B\u0441\u044F\
     \ \u0436\u0438\u0437\u043D\u044C\u044E \u0432 \u0423\u043C\u043D\u043E\u043C \u0433\
     \u043E\u0440\u043E\u0434\u0435!"
-  sp: "Una de las grandes oportunidades para construir la econom\xEDa de los robots\
+  es: "Una de las grandes oportunidades para construir la econom\xEDa de los robots\
     \ es la tecnolog\xEDa Ethereum. Con la funcionalidad de Ethereum, los robots no\
     \ solo pueden intercambiar dinero, sino tambi\xE9n celebrar contratos con humanos\
     \ y entre ellos."
@@ -11865,7 +11865,7 @@
     \u0435\u043B\u044C\u043D\u043E \u0433\u043B\u043E\u0431\u0430\u043B\u044C\u043D\
     \u044B\u0439 \u0444\u0438\u043D\u0430\u043D\u0441\u043E\u0432\u044B\u0439 \u0438\
     \u043D\u0441\u0442\u0438\u0442\u0443\u0442."
-  sp: "Pero, \xBFcu\xE1l es el punto de la comunicaci\xF3n basada en contratos de\
+  es: "Pero, \xBFcu\xE1l es el punto de la comunicaci\xF3n basada en contratos de\
     \ m\xE1quina a m\xE1quina (m2m)? \xA1Esa es una gran pregunta! Volvamos a CPS.\
     \ Cuando hablamos de comunicaciones directas entre sensores, equipos de m\xE1\
     quinas o cualquier otro elemento, seguimos hablando de colaboraci\xF3n dentro\
@@ -11916,7 +11916,7 @@
     \u043E\u043C\u043E\u0436\u0435\u0442 \u0444\u043E\u0440\u043C\u0438\u0440\u043E\
     \u0432\u0430\u043D\u0438\u044E \u0440\u043E\u0431\u043E\u0442\u0438\u0437\u0438\
     \u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 \u0444\u0438\u0440\u043C."
-  sp: "Imaginemos el servicio de entrega de drones. Si un dron, por ejemplo, es propiedad\
+  es: "Imaginemos el servicio de entrega de drones. Si un dron, por ejemplo, es propiedad\
     \ de DHL, \xBFc\xF3mo puede acceder a los almacenes de Amazon o acceder a todo\
     \ el espacio a\xE9reo de la ciudad? \xBFSer\xE1 un monopolio? \xA1Este es un gran\
     \ desaf\xEDo para muchas iniciativas de la cuarta revoluci\xF3n industrial!"
@@ -11942,7 +11942,7 @@
   pt: SMART CONTRACTS
   ru: "\u0421\u041C\u0410\u0420\u0422 \u041A\u041E\u041D\u0422\u0420\u0410\u041A\u0422\
     \u042B"
-  sp: "La mayor\xEDa de las corporaciones dicen que necesitan derechos casi completos\
+  es: "La mayor\xEDa de las corporaciones dicen que necesitan derechos casi completos\
     \ sobre su entorno porque no saben c\xF3mo configurar de forma segura el intercambio\
     \ de informaci\xF3n t\xE9cnica entre sistemas automatizados fuera de su propia\
     \ estructura corporativa interna. Al mismo tiempo, si observa los procesos en\
@@ -11962,7 +11962,7 @@
   it: ETHEREUM
   pt: ETHEREUM
   ru: ETHEREUM
-  sp: "\xBFCu\xE1l es la diferencia? En el primer caso no hay forma de construir una\
+  es: "\xBFCu\xE1l es la diferencia? En el primer caso no hay forma de construir una\
     \ relaci\xF3n contractual entre m\xE1quinas, y en el segundo caso, en el mundo\
     \ de las personas, las relaciones contractuales ya existen."
   tr: ETHEREUM
@@ -11995,7 +11995,7 @@
     \u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0438 \u044D\u043A\u043E\u043D\u043E\
     \u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u043E\u0431\u043C\u0435\
     \u043D\u0430."
-  sp: PARACHAINS
+  es: PARACHAINS
   tr: "Bitcoin, robotlar\u0131n kullanabilece\u011Fi ilk para oldu. Bu arada, tam\
     \ te\u015Fekk\xFCll\xFC teknik ve ekonomik de\u011Fi\u015Fim i\xE7in bir ara\xE7\
     \ olarak mevcut haliyle Bitcoin hakk\u0131nda konu\u015Famay\u0131z."
@@ -12038,7 +12038,7 @@
     \u043A\u043E\u0439 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0438 \u2014\
     \ \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0438 \u0440\u043E\u0431\u043E\
     \u0442\u043E\u0432."
-  sp: POLKADOT
+  es: POLKADOT
   tr: "Art\u0131k, insanl\u0131\u011F\u0131n insan ekonomisinin tam otomatik bir par\xE7\
     as\u0131n\u0131 - robot ekonomisini - yaratma olas\u0131l\u0131\u011F\u0131n\u0131\
     \ a\xE7an robotlar aras\u0131nda mesaj al\u0131\u015Fveri\u015Fi yapmak i\xE7\
@@ -12065,7 +12065,7 @@
     \u0435\u0439 \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u044D\u043A\
     \u043E\u043D\u043E\u043C\u0438\u043A\u0443 \u0440\u043E\u0431\u043E\u0442\u043E\
     \u0432 \u2014 \u044D\u0442\u043E"
-  sp: "La principal dificultad que enfrenta Robonomics hoy en d\xEDa es el alto precio\
+  es: "La principal dificultad que enfrenta Robonomics hoy en d\xEDa es el alto precio\
     \ por lanzar un dispositivo IoT usando Ethereum. En Ethereum, debe pagar una comisi\xF3\
     n por cada transacci\xF3n en t\xE9rminos de d\xF3lares estadounidenses en el rango\
     \ de $ 10 a $ 100. Es bastante caro para la mayor\xEDa de los casos de la econom\xED\
@@ -12081,7 +12081,7 @@
   it: Ethereum
   pt: Ethereum
   ru: Ethereum
-  sp: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
+  es: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
   tr: Ethereum
 - alias: Ethereum
   az: Ethereum
@@ -12090,7 +12090,7 @@
   it: Ethereum
   pt: Ethereum
   ru: Ethereum
-  sp: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
+  es: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
   tr: Ethereum
 - alias: Ethereum
   az: Ethereum
@@ -12099,7 +12099,7 @@
   it: Ethereum
   pt: Ethereum
   ru: Ethereum
-  sp: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
+  es: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
   tr: Ethereum
 - alias: Ethereum
   az: Ethereum
@@ -12108,7 +12108,7 @@
   it: Ethereum
   pt: Ethereum
   ru: Ethereum
-  sp: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
+  es: "PREGUNTAS ABIERTAS DE LA TELEOLOG\xCDA"
   tr: Ethereum
 - alias: technology. With Ethereum functionality robots are able not only exchange
     money, but to enter into contracts with humans and among themselves.
@@ -12136,7 +12136,7 @@
     \u043B\u044E\u0447\u0430\u0442\u044C \u043A\u043E\u043D\u0442\u0440\u0430\u043A\
     \u0442\u044B \u0441 \u043B\u044E\u0434\u044C\u043C\u0438 \u0438 \u043C\u0435\u0436\
     \u0434\u0443 \u0441\u043E\u0431\u043E\u0439."
-  sp: "En busca de una oportunidad para reducir el costo de interactuar con un dispositivo\
+  es: "En busca de una oportunidad para reducir el costo de interactuar con un dispositivo\
     \ IoT, los desarrolladores de Robonomics han estudiado desarrollos alternativos\
     \ a Ethereum. Nuestra elecci\xF3n se bas\xF3 en la arquitectura Polkadot , que\
     \ nos permitir\xEDa ejecutar nuestra propia blockchain, dentro de una red com\xFA\
@@ -12212,7 +12212,7 @@
     \u0437\u044C \u0441 \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u043C\u0438\
     \ \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u043C\u0438 \u044D\u043B\u0435\
     \u043C\u0435\u043D\u0442\u0430\u043C\u0438."
-  sp: Polkadot
+  es: Polkadot
   tr: "Ancak makineden makineye (m2m) s\xF6zle\u015Fmeye dayal\u0131 ileti\u015Fimin\
     \ anlam\u0131 nedir? Bu harika bir soru! CPS'ye geri d\xF6nelim. Sens\xF6rler,\
     \ makine ekipman\u0131 veya di\u011Fer unsurlar aras\u0131ndaki do\u011Frudan\
@@ -12263,7 +12263,7 @@
     \u0435\u0442\u0432\u0435\u0440\u0442\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\
     \u0448\u043B\u0435\u043D\u043D\u043E\u0439 \u0440\u0435\u0432\u043E\u043B\u044E\
     \u0446\u0438\u0438!"
-  sp: Ethereum
+  es: Ethereum
   tr: "Drone teslimat hizmetini d\xFC\u015F\xFCnelim. \xD6rne\u011Fin bir drone, DHL'in\
     \ m\xFClk\xFCyse, Amazon'un depolar\u0131na nas\u0131l eri\u015Febilir veya \u015F\
     ehrin t\xFCm hava sahas\u0131na nas\u0131l eri\u015Febilir? Tekel mi olacak? Bu,\
@@ -12356,7 +12356,7 @@
     \u043A\u0430\u0437 \u043D\u0430 \u0441\u043A\u043B\u0430\u0434\u0435 \u0438 \u043F\
     \u0440\u0438\u0432\u0435\u0437\u0442\u0438 \u0435\u0433\u043E \u043A \u0432\u0430\
     \u043C."
-  sp: "Libertad de elecci\xF3n"
+  es: "Libertad de elecci\xF3n"
   tr: "\xC7o\u011Fu \u015Firket, kendi kurumsal yap\u0131lar\u0131n\u0131n d\u0131\
     \u015F\u0131nda otomatik sistemler aras\u0131nda teknik bilgi al\u0131\u015Fveri\u015F\
     ini g\xFCvenli bir \u015Fekilde nas\u0131l kuracaklar\u0131n\u0131 bilmediklerinden,\
@@ -12396,7 +12396,7 @@
     \u0435\u0439 \u0434\u043E\u0433\u043E\u0432\u043E\u0440\u043D\u044B\u0435 \u043E\
     \u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044F \u0443\u0436\u0435 \u0441\u0443\
     \u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0442."
-  sp: "Red blockchain heterog\xE9nea"
+  es: "Red blockchain heterog\xE9nea"
   tr: "Fark ne? \u0130lk durumda, makineler aras\u0131nda s\xF6zle\u015Fmeye dayal\u0131\
     \ bir ili\u015Fki kurman\u0131n bir yolu yoktur ve ikinci durumda, insanlar\u0131\
     n d\xFCnyas\u0131nda s\xF6zle\u015Fmeye dayal\u0131 ili\u015Fkiler zaten mevcuttur."
@@ -12407,7 +12407,7 @@
   it: PARACHAIN DI
   pt: 'PARACHAINS DA '
   ru: "\u041F\u0430\u0440\u0430\u0447\u0435\u0439\u043D\u044B"
-  sp: "Red fragmentada homog\xE9nea"
+  es: "Red fragmentada homog\xE9nea"
   tr: "M\xDCZAYEDELER"
 - alias: POLKADOT
   az: POLKADOT
@@ -12416,7 +12416,7 @@
   it: POLKADOT
   pt: POLKADOT
   ru: Polkadot
-  sp: Subasta de ranura
+  es: Subasta de ranura
   tr: POLKADOT
 - alias: The main difficulty that Robonomics faces today is the high price for launching
     an IoT device using Ethereum. In Ethereum you have to pay a commission on each
@@ -12481,7 +12481,7 @@
     \u043D\u0430\u043C\u0438 \u0438\u043B\u0438 3D-\u043F\u0435\u0447\u0430\u0442\u044C\
     \ \u043B\u044E\u0431\u0438\u043C\u043E\u0433\u043E \u0430\u043D\u0438\u043C\u0435\
     -\u0433\u0435\u0440\u043E\u044F \u043D\u0430 \u0437\u0430\u043A\u0430\u0437."
-  sp: Control de protocolo en cadena
+  es: Control de protocolo en cadena
   tr: "Bug\xFCn Robonomics'in kar\u015F\u0131la\u015Ft\u0131\u011F\u0131 ana zorluk,\
     \ Ethereum kullanarak bir IoT cihaz\u0131 ba\u015Flatman\u0131n y\xFCksek fiyat\u0131\
     d\u0131r. Ethereum'da, her i\u015Flem i\xE7in ABD dolar\u0131 cinsinden 10 ila\
@@ -12550,7 +12550,7 @@
     \ \u043E\u0431\u043B\u0430\u043A\u043E \u0432\u0437\u0438\u043C\u0430\u0435\u0442\
     \ \u0441 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u043D\u043E\u0433\
     \u043E \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430."
-  sp: "Protecci\xF3n contra la tiran\xEDa de la multitud."
+  es: "Protecci\xF3n contra la tiran\xEDa de la multitud."
   tr: "D\xFCr\xFCst olmak gerekirse, 2018 - 2019 Ethereum a\u011F\u0131nda i\u015F\
     lem \xFCcretleriyle bile karl\u0131 senaryolar oldu\u011Funu belirtmek isteriz.\
     \ \xD6rne\u011Fin, otomatik karbon ayak izi ofset i\u015Flemleri veya sipari\u015F\
@@ -12589,7 +12589,7 @@
     \u0435 Ethereum \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438.\
     \ \u041D\u0430\u0448 \u0432\u044B\u0431\u043E\u0440 \u043E\u0441\u0442\u0430\u043D\
     \u043E\u0432\u0438\u043B\u0441\u044F \u043D\u0430"
-  sp: "Subasta de ancho de banda en la red com\xFAn"
+  es: "Subasta de ancho de banda en la red com\xFAn"
   tr: "Bir IoT cihaz\u0131yla etkile\u015Fim maliyetini azaltmak i\xE7in bir f\u0131\
     rsat arayan Robonomics geli\u015Ftiricileri, Ethereum'a alternatif geli\u015F\
     tirmeler \xFCzerinde \xE7al\u0131\u015Ft\u0131. Se\xE7imimiz, g\xFCvenli\u011F\
@@ -12620,7 +12620,7 @@
     \u0442 \u043D\u0430\u0448\u0435\u0433\u043E \u043F\u0440\u043E\u0435\u043A\u0442\
     \u0430 \u0432\u0430\u043B\u0438\u0434\u0430\u0442\u043E\u0440\u0430\u043C\u0438\
     ."
-  sp: Pago de gas por parte de los usuarios.
+  es: Pago de gas por parte de los usuarios.
   tr: mimarisine karar verdi.
 - alias: Polkadot
   az: Polkadot
@@ -12629,7 +12629,7 @@
   it: Polkadot
   pt: Polkadot
   ru: Polkadot
-  sp: "\xBFHas le\xEDdo esto?"
+  es: "\xBFHas le\xEDdo esto?"
   tr: Polkadot
 - alias: Freedom of choice
   az: "Se\xE7im azadl\u0131\u011F\u0131"
@@ -12638,7 +12638,7 @@
   it: Freedom of choice
   pt: Liberdade de escolha
   ru: "\u0421\u0432\u043E\u0431\u043E\u0434\u0430 \u0432\u044B\u0431\u043E\u0440\u0430"
-  sp: Inspirado por Norbert Wiener
+  es: Inspirado por Norbert Wiener
   tr: "Se\xE7me \xF6zg\xFCrl\xFC\u011F\xFC"
 - alias: Heterogeneous Blockchain Network
   az: "Heterojen Blok\xE7eyn \u015E\u0259b\u0259k\u0259si"
@@ -12663,7 +12663,7 @@
   pt: "Rede Blockchain Heterog\xEAnea"
   ru: "\u0421\u0435\u0442\u044C \u0433\u0435\u0442\u0435\u0440\u043E\u0433\u0435\u043D\
     \u043D\u044B\u0445 \u0431\u043B\u043E\u043A\u0447\u0435\u043D\u043E\u0432"
-  sp: "Una pregunta extremadamente popular que a\xFAn permanece abierta: el prop\xF3\
+  es: "Una pregunta extremadamente popular que a\xFAn permanece abierta: el prop\xF3\
     sito de los robots cuando brindan servicios a las personas. Esta es una pregunta\
     \ espec\xEDfica pero acad\xE9micamente importante. El hecho es que la econom\xED\
     a humana a menudo incluye factores relacionados con el desempe\xF1o de buena fe\
@@ -12693,7 +12693,7 @@
   pt: "Rede de Shards Homog\xEAneos"
   ru: "\u0421\u0435\u0442\u044C \u043E\u0434\u043D\u043E\u0440\u043E\u0434\u043D\u044B\
     \u0445 \u0448\u0430\u0440\u0434"
-  sp: "Mises, en su libro \xABHuman Action: A Treatise of Economics\xBB, mira al ser\
+  es: "Mises, en su libro \xABHuman Action: A Treatise of Economics\xBB, mira al ser\
     \ humano en la econom\xEDa desde una perspectiva praxeol\xF3gica. La praxeolog\xED\
     a nos brinda una visi\xF3n interesante del comportamiento humano sin una correlaci\xF3\
     n directa con el objetivo final. Al continuar estudiando los fen\xF3menos de la\
@@ -12712,7 +12712,7 @@
   it: Aste per gli Slot
   pt: "Leil\xE3o de slots"
   ru: "\u0410\u0443\u043A\u0446\u0438\u043E\u043D \u0441\u043B\u043E\u0442\u043E\u0432"
-  sp: "Los grandes libros conducen a grandes ideas. Si busca m\xE1s inspiraci\xF3\
+  es: "Los grandes libros conducen a grandes ideas. Si busca m\xE1s inspiraci\xF3\
     n sobre la comunicaci\xF3n hombre-m\xE1quina, intente leer libros de ciencia ficci\xF3\
     n. Marque los libros que ya ha le\xEDdo y vea qu\xE9 m\xE1s podemos ofrecerle\
     \ para una mayor reflexi\xF3n."
@@ -12725,7 +12725,7 @@
   pt: Controle de protocolo on-chain
   ru: "On-chain \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043F\
     \u0440\u043E\u0442\u043E\u043A\u043E\u043B\u043E\u043C"
-  sp: "Los androides sue\xF1an con ovejas el\xE9ctricas?"
+  es: "Los androides sue\xF1an con ovejas el\xE9ctricas?"
   tr: "Zincir-i\xE7i protokol kontrol\xFC"
 - alias: Protection against the tyranny of the crowd
   az: "K\xFCtl\u0259nin z\xFClm\xFCnd\u0259n m\xFCdafi\u0259"
@@ -12735,7 +12735,7 @@
   pt: "Prote\xE7\xE3o contra a tirania da multid\xE3o"
   ru: "\u0417\u0430\u0449\u0438\u0442\u0430 \u043E\u0442 \u0442\u0438\u0440\u0430\u043D\
     \u0438\u0438 \u0442\u043E\u043B\u043F\u044B"
-  sp: Philip K. Dick
+  es: Philip K. Dick
   tr: "Kalabal\u0131\u011F\u0131n zorbal\u0131\u011F\u0131na kar\u015F\u0131 koruma"
 - alias: Auction of bandwidth in the common network
   az: "\xDCmumi \u015F\u0259b\u0259k\u0259d\u0259 bant geni\u015Fliyi auksionu"
@@ -12746,7 +12746,7 @@
   ru: "\u0410\u0443\u043A\u0446\u0438\u043E\u043D\u044B \u043F\u0440\u043E\u043F\u0443\
     \u0441\u043A\u043D\u043E\u0439 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\
     \u0441\u0442\u0438 \u0432 \u043E\u0431\u0449\u0435\u0439 \u0441\u0435\u0442\u0438"
-  sp: Autofac
+  es: Autofac
   tr: "Ortak a\u011Fda bant geni\u015Fli\u011Fi a\xE7\u0131k art\u0131rmas\u0131"
 - alias: Payment for gas by users
   az: "\u0130stifad\u0259\xE7il\u0259r t\u0259r\u0259find\u0259n qaz\u0131n \xF6d\u0259\
@@ -12757,7 +12757,7 @@
   pt: "Pagamento de gas pelos usu\xE1rios"
   ru: "\u041E\u043F\u043B\u0430\u0442\u0430 \u0433\u0430\u0437\u0430 \u043F\u043E\u043B\
     \u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F\u043C\u0438"
-  sp: Yo, Robot
+  es: Yo, Robot
   tr: "Kullan\u0131c\u0131lar taraf\u0131ndan gaz i\xE7in \xF6deme"
 - alias: Have you read this?
   az: Siz bunu oxumusunuz?
@@ -12766,7 +12766,7 @@
   it: Hai letto questi?
   pt: "Voc\xEA leu isso?"
   ru: "\u0423\u0436\u0435 \u0447\u0438\u0442\u0430\u043B\u0438 \u044D\u0442\u043E?"
-  sp: Isaac Asimov
+  es: Isaac Asimov
   tr: Bunu okudunuz mu?
 - alias: OPEN QUESTIONS OF TELEOLOGY
   az: "TELEOLOG\u0130YANIN A\xC7IQ SUALLARI"
@@ -12776,7 +12776,7 @@
   pt: "QUEST\xD5ES ABERTAS DE TELEOLOGIA"
   ru: "\u041E\u0442\u043A\u0440\u044B\u0442\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\
     \u0441\u044B \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"
-  sp: El hombre bicentenario
+  es: El hombre bicentenario
   tr: "TELOLOJ\u0130 A\xC7IK SORULARI"
 - alias: Inspired by Norbert Wiener
   az: "Norbert Wiener-d\u0259n ilhamlan\u0131b"
@@ -12787,7 +12787,7 @@
   ru: "\u0412\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044B\u0435\
     \ \u041D\u043E\u0440\u0431\u0435\u0440\u0442\u043E\u043C \u0412\u043E\u043D\u0435\
     \u0440\u043E\u043C"
-  sp: Neuromancer
+  es: Neuromancer
   tr: "Norbert Wiener'den ilham al\u0131nm\u0131\u015Ft\u0131r"
 - alias: "One extremely popular question that still remains open \u2014 the purposefulness\
     \ of robots when providing services to people. This is a specific but academically\
@@ -12921,7 +12921,7 @@
     \u043E\u043D \u041C\u0438\u0437\u0435\u0441\u0430 \u043E \u0447\u0435\u043B\u043E\
     \u0432\u0435\u0447\u0435\u0441\u043A\u043E\u0439 \u0434\u0435\u044F\u0442\u0435\
     \u043B\u044C\u043D\u043E\u0441\u0442\u0438."
-  sp: William Gibson
+  es: William Gibson
   tr: "H\xE2l\xE2 a\xE7\u0131k kalan son derece pop\xFCler bir soru - insanlara hizmet\
     \ sunarken robotlar\u0131n amac\u0131. Bu \xF6zel ama akademik a\xE7\u0131dan\
     \ \xF6nemli bir soru. Ger\xE7ek \u015Fu ki, insan ekonomisi genellikle bir s\xF6\
@@ -12945,7 +12945,7 @@
   pt: Mises, em seu livro
   ru: "\u041C\u0438\u0437\u0435\u0440, \u0432 \u044D\u0442\u043E\u0439 \u043A\u043D\
     \u0438\u0433\u0435"
-  sp: Marionetas, Inc.
+  es: Marionetas, Inc.
   tr: Mises,
 - alias: "\xABHuman Action: A Treatise of Economics\xBB"
   az: "\"\u0130nsan F\u0259aliyy\u0259ti: \u0130qtisadiyyat\u0131n risal\u0259si\""
@@ -12954,7 +12954,7 @@
   it: "\xABL'azione umana: un trattato di economia\xBB"
   pt: "\xABHuman Action: A Treatise of Economics\xBB"
   ru: "\xABHuman Action: A Treatise of Economics\xBB"
-  sp: Ray Bradbury
+  es: Ray Bradbury
   tr: "\xABHuman Action: A Treatise of Economics\xBB"
 - alias: ', looks at the human being in economics from a praxeological perspective.
     Praxeology gives us an interesting insight into human behavior without a direct
@@ -13019,7 +13019,7 @@
     \u0442\u044C\u0441\u044F \u0432 \u0432\u043E\u043F\u0440\u043E\u0441\u044B \u043C\
     \u0430\u0448\u0438\u043D\u043D\u043E\u0439 \u0442\u0435\u043B\u0435\u043E\u043B\
     \u043E\u0433\u0438\u0438."
-  sp: "Preguntas abiertas de la teleolog\xEDa"
+  es: "Preguntas abiertas de la teleolog\xEDa"
   tr: "adl\u0131 kitab\u0131nda, iktisatta insana praksiolojik bir perspektiften bakar.\
     \ Praxeology, nihai hedefle do\u011Frudan bir ili\u015Fkisi olmaks\u0131z\u0131\
     n, insan davran\u0131\u015F\u0131na ili\u015Fkin ilgin\xE7 bir i\xE7g\xF6r\xFC\
@@ -13066,7 +13066,7 @@
     \u0442\u044C \u0432\u0430\u043C \u0434\u043B\u044F \u0434\u0430\u043B\u044C\u043D\
     \u0435\u0439\u0448\u0435\u0433\u043E \u0440\u0430\u0437\u043C\u044B\u0448\u043B\
     \u0435\u043D\u0438\u044F."
-  sp: y un tratado de L. von Mises
+  es: y un tratado de L. von Mises
   tr: "Harika kitaplar harika fikirlere yol a\xE7ar. \u0130nsan-makine ileti\u015F\
     imi hakk\u0131nda daha fazla ilham almak istiyorsan\u0131z, bilim kurgu kitaplar\u0131\
     \ okumay\u0131 deneyin. Halihaz\u0131rda okudu\u011Funuz kitaplar\u0131 i\u015F\
@@ -13082,7 +13082,7 @@
   ru: "\u041C\u0435\u0442\u0447\u0430\u044E\u0442 \u043B\u0438 \u0430\u043D\u0434\u0440\
     \u043E\u0438\u0434\u044B \u043E\u0431 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\
     \u043E\u0432\u0446\u0430\u0445?"
-  sp: "Para concluir, nos gustar\xEDa mencionar preguntas que permanecen abiertas\
+  es: "Para concluir, nos gustar\xEDa mencionar preguntas que permanecen abiertas\
     \ desde un punto de vista global. \xBFCu\xE1l es el objetivo de los robots?"
   tr: Do Androids Dream of Electric Sheep?
 - alias: Philip K. Dick
@@ -13099,7 +13099,7 @@
   it: Philip K. Dick
   pt: Philip K. Dick
   ru: "\u0424\u0438\u043B\u0438\u043F K. \u0414\u0438\u043A"
-  sp: "De hecho, la econom\xEDa de las personas a menudo se asocia con la conciencia\
+  es: "De hecho, la econom\xEDa de las personas a menudo se asocia con la conciencia\
     \ de realizar tareas en el marco del contrato, el deseo de las partes de lograr\
     \ un resultado, el comportamiento oportunista y altruista del individuo en la\
     \ sociedad. Todos estos principios son dif\xEDciles de aplicar a la econom\xED\
@@ -13117,7 +13117,7 @@
   it: Autofac
   pt: Autofac
   ru: "\u0410\u0443\u0442\u043E\u0444\u0430\u043A"
-  sp: "Para empezar, sugerimos mirar el trabajo de Mises \"Human Action: A Treatise\
+  es: "Para empezar, sugerimos mirar el trabajo de Mises \"Human Action: A Treatise\
     \ on Economics\" (enfoque praxeol\xF3gico) y el art\xEDculo anterior de Norbert\
     \ Wiener \"Behavior, Purpose and Teleology\" (visi\xF3n teleol\xF3gica)."
   tr: Autofac
@@ -13132,7 +13132,7 @@
   it: Io, Robot
   pt: "Eu, Rob\xF4"
   ru: "\u042F \u0440\u043E\u0431\u043E\u0442"
-  sp: "La praxeolog\xEDa nos inspira ideas interesantes sobre el comportamiento humano\
+  es: "La praxeolog\xEDa nos inspira ideas interesantes sobre el comportamiento humano\
     \ sin dependencia directa de los prop\xF3sitos. Esto nos da la oportunidad de\
     \ trabajar en los procesos de la econom\xEDa de los robots condicionalmente como\
     \ con una caja negra sin profundizar en los objetivos finales. Al mismo tiempo,\
@@ -13149,7 +13149,7 @@
   it: Isaac Asimov
   pt: Isaac Asimov
   ru: "\u0410\u0439\u0437\u0435\u043A \u0410\u0437\u0438\u043C\u043E\u0432"
-  sp: "Esperamos que en alg\xFAn lugar de la uni\xF3n de los trabajos de Mises y Wiener\
+  es: "Esperamos que en alg\xFAn lugar de la uni\xF3n de los trabajos de Mises y Wiener\
     \ se pueda encontrar un punto para un mayor desarrollo de la econom\xEDa del robot,\
     \ no solo como un protocolo de interacci\xF3n entre personas y m\xE1quinas de\
     \ naturaleza praxeol\xF3gica, sino teniendo en cuenta los elementos teleol\xF3\
@@ -13163,7 +13163,7 @@
   pt: O Homem Bicentenario
   ru: "\u0414\u0432\u0443\u0445\u0441\u043E\u0442\u043B\u0435\u0442\u043D\u0438\u0439\
     \ \u0447\u0435\u043B\u043E\u0432\u0435\u043A"
-  sp: .nan
+  es: .nan
   tr: The Bicentennial Man
 - alias: Neuromancer
   az: Neuromanser
@@ -13172,7 +13172,7 @@
   it: Neuromante
   pt: Neuromancer
   ru: "\u041D\u0435\u0439\u0440\u043E\u043C\u0430\u043D\u0442"
-  sp: .nan
+  es: .nan
   tr: Neuromancer
 - alias: William Gibson
   az: Vilyam Gibson
@@ -13181,7 +13181,7 @@
   it: William Gibson
   pt: William Gibson
   ru: "\u0423\u0438\u043B\u044C\u044F\u043C \u0413\u0438\u0431\u0441\u043E\u043D"
-  sp: .nan
+  es: .nan
   tr: William Gibson
 - alias: Marionettes, Inc.
   az: "Marionetl\u0259r, Inc."
@@ -13190,7 +13190,7 @@
   it: Marionettes, Inc.
   pt: Marionettes, Inc.
   ru: "\u041C\u0430\u0440\u0438\u043E\u043D\u0435\u0442\u043A\u0438, Inc."
-  sp: .nan
+  es: .nan
   tr: Marionettes, Inc.
 - alias: Ray Bradbury
   az: Rey Bredberi
@@ -13199,7 +13199,7 @@
   it: Ray Bradbury
   pt: Ray Bradbury
   ru: "\u0420\u044D\u0439 \u0411\u0440\u044D\u0434\u0431\u0435\u0440\u0438"
-  sp: .nan
+  es: .nan
   tr: Ray Bradbury
 - alias: Open questions of teleology
   az: "Teleologiyan\u0131n a\xE7\u0131q suallar\u0131"
@@ -13209,7 +13209,7 @@
   pt: "Quest\xF5es abertas de teleologia"
   ru: "\u041E\u0442\u043A\u0440\u044B\u0442\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\
     \u0441\u044B \u0442\u0435\u043B\u0435\u043E\u043B\u043E\u0433\u0438\u0438"
-  sp: .nan
+  es: .nan
   tr: "Teleolojinin a\xE7\u0131k sorular\u0131"
 - alias: and a treatise by L. von Mises
   az: "v\u0259 L. von Mizesin traktat\u0131"
@@ -13219,7 +13219,7 @@
   pt: e um tratado de L. von Mises
   ru: "\u0438 \u0442\u0440\u0430\u043A\u0442\u0430\u0442 \u041B. \u0444\u043E\u043D\
     \ \u041C\u0438\u0437\u0435\u0441\u0430"
-  sp: .nan
+  es: .nan
   tr: ve L. von Mises'in bir incelemesi
 - alias: In conclusion, we would like to mention questions that remain open from a
     global point of view. What is the goal of robots?
@@ -13240,7 +13240,7 @@
     \u0431\u0430\u043B\u044C\u043D\u043E\u0439 \u0442\u043E\u0447\u043A\u0438 \u0437\
     \u0440\u0435\u043D\u0438\u044F. \u041A\u0430\u043A\u043E\u0432\u0430 \u0446\u0435\
     \u043B\u044C \u0440\u043E\u0431\u043E\u0442\u043E\u0432?"
-  sp: .nan
+  es: .nan
   tr: "Sonu\xE7 olarak, k\xFCresel bir bak\u0131\u015F a\xE7\u0131s\u0131yla a\xE7\
     \u0131k kalan sorulara de\u011Finmek istiyoruz. Robotlar\u0131n amac\u0131 nedir?"
 - alias: In fact, the economy of people is often associated with the conscientiousness
@@ -13310,7 +13310,7 @@
     \u043E\u043D\u0438\u043C\u0430\u043D\u0438\u044F \u0438 \u043F\u0440\u0438\u043C\
     \u0435\u043D\u0435\u043D\u0438\u044F \u0440\u043E\u0431\u043E\u0442\u043E\u0432\
     ."
-  sp: .nan
+  es: .nan
   tr: "Asl\u0131nda, insanlar\u0131n ekonomisi genellikle s\xF6zle\u015Fme \xE7er\xE7\
     evesinde g\xF6revleri yerine getirme vicdan\u0131, taraflar\u0131n bir sonuca\
     \ ula\u015Fma arzusu, bireyin toplumdaki f\u0131rsat\xE7\u0131 ve fedakar davran\u0131\
@@ -13346,7 +13346,7 @@
     \u0440\u0442\u0430 \u0412\u0438\u043D\u0435\u0440\u0430 \"Behavior, Purpose and\
     \ Teleology\" (\u0442\u0435\u043B\u0435\u043E\u043B\u043E\u0433\u0438\u0447\u0435\
     \u0441\u043A\u043E\u0435 \u0432\u0438\u0434\u0435\u043D\u0438\u0435)."
-  sp: .nan
+  es: .nan
   tr: "Ba\u015Flang\u0131\xE7 \u200B\u200Bolarak, Mises'in \"\u0130nsan Eylemi: Ekonomi\
     \ \xDCzerine Bir \u0130nceleme\" (praxeological yakla\u015F\u0131m) adl\u0131\
     \ \xE7al\u0131\u015Fmas\u0131na ve Norbert Wiener'in \"Behavior, Purpose and Teleology\"\
@@ -13400,7 +13400,7 @@
     \u044F \u0431\u0440\u043E\u0441\u0430\u0435\u0442 \u0432\u044B\u0437\u043E\u0432\
     \ \u043E\u0431\u044A\u044F\u0441\u043D\u0435\u043D\u0438\u044E \u043F\u0440\u0438\
     \u0447\u0438\u043D."
-  sp: .nan
+  es: .nan
   tr: "Praxeology, ama\xE7lara do\u011Frudan ba\u011F\u0131ml\u0131 olmadan insan\
     \ davran\u0131\u015F\u0131 hakk\u0131nda ilgin\xE7 fikirlerle bize ilham verir.\
     \ Bu bize, nihai hedeflere dalmadan, bir kara kutu gibi ko\u015Fullu olarak robot\
@@ -13452,7 +13452,7 @@
     \u0440\u043E\u0435\u043D\u0438\u044F \u043C\u0435\u0436\u0432\u0438\u0434\u043E\
     \u0432\u043E\u0439 \u043A\u043E\u043C\u043C\u0443\u043D\u0438\u043A\u0430\u0446\
     \u0438\u0438."
-  sp: .nan
+  es: .nan
   tr: "Mises ve Wiener'in \xE7al\u0131\u015Fmalar\u0131n\u0131n kesi\u015Fti\u011F\
     i bir yerde, robot ekonomisinin daha da geli\u015Ftirilmesi i\xE7in bir noktan\u0131\
     n bulunabilece\u011Fini umuyoruz, sadece insanlar ve makineler aras\u0131nda prakseolojik\
