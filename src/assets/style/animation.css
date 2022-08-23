@@ -524,41 +524,60 @@
 	}
 }
 
-@keyframes ScaleCenteredAbsolute {
+@keyframes CenteredAbsoluteFloatY {
 	0% {
-		bottom: -200px;
-		transform: scale(0.5) translateX(-50%) translateY(-10%);
+		transform: translateX(-50%) translateY(100%);
+		z-index: 0;
 	}
 	100%{
 		bottom: -10px;
-		transform: scale(1) translateX(-50%) translateY(0%);
+		transform:translateX(-50%) translateY(0%);
+		z-index: 20;
+	}
+}
+
+@keyframes MoveUp {
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0%);
 	}
 }
 
 @keyframes robotMove {
 	0% {
-		transform: translateX(0);
+		transform: translateX(-25vw);
 	}
 
+	10% {
+		transform: translateX(-10vw);
+	}
+
+
 	20% {
-		transform: translateX(30%);
+		transform: translateX(5vw);
 	}
 
 	40% {
-		transform: translateX(60%);
+		transform: translateX(15vw);
 		
 	}
 
+	50% {
+		transform: translateX(25vw);
+	}
+
 	60% {
-		transform: translateX(30%);
+		transform: translateX(50vw);
 	}
 
 	80% {
-		transform: translateX(0);
+		transform: translateX(80vw);
 	}
 
 	100% {
-		transform: translateX(0);
+		transform: translateX(100vw);
 	}
 }
 
@@ -570,4 +589,42 @@
 		filter: grayscale(1);
 	}
 }
+
+@keyframes DrawSvgPath
+ {
+  to {
+     stroke-dashoffset: 0;
+   }
+ }
+
+@keyframes logo-triangle-1
+  {
+    0% { fill: var(--color-blue-mid ); }
+    25% { fill: var(--color-blue-mid ); }
+    50% { fill: var(--color-violet-mid ); }
+    75% { fill: var(--color-violet); }
+    100% { fill: var(--color-blue-mid ); }
+  }
+
+@keyframes logo-triangle-2
+  {
+    0% { fill: var(--color-violet); }
+    25% { fill: #E0BDED; }
+    50% { fill: var(--color-blue-mid ); }
+    75% { fill: var(--color-blue-mid );}
+    100% { fill: var(--color-violet); }
+  }
+
+@keyframes logo-triangle-3
+  {
+    0% { fill: var(--color-violet-mid); }
+    25% { fill: var(--color-violet); }
+    50% { fill: var(--color-violet); }
+    75% { fill: var(--color-violet-dark); }
+    100% { fill: var(--color-violet-mid); }
+  }
+
+
+
+
 
