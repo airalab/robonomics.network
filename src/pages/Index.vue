@@ -11,12 +11,25 @@
         <div class="layout layout__content">
 
           <h1>
+            <div class="typing-static">You are in Robonomics network</div>
             <div class="typing-1">Welcome to Robonomics network</div>
-            <div class="typing-2">Building Dapps for IoT market</div>
-            <div class="typing-3">Contribute to economy of robots</div>
+            <div class="typing-2">Open-source solution for IoT</div>
+            <div class="typing-3">Join free IoT and robotics</div>
           </h1>
 
           <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.2 55.2" style="enable-background:new 0 0 55.2 55.2;" xml:space="preserve"><g><circle class="st0" cx="27.6" cy="27.6" r="27.1"/><g><g><line class="st0" x1="39.9" y1="34.8" x2="28" y2="14.2"/><line class="st0" x1="15.7" y1="35.6" x2="39.4" y2="35.6"/><line class="st0" x1="27.1" y1="14.2" x2="15.1" y2="34.7"/><polygon class="st0" points="27.5,21 21.3,31.8 33.8,31.8"/><polygon class="st0" points="27.5,28.5 21.3,31.8 33.8,31.8"/><circle class="st0" cx="14.7" cy="35.6" r="0.9"/><circle class="st0" cx="40.4" cy="35.6" r="0.9"/><path class="st0" d="M28.4,13.4c0,0.3-0.2,0.6-0.5,0.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9S28.4,12.9,28.4,13.4z"/><line class="st0" x1="27.5" y1="21.1" x2="27.5" y2="28.5"/></g></g></g></svg>
+
+          <!-- images left -->
+
+          <div class="banner__images banner__images--left">
+            <g-image src="~/assets/images/icons/banner-icons-left/circle.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/crystal.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/painting.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/robot-1.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/robots-2.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/text.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-left/column.svg"  aria-hidden="true"/>
+          </div>
 
           <div id="yoga-container">
             <svg version="1.1" id="yoga" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 104.2 117.4" style="enable-background:new 0 0 104.2 117.4;" xml:space="preserve"><g><path class="st0" d="M50.6,14c0,0-1.1-8.3,0-9.4s1.4-1.7,1.7,2.2c0.3,3.9-0.3,7.5-0.3,7.5L50.6,14z"/><path class="st1" d="M67.2,46.5c-0.6-1-4.7-2.9-5.2,1.7c-0.5,4,9.6,27.8,14.2,31c4.7,3.2,23.5-11.4,26.6-14.1c3.1-2.7,0.8-5-6.1-1c-6.9,3.9-13.4,12.8-17.5,8.4C75,68.1,67.8,47.5,67.2,46.5z"/><path class="st1" d="M37,47.3c0.6-1,4.7-2.9,5.2,1.7c0.5,4-9.6,27.8-14.2,31S4.5,68.6,1.5,65.9c-3.1-2.7-0.8-5,6.1-1s13.4,12.8,17.5,8.4C29.2,69,36.5,48.3,37,47.3z"/><path class="st2" d="M38,80.9c0,0-5.5-60.8,1.1-65.8c6.8-5.2,25-4.4,27.4,2.6c2.4,7,3.4,63.7,0.2,66.3C63.4,86.5,39.5,93.5,38,80.9z"/><path class="st1" d="M52.2,18.4c-2.8,0-11.9,1.5-12.4,5.2s-1.7,10.3-0.3,12.5c1.4,2.2,5.2-3.9,12.7-3.5c7.7,0.4,11.3,4.1,12.7,2.9c1.4-1.3,0.8-12.7-1.4-14C61.3,20.2,55,18.4,52.2,18.4z"/><g><path class="st1" d="M35.8,101.2c-2.8,0-5.2-1.6-5.3-3.7c-0.2-2.1,2.1-4,5-4.1c0.1,0,11.4-0.5,23.1-1.8c13.9-1.6,24.3-2.3,22.5-4.4s-20.4,2.4-32,4.3l-5.2,0.9c-2.9,0.5-21.9,2-22.6-0.1c-0.6-2.1,17.4-7,20.2-7.5l5.2-0.9c28.2-4.6,39.8-6.3,45-1.9c1.2,1.1,3,3.4,1,7.1c-1.8,3.2-7,7.2-31.7,10c-12.6,1.4-24.4,1.9-24.9,2C36,101.2,35.9,101.2,35.8,101.2z"/></g>
@@ -36,13 +49,40 @@
               <div></div>
             </div>
           </div>
+
+          <!-- images right -->
+          <div class="banner__images banner__images--right ">
+            <g-image src="~/assets/images/icons/banner-icons-right/cube.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/dron.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/factory.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/robot-3.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/robot-4.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/sign.svg"  aria-hidden="true"/>
+            <g-image src="~/assets/images/icons/banner-icons-right/polkadot.svg"  aria-hidden="true"/>
+          </div>
           
-
-
         </div>
 
         <div aria-hidden="true" id="banner-top"></div>
         <div aria-hidden="true" id="banner-bottom"></div>
+      </section>
+
+
+      <section class="section section__solid section__blue">
+        <hr />
+        <div class="layout layout__text animate-inside" v-in-viewport.once>
+          <h2>{{$ts('What is Robonomics network?')}}</h2>
+          <p class="hyphens">{{$ts('Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}</p>
+        </div>
+
+        <div class="layout layout__content layout__darkblue">
+          <Scheme/>
+          <div id="info-numbers">
+         </div>
+        </div>
+
+        <MovingNumbers/>
+
       </section>
 
       <section class="section__whitespace">
@@ -215,57 +255,328 @@ query {
       text-transform: none;
       letter-spacing: 0;
       position: relative;
+      z-index: 15;
   }
 
-  .typing-1, .typing-2, .typing-3 {
+  .typing-1, .typing-2, .typing-3, .typing-static {
     margin: 0 auto;
+    font-weight: 400;
+    font-size: 2rem;
     white-space: nowrap;
     overflow: hidden;
+    text-transform: uppercase;
     border-right: 3px solid #fff;
     opacity: 0;
     visibility: hidden;
   }
 
-  .typing-2, .typing-3 {
+  .typing-1, .typing-2, .typing-3, .typing-static {
     position: absolute;
-    top: 0;
+    top: 15%;
   }
 
   .typing-1 {
-    width: 29ch;
+    left: calc(50% - 29.5ch/2);
+    width: 29.5ch;
     animation: FadeIn 0.1s forwards, typing 2s steps(29), blinkLine .5s step-end infinite alternate, FadeOut 1s linear 3s forwards;
   }
-
   .typing-2 {
-    left: calc(50% - 29ch/2);
-    width: 29ch;
+    left: calc(50% - 27ch/2);
+    width: 28ch;
     animation: FadeIn 0.1s forwards 4s, typing 2s steps(29) 4s, blinkLine .5s step-end infinite alternate, FadeOut 1s linear 7s forwards;
   }
-
   .typing-3 {
-    left: calc(50% - 31ch/2);
-    width: 31ch;
-    animation: FadeIn 0.1s forwards 8s, typing 2s steps(31) 8s, blinkLine .5s step-end infinite alternate;
+    left: calc(50% - 26.3ch/2);
+    width: 26.3ch;
+    animation: FadeIn 0.1s forwards 8s, typing 2s steps(31) 8s, blinkLine .5s step-end infinite alternate, FadeOut 1s linear 10s forwards;
+  }
+
+  .typing-static {
+    left: calc(50% - 29.5ch/2);
+    width: 29.5ch;
+    animation: FadeIn 0.1s forwards 11s, typing 2s steps(31) 11s, blinkLine .5s step-end infinite alternate;
+  }
+  
+
+  .banner__images {
+    position: absolute;
+    top: 17%;
+    max-height: 630px;
+    height: 100%;
+    max-width: 394px;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .banner__images--left {
+    left: 5%;
+  }
+
+  .banner__images--left img {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    transform: scale(0);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    /* opacity: 0;
+    visibility: hidden; */
+  }
+
+  .banner__images--left img:first-child {
+    top: 0;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(2) {
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(3) {
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(4) {
+    left: 9%;
+    bottom: 0%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(5) {
+    top: -13%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(6) {
+    top: 20%;
+    left: 12%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+  }
+
+  .banner__images--left img:nth-of-type(7) {
+    top: 61%;
+    left: 29%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+  }
+
+  .banner__images--right {
+    right: 5%;
+  }
+
+    
+  .banner__images--right img {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
+    transform: scale(0);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+
+  .banner__images--right img:first-child {
+    top: 3%;
+    right: 5%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(2) {
+    top: 41%;
+    right: 31%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(3) {
+    bottom: 0;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(4) {
+    left: 23%;
+    bottom: 0%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(5) {
+    top: 58%;
+    left: 3%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.5s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(6) {
+    top: 14%;
+    right: 29%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1.3s forwards;
+  }
+
+  .banner__images--right img:nth-of-type(7) {
+    top: 10%;
+    right: 12%;
+    -webkit-animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+    animation: Scale 1.5s cubic-bezier(0.55, 0, 0.1, 1) 1s forwards;
+  }
+
+  #yoga-container {
+    z-index: 10;
+  }
+
+  #logo {
+    position: relative;
+    z-index: 10;
+  }
+
+  .section__blue {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+  }
+
+  .layout {
+    position: relative;
+    z-index: 10;
+  }
+
+  .layout__darkblue {
+    margin: 0;
+    margin-top: calc(var(--space)*2);
+    padding: 20px;
+    max-width: 100%;
+    /* background-color:rgb(39 66 207); */
+  }
+
+  .layout__darkblue .scheme {
+    margin: 0;
+  }
+ 
+  hr {
+    position: relative;
+    margin-top: 0;
+    z-index: 10;
+  }
+
+  .numbers {
+    left: 74%;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  @media screen and (max-width: 1260px) {
+
+    .banner__images--left {
+      left: 0;
+      top: 9%;
+    }
+
+    .banner__images--right {
+      right: 0;
+      top: 9%;
+    }
+
+    .banner__images--right img:nth-of-type(2) {
+      bottom: -5%
+    }
+
+    .banner__images--right img:nth-of-type(4) {
+      bottom: 1%
+    }
+
+    .banner__images--left img:nth-of-type(5) {
+      top: -7%
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+
+    .banner__images {
+      /* top: 42%; */
+      max-width: 235px;
+    }
+
+    .banner__images--left img:nth-of-type(2) {
+      top: 25%
+    }
+
+    .banner__images--left img:nth-of-type(3) {
+      bottom: 0;
+    }
+
+    .banner__images--left img:nth-of-type(4) {
+      left: 9%;
+      bottom: 0%;
+    }
+
+    .banner__images--left img:nth-of-type(5) {
+      top: 22%
+    }
+
+    .banner__images--left img:nth-of-type(6) {
+      top: 26%;
+    }
+
+    .banner__images--left img:nth-of-type(7) {
+      top: 61%;
+      left: -5%;
+    }
+
+    .banner__images--right img:nth-of-type(2) {
+      top: 50%;
+      right: 20%;
+    }
+
+    .banner__images--right img:nth-of-type(3) {
+      bottom: 12%;
+    }
+
+    .banner__images--right img:nth-of-type(7) {
+      top: 24%;
+    }
   }
 
   @media screen and (max-width: 720px) {
-    #banner h1 { font-size: calc(var(--base-font-size) * 1.5); }
+    /* #banner h1 { font-size: calc(var(--base-font-size) * 1.5); } */
+    .typing-1, .typing-2, .typing-3, .typing-static { font-size: calc(var(--base-font-size) * 1.5); }
+
   }
 
   @media screen and (max-width: 580px) {
-    #banner h1 { font-size: calc(var(--base-font-size) * 1.2); }
+    .typing-1, .typing-2, .typing-3, .typing-static { font-size: calc(var(--base-font-size) * 1.2); }
+    /* #banner h1 { font-size: calc(var(--base-font-size) * 1.2); } */
+    .banner__images {
+      display: none;
+    }
+
+    .numbers {
+      left: 44%;
+      z-index: 0;
+      opacity: 0.4;
+      display: none;
+    }
   }
 
   @media screen and (max-width: 475px) {
-    #banner h1 { font-size: calc(var(--base-font-size) * 1); }
+    /* #banner h1 { font-size: calc(var(--base-font-size) * 1); } */
 
-    .typing-1, .typing-2, .typing-3 {
+    .typing-1, .typing-2, .typing-3, .typing-static {
       border-right-width: 1px;
+      font-size: calc(var(--base-font-size) * 1);
     }
   }
 
   @media screen and (max-width: 400px) {
-    #banner h1 { font-size: calc(var(--base-font-size) * 0.8); }
+    .typing-1, .typing-2, .typing-3, .typing-static { font-size: calc(var(--base-font-size) * 0.8); }
+    /* #banner h1 { font-size: calc(var(--base-font-size) * 0.8); } */
   }
 
   #logo {
@@ -462,12 +773,16 @@ query {
 <script>
   import Navigation from '~/components/Navigation.vue'
   import MetaInfo from '~/components/MetaInfo.vue'
+  import Scheme from  '~/components/Scheme.vue'
+  import MovingNumbers from  '~/components/decor/MovingNumbers.vue'
 
   export default {
 
     components: {
       Navigation,
-      MetaInfo
+      MetaInfo,
+      Scheme,
+      MovingNumbers
     }
    
   }
