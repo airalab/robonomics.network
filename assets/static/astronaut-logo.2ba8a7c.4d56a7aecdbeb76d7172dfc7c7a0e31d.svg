@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108.303" height="105.407" viewBox="0 0 108.303 105.407" class="logo-robonomics">
+  <g id="Group_749" data-name="Group 749" transform="translate(-881.549 -402.425)">
+    <g id="Group_748" data-name="Group 748" transform="translate(881.549 402.425)">
+      <g class="inside-triangle" id="Group_747" data-name="Group 747" transform="translate(10.368 17.104)">
+        <path class="triangle-2"  id="Path_830" data-name="Path 830" d="M962.656,444.057v44.2L999.366,507.6Z" transform="translate(-925.947 -444.057)" fill="#b2c1f3"/>
+        <path id="Path_831" class="triangle-3" data-name="Path 831" d="M962.656,488.26,925.947,507.6h73.419Z" transform="translate(-925.947 -444.057)" fill="#213159"/>
+        <path class="triangle-1"  id="Path_832" data-name="Path 832" d="M962.656,444.057,925.947,507.6l36.774-19.343Z" transform="translate(-925.947 -444.057)" fill="#00bdff"/>
+      </g>
+      <path class="line"  id="Path_833" data-name="Path 833" d="M935.51,398.995l-48.9,94.531h97.807Z" transform="translate(-881.549 -393.557)" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="2"/>
+      <circle class="dot" id="Ellipse_88" data-name="Ellipse 88" cx="5.438" cy="5.438" r="5.438" transform="translate(0 94.531)" fill="#00bdff"/>
+      <circle class="dot" id="Ellipse_89" data-name="Ellipse 89" cx="5.438" cy="5.438" r="5.438" transform="translate(97.427 94.531)" fill="#00bdff"/>
+      <circle class="dot" id="Ellipse_90" data-name="Ellipse 90" cx="5.438" cy="5.438" r="5.438" transform="translate(48.591)" fill="#00bdff"/>
+    </g>
+  </g>
+</svg>
