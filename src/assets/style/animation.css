@@ -624,27 +624,7 @@
     100% { fill: var(--color-violet-mid); }
   }
 
-	@-o-keyframes signalAnimation 
-{
-  0% { opacity: 0.4 }
-  5% { opactiy: 1 }
-  6% { opactiy: 0.1 }
-  100% { opactiy: 0.1; }
-}
-@-moz-keyframes signalAnimation 
-{
-  0% { opacity: 0.4 }
-  5% { opactiy: 1 }
-  6% { opactiy: 0.1 }
-  100% { opactiy: 0.1; }
-}
-@-webkit-keyframes signalAnimation 
-{
-  0% { opacity: 0.4 }
-  5% { opactiy: 1 }
-  6% { opactiy: 0.1 }
-  100% { opactiy: 0.1; }
-}
+
 
 
 
