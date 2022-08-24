@@ -13514,8 +13514,8 @@
     \ \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0435 \u0432\u0430\u043A\u0430\u043D\
     \u0441\u0438\u0438."
   
-- alias: "ROBONOMICS WHITEPAPER 2022 welcome guide"
-  en: ROBONOMICS WHITEPAPER 2022 welcome guide
+- alias: "Robonomics Whitepaper 2022 welcome guide"
+  en: Robonomics Whitepaper 2022 welcome guide
   ru: "\u0413\u0430\u0439\u0434\u0020\u043f\u043e\u0020\u0052\u006f\u0062\u006f\u006e\u006f\u006d\u0069\u0063\u0073\u0020\u0057\u0068\u0069\u0074\u0065\u0020\u0050\u0061\u0070\u0065\u0072\u0020\u0032\u0030\u0032\u0032"
 - alias: We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...
   en: We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...
@@ -13564,8 +13564,8 @@
   en: Open questions of teleology and Mises' work
   ru: "\u041e\u0442\u043a\u0440\u044b\u0442\u044b\u0435\u0020\u0432\u043e\u043f\u0440\u043e\u0441\u044b\u0020\u0442\u0435\u043b\u0435\u043e\u043b\u043e\u0433\u0438\u0438\u0020\u0438\u0020\u0440\u0430\u0431\u043e\u0442\u0430\u0020\u041c\u0438\u0437\u0435\u0441\u0430\u000d"
 - alias: Read chapter 1 on the Robonomics website
-  en: Read chapter 1 on the Robonomics website
-  ru: "\u0427\u0418\u0422\u0410\u0422\u042c\u0020\u0413\u041b\u0410\u0412\u0423\u0020\u0031\u0020\u041d\u0410\u0020\u0421\u0410\u0419\u0422\u0415\u0020\u0420\u041e\u0411\u041e\u041d\u041e\u041c\u0418\u041a\u0418"
+  en: Read chapter 1
+  ru: "\u0427\u0418\u0422\u0410\u0422\u042c\u0020\u0413\u041b\u0410\u0412\u0423\u0020\u0031"
 - alias: "Chapter 2. ROBONOMICS ARCHITECTURE"
   en: Chapter 2. ROBONOMICS ARCHITECTURE
   ru: "\u0413\u041b\u0410\u0412\u0410\u0020\u0032\u002e\u0020\u0410\u0420\u0425\u0418\u0422\u0415\u041a\u0422\u0423\u0420\u0410\u0020\u0420\u041e\u0411\u041e\u041d\u041e\u041c\u0418\u041a\u0418\u000d"
@@ -13612,8 +13612,8 @@
   en: A simple representation of Robonomics architecture
   ru: "\u041f\u0440\u043e\u0441\u0442\u043e\u0435\u0020\u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435\u0020\u0430\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u0443\u0440\u044b\u0020\u0420\u043e\u0431\u043e\u043d\u043e\u043c\u0438\u043a\u0438\u000d\u000d"
 - alias: Read chapter 2 on the Robonomics website
-  en: Read chapter 2 on the Robonomics website
-  ru: "\u0427\u0418\u0422\u0410\u0422\u042c\u0020\u0413\u041b\u0410\u0412\u0423\u0020\u0032\u0020\u041d\u0410\u0020\u0421\u0410\u0419\u0422\u0415\u0020\u0420\u041e\u0411\u041e\u041d\u041e\u041c\u0418\u041a\u0418\u000d\u000d"
+  en: Read chapter 2 
+  ru: "\u0427\u0418\u0422\u0410\u0422\u042c\u0020\u0413\u041b\u0410\u0412\u0423\u0020\u0032"
 - alias: We continue to update the white paper of Robonomics
   en: We continue to update the white paper of Robonomics
   ru: "\u041c\u044b\u0020\u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0430\u0435\u043c\u0020\u0434\u043e\u043f\u043e\u043b\u043d\u044f\u0442\u044c\u0020\u0431\u0435\u043b\u0443\u044e\u0020\u0431\u0443\u043c\u0430\u0433\u0443\u0020\u0420\u043e\u0431\u043e\u043d\u043e\u043c\u0438\u043a\u0438\u000d\u000d"
