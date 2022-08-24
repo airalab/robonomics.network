@@ -95,7 +95,7 @@
   .spot > img {
     display: block;
     position: absolute;
-    animation-delay: 1.5s;
+    animation-delay: 3s;
     animation-duration: 0.6s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
