@@ -6,6 +6,11 @@
   component: './src/pages/vision.vue'
   typename: 'page'
 
+
+- path: '/white-paper-2022/'
+  component: './src/pages/white-paper-2022.vue'
+  typename: 'page'
+
 - path: '/architecture/'
   component: './src/pages/architecture.vue'
   typename: 'page'
