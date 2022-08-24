@@ -49,7 +49,7 @@
 
 - path: '/jobs/'
   component: './src/pages/jobs.vue'
-  typename: 'page'
+  typename: 'component'
 
 - path: '/timeline/'
   component: './src/pages/timeline.vue'
