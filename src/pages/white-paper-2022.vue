@@ -25,7 +25,7 @@
           <div id="parallax-astronaut">
             <div data-depth="0.2" class="parallax-astronaut__wrapper-logo">
               <!-- <g-image  src="~/assets/images/white-paper-2022/astronaut-logo.svg"  alt="astronaut-logo"/> -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.45 100.44" width="100" height="100"><g id="Layer_2" data-name="Layer 2"><g><polygon class="cls-1" points="55.1 35.84 55.1 67.2 80.03 80.93 55.1 35.84"/><polygon class="cls-2" points="55.1 67.2 30.16 80.93 80.03 80.93 55.1 67.2"/><polygon class="cls-3" points="55.1 35.84 30.16 80.93 55.14 67.2 55.1 35.84"/><polygon class="cls-4" points="55.1 3.86 3.44 96.58 106.76 96.58 55.1 3.86"/><ellipse class="cls-3" cx="3.69" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-3" cx="106.76" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-3" cx="55.1" cy="3.86" rx="3.69" ry="3.86"/></g></g>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.45 100.44" width="100" height="100"><g id="Layer_2" data-name="Layer 2"><g><polygon class="cls-1 triangle-1" points="55.1 35.84 55.1 67.2 80.03 80.93 55.1 35.84"/><polygon class="cls-2 triangle-2" points="55.1 67.2 30.16 80.93 80.03 80.93 55.1 67.2"/><polygon class="cls-3 triangle-3" points="55.1 35.84 30.16 80.93 55.14 67.2 55.1 35.84"/><polygon class="cls-4" points="55.1 3.86 3.44 96.58 106.76 96.58 55.1 3.86"/><ellipse class="cls-5" cx="3.69" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-5" cx="106.76" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-5" cx="55.1" cy="3.86" rx="3.69" ry="3.86"/></g></g>
               </svg>
             </div>
             <div data-depth="0.2" class="parallax-astronaut__wrapper">
@@ -508,29 +508,20 @@ export default {
 
 	}
 
-	.logo-robonomics .triangle-1
-		{
-			animation: 5s logo-triangle-1 0.5s linear infinite;
-		}
+    .cls-1{fill:#b2c1f3; animation: 5s logo-triangle-1 0.5s linear infinite;}
+    .cls-2{fill:#213159; 	animation: 5s logo-triangle-2 0.5s linear infinite;}
+    .cls-3{fill:#00bdff; animation: 5s logo-triangle-3 0.5s linear infinite;}
 
-	.logo-robonomics .triangle-2
-		{
-			animation: 5s logo-triangle-2 0.5s linear infinite;
-		}
+    .cls-4 {
+      fill: transparent;
+      stroke: #03A5ED;
+      stroke-miterlimit:10;
 
-	.logo-robonomics .triangle-3
-		{
-			animation: 5s logo-triangle-3 0.5s linear infinite;
-		}
-
-    .logo-robonomics .inside-triangle {
-      width: 40px;
+      stroke-dasharray: 700;
+      stroke-dashoffset: 700;
+      animation: 1s DrawSvgPath 1s ease-in-out forwards; 
     }
-
-    .cls-1{fill:#b2c1f3;}
-    .cls-2{fill:#213159;}
-    .cls-3{fill:#00bdff;}
-    .cls-4{fill:none;stroke:#00bdff;stroke-miterlimit:10;stroke-width:2px;}
+    .cls-5 {fill:#00bdff; opacity: 0; animation: 3s FadeIn 1s ease forwards;}
 
   .yellow-robot {
     position: absolute;
