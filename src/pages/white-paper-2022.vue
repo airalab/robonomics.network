@@ -9,7 +9,7 @@
 
       <!-- main banner -->
       <section class="wp__banner page-banner section section__solid">
-          <h1>{{$ts(`ROBONOMICS WHITEPAPER 2022 welcome guide`)}}</h1>
+          <h1>{{$ts(`Robonomics Whitepaper 2022 welcome guide`)}}</h1>
 
         <div class="small-colony">
           <g-image src="~/assets/images/white-paper-2022/small-colony.svg"  alt="small-colone"/>
@@ -353,7 +353,6 @@ export default {
 
 
   .chapter__subtitle {
-    margin-bottom: 0;
     font-size: 1.2rem;
     text-transform: none;
     /* white-space: nowrap; */
@@ -402,6 +401,12 @@ export default {
 
   .button {
     padding:  1.5rem 1.8rem;
+    box-shadow: 6px 6px 0 var(--color-dark);
+  }
+
+  .button:hover {
+    --b-color-background: var(--white-button-hover);
+    background-color: var(--b-color-background);
   }
 
   hr {
@@ -421,7 +426,7 @@ export default {
     content: '';
     position: absolute;
     width: 100%;
-    height: 15vh;
+    height: 114px;
     left: 0;
     bottom: -10px;
     background-image: url('../assets/images/white-paper-2022/orange-bg.png');
@@ -442,7 +447,7 @@ export default {
   .big-colony {
     position: absolute;
     left: 0;
-    bottom: 7vh;
+    bottom: 60px;
     opacity: 0;
     animation: FadeIn 3s forwards linear;
   }
@@ -450,7 +455,7 @@ export default {
   .small-colony {
     position: absolute;
     right: 3%;
-    bottom: 7vh;
+    bottom: 75px;
     opacity: 0;
     animation: FadeIn 3s forwards 0.2s linear;
   }
@@ -458,7 +463,7 @@ export default {
   .bushes {
     position: absolute;
     right: 2%;
-    bottom: 11vh;
+    bottom: 78px;
     z-index: 10;
     opacity: 0;
     animation: FadeIn 3s forwards 0.4s linear;
@@ -538,8 +543,8 @@ export default {
     position:absolute;
     top: -50px;
     left: 51%;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-top: 0.25rem;
     
     -ms-transform:rotate(-45deg) translate(-100px);
@@ -549,102 +554,71 @@ export default {
      transform:rotate(-45deg) translate(-100px);
    }
   .yellow-robot-antenna .circle {
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
     display:block;
     width:100%;
     height:100%;
-    font-size: 1rem;
+    font-size: 0.5rem;
     position:absolute;
     bottom:0;
     left:0;
-    border-color: #fad109;
+    border-color: var(--color-dark);
     border-style:solid;
-    border-width:1em 1em 0 0 ;
+    border-width:0.8em 0.8em 0 0 ;
     -webkit-border-radius:0 100% 0 0;
     border-radius:0 100% 0 0;
     
     opacity:0;
-    -o-animation: signalAnimation  3s infinite;
-    -moz-animation: signalAnimation  3s infinite;
-    -webkit-animation: signalAnimation  3s infinite;
-    animation: signalAnimation  3s infinite;
-    
+    -webkit-animation: FadeIn 2s var(--animation-bump)  forwards;
+    animation: FadeIn 2s var(--animation-bump)  forwards;
 }
 
   .yellow-robot-antenna .circle.first {
-      -o-animation-delay:800ms;
-      -moz-animation-delay:800ms;
-      -webkit-animation-delay:800ms;
-      animation-delay:800ms;
+      height: 7em;
+      width: 7em;
+      -webkit-animation-delay:1200ms;
+      animation-delay:1200ms;
   }
 
   .yellow-robot-antenna .circle.second {
       width:5em;
       height:5em;
-      -o-animation-delay:400ms;
-      -moz-animation-delay:400ms;
-      -webkit-animation-delay:400ms;
-      animation-delay:400ms;
+      -webkit-animation-delay:800ms;
+      animation-delay:800ms;
   }
 
     .yellow-robot-antenna .circle.third {
       width: 3em;
       height: 3em;
+      -webkit-animation-delay:400ms;
+      animation-delay:400ms;
     }
 
     .yellow-robot-antenna .circle.fourth {
       width: 1em;
       height: 1em;
-      background-color: #fad109;
-      -o-animation-delay:1000ms;
-      -moz-animation-delay:1000ms;
-      -webkit-animation-delay:1000ms;
-      animation-delay:1000ms;
+      background-color: var(--color-dark);
     }
 
-  .yellow-robot-antenna .circle {
-    opacity: 0;
-    animation: FadeIn 2s linear;
-    -webkit-animation: FadeIn 2s linear;
-  }
 
-  .yellow-robot-antenna .line-1 {
-    animation: FadeIn 2s  0.7s linear;
-    -webkit-animation: FadeIn 2s  0.7s linear;
-  }
-
-  .yellow-robot-antenna .line-2 {
-    opacity: 0;
-    animation: FadeIn 2s 0.9s linear;
-    -webkit-animation: FadeIn 2s 0.9s linear;
-  }
-
-  .yellow-robot-antenna .line-3 {
-    opacity: 0;
-    animation: FadeIn 2s 1.2s linear;
-    -webkit-animation: FadeIn 2s  1.2s linear;
-  }
-
-  .small-robot {
+  .small-robot__wrapper {
     position: absolute;
     left: 20%;
-    bottom: calc(10% - 6px);
+    /* bottom: calc(14% - 6px); */
+    bottom: 84px;
     z-index: 15;
     transform: translateX(-25vw);
     animation: robotMove 25s infinite linear 1.5s;
     -webkit-animation: robotMove 25s infinite linear 1.5s;
-    
   }
+
 
   .small-robot-wheels {
     position: absolute;
-    left: 20.2%;
-    bottom: calc(10% - 10px);
+    bottom: calc(10% - 12px);
     z-index: 15;
-    transform: translateX(-25vw);
-    animation: robotMove 25s infinite linear 1.5s;
-    -webkit-animation: robotMove 25s infinite linear 1.5s;
+    /* transform: translateX(-25vw); */
+    /* animation: robotMove 25s infinite linear 1.5s;
+    -webkit-animation: robotMove 25s infinite linear 1.5s; */
   }
 
   .small-robot-antenna {
@@ -652,9 +626,9 @@ export default {
     left: calc(20% + 20px);
     bottom: calc(10% + 61px);
     z-index: 16;
-    transform: translateX(-25vw);
+    /* transform: translateX(-25vw);
     animation: robotMove 25s infinite linear 1.5s;
-    -webkit-animation: robotMove 25s infinite linear 1.5s;
+    -webkit-animation: robotMove 25s infinite linear 1.5s; */
   }
 
   .small-robot-antenna .circle {
