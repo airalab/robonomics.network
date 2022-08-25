@@ -19,7 +19,7 @@
     "@vue/composition-api": "^1.4.3",
     "axios": "^0.24.0",
     "gridsome": "^0.7.23",
-    "gridsome-plugin-google-sheets-post": "^1.0.3",
+    "gridsome-plugin-google-sheets-post": "^2.0.1",
     "gridsome-plugin-translateit": "^1.0.9",
     "gridsome-source-github-api": "^0.2.0",
     "parallax-js": "^3.1.0",

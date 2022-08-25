@@ -11,6 +11,10 @@ import '~/assets/style/variables.css'
 import Default from '~/layouts/Default.vue'
 import Vue from 'vue'
 
+import Contacts from '~/components/Contacts.vue';
+
+
+
 // directive for animation in view
 import inViewportDirective from 'vue-in-viewport-directive'
 Vue.directive('in-viewport', inViewportDirective)
@@ -45,5 +49,6 @@ export default function (Vue, { router, head, isClient }) {
   }
   // Set default layout as a global component
   Vue.component('layout', Default)
+  Vue.component('Contacts', Contacts)
   
 }

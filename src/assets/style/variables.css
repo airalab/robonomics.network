@@ -58,6 +58,7 @@ body {
 
 	--color-link: var(--color-blue);
 	--color-link-hover: var(--color-purple-mid);
+	--color-link-contacts:#75FBFD;
 
 	--link-color-rgba: #03a7ed93;
 	--color-green-rgba: #5fce0581;
