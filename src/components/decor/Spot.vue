@@ -27,47 +27,49 @@
       transform: translateY(0) rotate(-20deg)
     }
     to {
-      transform: translateY(-60px) rotate(-30deg)
+      transform: translateY(-80px) rotate(-50deg)
     }
   }
   @keyframes SpotLeg1Bottom {
     from {
-      transform: translateY(0) rotate(6deg)
+      transform: translateY(0) rotate(6deg) translateX(0)
     }
     to {
-      transform: translateY(-40px) rotate(30deg)
+      transform: translateY(-65px) rotate(50deg) translateX(66px)
     }
   }
   @keyframes SpotLeg2Top {
     from {
-      transform: translateY(0) rotate(-14deg)
+      transform: translateY(0) rotate(-14deg) translateX(0) 
     }
     to {
-      transform: translateY(-40px) rotate(-20deg)
+      transform: rotate(-40deg) translateX(91px) translateY(10px);
     }
   }
+  
+
   @keyframes SpotLeg2Bottom {
     from {
-      transform: translateY(0) rotate(9deg)
+      transform: translateY(0) rotate(9deg) translateX(0)
     }
     to {
-      transform: translateY(-30px) rotate(28deg)
+      transform: translateY(-110px) rotate(48deg) translateX(150px)
     }
   }
    @keyframes SpotLeg3Top {
     from {
-      transform: translateY(0) rotate(-17deg)
+      transform: translateY(0) rotate(-17deg) translateX(0)
     }
     to {
-      transform: translateY(-35px) rotate(-12deg)
+      transform: translateY(-55px) rotate(-32deg) translateX(-36px)
     }
   }
   @keyframes SpotLeg3Bottom {
     from {
-      transform: translateY(0) rotate(9deg)
+      transform: translateY(0) rotate(9deg) translateX(0)
     }
     to {
-      transform: translateY(-50px) rotate(40deg)
+      transform: translateY(10px) rotate(60deg) translateX(-10px)
     }
   }
   @keyframes SpotLeg4Top {
@@ -75,15 +77,15 @@
       transform: translateY(0) rotate(-20deg)
     }
     to {
-      transform: translateY(-60px) rotate(-30deg)
+      transform: translateY(-80px) rotate(-50deg)
     }
   }
   @keyframes SpotLeg4Bottom {
     from {
-      transform: translateY(0) rotate(11deg)
+      transform: translateY(0) rotate(11deg) translateX(0px)
     }
     to {
-      transform: translateY(-45px) rotate(35deg)
+      transform: translateY(-59px) rotate(55deg) translateX(67px)
     }
   }
   .spot {
@@ -122,8 +124,8 @@
   }
   .spot-leg1-bottom {
     width: 151px;
-    bottom: 28px;
-    left: -35px;
+    bottom: 28px; 
+    left: -35px; 
     transform-origin: 0 0;
     transform: rotate(6deg);
     z-index: 3;
@@ -144,7 +146,7 @@
   }
   .spot-leg2-bottom {
     width: 142.5px;
-    bottom: 46px;
+    bottom: 46px; 
     left: -37px;
     transform-origin: 0 0;
     transform: rotate(9deg);
@@ -156,7 +158,7 @@
   .spot-leg3-top {
     width: 143px;
     bottom: 80px;
-    left: 186px;
+    left: 186px; 
     transform-origin: 100% 100%;
     transform: rotate(-17deg);
     z-index: 0;
@@ -188,8 +190,8 @@
   }
   .spot-leg4-bottom {
     width: 153.5px;
-    bottom: 28px;
-    left: 188px;
+    bottom: 28px; 
+    left: 188px; 
     transform-origin: 0 0;
     transform: rotate(11deg);
     z-index: 1;

@@ -3,6 +3,8 @@
 
     <MetaInfo
       :pageTitle = "$ts('Whitepaper 2022 page title')"
+      :pageDescription = "$ts('Whitepaper 2022 page description')"
+      :pageImage = "'/website_cover_white_paper_2022.jpg'"
     />
 
     <div class="page wp-page">
@@ -89,9 +91,12 @@
       <!-- first chapter section -->
       <section class="chapter__section section__solid section section__blue animate-inside in-viewport below-viewport" v-in-viewport.once>
         <div class="container--left chapter__container">
-          <div class="first-chapter__text chapter__text hyphens">
-            <h2 class="first-chapter__title chapter__title">{{$ts(`Chapter 1. AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS`)}}</h2>
-            <p class="first-chapter__descr chapter__descr">
+          <div class="first-chapter__text chapter__text">
+            <h2 class="first-chapter__title chapter__title"> 
+              <span class="chapter-accent">{{$ts(`Chapter 1.`)}}</span>
+              {{$ts(`AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS`)}}
+            </h2>
+            <p class="first-chapter__descr chapter__descr hyphens">
               {{$ts(`We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.`)}} 
             </p>
             <h3 class="first-chapter__subtitle chapter__subtitle hyphens">{{$ts(`In this chapter you will learn`)}}:</h3>
@@ -145,16 +150,19 @@
       <!-- second chapter -->
       <section class="second-chapter__section chapter__section section__solid animate-inside in-viewport below-viewport" v-in-viewport.once>
         <div class="container--left chapter__container">
-          <div class="second-chapter__text chapter__text hyphens">
-            <h2 class="second-chapter__title chapter__title">{{$ts(`Chapter 2. ROBONOMICS ARCHITECTURE`)}}</h2>
-            <p class="second-chapter__descr chapter__descr">
+          <div class="second-chapter__text chapter__text">
+            <h2 class="second-chapter__title chapter__title"> 
+              <span class="chapter-accent">{{$ts(`Chapter 2.`)}}</span>
+              {{$ts(`ROBONOMICS ARCHITECTURE wp`)}}
+            </h2>
+            <p class="second-chapter__descr chapter__descr hyphens">
               {{$ts(`In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.`)}} 
             </p>
             <h3 class="second-chapter__subtitle chapter__subtitle hyphens">{{$ts(`In this chapter you will learn`)}}:</h3>
             <ol class="second-chapter__list chapter__list">
               <li class="second-chapter__item chapter__item">
                 {{$ts(`Overview of the state of the Internet of Things (IoT)`)}}
-                <ul class="chapter__sub-list">
+                <ul class="chapter__sub-list chapter__list">
                   <li class="second-chapter__item chapter__item">
                     {{$ts(`Classification of IoT devices`)}}
                   </li>
@@ -275,6 +283,8 @@
         </div>
       </section>
 
+      <Contacts/>
+
     </div>
 
   </layout>
@@ -290,13 +300,15 @@ query {
 
 <script>
   import Parallax from 'parallax-js'
+import Contacts from '../components/Contacts.vue'
 export default {
 
   components: {
     Button: () => import("~/components/Button.vue"),
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     Spot: () => import("~/components/decor/Spot.vue"),
-  },
+    Contacts
+},
 
   mounted() {
     const scene = document.getElementById('parallax-astronaut');
@@ -346,14 +358,12 @@ export default {
   }
 
   .chapter__title {
-    font-size: 1.2rem;
     /* white-space: nowrap; */
     text-align: left;
   }
 
 
   .chapter__subtitle {
-    font-size: 1.2rem;
     text-transform: none;
     /* white-space: nowrap; */
   }
@@ -361,10 +371,10 @@ export default {
   .chapter__list {
     margin-left: 0;
     list-style-type: '- ' ;
+    text-align: left;
   }
 
   .chapter__descr {
-    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -376,6 +386,11 @@ export default {
 
    .chapter__text {
     width: calc(50% - 9rem);
+    text-align: left;
+   }
+
+   .chapter-accent {
+    display: block;
    }
 
    .chapter__images {
@@ -388,10 +403,10 @@ export default {
     overflow: hidden;
    }
 
-   .chapter__sub-list {
+   /* .chapter__sub-list {
     list-style: disc;
     margin-left: 0;
-   }
+   } */
 
   .chapter__item {
     margin-bottom: 0;
@@ -490,23 +505,6 @@ export default {
     left: 5px  !important;
     z-index: 30;
   }
-
-  .logo-robonomics .dot {
-    opacity: 0;
-		animation: 3s FadeIn 1s ease forwards;
-
-	}
-
-	.logo-robonomics .line {
-		fill: transparent;
-		stroke: #03A5ED;
-		stroke-miterlimit:10;
-
-		stroke-dasharray: 700;
-		stroke-dashoffset: 700;
-		animation: 1s DrawSvgPath 1s ease-in-out forwards; 
-
-	}
 
     .cls-1{fill:#b2c1f3; animation: 5s logo-triangle-1 0.5s linear infinite;}
     .cls-2{fill:#213159; 	animation: 5s logo-triangle-2 0.5s linear infinite;}
@@ -695,10 +693,16 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family:  var(--font-family-code);
   }
 
   .wp-introduction__text {
+    line-height: 1.7;
     font-family:  var(--font-family-code);
+   }
+
+   .first-chapter__list {
+    padding-left: 12px;
    }
 
    .first-chapter__images img {
@@ -750,7 +754,7 @@ export default {
 
   .second-chapter__list {
     list-style: decimal;
-    padding-left: 18px;
+    padding-left: 22px;
   }
 
   .coin-animation {

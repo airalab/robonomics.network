@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent="onSubmit" :class="'status-'+status">
         <div class="content">
-            <div><input type="email" placeholder="Your email" v-model="email" name="email" required class="block"/></div>
+            <div><input type="email" placeholder="Your email" v-model="email" name="email" required  data-gsp-name="email" :data-gsp-data="email"  class="block"/></div>
             <label class="label">
                 <input type="checkbox" class="big" required  name="agreement" />
                 <span class="text-small">{{$ts('I agree to receive email communications from Robonomics')}}</span>
@@ -69,7 +69,8 @@ export default {
       return {
         email: null,
         status: 'none',
-        //  recaptchaSitekey: "6LeWbWQUAAAAAPkpf_6AokhGBcvnOexOpbARwk6Z",
+        gscript: process.env.GRIDSOME_FORM_SCRIPT,
+        //  recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA,
         recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
       }
     },
@@ -83,7 +84,7 @@ export default {
         this.$refs.invisibleRecaptcha.execute()
       },
 
-      onVerify: function (response) {
+      onVerify: async function (response) {
         console.log('onVerify')
         if(response) {
           this.status = 'wait'
@@ -91,11 +92,12 @@ export default {
             if(this.email){
               request = 'email=' + encodeURIComponent(this.email)
             }
-            fetch('https://script.google.com/macros/s/AKfycbxpBhEciQcoPzDy0VQRhVH_I9NBlwUP3lvjD0GfnRYbv2xlT_ZKx3StV6oqPEFHTJESVg/exec', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-              body: request
-            })
+            await this.$gspPostForm(this.gscript, request)
+            // fetch('https://script.google.com/macros/s/AKfycbxpBhEciQcoPzDy0VQRhVH_I9NBlwUP3lvjD0GfnRYbv2xlT_ZKx3StV6oqPEFHTJESVg/exec', {
+            //   method: 'POST',
+            //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            //   body: request
+            // })
             .then(() => this.status = 'load')
             .catch(error => this.status = 'error')
           }
