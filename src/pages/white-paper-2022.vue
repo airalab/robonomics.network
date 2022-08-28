@@ -283,7 +283,7 @@
         </div>
       </section>
 
-      <Contacts/>
+      <!-- <Contacts/> -->
 
     </div>
 
@@ -523,8 +523,8 @@ export default {
 
   .yellow-robot {
     position: absolute;
-    left: 5%;
-    bottom: 12px;
+    left: calc(50% - 500px);
+    bottom: 39px;
     z-index: 18;
   }
 
@@ -535,13 +535,10 @@ export default {
     width: 30px;
     height: 30px;
     margin-top: 0.25rem;
-    
-    -ms-transform:rotate(-45deg) translate(-100px);
-    -moz-transform:rotate(-45deg) translate(-100px);
-    -o-transform:rotate(-45deg) translate(-100px);
-    -webkit-transform:rotate(-45deg) translate(-100px);
-     transform:rotate(-45deg) translate(-100px);
+
+    transform: rotate(-45deg) translate(-100px);
    }
+
   .yellow-robot-antenna .circle {
     display:block;
     width:100%;
@@ -556,29 +553,25 @@ export default {
     -webkit-border-radius:0 100% 0 0;
     border-radius:0 100% 0 0;
     
-    opacity:0;
-    -webkit-animation: FadeIn 2s var(--animation-bump)  forwards;
-    animation: FadeIn 2s var(--animation-bump)  forwards;
+    opacity: 0;
+    animation: 2s FadeIn 5.6s var(--animation-bump) infinite;
 }
 
   .yellow-robot-antenna .circle.first {
       height: 7em;
       width: 7em;
-      -webkit-animation-delay:1200ms;
-      animation-delay:1200ms;
+      animation-delay: 1200ms;
   }
 
   .yellow-robot-antenna .circle.second {
       width:5em;
       height:5em;
-      -webkit-animation-delay:800ms;
-      animation-delay:800ms;
+      animation-delay: 800ms;
   }
 
     .yellow-robot-antenna .circle.third {
       width: 3em;
       height: 3em;
-      -webkit-animation-delay:400ms;
       animation-delay:400ms;
     }
 
@@ -591,13 +584,49 @@ export default {
 
   .small-robot__wrapper {
     position: absolute;
-    left: 20%;
+    /* left: 20%; */
+    left: calc(50% + 300px);
     /* bottom: calc(14% - 6px); */
-    bottom: 84px;
+    bottom: 94px;
     z-index: 15;
-    transform: translateX(-25vw);
-    animation: robotMove 25s infinite linear 1.5s;
-    -webkit-animation: robotMove 25s infinite linear 1.5s;
+    /* transform: translateX(-25vw); */
+    /* animation: robotMove 25s infinite linear 1.5s; */
+  }
+
+  @keyframes robotMove {
+    0% {
+      transform: translateX(-25vw);
+    }
+
+    10% {
+      transform: translateX(-10vw);
+    }
+
+
+    20% {
+      transform: translateX(5vw);
+    }
+
+    40% {
+      transform: translateX(15vw);
+      
+    }
+
+    50% {
+      transform: translateX(25vw);
+    }
+
+    60% {
+      transform: translateX(50vw);
+    }
+
+    80% {
+      transform: translateX(80vw);
+    }
+
+    100% {
+      transform: translateX(100vw);
+    }
   }
 
 
@@ -643,10 +672,9 @@ export default {
     -webkit-animation: FadeOut 2s infinite 1.2s linear;
   }
 
-  .small-robot-wheel {
+  /* .small-robot-wheel {
     animation: spin 1s infinite linear;
-    -webkit-animation:  spin 1s infinite linear;
-  }
+  } */
 
   .logos {
     position: absolute;

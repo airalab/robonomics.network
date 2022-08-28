@@ -27,7 +27,7 @@
       transform: translateY(0) rotate(-20deg)
     }
     to {
-      transform: translateY(-80px) rotate(-50deg)
+      transform: translateY(-63px) rotate(-36deg)
     }
   }
   @keyframes SpotLeg1Bottom {
@@ -35,7 +35,7 @@
       transform: translateY(0) rotate(6deg) translateX(0)
     }
     to {
-      transform: translateY(-65px) rotate(50deg) translateX(66px)
+      transform: translateY(-65px) rotate(49deg) translateX(35px)
     }
   }
   @keyframes SpotLeg2Top {
@@ -43,7 +43,7 @@
       transform: translateY(0) rotate(-14deg) translateX(0) 
     }
     to {
-      transform: rotate(-40deg) translateX(91px) translateY(10px);
+      transform: rotate(-61deg) translateX(91px) translateY(10px);
     }
   }
   
@@ -53,7 +53,7 @@
       transform: translateY(0) rotate(9deg) translateX(0)
     }
     to {
-      transform: translateY(-110px) rotate(48deg) translateX(150px)
+      transform: translateY(-56px) rotate(28deg) translateX(103px)
     }
   }
    @keyframes SpotLeg3Top {
@@ -61,7 +61,7 @@
       transform: translateY(0) rotate(-17deg) translateX(0)
     }
     to {
-      transform: translateY(-55px) rotate(-32deg) translateX(-36px)
+      transform: translateY(-55px) rotate(-23deg) translateX(-36px)
     }
   }
   @keyframes SpotLeg3Bottom {
@@ -85,7 +85,7 @@
       transform: translateY(0) rotate(11deg) translateX(0px)
     }
     to {
-      transform: translateY(-59px) rotate(55deg) translateX(67px)
+      transform: translateY(-26px) rotate(30deg) translateX(44px)
     }
   }
   .spot {
@@ -125,7 +125,7 @@
   .spot-leg1-bottom {
     width: 151px;
     bottom: 28px; 
-    left: -35px; 
+    left: -43px; 
     transform-origin: 0 0;
     transform: rotate(6deg);
     z-index: 3;
@@ -168,8 +168,8 @@
   }
   .spot-leg3-bottom {
     width: 142.5px;
-    bottom: 35px;
-    left: 188px;
+    bottom: 74px;
+    left: 173px;
     transform-origin: 0 0;
     transform: rotate(9deg);
     z-index: 1;
@@ -179,8 +179,8 @@
   }
   .spot-leg4-top {
     width: 158px;
-    bottom: 80px;
-    left: 166px;
+    bottom: 68px;
+    left: 174px;
     transform-origin: 100% 100%;
     transform: rotate(-20deg);
     z-index: 4;
