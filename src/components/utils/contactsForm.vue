@@ -122,7 +122,6 @@ export default {
 <style scoped>
   form {
     position: relative;
-    padding: 20px;
     font-family: var(--font-family-code);
   }
 

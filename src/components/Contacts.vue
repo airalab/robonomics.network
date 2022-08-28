@@ -336,13 +336,14 @@ export default {
     opacity: 0;
     visibility: hidden;
     transform: translateX(200px);
+    transform-origin: 100% 50%;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out, visibility 1s ease-in-out;
   }
 
   .form.showForm {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50px) translateY(50px);
+    transform: translateX(-50px);
   }
 
   @media screen and (max-width: 1400px) {
