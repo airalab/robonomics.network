@@ -545,41 +545,6 @@
 	}
 }
 
-@keyframes robotMove {
-	0% {
-		transform: translateX(-25vw);
-	}
-
-	10% {
-		transform: translateX(-10vw);
-	}
-
-
-	20% {
-		transform: translateX(5vw);
-	}
-
-	40% {
-		transform: translateX(15vw);
-		
-	}
-
-	50% {
-		transform: translateX(25vw);
-	}
-
-	60% {
-		transform: translateX(50vw);
-	}
-
-	80% {
-		transform: translateX(80vw);
-	}
-
-	100% {
-		transform: translateX(100vw);
-	}
-}
 
 @keyframes fromColorToBW {
 	from {
@@ -623,6 +588,7 @@
     75% { fill: var(--color-violet-dark); }
     100% { fill: var(--color-violet-mid); }
   }
+
 
 
 
