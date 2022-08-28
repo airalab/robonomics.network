@@ -3,6 +3,8 @@
 
     <MetaInfo
       :pageTitle = "$ts('Whitepaper 2022 page title')"
+      :pageDescription = "$ts('Whitepaper 2022 page description')"
+      :pageImage = "'/website_cover_white_paper_2022.jpg'"
     />
 
     <div class="page wp-page">
@@ -25,7 +27,7 @@
           <div id="parallax-astronaut">
             <div data-depth="0.2" class="parallax-astronaut__wrapper-logo">
               <!-- <g-image  src="~/assets/images/white-paper-2022/astronaut-logo.svg"  alt="astronaut-logo"/> -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.45 100.44" width="100" height="100"><g id="Layer_2" data-name="Layer 2"><g><polygon class="cls-1" points="55.1 35.84 55.1 67.2 80.03 80.93 55.1 35.84"/><polygon class="cls-2" points="55.1 67.2 30.16 80.93 80.03 80.93 55.1 67.2"/><polygon class="cls-3" points="55.1 35.84 30.16 80.93 55.14 67.2 55.1 35.84"/><polygon class="cls-4" points="55.1 3.86 3.44 96.58 106.76 96.58 55.1 3.86"/><ellipse class="cls-3" cx="3.69" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-3" cx="106.76" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-3" cx="55.1" cy="3.86" rx="3.69" ry="3.86"/></g></g>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.45 100.44" width="100" height="100"><g id="Layer_2" data-name="Layer 2"><g><polygon class="cls-1 triangle-1" points="55.1 35.84 55.1 67.2 80.03 80.93 55.1 35.84"/><polygon class="cls-2 triangle-2" points="55.1 67.2 30.16 80.93 80.03 80.93 55.1 67.2"/><polygon class="cls-3 triangle-3" points="55.1 35.84 30.16 80.93 55.14 67.2 55.1 35.84"/><polygon class="cls-4" points="55.1 3.86 3.44 96.58 106.76 96.58 55.1 3.86"/><ellipse class="cls-5" cx="3.69" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-5" cx="106.76" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-5" cx="55.1" cy="3.86" rx="3.69" ry="3.86"/></g></g>
               </svg>
             </div>
             <div data-depth="0.2" class="parallax-astronaut__wrapper">
@@ -89,9 +91,12 @@
       <!-- first chapter section -->
       <section class="chapter__section section__solid section section__blue animate-inside in-viewport below-viewport" v-in-viewport.once>
         <div class="container--left chapter__container">
-          <div class="first-chapter__text chapter__text hyphens">
-            <h2 class="first-chapter__title chapter__title">{{$ts(`Chapter 1. AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS`)}}</h2>
-            <p class="first-chapter__descr chapter__descr">
+          <div class="first-chapter__text chapter__text">
+            <h2 class="first-chapter__title chapter__title"> 
+              <span class="chapter-accent">{{$ts(`Chapter 1.`)}}</span>
+              {{$ts(`AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS`)}}
+            </h2>
+            <p class="first-chapter__descr chapter__descr hyphens">
               {{$ts(`We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.`)}} 
             </p>
             <h3 class="first-chapter__subtitle chapter__subtitle hyphens">{{$ts(`In this chapter you will learn`)}}:</h3>
@@ -145,16 +150,19 @@
       <!-- second chapter -->
       <section class="second-chapter__section chapter__section section__solid animate-inside in-viewport below-viewport" v-in-viewport.once>
         <div class="container--left chapter__container">
-          <div class="second-chapter__text chapter__text hyphens">
-            <h2 class="second-chapter__title chapter__title">{{$ts(`Chapter 2. ROBONOMICS ARCHITECTURE`)}}</h2>
-            <p class="second-chapter__descr chapter__descr">
+          <div class="second-chapter__text chapter__text">
+            <h2 class="second-chapter__title chapter__title"> 
+              <span class="chapter-accent">{{$ts(`Chapter 2.`)}}</span>
+              {{$ts(`ROBONOMICS ARCHITECTURE wp`)}}
+            </h2>
+            <p class="second-chapter__descr chapter__descr hyphens">
               {{$ts(`In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.`)}} 
             </p>
             <h3 class="second-chapter__subtitle chapter__subtitle hyphens">{{$ts(`In this chapter you will learn`)}}:</h3>
             <ol class="second-chapter__list chapter__list">
               <li class="second-chapter__item chapter__item">
                 {{$ts(`Overview of the state of the Internet of Things (IoT)`)}}
-                <ul class="chapter__sub-list">
+                <ul class="chapter__sub-list chapter__list">
                   <li class="second-chapter__item chapter__item">
                     {{$ts(`Classification of IoT devices`)}}
                   </li>
@@ -275,6 +283,8 @@
         </div>
       </section>
 
+      <!-- <Contacts/> -->
+
     </div>
 
   </layout>
@@ -290,13 +300,15 @@ query {
 
 <script>
   import Parallax from 'parallax-js'
+import Contacts from '../components/Contacts.vue'
 export default {
 
   components: {
     Button: () => import("~/components/Button.vue"),
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     Spot: () => import("~/components/decor/Spot.vue"),
-  },
+    Contacts
+},
 
   mounted() {
     const scene = document.getElementById('parallax-astronaut');
@@ -346,14 +358,12 @@ export default {
   }
 
   .chapter__title {
-    font-size: 1.2rem;
     /* white-space: nowrap; */
     text-align: left;
   }
 
 
   .chapter__subtitle {
-    font-size: 1.2rem;
     text-transform: none;
     /* white-space: nowrap; */
   }
@@ -361,10 +371,10 @@ export default {
   .chapter__list {
     margin-left: 0;
     list-style-type: '- ' ;
+    text-align: left;
   }
 
   .chapter__descr {
-    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -376,6 +386,11 @@ export default {
 
    .chapter__text {
     width: calc(50% - 9rem);
+    text-align: left;
+   }
+
+   .chapter-accent {
+    display: block;
    }
 
    .chapter__images {
@@ -388,10 +403,10 @@ export default {
     overflow: hidden;
    }
 
-   .chapter__sub-list {
+   /* .chapter__sub-list {
     list-style: disc;
     margin-left: 0;
-   }
+   } */
 
   .chapter__item {
     margin-bottom: 0;
@@ -491,51 +506,25 @@ export default {
     z-index: 30;
   }
 
-  .logo-robonomics .dot {
-    opacity: 0;
-		animation: 3s FadeIn 1s ease forwards;
+    .cls-1{fill:#b2c1f3; animation: 5s logo-triangle-1 0.5s linear infinite;}
+    .cls-2{fill:#213159; 	animation: 5s logo-triangle-2 0.5s linear infinite;}
+    .cls-3{fill:#00bdff; animation: 5s logo-triangle-3 0.5s linear infinite;}
 
-	}
+    .cls-4 {
+      fill: transparent;
+      stroke: #03A5ED;
+      stroke-miterlimit:10;
 
-	.logo-robonomics .line {
-		fill: transparent;
-		stroke: #03A5ED;
-		stroke-miterlimit:10;
-
-		stroke-dasharray: 700;
-		stroke-dashoffset: 700;
-		animation: 1s DrawSvgPath 1s ease-in-out forwards; 
-
-	}
-
-	.logo-robonomics .triangle-1
-		{
-			animation: 5s logo-triangle-1 0.5s linear infinite;
-		}
-
-	.logo-robonomics .triangle-2
-		{
-			animation: 5s logo-triangle-2 0.5s linear infinite;
-		}
-
-	.logo-robonomics .triangle-3
-		{
-			animation: 5s logo-triangle-3 0.5s linear infinite;
-		}
-
-    .logo-robonomics .inside-triangle {
-      width: 40px;
+      stroke-dasharray: 700;
+      stroke-dashoffset: 700;
+      animation: 1s DrawSvgPath 1s ease-in-out forwards; 
     }
-
-    .cls-1{fill:#b2c1f3;}
-    .cls-2{fill:#213159;}
-    .cls-3{fill:#00bdff;}
-    .cls-4{fill:none;stroke:#00bdff;stroke-miterlimit:10;stroke-width:2px;}
+    .cls-5 {fill:#00bdff; opacity: 0; animation: 3s FadeIn 1s ease forwards;}
 
   .yellow-robot {
     position: absolute;
-    left: 5%;
-    bottom: 12px;
+    left: calc(50% - 500px);
+    bottom: 39px;
     z-index: 18;
   }
 
@@ -546,13 +535,10 @@ export default {
     width: 30px;
     height: 30px;
     margin-top: 0.25rem;
-    
-    -ms-transform:rotate(-45deg) translate(-100px);
-    -moz-transform:rotate(-45deg) translate(-100px);
-    -o-transform:rotate(-45deg) translate(-100px);
-    -webkit-transform:rotate(-45deg) translate(-100px);
-     transform:rotate(-45deg) translate(-100px);
+
+    transform: rotate(-45deg) translate(-100px);
    }
+
   .yellow-robot-antenna .circle {
     display:block;
     width:100%;
@@ -567,29 +553,25 @@ export default {
     -webkit-border-radius:0 100% 0 0;
     border-radius:0 100% 0 0;
     
-    opacity:0;
-    -webkit-animation: FadeIn 2s var(--animation-bump)  forwards;
-    animation: FadeIn 2s var(--animation-bump)  forwards;
+    opacity: 0;
+    animation: 2s FadeIn 5.6s var(--animation-bump) infinite;
 }
 
   .yellow-robot-antenna .circle.first {
       height: 7em;
       width: 7em;
-      -webkit-animation-delay:1200ms;
-      animation-delay:1200ms;
+      animation-delay: 1200ms;
   }
 
   .yellow-robot-antenna .circle.second {
       width:5em;
       height:5em;
-      -webkit-animation-delay:800ms;
-      animation-delay:800ms;
+      animation-delay: 800ms;
   }
 
     .yellow-robot-antenna .circle.third {
       width: 3em;
       height: 3em;
-      -webkit-animation-delay:400ms;
       animation-delay:400ms;
     }
 
@@ -602,13 +584,49 @@ export default {
 
   .small-robot__wrapper {
     position: absolute;
-    left: 20%;
+    /* left: 20%; */
+    left: calc(50% + 300px);
     /* bottom: calc(14% - 6px); */
-    bottom: 84px;
+    bottom: 94px;
     z-index: 15;
-    transform: translateX(-25vw);
-    animation: robotMove 25s infinite linear 1.5s;
-    -webkit-animation: robotMove 25s infinite linear 1.5s;
+    /* transform: translateX(-25vw); */
+    /* animation: robotMove 25s infinite linear 1.5s; */
+  }
+
+  @keyframes robotMove {
+    0% {
+      transform: translateX(-25vw);
+    }
+
+    10% {
+      transform: translateX(-10vw);
+    }
+
+
+    20% {
+      transform: translateX(5vw);
+    }
+
+    40% {
+      transform: translateX(15vw);
+      
+    }
+
+    50% {
+      transform: translateX(25vw);
+    }
+
+    60% {
+      transform: translateX(50vw);
+    }
+
+    80% {
+      transform: translateX(80vw);
+    }
+
+    100% {
+      transform: translateX(100vw);
+    }
   }
 
 
@@ -654,10 +672,9 @@ export default {
     -webkit-animation: FadeOut 2s infinite 1.2s linear;
   }
 
-  .small-robot-wheel {
+  /* .small-robot-wheel {
     animation: spin 1s infinite linear;
-    -webkit-animation:  spin 1s infinite linear;
-  }
+  } */
 
   .logos {
     position: absolute;
@@ -704,10 +721,16 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family:  var(--font-family-code);
   }
 
   .wp-introduction__text {
+    line-height: 1.7;
     font-family:  var(--font-family-code);
+   }
+
+   .first-chapter__list {
+    padding-left: 12px;
    }
 
    .first-chapter__images img {
@@ -759,7 +782,7 @@ export default {
 
   .second-chapter__list {
     list-style: decimal;
-    padding-left: 18px;
+    padding-left: 22px;
   }
 
   .coin-animation {
