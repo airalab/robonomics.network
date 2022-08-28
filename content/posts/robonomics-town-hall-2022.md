@@ -23,7 +23,7 @@ The Town Hall will be the first meeting of XRT token holders, and we will discus
 
 **Ways which you can participate:** 
 
-- On the Ethereum network using [snapshot.io](http://snapshot.io/). Direct Link: [https://snapshot.org/#/developers.robonomics.eth](https://snapshot.org/#/developers.robonomics.eth)
+- On the Ethereum network using [snapshot.org](http://snapshot.org/). Direct Link: [https://snapshot.org/#/developers.robonomics.eth](https://snapshot.org/#/developers.robonomics.eth)
 - On the Kusama network using [polkassembly.io](http://polkassembly.io/). Direct link: [https://robonomics.polkassembly.io/](https://robonomics.polkassembly.io/)
 
 **Timeline:** 
@@ -64,7 +64,7 @@ This is the story of the sword of Damocles: 7 million XRT, which are currently l
 
 Gavin Wood help a presentation based around upcoming updates to the on-chain protocol governance mechanism during the Polkadot Decoded 202 conference. You can read more about this here: [Gov2: Polkadot’s Next Generation of Decentralized Governance](https://polkadot.network/blog/gov2-polkadots-next-generation-of-decentralised-governance/). Robonomics plans to migrate to this new version of on-chain governance after the firsts tests have been completed on Kusama. During the Town Hall, our parachain’s developers would like to know how many community members would like to participate in the parachains governance systems with the introduction of Governance 2.0. If you are interested, then vote “for”, if you do not want to participate in the development of onchain protocol management, then you can simply skip this vote.
 
-**Home Assistant support grants**
+## Home Assistant support grants
 
 One of the first, and the main use case we would like to advance for Robonomics in 2022-2023 is our integration with Home Assistant. Home Assistant has over half a million users, and is one of the best open source home automation solutions available today.
 
@@ -72,7 +72,7 @@ You can already purchase a Robonomics IoT subscription and [connect your home as
 
 Every 20 XRT which votes “aye” will add 1 XRT to the Home Assistant grant budget, every 20 XRT “nay” will reduce the budget by 1 XRT.
 
-**ROS2 support grants**
+## ROS2 support grants
 
 Our origins are in robotics, and ROS (Robot Operating System) was the first area of experimentation for us. ROS, similar to Home Assistant, is the most popular open source framework, but not for home automation, instead it is for complex robotics. The first version of ROS had many problems that prevented it from taking it’s rightful place within real projects outside of laboratories and prototypes of start-up projects. The ROS community has been developing the ROS2 implementation for some time now, and it is already a more mature solution. The Robonomics team wants to continue the development & integration of ROS2 in 2022-2023. As part of this vote, let’s determine how much XRT will be allocated to the total budget which will support the grants programme for the development of ROS2-direction for the next 6 months.
 
@@ -84,4 +84,4 @@ This topic requires an entire publication dedicated to it, so for now let’s fo
 
 ## Join the discussion on Discord!
 
-Join the discussions in the Robonomics Discord server throughout September!
+Join the discussions in the [Robonomics Discord server](https://discord.gg/9ZSpkET9BQ) throughout September!
