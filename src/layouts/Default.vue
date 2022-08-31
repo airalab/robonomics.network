@@ -6,18 +6,21 @@
     <div class="screen banner">
 
       <header class="header">
-        <g-link class="banner-top" to="/ambassador-program">
+        <!-- <g-link class="banner-top" to="/ambassador-program">
           <div class="layout__content">We launched Ambassador Program, join!</div>
-        </g-link>
+        </g-link> -->
 
         <div class="header-content">
           <div class="header-logo">
-            <g-link to="/"><g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/></g-link>
+            <g-link to="/">
+              <g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/>
+              <span class="logo-text">Robonomics Network</span>
+            </g-link>
           </div>
 
           <div class="header-side">
-            <ThemeSwitcher/>
             <HeaderNav/>
+            <ThemeSwitcher/>
             <languageSwitcher/>
 
           </div>
@@ -88,6 +91,63 @@ query {
 			background-size: 30px 30px; */
   }
 
+  .header-logo {
+    padding-left: calc(var(--screen-padding-left) - 9px);
+    /* max-width: 283px;
+    width: 100%; */
+    /* width: calc( var(--screen-padding-left) - calc(var(--logo-padding)*1.5)); */
+    background-color: var(--body-bg);
+  }
+
+  .header-logo a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .header-logo a {
+    color: currentColor;
+  }
+
+  .header-logo a img {
+    margin-right: 20px;
+  }
+
+
+  .dark-theme .header-logo a img {
+    filter:  grayscale(1) invert(1);
+  }
+
+  .logo-text {
+    font-size: 1rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: var(--color-dark);
+  }
+
+  @media screen and (max-width: 950px) {
+    .header-logo  {
+      margin-top: 6px;
+      width: 40%;
+    }
+
+    .header-logo a svg {
+      width: 100%;
+    }
+
+    .header-logo {
+      max-width: 100px;
+      width: 34%;
+      padding-left: 40px;
+    }
+
+    .logo-text {
+      display: none;
+      font-size: 0.6rem;
+    }
+  }
+
   @media screen and (min-width: 700px) {
     .banner-top {
       font-size: 150%;
@@ -123,12 +183,7 @@ query {
     background-color: var(--body-bg);
   }
 
-    .header-logo {
-      width: calc( var(--screen-padding-left) - calc(var(--logo-padding)*1.5));
-      background-color: var(--body-bg);
-    }
-
-  .header-logo a, .header-logo img { display: block; }
+  /* .header-logo a, .header-logo img { display: block; } */
   
   .header-content {
     display: flex;
@@ -136,6 +191,7 @@ query {
     align-items: center;
 
     height: var(--screen-padding-top);
+    padding: 2rem ;
     padding-left: var(--logo-padding);
     padding-right: var(--screen-padding-right);
   }
@@ -144,6 +200,21 @@ query {
     font-family: var(--font-family-code);
     font-size: calc(var(--base-font-size) * 0.8);
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 660px) {
+    .header-logo  {
+      /* margin-top: 0; */
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header-logo  {
+      /* margin-top: 0; */
+      width: 100%;
+      margin-right: 5px;
+    }
   }
 
   @media screen and (max-width: 350px) {
@@ -172,13 +243,14 @@ query {
 	position: relative;
   background-color: var(--color-gray-light);
   border-style: solid;
-  border-color: var(--color-light);
+  border-color: var(--body-bg);
   border-width: 0 var(--screen-padding-right) 0 var(--screen-padding-left);
   padding-top: var(--screen-padding-top);
   padding-bottom: var(--screen-padding-bottom);
   height: 100vh;
   scrollbar-width: none;
 }
+
 
 	.screen::-webkit-scrollbar { display: none; }
 
