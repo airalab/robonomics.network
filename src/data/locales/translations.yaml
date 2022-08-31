@@ -11320,11 +11320,7 @@
   tr: "Robofirms d\xFCnyas\u0131nda, robotlar\u0131n daha \xF6nce sadece insanlar\u0131\
     n ihtiya\xE7 duydu\u011Fu sosyal kurumlara eri\u015Fimini sa\u011Flamak hayat\u0131\
     n ola\u011Fan ak\u0131\u015F\u0131na uygun g\xF6r\xFCn\xFCyor."
-- alias: Social institutions do not appear because we are people and physiologically
-    a person cannot live without banks, contracts, and other instruments of society.
-    But only because a person, at some point in time, entered the path of more complex
-    relations in society and took an important step towards accelerating the processes
-    of those around us.
+- alias: Social institutions do not arise because people cannot live without banks, contracts and other instruments of society. They arise only because a person at some point in time stepped onto the path of more complex relations in society and took an important step towards accelerating the surrounding processes.
   az: "Sosial institutlar ona g\xF6r\u0259 yaranmay\u0131b ki, biz insanlar banklar,\
     \ m\xFCqavil\u0259l\u0259r v\u0259 dig\u0259r sosial al\u0259tl\u0259r olmadan\
     \ Homo Sapiens n\xF6v\xFC kimi m\xF6vcud ola bilm\u0259rik. \u018Fsl s\u0259b\u0259\
@@ -11332,11 +11328,7 @@
     td\u0259 daha m\xFCr\u0259kk\u0259b m\xFCnasib\u0259tl\u0259r\u0259 q\u0259d\u0259\
     m qoyub v\u0259 \u0259traf\u0131m\u0131zda ged\u0259n prosesl\u0259ri s\xFCr\u0259\
     tl\u0259ndirm\u0259k istiqam\u0259tind\u0259 m\xFCh\xFCm add\u0131m at\u0131b."
-  en: Social institutions do not appear because we are people and physiologically
-    a person cannot live without banks, contracts, and other instruments of society.
-    But only because a person, at some point in time, entered the path of more complex
-    relations in society and took an important step towards accelerating the processes
-    of those around us.
+  en: Social institutions do not arise because people cannot live without banks, contracts and other instruments of society. They arise only because a person at some point in time stepped onto the path of more complex relations in society and took an important step towards accelerating the surrounding processes.
   es: "Electrificaci\xF3n:"
   fr: "L'\xE9lectrification :"
   it: "Le istituzioni sociali non appaiono perch\xE9 siamo persone e fisiologicamente\
@@ -12788,18 +12780,7 @@
     \ \u041D\u043E\u0440\u0431\u0435\u0440\u0442\u043E\u043C \u0412\u0438\u043D\u0435\
     \u0440\u043E\u043C"
   tr: "Norbert Wiener'den ilham al\u0131nm\u0131\u015Ft\u0131r"
-- alias: "One extremely popular question that still remains open \u2014 the purposefulness\
-    \ of robots when providing services to people. This is a specific but academically\
-    \ important question. The fact is that human economics often includes factors\
-    \ related to the good faith performance of tasks in a contract, the desire of\
-    \ the parties to achieve a result, and the opportunistic and altruistic behavior\
-    \ of the individual in society. It is difficult to talk about such issues in robotics\
-    \ today, so the developers of Robonomics would like to leave teleological issues\
-    \ open for further study, and focus their attention on the praxeological part\
-    \ of robots\u2019 behavior as economic agents. Regarding goal setting, an early\
-    \ article by Norbert Wiener and his colleagues \u201CBehavior, Purpose and Teleology\u201D\
-    , as well as the work of the American economist and philosopher Ludwig von Mises\
-    \ on human activity can be considered as points of reference."
+- alias: "One extremely popular question that still remains open — the goal setting of robots when providing services to people. This is a specific but academically important question. The fact is that human economics often includes factors related to the good faith performance of tasks in a contract, the desire of the parties to achieve a result, and the opportunistic and altruistic behavior of the individual in society. It is difficult to talk about such issues in robotics today, so the developers of Robonomics would like to leave teleological issues open for further study, and focus their attention on the praxeological part of robots’ behavior as economic agents. Regarding goal setting, an early article by Norbert Wiener and his colleagues “Behavior, Purpose and Teleology”, as well as the work of the American economist and philosopher Ludwig von Mises on human activity can be considered as points of reference."
   az: "H\u0259l\u0259 d\u0259 a\xE7\u0131q qalan olduqca populyar bir sual - insanlara\
     \ xidm\u0259t g\xF6st\u0259r\u0259rk\u0259n robotlar\u0131n m\u0259qs\u0259dy\xF6\
     nl\xFCl\xFCy\xFC. Bu spesifik, lakin akademik bax\u0131mdan vacib suald\u0131\
@@ -12821,18 +12802,7 @@
     \ v\u0259 filosof L\xFCdviq fon Mizesin insan f\u0259aliyy\u0259ti il\u0259 ba\u011F\
     l\u0131 i\u015Fi istinad n\xF6qt\u0259l\u0259ri kimi q\u0259bul edil\u0259 bil\u0259\
     r."
-  en: "One extremely popular question that still remains open \u2014 the purposefulness\
-    \ of robots when providing services to people. This is a specific but academically\
-    \ important question. The fact is that human economics often includes factors\
-    \ related to the good faith performance of tasks in a contract, the desire of\
-    \ the parties to achieve a result, and the opportunistic and altruistic behavior\
-    \ of the individual in society. It is difficult to talk about such issues in robotics\
-    \ today, so the developers of Robonomics would like to leave teleological issues\
-    \ open for further study, and focus their attention on the praxeological part\
-    \ of robots\u2019 behavior as economic agents. Regarding goal setting, an early\
-    \ article by Norbert Wiener and his colleagues \u201CBehavior, Purpose and Teleology\u201D\
-    , as well as the work of the American economist and philosopher Ludwig von Mises\
-    \ on human activity can be considered as points of reference."
+  en: "One extremely popular question that still remains open — the goal setting of robots when providing services to people. This is a specific but academically important question. The fact is that human economics often includes factors related to the good faith performance of tasks in a contract, the desire of the parties to achieve a result, and the opportunistic and altruistic behavior of the individual in society. It is difficult to talk about such issues in robotics today, so the developers of Robonomics would like to leave teleological issues open for further study, and focus their attention on the praxeological part of robots’ behavior as economic agents. Regarding goal setting, an early article by Norbert Wiener and his colleagues “Behavior, Purpose and Teleology”, as well as the work of the American economist and philosopher Ludwig von Mises on human activity can be considered as points of reference."
   es: William Gibson
   fr: William Gibson
   it: "Una domanda estremamente popolare che rimane ancora aperta- la finalit\xE0\
