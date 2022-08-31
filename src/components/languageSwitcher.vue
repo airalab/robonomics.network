@@ -17,13 +17,16 @@
 <style scoped>
   select {
     background-image: none;
-    padding: 0.4rem 0.8rem;
-    font-size: 70%;
+    padding: 0.2rem 0.6rem;
+    font-size: 80%;
     color: var(--color-text);
+    text-transform: uppercase;
   }
 
   .dark-theme select {
-    --oldy-box-color: #fff
+    border: 1px solid #000;
+    box-shadow: 0.2rem 0.2rem 0rem #000;
+    background-color: #7A7B81;
   }
 </style>
 

@@ -1,0 +1,203 @@
+<template>
+  <div class="spot animated">
+    <g-image class="spot-body" src="~/assets/images/white-paper-2022/animated-pose-1/spot-body.png"/>
+    <g-image class="spot-leg1-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg1-top.png"/>
+    <g-image class="spot-leg1-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg1-bottom.png"/>
+    <g-image class="spot-leg2-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg2-top.png"/>
+    <g-image class="spot-leg2-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg2-bottom.png"/>
+    <g-image class="spot-leg3-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg3-top.png"/>
+    <g-image class="spot-leg3-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg3-bottom.png"/>
+    <g-image class="spot-leg4-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg4-top.png"/>
+    <g-image class="spot-leg4-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg4-bottom.png"/>
+  </div>
+</template>
+
+<style scoped>
+
+  @keyframes SpotBody {
+  from {
+      transform: translateY(0)
+    }
+    to {
+      transform: translateY(-50px)
+    }
+  }
+  @keyframes SpotLeg1Top {
+    from {
+      transform: translateY(0) rotate(-20deg)
+    }
+    to {
+      transform: translateY(-63px) rotate(-36deg)
+    }
+  }
+  @keyframes SpotLeg1Bottom {
+    from {
+      transform: translateY(0) rotate(6deg) translateX(0)
+    }
+    to {
+      transform: translateY(-65px) rotate(49deg) translateX(35px)
+    }
+  }
+  @keyframes SpotLeg2Top {
+    from {
+      transform: translateY(0) rotate(-14deg) translateX(0) 
+    }
+    to {
+      transform: rotate(-61deg) translateX(91px) translateY(10px);
+    }
+  }
+  
+
+  @keyframes SpotLeg2Bottom {
+    from {
+      transform: translateY(0) rotate(9deg) translateX(0)
+    }
+    to {
+      transform: translateY(-56px) rotate(28deg) translateX(103px)
+    }
+  }
+   @keyframes SpotLeg3Top {
+    from {
+      transform: translateY(0) rotate(-17deg) translateX(0)
+    }
+    to {
+      transform: translateY(-55px) rotate(-23deg) translateX(-36px)
+    }
+  }
+  @keyframes SpotLeg3Bottom {
+    from {
+      transform: translateY(0) rotate(9deg) translateX(0)
+    }
+    to {
+      transform: translateY(10px) rotate(60deg) translateX(-10px)
+    }
+  }
+  @keyframes SpotLeg4Top {
+    from {
+      transform: translateY(0) rotate(-20deg)
+    }
+    to {
+      transform: translateY(-80px) rotate(-50deg)
+    }
+  }
+  @keyframes SpotLeg4Bottom {
+    from {
+      transform: translateY(0) rotate(11deg) translateX(0px)
+    }
+    to {
+      transform: translateY(-26px) rotate(30deg) translateX(44px)
+    }
+  }
+  .spot {
+    position: relative;
+    width: 395px;
+    height: 223px;
+    transform: scale(0.6) translateX(-80px);
+  }
+  .spot > img {
+    display: block;
+    position: absolute;
+    animation-delay: 3s;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .spot-body {
+    width: 320px;
+    bottom: 67px;
+    left: calc(50% - 160px);
+    z-index: 2;
+  }
+  .animated .spot-body {
+    animation-name: SpotBody;
+  }
+  .spot-leg1-top {
+    width: 162.5px;
+    bottom: 78px;
+    left: -55px;
+    transform-origin: 100% 100%;
+    transform: rotate(-20deg);
+    z-index: 4;
+  }
+  .animated .spot-leg1-top {
+    animation-name: SpotLeg1Top;
+  }
+  .spot-leg1-bottom {
+    width: 151px;
+    bottom: 28px; 
+    left: -43px; 
+    transform-origin: 0 0;
+    transform: rotate(6deg);
+    z-index: 3;
+  }
+  .animated .spot-leg1-bottom {
+    animation-name: SpotLeg1Bottom;
+  }
+  .spot-leg2-top {
+    width: 118.5px;
+    bottom: 80px;
+    left: -45px;
+    transform-origin: 100% 100%;
+    transform: rotate(-14deg);
+    z-index: 1;
+  }
+  .animated .spot-leg2-top {
+    animation-name: SpotLeg2Top;
+  }
+  .spot-leg2-bottom {
+    width: 142.5px;
+    bottom: 46px; 
+    left: -37px;
+    transform-origin: 0 0;
+    transform: rotate(9deg);
+    z-index: 0;
+  }
+  .animated .spot-leg2-bottom {
+    animation-name: SpotLeg2Bottom;
+  }
+  .spot-leg3-top {
+    width: 143px;
+    bottom: 80px;
+    left: 186px; 
+    transform-origin: 100% 100%;
+    transform: rotate(-17deg);
+    z-index: 0;
+  }
+  .animated .spot-leg3-top {
+    animation-name: SpotLeg3Top;
+  }
+  .spot-leg3-bottom {
+    width: 142.5px;
+    bottom: 74px;
+    left: 173px;
+    transform-origin: 0 0;
+    transform: rotate(9deg);
+    z-index: 1;
+  }
+  .animated .spot-leg3-bottom {
+    animation-name: SpotLeg3Bottom;
+  }
+  .spot-leg4-top {
+    width: 158px;
+    bottom: 68px;
+    left: 174px;
+    transform-origin: 100% 100%;
+    transform: rotate(-20deg);
+    z-index: 4;
+  }
+  .animated .spot-leg4-top {
+    animation-name: SpotLeg4Top;
+  }
+  .spot-leg4-bottom {
+    width: 153.5px;
+    bottom: 28px; 
+    left: 188px; 
+    transform-origin: 0 0;
+    transform: rotate(11deg);
+    z-index: 1;
+  }
+  .animated .spot-leg4-bottom {
+    animation-name: SpotLeg4Bottom;
+  }
+
+</style>
