@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="onSubmit" :class="'status-'+status">
+    <gsp-form :gscriptID="gscript" :captchaID="recaptchaSitekey" :class="'status-'+status">
         <div class="content">
             <div><input type="email" placeholder="Your email" v-model="email" name="email" required  data-gsp-name="email" :data-gsp-data="email"  class="block"/></div>
             <label class="label">
@@ -7,13 +7,13 @@
                 <span class="text-small">{{$ts('I agree to receive email communications from Robonomics')}}</span>
             </label>
             <div>
-                <vue-recaptcha
+                <!-- <vue-recaptcha
                     ref="invisibleRecaptcha"
                     @verify="onVerify"
                     size="invisible"
-                    :sitekey="recaptchaSitekey" />
+                    :sitekey="recaptchaSitekey" /> -->
 
-                <Button button="primary block green large">
+                <Button @click="onSubmit" button="primary block green large">
                         <span class="text">{{$ts('Submit')}}</span>
                     </Button>
 
@@ -41,34 +41,21 @@
         <div class="wait"><g-image src="~/assets/images/robonomics.png" area-hidden="true"/></div>
         <div class="error">Something went wrong. Please, check your connection or try later.</div>
 
-    </form>
+    </gsp-form>
 </template>
 
 <script>
-// import { VueRecaptcha } from 'vue-recaptcha';
 
 export default {
     components: {
-    //   VueRecaptcha,
-      VueRecaptcha: () => import("vue-recaptcha"),
       Button: () => import("~/components/Button.vue")
     },
 
-    metaInfo: {
-      script: [
-        {
-          src: 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
-          async: true,
-          defer: true,
-          body: true
-        }
-      ]
-    },
 
     data () {
       return {
         email: null,
-        status: 'none',
+        status: this.$response,
         gscript: process.env.GRIDSOME_FORM_SCRIPT,
         //  recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA,
         recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
@@ -78,29 +65,17 @@ export default {
     methods: {
 
       //add email to whitelist
-      onSubmit: function() {
+      onSubmit() {
         console.log('onSubmit')
-        console.log(this.$refs.invisibleRecaptcha)
-        this.$refs.invisibleRecaptcha.execute()
-      },
 
-      onVerify: async function (response) {
-        console.log('onVerify')
-        if(response) {
-          this.status = 'wait'
-            let request = ''
-            if(this.email){
-              request = 'email=' + encodeURIComponent(this.email)
-            }
-            await this.$gspPostForm(this.gscript, request)
-            // fetch('https://script.google.com/macros/s/AKfycbxpBhEciQcoPzDy0VQRhVH_I9NBlwUP3lvjD0GfnRYbv2xlT_ZKx3StV6oqPEFHTJESVg/exec', {
-            //   method: 'POST',
-            //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            //   body: request
-            // })
-            .then(() => this.status = 'load')
-            .catch(error => this.status = 'error')
-          }
+        let respInterval = setInterval(() => {
+          this.status = this.$response
+          console.log(this.$response)
+        }, 1000)
+
+        if (this.$response === 'success' || this.$response === 'error') {
+          clearInterval(respInterval)
+        }
       },
     }
 
@@ -195,18 +170,18 @@ export default {
   }
 
 
-  .status-load .load {
+  .status-success .load {
     animation: FadeIn 0.3s var(--animation-bump) forwards;
   }
 
-  .status-load .load .bird-tale { animation-name: birdTale; }
-  .status-load .load .bird-wing-1 { animation-name: birdWing1; }
-  .status-load .load .bird-wing-2 { animation-name: birdWing2; }
-  .status-load .load .bird-ribbons { animation-name: birdRibbons; }
-  .status-load .load .bird-hair { animation-name: birdHair; }
-  .status-load .load .bird-leg { animation-name: birdLeg; }
+  .status-success .load .bird-tale { animation-name: birdTale; }
+  .status-success .load .bird-wing-1 { animation-name: birdWing1; }
+  .status-success .load .bird-wing-2 { animation-name: birdWing2; }
+  .status-success .load .bird-ribbons { animation-name: birdRibbons; }
+  .status-success .load .bird-hair { animation-name: birdHair; }
+  .status-success .load .bird-leg { animation-name: birdLeg; }
 
-  .status-load .content { pointer-events: none; opacity: 0.1; }
+  .status-success .content { pointer-events: none; opacity: 0.1; }
 
   .wait {
       position: absolute;

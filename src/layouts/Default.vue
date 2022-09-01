@@ -32,6 +32,7 @@
       <div class="screen-content">
         
         <slot/>
+        <Contacts/>
         <ClientOnly> <Footer/> </ClientOnly>
       </div>
 
@@ -300,6 +301,7 @@ export default {
     languageSwitcher: () => import('~/components/languageSwitcher.vue'),
     ThemeSwitcher: () => import('~/components/ThemeSwitcher.vue'),
     HeaderNav: () => import('~/components/HeaderNav.vue'),
+    Contacts: () => import('~/components/Contacts.vue')
   },
   data () {
     return {
