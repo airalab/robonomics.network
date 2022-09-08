@@ -47,9 +47,9 @@ export default {
     result: this.$response,
     interval: null,
     location: '',
-    // recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA
+    recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA,
     gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
-    recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
+    // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
     }
   },
 
@@ -74,7 +74,6 @@ export default {
   watch: {
 
     'result': function(old, curr) {
-      console.log('its old', old);
       if(old === 'success' || old === 'error') {
         clearInterval(this.interval)
       }
@@ -82,9 +81,7 @@ export default {
   },
 
   mounted() {
-    // this.interval = null;
-    // this,this.result = '';
-    this.location = 'https://wiki.robonomics.network' + this.$route.path;
+    this.location = 'https://robonomics.network' + this.$route.path;
   }
 
 }
