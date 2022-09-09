@@ -151,4 +151,11 @@ export default {
   }
 
 
+  @media screen and (max-width: 790px) {
+    .button {
+      width: 98%;
+    }
+  }
+
+
 </style>

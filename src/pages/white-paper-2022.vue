@@ -99,7 +99,7 @@
             <p class="first-chapter__descr chapter__descr hyphens">
               {{$ts(`We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.`)}} 
             </p>
-            <h3 class="first-chapter__subtitle chapter__subtitle hyphens">{{$ts(`In this chapter you will learn`)}}:</h3>
+            <h3 class="first-chapter__subtitle chapter__subtitle">{{$ts(`In this chapter you will learn`)}}:</h3>
             <ul class="first-chapter__list chapter__list">
               <li class="first-chapter__item chapter__item">
                 {{$ts(`Ronald Coase and The Nature of the Firm`)}}
@@ -158,7 +158,7 @@
             <p class="second-chapter__descr chapter__descr hyphens">
               {{$ts(`In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.`)}} 
             </p>
-            <h3 class="second-chapter__subtitle chapter__subtitle hyphens">{{$ts(`In this chapter you will learn`)}}:</h3>
+            <h3 class="second-chapter__subtitle chapter__subtitle">{{$ts(`In this chapter you will learn`)}}:</h3>
             <ol class="second-chapter__list chapter__list">
               <li class="second-chapter__item chapter__item">
                 {{$ts(`Overview of the state of the Internet of Things (IoT)`)}}
@@ -361,6 +361,7 @@ export default {
 
   .chapter__subtitle {
     text-transform: none;
+    text-align: left;
     /* white-space: nowrap; */
   }
 
@@ -1269,6 +1270,10 @@ export default {
 
       .wp__banner {
         min-height: 688px;
+      }
+
+      h1 {
+        padding-top: var(--space);
       }
 
       .astronaut {
