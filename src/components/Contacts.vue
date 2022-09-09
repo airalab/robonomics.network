@@ -5,7 +5,7 @@
       <h2 class="contacts__title">
         Connecting Robonomics
       </h2>
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper" :class="{'contacts__wrapper--withForm': showForm}">
         <div class="contacts__items" :class="{'moveItems': showForm}">
           <div class="contacts__items-wrapper">
             <div class="discord contacts__item" v-in-viewport.once>
@@ -325,11 +325,11 @@ export default {
   }
 
   @media screen and (max-width: 955px) {
-    .contacts__items {
+    /* .contacts__items {
       flex-direction: column;
-    }
+    } */
 
-    .email .contacts__text {
+    /* .email .contacts__text {
       top: -57px;
       right: calc(100% - 454px);
       font-size: unset;
@@ -337,25 +337,97 @@ export default {
 
     .email .decor-line {
       top: -42px;
-    }
+    } */
 
-    .form {
-      bottom: unset;
-    }
-  }
-
-  @media screen and (max-width: 790px) {
 
     .contacts__wrapper {
       flex-direction: column;
       align-items: center;
+      justify-content: unset;
+      min-height: 200px;
+      transition: min-height 1s ease 1s;
+      padding-bottom: 0;
+    }
+
+    .contacts__wrapper--withForm {
+      min-height: 380px;
+      transition: min-height 1s ease;
+    }
+
+    .contacts__items {
+      align-items: center;
+    }
+
+    .email {
+      padding: 0;
+    }
+
+    .decor-line,
+    .contacts__text {
+      display: none;
+    }
+
+    .contacts__items-wrapper {
+      margin-bottom: 0;
+    }
+
+    .contacts__item {
+      margin-right: 2rem;
+    }
+
+    .email {
+      margin-right: 0;
+    }
+
+    /* .form {
+      bottom: unset;
+    } */
+
+    /* .form {
+      position: static;
+      width: 100%;
+    } */
+    
+    .form {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .form.showForm {
+      transform: translateX(0px) translateY(0px);
+      transition-delay: 0.5s;
+    }
+    /* .form.showForm {
+      transform: translateX(0px) translateY(0px);;
+    } */
+  }
+
+  @media screen and (max-width: 790px) {
+
+    /* .contacts__wrapper {
+      min-height: 200px;
+      justify-content: unset;
+      transition: min-height 1s ease 1s;
+    }
+
+    .contacts__wrapper--withForm {
+      min-height: 380px;
+      transition: min-height 1s ease;
+    } */
+
+    .contacts__items {
+      padding-left: 10px;
     }
 
     .contacts__link svg {
-      width: 60px;
+      /* width: 60px; */
+      width: 100%;
     }
 
-    .decor-line svg {
+    /* .decor-line svg {
       width: 70px;
     }
 
@@ -400,42 +472,53 @@ export default {
     .email .decor-line {  
       top: -6px;
       left: calc(10% + 51px);
-    }
+    } */
 
-    .form {
-      position: static;
-      width: 100%;
+    /* .form {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
 
     .form.showForm {
-      transform: translateX(0px) translateY(0px);;
-    }
+      transition-delay: 0.5s;
+    } */
   }
 
   @media screen and (max-width: 530px) {
     .contacts__container {
       padding:var(--space);
+      padding-bottom: 0;
+    }
+    
+    .contacts__wrapper {
+      min-height: 100px;
+      padding-top: 0;
+      padding-left: 0;
     }
 
-    .contacts__wrapper {
-      padding-left: 0;
+    .contacts__wrapper--withForm {
+      min-height: 300px;
     }
 
     .contacts__items {
       align-items: center;
+      margin-bottom: 0;
     }
 
     .contacts__items-wrapper {
-      flex-direction: column;
+      /* flex-direction: column; */
       margin-bottom: 0;
     }
 
     .contacts__item {
       margin-right: 0;
-      margin-bottom: 2rem;
+      /* margin-bottom: 2rem; */
+      margin-bottom: 0;
     }
 
-    .email {
+    /* .email {
       margin-bottom: 0;
     }
 
@@ -444,10 +527,10 @@ export default {
     }
 
     .twitter {
-      margin-bottom: 8rem;
-    }
+      margin-bottom: 8rem; 
+    } */
 
-    .email .contacts__text {
+    /* .email .contacts__text {
       top: -21px;
       right: calc(100% - 197px)
     }
@@ -455,7 +538,7 @@ export default {
     .email .decor-line {
       top: -2px;
       left: calc(10% + 13px);
-    }
+    } */
 
     /* .form.showForm {
       transform: translateX(0px) translateY(0px);;
@@ -466,11 +549,15 @@ export default {
     .contacts__wrapper {
       align-items: flex-start;
     }
-
+/* 
     .email .contacts__text {
       top: -21px;
       right: calc(100% - 215px);
       white-space: nowrap;
+    } */
+
+    .email .contacts__link {
+      padding: 0.3rem;
     }
   }
 
