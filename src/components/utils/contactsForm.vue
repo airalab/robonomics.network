@@ -40,6 +40,7 @@ export default {
     components: {
       Spinner: () => import ('@/components/utils/spinner.vue')
     },
+    
 
   data() {
     return {
