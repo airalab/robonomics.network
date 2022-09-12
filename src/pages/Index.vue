@@ -542,6 +542,12 @@ query {
     .banner__images--right img:nth-of-type(7) {
       top: 24%;
     }
+
+    .index-getstarted {
+      grid-template-columns: 1fr;
+    }
+
+
   }
 
   @media screen and (max-width: 720px) {
