@@ -93,6 +93,13 @@ export default {
     font-family: var(--font-family-code);
   }
 
+  .google-sheets-form__actions {
+    padding-right: 7px;
+    padding-bottom: 6px;
+  }
+
+
+
   .button {
     width: 100%;
     padding: 1.5rem 0.8rem;
