@@ -53,7 +53,7 @@ Durante a última semana de agosto (28 de agosto a 3 de setembro), esteja prepar
 
 O artigo que você acabou de ler refere-se às informações que acompanham a votação sobre a questão da queima de 7 milhões de tokens XRT. Abaixo estão mais 4 votos que a DAO dos desenvolvedores oferece à comunidade e sobre os quais falarei no próximo post.
 
-Questions for the community:
+Perguntas para a comunidade:
 
 1. Votação para a queima de 7 milhões de tokens XRT
 2. Pesquisa e desenvolvimento da versão 2 da governança das parachains
