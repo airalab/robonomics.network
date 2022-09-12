@@ -5,7 +5,7 @@
       <h2 class="contacts__title">
         Connecting Robonomics
       </h2>
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper" :class="{'contacts__wrapper--withForm': showForm}">
         <div class="contacts__items" :class="{'moveItems': showForm}">
           <div class="contacts__items-wrapper">
             <div class="discord contacts__item" v-in-viewport.once>
@@ -49,8 +49,8 @@
                   <path id="Path_6787" data-name="Path 6787" d="M6011.019,4318.5v30.888" transform="translate(-6010.519 -4318.5)" fill="none" stroke="#75fbfd" stroke-width="1"/>
                 </svg>
               </div>
-              <div class="animate-inside" v-in-viewport.once>
-                <span class="contacts__text" >videos</span>
+              <div class="animate-inside contacts__text" v-in-viewport.once>
+                <span >videos</span>
               </div>
             </div>
           </div>
@@ -145,11 +145,9 @@ export default {
 
   .contacts__item {
     position: relative;
-  }
-
-  .contacts__item {
     margin-right: 4rem;
   }
+
 
    .contacts__item svg path {
     transition: fill 0.33s ease-in-out;
@@ -191,12 +189,16 @@ export default {
     transition: color 0.33s ease-in-out;
   }
 
+  .contacts__text span {
+    animation-duration: 2s;
+  }
+
   .decor-line.in-viewport {
     fill: transparent;
     stroke-miterlimit:10;
     stroke-dasharray: 700;
     stroke-dashoffset: 700;
-    animation: 2s DrawSvgPath ease-in-out forwards; 
+    animation: 4s DrawSvgPath ease-in-out forwards; 
   }
 
   .discord .contacts__text {
@@ -211,28 +213,6 @@ export default {
     left: calc(10% + 60px);
   }
 
-  /* .discord::before {
-    content: '';
-    position: absolute;
-    top: -17px;
-    left: calc(10% + 54px);
-    height: 1px;
-    width: 30px;
-    background-color:  var(--color-link-contacts);
-    transform: rotate(-69deg);
-  }
-
-    
-  .discord::after {
-    content: '';
-    position: absolute;
-    top: -31px;
-    left: calc(10% + 74px);
-    height: 1px;
-    width: 117px;
-    background-color:  var(--color-link-contacts);
-  } */
-
   .twitter .contacts__text {
     position: absolute;
     bottom: -44px;
@@ -245,32 +225,10 @@ export default {
     left: calc(10% + 39px);
   }
 
-  /* .twitter::before {
-    content: '';
-    position: absolute;
-    bottom: -16px;
-    left: calc(10% + 46px);
-    height: 1px;
-    width: 42px;
-    background-color: var(--color-link-contacts);
-    transform: rotate(56deg);
-  }
-
-    
-  .twitter::after {
-    content: '';
-    position: absolute;
-    bottom: -33px;
-    left: calc(10% + 78px);
-    height: 1px;
-    width: 76px;
-    background-color:  var(--color-link-contacts);
-  } */
-
   .youtube .contacts__text {
     position: absolute;
     top: -77px;
-    right: calc(100% - 114px);
+    right: calc(100% - 106px);
   }
 
   .youtube .decor-line {
@@ -278,17 +236,6 @@ export default {
     top: -36px;
     left: calc(10% + 55px);
   }
-
-  /* .youtube:before {
-    content: '';
-    position: absolute;
-    top: -19px;
-    left: calc(10% + 46px);
-    height: 1px;
-    width: 26px;
-    background-color: var(--color-link-contacts);
-    transform: rotate(90deg);
-  } */
 
 
   .email .contacts__text {
@@ -302,30 +249,7 @@ export default {
     top: -42px;
     left: calc(10% + 65px);
   }
-/* 
-  .email::before {
-    content: '';
-    position: absolute;
-    top: -42px;
-    left: calc(10% + 46px);
-    height: 32px;
-    width: 32px;
-    border: 1px solid transparent;
-    border-color: transparent var(--color-link-contacts) var(--color-link-contacts) transparent;
-    background-color: transparent;
-    transform: skewX(-18deg);
-    transition: border-color 0.33s ease-in-out;
-  }
 
-  .email::after {
-    content: '';
-    position: absolute;
-    top: -41px;
-    left: calc(10% + 84px);
-    height: 1px;
-    width: 76px;
-    background-color:  var(--color-link-contacts);
-  } */
 
   .moveItems {
     transform: translateX(-100px)
@@ -361,7 +285,7 @@ export default {
     }
 
     .contacts__items {
-      flex-direction: column;
+      /* flex-direction: column; */
       align-items: flex-start;
       margin-bottom: 2rem;
     }
@@ -376,29 +300,134 @@ export default {
     }
 
     .youtube .contacts__text {
-      top: -62px;
-      right: calc(100% - 97px)
+      top: -60px;
+      right: calc(100% - 91px)
     }
 
     .form {
       position: absolute;
       width: 70%;
       right: 0;
+      bottom: 10px;
     }
   }
 
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 1216px) {
+    .email .contacts__text {
+      top: -60px;
+      right: calc(100% - 281px);
+      font-size: 1rem;
+    }
+
+    .email .decor-line {
+      top: -33px;
+    }
+  }
+
+  @media screen and (max-width: 955px) {
+    /* .contacts__items {
+      flex-direction: column;
+    } */
+
+    /* .email .contacts__text {
+      top: -57px;
+      right: calc(100% - 454px);
+      font-size: unset;
+    }
+
+    .email .decor-line {
+      top: -42px;
+    } */
+
 
     .contacts__wrapper {
       flex-direction: column;
       align-items: center;
+      justify-content: unset;
+      min-height: 200px;
+      transition: min-height 1s ease 1s;
+      padding-bottom: 0;
+    }
+
+    .contacts__wrapper--withForm {
+      min-height: 380px;
+      transition: min-height 1s ease;
+    }
+
+    .contacts__items {
+      align-items: center;
+    }
+
+    .email {
+      padding: 0;
+    }
+
+    .decor-line,
+    .contacts__text {
+      display: none;
+    }
+
+    .contacts__items-wrapper {
+      margin-bottom: 0;
+    }
+
+    .contacts__item {
+      margin-right: 2rem;
+    }
+
+    .email {
+      margin-right: 0;
+    }
+
+    /* .form {
+      bottom: unset;
+    } */
+
+    /* .form {
+      position: static;
+      width: 100%;
+    } */
+    
+    .form {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .form.showForm {
+      transform: translateX(0px) translateY(0px);
+      transition-delay: 0.5s;
+    }
+    /* .form.showForm {
+      transform: translateX(0px) translateY(0px);;
+    } */
+  }
+
+  @media screen and (max-width: 790px) {
+
+    /* .contacts__wrapper {
+      min-height: 200px;
+      justify-content: unset;
+      transition: min-height 1s ease 1s;
+    }
+
+    .contacts__wrapper--withForm {
+      min-height: 380px;
+      transition: min-height 1s ease;
+    } */
+
+    .contacts__items {
+      padding-left: 10px;
     }
 
     .contacts__link svg {
-      width: 60px;
+      /* width: 60px; */
+      width: 100%;
     }
 
-    .decor-line svg {
+    /* .decor-line svg {
       width: 70px;
     }
 
@@ -425,7 +454,7 @@ export default {
 
     .youtube .contacts__text {
       top: -40px;
-      right: calc(100% - 67px)
+      right: calc(100% - 62px)
     }
 
     .youtube .decor-line {
@@ -436,43 +465,60 @@ export default {
     .email .contacts__text {
       top: -11px;
       right: calc(100% - 342px);
+      font-size: 1.2rem;
+      
     }
 
     .email .decor-line {  
       top: -6px;
       left: calc(10% + 51px);
+    } */
+
+    /* .form {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
 
-    .form {
-      position: static;
-      width: 100%;
-    }
+    .form.showForm {
+      transition-delay: 0.5s;
+    } */
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 530px) {
     .contacts__container {
       padding:var(--space);
+      padding-bottom: 0;
+    }
+    
+    .contacts__wrapper {
+      min-height: 100px;
+      padding-top: 0;
+      padding-left: 0;
     }
 
-    .contacts__wrapper {
-      padding-left: 0;
+    .contacts__wrapper--withForm {
+      min-height: 300px;
     }
 
     .contacts__items {
       align-items: center;
+      margin-bottom: 0;
     }
 
     .contacts__items-wrapper {
-      flex-direction: column;
+      /* flex-direction: column; */
       margin-bottom: 0;
     }
 
     .contacts__item {
       margin-right: 0;
-      margin-bottom: 2rem;
+      /* margin-bottom: 2rem; */
+      margin-bottom: 0;
     }
 
-    .email {
+    /* .email {
       margin-bottom: 0;
     }
 
@@ -481,10 +527,10 @@ export default {
     }
 
     .twitter {
-      margin-bottom: 8rem;
-    }
+      margin-bottom: 8rem; 
+    } */
 
-    .email .contacts__text {
+    /* .email .contacts__text {
       top: -21px;
       right: calc(100% - 197px)
     }
@@ -492,22 +538,26 @@ export default {
     .email .decor-line {
       top: -2px;
       left: calc(10% + 13px);
-    }
+    } */
 
-    .form.showForm {
-      transform: translateX(-3px) translateY(0px);;
-    }
+    /* .form.showForm {
+      transform: translateX(0px) translateY(0px);;
+    } */
   }
 
   @media screen and (max-width: 425px) {
     .contacts__wrapper {
       align-items: flex-start;
     }
-
+/* 
     .email .contacts__text {
       top: -21px;
       right: calc(100% - 215px);
       white-space: nowrap;
+    } */
+
+    .email .contacts__link {
+      padding: 0.3rem;
     }
   }
 
