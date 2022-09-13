@@ -22,7 +22,7 @@
     />
 
     <div class="google-sheets-form__actions">
-      <button @click="onSubmit" v-if="result !== 'success'" class="button large"  :disabled="result === 'error'">
+      <button @click="onSubmit" v-if="result !== 'success'" class="button large"  :disabled="result === 'error' || result === 'wait'">
         <span v-if="result !== 'wait'">Want emails from robonomics</span>
         <span class="isLoading" v-else>Adding you to our special list...</span>
         <span class="spinner">
