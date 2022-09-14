@@ -32,17 +32,22 @@ export default {
     text-align: center;
   }
 
+  .post_abstract.text_abstract {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: var(--base-font-size);
+    /* font-style: normal; */
+  }
+
   @media screen and (max-width:1060px){
         .text_abstract { font-size: 1.7rem; }
     }
 
     @media screen and (max-width:1000px){
         .text_abstract { font-size: 1.4rem; }
+        .post_abstract.text_abstract {
+          font-size: 1.4rem ;
+        }
     }
 
-  .post_abstract {
-    font-weight: 500;
-    font-size: var(--base-font-size);
-    font-style: normal;
-  }
 </style>

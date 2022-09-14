@@ -3,7 +3,10 @@
 
      <MetaInfo
         :pageTitle = "'Robonomics blog, ' + $page.tag.title"
+        :pageImage = "'/website_cover_blogs.png'"
       />
+
+      <!-- <BlogTagsBanner :allTags="$page.allPostsTags.edges" :activeTag="$page.tag.title" /> -->
 
       <div class="layout__title layout__title__tag">
         <h1><a href="/blog/">Robonomics blog</a></h1>
@@ -13,14 +16,23 @@
       <section class="layout blog_grid">
         <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
       </section>
+      
+      <!-- <Pagination class="pagination" 
+        :pageInfo="$page.tag.pageInfo"
+      /> -->
   </layout>
 </template>
 
 <page-query>
-query Tag ($id: ID!) {
+query Tag ($id: ID!, $page: Int) {
   tag (id: $id) {
     title
-    belongsTo {
+    belongsTo(page: $page) @paginate  {
+      totalCount
+      pageInfo {
+        totalPages
+        currentPage
+      }
       edges {
         node {
           ...on Post {
@@ -44,6 +56,8 @@ export default {
   components: {
     MetaInfo: () => import('~/components/MetaInfo.vue'),
     PostCard: () => import('~/components/PostCard.vue'),
+    // Pagination: () => import('~/components/Pagination.vue'),
+    // BlogTagsBanner: () => import('~/components/blocks/BlogTagsBanner.vue')
   }
 }
 </script>
