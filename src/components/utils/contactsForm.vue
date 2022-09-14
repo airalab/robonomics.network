@@ -1,119 +1,88 @@
 <template>
-  <form class="contacts__form" @submit.prevent="onSubmit">
+  <gsp-form class="contacts__form" :gscriptID="gscript" :captchaID="recaptchaSitekey">
     <input
       required 
       name="email" 
       class="contacts__input" 
-      :class="{'sent': isSent}"
+      :class="{'sent': result === 'success'}"
       type="email" 
       placeholder="Your email" 
       data-gsp-name="Email" 
       :data-gsp-data="data_email" 
       v-model="data_email"
-      :disabled="isSent"
+      :disabled="result === 'success'"
     >
 
-    <vue-recaptcha
-      ref="invisibleRecaptcha"
-      @verify="onVerify"
-      size="invisible"
-      :sitekey="recaptchaSitekey">
-    </vue-recaptcha>
+    <input       
+      type="hidden" 
+      placeholder="Location" 
+      data-gsp-name="Location" 
+      :data-gsp-data="location" 
+      v-model="location"
+    />
 
     <div class="google-sheets-form__actions">
-      <button v-if="!isSent" class="button large"  :disabled="error">
-        <span v-if="!isLoading">Want emails from robonomics</span>
+      <button @click="onSubmit" v-if="result !== 'success'" class="button large"  :disabled="result === 'error' || result === 'wait'">
+        <span v-if="result !== 'wait'">Want emails from robonomics</span>
         <span class="isLoading" v-else>Adding you to our special list...</span>
         <span class="spinner">
-          <Spinner v-if="isLoading"/>
+          <Spinner v-if="result === 'wait'"/>
         </span>
       </button>
       <button disabled v-else class="button button-success">Nice, you are in the list</button>
-      <div v-if="error" class="error">{{errorMessage}}</div>
+      <div v-if="result === 'error'" class="error">Something went  wrong :( Try again later</div>
     </div>
-  </form>
+  </gsp-form>
 </template>
 
 <script>
 export default {
     components: {
-      VueRecaptcha: () => import("vue-recaptcha"),
       Spinner: () => import ('@/components/utils/spinner.vue')
     },
-
-  metaInfo: {
-    script: [
-      {
-        src: 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
-        body: true
-      }
-    ]
-  },
+    
 
   data() {
     return {
     data_email: '',
-    isSent: false,
-    isLoading: false,
-    error: false,
-    errorMessage: '',
-    // recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA
+    result: this.$response,
+    interval: null,
+    location: '',
+    recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA,
     gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
-    recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
+    // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
     }
   },
 
   methods: {
 
-    onSubmit: async function () {
-      if (this.data_email === '') {
-        this.error = true;
-        this.errorMessage = 'Please, type in your email';
-        return
+    onSubmit() {
+
+
+      this.interval = setInterval(() => {
+        this.result = this.$response
+        console.log(this.$response)
+      }, 1000)
+
+      if (this.$response === 'success' || this.$response === 'error') {
+        clearInterval(this.interval)
       }
-      this.$refs.invisibleRecaptcha.execute();
+
     },
 
-    onVerify: async function() {
-      let response = '' ;
-      const data = document.querySelectorAll('[data-gsp-data]');
+  },
 
-      this.isSent = false;
-      this.isLoading = false;
-      this.error = false;
+  watch: {
 
-      data.forEach(function(item) {
-        if (response != '') {
-          response += '&'
-        }
-        response += encodeURIComponent(item.dataset.gspName) + '=' + encodeURIComponent(item.dataset.gspData)
-      });
-
-      const fullResponse ='Location=' + encodeURIComponent('https://robonomics.network' + this.$route.path) + '&' + response;
-      
-      try {
-        await this.$gspPostForm(this.gscript, fullResponse);
-
-        this.isLoading = false;
-        this.isSent = true;
-        this.error = false;
-
-      } catch(e) {
-        this.isSent = false;
-        this.isLoading = false;
-        this.error = true;
-        this.errorMessage = e.message
-        console.log(e.message);
+    'result': function(old, curr) {
+      if(old === 'success' || old === 'error') {
+        clearInterval(this.interval)
       }
     }
   },
 
-  watch: {
-    'data_email': function(curr, old) {
-      if (curr !== '') {
-        this.error = false;
-      }
-    }
+  mounted() {
+    this.location = 'https://robonomics.network' + this.$route.path;
   }
 
 }
@@ -124,6 +93,13 @@ export default {
     position: relative;
     font-family: var(--font-family-code);
   }
+
+  .google-sheets-form__actions {
+    padding-right: 7px;
+    padding-bottom: 6px;
+  }
+
+
 
   .button {
     width: 100%;
@@ -141,10 +117,10 @@ export default {
   }
 
   .button-success {
-    background-color: var(--color-green);
+    background-color: var(--color-green) !important;
   }
 
-  .button::disabled {
+  .button:disabled {
     opacity: 1;
     filter: none;
   }
@@ -161,7 +137,7 @@ export default {
   }
 
   .contacts__input.sent {
-    background-color: var(--color-green);
+    background-color: var(--color-green) !important;
   }
 
   .error {

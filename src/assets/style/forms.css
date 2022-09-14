@@ -70,8 +70,10 @@ input[type="checkbox"].big {
 }
 
 input[type="checkbox"].big:checked:after {
-	font-size: 2.5rem;
+	position: absolute;
+	left: 0;
 	top: -0.5rem;
+	font-size: 2.5rem;
 }
 
 

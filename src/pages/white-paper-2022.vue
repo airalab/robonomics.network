@@ -99,7 +99,7 @@
             <p class="first-chapter__descr chapter__descr hyphens">
               {{$ts(`We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.`)}} 
             </p>
-            <h3 class="first-chapter__subtitle chapter__subtitle hyphens">{{$ts(`In this chapter you will learn`)}}:</h3>
+            <h3 class="first-chapter__subtitle chapter__subtitle">{{$ts(`In this chapter you will learn`)}}:</h3>
             <ul class="first-chapter__list chapter__list">
               <li class="first-chapter__item chapter__item">
                 {{$ts(`Ronald Coase and The Nature of the Firm`)}}
@@ -158,7 +158,7 @@
             <p class="second-chapter__descr chapter__descr hyphens">
               {{$ts(`In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.`)}} 
             </p>
-            <h3 class="second-chapter__subtitle chapter__subtitle hyphens">{{$ts(`In this chapter you will learn`)}}:</h3>
+            <h3 class="second-chapter__subtitle chapter__subtitle">{{$ts(`In this chapter you will learn`)}}:</h3>
             <ol class="second-chapter__list chapter__list">
               <li class="second-chapter__item chapter__item">
                 {{$ts(`Overview of the state of the Internet of Things (IoT)`)}}
@@ -283,8 +283,6 @@
         </div>
       </section>
 
-      <!-- <Contacts/> -->
-
     </div>
 
   </layout>
@@ -300,14 +298,12 @@ query {
 
 <script>
   import Parallax from 'parallax-js'
-import Contacts from '../components/Contacts.vue'
 export default {
 
   components: {
     Button: () => import("~/components/Button.vue"),
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     Spot: () => import("~/components/decor/Spot.vue"),
-    Contacts
 },
 
   mounted() {
@@ -365,6 +361,7 @@ export default {
 
   .chapter__subtitle {
     text-transform: none;
+    text-align: left;
     /* white-space: nowrap; */
   }
 
@@ -981,6 +978,199 @@ export default {
       -webkit-animation: winking 0.8s linear infinite;
     }
 
+
+  @keyframes spinCoin {
+
+    0% {
+      width: 7rem;
+      box-shadow:
+        0 0 0 #120e08;
+      animation-timing-function: ease-in;
+    }
+
+    49.999% {
+      width: 0.1rem;
+      box-shadow:
+        0.05rem 0 0 #896c3b,
+        0.1rem 0 0 #896c3b,
+        0.15rem 0 0 #896c3b,
+        0.2rem 0 0 #896c3b,
+        0.25rem 0 0 #896c3b,
+        0.3rem 0 0 #896c3b,
+        0.35rem 0 0 #896c3b,
+        0.4rem 0 0 #896c3b,
+        0.45rem 0 0 #896c3b,
+        0.5rem 0 0 #896c3b,
+        0.55rem 0 0 #896c3b,
+        0.6rem 0 0 #896c3b,
+        0.65rem 0 0 #896c3b,
+        0.7rem 0 0 #896c3b,
+        0.75rem 0 0 #896c3b;
+      transform: translateX(-0.375rem);
+      background-color: #111;
+      animation-timing-function: linear;
+    }
+
+    50.001% {
+      width: 0.1rem;
+      box-shadow:
+        -0.05rem 0 0 #896c3b,
+        -0.1rem 0 0 #896c3b,
+        -0.15rem 0 0 #896c3b,
+        -0.2rem 0 0 #896c3b,
+        -0.25rem 0 0 #896c3b,
+        -0.3rem 0 0 #896c3b,
+        -0.35rem 0 0 #896c3b,
+        -0.4rem 0 0 #896c3b,
+        -0.45rem 0 0 #896c3b,
+        -0.5rem 0 0 #896c3b,
+        -0.55rem 0 0 #896c3b,
+        -0.6rem 0 0 #896c3b,
+        -0.65rem 0 0 #896c3b,
+        -0.7rem 0 0 #896c3b,
+        -0.75rem 0 0 #896c3b;
+      transform: translateX(0.375rem);
+      background-color: var(--lowlight);
+      animation-timing-function: ease-out;
+    }
+
+    100% {
+      width: 7rem;
+      box-shadow:
+        0 0 0 #000;
+    }
+  }
+
+  @keyframes spinSmallCoin {
+
+  0% {
+    width: 3rem;
+    box-shadow:
+      0 0 0 #120e08;
+    animation-timing-function: ease-in;
+  }
+
+  49.999% {
+    width: 0.1rem;
+    box-shadow:
+      0.05rem 0 0 #896c3b,
+      0.1rem 0 0 #896c3b,
+      0.15rem 0 0 #896c3b,
+      0.2rem 0 0 #896c3b,
+      0.25rem 0 0 #896c3b,
+      0.3rem 0 0 #896c3b,
+      0.35rem 0 0 #896c3b,
+      0.4rem 0 0 #896c3b,
+      0.45rem 0 0 #896c3b,
+      0.5rem 0 0 #896c3b,
+      0.55rem 0 0 #896c3b,
+      0.6rem 0 0 #896c3b,
+      0.65rem 0 0 #896c3b,
+      0.7rem 0 0 #896c3b,
+      0.75rem 0 0 #896c3b;
+    transform: translateX(-0.375rem);
+    background-color: #111;
+    animation-timing-function: linear;
+  }
+
+    50.001% {
+      width: 0.1rem;
+      box-shadow:
+        -0.05rem 0 0 #896c3b,
+        -0.1rem 0 0 #896c3b,
+        -0.15rem 0 0 #896c3b,
+        -0.2rem 0 0 #896c3b,
+        -0.25rem 0 0 #896c3b,
+        -0.3rem 0 0 #896c3b,
+        -0.35rem 0 0 #896c3b,
+        -0.4rem 0 0 #896c3b,
+        -0.45rem 0 0 #896c3b,
+        -0.5rem 0 0 #896c3b,
+        -0.55rem 0 0 #896c3b,
+        -0.6rem 0 0 #896c3b,
+        -0.65rem 0 0 #896c3b,
+        -0.7rem 0 0 #896c3b,
+        -0.75rem 0 0 #896c3b;
+      transform: translateX(0.375rem);
+      background-color: var(--lowlight);
+      animation-timing-function: ease-out;
+    }
+
+    100% {
+      width: 3rem;
+      box-shadow:
+        0 0 0 #000;
+    }
+  }
+
+  @keyframes winking {
+    0% {
+      height: 0;
+    }
+    100%{
+      height: 4px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes logo-triangle-1
+  {
+    0% { fill: var(--color-blue-mid ); }
+    25% { fill: var(--color-blue-mid ); }
+    50% { fill: var(--color-violet-mid ); }
+    75% { fill: var(--color-violet); }
+    100% { fill: var(--color-blue-mid ); }
+  }
+
+  @keyframes logo-triangle-2
+    {
+      0% { fill: var(--color-violet); }
+      25% { fill: #E0BDED; }
+      50% { fill: var(--color-blue-mid ); }
+      75% { fill: var(--color-blue-mid );}
+      100% { fill: var(--color-violet); }
+    }
+
+  @keyframes logo-triangle-3
+    {
+      0% { fill: var(--color-violet-mid); }
+      25% { fill: var(--color-violet); }
+      50% { fill: var(--color-violet); }
+      75% { fill: var(--color-violet-dark); }
+      100% { fill: var(--color-violet-mid); }
+    }
+
+  @keyframes CenteredAbsoluteFloatY {
+    0% {
+      transform: translateX(-50%) translateY(100%);
+      z-index: 0;
+    }
+    100%{
+      bottom: -10px;
+      transform:translateX(-50%) translateY(0%);
+      z-index: 20;
+    }
+  }
+
+  @keyframes MoveUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+
+  @keyframes fromColorToBW {
+    from {
+      filter: grayscale(0);
+    }
+    to {
+      filter: grayscale(1);
+    }
+  }
+
     /* media quires */
 
     @media screen and (max-width: 1360px) {
@@ -1080,6 +1270,10 @@ export default {
 
       .wp__banner {
         min-height: 688px;
+      }
+
+      h1 {
+        padding-top: var(--space);
       }
 
       .astronaut {
