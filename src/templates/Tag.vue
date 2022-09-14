@@ -67,8 +67,8 @@ export default {
   components: {
     MetaInfo: () => import('~/components/MetaInfo.vue'),
     PostCard: () => import('~/components/PostCard.vue'),
-    // Pagination: () => import('~/components/Pagination.vue'),
-    // BlogTagsBanner: () => import('~/components/blocks/BlogTagsBanner.vue')
+    Pagination: () => import('~/components/Pagination.vue'),
+    BlogTagsBanner: () => import('~/components/blocks/BlogTagsBanner.vue')
   }
 }
 </script>
