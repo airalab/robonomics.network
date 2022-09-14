@@ -18,13 +18,13 @@
       </section>
       
       <Pagination class="pagination" 
-        :pageInfo="$page.tag.pageInfo"
+        :pageInfo="$page.tag.belongsTo.pageInfo"
       />
   </layout>
 </template>
 
 <page-query>
-query Tag ($id: ID!, $page: Int) {
+query ($id: ID!, $page: Int) {
   tag (id: $id) {
     title
     belongsTo(page: $page) @paginate  {
