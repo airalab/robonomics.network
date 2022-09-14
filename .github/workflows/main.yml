@@ -33,6 +33,7 @@ jobs:
         env:
           FORM_SCRIPT: ${{ secrets.FORM_SCRIPT }}
           GRIDSOME_RECAPTCHA: ${{ secrets.GRIDSOME_RECAPTCHA }}
+          GRIDSOME_CONTACTS_FORM_SCRIPT: ${{ secrets.GRIDSOME_CONTACTS_FORM_SCRIPT }}
 
       - name: Deploy
         #uses: JamesIves/github-pages-deploy-action@3.7.1
