@@ -72,7 +72,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Roboto Mono';
     font-weight: 600;
     background-color: #000;
     color: #fff;
