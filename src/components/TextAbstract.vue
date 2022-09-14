@@ -33,7 +33,6 @@ export default {
   }
 
   .post_abstract.text_abstract {
-    font-size: 1.7rem !important;
     margin-bottom: 0;
     font-weight: 300;
     font-size: var(--base-font-size);
@@ -47,7 +46,7 @@ export default {
     @media screen and (max-width:1000px){
         .text_abstract { font-size: 1.4rem; }
         .post_abstract.text_abstract {
-          font-size: 1.4rem !important;
+          font-size: 1.4rem ;
         }
     }
 
