@@ -570,6 +570,12 @@ query {
       display: none;
     }
   }
+  
+  @media screen and (max-width: 520px) {
+    .img-back img  {
+      --oldy-card-i-size: 300px;
+    }
+  }
 
   @media screen and (max-width: 475px) {
     /* #banner h1 { font-size: calc(var(--base-font-size) * 1); } */
@@ -581,6 +587,13 @@ query {
   }
 
   @media screen and (max-width: 400px) {
+
+    .img-back {
+      height: 232px;
+    }
+    .img-back img  {
+      --oldy-card-i-size: 200px;
+    }
     .typing-1, .typing-2, .typing-3, .typing-static { font-size: calc(var(--base-font-size) * 0.8); }
     /* #banner h1 { font-size: calc(var(--base-font-size) * 0.8); } */
   }
