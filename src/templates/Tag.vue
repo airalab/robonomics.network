@@ -6,7 +6,7 @@
         :pageImage = "'/website_cover_blogs.png'"
       />
 
-      <!-- <BlogTagsBanner :allTags="$page.allPostsTags.edges" :activeTag="$page.tag.title" /> -->
+      <BlogTagsBanner :allTags="$page.allPostsTags.edges" :activeTag="$page.tag.title" />
 
       <div class="layout__title layout__title__tag">
         <h1><a href="/blog/">Robonomics blog</a></h1>
@@ -17,9 +17,9 @@
         <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
       </section>
       
-      <!-- <Pagination class="pagination" 
+      <Pagination class="pagination" 
         :pageInfo="$page.tag.pageInfo"
-      /> -->
+      />
   </layout>
 </template>
 
@@ -43,6 +43,17 @@ query Tag ($id: ID!, $page: Int) {
             content
             cover_image (width: 1500, quality: 100)
           }
+        }
+      }
+    }
+  }
+  allPostsTags: allPost(filter: {locale: { eq: "en" }} ) {
+    edges {
+      node {
+        tags {
+          id
+          title
+          path
         }
       }
     }

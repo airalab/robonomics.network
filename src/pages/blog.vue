@@ -6,10 +6,10 @@
       :pageDescription = "$static.metadata.siteDescription"
       :pageImage = "'/website_cover_blog.png'"
     />
+<!-- 
+    <h1 v-if="$ts('Robonomics blog')" class="layout layout__content">{{$ts('Robonomics blog')}}</h1> -->
 
-    <h1 v-if="$ts('Robonomics blog')" class="layout layout__content">{{$ts('Robonomics blog')}}</h1>
-
-    <!-- <BlogTagsBanner :allTags="$page.allPostsTags.edges"/> -->
+    <BlogTagsBanner :allTags="$page.allPostsTags.edges"/>
 
     <div v-if="$page.posts.edges.length === 0" class="align-center layout">
       <blockquote>{{$ts('No posts yet')}}</blockquote>
