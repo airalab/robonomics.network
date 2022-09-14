@@ -8,10 +8,10 @@
       :pageImageHeight = "'576'"
     />
 
-    <!-- <div class="small-banner">
+    <div class="small-banner">
       <h3>{{$ts('Important news & announcements')}}</h3>
       <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
-    </div> -->
+    </div>
 
     <div class="post__header animate-inside" v-in-viewport.once>
         <g-image :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
