@@ -106,6 +106,7 @@ export default {
     padding: 1.5rem 0.8rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     box-shadow: 6px 6px 0 #000;
     color: #000;
     background-color: var(--color-link-contacts) ;

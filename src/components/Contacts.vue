@@ -255,6 +255,7 @@ export default {
 
   .form {
     width: 100%;
+    margin-top: 5px;
     opacity: 0;
     visibility: hidden;
     transform: translateX(200px);
@@ -275,12 +276,13 @@ export default {
     .contacts__wrapper {
       position: relative;
       padding-left: 2rem;
-      align-items: flex-end;
+      min-height: 485px;
+      /* align-items: flex-end; */
     }
 
-    .contacts__items-wrapper {
+    /* .contacts__items-wrapper {
       margin-bottom: 8rem;
-    }
+    } */
 
     .contacts__items {
       /* flex-direction: column; */
@@ -306,7 +308,7 @@ export default {
       position: absolute;
       width: 70%;
       right: 0;
-      bottom: 10px;
+      bottom: 0;
     }
   }
 
@@ -364,6 +366,7 @@ export default {
     }
     
     .form {
+      margin-top: 0;
       position: absolute;
       left: 0;
       right: 0;
