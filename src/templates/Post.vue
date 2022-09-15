@@ -8,21 +8,25 @@
       :pageImageHeight = "'576'"
     />
 
-    <div class="layout__title blog_title">
-      <h1 v-html="$page.post.title"/>
+    <div class="small-banner">
+      <h3>{{$ts('Important news & announcements')}}</h3>
+      <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
     </div>
-
-    <div class="layout">
-      <PostMeta :post="$page.post" :author="$page.post.author" />
-      <!-- <post-author v-if="$page.post.author" :author="$page.post.author"/> -->
-    </div>
-
-    <Abstract v-if="$page.post.abstract" :text="$page.post.abstract" :className="'post_abstract'"/>
 
     <div class="post__header animate-inside" v-in-viewport.once>
         <g-image :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
     </div>
 
+    <div class="layout__title blog_title">
+      <h1 v-html="$page.post.title"/>
+    </div>
+
+    <Abstract v-if="$page.post.abstract" :text="$page.post.abstract" :className="'post_abstract'"/>
+
+    <div class="layout">
+      <PostMeta :post="$page.post" :author="$page.post.author" />
+      <!-- <post-author v-if="$page.post.author" :author="$page.post.author"/> -->
+    </div>
 
     <section class="post layout layout__text hyphens">
        <VueRemarkContent />
@@ -103,8 +107,8 @@ query($id: ID!) {
   }
 
   .post__header {
-      margin-top: var(--space-text);
-      max-width: 1400px;
+      /* margin-top: var(--space-text); */
+      /* max-width: 1400px; */
       margin-left: auto;
       margin-right: auto;
   }
@@ -124,6 +128,48 @@ query($id: ID!) {
 
   .post h2 strong, .post h3 strong, .post h4 strong, .post h5 strong {
     color: var(--color-green);
+  }
+
+  .small-banner {
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue);
+  }
+
+  .small-banner h3 {
+    margin-bottom: 0;
+    margin-right: 35px;
+    color: #fff;
+  }
+
+  .small-banner img {
+    width: 94px;
+    height: 103px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .small-banner img {
+      width: 94px;
+      height: 60px;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .small-banner {
+      padding: 5px;
+    }
+
+    .small-banner img {
+      height: 50px;
+    }
+
+    .small-banner h3 {
+      margin-right: 0;
+      font-size: 0.8rem;
+    }
   }
 </style>
 
