@@ -7,11 +7,11 @@
       />
 
       <BlogTagsBanner :allTags="$page.allPostsTags.edges" :activeTag="$page.tag.title" />
-
+<!-- 
       <div class="layout__title layout__title__tag">
         <h1><a href="/blog/">Robonomics blog</a></h1>
         <h2>Tag: {{ $page.tag.title }}</h2>
-      </div>
+      </div> -->
 
       <section class="layout blog_grid">
         <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
@@ -77,4 +77,3 @@ export default {
   .layout__title__tag h1 { margin-bottom: 0; }
   .layout__title__tag h2 { margin-top: 0; }
 </style>
-
