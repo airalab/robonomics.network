@@ -8,10 +8,12 @@
       :pageImageHeight = "'576'"
     />
 
-    <div class="small-banner">
+    <g-link to="/blog/" class="small-banner section__blue">
       <h3>{{$ts('Important news & announcements')}}</h3>
       <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
-    </div>
+    </g-link>
+
+    <hr/>
 
     <div class="post__header animate-inside" v-in-viewport.once>
         <g-image :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
@@ -136,7 +138,7 @@ query($id: ID!) {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-blue);
+    text-decoration: none;
   }
 
   .small-banner h3 {
@@ -148,6 +150,11 @@ query($id: ID!) {
   .small-banner img {
     width: 94px;
     height: 103px;
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   @media screen and (max-width: 700px) {
