@@ -1,5 +1,5 @@
 <template>
-  <section id="banner" class="section__solid section__blue">
+  <section id="blog-banner" class="section__solid section__blue">
     <div class="layout">
         <h1>{{$ts('Important news &amp; announcements')}}</h1>
         <div class="blog-banner__wrapper">
@@ -8,6 +8,9 @@
           </div>
           <div class="blog-banner__tags-wrapper" v-if="tags.length">
             <ul class="list blog-banner__tags-list">
+              <li class="blog-banner__tags-item">
+                <g-link class="blog-banner__tags-link" to="/blog/">{{$ts('All posts')}}</g-link>
+              </li>
               <li class="blog-banner__tags-item" v-for="tag in tags" :key="tag.id">
                 <g-link class="blog-banner__tags-link" :class="{'inactiveTag': activeTag !== '' && tag.title !== activeTag}" :to="tag.path">{{tag.title}}</g-link>
               </li>
@@ -58,6 +61,11 @@ export default {
 
 <style scoped>
 
+  #blog-banner {
+    padding-top: calc(var(--space)*4);
+    padding-bottom: calc(var(--space)*4);
+  }
+
   h1 {
     padding-top: 0;
     margin-top: 0;
@@ -94,6 +102,7 @@ export default {
   }
 
   .blog-banner__tags-link {
+    font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     font-weight: 600;
     text-decoration: none;
     color: #fff;
