@@ -33,19 +33,22 @@ export default {
 <style scoped>
   .post-meta {
     font-size: 90%;
-    margin-bottom: calc(var(--space)*2);
+    font-style: italic;
+    opacity: 0.7;
+    margin-bottom: 0;
     font-family: var(--font-family-code);
 
-    border-width: 1px 0;
+    /* border-width: 1px 0;
     border-style: dashed;
-    border-color: var(--color-gray);
+    border-color: var(--color-gray); */
     padding: var(--space) 0;
-
+    padding-bottom: 0;
     text-align: center;
   }
 
   .post-meta span, .post-meta a {
     margin-left: .4rem;
+    text-decoration: none;
   }
 
   .post-meta span:first-child, .post-meta a:first-child {
