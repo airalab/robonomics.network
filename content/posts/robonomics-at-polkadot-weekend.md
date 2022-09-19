@@ -3,9 +3,8 @@ title: Robonomics at Polkadot Weekend in Tbilisi
 date: 2022-09-14
 published: true
 locale: 'en'
-tags: ['Events', 'Polkadot']
+tags: ['Events', 'Polkadot', 'Smart Home', 'Internet of Things']
 cover_image: ./images/robonomics-at-polkadot-weekend/Polkadot_Weekend_Georgia.jpg
-# canonical_url: false
 description: "Cyber Academy is hosting an event in Tbilisi, Georgia, where participants will be able to get acquainted with the Polkadot ecosystem, starting from the very basics: a detailed discussion of all the components of Polkadot, networking in an informal atmosphere and developer workshops."
 abstract: "Date: 24-25 September."
 ---

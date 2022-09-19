@@ -3,10 +3,10 @@ title: Monetizing Logs of Boston Dynamics Spot with Ocean Datatokens
 date: 2021-09-09
 published: true
 locale: 'en'
-tags: ['Collaborations']
 cover_image: ./images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/Robonomics_Ocean_p3_blog.jpg
 description: "In the last article, we presented our ROS package - ocean_ros, which connects the Ocean API and ROS, and also partially touched on the use case for selling technical logs from the robots. Today we will dive deeper into this use case and describe a specific example of devices’ data tokenization."
 abstract: "It is time for a new stage of integration with Ocean Protocol."
+tags: ['Collaborations', 'Use Cases']
 ---
 import Card from '~/components/TextCard.vue'
 

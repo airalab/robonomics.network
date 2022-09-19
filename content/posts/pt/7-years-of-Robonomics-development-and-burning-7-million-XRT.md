@@ -3,7 +3,7 @@ title: 7 ANOS DE DESENVOLVIMENTO DA ROBONOMICS E QUEIMA DE 7 MILHÕES DE XRTs
 date: 2022-07-27
 published: true
 locale: 'pt'
-tags: ['Events', 'Robonomics parachain']
+tags: ['Paracadeia de Robonomics', 'Token XRT']
 cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
 description: "Para a Robonomics, ainda há muito trabalho pela frente, e muitas coisas irão acontecer pela primeira vez."

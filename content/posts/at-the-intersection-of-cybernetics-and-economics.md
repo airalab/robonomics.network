@@ -3,9 +3,8 @@ title: AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS
 date: 2022-09-01
 published: true
 locale: 'en'
-tags: ['Robonomics']
+tags: ['Philosophy of Robonomics']
 cover_image: ./images/at-the-intersection-of-cybernetics-and-economics/сover_1.jpg
-# canonical_url: false
 description: "The world of technology and smart devices are actively developing. New gadgets and systems appear every day. They help to simplify and improve human life. However, it is not the only task. One of the obstacles to robotic technologies is the high level of device cybersecurity and user data privacy. Robonomics developers have been working on this task for 7 years."
 abstract: "The world of technology and smart devices are actively developing. New gadgets and systems appear every day. They help to simplify and improve human life. However, it is not the only task. One of the obstacles to robotic technologies is the high level of device cybersecurity and user data privacy. Robonomics developers have been working on this task for 7 years."
 ---

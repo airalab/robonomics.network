@@ -6,6 +6,7 @@ locale: 'es'
 cover_image: ./images/release-2.0-&-xcm-support/cover.jpg
 description: "Release 2.0 es un hito muy importante para nuestro proyecto y comunidad, ya que abre la posibilidad de integrar Robonomics con otras parachains en el ecosistema de Kusama Network. En los próximos meses, el equipo de R&D del proyecto se dedicará a las integraciones con las parachains Statemine, Karura Network, Moonriver Network, Crust Network y KILT Protocol."
 abstract: "¡La versión 2.0 y la compatibilidad con XCM están aquí!"
+tags: ['Paracaídas Robonomics', 'Mapa ruta', 'Nuevo lanzamiento']
 ---
 
 [Release 2.0](https://github.com/airalab/robonomics/releases/tag/v2.0.0) es un hito muy importante para nuestro proyecto y comunidad, ya que abre la posibilidad de integrar [Robonomics](http://robonomics.network/) con otras parachains en el ecosistema de [Kusama Network](http://kusama.network/). En los próximos meses, el equipo de R&D del proyecto se dedicará a las integraciones con las parachains Statemine, [Karura Network](http://karura.network/), [Moonriver Network](http://moonbeam.foundation/), [Crust Network](https://crust.network/) y [KILT Protocol](http://kilt.io/).

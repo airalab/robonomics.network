@@ -1,17 +1,18 @@
 ---
-title: "February 23 / Lesson 2 / The Robonomics Whitepaper 2022. Chapter 1. At the junction cybernetics and economics"
+title: "Lesson 2 / The Robonomics Whitepaper 2022. Chapter 1. At the junction cybernetics and economics"
 date: 2022-02-23T08:30:00
 published: true
 locale: 'en'
 cover_image: ./images/online-winter-school-2022-lesson-2/cover.jpg
 description: "We are glad that you were able to pass through the black mirror and not drown in the digital world. But now a much deeper dive awaits you... the dive into the theory of the latest web3 technologies at the intersection of Cybernetics and Economics, which are designed to help IoT systems function safely and efficiently in our homes and cities."
-abstract: "Hello to all participants!"
+abstract: "Hello to all participants! We are glad that you were able to pass through the black mirror and not drown in the digital world. But now a much deeper dive awaits you..."
+tags: ['Online school', 'Philosophy of Robonomics']
 ---
 import Card from '~/components/TextCard.vue'
 import UserForm from '~/components/blocks/UserForm.vue'
 import Button from '~/components/Button.vue'
 
-We are glad that you were able to pass through the black mirror and not drown in the digital world. But now a much deeper dive awaits you... the dive into the theory of the latest web3 technologies at the intersection of Cybernetics and Economics, which are designed to help IoT systems function safely and efficiently in our homes and cities.
+ the dive into the theory of the latest web3 technologies at the intersection of Cybernetics and Economics, which are designed to help IoT systems function safely and efficiently in our homes and cities.
 
 ## Welcome to the second lesson of Winter School of Robonomics 2022!
 

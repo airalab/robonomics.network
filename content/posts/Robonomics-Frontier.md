@@ -3,10 +3,10 @@ title: Robonomics Frontier
 date: 2021-07-23
 published: true
 locale: 'en'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/Robonomics-Frontier/Robonomics-Frontier_cover_2_blog.jpg
 description: "As a result of the summer Kusama crowdloans, Robonomics reached the Top-10 projects of the Polkadot ecosystem. Before the next wave of auctions, the project’s developers decided to deploy and maintain a functionally identical network."
 abstract: "As a result of the summer Kusama crowdloans, Robonomics reached the Top-10 projects of the Polkadot ecosystem. Before the next wave of auctions, the project’s developers decided to deploy and maintain a functionally identical network — Frontier Relay chain, that will be integrated with Robonomics parachain."
+tags: ['Robonomics parachain', 'XRT token', 'Staking', 'Roadmap']
 ---
 import Card from '~/components/TextCard.vue'
 

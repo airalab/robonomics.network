@@ -3,10 +3,10 @@ title: "Trajectory 2022: Heading for Product Launches"
 date: 2021-12-31
 published: true
 locale: 'en'
-# tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/trajectory-2022-heading-for-product-launches/cover.jpg
 description: "The year 2021 ends and with it a 4-year cycle of studying the Polkadot technology and R&D work on the implementation of the Robonomics parachain."
 abstract: "The year 2021 ends and with it a 4-year cycle of studying the Polkadot technology and R&D work on the implementation of the Robonomics parachain."
+tags: ['Roadmap', 'Use Cases']
 ---
 import Card from '~/components/TextCard.vue'
 

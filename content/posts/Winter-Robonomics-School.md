@@ -3,10 +3,10 @@ title: Robonomics Winter School 2021
 date: 2021-01-13
 published: true
 locale: 'en'
-tags: ['Events']
 cover_image: ./images/robonomics-school/WS-robonomics-2021-Blog.jpg
 description: "Free online Master Classes and Lectures open for attendees. Try to build Dapps and Web Services for IoT on Polkadot Parachain in time of Robonomics Winter School 2021 (from 10 to 24 February)"
 abstract: "Free online Master Classes and Lectures open for attendees. Try to build Dapps and Web Services for IoT on Polkadot Parachain in time of Robonomics Winter School from 10th to 24th February 2021"
+tags: ['Online school']
 ---
 import Card from '~/components/TextCard.vue'
 import Button from '~/components/Button.vue'
@@ -234,17 +234,6 @@ Podcast with Vitaly [Smart-lease of Robots]
 
 The Robonomics Winter School is an excellent opportunity for software developers and all interested to gain invaluable knowledge on working with the Robonomics Network and related packages for building Dapps and operating blockchain technologies and coding. The Robonomics Network invites all interested to join the courses and take advantage of the unique opportunity of gaining firsthand knowledge from industry experts. The courses will be hosted by Aleksandr Kapitonov (Dean of the Faculty of Infocommunication Technologies), Aleksandr Krupenkin (Robotics/IoT/Ethereum smart contract developer), Aleksandr Starostin (Web developer, Ethereum smart contract developer), Vadim Manaenko (Robotics and IoT engineer, drones developer), Anastasiia Bakai (UI, Motion Design, Front-end), Sergei Lonshakov (Robonomics co-founder and software architect).
 
-<section class="animate-inside" v-in-viewport.once>
-<Card :orientation="'vertical'" :image="'/posts/robonomics-school/join.png'" :imageSize="'big'" :imageRound="false" :link="'https://discord.gg/5UWNGNaAUf'" :back="'gradient'">
-
-## Join Robonomics Winter School Community
-
-Meet likeminded people, get rewards and chat with core Robonomics developers. 
-
-<Button :link="'https://discord.gg/5UWNGNaAUf'" :label="'Join'" :button="'primary large orange'"/>
-
-</Card>
-</section>
 
 ## Info partners
 

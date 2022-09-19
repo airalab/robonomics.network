@@ -3,10 +3,10 @@ title: The ultimate guide to Robonomics, RWS and Robonomics parachain on Polkado
 date: 2021-02-25
 published: true
 locale: 'en'
-tags: ['RWS', 'Tokens', 'Robonomics parachain']
 cover_image: ./images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-logo.jpg
 description: "This article delves into the connection between Robonomics platform, its parachain on the Polkadot ecosystem and the Robonomics Web Services (RWS)"
 abstract: "This article delves into the connection between Robonomics platform, its parachain on the Polkadot ecosystem and the Robonomics Web Services (RWS)"
+tags: ['Robonomics parachain', 'RWS token', 'Subscription']
 ---
 
 Taking into account the never-ending discussions on the backbone operation of Robonomics, let’s investigate the under the hood structure and outline the main pillars of the network. This article delves into the connection between Robonomics platform, its [parachain](https://blog.aira.life/robonomics-parachain-on-kusama-40853780c709) on the Polkadot ecosystem and the [Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42) (RWS).

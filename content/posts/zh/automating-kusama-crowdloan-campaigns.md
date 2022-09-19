@@ -3,10 +3,10 @@ title: 自动化众贷活动
 date: 2021-12-08
 published: true
 locale: 'zh'
-# tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/automating-kusama-crowdloan-campaigns/cover.jpg
 description: "最初的平行链插槽拍卖及其相关的众贷存在先发劣势，导致其价格难以预测，并且往往过高。这种劣势在进行价格厘定的任何新市场中都非常常见，尤其是像平行链拍卖这样的市场，许多团队正在针对不同需求推出多样化产品。"
 abstract: "最初的平行链插槽拍卖及其相关的众贷存在先发劣势，导致其价格难以预测，并且往往过高。这种劣势在进行价格厘定的任何新市场中都非常常见，尤其是像平行链拍卖这样的市场，许多团队正在针对不同需求推出多样化产品。"
+tags: ['Robonomics 平行链']
 ---
 import Card from '~/components/TextCard.vue'
 import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'

@@ -6,6 +6,7 @@ locale: 'ru'
 cover_image: ./images/robonomics-officially-launches-the-ambassador-program/cover.jpg
 description: "Команда Робономики приглашает к сотрудничеству всех, кто увлечен идеей проекта и готов внести свой вклад в развитие и продвижение Робономики на международной арене."
 abstract: "Команда Робономики приглашает к сотрудничеству всех, кто увлечен идеей проекта и готов внести свой вклад в развитие и продвижение Робономики на международной арене."
+tags: ['Парачейн Робономика', 'Сообщество']
 ---
 import Card from '~/components/TextCard.vue'
 import RoboList from '~/components/blocks/List.vue'

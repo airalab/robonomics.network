@@ -6,19 +6,11 @@ locale: 'en'
 cover_image: ./images/online-winter-school-2022-schedule/cover.jpg
 description: "The third Robonomics Winter School will aim to improve the user experiences of decentralized applications in smart device control tasks, including complex robotic scenarios."
 abstract: "The third Robonomics Winter School will aim to improve the user experiences of decentralized applications in smart device control tasks, including complex robotic scenarios."
+tags: ['Online school']
 ---
 import Card from '~/components/TextCard.vue'
-import UserForm from '~/components/blocks/UserForm.vue'
 
 The participants of the winter school will have three lectures and gain a lot of practice using (d)apps based on the Robonomics platform.
-
-<Card>
-
-### Get notified when Winter School 2022 starts
-
-<UserForm comment="website post schedule"/>
-
-</Card>
 
 <Card>
 
@@ -82,11 +74,3 @@ In addition to daily lessons, during the winter school, participants will receiv
 - A telescope in the Atacama desert, and the challenge of issuing an NFT postcard with a photo taken via dapp.
 - An open lesson on renting via dapp and the remote control of a robotic “Spot” dog from Boston Dynamics.
 - Presentation of the Feek quality control system, and a search for counterfeit products by QR codes.
-
-<Card>
-
-### Get notified when Winter School 2022 starts
-
-<UserForm comment="website post schedule"/>
-
-</Card>

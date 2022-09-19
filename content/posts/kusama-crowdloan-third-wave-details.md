@@ -3,10 +3,10 @@ title: Third Robonomics Crowdloan Campaign
 date: 2021-10-25
 published: true
 locale: 'en'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/kusama-crowdloan-third-wave-details/cover.jpg
 description: "Over the past 4 months, the most anticipated and user-friendly projects from the world of DeFi, smart contracts/EVM, and the first mechanisms to ensure user privacy have been integrated into the Kusama ecosystem. Perhaps the time has come for mechanisms to integrate with the real economy by putting IoT devices under Kusama's control... We will find out if this is the case during the third round of auctions."
 abstract: "Over the past 4 months, the most anticipated and user-friendly projects from the world of DeFi, smart contracts/EVM, and the first mechanisms to ensure user privacy have been integrated into the Kusama ecosystem. Perhaps the time has come for mechanisms to integrate with the real economy by putting IoT devices under Kusama's control... We will find out if this is the case during <a href='/kusama-slot/'>the third round of auctions</a>."
+tags: ['Robonomics parachain']
 ---
 import Card from '~/components/TextCard.vue'
 

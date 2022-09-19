@@ -4,9 +4,7 @@ date: 2020-10-26
 published: true
 locale: 'en'
 tags: ['Robonomics parachain']
-# series: false
 cover_image: ./images/robonomics-parachain-lease-offering/robonomics-parachain-bond-offering-cover-web.jpg
-# canonical_url: false
 description: "Robonomics developers aim to allocate $720,000 for a 2-year lease of a slot in the Kusama network. This underlying amount of XRT will be distributed among the KSM holders who will support the project with their tokens at the upcoming auction of Polkadot’s wild cousin."
 ---
 

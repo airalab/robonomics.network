@@ -6,7 +6,7 @@ locale: 'it'
 cover_image: ./images/robonomics-and-crust-networks-strategic-partnership/cover.png
 description: "Questa partnership significa che ci sarà un’integrazione molto più profonda fra le parachain Crust e Robonomics su Kusama, oltre a un nuovo approccio interessante per la collaborazione cross-chain per semplificare l’esperienza dell’utente."
 abstract: "Questa partnership significa che ci sarà un’integrazione molto più profonda fra le parachain Crust e Robonomics su Kusama, oltre a un nuovo approccio interessante per la collaborazione cross-chain per semplificare l’esperienza dell’utente."
-tags: ['Collaborations']
+tags: ['Collaborazioni', 'Robonomics paracatena']
 ---
 
 import RoboList from '~/components/blocks/List.vue'

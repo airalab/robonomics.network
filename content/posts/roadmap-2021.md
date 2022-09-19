@@ -3,11 +3,10 @@ title: Trajectory of Robonomics Development 2021, Part 1
 date: 2021-02-18
 published: true
 locale: 'en'
-tags: ['Roadmap', 'Robonomics parachain']
 cover_image: ./images/roadmap-2021/1.jpg
-# canonical_url: false
 description: "The Polkadot architecture is becoming explicit and complete, which should allow us, as parachain developers, to shift our focus from maintaining improvements in Polkadot dependencies (the substrate framework, cumulus and other), and move on to increasing the functionality of our parachain."
 abstract: "The Polkadot architecture is becoming explicit and complete, which should allow us, as parachain developers, to shift our focus from maintaining improvements in Polkadot dependencies (the substrate framework, cumulus and other), and move on to increasing the functionality of our parachain."
+tags: ['Roadmap', 'Robonomics parachain']
 ---
 
 Starting with this article, I would like to share the tasks that the core project development team are ready to share with the community today.

@@ -3,7 +3,7 @@ title: 7 years of Robonomics development and burning 7 million XRT
 date: 2022-07-27
 published: true
 locale: 'en'
-tags: ['Events', 'Robonomics parachain']
+tags: ['Robonomics parachain', 'XRT token']
 cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
 description: "For Robonomics, there is still much of our roadmap ahead of us, and many things will happen for the first time."

@@ -5,12 +5,13 @@ published: true
 locale: 'en'
 cover_image: ./images/online-winter-school-2022-lesson-telescope/cover.jpg
 description: "In this lesson, we will show you possibly our most inspiring app so far. We love the space theme and we all look forward to the James Web Telescope revealing to mankind the secrets of the early state of the universe."
-abstract: "Hello friends!"
+abstract: "Hello friends! In this lesson, we will show you possibly our most inspiring app so far."
+tags: ['Online school', 'Use Cases']
 ---
 import Card from '~/components/TextCard.vue'
 import UserForm from '~/components/blocks/UserForm.vue'
 
-In this lesson, we will show you possibly our most inspiring app so far. We love the space theme and we all look forward to the James Web Telescope revealing to mankind the secrets of the early state of the universe.
+We love the space theme and we all look forward to the James Web Telescope revealing to mankind the secrets of the early state of the universe.
 
 In the meantime, we want to give you the opportunity to explore the observable universe in an entertaining way and make yourself or your loved ones a beautiful NFT of deep space.
 
@@ -43,16 +44,5 @@ We hope you enjoy it!
 ### Here is how the whole process will go:
 
 https://youtu.be/q7yaqlmrzZs
-
-</Card>
-
-
-<Card>
-
-## Stay tuned!
-
-If you'd like to receive email notifications about lessons start and some helpful materials, feel free to subscribe:
-
-<UserForm comment="robonomics.network telescope"/>
 
 </Card>

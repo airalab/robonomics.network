@@ -6,6 +6,7 @@ locale: 'de'
 cover_image: ./images/robonomics-officially-launches-the-ambassador-program/cover.jpg
 description: "Das Robonomics-Team lädt alle ein, die sich für die Idee des Projekts begeistern und bereit sind, zur Entwicklung und Förderung von Robonomics in der internationalen Arena ihren Beitrag zu leisten"
 abstract: "Das Robonomics-Team lädt alle ein, die sich für die Idee des Projekts begeistern und bereit sind, zur Entwicklung und Förderung von Robonomics in der internationalen Arena ihren Beitrag zu leisten"
+tags: ['Robonomics Parachain', 'Gemeinschaft']
 ---
 import Card from '~/components/TextCard.vue'
 import RoboList from '~/components/blocks/List.vue'

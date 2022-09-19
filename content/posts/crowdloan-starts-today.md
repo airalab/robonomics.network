@@ -3,11 +3,10 @@ title: Robonomics Crowdloan final parameters and 48 weeks roadmap
 date: 2021-06-28
 published: true
 locale: 'en'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/crowdloan-starts-today/Crowdloan_final_parameters_Roadmap_blog.jpg
-# canonical_url: false
 description: "Robonomics Developers publish the KSM crowdloan module on June 28th. Meet final parameters, increased rewards, Robonomics development plans after auction."
 abstract: "Robonomics Developers publish the KSM crowdloan module on June 28th. Meet final parameters, increased rewards, Robonomics development plans after auction."
+tags: ['Robonomics parachain']
 ---
 import Card from '~/components/TextCard.vue'
 

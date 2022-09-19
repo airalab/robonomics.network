@@ -3,7 +3,7 @@ title: Robonomics Town Hall 2022
 date: 2022-08-27
 published: true
 locale: 'en'
-tags: ['Robonomics parachain']
+tags: ['Robonomics parachain', 'Community']
 cover_image: ./images/robonomics-town-hall-2022/cover.jpg
 description: "During the last week of August (August 28 - September 3), be ready to participate in discussions and voting mechanisms using your XRT tokens!"
 abstract: "During the last week of August (August 28 - September 3), be ready to participate in discussions and voting mechanisms using your XRT tokens!"

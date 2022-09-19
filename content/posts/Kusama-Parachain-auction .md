@@ -3,13 +3,12 @@ title: Kusama Parachain Lease Offering, April 2021
 date: 2021-04-17
 published: true
 locale: 'en'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/Kusama-Parachain-auction/Kusama-Parachain-auction.jpg
 description: "Robonomics rewards the Kusama Parachain auction participants!"
 abstract: "Robonomics rewards the Kusama Parachain auction participants!"
+tags: ['Robonomics parachain']
 ---
 import Card from '~/components/TextCard.vue'
-import Button from '~/components/Button.vue'
 
 <div class="animate-inside" v-in-viewport.once>
 

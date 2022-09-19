@@ -3,10 +3,10 @@ title: "Траектория 2022: курс на запуск продуктов
 date: 2021-12-31
 published: true
 locale: 'ru'
-# tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/trajectory-2022-heading-for-product-launches/cover.jpg
 description: "Заканчивается 2021 год и вместе с ним 4-летний цикл изучения технологии Polkadot и R&D работ по реализации парачейна Робономики."
 abstract: "Заканчивается 2021 год и вместе с ним 4-летний цикл изучения технологии Polkadot и R&D работ по реализации парачейна Робономики."
+tags: ['Дорожная карта', 'Сценарии использования']
 ---
 import Card from '~/components/TextCard.vue'
 

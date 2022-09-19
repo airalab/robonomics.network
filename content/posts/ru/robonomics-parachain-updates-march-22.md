@@ -6,6 +6,7 @@ locale: 'ru'
 cover_image: ./images/robonomics-parachain-updates-march-22/cover.jpg
 description: "Парачейн Робономики был запущен в январе этого года, а первый публично доступный отчёт о проделанной работе был опубликован 18 января в блоге. Далее будет описание работ, выполненных в рамках задач, обозначенных в дорожной карте на Github"
 abstract: ""
+tags: ['Парачейн Робономика', 'Дорожная карта', 'Новый релиз']
 ---
 
 Парачейн Робономики был запущен в январе этого года, а первый публично доступный отчёт о проделанной работе был [опубликован 18 января в блоге](https://robonomics.network/blog/parachain-on-kusama-first-week-report/). Далее будет описание работ, выполненных в рамках задач, обозначенных в дорожной карте на Github: [Tracking issue for Robonomics Parachains on Kusama Launch #145](https://github.com/airalab/robonomics/issues/145).
