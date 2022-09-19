@@ -3,10 +3,10 @@ title: Automating Crowdloan Campaigns
 date: 2021-12-08
 published: true
 locale: 'en'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/automating-kusama-crowdloan-campaigns/cover.jpg
 description: "The experience and data from the first cohort of teams who have secured crowdloans can now provide a foundation that future teams can build from to better price, and automate the process of securing crowdloans and winning auctions."
 abstract: "The experience and data from the first cohort of teams who have secured crowdloans can now provide a foundation that future teams can build from to better price, and automate the process of securing crowdloans and winning auctions."
+tags: ['Robonomics parachain']
 ---
 import Card from '~/components/TextCard.vue'
 import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'

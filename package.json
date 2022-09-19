@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
+    "build-m1": "export NODE_OPTIONS=--openssl-legacy-provider && gridsome build",
     "develop": "gridsome develop",
     "develop-m1": "export NODE_OPTIONS=--openssl-legacy-provider && gridsome develop",
     "explore": "gridsome explore"

@@ -2,32 +2,27 @@
   <layout>
 
      <MetaInfo
-        :pageTitle = "'Robonomics blog, ' + $page.tag.title"
+        :pageTitle = "'Robonomics blog, ' + $page.TagPosts.title"
         :pageImage = "'/website_cover_blogs.png'"
       />
 
-      <BlogTagsBanner :allTags="$page.allPostsTags.edges" :activeTag="$page.tag.title" />
-<!-- 
-      <div class="layout__title layout__title__tag">
-        <h1><a href="/blog/">Robonomics blog</a></h1>
-        <h2>Tag: {{ $page.tag.title }}</h2>
-      </div> -->
+      <BlogTagsBanner :allTags="tagsList" :activeTag="$page.TagPosts.title" />
 
       <section class="layout blog_grid">
-        <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+        <PostCard v-for="edge in postList" :key="edge.node.id" :post="edge.node"/>
       </section>
       
       <Pagination class="pagination" 
-        :pageInfo="$page.tag.belongsTo.pageInfo"
+        :pageInfo="$page.TagPosts.belongsTo.pageInfo"
       />
   </layout>
 </template>
 
 <page-query>
-query ($id: ID!, $page: Int) {
-  tag (id: $id) {
+query ($id: ID!) {
+  TagPosts: tag (id: $id) {
     title
-    belongsTo(page: $page) @paginate  {
+    belongsTo @paginate  {
       totalCount
       pageInfo {
         totalPages
@@ -42,14 +37,17 @@ query ($id: ID!, $page: Int) {
             description
             content
             cover_image (width: 1500, quality: 100)
+            locale
           }
         }
       }
     }
   }
-  allPostsTags: allPost(filter: {locale: { eq: "en" }} ) {
+  
+  allPostsTags: allPost(filter: { published: { eq: true }}) {
     edges {
       node {
+        locale
         tags {
           id
           title
@@ -69,6 +67,20 @@ export default {
     PostCard: () => import('~/components/PostCard.vue'),
     Pagination: () => import('~/components/Pagination.vue'),
     BlogTagsBanner: () => import('~/components/blocks/BlogTagsBanner.vue')
+  },
+
+  computed: {
+    tagsList() {
+      return this.$page.allPostsTags.edges.filter((e) => {
+        return e.node.locale === this.$locale
+      })
+    },
+
+    postList() {
+      return this.$page.TagPosts.belongsTo.edges.filter((e) => {
+        return e.node.locale === this.$locale
+      })
+    }
   }
 }
 </script>

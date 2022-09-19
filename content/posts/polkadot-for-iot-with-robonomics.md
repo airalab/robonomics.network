@@ -3,10 +3,10 @@ title: "Polkadot for the IoT market: Robonomics is ready for real world use case
 date: 2021-08-31
 published: true
 locale: 'en'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama', 'IoT', 'Polkadot']
 cover_image: ./images/polkadot-for-iot-with-robonomics/cover.jpg
 description: "The Robonomics team wants to impact the Kusama network development with four scenarios from the real world. These use cases describe unique opportunities for the crypto audience and all participants of the IoT market."
-abstract: "The Robonomics team wants to impact the Kusama network development with four scenarios from the real world. These use cases describe unique opportunities for the crypto audience and all participants of the IoT market. "
+abstract: "The Robonomics team wants to impact the Kusama network development with four scenarios from the real world. These use cases describe unique opportunities for the crypto audience and all participants of the IoT market."
+tags: ['Robonomics parachain', 'Internet of Things', 'Collaborations', 'Use Cases']
 ---
 import Card from '~/components/TextCard.vue'
 

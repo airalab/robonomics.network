@@ -47,7 +47,7 @@
 <page-query>
 query ($locale: String!, $page: Int) {
 
-  allPostsTags: allPost(filter: {locale: { eq: "en" }} ) {
+  allPostsTags: allPost(filter: {locale: { eq: $locale }} ) {
     edges {
       node {
         tags {

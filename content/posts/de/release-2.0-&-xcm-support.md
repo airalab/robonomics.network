@@ -6,6 +6,7 @@ locale: 'de'
 cover_image: ./images/release-2.0-&-xcm-support/cover.jpg
 description: "Release 2.0 ist ein sehr wichtiger Meilenstein für unser Projekt und unsere Gemeinschaft da es die Möglichkeit bietet Robonomics mit anderen Parachains im Kusama Ecosystem zu integrieren. In den kommenden Monaten wird sich das Forschungs- und Entwicklungsteam des Projekts den Parachains Statemine, Karura, Moonriver, Crust und KILT widmen."
 abstract: "Release 2.0 und XCM-Unterstützung sind da!"
+tags: ['Robonomics Parachain', 'Fahrplan', 'Neue Version']
 ---
 
 [Release 2.0](https://github.com/airalab/robonomics/releases/tag/v2.0.0) ist ein sehr wichtiger Meilenstein für unser Projekt und unsere Gemeinschaft da es die Möglichkeit bietet Robonomics mit anderen Parachains im Kusama Ecosystem zu integrieren. In den kommenden Monaten wird sich das Forschungs- und Entwicklungsteam des Projekts den Parachains Statemine, Karura, Moonriver, Crust und KILT widmen.

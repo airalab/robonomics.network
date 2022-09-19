@@ -4,10 +4,10 @@ date: 2020-12-30
 published: true
 locale: 'en'
 cover_image: ./images/Recap-2020/00_newyear.jpg
-# canonical_url: false
 description: "Recap of the 2020 year in Robonomics: Blockchain development, Robonomics Web Services, Robotics, Sensors, Academia incentive program.
 "
 abstract: "We decided to write a summing up article to highlight the important events in 2020 & feature the most active community members."
+tags: ['Use Cases']
 ---
 import Card from '~/components/TextCard.vue'
 

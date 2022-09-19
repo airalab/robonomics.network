@@ -3,10 +3,10 @@ title: Second Robonomics Crowdloan campaign
 date: 2021-08-20
 published: true
 locale: 'en'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/kusama-crowdloan-second-wave-details/cover.jpg
 description: "The second wave of auctions in the Kusama network will start on September 01, 2021. Robonomics will participate in the slot auction starting from the first day of the second wave. Take a look at details"
 abstract: "The second wave of auctions in the Kusama network will start on September 01, 2021. Robonomics will participate in the slot auction starting from the first day of the second wave."
+tags: ['Robonomics parachain']
 ---
 import Card from '~/components/TextCard.vue'
 

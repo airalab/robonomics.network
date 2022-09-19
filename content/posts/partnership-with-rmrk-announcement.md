@@ -3,12 +3,11 @@ title: 'RMRK x Robonomics Network: Pallet integration and Kanaria rewards'
 date: 2021-12-23
 published: true
 locale: 'en'
-tags: ['Robonomics parachain', 'Kusama', 'Collaborations']
 cover_image: ./images/partnership-with-rmrk-announcement/cover.png
 description: "Robonomics is thrilled to announce we have partnered with RMRK to bring a robotics theme to the Kanaria project and support RMRK2.0 standards! Kanaria is the most advanced NFT project in the world built on the world’s most advanced NFT protocol: RMRK."
 abstract: "Robonomics is thrilled to announce we have partnered with RMRK to bring a robotics theme to the Kanaria project and support RMRK2.0 standards! Kanaria is the most advanced NFT project in the world built on the world’s most advanced NFT protocol: RMRK."
+tags: ['Robonomics parachain', 'Collaborations']
 ---
-import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'
 
 [Kanaria](https://kanaria.rmrk.app/) is the most advanced NFT project in the world built on the world’s most advanced NFT protocol: [RMRK](https://rmrk.app/).
 Kanaria NFTs are birds that can own and even equip other NFTs, building an item economy that can span not only different projects (automatic cross project compatibility) but also different chains due to being launched on Kusama - a “Layer 0” for chains to connect through. Kanaria are also the precursor to RMRK’s upcoming metaverse - [Kanaria: Skybreach](https://url.rmrk.app/meta).
@@ -43,6 +42,3 @@ Among others, RMRK brings the following features to the NFT table:
 * NFTs that can be governed as DAOs
 
 It thereby far exceeds what the current ERC721 / ERC1155 standards and their derivatives can do.
-
-
-<KusamaSlotBanner />

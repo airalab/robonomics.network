@@ -1,14 +1,14 @@
 ---
-title: "February 22 / Lesson 1 / Broadcasting through the black mirror"
+title: "Lesson 1 / Broadcasting through the black mirror"
 date: 2022-02-22
 published: true
 locale: 'en'
 cover_image: ./images/online-winter-school-2022-lesson-1/cover.jpg
 description: "Greetings to all participants of the Winter School of Robonomics 2022! In the coming week, we will be holding lectures, practical exercises and have community discussions in Discord around one question: 'How can we build IoT applications based on new Internet technologies?' Let's move on to the first lesson, from which some members of our team had goosebumps..."
 abstract: "Greetings to all participants of the Winter School of Robonomics 2022!"
+tags: ['Online school', 'Demo']
 ---
 import Card from '~/components/TextCard.vue'
-import UserForm from '~/components/blocks/UserForm.vue'
 
 In the coming week, we will be holding lectures, practical exercises and have community discussions in Discord around one question: “How can we build IoT applications based on new Internet technologies?”
 
@@ -64,13 +64,3 @@ Everyone who completes all the lessons of the Winter School will be able to get 
 Every day, a reward for the completed lesson will be randomly drawn among the addresses that sent the necessary transactions and the participants who indicated the address at the end of the questionnaire. XRT tokens will be distributed as follows:
 
 There will be 5 chances to win 32 XRT after the first lesson, 4 chances to win 64 XRT after the second lesson, 3 chances to win 128 XRT after the third lesson, 2 chances to win 256 XRT after the 4th lesson and 1 chance to win 512 XRT in fifth last day of school.
-
-<Card>
-
-## Stay tuned!
-
-If you'd like to receive email notifications about lessons start and some helpful materials, feel free to subscribe:
-
-<UserForm comment="robonomics.network lesson 1"/>
-
-</Card>

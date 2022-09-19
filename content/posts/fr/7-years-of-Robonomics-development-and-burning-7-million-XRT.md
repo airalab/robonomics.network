@@ -3,7 +3,7 @@ title: 7 ANS DE DÉVELOPPEMENT ROBONOMICS ET BRÛLAGE DE 7 MILLIONS XRT
 date: 2022-07-27
 published: true
 locale: 'fr'
-tags: ['Events', 'Robonomics parachain']
+tags: ['Parachaîne Robonomics', 'Jeton XRT']
 cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
 description: "Pour Robonomics, il y a encore beaucoup de notre feuille de route devant nous, et beaucoup de choses vont arriver pour la première fois."

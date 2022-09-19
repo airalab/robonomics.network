@@ -3,10 +3,10 @@ title: 第三轮 Robonomics 众贷活动
 date: 2021-10-25
 published: true
 locale: 'zh'
-# tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/kusama-crowdloan-third-wave-details/cover.jpg
 description: "过去 4 个月里，一些来自 DeFi、智能合约/EVM 领域的备受期待、用户友好的项目，以及第一个用户隐私保护机制，已经集成至 Kusama 生态系统。也许，是时候将物联网设备置于 Kusama 的控制之下，建立起与实体经济相结合的机制了……我们将在第三轮拍卖当中了解情况是否确实如此。"
 abstract: "过去 4 个月里，一些来自 DeFi、智能合约/EVM 领域的备受期待、用户友好的项目，以及第一个用户隐私保护机制，已经集成至 Kusama 生态系统。也许，是时候将物联网设备置于 Kusama 的控制之下，建立起与实体经济相结合的机制了……<a href='/kusama-slot/'>我们将在第三轮拍卖当中了解情况是否确实如此。</a>"
+tags: ['Robonomics 平行链']
 ---
 import Card from '~/components/TextCard.vue'
 

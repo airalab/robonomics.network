@@ -3,10 +3,10 @@ title: "Update to Version 1.2: Staking, Tech Committee and Treasury"
 date: 2021-09-17
 published: true
 locale: 'en'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama', 'XRT']
 cover_image: ./images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
 description: "The project developers have implemented 2 important changes in the operation of the Robonomics parachain. The first is the inclusion of XRT staking, and the second is the launch of the first on-chain governance mechanisms."
 abstract: "The project developers have implemented 2 important changes in the operation of the Robonomics parachain. The first is the inclusion of XRT staking, and the second is the launch of the first on-chain governance mechanisms."
+tags: ['Robonomics parachain', 'XRT token', 'RWS token', 'Staking', 'New release']
 ---
 import Card from '~/components/TextCard.vue'
 

@@ -3,9 +3,8 @@ title: NA INTERSEÇÃO DA CIBERNÉTICA E DA ECONOMIA
 date: 2022-09-01
 published: true
 locale: 'pt'
-tags: ['Robonomics']
+tags: ['Filosofia da Robonomia']
 cover_image: ./images/at-the-intersection-of-cybernetics-and-economics/сover_1.jpg
-# canonical_url: false
 description: "O mundo da tecnologia e os dispositivos inteligentes estão se desenvolvendo intensamente. Novos dispositivos e sistemas aparecem todos os dias. Eles ajudam a simplificar e melhorar a vida humana. Porém, esta não é a única tarefa. Um dos obstáculos às tecnologias robóticas é o alto nível de segurança cibernética dos dispositivos e a privacidade dos dados dos usuários. Os desenvolvedores da Robonomics vêm trabalhando nesta tarefa há 7 anos."
 abstract: "O mundo da tecnologia e os dispositivos inteligentes estão se desenvolvendo intensamente. Novos dispositivos e sistemas aparecem todos os dias. Eles ajudam a simplificar e melhorar a vida humana. Porém, esta não é a única tarefa. Um dos obstáculos às tecnologias robóticas é o alto nível de segurança cibernética dos dispositivos e a privacidade dos dados dos usuários. Os desenvolvedores da Robonomics vêm trabalhando nesta tarefa há 7 anos."
 ---

@@ -3,7 +3,7 @@ title: "Robonomics parachain on Kusama: first week's report"
 date: 2022-01-18
 published: true
 locale: 'en'
-tags: ['Robonomics parachain', 'Kusama']
+tags: ['Robonomics parachain']
 cover_image: ./images/parachain-on-kusama-first-week-report/cover.jpg
 description: "Since the launch of the Robonomics parachain, we have managed to complete a fairly large range of tasks, and for that, my special thanks goes out to everyone who broke away early from nice meals, champagne, and trips to friends & family on January 2nd and 3rd :) The below information is what I personally participated in and what I want to tell you about."
 abstract: "Since the launch of the Robonomics parachain, we have managed to complete a fairly large range of tasks, and for that, my special thanks goes out to everyone who broke away early from nice meals, champagne, and trips to friends & family on January 2nd and 3rd :) The below information is what I personally participated in and what I want to tell you about."
@@ -155,5 +155,3 @@ It should be noted that the full implementation of the [autonomous parachain lif
 Robonomics application scenarios [are already moving from the frontier network to the Kusama parachain](https://twitter.com/EnsRationis/status/1481900111856906240). Towards the end of January, we will announce the dates of the Robonomics demo week of IoT projects which are ready to present their solutions based on the Kusama parachain. 
 
 Follow our [Twitter](https://twitter.com/AIRA_Robonomics) for updates, and remember that Robonomics does not aim to be a unicorn amongst crypto projects until we pave a sustainable development path for user growth. During 2022, dozens of interesting web3 application scenarios in the field of IoT await us. Still, the project will only take its rightful place when Robonomics becomes useful for thousands of regular users. In the meantime, we all need to continue to work and help develop the project; try to change the world around you towards the introduction of web3 technologies; for example, connect Home Assistant to data transfer from IoT devices via the Robonomics parachain: [Leemo video](https://www.youtube.com/watch?v=iB2Z8HtERgs) ([Instruction on GitHub](https://github.com/airalab/robonomics-smarthome)).
-
-<KusamaSlotBanner />

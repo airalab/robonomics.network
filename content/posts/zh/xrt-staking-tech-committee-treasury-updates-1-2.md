@@ -3,10 +3,10 @@ title: "最高到 1.2 版：质押、技术传播和司库"
 date: 2021-09-17
 published: true
 locale: 'zh'
-# tags: ['Tokens', 'Robonomics parachain', 'Kusama', 'XRT']
 cover_image: ./images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
 description: "项目研发人员采用2种重要变更推行机器人经济学平行链工作。第一 种是 接入XRT质押泛函数，第二 种是启动第一个链上管理机制。"
 abstract: "项目研发人员采用2种重要变更推行机器人经济学平行链工作。第一 种是 接入XRT质押泛函数，第二 种是启动第一个链上管理机制。"
+tags: ['Robonomics 平行链', 'XRT 代币', 'RWS 令牌', '质押', '新版本']
 ---
 import Card from '~/components/TextCard.vue'
 

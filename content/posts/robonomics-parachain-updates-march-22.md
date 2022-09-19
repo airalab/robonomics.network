@@ -6,6 +6,7 @@ locale: 'en'
 cover_image: ./images/robonomics-parachain-updates-march-22/cover.jpg
 description: "The Robonomics parachain was launched in January of this year, and our first publicly available progress report was published on January 18th in a blog post. Now, we will provide details of the work we have already performed within the task list"
 abstract: ""
+tags: ['Robonomics parachain', 'Roadmap', 'New release']
 ---
 import Card from '~/components/TextCard.vue'
 import UserForm from '~/components/blocks/UserForm.vue'

@@ -3,7 +3,7 @@ title: ROBONOMİKANIN 7 İL İNKİŞAFI VƏ 7 MİLYON XRT YANDIRILMASI
 date: 2022-07-27
 published: true
 locale: 'az'
-tags: ['Events', 'Robonomics parachain']
+tags: ['Robonimika parachain', 'XRT tokeni']
 cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
 description: "Robonimika üçün çox şey hələ qabaqdadır və ya ilk dəfədir ki, baş verir."

@@ -7,7 +7,7 @@
             <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
           </div>
           <div class="blog-banner__tags-wrapper" v-if="tags.length">
-            <ul class="list blog-banner__tags-list">
+            <ul class="list blog-banner__tags-list animate-inside-fast" v-in-viewport.once>
               <li class="blog-banner__tags-item">
                 <g-link class="blog-banner__tags-link" to="/blog/">{{$ts('All posts')}}</g-link>
               </li>
@@ -102,7 +102,7 @@ export default {
   }
 
   .blog-banner__tags-link {
-    font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    font-family: var(--font-family-code);
     font-weight: 600;
     text-decoration: none;
     color: #fff;

@@ -3,11 +3,11 @@ title: Robonomics Crowdloan and further steps, June 2021
 date: 2021-06-11
 published: true
 locale: 'en'
-tags: ['Tokens', 'Robonomics parachain', 'Kusama']
 cover_image: ./images/kusama-crowdloan-details/robonomics-crowdloan-on-kusama.jpg
 description: "Take a look at the Cowdloan module in details, parachain update plan after launching, and FAQ regarding auction"
 abstract: "Take a look at the Cowdloan module in details, parachain update plan after launching and FAQ regarding auction"
 related: ['Kusama Parachain Lease Offering, April 2021', 'Trajectory of Robonomics Development 2021, Part 1', 'Robobank. Accept any Polkadot token in automation services', 'The ultimate guide to Robonomics, RWS and Robonomics parachain on Polkadot']
+tags: ['Robonomics parachain']
 ---
 import Card from '~/components/TextCard.vue'
 
