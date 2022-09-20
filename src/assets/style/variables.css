@@ -66,6 +66,8 @@ body {
 
 	--white-button-hover: #d2d6e3;
 
+	--post-code-bg: #b5deff;
+
 	--color-gradient-blue: linear-gradient(var(--color-blue-dark), var(--color-blue-mid)); /* refactor */
 	--color-gradient-purpleblue: linear-gradient(var(--color-blue-mid), var(--color-purple));
 	--color-gradient-mars: linear-gradient(var(--color-blue) 30%, #25bfe8 85%, #f0d283 100%);
@@ -130,6 +132,8 @@ body.dark-theme {
 	--white-button-hover: #2e2f2f;
 
 	--body-bg: #313238;
+
+	--post-code-bg: #3c5c75;
 }
 
 

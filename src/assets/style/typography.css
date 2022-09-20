@@ -283,7 +283,7 @@ li:not(:last-child) {
 .post code {
   display: inline-block;
   vertical-align: middle;
-  background-color: #b5deff;
+  background-color: var(--post-code-bg);
   font-weight: bold;
 }
 

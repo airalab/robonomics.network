@@ -83,7 +83,7 @@ export default {
 
   .blog-banner__tags-wrapper {
     width: 100%;
-    max-width: 550px;
+    max-width: 655px;
   }
 
   .blog-banner__tags-list {
@@ -135,5 +135,10 @@ export default {
     h1 {
       font-size: 1.8rem;
     }
+    .blog-banner__tags-link {
+      font-size: 1rem;
+      white-space: nowrap;
+    }
   }
+  
 </style>
