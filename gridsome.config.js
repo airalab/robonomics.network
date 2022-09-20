@@ -75,7 +75,7 @@ module.exports = {
         translations: yaml.load(fs.readFileSync('./src/data/locales/translations.yaml', 'utf8')),
         collections: ['blog', 'jobs'],
         routes: yaml.load(fs.readFileSync('./src/data/locales/routes.yaml', 'utf8')),
-        exclude: ["/blog/tag/"]
+        exclude: ["/blog/tag/", "/blog-translations"]
       }
     },
 

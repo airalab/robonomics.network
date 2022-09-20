@@ -101,7 +101,7 @@ query ($locale: String!, $page: Int) {
       lang(){
         return this.$locale
       },
-    },
+    }
   }
 
 </script>
