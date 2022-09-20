@@ -62,6 +62,7 @@ query($id: ID!) {
     content
     related
     abstract
+    locale
     tags {
       id
       title
@@ -94,6 +95,15 @@ query($id: ID!) {
       PostRelated: () => import('~/components/PostRelated.vue'),
       Abstract: () => import('~/components/TextAbstract.vue'),
       PostAuthor: () => import('~/components/blocks/PostAuthor.vue'),
+    },
+
+    created() {
+      console.log(this.$page.post.locale)
+      if(this.$page.post && Object.keys(this.$page.post).length !== 0) {
+        console.log(this.$page.post);
+      } else {
+        console.log('no')
+      }
     }
 
   }
