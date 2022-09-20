@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout v-if="!isRedirect">
 
     <MetaInfo
       :pageTitle = "'Page not found'"
@@ -71,6 +71,12 @@
       MetaInfo
     },
 
+    data() {
+      return {
+        isRedirect: true,
+      }
+    },
+
     mounted() {
       const scene = document.getElementById('parallax');
       const parallaxInstance = new Parallax(scene);
@@ -82,7 +88,10 @@
       const title = path.match(/\/([^\/]+)[\/]?$/);
 
       if(path.includes(`blog/${this.$locale}`) && !path.includes('tag')) {
+        
         window.location.href = `/blog-translations/${title[1]}/`;
+      } else {
+        this.isRedirect = false
       }
     }
 
