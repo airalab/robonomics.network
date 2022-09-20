@@ -97,15 +97,6 @@ query($id: ID!) {
       PostAuthor: () => import('~/components/blocks/PostAuthor.vue'),
     },
 
-    created() {
-      console.log(this.$page.post.locale)
-      if(this.$page.post && Object.keys(this.$page.post).length !== 0) {
-        console.log(this.$page.post);
-      } else {
-        console.log('no')
-      }
-    }
-
   }
 
 </script>
