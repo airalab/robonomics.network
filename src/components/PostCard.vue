@@ -6,6 +6,7 @@
     <div class="post-card__content">
       <h4 class="post-card__title" v-html="post.title" />
       <p class="post-card__description" v-html="post.description" />
+      <span v-if="locale" class="post-card__locale">{{locale}}</span>
     </div>
     <g-link class="post-card__link" :to="post.path">Link</g-link>
   </div>
@@ -16,7 +17,7 @@
 <script>
 
 export default {
-  props: ['post'],
+  props: ['post', 'locale'],
 }
 </script>
 
@@ -24,6 +25,7 @@ export default {
   .post-card {
     background-color: var(--color-light);
     position: relative;
+    height: 100%;
   }
 
     .post-card:hover {
@@ -75,6 +77,14 @@ export default {
     .post-card__description {
       margin-bottom: 0;
       font-size: calc(var(--base-font-size)*0.9);
+    }
+
+    .post-card__locale {
+      margin-top: 10px;
+      display: block;
+      text-align: right;
+      font-weight: 600;
+      font-style: italic;
     }
   
 </style>

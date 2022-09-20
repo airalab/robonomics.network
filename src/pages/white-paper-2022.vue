@@ -309,7 +309,7 @@ export default {
   mounted() {
     const scene = document.getElementById('parallax-astronaut');
     const parallaxInstance = new Parallax(scene);
-  } ,
+  },
 
     
 }

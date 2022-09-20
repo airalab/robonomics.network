@@ -62,6 +62,7 @@ query($id: ID!) {
     content
     related
     abstract
+    locale
     tags {
       id
       title
@@ -94,7 +95,7 @@ query($id: ID!) {
       PostRelated: () => import('~/components/PostRelated.vue'),
       Abstract: () => import('~/components/TextAbstract.vue'),
       PostAuthor: () => import('~/components/blocks/PostAuthor.vue'),
-    }
+    },
 
   }
 

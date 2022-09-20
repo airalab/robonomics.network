@@ -234,7 +234,7 @@ export default {
     /* COLORING */
     .card {
       --color-back: transparent;
-      --color-text: #000;
+      --color-text: var(--clor-dark);
       --color-iconback: #000; 
       
       background-color: var(--color-back);
@@ -345,6 +345,5 @@ export default {
       margin-bottom: calc(var(--space) * 0.7);
     }
     /* end of CONTENT */
-
   
 </style>
