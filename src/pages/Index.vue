@@ -463,6 +463,7 @@ query {
   hr {
     position: relative;
     margin-top: 0;
+    margin-bottom: calc(var(--space-text)*2);
     z-index: 10;
   }
 
