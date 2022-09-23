@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout v-if="!isRedirect">
 
      <MetaInfo
         :pageTitle = "'Robonomics blog, available posts translations'"
@@ -21,7 +21,7 @@
       </div>
 
       <section class="layout blog_grid">
-        <a class="link" v-for="edge in postList" :key="edge.node.id" :href="edge.node.path" @click="redirectToChosenLocale(edge.node.path)">
+        <a class="link" v-for="edge in postList" :key="edge.node.id" :href="edge.node.path" @click="redirectToChosenLocale(edge.node.path, edge.node.locale)">
           <PostCard :post="edge.node" :locale="edge.node.locale"/>
         </a>
       </section>
@@ -68,12 +68,34 @@ export default {
   data() {
     return {
       postTitle: '',
+      isRedirect: true,
     }
   },
 
   methods: {
-    redirectToChosenLocale(path) {
-      window.location.href = 'https://robonomics.network' + path;
+    redirectToChosenLocale(path, locale) {
+      if(locale === 'en') {
+        const enPath = '/en' + path;
+        // window.location.href = 'https://robonomics.network' + enPath;
+        window.location.href =  enPath;
+      } else {
+        // window.location.href = 'https://robonomics.network' + path;
+        window.location.href =  path;
+      }
+    },
+
+    checkPostAvailability(locale) {
+      this.postList.map(post => {
+        if(post.node.locale === locale) {
+          window.location.href = post.node.path;
+        }
+      })
+
+      setTimeout(() => {
+        this.isRedirect = false
+      }, 100)
+
+      
     }
   },
 
@@ -105,6 +127,7 @@ export default {
     const path = this.$route.path; 
     const title = path.match(/\/([^\/]+)[\/]?$/);
     this.postTitle = title[1];
+    this.checkPostAvailability(this.$locale)
   }
 }
 </script>
