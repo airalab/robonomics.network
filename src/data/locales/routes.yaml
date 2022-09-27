@@ -6,7 +6,6 @@
   component: './src/pages/vision.vue'
   typename: 'page'
 
-
 - path: '/white-paper-2022/'
   component: './src/pages/white-paper-2022.vue'
   typename: 'page'
@@ -53,4 +52,8 @@
 
 - path: '/timeline/'
   component: './src/pages/timeline.vue'
+  typename: 'page'
+
+- path: '/logos-and-assets/'
+  component: './src/pages/logos-and-assets.vue'
   typename: 'page'

@@ -3,7 +3,7 @@
 
      <MetaInfo
         :pageTitle = "'Robonomics blog, ' + $page.TagPosts.title"
-        :pageImage = "'/website_cover_blogs.png'"
+        pageImage = "/website_cover_blogs.jpg"
       />
 
       <BlogTagsBanner :allTags="tagsList" :activeTag="$page.TagPosts.title" />

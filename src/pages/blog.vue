@@ -4,7 +4,7 @@
     <MetaInfo
       :pageTitle = "'Blog'"
       :pageDescription = "$static.metadata.siteDescription"
-      :pageImage = "'/website_cover_blog.png'"
+      :pageImage = "'/website_cover_blogs.jpg'"
     />
 <!-- 
     <h1 v-if="$ts('Robonomics blog')" class="layout layout__content">{{$ts('Robonomics blog')}}</h1> -->
