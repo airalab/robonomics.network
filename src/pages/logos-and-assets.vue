@@ -125,6 +125,10 @@ export default {
     font-size: 2.5rem;
   }
 
+  .logos-and-usage {
+    padding-top: calc(var(--space) * 4);
+  }
+
   .logos-and-usage__link-download {
     text-decoration: none;
     padding: 0;
@@ -197,6 +201,10 @@ export default {
   .logos-and-usage__item--banned::before {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.728' height='19.728' viewBox='0 0 19.728 19.728'%3E%3Cg id='Group_4292' data-name='Group 4292' transform='translate(-539.222 -1090.157)'%3E%3Cpath id='Path_7576' data-name='Path 7576' d='M13096.342,6732.277l15.485,15.486' transform='translate(-12554.999 -5640)' fill='none' stroke='%23bd044b' stroke-linecap='round' stroke-width='3'/%3E%3Cpath id='Path_7577' data-name='Path 7577' d='M13111.827,6732.277l-15.485,15.486' transform='translate(-12554.999 -5640)' fill='none' stroke='%23bd044b' stroke-linecap='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E");
     top: 3px;
+  }
+
+  .color-pallet {
+    padding-top: calc(var(--space) * 2);
   }
 
   .color-pallet__wrapper {
@@ -273,6 +281,16 @@ export default {
       display: inline;
       max-width: unset;
       white-space: pre-wrap;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .logos-and-assets__wrapper {
+      gap: calc(var(--space) * 3);
+    }
+
+    .color-pallet__item {
+      height: 280px;
     }
   }
 
