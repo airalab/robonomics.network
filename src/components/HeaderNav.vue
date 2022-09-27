@@ -45,6 +45,7 @@
                     <li><g-link to="/ambassador-program">{{$ts('Ambassador program')}}</g-link></li>
                     <li><g-link to="/papers">{{$ts('Nav Papers')}}</g-link></li>
                     <li><g-link to="/books">{{$ts('Nav Books')}}</g-link></li>
+                    <li><g-link to="/logos-and-assets">{{$ts('Logos and Assets')}}</g-link></li>
                     <li><g-link to="/contact">{{$ts('Nav Contact')}}</g-link></li>
                     <li><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
                     <li><g-link to="/jobs">{{$ts('Jobs')}}</g-link></li>
