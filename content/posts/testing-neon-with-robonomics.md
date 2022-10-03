@@ -4,7 +4,7 @@ date: 2022-10-03
 published: true
 locale: 'en'
 tags: ['Robonomics in Ethereum', 'Collaborations', 'Smart Contracts', 'Neon']
-cover_image: ./images/neon-robonomics/blog_cover_neon_multi-agent.jpg
+cover_image: ./images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
 description: "The purpose of these tests were to validate the readiness of the Neon platform to move to the production stage using Robonomics smart contracts, which allow cyber-physical systems (robots) to make technical-economic transactions."
 abstract: ""
 ---
@@ -37,7 +37,7 @@ As we develop the industrial zones and the infrastructure of modern cities, the 
 
 In order to take full advantage of the possibilities of smart contracts, a scenario of interaction between two autonomous economic agents was chosen. Consider the liability life cycle in the Robonomics network:
 
-![Liability Life Cycle](./images/neon-robonomics/step-by-step-3.jpg)
+![Liability Life Cycle](./images/testing-neon-with-robonomics/step-by-step-3.jpg)
 
 The figure above shows that the Robonomics network provider calls the Lighthouse contract, which in turn calls the [contract factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) to create the Liability contract. The Liability contract contains data about the transaction, such as the terms of reference, payment for the service, validator address and the deadline.
 
@@ -90,7 +90,7 @@ Screencast of the process
 
 https://youtu.be/fYJVF7KrNnI
 
-![Liability](./images/neon-robonomics/liability.jpg)
+![Liability](./images/testing-neon-with-robonomics/liability.jpg)
 
 When the simulation starts, an offer message is created, and a demand message comes from the Promisee, after which a Liability contract is created using the createLiability function of the Lighthouse contract. With the help of the XRT contract, tokens are transferred from the Promisee’s address to the address of the Liability contract.
 
