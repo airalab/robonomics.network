@@ -88,7 +88,6 @@ export default {
       this.postList.map(post => {
         if(post.node.locale === locale) {
           window.location.href = post.node.path;
-          console.log(post.node.path)
         }
       })
 
