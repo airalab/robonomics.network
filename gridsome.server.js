@@ -5,7 +5,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const fs = require('fs');
+
 module.exports = function (api) {
+  
 
   // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   api.loadSource(async store => {
@@ -13,11 +16,6 @@ module.exports = function (api) {
     store.addMetadata('discord', 'https://discord.gg/JpaN2XAmqY')
     store.addMetadata('twitter', 'https://twitter.com/AIRA_Robonomics')
   })
-
-
-  // all locales
-  const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr"]
-
 
   // Use the Pages API here: https://gridsome.org/docs/pages-api/
   api.createManagedPages(async ({ createPage, graphql }) => {
@@ -46,17 +44,29 @@ module.exports = function (api) {
       }
     }`)
 
-    data.allPost.edges.forEach(({ node }) => {
+    const allPossiblePaths =  data.allPost.edges.filter((e) => {
+
+      return e.node.locale === 'en'
+    })
+
+
+
+    allPossiblePaths.forEach(({ node }) => {
+      // all locales
+      const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr"];
+      const path = node.path.slice(0, -1).split("/").pop();
 
       locales.forEach(locale => {
-        const path = node.fileInfo.name.toLowerCase();
-        if(node.path !== `/blog/${locale}/${path}`)  {
+        if (fs.existsSync(`content/posts/${locale}/${node.fileInfo.name}.md`)) {
+          console.log('exists');
+        } else {
           createPage({
             path: `/blog/${locale}/${path}`,
             component: './src/templates/BlogTranslations.vue',
           })
         }
       })
+
     })
   })
   
