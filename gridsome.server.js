@@ -15,6 +15,10 @@ module.exports = function (api) {
   })
 
 
+  // all locales
+  const locales = ["en", "ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr"]
+
+
   // Use the Pages API here: https://gridsome.org/docs/pages-api/
   api.createManagedPages(({ createPage }) => {
     createPage(
@@ -25,6 +29,20 @@ module.exports = function (api) {
             redirect: '/'
           }
       }
-    )
+    ),
+
+    locales.forEach(locale => {
+      if( locale != 'en') {
+        createPage({
+          path: `/${locale}/blog-translations/:title`,
+          component: './src/templates/BlogTranslations.vue'
+        })
+      } else {
+        createPage({
+          path: `/blog-translations/:title`,
+          component: './src/templates/BlogTranslations.vue'
+        })
+      }
+    })
   })
 }
