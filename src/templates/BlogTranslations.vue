@@ -81,14 +81,6 @@ export default {
         // window.location.href = 'https://robonomics.network' + path;
         window.location.href =  path;
       }
-    },
-
-    checkPostAvailability(locale) {
-      this.postList.map(post => {
-        if(post.node.locale === locale) {
-          window.location.href = post.node.path;
-        }
-      })
     }
   },
 
@@ -120,7 +112,6 @@ export default {
     const path = this.$route.path; 
     const title = path.match(/\/([^\/]+)[\/]?$/);
     this.postTitle = title[1];
-    this.checkPostAvailability(this.$locale)
   }
 }
 </script>
