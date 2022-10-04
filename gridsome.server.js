@@ -5,7 +5,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const fs = require('fs');
+
 module.exports = function (api) {
+  
 
   // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   api.loadSource(async store => {
@@ -14,13 +17,8 @@ module.exports = function (api) {
     store.addMetadata('twitter', 'https://twitter.com/AIRA_Robonomics')
   })
 
-
-  // all locales
-  const locales = ["en", "ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr"]
-
-
   // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  api.createManagedPages(({ createPage }) => {
+  api.createManagedPages(async ({ createPage, graphql }) => {
     createPage(
       {
           path: '/en/',
@@ -29,20 +27,47 @@ module.exports = function (api) {
             redirect: '/'
           }
       }
-    ),
+    )
 
-    locales.forEach(locale => {
-      if( locale != 'en') {
-        createPage({
-          path: `/${locale}/blog-translations/:title`,
-          component: './src/templates/BlogTranslations.vue'
-        })
-      } else {
-        createPage({
-          path: `/blog-translations/:title`,
-          component: './src/templates/BlogTranslations.vue'
-        })
+    const { data } = await graphql(`{
+      allPost {
+        edges {
+          node {
+            id
+            locale
+            path
+            fileInfo {
+              name
+            }
+          }
+        }
       }
+    }`)
+
+    const allPossiblePaths =  data.allPost.edges.filter((e) => {
+
+      return e.node.locale === 'en'
+    })
+
+
+
+    allPossiblePaths.forEach(({ node }) => {
+      // all locales
+      const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr"];
+      const path = node.path.slice(0, -1).split("/").pop();
+
+      locales.forEach(locale => {
+        if (fs.existsSync(`content/posts/${locale}/${node.fileInfo.name}.md`)) {
+          console.log('exists');
+        } else {
+          createPage({
+            path: `/blog/${locale}/${path}`,
+            component: './src/templates/BlogTranslations.vue',
+          })
+        }
+      })
+
     })
   })
+  
 }

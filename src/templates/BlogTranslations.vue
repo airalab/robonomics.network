@@ -1,5 +1,5 @@
 <template>
-  <layout v-if="!isRedirect">
+  <layout>
 
      <MetaInfo
         :pageTitle = "'Robonomics blog, available posts translations'"
@@ -68,7 +68,6 @@ export default {
   data() {
     return {
       postTitle: '',
-      isRedirect: true,
     }
   },
 
@@ -82,20 +81,6 @@ export default {
         // window.location.href = 'https://robonomics.network' + path;
         window.location.href =  path;
       }
-    },
-
-    checkPostAvailability(locale) {
-      this.postList.map(post => {
-        if(post.node.locale === locale) {
-          window.location.href = post.node.path;
-        }
-      })
-
-      setTimeout(() => {
-        this.isRedirect = false
-      }, 100)
-
-      
     }
   },
 
@@ -127,7 +112,6 @@ export default {
     const path = this.$route.path; 
     const title = path.match(/\/([^\/]+)[\/]?$/);
     this.postTitle = title[1];
-    this.checkPostAvailability(this.$locale)
   }
 }
 </script>
