@@ -1,5 +1,5 @@
 <template>
-  <layout v-if="!isRedirect">
+  <layout>
 
      <MetaInfo
         :pageTitle = "'Robonomics blog, available posts translations'"
@@ -68,7 +68,6 @@ export default {
   data() {
     return {
       postTitle: '',
-      isRedirect: true,
     }
   },
 
@@ -90,12 +89,6 @@ export default {
           window.location.href = post.node.path;
         }
       })
-
-      setTimeout(() => {
-        this.isRedirect = false
-      }, 100)
-
-      
     }
   },
 
