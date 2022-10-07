@@ -80,6 +80,9 @@ export default {
         const enPath = '/en' + path;
         // window.location.href = 'https://robonomics.network' + enPath;
         window.location.href =  enPath;
+        setTimeout(() => {
+          location.reload()
+        }, 500)
       } else {
         // window.location.href = 'https://robonomics.network' + path;
         window.location.href =  path;
