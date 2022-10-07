@@ -2,7 +2,7 @@
 <template>
   <layout>
 
-    <MetaInfo :pageTitle="$ts('Jobs')" />
+    <MetaInfo pageTitle="Jobs" />
 
     <section class="layout layout__text hyphens">
       <h1>{{ $ts('Jobs') }}</h1>

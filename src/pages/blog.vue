@@ -2,7 +2,7 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "'Blog'"
+      pageTitle = "Blog"
       :pageDescription = "$static.metadata.siteDescription"
       :pageImage = "'/website_cover_blogs.jpg'"
     />

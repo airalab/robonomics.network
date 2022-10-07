@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Whitepaper 2022 page title')"
-      :pageDescription = "$ts('Whitepaper 2022 page description')"
+      pageTitle = "Whitepaper 2022 page title"
+      pageDescription = "Whitepaper 2022 page description"
       :pageImage = "'/website_cover_white_paper_2022.jpg'"
     />
 
