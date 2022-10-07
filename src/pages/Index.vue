@@ -2,8 +2,8 @@
   <layout>
 
       <MetaInfo
-        :pageTitle = "$ts('Meta title Index')"
-        :pageDescription = "$ts('Meta description Index')"
+        pageTitle = "Meta title Index"
+        pageDescription = "Meta description Index"
       />
       
       <section id="banner" class="slide section section__solid">

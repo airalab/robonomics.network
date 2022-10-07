@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Robonomics Logos and Assets')"
-      :pageDescription = "$ts('We have put together Robonomics logos, colors, assets and guidelines to show how you may use it.')"
+      pageTitle = "Robonomics Logos and Assets"
+      pageDescription = "'We have put together Robonomics logos, colors, assets and guidelines to show how you may use it."
       :pageImage = "'/website_cover_logos.jpg'"
     />
 
