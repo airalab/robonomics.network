@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "'Timeline'"
-      :pageDescription = "'Robonomics in the past and nowadays, some important checkpoints of evolution.'"
+      pageTitle = "Timeline"
+      pageDescription = "Robonomics in the past and nowadays, some important checkpoints of evolution."
     />
 
     <div class="layout layout__title">

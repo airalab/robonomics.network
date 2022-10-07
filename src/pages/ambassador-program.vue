@@ -1,8 +1,8 @@
 <template>
     <layout>
         <MetaInfo
-            :pageTitle = "$ts('Robonomics Ambassador Program')"
-            :pageDescription = "$ts('We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')"
+            pageTitle = "Robonomics Ambassador Program"
+            pageDescription = "We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation."
             pageImage = "/website_cover_ambassador.jpg"
             pageImageHeight = "650"
         />

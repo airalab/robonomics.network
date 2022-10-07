@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Building Dapps && Web Services for IoT on Robonomics Parachain')"
-      :pageDescription = "$ts('The future of humanity itself depends on how we teach robots to handle their capabilities.')"
+      pageTitle = "Building Dapps && Web Services for IoT on Robonomics Parachain"
+      pageDescription = "The future of humanity itself depends on how we teach robots to handle their capabilities."
       :pageImage = "'/website_cover.jpg'"
     />
 
