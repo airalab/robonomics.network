@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Crowdloan for Robonomics on Kusama')"
-      :pageDescription = "$ts('Crowdloan Description')"
+      pageTitle = "Crowdloan for Robonomics on Kusama"
+      pageDescription = "Crowdloan Description"
       pageImage = "/website_cover_crowdloan.jpg"
       pageImageHeight = "652"
     />
