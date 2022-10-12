@@ -1,62 +1,62 @@
 ---
-title: Testing Neon EVM with Robonomics Smart Contracts
+title: Testando l’EVM di Neon con gli Smart Contract di Robonomics
 date: 2022-10-03
 published: true
 locale: 'it'
 tags: ['Robonomics in Ethereum', 'Collaborations', 'Smart Contracts', 'Neon']
 cover_image: ./images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
-description: "The purpose of these tests were to validate the readiness of the Neon platform to move to the production stage using Robonomics smart contracts, which allow cyber-physical systems (robots) to make technical-economic transactions."
+description: "Lo scopo di questi test è stato quello di validare quanto la piattaforma Neon fosse pronta per passare alla fase di produzione utilizzando gli smart contract di Robonomics, che consentono ai sistemi cyber-fisici (robot) di effettuare transazioni tecnico-economiche."
 abstract: ""
 ---
 
 ## TL;DR
 
-The purpose of these tests were to validate the readiness of the [Neon](https://neon-labs.org/) platform to move to the production stage using Robonomics smart contracts, which allow cyber-physical systems (robots) to make technical-economic transactions.
+Lo scopo di questi test è stato quello di validare quanto la piattaforma  [Neon](https://neon-labs.org/) fosse pronta per passare alla fase di produzione utilizzando gli smart contract di Robonomics, che consentono ai sistemi cyber-fisici (robot) di effettuare transazioni tecnico-economiche.
 
-In the Robonomics network, interaction is established between two parties: Promisee - the one who orders the service, sends a description of technical task and transfers funds for its execution; Promisor - one who performs a service. A typical scenario was tested, whereby a liability contract is concluded between a Promisee and a Promisor - this was followed by validation of the resulting work by a third party, and a commission payment to the node that accompanied the contract between the parties.
+Nel Robonomics Network, l’interazione è stabilita fra due parti: Promisee — chi ordina il servizio, invia una descrizione dell’attività tecnica e trasferisce i fondi per la sua esecuzione; Promisor — chi esegue un servizio. È stato testato un tipico scenario dove un contratto di responsabilità viene concluso fra un Promisee e un Promisor, seguito poi dalla validazione (effettuata da una terza parte) del lavoro conseguente e dal pagamento di una commissione al nodo che ha seguito il contratto fra le parti.
 
-For this example, a simulation of a robotic arm was used, which was asked to perform a sequence of actions. The tests were successful.
+Per questo esempio è stata utilizzata la simulazione di un braccio robotico, a cui è stato chiesto di eseguire una sequenza di azioni. I test hanno avuto esito positivo.
 
-## Scope and Goals of Testing
+## SCOPO E OBIETTIVI DEL TEST
 
-Engineers of [Multi-Agent Systems](https://multi-agent.io/) have been working with [Robonomics Network](https://robonomics.network/) for several years. The first implementation of the Robonomics Network was created for the Ethereum network. It is a set of smart contracts for machine-to-machine communication.
+Gli ingegneri di [Multi-Agent Systems](https://multi-agent.io/) lavorano da diversi anni con [Robonomics Network](https://robonomics.network/). La prima implementazione del Robonomics Network è stata creata per la rete Ethereum ed è un insieme di smart contract per la comunicazione da macchina a macchina.
 
-The core of the Robonomics Network is the [Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol) contract, a smart contract that reproduces the typical relationship between the customer of a service (Promisee) and the service provider (Promisor), and includes the technical and economic parameters of the transaction between them. The parties can be either an autonomous agent and a person (human-to-machine interaction), or purely two autonomous agents (machine-to-machine interaction). The Promisee and Promisor broadcast messages with the parameters of their technical-economic transaction, and then the conclusion of the transaction is provided by a special node - the Provider - which looks for matches of these parameters. Providers are controlled by [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol), which is a special smart contract that executes a transaction when the provider establishes a market match between the parties.
+Il fulcro di Robonomics è il contratto di Responsabilità ([Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol)) uno smart contract che riproduce la tipica relazione fra il cliente di un servizio (Promisee) e il fornitore del servizio stesso (Promisor) e comprende i parametri tecnici ed economici della loro transazione. Le parti possono essere un agente autonomo e una persona (interazione uomo-macchina) o due agenti autonomi (interazione macchina-macchina). Il Promisee e il Promisor trasmettono messaggi con i parametri della loro transazione tecnico-economica, che viene fornita da un apposito nodo — il Provider — che ricerca una corrispondenza nei parametri. I Provider sono controllati da un [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol), uno speciale smart contract che esegue una transazione quando il provider stabilisce una corrispondenza di mercato fra le parti.
 
-There are three scenarios in which the fulfillment of an obligation can take place:
+Esistono tre scenari dove può avvenire l’adempimento di un’obbligo:
 
-1. A simple commitment (with no verification of the final result, and no commission paid to Provider nodes)
-2. Obligation with a commission paid to the Provider
-3. Commitment with a commission to the Provider and validation of the results with the help of a third party - observing network.
+1. Un semplice impegno (senza verifica del risultato finale e senza commissioni pagate ai nodi Provider)
+2. Obbligo con una commissione pagata al Provider
+3. Impegno con commissione al Provider e validazione dei risultati con l’aiuto di una terza parte, l’observing network.
 
-The purpose of this test is to test the most complex, third Robonomics scenario on the Neon EVM platform.
+Lo scopo di questo test è verificare il terzo scenario di Robonomics sulla piattaforma EVM Neon.
 
-## Testing Scenarios Description
+## DESCRIZIONE DEGLI SCENARI DI PROVA
 
-As we develop the industrial zones and the infrastructure of modern cities, the emergence of fully automated enterprises and services that are controlled by cyber-physical systems (CPS) and which provide their services as autonomous agents is highly likely. In this regard, we can also expect the formation of networks of autonomous CPS in order to increase the speed and quality of communication in the process of production and provision of services.
+Mentre sviluppiamo le zone industriali e le infrastrutture delle città moderne, l’emergere di imprese e servizi completamente automatizzati, controllati da sistemi cyber-fisici (CPS) e che forniscono i loro servizi come agenti autonomi è estremamente probabile. In tal senso, possiamo aspettarci anche la creazione di reti di CPS autonomi al fine di aumentare la velocità e la qualità della comunicazione nel processo di produzione e fornitura dei servizi.
 
-In order to take full advantage of the possibilities of smart contracts, a scenario of interaction between two autonomous economic agents was chosen. Consider the liability life cycle in the Robonomics network:
+Per sfruttare appieno le possibilità degli smart contract, è stato scelto uno scenario di interazione fra due agenti economici autonomi. Considera il ciclo di vita della responsabilità nel Robonomics Network:
 
 ![Liability Life Cycle](./images/testing-neon-with-robonomics/step-by-step-3.jpg)
 
-The figure above shows that the Robonomics network provider calls the Lighthouse contract, which in turn calls the [contract factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) to create the Liability contract. The Liability contract contains data about the transaction, such as the terms of reference, payment for the service, validator address and the deadline.
+La figura qui sopra mostra come il provider di Robonomics chiami il contratto Lighthouse, che a sua volta chiama la [contract factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) per creare il Liability contract. Il contratto di Responsabilità contiene i dati sulla transazione, come i termini di riferimento, il pagamento del servizio, l’indirizzo del validatore e la scadenza.
 
-To learn more about the possible use cases for Robonomics, check out the Robonomics [R&D](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer) page!
+Per saperne di più sui possibili casi d’uso di Robonomics, dai un’occhiata alla pagina [R&D](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer)!
 
-To replicate the entire Robonomics infrastructure on the Neon network, we will implement a robot launch scenario through a Liability contract similar to this [example](https://wiki.robonomics.network/docs/en/kuka/). If the script can be repeated, then all functions will work.
+Per replicare tutta infrastruttura Robonomics su rete Neon, implementeremo lo scenario dell’avvio di un robot tramite un contratto di responsabilità simile a quello in [questo](https://wiki.robonomics.network/docs/en/kuka/) esempio. Se lo script può essere ripetuto, tutte le funzioni funzioneranno.
 
-## Deliverables
+## PRODOTTI FINALI
 
-The source code for the Robonomics contracts is available [here](https://github.com/airalab/robonomics_contracts).
-The contracts use many features of the Ethereum VM which includes:
+Il codice sorgente dei contratti Robonomics è disponibile [qui](https://github.com/airalab/robonomics_contracts).
+I contratti utilizzano molte funzionalità della Ethereum VM, che includono:
 
-- ERC20 [XRT](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/XRT.sol) Token
+- Token [XRT](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/XRT.sol) ERC20
 - [Factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)
-- Own contract for [ENS](https://github.com/airalab/robonomics_contracts/blob/master/contracts/ens/ENS.sol)
-- [Proxy](https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/SharedCode.sol) for contracts
-- Various modifiers and roles in contracts
+- Contratto proprietario per [ENS](https://github.com/airalab/robonomics_contracts/blob/master/contracts/ens/ENS.sol)
+- [Proxy](https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/SharedCode.sol) dei contratti
+- Vari modificatori e ruoli nei contratti
 
-Addresses of contracts in the Neon devnet network https://devnet.neonevm.org
+Indirizzi dei contratti nella devnet Neon https://devnet.neonevm.org
 
 | Contract Name  | Address                                    |
 |----------------|--------------------------------------------|
@@ -70,41 +70,42 @@ Addresses of contracts in the Neon devnet network https://devnet.neonevm.org
 | Factory        | 0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C |
 | PublicResolver | 0xAC9E9AA8A4cB524FE87f2b14489F1D6bE68dc46e |
 
-[Source code](https://github.com/Multi-Agent-io/neon-kuka-demo) for the scenario
+[Codice sorgente](https://github.com/Multi-Agent-io/neon-kuka-demo) dello scenario.
 
-## Changes Made to Original Contracts
+## MODIFICHE APPORTATE AI CONTRATTI ORIGINALI
 
-The contracts are written for Solidity 0.5.0. As such, no changes were required when deploying and using the contracts.
+Gli smart contract sono scritti per Solidity 0.5.0. e per tanto, non sono state necessarie modifiche durante la distribuzione e l’utilizzo dei contratti.
 
-## Testing Workflow
+## WORKFLOW DEL TESTING
 
-In general, the test consists of sending corresponding messages from one agent to another.
+In generale, il test consiste nell’invio di messaggi corrispondenti da un agente all’altro.
 
-Next, the Promisor finds a new liability contract in the network and begins to execute it. Upon completion of the work, a message is sent with the result, which is then recorded in the contract.
+Successivamente, il Promisor trova un nuovo contratto di responsabilità nella rete e inizia ad eseguirlo. Al termine dei lavori, viene inviato un messaggio con l’esito, che viene poi registrato nel contratto.
 
-Step-by-step instructions for launching are in [README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md)
+Trovate le istruzioni dettagliate per l’avvio nel [README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md)
 
-## Testing Results in Detail
+## I RISULTATI DEI TEST IN DETTAGLIO
 
-Screencast of the process
+Screencast del processo
 
 https://youtu.be/fYJVF7KrNnI
 
 ![Liability](./images/testing-neon-with-robonomics/liability.jpg)
 
-When the simulation starts, an offer message is created, and a demand message comes from the Promisee, after which a Liability contract is created using the createLiability function of the Lighthouse contract. With the help of the XRT contract, tokens are transferred from the Promisee’s address to the address of the Liability contract.
+All’avvio della simulazione viene creato un messaggio di offerta e un messaggio di domanda arriva dal Promisee, dopodiché viene creato un contratto di Responsabilità utilizzando la funzione createLiability del contratto Lighthouse. I token vengono poi trasferiti dall’indirizzo del Promisee all’indirizzo del Liability contract con l’aiuto del contratto XRT.
 
-After a new Liability contract has been discovered on the Neon devnet, the agent starts working. The result of the work (telemetry) is written to a file and sent to IPFS, the hash from the file is saved as a result.
+Dopo che un nuovo contratto di responsabilità viene scoperto sulla devnet di Neon l’agente inizia a lavorare. Il risultato del lavoro (telemetria) viene scritto in un file e inviato a IPFS, mentre l’hash del file viene salvato di conseguenza.
 
-After the work is completed, the Liability contract is finalized using the finalizeLiability() function of the Lighthouse contract and the tokens are transferred from the Liability address to the addresses of the Promisor and Validator.
+Quando il lavoro è completato, il contratto di Responsabilità viene finalizzato utilizzando la funzione finalizeLiability() del Lighthouse contract e i token vengono trasferiti dall’indirizzo di Responsabilità agli indirizzi del Promisor e del Validatore.
 
-The successful execution of the simulation showed that all contracts worked correctly and the Neon platform works.
+La corretta esecuzione della simulazione ha mostrato che tutti i contratti e la piattaforma Neon funzionavano perfettamente.
 
-## Neon Platform Drawbacks
+## INCONVENIENTI DELLA PIATTAFORMA NEON
 
-### Truffle fails if it doesn't get a response from the network
+### IL TRUFFLE FALLISCE SE NON RICEVE RISPOSTA DALLA RETE
 
-During the process of deploying contracts, it turned out that the proxy does not always return a response on time, which is why Truffle ends with an error:
+Durante il processo di distribuzione dei contratti, si è scoperto che il proxy non restituisce sempre una risposta in tempo, motivo per cui il Truffle termina con un errore:
+
 
 ```
 TypeError: Cannot read properties of null (reading 'from')                                    
@@ -119,17 +120,17 @@ Truffle v5.5.23 (core: 5.5.23)
 Node v16.14.0
 ```
 
-It was not possible to find a relationship between the test conditions and the occurrence of an error, but most likely Neon EVM cannot send a transaction receipt, and Truffle cannot process a Null response.
+Non è stato possibile trovare una relazione fra le condizioni del test e il verificarsi di un errore, ma molto probabilmente la Neon EVM non può inviare una ricevuta di transazione e il Truffle non può elaborare una risposta Null.
 
-If we add timeout and retry here [index.ts#L75](https://github.com/trufflesuite/truffle/blob/develop/packages/interface-adapter/lib/adapter/web3/index.ts#L75), then the deployment should proceed without errors.
+Se aggiungiamo un timeout e riproviamo qui [index.ts#L75](https://github.com/trufflesuite/truffle/blob/develop/packages/interface-adapter/lib/adapter/web3/index.ts#L75), allora la distribuzione dovrebbe procedere senza errori.
 
-### No WS/WSS Endpoint
+### NESSUN ENDPOINT WS/WSS
 
-Neon EVM does not have a WS/WSS endpoint unlike Ethereum, which makes it impossible to subscribe to events from the network. Therefore, during testing, we monitored the events manually.
+A differenza di Ethereum, la Neon EVM non ha un endpoint WS/WSS, il che rende impossibile sottoscrivere gli eventi dalla rete. Durante i test abbiamo quindi monitorato gli eventi manualmente.
 
-### No Event Names
+### NESSUN EVENT NAMES
 
-Neon EVM returns rather poor descriptions of events after a transaction, for example:
+La Neon EVM restituisce descrizioni degli eventi piuttosto scarse dopo una transazione, ad esempio:
 
 ```
  events: {
@@ -150,15 +151,16 @@ Neon EVM returns rather poor descriptions of events after a transaction, for exa
 ...
 ```
 
-Instead of 0, 1, etc. we expected to see named events.
 
-## Conclusion
+Invece di 0, 1, ecc. ci aspettavamo di vedere degli eventi con un nome.
 
-Using the Neon EVM platform, a scenario was successfully tested whereby a liability contract between a Promisee and a Promisor is concluded with subsequent validation of the result of the work done by a third party. Additionally, a Provider participated, who checked the coincidence of supply and demand between the parties, and received a commission for this work.
+## CONCLUSIONE
 
-The demonstration used a simulation of a robotic arm that was hired to perform a sequence of actions. As a result of the work, the robot sent a file with telemetry received during the task.
+Utilizzando la piattaforma Neon EVM, è stato testato con successo uno scenario in base al quale si conclude un contratto di responsabilità fra un Promisee e un Promisor, con con una terza parte che convalida il risultato del lavoro svolto. Con anche un Provider che ha verificato la coincidenza di domanda e offerta tra le parti e ha ricevuto una commissione per il servizio.
 
-Despite some peculiarities in the operation of the network, in the end, all participating contracts showed their operability in the Neon environment.
+La dimostrazione ha utilizzato la simulazione di un braccio robotico che è stato assunto per eseguire una sequenza di azioni. A seguito del lavoro, il robot ha inviato un file con la telemetria ricevuta durante l’attività.
+
+Nonostante alcune particolarità nel funzionamento della rete, alla fine tutti i contratti partecipanti hanno mostrato la loro operatività in ambiente Neon.
 
 
 
