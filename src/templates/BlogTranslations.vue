@@ -79,10 +79,14 @@ export default {
       if(locale === 'en') {
         const enPath = '/en' + path;
         // window.location.href = 'https://robonomics.network' + enPath;
-        window.location.href =  enPath;
-        setTimeout(() => {
-          location.reload()
-        }, 500)
+        // window.location.href =  enPath;
+        // setTimeout(() => {
+        //   location.reload()
+        // }, 500)
+
+        this.$setLocale('en')
+        let newpath = this.$tp(enPath, 'en')
+        window.location.href = newpath
       } else {
         // window.location.href = 'https://robonomics.network' + path;
         window.location.href =  path;

@@ -44,7 +44,7 @@ module.exports = function (api) {
     
       allPossiblePaths.forEach(node => {
         // all locales
-        const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr"];
+        const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr","uk", "fr" ];
         const path = node.path.slice(0, -1).split("/").pop();
   
         locales.forEach(locale => {
