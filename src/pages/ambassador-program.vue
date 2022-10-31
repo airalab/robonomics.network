@@ -28,7 +28,7 @@
 
                     <Card back="darkblue" shadow="dark">
                         <h4>{{$ts('Make content')}}</h4>
-                        <p class="text-little">{{$ts('Documentation, instructions,  tutorials, Localization, scientific papers')}}</p>
+                        <p class="text-little">{{$ts('Documentation, instructions, tutorials, Localization, scientific papers')}}</p>
                     </Card>
 
                     <Card back="darkblue" shadow="dark">

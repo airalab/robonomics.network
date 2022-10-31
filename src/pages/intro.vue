@@ -153,19 +153,19 @@
                 </div>
               </div>
               <div class="item">
-                Robonomics Connectivity
+                {{$ts('Robonomics Connectivity')}}
                 <div class="img" aria-hidden="true">
                   <g-image src="~/assets/images/schemeRwsPlace-2.png"/>
                 </div>
               </div>
               <div class="item highlight">
-                ROBONOMICS WEB SERVICES (RWS)
+                {{$ts('ROBONOMICS WEB SERVICES (RWS)')}}
                 <div class="img" aria-hidden="true">
                   <g-image src="~/assets/images/schemeRwsPlace-3.png"/>
                 </div>
               </div>
               <div class="item">
-                ROBONOMICS DApp
+                {{$ts('ROBONOMICS DApp')}}
                 <div class="img" aria-hidden="true">
                   <g-image src="~/assets/images/schemeRwsPlace-4.png"/>
                 </div>
