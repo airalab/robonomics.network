@@ -48,7 +48,6 @@
                     <li><g-link to="/logos-and-assets">{{$ts('Logos and Assets')}}</g-link></li>
                     <li><g-link to="/contact">{{$ts('Nav Contact')}}</g-link></li>
                     <li><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
-                    <li><g-link to="/jobs">{{$ts('Jobs')}}</g-link></li>
                 </ul>
             </details>
         </div>
