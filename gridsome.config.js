@@ -39,19 +39,6 @@ module.exports = {
         ]
       }
     },
-    {
-      // Create jobs pages from markdown files
-      use: "@gridsome/vue-remark",
-      options: {
-        typeName: "Job",
-        baseDir: "content/jobs",
-        pathPrefix: '/jobs',
-        template: './src/templates/Job.vue',
-        plugins: [
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-        ]
-      }
-    },
 
     {
       // Create posts from markdown files
