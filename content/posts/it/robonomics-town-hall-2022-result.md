@@ -1,5 +1,5 @@
 ---
-title: In the footsteps of Robonomics Town Hall 2022
+title: Sulle Orme del Robonomics Town Hall 2022
 date: 2022-10-15
 published: true
 locale: 'it'
