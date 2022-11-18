@@ -35,7 +35,7 @@ module.exports = {
           },
         },
         plugins: [
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']},  'gridsome-remark-katex'],
         ]
       }
     },
@@ -84,9 +84,10 @@ module.exports = {
     {
       use: "gridsome-plugin-google-sheets-post",
       
-    }
+    },
     
   ],
+
 
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
