@@ -47,3 +47,8 @@ img {
   font-display: swap;
   font-style: normal;
 }
+
+.formula {
+  text-align: center;
+  margin-bottom: var(--space);
+}

@@ -8,8 +8,12 @@ import '~/assets/style/typography.css'
 import '~/assets/style/utils.css'
 import '~/assets/style/variables.css'
 
+
+import 'katex/dist/katex.min.css';
+
 import Default from '~/layouts/Default.vue'
 import Vue from 'vue'
+import VueKatex from 'vue-katex';
 
 import Contacts from '~/components/Contacts.vue';
 
@@ -25,6 +29,7 @@ export default function (Vue, { router, head, isClient }) {
   if (isClient) {
     const vueSmoothScroll = require('vue2-smooth-scroll').default;
     Vue.use(vueSmoothScroll);
+    Vue.use(VueKatex);
 
 
     //Rewrite route
