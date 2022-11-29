@@ -3,9 +3,9 @@
   img: 'docs-book-3.jpg'
   buttonicon: '↗'
   options:
-    - link: 'https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi'
+    - link: 'https://gateway.pinata.cloud/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi'
       text: 'English'
-    - link: 'https://ipfs.io/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V'
+    - link: 'https://gateway.pinata.cloud/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V'
       text: 'Russian'
 
 
