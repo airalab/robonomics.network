@@ -18,12 +18,12 @@
            <section class="banner-leftside-state">
               <div id="confetti-container">
                 <p>Status:</p>
-                <p>crowdloan for renewal of slot<br/> is going now</p>
+                <p>сampaign for renewal of slot<br/> is in progress</p>
                 <g-image id="confetti" src="~/assets/images/confetti.png" aria-hidden="true" />
               </div>
            </section>
 
-           <site-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Crowdloans on Kusama</site-button>
+           <site-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Auction status on Kusama</site-button>
          </div>
          
          <!-- <MovingNumbers/> -->
@@ -39,7 +39,7 @@
         <div class="sec-i-t content layout">
           <g-image alt="Robonomics dapp smart home" src="~/assets/images/dapp-smart-devices.png" />
           <article>
-            <h3>Decentralized cloud for IoT, wiki, academy</h3>
+            <h3>Decentralized cloud for IoT, updates for wiki, courses for Academy</h3>
             <p>Our plans for 2023 include the active development around the idea of a decentralized cloud for the control of home IoT infrastructure. Now we are working to ensure that our <g-link to="https://dapp.robonomics.network/">decentralized application</g-link>, <g-link to="https://wiki.robonomics.network">wiki</g-link> project and our educational resource, the <g-link to="https://robonomics.academy/">Robonomics Academy</g-link>, have all the necessary functions and information for IoT infrastructure owners.</p>
           </article>
         </div>
@@ -49,15 +49,15 @@
         <div class="content layout layout__text text-cite-big">
           <g-image class="theme-support-light" src="~/assets/images/crowdloan-formula.png" aria-hidden="true" />
           <g-image class="theme-support-dark" src="~/assets/images/crowdloan-formula-light.png" aria-hidden="true" />
-          <p>For developers of the Robonomics parachain, finding an option to autonomize the life of the parachain is an important part of building a decentralized cloud for IoT. This year, for the first time, we will try to launch a crowdloan campaign on behalf of the parachain itself.</p>
+          <p>For developers of the Robonomics parachain, finding an option to autonomize the life of the parachain is an important part of building a decentralized cloud for IoT. This year, for the first time, we are trying to launch a crowdloan campaign on behalf of the parachain itself.</p>
           <p><g-link to="/blog/robonomics-crowdloan-campaigns-november-2022/">Read more</g-link></p>
         </div>
        </section>
 
       <section class="participate section__solid section__blue">
         <div class="content layout">
-          <div>Crowdloan for renewal of slot<br/> is going now</div>
-          <site-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Jump in</site-button>
+          <div>Campaign for renewal of slot<br/> is in progress</div>
+          <site-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Check status</site-button>
         </div>
        </section>
 
