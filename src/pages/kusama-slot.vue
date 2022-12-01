@@ -2,10 +2,9 @@
   <layout>
 
     <MetaInfo
-      pageTitle = "Crowdloan for Robonomics on Kusama"
-      pageDescription = "Crowdloan Description"
+      pageTitle = "Robonomics Kusama slot"
+      pageDescription = "During 2022, the Robonomics parachain in Kusama was used in a dozen R&D projects and processed more than 4 million transactions for IoT devices in total."
       pageImage = "/website_cover_crowdloan.jpg"
-      pageImageHeight = "652"
     />
 
     <div class="page">
