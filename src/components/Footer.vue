@@ -1,7 +1,7 @@
 <template>
   <footer class="animate-inside" v-in-viewport.once>
     <div class="layout layout__content">
-      <section class="grid-4">
+      <section class="grid-3">
 
         <div>
           <g-image aria-hidden="true" src="~/assets/images/robonomics-polkapet.png" />
@@ -17,13 +17,13 @@
           </ul>
         </div>
 
-        <div>
+        <!-- <div>
           <h4>Contribute</h4>
           <ul class="animate-inside" v-in-viewport.once>
             <li><g-link to="https://wiki.robonomics.network/docs/en/contributing/">Development</g-link></li>
             <li><g-link to="https://wiki.robonomics.network/docs/en/translate-wiki/">Translation</g-link></li>
           </ul>
-        </div>
+        </div> -->
 
         <div>
           <h4>Stay tunned</h4>
@@ -86,14 +86,14 @@ query {
     color: var(--link-color-footer) !important;
   }
 
-  .grid-4 > div:not(:first-child) {
+  .grid-3 > div:not(:first-child) {
     
     padding: var(--space);
     /* background: #333; */
     background-color: var(--color-darkish);
   }
 
-  .grid-4 > div:not(:first-child) ul {
+  .grid-3 > div:not(:first-child) ul {
     list-style: none;
     margin-left: 0;
   }
