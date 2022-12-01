@@ -92,7 +92,7 @@ export default {
       type: String,
       default: 'blue',
       validator: function (value) {
-        return ['blue', 'green', 'violet', 'red'].indexOf(value) !== -1;
+        return ['blue', 'green', 'violet', 'red', 'bluevivid'].indexOf(value) !== -1;
       }
     },
 
@@ -153,9 +153,19 @@ export default {
 
   .button-violet {
     --b-color-background: var(--color-purple-mid);
-    color: #fff;
+    color: #fff; /*? why this here */
   }
   .button-violet:hover {
     --b-color-background: var(--color-dark);
+  }
+  
+  .button-bluevivid {
+    --b-color-background: var(--color-blue-vivid);
+    --b-color-text: var(--color-dark);
+  }
+  .button-bluevivid:hover {
+    --b-color-background: var(--color-orangeYellow);
+    --b-color-text: var(--color-light);
+    --b-color-shadow: var(--color-light);
   }
 </style>
