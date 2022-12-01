@@ -48,7 +48,8 @@
 
        <section id="formula">
         <div class="content layout layout__text text-cite-big">
-          <g-image src="~/assets/images/crowdloan-formula.png" aria-hidden="true" />
+          <g-image class="theme-support-light" src="~/assets/images/crowdloan-formula.png" aria-hidden="true" />
+          <g-image class="theme-support-dark" src="~/assets/images/crowdloan-formula-light.png" aria-hidden="true" />
           <p>For developers of the Robonomics parachain, finding an option to autonomize the life of the parachain is an important part of building a decentralized cloud for IoT. This year, for the first time, we will try to launch a crowdloan campaign on behalf of the parachain itself.</p>
           <p><g-link to="/blog/robonomics-crowdloan-campaigns-november-2022/">Read more</g-link></p>
         </div>
