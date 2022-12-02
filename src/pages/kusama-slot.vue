@@ -178,7 +178,7 @@
 
   #formula img {
     display: block;
-    margin: calc(var(--space) * 4) auto var(--space);
+    margin: calc(var(--space) * 2) auto var(--space);
     width: 500px;
   }
 
