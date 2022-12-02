@@ -53,10 +53,14 @@ img {
   margin-bottom: var(--space);
 }
 
-.dark-theme .theme-support-light {
+.theme-support-light, .theme-support-dark {
   display: none !important;
 }
 
-.light-theme .theme-support-dark {
-  display: none !important;
+.light-theme .theme-support-light {
+  display: initial !important;
+}
+
+.dark-theme .theme-support-dark {
+  display: initial !important;
 }

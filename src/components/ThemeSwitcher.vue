@@ -85,10 +85,10 @@ export default {
   },
 
   mounted() {
-    const initUserTheme =  localStorage.getItem("user-theme");
+    const initUserTheme =  localStorage.getItem("user-theme") ?? 'light-theme'
 
     if(initUserTheme) {
-      this.setTheme(initUserTheme);
+      this.setTheme(initUserTheme)
     }
   },
 }
