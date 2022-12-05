@@ -12,7 +12,7 @@ import Card from '~/components/TextCard.vue'
 
 ## Kusama OpenGov causes cₕₐₒₛ
 
-The long awaited arrival of the new governance system, OpenGov (Gov2), has finally arrived on Kusama, but it brought along a lot of chaos with it. The instatement of the new OpenGov system meant that the previously scheduled auctions wouldn’t be enacted successfully, this meant that the Kusama community had to push through [Gov1 referendum #252](https://kusama.polkassembly.io/referendum/252) – additional details can be found in the [council motion post](https://kusama.polkassembly.io/motion/582).
+The long awaited arrival of the new governance system, OpenGov (Gov2), has finally arrived on Kusama, but it brought along a lot of chaos with it. The instatement of the new OpenGov system meant that the previously scheduled auctions wouldn’t be enacted successfully, this meant that the Kusama community had to push through [Gov1 referendum #252](https://kusama.polkassembly.io/referendum/252) – additional details can be found in the [council motion post](https://kusama.polkassembly.io/motion/582). However, this referendum was not successfully enacted - meaning there are currently no scheduled auctions on Kusama.
 
 This change to the schedule was unforeseen, and has impacted the Robonomics project’s plans to bid in an upcoming parachain slot auction as soon as our [November 2022 crowdloan](/blog/robonomics-crowdloan-campaigns-november-2022/) opened.
 
