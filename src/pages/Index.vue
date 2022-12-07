@@ -169,62 +169,6 @@
         </div>
 
       </section>
-
-      <section class="section__whitespace">
-        <div class="layout layout__text align-center">
-          <h2>{{$ts('What you can build with Robonomics right now')}}</h2>
-        </div>
-
-        <section class="index-cases index-getstarted layout layout__content grid-2 animate-inside" v-in-viewport.once>
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/connect-mars-curiosity-rover-under-robonomics-parachain-control/">
-            <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/demo/mars-curiosity.png" />
-
-              <svg version="1.1" class="logo-wiki" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 44.4" style="enable-background:new 0 0 50 44.4;" xml:space="preserve">
-                <g><polygon class="st0" points="25.3,18.8 16.2,33.4 33.8,33.4"/><polygon class="st1" points="25.3,3.1 2.8,41.2 47.2,41.2"/><circle class="st0" cx="25" cy="3.1" r="3.1"/><g><circle class="st0" cx="46.9" cy="41.2" r="3.1"/><circle class="st0" cx="3.1" cy="41.2" r="3.1"/></g></g>
-              </svg>
-            </div>
-            <h3>{{$ts('Control Mars Curiosity rover')}}</h3>
-            <p>{{$ts('Make Mars Curiosity rover move under Robonomics Parachain control')}}</p>
-          </g-link>
-
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/connect-any-ros-compatible-robot-under-robonomics-parachain-control-1/">
-            <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/demo/connect-drone.png" />
-
-              <svg version="1.1" class="logo-wiki" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 44.4" style="enable-background:new 0 0 50 44.4;" xml:space="preserve">
-                <g><polygon class="st0" points="25.3,18.8 16.2,33.4 33.8,33.4"/><polygon class="st1" points="25.3,3.1 2.8,41.2 47.2,41.2"/><circle class="st0" cx="25" cy="3.1" r="3.1"/><g><circle class="st0" cx="46.9" cy="41.2" r="3.1"/><circle class="st0" cx="3.1" cy="41.2" r="3.1"/></g></g>
-              </svg>
-            </div>
-            <h3>{{$ts('Connect ROS-compatible Drone')}}</h3>
-            <p>{{$ts('You can control any ROS-compatible robot with Robonomics parachain control')}}</p>
-          </g-link>
-
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/kuka/">
-          <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/demo/kuka.png" />
-
-              <svg version="1.1" class="logo-wiki" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 44.4" style="enable-background:new 0 0 50 44.4;" xml:space="preserve">
-                <g><polygon class="st0" points="25.3,18.8 16.2,33.4 33.8,33.4"/><polygon class="st1" points="25.3,3.1 2.8,41.2 47.2,41.2"/><circle class="st0" cx="25" cy="3.1" r="3.1"/><g><circle class="st0" cx="46.9" cy="41.2" r="3.1"/><circle class="st0" cx="3.1" cy="41.2" r="3.1"/></g></g>
-              </svg>
-            </div>
-            <h3>{{$ts('Launch Kuka manipulator')}}</h3>
-            <p>{{$ts("Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.")}}</p>
-          </g-link>
-
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/ros-smart-projects/">
-            <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/demo/wiki-for-smart-cities.png" />
-
-              <svg version="1.1" class="logo-wiki" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 44.4" style="enable-background:new 0 0 50 44.4;" xml:space="preserve">
-                <g><polygon class="st0" points="25.3,18.8 16.2,33.4 33.8,33.4"/><polygon class="st1" points="25.3,3.1 2.8,41.2 47.2,41.2"/><circle class="st0" cx="25" cy="3.1" r="3.1"/><g><circle class="st0" cx="46.9" cy="41.2" r="3.1"/><circle class="st0" cx="3.1" cy="41.2" r="3.1"/></g></g>
-              </svg>
-            </div>
-            <h3>{{$ts('ROS-based Projects for Smart Spaces')}}</h3>
-            {{$ts('Here, you’ll find a modest list of ROS-based projects that are dedicated to robots and IoT-devices that are meant for use in a home or office environment')}}
-          </g-link>
-        </section>
-      </section>
     
   </layout>
 </template>
