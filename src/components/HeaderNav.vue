@@ -2,55 +2,32 @@
     
     <nav class="sidetext" :class="{'open': isOpen}">
 
-        <div class="nav-toggler oldy dark" tabindex="0" @click="isOpen = !isOpen">
+        <div class="nav-toggler" tabindex="0" @click="isOpen = !isOpen">
             <div></div>
             <div></div>
             <div></div>
         </div>
 
-        <div class="nav-content">
+        <ul class="nav-content">
 
-            <details>
-                <summary>{{$ts('Nav Learn')}}</summary>
-                <ul class="oldy dark">
-                    <li><g-link to="/intro">{{$ts('Intro')}}</g-link></li>
-                    <li><g-link to="/vision">Vision</g-link></li>
-                    <li><g-link to="/white-paper-2022">White Paper 2022</g-link></li>
-                    <li><g-link to="/architecture">Architecture</g-link></li>
-                    <li><g-link to="https://robonomics.academy">Academy</g-link></li>
-                </ul>
-            </details>
+            <li><g-link to="/white-paper-2022">{{$ts('White Paper 2022')}}</g-link></li>
+            <li><g-link to="/timeline">{{$ts('Timeline')}}</g-link></li>
+            <li><g-link to="/xrt">{{$ts('Tokenomics')}}</g-link></li>
+            <li><g-link to="/kusama-slot">{{$ts('Parachain')}}</g-link></li>
+            <li><g-link to="/papers">{{$ts('Science papers')}}</g-link></li>
+            <li><g-link to="/books">{{$ts('Graphic books')}}</g-link></li>
+            <li><g-link to="/logos-and-assets">{{$ts('Logo and assets')}}</g-link></li>
+            <!-- <li><g-link to="/nft">NFT</g-link></li> -->
+            <li><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
+            <li><g-link to="/ambassador-program">{{$ts('Ambassador program')}}</g-link></li>
+            <li><g-link to="/contact">{{$ts('Contacts')}}</g-link></li>
 
-            <details>
-                <summary>{{$ts('Nav Use')}}</summary>
-                <ul class="oldy dark">
-                    <li><g-link to="https://wiki.robonomics.network">Wiki</g-link></li>
-                    <li><g-link to="https://github.com/airalab/robonomics/releases">GitHub</g-link></li>
-                    <li><g-link to="https://dapp.robonomics.network">Dapp</g-link></li>
-                </ul>
-            </details>
+            <li><g-link to="https://wiki.robonomics.network">{{$ts('Wiki')}}</g-link></li>
+            <li><g-link to="https://robonomics.academy">{{$ts('Academy')}}</g-link></li>
+            <li><g-link to="https://github.com/airalab">{{$ts('Github')}}</g-link></li>
+            <li><g-link to="https://dapp.robonomics.network/#/">{{$ts('Dapp')}}</g-link></li>
 
-            <details>
-                <summary>{{$ts('Nav Tokenomics')}}</summary>
-                <ul class="oldy dark">
-                    <li><g-link to="/xrt">XRT</g-link></li>
-                    <li><g-link to="/kusama-slot">{{$ts('Kusama slot')}}</g-link></li>
-                </ul>
-            </details>
-
-            <details>
-                <summary>{{$ts('Nav Community')}}</summary>
-                <ul class="oldy dark">
-                    <!-- <li><g-link to="/community/wallpapers">Wallpapers</g-link></li> -->
-                    <li><g-link to="/ambassador-program">{{$ts('Ambassador program')}}</g-link></li>
-                    <li><g-link to="/papers">{{$ts('Nav Papers')}}</g-link></li>
-                    <li><g-link to="/books">{{$ts('Nav Books')}}</g-link></li>
-                    <li><g-link to="/logos-and-assets">{{$ts('Logos and Assets')}}</g-link></li>
-                    <li><g-link to="/contact">{{$ts('Nav Contact')}}</g-link></li>
-                    <li><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
-                </ul>
-            </details>
-        </div>
+        </ul>
 
     </nav>
 </template>
@@ -61,70 +38,27 @@
         font-size: 75% !important;
     }
 
-    summary {
-        cursor: pointer;
-    }
-
-    nav:not(.open) .nav-content > details {
-        display: inline-block;
-        position: relative;
-    }
-
-    nav:not(.open) .nav-content > details:not(:last-child) {
-        margin-right: var(--space);
-    }
-
-    nav:not(.open) .nav-content > details > ul {
-        position: absolute;
-        top: calc(var(--space) * 1.2);
-        left: 0;
-    }
-
     nav:not(.open) .nav-content li {
         white-space: nowrap;
     }
 
-    details>summary {
-        list-style: none;
-        position: relative;
-    }
-
-    summary::-webkit-details-marker {
-        display: none
-    }
-
-    summary::before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3.535' height='6.07' viewBox='0 0 3.535 6.07'%3E%3Cg id='Line_arrow_simple' data-name='Line arrow simple' transform='translate(0.707 0.707)'%3E%3Cpath id='Path_15' data-name='Path 15' d='M1246.738,26.138l2.328,2.328-2.328,2.328' transform='translate(-1246.738 -26.138)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
-        position: absolute;
-        top: -2px;
-        left: -7px;
-    }
-
-    details[open] summary:before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.07' height='3.535' viewBox='0 0 6.07 3.535'%3E%3Cpath id='Path_15' data-name='Path 15' d='M1246.738,26.138l2.328,2.328-2.328,2.328' transform='translate(31.501 -1246.031) rotate(90)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E");
-        top: -3px;
-    }
-
-    .dark-theme summary::before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3.535' height='6.07' viewBox='0 0 3.535 6.07'%3E%3Cg id='Line_arrow_simple' data-name='Line arrow simple' transform='translate(0.707 0.707)'%3E%3Cpath id='Path_15' data-name='Path 15' d='M1246.738,26.138l2.328,2.328-2.328,2.328' transform='translate(-1246.738 -26.138)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E ");
-    }
-
-    .dark-theme details[open] summary:before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.07' height='3.535' viewBox='0 0 6.07 3.535'%3E%3Cpath id='Path_15' data-name='Path 15' d='M1246.738,26.138l2.328,2.328-2.328,2.328' transform='translate(31.501 -1246.031) rotate(90)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E ");
-    }
-
-    .dark-theme .oldy {
-        background-color: #7A7B81;
-        border: 1px solid #000;
-        box-shadow: 0.2rem 0.2rem 0 #000;
-    }
-
-    .dark-theme .oldy li a {
-        color: #75FBFD;
-    }
-
-    .dark-theme .oldy li a:hover {
-        color: #a1a2f2;
+    .nav-content {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        top: calc(var(--screen-padding-top) - -12px);
+        left: 0;
+        right: 0;
+        bottom: calc(var(--screen-padding-bottom) - 1px);
+        background-color: var(--color-light);
+        padding: var(--space);
+        padding-top: calc(var(--space)*2);
+        font-size: calc(var(--base-font-size) * 0.9);
+        transform: translateX(-20px);
+        opacity: 0;
+        animation: navContent 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+        overflow-y: auto;
+        text-align: center;
     }
 
     ul, li {
@@ -138,11 +72,13 @@
         letter-spacing: 0;
         font-weight: bold;
         text-transform: uppercase;
+        font-family: var(--font-family-code);
+        font-size: 1.5rem;
     }
 
-    li:first-child {
+    /* li:first-child {
         margin-top: calc(var(--space)*0.5);
-    }
+    } */
 
     li a[target=_blank]:after {
         content: "↗";
@@ -163,88 +99,71 @@
         height: 27px;
         cursor: pointer;
         padding: 0.3rem;
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
     .nav-toggler div {
-        height: 2px;
+        height: 3px;
         width: 100%;
         background-color: var(--color-dark);  
     }
 
-    @media screen and (max-width: 950px) {
-        .nav-content summary {
-            font-size: 0.9rem;
-        }
 
-        .nav-content summary::before {
-            top: -1px;
-        }
+    .dark-theme .nav-content {
+        background-color: var(--body-bg);
     }
 
-    @media screen and (max-width: 660px) {
-        .nav-toggler { display: flex; }
-        .nav-content { display: none; }
+    .open .nav-content {
+        display: block;
+        columns: 3;
+    }
 
-        .nav-content {
-            position: fixed;
-            z-index: 10;
-            top: calc(var(--screen-padding-top) - -12px);
-            left: 0;
-            right: 0;
-            bottom: calc(var(--screen-padding-bottom) - 1px);
-            background-color: var(--color-light);
-            padding: var(--space);
-            font-size: calc(var(--base-font-size) * 0.9);
-            transform: translateX(-20px);
-            opacity: 0;
-            animation: navContent 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    .open .nav-toggler div {
+        transform-origin: 50% 50%;
+        transition: 0.1s linear all;
+    }
+    
+    .open .nav-toggler div:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: calc(50% - 1px)
+    }
+
+    .open .nav-toggler div:nth-child(2) {
+        display: none;
+    }
+
+    .open .nav-toggler div:nth-child(3) {
+        transform: rotate(135deg);
+        position: relative;
+        top: calc(-50% + 2px)
+    }
+
+    .nav-content > li:not(:last-child) {
+        margin-bottom: calc(var(--space) * 0.5);
+    }
+
+    @keyframes navContent {
+        to {
+            transform: translateX(0);
+            opacity: 1;
         }
-
-        .nav-content summary {
-            font-size: 1.5rem;
-        }
-
-        .dark-theme .nav-content {
-            background-color: var(--body-bg);
-        }
-
+    }
+    
+    @media screen and (max-width: 950px) {
         .open .nav-content {
-            display: block;
+            columns: 2;
         }
 
-        .open .nav-toggler div {
-            transform-origin: 50% 50%;
-            transition: 0.1s linear all;
-        }
-        
-        .open .nav-toggler div:nth-child(1) {
-            transform: rotate(45deg);
-            position: relative;
-            top: calc(50% - 1px)
-        }
 
-        .open .nav-toggler div:nth-child(2) {
-            display: none;
-        }
+    }
 
-        .open .nav-toggler div:nth-child(3) {
-            transform: rotate(135deg);
-            position: relative;
-            top: calc(-50% + 1px)
-        }
-
-        @keyframes navContent {
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        .nav-content > details:not(:last-child) {
-            margin-bottom: var(--space);
+    @media screen and (max-width: 650px) {
+        .open .nav-content {
+            columns: 1;
+            text-align: left;
         }
     }
 
