@@ -90,7 +90,7 @@
           <h2>{{$ts('Get started')}}</h2>
         </div>
 
-        <section class="index-getstarted layout layout__content grid-2 animate-inside" v-in-viewport.once>
+        <section class="index-getstarted layout layout__content grid-3 animate-inside" v-in-viewport.once>
           <g-link class="oldy oldy__link" to="/intro/">
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-1.png" />
@@ -168,7 +168,38 @@
           </section>
         </div>
 
+
+
       </section>
+
+      <section class="section__whitespace">
+        <div class="layout layout__text align-center">
+          <h2>{{$ts('Learn with Robonomics')}}</h2>
+        </div>
+        <section class="index-academy layout layout__content grid-3 animate-inside" v-in-viewport.once>
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/introduction-course/">
+            <div class="img-back">
+              <g-image aria-hidden="true" src="~/assets/images/academy-1.png" />
+            </div>
+            <h3>{{$ts('Introduction Course')}}</h3>
+          </g-link>
+
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/boston-dynamics-course/">
+            <div class="img-back spot">
+              <g-image aria-hidden="true" src="~/assets/images/academy-2.png" />
+            </div>
+            <h3>{{$ts('Boston Dynamics Spot Software Developing')}}</h3>
+          </g-link>
+
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/smart-home-course/">
+          <div class="img-back">
+              <g-image aria-hidden="true" src="~/assets/images/academy-3.png" />
+            </div>
+            <h3>{{$ts('Sovereign Smart Home with Robonomics and Home Assistant')}}</h3>
+          </g-link>
+        </section>
+      </section>
+
     
   </layout>
 </template>
@@ -183,6 +214,11 @@ query {
 </static-query>
 
 <style scoped>
+
+  h2 {
+    font-family: var(--font-family-code);
+    font-weight: 300;
+  }
 
   #banner {
     background-color: var(--color-blue);
@@ -673,20 +709,19 @@ query {
       }
 
   
-  .index-getstarted a {
+  .index-getstarted a,
+  .index-academy a {
       text-decoration: none;
       color: var(--text-color);
   }
 
-  .index-getstarted, .index-getstarted h3 {
-    text-align: left;
-  }
-
-  .index-getstarted h3 {
+  .index-getstarted h3,
+  .index-academy h3 {
     margin-top: 0; margin-bottom: calc(var(--space) * 0.4)
   }
       
-  .index-getstarted .img-back {
+  .index-getstarted .img-back,
+  .index-academy .img-back {
       margin-bottom: calc(var(--space) * 0.7);
   }
 
@@ -713,15 +748,6 @@ query {
       }
     }
 
-  .index-cases .img-back {
-      background: #162128;
-      position: relative;
-  }
-
-  .dark-theme .img-back {
-    background: #3e84b0;
-  }
-
   .index-cases .logo-wiki {
     position: absolute;
     top: calc(var(--space) * 0.5);
@@ -732,6 +758,22 @@ query {
   .logo-wiki .st0{fill:#FFFFFF;}
 	.logo-wiki .st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 
+  /* .oldy {
+    background: var(--header-bg);
+    border: 1px solid  var(--header-bg);
+    text-align: center;
+    box-shadow: .4rem .4rem 0 #000;
+  } */
+
+
+  .oldy h3 {
+    text-align: center;
+  }
+
+  .img-back.spot img {
+    object-fit: contain;
+    height: 240px;
+  }
 </style>
 
 <script>
