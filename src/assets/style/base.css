@@ -48,11 +48,6 @@ img {
   font-style: normal;
 }
 
-.formula {
-  text-align: center;
-  margin-bottom: var(--space);
-}
-
 .theme-support-light, .theme-support-dark {
   display: none !important;
 }

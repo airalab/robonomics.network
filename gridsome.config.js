@@ -35,25 +35,12 @@ module.exports = {
           },
         },
         plugins: [
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']},  'gridsome-remark-katex'],
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
+          ['gridsome-remark-katex', {displayMode: false}]
         ]
       }
     },
 
-    {
-      // Create posts from markdown files
-      use: "@gridsome/vue-remark",
-      options: {
-        typeName: "Land",
-        baseDir: "content/land",
-        route: '/land/:path',
-        template: './src/templates/Land.vue',
-        plugins: [
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-        ]
-      }
-    },
-    
     {
       use: "gridsome-plugin-translateit",
       options: {
@@ -83,10 +70,17 @@ module.exports = {
 
     {
       use: "gridsome-plugin-google-sheets-post",
-      
     },
     
   ],
+
+  transformers: {
+    remark: {
+      plugins: [
+        'gridsome-remark-katex'
+      ]
+    }
+  },
 
 
   chainWebpack: config => {

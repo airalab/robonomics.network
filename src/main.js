@@ -8,15 +8,11 @@ import '~/assets/style/typography.css'
 import '~/assets/style/utils.css'
 import '~/assets/style/variables.css'
 
+import 'gridsome-remark-katex/node_modules/katex/dist/katex.min.css'
 
-import 'katex/dist/katex.min.css';
-
-import Default from '~/layouts/Default.vue'
 import Vue from 'vue'
-import VueKatex from 'vue-katex';
-
-import Contacts from '~/components/Contacts.vue';
-
+import Default from '~/layouts/Default.vue'
+import Contacts from '~/components/Contacts.vue'
 
 
 // directive for animation in view
@@ -27,9 +23,8 @@ export default function (Vue, { router, head, isClient }) {
   // head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
 
   if (isClient) {
-    const vueSmoothScroll = require('vue2-smooth-scroll').default;
-    Vue.use(vueSmoothScroll);
-    Vue.use(VueKatex);
+    const vueSmoothScroll = require('vue2-smooth-scroll').default
+    Vue.use(vueSmoothScroll)
 
 
     //Rewrite route
@@ -52,6 +47,7 @@ export default function (Vue, { router, head, isClient }) {
     //     }
     // })
   }
+
   // Set default layout as a global component
   Vue.component('layout', Default)
   Vue.component('Contacts', Contacts)
