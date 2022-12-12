@@ -211,6 +211,8 @@ code::-webkit-scrollbar { display: none; }
 table {
   margin-bottom: var(--space-text);
   background-color: var(--text-color-invert);
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 table thead th {
