@@ -8,6 +8,7 @@ cover_image: ./images/robonomics-crowdloan-campaigns-november-2022/cover.jpg
 description: "The first leasing period for the Robonomics parachain slot on the Kusama network is coming to an end. By winning auction #20, we got the opportunity to launch, set up and test the first projects based on Robonomics within the Polkadot ecosystem."
 abstract: "The first leasing period for the Robonomics parachain slot on the Kusama network is coming to an end. By winning auction #20, we got the opportunity to launch, set up and test the first projects based on Robonomics within the Polkadot ecosystem."
 ---
+import Card from '~/components/TextCard.vue'
 
 During 2022, the Robonomics parachain in Kusama was used in a dozen R&D projects and processed more than [4 million transactions](https://robonomics.subscan.io/) for IoT devices in total.
 
@@ -37,9 +38,15 @@ As we expected, after the first batch of crazy auctions bids, the situation has 
 
 </div>
 
-In this case, the median bid is:
+<Card alignContent="center" back="transparent">
 
-<div class="formula" v-katex="'B_{\{med}}=1005 \{~KSM}'"></div>
+**In this case, the median bid is:**
+
+$$
+B_{\text{med}}=1001 \text{~KSM}
+$$
+
+</Card>
 
 > Update December 5: Due to updates to the Kusama network ([Gov2 upgrade](https://twitter.com/nachortti/status/1588203599129190403)) the Robonomics crowdloan campaign will be restarted in the coming days. The collection limit will be increased to 10,050 KSM.
 
@@ -47,25 +54,49 @@ Thus, the algorithm will use this bid to estimate the cap of the crowdloan campa
 
 Further, as mentioned in the [previous publication](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/), as the main criterion for calculating the reward for participation in the crowdloan, we use the estimation of the KSM stakers opportunity cost versus staking on the Relay Chain. The staking mechanism of the Polkadot ecosystem is designed in such a way that the system provides a return to those who assist in maintining the network’s security, whilst trying to ensure liquidity of the native token. To do this, the “*ideal staking rate*” parameter (to which the network should attain) was introduced. If the number of staked tokens falls below the ideal value, staking rewards increase (thereby prompting users to stake more, to enhance network security). And vice versa, if the staking rate exceeds the ideal, then the rewards drop exponentially.
 
-Our algorithm assumes that the system is in a state above ideal staking (because network security is important to us), so the maximum annual interest rate for staking that is possible under these conditions is determined by the ideal staking rate parameter and the maximum inflation rate for stakers (i.e. .the total number of minted tokens to pay to validators and nominators):
+Our algorithm assumes that the system is in a state above ideal staking (because network security is important to us), so **the maximum annual interest rate for staking** that is possible under these conditions is determined by the ideal staking rate parameter and the maximum inflation rate for stakers (i.e. the total number of minted tokens to pay to validators and nominators):
 
-<div class="formula" v-katex="'i_{\{ideal}}=I_{\{NPoS}}/x_{\{ideal}}'"></div>
+<Card alignContent="center" back="transparent">
+
+$$
+i_{\text{ideal}}=I_{\text{NPoS}}/x_{\text{ideal}}
+$$
+
+</Card>
 
 You can read more about these calculations in the [Token Economics](https://research.web3.foundation/en/latest/polkadot/overview/2-token-economics.html) article from W3F Research.
 
 In the Kusama network, the inflation rate is set at 10%, i.e. this is the maximum that will be minted to stakers in an ideal scenario. The ideal staking rate varies depending on the number of parachains and is currently 45% (as indicated on the Polkadot.js portal of the Kusama network). Thus, we get:
 
-<div class="formula" v-katex="'i_{\\text{ideal}}=0.1/0.45\\cdot100\\%=22.22\\%'"/>
+<Card alignContent="center" back="transparent">
+
+$$
+i_{\text{ideal}}=0.1/0.45\cdot100\%=22.22\%
+$$
+
+</Card>
 
 At the moment, the *real staking rate* is 52.6%, and the profit of staking participants is less than the ideal level (about 15%). Therefore, the algorithm can take the *ideal interest rate* parameter for the crowdloan campaign, thereby finding a level of reward for participation in the crowdloan that is fair for the network and attractive for stakers.
 
 Now we can calculate the reward for participation in the crowdloan campaign (XRT per 1 KSM), knowing the cost of tokens on the market:
 
-<div class="formula" v-katex="'R_{\\text{perKSM}}=\\frac{1\\cdot \\$_{\\text{KSM}}\\cdot i_{\\text{ideal}}}{\\$_{\\text{XRT}}}'"></div>
+<Card alignContent="center" back="transparent">
+
+$$
+R_{\text{perKSM}}={(1\cdot \$_{\text{KSM}}\cdot i_{\text{ideal}})}/{\$_{\text{XRT}}}
+$$
+
+</Card>
 
 At the current exchange rate of KSM and XRT, the crowdloan reward will be about **2.06 XRT per 1 KSM**. Knowing this value and the median cost of leasing a slot, it is easy to calculate the total payouts to crowdloan participants:
 
-<div class="formula" v-katex="'R_{\\text{total}}=B_{\\text{med}}\\cdot R_{\\text{perKSM}} = 2075.03 ~\\text{XRT}\n\n'"></div>
+<Card alignContent="center" back="transparent">
+
+$$
+R_{\text{total}}=B_{\text{med}}\cdot R_{\text{perKSM}} = 2075.03\text{XRT}
+$$
+
+</Card>
 
 > Update December 5: Due to Kusama network updates ([Gov2 upgrade](https://twitter.com/nachortti/status/1588203599129190403)) the Robonomics crowdloan campaign will be restarted in the coming days. The total reward pool has been increased to 20,750 XRT.
 
@@ -79,5 +110,5 @@ Due to this, the Robonomics developers plan to cancel token staking during the n
 
 Keep walking…
 
-![](./images/robonomics-crowdloan-campaigns-november-2022/keep-walking.png)
+![](./images/robonomics-crowdloan-campaigns-november-2022/keep-walking.jpg)
 
