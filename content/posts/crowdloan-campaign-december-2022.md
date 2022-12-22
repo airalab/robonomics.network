@@ -63,14 +63,24 @@ As [mentioned previously](https://robonomics.network/blog/robonomics-crowdloan-c
 **2. The median bid is:**
 
 $$
-B_{\text{med}}=1001 \text{~KSM}
+B_{\text{med}}=1001 {\text{ KSM}}
 $$
 
 </Card>
 
 <Card alignContent="center">
 
-**3. The ideal staking rate is:**
+**3. We additionally introduce an correction if previous crowdloan campaigns were not successful. The median bid adjusted for previous crowdloan attempts is:**
+
+$$
+B_{\text{adjmed}}=1001 \cdot 2 = 2002 {\text{ KSM}}
+$$
+
+</Card>
+
+<Card alignContent="center">
+
+**4. The ideal staking rate is:**
 
 $$
 x_{\text{ideal}}=45.0\%
@@ -80,17 +90,17 @@ $$
 
 <Card alignContent="center">
 
-**4. The real staking rate is:**
+**5. The real staking rate is:**
 
 $$
-x_{\text{real}}=50.2\%   >x_{\text{ideal}}
+x_{\text{real}}=49.3\%   >x_{\text{ideal}}
 $$
 
 </Card>
 
 <Card alignContent="center">
 
-**5. The ideal interest rate is:**
+**6. The ideal interest rate is:**
 
 $$
 i_{\text{ideal}}=I_{\text{NPoS}}/x_{\text{ideal}}=0.1/0.45\cdot100\%=22.22\%
@@ -100,20 +110,20 @@ $$
 
 <Card alignContent="center">
 
-**6. The reward for participation in the crowdloan campaign (XRT per 1 KSM):**
+**7. The reward for participation in the crowdloan campaign (XRT per 1 KSM):**
 
 $$
-R_{\text{perKSM}} = {(1 \cdot {\text{\$}_\text{KSM}} \cdot {i_{\text{ideal}}})} / {\text{\$}_\text{XRT}} = {(1\cdot 30.02{\text{\$}}\cdot 0.22)}/{2.09{\text{\$}}} = 3.19{\text{ XRT per KSM}}
+R_{\text{perKSM}} = {(1 \cdot {\text{\$}_\text{KSM}} \cdot {i_{\text{ideal}}})} / {\text{\$}_\text{XRT}} = {(1\cdot 24.65{\text{\$}}\cdot 0.22)}/{2.30{\text{\$}}} = 2.38{\text{ XRT per KSM}}
 $$
 
 </Card>
 
 <Card alignContent="center">
 
-**7. Total payouts to crowdloan participants:**
+**8. Total payouts to crowdloan participants:**
 
 $$
-R_{\text{total}}=B_{\text{med}}\cdot R_{\text{perKSM}} = 3195.11 ~\text{XRT}
+R_{\text{total}}=B_{\text{adjmed}}\cdot R_{\text{perKSM}} = 4768.05 {\text{ XRT}}
 $$
 
 </Card>
