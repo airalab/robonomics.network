@@ -1,12 +1,16 @@
-- title: 'Book 3 «Robot Network R&D», 2021'
+- title: 'Book 3 «Robonomics Network R&D», 2021'
   description: 'Robonomics use cases in one colorful book (.pdf ~ 19 MB).'
   img: 'docs-book-3.jpg'
   buttonicon: '↗'
   options:
+    - link: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-en.pdf'
+      text: 'Server EN'
+    - link: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-ru.pdf'
+      text: 'Server RU'
     - link: 'https://gateway.pinata.cloud/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi'
-      text: 'English'
+      text: 'IPFS EN'
     - link: 'https://gateway.pinata.cloud/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V'
-      text: 'Russian'
+      text: 'IPFS RU'
 
 
 - title: 'Book «Robot economics», 2017'
