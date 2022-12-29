@@ -1,8 +1,8 @@
 <template>
     <layout>
         <MetaInfo
-            :pageTitle = "$ts('Robonomics token') + ', XRT'"
-            :pageDescription = "$ts('XRT is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain.')"
+            pageTitle = "Robonomics token"
+            pageDescription = "XRT is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain."
             pageImage = "/website_cover_token.jpg"
             pageImageHeight = "650" 
         />
@@ -134,7 +134,7 @@
 
         <section class="section__solid  section__gradient-purpleblue">
             <div class="layout layout__text">
-                <g-link class="oldy oldy__link oldy__card oldy__card_s" :to="$static.metadata.discord">
+                <g-link class="oldy oldy__link oldy__card oldy__card_s discord" :to="$static.metadata.discord">
                     <div class="img-back animate-inside" v-in-viewport.once>
                         <g-image aria-hidden="true" src="~/assets/images/logos/discord.png" />
                     </div>
@@ -255,5 +255,9 @@ query {
         width: 176px;
         left: calc(50% - 88px);
         top: 64px;
+    }
+
+    .oldy.discord .img-back {
+        background: var(--color-gradient-purplelight);
     }
 </style>

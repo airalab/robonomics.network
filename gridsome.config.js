@@ -35,20 +35,7 @@ module.exports = {
           },
         },
         plugins: [
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-        ]
-      }
-    },
-    {
-      // Create jobs pages from markdown files
-      use: "@gridsome/vue-remark",
-      options: {
-        typeName: "Job",
-        baseDir: "content/jobs",
-        pathPrefix: '/jobs',
-        template: './src/templates/Job.vue',
-        plugins: [
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']},  'gridsome-remark-katex'],
         ]
       }
     },
@@ -70,7 +57,7 @@ module.exports = {
     {
       use: "gridsome-plugin-translateit",
       options: {
-        locales: ["en", "ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr"],
+        locales: ["en", "ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr", "uk"],
         defaultLocale: "en",
         translations: yaml.load(fs.readFileSync('./src/data/locales/translations.yaml', 'utf8')),
         collections: ['blog', 'jobs'],
@@ -97,9 +84,10 @@ module.exports = {
     {
       use: "gridsome-plugin-google-sheets-post",
       
-    }
+    },
     
   ],
+
 
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')

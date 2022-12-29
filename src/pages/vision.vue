@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Vision page title')"
-      :pageDescription = "'We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution.'"
+      pageTitle = "Vision page title"
+      pageDescription = "We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution."
       :pageImage = "'/website_cover_vision.jpg'"
     />
 
@@ -326,7 +326,7 @@
         <article class="hyphens">
           <p>{{$ts(`One extremely popular question that still remains open — the goal setting of robots when providing services to people. This is a specific but academically important question. The fact is that human economics often includes factors related to the good faith performance of tasks in a contract, the desire of the parties to achieve a result, and the opportunistic and altruistic behavior of the individual in society. It is difficult to talk about such issues in robotics today, so the developers of Robonomics would like to leave teleological issues open for further study, and focus their attention on the praxeological part of robots’ behavior as economic agents. Regarding goal setting, an early article by Norbert Wiener and his colleagues “Behavior, Purpose and Teleology”, as well as the work of the American economist and philosopher Ludwig von Mises on human activity can be considered as points of reference.`)}}</p>
           <br>
-          <p>{{$ts(`Mises, in his book`)}} <strong>{{$ts(`«Human Action: A Treatise of Economics»`)}}</strong>{{$ts(`, looks at the human being in economics from a praxeological perspective. Praxeology gives us an interesting insight into human behavior without a direct correlation to the ultimate goal. By continuing to study the phenomena in human economics from the perspective of the processes themselves, separated from the end goals, we can understand more about the framework that can be formed for a robot economy, so as not to delve into questions of machine teleology.`)}}</p>
+          <p>{{$ts(`Mises, in his book`)}} <strong>{{$ts(`«Human Action: A Treatise of Economics»`)}}</strong> {{$ts(`, looks at the human being in economics from a praxeological perspective. Praxeology gives us an interesting insight into human behavior without a direct correlation to the ultimate goal. By continuing to study the phenomena in human economics from the perspective of the processes themselves, separated from the end goals, we can understand more about the framework that can be formed for a robot economy, so as not to delve into questions of machine teleology.`)}}</p>
         </article>
 
 

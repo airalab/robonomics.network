@@ -2,7 +2,7 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Nav Contact')"
+      pageTitle = "Nav Contact"
     />
 
     <section class="layout layout__text">

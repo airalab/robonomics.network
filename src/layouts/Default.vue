@@ -4,30 +4,9 @@
   
     <!-- <div class="screen"> -->
     <div class="screen banner">
+      <span class="left-border"></span>
 
-      <header class="header">
-        <!-- <g-link class="banner-top" to="/ambassador-program">
-          <div class="layout__content">We launched Ambassador Program, join!</div>
-        </g-link> -->
-
-        <div class="header-content">
-          <div class="header-logo">
-            <g-link to="/">
-              <g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/>
-              <span class="logo-text">Robonomics Network</span>
-            </g-link>
-          </div>
-
-          <div class="header-side">
-            <HeaderNav/>
-            <ThemeSwitcher/>
-            <languageSwitcher/>
-
-          </div>
-
-          
-        </div>
-      </header>
+      <Header/>
 
       <div class="screen-content">
         
@@ -47,13 +26,6 @@
 </template>
 
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
 
 
 <style scoped>
@@ -92,63 +64,6 @@ query {
 			background-size: 30px 30px; */
   }
 
-  .header-logo {
-    padding-left: calc(var(--screen-padding-left) - 9px);
-    /* max-width: 283px;
-    width: 100%; */
-    /* width: calc( var(--screen-padding-left) - calc(var(--logo-padding)*1.5)); */
-    background-color: var(--body-bg);
-  }
-
-  .header-logo a {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-
-  .header-logo a {
-    color: currentColor;
-  }
-
-  .header-logo a img {
-    margin-right: 20px;
-  }
-
-
-  .dark-theme .header-logo a img {
-    filter:  grayscale(1) invert(1);
-  }
-
-  .logo-text {
-    font-size: 1rem;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: var(--color-dark);
-  }
-
-  @media screen and (max-width: 950px) {
-    .header-logo  {
-      margin-top: 6px;
-      width: 40%;
-    }
-
-    .header-logo a svg {
-      width: 100%;
-    }
-
-    .header-logo {
-      max-width: 100px;
-      width: 34%;
-      padding-left: 40px;
-    }
-
-    .logo-text {
-      display: none;
-      font-size: 0.6rem;
-    }
-  }
-
   @media screen and (min-width: 700px) {
     .banner-top {
       font-size: 150%;
@@ -171,51 +86,10 @@ query {
     z-index: 1;
   }
 
-
-  .header {
-    --logo-padding: 0.6rem;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index:1000;
-
-    background-color: var(--body-bg);
-  }
-
-  /* .header-logo a, .header-logo img { display: block; } */
-  
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: var(--screen-padding-top);
-    padding: 2rem ;
-    padding-left: var(--logo-padding);
-    padding-right: var(--screen-padding-right);
-  }
-
   .sidetext {
     font-family: var(--font-family-code);
     font-size: calc(var(--base-font-size) * 0.8);
     text-transform: uppercase;
-  }
-
-  @media screen and (max-width: 660px) {
-    .header-logo  {
-      /* margin-top: 0; */
-      width: 100%;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .header-logo  {
-      /* margin-top: 0; */
-      width: 100%;
-      margin-right: 5px;
-    }
   }
 
   @media screen and (max-width: 350px) {
@@ -244,7 +118,7 @@ query {
 	position: relative;
   background-color: var(--color-gray-light);
   border-style: solid;
-  border-color: var(--body-bg);
+  border-color: var(--header-bg);
   border-width: 0 var(--screen-padding-right) 0 var(--screen-padding-left);
   padding-top: var(--screen-padding-top);
   padding-bottom: var(--screen-padding-bottom);
@@ -263,8 +137,29 @@ query {
     bottom: 0;
     width: 100%;
     height: var(--screen-padding-bottom);
-    background: var(--color-light);
+    background-color: var(--header-bg);
     z-index: 1000;
+  }
+
+  .screen:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: calc(var(--screen-padding-right) * 3);
+    background-color: var(--header-bg);
+    /* z-index: 900; */
+  }
+
+  .left-border {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: calc(var(--screen-padding-right));
+    background-color: var(--header-bg);
+    /* z-index: 900; */
   }
 
 
@@ -275,16 +170,6 @@ query {
 /* .screen:not(.banner) {
  padding-top: calc(var(--screen-padding-top) + var(--space-bannertop));
 } */
-
-.header-side {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-side > *:not(:last-child) {
-      margin-right: var(--space);
-    }
 
 </style>
 
@@ -297,10 +182,8 @@ import moment from 'moment'
 export default {
 
   components: {
+    Header: () => import('~/components/Header.vue'),
     Footer: () => import('~/components/Footer.vue'),
-    languageSwitcher: () => import('~/components/languageSwitcher.vue'),
-    ThemeSwitcher: () => import('~/components/ThemeSwitcher.vue'),
-    HeaderNav: () => import('~/components/HeaderNav.vue'),
     Contacts: () => import('~/components/Contacts.vue')
   },
   data () {
