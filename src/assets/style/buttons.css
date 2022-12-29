@@ -88,9 +88,9 @@
 
 			background-image: url('/select-arrow.svg');
 			background-repeat: no-repeat;
-			background-position: 90% 50%;
+			background-position: calc(100% - 24px/4) 50%;
 
-			padding-right: 26px;
+			padding-right: 30px;
 		}
 		
 
