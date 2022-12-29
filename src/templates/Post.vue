@@ -107,6 +107,16 @@ query($id: ID!) {
     padding: var(--space);
     text-align: left;
     font-weight: 400;
+    overflow: hidden;
+  }
+
+  .post .big-table {
+    margin-bottom: var(--space);
+    overflow-y: auto;
+  }
+
+  .post .big-table table {
+    white-space: nowrap;
   }
 
   .post__header {

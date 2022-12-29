@@ -47,3 +47,20 @@ img {
   font-display: swap;
   font-style: normal;
 }
+
+.formula {
+  text-align: center;
+  margin-bottom: var(--space);
+}
+
+.theme-support-light, .theme-support-dark {
+  display: none !important;
+}
+
+.light-theme .theme-support-light {
+  display: initial !important;
+}
+
+.dark-theme .theme-support-dark {
+  display: initial !important;
+}

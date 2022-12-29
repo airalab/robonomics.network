@@ -92,7 +92,7 @@ export default {
       type: String,
       default: 'blue',
       validator: function (value) {
-        return ['blue', 'green', 'violet', 'red'].indexOf(value) !== -1;
+        return ['blue', 'green', 'violet', 'red', 'bluevivid'].indexOf(value) !== -1;
       }
     },
 
@@ -157,5 +157,14 @@ export default {
   }
   .button-violet:hover {
     --b-color-background: var(--color-dark);
+  }
+  
+  .button-bluevivid {
+    --b-color-background: var(--color-blue-vivid);
+    --b-color-text: #000;
+    --b-color-shadow: #000;
+  }
+  .button-bluevivid:hover {
+    --b-color-background: var(--color-orangeYellow);
   }
 </style>

@@ -2,7 +2,7 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Nav Books')"
+      pageTitle = "Nav Books"
     />
 
     <section class="layout layout__text">

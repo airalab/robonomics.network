@@ -1,7 +1,7 @@
 <template>
   <layout>
     <MetaInfo
-      :pageTitle = "$ts('Architecture title')"
+      pageTitle = "Architecture title"
       pageDescription = "We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution."
       :pageImage="'/website_cover_architecture.jpg'"
     />

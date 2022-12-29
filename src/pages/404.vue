@@ -1,34 +1,14 @@
 <template>
-  <layout v-if="!isRedirect">
+  <layout>
 
     <MetaInfo
       :pageTitle = "'Page not found'"
       :pageDescription = "'In some reason the page you were looking for was not found (maybe it was deprecated or url has a typo). Anyway, you may use navigation on robonomics.network to find what you need.'"
     />
-
     <section class="section__solid section__404">
       <div class="layout layout__content">
-        <h1 v-if="$ts('404_title')">{{$ts('404_title')}}</h1>
+        <h1 v-show="$ts('404_title')">{{$ts('404_title')}}</h1>
       </div>
-
-      <!-- <div class="layout hyphens layout__text_small">
-        <p>{{ $ts('404string_1') }}:</p>
-        <ul>
-          <li>{{ $ts('404reason_1') }};</li>
-          <li>{{ $ts('404reason_2') }};</li>
-          <li>{{ $ts('404reason_3') }}.</li>
-        </ul>
-
-        <p>
-          <b>{{ $ts('This page may need translation') }}.</b>
-          <br/>
-          {{ $ts('If you want to help us with translation') }}:
-        </p>
-        <ul>
-          <li>{{ $ts('contact us at') }}: <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a></li>
-          <li>{{ $ts('or') }} {{ $ts('send') }} <g-link to="https://github.com/airalab/robonomics.network">GitHub PR</g-link></li>
-        </ul>
-      </div> -->
       <p >
         Check url once more or create an <g-link class="link" to="https://github.com/airalab/robonomics.network/issues">issue</g-link> telling us that you’ve got 404 error (do not forget to mention current url)
       </p>
@@ -71,29 +51,10 @@
       MetaInfo
     },
 
-    data() {
-      return {
-        isRedirect: true,
-      }
-    },
-
     mounted() {
       const scene = document.getElementById('parallax');
       const parallaxInstance = new Parallax(scene);
     },
-
-    created() {
-      // redirect for posts that does not have translations yet
-      const path = this.$route.path; 
-      const title = path.match(/\/([^\/]+)[\/]?$/);
-
-      if(path.includes(`blog/${this.$locale}`) && !path.includes('tag')) {
-        
-        window.location.href = `/blog-translations/${title[1]}/`;
-      } else {
-        this.isRedirect = false
-      }
-    }
 
   }
 </script>

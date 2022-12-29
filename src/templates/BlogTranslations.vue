@@ -1,37 +1,39 @@
 <template>
-  <layout v-if="!isRedirect">
-
-     <MetaInfo
+  <layout>
+    <MetaInfo
         :pageTitle = "'Robonomics blog, available posts translations'"
         :pageImage = "'/website_cover_blogs.png'"
       />
 
-      <BlogTagsBanner :allTags="tagsList" />
+      <client-only>
+        <BlogTagsBanner :allTags="tagsList" />
 
-      <div class="text-wrapper">
-        <p>
-          <b>{{ $ts('This page may need translation') }}.</b>
-          <br/>
-          {{ $ts('If you want to help us with translation') }}:
-        </p>
-        <div>
-          <span>{{ $ts('contact us at') }}:  <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a> </span>
-        </div>
-        <h3>Meanwhile, you can check available translations:</h3>
-      </div>
+          <div class="text-wrapper">
+            <p>
+              <b>{{ $ts('This page may need translation') }}.</b>
+              <br/>
+              {{ $ts('If you want to help us with translation') }}:
+            </p>
+            <div>
+              <span>{{ $ts('contact us at') }}:  <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a> </span>
+            </div>
+            <h3>Meanwhile, you can check available translations:</h3>
+          </div>
 
-      <section class="layout blog_grid">
-        <a class="link" v-for="edge in postList" :key="edge.node.id" :href="edge.node.path" @click="redirectToChosenLocale(edge.node.path, edge.node.locale)">
-          <PostCard :post="edge.node" :locale="edge.node.locale"/>
-        </a>
-      </section>
-      
-  </layout>
+          <section class="layout blog_grid">
+            <a class="link" v-for="edge in postList" :key="edge.node.id" :href="edge.node.path" @click="redirectToChosenLocale(edge.node.path, edge.node.locale)">
+              <PostCard :post="edge.node" :locale="edge.node.locale"/>
+            </a>
+          </section>
+
+      </client-only>
+
+    </layout>
+  
 </template>
 
-
-
 <page-query>
+  
   query {
 
     posts: allPost {
@@ -56,6 +58,7 @@
   }
   </page-query>
 
+
 <script>
 
 export default {
@@ -68,7 +71,6 @@ export default {
   data() {
     return {
       postTitle: '',
-      isRedirect: true,
     }
   },
 
@@ -77,25 +79,18 @@ export default {
       if(locale === 'en') {
         const enPath = '/en' + path;
         // window.location.href = 'https://robonomics.network' + enPath;
-        window.location.href =  enPath;
+        // window.location.href =  enPath;
+        // setTimeout(() => {
+        //   location.reload()
+        // }, 500)
+
+        this.$setLocale('en')
+        let newpath = this.$tp(enPath, 'en')
+        window.location.href = newpath
       } else {
         // window.location.href = 'https://robonomics.network' + path;
         window.location.href =  path;
       }
-    },
-
-    checkPostAvailability(locale) {
-      this.postList.map(post => {
-        if(post.node.locale === locale) {
-          window.location.href = post.node.path;
-        }
-      })
-
-      setTimeout(() => {
-        this.isRedirect = false
-      }, 100)
-
-      
     }
   },
 
@@ -127,7 +122,6 @@ export default {
     const path = this.$route.path; 
     const title = path.match(/\/([^\/]+)[\/]?$/);
     this.postTitle = title[1];
-    this.checkPostAvailability(this.$locale)
   }
 }
 </script>

@@ -1,8 +1,8 @@
 <template>
     <layout>
         <MetaInfo
-            :pageTitle = "$ts('Robonomics Ambassador Program')"
-            :pageDescription = "$ts('We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')"
+            pageTitle = "Robonomics Ambassador Program"
+            pageDescription = "We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation."
             pageImage = "/website_cover_ambassador.jpg"
             pageImageHeight = "650"
         />
@@ -28,7 +28,7 @@
 
                     <Card back="darkblue" shadow="dark">
                         <h4>{{$ts('Make content')}}</h4>
-                        <p class="text-little">{{$ts('Documentation, instructions,  tutorials, Localization, scientific papers')}}</p>
+                        <p class="text-little">{{$ts('Documentation, instructions, tutorials, Localization, scientific papers')}}</p>
                     </Card>
 
                     <Card back="darkblue" shadow="dark">

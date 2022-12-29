@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "$ts('Robonomics Logos and Assets')"
-      :pageDescription = "$ts('We have put together Robonomics logos, colors, assets and guidelines to show how you may use it.')"
+      pageTitle = "Robonomics Logos and Assets"
+      pageDescription = "'We have put together Robonomics logos, colors, assets and guidelines to show how you may use it."
       :pageImage = "'/website_cover_logos.jpg'"
     />
 
@@ -163,13 +163,16 @@ export default {
 
   .logos-and-usage__download span {
     padding-left: 40px;
+    letter-spacing: 1px;
     font-weight: 500;
+    font-family: var(--font-family-code);
     color: #fff;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25.814' height='19.038' viewBox='0 0 25.814 19.038'%3E%3Cg id='Group_4281' data-name='Group 4281' transform='translate(-205.5 -657.462)'%3E%3Cpath id='Path_7569' data-name='Path 7569' d='M12744.118,6315.5v8.971h23.814V6315.5' transform='translate(-12537.618 -5648.971)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cg id='Group_4280' data-name='Group 4280' transform='translate(213 658.462)'%3E%3Cpath id='Path_7570' data-name='Path 7570' d='M12777.487,6291.394v11.569' transform='translate(-12772.186 -6291.394)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='2'/%3E%3Cpath id='Path_7571' data-name='Path 7571' d='M12769.208,6305.911l5.3,5.3,5.3-5.3' transform='translate(-12769.208 -6299.006)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-position: left;
     background-size: 24px 18px;
     background-repeat: no-repeat;
     text-transform: uppercase;
+
   }
 
   .logos-and-usage__list {

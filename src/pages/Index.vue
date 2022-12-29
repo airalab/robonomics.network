@@ -2,8 +2,8 @@
   <layout>
 
       <MetaInfo
-        :pageTitle = "$ts('Meta title Index')"
-        :pageDescription = "$ts('Meta description Index')"
+        pageTitle = "Meta title Index"
+        pageDescription = "Meta description Index"
       />
       
       <section id="banner" class="slide section section__solid">
@@ -90,7 +90,7 @@
           <h2>{{$ts('Get started')}}</h2>
         </div>
 
-        <section class="index-getstarted layout layout__content grid-2 animate-inside" v-in-viewport.once>
+        <section class="index-getstarted layout layout__content grid-3 animate-inside" v-in-viewport.once>
           <g-link class="oldy oldy__link" to="/intro/">
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-1.png" />
@@ -168,63 +168,38 @@
           </section>
         </div>
 
+
+
       </section>
 
       <section class="section__whitespace">
         <div class="layout layout__text align-center">
-          <h2>{{$ts('What you can build with Robonomics right now')}}</h2>
+          <h2>{{$ts('Learn with Robonomics')}}</h2>
         </div>
-
-        <section class="index-cases index-getstarted layout layout__content grid-2 animate-inside" v-in-viewport.once>
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/connect-mars-curiosity-rover-under-robonomics-parachain-control/">
+        <section class="index-academy layout layout__content grid-3 animate-inside" v-in-viewport.once>
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/introduction-course/">
             <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/demo/mars-curiosity.png" />
-
-              <svg version="1.1" class="logo-wiki" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 44.4" style="enable-background:new 0 0 50 44.4;" xml:space="preserve">
-                <g><polygon class="st0" points="25.3,18.8 16.2,33.4 33.8,33.4"/><polygon class="st1" points="25.3,3.1 2.8,41.2 47.2,41.2"/><circle class="st0" cx="25" cy="3.1" r="3.1"/><g><circle class="st0" cx="46.9" cy="41.2" r="3.1"/><circle class="st0" cx="3.1" cy="41.2" r="3.1"/></g></g>
-              </svg>
+              <g-image aria-hidden="true" src="~/assets/images/academy-1.png" />
             </div>
-            <h3>{{$ts('Control Mars Curiosity rover')}}</h3>
-            <p>{{$ts('Make Mars Curiosity rover move under Robonomics Parachain control')}}</p>
+            <h3>{{$ts('Introduction Course')}}</h3>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/connect-any-ros-compatible-robot-under-robonomics-parachain-control-1/">
-            <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/demo/connect-drone.png" />
-
-              <svg version="1.1" class="logo-wiki" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 44.4" style="enable-background:new 0 0 50 44.4;" xml:space="preserve">
-                <g><polygon class="st0" points="25.3,18.8 16.2,33.4 33.8,33.4"/><polygon class="st1" points="25.3,3.1 2.8,41.2 47.2,41.2"/><circle class="st0" cx="25" cy="3.1" r="3.1"/><g><circle class="st0" cx="46.9" cy="41.2" r="3.1"/><circle class="st0" cx="3.1" cy="41.2" r="3.1"/></g></g>
-              </svg>
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/boston-dynamics-course/">
+            <div class="img-back spot">
+              <g-image aria-hidden="true" src="~/assets/images/academy-2.png" />
             </div>
-            <h3>{{$ts('Connect ROS-compatible Drone')}}</h3>
-            <p>{{$ts('You can control any ROS-compatible robot with Robonomics parachain control')}}</p>
+            <h3>{{$ts('Boston Dynamics Spot Software Developing')}}</h3>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/kuka/">
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/smart-home-course/">
           <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/demo/kuka.png" />
-
-              <svg version="1.1" class="logo-wiki" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 44.4" style="enable-background:new 0 0 50 44.4;" xml:space="preserve">
-                <g><polygon class="st0" points="25.3,18.8 16.2,33.4 33.8,33.4"/><polygon class="st1" points="25.3,3.1 2.8,41.2 47.2,41.2"/><circle class="st0" cx="25" cy="3.1" r="3.1"/><g><circle class="st0" cx="46.9" cy="41.2" r="3.1"/><circle class="st0" cx="3.1" cy="41.2" r="3.1"/></g></g>
-              </svg>
+              <g-image aria-hidden="true" src="~/assets/images/academy-3.png" />
             </div>
-            <h3>{{$ts('Launch Kuka manipulator')}}</h3>
-            <p>{{$ts("Send transaction in Robonomics parachain, launch Kuka manipulator and get robot's telemetry in IPFS.")}}</p>
-          </g-link>
-
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/en/ros-smart-projects/">
-            <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/demo/wiki-for-smart-cities.png" />
-
-              <svg version="1.1" class="logo-wiki" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 44.4" style="enable-background:new 0 0 50 44.4;" xml:space="preserve">
-                <g><polygon class="st0" points="25.3,18.8 16.2,33.4 33.8,33.4"/><polygon class="st1" points="25.3,3.1 2.8,41.2 47.2,41.2"/><circle class="st0" cx="25" cy="3.1" r="3.1"/><g><circle class="st0" cx="46.9" cy="41.2" r="3.1"/><circle class="st0" cx="3.1" cy="41.2" r="3.1"/></g></g>
-              </svg>
-            </div>
-            <h3>{{$ts('ROS-based Projects for Smart Spaces')}}</h3>
-            {{$ts('Here, you’ll find a modest list of ROS-based projects that are dedicated to robots and IoT-devices that are meant for use in a home or office environment')}}
+            <h3>{{$ts('Sovereign Smart Home with Robonomics and Home Assistant')}}</h3>
           </g-link>
         </section>
       </section>
+
     
   </layout>
 </template>
@@ -239,6 +214,11 @@ query {
 </static-query>
 
 <style scoped>
+
+  h2 {
+    font-family: var(--font-family-code);
+    font-weight: 300;
+  }
 
   #banner {
     background-color: var(--color-blue);
@@ -729,20 +709,19 @@ query {
       }
 
   
-  .index-getstarted a {
+  .index-getstarted a,
+  .index-academy a {
       text-decoration: none;
       color: var(--text-color);
   }
 
-  .index-getstarted, .index-getstarted h3 {
-    text-align: left;
-  }
-
-  .index-getstarted h3 {
+  .index-getstarted h3,
+  .index-academy h3 {
     margin-top: 0; margin-bottom: calc(var(--space) * 0.4)
   }
       
-  .index-getstarted .img-back {
+  .index-getstarted .img-back,
+  .index-academy .img-back {
       margin-bottom: calc(var(--space) * 0.7);
   }
 
@@ -769,15 +748,6 @@ query {
       }
     }
 
-  .index-cases .img-back {
-      background: #162128;
-      position: relative;
-  }
-
-  .dark-theme .img-back {
-    background: #3e84b0;
-  }
-
   .index-cases .logo-wiki {
     position: absolute;
     top: calc(var(--space) * 0.5);
@@ -788,6 +758,22 @@ query {
   .logo-wiki .st0{fill:#FFFFFF;}
 	.logo-wiki .st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 
+  /* .oldy {
+    background: var(--header-bg);
+    border: 1px solid  var(--header-bg);
+    text-align: center;
+    box-shadow: .4rem .4rem 0 #000;
+  } */
+
+
+  .oldy h3 {
+    text-align: center;
+  }
+
+  .img-back.spot img {
+    object-fit: contain;
+    height: 240px;
+  }
 </style>
 
 <script>
