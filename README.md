@@ -1,6 +1,5 @@
 # Official website of Robonomics Network
 
-
 This website is supposed to contain all useful information for our community. 
 
 ### How to suggest any changes
