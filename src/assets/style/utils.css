@@ -214,25 +214,25 @@
 
 .img-back {
   background: var(--header-bg);
-  height: 275px;
+  height: 200px;
   overflow: hidden;
   position: relative;
 }
 
 .img-back img {
-  --oldy-card-i-size: 385px;
+  --oldy-card-i-size: 270px;
   position: absolute;
   bottom: 0;
-  left: calc(50% - var(--oldy-card-i-size)/2);
+  left: calc(51% - var(--oldy-card-i-size)/2);
   width: var(--oldy-card-i-size);
   max-width: var(--oldy-card-i-size); /* rewrite */
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .img-back img {
     left: 10px;
   }
-}
+} */
 
 .m-b-0 { margin-bottom: 0; }
 
