@@ -90,7 +90,7 @@
           <h2>{{$ts('Get started')}}</h2>
         </div>
 
-        <section class="index-getstarted layout layout__content grid-3 animate-inside" v-in-viewport.once>
+        <section class="index-getstarted layout layout__content grid-4 animate-inside" v-in-viewport.once>
           <g-link class="oldy oldy__link" to="/intro/">
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-1.png" />
@@ -552,11 +552,11 @@ query {
     }
   }
   
-  @media screen and (max-width: 520px) {
+  /* @media screen and (max-width: 520px) {
     .img-back img  {
       --oldy-card-i-size: 300px;
     }
-  }
+  } */
 
   @media screen and (max-width: 475px) {
     /* #banner h1 { font-size: calc(var(--base-font-size) * 1); } */
@@ -572,9 +572,9 @@ query {
     .img-back {
       height: 232px;
     }
-    .img-back img  {
+    /* .img-back img  {
       --oldy-card-i-size: 200px;
-    }
+    } */
     .typing-1, .typing-2, .typing-3, .typing-static { font-size: calc(var(--base-font-size) * 0.8); }
     /* #banner h1 { font-size: calc(var(--base-font-size) * 0.8); } */
   }
@@ -772,7 +772,7 @@ query {
 
   .img-back.spot img {
     object-fit: contain;
-    height: 240px;
+    height: 192px;
   }
 </style>
 
