@@ -103,9 +103,7 @@
             <article class="hyphens">
               <g-image src="~/assets/images/digital-twin-small.png"/>
               <p>{{$ts(`Speaking of digital twins, it should be noted that architecturally their implementation is required; as a refusal to give the user direct access to control devices and change their states. Out of the most obvious reasons for rejection are, first, the presence of their own requirements and conditions in the devices just before the launch. Second, if multiple user devices must access a single data source, giving personalized control to each user can be critical. Lastly, it is extremely useful to keep the last actual state of the device available in case it goes out of operation.`)}}</p>
-              <p>{{$ts(`As a result, we have a separation of the loop of information exchange with the user and the actual
-                generation of actual data by the sensors. To illustrate this principle, below is the process of the
-                user working with an IoT device using a digital twin.`)}}</p>
+              <p>{{$ts(`As a result, we have a separation of the loop of information exchange with the user and the actual generation of actual data by the sensors. To illustrate this principle, below is the process of the user working with an IoT device using a digital twin.`)}}</p>
             </article>
           </div>
 

@@ -15,14 +15,14 @@
             <li><g-link to="/xrt">{{$ts('Tokenomics')}}</g-link></li>
             <li><g-link to="/kusama-slot">{{$ts('Parachain')}}</g-link></li>
             <li><g-link to="/papers">{{$ts('Science papers')}}</g-link></li>
-            <li><g-link to="/books">{{$ts('Graphic books')}}</g-link></li>
+            <li class="new-column"><g-link to="/books">{{$ts('Graphic books')}}</g-link></li>
             <li><g-link to="/logos-and-assets">{{$ts('Logo and assets')}}</g-link></li>
             <!-- <li><g-link to="/nft">NFT</g-link></li> -->
-            <li><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
+            <li ><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
             <li><g-link to="/ambassador-program">{{$ts('Ambassador program')}}</g-link></li>
             <li><g-link to="/contact">{{$ts('Contacts')}}</g-link></li>
 
-            <li><g-link to="https://wiki.robonomics.network">{{$ts('Wiki')}}</g-link></li>
+            <li class="new-column"><g-link to="https://wiki.robonomics.network">{{$ts('Wiki')}}</g-link></li>
             <li><g-link to="https://robonomics.academy">{{$ts('Academy')}}</g-link></li>
             <li><g-link to="https://github.com/airalab">{{$ts('Github')}}</g-link></li>
             <li><g-link to="https://dapp.robonomics.network/#/">{{$ts('Dapp')}}</g-link></li>
@@ -53,12 +53,11 @@
         background-color: var(--color-light);
         padding: var(--space);
         padding-top: calc(var(--space)*2);
-        font-size: calc(var(--base-font-size) * 0.9);
         transform: translateX(-20px);
         opacity: 0;
         animation: navContent 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         overflow-y: auto;
-        text-align: center;
+        text-align: left;
     }
 
     ul, li {
@@ -68,12 +67,9 @@
 
     li {
         margin: 0 calc(var(--space)*0.35) calc(var(--space)*0.35);
-        text-transform: none;
         letter-spacing: 0;
-        font-weight: bold;
-        text-transform: uppercase;
+        font-weight: 400;
         font-family: var(--font-family-code);
-        font-size: 1.5rem;
     }
 
     /* li:first-child {
@@ -88,10 +84,10 @@
     }
 
     li a {
-        font-weight: 400;
+        font-size: var(--base-font-size);
         color: var(--color-dark);
         text-decoration: none;
-        text-transform: capitalize;
+        text-transform: uppercase;
     }
 
     .nav-toggler {
@@ -164,6 +160,10 @@
         .open .nav-content {
             columns: 1;
             text-align: left;
+        }
+
+        .new-column {
+            margin-top: calc(var(--space) * 2);
         }
     }
 
