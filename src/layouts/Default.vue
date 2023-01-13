@@ -215,7 +215,9 @@ export default {
 
       } catch (error) {
         console.log(error)
-      }
-    }
+      };
+
+      window.scrollTo(0,0);
+  }
 }
 </script>

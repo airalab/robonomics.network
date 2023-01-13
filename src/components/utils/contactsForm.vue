@@ -122,7 +122,7 @@ export default {
   }
 
   .button:disabled {
-    opacity: 1;
+    opacity: 0.7;
     filter: none;
   }
 
