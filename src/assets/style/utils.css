@@ -19,12 +19,16 @@
   --oldy-box-color: var(--color-gray);
   --oldy-bg-color: var(--color-light);
   --oldy-padding: calc(var(--space)/2);
-  border: 1px solid var(--oldy-box-color);
-  box-shadow: .2rem .2rem 0 var(--oldy-box-color);
+  /* border: 1px solid var(--oldy-box-color); */
+  /* box-shadow: .2rem .2rem 0 var(--oldy-box-color); */
 	padding: var(--oldy-padding);
 	background-color: var(--oldy-bg-color);
   transition: all 0.2s ease-out;
   position: relative; /* ? */
+  background: var(--header-bg);
+  border: 1px solid  var(--header-bg);
+  text-align: center;
+  box-shadow: .4rem .4rem 0 #000;
 }
 
 .oldy.dark {
@@ -57,8 +61,8 @@
 }
 
 .oldy__link:hover {
-  border-color: var(--link-color);
-  box-shadow: .2rem .2rem 0 var(--link-color);
+  border-color: #ececec;
+  box-shadow: .2rem .2rem 0 var(--color-darkness);
 }
 
 .oldy.oldy__card {
@@ -209,26 +213,26 @@
 
 
 .img-back {
-  background: var(--color-gradient-purplelight);
-  height: 350px;
+  background: var(--header-bg);
+  height: 200px;
   overflow: hidden;
   position: relative;
 }
 
 .img-back img {
-  --oldy-card-i-size: 400px;
+  --oldy-card-i-size: 270px;
   position: absolute;
   bottom: 0;
-  left: calc(50% - var(--oldy-card-i-size)/2);
+  left: calc(51% - var(--oldy-card-i-size)/2);
   width: var(--oldy-card-i-size);
   max-width: var(--oldy-card-i-size); /* rewrite */
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .img-back img {
     left: 10px;
   }
-}
+} */
 
 .m-b-0 { margin-bottom: 0; }
 

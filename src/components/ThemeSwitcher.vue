@@ -2,8 +2,14 @@
 
   <div  @click.prevent="toggleTheme" class="theme-wrapper" :class="{'dark-theme': darkTheme}" tabindex="0" >
 
+
+  <!-- moon -->
+  <button class="theme-moon" aria-label="Toggle dark/light">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.49 12.23"><defs></defs><g id="Layer_2" data-name="Layer 2"><g><path class="cls-1" d="M6.1,0a6.12,6.12,0,1,0,4.26,10.5A.44.44,0,0,0,10,9.76a4.47,4.47,0,0,1-.82.07A4.81,4.81,0,0,1,6.8.84.44.44,0,0,0,7,.37.45.45,0,0,0,6.62,0L6.1,0Z"/></g></g></svg>
+  </button>
+
   <!-- sun -->
-  <button aria-label="Toggle dark/light theme" class="theme-sun" :class="{'oldy dark': !darkTheme}">
+  <button aria-label="Toggle dark/light theme" class="theme-sun">
 
     <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.4 16.2" style="enable-background:new 0 0 16.4 16.2;" xml:space="preserve">
       <path d="M12.8,8.3c0,2.6-2.1,4.6-4.7,4.6s-4.7-2.1-4.7-4.6c0-2.6,2.1-4.7,4.7-4.7S12.8,5.7,12.8,8.3L12.8,8.3"
@@ -27,23 +33,6 @@
       C12.3,1.5,13.1,1.5,13.6,2"/>
     </svg>
 
-  </button>
-
-
-  <!-- moon -->
-  <button class="theme-moon" aria-label="Toggle dark/light">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.913" height="15.173" viewBox="0 0 15.913 15.173">
-      <defs>
-        <clipPath id="clip-path">
-          <rect id="Rectangle_7" data-name="Rectangle 7" width="11.89" height="13.005" fill="#fff"/>
-        </clipPath>
-      </defs>
-      <g id="Group_17" data-name="Group 17" transform="translate(15.913 3.802) rotate(107)">
-        <g id="Group_16" data-name="Group 16" clip-path="url(#clip-path)">
-          <path id="Path_29" data-name="Path 29" d="M7.309,0A6.641,6.641,0,0,1,8.758,4.15,6.673,6.673,0,0,1,0,10.485,6.67,6.67,0,1,0,7.309,0" fill="#fff"/>
-        </g>
-      </g>
-    </svg>
   </button>
 
 
@@ -105,29 +94,22 @@ export default {
   }
 
   .theme-sun, .theme-moon {
-    padding: 4px 16px;
+    padding: 0.35rem 0.6rem;
     height: 100%;
-    border: 1px solid #000;
+    border: 1px solid transparent;
     background-color: #000;
+    transition: background-color 0.33s ease-in-out;
   }
 
-  .theme-sun:hover,
-  .theme-moon:hover {
-    opacity: .8;
-    border: 1px solid #000;
-    background-color: #000;
+  .theme-sun {
+    background-color: var(--color-darkness);
   }
 
-  .theme-sun.dark {
-    margin-top: -0.19rem;
-    background-color: #fff;
-    box-shadow: 0.2rem 0.2rem 0 #000;
-    border: 1px solid #000;
-  }
 
   .theme-sun svg {
     width: 16px;
     height: 16px;
+    fill: #fff
   }
 
   .dark-theme .theme-sun svg {
@@ -135,30 +117,32 @@ export default {
   }
 
   .dark-theme .theme-moon {
-    background-color: #7A7B81;
-    box-shadow: -0.2rem 0.2rem 0rem #000;
-    border: 1px solid #000;
+    background-color: var(--color-darkness)
   }
 
-  @media screen and (max-width: 950px) {
-    .theme-moon, .theme-sun { padding:  4px 8px; } 
-
-    .theme-sun.dark {
-      margin-top: -0.26em;
-    }
+  .dark-theme .theme-sun {
+    background-color: #000;
   }
 
-  @media screen and (max-width: 660px) {
-    .theme-moon, .theme-sun { padding:  4px 16px; } 
-
-    .theme-sun.dark {
-      margin-top: -0.19rem;
-    }
-
-    .theme-wrapper {
-      margin-top: 7px;
-    }
-
+  .theme-moon svg {
+    width: 13px;
+    width: 14px;
   }
+
+  .cls-1 {
+    fill: #565656;
+  }
+
+  .dark-theme .cls-1 {
+    fill: #fff;
+  }
+
+  .theme-sun:hover,
+  .theme-moon:hover {
+    opacity: .8;
+    border: 1px solid transparent;
+    background-color: rgb(141, 141, 141);
+  }
+
 
 </style>
