@@ -107,8 +107,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 6px 6px 0 #000;
-    color: #000;
+    box-shadow: 6px 6px 0 var(--color-dark);
+    color: #fff;
     background-color: var(--color-link-contacts) ;
     transition: background-color 0.33s ease-in-out;
   }
@@ -122,7 +122,7 @@ export default {
   }
 
   .button:disabled {
-    opacity: 1;
+    opacity: 0.7;
     filter: none;
   }
 
@@ -133,8 +133,8 @@ export default {
     font-weight: 300;
     border: 1px solid var(--color-light);
     font-family: var(--font-family-code);
-    color: var(--color-dark);
-    background-color: var(--color-light);
+    color: var(--color-light);
+    background-color: var(--color-dark);
   }
 
   .contacts__input.sent {

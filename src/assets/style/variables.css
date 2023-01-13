@@ -2,7 +2,7 @@ body {
 
 	--base-font-size: 1.2rem;
 	--font-family: 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-    --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
 	--color-dark: #000000;
 	--color-darkish: #333333;
@@ -21,6 +21,8 @@ body {
 	--color-red: #ee005b;
 	--color-red-dark: #bd044b;
 	--color-pink: #ff7aad;
+	--color-lightness: #f2f2f2; 
+	--color-darkness: #1e1e1e;
 
 	--color-blue-vivid: #75FBFD;
 	--color-blue-lightest: #DCE8FF;
@@ -41,7 +43,8 @@ body {
 	--color-purple: #221363;
 	--color-purple-dark: #1A1341;
 
- 	--body-bg: var(--color-light);
+ 	--body-bg: var(--color-lightness);
+	--header-bg: #fff;
  	--text-color: #000000;
 	--text-color-invert: #ffffff;
 	--border-color: var(--color-gray); /* deprecated use instead --color-border */
@@ -59,7 +62,7 @@ body {
 
 	--color-link: var(--color-blue);
 	--color-link-hover: var(--color-purple-mid);
-	--color-link-contacts:#75FBFD;
+	--color-link-contacts:#223695;
 
 	--link-color-rgba: #03a7ed93;
 	--color-green-rgba: #5fce0581;
@@ -132,7 +135,8 @@ body.dark-theme {
 	--link-color-visited: #c457fb;
 	--white-button-hover: #2e2f2f;
 
-	--body-bg: #313238;
+	--body-bg: var(--color-darkness);
+	--header-bg: #303030;;
 
 	--post-code-bg: #3c5c75;
 }
