@@ -126,8 +126,6 @@
           <p class="text-center">{{$ts('Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed')}}:</p>
         </section>
 
-        <hr/>
-
         <div class="goals animate-inside" v-in-viewport.once>
 
           <section class="section layout layout__content animate-inside" v-in-viewport.once>
@@ -140,7 +138,6 @@
             </div>
 
           </section>
-          <hr/>
 
           <section class="section layout layout__content animate-inside" v-in-viewport.once>
 
@@ -154,7 +151,6 @@
             
           </section>
 
-          <hr/>
           <section class="section layout layout__content animate-inside" v-in-viewport.once>
 
             <g-image src="~/assets/images/robots-cloud.png" />
@@ -748,6 +744,7 @@ query {
   }
 
   .goals > section {
+      max-width: 1400px;
       display: grid;
       grid-template-columns: 0.5fr 1fr ;
       gap: var(--space);
@@ -801,12 +798,12 @@ query {
     color: var(--color-blue);
     text-transform: capitalize;
     text-align: left;
+    letter-spacing: 0;
   }
 
   .oldy {
     text-align: left;
     font-size: calc(var(--base-font-size) * 0.9)
-
   }
 
   .img-back.spot img {

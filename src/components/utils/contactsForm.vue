@@ -159,5 +159,9 @@ export default {
     font-size: 1.2rem;
   }
 
+  .dark-theme   .button {
+    background-color: #5f7af6;
+  }
+
 
 </style>
