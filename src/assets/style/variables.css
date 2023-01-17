@@ -43,7 +43,7 @@ body {
 	--color-purple: #221363;
 	--color-purple-dark: #1A1341;
 
- 	--body-bg: var(--color-lightness);
+ 	--body-bg: var(--color-light);
 	--header-bg: #fff;
  	--text-color: #000000;
 	--text-color-invert: #ffffff;

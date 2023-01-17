@@ -116,7 +116,7 @@
 
 .screen {
 	position: relative;
-  background-color: var(--color-gray-light);
+  /* background-color: var(--color-gray-light); */
   border-style: solid;
   border-color: var(--header-bg);
   border-width: 0 var(--screen-padding-right) 0 var(--screen-padding-left);
@@ -164,7 +164,7 @@
 
 
 .screen-content {
-  background-color: var(--color-gray-light);
+  /* background-color: var(--color-gray-light); */
 }
 
 /* .screen:not(.banner) {
