@@ -287,6 +287,10 @@ export default {
   }
 
 
+  .dark-theme  .contacts__link svg path {
+    fill: #5F7AF6;
+  }
+
   @media screen and (max-width: 1560px) {
     .contacts__link svg {
       width: 100px;
