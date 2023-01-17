@@ -179,6 +179,7 @@ export default {
 
   .scheme h3 {
     margin-top: 10px;
+    font-size: calc(var(--base-font-size ) * 0.8);
   }
 
   .scheme-item {

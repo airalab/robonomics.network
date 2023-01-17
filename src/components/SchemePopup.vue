@@ -33,7 +33,9 @@ export default {
   }
 
   .popup__content p {
-    font-size: calc(var(--base-font-size) * 0.7)
+    font-family: var(--font-family);
+    font-size: calc(var(--base-font-size) * 0.7);
+    text-transform: none;
   }
 
 
