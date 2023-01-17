@@ -18,17 +18,17 @@
 .oldy {
   --oldy-box-color: var(--color-gray);
   --oldy-bg-color: var(--color-light);
-  --oldy-padding: calc(var(--space)/2);
+  --oldy-padding: calc(var(--space));
   /* border: 1px solid var(--oldy-box-color); */
   /* box-shadow: .2rem .2rem 0 var(--oldy-box-color); */
 	padding: var(--oldy-padding);
+  font-family: var(--font-family);
 	background-color: var(--oldy-bg-color);
   transition: all 0.2s ease-out;
-  position: relative; /* ? */
   background: var(--header-bg);
-  border: 1px solid  var(--header-bg);
+  border: 1px solid var(--color-dark);
   text-align: center;
-  box-shadow: .4rem .4rem 0 #000;
+  box-shadow: .4rem .4rem 0 var(--color-dark);
 }
 
 .oldy.dark {

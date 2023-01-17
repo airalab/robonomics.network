@@ -110,7 +110,7 @@ export default {
     padding-top: 0 !important;
     background: var(--body-bg);
     border-top: 1px solid var(--color-darkness);
-    border-bottom: 1px solid var(--color-darkness);
+    border-bottom: 1px solid rgba(30, 30, 30, 0.2);
   }
   hr {
     margin-top: 0;
@@ -279,6 +279,7 @@ export default {
 
   .dark-theme .contacts {
     border-color: var(--color-lightness);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
   }
 
   .dark-theme .decor-line svg path {
