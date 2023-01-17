@@ -91,17 +91,18 @@
     }
 
     .nav-toggler {
-        width: 30px;
-        height: 27px;
+        width: 37px;
+        height: 37px;
         cursor: pointer;
-        padding: 0.3rem;
+        padding: 0.45rem 0.35rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        border: 1px solid var(--color-dark);
     }
 
     .nav-toggler div {
-        height: 3px;
+        height: 2.5px;
         width: 100%;
         background-color: var(--color-dark);  
     }
@@ -151,6 +152,12 @@
     @media screen and (max-width: 950px) {
         .open .nav-content {
             columns: 2;
+        }
+
+
+        .nav-toggler {
+            width: 30px;
+            height: 30px;
         }
 
 
