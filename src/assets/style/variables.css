@@ -134,6 +134,7 @@ body.dark-theme {
 
 	--link-color-visited: #c457fb;
 	--white-button-hover: #2e2f2f;
+	--color-link:#97aafd;
 
 	--body-bg: var(--color-darkness);
 	--header-bg: #303030;;

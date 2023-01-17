@@ -4,7 +4,7 @@
   
     <!-- <div class="screen"> -->
     <div class="screen banner">
-      <span class="left-border"></span>
+      <!-- <span class="left-border"></span> -->
 
       <Header/>
 
@@ -117,9 +117,9 @@
 .screen {
 	position: relative;
   /* background-color: var(--color-gray-light); */
-  border-style: solid;
+  /* border-style: solid;
   border-color: var(--header-bg);
-  border-width: 0 var(--screen-padding-right) 0 var(--screen-padding-left);
+  border-width: 0 var(--screen-padding-right) 0 var(--screen-padding-left); */
   padding-top: var(--screen-padding-top);
   padding-bottom: var(--screen-padding-bottom);
   height: 100vh;
@@ -130,7 +130,7 @@
 	.screen::-webkit-scrollbar { display: none; }
 
 
-  .screen:after {
+  /* .screen:after {
     content: "";
     position: fixed;
     left: 0;
@@ -139,9 +139,9 @@
     height: var(--screen-padding-bottom);
     background-color: var(--header-bg);
     z-index: 1000;
-  }
+  } */
 
-  .screen:before {
+  /* .screen:before {
     content: "";
     position: fixed;
     left: 0;
@@ -149,18 +149,18 @@
     height: 100%;
     width: calc(var(--screen-padding-right) * 3);
     background-color: var(--header-bg);
-    /* z-index: 900; */
-  }
+    z-index: 900;
+  } */
 
-  .left-border {
+  /* .left-border {
     position: fixed;
     right: 0;
     bottom: 0;
     height: 100%;
     width: calc(var(--screen-padding-right));
     background-color: var(--header-bg);
-    /* z-index: 900; */
-  }
+    z-index: 900;
+  } */
 
 
 .screen-content {
