@@ -68,20 +68,15 @@
       </section>
 
 
-      <section class="section section__solid section__blue">
-        <hr />
+      <section class="section section__solid robonomics-section">
         <div class="layout layout__text animate-inside" v-in-viewport.once>
           <h2>{{$ts('What is Robonomics network?')}}</h2>
-          <p class="hyphens">{{$ts('Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}</p>
+          <p class="text-center">{{$ts('Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}</p>
         </div>
 
-        <div class="layout layout__content layout__darkblue">
+        <div class="layout layout__content ">
           <Scheme/>
-          <div id="info-numbers">
-         </div>
         </div>
-
-        <MovingNumbers/>
 
       </section>
 
@@ -128,7 +123,7 @@
       <section class="section__whitespace">
         <section class="layout layout__text align-center">
           <h2>{{$ts('Robonomics objectives')}}</h2>
-          <p class="text-big hyphens"><b>{{$ts('Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed')}}:</b></p>
+          <p class="text-center">{{$ts('Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed')}}:</p>
         </section>
 
         <hr/>
@@ -136,34 +131,38 @@
         <div class="goals animate-inside" v-in-viewport.once>
 
           <section class="section layout layout__content animate-inside" v-in-viewport.once>
-            <div class="text-col-2">
+
+            <g-image src="~/assets/images/robots-digitalTwins.png" />
+
+            <div class="text-col-1">
               <h3>1. {{$ts('IoT device management with a decentralized cloud')}}</h3>
               <p class="hyphens">{{$ts('Blockchain networks have all the parameters to ensure the highest level of security for device launch and receiving telemetry. Interaction with a device can actually be described by changing the state of the digital twin stored in the blockchain network and delivering information about these changes to the physical device. In the case of using a permissionless blockchain, we can be sure of the global availability of providers, as well as a high level of data protection of the digital twin from unwanted changes.')}}</p>
             </div>
-            <g-image src="~/assets/images/robots-digitalTwins.png" />
+
           </section>
           <hr/>
 
           <section class="section layout layout__content animate-inside" v-in-viewport.once>
+
+            <g-image src="~/assets/images/intro-rwsFeature-3.png" />
             
-            <div class="text-col-2">
+            <div class="text-col-1">
               <h3>2. {{$ts('Techno-economic transactions between humans and machines')}}</h3>
               <p class="hyphens">{{$ts('We can talk about institutional achievements in terms of access of automated systems directly to digital markets through cryptocurrencies and smart contracts. For example, Ethereum already implements most of the basic tools of economic activity. The applications created today to connect the end user and IoT devices will be much more efficient if the payment and terms of service are inseparable from the launch parameters of the device.')}}</p>
             </div>
 
-            <g-image src="~/assets/images/intro-rwsFeature-3.png" />
             
           </section>
 
           <hr/>
           <section class="section layout layout__content animate-inside" v-in-viewport.once>
+
+            <g-image src="~/assets/images/robots-cloud.png" />
             
-            <div class="text-col-2">
+            <div class="text-col-1">
               <h3>3. {{$ts('Serverless IoT applications for users')}}</h3>
               <p class="hyphens">{{$ts('The question of the privacy of users of modern applications should not be stuck in the inability of companies to use modern advances in the field of web3. There is no need to authenticate or require connection to specific servers to access telemetry and control the device.')}}</p>
             </div>
-
-            <g-image src="~/assets/images/robots-cloud.png" />
             
           </section>
         </div>
@@ -178,24 +177,30 @@
         </div>
         <section class="index-academy layout layout__content grid-3 animate-inside" v-in-viewport.once>
           <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/introduction-course/">
+            <g-image aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/academy-1.png" />
             </div>
             <h3>{{$ts('Introduction Course')}}</h3>
+            <p>{{$ts('Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/boston-dynamics-course/">
+            <g-image aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
             <div class="img-back spot">
               <g-image aria-hidden="true" src="~/assets/images/academy-2.png" />
             </div>
             <h3>{{$ts('Boston Dynamics Spot Software Developing')}}</h3>
+            <p>{{$ts('We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/smart-home-course/">
-          <div class="img-back">
+            <g-image aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
+            <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/academy-3.png" />
             </div>
             <h3>{{$ts('Sovereign Smart Home with Robonomics and Home Assistant')}}</h3>
+            <p>{{$ts('In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.')}}</p>
           </g-link>
         </section>
       </section>
@@ -217,7 +222,7 @@ query {
 
   h2 {
     font-family: var(--font-family-code);
-    font-weight: 300;
+    font-weight: 400;
   }
 
   #banner {
@@ -415,6 +420,10 @@ query {
   #logo {
     position: relative;
     z-index: 10;
+  }
+
+  .robonomics-section {
+    padding-top: calc(var(--space)*3);
   }
 
   .section__blue {
@@ -708,6 +717,19 @@ query {
         transform: rotateX(45deg);
       }
 
+
+  .index-academy .oldy  {
+    position: relative;
+  }
+
+  .academy-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 88px;
+    z-index: 10;
+  }
   
   .index-getstarted a,
   .index-academy a {
@@ -727,8 +749,14 @@ query {
 
   .goals > section {
       display: grid;
-      grid-template-columns: 1fr 0.5fr;
+      grid-template-columns: 0.5fr 1fr ;
       gap: var(--space);
+      align-items: center;
+  }
+
+  .goals h3,
+  .goals p {
+    font-size: calc(var(--base-font-size) * 0.9)
   }
   
   @media screen and (max-width: 1100px) {
@@ -767,7 +795,18 @@ query {
 
 
   .oldy h3 {
-    text-align: center;
+    margin-bottom: calc(var(--space) * 0.5);
+    font-size: calc(var(--base-font-size) * 0.9);
+    font-family: var(--font-family);
+    color: var(--color-blue);
+    text-transform: capitalize;
+    text-align: left;
+  }
+
+  .oldy {
+    text-align: left;
+    font-size: calc(var(--base-font-size) * 0.9)
+
   }
 
   .img-back.spot img {
@@ -779,7 +818,7 @@ query {
 <script>
   import Navigation from '~/components/Navigation.vue'
   import MetaInfo from '~/components/MetaInfo.vue'
-  import Scheme from  '~/components/Scheme.vue'
+  import Scheme from  '~/components/SchemeWithPopups.vue'
   import MovingNumbers from  '~/components/decor/MovingNumbers.vue'
 
   export default {

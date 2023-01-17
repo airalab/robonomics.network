@@ -96,13 +96,13 @@ export default {
   .theme-sun, .theme-moon {
     padding: 0.35rem 0.6rem;
     height: 100%;
-    border: 1px solid transparent;
-    background-color: #000;
+    border: 1px solid var(--color-dark);
+    background-color: var(--color-dark);
     transition: background-color 0.33s ease-in-out;
   }
 
-  .theme-sun {
-    background-color: var(--color-darkness);
+  .theme-moon {
+    background-color: var(--color-light)
   }
 
 
@@ -113,16 +113,13 @@ export default {
   }
 
   .dark-theme .theme-sun svg {
-    fill: #7A7B81;
+    fill: #000;
   }
 
-  .dark-theme .theme-moon {
-    background-color: var(--color-darkness)
-  }
 
-  .dark-theme .theme-sun {
+  /* .dark-theme .theme-sun {
     background-color: #000;
-  }
+  } */
 
   .theme-moon svg {
     width: 13px;
@@ -130,7 +127,7 @@ export default {
   }
 
   .cls-1 {
-    fill: #565656;
+    fill: var(--color-dark);
   }
 
   .dark-theme .cls-1 {
