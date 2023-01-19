@@ -825,6 +825,38 @@ query {
       MetaInfo,
       Scheme,
       MovingNumbers
+    },
+
+    data() {
+      return {
+        lastScrollPosition: 0,
+      }
+    },
+
+
+    methods: {
+      onScroll() {
+      // Get the current scroll position
+      const currentScrollPosition = window.pageYOffset
+      // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
+      if (currentScrollPosition < 0) {
+        this.$store.commit('TOGGLE_SHOW_HEADER', false)
+        return
+      }
+        // Here we determine whether we need to show or hide the navbar
+        // Set the current scroll position as the last scroll position
+        if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 200) {
+          return
+        }
+        this.$store.commit('TOGGLE_SHOW_HEADER', currentScrollPosition < this.lastScrollPosition)
+        this.lastScrollPosition = currentScrollPosition
+      },
+    },
+    mounted() {
+      window.addEventListener('scroll', this.onScroll)
+    },
+    beforeDestroy () {
+      window.removeEventListener('scroll', this.onScroll)
     }
    
   }

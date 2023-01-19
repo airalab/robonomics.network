@@ -1,11 +1,11 @@
 <template>
-  <header class="header">
+  <header class="header" v-if="$store.state.showHeader">
 
     <div class="header-content">
       <div class="header-logo">
         <g-link to="/">
-          <g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo-solid.svg"/>
-          <!-- <span class="logo-text">Robonomics Network</span> -->
+          <g-image class="hideMobile" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo-solid.svg"/>
+          <g-image class="hideDesktop" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/>
         </g-link>
       </div>
 
@@ -42,6 +42,10 @@ export default {
 </script>
 
 <style scoped>
+
+  .hideDesktop {
+    display: none;
+  }
   .header-logo {
     padding-left: calc(var(--screen-padding-left) - 9px);
     /* max-width: 283px;
@@ -128,6 +132,15 @@ export default {
       width: 34%;
       padding-left: 40px;
     } */
+  }
+
+  @media screen and (max-width: 650px) {
+    .hideDesktop {
+      display: block;
+    }
+    .hideMobile {
+      display: none;
+    }
   }
   
 </style>

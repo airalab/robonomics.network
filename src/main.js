@@ -11,6 +11,7 @@ import '~/assets/style/variables.css'
 import 'gridsome-remark-katex/node_modules/katex/dist/katex.min.css'
 
 import Vue from 'vue'
+import Vuex from 'vuex'
 import Default from '~/layouts/Default.vue'
 import Contacts from '~/components/Contacts.vue'
 
@@ -19,8 +20,10 @@ import Contacts from '~/components/Contacts.vue'
 import inViewportDirective from 'vue-in-viewport-directive'
 Vue.directive('in-viewport', inViewportDirective)
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient, appOptions }) {
   // head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
+
+  Vue.use(Vuex);
 
   if (isClient) {
     const vueSmoothScroll = require('vue2-smooth-scroll').default
@@ -46,6 +49,17 @@ export default function (Vue, { router, head, isClient }) {
     //       return next()
     //     }
     // })
+
+    appOptions.store = new Vuex.Store({
+      state: {
+        showHeader: true,
+      },
+     mutations: {
+      TOGGLE_SHOW_HEADER(state, showHeader) {
+        state.showHeader = showHeader
+      }
+     },
+    });
   }
 
   // Set default layout as a global component
