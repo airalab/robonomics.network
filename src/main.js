@@ -49,18 +49,18 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     //       return next()
     //     }
     // })
-
-    appOptions.store = new Vuex.Store({
-      state: {
-        showHeader: true,
-      },
-     mutations: {
-      TOGGLE_SHOW_HEADER(state, showHeader) {
-        state.showHeader = showHeader
-      }
-     },
-    });
   }
+
+  appOptions.store = new Vuex.Store({
+    state: {
+      showHeader: true,
+    },
+   mutations: {
+    TOGGLE_SHOW_HEADER(state, showHeader) {
+      state.showHeader = showHeader
+    }
+   },
+  });
 
   // Set default layout as a global component
   Vue.component('layout', Default)
