@@ -8,7 +8,6 @@ This website is supposed to contain all useful information for our community.
 2. Be sure you checked website carefully and the description of issue is quite clear.
 3. We will consider your suggestion as soon as we can and give you reply.
 
-
 ## For developers
 
 * Built with [Gridsome](https://gridsome.org/).
