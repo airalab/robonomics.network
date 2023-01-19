@@ -11,6 +11,7 @@
 - id: 2
   image: 'shop-circle-1.png'
   class: 'hideDesktop'
+  link: 'https://robonomics.threadless.com/'
 
 - id: 3
   text: 'Are you ready for Mars?'
@@ -30,6 +31,7 @@
 - id: 6
   image: 'shop-circle-2.png'
   class: 'hideDesktop'
+  link: 'https://robonomics.threadless.com/'
 
 - id: 7
   text: 'Retro Astronaut'
