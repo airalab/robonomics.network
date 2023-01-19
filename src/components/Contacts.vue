@@ -108,7 +108,7 @@ export default {
 <style scoped>
   .contacts {
     padding-top: 0 !important;
-    background: var(--body-bg);
+    background-color: transparent;
     border-top: 1px solid var(--color-darkness);
     border-bottom: 1px solid rgba(30, 30, 30, 0.2);
   }
