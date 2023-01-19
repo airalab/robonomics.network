@@ -308,3 +308,29 @@
 .list-simple li {
   margin-bottom: 0.2rem;
 }
+
+.title-with-bg {
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 20px;
+  max-width: 1080px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.title-with-bg  * {
+  display: inline;
+  text-align: left;
+  padding: 0;
+  font-weight: 500;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+}
+
+.title-with-bg  span {
+  padding-left: var(--space);
+  padding-right: var(--space);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
