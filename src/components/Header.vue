@@ -1,24 +1,26 @@
 <template>
-  <header class="header" v-if="$store.state.showHeader">
+  <client-only>
+      <header class="header" v-if="$store.state.showHeader">
 
-    <div class="header-content">
-      <div class="header-logo">
-        <g-link to="/">
-          <g-image class="hideMobile" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo-solid.svg"/>
-          <g-image class="hideDesktop" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/>
-        </g-link>
-      </div>
+        <div class="header-content">
+          <div class="header-logo">
+            <g-link to="/">
+              <g-image class="hideMobile" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo-solid.svg"/>
+              <g-image class="hideDesktop" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/>
+            </g-link>
+          </div>
 
-      <div class="header-side">
-        <languageSwitcher/>
-        <ThemeSwitcher/>
-        <HeaderNav/>
+          <div class="header-side">
+            <languageSwitcher/>
+            <ThemeSwitcher/>
+            <HeaderNav/>
 
-      </div>
+          </div>
 
-  
-    </div>
-  </header>
+      
+        </div>
+      </header>
+  </client-only>
 </template>
 
 <static-query>
