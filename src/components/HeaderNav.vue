@@ -15,7 +15,8 @@
             <li><g-link to="/xrt">{{$ts('Tokenomics')}}</g-link></li>
             <li><g-link to="/kusama-slot">{{$ts('Parachain')}}</g-link></li>
             <li><g-link to="/papers">{{$ts('Science papers')}}</g-link></li>
-            <li class="new-column"><g-link to="/books">{{$ts('Graphic books')}}</g-link></li>
+            <li class="new-column"><g-link to="/robonomics-art-shop">{{$ts('Shop')}}</g-link></li>
+            <li><g-link to="/books">{{$ts('Graphic books')}}</g-link></li>
             <li><g-link to="/logos-and-assets">{{$ts('Logo and assets')}}</g-link></li>
             <!-- <li><g-link to="/nft">NFT</g-link></li> -->
             <li ><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
@@ -49,7 +50,7 @@
         top: calc(var(--screen-padding-top) - -12px);
         left: 0;
         right: 0;
-        bottom: calc(var(--screen-padding-bottom) - 1px);
+        bottom: 0;
         background-color: var(--color-light);
         padding: var(--space);
         padding-top: calc(var(--space)*2);

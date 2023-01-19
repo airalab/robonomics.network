@@ -4,8 +4,8 @@
     <div class="header-content">
       <div class="header-logo">
         <g-link to="/">
-          <g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/>
-          <span class="logo-text">Robonomics Network</span>
+          <g-image :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo-solid.svg"/>
+          <!-- <span class="logo-text">Robonomics Network</span> -->
         </g-link>
       </div>
 
@@ -114,39 +114,20 @@ export default {
 
 
   @media screen and (max-width: 950px) {
-    .header-logo  {
-      margin-top: 6px;
-      width: 40%;
+
+    .header-logo {
+      margin-right: 10px;
     }
 
     .header-logo a svg {
       width: 100%;
     }
-
+/* 
     .header-logo {
       max-width: 100px;
       width: 34%;
       padding-left: 40px;
-    }
-  }
-
-  @media screen and (max-width: 560px) {
-    .header-logo  {
-      /* margin-top: 0; */
-      width: 100%;
-    }
-    .logo-text {
-      display: none;
-      font-size: 0.6rem;
-    }
-    
+    } */
   }
   
-  @media screen and (max-width: 480px) {
-    .header-logo  {
-      /* margin-top: 0; */
-      width: 100%;
-      margin-right: 5px;
-    }
-  }
 </style>
