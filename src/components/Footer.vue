@@ -14,6 +14,7 @@
 
         <div>
           <ul class="animate-inside" v-in-viewport.once>
+            <li><g-link to="/robonomics-art-shop">{{$ts('Shop')}}</g-link></li>
             <li><g-link to="/papers">{{$ts('Science papers')}}</g-link></li>
             <li><g-link to="/books">{{$ts('Graphic books')}}</g-link></li>
             <li><g-link to="/logos-and-assets">{{$ts('Logo and assets')}}</g-link></li>
