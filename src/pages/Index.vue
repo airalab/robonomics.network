@@ -68,7 +68,7 @@
       </section>
 
 
-      <section class="section section__solid robonomics-section">
+      <section class="section robonomics-section">
         <div class="layout layout__text animate-inside" v-in-viewport.once>
           <h2>{{$ts('What is Robonomics network?')}}</h2>
           <p class="text-center">{{$ts('Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}</p>
@@ -80,7 +80,7 @@
 
       </section>
 
-      <section class="section__whitespace">
+      <section>
         <div class="layout layout__text align-center">
           <h2>{{$ts('Get started')}}</h2>
         </div>
