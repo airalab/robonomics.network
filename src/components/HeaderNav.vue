@@ -46,7 +46,7 @@
     .nav-content {
         display: none;
         position: fixed;
-        z-index: 10;
+        z-index: 1012;
         top: calc(var(--screen-padding-top) - -12px);
         left: 0;
         right: 0;

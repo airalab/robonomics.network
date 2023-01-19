@@ -4,7 +4,7 @@
   
     <!-- <div class="screen"> -->
     <div class="screen banner">
-      <!-- <span class="left-border"></span> -->
+      <span class="right-border"></span>
 
       <Header/>
 
@@ -47,7 +47,6 @@
     background-image: url(/ambassador-pattern.jpg);
     background-position: 0 50%;
     background-repeat: repeat-x;
-    /* background-color: var(--color-red); */
     color: #fff !important;
     font-weight: bold;
     text-transform: uppercase;
@@ -103,12 +102,13 @@
 
   .sidetext-left {
     position:  fixed;
-    left: calc(var(--screen-padding-left)/5);
+    left: calc(var(--screen-padding-left)/6);
     bottom: calc(var(--screen-padding-bottom)/1.8);
 
     transform: rotate(-90deg);
     transform-origin: 0 0;
     white-space: nowrap;
+    z-index: 900;
   }
 
   .sidetext-left.active--exact, .sidetext-left a.active--exact { opacity: .5; }
@@ -116,10 +116,10 @@
 
 .screen {
 	position: relative;
-  /* background-color: var(--color-gray-light); */
+  background-color: var(--color-gray-light);
   border-style: solid;
   border-color: var(--header-bg);
-  border-width: 0 calc(var(--screen-padding-right) * 0.8) 0 calc(var(--screen-padding-left) * 0.8);
+  border-width: 0 calc(var(--screen-padding-right) * 0.8) calc(var(--screen-padding-right) * 0.8) calc(var(--screen-padding-left) * 0.8);
   padding-top: var(--screen-padding-top);
   padding-bottom: var(--screen-padding-bottom);
   height: 100vh;
@@ -130,41 +130,41 @@
 	.screen::-webkit-scrollbar { display: none; }
 
 
-  /* .screen:after {
+  .screen:after {
     content: "";
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: var(--screen-padding-bottom);
+    height: calc(var(--screen-padding-right) * 0.8);
     background-color: var(--header-bg);
-    z-index: 1000;
-  } */
+    z-index: 900;
+  }
 
-  /* .screen:before {
+  .screen:before {
     content: "";
     position: fixed;
     left: 0;
     bottom: 0;
     height: 100%;
-    width: calc(var(--screen-padding-right) * 3);
+    width:  calc(var(--screen-padding-left) * 0.8);
     background-color: var(--header-bg);
     z-index: 900;
-  } */
+  }
 
-  .left-border {
+  .right-border {
     position: fixed;
     right: 0;
     bottom: 0;
     height: 100%;
-    width: calc(var(--screen-padding-right));
+    width: calc(var(--screen-padding-right) * 0.8);
     background-color: var(--header-bg);
     z-index: 900;
   }
 
 
 .screen-content {
-  /* background-color: var(--color-gray-light); */
+  background-color: var(--color-gray-light);
 }
 
 /* .screen:not(.banner) {
