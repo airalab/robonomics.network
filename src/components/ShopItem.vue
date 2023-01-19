@@ -44,6 +44,7 @@ export default {
     font-family: var(--font-family);
     text-align: left;
     text-transform: none;
+    letter-spacing: 0;
   }
 
   .shop__image {
@@ -66,10 +67,10 @@ export default {
     border-radius: 100%;
   }
 
-  .hideDesktop.shop__item:hover .shop__image img {
+  /* .hideDesktop.shop__item:hover .shop__image img {
     transform: scale(1);
     cursor: default;
-  }
+  } */
 
   @media screen and (max-width: 990px) {
     .shop__item.hideDesktop {

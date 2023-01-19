@@ -32,13 +32,13 @@
         <g-link class="shop__link" to="https://robonomics.threadless.com/">SHOP NOW</g-link>
       </div>
 
-      <div class="shop-circle shop-circle-1">
+      <g-link to="https://robonomics.threadless.com/" class="shop-circle shop-circle-1">
         <g-image src="@/assets/images/shop-circle-1.png" alt="product"/>
-      </div>
+      </g-link>
 
-      <div class="shop-circle shop-circle-2">
+      <g-link  to="https://robonomics.threadless.com/" class="shop-circle shop-circle-2">
         <g-image src="@/assets/images/shop-circle-2.png" alt="product"/>
-      </div>
+      </g-link>
 
     </section>
 
