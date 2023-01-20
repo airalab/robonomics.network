@@ -13,7 +13,6 @@ This website is supposed to contain all useful information for our community.
 * Built with [Gridsome](https://gridsome.org/).
 * Please, use [npm](https://www.npmjs.com) to install packages
 
-
 To start it locally you need install node.js and [Gridsome framework](https://gridsome.org).
 
 **Start**
