@@ -53,3 +53,7 @@
 - path: '/logos-and-assets/'
   component: './src/pages/logos-and-assets.vue'
   typename: 'page'
+
+- path: '/shop/'
+  component: './src/pages/shop.vue'
+  typename: 'page'
