@@ -17,11 +17,11 @@
 
         <h1 class="clean">
           <p>
-            <b>Secure</b>
-            <b>Serverless</b>
-            <b>Futuristic</b>
+            <b>{{ $ts('Secure') }}</b>
+            <b>{{ $ts('Serverless') }}</b>
+            <b>{{ $ts('Futuristic') }}</b>
           </p>
-          IoT applications
+          {{ $ts('IoT applications') }}
         </h1>
 
         <div class="vision-subtitle"><span class="text">{{$ts('Vision page title')}}</span></div>
@@ -38,7 +38,7 @@
           write    Write information into device
         </div>
 
-        <div class="vision-decortext right">At the frontier of cybernetics and economics</div>
+        <div class="vision-decortext right">{{ $ts('At the frontier of cybernetics and economics') }}</div>
       </section>
 
       <section class="vision-iot layout layout__content grid-2 animate-inside" v-in-viewport.once>
