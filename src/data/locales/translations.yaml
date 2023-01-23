@@ -867,6 +867,14 @@
 - alias: Vision page title
   en: Robonomics network vision
   ru: Концепция сети Робономика
+  az: Robonomika şəbəkəsinin konsepsiyası
+  es: Visión de Robonomics network
+  fr: Vision du réseau Robonomics
+  it: La visione di Robonomics Network
+  pt: Visão da rede Robonomics
+  uk: Концепція мережі Робономіка
+  tr: Robonomics ağı vizyonu
+  de: Robonomics Netzvision
 - alias: Architecture title
   en: Robonomics network architecture
   ru: Архитектура сети Робономика
@@ -3714,6 +3722,7 @@
   uk: АРХІТЕКТУРА
   ru: АРХИТЕКТУРА
   tr: MİMARİ
+  de: ARCHITEKTUR
 - alias: ROBONOMICS ARCHITECTURE
   az: ROBONOMİKA ARXITEKTURASİ
   en: ROBONOMICS ARCHITECTURE
@@ -3724,6 +3733,7 @@
   ru: АРХИТЕКТУРА ЭКОНОМИКИ РОБОТОВ
   uk: АРХІТЕКТУРА РОБОНОМІКИ
   tr: ROBONOMİCS MİMARİSİ
+  de: ROBONOMICS ARCHITEKTUR
 - alias: The main idea that the authors of Robonomics tried to convey before - is
     the natural, logical, and seemingly inevitable evolution from the current level
     of the economy into fully automated services. Automated services will need to
@@ -3777,6 +3787,7 @@
     olan evrimdir. Otomatik hizmetlerin hem insan ekonomisinin dilini konuşma becerisine
     hem de çevrelerindeki dünyadaki çeşitli işlemleri insanların erişemeyeceği bir
     hızda gerçekleştirebilmesi için makinelerin kendi ekonomisine sahip olması gerekecektir.
+  de: Der Hauptgedanke von Robonomics ist die natürliche, logische und scheinbar unvermeidliche Entwicklung von der gegenwärtigen Wirtschaftsebene zu vollautomatischen Dienstleistungen. Automatisierte Dienstleistungen müssen sowohl den Ablauf der menschlichen Ökonomie verstehen als auch die eigene Ökonomie der Maschinen um verschiedene Operationen in der Welt um sie herum mit einer Geschwindigkeit durchzuführen die dem Menschen nicht zur Verfügung steht.
 - alias: Next we would like to show you the practical areas of human-machine interaction
     using modern Internet technology. We will move from the familiar IoT device architecture
     of technical information exchange through cloud services to the organization of
@@ -3825,6 +3836,7 @@
     alışverişinin bilinen IoT cihaz mimarisinden, merkezi olmayan, küresel olarak
     erişilebilir bir sağlayıcı ağı aracılığıyla teknik-ekonomik etkileşimin organizasyonuna
     geçeceğiz.
+  de: Als Nächstes möchten wir Ihnen die praktischen Bereiche der Mensch-Maschine-Interaktion mit moderner Internettechnologie vorstellen. Dabei bewegen wir uns von der bekannten IoT-Gerätearchitektur des technischen Informationsaustauschs über Cloud-Dienste hin zur Organisation der technisch, wirtschaftlichen Interaktion über ein dezentrales global zugängliches Netzwerk von Anbietern.
 - alias: To begin with, we need to make an excursion into the area that is most clearly
     related to the network connection of automated systems. After that, we will look
     at the basics of the Internet of Things in order to highlight the problems and
@@ -3867,6 +3879,7 @@
     karşılaştığı sorunları ve temel zorlukları ve Robonomics'in çözümünü hedeflediği
     sorunları ve temel zorlukları vurgulamak için Nesnelerin İnterneti'nin temellerine
     bakacağız.
+  de: Zunächst betrachten wir den Bereich der am deutlichsten mit der Vernetzung von automatisierten Systemen zusammenhängt. Danach schauen wir auf die wichtigsten Herausforderungen mit denen die Entwickler von IoT-Systemen konfrontiert sind und auf deren Lösung Robonomics abzielt.
 - alias: OVERVIEW OF THE STATE OF THE INTERNET OF THINGS (IOT)
   az: ƏŞYƏLƏRİN İNTERNETİNİN VƏZİYYƏTİNƏ İCMAL (IOT)
   en: OVERVIEW OF THE STATE OF THE INTERNET OF THINGS (IOT)
@@ -3877,6 +3890,7 @@
   uk: ОГЛЯД СТАНУ ІНТЕРНЕТУ РЕЧЕЙ (IOT)
   ru: ОБЗОР СОСТОЯНИЯ ИНТЕРНЕТА ВЕЩЕЙ (IOT)
   tr: Nesnelerin İnternetinin Durumuna Genel Bakış (IoT)
+  de: ÜBERBLICK ÜBER DEN STAND INTERNET OF THINGS (IOT)
 - alias: The issue of network accessibility of automatic devices has been discussed
     all over the planet since the 60s, and already at that time quite serious attempts
     were made to solve it. For example, the Soviet cyberneticist Viktor Glushkov proposed
@@ -3923,6 +3937,7 @@
   tr: Otomatik cihazların ağ erişilebilirliği konusu, 60'lı yıllardan beri tüm gezegende
     tartışılıyor ve o zamanlar bunu çözmek için oldukça ciddi girişimlerde bulunuldu.
     Örneğin, Sovyet sibernetikçi Viktor Glushkov, 60'lı ve 70'li yıllarda
+  de: Das Thema der Vernetzung automatischer Geräte wird seit den 60er Jahren auf der ganzen Welt diskutiert und schon damals wurden ernsthafte Versuche unternommen diese zu lösen. So hat beispielsweise der sowjetische Kybernetiker Viktor Glushkov in den 60er und 70er Jahren im Rahmen der Konzeption des nationalen Informationssystems
 - alias: OGAS
   az: OGAS
   en: OGAS
@@ -3933,6 +3948,7 @@
   ru: ОГАС
   uk: ЗДАС
   tr: OGAS
+  de: OGAS
 - alias: national information system in the 60s and 70s. It is widely known how the
     Coca-Cola vending machine was connected to the ARPANET in the 1980s so that the
     machines could report the availability of drinks and their temperature.
@@ -3963,6 +3979,7 @@
     hacimleri hakkında otomatik bilgi toplamayı önerdi ve kısmen uyguladı. Coca-Cola
     otomatının 1980'lerde ARPANET'e nasıl bağlandığı yaygın olarak biliniyor, böylece
     makineler içeceklerin mevcudiyetini ve sıcaklıklarını rapor edebiliyordu.
+  de: die automatische Erfassung von Informationen über die Produktionsmengen eines einzelnen Werks vorgeschlagen und teilweise umgesetzt. Es ist allgemein bekannt wie Coca-Cola-Automaten in den 80er Jahren an das ARPANET angeschlossen wurden, dass die Verfügbarkeit von Getränken und deren Temperatur melden konnten.
 - alias: But still, the actual development of IoT is happening today, due to the widespread
     use of enabling technologies. The main drivers of the rapid evolution of Internet
     of Things applications are the results of the development of many areas – from
@@ -4044,6 +4061,7 @@
     (2030''a kadar 25 milyar birimlik bir tahminle) ve bu, araştırmacıları ve geliştiricileri
     sağlık, ev otomasyonu, tarım ticareti,çevresel koruma gibi çeşitli alanlarda yeni
     IoT uygulamaları oluşturmaya teşvik etti. '
+  de: Dennoch findet die eigentliche Entwicklung des IoT schon heute statt und zwar dank der weit verbreiteten Nutzung von Basistechnologien. Die wichtigsten Triebkräfte für die rasante Entwicklung der Anwendungen von "Internet of Things" ist das Ergebnis der Entwicklung in vielen Bereichen - von der drahtlosen Kommunikation mit verschiedenen Reichweiten und eingebetteten Geräten bis hin zu Cloud-Analysen und maschinellem Lernen. Die Zahl der IoT-Geräte ist in den letzten 10 Jahren stetig gewachsen (mit einer Prognose von 25 Milliarden Geräten bis 2030) was Forscher und Entwickler dazu veranlasst hat neue IoT-Anwendungen in verschiedenen Bereichen wie Gesundheitswesen, Heimautomatisierung, Agrarindustrie und Umweltschutz zu entwickeln.
 - alias: 'We are more interested in the process of building IoT-systems and the tasks
     that arise in this process. Over the years of research, many different architectures
     have been proposed, and by averaging them, we can distinguish three basic components
@@ -4089,6 +4107,7 @@
     çok ilgileniyoruz. Yıllar süren araştırmalar boyunca birçok farklı mimari önerildi
     ve bunların ortalamasını alarak bir IoT sisteminin üç temel bileşenini ayırt edebiliriz:
     cihazlar, ağ altyapısı, analitik, bilgi işlem ve kontrol makineleri.'
+  de: 'Wir interessieren uns mehr für den Prozess von IoT-Systemen und die Aufgaben die dabei anfallen. Im Laufe der Jahre der Forschung wurden viele verschiedene Architekturen vorgeschlagen und wenn man diese zusammenfasst kann man drei grundlegende Komponenten eines IoT-Systems unterscheiden: Geräte, Netzwerkinfrastruktur, Analyse- Rechen- und Kontrollmaschinen.'
 - alias: NEW CHALLENGES
   az: YENİ ÇƏTİNLİKLƏR
   en: NEW CHALLENGES
@@ -4099,6 +4118,7 @@
   ru: Новые вызовы
   uk: НОВІ ВИКЛИКИ
   tr: YENİ MEYDAN OKUMALAR
+  de: HERAUSFORDERUNGEN
 - alias: The development and application of the Internet of Things has shown that
     solving typical problems is not enough. Completely new concepts and principles,
     based on earlier mistakes and identified shortcomings, have emerged by the present
@@ -4203,6 +4223,7 @@
     bulutun bazı işlevlerini üstlenmesiyle sis ve uç bilgi işlem kavramları ortaya
     çıktı. Bu nedenle, uç sistemlerin oluşturulması, Nesnelerin İnterneti'ni oluşturmanın
     yeni zorluklarından biri haline geldi.
+  de: Die Entwicklung und Anwendung "Internet of Things" hat gezeigt, dass es nicht ausreicht typische Probleme zu lösen. Bis heute sind völlig neue Konzepte und Grundsätze entstanden die auf früheren Fehlern und erkannten Mängeln beruhen. Dieser sicherlich bequeme Ansatz der Nutzung von Cloud-Diensten hat sich als eine Reihe kritischer Mängel in Bezug auf Skalierbarkeit, Datenschutz und Sicherheit erwiesen. Um diese Probleme zu lösen wurde vorgeschlagen die Datenverarbeitung, die Logik und die Berechnungen näher an den Ort zu bringen an dem sie verwendet werden. So entstanden die Konzepte des Fog- und Edge-Computing bei denen Zwischensysteme zwischen der Cloud und den Geräten einige der Funktionen der Cloud übernehmen. Daher ist die Schaffung von Edge-Systemen zu einer der neuen Herausforderungen beim Aufbau von "Internet of Things" geworden.
 - alias: Another recent challenge for building IoT has been the concept of the digital
     twin — a digital version of real equipment that copies its specifications and
     historical data. This concept is at its best in areas where it is necessary to
@@ -4264,6 +4285,7 @@
     sahip olmanın ve gelişimini tahmin edebilmenin gerekli olduğu alanlarda en iyisidir.
     Nesnelerin İnterneti, dijital ikizlerin ana entegratörü olarak hareket eder, ancak
     bu görev, IoT cihazlarının olağan bağlantılarından çok daha karmaşıktır.
+  de: Eine weitere aktuelle Herausforderung für das IoT ist das Konzept des "digital twins" - eine digitale Version einer realen Anlage die deren Spezifikationen und historische Daten kopiert. Dieses Konzept kommt am besten in Bereichen zur Geltung in denen eine genaue und vollständige Spezifikation eines Prozesses erforderlich ist um dessen Entwicklung vorhersagen zu können. Das IoT fungiert als Hauptintegrator der "digital twins", aber diese Aufgabe ist viel tiefgreifender als die übliche Konnektivität von IoT-Geräten.
 - alias: Right now we are witnessing a whole segment of the network, designed and
     convenient not for people, but for machines. The Internet of Things is no longer
     just the mechanics of connecting a device to the network, but more services, created
@@ -4322,6 +4344,7 @@
     fazla hizmettir. Nesnelerin İnterneti, yalnızca kullanıcı ile cihazı birbirine
     bağlamakla kalmaz, aynı zamanda cihazların kişiye hizmet sağlama görevlerini özerk
     olarak yerine getirmesine yardımcı olur.
+  d: Wir erleben gerade ein ganzes Segment des Netzes das nicht für Menschen, sondern für Maschinen konzipiert und geeignet ist. Das IoT besteht nicht mehr nur aus dem Anschluss eines Geräts an das Netz, sondern aus mehr Diensten die speziell für Geräte geschaffen und verfügbar sind. Das IoT verbindet nicht nur den Nutzer und das Gerät sondern hilft den Geräten auch, die Aufgaben der Bereitstellung eines Dienstes für den Menschen zu übernehmen, allerdings autonom.
 - alias: CLASSIFICATION OF IOT DEVICES
   az: IOT CİHAZLARININ TƏSNİFATI
   en: CLASSIFICATION OF IOT DEVICES
@@ -4332,6 +4355,7 @@
   ru: КЛАССИФИКАЦИЯ IOT-УСТРОЙСТВ
   uk: КЛАСИФІКАЦІЯ IOT-ПРИСТРОЇВ
   tr: IOT CİHAZLARININ SINIFLANDIRILMASI
+  de: KLASSIFIZIERUNG DER IOT-GERÄTE
 - alias: EMBEDDED IOT SYSTEMS
   az: QURULMUŞ IOT SİSTEMLƏR
   en: EMBEDDED IOT SYSTEMS
@@ -4342,6 +4366,7 @@
   uk: ВБУДОВАНІ IOT-СИСТЕМИ
   ru: ВСТРАИВАЕМЫЕ IOT-СИСТЕМЫ
   tr: Gömülü Nesnelerin İnterneti Sistemleri
+  de: EINGEBETTETE IOT-SYSTEME
 - alias: Such systems have no user interfaces and are typically used at the lowest
     level of the IoT ecosystems to provide basic functionality. Have to be energy
     efficient and small. Have limited computing and communication resources. IoT gateways
@@ -4387,6 +4412,7 @@
     genellikle IoT ekosistemlerinin en düşük düzeyinde kullanılır. Enerji verimli
     ve küçük olmalıdır. Sınırlı bilgi işlem ve iletişim kaynaklarına sahip olur. IoT
     ağ geçitleri veya denetleyicileri genellikle sinyal alıcıları olarak işlev görür.
+  de: Solche Systeme haben keine Benutzerschnittstellen und werden in der Regel auf dem untersten Level des IoT-Ökosystems eingesetzt um um die Basis Funktionen bereitzustellen. Sie müssen energieeffizient und klein sein. Sie verfügen über begrenzte Rechen- und Kommunikationsressourcen. IoT-Gateways oder -Steuerungen fungieren in der Regel als Signalempfänger.
 - alias: 'EDGE-SYSTEMS: IOT GATEWAYS AND CONTROLLERS'
   az: 'EDGE SİSTEMLERİ: IOT ŞLÜZU VƏ NƏZARƏTLƏRİ'
   en: 'EDGE-SYSTEMS: IOT GATEWAYS AND CONTROLLERS'
@@ -4397,6 +4423,7 @@
   ru: 'EDGE-СИСТЕМЫ: IOT-ШЛЮЗЫ И КОНТРОЛЛЕРЫ'
   uk: 'EDGE-СИСТЕМИ: IOT-ШЛЮЗИ І КОНТРОЛЕРИ'
   tr: 'EDGE SİSTEMLERİ: IOT AĞ GEÇİTLERİ VE KONTROL CİHAZLARI'
+  de: 'EDGE-SYSTEMS: IOT GATEWAYS UND STEUERUNGEN'
 - alias: These systems act as a link between locally accessible embedded systems and
     the global Internet. They typically support multiple communication protocols of
     embedded systems and transfer telemetry from devices to the cloud and control
@@ -4457,6 +4484,7 @@
     geriye doğru kontrol eder. Genellikle bu cihazlar, yerel ağdan ayrılmadan cihazlardan
     gelen bilgilerin birincil işlenmesini gerçekleştirmek için tek bir kart bilgisayarla
     donatılmış WiFi yönlendiricinin daha karmaşık bir sürümüdür.
+  de: Diese Systeme sind Bindeglieder zwischen lokal zugänglichen eingebetteten Systemen und dem globalen Internet. Sie unterstützen in der Regel mehrere Kommunikationsprotokolle von eingebetteten Systemen und übertragen Telemetriedaten von Geräten in die Cloud und Steuersignale zurück. Oft handelt es sich bei diesen Geräten um eine weiterentwickelte Version des WiFi-Routers die mit einem Einplatinencomputer ausgestattet ist um primäre Verarbeitung von Informationen von Geräten durchzuführen ohne das lokale Netzwerk zu verlassen.
 - alias: AUTONOMOUS SYSTEMS
   az: AVTONOM SİSTEMLƏR
   en: AUTONOMOUS SYSTEMS
@@ -4467,6 +4495,7 @@
   ru: АВТОНОМНЫЕ СИСТЕМЫ
   uk: АВТОНОМНІ СИСТЕМИ
   tr: OTONOM SİSTEMLER
+  de: AUTONOME SYSTEME
 - alias: This class includes complex automata (such as Spot from Boston Dynamics),
     which have a control component on the level of a full computer with a high-performance
     processor and a large amount of memory. In such cases, the robot is connected
@@ -4535,6 +4564,7 @@
     gerekli yazılım, doğrudan bağımsız sistemin bilgisayarına yüklenir. Veriler yerel
     olarak toplanır ve kısmen işlenir, ardından herhangi bir tam teşekküllü ağ cihazına
     benzer şekilde İnternet'e yayınlanır.
+  de: Zu dieser Klasse gehören komplexe Automaten (wie z. B. Spot of Boston Dynamics), die eine Steuerungskomponente auf dem Niveau eines vollwertigen Computers mit einem Hochleistungsprozessor und einem großen Speicher haben. In solchen Fällen ist der Roboter ohne zusätzliche Zwischenlösungen (Edge-Systeme) mit dem Internet verbunden. Die notwendige Software für den Zugriff auf das IoT wird direkt auf dem Rechner des autonomen Systems installiert. Die Daten werden lokal gesammelt und teilweise verarbeitet und dann ins Internet übertragen, ähnlich wie bei einem vollwertigen Netzwerkgerät.
 - alias: 'INTERNET OF THINGS PROVIDERS '
   az: IoT TƏMİNATÇILARI
   en: 'INTERNET OF THINGS PROVIDERS '
@@ -4545,6 +4575,7 @@
   ru: ПРОВАЙДЕРЫ ИНТЕРНЕТА ВЕЩЕЙ
   uk: ПРОВАЙДЕРИ ІНТЕРНЕТУ РЕЧЕЙ
   tr: Nesnelerin İnterneti Sağlayıcıları
+  de: IoT PROVIDER
 - alias: The main job of IoT providers is providing users with remote access to data
     and analytics, as well as management of smart devices over the Internet. The main
     criteria for the quality of the provider is security of operations, stability
@@ -4588,6 +4619,7 @@
     yönetilmesinin yanı sıra verilere ve analitiklere uzaktan erişim sağlamaktır.
     Sağlayıcının kalitesi için ana kriterler, operasyonların güvenliği, bağlantının
     kararlılığı ve sağlayıcının dünyanın her yerinden erişilebilir olmasıdır.
+  de: Die Hauptaufgabe von IoT-Anbietern besteht darin, den Nutzern den Fernzugriff auf Daten und Analysen sowie die Verwaltung von intelligenten Geräten über das Internet zu ermöglichen. Die wichtigsten Kriterien für die Qualität des Anbieters sind die Sicherheit des Betriebs, die Stabilität der Verbindung und die Erreichbarkeit des Anbieters von jedem Ort der Welt aus.
 - alias: 'The standard scheme for working with an IoT provider includes: installing
     software compatible with the cloud smart device, setting up cloud-side management
     services after the first successful connection of a device, connection of various
@@ -4624,6 +4656,7 @@
   tr: 'Bir IoT sağlayıcısıyla çalışmak için standart şema şunları içerir: bulut akıllı
     cihazla uyumlu yazılımın yüklenmesi, bir cihazın ilk başarılı bağlantısından sonra
     bulut tarafı yönetim hizmetlerinin ayarlanması, çeşitli analitik hizmetlerin bağlanması.'
+  de: 'Das Standardschema eines IoT-Anbieters umfasst: Installation von Software, die mit dem intelligenten Cloud-Gerät kompatibel ist. Einrichtung von Cloud-seitigen Verwaltungsdiensten nach der ersten erfolgreichen Verbindung eines Geräts. Verbindung verschiedener Arten von Analysediensten.'
 - alias: DIGITAL TWINS ARE THE HEART OF THE INTERNET OF THINGS
   az: RƏQƏMSAL ƏKİZLƏR ƏŞYALARIN İNTERNETİNİN ÜRƏYİDİR
   en: DIGITAL TWINS ARE THE HEART OF THE INTERNET OF THINGS
@@ -4634,6 +4667,7 @@
   uk: ЦИФРОВІ ДВІЙНИКИ — СЕРЦЕ ІНТЕРНЕТУ РЕЧІВ
   ru: ЦИФРОВЫЕ ДВОЙНИКИ — СЕРДЦЕ ИНТЕРНЕТА ВЕЩЕЙ
   tr: DİJİTAL İKİZLER İNTERNETİN KALBİDİR
+  de: DIGITAL TWINS SIND DAS HERZSTÜCK VON IoT
 - alias: Speaking of digital twins, it should be noted that architecturally their
     implementation is required; as a refusal to give the user direct access to control
     devices and change their states. Out of the most obvious reasons for rejection
@@ -4712,6 +4746,7 @@
     veri kaynağına erişmesi gerekiyorsa, her kullanıcıya kişiselleştirilmiş kontrol
     verilmesi kritik olabilir. Son olarak, cihazın devre dışı kalması durumunda cihazın
     son fiili durumunu kullanılabilir durumda tutmak son derece yararlıdır.
+  de: Apropos "Digital Twins" sollte angemerkt werden, dass architektonisch ihre Umsetzung erforderlich ist. Als Verwehrung dem Benutzer direkten Zugang zur Steuerung von Geräten zu geben und ihren Zustand zu ändern. Zu den offensichtlichsten Gründen für die Ablehnung gehören erstens das Vorhandensein eigener Anforderungen und Bedingungen in den Geräten kurz vor der Einführung. Zweitens, wenn mehrere Benutzergeräte auf eine einzige Datenquelle zugreifen müssen kann es kritisch sein jedem Benutzer eine personalisierte Kontrolle zu geben. Und schließlich ist es äußerst nützlich den letzten Ist-Zustand des Geräts für den Fall bereitzuhalten das es außer Betrieb geht.
 - alias: As a result, we have a separation of the loop of information exchange with
     the user and the actual generation of actual data by the sensors. To illustrate
     this principle, below is the process of the user working with an IoT device using
@@ -4751,6 +4786,7 @@
     gerçek veri üretimi arasında bir ayrım elde ederiz. Bu çalışmayı göstermek için
     aşağıda, bir dijital ikiz kullanarak IoT cihazı ile çalışan kullanıcının sürecine
     yer verilmiştir.
+  de: Das Ergebnis ist eine Trennung der Schleife des Informationsaustauschs mit dem Nutzer und der tatsächlichen Erzeugung von Daten durch die Sensoren. Zur Veranschaulichung dieses Prinzips wird im Folgenden der Prozess der Arbeit des Benutzers mit einem IoT-Gerät unter Verwendung eines "digital Twins" dargestellt.
 - alias: IOT DATA FLOWS IN CLOUD SERVICES
   az: BULUD XİDMƏTLƏRİNDƏ IOT MƏLUMATLARININ HƏRƏKƏTİ
   en: IOT DATA FLOWS IN CLOUD SERVICES
@@ -4761,6 +4797,7 @@
   ru: ПОТОКИ IOT-ДАННЫХ В ОБЛАЧНЫХ СЕРВИСАХ
   uk: ПОТОКИ IOT-ДАНИХ У ХМАРНИХ СЕРВІСАХ
   tr: BULUT HİZMETLERİNDE IOT VERİ AKIŞLARI
+  de: IOT-DATENFLÜSSE IN CLOUD-DIENSTEN
 - alias: Input values for cloud triggers. For example, the cloud service sends various
     notifications to the user in the event of a report from a car alarm sensor about
     a strike.
@@ -4789,6 +4826,7 @@
   tr: Bulut tetikleyicileri için giriş değerleri. Örneğin, bulut hizmeti, bir araba
     alarm sensöründen bir grev hakkında bir rapor olması durumunda kullanıcıya çeşitli
     bildirimler gönderir.
+  de: Eingabewerte für Cloud-Auslöser. Zum Beispiel sendet der Cloud-Dienst verschiedene Benachrichtigungen an den Benutzer wenn ein Autoalarmsensor einen Ausfall meldet.
 - alias: Output data for complex analytics that cannot be produced at the edge level.
     For example, when processing video for face recognition in a crowd.
   az: Edge səviyyədə işlənə bilməyən mürəkkəb analitika üçün çıxış məlumatları. Məsələn,
@@ -4810,6 +4848,7 @@
   uk: Вихідні дані для складної аналітики, які не можуть бути створені на крайньому рівні. Наприклад, при обробці відео для розпізнавання обличчя в натовпі.
   tr: Edge düzeyinde üretilemeyen karmaşık analitik için çıktı verileri. Örneğin,
     bir kalabalıkta yüz tanıma için video işlemeyi düşünebiliriz.
+  de: Ausgabedaten für komplexe Analysen die nicht auf der Randebene erstellt werden können. Zum Beispiel bei der Verarbeitung von Videos zur Gesichtserkennung in einer Menschenmenge.
 - alias: The basis for forming a digital twin of the device in order to create a cast
     of its state. For example, at the user’s request in the mobile app or on the website.
   az: Cihazın rəqəmsal əkizinin formalaşdırılması üçün əsas onun vəziyyətini yaratmaqdır.
@@ -4833,6 +4872,7 @@
   uk: Основа для формування цифрового двійника пристрою з метою створення зліпку його стану. Наприклад, за бажанням користувача в мобільному додатку або на сайті.
   tr: Durumunun bir dökümünü oluşturmak için cihazın dijital ikizini oluşturmanın
     temeli. Örneğin, mobil uygulamada veya web sitesinde kullanıcının isteği üzerine.
+  de: Die Grundlage zur Erstellung eines "digital Twins" des Geräts um einen Abdruck seines Zustands zu erstellen. Zum Beispiel auf Anforderung des Nutzers in der mobilen App oder auf der Website.
 - alias: POPULAR EXAMPLES OF IOT SOLUTIONS
   az: IOT HƏLLLƏRİNİN MƏHŞUR NÜMUNƏLƏRİ
   en: POPULAR EXAMPLES OF IOT SOLUTIONS
@@ -4843,6 +4883,7 @@
   uk: ПОПУЛЯРНІ ПРИКЛАДИ IOT-РІШЕНЬ
   ru: ПОПУЛЯРНЫЕ ПРИМЕРЫ IOT-РЕШЕНИЙ
   tr: IOT ÇÖZÜMLERİNİN POPÜLER ÖRNEKLERİ
+  de: BELIEBTE BEISPIELE FÜR IOT-LÖSUNGEN
 - alias: A typical smart home system provides a wide range of options for controlling
     your living space. With its help you can remotely control the door locks, setting
     up one-time or regular access to the room as family and friends, and for maintenance
@@ -4927,6 +4968,7 @@
     alabilir, programlı bir robot elektrikli süpürge başlatabilir ve bir temizlik
     raporu sağlayabilir. kullanıcı uygulamasında, programınıza bağlı olarak oda sıcaklığını
     en uygun değere değiştirebilir.
+  de: 'Ein typisches Smart-Home-System bietet eine breite Palette von Möglichkeiten zur Steuerung Ihres Wohnraums. Mit seiner Hilfe können Sie die Türschlösser aus der Ferne steuern und einmaligen oder regelmäßigen Zugang zu den Räumen für Familie und Freunde sowie für Wartungs- oder Lieferpersonal einrichten. Mit zahlreichen Sensoren und Aufzeichnungsgeräten ist das System in der Lage, Videoaufnahmen zu machen wenn Bewegungssensoren ausgelöst werden. Weiteres selbstständige Entscheidungen zu treffen um die Wasserversorgung abzuschalten z.B.: wenn ein Leck im Wassersystem entdeckt wird. Einen Staubsaugerroboter nach Zeitplan zu starten der einen Reinigungsbericht an die Benutzer-App sendet.  Die Raumtemperatur nach Ihrem Zeitplan auf den optimalen Wert zu ändern.'
 - alias: 'Smart cars. Providing the car’s onboard electronics with access to mobile
     Internet, the user gets access to remote control of various car functions directly
     from his smartphone: opening doors, turning on the air conditioner, controlling
@@ -4984,6 +5026,7 @@
     etmek. Bu tür arabalar araç paylaşımı için kullanılıyorsa, bu hizmetin müşterileri
     için durumlarıyla, kalan yakıtlarıyla vb. araçların konumlarının etkileşimli bir
     haritasını oluşturabilirsiniz.'
+  de: 'Intelligente Fahrzeuge. Wenn die Bordelektronik des Fahrzeugs Zugang zum mobilen Internet hat, kann der Nutzer verschiedene Funktionen des Fahrzeugs direkt von seinem Smartphone aus fernsteuern: z.B.: Türen öffnen, die Klimaanlage einschalten, die Scheinwerfer regulieren. Wenn solche Autos für Carsharing genutzt werden, können Sie für die Kunden dieses Dienstes eine interaktive Karte mit dem Standort der Autos, ihrem Status, dem verbleibenden Kraftstoff usw. erstellen.'
 - alias: Smart equipment leasing system. The company installs robotic manipulators
     on the conveyor line under a contract with payment for the number of operations
     or for the time of the robot. Manipulators regularly provide a log of operations
@@ -5033,6 +5076,7 @@
     Manipülatörler düzenli olarak gerçekleştirilen işlemlerin, hataların ve uyarıların
     bir kaydını sağlar. Robotun kiralama ücreti, satıcının robotların öngörücü bakımının
     yanı sıra buna göre hesaplanır.
+  de: Leasing-Systeme für smarte Geräte. Ein Unternehmen installiert Industrieroboter an der Förderlinie im Rahmen eines Vertrags gegen Bezahlung für die Anzahl der Operationen oder für die geleistete Zeit des Roboters. Die Roboter erstellen regelmäßig ein Protokoll über die durchgeführten Vorgänge, Fehler und Warnungen. Die Leasinggebühr für den Roboter wird auf der Grundlage dieser Daten sowie der künftig erforderlichen Services durch den Verkäufer berechnet.
 - alias: CURRENT PROBLEMS OF BUILDING IOT SOLUTIONS
   az: IOT HƏLLLƏRİNİN TİKİLMƏSİNİN İNDİKİ PROBLEMLƏRİ
   en: CURRENT PROBLEMS OF BUILDING IOT SOLUTIONS
@@ -5043,6 +5087,7 @@
   ru: АКТУАЛЬНЫЕ ПРОБЛЕМЫ ПОСТРОЕНИЯ IOT-РЕШЕНИЙ
   uk: АКТУАЛЬНІ ПРОБЛЕМИ ПОБУДУВАННЯ IOT-РІШЕНЬ
   tr: IOT ÇÖZÜMLERİ OLUŞTURMANIN MEVCUT SORUNLARI
+  de: AKTUELLE PROBLEME BEIM AUFBAU VON IOT-LÖSUNGEN
 - alias: GLOBAL AVAILABILITY
   az: QLOBAL MÖVCUDLUQ
   en: GLOBAL AVAILABILITY
@@ -5053,6 +5098,7 @@
   uk: ГЛОБАЛЬНА ДОСТУПНІСТЬ
   ru: ГЛОБАЛЬНАЯ ДОСТУПНОСТЬ
   tr: KÜRESEL KULLANILABİLİRLİK
+  de: GLOBALE VERFÜGBARKEIT
 - alias: The standard client-server architecture requires specifying endpoints when
     routing messages from IoT devices. Thus, during the life of a smart device, the
     lack of connection will mean a limitation in the ability to control and interact
@@ -5090,6 +5136,7 @@
     uç noktaların belirtilmesini gerektirir. Bu nedenle, akıllı bir cihazın ömrü boyunca
     bağlantı eksikliği, cihazı kontrol etme ve etkileşim kurma yeteneğinde bir sınırlama
     anlamına gelecektir.
+  de: Die Standard-Client-Server-Architektur erfordert die Angabe von Endpunkten bei der Weiterleitung von Nachrichten von IoT-Geräten. Daher bedeutet das Fehlen einer Verbindung während der Lebensdauer eines intelligenten Geräts eine Einschränkung der Möglichkeiten zur Steuerung und Interaktion mit dem Gerät.
 - alias: For example, the trade war between China and the United States is already
     a sword of Damocles hanging over thousands of consumers of Chinese smart appliances
     in the United States and vice versa. At any moment, the blocking of Xiaomi servers
@@ -5136,6 +5183,7 @@
     asılı duran Demokles'in kılıcıdır ve bunun tersi de geçerlidir. Her an, ABD yetkilileri
     tarafından Xiaomi sunucularının engellenmesi, üreticinin bulut hizmetlerine bağlanan
     cihazların kullanıcılarını etkileyebilir.
+  de: So ist beispielsweise der Handelskrieg zwischen China und den Vereinigten Staaten bereits ein Damoklesschwert, dass über Tausenden von Verbrauchern chinesischer smarter Geräte in den Vereinigten Staaten hängt und umgekehrt. Jeden Moment könnte die Sperrung der Xiaomi-Server durch die US-Behörden die Nutzer dieser Geräten betreffen die sich mit den Cloud-Diensten des Herstellers verbinden.
 - alias: Being in the immediate vicinity of an IoT device, you can’t control it from
     a mobile app if there is no connection to the servers, through which the user
     authentication and telemetry collection from the devices themselves are provided.
@@ -5177,6 +5225,7 @@
     kimlik doğrulaması ve telemetri toplamanın sağlandığı sunuculara bağlantı yoksa
     bir mobil uygulamadan kontrol edemezsiniz. Yani cihaz aslında kullanıcı tarafından
     değil bulut tarafından kontrol edilir.
+  de: Wenn man sich in unmittelbarer Nähe eines IoT-Geräts befindet kann man es nicht von einer mobilen App aus steuern wenn keine Verbindung zu den Servern besteht. Das bedeutet, das das Gerät tatsächlich von der Cloud gesteuert wird und nicht vom Nutzer.
 - alias: CYBERSECURITY
   az: KİBER TƏHLÜKƏSİZLİK
   en: CYBERSECURITY
@@ -5187,6 +5236,7 @@
   uk: КІБЕРБЕЗПЕКА
   ru: КИБЕРБЕЗОПАСНОСТЬ
   tr: SİBER GÜVENLİK
+  de: CYBERSICHERHEIT
 - alias: The most important reason for the low cybersecurity of most IoT solutions
     stems from the problematic legacy of cloud client-server architecture. For example,
     the most common smart home architecture right now is usually an IoT hub, connected
@@ -5261,6 +5311,7 @@
     geçirmeye vb. veya sunucuların başarısız olmasına neden olan doğal afetler. Ayrıca
     kesinlikle önemli olan bir diğer nokta da ilke olarak buluta ve onu koruyan insanlara
     güvenme ihtiyacıdır.
+  de: Der Grund für die geringe Cybersicherheit der meisten IoT-Lösungen ist die problematische Cloud-Client-Server-Architektur. So besteht die derzeit gängigste Smart-Home-Architektur in der Regel aus einem IoT-Hub der mit einem Cloud-Dienst verbunden ist. Ein typisches IoT-System ist also ein zentrales Steuerungselement, dass mit mehreren externen Systemen verbunden ist. Sicherlich ist der Cloud-Dienst sicherer als Low-Level-Geräte, aber die Konsolidierung der zentralen Kontrolle über Hunderttausende solcher Systeme macht jede Sicherheitsverletzung und jedes Leck zu einer großen Katastrophe.
 - alias: All of this is exacerbated by the scale of IoT solutions. The number of IoT
     systems. Certainly, the cloud service is more secure than low-level devices, but
     the consolidation of centralized control over hundreds of thousands of such systems
@@ -5302,6 +5353,7 @@
     sistemlerinin sayısıdır. Bulut hizmeti kesinlikle düşük seviyeli cihazlardan daha
     güvenlidir, ancak bu tür yüz binlerce sistem üzerinde merkezi kontrolün konsolidasyonu,
     her türlü güvenlik ihlalini ve sızıntıyı büyük bir felaket haline getirir.
+  de: All dies wird durch der hohen Anzahl der IoT-Systeme noch verschärft. Sicherlich ist der Cloud-Dienst sicherer als Geräte auf niedriger Ebene, aber die Konsolidierung der zentralen Kontrolle über Hunderttausende solcher Systeme macht jede Sicherheitsverletzung und jedes Leck zu einer großen Katastrophe.
 - alias: 'The cloud service servers are subject to all the typical cybersecurity problems:
     network attacks, DoS attacks (driving the system to failure), malicious modifications,
     user session hijacking, etc. But strong threats also include unintentional problems
@@ -5361,6 +5413,7 @@
     dağıtmayı ve anti-virüs kullanmayı çok daha zor hale getirir. Ne yazık ki en tehlikeli
     faktör, IoT cihazlarının CPS''leri çalıştırmasıdır, bu nedenle siber güvenliğe
     yönelik tehditler fiziksel düzeyde de bulunmaktadır.'
+  de: 'Die Server der Cloud-Dienste sind allen typischen Cyber-Sicherheitsproblemen ausgesetzt: Netzangriffe, DoS-Angriffe (die das System zum Ausfall bringen), böswillige Änderungen, usw. Zu den starken Bedrohungen gehören aber auch unbeabsichtigte Probleme wie Konstruktionsfehler, Missbrauch oder Naturkatastrophen die zu Serverausfällen führen. Ein weiterer wichtiger Punkt ist das grundsätzliche Vertrauen in die Cloud und der Personen die sie betreuen.'
 - alias: DATA PRIVACY
   az: MƏLUMATLARIN MƏXFİLLİYİ
   en: DATA PRIVACY
@@ -5371,6 +5424,7 @@
   uk: КОНФІДЕНЦІЙНІСТЬ ДАНИХ
   ru: ПРИВАТНОСТЬ ДАННЫХ
   tr: VERİ GİZLİLİĞİ
+  de: DATENSCHUTZ
 - alias: 'The privacy point needs to be separated from cybersecurity, because this
     problem is specific to IoT systems. Due to the large number and varied device
     types that are much more integrated into the physical world than just computers
@@ -5455,6 +5509,7 @@
     bir listesini paylaşıyoruz. Gizlilikle ilgili tehdit türleri arasında bilgi tanımlama,
     yerelleştirme ve izleme, profil oluşturma, envanter saldırısı, veri bağlama saldırısı
     yer almaktadır.
+  de: 'Der Datenschutz muss von der Cybersicherheit getrennt werden da dieses Problem spezifisch für IoT-Systeme ist. Aufgrund der großen Anzahl und der unterschiedlichen Gerätetypen die viel mehr in die physische Welt integriert sind als nur Computer und Smartphones vervielfachen sich die Arten von privaten Daten. Es handelt sich nicht mehr nur um GPS-Standortdaten, Einkaufsdaten, Finanztransaktionen und Fotos, sondern auch um eine permanente Aufzeichnung von Videos, Gesprächen, Sprachaufzeichnungen, Gesundheitszustand und sogar eine Liste von Gewohnheiten einer Person. Zu den Bedrohungen für die Privatsphäre gehören: Identifizierung von Informationen, Lokalisierung, Verfolgung, Profiling, Angriffe auf das Inventar, Angriffe auf die Datenverknüpfung.'
 - alias: The creepiest part is that users have little or no awareness that they are
     giving up their privacy because they have almost no idea what data is being collected
     and how it is being used. The threat to privacy grows not only from intruders,
@@ -5549,6 +5604,7 @@
     varlık olmasına ve gerçek bir değere sahip olmasına rağmen, toplanan kişinin yalnızca
     bu verileri aktif olarak elden çıkarma hakkından mahrum bırakılmamakta, hatta
     kendi verilerinin toplanması ve kullanılması için herhangi bir tazminat bile verilmemektedir.
+  de: Das Unheimliche daran ist das sich die Nutzer kaum oder gar nicht bewusst sind, dass sie ihre Privatsphäre aufgeben, weil sie fast keine Ahnung haben welche Daten gesammelt und wie diese verwendet werden. Die Bedrohung der Privatsphäre wächst nicht nur durch Hacker, sondern auch durch Organisationen und sogar Behörden. Die Cloud-IoT-Dienste erfordern in der Regel eine maximale Datenübertragung von den Geräten und es gibt keine Möglichkeiten die Datenübertragung zu verbieten oder einzuschränken ("Akzeptieren Sie die Bedingungen oder verpissen Sie sich"). Und obwohl die gesammelten Daten ein Vermögenswert sind und einen realen Wert haben, wird der Person von der sie gesammelt werden nicht nur das Recht verweigert aktiv über diese Daten zu verfügen, sondern es wird ihr sogar jegliche Entschädigung für die Sammlung und Nutzung ihrer eigenen Daten verweigert.
 - alias: MAIN TASKS OF ROBONOMICS ARCHITECTURE
   az: ROBONOMİKA ARXITEKTURASININ ƏSAS VƏZİFƏLƏRİ
   en: MAIN TASKS OF ROBONOMICS ARCHITECTURE
@@ -5559,6 +5615,7 @@
   uk: ОСНОВНІ ЗАВДАННЯ АРХІТЕКТУРИ РОБОНОМІКИ
   ru: ОСНОВНЫЕ ЗАДАЧИ АРХИТЕКТУРЫ РОБОНОМИКИ
   tr: ROBONOMICS MİMARİSİNİN BAŞLICA GÖREVLERİ
+  de: KERNAUFGABEN DER ROBONOMICS-ARCHITEKTUR
 - alias: 'Building on the achievements and challenges of cloud platforms, Robonomics
     aims to offer the IoT market safer and more advanced Internet solutions at every
     stage of human-machine communication. Below are the main tasks that Robonomics
@@ -5595,6 +5652,7 @@
   tr: 'Bulut platformlarının başarılarını ve zorluklarını temel alan Robonomics, insan-makine
     iletişiminin her aşamasında IoT pazarına daha güvenli ve daha gelişmiş İnternet
     çözümleri sunmayı hedefliyor. Robonomics''in hedeflediği ana görevler aşağıdadır:'
+  de: 'Aufbauend auf den Errungenschaften und Herausforderungen von Cloud-Plattformen zielt Robonomics darauf ab, dem IoT-Markt in jeder Phase der Mensch-Maschine-Kommunikation sicherere und fortschrittlichere Internetlösungen anzubieten. Nachstehend sind die wichtigsten Aufgaben aufgeführt, auf die sich Robonomics focosiert:'
 - alias: MANAGING AN IOT DEVICE USING A DECENTRALIZED CLOUD
   az: MƏRKƏZLƏŞDİRİLMƏMİŞ BULUDDAN İSTİFADƏ EDİLƏN IOT CİHAZININ İDARƏ EDİLMƏSİ
   en: MANAGING AN IOT DEVICE USING A DECENTRALIZED CLOUD
@@ -5605,6 +5663,7 @@
   uk: УПРАВЛІННЯ IOT-ПРИСТРОЄМ ЗА ДОПОМОГОЮ ДЕЦЕНТРАЛІЗОВАНОЇ ХМАРИ
   ru: УПРАВЛЕНИЕ IOT-УСТРОЙСТВОМ С ПОМОЩЬЮ ДЕЦЕНТРАЛИЗОВАННОГО ОБЛАКА
   tr: MERKEZİ OLMAYAN BULUT KULLANARAK BİR IOT CİHAZINI YÖNETME
+  de: VERWALTUNG EINES IOT-GERÄTS MIT EINER DEZENTRALEN CLOUD
 - alias: Blockchain networks have all the capabilities to provide the highest degree
     of security for running a device and getting its telemetry. The interaction with
     the device can actually be described by changing the state of the digital twin
@@ -5670,6 +5729,7 @@
     IoT sağlayıcılarının küresel kullanılabilirliğinin garantilerinin yanı sıra dijital
     ikiz verilerinin istenmeyen değişikliklerden yüksek düzeyde korunması hakkında
     konuşabiliriz.
+  de: Blockchain-Netzwerke verfügen über alle Fähigkeiten um ein Höchstmaß an Sicherheit für den Betrieb eines Geräts und den Erhalt seiner Telemetrie zu bieten. Die Interaktion mit dem Gerät kann tatsächlich durch die Änderung des Zustands des im Blockchain-Netzwerk gespeicherten "digital Twin" und die Übermittlung von Informationen über diese Änderungen beschrieben werden. Im Falle einer genehmigungsfreien Blockchain können wir über Garantien der globalen Verfügbarkeit von Anbietern für das IoT sowie ein hohes Maß an Schutz der Daten des "digital Twins" vor unerwünschten Änderungen sprechen.
 - alias: PERFORMING TECHNICAL AND ECONOMIC TRANSACTION BETWEEN PEOPLE AND MACHINES
   az: İNSANLAR VƏ MAŞINLAR ARASINDA TEXNİKİ VƏ İQTİSADİ ƏMƏLİYYATLARIN HƏYATA KEÇİRİLMƏSİ
   en: PERFORMING TECHNICAL AND ECONOMIC TRANSACTION BETWEEN PEOPLE AND MACHINES
@@ -5681,6 +5741,7 @@
   uk: ВИКОНАННЯ ТЕХНІКО-ЕКОНОМІЧНИХ ОПЕРАЦІЙ МІЖ ЛЮДЬМИ І МАШИНАМИ
   ru: "ВЫПОЛНЕНИЕ ТЕХНИКО-ЭКОНОМИЧЕСКИХ ТРАНЗАКЦИИ МЕЖДУ ЛЮДЬМИ И МАШИНАМИ\n "
   tr: İNSANLAR VE MAKİNELER ARASINDA TEKNİK VE EKONOMİK İŞLEM YAPILMASI
+  de: DURCHFÜHRUNG TECHNISCHER UND WIRTSCHAFTLICHER TRANSAKTIONEN ZWISCHEN MENSCHEN UND MASCHINEN
 - alias: Thanks to the mechanism of cryptocurrencies and smart contracts, we can provide
     access to automated systems directly to digital markets. For example, Ethereum
     already implements most of the basic tools of economic activity that can be used
@@ -5742,6 +5803,7 @@
     çoğunu zaten uygular. Son kullanıcı ile IoT cihazı arasındaki etkileşim için oluşturulan
     uygulamalar, hizmet şartları ve ödeme koşulları cihazın başlatma parametrelerinden
     ayrılmazsa çok daha etkili olacaktır.
+  de: Dank der Mechanismen von Kryptowährungen und intelligenten Verträgen können wir den Zugang zu automatisierten Systemen direkt auf digitalen Märkten ermöglichen. Ethereum beispielsweise implementiert bereits die meisten der grundlegenden Instrumente der Wirtschaftstätigkeit die für den Betrieb autonomer Geräte genutzt werden können. Die Anwendungen die für die Interaktion zwischen dem Endnutzer und dem IoT-Gerät geschaffen werden, werden viel effektiver sein wenn die Bedingungen für den Service und die Bezahlung dafür untrennbar mit den Einführungsparametern des Geräts verbunden sind.
 - alias: SERVERLESS IOT APPLICATIONS FOR USERS
   az: İSTİFADƏÇİLƏR ÜÇÜN SERVERSİZ IOT TƏTBİQLƏRİ
   en: SERVERLESS IOT APPLICATIONS FOR USERS
@@ -5752,6 +5814,7 @@
   uk: SERVERLESS IOT-ПРОГРАМИ ДЛЯ КОРИСТУВАЧІВ
   ru: SERVERLESS IOT-ПРИЛОЖЕНИЯ ДЛЯ ПОЛЬЗОВАТЕЛЕЙ
   tr: KULLANICILAR İÇİN SUNUCUSIZ IOT UYGULAMALARI
+  de: SERVERLOSE IOT-ANWENDUNGEN FÜR ANWENDER
 - alias: Modern advances in web3-technology can solve the issue of user privacy. With
     web3 there is no need to authenticate or require connection to specific servers
     to access telemetry and control the device.
@@ -5784,6 +5847,7 @@
   tr: '"Web3 teknolojisindeki modern gelişmeler, kullanıcı gizliliği sorununu çözebilir.
     Web3 ile, telemetriye erişmek ve cihazı kontrol etmek için kimlik doğrulamaya
     veya belirli sunuculara bağlantı gerektirmeye gerek yoktur."'
+  de: Moderne Fortschritte in der web3-Technologie können das Problem des Datenschutzes für den Nutzer lösen. Mit web3 besteht keine Notwendigkeit sich zu authentifizieren oder eine Verbindung zu bestimmten Servern herzustellen um auf die Telemetrie zuzugreifen und das Gerät zu steuern.
 - alias: Robonomics is a decentralized cloud for digital twins of IoT devices. Robonomics
     supports the techno-economic format for communication, as well as providing private
     applications for users
@@ -5812,6 +5876,7 @@
   tr: Robonomics, IoT cihazlarının dijital ikizleri için merkezi olmayan bir buluttur.
     Robonomics, kullanıcılar için özel uygulamalar sağlamanın yanı sıra iletişim için
     tekno-ekonomik formatı destekler.
+  de: Robonomics ist eine dezentralisierte Cloud für "digital Twin" von IoT-Geräten. Robonomics unterstützt das techno-ökonomische Format für die Kommunikation und bietet private Anwendungen für die Nutzer
 - alias: BASIC COMPONENTS OF ROBONOMICS ARCHITECTURE
   az: ROBONOMİKA ARXITEKTURASININ ƏSAS KOMPONENTLƏRİ
   en: BASIC COMPONENTS OF ROBONOMICS ARCHITECTURE
@@ -5824,6 +5889,7 @@
 
     АРХИТЕКТУРЫ РОБОНОМИКИ'
   tr: ROBONOMICS MİMARİSİNİN TEMEL BİLEŞENLERİ
+  de: GRUNDBESTANDTEILE DER ROBONOMICS-ARCHITEKTUR
 - alias: A human interface to access the system
   az: Sistemə daxil olmaq üçün insan interfeysi
   en: A human interface to access the system
@@ -5834,6 +5900,7 @@
   uk: Інтерфейс людини для доступу до системи
   ru: Интерфейс человека для доступа к системе
   tr: A human interface to access the system
+  de: Eine menschliche Schnittstelle für den Zugang zum System
 - alias: A communication protocol
   az: Rabitə protokolu
   en: A communication protocol
@@ -5844,6 +5911,7 @@
   uk: Протокол зв'язку
   ru: Протокол коммуникации
   tr: Bir iletişim protokolü
+  de: Ein Kommunikationsprotokoll
 - alias: A machine interface
   az: Maşın interfeysi
   en: A machine interface
@@ -5854,6 +5922,7 @@
   uk: Машинний інтерфейс
   ru: Интерфейс машины
   tr: Bir makine arayüzü
+  de: Eine Maschinenschnittstelle
 - alias: HUMAN INTERFACE
   az: İNSAN İNTERFEYSİ
   en: HUMAN INTERFACE
@@ -5864,6 +5933,7 @@
   uk: ІНТЕРФЕЙС ЛЮДИНИ
   ru: ИНТЕРФЕЙС ЧЕЛОВЕКА
   tr: İNSAN ARAYÜZÜ
+  de: MENSCHLICHE SCHNITTSTELLE
 - alias: We propose the use of decentralized applications (dapps) as the main way
     to connect users to control smart devices over the Internet. Thus, we will be
     able to provide the most secure (in terms of data) user interface to the system,
@@ -5911,6 +5981,7 @@
     ana yolu olarak merkezi olmayan uygulamaların (dapps) kullanılmasını öneriyoruz.
     Böylece, yerel şehir ağı koşullarında ve ortak bir küresel ağ üzerinden eş zamanlı
     olarak çalışabilecek sisteme (veri açısından) en güvenli kullanıcı arayüzünü sağlayabileceğiz.
+  de: Wir schlagen die Verwendung dezentraler Anwendungen (dapps) als Hauptweg vor um die Anwender mit der Steuerung intelligenter Geräte über das Internet zu verbinden. Auf diese Weise werden wir in der Lage sein die sicherste Benutzerschnittstelle (in Bezug auf Daten) für das System bereitzustellen, das gleichzeitig unter den Bedingungen des lokalen Stadtnetzes und über ein gemeinsames globales Netz arbeiten kann.
 - alias: COMMUNICATION PROTOCOL
   az: RABİTƏ PROTOKOLU
   en: COMMUNICATION PROTOCOL
@@ -5921,6 +5992,7 @@
   ru: ПРОТОКОЛ КОММУНИКАЦИИ
   uk: ПРОТОКОЛ ЗВ'ЯЗКУ
   tr: İLETİŞİM PROTOKOLÜ
+  de: KOMMUNIKATIONSPROTOKOLL
 - alias: Its role is played by the Robonomics network, a specification developed by
     the project team that implements a decentralized network of providers that provide
     the transmission, processing and storage of information needed to run IoT devices.
@@ -5970,6 +6042,7 @@
     olmayan bir sağlayıcılar ağı uygulayan bir özellik olan Robonomics ağı tarafından
     oynanır. Aslında, bir işlevin uygulanmasıdır. -IPFS, Ethereum ve Polkadot ağları
     için özel düğüm.
+  de: Diese Rolle übernimmt das Robonomics-Netzwerk, eine vom Projektteam entwickelte Spezifikation die ein dezentrales Netzwerk von Anbietern implementiert die die Übertragung, Verarbeitung und Speicherung von Informationen bereitstellen die für den Betrieb von IoT-Geräten erforderlich sind. Tatsächlich handelt es sich um eine Implementierung eines funktionsspezifischen Knotens für IPFS-, Ethereum- und Polkadot-Netzwerke.
 - alias: MACHINE INTERFACE
   az: MAŞIN İNTERFEYSİ
   en: MACHINE INTERFACE
@@ -5980,6 +6053,7 @@
   ru: ИНТЕРФЕЙС МАШИНЫ
   uk: МАШИННИЙ ІНТЕРФЕЙС
   tr: MAKİNE ARAYÜZÜ
+  de: MASCHINENSCHNITTSTELLE
 - alias: We have chosen the most well-known robotics framework called Robot Operating
     System Robot Operating System (ROS) as the standard interface for integrating
     any compatible cyber-physical system. Robonomics supports several uses for ROS.
@@ -6067,6 +6141,7 @@
     gereksiz olduğunda (örneğin, IoT cihazlarıyla çalışırken), bir Python robonomics-arayüz
     modülü geliştirilmiştir. Robonomics işlevlerine yerel olarak erişmeye yardımcı
     olur ve hem yerel hem de özel ve uzak ve genel düğümlerle çalışır.
+  de: Wir haben das bekannteste Robotik-Framework "Robot Operating System" (ROS) als Standardschnittstelle für die Integration jedes kompatiblen cyber-physischen Systems gewählt. Robonomics unterstützt mehrere Anwendungen für ROS. Die Implementierung von Robonomics für das Ethereum-Netzwerk erfolgt in Form des ROS-Pakets robonomics_comm. Für die ROS-2-Architektur implementieren wir die Unterstützung für Robonomics als Middleware-Schicht (siehe "Robonomics als ROS-2-Middleware" für Details). Für den Fall, dass der Einsatz von ROS überflüssig ist (z.B. bei der Arbeit mit IoT-Geräten) wurde ein Python-Modul robonomics-interface entwickelt. Es ermöglicht den nativen Zugriff auf die Funktionen von Robonomics und funktioniert sowohl mit lokalen und privaten als auch mit entfernten und öffentlichen Knoten.
 - alias: A SIMPLE REPRESENTATION OF ROBONOMICS ARCHITECTURE
   az: ROBONOMİKA ARXITEKTURASININ SADƏ TƏMSİLİ
   en: A SIMPLE REPRESENTATION OF ROBONOMICS ARCHITECTURE
@@ -6077,6 +6152,7 @@
   ru: ПРОСТОЕ ПРЕДСТАВЛЕНИЕ АРХИТЕКТУРЫ РОБОНОМИКИ
   uk: ПРОСТЕ ПРЕДСТАВЛЕННЯ АРХІТЕКТУРИ РОБОНОМІКИ
   tr: ROBONOMICS MİMARİSİNİN BASİT BİR TEMSİLİ
+  de: EINE EINFACHE DARSTELLUNG DER ARCHITEKTUR VON ROBONOMICS
 - alias: 'Here is a general diagram of the complete device startup cycle using the
     Robonomics platform:'
   az: 'Robonomikanın platformasından istifadə edərək cihazın tam işə salınma dövrünün
@@ -6095,6 +6171,7 @@
     Робономики:'
   uk: 'Нижче представлена загальна схема повного циклу запуску пристрою за допомогою платформи Робономіки:'
   tr: 'Robonomics platformunu kullanan bir cihaz başlatma döngüsünün genel bir şeması:'
+  de: 'Im Folgenden finden Sie ein allgemeines Diagramm des gesamten Zyklus der Geräteinbetriebnahme mit der Robonomics-Plattform:'
 - alias: The user’s decentralized application sends a request for a device control
     function through the Robonomics network.
   az: İstifadəçinin mərkəzləşdirilməmiş tətbiqi Robonomika şəbəkəsi vasitəsilə cihaza
@@ -6114,6 +6191,7 @@
     функции по управлению устройством через сеть Робономика.
   tr: Kullanıcının merkezi olmayan uygulaması, Robonomics ağı aracılığıyla bir cihaz
     kontrol işlevi için bir istek gönderir.
+  de: Die dezentrale Anwendung des Benutzers sendet eine Anfrage für eine Gerätesteuerungsfunktion über das Robonomics-Netzwerk.
 - alias: The Robonomics network provides request translation using libp2p and captures
     events in Ethereum blockchain or Robonomics parachain.
   az: Robonomika şəbəkəsi libp2p istifadə edərək sorğu tərcüməsini təmin edir və Ethereum
@@ -6133,6 +6211,7 @@
     события в Ethereum blockchain или Robonomics parachain.
   tr: Robonomics ağı, libp2p kullanarak istek çevirisi sağlar ve Ethereum blok zinciri
     veya Robonomics parachain'deki olayları yakalar.
+  de: Das Robonomics-Netzwerk sorgt für die Übersetzung von Anfragen mithilfe von libp2p und erfasst Ereignisse in der Ethereum-Blockchain oder Robonomics-Parachain.
 - alias: The control of the device is provided by a decentralized network, which is
     guaranteed to store the necessary information to run the IoT device.
   az: Qurğuya nəzarət IoT cihazını işə salmaq üçün lazımi məlumatların saxlanmasına
@@ -6152,6 +6231,7 @@
     хранит необходимую информацию для запуска IoT-устройства.
   tr: Cihazın kontrolü, IoT cihazını çalıştırmak için gerekli bilgileri depolaması
     garanti edilen merkezi olmayan bir ağ tarafından sağlanır.
+  de: Die Steuerung des Geräts erfolgt über ein dezentrales Netzwerk, das garantiert die notwendigen Informationen zum Betrieb des IoT-Geräts speichert.
 - alias: The IoT device independently receives information from Ethereum and Polkadot
     networks about the current state of the digital twin. This ensures that the device
     can be started safely only after the technical and economic start-up parameters
@@ -6187,6 +6267,7 @@
   tr: IoT cihazı, dijital ikizin mevcut durumu hakkında Ethereum ve Polkadot ağlarından
     bağımsız olarak bilgi alır. Bu, cihazın ancak teknik ve ekonomik başlatma parametreleri
     ayarlandıktan sonra güvenli bir şekilde çalıştırılabilmesini sağlar.
+  de: Das IoT-Gerät erhält selbstständig Informationen aus den Ethereum- und Polkadot-Netzwerken über den aktuellen Zustand des "digital Twins". Dadurch wird sichergestellt, dass das Gerät erst dann sicher gestartet werden kann wenn die technischen und wirtschaftlichen Startparameter geklärt sind.
 - alias: As a result of the operation, the IoT device publishes a log of completed
     operations, which can be used as evidence of the service provided or for debugging
     errors.
@@ -6213,6 +6294,7 @@
   tr: İşlemin bir sonucu olarak, IoT cihazı, sağlanan hizmetin kanıtı olarak veya
     hata ayıklama hataları için kullanılabilecek tamamlanmış işlemlerin bir günlüğünü
     yayınlar.
+  de: Als Ergebnis der Operation veröffentlicht das IoT-Gerät ein Protokoll der abgeschlossenen Operationen, das als Nachweis für den erbrachten Dienst oder zur Fehlersuche verwendet werden kann.
 - alias: The log is transformed into a report for the user and becomes available in
     his dapp.
   az: Jurnal istifadəçi üçün hesabata çevrilir və onun dapp-da mövcud olur.
@@ -6229,6 +6311,7 @@
   ru: Лог трансформируется в отчет для пользователя и становится доступен в его dapp.
   tr: Günlük, kullanıcı için bir rapora dönüştürülür ve dapp'inde kullanılabilir hale
     gelir.
+  de: Das Protokoll wird in einen Bericht für den Benutzer umgewandelt und steht in seiner Dapp zur Verfügung.
 - alias: At the frontier of cybernetics and economics
   az: Kibernetika və iqtisadiyyatın sərhəddində
   en: At the frontier of cybernetics and economics
@@ -6239,16 +6322,40 @@
   ru: На стыке кибернетики и экономики
   uk: На стику кібернетики та економіки
   tr: Sibernetik ve ekonominin sınırlarında
-- alias: "Secure Serverless Futuristic\n IoT applications "
-  az: Təhlükəsiz Serversiz Futuristik IoT tətbiqləri
-  en: "Secure Serverless Futuristic\n IoT applications "
-  es: Aplicaciones IoT futuristas seguras sin servidor
-  fr: ' Futuriste sans serveur sécurisé Applications IdO '
-  it: "Futuristico Serverless Sicuro\n  Applicazioni IoT"
-  pt: Aplicações IoT Futuristas Sem Servidor
-  ru: Безопасные бессерверные футуристические IoT-приложения
-  uk: "Захищені безсерверні футуристичні\n  програми IoT"
-  tr: "Güvenli Sunucusuz Fütüristik\n  IoT uygulamaları "
+  de: An der Grenze von Kybernetik und Wirtschaft
+- alias: Secure 
+  az: Təhlükəsiz
+  en: Secure 
+  es: Seguras 
+  fr: Sécurisé 
+  it: Sicuro
+  pt: Secure
+  ru: Безопасные 
+  uk: Захищені 
+  tr: Güvenli 
+  de: Sichere 
+- alias: Serverless
+  az: Serversiz 
+  en: Serverless
+  es: sin servidor
+  fr: sans serveur
+  it: Serverless 
+  pt: Sem Servidor
+  ru: бессерверные 
+  uk: безсерверні 
+  tr: Sunucusuz
+  de: Serverlose 
+- alias: Futuristic
+  az: Futuristik 
+  en: Futuristic
+  es: futuristas
+  fr: Futuriste
+  it: Futuristico
+  pt: Futuristas
+  ru: футуристические 
+  uk: футуристичні
+  tr: Fütüristik
+  de: Futuristische
 - alias: Robonomics network vision
   az: Robonomika şəbəkəsinin konsepsiyası
   en: Robonomics network vision
@@ -6259,6 +6366,18 @@
   ru: Концепция сети Робономика
   uk: Концепція мережі Робономіка
   tr: Robonomics ağı vizyonu
+  de: Robonomics Netzvision
+- alias: IoT applications
+  az: IoT tətbiqləri
+  en: IoT applications 
+  es: Aplicaciones IoT 
+  fr: Applications IdO
+  it: Applicazioni IoT
+  pt: Aplicações IoT 
+  ru: IoT-приложения
+  uk: програми IoT
+  tr: IoT uygulamaları
+  de: IoT-Anwendungen
 - alias: BUILD YOUR IOT SERVICES ON ROBONOMICS PLATFORM
   az: IOT XİDMƏTLƏRİNİZİ ROBONOMİKA PLATFORMASINDA QURUN
   en: BUILD YOUR IOT SERVICES ON ROBONOMICS PLATFORM
@@ -6269,6 +6388,7 @@
   ru: ПОСТРОЙТЕ СВОИ IOT-СЕРВИСЫ НА ПЛАТФОРМЕ РОБОНОМИКА,
   uk: БУДУЙТЕ СВОЇ IOT-СЕРВІСИ НА ПЛАТФОРМІ РОБОНОМІКА
   tr: IOT HİZMETLERİNİZİ ROBONOMICS PLATFORMUNDA OLUŞTURUN
+  de: ERSTELLE DEINE IOT-DIENSTE AUF DER ROBONOMICS-PLATTFORM
 - alias: taking full advantage of decentralized architecture
   az: mərkəzləşdirilməmiş arxitekturanın bütün üstünlüklərindən istifadə etməklə
   en: taking full advantage of decentralized architecture
@@ -6279,6 +6399,7 @@
   ru: получая все преимущества децентрализованной архитектуры
   uk: отримуючи всі переваги децентралізованої архітектури
   tr: merkezi olmayan mimariden tam olarak yararlanmak
+  de: die Vorteile der dezentralen Architektur voll ausschöpfen
 - alias: Robonomics allows users to connect to smart devices using decentralized applications
     (dapp) that do not require the user data transfer for authentication. Communication
     takes place via a decentralized network of providers without a single point of
@@ -6352,6 +6473,7 @@
     Robonomics, kullanıcı uygulamasından akıllı cihazın kullanıma sunulmasına kadar
     iletişimin tüm aşamalarında yüksek düzeyde cihaz siber güvenliği ve kullanıcı
     veri gizliliği sağlar.
+  de: Robonomics ermöglicht es Nutzern sich über dezentrale Anwendungen (dapp), die keine Übertragung von Nutzerdaten zur Authentifizierung erfordern, mit intelligenten Geräten zu verbinden. Die Kommunikation erfolgt über ein dezentralisiertes Netzwerk von Anbietern ohne einen einzigen Ausfallpunkt und das Gerät erhält unabhängig Informationen aus dem Blockchain-Netzwerk zur Ausführung oder Daten aus der Ferne zu übertragen. Robonomics bietet somit ein hohes Maß an Cybersicherheit für das Gerät und einen hohen Schutz der Nutzerdaten in allen Phasen der Kommunikation von der Nutzeranwendung bis zum Start des intelligenten Geräts.
 - alias: FROM SMART CONTRACTS TO CROSS CHAIN IOT PLATFORM
   az: SMART MÜQAVİLƏLƏRDƏN KROS ÇEYN IOT PLATFORMASINA
   en: FROM SMART CONTRACTS TO CROSS CHAIN IOT PLATFORM
@@ -6362,6 +6484,7 @@
   uk: ВІД СМАРТ-КОНТРАКТІВ ДО МІЖМЕРЕЖЕВОЇ IOT-ПЛАТФОРМИ
   ru: ОТ СМАРТ-КОНТРАКТОВ ДО МЕЖСЕТЕВОЙ IOT-ПЛАТФОРМЫ
   tr: AKILLI SÖZLEŞMELERDEN ÇAPRAZ ZİNCİR IOT PLATFORMUNA
+  de: VON INTELLIGENTEN VERTRÄGEN ZUR KETTENÜBERGREIFENDEN IOT-PLATTFORM
 - alias: The Robonomics project is over 6 years old. We started to prepare for the
     first experiment demonstrating human-machine communication using an independent
     decentralized provider network in 2015, from the early days of the Ethereum network.
@@ -6423,6 +6546,7 @@
     2021'in başlarında proje ekibi Ethereum ve IPFS üzerinde çalışan bir tekno-ekonomik
     makine iletişim protokolü oluşturduk ve bunu Polkadot para zincirine dayalı bulut
     tabanlı bir IoT platformunun unsurlarıyla tamamladık.
+  de: Das Robonomics-Projekt ist über 6 Jahre alt. Wir begannen 2015 mit den Vorbereitungen für das erste Experiment zur Demonstration der Mensch-Maschine-Kommunikation über ein unabhängiges dezentrales Providernetzwerk. Also in den frühen Tagen des Ethereum-Netzwerks. Bis Anfang 2021 gelang es dem Projektteam, ein technisch wirtschaftliches Maschinen Kommunikationsprotokoll zu entwickeln, das auf Ethereum und IPFS aufbaut und durch Elemente einer cloudbasierten IoT-Plattform basierend der Parachain Polkadot ergänzt wird.
 - alias: As a result, today, we already have a hybrid platform for creating futuristic
     IoT applications that enable interaction with devices under the control of a global
     decentralized computer.
@@ -6451,6 +6575,7 @@
   tr: Sonuç olarak, bugün, küresel bir merkezi olmayan bilgisayarın kontrolü altındaki
     cihazlarla etkileşimi mümkün kılan fütüristik IoT uygulamaları oluşturmak için
     halihazırda hibrit bir platforma sahibiz.
+  de: Damit verfügen wir bereits heute über eine hybride Plattform für die Entwicklung futuristischer IoT-Anwendungen, die eine Interaktion mit Geräten unter der Kontrolle eines globalen dezentralen Computers ermöglichen.
 - alias: AT THE FRONTIER OF CYBERNETICS AND ECONOMICS
   az: Kibernetika və iqtisadiyyatın sərhəddində
   en: AT THE FRONTIER OF CYBERNETICS AND ECONOMICS
@@ -6461,6 +6586,7 @@
   ru: НА СТЫКЕ КИБЕРНЕТИКИ И ЭКОНОМИКИ
   uk: НА СТИКУ КІБЕРНЕТИКИ ТА ЕКОНОМІКИ
   tr: SİBERNETİK VE EKONOMİNİN SINIRINDA
+  de: AN DER GRENZE VON KYBERNETIK UND WIRTSCHAFT
 - alias: The creators of Robonomics are experimenters, engineers, and scientists who
     care to understand the scientific validity of the approach and achieve clarity
     in presenting the principles that should form the basis of the entire architecture
@@ -6495,6 +6621,7 @@
   tr: Robonomics'in yaratıcıları, yaklaşımın bilimsel geçerliliğini anlamaya özen
     gösteren ve yazılım çözümünün tüm mimarisinin temelini oluşturması gereken ilkeleri
     sunmada netlik elde eden deneyciler, mühendisler ve bilim adamlarıdır.
+  de: Die Gründer von Robonomics sind Experimentatoren, Ingenieure und Wissenschaftler, die sich der wissenschaftliche Aspekte bemühen und die Prinzipien die der gesamten Architektur der Softwarelösung zugrunde liegen sollen, klar darstellen.
 - alias: In our articles between 2017 and 2020, we presented the scientific community
     with many concepts and solutions united around the idea of the robot economy,
     an economic system in which robotic devices act as independent agents capable
@@ -6541,6 +6668,7 @@
     olarak robotik cihazların hareket ettiği bir ekonomik sistem olan robot ekonomisi
     fikri etrafında birleşmiş birçok kavram ve çözümü sunduk. Bilimsel makaleleri
     bu
+  de: In unseren Artikeln zwischen 2017 und 2020 haben wir viele Konzepte und Lösungen der Roboterwirtschaft vorgestellt. Ein Wirtschaftssystem in dem Roboter unabhängig agieren und in der Lage sind wichtige wirtschaftliche Tätigkeiten auszuführen, die bisher dem Menschen vorbehalten waren. Sie können den wissenschaftlichen Artikel lesen unter
 - alias: this link
   az: linkdən oxuya bilərsiniz
   en: this link
@@ -6551,6 +6679,7 @@
   ru: данной ссылке
   uk: цим посиланням
   tr: linkten okuyabilirsiniz
+  de: diesem Link
 - alias: We would like to justify the emergence of the robot economy and explain in
     general terms why we believe that this concept is the inevitable and obvious answer
     to the functioning of the large-scale robotic systems of the new industrial revolution.
@@ -6582,6 +6711,7 @@
   tr: Robot ekonomisinin ortaya çıkışını haklı çıkarmak ve bu kavramın neden yeni
     sanayi devriminin büyük ölçekli robotik sistemlerinin işleyişine kaçınılmaz ve
     açık bir cevap olduğuna inandığımızı genel terimlerle açıklamak istiyoruz.
+  de: Wir möchten die Entstehung der Roboterwirtschaft begründen und allgemein erklären, weshalb wir glauben, dass dieses Konzept die unvermeidliche und offensichtliche Antwort auf das Funktionieren der großen Robotersysteme der neuen industriellen Revolution ist.
 - alias: MOVE TOWARDS THE FACTORY OF THE FUTURE
   az: GƏLƏCƏYİN FABRİKİNƏ DOĞRU HƏRƏKƏT EDİN
   en: MOVE TOWARDS THE FACTORY OF THE FUTURE
@@ -6592,6 +6722,7 @@
   ru: ПУТЬ К ЗАВОДУ БУДУЩЕГО
   uk: ШЛЯХ ДО ЗАВОДУ МАЙБУТНЬОГО
   tr: GELECEĞİN FABRİKASINA DOĞRU
+  de: AUF DEM WEG ZUR FABRIK DER ZUKUNFT
 - alias: Inspired by Ronald Coase
   az: Ronald Kouzdan ilhamlanıb
   en: Inspired by Ronald Coase
@@ -6602,6 +6733,7 @@
   ru: Вдохновлённый Роландом Коузом
   uk: Натхненний Рональдом Коузом
   tr: Ronald Coase'den ilham alınmıştır
+  de: Inspiriert von Ronald Coase
 - alias: The Nobel laureate in economics Ronald Coase in his 1937 work “The Nature
     of the Firm” best demonstrated the dichotomy «hierarchy vs free market» and gave
     an explanation of the reasons for the existence of organizations, in particular
@@ -6730,6 +6862,7 @@
     örneğine bakın. Parçalarına göre bir araba almaya çalışın ve garajınızdaki tüm
     bileşenleri bir araya getirmek için ne kadar para ve zaman harcayacağınızı hesaplayın.
     Parça satın alma maliyetleri, Tesla'nın hazır Model X'ine kıyasla çok yüksek.
+  de: Der Nobelpreisträger für Wirtschaftswissenschaften Ronald Coase hat in seinem 1937 erschienenen Werk "The Nature of the Firm" die Dichotomie "Hierarchie vs. freier Markt" am besten veranschaulicht und eine Erklärung für die Gründe der Existenz von Organisationen, insbesondere von Unternehmen, gegeben. Coase erörtert die Auswirkungen der Transaktionskosten (die Kosten für das Sammeln und Verarbeiten von Informationen) um Entscheidungen über den Abschluss eines Vertrags zu treffen und seine Umsetzung zu überwachen. Das Unternehmen mit seiner hierarchischen Struktur außerhalb des Marktes wird als die effizienteste Art und Weise gegründet um dem Verbraucher das Zielprodukt mit den geringsten Transaktionskosten zu dem Zeitpunkt zu liefern, zu dem der Transaktionsaufwand für die Herstellung desselben Produkts durch mehrfachen Austausch auf dem Markt zwischen Einzelpersonen viel höher wird. Am besten lässt sich dieser Prozess anhand des Beispiels eines Autokaufs veranschaulichen. Versuchen Sie ein Auto in Einzelteilen zu kaufen und berechnen Sie wie viel Geld und Zeit Sie aufwenden müssen um alle Teile in Ihrer Garage zusammenzubauen. Die Risiken und Verhandlungskosten beim Kauf von Teilen sind zu hoch im Vergleich zu Teslas "Model X" von der Serienproduktion.
 - alias: 'Nevertheless, this does not lead to the emergence of the world’s only firm
     for the production of everything. The point is that the same transaction costs
     also impose restrictions on the size of firms. Coase writes:'
@@ -6760,6 +6893,7 @@
   tr: 'Yine de bu, her şeyin üretimi için dünyanın tek bir firmasının ortaya çıkmasına
     yol açmaz. Buradaki ana nokta, aynı işlem maliyetlerinin firmaların büyüklüğüne
     de kısıtlamalar getirmesidir. Coase şöyle yazıyor:'
+  de: 'Dies führt jedoch nicht dazu, dass das einzige Unternehmen der Welt entsteht das alles produziert. Der Punkt ist, dass dieselben Transaktionskosten auch die Größe der Unternehmen einschränken. Coase schreibt:'
 - alias: “...a firm will tend to expand until the costs of organising an extra transaction
     within the firm become equal to the costs of carrying out the same transaction
     by means of an exchange on the open market...”
@@ -6789,6 +6923,7 @@
   tr: “...bir firma, firma içinde fazladan bir işlem düzenlemenin maliyeti, aynı işlemi
     açık piyasada bir takas yoluyla gerçekleştirmenin maliyetine eşit oluncaya kadar
     genişleme eğiliminde olacaktır...”
+  de: "...ein Unternehmen wird dazu neigen so lange zu expandieren bis die Organisationskosten eines zusätzlichen Geschäfts innerhalb des Unternehmens den Kosten der Durchführung desselben Geschäfts durch einen Tausch auf dem freien Markt entsprechen..."
 - alias: In other words, the more complex the hierarchy within the firm, the greater
     the internal costs, and at some point, they turn out to be excessive compared
     to the costs of returning to the market. Therefore, to ensure their growth as
@@ -6828,6 +6963,7 @@
     o kadar büyük olur ve bir noktada, piyasaya geri dönme maliyetlerine kıyasla aşırı
     oldukları ortaya çıkar. Bu nedenle, itici güçlerden biri olarak büyümelerini sağlamak
     için girişimciler bu maliyetleri düşürmenin yollarını arıyorlar.
+  de: 'Mit anderen Worten: Je komplexer die Hierarchie innerhalb des Unternehmens ist desto höher sind die internen Kosten und irgendwann erweisen sie sich als zu hoch im Vergleich zu den Kosten am Markt. Um ihr Wachstum als eine der treibenden Kräfte zu sichern suchen die Unternehmer daher nach Möglichkeiten diese Kosten zu senken.'
 - alias: GET RID OF TRANSACTION COSTS
   az: ƏMƏLİYYAT XƏRCLƏRİNDƏN QURTARIN
   en: GET RID OF TRANSACTION COSTS
@@ -6838,6 +6974,7 @@
   uk: ПОЗБУДЬТЕСЬ ТРАНЗАКЦІЙНИХ ВИТРАТ
   ru: ИЗБАВЬТЕСЬ ОТ ТРАНЗАКЦИОННЫХ ИЗДЕРЖЕК
   tr: İŞLEM MALİYETLERİNDEN KURTULUN
+  de: TRANSAKTIONSKOSTEN SENKEN
 - alias: The idea of reducing transaction costs through the ability of all participants
     in the business process (production, logistics, consumption) to unite at a closer
     level
@@ -6863,6 +7000,7 @@
     (производитсво, логистика, потребление) объединиться на более тесном уровне
   uk: Ідея зниження транзакційних витрат за рахунок можливості об’єднання всіх учасників бізнес-процесу (виробництво, логістика, споживання) на більш тісному рівні 
   tr: İş sürecindeki (üretim, lojistik, tüketim) tüm katılımcıların daha yakın bir
+  de: Transaktionskosten senken indem alle am Prozess Beteiligten (Produktion, Logistik, Verbraucher) auf einer engeren Ebene zusammenarbeiten
 - alias: clearly correlates
   az: problemlər və çətinliklərlə aydın şəkildə əlaqələndirilir
   en: clearly correlates
@@ -6873,6 +7011,7 @@
   ru: явно коррелирует
   uk: чітко корелює
   tr: düzeyde birleşme yeteneği yoluyla işlem maliyetlerini
+  de: eindeutig korreliert
 - alias: with the problems and challenges faced by manufacturers of automation solutions.
     Over the past 50 years, the standard/regular operations of most business processes
     of large companies have been almost completely automated. The manufacturers are
@@ -6942,6 +7081,7 @@
     ve bu görev, otomasyon yoluyla işlem maliyetlerinin daha da azaltılmasını engelleyen
     bir faktördür. Kısmen otomatikleştirilmiş firmalara kıyasla daha rekabetçi ürün
     veya
+  de: mit den Problemen und Herausforderungen denen sich die Hersteller von Automatisierungslösungen gegenübersehen. In den letzten 50 Jahren wurden die Standard-/Regelabläufe der meisten Geschäftsprozesse von Großunternehmen fast vollständig automatisiert. Den Herstellern bleibt im Wesentlichen die Aufgabe eine sichere Kommunikation zwischen den vollautomatisierten Lieferketten aufzubauen und diese Aufgabe ist ein Faktor der einer weiteren Senkung der Transaktionskosten durch Automatisierung entgegensteht. Der Wunsch, wettbewerbsfähigere Produkte oder Dienstleistungen im Vergleich zu teilautomatisierten zu vermarkten.
 - alias: firms spurs the search for solutions to
   az: istəyi bu problemlərin həlli yollarının
   en: firms spurs the search for solutions to
@@ -6952,6 +7092,7 @@
   uk: фірмами спонукає до пошуку рішень 
   ru: подстегивает поиск решения
   tr: hizmet pazarlama arzusu, bu zorluklara çözüm
+  de: Unternehmen auf Suche nach Lösungen für
 - alias: these challenges. It seems that everything is heading towards the emergence
     of robofirms — organizations in which the entire business process cycle is fully
     automated and does not require human participation, except as beneficiaries and
@@ -6985,6 +7126,7 @@
     - tüm iş süreci döngüsünün tamamen otomatik olduğu ve yararlanıcılar ve tüketiciler
     dışında insan katılımı gerektirmeyen organizasyonların - ortaya çıkmasına doğru
     gidiyor.
+  de: diese Herausforderungen. Es scheint, dass alles auf das Aufkommen von Robo-Firmen zusteuert - Organisationen, in denen der gesamte Geschäftsprozesszyklus vollständig automatisiert ist und keine menschliche Beteiligung erfordert, außer jener als Nutznießer und Verbraucher.
 - alias: OUR FUTURE IN SMART CITIES
   az: AĞILLI ŞƏHƏRLƏRDƏ GƏLƏCƏYİMİZ
   en: OUR FUTURE IN SMART CITIES
@@ -6995,6 +7137,7 @@
   ru: НАШЕ БУДУЩЕЕ В УМНЫХ ГОРОДАХ
   uk: НАШЕ МАЙБУТНЄ В РОЗУМНИХ МІСТАХ
   tr: AKILLI ŞEHİRLERDE GELECEĞİMİZ
+  de: UNSERE ZUKUNFT IN DEN SMART CITIES
 - alias: The task that automation manufacturers are facing today has a specific name
     — the construction of cyber-physical systems (abbreviated as CPS). By
   az: Bu gün avtomatlaşdırma istehsalçılarının qarşısında duran tapşırığın xüsusi
@@ -7017,6 +7160,7 @@
   uk: Завдання, яке сьогодні стоїть перед виробниками засобів автоматизації, має конкретну назву — побудова кіберфізичних систем (скор. КФС). За 
   tr: 'Bugün otomasyon üreticilerinin karşı karşıya olduğu görevin belirli bir adı
     vardır: - siber-fiziksel sistemlerin (CPS olarak kısaltılır) inşası. Tanım'
+  de: 'Die Aufgabe vor der die Hersteller von Automatisierungssystemen heute stehen hat einen besonderen Namen: die Konstruktion von cyber-physischen Systemen (abgekürzt CPS). Unter'
 - alias: definition,
   az: görə,
   en: definition,
@@ -7027,6 +7171,7 @@
   uk: визначенням,
   ru: определению,
   tr: olarak,
+  de: Definition
 - alias: a CPS is a strong unification and mutual integration of multiple computational,
     networking, and physical processes.
   az: CPS çoxsaylı hesablama, şəbəkə və fiziki proseslərin güclü birləşməsi və qarşılıqlı
@@ -7046,6 +7191,7 @@
   uk: КФС — це міцне об’єднання та взаємна інтеграція багатьох обчислювальних, мережевих і фізичних процесів. 
   tr: bir CPS, çoklu hesaplama, ağ oluşturma ve fiziksel süreçlerin güçlü bir birleşimi
     ve karşılıklı entegrasyonudur.
+  de: Ein CPS ist eine starke Vereinheitlichung und gegenseitige Integration mehrerer Rechen-, Netzwerk- und physikalischer Prozesse.
 - alias: 'The tasks of building CPS are central to any idea described in the new (fourth)
     industrial revolution. Therefore, CPS is the cornerstone of our future life in
     Smart Cities, manifesting itself everywhere. Examples of cyber-physical systems
@@ -7104,6 +7250,7 @@
     yaşamımızın temel taşıdır ve her yerde kendini gösterir. Geleceğin siber-fiziksel
     sistemlerine örnekler: Uber otopilot, drone selfie''leri, metro istasyonlarındaki
     3D yazıcı ağı.'
+  de: 'Die Aufgaben des Aufbaus von CPS sind von zentraler Bedeutung die in der neuen (vierten) industriellen Revolution beschrieben wird. Daher sind CPS der Grundstein für unser zukünftiges Leben in smart Cities die sich überall manifestieren. Beispiele für cyber-physische Systeme der Zukunft sind: Uber-Autopilot, Drohnen-Selfies, Netzwerk von 3D-Druckern in U-Bahn-Stationen.'
 - alias: 'CPS is a complex structure of many connected elements: from the app on the
     phone, it extends to controlling the drone in flight over the city, and then proceeds
     to publishing the resulting photos to Instagram, but only after processing by
@@ -7140,11 +7287,11 @@
     uygulamadan, dronun şehir üzerinde uçuşunu kontrol etmeye kadar uzanır ve ardından
     ortaya çıkan fotoğrafları Instagram''da yayınlamaya devam eder, ancak yalnızca
     bulut AI tarafından işlendikten sonra.'
+  de: 'CPS ist eine komplexe Struktur aus vielen miteinander verbundenen Elementen: von der App auf dem Telefon über die Steuerung der Drohne beim Flug über die Stadt bis hin zur Veröffentlichung der Fotos auf Instagram, allerdings erst nach der Verarbeitung durch die Cloud-KI.'
 - alias: The most important thing in the CPS design process is to find the fine line
     between sufficient and excessive number of automated elements in the service user
     supply chain. In other words, where is the size limit of the CPS? To answer this
     question, we should turn to the famous mathematician Norbert Wiener.
-  az: .nan
   en: The most important thing in the CPS design process is to find the fine line
     between sufficient and excessive number of automated elements in the service user
     supply chain. In other words, where is the size limit of the CPS? To answer this
@@ -7178,6 +7325,7 @@
     yeterli ve aşırı sayıda otomatik öğe arasındaki ince çizgiyi bulmaktır. Başka
     bir deyişle, CPS'nin boyut sınırı nerede? Bu soruyu cevaplamak için ünlü matematikçi
     Norbert Wiener'e kulak vermeliyiz.
+  de: 'Das Wichtigste bei der Gestaltung von CPS ist es, den schmalen Grat zwischen einer ausreichenden und einer übermäßigen Anzahl von automatisierten Elementen in der Versorgungskette der Dienstleistungsnutzer zu finden. Mit anderen Worten: Wo liegt die Größengrenze des CPS? Um diese Frage zu beantworten sollten wir uns den berühmten Mathematiker Norbert Wiener betrachten.'
 - alias: SELF-REGULATING SYSTEMS
   az: ÖZÜNÜ TƏNZİM EDƏN SİSTEMLƏR
   en: SELF-REGULATING SYSTEMS
@@ -7188,6 +7336,7 @@
   ru: САМОРЕГУЛИРУЕМЫЕ СИСТЕМЫ
   uk: СИСТЕМИ САМОРЕГУЛЮВАННЯ
   tr: KENDİNİ DENETLEYEN SİSTEMLER
+  de: SELBSTREGULIERENDE SYSTEME
 - alias: 'In 1948 a professor of mathematics at the MIT Norbert Wiener published one
     of the most seminal works "Cybernetics: Or Control and Communication in the Animal
     and the Machine". He used the term "cybernetics" as self-regulating mechanisms
@@ -7231,6 +7380,7 @@
     birini yayınladı "Sibernetik: Hayvan ve Makinede Kontrol ve İletişim". "Sibernetik"
     terimini kendi kendini düzenleyen mekanizmalar olarak kullandı. ilk kez ve bu
     nedenle, bu yayın, tanınan bir Sibernetik doğum günü olarak kabul edilir.'
+  de: '1948 veröffentlichte der Mathematikprofessor am MIT Norbert Wiener eines der bahnbrechendsten Werke "Cybernetics: Or Control and Communication in the Animal and the Machine". Er verwendete zum ersten Mal den Begriff "Kybernetik" als selbstregulierende Mechanismen und so gilt diese Veröffentlichung als anerkannter kybernetischer Geburtstag.'
 - alias: Norbert Wiener speaks about viability of interdisciplinary science approach.
     For example he drew the parallels between automated control systems and challenges
     of scaling and complexity increasing of human society.
@@ -7260,6 +7410,7 @@
   tr: Norbert Wiener, disiplinler arası bilim yaklaşımının uygulanabilirliğinden bahsediyordu.
     Örneğin, otomatik kontrol sistemleri ile insan toplumunun ölçeklenmesi ve karmaşıklığının
     artması zorlukları arasındaki paralellikleri çizdi.
+  de: Norbert Wiener spricht über die Realisierbarkeit eines interdisziplinären wissenschaftlichen Ansatzes. So zog er beispielsweise Parallelen zwischen automatisierten Kontrollsystemen und den Herausforderungen der Skalierung und Komplexitätssteigerung der menschlichen Gesellschaft.
 - alias: So, in other words, the cybernetic approach can be applied equally to psychotherapy,
     biology and automated navigation. It is based on the function of the system, how
     the individual actions are controlled and how the individual nodes interact with
@@ -7297,6 +7448,7 @@
     navigasyona eşit olarak uygulanabilir. Sistemin işlevine, bireysel eylemlerin
     nasıl kontrol edildiğine ve bireysel düğümlerin birbirleriyle nasıl etkileşime
     girdiğine dayanır.
+  de: 'Mit anderen Worten: Der kybernetische Ansatz lässt sich gleichermaßen auf die Psychotherapie, die Biologie und die automatische Navigation anwenden. Er basiert auf der Funktion des Systems wie die einzelnen Aktionen gesteuert werden und wie die einzelnen Knoten miteinander interagieren.'
 - alias: Taking into account Ronald Coase's and Norbert Wiener's publications, following
     up the development of Industry 4.0, we can consider using CPS as an economic agent,
     while designing robotized services. To regulate the size of the CPS and adapt
@@ -7340,6 +7492,7 @@
     gelişimini takip ederek, robotize hizmetleri tasarlarken CPS'yi ekonomik bir ajan
     olarak kullanmayı düşünebiliriz. CPS'nin boyutunu düzenlemek ve bireylerin değişen
     ihtiyaçlarına uyum sağlamak için piyasa mekanizmasını kullanabiliriz.
+  de: Unter Berücksichtigung der Veröffentlichungen von Ronald Coase und Norbert Wiener und in Anlehnung an die Entwicklung von Industrie 4.0 können wir bei der Entwicklung robotisierter Dienstleistungen die CPS als Wirtschaftsfaktor betrachten. Um die Größe der CPS zu regulieren und an die sich ändernden Bedürfnisse der Menschen anzupassen, können wir Marktmechanismen nutzen.
 - alias: And what’s so scientifically interesting, taking as a basis the idea of the
     restrictions imposed by the market on the size of the firm, we can say that the
     limit of the increase in CPS will always be determined by the market and nothing
@@ -7372,6 +7525,7 @@
   tr: Ve bilimsel olarak ilginç olan şey, piyasanın firmanın büyüklüğüne getirdiği
     kısıtlamalar fikrini temel alarak, CPS'deki artışın sınırının her zaman piyasa
     tarafından belirleneceğini ve bunun için başka hiçbir şeye gerek olmadığını söyleyebiliriz.
+  de: Und was wissenschaftlich so interessant ist, wenn man die vom Markt auferlegten Beschränkungen der Unternehmensgröße zugrunde legt, kann man sagen, dass die Grenze des Wachstums von CPS immer vom Markt bestimmt wird und nichts anderes dafür erforderlich ist.
 - alias: Robofirms are an ideal representation for cyber-physical systems. They are
     a fairly autonomous unit capable of providing services to both humans and other
     robots for money. As a result, the robot economy appears to us to be a general
@@ -7411,6 +7565,7 @@
     hem de diğer robotlara para karşılığında hizmet verebilen oldukça özerk bir birimdir.
     Sonuç olarak, robot ekonomisi bize doğrudan pazara hizmet ve mal sağlayan genel
     bir CPS seti gibi görünüyor.
+  de: Robofirmen sind ein ideales Beispiel für cyber-physische Systeme. Sie sind eine ziemlich autonome Einheit die sowohl für Menschen als auch für andere Roboter gegen Geld Dienstleistungen erbringen kann. Folglich erscheint uns die Roboterwirtschaft als eine allgemeine Gruppe von CPS, die Dienstleistungen und Waren direkt auf dem Markt anbieten.
 - alias: BITCOIN
   az: BITCOIN
   en: BITCOIN
@@ -7421,6 +7576,7 @@
   ru: BITCOIN
   uk: BITCOIN
   tr: BİTCOİN
+  de: BITCOIN
 - alias: MONEY FOR ROBOTS
   az: ROBOTLAR ÜÇÜN PUL
   en: MONEY FOR ROBOTS
@@ -7431,6 +7587,7 @@
   ru: ДЕНЬГИ ДЛЯ РОБОТОВ
   uk: ГРОШІ ДЛЯ РОБОТІВ
   tr: ROBOTLAR İÇİN PARA
+  de: GELD FÜR ROBOTER
 - alias: In the world of robofirms it turns out to be natural to provide robots with
     access to social institutions that previously were only needed by humans.
   az: Dördüncü sənaye inqilabı dalğasında robotların genişlənməsinin ən çox ehtimal
@@ -7453,6 +7610,7 @@
   uk: У світі робофірм виявляється природним надати роботам доступ до соціальних інститутів, які раніше були потрібні лише людям.
   tr: Robofirms dünyasında, robotların daha önce sadece insanların ihtiyaç duyduğu
     sosyal kurumlara erişimini sağlamak hayatın olağan akışına uygun görünüyor.
+  de: In der Welt der Robo-Firmen liegt es nahe, Robotern Zugang zu sozialen Einrichtungen zu verschaffen, die bisher nur von Menschen genutzt wurden.
 - alias: Social institutions do not arise because people cannot live without banks,
     contracts and other instruments of society. They arise only because a person at
     some point in time stepped onto the path of more complex relations in society
@@ -7487,6 +7645,7 @@
     bankalar, sözleşmeler ve toplumun diğer araçları olmadan yaşayamaz. Ancak sadece
     bir noktada bir kişi, toplumda daha karmaşık ilişkiler yoluna girdiği ve çevremizdekilerin
     süreçlerini hızlandırmak için önemli bir adım attığı için.
+  de: Soziale Institutionen entstehen nicht, weil die Menschen ohne Banken, Verträge und andere Instrumente der Gesellschaft nicht leben können. Sie entstehen nur, weil ein Mensch zu einem bestimmten Zeitpunkt den Weg zu komplexeren gesellschaftlichen Beziehungen eingeschlagen und einen wichtigen Schritt zur Beschleunigung der damit verbundenen Prozesse getan hat.
 - alias: Money and contracts should become available to robots, not because this is
     a sick fantasy of robot fans who have forgotten what Skynet is. But only because
     the new industrial revolution sets itself the task of building complex automated
@@ -7536,6 +7695,7 @@
     devrimi, hem teknik bilgi hem de ekonomik bilgi alışverişini etkileyecek ve aynı
     zamanda insanların erişemeyeceği bir hızda ilerleyecek olan karmaşık otomatik
     zincirler inşa etme görevini üstlendiği için.
+  de: Geld und Verträge sollten für Roboter verfügbar werden, nicht weil dies eine kranke Fantasie von Roboterfans ist die vergessen haben was Skynet ist. Sondern weil sich die neue industrielle Revolution die Aufgabe stellt, komplexe automatisierte Ketten aufzubauen deren Prozesse sowohl den Austausch technischer als auch wirtschaftlicher Informationen betreffen und zudem mit einer für den Menschen unzugänglichen Geschwindigkeit ablaufen werden.
 - alias: Industry 1.0
   az: Sənaye 1.0
   en: Industry 1.0
@@ -7546,6 +7706,7 @@
   ru: Индустрия 1.0
   uk: Індустрія 1.0
   tr: Endüstri 1.0
+  de: Industrie 1.0
 - alias: 'Mechanization:'
   az: 'Mexanizasiya:'
   en: 'Mechanization: '
@@ -7556,11 +7717,10 @@
   uk: 'Механізація:'
   ru: 'Механизация:'
   tr: 'mekanizasyon:'
+  de: 'Technisierung:'
 - alias: 'replacement of muscle power with steam energy.'
   az: Əzələ gücünün buxar enerjisi ilə əvəz edilməsi.
-  en: 'replacement of muscle power with steam energy.
-
-    '
+  en: 'replacement of muscle power with steam energy.'
   es: 'Automatización:'
   fr: 'L''automatisation:'
   it: sostituzione della forza muscolare con energia a vapore.
@@ -7568,6 +7728,7 @@
   ru: замена мышечной силы паровой энергией.
   uk: заміна сили м'язів енергією пари.
   tr: kas gücünün buhar enerjisi ile değiştirilmesi.
+  de: "Ersatz von Muskelkraft durch Dampfenergie."
 - alias: 1784 г.
   az: 1784-cü il
   en: 1784 г.
@@ -7578,6 +7739,7 @@
   uk: 1784 р.
   ru: 1784 г.
   tr: 1784 r.
+  de: 1784 г.
 - alias: Industry 2.0
   az: Sənaye 2.0
   en: Industry 2.0
@@ -7588,11 +7750,13 @@
   ru: Индустрия 2.0
   uk: Індустрія 2.0
   tr: Endüstri 2.0
+  de: Industrie 2.0
 - alias: 'Electrification:'
   az: 'Elektrikləşdirmə:'
   en: 'Electrification: '
-  es: Industria 4.0
-  fr: l'industrie 4.0
+  de: "Elektrifizierung:"
+  es: "Electrificación:"
+  fr: "Électrification:"
   it: 'Elettrificazione:'
   pt: 'Eletrificação:'
   ru: 'Электрификация:'
@@ -7608,6 +7772,7 @@
   ru: внедрение конвейерного производства.
   uk: введення конвеєрного виробництва.
   tr: montaj hattı üretimine giriş.
+  de: Einführung der Fließbandproduktion
 - alias: 1870 г.
   az: 1870-ci il
   en: 1870 г.
@@ -7618,6 +7783,7 @@
   uk: 1870 р.
   ru: 1870 г.
   tr: 1870 r.
+  de: 1870 г.
 - alias: Industry 3.0
   az: Sənaye 3.0
   en: Industry 3.0
@@ -7628,31 +7794,18 @@
   ru: Индустрия 3.0
   uk: Індустрія 3.0
   tr: Endüstri 3.0
+  de: Industrie 3.0
 - alias: 'Automation:'
   az: 'Avtomatlaşdırma:'
   en: 'Automation: '
-  es: 'Uno de los ejemplos de nuestros experimentos: negociar pagos por espacio vial
-    y derecho de paso para vehículos autónomos para reducir la congestión. Lo que
-    una persona no haría absolutamente en el tráfico, el automóvil lo hará por usted
-    sin dificultad: si desea cambiar de carril, su automóvil y las ofertas de intercambio
-    de automóviles de su vecino sobre el costo de tal operación a una velocidad de
-    cientos de mensajes por segundo, revelarán un precio de equilibrio, por lo que
-    ya se encuentra en el siguiente carril de movimiento más rápido. Esto significa
-    que ahora estará disponible para "cargar" su viaje con uber y hacerlo más rápido.'
-  fr: 'L’un des exemples de nos expériences : la négociation de l’espace routier et
-    le paiement des droits de passage pour les véhicules autonomes afin de réduire
-    la congestion. Ce qu’une personne ne ferait absolument pas dans la circulation,
-    la voiture fera pour vous sans difficultés : vous voulez changer de voie, votre
-    voiture et les offres d’échange de votre voisin sur le coût d’une telle opération
-    à un taux de centaines de msgs par seconde, ils révéleront un prix d’équilibre,
-    et donc vous êtes déjà dans la prochaine voie plus rapide. Cela signifie qu’il
-    sera maintenant disponible pour « recharger » votre véhicule avec uber et le rendre
-    plus rapide.'
+  es: 'Automatización'
+  fr: 'Automatisation'
   it: 'Automazione:'
   pt: 'Automação:'
   ru: 'Автоматизация:'
   uk: 'Автоматизація:'
   tr: 'Otomasyon:'
+  de: Automatisierung
 - alias: introduction of automated systems with CNC.
   az: CNC ilə avtomatlaşdırılmış sistemlərin tətbiqi.
   en: introduction of automated systems with CNC.
@@ -7663,6 +7816,7 @@
   uk: впровадження автоматизованих систем із ЧПУ.
   ru: внедрение автоматизированных систем с ЧПУ.
   tr: CNC ile otomatik sistemlerin tanıtımı.
+  de: Einführung automatisierter Systeme mit CNC.
 - alias: 1969 г.
   az: 1969-cu il
   en: 1969 г.
@@ -7673,6 +7827,7 @@
   uk: 1969 р.
   ru: 1969 г.
   tr: 1969 r.
+  de: 1969 r.
 - alias: Industry 4.0
   az: Sənaye 4.0
   en: Industry 4.0
@@ -7683,6 +7838,7 @@
   ru: Индустрия 4.0
   uk: Індустрія 4.0
   tr: Endüstri 4.0
+  de: Industrie 4.0
 - alias: 'Smart production:'
   az: 'Ağıllı istehsal:'
   en: 'Smart production:'
@@ -7693,6 +7849,7 @@
   ru: 'Умное производство:'
   uk: 'Розумне виробництво:'
   tr: 'Akıllı üretim:'
+  de: "Intelligente Produktion:"
 - alias: development of cyber physical systems.
   az: Kiberfiziki sistemlərin inkişafı.
   en: development of cyber physical systems.
@@ -7703,6 +7860,7 @@
   ru: разработка кибер-физических систем.
   uk: розробка кібер фізичних систем.
   tr: siber fiziksel sistemlerin geliştirilmesi.
+  de: Entwicklung cyber-physischer Systeme.
 - alias: Now
   az: İndi
   en: Now
@@ -7713,6 +7871,7 @@
   ru: Сейчас
   uk: Зараз
   tr: Şimdi
+  de: Jetzt
 - alias: 'One of the examples of our experiments: negotiating road space and right
     of way payments for autonomous vehicles to reduce congestion. What a person would
     absolutely not do in traffic, the car will do for you without difficulties: you
@@ -7787,6 +7946,7 @@
     denge fiyatı ortaya çıkaracak ve bu yüzden zaten bir sonraki daha hızlı hareket
     eden şeride geçeceksiniz.Bu, şimdi kullanılabilir hale geleceği anlamına geliyor
     yolculuğunuzu uber ile "şarj etmek" ve daha hızlı hale getirmek için.'
+  de: 'Ein Beispiel unserer Experimente: Verhandlungen von Straßenraum und Vorfahrtsgebühren für autonome Fahrzeuge um Staus zu verringern. Was ein Mensch im Verkehr auf keinen Fall tun würde erledigt das Auto problemlos für Sie: Sie wollen die Spur wechseln, Ihr Auto und das Auto neben Ihnen tauschen Angebote über die Kosten eines solchen Vorgangs mit Hunderten von Nachrichten pro Sekunde aus. Sie werden einen Gleichgewichtspreis offenbaren und schon sind Sie auf der nächstschnelleren Spur. Das bedeutet, dass es mit dieser Art und Weise möglich ist z.B. mit ihrer Fahrt mit "Uber" schneller an ihr Ziel zu kommen.'
 - alias: Robots need money that will be directly available to them in order to be
     able to perform operations without a person at the speed with which only machines
     can make decisions. And all this is solely for a person to enjoy life in the Smart
@@ -7821,6 +7981,7 @@
   tr: Robotlar, yalnızca makinelerin karar verebileceği hızda, bir kişi olmadan işlemleri
     gerçekleştirebilmek için doğrudan ellerinde olacak paraya ihtiyaç duyarlar. Ve
     tüm bunlar sadece bir kişinin Akıllı Şehir'de hayattan zevk alması içindir!
+  de: Roboter brauchen Geld das ihnen direkt zur Verfügung steht um ohne den Menschen mit der Geschwindigkeit zu arbeiten mit der nur Maschinen Entscheidungen treffen können. Und das alles nur, damit der Mensch das Leben in der Smart City genießen kann!
 - alias: And here we smoothly come to the first electronic cash - Bitcoin. The fact
     that Bitcoin can be stored in your account on the principle of not a bank, but
     cash in your wallet makes it the first money that the robot can manage independently,
@@ -7872,6 +8033,7 @@
     robotun bağımsız, daha doğrusu otonom olarak yönetebildiği ilk para yapıyor. Aynı
     zamanda bugün Bitcoin'in sadece elektronik para değil, gerçek anlamda küresel
     bir finans kurumu olduğunu şimdiden söyleyebiliriz.
+  de: Und hier kommen wir schon zum ersten elektronischen Geld - den Bitcoin. Die Tatsache, dass Bitcoin auf Ihrem Konto gespeichert werden kann und zwar nicht nach dem Prinzip einer Bank sondern als Bargeld in Ihrer Brieftasche, macht es zum ersten Geld das der Roboter autonom verwalten kann. Gleichzeitig können wir jetzt schon sagen, dass der Bitcoin nicht nur elektronisches Bargeld ist, sondern ein wirklich globales Finanzinstitut.
 - alias: 'As a result: an event not invented by us, but clearly falling into our vision,
     makes Bitcoin the first money for robots, or, if we look even deeper, it is precisely
     that social institution that will help the formation of robotic firms.'
@@ -7904,6 +8066,7 @@
   tr: 'Sonuç olarak: Bizim tarafımızdan icat edilmemiş, ancak açıkça vizyonumuza giren
     bir olay, Bitcoin''i robotlar için ilk para haline getiriyor veya daha da derine
     inersek, robotik firmaların oluşumuna yardımcı olacak tam da bu sosyal kurum.'
+  de: 'Das Ergebnis: Ein Ereignis, dass nicht von uns erfunden wurde aber eindeutig in unsere Vision fällt, macht den Bitcoin zum ersten Geld für Roboter. Und wenn wir noch tiefer blicken, ist es genau diese soziale Institution die die Gründung von Roboterfirmen unterstützen wird.'
 - alias: SMART CONTRACTS
   az: SMART MÜQAVİLƏLƏR
   en: SMART CONTRACTS
@@ -7914,6 +8077,7 @@
   uk: СМАРТ-КОНТРАКТИ
   ru: СМАРТ-КОНТРАКТЫ
   tr: AKILLI SÖZLEŞMELER
+  de: SMARTE VERTRÄGE
 - alias: ETHEREUM
   az: ETHEREUM
   en: ETHEREUM
@@ -7924,6 +8088,7 @@
   ru: ETHEREUM
   uk: ETHEREUM
   tr: ETHEREUM
+  de: ETHEREUM
 - alias: Bitcoin became the first money available to robots. Meanwhile we can't talk
     about Bitcoin in its current form as a tool for full-fledged technical and economic
     exchange.
@@ -7952,6 +8117,7 @@
   tr: Bitcoin, robotların kullanabileceği ilk para oldu. Bu arada, tam teşekküllü
     teknik ve ekonomik değişim için bir araç olarak mevcut haliyle Bitcoin hakkında
     konuşamayız.
+  de: Bitcoin wurde das erste Geld, das für Roboter verfügbar war. In der Zwischenzeit können wir nicht über Bitcoin in seiner aktuellen Form als ein Werkzeug für einen vollwertigen technischen und wirtschaftlichen Austausch sprechen.
 - alias: Now we already have smart contracts, DeFi markets and a decentralized infrastructure
     for exchanging messages between robots that open up the possibility for humanity
     to create a fully automated part of the human economy - the robot economy.
@@ -7987,6 +8153,7 @@
   tr: Artık, insanlığın insan ekonomisinin tam otomatik bir parçasını - robot ekonomisini
     - yaratma olasılığını açan robotlar arasında mesaj alışverişi yapmak için akıllı
     sözleşmelere, DeFi pazarlarına ve merkezi olmayan bir altyapıya sahibiz.
+  de: Jetzt haben wir bereits intelligente Verträge, DeFi-Märkte und eine dezentrale Infrastruktur für den Austausch von Nachrichten zwischen Robotern, die der Menschheit die Möglichkeit eröffnen, einen vollständig automatisierten Teil der menschlichen Wirtschaft zu schaffen - die Roboterwirtschaft.
 - alias: One of the great opportunity to build the economy of robots is
   az: Robotların iqtisadiyyatını qurmaq üçün əla fürsətlərdən biri
   en: One of the great opportunity to build the economy of robots is
@@ -8000,6 +8167,7 @@
   ru: Одна из прекрасных возможностей построить экономику роботов — это
   uk: Одна з чудових можливостей побудувати економіку роботів — це технології
   tr: Robotların ekonomisini inşa etmek için en büyük fırsatlardan biri
+  de: Eine der großen Chancen für den Aufbau der Roboterwirtschaft ist
 - alias: Ethereum
   az: Ethereum
   en: Ethereum
@@ -8010,36 +8178,7 @@
   uk: Ethereum
   ru: Ethereum
   tr: Ethereum
-- alias: Ethereum
-  az: Ethereum
-  en: Ethereum
-  es: Ethereum
-  fr: Ethereum
-  it: Ethereum
-  pt: Ethereum
-  ru: Ethereum
-  uk: Ethereum
-  tr: Ethereum
-- alias: Ethereum
-  az: Ethereum
-  en: Ethereum
-  es: Ethereum
-  fr: Ethereum
-  it: Ethereum
-  pt: Ethereum
-  uk: Ethereum
-  ru: Ethereum
-  tr: Ethereum
-- alias: Ethereum
-  az: Ethereum
-  en: Ethereum
-  es: Ethereum
-  fr: Ethereum
-  it: Ethereum
-  pt: Ethereum
-  uk: Ethereum
-  ru: Ethereum
-  tr: Ethereum
+  de: Ethereum
 - alias: technology. With Ethereum functionality robots are able not only exchange
     money, but to enter into contracts with humans and among themselves.
   az: texnologiyasıdır. Ethereum funksionallığı ilə robotlar nəinki pul mübadiləsi,
@@ -8059,6 +8198,7 @@
   uk: Завдяки функціональності Ethereum роботи можуть не лише обмінювати гроші, але й укладати контракти з людьми та між собою.
   tr: teknolojisidir. Ethereum işlevselliği ile robotlar sadece para alışverişi yapmakla
     kalmaz, aynı zamanda insanlarla ve kendi aralarında sözleşmeler yapabilirler.
+  de: Mit der Ethereum-Funktionalität sind Roboter nicht nur in der Lage Geld zu tauschen, sondern auch Verträge mit Menschen und untereinander zu schließen.
 - alias: But what's the point of machine to machine (m2m) contract based communication?
     That's a great question! Let's go back to CPS. When we talk about direct communications
     between sensors, machine equipment or any other elements we still talk about collaboration
@@ -8116,6 +8256,7 @@
     içindeki işbirliğinden bahsediyoruz. Ancak akıllı şehir hizmetlerinin canlı (hatta
     bazı durumlarda akıllı ev) olmasını istiyorsak, çeşitli üçüncü taraf unsurlarla
     iletişim kurmamız gerekir.
+  de: Aber wozu dient die vertragsbasierte Kommunikation von Maschine zu Maschine (m2m)? Das ist eine gute Frage! Kehren wir zu CPS zurück. Wenn wir über die direkte Kommunikation zwischen Sensoren, Maschinenausrüstung oder anderen Elementen sprechen, sprechen wir immer noch über die Zusammenarbeit innerhalb eines geregelten Systems. Aber wenn wir wollen, dass Smart-Cities-Dienste lebendig sind (oder in manchen Fällen sogar Smart Home) müssen wir die Kommunikation mit verschiedenen Elementen von Drittanbietern herstellen.
 - alias: Let's imagine drone delivery service. If a drone, for example, is DHL's property
     how it can access to Amazon's warehouses or access to over the entire airspace
     of the city? Is it be a monopoly? This is a major challenge for many 4th industrial
@@ -8151,6 +8292,7 @@
   tr: Drone teslimat hizmetini düşünelim. Örneğin bir drone, DHL'in mülküyse, Amazon'un
     depolarına nasıl erişebilir veya şehrin tüm hava sahasına nasıl erişebilir? Tekel
     mi olacak? Bu, birçok 4. sanayi devrimi girişimi için büyük bir zorluktur!
+  de: Stellen wir uns einen Drohnenlieferdienst vor. Wenn eine Drohne beispielsweise Eigentum von DHL ist, wie kann sie dann Zugang zu den Lagern von Amazon oder zum gesamten Luftraum der Stadt haben? Handelt es sich um ein Monopol? Dies ist eine große Herausforderung für viele Initiativen der vierten industriellen Revolution!
 - alias: Most corporations say they need nearly complete rights to its surroundings
     because they don’t know how to securely set up the exchange of technical information
     between automated systems outside of their own internal corporate structure. At
@@ -8226,6 +8368,7 @@
     sitesinde satın alınan malların kapıdan kapıya teslimatını kolayca sipariş edebilirsiniz
     ve kurye şehir yollarında araba kullanabilir, depoda sipariş alabilir ve size
     getirebilir.
+  de: Die meisten Unternehmen sagen, dass sie nahezu vollständige Rechte an ihrer Umgebung benötigen weil sie nicht wissen, wie sie den Austausch technischer Informationen zwischen automatisierten Systemen außerhalb ihrer eigenen Unternehmensstruktur sicher gestalten können. Betrachtet man jedoch die Prozesse in denen ein Mensch arbeitet, so stellt man fest, dass die Zusammenarbeit zwischen verschiedenen Unternehmen schon lange und erfolgreich besteht. Sie können auf der Amazon-Website ganz einfach eine Tür-zu-Tür-Lieferung der gekauften Waren bestellen und der Kurier wird in der Lage sein, die Bestellung im Lager in Empfang zu nehmen und sie Ihnen zu bringen.
 - alias: What's the difference? In the first case there is no way to build a contractual
     relationship between machines, and in the second case, in the world of people,
     contractual relations already exist.
@@ -8252,6 +8395,7 @@
   tr: Fark ne? İlk durumda, makineler arasında sözleşmeye dayalı bir ilişki kurmanın
     bir yolu yoktur ve ikinci durumda, insanların dünyasında sözleşmeye dayalı ilişkiler
     zaten mevcuttur.
+  de: Worin besteht nun der Unterschied? Im ersten Fall gibt es keine Möglichkeit eine vertragliche Beziehung zwischen Maschinen aufzubauen und im zweiten Fall, in der Welt der Menschen, gibt es bereits vertragliche Beziehungen.
 - alias: PARACHAINS
   az: PARAÇEYNLƏR
   en: PARACHAINS
@@ -8262,6 +8406,7 @@
   uk: ПАРАЧЕЙНИ
   ru: ПАРАЧЕЙНЫ
   tr: MÜZAYEDELER
+  de: PARACHAINS
 - alias: POLKADOT
   az: POLKADOT
   en: POLKADOT
@@ -8272,6 +8417,7 @@
   uk: POLKADOT
   ru: POLKADOT
   tr: POLKADOT
+  de: POLKADOT
 - alias: The main difficulty that Robonomics faces today is the high price for launching
     an IoT device using Ethereum. In Ethereum you have to pay a commission on each
     transaction in terms of US dollars in the range of $10 to $100. It is quite expensive
@@ -8326,6 +8472,7 @@
     Gerçek ekonomiden vakalar, araba paylaşım gezisi, akıllı bir daire kiralama, drone
     teslimatı veya sipariş vermek için en sevdiğiniz anime kahramanının 3D baskısı
     olsun.
+  de: Das Hauptproblem mit dem Robonomics heute konfrontiert ist, ist der hohe Preis für die Einführung eines IoT-Geräts mit Ethereum. In Ethereum muss man für jede Transaktion eine Provision bezahlen die zwischen 10 und 100 US-Dollar liegt. Das ist für die meisten Fälle aus der realen Wirtschaft ziemlich teuer, sei es eine Carsharing-Fahrt, die Anmietung einer intelligenten Wohnung, die Lieferung per Drohne oder der 3D-Druck Ihres Lieblings-Anime-Helden auf Bestellung.
 - alias: Out of fairness, we would like to note that there are profitable scenarios
     even with transaction fees in the Ethereum network of 2018 - 2019. For example,
     automated carbon footprint offset transactions or transferring the order from
@@ -8379,6 +8526,7 @@
     ofset işlemleri veya siparişin web sitesinden doğrudan üretime aktarılması. Ancak
     yine de web3 teknolojilerinin IoT alanında toplu olarak uygulanması için bulutun
     bağlı cihazdan aldığı ücretin düşürülmesi gerekiyor.
+  de: Der Fairness halber möchten wir anmerken, dass es auch mit Transaktionsgebühren im Ethereum-Netzwerk von 2018 - 2019 profitable Szenarien gibt. Zum Beispiel automatisierte Transaktionen zum Ausgleich des CO2-Fußabdrucks oder die Übermittlung der Bestellung von der Website direkt an die Produktion. Dennoch ist für die Massenanwendung der web3-Technologien im Bereich des IoT eine Senkung des Preises erforderlich, den die Cloud vom angeschlossenen Gerät verlangt.
 - alias: Looking for an opportunity to reduce the cost of interacting with an IoT
     device, Robonomics developers have studied alternative developments to Ethereum.
     Our choice settled on the
@@ -8408,6 +8556,7 @@
     geliştiricileri, Ethereum'a alternatif geliştirmeler üzerinde çalıştı. Seçimimiz,
     güvenliğin projemizden bağımsız doğrulayıcılar tarafından sağlandığı ortak bir
     ağ içinde kendi blok zincirimizi çalıştırmamıza izin verecek olan
+  de: Auf der Suche nach einer Möglichkeit die Kosten für die Interaktion mit einem IoT-Gerät zu senken, haben die Robonomics-Entwickler alternative Entwicklungen zu Ethereum untersucht. Unsere Wahl fiel auf das
 - alias: architecture, which would allow us to run our own blockchain, within a common
     network, in which security is ensured by validators independent of our project.
   az: arxitekturasında qərarlaşdı.
@@ -8428,6 +8577,7 @@
     сети, в которой безопасность обеспечивается независимыми от нашего проекта валидаторами.
   uk: ', яка дозволить нам запускати власний блокчейн у загальной мережі, в якій безпека забезпечується валідаторами, незалежними від нашого проекту.'
   tr: mimarisine karar verdi.
+  de: Architektur, die es uns ermöglichen würde, unsere eigene Blockchain innerhalb eines gemeinsamen Netzwerks zu betreiben, in dem die Sicherheit durch von unserem Projekt unabhängige Validierer gewährleistet wird.
 - alias: Polkadot
   az: Polkadot
   en: Polkadot
@@ -8438,6 +8588,7 @@
   uk: Polkadot
   ru: Polkadot
   tr: Polkadot
+  de: Polkadot
 - alias: Freedom of choice
   az: Seçim azadlığı
   en: Freedom of choice
@@ -8448,6 +8599,7 @@
   ru: Свобода выбора
   uk: Свобода вибору
   tr: Seçme özgürlüğü
+  de: Entscheidungsfreiheit
 - alias: Heterogeneous Blockchain Network
   az: Heterojen Blokçeyn Şəbəkəsi
   en: Heterogeneous Blockchain Network
@@ -8458,6 +8610,7 @@
   pt: Rede Blockchain Heterogênea
   ru: Сеть гетерогенных блокчейнов
   tr: Heterojen Blockchain Ağı
+  de: Heterogenes Blockchain Netzwerk
 - alias: Homogeneous Shard Network
   az: Homojen Şard Şəbəkəsi
   en: Homogeneous Shard Network
@@ -8468,6 +8621,7 @@
   uk: Гомогенна мережа шард
   ru: Сеть однородных шард
   tr: Homojen Parça Ağı
+  de: Homogenes Shard-Netzwerk
 - alias: Slots Auction
   az: Slot auksionu
   en: Slots Auction
@@ -8478,6 +8632,7 @@
   uk: Аукціон слотів
   ru: Аукцион слотов
   tr: Slot Müzayedeleri
+  de: Slots Auktion
 - alias: On-chain protocol control
   az: Zəncir üzərində protokol nəzarəti
   en: On-chain protocol control
@@ -8488,6 +8643,7 @@
   uk: On-chain управління протоколом
   ru: On-chain управление протоколом
   tr: Zincir-içi protokol kontrolü
+  de: On-Chain-Protokollkontrolle
 - alias: Protection against the tyranny of the crowd
   az: Kütlənin zülmündən müdafiə
   en: Protection against the tyranny of the crowd
@@ -8498,6 +8654,7 @@
   uk: Захист від тиранії юрби
   ru: Защита от тирании толпы
   tr: Kalabalığın zorbalığına karşı koruma
+  de: Schutz vor der Tyrannei der Masse
 - alias: Auction of bandwidth in the common network
   az: Ümumi şəbəkədə bant genişliyi auksionu
   en: Auction of bandwidth in the common network
@@ -8508,6 +8665,7 @@
   uk: Аукціони пропускної спроможності в загальной мережі
   ru: Аукционы пропускной способности в общей сети
   tr: Ortak ağda bant genişliği açık artırması
+  de: Auktion der Bandbreite im gemeinsamen Netz
 - alias: Payment for gas by users
   az: İstifadəçilər tərəfindən qazın ödənilməsi
   en: Payment for gas by users
@@ -8518,6 +8676,7 @@
   ru: Оплата газа пользователями
   uk: Оплата газу користувачами
   tr: Kullanıcılar tarafından gaz için ödeme
+  de: Zahlung von Transaktionsgebühren durch Nutzer
 - alias: Have you read this?
   az: Siz bunu oxumusunuz?
   en: Have you read this?
@@ -8528,6 +8687,7 @@
   uk: Ви це читали?
   ru: Уже читали это?
   tr: Bunu okudunuz mu?
+  de: Hast du das gelesen?
 - alias: OPEN QUESTIONS OF TELEOLOGY
   az: TELEOLOGİYANIN AÇIQ SUALLARI
   en: OPEN QUESTIONS OF TELEOLOGY
@@ -8538,6 +8698,7 @@
   ru: ОТКРЫТЫЕ ВОПРОСЫ ТЕЛЕОЛОГИИ
   uk: ВІДКРИТІ ПИТАННЯ ТЕЛЕОЛОГІЇ
   tr: TELOLOJİ AÇIK SORULARI
+  de: OFFENE TELEOLOGISCHE FRAGEN
 - alias: Inspired by Norbert Wiener
   az: Norbert Wiener-dən ilhamlanıb
   en: Inspired by Norbert Wiener
@@ -8548,6 +8709,7 @@
   uk: Натхненний Норбертом Вінером
   ru: Вдохновленные Норбертом Винером
   tr: Norbert Wiener'den ilham alınmıştır
+  de: Inspiriert von Norbert Wiener
 - alias: One extremely popular question that still remains open — the goal setting
     of robots when providing services to people. This is a specific but academically
     important question. The fact is that human economics often includes factors related
@@ -8635,6 +8797,7 @@
     ve meslektaşlarının “Behavior, Purpose and Teleology” adlı ilk makalesinin yanı
     sıra Amerikalı ekonomist ve filozof Ludwig von'un çalışması İnsan etkinliğine
     ilişkin yanlışlar, referans noktaları olarak kabul edilebilir.
+  de: Eine sehr beliebte Frage, die noch offen ist, ist die nach der Zielsetzung von Robotern bei der Erbringung von Dienstleistungen für Menschen. Dies ist eine spezielle, aber wissenschaftlich wichtige Frage. Tatsache ist, dass die menschliche Wirtschaft oft Faktoren umfasst, die mit der gutgläubigen Erfüllung von Aufgaben in einem Vertrag, dem Wunsch der Parteien ein Ergebnis zu erzielen und dem opportunistischen und altruistischen Verhalten des Einzelnen in der Gesellschaft zusammenhängen. Es ist schwierig über solche Themen in der Robotik zu sprechen. Daher möchten die Entwickler von Robonomics teleologische Fragen für weitere Studien offen lassen und ihre Aufmerksamkeit auf den praxeologischen Teil des Verhaltens von Robotern als Wirtschaftssubjekte richten. Hinsichtlich der Zielsetzung können ein früher Artikel von Norbert Wiener und seinen Kollegen mit dem Titel "Behavior, Purpose and Teleology" (Verhalten, Zweck und Teleologie) sowie die Arbeiten des amerikanischen Ökonomen und Philosophen Ludwig von Mises über menschliche Aktivitäten als Bezugspunkte dienen.
 - alias: Mises, in his book
   az: Mizes
   en: Mises, in his book
@@ -8645,6 +8808,7 @@
   ru: Мизер в книге
   uk: Мізес у своїй книзі 
   tr: Mises,
+  de: Mises schreibt in seinem Buch
 - alias: '«Human Action: A Treatise of Economics»'
   az: '"İnsan Fəaliyyəti: İqtisadiyyatın risaləsi"'
   en: '«Human Action: A Treatise of Economics»'
@@ -8655,6 +8819,7 @@
   ru: '«Human Action: A Treatise of Economics»'
   uk: '«Людська дія: Трактат економіки»'
   tr: '«Human Action: A Treatise of Economics»'
+  de: '«Human Action: A Treatise of Economics»'
 - alias: ', looks at the human being in economics from a praxeological perspective.
     Praxeology gives us an interesting insight into human behavior without a direct
     correlation to the ultimate goal. By continuing to study the phenomena in human
@@ -8711,6 +8876,7 @@
     süreçlerin kendi perspektifinden incelemeye devam ederek, makine teleolojisi sorularına
     girmemek için bir robot ekonomisi için oluşturulabilecek çerçeve hakkında daha
     fazla şey anlayabiliriz.
+  de: "Betrachtet den Menschen in der Wirtschaft aus einer praxeologischen Perspektive. Die Praxeologie gibt uns einen interessanten Einblick in das menschliche Verhalten ohne das ein direkter Bezug zum Endziel besteht. Wenn wir die Phänomene in der menschlichen Wirtschaft weiterhin aus der Perspektive der Prozesse selbst und losgelöst von den Endzielen untersuchen, können wir mehr über den Rahmen verstehen der für eine Roboterwirtschaft gebildet werden kann um nicht in Fragen der Maschinenteleologie einzutauchen."
 - alias: Great books lead to great ideas. If you're after more inspiration about human-machine
     communication, try reading science fiction books. Mark the books you’ve already
     read and see what else can we offer you for further reflection.
@@ -8744,6 +8910,7 @@
     fazla ilham almak istiyorsanız, bilim kurgu kitapları okumayı deneyin. Halihazırda
     okuduğunuz kitapları işaretleyin ve daha fazla düşünmeniz için size başka neler
     sunabileceğimizi görün.
+  de: Gute Bücher führen zu guten Ideen. Wenn du mehr Inspiration zum Thema Mensch-Maschine-Kommunikation suchst lies doch Science-Fiction-Bücher. Markiere die Bücher die du bereits gelesen hast und informiere dann was wir dir noch zum Nachdenken anbieten können.
 - alias: Do Androids Dream of Electric Sheep?
   az: 'Blade Runner: Android-lər elektrik qoyunları xəyal edirmi?'
   en: Do Androids Dream of Electric Sheep?
@@ -8754,6 +8921,7 @@
   ru: Метчают ли андроиды об электроовцах?
   uk: Чи мріють андроїди про електричних овець?
   tr: Do Androids Dream of Electric Sheep?
+  de: Do Androids Dream of Electric Sheep?
 - alias: Philip K. Dick
   az: Filip K. Dik
   en: Philip K. Dick
@@ -8764,6 +8932,7 @@
   ru: Филип K. Дик
   uk: Філіп К. Дік
   tr: Philip K. Dick
+  de: Philip K. Dick
 - alias: Autofac
   az: Autofac
   en: Autofac
@@ -8774,6 +8943,7 @@
   ru: Аутофак
   uk: Autofac
   tr: Autofac
+  de: Autofac
 - alias: I, Robot
   az: Mən, Robot
   en: I, Robot
@@ -8784,6 +8954,7 @@
   ru: Я робот
   uk: Я, робот
   tr: I, Robot
+  de: I, Robot
 - alias: Isaac Asimov
   az: Ayzek Azimov
   en: Isaac Asimov
@@ -8794,6 +8965,7 @@
   ru: Айзек Азимов
   uk: Айзек Азiмов
   tr: Isaac Asimov
+  de: Isaac Asimov
 - alias: The Bicentennial Man
   az: İki yüz yaşlı adam
   en: The Bicentennial Man
@@ -8804,6 +8976,7 @@
   ru: Двухсотлетний человек
   uk: The Bicentennial Man
   tr: The Bicentennial Man
+  de: The Bicentennial Man
 - alias: Neuromancer
   az: Neuromanser
   en: Neuromancer
@@ -8814,6 +8987,7 @@
   ru: Нейромант
   uk: Нейромант
   tr: Neuromancer
+  de: Neuromancer
 - alias: William Gibson
   az: Vilyam Gibson
   en: William Gibson
@@ -8824,6 +8998,7 @@
   ru: Уильям Гибсон
   uk: Вільям Ґібсон
   tr: William Gibson
+  de: William Gibson
 - alias: Marionettes, Inc.
   az: Marionetlər, Inc.
   en: Marionettes, Inc.
@@ -8834,6 +9009,7 @@
   ru: Марионетки, Inc.
   uk: Корпорація «Маріонетки»
   tr: Marionettes, Inc.
+  de: Marionettes, Inc.
 - alias: Ray Bradbury
   az: Rey Bredberi
   en: Ray Bradbury
@@ -8844,6 +9020,7 @@
   ru: Рэй Брэдбери
   uk: Рей Бредбері
   tr: Ray Bradbury
+  de: Ray Bradbury
 - alias: Open questions of teleology
   az: Teleologiyanın açıq sualları
   en: Open questions of teleology
@@ -8854,6 +9031,7 @@
   ru: Открытые вопросы телеологии
   uk: Відкриті питання телеології
   tr: Teleolojinin açık soruları
+  de: Offene Fragen zur Teleologie
 - alias: and a treatise by L. von Mises
   az: və L. von Mizesin traktatı
   en: and a treatise by L. von Mises
@@ -8864,6 +9042,7 @@
   ru: и трактат Л. фон Мизеса
   uk: і трактат Л. фон Мізеса
   tr: ve L. von Mises'in bir incelemesi
+  de: und eine Abhandlung von L. von Mises
 - alias: In conclusion, we would like to mention questions that remain open from a
     global point of view. What is the goal of robots?
   az: Sonda qlobal nöqteyi-nəzərdən açıq qalan sualları qeyd etmək istərdik. Robotların
@@ -8883,6 +9062,7 @@
   uk: На закінчення хочеться згадати питання, які залишаються відкритими з глобальної точки зору. Яка мета роботів?
   tr: Sonuç olarak, küresel bir bakış açısıyla açık kalan sorulara değinmek istiyoruz.
     Robotların amacı nedir?
+  de: Abschließend möchten wir auf Fragen eingehen, die aus globaler Sicht noch offen sind. Was ist das Ziel von Robotern?
 - alias: In fact, the economy of people is often associated with the conscientiousness
     of performing tasks within the framework of the contract, the desire of the parties
     to achieve a result, the opportunistic and altruistic behavior of the individual
@@ -8940,6 +9120,7 @@
     uygulanması zordur. Robot ekonomisinin nedenleri nelerdir? Robotları daha iyi
     anlamak ve uygulamak için toplumda araştırmamız ve tartışmamız gereken açık bir
     soru.
+  de: In der Tat wird die Wirtschaft der Menschen oft mit der Gewissenhaftigkeit der Aufgabenerfüllung im Rahmen des Vertrags, dem Wunsch der Parteien ein Ergebnis zu erzielen und dem opportunistischen und altruistischen Verhalten des Einzelnen in der Gesellschaft in Verbindung gebracht. All diese Grundsätze lassen sich nur schwer auf die Roboterwirtschaft anwenden. Was sind die Beweggründe der Roboterwirtschaft? Das ist eine offene Frage die wir erforschen und in der Gesellschaft diskutieren müssen um Roboter besser zu verstehen und einzusetzen.
 - alias: 'For the start we suggest to look at Mises''s work "Human Action: A Treatise
     on Economics" (praxeological approach) and at early article by Norbert Wiener
     "Behavior, Purpose and Teleology" (teleological vision).'
@@ -8968,6 +9149,7 @@
   tr: 'Başlangıç ​​olarak, Mises''in "İnsan Eylemi: Ekonomi Üzerine Bir İnceleme"
     (praxeological yaklaşım) adlı çalışmasına ve Norbert Wiener''in "Behavior, Purpose
     and Teleology"" (teleolojik vizyon) adlı ilk makalesine bakmayı öneriyoruz.'
+  de: 'Für den Anfang empfehlen wir einen Blick auf Mises Werk "Human Action: A Treatise on Economics" (praxeologischer Ansatz) und den frühen Artikel von Norbert Wiener "Behavior, Purpose and Teleology" (teleologische Vision).'
 - alias: Praxeology inspires us with interesting ideas about human behavior without
     direct dependence on the purposes. This gives us the opportunity to work on the
     processes of the economy of robots conditionally as with a black box without delving
@@ -9012,6 +9194,7 @@
     fikirlerle bize ilham verir. Bu bize, nihai hedeflere dalmadan, bir kara kutu
     gibi koşullu olarak robot ekonomisinin süreçleri üzerinde çalışma fırsatı verir.
     Aynı zamanda, teleoloji, nedenleri açıklamak için bir zorluk teşkil eder.
+  de: Die Praxeologie inspiriert uns mit interessanten Ideen über menschliches Verhalten ohne direkte Abhängigkeit von den Zielen. Dies gibt uns die Möglichkeit die Prozesse der Wirtschaft von Robotern bedingt wie bei einer Blackbox zu bearbeiten, ohne in die endgültigen Ziele einzutauchen. Gleichzeitig stellt die Teleologie eine Herausforderung dar die Ursachen zu erklären.
 - alias: We hope that somewhere at the junction of the works of Mises and Wiener,
     a point for further development of the robot economy may be found, not just as
     a protocol of interaction between people and machines of a praxeological nature,
@@ -9052,6 +9235,7 @@
     da geliştirilmesi için bir noktanın bulunabileceğini umuyoruz, sadece insanlar
     ve makineler arasında prakseolojik nitelikte bir etkileşim protokolü olarak değil,
     teleolojik türler arası iletişim kurma unsurları olarak düşünüyoruz.
+  de: Wir hoffen, dass irgendwo an der Schnittstelle der Werke von Mises und Wiener ein Punkt für die weitere Entwicklung der Roboterökonomie gefunden werden kann, nicht nur als ein Protokoll der Interaktion zwischen Menschen und Maschinen praxeologischer Natur, sondern unter Berücksichtigung der teleologischen Elemente des Aufbaus der Kommunikation zwischen den Arten.
 - alias: Jobs
   en: Jobs
   ru: Вакансии
@@ -9095,6 +9279,7 @@
   it: Guida di benvenuto al Whitepaper 2022 di Robonomics
   ru: Гайд по Robonomics White Paper 2022
   uk: ГАЙД ПО ROBONOMICS WHITE PAPER 2022
+  de: Robonomics Whitepaper 2022 Leitfaden
 - alias: We have developed a techno-economic machine communication protocol running
     on top of Ethereum and IPFS, and complement it with elements of a cloud-based
     IoT platform based on the Polkadot parachain. Today, we already have a hybrid
@@ -9137,6 +9322,7 @@
     IoT-приложений. Она обеспечивает взаимодействие с устройствами, находящимися под
     управлением мирового децентрализованного компьютера. Прежде чем использовать платформу
     Робономика, погрузимся немного в теорию.
+  de: Wir haben ein technisch, ökonomisches Maschinenkommunikationsprotokoll entwickelt, das auf Ethereum und IPFS aufbaut. Dieses ergänzt es mit Elementen einer cloudbasierten IoT-Plattform, die auf dem Parachain Polkadot basiert. Heute verfügen wir bereits über eine hybride Plattform für die Entwicklung futuristischer IoT-Anwendungen. Sie ermöglicht die Interaktion mit Geräten unter der Kontrolle eines globalen dezentralen Computers. Bevor wir damit beginnen sichere, serverlose und futuristische IoT-Anwendungen mit der Robonomics-Plattform zu erstellen, wollen wir ein wenig in die Theorie eintauchen...
 - alias: The first two chapters of the Robonomics white paper are already available
     to users.
   az: Robonomika white paper-in ilk iki fəsli artıq istifadəçilər üçün mövcuddur.
@@ -9147,6 +9333,7 @@
   it: I primi due capitoli del whitepaper di Robonomics sono già disponibili per gli
     utenti.
   ru: "ДЛЯ ПОЛЬЗОВАТЕЛЕЙ УЖЕ ДОСТУПНЫ ПЕРВЫЕ 2 ГЛАВЫ БЕЛОЙ БУМАГИ РОБОНОМИКИ.\r"
+  de: Die ersten beiden Kapitel des Robonomics-Whitepapers stehen den Nutzern bereits zur Verfügung.
 - alias: Chapter 1.
   az: FƏSİL 1.
   en: Chapter 1.
@@ -9154,6 +9341,7 @@
   it: Capitolo 1.
   ru: ГЛАВА 1.
   uk: Розділ 1.
+  de: Kapitel 1. 
 - alias: AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS
   az: KIBERNETIKA VƏ IQTISADIYYATIN SƏRHƏDDINDƏ
   en: AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS
@@ -9161,6 +9349,7 @@
   it: ALL'INTERSEZIONE FRA CIBERNETICA ED ECONOMIA
   ru: НА СТЫКЕ КИБЕРНЕТИКИ И ЭКОНОМИКИ
   uk: НА СТИКУ КІБЕРНЕТИКИ ТА ЕКОНОМІКИ
+  de: AM SCHNITTPUNKT VON KYBERNETIK UND WIRTSCHAFT
 - alias: We presented an economic system in which robotic devices act as independent
     agents capable of performing key economic activities, previously reserved for
     humans. In this chapter, we will talk about the relevance of the robot economy,
@@ -9195,6 +9384,7 @@
     \ людей и изменить текущий уровень экономики в полностью автоматизированные сервисы.\
     \ \r \r"
   uk: Ми представили економічну систему, в якій роботизовані пристрої діють як незалежні агенти, здатні виконувати ключові економічні види діяльності, раніше зарезервовані для людей. У цьому розділі ми поговоримо про актуальність роботизованої економіки, яка може стати важливою частиною життя людей і змінити поточний рівень економіки на повністю автоматизовані послуги в майбутньому.
+  de: Wir haben ein Wirtschaftssystem vorgestellt in dem Roboter als unabhängige Agenten fungieren welche in der Lage sind, wichtige wirtschaftliche Tätigkeiten auszuführen die bisher dem Menschen vorbehalten waren. In diesem Kapitel informieren wir über die Relevanz der Roboterwirtschaft die ein wichtiger Teil des Lebens der Menschen werden und das derzeitige Niveau der Wirtschaft in Zukunft in vollautomatische Dienstleistungen umwandeln kann.
 - alias: In this chapter you will learn
   az: Bu fəsildə aşağıdakıları öyrənəcəksiniz
   en: In this chapter you will learn
@@ -9202,6 +9392,7 @@
   it: In questo capitolo imparerete
   ru: "В этой главе вы узнаете\r \r"
   uk: У цьому розділі ви дізнаєтеся
+  de: In diesem Kapitel erfährst du
 - alias: Ronald Coase and The Nature of the Firm
   az: Ronald Kouz və firmanın təbiəti
   en: Ronald Coase and The Nature of the Firm
@@ -9209,6 +9400,7 @@
   it: Ronald Coase e The Nature of the Firm
   ru: "Рональд Коуз и природа фирмы\r \r"
   uk: Рональд Коуз і природа фірми
+  de: Ronald Coase und das Wesen des Unternehmens
 - alias: CPS - cyber-physical system
   az: CPS - kiber-fiziki sistem
   en: CPS - cyber-physical system
@@ -9216,6 +9408,7 @@
   it: CPS - sistemi cyber-fisici
   ru: "КФС – кибер-физическая система\r \r"
   uk: КФС — кіберфізична система
+  de: CPS - Cyber-Physikalisches System
 - alias: Norbert Wiener and the search for patterns in living and machine
   az: Norbert Wiener və həyatda və maşında nümunələrin axtarışı
   en: Norbert Wiener and the search for patterns in living and machine
@@ -9223,6 +9416,7 @@
   it: Norbert Wiener e la ricerca di pattern nella vita e nella macchina
   uk: Норберт Вінер та пошук закономірностей у живому та машинному
   ru: "Норберт Винер и поиск закономерностей в живом и машинном\r \r"
+  de: Norbert Wiener und die Suche nach Mustern in Leben und Maschine
 - alias: The Fourth Industrial Revolution, Money for Robots and Bitcoin
   az: Dördüncü Sənaye İnqilabı, Robotlar üçün Pul və Bitcoin
   en: The Fourth Industrial Revolution, Money for Robots and Bitcoin
@@ -9230,6 +9424,7 @@
   it: La Quarta Rivoluzione Industriale, Denaro per i Robot e Bitcoin
   uk: Четверта промислова революція, гроші для роботів і біткойн
   ru: "Четвёртая промышленная революция, деньги для роботов и Bitcoin\r \r"
+  de: Die 4.0 industrielle Revolution, Geld für Roboter und Bitcoin
 - alias: Ethereum Smart Contracts
   az: Ethereum Ağıllı Müqavilələri
   en: Ethereum Smart Contracts
@@ -9237,6 +9432,7 @@
   it: Smart Contract Ethereum
   uk: Розумні контракти Ethereum
   ru: "Умные контракты Ethereum\r \r"
+  de: Ethereum Smart Contracts
 - alias: Polkadot Parachains
   az: Polkadot parachainləri
   de: Polkadot Parachains
@@ -9255,6 +9451,7 @@
   it: Polkadot VS Ethereum 2.0
   ru: Polkadot VS Ethereum 2.0
   uk: Polkadot VS Ethereum 2.0
+  de: Polkadot VS Ethereum 2.0
 - alias: Open questions of teleology and Mises' work
   az: Teleologiya və Mizesin işinin açıq sualları
   en: Open questions of teleology and Mises' work
@@ -9262,6 +9459,7 @@
   it: Domande aperte di teleologia e il lavoro di Mises
   ru: Открытые вопросы телеологии и работа Мизесаr
   uk: Відкриті питання телеології та творчість Мізеса
+  de: Offene Fragen der Teleologie und Mises' Werk
 - alias: Read chapter 1 on the Robonomics website
   az: 1-ci fəsli oxuyun
   en: Read chapter 1
@@ -9269,6 +9467,7 @@
   it: Leggi il capitolo 1
   uk: Прочитайте розділ 1 
   ru: ЧИТАТЬ ГЛАВУ 1
+  de: Lesen Sie Kapitel 1
 - alias: Chapter 2.
   az: FƏSİL 2.
   en: Chapter 2.
@@ -9276,6 +9475,7 @@
   it: Capitolo 2.
   ru: ГЛАВА 2.
   uk: Розділ 2. 
+  de: Kapitel 2. 
 - alias: ROBONOMICS ARCHITECTURE wp
   az: ROBONOMİKA ARXITEKTURASI
   en: ROBONOMICS ARCHITECTURE
@@ -9283,6 +9483,7 @@
   it: L'ARCHITETTURA DI ROBONOMICS
   uk: АРХІТЕКТУРА РОБОНОМІКИ
   ru: " АРХИТЕКТУРА РОБОНОМИКИ\r"
+  de: ROBONOMICS-ARCHITEKTUR
 - alias: In the second chapter, you will read about human-machine interaction using
     modern Internet technology - from IoT devices to a decentralized and globally
     accessible network of providers. We will look at the basics of the Internet of
@@ -9314,6 +9515,7 @@
     \ и ключевые вызовы, с которыми сталкиваются создатели IoT-систем и на решение\
     \ которых направлена Робономика. \r"
   uk: У другому розділі ви прочитаєте про взаємодію «людина-машина» за допомогою сучасних інтернет-технологій — від пристроїв IoT до децентралізованої та глобально доступної мережі провайдерів. Ми розглянемо основи Інтернету речей, щоб висвітлити проблеми та основні виклики, з якими стикаються творці систем IoT і на вирішення яких спрямована Робономіка.
+  de: Im zweiten Kapitel lesen Sie über die Interaktion zwischen Mensch und Maschine mit Hilfe moderner Internettechnologie - von IoT-Geräten bis hin zu einem dezentralen und weltweit zugänglichen Netz von Anbietern. Wir werden uns mit den Grundlagen des IoT´s befassen um die Probleme und größten Herausforderungen zu beleuchten mit denen die Entwickler von IoT-Systemen konfrontiert sind und auf deren Lösung Robonomics abzielt.
 - alias: Overview of the state of the Internet of Things (IoT)
   az: Əşyaların İnternetinin (IoT) vəziyyətinə baxış
   en: Overview of the state of the Internet of Things (IoT)
@@ -9321,6 +9523,7 @@
   it: Panoramica sullo stato dell'Internet of Things (IoT)
   uk: Огляд стану Інтернету речей (IoT)
   ru: 'Обзор состояния Интернета вещей '
+  de: Überblick über den Stand "Internet of Things" (IoT)
 - alias: Classification of IoT devices
   az: IoT cihazlarının təsnifatı
   en: Classification of IoT devices
@@ -9328,6 +9531,7 @@
   it: Classificazione dei dispositivi IoT
   uk: Класифікація пристроїв IoT
   ru: "Классификация IoT-устройств\r"
+  de: Klassifizierung der IoT-Geräte
 - alias: Embedded IoT systems
   az: Quraşdırılmış IoT sistemləri
   en: Embedded IoT systems
@@ -9335,6 +9539,7 @@
   it: Sistemi IoT embedded
   uk: Вбудовані системи IoT
   ru: "Встраиваемые IoT-системы\r"
+  de: Eingebettete IoT Systeme
 - alias: 'Edge-systems: IoT gateways and controllers'
   az: 'Edge sistemləri: IoT şlüzləri və nəzarətçiləri'
   en: 'Edge-systems: IoT gateways and controllers'
@@ -9342,6 +9547,7 @@
   it: 'Edge-systems: Gateway e controller IoT'
   ru: "Edge-системы: IoT-шлюзы и контроллеры\r"
   uk: 'Edge-системи: шлюзи та контролери IoT'
+  de: 'Edge-Systeme: IoT-Gateways und -Steuerungen'
 - alias: Autonomous Systems
   az: Avtonom sistemlər
   en: Autonomous Systems
@@ -9349,6 +9555,7 @@
   it: Sistemi Autonomi
   uk: Автономні системи
   ru: "Автономные системы\r"
+  de: Autonome Systeme
 - alias: Internet of Things providers
   az: Əşyaların İnterneti təminatçıları
   en: Internet of Things providers
@@ -9356,6 +9563,7 @@
   it: Fornitori di Internet of Things
   uk: Провайдери Інтернету речей
   ru: "Провайдеры Интернета вещей\r"
+  de: Internet of Things providers
 - alias: Digital twins are the heart of the Internet of Things
   az: Rəqəmsal əkizlər Əşyaların İnternetinin ürəyidir
   en: Digital twins are the heart of the Internet of Things
@@ -9363,6 +9571,7 @@
   it: I digital twin sono il cuore dell'Internet of Things
   uk: Цифрові двійники — серце Інтернету речей
   ru: "Цифровые двойники — сердце Интернета вещей\r"
+  de: Digital Twins sind das Herzstück von IoT (Internet of Things)
 - alias: IoT data flows in cloud service
   az: IoT məlumatları bulud xidmətində axır
   en: IoT data flows in cloud service
@@ -9370,6 +9579,7 @@
   it: Flussi di dati IoT nel servizio cloud
   uk: Потоки даних IoT у хмарному сервісі
   ru: "Потоки IoT-данных в облачных сервисах\r\r"
+  de: IoT-Datenströme in einem Cloud-Service
 - alias: Popular examples of IoT solutions
   az: IoT həllərinin məşhur nümunələri
   en: Popular examples of IoT solutions
@@ -9377,6 +9587,7 @@
   it: Esempi popolari di soluzioni IoT
   uk: Популярні приклади рішень IoT
   ru: " Популярные примеры IoT-решений\r\r"
+  de: Beliebte Beispiele für IoT-Lösungen
 - alias: Current problems of building IoT solutions
   az: IoT həllərinin qurulmasının aktual problemləri
   en: Current problems of building IoT solutions
@@ -9384,6 +9595,7 @@
   it: Problemi attuali nella creazione di soluzioni IoT
   uk: Актуальні проблеми побудови IoT рішень
   ru: "Актуальные проблемы построения IoT-решений\r\r"
+  de: Aktuelle Probleme beim Aufbau von IoT-Lösungen
 - alias: Main tasks of Robonomics architecture
   az: Robonimikanın arxitekturasının əsas vəzifələri
   en: Main tasks of Robonomics architecture
@@ -9391,6 +9603,7 @@
   it: Principali compiti dell'architettura Robonomics
   uk: Основні завдання архітектури Робономіки
   ru: "Основные задачи архитектуры Робономики\r\r"
+  de: Hauptaufgaben der Robonomics-Architektur
 - alias: Basic components of Robonomics architecture
   az: Robonimikanın arxitekturasının əsas komponentləri
   en: Basic components of Robonomics architecture
@@ -9398,6 +9611,7 @@
   it: Componenti di base dell'architettura Robonomics
   uk: Основні компоненти архітектури Робономіки
   ru: "Базовые компоненты архитектуры Робономики\r\r"
+  de: Grundlegende Komponenten der Robonomics-Architektur
 - alias: A simple representation of Robonomics architecture
   az: Robonimika arxitekturasının sadə bir təqdimatı
   en: A simple representation of Robonomics architecture
@@ -9405,6 +9619,7 @@
   it: Una semplice rappresentazione dell'architettura Robonomics
   uk: Просте представлення архітектури Робономіки
   ru: "Простое представление архитектуры Робономики\r\r"
+  de: Eine einfache Darstellung der Robonomics-Architektur
 - alias: Read chapter 2 on the Robonomics website
   az: ' 2-ci fəsli oxuyun'
   en: Read chapter 2
@@ -9412,6 +9627,7 @@
   it: Leggi il capitolo 2
   ru: ЧИТАТЬ ГЛАВУ 2
   uk: Прочитайте розділ 2 
+  de: Lesen Sie Kapitel 2
 - alias: We continue to update the white paper of Robonomics
   az: Robonimikanın white paper-ı yeniləməyə davam edirik
   en: We continue to update the white paper of Robonomics
@@ -9419,6 +9635,7 @@
   it: Il whitepaper di Robonomics è in continuo aggiornamento
   ru: "Мы продолжаем дополнять белую бумагу Робономики"
   uk: Ми продовжуємо оновлювати white paper Робономіки
+  de: Wir aktualisieren weiterhin das White Paper von Robonomics
 - alias: stay tuned for new parts on our website and in Discord
   az: saytımızda və Discord-da yeni hissələr üçün bizi izləməyə davam edin
   en: stay tuned for new parts on our website and in Discord
@@ -9426,6 +9643,7 @@
   it: restate sintonizzati sul nostro sito web e su Discord per le nuove parti
   ru: "следите за выходом новых частей на сайте и в Discord"
   uk: 'слідкуйте за новими частинами на нашому веб-сайті та в Discord'
+  de: Bleibt dran für aktuelle Informationen auf unserer Website und in Discord
 - alias: JOIN OUR DISCORD
   az: DISCORD-UMUZA QOŞULUN
   en: JOIN OUR DISCORD
@@ -9433,6 +9651,7 @@
   it: UNISCITI AL NOSTRO DISCORD
   ru: JOIN OUR DISCORD
   uk: ПРИЄДНУЙТЕСЯ ДО НАШОГО DISCORD
+  de: UNSEREM DISCORD BEITRETEN
 - alias: Important news & announcements
   en: Important news & announcements
   ru: Важные новости и анонсы
