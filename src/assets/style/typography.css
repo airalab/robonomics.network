@@ -129,6 +129,7 @@ ol li {
 
 a:not(.button), .link:not(.button) {
   color: var(--color-link);
+  text-decoration: none;
   transition: all .2s, color .2s;
 }
 
