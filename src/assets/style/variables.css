@@ -42,6 +42,7 @@ body {
 	--color-violet-dark: #00bdff; 
 	--color-purple: #221363;
 	--color-purple-dark: #1A1341;
+	--color-grey-lights: #E5E7ED;
 
  	--body-bg: var(--color-light);
 	--header-bg: #fff;
@@ -106,6 +107,7 @@ body.dark-theme {
 	--color-gray-mid: rgb(143, 143, 143);
 	--color-gray-dark: #b0b0b0;
 	--color-gray-light: #212121;
+	--color-grey-lights: #3b3b3b;
 
 	--color-gradient-purpleblue: linear-gradient(#2e576a, var(--color-purple));
 	--color-gradient-marketplace:  linear-gradient(	#696a6aa6, #03a7ed11);
