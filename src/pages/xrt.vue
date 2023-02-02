@@ -144,7 +144,7 @@ query {
     .token {
         margin: 0;
         padding-bottom: calc(var(--space) * 2);
-        background-color: #E5E7ED;
+        background-color: var(--color-grey-lights);
     }
 
     .token__subtitle {
