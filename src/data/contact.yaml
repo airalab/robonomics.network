@@ -27,6 +27,9 @@
       text: 'Español'
     - link: 'https://t.me/robonomicsfr'
       text: 'Français '
+    - link: 'https://t.me/Robonomics_ITA'
+      text: 'Italiano'
+
 
 - title: 'Element (Riot), Robonomics technical'
   description: 'Technical questions & other insides.'
