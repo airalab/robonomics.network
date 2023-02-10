@@ -164,7 +164,7 @@
 
     }
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 510px) {
         .open .nav-content {
             columns: 1;
             text-align: left;
