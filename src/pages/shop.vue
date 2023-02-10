@@ -29,7 +29,7 @@
           :image="product.image"
           :classImage="product.class"
         />
-        <g-link class="shop__link" to="https://robonomics.threadless.com/">SHOP NOW</g-link>
+        <g-link class="shop__link" to="https://robonomics.threadless.com/">Shop now on threadless</g-link>
       </div>
 
       <g-link to="https://robonomics.threadless.com/" class="shop-circle shop-circle-1">
@@ -39,6 +39,20 @@
       <g-link  to="https://robonomics.threadless.com/" class="shop-circle shop-circle-2">
         <g-image src="@/assets/images/shop-circle-2.png" alt="product"/>
       </g-link>
+
+      <div class="shop-printdirect">
+        <div class="shop-printdirect__map">
+          <g-image src="@/assets/images/shop-map.svg" aria-hidden="true" alt="map"/>
+        </div>
+        <g-link to="https://robonomics.printdirect.ru" class="shop-printdirect__circle">
+          <g-image src="@/assets/images/shop-printdirect.svg"  alt="printdirect"/>
+          <span>для заказов <br/> на&nbsp;территории России</span>
+        </g-link>
+        <div class="shop-printdirect__arrow">
+          <g-image src="@/assets/images/shop-arrow.svg" aria-hidden="true" alt="map"/>
+          <span>alternative shop</span>
+        </div>
+      </div>
 
     </section>
 
@@ -71,7 +85,7 @@ export default {
 
   .shop {
     position: relative;
-    padding-bottom: calc(var(--space) * 6);
+    padding-bottom: calc(var(--space) * 10);
     background-color: transparent;
     overflow: hidden;
   }
@@ -114,7 +128,7 @@ export default {
   }
 
   .shop__link {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 4;
     justify-self: self-start;
     padding: 1rem 1.5rem;
@@ -155,6 +169,54 @@ export default {
     border-radius: 100%;
   }
 
+  .shop-printdirect {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    min-width: 380px;
+  }
+
+  .shop-printdirect__circle {
+    position: absolute;
+    bottom: -50px;
+    width: 369px;
+    height: 369px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 4px solid var(--color-blue);
+  }
+
+  .shop-printdirect__circle span {
+    font-size: var(--base-font-size);
+    color: var(--color-blue);
+    text-align: center;
+  }
+
+  .shop-printdirect__map {
+    position: absolute;
+    bottom: -18px;
+    left: -106px;
+  }
+
+  .shop-printdirect__arrow {
+    position: absolute;
+    bottom: 4px;
+    right: -67px;
+  }
+
+  .shop-printdirect__arrow span {
+    position: absolute;
+    max-width: 145px;
+    font-family: var(--font-family-code);
+    font-size: var(--base-font-size);
+    bottom: 63px;
+    right: -85px;
+  }
+
   @media screen and (max-width: 1660px) {
     .shop-circle {
       max-width: 350px;
@@ -171,10 +233,16 @@ export default {
     }
   }
 
+  @media screen and (max-width: 1300px) {
+    .shop {
+      padding-bottom: calc(var(--space) * 11);
+    }
+  }
+
   @media screen and (max-width: 990px) {
 
     .shop {
-      padding-bottom: calc(var(--space) * 4);
+      padding-bottom: calc(var(--space) * 14);
     }
 
     .shop-circle {
@@ -210,13 +278,31 @@ export default {
     .shop__grid .shop__item:nth-child(7) {
       grid-column: 2;
     }
+
+    .shop-printdirect {
+      left: 50%;
+      right: unset;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+
+    .shop {
+      padding-bottom: calc(var(--space) * 10);
+    }
+    .shop-printdirect {
+      min-width: 272px;
+    }
+    .shop-printdirect__circle {
+      bottom: -29px;
+      width: 272px;
+      height: 272px;
+      padding: 2rem;
+    }
   }
 
   @media screen and (max-width:570px) {
-
-    .shop {
-      padding-bottom: calc(var(--space) * 3);
-    }
 
     .grid-3 { grid-template-columns: 1fr; }
 
@@ -232,8 +318,23 @@ export default {
       grid-row: unset;
     }
 
+    .shop-printdirect__arrow span {
+      display: none;
+    }
+
   }
 
+  @media screen and (max-width:450px) {
+    .shop {
+      padding-bottom: calc(var(--space) * 17);
+    }
+  }
+
+  /* dark theme */
+  .dark-theme .shop-printdirect__map,
+  .dark-theme .shop-printdirect__arrow img  {
+    filter: invert(66%);
+  }
   
 
 </style>

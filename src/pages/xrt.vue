@@ -8,25 +8,24 @@
         />
 
 
-        <section class="token">
+        <section class="token section__blue">
             <div class="token__main-title title-with-bg">
                 <h1><span>Robonomics tokenomics</span></h1>
             </div>
             <div class="layout token__top">
                 <div class="grid-2 token__intro">
                     <p>
-                        <span class="bold"><span class="token__big-text">XRT</span> is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.</span>
+                        <b><span class="token__big-text">XRT</span> is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.</b>
                         The task of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network. 
                     </p>
                     <div class="token__parallax parallax-wrap">
                         <div id="parallax" aria-hidden="true">
-                            <div class="parallax-layer" data-depth="0.1"><g-image id="parallax-7" alt="" src="~/assets/images/parallax-parts/xrt-robots-7.png" /></div>
-                            <div class="parallax-layer" data-depth="0.9"><g-image id="parallax-1" alt="" src="~/assets/images/parallax-parts/xrt-robots-1.png" /></div>
-                            <div class="parallax-layer" data-depth="0.4"><g-image id="parallax-5" alt="" src="~/assets/images/parallax-parts/xrt-robots-5.png" /></div>
-                            <div class="parallax-layer" data-depth="0.7"><g-image id="parallax-3" alt="" src="~/assets/images/parallax-parts/xrt-robots-3.png" /></div>
+                            <div class="parallax-layer" data-depth="0.1"><g-image id="parallax-7" alt="" src="~/assets/images/parallax-parts/xrt-robots-7.svg" /></div>
+                            <div class="parallax-layer" data-depth="0.9"><g-image id="parallax-1" alt="" src="~/assets/images/parallax-parts/xrt-robots-1.svg" /></div>
+                            <div class="parallax-layer" data-depth="0.4"><g-image id="parallax-5" alt="" src="~/assets/images/parallax-parts/xrt-robots-5.svg" /></div>
+                            <div class="parallax-layer" data-depth="0.7"><g-image id="parallax-3" alt="" src="~/assets/images/parallax-parts/xrt-robots-3.svg" /></div>
                         </div>
                     </div>
-                    <div><g-image id="banner-token" alt="" src="~/assets/images/parallax-parts/xrt-robots-7.png" /></div>
                 </div>
                 <p class="text-abstract token__text-abstract">Be aware of scammers: please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our <g-link :to="twitter[0].options[0].link">Twitter</g-link> for official updates. Be carefull, be safe.</p>
             </div>
@@ -104,6 +103,21 @@
             </section>
         </section>
 
+        <section class="layout layout__text xrt-questions animate-inside" v-in-viewport.once>
+                <h2>Other questions</h2>
+
+                <div class="xrt-polkadot__info">
+                    <h3 class="token__subtitle">What is RWS?</h3>
+                    <p>[Under development of core functionality] For engineers, Core Dev team will try to make different Robonomics usage models and the first step in this way is launching lifetime subscription token - RWS token. Each RWS token will give you 1 transaction per second (tps) from/to your IoT device over Robonomics Parachain. Activate your RWS token and make "free gas" transactions with prior to execute and predictable latency. Deactivate RWS token and trade it on DEX.</p>
+                </div>
+
+                <div class="xrt-polkadot__info">
+                    <h3 class="token__subtitle">What is AIRA/AIR ID?</h3>
+                    <p>Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens was connected to created infrastructure of the project through <g-link to="https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/AbstractAmbix.sol">ambix smart contract</g-link> which guaranteed autonomous and independent process of swapping pre-XRT to ERC-20 XRT.</p>
+                </div>
+
+            </section>
+
     </layout>
 </template>
 
@@ -144,7 +158,7 @@ query {
     .token {
         margin: 0;
         padding-bottom: calc(var(--space) * 2);
-        background-color: var(--color-grey-lights);
+        /* background-color: var(--color-grey-lights); */
     }
 
     .token__subtitle {
@@ -158,7 +172,7 @@ query {
 
     .token__top {
         margin-top: 0;
-        max-width: 1480px;
+        max-width: 1300px;
         padding-top: calc(var(--space) * 2);
         overflow: hidden
     }
@@ -172,12 +186,16 @@ query {
 
     .token__intro {
         padding-top: var(--space);
+        align-content: end;
+        gap: calc(var(--space) * 3);
         /* padding-bottom: var(--space);
         margin-bottom: 52px; */
     }
 
     .token__intro p {
-        margin-right: var(--space);
+        /* margin-right: var(--space); */
+        align-self: end;
+        padding-bottom: 100px;
     }
 
     .token__text-abstract {
@@ -188,6 +206,16 @@ query {
 
     .token__big-text {
         font-size: 180%;
+    }
+
+    .section__blue a {
+        color: #75FBFD;
+        font-weight: 600;
+        transition: opacity 0.33s ease-in-out;
+    }
+
+    .section__blue a:hover {
+        opacity: 0.7;
     }
 
     @media screen and (min-width: 700px) {
@@ -313,17 +341,19 @@ query {
         margin-bottom: var(--space);
     }
 
+    .xrt-questions {
+        margin-top: calc( var(--space) * 4);
+    }
+
     @media screen and (max-width: 1300px) {
         .token__intro {
-            /* grid-template-columns: 1fr;
-            gap: calc(var(--space) * 2); */
-            display: flex !important;
-            align-items: center;
-            flex-direction: column;
+            grid-template-columns: minmax(0, 1fr);
+            gap: calc(var(--space) * 2);
         }
 
         .token__intro p {
             margin-right: 0;
+            padding-bottom: 0;
         }
 
         .token__parallax {
@@ -345,17 +375,38 @@ query {
     }
 
     @media screen and (max-width: 580px) {
-        .parallax-wrap {
-            display: none;
+
+        #parallax {
+            width: 430px;
+            height: 338px;
         }
 
-         #banner-token {
-            display: block;
-            margin-bottom: var(--space);
-        }    
+        .parallax-wrap {
+            grid-row: 1;
+        }
+
+        #parallax-5 {
+            width: 232px;
+            right: 31px;
+            top: 105px;
+        }
         
         .token__intro {
             gap: var(--space);
+        }
+    }
+
+    @media screen and (max-width: 395px) {
+
+
+        #parallax-5 {
+            right: 99px;
+        }
+
+        #parallax-7 {
+            width: 177px;
+            left: 0;
+            top: -23px;
         }
     }
 </style>
