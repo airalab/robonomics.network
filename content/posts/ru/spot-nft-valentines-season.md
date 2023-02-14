@@ -34,7 +34,7 @@ import Abstract from '~/components/TextAbstract.vue'
 
 ## Фильм на вечер и обсуждение за бокалом
 
-Если вас заинтересовал этический вопрос, которые поднимает любовь современных собак из NFT-коллекции Robonomics, то обратите внимание на фильм [Она (2013)](https://www.kinopoisk.ru/film/577488/) and the old film [Двухсотлетний человек (1999)](https://www.kinopoisk.ru/film/7640/) – обе картины прекрасно подойдут для просмотра в вечер 14 февраля.
+Если вас заинтересовал этический вопрос, которые поднимает любовь современных собак из NFT-коллекции Robonomics, то обратите внимание на фильм [Она (2013)](https://www.kinopoisk.ru/film/577488/) и старую ленту [Двухсотлетний человек (1999)](https://www.kinopoisk.ru/film/7640/) – обе картины прекрасно подойдут для просмотра в вечер 14 февраля.
 
 Ну и, конечно, давайте обсудим!
 
@@ -42,4 +42,4 @@ import Abstract from '~/components/TextAbstract.vue'
 
 Присоединяйтесь к обсуждению в [Discord](https://discord.gg/dyFgwHfCN7)!
 
-<g-link :style="{textAlign: 'center', display: 'block' }" to="https://singular.app/collectibles/kusama/b437f70371c8622e02-MBVD-2023/16627505-b437f70371c8622e02-MBVD-2023-MBVD-2023-00000006">Приобрести NFT</g-link>
+<g-link :style="{textAlign: 'center', display: 'block' }" to="https://spot.merklebot.com/">Нарисовать NFT вместе со Spot</g-link>
