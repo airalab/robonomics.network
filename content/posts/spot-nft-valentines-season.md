@@ -41,4 +41,4 @@ Can there be an emotional connection between humans and robots? How should human
 
 Join the discussion on [Discord](https://discord.gg/dyFgwHfCN7)!
 
-<g-link :style="{textAlign: 'center', display: 'block' }" to="https://singular.app/collectibles/kusama/b437f70371c8622e02-MBVD-2023/16627505-b437f70371c8622e02-MBVD-2023-MBVD-2023-00000006">Buy NFT</g-link>
+<g-link :style="{textAlign: 'center', display: 'block' }" to="https://spot.merklebot.com/">Create NFT together with Spot</g-link>
