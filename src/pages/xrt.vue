@@ -83,7 +83,7 @@
 
                     <div class="token__graph">
                         <g-image alt="graph" src="@/assets/images/xrt-graph.png"/>
-                        <g-link to="https://ipfs.io/ipfs/QmYjv65UNTM3F7LFR1ESm5CVMLWYLagwtT7qGAsaBi47nY/releases_March'21_4v.pdf"  class="link-btn">XRT token distribution</g-link>
+                        <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="link-btn">XRT token distribution Feb 2023</g-link>
                     </div>
 
                     <p class="xrt-polkadot__text">Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.</p>
