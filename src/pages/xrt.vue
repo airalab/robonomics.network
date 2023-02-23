@@ -20,10 +20,10 @@
                     </p>
                     <div class="token__parallax parallax-wrap">
                         <div id="parallax" aria-hidden="true">
-                            <div class="parallax-layer" data-depth="0.1"><g-image id="parallax-7" alt="" src="~/assets/images/parallax-parts/xrt-robots-7.svg" /></div>
-                            <div class="parallax-layer" data-depth="0.9"><g-image id="parallax-1" alt="" src="~/assets/images/parallax-parts/xrt-robots-1.svg" /></div>
-                            <div class="parallax-layer" data-depth="0.4"><g-image id="parallax-5" alt="" src="~/assets/images/parallax-parts/xrt-robots-5.svg" /></div>
-                            <div class="parallax-layer" data-depth="0.7"><g-image id="parallax-3" alt="" src="~/assets/images/parallax-parts/xrt-robots-3.svg" /></div>
+                            <div class="parallax-layer" data-depth="0.1"><g-image immediate id="parallax-7" alt="" src="~/assets/images/parallax-parts/xrt-robots-7.svg" /></div>
+                            <div class="parallax-layer" data-depth="0.9"><g-image immediate id="parallax-1" alt="" src="~/assets/images/parallax-parts/xrt-robots-1.svg" /></div>
+                            <div class="parallax-layer" data-depth="0.4"><g-image immediate id="parallax-5" alt="" src="~/assets/images/parallax-parts/xrt-robots-5.svg" /></div>
+                            <div class="parallax-layer" data-depth="0.7"><g-image immediate id="parallax-3" alt="" src="~/assets/images/parallax-parts/xrt-robots-3.svg" /></div>
                         </div>
                     </div>
                 </div>
@@ -81,10 +81,10 @@
                         </g-link>
                     </div>
 
-                    <div class="token__graph">
+                    <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph">
                         <g-image alt="graph" src="@/assets/images/xrt-graph.png"/>
-                        <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="link-btn">XRT token distribution Feb 2023</g-link>
-                    </div>
+                        <span class="link-btn">XRT token distribution Feb 2023</span>
+                    </g-link>
 
                     <p class="xrt-polkadot__text">Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.</p>
 
@@ -331,6 +331,11 @@ query {
         width: 257px;
         height: 257px;
         margin-bottom: var(--space);
+    }
+
+    .token__graph span {
+        font-family: var(--font-family-code);
+        text-align: center;
     }
 
     .xrt-polkadot__info h3 {
