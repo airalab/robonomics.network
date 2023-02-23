@@ -4,7 +4,7 @@
 
     <MetaInfo
       pageTitle = "Robonomics art shop"
-      pageDescription = "'Useful products with our unique designs made by Robonomics artists with love. Shop online."
+      pageDescription = "Useful products with our unique designs made by Robonomics artists with love. Shop online."
       :pageImage = "'/website_cover_shop.jpg'"
     />
 
