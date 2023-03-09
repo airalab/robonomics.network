@@ -1,10 +1,10 @@
 <template>
 
-  <ul class="ul-nostyle grid-3"  v-if="assets">
+  <ul class="ul-nostyle grid-3"  v-if="assets && allTelegrams.length">
     <li class="share" :class="classes" v-for="(asset, key) in assets" :key="key" v-if="asset.title != 'Telegram chat'">
       <ShareItem :asset=asset />
     </li>
-    <li v-if="allTelegrams[0].options" class="share " :class="classes" v-for="contact in allTelegrams[0].options" :key="contact.text">
+    <li  class="share " :class="classes" v-for="contact in allTelegrams[0].options" :key="contact.text">
       <TelegramItem v-if="allTelegrams" :asset="allTelegrams" :contact="contact"/>  
     </li>
 
@@ -29,14 +29,10 @@ export default {
 
   props: {
     assets: { type: Array, default: () => [] },
-    classes: ''
+    classes: '',
+    allTelegrams: { type: Array, default: () => [] },
   },
 
-  computed: {
-    allTelegrams() {
-      return this.assets.filter(asset => asset.title === 'Telegram chat')
-    }
-  }
 
 }
 </script>

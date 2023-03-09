@@ -72,7 +72,7 @@
       </div>
       
       <div class="contact__wrapper">
-        <share :assets="contact"/>
+        <share :assets="contact" :allTelegrams="allTelegrams"/>
       </div>
 
     </section>
@@ -106,6 +106,10 @@
     computed: {
       contact () {
         return contact
+      },
+
+      allTelegrams() {
+        return this.contact.filter(asset => asset.title === 'Telegram chat')
       }
     },
 
