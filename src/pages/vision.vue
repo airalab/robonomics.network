@@ -314,14 +314,14 @@
         </div>
       </section>
 
-      <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
+      <!-- <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
 
-        <!-- <div class="vision-fathers-image">
+        <div class="vision-fathers-image">
           <h2>{{$ts(`OPEN QUESTIONS OF TELEOLOGY`)}}</h2>
           <i>{{$ts(`Inspired by Norbert Wiener`)}}</i>
 
           <g-image alt="" src="~/assets/images/person-lugwig-von-mises.png"/>
-        </div> -->
+        </div>
 
         <article class="hyphens">
           <p>{{$ts(`One extremely popular question that still remains open — the goal setting of robots when providing services to people. This is a specific but academically important question. The fact is that human economics often includes factors related to the good faith performance of tasks in a contract, the desire of the parties to achieve a result, and the opportunistic and altruistic behavior of the individual in society. It is difficult to talk about such issues in robotics today, so the developers of Robonomics would like to leave teleological issues open for further study, and focus their attention on the praxeological part of robots’ behavior as economic agents. Regarding goal setting, an early article by Norbert Wiener and his colleagues “Behavior, Purpose and Teleology”, as well as the work of the American economist and philosopher Ludwig von Mises on human activity can be considered as points of reference.`)}}</p>
@@ -330,7 +330,7 @@
         </article>
 
 
-      </section>
+      </section> -->
 
 <!--   TODO move the following code to /src/pages/architecture.vue   -->
 
