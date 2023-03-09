@@ -58,6 +58,10 @@ export default {
 
     onSubmit() {
 
+      if(!this.data_email) {
+        return
+      }
+
 
       this.interval = setInterval(() => {
         this.result = this.$response

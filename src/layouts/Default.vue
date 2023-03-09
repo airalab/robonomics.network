@@ -11,7 +11,7 @@
       <div class="screen-content">
         
         <slot/>
-        <Contacts/>
+        <Contacts v-if="!$route.path.includes('contact')"/>
         <ClientOnly> <Footer/> </ClientOnly>
       </div>
 
