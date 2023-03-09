@@ -4,7 +4,7 @@
     <li class="share" :class="classes" v-for="(asset, key) in assets" :key="key" v-if="asset.title != 'Telegram chat'">
       <ShareItem :asset=asset />
     </li>
-    <li class="share " :class="classes" v-for="contact in allTelegrams[0].options" :key="contact.text">
+    <li v-if="allTelegrams[0].options" class="share " :class="classes" v-for="contact in allTelegrams[0].options" :key="contact.text">
       <TelegramItem v-if="allTelegrams" :asset="allTelegrams" :contact="contact"/>  
     </li>
 
