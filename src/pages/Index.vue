@@ -857,6 +857,7 @@ query {
     },
     beforeDestroy () {
       window.removeEventListener('scroll', this.onScroll)
+      this.$store.commit('TOGGLE_SHOW_HEADER', true)
     }
    
   }
