@@ -145,8 +145,12 @@
 <style scoped>
 
   .layout {
-    max-width: 1040px;
+    /* max-width: 1040px;
+    grid-template-columns: 2fr 1fr; */
+
+    max-width: 1240px;
     grid-template-columns: 2fr 1fr;
+    gap: calc(var(--space) * 2.5);
   }
 
   .show-mobile {
@@ -168,7 +172,7 @@
     max-width: 290.61px;
     max-height: 325.93px;
     bottom: -40px;
-    left: -30px;
+    left: 63px;
   }
 
   .contact__form-img--lines {
@@ -230,10 +234,11 @@
   .contacts__form {
     position: absolute;
     top: 0;
-    right: 0;
+    right: var(--space);
     max-width: 406px;
     width: 100%;
     background-color: #fff;
+    
   }
 
   .contacts__form h3 {
@@ -248,10 +253,14 @@
     font-size: var(--base-font-size);
     font-family: inherit;
     font-weight: 500;
-    color: var(--color-blue);
+    color: #214FDA;
     background-color: #fff;
-    border: 1px solid #000 !important;
+    border: 1px solid #000;
     width: 100%;
+  }
+
+  .dark-theme .contacts__input {
+    border: 1px solid #000;
   }
 
   .contacts__textarea {
@@ -278,18 +287,18 @@
 
   .contacts__label .contacts__input:focus + span,
   .contacts__label .contacts__textarea:focus + span   {
-    color: var(--color-blue);
-  }
-
-  .contacts__textarea:focus,
-  .contacts__input:focus {
-    border: 1px solid var(--color-blue);
+    color: #214FDA;
   } 
 
   .contacts__label .contacts__textarea:focus + span  {
     opacity: 0;
     visibility: hidden;
   } 
+
+  .contacts__textarea:focus,
+  .contacts__input:focus {
+    border: 1px solid var(--color-blue);
+  }
   
   .button {
     width: 100%;
@@ -329,6 +338,16 @@
   @media screen and (max-width: 1660px) {
     .contact__form-img {
       bottom: -7px;
+    }
+  }
+
+
+  @media screen and (max-width: 1250px) {
+    .layout {
+      gap: var(--space);
+    }
+
+    .contact__form-img {
       left: 5px;
     }
   }
@@ -344,6 +363,8 @@
       justify-items: center;
     }
 
+
+
     .contact__form {
       width: 100%;
     }
@@ -351,11 +372,12 @@
     .contacts__form {
       max-width: unset;
       width: calc(100% - 220px);
+      right: 0;
     }
 
     .contact__form-img {
       bottom: -7px;
-      left: 5px;
+      left: 0;
     }
   }
 
