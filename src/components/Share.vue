@@ -46,15 +46,15 @@ export default {
   }
 
   li:hover {
-    animation: bounce 1.5s ease infinite;
+    animation: bounce 1s ease infinite;
   }
 
 
   @keyframes bounce {
     0% {transform: translateY(5px);}
     50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
   }
 
   @media screen and (max-width: 1050px) {
