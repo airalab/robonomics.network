@@ -273,7 +273,7 @@
     font-family: var(--font-family-code);
     font-weight: 500;
     color: #000;
-    transition: color 0.33s ease-in-out;
+    transition: color 0.33s ease-in-out, opacity 0.33s ease-in-out, visibility 0.33s ease-in-out;
   }
 
   .contacts__label .contacts__input:focus + span,
@@ -284,6 +284,11 @@
   .contacts__textarea:focus,
   .contacts__input:focus {
     border: 1px solid var(--color-blue);
+  } 
+
+  .contacts__label .contacts__textarea:focus + span  {
+    opacity: 0;
+    visibility: hidden;
   } 
   
   .button {
