@@ -49,7 +49,7 @@ export default {
     display: none;
   }
   .header-logo {
-    padding-left: calc(var(--screen-padding-left) - 9px);
+    padding-left: calc(var(--screen-padding-left) * 0.6);
     /* max-width: 283px;
     width: 100%; */
     /* width: calc( var(--screen-padding-left) - calc(var(--logo-padding)*1.5)); */

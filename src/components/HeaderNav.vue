@@ -47,7 +47,7 @@
         display: none;
         position: fixed;
         z-index: 1012;
-        top: calc(var(--screen-padding-top) - -12px);
+        top: calc(var(--screen-padding-top) - -6px);
         left: 0;
         right: 0;
         bottom: 0;

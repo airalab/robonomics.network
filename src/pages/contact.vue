@@ -3,6 +3,7 @@
 
     <MetaInfo
       pageTitle = "Nav Contact"
+      pageImage = "/website_cover_contacts.png"
     />
 
     <div class="title-with-bg">

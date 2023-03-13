@@ -1,39 +1,57 @@
-- title: 'Book 3 «Robonomics Network R&D», 2021'
-  description: 'Robonomics use cases in one colorful book (.pdf ~ 19 MB).'
-  img: 'docs-book-3.jpg'
+- title: 'R&D,2023'
+  description: 'Updated use cases for connected robots within web3 technologies.'
+  img: 'docs-book-4.png'
   buttonicon: '↗'
   options:
-    - link: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-en.pdf'
-      text: 'Server EN'
-    - link: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-ru.pdf'
-      text: 'Server RU'
-    - link: 'https://gateway.pinata.cloud/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi'
-      text: 'IPFS EN'
-    - link: 'https://gateway.pinata.cloud/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V'
-      text: 'IPFS RU'
-
-
-- title: 'Book «Robot economics», 2017'
-  description: 'We made colorful book explaining the general principles of robot economics (.pdf ~ 11 MB).'
-  img: 'docs-book-1.png'
-  buttonicon: '↗'
-  options:
-    - link: 'http://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-en.pdf'
+    - link: 'https://ipfs.io/ipfs/QmZK64M7M31mkMsDd8yQa1dfX4a4KeDCyaUMsTuzsKq6LC'
       text: 'English'
-    - link: 'http://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-ru.pdf'
-      text: 'Russian'
-    - link: 'http://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-de.pdf'
-      text: 'German'
+      id: 0
+    - link: 'https://ipfs.io/ipfs/QmNsiaWWFw4ZoqAnW5vuTXNz2jwYBu7ShyXSYqU1uNDjrF'
+      text: 'Русский'
+      id: 1
 
 
-- title: 'Book «Robot economics», 2018'
-  description: 'Here we described more specific things about robot economics than in first book (.pdf ~ 22 MB).'
+- title: 'R&D,2021'
+  description: '17 use cases for connected robots within Polkadot and Ethereum.'
+  img: 'docs-book-3.png'
+  buttonicon: '↗'
+  options:
+    - link: 'https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi'
+      text: 'English'
+      id: 0
+    - link: 'https://ipfs.io/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V'
+      text: 'Русский'
+      id: 1
+
+
+- title: 'Book «Robot economics»,2018'
+  description: 'Here, we are explaining the idea of a cyber-physical system, how it can assist with scaling manufacturing, and what to do about the liabilities of robots.'
   img: 'docs-book-2.png'
   buttonicon: '↗'
   options:
-    - link: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-en.pdf'
+    - link: 'https://ipfs.io/ipfs/QmQ3k8p9SQS5wjovPcjUtQceRZZ6nv3Eqirt1vVQ2wP2JL'
       text: 'English'
-    - link: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-ru.pdf'
-      text: 'Russian'
-    - link: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-it.pdf'
-      text: 'Italian'
+      id: 0
+    - link: 'https://ipfs.io/ipfs/QmUqNnzdZnic61UYTuKT9EzBNzMW6jc5uHSFk4Xzd3iM93'
+      text: 'Русский'
+      id: 2
+    - link: 'https://ipfs.io/ipfs/QmXhWarATZNTy3CweoVAdy4aTMrGMCsipo3gPSWVsUyQW6'
+      text: 'Italiano'
+      id: 1
+
+
+
+- title: 'Book «Robot economics»,2017'
+  description: The baseline here is that free economic principles are enough for living in an automated world. Robots can be our friends, and we don't need centralization to make it comfortable and reliable.
+  img: 'docs-book-1.png'
+  buttonicon: '↗'
+  options:
+    - link: 'https://ipfs.io/ipfs/QmWue3YfuZvuRvgcNb4vZuheX9TaZ9E1b8aCdxSoaGTbVN'
+      text: 'English'
+      id: 0
+    - link: 'https://ipfs.io/ipfs/QmUjBPgDzmHFHiDkQAG93szJQguiZiowm9sedFMhPfQP4y'
+      text: 'Русский'
+      id: 2
+    - link: 'https://ipfs.io/ipfs/QmTp3srjo3r1L2TKpAEGFafjdzSCTKJT9kkBEkCQDEF6tz'
+      text: 'Deutsch'
+      id: 1
