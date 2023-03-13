@@ -24,7 +24,7 @@
   export default {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
-      share: () => import('~/components/Share.vue'),
+      share: () => import('~/components/ShareOld.vue'),
     },
 
     computed: {
