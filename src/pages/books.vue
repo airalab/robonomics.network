@@ -98,7 +98,7 @@
           {
             title: 'Autofac',
             author: 'Philip K. Dick',
-            link: '#',
+            link: 'https://duckduckgo.com/?q=Autofac+Philip+K.+Dick&t=h_&ia=web',
             id: 5,
             color: '#9865F7'
           },
@@ -160,6 +160,26 @@
     max-width: calc(1024px + var(--space) * 2);
     margin: 0 auto;
     padding: 0 var(--space);
+  }
+
+  @media screen and (max-width: 990px) {
+    .books-recommendations__list  {
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .books-recommendations__list  {
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      justify-items: center;
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    .books-recommendations__list {
+      grid-template-columns: 1fr;
+    }
   }
 
 </style>
