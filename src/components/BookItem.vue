@@ -1,12 +1,12 @@
 <template>
   <li class="e-books__item">
 
-    <div class="e-books__img">
+    <g-link class="e-books__img" :to="book.options[0].link">
       <g-image :src="require('!!assets-loader!~/assets/images/'+book.img)"/>
-    </div>
+    </g-link>
 
     <div class="e-books__content">
-      <h3>{{ book.title }}</h3>
+      <h3> {{ book.title }} </h3>
       <p>{{ book.description }}</p>
       <div class="e-books__links">
         <g-link
@@ -48,6 +48,8 @@ export default {
     margin-bottom: calc(var(--space) * 0.2);
     font-family: var(--font-family);
     text-align: left;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 
   p {
@@ -59,6 +61,11 @@ export default {
     columns: 2;
     font-weight: 500;
     max-width: 186px;
+  }
+
+
+  .e-books__img {
+    display: block;
   }
 
   @media screen and (max-width: 750px) {

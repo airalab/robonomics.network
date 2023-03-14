@@ -1,6 +1,6 @@
 <template>
   <g-link class="books-recommendations__link" :style="{'backgroundColor': rec.color}" :to="rec.link">
-    <h3>{{ rec.title }}</h3>
+    <strong>{{ rec.title }}</strong>
     <span>{{ rec.author }}</span>
   </g-link>
 </template>
@@ -24,53 +24,39 @@ export default {
     display: block;
     position: relative;
     height: 270px;
-    padding: calc(var(--space) * 0.5);
-    z-index: 5;
-    overflow: hidden;
-  }
-
-  .books-recommendations__link::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+    max-width: 218px;
     width: 100%;
-    height: 100%;
-    background-color: var(--color-blue);
-    transform: translateY(-300px);
-    z-index: -1;
-    transition: transform 0.33s ease-in-out;
-  }
-
-  .books-recommendations__link:hover.books-recommendations__link::after {
-    transform: translateY(0);
-  }
-
-  .books-recommendations__link[href="/#"] {
-    cursor: none;
-    pointer-events: none;
+    padding: calc(var(--space) * 0.5);
+    padding-right: calc(var(--space) * 0.8);
   }
   
 
-  h3 {
+  strong {
     font-size: var(--base-font-size);
-    font-family: var(--font-family);
     color: #fff;
     text-align: left;
     text-transform: none;
     margin: 0;
+    letter-spacing: 0;
   }
 
   span {
     position: absolute;
     font-weight: 300;
     color: #fff;
+    left: calc(var(--space) * 0.5);
     bottom: calc(var(--space) * 0.5);
   }
 
   @media screen and (max-width: 950px) {
-    h3 {
-      font-size: calc( var(--base-font-size) * 1.5)
+    strong {
+      font-size: calc( var(--base-font-size) * 1.3);
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .books-recommendations__link {
+      width: 218px;
     }
   }
 
