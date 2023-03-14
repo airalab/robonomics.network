@@ -177,7 +177,7 @@
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/academy-1.png" />
             </div>
-            <h3>{{$ts('Introduction Course')}}</h3>
+            <h3>{{$ts('Introduction course')}}</h3>
             <p>{{$ts('Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.')}}</p>
           </g-link>
 
@@ -186,7 +186,7 @@
             <div class="img-back spot">
               <g-image aria-hidden="true" src="~/assets/images/academy-2.png" />
             </div>
-            <h3>{{$ts('Boston Dynamics Spot Software Developing')}}</h3>
+            <h3>{{$ts('Boston dynamics spot software developing')}}</h3>
             <p>{{$ts('We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.')}}</p>
           </g-link>
 
@@ -195,7 +195,7 @@
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/academy-3.png" />
             </div>
-            <h3>{{$ts('Sovereign Smart Home with Robonomics and Home Assistant')}}</h3>
+            <h3>{{$ts('Sovereign smart home with robonomics and home assistant')}}</h3>
             <p>{{$ts('In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.')}}</p>
           </g-link>
         </section>
@@ -736,6 +736,10 @@ query {
   .index-getstarted h3,
   .index-academy h3 {
     margin-top: 0; margin-bottom: calc(var(--space) * 0.4)
+  }
+
+  .index-academy .oldy  h3 {
+    text-transform: none;
   }
       
   .index-getstarted .img-back,
