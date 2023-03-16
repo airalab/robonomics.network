@@ -57,6 +57,14 @@
               <span>Tell us something if you want</span>
             </label>
 
+            <input       
+              type="hidden" 
+              placeholder="Location" 
+              data-gsp-name="Location" 
+              :data-gsp-data="location" 
+              v-model="location"
+            />
+
   
             <div class="google-sheets-form__actions">
               <button @click="onSubmit" v-if="result !== 'success'" class="button large"  :disabled="result === 'error' || result === 'wait'">
@@ -98,6 +106,7 @@
         data_email: '',
         data_comment: '',
         result: this.$response,
+        location: '',
         interval: null,
         recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA,
         gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
@@ -139,6 +148,10 @@
           clearInterval(this.interval)
         }
       }
+    },
+
+    mounted() {
+      this.location = 'https://robonomics.network' + this.$route.path;
     }
   }
 </script>

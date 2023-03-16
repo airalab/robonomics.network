@@ -3,7 +3,7 @@ title: 'RMRK x Robonomics Network: Pallet integration and Kanaria rewards'
 date: 2021-12-23
 published: true
 locale: 'en'
-cover_image: ./images/partnership-with-rmrk-announcement/cover.png
+cover_image: ./images/partnership-with-rmrk-announcement/cover.jpg
 description: "Robonomics is thrilled to announce we have partnered with RMRK to bring a robotics theme to the Kanaria project and support RMRK2.0 standards! Kanaria is the most advanced NFT project in the world built on the world’s most advanced NFT protocol: RMRK."
 abstract: "Robonomics is thrilled to announce we have partnered with RMRK to bring a robotics theme to the Kanaria project and support RMRK2.0 standards! Kanaria is the most advanced NFT project in the world built on the world’s most advanced NFT protocol: RMRK."
 tags: ['Robonomics parachain', 'Collaborations']
