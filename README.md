@@ -15,7 +15,6 @@ This website is supposed to contain all useful information for our community.
 
 To start it locally you need install node.js and [Gridsome framework](https://gridsome.org).
 
-
 **Start**
 `npm i`
 
