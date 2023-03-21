@@ -107,4 +107,4 @@ Thus, 22 token holders expressed their interest in participating in Governance 2
 
 ## Results
 
-We consider Robonomics Town Hall 2022 a success in terms of community interest in project development management. The seven million XRT that have been hanging by the sword of Damocles since 2018 will be burned soon. In the coming weeks, the budget for the ROS2 and Home Assistant grants will be allocated and managed by the grant program. Regarding Governance 2.0, as soon as the new governance mechanism is launched in Polkadot and our parachain, we will contact the community and offer to participate in testing it. Stay tuned!
+We consider Robonomics Town Hall 2022 a success in terms of community interest in project development management. The seven million XRT that have been hanging by the sword of Damocles since 2018 will be burned in 2023. In the coming weeks, the budget for the ROS2 and Home Assistant grants will be allocated and managed by the grant program. Regarding Governance 2.0, as soon as the new governance mechanism is launched in Polkadot and our parachain, we will contact the community and offer to participate in testing it. Stay tuned!
