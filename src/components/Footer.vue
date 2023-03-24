@@ -5,7 +5,7 @@
 
         <div>
           <ul class="animate-inside" v-in-viewport.once>
-            <li><g-link to="/white-paper-2022">{{$ts('White Paper 2022')}}</g-link></li>
+            <li><g-link to="/white-paper">{{$ts('White Paper 2022')}}</g-link></li>
             <li><g-link to="/timeline">{{$ts('Timeline')}}</g-link></li>
             <li><g-link to="/xrt">{{$ts('Tokenomics')}}</g-link></li>
             <li><g-link to="/kusama-slot">{{$ts('Parachain')}}</g-link></li>
