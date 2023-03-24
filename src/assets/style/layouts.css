@@ -183,6 +183,11 @@
 	}
 
 
+	.layout__mid {
+		max-width: calc(var(--mid-width) + (var(--space) * 2));
+	}
+
+
 .fade-enter-active {
 	transition: opacity .5s;
 }

@@ -18,7 +18,7 @@
             <li class="new-column"><g-link to="/shop">{{$ts('Shop')}}</g-link></li>
             <li><g-link to="/books">{{$ts('Books')}}</g-link></li>
             <li><g-link to="/logos-and-assets">{{$ts('Logo and assets')}}</g-link></li>
-            <!-- <li><g-link to="/nft">NFT</g-link></li> -->
+            <li><g-link to="/nft">NFT</g-link></li>
             <li ><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
             <li><g-link to="/ambassador-program">{{$ts('Ambassador program')}}</g-link></li>
             <li><g-link to="/contact">{{$ts('Contacts')}}</g-link></li>

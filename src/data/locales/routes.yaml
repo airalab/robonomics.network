@@ -57,3 +57,7 @@
 - path: '/shop/'
   component: './src/pages/shop.vue'
   typename: 'page'
+
+- path: '/nft/'
+  component: './src/pages/nft.vue'
+  typename: 'page'
