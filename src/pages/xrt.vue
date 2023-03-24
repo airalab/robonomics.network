@@ -7,84 +7,105 @@
             pageImageHeight = "650" 
         />
 
+        <section class="top-part">
+            <section class="token section__blue">
+                <div class="token__main-title title-with-bg">
+                    <h1><span>Robonomics tokenomics</span></h1>
+                </div>
+                <div class="layout token__top">
+                    <div class="grid-2 token__intro">
+                        <p>
+                            <b><span class="token__big-text">XRT</span> is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.</b>
+                        </p>
+    
+                        <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph">
+                            <div class="token__graph-arrow">
+                                <span>Token distribution</span>
+                                <g-image alt="graph" src="@/assets/images/xrt-arrow.svg"/>
+                            </div>
+                            <div class="graph-img">
+                                <XRTGraph v-in-viewport.once/>
+                            </div>
+                        </g-link>
 
-        <section class="token section__blue">
-            <div class="token__main-title title-with-bg">
-                <h1><span>Robonomics tokenomics</span></h1>
-            </div>
-            <div class="layout token__top">
-                <div class="grid-2 token__intro">
-                    <p>
-                        <b><span class="token__big-text">XRT</span> is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.</b>
-                        The task of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network. 
-                    </p>
-                    <div class="token__parallax parallax-wrap">
-                        <div id="parallax" aria-hidden="true">
-                            <div class="parallax-layer" data-depth="0.1"><g-image immediate id="parallax-7" alt="" src="~/assets/images/parallax-parts/xrt-robots-7.svg" /></div>
-                            <div class="parallax-layer" data-depth="0.9"><g-image immediate id="parallax-1" alt="" src="~/assets/images/parallax-parts/xrt-robots-1.svg" /></div>
-                            <div class="parallax-layer" data-depth="0.4"><g-image immediate id="parallax-5" alt="" src="~/assets/images/parallax-parts/xrt-robots-5.svg" /></div>
-                            <div class="parallax-layer" data-depth="0.7"><g-image immediate id="parallax-3" alt="" src="~/assets/images/parallax-parts/xrt-robots-3.svg" /></div>
-                        </div>
+                    </div>
+                    <p class="text-abstract token__text-abstract token__bottom-text">The task of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network. </p>
+                </div>
+            </section>
+
+            <section class="pink-block">
+                <div class="layout token__top">
+                    <p class="text-abstract token__text-abstract"> <b>Be aware of scammers</b>:  please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our <g-link :to="twitter[0].options[0].link">Twitter</g-link> for official updates. Be careful, be safe.</p>              
+                </div>
+            </section>
+
+            <section class="xrt-bridge">
+                <div class="layout">
+                    <div class="xrt-bridge__text">
+                        <h2 class="xrt-bridge__title">Crosschain bridge</h2>
+                        <g-link to="https://app.multichain.org/#/router" class=" xrt-bridge__btn link-btn">Try in browser</g-link>
+                    </div>
+
+                    <div class="xrt-bridge__imgs">
+                        <g-image class="xrt-bridge__img-1" src="~/assets/images/xrt-bridge.png" alt="xrt bridge"/>
+                        <g-image class="xrt-bridge__img-2" src="~/assets/images/xrt-eth.png" alt="xrt ethereum"/>
                     </div>
                 </div>
-                <p class="text-abstract token__text-abstract">Be aware of scammers: please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our <g-link :to="twitter[0].options[0].link">Twitter</g-link> for official updates. Be carefull, be safe.</p>
-            </div>
+
+                <div class="nova">
+                    <div class="nova__img">
+                        <g-image src="~/assets/images/xrt-nova.png" alt="nove logo"/>
+                    </div>
+                    <p>Nova Wallet application supports crosschain XRT transfers</p>
+                </div>
+            </section>
         </section>
 
         <section class="layout layout__text xrt-ethereum">
             <h2>XRT in Ethereum</h2>
 
             <section class="animate-inside" v-in-viewport.once>
-                    <div class="oldy dark">
-                        <g-link to="/timeline" class="token__link timeline">
-                            <h3 class="token__subtitle">Timeline</h3>
-                            <p>Read this to know historical background and long-term plans of team for XRT in Ethereum ecosystem.</p>
-                        </g-link>
-                        <g-link to="https://etherscan.io/token/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7" class="token__link enterscan">
-                            <h3 class="token__subtitle">Etherscan profile</h3>
-                            <p>View token smart contract and transactions in Ethereum network here.</p>
-                        </g-link>
-                        <g-link to="https://www.coingecko.com/en/coins/robonomics-network" class="token__link coingecko">
-                            <h3 class="token__subtitle">Coingecko markets</h3>
-                            <p>Here you can find CEX and DEX markets for trading XRT.</p>
-                        </g-link>
-                    </div>
                     <p>Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. We needed to think about the lifecycle of each individual smart device’s liability to perform a service. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with a significant improvements in Ethereum.</p>
             </section>
-        </section>
 
-        <div class="youtube-embed animate-inside" v-in-viewport.once>
-            <div class="youtube-embed__wrapper">
-                <div class="youtube-embed__container">
-                    <iframe width="860" height="480" src="https://www.youtube.com/embed/a2EWaaFcFm8?autoplay=1&mute=1" title="Life cycle in the Robonomics network with the application of observing networks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="youtube-embed animate-inside" v-in-viewport.once>
+                <div class="youtube-embed__wrapper">
+                    <div class="youtube-embed__container">
+                        <iframe width="860" height="480" src="https://www.youtube.com/embed/a2EWaaFcFm8" title="Life cycle in the Robonomics network with the application of observing networks" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
 
+            <div class="youtube-embed animate-inside" v-in-viewport.once>
+                <div class="oldy dark">
+                    <div class="token__link timeline">
+                        <g-link to="/timeline">
+                            <h3 class="token__subtitle">Timeline</h3>
+                        </g-link>
+                        <p>Read this to know historical background and long-term plans of team for XRT in Ethereum ecosystem.</p>
+                    </div>
+                    <div class="token__link enterscan">
+                        <g-link to="https://etherscan.io/token/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7">
+                            <h3 class="token__subtitle">Etherscan profile</h3>
+                        </g-link>
+                        <p>View token smart contract and transactions in Ethereum network here.</p>
+                    </div>
+                    <div class="token__link coingecko">
+                        <g-link to="https://www.coingecko.com/en/coins/robonomics-network" >
+                            <h3 class="token__subtitle">Coingecko markets</h3>
+                        </g-link>
+                        <p>Here you can find CEX and DEX markets for trading XRT.</p>
+                    </div>
+                </div>
+            </div>
+
+    
+        </section>
 
         <section class="layout layout__text xrt-polkadot animate-inside" v-in-viewport.once>
             <h2>XRT In Polkadot</h2>
 
             <section class="animate-inside" v-in-viewport.once>
-                    <div class="oldy dark">
-                        <g-link to="https://dapp.robonomics.network/#/" class="token__link use">
-                            <h3 class="token__subtitle">Use XRT</h3>
-                            <p>Buy IoT subscription in our decentralized application. Control your smart devices over blockchain without any centralized corporation observing.</p>
-                        </g-link>
-                        <g-link to="https://robonomics.subscan.io/" class="token__link subscan">
-                            <h3 class="token__subtitle">Subscan profile</h3>
-                            <p>View token statistics on top of Polkadot ecosystem.</p>
-                        </g-link>
-                        <g-link to="https://www.coingecko.com/en/coins/robonomics-network" class="token__link coingecko">
-                            <h3 class="token__subtitle">Coingecko markets</h3>
-                            <p>Here you can find CEX and DEX markets for trading XRT.</p>
-                        </g-link>
-                    </div>
-
-                    <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph">
-                        <g-image alt="graph" src="@/assets/images/xrt-graph.png"/>
-                        <span class="link-btn">XRT token distribution Feb 2023</span>
-                    </g-link>
 
                     <p class="xrt-polkadot__text">Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.</p>
 
@@ -99,6 +120,29 @@
                     <div class="xrt-polkadot__info">
                         <h3 class="token__subtitle">Rewards:</h3>
                         <p>Throughout the year, the parachain issues a small amount of XRT to incentivize parachain collators. <g-link to="https://robonomics.polkassembly.io/proposal/5"> The parameter of the total reward</g-link> for collators for the year is determined by on-chain voting of token holders, and can be changed by holding a referendum.</p>
+                    </div>
+
+                    <div class="youtube-embed">
+                        <div class="oldy dark">
+                            <div class="token__link use">
+                                <g-link to="https://dapp.robonomics.network/#/">
+                                    <h3 class="token__subtitle">Use XRT</h3>
+                                </g-link>
+                                <p>Buy IoT subscription in our decentralized application. Control your smart devices over blockchain without any centralized corporation observing.</p>
+                            </div>
+                            <div class="token__link subscan">
+                                <g-link to="https://robonomics.subscan.io/">
+                                    <h3 class="token__subtitle">Subscan profile</h3>
+                                </g-link>
+                                <p>View token statistics on top of Polkadot ecosystem.</p>
+                            </div>
+                            <div class="token__link coingecko">
+                                <g-link to="https://www.coingecko.com/en/coins/robonomics-network" >
+                                    <h3 class="token__subtitle">Coingecko markets</h3>
+                                </g-link>
+                                <p>Here you can find CEX and DEX markets for trading XRT.</p>
+                            </div>
+                        </div>
                     </div>
             </section>
         </section>
@@ -116,7 +160,7 @@
                     <p>Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens was connected to created infrastructure of the project through <g-link to="https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/AbstractAmbix.sol">ambix smart contract</g-link> which guaranteed autonomous and independent process of swapping pre-XRT to ERC-20 XRT.</p>
                 </div>
 
-            </section>
+        </section>
 
     </layout>
 </template>
@@ -131,11 +175,11 @@ query {
 
 <script>
     import contacts from '@/data/contact.yaml'
-    import Parallax from 'parallax-js'
 
     export default {
         components: {
             Card: () => import('~/components/TextCard.vue'),
+            XRTGraph: () => import("~/components/XRTGraph.vue"),
             MetaInfo: () => import("~/components/MetaInfo.vue"),
         },
 
@@ -143,21 +187,22 @@ query {
             twitter() {
                 return contacts.filter(item => item.title.toLowerCase() === "twitter");
             }
-        },
-
-        mounted() {
-            var scene = document.getElementById('parallax');
-            var parallaxInstance = new Parallax(scene);
-        },
+        }
     }
 </script>
 
 
 <style scoped>
 
+    .top-part {
+        overflow: hidden;
+        padding-bottom: calc(var(--space) * 4);
+        margin: 0;
+    }
+
     .token {
         margin: 0;
-        padding-bottom: calc(var(--space) * 2);
+        /* padding-bottom: calc(var(--space) * 2); */
         /* background-color: var(--color-grey-lights); */
     }
 
@@ -187,7 +232,9 @@ query {
     .token__intro {
         padding-top: var(--space);
         align-content: end;
+        justify-items: end;
         gap: calc(var(--space) * 3);
+        margin-bottom: calc(var(--space) * 2);
         /* padding-bottom: var(--space);
         margin-bottom: 52px; */
     }
@@ -196,27 +243,79 @@ query {
         /* margin-right: var(--space); */
         align-self: end;
         padding-bottom: 100px;
+        font-size: 132%;
     }
 
     .token__text-abstract {
         font-size: 100%;
         text-align: left;
         font-style: italic;
+        padding-bottom: calc(var(--space) * 2);
+    }
+
+    .token__bottom-text {
+        font-style: normal;
+        font-size: 120%;
     }
 
     .token__big-text {
-        font-size: 180%;
+        font-size: 218%;
     }
 
-    .section__blue a {
+    .pink-block a {
         color: #75FBFD;
         font-weight: 600;
         transition: opacity 0.33s ease-in-out;
+        text-decoration: underline;
     }
 
-    .section__blue a:hover {
+    .pink-block  a:hover {
         opacity: 0.7;
     }
+
+    .token__graph {
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /* justify-content: end; */
+    }
+
+    .graph-img {
+        width: 257px;
+        height: 257px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 100%;
+    }
+
+    .token__graph span {
+        position: absolute;
+        bottom: 96px;
+        left: 0;
+        font-size: var(--base-font-size);
+        font-style: italic;
+        font-weight: 600;
+        color: #75FBFD;
+    }
+
+    .token__graph-arrow {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        max-width: 202px;
+        /* left: 0;
+        bottom: 50px; */
+    }
+
+    .token__graph-arrow img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    
+    
 
     @media screen and (min-width: 700px) {
         .parallax-wrap {
@@ -265,10 +364,107 @@ query {
         top: -42px;
     }
 
+    .pink-block {
+        padding-top: var(--space);
+        padding-bottom: var(--space);
+        background-color: #F34C9A;
+        margin: 0;
+        color: #fff;
+    }
+    .pink-block .layout {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .pink-block p {
+        padding-bottom: 0;
+    }
+
+    .xrt-bridge {
+        position: relative;
+        margin: 0;
+        background-color: var(--color-blue-xrt);
+    }
+
+    .xrt-bridge .layout {
+        max-width: 1300px;
+        display: flex;
+        align-items: center;
+        padding: var(--space);
+        padding-bottom: 0;
+    }
+
+    .xrt-bridge__title {
+        max-width: 396px;
+        width: 100%;
+        letter-spacing: 0;
+        font-weight: 500;
+        font-size: calc(var(--base-font-size) * 2.5);
+        line-height: 1;
+        font-family: var(--font-family);
+        color: var(--color-light);
+        text-align: left;
+    }
+
+    .xrt-bridge__btn {
+        padding: calc(var(--space) * 0.3) calc(var(--space) * 1.5);
+        font-size: calc(var(--base-font-size) * 1.4);
+    }
+
+    .xrt-bridge__text {
+        padding-bottom: calc(var(--space) * 5);
+    }
+
+    .xrt-bridge__imgs {
+        position: relative;
+    }
+
+    .xrt-bridge__img-1 {
+        max-width: 433px;
+        width: 100%;
+        position: relative;
+        bottom: -7px;
+    }
+
+    .xrt-bridge__img-2 {
+        position: absolute;
+        left: -120px;
+        bottom: 5px;
+        max-width: 77px;
+        width: 100%;
+    }
+
+    .nova {
+        position: absolute;
+        right: -60px;
+        bottom: -100px;
+        width: 393px;
+        height: 393px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: var(--space) calc(var(--space) * 2);
+        background-color: var(--color-blue);
+        border-radius: 100%;
+    }
+
+    .nova__img {
+        max-width: 206px;
+        width: 100%;
+        margin-bottom: var(--space);
+    }
+
+    .nova p {
+        color: #fff;
+        font-style: italic;
+    }
+
     .xrt-ethereum .oldy,
     .xrt-polkadot .oldy {
+        padding: calc(var(--space) * 2) calc(var(--space) * 1.5);
         margin-bottom: calc(var(--space) * 3);
     }
+    
 
     .token__link {
         display: inline-block;
@@ -319,25 +515,6 @@ query {
         padding-right: var(--space);
     }
 
-    .token__graph {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: calc(var(--space) * 3);
-    }
-
-    .token__graph img {
-        width: 257px;
-        height: 257px;
-        margin-bottom: var(--space);
-    }
-
-    .token__graph span {
-        font-family: var(--font-family-code);
-        text-align: center;
-    }
-
     .xrt-polkadot__info h3 {
         margin-bottom: calc(var(--space) * 0.2);
     }
@@ -350,7 +527,7 @@ query {
         margin-top: calc( var(--space) * 4);
     }
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1130px) {
         .token__intro {
             grid-template-columns: minmax(0, 1fr);
             gap: calc(var(--space) * 2);
@@ -359,6 +536,11 @@ query {
         .token__intro p {
             margin-right: 0;
             padding-bottom: 0;
+        }
+
+        .token__graph {
+            align-items: center;
+            justify-content: center;
         }
 
         .token__parallax {
@@ -376,6 +558,44 @@ query {
 
             left: 40px;
             top: -42px;
+        }
+
+        .nova {
+            width: 328px;
+            height: 328px;
+        }
+    }
+
+    @media screen and (max-width: 780px) {
+
+        .xrt-bridge  {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: var(--space);
+        }
+
+        .xrt-bridge .layout {
+            flex-direction: column;
+        }
+
+        .xrt-bridge__title {
+            text-align: center;
+        }
+
+        .xrt-bridge__text {
+            padding-bottom: 0;
+            margin-bottom: var(--space);
+        }
+
+        .xrt-bridge__imgs {
+            margin-bottom: var(--space);
+        }
+
+        .nova {
+            position: static;
         }
     }
 
@@ -398,6 +618,17 @@ query {
         
         .token__intro {
             gap: var(--space);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .graph-img {
+            width: 210px;
+            height: 210px;
+        }
+
+        .token__graph-arrow {
+            max-width: 147px;
         }
     }
 
