@@ -6,13 +6,6 @@
     - link: 'https://twitter.com/AIRA_Robonomics'
       text: 'Follow us'
 
-- title: 'Discord'
-  description: 'Chat with us and our community. Feel free to ask any questions and discuss your suggestions.'
-  img: 'contacts-discord-square.svg'
-  buttonicon: '+'
-  options:
-    - link: 'https://discord.gg/JpaN2XAmqY'
-      text: 'Join chat'
 
 - title: 'Youtube'
   description: 'Video tutorials, screencasts, interviews, events.'
@@ -21,6 +14,22 @@
   options:
     - link: 'https://www.youtube.com/c/Airalab'
       text: 'Watch videos'
+
+- title: 'Discord'
+  description: 'Chat with us and our community. Feel free to ask any questions and discuss your suggestions.'
+  img: 'contacts-discord-square.svg'
+  buttonicon: '+'
+  options:
+    - link: 'https://discord.gg/JpaN2XAmqY'
+      text: 'Join chat'
+
+- title: 'Medium Blog'
+  description: 'Our vision of the past, nowdays and future about Robonomics, Ethereum, Polkadot networks, green markets, robotics, and everything, that connected with Robonomics.'
+  img: 'medium.png'
+  buttonicon: '↗'
+  options:
+    - link: 'https://blog.aira.life'
+      text: 'Read'
 
 - title: 'Telegram chat'
   description: 'Local communities & news. You are welcome!'

@@ -32,6 +32,7 @@ body {
 	--color-blue: #2949D3;
 	--color-blue-dark-mid: #072089;
 	--color-blue-dark: #000066;
+	--color-blue-xrt: #81a8f8;
 
 	--color-purple-lighter: #c7d2ff;
 	--color-purple-light: #97aafd;
@@ -73,6 +74,15 @@ body {
 
 	--post-code-bg: #b5deff;
 
+
+	--graph-blue: #03a5ed;
+	--graph-blue-light: #a1e7ff;
+	--graph-purple: #b5c0f1;
+	--graph-purple-light: #caddfc;
+	--graph-pink: #f34c9a;
+
+
+
 	--color-gradient-blue: linear-gradient(var(--color-blue-dark), var(--color-blue-mid)); /* refactor */
 	--color-gradient-purpleblue: linear-gradient(var(--color-blue-mid), var(--color-purple));
 	--color-gradient-mars: linear-gradient(var(--color-blue) 30%, #25bfe8 85%, #f0d283 100%);
@@ -89,6 +99,7 @@ body {
   --content-width: 1660px;
   --text-width: 780px;
   --tip-width: 16rem;
+	--mid-width: 1180px;
 
   --screen-padding-top: 3rem;
   --screen-padding-right: 1rem;
@@ -121,6 +132,7 @@ body.dark-theme {
 	--color-blue: #5f7af6;
 	--color-blue-lighter:#2a5b72;
 	--color-blue-lightest: #1e335c;
+	--color-blue-xrt: #02276f;
 	--color-purple-mid: #313568;
 	--color-purple-mid-dark: #5963e2;
 	--color-purple: #2d0719;
