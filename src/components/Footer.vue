@@ -18,7 +18,7 @@
             <li><g-link to="/papers">{{$ts('Science papers')}}</g-link></li>
             <li><g-link to="/books">{{$ts('Books')}}</g-link></li>
             <li><g-link to="/logos-and-assets">{{$ts('Logo and assets')}}</g-link></li>
-            <!-- <li><g-link to="/nft">NFT</g-link></li> -->
+            <li><g-link to="/nft">NFT</g-link></li>
           </ul>
         </div>
 
