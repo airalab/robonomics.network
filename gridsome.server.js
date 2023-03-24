@@ -32,6 +32,10 @@ module.exports = function (api) {
 
   // Use the Pages API here: https://gridsome.org/docs/pages-api/
   api.createManagedPages( ({ createPage }) => {
+
+    // all locales
+    const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr","uk", "fr" ];
+
     createPage(
       {
           path: '/en/',
@@ -41,10 +45,33 @@ module.exports = function (api) {
           }
       }
     )
+
+    createPage(
+      {
+          path: `/white-paper-2022`,
+          component: 'src/pages/redirect.vue',
+          context: {
+            redirect: '/white-paper'
+          }
+      }
+    )
+
+    locales.forEach(l => {
+      createPage(
+        {
+            path: `/${l}/white-paper-2022`,
+            component: 'src/pages/redirect.vue',
+            context: {
+              redirect: '/white-paper'
+            }
+        }
+      )
+    })
+  
     
       allPossiblePaths.forEach(node => {
         // all locales
-        const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr","uk", "fr" ];
+        // const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr","uk", "fr" ];
         const path = node.path.slice(0, -1).split("/").pop();
   
         locales.forEach(locale => {
