@@ -15,13 +15,13 @@
                 <div class="layout token__top">
                     <div class="grid-2 token__intro">
                         <p>
-                            <b><span class="token__big-text">XRT</span> is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.</b>
+                            <span class="token__big-text">XRT</span> is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.
                         </p>
     
                         <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph">
                             <div class="token__graph-arrow">
                                 <span>Token distribution</span>
-                                <g-image alt="graph" src="@/assets/images/xrt-arrow.svg"/>
+                                <ArrowIcon />
                             </div>
                             <div class="graph-img">
                                 <XRTGraph v-in-viewport.once/>
@@ -47,17 +47,18 @@
                     </div>
 
                     <div class="xrt-bridge__imgs">
-                        <g-image class="xrt-bridge__img-1" src="~/assets/images/xrt-bridge.png" alt="xrt bridge"/>
                         <g-image class="xrt-bridge__img-2" src="~/assets/images/xrt-eth.png" alt="xrt ethereum"/>
+                        <g-image class="xrt-bridge__img-1" src="~/assets/images/xrt-bridge-1.png" alt="xrt bridge"/>
+                        <g-image class="xrt-bridge__img-3" src="~/assets/images/xrt-bridge-2.png" alt="xrt bridge"/>
                     </div>
                 </div>
 
-                <div class="nova">
+                <g-link to="https://app.multichain.org/#/router" class="nova">
                     <div class="nova__img">
                         <g-image src="~/assets/images/xrt-nova.png" alt="nove logo"/>
                     </div>
                     <p>Nova Wallet application supports crosschain XRT transfers</p>
-                </div>
+                </g-link>
             </section>
         </section>
 
@@ -174,6 +175,7 @@ query {
 </static-query>
 
 <script>
+    import ArrowIcon from '@/assets/images/xrt-arrow.svg';
     import contacts from '@/data/contact.yaml'
 
     export default {
@@ -181,6 +183,7 @@ query {
             Card: () => import('~/components/TextCard.vue'),
             XRTGraph: () => import("~/components/XRTGraph.vue"),
             MetaInfo: () => import("~/components/MetaInfo.vue"),
+            ArrowIcon
         },
 
         computed: {
@@ -227,23 +230,24 @@ query {
         max-width: 200px;
         margin: 0 auto;
     }
-    
 
     .token__intro {
         padding-top: var(--space);
+        margin-bottom: calc(var(--space) * 2);
         align-content: end;
         justify-items: end;
         gap: calc(var(--space) * 3);
-        margin-bottom: calc(var(--space) * 2);
         /* padding-bottom: var(--space);
         margin-bottom: 52px; */
     }
 
     .token__intro p {
         /* margin-right: var(--space); */
-        align-self: end;
-        padding-bottom: 100px;
+        /* align-self: end;
+        padding-bottom: 50px; */
         font-size: 132%;
+        font-weight: 500;
+        align-self: center;
     }
 
     .token__text-abstract {
@@ -260,6 +264,7 @@ query {
 
     .token__big-text {
         font-size: 218%;
+        line-height: 0;
     }
 
     .pink-block a {
@@ -282,8 +287,8 @@ query {
     }
 
     .graph-img {
-        width: 257px;
-        height: 257px;
+        width: 300px;
+        height: 300px;
         position: relative;
         overflow: hidden;
         border-radius: 100%;
@@ -308,60 +313,10 @@ query {
         bottom: 50px; */
     }
 
-    .token__graph-arrow img {
+    .token__graph-arrow svg {
         position: absolute;
         bottom: 0;
         right: 0;
-    }
-
-    
-    
-
-    @media screen and (min-width: 700px) {
-        .parallax-wrap {
-            transform: scale(1.2);
-        }
-    }
-
-    #parallax {
-        position: relative;
-        width: 606px;
-        height: 430px;
-        margin: 0 auto;
-    }
-
-    .parallax-layer {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    #parallax img {
-        position: absolute;
-    }
-
-    #parallax-1 {
-        width: 80px;
-        right: 60px;
-        top: 76px;
-    }
-
-    #parallax-3 {
-        width: 72px;
-        right: 178px;
-        top: 50px;
-    }
-
-    #parallax-5 {
-        width: 232px;
-        right: 164px;
-        top: 105px;
-    }
-
-    #parallax-7 {
-        width: 225px;
-        left: 0px;
-        top: -42px;
     }
 
     .pink-block {
@@ -392,6 +347,7 @@ query {
         align-items: center;
         padding: var(--space);
         padding-bottom: 0;
+
     }
 
     .xrt-bridge__title {
@@ -408,42 +364,67 @@ query {
 
     .xrt-bridge__btn {
         padding: calc(var(--space) * 0.3) calc(var(--space) * 1.5);
+        font-family: var(--font-family-code);
         font-size: calc(var(--base-font-size) * 1.4);
+        font-weight: 500;
     }
 
     .xrt-bridge__text {
         padding-bottom: calc(var(--space) * 5);
+        flex-shrink: 0;
+        /* margin-right: calc(var(--space) * 3); */
     }
 
     .xrt-bridge__imgs {
         position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        max-width: 783px;
+
     }
 
     .xrt-bridge__img-1 {
         max-width: 433px;
         width: 100%;
+        /* width: 433px; */
+        /* position: relative; */
+        /* left: 40px;
+        bottom: -7px; */
+    }
+
+
+    .xrt-bridge__img-3 {
+        max-width: 164px;
+        width: 100%;
         position: relative;
-        bottom: -7px;
+        /* position: absolute; */
+        /* bottom: -7px; */
+        right: 70px;
+        height: 100%;
     }
 
     .xrt-bridge__img-2 {
-        position: absolute;
-        left: -120px;
-        bottom: 5px;
+        /* position: absolute; */
+        /* left: -120px;
+        bottom: 5px; */
         max-width: 77px;
         width: 100%;
+        /* height: 100%; */
+        align-self: end;
     }
 
     .nova {
         position: absolute;
-        right: -60px;
+        right: -38px;
         bottom: -100px;
         width: 393px;
         height: 393px;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: var(--space) calc(var(--space) * 2);
+        padding: var(--space);
+        padding-left: calc(var(--space) * 2);
         background-color: var(--color-blue);
         border-radius: 100%;
     }
@@ -456,6 +437,7 @@ query {
 
     .nova p {
         color: #fff;
+        font-size: calc(var(--base-font-size) * 0.9);
         font-style: italic;
     }
 
@@ -528,6 +510,7 @@ query {
     }
 
     @media screen and (max-width: 1130px) {
+
         .token__intro {
             grid-template-columns: minmax(0, 1fr);
             gap: calc(var(--space) * 2);
@@ -543,30 +526,14 @@ query {
             justify-content: center;
         }
 
-        .token__parallax {
-            padding-top: 20px;
-            transform: none;
-        }
-
-        #parallax-5 {
-            width: 293px;
-            right: 52px;
-            top: 118px;
-        }
-
-        #parallax-7 {
-
-            left: 40px;
-            top: -42px;
-        }
 
         .nova {
+            position: static;
             width: 328px;
             height: 328px;
+            padding: var(--space) calc(var(--space) * 2);
+            margin-bottom: var(--space);
         }
-    }
-
-    @media screen and (max-width: 780px) {
 
         .xrt-bridge  {
             display: flex;
@@ -574,11 +541,15 @@ query {
             justify-content: center;
             flex-direction: column;
             text-align: center;
-            padding-bottom: var(--space);
+            flex-direction: column-reverse;
+            padding: calc(var(--space) * 2.5) var(--space);
+            padding-bottom: 0;
         }
 
         .xrt-bridge .layout {
             flex-direction: column;
+            width: 90%;
+            padding: 0;
         }
 
         .xrt-bridge__title {
@@ -591,33 +562,24 @@ query {
         }
 
         .xrt-bridge__imgs {
-            margin-bottom: var(--space);
+            max-width: 100%;
+            /* margin-bottom: var(--space); */
         }
 
-        .nova {
-            position: static;
+        .xrt-bridge__img-3 {
+            right: 30px;
         }
+        
     }
 
     @media screen and (max-width: 580px) {
-
-        #parallax {
-            width: 430px;
-            height: 338px;
-        }
-
-        .parallax-wrap {
-            grid-row: 1;
-        }
-
-        #parallax-5 {
-            width: 232px;
-            right: 31px;
-            top: 105px;
-        }
         
         .token__intro {
             gap: var(--space);
+        }
+
+        .xrt-bridge__img-2 {
+            display: none;
         }
     }
 
