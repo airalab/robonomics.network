@@ -3,6 +3,8 @@
 
 
     <svg viewBox="0 0 63.6619772368 63.6619772368">
+      <circle class="pie0 pie-white" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+
       <!-- first pie chart -->
       <circle class="pie1 pie-blue" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
       <circle class="pie2 pie-light-blue" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
@@ -72,6 +74,10 @@ circle {
   animation: pie1 3s forwards ease;
 }
 
+.pie-white {
+  stroke: #fff;
+}
+
 .pie-blue {
   stroke:#03a5ed;
 }
@@ -92,8 +98,15 @@ circle {
   stroke:#f34c9a;;
 }
 
+.pie0 {
+  -webkit-animation-name: pie0;
+  animation-name: pie0;
+  animation-duration: 4s;
+}
+
 .pie1 {
   stroke-dashoffset: 250px;
+  animation-delay: 2s;
 }
 
 .pie2 {
@@ -101,22 +114,22 @@ circle {
   -webkit-animation-name: pie2;
   animation-name: pie2;
   animation-duration: 6s;
-  animation-delay: 1s;
+  animation-delay: 2.5s;
 }
 
 .pie3 {
   stroke-dashoffset: 228px;
   -webkit-animation-name: pie3;
   animation-name: pie3;
-  animation-delay: 5s;
+  animation-delay: 6s;
 }
 
 .pie4 {
   stroke-dashoffset: 218px;
   -webkit-animation-name: pie4;
   animation-name: pie4;
-  animation-duration: 6s;
-  animation-delay: 6s;
+  animation-duration: 5s;
+  animation-delay: 7s;
 }
 
 .pie5 {
@@ -138,31 +151,31 @@ circle {
   stroke-dashoffset: 237px;
   -webkit-animation-name: pie7;
   animation-name: pie7;
-  animation-delay: 12s;
+  animation-delay: 11s;
 }
 
 .pie8 {
   stroke-dashoffset: 333px;
   -webkit-animation-name: pie8;
   animation-name: pie8;
-  animation-duration: 6s;
-  animation-delay: 14s;
+  animation-duration: 4s;
+  animation-delay: 12s;
 }
 
 .pie9 {
   stroke-dashoffset: 216px;
   -webkit-animation-name: pie9;
   animation-name: pie9;
-  animation-duration: 6s;
-  animation-delay: 14s;
+  animation-duration: 4s;
+  animation-delay: 11s;
 }
 
 .pie10 {
   stroke-dashoffset: 116px;
   -webkit-animation-name: pie10;
   animation-name: pie10;
-  animation-duration: 7s;
-  animation-delay: 19s;
+  animation-duration: 5s;
+  animation-delay: 13s;
   
 }
 
@@ -170,16 +183,21 @@ circle {
   stroke-dashoffset: 230px;
   -webkit-animation-name: pie11;
   animation-name: pie11;
-  animation-duration: 5s;
-  animation-delay: 19s;
+  animation-duration: 3s;
+  animation-delay: 15s;
 }
 
 .pie12 {
   stroke-dashoffset: 245px;
   -webkit-animation-name: pie12;
   animation-name: pie12;
-  animation-duration: 5s;
-  animation-delay: 18s;
+  animation-duration: 3s;
+  animation-delay: 15s;
+}
+
+
+@keyframes pie0 {
+  50%,100% {stroke-dasharray: 0,0,100,0;}
 }
 
 @keyframes pie1 {

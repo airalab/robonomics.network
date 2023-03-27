@@ -24,6 +24,7 @@
     "vue-in-viewport-directive": "^2.0.2",
     "vue-moment": "^4.1.0",
     "vue-recaptcha": "1.3.0",
+    "vue-svg-loader": "^0.16.0",
     "vue2-smooth-scroll": "^1.5.1",
     "vueinview": "^1.0.7",
     "vuex": "^3.6.2"
