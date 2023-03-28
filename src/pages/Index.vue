@@ -858,7 +858,9 @@ query {
     },
 
     mounted() {
-      window.addEventListener('scroll', this.onScroll)
+      setTimeout(() => {
+        window.addEventListener('scroll', this.onScroll)
+      }, 150)
     },
 
     beforeDestroy () {

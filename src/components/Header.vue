@@ -1,5 +1,4 @@
 <template>
-  <client-only>
       <header class="header">
 
         <div class="header-content">
@@ -20,7 +19,6 @@
       
         </div>
       </header>
-  </client-only>
 </template>
 
 <static-query>
