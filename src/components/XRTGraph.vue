@@ -15,14 +15,14 @@
 
       <!--third pie chart  -->
       <circle class="pie5 pie-light-purple" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
-      <!-- <circle class="pie6 pie-purple" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/> -->
 
       <!-- fourth pie chart -->
       <circle class="pie7 pie-pink" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
 
       <!-- fifth pie chart -->
-      <circle class="pie8 pie-light-purple" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
       <circle class="pie9 pie-purple" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+      <circle class="pie8 pie-light-purple" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+      <circle class="pie06 pie-blue" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
 
       <!-- sixth pie chart -->
       <circle class="pie10 pie-light-purple" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
@@ -99,45 +99,57 @@ circle {
 }
 
 .pie0 {
-  -webkit-animation-name: pie0;
-  animation-name: pie0;
-  animation-duration: 4s;
+  stroke-dasharray: 0,0,100,0;
+  animation: none;
 }
+
+/* first pie */
 
 .pie1 {
   stroke-dashoffset: 250px;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .pie2 {
   stroke-dashoffset: 225px;
   -webkit-animation-name: pie2;
   animation-name: pie2;
-  animation-duration: 6s;
-  animation-delay: 2.5s;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
 }
+
+/* first pie */
+
+/* second pie */
 
 .pie3 {
   stroke-dashoffset: 228px;
   -webkit-animation-name: pie3;
   animation-name: pie3;
-  animation-delay: 6s;
+  animation-delay: 3s;
 }
 
 .pie4 {
   stroke-dashoffset: 218px;
   -webkit-animation-name: pie4;
   animation-name: pie4;
-  animation-duration: 5s;
-  animation-delay: 7s;
+  animation-duration: 3s;
+  animation-delay: 3.5s;
 }
 
+/* second pie */
+
+/* third pie */
+
 .pie5 {
-  stroke-dashoffset: 230px;
+  stroke-dashoffset: 224px;
+  /* stroke-dashoffset: 230px; */
   -webkit-animation-name: pie5;
   animation-name: pie5;
-  animation-delay: 10s;
+  animation-delay: 4.5s;
 }
+
+/* third pie */
 
 /* .pie6 {
   stroke-dashoffset: 210px;
@@ -147,35 +159,54 @@ circle {
   animation-delay: 9s;
 } */
 
+
+/* fourth pie */
 .pie7 {
-  stroke-dashoffset: 237px;
+  stroke-dashoffset: 240px;
   -webkit-animation-name: pie7;
   animation-name: pie7;
-  animation-delay: 11s;
+  animation-duration: 2.5s;
+  animation-delay: 5.5s;
 }
 
+/* fourth pie */
+
+/* fifth pie */
+
 .pie8 {
-  stroke-dashoffset: 333px;
+  /* stroke-dashoffset: 333px; */
+  stroke-dashoffset: 316px;
   -webkit-animation-name: pie8;
   animation-name: pie8;
-  animation-duration: 4s;
-  animation-delay: 12s;
+  animation-delay: 7s;
 }
 
 .pie9 {
-  stroke-dashoffset: 216px;
+  /* stroke-dashoffset: 216px; */
+  stroke-dashoffset: 210px;
   -webkit-animation-name: pie9;
   animation-name: pie9;
-  animation-duration: 4s;
-  animation-delay: 11s;
+  animation-duration: 2s;
+  animation-delay: 7s;
 }
 
+.pie06 {
+  stroke-dashoffset: 238px;
+  -webkit-animation-name: pie06;
+  animation-name: pie06;
+  animation-delay: 7s;
+}
+
+/* fifth pie */
+
+/* sixth pie */
+
 .pie10 {
-  stroke-dashoffset: 116px;
+  stroke-dashoffset: 115px;
   -webkit-animation-name: pie10;
   animation-name: pie10;
-  animation-duration: 5s;
-  animation-delay: 13s;
+  animation-duration: 2.5s;
+  animation-delay: 8s;
   
 }
 
@@ -183,22 +214,17 @@ circle {
   stroke-dashoffset: 230px;
   -webkit-animation-name: pie11;
   animation-name: pie11;
-  animation-duration: 3s;
-  animation-delay: 15s;
+  animation-delay: 8s;
 }
 
 .pie12 {
-  stroke-dashoffset: 245px;
+  stroke-dashoffset: 250px;
   -webkit-animation-name: pie12;
   animation-name: pie12;
-  animation-duration: 3s;
-  animation-delay: 15s;
+  animation-delay: 8s;
 }
 
-
-@keyframes pie0 {
-  50%,100% {stroke-dasharray: 0,0,100,0;}
-}
+/* sixth pie */
 
 @keyframes pie1 {
   50%,100% {stroke-dasharray: 0,0,25,75;}
@@ -212,17 +238,21 @@ circle {
 @keyframes pie4 {
   50%,100% {stroke-dasharray: 0,0,70,30;}
 }
+
 @keyframes pie5 {
   50%,100% {stroke-dasharray: 0,0,10,90;}
 }
 @keyframes pie6 {
   50%,100% {stroke-dasharray: 0,0,70,30;}
 }
+@keyframes pie06 {
+  50%,100% {stroke-dasharray: 0,0,5,95;}
+}
 @keyframes pie7 {
-  50%,100% {stroke-dasharray: 0,0,7,93;}
+  50%,100% {stroke-dasharray: 0,0,9,92;}
 }
 @keyframes pie8 {
-  50%,100% {stroke-dasharray: 0,0,20,80;} 
+  50%,100% {stroke-dasharray: 0,0,7,93;} 
 }
 @keyframes pie9 {
   50%,100% {stroke-dasharray: 0,0,70,30;}

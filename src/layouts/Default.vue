@@ -6,7 +6,7 @@
     <div class="screen banner">
       <span class="right-border"></span>
 
-      <Header/>
+      <Header  v-if="$store.state.showHeader"/>
 
       <div class="screen-content">
         
@@ -202,6 +202,12 @@ export default {
       return current.includes(p)
     }
   },
+
+  created() {
+    this.$store.commit('TOGGLE_SHOW_HEADER', true)
+  },
+
+
   async mounted () {
       try {
         const results = await axios.get(
