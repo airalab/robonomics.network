@@ -22,13 +22,13 @@
           <!-- images left -->
 
           <div class="banner__images banner__images--left">
-            <g-image src="~/assets/images/icons/banner-icons-left/circle.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-left/crystal.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-left/painting.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-left/robot-1.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-left/robots-2.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-left/text.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-left/column.svg"  aria-hidden="true"/>
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/circle.svg"  aria-hidden="true"/>
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/crystal.svg"  aria-hidden="true"/>
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/painting.svg"  aria-hidden="true"/>
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/robot-1.svg"  aria-hidden="true"/>
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/robots-2.svg"  aria-hidden="true"/>
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/text.svg"  aria-hidden="true"/>
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/column.svg"  aria-hidden="true"/>
           </div>
 
           <div id="yoga-container">
@@ -856,9 +856,11 @@ query {
         this.lastScrollPosition = currentScrollPosition
       },
     },
+
     mounted() {
       window.addEventListener('scroll', this.onScroll)
     },
+
     beforeDestroy () {
       window.removeEventListener('scroll', this.onScroll)
       this.$store.commit('TOGGLE_SHOW_HEADER', true)

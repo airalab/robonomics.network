@@ -1,6 +1,6 @@
 <template>
   <client-only>
-      <header class="header" v-if="$store.state.showHeader">
+      <header class="header">
 
         <div class="header-content">
           <div class="header-logo">
