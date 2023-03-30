@@ -106,27 +106,33 @@
   en: Blog
   ru: Блог
   zh: 博客
-- alias: Nav Learn
+- alias: Learn
   en: Learn
   ru: Теория
-- alias: Nav Use
+- alias: Use
   en: Use
   ru: Практика
-- alias: Nav Tokenomics
+- alias: Tokenomics
   en: Tokenomics
   ru: Токеномика
-- alias: Nav Community
+- alias: Community
   en: Community
   ru: Сообщество
-- alias: Nav Papers
-  en: Papers
-  ru: Статьи
-- alias: Nav Books
+- alias: Science papers
+  en: Science papers
+  ru: Научные статьи
+- alias: Books
   en: Books
   ru: Книги
-- alias: Nav Contact
-  en: Contact
+- alias: Contacts
+  en: Contacts
   ru: Контакты
+- alias: Shop
+  en: Shop
+  ru: Магазин
+- alias: Ambassador program
+  en: Ambassador program
+  ru: Программа для амбассадоров
 - alias: This site is maintained by Airalab DAO
   de: Diese Seite wird von Airalab DAO verwaltet
   en: This site is maintained by Airalab DAO
