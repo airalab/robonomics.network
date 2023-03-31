@@ -1,8 +1,8 @@
 <template>
     <div class="popup__content">
-      <h3>{{ title }}</h3>
+      <h3>{{ $ts(title) }}</h3>
       <p class="hyphens">
-        {{ description }}
+        {{ $ts(description) }}
       </p>
     </div>
 </template>
