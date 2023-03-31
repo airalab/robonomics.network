@@ -10,17 +10,17 @@
         <section class="top-part">
             <section class="token section__blue">
                 <div class="token__main-title title-with-bg">
-                    <h1><span>Robonomics tokenomics</span></h1>
+                    <h1><span>{{ $ts('Robonomics tokenomics') }}</span></h1>
                 </div>
                 <div class="layout token__top">
                     <div class="grid-2 token__intro">
                         <p>
-                            <span class="token__big-text">XRT</span> is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.
+                            <span class="token__big-text">XRT</span> {{ $ts('is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.') }}
                         </p>
     
                         <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph">
                             <div class="token__graph-arrow">
-                                <span>Token distribution</span>
+                                <span>{{ $ts('Token distribution') }}</span>
                                 <ArrowIcon />
                             </div>
                             <div class="graph-img">
@@ -29,21 +29,21 @@
                         </g-link>
 
                     </div>
-                    <p class="text-abstract token__text-abstract token__bottom-text">The task of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network. </p>
+                    <p class="text-abstract token__text-abstract token__bottom-text">{{$ts('The task of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.')}}</p>
                 </div>
             </section>
 
             <section class="pink-block">
                 <div class="layout token__top">
-                    <p class="text-abstract token__text-abstract"> <b>Be aware of scammers</b>:  please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our <g-link :to="twitter[0].options[0].link">Twitter</g-link> for official updates. Be careful, be safe.</p>              
+                    <p class="text-abstract token__text-abstract"> <b>{{ $ts('Be aware of scammers') }}</b>: {{ $ts('please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our') }} <g-link :to="twitter[0].options[0].link">Twitter</g-link> {{$ts('for official updates. Be careful, be safe.')}}</p>              
                 </div>
             </section>
 
             <section class="xrt-bridge">
                 <div class="layout">
                     <div class="xrt-bridge__text">
-                        <h2 class="xrt-bridge__title">Crosschain bridge</h2>
-                        <g-link to="https://app.multichain.org/#/router" class=" xrt-bridge__btn link-btn">Try in browser</g-link>
+                        <h2 class="xrt-bridge__title">{{ $ts('Crosschain Bridge') }}</h2>
+                        <g-link to="https://app.multichain.org/#/router" class=" xrt-bridge__btn link-btn">{{ $ts('Try in browser') }}</g-link>
                     </div>
 
                     <div class="xrt-bridge__imgs">
@@ -63,10 +63,10 @@
         </section>
 
         <section class="layout layout__text xrt-ethereum">
-            <h2>XRT in Ethereum</h2>
+            <h2>{{ $ts('XRT in Ethereum') }}</h2>
 
             <section class="animate-inside" v-in-viewport.once>
-                    <p>Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. We needed to think about the lifecycle of each individual smart device’s liability to perform a service. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with a significant improvements in Ethereum.</p>
+                    <p>{{ $ts('Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. We needed to think about the lifecycle of each individual smart device’s liability to perform a service. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with a significant improvements in Ethereum.') }}</p>
             </section>
 
             <div class="youtube-embed animate-inside" v-in-viewport.once>
@@ -81,21 +81,21 @@
                 <div class="oldy dark">
                     <div class="token__link timeline">
                         <g-link to="/timeline">
-                            <h3 class="token__subtitle">Timeline</h3>
+                            <h3 class="token__subtitle">{{$ts('Timeline')}}</h3>
                         </g-link>
-                        <p>Read this to know historical background and long-term plans of team for XRT in Ethereum ecosystem.</p>
+                        <p>{{ $ts('Read this to know historical background and long-term plans of team for XRT in Ethereum ecosystem.') }}</p>
                     </div>
                     <div class="token__link enterscan">
                         <g-link to="https://etherscan.io/token/0x7de91b204c1c737bcee6f000aaa6569cf7061cb7">
-                            <h3 class="token__subtitle">Etherscan profile</h3>
+                            <h3 class="token__subtitle">{{ $ts('Etherscan profile') }}</h3>
                         </g-link>
-                        <p>View token smart contract and transactions in Ethereum network here.</p>
+                        <p>{{ $ts('View token smart contract and transactions in Ethereum network here.') }}</p>
                     </div>
                     <div class="token__link coingecko">
                         <g-link to="https://www.coingecko.com/en/coins/robonomics-network" >
-                            <h3 class="token__subtitle">Coingecko markets</h3>
+                            <h3 class="token__subtitle">{{ $ts('Coingecko markets') }}</h3>
                         </g-link>
-                        <p>Here you can find CEX and DEX markets for trading XRT.</p>
+                        <p>{{ $ts('Here you can find CEX and DEX markets for trading XRT.') }}</p>
                     </div>
                 </div>
             </div>
@@ -104,44 +104,44 @@
         </section>
 
         <section class="layout layout__text xrt-polkadot animate-inside" v-in-viewport.once>
-            <h2>XRT In Polkadot</h2>
+            <h2>{{ $ts('XRT In Polkadot') }}</h2>
 
             <section class="animate-inside" v-in-viewport.once>
 
-                    <p class="xrt-polkadot__text">Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.</p>
+                    <p class="xrt-polkadot__text">{{ $ts('Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.') }}</p>
 
 
-                    <p class="xrt-polkadot__text">The actual payment on the part of Polkadot and Kusama parachains is long-term bonding of native Relay chain tokens (DOT / KSM) in sufficient quantity to win one of the auctions. The XRT in the Robonomics parachain supports slot renewal and rewards for stakeholders. The XRT burning mechanism underlying the activation of IoT subscriptions is designed to reduce inflation to a minimum, and in case of increased interest to zero. <g-link to="https://twitter.com/EnsRationis/status/1607327921793892354">Learn more</g-link> in Twitter thread from our network architect. </p>
+                    <p class="xrt-polkadot__text"> {{$ts('The actual payment on the part of Polkadot and Kusama parachains is long-term bonding of native Relay chain tokens (DOT / KSM) in sufficient quantity to win one of the auctions. The XRT in the Robonomics parachain supports slot renewal and rewards for stakeholders. The XRT burning mechanism underlying the activation of IoT subscriptions is designed to reduce inflation to a minimum, and in case of increased interest to zero.') }} <g-link to="https://twitter.com/EnsRationis/status/1607327921793892354">{{ $ts('Learn more') }}</g-link> {{ $ts('in Twitter thread from our network architect.')}} </p>
 
                     <div class="xrt-polkadot__info">
-                        <h3 class="token__subtitle">Usage:</h3>
-                        <p>XRT can be used both to pay fees for performing transactions on the parachain or to purchase an IoT subscription that guarantees priority processing of device or user IoT transactions.</p>
+                        <h3 class="token__subtitle">{{ $ts('Usage:') }}</h3>
+                        <p>{{ $ts('XRT can be used both to pay fees for performing transactions on the parachain or to purchase an IoT subscription that guarantees priority processing of device or user IoT transactions.') }}</p>
                     </div>
 
                     <div class="xrt-polkadot__info">
-                        <h3 class="token__subtitle">Rewards:</h3>
-                        <p>Throughout the year, the parachain issues a small amount of XRT to incentivize parachain collators. <g-link to="https://robonomics.polkassembly.io/proposal/5"> The parameter of the total reward</g-link> for collators for the year is determined by on-chain voting of token holders, and can be changed by holding a referendum.</p>
+                        <h3 class="token__subtitle">{{ $ts('Rewards:') }}</h3>
+                        <p>{{ $ts('Throughout the year, the parachain issues a small amount of XRT to incentivize parachain collators.') }}<g-link to="https://robonomics.polkassembly.io/proposal/5"> {{ $ts('The parameter of the total reward') }}</g-link> {{$ts('for collators for the year is determined by on-chain voting of token holders, and can be changed by holding a referendum.')}}</p>
                     </div>
 
                     <div class="youtube-embed">
                         <div class="oldy dark">
                             <div class="token__link use">
                                 <g-link to="https://dapp.robonomics.network/#/">
-                                    <h3 class="token__subtitle">Use XRT</h3>
+                                    <h3 class="token__subtitle">{{ $ts('Use XRT') }}</h3>
                                 </g-link>
-                                <p>Buy IoT subscription in our decentralized application. Control your smart devices over blockchain without any centralized corporation observing.</p>
+                                <p>{{ $ts('Buy IoT subscription in our decentralized application. Control your smart devices over blockchain without any centralized corporation observing.') }}</p>
                             </div>
                             <div class="token__link subscan">
                                 <g-link to="https://robonomics.subscan.io/">
-                                    <h3 class="token__subtitle">Subscan profile</h3>
+                                    <h3 class="token__subtitle">{{ $ts('Subscan profile') }}</h3>
                                 </g-link>
-                                <p>View token statistics on top of Polkadot ecosystem.</p>
+                                <p>{{ $ts('View token statistics on top of Polkadot ecosystem.') }}</p>
                             </div>
                             <div class="token__link coingecko">
                                 <g-link to="https://www.coingecko.com/en/coins/robonomics-network" >
-                                    <h3 class="token__subtitle">Coingecko markets</h3>
+                                    <h3 class="token__subtitle">{{ $ts('Coingecko markets') }}</h3>
                                 </g-link>
-                                <p>Here you can find CEX and DEX markets for trading XRT.</p>
+                                <p>{{ $ts('Here you can find CEX and DEX markets for trading XRT.') }}</p>
                             </div>
                         </div>
                     </div>
@@ -149,16 +149,16 @@
         </section>
 
         <section class="layout layout__text xrt-questions animate-inside" v-in-viewport.once>
-                <h2>Other questions</h2>
+                <h2>{{ $ts('Other questions') }}</h2>
 
                 <div class="xrt-polkadot__info">
-                    <h3 class="token__subtitle">What is RWS?</h3>
-                    <p>[Under development of core functionality] For engineers, Core Dev team will try to make different Robonomics usage models and the first step in this way is launching lifetime subscription token - RWS token. Each RWS token will give you 1 transaction per second (tps) from/to your IoT device over Robonomics Parachain. Activate your RWS token and make "free gas" transactions with prior to execute and predictable latency. Deactivate RWS token and trade it on DEX.</p>
+                    <h3 class="token__subtitle">{{ $ts('What is RWS?') }}</h3>
+                    <p>{{ $ts('[Under development of core functionality] For engineers, Core Dev team will try to make different Robonomics usage models and the first step in this way is launching lifetime subscription token - RWS token. Each RWS token will give you 1 transaction per second (tps) from/to your IoT device over Robonomics Parachain. Activate your RWS token and make "free gas" transactions with prior to execute and predictable latency. Deactivate RWS token and trade it on DEX.') }}</p>
                 </div>
 
                 <div class="xrt-polkadot__info">
-                    <h3 class="token__subtitle">What is AIRA/AIR ID?</h3>
-                    <p>Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens was connected to created infrastructure of the project through <g-link to="https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/AbstractAmbix.sol">ambix smart contract</g-link> which guaranteed autonomous and independent process of swapping pre-XRT to ERC-20 XRT.</p>
+                    <h3 class="token__subtitle">{{ $ts('What is AIRA/AIR ID?') }}</h3>
+                    <p>{{ $ts('Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens was connected to created infrastructure of the project through') }} <g-link to="https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/AbstractAmbix.sol">{{ $ts('ambix smart contract') }}</g-link> {{ $ts('which guaranteed autonomous and independent process of swapping pre-XRT to ERC-20 XRT.') }}</p>
                 </div>
 
         </section>
