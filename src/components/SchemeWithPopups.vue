@@ -115,7 +115,7 @@
 
         </div>
         <g-image aria-hidden="true" src="~/assets/images/index-smart-device.svg" />
-        <h3>{{$ts('IoT/smart device')}}</h3>
+        <h3>{{$ts('IoT / Smart device')}}</h3>
       </div>
     </div>
   </div>

@@ -99,6 +99,32 @@
   ko: 소개
   ru: Введение
   zh: 介绍
+- alias: White Paper 2022
+  en: White Paper 2022
+  ru: БЕЛАЯ КНИГА 2022
+  uk: БІЛА КНИГА 2022
+  es: WHITE PAPER 2022
+  it: WHITE PAPER 2022
+  pt: WHITE PAPER 2022
+  fr: LIVRE BLANC 2022
+  de: WHITE PAPER 2022
+  tr: WHITE PAPER 2022
+  az: WHITE PAPER 2022
+  ko: 화이트 페이퍼 2022
+  ja: ホワイトペーパー 2022
+- alias: TIMELINE
+  en: Timeline
+  ru: ТАЙМЛАЙН
+  uk: ТАЙМЛАЙН
+  es: LÍNEA DE TIEMPO
+  it: TIMELINE
+  pt: CRONOLOGIA
+  fr: FRISE CHRONOLOGIQUE
+  de: ZEITSCHIENE
+  tr: ZAMAN ÇİZELGESİ
+  az: XRONOLOGİYA / TİMELİNE
+  ko: 타임라인
+  ja: タイムライン
 - alias: Kusama slot
   en: Kusama slot
   ru: Kusama слот
@@ -106,6 +132,16 @@
   en: Blog
   ru: Блог
   zh: 博客
+  uk: БЛОГ
+  es: BLOG
+  it: BLOG
+  pt: BLOG
+  fr: BLOGUE
+  de: BLOG
+  tr: BLOG
+  az: BLOG
+  ko: 블로그
+  ja: ブログ
 - alias: Learn
   en: Learn
   ru: Теория
@@ -115,24 +151,165 @@
 - alias: Tokenomics
   en: Tokenomics
   ru: Токеномика
+  uk: ТОКЕНОМІКА
+  es: TOKENOMICS
+  it: TOKENOMICS
+  pt: TOKENOMIA
+  fr: TOKÉNOMIQUE
+  de: TOKENOMICS
+  tr: TOKENOMİK
+  az: TOKENOMİK
+  ko: 토큰노믹스
+  ja: トークンエコノミクス
+- alias: Parachain
+  en: Parachain
+  ru: ПАРАЧЕЙН
+  uk: ПАРАЧЕЙН
+  es: PARACHAIN
+  it: PARACHAIN
+  pt: PARACHAIN
+  fr: PARACHAIN
+  de: PARACHAIN
+  tr: PARACHAIN
+  az: PARACHAIN
+  ko: 파라체인
+  ja: PARACHAIN
 - alias: Community
   en: Community
   ru: Сообщество
 - alias: Science papers
   en: Science papers
   ru: Научные статьи
+  uk: НАУКОВІ СТАТТІ
+  es: DOCUMENTOS DE CIENCIA
+  it: PAPER SCIENTIFICI
+  pt: ARTIGOS CIENTÍFICOS
+  fr: PAPIER SCIENCE
+  de: SCIENCE PAPERS
+  tr: BİLİMSEL ÇALIŞMALAR
+  az: ELMİ MƏQƏLƏLƏR
+  ko: 과학 논문
+  ja: 科学論文
 - alias: Books
   en: Books
   ru: Книги
 - alias: Contacts
   en: Contacts
   ru: Контакты
+  uk: КОНТАКТИ
+  es: CONTACTOS
+  it: CONTATTI
+  pt: CONTATOS
+  fr: CONTACTS
+  de: KONTAKTE
+  tr: İLETİŞİMLER
+  az: ƏLAQƏ
+  ko: 연락처
+  ja: 連絡先
+- alias: Wiki
+  en: Wiki
+  uk: ВІКІ
+  ru: ВИКИ
+  es: WIKI
+  it: WIKI
+  pt: WIKI
+  fr: WIKI
+  de: WIKI
+  tr: WIKI
+  az: VİKİ
+  ko: 위키
+  ja: WIKI
+- alias: Academy
+  en: Academy
+  ru: АКАДЕМИЯ
+  uk: АКАДЕМІЯ
+  es: ACADEMIA
+  it: ACCADEMIA
+  pt: ACADEMY
+  fr: ACADÉMIE
+  de: AKADEMIE
+  tr: AKADEMİ
+  az: AKADEMİYA
+  ko: 아카데미
+  ja: アカデミー
+- alias: Github
+  en: Github
+  ru: Github
+  uk: Github
+  es: Github
+  it: Github
+  pt: Github
+  fr: Github
+  de: Github
+  tr: Github
+  az: Github
+  ko: Github
+  ja: Github
+- alias: Dapp
+  en: Dapp
+  ru: Dapp
+  uk: Dapp
+  es: Dapp
+  it: Dapp
+  pt: Dapp
+  fr: Dapp
+  de: Dapp
+  tr: Dapp
+  az: Dapp
+  ko: Dapp
+  ja: Dapp
 - alias: Shop
   en: Shop
   ru: Магазин
+  uk: МАГАЗИН
+  es: COMERCIO
+  it: NEGOZIO
+  pt: LOJA
+  fr: BOUTIQUE
+  de: SHOP
+  tr: MAĞAZA
+  az: MAĞAZA
+  ko: 가게
+  ja: ショップ
+- alias: Books
+  en: Books
+  ru: КНИГИ
+  uk: КНИГИ
+  es: LIBROS 
+  it: LIBRI 
+  pt: LIVROS
+  fr: LIVRES
+  de: BÜCHER
+  tr: KİTAPLAR
+  az: KİTABLAR
+  ko: 서적
+  ja: 文献
+- alias: Logo and assets
+  en: Logo and assets
+  ru: ЛОГО И АССЕТЫ
+  uk: ЛОГО ТА АСЕТИ
+  es: LOGO Y ACTIVOS
+  it: LOGHI E ASSET
+  pt: LOGOTIPO E ATIVOS
+  fr: LOGO ET ATOUTS
+  de: LOGO UND ANLAGEN
+  tr: LOGO VE VARLIKLAR
+  az: LOGO VƏ AKTİVLƏR
+  ko: 로고 및 자산
+  ja: ロゴとアセット
 - alias: Ambassador program
   en: Ambassador program
-  ru: Программа для амбассадоров
+  ru: АМБАССАДОРСКАЯ ПРОГРАММА
+  uk: АМБАСАДОРСЬКА ПРОГРАМА
+  es: PROGRAMA DE EMBAJADORES
+  it: PROGRAMMA AMBASSADOR
+  pt: PROGRAMA DE EMBAIXADORES
+  fr: PROGRAMME AMBASSADEUR
+  de: AMBASSADOR PROGRAMM
+  tr: ELÇİLİK PROGRAMI
+  az: AMBASSADOR PROGRAMI
+  ko: 대사 프로그램
+  ja: アンバサダープログラム
 - alias: This site is maintained by Airalab DAO
   de: Diese Seite wird von Airalab DAO verwaltet
   en: This site is maintained by Airalab DAO
@@ -279,6 +456,96 @@
   uk: 'Робономіка — це доступна для кожного технологія з відкритим вихідним кодом для ринку Інтернету речей. 
     Щоб дізнатися більше, прочитайте основні тези'
   zh: Robonomics 是一项面向物联网市场的开源技术，可供所有人使用。阅读执行摘要，了解详情
+- alias: Learn with Robonomics
+  en: Learn with Robonomics
+  uk: ВЧИТЬСЯ З ROBONOMICS
+  tr: ROBONOMICS İLE ÖĞREN
+  ru: УЧИТЕСЬ С ROBONOMICS
+  pt: APRENDA COM A ROBONOMICS
+  it: IMPARA CON ROBONOMICS
+  fr: APPRENEZ AVEC LA ROBONOMIQUE
+  az: ROBONOMICS İLƏ ÖYRƏNİN
+  ja: ROBONOMICS 学ぶ
+  ko: ROBONOMICS 배우기
+  es: APRENDE CON ROBONOMICS
+  de: MIT ROBONOMICS LERNEN
+- alias: Introduction course
+  en: Introduction course
+  uk: Вступний курс
+  tr: Giriş Kursu
+  ru: Вводный курс
+  pt: Curso de Introdução
+  it: Corso Introduttivo
+  fr: Cours d'introduction
+  az: Giriş kursu
+  ja: イントロダクション コース
+  ko: 소개 과정
+  es: Curso de Introducción
+  de: Einführungskurs
+- alias: Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.
+  en: Пориньте у проблеми, що виникають при створенні сучасних програм Інтернету речей, і можливі рішення за допомогою технологій web3 та інструментів Robonomics для розробників та користувачів Інтернету речей.
+  uk: IoT geliştiricileri ve kullanıcıları için web3 teknolojileri ve Robonomics araçlarıyla modern Nesnelerin İnterneti uygulamalarının oluşturulmasında ortaya çıkan sorunlara ve olası çözümlere dalın.
+  ru: Погрузитесь в проблемы, возникающие при создании современных приложений Интернета вещей, и возможные решения с помощью технологий web3 и инструментов Robonomics для разработчиков и пользователей Интернета вещей.
+  pt: Mergulhar nos problemas que surgem em torno da construção de aplicações modernas da Internet das Coisas e possíveis soluções com tecnologias Web3 e ferramentas da Robonomics para desenvolvedores e usuários de IoT.
+  it: Immergiti nei problemi che orbitano intorno alla creazione di moderne applicazioni Internet of Things e alle possibili soluzioni con tecnologie web3 e strumenti Robonomics per sviluppatori IoT e utenti.
+  fr: Plongez dans les problèmes qui se posent autour de la construction d’applications modernes de l’Internet des objets et des solutions possibles avec les technologies Web3 et les outils Robonomics pour les développeurs et les utilisateurs IoT.
+  az: Müasir İOT proqramlarının yaradılması ilə bağlı yaranan problemlərə və IoT tərtibatçıları və istifadəçiləri üçün web3 texnologiyaları və Robonimics alətləri ilə mümkün həll yollarına nəzər salın.
+  ja: Web3技術とRobonomicsツールによる、現代のIoTアプリケーション構築に伴う問題と可能な解決策について掘り下げます。
+  ko: 현대적인 사물인터넷 애플리케이션 구축 시 발생하는 문제와 웹3 기술 및 로보노믹스 도구를 사용한 IoT 개발자 및 사용자의 가능한 해결책에 대해 살펴보세요.
+  es: Sumérjase en los problemas que surgen en torno a la creación de aplicaciones modernas de Internet de las cosas y las posibles soluciones con tecnologías web3 y herramientas de Robonomics para desarrolladores y usuarios IoT.
+  de: Checke die Probleme die beim Aufbau moderner IoT-Anwendungen auftreten und mögliche Lösungen mit web3-Technologien und Robonomics-Tools für IoT-Entwickler und -Benutzer.
+- alias: Boston dynamics spot software developing
+  en: Boston dynamics spot software developing
+  uk: Розробка програмного забезпечення для Spot від Boston Dynamics
+  tr: Boston Dynamics Spot Yazılım Geliştirme
+  ru: Разработка программного обеспечения для Spot от Boston Dynamics
+  pt: Desenvolvimento de Software do Spot da Boston Dynamics
+  it: Sviluppo software Boston Dynamics Spot
+  fr: Développement du logiciel de Boston Dynamics - Spot
+  az: Boston Dynamics Spot Proqram təminatının hazırlanması
+  ja: Boston Dynamics Spotソフトウェア開発
+  ko: Boston Dynamics Spot소프트웨어 개발
+  es: Desarrollo de software de Boston Dynamics Spot
+  de: Boston Dynamics Spot Softwareentwicklung
+- alias: We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.
+  en: We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.
+  uk: Ми раді представити вам освітню програму Spot SDK! Наша мета — познайомити вас із SDK Spot і дати можливість віддалено перевірити свої навички за допомогою робота Spot від Boston Dynamics у нашій лабораторії.
+  tr: Size Spot SDK eğitim programını tanıtmaktan heyecan duyuyoruz! Amacımız, sizi Spot'un SDK'sına alıştırmak ve laboratuvarımızda bir Boston Dynamics Spot robotu kullanarak becerilerinizi uzaktan test etmenize olanak sağlamaktır.
+  ru: Мы рады представить вам образовательную программу Spot SDK! Наша цель — познакомить вас с SDK Spot и дать возможность удаленно проверить свои навыки с помощью робота Spot от Boston Dynamics в нашей лаборатории.
+  pt: Estamos entusiasmados em apresentar-lhe o programa educacional SDK Spot! Nosso objetivo é familiarizá-lo com o SDK Spot e permitir que você teste suas habilidades remotamente usando o robô Spot da Boston Dynamics em nosso laboratório.
+  it: Siamo entusiasti di presentarvi il programma educativo Spot SDK! Il nostro obiettivo è farvi familiarizzare con l'SDK del Boston Dynamics Spot, consentendovi di testare le sue capacità utilizzandolo da remoto nel nostro laboratorio.
+  fr: Nous sommes ravis de vous présenter le programme éducatif Spot SDK ! Notre objectif est de vous familiariser avec Spot DSK et de vous permettre de tester vos compétences à distance en utilisant le robot Spot de Boston Dynamics situé dans notre laboratoire.
+  az: Biz sizə Spot SDK təhsil proqramını təqdim etməkdən məmnunuq! Məqsədimiz sizi Spot-un SDK-sı ilə tanış etmək və laboratoriyamızda Boston Dynamics Spot robotundan istifadə edərək bacarıqlarınızı uzaqdan yoxlamağa imkan verməkdir.
+  ja: Spot SDK教育プログラムを紹介することをうれしく思います！私たちの目標は、SpotのSDKに慣れてもらい、私たちのラボでボストンダイナミクスのSpotロボットをリモートで使用してスキルをテストできるようにすることです。
+  ko: 스팟 SDK 교육 프로그램을 소개해 드리게 되어 매우 기쁩니다! 저희의 목표는 스팟 SDK에 익숙해지도록 도와드리고, 저희 연구소에서 보스턴 다이내믹스 스팟 로봇을 원격으로 테스트할 수 있는 기회를 제공하는 것입니다.
+  es: ¡Nos complace presentarles el programa educativo Spot SDK! Nuestro objetivo es familiarizarlo con el SDK de Spot y permitirle probar sus habilidades de forma remota utilizando un robot Boston Dynamics Spot en nuestro laboratorio.
+  de: Wir freuen uns dir das Spot SDK-Bildungsprogramm vorstellen zu dürfen! Unser Ziel ist es, dich mit dem Spot SDK vertraut zu machen und dir die Möglichkeit zu geben deine Fähigkeiten mit einem Boston Dynamics Spot Roboter in unserem Labor zu testen.
+- alias: Sovereign smart home with robonomics and home assistant
+  en: Sovereign smart home with robonomics and home assistant
+  uk: Суверенний Розумний Дім З Robonomics Та Home Assistant
+  tr: Robonomi ve Ev Asistanı ile Egemen Akıllı Ev
+  ru: Cуверенный умный дом с Robonomics и home assistant
+  pt: Casa Inteligente Soberana com Robonomics e Home Assistant
+  it: Smart Home Sovrana con Robonomics e Home Assistant
+  fr: Maison intelligente Souvraine avec Robonomics et assistance domestique
+  az: Robonimics və Ev Köməkçisi ilə Suveren Ağıllı Ev
+  ja: RobonomicsとHome Assistantによる主権スマートホーム
+  ko: Robonomics그리고Home Assistant주권적인 스마트 홈
+  es: Sovereign Smart Home con Robonomics y Home Assistant
+  de: Souveränes Smart Home mit Robonomics und Heimassistent
+- alias: In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.
+  en: In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.
+  uk: У цьому курсі ви пройдете всі кроки, необхідні для того, щоб побудувати свій власний суверенний розумний будинок, головною перевагою якого є безпека/конфіденційність даних користувача.
+  tr: Bu kursta, ana avantajı kullanıcı verilerinin güvenliği / gizliliği olan kendi egemen akıllı evinizi inşa etmek için gerekli tüm adımları atacaksınız.
+  ru: В этом курсе вы пройдете все шаги, необходимые для того, чтобы построить свой собственный суверенный умный дом, главным преимуществом которого является безопасность/конфиденциальность пользовательских данных.
+  pt: Neste curso, você passará por todas as etapas necessárias para construir sua própria casa inteligente soberana, cuja principal vantagem é a segurança / privacidade dos dados dos usuários.
+  it: In questo corso, eseguirete tutti i passaggi necessari a costruire la vostra smart home sovrana, il cui vantaggio principale è la sicurezza / privacy dei dati dell'utente.
+  fr: Dans ce cours, vous passerez en revue toutes les étapes nécessaires pour construire votre propre maison intelligente Souvraine. Le principal avantage est la sécurité et la confidentialité des données des utilisateurs.
+  az: Bu kursda siz öz suveren ağıllı evinizi qurmaq üçün tələb olunan bütün addımlardan keçəcəksiniz, bunun əsas üstünlüyü istifadəçi məlumatlarının təhlükəsizliyi / məxfiliyidir.
+  ja: このコースでは、独自のスマートホームを構築するために必要なすべての手順を学びます。その主な利点は、ユーザーデータの安全性/プライバシーです。
+  ko: 이 강좌에서는 사용자 데이터의 안전/개인 정보 보호의 주요 이점을 가진 자체 주권적 스마트 홈을 구축하기 위해 필요한 모든 단계를 진행합니다.
+  es: En este curso, seguirá todos los pasos necesarios para construir su propia casa inteligente soberana, cuya principal ventaja es la seguridad/privacidad de los datos del usuario.
+  de: In diesem Kurs wirst du alle Schritte durchlaufen die erforderlich sind um dein eigenes souveränes Smart Home zu bauen, dessen Hauptvorteil die Sicherheit und der Schutz der Nutzerdaten ist.
 - alias: Get XRT
   az: XRT əldə edin
   de: Holen Sie sich XRT
@@ -982,66 +1249,97 @@
   tr: İnsanlığın geleceği, robotlara yeteneklerini kullanmayı nasıl öğrettiğimize
     bağlıdır.
   zh: 人类自身的未来取决于我们如何教机器人处理它们的能力。
-- alias: What is Robonomics?
-  az: Robonomika nədir?
-  de: Was ist Robonomics?
-  en: What is Robonomics?
-  es: ¿Qué es Robonomics?
-  fr: Qu'est-ce que la Robonomics ?
-  it: CHE COS'È ROBONOMICS?
-  ja: Robonomicsとは何か？
-  ko: Robonomics란 무엇인가요?
-  pt: O que é a Robonomics?
-  ru: Что такое Робономика?
-  uk: Що таке Робономіка?
-  tr: Robonomics nedir ?
-  zh: 什么是Robonomics？
-- alias: Robonomics is an open-source platform for IoT applications. We support a
-    new generation of internet technologies (web3) that implements the exchange of
-    technical and economic information in the form of atomic transactions between
-    user applications, IoT services, and complex robotics.
-  az: Robonomics əşyaların interneti tətbiqləri üçün açıq mənbə platformasıdır. Biz
-    istifadəçi proqramları, Əşyaların İnterneti xidmətləri və mürəkkəb robot texnikası
-    arasında atomar əməliyyatları şəklində texniki və iqtisadi məlumat mübadiləsini
-    həyata keçirən yeni nəsil İnternet texnologiyalarını (web3) dəstəkləyirik.
-  de: Robonomics ist eine Open-Source-Plattform für IoT-Anwendungen. Wir unterstützen
-    eine neue Generation von Internet-Technologien (web3), die den Austausch von technischen
-    und wirtschaftlichen Informationen in Form von atomaren Transaktionen zwischen
-    Benutzeranwendungen, IoT-Diensten und komplexer Robotik realisiert.
-  en: Robonomics is an open-source platform for IoT applications. We support a new
-    generation of internet technologies (web3) that implements the exchange of technical
-    and economic information in the form of atomic transactions between user applications,
-    IoT services, and complex robotics.
-  es: Robonomics es una plataforma de código abierto para aplicaciones de IoT. Apoyamos
-    una nueva generación de tecnologías de Internet (web3) que implementa el intercambio
-    de información técnica y económica en forma de transacciones atómicas entre aplicaciones
-    de usuario, servicios de IoT y robótica compleja.
-  fr: Robonomics est une plateforme open-source pour les applications IoT. Nous soutenons
-    une nouvelle génération de technologies Internet (web3) qui met en œuvre l’échange
-    d’informations techniques et économiques sous forme de transactions atomiques
-    entre les applications utilisateurs, les services IoT et la robotique complexe.
-  it: Robonomics è una piattaforma open source per applicazioni IoT. Supportiamo una
-    nuova generazione di tecnologie Internet (web3) che implementano lo scambio di
-    informazioni tecniche ed economiche sotto forma di transazioni atomiche tra applicazioni
-    utente, servizi IoT e robotica complessa.
-  ja: Robonomicsは、IoTアプリケーション向けのオープンソースプラットフォームです。私たちは、ユーザーアプリケーション、IoTサービス、複雑なロボット工学の間の原子トランザクションの形で技術的および経済的情報の交換を実装する新世代のインターネットテクノロジー（web3）をサポートします。
-  ko: Robonomics는 IoT 애플리케이션을 위한 오픈 소스 플랫폼입니다. 저희는 사용자 애플리케이션, IoT 서비스, 복잡한 로봇공학 사이에
-    원자 트랜잭션 형태로 기술 및 경제 정보를 교환하는 차세대 인터넷 기술(Web3)을 지원합니다.
-  pt: A Robonomics é uma plataforma de código aberto para aplicações IoT. Oferecemos
-    suporte a uma nova geração de tecnologias da internet (web3) que implementam a
-    troca de informações técnicas e econômicas na forma de transações atômicas entre
-    aplicações do usuário, serviços da Internet e robótica complexa.
-  ru: Робономика - это платформа с открытым исходным кодом для приложений Интернета
-    вещей. Мы поддерживаем новое поколение интернет-технологий (web3), которые реализуют
-    обмен технической и экономической информацией в форме атомарных транзакций между
-    пользовательскими приложениями, сервисами Интернета вещей и сложной робототехникой.
-  uk: Робономіка — це платформа з відкритим вихiдним кодом для програм Інтернету 
-    речей. Ми підтримуємо нове покоління інтернет-технологій (web3), які реалізують обмін технічною та економічною інформацією у формі атомарних транзакцій між додатками користувача, сервісами Інтернету речей і складною робототехнікою.
-  tr: Robonomics, IoT uygulamaları için açık kaynaklı bir platformdur. Kullanıcı uygulamaları,
-    IoT hizmetleri ve karmaşık robotik arasında atomik işlemler şeklinde teknik ve
-    ekonomik bilgi alışverişini uygulayan yeni nesil internet teknolojilerini (web3)
-    destekler.
-  zh: Robonomics是一个用于物联网应用的开源平台。我们支持新一代互联网技术 (web3)，这些技术在用户应用程序、物联网服务和复杂机器人之间以原子交易的形式实现技术和经济信息的交换。
+- alias: What is Robonomics network?
+  az: ROBONOMİKS ŞƏBƏKƏSİ NƏDİR?
+  de: WAS IST DAS ROBONOMICS NETZWERK?
+  en: What is Robonomics network?
+  es: ¿QUÉ ES ROBONOMICS NETWORK?
+  fr: QU’EST CE QUE ROBONOMICS NETWORK?
+  it: CHE COS'È ROBONOMICS NETWORK?
+  ja: ROBONOMICS NETWORK 何ですか 
+  ko: ROBONOMICS NETWORK란 무엇인가요?
+  pt: O QUE É A REDE ROBONOMICS?
+  ru: ЧТО ТАКОЕ ROBONOMICS NETWORK?
+  uk: ЩО ТАКЕ ROBONOMICS NETWORK?
+  tr: ROBONOMİCS NEDİR?
+- alias: Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
+  az: Robonomics, istifadəçi tətbiqləri, IoT xidmətləri və kompleks robotlar arasında atomik əməliyyatlar formunda texniki və iqtisadi məlumatların mübadiləsinə imkan verən IoT tətbiqləri üçün açıq mənbəli bir platformdur.
+  de: Robonomics ist eine Open Source Plattform für IoT-Anwendungen, die den Austausch von technischen und wirtschaftlichen Informationen in Form von Transaktionen zwischen Benutzeranwendungen, IoT-Diensten und komplexer Robotik ermöglicht.
+  en: Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
+  es: Robonomics es una plataforma de código abierto para aplicaciones IoT que permite el intercambio de información técnica y económica en forma de transacciones atómicas entre aplicaciones de usuario, servicios IoT y robótica compleja.
+  fr: Robonomics est une plateforme open-source pour les applications IOT qui permet l’échange d’informations techniques et économiques sous forme de transactions atomiques entre les applications utilisateurs, les services IoT et la robotique complexe.
+  it: Robonomics è una piattaforma open source per applicazioni IoT, che consente lo scambio di informazioni tecniche ed economiche sotto forma di transazioni atomiche fra applicazioni utente, servizi IoT e robotica complessa.
+  ja: Robonomicsは、IoTアプリケーション向けのオープンソースプラットフォームであり、ユーザーアプリケーション、IoTサービス、複雑なロボット間で原子トランザクションの形式で技術的および経済的情報の交換を可能にします。
+  ko: Robonomics는 사용자 응용 프로그램, IoT 서비스 및 복잡한 로봇 간의 원자 트랜잭션 형식으로 기술 및 경제 정보를 교환 할 수있게하는 오픈 소스 플랫폼 인 IoT 응용 프로그램입니다.
+  pt: Robonomics é uma plataforma de código aberto para aplicativos de IoT que permite a troca de informações técnicas e econômicas na forma de transações atômicas entre aplicativos do usuário, serviços de IoT e robótica complexa.
+  ru: Robonomics — это платформа с открытым исходным кодом для приложений Интернета вещей, которая обеспечивает обмен технической и экономической информацией в форме атомарных транзакций между пользовательскими приложениями, сервисами Интернета вещей и сложной робототехникой.
+  uk: Robonomics — це платформа з відкритим вихідним кодом для додатків IoT, яка забезпечує обмін технічною та економічною інформацією у формі атомарних транзакцій між додатками користувача, службами IoT і складною робототехнікою.
+  tr: Robonomics, kullanıcı uygulamaları, IoT hizmetleri ve karmaşık robotlar arasında atomik işlemler şeklinde teknik ve ekonomik bilgi alışverişini sağlayan IoT uygulamaları için açık kaynaklı bir platformdur.
+- alias: Decentralized application
+  en: Decentralized application
+  uk: ДЕЦЕНТРАЛІЗОВАНИЙ ДОДАТОК
+  tr: MERKEZİ OLMAYAN UYGULAMA
+  ru: ДЕЦЕНТРАЛИЗОВАННОЕ ПРИЛОЖЕНИЕ
+  pt: APLICAÇÃO DESCENTRALIZADA
+  it: APPLICAZIONE DECENTRALIZZATA
+  fr: APPLICATION DÉCENTRALISÉE
+  az: MƏRKƏZLƏŞDİRİLMƏMİŞ TƏTBİQ
+  ja: 分散型アプリケーション
+  ko: 분산 어플리케이션
+  es: APLICACIÓN DESCENTRALIZADA
+  de: DEZENTRALISIERTE ANWENDUNG
+- alias: Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.
+  en: Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.
+  ru: Децентрализованное приложение (dapp) работает в рамках Blockchain. Оно имеет открытый исходный код, а его данные хранятся на IPFS и Github. Эти технологии позволяют приложению быть безопасным и прозрачным одновременно. Наши разработчики работают как над созданием приложения Robonomics, так и над библиотеками, которые вы можете использовать при создании своего собственного dapp.
+  uk: Децентралізований додаток (dapp) працює в рамках Blockchain. Він має відкритий вихідний код, а його дані розміщуються на IPFS та Github. Ці технології дозволяють додатку бути одночасно безпечним і прозорим. Наші розробники працюють як над розробкою додатку Robonomics, так і над бібліотеками, які ви можете використовувати при створенні власного dapp.
+  tr: Merkezi olmayan uygulama (dapp) Blockchain içinde çalışır. Açık kaynak kodludur ve verileri IPFS ve Github üzerinde sunulur. Bu teknolojiler uygulamanın aynı zamanda güvenli ve şeffaf olmasını sağlar. Geliştiricilerimiz hem Robonomics'in uygulamasının geliştirilmesi hem de kendi dapp'ınızı oluştururken kullanabileceğiniz kütüphaneler üzerinde çalışmaktadır.
+  pt: A aplicação descentralizada (dapp) funciona dentro da Blockchain. É de fonte aberta e os seus dados são servidos em IPFS e Github. Estas tecnoligias permitem que a aplicação seja segura e transparente ao mesmo tempo. Os nossos criadores estão a trabalhar tanto no desenvolvimento da aplicação Robonomics como nas bibliotecas que pode utilizar na construção da sua própria dapp.
+  it: L'applicazione decentralizzata (dapp) funziona all'interno della Blockchain. È open source e i suoi dati sono archiviati su IPFS e Github. Queste tecnologie consentono all'applicazione di essere sicura e trasparente allo stesso tempo. I nostri sviluppatori lavorano sia allo sviluppo dell'applicazione di Robonomics sia alle librerie che potete utilizzare per costruire la vostra dapp.
+  fr: L'application décentralisée (dapp) fonctionne au sein de la blockchain. Elle est open source et ses données sont stockées sur IPFS et Github. Ces technologies permettent à l'application d'être à la fois sécurisée et transparente. Nos développeurs travaillent à la fois sur le développement de l'application Robonomics et sur les bibliothèques que vous pouvez utiliser pour construire votre propre dapp.
+  az: Mərkəzləşdirilməmiş proqram (dapp) Blockchain daxilində işləyir. Açıq mənbədir və onun məlumatları IPFS və Github-da xidmət göstərir. Bu texnologiyalar tətbiqin eyni zamanda təhlükəsiz və şəffaf olmasına imkan verir. Tərtibatçılarımız həm Robonomics proqramının inkişafı, həm də öz dap-nizi qurarkən istifadə edə biləcəyiniz kitabxanalar üzərində işləyirlər.
+  ja: 分散型アプリケーション（dapp）は、ブロックチェーン内で動作します。オープンソースで、データはIPFSとGithubで提供されます。これらの技術により、アプリケーションの安全性と透明性を同時に確保することができます。私たちの開発者は、ロボノミクスのアプリケーションの開発と、あなた自身のアプリケーションを構築する際に使用できるライブラリの開発の両方に取り組んでいます。
+  ko: 탈중앙화 애플리케이션(dapp)은 블록체인 내에서 작동합니다. 오픈 소스이며 데이터는 IPFS와 Github에서 제공됩니다. 이러한 기술을 통해 애플리케이션의 보안과 투명성을 동시에 확보할 수 있습니다. 로보노믹스의 개발자들은 로보노믹스의 애플리케이션 개발과 자체 디앱을 구축할 때 사용할 수 있는 라이브러리 개발 모두에 힘쓰고 있습니다.
+  es: La aplicación descentralizada (dapp) funciona dentro de Blockchain. Es de código abierto y sus datos se sirven en IPFS y Github. Estas tecnologías permiten que la aplicación sea segura y transparente al mismo tiempo. Nuestros desarrolladores están trabajando tanto en el desarrollo de la aplicación Robonomics y en las bibliotecas que se pueden utilizar al construir su propia dapp.
+  de: Dezentrale Anwendung (dapp) arbeitet innerhalb der Blockchain. Sie ist quelloffen und ihre Daten werden auf IPFS und Github bereitgestellt. Diese Technologien ermöglichen eine sichere und transparente Anwendung zur gleichen Zeit. Unsere Entwickler arbeiten sowohl an der Entwicklung der Robonomics-Anwendung als auch an den Bibliotheken, die Sie beim Aufbau Ihrer eigenen Dapp verwenden können.
+- alias: Digital Twin is one of the instruments provided by Robonomics Web Services (RWS). It acts as a digital version of the real-world equipment and copies all of its technical characteristics. It allows to make a decentralized app more responsive to the user’s commands.
+  en: Digital Twin is one of the instruments provided by Robonomics Web Services (RWS). It acts as a digital version of the real-world equipment and copies all of its technical characteristics. It allows to make a decentralized app more responsive to the user’s commands.
+  uk: 'Цифровий двійник — це один із інструментів, що надаються Robonomics Web Services (RWS). Він діє як цифрова версія реального обладнання та копіює всі його технічні характеристики. Це дозволяє зробити децентралізовану програму більш чуйною на команди користувача.'
+  tr: 'Digital Twin, Robonomics Web Services (RWS) tarafından sağlanan araçlardan biridir. Gerçek dünyadaki ekipmanın dijital bir versiyonu gibi davranır ve tüm teknik özelliklerini kopyalar. Merkezi olmayan bir uygulamanın kullanıcının komutlarına daha duyarlı olmasını sağlar.'
+  ru: Цифровой двойник — это один из инструментов, предоставляемых Robonomics Web Services (RWS). Он действует как цифровая версия реального оборудования и копирует все его технические характеристики. Это позволяет сделать децентрализованное приложение более отзывчивым на команды пользователя.
+  pt: O Gêmeo Digital (Digital Twin) é um dos instrumentos fornecidos pela Robonomics Web Services (RWS). Ele atua como uma versão digital do equipamento do mundo real e copia todas as suas características técnicas. Ele permite tornar um aplicativo descentralizado mais responsivo aos comandos do usuário.
+  it: Il Digital Twin è uno degli strumenti forniti da Robonomics Web Services (RWS). Agisce come una versione digitale della strumentazione nel mondo reale e ne copia tutte le caratteristiche tecniche. Permette di rendere un'app decentralizzata più reattiva ai comandi dell'utente.
+  fr: Digital Twin est l’un des instruments fournis par Robonomics Web Services (RWS). Il agit comme une version numérique de l’équipement du monde réel et copie toutes ses caractéristiques techniques. Il permet de rendre une application décentralisée plus sensible aux commandes de l’utilisateur.
+  az: Rəqəmsal əkiz, Robonomics Veb Xidmətləri (RWS) tərəfindən təqdim edilən bir alətdir. O, həqiqi dünya avadanlığının rəqəmsal versiyası kimi çıxış edir və onun bütün texniki xüsusiyyətlərini köçürür. Bu, mərkəzləşdirilməmiş bir tətbiqi istifadəçinin əmrlərinə daha çox istifadə etməyə imkan verir.
+  ja: デジタルツインは、Robonomics Web Services (RWS) が提供するツールの1つです。それは、現実世界の機器のデジタル版であり、その技術的特性をすべてコピーします。これにより、分散型アプリケーションをユーザーのコマンドにより迅速に対応することができます。
+  ko: 디지털 트윈은 로보노믹스 웹 서비스(RWS)에서 제공하는 기기 중 하나입니다. 실제 장비의 디지털 버전으로 작동하며 기술적 특성을 전부 복사합니다. 이를 통해 분산 앱이 사용자의 명령에 더 빠르게 대응할 수 있습니다.
+  es: Digital Twin (gemelo  digital) es uno de los instrumentos proporcionados por Robonomics Web Services (RWS). Actúa como una versión digital del equipo del mundo real y copia todas sus características técnicas. Permite hacer que una aplicación descentralizada responda mejor a los comandos del usuario.
+  de: Der digital Twin ist eines der Instrumente, die von Robonomics Web Services (RWS) bereitgestellt werden. Er fungiert als digitale Version des physischen Geräts und kopiert alle seine technischen Merkmale. Er ermöglicht es, eine dezentralisierte App besser auf die Befehle des Benutzers reagieren zu lassen.
+- alias: IoT / Smart device
+  en: IoT / Smart device
+  uk: IOT/РОЗУМНИЙ ПРИСТРІЙ
+  tr: IoT/AKILLI CİHAZ
+  ru: IOT/УМНОЕ УСТРОЙСТВО
+  pt: DISPOSITIVO IOT/INTELIGENTE 
+  it: IOT/SMART DEVICE
+  fr: INTERNET DES OBJETS/APPAREIL INTELLIGENT
+  az: İOT/AĞILLI CİHAZ
+  ja: IoT/スマートデバイス
+  ko: 사물인터넷(IOT)/스마트 기기
+  es: IOT/DISPOSITIVO INTELIGENTE
+  de: IOT/SMARTE GERÄT
+- alias: You can use Robonomics with a wide range of Zigbee smart devices to automate and control various aspects of your home/office or use it with ROS-based robotics for more complex industrial tasks.
+  en: You can use Robonomics with a wide range of Zigbee smart devices to automate and control various aspects of your home/office or use it with ROS-based robotics for more complex industrial tasks.
+  uk: Ви можете використовувати Robonomics з широким спектром розумних пристроїв Zigbee для автоматизації та управління різними аспектами вашого будинку/офісу або використовувати її з робототехнікою на основі ROS для більш складних промислових завдань.
+  tr: Robonomics'i, evinizin/ofisinizin çeşitli yönlerini otomatikleştirmek ve kontrol etmek için çok çeşitli Zigbee akıllı cihazlarla kullanabilir veya daha karmaşık endüstriyel görevler için ROS tabanlı robotlarla birlikte kullanabilirsiniz.
+  ru: Вы можете использовать Robonomics с широким спектром умных устройств Zigbee для автоматизации и управления различными аспектами вашего дома/офиса или использовать ее с робототехникой на основе ROS для более сложных промышленных задач.
+  pt: Você pode usar a Robonomics com uma ampla gama de dispositivos inteligentes Zigbee para automatizar e controlar vários aspectos de sua casa/escritório ou usá-la com robótica baseada em ROS para tarefas industriais mais complexas.
+  it: Potete usufruire di Robonomics con un'ampia gamma di smart device Zigbee per automatizzare e controllare vari aspetti della vostra casa/ufficio o utilizzarlo con la robotica basata su ROS per attività industriali più complesse.
+  fr: Vous pouvez utiliser Robonomics avec une large gamme d’appareils intelligents Zigbee pour automatiser et contrôler différents aspects de votre maison / bureau ou l’utiliser avec la robotique basée sur ROS pour des tâches industrielles plus complexes.
+  az: Siz evinizin/ofisinizin müxtəlif aspektlərini avtomatlaşdırmaq və idarə etmək üçün geniş çeşiddə Zigbee ağıllı cihazları ilə Robonimics-dan istifadə edə və ya daha mürəkkəb sənaye tapşırıqları üçün ROS əsaslı robototexnika ilə istifadə edə bilərsiniz.
+  ja: Robonomicsを使用することで、Zigbeeスマートデバイスの幅広い範囲を自動化および制御することができます。これにより、家庭/オフィスのさまざまな側面を制御することができます。また、ROSベースのロボット工学に使用して、より複雑な産業タスクを実行することもできます。
+  ko: 로보노믹스를 사용하면 다양한 Zigbee 스마트 기기와 함께 사용하여 집/사무실의 다양한 측면을 자동화하고 제어할 수 있으며, ROS 기반 로봇 공업 작업에 사용할 수도 있습니다.
+  es: Puede usar Robonomics con una amplia gama de dispositivos inteligentes Zigbee para automatizar y controlar varios aspectos de su hogar/oficina o usarlo con robótica basada en ROS para tareas industriales más complejas.
+  de: Du kannst Robonomics mit einer breiten Palette von intelligenten Zigbee-Geräten verwenden, um verschiedene Aspekte deines Zuhauses/Büros zu automatisieren und zu steuern oder es mit ROS basierter Robotik für komplexere industrielle Aufgaben einsetzen.
 - alias: User (D)App
   az: Tətbiq
   en: User (D)App
@@ -9687,3 +9985,577 @@
   en: Robonomics Color pallet
 - alias: "These colors we use in our interfaces, prints, and other visuals. </br> Use it for your slides, banners for posts etc telling about Robonomics."
   en: "These colours we use in our interfaces, prints, and other visuals. </br> Use it for your slides, banners for posts etc telling about Robonomics."
+
+- alias: Want emails from robonomics
+  en: Want emails from robonomics
+  ru: Хотите письма от robonomics
+  uk: Бажаєте листи від robonomics
+  es: Quiero emails de robonomics
+  it: Voglio ricevere email da robonomics
+  pt: Quer receber e-mails da Robonomics
+  fr: Vous voulez des e-mails de robonomics
+  de: Möchte Emails von Robonomics erhalten
+  tr: Robonomics'ten e-posta almak istiyorum
+  az: Robonimcs-dan e-poçt almaq istəyirəm
+  ko: 로보노믹스 이메일을 받고 싶습니다
+  ja: ロボノミクスからのメールを受け取りたいです。
+
+- alias: Adding you to our special list...
+  en: Adding you to our special list...
+  ru: добавляем вас в наш специальный список
+  uk: додаючи вас до нашого спеціального списк
+  es: Agregandote a nuestra lista especial...
+  it: Vi aggiungiamo alla nostra lista speciale..
+  pt: Adicionando-o à nossa lista especial...
+  fr: Vous ajouter à notre liste spéciale...
+  de: Wir setzen dich auf eine besondere Liste
+  tr: Sizi özel listemize ekliyoruz...
+  az: Sizi xüsusi siyahımıza əlavə edirik...
+  ko: 특별 목록에 당신을 추가합니다...
+  ja: 私たちの特別リストに追加します...
+
+- alias: Nice, you are in the list
+  en: Nice, you are in the list
+  ru: Прекрасно, вы в списке
+  uk: Чудово, ви у списку
+  es: Genial, estás en la lista.
+  it: Ottimo, siete in lista
+  pr: Ótimo, você está na lista
+  fr: Nice, vous êtes dans la liste
+  de: Perfekt, du bist auf der Liste
+  tr: Harika, listedesin!
+  az: Əla, siyahıdasınız
+  ko: 좋아요, 당신은 목록에 있습니다
+  ja: いいですね、リストに入っていますね。
+
+- alias: Something went  wrong. Try again later
+  en: Something went  wrong. Try again later
+  ru: Что-то пошло не так. Попробуйте ещё раз позднее
+  uk: Щось пішло не так. Спробуйте ще раз пізніше
+  es: Algo salió mal. Vuelva a intentarlo más tarde
+  it: Qualcosa è andato storto. Riprova più tardi
+  pt: Algo deu errado. Tente novamente mais tarde
+  fr: Quelque chose a mal tourné. Réessayez plus tard
+  de: Es ist ein Fehler aufgetreten. Bitte versuche es später noch einmal
+  tr: Bir şeyler yanlış gitti. Daha sonra tekrar deneyin
+  az: Xəta baş verdi. Biraz sonra yenidən cəhd edin
+  ko: 문제가 발생했습니다. 나중에 다시 시도해주세요
+  ja: 何か問題が発生しました。後でもう一度お試しください。
+
+- alias: Your email
+  en: Your email
+  ru: Ваш email
+  uk: Ваш email
+  es: Tu email
+  it: Vostra email
+  pt: Seu email
+  fr: Votre e-mail
+  de: Deine Email
+  tr: E-posta adresiniz
+  az: E-poçtunuz
+  ko: 당신의 이메일
+  ja: あなたのメール
+
+
+- alias: Robonomics tokenomics
+  en: Robonomics tokenomics
+  ru: ТОКЕНОМИКА ROBONOMICS
+  uk: ТОКЕНОМІКА ROBONOMICS
+  es: TOKENOMICS DE ROBONOMICS
+  it: ROBONOMICS TOKENOMICS
+  pt: TOKENOMIA DA ROBONOMICS
+  fr: ROBONOMICS TOKENOMIQUE
+  de: ROBONOMICS TOKENOMICS
+  tr: ROBONOMICS TOKENOMIKSLERİ
+  az: ROBONOMİCS TOKENOMİCS-i
+  ko: 토큰노믹스ROBONOMICS
+  ja: トークノミクスROBONOMICS
+
+- alias: is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.
+  en: is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.
+  ru: — это служебный токен, который позволит управлять IoT-устройствами поверх сети Ethereum и парачейна Robonomics в экосистеме Polkadot.
+  uk: — це службовий токен, який дозволить керувати IoT-пристроями поверх мережі Ethereum та парачейну Robonomics в екосистемі Polkadot. 
+  es: es el token de utilidad que permitirá controlar los dispositivos IoT sobre la red Ethereum y la parachain de Robonomics en el ecosistema Polkadot.
+  it: è l'utility token che consentirà di controllare i dispositivi IoT su Ethereum e sulla parachain Robonomics nell'ecosistema Polkadot. 
+  pt: é o token de utilidade que tornará possível controlar dispositivos IoT no topo da rede Ethereum e na parachain Robonomics no ecossistema Polkadot.
+  fr: est le jeton utilitaire qui permettra de contrôler les appareils IoT sur le réseau Ethereum et le parachain Robonomics dans l’écosystème Polkadot.
+  de: ist der Utility-Token, der die Steuerung von IoT-Geräten über das Ethereum-Netzwerk und die Robonomics-Parachain im Polkadot-Ökosystem erst ermöglicht.
+  tr: ',Polkadot ekosistemindeki Ethereum ağı ve Robonomics parachain üzerindeki IoT cihazlarını kontrol etmeyi mümkün kılacak yardımcı program simgesidir.' 
+  az: ',Ethereum Şəbəkəsinin və Polkadot ekosistemində Robonomics Parachain-də İOT cihazlarını idarə etməyə imkan verən faydalı tokendir.'
+  ko: 는 이더리움 네트워크 상에서와 Polkadot 생태계의 Robonomics 파라체인 상에서 IoT 기기를 제어할 수 있게 만드는 유틸리티 토큰입니다. 
+  ja: は、イーサリアムネットワークとポルカドットエコシステムのRobonomicsパラチェーン上のIoTデバイスを制御するためのユーティリティトークンです。
+
+- alias: The task of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.
+  en: The task of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.
+  ru: Задача токена Robonomics — обеспечить работу децентрализованной сети для обслуживания Умных городов и Индустрии 4.0 в инфраструктуре блокчейна. Для достижения этой цели экономика токена должна отражать стимулы для реализации сети.
+  uk: Завдання токена Robonomics — забезпечити роботу децентралізованої мережі для обслуговування Розумних міст та Індустрії 4.0 в інфраструктурі блокчейну. Для досягнення цієї мети економіка токена повинна відбивати стимули для реалізації мережі.
+  es: La tarea del token de Robonomics es asegurar el funcionamiento de una red descentralizada para el mantenimiento de las Ciudades Inteligentes y la Industria 4.0 en la infraestructura blockchain. Para lograr este objetivo, la economía de los token debe reflejar los incentivos para la implementación de la red.
+  it: Il compito del token di Robonomics è garantire il funzionamento di una rete decentralizzata per il mantenimento di Smart Cities e dell'Industria 4.0 sull'infrastruttura blockchain. Per raggiungere questo obiettivo, la token economy deve riflettere gli incentivi per l'implementazione della rete.
+  pt: A tarefa do token da Robonomics é garantir a operação de uma rede descentralizada para a manutenção de Cidades Inteligentes e Indústria 4.0 na infraestrutura blockchain. Para atingir este objetivo, a economia do token precisa refletir os incentivos para a implementação da rede.
+  fr: La tâche du jeton Robonomics est d’assurer le fonctionnement d’un réseau décentralisé pour la maintenance des Smart Cities et de l’Industrie 4.0 dans l’infrastructure blockchain. Pour atteindre cet objectif, l’économie symbolique doit refléter les incitations à la mise en œuvre du réseau.
+  de: Die Aufgabe des Robonomics-Tokens ist es, den Betrieb eines dezentralen Netzwerks für die Wartung von Smart Cities und Industrie 4.0 in der Blockchain-Infrastruktur zu gewährleisten. Um dieses Ziel zu erreichen, muss die Token-Wirtschaft die Anreize für die Implementierung des Netzwerks widerspiegeln.
+  tr: Robonomics belirtecinin görevi, Blockchain altyapısında Akıllı Şehirler ve Endüstri 4.0'ın bakımı için merkezi olmayan bir ağın çalışmasını sağlamaktır. Bu hedefe ulaşmak için, belirteç ekonomisinin ağın uygulanmasına yönelik teşvikleri yansıtması gerekir.
+  az: Robonomomics tokenin tapşırığı, blokchain infrastrukturunda ağıllı şəhərlər və sənayə 4.0 xidmət üçün mərkəzləşdirilməmiş bir şəbəkənin işləməsini təmin etməkdir. Bu məqsədə çatmaq üçün, token iqtisadiyyatı şəbəkənin icrası üçün stimulları əks etdirməlidir.
+  ko: Robonomics 토큰의 역할은 블록체인 인프라에서 스마트 시티와 4차 산업 혁명의 유지보수를 위한 분산 네트워크 운영을 보장하는 것입니다. 이를 위해 토큰 경제는 네트워크 구현을 위한 인센티브를 반영해야 합니다.
+  ja: Robonomicsトークンの役割は、ブロックチェーンインフラストラクチャでのスマートシティとIndustry 4.0のメンテナンスのための分散型ネットワークの運営を確保することです。この目標を達成するためには、トークンエコノミーはネットワークの実装に対するインセンティブを反映する必要があります。
+
+- alias: Be aware of scammers
+  en: Be aware of scammers
+  uk: 'Стережіться шахраїв'
+  ru: Остерегайтесь мошенников
+  es: Tenga cuidado con los estafadores
+  it: Fai attenzione ai truffatori
+  pt: Esteja atento aos golpistas
+  fr: Soyez conscient des fraudeurs
+  de: Sicherheit vor Betrügern
+  tr: Dolandırıcılara dikkat edin
+  az: Fırıldaqçılardan xəbərdar olun
+  ko: 사기꾼에 주의하세요
+  ja: 詐欺師に注意してください
+
+- alias: please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our
+  en: please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our
+  ru: пожалуйста, используйте только известные рынки для обмена XRT. Не отправляйте свои токены на аккаунты, отправленные вам в личных сообщениях, какую бы транзакцию вы ни хотели совершить (купить или продать токен). Если вы получили какие-либо «громкие заявления» о токене Robonomics (мошенники часто используют что-то вроде объявления об airdrop), пожалуйста, проверьте этот сайт (https://robonomics.network/) или наш
+  uk: будь ласка, використовуйте тільки відомі ринки для обміну XRT. Не надсилайте свої токени на акаунти, надіслані вам в особистих повідомленнях, яку б транзакцію ви не хотіли зробити (купити або продати токен). Якщо ви отримали будь-які «гучні заяви» про токені Robonomics (шахраї часто використовують щось на зразок оголошення про airdrop), будь ласка, перевірте цей сайт (https://robonomics.network/) або наш
+  es: use solo exchange bien conocidos para intercambiar XRT. No envíes tus tokens a cuentas que te den en mensajes privados sea cual sea la transacción que quieras realizar (comprar o vender token). Si recibió alguna "declaración fuerte" sobre el token de Robonomics (los estafadores a menudo usan algo como un anuncio de airdrop), consulte este sitio web (https://robonomics.network/) o nuestro 
+  it: utilizza solo mercati noti per scambiare XRT. Qualunque transazione tu voglia effettuare (acquista o vendi token), non inviare i tuoi token agli account che ti vengono forniti nei messaggi privati. Se hai ricevuto "dichiarazioni rumorose" sul token di Robonomics (i truffatori spesso utilizzano l'annuncio di airdrop), controlla questo sito web (https://robonomics.network/) o il nostro 
+  pt: por favor, use apenas mercados bem conhecidos para trocar XRT. Não envie seus tokens para contas que lhe são fornecidas em mensagens privadas, qualquer que seja a transação que você gostaria de realizar (comprar ou vender tokens). Se você recebeu alguma "mensagem estrondosa" sobre o token da Robonomics (os golpistas costumam usar algo como anúncio de airdrop), por favor, verifique este website (https://robonomics.network/) ou nosso 
+  fr: s’il vous plaît utiliser seulement les marchés bien connus pour échanger XRT. N’envoyez pas vos jetons aux comptes qui vous sont donnés dans des messages privés quelle que soit la transaction que vous souhaitez effectuer (acheter ou vendre jeton). Si vous avez reçu des « déclarations bruyantes » au sujet du jeton Robonomics (les fraudeurs utilisent souvent quelque chose comme une annonce de largage), veuillez consulter ce site Web (https://robonomics.network/) ou notre compte
+  de: Bitte benutzen Sie nur bekannte Märkte, um XRT zu tauschen. Senden Sie Ihre Token nicht an Konten, die Ihnen in privaten Nachrichten mitgeteilt werden, egal welche Transaktion Sie durchführen möchten (Token kaufen oder verkaufen). Wenn Sie irgendwelche "Ankündigungen" über Robonomics-Token erhalten haben (Betrüger verwenden oft so etwas wie eine Airdrop-Ankündigung), überprüfen Sie bitte diese Website (https://robonomics.network/) oder unseren 
+  tr: XRT alışverişi yapmak için lütfen yalnızca iyi bilinen pazarları kullanın. Size özel mesajlarda verilen hesaplara hangi işlemi yapmak isterseniz (token almak veya satmak) tokenlerinizi göndermeyiniz. Robonomics belirteci hakkında herhangi bir "gürültülü ifade" aldıysanız (dolandırıcılar genellikle airdrop duyurusu gibi bir şey kullanır), resmi güncellemeler için lütfen bu web sitesini (https://robonomics.network/) veya
+  az: XRT mübadiləsi üçün yalnız tanınmış bazarlardan istifadə edin. Hər hansı əməliyyat (token almaq və ya satmaq) keçirdmık istədiyiniz hallarda tokenlərinizi özəl mesajlarda sizə verilən hesablara göndərməyin. Rəbonomics token haqqında hər hansı bir "yüksək səsli ifadələr" alsanız (fırıldaqçılar tez-tez "airdrop elanı" kimi bir şey istifadə edirlər), bu veb saytı (https://robonomics.network/) və ya rəsmi 
+  ko: XRT를 교환하기 위해서는 잘 알려진 마켓만 사용해야 합니다. 구매나 판매 토큰을 포함한 모든 거래에서, 개인 메시지로 제공된 계정으로 토큰을 보내지 마십시오. 로보노믹스 토큰에 대해 어떠한 '큰 발표'도 받았다면 (사기꾼들은 종종 에어드롭 알림과 같은 것을 사용합니다), 공식 업데이트를 위하여 로보노믹스 네트워크 웹사이트(https://robonomics.network/)나
+  ja: XRTを交換するためには、よく知られた市場のみを使用してください。トークンを買ったり売ったりする場合でも、プライベートメッセージであなたに与えられたアカウントにトークンを送信しないでください。Robonomicsトークンに関する「大きな声明」が届いた場合（詐欺師はしばしばエアドロップの発表などを利用することがあります）、公式の更新情報を確認するためにWebサイト（https://robonomics.network/）または
+
+- alias: for official updates. Be careful, be safe.
+  en: for official updates. Be careful, be safe.
+  ru: для получения официальных обновлений. Будьте осторожны, будьте в безопасности.
+  uk: для отримання офіційних оновлень. Будьте обережні, будьте у безпеці.
+  es: para obtener actualizaciones oficiales. Ten cuidado, mantente a salvo.
+  it: per gli aggiornamenti ufficiali. State attenti, state al sicuro.
+  pt: para atualizações oficiais. Tenha cuidado, esteja a salvo.
+  fr: pour obtenir des mises à jour officielles. Soyez prudent, soyez prudent.
+  de: für offizielle Updates. Seien Sie vorsichtig, bleiben Sie sicher.
+  tr: "'ımızı kontrol edin. Dikkatli ol, güvende ol."
+  az: "-imizi yeniləmələr üçün yoxlayın. Ehtiyatlı olun, təhlükəsiz olun."
+  ko: 확인하십시오. 조심하세요, 안전하게 거래하세요.
+  ja: をチェックしてください。注意して安全に行動してください。
+
+- alias: XRT in Ethereum
+  en: XRT in Ethereum
+  ru: XRT В ETHEREUM
+  uk: XRT У ETHEREUM
+  es: XRT EN ETHEREUM
+  it: XRT SU ETHEREUM
+  pt: XRT NA ETHEREUM
+  fr: XRT DANS ETHEREUM
+  de: XRT IN ETHEREUM
+  tr: ETHEREUM'DA XRT
+  az: XRT ETHEREUM-da
+  ko: 이더리움에서의 XRT
+  ja: イーサリアム上のXRT
+
+- alias: Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. We needed to think about the lifecycle of each individual smart device’s liability to perform a service. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with a significant improvements in Ethereum.
+  en: Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. We needed to think about the lifecycle of each individual smart device’s liability to perform a service. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with a significant improvements in Ethereum.
+  ru: Реализуя проект Robonomics в 2015-2018, команде проекта необходимо было найти связь между обеспечением сетью Robonomics полезной функции, а именно запуском IoT-устройств по модели «робот как услуга», и возмещением затрат провайдеров Robonomics на комиссию за газ в Ethereum. Нам нужно было подумать о жизненном цикле обязательства каждого отдельного смарт-устройства за выполнение услуги. В результате ранних исследований и разработок в Robonomics команда разработала механизм майнинга новых токенов для вознаграждения каждого созданного смарт-контракта формата «робот как услуга». Эта модель остается жизнеспособной для будущего Robonomics на Ethereum, но только со значительными улучшениями в Ethereum.
+  uk: Реалізуючи проект Robonomics у 2015-2018, команді проекту необхідно було знайти зв'язок між забезпеченням мережею Robonomics корисної функції, а саме запуском IoT-пристроїв за моделлю «робот як послуга», та відшкодуванням витрат провайдерів Robonomics на комісію за газ у Ethereum. Нам потрібно було подумати про життєвий цикл зобов'язання кожного окремого смарт-пристрою за виконання послуги. В результаті ранніх досліджень та розробок у Robonomics команда розробила механізм майнінгу нових токенів для винагороди кожного створеного смарт-контракту формату «робот як послуга». Ця модель залишається життєздатною для майбутнього Robonomics на Ethereum, але лише зі значними покращеннями у Ethereum.
+  es: Al implementar el proyecto Robonomics entre 2015 y 2018, el equipo del proyecto necesitaba encontrar una conexión entre la provisión de una función útil por parte de Robonomics Network, a saber, el lanzamiento de dispositivos IoT según el modelo de robot como servicio, y el reembolso del costos a proveedores de Robonomics por tarifas de gas en Ethereum. Necesitábamos pensar en el ciclo de vida de la responsabilidad de cada dispositivo inteligente individual para realizar un servicio. Como resultado de la I+D inicial en Robonomics, el equipo ideó un mecanismo para extraer nuevos tokens para recompensar cada contrato inteligente de robot como servicio creado. Este modelo sigue siendo viable para el futuro de Robonomics en Ethereum, pero solo con mejoras significativas en Ethereum.
+  it: Implementando il progetto Robonomics nel 2015-2018, il team aveva bisogno di trovare una connessione tra la fornitura di una funzione utile da parte di Robonomics Network, ovvero il lancio di dispositivi IoT secondo il modello robot-as-a-service, e il rimborso dei costi per le gas fee su Ethereum ai provider di Robonomics. Avevamo bisogno di pensare al ciclo vita della responsabilità di ogni singolo dispositivo intelligente per eseguire un servizio. Come risultato delle prime attività di ricerca e sviluppo su Robonomics, il team ha ideato un meccanismo per minare nuovi token e ricompensare ogni smart contract robot-as-a-service creato. Questo modello rimane valido per il futuro di Robonomics su Ethereum, ma solo con miglioramenti significativi a Ethereum.
+  pt: Ao implementar o projeto Robonomics em 2015 - 2018, a equipe do projeto precisava encontrar uma conexão entre o fornecimento de uma função útil pela Rede Robonomics, ou seja, o lançamento de dispositivos IoT de acordo com o modelo robot-as-a-service, e o reembolso dos custos para os provedores da Robonomics pelas taxas de gás na Ethereum. Precisávamos pensar no ciclo de vida da responsabilidade de cada dispositivo inteligente individual para realizar um serviço. Como resultado do início da P&D na Robonomics, a equipe criou um mecanismo para minerar novos tokens para recompensar cada contrato inteligente de robot-as-a-service. Este modelo continua viável para o futuro da Robonomics na Ethereum, mas somente com melhorias significativas na Ethereum.
+  fr: Lors de la mise en œuvre du projet Robonomics en 2015 - 2018, l'équipe du projet devait trouver un lien entre la fourniture d'une fonction utile par Robonomics Network, à savoir le lancement d'appareils IoT selon le modèle robot-as-a-service, et le remboursement de la coûts aux fournisseurs Robonomics pour les frais de gaz dans Ethereum. Nous devions réfléchir au cycle de vie de la responsabilité de chaque appareil intelligent pour effectuer un service. À la suite des premières recherches et développements en Robonomics, l'équipe a mis au point un mécanisme d'extraction de nouveaux jetons pour récompenser chaque contrat intelligent de robot en tant que service créé. Ce modèle reste viable pour l'avenir de Robonomics sur Ethereum, mais seulement avec des améliorations significatives dans Ethereum.
+  de: Bei der Impementierung des Robonomics-Projekts in den Jahren 2015 bis 2018 musste das Projektteam eine Verbindung zwischen der Bereitstellung einer nützlichen Funktion durch das Robonomics-Netzwerk, nämlich der Inbetriebnahme von IoT-Geräten nach dem Robot-as-a-Service-Modell und der Rückerstattung der Kosten an Robonomics-Anbieter in Ethereum finden. Wir mussten über den Lebenszyklus jedes einzelnen smarten Geräts nachdenken, das für die Erbringung einer Dienstleistung haftet. Als Ergebnis der frühen Forschung und Entwicklung von Robonomics entwickelte das Team einen Mechanismus zum Schürfen neuer Token, um jeden erstellten Robot-as-a-Service-Smart-Contract zu belohnen. Dieses Modell bleibt für die Zukunft von Robonomics auf Ethereum realisierbar, allerdings nur mit einer deutlichen Verbesserung von Ethereum.
+  tr: 2015 - 2018'de Robonomics projesini uygulayan proje ekibinin, Robonomics Network tarafından faydalı bir işlevin sağlanması, yani IoT cihazlarının hizmet olarak robot modeline göre piyasaya sürülmesi ile geri ödenmesi arasında bir bağlantı bulması gerekiyordu. Ethereum'daki gaz ücretleri için Robonomics sağlayıcılarına maliyeti. Her bir akıllı cihazın bir hizmeti yerine getirme sorumluluğunun yaşam döngüsü hakkında düşünmemiz gerekiyordu. Robonomics'teki ilk Ar-Ge'nin bir sonucu olarak ekip, oluşturulan her bir hizmet olarak robot akıllı sözleşmesini ödüllendirmek için yeni belirteç madenciliği için bir mekanizma geliştirdi. Bu model, Robonomics'in Ethereum'daki geleceği için geçerli olmaya devam ediyor, ancak yalnızca Ethereum'da önemli iyileştirmelerle.
+  az: 2015-2018-ci illərdə Robonomics layihəsini tətbiq edərkən, layihə komandasının məqsədi, əsasən, robot-xidmət-kimi modelinə uyğun olaraq IoT cihazlarının işə salınması və Ethereum-dakı qaz haqlarının Robonomics təchizatçılarına geri ödənilməsi arasında əlaqəni tapmaq idi. Bir xidmət etmək üçün hər bir fərdi ağıllı cihazın öhdəliyinin ömrü haqqında düşünməliyik. Robonomics-də əvvəlcədən aparılan Tədqiqat və İnkişafın nəticəsi olaraq, komanda yaradılmış hər robot-xidmət-kimi smart kontraktının mükafatlandırılması üçün yeni tokenlər çıxarma mekanizmi ilə çıxış edib. Bu model, Ethereum üzərindəki Robonomics'ın gələcəyi üçün hələ də əlverişlidir, lakin yalnız Ethereumda əhəmiyyətli təkmilləşdirmələr edildikdə imkanlıdır.
+  ko: 2015-2018년에 Robonomics 프로젝트를 구현하면서 프로젝트 팀은 Robonomics 네트워크가 유용한 기능을 제공하고, 즉 로봇 서비스 모델에 따라 IoT 기기를 시작하는 것과 Ethereum의 가스 수수료를 Robonomics 제공자에게 보상하는 연결점을 찾아야 했습니다. 각 개별 스마트 기기의 서비스 수행 책임 주기를 생각해야 했습니다. Robonomics의 초기 R&D 결과, 팀은 새로운 토큰을 채굴하기 위한 메커니즘을 고안하여 생성된 각 로봇 서비스 스마트 계약에 보상을 제공하였습니다. 이 모델은 Ethereum의 중요한 개선이 이루어져야만 Robonomics의 미래에 대해 유지될 수 있습니다.
+  ja: ロボノミクスプロジェクトを2015年から2018年まで実装するにあたり、プロジェクトチームは、Robonomics Networkによる有用な機能の提供、すなわちIoTデバイスのロボットサービスモデルに基づく起動と、Ethereumのガス手数料をRobonomicsプロバイダーに返済するための接続点を見つける必要がありました。各個々のスマートデバイスのサービス提供の責任のライフサイクルについて考える必要がありました。Robonomicsの初期の研究開発の結果、チームは、各作成されたロボットサービススマートコントラクトに報酬を与えるための新しいトークンのマイニングメカニズムを考案しました。このモデルは、Ethereumの大幅な改良があれば、Robonomicsの将来においても有効です。
+
+- alias: Timeline
+  en: Timeline
+  ru: Хронология
+  uk: Хронологія
+  es: Cronología
+  it: Timeline
+  pt: Cronologia
+  fr: Trise chronologique, 
+  de: Zeitschiene
+  tr: Zaman çizelgesi
+  az: Timeline
+  ko: 타임라인
+  ja: タイムライン
+
+- alias: Read this to know historical background and long-term plans of team for XRT in Ethereum ecosystem.
+  en: Read this to know historical background and long-term plans of team for XRT in Ethereum ecosystem.
+  ru: Прочтите это, чтобы узнать историю и долгосрочные планы команды на XRT в экосистеме Ethereum.
+  uk: Прочитайте це, щоб дізнатися про історію та довгострокові плани команди на XRT в екосистемі Ethereum.
+  es: Lea esto para conocer los antecedentes históricos y los planes a largo plazo del equipo para XRT en el ecosistema Ethereum.
+  it: Leggi questo per conoscere il background storico e i piani di lungo periodo del team per XRT nell'ecosistema Ethereum.
+  pt: Leia isto para conhecer o histórico e os planos de longo prazo da equipe para o XRT no ecossistema Ethereum.
+  fr: Lisez ceci pour connaître le contexte historique et les plans à long terme de l’équipe pour XRT dans l’écosystème Ethereum.
+  de: Lesen Sie dies, um die Hintergründe und die langfristigen Pläne des XRT-Teams im Ethereum-Ecosystem zu erfahren.
+  tr: Ethereum ekosistemindeki XRT ekibinin tarihsel geçmişini ve uzun vadeli planlarını öğrenmek için bunu okuyun.
+  az: XRT-nin Ethereum ekosistemi üçün tarixi fonunu və komandanın uzunmüddətli planlarını öyrənmək üçün bunu oxuyun.
+  ko: 이 글을 읽으면 이더리움 생태계에서 XRT 팀의 역사적 배경과 장기적인 계획을 알 수 있습니다.
+  ja: この記事では、Ethereumエコシステム内のXRTチームの歴史的背景と長期的な計画について説明します。
+
+- alias: Etherscan profile
+  en: Etherscan profile
+  ru: Etherscan профиль
+  uk: Etherscan профіль
+  es: perfil Etherscan
+  it: Profilo Etherscan
+  pt: Perfil Etherscan
+  fr: Profil Etherscan
+  de: Etherscan-Profil
+  tr: Etherscan profili
+  az: Etherscan profili
+  ko: 프로필Etherscan
+  ja: プロフィールEtherscan
+
+- alias: View token smart contract and transactions in Ethereum network here.
+  en: View token smart contract and transactions in Ethereum network here.
+  ru: Посмотреть смарт-контракт токена и транзакции в сети Ethereum можно здесь.
+  uk: Переглянути смарт-контракт токена та транзакції у мережі Ethereum можна тут.
+  es: Vea el contrato inteligente de token y las transacciones en la red Ethereum aquí.
+  it: Visualizza lo smart contract del token e le transazioni sulla rete Ethereum qui.
+  pt: Veja o contrato inteligente do token e as transações na rede Ethereum aqui.
+  fr: Voir le contrat intelligent de jeton et les transactions dans le réseau Ethereum ici.
+  de: Übersicht Token Smart Contract und die Transaktionen im Ethereum-Netzwerk.
+  tr: Token akıllı sözleşmesini ve Ethereum ağındaki işlemleri burada görüntüleyin.
+  az: Buradakı Ethereum Şəbəkədəki Smart Müqaviləni və Əməliyyatlara baxın.
+  ko: 이곳에서 이더리움 네트워크에서 토큰 스마트 계약과 거래를 확인하세요.
+  ja: イーサリアムネットワーク上でトークンスマートコントラクトとトランザクションを表示するにはこちらをご覧ください。
+
+- alias: Coingecko markets
+  en: Coingecko markets
+  ru: Биржи Coingecko
+  uk: Біржі Coingecko
+  es: Mercados en Coingecko
+  it: Mercati su Coingecko
+  pt: Mercados na Coingecko
+  fr: Marchés Coingecko
+  de: Coingecko-markets
+  tr: Coingecko piyasaları
+  az: Coingecko bazarları
+  ko: 시장Coingecko
+  ja: 市場Coingecko
+
+- alias: Here you can find CEX and DEX markets for trading XRT.
+  en: Here you can find CEX and DEX markets for trading XRT.
+  ru: Здесь вы можете найти биржи CEX и DEX для торговли XRT.
+  uk: Тут ви можете знайти біржі CEX та DEX для торгівлі XRT.
+  es: Aquí puede encontrar los mercados CEX y DEX para operar con XRT.
+  it: Qui puoi trovare i mercati CEX e DEX per il trading di XRT.
+  pt: Aqui você pode encontrar os mercados CEX e DEX para negociar XRT.
+  fr: Vous trouverez ici les marchés CEX et DEX pour le trading XRT.
+  de: Zugang CEX und DEX markets für den Handel mit XRT.
+  tr: Burada XRT ticareti için CEX ve DEX piyasalarını bulabilirsiniz.
+  az: Burada XRT ticarəti üçün CEX və DEX bazarlarını tapa bilərsiniz.
+  ko: 여기에서는 XRT 거래를 위한 CEX 및 DEX 시장을 찾을 수 있습니다.
+  ja: ここでは、XRTの取引にCEXとDEX市場があります。
+
+- alias: XRT In Polkadot
+  en: XRT In Polkadot
+  ru: XRT В POLKADOT
+  uk: XRT У POLKADOT
+  es: XRT EN POLKADOT
+  it: XRT SU POLKADOT
+  pt: XRT NA POLKADOT
+  fr: XRT DANS POLKADOT
+  de: XRT IM POLKADOT
+  tr: POLKADOT'TA XRT
+  az: XRT POLKADOT-da
+  ko: 폴카닷에서 XRT
+  ja: ポルカドットにおけるXRT
+
+- alias: Use XRT
+  en: Use XRT
+  ru: Используйте XRT
+  uk: Використовуйте XRT
+  es: Usar XRT
+  it: Utilizza XRT
+  pt: Utilizar XRT
+  fr: Utiliser XRT
+  de: Verwendung XRT
+  tr: XRT'yi kullan
+  az: XRT-ni istifadə et
+  ko: 사용하기XRT
+  ja: 使用するXRT
+
+- alias: Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.
+  en: Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.
+  ru: Переходя от Ethereum к Polkadot, нам нужно «масштабироваться» в токеномике. Парачейны в экосистеме Polkadot не являются эквивалентами смарт-контрактов, а представляют собой полностью программируемый блокчейн, арендующий сегмент всей сети.
+  uk: Переходячи від Ethereum до Polkadot, нам потрібно «масштабуватися» у токеноміці. Парачейни в екосистемі Polkadot не є еквівалентами смарт-контрактів, а є повністю програмованим блокчейном, що орендує сегмент всієї мережі.
+  es: Pasando de Ethereum a Polkadot, necesitamos hacer una "ampliación" en el tokenomics. Las parachains en el ecosistema de Polkadot no son el equivalente a un contrato inteligente, pero son blockchain completamente programable que arrienda un segmento de la red general.
+  it: Passando da Ethereum a Polkadot, dobbiamo fare uno "scaling up" della tokenomics. Le parachain dell'ecosistema Polkadot non sono l'equivalente di uno smart contract, ma sono blockchain completamente programmabili che affittano un segmento della rete complessiva.
+  pt: Mudando da Ethereum para a Polkadot, precisamos fazer uma "escalada" na tokenomia. As parachains no ecossistema Polkadot não são o equivalente a um contrato inteligente, mas são uma blockchain totalmente programável que aluga um segmento da rede geral.
+  fr: En passant d’Ethereum à Polkadot, nous devons « intensifier » la tokénomique. Parachains dans l’écosystème Polkadot ne sont pas l’équivalent d’un contrat intelligent, mais sont une blockchain entièrement programmable qui loue un segment du réseau global.
+  de: Wenn wir von Ethereum zu Polkadot übergehen, müssen wir in der Tokenomik ein "Scaling up" vornehmen. Parachains im Polkadot-Ecosystem sind nicht das Äquivalent eines Smart Contracts, sondern eine vollständig programmierbare Blockchain die ein Segment des gesamten Netzwerks mietet.
+  tr: Ethereum'dan Polkadot'a geçerken, tokenomikte bir "ölçek büyütme" yapmamız gerekiyor. Polkadot ekosistemindeki parachain'ler, akıllı bir sözleşmenin eşdeğeri değil, genel ağın bir bölümünü kiralayan tamamen programlanabilir bir blok zinciridir.
+  az: Ethereum-dan Polkadot-a keçid zamanı, tokenomikada "scaling up" etməliyik. Polkadot ekosistemindəki Parachain-lər, ağıllı müqavilənin ekvivalenti deyil, lakin ümumi şəbəkənin bir seqmentini icarəyə verən tam proqramlaşdırıla bilən bir blokchaindir.
+  ko: 이더리움에서 폴카닷으로 이동할 때 토큰 경제학에서 "확장"을 해야 합니다. 폴카닷 생태계의 파라체인은 스마트 계약의 동등한 것이 아니라 전체 네트워크의 일부를 임대하는 완전히 프로그래밍 가능한 블록체인입니다.
+  ja: イーサリアムからポルカドットに移行するにあたり、トークノミクスの「スケーリングアップ」が必要です。ポルカドットエコシステムのパラチェーンはスマートコントラクトの相当品ではなく、全体のネットワークの一部をリースする完全にプログラム可能なブロックチェーンです。
+
+- alias: The actual payment on the part of Polkadot and Kusama parachains is long-term bonding of native Relay chain tokens (DOT / KSM) in sufficient quantity to win one of the auctions. The XRT in the Robonomics parachain supports slot renewal and rewards for stakeholders. The XRT burning mechanism underlying the activation of IoT subscriptions is designed to reduce inflation to a minimum, and in case of increased interest to zero.
+  en: The actual payment on the part of Polkadot and Kusama parachains is long-term bonding of native Relay chain tokens (DOT / KSM) in sufficient quantity to win one of the auctions. The XRT in the Robonomics parachain supports slot renewal and rewards for stakeholders. The XRT burning mechanism underlying the activation of IoT subscriptions is designed to reduce inflation to a minimum, and in case of increased interest to zero.
+  ru: Фактический платеж со стороны парачейнов Polkadot и Kusama — это долгосрочное связывание нативных токенов Relay chain (DOT/KSM) в количестве, достаточном для победы в одном из аукционов. XRT в парачейне Robonomics поддерживает обновление слотов и вознаграждения для стейкхолдеров. Механизм сжигания XRT, лежащий в основе активации IoT-подписок, призван снизить инфляцию до минимума, а в случае повышенного интереса до нуля.
+  uk: Фактичний платіж з боку парачейнів Polkadot і Kusama — це довгострокове зв'язування нативних токенів Relay chain (DOT/KSM) у кількості, достатньої для перемоги в одному з аукціонів. XRT у парачейні Robonomics підтримує оновлення слотів та винагороди для стейкхолдерів. Механізм спалювання XRT, що лежить в основі активації IoT-підписок, покликаний знизити інфляцію до мінімуму, а у разі підвищеного інтересу до нуля.
+  es: El pago real por parte de las parachains de Polkadot y Kusama es la vinculación a largo plazo de tokens de la Relay Chain nativa (DOT/KSM) en cantidad suficiente para ganar una de las subastas. El XRT en Robonomics parachain admite la renovación del slot y recompensas para las partes interesadas. El mecanismo de quema de XRT subyacente a la activación de las suscripciones de IoT está diseñado para reducir la inflación al mínimo y, en caso de que aumente el interés, a cero.
+  it: Il pagamento effettivo da parte delle parachain Polkadot e Kusama è il bonding a lungo termine di token nativi della Relay chain (DOT / KSM) in quantità sufficiente a vincere una delle aste. L'XRT della parachain Robonomics supporta il rinnovo degli slot e le ricompense per gli stakeholders. Il meccanismo di burning degli XRT alla base dell'attivazione degli abbonamenti IoT è progettato per ridurre l'inflazione al minimo e, in caso di aumento degli interessi, a zero.
+  pt: O pagamento real por parte das parachains Polkadot e Kusama é a união a longo prazo de tokens nativos da Relay chain (DOT / KSM) em quantidade suficiente para ganhar um dos leilões. O XRT na parachain Robonomics auxilia na renovação do slot e recompensa às partes interessadas. O mecanismo de queima dos XRT subjacente à ativação de assinaturas IoT é projetado para reduzir a inflação ao mínimo e, em caso de aumento de juros, a zero.
+  fr: Le paiement réel de la part de Polkadot et Kusama parachains est un collage à long terme de jetons de chaîne de relais natifs (DOT / KSM) en quantité suffisante pour gagner l’une des enchères. Le XRT dans le parachain Robonomics soutient le renouvellement des emplacements et les récompenses pour les parties prenantes. Le mécanisme de gravure XRT sous-jacent à l’activation des abonnements IoT est conçu pour réduire l’inflation au minimum, et en cas d’intérêt accru à zéro.
+  de: Die eigentliche Bezahlung seitens der Polkadot- und Kusama-Parachains ist die langfristige Bindung von nativen Relay-Chain-Token (DOT / KSM) in ausreichender Menge um eine der Auktionen zu gewinnen. Der XRT in der Robonomics-Parachain unterstützt die Slot-Erneuerung und Verlängerung für die Stakeholders. Der XRT-mechanismus, der der Aktivierung von IoT-Abonnements zugrunde liegt, ist so konzipiert, dass die Inflation auf ein Minimum und im Falle eines erhöhten Interesses auf Null reduziert wird. 
+  tr: Polkadot ve Kusama parachains'in asıl ödemesi, açık artırmalardan birini kazanmak için yeterli miktarda yerli Relay zincir belirteçlerinin (DOT / KSM) uzun vadeli bağlanmasıdır. Robonomics parachain'deki XRT, yuva yenilemeyi ve paydaşlar için ödülleri destekler. IoT aboneliklerinin aktivasyonunun altında yatan XRT yazma mekanizması, enflasyonu minimuma indirmek ve faizin artması durumunda sıfıra indirmek için tasarlanmıştır. 
+  az: Polkadot və Kusama parachain-ləri tərəfindən faktiki ödəniş, hərraclardan birini qazanmaq üçün kifayət qədər miqdarda yerli Relay zəncir tokenlərinin (DOT / KSM) uzunmüddətli bağlanmasıdır. Robonomics parachain-dəki XRT, slotların yenilənməsini və maraqlı tərəflər üçün mükafatları dəstəkləyir. IoT abunələrinin aktivləşdirilməsinin əsasını təşkil edən XRT yandırma mexanizmi inflyasiyanı minimuma endirmək, faiz dərəcəsini isə sıfıra endirilməsi üçün nəzərdə tutulub. 
+  ko: Polkadot 및 Kusama 파라체인의 실제 지불은 경매에서 승리하기에 충분한 양의 네이티브 릴레이 체인 토큰 (DOT / KSM)의 장기 바인딩입니다. Robonomics 파라체인의 XRT는 슬롯 갱신 및 이해 관계자 보상을 지원합니다. IoT 구독 활성화를 위한 XRT 소각 메커니즘은 인플레이션을 최소화하고, 관심이 증가하는 경우에는 제로로 줄이도록 설계되었습니다. 
+  ja: ポルカドットとクサマパラチェーンの実際の支払いは、オークションで勝つために十分な数量のネイティブリレーチェーントークン（DOT / KSM）を長期間ボンディングすることです。ロボノミクスパラチェーンのXRTは、スロットの更新とステークホルダーへの報酬をサポートしています。IoTサブスクリプションの活性化に基づくXRTの燃焼メカニズムは、インフレーションを最小限に抑えるように設計されており、需要が増加した場合にはゼロになります。
+
+- alias: Learn more
+  en: Learn more
+  ru: Узнайте больше 
+  uk: Дізнайтесь більше 
+  es: Obtenga más información 
+  it: Scopri di più
+  pt: Saiba mais 
+  fr: En savoir plus
+  de: Erfahren Sie mehr 
+  tr: Ağ mimarımızın 
+  az: Şəbəkə memarımızdan 
+  ko:  네트워크 아키텍트의 트위터 쓰레드에서 자세히 알아보세요.
+  ja: 当社のネットワークアーキテクトからのTwitterスレッドで詳細を学びましょう。
+
+- alias: in Twitter thread from our network architect.
+  en: in Twitter thread from our network architect.
+  ru: в ветке Twitter от нашего архитектора сети.
+  uk: у гілці Twitter від нашого архітектора мережі.
+  es: en el hilo de Twitter de nuestro arquitecto de red.
+  it: col thread di Twitter scritto dal nostro network architect.
+  pt: no Twitter do nosso arquiteto de rede.
+  fr: dans le fil Twitter de notre architecte réseau.
+  de: im Twitter-Thread von unserem Netzwerkarchitekten.
+  tr: Twitter başlığında daha fazla bilgi edinin.
+  az: Twitter mövzusunda daha çox məlumat əldə edin.
+  ko: ''
+  ja: ''
+
+- alias: 'Usage:'
+  en: 'Usage:'
+  ru: 'Использование:'
+  uk: 'Використання:'
+  es: 'Uso:'
+  it: 'Utilizzo:'
+  pt: 'Utilização:'
+  fr: 'Utiliser:'
+  de: 'Verwendung'
+  tr: 'Kullanım:'
+  az: 'XRT İstifadəsi:'
+  ko: '사용 방법'
+  ja: '使用法'
+
+- alias: XRT can be used both to pay fees for performing transactions on the parachain or to purchase an IoT subscription that guarantees priority processing of device or user IoT transactions.
+  en: XRT can be used both to pay fees for performing transactions on the parachain or to purchase an IoT subscription that guarantees priority processing of device or user IoT transactions.
+  ru: XRT можно использовать как для оплаты комиссий за выполнение транзакций в парачейне, так и для покупки IoT-подписки, которая гарантирует приоритетную обработку IoT-транзакций устройств или пользователей.
+  uk: XRT можна використовувати як для оплати комісій за виконання транзакцій у парачейні, так і для покупки IoT-підписки, яка гарантує пріоритетну обробку IoT-транзакцій пристроїв або користувачів.
+  es: XRT se puede usar tanto para pagar tarifas por realizar transacciones en la parachain como para comprar una suscripción IoT que garantiza el procesamiento prioritario de transacciones IoT de dispositivos o usuarios.
+  it: XRT può essere utilizzato sia per pagare le commissioni per l'esecuzione di transazioni sulla parachain che per acquistare un abbonamento IoT che garantisca l'elaborazione prioritaria delle transazioni IoT del dispositivo o dell'utente.
+  pt: XRT pode ser usado tanto para pagar taxas pela realização de transações na parachain quanto para comprar uma assinatura IoT que garanta o processamento prioritário de dispositivos ou transações IoT do usuário.
+  de: XRT kann sowohl verwendet werden, um Gebühren für Transaktionen auf der Parachain zu zahlen, als auch um ein IoT-Abonnement zu erwerben, das eine Priorität bei der Verarbeitung von Geräte- oder Benutzer-IoT-Transaktionen garantiert."
+  tr: XRT, hem parachain üzerinde işlem gerçekleştirme ücretlerini ödemek hem de cihaz veya kullanıcı IoT işlemlerinin öncelikli olarak işlenmesini garanti eden bir IoT aboneliği satın almak için kullanılabilir.
+  az: XRT həm parachain üzərində əməliyyatların yerinə yetirilməsi üçün rüsumların ödənilməsi, həm də cihazın və ya istifadəçinin IoT əməliyyatlarının prioritet işlənməsinə zəmanət verən IoT abunəsi almaq üçün istifadə edilə bilər.
+  ko: XRT는 패러체인에서 트랜잭션 수행 수수료를 지불하는 데 사용하거나 장치 또는 사용자 IoT 트랜잭션의 우선 처리를 보장하는 IoT 구독을 구매하는 데 사용할 수 있습니다.
+  ja: XRTは、パラチェーン上でトランザクションを実行するための手数料の支払いや、デバイスまたはユーザーのIoTトランザクションの優先処理を保証するIoTサブスクリプションの購入に使用することができます。
+
+- alias: 'Rewards:'
+  en: 'Rewards:'
+  ru: 'Вознаграждения:'
+  uk: 'Нагороди:'
+  es: 'Recompensas:'
+  it: 'Ricompense:'
+  pt: 'Recompensas:'
+  fr: 'Récompenses:'
+  de: 'Bonus'
+  tr: 'Ödüller:'
+  az: 'Mükafatlar:'
+  ko: '보상'
+  ja: '報酬'
+
+- alias: Throughout the year, the parachain issues a small amount of XRT to incentivize parachain collators. 
+  en: Throughout the year, the parachain issues a small amount of XRT to incentivize parachain collators. 
+  ru: В течение года парачейн выпускает небольшое количество XRT, чтобы стимулировать коллаторов парачейна.
+  uk: Протягом року парачейн випускає невелику кількість XRT, щоб стимулювати колаторів парачейну. 
+  es: A lo largo del año, la parachain emite una pequeña cantidad de XRT para incentivar a los collator de la parachain.
+  it: Durante tutto l'anno, la parachain emette una piccola quantità di XRT per incentivare i suoi collators.
+  pt: Ao longo do ano, a parachain emite uma pequena quantidade de XRT para incentivar os coletores (collators) da parachain.
+  fr: Tout au long de l’année, le parachain émet une petite quantité de rayons X pour inciter les parachutistes à poser des colliers. 
+  de: Im Laufe des Jahres gibt die Parachain eine kleine Menge an XRT aus, um Anreize für Parachain-Sammler zu schaffen. 
+  tr: Parachain, parachain harmanlayıcılarını teşvik etmek için yıl boyunca az miktarda XRT yayınlar. 
+  az: İl ərzində kollatorları həvəsləndirmək üçün parachain az miqdarda XRT buraxır. 
+  ko: 올해 동안, 파라체인은 작은 양의 XRT를 발행하여 파라체인 콜렉터를 인센티브로 부여합니다
+  ja: 一年を通じて、パラチェーンは少量のXRTを発行し、パラチェーンコレーターをインセンティブとします。
+
+- alias: The parameter of the total reward
+  en: The parameter of the total reward
+  ru: Параметр общего вознаграждения
+  uk: Параметр загальної винагороди
+  es: El parámetro de la recompensa total
+  it: Il parametro per la ricompensa totale
+  pt: O parâmetro da recompensa total 
+  fr: Le paramètre de la récompense totale 
+  de: Der Parameter der Gesamtbelohnung
+  tr: Yıl için harmanlayıcılar için toplam ödülün parametresi,
+  az: Kollatorlar üçün illik ümumi mükafat parametri token
+  ko: 콜렉터들에 대한 총 보상의 매개변수는 
+  ja: コレーターへの総報酬パラメータは、
+
+- alias: for collators for the year is determined by on-chain voting of token holders, and can be changed by holding a referendum.
+  en: for collators for the year is determined by on-chain voting of token holders, and can be changed by holding a referendum.
+  ru: для коллаторов за год определяется ончейн-голосованием держателей токенов и может быть изменен путем проведения референдума.
+  uk: для колаторів протягом року визначається ончейн-голосуванням власників токенів і може бути змінений шляхом проведення референдуму.
+  es: para los collators para el año se determina mediante la votación en cadena de los poseedores de token y se puede cambiar mediante la celebración de un referéndum.
+  it: dei collators per l'anno è determinato dal voto on-chain dei token holder e può essere modificato con un referendum.
+  pt: para os coletores durante o ano é determinado pela votação on-chain dos detentores de tokens, e pode ser alterado através da realização de um referendo.
+  fr: pour les collators pour l’année est déterminé par le vote en chaîne des détenteurs de jetons, et peut être modifié par la tenue d’un référendum.
+  de: für Kollatoren für das Jahr wird durch On-Chain-Abstimmung der Token-Inhaber bestimmt und kann durch ein Referendum geändert werden.
+  tr: token sahiplerinin zincirleme oylamasıyla belirlenir ve bir referandum düzenlenerek değiştirilebilir.
+  az: sahibkarların tərəfindən on-chain səsvermə ilə müəyyən edilir və referendum keçirərək dəyişdirilə bilər.
+  ko: 토큰 홀더들의 온체인 투표에 의해 결정되며, 국민투표를 통해 변경 가능합니다.
+  ja: トークン保有者のオンチェーン投票によって決定され、住民投票を行うことで変更することができます。
+
+- alias: Buy IoT subscription in our decentralized application. Control your smart devices over blockchain without any centralized corporation observing.
+  en: Buy IoT subscription in our decentralized application. Control your smart devices over blockchain without any centralized corporation observing.
+  ru: Купите IoT-подписку в нашем децентрализованном приложении. Управляйте своими умными устройствами через блокчейн без наблюдения какой-либо централизованной корпорацией.
+  uk: Купуйте IoT-підписку у нашому децентралізованому додатку. Керуйте своїми розумними пристроями через блокчейн без спостереження будь-якої централізованої корпорації.
+  es: Compre una suscripción IoT en nuestra aplicación descentralizada. Controle sus dispositivos inteligentes a través de la blockchain sin que ninguna corporación centralizada los observe.
+  it: Acquista l'abbonamento IoT sulla nostra applicazione decentralizzata. Controlla i tuoi dispositivi intelligenti tramite blockchain senza che alcuna società centralizzata osservi.
+  pt: Compre a assinatura IoT em nosso aplicativo descentralizado. Controle seus dispositivos inteligentes via blockchain sem que nenhuma corporação centralizada observe.
+  fr: Achetez l’abonnement IoT dans notre application décentralisée. Contrôlez vos appareils intelligents sur blockchain sans aucune observation centralisée des entreprises.
+  de: Kaufen Sie ein IoT-Abonnement in unserer dezentralen Anwendung. Steuern Sie Ihre smarten Geräte über die Blockchain ohne das ein zentrales Unternehmen sie beobachtet.
+  tr: Merkezi olmayan uygulamamızda IoT aboneliği satın alın. Herhangi bir merkezi şirket gözlemi olmadan akıllı cihazlarınızı blockchain üzerinden kontrol edin.
+  az: Mərkəzsizləşdirilmiş tətbiqimizdə IOT abunə alın. Heç bir mərkəzləşdirilmiş korporasiya müşahidə etmədən ağıllı cihazlarınızı blockchain üzərində idarə edin.
+  ko: 우리의 탈중앙화 애플리케이션에서 IoT 구독을 구매하세요. 중앙 집중화 된 기업이 감시하지 않고 블록체인을 통해 스마트 기기를 제어하세요.
+  ja: 当社の分散型アプリケーションでIoTサブスクリプションを購入してください。中央集権的な企業が監視することなく、ブロックチェーンを介してスマートデバイスを制御できます。
+
+- alais: Subscan profile
+  en: Subscan profile
+  ru: Subscan профиль
+  uk: Subscan профіль
+  es: Perfil Subscan
+  it: Profilo Subscan
+  pt: Perfil Subscan
+  fr: Profil subscan
+  de: Profil scannen
+  tr: Subscan profili
+  az: Subscan profili
+  ko: 프로필Subscan
+  ja: プロフィールSubscan
+
+- alias: View token statistics on top of Polkadot ecosystem.
+  en: View token statistics on top of Polkadot ecosystem.
+  ru: Просматривайте статистику токенов в экосистеме Polkadot.
+  uk: Переглядайте статистику токенів в екосистемі Polkadot.
+  es: Ver estadísticas de tokens en la parte superior del ecosistema de Polkadot.
+  it: Visualizza le statistiche del token nell'ecosistema Polkadot.
+  pt: Visualize estatísticas do token no topo do ecossistema Polkadot.
+  fr: Afficher les statistiques des jetons en haut de l’écosystème Polkadot
+  de: Sehen Sie sich die Token-Statistiken oben im Polkadot-Ecosystem an.
+  tr: Polkadot ekosisteminin tepesinde belirteç istatistiklerini görüntüleyin
+  az: Polkadot ekosistemində olan token statistikasına baxın.
+  ko: 폴카닷 생태계 상단에서 토큰 통계를 확인하세요.
+  ja: Polkadotエコシステムのトップにあるトークン統計を表示してください。
+
+- alias: Other questions
+  en: Other questions
+  ru: ДРУГИЕ ВОПРОСЫ
+  uk: ІНШІ ПИТАННЯ
+  es: OTRAS PREGUNTAS
+  it: ALTRE DOMANDE
+  pt: OUTRAS PERGUNTAS
+  fr: D'AUTRES QUESTIONS
+  de: weitere Erläuterungen
+  tr: DİĞER SORULAR
+  az: DİGƏR SUALLAR
+  ko: 다른 질문들
+  ja: その他の質問
+
+- alias: What is RWS?
+  en: What is RWS?
+  ru: Что такое RWS?
+  uk: Що таке RWS?
+  es: ¿Qué es RWS?
+  it: Cos'è RWS?
+  pt: O que é RWS?
+  fr: Qu’est-ce que RWS ?
+  de: Was is RWS?
+  tr: RWS nedir?
+  az: RWS nədir?
+  ko: RWS 란 무엇인가요?
+  ja: RWSとは何ですか？
+
+- alias: '[Under development of core functionality] For engineers, Core Dev team will try to make different Robonomics usage models and the first step in this way is launching lifetime subscription token - RWS token. Each RWS token will give you 1 transaction per second (tps) from/to your IoT device over Robonomics Parachain. Activate your RWS token and make "free gas" transactions with prior to execute and predictable latency. Deactivate RWS token and trade it on DEX.'
+  en: '[Under development of core functionality] For engineers, Core Dev team will try to make different Robonomics usage models and the first step in this way is launching lifetime subscription token - RWS token. Each RWS token will give you 1 transaction per second (tps) from/to your IoT device over Robonomics Parachain. Activate your RWS token and make "free gas" transactions with prior to execute and predictable latency. Deactivate RWS token and trade it on DEX.'
+  ru: '[Разрабатывается основная функциональность] Для инженеров команда Core Dev попытается создать различные модели использования Robonomics, и первым шагом на этом пути будет запуск токена пожизненной подписки — токена RWS. Каждый токен RWS дает вам 1 транзакцию в секунду (tps) с/на ваше IoT-устройство через парачейн Robonomics. Активируйте свой токен RWS и совершайте транзакции с «бесплатным газом» с предварительным выполнением и предсказуемой задержкой. Деактивируйте токен RWS и обменяйте его на DEX.'
+  uk: '[Розробляється основна функціональність] Для інженерів команда Core Dev спробує створити різні моделі використання Robonomics, і першим кроком на цьому шляху буде запуск токена довічної підписки — токена RWS. Кожен токен RWS дає вам 1 транзакцію в секунду (tps) з/на ваш IoT-пристрій через парачейн Robonomics. Активуйте свій токен RWS і робіть транзакції з «безкоштовним газом» із попереднім виконанням та передбачуваною затримкою. Деактивуйте токен RWS та обміняйте його на DEX.'
+  es: '[En desarrollo de la funcionalidad central] Para los ingenieros, el equipo Core Dev intentará crear diferentes modelos de uso de Robonomics y el primer paso de esta manera es lanzar un token de suscripción de por vida: token RWS. Cada token RWS le dará 1 transacción por segundo (tps) desde/hacia su dispositivo IoT a través de Robonomics Parachain. Active su token RWS y realice transacciones de "gas gratis" con una latencia predecible y previa a la ejecución. Desactive el token RWS y cámbielo en un DEX.'
+  it: '[In fase di sviluppo delle funzionalità di base] Per gli ingegneri, il team Core Dev proverà a creare diversi modelli di utilizzo di Robonomics e il primo passo è il lancio del token di abbonamento a vita - il token RWS. Ogni token RWS fornisce 1 transazione al secondo (tps) da/verso un dispositivo IoT sulla Parachain Robonomics. Attiva il tuo token RWS ed effettua transazioni "free gas" con pre-esecuzione e latenza prevedibile. Disattiva il token RWS e scambialo su DEX.'
+  pt: '[Em desenvolvimento da funcionalidade principal] Para engenheiros, a equipe do Core Dev tentará fazer diferentes modelos de uso da Robonomics e o primeiro passo desta forma é lançar o token de assinatura vitalício - o token RWS. Cada token RWS lhe dará 1 transação por segundo (tps) de/para seu dispositivo IoT por meio da Parachain Robonomics. Ative seu token RWS e faça transações "grátis" com pré-execução e latência previsíveis. Desative o token RWS e negocie-o em uma DEX.'
+  fr: '[En cours de développement des fonctionnalités de base] Pour les ingénieurs, l’équipe Core Dev tentera de créer différents modèles d’utilisation de Robonomics et la première étape de cette façon est de lancer jeton d’abonnement à vie - jeton RWS. Chaque jeton RWS vous donnera 1 transaction par seconde (tps) depuis/vers votre appareil IoT via Robonomics Parachain. Activez votre jeton RWS et effectuez des transactions "gaz libre" avec avant d’exécuter et latence prévisible. Désactivez le jeton RWS et échangez-le sur DEX.'
+  de: "[Für Ingenieure wird das Kernentwicklungsteam versuchen], verschiedene Robonomics-Nutzungsmodelle zu entwickeln, und der erste Schritt auf diesem Weg ist die Einführung eines lebenslangen Abonnement-Tokens - RWS-Token. Jeder RWS-Token ermöglicht Ihnen 1 Transaktion pro Sekunde (tps) von/zu Ihrem IoT-Gerät über Robonomics Parachain. Aktivieren Sie Ihren RWS-Token und führen Sie 'freie Gas'-Transaktionen mit vorheriger Ausführung und vorhersehbarer Latenzzeit durch. Deaktivieren Sie den RWS-Token und handeln Sie ihn auf DEX."
+  az: '[Əsas funksionallığın inkişafı mərhələsində] Mühəndislər üçün Core Dev komandası müxtəlif Robonomics istifadə modelləri yaratmağa çalışacaq və bu yolda ilk addım ömürlük abunə tokeni - RWS tokenini işə salmaqdır. Hər bir RWS tokeni sizə Robonomics Parachain vasitəsilə IoT cihazınızdan/cihaza saniyədə 1 əməliyyat (tps) verəcək. RWS tokeninizi aktivləşdirin və icradan əvvəl və proqnozlaşdırıla bilən gecikmə ilə "gas free" əməliyyatları edin. RWS tokenini deaktiv edin və onu DEX-də ticarət edin.'
+  tr: "[Çekirdek işlevsellik geliştiriliyor] Mühendisler için Core Dev ekibi, farklı Robonomics kullanım modelleri oluşturmaya çalışacak ve bu yolda ilk adım, ömür boyu abonelik belirteci olan RWS belirtecini başlatmak olacak. Her bir RWS belirteci, Robonomics Parachain üzerinden IoT cihazınızdan/cihazınıza saniyede 1 işlem (tps) verecektir. RWS jetonunuzu etkinleştirin ve yürütme öncesi ve öngörülebilir gecikme ile   'bedava gaz' işlemleri yapın. RWS jetonunu devre dışı bırakın ve DEX'te ticaret yapın."
+  ko: '[핵심 기능 개발 중] 엔지니어를 위해 핵심 개발 팀은 다양한 로보노믹스 사용 모델을 만들려고 노력할 것입니다. 이 방향으로 첫 번째 단계는 평생 구독 토큰인 RWS 토큰을 출시하는 것입니다. 각 RWS 토큰은 로보노믹스 파라체인을 통해 당신의 IoT 기기로부터/로부터 초당 1개의 트랜잭션(tps)을 제공합니다. RWS 토큰을 활성화하고 우선적으로 실행 가능하고 예측 가능한 지연 시간을 가진 "무료 가스" 트랜잭션을 수행하세요. RWS 토큰을 비활성화하고 DEX에서 거래하세요.'
+  ja: '【コア機能の開発中】エンジニアのために、コア開発チームは異なるRobonomicsの使用モデルを作成しようとしており、その第一歩は、ライフタイムサブスクリプショントークンであるRWSトークンの発行です。各RWSトークンは、Robonomicsパラチェーンを介してあなたのIoTデバイスから/への1秒あたり（tps）のトランザクションを提供します。RWSトークンをアクティブにして、実行前の予測可能なレイテンシーで「無料のガス」トランザクションを実行してください。RWSトークンを非アクティブにして、DEXで取引してください。'
+
+- alias: What is AIRA/AIR ID?
+  en: What is AIRA/AIR ID?
+  ru: Что такое AIRA/AIR ID?
+  uk: Що таке AIRA/AIR ID?
+  es: ¿Qué es AIRA/AIR ID?
+  it: Che cos'è l'AIRA/AIR ID?
+  pt: O que é AIRA/AIR ID?
+  fr: Qu’est-ce que AIRA/AIR ID?
+  de: Was ist AIRA/AIR ID?
+  tr: AIRA/AIR ID nedir?
+  az: AIRA/AIR ID nədir?
+  ko: AIRA/AIR ID란 무엇인가요?
+  ja: AIRA/AIR IDとは何ですか？
+
+- alias: Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens was connected to created infrastructure of the project through
+  en: Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens was connected to created infrastructure of the project through
+  ru: Pre-XRT токен был распространен в 2017 году как автономная часть будущей инфраструктуры Robonomics на Ethereum. После успешного запуска Robonomics над Ethereum в 2019 году токены AIRA были подключены к созданной инфраструктуре проекта через
+  uk: Токен Pre-XRT був поширений у 2017 році як автономна частина майбутньої інфраструктури Robonomics на Ethereum. Після успішного запуску Robonomics над Ethereum у 2019 році токени AIRA були підключені до створеної інфраструктури проекту через 
+  es: Token anterior a XRT distribuido en 2017 como parte autónoma de una mayor infraestructura de Robonomics en Ethereum. Después del lanzamiento exitoso de Robonomics sobre Ethereum en 2019, los tokens AIRA se conectaron a la infraestructura creada del proyecto a través del
+  it: Un token pre-XRT distribuito nel 2017 come parte autonoma di un'ulteriore infrastruttura Robonomics su Ethereum. Dopo il successo del lancio di Robonomics su Ethereum nel 2019, i token AIRA sono stati collegati all'infrastruttura del progetto tramite uno
+  pt: Um token pré-XRT distribuído em 2017 como parte autônoma da futura infra-estrutura da Robonomics na Ethereum. Após o lançamento bem-sucedido da Robonomics na Ethereum em 2019, os tokens AIRA foram conectados à infra-estrutura criada do projeto através de
+  fr: Le jeton Pre-RX a été distribué en 2017 en tant que partie autonome de l’infrastructure robotique sur Ethereum. Après le lancement réussi de Robonomics sur Ethereum en 2019 AIRA jetons a été connecté à l’infrastructure créée du projet par
+  de: Pre-XRT-Token wurden 2017 als autonomer Teil der weiteren Robonomics-Infrastruktur auf Ethereum verteilt. Nach dem erfolgreichen Start von Robonomics über Ethereum im Jahr 2019 wurden AIRA-Token mit der geschaffenen Infrastruktur des Projekts durch den
+  tr: Pre-XRT belirteci, 2017'de Ethereum'daki Robonomics altyapısının özerk bir parçası olarak dağıtıldı. Robonomics'in 2019'da Ethereum üzerinden başarılı bir şekilde piyasaya sürülmesinden sonra, AIRA belirteçleri, XRT öncesi ERC-20 XRT'ye otonom ve bağımsız takas sürecini garanti eden 
+  az: Pre-XRT tokeni 2017-ci ildə Ethereum-da gələcək Robonomics infrastrukturunun muxtar hissəsi kimi paylandı. 2019-cu ildə Ethereum üzərindən Robonomics-in uğurla işə salınmasından sonra, AIRA tokenləri, Pre-XRT-dan ERC-20 XRT-ə dəyişdirilməsinin avtonom və müstəqil prosesinə zəmanət verən
+  ko: Pre-XRT 토큰은 2017년에 이더리움 상의 Robonomics 인프라를 자율적으로 확장하기 위해 분배되었습니다. 2019년 Robonomics가 이더리움에서 성공적으로 출시된 후, AIRA 토큰은 
+  ja: Pre-XRTトークンは2017年に、Ethereum上のさらなるRobonomicsインフラストラクチャーの自律的な一部として配布されました。2019年にRobonomicsがEthereum上で成功裏に開始された後、AIRAトークンは
+
+- alias: ambix smart contract
+  en: ambix smart contract
+  ru: смарт-контракт ambix,
+  uk: смарт-контракт ambix,
+  es: contrato inteligente ambix
+  it: smart contract ambix,
+  pt: um contrato inteligente ambix,
+  fr: contrat intelligent ambix 
+  de: Ambix-Smart-Contract
+  tr: ambix akıllı sözleşme
+  az: ambix smart müqaviləsi
+  ko: ambix 스마트 계약을
+  ja: ambixスマートコント
+
+- alias: which guaranteed autonomous and independent process of swapping pre-XRT to ERC-20 XRT.
+  en: which guaranteed autonomous and independent process of swapping pre-XRT to ERC-20 XRT.
+  ru: который гарантировал автономный и независимый процесс обмена pre-XRT на ERC-20 XRT.
+  uk: який гарантував автономний і незалежний процес обміну pre-XRT на ERC-20 XRT.
+  es: que garantizaba un proceso autónomo e independiente de intercambio de pre-XRT a ERC-20 XRT.
+  it: che ha garantito un processo autonomo e indipendente per scambiare il pre-XRT con l'XRT ERC-20.
+  pt: que garantiu um processo autônomo e independente de troca do pré-XRT para o XRT  ERC-20.
+  fr: qui a garanti processus autonome et indépendant d’échange pre-XRT à ERC-20 XRT.
+  de: erbunden, der einen autonomen und unabhängigen Prozess des Swaps von Pre-XRT in ERC-20 XRT garantierte.
+  tr: aracılığıyla projenin oluşturulan altyapısına bağlandı.
+  az: vasitəsilə, layihənin yaradılmış infrastrukturuna qoşuldu.
+  ko: 통해 프로젝트의 생성된 인프라에 연결되어, Pre-XRT를 ERC-20 XRT로 자율적이고 독립적인 프로세스로 교환할 수 있게 보장합니다.
+  ja: ラクトを介してプロジェクトの作成されたインフラストラクチャーに接続され、Pre-XRTからERC-20 XRTへの自律的かつ独立したスワッププロセスが保証されました.
