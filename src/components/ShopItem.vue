@@ -3,7 +3,7 @@
     <div class="shop__image">
       <g-image :src="require(`!!assets-loader!@/assets/images/${image}`)" alt="product image"/>
     </div>
-    <h3 v-if="title">{{title}}</h3>
+    <h3 v-if="title">{{$ts(title)}}</h3>
   </g-link>
 </template>
 
