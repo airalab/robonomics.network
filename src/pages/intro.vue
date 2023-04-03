@@ -10,7 +10,7 @@
     <div class="page">
       <section class="section section__solid section__dotted_darkblue wide">
         <h1 class="layout layout__text clean">{{$ts('Building Dapps && Web Services for IoT on Robonomics Parachain')}}</h1>
-        <div class="layout layout__text animate subtitle" v-in-viewport.once>{{$ts('Sergei Lonshakov')}}, {{$ts('software architect')}}</div>
+        <div class="layout layout__text animate subtitle" v-in-viewport.once>{{$ts('Sergei Lonshakov, software architect')}}</div>
       </section>
 
       <section class="section">
@@ -165,7 +165,7 @@
                 </div>
               </div>
               <div class="item">
-                {{$ts('ROBONOMICS DApp')}}
+                {{$ts('ROBONOMICS DAPP')}}
                 <div class="img" aria-hidden="true">
                   <g-image src="~/assets/images/schemeRwsPlace-4.png"/>
                 </div>
