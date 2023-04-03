@@ -55,32 +55,95 @@
   pt: Gêmeos digitais
   ru: Цифровой двойник
   uk: Цифровий двійник
+  tr: Dijital İkiz
+  it: Digital twin
+  fr: jumeau numérique
+  es: Gemelo digital
+  de: Digital Twin
+  ja: デジタルツイン
+  ko: 디지털 트윈
 - alias: IoT Device
   az: İoT cihazi
   en: IoT Device
   pt: Dispositivo IoT
-  ru: IoT устройство
+  ru: IOT-УСТРОЙСТВО
   uk: IoT-пристрій
   zh: 物联网设备
+  tr: IoT Cihaz
+  it: Dispositivo IoT
+  fr: Dispositif IoT
+  es: Dispositivo IoT
+  de: IoT Anwendung
+  ja: IoTデバイス
+  ko: IoT 장치
 - alias: Robonomics tools
-  az: Robonomika alətləri
+  az: Robonomics alətləri
   en: Robonomics tools
   es: Herramientas de Robonomics
   pt: Ferramentas Robonomics
-  ru: Инструменты Робономики
-  uk: Інструменти Робономіки
+  ru: Инструменты Robonomics
+  uk: Інструменти Robonomics
   zh: Robonomics包含内容
-- alias:  Robonomics Connectivity  
+  tr: Robonomics araçları
+  it: Strumenti Robonomics
+  fr: Outils de Robonomics
+  de: Robononmics Werkzeuge
+  ja: Robonomicsツール
+  ko: Robonomics도구
+- alias: Robonomics Connectivity  
   de: Robonomics-Konnektivität
   en: Robonomics Connectivity
   es: Conectividad de Robonomics
-  ru: Совместимость Робономики
-  uk: Сумісність Робономіки
+  ru: Совместимость Robonomics
+  uk: Сумісність Robonomics
   zh: Robonomics互连性
+  tr: Robonomics bağlantısı
+  pt: Conectividade Robonomics
+  fr: Connectivité Robonomics
+  it: Connettività Robonomics
+  az: Robonomics-in uyğunluğu
+  ja: Robonomicsに接続する方法
+  ko: Robonomics연결성
+- alias: ROBONOMICS WEB SERVICES (RWS)
+  en: ROBONOMICS WEB SERVICES (RWS)
+  ru: ROBONOMICS WEB SERVICES (RWS)
+  tr: ROBONOMICS WEB SERVİSİ(RWS)
+  pt: ROBONOMICS WEB SERVICES (RWS)
+  it: ROBONOMICS WEB SERVICES (RWS)
+  fr: ROBONOMICS WEB SERVICES (RWS)
+  az: ROBONOMİCS VEB XİDMƏTLƏRİ (RWS)
+  uk: ROBONOMICS WEB SERVICES (RWS)
+  es: ROBONOMICS WEB SERVICES (RWS)
+  de: ROBONOMICS WEB SERVICES (RWS)
+  ja: ROBONOMICS WEBサービス(RWS)
+  ko: ROBONOMICS웹 서비스(RWS)
+- alias: ROBONOMICS DAPP
+  en: ROBONOMICS DAPP
+  ru: ROBONOMICS DAPP
+  tr: ROBONOMICS DAPP
+  pt: DAPP ROBONOMICS
+  it: DAPP ROBONOMICS
+  fr: ROBONOMICS DAPP
+  az: ROBONOMİCS DAPP
+  uk: ROBONOMICS DAPP
+  es: DAPP DE ROBONOMICS
+  de: ROBONOMICS DAPP
+  ja: ROBONOMICS DAPP
+  ko: ROBONOMICS DAPP
 - alias: economy of robots
   en: economy of robots
   ru: экономика роботов
   zh: 机器人经济
+  tr: ROBOT EKONOMİSİ
+  pt: ECONOMIA DOS ROBÔS
+  it: ECONOMIA DEI ROBOT
+  fr: ÉCONOMIE DES ROBOTS
+  az: ROBOTLARIN İQTİSADİYYATI
+  uk: ЕКОНОМІКА РОБОТІВ
+  es: ECONOMÍA DE ROBOTS
+  de: ROBOTERWIRTSCHAFT
+  ja: ロボットの経済
+  ko: 로봇의 경제
 - alias: Your email
   en: Your email
   ru: Ваш email
@@ -190,9 +253,6 @@
   az: ELMİ MƏQƏLƏLƏR
   ko: 과학 논문
   ja: 科学論文
-- alias: Books
-  en: Books
-  ru: Книги
 - alias: Contacts
   en: Contacts
   ru: Контакты
@@ -1163,10 +1223,23 @@
   ko: Robonomics Parachain에서 IoT용 DApp 및 웹 서비스 구축
   pt: 'Construindo DApps & Web Services para IoT na Parachain Robonomics '
   ru: Создание децентрализованных приложений и веб-сервисов для Интернета вещей на
-    парачейне Робономики
+    парачейне Robonomics
   uk: Створення Dapps та Web-cервісів для IoT на парачейні Робономіки
   tr: Robonomics Parachain'de IoT için Dapps && Web Hizmetleri Oluşturma
   zh: 在Robonomics平行链上构建物联网去中心化应用 (DApp) 和Web服务
+- alias: Sergei Lonshakov, software architect
+  en: Sergei Lonshakov, software architect
+  ru: Сергей Лоншаков, архитектор ПО
+  az: Sergey Lonshakov, proqram memarı
+  es: Sergei Lonshakov, software architect
+  fr: Sergei Lonshakov, architecte logiciel
+  it: Sergei Lonshakov, architetto del software
+  pt: Sergei Lonshakov, arquiteto de software
+  uk: Сергій Лоншаков, архітектор ПЗ
+  tr: Sergei Lonshakov, yazılım mimarı
+  de: Sergei Lonshakov, Softwarearchitekt
+  ja: Sergei Lonshakov, ソフトウェアアーキテクト
+  ko: Sergei Lonshakov, 소프트웨어 아키텍트
 - alias: Let us remember that the automatic machine is the precise economic equivalent
     of slave labor. Any labor which competes with slave labor must accept the economic
     consequences of slave labor.
@@ -1225,8 +1298,21 @@
   tr: Robotlar bugün yetişkin çocuklar gibidir - onlar parayı yönetebilir, yasal ilişkilere
     girebilir, bağımsız olabilirler.
   zh: 如今，机器人就像已经长大的孩子——它们已经可以管理金钱，进入法务部门，并能独立运作。
-- alias: The future of humanity itself depends on how we teach robots to handle their
-    capabilities.
+- alias: Norbert Wiener, cybernetics
+  en: Norbert Wiener, cybernetics
+  ru: Норберт Винер, кибернетика
+  tr: Norbert Wiener, sibernetik
+  pt: Norbert Wiener, ciberneticista
+  it: Norbert Wiener, cibernetico
+  fr: Norbert Wiener, cybernétique
+  az: Norbert Viner, kibernetika
+  uk: Норберт Вінер, кібернетика
+  zh: 诺伯特·维纳, 控制论
+  es: Norbert Wiener, cibernético
+  de: Norbert Wiener, Kybernetik
+  ja: Norbrt Wiener, サイバネティックス
+  ko: 노버트 위너(Norbert Wiener), 사이버네틱스
+- alias: The future of humanity itself depends on how we teach robots to handle their capabilities.
   az: Bəşəriyyətin gələcəyi robotlara öz qabiliyyətlərini idarə etməyi necə öyrətməyimizdən
     asılıdır.
   de: Die Zukunft der Menschheit selbst hängt davon ab, wie wir Robotern beibringen,
@@ -1249,32 +1335,34 @@
   tr: İnsanlığın geleceği, robotlara yeteneklerini kullanmayı nasıl öğrettiğimize
     bağlıdır.
   zh: 人类自身的未来取决于我们如何教机器人处理它们的能力。
-- alias: What is Robonomics network?
-  az: ROBONOMİKS ŞƏBƏKƏSİ NƏDİR?
-  de: WAS IST DAS ROBONOMICS NETZWERK?
-  en: What is Robonomics network?
-  es: ¿QUÉ ES ROBONOMICS NETWORK?
-  fr: QU’EST CE QUE ROBONOMICS NETWORK?
-  it: CHE COS'È ROBONOMICS NETWORK?
-  ja: ROBONOMICS NETWORK 何ですか 
-  ko: ROBONOMICS NETWORK란 무엇인가요?
+- alias: What is Robonomics?
+  az: ROBONOMİKS NƏDİR?
+  de: WAS IST ROBONOMICS ?
+  en: What is Robonomics ?
+  es: ¿QUÉ ES ROBONOMICS ?
+  fr: QU’EST CE QUE ROBONOMICS ?
+  it: CHE COS'È ROBONOMICS ?
+  ja: ROBONOMICSとは何か？
+  ko: ROBONOMICS란 무엇인가요?
   pt: O QUE É A REDE ROBONOMICS?
-  ru: ЧТО ТАКОЕ ROBONOMICS NETWORK?
-  uk: ЩО ТАКЕ ROBONOMICS NETWORK?
+  ru: ЧТО ТАКОЕ ROBONOMICS ?
+  uk: ЩО ТАКЕ ROBONOMICS ?
   tr: ROBONOMİCS NEDİR?
-- alias: Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
-  az: Robonomics, istifadəçi tətbiqləri, IoT xidmətləri və kompleks robotlar arasında atomik əməliyyatlar formunda texniki və iqtisadi məlumatların mübadiləsinə imkan verən IoT tətbiqləri üçün açıq mənbəli bir platformdur.
-  de: Robonomics ist eine Open Source Plattform für IoT-Anwendungen, die den Austausch von technischen und wirtschaftlichen Informationen in Form von Transaktionen zwischen Benutzeranwendungen, IoT-Diensten und komplexer Robotik ermöglicht.
+  zh: 什么是ROBONOMICS？
+- alias: Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
+  az: Robonomics əşyaların interneti tətbiqləri üçün açıq mənbə platformasıdır. Biz istifadəçi proqramları, Əşyaların İnterneti xidmətləri və mürəkkəb robot texnikası arasında atomar əməliyyatları şəklində texniki və iqtisadi məlumat mübadiləsini həyata keçirən yeni nəsil İnternet texnologiyalarını (web3) dəstəkləyirik.
+  de: Robonomics ist eine Open-Source-Plattform für IoT-Anwendungen. Wir unterstützen eine neue Generation von Internet-Technologien (web3), die den Austausch von technischen und wirtschaftlichen Informationen in Form von atomaren Transaktionen zwischen Benutzeranwendungen, IoT-Diensten und komplexer Robotik realisiert.
   en: Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
-  es: Robonomics es una plataforma de código abierto para aplicaciones IoT que permite el intercambio de información técnica y económica en forma de transacciones atómicas entre aplicaciones de usuario, servicios IoT y robótica compleja.
-  fr: Robonomics est une plateforme open-source pour les applications IOT qui permet l’échange d’informations techniques et économiques sous forme de transactions atomiques entre les applications utilisateurs, les services IoT et la robotique complexe.
-  it: Robonomics è una piattaforma open source per applicazioni IoT, che consente lo scambio di informazioni tecniche ed economiche sotto forma di transazioni atomiche fra applicazioni utente, servizi IoT e robotica complessa.
-  ja: Robonomicsは、IoTアプリケーション向けのオープンソースプラットフォームであり、ユーザーアプリケーション、IoTサービス、複雑なロボット間で原子トランザクションの形式で技術的および経済的情報の交換を可能にします。
-  ko: Robonomics는 사용자 응용 프로그램, IoT 서비스 및 복잡한 로봇 간의 원자 트랜잭션 형식으로 기술 및 경제 정보를 교환 할 수있게하는 오픈 소스 플랫폼 인 IoT 응용 프로그램입니다.
-  pt: Robonomics é uma plataforma de código aberto para aplicativos de IoT que permite a troca de informações técnicas e econômicas na forma de transações atômicas entre aplicativos do usuário, serviços de IoT e robótica complexa.
-  ru: Robonomics — это платформа с открытым исходным кодом для приложений Интернета вещей, которая обеспечивает обмен технической и экономической информацией в форме атомарных транзакций между пользовательскими приложениями, сервисами Интернета вещей и сложной робототехникой.
-  uk: Robonomics — це платформа з відкритим вихідним кодом для додатків IoT, яка забезпечує обмін технічною та економічною інформацією у формі атомарних транзакцій між додатками користувача, службами IoT і складною робототехнікою.
-  tr: Robonomics, kullanıcı uygulamaları, IoT hizmetleri ve karmaşık robotlar arasında atomik işlemler şeklinde teknik ve ekonomik bilgi alışverişini sağlayan IoT uygulamaları için açık kaynaklı bir platformdur.
+  es: Robonomics es una plataforma de código abierto para aplicaciones IoT. Apoyamos una nueva generación de tecnologías de Internet (web3) que implementa el intercambio de información técnica y económica en forma de transacciones atómicas entre aplicaciones de usuario, servicios IoT y robótica compleja.
+  fr: Robonomics est une plateforme open-source pour les applications IoT. Nous soutenons une nouvelle génération de technologies Internet (web3) qui met en œuvre l’échange d’informations techniques et économiques sous forme de transactions atomiques entre les applications utilisateurs, les services IoT et la robotique complexe.
+  it: Robonomics è una piattaforma open source per applicazioni IoT. Supportiamo una nuova generazione di tecnologie Internet (web3) che implementano lo scambio di informazioni tecniche ed economiche sotto forma di transazioni atomiche tra applicazioni utente, servizi IoT e robotica complessa.
+  ja: Robonomicsは、IoTアプリケーション向けのオープンソースプラットフォームです。私たちは、ユーザーアプリケーション、IoTサービス、複雑なロボット工学の間の原子トランザクションの形で技術的および経済的情報の交換を実装する新世代のインターネットテクノロジー（web3）をサポートします。
+  ko: Robonomics는 IoT 애플리케이션을 위한 오픈 소스 플랫폼입니다. 저희는 사용자 애플리케이션, IoT 서비스, 복잡한 로봇공학 사이에 원자 트랜잭션 형태로 기술 및 경제 정보를 교환하는 차세대 인터넷 기술(Web3)을 지원합니다.
+  pt: A Robonomics é uma plataforma de código aberto para aplicações IoT. Oferecemos suporte a uma nova geração de tecnologias da internet (web3) que implementam a troca de informações técnicas e econômicas na forma de transações atômicas entre aplicações do usuário, serviços da Internet e robótica complexa.
+  ru: Robonomics - это платформа с открытым исходным кодом для приложений Интернета вещей. Мы поддерживаем новое поколение интернет-технологий (web3), которые реализуют обмен технической и экономической информацией в форме атомарных транзакций между пользовательскими приложениями, сервисами Интернета вещей и сложной робототехникой.
+  uk: Robonomics— це платформа з відкритим вихiдним кодом для програм Інтернету речей. Ми підтримуємо нове покоління інтернет-технологій (web3), які реалізують обмін технічною та економічною інформацією у формі атомарних транзакцій між додатками користувача, сервісами Інтернету речей і складною робототехнікою.
+  tr: Robonomics, IoT uygulamaları için açık kaynaklı bir platformdur. Kullanıcı uygulamaları, IoT hizmetleri ve karmaşık robotik arasında atomik işlemler şeklinde teknik ve ekonomik bilgi alışverişini uygulayan yeni nesil internet teknolojilerini (web3) destekler.
+  zh: Robonomics是一个用于物联网应用的开源平台。我们支持新一代互联网技术 (web3)，这些技术在用户应用程序、物联网服务和复杂机器人之间以原子交易的形式实现技术和经济信息的交换。
 - alias: Decentralized application
   en: Decentralized application
   uk: ДЕЦЕНТРАЛІЗОВАНИЙ ДОДАТОК
@@ -1347,8 +1435,12 @@
   it: User (D)App
   pt: Usuário (D)App
   ru: Приложение
-  uk: (D)App користувача
   tr: Kullanıcı (D)App'ı
+  uk: (D)App користувача
+  es: D(App) de usuario
+  de: Anwender(D)app
+  ja: (D)App ユーザー
+  ko: (D)App 사용자
 - alias: Function request
   az: Funksionaı sorğu
   en: Function request
@@ -1358,6 +1450,10 @@
   uk: Запит
   ru: Запрос
   tr: Fonksiyon İsteği
+  es: Solicitud de función
+  de: Funktionsanforderung
+  ja: 機能のリクエスト
+  ko: 함수 요청
 - alias: Report
   az: Hesabat
   en: Report
@@ -1367,6 +1463,10 @@
   ru: Отчет
   uk: Звіт
   tr: Raporla
+  es: Reporte
+  de: Bericht
+  ja: レポート
+  ko: 보고서
 - alias: Control
   az: Kontrol
   en: Control
@@ -1376,6 +1476,10 @@
   ru: Действие
   uk: Дія
   tr: Kontrol
+  es: Control
+  de: Kontrolle
+  ja: コントロール
+  ko: 제어
 - alias: Log
   az: Qeyd
   en: Log
@@ -1385,6 +1489,10 @@
   ru: Лог
   uk: Лог
   tr: Log
+  es: Registro
+  de: Protokoll
+  ja: ログ
+  ko: 로그
 - alias: Operate with digital twins of IoT devices
   az: İoT cihazlarının rəqəmsal əkizləri ilə işlər
   de: Arbeiten Sie mit digitalen Zwillingen von IoT-Geräten
@@ -1445,103 +1553,36 @@
   uk: API бібліотека для користувальних IoT-програм
   tr: Özel IoT uygulamaları için API kitaplığı
   zh: 定制物联网应用程序的API库
-- alias: Robonomics contains a complete set of tools for developing IoT applications,
-    both on the robotics and the user interface sides. Communication between the user
-    and device happens using the most successful technologies from the Web3 world
-    – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure
-    applications for Smart Cities and Industry 4.0.
-  az: Robonimika həm robototexnika, həm də istifadəçi interfeysi üçün Əşyaların İnterneti
-    tətbiqlərini inkişaf etdirmək üçün alətlərin tam dəstini ehtiva edir. İstifadəçi
-    ilə cihaz arasında əlaqə Web3 dünyasının ən uğurlu texnologiyalarından - IPFS,
-    Ethereum və Polkadot-dan istifadə etməklə həyata keçirilir. Beləliklə, tərtibatçılar
-    ağıllı şəhərlər və Sənaye 4.0 üçün müasir və təhlükəsiz tətbiqlər yarada bilərlər.
-  de: Robonomics enthält ein komplettes Werkzeugset für die Entwicklung von IoT-Anwendungen,
-    sowohl auf der Robotics-, als auch auf der Benutzeroberflächenseite. Die Kommunikation
-    zwischen Benutzer und Gerät erfolgt mit den erfolgreichsten Technologien aus der
-    Web3-Welt – IPFS, Ethereum und Polkadot. So können Entwickler moderne und sichere
-    Anwendungen für Smart Cities und Industrie 4.0 erstellen.
-  en: Robonomics contains a complete set of tools for developing IoT applications,
-    both on the robotics and the user interface sides. Communication between the user
-    and device happens using the most successful technologies from the Web3 world
-    – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure
-    applications for Smart Cities and Industry 4.0.
-  es: 'Robonomics contiene un conjunto completo de herramientas para desarrollar aplicaciones
-    de IoT, tanto en la robótica como en la interfaz de usuario. La comunicación entre
-    el usuario y el dispositivo sucede a través las tecnologías más exitosas del mundo
-    Web3: IPFS, Ethereum y Polkadot. Por lo tanto, los desarrolladores pueden crear
-    aplicaciones modernas y seguras para Smart Cities e Industry 4.0.'
-  fr: 'Robonomics contient un ensemble complet d’outils pour le développement d’applications
-    IoT, tant du côté de la robotique que de l’interface utilisateur. La communication
-    entre l’utilisateur et l’appareil se fait à l’aide des technologies les plus performantes
-    du monde Web3 : IPFS, Ethereum et Polkadot. Ainsi, les développeurs peuvent créer
-    des applications modernes et sécurisées pour les villes intelligentes et l’industrie
-    4.0.'
-  it: 'Robonomics contiene un set completo di strumenti per lo sviluppo di applicazioni
-    IoT, sia dal punto di vista della robotica che dell''interfaccia utente. La comunicazione
-    fra l''utente e il dispositivo, avviene utilizzando le principali tecnologie del
-    Web3: IPFS, Ethereum e Polkadot. Pertanto, gli sviluppatori possono creare applicazioni
-    moderne e sicure per Smart Cities e Industria 4.0.'
+- alias: Robonomics contains a complete set of tools for developing IoT applications, both on the robotics and the user interface sides. Communication between the user and device happens using the most successful technologies from the Web3 world – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure applications for Smart Cities and Industry 4.0.
+  az: Robonimics həm robototexnika, həm də istifadəçi interfeysi üçün Əşyaların İnterneti tətbiqlərini inkişaf etdirmək üçün alətlərin tam dəstini ehtiva edir. İstifadəçi ilə cihaz arasında əlaqə Web3 dünyasının ən uğurlu texnologiyalarından - IPFS, Ethereum və Polkadot-dan istifadə etməklə həyata keçirilir. Beləliklə, tərtibatçılar ağıllı şəhərlər və Sənaye 4.0 üçün müasir və təhlükəsiz tətbiqlər yarada bilərlər..
+  de: Robonomics enthält ein komplettes Werkzeugset für die Entwicklung von IoT-Anwendungen, sowohl auf der Robotics-, als auch auf der Benutzeroberflächenseite. Die Kommunikation zwischen Benutzer und Gerät erfolgt mit den erfolgreichsten Technologien aus der Web3-Welt – IPFS, Ethereum und Polkadot. So können Entwickler moderne und sichere Anwendungen für Smart Cities und Industrie 4.0 erstellen.
+  en: Robonomics contains a complete set of tools for developing IoT applications, both on the robotics and the user interface sides. Communication between the user and device happens using the most successful technologies from the Web3 world – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure applications for Smart Cities and Industry 4.0.
+  es: 'Robonomics contiene un conjunto completo de herramientas para desarrollar aplicaciones de IoT, tanto en la robótica como en la interfaz de usuario. La comunicación entre el usuario y el dispositivo sucede a través las tecnologías más exitosas del mundo Web3: IPFS, Ethereum y Polkadot. Por lo tanto, los desarrolladores pueden crear aplicaciones modernas y seguras para Smart Cities e Industry 4.0.'
+  fr: 'Robonomics contient un ensemble complet d’outils pour le développement d’applications IoT, tant du côté de la robotique que de l’interface utilisateur. La communication entre l’utilisateur et l’appareil se fait à l’aide des technologies les plus performantes du monde Web3 : IPFS, Ethereum et Polkadot. Ainsi, les développeurs peuvent créer des applications modernes et sécurisées pour les villes intelligentes et l’industrie 4.0.'
+  it: "Robonomics contiene un set completo di strumenti per lo sviluppo di applicazioni IoT, sia dal punto di vista della robotica che dell'interfaccia utente. La comunicazione fra l'utente e il dispositivo, avviene utilizzando le principali tecnologie del Web3: IPFS, Ethereum e Polkadot. Pertanto, gli sviluppatori possono creare applicazioni moderne e sicure per Smart Cities e Industria 4.0."
   ja: Robonomicsには、ロボット工学とユーザーインターフェイスの両方の側面でIoTアプリケーションを開発するための完全なツールが含まれています。ユーザーとデバイス間の通信は、Web3の世界で最も成功しているテクノロジーであるIPFS、Ethereum、およびPolkadotを使用して行われます。これらによって、開発者はスマートシティやインダストリー4.0用の最新の安全なアプリケーションを作成できます。
-  ko: Robonomics에는 로봇공학 및 사용자 인터페이스 측면에서 IoT 애플리케이션을 개발할 수 있는 전체 도구 모음이 포함되어 있습니다.
-    사용자와 기기 사이의 통신은 Web3 세계에서 가장 성공적인 기술인 IPFS, Ethereum, Polkadot을 사용하여 일어납니다. 따라서
-    개발자는 스마트 시티 및 Industry 4.0용 최신 보안 애플리케이션을 만들 수 있습니다.
-  pt: A Robonomics possui um conjunto completo de ferramentas para o desenvolvimento
-    de aplicações IOT, tanto no lado da robótica quanto no da interface do usuário.
-    A comunicação entre o usuário e o dispositivo acontece utilizando as tecnologias
-    de maior sucesso do mundo Web3 - IPFS, Ethereum, e Polkadot. Assim, os desenvolvedores
-    podem criar aplicações modernas e seguras para Cidades Inteligentes e para a Indústria
-    4.0.
-  ru: Робономика содержит полный набор инструментов для разработки приложений Интернета
-    вещей, как для робототехники, так и для пользовательского интерфейса. Связь между
-    пользователем и устройством происходит с использованием самых успешных технологий
-    из мира Web3 - IPFS, Ethereum и Polkadot. Таким образом, разработчики могут создавать
-    современные и безопасные приложения для умных городов и Индустрии 4.0.
-  uk: Робономіка містить повний набір інструментів для розробки програм Інтернету 
-    речей, як для робототехніки, так і для інтерфейсу користувача. Зв'язок між користувачем та пристроєм відбувається з використанням найуспішніших технологій зі світу Web3 — IPFS, Ethereum та Polkadot. Таким чином, розробники можуть створювати сучасні та безпечні програми для розумних міст та Індустрії 4.0.
-  tr: Robonomics, hem robotik hem de kullanıcı arayüzü tarafında IoT uygulamaları
-    geliştirmek için eksiksiz bir araç seti içerir. Kullanıcı ve cihaz arasındaki
-    iletişim, Web3 dünyasının en başarılı teknolojileri olan IPFS, Ethereum ve Polkadot
-    kullanılarak gerçekleşir. Böylece geliştiriciler, Akıllı Şehirler ve Endüstri
-    4.0 için modern ve güvenli uygulamalar oluşturabilirler.
+  ko: Robonomics에는 로봇공학 및 사용자 인터페이스 측면에서 IoT 애플리케이션을 개발할 수 있는 전체 도구 모음이 포함되어 있습니다. 사용자와 기기 사이의 통신은 Web3 세계에서 가장 성공적인 기술인 IPFS, Ethereum, Polkadot을 사용하여 일어납니다. 따라서 개발자는 스마트 시티 및 Industry 4.0용 최신 보안 애플리케이션을 만들 수 있습니다.
+  pt: A Robonomics possui um conjunto completo de ferramentas para o desenvolvimento de aplicações IOT, tanto no lado da robótica quanto no da interface do usuário. A comunicação entre o usuário e o dispositivo acontece utilizando as tecnologias de maior sucesso do mundo Web3 - IPFS, Ethereum, e Polkadot. Assim, os desenvolvedores podem criar aplicações modernas e seguras para Cidades Inteligentes e para a Indústria 4.0.
+  ru: Robonomics содержит полный набор инструментов для разработки приложений Интернета вещей, как для робототехники, так и для пользовательского интерфейса. Связь между пользователем и устройством происходит с использованием самых успешных технологий из мира Web3 - IPFS, Ethereum и Polkadot. Таким образом, разработчики могут создавать современные и безопасные приложения для умных городов и Индустрии 4.0.
+  uk: Robonomics містить повний набір інструментів для розробки програм Інтернету речей, як для робототехніки, так і для інтерфейсу користувача. Зв'язок між користувачем та пристроєм відбувається з використанням найуспішніших технологій зі світу Web3 — IPFS, Ethereum та Polkadot. Таким чином, розробники можуть створювати сучасні та безпечні програми для розумних міст та Індустрії 4.0.
+  tr: Robonomics, hem robotik hem de kullanıcı arayüzü tarafında IoT uygulamaları geliştirmek için eksiksiz bir araç seti içerir. Kullanıcı ve cihaz arasındaki iletişim, Web3 dünyasının en başarılı teknolojileri olan IPFS, Ethereum ve Polkadot kullanılarak gerçekleşir. Böylece geliştiriciler, Akıllı Şehirler ve Endüstri 4.0 için modern ve güvenli uygulamalar oluşturabilirler.
   zh: Robonomics包含用于在机器人和用户界面端开发物联网应用程序的一整套工具。用户和设备之间的通信使用Web3世界中最成功的技术——IPFS、以太坊和Polkadot。因此，开发人员可以为智慧城市和工业4.0打造现代化的安全应用程序。
-- alias: 'For the developers’ convenience, Robonomics contains a set of software for
-    connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems
-    using the Robot Operating System (ROS).'
-  az: 'Tərtibatçıların rahatlığı üçün Robonomics birləşdirmək üçün bir sıra proqram
-    təminatı ehtiva edir: HTTP / MQTT protokolundan istifadə edən Əşyaların İnterneti,
-    Robot Əməliyyat Sistemindən (ROS) istifadə edən mürəkkəb robot sistemləri.'
-  de: 'Für den Komfort der Entwickler enthält Robonomics eine Reihe von Software zum
-    Verbinden: (1) IoT-Geräte, die das HTTP/MQTT-Protokoll verwenden, (2) komplexe
-    Robotersysteme, die das Robot Operating System (ROS) verwenden.'
-  en: 'For the developers’ convenience, Robonomics contains a set of software for
-    connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems
-    using the Robot Operating System (ROS).'
-  es: 'Para comodidad de los desarrolladores, Robonomics contiene un conjunto de software
-    para conectar: dispositivos IoT que utilizan el protocolo HTTP/MQTT, sistemas
-    robóticos complejos que utilizan el sistema operativo de robot (ROS, por sus siglas
-    en inglés).'
-  fr: Pour la commodité des développeurs, Robonomics contient un ensemble de logiciels
-    pour la connexion d’appareils IoT utilisant le protocole HTTP/MQTT, des systèmes
-    robotiques complexes utilisant le Robot Operating System (ROS).
-  it: 'Per comodità degli sviluppatori, Robonomics contiene un set di software per
-    la connettività: dispositivi IoT che utilizzano il protocollo HTTP/MQTT e sistemi
-    robotici complessi che utilizzano il Robot Operating System (ROS).'
+- alias: 'For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS).'
+  az: 'Tərtibatçıların rahatlığı üçün Robonomics birləşdirmək üçün bir sıra proqram təminatı ehtiva edir: HTTP / MQTT protokolundan istifadə edən Əşyaların İnterneti, Robot Əməliyyat Sistemindən (ROS) istifadə edən mürəkkəb robot sistemləri.'
+  de: 'Für den Komfort der Entwickler enthält Robonomics eine Reihe von Software zum Verbinden: (1) IoT-Geräte, die das HTTP/MQTT-Protokoll verwenden, (2) komplexe Robotersysteme, die das Robot Operating System (ROS) verwenden.'
+  en: 'For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS).'
+  es: 'Para comodidad de los desarrolladores, Robonomics contiene un conjunto de software para conectar: dispositivos IoT que utilizan el protocolo HTTP/MQTT, sistemas robóticos complejos que utilizan el sistema operativo de robot (ROS, por sus siglas en inglés).'
+  fr: Pour la commodité des développeurs, Robonomics contient un ensemble de logiciels pour la connexion d’appareils IoT utilisant le protocole HTTP/MQTT, des systèmes robotiques complexes utilisant le Robot Operating System (ROS).
+  it: 'Per comodità degli sviluppatori, Robonomics contiene un set di software per la connettività: dispositivi IoT che utilizzano il protocollo HTTP/MQTT e sistemi robotici complessi che utilizzano il Robot Operating System (ROS).'
   ja: 開発者の便宜のため、Robonomicsには（1）HTTP/MQTTプロトコルを使用するIoTデバイス、（2）Robot Operating System（ROS）を使用する複雑なロボットシステムを接続するための一連のソフトウェアが含まれています。
-  ko: 개발자의 편의를 위하여 Robonomics에는 HTTP/MQTT 프로토콜을 사용하는 IoT 기기, 로봇 운영체제(ROS)를 사용하는 복잡한
-    로봇공학 시스템과 같은 연결용 소프트웨어 모음이 포함되어 있습니다.
-  pt: 'Para a conveniência dos desenvolvedores, a Robonomics contém um conjunto de
-    softwares para conexões: dispositivos IoT usando o protocolo HTTP/MQTT, sistemas
-    robóticos complexos usando o Robot Operating System (ROS).'
-  ru: 'Для удобства разработчиков Робономика содержит набор ПО для подключения: устройств
-    Интернета вещей, использующих протокол HTTP/MQTT, сложных роботизированных систем,
-    использующих операционную систему роботов (ROS).'
-  uk: 'Для зручності розробників Робономіка містить набір програмного забезпечення для підключення: пристроїв Інтернету речей, що використовують протокол HTTP/MQTT, складних роботизованих систем, що використовують операційну систему роботів (ROS).'
-  tr: 'Geliştiricilerin kolay çalışabilmesi için Robonomics, aşağıdakileri bağlamak
-    için bir dizi yazılım içerir: HTTP/MQTT protokolünü kullanan IoT cihazları, Robot
-    İşletim Sistemini (ROS) kullanan karmaşık robotik sistemler.'
+  ko: 개발자의 편의를 위하여 Robonomics에는 HTTP/MQTT 프로토콜을 사용하는 IoT 기기, 로봇 운영체제(ROS)를 사용하는 복잡한 로봇공학 시스템과 같은 연결용 소프트웨어 모음이 포함되어 있습니다.
+  pt: 'Para a conveniência dos desenvolvedores, a Robonomics contém um conjunto de softwares para conexões: dispositivos IoT usando o protocolo HTTP/MQTT, sistemas robóticos complexos usando o Robot Operating System (ROS).'
+  ru: 'Для удобства разработчиков Robonomics содержит набор ПО для подключения: устройств Интернета вещей, использующих протокол HTTP/MQTT, сложных роботизированных систем, использующих операционную систему роботов (ROS).'
+  uk: 'Для зручності розробників Robonomics містить набір програмного забезпечення для підключення: пристроїв Інтернету речей, що використовують протокол HTTP/MQTT, складних роботизованих систем, що використовують операційну систему роботів (ROS).'
+  tr: 'Geliştiricilerin kolay çalışabilmesi için Robonomics, aşağıdakileri bağlamak için bir dizi yazılım içerir: HTTP/MQTT protokolünü kullanan IoT cihazları, Robot İşletim Sistemini (ROS) kullanan karmaşık robotik sistemler.'
   zh: 为了方便开发人员，Robonomics包含一整套互连性工具：使用HTTP/MQTT协议的物联网设备，使用机器人操作系统 (ROS) 的复杂机器人系统。
 - alias: Connect a sensor
-  az: Sensoru Robonomika şəbəkəsinə qoşun
+  az: Sensoru Robonomics şəbəkəsinə
   de: Verbinden Sie einen Sensor
   en: Connect a sensor
   es: Conecte un sensor
@@ -1555,11 +1596,7 @@
   tr: Sensör bağla
   zh: 连接传感器
 - alias: to the Robonomics network
-  az: Robonimika həm robototexnika, həm də istifadəçi interfeysi üçün Əşyaların İnterneti
-    tətbiqlərini inkişaf etdirmək üçün alətlərin tam dəstini ehtiva edir. İstifadəçi
-    ilə cihaz arasında əlaqə Web3 dünyasının ən uğurlu texnologiyalarından - IPFS,
-    Ethereum və Polkadot-dan istifadə etməklə həyata keçirilir. Beləliklə, tərtibatçılar
-    ağıllı şəhərlər və Sənaye 4.0 üçün müasir və təhlükəsiz tətbiqlər yarada bilərlər.
+  az: qoşun
   de: mit dem Robonomics-Netzwerk
   en: to the Robonomics network
   es: a la red de Robonomics
@@ -1568,18 +1605,18 @@
   ja: します。
   ko: Robonomics 네트워크에
   pt: à rede Robonomis
-  ru: к сети Робономика
-  uk: до мережі Робономіки
+  ru: к сети Robonomics
+  uk: до мережі Robonomics
   tr: Robonomics ağına
   zh: 与Robonomics网络建立连接。
 - alias: Try
-  az: Robonomics IO — prototiplər yaratmaq üçün sadə alət
+  az: Sadə prototipləmə aləti 
   de: Probieren Sie
   en: Try
   es: Pruebe
   fr: Essayer
   it: Prova
-  ja: ' '
+  ja: 試してみてください
   ko: 사용해보기
   pt: Experimente
   ru: Попробуйте
@@ -1587,29 +1624,27 @@
   uk: Спробуйте ROBONOMICS IO
   zh: 试用
 - alias: a simple prototyping tool
-  az: 'Tərtibatçıların rahatlığı üçün Robonomics birləşdirmək üçün bir sıra proqram
-    təminatı ehtiva edir: HTTP / MQTT protokolundan istifadə edən Əşyaların İnterneti,
-    Robot Əməliyyat Sistemindən (ROS) istifadə edən mürəkkəb robot sistemləri.'
+  az: sınayın
   de: einmal aus. Ein einfaches Prototyping-Tool.
   en: a simple prototyping tool
   es: herramienta de creación de prototipos simple
   fr: un outil de prototypage simple
   it: un semplice strumento di prototipazione
-  ja: をお試しください。シンプルなプロトタイピングツールです。
+  ja: '- をお試しください。シンプルなプロトタイピングツールです。'
   ko: 간단한 프로토타이핑 도구
   pt: uma ferramenta simples de prototipagem
   ru: простой инструмент для создания прототипов
-  uk: простий інструмент створення прототипів
+  uk: '- простий інструмент створення прототипів'
   tr: basit bir prototipleme aracı
   zh: 简单的原型制作工具
 - alias: Start building your own cyber physical system with
-  az: AIRA OS ilə kiber-fiziki sisteminizi qurmağa başlayın
+  az: AIRA OS
   de: Beginnen Sie mit dem Aufbau Ihres eigenen Cyber-Physical-Systems mit
   en: Start building your own cyber physical system with
   es: Comience a construir su propio sistema físico cibernético con
   fr: Commencez à construire votre propre système physique cybernétique avec
-  it: 'Inizia a costruire il tuo sistema cyber fisico con '
-  ja: ' '
+  it: Inizia a costruire il tuo sistema cyber fisico con
+  ja: を使用して独自のサイバーフィジカルシステムの構築を 開始します
   ko: 로 나만의 가상 물리 시스템 구축 시작
   pt: Comece construir seu próprio sistema físico cibernético com o
   ru: Начните строить свою кибер-физическую систему с
@@ -1617,16 +1652,21 @@
   tr: ile kendi siber fiziksel sisteminizi oluşturmaya başlayın.
   zh: 开始使用构建您自己的网络物理系统
 - alias: Aira OS
-  az: .nan
+  az: ilə kiber-fiziki sisteminizi qurmağa başlayın
   en: Aira OS
   fr: Aira OS
   it: Aira OS
-  ja: Aira OS を使用して独自のサイバーフィジカルシステムの構築を 開始します。
+  ja: Aira OS
   pt: Sistema Operacional Aira
   uk: Aira OS
   tr: Aira OS
+  ko: Aira OS
+  zh: Aira OS
+  es: Aira OS
+  ru: Aira OS
+  de: Aira OS
 - alias: Robonomics Supports Hundreds of Robots Out of the Box
-  az: Robonomika yüzlərlə robotları qutudan dəstəkləyir
+  az: Robonomics yüzlərlə robotları qutudan dəstəkləyir
   de: Robonomics unterstützt Hunderte von Robotern Out of the Box
   en: Robonomics Supports Hundreds of Robots Out of the Box
   es: Robonomics es compatible con cientos de robots listo para usar
@@ -1635,42 +1675,23 @@
   ja: Robonomicsに含まれるもの
   ko: Robonomics로 즉시 사용할 수 있는 로봇 수백 대 지원 가능
   pt: A Robonomics Suporta Centenas de Robôs Exclusivos
-  ru: Робономика поддерживает сотни роботов из коробки
+  ru: ROBONOMICS ПОДДЕРЖИВАЕТ СОТНИ РОБОТОВ ИЗ КОРОБКИ
   tr: Robonomics Kullanıma Hazır Yüzlerce Robotu Destekliyor
   zh: Robonomics支持上百种机器人开箱即用
-  uk: Робономіка підтримує сотні роботів із коробки
-- alias: Platform users can connect ROS-compatible robots to digital economy in a
-    matter of minutes. For a complete list of supported robots, please follow the
-    link
-  az: 'Platforma istifadəçiləri ROS-ə uyğun robotları bir neçə dəqiqə ərzində rəqəmsal
-    iqtisadiyyata qoşa bilərlər. Dəstəklənən robotların tam siyahısı üçün, keçiddən
-    istifadə edin'
-  de: Plattformnutzer können ROS-kompatible Roboter in wenigen Minuten mit der digitalen
-    Wirtschaft verbinden. Für eine vollständige Liste der unterstützten Roboter folgen
-    Sie bitte dem Link
-  en: Platform users can connect ROS-compatible robots to digital economy in a matter
-    of minutes. For a complete list of supported robots, please follow the link
-  es: Los usuarios de la plataforma pueden conectar robots compatibles con ROS a la
-    economía digital en cuestión de minutos. A fin de obtener una lista completa de
-    los robots compatibles, siga el enlace
-  fr: Les utilisateurs de la plateforme peuvent connecter des robots compatibles ROS
-    à l’économie numérique en quelques minutes. Pour une liste complète des robots
-    pris en charge, veuillez suivre le lien
-  it: 'Gli utenti della piattaforma possono collegare i robot compatibili con ROS
-    all''economia digitale in pochi minuti. Per un elenco completo dei robot supportati,
-    seguite il link'
+  uk: Robonomics підтримує сотні роботів із коробки
+- alias: Platform users can connect ROS-compatible robots to digital economy in a matter of minutes. For a complete list of supported robots, please follow the link
+  az: 'Platforma istifadəçiləri ROS-ə uyğun robotları bir neçə dəqiqə ərzində rəqəmsal iqtisadiyyata qoşa bilərlər. Dəstəklənən robotların tam siyahısı üçün, keçiddən istifadə edin'
+  de: Plattformnutzer können ROS-kompatible Roboter in wenigen Minuten mit der digitalen Wirtschaft verbinden. Für eine vollständige Liste der unterstützten Roboter folgen Sie bitte dem Link
+  en: Platform users can connect ROS-compatible robots to digital economy in a matter of minutes. For a complete list of supported robots, please follow the link
+  es: Los usuarios de la plataforma pueden conectar robots compatibles con ROS a la economía digital en cuestión de minutos. A fin de obtener una lista completa de los robots compatibles, siga el enlace
+  fr: Les utilisateurs de la plateforme peuvent connecter des robots compatibles ROS à l’économie numérique en quelques minutes. Pour une liste complète des robots pris en charge, veuillez suivre le lien
+  it: 'Gli utenti della piattaforma possono collegare i robot compatibili con ROS all''economia digitale in pochi minuti. Per un elenco completo dei robot supportati, seguite il link'
   ja: プラットフォームユーザーは、ROS互換ロボットを数分でデジタルエコノミーに接続できます。サポートされているロボットの完全なリストについては、次をご覧ください
   ko: 플랫폼 사용자는 몇 분 이내에 ROS와 호환되는 로봇을 디지털 경제에 연결할 수 있습니다. 에서 지원되는 로봇의 전체 목록을 확인하세요
-  pt: Os usuários da plataforma podem conectar robôs compatíveis com ROS à economia
-    digital em questão de minutos. Para uma lista completa de robôs compatíveis, por
-    favor, siga o link
-  ru: Пользователи платформы могут подключить роботов, совместимых с ROS, к цифровой
-    экономике за считанные минуты. Чтобы увидеть полный список поддерживаемых роботов,
-    перейдите по ссылке
+  pt: Os usuários da plataforma podem conectar robôs compatíveis com ROS à economia digital em questão de minutos. Para uma lista completa de robôs compatíveis, por favor, siga o link
+  ru: Пользователи платформы могут подключить роботов, совместимых с ROS, к цифровой экономике за считанные минуты. Чтобы увидеть полный список поддерживаемых роботов, перейдите по ссылке
   uk: 'Користувачі платформи можуть підключити роботів, сумісних із ROS, до цифрової економіки за лічені хвилини. Щоб побачити повний список роботів, що підтримуються, перейдіть за посиланням'
-  tr: Platform kullanıcıları, ROS uyumlu robotları birkaç dakika içinde dijital ekonomiye
-    bağlayabilir. Desteklenen robotların tam listesi için lütfen bağlantıyı takip
-    edin
+  tr: Platform kullanıcıları, ROS uyumlu robotları birkaç dakika içinde dijital ekonomiye bağlayabilir. Desteklenen robotların tam listesi için lütfen bağlantıyı takip edin
   zh: 平台用户可以将兼容ROS的机器人在数分钟内连接至数字经济。如需了解适用的机器人完整列表，请访问链接
 - alias: Decentralized Cloud infrastructure for IoT
   az: Əşyaların interneti üçün mərkəzləşdirilməmiş bulud strukturu
@@ -1686,30 +1707,19 @@
   tr: IoT için Merkezi Olmayan Bulut altyapısı
   uk: Децентралізована хмарна інфраструктура для IoT
   zh: 适用于物联网的去中心化云基础架构
-- alias: Robonomics Web Services (RWS) is the basic infrastructural service for Robotics
-    and IoT on top of Robonomics Parachain and IPFS
-  az: Robonomics Web Services (RWS) Robonimics parachain və IPFS-ə əsaslanan robototexnika
-    və Əşyaların İnterneti üçün əsas infrastruktur xidmətidir.
-  de: Robonomics Web Services (RWS) ist der grundlegende Infrastrukturdienst für Robotics
-    und IoT zusätzlich zu Robonomics Parachain und IPFS.
-  en: Robonomics Web Services (RWS) is the basic infrastructural service for Robotics
-    and IoT on top of Robonomics Parachain and IPFS
-  es: Robonomics Web Services (RWS) es el servicio de infraestructura básico para
-    la robótica e IoT además de Robonomics Parachain e IPFS
-  fr: Robonomics Web Services (RWS) est le service d'infrastructure de base pour la
-    robotique et l'IoT en plus de Robonomics Parachain et IPFS
-  it: Robonomics Web Services (RWS) è il servizio infrastrutturale di base per la
-    robotica e l'IoT sulla parachain di Robonomics e IPFS.
+- alias: Robonomics Web Services (RWS) is the basic infrastructural service for Robotics and IoT on top of Robonomics Parachain and IPFS
+  az: Robonomics Web Services (RWS) Robonimics parachain və IPFS-ə əsaslanan robototexnika və Əşyaların İnterneti üçün əsas infrastruktur xidmətidir.
+  de: Robonomics Web Services (RWS) ist der grundlegende Infrastrukturdienst für Robotics und IoT zusätzlich zu Robonomics Parachain und IPFS
+  en: Robonomics Web Services (RWS) is the basic infrastructural service for Robotics and IoT on top of Robonomics Parachain and IPFS
+  es: Robonomics Web Services (RWS) es el servicio de infraestructura básico para la robótica e IoT además de Robonomics Parachain e IPFS
+  fr: Robonomics Web Services (RWS) est le service d'infrastructure de base pour la robotique et l'IoT en plus de Robonomics Parachain et IPFS
+  it: Robonomics Web Services (RWS) è il servizio infrastrutturale di base per la robotica e l'IoT sulla parachain di Robonomics e IPFS.
   ja: Robonomics Web Services（RWS）は、Robonomics ParachainとIPFSに加えて、ロボット工学とIoTの基本的なインフラストラクチャサービスです。
-  ko: Robonomics 웹 서비스(RWS)는 Robonomics Parachain과 IPFS를 기반으로 하는 로봇공학 및 IoT용 기본 인프라
-    서비스입니다.
-  pt: Robonomics Web Services (RWS) é o serviço básico de infraestrutura para Robótica
-    e IoT na Parachain Robonomics e IPFS
-  ru: Веб-сервисы Робономики (RWS) - это базовый инфраструктурный сервис для робототехники
-    и Интернета вещей на основе парачейна Робономики и IPFS
-  uk: Веб-сервіси Робономіки (RWS) — це базовий інфраструктурний сервіс для робототехніки та Інтернету речей на основі парачейна Робономіки та IPFS
-  tr: Robonomics Web Services (RWS), Robonomics Parachain ve IPFS'nin yanı sıra Robotik
-    ve IoT için temel altyapı hizmetidir.
+  ko: Robonomics 웹 서비스(RWS)는 Robonomics Parachain과 IPFS를 기반으로 하는 로봇공학 및 IoT용 기본 인프라 서비스입니다.
+  pt: Robonomics Web Services (RWS) é o serviço básico de infraestrutura para Robótica e IoT na Parachain Robonomics e IPFS
+  ru: Robonomics Web Services (RWS) - это базовый инфраструктурный сервис для робототехники и Интернета вещей на основе парачейна Robonomics и IPFS
+  uk: Robonomics Web Services (RWS) — це базовий інфраструктурний сервіс для робототехніки та Інтернету речей на основі парачейна Robonomics та IPFS
+  tr: Robonomics Web Services (RWS), Robonomics Parachain ve IPFS'nin yanı sıra Robotik ve IoT için temel altyapı hizmetidir
   zh: Robonomics Web服务 (RWS) 是基于Robonomics平行链和IPFS的机器人和物联网基础架构服务。
 - alias: Core RWS features available for IoT today
   az: Bu günə mövcud olan əşyaların interneti üçün əsas RWS funksiyaları
@@ -1837,61 +1847,19 @@
   uk: Серце вашого IoT-додатку — цифровий двійник на Блокчейні
   tr: IoT Uygulamanızın Kalbi - Blockchain'de Dijital İkiz
   zh: 您物联网应用程序的核心 - 区块链上的数字孪生
-- alias: In the technical architecture, IoT digital twins provide the visibility and
-    monitoring of things and related events (e.g., using IoT devices to automatically
-    capture the origin of a product), and blockchain enables the shared single version
-    of the truth as to the state of these things across their life cycles and associated
-    business events
-  az: Texniki memarlıqda IoT rəqəmsal əkizləri əşyaların və əlaqəli hadisələrin görünməsini
-    və monitorinqini təmin edir (məsələn, məhsulun mənşəyini avtomatik müəyyən etmək
-    üçün IoT cihazlarından istifadə etməklə), blokçeyn isə bu əşyaların həyat dövrləri
-    və əlaqəli iş hadisələri boyu vəziyyəti haqqında həqiqətin vahid versiyasını paylaşmağa
-    imkan verir.
-  de: In der technischen Architektur bieten digitale IoT-Zwillinge die Sichtbarkeit
-    und Überwachung von Dingen und verwandten Ereignissen (z.B. die Verwendung von
-    IoT-Geräten, um die Herkunft eines Produkts automatisch zu erfassen), und Blockchain
-    ermöglicht die gemeinsame einzige Version der Wahrheit über den Zustand dieser
-    Dinge über ihren Lebenszyklus und die damit verbundenen Geschäftsereignisse hinweg.
-  en: In the technical architecture, IoT digital twins provide the visibility and
-    monitoring of things and related events (e.g., using IoT devices to automatically
-    capture the origin of a product), and blockchain enables the shared single version
-    of the truth as to the state of these things across their life cycles and associated
-    business events
-  es: En la arquitectura técnica, los gemelos digitales de IoT brindan visibilidad
-    y monitoreo de cosas y eventos relacionados (p. ej., mediante dispositivos de
-    IoT para capturar automáticamente el origen de un producto), y blockchain permite
-    la versión única compartida de la verdad en cuanto al estado de estas cosas a
-    lo largo de sus ciclos de vida y eventos comerciales asociados
-  fr: Dans l’architecture technique, les jumeaux numériques IoT fournissent la visibilité
-    et la surveillance des choses et des événements connexes (p. ex., utiliser des
-    dispositifs IoT pour saisir automatiquement l’origine d’un produit), et blockchain
-    permet la version unique partagée de la vérité quant à l’état de ces choses à
-    travers leurs cycles de vie et les événements d’affaires connexes
-  it: Nell'architettura tecnica, i digital twin IoT forniscono la visibilità e il
-    monitoraggio delle cose e degli eventi correlati (ad esempio, utilizzando i dispositivi
-    IoT per acquisire automaticamente l'origine di un prodotto) e la blockchain consente
-    l'unica versione condivisa della verità sullo stato di queste cose, attraverso
-    i loro cicli di vita e gli eventi aziendali associati
+- alias: In the technical architecture, IoT digital twins provide the visibility and monitoring of things and related events (e.g., using IoT devices to automatically capture the origin of a product), and blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events
+  az: Texniki memarlıqda IoT rəqəmsal əkizləri əşyaların və əlaqəli hadisələrin görünməsini və monitorinqini təmin edir (məsələn, məhsulun mənşəyini avtomatik müəyyən etmək üçün IoT cihazlarından istifadə etməklə), blokçeyn isə bu əşyaların həyat dövrləri və əlaqəli iş hadisələri boyu vəziyyəti haqqında həqiqətin vahid versiyasını paylaşmağa imkan verir
+  de: In der technischen Architektur bieten digitale IoT-Zwillinge die Sichtbarkeit und Überwachung von Dingen und verwandten Ereignissen (z.B. die Verwendung von IoT-Geräten, um die Herkunft eines Produkts automatisch zu erfassen), und Blockchain ermöglicht die gemeinsame einzige Version der Wahrheit über den Zustand dieser Dinge über ihren Lebenszyklus und die damit verbundenen Geschäftsereignisse hinweg.
+  en: In the technical architecture, IoT digital twins provide the visibility and monitoring of things and related events (e.g., using IoT devices to automatically capture the origin of a product), and blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events
+  es: En la arquitectura técnica, los gemelos digitales de IoT brindan visibilidad y monitoreo de cosas y eventos relacionados (p. ej., mediante dispositivos de IoT para capturar automáticamente el origen de un producto), y blockchain permite la versión única compartida de la verdad en cuanto al estado de estas cosas a lo largo de sus ciclos de vida y eventos comerciales asociados
+  fr: Dans l’architecture technique, les jumeaux numériques IoT fournissent la visibilité et la surveillance des choses et des événements connexes (p. ex., utiliser des dispositifs IoT pour saisir automatiquement l’origine d’un produit), et blockchain permet la version unique partagée de la vérité quant à l’état de ces choses à travers leurs cycles de vie et les événements d’affaires connexes
+  it: Nell'architettura tecnica, i digital twin IoT forniscono la visibilità e il monitoraggio delle cose e degli eventi correlati (ad esempio, utilizzando i dispositivi IoT per acquisire automaticamente l'origine di un prodotto) e la blockchain consente l'unica versione condivisa della verità sullo stato di queste cose, attraverso i loro cicli di vita e gli eventi aziendali associati
   ja: 技術アーキテクチャでは、IoTデジタルツインはモノと関連イベントの可視性と監視を提供し（たとえば、IoTデバイスを使用して製品の起源を自動的にキャプチャします）、ブロックチェーンは、これらのモノのライフサイクルと関連するビジネスイベントの状態についての真実を共有される単一のバージョンで提供することを可能にします。
-  ko: '기술 아키텍처에서 IoT 디지털 트윈은 사물과 관련 이벤트를 보고 모니터링(예: IoT 기기를 사용하여 제품 원산지를 자동으로 포착)할
-    수 있도록 도와줍니다. 또한, 블록체인은 사물의 수명 주기 및 연관된 비즈니스 이벤트 전반에 걸쳐 이러한 사물의 상태에 관해 공유된 단일 버전의
-    진실(single version of the truth, SVOT)을 활성화합니다'
-  pt: Na arquitetura técnica, os gêmeos digitais IoT fornecem visibilidade e monitoramento
-    das coisas e eventos relacionados (por exemplo, usando dispositivos IoT para obter
-    automaticamente a origem de um produto), e a blockchain permite a versão única
-    compartilhada da verdade sobre o estado dessas coisas ao longo de seus ciclos
-    de vida e eventos comerciais associados
-  ru: В технической архитектуре цифровые двойники IoT обеспечивают видимость и мониторинг
-    вещей и связанных с ними событий (например, с помощью устройств IoT для автоматического
-    определения происхождения продукта), а блокчейн позволяет поделиться единой версией
-    истины о состоянии этих вещей на протяжении их жизненных циклов и связанных с
-    ними бизнес-событий
+  ko: '기술 아키텍처에서 IoT 디지털 트윈은 사물과 관련 이벤트를 보고 모니터링(예: IoT 기기를 사용하여 제품 원산지를 자동으로 포착)할 수 있도록 도와줍니다. 또한, 블록체인은 사물의 수명 주기 및 연관된 비즈니스 이벤트 전반에 걸쳐 이러한 사물의 상태에 관해 공유된 단일 버전의 진실(single version of the truth, SVOT)을 활성화합니다'
+  pt: Na arquitetura técnica, os gêmeos digitais IoT fornecem visibilidade e monitoramento das coisas e eventos relacionados (por exemplo, usando dispositivos IoT para obter automaticamente a origem de um produto), e a blockchain permite a versão única compartilhada da verdade sobre o estado dessas coisas ao longo de seus ciclos de vida e eventos comerciais associados
+  ru: В технической архитектуре цифровые IoT-двойники обеспечивают видимость и мониторинг вещей и связанных с ними событий (например, с помощью IoT-устройств для автоматического определения происхождения продукта), а блокчейн позволяет поделиться единой версией истины о состоянии этих вещей на протяжении их жизненных циклов и связанных с ними бизнес-событий
   uk: У технічній архітектурі цифрові двійники IoT забезпечують видимість та моніторинг речей та пов'язаних з ними подій (наприклад, за допомогою пристроїв IoT для автоматичного визначення походження продукту), а блокчейн дозволяє поділитися єдиною версією істини про стан цих речей протягом їх життєвих циклів та пов'язаних з ними бізнес-подій
-  tr: Teknik mimaride, IoT dijital ikizleri, nesnelerin ve ilgili olayların (örneğin,
-    bir ürünün yapısını otomatik olarak yakalamak için IoT cihazlarının kullanılması)
-    görünürlüğünü ve izlenmesini sağlar ve blokzincir üzerinde bunların durumuna ilişkin
-    gerçeğin paylaşılan tek versiyonunu sağlar. Buna yaşam döngüleri ve ilgili iş
-    olayları boyunca gerçekleşen her şey dahildir.
+  tr: Teknik mimaride, IoT dijital ikizleri, nesnelerin ve ilgili olayların (örneğin, bir ürünün yapısını otomatik olarak yakalamak için IoT cihazlarının kullanılması) görünürlüğünü ve izlenmesini sağlar ve blokzincir üzerinde bunların durumuna ilişkin gerçeğin paylaşılan tek versiyonunu sağlar. Buna yaşam döngüleri ve ilgili iş olayları boyunca gerçekleşen her şey dahildir.
   zh: 在技术架构中，物联网数字孪生提供了物和相关活动的可见性和监控（例如：使用物联网设备自动捕获产品的源产地），而区块链支持共享单一版本的真相，以了解它们的生命周期和相关的业务活动。
 - alias: from Gartner research
   az: Gartner tədqiqatından
@@ -1907,29 +1875,19 @@
   uk: з дослідження Gartner
   tr: Gartner araştırmasından
   zh: 来自Gartner（高德纳）研究报告
-- alias: Robonomics Parachain provides an opportunity to create a model of a digital
-    twin and update its state every 6 seconds.
-  az: Robonomikanın Paraçeyni rəqəmsal əkiz model yaratmağa və onun vəziyyətini hər
-    6 saniyədən bir yeniləməyə imkan verir.
-  de: Robonomics Parachain bietet die Möglichkeit, ein Modell eines digitalen Zwillings
-    zu erstellen und seinen Zustand alle 6 Sekunden zu aktualisieren.
-  en: Robonomics Parachain provides an opportunity to create a model of a digital
-    twin and update its state every 6 seconds.
-  es: Robonomics Parachain brinda la oportunidad de crear un modelo de gemelo digital
-    y actualizar su estado cada 6 segundos.
-  fr: Robonomics Parachain offre la possibilité de créer un modèle de jumeau numérique
-    et de mettre à jour son état toutes les 6 secondes.
-  it: La Parachain di Robonomics offre l'opportunità di creare un modello di digital
-    twin e aggiornarne lo stato ogni 6 secondi.
+- alias: Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.
+  az: Robonomikanın Paraçeyni rəqəmsal əkiz model yaratmağa və onun vəziyyətini hər 6 saniyədən bir yeniləməyə imkan verir.
+  de: Robonomics Parachain bietet die Möglichkeit, ein Modell eines digitalen Zwillings zu erstellen und seinen Zustand alle 6 Sekunden zu aktualisieren.
+  en: Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.
+  es: Robonomics Parachain brinda la oportunidad de crear un modelo de gemelo digital y actualizar su estado cada 6 segundos.
+  fr: Robonomics Parachain offre la possibilité de créer un modèle de jumeau numérique et de mettre à jour son état toutes les 6 secondes.
+  it: La Parachain di Robonomics offre l'opportunità di creare un modello di digital twin e aggiornarne lo stato ogni 6 secondi.
   ja: Robonomics Parachainは、デジタルツインのモデルを作成し、6秒ごとにその状態を更新する機会を提供します。
   ko: Robonomics Parachain은 디지털 트윈 모델을 생성하고 6초마다 상태를 업데이트할 기회를 제공합니다.
-  pt: A Parachain Robonomics oferece a oportunidade de criar um modelo de gêmeo digital
-    e atualizar seu estado a cada 6 segundos.
-  ru: Парачейн Робономики дает возможность создать модель цифрового двойника и обновлять
-    ее состояние каждые 6 секунд.
-  uk: Парачейн Робономіки дає можливість створити модель цифрового двійника та оновлювати її стан кожні 6 секунд.
-  tr: Robonomics Parachain, bir dijital ikiz modeli oluşturma ve durumunu her 6 saniyede
-    bir güncelleme fırsatı sunar.
+  pt: A Parachain Robonomics oferece a oportunidade de criar um modelo de gêmeo digital e atualizar seu estado a cada 6 segundos.
+  ru: Парачейн Robonomics дает возможность создать модель цифрового двойника и обновлять ее состояние каждые 6 секунд.
+  uk: Парачейн Robonomics дає можливість створити модель цифрового двійника та оновлювати її стан кожні 6 секунд.
+  tr: Robonomics Parachain, bir dijital ikiz modeli oluşturma ve durumunu her 6 saniyede bir güncelleme fırsatı sunar.
   zh: Robonomics平行链提供了机会，可以创建数字孪生模型并每6秒更新一次状态。
 - alias: App Store for Robotics - Robonomics Marketplace
   az: Robototexnika üçün tətbiq mağazası - Robonomikanln Ticarət Platformasıdır
@@ -1941,154 +1899,65 @@
   ja: ロボット工学向けのApp Store - Robonomicsマーケットプレイス
   ko: 로봇공학용 App Store - Robonomics 마켓플레이스
   pt: App Store para Robótica - Robonomics Marketplace
-  ru: Магазин приложений для робототехники - торговая площадка Робономики
-  uk: Магазин програм для робототеніки — торгівельній майданчик Робономіки
+  ru: МАГАЗИН ПРИЛОЖЕНИЙ ДЛЯ РОБОТОТЕХНИКИ - ТОРГОВАЯ ПЛОЩАДКА ROBONOMICS
+  uk: Магазин програм для робототеніки — торгівельній майданчик Robonomics
   tr: Robotik için App Store - Robonomics Marketplace
   zh: 机器人的应用商店 - Robonomics Marketplace
-- alias: Companies that design and manufacture IoT-connected products and equipment
-    should adopt a flexible digital twin delivery model to lower barriers to adoption,
-    such as offering digital twins via marketplaces, rather than only offering digital
-    twins via their own, proprietary, delivery model
-  az: IoT-yə qoşulan məhsul və avadanlıq dizayn və istehsal edən şirkətlər, həyata
-    keçirmə maneələrini azaltmaq üçün çevik rəqəmsal əkiz çatdırılma modelini qəbul
-    etməlidilər. Məsələn, rəqəmsal əkizləri yalnız öz xüsusi çatdırılma modeli ilə
-    yox, ticarət platformalardan etməsi ilə.
-  de: Unternehmen, die IoT-verbundene Produkte und Geräte entwickeln und herstellen,
-    sollten ein flexibles Modell zur Bereitstellung digitaler Zwillinge einführen,
-    um Hindernisse für die Einführung zu verringern, z.B. das Angebot digitaler Zwillinge
-    über Marktplätze, anstatt nur digitale Zwillinge über ein eigenes, proprietäres
-    Bereitstellungsmodell anzubieten
-  en: Companies that design and manufacture IoT-connected products and equipment should
-    adopt a flexible digital twin delivery model to lower barriers to adoption, such
-    as offering digital twins via marketplaces, rather than only offering digital
-    twins via their own, proprietary, delivery model
-  es: Las empresas que diseñan y fabrican productos y equipos conectados a IoT deben
-    adoptar un modelo de entrega de gemelos digitales flexible a fin de reducir las
-    barreras a la adopción, como ofrecerlos mediante mercados, en lugar de ofrecerlos
-    solo a través de su propio modelo de entrega patentado
-  fr: Les entreprises qui conçoivent et fabriquent des produits et de l’équipement
-    connectés à l’IdO devraient adopter un modèle de prestation numérique double flexible
-    pour réduire les obstacles à l’adoption, comme l’offre de jumeaux numériques sur
-    les marchés, plutôt que de n’offrir que des jumeaux numériques sur leurs propres
-    marchés. modèle de prestation exclusif
-  it: Le aziende che progettano e producono prodotti e apparecchiature connesse con
-    l'IoT, dovrebbero adottare un modello flessibile di consegna dei digital twins
-    per ridurre gli ostacoli all'adozione, come offrire digital twins tramite i marketplace,
-    piuttosto che offrirli solo tramite il proprio modello di consegna proprietario
+- alias: Companies that design and manufacture IoT-connected products and equipment should adopt a flexible digital twin delivery model to lower barriers to adoption, such as offering digital twins via marketplaces, rather than only offering digital twins via their own, proprietary, delivery model
+  az: IoT-yə qoşulan məhsul və avadanlıq dizayn və istehsal edən şirkətlər, həyata keçirmə maneələrini azaltmaq üçün çevik rəqəmsal əkiz çatdırılma modelini qəbul etməlidilər. Məsələn, rəqəmsal əkizləri yalnız öz xüsusi çatdırılma modeli ilə yox, ticarət platformalardan etməsi ilə.
+  de: Unternehmen, die IoT-verbundene Produkte und Geräte entwickeln und herstellen, sollten ein flexibles Modell zur Bereitstellung digitaler Zwillinge einführen, um Hindernisse für die Einführung zu verringern, z.B. das Angebot digitaler Zwillinge über Marktplätze, anstatt nur digitale Zwillinge über ein eigenes, proprietäres Bereitstellungsmodell anzubieten
+  en: Companies that design and manufacture IoT-connected products and equipment should adopt a flexible digital twin delivery model to lower barriers to adoption, such as offering digital twins via marketplaces, rather than only offering digital twins via their own, proprietary, delivery model
+  es: Las empresas que diseñan y fabrican productos y equipos conectados a IoT deben adoptar un modelo de entrega de gemelos digitales flexible a fin de reducir las barreras a la adopción, como ofrecerlos mediante mercados, en lugar de ofrecerlos solo a través de su propio modelo de entrega patentado
+  fr: Les entreprises qui conçoivent et fabriquent des produits et de l’équipement connectés à l’IdO devraient adopter un modèle de prestation numérique double flexible pour réduire les obstacles à l’adoption, comme l’offre de jumeaux numériques sur les marchés, plutôt que de n’offrir que des jumeaux numériques sur leurs propres marchés. modèle de prestation exclusif
+  it: Le aziende che progettano e producono prodotti e apparecchiature connesse con l'IoT, dovrebbero adottare un modello flessibile di consegna dei digital twins per ridurre gli ostacoli all'adozione, come offrire digital twins tramite i marketplace, piuttosto che offrirli solo tramite il proprio modello di consegna proprietario
   ja: Tに接続された製品や機器を設計および製造する企業は、デジタルツインの提供など、採用の障壁を低くするために、独自の配信モデルを介してデジタルツインを提供するだけでなく、マーケットプレイスを介して柔軟なデジタルツイン配信モデルを採用する必要があります
-  ko: IoT 연결 제품 및 장비를 설계하고 제조하는 회사는 유연한 디지털 트윈 전송 모델을 채택하여 자사의 독점 전송 모델을 통해서만 디지털
-    트윈을 제공하는 것이 아닌 마켓플레이스를 통한 디지털 트윈 제공 등에 대한 채택 장벽을 낮춰야 합니다
-  pt: As empresas que projetam e fabricam produtos e equipamentos conectados a IoT
-    devem adotar um modelo flexível de entrega de gêmeos digitais para reduzir as
-    barreiras à adoção, como oferecer gêmeos digitais por meio de marketplaces, em
-    vez de oferecer apenas gêmeos digitais por meio de seu próprio modelo de entrega
-    proprietário
-  ru: Компании, которые разрабатывают и производят продукты и оборудование, подключаемые
-    к Интернету вещей, должны принять гибкую модель доставки цифровых двойников, чтобы
-    снизить барьеры для внедрения. Например, предлагать цифровых двойников через торговые
-    площадки, а не только через их собственную запатентованную модель доставки
+  ko: IoT 연결 제품 및 장비를 설계하고 제조하는 회사는 유연한 디지털 트윈 전송 모델을 채택하여 자사의 독점 전송 모델을 통해서만 디지털 트윈을 제공하는 것이 아닌 마켓플레이스를 통한 디지털 트윈 제공 등에 대한 채택 장벽을 낮춰야 합니다
+  pt: As empresas que projetam e fabricam produtos e equipamentos conectados a IoT devem adotar um modelo flexível de entrega de gêmeos digitais para reduzir as barreiras à adoção, como oferecer gêmeos digitais por meio de marketplaces, em vez de oferecer apenas gêmeos digitais por meio de seu próprio modelo de entrega proprietário
+  ru: Компании, которые разрабатывают и производят продукты и оборудование, подключаемые к Интернету вещей, должны принять гибкую модель доставки цифровых двойников, чтобы снизить барьеры для внедрения. Например, предлагать цифровых двойников через торговые площадки, а не только через их собственную запатентованную модель доставки
   uk: Компанії, які розробляють та виробляють продукти і обладнання, що підключаються до Інтернету речей, мають прийняти гнучку модель доставки цифрових двійників, щоб знизити бар'єри для впровадження. Наприклад, пропонувати цифрові двійники через торгові майданчики, а не лише через їхню власну запатентовану модель доставки
-  tr: IoT bağlantılı ürün ve ekipman tasarlayan ve üreten şirketler, benimseme engellerini
-    azaltmak için esnek bir dijital ikiz dağıtım modelini benimsemelidir.
+  tr: IoT bağlantılı ürün ve ekipman tasarlayan ve üreten şirketler, benimseme engellerini azaltmak için esnek bir dijital ikiz dağıtım modelini benimsemelidir.
   zh: 设计和制造物联网连接产品和设备的公司应采用灵活的数字孪生交付模式来降低采用障碍（例如通过市场提供）数字孪生，而不是仅通过他们自己的专有交付模型提供数字孪生。
-- alias: The developed digital twin model can be directly linked with additional services
-    that your company provides for the IoT industry.
-  az: Hazırlanmış rəqəmsal əkiz model birbaşa şirkətinizin Əşyalar İnterneti sənayesi
-    üçün təmin etdiyi əlavə xidmətləri ilə əlaqələndirilə bilər.
-  de: Das entwickelte Digital-Twin-Modell lässt sich direkt mit weiteren Services
-    verknüpfen, die Ihr Unternehmen für die IoT-Branche bereitstellt
-  en: The developed digital twin model can be directly linked with additional services
-    that your company provides for the IoT industry.
-  es: El modelo de gemelo digital desarrollado se puede vincular directamente con
-    servicios adicionales que su empresa proporciona para la industria de IoT.
-  fr: Le modèle de jumeau numérique développé peut être directement lié à des services
-    supplémentaires que votre entreprise fournit à l'industrie IoT.
-  it: Il modello di digital twin sviluppato, può essere collegato direttamente con
-    servizi aggiuntivi che l'azienda fornisce per il settore IoT.
+- alias: The developed digital twin model can be directly linked with additional services that your company provides for the IoT industry.
+  az: Hazırlanmış rəqəmsal əkiz model birbaşa şirkətinizin Əşyalar İnterneti sənayesi üçün təmin etdiyi əlavə xidmətləri ilə əlaqələndirilə bilər.
+  de: Das entwickelte Digital-Twin-Modell lässt sich direkt mit weiteren Services verknüpfen, die Ihr Unternehmen für die IoT-Branche bereitstellt
+  en: The developed digital twin model can be directly linked with additional services that your company provides for the IoT industry.
+  es: El modelo de gemelo digital desarrollado se puede vincular directamente con servicios adicionales que su empresa proporciona para la industria de IoT.
+  fr: Le modèle de jumeau numérique développé peut être directement lié à des services supplémentaires que votre entreprise fournit à l'industrie IoT.
+  it: Il modello di digital twin sviluppato, può essere collegato direttamente con servizi aggiuntivi che l'azienda fornisce per il settore IoT.
   ja: 開発されたデジタルツインモデルは、貴社がIoT業界に提供する追加サービスと直接リンクできます
   ko: 개발된 디지털 트윈 모델은 여러분의 회사에서 IoT 산업을 위해 제공하는 추가 서비스와 직접 연결할 수 있습니다.
-  pt: O modelo de gêmeo digital desenvolvido pode ser diretamente vinculado a serviços
-    adicionais que sua empresa fornece para o setor de IoT.
-  ru: Разработанную модель цифрового двойника можно напрямую связать с дополнительными
-    услугами, которые ваша компания предоставляет для индустрии Интернета вещей.
+  pt: O modelo de gêmeo digital desenvolvido pode ser diretamente vinculado a serviços adicionais que sua empresa fornece para o setor de IoT.
+  ru: Разработанную модель цифрового двойника можно напрямую связать с дополнительными услугами, которые ваша компания предоставляет для индустрии Интернета вещей.
   uk: Розроблену модель цифрового двійника можна пов'язати безпосередньо з додатковими послугами, які ваша компанія надає для індустрії Інтернету речей.
-  tr: Geliştirilen dijital ikiz model, şirketinizin IoT endüstrisi için sağladığı
-    ek hizmetlerle doğrudan bağlantılı olabilir.
+  tr: Geliştirilen dijital ikiz model, şirketinizin IoT endüstrisi için sağladığı ek hizmetlerle doğrudan bağlantılı olabilir.
   zh: 开发数字孪生模型可以直接与您的公司为物联网行业提供的附加服务相关联
-- alias: To make a delivery process convenient and simple for hundreds of customers,
-    we have added a section of the services for robots marketplace. Take a look at
-    the first examples of the implemented bundles of digital twin model + company
-    automated service.
-  az: Çatdırılma prosesini yüzlərlə müştəri üçün rahat və asanlaşdırmaq üçün biz robot
-    ticarət platforması üçün xidmətlər bölməsi əlavə etdik. Rəqəmsal əkiz model və
-    şirkətin avtomatlaşdırılmış xidməti arasında həyata keçirilən əlaqələrin ilk nümunələrinə
-    nəzər salın.
-  de: Um den Lieferprozess für Hunderte von Kunden bequem und einfach zu gestalten,
-    haben wir einen Abschnitt der Dienste für den Roboter-Marktplatz hinzugefügt.
-    Sehen Sie sich die ersten Beispiele der implementierten Bundles aus Digital-Twin-Modell
-    + unternehmensautomatisiertem Service an
-  en: To make a delivery process convenient and simple for hundreds of customers,
-    we have added a section of the services for robots marketplace. Take a look at
-    the first examples of the implemented bundles of digital twin model + company
-    automated service.
-  es: A fin de que el proceso de entrega sea conveniente y simple para cientos de
-    clientes, hemos agregado una sección del mercado de servicios para robots. Eche
-    un vistazo a los primeros ejemplos de los paquetes implementados de modelo de
-    gemelo digital + servicio automatizado de la empresa.
-  fr: Pour rendre un processus de livraison pratique et simple pour des centaines
-    de clients, nous avons ajouté une section des services pour le marché des robots.
-    Jetez un coup d’œil aux premiers exemples de forfaits mis en œuvre de modèle de
-    jumeau numérique + service automatisé de l’entreprise.
-  it: Per rendere un processo di consegna comodo e semplice per centinaia di clienti,
-    abbiamo aggiunto una sezione dei servizi per il mercato dei robot. Dai un'occhiata
-    ai primi esempi di bundle implementati con il modello di digital twin + servizio
-    automatizzato aziendale.
+- alias: To make a delivery process convenient and simple for hundreds of customers, we have added a section of the services for robots marketplace. Take a look at the first examples of the implemented bundles of digital twin model + company automated service.
+  az: Çatdırılma prosesini yüzlərlə müştəri üçün rahat və asanlaşdırmaq üçün biz robot ticarət platforması üçün xidmətlər bölməsi əlavə etdik. Rəqəmsal əkiz model və şirkətin avtomatlaşdırılmış xidməti arasında həyata keçirilən əlaqələrin ilk nümunələrinə nəzər salın.
+  de: Um den Lieferprozess für Hunderte von Kunden bequem und einfach zu gestalten, haben wir einen Abschnitt der Dienste für den Roboter-Marktplatz hinzugefügt. Sehen Sie sich die ersten Beispiele der implementierten Bundles aus Digital-Twin-Modell + unternehmensautomatisiertem Service an
+  en: To make a delivery process convenient and simple for hundreds of customers, we have added a section of the services for robots marketplace. Take a look at the first examples of the implemented bundles of digital twin model + company automated service.
+  es: A fin de que el proceso de entrega sea conveniente y simple para cientos de clientes, hemos agregado una sección del mercado de servicios para robots. Eche un vistazo a los primeros ejemplos de los paquetes implementados de modelo de gemelo digital + servicio automatizado de la empresa.
+  fr: Pour rendre un processus de livraison pratique et simple pour des centaines de clients, nous avons ajouté une section des services pour le marché des robots. Jetez un coup d’œil aux premiers exemples de forfaits mis en œuvre de modèle de jumeau numérique + service automatisé de l’entreprise.
+  it: Per rendere un processo di consegna comodo e semplice per centinaia di clienti, abbiamo aggiunto una sezione dei servizi per il mercato dei robot. Dai un'occhiata ai primi esempi di bundle implementati con il modello di digital twin + servizio automatizzato aziendale.
   ja: 何百社ものお客様に提供プロセスを便利でシンプルにするために、ロボットマーケットプレイス向けのサービスのセクションを追加しました。デジタルツインモデル+会社の自動化サービスの実装されたバンドルの最初の例をご覧ください。
-  ko: 저희는 수백 명의 고객이 전송 프로세스를 편리하고 간단하게 이용할 수 있도록 로봇 마켓플레이스에 대한 서비스 섹션을 추가했습니다. 디지털
-    트윈 모델 + 회사 자동화 서비스로 구현된 번들의 첫 번째 예시를 살펴보세요.
-  pt: Para tornar um processo de entrega conveniente e simples para centenas de clientes,
-    adicionamos uma seção de serviços para o marketplace de robôs. Dê uma olhada nos
-    primeiros exemplos dos pacotes de modelos de gêmeos digitais implementados + serviço
-    automatizado da empresa.
-  ru: Чтобы сделать процесс доставки удобным и простым для сотен клиентов, мы добавили
-    раздел сервисов для торговой площадки роботов. Ознакомьтесь с первыми примерами
-    реализованных связок модель цифрового двойника + автоматизированный сервис компании.
+  ko: 저희는 수백 명의 고객이 전송 프로세스를 편리하고 간단하게 이용할 수 있도록 로봇 마켓플레이스에 대한 서비스 섹션을 추가했습니다. 디지털 트윈 모델 + 회사 자동화 서비스로 구현된 번들의 첫 번째 예시를 살펴보세요.
+  pt: Para tornar um processo de entrega conveniente e simples para centenas de clientes, adicionamos uma seção de serviços para o marketplace de robôs. Dê uma olhada nos primeiros exemplos dos pacotes de modelos de gêmeos digitais implementados + serviço automatizado da empresa.
+  ru: Чтобы сделать процесс доставки удобным и простым для сотен клиентов, мы добавили раздел сервисов для торговой площадки роботов. Ознакомьтесь с первыми примерами реализованных связок модель цифрового двойника + автоматизированный сервис компании.
   uk: Щоб зробити процес доставки зручним та простим для сотень клієнтів, ми додали розділ сервісів для торгівельного майданчика роботів. Ознайомтеся з першими прикладами реалізованих зв'язок модель цифрового двійника + автоматизований сервіс компанії.
-  tr: Bir teslimat sürecini yüzlerce müşteri için uygun ve basit hale getirmek için
-    robot pazarına yönelik hizmetlerin bir bölümünü ekledik. Dijital ikiz model +
-    şirket otomatik hizmetinin uygulanan paketlerinin ilk örneklerine bir göz atın.
+  tr: Bir teslimat sürecini yüzlerce müşteri için uygun ve basit hale getirmek için robot pazarına yönelik hizmetlerin bir bölümünü ekledik. Dijital ikiz model + şirket otomatik hizmetinin uygulanan paketlerinin ilk örneklerine bir göz atın.
   zh: 为了使数百名客户的交付过程更加方便和简单，我们为机器人市场添加了一部分服务。查看已实施的数字孪生模型和公司自动化服务捆绑包的第一个示例。
-- alias: You've got an idea for your service for robots or users? Then proceed to
-    the step-by-step instructions for building your IoT application on the Robonomics
-    platform.
-  az: Robotlar və ya istifadəçilər üçün xidmətinizlə bağlı fikriniz varmı? Robonomika
-    platformasında IoT tətbiqinizi qurmaq üçün addım-addım təlimatlara əməl edin.
-  de: Sie haben eine Idee für Ihren Service für Roboter oder Anwender? Fahren Sie
-    dann mit der Schritt-für-Schritt-Anleitung zum Erstellen Ihrer IoT-Anwendung auf
-    der Robonomics-Plattform fort.
-  en: You've got an idea for your service for robots or users? Then proceed to the
-    step-by-step instructions for building your IoT application on the Robonomics
-    platform.
-  es: ¿Tiene una idea para su servicio para robots o usuarios? Entonces continúe con
-    las instrucciones paso a paso a fin de crear su aplicación de IoT en la plataforma
-    Robonomics.
-  fr: Vous avez une idée pour votre service pour les robots ou les utilisateurs? Passez
-    ensuite aux instructions étape par étape pour créer votre application IoT sur
-    la plateforme Robonomics.
-  it: Hai un'idea per un tuo servizio per robot o utenti? Procedi con le istruzioni
-    step-by-step per la creazione della tua applicazione IoT sulla piattaforma di
-    Robonomics.
+- alias: You've got an idea for your service for robots or users? Then proceed to the step-by-step instructions for building your IoT application on the Robonomics platform.
+  az: Robotlar və ya istifadəçilər üçün xidmətinizlə bağlı fikriniz varmı? Robonomika platformasında IoT tətbiqinizi qurmaq üçün addım-addım təlimatlara əməl edin.
+  de: Sie haben eine Idee für Ihren Service für Roboter oder Anwender? Fahren Sie dann mit der Schritt-für-Schritt-Anleitung zum Erstellen Ihrer IoT-Anwendung auf der Robonomics-Plattform fort.
+  en: You've got an idea for your service for robots or users? Then proceed to the step-by-step instructions for building your IoT application on the Robonomics platform.
+  es: ¿Tiene una idea para su servicio para robots o usuarios? Entonces continúe con las instrucciones paso a paso a fin de crear su aplicación de IoT en la plataforma Robonomics.
+  fr: Vous avez une idée pour votre service pour les robots ou les utilisateurs? Passez ensuite aux instructions étape par étape pour créer votre application IoT sur la plateforme Robonomics.
+  it: Hai un'idea per un tuo servizio per robot o utenti? Procedi con le istruzioni step-by-step per la creazione della tua applicazione IoT sulla piattaforma di Robonomics.
   ja: ロボットやユーザー向けのサービスのアイデアはありますか？次に、RobonomicsプラットフォームでIoTアプリケーションを構築するためのステップバイステップの手順に進みます。
-  ko: 로봇 또는 사용자를 위한 서비스 제공 아이디어가 있으신가요? 그렇다면 Robonomics 플랫폼에서 단계별 안내에 따라 나만의 IoT 애플리케이션을
-    구축해보세요.
-  pt: Você tem uma ideia para seu serviço para robôs ou usuários? Siga às instruções
-    passo a passo para construir sua aplicação IoT na plataforma Robonomics.
-  ru: У вас есть идея для вашего сервиса для роботов или пользователей? Тогда переходите
-    к пошаговым инструкциям по созданию своего IoT-приложения на платформе Робономики.
-  uk: У вас є ідея для вашого сервісу для роботів чи користувачів? Тоді переходьте до покрокових інструкцій зі створення IoT-програми на платформі Робономіки.
-  tr: Robotlar veya kullanıcılar için hizmetiniz için bir fikriniz mi var? O zaman
-    şimdi, IoT uygulamanızı Robonomics platformunda oluşturmak için adım adım talimatları
-    izleyin.
+  ko: 로봇 또는 사용자를 위한 서비스 제공 아이디어가 있으신가요? 그렇다면 Robonomics 플랫폼에서 단계별 안내에 따라 나만의 IoT 애플리케이션을 구축해보세요.
+  pt: Você tem uma ideia para seu serviço para robôs ou usuários? Siga às instruções passo a passo para construir sua aplicação IoT na plataforma Robonomics.
+  ru: У вас есть идея для вашего сервиса для роботов или пользователей? Тогда переходите к пошаговым инструкциям по созданию своего IoT-приложения на платформе Robonomics.
+  uk: У вас є ідея для вашого сервісу для роботів чи користувачів? Тоді переходьте до покрокових інструкцій зі створення IoT-програми на платформі Robonomics.
+  tr: Robotlar veya kullanıcılar için hizmetiniz için bir fikriniz mi var? O zaman şimdi, IoT uygulamanızı Robonomics platformunda oluşturmak için adım adım talimatları izleyin.
   zh: 您有为机器人或用户提供服务的想法吗？然后继续执行在Robonomics平台上构建物联网应用程序的分步说明。
 - alias: Pioneer NFT cardholders will receive an extra 1XRT for each KSM
   en: Pioneer NFT cardholders will receive an extra 1XRT for each KSM
@@ -9215,17 +9084,6 @@
     okuduğunuz kitapları işaretleyin ve daha fazla düşünmeniz için size başka neler
     sunabileceğimizi görün.
   de: Gute Bücher führen zu guten Ideen. Wenn du mehr Inspiration zum Thema Mensch-Maschine-Kommunikation suchst lies doch Science-Fiction-Bücher. Markiere die Bücher die du bereits gelesen hast und informiere dann was wir dir noch zum Nachdenken anbieten können.
-- alias: Do Androids Dream of Electric Sheep?
-  az: 'Blade Runner: Android-lər elektrik qoyunları xəyal edirmi?'
-  en: Do Androids Dream of Electric Sheep?
-  es: Los androides sueñan con ovejas eléctricas?
-  fr: Les androïdes rêvent-ils de moutons électriques ?
-  it: Il Cacciatore di Androidi
-  pt: Androides Sonham Com Ovelhas Elétricas?
-  ru: Метчают ли андроиды об электроовцах?
-  uk: Чи мріють андроїди про електричних овець?
-  tr: Do Androids Dream of Electric Sheep?
-  de: Do Androids Dream of Electric Sheep?
 - alias: Philip K. Dick
   az: Filip K. Dik
   en: Philip K. Dick
@@ -9581,63 +9439,40 @@
   en: Robonomics Whitepaper 2022 welcome guide
   es: Guía de bienvenida de Robonomics Whitepaper 2022
   it: Guida di benvenuto al Whitepaper 2022 di Robonomics
+  pt: Whitepaper Robonomics 20
+  fr: Livre blanc Robonomics 2022 – Guide de bienvenue
   ru: Гайд по Robonomics White Paper 2022
-  uk: ГАЙД ПО ROBONOMICS WHITE PAPER 2022
+  uk: ГАЙД ПО БІЛОМУ ПАПЕРІ ROBONOMICS 2022
   de: Robonomics Whitepaper 2022 Leitfaden
-- alias: We have developed a techno-economic machine communication protocol running
-    on top of Ethereum and IPFS, and complement it with elements of a cloud-based
-    IoT platform based on the Polkadot parachain. Today, we already have a hybrid
-    platform for creating futuristic IoT applications. It provides interaction with
-    devices under the control of a global decentralized computer. Before we start
-    creating secure, serverless and futuristic IoT applications using the Robonomics
-    platform, let’s dive a little into theory...
-  az: Biz Ethereum və IPFS üzərində işləyən texno-iqtisadi maşın rabitə protokolu
-    hazırlamışıq və onu Polkadot parachain əsasında bulud əsaslı IoT platformasının
-    elementləri ilə tamamlayırıq. Bu gün artıq futuristik IoT tətbiqləri yaratmaq
-    üçün hibrid platformamız var. Qlobal mərkəzləşdirilməmiş kompüterin nəzarəti altında
-    olan cihazlarla qarşılıqlı əlaqəni təmin edir. Robonomics platformasından istifadə
-    edərək təhlükəsiz, serversiz və futuristik IoT proqramları yaratmağa başlamazdan
-    əvvəl gəlin nəzəriyyəyə bir az nəzər salaq...
-  en: We have developed a techno-economic machine communication protocol running on
-    top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT
-    platform based on the Polkadot parachain. Today, we already have a hybrid platform
-    for creating futuristic IoT applications. It provides interaction with devices
-    under the control of a global decentralized computer. Before we start creating
-    secure, serverless and futuristic IoT applications using the Robonomics platform,
-    let’s dive a little into theory...
-  es: Hemos desarrollado un protocolo de comunicación de máquina tecnoeconómico que
-    se ejecuta sobre Ethereum e IPFS, y lo complementamos con elementos de una plataforma
-    IoT basada en la nube, que esta basada en la parachain de Polkadot. Hoy ya contamos
-    con una plataforma híbrida para crear aplicaciones IoT futuristas. Proporciona
-    interacción con dispositivos bajo el control de una computadora descentralizada
-    global. Antes de comenzar a crear aplicaciones IoT seguras, sin servidor y futuristas
-    utilizando la plataforma Robonomics, profundicemos un poco en la teoría...
-  it: Abbiamo sviluppato un protocollo di comunicazione tecno-economico per le macchine
-    in esecuzione su Ethereum e IPFS, che viene completato da una piattaforma IoT
-    basata su cloud e Parachain Polkadot. Oggi abbiamo già una piattaforma ibrida
-    per la creazione di applicazioni IoT futuristiche, che fornisce interazione coi
-    dispositivi sotto il controllo di un computer decentralizzato globale. Prima di
-    iniziare a creare applicazioni IoT sicure, senza server e futuristiche utilizzando
-    la piattaforma Robonomics, immergiamoci un po' nella teoria...
-  uk: Ми розробили техніко-економічний машинний протокол зв’язку, який працює на основі Ethereum і IPFS, і доповнюємо його елементами хмарної платформи IoT на основі парачейну Polkadot. Сьогодні ми вже маємо гібридну платформу для створення футуристичних додатків IoT. Він забезпечує взаємодію з пристроями під управлінням глобального децентралізованого комп'ютера. Перш ніж ми почнемо створювати безпечні, безсерверні та футуристичні додатки IoT за допомогою платформи Робономіка, давайте трохи зануримося в теорію...
-  ru: Мы разработали протокол техникоэкономической коммуникации машин, работающий
-    поверх Ethereum и IPFS, и дополнили его элементами облачной IoT-платформы на базе
-    парачейна Polkadot. Сегодня мы имеем гибридную платформу для создания футуристичных
-    IoT-приложений. Она обеспечивает взаимодействие с устройствами, находящимися под
-    управлением мирового децентрализованного компьютера. Прежде чем использовать платформу
-    Робономика, погрузимся немного в теорию.
+  tr: Robonomics 2022 Teknik İnceleme klavuzuna hoşgeldiniz
+  ko: 환영 가이드Robonomics Whitepaper 2022
+  ja: ようこそガイドRobonomics Whitepaper 2022
+- alias: We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...
+  az: Biz Ethereum və IPFS üzərində işləyən texno-iqtisadi maşın rabitə protokolu hazırlamışıq və onu Polkadot parachain əsasında bulud əsaslı IoT platformasının elementləri ilə tamamlayırıq. Bu gün artıq futuristik IoT tətbiqləri yaratmaq üçün hibrid platformamız var. Qlobal mərkəzləşdirilməmiş kompüterin nəzarəti altında olan cihazlarla qarşılıqlı əlaqəni təmin edir. Robonomics platformasından istifadə edərək təhlükəsiz, serversiz və futuristik IoT proqramları yaratmağa başlamazdan əvvəl gəlin nəzəriyyəyə bir az nəzər salaq...
+  en: We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...
+  es: Hemos desarrollado un protocolo de comunicación de máquina tecnoeconómico que se ejecuta sobre Ethereum e IPFS, y lo complementamos con elementos de una plataforma IoT basada en la nube, que esta basada en la parachain de Polkadot. Hoy ya contamos con una plataforma híbrida para crear aplicaciones IoT futuristas. Proporciona interacción con dispositivos bajo el control de una computadora descentralizada global. Antes de comenzar a crear aplicaciones IoT seguras, sin servidor y futuristas utilizando la plataforma Robonomics, profundicemos un poco en la teoría...
+  it: Abbiamo sviluppato un protocollo di comunicazione tecno-economico per le macchine in esecuzione su Ethereum e IPFS, che viene completato da una piattaforma IoT basata su cloud e Parachain Polkadot. Oggi abbiamo già una piattaforma ibrida per la creazione di applicazioni IoT futuristiche, che fornisce interazione coi dispositivi sotto il controllo di un computer decentralizzato globale. Prima di iniziare a creare applicazioni IoT sicure, senza server e futuristiche utilizzando la piattaforma Robonomics, immergiamoci un po' nella teoria...
+  uk: Ми розробили техніко-економічний машинний протокол зв’язку, який працює на основі Ethereum і IPFS, і доповнюємо його елементами хмарної платформи IoT на основі парачейну Polkadot. Сьогодні ми вже маємо гібридну платформу для створення футуристичних додатків IoT. Він забезпечує взаємодію з пристроями під управлінням глобального децентралізованого комп'ютера. Перш ніж ми почнемо створювати безпечні, безсерверні та футуристичні додатки IoT за допомогою платформи Robonomics, давайте трохи зануримося в теорію...
+  ru: Мы разработали протокол техникоэкономической коммуникации машин, работающий поверх Ethereum и IPFS, и дополнили его элементами облачной IoT-платформы на базе парачейна Polkadot. Сегодня мы имеем гибридную платформу для создания футуристичных IoT-приложений. Она обеспечивает взаимодействие с устройствами, находящимися под управлением мирового децентрализованного компьютера. Прежде чем использовать платформу Robonomics, погрузимся немного в теорию.
   de: Wir haben ein technisch, ökonomisches Maschinenkommunikationsprotokoll entwickelt, das auf Ethereum und IPFS aufbaut. Dieses ergänzt es mit Elementen einer cloudbasierten IoT-Plattform, die auf dem Parachain Polkadot basiert. Heute verfügen wir bereits über eine hybride Plattform für die Entwicklung futuristischer IoT-Anwendungen. Sie ermöglicht die Interaktion mit Geräten unter der Kontrolle eines globalen dezentralen Computers. Bevor wir damit beginnen sichere, serverlose und futuristische IoT-Anwendungen mit der Robonomics-Plattform zu erstellen, wollen wir ein wenig in die Theorie eintauchen...
-- alias: The first two chapters of the Robonomics white paper are already available
-    to users.
+  pt: Desenvolvemos um protocolo técnico-econômico de comunicação de máquina rodando no topo da Ethereum e do IPFS, e o complementamos com elementos de uma plataforma IoT baseada em nuvem e em parachain de Polkadot. Hoje, já temos uma plataforma híbrida para a criação de aplicações IoT futuristas. Ela proporciona interação com dispositivos sob o controle de um computador global descentralizado. Antes de começarmos a criar aplicações IoT seguras, sem servidores e futuristas usando a plataforma Robonomics, vamos nos aprofundar um pouco na teoria...
+  fr: Nous avons développé un protocole de communication techno-économique fonctionnant sur Ethereum et IPFS, et le complétons avec des éléments d’une plate-forme IoT basée sur le Polkadot. Aujourd’hui, nous disposons déjà d’une plateforme hybride pour créer des applications IoT futuristes. Il fournit l’interaction avec les dispositifs sous le contrôle d’un ordinateur décentralisé global. Avant de commencer à créer des applications IoT sécurisées, sans serveur et futuristes à l’aide de la plateforme Robonomics, plongeons un peu dans la théorie...
+  tr: Ethereum ve IPFS üzerinde çalışan bir tekno-ekonomik makine iletişim protokolü geliştirdik ve bunu Polkadot parachain'ine dayalı bulut tabanlı bir IoT platformunun unsurlarıyla tamamladık. Bugün, fütüristik IoT uygulamaları oluşturmak için zaten bir hibrit platformumuz var. Bu platformumuz, küresel bir merkezi olmayan bilgisayarın kontrolü altındaki cihazlarla etkileşim sağlıyor. Robonomics platformunu kullanarak güvenli, sunucusuz ve fütüristik IoT uygulamaları oluşturmaya başlamadan önce gelin biraz teoriye dalalım...
+  ko: 우리는 이더리움과 IPFS 위에서 작동하는 기술 경제 기계 통신 프로토콜을 개발했으며, Polkadot 패러체인을 기반으로 하는 클라우드 기반 IoT 플랫폼의 요소를 보완합니다. 오늘날, 우리는 이미 미래 지향적인 IoT 애플리케이션을 만들기 위한 하이브리드 플랫폼을 갖추고 있습니다. 이는 글로벌 분산 컴퓨터의 제어하에 있는 장치와 상호 작용을 제공합니다. Robonomics 플랫폼을 사용하여 안전하고 서버리스이며 미래 지향적인 IoT 애플리케이션을 만들기 전에 이론적인 면에서 약간 탐구해 보겠습니다...
+  ja: 私たちは、EthereumとIPFSの上で実行される技術経済的なマシンコミュニケーションプロトコルを開発し、Polkadotパラチェーンに基づくクラウドベースのIoTプラットフォームの要素を補完しています。今日、私たちはすでに未来志向のIoTアプリケーションを作成するためのハイブリッドプラットフォームを持っています。これにより、グローバルな分散型コンピュータの管理下にあるデバイスとの相互作用が可能になります。Robonomicsプラットフォームを使用して安全でサーバーレスな未来志向のIoTアプリケーションを作成する前に、理論に少し立ち入ってみましょう...
+- alias: The first two chapters of the Robonomics white paper are already available to users.
   az: Robonomika white paper-in ilk iki fəsli artıq istifadəçilər üçün mövcuddur.
-  en: The first two chapters of the Robonomics white paper are already available to
-    users.
-  es: Los dos primeros capítulos del Whitepaper de Robonomics ya están disponibles
-    para los usuarios.
-  it: I primi due capitoli del whitepaper di Robonomics sono già disponibili per gli
-    utenti.
-  ru: "ДЛЯ ПОЛЬЗОВАТЕЛЕЙ УЖЕ ДОСТУПНЫ ПЕРВЫЕ 2 ГЛАВЫ БЕЛОЙ БУМАГИ РОБОНОМИКИ.\r"
+  en: The first two chapters of the Robonomics white paper are already available to users.
+  es: Los dos primeros capítulos del Whitepaper de Robonomics ya están disponibles para los usuarios.
+  it: I primi due capitoli del whitepaper di Robonomics sono già disponibili per gli utenti.
+  ru: ДЛЯ ПОЛЬЗОВАТЕЛЕЙ УЖЕ ДОСТУПНЫ ПЕРВЫЕ 2 ГЛАВЫ ROBONOMICS WHITE PAPER.
+  uk: Перші два розділи білого паперу Robonomics вже доступні для користувачів
+  pt: Os dois primeiros capítulos do whitepaper da Robonomics já estão disponíveis para os usuários.
+  fr: Les deux premiers chapitres du livre blanc Robonomics sont déjà disponibles pour les utilisateurs.
   de: Die ersten beiden Kapitel des Robonomics-Whitepapers stehen den Nutzern bereits zur Verfügung.
+  tr: Robonomics teknik incelemesinin ilk iki bölümü zaten kullanıcılara sunulmuştur.
+  ko: 로보노믹스 화이트페이퍼의 첫 두 장은 이미 사용자에게 제공됩니다.
+  ja: Robonomicsのホワイトペーパーの最初の2章がすでにユーザーに利用可能です。
 - alias: Chapter 1.
   az: FƏSİL 1.
   en: Chapter 1.
@@ -9646,6 +9481,11 @@
   ru: ГЛАВА 1.
   uk: Розділ 1.
   de: Kapitel 1. 
+  pt: Capítulo 1.
+  fr: Chapitre 1.
+  tr: Bölüm 1.
+  ko: 제 1장.
+  ja: 第1章 
 - alias: AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS
   az: KIBERNETIKA VƏ IQTISADIYYATIN SƏRHƏDDINDƏ
   en: AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS
@@ -9654,41 +9494,24 @@
   ru: НА СТЫКЕ КИБЕРНЕТИКИ И ЭКОНОМИКИ
   uk: НА СТИКУ КІБЕРНЕТИКИ ТА ЕКОНОМІКИ
   de: AM SCHNITTPUNKT VON KYBERNETIK UND WIRTSCHAFT
-- alias: We presented an economic system in which robotic devices act as independent
-    agents capable of performing key economic activities, previously reserved for
-    humans. In this chapter, we will talk about the relevance of the robot economy,
-    which can become an important part of people's lives and change the current level
-    of the economy into fully automated services in the future.
-  az: Biz robot cihazların əvvəllər insanlar üçün nəzərdə tutulmuş əsas iqtisadi fəaliyyətləri
-    yerinə yetirə bilən müstəqil agentlər kimi çıxış etdiyi iqtisadi sistem təqdim
-    etdik. Bu fəsildə biz insanların həyatının mühüm hissəsinə çevrilə bilən və gələcəkdə
-    iqtisadiyyatın hazırkı səviyyəsini tam avtomatlaşdırılmış xidmətlərə çevirə bilən
-    robot iqtisadiyyatının aktuallığından danışacağıq.
-  en: We presented an economic system in which robotic devices act as independent
-    agents capable of performing key economic activities, previously reserved for
-    humans. In this chapter, we will talk about the relevance of the robot economy,
-    which can become an important part of people's lives and change the current level
-    of the economy into fully automated services in the future.
-  es: Presentamos un sistema económico en el que los dispositivos robóticos actúan
-    como agentes independientes capaces de realizar actividades económicas clave,
-    antes reservadas para los humanos. En este capítulo, hablaremos sobre la relevancia
-    de la economía robótica, que puede convertirse en una parte importante de la vida
-    de las personas y cambiar el nivel actual de la economía en servicios totalmente
-    automatizados en el futuro.
-  it: Abbiamo presentato un sistema economico dove i dispositivi robotici agiscono
-    come degli agenti indipendenti in grado di svolgere attività economiche chiave,
-    che prima erano riservate agli umani. In questo capitolo parliamo della rilevanza
-    della robot economy, che in futuro può diventare una parte importante nella vita
-    delle persone e cambiare l'attuale livello dell'economia in servizi completamente
-    automatizzati.
-  ru: "Мы представили экономическую систему, в которой робототехнические устройства\
-    \ выступают как независимые агенты, способные к выполнению ключевых экономических\
-    \ активностей, ранее присущих только человеку. В этой главе мы осветим актуальность\
-    \ появления экономики роботов, которая в будущем может стать важной частью жизни\
-    \ людей и изменить текущий уровень экономики в полностью автоматизированные сервисы.\
-    \ \r \r"
+  pt: NA INTERSEÇÃO ENTRE CIBERNÉTICA E ECONOMIA
+  fr: À L’INTERSECTION DE LA CYBERNÉTIQUE ET DE L’ÉCONOMIE
+  tr: SİBERNETİK VE EKONOMİNİN KESİŞİMİ
+  ko: 사이버네틱스와 경제의 교차로에서
+  ja: サイバネティックスと経済の交差点にて
+- alias: We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.
+  az: Biz robot cihazların əvvəllər insanlar üçün nəzərdə tutulmuş əsas iqtisadi fəaliyyətləri yerinə yetirə bilən müstəqil agentlər kimi çıxış etdiyi iqtisadi sistem təqdim etdik. Bu fəsildə biz insanların həyatının mühüm hissəsinə çevrilə bilən və gələcəkdə iqtisadiyyatın hazırkı səviyyəsini tam avtomatlaşdırılmış xidmətlərə çevirə bilən robot iqtisadiyyatının aktuallığından danışacağıq.
+  en: We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.
+  es: Presentamos un sistema económico en el que los dispositivos robóticos actúan como agentes independientes capaces de realizar actividades económicas clave, antes reservadas para los humanos. En este capítulo, hablaremos sobre la relevancia de la economía robótica, que puede convertirse en una parte importante de la vida de las personas y cambiar el nivel actual de la economía en servicios totalmente automatizados en el futuro.
+  it: Abbiamo presentato un sistema economico dove i dispositivi robotici agiscono come degli agenti indipendenti in grado di svolgere attività economiche chiave, che prima erano riservate agli umani. In questo capitolo parliamo della rilevanza della robot economy, che in futuro può diventare una parte importante nella vita delle persone e cambiare l'attuale livello dell'economia in servizi completamente automatizzati.
+  ru: Мы представили экономическую систему, в которой робототехнические устройства выступают как независимые агенты, способные к выполнению ключевых экономических активностей, ранее присущих только человеку. В этой главе мы осветим актуальность появления экономики роботов, которая в будущем может стать важной частью жизни людей и изменить текущий уровень экономики в полностью автоматизированные сервисы.
   uk: Ми представили економічну систему, в якій роботизовані пристрої діють як незалежні агенти, здатні виконувати ключові економічні види діяльності, раніше зарезервовані для людей. У цьому розділі ми поговоримо про актуальність роботизованої економіки, яка може стати важливою частиною життя людей і змінити поточний рівень економіки на повністю автоматизовані послуги в майбутньому.
   de: Wir haben ein Wirtschaftssystem vorgestellt in dem Roboter als unabhängige Agenten fungieren welche in der Lage sind, wichtige wirtschaftliche Tätigkeiten auszuführen die bisher dem Menschen vorbehalten waren. In diesem Kapitel informieren wir über die Relevanz der Roboterwirtschaft die ein wichtiger Teil des Lebens der Menschen werden und das derzeitige Niveau der Wirtschaft in Zukunft in vollautomatische Dienstleistungen umwandeln kann.
+  pt: Apresentamos um sistema econômico no qual os dispositivos robóticos atuam como agentes independentes capazes de realizar atividades econômicas importantes, anteriormente reservadas aos seres humanos. Neste capítulo, falaremos sobre a relevância da economia robótica, que pode se tornar uma parte importante da vida das pessoas e transformar o nível atual da economia em serviços totalmente automatizados no futuro.
+  fr: Nous avons présenté un système économique dans lequel les dispositifs robotiques agissent comme des agents indépendants capables de réaliser des activités économiques clés, auparavant réservées aux humains. Dans ce chapitre, nous parlerons de la pertinence de l’économie des robots, qui peut devenir une partie importante de la vie des gens et changer le niveau actuel de l’économie en services entièrement automatisés à l’avenir.
+  tr: Robotik cihazların, daha önce insanlar için ayrılmış olan, temel ekonomik faaliyetleri gerçekleştirebilen bağımsız unsurlar olarak hareket ettiği bir ekonomik sistem sunduk. Bu bölümde, insanların hayatlarının önemli bir parçası haline gelebilecek ve gelecekte ekonominin mevcut seviyesini tam otomatik hizmetlere dönüştürebilecek robot ekonomisi hakkında konuşacağız.
+  ko: 우리는 인간이 수행하던 주요 경제 활동을 수행할 수 있는 독립적인 에이전트로서 로봇 장치가 작동하는 경제 시스템을 제시했습니다. 이번 장에서는 로봇 경제의 중요성에 대해 이야기하며, 앞으로 현재의 경제 수준을 완전히 자동화된 서비스로 변경할 수 있는 중요한 부분이 될 수 있다는 것을 논할 것입니다.
+  ja: 私たちは、ロボット装置が人間に保留されていた主要な経済活動を実行できる独立したエージェントとして機能する経済システムを提示しました。この章では、ロボット経済の重要性について説明し、将来的に経済の完全自動化サービスへと変化する可能性がある人々の生活の重要な一部になることができます。
 - alias: In this chapter you will learn
   az: Bu fəsildə aşağıdakıları öyrənəcəksiniz
   en: In this chapter you will learn
@@ -9697,6 +9520,11 @@
   ru: "В этой главе вы узнаете\r \r"
   uk: У цьому розділі ви дізнаєтеся
   de: In diesem Kapitel erfährst du
+  pt: Neste capítulo você aprenderá
+  fr: Dans ce chapitre, vous apprendrez
+  tr: Bu bölümde öğrenecekleriniz
+  ko: 이 장에서는 다음을 배우게 됩니다
+  ja: この章では、あなたは学ぶことができます。
 - alias: Ronald Coase and The Nature of the Firm
   az: Ronald Kouz və firmanın təbiəti
   en: Ronald Coase and The Nature of the Firm
@@ -9705,6 +9533,11 @@
   ru: "Рональд Коуз и природа фирмы\r \r"
   uk: Рональд Коуз і природа фірми
   de: Ronald Coase und das Wesen des Unternehmens
+  pt: Ronald Coase e a Natureza da Firma
+  fr: Ronald Coase et la nature de l’entreprise
+  tr: Ronald Coase ve Şirketlerin Doğası
+  ko: 론드 코스와 기업의 본질
+  ja: ロナルド・コースと企業の本質
 - alias: CPS - cyber-physical system
   az: CPS - kiber-fiziki sistem
   en: CPS - cyber-physical system
@@ -9713,14 +9546,24 @@
   ru: "КФС – кибер-физическая система\r \r"
   uk: КФС — кіберфізична система
   de: CPS - Cyber-Physikalisches System
+  pt: CPS - sistema ciber físico
+  fr: SCP - système cyberphysique
+  tr: CPS- siber fiziksel sistem
+  ko: CPS - 사이버-물리 시스템
+  ja: CPS - サイバーフィジカルシステム
 - alias: Norbert Wiener and the search for patterns in living and machine
-  az: Norbert Wiener və həyatda və maşında nümunələrin axtarışı
+  az: Norbert Wiener və həyatda və maşında nümunələrin axtarış
   en: Norbert Wiener and the search for patterns in living and machine
   es: Norbert Wiener y la búsqueda de patrones en la vida y la máquina
   it: Norbert Wiener e la ricerca di pattern nella vita e nella macchina
   uk: Норберт Вінер та пошук закономірностей у живому та машинному
   ru: "Норберт Винер и поиск закономерностей в живом и машинном\r \r"
   de: Norbert Wiener und die Suche nach Mustern in Leben und Maschine
+  pt: Norbert Wiener e a busca por padrões em coisas vivas e nas máquinas
+  fr: Norbert Wiener et la recherche de modèles dans la vie et la machine
+  tr: Norbert Wiener ve aktif makine sistemlerinde örüntü arayışı
+  ko: 노버트 와이너와 살아있는 것과 기계에서 패턴을 찾는 탐색
+  ja: ノーバート・ウィーナーと生物および機械のパターンの探求
 - alias: The Fourth Industrial Revolution, Money for Robots and Bitcoin
   az: Dördüncü Sənaye İnqilabı, Robotlar üçün Pul və Bitcoin
   en: The Fourth Industrial Revolution, Money for Robots and Bitcoin
@@ -9729,6 +9572,11 @@
   uk: Четверта промислова революція, гроші для роботів і біткойн
   ru: "Четвёртая промышленная революция, деньги для роботов и Bitcoin\r \r"
   de: Die 4.0 industrielle Revolution, Geld für Roboter und Bitcoin
+  pt: A Quarta Revolução Industrial, Dinheiro para Robôs e Bitcoin
+  fr: La quatrième révolution industrielle, l’argent pour les robots et Bitcoin
+  tr: Dördüncü Sanayi Devrimi, Robotlar ve Bitcoin için Par
+  ko: 제 4차 산업 혁명, 로봇과 비트코인에 대한 돈
+  ja: 第四次産業革命、ロボットのためのお金、そしてビットコイン
 - alias: Ethereum Smart Contracts
   az: Ethereum Ağıllı Müqavilələri
   en: Ethereum Smart Contracts
@@ -9737,6 +9585,11 @@
   uk: Розумні контракти Ethereum
   ru: "Умные контракты Ethereum\r \r"
   de: Ethereum Smart Contracts
+  pt: Smart Contracts Ethereum
+  fr: Contrats intelligents Ethereum
+  tr: Ethereum Akıllı Kontratları
+  ko: 스마트 계약Ethereum
+  ja: スマートコントラクトEthereum
 - alias: Polkadot Parachains
   az: Polkadot parachainləri
   de: Polkadot Parachains
@@ -9744,9 +9597,12 @@
   es: Parachains de Polkadot
   it: Parachain Polkadot
   ja: Polkadotパラチェーン
-  ko: Polkadot 파라체인
+  ko: 패러체인Polkadot
   uk: Polkadot Parachains
   ru: Парачейны Polkadot
+  pt: Parachains Polkadot 
+  fr: Polkadot Parachains
+  tr: Polkadot Parachainleri
   zh: 波卡平行链
 - alias: Polkadot VS Ethereum 2.0
   az: Polkadot VS Ethereum 2.0
@@ -9756,22 +9612,37 @@
   ru: Polkadot VS Ethereum 2.0
   uk: Polkadot VS Ethereum 2.0
   de: Polkadot VS Ethereum 2.0
+  pt: Polkadot VS Ethereum 2.0
+  fr: Polkadot VS Ethereum 2.0
+  tr: Polkadot VS Ethereum 2.0
+  ko: Polkadot VS Ethereum 2.0
+  ja: Polkadot VS Ethereum 2.0
 - alias: Open questions of teleology and Mises' work
   az: Teleologiya və Mizesin işinin açıq sualları
   en: Open questions of teleology and Mises' work
   es: Preguntas abiertas de la teleología y el trabajo de Mises
   it: Domande aperte di teleologia e il lavoro di Mises
-  ru: Открытые вопросы телеологии и работа Мизесаr
+  ru: Открытые вопросы телеологии и работа Мизеса
   uk: Відкриті питання телеології та творчість Мізеса
   de: Offene Fragen der Teleologie und Mises' Werk
+  pt: Perguntas abertas sobre teleologia e o trabalho de Mises
+  fr: Questions ouvertes sur la téléologie et le travail de Mises
+  tr: Teleoloji ve Mises'in çalışmasına ilişkin açık sorular
+  ko: 목적론과 미제스의 연구의 개방적 질문
+  ja: テレオロジーに関するオープンな問題とミーゼスの著作
 - alias: Read chapter 1 on the Robonomics website
-  az: 1-ci fəsli oxuyun
+  az: 1-ci fƏsli oxuyun
   en: Read chapter 1
   es: Lea el capítulo 1
   it: Leggi il capitolo 1
   uk: Прочитайте розділ 1 
   ru: ЧИТАТЬ ГЛАВУ 1
   de: Lesen Sie Kapitel 1
+  pt: Leia o capítulo 1
+  fr: Lire le chapitre 1
+  tr: 1. bölümü okuyun
+  ko: 제1장을 읽으세요
+  ja: 第1章を読んでください
 - alias: Chapter 2.
   az: FƏSİL 2.
   en: Chapter 2.
@@ -9780,46 +9651,37 @@
   ru: ГЛАВА 2.
   uk: Розділ 2. 
   de: Kapitel 2. 
+  pt: Capítulo 2.
+  fr: Chapitre 2. 
+  tr: Bölüm 2.
+  ko: 2장.
+  ja: 第2章
 - alias: ROBONOMICS ARCHITECTURE wp
   az: ROBONOMİKA ARXITEKTURASI
   en: ROBONOMICS ARCHITECTURE
   es: ARQUITECTURA DE ROBONOMICS
   it: L'ARCHITETTURA DI ROBONOMICS
-  uk: АРХІТЕКТУРА РОБОНОМІКИ
-  ru: " АРХИТЕКТУРА РОБОНОМИКИ\r"
+  uk: АРХІТЕКТУРА ROBONOMICS
+  ru: АРХИТЕКТУРА ROBONOMICS
   de: ROBONOMICS-ARCHITEKTUR
-- alias: In the second chapter, you will read about human-machine interaction using
-    modern Internet technology - from IoT devices to a decentralized and globally
-    accessible network of providers. We will look at the basics of the Internet of
-    Things in order to highlight the problems and main challenges faced by the creators
-    of IoT systems and to the solution of which Robonomics is aimed.
-  az: İkinci fəsildə siz müasir İnternet texnologiyasından istifadə edərək insan-maşın
-    qarşılıqlı əlaqəsi haqqında oxuyacaqsınız - IoT cihazlarından mərkəzləşdirilməmiş
-    və qlobal olaraq əlçatan provayderlər şəbəkəsinə qədər. Biz IoT sistemlərinin
-    yaradıcılarının qarşılaşdıqları və Robonimikanın həllinə yönəlmiş əsas problemləri
-    vurğulamaq üçün Əşyaların İnternetinin əsaslarına nəzər salacağıq.
-  en: In the second chapter, you will read about human-machine interaction using modern
-    Internet technology - from IoT devices to a decentralized and globally accessible
-    network of providers. We will look at the basics of the Internet of Things in
-    order to highlight the problems and main challenges faced by the creators of IoT
-    systems and to the solution of which Robonomics is aimed.
-  es: En el segundo capítulo, leerá sobre la interacción hombre-máquina utilizando
-    la tecnología moderna de Internet, desde dispositivos IoT hasta una red de proveedores
-    descentralizada y accesible a nivel mundial. Veremos los fundamentos del Internet
-    de las Cosas para resaltar los problemas y principales retos a los que se enfrentan
-    los creadores de sistemas IoT y la solución a la que ya se dirige Robonomics.
-  it: Nel secondo capitolo, leggerete sull'interazione uomo-macchina usando le moderne
-    tecnologie Internet - dai dispositivi IoT a una rete di fornitori decentralizzata
-    e accessibile a livello globale. Esamineremo le basi dell'Internet of Things per
-    evidenziarne le problematiche e le sfide principali che i costruttori di sistemi
-    IoT devono affrontare, arrivando poi alla soluzione a cui Robonomics sta puntando.
-  ru: "Во 2 главе вы узнаете о взаимодействии машин и людей с использованием современных\
-    \ интернет-технологий – от IoT-устройств к децентрализованной и глобально доступной\
-    \ сети провайдеров. Мы осветим основы Интернета вещей, чтобы выделить проблематику\
-    \ и ключевые вызовы, с которыми сталкиваются создатели IoT-систем и на решение\
-    \ которых направлена Робономика. \r"
-  uk: У другому розділі ви прочитаєте про взаємодію «людина-машина» за допомогою сучасних інтернет-технологій — від пристроїв IoT до децентралізованої та глобально доступної мережі провайдерів. Ми розглянемо основи Інтернету речей, щоб висвітлити проблеми та основні виклики, з якими стикаються творці систем IoT і на вирішення яких спрямована Робономіка.
+  pt: ARQUITETURA DA ROBONOMICS
+  fr: ARCHITECTURE ROBONOMICS
+  tr: ROBONOMİCS MİMARİSİ
+  ko: 로보노믹스 아키텍처
+  ja: ROBONOMICSアーキテクチャ
+- alias: In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.
+  az: İkinci fəsildə siz müasir İnternet texnologiyasından istifadə edərək insan-maşın qarşılıqlı əlaqəsi haqqında oxuyacaqsınız - IoT cihazlarından mərkəzləşdirilməmiş və qlobal olaraq əlçatan provayderlər şəbəkəsinə qədər. Biz IoT sistemlərinin yaradıcılarının qarşılaşdıqları və Robonimikanın həllinə yönəlmiş əsas problemləri vurğulamaq üçün Əşyaların İnternetinin əsaslarına nəzər salacağıq.
+  en: In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.
+  es: En el segundo capítulo, leerá sobre la interacción hombre-máquina utilizando la tecnología moderna de Internet, desde dispositivos IoT hasta una red de proveedores descentralizada y accesible a nivel mundial. Veremos los fundamentos del Internet de las Cosas para resaltar los problemas y principales retos a los que se enfrentan los creadores de sistemas IoT y la solución a la que ya se dirige Robonomics.
+  it: Nel secondo capitolo, leggerete sull'interazione uomo-macchina usando le moderne tecnologie Internet - dai dispositivi IoT a una rete di fornitori decentralizzata e accessibile a livello globale. Esamineremo le basi dell'Internet of Things per evidenziarne le problematiche e le sfide principali che i costruttori di sistemi IoT devono affrontare, arrivando poi alla soluzione a cui Robonomics sta puntando.
+  ru: Во 2 главе вы узнаете о взаимодействии людей и машин с использованием современных интернет-технологий – от IoT-устройств к децентрализованной и глобально доступной сети провайдеров. Мы осветим основы Интернета вещей, чтобы выделить проблематику и ключевые вызовы, с которыми сталкиваются создатели IoT-систем и на решение которых направлена Robonomics.
+  uk: У другому розділі ви прочитаєте про взаємодію «людина-машина» за допомогою сучасних інтернет-технологій — від пристроїв IoT до децентралізованої та глобально доступної мережі провайдерів. Ми розглянемо основи Інтернету речей, щоб висвітлити проблеми та основні виклики, з якими стикаються творці систем IoT і на вирішення яких спрямована Robonomics.
   de: Im zweiten Kapitel lesen Sie über die Interaktion zwischen Mensch und Maschine mit Hilfe moderner Internettechnologie - von IoT-Geräten bis hin zu einem dezentralen und weltweit zugänglichen Netz von Anbietern. Wir werden uns mit den Grundlagen des IoT´s befassen um die Probleme und größten Herausforderungen zu beleuchten mit denen die Entwickler von IoT-Systemen konfrontiert sind und auf deren Lösung Robonomics abzielt.
+  pt: No segundo capítulo, você lerá sobre a interação homem-máquina usando a moderna tecnologia da Internet - desde dispositivos IoT até uma rede de provedores descentralizada e globalmente acessível. Analisaremos o básico da Internet das Coisas para destacar os problemas e os principais desafios enfrentados pelos criadores dos sistemas de IoT e para a solução da qual Robonomics se propõe.
+  fr: Dans le deuxième chapitre, vous découvrirez l’interaction homme-machine à l’aide de la technologie Internet moderne - des appareils IoT à un réseau décentralisé et globalement accessible de fournisseurs. Nous examinerons les bases de l’Internet des objets afin de mettre en évidence les problèmes et les principaux défis auxquels sont confrontés les créateurs de systèmes IoT et à la solution de laquelle Robonomics est destiné.
+  tr: İkinci bölümde, IoT cihazlarından merkezi olmayan ve küresel olarak erişilebilir bir sağlayıcı ağına kadar modern İnternet teknolojisini kullanan insan-makine etkileşimi hakkında bilgi edineceksiniz. IoT sistemlerinin yaratıcılarının karşılaştığı ve Robonomics'in çözümünün hedeflendiği sorunları ve ana zorlukları vurgulamak için Nesnelerin İnterneti'nin temellerine bakacağız.
+  ko: 제 2장에서는 IoT 기기부터 분산화되고 전 세계적으로 접근 가능한 공급자 네트워크에 이르기까지 현대 인터넷 기술을 활용한 인간-기계 상호작용에 대해 읽게 될 것입니다. 우리는 IoT의 기초를 살펴보며, IoT 시스템의 창조자들이 직면하는 문제와 주요 도전 과제를 강조하고 Robonomics가 그 해결책을 제시하는 방법을 살펴볼 것입니다.
+  ja: 第2章では、IoTデバイスから分散型で世界的にアクセス可能なプロバイダーネットワークまで、現代のインターネット技術を使った人間と機械の相互作用について読みます。IoTの基礎を見て、IoTシステムの開発者が直面する問題や主な課題を強調し、Robonomicsが狙う解決策について考えます。
 - alias: Overview of the state of the Internet of Things (IoT)
   az: Əşyaların İnternetinin (IoT) vəziyyətinə baxış
   en: Overview of the state of the Internet of Things (IoT)
@@ -9828,6 +9690,11 @@
   uk: Огляд стану Інтернету речей (IoT)
   ru: 'Обзор состояния Интернета вещей '
   de: Überblick über den Stand "Internet of Things" (IoT)
+  pt: Visão geral do estado da Internet das Coisas (IoT)
+  fr: Aperçu de l’état de l’Internet des objets (IdO)
+  tr: Nesnelerin İnterneti'nin (IoT) durumuna genel bakış
+  ko: 사물 인터넷(IoT)의 현황 개요
+  ja: インターネット・オブ・シングス（IoT）の現状概要
 - alias: Classification of IoT devices
   az: IoT cihazlarının təsnifatı
   en: Classification of IoT devices
@@ -9836,6 +9703,11 @@
   uk: Класифікація пристроїв IoT
   ru: "Классификация IoT-устройств\r"
   de: Klassifizierung der IoT-Geräte
+  pt: Classificação dos dispositivos IoT
+  fr: Classification des dispositifs IoT
+  tr: IoT cihazlarının sınıflandırılması
+  ko: IoT 장치의 분류
+  ja: IoTデバイスの分類
 - alias: Embedded IoT systems
   az: Quraşdırılmış IoT sistemləri
   en: Embedded IoT systems
@@ -9844,6 +9716,11 @@
   uk: Вбудовані системи IoT
   ru: "Встраиваемые IoT-системы\r"
   de: Eingebettete IoT Systeme
+  pt: Sistemas IoT integrados
+  fr: Systèmes IdO imbriqué
+  tr: Gömülü IoT sistemleri
+  ko: 임베디드 IoT 시스템
+  ja: 組み込みIoTシステム
 - alias: 'Edge-systems: IoT gateways and controllers'
   az: 'Edge sistemləri: IoT şlüzləri və nəzarətçiləri'
   en: 'Edge-systems: IoT gateways and controllers'
@@ -9852,6 +9729,11 @@
   ru: "Edge-системы: IoT-шлюзы и контроллеры\r"
   uk: 'Edge-системи: шлюзи та контролери IoT'
   de: 'Edge-Systeme: IoT-Gateways und -Steuerungen'
+  pt: 'Edge-systems: Gateways e controladores IoT'
+  fr: 'Edge-systems : passerelles et contrôleurs IoT'
+  tr: 'Uç sistemler: IoT ağ geçitleri ve denetleyiciler'
+  ko: 'Edge-systems: IoT 게이트웨이와 컨트롤러'
+  ja: 'エッジシステム：IoTゲートウェイとコントローラー'
 - alias: Autonomous Systems
   az: Avtonom sistemlər
   en: Autonomous Systems
@@ -9860,6 +9742,11 @@
   uk: Автономні системи
   ru: "Автономные системы\r"
   de: Autonome Systeme
+  pt: Sistemas Autônomos
+  fr: Systèmes Autonomes
+  tr: Otonom Sistemler
+  ko: 자율 시스템
+  ja: 自律システム
 - alias: Internet of Things providers
   az: Əşyaların İnterneti təminatçıları
   en: Internet of Things providers
@@ -9868,6 +9755,11 @@
   uk: Провайдери Інтернету речей
   ru: "Провайдеры Интернета вещей\r"
   de: Internet of Things providers
+  pt: Provedores de Internet das Coisas
+  fr: Fournisseurs d'Internet des objets
+  tr: Nesnelerin İnterneti sağlayıcıları
+  ko: 사물 인터넷 공급 업체
+  ja: インターネット・オブ・シングスのプロバイダー
 - alias: Digital twins are the heart of the Internet of Things
   az: Rəqəmsal əkizlər Əşyaların İnternetinin ürəyidir
   en: Digital twins are the heart of the Internet of Things
@@ -9876,6 +9768,11 @@
   uk: Цифрові двійники — серце Інтернету речей
   ru: "Цифровые двойники — сердце Интернета вещей\r"
   de: Digital Twins sind das Herzstück von IoT (Internet of Things)
+  pt: Gêmeos digitais são o coração da Internet das Coisas
+  fr: Les jumeaux numériques sont  cœur de l'Internet des objets
+  tr: Dijital ikizler Nesnelerin İnterneti'nin kalbidir.
+  ko: 디지털 트윈은 사물 인터넷의 핵심입니다.
+  ja: デジタルツインは、インターネット・オブ・シングスの中心です。
 - alias: IoT data flows in cloud service
   az: IoT məlumatları bulud xidmətində axır
   en: IoT data flows in cloud service
@@ -9884,6 +9781,11 @@
   uk: Потоки даних IoT у хмарному сервісі
   ru: "Потоки IoT-данных в облачных сервисах\r\r"
   de: IoT-Datenströme in einem Cloud-Service
+  pt: Fluxos de dados IoT no serviço em nuvem
+  fr: Flux de données IoT dans le service cloud
+  tr: Bulut hizmetinde IoT veri akışları
+  ko: 클라우드 서비스에서 IoT 데이터 흐름
+  ja: クラウドサービスにおけるIoTデータフロー
 - alias: Popular examples of IoT solutions
   az: IoT həllərinin məşhur nümunələri
   en: Popular examples of IoT solutions
@@ -9892,6 +9794,11 @@
   uk: Популярні приклади рішень IoT
   ru: " Популярные примеры IoT-решений\r\r"
   de: Beliebte Beispiele für IoT-Lösungen
+  pt: Popular examples of IoT solutions
+  fr: Exemples populaires de solutions IoT
+  tr: IoT çözümlerinin popüler örnekleri
+  ko: 인기 있는 IoT 솔루션의 예
+  ja: IoTソリューションの人気のある例
 - alias: Current problems of building IoT solutions
   az: IoT həllərinin qurulmasının aktual problemləri
   en: Current problems of building IoT solutions
@@ -9900,14 +9807,24 @@
   uk: Актуальні проблеми побудови IoT рішень
   ru: "Актуальные проблемы построения IoT-решений\r\r"
   de: Aktuelle Probleme beim Aufbau von IoT-Lösungen
+  pt: Problemas atuais na construção de soluções IoT
+  fr: Problèmes actuels liés à l’élaboration de solutions IoT
+  tr: IoT çözümler oluşturma konusundaki güncel sorunlar
+  ko: IoT 솔루션 구축의 현재 문제점
+  ja: IoTソリューションを構築する上での現在の問題点
 - alias: Main tasks of Robonomics architecture
   az: Robonimikanın arxitekturasının əsas vəzifələri
   en: Main tasks of Robonomics architecture
   es: Tareas principales de la arquitectura de Robonomics
   it: Principali compiti dell'architettura Robonomics
-  uk: Основні завдання архітектури Робономіки
-  ru: "Основные задачи архитектуры Робономики\r\r"
+  uk: Основні завдання архітектури Robonomics
+  ru: Основные задачи архитектуры Robonomics
   de: Hauptaufgaben der Robonomics-Architektur
+  pt: Principais tarefas da arquitetura Robonomics
+  fr: Principales tâches de l’architecture Robonomics
+  tr: Robonomics mimarisinin ana görevleri
+  ko: 로보노믹스 아키텍처의 주요 업무
+  ja: Robonomicsアーキテクチャの主なタスク
 - alias: Basic components of Robonomics architecture
   az: Robonimikanın arxitekturasının əsas komponentləri
   en: Basic components of Robonomics architecture
@@ -9916,14 +9833,24 @@
   uk: Основні компоненти архітектури Робономіки
   ru: "Базовые компоненты архитектуры Робономики\r\r"
   de: Grundlegende Komponenten der Robonomics-Architektur
+  pt: Componentes básicos da arquitetura Robonomics
+  fr: Composants de base de l’architecture Robonomics
+  tr: Robonomics mimarisinin temel bileşenleri
+  ko: 로보노믹스 아키텍처의 기본 구성 요소
+  ja: Robonomicsアーキテクチャの基本コンポーネント
 - alias: A simple representation of Robonomics architecture
   az: Robonimika arxitekturasının sadə bir təqdimatı
   en: A simple representation of Robonomics architecture
   es: Una representación simple de la arquitectura de Robonomics
   it: Una semplice rappresentazione dell'architettura Robonomics
-  uk: Просте представлення архітектури Робономіки
-  ru: "Простое представление архитектуры Робономики\r\r"
+  uk: Просте представлення архітектури Robonomics
+  ru: Простое представление архитектуры Robonomics
   de: Eine einfache Darstellung der Robonomics-Architektur
+  pt: Uma representação simples da arquitetura Robonomics
+  fr: Une simple représentation de l’architecture Robonomics
+  tr: Robonomics mimarisinin basit bir temsili
+  ko: 로보노믹스 아키텍처의 간단한 표현
+  ja: ロボノミクスアーキテクチャのシンプルな表現
 - alias: Read chapter 2 on the Robonomics website
   az: ' 2-ci fəsli oxuyun'
   en: Read chapter 2
@@ -9932,14 +9859,24 @@
   ru: ЧИТАТЬ ГЛАВУ 2
   uk: Прочитайте розділ 2 
   de: Lesen Sie Kapitel 2
+  pt: Leia o capítulo 2
+  fr: Lire le chapitre 2
+  tr: 2. bölümü okuyun
+  ko: 제2장을 읽으세요
+  ja: 第2章を読んでください
 - alias: We continue to update the white paper of Robonomics
   az: Robonimikanın white paper-ı yeniləməyə davam edirik
   en: We continue to update the white paper of Robonomics
   es: Seguimos actualizando el Whitepaper de Robonomics
   it: Il whitepaper di Robonomics è in continuo aggiornamento
-  ru: "Мы продолжаем дополнять белую бумагу Робономики"
-  uk: Ми продовжуємо оновлювати white paper Робономіки
+  ru: "Мы продолжаем дополнять белую бумагу Robonomics,"
+  uk: Ми продовжуємо оновлювати білий папір Robonomics
   de: Wir aktualisieren weiterhin das White Paper von Robonomics
+  pt: LContinuamos atualizando o Whitepaper da Robonomics,
+  fr: Nous continuons à mettre à jour le livre blanc sur les Robonomics
+  tr: Robonomics teknik incelemesini güncellemeye devam ediyoruz
+  ko: 우리는 Robonomics의 백서를 계속해서 업데이트하고 있습니다.
+  ja: Robonomicsのホワイトペーパーを更新し続けています
 - alias: stay tuned for new parts on our website and in Discord
   az: saytımızda və Discord-da yeni hissələr üçün bizi izləməyə davam edin
   en: stay tuned for new parts on our website and in Discord
@@ -9948,14 +9885,24 @@
   ru: "следите за выходом новых частей на сайте и в Discord"
   uk: 'слідкуйте за новими частинами на нашому веб-сайті та в Discord'
   de: Bleibt dran für aktuelle Informationen auf unserer Website und in Discord
+  pt: acompanhe nosso site e Discord para ficar informado sobre novas atualizações
+  fr: Restez à l’affût de nouvelles pièces sur notre site Web et dans Discord
+  tr: web sitemizde ve Discord'da yeni bölümler için bizi izlemeye devam edin
+  ko: 웹사이트와 디스코드에서 새로운 부품 정보를 기다려주세요.
+  ja: ウェブサイトとDiscordで、新しいパーツをお楽しみに。
 - alias: JOIN OUR DISCORD
   az: DISCORD-UMUZA QOŞULUN
   en: JOIN OUR DISCORD
   es: ÚNASE A NUESTRO DISCORD
   it: UNISCITI AL NOSTRO DISCORD
-  ru: JOIN OUR DISCORD
+  ru: ПРИСОЕДИНЯЙТЕСЬ К НАШЕМУ DISCORD
   uk: ПРИЄДНУЙТЕСЯ ДО НАШОГО DISCORD
   de: UNSEREM DISCORD BEITRETEN
+  pt: JUNTE-SE AO NOSSO DISCORD
+  fr: REJOIGNEZ NOTRE DISCORD
+  tr: DISCORDUMUZA KATILIN
+  ko: 우리 디스코드에 가입하세요
+  ja: ディスコードに参加してください
 - alias: Important news & announcements
   en: Important news & announcements
   ru: Важные новости и анонсы
@@ -10559,3 +10506,163 @@
   az: vasitəsilə, layihənin yaradılmış infrastrukturuna qoşuldu.
   ko: 통해 프로젝트의 생성된 인프라에 연결되어, Pre-XRT를 ERC-20 XRT로 자율적이고 독립적인 프로세스로 교환할 수 있게 보장합니다.
   ja: ラクトを介してプロジェクトの作成されたインフラストラクチャーに接続され、Pre-XRTからERC-20 XRTへの自律的かつ独立したスワッププロセスが保証されました.
+
+- alias: Robonomics art shop
+  en: Robonomics art shop
+  ru: АРТ-МАГАЗИН ROBONOMICS
+  uk: АРТ-МАГАЗИН ROBONOMICS
+  es: TIENDA DE ARTE DE ROBONOMICS
+  it: ROBONOMICS ART SHOP
+  pt: ROBONOMICS ART SHOP
+  fr: BOUTIQUE D'ART ROBONOMICS
+  tr: ROBONOMİK SANAT MAĞAZASI
+  ko: 로보노믹스 아트 샵
+  ja: アートショップROBONOMICS
+
+- alias: Useful products with our unique designs made by Robonomics artists with love. Shop online.
+  en: Useful products with our unique designs made by Robonomics artists with love. Shop online.
+  ru: Полезные товары с нашим уникальным дизайном, сделанным с любовью художниками из команды Robonomics. Онлайн-магазин.
+  uk: Корисні товари з нашим унікальним дизайном, зробленим із любов'ю митцями з команди Robonomics. Онлайн-магазин.
+  es: Productos útiles con nuestros diseños únicos hechos por artistas de Robonomics con amor. Tienda en linea.
+  it: Prodotti utili con i nostri design unici realizzati con amore dagli artisti di Robonomics. Acquista online.
+  pt: Produtos úteis com nossos designs exclusivos feitos por artistas da Robonomics. Compre online.
+  fr: Produits utiles avec nos conceptions uniques faites par des artistes robonomiques avec amour. Magasinez en ligne.
+  tr: Robonomics sanatçılarının sevgiyle yaptığı eşsiz tasarımlarımızla kullanışlı ürünler. Online alışveriş.
+  ko: 로보노믹스 아티스트들이 디자인한 독특한 제품으로 온라인 쇼핑을 즐겨보세요. 사랑으로 만들어진 유용한 제품입니다.
+  ja: ロボノミクスのアーティストが愛を込めて作った独自のデザインが施された便利な製品をオンラインショップで販売しています。
+
+- alias: Welcome to our brand new online shop on
+  en: Welcome to our brand new online shop on
+  ru: Добро пожаловать в наш новый интернет-магазин на 
+  uk: Ласкаво просимо до нашого нового інтернет-магазину на 
+  es: ¡Bienvenido a nuestra nueva tienda en línea en
+  it: Benvenuti nel nostro nuovissimo negozio online su
+  pt: Bem-vindo à nossa nova loja online em 
+  fr: Bienvenue dans notre toute nouvelle boutique en ligne sur 
+  tr: robonomics.threadless.com adresindeki yepyeni çevrimiçi mağazamıza hoş geldiniz!
+  ko: robonomics.threadless.com의 새로운 온라인 샵에 오신 것을 환영합니다!
+  ja: robonomics.threadless.com上の当社の新しいオンラインショップへようこそ！
+
+- alias: Our shop features clothing, accessories, home decor and other items that display our love for robotics, technology and art. You can find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful products with our unique designs made by Robonomics artists and processed production&shipping by fellows from Threadless. Enjoy!
+  en: Our shop features clothing, accessories, home decor and other items that display our love for robotics, technology and art. You can find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful products with our unique designs made by Robonomics artists and processed production&shipping by fellows from Threadless. Enjoy!
+  ru: В нашем магазине представлена одежда, аксессуары, предметы интерьера и другие товары, которые демонстрируют нашу любовь к робототехнике, технологиям и искусству. Вы можете найти футболки, лонгсливы, толстовки, занавески для ванной, подушки, одеяла и другие полезные товары с уникальным дизайном, созданным художниками Robonomics, а производство и доставка осуществляются сотрудниками Threadless. Наслаждайтесь!
+  uk: У нашому магазині представлений одяг, аксесуари, предмети інтер'єру та інші товари, які демонструють нашу любов до робототехніки, технологій та мистецтва. Ви можете знайти футболки, лонгсліви, толстовки, фіранки для ванної, подушки, ковдри та інші корисні товари з унікальним дизайном, створеним художниками Robonomics, а виробництво та доставка здійснюються співробітниками Threadless. Насолоджуйтесь!
+  es: Nuestra tienda cuenta con ropa, accesorios, decoración del hogar y otros artículos que muestran nuestro amor por la robótica, la tecnología y el arte. Puede encontrar camisetas, camisetas de manga larga, sudaderas con capucha, cortinas de baño, almohadas, mantas y otros productos útiles con nuestros diseños únicos hechos por artistas de Robonomics y producción y envío procesados por compañeros de Threadless. ¡Disfruta!
+  it: Il nostro negozio offre abbigliamento, accessori, decorazioni per la casa e altri articoli che mostrano il nostro amore per la robotica, la tecnologia e l'arte. Potete trovare magliette, maglie, felpe con cappuccio, tende da doccia, cuscini, coperte e altri prodotti utili con i nostri design unici realizzati dagli artisti Robonomics, mentre produzione e spedizione sono curate dai colleghi di Threadless. Enjoy!
+  pt: Nossa loja oferece roupas, acessórios, decoração doméstica e outros itens que demonstram nosso amor pela robótica, tecnologia e arte. Você pode encontrar camisetas, mangas longas, capuzes, cortinas de chuveiro, travesseiros, cobertores e outros produtos úteis com nossos designs exclusivos feitos por artistas da Robonomics, enquanto a produção e envio são processados por nossos colegas da Threadless. Aproveite!
+  fr: Notre boutique propose des vêtements, accessoires, décoration et autres articles qui montrent notre amour pour la robotique, la technologie et l’art. Vous pouvez trouver des t-shirts, manches longues, sweat à capuche, rideaux de douche, oreillers, couvertures et autres produits utiles avec nos conceptions uniques faites par des artistes robonomiques et produits transformés et expédition par les boursiers de Threadless. Amusez-vous!
+  tr: Mağazamızda robot teknolojisine, teknolojiye ve sanata olan sevgimizi gösteren giysiler, aksesuarlar, ev dekorasyonu ve diğer ürünler bulunmaktadır. Robonomics sanatçıları tarafından yapılan benzersiz tasarımlarımız ve Threadless'tan arkadaşlar tarafından işlenmiş üretim ve nakliye ile t-shirt, uzun kollu, kapşonlu, duş perdesi, yastık, battaniye ve diğer kullanışlı ürünleri bulabilirsiniz. Eğlence!
+  ko: 저희 가게는 로보틱스, 기술 및 예술에 대한 우리의 애정을 나타내는 의류, 액세서리, 홈 데코 및 기타 항목을 판매합니다. 로보노믹스 아티스트가 제작한 독특한 디자인으로 만든 티셔츠, 긴팔 티, 후드티, 샤워 커튼, 베개, 담요 등 유용한 제품을 Threadless의 동료들이 제작 및 배송합니다. 즐거운 쇼핑 되세요!
+  ja: 私たちのショップでは、ロボット工学、テクノロジー、芸術への愛を表現した衣服、アクセサリー、ホームデコレーションなどのアイテムを取り扱っています。私たちRobonomicsアーティストが手がけたユニークなデザインのTシャツ、長袖シャツ、フード付きシャツ、シャワーカーテン、枕、ブランケットなど、他にも使いやすい製品が豊富です。生産と発送はThreadlessのフェローが担当しており、安心してお買い物をお楽しみいただけます。
+
+- alias: Do Androids Dream of Electric Sheep?
+  en: Do Androids Dream of Electric Sheep?
+  ru: Мечтают ли Андроиды об Электроовцах?
+  uk: Чи мріють андроїди про електричних овець?
+  es: ¿Los androides sueñan con ovejas eléctricas?
+  it: Ma gli Androidi Sognano Pecore Elettriche?
+  pt: Os Andróides Sonham com Ovelhas Elétricas?
+  fr: Les androïdes rêvent-ils de moutons électriques?
+  tr: Androidler Elektrikli Koyun Düşler mi?
+  ko: 안드로이드는 전기양을 꿀까요?
+  ja: アンドロイドは電気羊の夢を見るか？
+
+- alias: Sleeping Mew Space
+  en: Sleeping Mew Space
+  ru: Спящий Мяу-Космос
+  uk: Сплячий Мяу-Космос
+  es: Sleeping Mew Space
+  it: Sleeping Mew Space
+  pt: Mew Adormecido no Espaço
+  fr: Espace Mew endormi
+  tr: Uyuyan Mew Uzayı
+  ko: 잠자는 뮤 우주
+  ja: 眠るミュウの宇宙
+
+- alias: Are you ready for Mars?
+  en: Are you ready for Mars?
+  uk: А ви готові до Марса?
+  ru: А вы готовы к Марсу?
+  es: ¿Estás listo para Marte?
+  it: Are you ready for Mars?
+  pt: Você está pronto para Marte?
+  fr: Êtes-vous prêt pour Mars ?
+  tr: Mars'a hazır mısın?
+  ko: 당신은 화성을 위해 준비되어 있나요?
+  ja: 火星の準備はできていますか？
+
+- alias: Shiva Robot
+  en: Shiva Robot
+  ru: Шива-робот
+  uk: Робот Шива
+  es: Robot Shiva
+  it: Robot Shiva
+  pt: Robô Shiva
+  fr: Robot Shiva
+  tr: Şiva Robotu
+  ko: 시바 로봇
+  ja: シヴァ・ロボット
+
+- alias: Space Travelers
+  en: Space Travelers
+  ru: Космические Путешественники
+  uk: Космічні Мандрівники
+  es: Viajeros del espacio
+  it: Space Travelers
+  pt: Viajantes Espaciais
+  fr: Voyageurs de l'espace
+  tr: Uzay Yolcuları
+  ko: 우주 여행자들
+  ja: 宇宙旅行者
+
+- alias: Retro Astronaut
+  en: Retro Astronaut
+  ru: Ретро Астронавт
+  uk: Ретро Астронавт
+  es: Astronauta retro
+  it: Retro Astronaut
+  pt: Astronauta Retrô
+  fr: Astronaute rétro
+  tr: Retro Astronot
+  ko: 레트로 우주인
+  ja: レトロ宇宙飛行士
+
+- alias: New Newton
+  en: New Newton
+  ru: Новый Ньютон
+  uk: Новий Ньютон
+  es: Nuevo Newton
+  it: New Newton
+  pt: Novo Newton
+  fr: Nouveau Newton
+  tr: Yeni Newton
+  ko: 새로운 뉴턴
+  ja: ニュートン
+
+- alias: Shop now on threadless
+  en: Shop now on threadless
+  ru: КУПИТЬ СЕЙЧАС НА THREADLESS
+  uk: КУПУЙТЕ ЗАРАЗ НА THREADLESS
+  es: COMPRAR AHORA EN THREADLESS
+  it: ACQUISTA ORA SU THREADLESS
+  pt: COMPRE AGORA NA THREADLESS
+  fr: ACHETEZ MAINTENANT SUR SANS FIL
+  tr: ŞİMDİ THREADLESS ÜZERİNDEN ALIŞVERİŞ YAPIN
+  ko: THREADLESS에서 지금 쇼핑하세요
+  ja: THREADLESSで今すぐショッピングをお楽しみください
+
+- alias: alternative shop
+  en: alternative shop
+  ru: альтернативный магазин
+  uk: альтернативна крамниця
+  es: Tienda alternativa
+  it: negozio alternativo
+  pt: loja alternativa
+  fr: boutique alternative
+  tr: alternatif mağaza
+  ko: 대안적인 가게
+  ja: 代替店舗
+
+
+
+
