@@ -35,8 +35,8 @@
 
       <section class="section section__solid section__blue">
         <div class="layout layout__text animate-inside" v-in-viewport.once>
-          <h2>{{$ts('What is Robonomics?')}}</h2>
-          <p class="hyphens">{{$ts('Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}</p>
+          <h2>{{$ts('What is Robonomics network?')}}</h2>
+          <p class="hyphens">{{$ts('Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}</p>
         </div>
 
         <div class="layout layout__content">
