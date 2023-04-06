@@ -529,6 +529,7 @@
   ko: ROBONOMICS 배우기
   es: APRENDE CON ROBONOMICS
   de: MIT ROBONOMICS LERNEN
+  zh: 与 ROBONOMICS 一起学习
 - alias: Introduction course
   en: Introduction course
   uk: Вступний курс
@@ -542,9 +543,11 @@
   ko: 소개 과정
   es: Curso de Introducción
   de: Einführungskurs
+  zh: 入门课程
 - alias: Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.
-  en: Пориньте у проблеми, що виникають при створенні сучасних програм Інтернету речей, і можливі рішення за допомогою технологій web3 та інструментів Robonomics для розробників та користувачів Інтернету речей.
-  uk: IoT geliştiricileri ve kullanıcıları için web3 teknolojileri ve Robonomics araçlarıyla modern Nesnelerin İnterneti uygulamalarının oluşturulmasında ortaya çıkan sorunlara ve olası çözümlere dalın.
+  en: Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.
+  uk: Пориньте у проблеми, що виникають при створенні сучасних програм Інтернету речей, і можливі рішення за допомогою технологій web3 та інструментів Robonomics для розробників та користувачів Інтернету речей.
+  tr: IoT geliştiricileri ve kullanıcıları için web3 teknolojileri ve Robonomics araçlarıyla modern Nesnelerin İnterneti uygulamalarının oluşturulmasında ortaya çıkan sorunlara ve olası çözümlere dalın.
   ru: Погрузитесь в проблемы, возникающие при создании современных приложений Интернета вещей, и возможные решения с помощью технологий web3 и инструментов Robonomics для разработчиков и пользователей Интернета вещей.
   pt: Mergulhar nos problemas que surgem em torno da construção de aplicações modernas da Internet das Coisas e possíveis soluções com tecnologias Web3 e ferramentas da Robonomics para desenvolvedores e usuários de IoT.
   it: Immergiti nei problemi che orbitano intorno alla creazione di moderne applicazioni Internet of Things e alle possibili soluzioni con tecnologie web3 e strumenti Robonomics per sviluppatori IoT e utenti.
@@ -554,6 +557,7 @@
   ko: 현대적인 사물인터넷 애플리케이션 구축 시 발생하는 문제와 웹3 기술 및 로보노믹스 도구를 사용한 IoT 개발자 및 사용자의 가능한 해결책에 대해 살펴보세요.
   es: Sumérjase en los problemas que surgen en torno a la creación de aplicaciones modernas de Internet de las cosas y las posibles soluciones con tecnologías web3 y herramientas de Robonomics para desarrolladores y usuarios IoT.
   de: Checke die Probleme die beim Aufbau moderner IoT-Anwendungen auftreten und mögliche Lösungen mit web3-Technologien und Robonomics-Tools für IoT-Entwickler und -Benutzer.
+  zh: 深入探讨构建现代物联网应用程序时出现的问题，以及使用 web3 技术和 Robonomics 工具为 IoT 开发人员和用户提供的可能解决方案。
 - alias: Boston dynamics spot software developing
   en: Boston dynamics spot software developing
   uk: Розробка програмного забезпечення для Spot від Boston Dynamics
@@ -567,6 +571,7 @@
   ko: Boston Dynamics Spot소프트웨어 개발
   es: Desarrollo de software de Boston Dynamics Spot
   de: Boston Dynamics Spot Softwareentwicklung
+  zh: 波士顿动力现货软件开发
 - alias: We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.
   en: We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.
   uk: Ми раді представити вам освітню програму Spot SDK! Наша мета — познайомити вас із SDK Spot і дати можливість віддалено перевірити свої навички за допомогою робота Spot від Boston Dynamics у нашій лабораторії.
@@ -580,6 +585,7 @@
   ko: 스팟 SDK 교육 프로그램을 소개해 드리게 되어 매우 기쁩니다! 저희의 목표는 스팟 SDK에 익숙해지도록 도와드리고, 저희 연구소에서 보스턴 다이내믹스 스팟 로봇을 원격으로 테스트할 수 있는 기회를 제공하는 것입니다.
   es: ¡Nos complace presentarles el programa educativo Spot SDK! Nuestro objetivo es familiarizarlo con el SDK de Spot y permitirle probar sus habilidades de forma remota utilizando un robot Boston Dynamics Spot en nuestro laboratorio.
   de: Wir freuen uns dir das Spot SDK-Bildungsprogramm vorstellen zu dürfen! Unser Ziel ist es, dich mit dem Spot SDK vertraut zu machen und dir die Möglichkeit zu geben deine Fähigkeiten mit einem Boston Dynamics Spot Roboter in unserem Labor zu testen.
+  zh: 我们很高兴向您介绍 Spot SDK 教育计划！我们的目标是让您熟悉 Spot 的 SDK，并允许您在我们的实验室中使用 Boston Dynamics Spot 机器人远程测试您的技能。
 - alias: Sovereign smart home with robonomics and home assistant
   en: Sovereign smart home with robonomics and home assistant
   uk: Суверенний Розумний Дім З Robonomics Та Home Assistant
@@ -593,6 +599,7 @@
   ko: Robonomics그리고Home Assistant주권적인 스마트 홈
   es: Sovereign Smart Home con Robonomics y Home Assistant
   de: Souveränes Smart Home mit Robonomics und Heimassistent
+  zh: 具有 Robonomics 和 Home Assistant 的主权智能家居
 - alias: In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.
   en: In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.
   uk: У цьому курсі ви пройдете всі кроки, необхідні для того, щоб побудувати свій власний суверенний розумний будинок, головною перевагою якого є безпека/конфіденційність даних користувача.
@@ -606,6 +613,7 @@
   ko: 이 강좌에서는 사용자 데이터의 안전/개인 정보 보호의 주요 이점을 가진 자체 주권적 스마트 홈을 구축하기 위해 필요한 모든 단계를 진행합니다.
   es: En este curso, seguirá todos los pasos necesarios para construir su propia casa inteligente soberana, cuya principal ventaja es la seguridad/privacidad de los datos del usuario.
   de: In diesem Kurs wirst du alle Schritte durchlaufen die erforderlich sind um dein eigenes souveränes Smart Home zu bauen, dessen Hauptvorteil die Sicherheit und der Schutz der Nutzerdaten ist.
+  zh: 在本课程中，您将完成构建自己的主权智能家居所需的所有步骤，其主要优势是用户数据的安全/隐私。
 - alias: Get XRT
   az: XRT əldə edin
   de: Holen Sie sich XRT
@@ -1362,7 +1370,7 @@
   ru: Robonomics - это платформа с открытым исходным кодом для приложений Интернета вещей. Мы поддерживаем новое поколение интернет-технологий (web3), которые реализуют обмен технической и экономической информацией в форме атомарных транзакций между пользовательскими приложениями, сервисами Интернета вещей и сложной робототехникой.
   uk: Robonomics— це платформа з відкритим вихiдним кодом для програм Інтернету речей. Ми підтримуємо нове покоління інтернет-технологій (web3), які реалізують обмін технічною та економічною інформацією у формі атомарних транзакцій між додатками користувача, сервісами Інтернету речей і складною робототехнікою.
   tr: Robonomics, IoT uygulamaları için açık kaynaklı bir platformdur. Kullanıcı uygulamaları, IoT hizmetleri ve karmaşık robotik arasında atomik işlemler şeklinde teknik ve ekonomik bilgi alışverişini uygulayan yeni nesil internet teknolojilerini (web3) destekler.
-  zh: Robonomics是一个用于物联网应用的开源平台。我们支持新一代互联网技术 (web3)，这些技术在用户应用程序、物联网服务和复杂机器人之间以原子交易的形式实现技术和经济信息的交换。
+  zh: Robonomics是一个开源平台，用于物联网应用，它可以使用户应用程序、物联网服务和复杂机器人之间以原子交易的形式交换技术和经济信息。
 - alias: Decentralized application
   en: Decentralized application
   uk: ДЕЦЕНТРАЛІЗОВАНИЙ ДОДАТОК
@@ -1376,6 +1384,7 @@
   ko: 분산 어플리케이션
   es: APLICACIÓN DESCENTRALIZADA
   de: DEZENTRALISIERTE ANWENDUNG
+  zh: 去中心化应用程序
 - alias: Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.
   en: Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.
   ru: Децентрализованное приложение (dapp) работает в рамках Blockchain. Оно имеет открытый исходный код, а его данные хранятся на IPFS и Github. Эти технологии позволяют приложению быть безопасным и прозрачным одновременно. Наши разработчики работают как над созданием приложения Robonomics, так и над библиотеками, которые вы можете использовать при создании своего собственного dapp.
@@ -1389,6 +1398,7 @@
   ko: 탈중앙화 애플리케이션(dapp)은 블록체인 내에서 작동합니다. 오픈 소스이며 데이터는 IPFS와 Github에서 제공됩니다. 이러한 기술을 통해 애플리케이션의 보안과 투명성을 동시에 확보할 수 있습니다. 로보노믹스의 개발자들은 로보노믹스의 애플리케이션 개발과 자체 디앱을 구축할 때 사용할 수 있는 라이브러리 개발 모두에 힘쓰고 있습니다.
   es: La aplicación descentralizada (dapp) funciona dentro de Blockchain. Es de código abierto y sus datos se sirven en IPFS y Github. Estas tecnologías permiten que la aplicación sea segura y transparente al mismo tiempo. Nuestros desarrolladores están trabajando tanto en el desarrollo de la aplicación Robonomics y en las bibliotecas que se pueden utilizar al construir su propia dapp.
   de: Dezentrale Anwendung (dapp) arbeitet innerhalb der Blockchain. Sie ist quelloffen und ihre Daten werden auf IPFS und Github bereitgestellt. Diese Technologien ermöglichen eine sichere und transparente Anwendung zur gleichen Zeit. Unsere Entwickler arbeiten sowohl an der Entwicklung der Robonomics-Anwendung als auch an den Bibliotheken, die Sie beim Aufbau Ihrer eigenen Dapp verwenden können.
+  zh: 去中心化应用程序 (dapp) 在区块链中运行。 它是开源的，其数据在 IPFS 和 Github 上提供。 这些技术允许应用程序同时安全和透明。 我们的开发人员既致力于开发 Robonomics 的应用程序，也致力于开发您在构建自己的 dapp 时可以使用的库。
 - alias: Digital Twin is one of the instruments provided by Robonomics Web Services (RWS). It acts as a digital version of the real-world equipment and copies all of its technical characteristics. It allows to make a decentralized app more responsive to the user’s commands.
   en: Digital Twin is one of the instruments provided by Robonomics Web Services (RWS). It acts as a digital version of the real-world equipment and copies all of its technical characteristics. It allows to make a decentralized app more responsive to the user’s commands.
   uk: 'Цифровий двійник — це один із інструментів, що надаються Robonomics Web Services (RWS). Він діє як цифрова версія реального обладнання та копіює всі його технічні характеристики. Це дозволяє зробити децентралізовану програму більш чуйною на команди користувача.'
@@ -1402,6 +1412,7 @@
   ko: 디지털 트윈은 로보노믹스 웹 서비스(RWS)에서 제공하는 기기 중 하나입니다. 실제 장비의 디지털 버전으로 작동하며 기술적 특성을 전부 복사합니다. 이를 통해 분산 앱이 사용자의 명령에 더 빠르게 대응할 수 있습니다.
   es: Digital Twin (gemelo  digital) es uno de los instrumentos proporcionados por Robonomics Web Services (RWS). Actúa como una versión digital del equipo del mundo real y copia todas sus características técnicas. Permite hacer que una aplicación descentralizada responda mejor a los comandos del usuario.
   de: Der digital Twin ist eines der Instrumente, die von Robonomics Web Services (RWS) bereitgestellt werden. Er fungiert als digitale Version des physischen Geräts und kopiert alle seine technischen Merkmale. Er ermöglicht es, eine dezentralisierte App besser auf die Befehle des Benutzers reagieren zu lassen.
+  zh: 数字孪生（Digital Twin）是 Robonomics 网络服务 (RWS) 提供的工具之一。它作为真实设备的数字版本，并复制了所有的技术特性。它能够使去中心化应用程序更加响应用户的命令。
 - alias: IoT / Smart device
   en: IoT / Smart device
   uk: IOT/РОЗУМНИЙ ПРИСТРІЙ
@@ -1415,6 +1426,7 @@
   ko: 사물인터넷(IOT)/스마트 기기
   es: IOT/DISPOSITIVO INTELIGENTE
   de: IOT/SMARTE GERÄT
+  zh: 物联网/智能设备
 - alias: You can use Robonomics with a wide range of Zigbee smart devices to automate and control various aspects of your home/office or use it with ROS-based robotics for more complex industrial tasks.
   en: You can use Robonomics with a wide range of Zigbee smart devices to automate and control various aspects of your home/office or use it with ROS-based robotics for more complex industrial tasks.
   uk: Ви можете використовувати Robonomics з широким спектром розумних пристроїв Zigbee для автоматизації та управління різними аспектами вашого будинку/офісу або використовувати її з робототехнікою на основі ROS для більш складних промислових завдань.
@@ -1428,6 +1440,7 @@
   ko: 로보노믹스를 사용하면 다양한 Zigbee 스마트 기기와 함께 사용하여 집/사무실의 다양한 측면을 자동화하고 제어할 수 있으며, ROS 기반 로봇 공업 작업에 사용할 수도 있습니다.
   es: Puede usar Robonomics con una amplia gama de dispositivos inteligentes Zigbee para automatizar y controlar varios aspectos de su hogar/oficina o usarlo con robótica basada en ROS para tareas industriales más complejas.
   de: Du kannst Robonomics mit einer breiten Palette von intelligenten Zigbee-Geräten verwenden, um verschiedene Aspekte deines Zuhauses/Büros zu automatisieren und zu steuern oder es mit ROS basierter Robotik für komplexere industrielle Aufgaben einsetzen.
+  zh: 你可以使用 Robonomics（一种软件平台）和各种 Zigbee 智能设备一起，自动化和控制家庭/办公室的各个方面，也可以将其与基于 ROS（机器人操作系统）的机器人一起使用，用于更复杂的工业任务。
 - alias: User (D)App
   az: Tətbiq
   en: User (D)App
