@@ -8,7 +8,7 @@
       />
 
     <div class="timeline__main-title title-with-bg">
-      <h1><span>Infrastructure && tech development timeline</span></h1>
+      <h1><span>{{ $ts('Infrastructure && tech development timeline') }}</span></h1>
     </div>
 
     <section class="layout layout__text">
