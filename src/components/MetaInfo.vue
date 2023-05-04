@@ -37,7 +37,7 @@ export default {
 
   data() {
     return {
-      allLocales: ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr", "uk"],
+      allLocales: ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr", "uk", "ar"],
       locale: 'en',
       metaTitle: '',
       metaDescription: ''
@@ -106,7 +106,8 @@ export default {
       title: title,
       htmlAttrs: {
         lang: locale,
-        amp: true
+        amp: true,
+        // dir: locale === 'ar' ? 'rtl' : ''
       },
       meta: [
         { key: 'description', name: 'description', content: description },

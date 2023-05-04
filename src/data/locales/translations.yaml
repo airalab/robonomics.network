@@ -487,6 +487,7 @@
   tr: Başla
   uk: 'Вступ'
   zh: 新手入门
+  ar: البدء
 - alias: Explore Robonomics
   az: Robonomikanı kəşf edin
   de: Entdecken Sie Robonomics
@@ -502,6 +503,7 @@
   tr: Robonomics'i Keşfet
   uk: 'Відкрийте для себе Робономіку'
   zh: 探索 Robonomics
+  ar: استكشف Robonomics
 - alias: Robonomics is an open-source technology for IoT market available for everyone.
     Read an executive summary to know more
   az: Robonimika hər kəsə əlçatan olan IoT bazarı üçün açıq mənbə texnologiyasıdır.
@@ -530,6 +532,7 @@
   uk: 'Робономіка — це доступна для кожного технологія з відкритим вихідним кодом для ринку Інтернету речей. 
     Щоб дізнатися більше, прочитайте основні тези'
   zh: Robonomics 是一项面向物联网市场的开源技术，可供所有人使用。阅读执行摘要，了解详情
+  ar: Robonomics هي تقنية مفتوحة المصدر لسوق إنترنت الأشياء متاحة للجميع. اقرأ ملخصًا تنفيذيًا لمعرفة المزيد
 - alias: Learn with Robonomics
   en: Learn with Robonomics
   uk: ВЧИТЬСЯ З ROBONOMICS
@@ -544,6 +547,7 @@
   es: APRENDE CON ROBONOMICS
   de: MIT ROBONOMICS LERNEN
   zh: 与 ROBONOMICS 一起学习
+  ar: تعلم مع Robonomics
 - alias: Introduction course
   en: Introduction course
   uk: Вступний курс
@@ -558,6 +562,7 @@
   es: Curso de Introducción
   de: Einführungskurs
   zh: 入门课程
+  ar: دورة مقدمة
 - alias: Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.
   en: Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.
   uk: Пориньте у проблеми, що виникають при створенні сучасних програм Інтернету речей, і можливі рішення за допомогою технологій web3 та інструментів Robonomics для розробників та користувачів Інтернету речей.
@@ -572,6 +577,7 @@
   es: Sumérjase en los problemas que surgen en torno a la creación de aplicaciones modernas de Internet de las cosas y las posibles soluciones con tecnologías web3 y herramientas de Robonomics para desarrolladores y usuarios IoT.
   de: Checke die Probleme die beim Aufbau moderner IoT-Anwendungen auftreten und mögliche Lösungen mit web3-Technologien und Robonomics-Tools für IoT-Entwickler und -Benutzer.
   zh: 深入探讨构建现代物联网应用程序时出现的问题，以及使用 web3 技术和 Robonomics 工具为 IoT 开发人员和用户提供的可能解决方案。
+  ar: ابحث في المشكلات التي تنشأ حول بناء تطبيقات إنترنت الأشياء الحديثة والحلول الممكنة باستخدام تقنيات web3 وأدوات Robonomics لمطوري إنترنت الأشياء والمستخدمين.
 - alias: Boston dynamics spot software developing
   en: Boston dynamics spot software developing
   uk: Розробка програмного забезпечення для Spot від Boston Dynamics
@@ -586,6 +592,7 @@
   es: Desarrollo de software de Boston Dynamics Spot
   de: Boston Dynamics Spot Softwareentwicklung
   zh: 波士顿动力现货软件开发
+  ar: بوسطن ديناميكس سبوت تطوير البرمجيات
 - alias: We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.
   en: We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.
   uk: Ми раді представити вам освітню програму Spot SDK! Наша мета — познайомити вас із SDK Spot і дати можливість віддалено перевірити свої навички за допомогою робота Spot від Boston Dynamics у нашій лабораторії.
@@ -600,6 +607,7 @@
   es: ¡Nos complace presentarles el programa educativo Spot SDK! Nuestro objetivo es familiarizarlo con el SDK de Spot y permitirle probar sus habilidades de forma remota utilizando un robot Boston Dynamics Spot en nuestro laboratorio.
   de: Wir freuen uns dir das Spot SDK-Bildungsprogramm vorstellen zu dürfen! Unser Ziel ist es, dich mit dem Spot SDK vertraut zu machen und dir die Möglichkeit zu geben deine Fähigkeiten mit einem Boston Dynamics Spot Roboter in unserem Labor zu testen.
   zh: 我们很高兴向您介绍 Spot SDK 教育计划！我们的目标是让您熟悉 Spot 的 SDK，并允许您在我们的实验室中使用 Boston Dynamics Spot 机器人远程测试您的技能。
+  ar: يسعدنا أن نقدم لكم البرنامج التعليمي Spot SDK! هدفنا هو تعريفك بـ Spot’s SDK والسماح لك باختبار مهاراتك عن بُعد باستخدام روبوت Boston Dynamics Spot في مختبرنا.
 - alias: Sovereign smart home with robonomics and home assistant
   en: Sovereign smart home with robonomics and home assistant
   uk: Суверенний Розумний Дім З Robonomics Та Home Assistant
@@ -614,6 +622,7 @@
   es: Sovereign Smart Home con Robonomics y Home Assistant
   de: Souveränes Smart Home mit Robonomics und Heimassistent
   zh: 具有 Robonomics 和 Home Assistant 的主权智能家居
+  ar: منزل ذكي سيادي مع Robonomics ومساعد منزلي
 - alias: In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.
   en: In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.
   uk: У цьому курсі ви пройдете всі кроки, необхідні для того, щоб побудувати свій власний суверенний розумний будинок, головною перевагою якого є безпека/конфіденційність даних користувача.
@@ -628,6 +637,7 @@
   es: En este curso, seguirá todos los pasos necesarios para construir su propia casa inteligente soberana, cuya principal ventaja es la seguridad/privacidad de los datos del usuario.
   de: In diesem Kurs wirst du alle Schritte durchlaufen die erforderlich sind um dein eigenes souveränes Smart Home zu bauen, dessen Hauptvorteil die Sicherheit und der Schutz der Nutzerdaten ist.
   zh: 在本课程中，您将完成构建自己的主权智能家居所需的所有步骤，其主要优势是用户数据的安全/隐私。
+  ar: في هذه الدورة ، ستتعرف على جميع الخطوات المطلوبة من أجل بناء منزلك الذكي السيادي ، والميزة الرئيسية لها هي أمان / خصوصية بيانات المستخدم.
 - alias: Get XRT
   az: XRT əldə edin
   de: Holen Sie sich XRT
@@ -643,6 +653,7 @@
   tr: XRT'yi alın
   uk: 'Токен XRT'
   zh: 获取 XRT
+  ar: احصل على XRT
 - alias: XRT is the utility token that make it possible to control IoT devices on
     top of the Ethereum network and the Robonomics parachain
   az: XRT, Ethereum şəbəkəsi və Robonomika paraçeyn üzərində IoT cihazların idarə
@@ -669,6 +680,7 @@
   uk: 'XRT — протокольний токен, який дозволяє керувати IoT-пристроями 
     поверх мережі Ethereum та парачейна Робономіки'
   zh: XRT 是一种效用代币，可以控制以太坊和 Robonomics 平行链之上的物联网设备
+  ar: XRT هي أموال المرافق التي تجعل من الممكن التحكم في أجهزة إنترنت الأشياء أعلى شبكة Ethereum و Robonomics parachain
 - alias: Use a Dapp
   az: DApp-dan istifadə edin
   de: Verwenden Sie eine Dapp
@@ -684,6 +696,7 @@
   tr: Dapp Kullan
   uk: 'Скористайтеся Dapp'
   zh: 使用 Dapp
+  ar: استخدم Dapp
 - alias: Take a look at the Beta version of decentralized application for managing
     IoT devices
   az: IoT cihazlarını idarə etmək üçün mərkəzləşdirilməmiş tətbiqin Beta versiyasına
@@ -710,6 +723,7 @@
     göz atın
   uk: 'Подивіться бета-версію децентралізованої програми для керування пристроями IoT'
   zh: 查看物联网设备去中心化管理应用程序的测试版本
+  ar: ألق نظرة على الإصدار التجريبي من التطبيق اللامركزي لإدارة أجهزة إنترنت الأشياء
 - alias: Start building
   az: Qurmağa başlayın
   de: Mit dem Aufbau beginnen
@@ -725,11 +739,8 @@
   tr: İnşa etmeye başla
   uk: 'Спробуйте на практиці'
   zh: 开始构建
+  ar: ابدأ البناء
 - alias: Learn Robonomics through tutorials and practically useful experimenting in
-    Robonomics WIKI
-  az: Robonomics WIKI-də dərsliklər və praktiki olaraq faydalı ekperimentlər vasitəsilə
-    Robonomikanı oyrənin.
-  de: Lernen Sie Robonomics durch Tutorien und praktisch nützliche Experimente im
     Robonomics WIKI
   en: Learn Robonomics through tutorials and practically useful experimenting in Robonomics
     WIKI
@@ -750,6 +761,7 @@
   uk: 'Вивчіть Робономіку за допомогою навчальних посібників та практично корисних експериментів 
     у WIKI Робономіки'
   zh: 通过 Robonomics WIKI 中的教程和实用体验，了解 Robonomics
+  ar: تعلم Robonomics من خلال الدروس والتجارب المفيدة عمليًا في Robonomics WIKI
 - alias: Robonomics objectives
   az: Robonomikanın məqsədləri
   de: Robonomics-Ziele
@@ -765,6 +777,7 @@
   tr: Robonomics hedefleri
   uk: 'Задачі Робономіки'
   zh: Robonomics 的目标
+  ar: Robonomics Goals
 - alias: Based on the achievements of cloud platforms, Robonomics aims to offer the
     IoT market safer and more advanced Internet solutions at every stage of human-machine
     communication. There are the main tasks for which Robonomics is being developed
@@ -812,6 +825,7 @@
   uk: 'Спираючись на досягнення хмарних платформ, Робономіка прагне запропонувати 
     ринку IoT більш безпечні та вдосконалені інтернет рішення на кожному етапі спілкування між людиною та машиною. Нижче наведено основні целі, для яких розробляється Робономіка'
   zh: Robonomics 基于云平台的成果，其目标是在人机通信的各个阶段为物联网市场提供更加安全和更加先进的互联网解决方案。开发 Robonomics 的主要任务有：
+  ar: استنادًا إلى إنجازات المنصات السحابية ، تهدف Robonomics إلى تقديم حلول إنترنت أكثر أمانًا وأكثر تقدمًا في سوق إنترنت الأشياء في كل مرحلة من مراحل الاتصال بين الإنسان والآلة. هناك المهام الرئيسية التي يتم تطوير Robonomics من أجلها
 - alias: IoT device management with a decentralized cloud
   az: Mərkəzləşdirilməmiş bulud ilə IoT cihazlarının idarə edilməsi
   de: IoT-Geräteverwaltung mit einer dezentralen Cloud
@@ -827,6 +841,7 @@
   tr: Merkezi olmayan bir bulut ile IoT cihaz yönetimi
   uk: 'Керування IoT-пристроєм за допомогою децентралізованої хмари'
   zh: 通过去中心化的云，管理物联网设备
+  ar: إدارة جهاز إنترنت الأشياء مع سحابة لامركزية
 - alias: Blockchain networks have all the parameters to ensure the highest level of
     security for device launch and receiving telemetry. Interaction with a device
     can actually be described by changing the state of the digital twin stored in
@@ -907,6 +922,7 @@
   uk: 'Блокчейн мережі мають усі параметри для забезпечення найвищого ступеня безпеки 
     запуску пристрою та отримання телеметрії. Взаємодія з пристроєм фактично можна описати зміною стану цифрового двійника, що зберігається в блокчейн мережі, та доставкою інформації про зміни фізичного пристрою. У випадку використання permissionless blockchain ми можемо бути впевнені в глобальній доступності провайдерів, а також високому рівні захисту даних цифрового двійника від небажаних змін.'
   zh: 区块链网络具有所有参数，以确保设备启动和接收遥测的最高安全级别。与设备的交互实际上可以通过更改存储在区块链网络中的数字孪生状态并将更改信息传递给物理设备进行描述。在使用无需许可区块链的情况下，我们可以确保提供者的全球可用性，以及数字孪生的高级数据保护，免受不必要的更改。
+  ar: تحتوي شبكات Blockchain على جميع المعلمات لضمان أعلى مستوى من الأمان لتشغيل الجهاز واستقبال القياس عن بُعد. يمكن في الواقع وصف التفاعل مع الجهاز عن طريق تغيير حالة التوأم الرقمي المخزن في شبكة blockchain وتقديم معلومات حول هذه التغييرات إلى الجهاز الفعلي. في حالة استخدام blockchain بدون إذن ، يمكننا التأكد من التوافر العالمي لمقدمي الخدمة ، بالإضافة إلى مستوى عالٍ من حماية البيانات الخاصة بالتوأم الرقمي من التغييرات غير المرغوب فيها.
 - alias: Techno-economic transactions between humans and machines
   az: İnsanlar və maşınlar arasında texno-iqtisadi əməliyyatlar
   de: Techno-ökonomische Transaktionen zwischen Mensch und Maschine
@@ -922,6 +938,7 @@
   tr: İnsanlar ve makineler arasındaki tekno-ekonomik işlemler
   uk: 'Техніко-економічні транзакції між людьми та машинами'
   zh: 人机之间的技术经济交易
+  ar: Techno- المعاملات الاقتصادية بين البشر والآلات
 - alias: We can talk about institutional achievements in terms of access of automated
     systems directly to digital markets through cryptocurrencies and smart contracts.
     For example, Ethereum already implements most of the basic tools of economic activity.
@@ -993,6 +1010,7 @@
   uk: Ми можемо говорити про інституційні досягнення у плані доступу автоматичних 
     систем безпосередньо до цифрових ринків за допомогою криптовалют та розумних контрактів. Наприклад, Ethereum вже реалізує більшість базових інструментів економічної діяльності. Програми, що створюються сьогодні для зв'язку кінцевого користувача та IoT-пристрою, будуть набагато ефективнішими, якщо оплата та умови надання послуги будуть нерозривні з параметрами запуску пристрою.
   zh: 我们可以谈论自动化系统通过加密货币和智能合约直接进入数字市场方面的机构成就。例如，以太坊已经实现了经济活动的大部分基本工具。如果付款和服务条款与设备的启动参数密不可分，那么，今天为连接终端用户和物联网设备而创建的应用程序将更加高效。
+  ar: يمكننا التحدث عن الإنجازات المؤسسية من حيث الوصول إلى الأنظمة الآلية مباشرة إلى الأسواق الرقمية من خلال العملات المشفرة والعقود الذكية. على سبيل المثال ، تطبق Ethereum بالفعل معظم الأدوات الأساسية للنشاط الاقتصادي. ستكون التطبيقات التي تم إنشاؤها اليوم لتوصيل المستخدم النهائي وأجهزة إنترنت الأشياء أكثر كفاءة إذا كان الدفع وشروط الخدمة لا ينفصلان عن معلمات تشغيل الجهاز.
 - alias: Serverless IoT applications for users
   az: İstifadəçilər üçün serversiz IoT tətbiqləri
   de: Serverlose IoT-Anwendungen für Benutzer
@@ -1008,6 +1026,7 @@
   tr: Kullanıcılar için Sunucusuz IoT uygulamaları
   uk: 'Безсерверні IoT програми користувачів'
   zh: 面向用户的无服务器物联网应用
+  ar: تطبيقات IoT بدون خادم للمستخدمين
 - alias: The question of the privacy of users of modern applications should not be
     stuck in the inability of companies to use modern advances in the field of web3.
     There is no need to authenticate or require connection to specific servers to
@@ -1055,6 +1074,7 @@
   uk: 'Питання приватності користувачів сучасних програм не повинно стикатися 
     з невмінням компаній використовувати сучасні досягнення в галузі web3. Немає необхідності виконувати автентифікацію або вимагати підключення до конкретних серверів для доступу до телеметрії та керування пристроєм.'
   zh: 现代应用程序用户的隐私问题不应该停留在公司无法使用 web3 领域的现代进步中。无需验证或要求连接到特定服务器即可访问遥测和控制设备。
+  ar: لا ينبغي أن تكون مسألة خصوصية مستخدمي التطبيقات الحديثة عالقة في عدم قدرة الشركات على استخدام التطورات الحديثة في مجال الويب 3. ليست هناك حاجة للمصادقة أو طلب الاتصال بخوادم محددة للوصول إلى القياس عن بُعد والتحكم في الجهاز.
 - alias: What you can build with Robonomics right now
   az: Robonomika ilə indi nə qura bilərsiniz
   de: Was Sie jetzt mit Robonomics bauen können
@@ -1070,6 +1090,7 @@
   tr: Şu anda Robonomics ile yapabilecekleriniz
   uk: 'Що ви можете побудувати за допомогою Робономіки прямо зараз'
   zh: 现在可以使用 Robonomics 构建的项目
+  ar: ما يمكنك بناءه باستخدام Robonomics الآن
 - alias: Control Mars Curiosity rover
   az: Mars Curiosity robotunu idarə edin
   de: Steuerung des Mars-Rovers Curiosity
@@ -1085,6 +1106,7 @@
   tr: Mars Merak gezicisini kontrol edin
   uk: 'Керуйте марсоходом Curiosity'
   zh: 控制好奇号火星探测车
+  ar: تحكم في فضول المريخ بشكل عشوائي
 - alias: Make Mars Curiosity rover move under Robonomics Parachain control
   az: Mars Curiosity robotu Robonomics Parachain nəzarəti altında hərəkət etdirin
   de: Steuerung des Mars-Rovers Curiosity durch Robonomics-Parachain
@@ -1102,6 +1124,7 @@
   tr: Mars Merak gezicisini Robonomics Parachain kontrolü altında hareket ettirin
   uk: 'Змусіть марсохід Curiosity рухатися під контролем парачейна Робономіки'
   zh: 好奇号火星探测车在 Robonomics 平行链控制下移动
+  ar: اجعل مسبار كوريوسيتي على كوكب المريخ يتحرك تحت سيطرة Robonomics Parachain
 - alias: Connect ROS-compatible Drone
   az: ROS-uyğun Dronu qoşun
   de: ROS-kompatible Drohne anschließen
@@ -1117,6 +1140,7 @@
   tr: ROS uyumlu Drone'u bağlayın
   uk: 'Підключіть ROS-сумісний дрон'
   zh: 连接兼容 ROS 的无人机
+  ar: قم بتوصيل طائرة بدون طيار متوافقة مع ROS
 - alias: You can control any ROS-compatible robot with Robonomics parachain control
   az: Siz Robonomics parachain nəzarəti ilə istənilən ROS-uyğun robotu idarə edə bilərsiniz
   de: Sie können jeden ROS-kompatiblen Roboter mit der Parachain-Steuerung von Robonomics
@@ -1136,6 +1160,7 @@
   tr: Robonomics parachain kontrolü ile ROS uyumlu herhangi bir robotu kontrol edebilirsiniz
   uk: 'Ви можете керувати будь-яким ROS-сумісним роботом за допомогою парачейна Робономіки'
   zh: 可以使用 Robonomics 平行链控制任何 兼容 ROS 的机器人
+  ar: يمكنك التحكم في أي روبوت متوافق مع ROS باستخدام التحكم في Robonomics parachain
 - alias: Launch Kuka manipulator
   az: Kuka manipulyatorunu işə salın
   de: Kuka-Manipulator starten
@@ -1151,6 +1176,7 @@
   tr: Kuka manipülatörünü başlatın
   uk: 'Запустіть маніпулятор Kuka'
   zh: 启动 Kuka 机械臂
+  ar: قم بتشغيل Kuka manipulator
 - alias: Send transaction in Robonomics parachain, launch Kuka manipulator and get
     robot's telemetry in IPFS.
   az: Robonomics parachain-də əməliyyat göndərin, Kuka manipulyatorunu işə salın və
@@ -1176,6 +1202,7 @@
     telemetrisini IPFS'de alın.
   uk: 'Надішліть транзакцію в парачейні Робономіки, запустіть маніпулятор Kuka та отримайте телеметрію робота в IPFS.'
   zh: 在 Robonomics 平行链中发送交易，启动 Kuka 机械臂，并在 IPFS 中获取机器人的遥测数据。
+  ar: أرسل المعاملة في Robonomics parachain ، وقم بتشغيل Kuka manipulator واحصل على القياس عن بعد للروبوت في IPFS.
 - alias: ROS-based Projects for Smart Spaces
   az: Ağıllı Məkanlar üçün ROS əsaslı layihələr
   de: ROS-basierte Projekte für Smart Spaces
@@ -1191,6 +1218,7 @@
   tr: Akıllı Alanlar için ROS Tabanlı Projeler
   uk: 'Проекти на базі ROS для розумних просторів'
   zh: 基于 ROS 的智能空间项目
+  ar: المشاريع القائمة على ROS للمساحات الذكية
 - alias: Here, you’ll find a modest list of ROS-based projects that are dedicated
     to robots and IoT-devices that are meant for use in a home or office environment
   az: Burada siz ev və ya ofis mühitində istifadə üçün nəzərdə tutulmuş robotlara
@@ -1219,6 +1247,7 @@
     ayrılmış ROS tabanlı projelerin küçük bir listesini bulacaksınız.
   uk: 'Тут ви знайдете скромний список проектів на базі ROS, присвячених роботам та IoT-пристроям, які призначені для використання в домашніх або офісних умовах.'
   zh: 在这里，您将找到一份基于 ROS 的合适项目列表，这些项目专门针对用于家庭或办公环境的机器人和物联网设备
+  ar: ستجد هنا قائمة متواضعة من المشاريع المستندة إلى ROS والمخصصة للروبوتات وأجهزة إنترنت الأشياء المخصصة للاستخدام في بيئة المنزل أو المكتب
 - alias: Vision page title
   en: Robonomics network vision
   ru: Концепция сети Робономика
@@ -1372,6 +1401,7 @@
   uk: ЩО ТАКЕ ROBONOMICS ?
   tr: ROBONOMİCS NEDİR?
   zh: 什么是ROBONOMICS？
+  ar: ما هي شبكة Robonomics؟
 - alias: Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
   az: Robonomics əşyaların interneti tətbiqləri üçün açıq mənbə platformasıdır. Biz istifadəçi proqramları, Əşyaların İnterneti xidmətləri və mürəkkəb robot texnikası arasında atomar əməliyyatları şəklində texniki və iqtisadi məlumat mübadiləsini həyata keçirən yeni nəsil İnternet texnologiyalarını (web3) dəstəkləyirik.
   de: Robonomics ist eine Open-Source-Plattform für IoT-Anwendungen. Wir unterstützen eine neue Generation von Internet-Technologien (web3), die den Austausch von technischen und wirtschaftlichen Informationen in Form von atomaren Transaktionen zwischen Benutzeranwendungen, IoT-Diensten und komplexer Robotik realisiert.
@@ -1386,6 +1416,7 @@
   uk: Robonomics— це платформа з відкритим вихiдним кодом для програм Інтернету речей. Ми підтримуємо нове покоління інтернет-технологій (web3), які реалізують обмін технічною та економічною інформацією у формі атомарних транзакцій між додатками користувача, сервісами Інтернету речей і складною робототехнікою.
   tr: Robonomics, IoT uygulamaları için açık kaynaklı bir platformdur. Kullanıcı uygulamaları, IoT hizmetleri ve karmaşık robotik arasında atomik işlemler şeklinde teknik ve ekonomik bilgi alışverişini uygulayan yeni nesil internet teknolojilerini (web3) destekler.
   zh: Robonomics是一个开源平台，用于物联网应用，它可以使用户应用程序、物联网服务和复杂机器人之间以原子交易的形式交换技术和经济信息。
+  ar: Robonomics هي عبارة عن منصة مفتوحة المصدر لتطبيقات إنترنت الأشياء والتي تتيح تبادل المعلومات التقنية والاقتصادية في شكل معاملات ذرية بين تطبيقات المستخدم وخدمات إنترنت الأشياء والروبوتات المعقدة.
 - alias: Decentralized application
   en: Decentralized application
   uk: ДЕЦЕНТРАЛІЗОВАНИЙ ДОДАТОК
@@ -1400,6 +1431,7 @@
   es: APLICACIÓN DESCENTRALIZADA
   de: DEZENTRALISIERTE ANWENDUNG
   zh: 去中心化应用程序
+  ar: التطبيق اللامركزي
 - alias: Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.
   en: Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.
   ru: Децентрализованное приложение (dapp) работает в рамках Blockchain. Оно имеет открытый исходный код, а его данные хранятся на IPFS и Github. Эти технологии позволяют приложению быть безопасным и прозрачным одновременно. Наши разработчики работают как над созданием приложения Robonomics, так и над библиотеками, которые вы можете использовать при создании своего собственного dapp.
@@ -1428,6 +1460,7 @@
   es: Digital Twin (gemelo  digital) es uno de los instrumentos proporcionados por Robonomics Web Services (RWS). Actúa como una versión digital del equipo del mundo real y copia todas sus características técnicas. Permite hacer que una aplicación descentralizada responda mejor a los comandos del usuario.
   de: Der digital Twin ist eines der Instrumente, die von Robonomics Web Services (RWS) bereitgestellt werden. Er fungiert als digitale Version des physischen Geräts und kopiert alle seine technischen Merkmale. Er ermöglicht es, eine dezentralisierte App besser auf die Befehle des Benutzers reagieren zu lassen.
   zh: 数字孪生（Digital Twin）是 Robonomics 网络服务 (RWS) 提供的工具之一。它作为真实设备的数字版本，并复制了所有的技术特性。它能够使去中心化应用程序更加响应用户的命令。
+  ar: Digital Twin هي إحدى الأدوات التي توفرها Robonomics Web Services (RWS). تعمل كنسخة رقمية من معدات العالم الحقيقي وتنسخ جميع خصائصها التقنية. يسمح بجعل التطبيق اللامركزي أكثر استجابة لأوامر المستخدم.
 - alias: IoT / Smart device
   en: IoT / Smart device
   uk: IOT/РОЗУМНИЙ ПРИСТРІЙ
@@ -1442,6 +1475,7 @@
   es: IOT/DISPOSITIVO INTELIGENTE
   de: IOT/SMARTE GERÄT
   zh: 物联网/智能设备
+  ar: IOT / جهاز ذكي
 - alias: You can use Robonomics with a wide range of Zigbee smart devices to automate and control various aspects of your home/office or use it with ROS-based robotics for more complex industrial tasks.
   en: You can use Robonomics with a wide range of Zigbee smart devices to automate and control various aspects of your home/office or use it with ROS-based robotics for more complex industrial tasks.
   uk: Ви можете використовувати Robonomics з широким спектром розумних пристроїв Zigbee для автоматизації та управління різними аспектами вашого будинку/офісу або використовувати її з робототехнікою на основі ROS для більш складних промислових завдань.
@@ -1456,6 +1490,7 @@
   es: Puede usar Robonomics con una amplia gama de dispositivos inteligentes Zigbee para automatizar y controlar varios aspectos de su hogar/oficina o usarlo con robótica basada en ROS para tareas industriales más complejas.
   de: Du kannst Robonomics mit einer breiten Palette von intelligenten Zigbee-Geräten verwenden, um verschiedene Aspekte deines Zuhauses/Büros zu automatisieren und zu steuern oder es mit ROS basierter Robotik für komplexere industrielle Aufgaben einsetzen.
   zh: 你可以使用 Robonomics（一种软件平台）和各种 Zigbee 智能设备一起，自动化和控制家庭/办公室的各个方面，也可以将其与基于 ROS（机器人操作系统）的机器人一起使用，用于更复杂的工业任务。
+  ar: يمكنك استخدام Robonomics مع مجموعة واسعة من أجهزة Zigbee الذكية لأتمتة والتحكم في جوانب مختلفة من منزلك / مكتبك أو استخدامها مع الروبوتات القائمة على ROS للقيام بمهام صناعية أكثر تعقيدًا.
 - alias: User (D)App
   az: Tətbiq
   en: User (D)App
@@ -10185,6 +10220,7 @@
   ko: 타임라인
   ja: タイムライン
   zh: 时间线
+  ar: الجدول الزمني
 
 - alias: Read this to know historical background and long-term plans of team for XRT in Ethereum ecosystem.
   en: Read this to know historical background and long-term plans of team for XRT in Ethereum ecosystem.
@@ -10772,6 +10808,7 @@
   ko: 인프라 및 기술 개발 일정
   ja: インフラストラクチャー＆テック開発タイムライン
   zh: 基础设施和技术发展时间线
+  ar: الجدول الزمني لتطوير البنية التحتية والتكنولوجيا
 
 - alias: The Robonomics project started on 2015. See what was start idea and our checkpoints over the years. This is good brief introduction for newcomers and summary for pioneers.
   en: The Robonomics project started on 2015. See what was start idea and our checkpoints over the years. This is good brief introduction for newcomers and summary for pioneers.
@@ -10786,6 +10823,7 @@
   ko: 로보노믹스 프로젝트는 2015년에 시작되었습니다. 그 당시의 시작 아이디어와 몇 년간의 체크포인트를 살펴보세요. 이것은 새로운 참가자들에게 좋은 간단한 소개와 선구자들에게는 요약입니다.
   ja: Robonomicsプロジェクトは2015年に始まりました。当初のアイデアと、これまでのマイルストーンをご覧ください。これは初心者にとって良い簡単な紹介であり、先駆者にとっては概要です。
   zh: Robonomics 项目始于 2015 年。请看看最初的想法和我们多年来的里程碑。这是一个很好的新手介绍和先驱概述。
+  ar: بدأ مشروع Robonomics في عام 2015. انظر ما كانت فكرة البدء ونقاط التفتيش لدينا على مر السنين. هذه مقدمة موجزة جيدة للقادمين الجدد وملخص للفاتحين.
 
 - alias: On the Way to Sovereign Home Automation
   en: On the Way to Sovereign Home Automation
@@ -10800,6 +10838,7 @@
   zh: 通往主权家庭自动化的道路
   ko: 주권적인 홈 자동화로 가는 길
   ja: 主権ホームオートメーションへの道のり
+  ar: في الطريق إلى أتمتة المنزل السيادي
 
 - alias: "<p class='timeline__descr'>The year began with a major achievement — Robonomics won the 20th parachain slot auction and <a class='timeline__link' href='https://twitter.com/EnsRationis/status/1480139879057174530' target='_blank'>officially became</a> a parachain with ID 2048 on the Kusama network. The launch, datalog, DigitalTwin, liability functions and IoT subscriptions have become available to all users of the ecosystem. To provide details for this phase of the project, the core team has published the first chapters of the <a class='timeline__link' href='/white-paper-2022' target='_blank'>Robonomics Whitepaper 2.0.</a> Robonomics 2.0 on Substrate has been released with support for XCM messages, and we began to open HRMP channels with other parachains (like Crust Shadow and Darwinia), whose functionality is extremely useful for us.</p><p class='timeline__descr'>At the same time, we have unlocked a strategy for introducing the IoT market to our protocol. Our experiments with IoT equipment led us to the concept of a sovereign smart home, one which is independent of centralized cloud service providers. We have developed our <a class='timeline__link' href='https://wiki.robonomics.network/docs/robonomics-smart-home-overview/' target='_blank'>integration</a>, with the Home Assistant automation system, and also designed our own <a class='timeline__link' href='https://oshwlab.com/ludovich88/robonomics_sls_gateway_v01' target='_blank'>IoT gateway</a> for connecting smart devices.</p><p class='timeline__descr'>We have launched two big initiatives in order to increase community engagement — <a class='timeline__link' href='https://robonomics.academy/en/' target='_blank'>Robonomics Academy</a> and <a class='timeline__link' href='/ambassador-program/' target='_blank'>Robonomics Ambassador Program</a>. Additionally, <a class='timeline__link' href='/blog/robonomics-town-hall-2022/' target='_blank'> Robonomics Town Hall</a> was held in autumn so that the Robonomics community could try out our governance mechanisms for the first time. Recently, the Robonomics team helped the DAO IPCI project obtain a parachain slot to present carbon offsetting service for smart buildings.</p>"
   en: "<p class='timeline__descr'>The year began with a major achievement — Robonomics won the 20th parachain slot auction and <a class='timeline__link' href='https://twitter.com/EnsRationis/status/1480139879057174530' target='_blank'>officially became</a> a parachain with ID 2048 on the Kusama network. The launch, datalog, DigitalTwin, liability functions and IoT subscriptions have become available to all users of the ecosystem. To provide details for this phase of the project, the core team has published the first chapters of the <a class='timeline__link' href='/white-paper-2022' target='_blank'>Robonomics Whitepaper 2.0.</a> Robonomics 2.0 on Substrate has been released with support for XCM messages, and we began to open HRMP channels with other parachains (like Crust Shadow and Darwinia), whose functionality is extremely useful for us.</p><p class='timeline__descr'>At the same time, we have unlocked a strategy for introducing the IoT market to our protocol. Our experiments with IoT equipment led us to the concept of a sovereign smart home, one which is independent of centralized cloud service providers. We have developed our <a class='timeline__link' href='https://wiki.robonomics.network/docs/robonomics-smart-home-overview/' target='_blank'>integration</a>, with the Home Assistant automation system, and also designed our own <a class='timeline__link' href='https://oshwlab.com/ludovich88/robonomics_sls_gateway_v01' target='_blank'>IoT gateway</a> for connecting smart devices.</p><p class='timeline__descr'>We have launched two big initiatives in order to increase community engagement — <a class='timeline__link' href='https://robonomics.academy/en/' target='_blank'>Robonomics Academy</a> and <a class='timeline__link' href='/ambassador-program/' target='_blank'>Robonomics Ambassador Program</a>. Additionally, <a class='timeline__link' href='/blog/robonomics-town-hall-2022/' target='_blank'> Robonomics Town Hall</a> was held in autumn so that the Robonomics community could try out our governance mechanisms for the first time. Recently, the Robonomics team helped the DAO IPCI project obtain a parachain slot to present carbon offsetting service for smart buildings.</p>"
@@ -10814,6 +10853,7 @@
   zh: "<p class='timeline__descr'>这一年开始了一项重大的成就 - Robonomics 赢得了第 20 次 parachain 拍卖的槽位, 并<a class='timeline__link' href='https://twitter.com/EnsRationis/status/1480139879057174530' target='_blank'>正式成为了</a> Kusama 网络中 ID 为 2048 的 parachain。发射、datalog、DigitalTwin、责任功能和 IoT 订阅已经对生态系统的所有用户开放。为了详细说明这个阶段的项目，核心团队已经发布了 <a class='timeline__link' href='/white-paper-2022' target='_blank'>Robonomics 白皮书 2.0.</a> Robonomics 2.0 在 Substrate 上发布，支持 XCM 消息，并且我们开始与其他 parachains（如 Crust、Shadow 和 Darwinia）建立 HRMP 通道，它们的功能对我们非常有用。</p><p class='timeline__descr'>同时，我们已经找到了向 IoT 市场介绍我们协议的策略。我们对 IoT 设备的实验引导我们探索了主权智能家居的概念，它独立于中央云服务提供商。我们已经开发了与 Home Assistant <a class='timeline__link' href='https://wiki.robonomics.network/docs/robonomics-smart-home-overview/' target='_blank'>自动化系统的集成</a>, 并为连接智能设备设计了自己的 <a class='timeline__link' href='https://oshwlab.com/ludovich88/robonomics_sls_gateway_v01' target='_blank'>IoT 网关</a>.</p><p class='timeline__descr'>为了提高社区参与度，我们启动了两个大型举措： <a class='timeline__link' href='https://robonomics.academy/en/' target='_blank'>Robonomics 学院</a> 和 <a class='timeline__link' href='/ambassador-program/' target='_blank'>Robonomics 大使计划</a>. 此外, <a class='timeline__link' href='/blog/robonomics-town-hall-2022/' target='_blank'> Robonomics 城市大厅</a> 在秋季举行，以便 Robonomics 社区首次体验我们的治理机制。最近，Robonomics 团队帮助 DAO IPCI 项目获得了应用于智能建筑的碳抵消服务的平行链槽位。</p>"
   ko: "<p class='timeline__descr'>해는 큰 성취로 시작되었습니다 - Robonomics가 20번째 파라체인 슬롯 경매에서 우승하고 Kusama 네트워크의 ID 2048로 <a class='timeline__link' href='https://twitter.com/EnsRationis/status/1480139879057174530' target='_blank'> 공식적으로 파라체인이 되었습니다</a>.  런칭, 데이터로그, DigitalTwin, 책임 기능 및 IoT 구독이 모든 생태계 사용자에게 제공되었습니다. 이 단계의 프로젝트에 대한 자세한 내용을 제공하기 위해, 핵심 팀은 <a class='timeline__link' href='/white-paper-2022' target='_blank'>Robonomics Whitepaper 2.0.</a>의 첫 장을 게시했습니다. XCM 메시지를 지원하는 Robonomics 2.0 on Substrate가 출시되었으며, 우리에게 매우 유용한 Crust Shadow 및 Darwinia와 같은 다른 파라체인과 HRMP 채널을 열기 시작했습니다.</p><p class='timeline__descr'>동시에, 우리는 우리의 프로토콜을 IoT 시장에 소개하는 전략을 개발했습니다. 우리의 IoT 장비 실험은 중앙 집중식 클라우드 서비스 공급 업체와 독립적인 주권 스마트 홈 개념으로 이어졌습니다. 우리는 Home Assistant 자동화 시스템과의 <a class='timeline__link' href='https://wiki.robonomics.network/docs/robonomics-smart-home-overview/' target='_blank'> 통합을</a>, 개발했으며, 또한 스마트 디바이스를 연결하기 위한 자체 <a class='timeline__link' href='https://oshwlab.com/ludovich88/robonomics_sls_gateway_v01' target='_blank'>IoT 게이트웨이를 </a> 디자인했습니다.</p><p class='timeline__descr'>우리는 커뮤니티 참여를 증가시키기 위해 두 가지 큰 이니셔티브를 시작했습니다 — <a class='timeline__link' href='https://robonomics.academy/en/' target='_blank'>로보노믹스 아카데미</a> 와 <a class='timeline__link' href='/ambassador-program/' target='_blank'>로보노믹스 앰배서더 프로그램입니다</a>. 또한, 가을에는 <a class='timeline__link' href='/blog/robonomics-town-hall-2022/' target='_blank'> 로보노믹스 타운홀이</a> 열려 로보노믹스 커뮤니티가 처음으로 거버넌스 메커니즘을 시험해볼 수 있었습니다. 최근에는 로보노믹스 팀이 DAO IPCI 프로젝트가 스마트 빌딩을 위한 탄소 오프셋 서비스를 제공하기 위해 파라체인 슬롯을 획득하는 데 도움을 주었습니다.</p>"
   ja: "<p class='timeline__descr'>年が始まったばかりで、大きな成果がありました。Robonomicsは第20パラチェーンスロットオークションに勝利し、Kusamaネットワーク上のID 2048 <a class='timeline__link' href='https://twitter.com/EnsRationis/status/1480139879057174530' target='_blank'>を持つ公式のパラチェーンになりました</a>. Tローンチ、データログ、DigitalTwin、責任機能、IoTサブスクリプションは、エコシステムのすべてのユーザーが利用できるようになりました。このプロジェクトのこの段階に関する詳細を提供するため、コアチームは <a class='timeline__link' href='/white-paper-2022' target='_blank'>Robonomics Whitepaper 2.0</a>の最初の章を公開しました。Substrate上のRobonomics 2.0はXCMメッセージをサポートしてリリースされ、Crust ShadowやDarwiniaなどの他のパラチェーンとHRMPチャンネルを開始しました。彼らの機能は非常に役立つものです。</p><p class='timeline__descr'>同時に、IoT市場に当社のプロトコルを紹介する戦略を展開しました。IoT機器の実験から、中央集権型クラウドサービスプロバイダーに依存しない主権を持つスマートホームのコンセプトに至りました。Home Assistant自動化システムとの<a class='timeline__link' href='https://wiki.robonomics.network/docs/robonomics-smart-home-overview/' target='_blank'>統合を</a>開発し、また、独自の <a class='timeline__link' href='https://oshwlab.com/ludovich88/robonomics_sls_gateway_v01' target='_blank'>IoTゲートウェイ</a> を設計して、スマートデバイスを接続することができるようにしました。</p><p class='timeline__descr'>私たちはコミュニティエンゲージメントを高めるために2つの大きなイニシアチブ、<a class='timeline__link' href='https://robonomics.academy/en/' target='_blank'>Robonomics Academy</a>と<a class='timeline__link' href='/ambassador-program/' target='_blank'>Robonomics Ambassador Program</a>を立ち上げました。さらに、Robonomicsコミュニティが初めてガバナンスメカニズムを試すことができるように、<a class='timeline__link' href='/blog/robonomics-town-hall-2022/' target='_blank'> Robonomics Town Hall</a> が秋に開催されました。最近、RobonomicsチームはDAO IPCIプロジェクトがスマートビルディングのカーボンオフセットサービスを提供するためのパラチェーンスロットを取得するのを手助けしました。</p>"
+  ar: "<p class='timeline__descr'> بدأ العام بإنجاز كبير - فازت Robonomics بالمزاد العشرين من Parachain <a class='timeline__link' href='https://twitter.com/EnsRationis/status/1480139879057174530' target='_blank'> وأصبحت رسميًا </a> Parachain بهوية 2048 على شبكة Kusama Network. الإطلاق ، سجل البيانات ، DigitalTwin ، وظائف المسؤولية واشتراكات إنترنت الأشياء متاحة الآن لجميع مستخدمي النظام البيئي. لتقديم تفاصيل عن هذه المرحلة من المشروع ، نشر الفريق الأساسي الفصول الأولى من  <a class='timeline__link' href='/white-paper-2022' target='_blank'>Robonomics Whitepaper 2.0.</a> تم إصدار Robonomics 2.0 على ركيزة مع دعم رسائل XCM ، وبدأنا في فتح قنوات HRMP باستخدام مظلات أخرى (مثل Crust Shadow و Darwinia ) ، التي تعتبر وظائفها مفيدة جدًا لنا.</p><p class='timeline__descr'>At the same time, we have unlocked a strategy for introducing the IoT market to our protocol. Our experiments with IoT equipment led us to the concept of a sovereign smart home, one which is independent of centralized cloud service providers. We have developed our <a class='timeline__link' href='https://wiki.robonomics.network/docs/robonomics-smart-home-overview/' target='_blank'>integration</a>, with the Home Assistant automation system, and also designed our own <a class='timeline__link' href='https://oshwlab.com/ludovich88/robonomics_sls_gateway_v01' target='_blank'>IoT gateway</a> for connecting smart devices.</p><p class='timeline__descr'> لقد أطلقنا مبادرتين كبيرتين من أجل زيادة مشاركة المجتمع - أكاديمية <a class='timeline__link' href='https://robonomics.academy/en/' target='_blank'>Robonomics</a> <a class='timeline__link' href='/ambassador-program/' target='_blank'>وبرنامج سفير Robonomics</a>. بالإضافة إلى ذلك، تم عقد <a class='timeline__link' href='/blog/robonomics-town-hall-2022/' target='_blank'> Robonomics Town Hall</a> في الخريف حتى يتمكن مجتمع Robonomics من تجربة آليات الحوكمة لدينا لأول مرة. في الآونة الأخيرة، ساعد فريق Robonomics مشروع DAO IPCI في الحصول على فتحة Parachain لتقديم خدمة تعويض الكربون للمباني الذكية.</p>"
   
   
 - alias: Notable events
@@ -10829,6 +10869,7 @@
   zh: 重要事件
   ko: 주목할 만한 사건
   ja: 注目すべきイベント
+  ar: الأحداث البارزة
 
 - alias: World Economic Forum Annual Meeting 2022
   en: World Economic Forum Annual Meeting 2022
@@ -10843,6 +10884,7 @@
   zh: 2022年世界经济论坛年会
   ko: 세계경제포럼 연례회의 2022
   ja: 世界経済フォーラム年次総会2022
+  ar: الاجتماع السنوي للمنتدى الاقتصادي العالمي 2022
 
 - alias: Polkadot Decoded 2022
   en: Polkadot Decoded 2022
@@ -10857,6 +10899,7 @@
   zh: 2022年 Polkadot 解密
   ko: Polkadot Decoded 2022
   ja: Polkadot Decoded 2022
+  ar: Polkadot Decoded 2022
 
 - alias: Becoming a Parachain for IoT Applications
   en: Becoming a Parachain for IoT Applications
@@ -10871,6 +10914,7 @@
   zh: 成为 IoT 应用的平行链
   ko: IoT 애플리케이션을 위한 Parachain이 되는 방법
   ja: IoTアプリケーション用のパラチェーンになる方法
+  ar: أن تصبح Parachain لتطبيقات إنترنت الأشياء
 
 - alias: <p class='timeline__descr'>In 2021, our <a class='timeline__link' href='/vision/' target='_blank'>main focus</a> shifted to preparing the project so that IoT applications could be used via our parachain on the Kusama network. Robonomics 1.0 on Substrate has been released, and we have been testing connecting sensors to the parachain to send their telemetry data, as well as developing the digital twin functionality. In the middle of the year, we decided to test the full cycle of our network and created our own relay chain called <a class='timeline__link' href='/blog/robonomics-frontier/' target='_blank'>Robonomics Frontier</a>, to which the Robonomics parachain was integrated (prior to being migrated to the Kusama relay chain). There has been a lot of focus on getting a parachain slot in Kusama, for which we organized several crowdloan campaigns.</p><p class='timeline__descr'>There have been two big changes for the community. First, we launched the <a class='timeline__link' href='https://github.com/airalab/robonomics-grant-program' target='_blank'>Robonomics Grant Program</a>, which allows web3 robotics and IoT projects to receive funding for R&D tasks. By the end of the year, four active projects participated in the program. Secondly, the team started the <a class='timeline__link' href='https://youtu.be/4Np5-95LdvY' target='_blank'>Exodus process</a>, allowing Ethereum token holders to move their XRT tokens to the parachain.</p><p class='timeline__descr'>Among the collaborations, we can recall the remarkable appearance of Boston Dynamics Spot at MerkleBot, for which a <a class='timeline__link' href='https://spot.merklebot.com/' target='_blank'>rental remote control system</a> was developed. We would also like to inform you about the Multi-Agent Systems company which is a personal project that has been formed by a team of Robonomics engineers. They have developed a robotic waffle baker called Eisenkoch which conducts cooking tasks for coffee shop owners.</p>
   en: <p class='timeline__descr'>In 2021, our <a class='timeline__link' href='/vision/' target='_blank'>main focus</a> shifted to preparing the project so that IoT applications could be used via our parachain on the Kusama network. Robonomics 1.0 on Substrate has been released, and we have been testing connecting sensors to the parachain to send their telemetry data, as well as developing the digital twin functionality. In the middle of the year, we decided to test the full cycle of our network and created our own relay chain called <a class='timeline__link' href='/blog/robonomics-frontier/' target='_blank'>Robonomics Frontier</a>, to which the Robonomics parachain was integrated (prior to being migrated to the Kusama relay chain). There has been a lot of focus on getting a parachain slot in Kusama, for which we organized several crowdloan campaigns.</p><p class='timeline__descr'>There have been two big changes for the community. First, we launched the <a class='timeline__link' href='https://github.com/airalab/robonomics-grant-program' target='_blank'>Robonomics Grant Program</a>, which allows web3 robotics and IoT projects to receive funding for R&D tasks. By the end of the year, four active projects participated in the program. Secondly, the team started the <a class='timeline__link' href='https://youtu.be/4Np5-95LdvY' target='_blank'>Exodus process</a>, allowing Ethereum token holders to move their XRT tokens to the parachain.</p><p class='timeline__descr'>Among the collaborations, we can recall the remarkable appearance of Boston Dynamics Spot at MerkleBot, for which a <a class='timeline__link' href='https://spot.merklebot.com/' target='_blank'>rental remote control system</a> was developed. We would also like to inform you about the Multi-Agent Systems company which is a personal project that has been formed by a team of Robonomics engineers. They have developed a robotic waffle baker called Eisenkoch which conducts cooking tasks for coffee shop owners.</p>
@@ -10885,6 +10929,7 @@
   zh: <p class='timeline__descr'>2021年，我们 <a class='timeline__link' href='/vision/' target='_blank'>的主要重点</a> 转向了准备项目，以便通过我们在 Kusama 网络上的平行链使用 IoT 应用。Robonomics 1.0 在 Substrate 上已经发布，我们一直在测试将传感器连接到平行链以发送其遥测数据，并开发数字双胞胎功能。在年中，我们决定测试我们网络的完整周期，并创建了我们自己的中继链，称为 <a class='timeline__link' href='/blog/robonomics-frontier/' target='_blank'>Robonomics Frontier</a>, 并将 Robonomics 平行链集成到其中（在迁移到 Kusama 中继链之前）。我们组织了几次众筹活动，以获得 Kusama 的平行链槽位。</p><p class='timeline__descr'>对社区来说有两个重大变化。首先，我们推出了 <a class='timeline__link' href='https://github.com/airalab/robonomics-grant-program' target='_blank'>Robonomics 奖助金计划</a>，允许 web3、机器人和 IoT 项目获得研发任务的资金。到年底，有四个活跃项目参加了该计划。其次，团队开始了 <a class='timeline__link' href='https://youtu.be/4Np5-95LdvY' target='_blank'>Exodus 过程</a>, 允许以太坊代币持有者将其 XRT 代币移动到平行链.</p><p class='timeline__descr'>在合作中，我们可以回忆起波士顿动力学公司的 Spot 在 MerkleBot 的引人注目表现, 为此开发<a class='timeline__link' href='https://spot.merklebot.com/' target='_blank'>了租赁远程控制系统</a>. 我们还想告诉您，Multi-Agent Systems 公司是一个由 Robonomics 工程师组成的个人项目。他们开发了一种名为 Eisenkoch 的机器人烤饼机，为咖啡店老板进行烹饪任务</p>
   ko: <p class='timeline__descr'>2021년에는 IoT 애플리케이션을 Kusama 네트워크의 우리 파라체인을 통해 사용할 수 있도록 프로젝트를 준비하는 것이 <a class='timeline__link' href='/vision/' target='_blank'>주요한 초점으로</a> 변경되었습니다. Substrate에서 Robonomics 1.0이 출시되었으며, 센서를 연결하여 텔레메트리 데이터를 보내는 것과 디지털 트윈 기능을 개발하는 것을 테스트하고 있습니다. 중간에 우리는 네트워크의 전체 주기를 테스트하기로 결정하고 <a class='timeline__link' href='/blog/robonomics-frontier/' target='_blank'>Robonomics Frontier</a>라는 우리 자체 릴레이 체인을 만들어 Robonomics 파라체인을 통합했습니다(Kusama 릴레이 체인으로 마이그레이션되기 전). 우리는 Kusama에서 파라체인 슬롯을 얻기 위해 여러 크라우드론 캠페인을 조직해 많은 노력을 기울였습니다.</p><p class='timeline__descr'>커뮤니티에는 두 가지 큰 변화가 있었습니다. 첫째, 우리는 <a class='timeline__link' href='https://github.com/airalab/robonomics-grant-program' target='_blank'>로보노믹스 그랜트 프로그램을</a> 출시하여 웹3, 로봇 및 IoT 프로젝트가 R&D 작업을 위해 자금을 받을 수 있게 했습니다. 연말까지 프로그램에 참여한 4개의 활성 프로젝트가 있었습니다. 둘째, 팀은 이더리움 토큰 홀더가 XRT 토큰을 패러체인으로 이동할 수 있도록 <a class='timeline__link' href='https://youtu.be/4Np5-95LdvY' target='_blank'>엑소더스 프로세스를</a> 시작했습니다.</p><p class='timeline__descr'>협력 중에서는, 놀라운 보스턴 다이내믹스 스팟의 MerkleBot 출현을 기억할 수 있습니다. 이를 위해 <a class='timeline__link' href='https://spot.merklebot.com/' target='_blank'>렌탈 원격 제어 시스템이</a> 개발되었습니다. 또한, Robonomics 엔지니어 팀으로 구성된 개인 프로젝트인 Multi-Agent Systems 회사에 대해 알려드리고 싶습니다. 이 회사는 커피숍 주인을 위한 요리 업무를 수행하는 Eisenkoch라는 로봇 와플 제조기를 개발했습니다.</p>
   ja: <p class='timeline__descr'>2021年、<a class='timeline__link' href='/vision/' target='_blank'>私たちの主な焦点は</a>、IoTアプリケーションがKusamaネットワーク上の私たちのパラチェーンを介して使用できるように、プロジェクトの準備に移行しました。Substrate上のRobonomics 1.0がリリースされ、センサーをパラチェーンに接続してテレメトリーデータを送信するテストや、デジタルツイン機能の開発を行っています。年の中頃には、ネットワークのフルサイクルをテストするために、<a class='timeline__link' href='/blog/robonomics-frontier/' target='_blank'>Robonomics Frontier</a>という独自のリレーチェーンを作成し、Robonomicsパラチェーンを統合しました（Kusamaリレーチェーンに移行する前に）。Kusamaでパラチェーンスロットを取得することに注力しており、複数のクラウドローンキャンペーンを組織しました。</p><p class='timeline__descr'>コミュニティには2つの大きな変化がありました。まず、<a class='timeline__link' href='https://github.com/airalab/robonomics-grant-program' target='_blank'>Robonomics Grant Program</a>を開始しました。これにより、Web3、ロボット工学、IoTプロジェクトがR＆Dタスクの資金援助を受けることができます。今年末までに、4つのアクティブなプロジェクトがプログラムに参加しました。さらに、チームは<a class='timeline__link' href='https://youtu.be/4Np5-95LdvY' target='_blank'>Exodusプロセスを</a>開始し、Ethereumトークン保有者がXRTトークンをパラチェーンに移動できるようにしました。</p><p class='timeline__descr'>コラボレーションの中で、Boston Dynamics SpotがMerkleBotに素晴らしい姿を見せたことが挙げられます。<a class='timeline__link' href='https://spot.merklebot.com/' target='_blank'>ためにレンタル用のリモコンシステ</a>ムが開発されました。また、Robonomicsエンジニアのチームによって形成された個人プロジェクトであるMulti-Agent Systems社についてもお知らせします。彼らはコーヒーショップオーナー向けに料理タスクを行うロボットワッフルメーカーEisenkochを開発しました。</p>
+  ar: <p class='timeline__descr'> إلى إعداد المشروع بحيث يمكن استخدام تطبيقات إنترنت الأشياء عبر باراشين الخاص بنا على شبكة <a class='timeline__link' href='/vision/' target='_blank'>تركيزنا الرئيسي</a> في عام 2021 ، تحول Kusama. تم إصدار Robonomics 1.0 على Substrate ، ونحن نختبر توصيل أجهزة الاستشعار بالباراشين لإرسال بيانات القياس عن بُعد ، بالإضافة إلى تطوير وظيفة التوأم الرقمي. في منتصف العام ، قررنا اختبار الدورة الكاملة لشبكتنا وأنشأنا سلسلة الترحيل الخاصة بنا والتي تسمى ، والتي تم دمج Robonomics parachain فيها (قبل ترحيلها إلى سلسلة Kusama للتتابع). كان هناك الكثير من <a class='timeline__link' href='/blog/robonomics-frontier/' target='_blank'>Robonomics Frontier</a>, لتركيز على الحصول على فتحة باراشين في كوساما ، والتي نظمنا من أجلها عدة حملات جماعية.</p><p class='timeline__descr'>، والذي يسمح لمشاريع Web3 والروبوتات وإنترنت الأشياء بتلقي التمويل <a class='timeline__link' href='https://github.com/airalab/robonomics-grant-program' target='_blank'برنامج منح علم الروبوتات</a> كان هناك تغييران كبيران للمجتمع. أولاً ، أطلقنا ، مما سمح لحاملي توكنات <a class='timeline__link' href='https://youtu.be/4Np5-95LdvY' target='_blank'>Exodus</a> لمهام البحث والتطوير. بحلول نهاية العام ، شاركت أربعة مشاريع نشطة في البرنامج. ثانيًا ، بدأ الفريق عملية Ethereum بنقل رموز XRT الخاصة بهم إلى parachain. </p><p class='timeline__descr'><a class='timeline__link' href='https://spot.merklebot.com/' target='_blank'>نظام تحكم عن بعد </a> من بين أوجه التعاون ، يمكننا أن نتذكر المظهر الرائع لـ Boston Dynamics Spot في MerkleBot ، حيث تم تطوير للتأجير. نود أيضًا أن نعلمك بشأن شركة Multi-Agent Systems وهي مشروع شخصي تم تشكيله بواسطة فريق من مهندسي Robonomics. لقد طوروا خبازًا آليًا للوافل يسمى Eisenkoch يقوم بمهام الطبخ لأصحاب المقاهي. </p>
 
 - alias: Polkadot Decoded 2021
   en: Polkadot Decoded 2021
@@ -10899,6 +10944,7 @@
   zh: Polkadot 解密 2021
   ko: Polkadot Decoded 2021
   ja: Polkadot Decoded 2021
+  ar: Polkadot Decoded 2021
 
 - alias: IROS2021 (sponsored by Robonomics)
   en: IROS2021 (sponsored by Robonomics)
@@ -10913,6 +10959,7 @@
   zh: IROS2021（由 Robonomics 赞助）
   ko: Robonomics에서 후원합니다IROS2021
   ja: RobonomicsによるスポンサーIROS2021
+  ar: IROS2021 (برعاية Robonomics)
 
 - alias: Robonomics Winter School 2021 (hosted by Robonomics)
   en: Robonomics Winter School 2021 (hosted by Robonomics)
@@ -10926,7 +10973,8 @@
   az: Robonomics Winter School 2021 (Robonomics tərəfindən təşkil olunub)
   zh: Robonomics 冬季学校 2021（由 Robonomics 主办）
   ko: 로보노믹스 윈터 스쿨 2021 (로보노믹스 주최)
-  ja: Robonomics Winter School 2021（Robonomics主催）
+  ja: Robonomics Winter School 2021（Robonomics主催）a
+  ar: مدرسة Robonomics الشتوية 2021 (تستضيفها Robonomics)
 
 - alias: Transition to Multinetwork — Along Came Polkadot
   en: Transition to Multinetwork — Along Came Polkadot
@@ -10941,6 +10989,7 @@
   zh: 过渡到多网络 —— Polkadot 登场
   ko: 다중 네트워크로의 전환 - 폴카닷의 등장
   ja: マルチネットワークへの移行 - ポルカドットが現れた
+  ar: الانتقال إلى الشبكات المتعددة - على طول الطريق جاء Polkadot
 
 - alias: <p class='timeline__descr'>There came a time when the existing limitations of Ethereum <a class='timeline__link' href='https://blog.aira.life/on-top-of-two-world-computers-research-questions-a83570f4c8b1' target='_blank'>began to stand out clearly</a> (in particular, poor scalability, low speed and very high cost of transactions). The upgrade to ETH2.0 was supposed to fix the situation, but this upgrade was repeatedly delayed. Whilst we did not want to leave the Ethereum network, we realized that in the current situation it was difficult to implement our use cases, and we began to look for an alternative network. The sharded blockchain ecosystem Polkadot became this alternative. We started by experimenting with the Substrate framework to migrate the main Robonomics features and to deploy our own testnet. By the end of this stage, we had deployed our parachain on the Rococo testnet and started preparing to get a slot on the Kusama network.</p><p class='timeline__descr'>Continuing to study IoT systems, we have identified the main functionality of Robonomics, which can add value to users — the function of decentralized cloud for IoT. This idea formed the basis of <a class='timeline__link' href='https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42' target='_blank'>Robonomics Web Services</a>. The RWS infrastructure took on all the functions of a typical centralized cloud, but without the standard problems of global availability, security and privacy. Additionally, we came up with the idea of parachain IoT subscriptions that allows subscription holders to use the blockchain network without having to pay a fee for each transaction. The first experiment with IoT subscriptions was the emission of the RWS token, which allows its owner to send 1 transaction per block. In addition, we began to take the first steps to develop our own hardware kit for control of smart devices (the DAOS concept).</p><p class='timeline__descr'>Of course, support for Robonomics on Ethereum has not stopped. The Robonomics communication stack has been finalized to version <a class='timeline__link' href='https://github.com/airalab/robonomics_comm/releases/tag/v1.0.0' target='_blank'> LTS 1.0.</a>. The XRT token has started trading on several exchanges (in particular, the Uniswap DEX), and the liquidity incentivization program was launched.</p><p class='timeline__descr'>The team actively developed ways to interact with the community. The first version of our <a class='timeline__link' href='https://blog.aira.life/the-robonomics-dapp-overview-acb003f51b9a' target='_blank'>dapp</a> site and Robonomics Wiki have been launched. For more transparent and convenient project management, we started using <a class='timeline__link' href='https://client.aragon.org/#/aira/' target='_blank'>Aragon DAO</a>. We hosted <a class='timeline__link' href='https://www.youtube.com/playlist?list=PLkys45xOYDp0qEsCerAXdw9cofJZW3Fie' target='_blank'>Robonomics Winter School</a> in 2019 for newcomers to the project.</p><p class='timeline__descr'>Collaborations with congenial projects also continued. Robonomics and DAO IPCI introduced a service for collecting and analyzing sensory data — <a class='timeline__link' href='https://www.youtube.com/watch?v=shqey3tmNUk' target='_blank'> RoSeMAN</a>. Robonomics became the foundation for the <a class='timeline__link' href='https://merklebot.com/' target='_blank'>MerkleBot</a> project, which is developing a system for smart leasing of robotic equipment.</p>
   en: <p class='timeline__descr'>There came a time when the existing limitations of Ethereum <a class='timeline__link' href='https://blog.aira.life/on-top-of-two-world-computers-research-questions-a83570f4c8b1' target='_blank'>began to stand out clearly</a> (in particular, poor scalability, low speed and very high cost of transactions). The upgrade to ETH2.0 was supposed to fix the situation, but this upgrade was repeatedly delayed. Whilst we did not want to leave the Ethereum network, we realized that in the current situation it was difficult to implement our use cases, and we began to look for an alternative network. The sharded blockchain ecosystem Polkadot became this alternative. We started by experimenting with the Substrate framework to migrate the main Robonomics features and to deploy our own testnet. By the end of this stage, we had deployed our parachain on the Rococo testnet and started preparing to get a slot on the Kusama network.</p><p class='timeline__descr'>Continuing to study IoT systems, we have identified the main functionality of Robonomics, which can add value to users — the function of decentralized cloud for IoT. This idea formed the basis of <a class='timeline__link' href='https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42' target='_blank'>Robonomics Web Services</a>. The RWS infrastructure took on all the functions of a typical centralized cloud, but without the standard problems of global availability, security and privacy. Additionally, we came up with the idea of parachain IoT subscriptions that allows subscription holders to use the blockchain network without having to pay a fee for each transaction. The first experiment with IoT subscriptions was the emission of the RWS token, which allows its owner to send 1 transaction per block. In addition, we began to take the first steps to develop our own hardware kit for control of smart devices (the DAOS concept).</p><p class='timeline__descr'>Of course, support for Robonomics on Ethereum has not stopped. The Robonomics communication stack has been finalized to version <a class='timeline__link' href='https://github.com/airalab/robonomics_comm/releases/tag/v1.0.0' target='_blank'> LTS 1.0.</a>. The XRT token has started trading on several exchanges (in particular, the Uniswap DEX), and the liquidity incentivization program was launched.</p><p class='timeline__descr'>The team actively developed ways to interact with the community. The first version of our <a class='timeline__link' href='https://blog.aira.life/the-robonomics-dapp-overview-acb003f51b9a' target='_blank'>dapp</a> site and Robonomics Wiki have been launched. For more transparent and convenient project management, we started using <a class='timeline__link' href='https://client.aragon.org/#/aira/' target='_blank'>Aragon DAO</a>. We hosted <a class='timeline__link' href='https://www.youtube.com/playlist?list=PLkys45xOYDp0qEsCerAXdw9cofJZW3Fie' target='_blank'>Robonomics Winter School</a> in 2019 for newcomers to the project.</p><p class='timeline__descr'>Collaborations with congenial projects also continued. Robonomics and DAO IPCI introduced a service for collecting and analyzing sensory data — <a class='timeline__link' href='https://www.youtube.com/watch?v=shqey3tmNUk' target='_blank'> RoSeMAN</a>. Robonomics became the foundation for the <a class='timeline__link' href='https://merklebot.com/' target='_blank'>MerkleBot</a> project, which is developing a system for smart leasing of robotic equipment.</p>
@@ -10955,6 +11004,7 @@
   zh: <p class='timeline__descr'>Ethereum 的现有局限性 <a class='timeline__link' href='https://blog.aira.life/on-top-of-two-world-computers-research-questions-a83570f4c8b1' target='_blank'>开始明显地体现出来</a>（特别是可扩展性差、速度低、交易成本高）的时候到了。ETH2.0 的升级本来是为了解决这个问题，但这次升级一再被推迟。尽管我们不想离开以太坊网络，但我们意识到在目前的情况下很难实现我们的用例，因此我们开始寻找替代网络。分片区块链生态系统 Polkadot 成为了这个替代方案。我们首先使用 Substrate 框架进行实验，以迁移主要的 Robonomics 功能并部署自己的测试网络。在这个阶段结束时，我们已经在 Rococo 测试网络上部署了我们的平行链，并开始准备在 Kusama 网络上获得槽位</p><p class='timeline__descr'>继续研究 IoT 系统，我们已经确定了 Robonomics 可以为用户增加价值的主要功能 —— IoT 的去中心化云功能。这个想法形成了 <a class='timeline__link' href='https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42' target='_blank'>Robonomics Web Services (RWS)</a> 的基础. RWS 基础架构承担了典型中心云的所有功能，但没有全球可用性、安全性和隐私性的标准问题。此外，我们提出了平行链 IoT 订阅的想法，允许订阅者在不为每笔交易付费的情况下使用区块链网络。第一次 IoT 订阅的实验是 RWS 代币的发行，其所有者可以在每个区块中发送 1 笔交易。此外，我们开始采取第一步措施，为智能设备的控制开发自己的硬件套件（DAOS 概念。</p><p class='timeline__descr'>当然，对 Robonomics 在以太坊的支持并未停止。Robonomics 通信堆栈已经完成到  <a class='timeline__link' href='https://github.com/airalab/robonomics_comm/releases/tag/v1.0.0' target='_blank'> LTS 1.0.</a> 版本。XRT 代币已经在几个交易所（特别是 Uniswap DEX）上开始交易，并启动了流动性激励计划。</p><p class='timeline__descr'>团队积极开发与社区互动的方式。我们的第一个  <a class='timeline__link' href='https://blog.aira.life/the-robonomics-dapp-overview-acb003f51b9a' target='_blank'>dapp</a> 网站和 Robonomics Wiki 已经推出。为了更透明和方便的项目管理，我们开始使用  <a class='timeline__link' href='https://client.aragon.org/#/aira/' target='_blank'>Aragon DAO</a>. 我们在 2019 年举办了 <a class='timeline__link' href='https://www.youtube.com/playlist?list=PLkys45xOYDp0qEsCerAXdw9cofJZW3Fie' target='_blank'>Robonomics 冬季学校</a> 以便新人加入该项目.</p><p class='timeline__descr'>与志同道合的项目的合作也在继续。Robonomics 和 DAO IPCI 引入了一项收集和分析感知数据的服务 — <a class='timeline__link' href='https://www.youtube.com/watch?v=shqey3tmNUk' target='_blank'> RoSeMAN</a>.Robonomics 成为 <a class='timeline__link' href='https://merklebot.com/' target='_blank'>MerkleBot</a>  项目的基础，该项目正在开发一个智能租赁机器人设备的系统。</p>
   ko: <p class='timeline__descr'>이더리움의 기존 한계(특히, 확장성의 부족, 속도의 저하 및 거래 비용의 매우 높음)<a class='timeline__link' href='https://blog.aira.life/on-top-of-two-world-computers-research-questions-a83570f4c8b1' target='_blank'>가 명확하게 드러난 시기가</a> 있었습니다. ETH2.0 업그레이드는 상황을 해결하기 위해 예정되어 있었지만, 이 업그레이드는 반복적으로 지연되었습니다. 이더리움 네트워크를 떠나고 싶지 않았지만, 현재 상황에서는 우리의 유스케이스를 구현하기가 어려웠으며, 대안적인 네트워크를 찾기 시작했습니다. 샤딩 블록체인 생태계인 Polkadot이 이 대안이 되었습니다. 우리는 Substrate 프레임워크를 실험해 본 후, 주요 Robonomics 기능을 이전하고 자체 테스트넷을 배포하는 것부터 시작했습니다. 이 단계의 끝에서, 우리는 Rococo 테스트넷에 우리의 파라체인을 배포하고 Kusama 네트워크에서 슬롯을 얻기 위해 준비하기 시작했습니다.</p><p class='timeline__descr'>IoT 시스템을 계속해서 연구함에 따라 Robonomics의 주요 기능을 식별했습니다. 이 기능은 사용자에게 가치를 추가할 수 있는 분산형 IoT 클라우드 기능입니다. 이 아이디어는 <a class='timeline__link' href='https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42' target='_blank'>Robonomics 웹 서비스(RWS)의</a> 기반이 되었습니다. RWS 인프라는 전 세계적으로 이용 가능성, 보안 및 개인 정보 보호와 같은 일반적인 중앙 집중형 클라우드의 문제를 해결하면서 전형적인 기능을 수행합니다. 또한, 우리는 IoT 구독을 위한 파라체인 개념을 제안하여, 구독자가 각 거래마다 수수료를 지불하지 않고도 블록체인 네트워크를 이용할 수 있게 하였습니다. IoT 구독의 첫 번째 실험으로는 RWS 토큰의 발행이 이루어졌으며, 이는 소유자가 블록당 1개의 거래를 보낼 수 있도록 합니다. 또한, 우리는 스마트 디바이스 제어를 위한 하드웨어 키트(DAOS 개념)를 개발하기 위한 첫 번째 단계를 시작했습니다.</p><p class='timeline__descr'>물론, 이더리움에서의 로보노믹스 지원은 중단되지 않았습니다. 로보노믹스 통신 스택은 <a class='timeline__link' href='https://github.com/airalab/robonomics_comm/releases/tag/v1.0.0' target='_blank'> LTS 1.0.</a> 버전으로 최종화되었습니다. XRT 토큰은 여러 거래소 (특히 Uniswap DEX)에서 거래가 시작되었으며 유동성 인센티브 프로그램이 시작되었습니다.</p><p class='timeline__descr'>팀은 커뮤니티와 상호작용하는 방법을 적극적으로 개발했습니다. 우리의 <a class='timeline__link' href='https://blog.aira.life/the-robonomics-dapp-overview-acb003f51b9a' target='_blank'>dapp</a> 사이트와 Robonomics 위키의 첫 번째 버전이 출시되었습니다. 더 투명하고 편리한 프로젝트 관리를 위해, <a class='timeline__link' href='https://client.aragon.org/#/aira/' target='_blank'>Aragon DAO</a>를 사용하기 시작했습니다. 우리는 프로젝트 초보자를 위해  <a class='timeline__link' href='https://www.youtube.com/playlist?list=PLkys45xOYDp0qEsCerAXdw9cofJZW3Fie' target='_blank'> Robonomics 겨울 학교를</a> 개최했습니다.</p><p class='timeline__descr'>호흡이 맞는 프로젝트와의 협력도 계속되었습니다. Robonomics와 DAO IPCI는 감각 데이터를 수집하고 분석하기 위한 <a class='timeline__link' href='https://www.youtube.com/watch?v=shqey3tmNUk' target='_blank'> RoSeMAN</a> 서비스를 소개했습니다. Robonomics는 로봇 장비의 스마트 리스 시스템을 개발하는 <a class='timeline__link' href='https://merklebot.com/' target='_blank'>MerkleBot</a> 프로젝트의 기초가 되었습니다.</p>
   ja: <p class='timeline__descr'>イーサリアムの現存する制限（特に、スケーラビリティの低さ、トランザクションの低速性、非常に高いコスト）<a class='timeline__link' href='https://blog.aira.life/on-top-of-two-world-computers-research-questions-a83570f4c8b1' target='_blank'>が明確になってきた時期</a>が訪れました。ETH2.0へのアップグレードはこの状況を改善することを意図していましたが、このアップグレードは何度も延期されました。私たちはイーサリアムネットワークを離れたくありませんでしたが、現状では私たちのユースケースを実装することが困難であることに気づき、代替ネットワークを探し始めました。シャードブロックチェーンエコシステムのPolkadotがこの代替となりました。私たちは、Substrateフレームワークを実験し、Robonomicsの主要な機能を移行し、自社のテストネットを展開することから始めました。この段階の終わりまでに、私たちはRococoテストネット上にパラチェーンを展開し、Kusamaネットワークでスロットを取得する準備を始めました。</p><p class='timeline__descr'>IoTシステムの学習を続ける中で、Robonomicsの主要な機能であるIoTのための分散型クラウドの機能を特定し、ユーザーに付加価値を提供することができることがわかりました。このアイデアは<a class='timeline__link' href='https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42' target='_blank'>Robonomics Web Services (RWS)</a> の基礎となりました。 RWSのインフラストラクチャは、一般的な集中型クラウドのすべての機能を担当していますが、グローバルな可用性、セキュリティ、プライバシーの標準的な問題はありません。さらに、IoTのパラチェーンサブスクリプションのアイデアを考案し、サブスクリプション保有者が各トランザクションごとに料金を支払わずにブロックチェーンネットワークを利用できるようにしました。 IoTサブスクリプションの最初の実験は、RWSトークンの発行でした。これにより、所有者はブロックごとに1つのトランザクションを送信できます。さらに、スマートデバイスの制御用ハードウェアキット（DAOSコンセプト）の開発に向けて最初のステップを踏み出しました。</p><p class='timeline__descr'>もちろん、Ethereum上のRobonomicsのサポートは止まっていません。Robonomics通信スタックは<a class='timeline__link' href='https://github.com/airalab/robonomics_comm/releases/tag/v1.0.0' target='_blank'> LTS 1.0</a>の最終版になりました。XRTトークンはいくつかの取引所（特にUniswap DEX）で取引が開始され、流動性インセンティブプログラムが開始されました。</p><p class='timeline__descr'>チームは積極的にコミュニティとの交流方法を開発しています。 <a class='timeline__link' href='https://blog.aira.life/the-robonomics-dapp-overview-acb003f51b9a' target='_blank'>dapp</a> サイトとRobonomics Wikiの最初のバージョンがリリースされました。より透明性と便利なプロジェクト管理のために、<a class='timeline__link' href='https://client.aragon.org/#/aira/' target='_blank'>Aragon DAO</a>の使用を開始しました。また、プロジェクトへの新参者のために、<a class='timeline__link' href='https://www.youtube.com/playlist?list=PLkys45xOYDp0qEsCerAXdw9cofJZW3Fie' target='_blank'>Robonomics Winter School</a> を2019年に開催しました。</p><p class='timeline__descr'>志を同じくするプロジェクトとの協力も継続しました。RobonomicsとDAO IPCIは、感覚データの収集と分析のためのサービスである <a class='timeline__link' href='https://www.youtube.com/watch?v=shqey3tmNUk' target='_blank'> RoSeMAN</a>を紹介しました。Robonomicsは、ロボット装置のスマートリースシステムを開発している<a class='timeline__link' href='https://merklebot.com/' target='_blank'>MerkleBot</a> プロジェクトの基盤となりました。</p>
+  ar: <p class='timeline__descr'> (على وجه الخصوص ، ضعف قابلية التوسع والسرعة المنخفضة والتكلفة العالية جدًا <a class='timeline__link' href='https://blog.aira.life/on-top-of-two-world-computers-research-questions-a83570f4c8b1' target='_blank'>تبرز بوضوح</a> لقد حان وقت بدأت فيه القيود الحالية لـ Ethereum للمعاملات). كان من المفترض أن تؤدي الترقية إلى ETH2.0 إلى إصلاح الموقف ، ولكن تم تأخير هذه الترقية بشكل متكرر. بينما لم نرغب في مغادرة شبكة Ethereum ، أدركنا أنه في الوضع الحالي كان من الصعب تنفيذ حالات الاستخدام الخاصة بنا ، وبدأنا في البحث عن شبكة بديلة. أصبح النظام الإيكولوجي للبلوكشين المُقسَّم Polkadot هذا البديل. لقد بدأنا بتجربة إطار عمل الركيزة لترحيل ميزات Robonomics الرئيسية ونشر شبكة الاختبار الخاصة بنا. بحلول نهاية هذه المرحلة ، كنا قد نشرنا الباراشين الخاص بنا على شبكة اختبار Rococo وبدأنا في الاستعداد للحصول على فتحة على شبكة Kusama.</p><p class='timeline__descr'>بالاستمرار في دراسة أنظمة إنترنت الأشياء ، حددنا الوظيفة الرئيسية لـ Robonomics ، والتي يمكن أن تضيف قيمة للمستخدمين - وظيفة السحابة أخذت البنية الأساسية لـ RWS على عاتقها <a class='timeline__link' href='https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42' target='_blank'>Robonomics Web Services (RWS)</a>. اللامركزية لإنترنت الأشياء. شكلت هذه الفكرة أساس جميع وظائف السحابة المركزية النموذجية ، ولكن بدون المشكلات القياسية للتوافر العالمي والأمان والخصوصية. بالإضافة إلى ذلك ، توصلنا إلى فكرة اشتراكات Parachain IoT التي تسمح لأصحاب الاشتراك باستخدام شبكة blockchain دون الحاجة إلى دفع رسوم مقابل كل معاملة. كانت التجربة  الأولى لاشتراكات إنترنت الأشياء هي إصدار رمز RWS ، والذي يسمح لمالكه بإرسال معاملة واحدة لكل كتلة. بالإضافة إلى ذلك ، بدأنا في اتخاذ  الخطوات الأولى لتطوير مجموعة الأجهزة الخاصة بنا للتحكم في الأجهزة الذكية (مفهوم DAOS).</p><p class='timeline__descr'> .. وقد بدأ  <a class='timeline__link' href='https://github.com/airalab/robonomics_comm/releases/tag/v1.0.0' target='_blank'> LTS 1.0.</a>بالطبع ، لم يتوقف دعم Robonomics على Ethereum. تم الانتهاء من حزمة اتصالات Robonomics إلى الإصدار الرمز المميز XRT التداول في العديد من البورصات (على وجه الخصوص ، Uniswap DEX) ، وتم إطلاق برنامج تحفيز السيولة.</p><p class='timeline__descr'> الخاص بنا و Robonomics Wiki. من أجل إدارة مشروع  <a class='timeline__link' href='https://blog.aira.life/the-robonomics-dapp-overview-acb003f51b9a' target='_blank'>dapp</a> طور الفريق بنشاط طرقًا للتفاعل مع المجتمع. تم إطلاق الإصدار الأول من موقع  في عام 2019 للقادمين الجدد إلى <a class='timeline__link' href='https://www.youtube.com/playlist?list=PLkys45xOYDp0qEsCerAXdw9cofJZW3Fie' target='_blank'>Robonomics Winter School</a> استضفنا مدرسة. <a class='timeline__link' href='https://client.aragon.org/#/aira/' target='_blank'>Aragon DAO</a> أكثر شفافية وملاءمة ، بدأنا في استخدام  المشروع.</p><p class='timeline__descr'> أصبحت علم <a class='timeline__link' href='https://www.youtube.com/watch?v=shqey3tmNUk' target='_blank'>.RoSeMAN</a> كما استمر التعاون مع المشاريع المتوافقة. قدمت Robonomics و DAO IPCI خدمة لجمع وتحليل البيانات الحسية الروبوتات أساس مشروع <a class='timeline__link' href='https://merklebot.com/' target='_blank'>MerkleBot</a>  ، الذي يعمل على تطوير نظام للتأجير الذكي للمعدات الروبوتية.</p>
 
 - alias: The Rise of Robonomics Network
   en: The Rise of Robonomics Network
@@ -10969,6 +11019,7 @@
   zh: Robonomics 网络的崛起
   ko: 로보노믹스 네트워크의 부상
   ja: ロボノミクスネットワークの台頭
+  ar: "صعود شبكة Robonomics"
 
 - alias: "<p class='timeline__descr'>We understood that autonomous agents needed an environment that would ensure their reliable technical and economic operations. For several years we had been developing a protocol for creating a decentralized network of providers that help robotic agents provide their services. Tools for network maintenance and for the communication stack between Ethereum and ROS have been developed. In 2018 we published the <a class='timeline__link' href='https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf' target='_blank'>Robonomics Whitepaper</a> and the alpha version of Robonomics Network was launched on the Ethereum mainnet. Active preparations continued for the XRT token generation event (which eventually happened in the spring of 2019 due to the first crypto winter).</p><p class='timeline__descr'>From this period, Robonomics began to dynamically develop use cases related to Industry 4.0 — smart factories, smart cities and smart homes — and this brought our close attention to the IoT world. In search of innovation, the team has presented several large and unique R&D demos: a civil <a class='timeline__link' href='https://sensors.robonomics.network/' target='_blank'>sensor network</a>, a <a class='timeline__link' href='https://www.frontiersin.org/articles/10.3389/frobt.2020.00070' target='_blank'>water drone</a> for environmental monitoring (supported by a sensor systems manufacturer <a class='timeline__link' href='https://www.libelium.com/libeliumworld/success-stories/drones-sensors-and-blockchain-for-water-quality-control-in-the-volga-river-to-promote-trustworthy-data-and-transparency/' target='_blank'>Libelium</a>), a <a class='timeline__link' href='https://youtu.be/LjIB3-4kQ0A' target='_blank'>smart factory model</a>, a self-employed <a class='timeline__link' href='https://gaka-chu.online/' target='_blank'>robot artist Gaka-chu</a>, and a <a class='timeline__link' href='https://github.com/DistributedSky' target='_blank'>drone traffic management system</a>. Robonomics started cooperation with the DAO IPCI project on the environmental assets management using web3 technologies and IoT devices.</p>"
   en: "<p class='timeline__descr'>We understood that autonomous agents needed an environment that would ensure their reliable technical and economic operations. For several years we had been developing a protocol for creating a decentralized network of providers that help robotic agents provide their services. Tools for network maintenance and for the communication stack between Ethereum and ROS have been developed. In 2018 we published the <a class='timeline__link' href='https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf' target='_blank'>Robonomics Whitepaper</a> and the alpha version of Robonomics Network was launched on the Ethereum mainnet. Active preparations continued for the XRT token generation event (which eventually happened in the spring of 2019 due to the first crypto winter).</p><p class='timeline__descr'>From this period, Robonomics began to dynamically develop use cases related to Industry 4.0 — smart factories, smart cities and smart homes — and this brought our close attention to the IoT world. In search of innovation, the team has presented several large and unique R&D demos: a civil <a class='timeline__link' href='https://sensors.robonomics.network/' target='_blank'>sensor network</a>, a <a class='timeline__link' href='https://www.frontiersin.org/articles/10.3389/frobt.2020.00070' target='_blank'>water drone</a> for environmental monitoring (supported by a sensor systems manufacturer <a class='timeline__link' href='https://www.libelium.com/libeliumworld/success-stories/drones-sensors-and-blockchain-for-water-quality-control-in-the-volga-river-to-promote-trustworthy-data-and-transparency/' target='_blank'>Libelium</a>), a <a class='timeline__link' href='https://youtu.be/LjIB3-4kQ0A' target='_blank'>smart factory model</a>, a self-employed <a class='timeline__link' href='https://gaka-chu.online/' target='_blank'>robot artist Gaka-chu</a>, and a <a class='timeline__link' href='https://github.com/DistributedSky' target='_blank'>drone traffic management system</a>. Robonomics started cooperation with the DAO IPCI project on the environmental assets management using web3 technologies and IoT devices.</p>"
@@ -10983,6 +11034,7 @@
   zh: "<p class='timeline__descr'>我们理解自主代理需要一个能够保证其可靠技术和经济操作的环境。多年来，我们一直在开发一种协议，用于创建一个去中心化的服务提供商网络，帮助机器人代理提供其服务。开发了维护网络和以太坊与 ROS 之间通信堆栈的工具。在 2018 年，我们发布了 <a class='timeline__link' href='https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf' target='_blank'>Robonomics 白皮书</a>和 Robonomics 网络的 alpha 版，并在以太坊主网上启动了它。为 XRT 代币生成事件（最终在 2019 年春天发生，原因是第一次加密冬天）进行了积极的准备工作。</p><p class='timeline__descr'>从这个时期开始，Robonomics开始动态发展与工业4.0相关的用例，包括智能工厂、智慧城市和智慧家庭，这引起了我们对物联网世界的密切关注。为了寻求创新，团队提出了几个大型和独特的研发演示： 一个民用<a class='timeline__link' href='https://sensors.robonomics.network/' target='_blank'>传感器网络</a>, 一个环境监测<a class='timeline__link' href='https://www.frontiersin.org/articles/10.3389/frobt.2020.00070' target='_blank'>水无人机</a> 由传感器系统制造商 <a class='timeline__link' href='https://www.libelium.com/libeliumworld/success-stories/drones-sensors-and-blockchain-for-water-quality-control-in-the-volga-river-to-promote-trustworthy-data-and-transparency/' target='_blank'>Libelium</a>支持), 一个<a class='timeline__link' href='https://youtu.be/LjIB3-4kQ0A' target='_blank'>智能工厂模型</a>, 一个自营<a class='timeline__link' href='https://gaka-chu.online/' target='_blank'>机器人艺术家Gaka-chu</a>和 一个<a class='timeline__link' href='https://github.com/DistributedSky' target='_blank'>无人机交通管理系统/a>. Robonomics开始与DAO IPCI项目合作，使用Web3技术和物联网设备管理环境资产.</p>"
   ko: "<p class='timeline__descr'>자율 에이전트가 안정적인 기술 및 경제적 운영을 보장하는 환경이 필요하다는 것을 이해했습니다. 몇 년 동안, 우리는 로봇 에이전트가 서비스를 제공하는 데 도움이 되는 분산형 공급자 네트워크를 만드는 프로토콜을 개발해왔습니다. 네트워크 유지 보수 및 이더리움과 ROS 간의 통신 스택에 대한 도구가 개발되었습니다. 2018년, 우리는 <a class='timeline__link' href='https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf' target='_blank'>로보노믹스 화이트페이퍼와</a> 이더리움 메인넷에서 로보노믹스 네트워크 알파 버전을 출시했습니다. XRT 토큰 생성 이벤트를 위한 준비가 활발히 진행되었으며, 첫 번째 크립토 윈터로 인해 2019년 봄에 이벤트가 발생했습니다.</p><p class='timeline__descr'>이 시기부터, 로보노믹스는 4차 산업 혁명과 관련된 스마트 공장, 스마트 시티 및 스마트 홈과 관련된 사용 사례를 동적으로 개발하기 시작했으며, 이로 인해 우리는 IoT 세계에 높은 관심을 기울이게 되었습니다. 혁신을 추구하면서, 팀은 대형 및 독특한 R&D 데모 몇 가지를 제시했습니다. 시민 <a class='timeline__link' href='https://sensors.robonomics.network/' target='_blank'>센서 네트워크</a>, 환경 모니터링용 <a class='timeline__link' href='https://www.frontiersin.org/articles/10.3389/frobt.2020.00070' target='_blank'>물 드론</a>(센서 시스템 제조업체  <a class='timeline__link' href='https://www.libelium.com/libeliumworld/success-stories/drones-sensors-and-blockchain-for-water-quality-control-in-the-volga-river-to-promote-trustworthy-data-and-transparency/' target='_blank'>Libelium</a>의 지원), <a class='timeline__link' href='https://youtu.be/LjIB3-4kQ0A' target='_blank'>스마트 공장 모델</a>, 자율 <a class='timeline__link' href='https://gaka-chu.online/' target='_blank'>로봇 예술가 가카-추(Gaka-chu) </a>, 및 <a class='timeline__link' href='https://github.com/DistributedSky' target='_blank'>드론 교통 관리 시스템 등이 있습니다</a>. 로보노믹스는 웹3 기술과 IoT 장치를 활용한 환경 자산 관리에 대한 DAO IPCI 프로젝트와 협력을 시작했습니다.</p>"
   ja: "<p class='timeline__descr'>自律エージェントが信頼性のある技術的・経済的運用を確保するためには、環境が必要であることが理解されています。私たちは数年間、ロボットエージェントがサービスを提供するための分散型プロバイダーネットワークを作成するためのプロトコルを開発してきました。ネットワークのメンテナンスおよびEthereumとROSの間の通信スタックのためのツールが開発されました。2018年には<a class='timeline__link' href='https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf' target='_blank'>Robonomics Whitepaper</a>とRobonomics Networkのアルファ版がEthereumメインネット上で開始されました。XRTトークン生成イベントの活発な準備が続けられ、最初の暗号通貨の冬により、そのイベントは2019年春に実現しました。</p><p class='timeline__descr'>この時期から、RobonomicsはIndustry 4.0に関連するユースケース、スマートファクトリー、スマートシティ、スマートホームなど、ダイナミックに開発されるようになり、それに伴いIoT世界にも特に注目するようになりました。チームはイノベーションを追求し、いくつかの大規模でユニークなR&Dデモを発表しています. <a class='timeline__link' href='https://sensors.robonomics.network/' target='_blank'>民間センサーネットワーク</a>, 環境モニタリング<a class='timeline__link' href='https://www.frontiersin.org/articles/10.3389/frobt.2020.00070' target='_blank'>めの水中ドローン</a>（センサーシステムメーカーの<a class='timeline__link' href='https://www.libelium.com/libeliumworld/success-stories/drones-sensors-and-blockchain-for-water-quality-control-in-the-volga-river-to-promote-trustworthy-data-and-transparency/' target='_blank'>Libelium</a>がサポート, <a class='timeline__link' href='https://youtu.be/LjIB3-4kQ0A' target='_blank'>スマートファクトリーモデル</a>, 自律型<a class='timeline__link' href='https://gaka-chu.online/' target='_blank'>ロボットアーティスト「Gaka-chu」</a>, <a class='timeline__link' href='https://github.com/DistributedSky' target='_blank'>そしてドローン交通管理システムなどです</a>. Robonomicsは、web3技術とIoTデバイスを使用して環境資産管理を行うDAO IPCIプロジェクトと協力を始めました.</p>"
+  ar: "<p class='timeline__descr'>لقد فهمنا أن الوكلاء المستقلين يحتاجون إلى بيئة تضمن عملياتهم التقنية والاقتصادية الموثوقة. لعدة سنوات، كنا نطور بروتوكولًا لإنشاء شبكة لامركزية من مقدمي الخدمات التي تساعد الوكلاء الروبوتيين على تقديم خدماتهم. تم تطوير أدوات لصيانة الشبكة ومجموعة الاتصالات بين Ethereum و  وتم إطلاق نسخة alpha من Robonomics Network على شبكة  <a class='timeline__link' href='https://static.robonomics.network/docs/whitepaper/Robonomics-whitepaper-en.pdf' target='_blank'>Robonomics Whitepaper</a> ROS. في عام 2018، نشرنا REthereum الرئيسية. استمرت الاستعدادات النشطة لحدث توليد الرموز XRT (والذي حدث في النهاية في ربيع عام 2019 بسبب شتاء التشفير الأول).</p><p class='timeline__descr'> منذ هذه الفترة، بدأت Robonomics في تطوير حالات الاستخدام المتعلقة بالصناعة 4.0 بشكل ديناميكي - المصانع الذكية والمدن الذكية والمنازل الذكية - وقد جذب هذا انتباهنا الوثيق إلى عالم إنترنت الأشياء. بحثًا عن الابتكار، قدم الفريق العديد من عروض البحث والتطوير الكبيرة والفريدة من نوعها: شبكة استشعار مدنية، وطائرة بدون طيار للمراقبة البيئية (مدعومة بشركة تصنيع أنظمة الاستشعار Libelium)، ونموذج مصنع ذكي، وروبوت يعمل لحسابه الخاص فنان Gaka-chu ونظام إدارة حركة مرور الطائرات بدون طيار. بدأت Robonomics التعاون مع مشروع DAO IPCI حول إدارة الأصول البيئية باستخدام تقنيات web3 وأجهزة إنترنت الأشياء.</p>"
 
 - alias: Crypto Valley Conference 2018
   en: Crypto Valley Conference 2018
@@ -10997,6 +11049,7 @@
   zh: 加密谷会议2018
   ko: Crypto Valley Conference 2018
   ja: Crypto Valley Conference 2018
+  ar: Crypto Valley Conference 2018
 
 - alias: European Parliament workshop ‘The Economy of Robots’
   en: European Parliament workshop ‘The Economy of Robots
@@ -11010,7 +11063,8 @@
   az: Avropa Parlamentində “Robotların İqtisadiyyatı” seminarı
   zh: 欧洲议会研讨会“机器人经济
   ko: 유럽 의회 워크샵 ‘로봇의 경제’
-  ja: 欧州議会ワークショップ「ロボットの経済」
+  ja: 欧州議会ワークショップ「ロボットの経済」a
+  ar: ورشة عمل البرلمان الأوروبي «اقتصاد الروبوتات»
 
 - alias: Consensus 2018
   en: Consensus 2018
@@ -11025,6 +11079,7 @@
   zh: 共识2018
   ko: Consensus 2018
   ja: Consensus 2018
+  ar: Consensus 2018
 
 - alias: Symposium on Blockchain for Robotic Systems at MIT Media Lab
   en: Symposium on Blockchain for Robotic Systems at MIT Media Lab
@@ -11039,6 +11094,7 @@
   zh: MIT媒体实验室区块链机器人系统研讨会
   ko: MIT 미디어랩에서 로봇 시스템용 블록체인 심포지엄
   ja: MITメディアラボでのロボットシステムのためのブロックチェーンに関するシンポジウム
+  ar: ندوة حول Blockchain للأنظمة الروبوتية في MIT Media Lab
 
 - alias: Robonomics-2018 summer school hosted by Robonomics team.
   en: Robonomics-2018 summer school hosted by Robonomics team
@@ -11052,6 +11108,7 @@
   zh: Robonomics-2018夏季学校由Robonomics团队主办
   ko: 로보노믹스 팀이 주최하는 로보노믹스-2018 서머 스쿨
   ja: ロボノミクスチーム主催のRobonomics-2018サマースクール
+  ar: استضافت مدرسة Robonomics-2018 الصيفية من قبل فريق Robonomics
 
 - alias: Bringing Together Web3 Techs and Robotic Frameworks
   en: Bringing Together Web3 Techs and Robotic Frameworks
@@ -11066,6 +11123,7 @@
   zh: 将Web3技术和机器人框架结合在一起
   ko: Web3 기술과 로봇 프레임워크를 결합하기
   ja: Web3テクノロジーとロボットフレームワークを結びつける
+  ar: الجمع بين التكنولوجيا Web3 والأطر الروبوتية
 
 - alias: <p class='timeline__descr'>This was a period of active R&D during which we identified a range of tasks, in which p2p technologies have capabilities that were not previously available for robotics. Combining Ethereum computer, IPFS file storage and Robot Operating System, we realized that any device could potentially become an <b>autonomous intelligent robot agent</b>. In turn, this opened the way for us to the concepts of Robot-as-a-Service and the robot economy.</p><p class='timeline__descr'>Our publications in scientific journals of this period are available in the <a class='timeline__link' href='/papers/' target='_blank'>Papers section</a>.</p><p class='timeline__descr'>We have collected all R&D projects over the years in the <a class='timeline__link' href='https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi' target='_blank'>a handy book</a>.</p>
   en: <p class='timeline__descr'>This was a period of active R&D during which we identified a range of tasks, in which p2p technologies have capabilities that were not previously available for robotics. Combining Ethereum computer, IPFS file storage and Robot Operating System, we realized that any device could potentially become an <b>autonomous intelligent robot agent</b>. In turn, this opened the way for us to the concepts of Robot-as-a-Service and the robot economy.</p><p class='timeline__descr'>Our publications in scientific journals of this period are available in the <a class='timeline__link' href='/papers/' target='_blank'>Papers section</a>.</p><p class='timeline__descr'>We have collected all R&D projects over the years in the <a class='timeline__link' href='https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi' target='_blank'>a handy book</a>.</p>
@@ -11080,6 +11138,7 @@
   zh: <p class='timeline__descr'>这是一个积极研发的时期，我们确定了许多任务，其中P2P技术具有之前机器人不具备的能力。结合以太坊计算机、IPFS文件存储和机器人操作系统（ROS），我们意识到任何设备都有可能成为<b>自主智能机器人代理</b>. 进而，这为我们开辟了机器人即服务和机器人经济的概念。</p><p class='timeline__descr'>我们在这个时期在科学期刊上发表的文章可在 <a class='timeline__link' href='/papers/' target='_blank'>Papers</a>部分中找到.</p><p class='timeline__descr'>多年来，我们把所有研发项目收集在 <a class='timeline__link' href='https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi' target='_blank'>一本方便的书中</a>.</p>
   ko: <p class='timeline__descr'>이는 우리가 이전에 로봇 기술에서 이용되지 않았던 p2p 기술의 능력을 확인한 활발한 R&D 시기였습니다. 이더리움 컴퓨터, IPFS 파일 저장 및 로봇 운영 체제 (ROS)를 결합하여 어떤 기기든 <b>자율적인 지능 로봇 에이전트가</b> 될 수 있다는 것을 깨달았습니다. 이를 통해 우리는 Robot-as-a-Service 및 로봇 경제의 개념으로 나아갈 수 있게 되었습니다.</p><p class='timeline__descr'>이 기간의 과학 저널에서의 출판물은 <a class='timeline__link' href='/papers/' target='_blank'>논문 섹션</a>에서 확인할 수 있습니다.</p><p class='timeline__descr'>우리는 지난 몇 년간 모든 R&D 프로젝트를 <a class='timeline__link' href='https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi' target='_blank'> 편리한 책에 </a>수집했습니다.</p>
   ja: <p class='timeline__descr'>これは活発なR&D期間であり、p2p技術がロボットには以前利用できなかった機能を持つタスクの範囲を特定しました。Ethereumコンピュータ、IPFSファイルストレージ、Robot Operating System（ROS）を組み合わせることで、任意のデバイ<b>スが自律型知能ロボットエージェント</b>. になる可能性があることがわかりました。これにより、Robot-as-a-Serviceのコンセプトとロボット経済の道が開かれました.</p><p class='timeline__descr'>当時の科学ジャーナルに掲載された当社の出版物は、<a class='timeline__link' href='/papers/' target='_blank'>ペーパーセクショ</a>ンで入手可能です。</p><p class='timeline__descr'>私たちは、多年にわたって行ってきたすべての研究開発プロジェクト <a class='timeline__link' href='https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi' target='_blank'>を便利な書籍にま</a>とめました。</p>
+  ar: <p class='timeline__descr'>كانت هذه فترة بحث وتطوير نشط حددنا خلالها مجموعة من المهام، حيث تتمتع تقنيات p2p بقدرات لم تكن متاحة من قبل للروبوتات. بدمج كمبيوتر في المقابل، فتح <b> يصبح وكيل روبوت ذكي مستقل</b>. Ethereum وتخزين ملفات IPFS ونظام تشغيل الروبوت (ROS)، أدركنا أن أي جهاز يمكن أن هذا الطريق أمامنا لمفاهيم الروبوت كخدمة واقتصاد الروبوت.</p><p class='timeline__descr'> <a class='timeline__link' href='/papers/' target='_blank'> متاحة في قسم الأوراق</a> منشوراتنا في المجلات العلمية لهذه الفترة</p><p class='timeline__descr'>الاستخدام <a class='timeline__link' href='https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi' target='_blank'> كتاب سه</a> لقد جمعنا جميع مشاريع البحث والتطوير على مر السنين في</p>
 
 - alias: Playing with Human-Machine Interaction through Ethereum
   en: Playing with Human-Machine Interaction through Ethereum
@@ -11094,6 +11153,7 @@
   zh: 通过以太坊玩人机交互
   ko: 이더리움을 통한 인간-기계 상호작용으로 놀아보기
   ja: イーサリアムを通じた人間と機械の相互作用の操作
+  ar: اللعب مع التفاعل بين الإنسان والآلة من خلال Ethereum
 
 - alias: <p class='timeline__descr'>It all started with an idea that dawned on the founders when Ethereum had only just launched its mainnet. What if the robot performs a task for a client for cryptocurrency, and its logic is controlled by a smart contract?</p><p class='timeline__descr'>To test the idea, we made a demo in which a drone controlled by an Ethereum computer was launched to achieve the specified GPS coordinates after the user completed a payment transaction.</p><p class='timeline__descr'>The demo is available on <a class='timeline__link' href='https://youtu.be/V_3rcP2Duv0' target='_blank'>YouTube</a>.</p>
   en: <p class='timeline__descr'>It all started with an idea that dawned on the founders when Ethereum had only just launched its mainnet. What if the robot performs a task for a client for cryptocurrency, and its logic is controlled by a smart contract?</p><p class='timeline__descr'>To test the idea, we made a demo in which a drone controlled by an Ethereum computer was launched to achieve the specified GPS coordinates after the user completed a payment transaction.</p><p class='timeline__descr'>The demo is available on <a class='timeline__link' href='https://youtu.be/V_3rcP2Duv0' target='_blank'>YouTube</a>.</p>
@@ -11108,6 +11168,7 @@
   zh: <p class='timeline__descr'>一切始于创始人在以太坊发布其主网络时的一个想法。如果机器人为客户以加密货币执行任务，其逻辑由智能合约控制，会是什么情况</p><p class='timeline__descr'>为了测试这个想法，我们做了一个演示，在用户完成付款交易后，启动了一架由以太坊计算机控制的无人机，使其达到指定的GPS坐标</p><p class='timeline__descr'>该演示可在<a class='timeline__link' href='https://youtu.be/V_3rcP2Duv0' target='_blank'>微博上</a>观看.</p>
   ko: <p class='timeline__descr'>모든 것은 이더리움이 본격적인 네트워크를 시작한 때, 창업자들에게 떠오른 아이디어에서 시작되었습니다. 만약 로봇이 암호화폐를 받고 스마트 계약으로 제어되는 로직으로 고객의 작업을 수행한다면 어떨까요?</p><p class='timeline__descr'>아이디어를 테스트하기 위해 이더리움 컴퓨터로 제어되는 드론이 사용자가 결제 거래를 완료한 후 지정된 GPS 좌표를 달성하도록 발사되는 데모를 만들었습니다.</p><p class='timeline__descr'>데모는 <a class='timeline__link' href='https://youtu.be/V_3rcP2Duv0' target='_blank'>YouTube</a>에서 이용 가능합니다.</p>
   ja: <p class='timeline__descr'>すべては、Ethereumがまだメインネットを開始したばかりの時に、創設者たちに思い浮かんだアイデアから始まりました。ロボットが暗号通貨でクライアントのタスクを実行し、そのロジックはスマートコントラクトによって制御されるとしたらどうでしょうか</p><p class='timeline__descr'>アイデアをテストするために、私たちはEthereumコンピュータによって制御されるドローンを使用して、ユーザーが支払いトランザクションを完了した後、指定されたGPS座標を達成するデモを作成しました。</p><p class='timeline__descr'>デモは<a class='timeline__link' href='https://youtu.be/V_3rcP2Duv0' target='_blank'>YouTube</a>で利用可能です.</p>
+  ar: <p class='timeline__descr'>بدأ كل شيء بفكرة ظهرت على المؤسسين عندما أطلقت Ethereum للتو شبكتها الرئيسية. ماذا لو كان الروبوت يؤدي مهمة لعميل للعملة المشفرة، ويتم التحكم في منطقه من خلال عقد ذكي ؟</p><p class='timeline__descr'>لاختبار الفكرة، قمنا بعمل عرض توضيحي تم فيه إطلاق طائرة بدون طيار يتحكم فيها جهاز كمبيوتر Ethereum لتحقيق إحداثيات GPS المحددة بعد أن أكمل المستخدم معاملة الدفع.</p><p class='timeline__descr'>العرض التوضيحي متاح على <a class='timeline__link' href='https://youtu.be/V_3rcP2Duv0' target='_blank'>YouTube</a>.</p>
   
 
 - alias: Robonomics logos and usage

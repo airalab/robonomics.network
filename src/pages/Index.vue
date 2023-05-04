@@ -10,7 +10,7 @@
 
         <div class="layout layout__content">
 
-          <h1>
+          <h1 dir="ltr">
             <div class="typing-static">You are in Robonomics network</div>
             <div class="typing-1">Welcome to Robonomics network</div>
             <div class="typing-2">Open-source solution for IoT</div>
