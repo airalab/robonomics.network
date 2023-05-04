@@ -59,3 +59,10 @@ img {
 .dark-theme .theme-support-dark {
   display: initial !important;
 }
+
+/* arabic */
+
+html[lang="ar"] h1, html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] h4,html[lang="ar"] h5,html[lang="ar"] h6,html[lang="ar"] p,html[lang="ar"] a,html[lang="ar"] span {
+  direction: rtl;
+  unicode-bidi: embed
+}

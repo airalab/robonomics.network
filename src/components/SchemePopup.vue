@@ -1,5 +1,5 @@
 <template>
-    <div class="popup__content">
+    <div class="popup__content" >
       <h3>{{ $ts(title) }}</h3>
       <p class="hyphens">
         {{ $ts(description) }}

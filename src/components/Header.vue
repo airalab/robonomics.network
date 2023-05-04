@@ -1,7 +1,7 @@
 <template>
       <header class="header">
 
-        <div class="header-content">
+        <div class="header-content" dir="ltr">
           <div class="header-logo">
             <g-link to="/">
               <g-image class="hideMobile" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo-solid.svg"/>
@@ -9,7 +9,7 @@
             </g-link>
           </div>
 
-          <div class="header-side">
+          <div class="header-side" dir="ltr">
             <languageSwitcher/>
             <ThemeSwitcher/>
             <HeaderNav/>
