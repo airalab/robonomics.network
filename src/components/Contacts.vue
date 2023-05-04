@@ -1,5 +1,5 @@
 <template>
-  <section class="section section__solid contacts">
+  <section class="section section__solid contacts" dir="ltr">
     <!-- <hr/> -->
     <div class="contacts__container">
       <!-- <h2 class="contacts__title">

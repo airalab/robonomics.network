@@ -1,8 +1,8 @@
 <template>
-  <div class="scheme">
+  <div class="scheme" >
     <div class="scheme-item animate" v-in-viewport.once>
       <div>
-        <div class="scheme-info" tabindex="0">
+        <div class="scheme-info" tabindex="0" >
 
           <!-- popup info -->
           <details>
