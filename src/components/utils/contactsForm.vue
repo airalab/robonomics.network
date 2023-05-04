@@ -63,10 +63,12 @@ export default {
       }
 
 
-      this.interval = setInterval(() => {
-        this.result = this.$response
-        console.log(this.$response)
-      }, 1000)
+      if(this.data_email.includes('@')) {
+        this.interval = setInterval(() => {
+          this.result = this.$response
+          console.log(this.$response)
+        }, 1000)
+      }
 
       if (this.$response === 'success' || this.$response === 'error') {
         clearInterval(this.interval)
