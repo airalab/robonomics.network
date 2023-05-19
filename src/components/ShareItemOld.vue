@@ -1,6 +1,6 @@
 <template>
 
-  <g-link :to="asset.options[selected].link" class="share__link oldy oldy__link" :class="{ 'no-image': !asset.img }" v-on:click="selectInButton">
+  <g-link direction="ltr" :to="asset.options[selected].link" class="share__link oldy oldy__link" :class="{ 'no-image': !asset.img }" v-on:click="selectInButton">
       <div class="share__col share__img" v-if="asset.img">
         <g-image :src="require('!!assets-loader!~/assets/images/'+asset.img)"/>
       </div>
@@ -47,6 +47,7 @@
       color: var(--color-text) !important;
       text-align: left;
       padding: 1rem;
+      direction: ltr;
     }
       .share__link:last-child { margin-bottom: 0; }
       .share__link:after { display: none !important; }

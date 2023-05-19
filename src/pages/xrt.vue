@@ -18,7 +18,7 @@
                             <span class="token__big-text">XRT</span> {{ $ts('is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.') }}
                         </p>
     
-                        <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph">
+                        <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph" dir="ltr">
                             <div class="token__graph-arrow">
                                 <span>{{ $ts('Token distribution') }}</span>
                                 <ArrowIcon />
@@ -284,6 +284,7 @@ query {
         width: 100%;
         align-items: center;
         /* justify-content: end; */
+        direction: ltr;
     }
 
     .graph-img {
@@ -427,6 +428,7 @@ query {
         padding-left: calc(var(--space) * 2);
         background-color: var(--color-blue);
         border-radius: 100%;
+        direction: ltr;
     }
 
     .nova__img {
@@ -439,6 +441,7 @@ query {
         color: #fff;
         font-size: calc(var(--base-font-size) * 0.9);
         font-style: italic;
+        direction: ltr;
     }
 
     .xrt-ethereum .oldy,
