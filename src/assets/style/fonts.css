@@ -45,7 +45,7 @@
 
 @font-face {
   font-family: 'Roboto Mono';
-  src: url('../fonts/robotomonomono-light-webfont.woff2') format('woff2');
+  src: url('../fonts/robotomono-light-webfont.woff2') format('woff2');
   src: url('../fonts/robotomono-light-webfont.woff') format('woff');
   font-weight: 300;
   font-display: swap;
