@@ -7,7 +7,7 @@ regular:
     link: '/wallpapers/regular/robot-and-apple-artboard.jpg'
   - id: 2
     text: 'Robot and cosmonaut artboard'
-    link: '/wallpapers/regular/robot-and-electrics-sheep-artboard.jpg'
+    link: '/wallpapers/regular/robot-and-cosmonaut-artboard.jpg'
   - id: 3
     text: 'Robot and cat artboard'
     link: '/wallpapers/regular/robot-and-cat-artboard.jpg'
@@ -30,7 +30,7 @@ phone:
     link: '/wallpapers/phone/robot-and-apple-artboard.jpg'
   - id: 2
     text: 'Robot and cosmonaut artboard'
-    link: '/wallpapers/phone/robot-and-electrics-sheep-artboard.jpg'
+    link: '/wallpapers/phone/robot-and-cosmonaut-artboard.jpg'
   - id: 3
     text: 'Robot and cat artboard'
     link: '/wallpapers/phone/robot-and-cat-artboard.jpg'
