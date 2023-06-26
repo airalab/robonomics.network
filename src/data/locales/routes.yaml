@@ -61,3 +61,7 @@
 - path: '/nft/'
   component: './src/pages/nft.vue'
   typename: 'page'
+
+- path: '/wallpapers/'
+  component: './src/pages/wallpapers.vue'
+  typename: 'page'
