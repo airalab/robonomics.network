@@ -172,7 +172,7 @@
           <h2>{{$ts('Learn with Robonomics')}}</h2>
         </div>
         <section class="index-academy layout layout__content grid-3 animate-inside" v-in-viewport.once>
-          <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/introduction-course/">
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/introduction-course/overview">
             <g-image aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/academy-1.png" />
@@ -181,7 +181,7 @@
             <p>{{$ts('Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.')}}</p>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/boston-dynamics-course/">
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/boston-dynamics-spot/overview">
             <g-image aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
             <div class="img-back spot">
               <g-image aria-hidden="true" src="~/assets/images/academy-2.png" />
@@ -190,7 +190,7 @@
             <p>{{$ts('We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.')}}</p>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="https://robonomics.academy/online-courses/smart-home-course/">
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/smart-home-course/overview/">
             <g-image aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/academy-3.png" />
