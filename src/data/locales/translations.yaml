@@ -1448,7 +1448,8 @@
   zh: 去中心化应用程序
   ar: التطبيق اللامركزي
 - alias: Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.
-  en: Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.
+  en: Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These technologies
+ allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.
   ru: Децентрализованное приложение (dapp) работает в рамках Blockchain. Оно имеет открытый исходный код, а его данные хранятся на IPFS и Github. Эти технологии позволяют приложению быть безопасным и прозрачным одновременно. Наши разработчики работают как над созданием приложения Robonomics, так и над библиотеками, которые вы можете использовать при создании своего собственного dapp.
   uk: Децентралізований додаток (dapp) працює в рамках Blockchain. Він має відкритий вихідний код, а його дані розміщуються на IPFS та Github. Ці технології дозволяють додатку бути одночасно безпечним і прозорим. Наші розробники працюють як над розробкою додатку Robonomics, так і над бібліотеками, які ви можете використовувати при створенні власного dapp.
   tr: Merkezi olmayan uygulama (dapp) Blockchain içinde çalışır. Açık kaynak kodludur ve verileri IPFS ve Github üzerinde sunulur. Bu teknolojiler uygulamanın aynı zamanda güvenli ve şeffaf olmasını sağlar. Geliştiricilerimiz hem Robonomics'in uygulamasının geliştirilmesi hem de kendi dapp'ınızı oluştururken kullanabileceğiniz kütüphaneler üzerinde çalışmaktadır.
@@ -8413,7 +8414,7 @@
   de: Jetzt haben wir bereits intelligente Verträge, DeFi-Märkte und eine dezentrale Infrastruktur für den Austausch von Nachrichten zwischen Robotern, die der Menschheit die Möglichkeit eröffnen, einen vollständig automatisierten Teil der menschlichen Wirtschaft zu schaffen - die Roboterwirtschaft.
 - alias: One of the great opportunity to build the economy of robots is
   az: Robotların iqtisadiyyatını qurmaq üçün əla fürsətlərdən biri
-  en: One of the great opportunity to build the economy of robots is
+  en: One of the great opportunities to build the economy of robots is
   es: Una de las grandes oportunidades para construir la economía de los robots es
     la tecnología
   fr: L’une des grandes opportunités pour construire l’économie des robots est la
