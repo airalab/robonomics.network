@@ -379,3 +379,14 @@
 .link-btn:hover {
   background-color: var(--color-blue-dark-mid)
 }
+
+/* tracker */
+
+
+.my-tracker.user-tracker {
+  background-color: var(--color-blue);
+}
+
+.my-tracker .user-tracker__form  {
+  padding-left: 0;
+}
