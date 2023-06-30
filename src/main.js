@@ -21,6 +21,10 @@ import Contacts from '~/components/Contacts.vue'
 import inViewportDirective from 'vue-in-viewport-directive'
 Vue.directive('in-viewport', inViewportDirective)
 
+// tracker component
+import userTracker from 'vue-client-actions-tracker-component'
+import '../node_modules/vue-client-actions-tracker-component/dist/vue-client-actions-tracker-component.css'
+
 export default function (Vue, { router, head, isClient, appOptions }) {
   // head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
 
@@ -66,5 +70,9 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
   Vue.component('layout', Default)
   Vue.component('Contacts', Contacts)
+
+  if(isClient) {
+    Vue.use(userTracker);
+  }
   
 }
