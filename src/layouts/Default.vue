@@ -20,6 +20,16 @@
         <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
       </div>
 
+
+      <client-only>
+
+        <userTracker
+          classCustom="my-tracker"
+          @activateTracker="activateTracker"
+        />
+
+      </client-only>
+
     </div>
   
   </transition>
@@ -200,6 +210,13 @@ export default {
       // current = current.replace(/\/$/,'')
       // return current != p
       return current.includes(p)
+    },
+    activateTracker() {
+      if(this.$matomo) {
+          this.$matomo && this.$matomo.setConsentGiven();
+          this.$matomo && this.$matomo.enableLinkTracking();
+          this.$matomo && this.$matomo.trackPageView();
+      }
     }
   },
 
