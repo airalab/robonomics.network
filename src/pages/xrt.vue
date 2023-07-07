@@ -223,7 +223,7 @@ query {
 
     .top-part {
         overflow: hidden;
-        padding-bottom: calc(var(--space) * 4);
+        padding-bottom: calc(var(--space) * 2);
         margin: 0;
     }
 
@@ -293,6 +293,7 @@ query {
 
     .token-additional-info {
         margin-top: var(--space);
+        margin-bottom: var(--space);
         padding-bottom: calc(var(--space) * 1.5);
         background-color: var(--color-light);
         color: var(--color-dark);
