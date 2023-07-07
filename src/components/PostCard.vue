@@ -3,10 +3,13 @@
     <div class="post-card__header">
       <g-image :alt="post.title" v-if="post.cover_image" class="post-card__image" :src="post.cover_image"/>
     </div>
-    <div class="post-card__content">
+    <div class="post-card__content" v-if="!isCase">
       <h4 class="post-card__title" v-html="post.title" />
       <p class="post-card__description" v-html="post.description" />
       <span v-if="locale" class="post-card__locale">{{locale}}</span>
+    </div>
+    <div class="post-card__content--case" v-else> 
+      case here
     </div>
     <g-link class="post-card__link" :to="post.path">Link</g-link>
   </div>
@@ -17,7 +20,7 @@
 <script>
 
 export default {
-  props: ['post', 'locale'],
+  props: ['post', 'locale', 'isCase'],
 }
 </script>
 

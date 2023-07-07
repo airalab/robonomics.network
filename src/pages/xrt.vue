@@ -13,7 +13,7 @@
                     <h1><span>{{ $ts('Robonomics tokenomics') }}</span></h1>
                 </div>
                 <div class="layout token__top">
-                    <div class="grid-2 token__intro">
+                    <div class="grid-2 token__intro ">
                         <p>
                             <span class="token__big-text">XRT</span> {{ $ts('is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.') }}
                         </p>
@@ -29,7 +29,52 @@
                         </g-link>
 
                     </div>
-                    <p class="text-abstract token__text-abstract token__bottom-text">{{$ts('The task of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.')}}</p>
+                </div>
+            </section>
+
+            <section class="xrt-bridge">
+                <div class="layout grid-2">
+                    <div class="xrt-bridge__imgs">
+                        <g-image src="~/assets/images/xrt-bridge-img.png" alt="xrt bridge"/>
+                    </div>
+                    <div class="xrt-bridge__text token__intro">
+                        <p > <span class="token__big-text">{{ $ts('The task') }}</span> {{ $ts(' of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.') }}</p>
+                        <g-link to="https://dapp.robonomics.network/" class=" xrt-bridge__btn link-btn">{{ $ts('Try our Dapp') }}</g-link>
+                    </div>
+                </div>
+            </section>
+
+            <section class="token-additional-info"> 
+                <div class="layout token__top">
+                    <p class="token-additional-info__txt"> <span class="token__big-text">{{ $ts('In addition ') }}</span> you can operate XRT within blockchains using tools provided by different independent teams in Polkadot (Kusama) and Ethereum communities.</p>
+
+                    <div class="token-additional-info__wrapper grid-2">
+                        <div class="token-additional-info__kusama"> 
+                            <p>
+                                Within the Kusama network, you have the capability use <g-link class="link-light" to="https://wiki.polkadot.network/docs/learn-xcm-transport">XCMP</g-link> communication between the Robonomics parachain and other parachains using various decentralized applications (dApps):   
+                            </p>
+                            <ul class="list-simple">
+                                <li class="bold-text">
+                                    <g-link to="https://apps.moonbeam.network/moonriver/xcm">Moonriver</g-link>
+                                </li>
+                                <li class="bold-text">
+                                    <g-link to="https://app.basilisk.cloud/">Basilisk</g-link>
+                                </li>
+                                <li class="bold-text">
+                                    <g-link to="https://novawallet.io">Nova Wallet</g-link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="token-additional-info__ethereum"> 
+                            <p>
+                                Within the Ethereum network you can use decentralized application powered by the <g-link  to="https://app.uniswap.org/"> Uniswap </g-link> Protocol.
+                            </p>
+                            <div class="token-additional-info__attention">
+                                <h3>!Attention please</h3>
+                                <p>If you have been utilizing The Multichain service for bridge transactions, please refrain from using it at the moment, as it has been <g-link class="link-light" to="https://twitter.com/MultichainOrg/status/1677180114227056641">announced</g-link> on the official Twitter of The Multichain.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -39,27 +84,6 @@
                 </div>
             </section>
 
-            <section class="xrt-bridge">
-                <div class="layout">
-                    <div class="xrt-bridge__text">
-                        <h2 class="xrt-bridge__title">{{ $ts('Crosschain Bridge') }}</h2>
-                        <g-link to="https://app.multichain.org/#/router" class=" xrt-bridge__btn link-btn">{{ $ts('Try in browser') }}</g-link>
-                    </div>
-
-                    <div class="xrt-bridge__imgs">
-                        <g-image class="xrt-bridge__img-2" src="~/assets/images/xrt-eth.png" alt="xrt ethereum"/>
-                        <g-image class="xrt-bridge__img-1" src="~/assets/images/xrt-bridge-1.png" alt="xrt bridge"/>
-                        <g-image class="xrt-bridge__img-3" src="~/assets/images/xrt-bridge-2.png" alt="xrt bridge"/>
-                    </div>
-                </div>
-
-                <g-link to="https://app.multichain.org/#/router" class="nova">
-                    <div class="nova__img">
-                        <g-image src="~/assets/images/xrt-nova.png" alt="nove logo"/>
-                    </div>
-                    <p>Nova Wallet application supports crosschain XRT transfers</p>
-                </g-link>
-            </section>
         </section>
 
         <section class="layout layout__text xrt-ethereum">
@@ -267,6 +291,77 @@ query {
         line-height: 0;
     }
 
+    .token-additional-info {
+        margin-top: var(--space);
+        padding-bottom: calc(var(--space) * 1.5);
+        background-color: var(--color-light);
+        color: var(--color-dark);
+    }
+
+    .token-additional-info__wrapper {
+        gap: 2rem;
+    }
+
+    .token-additional-info p {
+        font-weight: 300;
+    }
+
+    .token-additional-info__txt {
+        font-size: 132%;
+    }
+
+    .token-additional-info .token__big-text {
+        font-weight: 500;
+    }
+
+    .token-additional-info__kusama {
+        position: relative;
+        padding-left: calc(var(--space) * 3);
+    }
+
+    .token-additional-info__kusama::after {
+        content: url("data:image/svg+xml,%3Csvg width='70' height='43' viewBox='0 0 70 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_408_10987)'%3E%3Cpath d='M65.8559 2.29637C64.587 1.09159 62.9888 0.299189 61.262 0.0323589C59.1097 -0.250642 56.9332 1.18862 55.4555 2.15082C53.9777 3.11303 51.207 5.92687 50.0184 6.73544C48.8297 7.54402 45.9064 8.35259 41.184 11.2554C36.4617 14.1582 17.757 26.1817 17.757 26.1817L22.6159 26.2302L0.947682 37.526H3.10808L0 39.9517C1.71868 40.356 3.5257 40.0891 5.05966 39.2078V39.8789C5.05966 39.8789 30.8318 29.6504 35.8352 32.3026L32.8155 33.1758C33.0805 33.1758 37.9876 33.4912 37.9876 33.4912C38.2285 35.5611 39.369 37.4047 41.1037 38.5367C44.0592 40.5015 44.1074 41.5688 44.1074 41.5688C44.1074 41.5688 42.5815 42.1995 42.5815 43C45.296 42.1429 48.2033 42.1429 50.9179 43C50.9179 43 50.7572 42.1914 48.7012 41.5688C46.6452 40.9462 44.6374 38.7469 43.6335 37.526C42.3967 35.9412 42.0916 33.8146 42.8304 31.9468C43.5372 30.1032 46.0429 29.0764 51.1106 26.4242C57.126 23.2951 58.4913 20.9502 59.3346 19.1471C60.1778 17.3439 61.4468 13.7296 62.1455 12.0316C62.7318 10.4468 63.7276 9.04797 65.0367 7.98873C66.6349 7.12356 68.2974 6.37967 70 5.75707C70 5.75707 66.8598 3.09686 65.8559 2.29637Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_408_10987'%3E%3Crect width='70' height='43' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .token-additional-info__kusama p {
+        font-weight: 400;
+    }
+
+    .token-additional-info__ethereum > p {
+        position: relative;
+        padding-left: calc(var(--space) * 2);
+        font-weight: 400;
+        margin-left: auto;
+    }
+
+    .token-additional-info__ethereum > p::after {
+        content: url("data:image/svg+xml,%3Csvg width='33' height='56' viewBox='0 0 33 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_408_10989)'%3E%3Cpath d='M0.0644531 28.4121L16.3187 38.5089L0.0644531 28.4121Z' fill='%23010101' stroke='%231717B0' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M32.5726 28.4121L16.3184 38.5089L32.5726 28.4121Z' fill='%23010101' stroke='%231717B0' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.51669 20.6471L0.0644531 28.4119L16.3187 20.6471V0.067749L4.51669 20.6471Z' fill='%23CFC5FB' stroke='%231717B0' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.3187 20.6473L0.0644531 28.4121L16.3187 38.5089V20.6473Z' fill='%2381A8F8' stroke='%231717B0' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M28.1203 20.6471L16.3184 0.067749V20.6471L32.5726 28.4119L28.1203 20.6471Z' fill='%23A6FCF6' stroke='%231717B0' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.3184 20.6473V38.5089L32.5726 28.4121L16.3184 20.6473Z' fill='%23CEB0FA' stroke='%231717B0' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M0.0644531 31.6514L16.3187 55.7226V41.7427L0.0644531 31.6514Z' fill='%2381A8F8' stroke='%231717B0' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.3184 41.7427V55.7226L32.5829 31.6514L16.3184 41.7427Z' fill='%23CEB0FA' stroke='%231717B0' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_408_10989'%3E%3Crect width='32.648' height='55.7905' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .token-additional-info__attention {
+        padding: calc(var(--space) * 0.3);
+        border: 1px solid var(--color-dark);
+    }
+
+    .token-additional-info__attention h3 {
+        margin-bottom:  calc(var(--space) * 0.5);
+        font-weight: 500;
+        font-family: var(--font-family);
+        text-align: left;
+        text-transform: unset;
+    }
+
+    .token-additional-info__attention p {
+        font-weight: 400;
+        max-width: 100%;
+    }
+
     .pink-block a {
         color: #75FBFD;
         font-weight: 600;
@@ -343,12 +438,11 @@ query {
     }
 
     .xrt-bridge .layout {
-        max-width: 1300px;
+        max-width: 1450px;
         display: flex;
         align-items: center;
         padding: var(--space);
         padding-bottom: 0;
-
     }
 
     .xrt-bridge__title {
@@ -368,51 +462,30 @@ query {
         font-family: var(--font-family-code);
         font-size: calc(var(--base-font-size) * 1.4);
         font-weight: 500;
+        color: #fff !important;
     }
 
     .xrt-bridge__text {
-        padding-bottom: calc(var(--space) * 5);
-        flex-shrink: 0;
+        color: #fff;
         /* margin-right: calc(var(--space) * 3); */
+    }
+
+    .xrt-bridge__text .token__big-text {
+        font-weight: 500;
+    }
+
+    .xrt-bridge__text p {
+        font-weight: 300;
     }
 
     .xrt-bridge__imgs {
         position: relative;
         display: flex;
-        width: 100%;
+        /* width: 100%;
         justify-content: space-between;
-        max-width: 783px;
+        max-width: 783px; */
+        margin-right: calc(var(--space) * 2);
 
-    }
-
-    .xrt-bridge__img-1 {
-        max-width: 433px;
-        width: 100%;
-        /* width: 433px; */
-        /* position: relative; */
-        /* left: 40px;
-        bottom: -7px; */
-    }
-
-
-    .xrt-bridge__img-3 {
-        max-width: 164px;
-        width: 100%;
-        position: relative;
-        /* position: absolute; */
-        /* bottom: -7px; */
-        right: 70px;
-        height: 100%;
-    }
-
-    .xrt-bridge__img-2 {
-        /* position: absolute; */
-        /* left: -120px;
-        bottom: 5px; */
-        max-width: 77px;
-        width: 100%;
-        /* height: 100%; */
-        align-self: end;
     }
 
     .nova {
@@ -566,13 +639,23 @@ query {
 
         .xrt-bridge__imgs {
             max-width: 100%;
+            margin-right: 0;
             /* margin-bottom: var(--space); */
         }
 
-        .xrt-bridge__img-3 {
-            right: 30px;
+        .xrt-bridge .grid-2 {
+            display: flex !important;
+            flex-direction: column-reverse;
+            /* grid-template-columns: 1fr; */
         }
-        
+
+        .token-additional-info__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        .token-additional-info__ethereum > p {
+            min-height: 62px;
+        } 
     }
 
     @media screen and (max-width: 580px) {
@@ -595,6 +678,16 @@ query {
         .token__graph-arrow {
             max-width: 147px;
         }
+
+        .token-additional-info__kusama{
+            padding-left: 0;
+            padding-top: 60px;
+        }
+
+        .token-additional-info__ethereum > p {
+            padding-left: 0;
+            padding-top: 70px;
+        }
     }
 
     @media screen and (max-width: 395px) {
@@ -610,4 +703,31 @@ query {
             top: -23px;
         }
     }
+
+    /* dark mode */
+
+    .dark-theme .token-additional-info__kusama::after {
+        content: url("data:image/svg+xml,%3Csvg width='70' height='43' viewBox='0 0 70 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_408_10987)'%3E%3Cpath d='M65.8559 2.29637C64.587 1.09159 62.9888 0.299189 61.262 0.0323589C59.1097 -0.250642 56.9332 1.18862 55.4555 2.15082C53.9777 3.11303 51.207 5.92687 50.0184 6.73544C48.8297 7.54402 45.9064 8.35259 41.184 11.2554C36.4617 14.1582 17.757 26.1817 17.757 26.1817L22.6159 26.2302L0.947682 37.526H3.10808L0 39.9517C1.71868 40.356 3.5257 40.0891 5.05966 39.2078V39.8789C5.05966 39.8789 30.8318 29.6504 35.8352 32.3026L32.8155 33.1758C33.0805 33.1758 37.9876 33.4912 37.9876 33.4912C38.2285 35.5611 39.369 37.4047 41.1037 38.5367C44.0592 40.5015 44.1074 41.5688 44.1074 41.5688C44.1074 41.5688 42.5815 42.1995 42.5815 43C45.296 42.1429 48.2033 42.1429 50.9179 43C50.9179 43 50.7572 42.1914 48.7012 41.5688C46.6452 40.9462 44.6374 38.7469 43.6335 37.526C42.3967 35.9412 42.0916 33.8146 42.8304 31.9468C43.5372 30.1032 46.0429 29.0764 51.1106 26.4242C57.126 23.2951 58.4913 20.9502 59.3346 19.1471C60.1778 17.3439 61.4468 13.7296 62.1455 12.0316C62.7318 10.4468 63.7276 9.04797 65.0367 7.98873C66.6349 7.12356 68.2974 6.37967 70 5.75707C70 5.75707 66.8598 3.09686 65.8559 2.29637Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_408_10987'%3E%3Crect width='70' height='43' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    }
+
+    .dark-theme .token__link.timeline h3 {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.163' height='18.007' viewBox='0 0 20.163 18.007'%3E%3Cg id='_-Product-Icons' data-name='Product-Icons' transform='translate(-1.995 -2.997)'%3E%3Cg id='ic_fluent_timeline_24_filled'%3E%3Cpath id='_Color' data-name='Color' d='M15.25,13A1.75,1.75,0,0,1,17,14.75v4.5A1.75,1.75,0,0,1,15.25,21H3.75A1.75,1.75,0,0,1,2,19.253v-4.5A1.75,1.75,0,0,1,3.75,13ZM21,14.9V20.25a.75.75,0,0,1-1.493.1l-.007-.1V14.906A3.023,3.023,0,0,0,21,14.9Zm-.75-4.8A1.908,1.908,0,1,1,18.342,12,1.908,1.908,0,0,1,20.25,10.092Zm-5-7.1A1.75,1.75,0,0,1,17,4.747v4.5A1.75,1.75,0,0,1,15.245,11H3.745A1.75,1.75,0,0,1,2,9.25v-4.5A1.75,1.75,0,0,1,3.6,3L3.745,3ZM20.25,3a.75.75,0,0,1,.743.648l.007.1V9.1a3.023,3.023,0,0,0-1.5-.011V3.75A.75.75,0,0,1,20.25,3Z' fill='%2397aafd'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .dark-theme .token__link.enterscan h3 {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.597' height='17.591' viewBox='0 0 17.597 17.591'%3E%3Cg id='etherscan-logo-circle' transform='translate(-219.378 -213.33)'%3E%3Cpath id='Path_1' data-name='Path 1' d='M223.035,221.705a.746.746,0,0,1,.749-.746l1.242,0a.747.747,0,0,1,.747.747v4.7c.14-.041.319-.086.516-.132a.622.622,0,0,0,.48-.606v-5.826a.747.747,0,0,1,.747-.747h1.245a.747.747,0,0,1,.747.747v5.408s.312-.126.615-.254a.623.623,0,0,0,.381-.574v-6.447a.747.747,0,0,1,.747-.747h1.245a.747.747,0,0,1,.747.747v5.309a14.6,14.6,0,0,0,3.04-2.854,1.254,1.254,0,0,0,.191-1.17,8.791,8.791,0,1,0-15.926,7.265,1.112,1.112,0,0,0,1.061.549c.235-.021.529-.05.877-.091a.622.622,0,0,0,.552-.617v-4.662' transform='translate(0 0)' fill='%2397aafd'/%3E%3Cpath id='Path_2' data-name='Path 2' d='M244.416,277.566a8.794,8.794,0,0,0,13.967-7.113c0-.2-.009-.4-.023-.6-3.213,4.792-9.146,7.032-13.944,7.715' transform='translate(-21.408 -48.327)' fill='%2397aafd'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .dark-theme .token__link.coingecko h3 {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.151' height='17.151' viewBox='0 0 17.151 17.151'%3E%3Cg id='XMLID_200_' transform='translate(1.005 1.005)'%3E%3Cg id='XMLID_202_' transform='translate(-1.005 -1.005)'%3E%3Cg id='Group_4819' data-name='Group 4819'%3E%3Cpath id='Path_8306' data-name='Path 8306' d='M7.532-1.005a8.576,8.576,0,1,0,8.614,8.537A8.576,8.576,0,0,0,7.532-1.005ZM6.446,7.15A1.532,1.532,0,1,1,7.979,5.617,1.534,1.534,0,0,1,6.446,7.15ZM7.669,8.807l.008-.01.008-.01a2.758,2.758,0,0,0,1.436.4,6.747,6.747,0,0,0,1.51-.125A8.125,8.125,0,0,0,12.1,8.606a7.22,7.22,0,0,0,.785-.372l0,0c.157-.1.311-.194.462-.3.033-.024.065-.048.1-.073l0,0,.013.016a5.6,5.6,0,0,1-1.312.842,8.408,8.408,0,0,1-1.472.537,4.623,4.623,0,0,1-1.571.181A2.177,2.177,0,0,1,7.669,8.807ZM11.6,7.15a.332.332,0,1,1,.333.33A.333.333,0,0,1,11.6,7.15ZM8.977,15.376c-.332-2.322,1.694-4.594,2.838-5.757.259-.264.661-.627,1.034-1.013,1.483-1.386,1.779-3.044-1.258-3.873-.575-.167-1.172-.4-1.775-.642a1.414,1.414,0,0,0-.065-.157,1.7,1.7,0,0,0-.375-.413A2.141,2.141,0,0,0,7.6,3.338a4.478,4.478,0,0,0-2.077-.065C2.587,4.081,2.115,5.514,2,7.24a13.768,13.768,0,0,1-.953,4.842,7.931,7.931,0,1,1,7.929,3.294Z' transform='translate(1.005 1.005)' fill='%2397aafd'/%3E%3C/g%3E%3C/g%3E%3Cpath id='XMLID_201_' d='M402.457,350.078A1.078,1.078,0,1,1,401.378,349,1.078,1.078,0,0,1,402.457,350.078Z' transform='translate(-394.932 -344.447)' fill='%232949d3'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    .dark-theme .token__link.use h3 {
+        background-image: url("data:image/svg+xml,%3Csvg id='Core' xmlns='http://www.w3.org/2000/svg' width='19.689' height='17.501' viewBox='0 0 19.689 17.501'%3E%3Cg id='drive-site'%3E%3Cpath id='Shape' d='M17.5,0H2.188A2.194,2.194,0,0,0,0,2.188V15.314A2.194,2.194,0,0,0,2.188,17.5H17.5a2.194,2.194,0,0,0,2.188-2.188V2.188A2.194,2.194,0,0,0,17.5,0ZM12.032,15.314H2.188V10.938h9.845v4.375Zm0-5.469H2.188V5.469h9.845V9.845ZM17.5,15.314H13.126V5.469H17.5v9.845Z' fill='%2397aafd' fill-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .dark-theme .token__link.subscan h3 {
+        background-image: url("data:image/svg+xml,%3Csvg id='id-1' xmlns='http://www.w3.org/2000/svg' width='17.501' height='17.501' viewBox='0 0 17.501 17.501'%3E%3Cg id='SUBSCAN-1'%3E%3Cpath id='Fill-1' d='M9.68,2.244A1.315,1.315,0,0,0,7.821.385L.385,7.821a1.314,1.314,0,0,0,0,1.859L4.1,13.4h0a1.314,1.314,0,0,0,1.859,0l6.507-6.507,1.859,1.859L7.821,15.257A1.315,1.315,0,1,0,9.68,17.116L17.116,9.68a1.314,1.314,0,0,0,0-1.859L13.4,4.1a1.315,1.315,0,0,0-1.859,0L5.033,10.61,3.174,8.751Z' transform='translate(0 0)' fill='%2397aafd' opacity='0.2'/%3E%3Cpath id='Fill-3' d='M2.244,11.007a1.315,1.315,0,1,1-1.859,0,1.314,1.314,0,0,1,1.859,0' transform='translate(0 -3.186)' fill='%2397aafd'/%3E%3Cpath id='Fill-5' d='M7.555,5.7A1.315,1.315,0,1,1,5.7,5.7a1.315,1.315,0,0,1,1.859,0' transform='translate(-1.593 -1.593)' fill='%2397aafd'/%3E%3Cpath id='Fill-7' d='M12.866.385a1.315,1.315,0,1,1-1.859,0,1.315,1.315,0,0,1,1.859,0' transform='translate(-3.186 0)' fill='%2397aafd'/%3E%3Cpath id='Fill-9' d='M7.555,16.318a1.315,1.315,0,1,1-1.859,0,1.315,1.315,0,0,1,1.859,0' transform='translate(-1.593 -4.779)' fill='%2397aafd'/%3E%3Cpath id='Fill-11' d='M12.866,11.007a1.315,1.315,0,1,1-1.859,0,1.314,1.314,0,0,1,1.859,0' transform='translate(-3.186 -3.186)' fill='%2397aafd'/%3E%3Cpath id='Fill-13' d='M18.177,5.7a1.315,1.315,0,1,1-1.859,0,1.315,1.315,0,0,1,1.859,0' transform='translate(-4.779 -1.593)' fill='%2397aafd'/%3E%3Cpath id='Fill-15' d='M12.866,21.63a1.315,1.315,0,1,1-1.859,0,1.315,1.315,0,0,1,1.859,0' transform='translate(-3.186 -6.372)' fill='%2397aafd'/%3E%3Cpath id='Fill-17' d='M18.177,16.318a1.315,1.315,0,1,1-1.859,0,1.314,1.314,0,0,1,1.859,0' transform='translate(-4.779 -4.779)' fill='%2397aafd'/%3E%3Cpath id='Fill-19' d='M23.489,11.007a1.315,1.315,0,1,1-1.859,0,1.314,1.314,0,0,1,1.859,0' transform='translate(-6.372 -3.186)' fill='%2397aafd'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
 </style>

@@ -1,0 +1,23 @@
+- id: 0
+  title: 'Online Telescope'
+  description: 'Connecting universe to metaverse'
+  path: 'online-telescope'
+  cover_image: ''
+  progress: done
+  tags: ['NFT', 'singular2.0', 'ipfs']
+
+- id: 1
+  title: 'Online Telescope'
+  description: 'Connecting universe to metaverse'
+  path: 'online-telescope'
+  cover_image: ''
+  progress: progress
+  tags: ['NFT', 'singular2.0', 'ipfs']
+
+- id: 2
+  title: 'Online Telescope'
+  description: 'Connecting universe to metaverse'
+  path: 'online-telescope'
+  cover_image: ''
+  progress: done
+  tags: ['NFT', 'singular2.0', 'ipfs']
