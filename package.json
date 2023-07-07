@@ -2,7 +2,7 @@
   "name": "robonomics.network",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
+    "build": "gridsome --max_old_space_size=4096 build",
     "build-m1": "export NODE_OPTIONS=--openssl-legacy-provider && gridsome build",
     "develop": "gridsome develop",
     "develop-m1": "export NODE_OPTIONS=--openssl-legacy-provider && gridsome develop",
