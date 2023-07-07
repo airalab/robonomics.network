@@ -9,7 +9,7 @@ import '~/assets/style/utils.css'
 import '~/assets/style/variables.css'
 import '~/assets/style/fonts.css'
 
-import 'gridsome-remark-katex/node_modules/katex/dist/katex.min.css'
+// import 'gridsome-remark-katex/node_modules/katex/dist/katex.min.css'
 
 import Vue from 'vue'
 import Vuex from 'vuex'

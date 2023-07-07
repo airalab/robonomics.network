@@ -1,11 +1,13 @@
 <template>
   <layout>
+ 
 
       <MetaInfo
         pageTitle = "Meta title Index"
         pageDescription = "Meta description Index"
       />
       
+
       <section id="banner" class="slide section section__solid">
 
         <div class="layout layout__content">
@@ -17,21 +19,19 @@
             <div class="typing-3">Join free IoT and robotics</div>
           </h1>
 
-          <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.2 55.2" style="enable-background:new 0 0 55.2 55.2;" xml:space="preserve"><g><circle class="st0" cx="27.6" cy="27.6" r="27.1"/><g><g><line class="st0" x1="39.9" y1="34.8" x2="28" y2="14.2"/><line class="st0" x1="15.7" y1="35.6" x2="39.4" y2="35.6"/><line class="st0" x1="27.1" y1="14.2" x2="15.1" y2="34.7"/><polygon class="st0" points="27.5,21 21.3,31.8 33.8,31.8"/><polygon class="st0" points="27.5,28.5 21.3,31.8 33.8,31.8"/><circle class="st0" cx="14.7" cy="35.6" r="0.9"/><circle class="st0" cx="40.4" cy="35.6" r="0.9"/><path class="st0" d="M28.4,13.4c0,0.3-0.2,0.6-0.5,0.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9S28.4,12.9,28.4,13.4z"/><line class="st0" x1="27.5" y1="21.1" x2="27.5" y2="28.5"/></g></g></g></svg>
+          <svg aria-hidden="true" class="banner-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.2 55.2" style="enable-background:new 0 0 55.2 55.2;" xml:space="preserve"><g><circle class="st0" cx="27.6" cy="27.6" r="27.1"/><g><g><line class="st0" x1="39.9" y1="34.8" x2="28" y2="14.2"/><line class="st0" x1="15.7" y1="35.6" x2="39.4" y2="35.6"/><line class="st0" x1="27.1" y1="14.2" x2="15.1" y2="34.7"/><polygon class="st0" points="27.5,21 21.3,31.8 33.8,31.8"/><polygon class="st0" points="27.5,28.5 21.3,31.8 33.8,31.8"/><circle class="st0" cx="14.7" cy="35.6" r="0.9"/><circle class="st0" cx="40.4" cy="35.6" r="0.9"/><path class="st0" d="M28.4,13.4c0,0.3-0.2,0.6-0.5,0.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9S28.4,12.9,28.4,13.4z"/><line class="st0" x1="27.5" y1="21.1" x2="27.5" y2="28.5"/></g></g></g></svg>
 
-          <!-- images left -->
-
-          <div class="banner__images banner__images--left">
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/circle.svg"  aria-hidden="true"/>
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/crystal.svg"  aria-hidden="true"/>
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/painting.svg"  aria-hidden="true"/>
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/robot-1.svg"  aria-hidden="true"/>
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/robots-2.svg"  aria-hidden="true"/>
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/text.svg"  aria-hidden="true"/>
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/column.svg"  aria-hidden="true"/>
+          <div class="banner__images banner__images--left" aria-hidden="true">
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/circle.svg" />
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/crystal.svg" />
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/painting.svg" />
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/robot-1.svg" />
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/robots-2.svg" />
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/text.svg" />
+            <g-image immediate src="~/assets/images/icons/banner-icons-left/column.svg" />
           </div>
 
-          <div id="yoga-container">
+          <div id="yoga-container" aria-hidden="true">
             <svg version="1.1" id="yoga" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 104.2 117.4" style="enable-background:new 0 0 104.2 117.4;" xml:space="preserve"><g><path class="st0" d="M50.6,14c0,0-1.1-8.3,0-9.4s1.4-1.7,1.7,2.2c0.3,3.9-0.3,7.5-0.3,7.5L50.6,14z"/><path class="st1" d="M67.2,46.5c-0.6-1-4.7-2.9-5.2,1.7c-0.5,4,9.6,27.8,14.2,31c4.7,3.2,23.5-11.4,26.6-14.1c3.1-2.7,0.8-5-6.1-1c-6.9,3.9-13.4,12.8-17.5,8.4C75,68.1,67.8,47.5,67.2,46.5z"/><path class="st1" d="M37,47.3c0.6-1,4.7-2.9,5.2,1.7c0.5,4-9.6,27.8-14.2,31S4.5,68.6,1.5,65.9c-3.1-2.7-0.8-5,6.1-1s13.4,12.8,17.5,8.4C29.2,69,36.5,48.3,37,47.3z"/><path class="st2" d="M38,80.9c0,0-5.5-60.8,1.1-65.8c6.8-5.2,25-4.4,27.4,2.6c2.4,7,3.4,63.7,0.2,66.3C63.4,86.5,39.5,93.5,38,80.9z"/><path class="st1" d="M52.2,18.4c-2.8,0-11.9,1.5-12.4,5.2s-1.7,10.3-0.3,12.5c1.4,2.2,5.2-3.9,12.7-3.5c7.7,0.4,11.3,4.1,12.7,2.9c1.4-1.3,0.8-12.7-1.4-14C61.3,20.2,55,18.4,52.2,18.4z"/><g><path class="st1" d="M35.8,101.2c-2.8,0-5.2-1.6-5.3-3.7c-0.2-2.1,2.1-4,5-4.1c0.1,0,11.4-0.5,23.1-1.8c13.9-1.6,24.3-2.3,22.5-4.4s-20.4,2.4-32,4.3l-5.2,0.9c-2.9,0.5-21.9,2-22.6-0.1c-0.6-2.1,17.4-7,20.2-7.5l5.2-0.9c28.2-4.6,39.8-6.3,45-1.9c1.2,1.1,3,3.4,1,7.1c-1.8,3.2-7,7.2-31.7,10c-12.6,1.4-24.4,1.9-24.9,2C36,101.2,35.9,101.2,35.8,101.2z"/></g>
             <g><path class="st1" d="M68.9,101.9c-0.1,0-0.2,0-0.3,0c-0.5,0-12.4-0.5-24.9-2c-24.8-2.8-29.9-6.8-31.7-10c-2.1-3.7-0.3-6.1,1-7.1c5.2-4.4,32.3-1.9,44,0.9c11.7,2.8,16.5,4.9,20.4,7s-13.6,2.9-16.5,2.4l-5.2-0.9c-11.6-1.9-31.3-5.7-32-4.3c-0.6,1.4,8.6,2.8,22.5,4.4c11.8,1.3,23,1.8,23.1,1.8c2.9,0.1,11.3,4.1,11.2,6.2C80.2,102.4,71.7,101.9,68.9,101.9z"/></g><g><path class="st1" d="M40.2,117.3c-2,0-4.1,0-6.2-0.1c-8.7-0.4-23.6-2.2-25.7-10.3c-1.1-4.4,2.4-8.4,6.6-9.8c7.8-2.6,11.9-1.9,19.9-0.3c3.1,0.6,7,1.3,12.4,2.1c2.9,0.4,4.7,2.5,4.1,4.6c-0.6,2.1-3.4,3.4-6.3,3c-5.6-0.8-9.7-1.6-12.9-2.2c-7.4-1.4-8.4-1.6-12.6-0.2c-0.3,0.2-0.9,0.8-0.6,1.5c0.5,1.2,4.4,3.4,15.8,3.9c24.2,1,37.3-5.1,37.4-5.1c2.5-1.2,5.8-0.7,7.4,1.1c1.6,1.8,1,4.2-1.4,5.3C77.4,111,64.3,117.3,40.2,117.3z M19.5,104.1C19.5,104.1,19.5,104.1,19.5,104.1C19.5,104.1,19.5,104.1,19.5,104.1z"/></g>
             <g><path class="st0" d="M20.5,104.3l-11.9-2.5c0,0-0.8,5.6-0.3,6.6s3.4,3.8,3.9,4.1s8.5-7.4,8.5-7.4S21.8,104.3,20.5,104.3z"/><path class="st3" d="M21,104c0,0-12.6-2-13-0.9c-0.4,1.1-0.7,1.9-0.5,2.4c0.2,0.5,13.3-0.5,13.4-0.9S21,104,21,104z"/><path class="st3" d="M21.2,104.9c0,0-13.6,1.2-13.6,1.9s0.2,2.1,0.3,2.4c0.1,0.2,13.4-4,13.4-4L21.2,104.9z"/><path class="st3" d="M21.3,105.1c0,0-9.6,6.9-10.5,6.9c-0.8,0-1.8-1.7-1.7-2.1C9.2,109.5,21.3,105.1,21.3,105.1z"/></g>
@@ -50,15 +50,14 @@
             </div>
           </div>
 
-          <!-- images right -->
-          <div class="banner__images banner__images--right ">
-            <g-image src="~/assets/images/icons/banner-icons-right/cube.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-right/dron.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-right/factory.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-right/robot-3.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-right/robot-4.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-right/sign.svg"  aria-hidden="true"/>
-            <g-image src="~/assets/images/icons/banner-icons-right/polkadot.svg"  aria-hidden="true"/>
+          <div class="banner__images banner__images--right" aria-hidden="true">
+            <g-image src="~/assets/images/icons/banner-icons-right/cube.svg" />
+            <g-image src="~/assets/images/icons/banner-icons-right/dron.svg" />
+            <g-image src="~/assets/images/icons/banner-icons-right/factory.svg" />
+            <g-image src="~/assets/images/icons/banner-icons-right/robot-3.svg" />
+            <g-image src="~/assets/images/icons/banner-icons-right/robot-4.svg" />
+            <g-image src="~/assets/images/icons/banner-icons-right/sign.svg" />
+            <g-image src="~/assets/images/icons/banner-icons-right/polkadot.svg" />
           </div>
           
         </div>
@@ -277,6 +276,19 @@ query {
     width: 29.5ch;
     animation: FadeIn 0.1s forwards 11s, typing 2s steps(31) 11s, blinkLine .5s step-end infinite alternate;
   }
+
+  .banner-logo {
+    display: block;
+    max-width: 130px;
+    margin: 0 auto;
+
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    animation: FloatYUp 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards, FadeIn 2.5s linear 1s forwards;
+  }
+
+  .banner-logo .st0{fill:none;stroke:#00FFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
   
 
   .banner__images {
@@ -410,11 +422,6 @@ query {
   }
 
   #yoga-container {
-    z-index: 10;
-  }
-
-  #logo {
-    position: relative;
     z-index: 10;
   }
 
@@ -584,19 +591,6 @@ query {
     /* #banner h1 { font-size: calc(var(--base-font-size) * 0.8); } */
   }
 
-  #logo {
-    display: block;
-    max-width: 130px;
-    margin: 0 auto;
-
-    transform: translateY(100%);
-    opacity: 0;
-    visibility: hidden;
-    animation: FloatYUp 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards, FadeIn 2.5s linear 1s forwards;
-  }
-
-  #logo .st0{fill:none;stroke:#00FFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-
   #yoga-container {
     max-width: 300px;
     margin: var(--space) auto;
@@ -663,56 +657,6 @@ query {
     #yoga .st6{fill:#B3B3B3;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
     #yoga .st7{fill:#8D9ACE;}
     
-
-    #banner-top, #banner-bottom {
-      position: absolute;
-      z-index: 0;
-      width: 100%;
-      left: 0;
-      transform-style: preserve-3d;
-      perspective: 300px;
-      overflow: hidden;
-
-      transform: scaleY(0);
-      opacity: 0;
-      visibility: hidden;
-      animation: ScaleY 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards, FadeIn 1s linear 0.5s forwards;
-    }
-
-    #banner-top:before, #banner-bottom:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(rgba(255, 255, 255, .2) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .2) 1px, transparent 1px);
-      background-size: 2em 2em;
-    }
-
-    #banner-top {
-      background-image: linear-gradient(#AF0098, #E30078);
-      top: 0;
-      height: 70%;
-    }
-
-    #banner-top:before {
-        transform-origin: 50% 100%;
-        transform: rotateX(-25deg);
-      }
-
-    #banner-bottom {
-      background-image: linear-gradient(#1717B0, #6597FD);
-      bottom: 0;
-      height: 30%;
-    }
-
-    #banner-bottom:before {
-        transform-origin: 50% 0;
-        transform: rotateX(45deg);
-      }
-
 
   .index-academy .oldy  {
     position: relative;
@@ -814,6 +758,57 @@ query {
     object-fit: contain;
     height: 192px;
   }
+
+  #banner-top, #banner-bottom {
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      left: 0;
+      transform-style: preserve-3d;
+      perspective: 300px;
+      overflow: hidden;
+
+      transform: scaleY(0);
+      opacity: 0;
+      visibility: hidden;
+      animation: ScaleY 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards, FadeIn 1s linear 0.5s forwards;
+    }
+
+    #banner-top:before, #banner-bottom:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(255, 255, 255, .2) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .2) 1px, transparent 1px);
+      background-size: 2em 2em;
+    }
+
+    #banner-top {
+      background-image: linear-gradient(#AF0098, #E30078);
+      top: 0;
+      height: 70%;
+    }
+
+    #banner-top:before {
+        transform-origin: 50% 100%;
+        transform: rotateX(-25deg);
+      }
+
+    #banner-bottom {
+      background-image: linear-gradient(#1717B0, #6597FD);
+      bottom: 0;
+      height: 30%;
+    }
+
+    #banner-bottom:before {
+        transform-origin: 50% 0;
+        transform: rotateX(45deg);
+      }
+
+
 </style>
 
 <script>

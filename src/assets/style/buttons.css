@@ -1,3 +1,8 @@
+/* 
+todo:
+это точно надо убирать аккуртано, чтобы ничего не сломалось
+убираем в компонент button под scoped styles
+*/
 .button, button
 	{
 		padding: .5rem .8rem;
@@ -44,10 +49,6 @@
 			fill: var(--color-light);
 		}
 
-		/* .button.primary:hover, button.primary:hover{
-			box-shadow: 4px 4px 0 var(--color-dark);
-		} */
-
 		.button.border, button.border {
 			background-color: var(--color-light);
 			border: 1px solid var(--link-color);
@@ -60,10 +61,10 @@
 			fill:  var(--link-color);
 		}
 
-		.button.border:hover, button.border:hover {
+		/* .button.border:hover, button.border:hover {
 			background-color: var(--link-color);
 			color: var(--color-light);
-		}
+		} */
 
 		.button.border .icon, button.border .icon { border-color: var(--color-light); }
 
