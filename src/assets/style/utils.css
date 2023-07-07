@@ -380,8 +380,11 @@
   background-color: var(--color-blue-dark-mid)
 }
 
-/* tracker */
+.bold-text {
+  font-weight: 500;
+}
 
+/* tracker */
 
 .my-tracker.user-tracker {
   background-color: var(--color-blue);
@@ -390,3 +393,4 @@
 .my-tracker .user-tracker__form  {
   padding-left: 0;
 }
+
