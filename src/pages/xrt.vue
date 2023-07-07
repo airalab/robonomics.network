@@ -85,6 +85,7 @@
             </section>
             <hr class="no-margins color-lightgray" />
 
+
             <section class="pink-block">
                 <div class="layout token__top">
                     <p class="text-abstract token__text-abstract"> <b>{{ $ts('Be aware of scammers') }}</b>: {{ $ts('please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our') }} <g-link :to="twitter[0].options[0].link">Twitter</g-link> {{$ts('for official updates. Be careful, be safe.')}}</p>              
