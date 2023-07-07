@@ -40,61 +40,6 @@
 
 <style scoped>
 
-  .banner-top {
-    position: relative;
-    height: var(--space-bannertop);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding-right: var(--screen-padding-right);
-    padding-left: var(--screen-padding-right);
-
-    text-decoration: none;
-    overflow: hidden;
-
-    background-color: var(--color-blue);
-    background-image: url(/ambassador-pattern.jpg);
-    background-position: 0 50%;
-    background-repeat: repeat-x;
-    color: #fff !important;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    /* font-size: 90%; */
-    line-height: 1;
-
-    font-family: var(--font-family-code);
-    text-shadow: 1px 1px 0 #000;
-
-    /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">\
-			<text x="20" y="20" font-size="10" style="fill:#ccc">🤖</text>\
-			</svg>');
-			background-size: 30px 30px; */
-  }
-
-  @media screen and (min-width: 700px) {
-    .banner-top {
-      font-size: 150%;
-    }
-  }
-
-  .banner-top:after {
-    content: "";
-    background: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .banner-top > div {
-    position: relative;
-    z-index: 1;
-  }
-
   .sidetext {
     font-family: var(--font-family-code);
     font-size: calc(var(--base-font-size) * 0.8);

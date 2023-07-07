@@ -8,6 +8,10 @@
 	margin-bottom: calc(var(--space)*3);
 }
 
+.section-align-left { text-align: left; }
+.section-align-center { text-align: center; }
+.section-align-right { text-align: right; }
+
   .section__solid {
   	background-color: var(--color-light);
 	padding-top: calc(var(--space)*2);
@@ -41,7 +45,7 @@
   .section__gradient-purpleblue,
   .section__lightblue, .section__lightblue .card.transparent,
   .section__black,
-  .section__dotted_darkblue  {
+  .section__dotted_darkblue, .section__lilac  {
 	  color: #fff;
   }
 
@@ -51,7 +55,8 @@
   .section__darkpurple h1,
   .section__gradient-purpleblue h1,
   .section__black h1,
-  .section__dotted_darkblue h1 {
+  .section__dotted_darkblue h1,
+  .section__lilac h1 {
 	color: #fff;
 	background: none;
 	-webkit-background-clip: unset;
@@ -93,6 +98,10 @@
   .section__lightblue {
 		background: var(--link-color);
   }
+
+	.section__lilac {
+		background: var(--color-purple-light);
+	}
 
 	.dark-theme  .section__lightblue {
 		background: #1c4659;
@@ -334,5 +343,3 @@
 	.polkapetBonuses .polkapetBonuses-text {
 		max-width: 800px;
 	}
-
-	

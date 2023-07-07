@@ -8,7 +8,7 @@
         />
 
         <section class="top-part">
-            <section class="token section__blue">
+            <section class="token section__blue section__solid">
                 <div class="token__main-title title-with-bg">
                     <h1><span>{{ $ts('Robonomics tokenomics') }}</span></h1>
                 </div>
@@ -32,19 +32,25 @@
                 </div>
             </section>
 
-            <section class="xrt-bridge">
+            <hr class="no-margins" />
+
+            <section class="xrt-bridge section__solid">
                 <div class="layout grid-2">
-                    <div class="xrt-bridge__imgs">
-                        <g-image src="~/assets/images/xrt-bridge-img.png" alt="xrt bridge"/>
+                    <div class="xrt-bridge__imgs" aria-hidden="true">
+                        <g-image src="~/assets/images/xrt-bridge-img.png" />
                     </div>
                     <div class="xrt-bridge__text token__intro">
-                        <p > <span class="token__big-text">{{ $ts('The task') }}</span> {{ $ts(' of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.') }}</p>
-                        <g-link to="https://dapp.robonomics.network/" class=" xrt-bridge__btn link-btn">{{ $ts('Try our Dapp') }}</g-link>
+                        <p><span class="token__big-text">{{ $ts('The task') }}</span> {{ $ts(' of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.') }}</p>
+                        <div class="section-align-right">
+                            <Button link="https://dapp.robonomics.network/" color="blue">{{ $ts('Try our Dapp') }}</Button>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="token-additional-info"> 
+            <hr class="no-margins color-lightgray" />
+
+            <section class="token-additional-info section__solid"> 
                 <div class="layout token__top">
                     <p class="token-additional-info__txt"> <span class="token__big-text">{{ $ts('In addition ') }}</span> you can operate XRT within blockchains using tools provided by different independent teams in Polkadot (Kusama) and Ethereum communities.</p>
 
@@ -67,16 +73,17 @@
                         </div>
                         <div class="token-additional-info__ethereum"> 
                             <p>
-                                Within the Ethereum network you can use decentralized application powered by the <g-link  to="https://app.uniswap.org/"> Uniswap </g-link> Protocol.
+                                Within the Ethereum network you can use decentralized application powered by the <g-link class="bold-text" to="https://app.uniswap.org/">Uniswap</g-link> Protocol.
                             </p>
                             <div class="token-additional-info__attention">
-                                <h3>!Attention please</h3>
+                                <p><b>! Attention please</b></p>
                                 <p>If you have been utilizing The Multichain service for bridge transactions, please refrain from using it at the moment, as it has been <g-link class="link-light" to="https://twitter.com/MultichainOrg/status/1677180114227056641">announced</g-link> on the official Twitter of The Multichain.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <hr class="no-margins color-lightgray" />
 
             <section class="pink-block">
                 <div class="layout token__top">
@@ -89,11 +96,11 @@
         <section class="layout layout__text xrt-ethereum">
             <h2>{{ $ts('XRT in Ethereum') }}</h2>
 
-            <section class="animate-inside" v-in-viewport.once>
-                    <p>{{ $ts('Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. We needed to think about the lifecycle of each individual smart device’s liability to perform a service. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with a significant improvements in Ethereum.') }}</p>
+            <section>
+                <p>{{ $ts('Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. We needed to think about the lifecycle of each individual smart device’s liability to perform a service. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with a significant improvements in Ethereum.') }}</p>
             </section>
 
-            <div class="youtube-embed animate-inside" v-in-viewport.once>
+            <div class="youtube-embed">
                 <div class="youtube-embed__wrapper">
                     <div class="youtube-embed__container">
                         <iframe width="860" height="480" src="https://www.youtube.com/embed/a2EWaaFcFm8" title="Life cycle in the Robonomics network with the application of observing networks" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -101,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="youtube-embed animate-inside" v-in-viewport.once>
+            <div class="youtube-embed">
                 <div class="oldy dark">
                     <div class="token__link timeline">
                         <g-link to="/timeline">
@@ -127,12 +134,12 @@
     
         </section>
 
-        <section class="layout layout__text xrt-polkadot animate-inside" v-in-viewport.once>
+        <section class="layout layout__text xrt-polkadot">
             <h2>{{ $ts('XRT In Polkadot') }}</h2>
 
-            <section class="animate-inside" v-in-viewport.once>
-
-                    <p class="xrt-polkadot__text">{{ $ts('Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.') }}</p>
+            <section>
+                
+                <p class="xrt-polkadot__text">{{ $ts('Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.') }}</p>
 
 
                     <p class="xrt-polkadot__text"> {{$ts('The actual payment on the part of Polkadot and Kusama parachains is long-term bonding of native Relay chain tokens (DOT / KSM) in sufficient quantity to win one of the auctions. The XRT in the Robonomics parachain supports slot renewal and rewards for stakeholders. The XRT burning mechanism underlying the activation of IoT subscriptions is designed to reduce inflation to a minimum, and in case of increased interest to zero.') }} <g-link to="https://twitter.com/EnsRationis/status/1607327921793892354">{{ $ts('Learn more') }}</g-link> {{ $ts('in Twitter thread from our network architect.')}} </p>
@@ -172,7 +179,7 @@
             </section>
         </section>
 
-        <section class="layout layout__text xrt-questions animate-inside" v-in-viewport.once>
+        <section class="layout layout__text xrt-questions">
                 <h2>{{ $ts('Other questions') }}</h2>
 
                 <div class="xrt-polkadot__info">
@@ -204,6 +211,7 @@ query {
 
     export default {
         components: {
+            Button: () => import('~/components/Button.vue'),
             Card: () => import('~/components/TextCard.vue'),
             XRTGraph: () => import("~/components/XRTGraph.vue"),
             MetaInfo: () => import("~/components/MetaInfo.vue"),
@@ -228,9 +236,7 @@ query {
     }
 
     .token {
-        margin: 0;
-        /* padding-bottom: calc(var(--space) * 2); */
-        /* background-color: var(--color-grey-lights); */
+        padding-top: 0;
     }
 
     .token__subtitle {
@@ -256,13 +262,9 @@ query {
     }
 
     .token__intro {
-        padding-top: var(--space);
-        margin-bottom: calc(var(--space) * 2);
         align-content: end;
         justify-items: end;
         gap: calc(var(--space) * 3);
-        /* padding-bottom: var(--space);
-        margin-bottom: 52px; */
     }
 
     .token__intro p {
@@ -292,8 +294,6 @@ query {
     }
 
     .token-additional-info {
-        margin-top: var(--space);
-        margin-bottom: var(--space);
         padding-bottom: calc(var(--space) * 1.5);
         background-color: var(--color-light);
         color: var(--color-dark);
@@ -346,21 +346,12 @@ query {
     }
 
     .token-additional-info__attention {
-        padding: calc(var(--space) * 0.3);
+        padding: calc(var(--space) * 0.5);
         border: 1px solid var(--color-dark);
     }
 
-    .token-additional-info__attention h3 {
-        margin-bottom:  calc(var(--space) * 0.5);
-        font-weight: 500;
-        font-family: var(--font-family);
-        text-align: left;
-        text-transform: unset;
-    }
-
     .token-additional-info__attention p {
-        font-weight: 400;
-        max-width: 100%;
+        margin-bottom: calc(var(--space-text) * 0.5);
     }
 
     .pink-block a {
@@ -456,14 +447,6 @@ query {
         font-family: var(--font-family);
         color: var(--color-light);
         text-align: left;
-    }
-
-    .xrt-bridge__btn {
-        padding: calc(var(--space) * 0.3) calc(var(--space) * 1.5);
-        font-family: var(--font-family-code);
-        font-size: calc(var(--base-font-size) * 1.4);
-        font-weight: 500;
-        color: #fff !important;
     }
 
     .xrt-bridge__text {
@@ -623,6 +606,10 @@ query {
             padding-bottom: 0;
         }
 
+        .xrt-bridge .section-align-right {
+            text-align: center;
+        }
+
         .xrt-bridge .layout {
             flex-direction: column;
             width: 90%;
@@ -656,7 +643,11 @@ query {
 
         .token-additional-info__ethereum > p {
             min-height: 62px;
-        } 
+        }
+
+        .token-additional-info__ethereum > p {
+            padding-left: calc(var(--space) * 3);
+        }
     }
 
     @media screen and (max-width: 580px) {
@@ -730,5 +721,7 @@ query {
     .dark-theme .token__link.subscan h3 {
         background-image: url("data:image/svg+xml,%3Csvg id='id-1' xmlns='http://www.w3.org/2000/svg' width='17.501' height='17.501' viewBox='0 0 17.501 17.501'%3E%3Cg id='SUBSCAN-1'%3E%3Cpath id='Fill-1' d='M9.68,2.244A1.315,1.315,0,0,0,7.821.385L.385,7.821a1.314,1.314,0,0,0,0,1.859L4.1,13.4h0a1.314,1.314,0,0,0,1.859,0l6.507-6.507,1.859,1.859L7.821,15.257A1.315,1.315,0,1,0,9.68,17.116L17.116,9.68a1.314,1.314,0,0,0,0-1.859L13.4,4.1a1.315,1.315,0,0,0-1.859,0L5.033,10.61,3.174,8.751Z' transform='translate(0 0)' fill='%2397aafd' opacity='0.2'/%3E%3Cpath id='Fill-3' d='M2.244,11.007a1.315,1.315,0,1,1-1.859,0,1.314,1.314,0,0,1,1.859,0' transform='translate(0 -3.186)' fill='%2397aafd'/%3E%3Cpath id='Fill-5' d='M7.555,5.7A1.315,1.315,0,1,1,5.7,5.7a1.315,1.315,0,0,1,1.859,0' transform='translate(-1.593 -1.593)' fill='%2397aafd'/%3E%3Cpath id='Fill-7' d='M12.866.385a1.315,1.315,0,1,1-1.859,0,1.315,1.315,0,0,1,1.859,0' transform='translate(-3.186 0)' fill='%2397aafd'/%3E%3Cpath id='Fill-9' d='M7.555,16.318a1.315,1.315,0,1,1-1.859,0,1.315,1.315,0,0,1,1.859,0' transform='translate(-1.593 -4.779)' fill='%2397aafd'/%3E%3Cpath id='Fill-11' d='M12.866,11.007a1.315,1.315,0,1,1-1.859,0,1.314,1.314,0,0,1,1.859,0' transform='translate(-3.186 -3.186)' fill='%2397aafd'/%3E%3Cpath id='Fill-13' d='M18.177,5.7a1.315,1.315,0,1,1-1.859,0,1.315,1.315,0,0,1,1.859,0' transform='translate(-4.779 -1.593)' fill='%2397aafd'/%3E%3Cpath id='Fill-15' d='M12.866,21.63a1.315,1.315,0,1,1-1.859,0,1.315,1.315,0,0,1,1.859,0' transform='translate(-3.186 -6.372)' fill='%2397aafd'/%3E%3Cpath id='Fill-17' d='M18.177,16.318a1.315,1.315,0,1,1-1.859,0,1.314,1.314,0,0,1,1.859,0' transform='translate(-4.779 -4.779)' fill='%2397aafd'/%3E%3Cpath id='Fill-19' d='M23.489,11.007a1.315,1.315,0,1,1-1.859,0,1.314,1.314,0,0,1,1.859,0' transform='translate(-6.372 -3.186)' fill='%2397aafd'/%3E%3C/g%3E%3C/svg%3E");
     }
+
+
 
 </style>

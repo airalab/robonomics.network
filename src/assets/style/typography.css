@@ -155,22 +155,26 @@ hr {
   background-color: var(--color-light);
 }
 
-  .dark-theme hr {
-    background-color: var(--body-bg);
-  }
+.dark-theme hr {
+  background-color: var(--body-bg);
+}
 
-  hr.no-margins {
-    margin: 0;
-  }
+hr.no-margins {
+  margin: 0;
+}
 
-  hr.hr-thick {
-    height: 1px;
-  }
+hr.hr-thick {
+  height: 1px;
+}
 
 
-  hr.dark {
-    background-color: var(--color-dark);
-  }
+hr.dark {
+  background-color: var(--color-dark);
+}
+
+hr.color-lightgray {
+  background-color: var(--color-gray-light);
+}
 
 
 .hyphens{

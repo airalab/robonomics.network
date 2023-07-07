@@ -1,8 +1,16 @@
+<!-- 
+todo:
+Используем где кнопки везде компонент.
+Надо его акуратно переименовать во что-то более специфичное, 
+то есть выбрать приставку для всех "публичных" компонентов этого сайта. 
+Что-то короткое не больше 4 символов (из разряда my-button как обычно в примерах пишут, но не так конечно)
+-->
 <template>
 
   <component 
       :is="link ? 'a' : 'button'"
       :href="link"
+      :target="target"
       :class="classes"
       :disabled="disabled"
       @click="$emit('click')"
@@ -12,43 +20,9 @@
 
       <template v-if="label">{{label}}</template>
       <template v-else><slot/></template>
-
   </component>
 
-
-  <!-- <a 
-      v-if="link"
-      :href="link"
-      :class="classes"
-      :target="external() ? '_blank' : null"
-      :rel="external() ? 'noopener' : null"
-      :disabled="disabled"
-      @click="$emit('click')"
-      :style="{transform: 'scale('+scale+')'}"
-      :v-smooth-scroll="anchor ? '{ updateHistory: false, offset: -250 }' : null"
-    >
-
-      <template v-if="label">{{label}}</template>
-      <template v-else><slot/></template>
-
-  </a>
-
-
-  <button 
-      v-else
-      :class="classes"
-      :disabled="disabled"
-      @click="$emit('click')"
-      :style="{transform: 'scale('+scale+')'}"
-    >
-
-      <template v-if="label">{{label}}</template>
-      <template v-else><slot/></template>
-
-  </button> -->
-
 </template>
-
 
 
 
@@ -58,12 +32,9 @@ export default {
 
   props: {
 
-    link: {
-      type: String
-    },
-
-    label: {
-      type: String
+    anchor: {
+      type: Boolean,
+      default: false
     },
 
     button: {
@@ -72,16 +43,6 @@ export default {
       // validator: function (value) {
       //   return ['border', 'primary', 'block'].indexOf(value) !== -1;
       // }
-    },
-
-    scale: {
-      type: String,
-      default: '1',
-    },
-
-    disabled: { 
-      type: Boolean,
-      default: false
     },
 
     click: {
@@ -96,9 +57,22 @@ export default {
       }
     },
 
-    anchor: {
+    disabled: { 
       type: Boolean,
       default: false
+    },
+
+    label: {
+      type: String
+    },
+    
+    link: {
+      type: String
+    },
+
+    scale: {
+      type: String,
+      default: '1',
     }
   },
 
@@ -108,8 +82,21 @@ export default {
         [`button`]: true,
         [`${this.button}`]: true,
         [`button-${this.color}`]: this.color,
+        [`button-selfalign-${this.selfalign}`]: this.selfalign,
       };
     },
+
+    target() {
+      if(!this.link) {
+        return null
+      } else {
+        let parser = document.createElement('a')
+        parser.to = this.href
+        if (  parser.host !== window.location.host ) {
+          return '_blank'
+        }
+      }
+    }
   },
 
 }
@@ -117,7 +104,7 @@ export default {
 
 <style scoped>
   .button {
-    --b-color-background: var(--color-blue-mid);
+    --b-color-background: var(--color-blue);
     --b-color-text: var(--color-light);
     --b-color-shadow: var(--color-dark);
 
@@ -132,8 +119,7 @@ export default {
   }
 
   .button:hover {
-    --b-color-background: var(--color-blue-light);
-    background-color: var(--b-color-background);
+    --b-color-background: var(--color-violet-mid);
   }
 
   .button-green {

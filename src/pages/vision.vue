@@ -1070,27 +1070,6 @@ h4 {
   transition: all 10s;
 }
 
-/*.vision-chains.in-viewport {*/
-/*  animation: 10s collapse paused;*/
-/*  animation-iteration-count: 1;*/
-/*}*/
-
-/*@keyframes collapse {*/
-/*  0% {*/
-/*    background: linear-gradient(to right, #e30078, #e30078 25%, #81a8f8 75%, #81a8f8 100%);*/
-/*  }*/
-/*  10% { background: linear-gradient(to right, #e30078, #e30078 22.5%, #81a8f8 72.5%, #81a8f8 100%); }*/
-/*  20% { background: linear-gradient(to right, #e30078, #e30078 30%, #81a8f8 70%, #81a8f8 100%); }*/
-/*  30% { background: linear-gradient(to right, #e30078, #e30078 32.5%, #81a8f8 67.5%, #81a8f8 100%); }*/
-/*  40% { background: linear-gradient(to right, #e30078, #e30078 35%, #81a8f8 65%, #81a8f8 100%); }*/
-/*  50% { background: linear-gradient(to right, #e30078, #e30078 37.5%, #81a8f8 62.5%, #81a8f8 100%); }*/
-/*  60% { background: linear-gradient(to right, #e30078, #e30078 40%, #81a8f8 60%, #81a8f8 100%); }*/
-/*  70% { background: linear-gradient(to right, #e30078, #e30078 42.5%, #81a8f8 57.5%, #81a8f8 100%); }*/
-/*  80% { background: linear-gradient(to right, #e30078, #e30078 45%, #81a8f8 55%, #81a8f8 100%); }*/
-/*  90% { background: linear-gradient(to right, #e30078, #e30078 47.5%, #81a8f8 52.5%, #81a8f8 100%); }*/
-/*  100% { background: linear-gradient(to right, #e30078, #e30078 50%, #81a8f8 50%, #81a8f8 100%); }*/
-/*}*/
-
 .vision-chains .grid-2 {
   text-transform: uppercase;
   letter-spacing: 1px;
