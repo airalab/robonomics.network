@@ -29,7 +29,7 @@ jobs:
         run: |
           sudo npm install --global @gridsome/cli
           npm ci
-          gridsome build
+          gridsome --max_old_space_size=4096 build
         env:
           FORM_SCRIPT: ${{ secrets.FORM_SCRIPT }}
           GRIDSOME_RECAPTCHA: ${{ secrets.GRIDSOME_RECAPTCHA }}
