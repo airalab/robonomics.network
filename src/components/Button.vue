@@ -1,7 +1,7 @@
 <!-- 
 todo:
 Используем где кнопки везде компонент.
-Надо его акуратно переименовать во что-то более специфичное, 
+Надо его аккуратно переименовать во что-то более специфичное, 
 то есть выбрать приставку для всех "публичных" компонентов этого сайта. 
 Что-то короткое не больше 4 символов (из разряда my-button как обычно в примерах пишут, но не так конечно)
 -->
@@ -87,13 +87,15 @@ export default {
     },
 
     target() {
-      if(!this.link) {
-        return null
-      } else {
-        let parser = document.createElement('a')
-        parser.to = this.href
-        if (  parser.host !== window.location.host ) {
-          return '_blank'
+      if (process.isClient) {
+          if(!this.link) {
+          return null
+        } else {
+          let parser = document.createElement('a')
+          parser.to = this.href
+          if (  parser.host !== window.location.host ) {
+            return '_blank'
+          }
         }
       }
     }
