@@ -22,6 +22,9 @@
     - link: 'https://ipfs.io/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V'
       text: 'Русский'
       id: 1
+    - link: 'https://crustipfs.art/ipfs/QmU8CFPD9bQheKJhKdyAZ11GNhuqHKPok5Tu8bUrNjCZtg'
+      text: 'Español'
+      id: 2
 
 
 - title: 'Book «Robot economics», 2018'
