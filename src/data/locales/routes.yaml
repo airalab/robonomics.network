@@ -71,6 +71,8 @@
   typename: 'page'
 
 # all cases go here
-
+- path: '/cases/fronius-solar-web'
+  component: './src/pages/cases/fronius-solar-web.vue'
+  typename: 'page'
 
 
