@@ -4,7 +4,7 @@ date: 2022-11-18
 published: true
 locale: 'ru'
 tags: ['Парачейн Робономика', 'Полкадот']
-cover_image: ./images/robonomics-crowdloan-campaigns-november-2022/cover.jpg
+cover_image: ../images/robonomics-crowdloan-campaigns-november-2022/cover.jpg
 description: "Первый период аренды слота для Робономики в сети Kusama подходит к концу. Выиграв аукцион #20, мы получили возможность запустить, настроить и проверить работу первых проектов на базе Робономики внутри экосистемы Polkadot."
 abstract: "Первый период аренды слота для Робономики в сети Kusama подходит к концу. Выиграв аукцион #20, мы получили возможность запустить, настроить и проверить работу первых проектов на базе Робономики внутри экосистемы Polkadot."
 ---
@@ -81,5 +81,5 @@ abstract: "Первый период аренды слота для Робоно
 
 Keep walking…
 
-![](./images/robonomics-crowdloan-campaigns-november-2022/keep-walking.png)
+![](../images/robonomics-crowdloan-campaigns-november-2022/keep-walking.jpg)
 

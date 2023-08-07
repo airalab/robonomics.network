@@ -10,19 +10,20 @@
 
         <ul class="nav-content">
 
-            <li><g-link to="/white-paper">{{$ts('White Paper 2022')}}</g-link></li>
-            <li><g-link to="/timeline">{{$ts('Timeline')}}</g-link></li>
-            <li><g-link to="/xrt">{{$ts('Tokenomics')}}</g-link></li>
-            <li><g-link to="/kusama-slot">{{$ts('Parachain')}}</g-link></li>
-            <li><g-link to="/papers">{{$ts('Science papers')}}</g-link></li>
-            <li class="new-column"><g-link to="/shop">{{$ts('Shop')}}</g-link></li>
-            <li><g-link to="/books">{{$ts('Books')}}</g-link></li>
-            <li><g-link to="/logos-and-assets">{{$ts('Logo and assets')}}</g-link></li>
-            <li><g-link to="/wallpapers">Wallpapers</g-link></li>
+            <li><g-link to="/white-paper">{{$t('White Paper 2022')}}</g-link></li>
+            <li><g-link to="/timeline">{{$t('Timeline')}}</g-link></li>
+            <li><g-link to="/xrt">{{$t('Tokenomics')}}</g-link></li>
+            <li><g-link to="/kusama-slot">{{$t('Parachain')}}</g-link></li>
+            <li><g-link to="/papers">{{$t('Science papers')}}</g-link></li>
+            <li class="new-column"><g-link to="/shop">{{$t('Shop')}}</g-link></li>
+            <li><g-link to="/books">{{$t('Books')}}</g-link></li>
+            <li><g-link to="/logos-and-assets">{{$t('Logo and assets')}}</g-link></li>
+            <li><g-link to="/wallpapers">{{ $t('Wallpapers') }}</g-link></li>
             <li><g-link to="/nft">NFT</g-link></li>
-            <li ><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
-            <li><g-link to="/ambassador-program">{{$ts('Ambassador program')}}</g-link></li>
-            <li><g-link to="/contact">{{$ts('Contacts')}}</g-link></li>
+            <li><g-link to="/cases">{{ $t('Cases') }}</g-link></li>
+            <li ><g-link to="/blog">{{$t('Blog')}}</g-link></li>
+            <li><g-link to="/ambassador-program">{{$t('Ambassador program')}}</g-link></li>
+            <li><g-link to="/contact">{{$t('Contacts')}}</g-link></li>
 
             <li class="new-column"><g-link to="https://wiki.robonomics.network">{{$ts('Wiki')}}</g-link></li>
             <li><g-link to="https://robonomics.academy">{{$ts('Academy')}}</g-link></li>

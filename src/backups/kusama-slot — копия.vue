@@ -288,7 +288,7 @@
           <div class="hyphens">
             <p><b>{{$ts('The final task for the 48 weeks of existence in the Kusama network is the transformation of the Robonomics parachain into the Robonomics Relay Chain. This is our vision of the future of Robonomics, as a complete segment of the Polkadot infrastructure specifically prepared for working with IoT devices.')}}</b></p>
           </div>
-        </div>
+        </div>≈
 
       </section>
 
@@ -336,12 +336,11 @@ query {
   export default {
     components: {
       MetaInfo: () => import("~/components/MetaInfo.vue"),
-      Button: () => import("~/components/Button.vue"),
       Card: () => import("~/components/TextCard.vue"),
       MovingNumbers: () => import("~/components/decor/MovingNumbers.vue"),
       tip: () => import("~/components/tip.vue"),
       LovelyRoboGirl: () => import("~/components/decor/LovelyRoboGirl.vue"),
-      Subscribtion: () => import("~/components/utils/forms.vue"),
+      // Subscribtion: () => import("~/components/utils/forms.vue"),
     },
 
 

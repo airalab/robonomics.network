@@ -9,7 +9,6 @@ abstract: "Hello to all participants!"
 ---
 import Card from '~/components/TextCard.vue'
 import UserForm from '~/components/blocks/UserForm.vue'
-import Button from '~/components/Button.vue'
 
 We are glad that you were able to pass through the black mirror and not drown in the digital world. But now a much deeper dive awaits you... the dive into the theory of the latest web3 technologies at the intersection of Cybernetics and Economics, which are designed to help IoT systems function safely and efficiently in our homes and cities.
 
@@ -40,7 +39,7 @@ You can read the chapter in the original in different languages at the links:
 
 After reading the chapter, be sure to pass the test for the second lesson in order to participate in the prize draw. You will be asked 17 questions, and we hope they will inspire you to think deeper about our ideas. To pass the test, you need to score 10 correct answers out of 17 (60%, the standard value in academic practice).  Correct answers and a list of those who successfully completed the lesson will be published on the final day of the school.
 
-<Button link="https://lesson2.robonomics.academy/" label="Take the Quiz" button="primary block" />
+<rbnet-button link="https://lesson2.robonomics.academy/" label="Take the Quiz" button="primary block" />
 
 </Card>
 

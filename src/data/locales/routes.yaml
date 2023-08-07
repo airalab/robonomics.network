@@ -66,9 +66,11 @@
   component: './src/pages/wallpapers.vue'
   typename: 'page'
 
-# - path: '/cases/'
-#   component: './src/pages/cases/Index.vue'
-#   typename: 'page'
-  
+- path: '/cases/'
+  component: './src/pages/cases/Index.vue'
+  typename: 'page'
 
 # all cases go here
+
+
+

@@ -84,18 +84,10 @@ h2:last-child, h3:last-child, h4:last-child, h5:last-child { margin-bottom: 0 }
   font-weight: 300;
 }
 
-a.out:after {
-  content: "↗";
-  margin-left: 0.1rem;
-}
 
-
-small, .text__small, .text-small { font-size: 70%; line-height: 1.2; }
+small, .text-small { font-size: 70%; line-height: 1.2; }
 .text-little { font-size: 80%; }
 .text-big { font-size: 120%; line-height: 1.6; }
-.text-big-light { font-size: 120%; line-height: 1.6; font-weight: 300; }
-.text-huge { font-size: 160%; line-height: 1.2; }
-.text-huge-light { font-size: 160%; line-height: 1.6; font-weight: 300; }
 
 .text-small p:not(:last-child), .text-little p:not(:last-child) { margin-bottom: calc(var(--space-text) * 0.5);}
 
@@ -163,10 +155,6 @@ hr.no-margins {
   margin: 0;
 }
 
-hr.hr-thick {
-  height: 1px;
-}
-
 
 hr.dark {
   background-color: var(--color-dark);
@@ -185,16 +173,12 @@ hr.color-lightgray {
   hyphens: auto;
 }
 
+/* text alignment */
 .align-right { text-align: right; }
 .text-left, .align-left { text-align: left; }
 .text-center, .align-center { text-align: center; }
 
-.ul-nostyle {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
-}
-
+/* for code */
 code {
   max-width: 100%;
   overflow-x: scroll;
@@ -207,11 +191,11 @@ code {
   /* hide scrollbar */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+
+  font-size: calc(var(--base-font-size) * 0.8);
 }
 
 code::-webkit-scrollbar { display: none; }
-
-
 
 table {
   margin-bottom: var(--space-text);
@@ -282,18 +266,6 @@ li:not(:last-child) {
   margin-bottom: var(--space);
 }
 
-.post h2, .post h3, .post h4, .post h5 {
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.post code {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: var(--post-code-bg);
-  font-weight: bold;
-}
-
 .text-col-2, .text-col-3 {
   column-count: 2;
   column-gap: var(--space);
@@ -321,11 +293,8 @@ li:not(:last-child) {
   break-inside: avoid-column;
 }
 
-.text-color-blue { color: var(--color-blue) }
-.text-color-red, a.text-color-red { color: var(--color-red) !important }
 
-a.text-color-red:hover { opacity: 0.8;}
-
+/* ambassador program */
 .label-red {
   display: inline-block;
   padding: 0 0.2rem;

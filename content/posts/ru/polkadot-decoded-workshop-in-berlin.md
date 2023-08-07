@@ -3,7 +3,7 @@ title: 'Polkadot Decoded Workshop в Берлине “Сценарии прим
 date: 2022-06-10
 published: true
 locale: 'ru'
-cover_image: ./images/polkadot-decoded-workshop-in-berlin/cover.jpg
+cover_image: ../images/polkadot-decoded-workshop-in-berlin/cover.jpg
 description: "Команда Робономики хотела бы повлиять на развитие сети Kusama с помощью сценариев для личного использования у вас дома! Мы покажем: как вы можете взаимодействовать с самыми популярными датчиками (такими как Aqara/Xiaomi) через Kusama, как вы можете подключить коворкинг под управлением Kusama Parachain и многое другое…"
 abstract: "Дата: 29 Июня. Время: 11:50 (по Берлину)"
 tags: ['События', 'Полкадот']

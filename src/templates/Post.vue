@@ -89,10 +89,10 @@ query($id: ID!) {
 
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
-      PostMeta: () => import('~/components/PostMeta.vue'),
-      // PostTags: () => import('~/components/PostTags.vue'),
+      PostMeta: () => import('~/components/post/PostMeta.vue'),
+      // PostTags: () => import('~/components/post/PostTags.vue'),
       PostCard: () => import('~/components/PostCard.vue'),
-      PostRelated: () => import('~/components/PostRelated.vue'),
+      PostRelated: () => import('~/components/post/PostRelated.vue'),
       Abstract: () => import('~/components/TextAbstract.vue'),
       PostAuthor: () => import('~/components/blocks/PostAuthor.vue'),
     },
@@ -136,6 +136,19 @@ query($id: ID!) {
   /* .post strong, .post b {
       background-color: #f8ffb5;
     } */
+
+  .post h2, .post h3, .post h4, .post h5 {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .post code {
+    padding: calc(var(--space) * 0.5) var(--space);
+    background-color: var(--color-light);
+    border: 2px solid var(--color-blue);
+    border-top: 10px solid var(--color-blue);
+    margin-bottom: var(--space);
+  }
 
   .post a { word-break: break-all; }
 

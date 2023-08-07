@@ -3,7 +3,7 @@ title: 'Robonomics и Moonriver запустили XCM-интеграцию'
 date: 2022-11-22
 published: true
 locale: 'ru'
-cover_image: ./images/xcm-integration-with-moonriver-started/cover.jpg
+cover_image: ../images/xcm-integration-with-moonriver-started/cover.jpg
 description: "Мы рады сообщить, что Moonbeam – кроссчейн-платформа для смарт-контрактов – и Robonomics Network начали сотрудничество и открыли HRMP-канал между парачейнами Moonriver и Robonomics. Теперь токен XRT можно использовать как xcXRT токен в экосистеме Moonriver."
 tags: ['Парачейн Робономика', 'Сотрудничество']
 ---
