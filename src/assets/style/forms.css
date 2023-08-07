@@ -86,45 +86,8 @@ select {
 	padding-right: 2.2rem;
 }
 
-select.robot {
-	background-image: url('~@/assets/images/3.gif');
-	background-size: 2.8rem;
-	background-position: calc(100% - 0.4rem) calc(50% + 0.4rem);
-  }
-
-.form-line {
-	margin-bottom: var(--space);
-}
-
-/* .label {
-	display: flex;
-	align-items: center;
-} */
-
 label {
 	font-size: 80%;
-}
-
-.input-signed-right {
-	position: relative;
-}
-
-.input-signed-right .sign {
-	position: absolute;
-	right: 0.4rem;
-	top: 0.4rem;
-	background-color: var(--body-bg);
-	color: var(--border-color);
-}
-
-.input-signed-right input:focus + .sign, .input-signed-right input:not(:placeholder-shown) + .sign {
-	color: var(--color-dark)
-}
-
-.msg-error {
-	font-size: calc( var(--base-font-size) * 0.8 );
-	color: var(--color-red);
-	font-weight: 500;
 }
 
 .error, input.error {
@@ -135,23 +98,13 @@ label {
 	border-color: var(--color-red) !important;
 }
 
-.msg-ok {
-	font-size: calc( var(--base-font-size) * 0.8 );
-	color: var(--color-green);
-	font-weight: 500;
-}
-
-.ok {
-	color: var(--color-green);
-}
-
 input[type="submit"], button {
     border-color: var(--color-blue);
     background-color: var(--color-blue);
     color: var(--color-light);
     /* margin-top: var(--space); */
-	text-transform: uppercase;
-	letter-spacing: 1px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
     cursor: pointer;
     transition: 0.2s ease all;
 }

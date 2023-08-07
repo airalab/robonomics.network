@@ -43,10 +43,10 @@
                 </div>
 
                 <section class="layout text-center animate-inside" v-in-viewport.once>
-                    <Button color="violet" link="#steps" anchor>
+                    <rbnet-button color="violet" link="#steps" anchor>
                         <img class="button-icon" aria-hidden="true" src="../assets/images/hand-hi.png" />
                         {{$ts('Get your role, ambassador')}}
-                    </Button>
+                    </rbnet-button>
                 </section>
 
             </div>
@@ -121,10 +121,10 @@
         <section class="layout layout__text section-wide animate-inside" v-in-viewport.once>
             <h4>{{$ts('Get all our support and visual materials in ambassador’s chat')}}</h4>
             <section class="layout text-center animate-inside" v-in-viewport.once>
-                <Button color="violet" link="#steps" anchor>
+                <rbnet-button color="violet" link="#steps" anchor>
                     <img class="button-icon" aria-hidden="true" src="../assets/images/hand-hi.png" />
                     {{$ts('Get your role, ambassador')}}
-                </Button>
+                </rbnet-button>
             </section>
         </section>
 
@@ -146,7 +146,6 @@ query {
         components: {
             Card: () => import('~/components/TextCard.vue'),
             MetaInfo: () => import("~/components/MetaInfo.vue"),
-            Button: () => import("~/components/Button.vue"),
             List: () => import("~/components/blocks/List.vue"),
             ListItem: () => import("~/components/blocks/ListItem.vue"),
         },

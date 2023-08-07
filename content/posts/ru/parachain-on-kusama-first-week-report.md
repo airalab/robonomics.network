@@ -3,7 +3,7 @@ title: "Парачейн Робономики на Кусама: первая н
 date: 2022-01-18
 published: true
 locale: 'ru'
-cover_image: ./images/parachain-on-kusama-first-week-report/cover.jpg
+cover_image: ../images/parachain-on-kusama-first-week-report/cover.jpg
 description: "С момента запуска парачейна Робономики получилось выполнить довольно большой список работ. За что отдельное спасибо каждому, кто оторвался от салатов, шампанского и поездок по родственникам уже 2 и 3 января :) Ниже рассказываю  о том, в чем лично участвовал."
 abstract: "С момента запуска парачейна Робономики получилось выполнить довольно большой список работ. За что отдельное спасибо каждому, кто оторвался от салатов, шампанского и поездок по родственникам уже 2 и 3 января :) Ниже рассказываю  о том, в чем лично участвовал."
 author: '@ensrationis'
@@ -76,7 +76,7 @@ import Card from '~/components/TextCard.vue'
 
 ## Сформирован технический комитет парачейна
 
-![the Parachain Technical Committee](./images/parachain-on-kusama-first-week-report/1-parachain-technical-committee.png)
+![the Parachain Technical Committee](../images/parachain-on-kusama-first-week-report/1-parachain-technical-committee.png)
 
 Шесть разработчиков проекта, которые чаще всех участвовали в задачах фронтир сети, были включены в [технический комитет](https://wiki.polkadot.network/ru-RU/docs/learn-governance#technical-committee) парачейна. 
 
@@ -88,7 +88,7 @@ import Card from '~/components/TextCard.vue'
 
 Инструкцию о том, как сформировать запрос в сокровищницу Робономики, а также информацию о приоритетных направлениях фондирования можно будет найти в последующих статьях в блоге.
 
-![Robonomics Treasury](./images/parachain-on-kusama-first-week-report/2-Treasury.png)
+![Robonomics Treasury](../images/parachain-on-kusama-first-week-report/2-Treasury.png)
 
 Сокровищница доступна по ссылке: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/treasury
 
@@ -96,7 +96,7 @@ import Card from '~/components/TextCard.vue'
 
 Разработчики выполнили отправку 1/12 вознаграждения на балансы crowdloan contributors. Проверить баланс можно с помощью Developer > Chain state > system.account():FrameSystemAccountInfo 
 
-![Robonomics Chain state] (./images/parachain-on-kusama-first-week-report/3-chain-state.png)
+![Robonomics Chain state] (../images/parachain-on-kusama-first-week-report/3-chain-state.png)
 
 Значение Free, как показано на скрине, соответствует 1,102,517,448 Wn ~ 1,1 XRT. И это свободный баланс, доступный для перевода внутри сети.
 
@@ -104,7 +104,7 @@ import Card from '~/components/TextCard.vue'
 
 Линейно в течение 11 месяцев полное вознаграждение будет разблокироваться. Сумму, доступную для разблокировки, можно увидеть на странице Accounts в поле “vested”.
 
-![The amount available for unlocking](./images/parachain-on-kusama-first-week-report/4-amount-available.png)
+![The amount available for unlocking](../images/parachain-on-kusama-first-week-report/4-amount-available.png)
 
 Экстра 1 XRT для держателей NFT карточек Робономики можно будет получить ближе к концу января. Об этом разработчики сообщат отдельно в [Twitter](https://twitter.com/AIRA_Robonomics).
 
@@ -112,7 +112,7 @@ import Card from '~/components/TextCard.vue'
 
 На протяжении последних 6 месяцев мы продолжали тестировать функционал парачейна во [фронтир сети](https://robonomics.network/blog/robonomics-frontier/). На первой недели жизни парачейна в Kusama разработчики остановили работу фронтир сети и распределили балансы в парачейне на Kusama.
 
-![frontier network](./images/parachain-on-kusama-first-week-report/5-frontier-network.png)
+![frontier network](../images/parachain-on-kusama-first-week-report/5-frontier-network.png)
 
 Как можно увидеть из скрина, последний блок парачейна Робономики во фронтир сети: 1,046,628, фронтир сеть остановлена 143 часа назад. 
 
@@ -138,7 +138,7 @@ https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier .rpc.robonom
 
 Во втором обновлении парачейна Робономики был включён модуль стейкинга XRT.
 
-![Robonomics dapp](./images/parachain-on-kusama-first-week-report/6-Robonomics-dapp.png)
+![Robonomics dapp](../images/parachain-on-kusama-first-week-report/6-Robonomics-dapp.png)
 *Пример работы с разделом стейкинга в dapp Робономики*
 
 Стейкинг XRT доступен в dapp Робономики по следующей ссылке: https://dapp.robonomics.network/#/staking/ 

@@ -69,8 +69,8 @@
 
       <section class="section robonomics-section">
         <div class="layout layout__text animate-inside" v-in-viewport.once>
-          <h2>{{$ts('What is Robonomics network?')}}</h2>
-          <p class="text-center">{{$ts('Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}</p>
+          <h2>{{$t('What is Robonomics network?')}}</h2>
+          <p class="text-center">{{$t('Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}</p>
         </div>
 
         <div class="layout layout__content ">
@@ -81,7 +81,7 @@
 
       <section>
         <div class="layout layout__text align-center">
-          <h2>{{$ts('Get started')}}</h2>
+          <h2>{{$t('Get started')}}</h2>
         </div>
 
         <section class="index-getstarted layout layout__content grid-4 animate-inside" v-in-viewport.once>
@@ -89,40 +89,40 @@
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-1.png" />
             </div>
-            <h3>{{$ts('Explore Robonomics')}}</h3>
-            <p>{{$ts('Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more')}}</p>
+            <h3>{{$t('Explore Robonomics')}}</h3>
+            <p>{{$t('Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="/xrt">
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-2.png" />
             </div>
-            <h3>{{$ts('Get XRT')}}</h3>
-            <p>{{$ts('XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain')}}</p>
+            <h3>{{$t('Get XRT')}}</h3>
+            <p>{{$t('XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://dapp.robonomics.network/#/">
           <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-3.png" />
             </div>
-            <h3>{{$ts('Use a Dapp')}}</h3>
-            <p>{{$ts('Take a look at the Beta version of decentralized application for managing IoT devices')}}</p>
+            <h3>{{$t('Use a Dapp')}}</h3>
+            <p>{{$t('Take a look at the Beta version of decentralized application for managing IoT devices')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/">
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/explore-4.png" />
             </div>
-            <h3>{{$ts('Start building')}}</h3>
-            <p>{{$ts('Learn Robonomics through tutorials and practically useful experimenting in Robonomics WIKI')}}</p>
+            <h3>{{$t('Start building')}}</h3>
+            <p>{{$t('Learn Robonomics through tutorials and practically useful experimenting in Robonomics WIKI')}}</p>
           </g-link>
         </section>
       </section>
 
       <section class="section__whitespace">
         <section class="layout layout__text align-center">
-          <h2>{{$ts('Robonomics objectives')}}</h2>
-          <p class="text-center">{{$ts('Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed')}}:</p>
+          <h2>{{$t('Robonomics objectives')}}</h2>
+          <p class="text-center">{{$t('Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed')}}:</p>
         </section>
 
         <div class="goals animate-inside" v-in-viewport.once>
@@ -132,8 +132,8 @@
             <g-image src="~/assets/images/robots-digitalTwins.png" />
 
             <div class="text-col-1">
-              <h3>1. {{$ts('IoT device management with a decentralized cloud')}}</h3>
-              <p class="hyphens">{{$ts('Blockchain networks have all the parameters to ensure the highest level of security for device launch and receiving telemetry. Interaction with a device can actually be described by changing the state of the digital twin stored in the blockchain network and delivering information about these changes to the physical device. In the case of using a permissionless blockchain, we can be sure of the global availability of providers, as well as a high level of data protection of the digital twin from unwanted changes.')}}</p>
+              <h3>1. {{$t('IoT device management with a decentralized cloud')}}</h3>
+              <p class="hyphens">{{$t('Blockchain networks have all the parameters to ensure the highest level of security for device launch and receiving telemetry. Interaction with a device can actually be described by changing the state of the digital twin stored in the blockchain network and delivering information about these changes to the physical device. In the case of using a permissionless blockchain, we can be sure of the global availability of providers, as well as a high level of data protection of the digital twin from unwanted changes.')}}</p>
             </div>
 
           </section>
@@ -143,8 +143,8 @@
             <g-image src="~/assets/images/intro-rwsFeature-3.png" />
             
             <div class="text-col-1">
-              <h3>2. {{$ts('Techno-economic transactions between humans and machines')}}</h3>
-              <p class="hyphens">{{$ts('We can talk about institutional achievements in terms of access of automated systems directly to digital markets through cryptocurrencies and smart contracts. For example, Ethereum already implements most of the basic tools of economic activity. The applications created today to connect the end user and IoT devices will be much more efficient if the payment and terms of service are inseparable from the launch parameters of the device.')}}</p>
+              <h3>2. {{$t('Techno-economic transactions between humans and machines')}}</h3>
+              <p class="hyphens">{{$t('We can talk about institutional achievements in terms of access of automated systems directly to digital markets through cryptocurrencies and smart contracts. For example, Ethereum already implements most of the basic tools of economic activity. The applications created today to connect the end user and IoT devices will be much more efficient if the payment and terms of service are inseparable from the launch parameters of the device.')}}</p>
             </div>
 
             
@@ -155,8 +155,8 @@
             <g-image src="~/assets/images/robots-cloud.png" />
             
             <div class="text-col-1">
-              <h3>3. {{$ts('Serverless IoT applications for users')}}</h3>
-              <p class="hyphens">{{$ts('The question of the privacy of users of modern applications should not be stuck in the inability of companies to use modern advances in the field of web3. There is no need to authenticate or require connection to specific servers to access telemetry and control the device.')}}</p>
+              <h3>3. {{$t('Serverless IoT applications for users')}}</h3>
+              <p class="hyphens">{{$t('The question of the privacy of users of modern applications should not be stuck in the inability of companies to use modern advances in the field of web3. There is no need to authenticate or require connection to specific servers to access telemetry and control the device.')}}</p>
             </div>
             
           </section>
@@ -168,7 +168,7 @@
 
       <section class="section__whitespace">
         <div class="layout layout__text align-center">
-          <h2>{{$ts('Learn with Robonomics')}}</h2>
+          <h2>{{$t('Learn with Robonomics')}}</h2>
         </div>
         <section class="index-academy layout layout__content grid-3 animate-inside" v-in-viewport.once>
           <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/introduction-course/overview">
@@ -176,8 +176,8 @@
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/academy-1.png" />
             </div>
-            <h3>{{$ts('Introduction course')}}</h3>
-            <p>{{$ts('Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.')}}</p>
+            <h3>{{$t('Introduction course')}}</h3>
+            <p>{{$t('Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/boston-dynamics-spot/overview">
@@ -185,8 +185,8 @@
             <div class="img-back spot">
               <g-image aria-hidden="true" src="~/assets/images/academy-2.png" />
             </div>
-            <h3>{{$ts('Boston dynamics spot software developing')}}</h3>
-            <p>{{$ts('We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.')}}</p>
+            <h3>{{$t('Boston dynamics spot software developing')}}</h3>
+            <p>{{$t('We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/smart-home-course/overview/">
@@ -194,8 +194,8 @@
             <div class="img-back">
               <g-image aria-hidden="true" src="~/assets/images/academy-3.png" />
             </div>
-            <h3>{{$ts('Sovereign smart home with robonomics and home assistant')}}</h3>
-            <p>{{$ts('In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.')}}</p>
+            <h3>{{$t('Sovereign smart home with robonomics and home assistant')}}</h3>
+            <p>{{$t('In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.')}}</p>
           </g-link>
         </section>
       </section>
@@ -865,4 +865,3 @@ query {
    
   }
 </script>
-

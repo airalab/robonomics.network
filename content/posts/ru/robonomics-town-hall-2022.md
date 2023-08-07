@@ -4,7 +4,7 @@ date: 2022-08-27
 published: true
 locale: 'ru'
 tags: ['Парачейн Робономика', 'Сообщество']
-cover_image: ./images/robonomics-town-hall-2022/cover.jpg
+cover_image: ../images/robonomics-town-hall-2022/cover.jpg
 description: "В последнюю неделю августа (с 28 августа по 3 сентября) будьте готовы поучаствовать в обсуждении и голосовании токенами XRT."
 abstract: "В последнюю неделю августа (с 28 августа по 3 сентября) будьте готовы поучаствовать в обсуждении и голосовании токенами XRT."
 ---

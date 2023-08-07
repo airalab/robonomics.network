@@ -1,6 +1,6 @@
 <template>
 
-  <ul class="ul-nostyle grid-3"  v-if="assets && allTelegrams.length">
+  <ul class="list-simple grid-3"  v-if="assets && allTelegrams.length">
     <li class="share" :class="classes" v-for="(asset, key) in assets" :key="key" v-if="asset.title != 'Telegram chat'">
       <ShareItem :asset=asset />
     </li>

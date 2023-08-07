@@ -20,16 +20,16 @@
         </div>
         <g-image class="dapp" aria-hidden="true" src="~/assets/images/index-dapp.png" />
       </div>
-      <h3>{{$ts('Decentralized application')}}</h3>
+      <h3>{{$t('Decentralized application')}}</h3>
     </div>
 
     <div class="scheme-a animate-inside" v-in-viewport.once>
       <div class="scheme-a-right">
-        <span>{{$ts('Function request')}}</span>
+        <span>{{$t('Function request')}}</span>
         <span aria-hidden="true" class="arrow">---------------&gt;</span>
       </div>
       <div class="scheme-a-left">
-        <span>{{$ts('Report')}}</span>
+        <span>{{$t('Report')}}</span>
         <span aria-hidden="true" class="arrow">&lt;---------------</span>
       </div>
     </div>
@@ -80,17 +80,17 @@
             </g>
           </g>
         </svg>
-        <h3>{{$ts('Digital twin')}}</h3>
+        <h3>{{$t('Digital twin')}}</h3>
       </div>
     </div>
 
     <div class="scheme-a animate-inside" v-in-viewport.once>
       <div class="scheme-a-right">
-        <span>{{$ts('Control')}}</span>
+        <span>{{$t('Control')}}</span>
         <span aria-hidden="true" class="arrow">---------------></span>
       </div>
       <div class="scheme-a-left">
-        <span>{{$ts('Log')}}</span>
+        <span>{{$t('Log')}}</span>
         <span aria-hidden="true" class="arrow">&lt;---------------</span>
       </div>
     </div>
@@ -115,7 +115,7 @@
 
         </div>
         <g-image aria-hidden="true" src="~/assets/images/index-smart-device.svg" />
-        <h3>{{$ts('IoT / Smart device')}}</h3>
+        <h3>{{$t('IoT / Smart device')}}</h3>
       </div>
     </div>
   </div>

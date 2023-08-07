@@ -126,7 +126,7 @@
                 {{$ts(`Open questions of teleology and Mises' work`)}}
               </li>
             </ul>
-            <g-link to="/vision" target="_blank" class="button large white">{{$ts(`Read chapter 1 on the Robonomics website`)}}</g-link>
+            <rbnet-button class="large white" link="/vision">{{$ts(`Read chapter 1 on the Robonomics website`)}}</rbnet-button>
           </div>
           <div class="first-chapter__images chapter__images">
             <div class="first-chapter__images--top">
@@ -202,7 +202,7 @@
                 {{$ts(`A simple representation of Robonomics architecture`)}}
               </li>
             </ol>
-            <g-link to="/architecture" target="_blank" class="button large white">{{$ts(`Read chapter 2 on the Robonomics website`)}}</g-link>
+            <rbnet-button class="large white" link="/vision">{{$ts(`Read chapter 2 on the Robonomics website`)}}</rbnet-button>
           </div>
           <div class="second-chapter__images chapter__images">
             <div class="scheme-image">
@@ -273,10 +273,10 @@
           <p class="discord__text hyphens">
             {{$ts(`We continue to update the white paper of Robonomics`)}}, <br/> {{$ts(`stay tuned for new parts on our website and in Discord`)}}. 
           </p>
-          <Button class="wp__button" color="violet" :link="$static.metadata.discord">
+          <rbnet-button class="wp__button" color="violet" :link="$static.metadata.discord">
             <g-image class="button-icon" aria-hidden="true" src="~/assets/images/white-paper-2022/discord.svg" />
             {{$ts(`JOIN OUR DISCORD`)}}
-          </Button>
+          </rbnet-button>
           <div class="elegant-robot">
             <g-image aria-hidden="true" src="~/assets/images/white-paper-2022/elegant-robot.svg" />
           </div>
@@ -301,7 +301,6 @@ query {
 export default {
 
   components: {
-    Button: () => import("~/components/Button.vue"),
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     Spot: () => import("~/components/decor/Spot.vue"),
 },
@@ -386,6 +385,17 @@ export default {
     text-align: left;
    }
 
+   .chapter__text .button {
+    padding: 1.5rem 1.8rem;
+    text-transform: unset;
+   }
+
+
+  .chapter__text .button:hover {
+    --b-color-background: var(--white-button-hover);
+    background-color: var(--b-color-background);
+  }
+
    .chapter-accent {
     display: block;
    }
@@ -411,12 +421,13 @@ export default {
     font-weight: 500;
   }
 
-  .button {
-    padding:  1.5rem 1.8rem;
+  .wp-page .button {
+    font-weight: 700;
+    font-family: var(--font-family-code);
     box-shadow: 6px 6px 0 var(--color-dark);
   }
 
-  .button:hover {
+  .dark-theme .wp-page .button:hover {
     --b-color-background: var(--white-button-hover);
     background-color: var(--b-color-background);
   }

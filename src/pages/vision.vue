@@ -419,8 +419,6 @@ export default {
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     Abstract: () => import("~/components/TextAbstract.vue"),
-    Button: () => import("~/components/Button.vue"),
-    tip: () => import("~/components/tip.vue"),
     MovingNumbers: () => import("~/components/decor/MovingNumbers.vue")
   },
 

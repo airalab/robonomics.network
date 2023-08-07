@@ -16,6 +16,7 @@ todo:
       @click="$emit('click')"
       :style="{transform: 'scale('+scale+')'}"
       :v-smooth-scroll="anchor ? '{ updateHistory: false, offset: -250 }' : null"
+      class="button"
     >
 
       <template v-if="label">{{label}}</template>
@@ -105,19 +106,87 @@ export default {
 </script>
 
 <style scoped>
-  .button {
+  .button, button {
     --b-color-background: var(--color-blue);
     --b-color-text: var(--color-light);
     --b-color-shadow: var(--color-dark);
 
     padding: .8rem 1.2rem;
     line-height: 1;
+    font-weight: 700;
 
     background-color: var(--b-color-background);
     color: var(--b-color-text);
     box-shadow: 4px 4px 0 var(--b-color-shadow);
     border-color: var(--b-color-background);
     text-transform: uppercase;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  .button[disabled], button[disabled] {
+    pointer-events: none;
+    filter: grayscale(1);
+    opacity: 0.4;
+  }
+  
+  .button select {
+
+    display: inline-block;
+    vertical-align: middle;
+
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--color-button-select);
+    font-size: 80%;
+    font-family: var(--font-family-code);
+    font-weight: bold;
+    line-height: 1;
+    padding: .5rem;
+    padding-right: 30px;
+
+    background-image: url('/select-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 24px/4) 50%;
+
+    color: var(--color-light);
+
+    overflow: hidden;
+  }
+
+  .button.block, button.block{
+    display: block;
+    width: 100%;
+    margin: calc(var(--space)/2) 0;
+  }
+
+  .button.small {
+    padding: 0.3rem;
+  }
+
+  .button.large {
+    padding: 0.8rem 1.4rem;
+    font-size: calc(var(--base-font-size) * 1.2);
+  }
+
+  .button.orange, button.orange {
+    background-color: var(--color-orange);
+    border-color: var(--color-orange);
+    box-shadow: 2px 2px 0 var(--color-orange-rgba);
+  }
+
+  .button.white, button.white {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    border-color: var(--color-dark);
+    box-shadow: 2px 2px 0 var(--color-dark);
   }
 
   .button:hover {
@@ -138,13 +207,16 @@ export default {
     --b-color-background: var(--color-red-dark);
   }
 
-
   .button-violet {
     --b-color-background: var(--color-purple-mid);
     color: #fff;
   }
   .button-violet:hover {
     --b-color-background: var(--color-dark);
+  }
+
+  .dark-theme .button-violet:hover {
+    --b-color-background: #000;
   }
   
   .button-bluevivid {

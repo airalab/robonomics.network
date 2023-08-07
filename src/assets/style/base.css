@@ -40,6 +40,7 @@ img {
   }
 }
 
+/* for pagination icons */
 @font-face {
   font-family: 'customIcons';
   src: url('../fonts/icomoon.woff');
@@ -48,6 +49,7 @@ img {
   font-style: normal;
 }
 
+/* kusama-slot page */
 .theme-support-light, .theme-support-dark {
   display: none !important;
 }
@@ -61,7 +63,6 @@ img {
 }
 
 /* arabic */
-
 html[lang="ar"] h1, html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] h4,html[lang="ar"] h5,html[lang="ar"] h6,html[lang="ar"] p,html[lang="ar"] a,html[lang="ar"] span {
   direction: rtl;
   unicode-bidi: embed
