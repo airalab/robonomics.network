@@ -1,6 +1,6 @@
 <template>
 
-    <select v-if="$localesList" tabindex="0" @change="changelocale($event)">
+    <select v-if="$localesList" tabindex="0" @change="onSelectChange($event)">
   
       <template v-for="(item,key) in $localesList">
         <option v-bind:key="key" :selected="item == $locale" v-bind:value="item">
@@ -55,25 +55,49 @@
 
 export default {
 
-  methods: {
-    changelocale(event) {
-
-        console.log(event.target.value)
-
-        // get chosen locale
-        let lang = event.target.value
-
-        //update locale in options
-        this.$setLocale(lang)
-
-        //redirect to page with chosen locale
-        let newpath = this.$tp(this.$route.path, lang)
-        // this.$router.push(newpath) < - this doesn't work for some reason
-        window.location.href = newpath
-
+  data() {
+    return {
+      locale: 'en'
     }
-  }
+  },
 
-}
+  computed: {
+    locales() {
+      return locales
+    }
+  },
+
+  methods: {
+
+    resolveI18n() {
+      let locale = this.locale
+      this.$setI18n({
+        locale,
+      })
+    },
+
+    initPath() {
+      if(localStorage.getItem('locale') ) {
+        this.locale = localStorage.getItem('locale');
+        // setTimeout(() => {
+        //   this.$emit('setShow', true)
+        // }, 100)
+      }  
+    },
+
+    onSelectChange(e) {
+      this.$setLocale(e.target.value)
+      let newpath = this.$tp(this.$route.path, e.target.value);
+      window.location.href = newpath;
+    },
+    },
+
+    mounted() {
+    // this.$emit('setShow', false)
+      this.initPath();
+      this.resolveI18n();
+    }
+
+  }
 
 </script>

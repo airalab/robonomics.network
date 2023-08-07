@@ -11,18 +11,19 @@ abstract: "Robonomics Town Hall 2022 was an event in which the Robonomics projec
 
 ## Moving from Town Hall to the Forum
 
-In the near future, something similar to the ancient forum awaits us, where everyone has the opportunity to share their ideas about improving Robonomics. If your proposal gains support from the XRT token holders, then the execution of your proposal is carried out automatically. 
+In the near future, something similar to the ancient forum awaits us, where everyone has the opportunity to share their ideas about improving Robonomics. If your proposal gains support from the XRT token holders, then the execution of your proposal is carried out automatically.
 
 However, it is important not to settle on using the Town Hall as our main form of Governance. Having questions that are prepared by the Robonomics developers to a vote, holding a meeting of XRT holders every 3/6/12 months is not the best option for the development of a Web3 project. As it currently stands, the Robonomics parachain has on-chain governance functionality, and there are no actual barriers stopping anyone in the community from starting governance proceedings (discussion / proposal / referendum). Therefore, by the end of October, instructions for creating proposals and on how to vote will become available, the result of which will directly affect the operation of, at least, the Robonomics parachain.
 
 ## Snapshot & Polkassembly
 
-It is impossible to influence the already existing Robonomics smart contracts in Ethereum. In the case of the parachain though, it is possible to change the Robonomics program code by voting. This is the main difference between the [Snapshot](https://snapshot.org/#/developers.robonomics.eth) and [Polkassembly](https://robonomics.polkassembly.io/) governance platforms.
+It is impossible to influence the already existing Robonomics smart contracts in Ethereum. In the case of the parachain though, it is possible to change the Robonomics program code by voting. This is the main difference between [Snapshot](https://snapshot.org/#/developers.robonomics.eth) and [Polkassembly](https://robonomics.polkassembly.io/) governance platforms.
 
-In addition to requesting changes to how Robonomics works on the Ethereum and Kusama networks, the community can now use Snapshot and Polkassembly to create simple polls that can help draw attention to a particular topic or issue. 
+In addition to requesting changes to how Robonomics works on the Ethereum and Kusama networks, the community can now use Snapshot and Polkassembly to create simple polls that can help draw attention to a particular topic or issue.
 
-Any XRT holder can submit a request to allocate XRT from the Treasury for any activity. There are currently over 370,000 XRT tokens in the Robonomics parachain treasury, of which the community can apply for grants using Polkassembly. Snapshot also has a Treasury mechanism. By the end of October, the developers of the project will agree on the amount of XRT that we will move from the DAO of the core team to the Snapshot treasury. 
-Therefore, from the beginning of November, similar requests for grants will be available within Ethereum.   
+Any XRT holder can submit a request to allocate XRT from the Treasury for any activity. There are currently over 370,000 XRT tokens in the Robonomics parachain treasury, of which the community can apply for grants using Polkassembly. Snapshot also has a Treasury mechanism. By the end of October, the developers of the project will agree on the amount of XRT that we will move from the DAO of the core team to the Snapshot treasury.
+
+Therefore, from the beginning of November, similar requests for grants will be available within Ethereum.
 
 As always, any opportunity can turn into a double-edged sword, so we are ready for a little chaos and expect an influx of strange requests for funding (for example, meetups somewhere in Atlantis, at the bottom of the sea).
 
@@ -34,10 +35,10 @@ Initially, 5 questions were announced for Town Hall 2022 for discussion, but in 
 
 Since the voting went in parallel for the Ethereum and Kusama networks, each of them had its own nuances. On Snapshot, voting on 4 questions was available immediately, from August 28 to October 2, and we provided voting not only for XRT holders, but also for AIR and AIRA ID legacy token holders. On the parachain, voting took place sequentially, in an order, determined by the amount of endorsements received, the highest endorsed vote was pushed to a proposal each period. Voting lasted with a launch period of 7 days. Thus, the community has chosen the following order:
 
-1. Vote to Burn 7 Million XRT: с 30.08 по 07.09
-2. ROS2 Support Grants: c 07.09 по 15.09
-3. Parachain Gov2 Interest: с 15.09 по 22.09
-4. Home Assistant Support Grants: c 22.09 по 29.09
+1. Vote to Burn 7 Million XRT: from 30.08 to 07.09
+2. ROS2 Support Grants: from 07.09 to 15.09
+3. Parachain Gov2 Interest: from 15.09 to 22.09
+4. Home Assistant Support Grants: from 22.09 to 29.09
 
 Polkadot votes additionally have an execution period of 3 days on our parachain. Thus, the last vote was sent for execution on October 2, coinciding with the end of voting on Snapshot.
 

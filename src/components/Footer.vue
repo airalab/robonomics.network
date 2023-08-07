@@ -6,29 +6,30 @@
 
           <div>
             <ul class="animate-inside" v-in-viewport.once>
-              <li><g-link to="/white-paper">{{$ts('White Paper 2022')}}</g-link></li>
-              <li><g-link to="/timeline">{{$ts('Timeline')}}</g-link></li>
-              <li><g-link to="/xrt">{{$ts('Tokenomics')}}</g-link></li>
-              <li><g-link to="/kusama-slot">{{$ts('Parachain')}}</g-link></li>
+              <li><g-link to="/white-paper">{{$t('White Paper 2022')}}</g-link></li>
+              <li><g-link to="/timeline">{{$t('Timeline')}}</g-link></li>
+              <li><g-link to="/xrt">{{$t('Tokenomics')}}</g-link></li>
+              <li><g-link to="/kusama-slot">{{$t('Parachain')}}</g-link></li>
             </ul>
           </div>
 
           <div>
             <ul class="animate-inside" v-in-viewport.once>
-              <li><g-link to="/shop">{{$ts('Shop')}}</g-link></li>
-              <li><g-link to="/papers">{{$ts('Science papers')}}</g-link></li>
-              <li><g-link to="/books">{{$ts('Books')}}</g-link></li>
-              <li><g-link to="/logos-and-assets">{{$ts('Logo and assets')}}</g-link></li>
-              <li><g-link to="/wallpapers">Wallpapers</g-link></li>
+              <li><g-link to="/shop">{{$t('Shop')}}</g-link></li>
+              <li><g-link to="/papers">{{$t('Science papers')}}</g-link></li>
+              <li><g-link to="/books">{{$t('Books')}}</g-link></li>
+              <li><g-link to="/logos-and-assets">{{$t('Logo and assets')}}</g-link></li>
+              <li><g-link to="/wallpapers">{{ $t('Wallpapers') }}</g-link></li>
               <li><g-link to="/nft">NFT</g-link></li>
             </ul>
           </div>
 
           <div>
             <ul class="animate-inside" v-in-viewport.once>
-              <li><g-link to="/blog">{{$ts('Blog')}}</g-link></li>
-              <li><g-link to="/ambassador-program">{{$ts('Ambassador program')}}</g-link></li>
-              <li><g-link to="/contact">{{$ts('Contacts')}}</g-link></li>
+              <li><g-link to="/blog">{{$t('Blog')}}</g-link></li>
+              <li><g-link to="/cases">{{ $t('Cases') }}</g-link></li>
+              <li><g-link to="/ambassador-program">{{$t('Ambassador program')}}</g-link></li>
+              <li><g-link to="/contact">{{$t('Contacts')}}</g-link></li>
             </ul>
           </div>
 
@@ -43,9 +44,13 @@
 
         </div>
         <div class="robonomics-info">
-          <!-- <span class="robonomics-info--accent">Robonomics is 100% open-source. </span> -->
-          Robonomics is 100% open-source.
-          Anyone can contribute to <g-link to="https://github.com/airalab">the code base</g-link> or <g-link to="https://robonomics.academy/en/learn/">build services with Robonomics</g-link> 
+          {{ $t('Robonomics is 100% open-source.') }}
+          {{ $t('Anyone can contribute to') }} <g-link to="https://github.com/airalab">{{ $t('the code base') }}</g-link> {{ $t('or') }} <g-link to="https://robonomics.academy/en/learn/">{{ $t('build services with Robonomics') }}</g-link> 
+        </div>
+
+        <div class="robonomics-info footer-text"  v-if="$locale != 'en'">
+          <span class="">{{ $t('Translation was executed by AI so there may be some inaccuracies') }}. </span>
+           <g-link to="https://github.com/airalab/robonomics.network/issues">{{ $t('Inform us') }}</g-link>, {{ $t('please') }}, {{ $t('if you find any') }}
         </div>
       </section>
     </div>
@@ -145,6 +150,13 @@ query {
 
   .robonomics-info a {
     color: var(--color-blue) !important;
+  }
+
+  .footer-text {
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #2b2b2b;
   }
 
   @media screen and (max-width:1500px){

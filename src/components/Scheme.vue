@@ -1,14 +1,14 @@
 <template>
   <div class="scheme">
-    <div class="scheme-item animate" v-in-viewport.once><div>{{$ts('User (D)App')}}</div></div>
+    <div class="scheme-item animate" v-in-viewport.once><div>{{$t('User (D)App')}}</div></div>
 
     <div class="scheme-a animate-inside" v-in-viewport.once>
       <div class="scheme-a-right">
-        <span>{{$ts('Function request')}}</span>
+        <span>{{$t('Function request')}}</span>
         <span aria-hidden="true" class="arrow">---------------&gt;</span>
       </div>
       <div class="scheme-a-left">
-        <span>{{$ts('Report')}}</span>
+        <span>{{$t('Report')}}</span>
         <span aria-hidden="true" class="arrow">&lt;---------------</span>
       </div>
     </div>
@@ -17,16 +17,16 @@
 
     <div class="scheme-a animate-inside" v-in-viewport.once>
       <div class="scheme-a-right">
-        <span>{{$ts('Control')}}</span>
+        <span>{{$t('Control')}}</span>
         <span aria-hidden="true" class="arrow">---------------></span>
       </div>
       <div class="scheme-a-left">
-        <span>{{$ts('Log')}}</span>
+        <span>{{$t('Log')}}</span>
         <span aria-hidden="true" class="arrow">&lt;---------------</span>
       </div>
     </div>
 
-    <div class="scheme-item animate" v-in-viewport.once><div>{{$ts('IoT Device')}}</div></div>
+    <div class="scheme-item animate" v-in-viewport.once><div>{{$t('IoT Device')}}</div></div>
   </div>
 </template>
 

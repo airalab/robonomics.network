@@ -4,7 +4,7 @@ date: 2023-02-14
 published: true
 locale: 'ru'
 tags: ['NFT', 'Сообщество']
-cover_image: ./images/spot-nft-valentines-season/cover.jpg
+cover_image: ../images/spot-nft-valentines-season/cover.jpg
 description: "Команда Robonomics поздравляет сообщество с Днем Святого Валентина! Сегодня у всех нас есть еще один повод рассказать о своих чувствах, выразить любовь и признательность, подарить что-то милое и приятное своей второй половинке, другу – тому, кому душа пожелает."
 abstract: "Команда Robonomics поздравляет сообщество с Днем Святого Валентина! Сегодня у всех нас есть еще один повод рассказать о своих чувствах, выразить любовь и признательность, подарить что-то милое и приятное своей второй половинке, другу – тому, кому душа пожелает."
 ---
@@ -24,7 +24,7 @@ import Abstract from '~/components/TextAbstract.vue'
 
 ## Spot и его история любви
 
-![Spot Lovestory](./images/spot-nft-valentines-season/spot_lovestory.png)
+![Spot Lovestory](../images/spot-nft-valentines-season/spot_lovestory.png)
 
 В продолжение разговора об этических и эмоциональных вопросах роботов, Robonomics создали [новую концептуальную цифровую коллекцию произведений искусства](https://singular.app/collectibles/kusama/b437f70371c8622e02-MBVD-2023/16627505-b437f70371c8622e02-MBVD-2023-MBVD-2023-00000006), которая объединяет два, казалось бы, несовместимых элемента — собаку-робота Spot от Boston Dynamics и собаку из воздушного шара Джеффа Кунса.
 
