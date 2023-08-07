@@ -43,7 +43,7 @@
       <div class="youtube-embed">
         <div class="youtube-embed__wrapper">
           <div class="youtube-embed__container">
-              <iframe width="860" height="480" src="https://www.youtube.com/embed/bTbxCO9Yx68" title="Life cycle in the Robonomics network with the application of observing networks" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="860" height="480" src="https://www.youtube.com/embed/bTbxCO9Yx68" title="Carbon Footprint Compensation Experiment in BBF's building" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
           </div>
         </div>
       </div>
