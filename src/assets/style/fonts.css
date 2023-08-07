@@ -44,6 +44,15 @@
 }
 
 @font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-black-webfont.woff2') format('woff2');
+  src: url('../fonts/roboto-black-webfont.woff') format('woff');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Roboto Mono';
   src: url('../fonts/robotomono-light-webfont.woff2') format('woff2');
   src: url('../fonts/robotomono-light-webfont.woff') format('woff');

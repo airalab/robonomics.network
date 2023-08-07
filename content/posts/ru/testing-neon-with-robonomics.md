@@ -4,7 +4,7 @@ date: 2022-10-03
 published: true
 locale: 'ru'
 tags: ['Robonomics в Ethereum', 'Сотрудничество', 'Умные контракты', 'Neon']
-cover_image: ./images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
+cover_image: ../images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
 description: "Целью настоящего тестирования была проверка платформы Neon на предмет её готовности к production stage с помощью умных контрактов Robonomics, которые позволяют кибер-физическим системам (роботам) заключать сделки на выполнение заложенного в них алгоритма"
 abstract: ""
 ---
@@ -37,7 +37,7 @@ abstract: ""
 
 Чтобы в полной мере воспользоваться возможностями умных контрактов был выбран сценарий взаимодействия двух автономных экономических агентов. Рассмотрим жизненный цикл обязательства в сети Robonomics: 
 
-![Liability Life Cycle](./images/testing-neon-with-robonomics/step-by-step-3.jpg)
+![Liability Life Cycle](../images/testing-neon-with-robonomics/step-by-step-3.jpg)
 
 На рисунке выше показано, что провайдер сети Robonomics обращается к контракту Lighthouse, который в свою очередь вызывает [фабрику контрактов](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) для создания контракта Liability. Последний содержит в себе данные о сделки, такие как техническое задание, оплату за услугу, адрес валидатора и deadline. 
 
@@ -91,7 +91,7 @@ abstract: ""
 
 https://youtu.be/fYJVF7KrNnI
 
-![Liability](./images/testing-neon-with-robonomics/liability.jpg)
+![Liability](../images/testing-neon-with-robonomics/liability.jpg)
 
 При запуске симуляции создаются сообщения оффера, а от клиента приходит сообщение деманда, после чего создается контракт Liability с помощью функции `createLiability` контракта Lighthouse. С помощью контракта XRT происходит перевод токенов с адреса заказчика на адрес контракта Liability. 
 

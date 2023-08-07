@@ -9,6 +9,16 @@ const fs = require('fs');
 
 let allPossiblePaths = [];
 
+// all blog locales for translation
+let arBlogFile = fs.readFileSync('./translations/blog/Arabic.json');
+let arBlog = JSON.parse(arBlogFile);
+
+let zhBlogFile = fs.readFileSync('./translations/blog/Chinese.json');
+let zhBlog = JSON.parse(zhBlogFile);
+
+let ruBlogFile = fs.readFileSync('./translations/blog/Russian.json');
+let ruBlog = JSON.parse(ruBlogFile);
+
 module.exports = function (api) {  
 
   // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
@@ -25,7 +35,7 @@ module.exports = function (api) {
 
       collection.data().filter((e) => {
         if(e.locale === 'en')
-        allPossiblePaths.push({path: e.path, name: e.fileInfo.name})
+        allPossiblePaths.push({path: e.path, name: e.fileInfo.name, content: e.content, title: e.title, description: e.description, cover_image: e.cover_image, abstract: e.abstract, author: e.author, tags: e.tags, related: e.related, published: e.published, id: e.id})
       })
     
   })
@@ -34,7 +44,7 @@ module.exports = function (api) {
   api.createManagedPages( ({ createPage }) => {
 
     // all locales
-    const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr","uk", "fr", "ar"];
+    const locales = ["ru", "zh", "ar"];
 
     createPage(
       {
@@ -70,10 +80,14 @@ module.exports = function (api) {
   
     
       allPossiblePaths.forEach(node => {
-        // all locales
-        // const locales = ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr","uk", "fr" ];
+        // keys for all locales for translation
+        // const allAr = Object.keys(arBlog);
+        // const allZh = Object.keys(zhBlog);
+        // const allRu = Object.keys(ruBlog);
+
         const path = node.path.slice(0, -1).split("/").pop();
   
+        // pages for not existing translations
         locales.forEach(locale => {
           if (fs.existsSync(`content/posts/${locale}/${node.name}.md`)) {
             console.log('exists');
@@ -84,7 +98,29 @@ module.exports = function (api) {
             })
           }
         })
-  
+
+        // code below translates blog post (if translation exists) for specific locale (e.g arabic)
+        // change path and object for another locale to crate translation
+        
+        // let data = fs.readFileSync(`content/posts/zh/${path}.md`, 'utf-8');
+        // this part replaces english text with the needed one 
+        // allZh.forEach(el => {
+        //   if(data.includes(el)) {
+        //     data = data.replace(el, zhBlog[el]);
+        //   }
+        // });
+        // and this part rewrites file and adding translated text instead of default one
+        // fs.writeFile(`content/posts/zh/${path}.md`, data, 'utf8', function (err) {
+        //   if (err) return console.log(err);
+        // });
+
+        // to automatically cope files to all locales
+        // locales.forEach(l => {
+        //   fs.copyFile(`content/posts/${path}.md`, `content/posts/${l}/${path}.md`, (err) => {
+        //     if (err) throw err;
+        //     console.log('file ws copied');
+        //   });
+        // })
       })
   })
   

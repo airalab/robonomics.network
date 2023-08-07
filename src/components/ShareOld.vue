@@ -1,6 +1,6 @@
 <template>
 
-  <ul class="ul-nostyle">
+  <ul class="list-simple">
     <li class="share" :class="classes" v-if="assets" v-for="(asset, key) in assets" :key="key">
       <ShareItem :asset=asset />
     </li>

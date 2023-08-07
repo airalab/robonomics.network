@@ -13,7 +13,7 @@
     <g-link v-if="link && !linkButton" :class="link_classes" :to="link">
       <template v-if="linkText">{{linkText}}</template>
     </g-link>
-    <Button v-if="link && linkText && linkButton" :link="link" :label="linkText" button="primary" class="large"/>
+    <rbnet-button v-if="link && linkText && linkButton" :link="link" :label="linkText" button="primary" class="large"/>
 
   </div>
 </template>
@@ -24,10 +24,6 @@
 <script>
 
 export default {
-
-  components: {
-      Button: () => import("~/components/Button.vue"),
-  },
 
   data() {
         return {
@@ -286,6 +282,10 @@ export default {
           background-color: var(--link-color);
       }
     /* end of COLORING */
+
+    .card .button {
+      text-align: center;
+    }
 
 
     /* PICTURES */

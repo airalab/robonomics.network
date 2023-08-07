@@ -97,7 +97,8 @@ body {
   --space: 2rem;
   --space-text: 2rem;
   --content-width: 1660px;
-  --text-width: 780px;
+  /* --text-width: 780px; */
+	--text-width: calc(860px + (var(--space) * 2));
   --tip-width: 16rem;
 	--mid-width: 1180px;
 

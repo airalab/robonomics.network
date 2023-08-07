@@ -3,7 +3,7 @@ title: 第三轮 Robonomics 众贷活动
 date: 2021-10-25
 published: true
 locale: 'zh'
-cover_image: ./images/kusama-crowdloan-third-wave-details/cover.jpg
+cover_image: ../images/kusama-crowdloan-third-wave-details/cover.jpg
 description: "过去 4 个月里，一些来自 DeFi、智能合约/EVM 领域的备受期待、用户友好的项目，以及第一个用户隐私保护机制，已经集成至 Kusama 生态系统。也许，是时候将物联网设备置于 Kusama 的控制之下，建立起与实体经济相结合的机制了……我们将在第三轮拍卖当中了解情况是否确实如此。"
 abstract: "过去 4 个月里，一些来自 DeFi、智能合约/EVM 领域的备受期待、用户友好的项目，以及第一个用户隐私保护机制，已经集成至 Kusama 生态系统。也许，是时候将物联网设备置于 Kusama 的控制之下，建立起与实体经济相结合的机制了……<a href='/kusama-slot/'>我们将在第三轮拍卖当中了解情况是否确实如此。</a>"
 tags: ['Robonomics 平行链']
@@ -16,14 +16,14 @@ import Card from '~/components/TextCard.vue'
 
 在 Kusama 的第一轮拍卖中，Robonomics 发布了第三轮拍卖开始时的众贷模块，总共筹集到 27,000 枚 KSM。
 
-!["创造历史：Kusama 前五轮平行链插槽拍卖概况"](./images/kusama-crowdloan-third-wave-details/image3.png)
+!["创造历史：Kusama 前五轮平行链插槽拍卖概况"](../images/kusama-crowdloan-third-wave-details/image3.png)
 *资料来源: [创造历史：Kusama 前五轮平行链插槽拍卖概况](https://polkadot.network/making-history-an-overview-of-the-first-five-parachain-slot-auctions-on-kusama/)*
 
 然而在第二轮众贷活动中，命运却偏偏与我们作对。开发人员本来预计至少会有一半的第一轮众贷活动参与者支持我们，所以我们期待在最初几天至少筹集到 15,000 枚 KSM，并在进入第二轮的前五个项目后，成为尚未决定选择什么项目的 KSM 持有者的关注对象。然而 KILT 携 MOVR 代币的出现，在整个社区掀起了波澜，使得他们与其他参与者相比在一开始就具备了不可否认的优势。
 
 与此同时，随着 KILT 从社区获得最大限额的投资，在第二轮拍卖的第二天便筹集到超过 20,000 枚 KSM 代币，并从一众项目中脱颖而出。Robonomics 在第二轮的前几天未能进入社区入围名单，因此没有受到太多关注。Calamari、Basilisk Heiko 和 Altair 之间的插槽竞拍，见证了极高的赌注和意想不到的曲折（庆幸的是 Heiko 与 Altair 之战期间采用了带有蜡烛特效的拍卖机制）。
 
-!["Kusama Crowdloan Timeline"](./images/kusama-crowdloan-third-wave-details/image2.png)
+!["Kusama Crowdloan Timeline"](../images/kusama-crowdloan-third-wave-details/image2.png)
 
 Robonomics 将在第三轮中筹集到多少资金？是否会与第一轮活动相当，在 2 万到 3 万枚 KSM 代币区间之内？或是更接近第二轮的结果，大约在 3 千到 1 万枚 KSM？只有 Kusama 中继链代币的持有者才知道
 

@@ -12,7 +12,7 @@
 
       <div class="share__col share__buttons">
 
-        <button class="button primary select button__icon">
+        <rbnet-button class="button primary select button__icon">
           
 
           <select v-model="selected" v-if="asset.options.length > 1">
@@ -25,7 +25,7 @@
 
           <span v-if="asset.buttonicon" class="icon" v-html="asset.buttonicon" />
 
-        </button>
+        </rbnet-button>
 
       </div>
     </g-link>
@@ -80,6 +80,12 @@
     .share .button {
       display: inline-block;
       white-space: nowrap;
+      padding: 0.4rem 1.2rem;
+    }
+
+    .share .button.select select, button.select select {
+      border: transparent;
+      line-height: 22px;
     }
   
   .no-image.share__link {

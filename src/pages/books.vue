@@ -16,7 +16,7 @@
 
       <h2>Free E-Books</h2>
 
-      <ul class="ul-nostyle  e-books__list animate-inside in-viewport" v-in-viewport.once>
+      <ul class="list-simple e-books__list animate-inside in-viewport" v-in-viewport.once>
         <BookItem v-for="book in books" :key="book.title" :book="book"/>
       </ul>
 
@@ -35,7 +35,7 @@
       </div>
 
 
-      <ul v-if="books" class="grid-4 ul-nostyle books-recommendations__list animate-inside" v-in-viewport.once>
+      <ul v-if="books" class="grid-4 list-simple books-recommendations__list animate-inside" v-in-viewport.once>
         <li class="books-recommendations__item" v-for="rec in recs" :key="rec.id">
           <RecommendationItem :rec="rec"/>
         </li>

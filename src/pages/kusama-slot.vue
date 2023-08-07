@@ -23,7 +23,7 @@
               </div>
            </section>
 
-           <site-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Auction status on Kusama</site-button>
+           <rbnet-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Auction status on Kusama</rbnet-button>
          </div>
          
          <!-- <MovingNumbers/> -->
@@ -57,7 +57,7 @@
       <section class="participate section__solid section__blue">
         <div class="content layout">
           <div>Campaign for renewal of slot<br/> is in progress</div>
-          <site-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Check status</site-button>
+          <rbnet-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Check status</rbnet-button>
         </div>
        </section>
 
@@ -72,13 +72,11 @@
   export default {
     components: {
       MetaInfo: () => import("~/components/MetaInfo.vue"),
-      SiteButton: () => import("~/components/Button.vue"),
       Card: () => import("~/components/TextCard.vue"),
       MovingNumbers: () => import("~/components/decor/MovingNumbers.vue")
     }
   }
 </script>
-
 
 <style scoped>
 

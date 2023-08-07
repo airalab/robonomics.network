@@ -20,6 +20,7 @@
     "gridsome-plugin-translateit": "^1.0.10",
     "gridsome-remark-katex": "^0.1.1",
     "gridsome-source-github-api": "^0.2.0",
+    "i18n-pro": "^2.0.0",
     "parallax-js": "^3.1.0",
     "unisender": "^1.1.1",
     "vue-client-actions-tracker-component": "^1.0.2",

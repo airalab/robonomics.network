@@ -15,7 +15,7 @@
             :sitekey="recaptchaSitekey">
             </vue-recaptcha>
             <div>
-                <button>{{$ts('Send')}}</button>
+                <rbnet-button>{{$ts('Send')}}</rbnet-button>
             </div>
         </form>
 

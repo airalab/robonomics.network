@@ -4,7 +4,7 @@ date: 2022-09-14
 published: true
 locale: 'ru'
 tags: ['События', 'Полкадот', 'Умный дом', 'Интернет вещей']
-cover_image: ./images/robonomics-at-polkadot-weekend/Polkadot_Weekend_Georgia.jpg
+cover_image: ../images/robonomics-at-polkadot-weekend/Polkadot_Weekend_Georgia.jpg
 # canonical_url: false
 description: "Cyber Academy проводит мероприятие в Грузии, где участники смогут познакомиться с экосистемой Polkadot, начиная с самых азов и основных понятий: подробное обсуждение всех компонентов Polkadot, нетворкинг в неформальной атмосфере и воркшопы для разработчиков."
 abstract: "Даты: 24-25 Сентября."
