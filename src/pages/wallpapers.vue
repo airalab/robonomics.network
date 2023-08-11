@@ -8,25 +8,25 @@
 
     <section class="wallpapers">
       <div class="layout layout__content text-center container">
-        <h1>{{$ts('Robonomics wallpapers')}}</h1>
+        <h1>{{$t('Robonomics wallpapers')}}</h1>
 
         <!-- regular wallpapers -->
         <section class="wallpapers-regular">
-          <h2>Regular wallpapers</h2>
+          <h2>{{ $t('Regular wallpapers') }}</h2>
           <div class="grid-3 animate-inside" v-in-viewport.once>
             <WallpapersItem v-for="item in wallpapers.regular" :key="item.id" :item="item"/>
           </div>
         </section>
 
         <section class="wallpapers-phone">
-          <h2>Wallpapers for phones</h2>
+          <h2>{{ $t('Wallpapers for phones') }}</h2>
           <div class="grid-3 animate-inside" v-in-viewport.once>
             <WallpapersItem v-for="item in wallpapers.phone" :key="item.id" :item="item"/>
           </div>
         </section>
 
         <section class="wallpapers-phone">
-          <h2>Hidden wallpapers</h2>
+          <h2>{{ $t('Hidden wallpapers') }}</h2>
           <div class="animate-inside" v-in-viewport.once>
             <WallpapersItem hidden v-for="item in wallpapers.hidden.wallpapers" :key="item.id" :item="item" :icons="wallpapers.hidden.icons"/>
           </div>
