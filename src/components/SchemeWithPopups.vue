@@ -12,7 +12,7 @@
             </summary>
 
             <div class="popup-wrapper animate" v-in-viewport >
-              <SchemePopup title="Decentralized application" description="Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp."/>
+              <SchemePopup title="Decentralized application" :description="$t('Decentralized application (dapp) works within Blockchain. It is open source and its data served on IPFS and Github. These techonolgies allow application be secure and transparent at the same time. Our developers are working both on the development of Robonomics’ application and on the libraries that you can use when building your own dapp.')"/>
             </div>
 
           </details>
@@ -46,7 +46,7 @@
             </summary>
 
             <div class="popup-wrapper animate" v-in-viewport>
-              <SchemePopup title="Digital twin" description="Digital Twin is one of the instruments provided by Robonomics Web Services (RWS). It acts as a digital version of the real-world equipment and copies all of its technical characteristics. It allows to make a decentralized app more responsive to the user’s commands."/>
+              <SchemePopup title="Digital twin" :description="$t('Digital Twin is one of the instruments provided by Robonomics Web Services (RWS). It acts as a digital version of the real-world equipment and copies all of its technical characteristics. It allows to make a decentralized app more responsive to the user’s commands.')"/>
             </div>
 
             </details>
@@ -108,7 +108,7 @@
             </summary>
 
             <div class="popup-wrapper animate" v-in-viewport>
-              <SchemePopup title="IoT / Smart device" description="You can use Robonomics with a wide range of Zigbee smart devices to automate and control various aspects of your home/office or use it with ROS-based robotics for more complex industrial tasks."/>
+              <SchemePopup title="IoT / Smart device" :description="$t('You can use Robonomics with a wide range of Zigbee smart devices to automate and control various aspects of your home/office or use it with ROS-based robotics for more complex industrial tasks.')"/>
             </div>
 
           </details>

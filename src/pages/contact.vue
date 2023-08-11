@@ -7,14 +7,14 @@
     />
 
     <div class="title-with-bg">
-      <h1><span>Community & Contacts</span></h1>
+      <h1><span>{{ $t('Community & Contacts') }}</span></h1>
     </div>
 
     <section class="layout grid-2">
 
       <div class="contact__form">
         <div class="contact__form-img">
-          <h3 class="show-mobile">Get latest updates</h3>
+          <h3 class="show-mobile">{{ $t('Get latest updates') }}</h3>
           <g-image class="hide-dark"  src="~/assets/images/contacts-boy.png" alt="boy"/>
           <g-image class="show-dark" src="~/assets/images/contacts-boy-dark.png" alt="boy"/>
           <div class="contact__form-img--lines">
@@ -28,7 +28,7 @@
           </div>
         </div>
         <gsp-form class="contacts__form oldy" :gscriptID="gscript" :captchaID="recaptchaSitekey">
-            <h3>Get latest updates</h3>
+            <h3>{{ $t('Get latest updates') }}</h3>
             <label class="contacts__label">
               <input
                 required 
@@ -41,7 +41,7 @@
                 v-model="data_email"
                 :disabled="result === 'success'"
               >
-              <span>Your email</span>
+              <span>{{ $t('Your email') }}</span>
             </label>
 
             <label class="contacts__label">
@@ -54,7 +54,7 @@
                 v-model="data_comment"
                 :disabled="result === 'success'"
               />
-              <span>Tell us something if you want</span>
+              <span>{{ $t('Tell us something if you want') }}</span>
             </label>
 
             <input       
@@ -68,14 +68,14 @@
   
             <div class="google-sheets-form__actions">
               <rbnet-button @click="onSubmit" v-if="result !== 'success'" class="button large"  :disabled="result === 'error' || result === 'wait'">
-                <span v-if="result !== 'wait'">Submit</span>
-                <span class="isLoading" v-else>Adding you to our special list...</span>
+                <span v-if="result !== 'wait'">{{ $t('Submit') }}</span>
+                <span class="isLoading" v-else>{{ $t('Adding you to our special list...') }}</span>
                 <span class="spinner">
                   <Spinner v-if="result === 'wait'"/>
                 </span>
               </rbnet-button>
-              <rbnet-button disabled v-else class="button button-success">Nice, you are in the list</rbnet-button>
-              <div v-if="result === 'error'" class="error">Something went  wrong :( Try again later</div>
+              <rbnet-button disabled v-else class="button button-success">{{ $t('Nice, you are in the list') }}</rbnet-button>
+              <div v-if="result === 'error'" class="error">{{ $t('Something went  wrong :( Try again later') }}</div>
             </div>
           </gsp-form>
       </div>

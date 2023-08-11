@@ -47,8 +47,8 @@ module.exports = {
         // locales: ["en", "ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr", "uk", "ar"],
         locales: ["en", "ru", "zh", "ar"],
         defaultLocale: "en",
-        // translations: yaml.load(fs.readFileSync('./src/data/locales/translations.yaml', 'utf8')),
-        translations: [],
+        translations: yaml.load(fs.readFileSync('./src/data/locales/translations.yaml', 'utf8')),
+        // translations: [],
         collections: ['blog', 'jobs'],
         routes: yaml.load(fs.readFileSync('./src/data/locales/routes.yaml', 'utf8')),
         exclude: ["/blog/tag/"]

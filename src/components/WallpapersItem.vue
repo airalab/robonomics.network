@@ -3,20 +3,20 @@
     <div class="wallpapers__img">
       <g-image alt="wallpaper" :src="item.link" />
     </div>
-    <h3>{{ item.text }}</h3>
+    <h3>{{ $t(item.text) }}</h3>
   </a>
   <div v-else class="oldy dark oldy__link">
     <a :href="item.link" class="wallpapers__link" download>
       <div class="wallpapers__img">
         <g-image alt="wallpaper" :src="item.link" />
       </div>
-      <h3>{{ item.text }}</h3>
+      <h3>{{ $t(item.text) }}</h3>
     </a>
     <div class="wallpapers__icons">
-      <h4>Additional icons for the wallpaper:</h4>
+      <h4>{{ $t('Additional icons for the wallpaper:') }}</h4>
       <div class="wallpapers__icons-wrapper">
         <a :href="icon.link" download v-for="icon in icons" :key="icon.key">
-          {{ icon.type }}
+          {{ $t(icon.type) }}
         </a>
       </div>
     </div>
