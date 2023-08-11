@@ -9,15 +9,15 @@
     />
 
     <div class="title-with-bg">
-      <h1><span>{{ $ts('Robonomics art shop') }}</span></h1>
+      <h1><span>{{ $t('Robonomics art shop') }}</span></h1>
     </div>
 
     <section class="layout section__solid shop">
 
 
       <section class="text-left shop__text">
-        <p>{{ $ts('Welcome to our brand new online shop on') }} <g-link to="https://robonomics.threadless.com/">robonomics.threadless.com</g-link>!</p>
-        <p class="shop__text">{{ $ts('Our shop features clothing, accessories, home decor and other items that display our love for robotics, technology and art. You can find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful products with our unique designs made by Robonomics artists and processed production&shipping by fellows from Threadless. Enjoy!') }}</p>
+        <p>{{ $t('Welcome to our brand new online shop on') }} <g-link to="https://robonomics.threadless.com/">robonomics.threadless.com</g-link>!</p>
+        <p class="shop__text">{{ $t('Our shop features clothing, accessories, home decor and other items that display our love for robotics, technology and art. You can find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful products with our unique designs made by Robonomics artists and processed production&shipping by fellows from Threadless. Enjoy!') }}</p>
       </section>
 
       <div class="grid grid-3 shop__grid">
@@ -29,7 +29,7 @@
           :image="product.image"
           :classImage="product.class"
         />
-        <g-link class="shop__link" to="https://robonomics.threadless.com/">{{ $ts('Shop now on threadless') }}</g-link>
+        <g-link class="shop__link" to="https://robonomics.threadless.com/">{{ $t('Shop now on threadless') }}</g-link>
       </div>
 
       <g-link to="https://robonomics.threadless.com/" class="shop-circle shop-circle-1">
@@ -50,7 +50,7 @@
         </g-link>
         <div class="shop-printdirect__arrow">
           <g-image src="@/assets/images/shop-arrow.svg" aria-hidden="true" alt="map"/>
-          <span>{{ $ts('alternative shop') }}</span>
+          <span>{{ $t('alternative shop') }}</span>
         </div>
       </div>
 
