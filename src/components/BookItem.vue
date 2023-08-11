@@ -7,7 +7,7 @@
 
     <div class="e-books__content">
       <h3> {{ book.title }} </h3>
-      <p>{{ book.description }}</p>
+      <p>{{ $t(book.description) }}</p>
       <div class="e-books__links">
         <g-link
           v-for="link in book.options"

@@ -6,7 +6,7 @@
     />
 
     <section class="layout layout__text">
-        <h1>{{$ts('Scientific Papers with Robonomics')}}</h1>
+        <h1>{{$t('Scientific Papers with Robonomics')}}</h1>
         <share :assets="papers"/>
     </section>
 

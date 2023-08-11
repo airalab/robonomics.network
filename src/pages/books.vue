@@ -8,13 +8,13 @@
 
 
     <div class="title-with-bg">
-      <h1><span>Our library</span></h1>
+      <h1><span>{{ $t('Our library') }}</span></h1>
     </div>
 
 
     <section class="layout layout-narrow e-books">
 
-      <h2>Free E-Books</h2>
+      <h2>{{ $t('Free E-Books') }}</h2>
 
       <ul class="list-simple e-books__list animate-inside in-viewport" v-in-viewport.once>
         <BookItem v-for="book in books" :key="book.title" :book="book"/>
@@ -26,10 +26,10 @@
 
       <div class="layout layout-narrow">
         
-        <h2>Our recommendations</h2>
+        <h2>{{ $t('Our recommendations') }}</h2>
 
         <p>
-          We recommend these books if you want to become more involved, inspired, and self-educated in robotics, advance in the field, and understand the economics behind it. You can download or purchase these books from other sources.
+          {{ $t('We recommend these books if you want to become more involved, inspired, and self-educated in robotics, advance in the field, and understand the economics behind it. You can download or purchase these books from other sources.') }}
         </p>
         
       </div>
