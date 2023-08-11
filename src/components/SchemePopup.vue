@@ -1,7 +1,7 @@
 <template>
     <div class="popup__content" >
       <h3>{{ $t(title) }}</h3>
-      <p class="hyphens">{{$t(description)}}</p>
+      <p class="hyphens">{{description}}</p>
     </div>
 </template>
 

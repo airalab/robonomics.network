@@ -2,7 +2,7 @@
   <client-only>
     <section id="blog-banner" class="section__solid section__blue">
       <div class="layout">
-          <h1>{{$ts('Important news &amp; announcements')}}</h1>
+          <h1>{{$t('Important news &amp; announcements')}}</h1>
           <div class="blog-banner__wrapper">
             <div class="blog-banner__img">
               <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />

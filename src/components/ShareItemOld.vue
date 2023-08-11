@@ -6,8 +6,8 @@
       </div>
 
       <div class="share__col share__info">
-        <span class="share__title" v-html="asset.title"/>
-        <small class="share__description" v-html="asset.description"/>
+        <span class="share__title"> {{ $t(asset.title) }} </span>
+        <small class="share__description">{{ $t(asset.description) }}</small>
       </div>
 
       <div class="share__col share__buttons">

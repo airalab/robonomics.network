@@ -9,13 +9,11 @@
     <!-- nft banner section -->
     <section class="nft-hero section__blue">
       <div class="nft__main-title title-with-bg">
-        <h1><span>Robonomics nfts</span></h1>
+        <h1><span>{{ $t('Robonomics nfts') }}</span></h1>
       </div>
 
       <div class="layout layout__mid nft__banner">
-        <p>
-          Here, we've assembled a collection of NFTs minted during our extensive crypto journey, both independently and with great teams. These unique tokens offer verifiable ownership on the blockchain and make for great swag to adorn your blockchain account. You can bid on some of them at auction or even mint your own unique piece.
-        </p>
+        <p>{{ $t("Here, we've assembled a collection of NFTs minted during our extensive crypto journey, both independently and with great teams. These unique tokens offer verifiable ownership on the blockchain and make for great swag to adorn your blockchain account. You can bid on some of them at auction or even mint your own unique piece.") }}</p>
         <div class="nft__banner-img">
           <g-image alt="girls" src="~/assets/images/nft-banner.png"/>
         </div>
@@ -32,10 +30,10 @@
             <div class="nft__item--container">
               <div class="nft__header nft__header--end">
                 <h3 class="nft__title nft--desktop"> 
-                  <g-link to="https://opensea.io/assets/ethereum/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1"> Robonomics Pioneer</g-link>
+                  <g-link to="https://opensea.io/assets/ethereum/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1"> {{ $t('Robonomics Pioneer') }}</g-link>
                 </h3>
                 <h3 class="nft__title nft--mobile"> 
-                  <g-link to="https://opensea.io/assets/ethereum/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">1. Robonomics Pioneer</g-link>
+                  <g-link to="https://opensea.io/assets/ethereum/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1">{{ $t('1. Robonomics Pioneer') }}</g-link>
                 </h3>
                 <span class="nft__minted nft--desktop">minted: 992</span>
               </div>
@@ -45,7 +43,7 @@
                   <span class="nft__minted nft--mobile">minted: 992</span>
                 </g-link>
                 <div class="nft__info">
-                  <p>During our initial Kusama crowdloan campaign, we made the decision to reward our crypto pioneers' contributors with more than just tokens - we also gifted them a colorful NFT. This card holds great meaning for us, and if someone owns it, we know that they're a fantastic supporter of Robonomics' values: freedom and decentralization.</p>
+                  <p>{{ $t("During our initial Kusama crowdloan campaign, we made the decision to reward our crypto pioneers' contributors with more than just tokens - we also gifted them a colorful NFT. This card holds great meaning for us, and if someone owns it, we know that they're a fantastic supporter of Robonomics' values: freedom and decentralization.") }}</p>
                   <g-link to="https://opensea.io/assets/ethereum/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1" class="nft__link nft__opensea" />
                 </div>
               </div>
@@ -58,15 +56,15 @@
 
               <div class="nft__header">
                 <h3 class="nft__title nft--desktop"> 
-                  <g-link to="https://opensea.io/collection/robonomics-crypto-girls"> Robonomics crypto girls</g-link>
+                  <g-link to="https://opensea.io/collection/robonomics-crypto-girls"> {{ $t('Robonomics crypto girls') }} </g-link>
                 </h3>
                 <h3 class="nft__title nft--mobile"> 
-                  <g-link to="https://opensea.io/collection/robonomics-crypto-girls">2. Robonomics crypto girls</g-link>
+                  <g-link to="https://opensea.io/collection/robonomics-crypto-girls">{{ $t('2. Robonomics crypto girls') }}</g-link>
                 </h3>
               </div>
               <div class="nft__wrapper nft__wrapper--rightImg">
                 <div class="nft__info">
-                  <p>We're excited to introduce our special series of digital assets - Robonomics Crypto Girls, created by the Robonomics Art&Science team. Each NFT in this collection is a unique graphical representation of the technology used in Robonomics or built on top of Robonomics use cases. Our talented artists have hand-drawn each girl in the signature Robonomics style. You can choose the one that resonates with you or collect the entire series! By purchasing these NFTs, you're not only adding a stylish addition to your collection but also supporting us in continuing to innovate and implement decentralized connectivity for robots. Stay tuned for new additions to the collection!</p>
+                  <p>{{ $t("We're excited to introduce our special series of digital assets - Robonomics Crypto Girls, created by the Robonomics Art&Science team. Each NFT in this collection is a unique graphical representation of the technology used in Robonomics or built on top of Robonomics use cases. Our talented artists have hand-drawn each girl in the signature Robonomics style. You can choose the one that resonates with you or collect the entire series! By purchasing these NFTs, you're not only adding a stylish addition to your collection but also supporting us in continuing to innovate and implement decentralized connectivity for robots. Stay tuned for new additions to the collection!") }}</p>
                   <g-link to="https://opensea.io/collection/robonomics-crypto-girls" class="nft__link nft__opensea" />
                 </div>
                 <g-link to="https://opensea.io/collection/robonomics-crypto-girls" class="nft__img ">
@@ -81,7 +79,7 @@
             <div class="nft__item--container">
 
               <h3 class="nft__title nft--mobile"> 
-                <g-link to="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot">3. SEASONAL SPOT NFT COLLECTIONS</g-link>
+                <g-link to="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot">{{ $t('3. SEASONAL SPOT NFT COLLECTIONS') }}</g-link>
               </h3>
 
               <div class="nft__item-left">
@@ -98,13 +96,13 @@
 
               <div class="nft__item-right">
                 <div class="nft__header">
-                  <span class="nft__minted">On demand minting</span>
+                  <span class="nft__minted">{{ $t('On demand minting') }}</span>
                 </div>
                 <div class="nft__info oldy">
                   <h3 class="nft__title nft--desktop"> 
-                    <g-link to="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot"> SEASONAL SPOT NFT COLLECTIONS</g-link>
+                    <g-link to="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot"> {{ $t('SEASONAL SPOT NFT COLLECTIONS') }}</g-link>
                   </h3>
-                  <p>These seasonal NFT collections represent a one-of-a-kind digital asset that captures the unique interaction between the user and Spot within the Robonomics parachain. Users can draw anything on the browser, and the robot will replicate their movements to create a hand-drawn image. Once the interaction is complete, the NFT is minted on the Singular marketplace for the user's Polkadot account. Now, anyone can interact with a real-life robot located in a laboratory in California to create personalized and unique digital assets that can be owned, bought, and sold just like any other digital asset. <g-link to="https://spot.merklebot.com">Create your NFT</g-link></p>
+                  <p>{{ $t("These seasonal NFT collections represent a one-of-a-kind digital asset that captures the unique interaction between the user and Spot within the Robonomics parachain. Users can draw anything on the browser, and the robot will replicate their movements to create a hand-drawn image. Once the interaction is complete, the NFT is minted on the Singular marketplace for the user's Polkadot account. Now, anyone can interact with a real-life robot located in a laboratory in California to create personalized and unique digital assets that can be owned, bought, and sold just like any other digital asset.") }} <g-link to="https://spot.merklebot.com">{{ $t('Create your NFT') }}</g-link></p>
                 </div>
               </div>
 
@@ -116,7 +114,7 @@
             <div class="nft__item--container">
 
               <h3 class="nft__title nft--mobile"> 
-                <g-link to="https://singular.app/collectibles/kusama/b437f70371c8622e02-STRGZN">4. automated telescope collection</g-link>
+                <g-link to="https://singular.app/collectibles/kusama/b437f70371c8622e02-STRGZN">{{ $t('4. automated telescope collection') }}</g-link>
               </h3>
 
               <div class="nft__item-left">
@@ -130,13 +128,13 @@
 
               <div class="nft__item-right">
                 <div class="nft__header">
-                  <span class="nft__minted">On demand minting</span>
+                  <span class="nft__minted">{{ $t('On demand minting') }}</span>
                 </div>
                 <div class="nft__info oldy">
                   <h3 class="nft__title nft--desktop"> 
-                    <g-link to="https://singular.app/collectibles/kusama/b437f70371c8622e02-STRGZN">automated telescope collection</g-link>
+                    <g-link to="https://singular.app/collectibles/kusama/b437f70371c8622e02-STRGZN">{{ $t('automated telescope collection') }}</g-link>
                   </h3>
-                  <p>Located in the Atacama Desert, Chile, a physical telescope can be accessed through a decentralized app for capturing real-time images of astronomical objects in deep space. Every user with an internet connection can access it with $STRGZN tokens, which are available for purchase in the app using a credit card. Select an astronomical object, send a command to the telescope to take a picture, and wait for the minted NFT on the Singular platform. Please note that the app is only available for use from 11 pm to 6 am GMT-3 due to the telescope's operating hours. <g-link to="https://telescope.merklebot.com/#/">Try yourself</g-link></p>
+                  <p>{{ $t("Located in the Atacama Desert, Chile, a physical telescope can be accessed through a decentralized app for capturing real-time images of astronomical objects in deep space. Every user with an internet connection can access it with $STRGZN tokens, which are available for purchase in the app using a credit card. Select an astronomical object, send a command to the telescope to take a picture, and wait for the minted NFT on the Singular platform. Please note that the app is only available for use from 11 pm to 6 am GMT-3 due to the telescope's operating hours.") }} <g-link to="https://telescope.merklebot.com/#/">{{ $t('Try yourself') }}</g-link></p>
                 </div>
                 <div class="nft-telescope-img">
                   <g-image src="~/assets/images/nft-telescope.png" alt="nft telescope"/>
@@ -150,18 +148,16 @@
             <div class="nft__item--container">
               <div class="nft__wrapper nft__wrapper--leftImg">
                 <h3 class="nft__title nft--mobile"> 
-                  <g-link to="https://opensea.io/assets/ethereum/0x8cb813bf27dc744fc5fb6ba7515504de45d39e08/24">5. Robonomics Polka pet</g-link>
+                  <g-link to="https://opensea.io/assets/ethereum/0x8cb813bf27dc744fc5fb6ba7515504de45d39e08/24">{{ $t('5. Robonomics Polka pet') }}</g-link>
                 </h3>
                 <div class="nft-img-with-adds">
                   <g-link to="https://opensea.io/assets/ethereum/0x8cb813bf27dc744fc5fb6ba7515504de45d39e08/24" class="nft__img ">
                     <g-image src="~/assets/images/nft-polka-pet.png" alt="nft Robonomics Polka pet"/>
                   </g-link>
                   <div class="nft--desktop">
+                    <p>{{ $t('In collaboration with Polkapets') }}</p>
                     <p>
-                      In collaboration with Polkapets
-                    </p>
-                    <p>
-                      and 
+                      {{ $t('and') }}
                       <span>
                         <svg width="178" height="38" viewBox="0 0 178 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g clip-path="url(#clip0_177_498)">
@@ -187,17 +183,15 @@
                 <div class="nft__info">
                   <div class="nft__header">
                     <h3 class="nft__title nft--desktop"> 
-                      <g-link to="https://opensea.io/assets/ethereum/0x8cb813bf27dc744fc5fb6ba7515504de45d39e08/24">Robonomics Polka pet</g-link>
+                      <g-link to="https://opensea.io/assets/ethereum/0x8cb813bf27dc744fc5fb6ba7515504de45d39e08/24">{{ $t('Robonomics Polka pet') }}</g-link>
                     </h3>
                     <span class="nft__minted">minted: 1200</span>
                   </div>
-                  <p>As a proud member of the Polkadot ecosystem, Robonomics took part in Polka Pets World. Together with the Polka Pets team, we minted 1200 NFTs featuring a unique design concept that showcases our core idea of connectivity. To bring this idea to life, we created a personality: an android that specializes in helping humans connect with any robotic entity.</p>
+                  <p>{{ $t('As a proud member of the Polkadot ecosystem, Robonomics took part in Polka Pets World. Together with the Polka Pets team, we minted 1200 NFTs featuring a unique design concept that showcases our core idea of connectivity. To bring this idea to life, we created a personality: an android that specializes in helping humans connect with any robotic entity.') }}</p>
                   <div class="nft--mobile">
+                    <p>{{ $t('In collaboration with Polkapets') }}</p>
                     <p>
-                      In collaboration with Polkapets
-                    </p>
-                    <p>
-                      and 
+                      {{ $t('and') }}
                       <span>
                         <svg width="178" height="38" viewBox="0 0 178 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g clip-path="url(#clip0_177_498)">
@@ -228,14 +222,14 @@
           <!-- nft Mecha Arm Jetpack-->
           <li class="nft__item nft-jetpack animate-inside" v-in-viewport.once>
             <h3 class="nft__title nft--mobile"> 
-              <g-link to="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n">6. Mecha Arm Jetpack</g-link>
+              <g-link to="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n">{{ $t('6. Mecha Arm Jetpack') }}</g-link>
             </h3>
             <div class="nft__wrapper">
               <div class="nft__info">
                 <h3 class="nft__title nft--desktop"> 
-                  <g-link to="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n">Mecha Arm Jetpack</g-link>
+                  <g-link to="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n">{{ $t('Mecha Arm Jetpack') }}</g-link>
                 </h3>
-                <p>In 2021, Robonomics started commitment to support the addition of RMRK's pallets into their runtime, which would result in native integration with the world's most advanced NFT logic. To celebrate this remarkable milestone, we launched a special Kanaria-compatible item - a child NFT that can be equipped onto one's Kanaria bird, and may provide advantages in RMRK's metaverse.</p>
+                <p>{{ $t("In 2021, Robonomics started commitment to support the addition of RMRK's pallets into their runtime, which would result in native integration with the world's most advanced NFT logic. To celebrate this remarkable milestone, we launched a special Kanaria-compatible item - a child NFT that can be equipped onto one's Kanaria bird, and may provide advantages in RMRK's metaverse.") }}</p>
                 <g-link to="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n" class="nft__link nft__kanaria" />
               </div>
               <div class="nft__imgs">
@@ -251,7 +245,7 @@
                 <div class="nft__rmrk">
                   <g-image class="nft--light" src="~/assets/images/nft-rmrk.svg" alt="rmrk"/>
                   <g-image class="nft--dark" src="~/assets/images/nft-rmrk-light.svg" alt="rmrk"/>
-                  <span>RMRK Partnerships</span>
+                  <span>{{ $t('RMRK Partnerships') }}</span>
                 </div>
               </div>
 
