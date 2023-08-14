@@ -2,7 +2,7 @@
   title: 'Fronius Solar.web integration with Home Assistant'
   description: 'Collaboration with real estate developer on Cyprus for tracking the daily distribution, consumption and offsetting any excess carbon footprint.'
   path: 'cases/fronius-solar-web'
-  cover_image: 'fronius-solar-web.jpg'
+  cover_image: 'fronius-solar-web.png'
   # progress field needs for "sort by progress" filter
   progress: complete
   # created field needs for "sort by date" filter (for earliest option)
