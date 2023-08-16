@@ -11,7 +11,7 @@
 
       <!-- main banner -->
       <section class="wp__banner page-banner section section__solid">
-          <h1>{{$ts(`Robonomics Whitepaper 2022 welcome guide`)}}</h1>
+          <h1>{{$t(`Robonomics whitepaper 2022 welcome guide`)}}</h1>
 
         <div class="small-colony">
           <g-image src="~/assets/images/white-paper-2022/small-colony.svg"  alt="small-colone"/>
@@ -82,9 +82,9 @@
       <section class="section wp-introduction">
         <div class="layout layout__text animate-inside in-viewport" data-in-viewport="i20" v-in-viewport.once>
           <p class="hyphens wp-introduction__text">
-           {{$ts(`We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...`)}}
+           {{$t(`We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...`)}}
           </p>
-          <strong>{{$ts(`The first two chapters of the Robonomics white paper are already available to users.`)}}</strong>
+          <strong>{{$t(`The first two chapters of the Robonomics white paper are already available to users.`)}}</strong>
         </div>
       </section>
 
@@ -93,40 +93,40 @@
         <div class="container--left chapter__container">
           <div class="first-chapter__text chapter__text">
             <h2 class="first-chapter__title chapter__title"> 
-              <span class="chapter-accent">{{$ts(`Chapter 1.`)}}</span>
-              {{$ts(`AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS`)}}
+              <span class="chapter-accent">{{$t(`Chapter 1.`)}}</span>
+              {{$t(`At the intersection of cybernetics and economics`)}}
             </h2>
             <p class="first-chapter__descr chapter__descr hyphens">
-              {{$ts(`We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.`)}} 
+              {{$t(`We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.`)}} 
             </p>
-            <h3 class="first-chapter__subtitle chapter__subtitle">{{$ts(`In this chapter you will learn`)}}:</h3>
+            <h3 class="first-chapter__subtitle chapter__subtitle">{{$t(`In this chapter you will learn`)}}:</h3>
             <ul class="first-chapter__list chapter__list">
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Ronald Coase and The Nature of the Firm`)}}
+                {{$t(`Ronald Coase and The Nature of the Firm`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`CPS - cyber-physical system`)}}
+                {{$t(`CPS - cyber-physical system`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Norbert Wiener and the search for patterns in living and machine`)}}
+                {{$t(`Norbert Wiener and the search for patterns in living and machine`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`The Fourth Industrial Revolution, Money for Robots and Bitcoin`)}}
+                {{$t(`The Fourth Industrial Revolution, Money for Robots and Bitcoin`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Ethereum Smart Contracts`)}}
+                {{$t(`Ethereum Smart Contracts`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Polkadot Parachains`)}}
+                {{$t(`Polkadot Parachains`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Polkadot VS Ethereum 2.0`)}}
+                {{$t(`Polkadot VS Ethereum 2.0`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Open questions of teleology and Mises' work`)}}
+                {{$t(`Open questions of teleology and Mises' work`)}}
               </li>
             </ul>
-            <rbnet-button class="large white" link="/vision">{{$ts(`Read chapter 1 on the Robonomics website`)}}</rbnet-button>
+            <rbnet-button class="large white" link="/vision">{{$t(`Read chapter 1`)}}</rbnet-button>
           </div>
           <div class="first-chapter__images chapter__images">
             <div class="first-chapter__images--top">
@@ -152,57 +152,57 @@
         <div class="container--left chapter__container">
           <div class="second-chapter__text chapter__text">
             <h2 class="second-chapter__title chapter__title"> 
-              <span class="chapter-accent">{{$ts(`Chapter 2.`)}}</span>
-              {{$ts(`ROBONOMICS ARCHITECTURE wp`)}}
+              <span class="chapter-accent">{{$t(`Chapter 2.`)}}</span>
+              {{$t(`Robonomics architecture`)}}
             </h2>
             <p class="second-chapter__descr chapter__descr hyphens">
-              {{$ts(`In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.`)}} 
+              {{$t(`In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.`)}} 
             </p>
-            <h3 class="second-chapter__subtitle chapter__subtitle">{{$ts(`In this chapter you will learn`)}}:</h3>
+            <h3 class="second-chapter__subtitle chapter__subtitle">{{$t(`In this chapter you will learn`)}}:</h3>
             <ol class="second-chapter__list chapter__list">
               <li class="second-chapter__item chapter__item">
-                {{$ts(`Overview of the state of the Internet of Things (IoT)`)}}
+                {{$t(`Overview of the state of the Internet of Things (IoT)`)}}
                 <ul class="chapter__sub-list chapter__list">
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Classification of IoT devices`)}}
+                    {{$t(`Classification of IoT devices`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Embedded IoT systems`)}}
+                    {{$t(`Embedded IoT systems`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Edge-systems: IoT gateways and controllers`)}}
+                    {{$t(`Edge-systems: IoT gateways and controllers`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Autonomous Systems`)}}
+                    {{$t(`Autonomous Systems`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Internet of Things providers`)}}
+                    {{$t(`Internet of Things providers`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Digital twins are the heart of the Internet of Things`)}}
+                    {{$t(`Digital twins are the heart of the Internet of Things`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`IoT data flows in cloud service`)}}
+                    {{$t(`IoT data flows in cloud service`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Popular examples of IoT solutions`)}}
+                    {{$t(`Popular examples of IoT solutions`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Current problems of building IoT solutions`)}}
+                    {{$t(`Current problems of building IoT solutions`)}}
                   </li>
                 </ul>
               </li>
               <li class="second-chapter__item chapter__item">
-                {{$ts(`Main tasks of Robonomics architecture`)}}
+                {{$t(`Main tasks of Robonomics architecture`)}}
               </li>
               <li class="second-chapter__item chapter__item">
-                {{$ts(`Basic components of Robonomics architecture`)}}
+                {{$t(`Basic components of Robonomics architecture`)}}
               </li>
               <li class="second-chapter__item chapter__item">
-                {{$ts(`A simple representation of Robonomics architecture`)}}
+                {{$t(`A simple representation of Robonomics architecture`)}}
               </li>
             </ol>
-            <rbnet-button class="large white" link="/vision">{{$ts(`Read chapter 2 on the Robonomics website`)}}</rbnet-button>
+            <rbnet-button class="large white" link="/vision">{{$t(`Read chapter 2`)}}</rbnet-button>
           </div>
           <div class="second-chapter__images chapter__images">
             <div class="scheme-image">
@@ -271,11 +271,11 @@
       <section class="discord__section section__solid section section__blue animate-inside in-viewport below-viewport">
         <div class="layout discord__layout">
           <p class="discord__text hyphens">
-            {{$ts(`We continue to update the white paper of Robonomics`)}}, <br/> {{$ts(`stay tuned for new parts on our website and in Discord`)}}. 
+            {{$t(`We continue to update the white paper of Robonomics`)}}, <br/> {{$t(`stay tuned for new parts on our website and in Discord`)}}. 
           </p>
           <rbnet-button class="wp__button" color="violet" :link="$static.metadata.discord">
             <g-image class="button-icon" aria-hidden="true" src="~/assets/images/white-paper-2022/discord.svg" />
-            {{$ts(`JOIN OUR DISCORD`)}}
+            {{$t(`Join our discord`)}}
           </rbnet-button>
           <div class="elegant-robot">
             <g-image aria-hidden="true" src="~/assets/images/white-paper-2022/elegant-robot.svg" />
@@ -425,6 +425,7 @@ export default {
     font-weight: 700;
     font-family: var(--font-family-code);
     box-shadow: 6px 6px 0 var(--color-dark);
+    text-transform: uppercase;
   }
 
   .dark-theme .wp-page .button:hover {
