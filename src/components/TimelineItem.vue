@@ -1,13 +1,14 @@
 <template>
   <div class="timeline__item" :class="{'bottom-line': bottomLine}">
     <span class="timeline__year">{{ year }}</span>
-    <h2 class="timeline__title">{{ $ts(title) }}</h2>
-    <div class="timeline__text" v-html="$ts(text)"></div>
+    <h2 class="timeline__title">{{ $t(title) }}</h2>
+    <div class="timeline__text" v-html="text">
+    </div>
     <div class="timeline__events" v-if="events.length">
       <h3>{{ $ts('Notable events') }}:</h3>
       <div class="timeline__events-wrapper">
         <g-link class="timeline__link" v-for="event in events" :key="event.id" :to="event.link">
-          {{ $ts(event.name) }}
+          {{ $t(event.name) }}
         </g-link>
       </div>
     </div>
@@ -109,5 +110,15 @@ export default {
     display: flex;
     flex-direction: column;
   }
+
+  /* for ar locale */
+  html[lang="ar"] .timeline__events {
+    align-self: flex-end;
+  }
+
+  html[lang="ar"] .timeline__events h3 {
+    text-align: right;
+  }
+
 
 </style>
