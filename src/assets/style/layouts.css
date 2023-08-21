@@ -176,3 +176,19 @@
 .slide {
 	min-height: calc(100vh - var(--screen-padding-top) - var(--screen-padding-bottom));
 }
+
+/* for cases */
+.case-page__content {
+	margin-bottom: calc(var(--space) * 2);
+}
+
+
+.case-page__content h2, .case-page__content h3,  .case-page__content h4{
+	margin-bottom: calc(var(--space) * 0.5);
+	text-align: left;
+	text-transform: unset;
+	font-family: var(--font-family);
+	font-size: calc(var(--base-font-size) * 1.3);
+	font-weight: 800;
+	letter-spacing: 0;
+}

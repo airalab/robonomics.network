@@ -197,6 +197,33 @@ code {
 
 code::-webkit-scrollbar { display: none; }
 
+.code-inline {
+  display: inline;
+  vertical-align: unset;
+  border-radius: 3px;
+  /* direction: ltr; */
+  text-align: left;
+  word-spacing: normal;
+  /* word-break: normal; */
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  hyphens: none;
+  word-break: break-all;
+  padding: 0.15rem 0.25rem;
+  color: var(--color-light);
+  background: var(--color-link);
+}
+
+div pre[class*="language-"] {
+  padding-right: 3rem !important;
+}
+
+.token.function {
+  color: rgb(136, 179, 248);
+}
+
 table {
   margin-bottom: var(--space-text);
   background-color: var(--text-color-invert);
@@ -300,4 +327,8 @@ li:not(:last-child) {
   padding: 0 0.2rem;
   background-color: var(--color-red);
   color: var(--color-light)
+}
+
+.underline {
+  text-decoration: underline;
 }

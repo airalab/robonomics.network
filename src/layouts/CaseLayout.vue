@@ -5,6 +5,7 @@
       :path="path"
       :text="introText"
       :introImg="introImg"
+      :withExtras="withExtras"
     />
 
     <section class="case-page layout layout__text">
@@ -14,6 +15,7 @@
     <Footer 
       :link="link"
       :linkText="linkText"
+      :showFooter="showFooter"
     />
 
   </layout>
@@ -49,6 +51,14 @@ export default {
     linkText: {
       type: String,
       default: ''
+    },
+    withExtras: {
+      type: Boolean,
+      default: false
+    },
+    showFooter: {
+      type: Boolean,
+      default: true
     }
   }
 

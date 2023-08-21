@@ -4,7 +4,7 @@
     <MetaInfo
       :pageTitle = "caseRD[0].title"
       :pageDescription = "caseRD[0].description"
-      :pageImage = "'/website_cover_cases.png'"
+      :pageImage = "caseRD[0].metaImg ? caseRD[0].metaImg : '/website_cover_cases.png'"
     />
 
     <div class="cases__main-title title-with-bg blue">
@@ -27,7 +27,8 @@
       </div>
 
       <div class="case-page__intro italic-abstract" v-if="text">
-        <p>{{ text }}</p>
+        <p v-if="!withExtras">{{ text }}</p>
+        <p v-else v-html="text"></p>
         <g-image v-if="introImg" :src="require(`!!assets-loader!@/assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
       </div>
     </section>
@@ -55,6 +56,10 @@ export default {
       type: String,
       default: '',
       required: false
+    },
+    withExtras: {
+      type: Boolean,
+      default: false
     }
   },
 
