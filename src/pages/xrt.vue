@@ -97,13 +97,10 @@
                 <p>{{ $t('Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. We needed to think about the lifecycle of each individual smart device’s liability to perform a service. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with a significant improvements in Ethereum.') }}</p>
             </section>
 
-            <div class="youtube-embed">
-                <div class="youtube-embed__wrapper">
-                    <div class="youtube-embed__container">
-                        <iframe width="860" height="480" src="https://www.youtube.com/embed/a2EWaaFcFm8" title="Life cycle in the Robonomics network with the application of observing networks" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
+            <Youtube
+            title="Life cycle in the Robonomics network with the application of observing networks"
+            src="https://www.youtube.com/embed/a2EWaaFcFm8"
+            />
 
             <div class="youtube-embed">
                 <div class="oldy dark">

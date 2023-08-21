@@ -40,13 +40,10 @@
       <g-image src="@/assets/images/cases/fronius-solar-web/6.png" alt="statistics"/>
       <p>Below is an illustrative example of how carbon footprint offsetting occurs through our integration. Upon successful completion, the <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.ipci.io#/explorer/query/0xfc8cea3514805f8f170ab0a06e7787f86659197d607ddfde23e879efd105d737">transaction</g-link> unfolds as follows:</p>
 
-      <div class="youtube-embed">
-        <div class="youtube-embed__wrapper">
-          <div class="youtube-embed__container">
-              <iframe width="860" height="480" src="https://www.youtube.com/embed/bTbxCO9Yx68" title="Carbon Footprint Compensation Experiment in BBF's building" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+      <Youtube
+        src="https://www.youtube.com/embed/bTbxCO9Yx68"
+        title="Carbon Footprint Compensation Experiment in BBF's building"
+      />
 
     </section>
   </CaseLayout>
@@ -66,20 +63,4 @@ export default {
 </script>
 
 <style>
-
-  .case-page__content {
-    margin-bottom: calc(var(--space) * 2);
-  }
-  
-
-  .case-page__content h2 {
-    margin-bottom: calc(var(--space) * 0.5);
-    text-align: left;
-    text-transform: unset;
-    font-family: var(--font-family);
-    font-size: calc(var(--base-font-size) * 1.3);
-    font-weight: 800;
-    letter-spacing: 0;
-  }
-
 </style>
