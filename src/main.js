@@ -12,11 +12,27 @@ import '~/assets/style/fonts.css'
 
 import Vue from 'vue'
 import Vuex from 'vuex'
+
+import VueKatex from 'vue-katex';
+import 'katex/dist/katex.min.css';
+
+import VueCodeHighlight from 'vue-code-highlight';
+import CodeHighlight from "vue-code-highlight/src/CodeHighlight.vue";
+
+import "vue-code-highlight/themes/prism-twilight.css";
+import "vue-code-highlight/themes/window.css";
+import 'prism-es6/components/prism-json'; 
+import 'prism-es6/components/prism-bash';
+import 'prism-es6/components/prism-python'; 
+
+
 import Default from '~/layouts/Default.vue'
+
 
 // components
 import Contacts from '~/components/Contacts.vue'
 import rbnetButton from '~/components/rbnetButton.vue'
+import Youtube from '~/components/Youtube.vue'
 
 
 // directive for animation in view
@@ -34,6 +50,8 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   // head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
 
   Vue.use(Vuex);
+  Vue.use(VueKatex);
+  Vue.use(VueCodeHighlight)
 
   appOptions.store = new Vuex.Store({
     state: {
@@ -50,6 +68,8 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.component('layout', Default)
   Vue.component('Contacts', Contacts)
   Vue.component('rbnet-button', rbnetButton)
+  Vue.component('Youtube', Youtube)
+  Vue.component('VueCodeHighlight', CodeHighlight)
 
   // for translations
   Vue.prototype.$t = t; 
