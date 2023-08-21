@@ -1,5 +1,5 @@
 <template>
-  <section class="case-page-footer layout layout__text">
+  <section v-if="showFooter" class="case-page-footer layout layout__text">
     <h2>The way forward</h2>
     <p class="italic-abstract">
       Reducing energy usage in the office is just as important as compensating for carbon emissions. We can achieve this by making small changes like using energy-efficient lighting and appliances and keeping office equipment well-maintained.
@@ -27,6 +27,10 @@ export default {
     linkText: {
       type: String,
       default: ''
+    },
+    showFooter: {
+      type: Boolean,
+      default: true
     }
   }
 

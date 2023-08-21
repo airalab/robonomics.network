@@ -1,6 +1,7 @@
 <template>
   <div class="case-page__text">
-    <h2>{{title}}</h2>
+    <h2 v-if="title && !subtitle">{{title}}</h2>
+    <h4 v-if="title && subtitle">{{title}}</h4>
     <p v-if="!multiply">{{ text }}</p>
     <div class="case-page__text-wrapper" v-else>
       <slot/>
@@ -32,7 +33,11 @@ export default {
     multiply: {
       type: Boolean,
       default: false
-    }
+    },
+    subtitle: {
+      type: Boolean,
+      default: false
+    },
   }
 
 }
