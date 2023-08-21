@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{YoZj:function(n,c,e){"use strict";e.r(c);var o={},t=e("KHd+"),i=Object(t.a)(o,(function(){var n=this._self._c;return n("layout",[n("section",[this._v("blockchain-coffee-machine")])])}),[],!1,null,null,null);c.default=i.exports}}]);
