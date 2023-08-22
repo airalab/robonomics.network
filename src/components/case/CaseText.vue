@@ -6,7 +6,7 @@
     <div class="case-page__text-wrapper" v-else>
       <slot/>
     </div>
-    <g-image v-if="img" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
+    <g-image immediate v-if="img" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
   </div>
 </template>
 
