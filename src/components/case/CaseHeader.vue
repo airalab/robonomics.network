@@ -29,7 +29,7 @@
       <div class="case-page__intro italic-abstract" v-if="text">
         <p v-if="!withExtras">{{ text }}</p>
         <p v-else v-html="text"></p>
-        <g-image v-if="introImg" :src="require(`!!assets-loader!@/assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
+        <g-image immediate v-if="introImg" :src="require(`!!assets-loader!@/assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
       </div>
     </section>
 

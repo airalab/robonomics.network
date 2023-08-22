@@ -48,7 +48,7 @@
         </ol>
       </div>
 
-      <g-image src="@/assets/images/cases/blockchain-coffee/2.png"/>
+      <g-image immediate alt="scheme" src="@/assets/images/cases/blockchain-coffee/2.png"/>
 
       <h3>The autonomous coffee machine offers solutions:</h3>
       
@@ -66,7 +66,7 @@
         class="mb-big"
       >
         <!-- link "ACT" is not found -->
-        <g-image src="@/assets/images/cases/blockchain-coffee/scheme-0.svg"/>
+        <g-image immediate alt="scheme how to" src="@/assets/images/cases/blockchain-coffee/scheme-0.svg"/>
         <p>In order to have a cup of delicious coffee, a customer should send some funds (1 Statemine's token <g-link to="https://assethub-kusama.subscan.io/assets/3077">ACT</g-link>, id=3077) to the address of a coffee machine in Statemine parachain. After that the pouring process is started and action log is published in the <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">Robonomics Parachain portal</g-link> via Datalog function.</p>
         <p> <b>NOTE!</b> You may use any token on Statemine, more on that <g-link to="https://wiki.robonomics.network/docs/robonomics-coffee/#things-to-point-out">here</g-link> </p>
 
@@ -147,7 +147,7 @@
           >
             <h4>Circuit.</h4>
             <p>Overall circuit is presented below, this is a very simple transistor switch, we used <span class="formula" v-katex="'R1=1kΩ'"></span> R1=1kΩ, a npn transistor <span class="formula" v-katex="'Q1 (hfe=40, Uce>5V, Ic>0.015A'"></span>, sample <g-link to="https://alltransistors.com/adv/pdfdatasheet_rca/2n1613.pdf">here</g-link>, but almost any general transistor suites, since this is a switch) and a small 3.3V diode  <span class="formula" v-katex="'D'"></span> in base circuit found in the storage of our lab :) One can use a MOSFET transistor as well.</p>
-            <g-image src="@/assets/images/cases/blockchain-coffee/scheme-2.svg"/>
+            <g-image immediate alt="scheme" src="@/assets/images/cases/blockchain-coffee/scheme-2.svg"/>
           </CaseText>
         </li>
         <li>
@@ -228,7 +228,7 @@ npm install -g
         class="mt mb-big"
       >
         <p>On your PC install <g-link to="https://polkadot.js.org/extension/">Polkadot Extension</g-link> and register a coffee machine account there. <b>Save mnemonic seed phrase as it is going to be used later.</b></p>
-        <g-image alt="polkadot extension" src="@/assets/images/cases/blockchain-coffee/7.png"/>
+        <g-image immediate alt="polkadot extension" src="@/assets/images/cases/blockchain-coffee/7.png"/>
         <p>Logging actions in Robonomics is optional, you will need XRT on <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/">Robonomics Parachain portal</g-link> for coffee machine account (it is the same across networks) for this. If not, there will simply be an error message <em>"Balance too low."</em></p>
       </CaseText>
 
@@ -246,11 +246,11 @@ npm install -g
  <vue-code-highlight language="bash" class="mt">python3 main.py &#60;previously saved seed in quotes>"
 </vue-code-highlight> 
       <p>You should see the program waiting for ACT incomes:</p>
-      <g-image alt="ACT income" src="@/assets/images/cases/blockchain-coffee/8.png"/>
+      <g-image immediate alt="ACT income" src="@/assets/images/cases/blockchain-coffee/8.png"/>
       <p>You can send tokens from another account created the same way via <code class="code-inline">assets:transferextrinsic</code> on <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fstatemine-rpc.polkadot.io#/explorer">Statemine</g-link>.</p>
       <p>As soon as there is an income (positive change in <code class="code-inline">assets:accountstorage</code> function for address derived from seed and for token id <code class="code-inline">3077</code>) the RPI triggers GPIO pin 18 and coffee machine starts making coffee and records a datalog!</p>
-      <g-image alt="preview" src="@/assets/images/cases/blockchain-coffee/9.png"/>
-      <g-image alt="coffee machine" src="@/assets/images/cases/blockchain-coffee/10.png"/>
+      <g-image immediate alt="preview" src="@/assets/images/cases/blockchain-coffee/9.png"/>
+      <g-image immediate alt="coffee machine" src="@/assets/images/cases/blockchain-coffee/10.png"/>
 
       <h4>Option 2: using Everscale Network</h4>
       <p>Run poller by</p>
@@ -262,12 +262,12 @@ npm install -g
         <li>This is a POC of a blockchain-driven IoT device, it has things to improve, wires to hide and functionality to implement.</li>
         <li>
           Token ID, the one, coffee machine is waiting to receive, is set <g-link to="https://github.com/Multi-Agent-io/robonomics-coffee-maker/blob/master/statemine_monitor.py#L27">here</g-link>, <b>so you can use your own token</b>, existing one or newly created. To create one, go to <g-link to="https://github.com/airalab/robonomics-wiki">Statemine Kusama parachain page</g-link>, <code class="code-inline">Network -> Assets -> Create</code>. Set an ID there, complete the procedure and paste ID in the code.
-          <g-image alt="preview" src="@/assets/images/cases/blockchain-coffee/11.png"/>
+          <g-image immediate alt="preview" src="@/assets/images/cases/blockchain-coffee/11.png"/>
         </li>
         <li>Right now the only thing that matters for income tracker is the positive difference between current and previous asset balance. This may be filtered <g-link to="https://github.com/Multi-Agent-io/robonomics-coffee-maker/blob/master/statemine_monitor.py#L59">code</g-link>.</li>
         <li>
           One may use QR-code for mobile apps for convenient transfers.
-          <g-image alt="preview" src="@/assets/images/cases/blockchain-coffee/12.png"/>
+          <g-image immediate alt="preview" src="@/assets/images/cases/blockchain-coffee/12.png"/>
         </li>
       </ul>
     </section>
