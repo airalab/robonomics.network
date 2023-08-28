@@ -319,7 +319,7 @@
   "We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.": "我们提出了一个让机器人设备充当独立代理人的经济体系，它们能够执行以往只由人类执行的关键经济活动。在本章中，我们将探讨机器人经济的重要性，它有望成为人们生活的重要组成部分，并将当前的经济水平提升到未来的全自动化服务。",
   "In this chapter you will learn": "在本章中您将学到",
   "Ronald Coase and The Nature of the Firm": "Ronald Coase 和企业的本质",
-  "PS - cyber-physical system": "CPS - 网络物理系统",
+  "CPS - cyber-physical system": "CPS - 网络物理系统",
   "Norbert Wiener and the search for patterns in living and machine": "诺伯特·维纳和对生物和机器系统模式的探索",
   "The Fourth Industrial Revolution, Money for Robots and Bitcoin": "第四次工业革命，为机器人和比特币提供资金",
   "Ethereum Smart Contracts": "以太坊智能合约",
@@ -346,5 +346,17 @@
   "Read chapter 2": "阅读第 2 章",
   "We continue to update the white paper of Robonomics": "我们继续更新 Robonomics 白皮书",
   "stay tuned for new parts on our website and in Discord": "请关注我们网站和Discord频道上的新产品",
-  "Join our discord": "加入我们的Discord社区"
+  "Join our discord": "加入我们的Discord社区",
+  "Robonomics logos and usage": "Robonomics 的徽标和使用方法",
+  "We have put together Robonomics logos and guidelines to show how you may use it": "我们已经整理了 Robonomics 的徽标、颜色、资产和指导方针，以展示您如何使用它。",
+  "Download Robonomics logo": "下载Robonomics徽标",
+  "Download RWS logo": "下载RWS徽标",
+  "Download wiki logo": "下载维基徽标",
+  "Use these permitted logos to link to Robonomics, RWS or Robonomics Wiki": "使用这些允许的徽标链接到 Robonomics、RWS 或 Robonomics维基",
+  "Use permitted Robonomics logo to inform others you are integrated with Robonomics": "使用允许的Robonomics徽标告诉他人您已经与 Robonomics 集成",
+  "Use permitted logos in blog posts, articles and slides about Robonomics technology and integrated projects": "在有关 Robonomics 技术和集成项目的博客文章、文章和幻灯片中使用允许的徽标",
+  "Do not modify the permitted Robonomics logos, including changing the color, dimensions, or combining it with other words or design elements": "不要修改允许的 Robonomics 徽标，包括更改颜色、尺寸或与其他文字或设计元素结合",
+  "Do not use Robonomics logo and name in a way that suggests you are Robonomics, your offering or project is by Robonomics, or that Robonomics is endorsing you or your offering or project if it was not approved by Robonomics DAO": "请不要在未经 Robonomics DAO 批准的情况下，以任何方式使用 Robonomics 的 logo 和名称，以表示您与 Robonomics 有关联、认可或支持，或者您的产品或项目是由 Robonomics 推出的",
+  "Robonomics Color pallet": "Robonomics 颜色方案",
+  "These colors we use in our interfaces, prints, and other visuals. </br> Use it for your slides, banners for posts etc telling about Robonomics": "我们在界面、印刷品和其他视觉元素中使用的颜色， </br> 可以用于您的幻灯片、帖子的横幅等，以宣传和告知关于 Robonomics 的信息。"
 }

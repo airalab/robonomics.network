@@ -8,29 +8,30 @@
     />
 
     <div class="cases__main-title title-with-bg blue">
-        <h1><span>{{ $ts('R&D cases') }}</span></h1>
+        <h1><g-link to="/cases/">{{ $ts('R&D cases') }}</g-link></h1>
     </div>
 
-    <section class="case-page__header layout layout__text">
-      <h1>{{ caseRD[0].title }}</h1>
-      <div class="case-page__header-info">
-        <div class="case-page__status" :class="{'progress': caseRD[0].progress === 'proceeding'}" />
-        <div class="case-page__tags">
-          <span 
-            class="case-page__tag"
-            v-for="tag in caseRD[0].tags"
-            :key="tag"
-          >
-            {{ tag }}
-          </span>
+    <section class="case-page__header layout layout__wide">
+      <div class="case-page__header-wrapper layout__text">
+        <h1>{{ caseRD[0].title }}</h1>
+        <div class="case-page__header-info">
+          <div class="case-page__status" :class="{'progress': caseRD[0].progress === 'proceeding'}" />
+          <div class="case-page__tags">
+            <span 
+              class="case-page__tag"
+              v-for="tag in caseRD[0].tags"
+              :key="tag"
+            >
+              {{ tag }}
+            </span>
+          </div>
+        </div>
+        <div class="case-page__intro italic-abstract" v-if="text">
+          <p v-if="!withExtras">{{ text }}</p>
+          <p v-else v-html="text"></p>
         </div>
       </div>
-
-      <div class="case-page__intro italic-abstract" v-if="text">
-        <p v-if="!withExtras">{{ text }}</p>
-        <p v-else v-html="text"></p>
-        <g-image immediate v-if="introImg" :src="require(`!!assets-loader!@/assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
-      </div>
+      <g-image immediate v-if="introImg" :src="require(`!!assets-loader!@/assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
     </section>
 
   </div>
