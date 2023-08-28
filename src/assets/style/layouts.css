@@ -155,6 +155,10 @@
 	max-width: calc(var(--mid-width) + (var(--space) * 2));
 }
 
+.layout__wide {
+	max-width: calc(1400px  + (var(--space) * 4));
+}
+
 .page hr.animate {
 	transform-origin: 50% 50%;
 	transform: scaleX(0);
@@ -182,6 +186,9 @@
 	margin-bottom: calc(var(--space) * 2);
 }
 
+.case-page__header h1 {
+	letter-spacing: 0;
+}
 
 .case-page__content h2, .case-page__content h3,  .case-page__content h4{
 	margin-bottom: calc(var(--space) * 0.5);
@@ -191,4 +198,8 @@
 	font-size: calc(var(--base-font-size) * 1.3);
 	font-weight: 800;
 	letter-spacing: 0;
+}
+
+.case-page__content img {
+	margin-top: var(--space);
 }

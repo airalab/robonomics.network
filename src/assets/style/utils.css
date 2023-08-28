@@ -166,12 +166,20 @@
   background-color: var(--color-blue);
 }
 
-.title-with-bg  span {
+.title-with-bg  span,
+.title-with-bg a {
   padding-bottom: 15px;
   padding-left: calc(var(--space));
   padding-right: var(--space) !important;;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  color: var(--color-light);
+  transition: opacity 0.33s ease-in-out;
+  text-transform: uppercase;
+}
+
+.title-with-bg a:hover {
+  color: var(--color-light);
 }
 
 .bold {

@@ -10,15 +10,15 @@
     <!-- logos and usage section -->
     <section class="logos-and-usage">
       <div class="layout layout__content text-center container">
-        <h2>{{$ts('Robonomics logos and usage')}}</h2>
-        <Abstract text="We have put together Robonomics logos and guidelines to show how you may use it." :className="'logos-and-assets__text'" />
+        <h2>{{$t('Robonomics logos and usage')}}</h2>
+        <Abstract :text="$t('We have put together Robonomics logos and guidelines to show how you may use it.')" :className="'logos-and-assets__text'" />
         <div class="logos-and-assets__wrapper grid-3 animate-inside" v-in-viewport.once>
           <a href="/logos/Robonomics-logos.zip" class="logos-and-usage__link-download oldy dark oldy__link" download>
             <div class="logos-and-usage__img">
               <g-image aria-hidden="true" src="~/assets/images/logos/logo_robonomics_network_color.png" />
             </div>
             <div class="logos-and-usage__download">
-              <span>{{$ts('Download Robonomics logo')}}</span>
+              <span>{{$t('Download Robonomics logo')}}</span>
             </div>
           </a>
           <a href="/logos/RWS-logos.zip" class="logos-and-usage__link-download oldy dark oldy__link" download>
@@ -26,7 +26,7 @@
               <g-image aria-hidden="true" src="~/assets/images/logos/logo_robonomics_web_services.png" />
             </div>
             <div class="logos-and-usage__download">
-              <span>{{$ts('Download RWS logo')}}</span>
+              <span>{{$t('Download RWS logo')}}</span>
             </div>
           </a>
           <a href="/logos/Robonomics-wiki.zip" class="logos-and-usage__link-download oldy dark oldy__link" download>
@@ -34,26 +34,26 @@
               <g-image aria-hidden="true" src="~/assets/images/logos/logo_robonomics_wiki_black.png" />
             </div>
             <div class="logos-and-usage__download">
-              <span>{{$ts('Download wiki logo')}}</span>
+              <span>{{$t('Download wiki logo')}}</span>
             </div>
           </a>
         </div>
         <div class="layout layout__text section-wide animate-inside below-viewport in-viewport">
           <ul class="list-simple logos-and-usage__list animate-inside" v-in-viewport.once>
             <li class="logos-and-usage__item logos-and-usage__item--allowed">
-              {{$ts('Use these permitted logos to link to Robonomics, RWS or Robonomics Wiki')}}.
+              {{$t('Use these permitted logos to link to Robonomics, RWS or Robonomics Wiki')}}.
             </li>
             <li class="logos-and-usage__item logos-and-usage__item--allowed">
-              {{$ts('Use permitted Robonomics logo to inform others you are integrated with Robonomics')}}.
+              {{$t('Use permitted Robonomics logo to inform others you are integrated with Robonomics')}}.
             </li>
             <li class="logos-and-usage__item logos-and-usage__item--allowed">
-              {{$ts('Use permitted logos in blog posts, articles and slides about Robonomics technology and integrated projects')}}.
+              {{$t('Use permitted logos in blog posts, articles and slides about Robonomics technology and integrated projects')}}.
             </li>
             <li class="logos-and-usage__item logos-and-usage__item--banned">
-              {{$ts('Do not modify the permitted Robonomics logos, including changing the color, dimensions, or combining it with other words or design elements')}}.
+              {{$t('Do not modify the permitted Robonomics logos, including changing the color, dimensions, or combining it with other words or design elements')}}.
             </li>
             <li class="logos-and-usage__item logos-and-usage__item--banned">
-              {{$ts('Do not use Robonomics logo and name in a way that suggests you are Robonomics, your offering or project is by Robonomics, or that Robonomics is endorsing you or your offering or project if it was not approved by Robonomics DAO')}}.
+              {{$t('Do not use Robonomics logo and name in a way that suggests you are Robonomics, your offering or project is by Robonomics, or that Robonomics is endorsing you or your offering or project if it was not approved by Robonomics DAO')}}.
             </li>
           </ul>
         </div>
@@ -64,9 +64,9 @@
     <section class="color-pallet">
       <div class="layout layout__content text-center container">
         <h2>
-          {{$ts('Robonomics Color pallet')}}
+          {{$t('Robonomics Color pallet')}}
         </h2>
-        <Abstract :text="$ts('These colors we use in our interfaces, prints, and other visuals. </br> Use it for your slides, banners for posts etc telling about Robonomics.')" :className="'logos-and-assets__text'" />
+        <Abstract :text="$t('These colors we use in our interfaces, prints, and other visuals. </br> Use it for your slides, banners for posts etc telling about Robonomics.')" :className="'logos-and-assets__text'" />
           <ul class="list-simple color-pallet__wrapper grid-4 animate-inside" v-in-viewport.once>
             <li class="color-pallet__item color-pallet__item--primary-blue">
               <h3 class="color-pallet__subtitle">Primary blue</h3>
