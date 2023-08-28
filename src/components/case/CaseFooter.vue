@@ -1,14 +1,16 @@
 <template>
-  <section v-if="showFooter" class="case-page-footer layout layout__text">
-    <h2>The way forward</h2>
-    <p class="italic-abstract">
-      Reducing energy usage in the office is just as important as compensating for carbon emissions. We can achieve this by making small changes like using energy-efficient lighting and appliances and keeping office equipment well-maintained.
-    </p>
-    <p class="italic-abstract">
-      Energy consumption is a big part of our carbon footprint, and businesses must do their part to be more environmentally friendly. Having a system that tracks energy usage and helps offset carbon emissions can greatly reduce the impact of an office building on the environment. By adopting the right approach, businesses can contribute to a greener future.
-    </p>
+  <section v-if="showFooter" class="case-page-footer layout">
+    <div class="layout__text">
+      <h2>The way forward</h2>
+      <p class="italic-abstract">
+        Reducing energy usage in the office is just as important as compensating for carbon emissions. We can achieve this by making small changes like using energy-efficient lighting and appliances and keeping office equipment well-maintained.
+      </p>
+      <p class="italic-abstract">
+        Energy consumption is a big part of our carbon footprint, and businesses must do their part to be more environmentally friendly. Having a system that tracks energy usage and helps offset carbon emissions can greatly reduce the impact of an office building on the environment. By adopting the right approach, businesses can contribute to a greener future.
+      </p>
 
-    <CaseGithubLink v-if="link" :link="link" :linkText="linkText"/>
+      <CaseGithubLink v-if="link" :link="link" :linkText="linkText"/>
+    </div>
   </section>
 </template>
 
