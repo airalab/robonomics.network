@@ -1,16 +1,21 @@
 <template>
   <div class="case-page__text">
+    <div class="layout__mid img-top" v-if="imageOutside">
+      <g-image immediate v-if="img && imageOutside && imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
+    </div>
     <div class="case-page__text-container layout__text">
+      <g-image immediate v-if="img && !imageOutside && imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
+
       <h2 v-if="title && !subtitle">{{title}}</h2>
       <h4 v-if="title && subtitle">{{title}}</h4>
       <p v-if="!multiply">{{ text }}</p>
       <div class="case-page__text-wrapper" v-else>
         <slot/>
       </div>
-      <g-image immediate v-if="img && !imageOutside" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
+      <g-image immediate v-if="img && !imageOutside && !imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
     </div>
-    <div class="layout layout__mid" v-if="imageOutside">
-      <g-image immediate v-if="img && imageOutside" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
+    <div class="layout__mid" v-if="imageOutside && !imageTop">
+      <g-image immediate v-if="img && imageOutside && !imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
     </div>
   </div>
 </template>
@@ -46,6 +51,10 @@ export default {
     imageOutside: {
       type: Boolean,
       default: false
+    },
+    imageTop: {
+      type: Boolean,
+      default: false
     }
   }
 
@@ -54,7 +63,7 @@ export default {
 
 <style>
   .case-page__text {
-    margin-bottom: var(--space);
+    margin-bottom: calc(var(--space) * 3);
   }
 
   .case-page__text-wrapper p {
@@ -65,4 +74,11 @@ export default {
     display: block;
     margin: 0 auto;
   }
+
+  .case-page__text .img-top {
+    margin: 0 auto;
+    margin-bottom: calc(var(--space) * 0.7);
+  }
+
+
 </style>

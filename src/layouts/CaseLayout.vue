@@ -69,6 +69,6 @@ export default {
   section {
     margin-top: 0;
     margin-bottom: 0;
-    margin-bottom: calc(var(--space) * 0.5);
+    margin-bottom: calc(var(--space) * 3);
   }
 </style>
