@@ -81,7 +81,7 @@ export default {
 
 .case-page__header {
   margin-top: 0;
-  margin-bottom: calc(var(--space) * 0.5);
+  margin-bottom: calc(var(--space) * 2);
 }
 
 h1 {

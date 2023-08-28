@@ -107,6 +107,7 @@ export default {
 
 <style scoped>
   .contacts {
+    margin-top: calc(var(--space) * 6);
     padding-top: 0 !important;
     background-color: transparent;
     border-top: 1px solid var(--color-darkness);

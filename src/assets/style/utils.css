@@ -182,6 +182,10 @@
   color: var(--color-light);
 }
 
+.dark-theme a:not(.button):hover {
+  color: var(--color-light);
+}
+
 .bold {
   font-weight: 600;
 }
