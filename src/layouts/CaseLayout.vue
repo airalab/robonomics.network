@@ -8,7 +8,7 @@
       :withExtras="withExtras"
     />
 
-    <section class="case-page layout layout__text">
+    <section class="case-page layout">
       <slot/>
     </section>
     

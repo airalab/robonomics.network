@@ -1,19 +1,23 @@
 import { initI18n } from 'i18n-pro'
-import arDefault from './Arabic.json';
-import ruDefault from './Russian.json';
-import zhDefault from './Chinese.json';
-import enDefault from './English.json';
+import ar from './Arabic.json';
+import ru from './Russian.json';
+import zh from './Chinese.json';
+import en from './English.json';
+import es from './Spanish.json';
+import ja from './Japanese.json';
+import de from './German.json';
 
 // for blog
-import arBlog from './blog/Arabic.json';
-import ruBlog from './blog/Russian.json';
-import zhBlog from './blog/Chinese.json';
-import enBlog from './blog/English.json';
+// import arBlog from './blog/Arabic.json';
+// import ruBlog from './blog/Russian.json';
+// import zhBlog from './blog/Chinese.json';
+// import enBlog from './blog/English.json';
+// const en = Object.assign(enBlog, enDefault);
+// const ar = Object.assign(arBlog, arDefault);
+// const ru = Object.assign(ruBlog, ruDefault);
+// const zh = Object.assign(zhBlog, zhDefault);
 
-const en = Object.assign(enBlog, enDefault);
-const ar = Object.assign(arBlog, arDefault);
-const ru = Object.assign(ruBlog, ruDefault);
-const zh = Object.assign(zhBlog, zhDefault);
+
 
 
 const {
@@ -28,6 +32,9 @@ const {
     ar,
     ru,
     zh,
+    es,
+    ja,
+    de
   },
   locale: typeof window !== "undefined" ? (window.localStorage.getItem('locale') || 'en') : 'en'
 })

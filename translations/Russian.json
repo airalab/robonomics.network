@@ -319,7 +319,7 @@
   "We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.": "Мы представили экономическую систему, в которой робототехнические устройства выступают как независимые агенты, способные к выполнению ключевых экономических активностей, ранее присущих только человеку. В этой главе мы осветим актуальность появления экономики роботов, которая в будущем может стать важной частью жизни людей и изменить текущий уровень экономики в полностью автоматизированные сервисы.",
   "In this chapter you will learn": "В этой главе вы узнаете\r \r",
   "Ronald Coase and The Nature of the Firm": "Рональд Коуз и природа фирмы\r \r",
-  "PS - cyber-physical system": "КФС – кибер-физическая система\r \r",
+  "CPS - cyber-physical system": "КФС – кибер-физическая система\r \r",
   "Norbert Wiener and the search for patterns in living and machine": "Норберт Винер и поиск закономерностей в живом и машинном\r \r",
   "The Fourth Industrial Revolution, Money for Robots and Bitcoin": "Четвёртая промышленная революция, деньги для роботов и Bitcoin\r \r",
   "Ethereum Smart Contracts": "Умные контракты Ethereum\r \r",
@@ -346,5 +346,17 @@
   "Read chapter 2": "Читать главу 2",
   "We continue to update the white paper of Robonomics": "Мы продолжаем дополнять белую бумагу Robonomics,",
   "stay tuned for new parts on our website and in Discord": "следите за выходом новых частей на сайте и в Discord",
-  "Join our discord": "Присоединяйтесь к нашему discord"
+  "Join our discord": "Присоединяйтесь к нашему discord",
+  "Robonomics logos and usage": "Логотипы Robonomics и их использование",
+  "We have put together Robonomics logos and guidelines to show how you may use it": "Мы собрали логотипы Robonomics, а также руководства по их использованию.",
+  "Download Robonomics logo": "Скачать логотип Robonomics",
+  "Download RWS logo": "Скачать логотип RWS",
+  "Download wiki logo": "Скачать логотип wiki",
+  "Use these permitted logos to link to Robonomics, RWS or Robonomics Wiki": "Используйте эти разрешенные логотипы для ссылки на Robonomics, RWS или Robonomics Wiki",
+  "Use permitted Robonomics logo to inform others you are integrated with Robonomics": "Используйте разрешенный логотип Robonomics, чтобы сообщить, что вы интегрированы с Robonomics",
+  "Use permitted logos in blog posts, articles and slides about Robonomics technology and integrated projects": "Используйте разрешенные логотипы для постов в блоге, статьях и презентациях о технологии Robonomics и интегрированных проектах.",
+  "Do not modify the permitted Robonomics logos, including changing the color, dimensions, or combining it with other words or design elements": "Не модифицируйте разрешенные логотипы Robonomics, в том числе не изменяйте цвет, размеры и не комбинируйте их с другими словами или элементами дизайна",
+  "Do not use Robonomics logo and name in a way that suggests you are Robonomics, your offering or project is by Robonomics, or that Robonomics is endorsing you or your offering or project if it was not approved by Robonomics DAO": "Не используйте логотип и название Robonomics таким образом, который предполагает, что вы представляете Robonomics, что ваше предложение или проект принадлежат Robonomics или что Robonomics поддерживает вас или ваше предложение/проект, если они не были одобрены Robonomics DAO",
+  "Robonomics Color pallet": "Цветовая палитра Robonomics",
+  "These colors we use in our interfaces, prints, and other visuals. </br> Use it for your slides, banners for posts etc telling about Robonomics": "Эти цвета мы используем в наших интерфейсах, принтах и других визуальных элементах. </br> Используйте эту палитру для своих презентаций, баннеров для постов и т. д., рассказывающих о Robonomics."
 }

@@ -30,11 +30,11 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: transform 0.33s ease-in-out;
+  transition: opacity 0.33s ease-in-out;
 }
 
 .case-page__github-link:hover {
-  transform: rotate(-1.5deg);
+  opacity: 0.7;
 }
 
 .case-page__github-link-text {
