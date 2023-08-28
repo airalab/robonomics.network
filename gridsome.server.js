@@ -44,7 +44,7 @@ module.exports = function (api) {
   api.createManagedPages( ({ createPage }) => {
 
     // all locales
-    const locales = ["ru", "zh", "ar"];
+    const locales = ["ru", "zh", "ar", "ja", "es", "de"];
 
     createPage(
       {
@@ -102,7 +102,7 @@ module.exports = function (api) {
         // code below translates blog post (if translation exists) for specific locale (e.g arabic)
         // change path and object for another locale to crate translation
         
-        // let data = fs.readFileSync(`content/posts/zh/${path}.md`, 'utf-8');
+        // let data = fs.readFileSync(`content/posts/ar/${path}.md`, 'utf-8');
         // this part replaces english text with the needed one 
         // allZh.forEach(el => {
         //   if(data.includes(el)) {

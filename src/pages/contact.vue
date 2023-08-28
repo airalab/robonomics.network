@@ -2,7 +2,7 @@
   <layout>
 
     <MetaInfo
-      pageTitle = "Nav Contact"
+      pageTitle = "Contacts"
       pageImage = "/website_cover_contacts.png"
     />
 
