@@ -1,6 +1,6 @@
 <template>
 
-  <section v-if="text" class="text_abstract layout layout__text animate" :class="className" v-html="$ts(text)" v-in-viewport.once/>
+  <section v-if="text" class="text_abstract layout layout__text animate" :class="className" v-html="text" v-in-viewport.once/>
 
   <!-- <section class="text_abstract layout layout__text animate" :class="className" v-in-viewport.once>
     <slot/>

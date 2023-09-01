@@ -2,11 +2,11 @@
     <div class="form" :class="'status-'+status">
         <form @submit.prevent="onSubmit" >
             <label class="label">
-                <span>{{$ts('Your email')}}:</span>
+                <span>{{$t('Your email')}}:</span>
                 <input type="email" v-model="email" name="email" required/>
             </label>
 
-            <label><input type="checkbox" name="agreement" required/> {{$ts('I agree to receive emails')}}</label>
+            <label><input type="checkbox" name="agreement" required/> {{$t('I agree to receive emails')}}</label>
 
             <vue-recaptcha
             ref="invisibleRecaptcha"
@@ -15,11 +15,11 @@
             :sitekey="recaptchaSitekey">
             </vue-recaptcha>
             <div>
-                <rbnet-button>{{$ts('Send')}}</rbnet-button>
+                <rbnet-button>{{$t('Send')}}</rbnet-button>
             </div>
         </form>
 
-        <div class="form-message">{{$ts('Thanks, your application has been sent!')}}</div>
+        <div class="form-message">{{$t('Thanks, your application has been sent!')}}</div>
     </div>
 </template>
 

@@ -8,7 +8,7 @@
     />
 
     <div class="cases__main-title title-with-bg blue">
-        <h1><g-link to="/cases/">{{ $ts('R&D cases') }}</g-link></h1>
+        <h1><g-link to="/cases/">{{ $t('R&D cases') }}</g-link></h1>
     </div>
 
     <section class="case-page__header layout layout__wide">

@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="scheme-item animate" v-in-viewport.once><div>{{$ts('Digital twin')}}</div></div>
+    <div class="scheme-item animate" v-in-viewport.once><div>{{$t('Digital twin')}}</div></div>
 
     <div class="scheme-a animate-inside" v-in-viewport.once>
       <div class="scheme-a-right">
