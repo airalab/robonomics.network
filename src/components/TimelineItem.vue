@@ -5,7 +5,7 @@
     <div class="timeline__text" v-html="text">
     </div>
     <div class="timeline__events" v-if="events.length">
-      <h3>{{ $ts('Notable events') }}:</h3>
+      <h3>{{ $t('Notable events') }}:</h3>
       <div class="timeline__events-wrapper">
         <g-link class="timeline__link" v-for="event in events" :key="event.id" :to="event.link">
           {{ $t(event.name) }}

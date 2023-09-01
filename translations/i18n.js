@@ -6,6 +6,13 @@ import en from './English.json';
 import es from './Spanish.json';
 import ja from './Japanese.json';
 import de from './German.json';
+import az from './Azerbaijani.json';
+import fr from './French.json';
+import it from './Italian.json';
+import ko from './Korean.json';
+import pt from './Portuguese.json';
+import tr from './Turkish.json';
+import uk from './Ukrainian.json';
 
 // for blog
 // import arBlog from './blog/Arabic.json';
@@ -34,7 +41,14 @@ const {
     zh,
     es,
     ja,
-    de
+    de,
+    az,
+    fr,
+    it,
+    ko,
+    pt,
+    tr,
+    uk
   },
   locale: typeof window !== "undefined" ? (window.localStorage.getItem('locale') || 'en') : 'en'
 })

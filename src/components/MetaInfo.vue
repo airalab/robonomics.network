@@ -11,7 +11,7 @@ query {
 
 
 <script>
-   import translations from '@/data/locales/translations.yaml'
+   import translations from '@/data/metaData.yaml'
 export default {
   props: {
       pageTitle: { type: String, default: '' },
@@ -37,7 +37,7 @@ export default {
 
   data() {
     return {
-      allLocales: ["ru", "zh", "ar", "ja", "es", "de"],
+      allLocales: ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr", "uk", "ar"],
       locale: 'en',
       metaTitle: '',
       metaDescription: ''

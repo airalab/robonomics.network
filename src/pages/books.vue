@@ -2,7 +2,7 @@
   <layout>
 
     <MetaInfo
-      pageTitle = "Nav Books"
+      pageTitle = "Books"
       pageImage = "/website_cover_books.png"
     />
 

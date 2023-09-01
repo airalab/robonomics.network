@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      pageTitle = "Whitepaper 2022 page title"
-      pageDescription = "Whitepaper 2022 page description"
+      pageTitle = "Whitepaper 2022"
+      pageDescription = "Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory."
       :pageImage = "'/website_cover_white_paper_2022.jpg'"
     />
 
@@ -202,7 +202,7 @@
                 {{$t(`A simple representation of Robonomics architecture`)}}
               </li>
             </ol>
-            <rbnet-button class="large white" link="/vision">{{$t(`Read chapter 2`)}}</rbnet-button>
+            <rbnet-button class="large white" link="/architecture">{{$t(`Read chapter 2`)}}</rbnet-button>
           </div>
           <div class="second-chapter__images chapter__images">
             <div class="scheme-image">
