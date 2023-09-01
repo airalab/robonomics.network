@@ -2,7 +2,7 @@
   <layout>
 
     <MetaInfo
-      pageTitle = "Vision page title"
+      pageTitle = "Robonomics network vision"
       pageDescription = "We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution."
       :pageImage = "'/website_cover_vision.jpg'"
     />
@@ -17,14 +17,14 @@
 
         <h1 class="clean">
           <p>
-            <b>{{ $ts('Secure') }}</b>
-            <b>{{ $ts('Serverless') }}</b>
-            <b>{{ $ts('Futuristic') }}</b>
+            <b>{{ $t('Secure') }}</b>
+            <b>{{ $t('Serverless') }}</b>
+            <b>{{ $t('Futuristic') }}</b>
           </p>
-          {{ $ts('IoT applications') }}
+          {{ $t('IoT applications') }}
         </h1>
 
-        <div class="vision-subtitle"><span class="text">{{$ts('Vision page title')}}</span></div>
+        <div class="vision-subtitle"><span class="text">{{$t('Robonomics network vision')}}</span></div>
         <g-image class="vision-city" alt="You'll love the future" src="~/assets/images/city.png" />
         <div class="vision-decortext left">
           $ robonomics io<br/>
@@ -38,14 +38,14 @@
           write    Write information into device
         </div>
 
-        <div class="vision-decortext right">{{ $ts('At the frontier of cybernetics and economics') }}</div>
+        <div class="vision-decortext right">{{ $t('At the frontier of cybernetics and economics') }}</div>
       </section>
 
       <section class="vision-iot layout layout__content grid-2 animate-inside" v-in-viewport.once>
         <div class="text-col-2">
-          <h2>{{$ts(`BUILD YOUR IOT SERVICES ON ROBONOMICS PLATFORM`)}} <sup>*</sup></h2>
-          <p><i>* {{$ts(`taking full advantage of decentralized architecture`)}}</i></p>
-          <p class="hyphens">{{$ts(`Robonomics allows users to connect to smart devices using decentralized applications (dapp) that do not require the user data transfer for authentication. Communication takes place via a decentralized network of providers without a single point of failure, and the device independently obtains information from the blockchain network to run for execution or transmit data remotely. Thus, Robonomics provides a high level of device cybersecurity and user data privacy at all stages of communication from the user application to the launch of the smart device.`)}}</p>
+          <h2>{{$t(`Build your IoT services on Robonomics platform`)}} <sup>*</sup></h2>
+          <p><i>* {{$t(`taking full advantage of decentralized architecture`)}}</i></p>
+          <p class="hyphens">{{$t(`Robonomics allows users to connect to smart devices using decentralized applications (dapp) that do not require the user data transfer for authentication. Communication takes place via a decentralized network of providers without a single point of failure, and the device independently obtains information from the blockchain network to run for execution or transmit data remotely. Thus, Robonomics provides a high level of device cybersecurity and user data privacy at all stages of communication from the user application to the launch of the smart device.`)}}</p>
         </div>
         <div class="vision-iot-pic">
           <div id="parallax-iotapp" aria-hidden="true">
@@ -63,9 +63,9 @@
       <section class="vision-beginning section__solid">
         <div class="layout layout__content">
           <div class="hyphens vision-beginning-text animate-inside" v-in-viewport.once>
-            <h2>{{$ts(`FROM SMART CONTRACTS TO CROSS CHAIN IOT PLATFORM`)}}</h2>
-            <p>{{$ts(`The Robonomics project is over 6 years old. We started to prepare for the first experiment demonstrating human-machine communication using an independent decentralized provider network in 2015, from the early days of the Ethereum network. By early 2021, the project team managed to create a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain.`)}}</p>
-            <p>{{$ts(`As a result, today, we already have a hybrid platform for creating futuristic IoT applications that enable interaction with devices under the control of a global decentralized computer.`)}}</p>
+            <h2>{{$t(`From smart contracts to cross chain IoT platform`)}}</h2>
+            <p>{{$t(`The Robonomics project is over 6 years old. We started to prepare for the first experiment demonstrating human-machine communication using an independent decentralized provider network in 2015, from the early days of the Ethereum network. By early 2021, the project team managed to create a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain.`)}}</p>
+            <p>{{$t(`As a result, today, we already have a hybrid platform for creating futuristic IoT applications that enable interaction with devices under the control of a global decentralized computer.`)}}</p>
           </div>
         </div>
         <g-link class="vision-beginning-link" to="https://youtu.be/V_3rcP2Duv0"><g-image alt="Youtube video" src="~/assets/images/youtube.png" /></g-link>
@@ -75,10 +75,10 @@
       <section class="vision-cybernetics section__solid animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <article>
-            <h2>{{$ts(`AT THE FRONTIER OF CYBERNETICS AND ECONOMICS`)}}</h2>
-            <p class="hyphens">{{$ts(`The creators of Robonomics are experimenters, engineers, and scientists who care to understand the scientific validity of the approach and achieve clarity in presenting the principles that should form the basis of the entire architecture of the software solution.`)}}</p>
-            <p class="hyphens">{{$ts(`In our articles between 2017 and 2020, we presented the scientific community with many concepts and solutions united around the idea of the robot economy, an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. You can read the scientific articles at`)}} <g-link to="/papers">{{$ts(`this link`)}}</g-link>.</p>
-            <p class="hyphens">{{$ts(`We would like to justify the emergence of the robot economy and explain in general terms why we believe that this concept is the inevitable and obvious answer to the functioning of the large-scale robotic systems of the new industrial revolution.`)}}</p>
+            <h2>{{$t(`At the frontier of cybernetics and economics`)}}</h2>
+            <p class="hyphens">{{$t(`The creators of Robonomics are experimenters, engineers, and scientists who care to understand the scientific validity of the approach and achieve clarity in presenting the principles that should form the basis of the entire architecture of the software solution.`)}}</p>
+            <p class="hyphens">{{$t(`In our articles between 2017 and 2020, we presented the scientific community with many concepts and solutions united around the idea of the robot economy, an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. You can read the scientific articles at`)}} <g-link to="/papers">{{$t(`this link`)}}</g-link>.</p>
+            <p class="hyphens">{{$t(`We would like to justify the emergence of the robot economy and explain in general terms why we believe that this concept is the inevitable and obvious answer to the functioning of the large-scale robotic systems of the new industrial revolution.`)}}</p>
           </article>
           <div class="bg" aria-hidden="true"><g-image alt="" src="~/assets/images/cybernetics-girls.png" /></div>
 
@@ -89,17 +89,17 @@
       <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
-          <h2>{{$ts(`MOVE TOWARDS THE FACTORY OF THE FUTURE`)}}</h2>
-          <i>{{$ts(`Inspired by Ronald Coase`)}}</i>
+          <h2>{{$t(`Move towards the factory of the future`)}}</h2>
+          <i>{{$t(`Inspired by Ronald Coase`)}}</i>
           
           <g-image alt="" src="~/assets/images/person-ronald-coase.png" style="margin-top: 0"/>
         </div>
 
         <article class="hyphens">
-          <p>{{$ts(`The Nobel laureate in economics Ronald Coase in his 1937 work “The Nature of the Firm” best demonstrated the dichotomy «hierarchy vs free market» and gave an explanation of the reasons for the existence of organizations, in particular firms. Coase discusses the impact of transaction costs (the cost of collecting and processing information) to make decisions about the conclusion of a contract and to monitor its implementation. The firm, with all its hierarchical extra-market structure, is formed as the most efficient way to provide the consumer with the target product with the lowest transaction costs at the moment, when the transactional effort to create the same product through multiple exchanges on the market between individuals becomes much higher. To best visualize this process, look at the illustrative example of buying a car. Try to buy a car by the parts and calculate how much money and time you will spend just to assemble all the components in your garage. The risks and negotiation costs of buying parts are too high compared to Tesla’s off-the-shelf Model X.`)}}</p>
-          <p>{{$ts(`Nevertheless, this does not lead to the emergence of the world’s only firm for the production of everything. The point is that the same transaction costs also impose restrictions on the size of firms. Coase writes:`)}}</p>
-          <p class="vision-fathers-callout">{{$ts(`“...a firm will tend to expand until the costs of organising an extra transaction within the firm become equal to the costs of carrying out the same transaction by means of an exchange on the open market...”`)}}</p>
-          <p>{{$ts(`In other words, the more complex the hierarchy within the firm, the greater the internal costs, and at some point, they turn out to be excessive compared to the costs of returning to the market. Therefore, to ensure their growth as one of the drivers, entrepreneurs are looking for ways to reduce these costs.`)}}</p>
+          <p>{{$t(`The Nobel laureate in economics Ronald Coase in his 1937 work “The Nature of the Firm” best demonstrated the dichotomy «hierarchy vs free market» and gave an explanation of the reasons for the existence of organizations, in particular firms. Coase discusses the impact of transaction costs (the cost of collecting and processing information) to make decisions about the conclusion of a contract and to monitor its implementation. The firm, with all its hierarchical extra-market structure, is formed as the most efficient way to provide the consumer with the target product with the lowest transaction costs at the moment, when the transactional effort to create the same product through multiple exchanges on the market between individuals becomes much higher. To best visualize this process, look at the illustrative example of buying a car. Try to buy a car by the parts and calculate how much money and time you will spend just to assemble all the components in your garage. The risks and negotiation costs of buying parts are too high compared to Tesla’s off-the-shelf Model X.`)}}</p>
+          <p>{{$t(`Nevertheless, this does not lead to the emergence of the world’s only firm for the production of everything. The point is that the same transaction costs also impose restrictions on the size of firms. Coase writes:`)}}</p>
+          <p class="vision-fathers-callout">{{$t(`“...a firm will tend to expand until the costs of organising an extra transaction within the firm become equal to the costs of carrying out the same transaction by means of an exchange on the open market...”`)}}</p>
+          <p>{{$t(`In other words, the more complex the hierarchy within the firm, the greater the internal costs, and at some point, they turn out to be excessive compared to the costs of returning to the market. Therefore, to ensure their growth as one of the drivers, entrepreneurs are looking for ways to reduce these costs.`)}}</p>
         </article>
 
       </section>
@@ -108,13 +108,13 @@
 
       <section class="vision-fathers vision-get-rid layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
-          {{$ts(`The idea of reducing transaction costs through the ability of all participants in the business process (production, logistics, consumption) to unite at a closer level`)}}
-          <g-link to="https://ieeexplore.ieee.org/abstract/document/8792577">{{$ts(`clearly correlates`)}}</g-link> {{$ts(`with the problems and challenges faced by manufacturers of automation solutions. Over the past 50 years, the standard/regular operations of most business processes of large companies have been almost completely automated. The manufacturers are essentially left with the task of building secure communication between fully automated parts of the supply chain, and this task is a factor holding back further reduction of transaction costs through automation. The desire to market more competitive products or services compared to partially automated`)}}
-          <g-link to="https://ieeexplore.ieee.org/abstract/document/8760733">{{$ts(`firms spurs the search for solutions to`)}}</g-link>
-          {{$ts(`these challenges. It seems that everything is heading towards the emergence of robofirms — organizations in which the entire business process cycle is fully automated and does not require human participation, except as beneficiaries and consumers.`)}}
+          {{$t(`The idea of reducing transaction costs through the ability of all participants in the business process (production, logistics, consumption) to unite at a closer level`)}}
+          <g-link to="https://ieeexplore.ieee.org/abstract/document/8792577">{{$t(`clearly correlates`)}}</g-link> {{$t(`with the problems and challenges faced by manufacturers of automation solutions. Over the past 50 years, the standard/regular operations of most business processes of large companies have been almost completely automated. The manufacturers are essentially left with the task of building secure communication between fully automated parts of the supply chain, and this task is a factor holding back further reduction of transaction costs through automation. The desire to market more competitive products or services compared to partially automated`)}}
+          <g-link to="https://ieeexplore.ieee.org/abstract/document/8760733">{{$t(`firms spurs the search for solutions to`)}}</g-link>
+          {{$t(`these challenges. It seems that everything is heading towards the emergence of robofirms — organizations in which the entire business process cycle is fully automated and does not require human participation, except as beneficiaries and consumers.`)}}
         </article>
         <div class="vision-fathers-image">
-          <h2>{{$ts(`GET RID OF TRANSACTION COSTS`)}}</h2>
+          <h2>{{$t(`Get rid of transaction costs`)}}</h2>
           <g-image src="~/assets/images/vision-get-rid.png"/>
         </div>
 
@@ -125,15 +125,15 @@
       <section class="vision-fathers vision-cps layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
-          <h2>{{$ts(`OUR FUTURE IN SMART CITIES`)}}</h2>
+          <h2>{{$t(`Our future in smart cities`)}}</h2>
           <g-image src="~/assets/images/industry-4-0-robonomics.png" />
         </div>
 
         <article class="hyphens">
-          <p>{{$ts(`The task that automation manufacturers are facing today has a specific name — the construction of cyber-physical systems (abbreviated as CPS). By`)}} <g-link to="https://ieeexplore.ieee.org/abstract/document/4519604">{{$ts(`definition,`)}}</g-link> {{$ts(`a CPS is a strong unification and mutual integration of multiple computational, networking, and physical processes.`)}}</p>
-          <p>{{$ts(`The tasks of building CPS are central to any idea described in the new (fourth) industrial revolution. Therefore, CPS is the cornerstone of our future life in Smart Cities, manifesting itself everywhere. Examples of cyber-physical systems of the future are: Uber autopilot, drone selfies, network of 3D printers in metro stations.`)}}</p>
-          <p>{{$ts(`CPS is a complex structure of many connected elements: from the app on the phone, it extends to controlling the drone in flight over the city, and then proceeds to publishing the resulting photos to Instagram, but only after processing by cloud AI.`)}}</p>
-          <p>{{$ts(`The most important thing in the CPS design process is to find the fine line between sufficient and excessive number of automated elements in the service user supply chain. In other words, where is the size limit of the CPS? To answer this question, we should turn to the famous mathematician Norbert Wiener.`)}}</p>
+          <p>{{$t(`The task that automation manufacturers are facing today has a specific name — the construction of cyber-physical systems (abbreviated as CPS). By`)}} <g-link to="https://ieeexplore.ieee.org/abstract/document/4519604">{{$t(`definition,`)}}</g-link> {{$t(`a CPS is a strong unification and mutual integration of multiple computational, networking, and physical processes.`)}}</p>
+          <p>{{$t(`The tasks of building CPS are central to any idea described in the new (fourth) industrial revolution. Therefore, CPS is the cornerstone of our future life in Smart Cities, manifesting itself everywhere. Examples of cyber-physical systems of the future are: Uber autopilot, drone selfies, network of 3D printers in metro stations.`)}}</p>
+          <p>{{$t(`CPS is a complex structure of many connected elements: from the app on the phone, it extends to controlling the drone in flight over the city, and then proceeds to publishing the resulting photos to Instagram, but only after processing by cloud AI.`)}}</p>
+          <p>{{$t(`The most important thing in the CPS design process is to find the fine line between sufficient and excessive number of automated elements in the service user supply chain. In other words, where is the size limit of the CPS? To answer this question, we should turn to the famous mathematician Norbert Wiener.`)}}</p>
         </article>
         
 
@@ -144,19 +144,19 @@
       <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
-          <h2>{{$ts(`SELF-REGULATING SYSTEMS`)}}</h2>
-          <i>{{$ts(`Inspired by Norbert Wiener`)}}</i>
+          <h2>{{$t(`Self-regulating systems`)}}</h2>
+          <i>{{$t(`Inspired by Norbert Wiener`)}}</i>
           
           <g-image alt="" src="~/assets/images/person-norbert-wiener.png" />
         </div>
 
         <article class="hyphens">
-          <p>{{$ts(`In 1948 a professor of mathematics at the MIT Norbert Wiener published one of the most seminal works "Cybernetics: Or Control and Communication in the Animal and the Machine". He used the term "cybernetics" as self-regulating mechanisms for the first time and, so, this publication is considered a recognized Cybernetic birthday.`)}}</p>
-          <p>{{$ts(`Norbert Wiener speaks about viability of interdisciplinary science approach. For example he drew the parallels between automated control systems and challenges of scaling and complexity increasing of human society.`)}}</p>
-          <p>{{$ts(`So, in other words, the cybernetic approach can be applied equally to psychotherapy, biology and automated navigation. It is based on the function of the system, how the individual actions are controlled and how the individual nodes interact with each other.`)}}</p>
-          <p>{{$ts(`Taking into account Ronald Coase's and Norbert Wiener's publications, following up the development of Industry 4.0, we can consider using CPS as an economic agent, while designing robotized services. To regulate the size of the CPS and adapt to the changing needs of the individuals we can use market mechanism.`)}}</p>
-          <p>{{$ts(`And what’s so scientifically interesting, taking as a basis the idea of the restrictions imposed by the market on the size of the firm, we can say that the limit of the increase in CPS will always be determined by the market and nothing else is required for this.`)}}</p>
-          <p>{{$ts(`Robofirms are an ideal representation for cyber-physical systems. They are a fairly autonomous unit capable of providing services to both humans and other robots for money. As a result, the robot economy appears to us to be a general set of CPSs that provide services and goods directly to the market.`)}}</p>
+          <p>{{$t(`In 1948 a professor of mathematics at the MIT Norbert Wiener published one of the most seminal works "Cybernetics: Or Control and Communication in the Animal and the Machine". He used the term "cybernetics" as self-regulating mechanisms for the first time and, so, this publication is considered a recognized Cybernetic birthday.`)}}</p>
+          <p>{{$t(`Norbert Wiener speaks about viability of interdisciplinary science approach. For example he drew the parallels between automated control systems and challenges of scaling and complexity increasing of human society.`)}}</p>
+          <p>{{$t(`So, in other words, the cybernetic approach can be applied equally to psychotherapy, biology and automated navigation. It is based on the function of the system, how the individual actions are controlled and how the individual nodes interact with each other.`)}}</p>
+          <p>{{$t(`Taking into account Ronald Coase's and Norbert Wiener's publications, following up the development of Industry 4.0, we can consider using CPS as an economic agent, while designing robotized services. To regulate the size of the CPS and adapt to the changing needs of the individuals we can use market mechanism.`)}}</p>
+          <p>{{$t(`And what’s so scientifically interesting, taking as a basis the idea of the restrictions imposed by the market on the size of the firm, we can say that the limit of the increase in CPS will always be determined by the market and nothing else is required for this.`)}}</p>
+          <p>{{$t(`Robofirms are an ideal representation for cyber-physical systems. They are a fairly autonomous unit capable of providing services to both humans and other robots for money. As a result, the robot economy appears to us to be a general set of CPSs that provide services and goods directly to the market.`)}}</p>
         </article>
 
 
@@ -166,44 +166,44 @@
         <div class="layout layout__content">
           <div>
             <h2>
-              <b>{{$ts(`BITCOIN`)}}</b> 
-              & {{$ts(`MONEY FOR ROBOTS`)}}
+              <b>{{$t(`Bitcoin`)}}</b> 
+              & {{$t(`Money for robots`)}}
             </h2>
 
             <div class="industry40">
               <div>
                 <g-image aria-hidden="true" src="~/assets/images/industy-1.png" />
                 <div class="text">
-                  <h5>{{$ts(`Industry 1.0`)}}</h5>
-                  <small>{{$ts(`Mechanization:`)}} <br/>{{$ts(`replacement of muscle power with steam energy.`)}}</small>
-                  <small class="text-color-blue">{{$ts(`1784 г.`)}}</small>
+                  <h5>{{$t(`Industry 1.0`)}}</h5>
+                  <small>{{$t(`Mechanization:`)}} <br/>{{$t(`replacement of muscle power with steam energy.`)}}</small>
+                  <small class="text-color-blue">{{$t(`1784 y.`)}}</small>
                 </div>
               </div>
 
               <div>
                 <g-image aria-hidden="true" src="~/assets/images/industy-2.png" />
                 <div class="text">
-                  <h5>{{$ts(`Industry 2.0`)}}</h5>
-                  <small>{{$ts(`Electrification:`)}} <br/>{{$ts(`introduction of assembly-line production.`)}}</small>
-                  <small class="text-color-blue">{{$ts(`1870 г.`)}}</small>
+                  <h5>{{$t(`Industry 2.0`)}}</h5>
+                  <small>{{$t(`Electrification:`)}} <br/>{{$t(`introduction of assembly-line production.`)}}</small>
+                  <small class="text-color-blue">{{$t(`1870 y.`)}}</small>
                 </div>
               </div>
 
               <div>
                 <g-image aria-hidden="true" src="~/assets/images/industy-3.png" />
                 <div class="text">
-                  <h5>{{$ts(`Industry 3.0`)}}</h5>
-                  <small>{{$ts(`Automation:`)}} <br/>{{$ts(`introduction of automated systems with CNC.`)}}</small>
-                  <small class="text-color-blue">{{$ts(`1969 г.`)}}</small>
+                  <h5>{{$t(`Industry 3.0`)}}</h5>
+                  <small>{{$t(`Automation:`)}} <br/>{{$t(`introduction of automated systems with CNC.`)}}</small>
+                  <small class="text-color-blue">{{$t(`1969 y.`)}}</small>
                 </div>
               </div>
 
               <div>
                 <g-image aria-hidden="true" src="~/assets/images/industy-4.png" />
                 <div class="text">
-                  <h5>{{$ts(`Industry 4.0`)}}</h5>
-                  <small>{{$ts(`Smart production:`)}} <br/>{{$ts(`development of cyber physical systems.`)}}</small>
-                  <small class="text-color-blue">{{$ts(`Now`)}}</small>
+                  <h5>{{$t(`Industry 4.0`)}}</h5>
+                  <small>{{$t(`Smart production:`)}} <br/>{{$t(`development of cyber physical systems.`)}}</small>
+                  <small class="text-color-blue">{{$t(`Now`)}}</small>
                 </div>
               </div>
             </div>
@@ -211,9 +211,9 @@
           </div>
 
           <div class="robot hyphens text-col-2">
-            <p>{{$ts(`In the world of robofirms it turns out to be natural to provide robots with access to social institutions that previously were only needed by humans.`)}}</p>
-            <p>{{$ts(`Social institutions do not arise because people cannot live without banks, contracts and other instruments of society. They arise only because a person at some point in time stepped onto the path of more complex relations in society and took an important step towards accelerating the surrounding processes.`)}}</p>
-            <p>{{$ts(`Money and contracts should become available to robots, not because this is a sick fantasy of robot fans who have forgotten what Skynet is. But only because the new industrial revolution sets itself the task of building complex automated chains, the processes in which will affect the exchange of both technical information and economic information, and will also proceed at a speed inaccessible to humans.`)}}</p>
+            <p>{{$t(`In the world of robofirms it turns out to be natural to provide robots with access to social institutions that previously were only needed by humans.`)}}</p>
+            <p>{{$t(`Social institutions do not arise because people cannot live without banks, contracts and other instruments of society. They arise only because a person at some point in time stepped onto the path of more complex relations in society and took an important step towards accelerating the surrounding processes.`)}}</p>
+            <p>{{$t(`Money and contracts should become available to robots, not because this is a sick fantasy of robot fans who have forgotten what Skynet is. But only because the new industrial revolution sets itself the task of building complex automated chains, the processes in which will affect the exchange of both technical information and economic information, and will also proceed at a speed inaccessible to humans.`)}}</p>
             <g-image aria-hidden="true" src="~/assets/images/robot-w-bitcoin.png"/>
           </div>
         </div>
@@ -222,10 +222,10 @@
       <section class="vision-bitcoin animate-inside" v-in-viewport.once>
         <div class="layout layout__content hyphens text-col-3">
 
-          <p>{{$ts(`One of the examples of our experiments: negotiating road space and right of way payments for autonomous vehicles to reduce congestion. What a person would absolutely not do in traffic, the car will do for you without difficulties: you want to switch lanes, your car and your neighbor's car exchange offers on the cost of such an operation at a rate of hundreds msgs per second, they will reveal an equilibrium price, and so you are already in the next faster moving lane. This means that now it will become available to “charge” your ride with uber and make it faster.`)}}</p>
-          <p>{{$ts(`Robots need money that will be directly available to them in order to be able to perform operations without a person at the speed with which only machines can make decisions. And all this is solely for a person to enjoy life in the Smart City!`)}}</p>
-          <p>{{$ts(`And here we smoothly come to the first electronic cash - Bitcoin. The fact that Bitcoin can be stored in your account on the principle of not a bank, but cash in your wallet makes it the first money that the robot can manage independently, more precisely autonomously. At the same time, today we can already say that Bitcoin is not just electronic cash, but a truly global financial institution.`)}}</p>
-          <p class="vision-bitcoin-conslution">{{$ts(`As a result: an event not invented by us, but clearly falling into our vision, makes Bitcoin the first money for robots, or, if we look even deeper, it is precisely that social institution that will help the formation of robotic firms.`)}}</p>
+          <p>{{$t(`One of the examples of our experiments: negotiating road space and right of way payments for autonomous vehicles to reduce congestion. What a person would absolutely not do in traffic, the car will do for you without difficulties: you want to switch lanes, your car and your neighbor's car exchange offers on the cost of such an operation at a rate of hundreds msgs per second, they will reveal an equilibrium price, and so you are already in the next faster moving lane. This means that now it will become available to “charge” your ride with uber and make it faster.`)}}</p>
+          <p>{{$t(`Robots need money that will be directly available to them in order to be able to perform operations without a person at the speed with which only machines can make decisions. And all this is solely for a person to enjoy life in the Smart City!`)}}</p>
+          <p>{{$t(`And here we smoothly come to the first electronic cash - Bitcoin. The fact that Bitcoin can be stored in your account on the principle of not a bank, but cash in your wallet makes it the first money that the robot can manage independently, more precisely autonomously. At the same time, today we can already say that Bitcoin is not just electronic cash, but a truly global financial institution.`)}}</p>
+          <p class="vision-bitcoin-conslution">{{$t(`As a result: an event not invented by us, but clearly falling into our vision, makes Bitcoin the first money for robots, or, if we look even deeper, it is precisely that social institution that will help the formation of robotic firms.`)}}</p>
           <g-image aria-hidden="true" src="~/assets/images/vision-bitcoin-robots.png"/>
         </div>
       </section>
@@ -235,20 +235,20 @@
       <section class="layout layout__content animate-inside" v-in-viewport.once>
         <div class="text-col-3">
           <h2>
-            <b>{{$ts(`SMART CONTRACTS`)}}</b><br/>
-            {{$ts(`ETHEREUM`)}}
+            <b>{{$t(`Smart contracts`)}}</b><br/>
+            {{$t(`Ethereum`)}}
           </h2>
-          <p class="hyphens">{{$ts(`Bitcoin became the first money available to robots. Meanwhile we can't talk about Bitcoin in its current form as a tool for full-fledged technical and economic exchange.`)}}</p>
-          <p class="hyphens">{{$ts(`Now we already have smart contracts, DeFi markets and a decentralized infrastructure for exchanging messages between robots that open up the possibility for humanity to create a fully automated part of the human economy - the robot economy.`)}}</p>
+          <p class="hyphens">{{$t(`Bitcoin became the first money available to robots. Meanwhile we can't talk about Bitcoin in its current form as a tool for full-fledged technical and economic exchange.`)}}</p>
+          <p class="hyphens">{{$t(`Now we already have smart contracts, DeFi markets and a decentralized infrastructure for exchanging messages between robots that open up the possibility for humanity to create a fully automated part of the human economy - the robot economy.`)}}</p>
           <p class="hyphens">
-            {{$ts(`One of the great opportunity to build the economy of robots is`)}}
-            <g-link to="https://ethereum.org/">{{$ts(`Ethereum`)}}</g-link>
-            {{$ts(`technology. With Ethereum functionality robots are able not only exchange money, but to enter into contracts with humans and among themselves.`)}}
+            {{$t(`One of the great opportunity to build the economy of robots is`)}}
+            <g-link to="https://ethereum.org/">{{$t(`Ethereum`)}}</g-link>
+            {{$t(`technology. With Ethereum functionality robots are able not only exchange money, but to enter into contracts with humans and among themselves.`)}}
           </p>
-          <p class="hyphens">{{$ts(`But what's the point of machine to machine (m2m) contract based communication? That's a great question! Let's go back to CPS. When we talk about direct communications between sensors, machine equipment or any other elements we still talk about collaboration within one regulated system. But if we want smart cities services to be alive (or even smart home in some cases), we need establish communication with various third-party elements.`)}}</p>
-          <p class="hyphens">{{$ts(`Let's imagine drone delivery service. If a drone, for example, is DHL's property how it can access to Amazon's warehouses or access to over the entire airspace of the city? Is it be a monopoly? This is a major challenge for many 4th industrial revolution initiatives!`)}}</p>
-          <p class="hyphens">{{$ts(`Most corporations say they need nearly complete rights to its surroundings because they don’t know how to securely set up the exchange of technical information between automated systems outside of their own internal corporate structure. At the same time, if you look at the processes where a person works, then we see that the cooperation of different corporations has been long and successfully existed. You can easily order door-to-door delivery of purchased goods on the Amazon website, and the courier will be able to drive a car along city roads, receive an order at the warehouse and bring it to you.`)}}</p>
-          <p class="hyphens"> {{$ts(`What's the difference? In the first case there is no way to build a contractual relationship between machines, and in the second case, in the world of people, contractual relations already exist.`)}}</p>
+          <p class="hyphens">{{$t(`But what's the point of machine to machine (m2m) contract based communication? That's a great question! Let's go back to CPS. When we talk about direct communications between sensors, machine equipment or any other elements we still talk about collaboration within one regulated system. But if we want smart cities services to be alive (or even smart home in some cases), we need establish communication with various third-party elements.`)}}</p>
+          <p class="hyphens">{{$t(`Let's imagine drone delivery service. If a drone, for example, is DHL's property how it can access to Amazon's warehouses or access to over the entire airspace of the city? Is it be a monopoly? This is a major challenge for many 4th industrial revolution initiatives!`)}}</p>
+          <p class="hyphens">{{$t(`Most corporations say they need nearly complete rights to its surroundings because they don’t know how to securely set up the exchange of technical information between automated systems outside of their own internal corporate structure. At the same time, if you look at the processes where a person works, then we see that the cooperation of different corporations has been long and successfully existed. You can easily order door-to-door delivery of purchased goods on the Amazon website, and the courier will be able to drive a car along city roads, receive an order at the warehouse and bring it to you.`)}}</p>
+          <p class="hyphens"> {{$t(`What's the difference? In the first case there is no way to build a contractual relationship between machines, and in the second case, in the world of people, contractual relations already exist.`)}}</p>
           <g-image alt="" src="~/assets/images/vision-ethereum.png" />
         </div>
       </section>
@@ -258,12 +258,12 @@
       <section class="layout layout__content animate-inside" v-in-viewport.once>
         <div class="text-col-3">
           <h2>
-            <b>{{$ts(`PARACHAINS`)}}</b><br/>
-            {{$ts(`POLKADOT`)}}
+            <b>{{$t(`Parachains`)}}</b><br/>
+            {{$t(`Polkadot`)}}
           </h2>
-          <p class="hyphens">{{$ts(`The main difficulty that Robonomics faces today is the high price for launching an IoT device using Ethereum. In Ethereum you have to pay a commission on each transaction in terms of US dollars in the range of $10 to $100. It is quite expensive for most cases from the real economy, be it a car-sharing trip, renting a smart apartment, drone delivery or 3D printing of your favorite anime hero to order.`)}}</p>
-          <p class="hyphens">{{$ts(`Out of fairness, we would like to note that there are profitable scenarios even with transaction fees in the Ethereum network of 2018 - 2019. For example, automated carbon footprint offset transactions or transferring the order from the website directly to the production. But still, for the mass application of the web3 technologies in the field of IoT, a reduction in the price that the cloud charges from the connected device is required.`)}}</p>
-          <p class="hyphens">{{$ts(`Looking for an opportunity to reduce the cost of interacting with an IoT device, Robonomics developers have studied alternative developments to Ethereum. Our choice settled on the`)}} <g-link to="https://polkadot.network">{{$ts(`Polkadot`)}}</g-link> {{$ts(`architecture, which would allow us to run our own blockchain, within a common network, in which security is ensured by validators independent of our project.`)}} </p>
+          <p class="hyphens">{{$t(`The main difficulty that Robonomics faces today is the high price for launching an IoT device using Ethereum. In Ethereum you have to pay a commission on each transaction in terms of US dollars in the range of $10 to $100. It is quite expensive for most cases from the real economy, be it a car-sharing trip, renting a smart apartment, drone delivery or 3D printing of your favorite anime hero to order.`)}}</p>
+          <p class="hyphens">{{$t(`Out of fairness, we would like to note that there are profitable scenarios even with transaction fees in the Ethereum network of 2018 - 2019. For example, automated carbon footprint offset transactions or transferring the order from the website directly to the production. But still, for the mass application of the web3 technologies in the field of IoT, a reduction in the price that the cloud charges from the connected device is required.`)}}</p>
+          <p class="hyphens">{{$t(`Looking for an opportunity to reduce the cost of interacting with an IoT device, Robonomics developers have studied alternative developments to Ethereum. Our choice settled on the`)}} <g-link to="https://polkadot.network">{{$t(`Polkadot`)}}</g-link> {{$t(`architecture, which would allow us to run our own blockchain, within a common network, in which security is ensured by validators independent of our project.`)}} </p>
           <g-image alt="" src="~/assets/images/vision-polkadot.png"/>
         </div>
       </section>
@@ -274,40 +274,40 @@
           <div class="grid-2" v-in-viewport.once>
             <div>
               <g-image src="~/assets/images/vision-chains-polkadot.png"/>
-              <h2>{{$ts(`Polkadot`)}}</h2>
+              <h2>{{$t(`Polkadot`)}}</h2>
             </div>
             <div>
-              <h2>{{$ts(`Ethereum 2.0`)}}</h2>
+              <h2>{{$t(`Ethereum 2.0`)}}</h2>
               <g-image src="~/assets/images/vision-chains-ethereum.png"/>
             </div>
           </div>
           <div class="grid-2">
             <div>
-              <p>{{$ts(`Heterogeneous Blockchain Network`)}}</p>
+              <p>{{$t(`Heterogeneous Blockchain Network`)}}</p>
               <g-image src="~/assets/images/vision-chains-parachain.png"/>
             </div>
             <div>
-              <p>{{$ts(`Homogeneous Shard Network`)}}</p>
+              <p>{{$t(`Homogeneous Shard Network`)}}</p>
               <g-image src="~/assets/images/vision-chains-shard-network.png"/>
             </div>
           </div>
           <div class="grid-2">
             <div>
-              <p>{{$ts(`On-chain protocol control`)}}</p>
+              <p>{{$t(`On-chain protocol control`)}}</p>
               <g-image src="~/assets/images/vision-chains-polkadot-hammer.png"/>
             </div>
             <div>
-              <p>{{$ts(`Protection against the tyranny of the crowd`)}}</p>
+              <p>{{$t(`Protection against the tyranny of the crowd`)}}</p>
               <g-image src="~/assets/images/vision-chains-tyranny.png"/>
             </div>
           </div>
           <div class="grid-2">
             <div>
-              <p>{{$ts(`Auction of bandwidth in the common network`)}}</p>
+              <p>{{$t(`Auction of bandwidth in the common network`)}}</p>
               <g-image src="~/assets/images/vision-chains-auction.png"/>
             </div>
             <div>
-              <p>{{$ts(`Payment for gas by users`)}}</p>
+              <p>{{$t(`Payment for gas by users`)}}</p>
               <g-image src="~/assets/images/vision-chains-gas-payment.png"/>
             </div>
           </div>
@@ -339,42 +339,42 @@
       <section class="section section__solid section__darkgray">
         <div class="vision-books layout layout__content">
           <div>
-            <h2>{{$ts(`Have you read this?`)}}</h2>
-            <p class="layout__text"><i>{{$ts(`Great books lead to great ideas. If you're after more inspiration about human-machine communication, try reading science fiction books. Mark the books you’ve already read and see what else can we offer you for further reflection.`)}}</i></p>
+            <h2>{{$t(`Have you read this?`)}}</h2>
+            <p class="layout__text"><i>{{$t(`Great books lead to great ideas. If you're after more inspiration about human-machine communication, try reading science fiction books. Mark the books you’ve already read and see what else can we offer you for further reflection.`)}}</i></p>
             <div class="vision-books-books">
               <div class="book" @click="markBook($event)">
-                {{$ts(`Do Androids Dream of Electric Sheep?`)}}
-                <small>{{$ts(`Philip K. Dick`)}}</small>
+                {{$t(`Do Androids Dream of Electric Sheep?`)}}
+                <small>{{$t(`Philip K. Dick`)}}</small>
                 <span></span>
               </div>
 
               <div class="book" @click="markBook($event)">
-                {{$ts(`Autofac`)}}
-                <small>{{$ts(`Philip K. Dick`)}}</small>
+                {{$t(`Autofac`)}}
+                <small>{{$t(`Philip K. Dick`)}}</small>
                 <span></span>
               </div>
 
               <div class="book" @click="markBook($event)">
-                {{$ts(`I, Robot`)}}
-                <small>{{$ts(`Isaac Asimov`)}}</small>
+                {{$t(`I, Robot`)}}
+                <small>{{$t(`Isaac Asimov`)}}</small>
                 <span></span>
               </div>
 
               <div class="book" @click="markBook($event)">
-                {{$ts(`The Bicentennial Man`)}}
-                <small>{{$ts(`Isaac Asimov`)}}</small>
+                {{$t(`The Bicentennial Man`)}}
+                <small>{{$t(`Isaac Asimov`)}}</small>
                 <span></span>
               </div>
 
               <div class="book" @click="markBook($event)">
-                {{$ts(`Neuromancer`)}}
-                <small>{{$ts(`William Gibson`)}}</small>
+                {{$t(`Neuromancer`)}}
+                <small>{{$t(`William Gibson`)}}</small>
                 <span></span>
               </div>
 
               <div class="book" @click="markBook($event)">
-                {{$ts(`Marionettes, Inc.`)}}
-                <small>{{$ts(`Ray Bradbury`)}}</small>
+                {{$t(`Marionettes, Inc.`)}}
+                <small>{{$t(`Ray Bradbury`)}}</small>
                 <span></span>
               </div>
             </div>
@@ -385,19 +385,19 @@
       <section id="teleology" class="vision-fathers layout layout__content" v-show="booksMarked > 1">
 
         <div class="vision-fathers-image">
-          <h2>{{$ts(`Open questions of teleology`)}}</h2>
-          <i>{{$ts(`and a treatise by L. von Mises`)}}</i>
+          <h2>{{$t(`Open questions of teleology`)}}</h2>
+          <i>{{$t(`and a treatise by L. von Mises`)}}</i>
 
           <g-image alt="" src="~/assets/images/person-mises.png"/>
         </div>
 
         <article class="hyphens">
-          <p>{{$ts(`In conclusion, we would like to mention questions that remain open from a global point of view. What is the goal of robots?`)}}
+          <p>{{$t(`In conclusion, we would like to mention questions that remain open from a global point of view. What is the goal of robots?`)}}
           </p>
-          <p>{{$ts(`In fact, the economy of people is often associated with the conscientiousness of performing tasks within the framework of the contract, the desire of the parties to achieve a result, the opportunistic and altruistic behavior of the individual in society. All of these principles are hard to apply to the robot economy. What are the motives of the robot economy? It's an open question that we need to research and discuss in society for better understanding and applying robots.`)}}</p>
-          <p>{{$ts(`For the start we suggest to look at Mises's work "Human Action: A Treatise on Economics" (praxeological approach) and at early article by Norbert Wiener "Behavior, Purpose and Teleology" (teleological vision).`)}}</p>
-          <p>{{$ts(`Praxeology inspires us with interesting ideas about human behavior without direct dependence on the purposes. This gives us the opportunity to work on the processes of the economy of robots conditionally as with a black box without delving into the ultimate goals. At the same time, teleology poses a challenge to explain causes.`)}}</p>
-          <p>{{$ts(`We hope that somewhere at the junction of the works of Mises and Wiener, a point for further development of the robot economy may be found, not just as a protocol of interaction between people and machines of a praxeological nature, but taking into account the teleological elements of building interspecies communication.`)}}</p>
+          <p>{{$t(`In fact, the economy of people is often associated with the conscientiousness of performing tasks within the framework of the contract, the desire of the parties to achieve a result, the opportunistic and altruistic behavior of the individual in society. All of these principles are hard to apply to the robot economy. What are the motives of the robot economy? It's an open question that we need to research and discuss in society for better understanding and applying robots.`)}}</p>
+          <p>{{$t(`For the start we suggest to look at Mises's work "Human Action: A Treatise on Economics" (praxeological approach) and at early article by Norbert Wiener "Behavior, Purpose and Teleology" (teleological vision).`)}}</p>
+          <p>{{$t(`Praxeology inspires us with interesting ideas about human behavior without direct dependence on the purposes. This gives us the opportunity to work on the processes of the economy of robots conditionally as with a black box without delving into the ultimate goals. At the same time, teleology poses a challenge to explain causes.`)}}</p>
+          <p>{{$t(`We hope that somewhere at the junction of the works of Mises and Wiener, a point for further development of the robot economy may be found, not just as a protocol of interaction between people and machines of a praxeological nature, but taking into account the teleological elements of building interspecies communication.`)}}</p>
         </article>
 
 

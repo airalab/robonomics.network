@@ -10,7 +10,7 @@
     <div class="cases-top">
 
       <div class="cases__main-title title-with-bg">
-        <h1><span>{{ $ts('R&D cases') }}</span></h1>
+        <h1><span>{{ $t('R&D cases') }}</span></h1>
       </div>
       <div>
         <p>

@@ -25,10 +25,10 @@
             <li><g-link to="/ambassador-program">{{$t('Ambassador program')}}</g-link></li>
             <li><g-link to="/contact">{{$t('Contacts')}}</g-link></li>
 
-            <li class="new-column"><g-link to="https://wiki.robonomics.network">{{$ts('Wiki')}}</g-link></li>
-            <li><g-link to="https://robonomics.academy">{{$ts('Academy')}}</g-link></li>
-            <li><g-link to="https://github.com/airalab">{{$ts('Github')}}</g-link></li>
-            <li><g-link to="https://dapp.robonomics.network/#/">{{$ts('Dapp')}}</g-link></li>
+            <li class="new-column"><g-link to="https://wiki.robonomics.network">{{$t('Wiki')}}</g-link></li>
+            <li><g-link to="https://robonomics.academy">{{$t('Academy')}}</g-link></li>
+            <li><g-link to="https://github.com/airalab">{{$t('Github')}}</g-link></li>
+            <li><g-link to="https://dapp.robonomics.network/#/">{{$t('Dapp')}}</g-link></li>
 
         </ul>
 

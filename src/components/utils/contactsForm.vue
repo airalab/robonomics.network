@@ -6,7 +6,7 @@
       class="contacts__input" 
       :class="{'sent': result === 'success'}"
       type="email" 
-      :placeholder="$ts('Your email')" 
+      :placeholder="$t('Your email')" 
       data-gsp-name="Email" 
       :data-gsp-data="data_email" 
       v-model="data_email"
