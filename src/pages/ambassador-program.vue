@@ -9,43 +9,43 @@
 
         <section id="banner" class="section__solid section__blue">
             <div>
-                <h1 class="layout">{{$ts('Robonomics Ambassador Program')}}</h1>
+                <h1 class="layout">{{$t('Robonomics Ambassador Program')}}</h1>
 
                 <div class="text-center layout layout__text">
-                    <p class="text-small"><i class="label-red">{{$ts('Latest update')}}: 23-04-2022</i></p>
+                    <p class="text-small"><i class="label-red">{{$t('Latest update')}}: 23-04-2022</i></p>
 
                     <section class="text-abstract text-little">
-                        <p><b>{{$ts('For all passionate about Robonomics and inspired by web3.')}}</b></p>
-                        <p>{{$ts('We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')}}</p>
+                        <p><b>{{$t('For all passionate about Robonomics and inspired by web3.')}}</b></p>
+                        <p>{{$t('We invite you to contribute to the development and promotion of Robonomics in the international arena for cooperation.')}}</p>
                     </section>
                 </div>
 
                 <div class="grid-4 animate-inside layout" v-in-viewport.once>
                     <Card back="darkblue" shadow="dark">
-                        <h4>{{$ts('Learn')}}</h4>
-                        <p class="text-little">{{$ts('Theory & practice from Robonomics')}}</p>
+                        <h4>{{$t('Learn')}}</h4>
+                        <p class="text-little">{{$t('Theory & practice from Robonomics')}}</p>
                     </Card>
 
                     <Card back="darkblue" shadow="dark">
-                        <h4>{{$ts('Make content')}}</h4>
-                        <p class="text-little">{{$ts('Documentation, instructions, tutorials, Localization, scientific papers')}}</p>
+                        <h4>{{$t('Make content')}}</h4>
+                        <p class="text-little">{{$t('Documentation, instructions, tutorials, Localization, scientific papers')}}</p>
                     </Card>
 
                     <Card back="darkblue" shadow="dark">
-                        <h4>{{$ts('Communicate')}}</h4>
-                        <p class="text-little">{{$ts('Online and offline (meetups, conferences, social networks, collaborations)')}}</p>
+                        <h4>{{$t('Communicate')}}</h4>
+                        <p class="text-little">{{$t('Online and offline (meetups, conferences, social networks, collaborations)')}}</p>
                     </Card>
 
                     <Card back="darkblue" shadow="dark">
-                        <h4>{{$ts('Get rewards')}}</h4>
-                        <p class="text-little">{{$ts('XRT reward every month, extra bonuses and gifts for top 5 ambassadors')}}</p>
+                        <h4>{{$t('Get rewards')}}</h4>
+                        <p class="text-little">{{$t('XRT reward every month, extra bonuses and gifts for top 5 ambassadors')}}</p>
                     </Card>
                 </div>
 
                 <section class="layout text-center animate-inside" v-in-viewport.once>
                     <rbnet-button color="violet" link="#steps" anchor>
                         <img class="button-icon" aria-hidden="true" src="../assets/images/hand-hi.png" />
-                        {{$ts('Get your role, ambassador')}}
+                        {{$t('Get your role, ambassador')}}
                     </rbnet-button>
                 </section>
 
@@ -55,75 +55,75 @@
         <section id="steps" class="section__solid section__darkgray">
             <div id="steps-i"><img aria-hidden="true" src="../assets/images/ambassadors.png" /></div>
             <div class="layout">
-                <h2>{{$ts('How to become an ambassador?')}}</h2>
+                <h2>{{$t('How to become an ambassador?')}}</h2>
             </div>
 
             <section class="layout layout__text">
                 <list class="animate-inside" v-in-viewport.once>
                     <list-item color="green">
-                        <h3 class="no-margins">{{$ts('Tell us more about you')}}</h3>
-                        <g-link class="uppercase text-little" to="https://docs.google.com/forms/d/1i4z1uRrxxpa05d567Xg6QPfv3ptQHVgWuXiJAilg06g/">{{$ts('Fill out the questionnaire')}}</g-link>
+                        <h3 class="no-margins">{{$t('Tell us more about you')}}</h3>
+                        <g-link class="uppercase text-little" to="https://docs.google.com/forms/d/1i4z1uRrxxpa05d567Xg6QPfv3ptQHVgWuXiJAilg06g/">{{$t('Fill out the questionnaire')}}</g-link>
                     </list-item>
 
                     <list-item color="gray">
-                        <h3 class="no-margins">{{$ts('Start')}}</h3>
-                        <p class="uppercase text-little">{{$ts('Wait for your invitation to the special Discord chat for ambassadors')}}</p>
+                        <h3 class="no-margins">{{$t('Start')}}</h3>
+                        <p class="uppercase text-little">{{$t('Wait for your invitation to the special Discord chat for ambassadors')}}</p>
                     </list-item>
                 </list>
             </section>
 
-            <p class="layout layout__text tip text-center">{{$ts('The number of participants in the program is limited')}}</p>
+            <p class="layout layout__text tip text-center">{{$t('The number of participants in the program is limited')}}</p>
         </section>
 
         <section class="layout layout__text section-wide animate-inside" v-in-viewport.once>
-            <h2 class="text-left">{{$ts('For content makers')}}</h2>
+            <h2 class="text-left">{{$t('For content makers')}}</h2>
 
-            <b>{{$ts('What you may do:')}}</b><br/>
+            <b>{{$t('What you may do:')}}</b><br/>
             <ul class="list-simple">
-                <li>{{$ts('1) work with technical documentation, instructions and tutorials;')}}</li>
-                <li>{{$ts('2) translate content into your native language;')}}</li>
-                <li>{{$ts('3) make scientific papers based on Robonomics technologies;')}}</li>
-                <li>{{$ts('4) popularize ideas of Robonomics.')}}</li>
+                <li>{{$t('1) work with technical documentation, instructions and tutorials;')}}</li>
+                <li>{{$t('2) translate content into your native language;')}}</li>
+                <li>{{$t('3) make scientific papers based on Robonomics technologies;')}}</li>
+                <li>{{$t('4) popularize ideas of Robonomics.')}}</li>
             </ul>
 
-            <b>{{$ts('How:')}}</b><br/>
+            <b>{{$t('How:')}}</b><br/>
             <ul class="list-simple">
-                <li>{{$ts('1) make pull requests on GitHub for')}} <g-link to="https://github.com/airalab/robonomics.network">{{$ts('website')}}</g-link> {{$ts('or')}} <g-link to="https://wiki.robonomics.network/docs/contributing/">{{$ts('wiki')}}</g-link> ;</li>
-                <li>{{$ts('2) discuss what we need to translate in ambassador chat;')}}</li>
-                <li>{{$ts('3) create video and text content, try to make it unique for your followers;')}}</li>
-                <li>{{$ts('4) share progress with other ambassadors and team.')}}</li>
-            </ul>
-        </section>
-
-        <hr class="no-margins"/>
-
-        <section class="layout layout__text section-wide animate-inside" v-in-viewport.once>
-            <h2 class="text-left">{{$ts('For community helpers')}}</h2>
-
-            <b>{{$ts('What you may do:')}}</b><br/>
-            <ul class="list-simple">
-                <li>{{$ts('1) organize local offline meetups and hackathons based on Robonomics technologies;')}}</li>
-                <li>{{$ts('2) participate in thematic conferences on behalf of Robonomics;')}}</li>
-                <li>{{$ts('3) work online with community: online meetups and hackathons, chat administration, forum moderation, various social networks;')}}</li>
-                <li>{{$ts('4) communicate with other projects for collaboration.')}}</li>
-            </ul>
-
-            <b>{{$ts('How:')}}</b><br/>
-            <ul class="list-simple">
-                <li>{{$ts('1) make your suggestion in ambassador’s chat;')}}</li>
-                <li>{{$ts('2) get merchandise if needed for offline events;')}}</li>
-                <li>{{$ts('3) share progress with other ambassadors and team.')}}</li>
+                <li>{{$t('1) make pull requests on GitHub for')}} <g-link to="https://github.com/airalab/robonomics.network">{{$t('website')}}</g-link> {{$t('or')}} <g-link to="https://wiki.robonomics.network/docs/contributing/">{{$t('wiki')}}</g-link> ;</li>
+                <li>{{$t('2) discuss what we need to translate in ambassador chat;')}}</li>
+                <li>{{$t('3) create video and text content, try to make it unique for your followers;')}}</li>
+                <li>{{$t('4) share progress with other ambassadors and team.')}}</li>
             </ul>
         </section>
 
         <hr class="no-margins"/>
 
         <section class="layout layout__text section-wide animate-inside" v-in-viewport.once>
-            <h4>{{$ts('Get all our support and visual materials in ambassador’s chat')}}</h4>
+            <h2 class="text-left">{{$t('For community helpers')}}</h2>
+
+            <b>{{$t('What you may do:')}}</b><br/>
+            <ul class="list-simple">
+                <li>{{$t('1) organize local offline meetups and hackathons based on Robonomics technologies;')}}</li>
+                <li>{{$t('2) participate in thematic conferences on behalf of Robonomics;')}}</li>
+                <li>{{$t('3) work online with community: online meetups and hackathons, chat administration, forum moderation, various social networks;')}}</li>
+                <li>{{$t('4) communicate with other projects for collaboration.')}}</li>
+            </ul>
+
+            <b>{{$t('How:')}}</b><br/>
+            <ul class="list-simple">
+                <li>{{$t('1) make your suggestion in ambassador’s chat;')}}</li>
+                <li>{{$t('2) get merchandise if needed for offline events;')}}</li>
+                <li>{{$t('3) share progress with other ambassadors and team.')}}</li>
+            </ul>
+        </section>
+
+        <hr class="no-margins"/>
+
+        <section class="layout layout__text section-wide animate-inside" v-in-viewport.once>
+            <h4>{{$t('Get all our support and visual materials in ambassador’s chat')}}</h4>
             <section class="layout text-center animate-inside" v-in-viewport.once>
                 <rbnet-button color="violet" link="#steps" anchor>
                     <img class="button-icon" aria-hidden="true" src="../assets/images/hand-hi.png" />
-                    {{$ts('Get your role, ambassador')}}
+                    {{$t('Get your role, ambassador')}}
                 </rbnet-button>
             </section>
         </section>

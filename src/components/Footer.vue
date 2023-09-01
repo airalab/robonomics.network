@@ -35,10 +35,10 @@
 
           <div>
             <ul class="animate-inside" v-in-viewport.once>
-              <li><g-link to="https://wiki.robonomics.network">{{$ts('Wiki')}}</g-link></li>
-              <li><g-link to="https://robonomics.academy">{{$ts('Academy')}}</g-link></li>
-              <li><g-link to="https://github.com/airalab">{{$ts('Github')}}</g-link></li>
-              <li><g-link to="https://dapp.robonomics.network/#/">{{$ts('Dapp')}}</g-link></li>
+              <li><g-link to="https://wiki.robonomics.network">{{$t('Wiki')}}</g-link></li>
+              <li><g-link to="https://robonomics.academy">{{$t('Academy')}}</g-link></li>
+              <li><g-link to="https://github.com/airalab">{{$t('Github')}}</g-link></li>
+              <li><g-link to="https://dapp.robonomics.network/#/">{{$t('Dapp')}}</g-link></li>
             </ul>
           </div>
 

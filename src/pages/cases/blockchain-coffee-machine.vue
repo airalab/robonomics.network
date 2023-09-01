@@ -9,38 +9,39 @@
 
     <section class="case-page__content">
 
-      <div class="layout__text">
-        <p>In the experiment's setting, envision a small office housing 10–15 developers. Two critical factors stand out:</p>
-        <p><b>Passion for creation:</b>  When engrossed in solving intricate engineering problems for days, consciousness roams the realms of the physical and digital. In such moments, immediate concerns fade, including attentiveness. </p>
-        <p><b>Flexible hierarchy:</b> Despite hints of meritocracy, enforcing rules outside of professional duties is complex. Senior developers can't make juniors comply, and most developers ignore non-task-related issues due to their intense focus on building.</p>
-        <p>Ordinary startup offices delegate upkeep to others, disconnecting creators from daily life responsibilities. High salaries and developer status fuel this. Despite noble goals like enhancing society, blockchain projects often neglect office hygiene. Let's drive positive change without oppressive hierarchies. Infusing a touch of crypto-anarchism, a freedom facilitated by next-gen Internet tech, can lead this transition.</p>
-      </div>
-
       <CaseText
-        title="Addressing the commons dilemma with coffee"
-        multiply
-      >
-        <p>Using a Statemmine parachain-controlled coffee machine, we illustrate a common challenge in tight-knit teams - the Tragedy of the Commons. In the realm of economic science, it's a term denoting shared resource depletion due to unchecked use.</p><p>Delving into p2p network issues, you encounter the Tragedy of Communities. Coffee mirrors this concern, degrading with excessive office consumption. Yet, nobody wants to ask peers to cut back or fund extra supplies. Especially for a unique, distant brew that's a 40-minute trek away. A quintessential team scenario.</p>
-      </CaseText>
-
-      <CaseText
-        title="Resolving shared coffee dilemma with automation"
-        text="Our monthly coffee budget is $100, equivalent about to 150 cups for our 10-person team. Splitting this, we're left with 1 cup every 2 days per person."
+        title="Establishing democracy with smart contracts"
+        text="Let's imagine a small office with a team of 10-15 people. While everybody is focused on their own deadlines for their main professional tasks, no one seems to care about the upkeep of the office space. The most common solution to avoid sinking into chaos is to hire third-party individuals for support. Another approach is to take the initiative and impose penalties on those who create a mess or deplete supplies without replenishing them. However, is it ethical to live under tyranny in our future crypto-anarchist world, where everyone is expected to be responsible and enjoy freedom? Let's strive to create a more democratic society using smart contracts and the new generation of Internet technologies (often referred to as Web3). We need tools that can help us make decisions together, and then ensure they work properly without humans having to get directly involved."
       />
 
       <CaseText
-        title="Technical solution: autonomous coffee machine"
+        title="'Who drank all the coffee?!' or the tragedy of the commons"
+        text="There's a concept widely discussed in economics, ecology, and other sciences known as the 'tragedy of the commons.' This pertains to a scenario in which individuals who have access to a shared resource prioritize their own interests, ultimately exhausting the resource. Coffee closely resembles such a resource, as it deteriorates due to uncontrolled consumption in the office. However, at the same time, usually none of the team members are inclined to invest their time and money in obtaining an additional package of coffee beans. So, they keep drinking coffee without getting new supplies."
+      />
+
+      <CaseText
+        title="Strategy for transforming the coffee machine into an autonomous robotic device"
         multiply
       >
-        <p><b>We've created a Telegram bot</b> for our barista Nikita. When coffee is low, the bot alerts Nikita who selects the coffee based on remaining funds. A QR code is generated and attached to the order. Nikita uses the QR code to enter our HQ, leaving coffee.</p><p><b>The QR code activates the smart home system.</b> After Nikita's visit, developers receive coffee tokens for payment. These tokens, with minimal fees, allow 150-300 cups per month.</p>
+        <p><b>How to formulate the task in numbers.</b> Assuming a monthly coffee budget of $100, which is approximately equivalent to 150 cups for our team of 10 people, this leaves each person with 1 cup every 2 days. Now, let's delve into the technical details. The question is: how can we bring an autonomous coffee machine to life in the office?</p>
 
+        <p><b>Step 1: automated coffee bean ordering</b>. We've made an arrangement with the barista, Nikita, who's located near the office. He'll supply us with coffee beans upon receiving an alert from the bot. The bot sends a message when the coffee is running low, specifying the quantity of coffee (in kilograms) needed for the order and the corresponding payment amount determined by the team. With these details, Nikita can select the coffee according to his preference.</p>
+
+        <p><b>Step 2: automatic access to smart office.</b> Simultaneously with the order, the coffee machine generates a QR code. Nikita then presents this QR code to the camera for office entry.</p>
+
+        <p><b>Step 3: distribution of coffee tokens to the team.</b> Once the local camera scans the QR code, the smart home management system initiates a payment to Nikita and distributes new coffee tokens among the team members.</p>
+
+        <p><b>Step 4: drink coffee!</b>  In order to receive a fresh cup of coffee, a team member needs to send a coffee token to the address of the coffee machine.</p>
+        
+        <h3 class="youtube-icon">Coffee beans delivery process:</h3>
         <Youtube
           title="P1012663 delivery"
           src="https://www.youtube.com/embed/Q7C4Mb9wn64"
         />
       </CaseText>
 
-      <div class="cases__list-wrapper layout__text">
+
+      <!-- <div class="cases__list-wrapper layout__text">
         <b class="cases__list-title">Automated process:</b>
         <ol class="cases__list">
           <li>When the coffee machine’s token balance >= 90% of the total supply. It indicates that the bot has to send a message to Nikita.</li>
@@ -65,7 +66,7 @@
           <li>The scheme promotes flexibility, limited only by automation.</li>
           <li>Empowered by web3, this crypto-anarchic approach marks our progress in addressing shared resource challenges.</li>
         </ul>
-      </div>
+      </div> -->
 
 
       <CaseText
@@ -73,8 +74,8 @@
         multiply
         class="mb-big"
       >
-        <!-- link "ACT" is not found -->
-        <g-image immediate alt="scheme how to" src="@/assets/images/cases/blockchain-coffee/scheme-0.svg"/>
+
+        <g-image class="mb" immediate alt="scheme how to" src="@/assets/images/cases/blockchain-coffee/scheme-0.svg"/>
         <p>In order to have a cup of delicious coffee, a customer should send some funds (1 Statemine's token <g-link to="https://assethub-kusama.subscan.io/assets/3077">ACT</g-link>, id=3077) to the address of a coffee machine in Statemine parachain. After that the pouring process is started and action log is published in the <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">Robonomics Parachain portal</g-link> via Datalog function.</p>
         <p> <b>NOTE!</b> You may use any token on Statemine, more on that <g-link to="https://wiki.robonomics.network/docs/robonomics-coffee/#things-to-point-out">here</g-link> </p>
 
@@ -307,6 +308,10 @@ export default {
     display: block;
   }
 
+  .mb {
+    margin-bottom: var(--space);
+  }
+
   .mb-big {
     margin-bottom: calc(var(--space) * 3);
   }
@@ -318,6 +323,16 @@ export default {
   .no-mt {
     margin-top: 0;
   }
+
+  .case-page__content .youtube-icon {
+    margin-top: calc(var(--space) * 2);
+    padding-left: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg width='31' height='22' viewBox='0 0 31 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_700_10062)'%3E%3Cpath d='M30.3613 3.44197C30.004 2.09595 28.9564 1.03516 27.6294 0.673012C25.2032 0 15.4995 0 15.4995 0C15.4995 0 5.7957 0 3.37055 0.647373C2.06786 1.00952 0.995988 2.09702 0.638697 3.44304C0 5.90114 0 11 0 11C0 11 0 16.1245 0.638697 18.557C0.995988 19.903 2.04362 20.9638 3.37055 21.3259C5.82205 21.9989 15.4995 21.9989 15.4995 21.9989C15.4995 21.9989 25.2032 21.9989 27.6284 21.3516C28.9564 20.9894 30.003 19.9276 30.3602 18.5826C30.9989 16.1234 30.9989 11.0256 30.9989 11.0256C30.9989 11.0256 31.0242 5.90114 30.3602 3.44197H30.3613ZM12.4103 15.71V6.28892L20.4794 10.9989L12.4103 15.7089V15.71Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_700_10062'%3E%3Crect width='31' height='22' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-position: left;
+    background-size: 31px 22px;
+    background-repeat: no-repeat;
+  }
+
 
   .case-page__content .layout__text {
     margin-bottom: var(--space);

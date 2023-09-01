@@ -4,7 +4,7 @@
             <div><input type="email" placeholder="Your email" v-model="email" name="email" required  data-gsp-name="email" :data-gsp-data="email"  class="block"/></div>
             <label class="label">
                 <input type="checkbox" class="big" required  name="agreement" />
-                <span class="text-small">{{$ts('I agree to receive email communications from Robonomics')}}</span>
+                <span class="text-small">{{$t('I agree to receive email communications from Robonomics')}}</span>
             </label>
             <div>
                 <!-- <vue-recaptcha
@@ -14,7 +14,7 @@
                     :sitekey="recaptchaSitekey" /> -->
 
                 <rbnet-button @click="onSubmit" button="primary block green large">
-                        <span class="text">{{$ts('Submit')}}</span>
+                        <span class="text">{{$t('Submit')}}</span>
                 </rbnet-button>
 
                 <!-- <vue-recaptcha :sitekey="recaptchaSitekey">

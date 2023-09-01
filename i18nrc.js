@@ -15,6 +15,6 @@ module.exports = {
   openaiConfig: {
     key: process.env.GRIDSOME_OPENAI_KEY,
     from: 'English',
-    to: ["Chinese", "Russian", "Arabic", "German", "Spanish", "Japanese"]
+    to: ["Chinese", "Russian", "Arabic", "German", "Spanish", "Japanese", "Korean", "Portuguese", "Azerbaijani", "Italian", "Turkish", "French", "Ukrainian"]
   }
 }

@@ -9,7 +9,7 @@
     />
 
     <g-link to="/blog/" class="small-banner section__blue">
-      <h3>{{$ts('Important news & announcements')}}</h3>
+      <h3>{{$t('Important news & announcements')}}</h3>
       <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
     </g-link>
 

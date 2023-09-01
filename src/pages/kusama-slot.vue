@@ -104,6 +104,10 @@
     text-align: left;
   }
 
+  .banner-leftside-title p {
+    text-align: left;
+  }
+
   .banner-leftside-state {
     color: var(--color-blue-vivid);
     font-weight: 300;
