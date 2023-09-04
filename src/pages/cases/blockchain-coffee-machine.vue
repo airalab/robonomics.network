@@ -7,7 +7,7 @@
     :showFooter="false"
   >
 
-    <section class="case-page__content">
+    <section class="case-page__content hyphens">
 
       <CaseText
         title="Establishing democracy with smart contracts"

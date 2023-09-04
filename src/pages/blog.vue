@@ -11,12 +11,12 @@
 
     <BlogTagsBanner :allTags="$page.allPostsTags.edges"/>
 
-    <div v-if="$page.posts.edges.length === 0" class="align-center layout">
+    <div v-if="$page.posts.edges.length === 0" class=" blog__no-post align-center">
       <blockquote>{{$t('No posts yet')}}</blockquote>
 
-      <div class="layout__text_small hyphens" v-if="$locale != $defaultLocale">
+      <div class="layout layout__text oldy " v-if="$locale != $defaultLocale">
         <p>{{ $t('If you want to help us with translation') }}:</p>
-        <ul>
+        <ul class="list-simple">
           <li>{{ $t('contact us at') }}: <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a></li>
           <li>{{ $t('or') }} {{ $t('send') }} <g-link to="https://github.com/airalab/robonomics.network">GitHub PR</g-link></li>
         </ul>
@@ -106,5 +106,33 @@ query ($locale: String!, $page: Int) {
 
 </script>
 
+
+<style scoped>
+  blockquote {
+    border-left: none;
+  }
+
+
+  .blog__no-post .oldy {
+    text-align: center;
+  }
+
+  .blog__no-post .oldy p {
+    margin-bottom: calc(var(--space) * 0.7);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--font-family-code);
+  }
+
+  .blog__no-post .oldy li {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .blog__no-post .oldy li:not(:last-child) {
+    margin-bottom: calc(var(--space) * 0.3);
+  }
+
+</style> 
 
 
