@@ -7,7 +7,7 @@
     linkText="solarweb-hass-integration"
   >
 
-    <section class="case-page__content">
+    <section class="case-page__content hyphens">
       <CaseText
         title="In a nutshell"
         text="Nowadays, it becomes more and more clear that energy consumption is a major contributor to carbon footprints, making it increasingly important to find ways to reduce our environmental impact. Offices and commercial buildings play a significant role in this energy consumption. The engineers at Robonomics have installed a system in the office of BBF, a Cyprus-based real estate developer, to track and collect electricity measurements. This system also provides a practical way to offset the carbon footprint."
