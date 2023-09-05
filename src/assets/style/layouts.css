@@ -156,7 +156,7 @@
 }
 
 .layout__wide {
-	max-width: calc(1400px  + (var(--space) * 4));
+	max-width: calc(1500px  + (var(--space) * 4));
 }
 
 .page hr.animate {

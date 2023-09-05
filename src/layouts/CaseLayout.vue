@@ -16,6 +16,8 @@
       :link="link"
       :linkText="linkText"
       :showFooter="showFooter"
+      :title="footerTitle"
+      :text="footerText"
     />
 
   </layout>
@@ -59,6 +61,16 @@ export default {
     showFooter: {
       type: Boolean,
       default: true
+    },
+    footerTitle: {
+      type: String,
+      default: '',
+      required: false
+    },
+    footerText: {
+      type: String,
+      default: '',
+      required: false
     }
   }
 

@@ -119,6 +119,7 @@
 
 
 .screen-content {
+  position: relative;
   background-color: var(--color-gray-light);
 }
 
