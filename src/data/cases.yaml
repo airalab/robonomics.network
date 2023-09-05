@@ -53,6 +53,7 @@
   description: '"Robonomics coffee" - is a smart coffee machine integrated in Robonomics Network. This project aims to show Robonomics potential in the IoT sphere by a real-world example.'
   path: 'cases/blockchain-coffee-machine'
   cover_image: 'blockchain-coffee.jpg'
+  metaImg: '/website_cover_coffee-machine.jpg'
   # progress field needs for "sort by progress" filter
   progress: complete
   # created field needs for "sort by date" filter (for earliest option)
