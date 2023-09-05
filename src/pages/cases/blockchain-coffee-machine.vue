@@ -78,11 +78,11 @@
         
         <div class="layout__text">
           <p>Next, we worked out the operational details, specifically concerning which tokens users could send and the underlying algorithm. Here's the result:</p>
-          <g-image src="@/assets/images/cases/blockchain-coffee/scheme-1.svg" alt="scheme" />
+          <g-image immediate src="@/assets/images/cases/blockchain-coffee/scheme-1.svg" alt="scheme" />
           <p>To enjoy a cup of delicious coffee, users need to send a certain amount of funds (in our case, 1 Statemine's token ACT, id=3077) to the coffee machine's address from a parachain (Statemine). Afterward, the coffee pouring process begins, and an action log is subsequently published on <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">the Robonomics Parachain portal </g-link> via the Datalog function.</p>
         </div>
 
-        <g-image class="no-mb" src="@/assets/images/cases/blockchain-coffee/scheme-2.svg" alt="scheme" />
+        <g-image immediate class="no-mb" src="@/assets/images/cases/blockchain-coffee/scheme-2.svg" alt="scheme" />
       </div>
 
       <div class="cases-concept">
@@ -94,18 +94,18 @@
         <div class="cases-concept__images">
 
           <div class="cases-concept__images-top">
-            <g-image class="concept-img-1 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-1.png"/>
+            <g-image immediate class="concept-img-1 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-1.png"/>
 
-            <g-image class="concept-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-2.jpg"/>
+            <g-image immediate class="concept-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-2.jpg"/>
           </div>
 
           <div class="cases-concept__images-bottom">
             <div class="concept-img-4">
-              <g-image aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-4.svg"/>
+              <g-image immediate aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-4.svg"/>
               <span>Our blockchain coffee maker making coffee at the Polkadot Web3 Hub </span>
             </div>
             <div class="cases-concept__images-group">
-              <g-image class="concept-img-3 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-3.jpg"/>
+              <g-image immediate class="concept-img-3 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-3.jpg"/>
               <video class="concept-video white-border" ref="video" controls muted autoplay>
                 <source src="@/assets/images/cases/blockchain-coffee/concept-video.mp4" :type="`video/mp4`" />
               </video>
@@ -115,9 +115,9 @@
       </div>
 
       <!-- decor image -->
-      <g-image class="decor-img-1" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-1.png"/>
-      <g-image class="decor-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-2.png"/>
-      <g-image class="decor-img-3" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-3.png"/>
+      <g-image  immediate class="decor-img-1" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-1.png"/>
+      <g-image immediate class="decor-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-2.png"/>
+      <g-image immediate class="decor-img-3" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-3.png"/>
     </section>
   </CaseLayout>
 </template>
