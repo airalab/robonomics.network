@@ -4,7 +4,10 @@
     introImg="blockchain-coffee/1.png"
     introText="The 'Robonomics Coffee' is a smart coffee machine integrated into the <a href='/'>Robonomics Network</a>. This project aims to illustrate Robonomics' potential in the IoT sphere through a real-world example."
     withExtras
-    :showFooter="false"
+    footerTitle="DIY or how to build your own smart blockchain coffee machine"
+    footerText="<p>You can find a detailed tutorial and technical specifications in the open-source GitHub repository. Keep in mind that you can use any coffee machine you prefer and almost any token of your choice to bring this project to life in your own space.</p>"
+    link="https://github.com/Multi-Agent-io/robonomics-coffee-maker"
+    linkText="robonomics-coffee-maker"
   >
 
     <section class="case-page__content hyphens">
@@ -34,256 +37,87 @@
         <p><b>Step 4: drink coffee!</b>  In order to receive a fresh cup of coffee, a team member needs to send a coffee token to the address of the coffee machine.</p>
         
         <h3 class="youtube-icon">Coffee beans delivery process:</h3>
-        <Youtube
-          title="P1012663 delivery"
-          src="https://www.youtube.com/embed/Q7C4Mb9wn64"
-        />
+        <div class="youtube-wrapper">
+          <Youtube
+            title="P1012663 delivery"
+            src="https://www.youtube.com/embed/Q7C4Mb9wn64"
+            withBorder
+            width="90%"
+          />
+        </div>
       </CaseText>
 
-
-      <!-- <div class="cases__list-wrapper layout__text">
-        <b class="cases__list-title">Automated process:</b>
-        <ol class="cases__list">
-          <li>When the coffee machine’s token balance >= 90% of the total supply. It indicates that the bot has to send a message to Nikita.</li>
-          <li>The coffee machine sends the order to Nikita and scans the QR code when he’s in HQ.</li>
-          <li>After the camera scans the QR code, the smart-home IoT controller settles a payment. Each team member gets the underlying coffee tokens.</li>
-          <li>To get a new cup of coffee, a team member has to make an extrinsic call (send a coffee token to the coffee machine’s address), whereupon the automated launch is initiated.</li>
-          <li>As soon as the machine gathers 90% of the total supply it repeats the cycle.</li>
-        </ol>
-      </div>
-
-
-      <div class="layout__text">
-
-        <g-image immediate alt="scheme" src="@/assets/images/cases/blockchain-coffee/2.png"/>
-
-        <h3>The autonomous coffee machine offers solutions:</h3>
-
-        <ul class="cases__list">
-          <li>Unused tokens can be pooled, promoting equitable distribution.</li>
-          <li>Additional funding ensures higher quality coffee.</li>
-          <li>Decisions on coffee amount involve a DAO vote.</li>
-          <li>The scheme promotes flexibility, limited only by automation.</li>
-          <li>Empowered by web3, this crypto-anarchic approach marks our progress in addressing shared resource challenges.</li>
-        </ul>
-      </div> -->
-
-
       <CaseText
-        title="HOW TO MAKE COFFEE?"
+        title="Unlock new possibilities with this concept"
         multiply
-        class="mb-big"
       >
 
-        <g-image class="mb" immediate alt="scheme how to" src="@/assets/images/cases/blockchain-coffee/scheme-0.svg"/>
-        <p>In order to have a cup of delicious coffee, a customer should send some funds (1 Statemine's token <g-link to="https://assethub-kusama.subscan.io/assets/3077">ACT</g-link>, id=3077) to the address of a coffee machine in Statemine parachain. After that the pouring process is started and action log is published in the <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">Robonomics Parachain portal</g-link> via Datalog function.</p>
-        <p> <b>NOTE!</b> You may use any token on Statemine, more on that <g-link to="https://wiki.robonomics.network/docs/robonomics-coffee/#things-to-point-out">here</g-link> </p>
+      <p>Furthermore, such an automated coffee machine introduces various economic and social dimensions. Let’s take a look at them:</p>
 
-        <Youtube
-          title="P1012663 Coffee"
-          src="https://www.youtube.com/embed/Z8pXcLjlJnQ"
-        />
+      <ul class="list-simple cases__list cases__list--with-tick">
+            <li class="cases__item cases__item--with-tick">Developers can deposit extra coffee tokens when consumption falls below the limit. This creates a transparent system for varied coffee usage within the limit.</li>
+            <li class="cases__item cases__item--with-tick">The coffee machine could maintain a shared account, enabling office members to contribute funds from their personal accounts for a higher quality coffee experience next time.</li>
+            <li class="cases__item cases__item--with-tick">The team collectively decides the coffee quantity the machine will order each time through a DAO vote. This provides freedom to tackle the challenge with limited resources.</li>
+            <li class="cases__item cases__item--with-tick">Programmable processes reduce the influence of human factors and also offer greater flexibility in tailoring settings for specific teams.</li>
+          </ul>
       </CaseText>
 
-      <CaseText
-        class="mb-big"
-        title="How it works?"
-        text="There is a single-board computer attached to the body of the coffee machine. This computer is the center of the entire system, where all the processes are happening. The single-board (Raspberry Pi 4) is connected to the control panel of the coffee machine via jumper breadboard wires and GPIO interface. RPI is also the one interacting with Robonomics and Statemine parachains. Sample flowchart of the workflow is presented below."
-        img="blockchain-coffee/scheme-1.svg"
-        imgAlt="how it works"
-      />
-
-      <CaseText
-        title="TUTORIAL"
-        multiply
-        class="mb-big"
-      >
-
-        <h3 class="mt">Used hardware</h3>
+      <div class="oldy layout layout__mid mb-big">
+        <div class="layout__text">
+          <h2>How we smarten up our coffee machine in real life</h2>
+          <p>To achieve hands-on control of the coffee machine, we integrated a single-board computer, specifically the Raspberry Pi 4, along with a commonly available mass-market coffee machine that supported GPIO connection. Our preference was the <g-link to="https://www.delonghi.com/en/ecam22-110-sb-magnifica-s-automatic-coffee-maker/p/ECAM22.110.SB">De’Longhi Magnifica ECAM 22.110</g-link>, selected for its affordability and the convenience of its easily removable front panel.</p>
+        </div>
+        <div class="youtube-wrapper mb-big">
+          <Youtube
+            title="P1012663 KOFE"
+            src="https://www.youtube.com/embed/Z8pXcLjlJnQ"
+            withBorder
+            width="80%"
+          />
+        </div>
         
-        <ul class="cases__list mb-big">
-          <li>Coffee machineThe very important criteria for a coffee machine was the ability to solder some wires to the control panel since GPIO was selected as a communication interface being the easiest one to implement. Several options were considered (<g-link to="https://www.philips.com/c-p/SM5478_10R1/picobaristo-super-automatic-espresso-machine">Saeco PicoBaristo HD 8925</g-link>, <g-link to="https://www.delonghi.com/en/esam3200-s-ex-1-magnifica-automatic-coffee-maker/p/ESAM3200.S%20EX%3A1">De'Longhi ESAM3200.S</g-link>). As may be seen, no touchscreen and no bells and whistles, just buttons and espresso. Finally, <g-link to="https://www.delonghi.com/en/ecam22-110-sb-magnifica-s-automatic-coffee-maker/p/ECAM22.110.SB">De’Longhi Magnifica ECAM 22.110</g-link> was chosen as it is cheap and has an easy-removed front panel.</li>
-          <li>Single-board <g-link to="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4B</g-link>(2 GB) with Ubuntu server installed via <g-link to="https://www.raspberrypi.com/software/">RPi Imager</g-link>.</li>
-          <li>5V adapter and USB A to USB type C cable (<g-link to="https://www.amazon.com/Charger-FOBSUNLAND-Universal-Adapter-S6-Note/dp/B073Q1N8FL/ref=sr_1_2_sspa?keywords=5v+adapter&qid=1636572682&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQ1JDSkQ5NlBGTFU2JmVuY3J5cHRlZElkPUEwODgwMDgzMUJKMU5YVEdXRjdBWCZlbmNyeXB0ZWRBZElkPUEwMTc3NjgwMldDQ1lJWUkwTVY4VSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">this</g-link> and <g-link to="https://www.amazon.com/Charger-Braided-Charging-Compatible-Samsung/dp/B0794M53HQ/ref=sr_1_1?keywords=usb+a+type+c+cable&qid=1636572602&sr=8-1">this</g-link> are examples)</li>
-          <li>A set of F-M, M-M, F-F jumper wires, a breadboard (again, this is just an example)</li>
-          <li>Transistor and a resistor(optionally). More on that later.</li>
-        </ul>
+        <div class="layout__text">
+          <p>Next, we worked out the operational details, specifically concerning which tokens users could send and the underlying algorithm. Here's the result:</p>
+          <g-image src="@/assets/images/cases/blockchain-coffee/scheme-1.svg" alt="scheme" />
+          <p>To enjoy a cup of delicious coffee, users need to send a certain amount of funds (in our case, 1 Statemine's token ACT, id=3077) to the coffee machine's address from a parachain (Statemine). Afterward, the coffee pouring process begins, and an action log is subsequently published on <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">the Robonomics Parachain portal </g-link> via the Datalog function.</p>
+        </div>
 
-        <h3 class="mt">Tools</h3>
-        
-        <ul class="cases__list">
-          <li>A set of screwdrivers.</li>
-          <li>Soldering iron with some solder and resin.</li>
-          <li>Multimeter.</li>
-        </ul>
-      </CaseText>
-
-      <div class="layout__text">
-        <h3>Hardware installation</h3>
-
-        <ol class="cases__list cases__list--style-bold mb-big">
-          <li>
-            <CaseText
-              multiply
-              img="blockchain-coffee/3.png"
-              imgAlt="Disassembly the coffee machine."
-            >
-              <h4>Disassembly the coffee machine.</h4>
-              <p>There is a <g-link to="https://www.youtube.com/watch?v=7Y5NCePD0PM">sample tutorial</g-link> on YouTube. Your goal is to remove the front panel (it won't be used anymore, so this is a thing to improve to hide all the wires) and detach the control PCB.</p>
-            </CaseText>
-          </li>
-          <li>
-            <CaseText
-              title="Solder two wires to the button you need."
-              subtitle
-              text="Solder them to the isolated contacts (in our case - two bottom contacts). You can use any wires, but keep im mind that in the end there should be an M-wire to put it into the breadboard."
-              img="blockchain-coffee/4.png"
-              imgAlt="Solder two wires to the button you need."
-            />
-          </li>
-          <li>
-            <CaseText
-              title="Assemble the entire coffee machine back leaving the front panel removed."
-              subtitle
-              img="blockchain-coffee/5.png"
-              imgAlt="Assemble the entire coffee machine back leaving the front panel removed."
-            />
-          </li>
-          <li>
-            <CaseText
-              multiply
-              img="blockchain-coffee/6.png"
-              imgAlt="Circuit"
-            >
-              <h4>Circuit.</h4>
-              <p>Overall circuit is presented below, this is a very simple transistor switch, we used <span class="formula" v-katex="'R1=1kΩ'"></span> R1=1kΩ, a npn transistor <span class="formula" v-katex="'Q1 (hfe=40, Uce>5V, Ic>0.015A'"></span>, sample <g-link to="https://alltransistors.com/adv/pdfdatasheet_rca/2n1613.pdf">here</g-link>, but almost any general transistor suites, since this is a switch) and a small 3.3V diode  <span class="formula" v-katex="'D'"></span> in base circuit found in the storage of our lab :) One can use a MOSFET transistor as well.</p>
-              <g-image immediate alt="scheme" src="@/assets/images/cases/blockchain-coffee/scheme-2.svg"/>
-            </CaseText>
-          </li>
-          <li>
-            <CaseText
-              title="Connect coffee machine and rpi."
-              text="Connect wires marked as RPI GND and RPI GPIO Pin to pins GND and 21 respectively. RPI GPIO scheme is presented below. Wires marked as Button+ and Button- should be connected to the left button contact and right button contact respectively."
-              img="blockchain-coffee/scheme-3.svg"
-              imgAlt="Connect coffee machine and rpi."
-            />
-          </li>
-        </ol>
+        <g-image class="no-mb" src="@/assets/images/cases/blockchain-coffee/scheme-2.svg" alt="scheme" />
       </div>
 
-      <div class="layout__text">
-        <h3 class="underline">Software installation</h3>
-        <p>Time to turn the Raspberry Pi into blockchain-powered coffee maker!</p>
-
-        <h4>Option 1: using robonomics parachain in kusama network</h4>
-        <ul>
-          <li>
-            <span>Prepare the RPI for Substrate libs (<g-link to="https://www.rust-lang.org/tools/install">source</g-link>):</span>
-<vue-code-highlight language="bash" class="mt">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
-rustup default nightly
-</vue-code-highlight>
-          </li>
-          <li>
-            <span>Install gpiozero library (<g-link to="https://gpiozero.readthedocs.io/en/stable/installing.html">source</g-link>) and reboot:</span>
-  <vue-code-highlight language="bash" class="mt">sudo apt update 
-sudo apt install python3-gpiozero 
-sudo pip3 install gpiozero 
-sudo reboot
-</vue-code-highlight>            
-          </li>
-          <li>
-            <span>Clone the repository</span>
-  <vue-code-highlight language="bash" class="mt">git clone https://github.com/Multi-Agent-io/robonomics-coffee-maker</vue-code-highlight>              
-          </li>
-          <li>
-            <span>Install project requirements</span>
-  <vue-code-highlight language="bash" class="mt">pip3 install -r requirements.txt</vue-code-highlight>  
-          </li>
-        </ul>
-
-        <h4>Option 2: using everscale network</h4>
-        <ul class="mb-big">
-          <li>
-            <span>Install gpiozero library (<g-link to="https://gpiozero.readthedocs.io/en/stable/installing.html">source</g-link>) and reboot:</span>
-  <vue-code-highlight language="bash" class="mt">sudo apt update 
-sudo apt install python3-gpiozero 
-sudo pip3 install gpiozero 
-sudo reboot</vue-code-highlight>
-          </li>
-          <li>
-            <span>Clone the repository</span>
-    <vue-code-highlight language="bash" class="mt">git clone https://github.com/Multi-Agent-io/robonomics-coffee-maker 
-cd robonomics-coffee-maker</vue-code-highlight>              
-          </li>
-          <li>
-            <span>Install Node.js requirements</span>
-    <vue-code-highlight language="bash" class="mt">npm install @eversdk/core 
-npm install python-shell 
-mv eversdk.node ~/.tonlabs/binaries/1 
-git clone https://github.com/tonlabs/ever-sdk-js 
-cd ever-sdk-js/packages/lib-node 
-npm install -g</vue-code-highlight>  
-          <p class="mt">The reason why we can't just npm install @eversdk/lib-node is because this library is not compiled for the ARM architecture.</p>
-          </li>
-        </ul>
-      </div>
-
-      <div class="layout__text">
-        <h3 class="underline">Account management</h3>
-
+      <div class="cases-concept">
         <CaseText
-          title="Option 1: using robonomics parachain in kusama network"
-          multiply
-          subtitle
-          class="mt mb-big"
-        >
-          <p>On your PC install <g-link to="https://polkadot.js.org/extension/">Polkadot Extension</g-link> and register a coffee machine account there. <b>Save mnemonic seed phrase as it is going to be used later.</b></p>
-          <g-image immediate alt="polkadot extension" src="@/assets/images/cases/blockchain-coffee/7.png"/>
-          <p>Logging actions in Robonomics is optional, you will need XRT on <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/">Robonomics Parachain portal</g-link> for coffee machine account (it is the same across networks) for this. If not, there will simply be an error message <em>"Balance too low."</em></p>
-        </CaseText>
-
-
-        <CaseText
-          title="Option 2: using Everscale Network"
-          text="Create an account in the Everscale with, for example, mobile app. Save seed and activate a coffee-machine address there. Insert this address in main.js"
-          class="mb-big"
-          subtitle
+          title="When the concept extends beyond the office"
+          text="This concept offers numerous avenues for expanding the idea. It was successfully implemented at the Polkadot Web3 Hub during the 2022 World Economic Forum in Davos. Participants were able to place coffee orders and specify their desired coffee type (e.g., espresso, americano, cappuccino) by sending a certain amount of tokens.Let us share photos and videos from this event:"
         />
+
+        <div class="cases-concept__images">
+
+          <div class="cases-concept__images-top">
+            <g-image class="concept-img-1 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-1.png"/>
+
+            <g-image class="concept-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-2.jpg"/>
+          </div>
+
+          <div class="cases-concept__images-bottom">
+            <div class="concept-img-4">
+              <g-image aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-4.svg"/>
+              <span>Our blockchain coffee maker making coffee at the Polkadot Web3 Hub </span>
+            </div>
+            <div class="cases-concept__images-group">
+              <g-image class="concept-img-3 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-3.jpg"/>
+              <video class="concept-video white-border" ref="video" controls muted autoplay>
+                <source src="@/assets/images/cases/blockchain-coffee/concept-video.mp4" :type="`video/mp4`" />
+              </video>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="layout__text">
-        <h3 class="underline">Run Robonomics Coffee</h3>
-        <h4 class="no-mt">Option 1: using Robonomics Parachain in Kusama Network</h4>
-        <p>Run this in corresponding network repo folder:</p>
-<vue-code-highlight language="bash" class="mt">python3 main.py &#60;previously saved seed in quotes></vue-code-highlight> 
-        <p>You should see the program waiting for ACT incomes:</p>
-        <g-image immediate alt="ACT income" src="@/assets/images/cases/blockchain-coffee/8.png"/>
-        <p>You can send tokens from another account created the same way via <code class="code-inline">assets:transferextrinsic</code> on <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fstatemine-rpc.polkadot.io#/explorer">Statemine</g-link>.</p>
-        <p>As soon as there is an income (positive change in <code class="code-inline">assets:accountstorage</code> function for address derived from seed and for token id <code class="code-inline">3077</code>) the RPI triggers GPIO pin 18 and coffee machine starts making coffee and records a datalog!</p>
-        <g-image immediate alt="preview" src="@/assets/images/cases/blockchain-coffee/9.png"/>
-        <g-image immediate alt="coffee machine" src="@/assets/images/cases/blockchain-coffee/10.png"/>
-
-        <h4>Option 2: using Everscale Network</h4>
-        <p>Run poller by</p>
-  <vue-code-highlight language="bash" class="mt">node main.js</vue-code-highlight> 
-        <p class="mt mb-big">Then send 0.5 EVR to the address specified in the <code class="code-inline">main.js</code> file. Everscale use case does not imply Datalog recording.</p>
-      </div>
-
-      <div class="layout__text">
-        <h2 class="underline">Things to point out</h2>
-        <ul class="cases__list">
-          <li>This is a POC of a blockchain-driven IoT device, it has things to improve, wires to hide and functionality to implement.</li>
-          <li>
-            Token ID, the one, coffee machine is waiting to receive, is set <g-link to="https://github.com/Multi-Agent-io/robonomics-coffee-maker/blob/master/statemine_monitor.py#L27">here</g-link>, <b>so you can use your own token</b>, existing one or newly created. To create one, go to <g-link to="https://github.com/airalab/robonomics-wiki">Statemine Kusama parachain page</g-link>, <code class="code-inline">Network -> Assets -> Create</code>. Set an ID there, complete the procedure and paste ID in the code.
-            <g-image immediate alt="preview" src="@/assets/images/cases/blockchain-coffee/11.png"/>
-          </li>
-          <li>Right now the only thing that matters for income tracker is the positive difference between current and previous asset balance. This may be filtered <g-link to="https://github.com/Multi-Agent-io/robonomics-coffee-maker/blob/master/statemine_monitor.py#L59">code</g-link>.</li>
-          <li>
-            One may use QR-code for mobile apps for convenient transfers.
-            <g-image immediate alt="preview" src="@/assets/images/cases/blockchain-coffee/12.png"/>
-          </li>
-        </ul>
-      </div>
+      <!-- decor image -->
+      <g-image class="decor-img-1" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-1.png"/>
+      <g-image class="decor-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-2.png"/>
+      <g-image class="decor-img-3" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-3.png"/>
     </section>
   </CaseLayout>
 </template>
@@ -324,6 +158,14 @@ export default {
     margin-top: 0;
   }
 
+  .no-mb {
+    margin-bottom: 0;
+  }
+
+  .white-border {
+    border: 7px solid #fff;
+  }
+
   .case-page__content .youtube-icon {
     margin-top: calc(var(--space) * 2);
     padding-left: 40px;
@@ -354,6 +196,244 @@ export default {
   .cases__list--style-bold li::marker {
     font-size: calc(var(--base-font-size) * 1.3);
     font-weight: 800;
+  }
+
+  ul.cases__list--with-tick {
+    margin-left: 0;
+  }
+
+  .cases__item--with-tick {
+    padding-left: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg width='34' height='24' viewBox='0 0 34 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_715_1981)'%3E%3Cpath d='M33.2891 0.703992C34.2376 1.64135 34.2376 3.16361 33.2891 4.10096L13.8627 23.298C12.9141 24.2353 11.3737 24.2353 10.4251 23.298L0.711904 13.6995C-0.23665 12.7621 -0.23665 11.2398 0.711904 10.3025C1.66046 9.36514 3.20091 9.36514 4.14947 10.3025L12.1477 18.1988L29.8583 0.703992C30.8069 -0.233362 32.3473 -0.233362 33.2959 0.703992H33.2883H33.2891Z' fill='%23A7D100'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_715_1981'%3E%3Crect width='34' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 34px 24px;
+    background-position: left;
+  }
+
+  .case-page__content .oldy {
+    text-align: left;
+    border: none;
+  }
+
+  .cases-concept__images-top {
+    position: relative;
+    min-height: 585px;
+  }
+
+  .cases-concept__images-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cases-concept__images-group {
+    position: relative;
+    min-height: 445px;
+    width: 100%;
+  }
+
+  .youtube-wrapper {
+    background-color: #d9d9d9;
+    padding-bottom: calc(var(--space) * 1.4);
+  }
+
+  .decor-img-1 {
+    position: absolute;
+    left: -5px;
+    top: 646px;
+    width: 152px;
+    z-index: 2;
+  }
+
+  .decor-img-2 {
+    position: absolute;
+    right: -5px;
+    top: 986px;
+    width: 182px;
+  }
+
+  .decor-img-3 {
+    position: absolute;
+    left: -26px;
+    top: 2343px;
+    width: 110px;
+  }
+
+  .concept-img-1 {
+    position: absolute;
+    max-width: 294px;
+    min-height: 415px;
+    left: calc(100% - 1350px);
+    top: 88px;
+    z-index: 2;
+  }
+
+  .concept-img-2 {
+    position: absolute;
+    right: 180px;
+    top: -72px;
+  }
+
+  .concept-img-3 {
+    position: absolute;
+    right: 280px;
+    top: -107px;
+    max-width: 228px;
+    height: 100%;
+    margin: 0;
+  }
+
+  .concept-video {
+    position: absolute;
+    right: 20px;
+    top: -107px;
+    max-width: 250px;
+  }
+
+  .concept-img-4 {
+    position: absolute;
+    max-width: 586px;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+  }
+
+  .concept-img-4 span {
+    position: absolute;
+    top: 10%;
+    max-width: 420px;
+    padding: var(--space);
+    font-weight: 600;
+    font-size: calc(var(--base-font-size) * 1.2);
+    text-align: left;
+  }
+
+  @media screen and (max-width: 1460px) {
+    .concept-img-2 {
+      max-width: 782px;
+      right: 20px;
+    }
+
+    .concept-img-1 {
+      left: calc(100% - 1010px);
+      top: 27px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .decor-img-1 {
+      top: 1090px;
+      width: 80px;
+    }
+
+    .decor-img-2 {
+      top: 1386px;
+      width: 80px;
+    }
+
+    .decor-img-3 {
+      position: absolute;
+      top: 2743px;
+      width: 80px;
+    }
+  }
+
+  @media screen and (max-width: 1140px) {
+    .decor-img-1, .decor-img-2, .decor-img-3   {
+      display: none;
+    }
+
+    .concept-img-3, .concept-video {
+      position: static;
+    }
+
+    .concept-img-4 {
+      position: relative;
+      margin-bottom: calc(var(--space) * 6);
+      transform: rotate(90deg);
+    }
+
+    .concept-img-4 span {
+      top: 70px;
+      max-width: 492px;
+      transform: rotate(180deg);
+    }
+
+    .cases-concept__images-bottom {
+      padding-top: 140px;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .cases-concept__images-group  {
+      position: static;
+      display: flex;
+      justify-content: center;
+    }
+
+    .concept-img-3 {
+      margin-right: calc(var(--space) * 0.5);
+    }
+
+    .concept-video {
+      max-width: 267px;
+    }
+
+    .concept-img-1 {
+      left: 100px;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+
+    .concept-img-1, .concept-img-2 {
+      max-width: 100%;
+      position: static;
+    }
+
+
+    .concept-img-4 {
+      width: 340px;
+      margin-bottom: calc(var(--space) * 7);
+    }
+
+    .concept-img-4  img{
+      margin: 0;
+    }
+
+
+    .concept-img-4 span {
+      top: -4px;
+      max-width: 297px;
+      font-size: calc(var(--base-font-size) * 1);
+    }
+
+    .cases-concept__images-group {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .concept-img-3 {
+      max-width: 472px;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: calc(var(--space) * 0.5);;
+    }
+
+    .concept-video {
+      max-width: unset;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+
+    .cases-concept__images-bottom {
+      padding-top: 100px
+    }
+    .concept-img-4 span {
+      top: 5px;
+    }
   }
 
 </style>
