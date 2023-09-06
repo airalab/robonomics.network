@@ -45,7 +45,7 @@
             width="90%"
           />
         </div> -->
-        
+
       </CaseText>
 
       <CaseText
@@ -76,6 +76,7 @@
             width="80%"
           />
         </div> -->
+        
         
         <div class="layout__text">
           <p>Next, we worked out the operational details, specifically concerning which tokens users could send and the underlying algorithm. Here's the result:</p>
