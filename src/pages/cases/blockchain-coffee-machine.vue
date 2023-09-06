@@ -36,7 +36,7 @@
 
         <p><b>Step 4: drink coffee!</b>  In order to receive a fresh cup of coffee, a team member needs to send a coffee token to the address of the coffee machine.</p>
         
-        <!-- <h3 class="youtube-icon">Coffee beans delivery process:</h3>
+        <h3 class="youtube-icon">Coffee beans delivery process:</h3>
         <div class="youtube-wrapper">
           <Youtube
             title="delivery"
@@ -44,7 +44,7 @@
             withBorder
             width="90%"
           />
-        </div> -->
+        </div>
 
       </CaseText>
 
@@ -68,23 +68,22 @@
           <h2>How we smarten up our coffee machine in real life</h2>
           <p>To achieve hands-on control of the coffee machine, we integrated a single-board computer, specifically the Raspberry Pi 4, along with a commonly available mass-market coffee machine that supported GPIO connection. Our preference was the <g-link to="https://www.delonghi.com/en/ecam22-110-sb-magnifica-s-automatic-coffee-maker/p/ECAM22.110.SB">De’Longhi Magnifica ECAM 22.110</g-link>, selected for its affordability and the convenience of its easily removable front panel.</p>
         </div>
-        <!-- <div class="youtube-wrapper mb-big">
+        <div class="youtube-wrapper mb-big">
           <Youtube
             title="COFFEE"
             src="https://www.youtube.com/embed/Z8pXcLjlJnQ"
             withBorder
             width="80%"
           />
-        </div> -->
-        
+        </div>
         
         <div class="layout__text">
           <p>Next, we worked out the operational details, specifically concerning which tokens users could send and the underlying algorithm. Here's the result:</p>
-          <g-image immediate src="@/assets/images/cases/blockchain-coffee/scheme-1.svg" alt="scheme" />
+          <img src="/cases/blockchain-coffee/scheme-1.svg" alt="scheme" />
           <p>To enjoy a cup of delicious coffee, users need to send a certain amount of funds (in our case, 1 Statemine's token ACT, id=3077) to the coffee machine's address from a parachain (Statemine). Afterward, the coffee pouring process begins, and an action log is subsequently published on <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">the Robonomics Parachain portal </g-link> via the Datalog function.</p>
         </div>
 
-        <g-image immediate class="no-mb" src="../../assets/images/cases/blockchain-coffee/scheme-2.svg" alt="scheme" />
+        <img class="no-mb" src="/cases/blockchain-coffee/scheme-2.svg" alt="scheme" />
       </div>
 
       <div class="cases-concept">
@@ -103,7 +102,7 @@
 
           <div class="cases-concept__images-bottom">
             <div class="concept-img-4">
-              <g-image immediate  aria-hidden="true" src="../../assets/images/cases/blockchain-coffee/coffee-decor-4.svg"/>
+              <img aria-hidden="true" src="/cases/blockchain-coffee/coffee-decor-4.svg"/>
               <span>Our blockchain coffee maker making coffee at the Polkadot Web3 Hub </span>
             </div>
             <div class="cases-concept__images-group">
