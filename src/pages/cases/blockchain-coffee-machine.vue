@@ -106,9 +106,9 @@
             </div>
             <div class="cases-concept__images-group">
               <g-image immediate class="concept-img-3 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-3.jpg"/>
-              <video class="concept-video white-border" ref="video" controls muted autoplay>
-                <source src="@/assets/images/cases/blockchain-coffee/coffee-concept-video.mp4" :type="`video/mp4`" />
-              </video>
+              <!-- <video class="concept-video white-border" controls muted autoplay playsinline loop preload='none' >
+                <source src="@/assets/images/cases/blockchain-coffee/coffee-concept-video.mp4" type="video/mp4"/>
+              </video> -->
             </div>
           </div>
         </div>
@@ -278,7 +278,7 @@ export default {
     position: absolute;
     right: 280px;
     top: -107px;
-    max-width: 228px;
+    max-width: 253px;
     height: 100%;
     margin: 0;
   }
@@ -372,6 +372,7 @@ export default {
     }
 
     .concept-img-3 {
+      max-width: 228px;
       margin-right: calc(var(--space) * 0.5);
     }
 
@@ -414,7 +415,7 @@ export default {
     }
 
     .concept-img-3 {
-      max-width: 472px;
+      max-width: 500px;
       width: 100%;
       margin-right: 0;
       margin-bottom: calc(var(--space) * 0.5);;
