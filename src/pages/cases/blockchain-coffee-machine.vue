@@ -94,20 +94,20 @@
         <div class="cases-concept__images">
 
           <div class="cases-concept__images-top">
-            <g-image immediate class="concept-img-1 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-1.png"/>
+            <g-image immediate class="concept-img-1 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-1.png"/>
 
-            <g-image immediate class="concept-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-2.jpg"/>
+            <g-image immediate class="concept-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-2.jpg"/>
           </div>
 
           <div class="cases-concept__images-bottom">
             <div class="concept-img-4">
-              <g-image immediate aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-4.svg"/>
+              <g-image immediate aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-4.svg"/>
               <span>Our blockchain coffee maker making coffee at the Polkadot Web3 Hub </span>
             </div>
             <div class="cases-concept__images-group">
-              <g-image immediate class="concept-img-3 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/concept-3.jpg"/>
+              <g-image immediate class="concept-img-3 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-3.jpg"/>
               <video class="concept-video white-border" ref="video" controls muted autoplay>
-                <source src="@/assets/images/cases/blockchain-coffee/concept-video.mp4" :type="`video/mp4`" />
+                <source src="@/assets/images/cases/blockchain-coffee/coffee-concept-video.mp4" :type="`video/mp4`" />
               </video>
             </div>
           </div>
@@ -115,9 +115,9 @@
       </div>
 
       <!-- decor image -->
-      <g-image  immediate class="decor-img-1" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-1.png"/>
-      <g-image immediate class="decor-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-2.png"/>
-      <g-image immediate class="decor-img-3" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/decor-3.png"/>
+      <g-image  immediate class="decor-img-1" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-1.png"/>
+      <g-image immediate class="decor-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-2.png"/>
+      <g-image immediate class="decor-img-3" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-3.png"/>
     </section>
   </CaseLayout>
 </template>
