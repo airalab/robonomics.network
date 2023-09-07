@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{jlyT:function(n,t,e){"use strict";e.r(t);var s={},l=e("KHd+"),o=Object(l.a)(s,(function(){var n=this._self._c;return n("layout",[n("section",[this._v("eisenkoch")])])}),[],!1,null,null,null);t.default=o.exports}}]);
