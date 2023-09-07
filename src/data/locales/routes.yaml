@@ -75,11 +75,7 @@
   component: './src/pages/cases/fronius-solar-web.vue'
   typename: 'page'
 
-- path: '/cases/blockchain-coffee'
-  component: './src/pages/cases/blockchain-coffee.vue'
-  typename: 'page'
-
-- path: '/cases/blockchain-coffee-machine'
+- path: '/cases/blockchain-coffee-machine/'
   component: './src/pages/cases/blockchain-coffee-machine.vue'
   typename: 'page'
 
