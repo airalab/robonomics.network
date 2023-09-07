@@ -79,5 +79,9 @@
   component: './src/pages/cases/blockchain-coffee.vue'
   typename: 'page'
 
+- path: '/cases/blockchain-coffee-machine'
+  component: './src/pages/cases/blockchain-coffee-machine.vue'
+  typename: 'page'
+
 
 
