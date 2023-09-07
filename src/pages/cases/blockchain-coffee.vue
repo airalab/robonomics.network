@@ -2,7 +2,7 @@
   <CaseLayout
     path="/cases/blockchain-coffee-machine/"
     introText="Collaboration with real estate developer on Cyprus for tracking the daily distribution, consumption and offsetting any excess carbon footprint."
-    introImg="blockchain-coffee/1.jpg"
+    introImg="fronius-solar-web/1.jpg"
     link="https://github.com/Multi-Agent-io/solarweb-hass-integration"
     linkText="solarweb-hass-integration"
     footerTitle="The way forward"
