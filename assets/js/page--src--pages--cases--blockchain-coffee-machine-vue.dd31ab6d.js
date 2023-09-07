@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{YoZj:function(n,t,e){"use strict";e.r(t);var s={},u=e("KHd+"),l=Object(u.a)(s,(function(){return(0,this._self._c)("layout",[this._v("\n  test page\n")])}),[],!1,null,null,null);t.default=l.exports}}]);
