@@ -50,7 +50,7 @@
 
 - id: 3
   title: 'Blockchain-powered smart coffee machine'
-  description: '"Robonomics coffee" - is a smart coffee machine integrated in Robonomics Network. This project aims to show Robonomics potential in the IoT sphere by a real-world example.'
+  description: 'Robonomics coffee - is a smart coffee machine integrated in Robonomics Network. This project aims to show Robonomics potential in the IoT sphere by a real-world example.'
   path: 'cases/blockchain-coffee-machine'
   cover_image: 'blockchain-coffee.jpg'
   metaImg: '/website_cover_coffee-machine.jpg'
