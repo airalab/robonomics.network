@@ -70,6 +70,7 @@
   component: './src/pages/cases/Index.vue'
   typename: 'page'
 
+# all cases go here
 - path: '/cases/fronius-solar-web'
   component: './src/pages/cases/fronius-solar-web.vue'
   typename: 'page'
@@ -78,7 +79,7 @@
   component: './src/pages/cases/blockchain-coffee-machine.vue'
   typename: 'page'
 
-- path: '/cases/eisenkoch/'
+- path: '/cases/eisenkoch'
   component: './src/pages/cases/eisenkoch.vue'
   typename: 'page'
 

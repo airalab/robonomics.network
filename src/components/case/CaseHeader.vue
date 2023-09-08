@@ -1,5 +1,5 @@
 <template>
-  <div v-if="caseRD.length">
+  <div v-if="caseRD.length !== 0">
 
     <MetaInfo
       :pageTitle = "caseRD[0].title"
@@ -31,7 +31,7 @@
           <p v-else v-html="text"></p>
         </div>
       </div>
-      <g-image immediate v-if="introImg" :src="require(`!!assets-loader!@/assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
+      <img v-if="introImg" :src="require(`../../assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
     </section>
 
   </div>
@@ -72,7 +72,7 @@ export default {
     caseRD() {
       return cases.filter(c => this.path.includes(c.path))
     }
-  },
+  }
 
 }
 </script>
