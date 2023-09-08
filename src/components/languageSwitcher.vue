@@ -3,7 +3,7 @@
     <select v-if="$localesList" tabindex="0" @change="onSelectChange($event)">
   
       <template v-for="(item,key) in $localesList">
-        <option v-bind:key="key" :selected="item == $locale" v-bind:value="item">
+        <option v-bind:key="key" :selected="item == locale" v-bind:value="item">
           <!-- <template v-if="item == 'en'">English</template>
           <template v-if="item == 'ru'">Русский</template> -->
           {{item}}
