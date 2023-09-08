@@ -1,125 +1,133 @@
 <template>
-  <CaseLayout
-    :path="$route.path"
-    introImg="blockchain-coffee/1.jpg"
-    :introText="`The 'Robonomics Coffee' is a smart coffee machine integrated into the Robonomics Network. This project aims to illustrate Robonomics' potential in the IoT sphere through a real-world example.`"
-    footerTitle="DIY or how to build your own smart blockchain coffee machine"
-    footerText="<p>You can find a detailed tutorial and technical specifications in the open-source GitHub repository. Keep in mind that you can use any coffee machine you prefer and almost any token of your choice to bring this project to life in your own space.</p>"
-    link="https://github.com/Multi-Agent-io/robonomics-coffee-maker"
-    linkText="robonomics-coffee-maker"
-  >
+  <layout>
 
-    <section class="case-page__content hyphens">
+  <Header
+      :path="$route.path"
+      introImg="blockchain-coffee/bcm-1.jpg"
+      :introText="`The 'Robonomics Coffee' is a smart coffee machine integrated into the Robonomics Network. This project aims to illustrate Robonomics' potential in the IoT sphere through a real-world example.`"
+    />
 
-      <CaseText
-        title="Establishing democracy with smart contracts"
-        text="Let's imagine a small office with a team of 10-15 people. While everybody is focused on their own deadlines for their main professional tasks, no one seems to care about the upkeep of the office space. The most common solution to avoid sinking into chaos is to hire third-party individuals for support. Another approach is to take the initiative and impose penalties on those who create a mess or deplete supplies without replenishing them. However, is it ethical to live under tyranny in our future crypto-anarchist world, where everyone is expected to be responsible and enjoy freedom? Let's strive to create a more democratic society using smart contracts and the new generation of Internet technologies (often referred to as Web3). We need tools that can help us make decisions together, and then ensure they work properly without humans having to get directly involved."
-      />
+    <section class="case-page layout">
+      <section class="case-page__content hyphens">
 
-      <CaseText
-        title="'Who drank all the coffee?!' or the tragedy of the commons"
-        text="There's a concept widely discussed in economics, ecology, and other sciences known as the 'tragedy of the commons.' This pertains to a scenario in which individuals who have access to a shared resource prioritize their own interests, ultimately exhausting the resource. Coffee closely resembles such a resource, as it deteriorates due to uncontrolled consumption in the office. However, at the same time, usually none of the team members are inclined to invest their time and money in obtaining an additional package of coffee beans. So, they keep drinking coffee without getting new supplies."
-      />
-
-      <CaseText
-        title="Strategy for transforming the coffee machine into an autonomous robotic device"
-        multiply
-      >
-        <p><b>How to formulate the task in numbers.</b> Assuming a monthly coffee budget of $100, which is approximately equivalent to 150 cups for our team of 10 people, this leaves each person with 1 cup every 2 days. Now, let's delve into the technical details. The question is: how can we bring an autonomous coffee machine to life in the office?</p>
-
-        <p><b>Step 1: automated coffee bean ordering</b>. We've made an arrangement with the barista, Nikita, who's located near the office. He'll supply us with coffee beans upon receiving an alert from the bot. The bot sends a message when the coffee is running low, specifying the quantity of coffee (in kilograms) needed for the order and the corresponding payment amount determined by the team. With these details, Nikita can select the coffee according to his preference.</p>
-
-        <p><b>Step 2: automatic access to smart office.</b> Simultaneously with the order, the coffee machine generates a QR code. Nikita then presents this QR code to the camera for office entry.</p>
-
-        <p><b>Step 3: distribution of coffee tokens to the team.</b> Once the local camera scans the QR code, the smart home management system initiates a payment to Nikita and distributes new coffee tokens among the team members.</p>
-
-        <p><b>Step 4: drink coffee!</b>  In order to receive a fresh cup of coffee, a team member needs to send a coffee token to the address of the coffee machine.</p>
-        
-        <h3 class="youtube-icon">Coffee beans delivery process:</h3>
-        <div class="youtube-wrapper">
-          <Youtube
-            title="delivery"
-            src="https://www.youtube.com/embed/Q7C4Mb9wn64"
-            withBorder
-            width="90%"
-          />
-        </div>
-
-      </CaseText>
-
-      <CaseText
-        title="Unlock new possibilities with this concept"
-        multiply
-      >
-
-      <p>Furthermore, such an automated coffee machine introduces various economic and social dimensions. Let’s take a look at them:</p>
-
-      <ul class="list-simple cases__list cases__list--with-tick">
-            <li class="cases__item cases__item--with-tick">Developers can deposit extra coffee tokens when consumption falls below the limit. This creates a transparent system for varied coffee usage within the limit.</li>
-            <li class="cases__item cases__item--with-tick">The coffee machine could maintain a shared account, enabling office members to contribute funds from their personal accounts for a higher quality coffee experience next time.</li>
-            <li class="cases__item cases__item--with-tick">The team collectively decides the coffee quantity the machine will order each time through a DAO vote. This provides freedom to tackle the challenge with limited resources.</li>
-            <li class="cases__item cases__item--with-tick">Programmable processes reduce the influence of human factors and also offer greater flexibility in tailoring settings for specific teams.</li>
-          </ul>
-      </CaseText>
-
-      <div class="oldy layout layout__mid mb-big">
-        <div class="layout__text">
-          <h2>How we smarten up our coffee machine in real life</h2>
-          <p>To achieve hands-on control of the coffee machine, we integrated a single-board computer, specifically the Raspberry Pi 4, along with a commonly available mass-market coffee machine that supported GPIO connection. Our preference was the <g-link to="https://www.delonghi.com/en/ecam22-110-sb-magnifica-s-automatic-coffee-maker/p/ECAM22.110.SB">De’Longhi Magnifica ECAM 22.110</g-link>, selected for its affordability and the convenience of its easily removable front panel.</p>
-        </div>
-        <div class="youtube-wrapper mb-big">
-          <Youtube
-            title="COFFEE"
-            src="https://www.youtube.com/embed/Z8pXcLjlJnQ"
-            withBorder
-            width="80%"
-          />
-        </div>
-        
-        <div class="layout__text">
-          <p>Next, we worked out the operational details, specifically concerning which tokens users could send and the underlying algorithm. Here's the result:</p>
-          <img src="/cases/blockchain-coffee/scheme-1.svg" alt="scheme" />
-          <p>To enjoy a cup of delicious coffee, users need to send a certain amount of funds (in our case, 1 Statemine's token ACT, id=3077) to the coffee machine's address from a parachain (Statemine). Afterward, the coffee pouring process begins, and an action log is subsequently published on <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">the Robonomics Parachain portal </g-link> via the Datalog function.</p>
-        </div>
-
-        <img class="no-mb" src="/cases/blockchain-coffee/scheme-2.svg" alt="scheme" />
-      </div>
-
-      <div class="cases-concept">
         <CaseText
-          title="When the concept extends beyond the office"
-          text="This concept offers numerous avenues for expanding the idea. It was successfully implemented at the Polkadot Web3 Hub during the 2022 World Economic Forum in Davos. Participants were able to place coffee orders and specify their desired coffee type (e.g., espresso, americano, cappuccino) by sending a certain amount of tokens.Let us share photos and videos from this event:"
+          title="Establishing democracy with smart contracts"
+          text="Let's imagine a small office with a team of 10-15 people. While everybody is focused on their own deadlines for their main professional tasks, no one seems to care about the upkeep of the office space. The most common solution to avoid sinking into chaos is to hire third-party individuals for support. Another approach is to take the initiative and impose penalties on those who create a mess or deplete supplies without replenishing them. However, is it ethical to live under tyranny in our future crypto-anarchist world, where everyone is expected to be responsible and enjoy freedom? Let's strive to create a more democratic society using smart contracts and the new generation of Internet technologies (often referred to as Web3). We need tools that can help us make decisions together, and then ensure they work properly without humans having to get directly involved."
         />
 
-        <div class="cases-concept__images">
+        <CaseText
+          title="'Who drank all the coffee?!' or the tragedy of the commons"
+          text="There's a concept widely discussed in economics, ecology, and other sciences known as the 'tragedy of the commons.' This pertains to a scenario in which individuals who have access to a shared resource prioritize their own interests, ultimately exhausting the resource. Coffee closely resembles such a resource, as it deteriorates due to uncontrolled consumption in the office. However, at the same time, usually none of the team members are inclined to invest their time and money in obtaining an additional package of coffee beans. So, they keep drinking coffee without getting new supplies."
+        />
 
-          <div class="cases-concept__images-top">
-            <img class="concept-img-1 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-1.png"/>
+        <CaseText
+          title="Strategy for transforming the coffee machine into an autonomous robotic device"
+          multiply
+        >
+          <p><b>How to formulate the task in numbers.</b> Assuming a monthly coffee budget of $100, which is approximately equivalent to 150 cups for our team of 10 people, this leaves each person with 1 cup every 2 days. Now, let's delve into the technical details. The question is: how can we bring an autonomous coffee machine to life in the office?</p>
 
-            <img class="concept-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-2.jpg"/>
+          <p><b>Step 1: automated coffee bean ordering</b>. We've made an arrangement with the barista, Nikita, who's located near the office. He'll supply us with coffee beans upon receiving an alert from the bot. The bot sends a message when the coffee is running low, specifying the quantity of coffee (in kilograms) needed for the order and the corresponding payment amount determined by the team. With these details, Nikita can select the coffee according to his preference.</p>
+
+          <p><b>Step 2: automatic access to smart office.</b> Simultaneously with the order, the coffee machine generates a QR code. Nikita then presents this QR code to the camera for office entry.</p>
+
+          <p><b>Step 3: distribution of coffee tokens to the team.</b> Once the local camera scans the QR code, the smart home management system initiates a payment to Nikita and distributes new coffee tokens among the team members.</p>
+
+          <p><b>Step 4: drink coffee!</b>  In order to receive a fresh cup of coffee, a team member needs to send a coffee token to the address of the coffee machine.</p>
+          
+          <h3 class="youtube-icon">Coffee beans delivery process:</h3>
+          <div class="youtube-wrapper">
+            <Youtube
+              title="delivery"
+              src="https://www.youtube.com/embed/Q7C4Mb9wn64"
+              withBorder
+              width="90%"
+            />
           </div>
 
-          <div class="cases-concept__images-bottom">
-            <div class="concept-img-4">
-              <img aria-hidden="true" src="/cases/blockchain-coffee/coffee-decor-4.svg"/>
-              <span>Our blockchain coffee maker making coffee at the Polkadot Web3 Hub </span>
+        </CaseText>
+
+        <CaseText
+          title="Unlock new possibilities with this concept"
+          multiply
+        >
+
+        <p>Furthermore, such an automated coffee machine introduces various economic and social dimensions. Let’s take a look at them:</p>
+
+        <ul class="list-simple cases__list cases__list--with-tick">
+              <li class="cases__item cases__item--with-tick">Developers can deposit extra coffee tokens when consumption falls below the limit. This creates a transparent system for varied coffee usage within the limit.</li>
+              <li class="cases__item cases__item--with-tick">The coffee machine could maintain a shared account, enabling office members to contribute funds from their personal accounts for a higher quality coffee experience next time.</li>
+              <li class="cases__item cases__item--with-tick">The team collectively decides the coffee quantity the machine will order each time through a DAO vote. This provides freedom to tackle the challenge with limited resources.</li>
+              <li class="cases__item cases__item--with-tick">Programmable processes reduce the influence of human factors and also offer greater flexibility in tailoring settings for specific teams.</li>
+            </ul>
+        </CaseText>
+
+        <div class="oldy layout layout__mid mb-big">
+          <div class="layout__text">
+            <h2>How we smarten up our coffee machine in real life</h2>
+            <p>To achieve hands-on control of the coffee machine, we integrated a single-board computer, specifically the Raspberry Pi 4, along with a commonly available mass-market coffee machine that supported GPIO connection. Our preference was the <g-link to="https://www.delonghi.com/en/ecam22-110-sb-magnifica-s-automatic-coffee-maker/p/ECAM22.110.SB">De’Longhi Magnifica ECAM 22.110</g-link>, selected for its affordability and the convenience of its easily removable front panel.</p>
+          </div>
+          <div class="youtube-wrapper mb-big">
+            <Youtube
+              title="COFFEE"
+              src="https://www.youtube.com/embed/Z8pXcLjlJnQ"
+              withBorder
+              width="80%"
+            />
+          </div>
+          
+          <div class="layout__text">
+            <p>Next, we worked out the operational details, specifically concerning which tokens users could send and the underlying algorithm. Here's the result:</p>
+            <img src="/cases/blockchain-coffee/scheme-1.svg" alt="scheme" />
+            <p>To enjoy a cup of delicious coffee, users need to send a certain amount of funds (in our case, 1 Statemine's token ACT, id=3077) to the coffee machine's address from a parachain (Statemine). Afterward, the coffee pouring process begins, and an action log is subsequently published on <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">the Robonomics Parachain portal </g-link> via the Datalog function.</p>
+          </div>
+
+          <img class="no-mb" src="/cases/blockchain-coffee/scheme-2.svg" alt="scheme" />
+        </div>
+
+        <div class="cases-concept">
+          <CaseText
+            title="When the concept extends beyond the office"
+            text="This concept offers numerous avenues for expanding the idea. It was successfully implemented at the Polkadot Web3 Hub during the 2022 World Economic Forum in Davos. Participants were able to place coffee orders and specify their desired coffee type (e.g., espresso, americano, cappuccino) by sending a certain amount of tokens.Let us share photos and videos from this event:"
+          />
+
+          <div class="cases-concept__images">
+
+            <div class="cases-concept__images-top">
+              <img class="concept-img-1 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-1.png"/>
+
+              <img class="concept-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-2.jpg"/>
             </div>
-            <div class="cases-concept__images-group">
-              <img class="concept-img-3 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-3.jpg"/>
-              <video class="concept-video white-border" controls muted autoplay playsinline loop preload='none' >
-                <source src="@/assets/images/cases/blockchain-coffee/coffee-concept-video.mp4" type="video/mp4"/>
-              </video>
+
+            <div class="cases-concept__images-bottom">
+              <div class="concept-img-4">
+                <img aria-hidden="true" src="/cases/blockchain-coffee/coffee-decor-4.svg"/>
+                <span>Our blockchain coffee maker making coffee at the Polkadot Web3 Hub </span>
+              </div>
+              <div class="cases-concept__images-group">
+                <img class="concept-img-3 white-border" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-concept-3.jpg"/>
+                <video class="concept-video white-border" controls muted autoplay playsinline loop preload='none' >
+                  <source src="@/assets/images/cases/blockchain-coffee/coffee-concept-video.mp4" type="video/mp4"/>
+                </video>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- decor image -->
-      <img class="decor-img-1" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-1.png"/>
-      <img class="decor-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-2.png"/>
-      <img class="decor-img-3" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-3.png"/>
+        <!-- decor image -->
+        <img class="decor-img-1" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-1.png"/>
+        <img class="decor-img-2" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-2.png"/>
+        <img class="decor-img-3" aria-hidden="true" src="@/assets/images/cases/blockchain-coffee/coffee-decor-3.png"/>
+      </section>
     </section>
-  </CaseLayout>
+
+
+    <Footer 
+      title="DIY or how to build your own smart blockchain coffee machine"
+      text="<p>You can find a detailed tutorial and technical specifications in the open-source GitHub repository. Keep in mind that you can use any coffee machine you prefer and almost any token of your choice to bring this project to life in your own space.</p>"
+      link="https://github.com/Multi-Agent-io/robonomics-coffee-maker"
+      linkText="robonomics-coffee-maker"
+    />
+  </layout>
 </template>
 
 <script>
@@ -127,8 +135,9 @@
 export default {
 
   components: {
-    CaseLayout: () => import('~/layouts/CaseLayout.vue'),
     CaseText: () => import('~/components/case/CaseText.vue'),
+    Header: () => import('~/components/case/CaseHeader.vue'),
+    Footer: () => import('~/components/case/CaseFooter.vue'),
   }
 
 }
