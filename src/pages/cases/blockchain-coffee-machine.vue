@@ -246,6 +246,7 @@ export default {
     z-index: 2;
   }
 
+
   .decor-img-2 {
     position: absolute;
     right: -5px;
