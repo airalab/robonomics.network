@@ -79,9 +79,5 @@
   component: './src/pages/cases/blockchain-coffee-machine.vue'
   typename: 'page'
 
-- path: '/cases/eisenkoch'
-  component: './src/pages/cases/eisenkoch.vue'
-  typename: 'page'
-
 
 
