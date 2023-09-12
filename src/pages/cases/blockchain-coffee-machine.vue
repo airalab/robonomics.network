@@ -39,8 +39,6 @@
             <Youtube
               title="delivery"
               src="https://www.youtube.com/embed/Q7C4Mb9wn64"
-              withBorder
-              width="90%"
             />
           </div>
 
@@ -70,8 +68,6 @@
             <Youtube
               title="COFFEE"
               src="https://www.youtube.com/embed/Z8pXcLjlJnQ"
-              withBorder
-              width="80%"
             />
           </div>
           
@@ -240,11 +236,6 @@ export default {
     position: relative;
     min-height: 445px;
     width: 100%;
-  }
-
-  .youtube-wrapper {
-    background-color: #d9d9d9;
-    padding-bottom: calc(var(--space) * 1.4);
   }
 
   .decor-img-1 {
