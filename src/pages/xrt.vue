@@ -148,6 +148,12 @@
                         <p>{{ $t('Throughout the year, the parachain issues a small amount of XRT to incentivize parachain collators.') }}<g-link to="https://robonomics.polkassembly.io/proposal/5"> {{ $t('The parameter of the total reward') }}</g-link> {{$t('for collators for the year is determined by on-chain voting of token holders, and can be changed by holding a referendum.')}}</p>
                     </div>
 
+
+                    <Youtube
+                    title="Lifecycle of XRT tokens in Kusama (Polkadot 1.0)"
+                    src="https://www.youtube.com/embed/WcEvaQ5TIj4"
+                    />
+
                     <div class="youtube-embed">
                         <div class="oldy dark">
                             <div class="token__link use">
