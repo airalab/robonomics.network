@@ -150,8 +150,8 @@
 
 
                     <Youtube
-                    title="Lifecycle of XRT tokens in Kusama (Polkadot 1.0)"
-                    src="https://www.youtube.com/embed/WcEvaQ5TIj4"
+                        title="Lifecycle of XRT tokens in Kusama (Polkadot 1.0)"
+                        src="https://www.youtube.com/embed/WcEvaQ5TIj4"
                     />
 
                     <div class="youtube-embed">
