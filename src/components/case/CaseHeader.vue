@@ -13,7 +13,7 @@
 
     <section class="case-page__header layout layout__wide">
       <div class="case-page__header-wrapper layout__text">
-        <h1>{{ caseRD[0].title }}</h1>
+        <h1>{{ $t(caseRD[0].title) }}</h1>
         <div class="case-page__header-info">
           <div class="case-page__status" :class="{'progress': caseRD[0].progress === 'proceeding'}" />
           <div class="case-page__tags">
