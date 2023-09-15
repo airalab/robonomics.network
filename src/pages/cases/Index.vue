@@ -13,10 +13,8 @@
         <h1><span>{{ $t('R&D cases') }}</span></h1>
       </div>
       <div>
-        <p>
-         Robonomics is 100% open-source, secure, сost-effective, and futuristic IoT platform for connecting robotics under Polkadot and Ethereum control. Anyone can build services with Robonomics. 
-        </p>
-        <p>Below a list of our  proven applications of modern robotics technologies.</p>
+        <p>{{$t('Robonomics is 100% open-source, secure, сost-effective, and futuristic IoT platform for connecting robotics under Polkadot and Ethereum control. Anyone can build services with Robonomics.')}}</p>
+        <p>{{$t('Below a list of our  proven applications of modern robotics technologies.')}}</p>
         </div>
     </div>
 
@@ -27,7 +25,7 @@
       <div class="cases__banner layout layout__content">
         <!-- tags -->
         <div class="cases-tags">
-          <span class="cases__small-text">By interest:</span>
+          <span class="cases__small-text">{{$t('By interest:')}}</span>
           <div class="cases-tags__wrapper">
             <div 
               class="cases__tag"  
@@ -45,18 +43,18 @@
         <!-- filters -->
         <div class="cases-filter">
           <div class="cases-filter__option">
-            <span class="cases__small-text">Sort by progress:</span>
+            <span class="cases__small-text">{{$t('Sort by progress:')}}</span>
             <select v-model="caseProgress">
-              <option value="any progress">Any progress</option>
-              <option value="complete">Complete</option>
-              <option value="proceeding">Proceeding</option>
+              <option value="any progress">{{$t('Any progress')}}</option>
+              <option value="complete">{{$t('Complete') }}</option>
+              <option value="proceeding">{{$t('Proceeding')}}</option>
             </select>
           </div>
           <div class="cases-filter__option">
-            <span class="cases__small-text">Sort by time:</span>
+            <span class="cases__small-text">{{$t('Sort by time:')}}</span>
             <select v-model="caseDate">
-              <option value="recent">Recent</option>
-              <option value="earliest">Earliest</option>
+              <option value="recent">{{$t('Recent')}}</option>
+              <option value="earliest">{{$t('Earliest')}}</option>
             </select>
           </div>
         </div>
@@ -74,7 +72,7 @@
         </li>
       </ul>
 
-      <rbnet-button  class="btn-show-more" @click="nextPage" v-if="!tagsArrayLength ? this.filteredCases.length !== this.cases.length : this.filteredCases.length !== tagsArrayLength">Show more</rbnet-button>
+      <rbnet-button  class="btn-show-more" @click="nextPage" v-if="!tagsArrayLength ? this.filteredCases.length !== this.cases.length : this.filteredCases.length !== tagsArrayLength">{{ $t('Show more') }}</rbnet-button>
 
     </section>
 
@@ -211,6 +209,7 @@ export default {
 
   .cases__main-title {
     max-width: 340px;
+    margin-right: 2rem;
   }
 
   .cases-top p {

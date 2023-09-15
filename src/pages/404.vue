@@ -9,9 +9,7 @@
       <div class="layout layout__content">
         <h1 v-show="$t('This page is out of your space')">{{$t('This page is out of your space')}}</h1>
       </div>
-      <p >
-        Check url once more or create an <g-link class="link" to="https://github.com/airalab/robonomics.network/issues">issue</g-link> telling us that you’ve got 404 error (do not forget to mention current url)
-      </p>
+      <p>{{ $t('Check url once more or create an') }} <g-link class="link" to="https://github.com/airalab/robonomics.network/issues">issue</g-link> {{ $t('telling us that you’ve got 404 error (do not forget to mention current url)') }}</p>
 
       <div  class="page-404__bg" aria-hidden="true">
         <div id="parallax" class="parallax-objects">

@@ -1,6 +1,6 @@
 <template>
     <layout>
-        <div class="redirect oldy">This page has moved to a <a :href="redirect">{{ $static.metadata.home + redirect }}</a>. Automatic redirecting</div>
+        <div class="redirect oldy">{{ $t('This page has moved to a') }} <a :href="redirect">{{ $static.metadata.home + redirect }}</a>. {{ $t('Automatic redirecting') }}</div>
     </layout>
 </template>
 
