@@ -8,10 +8,10 @@
     </g-link>
     <div class="post-card__content">
       <g-link :to="post.done ? post.path : '/cases/'" v-if="isCase">
-        <h4 class="post-card__title" v-html="post.title" />
+        <h4 class="post-card__title" v-html="$t(post.title)" />
       </g-link>
      <h4 v-if="!isCase" class="post-card__title" v-html="post.title" />
-      <p class="post-card__description" v-html="post.description" />
+      <p class="post-card__description" v-html="$t(post.description)" />
       <span v-if="locale" class="post-card__locale">{{locale}}</span>
       <div class="post-card__cases-bottom" v-if="isCase">
       <div class="post-card__tags">
