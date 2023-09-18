@@ -155,7 +155,7 @@
           <p>{{$t(`Norbert Wiener speaks about viability of interdisciplinary science approach. For example he drew the parallels between automated control systems and challenges of scaling and complexity increasing of human society.`)}}</p>
           <p>{{$t(`So, in other words, the cybernetic approach can be applied equally to psychotherapy, biology and automated navigation. It is based on the function of the system, how the individual actions are controlled and how the individual nodes interact with each other.`)}}</p>
           <p>{{$t(`Taking into account Ronald Coase's and Norbert Wiener's publications, following up the development of Industry 4.0, we can consider using CPS as an economic agent, while designing robotized services. To regulate the size of the CPS and adapt to the changing needs of the individuals we can use market mechanism.`)}}</p>
-          <p>{{$t(`And what’s so scientifically interesting, taking as a basis the idea of the restrictions imposed by the market on the size of the firm, we can say that the limit of the increase in CPS will always be determined by the market and nothing else is required for this.`)}}</p>
+          <p>{{$t(`And what's so scientifically interesting, taking as a basis the idea of the restrictions imposed by the market on the size of the firm, we can say that the limit of the increase in CPS will always be determined by the market and nothing else is required for this.`)}}</p>
           <p>{{$t(`Robofirms are an ideal representation for cyber-physical systems. They are a fairly autonomous unit capable of providing services to both humans and other robots for money. As a result, the robot economy appears to us to be a general set of CPSs that provide services and goods directly to the market.`)}}</p>
         </article>
 
@@ -222,7 +222,7 @@
       <section class="vision-bitcoin animate-inside" v-in-viewport.once>
         <div class="layout layout__content hyphens text-col-3">
 
-          <p>{{$t(`One of the examples of our experiments: negotiating road space and right of way payments for autonomous vehicles to reduce congestion. What a person would absolutely not do in traffic, the car will do for you without difficulties: you want to switch lanes, your car and your neighbor's car exchange offers on the cost of such an operation at a rate of hundreds msgs per second, they will reveal an equilibrium price, and so you are already in the next faster moving lane. This means that now it will become available to “charge” your ride with uber and make it faster.`)}}</p>
+          <p>{{$t(`One of the examples of our experiments: negotiating road space and right of way payments for autonomous vehicles to reduce congestion. What a person would absolutely not do in traffic, the car will do for you without difficulties: you want to switch lanes, your car and your neighbor's car exchange offers on the cost of such an operation at a rate of hundreds msgs per second, they will reveal an equilibrium price, and so you are already in the next faster moving lane. This means that now it will become available to "charge" your ride with uber and make it faster.`)}}</p>
           <p>{{$t(`Robots need money that will be directly available to them in order to be able to perform operations without a person at the speed with which only machines can make decisions. And all this is solely for a person to enjoy life in the Smart City!`)}}</p>
           <p>{{$t(`And here we smoothly come to the first electronic cash - Bitcoin. The fact that Bitcoin can be stored in your account on the principle of not a bank, but cash in your wallet makes it the first money that the robot can manage independently, more precisely autonomously. At the same time, today we can already say that Bitcoin is not just electronic cash, but a truly global financial institution.`)}}</p>
           <p class="vision-bitcoin-conslution">{{$t(`As a result: an event not invented by us, but clearly falling into our vision, makes Bitcoin the first money for robots, or, if we look even deeper, it is precisely that social institution that will help the formation of robotic firms.`)}}</p>
@@ -283,11 +283,11 @@
           </div>
           <div class="grid-2">
             <div>
-              <p>{{$t(`Heterogeneous Blockchain Network`)}}</p>
+              <p>{{$t("Heterogeneous Blockchain Network")}}</p>
               <g-image src="~/assets/images/vision-chains-parachain.png"/>
             </div>
             <div>
-              <p>{{$t(`Homogeneous Shard Network`)}}</p>
+              <p>{{$t("Homogeneous Shard Network")}}</p>
               <g-image src="~/assets/images/vision-chains-shard-network.png"/>
             </div>
           </div>
