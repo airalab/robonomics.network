@@ -1,5 +1,5 @@
 <template>
-  <section class="section section__solid contacts" dir="ltr">
+  <section class="section section__solid contacts" :class="{'withGap': withGap}" dir="ltr">
     <!-- <hr/> -->
     <div class="contacts__container">
       <!-- <h2 class="contacts__title">
@@ -90,6 +90,13 @@ export default {
     }
   },
 
+  props: {
+    withGap: {
+      type: Boolean,
+      default: true
+    }
+  },
+
   computed: {
     discord() {
         return contacts.filter(item => item.title.toLowerCase() === "discord");
@@ -106,13 +113,19 @@ export default {
 </script>
 
 <style scoped>
+
   .contacts {
-    margin-top: calc(var(--space) * 6);
     padding-top: 0 !important;
     background-color: transparent;
     border-top: 1px solid var(--color-darkness);
     border-bottom: 1px solid rgba(30, 30, 30, 0.2);
   }
+
+  .contacts.withGap {
+    /* margin-top: 0; */
+    margin-top: calc(var(--space) * 6);
+  }
+
   hr {
     margin-top: 0;
     margin-bottom: 0;
