@@ -72,7 +72,7 @@
         </li>
       </ul>
 
-      <rbnet-button  class="btn-show-more" @click="nextPage" v-if="!tagsArrayLength ? this.filteredCases.length !== this.cases.length : this.filteredCases.length !== tagsArrayLength">{{ $t('Show more') }}</rbnet-button>
+      <rbnet-button  class="btn-show-more" @click="nextPage" v-if="!tagsArrayLength ? this.filteredCases.length !== this.cases.length : this.filteredCases.length !== tagsArrayLength">{{$t('Show more') }}</rbnet-button>
 
     </section>
 

@@ -23,14 +23,14 @@
 
     <div class="google-sheets-form__actions">
       <rbnet-button @click="onSubmit" v-if="result !== 'success'" class="button large"  :disabled="result === 'error' || result === 'wait'">
-        <span v-if="result !== 'wait'">{{ $t('Want emails from robonomics') }}</span>
-        <span class="isLoading" v-else>{{ $t('Adding you to our special list...') }}</span>
+        <span v-if="result !== 'wait'">{{$t('Want emails from robonomics')}}</span>
+        <span class="isLoading" v-else>{{$t('Adding you to our special list...')}}</span>
         <span class="spinner">
           <Spinner v-if="result === 'wait'"/>
         </span>
       </rbnet-button >
-      <rbnet-button disabled v-else class="button button-success">{{ $t('Nice, you are in the list') }}</rbnet-button>
-      <div v-if="result === 'error'" class="error">{{ $t('Something went  wrong. Try again later') }}</div>
+      <rbnet-button disabled v-else class="button button-success">{{$t('Nice, you are in the list')}}</rbnet-button>
+      <div v-if="result === 'error'" class="error">{{$t('Something went  wrong. Try again later')}}</div>
     </div>
   </gsp-form>
 </template>

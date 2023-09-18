@@ -6,12 +6,11 @@ import en from './English.json';
 import es from './Spanish.json';
 import ja from './Japanese.json';
 import de from './German.json';
-import az from './Azerbaijani.json';
 import fr from './French.json';
 import it from './Italian.json';
 import ko from './Korean.json';
 import pt from './Portuguese.json';
-import tr from './Turkish.json';
+import el from './Greek.json';
 import uk from './Ukrainian.json';
 
 // for blog
@@ -42,12 +41,11 @@ const {
     es,
     ja,
     de,
-    az,
     fr,
     it,
     ko,
     pt,
-    tr,
+    el,
     uk
   },
   locale: typeof window !== "undefined" ? (window.localStorage.getItem('locale') || 'en') : 'en'
