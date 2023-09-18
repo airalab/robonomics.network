@@ -74,7 +74,7 @@
           <div class="layout__text">
             <p>{{ $t("Next, we worked out the operational details, specifically concerning which tokens users could send and the underlying algorithm. Here's the result:") }}</p>
             <img src="/cases/blockchain-coffee/scheme-1.svg" alt="scheme" />
-            <p>{{$t("To enjoy a cup of delicious coffee, users need to send a certain amount of funds (in our case, 1 Statemine's token ACT, id=3077) to the coffee machine's address from a parachain (Statemine). Afterward, the coffee pouring process begins, and an action log is subsequently published on") }} <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">{{$t('the Robonomics Parachain portal ') }}  </g-link> {{$t('via the Datalog function')}}.</p>
+            <p>{{$t("To enjoy a cup of delicious coffee, users need to send a certain amount of funds (in our case, 1 Statemine's token ACT, id=3077) to the coffee machine's address from a parachain (Statemine). Afterward, the coffee pouring process begins, and an action log is subsequently published on") }} <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/explorer">{{$t('the Robonomics Parachain portal') }}  </g-link> {{$t('via the Datalog function')}}.</p>
           </div>
 
           <img class="no-mb" src="/cases/blockchain-coffee/scheme-2.svg" alt="scheme" />

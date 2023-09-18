@@ -11,7 +11,7 @@
       <div class="screen-content">
         
         <slot/>
-        <Contacts v-if="!$route.path.includes('contact')"/>
+        <Contacts :withGap="withGap" v-if="!$route.path.includes('contact')"/>
         <ClientOnly> <Footer/> </ClientOnly>
       </div>
 
@@ -142,6 +142,14 @@ export default {
     Footer: () => import('~/components/Footer.vue'),
     Contacts: () => import('~/components/Contacts.vue')
   },
+
+  props: {
+    withGap: {
+      type: Boolean,
+      default: true
+    }
+  },
+
   data () {
     return {
       release: null,

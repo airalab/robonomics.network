@@ -1,6 +1,6 @@
 <template>
   
-  <layout>
+  <layout :withGap="false">
 
     <MetaInfo
       pageTitle = "Robonomics art shop"

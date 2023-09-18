@@ -30,7 +30,7 @@
           <p>{{$t("Having data on the total electricity consumption and the solar panels' electricity production allows for a straightforward calculation of the carbon footprint. It is assumed that electricity from solar panels has a carbon footprint of 0, which means compensation is necessary only for the excess electricity consumed beyond what the solar panels generated.")}}</p><p>{{ $t('Notably, CO2 emissions differ across countries. In Cyprus, the average pollution stands at 587 g/kWh, according to Hannah Ritchie, Max Roser, and Pablo Rosado (2022) - "Energy".') }}</p><p>{{ $t("To offset the carbon footprint, carbon credits are utilized, with each credit representing 1 ton of CO2. These credits play a vital role in compensating for the environmental impact caused by electricity consumption beyond the solar panels' contribution.") }}</p>
         </CaseText>
         <CaseText
-          title="3. Managing blockchain-verified carbon footprint offset"
+          :title="$t('3. Managing blockchain-verified carbon footprint offset')"
           multiply
           img="fronius-solar-web/fsw-4.png"
           imgAlt="fronius-solar-web"
