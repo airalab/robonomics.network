@@ -26,9 +26,9 @@
             </span>
           </div>
         </div>
-        <div class="case-page__intro italic-abstract" v-if="text">
-          <p v-if="!withExtras">{{ text }}</p>
-          <p v-else v-html="text"></p>
+        <div class="case-page__intro italic-abstract" v-if="introText">
+          <p v-if="!withExtras">{{ introText }}</p>
+          <p v-else v-html="introText"></p>
         </div>
       </div>
       <img v-if="introImg" :src="require(`../../assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
@@ -48,7 +48,7 @@ export default {
       type: String,
       required: true,
     },
-    text: {
+    introText: {
       type: String,
       default: '',
       required: false
