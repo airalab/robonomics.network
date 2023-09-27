@@ -21,7 +21,7 @@
         />
         <CaseText
           :title="$t('2. Converting excess energy power to CO2 offset')"
-          multiply
+          multiple
           img="fronius-solar-web/fsw-3.png"
           imgAlt="fronius-solar-web"
           imageOutside
@@ -31,7 +31,7 @@
         </CaseText>
         <CaseText
           :title="$t('3. Managing blockchain-verified carbon footprint offset')"
-          multiply
+          multiple
           img="fronius-solar-web/fsw-4.png"
           imgAlt="fronius-solar-web"
           imageTop
@@ -90,5 +90,9 @@ export default {
 
   .mb-none {
     margin-bottom: 0;
+  }
+
+  html[lang="ar"] .case-page__content h2 {
+    text-align: right;
   }
 </style>

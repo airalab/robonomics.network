@@ -79,5 +79,9 @@
   component: './src/pages/cases/blockchain-coffee-machine.vue'
   typename: 'page'
 
+- path: '/cases/rust-for-ros2'
+  component: './src/pages/cases/rust-for-ros2.vue'
+  typename: 'page'
+
 
 
