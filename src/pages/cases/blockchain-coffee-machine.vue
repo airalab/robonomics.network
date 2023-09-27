@@ -4,7 +4,7 @@
   <Header
       :path="$route.path"
       introImg="blockchain-coffee/bcm-1.jpg"
-      :introText="`{{ $t('The \'Robonomics Coffee\' is a smart coffee machine integrated into the Robonomics Network. This project aims to illustrate Robonomics\' potential in the IoT sphere through a real-world example.') }}`"
+      :introText="$t(`The 'Robonomics Coffee' is a smart coffee machine integrated into the Robonomics Network. This project aims to illustrate Robonomics' potential in the IoT sphere through a real-world example.`)"
     />
 
     <section class="case-page layout">
@@ -22,7 +22,7 @@
 
         <CaseText
           :title="$t('Strategy for transforming the coffee machine into an autonomous robotic device')"
-          multiply
+          multiple
         >
           <p><b>{{ $t('How to formulate the task in numbers.') }}</b>{{ $t(`Assuming a monthly coffee budget of $100, which is approximately equivalent to 150 cups for our team of 10 people, this leaves each person with 1 cup every 2 days. Now, let's delve into the technical details. The question is: how can we bring an autonomous coffee machine to life in the office?`) }}</p>
 
@@ -46,17 +46,17 @@
 
         <CaseText
           :title="$t('Unlock new possibilities with this concept')"
-          multiply
+          multiple
         >
 
-        <p>{{ $t('Furthermore, such an automated coffee machine introduces various economic and social dimensions. Let’s take a look at them:') }}</p>
+          <p>{{ $t('Furthermore, such an automated coffee machine introduces various economic and social dimensions. Let’s take a look at them:') }}</p>
 
-        <ul class="list-simple cases__list cases__list--with-tick">
-              <li class="cases__item cases__item--with-tick">{{ $t('Developers can deposit extra coffee tokens when consumption falls below the limit. This creates a transparent system for varied coffee usage within the limit.') }}</li>
-              <li class="cases__item cases__item--with-tick">{{ $t('The coffee machine could maintain a shared account, enabling office members to contribute funds from their personal accounts for a higher quality coffee experience next time.') }}</li>
-              <li class="cases__item cases__item--with-tick">{{ $t('The team collectively decides the coffee quantity the machine will order each time through a DAO vote. This provides freedom to tackle the challenge with limited resources.') }}</li>
-              <li class="cases__item cases__item--with-tick">{{ $t('Programmable processes reduce the influence of human factors and also offer greater flexibility in tailoring settings for specific teams.') }}</li>
-            </ul>
+          <ul class="list-simple cases__list cases__list--with-tick">
+            <li class="cases__item cases__item--with-tick">{{ $t('Developers can deposit extra coffee tokens when consumption falls below the limit. This creates a transparent system for varied coffee usage within the limit.') }}</li>
+            <li class="cases__item cases__item--with-tick">{{ $t('The coffee machine could maintain a shared account, enabling office members to contribute funds from their personal accounts for a higher quality coffee experience next time.') }}</li>
+            <li class="cases__item cases__item--with-tick">{{ $t('The team collectively decides the coffee quantity the machine will order each time through a DAO vote. This provides freedom to tackle the challenge with limited resources.') }}</li>
+            <li class="cases__item cases__item--with-tick">{{ $t('Programmable processes reduce the influence of human factors and also offer greater flexibility in tailoring settings for specific teams.') }}</li>
+          </ul>
         </CaseText>
 
         <div class="oldy layout layout__mid mb-big">
@@ -202,18 +202,6 @@ export default {
   .cases__list--style-bold li::marker {
     font-size: calc(var(--base-font-size) * 1.3);
     font-weight: 800;
-  }
-
-  ul.cases__list--with-tick {
-    margin-left: 0;
-  }
-
-  .cases__item--with-tick {
-    padding-left: 80px;
-    background-image: url("data:image/svg+xml,%3Csvg width='34' height='24' viewBox='0 0 34 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_715_1981)'%3E%3Cpath d='M33.2891 0.703992C34.2376 1.64135 34.2376 3.16361 33.2891 4.10096L13.8627 23.298C12.9141 24.2353 11.3737 24.2353 10.4251 23.298L0.711904 13.6995C-0.23665 12.7621 -0.23665 11.2398 0.711904 10.3025C1.66046 9.36514 3.20091 9.36514 4.14947 10.3025L12.1477 18.1988L29.8583 0.703992C30.8069 -0.233362 32.3473 -0.233362 33.2959 0.703992H33.2883H33.2891Z' fill='%23A7D100'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_715_1981'%3E%3Crect width='34' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: 34px 24px;
-    background-position: left;
   }
 
   .case-page__content .oldy {
@@ -436,6 +424,14 @@ export default {
     }
     .concept-img-4 span {
       top: 5px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 420px) {
+    ul.cases__list {
+      margin-left: 0;
     }
   }
 
