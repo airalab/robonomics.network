@@ -35,11 +35,14 @@
   buttonicon: '↗'
   year: 2022
   options:
+    - link: 'https://ieeexplore.ieee.org/abstract/document/10003678'
+      text: 'IEEE Xplore'
+      icon: 'logo-IEEE-xplore.svg'
+      id: 33
     - link: 'https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11215646'
       text: 'dbpia'
       icon: 'logo-dbpia.svg'
       id: 5
-      position: center
       
 - title: 'Robot-as-a-Service: From Cloud to Peering Technologies'
   description: 'Aleksandr Kapitonov, Sergey Lonshakov, Vitaly Bulatov, Babak Kia Montazam, James White'
