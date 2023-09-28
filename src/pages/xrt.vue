@@ -69,7 +69,7 @@
                             </ul>
                         </div>
                         <div class="token-additional-info__ethereum"> 
-                            <p>{{$t('Within the Ethereum network you can use decentralized application powered by the') }}<g-link class="bold-text" to="https://app.uniswap.org/">Uniswap</g-link> Protocol.
+                            <p>{{$t('Within the Ethereum network you can use decentralized application powered by the') }} <g-link class="bold-text" to="https://app.uniswap.org/">Uniswap</g-link> Protocol.
                             </p>
                             <div class="token-additional-info__attention">
                                 <p><b>! {{ $t('Attention please') }}</b></p>
