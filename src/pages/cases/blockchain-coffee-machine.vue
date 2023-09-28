@@ -62,7 +62,7 @@
         <div class="oldy layout layout__mid mb-big">
           <div class="layout__text">
             <h2>{{ $t('How we smarten up our coffee machine in real life') }}</h2>
-            <p>{{ $t('To achieve hands-on control of the coffee machine, we integrated a single-board computer, specifically the Raspberry Pi 4, along with a commonly available mass-market coffee machine that supported GPIO connection. Our preference was the') }}<g-link to="https://www.delonghi.com/en/ecam22-110-sb-magnifica-s-automatic-coffee-maker/p/ECAM22.110.SB">De’Longhi Magnifica ECAM 22.110</g-link>, {{ $t('selected for its affordability and the convenience of its easily removable front panel.') }}</p>
+            <p>{{ $t('To achieve hands-on control of the coffee machine, we integrated a single-board computer, specifically the Raspberry Pi 4, along with a commonly available mass-market coffee machine that supported GPIO connection. Our preference was the') }} <g-link to="https://www.delonghi.com/en/ecam22-110-sb-magnifica-s-automatic-coffee-maker/p/ECAM22.110.SB">De’Longhi Magnifica ECAM 22.110</g-link>, {{ $t('selected for its affordability and the convenience of its easily removable front panel.') }}</p>
           </div>
           <div class="youtube-wrapper mb-big">
             <Youtube
