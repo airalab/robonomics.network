@@ -411,4 +411,16 @@ export default {
       padding: 0 var(--space);
     }
   }
+
+  @media screen and (max-width: 480px) {
+    .cases-filter {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .cases-filter__option:first-of-type {
+      margin-bottom: var(--space);
+    }
+  }
 </style>

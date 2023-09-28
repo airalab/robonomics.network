@@ -19,6 +19,7 @@
         </div>
         <div class="papers__banner-img">
           <g-image aria-hidden="true" src="~/assets/images/papers/papers-banner-img.png"/>
+          <g-image class="mobile" aria-hidden="true" src="~/assets/images/papers/papers-banner-img-mobile.png"/>
         </div>
       </div>
       </section>
@@ -117,7 +118,8 @@
     width: 100%;
     font-size: calc(var(--base-font-size) * 1.2);
     font-style: italic;
-    font-weight: 500;
+    font-weight: 400;
+    margin-bottom: calc(var(--space) * 2);
   }
 
   .papers__banner-img {
@@ -131,6 +133,10 @@
 
   .papers__banner-img img {
     width: 100%;
+  }
+
+  .papers__banner-img .mobile {
+    display: none;
   }
 
   .papers-pinned {
@@ -228,9 +234,21 @@
       padding-bottom: 0;
     }
 
+    .papers__banner-wrapper {
+      margin-bottom: calc(var(--space) * 2);
+    }
+
     .papers__banner-img {
       position: static;
-      margin-bottom: -14px;
+      margin-bottom: -7px;
+    }
+
+    .papers__banner-img img {
+      display: none;
+    }
+
+    .papers__banner-img .mobile {
+      display: block;
     }
   }
 

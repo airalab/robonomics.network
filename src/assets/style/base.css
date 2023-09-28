@@ -24,13 +24,13 @@ img {
 
 .blog_grid {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space);
 }
 
 @media screen and (max-width: 970px) {
   .blog_grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
