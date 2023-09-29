@@ -17,22 +17,23 @@
           <p>{{ $t("Since ROS was started in 2007, significant changes have taken place in the field of robotics and within the ROS community. As a response to these developments, ROS 2 was introduced with the aim of adapting to these changes. It builds upon the strengths of ROS 1 while addressing its limitations. We've been utilizing ROS in Robonomics from the very beginning, and now it's time for us to migrate to ROS 2.") }}</p>
 
           <div class="case-ros__extra">
-            <span>> {{ $t('You might find this interesting') }}</span>
+            <b>> {{ $t('You might find this interesting') }}</b>
             <p>{{ $t('There are numerous open-source robots and complex robotic platforms that support ROS. This means you can create an impressive multi-robot system to achieve your specific objectives. For') }} <g-link to="https://robots.ros.org/">{{ $t('the most current list of supported robots') }}</g-link>, {{ $t('please visit the ROS website.') }}</p>
           </div>
 
           <div class="case-ros__images">
-            <g-image src="@/assets/images/cases/ros2/1.png" alt="robot"/>
-            <g-image src="@/assets/images/cases/ros2/2.png" alt="robot"/>
-            <g-image src="@/assets/images/cases/ros2/3.png" alt="robot"/>
-            <g-image class="invert" src="@/assets/images/cases/ros2/4.png" alt="robot"/>
+            <g-link to="https://robots.ros.org/irobot-roomba/"><g-image src="@/assets/images/cases/ros2/1.png" alt="robot"/></g-link>
+            <g-link to="https://robots.ros.org/mycobot/"><g-image src="@/assets/images/cases/ros2/2.png" alt="robot"/></g-link>
+            <g-link to="https://minipupperdocs.readthedocs.io/en/latest/index.html"><g-image src="@/assets/images/cases/ros2/3.png" alt="robot"/></g-link>
+            <g-link to="https://robots.ros.org/turtlebot4/"><g-image class="invert" src="@/assets/images/cases/ros2/4.png" alt="robot"/></g-link>
           </div>
 
         </CaseText>
 
         <CaseText
           img="ros2/scheme.svg"
-          imgClasses="invert"
+          imageOutside
+          imgClasses="invert bg"
           :text="$t(`Let's see how ROS is used within the Robonomics framework by picturing the entire system with Robonomics acting as different layers:`)"
           class="mb-small"
         />
@@ -72,7 +73,7 @@
           <p>{{ $t("Robonomics combines Robotics with Web3 technologies, and we aim to grow in these areas. Since the introduction of ROS 2, we've identified three main challenges that involve supporting the ROS 2 community and improving the capabilities of Robonomics:") }}</p>
 
           <ul class="list-simple cases__list cases__list--with-tick">
-            <li class="cases__item cases__item--with-tick"> <b>{{ $t('Creating ROS 2 tools for Rust:') }}</b> {{ $t('These tools empower developers to write ROS 2 applications using Rust. To discover more about why we chose Rust and the significance of this project for us, you can find') }} <g-link to="/blog/ros-2-rust-report-2022/">{{ $t('additional details') }}</g-link></li>
+            <li class="cases__item cases__item--with-tick"> <b>{{ $t('Creating ROS 2 tools for Rust:') }}</b> {{ $t('These tools empower developers to write ROS 2 applications using Rust. To discover more about why we chose Rust and the significance of this project for us, you can find') }} <g-link target="_blank" to="/blog/ros-2-rust-report-2022/">{{ $t('additional details') }}</g-link></li>
             <li class="cases__item cases__item--with-tick"><b>{{$t('Developing Robonomics Middleware for ROS 2:')}}</b> {{ $t('This plays an important role in ensuring seamless integration of Robonomics into various multi-agent robotics systems using ROS 2. It can facilitate the integration of robots into Web 3 blockchain technologies while also reducing errors during the integration process, thereby saving both time and costs.') }}</li>
             <li class="cases__item cases__item--with-tick"><b>{{ $t('Creating a robotics lab with ROS 2:') }}</b> {{$t("As ROS 2 gains popularity in the robotics community, we're eager to see more robots and hardware working with ROS 2. Our goal is to connect them to the Web3 ecosystem using Robonomics.")}}</li>
           </ul>
@@ -117,9 +118,8 @@ export default {
     border: 1px solid var(--color-dark);
   }
 
-  .case-ros__extra span {
+  .case-ros__extra b {
     display: block;
-    font-weight: 500;
     margin-bottom: calc(var(--space) * 0.5)
   }
 
@@ -140,7 +140,7 @@ export default {
     min-width: 50px;
   }
 
-  .case-ros__images img:not(:last-of-type) {
+  .case-ros__images a:not(:last-of-type) {
     margin-right: calc(var(--space) * 1.5);
   }
 
