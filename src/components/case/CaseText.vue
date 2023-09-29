@@ -14,7 +14,7 @@
       </div>
       <g-image :class="imgClasses" immediate v-if="img && !imageOutside && !imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
     </div>
-    <div class="layout__mid layout" v-if="imageOutside && !imageTop">
+    <div class="layout__mid layout img-bottom" v-if="imageOutside && !imageTop">
       <g-image :class="imgClasses" immediate v-if="img && imageOutside && !imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
     </div>
   </div>
@@ -86,6 +86,18 @@ export default {
 
   .dark-theme .case-page__text .invert {
     filter: invert(1);
+  }
+
+  .case-page__text .bg {
+    padding: var(--space);
+    padding-right: 0;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: calc(var(--space) * 0.7);
+  }
+  .img-bottom {
+    padding: 0;
   }
 
 </style>

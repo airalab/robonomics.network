@@ -16,7 +16,7 @@
   done: true
 
 - id: 1
-  title: 'RUST for ROS2'
+  title: 'Robonomics Middleware Framework for ROS 2'
   description: 'One of our goals in developing this case is to turn Robonomics into ROS 2 Middleware.This will allow us to use Robonomics on Substrate to create an dapp that can run ROS 2 right from the browser!'
   path: 'cases/rust-for-ros2'
   cover_image: 'rust-ros2.jpg'
