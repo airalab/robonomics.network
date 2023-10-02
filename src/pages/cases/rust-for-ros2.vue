@@ -22,10 +22,10 @@
           </div>
 
           <div class="case-ros__images">
-            <g-link to="https://robots.ros.org/irobot-roomba/"><g-image src="@/assets/images/cases/ros2/1.png" alt="robot"/></g-link>
-            <g-link to="https://robots.ros.org/mycobot/"><g-image src="@/assets/images/cases/ros2/2.png" alt="robot"/></g-link>
-            <g-link to="https://minipupperdocs.readthedocs.io/en/latest/index.html"><g-image src="@/assets/images/cases/ros2/3.png" alt="robot"/></g-link>
-            <g-link to="https://robots.ros.org/turtlebot4/"><g-image class="invert" src="@/assets/images/cases/ros2/4.png" alt="robot"/></g-link>
+            <g-link to="https://robots.ros.org/irobot-roomba/"><g-image src="@/assets/images/cases/ros2/1.png" alt="" aria-hidden="true"/></g-link>
+            <g-link to="https://robots.ros.org/mycobot/"><g-image src="@/assets/images/cases/ros2/2.png" alt="" aria-hidden="true"/></g-link>
+            <g-link to="https://minipupperdocs.readthedocs.io/en/latest/index.html"><g-image src="@/assets/images/cases/ros2/3.png" alt="" aria-hidden="true"/></g-link>
+            <g-link to="https://robots.ros.org/turtlebot4/"><g-image class="invert" src="@/assets/images/cases/ros2/4.png" alt="" aria-hidden="true"/></g-link>
           </div>
 
         </CaseText>
@@ -34,6 +34,7 @@
           img="ros2/scheme.svg"
           imageOutside
           imgClasses="invert bg"
+          imgAlt="How Robonomics works with ROS 2"
           :text="$t(`Let's see how ROS is used within the Robonomics framework by picturing the entire system with Robonomics acting as different layers:`)"
           class="mb-small"
         />
