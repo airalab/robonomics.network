@@ -1,14 +1,14 @@
 <template>
   <div class="spot animated">
-    <g-image class="spot-body" src="~/assets/images/white-paper-2022/animated-pose-1/spot-body.png"/>
-    <g-image class="spot-leg1-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg1-top.png"/>
-    <g-image class="spot-leg1-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg1-bottom.png"/>
-    <g-image class="spot-leg2-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg2-top.png"/>
-    <g-image class="spot-leg2-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg2-bottom.png"/>
-    <g-image class="spot-leg3-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg3-top.png"/>
-    <g-image class="spot-leg3-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg3-bottom.png"/>
-    <g-image class="spot-leg4-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg4-top.png"/>
-    <g-image class="spot-leg4-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg4-bottom.png"/>
+    <g-image quality="75" class="spot-body" src="~/assets/images/white-paper-2022/animated-pose-1/spot-body.png"/>
+    <g-image quality="75" class="spot-leg1-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg1-top.png"/>
+    <g-image quality="75" class="spot-leg1-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg1-bottom.png"/>
+    <g-image quality="75" class="spot-leg2-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg2-top.png"/>
+    <g-image quality="75" class="spot-leg2-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg2-bottom.png"/>
+    <g-image quality="75" class="spot-leg3-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg3-top.png"/>
+    <g-image quality="75" class="spot-leg3-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg3-bottom.png"/>
+    <g-image quality="75" class="spot-leg4-top" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg4-top.png"/>
+    <g-image quality="75" class="spot-leg4-bottom" src="~/assets/images/white-paper-2022/animated-pose-1/spot-leg4-bottom.png"/>
   </div>
 </template>
 

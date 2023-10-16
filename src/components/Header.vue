@@ -4,8 +4,8 @@
         <div class="header-content" dir="ltr">
           <div class="header-logo">
             <g-link to="/">
-              <g-image class="hideMobile" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo-solid.svg"/>
-              <g-image class="hideDesktop" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg"/>
+              <g-image class="hideMobile" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo-solid.svg" quality="75" />
+              <g-image class="hideDesktop" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" quality="75" />
             </g-link>
           </div>
 

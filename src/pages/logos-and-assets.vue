@@ -15,7 +15,7 @@
         <div class="logos-and-assets__wrapper grid-3 animate-inside" v-in-viewport.once>
           <a href="/logos/Robonomics-logos.zip" class="logos-and-usage__link-download oldy dark oldy__link" download>
             <div class="logos-and-usage__img">
-              <g-image aria-hidden="true" src="~/assets/images/logos/logo_robonomics_network_color.png" />
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/logos/logo_robonomics_network_color.png" />
             </div>
             <div class="logos-and-usage__download">
               <span>{{$t('Download Robonomics logo')}}</span>
@@ -23,7 +23,7 @@
           </a>
           <a href="/logos/RWS-logos.zip" class="logos-and-usage__link-download oldy dark oldy__link" download>
             <div class="logos-and-usage__img">
-              <g-image aria-hidden="true" src="~/assets/images/logos/logo_robonomics_web_services.png" />
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/logos/logo_robonomics_web_services.png" />
             </div>
             <div class="logos-and-usage__download">
               <span>{{$t('Download RWS logo')}}</span>
@@ -31,7 +31,7 @@
           </a>
           <a href="/logos/Robonomics-wiki.zip" class="logos-and-usage__link-download oldy dark oldy__link" download>
             <div class="logos-and-usage__img">
-              <g-image aria-hidden="true" src="~/assets/images/logos/logo_robonomics_wiki_black.png" />
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/logos/logo_robonomics_wiki_black.png" />
             </div>
             <div class="logos-and-usage__download">
               <span>{{$t('Download wiki logo')}}</span>

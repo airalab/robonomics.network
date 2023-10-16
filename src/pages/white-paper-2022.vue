@@ -14,13 +14,13 @@
           <h1>{{$t(`Robonomics whitepaper 2022 welcome guide`)}}</h1>
 
         <div class="small-colony">
-          <g-image src="~/assets/images/white-paper-2022/small-colony.svg"  alt="small-colone"/>
+          <g-image quality="75" src="~/assets/images/white-paper-2022/small-colony.svg"  alt="small-colone"/>
         </div>
         <div class="big-colony">
-          <g-image src="~/assets/images/white-paper-2022/big-colony.svg"  alt="big-colone"/>
+          <g-image quality="75" src="~/assets/images/white-paper-2022/big-colony.svg"  alt="big-colone"/>
         </div>
         <div class="bushes">
-          <g-image src="~/assets/images/white-paper-2022/bushes.svg"  alt="bushes"/>
+          <g-image quality="75" src="~/assets/images/white-paper-2022/bushes.svg"  alt="bushes"/>
         </div>
 
         <div class="astronaut">
@@ -31,7 +31,7 @@
               </svg>
             </div>
             <div data-depth="0.2" class="parallax-astronaut__wrapper">
-              <g-image src="~/assets/images/white-paper-2022/astronaut.svg"  alt="astronaut"/>
+              <g-image quality="75" src="~/assets/images/white-paper-2022/astronaut.svg"  alt="astronaut"/>
             </div>
           </div>
         </div>
@@ -56,24 +56,24 @@
             </svg>
           </div>
           <div class="small-robot">
-            <g-image src="~/assets/images/white-paper-2022/small-robot.svg"  alt="small-robot"/>
+            <g-image quality="75" src="~/assets/images/white-paper-2022/small-robot.svg"  alt="small-robot"/>
           </div>
           <div class="small-robot-wheels">
-            <g-image class="small-robot-wheel" aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" />
-            <g-image class="small-robot-wheel"  aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" />
-            <g-image class="small-robot-wheel" aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" />
+            <g-image quality="75" class="small-robot-wheel" aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" alt="" />
+            <g-image quality="75" class="small-robot-wheel"  aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" alt="" />
+            <g-image quality="75" class="small-robot-wheel" aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" alt="" />
           </div>
         </div>
 
         <div class="logos">
           <div class="polkadot"> 
-            <g-image src="~/assets/images/white-paper-2022/polkadot.svg"  alt="polkadot"/>
+            <g-image quality="75" src="~/assets/images/white-paper-2022/polkadot.svg"  alt="polkadot"/>
           </div>
           <div class="kusama">
-            <g-image src="~/assets/images/white-paper-2022/crow.svg"  alt="kusama"/>
+            <g-image quality="75" src="~/assets/images/white-paper-2022/crow.svg"  alt="kusama"/>
           </div>
           <div class="ethereum">
-            <g-image src="~/assets/images/white-paper-2022/ethereum.svg"  alt="ethereum"/>
+            <g-image quality="75" src="~/assets/images/white-paper-2022/ethereum.svg"  alt="ethereum"/>
           </div>
         </div>
       </section>
@@ -131,16 +131,16 @@
           <div class="first-chapter__images chapter__images">
             <div class="first-chapter__images--top">
               <div class="first-chapter__images-wrapper">
-                <g-image class="industry" src="~/assets/images/white-paper-2022/indusrty.svg" alt="industry" />
+                <g-image quality="75" class="industry" src="~/assets/images/white-paper-2022/indusrty.svg" alt="industry" />
                 <div class="bitcoin__wrapper">
                   <div class="coin-animation bitcoin"></div>
                 </div>
-                <g-image src="~/assets/images/white-paper-2022/ethereum-color.svg" alt="ethereum" />
-                <g-image src="~/assets/images/white-paper-2022/polkadot-color.svg" alt="polkadot" />
+                <g-image quality="75" src="~/assets/images/white-paper-2022/ethereum-color.svg" alt="ethereum" />
+                <g-image quality="75" src="~/assets/images/white-paper-2022/polkadot-color.svg" alt="polkadot" />
               </div>
             </div>
             <div class="first-chapter__images--bottom">
-              <g-image src="~/assets/images/white-paper-2022/scientists.svg" alt="industry" />
+              <g-image quality="75" src="~/assets/images/white-paper-2022/scientists.svg" alt="industry" />
             </div>
           </div>
         </div>
@@ -206,50 +206,50 @@
           </div>
           <div class="second-chapter__images chapter__images">
             <div class="scheme-image">
-              <g-image src="~/assets/images/white-paper-2022/scheme.svg" aria-hidden="true" alt="schema" />
+              <g-image quality="75" src="~/assets/images/white-paper-2022/scheme.svg" aria-hidden="true" alt="schema" />
             </div>
             <div class="glushkov">
-              <g-image src="~/assets/images/white-paper-2022/glushkov.svg"/>
+              <g-image quality="75" aria-hidden="true" src="~/assets/images/white-paper-2022/glushkov.svg" alt="" />
             </div>
             <div class="people-with-coin">
-              <g-image src="~/assets/images/white-paper-2022/people-with-coins.svg"/>
+              <g-image  quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/people-with-coins.svg"/>
             </div>
             <div class="console first">
-              <g-image src="~/assets/images/white-paper-2022/console.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/console.svg"/>
             </div>
             <div class="console second">
-              <g-image src="~/assets/images/white-paper-2022/console.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/console.svg"/>
             </div>
             <div class="robot-with-coin">
-              <g-image src="~/assets/images/white-paper-2022/robot-with-coin.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/robot-with-coin.svg"/>
             </div>
             <div class="person-with-coin">
-              <g-image src="~/assets/images/white-paper-2022/person-with-coin.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/person-with-coin.svg"/>
             </div>
             <div class="smart-contract first">
-              <g-image src="~/assets/images/white-paper-2022/smart-contract.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/smart-contract.svg"/>
             </div>
             <div class="smart-contract second">
-              <g-image src="~/assets/images/white-paper-2022/smart-contract.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/smart-contract.svg"/>
             </div>
             <div class="white-column-for-robot">
-              <g-image src="~/assets/images/white-paper-2022/white-column-for-robot.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-column-for-robot.svg"/>
             </div>
             <div class="coin-animation coin"></div>
             <div class="white-column-for-coin">
-              <g-image src="~/assets/images/white-paper-2022/white-column-for-coin.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-column-for-coin.svg"/>
             </div>
             <div class="white-drone">
-              <g-image src="~/assets/images/white-paper-2022/white-drone.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-drone.svg"/>
             </div>
             <div class="white-round-robot">
-              <g-image src="~/assets/images/white-paper-2022/white-round-robot.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-round-robot.svg"/>
             </div>
             <div class="white-small-column">
-              <g-image src="~/assets/images/white-paper-2022/white-small-column.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-small-column.svg"/>
             </div>
             <div class="white-tower">
-              <g-image src="~/assets/images/white-paper-2022/white-tower.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-tower.svg"/>
             </div>
             <div class="wp__decortext">
               $ robonomics io<br/>
@@ -274,11 +274,11 @@
             {{$t(`We continue to update the white paper of Robonomics`)}}, <br/> {{$t(`stay tuned for new parts on our website and in Discord`)}}. 
           </p>
           <rbnet-button class="wp__button" color="violet" :link="$static.metadata.discord">
-            <g-image class="button-icon" aria-hidden="true" src="~/assets/images/white-paper-2022/discord.svg" />
+            <g-image quality="75" class="button-icon" alt="" aria-hidden="true" src="~/assets/images/white-paper-2022/discord.svg" />
             {{$t(`Join our discord`)}}
           </rbnet-button>
           <div class="elegant-robot">
-            <g-image aria-hidden="true" src="~/assets/images/white-paper-2022/elegant-robot.svg" />
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/elegant-robot.svg" />
           </div>
         </div>
       </section>

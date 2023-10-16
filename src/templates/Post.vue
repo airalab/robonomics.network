@@ -10,13 +10,13 @@
 
     <g-link to="/blog/" class="small-banner section__blue">
       <h3>{{$t('Important news and announcements')}}</h3>
-      <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
+      <g-image quality="75" alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
     </g-link>
 
     <hr/>
 
     <div class="post__header animate-inside" v-in-viewport.once>
-        <g-image :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
+        <g-image  quality="75" :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
     </div>
 
     <div class="layout__title blog_title">

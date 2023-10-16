@@ -19,7 +19,7 @@
               <div id="confetti-container">
                 <p>Status:</p>
                 <p>сampaign for renewal of slot<br/> is in progress</p>
-                <g-image id="confetti" src="~/assets/images/confetti.png" aria-hidden="true" />
+                <g-image id="confetti" src="~/assets/images/confetti.png" quality="75" aria-hidden="true" alt=""  />
               </div>
            </section>
 
@@ -37,7 +37,7 @@
 
        <section>
         <div class="sec-i-t content layout">
-          <g-image alt="Robonomics dapp smart home" src="~/assets/images/dapp-smart-devices.png" />
+          <g-image quality="75" alt="Robonomics dapp smart home" src="~/assets/images/dapp-smart-devices.png" />
           <article>
             <h3>Decentralized cloud for IoT, updates for wiki, courses for Academy</h3>
             <p>Our plans for 2023 include the active development around the idea of a decentralized cloud for the control of home IoT infrastructure. Now we are working to ensure that our <g-link to="https://dapp.robonomics.network/">decentralized application</g-link>, <g-link to="https://wiki.robonomics.network">wiki</g-link> project and our educational resource, the <g-link to="https://robonomics.academy/">Robonomics Academy</g-link>, have all the necessary functions and information for IoT infrastructure owners.</p>
@@ -47,8 +47,8 @@
 
        <section id="formula">
         <div class="content layout layout__text text-cite-big">
-          <g-image class="theme-support-light" src="~/assets/images/crowdloan-formula.png" aria-hidden="true" />
-          <g-image class="theme-support-dark" src="~/assets/images/crowdloan-formula-light.png" aria-hidden="true" />
+          <g-image class="theme-support-light" src="~/assets/images/crowdloan-formula.png" quality="75" aria-hidden="true" alt=""  />
+          <g-image class="theme-support-dark" src="~/assets/images/crowdloan-formula-light.png" quality="75" aria-hidden="true" alt=""  />
           <p>For developers of the Robonomics parachain, finding an option to autonomize the life of the parachain is an important part of building a decentralized cloud for IoT. This year, for the first time, we are trying to launch a crowdloan campaign on behalf of the parachain itself.</p>
           <p><g-link to="/blog/robonomics-crowdloan-campaigns-november-2022/">Read more</g-link></p>
         </div>

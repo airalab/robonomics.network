@@ -33,23 +33,23 @@
       </div>
 
       <g-link to="https://robonomics.threadless.com/" class="shop-circle shop-circle-1">
-        <g-image src="@/assets/images/shop-circle-1.png" alt="product"/>
+        <g-image quality="75" src="@/assets/images/shop-circle-1.png" alt="product"/>
       </g-link>
 
       <g-link  to="https://robonomics.threadless.com/" class="shop-circle shop-circle-2">
-        <g-image src="@/assets/images/shop-circle-2.png" alt="product"/>
+        <g-image quality="75" src="@/assets/images/shop-circle-2.png" alt="product"/>
       </g-link>
 
       <div class="shop-printdirect">
         <div class="shop-printdirect__map">
-          <g-image src="@/assets/images/shop-map.svg" aria-hidden="true" alt="map"/>
+          <g-image quality="75" src="@/assets/images/shop-map.svg" aria-hidden="true" alt="map"/>
         </div>
         <g-link to="https://robonomics.printdirect.ru" class="shop-printdirect__circle">
-          <g-image src="@/assets/images/shop-printdirect.svg"  alt="printdirect"/>
+          <g-image quality="75" src="@/assets/images/shop-printdirect.svg"  alt="printdirect"/>
           <span>для заказов <br/> на&nbsp;территории России</span>
         </g-link>
         <div class="shop-printdirect__arrow">
-          <g-image src="@/assets/images/shop-arrow.svg" aria-hidden="true" alt="map"/>
+          <g-image quality="75" src="@/assets/images/shop-arrow.svg" aria-hidden="true" alt="map"/>
           <span>{{ $t('alternative shop') }}</span>
         </div>
       </div>
