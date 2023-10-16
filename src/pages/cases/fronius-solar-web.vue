@@ -39,12 +39,12 @@
           class="mb"
         >
           <p>{{$t('Thus, armed with data on energy consumption, solar panel production, and the Cyprus coefficient, it becomes effortless to determine the number of tokens required for carbon footprint offset.')}}</p><p>{{$t('To achieve this, we incorporated a Raspberry Pi, configured Home Assistant to collect analytical data, and developed an integration for compensating the footprint. The Home Assistant energy dashboard showcases the following details:')}}</p>
-          <g-image  src="@/assets/images/cases/fronius-solar-web/fsw-5.png" alt="image"/>
+          <g-image quality="75" src="@/assets/images/cases/fronius-solar-web/fsw-5.png" alt="The Home Assistant energy dashboard"/>
         </CaseText>
 
         <div class="layout__text">
           <p class="mb-none">{{$t('Furthermore, our integration enhances the system by offering a convenient control panel to view statistics and trigger compensation:')}}</p>
-          <g-image class="mt" src="@/assets/images/cases/fronius-solar-web/fsw-6.png" alt="statistics"/>
+          <g-image quality="75" class="mt" src="@/assets/images/cases/fronius-solar-web/fsw-6.png" alt="statistics"/>
           <p class="mt mb">{{$t('Below is an illustrative example of how carbon footprint offsetting occurs through our integration. Upon successful completion, the')}} <g-link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.ipci.io#/explorer/query/0xfc8cea3514805f8f170ab0a06e7787f86659197d607ddfde23e879efd105d737">{{$t('transaction')}}</g-link> {{$t('unfolds as follows:')}}</p>
 
           <Youtube

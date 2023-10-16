@@ -15,7 +15,7 @@
 
       <section class="section">
         <div class="layout layout__text animate-inside grid-2" v-in-viewport.once>
-          <g-image alt="" src="~/assets/images/person-norbert-wiener.png" />
+          <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/person-norbert-wiener.png" />
           <div class="hyphens">
             <p>&laquo;{{$t('Let us remember that the automatic machine is the precise economic equivalent of slave labor. Any labor which competes with slave labor must accept the economic consequences of slave labor.')}}&raquo;</p>
             <p>― {{$t('Norbert Wiener')}}, {{$t('cybernetics')}}</p>
@@ -25,7 +25,7 @@
 
       <section class="section__solid section__lightblue">
         <div class="layout layout__text grid-2 middle animate-inside" v-in-viewport.once>
-          <g-image alt="" src="~/assets/images/robots-handshaking.png" />
+          <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/robots-handshaking.png" />
           <div class="hyphens text-big">
             <p>{{$t('Robots are like grown-up children today – they already can manage money, and enter into legal relations, be independent.')}}</p>
             <p>{{$t('The future of humanity itself depends on how we teach robots to handle their capabilities.')}}</p>
@@ -51,19 +51,19 @@
           <h2 class="animate" v-in-viewport.once>{{$t('Robonomics tools')}}</h2>
           <div class="introTools grid-4 animate-inside" v-in-viewport.once>
             <div>
-              <g-image alt="" src="~/assets/images/robots-digitalTwins.png" />
+              <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/robots-digitalTwins.png" />
               <h5 v-html="$t('Operate with digital twins of IoT devices')" />
             </div>
             <div>
-              <g-image alt="" src="~/assets/images/robots-smartContract.png" />
+              <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/robots-smartContract.png" />
               <h5 v-html="$t('The first tools of the robot economy: money for robots, contracts for robots')" />
             </div>
             <div>
-              <g-image alt="" src="~/assets/images/robots-cloud.png" />
+              <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/robots-cloud.png" />
               <h5 v-html="$t('Software for connecting devices to a decentralized cloud')" />
             </div>
             <div>
-              <g-image alt="" src="~/assets/images/robots-console.png" />
+              <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/robots-console.png" />
               <h5 v-html="$t('API library for custom IoT applications')" />
             </div>
           </div>
@@ -72,16 +72,16 @@
         <div class="layout layout__text hyphens">
           <p class="animate" v-in-viewport.once>{{$t('Robonomics contains a complete set of tools for developing IoT applications, both on the robotics and the user interface sides. Communication between the user and device happens using the most successful technologies from the Web3 world – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure applications for Smart Cities and Industry 4.0.')}}</p>
           <div class="introLogos animate-inside-fast" v-in-viewport.once>
-            <g-image alt="Rust" src="~/assets/images/logos/rust.png" />
-            <g-image alt="Python" src="~/assets/images/logos/python.svg" />
-            <g-image alt="Haskell" src="~/assets/images/logos/haskell.png" />
-            <g-image alt="JavaScript" src="~/assets/images/logos/JavaScript.svg" />
-            <g-image alt="ROS" src="~/assets/images/logos/ros.svg" />
-            <g-image alt="NixOS" src="~/assets/images/logos/nixos.png" />
-            <g-image alt="IPFS" src="~/assets/images/logos/IPFS.png" />
-            <g-image alt="Ethereum" src="~/assets/images/logos/ethereum.svg" />
-            <g-image alt="Polkadot" src="~/assets/images/logos/polkadot.svg" />
-            <g-image alt="AIRA" src="~/assets/images/logos/aira.svg" />
+            <g-image quality="75" alt="Rust" src="~/assets/images/logos/rust.png" />
+            <g-image quality="75" alt="Python" src="~/assets/images/logos/python.svg" />
+            <g-image quality="75" alt="Haskell" src="~/assets/images/logos/haskell.png" />
+            <g-image quality="75" alt="JavaScript" src="~/assets/images/logos/JavaScript.svg" />
+            <g-image quality="75" alt="ROS" src="~/assets/images/logos/ros.svg" />
+            <g-image quality="75" alt="NixOS" src="~/assets/images/logos/nixos.png" />
+            <g-image quality="75" alt="IPFS" src="~/assets/images/logos/IPFS.png" />
+            <g-image quality="75" alt="Ethereum" src="~/assets/images/logos/ethereum.svg" />
+            <g-image quality="75" alt="Polkadot" src="~/assets/images/logos/polkadot.svg" />
+            <g-image quality="75" alt="AIRA" src="~/assets/images/logos/aira.svg" />
           </div>
         </div>
       </section>
@@ -98,19 +98,19 @@
 
             <div class="introTools grid-3 animate-inside" v-in-viewport.once>
               <div>
-                <g-image alt="" src="~/assets/images/robots-sensor.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/robots-sensor.png" />
                 <h5>
                   <g-link to="https://wiki.robonomics.network/docs/connect-sensor-to-robonomics/">{{$t('Connect a sensor')}}</g-link> {{$t('to the Robonomics network')}}
                 </h5>
               </div>
               <div>
-                <g-image alt="" src="~/assets/images/robonomics-io.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/robonomics-io.png" />
                 <h5>
                   {{$t('Try')}} <g-link to="https://wiki.robonomics.network/docs/rio-overview/">{{$t('Robonomics IO')}}</g-link> – {{$t('a simple prototyping tool')}}
                 </h5>
               </div>
               <div>
-                <g-image alt="" src="~/assets/images/robots-aira.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/robots-aira.png" />
                 <h5>
                   {{$t('Start building your own cyber physical system with')}} <g-link to="https://wiki.robonomics.network/docs/aira-installation-on-vb/">{{$t('Aira OS')}}</g-link>
                 </h5>
@@ -129,7 +129,7 @@
         <div class="layout layout__text animate-inside" v-in-viewport.once>
           <div class="grid-2 middle">
             <p class="hyphens text-big">{{$t('Platform users can connect ROS-compatible robots to digital economy in a matter of minutes. For a complete list of supported robots, please follow the link')}}: <g-link to="https://robots.ros.org/">https://robots.ros.org/</g-link></p>
-            <g-link to="https://robots.ros.org/"><g-image alt="" src="/ros-website.gif" /></g-link>
+            <g-link to="https://robots.ros.org/"><g-image quality="75" aria-hidden="true" src="/ros-website.gif" /></g-link>
           </div>
         </div>
       </section>
@@ -149,25 +149,25 @@
               <div class="item">
                 {{$t('IoT Device')}}
                 <div class="img" aria-hidden="true">
-                  <g-image src="~/assets/images/schemeRwsPlace-1.png"/>
+                  <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/schemeRwsPlace-1.png"/>
                 </div>
               </div>
               <div class="item">
                 {{$t('Robonomics Connectivity')}}
                 <div class="img" aria-hidden="true">
-                  <g-image src="~/assets/images/schemeRwsPlace-2.png"/>
+                  <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/schemeRwsPlace-2.png"/>
                 </div>
               </div>
               <div class="item highlight">
                 {{$t('Robonomics web services (RWS)')}}
                 <div class="img" aria-hidden="true">
-                  <g-image src="~/assets/images/schemeRwsPlace-3.png"/>
+                  <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/schemeRwsPlace-3.png"/>
                 </div>
               </div>
               <div class="item">
                 {{$t('Robonomics dapp')}}
                 <div class="img" aria-hidden="true">
-                  <g-image src="~/assets/images/schemeRwsPlace-4.png"/>
+                  <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/schemeRwsPlace-4.png"/>
                 </div>
               </div>
               <div class="item core">{{$t('economy of robots')}}</div>
@@ -184,7 +184,7 @@
           <div class="introRwsFeature grid-3 animate-inside" v-in-viewport.once>
             <div>
               <div class="img" aria-hidden="true">
-                  <g-image src="~/assets/images/intro-rwsFeature-1.png"/>
+                  <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/intro-rwsFeature-1.png"/>
               </div>
               <h5>{{$t('RWS PubSub Message Broker')}}</h5>
               {{$t('Use unlimited messaging over a p2p network based on IPFS protocol')}}
@@ -192,7 +192,7 @@
 
             <div>
               <div class="img" aria-hidden="true">
-                  <g-image src="~/assets/images/intro-rwsFeature-2.png"/>
+                  <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/intro-rwsFeature-2.png"/>
               </div>
               <h5>{{$t('RWS Data Blockchainization Service')}}</h5>
               {{$t('Put data into IPFS and store hashes in a public Blockchain')}}
@@ -200,7 +200,7 @@
 
             <div>
               <div class="img" aria-hidden="true">
-                  <g-image src="~/assets/images/intro-rwsFeature-3.png"/>
+                  <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/intro-rwsFeature-3.png"/>
               </div>
               <h5>{{$t('RWS Robot Actions')}}</h5>
               {{$t('Switch on / off; launch or stop your IoT devices under the control of a decentralized computer')}}
@@ -217,7 +217,7 @@
           <p>{{$t('Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.')}}</p>
         </div>
         <section class="layout layout__content img" aria-hidden="true">
-            <g-image src="~/assets/images/digitalTwins.png"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/digitalTwins.png"/>
         </section>
       </section>
       <hr class="no-margins"/>
@@ -228,24 +228,24 @@
 
             <g-link class="marketplace animate-inside" v-in-viewport.once to="https://dapp.robonomics.network/#/services">
               <div class="item">
-                <g-image src="~/assets/images/services-sensorsMap.png"/>
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/services-sensorsMap.png"/>
                 Global IoT sensors network
               </div>
 
               <div class="item">
-                <g-image src="~/assets/images/services-FujiWeather.png"/>
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/services-FujiWeather.png"/>
                 Get the weather on Fuji demo
               </div>
 
               <div class="item">
-                <g-image src="~/assets/images/services-dronePassport.png"/>
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/services-dronePassport.png"/>
                 Drone passport registration
               </div>
             </g-link>
 
             <g-link class="marketplace-add" to="https://dapp.robonomics.network/#/">+</g-link>
 
-            <g-image src="~/assets/images/person-manSitting.png"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/person-manSitting.png"/>
           </div>
           <div class="hyphens animate-inside" v-in-viewport.once>
             <h2>{{$t('App Store for Robotics - Robonomics Marketplace')}}</h2>

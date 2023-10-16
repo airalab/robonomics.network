@@ -2,7 +2,7 @@
   <li class="e-books__item">
 
     <g-link class="e-books__img" :to="book.options[0].link">
-      <g-image :src="require('!!assets-loader!~/assets/images/'+book.img)"/>
+      <g-image :src="require('!!assets-loader!~/assets/images/'+book.img)" quality="75"/>
     </g-link>
 
     <div class="e-books__content">

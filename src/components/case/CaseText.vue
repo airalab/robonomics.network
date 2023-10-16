@@ -1,10 +1,10 @@
 <template>
   <div class="case-page__text">
     <div class="layout__mid img-top" v-if="img && imageOutside">
-      <g-image :class="imgClasses" immediate v-if="img && imageOutside && imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
+      <g-image quality="75" :class="imgClasses" v-if="img && imageOutside && imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
     </div>
     <div class="case-page__text-container layout__text">
-      <g-image :class="imgClasses" immediate v-if="img && !imageOutside && imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
+      <g-image quality="75"  :class="imgClasses" v-if="img && !imageOutside && imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
 
       <h2 v-if="title && !subtitle">{{title}}</h2>
       <h4 v-if="title && subtitle">{{title}}</h4>
@@ -12,10 +12,10 @@
       <div class="case-page__text-wrapper" v-else>
         <slot/>
       </div>
-      <g-image :class="imgClasses" immediate v-if="img && !imageOutside && !imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
+      <g-image quality="75"  :class="imgClasses"  v-if="img && !imageOutside && !imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
     </div>
     <div class="layout__mid layout img-bottom" v-if="imageOutside && !imageTop">
-      <g-image :class="imgClasses" immediate v-if="img && imageOutside && !imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
+      <g-image quality="75" :class="imgClasses" v-if="img && imageOutside && !imageTop" :src="require(`!!assets-loader!@/assets/images/cases/${img}`)" :alt="imgAlt" />
     </div>
   </div>
 </template>

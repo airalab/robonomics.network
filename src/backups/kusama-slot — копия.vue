@@ -47,7 +47,7 @@
              </div>
            </div>
 
-           <g-image id="info-girl" aria-hidden="true" alt="" src="~/assets/images/kusama-cosmogirl-sitting.png" />
+           <g-image id="info-girl" aria-hidden="true" alt="" src="~/assets/images/kusama-cosmogirl-sitting.png" quality="75" />
 
          </div>
          

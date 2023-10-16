@@ -31,7 +31,7 @@
           <p v-else v-html="introText"></p>
         </div>
       </div>
-      <img v-if="introImg" :src="require(`../../assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
+      <g-image quality="75"  v-if="introImg" :src="require(`../../assets/images/cases/${introImg}`)" :alt="caseRD[0].title" />
     </section>
 
   </div>

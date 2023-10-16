@@ -5,7 +5,7 @@
           <h1>{{$t('Important news &amp; announcements')}}</h1>
           <div class="blog-banner__wrapper">
             <div class="blog-banner__img">
-              <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
+              <g-image quality="75" alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
             </div>
             <div class="blog-banner__tags-wrapper" v-show="tags.length">
               <ul class="list blog-banner__tags-list animate-inside-fast" v-in-viewport.once>

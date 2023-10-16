@@ -1,14 +1,14 @@
 <template>
   <a v-if="!hidden" :href="item.link" class="wallpapers__link oldy dark oldy__link" download>
     <div class="wallpapers__img">
-      <g-image alt="wallpaper" :src="item.link" />
+      <g-image quality="75" alt="wallpaper" :src="item.link" />
     </div>
     <h3>{{ $t(item.text) }}</h3>
   </a>
   <div v-else class="oldy dark oldy__link">
     <a :href="item.link" class="wallpapers__link" download>
       <div class="wallpapers__img">
-        <g-image alt="wallpaper" :src="item.link" />
+        <g-image quality="75" alt="wallpaper" :src="item.link" />
       </div>
       <h3>{{ $t(item.text) }}</h3>
     </a>

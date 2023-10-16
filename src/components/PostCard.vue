@@ -1,10 +1,10 @@
 <template>
   <div class="post-card" :class="{'post-card--case': isCase}">
     <div class="post-card__header" v-if="!isCase">
-      <g-image :alt="post.title" v-if="post.cover_image" class="post-card__image" :src="post.cover_image"/>
+      <g-image :alt="post.title" v-if="post.cover_image" class="post-card__image" :src="post.cover_image" quality="75" />
     </div>
     <g-link :to="post.done ? post.path : '/cases/'" v-if="isCase">
-      <g-image :alt="post.title" v-if="isCase && post.cover_image" class="post-card__image" :src="require(`!!assets-loader!@/assets/images/cases/${post.cover_image}`)"/>
+      <g-image :alt="post.title" v-if="isCase && post.cover_image" class="post-card__image" :src="require(`!!assets-loader!@/assets/images/cases/${post.cover_image}`)" quality="75" />
     </g-link>
     <div class="post-card__content">
       <g-link :to="post.done ? post.path : '/cases/'" v-if="isCase">

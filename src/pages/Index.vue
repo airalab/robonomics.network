@@ -22,13 +22,13 @@
           <svg aria-hidden="true" class="banner-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.2 55.2" style="enable-background:new 0 0 55.2 55.2;" xml:space="preserve"><g><circle class="st0" cx="27.6" cy="27.6" r="27.1"/><g><g><line class="st0" x1="39.9" y1="34.8" x2="28" y2="14.2"/><line class="st0" x1="15.7" y1="35.6" x2="39.4" y2="35.6"/><line class="st0" x1="27.1" y1="14.2" x2="15.1" y2="34.7"/><polygon class="st0" points="27.5,21 21.3,31.8 33.8,31.8"/><polygon class="st0" points="27.5,28.5 21.3,31.8 33.8,31.8"/><circle class="st0" cx="14.7" cy="35.6" r="0.9"/><circle class="st0" cx="40.4" cy="35.6" r="0.9"/><path class="st0" d="M28.4,13.4c0,0.3-0.2,0.6-0.5,0.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9S28.4,12.9,28.4,13.4z"/><line class="st0" x1="27.5" y1="21.1" x2="27.5" y2="28.5"/></g></g></g></svg>
 
           <div class="banner__images banner__images--left" aria-hidden="true">
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/circle.svg" />
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/crystal.svg" />
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/painting.svg" />
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/robot-1.svg" />
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/robots-2.svg" />
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/text.svg" />
-            <g-image immediate src="~/assets/images/icons/banner-icons-left/column.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" immediate src="~/assets/images/icons/banner-icons-left/circle.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" immediate src="~/assets/images/icons/banner-icons-left/crystal.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" immediate src="~/assets/images/icons/banner-icons-left/painting.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" immediate src="~/assets/images/icons/banner-icons-left/robot-1.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" immediate src="~/assets/images/icons/banner-icons-left/robots-2.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" immediate src="~/assets/images/icons/banner-icons-left/text.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" immediate src="~/assets/images/icons/banner-icons-left/column.svg" />
           </div>
 
           <div id="yoga-container" aria-hidden="true">
@@ -51,13 +51,13 @@
           </div>
 
           <div class="banner__images banner__images--right" aria-hidden="true">
-            <g-image src="~/assets/images/icons/banner-icons-right/cube.svg" />
-            <g-image src="~/assets/images/icons/banner-icons-right/dron.svg" />
-            <g-image src="~/assets/images/icons/banner-icons-right/factory.svg" />
-            <g-image src="~/assets/images/icons/banner-icons-right/robot-3.svg" />
-            <g-image src="~/assets/images/icons/banner-icons-right/robot-4.svg" />
-            <g-image src="~/assets/images/icons/banner-icons-right/sign.svg" />
-            <g-image src="~/assets/images/icons/banner-icons-right/polkadot.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/icons/banner-icons-right/cube.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/icons/banner-icons-right/dron.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/icons/banner-icons-right/factory.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/icons/banner-icons-right/robot-3.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/icons/banner-icons-right/robot-4.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/icons/banner-icons-right/sign.svg" />
+            <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/icons/banner-icons-right/polkadot.svg" />
           </div>
           
         </div>
@@ -87,7 +87,7 @@
         <section class="index-getstarted layout layout__content grid-4 animate-inside" v-in-viewport.once>
           <g-link class="oldy oldy__link" to="/intro/">
             <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/explore-1.png" />
+              <g-image aria-hidden="true" alt="" src="~/assets/images/explore-1.png" />
             </div>
             <h3>{{$t('Explore Robonomics')}}</h3>
             <p>{{$t('Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more')}}</p>
@@ -95,7 +95,7 @@
 
           <g-link class="oldy oldy__link" to="/xrt">
             <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/explore-2.png" />
+              <g-image alt="" aria-hidden="true" src="~/assets/images/explore-2.png" />
             </div>
             <h3>{{$t('Get XRT')}}</h3>
             <p>{{$t('XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain')}}</p>
@@ -103,7 +103,7 @@
 
           <g-link class="oldy oldy__link" to="https://dapp.robonomics.network/#/">
           <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/explore-3.png" />
+              <g-image aria-hidden="true" alt="" src="~/assets/images/explore-3.png" />
             </div>
             <h3>{{$t('Use a Dapp')}}</h3>
             <p>{{$t('Take a look at the Beta version of decentralized application for managing IoT devices')}}</p>
@@ -111,7 +111,7 @@
 
           <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/">
             <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/explore-4.png" />
+              <g-image aria-hidden="true" alt="" src="~/assets/images/explore-4.png" />
             </div>
             <h3>{{$t('Start building')}}</h3>
             <p>{{$t('Learn Robonomics through tutorials and practically useful experimenting in Robonomics WIKI')}}</p>
@@ -129,7 +129,7 @@
 
           <section class="section layout layout__content animate-inside" v-in-viewport.once>
 
-            <g-image src="~/assets/images/robots-digitalTwins.png" />
+            <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/robots-digitalTwins.png" />
 
             <div class="text-col-1">
               <h3>1. {{$t('IoT device management with a decentralized cloud')}}</h3>
@@ -140,7 +140,7 @@
 
           <section class="section layout layout__content animate-inside" v-in-viewport.once>
 
-            <g-image src="~/assets/images/intro-rwsFeature-3.png" />
+            <g-image aria-hidden="true" alt="" quality="75"  src="~/assets/images/intro-rwsFeature-3.png" />
             
             <div class="text-col-1">
               <h3>2. {{$t('Techno-economic transactions between humans and machines')}}</h3>
@@ -172,27 +172,27 @@
         </div>
         <section class="index-academy layout layout__content grid-3 animate-inside" v-in-viewport.once>
           <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/introduction-course/overview">
-            <g-image aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
+            <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
             <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/academy-1.png" />
+              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-1.png" />
             </div>
             <h3>{{$t('Introduction course')}}</h3>
             <p>{{$t('Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/boston-dynamics-spot/overview">
-            <g-image aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
+            <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
             <div class="img-back spot">
-              <g-image aria-hidden="true" src="~/assets/images/academy-2.png" />
+              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-2.png" />
             </div>
             <h3>{{$t('Boston dynamics spot software developing')}}</h3>
             <p>{{$t('We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/smart-home-course/overview/">
-            <g-image aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
+            <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
             <div class="img-back">
-              <g-image aria-hidden="true" src="~/assets/images/academy-3.png" />
+              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-3.png" />
             </div>
             <h3>{{$t('Sovereign smart home with robonomics and home assistant')}}</h3>
             <p>{{$t('In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.')}}</p>
