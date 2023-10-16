@@ -15,11 +15,11 @@
       <div class="layout layout__mid papers__banner">
         <div class="papers__banner-wrapper">
           <p>{{ $t("Without academic research, the advancement of complex systems that can be integrated into our daily lives may lose its purpose or even pose risks. We must carefully contemplate our direction, objectives, and potential consequences. The spheres where Robonomics operates, specifically Robotics, Economic relations, and Web3 technologies, are worth studying individually, exploring how they can be integrated with each other, and assessing their potential impact on our lives.") }}</p>
-          <g-image aria-hidden="true" src="~/assets/images/papers/papers-text.svg"/>
+          <g-image quality="75" aria-hidden="true" alt=""  src="~/assets/images/papers/papers-text.svg"/>
         </div>
         <div class="papers__banner-img">
-          <g-image aria-hidden="true" src="~/assets/images/papers/papers-banner-img.png"/>
-          <g-image class="mobile" aria-hidden="true" src="~/assets/images/papers/papers-banner-img-mobile.png"/>
+          <g-image quality="75" aria-hidden="true" alt=""  src="~/assets/images/papers/papers-banner-img.png"/>
+          <g-image quality="75" class="mobile" aria-hidden="true" alt=""  src="~/assets/images/papers/papers-banner-img-mobile.png"/>
         </div>
       </div>
       </section>

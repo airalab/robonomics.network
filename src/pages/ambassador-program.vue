@@ -44,7 +44,7 @@
 
                 <section class="layout text-center animate-inside" v-in-viewport.once>
                     <rbnet-button color="violet" link="#steps" anchor>
-                        <img class="button-icon" aria-hidden="true" src="../assets/images/hand-hi.png" />
+                        <img class="button-icon" alt="" aria-hidden="true" src="../assets/images/hand-hi.png" />
                         {{$t('Get your role, ambassador')}}
                     </rbnet-button>
                 </section>
@@ -53,7 +53,7 @@
         </section>
 
         <section id="steps" class="section__solid section__darkgray">
-            <div id="steps-i"><img aria-hidden="true" src="../assets/images/ambassadors.png" /></div>
+            <div id="steps-i"><img aria-hidden="true" alt="" src="../assets/images/ambassadors.png" /></div>
             <div class="layout">
                 <h2>{{$t('How to become an ambassador?')}}</h2>
             </div>
@@ -122,7 +122,7 @@
             <h4>{{$t('Get all our support and visual materials in ambassador’s chat')}}</h4>
             <section class="layout text-center animate-inside" v-in-viewport.once>
                 <rbnet-button color="violet" link="#steps" anchor>
-                    <img class="button-icon" aria-hidden="true" src="../assets/images/hand-hi.png" />
+                    <img class="button-icon" aria-hidden="true" alt="" src="../assets/images/hand-hi.png" />
                     {{$t('Get your role, ambassador')}}
                 </rbnet-button>
             </section>

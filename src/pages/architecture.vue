@@ -15,7 +15,7 @@
             <p class="hyphens">{{$t(`To begin with, we need to make an excursion into the area that is most clearly related to the network connection of automated systems. After that, we will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.`)}}</p>
           </article>
           <div class="bg" aria-hidden="true">
-            <g-image alt="" src="~/assets/images/vision-architecture-background.png"/>
+            <g-image alt="" quality="75" aria-hidden="true" src="~/assets/images/vision-architecture-background.png"/>
           </div>
         </div>
       </section>
@@ -25,7 +25,7 @@
         <div class="vision-fathers-image">
           <h2>{{$t('Overview of the state of the internet of things (IoT)')}}</h2>
 
-          <g-image alt="" src="~/assets/images/person-victor-glushkov.png"/>
+          <g-image alt="" quality="75" aria-hidden="true" src="~/assets/images/person-victor-glushkov.png"/>
         </div>
 
         <article class="hyphens">
@@ -42,7 +42,7 @@
       <section class="architecture-digital-twin layout layout__content animate-inside" v-in-viewport.once>
         <div>
           <h2>{{$t(`New challenges`)}}</h2>
-          <g-image src="~/assets/images/vision-digital-twin.png"/>
+          <g-image alt="" quality="75" aria-hidden="true" src="~/assets/images/vision-digital-twin.png"/>
         </div>
         <article class="hyphens">
           <p>{{$t(`The development and application of the Internet of Things has shown that solving typical problems is not enough. Completely new concepts and principles, based on earlier mistakes and identified shortcomings, have emerged by the present day. This certainly convenient approach of using cloud services turned out to have a number of critical shortcomings related to scalability, privacy, and security. In an effort to solve these problems, it was proposed to bring data processing, logic, and computation closer to the immediate place where they are used. Thus, the concepts of fog and edge computing emerged, with intermediate systems between the cloud and devices taking over some of the cloud's functions. Therefore, the creation of edge systems has become one of the new challenges of building the Internet of Things.`)}}</p>
@@ -57,25 +57,25 @@
       <section class="architecture-iot-classification layout layout__content animate-inside" v-in-viewport.once>
         <div>
           <h2>{{$t(`Classification of IoT devices`)}}</h2>
-          <g-image src="~/assets/images/iot-classification.png"/>
+          <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/iot-classification.png"/>
         </div>
         <div>
           <div>
-            <g-image src="~/assets/images/embedded-systems.png"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/embedded-systems.png"/>
             <div>
               <h3>{{$t(`Embedded iot systems`)}}</h3>
               <p>{{$t(`Such systems have no user interfaces and are typically used at the lowest level of the IoT ecosystems to provide basic functionality. Have to be energy efficient and small. Have limited computing and communication resources. IoT gateways or controllers usually act as signal receivers.`)}}</p>
             </div>
           </div>
           <div>
-            <g-image src="~/assets/images/edge-systems.png"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/edge-systems.png"/>
             <div>
               <h3>{{$t(`Edge-systems: IoT gateways and controllers`)}}</h3>
               <p>{{$t(`These systems act as a link between locally accessible embedded systems and the global Internet. They typically support multiple communication protocols of embedded systems and transfer telemetry from devices to the cloud and control signals backwards. Often these devices are a more sophisticated version of the WiFi router, equipped with a single board computer to perform primary processing of information from devices without leaving the local network.`)}}</p>
             </div>
           </div>
           <div>
-            <g-image src="~/assets/images/autonomous-systems.png"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/autonomous-systems.png"/>
             <div>
               <h3>{{$t(`Autonomous systems`)}}</h3>
               <p>{{$t(`This class includes complex automata (such as Spot from Boston Dynamics), which have a control component on the level of a full computer with a high-performance processor and a large amount of memory. In such cases, the robot is connected to the Internet without additional intermediate solutions (edge-systems). The necessary software for accessing the Internet of Things is installed directly on the computer of the stand-alone system. Data is collected and partially processed locally, then broadcast to the Internet similar to any full-fledged network device.`)}}</p>
@@ -91,7 +91,7 @@
           <div>
             <h3>{{$t(`Internet of Things providers`)}}</h3>
             <article class="hyphens">
-              <g-image src="~/assets/images/iot-providers.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/iot-providers.png"/>
               <p>
                 {{$t(`The main job of IoT providers is providing users with remote access to data and analytics, as well as management of smart devices over the Internet. The main criteria for the quality of the provider is security of operations, stability of connection and availability of the provider from anywhere in the world.`)}}
                 </p>
@@ -101,7 +101,7 @@
           <div>
             <h3>{{$t(`Digital twins are the heart of the internet of things`)}}</h3>
             <article class="hyphens">
-              <g-image src="~/assets/images/digital-twin-small.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/digital-twin-small.png"/>
               <p>{{$t(`Speaking of digital twins, it should be noted that architecturally their implementation is required; as a refusal to give the user direct access to control devices and change their states. Out of the most obvious reasons for rejection are, first, the presence of their own requirements and conditions in the devices just before the launch. Second, if multiple user devices must access a single data source, giving personalized control to each user can be critical. Lastly, it is extremely useful to keep the last actual state of the device available in case it goes out of operation.`)}}</p>
               <p>{{$t(`As a result, we have a separation of the loop of information exchange with the user and the actual generation of actual data by the sensors. To illustrate this principle, below is the process of the user working with an IoT device using a digital twin.`)}}</p>
             </article>
@@ -116,17 +116,17 @@
         <article class="hyphens">
           <h3>{{$t(`IoT data flows in cloud services`)}}</h3>
           <div class="grid-3">
-              <g-image src="~/assets/images/data-flows-1.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/data-flows-1.png"/>
               <div>
                 <p>1.</p>
                 <p>{{$t(`Input values for cloud triggers. For example, the cloud service sends various notifications to the user in the event of a report from a car alarm sensor about a strike.`)}}</p>
               </div>
-              <g-image src="~/assets/images/data-flows-2.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/data-flows-2.png"/>
               <div>
                 <p>2.</p>
                 <p>{{$t(`Output data for complex analytics that cannot be produced at the edge level. For example, when processing video for face recognition in a crowd.`)}}</p>
               </div>
-              <g-image src="~/assets/images/data-flows-3.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/data-flows-3.png"/>
               <div>
                 <p>3.</p>
                 <p>{{$t(`The basis for forming a digital twin of the device in order to create a cast of its state. For example, at the user’s request in the mobile app or on the website.`)}}</p>
@@ -141,17 +141,17 @@
         <article class="hyphens">
           <h3>{{$t(`Popular examples of IoT solutions`)}}</h3>
           <div class="grid-3">
-            <g-image src="~/assets/images/data-flows-4.png"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/data-flows-4.png"/>
             <div>
               <p>1.</p>
               <p>{{$t(`A typical smart home system provides a wide range of options for controlling your living space. With its help you can remotely control the door locks, setting up one-time or regular access to the room as family and friends, and for maintenance or delivery personnel. With numerous sensors and recording devices, the system is able to include video recording when triggering motion sensors, autonomously make decisions to shut off the water supply when a leak is detected in the water system, start a scheduled robot vacuum cleaner, providing a cleaning report to the user app, change the room temperature to the optimal value depending on your schedule.`)}}</p>
             </div>
-            <g-image src="~/assets/images/data-flows-5.png"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/data-flows-5.png"/>
             <div>
               <p>2.</p>
               <p>{{$t(`Smart cars. Providing the car’s onboard electronics with access to mobile Internet, the user gets access to remote control of various car functions directly from his smartphone: opening doors, turning on the air conditioner, controlling the headlights. If such cars are used for carsharing, then you can create an interactive map of the location of cars with their status, the remaining fuel, etc. for the clients of this service.`)}}</p>
             </div>
-            <g-image src="~/assets/images/data-flows-6.png"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/data-flows-6.png"/>
             <div>
               <p>3.</p>
               <p>{{$t(`Smart equipment leasing system. The company installs robotic manipulators on the conveyor line under a contract with payment for the number of operations or for the time of the robot. Manipulators regularly provide a log of operations performed, errors and warnings. The robot’s leasing fee is calculated on the basis of this, as well as the vendor’s predictive maintenance of the robots.`)}}</p>
@@ -212,7 +212,7 @@
           </article>
           <div>
             <div>
-              <g-image  src="~/assets/images/robonomics-logo.png"/>
+              <g-image quality="75" aria-hidden="true"  src="~/assets/images/robonomics-logo.png"/>
               <p>{{$t(`Robonomics is a decentralized cloud for digital twins of IoT devices. Robonomics supports the techno-economic format for communication, as well as providing private applications for users`)}}</p>
             </div>
           </div>
@@ -226,9 +226,9 @@
           <h2>{{$t(`Basic components of Robonomics architecture`)}}</h2>
           <div class="grid-2">
             <div class="grid-3">
-              <g-image src="~/assets/images/vision-basic-components-1.svg"/>
-              <g-image src="~/assets/images/vision-basic-components-2.svg"/>
-              <g-image src="~/assets/images/vision-basic-components-3.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-basic-components-1.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-basic-components-2.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-basic-components-3.svg"/>
               <div>
                 <div><h2>1</h2></div>
                 <p>{{$t(`A human interface to access the system`)}}</p>
@@ -280,7 +280,7 @@
                 <li>{{$t(`The log is transformed into a report for the user and becomes available in his dapp.`)}}</li>
               </ol>
             </div>
-            <g-image src="~/assets/images/vision-simple-representation.svg"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-simple-representation.svg"/>
           </div>
 
         </div>

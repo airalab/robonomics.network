@@ -1,6 +1,6 @@
 <template>
     <g-link v-if="contact" :to="contact.link" class="telegram-item">
-      <g-image :src="require('!!assets-loader!~/assets/images/'+asset[0].img)"/>
+      <g-image quality="75"  :src="require('!!assets-loader!~/assets/images/'+asset[0].img)"/>
       <span>{{ contact.text }}</span>
     </g-link>
 

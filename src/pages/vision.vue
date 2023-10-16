@@ -11,8 +11,8 @@
 
       <section class="vision-banner page-banner section section__solid section__blue">
         <div class="vision-logo" v-in-viewport.once>
-          <g-image class="logo" alt="Robonomics logo" src="~/assets/images/robonomics-logo-color.svg" />
-          <g-image class="earth" alt="Earth" src="~/assets/images/earth.png" />
+          <g-image quality="75" class="logo" alt="Robonomics logo" src="~/assets/images/robonomics-logo-color.svg" />
+          <g-image quality="75" class="earth" alt="Earth" src="~/assets/images/earth.png" />
         </div>
 
         <h1 class="clean">
@@ -25,7 +25,7 @@
         </h1>
 
         <div class="vision-subtitle"><span class="text">{{$t('Robonomics network vision')}}</span></div>
-        <g-image class="vision-city" alt="You'll love the future" src="~/assets/images/city.png" />
+        <g-image quality="75" class="vision-city" alt="You'll love the future" src="~/assets/images/city.png" />
         <div class="vision-decortext left">
           $ robonomics io<br/>
           robonomics-io 0.18.0<br/>
@@ -49,13 +49,13 @@
         </div>
         <div class="vision-iot-pic">
           <div id="parallax-iotapp" aria-hidden="true">
-            <div class="parallax-layer" data-depth="0.2"><g-image id="parallax-iotapp-1" alt="" src="~/assets/images/iot-applications-1.png" /></div>
-            <div class="parallax-layer" data-depth="0.6"><g-image id="parallax-iotapp-2" alt="" src="~/assets/images/iot-applications-2.png" /></div>
-            <div class="parallax-layer" data-depth="0.3"><g-image id="parallax-iotapp-3" alt="" src="~/assets/images/iot-applications-3.png" /></div>
-            <div class="parallax-layer" data-depth="0.5"><g-image id="parallax-iotapp-4" alt="" src="~/assets/images/iot-applications-4.png" /></div>
-            <div class="parallax-layer" data-depth="0.9"><g-image id="parallax-iotapp-5" alt="" src="~/assets/images/iot-applications-5.png" /></div>
-            <div class="parallax-layer" data-depth="0.9"><g-image id="parallax-iotapp-6" alt="" src="~/assets/images/iot-applications-6.png" /></div>
-            <div class="parallax-layer" data-depth="0.9"><g-image id="parallax-iotapp-7" alt="" src="~/assets/images/iot-applications-7.png" /></div>
+            <div class="parallax-layer" data-depth="0.2"><g-image id="parallax-iotapp-1" quality="75" aria-hidden="true" alt=""  src="~/assets/images/iot-applications-1.png" /></div>
+            <div class="parallax-layer" data-depth="0.6"><g-image id="parallax-iotapp-2" quality="75" aria-hidden="true" alt=""  src="~/assets/images/iot-applications-2.png" /></div>
+            <div class="parallax-layer" data-depth="0.3"><g-image id="parallax-iotapp-3" quality="75" aria-hidden="true" alt=""  src="~/assets/images/iot-applications-3.png" /></div>
+            <div class="parallax-layer" data-depth="0.5"><g-image id="parallax-iotapp-4" quality="75" aria-hidden="true" alt=""  src="~/assets/images/iot-applications-4.png" /></div>
+            <div class="parallax-layer" data-depth="0.9"><g-image id="parallax-iotapp-5" quality="75" aria-hidden="true" alt=""  src="~/assets/images/iot-applications-5.png" /></div>
+            <div class="parallax-layer" data-depth="0.9"><g-image id="parallax-iotapp-6" quality="75" aria-hidden="true" alt=""  src="~/assets/images/iot-applications-6.png" /></div>
+            <div class="parallax-layer" data-depth="0.9"><g-image id="parallax-iotapp-7" quality="75" aria-hidden="true" alt=""  src="~/assets/images/iot-applications-7.png" /></div>
           </div>
         </div>
       </section>
@@ -68,8 +68,8 @@
             <p>{{$t(`As a result, today, we already have a hybrid platform for creating futuristic IoT applications that enable interaction with devices under the control of a global decentralized computer.`)}}</p>
           </div>
         </div>
-        <g-link class="vision-beginning-link" to="https://youtu.be/V_3rcP2Duv0"><g-image alt="Youtube video" src="~/assets/images/youtube.png" /></g-link>
-        <g-image aria-hidden="true" class="bg" alt="" src="~/assets/images/wintercoding.png" />
+        <g-link class="vision-beginning-link" to="https://youtu.be/V_3rcP2Duv0"><g-image quality="75" alt="Youtube video" src="~/assets/images/youtube.png" /></g-link>
+        <g-image quality="75" aria-hidden="true" alt=""  class="bg" src="~/assets/images/wintercoding.png" />
       </section>
 
       <section class="vision-cybernetics section__solid animate-inside" v-in-viewport.once>
@@ -80,7 +80,7 @@
             <p class="hyphens">{{$t(`In our articles between 2017 and 2020, we presented the scientific community with many concepts and solutions united around the idea of the robot economy, an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. You can read the scientific articles at`)}} <g-link to="/papers">{{$t(`this link`)}}</g-link>.</p>
             <p class="hyphens">{{$t(`We would like to justify the emergence of the robot economy and explain in general terms why we believe that this concept is the inevitable and obvious answer to the functioning of the large-scale robotic systems of the new industrial revolution.`)}}</p>
           </article>
-          <div class="bg" aria-hidden="true"><g-image alt="" src="~/assets/images/cybernetics-girls.png" /></div>
+          <div class="bg" aria-hidden="true"><g-image quality="75" aria-hidden="true" alt=""  src="~/assets/images/cybernetics-girls.png" /></div>
 
           <MovingNumbers />
         </div>
@@ -92,7 +92,7 @@
           <h2>{{$t(`Move towards the factory of the future`)}}</h2>
           <i>{{$t(`Inspired by Ronald Coase`)}}</i>
           
-          <g-image alt="" src="~/assets/images/person-ronald-coase.png" style="margin-top: 0"/>
+          <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/person-ronald-coase.png" style="margin-top: 0"/>
         </div>
 
         <article class="hyphens">
@@ -115,7 +115,7 @@
         </article>
         <div class="vision-fathers-image">
           <h2>{{$t(`Get rid of transaction costs`)}}</h2>
-          <g-image src="~/assets/images/vision-get-rid.png"/>
+          <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-get-rid.png"/>
         </div>
 
       </section>
@@ -126,7 +126,7 @@
 
         <div class="vision-fathers-image">
           <h2>{{$t(`Our future in smart cities`)}}</h2>
-          <g-image src="~/assets/images/industry-4-0-robonomics.png" />
+          <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industry-4-0-robonomics.png" />
         </div>
 
         <article class="hyphens">
@@ -147,7 +147,7 @@
           <h2>{{$t(`Self-regulating systems`)}}</h2>
           <i>{{$t(`Inspired by Norbert Wiener`)}}</i>
           
-          <g-image alt="" src="~/assets/images/person-norbert-wiener.png" />
+          <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/person-norbert-wiener.png" />
         </div>
 
         <article class="hyphens">
@@ -172,7 +172,7 @@
 
             <div class="industry40">
               <div>
-                <g-image aria-hidden="true" src="~/assets/images/industy-1.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industy-1.png" />
                 <div class="text">
                   <h5>{{$t(`Industry 1.0`)}}</h5>
                   <small>{{$t(`Mechanization:`)}} <br/>{{$t(`replacement of muscle power with steam energy.`)}}</small>
@@ -181,7 +181,7 @@
               </div>
 
               <div>
-                <g-image aria-hidden="true" src="~/assets/images/industy-2.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industy-2.png" />
                 <div class="text">
                   <h5>{{$t(`Industry 2.0`)}}</h5>
                   <small>{{$t(`Electrification:`)}} <br/>{{$t(`introduction of assembly-line production.`)}}</small>
@@ -190,7 +190,7 @@
               </div>
 
               <div>
-                <g-image aria-hidden="true" src="~/assets/images/industy-3.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industy-3.png" />
                 <div class="text">
                   <h5>{{$t(`Industry 3.0`)}}</h5>
                   <small>{{$t(`Automation:`)}} <br/>{{$t(`introduction of automated systems with CNC.`)}}</small>
@@ -199,7 +199,7 @@
               </div>
 
               <div>
-                <g-image aria-hidden="true" src="~/assets/images/industy-4.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industy-4.png" />
                 <div class="text">
                   <h5>{{$t(`Industry 4.0`)}}</h5>
                   <small>{{$t(`Smart production:`)}} <br/>{{$t(`development of cyber physical systems.`)}}</small>
@@ -214,7 +214,7 @@
             <p>{{$t(`In the world of robofirms it turns out to be natural to provide robots with access to social institutions that previously were only needed by humans.`)}}</p>
             <p>{{$t(`Social institutions do not arise because people cannot live without banks, contracts and other instruments of society. They arise only because a person at some point in time stepped onto the path of more complex relations in society and took an important step towards accelerating the surrounding processes.`)}}</p>
             <p>{{$t(`Money and contracts should become available to robots, not because this is a sick fantasy of robot fans who have forgotten what Skynet is. But only because the new industrial revolution sets itself the task of building complex automated chains, the processes in which will affect the exchange of both technical information and economic information, and will also proceed at a speed inaccessible to humans.`)}}</p>
-            <g-image aria-hidden="true" src="~/assets/images/robot-w-bitcoin.png"/>
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/robot-w-bitcoin.png"/>
           </div>
         </div>
       </section>
@@ -226,7 +226,7 @@
           <p>{{$t(`Robots need money that will be directly available to them in order to be able to perform operations without a person at the speed with which only machines can make decisions. And all this is solely for a person to enjoy life in the Smart City!`)}}</p>
           <p>{{$t(`And here we smoothly come to the first electronic cash - Bitcoin. The fact that Bitcoin can be stored in your account on the principle of not a bank, but cash in your wallet makes it the first money that the robot can manage independently, more precisely autonomously. At the same time, today we can already say that Bitcoin is not just electronic cash, but a truly global financial institution.`)}}</p>
           <p class="vision-bitcoin-conslution">{{$t(`As a result: an event not invented by us, but clearly falling into our vision, makes Bitcoin the first money for robots, or, if we look even deeper, it is precisely that social institution that will help the formation of robotic firms.`)}}</p>
-          <g-image aria-hidden="true" src="~/assets/images/vision-bitcoin-robots.png"/>
+          <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-bitcoin-robots.png"/>
         </div>
       </section>
 
@@ -249,7 +249,7 @@
           <p class="hyphens">{{$t(`Let's imagine drone delivery service. If a drone, for example, is DHL's property how it can access to Amazon's warehouses or access to over the entire airspace of the city? Is it be a monopoly? This is a major challenge for many 4th industrial revolution initiatives!`)}}</p>
           <p class="hyphens">{{$t(`Most corporations say they need nearly complete rights to its surroundings because they don’t know how to securely set up the exchange of technical information between automated systems outside of their own internal corporate structure. At the same time, if you look at the processes where a person works, then we see that the cooperation of different corporations has been long and successfully existed. You can easily order door-to-door delivery of purchased goods on the Amazon website, and the courier will be able to drive a car along city roads, receive an order at the warehouse and bring it to you.`)}}</p>
           <p class="hyphens"> {{$t(`What's the difference? In the first case there is no way to build a contractual relationship between machines, and in the second case, in the world of people, contractual relations already exist.`)}}</p>
-          <g-image alt="" src="~/assets/images/vision-ethereum.png" />
+          <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-ethereum.png" />
         </div>
       </section>
 
@@ -264,7 +264,7 @@
           <p class="hyphens">{{$t(`The main difficulty that Robonomics faces today is the high price for launching an IoT device using Ethereum. In Ethereum you have to pay a commission on each transaction in terms of US dollars in the range of $10 to $100. It is quite expensive for most cases from the real economy, be it a car-sharing trip, renting a smart apartment, drone delivery or 3D printing of your favorite anime hero to order.`)}}</p>
           <p class="hyphens">{{$t(`Out of fairness, we would like to note that there are profitable scenarios even with transaction fees in the Ethereum network of 2018 - 2019. For example, automated carbon footprint offset transactions or transferring the order from the website directly to the production. But still, for the mass application of the web3 technologies in the field of IoT, a reduction in the price that the cloud charges from the connected device is required.`)}}</p>
           <p class="hyphens">{{$t(`Looking for an opportunity to reduce the cost of interacting with an IoT device, Robonomics developers have studied alternative developments to Ethereum. Our choice settled on the`)}} <g-link to="https://polkadot.network">{{$t(`Polkadot`)}}</g-link> {{$t(`architecture, which would allow us to run our own blockchain, within a common network, in which security is ensured by validators independent of our project.`)}} </p>
-          <g-image alt="" src="~/assets/images/vision-polkadot.png"/>
+          <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-polkadot.png"/>
         </div>
       </section>
 
@@ -273,42 +273,42 @@
 
           <div class="grid-2" v-in-viewport.once>
             <div>
-              <g-image src="~/assets/images/vision-chains-polkadot.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-chains-polkadot.png"/>
               <h2>{{$t(`Polkadot`)}}</h2>
             </div>
             <div>
               <h2>{{$t(`Ethereum 2.0`)}}</h2>
-              <g-image src="~/assets/images/vision-chains-ethereum.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-chains-ethereum.png"/>
             </div>
           </div>
           <div class="grid-2">
             <div>
               <p>{{$t("Heterogeneous Blockchain Network")}}</p>
-              <g-image src="~/assets/images/vision-chains-parachain.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-chains-parachain.png"/>
             </div>
             <div>
               <p>{{$t("Homogeneous Shard Network")}}</p>
-              <g-image src="~/assets/images/vision-chains-shard-network.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-chains-shard-network.png"/>
             </div>
           </div>
           <div class="grid-2">
             <div>
               <p>{{$t(`On-chain protocol control`)}}</p>
-              <g-image src="~/assets/images/vision-chains-polkadot-hammer.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-chains-polkadot-hammer.png"/>
             </div>
             <div>
               <p>{{$t(`Protection against the tyranny of the crowd`)}}</p>
-              <g-image src="~/assets/images/vision-chains-tyranny.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-chains-tyranny.png"/>
             </div>
           </div>
           <div class="grid-2">
             <div>
               <p>{{$t(`Auction of bandwidth in the common network`)}}</p>
-              <g-image src="~/assets/images/vision-chains-auction.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-chains-auction.png"/>
             </div>
             <div>
               <p>{{$t(`Payment for gas by users`)}}</p>
-              <g-image src="~/assets/images/vision-chains-gas-payment.png"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/vision-chains-gas-payment.png"/>
             </div>
           </div>
         </div>
@@ -388,7 +388,7 @@
           <h2>{{$t(`Open questions of teleology`)}}</h2>
           <i>{{$t(`and a treatise by L. von Mises`)}}</i>
 
-          <g-image alt="" src="~/assets/images/person-mises.png"/>
+          <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/person-mises.png"/>
         </div>
 
         <article class="hyphens">

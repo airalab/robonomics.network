@@ -3,7 +3,7 @@
   <div :class="card_classes">
 
     <div v-if="icon || image || imageLocal" :class="pic_classes">
-      <g-image aria-hidden="true" :src="pic_src"/>
+      <g-image quality="75" aria-hidden="true" alt="" :src="pic_src"/>
     </div>
 
     <div class="content" v-if="hasDefaultSlot">

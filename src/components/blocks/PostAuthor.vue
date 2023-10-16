@@ -2,7 +2,7 @@
     <div class="author layout layout__text_small" v-if="author==='@ensrationis'">
         <span>By:</span>
         <g-link to="https://twitter.com/EnsRationis">@ensrationis</g-link>
-        <g-link to="https://twitter.com/EnsRationis"><g-image src="~/assets/images/avatars/Sergey-Lonshakov.jpg" /></g-link>
+        <g-link to="https://twitter.com/EnsRationis"><g-image quality="75" src="~/assets/images/avatars/Sergey-Lonshakov.jpg" /></g-link>
     </div>
 </template>
 
