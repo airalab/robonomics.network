@@ -27,18 +27,18 @@
 
         <div class="load">
         <div class="load-bird">
-            <g-image src="/assets/kusama-karate-body.png" class="bird-body"/>
-            <g-image src="/assets/kusama-karate-tale.png" class="bird-tale"/>
-            <g-image src="/assets/kusama-karate-wing-1.png" class="bird-wing-1"/>
-            <g-image src="/assets/kusama-karate-wing-2.png" class="bird-wing-2"/>
-            <g-image src="/assets/kusama-karate-ribbons.png" class="bird-ribbons"/>
-            <g-image src="/assets/kusama-karate-hair.png" class="bird-hair"/>
-            <g-image src="/assets/kusama-karate-leg.png" class="bird-leg"/>
+            <g-image quality="75" src="/assets/kusama-karate-body.png" class="bird-body"/>
+            <g-image quality="75" src="/assets/kusama-karate-tale.png" class="bird-tale"/>
+            <g-image quality="75" src="/assets/kusama-karate-wing-1.png" class="bird-wing-1"/>
+            <g-image quality="75" src="/assets/kusama-karate-wing-2.png" class="bird-wing-2"/>
+            <g-image quality="75" src="/assets/kusama-karate-ribbons.png" class="bird-ribbons"/>
+            <g-image quality="75" src="/assets/kusama-karate-hair.png" class="bird-hair"/>
+            <g-image quality="75" src="/assets/kusama-karate-leg.png" class="bird-leg"/>
         </div>
         <p><b>You are in the list now. We'll send you email with updates.</b></p>
         </div>
 
-        <div class="wait"><g-image src="~/assets/images/robonomics.png" area-hidden="true"/></div>
+        <div class="wait"><g-image quality="75" src="~/assets/images/robonomics.png" area-hidden="true"/></div>
         <div class="error">Something went wrong. Please, check your connection or try later.</div>
 
     </gsp-form>

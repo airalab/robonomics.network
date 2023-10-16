@@ -18,7 +18,7 @@
           </details>
 
         </div>
-        <g-image class="dapp" aria-hidden="true" src="~/assets/images/index-dapp.png" />
+        <g-image quality="75" alt="" class="dapp" aria-hidden="true" src="~/assets/images/index-dapp.png" />
       </div>
       <h3>{{$t('Decentralized application')}}</h3>
     </div>
@@ -114,7 +114,7 @@
           </details>
 
         </div>
-        <g-image aria-hidden="true" src="~/assets/images/index-smart-device.svg" />
+        <g-image alt="" quality="75"  aria-hidden="true" src="~/assets/images/index-smart-device.svg" />
         <h3>{{$t('IoT / Smart device')}}</h3>
       </div>
     </div>

@@ -22,10 +22,10 @@
           </div>
 
           <div class="case-ros__images">
-            <g-link to="https://robots.ros.org/irobot-roomba/"><g-image src="@/assets/images/cases/ros2/1.png" alt="" aria-hidden="true"/></g-link>
-            <g-link to="https://robots.ros.org/mycobot/"><g-image src="@/assets/images/cases/ros2/2.png" alt="" aria-hidden="true"/></g-link>
-            <g-link to="https://minipupperdocs.readthedocs.io/en/latest/index.html"><g-image src="@/assets/images/cases/ros2/3.png" alt="" aria-hidden="true"/></g-link>
-            <g-link to="https://robots.ros.org/turtlebot4/"><g-image class="invert" src="@/assets/images/cases/ros2/4.png" alt="" aria-hidden="true"/></g-link>
+            <g-link to="https://robots.ros.org/irobot-roomba/"><g-image src="@/assets/images/cases/ros2/1.png" quality="75" alt="" aria-hidden="true"/></g-link>
+            <g-link to="https://robots.ros.org/mycobot/"><g-image src="@/assets/images/cases/ros2/2.png" quality="75" alt="" aria-hidden="true"/></g-link>
+            <g-link to="https://minipupperdocs.readthedocs.io/en/latest/index.html"><g-image src="@/assets/images/cases/ros2/3.png" quality="75" alt="" aria-hidden="true"/></g-link>
+            <g-link to="https://robots.ros.org/turtlebot4/"><g-image class="invert" src="@/assets/images/cases/ros2/4.png" quality="75" alt="" aria-hidden="true"/></g-link>
           </div>
 
         </CaseText>

@@ -15,8 +15,8 @@
       <div class="contact__form">
         <div class="contact__form-img">
           <h3 class="show-mobile">{{ $t('Get latest updates') }}</h3>
-          <g-image class="hide-dark"  src="~/assets/images/contacts-boy.png" alt="boy"/>
-          <g-image class="show-dark" src="~/assets/images/contacts-boy-dark.png" alt="boy"/>
+          <g-image quality="75" class="hide-dark"  src="~/assets/images/contacts-boy.png" alt="boy"/>
+          <g-image quality="75" class="show-dark" src="~/assets/images/contacts-boy-dark.png" alt="boy"/>
           <div class="contact__form-img--lines">
             <span class="line-1"></span>
             <span class="line-2"></span>

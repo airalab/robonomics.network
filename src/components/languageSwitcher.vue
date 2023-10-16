@@ -1,6 +1,6 @@
 <template>
 
-    <select v-if="$localesList" tabindex="0" @change="onSelectChange($event)">
+    <select aria-label="choose preferably language" v-if="$localesList" tabindex="0" @change="onSelectChange($event)">
   
       <template v-for="(item,key) in $localesList">
         <option v-bind:key="key" :selected="item == locale" v-bind:value="item">

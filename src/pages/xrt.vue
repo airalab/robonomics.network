@@ -35,7 +35,7 @@
             <section class="xrt-bridge section__solid">
                 <div class="layout grid-2">
                     <div class="xrt-bridge__imgs" aria-hidden="true">
-                        <g-image src="~/assets/images/xrt-bridge-img.png" />
+                        <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/xrt-bridge-img.png" />
                     </div>
                     <div class="xrt-bridge__text token__intro">
                         <p><span class="token__big-text">{{ $t('The task') }}</span> {{ $t('of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.') }}</p>

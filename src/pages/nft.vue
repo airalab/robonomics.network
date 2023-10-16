@@ -15,7 +15,7 @@
       <div class="layout layout__mid nft__banner">
         <p>{{ $t("Here, we've assembled a collection of NFTs minted during our extensive crypto journey, both independently and with great teams. These unique tokens offer verifiable ownership on the blockchain and make for great swag to adorn your blockchain account. You can bid on some of them at auction or even mint your own unique piece.") }}</p>
         <div class="nft__banner-img">
-          <g-image alt="girls" src="~/assets/images/nft-banner.png"/>
+          <g-image quality="75" alt="girls" src="~/assets/images/nft-banner.png"/>
         </div>
       </div>
     </section>
@@ -39,7 +39,7 @@
               </div>
               <div class="nft__wrapper nft__wrapper--leftImg">
                 <g-link to="https://opensea.io/assets/ethereum/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1" class="nft__img ">
-                  <g-image src="~/assets/images/nft-pioneer.png" alt="nft Robonomics Pioneer"/>
+                  <g-image quality="75" src="~/assets/images/nft-pioneer.png" alt="nft Robonomics Pioneer"/>
                   <span class="nft__minted nft--mobile">minted: 992</span>
                 </g-link>
                 <div class="nft__info">
@@ -84,12 +84,12 @@
 
               <div class="nft__item-left">
                 <div class="nft-spot-img">
-                  <g-image src="~/assets/images/nft-spot.png" alt="nft spot"/>
+                  <g-image quality="75" src="~/assets/images/nft-spot.png" alt="nft spot"/>
                 </div>
                 <div class="nft__imgs-wrapper">
-                  <g-image src="~/assets/images/nft-spot-1.png" alt="nft spot"/>
-                  <g-image src="~/assets/images/nft-spot-2.png" alt="nft spot"/>
-                  <g-image src="~/assets/images/nft-spot-3.png" alt="nft spot"/>
+                  <g-image quality="75" src="~/assets/images/nft-spot-1.png" alt="nft spot"/>
+                  <g-image quality="75" src="~/assets/images/nft-spot-2.png" alt="nft spot"/>
+                  <g-image quality="75" src="~/assets/images/nft-spot-3.png" alt="nft spot"/>
                 </div>
                 <g-link to="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot" class="nft__link nft__singular" />
               </div>
@@ -119,9 +119,9 @@
 
               <div class="nft__item-left">
                 <div class="nft__imgs-wrapper">
-                  <g-image src="~/assets/images/nft-telescope-1.png" alt="nft telescope"/>
-                  <g-image src="~/assets/images/nft-telescope-2.png" alt="nft telescope"/>
-                  <g-image src="~/assets/images/nft-telescope-3.png" alt="nft telescope"/>
+                  <g-image quality="75" src="~/assets/images/nft-telescope-1.png" alt="nft telescope"/>
+                  <g-image quality="75" src="~/assets/images/nft-telescope-2.png" alt="nft telescope"/>
+                  <g-image quality="75" src="~/assets/images/nft-telescope-3.png" alt="nft telescope"/>
                 </div>
                 <g-link to="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot" class="nft__link nft__singular" />
               </div>
@@ -137,7 +137,7 @@
                   <p>{{ $t("Located in the Atacama Desert, Chile, a physical telescope can be accessed through a decentralized app for capturing real-time images of astronomical objects in deep space. Every user with an internet connection can access it with $STRGZN tokens, which are available for purchase in the app using a credit card. Select an astronomical object, send a command to the telescope to take a picture, and wait for the minted NFT on the Singular platform. Please note that the app is only available for use from 11 pm to 6 am GMT-3 due to the telescope's operating hours.") }} <g-link to="https://telescope.merklebot.com/#/">{{ $t('Try yourself') }}</g-link></p>
                 </div>
                 <div class="nft-telescope-img">
-                  <g-image src="~/assets/images/nft-telescope.png" alt="nft telescope"/>
+                  <g-image quality="75" src="~/assets/images/nft-telescope.png" alt="nft telescope"/>
                 </div>
               </div>
             </div>
@@ -152,7 +152,7 @@
                 </h3>
                 <div class="nft-img-with-adds">
                   <g-link to="https://opensea.io/assets/ethereum/0x8cb813bf27dc744fc5fb6ba7515504de45d39e08/24" class="nft__img ">
-                    <g-image src="~/assets/images/nft-polka-pet.png" alt="nft Robonomics Polka pet"/>
+                    <g-image quality="75" src="~/assets/images/nft-polka-pet.png" alt="nft Robonomics Polka pet"/>
                   </g-link>
                   <div class="nft--desktop">
                     <p>{{ $t('In collaboration with Polkapets') }}</p>
@@ -233,18 +233,18 @@
                 <g-link to="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n" class="nft__link nft__kanaria" />
               </div>
               <div class="nft__imgs">
-                <g-image src="~/assets/images/nft-jetpack-1.png" alt="Mecha Arm Jetpack"/>
-                <g-image src="~/assets/images/nft-jetpack-2.png" alt="Mecha Arm Jetpack"/>
+                <g-image quality="75" src="~/assets/images/nft-jetpack-1.png" alt="Mecha Arm Jetpack"/>
+                <g-image quality="75" src="~/assets/images/nft-jetpack-2.png" alt="Mecha Arm Jetpack"/>
               </div>
 
               <div class="nft-jetpack__wrapper">
                 <g-link to="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n" class="nft__img nft__img--jetpack">
-                  <g-image src="~/assets/images/nft-jetpack.png" alt="Mecha Arm Jetpack"/>
+                  <g-image quality="75" src="~/assets/images/nft-jetpack.png" alt="Mecha Arm Jetpack"/>
                 </g-link>
 
                 <div class="nft__rmrk">
-                  <g-image class="nft--light" src="~/assets/images/nft-rmrk.svg" alt="rmrk"/>
-                  <g-image class="nft--dark" src="~/assets/images/nft-rmrk-light.svg" alt="rmrk"/>
+                  <g-image quality="75" class="nft--light" src="~/assets/images/nft-rmrk.svg" alt="rmrk"/>
+                  <g-image quality="75" class="nft--dark" src="~/assets/images/nft-rmrk-light.svg" alt="rmrk"/>
                   <span>{{ $t('RMRK Partnerships') }}</span>
                 </div>
               </div>

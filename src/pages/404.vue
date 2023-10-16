@@ -14,20 +14,20 @@
       <div  class="page-404__bg" aria-hidden="true">
         <div id="parallax" class="parallax-objects">
           <div data-depth="0.9" class="page-404__bg-flying parallax-layer">
-            <g-image id="parallax-flying" src="~/assets/images/page-404-flying.png"/>
+            <g-image quality="75" alt="" aria-hidden="true"  id="parallax-flying" src="~/assets/images/page-404-flying.png"/>
           </div>
           <div class="parallax-layer page-404__bg-asteroids" data-depth="0.9">
-            <g-image id="parallax-asteroids" src="~/assets/images/page-404-asteroids.png"/>
+            <g-image quality="75" alt="" aria-hidden="true" id="parallax-asteroids" src="~/assets/images/page-404-asteroids.png"/>
           </div>
           <div  data-depth="0.8" class="page-404__bg-bread-1 parallax-layer">
-            <g-image id="parallax-bread-1" src="~/assets/images/page-404-bread-1.png"/>
+            <g-image quality="75" alt="" aria-hidden="true" id="parallax-bread-1" src="~/assets/images/page-404-bread-1.png"/>
           </div>
           <div  data-depth="0.7" class="page-404__bg-bread-2 parallax-layer">
-            <g-image id="parallax-bread-2" src="~/assets/images/page-404-bread-2.png"/>
+            <g-image quality="75" alt="" aria-hidden="true" id="parallax-bread-2" src="~/assets/images/page-404-bread-2.png"/>
           </div>
         </div>
         <div class="page-404__big-bg">
-          <g-image src="~/assets/images/page-404-img.png"/>
+          <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/page-404-img.png"/>
         </div>
       </div>
     </section>
