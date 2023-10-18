@@ -26,7 +26,7 @@ I principali obiettivi che stiamo cercando di raggiungere insieme sono:
 </robo-list>
 
 <p align="center">
-  <img src="../images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
+  <img width="500" height="282" src="../images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
 </p>
 
 Il team di Robonomics ha già iniziato a esplorare Crust Network ed è rimasto colpito dall’approccio diligente alla documentazione. È già possibile avviare un robot della [Boston Dynamics in un laboratorio della Bay Area](https://spot.merklebot.com) atramite una transazione sulla parachain di Robonomics, mentre i dati verranno registrati su Crust. Provatelo voi stessi su [spot.merklebot.com](https://spot.merklebot.com).

@@ -40,7 +40,7 @@ abstract: "Первый период аренды слота для Робоно
 
 В данном случае медианная ставка равна: 
 
-<div class="formula" v-katex="'B_{\{med}}=1005 \{~KSM}'"></div>
+![](../images/robonomics-crowdloan-campaigns-november-2022/formula-1.svg)
 
 > Обновление от 05 Декабря: в связи с обновлениями сети Кусама ([переход к Gov2](https://twitter.com/nachortti/status/1588203599129190403)) crowdloan кампания Робономики будет перезапущена в ближайшие дни. Лимит сбора будет увеличен до 10,050 KSM.
 
@@ -50,23 +50,23 @@ abstract: "Первый период аренды слота для Робоно
 
 Алгоритм исходит из того, что система находится в состоянии выше идеального стейкинга (ведь нам важна защищенность сети), поэтому максимальный *annual interest rate* за стейкинг, который возможен в данных условиях, определяется параметром *ideal staking rate* и максимальным уровнем инфляции на стейкеров (т. е. общим количеством minted токенов для оплаты валидаторам и номинаторам):
 
-<div class="formula" v-katex="'i_{\{ideal}}=I_{\{NPoS}}/x_{\{ideal}}'"></div>
+![](../images/robonomics-crowdloan-campaigns-november-2022/formula-2.svg)
 
 Подробнее об этих вычислениях можно прочесть в статье о [Token Economics](https://research.web3.foundation/en/latest/polkadot/overview/2-token-economics.html) на сайте W3F Research.
 
 В сети Kusama уровень инфляции задан на уровне 10%, т. е. это максимум, который будет выделяться на стейкеров в идеальном сценарии. Параметр идеального стейкинга варьируется в зависимости от количества парачейнов и сейчас равен 45% (указан на Polkadot.js портале сети Kusama). Таким образом, получаем:
 
-<div class="formula" v-katex="'i_{\\text{ideal}}=0.1/0.45\\cdot100\\%=22.22\\%'"/>
+![](../images/robonomics-crowdloan-campaigns-november-2022/formula-3.svg)
 
 На текущий момент реальный *staking rate* равен 52.6%, и выгода участников стейкинга меньше идеального уровня (около 15%). Поэтому алгоритм может взять параметр *ideal interest rate* для crowdloan-кампании, тем самым найдя справедливый для сети и привлекательный для стейкеров уровень награды за участие в crowdloan. 
 
 Теперь можно рассчитать награду за участие в crowdloan-кампании (XRT per 1 KSM), зная стоимости токенов на рынке:
 
-<div class="formula" v-katex="'R_{\\text{perKSM}}=\\frac{1\\cdot \\$_{\\text{KSM}}\\cdot i_{\\text{ideal}}}{\\$_{\\text{XRT}}}'"></div>
+![](../images/robonomics-crowdloan-campaigns-november-2022/formula-4.svg)
 
 По текущему курсу KSM и XRT награда crowdloan составит около **2.06 XRT per 1 KSM**. Зная это значение и медианную стоимость аренды слота, легко рассчитать общие выплаты участникам crowdloan:
 
-<div class="formula" v-katex="'R_{\\text{total}}=B_{\\text{med}}\\cdot R_{\\text{perKSM}} = 2075.03 ~\\text{XRT}\n\n'"></div>
+![](../images/robonomics-crowdloan-campaigns-november-2022/formula-5.svg)
 
 > Обновление от 05 Декабря: в связи с обновлениями сети Кусама ([переход к Gov2](https://twitter.com/nachortti/status/1588203599129190403)) crowdloan кампания Робономики будет перезапущена в ближайшие дни. Общий пул вознаграждения увеличен до 20,750 XRT.
 

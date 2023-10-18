@@ -42,9 +42,7 @@ As we expected, after the first batch of crazy auctions bids, the situation has 
 
 **In this case, the median bid is:**
 
-$$
-B_{\text{med}}=1001 \text{~KSM}
-$$
+![beta subscript med equals 1001KSM](./images/robonomics-crowdloan-campaigns-november-2022/formula-1.svg)
 
 </Card>
 
@@ -58,9 +56,7 @@ Our algorithm assumes that the system is in a state above ideal staking (because
 
 <Card alignContent="center" back="transparent">
 
-$$
-i_{\text{ideal}}=I_{\text{NPoS}}/x_{\text{ideal}}
-$$
+![i subscript 'ideal' ​equals I subscript NPoS divided by ​ x  subscript 'ideal'](./images/robonomics-crowdloan-campaigns-november-2022/formula-2.svg)
 
 </Card>
 
@@ -70,9 +66,7 @@ In the Kusama network, the inflation rate is set at 10%, i.e. this is the maximu
 
 <Card alignContent="center" back="transparent">
 
-$$
-i_{\text{ideal}}=0.1/0.45\cdot100\%=22.22\%
-$$
+![i subscript 'ideal' equals 0.1 divided by 0.45 multiply by 100 percent  equals 22.22 percent](./images/robonomics-crowdloan-campaigns-november-2022/formula-3.svg)
 
 </Card>
 
@@ -82,9 +76,7 @@ Now we can calculate the reward for participation in the crowdloan campaign (XRT
 
 <Card alignContent="center" back="transparent">
 
-$$
-R_{\text{perKSM}}={(1\cdot \$_{\text{KSM}}\cdot i_{\text{ideal}})}/{\$_{\text{XRT}}}
-$$
+![R subscript 'perKSM' ​equals (1 multiply by $KSM ​multiply by i subscript 'ideal' ) divided by $XRT ](./images/robonomics-crowdloan-campaigns-november-2022/formula-4.svg)
 
 </Card>
 
@@ -92,9 +84,7 @@ At the current exchange rate of KSM and XRT, the crowdloan reward will be about 
 
 <Card alignContent="center" back="transparent">
 
-$$
-R_{\text{total}}=B_{\text{med}}\cdot R_{\text{perKSM}} = 2075.03\text{XRT}
-$$
+![R subscript 'total' equals beta subscript 'med' ​multiply by R subscript 'perKSM' equals 2075.03XRT](./images/robonomics-crowdloan-campaigns-november-2022/formula-5.svg)
 
 </Card>
 

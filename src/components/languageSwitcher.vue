@@ -79,9 +79,6 @@ export default {
     initPath() {
       if(localStorage.getItem('locale') ) {
         this.locale = localStorage.getItem('locale');
-        // setTimeout(() => {
-        //   this.$emit('setShow', true)
-        // }, 100)
       }  
     },
 
@@ -93,7 +90,6 @@ export default {
     },
 
     mounted() {
-    // this.$emit('setShow', false)
       this.initPath();
       this.resolveI18n();
     }
