@@ -2,7 +2,6 @@ import { initI18n } from 'i18n-pro'
 import ar from './Arabic.json';
 import ru from './Russian.json';
 import zh from './Chinese.json';
-import en from './English.json';
 import es from './Spanish.json';
 import ja from './Japanese.json';
 import de from './German.json';
@@ -24,8 +23,6 @@ import uk from './Ukrainian.json';
 // const zh = Object.assign(zhBlog, zhDefault);
 
 
-
-
 const {
   t,
   setI18n,
@@ -34,7 +31,6 @@ const {
 } = initI18n({
   namespace: 'networkTranslations',
   langs: {
-    en,
     ar,
     ru,
     zh,
