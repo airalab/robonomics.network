@@ -54,7 +54,7 @@
 query($id: ID!) {
   post(id: $id) {
     title
-    cover_image (width: 2000, quality: 100)
+    cover_image (width: 2000, quality: 80)
     description
     path
     author
@@ -73,7 +73,7 @@ query($id: ID!) {
     edges {
       node {
         title
-        cover_image (width: 2000, quality: 100)
+        cover_image (width: 2000, quality: 80)
         path
       }
     }
