@@ -26,7 +26,7 @@ Há dois objetivos principais que procuramos atingir juntos:
 </robo-list>
 
 <p align="center">
-  <img src="../images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
+  <img width="500" height="282" src="../images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
 </p>
 
 A equipe da Robonomics já começou a explorar a rede Crust e ficou impressionada com a diligente abordagem da documentação. Você já pode lançar um robô da [Boston Dynamics no laboratório da Bay Area](https://spot.merklebot.com) através de uma transação na parachain Robonomics, enquanto os dados serão registrados na Crust. Sinta-se à vontade para experimentá-lo no site [spot.merklebot.com](https://spot.merklebot.com).

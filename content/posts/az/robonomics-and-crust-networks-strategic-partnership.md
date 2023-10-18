@@ -26,7 +26,7 @@ Birlikdə əldə etmək istədiyimiz iki əsas məqsəd var:
 </robo-list>
 
 <p align="center">
-  <img src="../images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
+  <img width="500" height="282" src="../images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
 </p>
 
 Robonomika komandası artıq Crust şəbəkəsini tədqiq etməyə başlayıb və sənədləşdirməyə çalışqan yanaşmadan heyran olub. Siz artıq [Boston Dynamics robotunu Bay Area](https://spot.merklebot.com) laboratoriyasında Robonomika parachain əməliyyatı vasitəsilə işə sala bilərsiniz, halbuki məlumatlar Crust-da qeyd olunacaq. Bunu [spot.merklebot.com](https://spot.merklebot.com). saytında sınamaqdan çekinmeyin.

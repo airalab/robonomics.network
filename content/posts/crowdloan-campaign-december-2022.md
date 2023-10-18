@@ -62,9 +62,7 @@ As [mentioned previously](https://robonomics.network/blog/robonomics-crowdloan-c
 
 **2. The median bid is:**
 
-$$
-B_{\text{med}}=1001 {\text{ KSM}}
-$$
+![beta subscript med equals 1001KSM](./images/crowdloan-campaign-december-2022/formula-1.svg)
 
 </Card>
 
@@ -72,9 +70,7 @@ $$
 
 **3. We additionally introduce an correction if previous crowdloan campaigns were not successful. The median bid adjusted for previous crowdloan attempts is:**
 
-$$
-B_{\text{adjmed}}=1001 \cdot 2 = 2002 {\text{ KSM}}
-$$
+![beta subscript 'adjmed' equals 1001 multiplied by 2 equals 2002 KSM](./images/crowdloan-campaign-december-2022/formula-2.svg)
 
 </Card>
 
@@ -82,9 +78,7 @@ $$
 
 **4. The ideal staking rate is:**
 
-$$
-x_{\text{ideal}}=45.0\%
-$$
+![x subscript ideal equals 45.0 percent](./images/crowdloan-campaign-december-2022/formula-3.svg)
 
 </Card>
 
@@ -92,9 +86,7 @@ $$
 
 **5. The real staking rate is:**
 
-$$
-x_{\text{real}}=49.3\%   >x_{\text{ideal}}
-$$
+![x subscript 'real' equals 49.3%  greater than percent x subscript 'ideal'](./images/crowdloan-campaign-december-2022/formula-4.svg)
 
 </Card>
 
@@ -102,9 +94,7 @@ $$
 
 **6. The ideal interest rate is:**
 
-$$
-i_{\text{ideal}}=I_{\text{NPoS}}/x_{\text{ideal}}=0.1/0.45\cdot100\%=22.22\%
-$$
+![i subscript 'ideal' ​equals I subscript 'NPoS' ​ divided by x subscript 'ideal' equals 0.1 divided by 0.45 multiply by 100 percent equals 22.22 percent](./images/crowdloan-campaign-december-2022/formula-5.svg)
 
 </Card>
 
@@ -112,9 +102,7 @@ $$
 
 **7. The reward for participation in the crowdloan campaign (XRT per 1 KSM):**
 
-$$
-R_{\text{perKSM}} = {(1 \cdot {\text{\$}_\text{KSM}} \cdot {i_{\text{ideal}}})} / {\text{\$}_\text{XRT}} = {(1\cdot 24.65{\text{\$}}\cdot 0.22)}/{2.30{\text{\$}}} = 2.38{\text{ XRT per KSM}}
-$$
+![R subscript 'perKSM' ​equals (1 multiply by $KSM ​multiply by i subscript 'ideal') divided by $XRT ​equals (1 multiply by 24.65$ multiply by 0.22) divided by 2.30$ equals 2.38 XRT per KSM](./images/crowdloan-campaign-december-2022/formula-6.svg)
 
 </Card>
 
@@ -122,9 +110,7 @@ $$
 
 **8. Total payouts to crowdloan participants:**
 
-$$
-R_{\text{total}}=B_{\text{adjmed}}\cdot R_{\text{perKSM}} = 4768.05 {\text{ XRT}}
-$$
+![R subscript 'total' ​equals B  subscript 'adjmed' ​multiply by R subscript 'perKSM' equals 4768.05 XRT](./images/crowdloan-campaign-december-2022/formula-7.svg)
 
 </Card>
 

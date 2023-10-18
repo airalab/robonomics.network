@@ -35,8 +35,7 @@ module.exports = {
           },
         },
         plugins: [
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-          ['gridsome-remark-katex', {displayMode: false}]
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
         ]
       }
     },
@@ -71,6 +70,7 @@ module.exports = {
     {
       use: "gridsome-plugin-google-sheets-post",
     },
+
     {
       use: 'gridsome-plugin-matomo',
       options: {
@@ -79,16 +79,7 @@ module.exports = {
         requireConsent: true
       }
     }
-    
   ],
-
-  transformers: {
-    remark: {
-      plugins: [
-        'gridsome-remark-katex'
-      ]
-    }
-  },
 
 
   chainWebpack: config => {
