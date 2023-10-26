@@ -4,8 +4,11 @@
         <div class="header-content" dir="ltr">
           <div class="header-logo">
             <g-link to="/">
-              <g-image class="hideMobile" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo-solid.svg" quality="75" />
-              <g-image class="hideDesktop" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo.svg" quality="75" />
+              <div class="logo-robot">
+                <g-image class="logo-robot__head" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo/logo-robot-head.svg" quality="75" />
+                <g-image class="logo-robot__eye" :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo/logo-robot-eye.svg" quality="75" />
+              </div>
+              <g-image class="hideMobile"  :alt="$static.metadata.siteName + ' logotype'" src="~/assets/images/robonomics-logo/logo-robonomics-text.svg" quality="75" />
             </g-link>
           </div>
 
@@ -66,19 +69,25 @@ export default {
   }
 
   .header-logo a img {
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+
+  .logo-robot {
+    position: relative;
+  }
+
+  .logo-robot__eye {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    animation-name: blink;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
   }
 
 
   .dark-theme .header-logo a img {
     filter:  grayscale(1) invert(1);
-  }
-
-  .logo-text {
-    font-size: 1rem;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: var(--color-dark);
   }
 
   .header {
@@ -92,8 +101,6 @@ export default {
 
     background-color: var(--header-bg);
   }
-
-  /* .header-logo a, .header-logo img { display: block; } */
   
   .header-content {
     display: flex;
@@ -126,12 +133,7 @@ export default {
     .header-logo a svg {
       width: 100%;
     }
-/* 
-    .header-logo {
-      max-width: 100px;
-      width: 34%;
-      padding-left: 40px;
-    } */
+
   }
 
   @media screen and (max-width: 650px) {
@@ -140,6 +142,38 @@ export default {
     }
     .hideMobile {
       display: none;
+    }
+
+    .logo-robot {
+      width: 46px;
+      height: 37px;
+    }
+    .logo-robot__head{
+      width: 100%;
+    }
+
+    .logo-robot__eye {
+      top: 16px;
+      left: 19px;
+    }
+  }
+
+
+  /* eye animation */
+  @keyframes blink {
+    0% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+    2% {
+      transform: translateY(1px) scaleY(0.2)
+    }
+    4% {
+      animation-timing-function: ease-out;
+    }
+    6% {
+      transform: none;
+      animation-timing-function: ease-in;
     }
   }
   
