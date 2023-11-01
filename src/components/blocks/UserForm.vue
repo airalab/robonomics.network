@@ -7,13 +7,6 @@
             </label>
 
             <label><input type="checkbox" name="agreement" required/> {{$t('I agree to receive emails')}}</label>
-
-            <vue-recaptcha
-            ref="invisibleRecaptcha"
-            @verify="onVerify"
-            size="invisible"
-            :sitekey="recaptchaSitekey">
-            </vue-recaptcha>
             <div>
                 <rbnet-button>{{$t('Send')}}</rbnet-button>
             </div>
@@ -110,9 +103,6 @@
 
 <script>
 export default {
-  components: {
-      VueRecaptcha: () => import("vue-recaptcha")
-  },
 
   metaInfo: {
     script: [
@@ -131,8 +121,6 @@ export default {
     return {
       email: null,
       status: 'none',
-      recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA
-      // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
     }
   },
 
