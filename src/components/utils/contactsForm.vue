@@ -1,5 +1,5 @@
 <template>
-  <gsp-form class="contacts__form" :gscriptID="gscript" :captchaID="recaptchaSitekey">
+  <gsp-form class="contacts__form" :gscriptID="gscript" :captchaStyle="captchaStyle">
     <input
       required 
       name="email" 
@@ -48,9 +48,16 @@ export default {
     result: this.$response,
     interval: null,
     location: '',
-    recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA,
     gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
-    // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
+    captchaStyle: {     
+        width: 100,
+        height: 25,
+        textBaseline: 'top',
+        font: '25px Roboto',
+        textAlign: 'left',
+        fillStyle: '#6E9BEF'
+      }
+
     }
   },
 
