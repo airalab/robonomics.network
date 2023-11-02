@@ -42,6 +42,7 @@ export default {
     display: grid;
     grid-template-columns: 210px 1fr;
     gap: var(--space);
+    margin-bottom: calc(var(--space) * 0.6);
   }
 
   h3 {

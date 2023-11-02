@@ -32,13 +32,13 @@
   img: 'docs-book-2.png'
   buttonicon: '↗'
   options:
-    - link: 'https://ipfs.io/ipfs/QmQ3k8p9SQS5wjovPcjUtQceRZZ6nv3Eqirt1vVQ2wP2JL'
+    - link: 'https://crustipfs.info/ipfs/QmQ3k8p9SQS5wjovPcjUtQceRZZ6nv3Eqirt1vVQ2wP2JL'
       text: 'English'
       id: 0
-    - link: 'https://ipfs.io/ipfs/QmUqNnzdZnic61UYTuKT9EzBNzMW6jc5uHSFk4Xzd3iM93'
+    - link: 'https://crustipfs.info/ipfs/QmUqNnzdZnic61UYTuKT9EzBNzMW6jc5uHSFk4Xzd3iM93'
       text: 'Русский'
       id: 2
-    - link: 'https://ipfs.io/ipfs/QmXhWarATZNTy3CweoVAdy4aTMrGMCsipo3gPSWVsUyQW6'
+    - link: 'https://crustipfs.info/ipfs/QmXhWarATZNTy3CweoVAdy4aTMrGMCsipo3gPSWVsUyQW6'
       text: 'Italiano'
       id: 1
 
@@ -49,12 +49,12 @@
   img: 'docs-book-1.png'
   buttonicon: '↗'
   options:
-    - link: 'https://ipfs.io/ipfs/QmWue3YfuZvuRvgcNb4vZuheX9TaZ9E1b8aCdxSoaGTbVN'
+    - link: 'https://crustipfs.info/ipfs/QmWue3YfuZvuRvgcNb4vZuheX9TaZ9E1b8aCdxSoaGTbVN'
       text: 'English'
       id: 0
-    - link: 'https://ipfs.io/ipfs/QmUjBPgDzmHFHiDkQAG93szJQguiZiowm9sedFMhPfQP4y'
+    - link: 'https://crustipfs.info/ipfs/QmUjBPgDzmHFHiDkQAG93szJQguiZiowm9sedFMhPfQP4y'
       text: 'Русский'
       id: 2
-    - link: 'https://ipfs.io/ipfs/QmTp3srjo3r1L2TKpAEGFafjdzSCTKJT9kkBEkCQDEF6tz'
+    - link: 'https://crustipfs.info/ipfs/QmTp3srjo3r1L2TKpAEGFafjdzSCTKJT9kkBEkCQDEF6tz'
       text: 'Deutsch'
       id: 1
