@@ -141,7 +141,7 @@
   /* min-height: 200px; */
   display: inline-block;
   margin-top: 0;
-  padding-top: 22px;
+  padding-top: 3px;
   max-width: 1040px;
   width: 100%;
   overflow: hidden;
@@ -169,13 +169,16 @@
 .title-with-bg  span,
 .title-with-bg a {
   padding-bottom: 15px;
-  padding-left: calc(var(--space));
-  padding-right: var(--space) !important;;
+  padding-left: calc(var(--space) * 0.5);
+  padding-right: calc(var(--space) * 0.5);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   color: var(--color-light);
   transition: opacity 0.33s ease-in-out;
   text-transform: uppercase;
+  font-size: calc( var(--base-font-size)* 1.5);
+  font-style: normal;
+  font-weight: 500;
 }
 
 .title-with-bg a:hover {
