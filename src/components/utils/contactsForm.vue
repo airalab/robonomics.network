@@ -1,5 +1,5 @@
 <template>
-  <gsp-form class="contacts__form" :gscriptID="gscript">
+  <gsp-form class="contacts__form" :gscriptID="gscript" :captchaStyle="captchaStyle">
     <input
       required 
       name="email" 
@@ -49,6 +49,15 @@ export default {
     interval: null,
     location: '',
     gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
+    captchaStyle: {     
+        width: 100,
+        height: 25,
+        textBaseline: 'top',
+        font: '25px Roboto',
+        textAlign: 'left',
+        fillStyle: '#6E9BEF'
+      }
+
     }
   },
 
