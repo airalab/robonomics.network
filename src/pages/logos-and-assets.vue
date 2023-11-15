@@ -316,11 +316,19 @@ export default {
   .color-pallet__item--green {
     background-color: #5fce05
   }
+
+  @media screen and (max-width: 920px) {
+    .logos-and-assets__banner .container {
+      padding: calc(var(--space) * 2) var(--space);
+    }
+  }
   
 
   @media screen and (max-width: 380px) {
     h2 {
       font-size: 2rem;
     }
+
+ 
   }
 </style>
