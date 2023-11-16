@@ -27,5 +27,3 @@ To start it locally you need install node.js and [Gridsome framework](https://gr
 ## For contributors
 
 Please, fill free to open issues with your suggestions or pull requests.
-
-
