@@ -60,15 +60,14 @@ export default {
 
   data() {
     return {
-    data_email: '',
-    result: this.$response,
-    interval: null,
-    location: '',
-    userId: '',
-    userData: '',
-    gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
-    siteKey: process.env.GRIDSOME_RECAPTCHA,
-
+      data_email: '',
+      result: this.$response,
+      interval: null,
+      location: '',
+      userId: '',
+      userData: '',
+      gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
+      siteKey: process.env.GRIDSOME_RECAPTCHA,
     }
   },
 
@@ -77,6 +76,11 @@ export default {
     onSubmit() {
 
       if(!this.data_email) {
+        return
+      }
+
+      if(this.data_email.includes('testing@example')) {
+        window.stop();
         return
       }
 
@@ -91,12 +95,6 @@ export default {
         clearInterval(this.interval)
       }
 
-    },
-
-    async getData() {
-     await fetch('https://api.ipify.org?format=json')
-        .then(response => response.json())
-        .then(data =>  this.userData = data.ip)
     }
 
   },
@@ -111,9 +109,7 @@ export default {
   },
 
   async mounted() {
-    await this.getData();
     this.location = 'https://robonomics.network' + this.$route.path;
-    this.userId = this.$matomo.getVisitorId();
   }
 
 }
