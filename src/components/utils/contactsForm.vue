@@ -1,5 +1,5 @@
 <template>
-  <gsp-form class="contacts__form" :gscriptID="gscript" :captchaStyle="captchaStyle">
+  <gsp-form class="contacts__form" :gscriptID="gscript" :siteKey="siteKey">
     <input
       required 
       name="email" 
@@ -19,6 +19,22 @@
       data-gsp-name="Location" 
       :data-gsp-data="location" 
       v-model="location"
+    />
+
+    <input       
+      type="hidden" 
+      placeholder="MatomoUser" 
+      data-gsp-name="MatomoUser" 
+      :data-gsp-data="userId" 
+      v-model="userId"
+    />
+
+    <input       
+      type="hidden" 
+      placeholder="UserData" 
+      data-gsp-name="UserData" 
+      :data-gsp-data="userData" 
+      v-model="userData"
     />
 
     <div class="google-sheets-form__actions">
@@ -48,15 +64,10 @@ export default {
     result: this.$response,
     interval: null,
     location: '',
+    userId: '',
+    userData: '',
     gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
-    captchaStyle: {     
-        width: 100,
-        height: 25,
-        textBaseline: 'top',
-        font: '25px Roboto',
-        textAlign: 'left',
-        fillStyle: '#6E9BEF'
-      }
+    siteKey: process.env.GRIDSOME_RECAPTCHA,
 
     }
   },
@@ -68,7 +79,6 @@ export default {
       if(!this.data_email) {
         return
       }
-
 
       if(this.data_email.includes('@')) {
         this.interval = setInterval(() => {
@@ -83,6 +93,12 @@ export default {
 
     },
 
+    async getData() {
+     await fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data =>  this.userData = data.ip)
+    }
+
   },
 
   watch: {
@@ -94,8 +110,10 @@ export default {
     }
   },
 
-  mounted() {
+  async mounted() {
+    await this.getData();
     this.location = 'https://robonomics.network' + this.$route.path;
+    this.userId = this.$matomo.getVisitorId();
   }
 
 }
