@@ -27,7 +27,7 @@
             <span class="line-7"></span>
           </div>
         </div>
-        <gsp-form class="contacts__form oldy" :gscriptID="gscript" :captchaStyle="captchaStyle">
+        <gsp-form class="contacts__form oldy" :gscriptID="gscript" :siteKey="siteKey">
             <h3>{{ $t('Get latest updates') }}</h3>
             <label class="contacts__label">
               <input
@@ -109,6 +109,7 @@
         location: '',
         interval: null,
         gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
+        siteKey: process.env.GRIDSOME_RECAPTCHA,
         captchaStyle: {     
           width: 100,
           height: 25,
