@@ -3,8 +3,8 @@
  
 
       <MetaInfo
-        pageTitle = "Index"
-        pageDescription = "Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user’s privacy."
+        pageTitle = "Robonomics Network"
+        pageDescription = "Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy."
       />
       
 

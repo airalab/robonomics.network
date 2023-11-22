@@ -753,5 +753,7 @@
   "Robonomics logos": "логотипи Robonomics",
   "Download all": "Завантажте всі",
   "XRT logos": "логотипи XRT",
-  "Recommended color palette": "Рекомендована палітра кольорів"
+  "Recommended color palette": "Рекомендована палітра кольорів",
+  "Page not found": "Сторінку не знайдено",
+  "In some reason the page you were looking for was not found. Maybe it was deprecated or url has a typo. Anyway, you may use navigation on robonomics.network to find what you need.": "З якоїсь причини сторінку, яку ви шукали, не знайдено. Можливо, вона застаріла або в URL є помилка. В будь-якому випадку, ви можете скористатися навігацією на robonomics.network, щоб знайти потрібну інформацію."
 }

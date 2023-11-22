@@ -2,7 +2,6 @@
   <layout>
     <MetaInfo
       pageTitle = "Robonomics NFTS"
-      pageDescription = ""
       pageImage = "/website_cover_nft.png"
     />
 
