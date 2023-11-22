@@ -753,5 +753,7 @@
   "Robonomics logos": "Descarga todos los",
   "Download all": "logotipos de XRT",
   "XRT logos": "Paleta de colores recomendada",
-  "Recommended color palette": "Paleta de colores recomendada"
+  "Recommended color palette": "Paleta de colores recomendada",
+  "Page not found": "Página no encontrada",
+  "In some reason the page you were looking for was not found. Maybe it was deprecated or url has a typo. Anyway, you may use navigation on robonomics.network to find what you need.": "Por alguna razón, la página que estabas buscando no se encontró. Tal vez fue eliminada o la URL tiene un error tipográfico. De todos modos, puedes usar la navegación en robonomics.network para encontrar lo que necesitas."
 }
