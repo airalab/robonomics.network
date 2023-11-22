@@ -3,7 +3,7 @@
 
     <MetaInfo
       pageTitle = "Blog"
-      :pageDescription = "$static.metadata.siteDescription"
+      pageDescription = "Futuristic, secure, and server-less IoT platform on top of Ethereum and Polkadot. Bringing economy of robots into the 4th industrial revolution."
       :pageImage = "'/website_cover_blogs.jpg'"
     />
 <!-- 

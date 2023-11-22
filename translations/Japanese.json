@@ -753,5 +753,7 @@
   "Robonomics logos": "XRTロゴ",
   "Download all": "をダウンロードする",
   "XRT logos": "推奨カラーパレット",
-  "Recommended color palette": "おすすめのカラーパレット"
+  "Recommended color palette": "おすすめのカラーパレット",
+  "Page not found": "ページが見つかりません",
+  "In some reason the page you were looking for was not found. Maybe it was deprecated or url has a typo. Anyway, you may use navigation on robonomics.network to find what you need.": "何らかの理由で、お探しのページが見つかりませんでした。おそらく非推奨になったか、URLに誤りがあるかもしれません。とにかく、必要な情報を見つけるためにrobonomics.networkのナビゲーションをご利用ください。"
 }
