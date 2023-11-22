@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      :pageTitle = "'Page not found'"
-      :pageDescription = "'In some reason the page you were looking for was not found (maybe it was deprecated or url has a typo). Anyway, you may use navigation on robonomics.network to find what you need.'"
+      pageTitle = "Page not found"
+      pageDescription = "In some reason the page you were looking for was not found. Maybe it was deprecated or url has a typo. Anyway, you may use navigation on robonomics.network to find what you need."
     />
     <section class="section__solid section__404">
       <div class="layout layout__content">

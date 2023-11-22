@@ -753,5 +753,7 @@
   "Robonomics logos": "Robonomics标志",
   "Download all": "下载所有",
   "XRT logos": "XRT标志",
-  "Recommended color palette": "推荐的配色方案"
+  "Recommended color palette": "推荐的配色方案",
+  "Page not found": "页面未找到",
+  "In some reason the page you were looking for was not found. Maybe it was deprecated or url has a typo. Anyway, you may use navigation on robonomics.network to find what you need.": "由于某种原因，您要查找的页面未找到。可能已被弃用或URL有拼写错误。无论如何，您可以使用robonomics.network上的导航来找到您需要的内容。"
 }
