@@ -60,6 +60,25 @@
             :itemBackground="logo.background"
           />
         </ul>
+
+        <!-- RWS -->
+        <div class="logos-and-assets__header">
+          <h2>{{$t('RWS logos')}}</h2>
+          <a href="/logos/logos-rws.zip" download>{{ $t('Download all') }}</a>
+        </div>
+
+        <ul class="logos__wrapper logos__xrt grid-3 list-simple">
+          <LogosItem 
+            class="logos-and-assets__item"
+            v-for="logo in rwsLogos"
+            :key="logo.id"
+            :srcImg="logo.srcImg"
+            :alt="logo.alt"
+            :srcPNG="logo.srcPNG"
+            :srcSVG="logo.srcSVG"
+            :itemBackground="logo.background"
+          />
+        </ul>
       </div>
     </section>
 
@@ -204,6 +223,15 @@ export default {
           alt: "logo xrt text 2",
           srcPNG: '/logos/logos-xrt/logo_XRT_vertical_color.png',
           srcSVG: '/logos/logos-xrt/logo_XRT_vertical_color.svg'
+        }
+      ],
+      rwsLogos: [
+        {
+          id: 0,
+          srcImg: 'logo-rws.svg',
+          alt: "logo rws",
+          srcPNG: '/logos/logos-rws/rws-logo.png',
+          srcSVG: '/logos/logos-rws/rws-logo.svg'
         }
       ]
     }
