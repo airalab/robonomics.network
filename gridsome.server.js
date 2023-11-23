@@ -66,6 +66,14 @@ module.exports = function (api) {
       }
     )
 
+    createPage({
+      path: `/robonomics_white_paper_en.pdf/`,
+      component: 'src/pages/redirect.vue',
+      context: {
+        redirect: '/white-paper'
+      }
+    })
+
     locales.forEach(l => {
       createPage(
         {
