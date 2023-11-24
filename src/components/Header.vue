@@ -2,7 +2,7 @@
       <header class="header">
 
         <div class="header-content" dir="ltr">
-          <div class="header-logo">
+          <div class="header-logo" @contextmenu.prevent="openLogoPage">
             <g-link to="/">
               <svg width="162" height="31" viewBox="0 0 162 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-robot hide-mobile">
                 <g clip-path="url(#clip0_951_181)">
@@ -57,6 +57,12 @@ export default {
     languageSwitcher: () => import('~/components/languageSwitcher.vue'),
     ThemeSwitcher: () => import('~/components/ThemeSwitcher.vue'),
     HeaderNav: () => import('~/components/HeaderNav.vue'),
+  },
+
+  methods: {
+    openLogoPage() {
+      this.$router.push({ path: '/logos-and-assets/' })
+    }
   }
 
 }
