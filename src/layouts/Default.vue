@@ -1,9 +1,10 @@
 <template>
-  <transition name="fade" appear>
+  <transition name="fade" appear mode="out-in">
    
   
     <!-- <div class="screen"> -->
     <div class="screen banner">
+      
       <span class="right-border"></span>
 
       <Header  v-if="$store.state.showHeader"/>
@@ -39,6 +40,16 @@
 
 
 <style scoped>
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.33s cubic-bezier(0,.44,.38,.99);
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
 
   .sidetext {
     font-family: var(--font-family-code);
@@ -155,9 +166,10 @@ export default {
       release: null,
       update: null,
       releaseTime: null,
-      releaseLink: null
+      releaseLink: null,
     }
   },
+
   methods: {
     BannerLink(p) {
       let current = this.$router.currentRoute.path
