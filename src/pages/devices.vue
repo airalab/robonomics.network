@@ -311,6 +311,12 @@ export default {
     }
   }
 
+  @media screen and (max-width: 510px) {
+    .devices__banner-title {
+      font-size: calc(var(--base-font-size) * 2);
+    }
+  }
+
   /* dark theme */
   .dark-theme a:not(.button):hover {
     opacity: 0.5;
