@@ -220,7 +220,7 @@
 /* for devices page */
 
 .devices__link {
-  padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);;
+  padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);
   width: 100%;
   font-family: var(--font-family-code);
   font-weight: 500;
