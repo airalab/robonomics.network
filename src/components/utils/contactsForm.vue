@@ -21,22 +21,6 @@
       v-model="location"
     />
 
-    <input       
-      type="hidden" 
-      placeholder="MatomoUser" 
-      data-gsp-name="MatomoUser" 
-      :data-gsp-data="userId" 
-      v-model="userId"
-    />
-
-    <input       
-      type="hidden" 
-      placeholder="UserData" 
-      data-gsp-name="UserData" 
-      :data-gsp-data="userData" 
-      v-model="userData"
-    />
-
     <div class="google-sheets-form__actions">
       <rbnet-button @click="onSubmit" v-if="result !== 'success'" class="button large"  :disabled="result === 'error' || result === 'wait'">
         <span v-if="result !== 'wait'">{{$t('Want emails from robonomics')}}</span>
