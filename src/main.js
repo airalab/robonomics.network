@@ -24,10 +24,6 @@ import Youtube from '~/components/Youtube.vue'
 import inViewportDirective from 'vue-in-viewport-directive'
 Vue.directive('in-viewport', inViewportDirective)
 
-// tracker component
-import userTracker from 'vue-client-actions-tracker-component'
-import '../node_modules/vue-client-actions-tracker-component/dist/vue-client-actions-tracker-component.css'
-
 // for translations
 import { t, setI18n, withI18n } from '../translations/i18n.js'
 
@@ -62,7 +58,6 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   if(isClient) {
     const vueSmoothScroll = require('vue2-smooth-scroll').default
     Vue.use(vueSmoothScroll)
-    Vue.use(userTracker);
   }
   
 }

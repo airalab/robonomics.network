@@ -76,7 +76,6 @@ module.exports = {
       options: {
         host: 'https://matomo.robonomics.network/',
         siteId: 3,
-        requireConsent: true
       }
     }
   ],

@@ -217,13 +217,21 @@
   font-size: 1.1rem;
 }
 
-/* tracker */
+/* for devices page */
 
-.my-tracker.user-tracker {
-  background-color: var(--color-blue);
+.devices__link {
+  padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);;
+  width: 100%;
+  font-family: var(--font-family-code);
+  font-weight: 500;
+  font-size: calc(var(--base-font-size) * 1.2);
+  background-color: var(--device-color-green);
+  text-align: center;
+  letter-spacing: 0;
+
 }
 
-.my-tracker .user-tracker__form  {
-  padding-left: 0;
+.devices__link--blue {
+  background-color: var(--device-color-blue);
 }
 

@@ -52,12 +52,15 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-	background-color: var(--color-green);
-	border-color: var(--color-green) !important;
+	background-color: var(--color-blue);
+	border-color: var(--color-blue) !important;
 }
 
 input[type="checkbox"]:checked:after {
 	content:"✓";
+	position: absolute;
+	top: -4px;
+	left: 3px;
 	color: #fff;
 	font-weight: 500;
 	font-size: 1.5rem;
