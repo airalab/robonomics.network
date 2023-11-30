@@ -21,6 +21,7 @@
             <li><g-link to="/wallpapers">{{ $t('Wallpapers') }}</g-link></li>
             <li><g-link to="/nft">NFT</g-link></li>
             <li><g-link to="/cases">{{ $t('Cases') }}</g-link></li>
+            <li><g-link to="/devices">{{$t('Devices')}}</g-link></li>
             <li ><g-link to="/blog">{{$t('Blog')}}</g-link></li>
             <li><g-link to="/ambassador-program">{{$t('Ambassador program')}}</g-link></li>
             <li><g-link to="/contact">{{$t('Contacts')}}</g-link></li>

@@ -21,8 +21,12 @@ body {
 	--color-red: #ee005b;
 	--color-red-dark: #bd044b;
 	--color-pink: #ff7aad;
+	--color-bright-pink:#ff3eb5;
 	--color-lightness: #f2f2f2; 
 	--color-darkness: #1e1e1e;
+
+	--device-color-blue: #2e9fe6;
+	--device-color-green: #a7d100;
 
 	--color-blue-vivid: #75FBFD;
 	--color-blue-lightest: #DCE8FF;
@@ -155,6 +159,10 @@ body.dark-theme {
 	--header-bg: #303030;;
 
 	--post-code-bg: #3c5c75;
+
+	--device-color-blue: #93d6ff;
+	--device-color-green: rgb(136, 224, 98);
+	--color-bright-pink:#f9a6d9;
 }
 
 

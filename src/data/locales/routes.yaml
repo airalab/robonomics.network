@@ -70,6 +70,14 @@
   component: './src/pages/cases/Index.vue'
   typename: 'page'
 
+- path: '/devices/'
+  component: './src/pages/devices.vue'
+  typename: 'page'
+
+- path: '/privacy-policy/'
+  component: './src/pages/privacy-policy.vue'
+  typename: 'page'
+
 # all cases go here
 - path: '/cases/fronius-solar-web'
   component: './src/pages/cases/fronius-solar-web.vue'
