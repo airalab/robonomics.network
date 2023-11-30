@@ -57,6 +57,8 @@ export default {
 <style scoped>
   .devices__link {
     color: var(--color-light);
+    font-family: var(--font-family);
+    text-transform: uppercase;
   }
 
   .grid-3 {
@@ -143,6 +145,10 @@ export default {
     .product__img {
       max-width: 380px;
       margin: 0 auto;
+    }
+
+    .devices__link {
+      padding: calc(var(--space) * 0.5) calc(var(--space) * 0.7);
     }
 
   }
