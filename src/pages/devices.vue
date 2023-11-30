@@ -294,6 +294,7 @@ export default {
 
     .devices__banner-logos img:first-of-type {
       margin-right: 0;
+      max-width: 280px;
       margin-bottom: calc(var(--space) * 0.5);
     }
 
