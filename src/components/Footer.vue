@@ -26,6 +26,7 @@
 
           <div>
             <ul class="animate-inside" v-in-viewport.once>
+              <li><g-link to="/devices">{{$t('Devices')}}</g-link></li>
               <li><g-link to="/blog">{{$t('Blog')}}</g-link></li>
               <li><g-link to="/cases">{{ $t('Cases') }}</g-link></li>
               <li><g-link to="/ambassador-program">{{$t('Ambassador program')}}</g-link></li>
@@ -51,6 +52,10 @@
         <div class="robonomics-info footer-text"  v-if="$locale != 'en'">
           <span class="">{{ $t('Translation was executed by AI so there may be some inaccuracies') }}. </span>
            <g-link to="https://github.com/airalab/robonomics.network/issues">{{ $t('Inform us') }}</g-link>, {{ $t('please') }}, {{ $t('if you find any') }}
+        </div>
+
+        <div class="footer-text robonomics-info">
+          <g-link to="/privacy-policy">{{ $t('Privacy Policy') }}</g-link>
         </div>
       </section>
     </div>

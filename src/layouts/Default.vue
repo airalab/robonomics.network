@@ -21,16 +21,6 @@
         <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
       </div>
 
-
-      <client-only>
-
-        <userTracker
-          classCustom="my-tracker"
-          @activateTracker="activateTracker"
-        />
-
-      </client-only>
-
     </div>
   
   </transition>
@@ -178,11 +168,8 @@ export default {
       return current.includes(p)
     },
     activateTracker() {
-      if(this.$matomo) {
-          this.$matomo && this.$matomo.setConsentGiven();
-          this.$matomo && this.$matomo.enableLinkTracking();
-          this.$matomo && this.$matomo.trackPageView();
-      }
+      this.$matomo && this.$matomo.disableCookies();
+      this.$matomo && this.$matomo.trackPageView();
     }
   },
 
@@ -207,6 +194,8 @@ export default {
       };
 
       window.scrollTo(0,0);
+
+      this.activateTracker();
   }
 }
 </script>
