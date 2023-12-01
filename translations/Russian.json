@@ -755,7 +755,6 @@
   "XRT logos": "логотипы XRT",
   "Recommended color palette": "Рекомендуемая цветовая палитра",
   "RWS logos": "Логотипы RWS",
-  "View on Hackster": "Просмотр на Hackster",
   "Buy in Telegram bot": "Купить в Telegram-боте",
   "Key Features": "Основные характеристики",
   "Smart Devices": "Умные устройства",
@@ -819,5 +818,7 @@
   "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "Присоединяйтесь к этому датчику качества воздуха к децентрализованной карты открытых датчиков, которая работает исключительно с целью служить свободной воле людей. Этот датчик готов к установке, вам понадобится wi-fi и розетка, его можно установить как внутри помещения, так и на улице. Включает в себя датчик PM2.5/PM10 и датчик температуры/влажности, может быть расширен с помощью нескольких типов дополнительных датчиков (VOC, CO2, атмосферное давление).",
   "Measures PM2.5/PM10": "Измеряет PM2.5/PM10",
   "Can be added as a part of global sensor map or your own fork": "Может быть добавлен как часть глобальной карты датчиков или вашей собственной ветви",
-  "Compatible with luftdaten": "Совместим с luftdaten"
+  "Compatible with luftdaten": "Совместим с luftdaten",
+  "Start of Sales: Jan '24": "Начало продаж: янв '24",
+  "View specification": "Просмотреть спецификацию"
 }

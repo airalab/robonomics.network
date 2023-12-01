@@ -755,7 +755,6 @@
   "XRT logos": "λογότυπα XRT",
   "Recommended color palette": "Προτεινόμενη παλέτα χρωμάτων",
   "RWS logos": "Λογότυπα RWS",
-  "View on Hackster": "Προβολή στο Hackster",
   "Buy in Telegram bot": "Αγορά σε bot Telegram",
   "Key Features": "Βασικά χαρακτηριστικά",
   "Smart Devices": "Έξυπνες Συσκευές",
@@ -819,6 +818,7 @@
   "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "Συνδεθείτε με αυτόν τον αισθητήρα ποιότητας αέρα στον χάρτη αποκεντρωμένων αισθητήρων ανοιχτού κώδικα που λειτουργεί με αποκλειστική πρόθεση να εξυπηρετεί την ελεύθερη βούληση των ατόμων. Αυτός ο αισθητήρας είναι έτοιμος για εγκατάσταση, θα χρειαστείτε wi-fi και πρίζα, μπορεί να εγκατασταθεί τόσο σε εσωτερικούς όσο και σε εξωτερικούς χώρους. Περιλαμβάνει αισθητήρα PM2,5/PM10 και αισθητήρα θερμοκρασίας/υγρασίας, μπορεί να επεκταθεί με διάφορους τύπους πρόσθετων αισθητήρων (VOC, CO2, ατμοσφαιρική πίεση).",
   "Measures PM2.5/PM10": "Μετρά PM2,5/PM10",
   "Can be added as a part of global sensor map or your own fork": "Μπορεί να προστεθεί ως μέρος του παγκόσμιου χάρτη αισθητήρων ή του δικού σας πιρουνιού",
-  "Compatible with luftdaten": "Συμβατό με luftdaten"
-
+  "Compatible with luftdaten": "Συμβατό με luftdaten",
+  "Start of Sales: Jan '24": "Έναρξη πωλήσεων: Ιαν '24",
+  "View specification": "Προβολή προδιαγραφής"
 }

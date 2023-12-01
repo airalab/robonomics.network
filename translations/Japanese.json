@@ -755,7 +755,6 @@
   "XRT logos": "推奨カラーパレット",
   "Recommended color palette": "おすすめのカラーパレット",
   "RWS logos": "RWSのロゴ",
-  "View on Hackster": "Hacksterで表示",
   "Buy in Telegram bot": "Telegramボットで購入",
   "Key Features": "主な特徴",
   "Smart Devices": "スマートデバイス",
@@ -819,5 +818,7 @@
   "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "この空気品質センサーを分散型のオープンソースセンサーマップに参加させ、個人の自由意志を奉仕することを唯一の目的としています。このセンサーはインストールの準備ができており、wi-fiと電源ソケットが必要で。屋内および屋外の両方にインストールすることができます。PM2.5/PM10センサーと温度/湿度センサーが含まれており、さまざまなタイプの追加センサー（VOC、CO2、大気圧）で拡張することができます。",
   "Measures PM2.5/PM10": "PM2.5/PM10を測定します",
   "Can be added as a part of global sensor map or your own fork": "グローバルセンサーマップまたは独自のフォークの一部として追加できます",
-  "Compatible with luftdaten": "luftdatenと互換性があります"
+  "Compatible with luftdaten": "luftdatenと互換性があります",
+  "Start of Sales: Jan '24": "販売開始：1月'24",
+  "View specification": "仕様を表示する"
 }
