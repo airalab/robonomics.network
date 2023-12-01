@@ -761,7 +761,6 @@
   "Control your home": "控制您的家",
   "Be smart": "变得聪明",
   "Be independent": "变得独立",
-  "We are self-driving team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "我们是一支在机器人技术、区块链和物联网方面拥有丰富专业知识的自动驾驶团队。深入了解高级智能家居用户面临的挑战后，我们决定自己制造设备。与我们一起掌控您的家，节约能源，摆脱企业云和设备限制！",
   "BUY DEVICE": "购买设备",
   "Support it on hackster.io": "在hackster.io上支持它",
   "Product 1: Universal IR Remote Control": "产品1：通用红外遥控器",
@@ -820,5 +819,7 @@
   "Can be added as a part of global sensor map or your own fork": "可以作为全球传感器地图或您自己的分支的一部分添加",
   "Compatible with luftdaten": "与luftdaten兼容",
   "Start of Sales: Jan '24": "销售开始日期：2024年1月",
-  "View specification": "查看规格"
+  "View specification": "查看规格",
+  "We are self-driving team with more then 8 years expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "我们是一支自动驾驶团队，拥有超过8年的机器人技术、区块链和物联网专业知识。对于高级智能家居用户所面临的挑战有着深刻的理解，我们选择冒险制造自己的设备。与我们一起掌控您的家，节约能源，摆脱企业云和设备限制！",
+  "Buy devices": "购买设备"
 }

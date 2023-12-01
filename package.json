@@ -20,7 +20,7 @@
     "gridsome-plugin-matomo": "^0.1.0",
     "gridsome-plugin-translateit": "^1.0.10",
     "gridsome-source-github-api": "^0.2.0",
-    "i18n-pro": "^2.0.0",
+    "i18n-pro": "^2.1.0",
     "parallax-js": "^3.1.0",
     "vue-in-viewport-directive": "^2.0.2",
     "vue-svg-loader": "^0.16.0",
@@ -28,7 +28,6 @@
     "vueinview": "^1.0.7",
     "vuex": "^3.6.2"
   },
-  "devDependencies": {},
   "overrides": {
     "gridsome": {
       "sharp": "^0.30.7"
