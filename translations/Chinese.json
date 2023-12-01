@@ -755,7 +755,6 @@
   "XRT logos": "XRT标志",
   "Recommended color palette": "推荐的配色方案",
   "RWS logos": "RWS 徽标",
-  "View on Hackster": "在Hackster上查看",
   "Buy in Telegram bot": "在Telegram机器人中购买",
   "Key Features": "主要特点",
   "Smart Devices": "智能设备",
@@ -819,5 +818,7 @@
   "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "加入这个空气质量传感器到去中心化的开源传感器地图，其唯一目的是为个人的自由意志服务。该传感器已经准备好安装，您需要Wi-Fi和电源插座，它可以安装在室内和室外。包括PM2.5/PM10传感器和温度/湿度传感器，可以通过多种类型的附加传感器（VOC、CO2、大气压力）进行扩展。",
   "Measures PM2.5/PM10": "测量PM2.5/PM10",
   "Can be added as a part of global sensor map or your own fork": "可以作为全球传感器地图或您自己的分支的一部分添加",
-  "Compatible with luftdaten": "与luftdaten兼容"
+  "Compatible with luftdaten": "与luftdaten兼容",
+  "Start of Sales: Jan '24": "销售开始日期：2024年1月",
+  "View specification": "查看规格"
 }
