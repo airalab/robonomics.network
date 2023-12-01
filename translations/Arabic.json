@@ -654,7 +654,6 @@
   "Praxeology inspires us with interesting ideas about human behavior without direct dependence on the purposes. This gives us the opportunity to work on the processes of the economy of robots conditionally as with a black box without delving into the ultimate goals. At the same time, teleology poses a challenge to explain causes.": "تلهمنا البراكسيولوجيا بأفكار مثيرة حول سلوك الإنسان بدون الاعتماد المباشر على الأغراض. هذا يمنحنا الفرصة للعمل على عمليات اقتصاد الروبوتات بشكل مشروط كمع صندوق أسود دون التعمق في الأهداف النهائية. في الوقت نفسه، تطرح التليولوجيا تحديًا لشرح الأسباب.",
   "We hope that somewhere at the junction of the works of Mises and Wiener, a point for further development of the robot economy may be found, not just as a protocol of interaction between people and machines of a praxeological nature, but taking into account the teleological elements of building interspecies communication.": "نأمل أن يتم العثور في مكان ما على تقاطع أعمال ميسيس ووينر، نقطة لمزيد من تطوير اقتصاد الروبوت قد يتم العثور عليها، ليس فقط كبروتوكول للتفاعل بين الناس والآلات ذات الطابع البراكسيولوجي، ولكن مع مراعاة العناصر التليولوجية لبناء التواصل بين الأنواع.",
   "RWS logos": "شعارات RWS",
-  "View on Hackster": "عرض على هاكستر",
   "Buy in Telegram bot": "الشراء على بوت التليجرام",
   "Key Features": "دلائل الميزات",
   "Smart Devices": "الأجهزة الذكية",
@@ -718,5 +717,7 @@
   "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "انضم مع مستشعر جودة الهواء هذا إلى خريطة أجهزة الاستشعار اللامركزية مفتوحة المصدر والتي تعمل بهدف وحيد هو خدمة الإرادة الحرة للأفراد. هذا المستشعر جاهز للتثبيت، وسوف تحتاج إلى شبكة Wi-Fi ومقبس طاقة، ويمكن تثبيته داخليًا وخارجيًا. يتضمن مستشعر PM2.5/PM10 ومستشعر درجة الحرارة/الرطوبة، ويمكن توسيعه باستخدام عدة أنواع من أجهزة الاستشعار الإضافية (المركبات العضوية المتطايرة، وثاني أكسيد الكربون، والضغط الجوي).",
   "Measures PM2.5/PM10": "يقيس PM2.5/PM10",
   "Can be added as a part of global sensor map or your own fork": "يمكن إضافتها كجزء من خريطة الاستشعار العالمية أو الشوكة الخاصة بك",
-  "Compatible with luftdaten": "متوافق مع لوفتداتن"
+  "Compatible with luftdaten": "متوافق مع لوفتداتن",
+  "Start of Sales: Jan '24": "بداية المبيعات: 24 يناير",
+  "View specification": "عرض المواصفات"
 }

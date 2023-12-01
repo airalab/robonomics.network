@@ -755,7 +755,6 @@
   "XRT logos": "Paleta de colores recomendada",
   "Recommended color palette": "Paleta de colores recomendada",
   "RWS logos": "logotipos de RWS",
-  "View on Hackster": "Ver en Hackster",
   "Buy in Telegram bot": "Comprar en el bot de Telegram",
   "Key Features": "Características clave",
   "Smart Devices": "Dispositivos inteligentes",
@@ -819,5 +818,7 @@
   "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "Únete a este sensor de calidad del aire al mapa descentralizado de sensores de código abierto que opera con la única intención de servir la libre voluntad de las personas. Este sensor está listo para instalar, necesitarás wi-fi y un enchufe de corriente, se puede instalar tanto en interiores como en exteriores. Incluye sensor de PM2.5/PM10 y sensor de temperatura/humedad, se puede ampliar con varios tipos de sensores adicionales (VOC, CO2, presión atmosférica).",
   "Measures PM2.5/PM10": "Mide PM2.5/PM10",
   "Can be added as a part of global sensor map or your own fork": "Se puede agregar como parte del mapa de sensores global o tu propia bifurcación",
-  "Compatible with luftdaten": "Compatible con luftdaten"
+  "Compatible with luftdaten": "Compatible con luftdaten",
+  "Start of Sales: Jan '24": "Inicio de ventas: ene '24",
+  "View specification": "Ver especificación"
 }

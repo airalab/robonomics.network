@@ -5,7 +5,7 @@
       <g-image :src="require(`!!assets-loader!@/assets/images/devices/${img}`)"  quality="75%" :alt="title" class="product__img"/>
       <p class="product__text">{{ text }}</p>
       <div class="products__links">
-        <g-link :to="hacksterLink" class="devices__link devices__link--blue">{{ $t('View on Hackster') }}</g-link>
+        <g-link :to="hacksterLink" class="devices__link devices__link--blue">{{ $t('View specification') }}</g-link>
         <g-link v-if="!release" :to="telegramLink" class="devices__link">{{ $t('Buy in Telegram bot') }}</g-link>
         <span v-if="release && !telegramLink"  class="product__release">{{release}}</span>
       </div>

@@ -755,7 +755,6 @@
   "in 2019 for newcomers to the project.": "im Jahr 2019 für Neueinsteiger in das Projekt.",
   "RoSeMAN": "RoSeMAN",
   "RWS logos": "RWS-Logos",
-  "View on Hackster": "Auf Hackster anzeigen",
   "Buy in Telegram bot": "Im Telegramm-Bot kaufen",
   "Key Features": "Hauptmerkmale",
   "Smart Devices": "Intelligente Geräte",
@@ -819,5 +818,7 @@
   "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "Schließen Sie sich diesem Luftqualitätssensor an die dezentralisierte Open-Source-Sensorkarte an, die ausschließlich dazu dient, den freien Willen der Einzelpersonen zu erfüllen. Dieser Sensor ist einsatzbereit und erfordert WLAN und eine Steckdose. Er kann sowohl drinnen als auch draußen installiert werden. Enthält PM2.5/PM10-Sensor und Temperatur-/Feuchtigkeitssensor, kann mit verschiedenen Arten von zusätzlichen Sensoren (VOC, CO2, atmosphärischer Druck) erweitert werden.",
   "Measures PM2.5/PM10": "Misst PM2.5/PM10",
   "Can be added as a part of global sensor map or your own fork": "Kann als Teil der globalen Sensorkarte oder Ihrer eigenen Abspaltung hinzugefügt werden",
-  "Compatible with luftdaten": "Kompatibel mit Luftdaten"
+  "Compatible with luftdaten": "Kompatibel mit Luftdaten",
+  "Start of Sales: Jan '24": "Verkaufsstart: Jan '24",
+  "View specification": "Spezifikation anzeigen"
 }

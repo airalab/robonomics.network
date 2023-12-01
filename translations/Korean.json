@@ -755,7 +755,6 @@
   "for the distinguished Robonomics brand": "를 발견하세요.",
   "Robonomics logos": "Robonomics 로고",
   "RWS logos": "RWS 로고",
-  "View on Hackster": "Hackster에서 보기",
   "Buy in Telegram bot": "Telegram 봇에서 구매하기",
   "Key Features": "주요 기능",
   "Smart Devices": "스마트 기기",
@@ -819,5 +818,7 @@
   "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "이 분산 오픈 소스 센서 맵에 이 대기질 센서와 함께 참여하여 개인의 자유 의지를 위해 운영됩니다. 이 센서는 설치 준비가 되어 있으며, 와이파이와 전원 소켓이 필요합니다. 실내 및 실외에 모두 설치할 수 있습니다. PM2.5/PM10 센서와 온도/습도 센서가 포함되어 있으며, VOC, CO2, 대기압과 같은 여러 종류의 추가 센로 확장할 수 있습니다.",
   "Measures PM2.5/PM10": "PM2.5/PM10 측정",
   "Can be added as a part of global sensor map or your own fork": "전역 센서 맵 또는 자체 포크의 일부로 추가할 수 있습니다.",
-  "Compatible with luftdaten": "luftdaten과 호환됩니다."
+  "Compatible with luftdaten": "luftdaten과 호환됩니다.",
+  "Start of Sales: Jan '24": "판매 시작: 1월 '24",
+  "View specification": "사양 보기"
 }
