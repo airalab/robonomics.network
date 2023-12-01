@@ -768,7 +768,6 @@
   "Product 1: Universal IR Remote Control": "产品1：通用红外遥控器",
   "Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!": "使用任何空调，为您家中的任何门设置开/关操作，打造智能气候控制。我们使用开源Tasmota固件制作了通用红外遥控器。我们还安装了USB-C端口，以提供更好的体验-只需简单的有线连接即可升级遥控器的固件！",
   "Supports wide range of devices": "支持广泛的设备",
-  "Firmware upgradable by plug-in USB-C port": "通过插入USB-C端口可升级固件",
   "Home Assistant Friendly": "与Home Assistant兼容",
   "Product 2: Smart Energy Power Consumption Monitoring": "产品2：智能能源功耗监测",
   "Have you ever wondered what consumes the most electricity in your home? Our smart DIN energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.": "您是否曾想过家中哪些设备消耗了最多的电力？我们的智能DIN能源功耗计是为了帮助您识别主要的电力使用来源并防止不必要的能源泄漏而设计的。这个能源计可以用于单个资产或整个建筑物，不需要任何云服务，具备MQTT协议，可以与Home Assistant一起使用，并提供有用的能源管理仪表板。",
@@ -809,5 +808,16 @@
   "Retention of data": "数据保留",
   "We will retain your information as long as necessary to provide you with the services or as otherwise set forth in this Policy. We will also retain and use this information as necessary for the purposes set out in this Policy and to the extent necessary to comply with our legal obligations, resolve disputes, enforce our agreements and protect Robonomics Network legal rights.": "我们将保留您的信息，以便为您提供服务，或根据本政策的规定。我们还将根据本政策中所述的目的保留和使用这些信息，并在必要时遵守法律义务，解决争议，执行协议并保护Robonomics Network的法律权益。",
   "We also collect and maintain aggregated, anonymized or pseudonymized information which we may retain indefinitely to protect the safety and security of our Site, improve our Services or comply with legal obligations": "我们还收集和保留聚合的、匿名化或假名化的信息，我们可能会无限期地保留这些信息，以保护我们网站的安全性，改善我们的服务或履行法律义务。",
-  "Devices": "设备"
+  "Devices": "设备",
+  "type-c for OSS firmware upgrading": "用于OSS固件升级的Type-C",
+  "WI-FI": "WI-FI",
+  "MQTT": "MQTT",
+  "Product 3, 4: 1,2 gang wi-fi Smart Switch": "产品3、4：1、2个Wi-Fi智能开关",
+  "Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.": "为什么要安装任何公司应用来开关智能灯？我们的Wi-Fi智能开关不需要任何云连接。我们尝试了世界各地许多其他制造商的开关，并了解了一些重要细节，以使设备更加舒适。作为Robonomics的其他智能设备，它与Home Assistant完全兼容，使用开源可升级固件Tasmota。",
+  "large touchable  buttons": "大触摸按钮",
+  "Product 5: Air Quality Sensor": "产品5：空气质量传感器",
+  "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "加入这个空气质量传感器到去中心化的开源传感器地图，其唯一目的是为个人的自由意志服务。该传感器已经准备好安装，您需要Wi-Fi和电源插座，它可以安装在室内和室外。包括PM2.5/PM10传感器和温度/湿度传感器，可以通过多种类型的附加传感器（VOC、CO2、大气压力）进行扩展。",
+  "Measures PM2.5/PM10": "测量PM2.5/PM10",
+  "Can be added as a part of global sensor map or your own fork": "可以作为全球传感器地图或您自己的分支的一部分添加",
+  "Compatible with luftdaten": "与luftdaten兼容"
 }

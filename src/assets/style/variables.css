@@ -27,6 +27,7 @@ body {
 
 	--device-color-blue: #2e9fe6;
 	--device-color-green: #a7d100;
+	--device-color-yellow: #fff388;
 
 	--color-blue-vivid: #75FBFD;
 	--color-blue-lightest: #DCE8FF;
@@ -162,6 +163,7 @@ body.dark-theme {
 
 	--device-color-blue: #93d6ff;
 	--device-color-green: rgb(136, 224, 98);
+	--device-color-yellow: #beae1c;
 	--color-bright-pink:#f9a6d9;
 }
 
