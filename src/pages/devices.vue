@@ -33,18 +33,17 @@
         <g-image class="devices__banner-img devices__banner-img--girl" quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-1.png"/>
         <g-image class="devices__banner-img devices__banner-img--blob"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-2.png"/>
 
-        <div class="devices__banner-buy">
-          <div class="devices__banner-buy-wrapper">
-            <g-link :to="links.tg" class="devices__link">{{ $t('Buy devices') }}</g-link>
-            <!-- <g-link to="https://www.hackster.io/robonomics-web3-cloud/products"  class="devices__banner-support">
-              <span>{{ $t('Support it on hackster.io') }}</span>
-            </g-link> -->
+        <div class="banner-buttons">
+          <div class="banner-buttons-content">
+            <rb-button :to="links.tg" buttoncolor="green">{{ $t('Buy devices') }}</rb-button>
           </div>
+          <!-- <div class="devices__banner-buy-wrapper">
+            <g-link :to="links.tg" class="devices__link">{{ $t('Buy devices') }}</g-link>
+            <g-link to="https://www.hackster.io/robonomics-web3-cloud/products"  class="devices__banner-support">
+              <span>{{ $t('Support it on hackster.io') }}</span>
+            </g-link>
+          </div> -->
         </div>
-
-        <!-- <div class="banner-buttons">
-          <rbnet-button :to="links.tg">{{ $t('BUY DEVICE') }}</rbnet-button>
-        </div> -->
 
       </div>
     </section>
@@ -160,7 +159,7 @@ export default {
           title: this.$t('Product 3, 4: 1,2 gang wi-fi Smart Switch'),
           text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
           img: 'smart-switch.png',
-          hacksterLink: "https://wiki.robonomics.network/docs/wi-fi-smart-switch",
+          hacksterLink: "https://wiki.robonomics.network/docs/smart-switches",
           release: this.$t("Start of Sales: Jan '24"),
           features: [
             { 
@@ -310,24 +309,47 @@ export default {
     width: 100%;
   }
 
-  .devices__banner-buy {
-    position: absolute;
-    max-width: 385px;
-    width: 100%;
-    top: 173px;
-    left: 735px;
-    min-height: 269px;
+  .banner-buttons {
+    align-items: center;
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    background-image: url('data:image/svg+xml,<svg width="426" height="298" viewBox="0 0 426 298" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M410.456 224.054C397.789 244.78 377.52 260.298 355.366 271.598C310.161 294.647 255.495 301.427 203.556 290.384C185.682 286.597 168.14 280.765 150.172 277.65C132.204 274.534 113.231 274.299 97.2017 281.397C88.3201 285.317 80.6036 291.352 71.4988 294.832C49.2601 303.31 19.9947 293.229 7.10669 272.391C-5.75898 251.566 -0.156672 222.728 19.5258 209.944C29.8897 203.202 42.7811 200.917 54.8238 197.209C91.0088 186.088 93.7275 178.046 110.168 145.293C129.36 107.052 92.5946 44.8325 126.008 17.5483C163.32 -12.9249 293.792 2.72181 335.508 26.0483C380.807 51.375 410.591 85.3288 421.701 134.039C428.491 163.741 426.644 195.464 412.171 221.145C411.608 222.101 411.032 223.077 410.469 224.033L410.456 224.054Z" fill="white"/></svg>');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    justify-content: center;
+    width: 100%;
     z-index: 0;
+    padding: 2rem 0;
   }
 
-  .devices__banner-buy-wrapper {
+  @media screen and (max-width: 1649px) {
+    .banner-buttons-content {
+      width: 100%;
+    }
+
+    .banner-buttons-content .rb-button {
+      width: 100%;
+    } 
+  }
+
+  @media screen and (min-width: 1650px) {
+    .banner-buttons {
+      background-image: url('data:image/svg+xml,<svg width="426" height="298" viewBox="0 0 426 298" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M410.456 224.054C397.789 244.78 377.52 260.298 355.366 271.598C310.161 294.647 255.495 301.427 203.556 290.384C185.682 286.597 168.14 280.765 150.172 277.65C132.204 274.534 113.231 274.299 97.2017 281.397C88.3201 285.317 80.6036 291.352 71.4988 294.832C49.2601 303.31 19.9947 293.229 7.10669 272.391C-5.75898 251.566 -0.156672 222.728 19.5258 209.944C29.8897 203.202 42.7811 200.917 54.8238 197.209C91.0088 186.088 93.7275 178.046 110.168 145.293C129.36 107.052 92.5946 44.8325 126.008 17.5483C163.32 -12.9249 293.792 2.72181 335.508 26.0483C380.807 51.375 410.591 85.3288 421.701 134.039C428.491 163.741 426.644 195.464 412.171 221.145C411.608 222.101 411.032 223.077 410.469 224.033L410.456 224.054Z" fill="white"/></svg>');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 735px;
+      max-width: 385px;
+      min-height: 269px;
+      position: absolute;
+      top: 173px;
+      z-index: 0;
+      padding: 0;
+    }
+
+    .banner-buttons-content {
+      margin-left: 70px;
+    }
+  }
+
+  /* .devices__banner-buy-wrapper {
     max-width: 280px;
     width: 100%;
     position: absolute;
@@ -335,7 +357,7 @@ export default {
     right: -14px;
     padding: calc(var(--space) * 0.5);
     padding-bottom: var(--space);
-  }
+  } */
 
 
   .devices__banner-support {
@@ -369,16 +391,6 @@ export default {
   @media screen and (max-width: 1850px) {
       .devices__banner-img--girl {
       max-width: 320px;
-    }
-  }
-
-  @media screen and (max-width: 1650px) {
-    .devices__banner-buy {
-      left: unset;
-      top: unset;
-      bottom: -30px;
-      right: 125px;
-      /* min-height: 260px; */
     }
   }
 
@@ -447,22 +459,20 @@ export default {
     }
 
 
-    .devices__banner-buy {
+    /* .devices__banner-buy {
       position: static;
       min-height: auto;
-      /* left: 0;
-      right: unset; */
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: var(--color-light);
       background-image: none;
-    }
+    } */
 
-    .devices__banner-buy-wrapper {
+    /* .devices__banner-buy-wrapper {
       position: static;
       padding-top: var(--space);
-    }
+    } */
   }
 
   /* dark theme */

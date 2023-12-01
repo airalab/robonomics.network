@@ -2,7 +2,15 @@ body {
 
 	--base-font-size: 1.2rem;
 	--font-family: 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  	--font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
+	--rb-color-blue: hsl(228.7,67.5%,49.4%);
+	--rb-color-blue-dark: hsl(228.7,67.5%,40%);
+	--rb-color-green: hsl(82,96%,41%);
+	--rb-color-green-dark: hsl(82,96%,35%);
+	--rb-color-light: hsl(229, 0%, 100%);
+	--rb-color-dark: hsl(229, 0%, 0%);
+	--rb-color-gray: hsl(229, 0%, 60%);
 
 	--color-dark: #000000;
 	--color-darkish: #333333;
