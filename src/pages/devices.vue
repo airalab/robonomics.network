@@ -3,7 +3,7 @@
 
     <MetaInfo
       pageTitle = "Smart devices from Robonomics"
-      pageDescription = "Control your home.Be smart.Be independent."
+      pageDescription = "Take full control over your smart devices using open-source firmwares, software and cloud-free hardware from Robonomics. Start with Universal IR Remote Control, Smart Energy Power Consumption Monitoring, 1,2 gang wi-fi Smart Switch, Air Quality Sensor, Tasmota firmware and Home Assistant smart home dashboard."
       :pageImage = "'/website_cover_devices.png'"
     />
 
@@ -22,7 +22,7 @@
             <span>{{ $t('Be independent') }}</span>
           </h3>
 
-          <p class="devices__text">{{ $t("We are self-driving team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!") }}</p>
+          <p class="devices__text">{{ $t("We are self-driving team with more then 8 years expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!") }}</p>
 
           <div class="devices__banner-logos">
             <g-image quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-hass-logo.png"/>
@@ -35,12 +35,16 @@
 
         <div class="devices__banner-buy">
           <div class="devices__banner-buy-wrapper">
-            <g-link to="https://www.hackster.io/robonomics-web3-cloud/products" class="devices__link">{{ $t('BUY DEVICE') }}</g-link>
-            <g-link to="https://www.hackster.io/robonomics-web3-cloud/products"  class="devices__banner-support">
+            <g-link :to="links.tg" class="devices__link">{{ $t('Buy devices') }}</g-link>
+            <!-- <g-link to="https://www.hackster.io/robonomics-web3-cloud/products"  class="devices__banner-support">
               <span>{{ $t('Support it on hackster.io') }}</span>
-            </g-link>
+            </g-link> -->
           </div>
         </div>
+
+        <!-- <div class="banner-buttons">
+          <rbnet-button :to="links.tg">{{ $t('BUY DEVICE') }}</rbnet-button>
+        </div> -->
 
       </div>
     </section>
@@ -76,14 +80,22 @@ export default {
 
   data() {
     return {
-      devices: [
+      links: {
+        tg: 'https://t.me/robo_oshw_bot'
+      }
+    }
+  },
+
+  computed: {
+    devices() {
+      return [
         {
           id: 0,
           title: this.$t(`Product 1: Universal IR Remote Control`),
           text: this.$t('Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!'),
           img: 'ir-remote.png',
           hacksterLink: "https://wiki.robonomics.network/docs/ir-controller/",
-          telegramLink: "https://t.me/robo_oshw_bot",
+          telegramLink: this.links.tg,
           features: [
             {
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -113,8 +125,8 @@ export default {
           title: this.$t('Product 2: Smart Energy Power Consumption Monitoring'),
           text: this.$t('Have you ever wondered what consumes the most electricity in your home? Our smart DIN energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.'),
           img: 'energy-monitor.png',
-          hacksterLink: "https://wiki.robonomics.network/docs/energy-meter",
-          telegramLink: "https://t.me/robo_oshw_bot",
+          hacksterLink: "https://wiki.robonomics.network/docs/energy-monitoring",
+          telegramLink: this.links.tg,
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -184,7 +196,7 @@ export default {
           text: this.$t('Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).'),
           img: 'quality-sensor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/air-quality-sensor",
-          telegramLink: "https://t.me/robo_oshw_bot",
+          // telegramLink: this.links.tg,
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -224,8 +236,9 @@ export default {
     background-color: var(--color-blue);
   }
 
-  .devices__link {
-    color: var(--color-light);
+  a.devices__link {
+    --color-link: var(--color-light);
+    --color-link-hover: var(--color-light)
   }
 
   .devices__content {
@@ -318,8 +331,8 @@ export default {
     max-width: 280px;
     width: 100%;
     position: absolute;
-    bottom: 40px;
-    right: 2px;
+    bottom: 75px;
+    right: -14px;
     padding: calc(var(--space) * 0.5);
     padding-bottom: var(--space);
   }

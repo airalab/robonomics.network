@@ -761,7 +761,6 @@
   "Control your home": "Управляйте своим домом",
   "Be smart": "Будьте умными",
   "Be independent": "Будьте независимыми",
-  "We are self-driving team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "Мы команда самоуправляемых с экспертизой в робототехнике, блокчейне и IoT. Имея глубокое понимание проблем, с которыми сталкиваются опытные пользователи умного дома, мы решили заняться производством собственных устройств. Возьмите контроль над своим домом, экономьте энергию и освободите себя от корпоративных облаков и ограничений устройств вместе с нами!",
   "BUY DEVICE": "КУПИТЬ УСТРОЙСТВО",
   "Support it on hackster.io": "Поддержите на hackster.io",
   "Product 1: Universal IR Remote Control": "Продукт 1: Универсальный ИК-пульт дистанционного управления",
@@ -820,5 +819,7 @@
   "Can be added as a part of global sensor map or your own fork": "Может быть добавлен как часть глобальной карты датчиков или вашей собственной ветви",
   "Compatible with luftdaten": "Совместим с luftdaten",
   "Start of Sales: Jan '24": "Начало продаж: янв '24",
-  "View specification": "Просмотреть спецификацию"
+  "View specification": "Просмотреть спецификацию",
+  "We are self-driving team with more then 8 years expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "Мы команда самоуправляемых автомобилей с более чем 8-летним опытом в робототехнике, блокчейне и интернете вещей. Имея глубокое понимание проблем, с которыми сталкиваются пользователи передовых умных домов, мы решили заняться производством собственных устройств. Получите контроль над своим домом, экономьте энергию и освободите себя от корпоративных облаков и ограничений устройств вместе с нами!",
+  "Buy devices": "Купить устройства"
 }

@@ -761,7 +761,6 @@
   "Control your home": "家を制御する",
   "Be smart": "スマートになる",
   "Be independent": "独立する",
-  "We are self-driving team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "私たちはロボティクス、ブロックチェーン、IoTの幅広い専門知識を持つ自動運転チームです。高度なスマートホームユーザーが直面する課題を深く理解しており、独自のデバイスの製造に取り組むことを選びました。私たちと一緒に家を制御し、エネルギーを節約し、企業のクラウドやデバイスの制限から解放されましょう！",
   "BUY DEVICE": "デバイスを購入する",
   "Support it on hackster.io": "hackster.ioでサポートを受ける",
   "Product 1: Universal IR Remote Control": "製品1：汎用IRリモコン",
@@ -820,5 +819,6 @@
   "Can be added as a part of global sensor map or your own fork": "グローバルセンサーマップまたは独自のフォークの一部として追加できます",
   "Compatible with luftdaten": "luftdatenと互換性があります",
   "Start of Sales: Jan '24": "販売開始：1月'24",
-  "View specification": "仕様を表示する"
+  "View specification": "仕様を表示する",
+  "We are self-driving team with more then 8 years expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "自動運転チームで、ロボティクス、ブロックチェーン、IoTの分野で8年以上の専門知識を持っています。高度なスマートホームユーザーが直面する課題を深く理解しており、独自のデバイスの製造に取り組むことを選びました。私たちと一緒に、自宅をコントロールし、エネルギーを節約し、企業のクラウドやデバイスの制約から解放されましょう！"
 }
