@@ -34,10 +34,12 @@
         <g-image class="devices__banner-img devices__banner-img--blob"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-2.png"/>
 
         <div class="devices__banner-buy">
-          <g-link to="https://www.hackster.io/robonomics-web3-cloud/products" class="devices__link">{{ $t('BUY DEVICE') }}</g-link>
-          <g-link to="https://www.hackster.io/robonomics-web3-cloud/products"  class="devices__banner-support">
-            <span>{{ $t('Support it on hackster.io') }}</span>
-          </g-link>
+          <div class="devices__banner-buy-wrapper">
+            <g-link to="https://www.hackster.io/robonomics-web3-cloud/products" class="devices__link">{{ $t('BUY DEVICE') }}</g-link>
+            <g-link to="https://www.hackster.io/robonomics-web3-cloud/products"  class="devices__banner-support">
+              <span>{{ $t('Support it on hackster.io') }}</span>
+            </g-link>
+          </div>
         </div>
 
       </div>
@@ -45,7 +47,7 @@
 
     <!-- products -->
     <section class="products">
-      <div class="layout">
+      <div class="layout layout__mid">
         <DevicesItem 
           v-for="device in devices"
           :key="device.id"
@@ -54,6 +56,7 @@
           :img="device.img"
           :hacksterLink="device.hacksterLink"
           :telegramLink="device.telegramLink"
+          :release="device.release"
           :features="device.features"
         />
       </div>
@@ -83,16 +86,25 @@ export default {
           telegramLink: "#",
           features: [
             {
-              text: this.$t('Supports wide range of devices'),
-              id: 0 
+              text: this.$t('type-c for OSS firmware upgrading'),
+              id: 0,
+              accent: true
             },
             {
-              text: this.$t('Firmware upgradable by plug-in USB-C port'),
+              text: this.$t('Supports wide range of devices'),
               id: 1
             },
             {
               text: this.$t('Home Assistant Friendly'),
               id: 2
+            },
+            {
+              text: this.$t('WI-FI'),
+              id: 3
+            },
+            {
+              text: this.$t('MQTT'),
+              id: 4
             },
           ]
         },
@@ -104,18 +116,93 @@ export default {
           hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products",
           telegramLink: "#",
           features: [
+            { 
+              text: this.$t('type-c for OSS firmware upgrading'),
+              id: 0,
+              accent: true
+            },
             {
               text: this.$t('Efficient energy monitoring consumption'),
-              id: 0 
+              id: 1 
             },
             {
               text: this.$t('Doesn’t need any cloud service'),
-              id: 1
+              id: 2
             },
             {
               text: this.$t('Home Assistant Friendly'),
+              id: 3
+            },
+            {
+              text: this.$t('WI-FI'),
+              id: 4
+            },
+            {
+              text: this.$t('MQTT'),
+              id: 5
+            },
+          ] 
+        },
+        {
+          id: 2,
+          title: this.$t('Product 3, 4: 1,2 gang wi-fi Smart Switch'),
+          text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
+          img: 'smart-switch.png',
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products",
+          release: "Start of Sales: Jan '24",
+          features: [
+            { 
+              text: this.$t('type-c for OSS firmware upgrading'),
+              id: 0,
+              accent: true
+            },
+            {
+              text: this.$t('large touchable  buttons'),
+              id: 1 
+            },
+            {
+              text: this.$t('Doesn’t need any cloud service'),
               id: 2
             },
+            {
+              text: this.$t('Home Assistant Friendly'),
+              id: 3
+            },
+            {
+              text: this.$t('WI-FI'),
+              id: 4
+            },
+            {
+              text: this.$t('MQTT'),
+              id: 5
+            },
+          ] 
+        },
+        {
+          id: 3,
+          title: this.$t('Product 5: Air Quality Sensor'),
+          text: this.$t('Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).'),
+          img: 'quality-sensor.png',
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products",
+          telegramLink: "#",
+          features: [
+            { 
+              text: this.$t('type-c for OSS firmware upgrading'),
+              id: 0,
+              accent: true
+            },
+            {
+              text: this.$t('Measures PM2.5/PM10'),
+              id: 1 
+            },
+            {
+              text: this.$t('Can be added as a part of global sensor map or your own fork'),
+              id: 2
+            },
+            {
+              text: this.$t('Compatible with luftdaten'),
+              id: 3
+            }
           ] 
         }
       ]
@@ -133,7 +220,8 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-color: var(--color-blue);
   }
 
   .devices__link {
@@ -164,6 +252,8 @@ export default {
   }
 
   .devices__text {
+    position: relative;
+    z-index: 10;
     max-width: 780px;
     padding: calc(var(--space) * 0.5);
     margin-bottom: var(--space);
@@ -203,33 +293,44 @@ export default {
   .devices__banner-img--girl {
     right: 245px;
     top: 92px;
-    max-width: 332px;
+    max-width: 550px;
     width: 100%;
   }
 
   .devices__banner-buy {
     position: absolute;
-    bottom: 0;
-    right: 125px;
-    max-width: 280px;
+    max-width: 385px;
     width: 100%;
-    padding: calc(var(--space) * 0.5);
-    padding-bottom: var(--space);
+    top: 173px;
+    left: 735px;
+    min-height: 269px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-blue);
+    background-image: url('data:image/svg+xml,<svg width="426" height="298" viewBox="0 0 426 298" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M410.456 224.054C397.789 244.78 377.52 260.298 355.366 271.598C310.161 294.647 255.495 301.427 203.556 290.384C185.682 286.597 168.14 280.765 150.172 277.65C132.204 274.534 113.231 274.299 97.2017 281.397C88.3201 285.317 80.6036 291.352 71.4988 294.832C49.2601 303.31 19.9947 293.229 7.10669 272.391C-5.75898 251.566 -0.156672 222.728 19.5258 209.944C29.8897 203.202 42.7811 200.917 54.8238 197.209C91.0088 186.088 93.7275 178.046 110.168 145.293C129.36 107.052 92.5946 44.8325 126.008 17.5483C163.32 -12.9249 293.792 2.72181 335.508 26.0483C380.807 51.375 410.591 85.3288 421.701 134.039C428.491 163.741 426.644 195.464 412.171 221.145C411.608 222.101 411.032 223.077 410.469 224.033L410.456 224.054Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
   }
 
-  .devices__banner-buy .devices__link {
-    margin-bottom: calc(var(--space) * 0.5);
+  .devices__banner-buy-wrapper {
+    max-width: 280px;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    right: 2px;
+    padding: calc(var(--space) * 0.5);
+    padding-bottom: var(--space);
   }
+
 
   .devices__banner-support {
     position: relative;
     display: block;
     width: 100%;
-    color: var(--color-light);
+    margin-top: calc(var(--space) * 0.5);
+    /* color: var(--color-light); */
   }
 
   .devices__banner-support span {
@@ -246,14 +347,30 @@ export default {
     max-width: 232px;
     width: 100%;
     height: 26px;
-    background-image: url("data:image/svg+xml,%3Csvg width='234' height='24' viewBox='0 0 234 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M233.061 13.0607C233.646 12.4749 233.646 11.5251 233.061 10.9393L223.515 1.3934C222.929 0.807611 221.979 0.807611 221.393 1.3934C220.808 1.97919 220.808 2.92893 221.393 3.51472L229.879 12L221.393 20.4853C220.808 21.0711 220.808 22.0208 221.393 22.6066C221.979 23.1924 222.929 23.1924 223.515 22.6066L233.061 13.0607ZM0 13.5L232 13.5V10.5L0 10.5L0 13.5Z' fill='%23A7D100'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='234' height='24' viewBox='0 0 234 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M233.061 13.0607C233.646 12.4749 233.646 11.5251 233.061 10.9393L223.515 1.3934C222.929 0.807611 221.979 0.807611 221.393 1.3934C220.808 1.97919 220.808 2.92893 221.393 3.51472L229.879 12L221.393 20.4853C220.808 21.0711 220.808 22.0208 221.393 22.6066C221.979 23.1924 222.929 23.1924 223.515 22.6066L233.061 13.0607ZM0 13.5L232 13.5V10.5L0 10.5L0 13.5Z' fill='%232949D3'/%3E%3C/svg%3E%0A");
     background-size: 100%;
     background-position: left;
     background-repeat: no-repeat;
   }
 
+  @media screen and (max-width: 1850px) {
+      .devices__banner-img--girl {
+      max-width: 320px;
+    }
+  }
 
-  @media screen and (max-width: 1210px) {
+  @media screen and (max-width: 1650px) {
+    .devices__banner-buy {
+      left: unset;
+      top: unset;
+      bottom: -30px;
+      right: 125px;
+      /* min-height: 260px; */
+    }
+  }
+
+
+  @media screen and (max-width: 1260px) {
     .devices__banner-layout {
       display: flex;
       flex-direction: column;
@@ -262,7 +379,7 @@ export default {
 
     .devices__banner-buy {
       margin-top: var(--space);
-      position: static;
+      position: relative;
       align-self: flex-end;
     }
 
@@ -311,9 +428,27 @@ export default {
     }
   }
 
-  @media screen and (max-width: 510px) {
+  @media screen and (max-width: 580px) {
     .devices__banner-title {
       font-size: calc(var(--base-font-size) * 2);
+    }
+
+
+    .devices__banner-buy {
+      position: static;
+      min-height: auto;
+      /* left: 0;
+      right: unset; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-light);
+      background-image: none;
+    }
+
+    .devices__banner-buy-wrapper {
+      position: static;
+      padding-top: var(--space);
     }
   }
 
