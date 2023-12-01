@@ -768,7 +768,6 @@
   "Product 1: Universal IR Remote Control": "製品1：汎用IRリモコン",
   "Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!": "どんなエアコンでもスマートな気候制御を構築し、家のどんなゲートでも開閉操作を設定できます。オープンソースのTasmotaファームウェアを搭載した汎用IRリモコンを作成しました。より良い体験のためにUSB-Cポートを搭載しました-リモコンのファームウェアを簡単な有線接続でアップグレードできます！",
   "Supports wide range of devices": "幅広いデバイスに対応",
-  "Firmware upgradable by plug-in USB-C port": "プラグインUSB-Cポートでファームウェアをアップグレード可能",
   "Home Assistant Friendly": "Home Assistantに対応",
   "Product 2: Smart Energy Power Consumption Monitoring": "製品2：スマートエネルギー消費監視",
   "Have you ever wondered what consumes the most electricity in your home? Our smart DIN energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.": "家庭で最も多くの電力を消費しているのは何か気になったことはありますか？私たちのスマートDINエネルギー電力メーターは、電力使用の主な源を特定し、不要なエネルギーリークを防止するために設計されています。このエネルギーメーターは、個別の資産または建物全体と共に使用でき、クラウドやMQTTプロトコルは必要ありません。Home Assistantと便利なエネルギー管理ダッシュボードと一緒に使用できます。",
@@ -809,5 +808,16 @@
   "Retention of data": "データの保持",
   "We will retain your information as long as necessary to provide you with the services or as otherwise set forth in this Policy. We will also retain and use this information as necessary for the purposes set out in this Policy and to the extent necessary to comply with our legal obligations, resolve disputes, enforce our agreements and protect Robonomics Network legal rights.": "私たちは、サービスを提供するために必要な期間、またはこのポリシーに別段の定めがある場合には、お客様の情報を保持します。また、この情報を本ポリシーに記載された目的のために必要な範囲で保持し、法的義務の遵守、紛争の解決、契約の執行、Robonomics Networkの法的権利の保護に必要な範囲で使用します。",
   "We also collect and maintain aggregated, anonymized or pseudonymized information which we may retain indefinitely to protect the safety and security of our Site, improve our Services or comply with legal obligations": "また、私たちは集計された匿名化または擬似匿名化された情報を収集し、保持することもあります。これらの情報は、サイトの安全性とセキュリティの保護、サービスの改善、法的義務の遵守のために無期限に保持される場合があります。",
-  "Devices": "デバイス"
+  "Devices": "デバイス",
+  "type-c for OSS firmware upgrading": "OSSファームウェアのアップグレード用のタイプC",
+  "WI-FI": "WI-FI",
+  "MQTT": "MQTT",
+  "Product 3, 4: 1,2 gang wi-fi Smart Switch": "製品3、4：1、2ギャングwi-fiスマートスイッチ",
+  "Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.": "なぜスマートライトのオン/オフに企業のアプリをインストールする必要があるのでしょうか？私たちのwi-fiスマートスイッチはクラウド接続を必要としません。私たちは世界中のさまざまなメーカーから多くの他のスイッチを試してきましたが、快適なデバイスを作るための重要な詳細を知っています。Robonomicsの他のスマートデバイスと同様に、Home Assistantと完全に互換性があり、オープンソースのアップグレード可能なファームウェアTasmotaを使用しています。",
+  "large touchable  buttons": "大きなタッチボタン",
+  "Product 5: Air Quality Sensor": "製品5：空気品質センサー",
+  "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "この空気品質センサーを分散型のオープンソースセンサーマップに参加させ、個人の自由意志を奉仕することを唯一の目的としています。このセンサーはインストールの準備ができており、wi-fiと電源ソケットが必要で。屋内および屋外の両方にインストールすることができます。PM2.5/PM10センサーと温度/湿度センサーが含まれており、さまざまなタイプの追加センサー（VOC、CO2、大気圧）で拡張することができます。",
+  "Measures PM2.5/PM10": "PM2.5/PM10を測定します",
+  "Can be added as a part of global sensor map or your own fork": "グローバルセンサーマップまたは独自のフォークの一部として追加できます",
+  "Compatible with luftdaten": "luftdatenと互換性があります"
 }

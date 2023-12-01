@@ -768,7 +768,6 @@
   "Product 1: Universal IR Remote Control": "제품 1: 범용 IR 원격 제어",
   "Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!": "어떤 에어컨에도 스마트 기후 제어를 구축하고 집 안의 어떤 게이트에도 열기/닫기 작업을 설정하세요. 우리는 오픈 소스 Tasmota 펌웨어가 탑재된 범용 IR 원격 제어를 만들었습니다. 더 나은 경험을 위해 USB-C 포트를 설치했습니다 - 간단한 유선 연결로 원격 제어의 펌웨어를 업그레이드하세요!",
   "Supports wide range of devices": "다양한 기기 지원",
-  "Firmware upgradable by plug-in USB-C port": "USB-C 포트를 통해 펌웨어 업그레이드 가능",
   "Home Assistant Friendly": "Home Assistant 호환",
   "Product 2: Smart Energy Power Consumption Monitoring": "제품 2: 스마트 에너지 전력 소비 모니터링",
   "Have you ever wondered what consumes the most electricity in your home? Our smart DIN energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.": "집에서 가장 많은 전기를 소비하는 것이 무엇인지 궁금한 적이 있으신가요? 저희 스마트 DIN 에너지 전력계는 전기 사용량의 주요 원인을 파악하고 원치 않는 에너지 누출을 방지하는 데 도움이 되도록 설계되었습니다. 이 에너지 계량기는 개별 자산 또는 건물 전체와 함께 사용할 수 있으며, 클라우드나 MQTT 프로토콜이 필요하지 않으며 Home Assistant와 유용한 에너지 관리 대시보드와 함께 사용할 수 있습니다.",
@@ -809,5 +808,16 @@
   "Retention of data": "데이터 보유",
   "We will retain your information as long as necessary to provide you with the services or as otherwise set forth in this Policy. We will also retain and use this information as necessary for the purposes set out in this Policy and to the extent necessary to comply with our legal obligations, resolve disputes, enforce our agreements and protect Robonomics Network legal rights.": "서비스 제공을 위해 필요한 기간 동안 또는 본 정책에 명시된 대로 정보를 보유합니다. 또한 본 정책에 명시된 목적을 위해 이 정보를 보유하고 사용하며, 법적 의무 준수, 분쟁 해결, 계약 강제 이행 및 Robonomics Network의 법적 권리 보호를 위해 필요한 범위 내에서 이 정보를 보유 및 사용할 것입니다.",
   "We also collect and maintain aggregated, anonymized or pseudonymized information which we may retain indefinitely to protect the safety and security of our Site, improve our Services or comply with legal obligations": "또한, 우리는 사이트의 안전과 보안을 보호하거나 서비스를 개선하거나 법적 의무를 준수하기 위해 영구히 보유할 수 있는 집계, 익명화 또는 의사명시화된 정보를 수집 및 유지합니다.",
-  "Devices": "장치들"
+  "Devices": "장치들",
+  "type-c for OSS firmware upgrading": "OSS 펌웨어 업그레이드용 type-c",
+  "WI-FI": "WI-FI",
+  "MQTT": "MQTT",
+  "Product 3, 4: 1,2 gang wi-fi Smart Switch": "제품 3, 4: 1,2 갱 와이파이 스마트 스위치",
+  "Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.": "스마트 조명을 켜고 끄기 위해 기업 앱을 설치해야 하는 이유가 무엇인가요? 우리의 와이파이 스마트 스위치는 어떠한 클라우드 연결도 필요하지 않습니다. 우리는 전 세계의 다양한 제조업체에서 많은 다른 스위치를 시험해보았으며, 편안한 장치를 만들기 위한 몇 가지 중요한 세부 정보를 알고 있습니다. Robonomics의 다른 스마트 기기와 완벽하게 호환되며, 오픈 소스 업그레이드 가능한 Tasmota 펌웨어를 사용합니다.",
+  "large touchable  buttons": "큰 터치 버튼",
+  "Product 5: Air Quality Sensor": "제품 5: 대기질 센서",
+  "Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).": "이 분산 오픈 소스 센서 맵에 이 대기질 센서와 함께 참여하여 개인의 자유 의지를 위해 운영됩니다. 이 센서는 설치 준비가 되어 있으며, 와이파이와 전원 소켓이 필요합니다. 실내 및 실외에 모두 설치할 수 있습니다. PM2.5/PM10 센서와 온도/습도 센서가 포함되어 있으며, VOC, CO2, 대기압과 같은 여러 종류의 추가 센로 확장할 수 있습니다.",
+  "Measures PM2.5/PM10": "PM2.5/PM10 측정",
+  "Can be added as a part of global sensor map or your own fork": "전역 센서 맵 또는 자체 포크의 일부로 추가할 수 있습니다.",
+  "Compatible with luftdaten": "luftdaten과 호환됩니다."
 }

@@ -6,13 +6,14 @@
       <p class="product__text">{{ text }}</p>
       <div class="products__links">
         <g-link :to="hacksterLink" class="devices__link devices__link--blue">{{ $t('View on Hackster') }}</g-link>
-        <g-link :to="telegramLink" class="devices__link">{{ $t('Buy in Telegram bot') }}</g-link>
+        <g-link v-if="!release" :to="telegramLink" class="devices__link">{{ $t('Buy in Telegram bot') }}</g-link>
+        <span v-if="release && !telegramLink"  class="product__release">{{release}}</span>
       </div>
     </div>
     <div class="product-key-features">
       <div class="product-key-features__title">{{ $t('Key Features') }}</div>
       <ul class="list-simple product-key-features__list">
-        <li class="product-key-features__item"  v-for="feature in features" :key="feature.id">{{ feature.text }}</li>
+        <li class="product-key-features__item"  v-for="feature in features" :key="feature.id" :class="{'accent': feature.accent && feature.accent}">{{ feature.text }}</li>
       </ul>
     </div>
   </div>
@@ -43,7 +44,10 @@ export default {
     telegramLink: {
       type: String,
       default: '',
-      required: true
+    },
+    release: {
+      type: String,
+      default: ''
     },
     features: {
       type: Array,
@@ -62,7 +66,7 @@ export default {
   }
 
   .grid-3 {
-    grid-template-columns: 240px 1fr minmax(270px, 350px);
+    grid-template-columns: 300px 1fr minmax(270px, 320px);
     gap: calc(var(--space) * 2);
     margin-bottom: var(--space);
   }
@@ -81,6 +85,7 @@ export default {
 
   .product__img {
     width: 100%;
+    align-self: center;
   }
 
   .product__text {
@@ -96,6 +101,12 @@ export default {
 
   .products__links .devices__link {
     width: 100%;
+  }
+
+  .product__release {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   .products__links .devices__link:first-of-type {
@@ -116,7 +127,7 @@ export default {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: calc(var(--space) * 0.5);
+    gap: calc(var(--space) * 0.3);
   }
 
   .product-key-features__item {
@@ -130,6 +141,10 @@ export default {
 
   .product-key-features__item:not(:last-child) {
     margin-right:  calc(var(--space) * 0.5);
+  }
+
+  .product-key-features__item.accent {
+    background-color: var(--device-color-yellow);
   }
 
   @media screen and (max-width: 1160px) {
@@ -149,6 +164,10 @@ export default {
 
     .devices__link {
       padding: calc(var(--space) * 0.5) calc(var(--space) * 0.7);
+    }
+
+    .product-key-features {
+      margin-top: calc(var(--space) * 2);
     }
 
   }
