@@ -8,7 +8,7 @@
 
             <label><input type="checkbox" name="agreement" required/> {{$t('I agree to receive emails')}}</label>
             <div>
-                <rbnet-button>{{$t('Send')}}</rbnet-button>
+                <rb-button>{{$t('Send')}}</rb-button>
             </div>
         </form>
 
@@ -57,7 +57,7 @@
     }
 
     .label {
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--color-border);
         padding: calc(var(--space) * 0.2) calc(var(--space) * 0.5) calc(var(--space) * 0.5);
         transition: 0.4s all ease;
     }

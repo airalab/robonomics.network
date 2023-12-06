@@ -85,7 +85,7 @@
   }
 
   .section__lightblue {
-		background: var(--link-color);
+		background: var(--color-blue-mid);
   }
 
 	.dark-theme  .section__lightblue {

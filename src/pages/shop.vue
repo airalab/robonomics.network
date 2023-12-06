@@ -29,7 +29,7 @@
           :image="product.image"
           :classImage="product.class"
         />
-        <g-link class="shop__link" to="https://robonomics.threadless.com/">{{ $t('Shop now on threadless') }}</g-link>
+        <g-link class="shop__link rb-button" to="https://robonomics.threadless.com/">{{ $t('Shop now on threadless') }}</g-link>
       </div>
 
       <g-link to="https://robonomics.threadless.com/" class="shop-circle shop-circle-1">
@@ -150,7 +150,7 @@ export default {
 
   .shop__link:hover {
     color: var(--color-light);
-    background-color: var(--color-blue-dark-mid);
+    /* background-color: var(--color-blue-dark-mid); */
   }
 
   .shop-circle-1 {

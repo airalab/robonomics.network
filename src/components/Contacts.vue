@@ -171,17 +171,17 @@ export default {
 
   .contacts__item:hover .contacts__link svg path,
   .email.active.contacts__item .contacts__link svg path  {
-    fill: var(--color-purple-light);
+    fill: var(--color-blue-xrt);
   }
 
   .contacts__item:hover .decor-line svg path,
   .email.active .decor-line svg path {
-    stroke: var(--color-purple-light);
+    stroke: var(--color-blue);
   }
 
   .contacts__item:hover .contacts__text,
   .email.active .contacts__text {
-    color: var(--color-purple-light);
+    color: var(--color-blue);
   }
 
   .contacts__link {
@@ -315,10 +315,6 @@ export default {
       min-height: 485px;
       /* align-items: flex-end; */
     }
-
-    /* .contacts__items-wrapper {
-      margin-bottom: 8rem;
-    } */
 
     .contacts__items {
       /* flex-direction: column; */

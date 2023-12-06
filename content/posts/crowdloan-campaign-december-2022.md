@@ -58,7 +58,7 @@ As [mentioned previously](https://robonomics.network/blog/robonomics-crowdloan-c
 
 </div>
 
-<Card alignContent="center">
+<Card class="withImg" alignContent="center">
 
 **2. The median bid is:**
 
@@ -66,7 +66,7 @@ As [mentioned previously](https://robonomics.network/blog/robonomics-crowdloan-c
 
 </Card>
 
-<Card alignContent="center">
+<Card class="withImg" alignContent="center">
 
 **3. We additionally introduce an correction if previous crowdloan campaigns were not successful. The median bid adjusted for previous crowdloan attempts is:**
 
@@ -74,7 +74,7 @@ As [mentioned previously](https://robonomics.network/blog/robonomics-crowdloan-c
 
 </Card>
 
-<Card alignContent="center">
+<Card class="withImg" alignContent="center">
 
 **4. The ideal staking rate is:**
 
@@ -82,7 +82,7 @@ As [mentioned previously](https://robonomics.network/blog/robonomics-crowdloan-c
 
 </Card>
 
-<Card alignContent="center">
+<Card class="withImg" alignContent="center">
 
 **5. The real staking rate is:**
 
@@ -90,7 +90,7 @@ As [mentioned previously](https://robonomics.network/blog/robonomics-crowdloan-c
 
 </Card>
 
-<Card alignContent="center">
+<Card class="withImg" alignContent="center">
 
 **6. The ideal interest rate is:**
 
@@ -98,7 +98,7 @@ As [mentioned previously](https://robonomics.network/blog/robonomics-crowdloan-c
 
 </Card>
 
-<Card alignContent="center">
+<Card class="withImg" alignContent="center">
 
 **7. The reward for participation in the crowdloan campaign (XRT per 1 KSM):**
 
@@ -106,7 +106,7 @@ As [mentioned previously](https://robonomics.network/blog/robonomics-crowdloan-c
 
 </Card>
 
-<Card alignContent="center">
+<Card class="withImg" alignContent="center">
 
 **8. Total payouts to crowdloan participants:**
 

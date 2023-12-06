@@ -5,8 +5,8 @@
       <g-image :src="require(`!!assets-loader!@/assets/images/devices/${img}`)"  quality="75%" :alt="title" class="product__img"/>
       <p class="product__text">{{ text }}</p>
       <div class="products__links">
-        <g-link :to="hacksterLink" class="devices__link devices__link--blue">{{ $t('View specification') }}</g-link>
-        <g-link v-if="!release && telegramLink" :to="telegramLink" class="devices__link">{{ $t('Buy in Telegram bot') }}</g-link>
+        <rb-button class="devices__link" :to="hacksterLink" buttoncolor="pale-blue" buttonstyle="flat">{{ $t('View specification') }}</rb-button>
+        <rb-button v-if="!release && telegramLink" :to="telegramLink" buttoncolor="green" buttonstyle="flat" class="devices__link">{{ $t('Buy in Telegram bot') }}</rb-button>
         <span v-if="release && !telegramLink"  class="product__release">{{release}}</span>
       </div>
     </div>
@@ -20,7 +20,9 @@
 </template>
 
 <script>
+import rbButton from './rbButton.vue'
 export default {
+  components: { rbButton },
 
   props: {
     title: {
@@ -62,6 +64,7 @@ export default {
   .devices__link {
     color: var(--color-light);
     font-family: var(--font-family);
+    font-size: calc(var(--base-font-size) * 1.2);
     text-transform: uppercase;
   }
 
@@ -144,7 +147,7 @@ export default {
   }
 
   .product-key-features__item.accent {
-    background-color: var(--device-color-yellow);
+    background-color: var(--color-yellow);
   }
 
   @media screen and (max-width: 1160px) {

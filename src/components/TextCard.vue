@@ -13,7 +13,7 @@
     <g-link v-if="link && !linkButton" :class="link_classes" :to="link">
       <template v-if="linkText">{{linkText}}</template>
     </g-link>
-    <rbnet-button v-if="link && linkText && linkButton" :link="link" :label="linkText" button="primary" class="large"/>
+    <rb-button v-if="link && linkText && linkButton" :to="link">{{ linkText }}</rb-button>
 
   </div>
 </template>
@@ -244,7 +244,7 @@ export default {
     }
 
     .card.oldy__link:hover .pic.round.icon {
-        --color-iconback: var(--link-color);
+        --color-iconback: var(--color-blue-mid);
       }
 
     .card.white {
@@ -252,7 +252,7 @@ export default {
       --color-text: var(--color-dark);
     }
     .card.blue {
-      --color-back: var(--link-color);
+      --color-back: var(--color-blue-mid);
       --color-text: var(--color-light);
     }
     .card.darkblue {
@@ -279,7 +279,7 @@ export default {
     }
 
       .card.blue.oldy__link:hover .pic.round.icon {
-          background-color: var(--link-color);
+          background-color: var(--color-blue-mid);
       }
     /* end of COLORING */
 
@@ -345,5 +345,11 @@ export default {
       margin-bottom: calc(var(--space) * 0.7);
     }
     /* end of CONTENT */
+
+    .withImg img {
+      width: 80%;
+      padding: calc(var(--space) * 0.5);
+      background-color: #fff;
+    }
   
 </style>

@@ -42,7 +42,7 @@ export default {
       type: String,
       default: 'blue',
       validator: function (value) {
-        return ['blue', 'green'].indexOf(value) !== -1;
+        return ['blue', 'green', 'pale-blue', 'vivid-blue', 'violet', 'white'].indexOf(value) !== -1;
       }
     },
 
@@ -135,5 +135,32 @@ export default {
   .rb-button-green {
     --b-color-background: var(--rb-color-green);
     --b-color-background-hover: var(--rb-color-green-dark);
+  }
+
+  .rb-button-pale-blue {
+    --b-color-background: var(--rb-color-pale-blue);
+    --b-color-background-hover: var(--rb-color-pale-blue-dark);
+  }
+
+  .rb-button-vivid-blue {
+    --b-color-text: hsl(299, 0%, 0%);
+    --b-color-background: var(--rb-color-vivid-blue);
+    --b-color-background-hover: var(--rb-color-vivid-blue-dark);
+  }
+
+  .rb-button-violet{
+    --b-color-background: var(--rb-color-violet);
+    --b-color-background-hover: var(--rb-color-violet-dark);
+  }
+
+  .rb-button-white {
+    --b-color-background: var(--rb-color-light);
+    --b-color-background-hover: var(--rb-color-gray);
+    --b-color-text: var(--rb-color-dark);
+  }
+
+  /* dark theme */
+  .rb-button:not(.rb-button-vivid-blue)  {
+    --b-color-text: hsl(100, 100%, 100%);
   }
 </style>

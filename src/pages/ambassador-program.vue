@@ -43,10 +43,10 @@
                 </div>
 
                 <section class="layout text-center animate-inside" v-in-viewport.once>
-                    <rbnet-button color="violet" link="#steps" anchor>
+                    <rb-button to="#steps" anchor>
                         <img width="25" height="50" class="button-icon" alt="" aria-hidden="true" src="../assets/images/hand-hi.png" />
                         {{$t('Get your role, ambassador')}}
-                    </rbnet-button>
+                    </rb-button>
                 </section>
 
             </div>
@@ -121,10 +121,10 @@
         <section class="layout layout__text section-wide animate-inside" v-in-viewport.once>
             <h4>{{$t('Get all our support and visual materials in ambassador’s chat')}}</h4>
             <section class="layout text-center animate-inside" v-in-viewport.once>
-                <rbnet-button color="violet" link="#steps" anchor>
+                <rb-button  to="#steps" anchor>
                     <img width="25" height="50" class="button-icon" aria-hidden="true" alt="" src="../assets/images/hand-hi.png" />
                     {{$t('Get your role, ambassador')}}
-                </rbnet-button>
+                </rb-button>
             </section>
         </section>
 
