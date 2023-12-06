@@ -519,7 +519,7 @@
     .marketplace .item {
         background: #fff;
         padding: calc(var(--space) * 0.5);
-        color: var(--link-color);
+        color: var(--color-blue-mid);
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 60%;
@@ -532,7 +532,7 @@
       width: 60px;
       height: 60px;
       border-radius: 30px;
-      background: var(--link-color);
+      background: var(--color-blue-mid);
       color: #fff;
       text-decoration: none;
       font-weight: bold;

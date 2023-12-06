@@ -22,14 +22,14 @@
     />
 
     <div class="google-sheets-form__actions">
-      <rbnet-button @click="onSubmit" v-if="result !== 'success'" class="button large"  :disabled="result === 'error' || result === 'wait'">
+      <rb-button @click="onSubmit" v-if="result !== 'success'" block :disabled="result === 'error' || result === 'wait'">
         <span v-if="result !== 'wait'">{{$t('Want emails from robonomics')}}</span>
         <span class="isLoading" v-else>{{$t('Adding you to our special list...')}}</span>
         <span class="spinner">
           <Spinner v-if="result === 'wait'"/>
         </span>
-      </rbnet-button >
-      <rbnet-button disabled v-else class="button button-success">{{$t('Nice, you are in the list')}}</rbnet-button>
+      </rb-button >
+      <rb-button block disabled v-else class="button-success">{{$t('Nice, you are in the list')}}</rb-button>
       <div v-if="result === 'error'" class="error">{{$t('Something went  wrong. Try again later')}}</div>
     </div>
   </gsp-form>
@@ -111,30 +111,8 @@ export default {
   }
 
 
-
-  .button {
-    width: 100%;
-    padding: 1.5rem 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 6px 6px 0 var(--color-dark);
-    color: #fff;
-    background-color: var(--color-link-contacts) ;
-    transition: background-color 0.33s ease-in-out;
-  }
-
-  .button:hover {
-    background-color: var(--color-blue-mid);
-  }
-
   .button-success {
-    background-color: var(--color-green) !important;
-  }
-
-  .button:disabled {
-    opacity: 0.7;
-    filter: none;
+    background-color: var(--rb-color-green);
   }
 
   .contacts__input {
@@ -168,10 +146,6 @@ export default {
 
   .isLoading {
     font-size: 1.2rem;
-  }
-
-  .dark-theme   .button {
-    background-color: #5f7af6;
   }
 
 

@@ -13,12 +13,12 @@
                     size="invisible"
                     :sitekey="recaptchaSitekey" /> -->
 
-                <rbnet-button @click="onSubmit" button="primary block green large">
+                <rb-button @click="onSubmit" buttoncolor="green" block>
                         <span class="text">{{$t('Submit')}}</span>
-                </rbnet-button>
+                </rb-button>
 
                 <!-- <vue-recaptcha :sitekey="recaptchaSitekey">
-                    <rbnet-button button="primary block green large">
+                    <rb-button button="primary block green large">
                         <span class="text">{{$ts('Submit')}}</span>
                     </Button>
                 </vue-recaptcha> -->

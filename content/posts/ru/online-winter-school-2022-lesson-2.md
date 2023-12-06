@@ -40,6 +40,6 @@ import UserForm from '~/components/blocks/UserForm.vue'
 
 После ознакомления с главой обязательно пройдите тест ко второму уроку, чтобы поучаствовать в розыгрыше призов. Вам будет предложено 17 вопросов, и, мы надеемся, они воодушевят вас глубже обдумать наши идеи. Для успешного прохождения теста нужно набрать 10 правильных ответов из 17 (60%, стандартное значение в академической практике).
 
-<rbnet-button link="https://lesson2.robonomics.academy/" label="Пройти тест" button="primary block" />
+<rb-button to="https://lesson2.robonomics.academy/">Пройти тест</rb-button>
 
 </Card>

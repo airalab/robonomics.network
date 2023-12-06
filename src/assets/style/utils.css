@@ -185,9 +185,10 @@
   color: var(--color-light);
 }
 
-.dark-theme a:not(.button):hover {
-  color: var(--color-light);
+.dark-theme a:not(.rb-button):hover {
+  color: var(--color-blue);
 }
+
 
 .bold {
   font-weight: 600;
@@ -215,23 +216,5 @@
   font-style: italic;
   font-weight: 300;
   font-size: 1.1rem;
-}
-
-/* for devices page */
-
-.devices__link {
-  padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);
-  width: 100%;
-  font-family: var(--font-family-code);
-  font-weight: 500;
-  font-size: calc(var(--base-font-size) * 1.2);
-  background-color: var(--device-color-green);
-  text-align: center;
-  letter-spacing: 0;
-
-}
-
-.devices__link--blue {
-  background-color: var(--device-color-blue);
 }
 
