@@ -23,7 +23,7 @@
               </div>
            </section>
 
-           <rbnet-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Auction status on Kusama</rbnet-button>
+           <rb-button to="https://parachains.info/auctions/kusama" buttoncolor="vivid-blue" target="_blank">Auction status on Kusama</rb-button>
          </div>
          
          <!-- <MovingNumbers/> -->
@@ -57,7 +57,7 @@
       <section class="participate section__solid section__blue">
         <div class="content layout">
           <div>Campaign for renewal of slot<br/> is in progress</div>
-          <rbnet-button link="https://parachains.info/auctions/kusama" type="primary" color="bluevivid" target="_blank">Check status</rbnet-button>
+          <rb-button to="https://parachains.info/auctions/kusama" buttoncolor="vivid-blue" target="_blank">Check status</rb-button>
         </div>
        </section>
 

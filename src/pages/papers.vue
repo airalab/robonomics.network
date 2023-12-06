@@ -44,7 +44,7 @@
                 {{ option.text }}
                 </option>
               </select>
-              <rbnet-button :link="pinned[0].options[selected].link">Download pdf</rbnet-button>
+              <rb-button :to="pinned[0].options[selected].link">Download pdf</rb-button>
             </div>
 
           </div>

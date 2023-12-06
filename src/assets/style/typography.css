@@ -97,7 +97,7 @@ blockquote {
   font-weight: 300;
   font-style: italic;
   padding: var(--space);
-  background-color: var(--text-color-invert);
+  background-color: var(--color-light);
 
   border-left: 1px solid var(--text-color);
 }
@@ -130,7 +130,7 @@ a:not(.button):hover, .link:not(.button):hover {
   color: var(--color-link-hover);
 }
 
-.dark-theme a:not(.button):hover, .link:not(.button):hover {
+.dark-theme a:not(.rb-button):hover, .link:not(.button):hover {
   color: #aeb1d8
 }
 
@@ -227,7 +227,7 @@ div pre[class*="language-"] {
 
 table {
   margin-bottom: var(--space-text);
-  background-color: var(--text-color-invert);
+  background-color: var(--color-light);
   max-width: 100%;
   overflow-x: auto;
 }
@@ -239,7 +239,7 @@ table thead th {
 
 table th, table td {
   padding: .5rem;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--color-border);
   font-size: 90%;
 }
 
@@ -250,7 +250,7 @@ table tbody tr:hover {
 
 @media screen and (max-width: 700px){
   table.mobile {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--color-border);
   }
 
   table.mobile td, table.mobile th {
@@ -267,7 +267,7 @@ table tbody tr:hover {
   table.mobile tr:not(:last-child) {
     border-width: 0 0 2px;
     border-style: dashed;
-    border-color: var(--border-color);
+    border-color: var(--color-border);
   }
 
   table.mobile [data-th]:before {

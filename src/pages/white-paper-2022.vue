@@ -126,7 +126,7 @@
                 {{$t(`Open questions of teleology and Mises' work`)}}
               </li>
             </ul>
-            <rbnet-button class="large white" link="/vision">{{$t(`Read chapter 1`)}}</rbnet-button>
+            <rb-button buttoncolor="white" to="/vision">{{$t(`Read chapter 1`)}}</rb-button>
           </div>
           <div class="first-chapter__images chapter__images">
             <div class="first-chapter__images--top">
@@ -202,7 +202,7 @@
                 {{$t(`A simple representation of Robonomics architecture`)}}
               </li>
             </ol>
-            <rbnet-button class="large white" link="/architecture">{{$t(`Read chapter 2`)}}</rbnet-button>
+            <rb-button buttoncolor="white" to="/architecture">{{$t(`Read chapter 2`)}}</rb-button>
           </div>
           <div class="second-chapter__images chapter__images">
             <div class="scheme-image">
@@ -273,10 +273,10 @@
           <p class="discord__text hyphens">
             {{$t(`We continue to update the white paper of Robonomics`)}}, <br/> {{$t(`stay tuned for new parts on our website and in Discord`)}}. 
           </p>
-          <rbnet-button class="wp__button" color="violet" :link="$static.metadata.discord">
+          <rb-button class="wp__button" buttoncolor="violet" :to="$static.metadata.discord">
             <g-image quality="75" class="button-icon" alt="" aria-hidden="true" src="~/assets/images/white-paper-2022/discord.svg" />
             {{$t(`Join our discord`)}}
-          </rbnet-button>
+          </rb-button>
           <div class="elegant-robot">
             <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/elegant-robot.svg" />
           </div>
@@ -390,12 +390,6 @@ export default {
     text-transform: unset;
    }
 
-
-  .chapter__text .button:hover {
-    --b-color-background: var(--white-button-hover);
-    background-color: var(--b-color-background);
-  }
-
    .chapter-accent {
     display: block;
    }
@@ -426,11 +420,6 @@ export default {
     font-family: var(--font-family-code);
     box-shadow: 6px 6px 0 var(--color-dark);
     text-transform: uppercase;
-  }
-
-  .dark-theme .wp-page .button:hover {
-    --b-color-background: var(--white-button-hover);
-    background-color: var(--b-color-background);
   }
 
   hr {

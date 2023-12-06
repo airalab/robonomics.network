@@ -2,7 +2,7 @@ input, select, button{
 	appearance: none;
 
 	padding: .5rem .8rem;
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--color-border);
 	background-color: var(--body-bg);
 	font-size: var(--base-font-size);
 	font-family: var(--font-family-code);
@@ -47,7 +47,7 @@ input[type="checkbox"] {
     height: 1.3rem;
 	position: relative;
 	margin-right: 1rem;
-	border-color: var(--border-color) !important;
+	border-color: var(--color-border) !important;
 	text-align: center;
 }
 
