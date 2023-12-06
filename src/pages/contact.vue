@@ -67,14 +67,14 @@
 
   
             <div class="google-sheets-form__actions">
-              <rbnet-button @click="onSubmit" v-if="result !== 'success'" class="button large"  :disabled="result === 'error' || result === 'wait'">
+              <rb-button block @click="onSubmit" v-if="result !== 'success'" :disabled="result === 'error' || result === 'wait'">
                 <span v-if="result !== 'wait'">{{ $t('Submit') }}</span>
                 <span class="isLoading" v-else>{{ $t('Adding you to our special list...') }}</span>
-                <span class="spinner">
-                  <Spinner v-if="result === 'wait'"/>
+                <span class="spinner"  v-if="result === 'wait'">
+                  <Spinner/>
                 </span>
-              </rbnet-button>
-              <rbnet-button disabled v-else class="button button-success">{{ $t('Nice, you are in the list') }}</rbnet-button>
+              </rb-button>
+              <rb-button block disabled v-else class="button-success">{{ $t('Nice, you are in the list') }}</rb-button>
               <div v-if="result === 'error'" class="error">{{ $t('Something went  wrong :( Try again later') }}</div>
             </div>
           </gsp-form>
@@ -323,23 +323,9 @@
   .contacts__input:focus {
     border: 1px solid var(--color-blue);
   }
-  
-  .button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    background-color: #214FDA;
-  }
-
-  .button:hover {
-    background-color: var(--color-green);
-  }
 
   .spinner {
     order: -1;
-    margin-left: 10px;
   }
 
   .spinner svg{

@@ -40,7 +40,7 @@
                     <div class="xrt-bridge__text token__intro">
                         <p><span class="token__big-text">{{ $t('The task') }}</span> {{ $t('of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.') }}</p>
                         <div class="section-align-right">
-                            <rbnet-button link="https://dapp.robonomics.network/" color="blue">{{ $t('Try our Dapp') }}</rbnet-button>
+                            <rb-button to="https://dapp.robonomics.network/">{{ $t('Try our Dapp') }}</rb-button>
                         </div>
                     </div>
                 </div>

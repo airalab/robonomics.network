@@ -16,7 +16,6 @@ import Default from '~/layouts/Default.vue'
 
 // components
 import Contacts from '~/components/Contacts.vue'
-import rbnetButton from '~/components/rbnetButton.vue'
 import rbButton from '~/components/rbButton.vue'
 import Youtube from '~/components/Youtube.vue'
 
@@ -47,7 +46,6 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
   Vue.component('layout', Default)
   Vue.component('Contacts', Contacts)
-  Vue.component('rbnet-button', rbnetButton)
   Vue.component('rb-button', rbButton)
   Vue.component('Youtube', Youtube)
 
