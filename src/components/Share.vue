@@ -2,10 +2,16 @@
 
   <ul class="list-simple grid-3"  v-if="assets && allTelegrams.length">
     <li class="share" :class="classes" v-for="(asset, key) in assets" :key="key" v-if="asset.title != 'Telegram chat'">
-      <ShareItem :asset=asset />
+      <ShareItem :asset=asset>
+        <div v-html="asset.rawSvg">
+        </div>
+      </ShareItem>
     </li>
     <li  class="share " :class="classes" v-for="contact in allTelegrams[0].options" :key="contact.text">
-      <TelegramItem v-if="allTelegrams" :asset="allTelegrams" :contact="contact"/>  
+      <TelegramItem v-if="allTelegrams" :asset="allTelegrams" :contact="contact">
+        <div v-html="allTelegrams[0].rawSvg">
+        </div>
+      </TelegramItem>  
     </li>
 
 
@@ -46,7 +52,7 @@ export default {
   }
 
   li:hover {
-    animation: bounce 1s ease infinite;
+    animation: bounce 1s ease forwards;
   }
 
 
