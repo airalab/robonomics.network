@@ -5,8 +5,8 @@
       <g-image :src="require(`!!assets-loader!@/assets/images/devices/${img}`)"  quality="75%" :alt="title" class="product__img"/>
       <p class="product__text">{{ text }}</p>
       <div class="products__links">
-        <rb-button class="devices__link" :to="hacksterLink" buttoncolor="pale-blue" buttonstyle="flat">{{ $t('View specification') }}</rb-button>
-        <rb-button v-if="!release && telegramLink" :to="telegramLink" buttoncolor="green" buttonstyle="flat" class="devices__link">{{ $t('Buy in Telegram bot') }}</rb-button>
+        <rb-button block class="devices__link" :to="hacksterLink" buttoncolor="pale-blue" buttonstyle="flat">{{ $t('View specification') }}</rb-button>
+        <rb-button block v-if="!release && telegramLink" :to="telegramLink" buttoncolor="green" buttonstyle="flat" class="devices__link">{{ $t('Buy in Telegram bot') }}</rb-button>
         <span v-if="release && !telegramLink"  class="product__release">{{release}}</span>
       </div>
     </div>
@@ -100,10 +100,6 @@ export default {
   .products__links {
     display: flex;
     flex-direction: column;
-  }
-
-  .products__links .devices__link {
-    width: 100%;
   }
 
   .product__release {

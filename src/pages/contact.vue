@@ -168,6 +168,10 @@
 
 <style scoped>
 
+  h3 {
+    margin-top: 0;
+  }
+
   .layout {
     /* max-width: 1040px;
     grid-template-columns: 2fr 1fr; */

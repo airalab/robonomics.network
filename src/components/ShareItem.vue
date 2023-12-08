@@ -2,7 +2,8 @@
 
   <g-link :to="asset.options[0].link" class="share__link" :class="{ 'no-image': !asset.img }">
     <div class="share__col share__img" v-if="asset.img">
-      <g-image quality="75"  :src="require('!!assets-loader!~/assets/images/'+asset.img)"/>
+      <g-image quality="75" v-if="!asset.rawSvg"  :src="require('!!assets-loader!~/assets/images/'+asset.img)"/>
+      <slot/>
     </div>
   </g-link>
 
