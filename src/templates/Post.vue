@@ -150,8 +150,6 @@ query($id: ID!) {
     margin-bottom: var(--space);
   }
 
-  .post a { word-break: break-all; }
-
   .post h2 strong, .post h3 strong, .post h4 strong, .post h5 strong {
     color: var(--color-green);
   }
