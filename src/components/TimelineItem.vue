@@ -1,17 +1,17 @@
 <template>
   <div class="timeline__item" :class="{'bottom-line': bottomLine}">
     <span class="timeline__year">{{ year }}</span>
-    <h2 class="timeline__title">{{ $t(title) }}</h2>
+    <h2 class="timeline__title">{{title}}</h2>
     <div class="timeline__text" v-html="text">
     </div>
     <div class="timeline__events" v-if="events.length">
       <h3>{{ $t('Notable events') }}:</h3>
       <div class="timeline__events-wrapper">
         <g-link class="timeline__link" v-for="event in events" :key="event.id" :to="event.link">
-          {{ $t(event.name) }}
+          {{ event.name}}
         </g-link>
       </div>
-    </div>
+    </div> 
   </div>
 </template>
 

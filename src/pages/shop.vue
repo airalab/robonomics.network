@@ -63,8 +63,6 @@
 
 <script>
 
-import products from '@/data/shop.yaml'
-
 export default {
 
   components: {
@@ -72,12 +70,66 @@ export default {
     ShopItem: () => import("~/components/ShopItem.vue"),
   },
 
-  computed: {
-    products () {
-      return products
+  data() {
+    return {
+      products: [
+        {
+          id: 0,
+          text: this.$t('Do Androids Dream of Electric Sheep?'),
+          link: 'https://robonomics.threadless.com/designs/robot-and-an-electric-sheep/mens/t-shirt/regular',
+          image: 'shop-1.jpg'
+        },
+        {
+          id: 1,
+          text: this.$t('Sleeping Mew Space'),
+          link: 'https://robonomics.threadless.com/designs/robot-and-a-cat/mens/t-shirt/regular?variation=front&color=white',
+          image: 'shop-2.jpg'
+        },
+        {
+          id: 2,
+          image: 'shop-circle-1.png',
+          class: 'hideDesktop',
+          link: 'https://robonomics.threadless.com/'
+        },
+        {
+          id: 3,
+          text: this.$t('Are you ready for Mars?'),
+          link: 'https://robonomics.threadless.com/designs/astronaut-robonomics-i/mens/t-shirt/regular?variation=front&color=royal_blue',
+          image: 'shop-3.jpg'
+        },
+        {
+          id: 4,
+          text: this.$t('Shiva Robot'),
+          link: 'https://robonomics.threadless.com/designs/robot-and-cosmonaut/womens',
+          image: 'shop-4.jpg'
+        },
+        {
+          id: 5,
+          text: this.$t('Space Travelers'),
+          link: 'https://robonomics.threadless.com/designs/travel-to-mars/mens/t-shirt/regular',
+          image: 'shop-5.jpg'
+        },
+        {
+          id: 6,
+          image: 'shop-circle-2.png',
+          class: 'hideDesktop',
+          link: 'https://robonomics.threadless.com/'
+        },
+        {
+          id: 7,
+          text: this.$t('Retro Astronaut'),
+          link: 'https://robonomics.threadless.com/designs/astronaut-robonomics-ii/mens/t-shirt/',
+          image: 'shop-6.jpg'
+        },
+        {
+          id: 8,
+          text: this.$t('New Newton'),
+          link: 'https://robonomics.threadless.com/designs/robot-and-an-apple/mens/t-shirt/regular?variation=front&color=white',
+          image: 'shop-7.jpg'
+        },
+      ]
     }
   }
-
 }
 </script>
 
