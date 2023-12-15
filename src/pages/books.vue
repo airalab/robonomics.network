@@ -48,8 +48,6 @@
 
 <script>
 
-  import books from '@/data/books.yaml'
-
   export default {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
@@ -59,6 +57,91 @@
 
     data() {
       return {
+        books: [
+          {
+            title: this.$t("R&D, 2022"),
+            description: this.$t('Updated use cases for connected robots within web3 technologies.'),
+            img: 'docs-book-4.png',
+            options: [
+              {
+                link: 'https://crustipfs.info/ipfs/QmZK64M7M31mkMsDd8yQa1dfX4a4KeDCyaUMsTuzsKq6LC',
+                text: 'English',
+                id: 0
+              },
+              {
+                link: 'https://crustipfs.info/ipfs/QmNsiaWWFw4ZoqAnW5vuTXNz2jwYBu7ShyXSYqU1uNDjrF',
+                text: 'Русский',
+                id: 1
+              }
+            ]
+          },
+          {
+            title: this.$t("R&D, 2021"),
+            description: this.$t('17 use cases for connected robots within Polkadot and Ethereum.'),
+            img: 'docs-book-3.png',
+            options: [
+              {
+                link: 'https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi',
+                text: 'English',
+                id: 0
+              },
+              {
+                link: 'https://ipfs.io/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V',
+                text: 'Русский',
+                id: 1
+              },
+              {
+                link: 'https://crustipfs.art/ipfs/QmU8CFPD9bQheKJhKdyAZ11GNhuqHKPok5Tu8bUrNjCZtg',
+                text: 'Español',
+                id: 2
+              }
+            ]
+          },
+          {
+            title: this.$t("Book «Robot economics», 2018"),
+            description: this.$t('Here, we are explaining the idea of a cyber-physical system, how it can assist with scaling manufacturing, and what to do about the liabilities of robots.'),
+            img: 'docs-book-2.png',
+            options: [
+              {
+                link: 'https://crustipfs.info/ipfs/QmQ3k8p9SQS5wjovPcjUtQceRZZ6nv3Eqirt1vVQ2wP2JL',
+                text: 'English',
+                id: 0
+              },
+              {
+                link: 'https://crustipfs.info/ipfs/QmUqNnzdZnic61UYTuKT9EzBNzMW6jc5uHSFk4Xzd3iM93',
+                text: 'Русский',
+                id: 1
+              },
+              {
+                link: 'https://crustipfs.info/ipfs/QmXhWarATZNTy3CweoVAdy4aTMrGMCsipo3gPSWVsUyQW6',
+                text: 'Italiano',
+                id: 2
+              }
+            ]
+          },
+          {
+            title: this.$t("Book «Robot economics», 2017"),
+            description: this.$t("The baseline here is that free economic principles are enough for living in an automated world. Robots can be our friends, and we don't need centralization to make it comfortable and reliable."),
+            img: 'docs-book-1.png',
+            options: [
+              {
+                link: 'https://crustipfs.info/ipfs/QmWue3YfuZvuRvgcNb4vZuheX9TaZ9E1b8aCdxSoaGTbVN',
+                text: 'English',
+                id: 0
+              },
+              {
+                link: 'https://crustipfs.info/ipfs/QmUjBPgDzmHFHiDkQAG93szJQguiZiowm9sedFMhPfQP4y',
+                text: 'Русский',
+                id: 1
+              },
+              {
+                link: 'https://crustipfs.info/ipfs/QmTp3srjo3r1L2TKpAEGFafjdzSCTKJT9kkBEkCQDEF6tz',
+                text: 'Deutsch',
+                id: 2
+              }
+            ]
+          }
+        ],
         recs: [
           {
             title: 'The Nature of the Firm',
@@ -117,12 +200,6 @@
             color: '#0C8DD6'
           }
         ]
-      }
-    },
-
-    computed: {
-      books () {
-        return books
       }
     }
   }
