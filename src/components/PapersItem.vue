@@ -1,7 +1,7 @@
 <template>
 
   <div direction="ltr"  class="papers__item oldy" v-on:click="selectInButton">
-    <h3 class="papers__item-title"> {{ $t(asset.title) }} </h3>
+    <h3 class="papers__item-title"> {{ asset.title }} </h3>
     <div class="papers__info">
       <g-link :to="option.link" class="papers__link" :class="{'center': option.position === 'center'}"  v-for="option in asset.options" :key="option.id">
         <g-image v-if="option.icon" alt="option.text" :src="require('!!assets-loader!~/assets/images/papers/'+option.icon)" quality="75" />
