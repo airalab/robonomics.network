@@ -21,7 +21,9 @@ tags: ['Сценарии использования', 'Сотрудничест�
 
 Ниже изображен план этажа одного из двух блоков и легенда обозначений.
 
-![Smart home floor plan](../images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg)
+<!-- ![Smart home floor plan](../images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg) -->
+
+<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
 
 Пусть вас не вводит в заблуждение слово “Wired”. Это значит, что устройство требуется постоянное питание, в то время как устройства из колонки “Wireless” работают от батарейки.
 
@@ -45,7 +47,9 @@ tags: ['Сценарии использования', 'Сотрудничест�
 
 Что касается безопасности, то резиденты будут иметь доступ к домофонной системе из единой панели управления домом. Так же установим камеры видеонаблюдения для безопасности.
 
-![Smart home lobby plan](../images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg)
+<!-- ![Smart home lobby plan](../images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg) -->
+
+<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
 
 ## Заключение
 
