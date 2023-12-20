@@ -139,14 +139,14 @@
           {
             id: 4,
             year: '2016 - 2017',
-            title: 'Bringing Together Web3 Techs and Robotic Frameworks',
+            title: this.$t('Bringing Together Web3 Techs and Robotic Frameworks'),
             text: `<p class='timeline__descr'>${this.$t('This was a period of active R&D during which we identified a range of tasks, in which p2p technologies have capabilities that were not previously available for robotics. Combining Ethereum computer, IPFS file storage and Robot Operating System, we realized that any device could potentially become an')} <b>${this.$t('autonomous intelligent robot agent')}</b>. ${this.$t('In turn, this opened the way for us to the concepts of Robot-as-a-Service and the robot economy.')} </p><p class='timeline__descr'> ${this.$t('Our publications in scientific journals of this period are available in the')} <a class='timeline__link' href='/papers/' target='_blank'>${this.$t('Papers section')}</a>.</p><p class='timeline__descr'>${this.$t('We have collected all R&D projects over the years in the')} <a class='timeline__link' href='https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi' target='_blank'>${this.$t('a handy book')}</a>.</p>`,
             line: true
           },
           {
             id: 5,
             year: '2015 - 2016',
-            title: 'Playing with Human-Machine Interaction through Ethereum',
+            title: this.$t('Playing with Human-Machine Interaction through Ethereum'),
             text:  `<p class='timeline__descr'>${this.$t('It all started with an idea that dawned on the founders when Ethereum had only just launched its mainnet. What if the robot performs a task for a client for cryptocurrency, and its logic is controlled by a smart contract?')}</p><p class='timeline__descr'>${this.$t('To test the idea, we made a demo in which a drone controlled by an Ethereum computer was launched to achieve the specified GPS coordinates after the user completed a payment transaction.')}</p><p class='timeline__descr'>${this.$t('The demo is available on')} <a class='timeline__link' href='https://youtu.be/V_3rcP2Duv0' target='_blank'>${this.$t('YouTube')}</a>.</p>`,
             line: false
           }
