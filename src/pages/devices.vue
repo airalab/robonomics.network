@@ -122,7 +122,7 @@ export default {
         {
           id: 1,
           title: this.$t('Product 2: Smart Energy Power Consumption Monitoring'),
-          text: this.$t('Have you ever wondered what consumes the most electricity in your home? Our smart DIN energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.'),
+          text: this.$t('Have you ever wondered what consumes the most electricity in your home? Our smart energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.'),
           img: 'energy-monitor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/energy-monitoring",
           telegramLink: this.links.tg,
