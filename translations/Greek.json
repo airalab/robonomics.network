@@ -813,7 +813,6 @@
   "Measures PM2.5/PM10": "Μετρά PM2,5/PM10",
   "Can be added as a part of global sensor map or your own fork": "Μπορεί να προστεθεί ως μέρος του παγκόσμιου χάρτη αισθητήρων ή του δικού σας πιρουνιού",
   "Compatible with luftdaten": "Συμβατό με luftdaten",
-  "Start of Sales: Jan '24": "Έναρξη πωλήσεων: Ιαν '24",
   "View specification": "Προβολή προδιαγραφής",
   "R&D, 2022": "R&D, 2022",
   "R&D, 2021": "R&D, 2021",
@@ -823,9 +822,11 @@
   "Twitter": "Twitter",
   "Youtube": "Youtube",
   "Discord": "Discord",
-  "We are self-driving team with more then 8 years expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "Είμαστε μια ομάδα αυτοκινούμενων οχημάτων με περισσότερα από 8 χρόνια εμπειρίας στη ρομποτική, το blockchain και το IoT. Έχοντας μια βαθιά κατανόηση των προκλήσεων που αντιμετωπίζουν οι προηγμένοι χρήστες έξυπνων σπιτιών, επιλέξαμε να εισέλθουμε στην κατασκευή των δικών μας συσκευών. Αποκτήστε έλεγχο του σπιτιού σας, εξοικονομήστε ενέργεια και απελευθερωθείτε από τα εταιρικά νέφη και τους περιορισμούς των συσκευών με εμάς!",
   "Buy devices": "Αγοράστε συσκευές",
   "Have you ever wondered what consumes the most electricity in your home? Our smart energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.": "Έχετε αναρωτηθεί ποτέ ποιος καταναλώνει την περισσότερη ηλεκτρική ενέργεια στο σπίτι σας; Ο έξυπνος μας μετρητής ενέργειας σχεδιάστηκε για να σας βοηθήσει να εντοπίσετε τις κύριες πηγές κατανάλωσης ηλεκτρικής ενέργειας και να αποτρέψετε τις ανεπιθύμητες διαρροές ενέργειας. Αυτός ο μετρητής ενέργειας λειτουργεί τόσο με ένα μεμονωμένο αγαθό όσο και με ολόκληρο κτίριο, δεν χρειάζεται κανένα νέφος, πρωτόκολλο MQTT ενσωματωμένο, μπορεί να χρησιμοποιηθεί με το Home Assistant και διαθέτει χρήσιμο πίνακα διαχείρισης ενέργειας.",
   "Bringing Together Web3 Techs and Robotic Frameworks": "Συνδυάζοντας τεχνολογίες Web3 και πλαισίων ρομποτικής",
-  "Playing with Human-Machine Interaction through Ethereum": "Παιχνίδι με την αλληλεπίδραση ανθρώπου-μηχανής μέσω του Ethereum"
+  "Playing with Human-Machine Interaction through Ethereum": "Παιχνίδι με την αλληλεπίδραση ανθρώπου-μηχανής μέσω του Ethereum",
+  "We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "Είμαστε μια αυτόνομη ομάδα με εκτεταμένη εμπειρία στη ρομποτική, το blockchain και το IoT. Έχοντας βαθιά κατανόηση των προκλήσεων που αντιμετωπίζουν οι προηγμένοι χρήστες έξυπνων σπιτιών, αποφασίσαμε να επιχειρήσουμε να κατασκευάσουμε τις δικές μας συσκευές. Αποκτήστε έλεγχο του σπιτιού σας, εξοικονομήστε ενέργεια και απελευθερωθείτε από τα εταιρικά νέφη και τους περιορισμούς των συσκευών με εμάς!",
+  "Free worldwide shipping starts from January 2024": "Η δωρεάν παγκόσμια αποστολή ξεκινά από τον Ιανουάριο του 2024",
+  "Following the Multichain crash, we are awaiting the implementation of native bridges within Polkadot to connect Polkadot XRT with Ethereum.": "Μετά την κατάρρευση του Multichain, αναμένουμε την εφαρμογή των native γεφυρών στο Polkadot για να συνδέσουμε το Polkadot XRT με το Ethereum."
 }
