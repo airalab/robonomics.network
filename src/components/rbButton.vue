@@ -161,7 +161,7 @@ export default {
   }
 
   /* dark theme */
-  .rb-button:not(.rb-button-vivid-blue)  {
+  .dark-theme .rb-button:not(.rb-button-vivid-blue)  {
     --b-color-text: hsl(100, 100%, 100%);
   }
 </style>

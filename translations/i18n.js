@@ -11,6 +11,7 @@ import ko from './Korean.json';
 import pt from './Portuguese.json';
 import el from './Greek.json';
 import uk from './Ukrainian.json';
+import nl from './Dutch.json';
 
 // for blog
 // import arBlog from './blog/Arabic.json';
@@ -42,7 +43,8 @@ const {
     ko,
     pt,
     el,
-    uk
+    uk,
+    nl
   },
   locale: typeof window !== "undefined" ? (window.localStorage.getItem('locale') || 'en') : 'en'
 })
