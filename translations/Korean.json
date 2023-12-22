@@ -813,9 +813,7 @@
   "Measures PM2.5/PM10": "PM2.5/PM10 측정",
   "Can be added as a part of global sensor map or your own fork": "전역 센서 맵 또는 자체 포크의 일부로 추가할 수 있습니다.",
   "Compatible with luftdaten": "luftdaten과 호환됩니다.",
-  "Start of Sales: Jan '24": "판매 시작: 1월 '24",
   "View specification": "사양 보기",
-  "We are self-driving team with more then 8 years expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "우리는 로봇 공학, 블록체인 및 사물 인터넷 분야에서 8년 이상의 전문 지식을 갖춘 자율 주행 팀입니다. 고급 스마트 홈 사용자가 직면하는 도전에 대한 깊은 이해를 갖고 있으며, 우리는 자체 기기 제조에 도전하기로 결정했습니다. 우리와 함께 집을 통제하고 에너지를 절약하며 기업 클라우드와 기기 제한에서 벗어나세요!",
   "R&D, 2022": "R&D, 2022",
   "R&D, 2021": "R&D, 2021",
   "Book «Robot economics», 2018": "책 «로봇 경제학», 2018",
@@ -827,5 +825,8 @@
   "Buy devices": "장치 구매",
   "Have you ever wondered what consumes the most electricity in your home? Our smart energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.": "가정에서 가장 많은 전기를 소비하는 것이 무엇인지 궁금해 해 보셨나요? 저희 스마트 에너지 전력계는 전기 사용량의 주요 원천을 식별하고 원하지 않는 에너지 누출을 방지하는 데 도움이 되도록 설계되었습니다. 이 에너지 계량기는 개별 자산 또는 전체 건물과 함께 사용할 수 있으며, 클라우드나 MQTT 프로토콜이 필요하지 않으며, Home Assistant와 함께 사용할 수 있으며 유용한 에너지 관리 대시보드입니다.",
   "Bringing Together Web3 Techs and Robotic Frameworks": "웹3 기술과 로봇 프레임워크를 결합하기",
-  "Playing with Human-Machine Interaction through Ethereum": "이더리움을 통한 인간-기계 상호작용 체험하기"
+  "Playing with Human-Machine Interaction through Ethereum": "이더리움을 통한 인간-기계 상호작용 체험하기",
+  "We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "로봇 공학, 블록체인 및 사물인터넷에 광범위한 전문 지식을 갖춘 자율 팀입니다. 고급 스마트 홈 사용자가 직면하는 도전에 대한 깊은 이해를 가지고 있으며, 우리는 자체 장치 제조에 도전하기로 결정했습니다. 우리와 함께 집을 통제하고 에너지를 절약하며 기업 클라우드와 장치 제한에서 벗어나세요!",
+  "Free worldwide shipping starts from January 2024": "2024년 1월부터 무료 세계 배송이 시작됩니다.",
+  "Following the Multichain crash, we are awaiting the implementation of native bridges within Polkadot to connect Polkadot XRT with Ethereum.": "Multichain 충돌 이후, 우리는 Polkadot 내에서 Polkadot XRT를 이더리움과 연결하기 위해 네이티브 브리지의 구현을 기다리고 있습니다."
 }

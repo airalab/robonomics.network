@@ -712,10 +712,8 @@
   "Measures PM2.5/PM10": "يقيس PM2.5/PM10",
   "Can be added as a part of global sensor map or your own fork": "يمكن إضافتها كجزء من خريطة الاستشعار العالمية أو الشوكة الخاصة بك",
   "Compatible with luftdaten": "متوافق مع لوفتداتن",
-  "Start of Sales: Jan '24": "بداية المبيعات: 24 يناير",
   "View specification": "عرض المواصفات",
   "Have you ever wondered what consumes the most electricity in your home? Our smart energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.": "هل سبق لك أن تساءلت ما الذي يستهلك أكبر قدر من الكهرباء في منزلك؟ تم تصميم عداد الطاقة الذكي الخاص بنا لمساعدتك على تحديد المصادر الرئيسية لاستخدام الكهرباء ومنع تسرب الطاقة غير المرغوب فيه. يعمل عداد الطاقة هذا مع الأصول الفردية أو المبنى بأكمله، ولا يحتاج إلى أي سحابة، ويمكن استخدام بروتوكول MQTT على متن الطائرة، مع Home Assistant ولوحة معلومات إدارة الطاقة المفيدة.",
-  "We are self-driving team with more then 8 years expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "نحن فريق ذاتي القيادة يتمتع بخبرة تزيد عن 8 سنوات في مجال الروبوتات وتقنية blockchain وإنترنت الأشياء. نظرًا لوجود فهم عميق للتحديات التي يواجهها مستخدمو المنازل الذكية المتقدمون، فقد اخترنا المغامرة في تصنيع أجهزتنا الخاصة. تحكم في منزلك، ووفر الطاقة، وحرر نفسك من سحابة الشركة وقيود الأجهزة معنا!",
   "Buy devices": "شراء الأجهزة",
   "R&D, 2022": "البحث والتطوير، 2022",
   "R&D, 2021": "البحث والتطوير، 2021",
@@ -726,5 +724,8 @@
   "Youtube": "Youtube",
   "Discord": "Discord",
   "Bringing Together Web3 Techs and Robotic Frameworks": "الجمع بين تقنيات Web3 والأطر الروبوتية",
-  "Playing with Human-Machine Interaction through Ethereum": "اللعب بالتفاعل بين الإنسان والآلة من خلال الإيثيريوم"
+  "Playing with Human-Machine Interaction through Ethereum": "اللعب بالتفاعل بين الإنسان والآلة من خلال الإيثيريوم",
+  "We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "نحن فريق مستقل يتمتع بخبرة واسعة في مجال الروبوتات وتقنية blockchain وإنترنت الأشياء. نظرًا لوجود فهم عميق للتحديات التي يواجهها مستخدمو المنازل الذكية المتقدمون، فقد اخترنا المغامرة في تصنيع أجهزتنا الخاصة. تحكم في منزلك، ووفر الطاقة، وحرر نفسك من سحابة الشركة وقيود الأجهزة معنا!",
+  "Free worldwide shipping starts from January 2024": "يبدأ الشحن المجاني في جميع أنحاء العالم اعتبارًا من يناير 2024",
+  "Following the Multichain crash, we are awaiting the implementation of native bridges within Polkadot to connect Polkadot XRT with Ethereum.": "بعد تعطل Multichain، نحن في انتظار تنفيذ الجسور الأصلية داخل Polkadot لربط Polkadot XRT مع Ethereum"
 }

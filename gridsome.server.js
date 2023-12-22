@@ -9,16 +9,6 @@ const fs = require('fs');
 
 let allPossiblePaths = [];
 
-// all blog locales for translation
-let arBlogFile = fs.readFileSync('./translations/blog/Arabic.json');
-let arBlog = JSON.parse(arBlogFile);
-
-let zhBlogFile = fs.readFileSync('./translations/blog/Chinese.json');
-let zhBlog = JSON.parse(zhBlogFile);
-
-let ruBlogFile = fs.readFileSync('./translations/blog/Russian.json');
-let ruBlog = JSON.parse(ruBlogFile);
-
 module.exports = function (api) {  
 
   // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
@@ -88,10 +78,6 @@ module.exports = function (api) {
   
     
       allPossiblePaths.forEach(node => {
-        // keys for all locales for translation
-        // const allAr = Object.keys(arBlog);
-        // const allZh = Object.keys(zhBlog);
-        // const allRu = Object.keys(ruBlog);
 
         const path = node.path.slice(0, -1).split("/").pop();
   
@@ -105,30 +91,9 @@ module.exports = function (api) {
               component: './src/templates/BlogTranslations.vue',
             })
           }
-        })
+        });
 
-        // code below translates blog post (if translation exists) for specific locale (e.g arabic)
-        // change path and object for another locale to crate translation
         
-        // let data = fs.readFileSync(`content/posts/ar/${path}.md`, 'utf-8');
-        // this part replaces english text with the needed one 
-        // allZh.forEach(el => {
-        //   if(data.includes(el)) {
-        //     data = data.replace(el, zhBlog[el]);
-        //   }
-        // });
-        // and this part rewrites file and adding translated text instead of default one
-        // fs.writeFile(`content/posts/zh/${path}.md`, data, 'utf8', function (err) {
-        //   if (err) return console.log(err);
-        // });
-
-        // to automatically cope files to all locales
-        // locales.forEach(l => {
-        //   fs.copyFile(`content/posts/${path}.md`, `content/posts/${l}/${path}.md`, (err) => {
-        //     if (err) throw err;
-        //     console.log('file ws copied');
-        //   });
-        // })
       })
   })
   

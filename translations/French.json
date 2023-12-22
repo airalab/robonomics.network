@@ -813,7 +813,6 @@
   "Measures PM2.5/PM10": "Mesure PM2.5/PM10",
   "Can be added as a part of global sensor map or your own fork": "Peut être ajouté en tant que partie de la carte mondiale des capteurs ou de votre propre fork",
   "Compatible with luftdaten": "Compatible avec luftdaten",
-  "Start of Sales: Jan '24": "Début des ventes : janv. '24",
   "View specification": "Voir la spécification",
   "R&D, 2022": "R&D, 2022",
   "R&D, 2021": "R&D, 2021",
@@ -823,9 +822,11 @@
   "Twitter": "Twitter",
   "Youtube": "Youtube",
   "Discord": "Discord",
-  "We are self-driving team with more then 8 years expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "Nous sommes une équipe de conduite autonome avec plus de 8 ans d'expertise en robotique, blockchain et IoT. Ayant une compréhension approfondie des défis auxquels sont confrontés les utilisateurs avancés de maisons intelligentes, nous avons choisi de nous aventurer dans la fabrication de nos propres appareils. Prenez le contrôle de votre maison, économisez de l'énergie et libérez-vous des clouds d'entreprise et des limitations des appareils avec nous!",
   "Buy devices": "Acheter des appareils",
   "Have you ever wondered what consumes the most electricity in your home? Our smart energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.": "Vous êtes-vous déjà demandé ce qui consomme le plus d'électricité dans votre maison? Notre compteur d'énergie intelligent est conçu pour vous aider à identifier les principales sources de consommation d'électricité et à prévenir les fuites d'énergie indésirables. Ce compteur d'énergie fonctionne à la fois avec un actif individuel ou un bâtiment entier, n'a pas besoin de cloud, de protocole MQTT embarqué, peut être utilisé avec Home Assistant et dispose d'un tableau de bord de gestion de l'énergie utile.",
   "Bringing Together Web3 Techs and Robotic Frameworks": "Réunir les technologies Web3 et les frameworks robotiques",
-  "Playing with Human-Machine Interaction through Ethereum": "Jouer avec l'interaction homme-machine grâce à Ethereum"
+  "Playing with Human-Machine Interaction through Ethereum": "Jouer avec l'interaction homme-machine grâce à Ethereum",
+  "We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "Nous sommes une équipe autonome avec une expertise approfondie en robotique, blockchain et IoT. Ayant une compréhension profonde des défis auxquels sont confrontés les utilisateurs avancés de maisons intelligentes, nous avons choisi de nous aventurer dans la fabrication de nos propres appareils. Prenez le contrôle de votre maison, économisez de l'énergie et libérez-vous des nuages d'entreprise et des limitations des appareils avec nous !",
+  "Free worldwide shipping starts from January 2024": "La livraison gratuite dans le monde entier commence à partir de janvier 2024",
+  "Following the Multichain crash, we are awaiting the implementation of native bridges within Polkadot to connect Polkadot XRT with Ethereum.": "Suite au crash de Multichain, nous attendons la mise en œuvre de ponts natifs au sein de Polkadot pour connecter Polkadot XRT avec Ethereum."
 }
