@@ -6,6 +6,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const fs = require('fs');
+const translateBlogPost = require("./functions/translations");
 
 let allPossiblePaths = [];
 
@@ -80,6 +81,9 @@ module.exports = function (api) {
       allPossiblePaths.forEach(node => {
 
         const path = node.path.slice(0, -1).split("/").pop();
+
+        // for blog posts translations
+        // translateBlogPost(fs, path)
   
         // pages for not existing translations
         locales.forEach(locale => {
