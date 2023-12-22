@@ -45,6 +45,7 @@
   pt: Arquitetura da rede Robonomics
   es: Arquitectura de la red de Robonomics
   uk: Архітектура мережі Robonomics
+  nl: Robonomics-netwerkarchitectuur
 
 - alias: Blog
   en: Blog
@@ -60,6 +61,7 @@
   zh: 博客
   ar: مدونة
   el: Ιστολόγιο
+  nl: Bloggen
 
 - alias: Books
   en: Books
@@ -75,6 +77,7 @@
   zh: 书
   ar: الكتب
   el: Βιβλία
+  nl: Boeken
 
 - alias: Contacts
   en: Contacts
@@ -90,6 +93,7 @@
   zh: 联系方式
   ar: جهات الاتصال
   el: Επαφές
+  nl: Contacten
 
 - alias: Robonomics Network
   en: Home
@@ -105,6 +109,7 @@
   ja: Robonomicsネットワーク
   pt: Rede Robonomics
   uk: Robonomics Network
+  nl: Robonomics-netwerk
 
 - alias: Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.
   en: Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user’s privacy.
@@ -120,6 +125,7 @@
   ja: Robonomicsは、ロボットとIoTデバイスのデジタルツインを保存するための分散型クラウドです。Robonomicsは、機械と人間の間の経済的および技術的なコミュニケーションを可能にします。その分散型アーキテクチャは、エンドユーザーのプライバシーを保護します。
   pt: Robonomics é uma nuvem descentralizada para armazenar gêmeos digitais de robótica e dispositivos IoT. Robonomics permite a comunicação econômica e técnica entre máquinas e humanos. Sua arquitetura descentralizada garante a privacidade do usuário final.
   uk: Robonomics — це децентралізована хмара для зберігання цифрових двійників робототехніки та пристроїв IoT. Робономіка забезпечує економічне та технічне спілкування між машинами та людьми. Його децентралізована архітектура забезпечує конфіденційність кінцевого користувача.
+  nl: Robonomics is een gedecentraliseerde cloud voor het opslaan van digitale tweelingen van robotica en IoT-apparaten. Robonomics maakt economische en technische communicatie tussen machines en mensen mogelijk. De gedecentraliseerde architectuur waarborgt de privacy van de eindgebruiker.
 
 - alias: Building Dapps && Web Services for IoT on Robonomics Parachain
   de: Aufbau von Dapps und Webservices für IoT auf Robonomics Parachain
@@ -135,6 +141,7 @@
   zh: 在ROBONOMICS平行链上构建物联网去中心化应用 (DAPP) 和WEB服务
   ar: بناء التطبيقات اللامركزية وخدمات الويب لإنترنت الأشياء على تقنية Robonomics Parachain
   el: Δημιουργία Dapps & & Web Services για IoT στο Robonomics Parachain
+  nl: Dapps && Webservices bouwen voor IoT op Robonomics Parachain
 
 - alias: The future of humanity itself depends on how we teach robots to handle their capabilities.
   de: Die Zukunft der Menschheit selbst hängt davon ab, wie wir Robotern beibringen, mit ihren Fähigkeiten umzugehen.
@@ -150,6 +157,7 @@
   zh: 人类自身的未来取决于我们如何教机器人处理它们的能力。
   ar: أفضل ما في الأمر هو الحصول على أفضل ما لديك هذا رائع.
   el: Το μέλλον της ανθρωπότητας εξαρτάται από τον τρόπο που διδάσκουμε τα ρομπότ να διαχειρίζονται τις δυνατότητές τους.
+  nl: De toekomst van de mensheid zelf hangt af van de manier waarop we robots leren omgaan met hun capaciteiten.
 
 - alias: Robonomics Logos and Assets
   en: Robonomics Logos and Assets
@@ -165,6 +173,7 @@
   ja: Robonomicsのロゴと使用方法
   ar: Robonomics الشعارات والاستخدام
   el: Robonomics Logos and Assets
+  nl: Robonomics-logo's en -middelen
 
 - alias: We have put together Robonomics logos and guidelines to show how you may use it.
   en: We have put together Robonomics logos and guidelines to show how you may use it.
@@ -180,6 +189,7 @@
   ja: 私たちは、Robonomicsのロゴ、カラー、アセット、ガイドラインをまとめました。これらを使用する方法を示します。
   ar: لقد قمنا بتجميع شعارات وألوان وأصول وإرشادات Robonomics لإظهار كيفية استخدامها.
   el: Συγκεντρώσαμε λογότυπα, χρώματα, στοιχεία και οδηγίες Robonomics για να δείξουμε πώς μπορείτε να το χρησιμοποιήσετε
+  nl: We hebben Robonomics-logo's en richtlijnen samengesteld om te laten zien hoe u deze kunt gebruiken.
 
 - alias: Robonomics art shop
   en: Robonomics art shop
@@ -195,6 +205,7 @@
   ar: متجر Robonomics للفنون
   de: Robonomics Kunstladen
   el: Κατάστημα τέχνης Robonomics
+  nl: Robonomics-kunstwinkel
 
 - alias: Useful products with our unique designs made by Robonomics artists with love. Shop online.
   en: Useful products with our unique designs made by Robonomics artists with love. Shop online.
@@ -210,6 +221,7 @@
   ar: منتجات مفيدة بتصميماتنا الفريدة التي صنعها فنانو Robonomics بالحب. تسوق عبر الإنترنت.
   de: Nützliche Produkte mit unseren einzigartigen Designs, die von Robonomics-Künstlern mit Liebe hergestellt wurden. Online einkaufen.
   el: Χρήσιμα προϊόντα με τα μοναδικά μας σχέδια φτιαγμένα από καλλιτέχνες της Robonomics με αγάπη. Αγοράστε online.
+  nl: Handige producten met onze unieke ontwerpen, met liefde gemaakt door Robonomics-kunstenaars. Winkel online.
 
 - alias: Timeline of infrastructure & tech development
   en: Timeline of infrastructure & tech development
@@ -225,6 +237,7 @@
   ar: الجدول الزمني لتطوير البنية التحتية والتكنولوجيا
   de: Zeitplan für Infrastruktur- und Technologieentwicklung
   el: Χρονοδιάγραμμα ανάπτυξης υποδομών και τεχνολογίας
+  nl: Tijdlijn van infrastructuur- en technische ontwikkeling
 
 - alias: The Robonomics project started on 2015. See what was start idea and our checkpoints over the years. This is good brief introduction for newcomers and summary for pioneers.
   en: The Robonomics project started on 2015. See what was start idea and our checkpoints over the years. This is good brief introduction for newcomers and summary for pioneers.
@@ -240,6 +253,7 @@
   ar: بدأ مشروع Robonomics في عام 2015. انظر ما كانت فكرة البدء ونقاط التفتيش لدينا على مر السنين. هذه مقدمة موجزة جيدة للقادمين الجدد وملخص للفاتحين.
   de: Das Robonomics-Projekt begann 2015. Sehen Sie, was die Startidee war und welche Meilensteine wir im Laufe der Jahre erreicht haben. Dies ist eine gute kurze Einführung für Neulinge und eine Zusammenfassung für Pioniere.
   el: Το έργο Robonomics ξεκίνησε το 2015. Δείτε ποια ήταν η ιδέα έναρξης και τα σημεία ελέγχου μας όλα αυτά τα χρόνια. Αυτή είναι καλή σύντομη εισαγωγή για νεοφερμένους και περίληψη για πρωτοπόρους.
+  nl: Het Robonomics-project begon in 2015. Bekijk wat het startidee was en onze controlepunten door de jaren heen. Dit is een goede korte introductie voor nieuwkomers en een samenvatting voor pioniers.
 
 - alias: Robonomics network vision
   en: Robonomics network vision
@@ -255,6 +269,7 @@
   ja: Robonomicsネットワークのビジョン
   el: Οραματισμός δικτύου Robonomics
   ar: رؤية شبكة الروبوتات
+  nl: Robonomics-netwerkvisie
 
 - alias: Whitepaper 2022 
   en: Whitepaper 2022 Guide
@@ -270,6 +285,7 @@
   ko: 백서 2022
   pt: Whitepaper 2022
   es: Whitepaper 2022
+  nl: Whitepaper 2022-gids
 
 - alias: Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory.
   en: Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory.
@@ -285,6 +301,7 @@
   ko: Robonomics 플랫폼을 사용하여 안전하고 서버리스이며 미래 지향적인 IoT 애플리케이션을 만들기 시작하기 전에 이론을 조금 살펴보겠습니다.
   pt: Antes de começarmos a criar aplicativos IoT seguros, sem servidor e futuristas usando a plataforma Robonomics, vamos mergulhar um pouco na teoria.
   es: Antes de comenzar a crear aplicaciones seguras, sin servidor y futuristas de IoT utilizando la plataforma Robonomics, sumerjámonos un poco en la teoría.
+  nl: Voordat we beginnen met het creëren van veilige, serverloze en futuristische IoT-applicaties met behulp van het Robonomics-platform, duiken we eerst een beetje in de theorie.
 
 - alias: XRT tokenomics
   en: XRT tokenomics
@@ -300,6 +317,7 @@
   ru: Токеномика XRT
   es: Tokenómica de XRT
   uk: Токеноміка XRT
+  nl: XRT-tokenomics
 
 - alias: XRT is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain.
   de: XRT ist der Utility Token, der die Kontrolle von IoT-Geräten auf der Basis der Parachain von Ethereum und Robonomics ermöglicht
@@ -315,6 +333,7 @@
   zh: XRT 是一种效用代币，可以控制以太坊和 Robonomics 平行链之上的物联网设备
   ar: XRT هي أموال المرافق التي تجعل من الممكن التحكم في أجهزة إنترنت الأشياء أعلى شبكة Ethereum و Robonomics parachain
   el: Το XRT είναι το βοηθητικό διακριτικό που θα καταστήσει δυνατό τον έλεγχο συσκευών IoT πάνω από το δίκτυο Ethereum και το Robonomics parachain
+  nl: XRT is het utility-token dat het mogelijk maakt om IoT-apparaten bovenop het Ethereum-netwerk en de Robonomics-parachain te besturen.
 
 - alias: Page not found
   en: Page not found
@@ -330,6 +349,7 @@
   ru: Страница не найдена
   es: Página no encontrada
   uk: Сторінку не знайдено
+  nl: Pagina niet gevonden
 
 - alias: In some reason the page you were looking for was not found. Maybe it was deprecated or url has a typo. Anyway, you may use navigation on robonomics.network to find what you need.
   en: In some reason the page you were looking for was not found. Maybe it was deprecated or url has a typo. Anyway, you may use navigation on robonomics.network to find what you need.
@@ -345,6 +365,7 @@
   ru: По какой-то причине страница, которую вы искали, не найдена. Возможно, она устарела или в URL есть ошибка. В любом случае, вы можете использовать навигацию на robonomics.network, чтобы найти то, что вам нужно.
   es: Por alguna razón, la página que estabas buscando no se encontró. Tal vez fue descontinuada o la URL tiene un error tipográfico. De todos modos, puedes usar la navegación en robonomics.network para encontrar lo que necesitas.
   uk: З якоїсь причини сторінка, яку ви шукали, не знайдена. Можливо, він застарів або URL-адреса містить помилку. У будь-якому разі ви можете скористатися навігацією на robonomics.network, щоб знайти те, що вам потрібно.
+  nl: Om de een of andere reden is de pagina die u zocht niet gevonden. Misschien is het verouderd of bevat de URL een typefout. Hoe dan ook, u kunt de navigatie op robonomics.network gebruiken om te vinden wat u nodig heeft.
 
 
 - alias: We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution.
@@ -361,6 +382,7 @@
   ru: Мы - экспериментаторы, инженеры и ученые. Для нас важно не только разработать решение, актуальное на сегодняшний день, но и понять научную обоснованность подхода и достичь ясности в представлении принципов, которые должны лежать в основе всей архитектуры программного решения.
   es: Somos experimentadores, ingenieros y científicos. Para nosotros es importante no solo desarrollar una solución relevante para hoy, sino primero comprender la validez científica del enfoque y lograr claridad en la presentación de los principios que deben fundamentar toda la arquitectura de una solución de software.
   uk: Ми експериментатори, інженери та вчені. Для нас важливо не тільки розробити рішення, актуальне для сьогодення, але спочатку зрозуміти наукову обґрунтованість підходу та досягти ясності у викладі принципів, які повинні лежати в основі всієї архітектури програмного рішення.
+  nl: Wij zijn experimentatoren, ingenieurs en wetenschappers. Het is voor ons belangrijk om niet alleen een oplossing te ontwikkelen die relevant is voor vandaag, maar eerst de wetenschappelijke validiteit van de aanpak te begrijpen en duidelijkheid te bereiken in de presentatie van de principes die ten grondslag moeten liggen aan de gehele architectuur van een softwareoplossing.
 
 - alias: Futuristic, secure, and server-less IoT platform on top of Ethereum and Polkadot. Bringing economy of robots into the 4th industrial revolution.
   en: Futuristic, secure, and server-less IoT platform on top of Ethereum and Polkadot. Bringing economy of robots into the 4th industrial revolution.
@@ -376,6 +398,7 @@
   ru: Футуристическая, безопасная и безсерверная платформа IoT на основе Ethereum и Polkadot. Внедрение экономики роботов в четвертую промышленную революцию.
   es: Plataforma futurista, segura y sin servidor para IoT sobre Ethereum y Polkadot. Llevando la economía de los robots a la cuarta revolución industrial.
   uk: Футуристична, безпечна й безсерверна платформа IoT на основі Ethereum і Polkadot. Введення економіки роботів у 4-ту промислову революцію.
+  nl: Futuristisch, veilig en serverloos IoT-platform bovenop Ethereum en Polkadot. De economie van robots naar de 4e industriële revolutie brengen.
 
 - alias: Robonomics Kusama slot
   en: Robonomics Kusama slot
@@ -391,6 +414,7 @@
   ru: Robonomics Kusama Слот
   es: Robonomics Kusama slot
   uk: Слот Robonomics Kusama
+  nl: Robonomics Kusama-slot
 
 - alias: During 2022, the Robonomics parachain in Kusama was used in a dozen R&D projects and processed more than 4 million transactions for IoT devices in total.
   en: During 2022, the Robonomics parachain in Kusama was used in a dozen R&D projects and processed more than 4 million transactions for IoT devices in total.
@@ -406,6 +430,7 @@
   ru: В течение 2022 года Robonomics парачейн в Кусаме использовался в десятке научно-исследовательских проектов и в общей сложности обработал более 4 миллионов транзакций для IoT-устройств.
   es: Durante 2022, la parachain de Robonomics en Kusama se utilizó en una docena de proyectos de investigación y desarrollo y procesó más de 4 millones de transacciones para dispositivos de IoT en total.
   uk: Протягом 2022 року парачейн Robonomics у Kusama використовувався в дюжині науково-дослідних проектів і загалом обробив понад 4 мільйони транзакцій для пристроїв IoT.
+  nl: In 2022 werd de Robonomics-parachain in Kusama gebruikt in een tiental R&D-projecten en werden in totaal meer dan 4 miljoen transacties voor IoT-apparaten verwerkt.
 
 - alias: Robonomics NFTS
   en: Robonomics NFTS
@@ -421,6 +446,7 @@
   es: Robonomics NFTS
   uk: Robonomics NFTS
   de: Robonomics NFTS
+  nl: Robonomics NFTS
 
 - alias: Robonomics Wallpapers
   en: Robonomics Wallpapers
@@ -436,6 +462,7 @@
   ru: Robonomics обои
   es: Robonomics Wallpapers
   uk: Робономіка Шпалери
+  nl: Robonomics-achtergronden
 
 - alias: We created beautiful Robonomics themed wallpapers for different devices that you can use!
   en: We created beautiful Robonomics themed wallpapers for different devices that you can use!
@@ -451,6 +478,7 @@
   ru: Мы создали красивые обои на тему Робономики для разных устройств, которые вы можете использовать!
   es: ¡Creamos hermosos fondos de pantalla temáticos de Robonomics para diferentes dispositivos que puedes usar!
   uk: Ми створили чудові шпалери на тему Робономіки для різних пристроїв, якими ви можете користуватися!
+  nl: We hebben prachtige Robonomics-thema-achtergronden gemaakt voor verschillende apparaten die je kunt gebruiken!
 
 - alias: Smart devices from Robonomics
   en: Smart devices from Robonomics
@@ -466,21 +494,23 @@
   ru: Умные устройства от Робономики
   es: Dispositivos inteligentes de Robonomics
   uk: Розумні пристрої від Robonomics
+  nl: Slimme apparaten van Robonomics
 
-- alias: Control your home.Be smart.Be independent.
-  en: Control your home.Be smart.Be independent.
-  ar: تحكم في منزلك، كن ذكيًا، كن مستقلاً.
-  zh: 控制你的家。聪明，独立。
-  fr: Contrôlez votre maison. Soyez intelligent. Soyez indépendant.
-  de: Steuern Sie Ihr Zuhause. Seien Sie smart. Seien Sie unabhängig.
-  el: Ελέγξτε το σπίτι σας. Να είστε έξυπνοι. Να είστε ανεξάρτητοι.
-  it: Controlla la tua casa. Sii intelligente. Sii indipendente.
-  ja: 自分の家をコントロールし、賢く、自立しましょう。
-  ko: 집을 제어하세요. 똑똑해지고, 독립적이 되세요.
-  pt: Controle sua casa. Seja inteligente. Seja independente.
-  ru: Управляйте своим домом. Будьте умны. Будьте независимы.
-  es: Controle su hogar. Sea inteligente. Sea independiente.
-  uk: Контролюйте свій дім. Будьте розумними. Будьте незалежними.
+- alias: Take full control over your smart devices using open-source firmwares, software and cloud-free hardware from Robonomics. Start with Universal IR Remote Control, Smart Energy Power Consumption Monitoring, 1,2 gang wi-fi Smart Switch, Air Quality Sensor, Tasmota firmware and Home Assistant smart home dashboard.
+  en: Take full control over your smart devices using open-source firmwares, software and cloud-free hardware from Robonomics. Start with Universal IR Remote Control, Smart Energy Power Consumption Monitoring, 1,2 gang wi-fi Smart Switch, Air Quality Sensor, Tasmota firmware and Home Assistant smart home dashboard.
+  ar: تحكم بشكل كامل في أجهزتك الذكية باستخدام البرامج الثابتة مفتوحة المصدر والبرامج والأجهزة الخالية من السحابة من Robonomics. ابدأ بجهاز التحكم عن بعد العالمي بالأشعة تحت الحمراء، ومراقبة استهلاك الطاقة الذكية، ومفتاح Wi-Fi الذكي 1,2 عصابة، ومستشعر جودة الهواء، والبرامج الثابتة Tasmota، ولوحة القيادة المنزلية الذكية لمساعد المنزل.
+  zh: 使用 Robonomics 的开源固件、软件和无云硬件完全控制您的智能设备。 从通用红外遥控器、智能能源功耗监控、1,2 位 Wi-Fi 智能开关、空气质量传感器、Tasmota 固件和 Home Assistant 智能家居仪表板开始。
+  fr: Prenez le contrôle total de vos appareils intelligents à l'aide des micrologiciels, des logiciels et du matériel open source de Robonomics. Commencez avec la télécommande infrarouge universelle, la surveillance intelligente de la consommation d'énergie, le commutateur intelligent Wi-Fi 1,2 gangs, le capteur de qualité de l'air, le micrologiciel Tasmota et le tableau de bord de la maison intelligente Home Assistant.
+  de: Übernehmen Sie die volle Kontrolle über Ihre Smart-Geräte mit Open-Source-Firmware, Software und cloudfreier Hardware von Robonomics. Beginnen Sie mit einer universellen IR-Fernbedienung, einer intelligenten Überwachung des Energieverbrauchs, einem 1,2-Gang-WLAN-Smart-Switch, einem Luftqualitätssensor, einer Tasmota-Firmware und einem Home Assistant-Smart-Home-Dashboard.
+  el: Πάρτε τον πλήρη έλεγχο των έξυπνων συσκευών σας χρησιμοποιώντας υλικολογισμικά ανοιχτού κώδικα, λογισμικό και υλικό χωρίς cloud από τη Robonomics. Ξεκινήστε με το Universal IR Remote Control, την Έξυπνη Παρακολούθηση Κατανάλωσης Ενέργειας, τον Έξυπνο Διακόπτη Wi-Fi 1,2 gang, τον αισθητήρα ποιότητας αέρα, το υλικολογισμικό Tasmota και τον έξυπνο πίνακα οργάνων Home Assistant.
+  it: Assumi il pieno controllo dei tuoi dispositivi intelligenti utilizzando firmware, software e hardware open source senza cloud di Robonomics. Inizia con il telecomando IR universale, il monitoraggio intelligente del consumo energetico, lo smart switch Wi-Fi da 1,2 gang, il sensore della qualità dell'aria, il firmware Tasmota e il dashboard della casa intelligente Home Assistant.
+  ja: ロボノミクスのオープンソース ファームウェア、ソフトウェア、クラウドフリー ハードウェアを使用して、スマート デバイスを完全に制御します。 ユニバーサル IR リモコン、スマート エネルギー消費電力モニタリング、1、2 ギャング Wi-Fi スマート スイッチ、空気品質センサー、Tasmota ファームウェア、ホーム アシスタント スマート ホーム ダッシュボードから始めます。
+  ko: Robonomics의 오픈 소스 펌웨어, 소프트웨어 및 클라우드 프리 하드웨어를 사용하여 스마트 장치를 완벽하게 제어하세요. 범용 IR 원격 제어, 스마트 에너지 전력 소비 모니터링, 1,2구 Wi-Fi 스마트 스위치, 공기 품질 센서, Tasmota 펌웨어 및 Home Assistant 스마트 홈 대시보드로 시작하세요.
+  pt: Assuma o controle total de seus dispositivos inteligentes usando firmwares de código aberto, software e hardware sem nuvem da Robonomics. Comece com controle remoto IR universal, monitoramento inteligente de consumo de energia, switch inteligente wi-fi de 1,2 gangues, sensor de qualidade do ar, firmware Tasmota e painel de casa inteligente do Home Assistant.
+  ru: Получите полный контроль над своими интеллектуальными устройствами, используя прошивки, программное обеспечение и безоблачное оборудование от Robonomics с открытым исходным кодом. Начните с универсального ИК-пульта дистанционного управления, интеллектуального мониторинга энергопотребления, интеллектуального переключателя Wi-Fi на 1,2 группы, датчика качества воздуха, прошивки Tasmota и панели умного дома Home Assistant.
+  es: Tome el control total de sus dispositivos inteligentes utilizando firmwares, software y hardware sin nube de código abierto de Robonomics. Comience con el control remoto IR universal, el monitoreo inteligente del consumo de energía, el interruptor inteligente Wi-Fi de 1,2 bandas, el sensor de calidad del aire, el firmware Tasmota y el panel de control inteligente de Home Assistant.
+  uk: Візьміть повний контроль над своїми інтелектуальними пристроями за допомогою вбудованого програмного забезпечення з відкритим кодом, програмного забезпечення та безхмарного обладнання від Robonomics. Почніть із універсального ІЧ-пульта дистанційного керування, інтелектуального моніторингу енергоспоживання, 1,2-канального розумного перемикача Wi-Fi, датчика якості повітря, мікропрограми Tasmota та приладової панелі розумного дому Home Assistant.
+  nl: Neem de volledige controle over uw slimme apparaten met behulp van open-source firmwares, software en cloudvrije hardware van Robonomics. Begin met de universele IR-afstandsbediening, slimme monitoring van het energieverbruik, 1,2-voudige wifi-smartswitch, luchtkwaliteitsensor, Tasmota-firmware en Home Assistant smart home-dashboard.
 
 - alias: Privacy Policy
   en: Privacy Policy
@@ -496,6 +526,7 @@
   ru: политика конфиденциальности
   es: política de privacidad
   uk: Політика конфіденційності
+  nl: Privacybeleid
 
 - alias: This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us.
   en: This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us.
@@ -511,3 +542,4 @@
   ru: В настоящей Политике описывается информация, которую мы получаем от вас, как мы используем эту информацию и наши правовые основания для этого. В нем также говорится о том, может ли эта информация быть передана и каким образом, а также о ваших правах и выборе в отношении информации, которую вы нам предоставляете.
   es: Esta Política describe la información que recopilamos de usted, cómo usamos esa información y nuestra base legal para hacerlo. También cubre si esa información puede compartirse y cómo, y sus derechos y opciones con respecto a la información que nos proporciona.
   uk: Ця Політика описує інформацію, яку ми збираємо від вас, як ми використовуємо цю інформацію та нашу правову основу для цього. У ньому також описано, чи може та як ця інформація надаватися, а також ваші права та вибір щодо інформації, яку ви нам надаєте.
+  nl: Dit Beleid beschrijft de informatie die we van u verzamelen, hoe we die informatie gebruiken en onze wettelijke basis om dit te doen. Het behandelt ook of en hoe die informatie kan worden gedeeld en uw rechten en keuzes met betrekking tot de informatie die u ons verstrekt.
