@@ -14,7 +14,11 @@
                 </div>
                 <div class="layout token__top">
                     <div class="grid-2 token__intro ">
-                        <p> <span class="token__big-text">XRT</span> {{ $t('is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.') }} </p>
+                        <div class="token__intro-container">
+                            <p> <span class="token__big-text">XRT</span> {{ $t('is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.') }} </p>
+
+                            <div class="token__multichain">{{ $t('Following the Multichain crash, we are awaiting the implementation of native bridges within Polkadot to connect Polkadot XRT with Ethereum.') }}</div>
+                        </div>
     
                         <g-link to="https://ipfs.io/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph" dir="ltr">
                             <div class="token__graph-arrow">
@@ -273,6 +277,21 @@ query {
         font-size: 132%;
         font-weight: 500;
         align-self: center;
+    }
+
+    .token__multichain {
+        padding: calc(var(--space) * 0.5) calc(var(--space) * 1.1);
+        padding-left: 65px;
+        font-size: calc(var(--base-font-size) * 0.7);
+        font-weight: 500;
+        max-width: 482px;
+        color: var(--color-dark);
+        background-color: var(--color-light);
+        border: 3px solid #EE005B;
+        background-image: url('../assets/images/xrt-polygon.png');
+        background-position: 10px 8px;
+        background-repeat: no-repeat;
+        background-size: 48px 53px;
     }
 
     .token__text-abstract {
@@ -583,6 +602,11 @@ query {
         .token__graph {
             align-items: center;
             justify-content: center;
+        }
+
+        .token__multichain  {
+            min-height: 76px;
+            max-width: 100%;
         }
 
 

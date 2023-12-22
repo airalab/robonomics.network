@@ -22,7 +22,7 @@
             <span>{{ $t('Be independent') }}</span>
           </h3>
 
-          <p class="devices__text">{{ $t("We are self-driving team with more then 8 years expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!") }}</p>
+          <p class="devices__text">{{ $t("We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!") }}</p>
 
           <div class="devices__banner-logos">
             <g-image quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-hass-logo.png"/>
@@ -33,17 +33,17 @@
         <g-image class="devices__banner-img devices__banner-img--girl" quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-1.png"/>
         <g-image class="devices__banner-img devices__banner-img--blob"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-2.png"/>
 
-        <div class="banner-buttons">
+        <!-- <div class="banner-buttons">
           <div class="banner-buttons-content">
             <rb-button :to="links.tg" buttoncolor="green">{{ $t('Buy devices') }}</rb-button>
           </div>
-          <!-- <div class="devices__banner-buy-wrapper">
+          <div class="devices__banner-buy-wrapper">
             <g-link :to="links.tg" class="devices__link">{{ $t('Buy devices') }}</g-link>
             <g-link to="https://www.hackster.io/robonomics-web3-cloud/products"  class="devices__banner-support">
               <span>{{ $t('Support it on hackster.io') }}</span>
             </g-link>
-          </div> -->
-        </div>
+          </div>
+        </div> -->
 
       </div>
     </section>
@@ -95,6 +95,7 @@ export default {
           img: 'ir-remote.png',
           hacksterLink: "https://wiki.robonomics.network/docs/ir-controller/",
           telegramLink: this.links.tg,
+          release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
             {
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -126,6 +127,7 @@ export default {
           img: 'energy-monitor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/energy-monitoring",
           telegramLink: this.links.tg,
+          release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -160,7 +162,7 @@ export default {
           text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
           img: 'smart-switch.png',
           hacksterLink: "https://wiki.robonomics.network/docs/smart-switches",
-          release: this.$t("Start of Sales: Jan '24"),
+          release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -196,6 +198,7 @@ export default {
           img: 'quality-sensor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/air-quality-sensor",
           // telegramLink: this.links.tg,
+          release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -266,20 +269,27 @@ export default {
   .devices__text {
     position: relative;
     z-index: 10;
-    max-width: 780px;
+    max-width: 1065px;
     padding: calc(var(--space) * 0.5);
     margin-bottom: var(--space);
     font-style: italic;
     font-weight: 500;
     line-height: 1.8;
     color: var(--color-light);
-    background-color: var(--color-blue)
+    background-color: var(--color-blue);
+    border: 3px solid #81D7D6;
   }
 
   .devices__banner-logos {
-    display: flex;
+    position: absolute;
+    left: 623px;
+    top: 141px;
     max-width: 410px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
   }
 
   .devices__banner-logos img {
@@ -291,6 +301,10 @@ export default {
     margin-right: calc(var(--space) * 0.5);
   }
 
+  .devices__banner-logos img:last-of-type {
+    max-width: 244px;
+  } 
+
   .devices__banner-img {
     position: absolute;
   }
@@ -298,14 +312,14 @@ export default {
   .devices__banner-img--blob {
     right: -5px;
     top: 40px;
-    max-width: 324px;
+    max-width: 500px;
     width: 100%;
   }
 
   .devices__banner-img--girl {
-    right: 245px;
-    top: 92px;
-    max-width: 550px;
+    right: 350px;
+    top: 118px;
+    max-width: 600px;
     width: 100%;
   }
 
@@ -319,6 +333,18 @@ export default {
     padding: 2rem 0;
   }
 
+  @media screen and (max-width: 1930px) {
+    .devices__banner-logos {
+      position: static;
+      flex-direction: row;
+      gap: 0;
+    }
+
+    .devices__banner-logos img:last-of-type {
+      max-width: unset;
+    }
+  }
+
   @media screen and (max-width: 1649px) {
     .banner-buttons-content {
       width: 100%;
@@ -327,6 +353,25 @@ export default {
     .banner-buttons-content .rb-button {
       width: 100%;
     } 
+
+    .devices__text {
+      max-width: 734px;
+    }
+
+    .devices__banner-img--blob {
+      right: -5px;
+      top: 40px;
+      max-width: 320px;
+      width: 100%;
+    }
+
+    .devices__banner-img--girl {
+      right: 250px;
+      top: 118px;
+      max-width: 420px;
+      width: 100%;
+    }
+
   }
 
   @media screen and (min-width: 1650px) {
@@ -386,12 +431,6 @@ export default {
     background-size: 100%;
     background-position: left;
     background-repeat: no-repeat;
-  }
-
-  @media screen and (max-width: 1850px) {
-      .devices__banner-img--girl {
-      max-width: 320px;
-    }
   }
 
 
