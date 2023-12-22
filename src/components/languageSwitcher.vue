@@ -1,5 +1,6 @@
 <template>
 
+  <div class="select-wrapper" :class="{'bigGap': locale !== 'en'}">
     <select aria-label="choose preferably language" v-if="$localesList" tabindex="0" @change="onSelectChange($event)">
   
       <template v-for="(item,key) in $localesList">
@@ -11,6 +12,8 @@
       </template>
 
     </select>
+    <span v-if="locale !== 'en'">AI</span>
+  </div>
 
 </template>
 
@@ -28,6 +31,30 @@
     border: 1px solid var(--color-dark);
   }
 
+  .select-wrapper {
+    position: relative;
+  }
+
+  .bigGap {
+    margin-right: calc(var(--space) * 1.2) !important;
+  }
+
+  .select-wrapper span{
+    position: absolute;
+    top: 2px;
+    right: -20px;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--base-font-size) * 0.6);
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    z-index: -1;
+  }
+
+
   @media screen and (max-width: 1650px) {
     select {
 
@@ -41,6 +68,13 @@
     select {
       background-size: 5px 12px;
       background-position: 30px 9px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    
+    .bigGap {
+      margin-right: calc(var(--space) * 1.6) !important;
     }
   }
 
