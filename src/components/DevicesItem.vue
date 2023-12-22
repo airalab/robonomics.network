@@ -1,5 +1,5 @@
 <template>
-  <div class="product__item">
+  <div class="product__item hyphens">
     <h2 class="product__title">{{ title }}</h2>
     <div class="product__content grid-3">
       <g-image :src="require(`!!assets-loader!@/assets/images/devices/${img}`)"  quality="75%" :alt="title" class="product__img"/>
