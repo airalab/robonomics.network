@@ -61,11 +61,6 @@ export default {
 </script>
 
 <style scoped>
-  .devices__link {
-    color: var(--color-light);
-    font-size: calc(var(--base-font-size) * 1.2);
-    text-transform: uppercase;
-  }
 
   .grid-3 {
     grid-template-columns: 300px 1fr minmax(270px, 320px);
