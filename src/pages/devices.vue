@@ -345,7 +345,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 1649px) {
+  @media screen and (max-width: 1750px) {
     .banner-buttons-content {
       width: 100%;
     }

@@ -50,6 +50,10 @@ module.exports = function (fs, path) {
     {
       abbr: 'el',
       full: 'Greek'
+    },
+    {
+      abbr: 'nl',
+      full: 'Dutch'
     }
   ];
 
