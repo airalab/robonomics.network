@@ -20,7 +20,7 @@
                             <div class="token__multichain">{{ $t('Following the Multichain crash, we are awaiting the implementation of native bridges within Polkadot to connect Polkadot XRT with Ethereum.') }}</div>
                         </div>
     
-                        <g-link to="https://crustipfs.live/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph" dir="ltr">
+                        <g-link to="https://crustipfs.info/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph" dir="ltr">
                             <div class="token__graph-arrow">
                                 <span>{{ $t('Token distribution') }}</span>
                                 <ArrowIcon />
