@@ -11,6 +11,8 @@ tags: ['Online school', 'Philosophy of Robonomics']
 import Card from '~/components/TextCard.vue'
 import UserForm from '~/components/blocks/UserForm.vue'
 
+<ExpiredInfo/>
+
  the dive into the theory of the latest web3 technologies at the intersection of Cybernetics and Economics, which are designed to help IoT systems function safely and efficiently in our homes and cities.
 
 ## Welcome to the second lesson of Winter School of Robonomics 2022!

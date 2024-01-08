@@ -11,6 +11,8 @@ tags: ['Онлайн школа', 'Философия Робономики']
 import Card from '~/components/TextCard.vue'
 import UserForm from '~/components/blocks/UserForm.vue'
 
+<ExpiredInfo/>
+
  погружение в теорию о новейших web3-технологиях, находящихся на пересечении Кибернетики и Экономики, которые призваны помочь IoT-системам безопасно и эффективно функционировать в наших домах и городах.
 
 ## Добро пожаловать на второй урок Winter School of Robonomics 2022!
