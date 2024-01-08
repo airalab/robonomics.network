@@ -182,7 +182,7 @@
             buttonicon: '↗',
             options: [
               {
-                link: 'https://discord.gg/JpaN2XAmqY',
+                link: 'https://discord.gg/J57BHwpteR',
                 text: this.$t('Join chat')
               }
             ]
