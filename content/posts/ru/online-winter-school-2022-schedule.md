@@ -10,6 +10,8 @@ tags: ['Онлайн школа']
 ---
 import Card from '~/components/TextCard.vue'
 
+<ExpiredInfo/>
+
 Участников зимней школы ждёт три лекции и много практики использования (d)app на базе Робономики.
 
 <Card>

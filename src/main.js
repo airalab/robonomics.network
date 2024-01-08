@@ -20,6 +20,9 @@ import rbButton from '~/components/rbButton.vue'
 import rbImage from '~/components/rbImage.vue'
 import Youtube from '~/components/Youtube.vue'
 
+// Post
+import ExpiredInfo from '~/components/post/PostExpiredInfo.vue'
+
 
 // directive for animation in view
 import inViewportDirective from 'vue-in-viewport-directive'
@@ -50,6 +53,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.component('rb-button', rbButton)
   Vue.component('rb-image', rbImage)
   Vue.component('Youtube', Youtube)
+  Vue.component('ExpiredInfo',  ExpiredInfo)
 
   // for translations
   Vue.prototype.$t = t; 

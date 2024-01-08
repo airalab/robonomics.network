@@ -10,6 +10,8 @@ tags: ['Online school']
 ---
 import Card from '~/components/TextCard.vue'
 
+<ExpiredInfo/>
+
 Robonomics Winter School 2021 is inviting all willing to join master classes and lectures hosted by experienced contributors and programmers operating with Dapps and Web services on the Polkadot Parachain.
 
 Master classes include overviews of Robonomics io, using prepared digital twin templates for connecting with services, using Robonomics.js to interact via Dapps with digital twins of devices, and much more.
