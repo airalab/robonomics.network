@@ -91,7 +91,7 @@
                 id: 1
               },
               {
-                link: 'https://crustipfs.art/ipfs/QmU8CFPD9bQheKJhKdyAZ11GNhuqHKPok5Tu8bUrNjCZtg',
+                link: 'https://crustipfs.info/ipfs/QmU8CFPD9bQheKJhKdyAZ11GNhuqHKPok5Tu8bUrNjCZtg',
                 text: 'Español',
                 id: 2
               }
