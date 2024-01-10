@@ -95,7 +95,7 @@ export default {
           img: 'ir-remote.png',
           hacksterLink: "https://wiki.robonomics.network/docs/ir-controller/",
           telegramLink: this.links.tg,
-          release: this.$t("Free worldwide shipping starts from February 2024"),
+          release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
             {
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -127,7 +127,7 @@ export default {
           img: 'energy-monitor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/energy-monitoring",
           telegramLink: this.links.tg,
-          release: this.$t("Free worldwide shipping starts from February 2024"),
+          release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -198,7 +198,7 @@ export default {
           img: 'quality-sensor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/air-quality-sensor",
           // telegramLink: this.links.tg,
-          release: this.$t("Free worldwide shipping starts from February 2024"),
+          release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
