@@ -69,7 +69,7 @@ export default {
   }
 
   .product__item {
-    margin-bottom: calc(var(--space) * 3)
+    margin-bottom: calc(var(--space) * 4)
   }
 
   .product__title {
