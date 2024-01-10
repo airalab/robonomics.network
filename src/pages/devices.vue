@@ -230,6 +230,7 @@ export default {
   .devices {
     position: relative;
     margin-top: 0;
+    margin-bottom: calc(var(--space) * 6);
     background-image: url('../assets/images/devices/devices-banner-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,6 +253,7 @@ export default {
 
   .devices__banner-title {
     margin-top: 0;
+    max-width: 840px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -282,8 +284,9 @@ export default {
 
   .devices__banner-logos {
     position: absolute;
-    left: 623px;
-    top: 141px;
+    /* left: calc(50% - 470px); */
+    left: calc(50% - 377px);
+    top: 140px;
     max-width: 410px;
     width: 100%;
     display: flex;
@@ -318,8 +321,8 @@ export default {
 
   .devices__banner-img--girl {
     right: 350px;
-    top: 118px;
-    max-width: 600px;
+    top: 11px;
+    max-width: 800px;
     width: 100%;
   }
 
@@ -333,7 +336,23 @@ export default {
     padding: 2rem 0;
   }
 
-  @media screen and (max-width: 1930px) {
+  @media screen and (min-width: 1930px) {
+
+    .devices__banner-layout {
+      max-width: 2200px;
+    }
+
+    .devices__banner-img--girl {
+      right: calc(30% - 350px);
+    }
+
+    .devices__banner-img--blob {
+      right: calc(20% - 372px);
+    }
+  }
+
+  @media screen and (max-width: 2300px) {
+
     .devices__banner-logos {
       position: static;
       flex-direction: row;
@@ -345,7 +364,19 @@ export default {
     }
   }
 
-  @media screen and (max-width: 1750px) {
+  @media screen and (max-width: 1935px) {
+    .devices__banner-title {
+      max-width: 600px;
+    }
+
+    .devices__banner-img--girl{
+      right: 302px;
+    }
+  }
+
+
+  @media screen and (max-width: 1785px) {
+
     .banner-buttons-content {
       width: 100%;
     }
@@ -366,10 +397,10 @@ export default {
     }
 
     .devices__banner-img--girl {
-      right: 250px;
-      top: 118px;
-      max-width: 420px;
       width: 100%;
+      right: 134px;
+      top: 81px;
+      max-width: 680px;
     }
 
   }
@@ -393,16 +424,6 @@ export default {
       margin-left: 70px;
     }
   }
-
-  /* .devices__banner-buy-wrapper {
-    max-width: 280px;
-    width: 100%;
-    position: absolute;
-    bottom: 75px;
-    right: -14px;
-    padding: calc(var(--space) * 0.5);
-    padding-bottom: var(--space);
-  } */
 
 
   .devices__banner-support {
@@ -433,8 +454,19 @@ export default {
     background-repeat: no-repeat;
   }
 
+  @media screen and (max-width: 1470px) {
+    .devices__banner-img--girl {
+      right: 127px;
+      top: 118px;
+      max-width: 496px;
+    }
+  }
+
 
   @media screen and (max-width: 1260px) {
+    .devices__banner-title {
+      max-width: 100%;
+    }
     .devices__banner-layout {
       display: flex;
       flex-direction: column;
@@ -447,11 +479,8 @@ export default {
       align-self: flex-end;
     }
 
+    .devices__banner-img--girl,
     .devices__banner-img--blob {
-      max-width: 154px;
-    }
-
-    .devices__banner-img--girl{
       display: none;
     }
   }
