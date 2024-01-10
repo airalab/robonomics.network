@@ -20,9 +20,9 @@
 </template>
 
 <script>
-import rbButton from './rbButton.vue'
+// import rbButton from './rbButton.vue'
 export default {
-  components: { rbButton },
+  // components: { rbButton },
 
   props: {
     title: {
@@ -69,7 +69,7 @@ export default {
   }
 
   .product__item {
-    margin-bottom: calc(var(--space) * 4)
+    margin-bottom: calc(var(--space) * 3)
   }
 
   .product__title {

@@ -95,7 +95,7 @@ export default {
           img: 'ir-remote.png',
           hacksterLink: "https://wiki.robonomics.network/docs/ir-controller/",
           telegramLink: this.links.tg,
-          release: this.$t("Free worldwide shipping starts from January 2024"),
+          release: this.$t("Free worldwide shipping starts from February 2024"),
           features: [
             {
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -127,7 +127,7 @@ export default {
           img: 'energy-monitor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/energy-monitoring",
           telegramLink: this.links.tg,
-          release: this.$t("Free worldwide shipping starts from January 2024"),
+          release: this.$t("Free worldwide shipping starts from February 2024"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -162,7 +162,7 @@ export default {
           text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
           img: 'smart-switch.png',
           hacksterLink: "https://wiki.robonomics.network/docs/smart-switches",
-          release: this.$t("Free worldwide shipping starts from January 2024"),
+          release: this.$t("Free worldwide shipping starts from February 2024"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -198,7 +198,7 @@ export default {
           img: 'quality-sensor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/air-quality-sensor",
           // telegramLink: this.links.tg,
-          release: this.$t("Free worldwide shipping starts from January 2024"),
+          release: this.$t("Free worldwide shipping starts from February 2024"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -230,7 +230,7 @@ export default {
   .devices {
     position: relative;
     margin-top: 0;
-    margin-bottom: calc(var(--space) * 6);
+    margin-bottom: calc(var(--space) * 3);
     background-image: url('../assets/images/devices/devices-banner-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
