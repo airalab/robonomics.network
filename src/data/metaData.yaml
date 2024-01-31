@@ -543,3 +543,69 @@
   es: Esta Política describe la información que recopilamos de usted, cómo usamos esa información y nuestra base legal para hacerlo. También cubre si esa información puede compartirse y cómo, y sus derechos y opciones con respecto a la información que nos proporciona.
   uk: Ця Політика описує інформацію, яку ми збираємо від вас, як ми використовуємо цю інформацію та нашу правову основу для цього. У ньому також описано, чи може та як ця інформація надаватися, а також ваші права та вибір щодо інформації, яку ви нам надаєте.
   nl: Dit Beleid beschrijft de informatie die we van u verzamelen, hoe we die informatie gebruiken en onze wettelijke basis om dit te doen. Het behandelt ook of en hoe die informatie kan worden gedeeld en uw rechten en keuzes met betrekking tot de informatie die u ons verstrekt.
+
+- alias: It's gonna get worse
+  en: It's gonna get worse
+  ar: سوف يزداد سوءًا
+  zh: 情况将会变得更糟
+  fr: Ça va empirer
+  de: Es wird schlimmer werden
+  el: Θα γίνει χειρότερο
+  it: Le cose peggioreranno
+  ja: ますます悪化するでしょう
+  ko: 더 나빠질 것입니다
+  pt: Vai piorar
+  ru: Будет только хуже
+  es: Va a empeorar
+  uk: Це стане ще гірше
+  nl: Het gaat erger worden
+
+
+- alias: DIY your own safe smart space
+  en: DIY your own safe smart space
+  ar: افعلها بنفسك مكان آمن خاص بكمساحة ذكية
+  zh: DIY 您自己的安全 智能空间
+  fr: Fabriquez votre propre sécurité espace intelligent
+  de: DIY Ihren eigenen sicheren intelligenten Raum
+  el: Φτιάξτο μόνος σου το δικό σου ασφαλές έξυπνος χώρος
+  it: Fai-da-te il tuo sicuro spazio intelligente
+  ja: 自分で作成する 安全な スマートスペース マニフェスト
+  ko: 직접 만드세요 안전한 스마트 공간 매니페스트
+  pt: Faça você mesmo o seu próprio seguro espaço inteligente
+  ru: Создайте свое собственное безопасное умное пространство
+  es: Hazlo tú mismo tu propio seguro espacio inteligente
+  uk: Саморобка власний сейф розумний простір
+  nl: DIY je eigen veilige slimme ruimte
+
+
+- alias: Home assistant themes
+  en: Home assistant themes
+  ar: ثيمات مساعد المنزل
+  zh: Home Assistant主题
+  fr: Thèmes Home Assistant
+  de: Home Assistant-Themen
+  el: Θέματα βοηθού στο σπίτι
+  it: Temi di Home Assistant
+  ja: ホームアシスタントのテーマ
+  ko: 홈 어시스턴트 테마
+  pt: Temas do Home Assistant
+  ru: Темы для Home Assistant
+  es: Temas de Home Assistant
+  uk: Теми для домашнього помічника
+  nl: Home Assistant-thema's
+
+- alias: Customize your Home Assistant with our free to use themes. Follow the instructions for installation on Github.
+  en: Customize your Home Assistant with our free to use themes. Follow the instructions for installation on Github.
+  ar: قم بتخصيص Home Assistant الخاص بك باستخدام ثيماتنا المجانية للاستخدام. اتبع التعليمات للتثبيت على Github.
+  zh: 使用我们的免费主题定制您的Home Assistant。按照安装说明进行操作 Github.
+  fr: Personnalisez votre Home Assistant avec nos thèmes gratuits à utiliser. Suivez les instructions d'installation sur Github.
+  de: Passen Sie Ihr Home Assistant mit unseren kostenlosen Themen an. Befolgen Sie die Installationsanweisungen auf Github.
+  el: Προσαρμόστε το Home Assistant σας με τα θέματά μας που μπορείτε να χρησιμοποιήσετε δωρεάν. Ακολουθήστε τις οδηγίες για την εγκατάσταση στο Github.
+  it: Personalizza il tuo Home Assistant con i nostri temi gratuiti da utilizzare. Segui le istruzioni per l'installazione su Github.
+  ja: 無料で使用できるテーマでホームアシスタントをカスタマイズしましょう。インストールの手順に従ってください Github.
+  ko: 무료로 사용할 수 있는 테마로 홈 어시스턴트를 사용자 정의하세요. 설치에 대한 지침을 따르세요 Github.
+  pt: Personalize o seu Home Assistant com os nossos temas gratuitos para usar. Siga as instruções de instalação em Github.
+  ru: Настройте свой Home Assistant с нашими бесплатными темами. Следуйте инструкциям по установке на Github.
+  es: Personaliza tu Home Assistant con nuestros temas gratuitos para usar. Sigue las instrucciones de instalación en Github.
+  uk: Налаштуйте свій домашній помічник за допомогою наших безкоштовних тем. Дотримуйтесь інструкцій для встановлення на Github.
+  nl: Pas je Home Assistant aan met onze gratis te gebruiken thema's. Volg de instructies voor installatie op Github.
