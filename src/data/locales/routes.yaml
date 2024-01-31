@@ -50,6 +50,10 @@
   component: './src/pages/logos-and-assets.vue'
   typename: 'page'
 
+- path: '/home-assistant-themes/'
+  component: './src/pages/home-assistant-themes.vue'
+  typename: 'page'
+
 - path: '/shop/'
   component: './src/pages/shop.vue'
   typename: 'page'
@@ -68,6 +72,10 @@
 
 - path: '/devices/'
   component: './src/pages/devices.vue'
+  typename: 'page'
+
+- path: '/its-gonna-get-worse/'
+  component: './src/pages/its-gonna-get-worse.vue'
   typename: 'page'
 
 - path: '/privacy-policy/'

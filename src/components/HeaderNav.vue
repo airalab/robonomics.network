@@ -19,6 +19,7 @@
             <li><g-link to="/books">{{$t('Books')}}</g-link></li>
             <li><g-link to="/logos-and-assets">{{$t('Logo and assets')}}</g-link></li>
             <li><g-link to="/wallpapers">{{ $t('Wallpapers') }}</g-link></li>
+            <li><g-link to="/home-assistant-themes">{{ $t('Home Assistant themes') }}</g-link></li>
             <li><g-link to="/nft">NFT</g-link></li>
             <li><g-link to="/cases">{{ $t('Cases') }}</g-link></li>
             <li><g-link to="/devices">{{$t('Devices')}}</g-link></li>

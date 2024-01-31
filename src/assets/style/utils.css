@@ -218,3 +218,37 @@
   font-size: 1.1rem;
 }
 
+/* banner with pattern*/
+.banner-with-pattern {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: calc(var(--space) * 3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-with-pattern__text-shadow  {
+  margin-top: 0;
+  max-width: 840px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: 'Roboto Flex';
+  font-size: calc(var(--base-font-size) * 3);
+  color: #fff;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.banner-with-pattern__text-shadow span {
+  text-shadow: 10px 2px #111;
+}
+
+.banner-with-pattern__img  {
+  position: absolute;
+  right: 150px;
+  top: 11px;
+  max-width: 815px;
+  width: 100%;
+}
