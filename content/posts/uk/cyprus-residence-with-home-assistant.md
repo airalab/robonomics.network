@@ -11,7 +11,7 @@ tags: ['Announcements', 'Use Cases', 'Collaborations', 'Smart Home']
 
 Всім привіт!
 
-Мене звати Вадим Манаєнко. Я співзасновник компанії Pinout LTD та один з ключових розробників проекту [Robonomics Network](https://robonomics.network/). Сьогодні я хочу поділитися з вами великими новинами: Pinout LTD підписала контракт з розробником [CCS](https://www.stylianidesgroup.com/) на автоматизацію 28 квартир та загальних приміщень у будинку [Residence 28](https://www.stylianidesgroup.com/property/residence-28). Роботи ��озпочнуться у 2024 році.
+Мене звати Вадим Манаєнко. Я співзасновник компанії Pinout LTD та один з ключових розробників проекту [Robonomics Network](https://robonomics.network/). Сьогодні я хочу поділитися з вами великими новинами: Pinout LTD підписала контракт з розробником [CCS](https://www.stylianidesgroup.com/) на автоматизацію 28 квартир та загальних приміщень у будинку [Residence 28](https://www.stylianidesgroup.com/property/residence-28). Роботи озпочнуться у 2024 році.
 
 ## Про проект
 

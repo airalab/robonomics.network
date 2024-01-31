@@ -9,14 +9,14 @@
 
 
     <!-- banner -->
-    <section class="devices">
+    <section class="devices banner-with-pattern">
       <div class="devices__main-title title-with-bg">
         <h1><span>{{ $t('Smart Devices') }}</span></h1>
       </div>
 
       <div class="devices__banner-layout layout">
         <div class="devices__content">
-          <h3 class="devices__banner-title">
+          <h3 class="banner-with-pattern__text-shadow devices__banner-title">
             <span>{{ $t('Control your home') }}</span>
             <span>{{ $t('Be smart') }}</span>
             <span>{{ $t('Be independent') }}</span>
@@ -30,8 +30,7 @@
           </div>
         </div>
 
-        <g-image class="devices__banner-img devices__banner-img--girl" quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-1.png"/>
-        <g-image class="devices__banner-img devices__banner-img--blob"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-2.png"/>
+        <g-image class="banner-with-pattern__img  devices__banner-img devices__banner-img--girl"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-all.png"/>
 
         <!-- <div class="banner-buttons">
           <div class="banner-buttons-content">
@@ -228,14 +227,7 @@ export default {
 
 <style scoped>
   .devices {
-    position: relative;
-    margin-top: 0;
-    margin-bottom: calc(var(--space) * 3);
     background-image: url('../assets/images/devices/devices-banner-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* overflow: hidden; */
     background-color: var(--color-blue);
   }
 
@@ -249,23 +241,6 @@ export default {
     padding-bottom: calc(var(--space) * 0.5);
     display: flex;
     flex-direction: column;
-  }
-
-  .devices__banner-title {
-    margin-top: 0;
-    max-width: 840px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: 'Roboto Flex';
-    font-size: calc(var(--base-font-size) * 3);
-    color: #fff;
-    text-transform: none;
-    letter-spacing: 0;
-  }
-
-  .devices__banner-title span {
-    text-shadow: 10px 2px #111;
   }
 
   .devices__text {
@@ -308,24 +283,6 @@ export default {
     max-width: 244px;
   } 
 
-  .devices__banner-img {
-    position: absolute;
-  }
-
-  .devices__banner-img--blob {
-    right: -5px;
-    top: 40px;
-    max-width: 500px;
-    width: 100%;
-  }
-
-  .devices__banner-img--girl {
-    right: 350px;
-    top: 11px;
-    max-width: 800px;
-    width: 100%;
-  }
-
   .banner-buttons {
     align-items: center;
     display: inline-flex;
@@ -343,11 +300,7 @@ export default {
     }
 
     .devices__banner-img--girl {
-      right: calc(30% - 350px);
-    }
-
-    .devices__banner-img--blob {
-      right: calc(20% - 372px);
+      right: calc(20% - 350px);
     }
   }
 
@@ -357,20 +310,24 @@ export default {
       position: static;
       flex-direction: row;
       gap: 0;
+      margin-top: 20px;
+      max-width: unset;
+      justify-content: flex-end;
     }
 
+    .devices__banner-logos img:first-of-type {
+      width: 280px;
+    }
+ 
     .devices__banner-logos img:last-of-type {
       max-width: unset;
+      width: 114px;
     }
   }
 
   @media screen and (max-width: 1935px) {
     .devices__banner-title {
       max-width: 600px;
-    }
-
-    .devices__banner-img--girl{
-      right: 302px;
     }
   }
 
@@ -386,21 +343,18 @@ export default {
     } 
 
     .devices__text {
-      max-width: 734px;
+      max-width: 600px;
     }
 
-    .devices__banner-img--blob {
-      right: -5px;
-      top: 40px;
-      max-width: 320px;
-      width: 100%;
+    .devices__banner-logos {
+      margin-top: 60px;
     }
 
     .devices__banner-img--girl {
       width: 100%;
-      right: 134px;
+      right: 50px;
       top: 81px;
-      max-width: 680px;
+      max-width: 750px;
     }
 
   }
@@ -456,9 +410,9 @@ export default {
 
   @media screen and (max-width: 1470px) {
     .devices__banner-img--girl {
-      right: 127px;
-      top: 118px;
-      max-width: 496px;
+      right: 9px;
+      top:100px;
+      max-width: 600px;
     }
   }
 
@@ -479,6 +433,10 @@ export default {
       align-self: flex-end;
     }
 
+    .devices__banner-logos {
+      margin-top: 20px;
+    }
+
     .devices__banner-img--girl,
     .devices__banner-img--blob {
       display: none;
@@ -491,6 +449,7 @@ export default {
     }
 
     .devices__banner-logos {
+      margin-top: 0;
       width: auto;
       flex-direction: column;
       align-items: flex-start;
