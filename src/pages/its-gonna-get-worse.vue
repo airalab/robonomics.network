@@ -65,16 +65,10 @@
         <p class="iggw__text">{{ $t("We, the Robonomics team, aim to redirect the development of IoT towards a more open and secure path. We've") }} <g-link to="https://wiki.robonomics.network/docs/robonomics-smart-home-overview/">{{ $t('introduced') }}</g-link> {{ $t("an independent web3 cloud for IoT, allowing your home to stay connected autonomously, and communication with the manufacturer's server is only optional. Currently, we have started producing our own") }} <g-link to="https://robonomics.network/devices/">{{ $t('IoT devices') }}</g-link> {{ $t("based on open hardware and open software. Our goal is to create a fully open hardware-software system that won't let any digital intruders into your apartment. So, with our innovations, you can enjoy your time in the bedroom as you wish!") }} </p>
       </div>
 
-      <div class="iggw__images">
-        <div class="iggw__images-top">
-          <g-image class="iggw__images-item"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/ir-remote.png"/>
-          <g-image class="iggw__images-item"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/smart-switch-1.png"/>
-          <g-image class="iggw__images-item"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/smart-switch-2.png"/>
-        </div>
-        <div class="iggw__images-bottom">
-          <g-image class="iggw__images-item"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/energy-monitor.png"/>
-          <g-image class="iggw__images-item"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/quality-sensor.png"/>
-        </div>
+      <div class="iggw__images layout__mid">
+        <g-link target="_blank" to="/devices/">
+          <g-image class=""  quality="75" aria-hidden="true" alt=""  src="~/assets/images/iggw/all-devices.png"/>
+        </g-link>
       </div>
 
     </section>
