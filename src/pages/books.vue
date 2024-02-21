@@ -81,12 +81,12 @@
             img: 'docs-book-3.png',
             options: [
               {
-                link: 'https://ipfs.io/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi',
+                link: 'https://crustipfs.info/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi',
                 text: 'English',
                 id: 0
               },
               {
-                link: 'https://ipfs.io/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V',
+                link: 'https://crustipfs.info/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V',
                 text: 'Русский',
                 id: 1
               },
