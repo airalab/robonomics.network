@@ -74,11 +74,29 @@ export default {
   },
 
   mounted() {
-    const initUserTheme =  localStorage.getItem("user-theme") ?? 'light-theme'
+    const initUserTheme =  localStorage.getItem("user-theme");
+
+    const userPrefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
 
     if(initUserTheme) {
       this.setTheme(initUserTheme)
+    } else if(userPrefersDark) {
+      this.setTheme('dark-theme')
+    } else {
+      this.setTheme('light-theme')
     }
+    
+    this.$nextTick(() => {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          this.setTheme('dark-theme')
+        } else {
+          this.setTheme('light-theme')
+        }
+      })
+    })
   },
 }
 </script>

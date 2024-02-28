@@ -7,11 +7,14 @@
             pageImageHeight = "650" 
         />
 
+        <section class="section__blue section__title-with-bg">
+            <div class="token__main-title title-with-bg">
+                <h1><span>{{ $t('Robonomics tokenomics') }}</span></h1>
+            </div>
+        </section>
+
         <section class="top-part">
             <section class="token section__blue section__solid">
-                <div class="token__main-title title-with-bg">
-                    <h1><span>{{ $t('Robonomics tokenomics') }}</span></h1>
-                </div>
                 <div class="layout token__top">
                     <div class="grid-2 token__intro ">
                         <div class="token__intro-container">
@@ -233,6 +236,7 @@ query {
 <style scoped>
 
     .top-part {
+        position: relative;
         overflow: hidden;
         padding-bottom: calc(var(--space) * 2);
         margin: 0;
@@ -241,6 +245,10 @@ query {
     .token {
         padding-top: 0;
     }
+
+    /* .token__main-title {
+        background-color: var(--color-blue);
+    } */
 
     .token__subtitle {
         margin-bottom: calc(var(--space) * 0.5);
@@ -256,6 +264,13 @@ query {
         max-width: 1300px;
         padding-top: calc(var(--space) * 2);
         overflow: hidden
+    }
+
+    .section__title-with-bg {
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 994;
     }
 
     #banner-token {
