@@ -43,7 +43,7 @@ module.exports = {
     {
       use: "gridsome-plugin-translateit",
       options: {
-        locales: ["en", "ru", "zh", "es", "ko", "de", "ja", "pt", "el", "it", "fr", "uk", "ar", "nl"],
+        locales: ["ar","de","el","en","es","fr","it","ja","ko","nl","pt","ru","uk","zh"],
         defaultLocale: "en",
         translations: [],
         collections: ['blog', 'jobs'],

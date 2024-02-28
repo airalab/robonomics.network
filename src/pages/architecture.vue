@@ -39,7 +39,7 @@
 
       <hr/>
 
-      <section class="architecture-digital-twin layout layout__content animate-inside" v-in-viewport.once>
+       <section class="architecture-digital-twin layout layout__content animate-inside" v-in-viewport.once>
         <div>
           <h2>{{$t(`New challenges`)}}</h2>
           <g-image alt="" quality="75" aria-hidden="true" src="~/assets/images/vision-digital-twin.png"/>
@@ -285,7 +285,7 @@
 
         </div>
       </section>
-
+     
     </div>
 
   </layout>

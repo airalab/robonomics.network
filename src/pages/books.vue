@@ -8,39 +8,38 @@
 
 
     <div class="title-with-bg">
-      <h1><span>{{ $t('Our library') }}</span></h1>
+      <h1><span>{{ $t('Read books') }}</span></h1>
     </div>
 
 
-    <section class="layout layout-narrow e-books">
+    <section class="layout layout__mid e-books">
+  
+      <div class="layout__text books__abstract">
+        <p>{{ $t("We think reading books can really open up your mind. Whether it's simple but smart ideas or more complex ones, books are the best way for your brain to soak it all in. You can grab our books for free and check out our list of recommended reads to dive into the exciting world of robotics!") }}</p>
+      </div>
 
-      <h2>{{ $t('Free E-Books') }}</h2>
+      <h2>{{ $t('Download books about Robonomics') }}</h2>
 
-      <ul class="list-simple e-books__list animate-inside in-viewport" v-in-viewport.once>
+      <ul class="list-simple e-books__list grid-3 animate-inside in-viewport" v-in-viewport.once>
         <BookItem v-for="book in books" :key="book.title" :book="book"/>
       </ul>
 
     </section>
 
-    <section class="books-recommendations">
+    <section class="layout books-recommendations layout__mid">
 
-      <div class="layout layout-narrow">
-        
-        <h2>{{ $t('Our recommendations') }}</h2>
+      <h2>{{ $t('Open your mind [list of recommendations]') }}</h2>
 
-        <p>
-          {{ $t('We recommend these books if you want to become more involved, inspired, and self-educated in robotics, advance in the field, and understand the economics behind it. You can download or purchase these books from other sources.') }}
-        </p>
-        
-      </div>
-
-
-      <ul v-if="books" class="grid-4 list-simple books-recommendations__list animate-inside" v-in-viewport.once>
+      <ol v-if="books" class="list-simple books-recommendations__list" v-in-viewport.once>
         <li class="books-recommendations__item" v-for="rec in recs" :key="rec.id">
           <RecommendationItem :rec="rec"/>
         </li>
-      </ul>
+      </ol>
 
+    </section>
+
+    <section class="books-footer__container layout layout__text">
+      <BooksFooter/>
     </section>
 
   </layout>
@@ -51,92 +50,110 @@
   export default {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
-      BookItem: () => import('~/components/BookItem.vue'),
-      RecommendationItem: () => import('~/components/RecommendationItem.vue'),
+      BookItem: () => import('~/components/books/BookItem.vue'),
+      RecommendationItem: () => import('~/components/books/RecommendationItem.vue'),
+      BooksFooter: () => import('~/components/books/BooksFooter.vue'),
     },
 
     data() {
       return {
         books: [
+        {
+            title: this.$t("Robonomics R&D"),
+            img: 'docs-book-5.png',
+            year:' 2023-2024',
+            options: [
+              {
+                link: 'https://crustipfs.info/ipfs/QmaCXn8RdSdh4oxX3R5nzNSfoUPiLMLM4JmLSk1WnYi5ah',
+                text: 'EN',
+                id: 0
+              },
+              {
+                link: 'https://crustipfs.info/ipfs/Qmd8sSoGokc1UeAbbAfmEPJTubWEpWGetYGyj9MCpwmE42',
+                text: 'RU',
+                id: 1
+              }
+            ]
+          },
           {
-            title: this.$t("R&D, 2022"),
-            description: this.$t('Updated use cases for connected robots within web3 technologies.'),
+            title: this.$t("R&D 18-28"),
             img: 'docs-book-4.png',
+            year: '2022',
             options: [
               {
                 link: 'https://crustipfs.info/ipfs/QmZK64M7M31mkMsDd8yQa1dfX4a4KeDCyaUMsTuzsKq6LC',
-                text: 'English',
+                text: 'EN',
                 id: 0
               },
               {
                 link: 'https://crustipfs.info/ipfs/QmNsiaWWFw4ZoqAnW5vuTXNz2jwYBu7ShyXSYqU1uNDjrF',
-                text: 'Русский',
+                text: 'RU',
                 id: 1
               }
             ]
           },
           {
-            title: this.$t("R&D, 2021"),
-            description: this.$t('17 use cases for connected robots within Polkadot and Ethereum.'),
+            title: this.$t("R&D 1-17"),
             img: 'docs-book-3.png',
+            year: "2021",
             options: [
               {
                 link: 'https://crustipfs.info/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi',
-                text: 'English',
+                text: 'EN',
                 id: 0
               },
               {
                 link: 'https://crustipfs.info/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V',
-                text: 'Русский',
+                text: 'RU',
                 id: 1
               },
               {
                 link: 'https://crustipfs.info/ipfs/QmU8CFPD9bQheKJhKdyAZ11GNhuqHKPok5Tu8bUrNjCZtg',
-                text: 'Español',
+                text: 'ES',
                 id: 2
               }
             ]
           },
           {
-            title: this.$t("Book «Robot economics», 2018"),
-            description: this.$t('Here, we are explaining the idea of a cyber-physical system, how it can assist with scaling manufacturing, and what to do about the liabilities of robots.'),
+            title: this.$t("Robot economics"),
             img: 'docs-book-2.png',
+            year: "2018",
             options: [
               {
                 link: 'https://crustipfs.info/ipfs/QmQ3k8p9SQS5wjovPcjUtQceRZZ6nv3Eqirt1vVQ2wP2JL',
-                text: 'English',
+                text: 'EN',
                 id: 0
               },
               {
                 link: 'https://crustipfs.info/ipfs/QmUqNnzdZnic61UYTuKT9EzBNzMW6jc5uHSFk4Xzd3iM93',
-                text: 'Русский',
+                text: 'RU',
                 id: 1
               },
               {
                 link: 'https://crustipfs.info/ipfs/QmXhWarATZNTy3CweoVAdy4aTMrGMCsipo3gPSWVsUyQW6',
-                text: 'Italiano',
+                text: 'IT',
                 id: 2
               }
             ]
           },
           {
-            title: this.$t("Book «Robot economics», 2017"),
-            description: this.$t("The baseline here is that free economic principles are enough for living in an automated world. Robots can be our friends, and we don't need centralization to make it comfortable and reliable."),
+            title: this.$t("Robot economics"),
             img: 'docs-book-1.png',
+            year: "2017",
             options: [
               {
                 link: 'https://crustipfs.info/ipfs/QmWue3YfuZvuRvgcNb4vZuheX9TaZ9E1b8aCdxSoaGTbVN',
-                text: 'English',
+                text: 'EN',
                 id: 0
               },
               {
                 link: 'https://crustipfs.info/ipfs/QmUjBPgDzmHFHiDkQAG93szJQguiZiowm9sedFMhPfQP4y',
-                text: 'Русский',
+                text: 'RU',
                 id: 1
               },
               {
                 link: 'https://crustipfs.info/ipfs/QmTp3srjo3r1L2TKpAEGFafjdzSCTKJT9kkBEkCQDEF6tz',
-                text: 'Deutsch',
+                text: 'DE',
                 id: 2
               }
             ]
@@ -148,56 +165,48 @@
             author: 'R. H. Coase',
             link: 'https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-0335.1937.tb00002.x',
             id: 0,
-            color: '#CD76FF'
           },
           {
-            title: 'Cybernetics : Control and Communication in the Animal and the Machine –2nd. ed',
+            title: 'Cybernetics : Control and Communication in the Animal and the Machine',
             author: 'Norbert Wiener',
             link: 'https://duckduckgo.com/?q=Cybernetics+%3A+Control+and+Communication+in+the+Animal+and+the+Machine+–2nd.+ed+Norbert+Wiener&t=h_&ia=web',
             id: 1,
-            color: '#0CCFD6'
           },
           {
             title: 'Research works from Institute of Cybernetics',
             author: 'V.M. Glushkov',
-            link: 'https://scholar.google.com/citations?user=qLh-leEAAAAJ&hl=en',
+            link: 'https://duckduckgo.com/?q=Research+works+from+Institute+of+Cybernetics+V.M.+Glushkov&ia=webn',
             id: 2,
-            color: '#F126BF'
           },
           {
             title: 'Human Action',
             author: 'Ludwig von Mises',
             link: 'https://mises.org/library/human-action-0',
             id: 3,
-            color: '#F74873'
           },
           {
             title: 'Do androids dream of electric sheep?',
             author: 'Philip K. Dick',
             link: 'https://duckduckgo.com/?q=Do+androids+dream+of+electric+sheep%3F+Philip+K.+Dick&t=h_&ia=web',
             id: 4,
-            color: '#0CD6BE'
           },
           {
             title: 'Autofac',
             author: 'Philip K. Dick',
             link: 'https://duckduckgo.com/?q=Autofac+Philip+K.+Dick&t=h_&ia=web',
             id: 5,
-            color: '#9865F7'
           },
           {
             title: 'The bicentennial man',
             author: 'Isaac Asimov',
             link: 'https://duckduckgo.com/?q=The+bicentennial+man++Isaac+Asimov&t=h_&ia=web',
             id: 6,
-            color: "#93D012"
           },
           {
             title: 'Marionettes Inc.',
             author: 'Ray Bradbury',
             link: 'https://duckduckgo.com/?q=Marionettes+Inc.+Ray+Bradbury&t=h_&ia=web',
             id: 7,
-            color: '#0C8DD6'
           }
         ]
       }
@@ -212,51 +221,37 @@
     margin-bottom: calc(var(--space) * 4);
   }
 
-  .layout-narrow {
+  /* .layout-narrow {
     max-width: 950px;
-  }
+  } */
 
   h2 {
     text-align: left;
+    font-family: "Roboto Flex";
+    text-transform: none;
+    letter-spacing: 0;
   }
 
-  .books-recommendations .layout-narrow {
-    margin-bottom: var(--space);
+  .books__abstract {
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .books-recommendations__item {
+    background-color: var(--color-light);
+  }
+
+  .books-recommendations__item:not(:last-of-type) {
+    margin-bottom: calc(var(--space) * 0.5);
   }
 
   .books-recommendations h2 {
-    margin-bottom: calc(var(--space) * 0.3);
+    margin-bottom: calc(var(--space) * 0.8);
   }
 
-  .books-recommendations p {
-    font-weight: 300;
-    font-style: italic;
-  }
-
-  .books-recommendations__list {
-    max-width: calc(1024px + var(--space) * 2);
-    margin: 0 auto;
-    padding: 0 var(--space);
-  }
-
-  @media screen and (max-width: 990px) {
-    .books-recommendations__list  {
-      grid-template-columns: repeat(3,1fr);
-    }
-  }
-
-  @media screen and (max-width: 780px) {
-    .books-recommendations__list  {
-      grid-template-columns: repeat(2,1fr);
-      align-items: center;
-      justify-items: center;
-    }
-  }
-
-  @media screen and (max-width: 570px) {
-    .books-recommendations__list {
-      grid-template-columns: 1fr;
-    }
+  .books-footer__container {
+    max-width: 586px;
   }
 
 </style>
