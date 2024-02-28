@@ -2,7 +2,7 @@
   <div class="books-footer">
     <span> {{ $t('Do you want') }} <br/> {{$t('to dive even deeper?')}}</span>
     <div class="books-footer__links">
-      {{ $t('Our') }} <g-link target="_blank" to="/white-paper/">{{ $t('White Paper') }} </g-link> & <g-link target="_blank" to="/papers/">{{ $t('Science') }}</g-link>
+      {{ $t('Our') }} <g-link to="/white-paper/">{{ $t('White Paper') }} </g-link> & <g-link to="/papers/">{{ $t('Science') }}</g-link>
     </div>
   </div>
 </template>

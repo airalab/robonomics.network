@@ -61,7 +61,7 @@
         {
             title: this.$t("Robonomics R&D"),
             img: 'docs-book-5.png',
-            year:' 2023-2024',
+            year:' 2023 & 2024',
             options: [
               {
                 link: 'https://crustipfs.info/ipfs/QmaCXn8RdSdh4oxX3R5nzNSfoUPiLMLM4JmLSk1WnYi5ah',
@@ -235,7 +235,7 @@
   .books__abstract {
     font-weight: 500;
     font-style: italic;
-    margin-bottom: calc(var(--space) * 2);
+    margin-bottom: calc(var(--space) * 4);
   }
 
   .books-recommendations__item {
