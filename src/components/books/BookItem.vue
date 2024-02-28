@@ -44,7 +44,6 @@ export default {
     display: grid;
     font-family: 'Roboto Flex';
     grid-template-columns: 1fr;
-    background-color: var(--color-light);
     /* gap: var(--space); */
     /* margin-bottom: calc(var(--space) * 0.6); */
   }
@@ -66,8 +65,11 @@ export default {
 
 
   .e-books__content {
-    padding: 0 calc(var(--space) * 0.5);
-    padding-bottom: calc(var(--space) * 0.3);
+    max-width: 578px;
+    width: 100%;
+    margin: 0 auto;
+    padding: calc(var(--space) * 0.3) calc(var(--space) * 0.75);
+    background-color: var(--color-light);
   }
   .e-book__header  {
     display: flex;
@@ -84,10 +86,16 @@ export default {
   .e-books__links {
     font-weight: 500;
     max-width: 186px;
+    font-size: calc(var(--base-font-size) * 0.8);
+  }
+
+  .e-books__links a:not(:last-of-type) {
+    margin-right: calc(var(--space) * 0.5);
   }
 
 
   .e-books__img {
+    max-width: 578px;
     display: block;
     margin: 0 auto;
   }
