@@ -133,7 +133,7 @@
 
             <div class="text-col-1">
               <h3>1. {{$t('IoT device management with a decentralized cloud')}}</h3>
-              <p class="hyphens">{{$t('Blockchain networks have all the parameters to ensure the highest level of security for device launch and receiving telemetry. Interaction with a device can actually be described by changing the state of the digital twin stored in the blockchain network and delivering information about these changes to the physical device. In the case of using a permissionless blockchain, we can be sure of the global availability of providers, as well as a high level of data protection of the digital twin from unwanted changes.')}}</p>
+              <p class="hyphens">{{$t('Blockchain networks have all the capabilities to provide the highest degree of security for running a device and getting its telemetry. The interaction with the device can actually be described by changing the state of the digital twin stored in the blockchain network and sending information about these changes. In the case of a permissionless blockchain, we can talk about the guarantees of global availability of providers for IoT, as well as a high level of protection of digital twin data from unwanted changes.')}}</p>
             </div>
 
           </section>
@@ -144,7 +144,7 @@
             
             <div class="text-col-1">
               <h3>2. {{$t('Techno-economic transactions between humans and machines')}}</h3>
-              <p class="hyphens">{{$t('We can talk about institutional achievements in terms of access of automated systems directly to digital markets through cryptocurrencies and smart contracts. For example, Ethereum already implements most of the basic tools of economic activity. The applications created today to connect the end user and IoT devices will be much more efficient if the payment and terms of service are inseparable from the launch parameters of the device.')}}</p>
+              <p class="hyphens">{{$t('Thanks to the mechanism of cryptocurrencies and smart contracts, we can provide access to automated systems directly to digital markets. For example, Ethereum already implements most of the basic tools of economic activity that can be used in the operation of autonomous devices. The applications created for the interaction between the end user and the IoT device will be much more effective if the terms of service and payment for it are inseparable from the launch parameters of the device.')}}</p>
             </div>
 
             
@@ -156,7 +156,7 @@
             
             <div class="text-col-1">
               <h3>3. {{$t('Serverless IoT applications for users')}}</h3>
-              <p class="hyphens">{{$t('The question of the privacy of users of modern applications should not be stuck in the inability of companies to use modern advances in the field of web3. There is no need to authenticate or require connection to specific servers to access telemetry and control the device.')}}</p>
+              <p class="hyphens">{{$t('Modern advances in web3-technology can solve the issue of user privacy. With web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.')}}</p>
             </div>
             
           </section>
