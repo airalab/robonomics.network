@@ -43,12 +43,12 @@
 
   .sidetext {
     font-family: var(--font-family-code);
-    font-size: calc(var(--base-font-size) * 0.8);
+    font-size: calc(var(--base-font-size) * 0.55);
     text-transform: uppercase;
   }
 
   @media screen and (max-width: 350px) {
-      .sidetext { font-size: 70%; }
+      .sidetext { font-size: 65%; }
     }
 
   .sidetext a:not(.button) {
