@@ -137,6 +137,18 @@ export default {
     }
   }
 
+  @media screen and (max-width: 425px) {
+
+    .header-logo {
+      margin-right: calc(var(--space) * 1.2);
+    }
+
+    .header-logo a {
+      display: inline-block;
+      width: 60px;
+    }
+  }
+
   /* eye animation */
   @keyframes blink {
     0% {
