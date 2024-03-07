@@ -197,7 +197,7 @@
             id: 5,
           },
           {
-            title: 'The bicentennial man',
+            title: 'The Bicentennial Man',
             author: 'Isaac Asimov',
             link: 'https://duckduckgo.com/?q=The+bicentennial+man++Isaac+Asimov&t=h_&ia=web',
             id: 6,
