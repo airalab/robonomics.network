@@ -1,6 +1,6 @@
 <template>
   <g-link class="books-recommendations__link" :style="{'backgroundColor': rec.color}" :to="rec.link">
-    {{ rec.id + 1 }}.  {{ rec.title }} | {{ rec.author }}
+    {{ rec.id + 1 }}.  {{ rec.author }} -  {{ rec.title }}
   </g-link>
 </template>
 
