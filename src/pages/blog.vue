@@ -93,7 +93,7 @@ query ($locale: String!, $page: Int) {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       PostCard: () => import('~/components/PostCard.vue'),
-      Pagination: () => import('~/components/Pagination.vue'),
+      Pagination: () => import('~/components/utils/Pagination.vue'),
       BlogTagsBanner: () => import('~/components/blocks/BlogTagsBanner.vue')
     },
 

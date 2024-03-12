@@ -17,7 +17,7 @@
 
 <script>
 
-import PapersItem from '~/components/PapersItem.vue'
+import PapersItem from '~/components/papers/PapersItem.vue'
 
 export default {
   components: {

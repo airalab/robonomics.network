@@ -122,7 +122,7 @@
 </template>
 
 <script>
-  import SchemePopup from  '~/components/SchemePopup.vue'
+  import SchemePopup from  '~/components/scheme/SchemePopup.vue'
 export default {
 
   components: {SchemePopup},

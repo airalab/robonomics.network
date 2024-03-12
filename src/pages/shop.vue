@@ -67,7 +67,7 @@ export default {
 
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
-    ShopItem: () => import("~/components/ShopItem.vue"),
+    ShopItem: () => import("~/components/shop/ShopItem.vue"),
   },
 
   data() {

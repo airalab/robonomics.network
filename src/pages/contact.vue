@@ -96,7 +96,7 @@
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       Spinner: () => import ('@/components/utils/spinner.vue'),
-      share: () => import('~/components/Share.vue'),
+      share: () => import('~/components/contacts/Share.vue'),
     },
 
     data() {

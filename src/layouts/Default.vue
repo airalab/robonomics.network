@@ -1,9 +1,12 @@
 <template>
   <transition name="fade" appear mode="out-in">
    
-  
+
+    <div class="loader-wrapper" v-if="!isLoaded">
+      <Loader/>
+    </div>
     <!-- <div class="screen"> -->
-    <div class="screen banner">
+    <div v-else class="screen banner">
       
       <span class="right-border"></span>
 
@@ -139,9 +142,10 @@ import moment from 'moment'
 export default {
 
   components: {
-    Header: () => import('~/components/Header.vue'),
-    Footer: () => import('~/components/Footer.vue'),
-    Contacts: () => import('~/components/Contacts.vue')
+    Header: () => import('~/components/header/Header.vue'),
+    Footer: () => import('~/components/footer/Footer.vue'),
+    Contacts: () => import('~/components/footer/Contacts.vue'),
+    Loader: () => import('~/components/utils/Loader.vue'),
   },
 
   props: {
@@ -157,6 +161,7 @@ export default {
       update: null,
       releaseTime: null,
       releaseLink: null,
+      isLoaded: false,
     }
   },
 
@@ -196,6 +201,10 @@ export default {
       window.scrollTo(0,0);
 
       this.activateTracker();
+
+      setTimeout(() => {
+        this.isLoaded = true;
+      }, 100)
   }
 }
 </script>

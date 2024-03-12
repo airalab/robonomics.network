@@ -812,15 +812,13 @@ query {
 </style>
 
 <script>
-  import Navigation from '~/components/Navigation.vue'
   import MetaInfo from '~/components/MetaInfo.vue'
-  import Scheme from  '~/components/SchemeWithPopups.vue'
+  import Scheme from  '~/components/scheme/SchemeWithPopups.vue'
   import MovingNumbers from  '~/components/decor/MovingNumbers.vue'
 
   export default {
 
     components: {
-      Navigation,
       MetaInfo,
       Scheme,
       MovingNumbers
