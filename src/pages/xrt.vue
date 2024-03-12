@@ -219,7 +219,7 @@ query {
     export default {
         components: {
             Card: () => import('~/components/TextCard.vue'),
-            XRTGraph: () => import("~/components/XRTGraph.vue"),
+            XRTGraph: () => import("~/components/xrt/XRTGraph.vue"),
             MetaInfo: () => import("~/components/MetaInfo.vue"),
             ArrowIcon
         },

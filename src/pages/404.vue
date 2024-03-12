@@ -38,14 +38,12 @@
 
 
 <script>
-  import Navigation from '~/components/Navigation.vue'
   import MetaInfo from '~/components/MetaInfo.vue'
   import Parallax from 'parallax-js'
 
   export default {
 
     components: {
-      Navigation,
       MetaInfo
     },
 

@@ -591,7 +591,7 @@
       MetaInfo: () => import("~/components/MetaInfo.vue"),
       Abstract: () => import("~/components/TextAbstract.vue"),
       Card: () => import("~/components/TextCard.vue"),
-      Scheme: () => import("~/components/Scheme.vue")
+      Scheme: () => import("~/components/scheme/Scheme.vue")
     }
   }
 </script>

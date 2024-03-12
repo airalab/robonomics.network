@@ -25,12 +25,10 @@
 
 <script>
 
-import ShareItem from '~/components/ShareItem.vue'
-
 export default {
   components: {
-      ShareItem,
-      TelegramItem: () => import('~/components/TelegramItem.vue'),
+      ShareItem : () => import('~/components/contacts/ShareItem.vue'),
+      TelegramItem: () => import('~/components/contacts/TelegramItem.vue'),
     },
 
   props: {
