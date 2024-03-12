@@ -81,7 +81,7 @@
   import contacts from '@/data/contact.yaml'
 export default {
   components: { 
-    ContactsForm: () => import("./utils/contactsForm.vue"),
+    ContactsForm: () => import("../utils/contactsForm.vue"),
   },
 
   data() {

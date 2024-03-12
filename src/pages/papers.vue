@@ -63,7 +63,7 @@
   export default {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
-      papersList: () => import('~/components/PapersList.vue')
+      papersList: () => import('~/components/papers/PapersList.vue')
     },
 
     data() {

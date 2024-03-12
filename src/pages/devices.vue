@@ -73,7 +73,7 @@ export default {
 
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
-    DevicesItem: () => import("~/components/DevicesItem.vue")
+    DevicesItem: () => import("~/components/devices/DevicesItem.vue")
   },
 
   data() {

@@ -41,7 +41,7 @@
 <script>
 
   import MetaInfo from '~/components/MetaInfo.vue';
-  import TimelineItem from '~/components/TimelineItem.vue'
+  import TimelineItem from '~/components/timeline/TimelineItem.vue'
 
   export default {
     components: {

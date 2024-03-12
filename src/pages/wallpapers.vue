@@ -43,7 +43,7 @@ export default {
 
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
-    WallpapersItem: () => import("~/components/WallpapersItem.vue"),
+    WallpapersItem: () => import("~/components/wallpapers/WallpapersItem.vue"),
   },
 
   data() {
