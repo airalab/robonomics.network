@@ -15,7 +15,7 @@ import Vuex from 'vuex'
 import Default from '~/layouts/Default.vue'
 
 // components
-import Contacts from '~/components/Contacts.vue'
+import Contacts from '~/components/footer/Contacts.vue'
 import rbButton from '~/components/rbButton.vue'
 import rbImage from '~/components/rbImage.vue'
 import Youtube from '~/components/Youtube.vue'

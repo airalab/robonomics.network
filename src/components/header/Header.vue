@@ -54,9 +54,9 @@
 export default {
 
   components: {
-    languageSwitcher: () => import('~/components/languageSwitcher.vue'),
-    ThemeSwitcher: () => import('~/components/ThemeSwitcher.vue'),
-    HeaderNav: () => import('~/components/HeaderNav.vue'),
+    languageSwitcher: () => import('~/components/header/languageSwitcher.vue'),
+    ThemeSwitcher: () => import('~/components/header/ThemeSwitcher.vue'),
+    HeaderNav: () => import('~/components/header/HeaderNav.vue'),
   },
 
   methods: {
