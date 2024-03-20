@@ -105,7 +105,7 @@
             </li>
             <li class="color-pallet__item logos-and-assets__item color-pallet__item--black">
               <h3 class="color-pallet__subtitle">Dark</h3>
-              <span class="color-pallet__code">#2949D3</span>
+              <span class="color-pallet__code">#000000</span>
             </li>
             <li class="color-pallet__item logos-and-assets__item  color-pallet__item--red">
               <h3 class="color-pallet__subtitle">Accentuating red</h3>

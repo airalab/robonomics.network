@@ -43,7 +43,7 @@ export default {
       type: String,
       default: 'blue',
       validator: function (value) {
-        return ['blue', 'green', 'pale-blue', 'vivid-blue', 'violet', 'white'].indexOf(value) !== -1;
+        return ['blue', 'green', 'pale-blue', 'vivid-blue', 'violet', 'white', 'black'].indexOf(value) !== -1;
       }
     },
 
@@ -54,6 +54,11 @@ export default {
     scale: {
       type: String,
       default: '1',
+    },
+
+    disabled: {
+      type: Boolean,
+      default: false
     }
   },
 
@@ -158,6 +163,10 @@ export default {
     --b-color-background: var(--rb-color-light);
     --b-color-background-hover: var(--rb-color-gray);
     --b-color-text: var(--rb-color-dark);
+  }
+
+  .rb-button-black {
+    --b-color-background: var(--rb-color-dark);
   }
 
   /* dark theme */

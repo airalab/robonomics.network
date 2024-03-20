@@ -107,6 +107,7 @@ export default {
     min-height: 27px;
     height: 100%;
     display: flex;
+    flex-direction: column-reverse;
     /* align-items: center; */
     
   }
@@ -115,12 +116,12 @@ export default {
     padding: 0.35rem 0.6rem;
     height: 100%;
     border: 1px solid var(--color-dark);
-    background-color: var(--color-dark);
+    background-color: #000;
     transition: background-color 0.33s ease-in-out;
   }
 
   .theme-moon {
-    background-color: var(--color-light)
+    background-color: transparent
   }
 
 
@@ -130,14 +131,9 @@ export default {
     fill: #fff
   }
 
-  .dark-theme .theme-sun svg {
-    fill: #000;
+  .dark-theme .theme-moon {
+    background-color: #fff;
   }
-
-
-  /* .dark-theme .theme-sun {
-    background-color: #000;
-  } */
 
   .theme-moon svg {
     width: 13px;
@@ -149,7 +145,7 @@ export default {
   }
 
   .dark-theme .cls-1 {
-    fill: #fff;
+    fill: #000;
   }
 
   .theme-sun:hover,

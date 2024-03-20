@@ -1,28 +1,30 @@
 <template>
   <div class="product__item hyphens">
-    <h2 class="product__title">{{ title }}</h2>
-    <div class="product__content grid-3">
+    <h2 v-if="!shop" class="product__title">{{ title }}</h2>
+    <div class="product__content grid-3" :class="{'shop': shop}">
       <g-image :src="require(`!!assets-loader!@/assets/images/devices/${img}`)"  quality="75%" :alt="title" class="product__img"/>
       <p class="product__text">{{ text }}</p>
-      <div class="products__links">
+      <div class="products__links" v-if="!shop">
         <rb-button block class="devices__link" :to="hacksterLink" buttoncolor="pale-blue" buttonstyle="flat">{{ $t('View specification') }}</rb-button>
         <rb-button block v-if="telegramLink" :to="telegramLink" buttoncolor="green" buttonstyle="flat" class="devices__link">{{ $t('Buy in Telegram bot') }}</rb-button>
         <span v-if="release" class="product__release">{{release}}</span>
       </div>
+      <DevicesShopItem :price="price" :title="title" :unavailable="unavailable"  v-else/>
     </div>
     <div class="product-key-features">
       <div class="product-key-features__title">{{ $t('Key Features') }}</div>
       <ul class="list-simple product-key-features__list">
-        <li class="product-key-features__item"  v-for="feature in features" :key="feature.id" :class="{'accent': feature.accent && feature.accent}">{{ feature.text }}</li>
+        <li class="product-key-features__item"  v-for="feature in features" :key="feature.id" :class="{'accent': feature.accent && feature.accent || shop}">{{ feature.text }}</li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
-// import rbButton from './rbButton.vue'
 export default {
-  // components: { rbButton },
+  components: { 
+    DevicesShopItem: () => import("~/components/devices/DevicesShopItem.vue")
+  },
 
   props: {
     title: {
@@ -54,6 +56,18 @@ export default {
     features: {
       type: Array,
       default: []
+    },
+    shop: {
+      type: Boolean,
+      default: false
+    },
+    price: {
+      type: Number,
+      default: null
+    },
+    unavailable: {
+      type: Boolean,
+      default: false
     }
   }
 
@@ -68,13 +82,23 @@ export default {
     margin-bottom: var(--space);
   }
 
+  .grid-3.shop {
+    grid-template-columns: 300px 1fr minmax(290px, 320px);
+    gap: 0;
+  }
+
+  .grid-3.shop .product__text {
+    margin-left: calc(var(--space));
+    margin-right: calc(var(--space) * 3)
+  }
+
   .product__item {
     margin-bottom: calc(var(--space) * 3)
   }
 
   .product__title {
     font-family: "Roboto Flex";
-    font-weight: 800;
+    font-weight: 900;
     text-align: left;
     text-transform: none;
     letter-spacing: 0;
@@ -153,8 +177,16 @@ export default {
       text-align: center;
     }
 
-    .grid-3 {
+    .grid-3, .grid-3.shop {
       grid-template-columns: 1fr;
+    }
+
+
+    .grid-3.shop .product__text {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: var(--space);
+      margin-bottom: calc(var(--space) * 3);
     }
 
     .product__img {
