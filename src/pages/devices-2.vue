@@ -11,7 +11,7 @@
     <!-- banner -->
     <section class="devices banner-with-pattern">
       <div class="devices__main-title title-with-bg">
-        <h1><span>{{ $t('Smart Devices') }}</span></h1>
+        <h1><span>{{ $t('Smart devices online shop') }}</span></h1>
       </div>
 
       <div class="devices__banner-layout layout">
@@ -22,27 +22,21 @@
             <span>{{ $t('Be independent') }}</span>
           </h3>
 
-          <p class="devices__text">{{ $t("We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!") }}</p>
+          <div class="devices__descr">
+            <p class="devices__text">{{ $t("We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!") }}</p>
+            <g-link class="devices__manifesto" to="/its-gonna-get-worse/">[ Manifesto ]</g-link>
+          </div>
 
           <div class="devices__banner-logos">
-            <g-image immediate quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-hass-logo.png"/>
-            <g-image  quality="75" class="mobile" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-tasmota-logo.png"/>
+            <span>Supports:</span>
+            <div class="devices__banner-logos--wrapper">
+              <g-image immediate quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-hass-logo.png"/>
+              <g-image immediate quality="75" class="mobile" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-tasmota-logo.png"/>
+            </div>
           </div>
         </div>
 
-        <g-image class="banner-with-pattern__img  devices__banner-img devices__banner-img--girl" immediate  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-all.png"/>
-
-        <!-- <div class="banner-buttons">
-          <div class="banner-buttons-content">
-            <rb-button :to="links.tg" buttoncolor="green">{{ $t('Buy devices') }}</rb-button>
-          </div>
-          <div class="devices__banner-buy-wrapper">
-            <g-link :to="links.tg" class="devices__link">{{ $t('Buy devices') }}</g-link>
-            <g-link to="https://www.hackster.io/robonomics-web3-cloud/products"  class="devices__banner-support">
-              <span>{{ $t('Support it on hackster.io') }}</span>
-            </g-link>
-          </div>
-        </div> -->
+        <g-image immediate class="banner-with-pattern__img  devices__banner-img devices__banner-img--girl"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-all.png"/>
 
       </div>
     </section>
@@ -52,6 +46,7 @@
       <div class="layout layout__mid">
         <DevicesItem 
           v-for="device in devices"
+          shop
           :key="device.id"
           :title="device.title"
           :text="device.text"
@@ -60,6 +55,8 @@
           :telegramLink="device.telegramLink"
           :release="device.release"
           :features="device.features"
+          :price="device.price"
+          :unavailable="device.unavailable"
         />
       </div>
     </section>
@@ -89,12 +86,12 @@ export default {
       return [
         {
           id: 0,
-          title: this.$t(`Product 1: Universal IR Remote Control`),
+          title: this.$t(`Universal IR Remote Control`),
           text: this.$t('Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!'),
           img: 'ir-remote.png',
+          price: 28,
           hacksterLink: "https://wiki.robonomics.network/docs/ir-controller/",
-          telegramLink: this.links.tg,
-          release: this.$t("Free worldwide shipping starts from January 2024"),
+          release: this.$t("Free worldwide shipping starts"),
           features: [
             {
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -121,12 +118,12 @@ export default {
         },
         {
           id: 1,
-          title: this.$t('Product 2: Smart Energy Power Consumption Monitoring'),
+          title: this.$t('Smart Energy Power Consumption Monitoring'),
           text: this.$t('Have you ever wondered what consumes the most electricity in your home? Our smart energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.'),
           img: 'energy-monitor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/energy-monitoring",
-          telegramLink: this.links.tg,
-          release: this.$t("Free worldwide shipping starts from January 2024"),
+          price: 40,
+          release: this.$t("Free worldwide shipping"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -144,24 +141,17 @@ export default {
             {
               text: this.$t('Home Assistant Friendly'),
               id: 3
-            },
-            {
-              text: this.$t('WI-FI'),
-              id: 4
-            },
-            {
-              text: this.$t('MQTT'),
-              id: 5
-            },
+            }
           ] 
         },
         {
           id: 2,
-          title: this.$t('Product 3, 4: 1,2 gang wi-fi Smart Switch'),
+          title: this.$t('1 gang wi-fi Smart Switch'),
           text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
           img: 'smart-switch.png',
+          price: 28,
           hacksterLink: "https://wiki.robonomics.network/docs/smart-switches",
-          release: this.$t("Free worldwide shipping starts from February 2024"),
+          release: this.$t("Free worldwide shipping"),
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -179,25 +169,45 @@ export default {
             {
               text: this.$t('Home Assistant Friendly'),
               id: 3
-            },
-            {
-              text: this.$t('WI-FI'),
-              id: 4
-            },
-            {
-              text: this.$t('MQTT'),
-              id: 5
-            },
+            }
           ] 
         },
         {
           id: 3,
-          title: this.$t('Product 5: Air Quality Sensor'),
+          title: this.$t('2 gang wi-fi Smart Switch'),
+          text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
+          img: 'smart-switch.png',
+          price: 28,
+          hacksterLink: "https://wiki.robonomics.network/docs/smart-switches",
+          release: this.$t("Free worldwide shipping"),
+          features: [
+            { 
+              text: this.$t('type-c for OSS firmware upgrading'),
+              id: 0,
+              accent: true
+            },
+            {
+              text: this.$t('large touchable  buttons'),
+              id: 1 
+            },
+            {
+              text: this.$t('Doesn’t need any cloud service'),
+              id: 2
+            },
+            {
+              text: this.$t('Home Assistant Friendly'),
+              id: 3
+            }
+          ] 
+        },
+        {
+          id: 4,
+          title: this.$t('Air Quality Sensor'),
           text: this.$t('Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).'),
           img: 'quality-sensor.png',
           hacksterLink: "https://wiki.robonomics.network/docs/air-quality-sensor",
-          // telegramLink: this.links.tg,
-          release: this.$t("Free worldwide shipping starts from January 2024"),
+          release: this.$t("Free worldwide shipping"),
+          unavailable: true,
           features: [
             { 
               text: this.$t('type-c for OSS firmware upgrading'),
@@ -209,7 +219,7 @@ export default {
               id: 1 
             },
             {
-              text: this.$t('Can be added as a part of global sensor map or your own fork'),
+              text: this.$t('Easily forkable map'),
               id: 2
             },
             {
@@ -236,6 +246,11 @@ export default {
     --color-link-hover: var(--color-light)
   }
 
+  .devices__banner-layout {
+    position: relative;
+    max-width: 1200px;
+  }
+
   .devices__content {
     padding-top: var(--space);
     padding-bottom: calc(var(--space) * 0.5);
@@ -243,10 +258,14 @@ export default {
     flex-direction: column;
   }
 
-  .devices__text {
+  .devices__descr {
+    max-width: 600px;
     position: relative;
     z-index: 10;
-    max-width: 1065px;
+  }
+
+  .devices__text {
+    width: 100%;
     padding: calc(var(--space) * 0.5);
     margin-bottom: var(--space);
     font-style: italic;
@@ -257,18 +276,42 @@ export default {
     border: 3px solid #81D7D6;
   }
 
-  .devices__banner-logos {
+  .devices__manifesto {
     position: absolute;
-    /* left: calc(50% - 470px); */
-    left: calc(50% - 377px);
-    top: 140px;
-    max-width: 410px;
+    bottom: 10px;
+    right: -40px;
+    padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);
+    font-weight: 800;
+    color: var(--color-dark);
+    background-color: var(--color-yellow);
+    text-transform: uppercase;
+  }
+
+  .devices__banner-logos {
+    margin-top: 40px;
     width: 100%;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-end;
+    gap: 10px;
     
   }
+
+  .devices__banner-logos span {
+    display: inline-block;
+    margin-right: 332px;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: calc(var(--base-font-size) * 1.2);
+    color: var(--color-light);
+  }
+
+  .devices__banner-logos--wrapper {
+    display: flex;
+    max-width: 440px;
+    gap: 20px;
+  }
+  
 
   .devices__banner-logos img {
     height: 60px;
@@ -283,132 +326,13 @@ export default {
     max-width: 244px;
   } 
 
-  .banner-buttons {
-    align-items: center;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    z-index: 0;
-    padding: 2rem 0;
+  .devices__banner-img--girl {
+    right: -130px;
+    top: 100px;
+    max-width: 820px;
   }
 
-  @media screen and (min-width: 1930px) {
-
-    .devices__banner-layout {
-      max-width: 2200px;
-    }
-
-    .devices__banner-img--girl {
-      right: calc(20% - 350px);
-    }
-  }
-
-  @media screen and (max-width: 2300px) {
-
-    .devices__banner-logos {
-      position: static;
-      flex-direction: row;
-      gap: 0;
-      margin-top: 20px;
-      max-width: unset;
-      justify-content: flex-end;
-    }
-
-    .devices__banner-logos img:first-of-type {
-      width: 280px;
-    }
- 
-    .devices__banner-logos img:last-of-type {
-      max-width: unset;
-      width: 114px;
-    }
-  }
-
-  @media screen and (max-width: 1935px) {
-    .devices__banner-title {
-      max-width: 600px;
-    }
-  }
-
-
-  @media screen and (max-width: 1785px) {
-
-    .banner-buttons-content {
-      width: 100%;
-    }
-
-    .banner-buttons-content .rb-button {
-      width: 100%;
-    } 
-
-    .devices__text {
-      max-width: 600px;
-    }
-
-    .devices__banner-logos {
-      margin-top: 60px;
-    }
-
-    .devices__banner-img--girl {
-      width: 100%;
-      right: 50px;
-      top: 81px;
-      max-width: 750px;
-    }
-
-  }
-
-  @media screen and (min-width: 1650px) {
-    .banner-buttons {
-      background-image: url('data:image/svg+xml,<svg width="426" height="298" viewBox="0 0 426 298" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M410.456 224.054C397.789 244.78 377.52 260.298 355.366 271.598C310.161 294.647 255.495 301.427 203.556 290.384C185.682 286.597 168.14 280.765 150.172 277.65C132.204 274.534 113.231 274.299 97.2017 281.397C88.3201 285.317 80.6036 291.352 71.4988 294.832C49.2601 303.31 19.9947 293.229 7.10669 272.391C-5.75898 251.566 -0.156672 222.728 19.5258 209.944C29.8897 203.202 42.7811 200.917 54.8238 197.209C91.0088 186.088 93.7275 178.046 110.168 145.293C129.36 107.052 92.5946 44.8325 126.008 17.5483C163.32 -12.9249 293.792 2.72181 335.508 26.0483C380.807 51.375 410.591 85.3288 421.701 134.039C428.491 163.741 426.644 195.464 412.171 221.145C411.608 222.101 411.032 223.077 410.469 224.033L410.456 224.054Z" fill="white"/></svg>');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      left: 735px;
-      max-width: 385px;
-      min-height: 269px;
-      position: absolute;
-      top: 173px;
-      z-index: 0;
-      padding: 0;
-    }
-
-    .banner-buttons-content {
-      margin-left: 70px;
-    }
-  }
-
-
-  .devices__banner-support {
-    position: relative;
-    display: block;
-    width: 100%;
-    margin-top: calc(var(--space) * 0.5);
-    /* color: var(--color-light); */
-  }
-
-  .devices__banner-support span {
-    display: inline-block;
-    font-weight: 800;
-    font-size: calc(var(--space) * 0.5);
-  }
-
-  .devices__banner-support::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    max-width: 232px;
-    width: 100%;
-    height: 26px;
-    background-image: url("data:image/svg+xml,%3Csvg width='234' height='24' viewBox='0 0 234 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M233.061 13.0607C233.646 12.4749 233.646 11.5251 233.061 10.9393L223.515 1.3934C222.929 0.807611 221.979 0.807611 221.393 1.3934C220.808 1.97919 220.808 2.92893 221.393 3.51472L229.879 12L221.393 20.4853C220.808 21.0711 220.808 22.0208 221.393 22.6066C221.979 23.1924 222.929 23.1924 223.515 22.6066L233.061 13.0607ZM0 13.5L232 13.5V10.5L0 10.5L0 13.5Z' fill='%232949D3'/%3E%3C/svg%3E%0A");
-    background-size: 100%;
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  @media screen and (max-width: 1470px) {
+  @media screen and (max-width: 1660px) {
     .devices__banner-img--girl {
       right: 9px;
       top:100px;
@@ -416,46 +340,34 @@ export default {
     }
   }
 
-
   @media screen and (max-width: 1260px) {
     .devices__banner-title {
       max-width: 100%;
     }
-    .devices__banner-layout {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .devices__banner-buy {
-      margin-top: var(--space);
-      position: relative;
-      align-self: flex-end;
-    }
 
     .devices__banner-logos {
       margin-top: 20px;
+      align-items: flex-start;
     }
 
     .devices__banner-img--girl,
     .devices__banner-img--blob {
       display: none;
     }
+
+    .devices__text {
+      padding-bottom: var(--space);
+    }
+
+    .devices__manifesto {
+      position: absolute;
+      right: unset;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   @media screen and (max-width: 630px) {
-    .devices__banner-img--blob {
-     display: none;
-    }
-
-    .devices__banner-logos {
-      margin-top: 0;
-      width: auto;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-items: flex-start;
-      align-self: flex-start;
-    }
 
     .devices__banner-logos img {
       width: 100%;
@@ -471,12 +383,8 @@ export default {
       max-width: 120px;
     }
 
-    .devices__banner-buy {
-      padding-bottom: calc(var(--space) * 1.6);
-    }
-
-    .devices__banner-buy span {
-      font-size: calc(var(--space) * 0.8);
+    .devices__text {
+      padding-bottom: calc(var(--space) * 2);
     }
   }
 
@@ -485,21 +393,28 @@ export default {
       font-size: calc(var(--base-font-size) * 2);
     }
 
+    .devices__banner-logos--wrapper {
+      flex-direction: column;
+      gap: 0;
+    }
 
-    /* .devices__banner-buy {
-      position: static;
-      min-height: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: var(--color-light);
-      background-image: none;
-    } */
+    .devices__manifesto {
+      width: 100%;
+      text-align: center;
+    }
 
-    /* .devices__banner-buy-wrapper {
-      position: static;
-      padding-top: var(--space);
-    } */
+    .devices__banner-logos--wrapper img {
+      width: 60%;
+    }
+
+    .devices__banner-logos img:first-of-type {
+      margin-bottom: 0;
+    }
+
+    .devices__banner-logos img:last-of-type {
+      max-width: 88px;
+    }
+
   }
 
   /* dark theme */

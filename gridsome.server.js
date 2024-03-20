@@ -57,6 +57,16 @@ module.exports = function (api) {
       }
     )
 
+    createPage(
+      {
+        path: `/shop`,
+        component: 'src/pages/redirect.vue',
+        context: {
+          redirect: '/merch'
+        }
+      }
+    )
+
     createPage({
       path: `/robonomics_white_paper_en.pdf/`,
       component: 'src/pages/redirect.vue',
@@ -75,6 +85,14 @@ module.exports = function (api) {
             }
         }
       )
+
+      createPage({
+        path: `/${l}/shop`,
+        component: 'src/pages/redirect.vue',
+        context: {
+          redirect: '/merch'
+        }
+      })
     })
   
     
