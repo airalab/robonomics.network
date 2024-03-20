@@ -32,8 +32,7 @@
 
           <div class="header-side" dir="ltr">
             <languageSwitcher/>
-            <!-- <ThemeSwitcher/> -->
-            <ShoppingCart/>
+            <!-- <ShoppingCart/> -->
             <HeaderNav/>
 
           </div>
@@ -56,7 +55,6 @@ export default {
 
   components: {
     languageSwitcher: () => import('~/components/header/languageSwitcher.vue'),
-    // ThemeSwitcher: () => import('~/components/header/ThemeSwitcher.vue'),
     ShoppingCart: () => import('~/components/header/ShoppingCart.vue'),
     HeaderNav: () => import('~/components/header/HeaderNav.vue'),
   },
