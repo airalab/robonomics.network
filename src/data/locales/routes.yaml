@@ -54,8 +54,8 @@
   component: './src/pages/home-assistant-themes.vue'
   typename: 'page'
 
-- path: '/shop/'
-  component: './src/pages/shop.vue'
+- path: '/merch/'
+  component: './src/pages/merch.vue'
   typename: 'page'
 
 - path: '/nft/'

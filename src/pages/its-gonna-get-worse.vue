@@ -111,7 +111,7 @@ export default {
     color: var(--Text, #000);
     font-family: "Roboto Flex";
     font-size: calc(var(--base-font-size) * 3);
-    font-weight: 700;
+    font-weight: 900;
     text-align: left;
   }
 
@@ -129,6 +129,7 @@ export default {
     letter-spacing: 0;
     text-transform: unset;
     text-align: left;
+    font-weight: 900;
   }
 
   .iggw__cesar-img {

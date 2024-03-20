@@ -1,9 +1,9 @@
 <template>
-  <g-link :to="link" class="shop__item" :class="classImage">
+  <g-link :to="link" class="shop__item oldy">
+    <span class="shop__locale">{{ locale }}</span>
     <div class="shop__image">
-      <g-image :src="require(`!!assets-loader!@/assets/images/${image}`)" alt="product image"/>
+      <g-image :src="require(`!!assets-loader!@/assets/images/merch/${image}`)" alt="store name"/>
     </div>
-    <h3 v-if="title">{{$t(title)}}</h3>
   </g-link>
 </template>
 
@@ -15,16 +15,12 @@ export default {
       type: String,
       default: '/'
     },
-    title: {
+    locale: {
       type: String,
     },
     image: {
       type: String,
       required: true,
-      default: 'shop-1.jpg'
-    },
-    classImage: {
-      type: String,
     }
   }
 
@@ -34,48 +30,36 @@ export default {
 <style scoped>
 
   .shop__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    border: none;
   }
 
-  .shop__item h3 {
-    margin-bottom: 0;
-    margin-top: calc(var(--space) * 0.5);
-    font-size: calc(var(--base-font-size) * 0.8);
-    font-family: var(--font-family);
-    text-align: left;
-    text-transform: none;
-    letter-spacing: 0;
+  .shop__item:hover {
+    box-shadow: 2px 3px 0 var(--color-blue);
+  }
+
+  .shop__locale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: 'Roboto Flex';
+    font-weight: 900;
+    color: var(--color-dark);
+    text-transform: uppercase;
   }
 
   .shop__image {
-    overflow: hidden;
+    max-width: 160px;
+    margin: 0 auto;
   }
 
-  .shop__image img {
-    transition: transform 0.5s ease-in-out;
+  .dark-theme .shop__image {
+    filter: invert(100%);
   }
-
-  .shop__item:hover .shop__image img {
-    transform: scale(1.3);
-  }
-
-  .hideDesktop {
-    display: none;
-  }
-
-  .hideDesktop .shop__image {
-    border-radius: 100%;
-  }
-
-  /* .hideDesktop.shop__item:hover .shop__image img {
-    transform: scale(1);
-    cursor: default;
-  } */
-
-  @media screen and (max-width: 990px) {
-    .shop__item.hideDesktop {
-      display: block;
-    }
-  }
+  
 
 </style>

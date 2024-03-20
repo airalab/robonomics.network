@@ -29,20 +29,17 @@
         </div>
         <gsp-form class="contacts__form oldy" :gscriptID="gscript" :siteKey="siteKey">
             <h3>{{ $t('Get latest updates') }}</h3>
-            <label class="contacts__label">
-              <input
-                required 
-                name="email" 
-                class="contacts__input" 
-                :class="{'sent': result === 'success'}"
-                type="email" 
-                data-gsp-name="Email" 
-                :data-gsp-data="data_email" 
-                v-model="data_email"
-                :disabled="result === 'success'"
-              >
-              <span>{{ $t('Your email') }}</span>
-            </label>
+
+
+            <rbInput 
+              :text="$t('Your email')" 
+              name="Email" 
+              type="email"
+              :model="data_email" 
+              :result="result" 
+              mb
+              @changeInputValue="changeInputValue" 
+            />
 
             <label class="contacts__label">
               <textarea
@@ -97,6 +94,7 @@
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       Spinner: () => import ('@/components/utils/spinner.vue'),
       share: () => import('~/components/contacts/Share.vue'),
+      rbInput: () => import('~/components/rbInput.vue'),
     },
 
     data() {
@@ -270,6 +268,10 @@
 
       },
 
+      changeInputValue(value) {
+        this.data_email = value;
+      }
+
     },
 
     watch: {
@@ -393,60 +395,6 @@
   .contacts__form h3 {
     text-align: left;
     color: #000;
-  }
-
-  .contacts__input,
-  .contacts__textarea {
-    padding: calc(var(--space) * 0.6);
-    margin-bottom: var(--space);
-    font-size: var(--base-font-size);
-    font-family: inherit;
-    font-weight: 500;
-    color: #214FDA;
-    background-color: #fff;
-    border: 1px solid #000;
-    width: 100%;
-  }
-
-  .dark-theme .contacts__input {
-    border: 1px solid #000;
-  }
-
-  .contacts__textarea {
-    resize: none;
-  }
-
-  .contacts__label {
-    position: relative;
-    display: block;
-    height: 100%;
-  }
-
-  .contacts__label span {
-    position: absolute;
-    padding: 0;
-    top: 5px;
-    left:  calc(var(--space) * 0.5);
-    font-size: calc(var(--base-font-size) * 0.6);
-    font-family: var(--font-family-code);
-    font-weight: 500;
-    color: #000;
-    transition: color 0.33s ease-in-out, opacity 0.33s ease-in-out, visibility 0.33s ease-in-out;
-  }
-
-  .contacts__label .contacts__input:focus + span,
-  .contacts__label .contacts__textarea:focus + span   {
-    color: #214FDA;
-  } 
-
-  .contacts__label .contacts__textarea:focus + span  {
-    opacity: 0;
-    visibility: hidden;
-  } 
-
-  .contacts__textarea:focus,
-  .contacts__input:focus {
-    border: 1px solid var(--color-blue);
   }
 
   .spinner {

@@ -37,6 +37,7 @@ body {
 	--rb-color-blue-dark: var(--color-blue-dark);
 	--rb-color-green: hsl(82,96%,41%);
 	--rb-color-green-dark: hsl(82,96%,35%);
+	--rb-color-greenish: hsl(72, 100%, 41%);
 	--rb-color-pale-blue: hsl(203, 79%, 54%);
 	--rb-color-pale-blue-dark: hsl(203,79%,35%);
 	--rb-color-vivid-blue: var(--color-blue-vivid);
@@ -46,6 +47,7 @@ body {
 	--rb-color-light: var(--color-light);
 	--rb-color-dark: var(--color-dark);
 	--rb-color-gray: var(--color-gray-mid);
+	--rb-color-light-gray: hsl(60, 4%, 89%);
 
  	--body-bg: var(--color-light);
 	--header-bg: var(--color-light);
@@ -100,6 +102,9 @@ body.dark-theme {
 	--color-blue-xrt: 	hsl(220, 96%, 22%);
 	--color-purple: hsl(332, 73%, 10%);
 	--color-bright-pink: hsl(323, 87%, 81%);
+
+	--rb-color-light-gray: hsla(0, 0%, 40%, 0.575);
+	--rb-color-greenish: hsl(72, 100%, 19%);
 
 	--color-gradient-purpleblue: linear-gradient(#2e576a, var(--color-purple));
 	--color-gradient-marketplace:  linear-gradient(	#696a6aa6, #03a7ed11);
