@@ -43,6 +43,7 @@ export default {
   .e-books__item {
     display: grid;
     font-family: 'Roboto Flex';
+    font-weight: 900;
     grid-template-columns: 1fr;
     /* gap: var(--space); */
     /* margin-bottom: calc(var(--space) * 0.6); */
