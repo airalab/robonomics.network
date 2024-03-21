@@ -247,6 +247,7 @@ export default {
   }
 
   hr {
+    margin-bottom: calc(var(--space)* 2);;
     background-color: var(--header-bg);
   }
 
