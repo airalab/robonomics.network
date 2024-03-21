@@ -1,9 +1,12 @@
 <template>
-  <div class="product__item hyphens">
+  <div class="layout layout__mid product__item hyphens">
     <h2 v-if="!shop" class="product__title">{{ title }}</h2>
     <div class="product__content grid-3" :class="{'shop': shop}">
       <g-image :src="require(`!!assets-loader!@/assets/images/devices/${img}`)"  quality="75%" :alt="title" class="product__img"/>
-      <p class="product__text">{{ text }}</p>
+      <div class="product__text">
+        <p >{{ text }}</p>
+        <g-link v-if="shop" :to="hacksterLink">{{ $t('View more on Hackster') }}</g-link>
+      </div>
       <div class="products__links" v-if="!shop">
         <rb-button block class="devices__link" :to="hacksterLink" buttoncolor="pale-blue" buttonstyle="flat">{{ $t('View specification') }}</rb-button>
         <rb-button block v-if="telegramLink" :to="telegramLink" buttoncolor="green" buttonstyle="flat" class="devices__link">{{ $t('Buy in Telegram bot') }}</rb-button>
@@ -12,7 +15,6 @@
       <DevicesShopItem :price="price" :title="title" :unavailable="unavailable"  v-else/>
     </div>
     <div class="product-key-features">
-      <div class="product-key-features__title">{{ $t('Key Features') }}</div>
       <ul class="list-simple product-key-features__list">
         <li class="product-key-features__item"  v-for="feature in features" :key="feature.id" :class="{'accent': feature.accent && feature.accent || shop}">{{ feature.text }}</li>
       </ul>
@@ -83,7 +85,7 @@ export default {
   }
 
   .grid-3.shop {
-    grid-template-columns: 300px 1fr minmax(290px, 320px);
+    grid-template-columns: 322px 1fr minmax(290px, 320px);
     gap: 0;
   }
 
@@ -106,12 +108,11 @@ export default {
 
   .product__img {
     width: 100%;
-    align-self: center;
   }
 
   .product__text {
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.8;
     font-style: italic;
   }
 
@@ -148,6 +149,7 @@ export default {
   }
 
   .product-key-features__list {
+    width: 70%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -155,10 +157,10 @@ export default {
   }
 
   .product-key-features__item {
-    padding: calc(var(--space) * 0.2) calc(var(--space) * 0.5);
-    font-size: calc(var(--base-font-size) * 0.8);
+    padding: calc(var(--space)* 0.2) calc(var(--space)* 0.3);
+    font-size: calc(var(--base-font-size)* 0.6);
     font-weight: 600;
-    color: var(--color-dark);
+    color: #000;
     background-color: var(--color-light);
     text-transform: uppercase;
   }
@@ -179,6 +181,10 @@ export default {
 
     .grid-3, .grid-3.shop {
       grid-template-columns: 1fr;
+    }
+
+    .product-key-features__list {
+      width: 100%;
     }
 
 
