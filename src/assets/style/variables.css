@@ -95,7 +95,7 @@ body.dark-theme {
 	--color-gray-dark: hsl(0, 0%, 69%);
 	--color-gray-light: hsl(0, 0%, 13%);
 
-	--color-yellow: hsl(54, 74%, 43%);
+	/* --color-yellow: hsl(54, 74%, 43%); */
 	--color-blue-mid: hsl(198, 98%, 47%);
 	--color-blue: hsl(229, 89%, 67%);
 	--color-blue-lighter:hsl(199, 46%, 31%);
@@ -116,7 +116,7 @@ body.dark-theme {
 	--color-border: var(--color-gray);
 	--color-link: hsl(229, 96%, 79%);
 	--body-bg: var(--color-darkness);
-	--header-bg: hsl(0, 0%, 19%);
+	--header-bg: hsla(0, 0%, 19%, 1);
 }
 
 /* END OF DARK THEME */

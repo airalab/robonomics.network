@@ -43,11 +43,10 @@
 
     <!-- products -->
     <section class="products">
-      <div class="layout layout__mid">
+      <div v-for="device in devices"           
+      :key="device.id">
         <DevicesItem 
-          v-for="device in devices"
           shop
-          :key="device.id"
           :title="device.title"
           :text="device.text"
           :img="device.img"
@@ -58,6 +57,7 @@
           :price="device.price"
           :unavailable="device.unavailable"
         />
+        <hr>
       </div>
     </section>
 
@@ -90,7 +90,7 @@ export default {
           text: this.$t('Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!'),
           img: 'ir-remote.png',
           price: 28,
-          hacksterLink: "https://wiki.robonomics.network/docs/ir-controller/",
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-ir-32-11-23/specs",
           release: this.$t("Free worldwide shipping starts"),
           features: [
             {
@@ -121,7 +121,7 @@ export default {
           title: this.$t('Smart Energy Power Consumption Monitoring'),
           text: this.$t('Have you ever wondered what consumes the most electricity in your home? Our smart energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.'),
           img: 'energy-monitor.png',
-          hacksterLink: "https://wiki.robonomics.network/docs/energy-monitoring",
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-em-esp-11-23/specs",
           price: 40,
           release: this.$t("Free worldwide shipping"),
           features: [
@@ -148,9 +148,9 @@ export default {
           id: 2,
           title: this.$t('1 gang wi-fi Smart Switch'),
           text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
-          img: 'smart-switch.png',
+          img: 'smart-switch-1.png',
           price: 28,
-          hacksterLink: "https://wiki.robonomics.network/docs/smart-switches",
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-sws-1g-e-esp-11-23/specs",
           release: this.$t("Free worldwide shipping"),
           features: [
             { 
@@ -176,9 +176,9 @@ export default {
           id: 3,
           title: this.$t('2 gang wi-fi Smart Switch'),
           text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
-          img: 'smart-switch.png',
+          img: 'smart-switch-2.png',
           price: 28,
-          hacksterLink: "https://wiki.robonomics.network/docs/smart-switches",
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-sws-2g-e-esp-11-23/specs",
           release: this.$t("Free worldwide shipping"),
           features: [
             { 
@@ -205,7 +205,7 @@ export default {
           title: this.$t('Air Quality Sensor'),
           text: this.$t('Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).'),
           img: 'quality-sensor.png',
-          hacksterLink: "https://wiki.robonomics.network/docs/air-quality-sensor",
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-es-sds-dht-esp-11-23/specs",
           release: this.$t("Free worldwide shipping"),
           unavailable: true,
           features: [
@@ -246,9 +246,13 @@ export default {
     --color-link-hover: var(--color-light)
   }
 
+  hr {
+    background-color: var(--header-bg);
+  }
+
   .devices__banner-layout {
     position: relative;
-    max-width: 1200px;
+    max-width: 1400px;
   }
 
   .devices__content {
@@ -271,8 +275,8 @@ export default {
     font-style: italic;
     font-weight: 500;
     line-height: 1.8;
-    color: var(--color-light);
-    background-color: var(--color-blue);
+    color: #fff;;
+    background-color: hsla(229, 67%, 49%, 1);
     border: 3px solid #81D7D6;
   }
 
@@ -282,13 +286,13 @@ export default {
     right: -40px;
     padding: calc(var(--space) * 0.3) calc(var(--space) * 0.5);
     font-weight: 800;
-    color: var(--color-dark);
+    color: #000;
     background-color: var(--color-yellow);
     text-transform: uppercase;
   }
 
   .devices__banner-logos {
-    margin-top: 40px;
+    margin-top: 70px;
     width: 100%;
     display: inline-flex;
     flex-direction: column;
@@ -299,22 +303,22 @@ export default {
 
   .devices__banner-logos span {
     display: inline-block;
-    margin-right: 332px;
+    margin-right: 184px;
     font-family: inherit;
-    font-weight: 800;
-    font-size: calc(var(--base-font-size) * 1.2);
-    color: var(--color-light);
+    font-weight: 700;
+    font-size: calc(var(--base-font-size) * 1.3);
+    color: #fff;
   }
 
   .devices__banner-logos--wrapper {
     display: flex;
-    max-width: 440px;
-    gap: 20px;
+    gap: 10px;
   }
   
 
   .devices__banner-logos img {
-    height: 60px;
+    height: 40px;
+    width: 100%;
     object-fit: contain;
   }
 
@@ -327,16 +331,16 @@ export default {
   } 
 
   .devices__banner-img--girl {
-    right: -130px;
+    right: 218px;
     top: 100px;
-    max-width: 820px;
+    max-width: 596px;
   }
 
   @media screen and (max-width: 1660px) {
     .devices__banner-img--girl {
-      right: 9px;
-      top:100px;
-      max-width: 600px;
+      right: 120px;
+      top: 55px;
+      max-width: 544px;
     }
   }
 
@@ -420,6 +424,10 @@ export default {
   /* dark theme */
   .dark-theme a:not(.button):hover {
     opacity: 0.5;
+  }
+
+  .dark-theme .devices__manifesto:hover {
+    opacity: 1 !important;
   }
 
 </style>

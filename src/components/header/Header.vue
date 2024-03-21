@@ -75,7 +75,6 @@ export default {
   }
   .header-logo {
     padding-left: calc(var(--screen-padding-left) * 0.6);
-    background-color: var(--body-bg);
   }
 
   .header-logo a {
@@ -104,7 +103,7 @@ export default {
     right: 0;
     z-index:1000;
 
-    background-color: var(--body-bg);
+    background-color: var(--header-bg);
   }
   
   .header-content {

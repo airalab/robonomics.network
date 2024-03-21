@@ -49,6 +49,14 @@ export default {
     text-align: left;
   }
 
+  .books-footer__links a {
+    color: var(--color-blue);
+  }
+
+  .dark-theme  .books-footer__links a:hover {
+    color: var(--color-blue-dark);
+  }
+
   @media screen and (max-width: 865px) {
     .books-footer::after {
       top: -120px;
