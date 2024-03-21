@@ -65,13 +65,14 @@ export default  {
   margin-top: calc(var(--space) * 0.5);
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .devices-shop__form button {
   margin-top: calc(var(--space) * 0.5);
   font-family: var(--base-font-size);
   font-size: calc(var(--base-font-size) * 0.8);
+  font-weight: 600;
+  background-color: #000;
 }
 
 </style>

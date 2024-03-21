@@ -320,14 +320,14 @@
   font-size: var(--base-font-size);
   font-family: inherit;
   font-weight: 500;
-  color: #214FDA;
+  color: #214FDA !important;
   background-color: #fff;
   border: 1px solid #000;
   width: 100%;
 }
 
 .dark-theme .contacts__input {
-  border: 1px solid #000;
+  border: 1px solid #000 !important;
 }
 
 .contacts__textarea {

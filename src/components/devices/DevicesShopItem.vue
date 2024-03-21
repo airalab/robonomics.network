@@ -85,6 +85,8 @@ export default {
   flex-direction: column;
   align-self: flex-start;
   border: none;
+  color: #000;
+  background-color: #fff;
 }
 
 .devices-shop-item__content {
@@ -92,13 +94,14 @@ export default {
   align-items: center;
   justify-content: space-between;
   font-family: "Roboto Flex";
-  margin-bottom:  calc(var(--space) * 0.5);
+  margin-bottom:  var(--space);
 }
 
 .devices-shop-item__price {
   margin-right: calc(var(--space) * 0.6);
   display: flex;
   align-items: flex-end;
+  align-self: flex-start;
   font-weight: 300;
   gap: 5px;
 }
@@ -124,15 +127,17 @@ export default {
   margin-bottom: calc(var(--space) * 0.3);
   text-align: center;
   font-family: "Roboto Flex";
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   font-size: calc(var(--base-font-size) * 0.8);
+  background-color: hsl(228.7,67.5%,49.4%);
 }
 
 .devices-shop-item__shipping {
   font-weight: 500;
   text-transform: uppercase;
-  font-size: calc(var(--base-font-size) * 0.7);
+  font-size: calc(var(--base-font-size) * 0.6);
+  letter-spacing: 1px;
 }
 
 </style>

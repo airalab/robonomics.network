@@ -36,6 +36,7 @@ export default {
     width: 28px;
     height: 28px;
     padding: 0;
+    line-height: 0;
     border-radius: 100%;
     background-color: var(--rb-color-light-gray);
     color: var(--color-dark);
@@ -64,7 +65,8 @@ export default {
     font-family: var(--font-family);
     letter-spacing: 0;
     font-size: calc(var(--base-font-size)* 0.8);
-    background-color: var(--rb-color-greenish);
+    
+    background-color:  hsl(72, 100%, 41%);
   }
 
   @media screen and (max-width: 1160px) {
