@@ -27,7 +27,8 @@
     font-size: 80%;
     color: var(--color-dark);
     text-transform: uppercase;
-    background-color: var(--header-bg);
+    /* background-color: var(--header-bg); */
+    background-color: transparent;
     border: 1px solid var(--color-dark);
   }
 
