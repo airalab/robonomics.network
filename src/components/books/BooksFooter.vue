@@ -18,7 +18,7 @@ export default {
     position: relative;
     margin-top: calc(var(--space) * 6);
     padding-left: calc(var(--space) * 2);
-    font-family: "Roboto Flex";
+    font-family: var(--font-family);
     font-weight: 900;
     font-size: calc(var(--base-font-size) * 1.8);
     line-height: 1.2;

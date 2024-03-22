@@ -99,7 +99,7 @@ export default {
   }
 
   .product__title {
-    font-family: "Roboto Flex";
+    font-family: var(--font-family);
     font-weight: 900;
     text-align: left;
     text-transform: none;
