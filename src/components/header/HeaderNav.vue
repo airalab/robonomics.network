@@ -238,7 +238,7 @@
         display: flex;
         flex-direction: column;
         gap: calc(var(--space) * 0.8);
-        font-family: 'Roboto Flex';
+        font-family: var(--font-family);
         font-weight: 500;
         font-size: var(--base-font-size);
     }

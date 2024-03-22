@@ -24,7 +24,7 @@
 
           <div class="devices__descr">
             <p class="devices__text">{{ $t("We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!") }}</p>
-            <g-link class="devices__manifesto" to="/its-gonna-get-worse/">[ Manifesto ]</g-link>
+            <g-link target="_blank" class="devices__manifesto" to="/its-gonna-get-worse/">[ Manifesto ]</g-link>
           </div>
 
           <div class="devices__banner-logos">
@@ -300,11 +300,12 @@ export default {
     align-items: flex-end;
     gap: 10px;
     
+    
   }
 
   .devices__banner-logos span {
     display: inline-block;
-    margin-right: 184px;
+    margin-right: 166px;
     font-family: inherit;
     font-weight: 700;
     font-size: calc(var(--base-font-size) * 1.3);
@@ -313,7 +314,8 @@ export default {
 
   .devices__banner-logos--wrapper {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
+    max-width: 304px;
   }
   
 
