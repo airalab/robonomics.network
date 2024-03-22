@@ -93,7 +93,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Roboto Flex";
+  font-family: var(--font-family);
   margin-bottom:  var(--space);
 }
 
@@ -126,7 +126,7 @@ export default {
   width: 100%;
   margin-bottom: calc(var(--space) * 0.3);
   text-align: center;
-  font-family: "Roboto Flex";
+  font-family: var(--font-family);
   font-weight: 600;
   letter-spacing: 0;
   font-size: calc(var(--base-font-size) * 0.8);

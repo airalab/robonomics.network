@@ -1,7 +1,7 @@
 body {
 
 	--base-font-size: 1.2rem;
-	--font-family: 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+	--font-family: "Roboto Flex", 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
 	--color-dark: hsl(299, 0%, 0%);

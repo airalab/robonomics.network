@@ -227,7 +227,7 @@
 
   h2 {
     text-align: left;
-    font-family: "Roboto Flex";
+    font-family:var(--font-family);
     font-weight: 900;
     text-transform: none;
     letter-spacing: 0;
