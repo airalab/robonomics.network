@@ -7,6 +7,7 @@
 
 const fs = require('fs');
 const translateBlogPost = require("./functions/translations");
+const proxy = require("http-proxy-middleware")
 
 let allPossiblePaths = [];
 
@@ -18,6 +19,13 @@ module.exports = function (api) {
     store.addMetadata('discord', 'https://discord.gg/JpaN2XAmqY')
     store.addMetadata('twitter', 'https://twitter.com/AIRA_Robonomics')
 
+  })
+
+  api.configureServer(app => {
+    app.use("/api", proxy({
+        target: 'https://api.unisender.com/ru/',
+        changeOrigin: true 
+    }))
   })
 
   api.loadSource(async (actions) => {

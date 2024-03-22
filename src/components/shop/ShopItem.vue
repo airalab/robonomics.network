@@ -46,7 +46,7 @@ export default {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-family: 'Roboto Flex';
+    font-family:var(--font-family);
     font-weight: 900;
     color: var(--color-dark);
     text-transform: uppercase;

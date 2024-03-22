@@ -7,6 +7,7 @@
     :style="{transform: 'scale('+scale+')'}"
     :v-smooth-scroll="anchor ? '{ updateHistory: false, offset: -250 }' : null"
     @click="$emit('click')"
+    :disabled="disabled"
   >
     <slot/>
   </component>
