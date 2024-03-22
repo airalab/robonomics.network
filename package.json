@@ -32,5 +32,8 @@
     "gridsome": {
       "sharp": "^0.30.7"
     }
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^0.19.2"
   }
 }

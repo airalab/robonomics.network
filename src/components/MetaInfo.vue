@@ -71,7 +71,6 @@ export default {
           
           // Check if there is translation for current alias, if no show default locale string
           if (eval(`item.${this.locale}`)){
-            console.log( eval(`item.${this.locale}`))
             return eval(`item.${this.locale}`)
           }
           else {
