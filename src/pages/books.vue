@@ -2,8 +2,8 @@
   <layout>
 
     <MetaInfo
-      pageTitle = "Books"
-      pageImage = "/website_cover_books.png"
+      pageTitle="Books"
+      pageImage="/website_cover_books.png"
     />
 
 
