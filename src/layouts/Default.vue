@@ -1,29 +1,30 @@
 <template>
   <transition name="fade" appear mode="out-in">
    
-
-    <div class="loader-wrapper" v-if="!isLoaded">
-      <Loader/>
-    </div>
+    <div>
+      <div class="loader-wrapper" v-show="!isLoaded">
+        <Loader/>
+      </div>
     <!-- <div class="screen"> -->
-    <div v-else class="screen banner">
+    <div v-show="isLoaded" class="screen banner">
       
-      <span class="right-border"></span>
+        <span class="right-border"></span>
 
-      <Header  v-if="$store.state.showHeader"/>
+        <Header  v-if="$store.state.showHeader"/>
 
-      <div class="screen-content">
-        
-        <slot/>
-        <Contacts :withGap="withGap" v-if="!$route.path.includes('contact')"/>
-        <ClientOnly> <Footer/> </ClientOnly>
+        <div class="screen-content">
+          
+          <slot/>
+          <Contacts :withGap="withGap" v-if="!$route.path.includes('contact')"/>
+          <ClientOnly> <Footer/> </ClientOnly>
+        </div>
+
+        <div class="sidetext sidetext-left">
+          <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
+          <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
+        </div>
+
       </div>
-
-      <div class="sidetext sidetext-left">
-        <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
-        <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
-      </div>
-
     </div>
   
   </transition>
