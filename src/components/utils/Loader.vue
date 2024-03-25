@@ -46,6 +46,10 @@ export default {
     animation: flickerAnimation 4s infinite;
   }
 
+  .loader-logo svg path {
+    fill: var(--color-dark);
+  }
+
   .logo-robot__eye {
     animation-name: blink;
     animation-duration: 5s;
@@ -70,7 +74,7 @@ export default {
     height: 4.5px;
     top: 0px;
     left: 17px;
-    background-color: #fff;
+    background-color: var(--body-bg);
     border-radius: 100%;
   }
 
@@ -81,7 +85,7 @@ export default {
     height: 4.5px;
     top: 0px;
     left: 0px;
-    background-color: #000;
+    background-color: var(--color-dark);
     border-radius: 100%;
     animation: bounce2 2s ease infinite;
   }
