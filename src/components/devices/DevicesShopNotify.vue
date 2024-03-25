@@ -44,22 +44,13 @@ export default  {
     },
 
     async sendTGNotification(text) {
+
       const telegramUrl = `https://api.telegram.org/bot` + this.token + `/sendMessage?`;
 
       const payload = {
           "chat_id" : this.chatID,
           "text" : text,
           "parse_mode" : "HTML",
-          // "reply_markup" : {
-          //   "inline_keyboard" : [
-          //     [
-          //       {
-          //         "text" : linkText,
-          //         "url" : urlLink,
-          //       }
-          //     ]
-          //   ]
-          // }
         };
 
       const params = {
@@ -90,7 +81,7 @@ export default  {
         this.success = true;
         this.loading = false;
       } finally {
-        this.sendTGNotification(`TEST: ${this.email} requested notification about device`)
+        this.sendTGNotification(`${this.email} requested notification about device`)
       };
     }
   }
@@ -119,6 +110,7 @@ export default  {
 
 .devices-shop__form button.success {
   filter: none;
+  border: none;
   background-color: var(--rb-color-green);
 }
 
