@@ -257,8 +257,9 @@ export default {
   }
 
   .devices__content {
+    position: relative;
     padding-top: var(--space);
-    padding-bottom: calc(var(--space) * 0.5);
+    padding-bottom: calc(var(--space)* 1.5);
     display: flex;
     flex-direction: column;
   }
@@ -293,19 +294,20 @@ export default {
   }
 
   .devices__banner-logos {
-    margin-top: 70px;
-    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    /* width: 100%;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px;
+    gap: 10px; */
     
     
   }
 
   .devices__banner-logos span {
     display: inline-block;
-    margin-right: 166px;
     font-family: inherit;
     font-weight: 700;
     font-size: calc(var(--base-font-size) * 1.3);
@@ -348,18 +350,29 @@ export default {
   }
 
   @media screen and (max-width: 1260px) {
+
+    .devices__banner-layout {
+      overflow: hidden;
+    }
+
     .devices__banner-title {
       max-width: 100%;
     }
 
+    .devices__content{
+      padding-bottom: calc(var(--space) * 3.5);
+    }
+
     .devices__banner-logos {
-      margin-top: 20px;
-      align-items: flex-start;
+      right: unset;
+      left: 0;
     }
 
     .devices__banner-img--girl,
     .devices__banner-img--blob {
-      display: none;
+      right: calc(100% - 1050px);
+      top: 145px;
+      max-width: 444px;
     }
 
     .devices__text {
@@ -368,20 +381,23 @@ export default {
 
     .devices__manifesto {
       position: absolute;
-      right: unset;
-      left: 50%;
-      transform: translateX(-50%);
+      right: 0;
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    .devices__banner-img--girl {
+      display: none;
     }
   }
 
   @media screen and (max-width: 630px) {
-
     .devices__banner-logos img {
       width: 100%;
     }
 
     .devices__banner-logos img:first-of-type {
-      margin-right: 0;
+      margin-right: 10px;
       max-width: 280px;
       margin-bottom: calc(var(--space) * 0.5);
     }
@@ -400,18 +416,14 @@ export default {
       font-size: calc(var(--base-font-size) * 2);
     }
 
-    .devices__banner-logos--wrapper {
-      flex-direction: column;
-      gap: 0;
-    }
-
     .devices__manifesto {
       width: 100%;
       text-align: center;
     }
 
     .devices__banner-logos--wrapper img {
-      width: 60%;
+      width: 100%;
+      height: 30px;
     }
 
     .devices__banner-logos img:first-of-type {

@@ -205,7 +205,7 @@ export default {
 
       setTimeout(() => {
         this.isLoaded = true;
-      }, 100)
+      }, 1000)
   }
 }
 </script>
