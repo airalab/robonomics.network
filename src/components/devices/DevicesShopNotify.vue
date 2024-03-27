@@ -70,7 +70,7 @@ export default  {
 
       this.loading = true;
 
-      const unisenderAPI = `https://api.unisender.com/ru/api/subscribe?format=json&api_key=${this.key}&list_ids=${this.listID}&fields[email]=${this.email}&double_optin=3&tags=devices&origin=*`;
+      const unisenderAPI = `https://api.unisender.com/ru/api/subscribe?format=json&api_key=${this.key}&list_ids=${this.listID}&fields[email]=${this.email}&double_optin=3&tags=devices`;
 
 
       try {
