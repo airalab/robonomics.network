@@ -25,7 +25,7 @@
 
         </div>
 
-        <g-image class="banner-with-pattern__img iggw__banner-img"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-all.png"/>
+        <g-image class="banner-with-pattern__img iggw__banner-img" immediate  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-all.png"/>
       </div>
     </section>
 
@@ -36,7 +36,7 @@
           <h2 class="iggw__title">{{ $t('Why human?') }}</h2>
           <p class="iggw__text">{{ $t("Have you ever wondered why, in the process of evolution on Earth, the human species prevailed instead of, for example, fungi? Even now, it's challenging to provide a definitive answer to this question. The success of Homo sapiens is often attributed to successful cooperation, but then why not bees or ants? Our survival is also owed to a crucial characteristic—the autonomy of an individual within the population. In other words, the ability not to unquestionably submit to the queen bee. Ultimately, the group where each member has the right to be independent prevails.") }}</p>
         </div>
-        <g-image class="iggw__cesar-img"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/iggw/cesar.png"/>
+        <g-image immediate class="iggw__cesar-img"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/iggw/cesar.png"/>
       </div>
 
       <div class="iggw__free-will iggw__mb layout__text">
@@ -45,7 +45,7 @@
       </div>
 
       <div class="iggw__wide-img iggw__mb layout__mid">
-        <g-image class=""  quality="75" aria-hidden="true" alt=""  src="~/assets/images/iggw/upset-houses.png"/>
+        <g-image immediate class=""  quality="75" aria-hidden="true" alt=""  src="~/assets/images/iggw/upset-houses.png"/>
       </div>
 
 
@@ -57,7 +57,7 @@
       </div>
 
       <div class="iggw__wide-img iggw__mb layout__mid">
-        <g-image  quality="75" aria-hidden="true" alt=""  src="~/assets/images/iggw/happy-houses.png"/>
+        <g-image immediate  quality="75" aria-hidden="true" alt=""  src="~/assets/images/iggw/happy-houses.png"/>
       </div>
 
       <div class="iggw__plan iggw__mb layout__text">
@@ -67,7 +67,7 @@
 
       <div class="iggw__images layout__mid">
         <g-link target="_blank" to="/devices/">
-          <g-image class=""  quality="75" aria-hidden="true" alt=""  src="~/assets/images/iggw/all-devices.png"/>
+          <g-image immediate class=""  quality="75" aria-hidden="true" alt=""  src="~/assets/images/iggw/all-devices.png"/>
         </g-link>
       </div>
 
@@ -95,7 +95,6 @@ export default {
   .iggw__banner {
     min-height: 650px;
     margin-bottom: calc(var(--space) * 4);
-    background-image: url('../assets/images/iggw/iggw-banner-bg.jpg');
     background-color: #D9E021;
   }
 
@@ -103,8 +102,14 @@ export default {
     text-shadow: 7px 7px #111;
   }
 
+  .iggw__banner-layout {
+    position: relative;
+    max-width: 1400px;
+  }
+
   .iggw__banner-img{
     right: 30px;
+    top: 30px;
   }
 
   .iggw__banner-text {
