@@ -84,7 +84,6 @@
           <p class="hyphens wp-introduction__text">
            {{$t(`We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...`)}}
           </p>
-          <strong>{{$t(`The first two chapters of the Robonomics white paper are already available to users.`)}}</strong>
         </div>
       </section>
 

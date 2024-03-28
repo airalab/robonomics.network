@@ -220,46 +220,11 @@
             <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/digitalTwins.png"/>
         </section>
       </section>
-      <hr class="no-margins"/>
-
-      <section class="section section__solid section__dotted_darkblue">
-        <div class="introMarketplace grid-2 layout layout__content">
-          <div class="img animate-inside" v-in-viewport.once>
-
-            <g-link class="marketplace animate-inside" v-in-viewport.once to="https://dapp.robonomics.network/#/services">
-              <div class="item">
-                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/services-sensorsMap.png"/>
-                Global IoT sensors network
-              </div>
-
-              <div class="item">
-                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/services-FujiWeather.png"/>
-                Get the weather on Fuji demo
-              </div>
-
-              <div class="item">
-                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/services-dronePassport.png"/>
-                Drone passport registration
-              </div>
-            </g-link>
-
-            <g-link class="marketplace-add" to="https://dapp.robonomics.network/#/">+</g-link>
-
-            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/person-manSitting.png"/>
-          </div>
-          <div class="hyphens animate-inside" v-in-viewport.once>
-            <h2>{{$t('App Store for Robotics - Robonomics Marketplace')}}</h2>
-            <p>{{$t('Companies that design and manufacture IoT-connected products and equipment should adopt a flexible digital twin delivery model to lower barriers to adoption, such as offering digital twins via marketplaces, rather than only offering digital twins via their own, proprietary, delivery model')}} <i>[{{$t('from Gartner research')}}]</i></p>
-            <p>{{$t('The developed digital twin model can be directly linked with additional services that your company provides for the IoT industry.')}}</p>
-            <p>{{$t('To make a delivery process convenient and simple for hundreds of customers, we have added a section of the services for robots marketplace. Take a look at the first examples of the implemented bundles of digital twin model + company automated service.')}}</p>
-            <p>{{$t("You've got an idea for your service for robots or users? Then proceed to the step-by-step instructions for building your IoT application on the Robonomics platform.")}}</p>
-          </div>
-        </div>
-      </section>
 
     </div>
 
   </layout>
+  
 </template>
 
 <style scoped>
