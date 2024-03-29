@@ -93,7 +93,7 @@ export default {
   }
 
   .iggw__banner {
-    min-height: 650px;
+    min-height: 600px;
     margin-bottom: calc(var(--space) * 4);
     background-color: #D9E021;
   }
@@ -109,7 +109,7 @@ export default {
 
   .iggw__banner-img{
     right: 30px;
-    top: 30px;
+    top: -50px;
   }
 
   .iggw__banner-text {
@@ -121,8 +121,8 @@ export default {
   }
 
   .iggw__banner-layout {
-    padding-top: calc(var(--space) * 3);
-    padding-bottom: calc(var(--space) * 3);
+    padding-top: calc(var(--space) * 2);
+    padding-bottom: calc(var(--space) * 2);
   }
 
   .iggw__mb {
@@ -170,9 +170,10 @@ export default {
     gap: calc(var(--space) * 2);
   }
 
-  @media screen and (max-width: 1760px) {
+  @media screen and (max-width: 1800px) {
     .iggw__banner-title {
-      max-width: 595px;
+      max-width: 495px;
+      line-height: 1.2;
     }
   }
 
@@ -183,7 +184,7 @@ export default {
 
     .iggw__banner-img {
       right: 80px;
-      top: 66px;
+      top: -6px;
       max-width: 650px;
     }
 
