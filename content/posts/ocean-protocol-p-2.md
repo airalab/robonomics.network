@@ -52,12 +52,16 @@ The package requires:
 
 Installing the package:
 
+<rb-code>
+
 ```sh
 git clone https://github.com/LoSk-p/ocean_ros
 cd ..
 catkin_make
 source devel/setup.bash
 ```
+
+</rb-code>
 
 </Card>
 
@@ -87,9 +91,13 @@ The steps to set up are as follows:
 * Get Rinkeby ETH tokens from a [faucet](https://faucet.rinkeby.io/).
 * [Export](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key) the private key from Metamask and create a file with your private key:
 
+<rb-code>
+
 ```sh
 echo <private_key> > private_ocean
 ```
+</rb-code>
+
 
 </Card>
 
@@ -99,17 +107,23 @@ echo <private_key> > private_ocean
 
 Install Python module venv for creating virtual environments:
 
+<rb-code>
+
 ```sh
 sudo apt-get install python3.8-venv
 ```
+</rb-code>
 
 Create Python virtual environment and install necessary libraries:
+
+<rb-code>
 
 ```sh
 python3.8 -m venv venv
 source venv/bin/activate 
 pip install ocean-lib rospkg catkin_pkg
 ```
+</rb-code>
 
 </Card>
 
@@ -126,9 +140,14 @@ Get Rinkeby OCEAN via this [faucet](https://faucet.rinkeby.oceanprotocol.com/).
 ### Running ocean_ros
 
 In the terminal with Python virtual environment run ROS launch file:
+
+<rb-code>
+
 ```sh
 roslaunch ocean_ros datatokens.launch
 ```
+
+</rb-code>
 
 Now you can access ROS topics to work with datatokens.
 
@@ -139,6 +158,8 @@ Now you can access ROS topics to work with datatokens.
 ### Creating datatoken
 
 To create a datatoken, you need to publish a message to the topic `/ocean/create_datatoken`. The message should contain the path to the private key file from your Metamask account, IPFS URL to data from device, OCEAN and datatoken liquidity. Message example:
+
+<rb-code>
 
 ```sh
 rostopic pub /ocean/create_datatoken ocean_ros/Metadata "private_key_path: '/home/user/private_ocean'                     
@@ -153,11 +174,17 @@ tokens_nomber: 100.0
 ocean_amount: 10.0"
 ```
 
+</rb-code>
+
 The corresponding ROS node will create a datatoken and it will become available for sale. You can see information about datatoken in `/ocean/token_response` topic:
+
+<rb-code>
 
 ```sh
 rostopic echo /ocean/token_response
 ```
+
+</rb-code>
 
 </Card>
 
@@ -167,15 +194,24 @@ rostopic echo /ocean/token_response
 
 To buy a datatoken, you need to publish a message to the topic `/ocean/get_datatoken`. The message should contain the path to the private key file from your Metamask account and information about the datatoken you want to buy (you can find it on the [market](https://market.oceanprotocol.com/) or from the `/ocean/token_response` topic). Message example (don't forget to change `destination` in the message):
 
+
+<rb-code>
+
 ```sh
 rostopic pub /ocean/get_datatoken ocean_ros/BuyDatatoken "{private_key_path: '/home/user/private_ocean', destination: '/home/user/', token_address: '0x9fb21F68257F1d718d764B68b1430B6460796e42', did: 'did:op:9fb21F68257F1d718d764B68b1430B6460796e42', pool_address: '0xcF295B85ef5ADd0E513B789477C6d14eA6Bc718a'}"
 ```
 
+</rb-code>
+
 You can see path to the downloaded datafile in `/ocean/buying_response` topic:
+
+<rb-code>
 
 ```sh
 rostopic echo /ocean/buying_response
 ```
+
+</rb-code>
 
 </Card>
 
@@ -189,9 +225,13 @@ Perhaps the most interesting illustration of application would be the tokenizati
 
 Robonomics has been working with devices for ecology for a long time. For example, the package [sensors-connectivity](https://github.com/airalab/sensors-connectivity) was developed, which allows you to turn ROS-compatible sensors into telemetry agents. Robonomics engineers are developing various models of [water drones](https://blog.aira.life/water-drone-2-0-first-stage-of-development-db8ad6c81d3c) to collect chemical indicators in rivers and lakes, and are also exploring the possibility of using [UAVs](http://www.ijeetc.com/uploadfile/2019/1009/20191009035041545.pdf) to assess air quality.
 
+<rb-code>
+
 ```
 1556199372.384576 <=>\x86##5E1567057C105409#DOV01SW#0#WT:6.53#PH:8.89#DO:90.4#COND:348.9#
 ```
+
+</rb-code>
 
 Example of collected water data: temperature, PH value, dissolved oxygen, conductivity
 In each case, the devices generate sensor and GPS logs, which are then [published](https://gateway.ipfs.io/ipfs/QmWRjFcQi4Xcisqi8FP3AbGS3PB3gNHgtnfzbcpodKKCBP) to IPFS and provided by the device as a result. This is where we can add value to this data by creating a datatoken by Ocean Protocol. Robonomics Network will ensure that the data was collected by a specific robot for a specific task, and Ocean Protocol will ensure that only those who own the datatoken can access it.

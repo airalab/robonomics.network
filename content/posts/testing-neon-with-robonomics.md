@@ -106,11 +106,13 @@ The successful execution of the simulation showed that all contracts worked corr
 
 During the process of deploying contracts, it turned out that the proxy does not always return a response on time, which is why Truffle ends with an error:
 
-```
+<rb-code>
+
+```sh
 TypeError: Cannot read properties of null (reading 'from')                                    
-    at Web3InterfaceAdapter.<anonymous> (/usr/lib/node_modules/truffle/build/webpack:/packages
+    at Web3InterfaceAdapter.(<anonymous>) (/usr/lib/node_modules/truffle/build/webpack:/packages
 /interface-adapter/dist/adapter/web3/index.js:71:1)                                           
-    at Generator.next (<anonymous>)                                                           
+    at Generator.next (<anonymous>)                                                          
     at fulfilled (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
 /adapter/web3/index.js:5:43)                                                                  
     at runMicrotasks (<anonymous>)
@@ -118,6 +120,7 @@ TypeError: Cannot read properties of null (reading 'from')
 Truffle v5.5.23 (core: 5.5.23)
 Node v16.14.0
 ```
+</rb-code>
 
 It was not possible to find a relationship between the test conditions and the occurrence of an error, but most likely Neon EVM cannot send a transaction receipt, and Truffle cannot process a Null response.
 
@@ -131,7 +134,9 @@ Neon EVM does not have a WS/WSS endpoint unlike Ethereum, which makes it impossi
 
 Neon EVM returns rather poor descriptions of events after a transaction, for example:
 
-```
+<rb-code>
+
+```sh
  events: {
     '0': {
       address: '0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C',
@@ -149,6 +154,7 @@ Neon EVM returns rather poor descriptions of events after a transaction, for exa
     },
 ...
 ```
+</rb-code>
 
 Instead of 0, 1, etc. we expected to see named events.
 
