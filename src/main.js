@@ -18,6 +18,7 @@ import Default from '~/layouts/Default.vue'
 import Contacts from '~/components/footer/Contacts.vue'
 import rbButton from '~/components/rbButton.vue'
 import rbImage from '~/components/rbImage.vue'
+import rbCode from '~/components/rbCode.vue'
 import Youtube from '~/components/Youtube.vue'
 
 // Post
@@ -52,6 +53,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.component('Contacts', Contacts)
   Vue.component('rb-button', rbButton)
   Vue.component('rb-image', rbImage)
+  Vue.component('rb-code', rbCode)
   Vue.component('Youtube', Youtube)
   Vue.component('ExpiredInfo',  ExpiredInfo)
 

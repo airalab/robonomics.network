@@ -107,11 +107,13 @@ https://youtu.be/fYJVF7KrNnI
 
 В процессе загрузки контрактов выяснилось, что proxy не всегда возвращает ответ вовремя, отчего Truffle завершается с ошибкой:
 
-```
+<rb-code>
+
+```sh
 TypeError: Cannot read properties of null (reading 'from')                                    
-    at Web3InterfaceAdapter.<anonymous> (/usr/lib/node_modules/truffle/build/webpack:/packages
+    at Web3InterfaceAdapter.(<anonymous>) (/usr/lib/node_modules/truffle/build/webpack:/packages
 /interface-adapter/dist/adapter/web3/index.js:71:1)                                           
-    at Generator.next (<anonymous>)                                                           
+    at Generator.next (<anonymous>)                                                          
     at fulfilled (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
 /adapter/web3/index.js:5:43)                                                                  
     at runMicrotasks (<anonymous>)
@@ -119,6 +121,7 @@ TypeError: Cannot read properties of null (reading 'from')
 Truffle v5.5.23 (core: 5.5.23)
 Node v16.14.0
 ```
+</rb-code>
 
 Не удалось найти зависимость между условиями тестирования и возникновением ошибки, но вероятнее всего Neon EVM не может отправить receipt транзакции, а Truffle не может обработать ответ Null. 
 
@@ -132,7 +135,9 @@ Node v16.14.0
 
 Neon EVM возвращает довольно скудные описания событий после транзакции, например:
 
-```
+<rb-code>
+
+```sh
  events: {
     '0': {
       address: '0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C',
@@ -150,6 +155,7 @@ Neon EVM возвращает довольно скудные описания �
     },
 ...
 ```
+</rb-code>
 
 Вместо 0, 1 и т.д. мы ожидали увидеть поименованные события.
 

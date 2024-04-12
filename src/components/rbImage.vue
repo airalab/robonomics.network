@@ -105,4 +105,8 @@ export default {
     display: none;
   }
 
+  .rb-image__text {
+    align-self: flex-start;
+  }
+
 </style>

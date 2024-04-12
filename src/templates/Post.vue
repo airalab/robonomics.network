@@ -143,11 +143,11 @@ query($id: ID!) {
   }
 
   .post code {
-    padding: calc(var(--space) * 0.5) var(--space);
-    background-color: var(--color-light);
-    border: 2px solid var(--color-blue);
-    border-top: 10px solid var(--color-blue);
-    margin-bottom: var(--space);
+    vertical-align: middle;
+    padding: calc(var(--space) * 0.1)  calc(var(--space) * 0.3);
+    background-color: var(--color-bright-pink);
+    font-weight: 600;
+    color: var(--color-light);
   }
 
   .post h2 strong, .post h3 strong, .post h4 strong, .post h5 strong {
