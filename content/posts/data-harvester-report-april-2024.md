@@ -44,7 +44,7 @@ Currently, three main ROS 2 packages have been developed for the robot:
 - **data_harvester_perception** - responsible for publishing data from air sensors and conducting Wi-Fi network scans.
 - **data_harvester_chronicler** - manages data logging and subsequent publication to the final archive.
 
-For the ESP32 controller, the firmware **esp32-sensors** was written based on the ESP-IDF framework with support for all used sensors. The firmware is available in two versions: an online version (with the controller connected to Wi-Fi) and an offline version.
+For the ESP32 controller, the firmware ```esp32-sensors``` was written based on the ESP-IDF framework with support for all used sensors. The firmware is available in two versions: an online version (with the controller connected to Wi-Fi) and an offline version.
 
 The source code is available on GitHub: https://github.com/Fingerling42/data-harvester
 
