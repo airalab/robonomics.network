@@ -1,9 +1,9 @@
 ---
-title: "Project G.E.C.K.: Motivation for Implementation and First R&D Report."
+title: "Project G.E.C.K.: Motivation for Implementation and First R&D Report"
 date: 2024-04-16
-published: false
+published: true
 locale: 'en'
-cover_image: ./images/data-harvester-report-april-2024/cover.png
+cover_image: ./images/geck-1/cover.jpg
 description: Over the past two years, I have noticed an increase in publications and various phenomena surrounding topics such as network states and digital nomadism. Last year, I attended the "The Network States Amsterdam" conference with great interest. After several days of reflection in Amsterdam, I initiated a project called G.E.C.K.
 abstract: Over the past two years, I have noticed an increase in publications and various phenomena surrounding topics such as network states and digital nomadism. Last year, I attended the "The Network States Amsterdam" conference with great interest. After several days of reflection in Amsterdam, I initiated a project called G.E.C.K. 
 tags: []
@@ -22,7 +22,7 @@ Garden of Eden Creation Kit (G.E.C.K.) is a suitcase containing everything neede
 "Let's remove the part about nuclear winter and imagine that a new generation of people emerges from shelters to create new forms of cooperation and neighborliness. This is a complex challenge that has rarely been undertaken anywhere on Earth. Throughout history, aside from the struggle for freedom seen in the free cities of Europe in the distant past, events surrounding Hong Kong's special status, and perhaps the social experiment in Copenhagen known as Christiania, there are few examples of societies that have lasted beyond a single generation. Why do I believe there is a chance now?"
 
 
-## Web3 is changing the rules of the game on the arena of public institutions.
+## Web3 is changing the rules of the game on the arena of public institutions
 
 My personal analysis of the history of forming small communities, network structures, and attempts to create sovereign states anywhere on planet Earth shows that the greatest challenge lies in providing new communities with basic social rights and responsibilities, as well as establishing key public institutions. It is not so much about having a strong government capable of creating numerous sub-legal acts, but rather ensuring the preservation of civil relations acts, property ownership registries, and guaranteeing the fulfillment of obligations by the parties involved. These are crucial functions that should be integrated into any human community, no matter how small. Of course, this applies to situations when you are thinking about how this community will live in 20 or 40 years.
 
@@ -41,7 +41,7 @@ Our current task is to assemble the actual set of devices that we deem important
 
 Below is our first such set, assembled after working in the home of an old cypherpunk friend who is building a village on the slopes of a volcano in the jungles of Bali.
 
-## Experiment in Bali, March 2024 (video)
+## Experiment in Bali, March 2024
 
 The slope of a volcano in the jungles of Bali. An autonomous village is planned to be built here over the next few years. In March 2024, a group of engineers working on the Robonomics project made their way here on motorbikes through Denpasar traffic to assist in creating the first autonomous home for the future Cybervalley. The facility is currently under construction, with the launch scheduled for 2025.
 
@@ -52,6 +52,8 @@ https://www.youtube.com/watch?v=ZKXl-HL-Edg&ab_channel=Robonomics.network
 After our work in Bali, we have developed an initial concept for the first version of a smart device kit to be installed in the cypherpunk autonomous home.
 
 Below is a detailed list of devices that we plan to assemble into a single kit (suitcase), customize to the fullest extent possible in a laboratory setting, and provide an Ikea-style user manual for self-setup in one's autonomous home. These kits will be available starting in the summer of 2024.
+
+<rb-image zoom src="geck-1/geck-1-scheme.jpg" alt="Robonomics Geck-1 scheme" />
 
 
 ## What is included in the first version of the G.E.C.K. kit:
@@ -140,5 +142,3 @@ Below is a detailed list of devices that we plan to assemble into a single kit (
 - Verify the connection of devices to the smart home server.
 - Create a Robonomics account, subscribe, and activate the integration with the local smart home server.
 - Level up!
-
-## Conclusion
