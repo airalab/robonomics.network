@@ -68,10 +68,11 @@
               </div>
             </div>
         </div>
-        <div class="form" :class="{'showForm': showForm}">
+      </div>
+
+      <div class="form" :class="{'showForm': showForm}">
           <ContactsForm />
         </div>
-      </div>
     </div>
 
   </section>
@@ -132,7 +133,7 @@ export default {
   }
   
   .contacts__container {
-    padding: calc(var(--space) * 2);
+    padding: calc(var(--space) * 2) calc(var(--space) * 2) 0;
   }
 
   .contacts__title {
@@ -143,12 +144,14 @@ export default {
 
   .contacts__wrapper {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 28px;
+    /* padding-bottom: 4rem; */
     /* padding-left: 7rem; */
-    padding-left: 11rem;
+    /* padding-left: 11rem; */
     display: flex;
     align-items: center;
-    overflow: hidden;
+    justify-content: center;
+    /* overflow: hidden; */
   }
 
   .contacts__items,
@@ -161,9 +164,11 @@ export default {
 
   .contacts__item {
     position: relative;
-    margin-right: 4rem;
   }
 
+  .contacts__item:not(:last-child) {
+    margin-right: 4rem;
+  }
 
    .contacts__item svg path {
     transition: fill 0.33s ease-in-out;
@@ -267,24 +272,46 @@ export default {
   }
 
 
-  .moveItems {
-    transform: translateX(-100px)
-  }
+  /* .moveItems {
+    transform: translateX(0px)
+  } */
 
-  .form {
-    width: 100%;
-    margin-top: 5px;
+  /* .form {
+    width: 0;
     opacity: 0;
     visibility: hidden;
     transform: translateX(200px);
-    transform-origin: 100% 50%;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out, visibility 1s ease-in-out;
-  }
+    transform-origin: 50% 50%;
+    transition-property: width, transform, opacity, visibility;
+    transition-duration: .8s;
+    transition-timing-function: linear;
+  } */
 
+  /* .form.showForm {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  } */
+
+  .form { 
+    height: 0;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0);
+    transition-property: margin, height, transform, opacity, visibility;
+    transition-duration: .8s;
+    transition-timing-function: linear;
+  }
   .form.showForm {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50px);
+    transform: translateY(100);
+    height: 100%;
+    margin-top: var(--space);
   }
 
   .decor-line svg path{
@@ -309,22 +336,23 @@ export default {
     .contacts__link svg {
       width: 100px;
     }
-    .contacts__wrapper {
+    /* .contacts__wrapper {
       position: relative;
       padding-left: 2rem;
+      padding: 0;
       min-height: 485px;
-      /* align-items: flex-end; */
-    }
+      align-items: flex-end;
+    } */
 
-    .contacts__items {
-      /* flex-direction: column; */
+    /* .contacts__items {
+      flex-direction: column;
       align-items: flex-start;
       margin-bottom: 2rem;
-    }
+    } */
 
-    .moveItems {
+    /* .moveItems {
       transform: translateX(-10px)
-    }
+    } */
 
     .youtube .decor-line {
       top: -24px;
@@ -336,12 +364,12 @@ export default {
       right: calc(100% - 91px)
     }
 
-    .form {
+    /* .form {
       position: absolute;
       width: 70%;
       right: 0;
       bottom: 0;
-    }
+    } */
   }
 
   @media screen and (max-width: 1216px) {
@@ -358,23 +386,23 @@ export default {
 
   @media screen and (max-width: 955px) {
 
-    .contacts__wrapper {
+    /* .contacts__wrapper {
       flex-direction: column;
       align-items: center;
       justify-content: unset;
       min-height: 200px;
       transition: min-height 1s ease 1s;
       padding-bottom: 0;
-    }
+    } */
 
-    .contacts__wrapper--withForm {
+    /* .contacts__wrapper--withForm {
       min-height: 380px;
       transition: min-height 1s ease;
-    }
+    } */
 
-    .contacts__items {
+    /* .contacts__items {
       align-items: center;
-    }
+    } */
 
     .email {
       padding: 0;
@@ -397,7 +425,7 @@ export default {
       margin-right: 0;
     }
     
-    .form {
+    /* .form {
       margin-top: 0;
       position: absolute;
       left: 0;
@@ -410,18 +438,26 @@ export default {
     .form.showForm {
       transform: translateX(0px) translateY(0px);
       transition-delay: 0.5s;
-    }
+    } */
   }
 
   @media screen and (max-width: 790px) {
 
-    .contacts__items {
+    /* .contacts__items {
       padding-left: 10px;
-    }
+    } */
 
     .contacts__link svg {
       /* width: 60px; */
       width: 100%;
+    }
+
+    .contacts__wrapper {
+      padding: 0;
+    }
+
+    .contacts__item:not(:last-child) {
+      margin-right: 2rem;
     }
   }
 
@@ -435,15 +471,15 @@ export default {
       width: 80%;
     }
     
-    .contacts__wrapper {
+    /* .contacts__wrapper {
       min-height: 100px;
       padding-top: 0;
       padding-left: 0;
-    }
+    } */
 
-    .contacts__wrapper--withForm {
+    /* .contacts__wrapper--withForm {
       min-height: 300px;
-    }
+    } */
 
     .contacts__items {
       align-items: center;

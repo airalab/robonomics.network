@@ -105,10 +105,10 @@ export default {
     font-family: var(--font-family-code);
   }
 
-  .google-sheets-form__actions {
+  /* .google-sheets-form__actions {
     padding-right: 7px;
     padding-bottom: 6px;
-  }
+  } */
 
 
   .button-success {
@@ -118,12 +118,12 @@ export default {
   .contacts__input {
     width: 100%;
     padding: 15px 20px;
-    margin-bottom: 2rem;
+    margin-bottom: 5px;
     font-weight: 300;
-    border: 1px solid var(--color-light);
+    border: 1px solid var(--color-dark);
     font-family: var(--font-family-code);
-    color: var(--color-light);
-    background-color: var(--color-dark);
+    color: var(--color-dark);
+    background-color: var(--color-light);
   }
 
   .contacts__input.sent {

@@ -72,7 +72,7 @@ body {
   --space: 2rem;
   --space-text: 2rem;
   --content-width: 1660px;
-	--text-width: calc(860px + (var(--space) * 2));
+	--text-width: calc(1000px + (var(--space) * 2));
 	--mid-width: 1180px;
 
   --screen-padding-top: 3rem;

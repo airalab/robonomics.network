@@ -5,11 +5,12 @@ published: true
 locale: 'en'
 cover_image: ./images/geck-1/cover.jpg
 description: Over the past two years, I have noticed an increase in publications and various phenomena surrounding topics such as network states and digital nomadism. Last year, I attended the "The Network States Amsterdam" conference with great interest. After several days of reflection in Amsterdam, I initiated a project called G.E.C.K.
-abstract: Over the past two years, I have noticed an increase in publications and various phenomena surrounding topics such as network states and digital nomadism. Last year, I attended the "The Network States Amsterdam" conference with great interest. After several days of reflection in Amsterdam, I initiated a project called G.E.C.K. 
+abstract: Special report from Robonomics network architect, Sergei Lonshakov [EnsRationis]
 tags: []
 ---
+import Card from '~/components/TextCard.vue'
 
-
+Over the past two years, I have noticed an increase in publications and various phenomena surrounding topics such as network states and digital nomadism. Last year, I attended the "The Network States Amsterdam" conference with great interest. After several days of reflection in Amsterdam, I initiated a project called G.E.C.K.
 
 Six months later, our team conducted field trials of home automation in the jungles of Bali. Today, I want to share the first report on the current state of our work on creating an autonomous home image that would be controlled by the owner of an NFT access token. Our concept is that such a smart home image will allow the crypto community to integrate physical-world objects into the web3 world to create various forms of network states.
 
@@ -142,3 +143,15 @@ Below is a detailed list of devices that we plan to assemble into a single kit (
 - Verify the connection of devices to the smart home server.
 - Create a Robonomics account, subscribe, and activate the integration with the local smart home server.
 - Level up!
+
+<Card :image="'/avatars/Sergei-Lonshakov-2.jpeg'" :back="'transparent'" imageSize="big">
+
+### Welcome to our journey!
+
+EnsRationis
+
+Robonomics network architect
+
+element: @ensrationis:robonomics.network
+
+</Card>

@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout class="postpage">
 
     <MetaInfo
       :pageTitle = "$page.post.title"
@@ -15,11 +15,11 @@
 
     <hr/>
 
-    <div class="post__header animate-inside" v-in-viewport.once>
+    <div class="post__header">
         <g-image  quality="75" :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
     </div>
 
-    <div class="layout__title blog_title">
+    <div class="layout__title">
       <h1 v-html="$page.post.title"/>
     </div>
 
@@ -104,10 +104,22 @@ query($id: ID!) {
 
 <style>
   .post {
-    padding: var(--space);
+    padding: 0 var(--space);
     text-align: left;
     font-weight: 400;
     overflow: hidden;
+    line-height: 1.75;
+  }
+
+  .postpage h1, .post h2, .post h3, .post h4, .post h5 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .post h2, .post h3, .post h4, .post h5 {
+    text-align: left !important;
+    hyphens: initial;
   }
 
   .post .big-table {
@@ -132,15 +144,6 @@ query($id: ID!) {
       margin-left: auto;
       margin-right: auto;
     }
-
-  /* .post strong, .post b {
-      background-color: #f8ffb5;
-    } */
-
-  .post h2, .post h3, .post h4, .post h5 {
-    font-weight: 500;
-    letter-spacing: 0.5px;
-  }
 
   .post code {
     vertical-align: middle;
