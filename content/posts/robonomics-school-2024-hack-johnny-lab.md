@@ -29,12 +29,12 @@ The player who first restores the seed phrase and withdraws all XRT tokens from 
 
 - To participate, players have to create a new account on the Robonomics parachain, and it must be created with the Edwards (ed25519) encryption type. Instructions are available on [our wiki](https://wiki.robonomics.network/docs/create-account-in-dapp/).
 - Next, players need to go to the [Discord bot](https://discordapp.com/channels/803947358492557312/1245395009964871772) on the Robonomics server and wait for a message about the start of a new session.
-- At the start of the session, players send the Robonomics account addresses they created to the Discord bot. Players will have 30 minutes to enter.
+- At the start of the session, players send the Robonomics account addresses they created to the Discord bot. Players will have 60 minutes to enter.
 
 *Laboratory exploration*
 
 - After the registration is complete, the mobile robot will go to explore the laboratory. After that, the robot will send a video recording and a list of the words in the seed phrase (not in the correct order).
-- Players are waiting for a message from the Discord bot about receiving results from the robot and go to the application via a link to start restoring the seed phrase.
+- Players are waiting for a message from the Discord bot about receiving results from the robot and go to the application [via a link](https://robonomics.academy/en/demoapps/johnnyb-lab/) to start restoring the seed phrase.
 
 *Restoring the Seed Phrase*
 
@@ -43,19 +43,27 @@ The player who first restores the seed phrase and withdraws all XRT tokens from 
 
 <Card alignContent="left">
 
-**Example.** If the set of words: `finding -> church -> relation`
+**Example.** If the set of words: 
 
-And the robot's route, reconstructed from the video: `Sign #2 -> Sign #1 -> Sign #3`
+`finding -> church -> relation -> dog -> sample`
+
+And the robot's route, reconstructed from the video: 
+
+`Sign #5 -> Sign #3 -> Sign #1 -> Sign #2 -> Sign #4`
 
 Then:
 
-`Sign #2 = finding = word #2`
+`finding — Sign #5 -> finding is 5th word`
 
-`Sign #1 = church = word #1`
+`church — Sign #3 -> church is 3rd word`
 
-`Sign #3 = relation = word #3`
+`relation — Sign #1 -> relation is 1st word`
 
-As a result, the correct seed phrase: `church finding relation`
+`dog — Sign #2 -> dog is 2nd word`
+
+`sample — Sign #4 -> sample is 4th word`
+
+As a result, the correct seed phrase: `relation dog church sample finding`
 
 </Card>
 
