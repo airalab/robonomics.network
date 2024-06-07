@@ -29,7 +29,7 @@ The player who first restores the seed phrase and withdraws all XRT tokens from 
 
 - To participate, players have to create a new account on the Robonomics parachain, and it must be created with the Edwards (ed25519) encryption type. Instructions are available on [our wiki](https://wiki.robonomics.network/docs/create-account-in-dapp/).
 - Next, players need to go to the [Discord bot](https://discordapp.com/channels/803947358492557312/1245395009964871772) on the Robonomics server and wait for a message about the start of a new session.
-- At the start of the session, players send the Robonomics account addresses they created to the Discord bot. Players will have 60 minutes to enter.
+- At the start of the session, players send the created account addresses in **Robonomics parachain format** to the Discord bot. Players will have 60 minutes to enter.
 
 *Laboratory exploration*
 
@@ -68,15 +68,21 @@ As a result, the correct seed phrase: `relation dog church sample finding`
 </Card>
 
 
-- After finding the seed phrase, players can restore access to the account with tokens using any application (for example, in the Polkadot.js extension, this can be done using the *Import account from pre-existing seed* function).
+- After finding the seed phrase, players can restore access to the account with tokens using any application.
+- For example, in the Polkadot.js extension, this can be done using the *Import account from pre-existing seed* function.
+- All restored account with XRTs have **an Schnorrkel (sr25519)** encryption type, that supported in most Polkadot / Kusama wallets.
+
 
 *Announcement of the winner*
 
 - Once a player has accessed the account, he or she has to withdraw XRT to become the winner of the session, until someone else does it.
+- For example, using the Polkadot.js extension, this can be done on [our Polkadot / Substrate portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/accounts) on the Account page. Just press Send button and withdrawn tokens to any place you want. You can use *Transfer the full account balance, reap the sender* check to make full balance withdrawal.
 - Upon completion of the session, after the tokens are withdrawn, the bot will notify the Discord channel by publishing the winner's address.
 
 ## Event Conditions
 
 The event will last 9 days, during which in the morning and evening (18 times in total) you will have the opportunity to be the first to reach **42 XRT** within each session.
+
+The registration for session is started at **10:00 and 20:00 EEST** every day and last 60 minutes.
 
 Follow our social networks so you do not miss the start of the event!
