@@ -92,7 +92,7 @@ export default {
           title: this.$t(`Product 1: Universal IR Remote Control`),
           text: this.$t('Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!'),
           img: 'ir-remote.png',
-          hacksterLink: "https://wiki.robonomics.network/docs/ir-controller/",
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-ir-esp32/specs",
           telegramLink: this.links.tg,
           release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
@@ -124,7 +124,7 @@ export default {
           title: this.$t('Product 2: Smart Energy Power Consumption Monitoring'),
           text: this.$t('Have you ever wondered what consumes the most electricity in your home? Our smart energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.'),
           img: 'energy-monitor.png',
-          hacksterLink: "https://wiki.robonomics.network/docs/energy-monitoring",
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-em-esp32p3/specs",
           telegramLink: this.links.tg,
           release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
@@ -157,10 +157,10 @@ export default {
         },
         {
           id: 2,
-          title: this.$t('Product 3, 4: 1,2 gang wi-fi Smart Switch'),
+          title: this.$t('Product 3 : 1 gang wi-fi Smart Switch'),
           text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
-          img: 'smart-switch.png',
-          hacksterLink: "https://wiki.robonomics.network/docs/smart-switches",
+          img: 'smart-switch-1.png',
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-sws-1g-e-esp32/specs",
           release: this.$t("Free worldwide shipping starts from February 2024"),
           features: [
             { 
@@ -192,10 +192,45 @@ export default {
         },
         {
           id: 3,
+          title: this.$t('Product 4: 2 gang wi-fi Smart Switch'),
+          text: this.$t('Why should you install any corporate app for switching on/off your smart light?  Our wi-fi smart switches doesn’t require any cloud connection. We tried out many other switches from various manufactureres all over the world and know some important details to make comfortable device. As other smart devices from Robonomics it is fully compatible with Home Assistant, uses open-source upgradable firmware Tasmota.'),
+          img: 'smart-switch-2.png',
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-sws-2g-e-esp32/specs",
+          release: this.$t("Free worldwide shipping starts from February 2024"),
+          features: [
+            { 
+              text: this.$t('type-c for OSS firmware upgrading'),
+              id: 0,
+              accent: true
+            },
+            {
+              text: this.$t('large touchable  buttons'),
+              id: 1 
+            },
+            {
+              text: this.$t('Doesn’t need any cloud service'),
+              id: 2
+            },
+            {
+              text: this.$t('Home Assistant Friendly'),
+              id: 3
+            },
+            {
+              text: this.$t('WI-FI'),
+              id: 4
+            },
+            {
+              text: this.$t('MQTT'),
+              id: 5
+            },
+          ] 
+        },
+        {
+          id: 4,
           title: this.$t('Product 5: Air Quality Sensor'),
           text: this.$t('Join with this air quality sensor to the decentralized opensource sensors map which operates with the sole intent of serving the free will of individuals. This sensor is ready to install, you will need wi-fi and a power socket, it can be installed both indoor and outdoor. Includes PM2.5/PM10 sensor and temperature/humidity sensor, can be expanded with several types of additional sensors (VOC, CO2, atmospheric pressure).'),
           img: 'quality-sensor.png',
-          hacksterLink: "https://wiki.robonomics.network/docs/air-quality-sensor",
+          hacksterLink: "https://www.hackster.io/robonomics-web3-cloud/products/robonomics-es-sds-esp8266-ac-dc",
           // telegramLink: this.links.tg,
           release: this.$t("Free worldwide shipping starts from January 2024"),
           features: [
