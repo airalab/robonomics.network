@@ -12,8 +12,7 @@ abstract: "Hey there! PaTara on the line. There was a recent event “Hack Johnn
 So, a quick and necessary rules recap: 12 words in a mixed order, a 5-minute video of a TurtleBot 4 wandering around a lab 
 and spoiling the mnemonic phrase word order, 5-20 participants willing to win and a free Sunday to think up a strategy.
 
-<rb-image zoom src="hacked-johnnys-lab/0.png" alt="Game Interface"/>
-
+<rb-image zoom src="hacked-johnnys-lab/0.png" alt="Game Interface" />
 
 I’m sort of familiar with programming and I have a decent laptop and almost no skill in image recognition. More than that, 
 I decided to play it fairly, which means no video downloading, no playback speed abuse, no playbar navigation. 
