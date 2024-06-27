@@ -26,7 +26,7 @@
 
       <img v-if="isGif() && type === 'markdown'" v-bind="$attrs" :src="picture" />
     </template>
-    <figcaption v-if="caption" class="rb-image__text">{{caption}}</figcaption>
+    <figcaption v-if="caption" class="rb-image__text" :class="{'caption-center': captionCenter}">{{caption}}</figcaption>
   </figure>
 </template>
 
@@ -53,6 +53,10 @@ export default {
       default: 'markdown'
     },
     zoom: {
+      type: Boolean,
+      default: false
+    },
+    captionCenter: {
       type: Boolean,
       default: false
     }
@@ -107,6 +111,12 @@ export default {
 
   .rb-image__text {
     align-self: flex-start;
+    font-style: italic;
+    margin-bottom: var(--space);
+  }
+
+  .caption-center {
+    align-self: unset;
   }
 
 </style>
