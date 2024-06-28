@@ -103,6 +103,7 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: calc(var(--space) * 0.5);
   }
 
   .rb-image__link[target=_blank]:after {
