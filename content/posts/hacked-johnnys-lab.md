@@ -6,7 +6,7 @@ locale: 'en'
 tags: ['Events', 'Online school', 'Web3', ]
 cover_image: ./images/hacked-johnnys-lab/cover.png
 description: 'There was a recent event “Hack Johnny’s Lab” by Robonomics and I believe I did hack it in a way! Apart from the very first try which I lost due to rules misunderstanding, I won every round I took part in and here is a short “howto” story.'
-abstract: "Hey there! PaTara on the line. There was a recent event “Hack Johnny’s Lab” by Robonomics and I believe I did hack it in a way! Apart from the very first try which I lost due to rules misunderstanding, I won every round I took part in and here is a short “howto” story. "
+abstract: "Hey there! PaTara on the line. There was a recent event “Hack Johnny’s Lab” by Robonomics and I believe I did hack it in a way! Apart from the very first try which I lost due to rules misunderstanding, I won every round I took part in and here is a short “howto” story. Pavel Tarasov [PaTara]"
 ---
 
 So, a quick and necessary rules recap: 12 words in a mixed order, a 5-minute video of a TurtleBot 4 wandering around a lab 
