@@ -161,7 +161,7 @@ export default {
     font-size: calc(var(--base-font-size)* 0.6);
     font-weight: 600;
     color: #000;
-    background-color: var(--color-light);
+    background-color: var(--color-yellow);
     text-transform: uppercase;
   }
 
