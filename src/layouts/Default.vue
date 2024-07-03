@@ -5,26 +5,24 @@
       <div class="loader-wrapper" v-show="!isLoaded">
         <Loader/>
       </div>
-    <!-- <div class="screen"> -->
-    <div v-show="isLoaded" class="screen banner">
+
+      <div v-show="isLoaded" class="screen banner">
       
         <span class="right-border"></span>
 
-        <Header  v-if="$store.state.showHeader"/>
+        <Header />
 
         <div class="screen-content">
-          
           <slot/>
           <Contacts :withGap="withGap" v-if="!$route.path.includes('contact')"/>
           <ClientOnly> <Footer/> </ClientOnly>
         </div>
 
         <div class="sidetext sidetext-left">
-          <g-link to="/timeline">Founded in 2015</g-link> &nbsp; &bull; &nbsp; 
-          <g-link :to="this.releaseLink">Latest release {{ this.releaseTime }}</g-link>
+          <a href="/timeline">Working since 2015</a>
         </div>
-
       </div>
+
     </div>
   
   </transition>
@@ -47,13 +45,9 @@
 
   .sidetext {
     font-family: var(--font-family-code);
-    font-size: calc(var(--base-font-size) * 0.55);
+    font-size: calc(var(--base-font-size) * 0.6);
     text-transform: uppercase;
   }
-
-  @media screen and (max-width: 350px) {
-      .sidetext { font-size: 65%; }
-    }
 
   .sidetext a:not(.button) {
     color: var(--text-color);
@@ -62,8 +56,8 @@
 
   .sidetext-left {
     position:  fixed;
-    left: calc(var(--screen-padding-left)/6);
-    bottom: calc(var(--screen-padding-bottom)/1.8);
+    left: calc(var(--screen-padding-left) * 0.3);
+    bottom: 0;
 
     transform: rotate(-90deg);
     transform-origin: 0 0;
@@ -128,17 +122,10 @@
   background-color: var(--color-gray-light);
 }
 
-/* .screen:not(.banner) {
- padding-top: calc(var(--screen-padding-top) + var(--space-bannertop));
-} */
-
 </style>
 
 
 <script>
-
-import axios from 'axios'
-import moment from 'moment'
 
 export default {
 
@@ -158,46 +145,18 @@ export default {
 
   data () {
     return {
-      release: null,
-      update: null,
-      releaseTime: null,
-      releaseLink: null,
       isLoaded: false,
     }
   },
 
   methods: {
-    BannerLink(p) {
-      let current = this.$router.currentRoute.path
-      // current = current.replace(/\/$/,'')
-      // return current != p
-      return current.includes(p)
-    },
     activateTracker() {
       this.$matomo && this.$matomo.disableCookies();
       this.$matomo && this.$matomo.trackPageView();
     }
   },
 
-  created() {
-    this.$store.commit('TOGGLE_SHOW_HEADER', true)
-  },
-
-
   async mounted () {
-      try {
-        const results = await axios.get(
-          'https://api.github.com/repos/airalab/robonomics/releases/latest'
-        )
-
-        this.release = results.data;
-        this.update = this.release['published_at'];
-        this.releaseTime = moment(this.update).from();
-        this.releaseLink = this.release['html_url'];
-
-      } catch (error) {
-        console.log(error)
-      };
 
       window.scrollTo(0,0);
 

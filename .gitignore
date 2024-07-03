@@ -8,3 +8,5 @@ dist
 backup
 .vscode
 .idea
+commit.txt
+gscript.js

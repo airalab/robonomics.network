@@ -36,8 +36,8 @@
 
 /* index page */
 .section__whitespace {
-	margin-top: calc(var(--space)*4);
-	margin-bottom: calc(var(--space)*4);
+	margin-top: calc(var(--space)*3);
+	margin-bottom: calc(var(--space)*3);
 }
 
   .section__blue, 

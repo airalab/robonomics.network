@@ -6,41 +6,40 @@
 
           <div>
             <ul class="animate-inside" v-in-viewport.once>
-              <li><g-link to="/white-paper">{{$t('White Paper 2022')}}</g-link></li>
-              <li><g-link to="/timeline">{{$t('Timeline')}}</g-link></li>
-              <li><g-link to="/xrt">{{$t('Tokenomics')}}</g-link></li>
-              <li><g-link to="/kusama-slot">{{$t('Parachain')}}</g-link></li>
+              <li><a href="/white-paper">{{$t('White Paper 2022')}}</a></li>
+              <li><a href="/timeline">{{$t('Timeline')}}</a></li>
+              <li><a href="/xrt">{{$t('Tokenomics')}}</a></li>
+              <li><a href="/kusama-slot">{{$t('Parachain')}}</a></li>
             </ul>
           </div>
 
           <div>
             <ul class="animate-inside" v-in-viewport.once>
-              <li><g-link to="/merch">{{$t('Robonomics merch')}}</g-link></li>
-              <li><g-link to="/papers">{{$t('Science papers')}}</g-link></li>
-              <li><g-link to="/books">{{$t('Books')}}</g-link></li>
-              <li><g-link to="/logos-and-assets">{{$t('Logo and assets')}}</g-link></li>
-              <li><g-link to="/home-assistant-themes">{{ $t('Home Assistant themes') }}</g-link></li>
-              <li><g-link to="/wallpapers">{{ $t('Wallpapers') }}</g-link></li>
-              <li><g-link to="/nft">NFT</g-link></li>
+              <li><a href="/merch">{{$t('Robonomics merch')}}</a></li>
+              <li><a href="/papers">{{$t('Science papers')}}</a></li>
+              <li><a href="/books">{{$t('Books')}}</a></li>
+              <li><a href="/logos-and-assets">{{$t('Logo and assets')}}</a></li>
+              <li><a href="/home-assistant-themes">{{ $t('Home Assistant themes') }}</a></li>
+              <li><a href="/wallpapers">{{ $t('Wallpapers') }}</a></li>
+              <li><a href="/nft">NFT</a></li>
             </ul>
           </div>
 
           <div>
             <ul class="animate-inside" v-in-viewport.once>
-              <li><g-link to="/devices">{{$t('Devices')}}</g-link></li>
-              <li><g-link to="/blog">{{$t('Blog')}}</g-link></li>
-              <li><g-link to="/cases">{{ $t('Cases') }}</g-link></li>
-              <!-- <li><g-link to="/ambassador-program">{{$t('Ambassador program')}}</g-link></li> -->
-              <li><g-link to="/contact">{{$t('Contacts')}}</g-link></li>
+              <li><a href="/devices">{{$t('Devices')}}</a></li>
+              <li><a href="/blog">{{$t('Blog')}}</a></li>
+              <li><a href="/cases">{{ $t('Cases') }}</a></li>
+              <li><a href="/contact">{{$t('Contacts')}}</a></li>
             </ul>
           </div>
 
           <div>
             <ul class="animate-inside" v-in-viewport.once>
-              <li><g-link to="https://wiki.robonomics.network">{{$t('Wiki')}}</g-link></li>
-              <li><g-link to="https://robonomics.academy">{{$t('Academy')}}</g-link></li>
-              <li><g-link to="https://github.com/airalab">{{$t('Github')}}</g-link></li>
-              <li><g-link to="https://dapp.robonomics.network/#/">{{$t('Dapp')}}</g-link></li>
+              <li><a href="https://wiki.robonomics.network">{{$t('Wiki')}}</a></li>
+              <li><a href="https://robonomics.academy">{{$t('Academy')}}</a></li>
+              <li><a href="https://github.com/airalab">{{$t('Github')}}</a></li>
+              <li><a href="https://dapp.robonomics.network/#/">{{$t('Dapp')}}</a></li>
             </ul>
           </div>
 
@@ -56,7 +55,7 @@
         </div>
 
         <div class="footer-text robonomics-info">
-          <g-link to="/privacy-policy">{{ $t('Privacy Policy') }}</g-link>
+          <a href="/privacy-policy">{{ $t('Privacy Policy') }}</a>
         </div>
       </section>
     </div>
