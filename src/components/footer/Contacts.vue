@@ -118,7 +118,7 @@ export default {
   .contacts {
     padding-top: 0 !important;
     background-color: transparent;
-    border-top: 1px solid var(--color-darkness);
+    border-top: 1rem solid var(--color-light);
     border-bottom: 1px solid rgba(30, 30, 30, 0.2);
   }
 

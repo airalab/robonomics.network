@@ -32,11 +32,8 @@
 
           <div class="header-side" dir="ltr">
             <languageSwitcher/>
-            <!-- <ShoppingCart/> -->
             <HeaderNav/>
-
           </div>
-
       
         </div>
       </header>
@@ -55,7 +52,6 @@ export default {
 
   components: {
     languageSwitcher: () => import('~/components/header/languageSwitcher.vue'),
-    ShoppingCart: () => import('~/components/header/ShoppingCart.vue'),
     HeaderNav: () => import('~/components/header/HeaderNav.vue'),
   },
 
@@ -124,7 +120,7 @@ export default {
   } 
 
   .header-side > *:not(:last-child) {
-    margin-right: var(--space);
+    margin-right: calc(var(--space) * 0.4);
   }
 
   @media screen and (max-width: 510px) {

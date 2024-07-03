@@ -9,8 +9,6 @@ import '~/assets/style/variables.css'
 import '~/assets/style/fonts.css'
 
 import Vue from 'vue'
-import Vuex from 'vuex'
-
 
 import Default from '~/layouts/Default.vue'
 
@@ -32,21 +30,7 @@ Vue.directive('in-viewport', inViewportDirective)
 // for translations
 import { t, setI18n, withI18n } from '../translations/i18n.js'
 
-export default function (Vue, { router, head, isClient, appOptions }) {
-  // head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
-
-  Vue.use(Vuex);
-
-  appOptions.store = new Vuex.Store({
-    state: {
-      showHeader: true,
-    },
-   mutations: {
-    TOGGLE_SHOW_HEADER(state, showHeader) {
-      state.showHeader = showHeader
-    }
-   },
-  });
+export default function (Vue, { isClient }) {
 
   // Set default layout as a global component
   Vue.component('layout', Default)

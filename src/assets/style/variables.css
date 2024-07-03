@@ -2,7 +2,9 @@ body {
 
 	--base-font-size: 1.2rem;
 	--font-family: "Roboto Flex", 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  	--font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	--font-flex-title: 'wght' 1000, 'wdth' 90, 'opsz' 38, 'XTRA' 500, 'XOPQ' 100;
+	--font-flex-subtitle: 'wght' 900, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
 
 	--color-dark: hsl(299, 0%, 0%);
 	--color-darkgray: hsl(0, 0%, 15%);
