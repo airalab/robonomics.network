@@ -62,7 +62,7 @@
                 <a class="nav__link" href="/xrt">{{$t('Tokenomics')}}</a>
                 <a class="nav__link" href="/papers">{{$t('Science')}}</a>
                 <a class="nav__link" href="/cases">{{ $t('Cases') }}</a>
-                <a class="nav__link" href="/kusama-slot">{{$t('Parachain')}}</a>
+                <!-- <a class="nav__link" href="/kusama-slot">{{$t('Parachain')}}</a> -->
                 <a class="nav__link" href="/timeline">{{$t('Timeline')}}</a>
             </li>
 

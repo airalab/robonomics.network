@@ -11,7 +11,7 @@
 
           <div id="homebanner-scheme">
             <a id="homebanner-pic" href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank">
-              <img alt="Robonomics as a decentralized word computer scheme, how it works" src="robonomics-scheme-x2.png" srcset="robonomics-scheme.png 420px" />
+              <g-image alt="Robonomics as a decentralized word computer scheme, how it works" src="~/assets/images/robonomics-scheme-x2.png" srcset="~/assets/images/robonomics-scheme.png 420px" quality="100" />
             </a>
             <div id="homebanner-scheme-subtitle">
               <h4>Robonomics<br/> is a part of the World Computer</h4>
@@ -19,7 +19,7 @@
             </div>
             <div id="homebanner-scheme-video">
               <h4>Watch the video<br/> “What is Robonomics”</h4>
-              <a href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank"><img alt="Video - What is Robonomics" src="robonomics-scheme-video.jpg" /></a>
+              <a href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank"><g-image alt="Video - What is Robonomics" src="~/assets/images/robonomics-scheme-video.jpg" quality="100" /></a>
               <IconBannerArrowRight aria-hidden="true" />
             </div>
             <a id="homebanner-link" href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank">What is Robonomics</a>

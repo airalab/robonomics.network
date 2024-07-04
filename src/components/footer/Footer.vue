@@ -9,7 +9,7 @@
               <li><a href="/white-paper">{{$t('White Paper 2022')}}</a></li>
               <li><a href="/timeline">{{$t('Timeline')}}</a></li>
               <li><a href="/xrt">{{$t('Tokenomics')}}</a></li>
-              <li><a href="/kusama-slot">{{$t('Parachain')}}</a></li>
+              <!-- <li><a href="/kusama-slot">{{$t('Parachain')}}</a></li> -->
             </ul>
           </div>
 
@@ -79,6 +79,7 @@ query {
     color: #fff;
     padding: calc(var(--space) * 0.5) 0;
     transition: background-color 0.33s ease;
+    border-top: 1rem solid var(--color-light);
   }
 
 

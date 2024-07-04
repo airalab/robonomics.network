@@ -14,7 +14,13 @@ module.exports = {
 
   titleTemplate: '%s',
 
+  /* cancel prefetch other pages */
   prefetch: { mask: '^$', },
+
+  images: {
+    defaultBlur: 15,
+    compress: false,
+  },
 
   plugins: [
     
