@@ -19,7 +19,7 @@
             </div>
             <div id="homebanner-scheme-video">
               <h4>Watch the video<br/> “What is Robonomics”</h4>
-              <a href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank"><g-image alt="Video - What is Robonomics" src="~/assets/images/robonomics-scheme-video.jpg" quality="100" /></a>
+              <a href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank"><g-image alt="Video - What is Robonomics" src="~/assets/images/robonomics-scheme-video.webp" quality="100" /></a>
               <IconBannerArrowRight aria-hidden="true" />
             </div>
             <a id="homebanner-link" href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank">What is Robonomics</a>
@@ -242,7 +242,7 @@ query {
   
   #homebanner {
     background-color: var(--color-blue-notheme);
-    background-image: url('../assets/images/robonomics-pattern.png');
+    background-image: url('../assets/images/robonomics-pattern.webp');
     background-size: 600px;
     padding: 0;
   }
