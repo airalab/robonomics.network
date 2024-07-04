@@ -358,7 +358,6 @@
     justify-content: center;
     margin-right: var(--space-text);
     color: var(--color-light);
-    font-family: var(--font-family-code);
     font-size: 4rem;
     text-align: center;
     background-color: var(--color-dark);

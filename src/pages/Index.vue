@@ -244,7 +244,7 @@ query {
   /* + BANNER */
   
   #homebanner {
-    background-color: var(--color-blue);
+    background-color: var(--color-blue-notheme);
     background-image: url('../assets/images/robonomics-pattern.png');
     background-size: 600px;
     padding: 0;
@@ -253,9 +253,9 @@ query {
   #homebanner-content {
     align-items: start;
     animation: bannershow 1s cubic-bezier(0.175, -0.885, 0.32, 1.575) 0.4s forwards;
-    background-color: var(--color-blue);
+    background-color: var(--color-blue-notheme);
     box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
-    color: var(--color-light);
+    color: var(--color-light-notheme);
     display: grid;
     gap: var(--space);
     grid-template-rows: 3fr auto;
@@ -283,7 +283,7 @@ query {
     align-self: center;
     opacity: 0;
     visibility: hidden;
-    animation: FadeIn 0.8s linear 1s forwards;
+    animation: FadeIn 0.8s linear 1.3s forwards;
   }
   
   #homebanner-scheme-subtitle {
@@ -325,8 +325,7 @@ query {
   }
 
   #homebanner-link {
-    font-family: var(--font-family);
-    font-variation-settings: var(--font-flex-subtitle);
+    font-variation-settings: var(--font-flex-medium);
     color: #FF0000;
     margin: 4rem auto 0;
     display: none;
@@ -428,7 +427,6 @@ query {
   .oldy h3 {
     margin-bottom: calc(var(--space) * 0.5);
     font-size: calc(var(--base-font-size) * 0.9);
-    font-family: var(--font-family);
     color: var(--color-blue);
     text-transform: capitalize;
     text-align: left;

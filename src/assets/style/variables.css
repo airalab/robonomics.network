@@ -3,8 +3,9 @@ body {
 	--base-font-size: 1.2rem;
 	--font-family: "Roboto Flex", 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   	--font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-	--font-flex-title: 'wght' 1000, 'wdth' 90, 'opsz' 38, 'XTRA' 500, 'XOPQ' 100;
-	--font-flex-subtitle: 'wght' 900, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
+	--font-flex-bold: 'wght' 1000, 'wdth' 90, 'opsz' 38, 'XTRA' 500, 'XOPQ' 100;
+	--font-flex-medium: 'wght' 900, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
+	--font-flex-lightmedium: 'wght' 800, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
 
 	--color-dark: hsl(299, 0%, 0%);
 	--color-darkgray: hsl(0, 0%, 15%);
@@ -67,6 +68,9 @@ body {
 	--color-gradient-vision-cybernetics: radial-gradient(circle at 80%, #a6fcf6, #1717b0 50%);  /* intro page */
 	--color-gradient-architecture-banner: radial-gradient(circle at 80%, #AB02AC, #F25206 70%);  /* architecture + wp page */
 
+	--color-blue-notheme: hsl(228.7,67.5%,49.4%);
+	--color-light-notheme: hsl(299, 0%, 100%);
+
 	/* animation */
 	--animation-bump: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 
@@ -77,7 +81,7 @@ body {
 	--text-width: calc(1000px + (var(--space) * 2));
 	--mid-width: 1180px;
 
-  --screen-padding-top: 3rem;
+  --screen-padding-top: 3.3rem;
   --screen-padding-right: 1rem;
   --screen-padding-bottom: 1rem;
   --screen-padding-left: 3rem;

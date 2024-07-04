@@ -78,7 +78,6 @@ query {
   footer {
     color: #fff;
     padding: calc(var(--space) * 0.5) 0;
-    font-family: var(--font-family-code);
     transition: background-color 0.33s ease;
   }
 

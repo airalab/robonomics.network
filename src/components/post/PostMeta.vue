@@ -36,7 +36,6 @@ export default {
     font-style: italic;
     opacity: 0.7;
     margin-bottom: 0;
-    font-family: var(--font-family-code);
 
     /* border-width: 1px 0;
     border-style: dashed;

@@ -83,7 +83,6 @@
   /* + BANNER */
 
   .banner-leftside {
-    font-family: var(--font-family-code);
     letter-spacing: 1px;
     line-height: 1.2;
     overflow: hidden;
@@ -154,7 +153,6 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: calc(var(--space) * 4);
-    font-family: var(--font-family-code);
     text-align: left;
   }
 
@@ -192,7 +190,6 @@
     align-items: center;
     color: var(--color-blue-vivid);
     display: flex;
-    font-family: var(--font-family-code);
     font-weight: 300;
     justify-content: space-between;
     letter-spacing: 1px;

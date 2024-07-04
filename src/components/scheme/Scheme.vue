@@ -49,7 +49,6 @@ export default {
 
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: var(--font-family-code);
   }
 
   .scheme > * {

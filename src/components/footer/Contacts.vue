@@ -138,7 +138,6 @@ export default {
 
   .contacts__title {
     text-shadow: 1.8px 2px 0 var(--color-link-contacts);
-    font-family: var(--font-family-code);
     text-align: left;
   }
 
@@ -205,7 +204,6 @@ export default {
 
   .contacts__text {
     font-weight: 300;
-    font-family: var(--font-family-code);
     color: var(--color-text);
     transition: color 0.33s ease-in-out;
   }
