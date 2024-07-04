@@ -73,8 +73,7 @@ export default {
       content: counter(counter);
       display: block;
       color: var(--color-light);
-      
-      font-family: var(--font-family-code);
+
       font-size: 3rem;
       
       text-align: center;

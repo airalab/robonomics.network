@@ -37,17 +37,14 @@ h4 { font-size: calc(var(--base-font-size) * 1.1) }
 h5 { font-size: calc(var(--base-font-size) * 0.8) }
 
 h1, h2, h3, h4, h5 {
-  transition: color .6s;
-  
-  font-family: var(--font-family);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin-top: calc(var(--space)*2);
   text-align: center;
-  font-weight: 500;
+  transition: color .6s;
 }
 
 h1 {
-  font-variation-settings: var(--font-flex-title);
+  font-variation-settings: var(--font-flex-bold);
   line-height: 1.5;
   margin-bottom: var(--space);
   padding-top: calc(var(--space) * 2);
@@ -55,9 +52,45 @@ h1 {
 }
 
 h2, h3, h4, h5 {
-  font-variation-settings: var(--font-flex-subtitle);
+  font-variation-settings: var(--font-flex-medium);
   line-height: 1.2;
   margin-bottom: var(--space-text);
+}
+
+.title-with-bg {
+  background-color: var(--color-dark);
+  display: inline-block;
+  left: calc(var(--screen-padding-left) * -1);
+  margin-top: 0;
+  max-width: 1040px;
+  overflow: hidden;
+  padding: 0.3rem 1rem 0.3rem var(--screen-padding-left);
+  position: relative;
+  transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  width: fit-content;
+  z-index: 990;
+}
+
+.title-with-bg h1 {
+  display: inline;
+  font-size: calc(var(--base-font-size) * 1.2);
+  font-variation-settings: var(--font-flex-medium);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.title-with-bg.blue {
+  background-color: var(--color-blue);
+}
+
+@media screen and (max-width: 650px) {
+  .title-with-bg  {
+    display: block;
+    inset: 0;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 h2:first-child, h3:first-child, h4:first-child, h5:first-child { margin-top: 0 }

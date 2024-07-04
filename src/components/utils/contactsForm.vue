@@ -102,7 +102,6 @@ export default {
 <style scoped>
   form {
     position: relative;
-    font-family: var(--font-family-code);
   }
 
   /* .google-sheets-form__actions {
@@ -121,7 +120,6 @@ export default {
     margin-bottom: 5px;
     font-weight: 300;
     border: 1px solid var(--color-dark);
-    font-family: var(--font-family-code);
     color: var(--color-dark);
     background-color: var(--color-light);
   }

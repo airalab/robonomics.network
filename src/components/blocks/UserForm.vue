@@ -21,7 +21,6 @@
     form {
         display: block;
         max-width: calc(var(--w-content) * 0.7) !important;
-        font-family: var(--font-family-code);
     }
 
     input[type="checkbox"] {

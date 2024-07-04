@@ -160,7 +160,7 @@ export default {
   .scheme {
     display: grid;
     grid-template-columns: 1fr 150px 1fr 150px 1fr;
-    gap: var(--space);
+    gap: 0;
     align-items: center;
     align-content: center;
     justify-items: stretch;
@@ -169,7 +169,6 @@ export default {
 
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: var(--font-family-code);
   }
 
   .scheme > * {
@@ -202,9 +201,8 @@ export default {
 
   .scheme-a {
     position: relative;
-    font-size: 70%;
-    font-weight: 500;
-    z-index: -1;
+    font-size: 0.6em;
+    font-variation-settings: var(--font-flex-lightmedium);
   }
 
   .scheme-a span {

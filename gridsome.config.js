@@ -14,6 +14,8 @@ module.exports = {
 
   titleTemplate: '%s',
 
+  prefetch: { mask: '^$', },
+
   plugins: [
     
     {

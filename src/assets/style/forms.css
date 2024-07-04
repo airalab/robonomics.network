@@ -5,7 +5,6 @@ input, select, button{
 	border: 1px solid var(--color-border);
 	background-color: var(--body-bg);
 	font-size: var(--base-font-size);
-	font-family: var(--font-family-code);
 	font-weight: 500;
 
 	border-radius: 0;

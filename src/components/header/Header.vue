@@ -116,7 +116,7 @@ export default {
   .header-side {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
   } 
 
   .header-side > *:not(:last-child) {

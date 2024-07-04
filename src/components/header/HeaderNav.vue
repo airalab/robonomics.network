@@ -145,7 +145,7 @@
         display: none;
         position: fixed;
         z-index: 1012;
-        top: calc(var(--screen-padding-top) - -2px);
+        top: var(--screen-padding-top);
         left: 0;
         right: 0;
         bottom: 0;
@@ -168,7 +168,6 @@
         margin: 0 calc(var(--space)*0.35) calc(var(--space)*0.35);
         letter-spacing: 0;
         font-weight: 400;
-        font-family: var(--font-family-code);
     }
 
     /* li:first-child {

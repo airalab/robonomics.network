@@ -253,7 +253,6 @@
 
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: var(--font-family-code);
   }
 
   .scheme > * {
@@ -363,7 +362,6 @@
 
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-family: var(--font-family-code);
 
       color: var(--color-blue-light);
   }

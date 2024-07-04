@@ -411,7 +411,6 @@ query {
   /* Section Top */
   #info {
     --girl-w: 300px;
-    font-family: var(--font-family-code);
     padding-bottom: calc(var(--girl-w) - 10px);
   }
 
@@ -490,7 +489,6 @@ query {
     max-width: 760px;
     margin: var(--space) auto;
     text-align: left;
-    font-family: var(--font-family-code);
   }
 
   .contribution span a {
@@ -740,10 +738,6 @@ query {
 
   .parachain h4 { font-size: var(--base-font-size); font-weight: bold; }
 
-  .parachain-intro {
-    font-family: var(--font-family-code);
-  }
-
   .parachain-intro h2 {
     margin-bottom: calc(var(--space)*2);
   }
@@ -919,7 +913,6 @@ query {
   /* Section 'Statistics' */
   #statistics {
     text-align: left;
-    font-family: var(--font-family-code);
     padding: 0;
     font-size: 90%;
   }

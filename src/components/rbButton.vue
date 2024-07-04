@@ -105,8 +105,8 @@ export default {
     color: var(--b-color-text);
     cursor: pointer;
     display: inline-flex;
-    font-family: var(--font-family-code);
     font-size: var(--base-font-size);
+    font-variation-settings: var(--font-flex-medium);
     font-weight: 500;
     gap: var(--b-color-padding);
     justify-content: center;

@@ -121,7 +121,6 @@ query ($locale: String!, $page: Int) {
     margin-bottom: calc(var(--space) * 0.7);
     text-transform: uppercase;
     font-weight: 500;
-    font-family: var(--font-family-code);
   }
 
   .blog__no-post .oldy li {

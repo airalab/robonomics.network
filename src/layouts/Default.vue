@@ -44,7 +44,6 @@
   }
 
   .sidetext {
-    font-family: var(--font-family-code);
     font-size: calc(var(--base-font-size) * 0.6);
     text-transform: uppercase;
   }
@@ -73,7 +72,7 @@
   background-color: var(--color-gray-light);
   border-style: solid;
   border-color: var(--header-bg);
-  border-width: 0 calc(var(--screen-padding-right) * 0.8) calc(var(--screen-padding-right) * 0.8) calc(var(--screen-padding-left) * 0.8);
+  border-width: 0 var(--screen-padding-right) var(--screen-padding-right) var(--screen-padding-left);
   padding-top: var(--screen-padding-top);
   padding-bottom: var(--screen-padding-bottom);
   height: 100vh;
@@ -90,7 +89,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: calc(var(--screen-padding-right) * 0.8);
+    height: var(--screen-padding-right);
     background-color: var(--header-bg);
     z-index: 900;
   }
@@ -101,7 +100,7 @@
     left: 0;
     bottom: 0;
     height: 100%;
-    width:  calc(var(--screen-padding-left) * 0.8);
+    width: var(--screen-padding-left);
     background-color: var(--header-bg);
     z-index: 900;
   }
@@ -111,7 +110,7 @@
     right: 0;
     bottom: 0;
     height: 100%;
-    width: calc(var(--screen-padding-right) * 0.8);
+    width: var(--screen-padding-right);
     background-color: var(--header-bg);
     z-index: 900;
   }

@@ -10,7 +10,7 @@
     <div class="page wp-page">
 
       <!-- main banner -->
-      <section class="wp__banner page-banner section section__solid">
+      <section class="wp__banner section section__solid">
           <h1>{{$t(`Robonomics whitepaper 2022 welcome guide`)}}</h1>
 
         <div class="small-colony">
@@ -416,7 +416,6 @@ export default {
 
   .wp-page .button {
     font-weight: 700;
-    font-family: var(--font-family-code);
     box-shadow: 6px 6px 0 var(--color-dark);
     text-transform: uppercase;
   }
@@ -718,12 +717,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family:  var(--font-family-code);
   }
 
   .wp-introduction__text {
     line-height: 1.7;
-    font-family:  var(--font-family-code);
    }
 
    .first-chapter__list {

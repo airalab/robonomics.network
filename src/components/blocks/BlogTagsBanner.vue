@@ -104,7 +104,6 @@ export default {
   }
 
   .blog-banner__tags-link {
-    font-family: var(--font-family-code);
     font-weight: 600;
     text-decoration: none;
     color: #fff;

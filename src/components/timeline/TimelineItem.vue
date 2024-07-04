@@ -77,7 +77,6 @@ export default {
   }
 
   .timeline__year {
-    font-family: var(--font-family-code);
     font-size: calc(var(--base-font-size) * 2);
   }
 

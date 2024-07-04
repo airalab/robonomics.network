@@ -124,7 +124,6 @@ export default  {
 .error {
   margin-top: var(--space);
   text-transform: uppercase;
-  font-family: var(--font-family-code);
   color: var(--color-red);
   letter-spacing: 1px;
 }
