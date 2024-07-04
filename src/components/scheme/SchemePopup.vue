@@ -25,14 +25,14 @@ export default {
 <style scoped>
   .popup__content h3 {
     padding-right: 50px;
-    font-size: calc(var(--base-font-size) * 0.7);
+    font-size: 0.8em;
     text-align: left;
     text-transform: none;
   }
 
   .popup__content p {
     font-family: var(--font-family);
-    font-size: calc(var(--base-font-size) * 0.7);
+    font-size: 0.8em;
     text-transform: none;
   }
 
