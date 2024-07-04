@@ -35,8 +35,8 @@
 
       <section class="section__whitespace">
         <div class="layout layout__text animate-inside" v-in-viewport.once>
-          <h2>{{$t('What is Robonomics network?')}}</h2>
-          <p class="text-center">{{$t('Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}</p>
+          <h2>What is Robonomics</h2>
+          <p class="text-center">Robonomics is already functioning Web3 Cloud, which allows managing IoT devices, performing techno-economic transactions between people and machines, and building serverless IoT apps. Create use cases from the world of IoT/Robotics with a focus on global accessibility, cybersecurity, and data privacy.</p>
         </div>
 
         <div class="layout layout__content ">
@@ -141,31 +141,28 @@
           <h2>{{$t('Learn with Robonomics')}}</h2>
         </div>
         <section class="index-academy layout layout__content grid-3 animate-inside" v-in-viewport.once>
-          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/introduction-course/overview">
-            <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/school-2024-privacy-insights/overview/">
             <div class="img-back">
-              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-1.png" />
+              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/frontpage-privacy-course.png" />
             </div>
-            <h3>{{$t('Introduction course')}}</h3>
-            <p>{{$t('Dive into the problems that arise around building modern Internet of Things applications and possible solutions with web3 technologies and Robonomics tools for IoT developers and users.')}}</p>
+            <h3>IoT Privacy study '2024</h3>
+            <p>Based on a dozen recent scientific publications and reports, this study looks on actual state of privacy question in smart home industry, nowadays risks and pitfalls. You will get some answers on how to protect yourself as well.</p>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/boston-dynamics-spot/overview">
-            <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
+          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/world-computer/overview/">
             <div class="img-back spot">
-              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-2.png" />
+              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/frontpage-world-computer.png" />
             </div>
-            <h3>{{$t('Boston dynamics spot software developing')}}</h3>
-            <p>{{$t('We are excited to introduce you the Spot SDK educational program! Our goal is to get you familiar with Spot’s SDK and allow you to test your skills remotely using a Boston Dynamics Spot robot in our lab.')}}</p>
+            <h3>How the World Computer can save us</h3>
+            <p>What is a world computer? How it works, can it replace corporate cloud infrastructure, who owns data? Please, don't skip these 4 lectures written on our Academy and widen your mind.</p>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/smart-home-course/overview/">
-            <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-logo.png" class="academy-logo" />
+          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/robonomics-smart-home-overview/#secure-iot-with-blockchain">
             <div class="img-back">
-              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/academy-3.png" />
+              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/frontpage-smarthome.png" />
             </div>
-            <h3>{{$t('Sovereign smart home with robonomics and home assistant')}}</h3>
-            <p>{{$t('In this course, you will go through all the steps required in order to build your own sovereign smart home, the main advantage of which is the safety / privacy of user data.')}}</p>
+            <h3>Build safe smart home</h3>
+            <p>Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.</p>
           </g-link>
         </section>
       </section>
@@ -363,15 +360,6 @@ query {
 
   .index-academy .oldy  {
     position: relative;
-  }
-
-  .academy-logo {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 80px;
-    height: 88px;
-    z-index: 10;
   }
   
   .index-getstarted a,
