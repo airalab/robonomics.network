@@ -119,7 +119,6 @@ export default {
     padding-top: 0 !important;
     background-color: transparent;
     border-top: 1rem solid var(--color-light);
-    border-bottom: 1px solid rgba(30, 30, 30, 0.2);
   }
 
   .contacts.withGap {
@@ -314,11 +313,6 @@ export default {
 
   .decor-line svg path{
     transition: stroke 0.33s ease-in-out;
-  }
-
-  .dark-theme .contacts {
-    border-color: var(--color-lightness);
-    border-bottom-color: rgba(255, 255, 255, 0.2);
   }
 
   .dark-theme .decor-line svg path {

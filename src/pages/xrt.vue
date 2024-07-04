@@ -19,8 +19,6 @@
                     <div class="grid-2 token__intro ">
                         <div class="token__intro-container">
                             <p> <span class="token__big-text">XRT</span> {{ $t('is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.') }} </p>
-
-                            <div class="token__multichain">{{ $t('Following the Multichain crash, we are awaiting the implementation of native bridges within Polkadot to connect Polkadot XRT with Ethereum.') }}</div>
                         </div>
     
                         <g-link to="https://crustipfs.info/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph" dir="ltr">
@@ -78,10 +76,6 @@
                         <div class="token-additional-info__ethereum"> 
                             <p>{{$t('Within the Ethereum network you can use decentralized application powered by the') }} <g-link class="bold-text" to="https://app.uniswap.org/">Uniswap</g-link> Protocol.
                             </p>
-                            <div class="token-additional-info__attention">
-                                <p><b>! {{ $t('Attention please') }}</b></p>
-                                <p>{{ $t('If you have been utilizing The Multichain service for bridge transactions, please refrain from using it at the moment, as it has been') }} <g-link class="link-light" to="https://twitter.com/MultichainOrg/status/1677180114227056641">{{ $t('announced')}}</g-link> {{ $t('on the official Twitter of The Multichain.') }}</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -280,8 +274,7 @@ query {
     }
 
     .token__intro {
-        align-content: end;
-        justify-items: end;
+        align-items: center;
         gap: calc(var(--space) * 3);
     }
 
