@@ -29,6 +29,7 @@
     text-transform: uppercase;
     background-color: transparent;
     border: 1px solid var(--color-dark);
+    height: 100%;
   }
 
   .select-wrapper {
