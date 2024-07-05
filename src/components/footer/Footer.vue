@@ -141,10 +141,6 @@ query {
     margin-top: var(--space)
   }
 
-  .dark-theme #footer-web3Badge svg path  {
-    fill: #fff;
-  }
-
   .robonomics-info {
     padding-top: var(--space);
     font-weight: 300;

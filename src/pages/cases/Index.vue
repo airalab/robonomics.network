@@ -597,11 +597,6 @@ export default {
     color: var(--color-dark);
     background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.33224 8.75071C6.93646 9.34483 6.06354 9.34483 5.66776 8.75072L1.04032 1.80442C0.597597 1.13984 1.07402 0.25 1.87256 0.25L11.1274 0.25C11.926 0.25 12.4024 1.13984 11.9597 1.80442L7.33224 8.75071Z' fill='black'/%3E%3C/svg%3E");
   }
-
-  .dark-theme .cases-filter__option select {
-    background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.33224 8.75071C6.93646 9.34483 6.06354 9.34483 5.66776 8.75072L1.04032 1.80442C0.597597 1.13984 1.07402 0.25 1.87256 0.25L11.1274 0.25C11.926 0.25 12.4024 1.13984 11.9597 1.80442L7.33224 8.75071Z' fill='white'/%3E%3C/svg%3E");
-  }
-
   .btn-show-more {
     position: relative;
     padding: 20px 40px;
@@ -636,11 +631,6 @@ export default {
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
   }
-
-  .dark-theme .btn-show-more::after {
-    content: url("data:image/svg+xml,%3Csvg width='23' height='24' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_521_35981)'%3E%3Cpath d='M11.1638 6.36886L10.1333 7.89662C9.77071 8.43422 9.9011 9.15411 10.4251 9.50756C10.9491 9.86101 11.6654 9.71223 12.0281 9.17463L14.6504 5.2869C15.013 4.7493 14.8826 4.02941 14.3586 3.67596L10.5691 1.11994C10.0451 0.766485 9.32899 0.914957 8.96617 1.45286C8.60335 1.99077 8.73394 2.71035 9.25796 3.0638L10.7737 4.08621L9.89212 4.26932C5.50908 5.17967 2.60405 9.48655 3.40191 13.8915C4.19977 18.2964 8.39778 21.128 12.7808 20.2176C17.1639 19.3073 20.0689 15.0004 19.271 10.5955C19.1571 9.96621 18.5561 9.56084 17.9299 9.69089C17.3038 9.82094 16.8879 10.4375 17.0019 11.0668C17.5718 14.2131 15.4965 17.2899 12.3657 17.9402C9.23497 18.5904 6.23597 16.5676 5.66607 13.4212C5.09617 10.2748 7.17148 7.19806 10.3022 6.54781L11.1638 6.36886Z' fill='%235f7af6'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_521_35981'%3E%3Crect width='17' height='16' fill='white' transform='translate(0.114563 14.5737) rotate(-56)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
-  }
-
   
 @keyframes spin {
   from {

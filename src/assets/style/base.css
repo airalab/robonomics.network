@@ -50,15 +50,8 @@ img {
 }
 
 /* kusama-slot page */
-.theme-support-light, .theme-support-dark {
-  display: none !important;
-}
 
 .light-theme .theme-support-light {
-  display: initial !important;
-}
-
-.dark-theme .theme-support-dark {
   display: initial !important;
 }
 

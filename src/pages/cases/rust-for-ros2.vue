@@ -166,10 +166,4 @@ export default {
     
   }
 
-  /* dark-theme */
-
-  .dark-theme .case-ros__images .invert {
-    filter: invert(1);
-  }
-
 </style>
