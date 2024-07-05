@@ -86,10 +86,6 @@ export default {
     animation-iteration-count: infinite;
   }
 
-  .dark-theme .header-logo a svg {
-    filter:  grayscale(1) invert(1);
-  }
-
   .header {
     --logo-padding: 0.6rem;
 

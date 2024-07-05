@@ -436,13 +436,4 @@ export default {
 
   }
 
-  /* dark theme */
-  .dark-theme a:not(.button):hover {
-    opacity: 0.5;
-  }
-
-  .dark-theme .devices__manifesto:hover {
-    opacity: 1 !important;
-  }
-
 </style>

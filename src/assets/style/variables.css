@@ -90,44 +90,6 @@ body {
 }
 
 
-/* DARK THEME */
-
-body.dark-theme {
-	--color-dark: hsl(299, 0%, 100%);
-	--color-darkgray:	hsl(0, 0%, 7%);
-	--color-light: hsl(299, 0%, 0%);
-	--color-gray:hsl(0, 0%, 90%);
-	--color-gray-mid: hsl(0, 0%, 56%);
-	--color-gray-dark: hsl(0, 0%, 69%);
-	--color-gray-light: hsl(0, 0%, 13%);
-
-	/* --color-yellow: hsl(54, 74%, 43%); */
-	--color-blue-mid: hsl(198, 98%, 47%);
-	--color-blue: hsl(229, 89%, 67%);
-	--color-blue-lighter:hsl(199, 46%, 31%);
-	--color-blue-xrt: 	hsl(220, 96%, 22%);
-	--color-purple: hsl(332, 73%, 10%);
-	--color-bright-pink: hsl(323, 87%, 81%);
-
-	--rb-color-light-gray: hsla(0, 0%, 40%, 0.575);
-	--rb-color-greenish: hsl(72, 100%, 19%);
-
-	--color-gradient-purpleblue: linear-gradient(#2e576a, var(--color-purple));
-	--color-gradient-marketplace:  linear-gradient(	#696a6aa6, #03a7ed11);
-	--color-gradient-mars: linear-gradient(#1b2c7a 30%, #000000 85%, #7e631b 100%);
-	--color-gradient-vision-cybernetics: radial-gradient(circle at 80%, #000000, #24246e 50%);
-	--color-gradient-architecture-banner: radial-gradient(circle at 80%, #470047, #cf602a 70%);
-
-
-	--color-border: var(--color-gray);
-	--color-link: hsl(229, 96%, 79%);
-	--body-bg: var(--color-darkness);
-	--header-bg: hsla(0, 0%, 19%, 1);
-}
-
-/* END OF DARK THEME */
-
-
 @media screen and (max-width: 450px) {
 	body {
 		--space: 1.2rem;

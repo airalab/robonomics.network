@@ -1,7 +1,7 @@
 <template>
   <li class="e-books__item">
 
-    <g-link class="e-books__img" :to="book.options[0].link">
+    <g-link class="e-books__img" :to="gateway + book.options[0].link">
       <g-image :src="require('!!assets-loader!~/assets/images/'+book.img)" quality="75"/>
     </g-link>
 
@@ -14,7 +14,7 @@
         <g-link
           v-for="link in book.options"
           :key="link.id"
-          :to="link.link"
+          :to="gateway + link.link"
         >
         {{ link.text }}
         </g-link>
@@ -32,6 +32,12 @@ export default {
     book: {
       type: Object,
       required: true
+    },
+
+    gateway: {
+      type: String,
+      required: true,
+      default: ''
     }
   }
 

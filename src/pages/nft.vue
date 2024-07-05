@@ -965,20 +965,6 @@
       top: 20px;
     }
   }
-
-  /* dark theme */
-  body.dark-theme .nft__rmrk .nft--light {
-    display: none;
-  }
-
-  body.dark-theme .nft__rmrk .nft--dark {
-    display: block;
-  }
-
-  body.dark-theme .nft-polkapet .nft--mobile svg path,
-  body.dark-theme .nft-polkapet .nft--desktop svg path {
-    fill: #fff;
-  }
   
 
 </style>

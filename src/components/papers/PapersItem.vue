@@ -39,11 +39,6 @@ export default {
     color: #000;
   }
 
-  /* dark-theme */
-  .dark-theme .papers__item {
-    box-shadow: 0.4rem 0.4rem 0 #223695;
-  }
-
   .papers__item-title {
     margin-bottom: calc(var(--space) * 0.5);
     font-weight: 500;
