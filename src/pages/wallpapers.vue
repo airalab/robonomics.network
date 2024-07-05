@@ -6,10 +6,12 @@
       :pageImage = "'/website_cover_wallpapers.png'"
     />
 
+    <div class="timeline__main-title title-with-bg">
+      <h1><span>{{ $t('Robonomics wallpapers') }}</span></h1>
+    </div>
+
     <section class="wallpapers">
       <div class="layout layout__content text-center container">
-        <h1>{{$t('Robonomics wallpapers')}}</h1>
-
         <!-- regular wallpapers -->
         <section class="wallpapers-regular">
           <h2>{{ $t('Regular wallpapers') }}</h2>

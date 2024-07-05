@@ -14,19 +14,19 @@
               <g-image alt="Robonomics as a decentralized word computer scheme, how it works" src="~/assets/images/robonomics-scheme-x2.png" srcset="~/assets/images/robonomics-scheme.png 420px" quality="100" />
             </a>
             <div id="homebanner-scheme-subtitle">
-              <h4>Robonomics<br/> is a part of the World Computer</h4>
+              <h4>Robonomics<br/> {{ $t('is a part of the World Computer') }}</h4>
               <IconBannerArrowLeft aria-hidden="true" />
             </div>
             <div id="homebanner-scheme-video">
-              <h4>Watch the video<br/> “What is Robonomics”</h4>
+              <h4>{{ $t('Watch the video') }}<br/> {{ $t('“What is Robonomics”') }}</h4>
               <a href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank"><g-image alt="Video - What is Robonomics" src="~/assets/images/robonomics-scheme-video.webp" quality="100" /></a>
               <IconBannerArrowRight aria-hidden="true" />
             </div>
-            <a id="homebanner-link" href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank">What is Robonomics</a>
+            <a id="homebanner-link" href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank">{{ $t('What is Robonomics') }}</a>
           </div>
 
           <div class="layout layout__content">
-            <h1>Web3 cloud<br/> for Robotics and IoT Devices</h1>
+            <h1>{{$t('Web3 cloud')}}<br/> {{ $t('for Robotics and IoT Devices') }}</h1>
           </div>
           
         </div>
@@ -35,8 +35,8 @@
 
       <section class="section__whitespace">
         <div class="layout layout__text animate-inside" v-in-viewport.once>
-          <h2>What is Robonomics</h2>
-          <p class="text-center">Robonomics is already functioning Web3 Cloud, which allows managing IoT devices, performing techno-economic transactions between people and machines, and building serverless IoT apps. Create use cases from the world of IoT/Robotics with a focus on global accessibility, cybersecurity, and data privacy.</p>
+          <h2>{{ $t('What is Robonomics') }}</h2>
+          <p class="text-center">{{ $t('Robonomics is already functioning Web3 Cloud, which allows managing IoT devices, performing techno-economic transactions between people and machines, and building serverless IoT apps. Create use cases from the world of IoT/Robotics with a focus on global accessibility, cybersecurity, and data privacy.') }}</p>
         </div>
 
         <div class="layout layout__content ">
@@ -145,24 +145,24 @@
             <div class="img-back">
               <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/frontpage-privacy-course.png" />
             </div>
-            <h3>IoT Privacy study '2024</h3>
-            <p>Based on a dozen recent scientific publications and reports, this study looks on actual state of privacy question in smart home industry, nowadays risks and pitfalls. You will get some answers on how to protect yourself as well.</p>
+            <h3>{{ $t("IoT Privacy study '2024") }}</h3>
+            <p>{{$t('Based on a dozen recent scientific publications and reports, this study looks on actual state of privacy question in smart home industry, nowadays risks and pitfalls. You will get some answers on how to protect yourself as well.')}}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/world-computer/overview/">
             <div class="img-back spot">
               <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/frontpage-world-computer.png" />
             </div>
-            <h3>How the World Computer can save us</h3>
-            <p>What is a world computer? How it works, can it replace corporate cloud infrastructure, who owns data? Please, don't skip these 4 lectures written on our Academy and widen your mind.</p>
+            <h3>{{ $t('How the World Computer can save us') }}</h3>
+            <p>{{ $t("What is a world computer? How it works, can it replace corporate cloud infrastructure, who owns data? Please, don't skip these 4 lectures written on our Academy and widen your mind.") }}</p>
           </g-link>
 
           <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/robonomics-smart-home-overview/#secure-iot-with-blockchain">
             <div class="img-back">
               <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/frontpage-smarthome.png" />
             </div>
-            <h3>Build safe smart home</h3>
-            <p>Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.</p>
+            <h3>{{ $t('Build safe smart home') }}</h3>
+            <p>{{ $t('Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.') }}</p>
           </g-link>
         </section>
       </section>

@@ -343,10 +343,6 @@
     animation: FadeOut 2s infinite linear;
   }
 
-  .dark-theme .contact__form-img--lines span {
-    background-color: #5F7AF6;
-  }
-
   .contact__form-img--lines .line-1 {
     width: 5px;
   }
@@ -408,14 +404,6 @@
 
   .isLoading {
     font-size: 1.2rem;
-  }
-
-  .dark-theme .show-dark {
-    display: block;
-  }
-
-  .dark-theme .hide-dark {
-    display: none;
   }
 
   @media screen and (max-width: 1660px) {

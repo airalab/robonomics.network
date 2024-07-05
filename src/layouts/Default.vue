@@ -14,7 +14,7 @@
 
         <div class="screen-content">
           <slot/>
-          <Contacts :withGap="withGap" v-if="!$route.path.includes('contact')"/>
+          <Contacts :withGap="withGap" />
           <ClientOnly> <Footer/> </ClientOnly>
         </div>
 

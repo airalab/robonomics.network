@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout :withGap="false">
 
     <MetaInfo
       pageTitle = "Whitepaper 2022"
@@ -680,10 +680,6 @@ export default {
     max-height: 200px;
     width: 100%;
     height: 100%;
-  }
-
-  .dark-theme .logos {
-    filter: grayscale(1) invert(100%);
   }
 
   .polkadot {

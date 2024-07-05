@@ -37,10 +37,6 @@ export default {
     border: 1px solid var(--color-dark);
   }
 
-  .dark-theme .shopping-cart svg {
-    filter: invert(100%);
-  }
-
   .shopping-cart__item {
     position: absolute;
     top: -5px;

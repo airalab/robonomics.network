@@ -315,15 +315,6 @@ export default {
     transition: stroke 0.33s ease-in-out;
   }
 
-  .dark-theme .decor-line svg path {
-    stroke: #fff;
-  }
-
-
-  .dark-theme  .contacts__link svg path {
-    fill: #5F7AF6;
-  }
-
   @media screen and (max-width: 1560px) {
     .contacts__link svg {
       width: 100px;

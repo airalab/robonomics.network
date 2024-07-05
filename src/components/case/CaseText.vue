@@ -84,10 +84,6 @@ export default {
     margin-bottom: calc(var(--space) * 0.7);
   }
 
-  .dark-theme .case-page__text .invert {
-    filter: invert(1);
-  }
-
   .case-page__text .bg {
     padding: var(--space);
     padding-right: 0;

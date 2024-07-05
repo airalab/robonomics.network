@@ -78,10 +78,20 @@ h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   text-align: left;
+  color: var(--color-light);
 }
 
 .title-with-bg.blue {
   background-color: var(--color-blue);
+}
+
+.title-with-bg h1 a {
+  color: var(--color-light);
+}
+
+.title-with-bg h1 a:hover {
+  opacity: 0.7;
+  color: var(--color-light);
 }
 
 @media screen and (max-width: 650px) {
@@ -163,10 +173,6 @@ a:not(.button):hover, .link:not(.button):hover {
   color: var(--color-link-hover);
 }
 
-.dark-theme a:not(.rb-button):hover, .link:not(.button):hover {
-  color: #aeb1d8
-}
-
 a:not(.button).dashed, .link:not(.button).dashed {
   text-decoration: none;
   border-bottom: 1px dashed currentColor
@@ -179,10 +185,6 @@ hr {
   outline: 0;
   height: 1rem;
   background-color: var(--color-light);
-}
-
-.dark-theme hr {
-  background-color: var(--body-bg);
 }
 
 hr.no-margins {
