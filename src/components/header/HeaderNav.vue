@@ -81,7 +81,6 @@
                         <a href="/contact">{{$t('Contacts')}}</a>
 
                     </div>
-                    <ThemeSwitcher/>
                 </div>
                 <div class="nav__item-footer">
                     <a class="nav__item-footer-link nav__item-footer-link--wiki" href="https://wiki.robonomics.network" target="_blank">
@@ -196,11 +195,6 @@
         background-color: var(--color-dark);  
     }
 
-
-    .dark-theme .nav-content {
-        background-color: hsla(0, 0%, 23%, 1);
-    }
-
     .open  .nav-content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -310,10 +304,6 @@
         background-repeat: no-repeat;
     }
 
-    .dark-theme .nav__item-footer {
-        background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0.999999C15 0.447715 14.5523 -5.74472e-07 14 -8.27353e-07L5 -2.65626e-08C4.44772 -3.63737e-07 4 0.447715 4 1C4 1.55228 4.44772 2 5 2L13 2L13 10C13 10.5523 13.4477 11 14 11C14.5523 11 15 10.5523 15 10L15 0.999999ZM1.70711 14.7071L14.7071 1.70711L13.2929 0.292893L0.292893 13.2929L1.70711 14.7071Z' fill='white'/%3E%3C/svg%3E%0A");
-    }
-
     .nav__item-footer-link {
         /* padding-left: calc(var(--space) * 0.5); */
         display: flex;
@@ -374,10 +364,6 @@
 
 <script>
     export default {
-
-        components: { 
-            ThemeSwitcher: () => import("~/components/header/ThemeSwitcher.vue")
-        },
 
         data() {
             return {

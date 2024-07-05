@@ -64,10 +64,6 @@
 		background-color: var(--color-blue);
   }
 
-	.dark-theme .section__blue {
-		background-color: #223695;
-	}
-
   .section__blue-lightest {
 	  background-color: var(--color-blue-lightest);
   }
@@ -86,10 +82,6 @@
 
   .section__lightblue {
 		background: var(--color-blue-mid);
-  }
-
-	.dark-theme  .section__lightblue {
-		background: #1c4659;
   }
 
   .section__dotted {

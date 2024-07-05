@@ -18,10 +18,6 @@
   --oldy-box-color: #000
 }
 
-.dark-theme .oldy.dark  {
-  --oldy-box-color: #fff
-}
-
 .oldy__link {
   cursor: pointer;
 }
@@ -137,10 +133,6 @@
   margin-bottom: 0.2rem;
 }
 
-.dark-theme a:not(.rb-button):hover {
-  color: var(--color-blue);
-}
-
 
 .bold {
   font-weight: 600;
@@ -246,10 +238,6 @@
   background-color: #fff;
   border: 1px solid #000;
   width: 100%;
-}
-
-.dark-theme .contacts__input {
-  border: 1px solid #000 !important;
 }
 
 .contacts__textarea {

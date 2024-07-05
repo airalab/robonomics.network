@@ -10,7 +10,7 @@
 
     <!-- banner -->
     <section class="devices banner-with-pattern">
-      <div class="devices__main-title title-with-bg">
+      <div class="title-with-bg">
         <h1><span>{{ $t('Smart Devices') }}</span></h1>
       </div>
 
@@ -535,11 +535,6 @@ export default {
       position: static;
       padding-top: var(--space);
     } */
-  }
-
-  /* dark theme */
-  .dark-theme a:not(.button):hover {
-    opacity: 0.5;
   }
 
 </style>

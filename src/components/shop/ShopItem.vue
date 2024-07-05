@@ -56,10 +56,6 @@ export default {
     max-width: 160px;
     margin: 0 auto;
   }
-
-  .dark-theme .shop__image {
-    filter: invert(100%);
-  }
   
 
 </style>

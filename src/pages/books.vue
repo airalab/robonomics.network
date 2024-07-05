@@ -21,7 +21,7 @@
       <h2>{{ $t('Download books about Robonomics') }}</h2>
 
       <ul class="list-simple e-books__list grid-3 animate-inside in-viewport" v-in-viewport.once>
-        <BookItem v-for="book in books" :key="book.title" :book="book"/>
+        <BookItem v-for="book in books" :key="book.title" :book="book" :gateway="bookGateway"/>
       </ul>
 
     </section>
@@ -57,6 +57,7 @@
 
     data() {
       return {
+        bookGateway: 'https://gw.crust-gateway.com/ipfs/',
         books: [
         {
             title: this.$t("Robonomics R&D"),
@@ -64,12 +65,12 @@
             year:' 2023 & 2024',
             options: [
               {
-                link: 'https://crustipfs.info/ipfs/QmaCXn8RdSdh4oxX3R5nzNSfoUPiLMLM4JmLSk1WnYi5ah',
+                link: 'QmaCXn8RdSdh4oxX3R5nzNSfoUPiLMLM4JmLSk1WnYi5ah',
                 text: 'EN',
                 id: 0
               },
               {
-                link: 'https://crustipfs.info/ipfs/Qmd8sSoGokc1UeAbbAfmEPJTubWEpWGetYGyj9MCpwmE42',
+                link: 'Qmd8sSoGokc1UeAbbAfmEPJTubWEpWGetYGyj9MCpwmE42',
                 text: 'RU',
                 id: 1
               }
@@ -81,12 +82,12 @@
             year: '2022',
             options: [
               {
-                link: 'https://crustipfs.info/ipfs/QmZK64M7M31mkMsDd8yQa1dfX4a4KeDCyaUMsTuzsKq6LC',
+                link: 'QmZK64M7M31mkMsDd8yQa1dfX4a4KeDCyaUMsTuzsKq6LC',
                 text: 'EN',
                 id: 0
               },
               {
-                link: 'https://crustipfs.info/ipfs/QmNsiaWWFw4ZoqAnW5vuTXNz2jwYBu7ShyXSYqU1uNDjrF',
+                link: 'QmNsiaWWFw4ZoqAnW5vuTXNz2jwYBu7ShyXSYqU1uNDjrF',
                 text: 'RU',
                 id: 1
               }
@@ -98,17 +99,17 @@
             year: "2021",
             options: [
               {
-                link: 'https://crustipfs.info/ipfs/QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi',
+                link: 'QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi',
                 text: 'EN',
                 id: 0
               },
               {
-                link: 'https://crustipfs.info/ipfs/QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V',
+                link: 'QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V',
                 text: 'RU',
                 id: 1
               },
               {
-                link: 'https://crustipfs.info/ipfs/QmU8CFPD9bQheKJhKdyAZ11GNhuqHKPok5Tu8bUrNjCZtg',
+                link: 'QmU8CFPD9bQheKJhKdyAZ11GNhuqHKPok5Tu8bUrNjCZtg',
                 text: 'ES',
                 id: 2
               }
@@ -120,17 +121,17 @@
             year: "2018",
             options: [
               {
-                link: 'https://crustipfs.info/ipfs/QmQ3k8p9SQS5wjovPcjUtQceRZZ6nv3Eqirt1vVQ2wP2JL',
+                link: 'QmQ3k8p9SQS5wjovPcjUtQceRZZ6nv3Eqirt1vVQ2wP2JL',
                 text: 'EN',
                 id: 0
               },
               {
-                link: 'https://crustipfs.info/ipfs/QmUqNnzdZnic61UYTuKT9EzBNzMW6jc5uHSFk4Xzd3iM93',
+                link: 'QmUqNnzdZnic61UYTuKT9EzBNzMW6jc5uHSFk4Xzd3iM93',
                 text: 'RU',
                 id: 1
               },
               {
-                link: 'https://crustipfs.info/ipfs/QmXhWarATZNTy3CweoVAdy4aTMrGMCsipo3gPSWVsUyQW6',
+                link: 'QmXhWarATZNTy3CweoVAdy4aTMrGMCsipo3gPSWVsUyQW6',
                 text: 'IT',
                 id: 2
               }
@@ -142,17 +143,17 @@
             year: "2017",
             options: [
               {
-                link: 'https://crustipfs.info/ipfs/QmWue3YfuZvuRvgcNb4vZuheX9TaZ9E1b8aCdxSoaGTbVN',
+                link: 'QmWue3YfuZvuRvgcNb4vZuheX9TaZ9E1b8aCdxSoaGTbVN',
                 text: 'EN',
                 id: 0
               },
               {
-                link: 'https://crustipfs.info/ipfs/QmUjBPgDzmHFHiDkQAG93szJQguiZiowm9sedFMhPfQP4y',
+                link: 'QmUjBPgDzmHFHiDkQAG93szJQguiZiowm9sedFMhPfQP4y',
                 text: 'RU',
                 id: 1
               },
               {
-                link: 'https://crustipfs.info/ipfs/QmTp3srjo3r1L2TKpAEGFafjdzSCTKJT9kkBEkCQDEF6tz',
+                link: 'QmTp3srjo3r1L2TKpAEGFafjdzSCTKJT9kkBEkCQDEF6tz',
                 text: 'DE',
                 id: 2
               }
