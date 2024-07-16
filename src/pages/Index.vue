@@ -269,18 +269,21 @@ query {
   }
 
   #homebanner-pic {
-    display: block;
-    width: 640px;
-    max-width: 85vw;
+    display: inline-block;
+    width: 100%;
     margin: 0 auto;
   }
 
   #homebanner-scheme {
-    position: relative;
     align-self: center;
-    opacity: 0;
-    visibility: hidden;
     animation: FadeIn 0.8s linear 1.3s forwards;
+    margin: 0 auto;
+    max-width: 85vw;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    visibility: hidden;
+    width: 640px;
   }
   
   #homebanner-scheme-subtitle {
