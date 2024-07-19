@@ -5,10 +5,10 @@ published: true
 locale: 'en'
 tags: ['Events', 'Polkadot', 'Web3', ]
 cover_image: ./images/beer-bar-decoded2024/cover.jpg 
-description: 'Last week, the Robonomics team went to Polkadot Decoded in Brussels. They did an experiment to measure different readings from sensors around the Free Beer Stand from ChaosDAO. The team wanted to see how many people attended and how interested they were in the bar. Read this article to find out what they discovered.'
+description: 'Last week, the Robonomics team visited the Polkadot Decoded event in Brussels. They did an experiment to measure different readings from sensors around the Free Beer Stand from ChaosDAO. The team wanted to see how many people attended and how interested they were in the bar. Read this article to find out what they discovered.'
 ---
 
-Last week, the Robonomics team went to Polkadot Decoded in Brussels. They did an experiment to measure different readings from sensors around 
+Last week, the Robonomics team visited the Polkadot Decoded event in Brussels. They did an experiment to measure different readings from sensors around 
 the [**Free Beer Stand from ChaosDAO**](https://polkadot.polkassembly.io/referenda/821). The team wanted to see how many people attended and 
 how interested they were in the bar. Read this article to find out what they discovered.
 
@@ -22,7 +22,7 @@ For the experiment, a set of sensors was chosen:
 - air quality sensor
 - beer meme-counter in the form of a light bulb and two buttons
 
-A Raspberry Pi 4 with Home Assistant installed and Robonomics integration was used as the server to save all the data in the Web3 cloud. 
+A Raspberry Pi 4 with Home Assistant installed and Robonomics integration were used to save all the data in the Web3 cloud. 
 At the end of the article, you will see a description of how to obtain this data.
 
 ## Installation
@@ -44,7 +44,7 @@ A motion sensor was installed in the PlayStation area so that it would only trig
 
 <rb-image zoom src="beer-bar-decoded2024/sofas.jpg" alt="PlayStation zone" />
 
-A motion sensor was also placed at the main bar counter and directed to trigger only when a person was directly at the counter. 
+A motion sensor was also placed at the main bar counter and oriented to trigger only when a person was directly at the counter. 
 It can be seen on the left on the column. A temperature and humidity sensor was also installed nearby:
 
 <rb-image zoom src="beer-bar-decoded2024/column.jpg" alt="motion sensor installation" />
@@ -58,7 +58,7 @@ A beer meme-counter was also installed, which would light up green for 5 seconds
 ## Data Obtained
 
 **Disclaimer: In this section, all data will be shown in the Home Assistant interface for convenient visualization.** 
-This same data can be obtained from the Robonomics parachain and compared. How to do this will be shown later.
+This same data can be obtained from the Robonomics parachain and compared. Instructions are to be provided later.
 
 Study period: For the study period, we will take the time from 16:00 on July 11 to 20:00 on July 12, which corresponds to half of the first day of 
 Decoded and the entire second day.
@@ -105,7 +105,7 @@ Second day:
 
 <rb-image zoom src="beer-bar-decoded2024/motionplay12.png" alt="motion sensor at the play zone 12th" />
 
-From the sensors, we can see that almost all the time the bar was open, someone was standing at the counter. 
+From the sensors, we can see that almost all the time the bar was opened, someone was standing at the counter. 
 Also, almost half the time, someone was playing on the PlayStation.
 
 ### Door sensors
@@ -238,5 +238,5 @@ As a result, you will get a "telemetry.txt" file with json inside. It will conta
 ## Conclusions
 
 Thanks to all these indicators, we can say that the idea of “free beer” from ChaosDAO was successful, and people actively used it, 
-even though some of the beer wasn’t drunk. And thanks to the sensors and the Robonomics team, you can see quantitative and 
+even though some the beer didn't run out. And thanks to the sensors and the Robonomics team, you can see quantitative and 
 qualitative indicators of this event with data saved in the Kusama network.
