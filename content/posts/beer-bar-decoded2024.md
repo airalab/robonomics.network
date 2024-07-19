@@ -4,7 +4,7 @@ date: 2024-07-19
 published: true
 locale: 'en'
 tags: ['Events', 'Polkadot', 'Web3', ]
-cover_image: ./images/beer-bar-decoded2024/cover.jpg 
+cover_image: ./images/beer-bar-decoded2024/cover.png
 description: 'Last week, the Robonomics team visited the Polkadot Decoded event in Brussels. They did an experiment to measure different readings from sensors around the Free Beer Stand from ChaosDAO. The team wanted to see how many people attended and how interested they were in the bar. Read this article to find out what they discovered.'
 ---
 
@@ -29,7 +29,7 @@ At the end of the article, you will see a description of how to obtain this data
 
 Here’s what the bar looked like:
 
-<rb-image zoom src="beer-bar-decoded2024/cover.jpg" alt="Beer bar" /> 
+<rb-image zoom src="beer-bar-decoded2024/bar.jpg" alt="Beer bar" /> 
 
 The main counter where beer was handed out. Behind the counter, there was a tap and 2 refrigerators with drinks. 
 There were also small couches and a PlayStation 1 with racing games on the right.
