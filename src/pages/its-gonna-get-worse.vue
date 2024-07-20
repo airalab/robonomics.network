@@ -25,7 +25,7 @@
 
         </div>
 
-        <g-image class="banner-with-pattern__img iggw__banner-img" immediate  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-all.png"/>
+        <g-image class="banner-with-pattern__img iggw__banner-img" immediate  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-girl.png"/>
       </div>
     </section>
 

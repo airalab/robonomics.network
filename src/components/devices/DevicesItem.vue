@@ -9,7 +9,7 @@
       </div>
       <div class="products__links" v-if="!shop">
         <rb-button block class="devices__link" :to="hacksterLink" buttoncolor="pale-blue" buttonstyle="flat">{{ $t('View specification') }}</rb-button>
-        <rb-button block v-if="telegramLink" :to="telegramLink" buttoncolor="green" buttonstyle="flat" class="devices__link">{{ $t('Buy in Telegram bot') }}</rb-button>
+        <rb-button block v-if="telegramLink" :to="telegramLink" buttoncolor="green" buttonstyle="flat" class="devices__link">{{ $t('Buy Dev Kit via bot') }}</rb-button>
         <span v-if="release" class="product__release">{{release}}</span>
       </div>
       <DevicesShopItem :price="price" :title="title" :unavailable="unavailable"  v-else/>

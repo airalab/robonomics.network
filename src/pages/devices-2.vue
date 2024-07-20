@@ -36,7 +36,7 @@
           </div>
         </div>
 
-        <g-image immediate class="banner-with-pattern__img  devices__banner-img devices__banner-img--girl"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-decor-all.png"/>
+        <g-image immediate class="banner-with-pattern__img  devices__banner-img devices__banner-img--girl"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/devices/devices-banner-girl.png"/>
 
       </div>
     </section>
@@ -237,7 +237,7 @@ export default {
 
 <style scoped>
   .devices {
-    background-image: url('../assets/images/devices/devices-banner-bg.jpg');
+    background-image: url('../assets/images/devices/devices-banner-bg.webp');
     background-color: var(--color-blue);
   }
 

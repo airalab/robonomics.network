@@ -174,20 +174,10 @@
 
 .banner-with-pattern__text-shadow  {
   margin-top: 0;
-  max-width: 840px;
-  display: flex;
-  flex-direction: column;
   text-align: left;
-  font-family: var(--font-family);
-  font-weight: 900;
   font-size: calc(var(--base-font-size) * 3);
-  color: #fff;
-  text-transform: none;
   letter-spacing: 0;
-}
-
-.banner-with-pattern__text-shadow span {
-  text-shadow: 10px 2px #111;
+  text-shadow: 8px 2px var(--text-color);
 }
 
 .banner-with-pattern__img  {

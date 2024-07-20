@@ -33,7 +33,7 @@ export default {
 
   .banner-with-pattern {
     margin: 0;
-    background-image: url('../assets/images/devices/devices-banner-bg.jpg');
+    background-image: url('../assets/images/devices/devices-banner-bg.webp');
   }
 
   .title-with-bg {
