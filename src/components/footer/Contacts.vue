@@ -259,7 +259,7 @@ export default {
   .email .contacts__text {
     position: absolute;
     top: -59px;
-    right: calc(100% - 501px);
+    right: calc(100% - 423px);
   }
 
   .email .decor-line {

@@ -41,6 +41,7 @@ body {
 	--rb-color-green: hsl(82,96%,41%);
 	--rb-color-green-dark: hsl(82,96%,35%);
 	--rb-color-greenish: hsl(72, 100%, 41%);
+	--rb-color-greenyellow: #D9E021;
 	--rb-color-pale-blue: hsl(203, 79%, 54%);
 	--rb-color-pale-blue-dark: hsl(203,79%,35%);
 	--rb-color-vivid-blue: var(--color-blue-vivid);
