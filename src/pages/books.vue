@@ -58,6 +58,8 @@
     data() {
       return {
         bookGateway: 'https://gw.crust-gateway.com/ipfs/',
+        // gateways: ['https://gateway.pinata.cloud/ipfs/', 'https://ipfs.io/ipfs/',], // ADD MORE GATEWAYS HERE
+        // defaultHash: 'QmU2CGFcJCTVb8reQNpkQ8GvPqEgkGmZQmZ8nUN2eWj7d6',
         books: [
         {
             title: this.$t("Robonomics R&D"),
@@ -211,7 +213,24 @@
           }
         ]
       }
-    }
+    },
+
+    // async created() {
+
+    //   // getting working gateway by using default hash
+    //   for (let i = 0; i < this.gateways.length; i++) 
+    //   if(!this.bookGateway) {
+    //     try {
+    //       const res = await fetch(this.gateways[i] + this.defaultHash)
+    //       if(res.ok) {
+    //         this.bookGateway = this.gateways[i];
+    //       }
+    //     } catch (err) {
+    //       console.log(err,  this.gateways[i],  ' => gateway is not working')
+    //     }
+    //   }
+
+    // }
   }
 </script>
 
