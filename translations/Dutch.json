@@ -1,6 +1,5 @@
 {
   "View specification": "Bekijk specificatie",
-  "Buy in Telegram bot": "Koop in Telegram bot",
   "White Paper 2022": "White Paper 2022",
   "Timeline": "Tijdlijn",
   "Tokenomics": "Tokenomics",
@@ -586,8 +585,6 @@
   "Be smart": "Wees slim",
   "Be independent": "Wees onafhankelijk",
   "We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "Wij zijn een autonoom team met uitgebreide expertise op het gebied van robotica, blockchain en IoT. Met een diepgaand begrip van de uitdagingen waarmee geavanceerde slimme thuisgebruikers worden geconfronteerd, hebben we ervoor gekozen om onze eigen apparaten te produceren. Neem controle over je huis, bespaar energie en bevrijd jezelf van bedrijfswolken en apparaatbeperkingen met ons!",
-  "Buy devices": "Koop apparaten",
-  "Support it on hackster.io": "Ondersteun het op hackster.io",
   "Product 1: Universal IR Remote Control": "Product 1: Universele IR-afstandsbediening",
   "Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!": "Bouw slimme klimaatregeling met elke willekeurige airconditioner, stel open/sluitbewerkingen in voor elke willekeurige poort in je huis. We hebben een universele IR-afstandsbediening gebouwd met een open-source Tasmota-firmware aan boord. We hebben een USB-C-poort geïnstalleerd voor een betere ervaring - upgrade de firmware voor de afstandsbediening eenvoudig met een eenvoudige bekabelde verbinding!",
   "type-c for OSS firmware upgrading": "Type-C voor OSS-firmware-upgrades",
@@ -741,8 +738,6 @@
   "Local communities & news. You are welcome!": "Lokale gemeenschappen & nieuws. Je bent welkom!",
   "This page may need translation": "Deze pagina heeft mogelijk vertaling nodig",
   "Important news and announcements": "Belangrijk nieuws en aankondigingen",
-  "Free worldwide shipping starts from February 2024": "Gratis wereldwijde verzending begint vanaf februari 2024",
-  "Free worldwide shipping starts from January 2024": "Gratis wereldwijde verzending begint vanaf januari 2024",
   "Home Assistant themes": "Home Assistant-thema's",
   "Home assistant themes": "Home assistant-thema's",
   "Customize your Home Assistant with our free to use themes. Follow the instructions for installation on": "Pas je Home Assistant aan met onze gratis te gebruiken thema's. Volg de instructies voor installatie op",
@@ -814,5 +809,7 @@
   "How the World Computer can save us": "Hoe de Wereldcomputer ons kan redden",
   "What is a world computer? How it works, can it replace corporate cloud infrastructure, who owns data? Please, don't skip these 4 lectures written on our Academy and widen your mind.": "Wat is een wereldcomputer? Hoe werkt het, kan het de cloud-infrastructuur van bedrijven vervangen, wie bezit de gegevens? Sla alsjeblieft deze 4 lezingen op onze Academy niet over en verbreed je geest.",
   "Build safe smart home": "Bouw een veilig slim huis",
-  "Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.": "Praktische gids over hoe je een slim huis kunt bouwen dat onafhankelijk is van leveranciers en bedrijven met behulp van Robonomics en Home Assistant. Alle stappen en vereisten op één plek."
+  "Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.": "Praktische gids over hoe je een slim huis kunt bouwen dat onafhankelijk is van leveranciers en bedrijven met behulp van Robonomics en Home Assistant. Alle stappen en vereisten op één plek.",
+  "Buy Dev Kit via bot": "Koop Dev Kit via bot",
+  "Worldwide shipping starts after EU & USA certification": "Wereldwijde verzending begint na EU & USA certificering"
 }
