@@ -570,12 +570,10 @@
   "Praxeology inspires us with interesting ideas about human behavior without direct dependence on the purposes. This gives us the opportunity to work on the processes of the economy of robots conditionally as with a black box without delving into the ultimate goals. At the same time, teleology poses a challenge to explain causes.": "تلهمنا البراكسيولوجيا بأفكار مثيرة حول سلوك الإنسان بدون الاعتماد المباشر على الأغراض. هذا يمنحنا الفرصة للعمل على عمليات اقتصاد الروبوتات بشكل مشروط كمع صندوق أسود دون التعمق في الأهداف النهائية. في الوقت نفسه، تطرح التليولوجيا تحديًا لشرح الأسباب.",
   "We hope that somewhere at the junction of the works of Mises and Wiener, a point for further development of the robot economy may be found, not just as a protocol of interaction between people and machines of a praxeological nature, but taking into account the teleological elements of building interspecies communication.": "نأمل أن يتم العثور في مكان ما على تقاطع أعمال ميسيس ووينر، نقطة لمزيد من تطوير اقتصاد الروبوت قد يتم العثور عليها، ليس فقط كبروتوكول للتفاعل بين الناس والآلات ذات الطابع البراكسيولوجي، ولكن مع مراعاة العناصر التليولوجية لبناء التواصل بين الأنواع.",
   "RWS logos": "شعارات RWS",
-  "Buy in Telegram bot": "الشراء على بوت التليجرام",
   "Smart Devices": "الأجهزة الذكية",
   "Control your home": "السيطرة على منزلكr",
   "Be smart": "كن ذكيا",
   "Be independent": "كن مستقلاً",
-  "Support it on hackster.io": "ادعمه على hackster.io",
   "Product 1: Universal IR Remote Control": "المنتج 1: جهاز التحكم عن بعد بالأشعة تحت الحمراء العالمي",
   "Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!": "قم ببناء تحكم ذكي في المناخ باستخدام أي مكيف هواء A-N-Y، وقم بإعداد عمليات الفتح/الإغلاق لأي بوابات A-N-Y في منزلك. لقد قمنا ببناء جهاز تحكم عن بعد يعمل بالأشعة تحت الحمراء مع برنامج ثابت مفتوح المصدر من Tasmota على متن الطائرة. لقد قمنا بتثبيت منفذ USB-C لتستمتع بتجربة أفضل - قم بترقية البرنامج الثابت لجهاز التحكم عن بعد فقط من خلال اتصال سلكي بسيط!",
   "Supports wide range of devices": "يدعم مجموعة واسعة من الأجهزة",
@@ -631,7 +629,6 @@
   "Compatible with luftdaten": "متوافق مع لوفتداتن",
   "View specification": "عرض المواصفات",
   "Have you ever wondered what consumes the most electricity in your home? Our smart energy power meter is designed to help you identify the major sources of electricity usage and prevent unwanted energy leaks. This energy meter works both, with an individual asset or an entire building, doesn’t need any cloud, MQTT protocol onboard, can be used with Home Assistant and it’s useful energy management dashboard.": "هل سبق لك أن تساءلت ما الذي يستهلك أكبر قدر من الكهرباء في منزلك؟ تم تصميم عداد الطاقة الذكي الخاص بنا لمساعدتك على تحديد المصادر الرئيسية لاستخدام الكهرباء ومنع تسرب الطاقة غير المرغوب فيه. يعمل عداد الطاقة هذا مع الأصول الفردية أو المبنى بأكمله، ولا يحتاج إلى أي سحابة، ويمكن استخدام بروتوكول MQTT على متن الطائرة، مع Home Assistant ولوحة معلومات إدارة الطاقة المفيدة.",
-  "Buy devices": "شراء الأجهزة",
   "Robonomics Middleware Framework for ROS 2": "إطار عمل Robonomics الوسيط لـ ROS 2",
   "Twitter": "Twitter",
   "Youtube": "Youtube",
@@ -641,8 +638,6 @@
   "We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "نحن فريق مستقل يتمتع بخبرة واسعة في مجال الروبوتات وتقنية blockchain وإنترنت الأشياء. نظرًا لوجود فهم عميق للتحديات التي يواجهها مستخدمو المنازل الذكية المتقدمون، فقد اخترنا المغامرة في تصنيع أجهزتنا الخاصة. تحكم في منزلك، ووفر الطاقة، وحرر نفسك من سحابة الشركة وقيود الأجهزة معنا!",
   "This study information has been expired. For up-to-date lessons and workshops visit our": "لقد انتهت صلاحية معلومات هذه الدراسة. للحصول على أحدث الدروس وورش العمل، قم بزيارة موقعنا",
   "academy": "الأكاديمية",
-  "Free worldwide shipping starts from February 2024": "يبدأ الشحن المجاني في جميع أنحاء العالم اعتبارًا من فبراير 2024",
-  "Free worldwide shipping starts from January 2024": "يبدأ الشحن المجاني في جميع أنحاء العالم اعتبارًا من يناير 2024",
   "It's gonna get worse": "سوف يزداد سوءًا",
   "DIY": "افعلها بنفسك",
   "your own safe": "مكان آمن خاص بك",
@@ -814,5 +809,7 @@
   "How the World Computer can save us": "كيف يمكن للحاسوب العالمي أن ينقذنا",
   "What is a world computer? How it works, can it replace corporate cloud infrastructure, who owns data? Please, don't skip these 4 lectures written on our Academy and widen your mind.": "ما هو الحاسوب العالمي؟ كيف يعمل، هل يمكن أن يحل محل بنية سحابية الشركات، من يمتلك البيانات؟ من فضلك، لا تتخطى هذه الدروس الأربعة المكتوبة في أكاديميتنا ووسع عقلك.",
   "Build safe smart home": "بناء منزل ذكي آمن",
-  "Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.": "دليل عملي على كيفية بناء منزل ذكي مستقل عن البائعين والشركات باستخدام Robonomics وHome Assistant. جميع الخطوات والمتطلبات في مكان واحد."
+  "Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.": "دليل عملي على كيفية بناء منزل ذكي مستقل عن البائعين والشركات باستخدام Robonomics وHome Assistant. جميع الخطوات والمتطلبات في مكان واحد.",
+  "Buy Dev Kit via bot": "اشتري مجموعة تطوير عبر الروبوت",
+  "Worldwide shipping starts after EU & USA certification": "يبدأ الشحن العالمي بعد الحصول على شهادة الاتحاد الأوروبي والولايات المتحدة"
 }
