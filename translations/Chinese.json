@@ -670,12 +670,10 @@
   "XRT logos": "XRT标志",
   "Recommended color palette": "推荐的配色方案",
   "RWS logos": "RWS 徽标",
-  "Buy in Telegram bot": "在Telegram机器人中购买",
   "Smart Devices": "智能设备",
   "Control your home": "控制您的家",
   "Be smart": "变得聪明",
   "Be independent": "变得独立",
-  "Support it on hackster.io": "在hackster.io上支持它",
   "Product 1: Universal IR Remote Control": "产品1：通用红外遥控器",
   "Build smart climate control with any ANY A-N-Y air conditioner, setup open/close operations for any ANY A-N-Y gates in your home. We’ve built universal IR remote control with an open-source Tasmota firmware onboard. We installed USB-C port for your better experience - upgrade the firmware for the remote control just with a simple wired connection!": "使用任何空调，为您家中的任何门设置开/关操作，打造智能气候控制。我们使用开源Tasmota固件制作了通用红外遥控器。我们还安装了USB-C端口，以提供更好的体验-只需简单的有线连接即可升级遥控器的固件！",
   "Supports wide range of devices": "支持广泛的设备",
@@ -730,7 +728,6 @@
   "Can be added as a part of global sensor map or your own fork": "可以作为全球传感器地图或您自己的分支的一部分添加",
   "Compatible with luftdaten": "与luftdaten兼容",
   "View specification": "查看规格",
-  "Buy devices": "购买设备",
   "Robonomics Middleware Framework for ROS 2": "ROS 2的Robonomics中间件框架",
   "Twitter": "推特",
   "Youtube": "油管",
@@ -741,8 +738,6 @@
   "We are an autonomous team with extensive expertise in robotics, blockchain, and IoT. Having a deep understanding of the challenges faced by advanced smart home users, we've chosen to venture into manufacturing our own devices. Take control of your home, save energy, and liberate yourself from corporate clouds and device limitations with us!": "我们是一个拥有丰富机器人、区块链和物联网专业知识的自主团队。深刻理解高级智能家居用户面临的挑战，我们选择冒险制造自己的设备。与我们一起掌控您的家，节约能源，摆脱企业云和设备限制！",
   "This study information has been expired. For up-to-date lessons and workshops visit our": "这项研究信息已过期。有关最新课程和研讨会，请访问我们的",
   "academy": "学院",
-  "Free worldwide shipping starts from February 2024": "从2024年2月开始，全球免费送货",
-  "Free worldwide shipping starts from January 2024": "2024年1月起免费全球配送",
   "Home Assistant themes": "Home Assistant主题",
   "Home assistant themes": "Home assistant主题",
   "Customize your Home Assistant with our free to use themes. Follow the instructions for installation on": "使用我们的免费主题定制您的Home Assistant。按照安装说明进行操作。",
@@ -814,5 +809,7 @@
   "How the World Computer can save us": "世界计算机如何拯救我们",
   "What is a world computer? How it works, can it replace corporate cloud infrastructure, who owns data? Please, don't skip these 4 lectures written on our Academy and widen your mind.": "什么是世界计算机？它是如何工作的，能否取代企业云基础设施，谁拥有数据？请不要错过我们学院撰写的这4堂讲座，拓宽您的视野。",
   "Build safe smart home": "构建安全的智能家居",
-  "Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.": "如何使用Robonomics和Home Assistant构建独立于供应商和公司的智能家居的实用指南。所有步骤和要求都在一个地方。"
+  "Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.": "如何使用Robonomics和Home Assistant构建独立于供应商和公司的智能家居的实用指南。所有步骤和要求都在一个地方。",
+  "Buy Dev Kit via bot": "通过机器人购买开发工具包",
+  "Worldwide shipping starts after EU & USA certification": "欧盟和美国认证后开始全球发货"
 }
