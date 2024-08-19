@@ -40,7 +40,7 @@ import Card from '~/components/TextCard.vue'
 
 ### 实践
 
-Dapp应用程序准备就绪：https://dapp.robonomics.network/#/staking/
+Dapp应用程序准备就绪：https://robonomics.app/#/staking/
 
 ![Dapp应用程序准备就绪](../images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
 
@@ -60,7 +60,7 @@ Dapp应用程序准备就绪：https://dapp.robonomics.network/#/staking/
 
 ![Subscan.io](../images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
 
-在dapp Exodus界面，可以看到以太坊到平行链的迁移统计：https://dapp.robonomics.network/#/exodus
+在dapp Exodus界面，可以看到以太坊到平行链的迁移统计：https://robonomics.app/#/exodus
 
 ![dapp Exodus](../images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
 
