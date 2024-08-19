@@ -41,9 +41,9 @@ Robonomics' goal is to make [robots part of the economy](https://blog.aira.life/
 
 Decentralized analogue ([Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42)) of Amazon Web Services with an option to get access via a subscription model. It's designed to provide IoT & Robotics industries with an opportunity to build apps and services in a secure and cost-effective environment.
 
-The smooth connection process via [Dapp.robonomics.network](https://dapp.robonomics.network/) will allow developers, engineers and end-users to quickly connect IoT devices to Robonomics Parachain.
+The smooth connection process via [Dapp.robonomics.network](https://robonomics.app/) will allow developers, engineers and end-users to quickly connect IoT devices to Robonomics Parachain.
 
-[Dapp](https://dapp.robonomics.network/) serves as a bulletproof way to establish a peer-to-peer (direct) communication for all network participants.
+[Dapp](https://robonomics.app/) serves as a bulletproof way to establish a peer-to-peer (direct) communication for all network participants.
 
 Regardless of the external circumstances, the market will never fail.  
 
@@ -193,7 +193,7 @@ Despite the Covid-19, 2020 was an exceptionally productive year for the core Rob
 - [100+ popular &amp; demanded robots could be connected to Robonomics parachain](https://robots.ros.org/)
 - [50+ ROS compatible sensors &amp; cameras supported by Robonomics parachain](http://wiki.ros.org/Sensors)
 - [5+ Detailed tutorials added to Wiki.Robonomics.Network](https://wiki.robonomics.network/docs/create-account-in-dapp/)
-- [9 Use cases are available for the community](https://dapp.robonomics.network/#/services)
+- [9 Use cases are available for the community](https://robonomics.app/#/services)
 
 We'll release a marketing recap in the mid-January, where we'll highlight results and share plans regarding the further growth of Robonomics Network.
 

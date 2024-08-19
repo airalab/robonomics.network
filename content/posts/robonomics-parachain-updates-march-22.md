@@ -27,7 +27,7 @@ The Robonomics parachain was launched in January of this year, and our first pub
 
 - The Winter school was suspended on February 24th. After 3 weeks, the developers decided to abandon the continuation of the school as an event. The Winter School lessons have been redesigned as an introductory Robonomics course, which will be available online 24/7 during 2022 from anywhere in the world. The course will be published on the [robonomics.academy website](https://robonomics.academy/) by the end of March.
 
-- An additional 1 XRT for crowdoan campaign participants who have a pioneer card [is available through the Robonomics dapp](https://dapp.robonomics.network/#/bonus-for-pioneer).
+- An additional 1 XRT for crowdoan campaign participants who have a pioneer card [is available through the Robonomics dapp](https://robonomics.app/#/bonus-for-pioneer).
 
 ## Parachain statistics for 2 months
 

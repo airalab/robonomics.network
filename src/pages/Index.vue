@@ -69,7 +69,7 @@
             <p>{{$t('XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain')}}</p>
           </g-link>
 
-          <g-link class="oldy oldy__link" to="https://dapp.robonomics.network/#/">
+          <g-link class="oldy oldy__link" to="https://robonomics.app/#/">
           <div class="img-back">
               <g-image aria-hidden="true" alt="" src="~/assets/images/explore-3.png" />
             </div>
