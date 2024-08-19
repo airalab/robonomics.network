@@ -42,7 +42,7 @@ I will write about how the subscriptions and the payment pool will be distribute
 
 ### Practical Use
 
-DApp ready to go: https://dapp.robonomics.network/#/staking/
+DApp ready to go: https://robonomics.app/#/staking/
 
 ![XRT staking in Robonomics dapp, new bonding screen](./images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
 
@@ -62,7 +62,7 @@ Thanks to the integration with Subscan, XRT holders on the Robonomics parachain 
 
 ![Robonomics Subscan.io account screen](./images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
 
-On the Exodus DApp interface, you can see the migration statistics from the Ethereum blockchain to the Robonomics parachain: https://dapp.robonomics.network/#/exodus
+On the Exodus DApp interface, you can see the migration statistics from the Ethereum blockchain to the Robonomics parachain: https://robonomics.app/#/exodus
 
 ![XRT from the Ethereum blockchain to the Robonomics parachain in Robonomics dapp](./images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
 

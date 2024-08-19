@@ -42,7 +42,7 @@ import Card from '~/components/TextCard.vue'
 
 ### Практика
 
-Децентрализованное приложение готово к работе: https://dapp.robonomics.network/#/staking/
+Децентрализованное приложение готово к работе: https://robonomics.app/#/staking/
 
 ![Стейкинг XRT в децентрализованном приложении Робономики, новый бондинг](../images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
 
@@ -62,7 +62,7 @@ import Card from '~/components/TextCard.vue'
 
 ![Аккаунт Робономики на Subscan.io](../images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
 
-На интерфейсе dapp Exodus можно увидеть статистику миграции из Ethereum в парачейн: https://dapp.robonomics.network/#/exodus
+На интерфейсе dapp Exodus можно увидеть статистику миграции из Ethereum в парачейн: https://robonomics.app/#/exodus
 
 ![XRT из блокчейна Ethereum в парачейн Робономики в приложении](../images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
 
