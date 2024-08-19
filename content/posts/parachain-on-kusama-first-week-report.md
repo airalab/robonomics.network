@@ -142,7 +142,7 @@ In the second update of the Robonomics parachain, the XRT staking module was inc
 ![Robonomics dapp](./images/parachain-on-kusama-first-week-report/6-Robonomics-dapp.png)
 *An example of working with the staking section in Robonomics dapp*
 
-XRT staking is available on the Robonomics dapp at the following link: https://dapp.robonomics.network/#/staking/ 
+XRT staking is available on the Robonomics dapp at the following link: https://robonomics.app/#/staking/ 
 
 The staking reward is approximately 10% per year.
 

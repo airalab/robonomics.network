@@ -141,7 +141,7 @@ https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier .rpc.robonom
 ![Robonomics dapp](../images/parachain-on-kusama-first-week-report/6-Robonomics-dapp.png)
 *Пример работы с разделом стейкинга в dapp Робономики*
 
-Стейкинг XRT доступен в dapp Робономики по следующей ссылке: https://dapp.robonomics.network/#/staking/ 
+Стейкинг XRT доступен в dapp Робономики по следующей ссылке: https://robonomics.app/#/staking/ 
 
 Награда от стейкинга составляет примерно 10% в год.
 

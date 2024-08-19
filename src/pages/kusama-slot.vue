@@ -40,7 +40,7 @@
           <g-image quality="75" alt="Robonomics dapp smart home" src="~/assets/images/dapp-smart-devices.png" />
           <article>
             <h3>Decentralized cloud for IoT, updates for wiki, courses for Academy</h3>
-            <p>Our plans for 2023 include the active development around the idea of a decentralized cloud for the control of home IoT infrastructure. Now we are working to ensure that our <g-link to="https://dapp.robonomics.network/">decentralized application</g-link>, <g-link to="https://wiki.robonomics.network">wiki</g-link> project and our educational resource, the <g-link to="https://robonomics.academy/">Robonomics Academy</g-link>, have all the necessary functions and information for IoT infrastructure owners.</p>
+            <p>Our plans for 2023 include the active development around the idea of a decentralized cloud for the control of home IoT infrastructure. Now we are working to ensure that our <g-link to="https://robonomics.app/">decentralized application</g-link>, <g-link to="https://wiki.robonomics.network">wiki</g-link> project and our educational resource, the <g-link to="https://robonomics.academy/">Robonomics Academy</g-link>, have all the necessary functions and information for IoT infrastructure owners.</p>
           </article>
         </div>
        </section>

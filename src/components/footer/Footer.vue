@@ -39,7 +39,7 @@
               <li><a href="https://wiki.robonomics.network">{{$t('Wiki')}}</a></li>
               <li><a href="https://robonomics.academy">{{$t('Academy')}}</a></li>
               <li><a href="https://github.com/airalab">{{$t('Github')}}</a></li>
-              <li><a href="https://dapp.robonomics.network/#/">{{$t('Dapp')}}</a></li>
+              <li><a href="https://robonomics.app/#/">{{$t('Dapp')}}</a></li>
             </ul>
           </div>
 
