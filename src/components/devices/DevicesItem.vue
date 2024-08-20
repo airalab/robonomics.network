@@ -5,14 +5,12 @@
       <g-image :src="require(`!!assets-loader!@/assets/images/devices/${img}`)"  quality="75%" :alt="title" class="product__img"/>
       <div class="product__text">
         <p >{{ text }}</p>
-        <g-link v-if="shop" :to="hacksterLink">{{ $t('View more on Hackster') }}</g-link>
       </div>
       <div class="products__links" v-if="!shop">
         <rb-button block class="devices__link" :to="hacksterLink" buttoncolor="pale-blue" buttonstyle="flat">{{ $t('View specification') }}</rb-button>
         <rb-button block v-if="telegramLink" :to="telegramLink" buttoncolor="green" buttonstyle="flat" class="devices__link">{{ $t('Buy Dev Kit via bot') }}</rb-button>
         <span v-if="release" class="product__release">{{release}}</span>
       </div>
-      <DevicesShopItem :price="price" :title="title" :unavailable="unavailable"  v-else/>
     </div>
     <div class="product-key-features">
       <ul class="list-simple product-key-features__list">
@@ -24,9 +22,6 @@
 
 <script>
 export default {
-  components: { 
-    DevicesShopItem: () => import("~/components/devices/DevicesShopItem.vue")
-  },
 
   props: {
     title: {
