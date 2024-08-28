@@ -138,6 +138,7 @@ query($id: ID!) {
       margin-right: auto;
   }
 
+
   .post__header img {
       display: block;
       max-width: 100%;
@@ -186,6 +187,14 @@ query($id: ID!) {
     .small-banner img {
       width: 94px;
       height: 60px;
+    }
+  }
+
+  @media screen and (max-width: 510px) {
+    .post table {
+      display: block;
+      /* white-space: nowrap; */
+      overflow: scroll;
     }
   }
 
