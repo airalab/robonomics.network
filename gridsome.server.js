@@ -43,7 +43,7 @@ module.exports = function (api) {
   api.createManagedPages( ({ createPage }) => {
 
     // all locales
-    const locales =  ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr", "uk", "ar", "nl"];
+    const locales = ["ar","de","el","en","es","fr","it","ja","ko","nl","pt","ru","uk","zh"];
 
     createPage(
       {
