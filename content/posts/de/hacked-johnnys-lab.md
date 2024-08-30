@@ -12,7 +12,7 @@ abstract: "Hallo! PaTara am Apparat. Es gab kürzlich eine Veranstaltung „Hack
 Also, eine kurze und notwendige Zusammenfassung der Regeln: 12 Wörter in gemischter Reihenfolge, ein 5-minütiges Video von einem TurtleBot 4, der in einem Labor umherwandert
 und die Wortreihenfolge der Eselsbrücke durcheinanderbringt, 5-20 Teilnehmer, die gewinnen wollen, und ein freier Sonntag, um sich eine Strategie auszudenken.
 
-<rb-image zoom src="hacked-johnnys-lab/0.png" alt="Game Interface" />
+<rb-image zoom src="./images/hacked-johnnys-lab/0.png" alt="Game Interface" />
 
 Ich kenne mich ein wenig mit Programmierung aus und habe einen anständigen Laptop und fast keine Fähigkeiten in der Bilderkennung. Mehr als das, 
 Ich habe beschlossen, fair zu spielen, was bedeutet, kein Herunterladen von Videos, kein Missbrauch der Wiedergabegeschwindigkeit, keine Navigation durch die Wiedergabefortschrittsleiste. 
@@ -34,19 +34,19 @@ logischen Kerne meiner CPU (20 davon) zu parallelisieren. Andernfalls wäre es e
 Aber damit musste ich meinen Iterator in 12 Teile aufteilen. Die itertools multiprocessing-Pakete arbeiten zusammen, 
 aber wenn ein ganzes Set von Optionen im RAM ist. Das war nicht mein Fall, also wurde das Folgende durchgeführt:
 
-<rb-image zoom src="hacked-johnnys-lab/1.png" alt="Parallelizing"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1.png" alt="Parallelizing"/>
 
 
 Ab diesem Moment und für immer würde ich diese Strategie verwenden, um meinen CPU-Auslastungsmonitor so aussehen zu lassen:
 
-<rb-image zoom src="hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
 
 
 Ich glaube, dass dies die Ausführungszeit auf etwa 5 Sekunden verkürzt hat. Ich habe den besten Weg gefunden, um durch 
 die Kombinationen zu iterieren, aber es gab einfach zu viele davon! Der erste Schritt bestand darin, ungefähr 480 Millionen 
 Extrinsiken im Netzwerk durchzuführen. Der Knoten würde mich einfach für DDOS sperren und selbst ohne das würde es ewig dauern!
 
-<rb-image zoom src="hacked-johnnys-lab/2.png" alt="1st Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/2.png" alt="1st Attempt"/>
 
 
 Nur aus Debugging-Gründen habe ich das Skript gestartet (für die Knotenkommunikation habe ich ein 
@@ -57,7 +57,7 @@ Ich würde Tonnen von Zeit sparen! Das GitHub-Parsing führte mich zu
 Codezeile und ich habe eine Kombinationsvalidierung zu meinem Skript hinzugefügt. Dies hat die Anzahl der potenziellen Extrinsiken auf ungefähr 39'000'000 12-mal schneller reduziert!
 Aber trotzdem würden mich 39 Millionen Anrufe für immer sperren, also musste ich weiter graben. Wie könnte ich die
 
-<rb-image zoom src="hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
 
 
 Anzahl der Berechnungen signifikant reduzieren? Nun, indem ich meine ursprüngliche Strategie ein wenig verrate. Sehen Sie, ich wollte das Ansehen von Videos vermeiden, 
@@ -65,14 +65,14 @@ Anzahl der Berechnungen signifikant reduzieren? Nun, indem ich meine ursprüngli
 Nachfolgend die Erklärung: 
 Dafür musste ich nur zwei richtige Positionen von Wörtern in einem Satz kennen (eine würde zu lange dauern, experimentell validiert).
 
-<rb-image zoom src="hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
 
 
 Ich würde durch 10! Kombinationen iterieren, zwei Wörter an richtigen Positionen einfügen und den Satz validieren, 
 wodurch die Optionen auf etwa 300'000 reduziert wurden, eine ziemliche Abnahme! Mehr noch, 10! Kombinationen passten in meinen RAM, ausgezeichnet! 
 meinen eigenen lokalen Robonomics-Knoten mit der Kette synchronisiert und ihn nach dem Kontostand einer resultierenden Kontoadresse gefragt!
 
-<rb-image zoom src="hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
 
 
 Anstatt zu versuchen, alle Token jeweils 300.000 Mal zu übertragen und dafür einen öffentlichen Knoten aufzurufen, habe ich beschlossen, Folgendes festzulegen:
@@ -88,13 +88,13 @@ filtere sie nach genau 42 XRT und vergleiche jede generierte Adresse mit einer L
 Jetzt, nachdem ich mein Skript noch einmal modifiziert habe, habe ich es endlich auf nur eine Abfrage und eine Transaktion gebracht, die mir sicherlich 
 den gewünschten Preis geben würde.
 
-<rb-image zoom src="hacked-johnnys-lab/6.png" alt="4th Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/6.png" alt="4th Attempt"/>
 
 
 Jetzt, nachdem ich 25 Sekunden des Videos angesehen habe (währenddessen die Wörter eines Mnemonics ausfüllend), 
 bräuchte ich maximal 30 Sekunden, um die Belohnung zu stehlen. Gehackt.
 
-<rb-image zoom src="hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
 
 
 

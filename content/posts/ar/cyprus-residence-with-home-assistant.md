@@ -23,7 +23,7 @@ tags: ['Announcements', 'Use Cases', 'Collaborations', 'Smart Home']
 
 <!-- ![Smart home floor plan](../images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
 
 لا تتردد في الخلط بسبب كلمة "موصل". هذا يعني أن الجهاز يحتاج إلى طاقة مستمرة، بينما الأجهزة في عمود "لاسلكي" تعمل بالبطارية.
 
@@ -49,7 +49,7 @@ tags: ['Announcements', 'Use Cases', 'Collaborations', 'Smart Home']
 
 <!-- ![Smart home lobby plan](../images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
 
 ## الاستنتاج
 

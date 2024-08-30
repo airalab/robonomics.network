@@ -8,7 +8,6 @@ description: "The experience and data from the first cohort of teams who have se
 abstract: "The experience and data from the first cohort of teams who have secured crowdloans can now provide a foundation that future teams can build from to better price, and automate the process of securing crowdloans and winning auctions."
 tags: ['Robonomics parachain']
 ---
-import Card from '~/components/TextCard.vue'
 import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'
 
 

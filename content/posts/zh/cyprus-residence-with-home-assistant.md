@@ -23,7 +23,7 @@ tags: ['Announcements', 'Use Cases', 'Collaborations', 'Smart Home']
 
 <!-- ![Smart home floor plan](../images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
 
 不要被“有线”一词所困惑。这意味着设备需要持续供电，而“无线”列中的设备是电池供电的。
 
@@ -49,7 +49,7 @@ tags: ['Announcements', 'Use Cases', 'Collaborations', 'Smart Home']
 
 <!-- ![Smart home lobby plan](../images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
 
 ## 结论
 

@@ -1,5 +1,5 @@
 <template>
-  <layout class="postpage">
+  <layout class="postpage" :translated="$page.post.translated">
 
     <MetaInfo
       :pageTitle = "$page.post.title"
@@ -68,6 +68,7 @@ query($id: ID!) {
       title
       path
     }
+    translated
   }
   allPost{
     edges {
@@ -149,7 +150,7 @@ query($id: ID!) {
   .post code {
     vertical-align: middle;
     padding: calc(var(--space) * 0.1)  calc(var(--space) * 0.3);
-    background-color: var(--color-bright-pink);
+    background-color: hsl(220.87deg 50.39% 29.76%);
     font-weight: 600;
     color: var(--color-light);
   }

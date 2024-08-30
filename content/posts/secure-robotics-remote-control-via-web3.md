@@ -24,7 +24,7 @@ Designating a zone with special security requirements in the workspace of ROS 2 
 
 Another solution is to create so-called gateways, which transmit the necessary data while keeping everything else private. Typically, this is achieved using VPN or SSH tunnels. A separate node is created in the secure data exchange space, which has a public address for external connections. In this case, security management is carried out only at the level of this node (essentially a window to the outside world), without affecting all the others. This approach is used in the projects [Husarnet](https://github.com/husarnet/husarnet), [DDS Router](https://github.com/eProsima/DDS-Router) and [Zenoh Bridge](https://github.com/eclipse-zenoh/zenoh-plugin-ros2dds), but it also has its drawbacks. In this scenario, you need to establish a secure communication channel strictly linked to the counterparty's IP address or domain name. These can change, become blocked, or be vulnerable to attacks. At the time when SSH was created, this wasn't considered. Additionally, SSH primarily relies on the operating system's access control system, with all its inherent disadvantages.
 
-<rb-image zoom src="secure-robotics-remote-control-via-web3/remote_control_legacy_approach.png" alt="Classic Remote Control via public IP and SSH/VPN" />
+<rb-image zoom src="./images/secure-robotics-remote-control-via-web3/remote_control_legacy_approach.png" alt="Classic Remote Control via public IP and SSH/VPN" />
 
 *Here's how users typically connect to their robots remotely these days. However, this approach has some drawbacks. It requires a public IP or/and DNS name, which can be blocked in some countries. It also necessitates the storage of additional private keys in potentially unsafe locations (e.g., ~/.ssh).*
 
@@ -40,7 +40,7 @@ Furthermore, with the advancement of Web3 technologies, more efficient methods f
 
 Let's examine the connection process in more detail. The decentralized [Robonomics application](https://robonomics.app/) (or just DApp) works directly in your browser, it does not require you to install any additional software or the need to store keys in the file system in an environment of a large number of programs, the security of which you cannot be sure. Access key management is performed through the Polkadot JS extension, as well as with the help of an external hardware key storage (for example, [Polkadot Vault](https://wiki.polkadot.network/docs/polkadot-vault)) for additional reliability. In addition to specialized software for interaction with Robonomics, DApp also includes a lightweight libp2p node, with which the connection to Home Assistant takes place.
 
-<rb-image zoom src="secure-robotics-remote-control-via-web3/robonomics_home_assistant_usecase.png" alt="Home Assistant Remote Control" />
+<rb-image zoom src="./images/secure-robotics-remote-control-via-web3/robonomics_home_assistant_usecase.png" alt="Home Assistant Remote Control" />
 
 The owner of a Robonomics Web Service subscription manages access rights to smart home infrastructure through what is known as a controller - an account that manages all sensitive information in encrypted form in a digital twin. Only users added to the subscription can decrypt this data. In addition to access keys, the Digital Twin also stores the DApp configuration and, the so-called, libp2p multi-address to which the DApp connects for a secure connection. Multi-address is one of those innovations that makes the libp2p approach so unique and flexible. This is a special format of address for nodes, which implies the presence of many IP addresses, transport and network identifiers, protocols and ports, through which you can contact a specific node. The full list of supported protocols is presented in the [specification](https://github.com/multiformats/multiaddr/blob/master/protocols.csv).
 
@@ -50,7 +50,7 @@ So, the user added to the subscription extracts a multi-address from the Robonom
 
 Similarly, you can employ Robonomics' existing features to interact with robots. The Robossembler team, under the Robonomics Grant Program, developed a Proof of Concept project known as [Robonomics Bridge](https://gitlab.com/robossembler/robonomics_bridge). This bridge enables your ROS 2 nodes to connect with any external service, remote workstation, or another ROS 2 system.
 
-<rb-image zoom src="secure-robotics-remote-control-via-web3/robonomics_ros2_usecase.png" alt="ROS 2 Remote Control with Robonomics" />
+<rb-image zoom src="./images/secure-robotics-remote-control-via-web3/robonomics_ros2_usecase.png" alt="ROS 2 Remote Control with Robonomics" />
 
 *An illustration of what remote control of a home robot might look like in the case of ROS 2. This approach offers a number of significant advantages: there is no need for a public IP, access to the robot is available even through network firewalls (NAT), private cryptographic keys are not stored on disk and are reliably protected.*
 
