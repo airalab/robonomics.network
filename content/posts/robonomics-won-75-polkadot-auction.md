@@ -26,7 +26,7 @@ The process of launching a parachain on Polkadot will be very similar to how Rob
 7. The ability to activate a free subscription in Kusama will appear following the implementation of the ability to activate RWS tokens, which in turn is awaiting the bridge to Ethereum.
 
 
-<rb-image zoom src="robonomics-won-75-polkadot-auction/infographic-Robonomics-Subscription-in-Polkadot.jpg" alt="Infographics Robonomics Subscription in Polkadot" />
+<rb-image zoom src="./images/robonomics-won-75-polkadot-auction/infographic-Robonomics-Subscription-in-Polkadot.jpg" alt="Infographics Robonomics Subscription in Polkadot" />
 
 The launch of the Robonomics parachain on Polkadot will be an interesting event, representing the start of a multi relay chain project with unified tokenomics. Establishing the Robonomics parachain in Polkadot will involve testing system on BridgeHub, making them part of the architecture. Importantly, Polkadot will introduce the oldest project in the DePIN field, bringing new application scenarios to the Polkadot ecosystem.
 

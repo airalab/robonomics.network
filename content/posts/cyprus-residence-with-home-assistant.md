@@ -23,7 +23,7 @@ Below is a floor plan of one of the two blocks and a designation legend.
 
 <!-- ![Smart home floor plan](./images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
 
 Don't be confused by the word "Wired". This means that the device requires constant power, while the devices in the “Wireless” column are battery operated.
 
@@ -49,7 +49,7 @@ Regarding security, residents will have access to the intercom system from a sin
 
 <!-- ![Smart home lobby plan](./images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
 
 ## Conclusion
 

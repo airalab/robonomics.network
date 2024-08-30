@@ -23,7 +23,7 @@ Ci-dessous se trouve un plan d'étage de l'un des deux blocs et une légende de 
 
 <!-- ![Smart home floor plan](../images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
 
 Ne vous laissez pas tromper par le mot "Filaire". Cela signifie que l'appareil nécessite une alimentation constante, tandis que les appareils de la colonne "Sans fil" fonctionnent sur batterie.
 
@@ -49,7 +49,7 @@ En ce qui concerne la sécurité, les résidents auront accès au système d'int
 
 <!-- ![Smart home lobby plan](../images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
 
 ## Conclusion
 

@@ -25,13 +25,13 @@ https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf
 Since we needed to test sending our own token, we had to register it. This step consists of two parts: checking the required fee and registering the token:
 
 1. To check the required fee, we called the `quoteRegisterTokenFee` method of the bridge contract (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#readProxyContract) and received the value `5000000500000000000`:
-<rb-image zoom src="snowbridge-sepolia-rococo-tested/quoteRegisterTokenFee.png" alt="quoteRegisterTokenFee" />
+<rb-image zoom src="./images/snowbridge-sepolia-rococo-tested/quoteRegisterTokenFee.png" alt="quoteRegisterTokenFee" />
 
 2. To register the token, we called the `registerToken` method of the bridge contract (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#writeProxyContract), specifying the required fee and the address of the deployed token:
-<rb-image zoom src="snowbridge-sepolia-rococo-tested/registerToken.png" alt="registerToken" />
+<rb-image zoom src="./images/snowbridge-sepolia-rococo-tested/registerToken.png" alt="registerToken" />
 
 The registration process should take about 30 minutes, and the new token should appear in the foreignAssets in Rococo Asset Hub. This can be checked using a chain state query in Rococo Asset Hub (https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/chainstate):
-<rb-image zoom src="snowbridge-sepolia-rococo-tested/foreign_asset_query.png" alt="Check if token registered" />
+<rb-image zoom src="./images/snowbridge-sepolia-rococo-tested/foreign_asset_query.png" alt="Check if token registered" />
 
 After successful registration, we received the following response:
 ```
@@ -58,10 +58,10 @@ The next step was sending the XRT token from Sepolia to Rococo Asset Hub. For th
 1. First, we allowed the bridge contract to use 15 XRT from the account: 
 
     https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf#writeContract
-    <rb-image zoom src="snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="Approve XRT spender" />
+    <rb-image zoom src="./images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="Approve XRT spender" />
 
 2. Then requested the fee required for sending the token:
-    <rb-image zoom src="snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
+    <rb-image zoom src="./images/snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
 
 3.  Initiated the transfer of XRT from Sepolia to Rococo Asset Hub following Snowbridge's instructions using the WETH example: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
     
@@ -71,7 +71,7 @@ The next step was sending the XRT token from Sepolia to Rococo Asset Hub. For th
     Example transaction: https://sepolia.etherscan.io/tx/0xec539cd89cb955ffea2ff65cae6685a8abb0966a2c1b76876a308cc036cd18fb
 
     The XRT balance on the target account in Rococo Asset Hub can be checked by sending a `foreignAssets.account()` request in chain state:
-    <rb-image zoom src="snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="Example of foreignAssets.account" />
+    <rb-image zoom src="./images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="Example of foreignAssets.account" />
 
     Sent a total of 15 XRT, so the balance in Rococo Asset Hub looked like this:
     ```

@@ -96,6 +96,6 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
 
-    config.resolve.alias.set('@imagesMarkdown', '/content/posts/images')
+    config.resolve.alias.set('@imagesMarkdown', '/content/posts/')
   }
 };

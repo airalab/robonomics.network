@@ -12,7 +12,7 @@ abstract: "여보세요! PaTara입니다. 최근 Robonomics가 주최한 이벤�
 그럼, 빠르고 필요한 규칙 요약: 혼합된 순서로 된 12개 단어, 실험실을 돌아다니는 TurtleBot 4의 5분 분량의 비디오
 그리고 기억술어구 단어 순서를 망가뜨리고, 이기고자 하는 5~20명의 참가자, 그리고 전략을 생각해낼 수 있는 무료 일요일.
 
-<rb-image zoom src="hacked-johnnys-lab/0.png" alt="Game Interface" />
+<rb-image zoom src="./images/hacked-johnnys-lab/0.png" alt="Game Interface" />
 
 프로그래밍에 어느 정도 익숙하고 괜찮은 노트북이 있지만 이미지 인식 기술은 거의 없습니다. 그 이상으로 
 나는 공정하게 게임을 하기로 결정했다. 즉, 비디오 다운로드 없이, 재생 속도 남용 없이, 플레이바 네비게이션 없이. 
@@ -34,19 +34,19 @@ abstract: "여보세요! PaTara입니다. 최근 Robonomics가 주최한 이벤�
 전체 옵션이 RAM에 있는 경우. 그것은 내 경우가 아니었으므로 다음이 수행되었다: 
 그 순간부터 항상 이 전략을 사용하여 내 CPU 로드 모니터가 다음과 같이 보이도록 만들었다:
 
-<rb-image zoom src="hacked-johnnys-lab/1.png" alt="Parallelizing"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1.png" alt="Parallelizing"/>
 
 
 나는 실행 시간을 약 5초로 단축했다고 믿는다. 조합을 반복하는 가장 좋은 방법을 얻었지만 그것들이 너무 많았다! 첫 번째 단계는 대략 480만 개의
 
-<rb-image zoom src="hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
 
 
 네트워크에서 extrinsics를 수행하는 것이었다. 노드는 단순히 DDOS로 나를 금지시킬 ��이고 그렇지 않아도 영원히 걸릴 것이다! 
 디버깅 목적으로 스크립트를 시작했고 (노드 통신에는 
 [py-substrate-interface](https://pypi.org/project/substrate-interface/1.0.3/) 패키지를 사용했음) 호출 전에
 
-<rb-image zoom src="hacked-johnnys-lab/2.png" alt="1st Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/2.png" alt="1st Attempt"/>
 
 
 _유효하지 않은 기억구문_과 같은 오류가 발생했다. 단서! 사전에 조합을 유효성 검사할 수 있다면, 
@@ -57,7 +57,7 @@ _유효하지 않은 기억구문_과 같은 오류가 발생했다. 단서! 사
 계산량을 크게 줄일 수 있을까? 음, 초기 전략을 조금 배신하는 것으로. 보시다시피, 비디오 시청을 피하려고 했지만,
 수학이 나의 생각을 바꾸게 만들었다. 132배 빠른 전략으로 바꾸었다.
 
-<rb-image zoom src="hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
 
 
 아래는 설명이다: 
@@ -65,14 +65,14 @@ _유효하지 않은 기억구문_과 같은 오류가 발생했다. 단서! 사
 10! 조합을 반복하고 올바른 위치에 두 단어를 삽입하고 구문을 유효성 검사하여 
 옵션을 대략 300,000으로 줄였다! 더불어, 10! 조합 세트가 내 RAM에 맞았다, 훌륭하다!
 
-<rb-image zoom src="hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
 
 
 또한 300k번씩 모든 토큰을 전송하려고 하지 않고 공개 노드를 호출하기 위해 
 로보노믹스 노드를 설정하고 동기화된 결과 계정 주소 잔액을 요청하기로 결정했다! 
 쿼리는 extrinsic보다 '쉽다'. 전체 밤을 동기화하는 동안 (내가 설정한 캐시 한도로)
 
-<rb-image zoom src="hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
 
 
 또한, 모든 토큰을 300k번 전송하고 이를 위해 퍼블릭 노드를 호출하는 것보다, 저는 체인과 동기화된 제 로컬 Robonomics 노드를 설정하고 결과 계정 주소 잔액을 요청하기로 했습니다!
@@ -87,13 +87,13 @@ _유효하지 않은 기억구문_과 같은 오류가 발생했다. 단서! 사
 이제, 스크립트를 다시 수정한 후에 마침내 원하는 쿼리와 트랜잭션 하나만으로 
 원하는 상품을 얻을 수 있을 거예요.
 
-<rb-image zoom src="hacked-johnnys-lab/6.png" alt="4th Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/6.png" alt="4th Attempt"/>
 
 
 이제, 비디오를 25초 보고 (그 사이에 니모닉의 단어를 채워넣으며), 
 보상을 훔치기 위해 최대 30초만 더 필요할 거예요. 해킹했어요.
 
-<rb-image zoom src="hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
 
 
 

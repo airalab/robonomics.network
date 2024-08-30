@@ -23,7 +23,7 @@ tags: ['Announcements', 'Use Cases', 'Collaborations', 'Smart Home']
 
 <!-- ![Smart home floor plan](../images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
 
 Μην μπερδεύεστε από τη λέξη "Ενσύρματο". Αυτό σημαίνει ότι η συσκευή απαιτεί συνεχή τροφοδοσία ρεύματος, ενώ οι συσκευές στη στήλη "Ασύρματο" λειτουργούν με μπαταρία.
 
@@ -49,7 +49,7 @@ tags: ['Announcements', 'Use Cases', 'Collaborations', 'Smart Home']
 
 <!-- ![Smart home lobby plan](../images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
 
 ## Συμπέρασμα
 
