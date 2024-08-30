@@ -161,12 +161,12 @@ You may use text card `<card>` component to accentuate you text block:
 | `linkTex` | `String` | `false` |  | text for the link |
 | `imageLocal` | `String` | `false` |  | if you need local image for your text card |
 | `image` | `String` | `false` |  | if you need image for your text card |
-| `imageSize` | `String` | `false` | `small` | size of your image Options: `small`, `mid`, `big`, `block` |
-| `orientation` | `String` | `false` | `horizontal` | orientation for your text card Options: `horizontal`, `vertical` |
-| `back` | `String` | `false` | `white` | background color of your card Options: `transparent`, `white`, `darkblue`, `gradient` |
-| `shadow` | `String` | `false` | `gray` | shadow color for your card Options: `light`, `gray`, `dark` |
-| `alignContent` | `String` | `false` | `none` | aligns content horizontally Options: `left`, `center`, `right`,  `none` |
-| `alignContentV` | `String` | `false` | `top` | aligns content vertically Options: `top`, `middle` |
+| `imageSize` | `String` | `false` | `small` | size of your image </br> Options: `small`, `mid`, `big`, `block` |
+| `orientation` | `String` | `false` | `horizontal` | orientation for your text card </br> Options: `horizontal`, `vertical` |
+| `back` | `String` | `false` | `white` | background color of your card </br> Options: `transparent`, `white`, `darkblue`, `gradient` |
+| `shadow` | `String` | `false` | `gray` | shadow color for your card </br> Options: `light`, `gray`, `dark` |
+| `alignContent` | `String` | `false` | `none` | aligns content horizontally </br> Options: `left`, `center`, `right`,  `none` |
+| `alignContentV` | `String` | `false` | `top` | aligns content vertically </br> Options: `top`, `middle` |
 
 
 #### Text Abstract
