@@ -124,8 +124,8 @@ IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
 
 or `rb-code` component
 
-
 <rb-code>
+
 <pre>
 ```sh
 import requests
@@ -136,6 +136,7 @@ import json
 import os
 ```
 </pre>
+
 </rb-code>
 
 ## For contributors
