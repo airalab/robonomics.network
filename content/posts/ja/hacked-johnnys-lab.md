@@ -11,7 +11,7 @@ abstract: "こんにちは！PaTaraです。最近、Robonomicsによるイベ�
 
 では、ルールを簡単にまとめると、12 個の単語が混在した順序で並べられ、TurtleBot 4 がラボ内を歩き回り、記憶術のフレーズの語順を台無しにする 5 分間のビデオ、勝利を目指す 5 ～ 20 人の参加者、戦略を考えるための自由な日曜日です。
 
-<rb-image zoom src="hacked-johnnys-lab/0.png" alt="Game Interface" />
+<rb-image zoom src="./images/hacked-johnnys-lab/0.png" alt="Game Interface" />
 
 私はプログラミングにはある程度慣れており、まあまあのラップトップを持っていますが、画像認識のスキルはほとんどありません。それ以上に、 
 ビデオのダウンロードや再生速度の乱用、プレイバーのナビゲーションなどは一切行わないと決めました。 
@@ -33,19 +33,19 @@ abstract: "こんにちは！PaTaraです。最近、Robonomicsによるイベ�
 オプションのセット全体がRAMにある場合です。それは私の場合ではなかったので、次のように行いました。 
 その時点から、私は常にこの戦略を使って、CPUの負荷モニターをこのように見せるようにしました。
 
-<rb-image zoom src="hacked-johnnys-lab/1.png" alt="Parallelizing"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1.png" alt="Parallelizing"/>
 
 
 これにより、実行時間が約5秒に短縮されたと思います。組み合わせを繰り返す最良の方法を得ましたが、それらがあまりにも多すぎました！最初のステップは、おおよそ480百万の
 
-<rb-image zoom src="hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
 
 
 ネットワーク内の外部入力を実行することでした。ノードは私をDDOSのために単純に禁止し、それさえなくても永遠にかかってしまいます！ 
 デバッグのために、スクリプトを開始しました（ノードとの通信には 
 [py-substrate-interface](https://pypi.org/project/substrate-interface/1.0.3/)パッケージを使用しました）
 
-<rb-image zoom src="hacked-johnnys-lab/2.png" alt="1st Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/2.png" alt="1st Attempt"/>
 
 
 そして、呼び出しを行う前に、_無効なニーモニックフレーズ_のようなエラーが発生したことに気づきました。手がかり！プレミアムで組み合わせを検証できれば、 
@@ -56,7 +56,7 @@ abstract: "こんにちは！PaTaraです。最近、Robonomicsによるイベ�
 少し初期の戦略を裏切ることで、それを実現できます。ビデオの視聴を避けるつもりでしたが、
 「ビデオを必要としないハッカー」という考えを変えさせたの���数学でした。132倍速い戦略に変更しました。
 
-<rb-image zoom src="hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
 
 
 以下に説明します。 
@@ -64,14 +64,14 @@ abstract: "こんにちは！PaTaraです。最近、Robonomicsによるイベ�
 10！の組み合わせを繰り返し、2つの単語を正しい位置に挿入し、フレーズを検証し、 
 オプションを約300'000に削減しました。さらに、10！の組み合わせセットは私のRAMに収まりました、素晴らしい！
 
-<rb-image zoom src="hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
 
 
 自分のローカルRobonomicsノードをチェーンと同期させ、その結果のアカウントアドレス残高を尋ねました！ 
 クエリは外部入力よりも「簡単」です。同期化を一晩中行った後（ROM内のチェーンデータでラップトップが爆発しないようにキャッシュ制限を設定しました）、試してみましたが...これは災難でした。ネットワークトランザクション 
 （localhost内でも）時間がかかりすぎました。最後まで待つこともなく、明らかにビデオ全体を見るよりも遅かったです。アカウントの正確なアドレスを知ることができればいいのですが！しかし、そのためにはニーモニックフレーズが必要です... **本当に必要なのでしょうか？**
 
-<rb-image zoom src="hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
 
 
 また、すべてのトークンを300k回転送し、それに対して公開ノードを呼び出す代わりに、私は設定することに決めました 
@@ -87,13 +87,13 @@ abstract: "こんにちは！PaTaraです。最近、Robonomicsによるイベ�
 さて、スクリプトをもう一度修正した後、確実に望ましい賞品を手に入れることができる 
 1つのクエリと1つのトランザクションになりました。
 
-<rb-image zoom src="hacked-johnnys-lab/6.png" alt="4th Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/6.png" alt="4th Attempt"/>
 
 
 さて、ビデオを25秒間見た後（その間にニーモニックの単語を入力している）、 
 報酬を盗むのに最大30秒しかかからないでしょう。ハッキングしました。
 
-<rb-image zoom src="hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
 
 
 

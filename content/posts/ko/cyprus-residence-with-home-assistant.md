@@ -23,7 +23,7 @@ CCS 개발자는 1997년부터 시장에서 활동하고 있으며 600개 이상
 
 <!-- ![Smart home floor plan](../images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
 
 "유선"이라는 단어에 혼동되지 마세요. 이는 장치가 지속적인 전원을 필요로 한다는 것을 의미하며, "무선" 열에 있는 장치는 배터리로 작동됩니다.
 
@@ -49,7 +49,7 @@ CCS 개발자는 1997년부터 시장에서 활동하고 있으며 600개 이상
 
 <!-- ![Smart home lobby plan](../images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
 
 ## 결론
 

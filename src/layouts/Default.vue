@@ -10,12 +10,12 @@
       
         <span class="right-border"></span>
 
-        <Header />
+        <Header :translated="translated" />
 
         <div class="screen-content">
           <slot/>
           <Contacts :withGap="withGap" />
-          <ClientOnly> <Footer/> </ClientOnly>
+          <ClientOnly> <Footer :translated="translated"/> </ClientOnly>
         </div>
 
         <div class="sidetext sidetext-left">
@@ -139,6 +139,10 @@ export default {
     withGap: {
       type: Boolean,
       default: true
+    },
+    translated: {
+      type: Boolean,
+      default: false
     }
   },
 

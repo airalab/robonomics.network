@@ -23,7 +23,7 @@ Unten finden Sie einen Grundriss eines der beiden Blöcke und eine Legende zur K
 
 <!-- ![Smart home floor plan](../images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
 
 Lassen Sie sich nicht von dem Wort "Verkabelt" verwirren. Dies bedeutet, dass das Gerät ständigen Strom benötigt, während die Geräte in der Spalte "Kabellos" batteriebetrieben sind.
 
@@ -49,7 +49,7 @@ Was die Sicherheit betrifft, haben Bewohner Zugang zum Gegensprechanlagensystem 
 
 <!-- ![Smart home lobby plan](../images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
 
 ## Fazit
 

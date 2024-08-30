@@ -54,7 +54,7 @@ After our work in Bali, we have developed an initial concept for the first versi
 
 Below is a detailed list of devices that we plan to assemble into a single kit (suitcase), customize to the fullest extent possible in a laboratory setting, and provide an Ikea-style user manual for self-setup in one's autonomous home. These kits will be available starting in the summer of 2024.
 
-<rb-image zoom src="geck-1/geck-1-scheme.jpg" alt="Robonomics Geck-1 scheme" />
+<rb-image zoom src="./images/geck-1/geck-1-scheme.jpg" alt="Robonomics Geck-1 scheme" />
 
 
 ## What is included in the first version of the G.E.C.K. kit:

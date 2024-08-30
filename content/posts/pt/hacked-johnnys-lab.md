@@ -12,7 +12,7 @@ abstract: "Olá! PaTara na linha. Houve um evento recente “Hack Johnny’s Lab
 Assim, uma rápida e necessária recapitulação das regras: 12 palavras em ordem mista, um vídeo de 5 minutos de um TurtleBot 4 a vaguear por um laboratório
 e estragando a ordem das palavras da frase mnemónica, 5 a 20 participantes dispostos a ganhar e um domingo livre para pensar numa estratégia.
 
-<rb-image zoom src="hacked-johnnys-lab/0.png" alt="Game Interface" />
+<rb-image zoom src="./images/hacked-johnnys-lab/0.png" alt="Game Interface" />
 
 Eu sou meio familiarizado com programação e tenho um laptop decente e quase nenhuma habilidade em reconhecimento de imagem. Mais do que isso, 
 Decidi jogar de forma justa, o que significa sem baixar vídeos, sem abuso de velocidade de reprodução, sem navegação na barra de reprodução. 
@@ -34,19 +34,19 @@ os núcleos lógicos da minha CPU (20 deles) para paralelizar os cálculos. Caso
 Mas com isso tive que dividir meu iterador em 12 partes. Os pacotes de multiprocessing do itertools funcionam juntos, 
 mas quando um conjunto inteiro de opções está na RAM. Esse não era o meu caso, então o seguinte foi realizado:
 
-<rb-image zoom src="hacked-johnnys-lab/1.png" alt="Parallelizing"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1.png" alt="Parallelizing"/>
 
 
 A partir desse momento e sempre eu usaria essa estratégia para fazer meu monitor de carga da CPU parecer assim:
 
-<rb-image zoom src="hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
 
 
 Acredito que isso reduziu o tempo de execução para cerca de 5 segundos. Descobri a melhor maneira de iterar através 
 das combinações, mas havia simplesmente muitas delas! O primeiro passo envolveu realizar aproximadamente 480 milhões 
 extrínsecos na rede. O nó simplesmente me baniria por DDOS e mesmo sem isso levaria uma eternidade!
 
-<rb-image zoom src="hacked-johnnys-lab/2.png" alt="1st Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/2.png" alt="1st Attempt"/>
 
 
 Apenas por razões de depuração, iniciei o script (para comunicação com o nó usei um 
@@ -57,7 +57,7 @@ eu economizaria toneladas de tempo! A análise do GitHub me levou a
 linha de código e adicionei uma validação de combinação ao meu script. Isso reduziu o número de extrínsecos potenciais para aproximadamente 39’000’000 12 vezes mais rápido!
 Mas ainda assim, 39 milhões de chamadas me baniriam para sempre, então eu precisava cavar mais fundo. Como eu poderia cortar significativamente o
 
-<rb-image zoom src="hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
 
 
 número de cálculos? Bem, traindo um pouco minha estratégia inicial. Veja, eu ia evitar assistir vídeos, 
@@ -65,14 +65,14 @@ número de cálculos? Bem, traindo um pouco minha estratégia inicial. Veja, eu 
 Abaixo está a explicação: 
 Com isso, eu só precisava saber duas posições corretas de palavras em uma frase (uma levaria muito tempo, validada por experimento).
 
-<rb-image zoom src="hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
 
 
 Eu iteraria através de 10! combinações, inseriria duas palavras nas posições corretas e validaria a frase, 
 reduzindo as opções para aproximadamente 300’000, uma grande diminuição! Além disso, o conjunto de 10! combinações cabia na minha RAM, excelente! 
 meu próprio nó Robonomics local sincronizado com a cadeia e perguntaria a ele pelo saldo de uma conta resultante!
 
-<rb-image zoom src="hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
 
 
 Além disso, em vez de tentar transferir todos os tokens 300 mil vezes a cada e chamar um nó público para isso, decidi definir
@@ -89,13 +89,13 @@ filtrá-los tendo exatamente 42 XRT e comparar cada endereço gerado com uma lis
 Agora, depois de modificar meu script mais uma vez, finalmente consegui chegar a apenas uma consulta e uma transação que com certeza 
 me daria o prêmio desejado.
 
-<rb-image zoom src="hacked-johnnys-lab/6.png" alt="4th Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/6.png" alt="4th Attempt"/>
 
 
 Agora, depois de assistir 25 segundos do vídeo (enquanto preenchia as palavras de um mnemônico), 
 eu só precisaria de 30 segundos no máximo para roubar a recompensa. Hackeado.
 
-<rb-image zoom src="hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
 
 
 

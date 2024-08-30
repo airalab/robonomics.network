@@ -11,7 +11,7 @@ abstract: "مرحبًا! باتارا على الخط. كان هناك حدث م
 
 لذا، إليك ملخص سريع وضروري للقواعد: 12 كلمة بترتيب مختلط، ومقطع فيديو مدته 5 دقائق لـ TurtleBot 4 وهو يتجول في مختبر ويفسد ترتيب الكلمات في العبارة التذكيرية، و5 إلى 20 مشاركًا على استعداد للفوز ويوم الأحد المجاني للتفكير في استراتيجية.
 
-<rb-image zoom src="hacked-johnnys-lab/0.png" alt="Game Interface" />
+<rb-image zoom src="./images/hacked-johnnys-lab/0.png" alt="Game Interface" />
 
 أنا على دراية بالبرمجة ولدي جهاز كمبيوتر محمول جيد ولا أمتلك أي مهارة تقريبًا في التعرف على الصور. علاوة على ذلك، 
 قررت أن ألعب بشكل عادل، وهو ما يعني عدم تنزيل أي فيديو، وعدم إساءة استخدام سرعة التشغيل، وعدم التنقل عبر شريط التشغيل. 
@@ -33,19 +33,19 @@ abstract: "مرحبًا! باتارا على الخط. كان هناك حدث م
 ولكن مع ذلك كان علي أن أقسم محدد التكرار الخاص بي إلى 12 جزءًا. تعمل حزم multiprocessing itertools معًا، 
 ولكن عندما يكون مجموعة كاملة من الخيارات في الذاكرة. لم يكن هذا حالتي، لذا تم تنفيذ ما يلي:
 
-<rb-image zoom src="hacked-johnnys-lab/1.png" alt="Parallelizing"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1.png" alt="Parallelizing"/>
 
 
 منذ ذلك الوقت وحتى الآن سأستخدم هذه الاستراتيجية لجعل مراقبة تحميل معالج الكمبيوتر الخاص بي تبدو هكذا:
 
-<rb-image zoom src="hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
 
 
 أعتقد أن هذا قصر وقت التنفيذ إلى حوالي 5 ثوانٍ. حصلت على أفضل طريقة للتكرار من خلال 
 المجموعات ولكن كان هناك الكثير منها! الخطوة الأولى تتضمن تنفيذ حوالي 480 مليون 
 عملية خارجية في الشبكة. سيحظرني العقد ببساطة لـ DDOS وحتى بدون ذلك سيستغرق الأمر إلى الأبد!
 
-<rb-image zoom src="hacked-johnnys-lab/2.png" alt="1st Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/2.png" alt="1st Attempt"/>
 
 
 فقط لسبب تصحيح أخطاء بدأت النص (للتواصل مع العقد استخدمت 
@@ -56,7 +56,7 @@ abstract: "مرحبًا! باتارا على الخط. كان هناك حدث م
 سطر الكود وأضفت التحقق من الجمع إلى النص الخاص بي. هذا قلل عدد العمليات الخارجية المحتملة إلى حوالي 39 مليون مرة واحدة!
 ولكن لا يزال، 39 مليون استدعاء سيحظرني إلى الأبد، لذا كنت بحاجة إلى المزيد من البحث. كيف يمكنني تقليص بشكل كبير
 
-<rb-image zoom src="hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/3.png" alt="2nd Attempt"/>
 
 
 عدد الحسابات؟ حسنًا، بقليل من خيانة استراتيجيتي الأولية. انظر، كنت سأتجنب مشاهدة الفيديو، 
@@ -64,14 +64,14 @@ abstract: "مرحبًا! باتارا على الخط. كان هناك حدث م
 أدناه هو التفسير: 
 مع ذلك، كان علي أن أعرف مواقع كلمتين صحيحتين في عبارة (سيستغرق واحدًا وقتًا طويلاً، تم التحقق منه بالتجربة).
 
-<rb-image zoom src="hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/4.png" alt="2 Words Insertion"/>
 
 
 سأتكرر من خلال 10! مجموعات، أدخل كلمتين في المواقع الصحيحة وأحقق العبارة، 
 مما يقلل من الخيارات إلى حوالي 300’000 انخفاضًا كبيرًا! أكثر من ذلك، مجموعات 10! تناسبت في ذاكرتي، ممتاز! 
 أيضًا، بدلاً من محاولة نقل جميع الرموز 300 ألف مرة واستدعاء عقد عام لذلك قررت إعداد
 
-<rb-image zoom src="hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/5.png" alt="3rd Attempt"/>
 
 
 عقد Robonomics المحلي الخاص بي متزامنًا مع السلسلة وطلب منه رصيد حساب النتيجة! 
@@ -87,13 +87,13 @@ abstract: "مرحبًا! باتارا على الخط. كان هناك حدث م
 الجائزة المرغ��بة. 
 الآن، بعد مشاهدة 25 ثانية من الفيديو (في الوقت نفسه ملء كلمات ذاكرية)،
 
-<rb-image zoom src="hacked-johnnys-lab/6.png" alt="4th Attempt"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/6.png" alt="4th Attempt"/>
 
 
 سأحتاج فقط إلى 30 ثانية كحد أقصى لسرقة الجائزة. قد نجحت. 
 سأحتاج ف��ط 30 ثانية كحد أقصى لسرقة الجائزة. تم اختراقها.
 
-<rb-image zoom src="hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
+<rb-image zoom src="./images/hacked-johnnys-lab/7.png" alt="Discord Bot Notification"/>
 
 
 
