@@ -125,7 +125,6 @@ IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
 or `rb-code` component
 
 ``<rb-code>``
-
 <code>
 ```sh
 import requests
