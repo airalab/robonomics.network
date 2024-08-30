@@ -108,9 +108,7 @@ If you need to localize your cover than your *cover_image* will look something l
 
 To insert code in your post you may use default markdown syntax:
 
-
-
-```
+<pre>
 ```
 import requests
 from substrateinterface import Keypair, KeypairType
@@ -122,12 +120,12 @@ import os
 ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
 IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
 ```
-```
+</pre>
 
 or `rb-code` component
 
-```
 
+<pre>
 <rb-code>
 
 ```sh
@@ -140,7 +138,7 @@ import os
 
 ```
 </rb-code>
-```
+</pre>
 
 ## For contributors
 Please, fill free to open issues with your suggestions or pull requests.
