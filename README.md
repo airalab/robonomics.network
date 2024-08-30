@@ -140,5 +140,47 @@ import os
 ``</rb-code>``
 
 
+#### Text Card
+
+You may use text card `<card>` component to accentuate you text block:
+
+```
+<Card alignContent="center">
+
+**1. Statistics of median leasing price from August to November 2022 (information taken from [parachains.info](http://parachains.info/)):**
+
+</Card>
+
+```
+
+- Props: 
+
+| Property | Type | Required | Default | Description |
+|---|---|---|---|---|
+| `link` | `String` | `false` |  | if you want your card to be a link |
+| `linkTex` | `String` | `false` |  | text for the link |
+| `imageLocal` | `String` | `false` |  | if you need local image for your text card |
+| `image` | `String` | `false` |  | if you need image for your text card |
+| `imageSize` | `String` | `false` | `small` | size of your image Options: `small`, `mid`, `big`, `block` |
+| `orientation` | `String` | `false` | `horizontal` | orientation for your text card Options: `horizontal`, `vertical` |
+| `back` | `String` | `false` | `white` | background color of your card Options: `transparent`, `white`, `darkblue`, `gradient` |
+| `shadow` | `String` | `false` | `gray` | shadow color for your card Options: `light`, `gray`, `dark` |
+| `alignContent` | `String` | `false` | `none` | aligns content horizontally Options: `left`, `center`, `right`,  `none` |
+| `alignContentV` | `String` | `false` | `top` | aligns content vertically Options: `top`, `middle` |
+
+
+#### Text Abstract
+You may use text abstract in your posts:
+
+```
+<Abstract :style="{marginBottom: '2rem'}" class="post_abstract"  :text="`<b>Robotics</b> is a rapidly developing field of science that allows people to create machines that can safely exist in a complex human world, interact with its inhabitants (humans and other machines), perform some useful actions, usually aimed at improving the humans’ quality of life and in some way to simplify it.`" />
+```
+
+| Property | Type | Required | Default | Description |
+|---|---|---|---|---|
+| `text` | `String` | `true` |  | text you want to add  for your abstract |
+| `className` | `String` | `false` |  | custom class for the component |
+
+
 ## For contributors
 Please, fill free to open issues with your suggestions or pull requests.
