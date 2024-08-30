@@ -4,7 +4,7 @@ date: 2024-08-23
 published: true
 locale: 'en'
 tags: ['Digital Twin', 'Web3', 'Philosophy of Robonomics']
-cover_image: ./images/digital-twins-introduction/cover_eng.png
+cover_image: ./images/digital-twins-introduction/cover.png
 description: "Digital twins are a powerful concept in modern technology. This guide will introduce you to the basics of digital twins, covering their history, types, current industry standards, and potential applications in web3. Whether you're new to the topic or looking to refresh your knowledge, this concise overview will provide valuable insights."
 abstract: "Digital twins are not a new concept; they emerged in the early 1990s and have since periodically captured the attention of researchers, engineers, and founders. Now, in 2024, digital twins are again in the spotlight—since 2016, according to Google Trends, interest in them has steadily grown. We believe it's important to familiarize readers with this concept, as the term is often interpreted loosely, making it challenging to understand. Igor Brylev [movefasta]"
 ---
@@ -16,7 +16,7 @@ When people first hear about digital twins, they often think of computer models.
 
 A traditional engineering model is basically just a *blueprint*. It doesn't describe one specific object, but rather a whole group of similar objects. (When we say "object," we mean anything that exists in the real world and takes up a particular space.)
 
-<rb-image zoom src="digital-twins-introduction/eng_1.png" alt="Robot Class Model" />
+<rb-image zoom src="digital-twins-introduction/1.png" alt="Robot Class Model" />
 <p style="text-align: center; "><i>A model is a description of some class of objects. It can be digital, but not necessarily. A model is primarily a description of an abstract, rather than a specific/physical object.</i></p>
 
 When a system is built using a blueprint or engineering plans, it doesn't stay exactly the same forever. As it's used, it starts to change bit by bit. Over time, it can become very different from how it was when it was first made. This is why it's important to keep updating our model or description of the system. We need to make sure our model matches what the system is really like now, not just how it was at the beginning. This helps us when we want to think about the system or use computers to work with it. By keeping our model up-to-date, we can make sure we're dealing with the system as it really is, not how it used to be.
@@ -24,7 +24,7 @@ When a system is built using a blueprint or engineering plans, it doesn't stay e
 This is how we come to the need to distinguish between general models (or class models) and digital models (or instance models). A general model describes a class of objects and its main properties, while a digital model adds to this description data that allows us to judge a specific representative of this class - its unique name, identifier or serial number, position in space and time, calibration coefficients, and other data that allow linking this description to a real-world object. This is why a virtual world cannot be a digital model if it is not associated with a specific physical asset, and actions in this virtual world do not lead to changes in its parameters in real life.
 
 
-<rb-image zoom src="digital-twins-introduction/eng_2.png" alt="Physical asset's model" />
+<rb-image zoom src="digital-twins-introduction/2.png" alt="Physical asset's model" />
 <p style="text-align: center; "><i>Multiple physical objects can correspond to a single abstract object.</i></p>
 
 We started this article with examples from technology and manufacturing. But now we're using broader terms like "systems" and "objects." This is because digital models can be used for more than just machines. In fact, anything in the real world can have a digital model. This could be something as small as a living cell or as big as an entire ecosystem or even a star system.
@@ -45,12 +45,12 @@ Until recently, humanity was quite limited in its ability to work with informati
 
 Previously, information about the operation of devices was entered by people (for example, into some kind of graph or table).
 
-<rb-image zoom src="digital-twins-introduction/eng_3.png" alt="Digital model with historical data" />
+<rb-image zoom src="digital-twins-introduction/3.png" alt="Digital model with historical data" />
 <p style="text-align: center; "><i>A model of a physical object is a description of a specific instance, manually compiled and incorporating its operational history (log or datalog of historical data).</i></p>
 
 Of course, this was time-consuming, expensive, and led to errors in information transmission. The addition of microchips to devices and the development of the information technology industry made it possible to continuously collect information without human operators. While devices used to be released and then lived their independent lives (including modifications), now each smart device can provide feedback about its state and record historical data. The digital model can receive up-to-date data about the system's state automatically. In this case, the digital model becomes a *digital shadow* - a log of changes in the system's states during its operation, collected autonomously.
 
-<rb-image zoom src="digital-twins-introduction/eng_4.png" alt="Digital Shadow" />
+<rb-image zoom src="digital-twins-introduction/4.png" alt="Digital Shadow" />
 <p style="text-align: center; "><i>A digital shadow is an automatically compiled record of an object instance, including its historical data.</i></p>
 
 In the case of living people, digital shadows are user profiles on various digital platforms - online stores, social networks; for organizations, it can be the history of bank account transactions; for computers - various program operation logs. In Robonomics, a digital shadow is created by calling datalog, which adds another entry to the history of changes of the physical parameter we need.
@@ -59,7 +59,7 @@ But where did the concept of a digital shadow come from? Why wasn't this automat
 
 Actually, a *digital twin* is precisely such an entity that automatically receives data (collecting a digital shadow), performs calculations on them (making decisions about changing the state), and then carries out some actions on the system.
 
-<rb-image zoom src="digital-twins-introduction/eng_5.png" alt="Digital Twin" />
+<rb-image zoom src="digital-twins-introduction/5.png" alt="Digital Twin" />
 <p style="text-align: center; "><i>A digital twin is an interactive model connected to a physical object that can automatically make decisions to change its operational parameters.</i></p>
 
 In other words, it's a working computer program or simulation model directly linked to the control object. If the simulation model is not yet tied to the control object and lacks a unique ID, serial number, and operational history, it is called a *digital twin prototype*.
