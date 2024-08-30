@@ -49,7 +49,7 @@
           {{ $t('Anyone can contribute to') }} <g-link to="https://github.com/airalab">{{ $t('the code base') }}</g-link> {{ $t('or') }} <g-link to="https://robonomics.academy/en/learn/">{{ $t('build services with Robonomics') }}</g-link> 
         </div>
 
-        <div class="robonomics-info footer-text"  v-if="$locale != 'en'">
+        <div class="robonomics-info footer-text"  v-if="$locale != 'en' && !translated">
           <span class="">{{ $t('Translation was executed by AI so there may be some inaccuracies') }}. </span>
            <g-link to="https://github.com/airalab/robonomics.network/issues">{{ $t('Inform us') }}</g-link>, {{ $t('please') }}, {{ $t('if you find any') }}
         </div>
@@ -185,6 +185,14 @@ query {
 <script>
 
   export default {
+
+    props: {
+      translated: {
+        type: Boolean,
+        default: false
+      }
+    },
+
     methods: {
       loadPage(newpath) {
         window.location.href = newpath

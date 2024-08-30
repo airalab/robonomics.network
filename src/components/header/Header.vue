@@ -31,7 +31,7 @@
           </div>
 
           <div class="header-side" dir="ltr">
-            <languageSwitcher/>
+            <languageSwitcher :translated="translated"/>
             <HeaderNav/>
           </div>
       
@@ -49,6 +49,13 @@
 
 <script>
 export default {
+
+  props: {
+    translated: {
+      type: Boolean,
+      default: false
+    }
+  },
 
   components: {
     languageSwitcher: () => import('~/components/header/languageSwitcher.vue'),

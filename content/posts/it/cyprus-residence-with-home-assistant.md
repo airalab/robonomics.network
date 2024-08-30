@@ -23,7 +23,7 @@ Di seguito è riportata una pianta di uno dei due blocchi e una legenda di desig
 
 <!-- ![Smart home floor plan](../images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-floor-plan-cyprus-residence.jpg" alt="Smart home floor plan" />
 
 Non lasciarti confondere dalla parola "Cablati". Questo significa che il dispositivo richiede alimentazione costante, mentre i dispositivi nella colonna "Senza fili" sono alimentati a batteria.
 
@@ -49,7 +49,7 @@ Per quanto riguarda la sicurezza, i residenti avranno accesso al sistema di cito
 
 <!-- ![Smart home lobby plan](../images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg) -->
 
-<rb-image zoom src="cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
+<rb-image zoom src="./images/cyprus-residence-with-home-assistant/smart-home-lobby-plan-cyprus-residence.jpg" alt="Smart home lobby plan" />
 
 ## Conclusioneeee
 

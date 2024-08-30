@@ -32,7 +32,7 @@ Furthermore, the robot's fundamental setup underwent slight enhancements to acco
 - A protective frame for the camera and lidar was also 3D-printed.
 - Additionally, the robot is now encased in warning tape for enhanced visibility.
 
-<rb-image zoom src="data-harvester-report-april-2024/upgraded-turtle-bot-4-pro.jpg" alt="Upgraded Turtle Bot 4 pro" />
+<rb-image zoom src="./images/data-harvester-report-april-2024/upgraded-turtle-bot-4-pro.jpg" alt="Upgraded Turtle Bot 4 pro" />
 
 ## Software Development Progress
 
@@ -54,13 +54,13 @@ Since the beginning of March, experimental trips have been made with the robot. 
 
 Firstly, several SLAM laps were made around the office territory. As a result, a sufficiently high-quality map of the studied area was formed.
 
-<rb-image zoom src="data-harvester-report-april-2024/turtle-bot-map-testing.png" alt="Turtle Bot map testing" caption="A map of an office space with an overlay of robot coordinates after one of the missions" />
+<rb-image zoom src="./images/data-harvester-report-april-2024/turtle-bot-map-testing.png" alt="Turtle Bot map testing" caption="A map of an office space with an overlay of robot coordinates after one of the missions" />
 
 Then, based on the map, the robot embarked on a mission to collect data. After its completion, data about air quality and Wi-Fi signal quality were collected along with data about the robot's location on the map. This allowed the harvested data to be combined with the points where they were collected. In the end, the final archive was sent for processing and visualization.
 
-<rb-image zoom src="data-harvester-report-april-2024/turtle-bot-4-app-1.png" alt="Turtle Bot application air sensor data" caption="UI for the data collected from the air sensors installed on Turtlebot 4 Pro" />
+<rb-image zoom src="./images/data-harvester-report-april-2024/turtle-bot-4-app-1.png" alt="Turtle Bot application air sensor data" caption="UI for the data collected from the air sensors installed on Turtlebot 4 Pro" />
 
-<rb-image zoom src="data-harvester-report-april-2024/turtle-bot-4-app-2.png" alt="Turtle Bot application wi-fi coverage" caption="UI for Wi-Fi coverage analytics based on data collected from the upgraded Turtlebot 4 Pro" />
+<rb-image zoom src="./images/data-harvester-report-april-2024/turtle-bot-4-app-2.png" alt="Turtle Bot application wi-fi coverage" caption="UI for Wi-Fi coverage analytics based on data collected from the upgraded Turtlebot 4 Pro" />
 
 ## Next Milestones
 

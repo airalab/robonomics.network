@@ -1,6 +1,6 @@
 <template>
 
-  <div class="select-wrapper" :class="{'bigGap': locale !== 'en'}">
+  <div class="select-wrapper" :class="{'bigGap': locale !== 'en' && !translated}">
     <select aria-label="choose preferably language" v-if="$localesList" tabindex="0" @change="onSelectChange($event)">
   
       <template v-for="(item,key) in $localesList">
@@ -12,7 +12,7 @@
       </template>
 
     </select>
-    <span v-if="locale !== 'en'">AI</span>
+    <span v-if="locale !== 'en' && !translated">AI</span>
   </div>
 
 </template>
@@ -84,6 +84,13 @@
 <script>
 
 export default {
+
+  props: {
+    translated: {
+      type: Boolean,
+      default: false
+    }
+  },
 
   data() {
     return {

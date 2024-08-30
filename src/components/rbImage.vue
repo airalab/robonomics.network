@@ -1,4 +1,4 @@
-<template >
+<template v-if="zoom">
   <figure class="rb-image">
     <g-link 
       v-if="pictureLink"
@@ -64,7 +64,7 @@ export default {
 
   data(){
     return {
-      picture: require(`!!assets-loader!@imagesMarkdown/${this.src}`),
+      picture: require(`!!assets-loader!@imagesMarkdown/${this.src.replace('../', '').replace('./', '')}`),
     }
   },
 
