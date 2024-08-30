@@ -28,9 +28,9 @@ To start it locally you need install node.js and [Gridsome framework](https://gr
 
 1. You need to create **markdown** file in ``content/posts``. File name must be in *kebab case*: e.g `digital-twins-introduction.md`.
 
-2. Then you need to add ***Frontmatter***:
+2. Then, you need to add ***Frontmatter***:
  
-It must be at the top of the Markdown file, and must take the form of valid YAML set between triple-dashed lines. Between the triple-dashed lines, you can set or edit folowing options:
+It must be at the top of the Markdown file, and must take the form of valid YAML set between triple-dashed lines. Between the triple-dashed lines, you can set or edit following options:
 
 ```
 ---
@@ -52,10 +52,10 @@ translated: true # add this parameter if you translated the post by yourself and
 
 #### Images 
 
-- Create folder with the same name as your post in `content/posts/images/url-of-your-post`. Upload images in the folder.
+- Create a folder with the same name as your post in `content/posts/images/url-of-your-post`. Upload images in the folder.
 
   - For localized posts:
-    Create folder with the locale you are using in `content/posts/images/locale`. Then, create folder with the same name as your post in `content/posts/images/locale/url-of-your-post`. Upload images in the folder.
+      Create folder with the locale you are using in `content/posts/images/locale`. Then, create folder with the same name as your post in `content/posts/images/locale/url-of-your-post`. Upload images in the folder.
 
 - There are two ways for inserting pictures in your post:
 
@@ -93,7 +93,9 @@ If you need to localize your cover than your *cover_image* will look something l
 ```
 
 - Props:
-  | Property | Type | Required | Default | Description |
+
+
+| Property | Type | Required | Default | Description |
 |---|---|---|---|---|
 | `src` | `String` | `true` |  | path to the image |
 | `link` | `String` | `false` |  | loops youtube video |
@@ -106,8 +108,10 @@ If you need to localize your cover than your *cover_image* will look something l
 
 To insert code in your post you may use default markdown syntax:
 
-```
 
+
+```
+```
 import requests
 from substrateinterface import Keypair, KeypairType
 from robonomicsinterface import Account
@@ -117,12 +121,12 @@ import os
 
 ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
 IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
-
+```
 ```
 
 or `rb-code` component
 
-``
+```
 
 <rb-code>
 
@@ -136,8 +140,7 @@ import os
 
 ```
 </rb-code>
-
-``
+```
 
 ## For contributors
 Please, fill free to open issues with your suggestions or pull requests.
