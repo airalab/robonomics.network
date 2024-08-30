@@ -126,8 +126,9 @@ or `rb-code` component
 
 
 <pre>
-<rb-code>
 
+<code>
+<rb-code>
 ```sh
 import requests
 from substrateinterface import Keypair, KeypairType
@@ -135,9 +136,9 @@ from robonomicsinterface import Account
 import typing as tp
 import json
 import os
-
 ```
 </rb-code>
+</code>
 </pre>
 
 ## For contributors
