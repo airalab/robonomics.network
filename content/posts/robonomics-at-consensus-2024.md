@@ -3,7 +3,7 @@ title: Build DePIN projects at Coindesk Consensus Hackathon!
 date: 2024-05-22
 published: true
 locale: 'en'
-cover_image: ./images/Consensus-2024-RoboHackathon.jpg
+cover_image: ./images/robonomics-at-consensus-2024/cover.png
 description: "Robonomics is hosting a track at Consensus 2024 Hackathon, challenging participants to build useful DePIN projects. Participants will have remote access to robotics and smart home labs and can add their favorite web3 tools to build infrastructure for the real world."
 abstract: "Robonomics is hosting a track at Consensus 2024 Hackathon giving participants access to works with smart homes and robotics equipment"
 tags: ['Robonomics parachain', 'Consensus', 'Events', 'Buidl']

@@ -4,7 +4,7 @@ date: 2024-07-20
 published: true
 locale: 'en'
 tags: ['Polkadot', 'Web3', 'DevOps', 'Announcements', 'Roadmap']
-cover_image: ./images/robonomics-won-75-polkadot-auction/cover.png
+cover_image: ./images/robonomics-won-75-polkadot-auction/cover.jpg
 description: 'Robonomics has won a Polkadot Parachain slot auction and will be connected to the Polkadot Relay chain starting September 25, 2024. Below are the launch plans, what will happen with the parachain on the Kusama network, and what we aim to achieve during the slot lease over the next 2 years.'
 abstract: "Robonomics has won a Polkadot Parachain slot auction and will be connected to the Polkadot Relay chain starting September 25, 2024. Below are (1) the launch plans, (2) what will happen with the parachain on the Kusama network, and (3) what we aim to achieve during the slot lease over the next 2 years."
 ---
@@ -26,7 +26,7 @@ The process of launching a parachain on Polkadot will be very similar to how Rob
 7. The ability to activate a free subscription in Kusama will appear following the implementation of the ability to activate RWS tokens, which in turn is awaiting the bridge to Ethereum.
 
 
-<rb-image zoom src="robonomics-won-75-polkadot-auction/infographic-Robonomics-Subscription-in-Polkadot.webp" alt="Infographics Robonomics Subscription in Polkadot" />
+<rb-image zoom src="robonomics-won-75-polkadot-auction/infographic-Robonomics-Subscription-in-Polkadot.jpg" alt="Infographics Robonomics Subscription in Polkadot" />
 
 The launch of the Robonomics parachain on Polkadot will be an interesting event, representing the start of a multi relay chain project with unified tokenomics. Establishing the Robonomics parachain in Polkadot will involve testing system on BridgeHub, making them part of the architecture. Importantly, Polkadot will introduce the oldest project in the DePIN field, bringing new application scenarios to the Polkadot ecosystem.
 
