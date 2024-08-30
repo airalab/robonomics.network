@@ -124,9 +124,10 @@ IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
 
 or `rb-code` component
 
-<rb-code>
+
 
 <pre>
+`<rb-code>`
 ```sh
 import requests
 from substrateinterface import Keypair, KeypairType
@@ -135,9 +136,8 @@ import typing as tp
 import json
 import os
 ```
+`</rb-code>`
 </pre>
-
-</rb-code>
 
 ## For contributors
 Please, fill free to open issues with your suggestions or pull requests.
