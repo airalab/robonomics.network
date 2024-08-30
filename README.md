@@ -126,8 +126,8 @@ or `rb-code` component
 
 
 
-<pre>
-insert the following inside **<rb-code>**
+<code>
+<rb-code>
 ```sh
 import requests
 from substrateinterface import Keypair, KeypairType
@@ -136,7 +136,8 @@ import typing as tp
 import json
 import os
 ```
-</pre>
+</rb-code>
+</code>
 
 ## For contributors
 Please, fill free to open issues with your suggestions or pull requests.
