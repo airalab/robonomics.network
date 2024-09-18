@@ -57,7 +57,7 @@ their colleagues and the assemblers may protect themselves against blame.
 
 ## Architecture.
 Below is a schemed recap of the architecture of the software used in this case. Some of the technical details are 
-omitted but the concept itself is clear: FECC lets you save valuable data in an irreplaceable form to avoid fraud and 
+omitted but the concept itself is clear: FEECC lets you save valuable data in an irreplaceable form to avoid fraud and 
 ensure safe supply chains. This may come with other manufacturing modules with the same core idea inside: secure and 
 transparent data storage and use.
 
