@@ -21,7 +21,7 @@
                             <p> <span class="token__big-text">XRT</span> {{ $t('is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.') }} </p>
                         </div>
     
-                        <g-link to="https://crustipfs.info/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph" dir="ltr">
+                        <g-link to="https://gw.crust-gateway.com/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph" dir="ltr">
                             <div class="token__graph-arrow">
                                 <span>{{ $t('Token distribution') }}</span>
                                 <ArrowIcon />
