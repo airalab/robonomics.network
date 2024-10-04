@@ -2,18 +2,18 @@
   <client-only>
     <section id="blog-banner" class="section__solid section__blue">
       <div class="layout">
-          <h1>{{$ts('Important news &amp; announcements')}}</h1>
+          <h1>{{$t('Important news &amp; announcements')}}</h1>
           <div class="blog-banner__wrapper">
             <div class="blog-banner__img">
-              <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
+              <g-image quality="75" alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
             </div>
             <div class="blog-banner__tags-wrapper" v-show="tags.length">
               <ul class="list blog-banner__tags-list animate-inside-fast" v-in-viewport.once>
                 <li class="blog-banner__tags-item">
-                  <g-link class="blog-banner__tags-link" to="/blog/">{{$ts('All posts')}}</g-link>
+                  <g-link class="blog-banner__tags-link" to="/blog/">#{{$t('All posts')}}</g-link>
                 </li>
                 <li class="blog-banner__tags-item" v-for="tag in tags" :key="tag.id">
-                  <g-link class="blog-banner__tags-link" :class="{'inactiveTag': activeTag !== '' && tag.title !== activeTag}" :to="tag.path">{{tag.title}}</g-link>
+                  <g-link class="blog-banner__tags-link" :class="{'inactiveTag': activeTag !== '' && tag.title !== activeTag}" :to="tag.path">#{{tag.title}}</g-link>
                 </li>
               </ul>
             </div>
@@ -104,7 +104,6 @@ export default {
   }
 
   .blog-banner__tags-link {
-    font-family: var(--font-family-code);
     font-weight: 600;
     text-decoration: none;
     color: #fff;

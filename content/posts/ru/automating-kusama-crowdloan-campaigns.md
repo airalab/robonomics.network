@@ -4,7 +4,7 @@ date: 2021-12-08
 published: true
 locale: 'ru'
 tags: ['Парачейн Робономика']
-cover_image: ./images/automating-kusama-crowdloan-campaigns/cover.jpg
+cover_image: ../images/automating-kusama-crowdloan-campaigns/cover.jpg
 description: "Начиная с 4ой crowdloan кампании парачейна Робономики корневые разработчики приступают к реализации автономного оракула для участия в последующих аукционах сети Кусама."
 abstract: "Начиная с 4ой crowdloan кампании парачейна Робономики корневые разработчики приступают к реализации автономного оракула для участия в последующих аукционах сети Кусама."
 ---
@@ -33,7 +33,7 @@ import KusamaSlotBanner from '~/components/blocks/KusamaSlotBanner.vue'
 
 Конечно, и тут есть важная специфика: слот необходимо продлить до окончания текущей аренды, иначе возможен перебой или усложнение в работе сервисов парачейна (парачейн перейдёт в режим [Pay-as-you-go Parachains](https://medium.com/polkadot-network/parathreads-pay-as-you-go-parachains-7440d23dde06), на какое-то время).
 
-!["Экосистема Полкадот"](./images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
+!["Экосистема Полкадот"](../images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
 
 В общем важно оставаться в строю. Ниже поговорим о предлагаемом нами первом варианте алгоритма для автономного расчёта основных параметров crowdloan кампании оракулом. Наверное, надо бы дать ему имя, но пока ничего интересного в голову не приходит.
 

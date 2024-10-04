@@ -3,7 +3,7 @@ title: "ROBONOMICS & CRUST NETWORKS FAZEM PARCERIA ESTRATÉGICA!"
 date: 2022-07-22
 published: true
 locale: 'pt'
-cover_image: ./images/robonomics-and-crust-networks-strategic-partnership/cover.png
+cover_image: ../images/robonomics-and-crust-networks-strategic-partnership/cover.png
 description: "Esta parceria significa que haverá uma integração muito mais completa entre as parachains Crust e Robonomics em Kusama, bem como uma nova abordagem para a colaboração entre cadeias para simplificar a experiência do usuário."
 abstract: "Esta parceria significa que haverá uma integração muito mais completa entre as parachains Crust e Robonomics em Kusama, bem como uma nova abordagem para a colaboração entre cadeias para simplificar a experiência do usuário."
 tags: ['Colaborações', 'Paracadeia de Robonomics']
@@ -26,12 +26,12 @@ Há dois objetivos principais que procuramos atingir juntos:
 </robo-list>
 
 <p align="center">
-  <img src="./images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
+  <img width="500" height="282" src="../images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
 </p>
 
 A equipe da Robonomics já começou a explorar a rede Crust e ficou impressionada com a diligente abordagem da documentação. Você já pode lançar um robô da [Boston Dynamics no laboratório da Bay Area](https://spot.merklebot.com) através de uma transação na parachain Robonomics, enquanto os dados serão registrados na Crust. Sinta-se à vontade para experimentá-lo no site [spot.merklebot.com](https://spot.merklebot.com).
 
-![Demo web app](./images/robonomics-and-crust-networks-strategic-partnership/demo.png)
+![Demo web app](../images/robonomics-and-crust-networks-strategic-partnership/demo.png)
 
 Agora, vamos nos concentrar na integração do XCM entre a Crust Shadow e a Robonomics. Isto nos permitirá enviar transações para armazenamento diretamente de dispositivos inteligentes de forma totalmente descentralizada. Deve-se notar que existe um conjunto interessante de perguntas relacionadas às taxas de transação quando os serviços são entregues por uma parachain a outra,  que precisa ser respondida.
 

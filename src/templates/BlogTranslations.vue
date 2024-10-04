@@ -10,12 +10,12 @@
 
           <div class="text-wrapper">
             <p>
-              <b>{{ $ts('This page may need translation') }}.</b>
+              <b>{{ $t('This page may need translation') }}.</b>
               <br/>
-              {{ $ts('If you want to help us with translation') }}:
+              {{ $t('If you want to help us with translation') }}:
             </p>
             <div>
-              <span>{{ $ts('contact us at') }}:  <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a> </span>
+              <span>{{ $t('contact us at') }}:  <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a> </span>
             </div>
             <h3>Meanwhile, you can check available translations:</h3>
           </div>

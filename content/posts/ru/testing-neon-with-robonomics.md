@@ -4,7 +4,7 @@ date: 2022-10-03
 published: true
 locale: 'ru'
 tags: ['Robonomics в Ethereum', 'Сотрудничество', 'Умные контракты', 'Neon']
-cover_image: ./images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
+cover_image: ../images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
 description: "Целью настоящего тестирования была проверка платформы Neon на предмет её готовности к production stage с помощью умных контрактов Robonomics, которые позволяют кибер-физическим системам (роботам) заключать сделки на выполнение заложенного в них алгоритма"
 abstract: ""
 ---
@@ -37,7 +37,7 @@ abstract: ""
 
 Чтобы в полной мере воспользоваться возможностями умных контрактов был выбран сценарий взаимодействия двух автономных экономических агентов. Рассмотрим жизненный цикл обязательства в сети Robonomics: 
 
-![Liability Life Cycle](./images/testing-neon-with-robonomics/step-by-step-3.jpg)
+![Liability Life Cycle](../images/testing-neon-with-robonomics/step-by-step-3.jpg)
 
 На рисунке выше показано, что провайдер сети Robonomics обращается к контракту Lighthouse, который в свою очередь вызывает [фабрику контрактов](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) для создания контракта Liability. Последний содержит в себе данные о сделки, такие как техническое задание, оплату за услугу, адрес валидатора и deadline. 
 
@@ -91,7 +91,7 @@ abstract: ""
 
 https://youtu.be/fYJVF7KrNnI
 
-![Liability](./images/testing-neon-with-robonomics/liability.jpg)
+![Liability](../images/testing-neon-with-robonomics/liability.jpg)
 
 При запуске симуляции создаются сообщения оффера, а от клиента приходит сообщение деманда, после чего создается контракт Liability с помощью функции `createLiability` контракта Lighthouse. С помощью контракта XRT происходит перевод токенов с адреса заказчика на адрес контракта Liability. 
 
@@ -107,11 +107,13 @@ https://youtu.be/fYJVF7KrNnI
 
 В процессе загрузки контрактов выяснилось, что proxy не всегда возвращает ответ вовремя, отчего Truffle завершается с ошибкой:
 
-```
+<rb-code>
+
+```sh
 TypeError: Cannot read properties of null (reading 'from')                                    
-    at Web3InterfaceAdapter.<anonymous> (/usr/lib/node_modules/truffle/build/webpack:/packages
+    at Web3InterfaceAdapter.(<anonymous>) (/usr/lib/node_modules/truffle/build/webpack:/packages
 /interface-adapter/dist/adapter/web3/index.js:71:1)                                           
-    at Generator.next (<anonymous>)                                                           
+    at Generator.next (<anonymous>)                                                          
     at fulfilled (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
 /adapter/web3/index.js:5:43)                                                                  
     at runMicrotasks (<anonymous>)
@@ -119,6 +121,7 @@ TypeError: Cannot read properties of null (reading 'from')
 Truffle v5.5.23 (core: 5.5.23)
 Node v16.14.0
 ```
+</rb-code>
 
 Не удалось найти зависимость между условиями тестирования и возникновением ошибки, но вероятнее всего Neon EVM не может отправить receipt транзакции, а Truffle не может обработать ответ Null. 
 
@@ -132,7 +135,9 @@ Node v16.14.0
 
 Neon EVM возвращает довольно скудные описания событий после транзакции, например:
 
-```
+<rb-code>
+
+```sh
  events: {
     '0': {
       address: '0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C',
@@ -150,6 +155,7 @@ Neon EVM возвращает довольно скудные описания �
     },
 ...
 ```
+</rb-code>
 
 Вместо 0, 1 и т.д. мы ожидали увидеть поименованные события.
 

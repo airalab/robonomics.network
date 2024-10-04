@@ -8,7 +8,7 @@
 
             <section class="layout layout__text">
                 <Card link="/xrt/" image="/website_cover_token.jpg" :imageRound="false" orientation="vertical" imageSize="block">
-                    <h3>{{$ts('Robonomics token')}}, XRT</h3>
+                    <h3>{{$t('Robonomics token')}}, XRT</h3>
                 </Card>
 
                 <Card link="/papers/" orientation="vertical">

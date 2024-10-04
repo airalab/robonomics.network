@@ -1,40 +1,55 @@
 - title: 'Twitter'
-  description: 'The latest Robonomics news here.'
-  img: 'twitter.png'
-  buttonicon: '↗'
   options:
     - link: 'https://twitter.com/AIRA_Robonomics'
       text: 'Follow us'
 
-- title: 'Discord'
-  description: 'Chat with us and our community. Feel free to ask any questions and discuss your suggestions.'
-  img: 'logos/discord.png'
-  buttonicon: '+'
+- title: 'Github'
+  img: 'contacts__github.png'
   options:
-    - link: 'https://discord.gg/JpaN2XAmqY'
+    - link: 'https://github.com/airalab'
+      text: 'Github'
+
+
+- title: 'Youtube'
+  img: 'contacts-youtube-square.svg'
+  options:
+    - link: 'https://www.youtube.com/c/Airalab'
+      text: 'Watch videos'
+
+- title: 'Discord'
+  img: 'contacts-discord-square.svg'
+  options:
+    - link: 'https://discord.gg/J57BHwpteR'  
       text: 'Join chat'
+
+- title: 'Medium Blog'
+  img: 'medium.png'
+  options:
+    - link: 'https://blog.aira.life'
+      text: 'Read'
 
 - title: 'Telegram chat'
-  description: 'Local communities & news. You are welcome!'
-  img: 'telegram.png'
-  buttonicon: '+'
+  img: 'tg-logo.svg'
   options:
     - link: 'https://t.me/robonomics'
-      text: 'English'
+      text: 'EN'
     - link: 'https://t.me/robonomicsru'
-      text: 'Russian'
+      text: 'RU'
     - link: 'https://t.me/RobonomicsESP'
-      text: 'Español'
+      text: 'ES'
+    - link: 'https://t.me/Robonomics_ITA'
+      text: 'IT'
     - link: 'https://t.me/robonomicsfr'
-      text: 'Français '
+      text: 'FR '
 
-- title: 'Element (Riot), Robonomics technical'
-  description: 'Technical questions & other insides.'
-  img: 'element.png'
-  buttonicon: '+'
-  options:
-    - link: 'https://riot.im/app/#/room/#robonomics:matrix.org'
-      text: 'Join chat'
+
+# - title: 'Element (Riot), Robonomics technical'
+#   description: 'Technical questions & other insides.'
+#   img: 'element.png'
+#   buttonicon: '+'
+#   options:
+#     - link: 'https://riot.im/app/#/room/#robonomics:matrix.org'
+#       text: 'Join chat'
 
 # - title: 'Forum'
 #   description: 'Discuss any topic related to Robonomics'
@@ -45,18 +60,11 @@
 #       text: 'Visit forum'
 
 
-- title: 'Medium Blog'
-  description: 'Our vision of the past, nowdays and future about Robonomics, Ethereum, Polkadot networks, green markets, robotics, and everything, that connected with Robonomics.'
-  img: 'medium.png'
-  buttonicon: '↗'
-  options:
-    - link: 'https://blog.aira.life'
-      text: 'Read'
+# - title: 'Medium Blog'
+#   description: 'Our vision of the past, nowdays and future about Robonomics, Ethereum, Polkadot networks, green markets, robotics, and everything, that connected with Robonomics.'
+#   img: 'medium.png'
+#   buttonicon: '↗'
+#   options:
+#     - link: 'https://blog.aira.life'
+#       text: 'Read'
 
-- title: 'Youtube'
-  description: 'Video tutorials, screencasts, interviews, events.'
-  img: 'youtube.png'
-  buttonicon: '↗'
-  options:
-    - link: 'https://www.youtube.com/c/Airalab'
-      text: 'Watch videos'

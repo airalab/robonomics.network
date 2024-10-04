@@ -29,11 +29,16 @@ jobs:
         run: |
           sudo npm install --global @gridsome/cli
           npm ci
+          export NODE_OPTIONS="--max_old_space_size=4096"
           gridsome build
         env:
           FORM_SCRIPT: ${{ secrets.FORM_SCRIPT }}
           GRIDSOME_RECAPTCHA: ${{ secrets.GRIDSOME_RECAPTCHA }}
           GRIDSOME_CONTACTS_FORM_SCRIPT: ${{ secrets.GRIDSOME_CONTACTS_FORM_SCRIPT }}
+          GRIDSOME_UNISENDER_LIST_ID: ${{ secrets.GRIDSOME_UNISENDER_LIST_ID }}
+          GRIDSOME_UNISENDER_KEY: ${{ secrets.GRIDSOME_UNISENDER_KEY }}
+          GRIDSOME_TG_CHAT_ID: ${{ secrets.GRIDSOME_TG_CHAT_ID }}
+          GRIDSOME_TG_TOKEN: ${{ secrets.GRIDSOME_TG_TOKEN }}
 
       - name: Deploy
         #uses: JamesIves/github-pages-deploy-action@3.7.1

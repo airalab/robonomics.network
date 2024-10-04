@@ -1,59 +1,60 @@
 import '~/assets/style/animation.css'
 import '~/assets/style/base.css'
-import '~/assets/style/buttons.css'
 import '~/assets/style/forms.css'
 import '~/assets/style/layouts.css'
 import '~/assets/style/reset.css'
 import '~/assets/style/typography.css'
 import '~/assets/style/utils.css'
 import '~/assets/style/variables.css'
+import '~/assets/style/fonts.css'
 
-
-import 'katex/dist/katex.min.css';
+import Vue from 'vue'
 
 import Default from '~/layouts/Default.vue'
-import Vue from 'vue'
-import VueKatex from 'vue-katex';
 
-import Contacts from '~/components/Contacts.vue';
+// components
+import Contacts from '~/components/footer/Contacts.vue'
+import rbButton from '~/components/rbButton.vue'
+import rbImage from '~/components/rbImage.vue'
+import rbCode from '~/components/rbCode.vue'
+import Card from '~/components/TextCard.vue'
+import Abstract from '~/components/TextAbstract.vue'
+import Youtube from '~/components/Youtube.vue'
 
+// Post
+import ExpiredInfo from '~/components/post/PostExpiredInfo.vue'
 
 
 // directive for animation in view
 import inViewportDirective from 'vue-in-viewport-directive'
 Vue.directive('in-viewport', inViewportDirective)
 
-export default function (Vue, { router, head, isClient }) {
-  // head.htmlAttrs = { prefix: 'og: https://ogp.me/ns#', lang: 'en' }
+// for translations
+import { t, setI18n, withI18n } from '../translations/i18n.js'
 
-  if (isClient) {
-    const vueSmoothScroll = require('vue2-smooth-scroll').default;
-    Vue.use(vueSmoothScroll);
-    Vue.use(VueKatex);
+export default function (Vue, { isClient }) {
 
-
-    //Rewrite route
-    // router.beforeEach(async (to, from, next) => {
-
-    //     // do not rewrite build paths
-    //     if (process.isServer) {
-    //       return next()
-    //     }
-
-    //     if (to.path === "/community/") {
-    //       if (to.hash === "#token") {
-    //         return next({
-    //           path: '/xrt/',
-    //           replace: true
-    //         })
-    //       }
-    //     } else {
-    //       return next()
-    //     }
-    // })
-  }
   // Set default layout as a global component
   Vue.component('layout', Default)
   Vue.component('Contacts', Contacts)
+  Vue.component('rb-button', rbButton)
+  Vue.component('rb-image', rbImage)
+  Vue.component('rb-code', rbCode)
+  Vue.component('Card', Card)
+  Vue.component('Abstract', Abstract)
+  Vue.component('Youtube', Youtube)
+  Vue.component('ExpiredInfo',  ExpiredInfo)
+
+
+  // for translations
+  Vue.prototype.$t = t; 
+  Vue.prototype.$setI18n = setI18n;
+  Vue.prototype.$withI18n = withI18n;
+
+
+  if(isClient) {
+    const vueSmoothScroll = require('vue2-smooth-scroll').default
+    Vue.use(vueSmoothScroll)
+  }
   
 }

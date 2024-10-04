@@ -47,7 +47,7 @@
              </div>
            </div>
 
-           <g-image id="info-girl" aria-hidden="true" alt="" src="~/assets/images/kusama-cosmogirl-sitting.png" />
+           <g-image id="info-girl" aria-hidden="true" alt="" src="~/assets/images/kusama-cosmogirl-sitting.png" quality="75" />
 
          </div>
          
@@ -288,7 +288,7 @@
           <div class="hyphens">
             <p><b>{{$ts('The final task for the 48 weeks of existence in the Kusama network is the transformation of the Robonomics parachain into the Robonomics Relay Chain. This is our vision of the future of Robonomics, as a complete segment of the Polkadot infrastructure specifically prepared for working with IoT devices.')}}</b></p>
           </div>
-        </div>
+        </div>≈
 
       </section>
 
@@ -336,12 +336,11 @@ query {
   export default {
     components: {
       MetaInfo: () => import("~/components/MetaInfo.vue"),
-      Button: () => import("~/components/Button.vue"),
       Card: () => import("~/components/TextCard.vue"),
       MovingNumbers: () => import("~/components/decor/MovingNumbers.vue"),
       tip: () => import("~/components/tip.vue"),
       LovelyRoboGirl: () => import("~/components/decor/LovelyRoboGirl.vue"),
-      Subscribtion: () => import("~/components/utils/forms.vue"),
+      // Subscribtion: () => import("~/components/utils/forms.vue"),
     },
 
 
@@ -412,7 +411,6 @@ query {
   /* Section Top */
   #info {
     --girl-w: 300px;
-    font-family: var(--font-family-code);
     padding-bottom: calc(var(--girl-w) - 10px);
   }
 
@@ -491,7 +489,6 @@ query {
     max-width: 760px;
     margin: var(--space) auto;
     text-align: left;
-    font-family: var(--font-family-code);
   }
 
   .contribution span a {
@@ -741,10 +738,6 @@ query {
 
   .parachain h4 { font-size: var(--base-font-size); font-weight: bold; }
 
-  .parachain-intro {
-    font-family: var(--font-family-code);
-  }
-
   .parachain-intro h2 {
     margin-bottom: calc(var(--space)*2);
   }
@@ -920,7 +913,6 @@ query {
   /* Section 'Statistics' */
   #statistics {
     text-align: left;
-    font-family: var(--font-family-code);
     padding: 0;
     font-size: 90%;
   }

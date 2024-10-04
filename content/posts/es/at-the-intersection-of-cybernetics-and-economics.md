@@ -4,7 +4,7 @@ date: 2022-09-01
 published: true
 locale: 'es'
 tags: ['Filosofía de la Robonomía']
-cover_image: ./images/at-the-intersection-of-cybernetics-and-economics/сover_1.jpg
+cover_image: ../images/at-the-intersection-of-cybernetics-and-economics/сover_1.jpg
 # canonical_url: false
 description: "El mundo de la tecnología y los dispositivos inteligentes se está desarrollando activamente. Todos los días aparecen nuevos dispositivos y sistemas. Ayudan a simplificar y mejorar la vida humana. Sin embargo, no es la única tarea. Uno de los obstáculos para las tecnologías robóticas es el alto nivel de ciberseguridad de los dispositivos y la privacidad de los datos de los usuarios. Los desarrolladores de Robonomics han estado trabajando en esta tarea durante 7 años."
 abstract: "El mundo de la tecnología y los dispositivos inteligentes se está desarrollando activamente. Todos los días aparecen nuevos dispositivos y sistemas. Ayudan a simplificar y mejorar la vida humana. Sin embargo, no es la única tarea. Uno de los obstáculos para las tecnologías robóticas es el alto nivel de ciberseguridad de los dispositivos y la privacidad de los datos de los usuarios. Los desarrolladores de Robonomics han estado trabajando en esta tarea durante 7 años."
@@ -12,7 +12,7 @@ abstract: "El mundo de la tecnología y los dispositivos inteligentes se está d
 
 Los creadores del proyecto están trabajando para garantizar el funcionamiento seguro de los dispositivos inteligentes para usuarios de todo el mundo utilizando aplicaciones descentralizadas (dapp) que no requieren la transferencia de datos del usuario para la autenticación. Los creadores de Robonomics presentaron varios conceptos y soluciones, unidos en torno a la idea de la economía robótica en investigaciones y artículos científicos. La esencia de la idea está en el sistema económico en el que los dispositivos robóticos actúan como agentes independientes capaces de realizar actividades económicas clave, antes reservadas para los humanos. Si la estructura M2M (máquina a máquina) se configura correctamente, la economía del robot puede convertirse en una extensión de la economía humana, mejorando y acelerando sus procesos. Sin embargo, la organización de la estructura M2M presenta varias dificultades. Por ejemplo, los dueños de las empresas corren el riesgo de enfrentar costos significativos al intentar configurar de forma segura el intercambio de información técnica con otra empresa. En este artículo, inferirá el tema y comprenderá la inevitabilidad de la economía de los robots.
 
-![Industry 4.0](./images/at-the-intersection-of-cybernetics-and-economics/pic_1.jpg)
+![Industry 4.0](../images/at-the-intersection-of-cybernetics-and-economics/pic_1.jpg)
  
 Ronald Coase en su obra de 1937 [«La naturaleza de la empresa»](https://www.jstor.org/stable/2626876) argumentó que la jerarquía compleja en la empresa crea más costos de transacción (el costo de recopilar y procesar información), por lo que los empresarios buscan formas de reducir estos costos. La reducción de estos costos se observa en la economía colaborativa, sobre esto escribió el economista M. Manger en su obra. Debido al desarrollo de dispositivos automatizados inteligentes, los empresarios quieren reducir los costos organizacionales. Por lo tanto, las operaciones regulares de la mayoría de los procesos comerciales de las grandes empresas están completamente automatizadas. Podemos suponer que conduce a la aparición de roboempresas en las que todo el ciclo del proceso comercial está completamente automatizado y no requiere la participación humana.
 
@@ -21,7 +21,7 @@ Para la implementación exitosa de robofirms, necesitamos construir sistemas cib
 
 Immaginiamo una situazione dove i sistemi cyber-fisici vengono introdotti sul mercato, nella sua rappresentazione ideale — una robofirm. In questo caso, una robofirm forma un’economia dei robot, che eredita tutte le caratteristiche di qualsiasi sistema economico. Pertanto, la crescita delle aziende robotizzate (e di conseguenza, l’equilibrio fra il numero di elementi automatizzati) dipenderà dal mercato, formando un sistema di autoregolazione.
 
-![Smart factory](./images/at-the-intersection-of-cybernetics-and-economics/pic_2.jpg)
+![Smart factory](../images/at-the-intersection-of-cybernetics-and-economics/pic_2.jpg)
 
 Sin embargo, este sistema tendrá una diferencia importante con el sistema económico actual de las personas: la velocidad de las transacciones. Durante los últimos 70 años, la velocidad de aceptación y procesamiento de transacciones se ha vuelto más fácil. Los dispositivos móviles pueden comunicarse con un sistema bancario automatizado casi en cualquier lugar y en cualquier momento. Las empresas están utilizando activamente la automatización de procesos robóticos en la gestión de grandes operaciones comerciales. Aún hoy los sistemas autónomos interactúan con los mismos sistemas financieros autónomos. Brindamos acceso a robots para administrar nuestro dinero sin nuestra intervención para simplificar procesos y hacer la vida humana más fácil. Todo esto lleva a que se inicie la construcción de cadenas automatizadas más complejas, en las que los procesos afectarán el intercambio de información tanto técnica como económica.
 
@@ -29,7 +29,7 @@ Es hora de hablar sobre el primer efectivo digital que los robots pueden adminis
 
 Incluso si las tareas descritas anteriormente pueden resolverse, Robonomics enfrenta otro problema: el alto precio (de 10 a 100 dólares estadounidenses) por lanzar un dispositivo IoT utilizando un contrato inteligente Ethereum. Los desarrolladores de Robonomics eligieron [Polkadot](https://polkadot.network/PolkaDotPaper.pdf) para reducir los costos de transacción. Es un protocolo para construir redes multicadera heterogéneas. Nos permite ejecutar nuestras propias cadenas de bloques independientes, para las cuales una red más grande proporciona seguridad y comunicaciones entre cadenas. Otra opción es la red Kusama (red experimental de Polkadot). Permite a los desarrolladores crear parachains y probar diferentes funciones y validaciones de Polkadot en un entorno real. Robonomics parachain en la red Kusama o Polkadot nos permitirá implementar funciones que no están disponibles para los desarrolladores de contratos inteligentes en Ethereum.
 
-![Parachains](./images/at-the-intersection-of-cybernetics-and-economics/pic_3.jpg)
+![Parachains](../images/at-the-intersection-of-cybernetics-and-economics/pic_3.jpg)
 
 La última pregunta es la determinación de los robots a la hora de prestar servicios a las personas. El proceso de trabajo entre personas incluye cualidades tales como la conciencia, la honestidad, etc. Hoy en día, es difícil hablar de tales cosas en el tema de la economía del robot. Aprenderá a adaptar adecuadamente las funciones de trabajo en robofirms estudiando estos procesos en detalle.
 

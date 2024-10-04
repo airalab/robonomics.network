@@ -24,13 +24,13 @@ img {
 
 .blog_grid {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space);
 }
 
 @media screen and (max-width: 970px) {
   .blog_grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -40,6 +40,7 @@ img {
   }
 }
 
+/* for pagination icons */
 @font-face {
   font-family: 'customIcons';
   src: url('../fonts/icomoon.woff');
@@ -48,19 +49,19 @@ img {
   font-style: normal;
 }
 
-.formula {
-  text-align: center;
-  margin-bottom: var(--space);
-}
-
-.theme-support-light, .theme-support-dark {
-  display: none !important;
-}
+/* kusama-slot page */
 
 .light-theme .theme-support-light {
   display: initial !important;
 }
 
-.dark-theme .theme-support-dark {
-  display: initial !important;
+/* arabic */
+html[lang="ar"] h1, html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] h4,html[lang="ar"] h5,html[lang="ar"] h6,html[lang="ar"] p,html[lang="ar"] a,html[lang="ar"] span {
+  direction: rtl;
+  unicode-bidi: embed;
 }
+
+html[lang="ar"] p {
+  text-align: end;
+}
+

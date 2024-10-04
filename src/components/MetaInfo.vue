@@ -11,7 +11,7 @@ query {
 
 
 <script>
-   import translations from '@/data/locales/translations.yaml'
+   import translations from '@/data/metaData.yaml'
 export default {
   props: {
       pageTitle: { type: String, default: '' },
@@ -22,22 +22,9 @@ export default {
       pageLang: {type: String, default: 'en'}
   },
 
-  // data() {
-        
-  //       return {
-  //           url: this.$static.metadata.siteUrl + this.$route.fullPath,
-  //       };
-        
-  //   },
-
-  // mounted() {
-  //   this.url = this.$static.metadata.siteUrl + this.$route.fullPath
-  //   console.log(this.url)
-  // },
-
   data() {
     return {
-      allLocales: ["ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr", "uk"],
+      allLocales: ["ru", "zh", "es", "ko", "de", "ja", "pt", "el", "it", "fr", "uk", "ar", "nl"],
       locale: 'en',
       metaTitle: '',
       metaDescription: ''
@@ -106,7 +93,8 @@ export default {
       title: title,
       htmlAttrs: {
         lang: locale,
-        amp: true
+        amp: true,
+        // dir: locale === 'ar' ? 'rtl' : ''
       },
       meta: [
         { key: 'description', name: 'description', content: description },
@@ -120,14 +108,6 @@ export default {
         { property: "og:image:width", content: this.pageImageWidth },
         { property: "og:image:height", content: this.pageImageHeight },
         { property: "og:url", content: this.url },
-        // {
-        //   property: "og:url",
-        //   content: window.location.href
-        // },
-        // {
-        //   property: "og:url",
-        //   content: this.$static.metadata.siteUrl + window.location.pathname
-        // },
 
 
         // Some Twitter Cards Tags
@@ -138,24 +118,6 @@ export default {
         { name: "twitter:site", content: '@AIRA_Robonomics' },
         { name: "twitter:creator", content: '@AIRA_Robonomics' }
       ]
-
-      // //Some ld+json tags
-      // script: [
-      //   {
-      //     type: "application/ld+json",
-      //     json: {
-      //       "@context": "http://schema.org",
-      //       "@type": "BlogPosting",
-      //       description: this.$page.post.description,
-      //       datePublished: this.$page.post.date,
-      //       author: {
-      //         name: this.$page.post.author
-      //       },
-      //       headline: this.$page.post.title,
-      //       image: this.$page.post.cover_image,
-      //     }
-      //   }
-      // ]
     };
   },
 

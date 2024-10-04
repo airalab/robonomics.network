@@ -3,7 +3,7 @@
 
     <MetaInfo
       pageTitle = "Blog"
-      :pageDescription = "$static.metadata.siteDescription"
+      pageDescription = "Futuristic, secure, and server-less IoT platform on top of Ethereum and Polkadot. Bringing economy of robots into the 4th industrial revolution."
       :pageImage = "'/website_cover_blogs.jpg'"
     />
 <!-- 
@@ -11,14 +11,14 @@
 
     <BlogTagsBanner :allTags="$page.allPostsTags.edges"/>
 
-    <div v-if="$page.posts.edges.length === 0" class="align-center layout">
-      <blockquote>{{$ts('No posts yet')}}</blockquote>
+    <div v-if="$page.posts.edges.length === 0" class=" blog__no-post align-center">
+      <blockquote>{{$t('No posts yet')}}</blockquote>
 
-      <div class="layout__text_small hyphens" v-if="$locale != $defaultLocale">
-        <p>{{ $ts('If you want to help us with translation') }}:</p>
-        <ul>
-          <li>{{ $ts('contact us at') }}: <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a></li>
-          <li>{{ $ts('or') }} {{ $ts('send') }} <g-link to="https://github.com/airalab/robonomics.network">GitHub PR</g-link></li>
+      <div class="layout layout__text oldy " v-if="$locale != $defaultLocale">
+        <p>{{ $t('If you want to help us with translation') }}:</p>
+        <ul class="list-simple">
+          <li>{{ $t('contact us at') }}: <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a></li>
+          <li>{{ $t('or') }} {{ $t('send') }} <g-link to="https://github.com/airalab/robonomics.network">GitHub PR</g-link></li>
         </ul>
       </div>
     </div>
@@ -93,7 +93,7 @@ query ($locale: String!, $page: Int) {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       PostCard: () => import('~/components/PostCard.vue'),
-      Pagination: () => import('~/components/Pagination.vue'),
+      Pagination: () => import('~/components/utils/Pagination.vue'),
       BlogTagsBanner: () => import('~/components/blocks/BlogTagsBanner.vue')
     },
 
@@ -106,5 +106,32 @@ query ($locale: String!, $page: Int) {
 
 </script>
 
+
+<style scoped>
+  blockquote {
+    border-left: none;
+  }
+
+
+  .blog__no-post .oldy {
+    text-align: center;
+  }
+
+  .blog__no-post .oldy p {
+    margin-bottom: calc(var(--space) * 0.7);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .blog__no-post .oldy li {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .blog__no-post .oldy li:not(:last-child) {
+    margin-bottom: calc(var(--space) * 0.3);
+  }
+
+</style> 
 
 

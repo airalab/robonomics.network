@@ -26,7 +26,6 @@
 
     .numbers span {
         display: inline-block;
-        font-family: var(--font-family-code);
         color: var(--color-blue-light);
         font-size: 1rem;
       }

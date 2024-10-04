@@ -3,7 +3,7 @@ title: 크라우드론 캠페인 자동화
 date: 2021-12-08
 published: true
 locale: 'ko'
-cover_image: ./images/automating-kusama-crowdloan-campaigns/cover.jpg
+cover_image: ../images/automating-kusama-crowdloan-campaigns/cover.jpg
 description: "파라체인 슬롯 경매와 관련 크라우드론의 초창기에는 가격을 예측하기 어렵고 너무 비싼 경우가 많아 초기 진입자들에게 불리했습니다. 이러한 단점은 가격이 정해지는 과정에 있는 모든 새로운 시장, 특히 다양한 니즈에 맞춰 여러 제품이 출시되는 파라체인 경매와 같은 시장에선 일반적입니다."
 abstract: "파라체인 슬롯 경매와 관련 크라우드론의 초창기에는 가격을 예측하기 어렵고 너무 비싼 경우가 많아 초기 진입자들에게 불리했습니다. 이러한 단점은 가격이 정해지는 과정에 있는 모든 새로운 시장, 특히 다양한 니즈에 맞춰 여러 제품이 출시되는 파라체인 경매와 같은 시장에선 일반적입니다."
 tags: ['로봇공학 파라체인']
@@ -31,7 +31,7 @@ Robonomic 핵심 개발자들은 향후 Kusama 파라체인 슬롯 경매에 참
 
 물론 여기에도 중요한 특이성이 있습니다. 파라체인 슬롯 임대는 현 임대 기간이 종료되기 전에 연장되어야 하며, 그렇지 않을 경우 파라체인 서비스가 중단되거나 복잡해질 수 있습니다(당분간 Parathread라고도 알려진 [종량 요금제 파라체인이](https://medium.com/polkadot-network/parathreads-pay-as-you-go-parachains-7440d23dde06), 적용될 수 있음).
 
-!["Polkadot ecosystem"](./images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
+!["Polkadot ecosystem"](../images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
 
 일반적으로, 줄을 서 있는 것은 중요합니다. 아래에서는 크라우드론 캠페인 오라클의 주요 매개변수를 자율적으로 계산하기 위해 만든 알고리즘을 소개하겠습니다. 이름을 붙여야 할 것 같은데, 아직까지는 그럴싸한 아이디어가 떠오르지 않습니다.
 

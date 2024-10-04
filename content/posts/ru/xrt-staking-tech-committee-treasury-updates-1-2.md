@@ -3,7 +3,7 @@ title: "Обновление до версии 1.2: Стейкинг, Тех. к
 date: 2021-09-17
 published: true
 locale: 'ru'
-cover_image: ./images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
+cover_image: ../images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
 description: "Разработчики проекта внедрили 2 важных изменения в работу парачейна Робономики. Первое - это включение функционала стейкинга XRT, второе - запуск первых механизмов on-chain управления."
 abstract: "Разработчики проекта внедрили 2 важных изменения в работу парачейна Робономики. Первое - это включение функционала стейкинга XRT, второе - запуск первых механизмов on-chain управления."
 tags: ['Токен XRT', 'Токен RWS', 'Парачейн Робономика', 'Новый релиз', 'Стейкинг']
@@ -42,13 +42,13 @@ import Card from '~/components/TextCard.vue'
 
 ### Практика
 
-Децентрализованное приложение готово к работе: https://dapp.robonomics.network/#/staking/
+Децентрализованное приложение готово к работе: https://robonomics.app/#/staking/
 
-![Стейкинг XRT в децентрализованном приложении Робономики, новый бондинг](./images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
+![Стейкинг XRT в децентрализованном приложении Робономики, новый бондинг](../images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
 
 После первой транзакции у вас появится вот такая таблица со статистикой:
 
-![Стейкинг XRT в децентрализованном приложении Робономики, список бондингов](./images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
+![Стейкинг XRT в децентрализованном приложении Робономики, список бондингов](../images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
 
 Отправка токенов между аккаунтами в парачейне остаётся отключенной. Возможность перевести токены будет включена после появления парачейна в сети Кусама.
 
@@ -60,11 +60,11 @@ import Card from '~/components/TextCard.vue'
 
 Благодаря интеграции с Subscan держатели XRT в парачейне Робономики могут воспользоваться вот таким замечательным интерфейсом: https://robonomics.subscan.io/account
 
-![Аккаунт Робономики на Subscan.io](./images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
+![Аккаунт Робономики на Subscan.io](../images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
 
-На интерфейсе dapp Exodus можно увидеть статистику миграции из Ethereum в парачейн: https://dapp.robonomics.network/#/exodus
+На интерфейсе dapp Exodus можно увидеть статистику миграции из Ethereum в парачейн: https://robonomics.app/#/exodus
 
-![XRT из блокчейна Ethereum в парачейн Робономики в приложении](./images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
+![XRT из блокчейна Ethereum в парачейн Робономики в приложении](../images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
 
 ### Последующие улучшения функционала стейкинга
 
@@ -82,7 +82,7 @@ import Card from '~/components/TextCard.vue'
 
 Интерфейс работы технического комитета доступен по ссылке: https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/techcomm
 
-![Интерфейс работы технического комитета](./images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
+![Интерфейс работы технического комитета](../images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
 
 Как можно заметить, на момент 15 сентября добавлены шесть участников технического комитета, среди них: два Devops специалиста, архитектор ПО, главный разработчик Substrate имплементации, старший инженер-робототехник и старший dapp разработчик.
 
@@ -96,7 +96,7 @@ import Card from '~/components/TextCard.vue'
 
 Интерфейс сокровищницы парачейна доступен по ссылке: https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/treasury
 
-![Интерфейс сокровищницы парачейна](./images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
+![Интерфейс сокровищницы парачейна](../images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
 
 За последний месяц из сокровищницы были распределены ~100k XRT на балансы участников первой Crowdloan кампании Робономики летом 2021 года. Эти операции не отражены в запросах, так как проходили через функции sudo. Теперь у нас есть технический комитет, и запросы будут проходить через голосование.
 

@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout class="postpage" :translated="$page.post.translated">
 
     <MetaInfo
       :pageTitle = "$page.post.title"
@@ -9,17 +9,17 @@
     />
 
     <g-link to="/blog/" class="small-banner section__blue">
-      <h3>{{$ts('Important news & announcements')}}</h3>
-      <g-image alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
+      <h3>{{$t('Important news and announcements')}}</h3>
+      <g-image quality="75" alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
     </g-link>
 
     <hr/>
 
-    <div class="post__header animate-inside" v-in-viewport.once>
-        <g-image :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
+    <div class="post__header">
+        <g-image  quality="75" :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
     </div>
 
-    <div class="layout__title blog_title">
+    <div class="layout__title">
       <h1 v-html="$page.post.title"/>
     </div>
 
@@ -54,7 +54,7 @@
 query($id: ID!) {
   post(id: $id) {
     title
-    cover_image (width: 2000, quality: 100)
+    cover_image (width: 2000, quality: 80)
     description
     path
     author
@@ -68,12 +68,13 @@ query($id: ID!) {
       title
       path
     }
+    translated
   }
   allPost{
     edges {
       node {
         title
-        cover_image (width: 2000, quality: 100)
+        cover_image (width: 2000, quality: 80)
         path
       }
     }
@@ -89,10 +90,10 @@ query($id: ID!) {
 
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
-      PostMeta: () => import('~/components/PostMeta.vue'),
-      // PostTags: () => import('~/components/PostTags.vue'),
+      PostMeta: () => import('~/components/post/PostMeta.vue'),
+      // PostTags: () => import('~/components/post/PostTags.vue'),
       PostCard: () => import('~/components/PostCard.vue'),
-      PostRelated: () => import('~/components/PostRelated.vue'),
+      PostRelated: () => import('~/components/post/PostRelated.vue'),
       Abstract: () => import('~/components/TextAbstract.vue'),
       PostAuthor: () => import('~/components/blocks/PostAuthor.vue'),
     },
@@ -104,10 +105,22 @@ query($id: ID!) {
 
 <style>
   .post {
-    padding: var(--space);
+    padding: 0 var(--space);
     text-align: left;
     font-weight: 400;
     overflow: hidden;
+    line-height: 1.75;
+  }
+
+  .postpage h1, .post h2, .post h3, .post h4, .post h5 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .post h2, .post h3, .post h4, .post h5 {
+    text-align: left !important;
+    hyphens: initial;
   }
 
   .post .big-table {
@@ -126,6 +139,7 @@ query($id: ID!) {
       margin-right: auto;
   }
 
+
   .post__header img {
       display: block;
       max-width: 100%;
@@ -133,11 +147,13 @@ query($id: ID!) {
       margin-right: auto;
     }
 
-  /* .post strong, .post b {
-      background-color: #f8ffb5;
-    } */
-
-  .post a { word-break: break-all; }
+  .post code {
+    vertical-align: middle;
+    padding: calc(var(--space) * 0.1)  calc(var(--space) * 0.3);
+    background-color: hsl(220.87deg 50.39% 29.76%);
+    font-weight: 600;
+    color: var(--color-light);
+  }
 
   .post h2 strong, .post h3 strong, .post h4 strong, .post h5 strong {
     color: var(--color-green);
@@ -172,6 +188,14 @@ query($id: ID!) {
     .small-banner img {
       width: 94px;
       height: 60px;
+    }
+  }
+
+  @media screen and (max-width: 510px) {
+    .post table {
+      display: block;
+      /* white-space: nowrap; */
+      overflow: scroll;
     }
   }
 

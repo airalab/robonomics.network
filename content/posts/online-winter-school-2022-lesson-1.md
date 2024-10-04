@@ -10,6 +10,8 @@ tags: ['Online school', 'Demo']
 ---
 import Card from '~/components/TextCard.vue'
 
+<ExpiredInfo/>
+
 In the coming week, we will be holding lectures, practical exercises and have community discussions in Discord around one question: “How can we build IoT applications based on new Internet technologies?”
 
 To get started, watch the welcome video:
@@ -34,7 +36,7 @@ Live stream on YouTube:
 
 https://youtu.be/AMX7TWVbmgs
 
-To complete this lesson, you need to install the polkadot.js extension (instruction: [Create Account for Robonomics Parachain](https://wiki.robonomics.network/docs/en/create-account-in-dapp/)) and request access to the Robonomics parachain IoT subscription in discord: [🚰winter-school-faucet](https://discord.gg/pYeyWJSc)
+To complete this lesson, you need to install the polkadot.js extension (instruction: [Create Account for Robonomics Parachain](https://wiki.robonomics.network/docs/en/create-account-in-dapp/)) and request access to the Robonomics parachain IoT subscription in discord: [🚰winter-school-faucet](https://discord.com/invite/5UWNGNaAUf)
 
 After you create an account on the Robonomics parachain and request access to an IoT subscription, go to the dapp: https://blackmirror.robonomics.network/#/
 

@@ -3,103 +3,116 @@
 
     <MetaInfo
       pageTitle = "Robonomics Logos and Assets"
-      pageDescription = "'We have put together Robonomics logos, colors, assets and guidelines to show how you may use it."
-      :pageImage = "'/website_cover_logos.jpg'"
+      pageDescription = "We have put together Robonomics logos, colors, assets and guidelines to show how you may use it."
+      :pageImage = "'/website_cover_logos.png'"
     />
 
-    <!-- logos and usage section -->
-    <section class="logos-and-usage">
-      <div class="layout layout__content text-center container">
-        <h2>
-          {{$ts('Robonomics logos and usage')}}
-        </h2>
-        <Abstract :text="$ts('We have put together Robonomics logos and guidelines to show how you may use it.')" :className="'logos-and-assets__text'" />
-        <div class="logos-and-assets__wrapper grid-3 animate-inside" v-in-viewport.once>
-          <a href="/logos/Robonomics-logos.zip" class="logos-and-usage__link-download oldy dark oldy__link" download>
-            <div class="logos-and-usage__img">
-              <g-image aria-hidden="true" src="~/assets/images/logos/logo_robonomics_network_color.png" />
-            </div>
-            <div class="logos-and-usage__download">
-              <span>{{$ts('Download Robonomics logo')}}</span>
-            </div>
-          </a>
-          <a href="/logos/RWS-logos.zip" class="logos-and-usage__link-download oldy dark oldy__link" download>
-            <div class="logos-and-usage__img">
-              <g-image aria-hidden="true" src="~/assets/images/logos/logo_robonomics_web_services.png" />
-            </div>
-            <div class="logos-and-usage__download">
-              <span>{{$ts('Download RWS logo')}}</span>
-            </div>
-          </a>
-          <a href="/logos/Robonomics-wiki.zip" class="logos-and-usage__link-download oldy dark oldy__link" download>
-            <div class="logos-and-usage__img">
-              <g-image aria-hidden="true" src="~/assets/images/logos/logo_robonomics_wiki_black.png" />
-            </div>
-            <div class="logos-and-usage__download">
-              <span>{{$ts('Download wiki logo')}}</span>
-            </div>
-          </a>
+    <!-- banner -->
+
+    <section class="section section__blue logos-and-assets__banner">
+      <div class="papers__main-title title-with-bg">
+        <h1><span>{{ $t('logos and assets') }}</span></h1>
+      </div>
+
+      <div class="layout layout__text text-center container">
+        <g-image class="logos-and-assets__banner-logo" quality="75" src="@/assets/images/logos-and-assets/logo-banner.svg" alt="robonomics logo"/>
+        <p class="logos-and-assets__banner-text">{{ $t("Download the Robonomics logos here. We've got two options for your") }} <u>{{ $t('basic needs') }}</u> {{$t('and one designed for')}} <u>{{$t('XRT')}}</u> {{$t('token. Additionally, discover the optimal')}} <u>{{ $t('color palette') }}</u> {{$t('for the distinguished Robonomics brand')}}.</p>
+        <g-image quality="75" aria-hidden="true" alt="" src="@/assets/images/logos-and-assets/logo-banner-text.svg" />
+      </div>
+    </section>
+
+    <!-- logos section -->
+    <section class="logos">
+      <div class="layout text-center container">
+        <div class="logos-and-assets__header">
+          <h2>{{$t('Robonomics logos')}}</h2>
+          <a href="/logos/logos-robonomics.zip" download>{{ $t('Download all') }}</a>
         </div>
-        <div class="layout layout__text section-wide animate-inside below-viewport in-viewport">
-          <ul class="list-simple logos-and-usage__list animate-inside" v-in-viewport.once>
-            <li class="logos-and-usage__item logos-and-usage__item--allowed">
-              {{$ts('Use these permitted logos to link to Robonomics, RWS or Robonomics Wiki')}}
-            </li>
-            <li class="logos-and-usage__item logos-and-usage__item--allowed">
-              {{$ts('Use permitted Robonomics logo to inform others you are integrated with Robonomics')}}
-            </li>
-            <li class="logos-and-usage__item logos-and-usage__item--allowed">
-              {{$ts('Use permitted logos in blog posts, articles and slides about Robonomics technology and integrated projects')}}
-            </li>
-            <li class="logos-and-usage__item logos-and-usage__item--banned">
-              {{$ts('Do not modify the permitted Robonomics logos, including changing the color, dimensions, or combining it with other words or design elements.')}}
-            </li>
-            <li class="logos-and-usage__item logos-and-usage__item--banned">
-              {{$ts('Do not use Robonomics logo and name in a way that suggests you are Robonomics, your offering or project is by Robonomics, or that Robonomics is endorsing you or your offering or project if it was not approved by Robonomics DAO.')}}
-            </li>
-          </ul>
+
+        <ul class="logos__wrapper logos__robonomics grid-3 list-simple">
+          <LogosItem 
+            class="logos-and-assets__item"
+            v-for="logo in robonomicsLogos"
+            :key="logo.id"
+            :srcImg="logo.srcImg"
+            :alt="logo.alt"
+            :srcPNG="logo.srcPNG"
+            :srcSVG="logo.srcSVG"
+            :itemBackground="logo.background"
+          />
+        </ul>
+
+        <!-- XRT -->
+        <div class="logos-and-assets__header">
+          <h2>{{$t('XRT logos')}}</h2>
+          <a href="/logos/logos-xrt.zip" download>{{ $t('Download all') }}</a>
         </div>
+
+        <ul class="logos__wrapper logos__xrt grid-3 list-simple">
+          <LogosItem 
+            class="logos-and-assets__item"
+            v-for="logo in xrtLogos"
+            :key="logo.id"
+            :srcImg="logo.srcImg"
+            :alt="logo.alt"
+            :srcPNG="logo.srcPNG"
+            :srcSVG="logo.srcSVG"
+            :itemBackground="logo.background"
+          />
+        </ul>
+
+        <!-- RWS -->
+        <div class="logos-and-assets__header">
+          <h2>{{$t('RWS logos')}}</h2>
+          <a href="/logos/logos-rws.zip" download>{{ $t('Download all') }}</a>
+        </div>
+
+        <ul class="logos__wrapper logos__xrt grid-3 list-simple">
+          <LogosItem 
+            class="logos-and-assets__item"
+            v-for="logo in rwsLogos"
+            :key="logo.id"
+            :srcImg="logo.srcImg"
+            :alt="logo.alt"
+            :srcPNG="logo.srcPNG"
+            :srcSVG="logo.srcSVG"
+            :itemBackground="logo.background"
+          />
+        </ul>
       </div>
     </section>
 
     <!-- color pallet section -->
     <section class="color-pallet">
-      <div class="layout layout__content text-center container">
-        <h2>
-          {{$ts('Robonomics Color pallet')}}
-        </h2>
-        <Abstract :text="$ts('These colors we use in our interfaces, prints, and other visuals. </br> Use it for your slides, banners for posts etc telling about Robonomics.')" :className="'logos-and-assets__text'" />
-          <ul class="list-simple color-pallet__wrapper grid-4 animate-inside" v-in-viewport.once>
-            <li class="color-pallet__item color-pallet__item--primary-blue">
+      <div class="layout text-center container">
+        <div class="logos-and-assets__header">
+          <h2>
+            {{$t('Recommended color palette')}}
+          </h2>
+        </div>
+          <ul class="list-simple color-pallet__wrapper grid-3 animate-inside" v-in-viewport.once>
+            <li class="color-pallet__item logos-and-assets__item  color-pallet__item--primary-blue">
               <h3 class="color-pallet__subtitle">Primary blue</h3>
               <span class="color-pallet__code">#2949d3</span>
             </li>
-            <li class="color-pallet__item color-pallet__item--light-blue">
-              <h3 class="color-pallet__subtitle">Light blue</h3>
-              <span class="color-pallet__code">#03A5ED</span>
+            <li class="color-pallet__item logos-and-assets__item  color-pallet__item--light">
+              <h3 class="color-pallet__subtitle">Light</h3>
+              <span class="color-pallet__code">#ffffff</span>
             </li>
-            <li class="color-pallet__item color-pallet__item--dark-blue">
-              <h3 class="color-pallet__subtitle">Dark blue</h3>
-              <span class="color-pallet__code">#221363</span>
-            </li>
-            <li class="color-pallet__item color-pallet__item--lilac">
-              <h3 class="color-pallet__subtitle">Lilac</h3>
-              <span class="color-pallet__code">#b5c0f1</span>
-            </li>
-            <li class="color-pallet__item color-pallet__item--gray">
-              <h3 class="color-pallet__subtitle">Light gray</h3>
+            <li class="color-pallet__item logos-and-assets__item  color-pallet__item--gray">
+              <h3 class="color-pallet__subtitle">Medium</h3>
               <span class="color-pallet__code">#f2f2f2</span>
             </li>
-            <li class="color-pallet__item color-pallet__item--black">
-              <h3 class="color-pallet__subtitle">Text, border color</h3>
+            <li class="color-pallet__item logos-and-assets__item color-pallet__item--black">
+              <h3 class="color-pallet__subtitle">Dark</h3>
               <span class="color-pallet__code">#000000</span>
             </li>
-            <li class="color-pallet__item color-pallet__item--red">
-              <h3 class="color-pallet__subtitle">Red</h3>
+            <li class="color-pallet__item logos-and-assets__item  color-pallet__item--red">
+              <h3 class="color-pallet__subtitle">Accentuating red</h3>
               <span class="color-pallet__code">#ee005b</span>
             </li>
-            <li class="color-pallet__item color-pallet__item--green">
-              <h3 class="color-pallet__subtitle">Green</h3>
+            <li class="color-pallet__item logos-and-assets__item  color-pallet__item--green">
+              <h3 class="color-pallet__subtitle">Accentuating green</h3>
               <span class="color-pallet__code">#5fce05</span>
             </li>
           </ul>
@@ -114,6 +127,114 @@ export default {
   components: {
     Abstract: () => import('~/components/TextAbstract.vue'),
     MetaInfo: () => import("~/components/MetaInfo.vue"),
+    LogosItem: () => import("~/components/logos-and-assets/LogosItem.vue"),
+  },
+
+  data() {
+    return {
+      robonomicsLogos: [
+        {
+          id: 0,
+          srcImg: 'logo-robonomics-blue.svg',
+          alt: "robonomics logo blue",
+          srcPNG: '/logos/logos-robonomics/icon_black_Primary_blue.png',
+          srcSVG: '/logos/logos-robonomics/icon_black_Primary_blue.svg',
+          background: 'light'
+        },
+        {
+          id: 1,
+          srcImg: 'logo-robonomics-white.svg',
+          alt: "robonomics logo white",
+          srcPNG: '/logos/logos-robonomics/icon_white.png',
+          srcSVG: '/logos/logos-robonomics/icon_white.svg',
+          background: 'alto'
+        },
+        {
+          id: 2,
+          srcImg: 'logo-robonomics-black.svg',
+          alt: "robonomics logo black",
+          srcPNG: '/logos/logos-robonomics/icon_black.png',
+          srcSVG: '/logos/logos-robonomics/icon_black.svg'
+        },
+        {
+          id: 3,
+          srcImg: 'logo-robonomics-text-blue.svg',
+          alt: "robonomics logo with text blue",
+          srcPNG: '/logos/logos-robonomics/logo_horizontal_Primary_blue.png',
+          srcSVG: '/logos/logos-robonomics/logo_horizontal_Primary_blue.svg',
+        },
+        {
+          id: 4,
+          srcImg: 'logo-robonomics-text-white.svg',
+          alt: "robonomics logo with text white",
+          srcPNG: '/logos/logos-robonomics/logo_horizontal_white.png',
+          srcSVG: '/logos/logos-robonomics/logo_horizontal_white.svg',
+          background: 'french-gray'
+        },
+        {
+          id: 5,
+          srcImg: 'logo-robonomics-text-black.svg',
+          alt: "robonomics logo with text black",
+          srcPNG: '/logos/logos-robonomics/logo_horizontal_black.png',
+          srcSVG: '/logos/logos-robonomics/logo_horizontal_black.svg',
+          background: 'light'
+        },
+        {
+          id: 6,
+          srcImg: 'logo-robonomics-network-blue.svg',
+          alt: "robonomics network logo blue",
+          srcPNG: '/logos/logos-robonomics/logo_RN_vertical_Primary_blue.png',
+          srcSVG: '/logos/logos-robonomics/logo_RN_vertical_Primary_blue.svg'
+        },
+        {
+          id: 7,
+          srcImg: 'logo-robonomics-network-white.svg',
+          alt: "robonomics network logo white",
+          srcPNG: '/logos/logos-robonomics/logo_RN_vertical_white.png',
+          srcSVG: '/logos/logos-robonomics/logo_RN_vertical_white.svg',
+          background: 'spun-pearl'
+        },
+        {
+          id: 8,
+          srcImg: 'logo-robonomics-network-black.svg',
+          alt: "robonomics network logo black",
+          srcPNG: '/logos/logos-robonomics/logo_RN_vertical_black.png',
+          srcSVG: '/logos/logos-robonomics/logo_RN_vertical_black.svg'
+        }
+      ],
+      xrtLogos: [
+        {
+          id: 0,
+          srcImg: 'logo-xrt-plain.svg',
+          alt: "logo-xrt-plain",
+          srcPNG: '/logos/logos-xrt/icon_XRT_color.png',
+          srcSVG: '/logos/logos-xrt/icon_XRT_color.svg'
+        },
+        {
+          id: 1,
+          srcImg: 'logo-xrt-text-1.svg',
+          alt: "logo xrt text 1",
+          srcPNG: '/logos/logos-xrt/logo_XRT_horizontal_color.png',
+          srcSVG: '/logos/logos-xrt/logo_XRT_horizontal_color.svg'
+        },
+        {
+          id: 2,
+          srcImg: 'logo-xrt-text-2.svg',
+          alt: "logo xrt text 2",
+          srcPNG: '/logos/logos-xrt/logo_XRT_vertical_color.png',
+          srcSVG: '/logos/logos-xrt/logo_XRT_vertical_color.svg'
+        }
+      ],
+      rwsLogos: [
+        {
+          id: 0,
+          srcImg: 'logo-rws.svg',
+          alt: "logo rws",
+          srcPNG: '/logos/logos-rws/rws-logo.png',
+          srcSVG: '/logos/logos-rws/rws-logo.svg'
+        }
+      ]
+    }
   }
 
 }
@@ -121,127 +242,95 @@ export default {
 
 <style scoped>
 
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  .logos-and-usage {
-    padding-top: calc(var(--space) * 4);
-  }
-
-  .logos-and-usage__link-download {
-    text-decoration: none;
-    padding: 0;
-  }
-
-  .logos-and-usage__img { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 45px 74px;
-    min-height: 276px;
-    background-color: #fff;
-  }
-
-  .logos-and-assets__text {  
-    max-width: 889px;
-    font-size: 1.5rem;
-    font-weight: 300;  
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .logos-and-usage__wrapper {
-    margin-bottom: calc(var(--space) * 2);
-  }
-
-
-  .logos-and-usage__download {
-    padding: 25px;
-    background-color: var(--color-blue);
-  }
-
-  .logos-and-usage__download span {
-    padding-left: 40px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-family: var(--font-family-code);
-    color: #fff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25.814' height='19.038' viewBox='0 0 25.814 19.038'%3E%3Cg id='Group_4281' data-name='Group 4281' transform='translate(-205.5 -657.462)'%3E%3Cpath id='Path_7569' data-name='Path 7569' d='M12744.118,6315.5v8.971h23.814V6315.5' transform='translate(-12537.618 -5648.971)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cg id='Group_4280' data-name='Group 4280' transform='translate(213 658.462)'%3E%3Cpath id='Path_7570' data-name='Path 7570' d='M12777.487,6291.394v11.569' transform='translate(-12772.186 -6291.394)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='2'/%3E%3Cpath id='Path_7571' data-name='Path 7571' d='M12769.208,6305.911l5.3,5.3,5.3-5.3' transform='translate(-12769.208 -6299.006)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-position: left;
-    background-size: 24px 18px;
-    background-repeat: no-repeat;
-    text-transform: uppercase;
-
-  }
-
-  .logos-and-usage__list {
+  h2, h3 {
+    font-size: calc(var(--base-font-size) * 1.2);
+    font-family: var(--font-family);
+    margin: 0;
+    letter-spacing: 0;
     text-align: left;
+    text-transform: none;
   }
 
-  .logos-and-usage__item {
-    position: relative;
-    font-weight: 500;
-    padding-left: 33px;
+  .container {
+    max-width: 1080px;
   }
 
-  .logos-and-usage__item:not(:last-child) {
+  .grid-3 {
+    gap: 0;
+    justify-content: center;
+  }
+
+  .logos-and-assets__banner {
+    margin: 0;
+    padding-bottom: var(--space);
+  }
+
+  .logos-and-assets__banner-logo {
+    margin-bottom: calc((var(--space) * 1.2));
+  }
+
+  .logos-and-assets__banner-text {
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+    font-style: italic;
+    margin-bottom: calc((var(--space) * 1.2));
+  }
+
+  .logos-and-assets__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: var(--space);
   }
 
-  .logos-and-usage__item:before {
-    position: absolute;
-    left: 0;
-    height: 15px;
-    width: 15px;
+  .logos-and-assets__header {
+    font-weight: 500;
   }
 
-  .logos-and-usage__item--allowed::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.714' height='16.124' viewBox='0 0 19.714 16.124'%3E%3Cpath id='Path_7572' data-name='Path 7572' d='M13091.343,6451.823l5.528,5.455,1.328-1.67,2.157-2.711,6.472-8.135' transform='translate(-13089.222 -6442.654)' fill='none' stroke='%231ca50d' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/svg%3E");
-    top: -1px;
+  .logos-and-assets__item  {
+    border: 1px solid var(--color-dark);
   }
 
-  .logos-and-usage__item--banned::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.728' height='19.728' viewBox='0 0 19.728 19.728'%3E%3Cg id='Group_4292' data-name='Group 4292' transform='translate(-539.222 -1090.157)'%3E%3Cpath id='Path_7576' data-name='Path 7576' d='M13096.342,6732.277l15.485,15.486' transform='translate(-12554.999 -5640)' fill='none' stroke='%23bd044b' stroke-linecap='round' stroke-width='3'/%3E%3Cpath id='Path_7577' data-name='Path 7577' d='M13111.827,6732.277l-15.485,15.486' transform='translate(-12554.999 -5640)' fill='none' stroke='%23bd044b' stroke-linecap='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E");
-    top: 3px;
+  .logos {
+    margin-bottom: calc((var(--space) * 3.5));
   }
-
-  .color-pallet {
-    padding-top: calc(var(--space) * 2);
+  
+  .logos__robonomics {
+    margin-bottom: calc((var(--space) * 3.5));
   }
-
-  .color-pallet__wrapper {
-    gap: 0;
-  }
+  
 
   .color-pallet__item {
     height: 369px;
-    padding: 65px 48px;
+    padding: 40px 48px;
     margin-bottom: 0;
     font-weight: 500;
     color: #fff;
     text-align: left;
   }
 
+  .color-pallet__subtitle {
+    font-size: calc(var(--base-font-size) * 1);
+    margin-bottom: calc(var(--space) * 0.3);
+  }
+
+  .color-pallet__code {
+    text-transform: uppercase;
+  }
+
   .color-pallet__item--primary-blue {
     background-color: #2949d3;
-  }
-
-  .color-pallet__item--light-blue {
-    background-color: #03A5ED;
-  }
-
-  .color-pallet__item--dark-blue {
-    background-color: #221363;
-  }
-
-  .color-pallet__item--lilac {
-    background-color: #b5c0f1;
   }
 
   .color-pallet__item--gray {
     color: #000;
     background-color: #f2f2f2;
+  }
+
+  .color-pallet__item--light {
+    color: #000;
+    background-color: #fff;
   }
 
   .color-pallet__item--black {
@@ -255,51 +344,19 @@ export default {
   .color-pallet__item--green {
     background-color: #5fce05
   }
+
+  @media screen and (max-width: 920px) {
+    .logos-and-assets__banner .container {
+      padding: calc(var(--space) * 2) var(--space);
+    }
+  }
   
-
-  .color-pallet__subtitle {
-    margin: 0;
-    margin-bottom: 1rem;
-    text-align: left;
-    font-family: var(--font-family);
-    text-transform: none;
-  }
-
-  @media screen and (max-width: 1350px) {
-    .logos-and-usage__download span {
-      display: inline-block;
-      max-width: 252px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-
-    .logos-and-usage__img {
-      padding: var(--space);
-    }
-  }
-
-  @media screen and (max-width: 1070px) {
-    .logos-and-usage__download span {
-      display: inline;
-      max-width: unset;
-      white-space: pre-wrap;
-    }
-  }
-
-  @media screen and (max-width: 520px) {
-    .logos-and-assets__wrapper {
-      gap: calc(var(--space) * 3);
-    }
-
-    .color-pallet__item {
-      height: 280px;
-    }
-  }
 
   @media screen and (max-width: 380px) {
     h2 {
       font-size: 2rem;
     }
+
+ 
   }
 </style>
