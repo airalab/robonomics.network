@@ -1,64 +1,43 @@
 <template>
   <footer class="animate-inside" v-in-viewport.once>
-    <div class="layout layout__content">
-      <section>
-        <div class="grid-4">
-
-          <div>
-            <ul class="animate-inside" v-in-viewport.once>
-              <li><a href="/white-paper">{{$t('White Paper 2022')}}</a></li>
-              <li><a href="/timeline">{{$t('Timeline')}}</a></li>
-              <li><a href="/xrt">{{$t('Tokenomics')}}</a></li>
-              <!-- <li><a href="/kusama-slot">{{$t('Parachain')}}</a></li> -->
-            </ul>
-          </div>
-
-          <div>
-            <ul class="animate-inside" v-in-viewport.once>
-              <li><a href="/merch">{{$t('Robonomics merch')}}</a></li>
-              <li><a href="/papers">{{$t('Science papers')}}</a></li>
-              <li><a href="/books">{{$t('Books')}}</a></li>
-              <li><a href="/logos-and-assets">{{$t('Logo and assets')}}</a></li>
-              <li><a href="/home-assistant-themes">{{ $t('Home Assistant themes') }}</a></li>
-              <li><a href="/wallpapers">{{ $t('Wallpapers') }}</a></li>
-              <li><a href="/nft">NFT</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <ul class="animate-inside" v-in-viewport.once>
-              <li><a href="/devices">{{$t('Devices')}}</a></li>
-              <li><a href="/blog">{{$t('Blog')}}</a></li>
-              <li><a href="/cases">{{ $t('Cases') }}</a></li>
-              <li><a href="/contact">{{$t('Contacts')}}</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <ul class="animate-inside" v-in-viewport.once>
-              <li><a href="https://wiki.robonomics.network">{{$t('Wiki')}}</a></li>
-              <li><a href="https://robonomics.academy">{{$t('Academy')}}</a></li>
-              <li><a href="https://github.com/airalab">{{$t('Github')}}</a></li>
-              <li><a href="https://robonomics.app/#/">{{$t('Dapp')}}</a></li>
-            </ul>
-          </div>
-
+    <div class="layout">
+      <div class="footer__row footer__top-row">
+        <div class="footer__column footer__top-row-column">
+          <span class="turned-text-green">Use it</span>
+          <g-link class="footer__link" aria-label="see robonomics smart devices" to="/devices/">Smart devices</g-link>
+          <g-link class="footer__link" aria-label="see robonomics dapp" to="https://robonomics.app/">dapp</g-link>
+          <g-link class="footer__link" aria-label="see robonomics merch" to="/merch/">Wearable merch</g-link>
         </div>
-        <div class="robonomics-info">
-          {{ $t('Robonomics is 100% open-source.') }}
-          {{ $t('Anyone can contribute to') }} <g-link to="https://github.com/airalab">{{ $t('the code base') }}</g-link> {{ $t('or') }} <g-link to="https://robonomics.academy/en/learn/">{{ $t('build services with Robonomics') }}</g-link> 
+        <div class="footer__column footer__top-row-column">
+          <span class="turned-text-green">Learn</span>
+          <g-link class="footer__link" aria-label="see robonomics academy" to="https://robonomics.academy/">Academy</g-link>
+          <g-link class="footer__link" aria-label="see robonomics wiki" to="https://wiki.robonomics.network/">Wiki</g-link>
         </div>
-
-        <div class="robonomics-info footer-text"  v-if="$locale != 'en' && !translated">
-          <span class="">{{ $t('Translation was executed by AI so there may be some inaccuracies') }}. </span>
-           <g-link to="https://github.com/airalab/robonomics.network/issues">{{ $t('Inform us') }}</g-link>, {{ $t('please') }}, {{ $t('if you find any') }}
+        <div class="footer__column footer__bottom-row-column">
+          <span class="turned-text-green">Explore website</span>
+          <g-link class="footer__link" aria-label="see robonomics papers" to="/papers/">Science & White paper</g-link>
+          <g-link class="footer__link" aria-label="learn more about xrt" to="/xrt/">Tokenomics</g-link>
+          <g-link class="footer__link" aria-label="see robonomics cases" to="/cases/">Cases</g-link>
         </div>
-
-        <div class="footer-text robonomics-info">
-          <a href="/privacy-policy">{{ $t('Privacy Policy') }}</a>
+        <div class="footer__column footer__bottom-row-column">
+          <g-link class="footer__link" aria-label="see robonomics timeline" to="/timeline/">Timeline</g-link>
+          <g-link class="footer__link" aria-label="see robonomics assets" to="/logo-and-assets/">Brand assets</g-link>
+          <g-link class="footer__link" aria-label="see robonomics wallpapers" to="/cases/">wallpapers</g-link>
         </div>
-      </section>
+        <div class="footer__column footer__bottom-row-column">
+          <g-link class="footer__link" aria-label="see robonomics home assistant themes" to="/home-assistant-themes/">Home assistant themes</g-link>
+          <g-link class="footer__link" aria-label="see robonomics NFT" to="/nft/">NFT</g-link>
+          <g-link class="footer__link" aria-label="see recommended by robonomics books" to="/books/">Books & reading inspiration</g-link>
+        </div>
+        <div class="footer__column footer__bottom-row-column">
+          <g-link class="footer__link" aria-label="see robonomics blog" to="/blog/">Blog</g-link>
+          <g-link class="footer__link" aria-label="contact us" to="/contact/">Contacts</g-link>
+        </div>
+      </div>
+      <div class="footer__row footer__bottom-row">
+      </div>
     </div>
+    <g-link class="footer__privacy" aria-label="see privacy policy page" to="/privacy-policy/">Privacy Policy</g-link>
   </footer>
 </template>
 
@@ -76,107 +55,98 @@ query {
 <style scoped>
 
   footer {
-    color: #fff;
-    padding: calc(var(--space) * 0.5) 0;
-    transition: background-color 0.33s ease;
-    border-top: 1rem solid var(--color-light);
-  }
-
-
-  .layout {
-    text-align: left;
-  }
-
-  h4 {
-    text-align: left;
-  }
-
-  li > a {
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 1rem;
-    color: var(--color-dark) !important;
-    transition: opacity 0.33s ease-in-out;
-  }
-
-  footer a:hover {
-    opacity: 0.7;
-  }
-
-  /* .grid-5 > div:not(:first-child) {
-    
-    padding: var(--space);
-    background-color: var(--color-darkish);
-  } */
-
-  /* footer section {
-    padding-left: calc(var(--space) * 5);
-  } */
-
-  footer .grid-4 {
-    padding-bottom: var(--space);
-    padding-left: calc(var(--space) * 5);
-    border-bottom: 1px solid var(--color-gray-mid);
-  }
-
-  .grid-4 > div ul {
-    list-style: none;
-    margin-left: 0;
-  }
-
-  .grid-4 li {
-    margin-bottom: calc(var(--space) * 0.5);
-  }
-    
-
-  .footer-line {
+    min-height: 312px;
+    height: 100%;
+    color: #000;
     padding: var(--space) 0;
-    border-top: 1px solid var(--color-gray-mid);
-    color: var(--color-gray-mid);
+    transition: background-color 0.33s ease;
+    background-color: #fff;
   }
 
-  #footer-web3Badge {
-    display: block;
-    max-width: 200px;
-    margin-top: var(--space)
+  footer .layout {
+    padding-bottom: 58px;
   }
 
-  .robonomics-info {
-    padding-top: var(--space);
-    font-weight: 300;
+  .footer__row {
+    display: flex;
+    gap: calc(var(--space) * 2)
+  }
+
+  .footer__top-row  {
+    margin-bottom: calc(var(--space) * 2)
+  }
+
+  .footer__column {
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .footer__column .turned-text-green {
+    font-size: 18px;
+  }
+
+  .footer__link {
+    text-align: left;
+    font-weight: 900;
+    text-decoration: underline;
     color: var(--color-dark);
-    text-align: center;
     text-transform: uppercase;
   }
 
-  .robonomics-info a {
-    color: var(--color-blue) !important;
+  .footer__link:not(:last-of-type) {
+    margin-bottom: calc(var(--space) * 0.3);
   }
 
-  .footer-text {
-    font-weight: 300;
-    font-size: 0.8rem;
-    font-style: italic;
-    color: #2b2b2b;
+  .footer__privacy {
+    position: absolute;
+    bottom: var(--space);
+    right: var(--space);
+    letter-spacing: 0.5px;
+    color: #000;
+    text-decoration: underline;
+    text-transform: uppercase;
   }
 
-  @media screen and (max-width:1500px){
-    footer .grid-4 { grid-template-columns: repeat(3,1fr); }
-  }
-
-  @media screen and (max-width:990px){
-    /* footer section {
-      padding-left: 0;
-    } */
-    footer .grid-4 { grid-template-columns: repeat(2,1fr);  padding-left: 0;}
-  }
-
-  @media screen and (max-width:720px){
-    footer .grid-4 { grid-template-columns: 1fr; }
-
-    .robonomics-info {
-      text-align: left;
+  @media screen and (max-width: 1200px) {
+    .footer__row {
+      flex-wrap: wrap;
+      gap: calc(var(--space)* 3);
     }
+  }
+
+  @media screen and (max-width: 780px) {
+    .footer__row {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .footer__link {
+      font-size: 18px;
+    }
+
+    .footer__top-row-column {
+      margin-bottom: calc(var(--space) * 2);
+    }
+
+    .footer__bottom-row-column:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+
+    .footer__bottom-row {
+      gap: calc(var(--space)* 0.5);
+    }
+
+    .footer__privacy {
+      left: calc(var(--space) + 20px);
+      right: unset;
+    }
+
+   
+    
   }
 
 </style>
@@ -186,23 +156,6 @@ query {
 
   export default {
 
-    props: {
-      translated: {
-        type: Boolean,
-        default: false
-      }
-    },
-
-    methods: {
-      loadPage(newpath) {
-        window.location.href = newpath
-
-        if(window.location.pathname === '/community/') {
-          location.reload()
-        }
-
-      }
-    },
     computed: {
       year: () => (new Date).getFullYear()
     }
