@@ -1,144 +1,95 @@
 body {
 
 	--base-font-size: 1.2rem;
-	--font-family: 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+	--font-family: "Roboto Flex", 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	--font-flex-bold: 'wght' 1000, 'wdth' 90, 'opsz' 38, 'XTRA' 500, 'XOPQ' 100;
+	--font-flex-medium: 'wght' 900, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
+	--font-flex-lightmedium: 'wght' 800, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
 
-	--color-dark: #000000;
-	--color-darkish: #333333;
-	--color-darkgray: rgb(37, 37, 37);
-	--color-light: #ffffff;
-	--color-gray: #ccc;
-	--color-gray-mid: rgb(143, 143, 143);
-	--color-gray-dark: #646464;
-	--color-gray-light: #f2f2f2;
-	--color-green-light: #a4ff59;
-	--color-green: #5fce05;
-	--color-green-dark: #1ca50d;
-	--color-yellow: #fee253;
-	--color-orangeYellow: #f5a106;
-	--color-orange: #E9510E;
-	--color-red: #ee005b;
-	--color-red-dark: #bd044b;
-	--color-pink: #ff7aad;
-	--color-lightness: #f2f2f2; 
-	--color-darkness: #1e1e1e;
+	--color-dark: hsl(299, 0%, 0%);
+	--color-darkgray: hsl(0, 0%, 15%);
+	--color-light: hsl(299, 0%, 100%);
+	--color-gray: hsl(0, 0%, 80%);
+	--color-gray-mid: hsl(229, 0%, 60%);
+	--color-gray-dark: hsl(0, 0%, 39%); /* listItem component */
+	--color-gray-light: hsl(0, 0%, 95%);
+	--color-orangeYellow: hsl(39, 95%, 49%); /* intro page scheme */
+	--color-orange:hsl(18, 89%, 48%);  /* architecture page */
+	--color-yellow: hsl(54, 100%, 77%); /* devices page */
+	--color-red: hsl(337, 96%, 38%);
+	--color-pink:hsl(337, 100%, 74%); /* intro page scheme */
+	--color-bright-pink:hsl(323, 100%, 62%); /* devices item */
+	--color-lightness:hsl(0, 0%, 95%); 	/* contacts component */
+	--color-darkness: hsl(0, 0%, 12%);  /* contacts component */
 
-	--color-blue-vivid: #75FBFD;
-	--color-blue-lightest: #DCE8FF;
-	--color-blue-lighter: #ade5ff;
-	--color-blue-light: #70d2ff;
-	--color-blue-mid: #03A5ED;
-	--color-blue: #2949D3;
-	--color-blue-dark-mid: #072089;
-	--color-blue-dark: #000066;
+	--color-blue-vivid: hsl(181, 97%, 73%);
+	--color-blue-lighter:hsl(199, 100%, 84%); /* architecture page */
+	--color-blue-light:hsl(199, 100%, 72%);
+	--color-blue-mid: hsl(198, 98%, 47%);
+	--color-blue: hsl(228.7,67.5%,49.4%); 
+	--color-blue-dark: hsl(228.7,67.5%,40%);
+	--color-blue-contacts: hsl(228, 41%, 27%);
+	--color-blue-xrt: hsl(220, 89%, 74%);  /* xrt page */
 
-	--color-purple-lighter: #c7d2ff;
-	--color-purple-light: #97aafd;
-	--color-purple-mid: #737CF8;
-	--color-purple-mid-dark: #5963e2;
-	--color-violet: #b2c1f3;
-	--color-violet-mid: #213159; 
-	--color-violet-dark: #00bdff; 
-	--color-purple: #221363;
-	--color-purple-dark: #1A1341;
+	--color-violet: hsl(226, 73%, 83%); /* white paper page */
+	--color-violet-mid:hsl(223, 46%, 24%); /* white paper page */
+	--color-violet-dark: hsl(196, 100%, 50%); /* white paper page */
+	--color-purple: hsl(251, 68%, 23%);
 
- 	--body-bg: var(--color-lightness);
-	--header-bg: #fff;
- 	--text-color: #000000;
-	--text-color-invert: #ffffff;
-	--border-color: var(--color-gray); /* deprecated use instead --color-border */
+	--rb-color-blue: var(--color-blue);
+	--rb-color-blue-dark: var(--color-blue-dark);
+	--rb-color-green-accent: hsl(83, 100%, 71%);
+	--rb-color-green: hsl(82,96%,41%);
+	--rb-color-green-dark: hsl(82,96%,35%);
+	--rb-color-greenish: hsl(72, 100%, 41%);
+	--rb-color-greenyellow: #D9E021;
+	--rb-color-pale-blue: hsl(203, 79%, 54%);
+	--rb-color-pale-blue-dark: hsl(203,79%,35%);
+	--rb-color-vivid-blue: var(--color-blue-vivid);
+	--rb-color-vivid-blue-dark: hsl(181, 97%, 35%);
+	--rb-color-violet: hsl(236, 90%, 71%);
+	--rb-color-violet-dark: hsl(236, 90%, 60%);
+	--rb-color-light: var(--color-light);
+	--rb-color-dark: var(--color-dark);
+	--rb-color-gray: var(--color-gray-mid);
+	--rb-color-light-gray: hsl(60, 4%, 89%);
+
+ 	--body-bg: var(--color-light);
+	--header-bg: var(--color-light);
+ 	--text-color: var(--color-dark);
 	--color-border: var(--color-gray);
-	--color-blockquote: #e2e1e1;
-
-	--color-section-dotted: #e9e9e9;
-	--color-button-select: rgba(0,0,0,0.3);
-
- 	--link-color: var(--color-blue-mid); /* deprecated use instead --color-link */
- 	--link-color-hover: var(--color-blue); /* deprecated use instead --color-link-hover */
-	--link-color-visited: #660099;
-
-	--link-color-footer: #00FFFF;
 
 	--color-link: var(--color-blue);
-	--color-link-hover: var(--color-purple-mid);
-	--color-link-contacts:#223695;
+	--color-link-hover: var(--color-blue-dark);
+	--color-link-contacts: var(--color-blue-dark); 
 
-	--link-color-rgba: #03a7ed93;
-	--color-green-rgba: #5fce0581;
-	--color-orange-rgba: #e9500eab;
+	/* gradients for pages bg */
+	--color-gradient-purpleblue: linear-gradient(var(--color-blue-mid), var(--color-purple)); /* intro page */
+	--color-gradient-mars: linear-gradient(var(--color-blue) 30%, #25bfe8 85%, #f0d283 100%); /* vision + wp page */
+	--color-gradient-marketplace:  linear-gradient(#03a7eda6, #03a7ed11); /* intro page */
+	--color-gradient-vision-cybernetics: radial-gradient(circle at 80%, #a6fcf6, #1717b0 50%);  /* intro page */
+	--color-gradient-architecture-banner: radial-gradient(circle at 80%, #AB02AC, #F25206 70%);  /* architecture + wp page */
 
-	--white-button-hover: #d2d6e3;
+	--color-blue-notheme: hsl(228.7,67.5%,49.4%);
+	--color-light-notheme: hsl(299, 0%, 100%);
 
-	--post-code-bg: #b5deff;
-
-	--color-gradient-blue: linear-gradient(var(--color-blue-dark), var(--color-blue-mid)); /* refactor */
-	--color-gradient-purpleblue: linear-gradient(var(--color-blue-mid), var(--color-purple));
-	--color-gradient-mars: linear-gradient(var(--color-blue) 30%, #25bfe8 85%, #f0d283 100%);
-	--color-gradient-purplelight: radial-gradient(var(--color-blue-lighter), var(--color-purple-lighter));
-	--color-gradient-marketplace:  linear-gradient(#03a7eda6, #03a7ed11);
-	--color-gradient-vision-cybernetics: radial-gradient(circle at 80%, #a6fcf6, #1717b0 50%);
-	--color-gradient-architecture-banner: radial-gradient(circle at 80%, #AB02AC, #F25206 70%);
-	
+	/* animation */
 	--animation-bump: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 
-
+	/* helpers */
   --space: 2rem;
   --space-text: 2rem;
   --content-width: 1660px;
-  --text-width: 780px;
-  --tip-width: 16rem;
+	--text-width: calc(1000px + (var(--space) * 2));
+	--mid-width: 1180px;
 
-  --screen-padding-top: 3rem;
+  --screen-padding-top: 3.3rem;
   --screen-padding-right: 1rem;
   --screen-padding-bottom: 1rem;
   --screen-padding-left: 3rem;
 
 	--space-bannertop: 4.5rem;
-}
-
-body.dark-theme {
-	--color-dark: #fff;
-	--color-darkish: #3c3a3a;
-	--color-darkgray: rgb(19 19 19);
-	--color-light: #111;
-	--color-gray: rgb(229, 229, 229);
-	--color-gray-mid: rgb(143, 143, 143);
-	--color-gray-dark: #b0b0b0;
-	--color-gray-light: #212121;
-
-	--color-gradient-purpleblue: linear-gradient(#2e576a, var(--color-purple));
-	--color-gradient-marketplace:  linear-gradient(	#696a6aa6, #03a7ed11);
-	--color-gradient-mars: linear-gradient(#1b2c7a 30%, #000000 85%, #7e631b 100%);
-	--color-gradient-vision-cybernetics: radial-gradient(circle at 80%, #000000, #24246e 50%);
-	--color-gradient-architecture-banner: radial-gradient(circle at 80%, #470047, #cf602a 70%);;
-	--color-gradient-purplelight: radial-gradient(var(--color-blue-lighter), #6d748d);
-
-
-	--color-blue-mid: #03A5ED;
-	--color-blue: #5f7af6;
-	--color-blue-lighter:#2a5b72;
-	--color-blue-lightest: #1e335c;
-	--color-purple-mid: #313568;
-	--color-purple-mid-dark: #5963e2;
-	--color-purple: #2d0719;
-
-	--text-color: #ffffff;
-	--text-color-invert: #000000;
-	--color-border: var(--color-gray);
-	--color-blockquote: #e2e1e1;
-
-	--color-section-dotted: #463e3e;
-
-	--color-button-select: rgb(235 235 235 / 30%);
-
-	--link-color-visited: #c457fb;
-	--white-button-hover: #2e2f2f;
-
-	--body-bg: var(--color-darkness);
-	--header-bg: #303030;;
-
-	--post-code-bg: #3c5c75;
 }
 
 

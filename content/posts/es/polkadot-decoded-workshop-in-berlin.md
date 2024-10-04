@@ -3,7 +3,7 @@ title: 'Robonomics Polkadot Decoded Workshop en Berlin “Kusama Use Cases for y
 date: 2022-06-10
 published: true
 locale: 'es'
-cover_image: ./images/polkadot-decoded-workshop-in-berlin/cover.jpg
+cover_image: ../images/polkadot-decoded-workshop-in-berlin/cover.jpg
 description: "¡El equipo de Robonomics quiere impactar el desarrollo de Kusama Network con escenarios para uso personal en tu hogar! Le mostraremos: cómo puede interactuar con los sensores más populares (como Aqara/Xiaomi) sobre Kusama, cómo puede conectar un espacio de trabajo conjunto para estar bajo el control de Kusama Parachain y más.."
 abstract: "Fecha: 29 Junio. Hora: 11:50 hora de Berlín"
 tags: ['Eventos', 'Polkadot']

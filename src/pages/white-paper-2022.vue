@@ -1,26 +1,26 @@
 <template>
-  <layout>
+  <layout :withGap="false">
 
     <MetaInfo
-      pageTitle = "Whitepaper 2022 page title"
-      pageDescription = "Whitepaper 2022 page description"
+      pageTitle = "Whitepaper 2022"
+      pageDescription = "Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory."
       :pageImage = "'/website_cover_white_paper_2022.jpg'"
     />
 
     <div class="page wp-page">
 
       <!-- main banner -->
-      <section class="wp__banner page-banner section section__solid">
-          <h1>{{$ts(`Robonomics Whitepaper 2022 welcome guide`)}}</h1>
+      <section class="wp__banner section section__solid">
+          <h1>{{$t(`Robonomics whitepaper 2022 welcome guide`)}}</h1>
 
         <div class="small-colony">
-          <g-image src="~/assets/images/white-paper-2022/small-colony.svg"  alt="small-colone"/>
+          <g-image quality="75" src="~/assets/images/white-paper-2022/small-colony.svg"  alt="small-colone"/>
         </div>
         <div class="big-colony">
-          <g-image src="~/assets/images/white-paper-2022/big-colony.svg"  alt="big-colone"/>
+          <g-image quality="75" src="~/assets/images/white-paper-2022/big-colony.svg"  alt="big-colone"/>
         </div>
         <div class="bushes">
-          <g-image src="~/assets/images/white-paper-2022/bushes.svg"  alt="bushes"/>
+          <g-image quality="75" src="~/assets/images/white-paper-2022/bushes.svg"  alt="bushes"/>
         </div>
 
         <div class="astronaut">
@@ -31,7 +31,7 @@
               </svg>
             </div>
             <div data-depth="0.2" class="parallax-astronaut__wrapper">
-              <g-image src="~/assets/images/white-paper-2022/astronaut.svg"  alt="astronaut"/>
+              <g-image quality="75" src="~/assets/images/white-paper-2022/astronaut.svg"  alt="astronaut"/>
             </div>
           </div>
         </div>
@@ -56,24 +56,24 @@
             </svg>
           </div>
           <div class="small-robot">
-            <g-image src="~/assets/images/white-paper-2022/small-robot.svg"  alt="small-robot"/>
+            <g-image quality="75" src="~/assets/images/white-paper-2022/small-robot.svg"  alt="small-robot"/>
           </div>
           <div class="small-robot-wheels">
-            <g-image class="small-robot-wheel" aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" />
-            <g-image class="small-robot-wheel"  aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" />
-            <g-image class="small-robot-wheel" aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" />
+            <g-image quality="75" class="small-robot-wheel" aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" alt="" />
+            <g-image quality="75" class="small-robot-wheel"  aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" alt="" />
+            <g-image quality="75" class="small-robot-wheel" aria-hidden="true" src="~/assets/images/white-paper-2022/wheel-for-small-robot.svg" alt="" />
           </div>
         </div>
 
         <div class="logos">
           <div class="polkadot"> 
-            <g-image src="~/assets/images/white-paper-2022/polkadot.svg"  alt="polkadot"/>
+            <g-image quality="75" src="~/assets/images/white-paper-2022/polkadot.svg"  alt="polkadot"/>
           </div>
           <div class="kusama">
-            <g-image src="~/assets/images/white-paper-2022/crow.svg"  alt="kusama"/>
+            <g-image quality="75" src="~/assets/images/white-paper-2022/crow.svg"  alt="kusama"/>
           </div>
           <div class="ethereum">
-            <g-image src="~/assets/images/white-paper-2022/ethereum.svg"  alt="ethereum"/>
+            <g-image quality="75" src="~/assets/images/white-paper-2022/ethereum.svg"  alt="ethereum"/>
           </div>
         </div>
       </section>
@@ -82,9 +82,8 @@
       <section class="section wp-introduction">
         <div class="layout layout__text animate-inside in-viewport" data-in-viewport="i20" v-in-viewport.once>
           <p class="hyphens wp-introduction__text">
-           {{$ts(`We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...`)}}
+           {{$t(`We have developed a techno-economic machine communication protocol running on top of Ethereum and IPFS, and complement it with elements of a cloud-based IoT platform based on the Polkadot parachain. Today, we already have a hybrid platform for creating futuristic IoT applications. It provides interaction with devices under the control of a global decentralized computer. Before we start creating secure, serverless and futuristic IoT applications using the Robonomics platform, let’s dive a little into theory...`)}}
           </p>
-          <strong>{{$ts(`The first two chapters of the Robonomics white paper are already available to users.`)}}</strong>
         </div>
       </section>
 
@@ -93,54 +92,54 @@
         <div class="container--left chapter__container">
           <div class="first-chapter__text chapter__text">
             <h2 class="first-chapter__title chapter__title"> 
-              <span class="chapter-accent">{{$ts(`Chapter 1.`)}}</span>
-              {{$ts(`AT THE INTERSECTION OF CYBERNETICS AND ECONOMICS`)}}
+              <span class="chapter-accent">{{$t(`Chapter 1.`)}}</span>
+              {{$t(`At the intersection of cybernetics and economics`)}}
             </h2>
             <p class="first-chapter__descr chapter__descr hyphens">
-              {{$ts(`We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.`)}} 
+              {{$t(`We presented an economic system in which robotic devices act as independent agents capable of performing key economic activities, previously reserved for humans. In this chapter, we will talk about the relevance of the robot economy, which can become an important part of people's lives and change the current level of the economy into fully automated services in the future.`)}} 
             </p>
-            <h3 class="first-chapter__subtitle chapter__subtitle">{{$ts(`In this chapter you will learn`)}}:</h3>
+            <h3 class="first-chapter__subtitle chapter__subtitle">{{$t(`In this chapter you will learn`)}}:</h3>
             <ul class="first-chapter__list chapter__list">
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Ronald Coase and The Nature of the Firm`)}}
+                {{$t(`Ronald Coase and The Nature of the Firm`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`CPS - cyber-physical system`)}}
+                {{$t(`CPS - cyber-physical system`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Norbert Wiener and the search for patterns in living and machine`)}}
+                {{$t(`Norbert Wiener and the search for patterns in living and machine`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`The Fourth Industrial Revolution, Money for Robots and Bitcoin`)}}
+                {{$t(`The Fourth Industrial Revolution, Money for Robots and Bitcoin`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Ethereum Smart Contracts`)}}
+                {{$t(`Ethereum Smart Contracts`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Polkadot Parachains`)}}
+                {{$t(`Polkadot Parachains`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Polkadot VS Ethereum 2.0`)}}
+                {{$t(`Polkadot VS Ethereum 2.0`)}}
               </li>
               <li class="first-chapter__item chapter__item">
-                {{$ts(`Open questions of teleology and Mises' work`)}}
+                {{$t(`Open questions of teleology and Mises' work`)}}
               </li>
             </ul>
-            <g-link to="/vision" target="_blank" class="button large white">{{$ts(`Read chapter 1 on the Robonomics website`)}}</g-link>
+            <rb-button buttoncolor="white" to="/vision">{{$t(`Read chapter 1`)}}</rb-button>
           </div>
           <div class="first-chapter__images chapter__images">
             <div class="first-chapter__images--top">
               <div class="first-chapter__images-wrapper">
-                <g-image class="industry" src="~/assets/images/white-paper-2022/indusrty.svg" alt="industry" />
+                <g-image quality="75" class="industry" src="~/assets/images/white-paper-2022/indusrty.svg" alt="industry" />
                 <div class="bitcoin__wrapper">
                   <div class="coin-animation bitcoin"></div>
                 </div>
-                <g-image src="~/assets/images/white-paper-2022/ethereum-color.svg" alt="ethereum" />
-                <g-image src="~/assets/images/white-paper-2022/polkadot-color.svg" alt="polkadot" />
+                <g-image quality="75" src="~/assets/images/white-paper-2022/ethereum-color.svg" alt="ethereum" />
+                <g-image quality="75" src="~/assets/images/white-paper-2022/polkadot-color.svg" alt="polkadot" />
               </div>
             </div>
             <div class="first-chapter__images--bottom">
-              <g-image src="~/assets/images/white-paper-2022/scientists.svg" alt="industry" />
+              <g-image quality="75" src="~/assets/images/white-paper-2022/scientists.svg" alt="industry" />
             </div>
           </div>
         </div>
@@ -152,104 +151,104 @@
         <div class="container--left chapter__container">
           <div class="second-chapter__text chapter__text">
             <h2 class="second-chapter__title chapter__title"> 
-              <span class="chapter-accent">{{$ts(`Chapter 2.`)}}</span>
-              {{$ts(`ROBONOMICS ARCHITECTURE wp`)}}
+              <span class="chapter-accent">{{$t(`Chapter 2.`)}}</span>
+              {{$t(`Robonomics architecture`)}}
             </h2>
             <p class="second-chapter__descr chapter__descr hyphens">
-              {{$ts(`In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.`)}} 
+              {{$t(`In the second chapter, you will read about human-machine interaction using modern Internet technology - from IoT devices to a decentralized and globally accessible network of providers. We will look at the basics of the Internet of Things in order to highlight the problems and main challenges faced by the creators of IoT systems and to the solution of which Robonomics is aimed.`)}} 
             </p>
-            <h3 class="second-chapter__subtitle chapter__subtitle">{{$ts(`In this chapter you will learn`)}}:</h3>
+            <h3 class="second-chapter__subtitle chapter__subtitle">{{$t(`In this chapter you will learn`)}}:</h3>
             <ol class="second-chapter__list chapter__list">
               <li class="second-chapter__item chapter__item">
-                {{$ts(`Overview of the state of the Internet of Things (IoT)`)}}
+                {{$t(`Overview of the state of the Internet of Things (IoT)`)}}
                 <ul class="chapter__sub-list chapter__list">
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Classification of IoT devices`)}}
+                    {{$t(`Classification of IoT devices`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Embedded IoT systems`)}}
+                    {{$t(`Embedded IoT systems`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Edge-systems: IoT gateways and controllers`)}}
+                    {{$t(`Edge-systems: IoT gateways and controllers`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Autonomous Systems`)}}
+                    {{$t(`Autonomous Systems`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Internet of Things providers`)}}
+                    {{$t(`Internet of Things providers`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Digital twins are the heart of the Internet of Things`)}}
+                    {{$t(`Digital twins are the heart of the Internet of Things`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`IoT data flows in cloud service`)}}
+                    {{$t(`IoT data flows in cloud service`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Popular examples of IoT solutions`)}}
+                    {{$t(`Popular examples of IoT solutions`)}}
                   </li>
                   <li class="second-chapter__item chapter__item">
-                    {{$ts(`Current problems of building IoT solutions`)}}
+                    {{$t(`Current problems of building IoT solutions`)}}
                   </li>
                 </ul>
               </li>
               <li class="second-chapter__item chapter__item">
-                {{$ts(`Main tasks of Robonomics architecture`)}}
+                {{$t(`Main tasks of Robonomics architecture`)}}
               </li>
               <li class="second-chapter__item chapter__item">
-                {{$ts(`Basic components of Robonomics architecture`)}}
+                {{$t(`Basic components of Robonomics architecture`)}}
               </li>
               <li class="second-chapter__item chapter__item">
-                {{$ts(`A simple representation of Robonomics architecture`)}}
+                {{$t(`A simple representation of Robonomics architecture`)}}
               </li>
             </ol>
-            <g-link to="/architecture" target="_blank" class="button large white">{{$ts(`Read chapter 2 on the Robonomics website`)}}</g-link>
+            <rb-button buttoncolor="white" to="/architecture">{{$t(`Read chapter 2`)}}</rb-button>
           </div>
           <div class="second-chapter__images chapter__images">
             <div class="scheme-image">
-              <g-image src="~/assets/images/white-paper-2022/scheme.svg" aria-hidden="true" alt="schema" />
+              <g-image quality="75" src="~/assets/images/white-paper-2022/scheme.svg" aria-hidden="true" alt="schema" />
             </div>
             <div class="glushkov">
-              <g-image src="~/assets/images/white-paper-2022/glushkov.svg"/>
+              <g-image quality="75" aria-hidden="true" src="~/assets/images/white-paper-2022/glushkov.svg" alt="" />
             </div>
             <div class="people-with-coin">
-              <g-image src="~/assets/images/white-paper-2022/people-with-coins.svg"/>
+              <g-image  quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/people-with-coins.svg"/>
             </div>
             <div class="console first">
-              <g-image src="~/assets/images/white-paper-2022/console.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/console.svg"/>
             </div>
             <div class="console second">
-              <g-image src="~/assets/images/white-paper-2022/console.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/console.svg"/>
             </div>
             <div class="robot-with-coin">
-              <g-image src="~/assets/images/white-paper-2022/robot-with-coin.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/robot-with-coin.svg"/>
             </div>
             <div class="person-with-coin">
-              <g-image src="~/assets/images/white-paper-2022/person-with-coin.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/person-with-coin.svg"/>
             </div>
             <div class="smart-contract first">
-              <g-image src="~/assets/images/white-paper-2022/smart-contract.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/smart-contract.svg"/>
             </div>
             <div class="smart-contract second">
-              <g-image src="~/assets/images/white-paper-2022/smart-contract.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/smart-contract.svg"/>
             </div>
             <div class="white-column-for-robot">
-              <g-image src="~/assets/images/white-paper-2022/white-column-for-robot.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-column-for-robot.svg"/>
             </div>
             <div class="coin-animation coin"></div>
             <div class="white-column-for-coin">
-              <g-image src="~/assets/images/white-paper-2022/white-column-for-coin.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-column-for-coin.svg"/>
             </div>
             <div class="white-drone">
-              <g-image src="~/assets/images/white-paper-2022/white-drone.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-drone.svg"/>
             </div>
             <div class="white-round-robot">
-              <g-image src="~/assets/images/white-paper-2022/white-round-robot.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-round-robot.svg"/>
             </div>
             <div class="white-small-column">
-              <g-image src="~/assets/images/white-paper-2022/white-small-column.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-small-column.svg"/>
             </div>
             <div class="white-tower">
-              <g-image src="~/assets/images/white-paper-2022/white-tower.svg"/>
+              <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/white-tower.svg"/>
             </div>
             <div class="wp__decortext">
               $ robonomics io<br/>
@@ -271,14 +270,14 @@
       <section class="discord__section section__solid section section__blue animate-inside in-viewport below-viewport">
         <div class="layout discord__layout">
           <p class="discord__text hyphens">
-            {{$ts(`We continue to update the white paper of Robonomics`)}}, <br/> {{$ts(`stay tuned for new parts on our website and in Discord`)}}. 
+            {{$t(`We continue to update the white paper of Robonomics`)}}, <br/> {{$t(`stay tuned for new parts on our website and in Discord`)}}. 
           </p>
-          <Button class="wp__button" color="violet" :link="$static.metadata.discord">
-            <g-image class="button-icon" aria-hidden="true" src="~/assets/images/white-paper-2022/discord.svg" />
-            {{$ts(`JOIN OUR DISCORD`)}}
-          </Button>
+          <rb-button class="wp__button" buttoncolor="violet" :to="$static.metadata.discord">
+            <g-image quality="75" class="button-icon" alt="" aria-hidden="true" src="~/assets/images/white-paper-2022/discord.svg" />
+            {{$t(`Join our discord`)}}
+          </rb-button>
           <div class="elegant-robot">
-            <g-image aria-hidden="true" src="~/assets/images/white-paper-2022/elegant-robot.svg" />
+            <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/white-paper-2022/elegant-robot.svg" />
           </div>
         </div>
       </section>
@@ -301,7 +300,6 @@ query {
 export default {
 
   components: {
-    Button: () => import("~/components/Button.vue"),
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     Spot: () => import("~/components/decor/Spot.vue"),
 },
@@ -386,6 +384,11 @@ export default {
     text-align: left;
    }
 
+   .chapter__text .button {
+    padding: 1.5rem 1.8rem;
+    text-transform: unset;
+   }
+
    .chapter-accent {
     display: block;
    }
@@ -411,14 +414,10 @@ export default {
     font-weight: 500;
   }
 
-  .button {
-    padding:  1.5rem 1.8rem;
+  .wp-page .button {
+    font-weight: 700;
     box-shadow: 6px 6px 0 var(--color-dark);
-  }
-
-  .button:hover {
-    --b-color-background: var(--white-button-hover);
-    background-color: var(--b-color-background);
+    text-transform: uppercase;
   }
 
   hr {
@@ -683,10 +682,6 @@ export default {
     height: 100%;
   }
 
-  .dark-theme .logos {
-    filter: grayscale(1) invert(100%);
-  }
-
   .polkadot {
     position: absolute;
     top: 0;
@@ -718,12 +713,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family:  var(--font-family-code);
   }
 
   .wp-introduction__text {
     line-height: 1.7;
-    font-family:  var(--font-family-code);
    }
 
    .first-chapter__list {

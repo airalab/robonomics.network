@@ -6,7 +6,7 @@
   component: './src/pages/vision.vue'
   typename: 'page'
 
-- path: '/white-paper-2022/'
+- path: '/white-paper/'
   component: './src/pages/white-paper-2022.vue'
   typename: 'page'
 
@@ -42,10 +42,6 @@
   component: './src/pages/blog.vue'
   typename: 'component'
 
-- path: '/ambassador-program/'
-  component: './src/pages/ambassador-program.vue'
-  typename: 'page'
-
 - path: '/timeline/'
   component: './src/pages/timeline.vue'
   typename: 'page'
@@ -53,3 +49,51 @@
 - path: '/logos-and-assets/'
   component: './src/pages/logos-and-assets.vue'
   typename: 'page'
+
+- path: '/home-assistant-themes/'
+  component: './src/pages/home-assistant-themes.vue'
+  typename: 'page'
+
+- path: '/merch/'
+  component: './src/pages/merch.vue'
+  typename: 'page'
+
+- path: '/nft/'
+  component: './src/pages/nft.vue'
+  typename: 'page'
+
+- path: '/wallpapers/'
+  component: './src/pages/wallpapers.vue'
+  typename: 'page'
+
+- path: '/cases/'
+  component: './src/pages/cases/Index.vue'
+  typename: 'page'
+
+- path: '/devices/'
+  component: './src/pages/devices.vue'
+  typename: 'page'
+
+- path: '/its-gonna-get-worse/'
+  component: './src/pages/its-gonna-get-worse.vue'
+  typename: 'page'
+
+- path: '/privacy-policy/'
+  component: './src/pages/privacy-policy.vue'
+  typename: 'page'
+
+# all cases go here
+- path: '/cases/fronius-solar-web'
+  component: './src/pages/cases/fronius-solar-web.vue'
+  typename: 'page'
+
+- path: '/cases/blockchain-coffee-machine'
+  component: './src/pages/cases/blockchain-coffee-machine.vue'
+  typename: 'page'
+
+- path: '/cases/rust-for-ros2'
+  component: './src/pages/cases/rust-for-ros2.vue'
+  typename: 'page'
+
+
+

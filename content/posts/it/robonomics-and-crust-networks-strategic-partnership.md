@@ -3,7 +3,7 @@ title: "La Partnership Strategica fra Robonomics e Crust Network"
 date: 2022-07-22
 published: true
 locale: 'it'
-cover_image: ./images/robonomics-and-crust-networks-strategic-partnership/cover.png
+cover_image: ../images/robonomics-and-crust-networks-strategic-partnership/cover.png
 description: "Questa partnership significa che ci sarà un’integrazione molto più profonda fra le parachain Crust e Robonomics su Kusama, oltre a un nuovo approccio interessante per la collaborazione cross-chain per semplificare l’esperienza dell’utente."
 abstract: "Questa partnership significa che ci sarà un’integrazione molto più profonda fra le parachain Crust e Robonomics su Kusama, oltre a un nuovo approccio interessante per la collaborazione cross-chain per semplificare l’esperienza dell’utente."
 tags: ['Collaborazioni', 'Robonomics paracatena']
@@ -26,12 +26,12 @@ I principali obiettivi che stiamo cercando di raggiungere insieme sono:
 </robo-list>
 
 <p align="center">
-  <img src="./images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
+  <img width="500" height="282" src="../images/robonomics-and-crust-networks-strategic-partnership/spot.gif">
 </p>
 
 Il team di Robonomics ha già iniziato a esplorare Crust Network ed è rimasto colpito dall’approccio diligente alla documentazione. È già possibile avviare un robot della [Boston Dynamics in un laboratorio della Bay Area](https://spot.merklebot.com) atramite una transazione sulla parachain di Robonomics, mentre i dati verranno registrati su Crust. Provatelo voi stessi su [spot.merklebot.com](https://spot.merklebot.com).
 
-![Demo web app](./images/robonomics-and-crust-networks-strategic-partnership/demo.png)
+![Demo web app](../images/robonomics-and-crust-networks-strategic-partnership/demo.png)
 
 Ora ci concentreremo sull’integrazione XCM fra le parachain Crust Shadow e Robonomics. Questo ci consentirà di inviare transazioni per l’archiviazione direttamente dagli smart device, in modo completamente decentralizzato. Qui possono nascere delle domande interessanti, relative alle commissioni di transazione quando i servizi vengono forniti da una parachain all’altra, a cui è necessario rispondere.
 

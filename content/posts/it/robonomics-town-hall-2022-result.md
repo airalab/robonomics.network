@@ -4,7 +4,7 @@ date: 2022-10-15
 published: true
 locale: 'it'
 tags: ['Robonomics parachain', 'Community']
-cover_image: ./images/robonomics-town-hall-2022-result/cover.jpg
+cover_image: ../images/robonomics-town-hall-2022-result/cover.jpg
 description: "Robonomics Town Hall 2022 è stato un evento dove gli sviluppatori del progetto Robonomics hanno cercato di testare gli strumenti di governance attualmente disponibili per i token holder di XRT. Ora il progetto può creare sondaggi per i possessori del token XRT su Ethereum e, soprattutto, dispone di uno strumento per la gestione della governance nell’ecosistema Polkadot."
 abstract: "Robonomics Town Hall 2022 è stato un evento dove gli sviluppatori del progetto Robonomics hanno cercato di testare gli strumenti di governance attualmente disponibili per i token holder di XRT. Ora il progetto può creare sondaggi per i possessori del token XRT su Ethereum e, soprattutto, dispone di uno strumento per la gestione della governance nell’ecosistema Polkadot."
 ---
@@ -105,5 +105,5 @@ Verranno stanziati circa 990 XRT per sovvenzioni relative allo sviluppo di Home 
 
 ## RISULTATI
 
-Consideriamo il Robonomics Town Hall 2022 un successo in termini di interesse della community nella gestione dello sviluppo dei progetti. I sette milioni di XRT appesi per la spada di Damocle dal 2018 verranno bruciati presto. Nelle prossime settimane, il budget per le sovvenzioni ROS2 e Home Assistant sarà assegnato e gestito dal programma di sovvenzioni.
+Consideriamo il Robonomics Town Hall 2022 un successo in termini di interesse della community nella gestione dello sviluppo dei progetti. I sette milioni di XRT appesi per la spada di Damocle dal 2018 saranno bruciati nel 2023. Nelle prossime settimane, il budget per le sovvenzioni ROS2 e Home Assistant sarà assegnato e gestito dal programma di sovvenzioni.
 Per quanto riguarda la Governance 2.0, non appena il nuovo meccanismo di governance verrà lanciato su Polkadot e nella nostra parachain, contatteremo la community e ci offriremo di partecipare alla sperimentazione. Rimanete sintonizzati!

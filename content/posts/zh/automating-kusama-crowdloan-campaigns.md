@@ -3,7 +3,7 @@ title: 自动化众贷活动
 date: 2021-12-08
 published: true
 locale: 'zh'
-cover_image: ./images/automating-kusama-crowdloan-campaigns/cover.jpg
+cover_image: ../images/automating-kusama-crowdloan-campaigns/cover.jpg
 description: "最初的平行链插槽拍卖及其相关的众贷存在先发劣势，导致其价格难以预测，并且往往过高。这种劣势在进行价格厘定的任何新市场中都非常常见，尤其是像平行链拍卖这样的市场，许多团队正在针对不同需求推出多样化产品。"
 abstract: "最初的平行链插槽拍卖及其相关的众贷存在先发劣势，导致其价格难以预测，并且往往过高。这种劣势在进行价格厘定的任何新市场中都非常常见，尤其是像平行链拍卖这样的市场，许多团队正在针对不同需求推出多样化产品。"
 tags: ['Robonomics 平行链']
@@ -31,7 +31,7 @@ Robonomic的核心开发人员将从第4次平行链众贷活动开始实施自�
 
 当然，这里还有一个重要的特殊性：平行链插槽租期必须在当前租期结束前续期，否则可能会出现平行链服务中断或复杂化（平行链将切换 [到现收现付平行链](https://medium.com/polkadot-network/parathreads-pay-as-you-go-parachains-7440d23dde06), 也称为平行线程，这已有了一段时间）。
 
-!["Polkadot ecosystem"](./images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
+!["Polkadot ecosystem"](../images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
 
 一般来说，保持一致很重要。下面我们将讨论我们提出的算法的第一个版本，用于自动计算众贷活动预言机的主要参数。也许我们应该给它起个名字，但到目前为止还没有想到什么有趣的名字。
 

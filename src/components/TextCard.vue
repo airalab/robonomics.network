@@ -3,7 +3,7 @@
   <div :class="card_classes">
 
     <div v-if="icon || image || imageLocal" :class="pic_classes">
-      <g-image aria-hidden="true" :src="pic_src"/>
+      <g-image quality="75" aria-hidden="true" alt="" :src="pic_src"/>
     </div>
 
     <div class="content" v-if="hasDefaultSlot">
@@ -13,7 +13,7 @@
     <g-link v-if="link && !linkButton" :class="link_classes" :to="link">
       <template v-if="linkText">{{linkText}}</template>
     </g-link>
-    <Button v-if="link && linkText && linkButton" :link="link" :label="linkText" button="primary" class="large"/>
+    <rb-button v-if="link && linkText && linkButton" :to="link">{{ linkText }}</rb-button>
 
   </div>
 </template>
@@ -24,10 +24,6 @@
 <script>
 
 export default {
-
-  components: {
-      Button: () => import("~/components/Button.vue"),
-  },
 
   data() {
         return {
@@ -64,9 +60,9 @@ export default {
 
     orientation: {
       type: String,
-      default: 'gorizontal',
+      default: 'horizontal',
       validator: function (value) {
-        return ['gorizontal', 'vertical'].indexOf(value) !== -1;
+        return ['horizontal', 'vertical'].indexOf(value) !== -1;
       }
     },
 
@@ -193,12 +189,12 @@ export default {
 
     .card.vertical.icon, .card.vertical.image { grid-template-rows: auto 1fr; } /* pic + content */
 
-    .card.gorizontal.alignContent-none,
-    .card.gorizontal.alignContent-none h1,
-    .card.gorizontal.alignContent-none h2,
-    .card.gorizontal.alignContent-none h3,
-    .card.gorizontal.alignContent-none h4,
-    .card.gorizontal.alignContent-none h5,
+    .card.horizontal.alignContent-none,
+    .card.horizontal.alignContent-none h1,
+    .card.horizontal.alignContent-none h2,
+    .card.horizontal.alignContent-none h3,
+    .card.horizontal.alignContent-none h4,
+    .card.horizontal.alignContent-none h5,
 
     .card.alignContent-left,
     .card.alignContent-left h1,
@@ -217,11 +213,11 @@ export default {
     { text-align: right; }
     
     @media screen and (min-width: 650px) {
-      .card.gorizontal.icon, .card.gorizontal.image { grid-template-columns: auto 1fr; } /* pic + content */
+      .card.horizontal.icon, .card.horizontal.image { grid-template-columns: auto 1fr; } /* pic + content */
     }
 
     @media screen and (max-width: 650px) {
-      .card.gorizontal.icon, .card.gorizontal.image { grid-template-columns: 1fr; }
+      .card.horizontal.icon, .card.horizontal.image { grid-template-columns: 1fr; }
     }
 
     .card.alignContentV-middle {
@@ -248,7 +244,7 @@ export default {
     }
 
     .card.oldy__link:hover .pic.round.icon {
-        --color-iconback: var(--link-color);
+        --color-iconback: var(--color-blue-mid);
       }
 
     .card.white {
@@ -256,7 +252,7 @@ export default {
       --color-text: var(--color-dark);
     }
     .card.blue {
-      --color-back: var(--link-color);
+      --color-back: var(--color-blue-mid);
       --color-text: var(--color-light);
     }
     .card.darkblue {
@@ -283,9 +279,13 @@ export default {
     }
 
       .card.blue.oldy__link:hover .pic.round.icon {
-          background-color: var(--link-color);
+          background-color: var(--color-blue-mid);
       }
     /* end of COLORING */
+
+    .card .button {
+      text-align: center;
+    }
 
 
     /* PICTURES */
@@ -345,5 +345,11 @@ export default {
       margin-bottom: calc(var(--space) * 0.7);
     }
     /* end of CONTENT */
+
+    .withImg img {
+      width: 80%;
+      padding: calc(var(--space) * 0.5);
+      background-color: #fff;
+    }
   
 </style>

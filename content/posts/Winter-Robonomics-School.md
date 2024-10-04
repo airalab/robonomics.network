@@ -9,7 +9,8 @@ abstract: "Free online Master Classes and Lectures open for attendees. Try to bu
 tags: ['Online school']
 ---
 import Card from '~/components/TextCard.vue'
-import Button from '~/components/Button.vue'
+
+<ExpiredInfo/>
 
 Robonomics Winter School 2021 is inviting all willing to join master classes and lectures hosted by experienced contributors and programmers operating with Dapps and Web services on the Polkadot Parachain.
 

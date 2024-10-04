@@ -1,5 +1,7 @@
 <template>
-    <div>This page has moved to a <a :href="redirect">{{ $static.metadata.home + redirect }}</a>. Automatic redirecting</div>
+    <layout>
+        <div class="redirect oldy">{{ $t('This page has moved to a') }} <a :href="redirect">{{ $static.metadata.home + redirect }}</a>. {{ $t('Automatic redirecting') }}</div>
+    </layout>
 </template>
 
 <static-query>
@@ -41,3 +43,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+    .redirect {
+        min-height: 100vh;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+</style>
+

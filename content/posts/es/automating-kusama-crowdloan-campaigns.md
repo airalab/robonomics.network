@@ -3,7 +3,7 @@ title: Automatización de campañas de préstamos colectivos (crowdloan)
 date: 2021-12-08
 published: true
 locale: 'es'
-cover_image: ./images/automating-kusama-crowdloan-campaigns/cover.jpg
+cover_image: ../images/automating-kusama-crowdloan-campaigns/cover.jpg
 description: "Las subastas iniciales de slots de parachain y sus préstamos colectivos asociados se vieron perjudicados por ser los primeros en llegar al mercado, lo que hizo que sus precios fueran difíciles de predecir y, a menudo, demasiado altos. Esta desventaja es común en cualquier mercado nuevo en el cual los precios todavía no están claros, especialmente mercados como las subastas de parachain, donde diferentes equipos lanzan productos diversos con necesidades diversas."
 abstract: "Las subastas iniciales de slots de parachain y sus préstamos colectivos asociados se vieron perjudicados por ser los primeros en llegar al mercado, lo que hizo que sus precios fueran difíciles de predecir y, a menudo, demasiado altos. Esta desventaja es común en cualquier mercado nuevo en el cual los precios todavía no están claros, especialmente mercados como las subastas de parachain, donde diferentes equipos lanzan productos diversos con necesidades diversas."
 tags: ['Paracaídas Robonomics']
@@ -31,7 +31,7 @@ Muy a menudo, quiere ser el primero, pero con el tiempo se da cuenta de que es m
 
 Por supuesto, aquí también existe una especificidad importante: el arrendamiento de las ranuras de la parachain debe extenderse antes del final del arrendamiento actual; de lo contrario, puede haber una interrupción o complicación en sus servicios (la parachain cambiará [a Parachains Pay-as-you-go](https://medium.com/polkadot-network/parathreads-pay-as-you-go-parachains-7440d23dde06), también conocida como Parathread, desde hace un tiempo).
 
-!["Polkadot ecosystem"](./images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
+!["Polkadot ecosystem"](../images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
 
 En general, es importante mantenerse en línea. A continuación, hablaremos de la primera versión del algoritmo propuesto para el cálculo autónomo de los principales parámetros del oráculo de la campaña de préstamo colectivo. Quizás deberíamos darle un nombre, pero hasta ahora no se nos ocurre nada interesante.
 

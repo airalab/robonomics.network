@@ -4,7 +4,7 @@ date: 2022-07-27
 published: true
 locale: 'fr'
 tags: ['Parachaîne Robonomics', 'Jeton XRT']
-cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
+cover_image: ../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
 description: "Pour Robonomics, il y a encore beaucoup de notre feuille de route devant nous, et beaucoup de choses vont arriver pour la première fois."
 abstract: "Pour Robonomics, il y a encore beaucoup de notre feuille de route devant nous, et beaucoup de choses vont arriver pour la première fois."
@@ -21,7 +21,7 @@ Nous aurons bientôt notre premier vote communautaire, il sera en ce qui concern
 
 Après avoir commencé en 2015 avec les premières expériences et publications sur l’utilisation des contrats intelligents pour contrôler les robots, en 2017, nous avions notre premier plan pour créer des robonomiques pour mettre en œuvre des fonctionnalités supplémentaires Ethereum pour les tâches [Robot-as-a-Service](https://en.wikipedia.org/wiki/Robot_as_a_service). Nous avons ensuite procédé à la distribution initiale des jetons XRT, en distribuant 10% de l’émission initiale proposée à la communauté et aux premiers développeurs du projet.
 
-![ICO Stage](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-1.png)
+![ICO Stage](../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-1.png)
 
 Les développeurs du projet ont proposé de diviser les 9 millions de XRT restants entre le DAO des développeurs (20%) et la communauté (70%), mais ce n’était qu’après le lancement complet de Robonomics sur Ethereum, qui était prévu en 2018-2019.
 
@@ -33,7 +33,7 @@ Nous avons lancé la version bêta de Robonomics en 2018, et en avril 2019, nous
 
 Nous avons décidé de reporter la distribution du 70% de l’approvisionnement initial de la communauté XRT jusqu’au lancement de Ethereum 2.0, avec la conviction que cet événement, indépendamment du sentiment général du marché, sera plus approprié. Les 20% restants de XRT ont été acceptés par le développeur DAO pour ne pas être utilisés jusqu’à ce que la communauté soit activée, ce qui était censé être à peu près en même temps que la version Serenity. En général, pour nous, la sortie d’Ethereum 2.0 était le phare métaphorique pendant le blizzard de l’hiver cryptographique.
 
-![Ethereum 1.0 Stage](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-2.png)
+![Ethereum 1.0 Stage](../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-2.png)
 
 Ce fut une période difficile pour nous, nous avons perdu certains de nos chers participants au projet, et chaque mois la situation n’a pas été plus facile. Heureusement, les travaux sur les robonomiques ont continué d’être maintenus par un groupe de 5-6 développeurs. Cette année-là, nous avons décidé d’essayer une nouvelle blockchain, similaire (mais un peu différente) à Ethereum 2.0. Cette blockchain a été proposée par l’équipe Parity, qui étaient déjà des visages familiers pour toute la communauté Ethereum, et elle a également été dirigée par Gavid Wood. C’est ainsi que nous avons commencé à travailler sur la mise en œuvre des robonomiques pour Polkadot.
 
@@ -45,7 +45,7 @@ L’émergence d’un segment DeFi à grande échelle (en particulier Uniswap en
 
 La communauté a considérablement augmenté en 2021 - le nombre de détenteurs de jetons XRT s’est multiplié par rapport à 2017, le jeton a commencé à être négocié sur de nombreuses bourses. Autour de Robonomics, la vie a commencé à bouillir, le projet a continué son développement après l’hiver cryptographique. Aujourd’hui, il est important de se concentrer sur l’avenir de toute la communauté, et non sur la mise en œuvre des plans de 2017 après 5 ans. Ainsi, la question s’est posée : que faire avec 70% de l’émission initiale, qui s’est transformée en une épée de Damoclès pour toute la communauté?
 
-![Token contract overview](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-3.png)
+![Token contract overview](../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-3.png)
 
 ## Robonomics Mairie été 2022
 

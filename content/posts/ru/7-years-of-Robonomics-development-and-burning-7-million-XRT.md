@@ -4,7 +4,7 @@ date: 2022-07-27
 published: true
 locale: 'ru'
 tags: ['Парачейн Робономика', 'XRT токен']
-cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
+cover_image: ../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
 description: "Для Робономики многое ещё только впереди или происходит впервые."
 abstract: "Для Робономики многое ещё только впереди или происходит впервые."
@@ -21,7 +21,7 @@ import Card from '~/components/TextCard.vue'
 
 Начав в 2015 году c первых экспериментов и публикаций о применении умных контрактов для управления роботами, к 2017 году мы имели первый план создания Робономики для реализации дополнительных возможностей Ethereum в задачах [Robot-as-a-Service](https://en.wikipedia.org/wiki/Robot_as_a_service). Тогда мы провели начальную дистрибуцию токенов XRT, распределив среди сообщества и первых разработчиков проекта 10% от предлагаемой начальной эмиссии. 
 
-![ICO Stage](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-1.png)
+![ICO Stage](../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-1.png)
 
 Оставшиеся 9 млн XRT разработчики проекта предлагали разделить между ДАО разработчиков (20%) и сообществом (70%), но только после полноценного запуска Робономики в Ethereum, который планировался в 2018-2019 годах.
 
@@ -31,7 +31,7 @@ import Card from '~/components/TextCard.vue'
 
 Но к концу 2018 главными задачами стали сохранение корневой команды и поддержание работы в ожидании Ethereum 2.0, запуск которого тогда казался реальным к 2020 году. Мы решили отложить распределение 70% начальной эмиссии XRT до момента запуска второй версии Ethereum, считая, что это событие, независимо от общей ситуации на рынке, будет более подходящим на фоне падения первых криптовалют на 50-90%. Оставшиеся 20% XRT разработчики проекта договорились не трогать до момента активизации сообщества, что, как предполагалось, произойдёт примерно одновременно с релизом Serenity. В общем Ethereum 2.0 в начале криптозимы был нашим маяком во время метели.
 
-![Ethereum 1.0 Stage](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-2.png)
+![Ethereum 1.0 Stage](../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-2.png)
 
 Было сложно, мы потеряли некоторых участников проекта, и с каждым месяцем проще не становилось. Но всё же желание найти способ работать над Робономикой и дальше сохранилось как минимум у 5-6 разработчиков. В том году мы приняли решение попробовать похожий на Ethereum 2.0 блокчейн от уже знакомой всему Ethereum-сообществу команды Parity под управлением Гэвина Вуда. Так мы начали работать над реализацией для Polkadot. 
 
@@ -43,7 +43,7 @@ import Card from '~/components/TextCard.vue'
 
 Сообщество существенно выросло к 2021 году. Количество держателей токенов XRT по сравнению с 2017 годом увеличилось кратно, токен начал торговаться на множестве бирж. Вокруг Робономики закипела жизнь, проект продолжил своё развитие после криптозимы. И сегодня важно сделать акцент на будущем для всего сообщества, а не на попытках воплотить планы 2017 года спустя 5 лет. Таким образом, встал вопрос: что делать с 70% начальной эмиссии, которая превратилась для всего сообщества в дамоклов меч?
 
-![Token contract overview](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-3.png)
+![Token contract overview](../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-3.png)
 
 ## Robonomics Town Hall Summer 2022
 

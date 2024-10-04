@@ -4,7 +4,7 @@ date: 2022-07-27
 published: true
 locale: 'es'
 tags: ['Paracaídas Robonomics', 'Token XRT']
-cover_image: ./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
+cover_image: ../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-of-Robonomics-development-and-burning-7-million-XRT.jpg
 # canonical_url: false
 description: "Para Robonomics, todavía queda gran parte de nuestra hoja de ruta por delante, y muchas cosas sucederán por primera vez."
 abstract: "Para Robonomics, todavía queda gran parte de nuestra hoja de ruta por delante, y muchas cosas sucederán por primera vez."
@@ -21,7 +21,7 @@ Pronto tendremos nuestra primera votación de la comunidad, será sobre el desti
 
 Habiendo comenzado en 2015 con los primeros experimentos y publicaciones sobre el uso de contratos inteligentes para controlar robots, en 2017 tuvimos nuestro primer plan para crear Robonomics para implementar características adicionales de Ethereum para tareas de [Robot como un servicio](https://en.wikipedia.org/wiki/Robot_as_a_service). Luego llevamos a cabo la distribución inicial de tokens XRT, distribuyendo el 10% de la emisión inicial propuesta entre la comunidad y los primeros desarrolladores del proyecto.
 
-![ICO Stage](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-1.png)
+![ICO Stage](../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-1.png)
 
 Los desarrolladores del proyecto propusieron dividir los 9 millones de XRT restantes entre el DAO de los desarrolladores (20 %) y la comunidad (70 %), pero esto sería solo después del lanzamiento completo de Robonomics en Ethereum, que estaba previsto para 2018–2019.
 
@@ -33,7 +33,7 @@ A fines de 2018, los objetivos principales del proyecto eran mantener el equipo 
 
 Decidimos posponer la distribución del 70 % del suministro inicial de XRT de la comunidad hasta el lanzamiento de Ethereum 2.0, con la creencia de que este evento, independientemente del sentimiento general del mercado, será más apropiado. El DAO de desarrolladores acordó que el 20% restante de XRT no se utilizaría hasta que se active la comunidad, que se suponía que sería aproximadamente al mismo tiempo que el lanzamiento de Serenity. En general, para nosotros, el lanzamiento de Ethereum 2.0 fue el faro metafórico durante la tormenta de nieve del criptoinvierno.
 
-![Ethereum 1.0 Stage](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-2.png)
+![Ethereum 1.0 Stage](../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-2.png)
 
 Fué un momento difícil para nosotros, perdimos a algunos de nuestros queridos participantes del proyecto, y cada mes la situación no se hacía más fácil. Afortunadamente, el trabajo en Robonomics continuó siendo mantenido por un grupo de 5–6 desarrolladores. Ese año, decidimos probar una nueva blockchain, similar (pero un poco diferente) a Ethereum 2.0. Esta blockchain fué propuesta por el equipo de Parity, que ya eran rostros familiares para toda la comunidad de Ethereum, y también fué dirigida por Gavid Wood. Fué así como empezamos a trabajar en la implementación de Robonomics para Polkadot.
 
@@ -45,7 +45,7 @@ El surgimiento de un segmento DeFi a gran escala (en particular, Uniswap en 2020
 
 La comunidad ha crecido sustancialmente para 2021: la cantidad de titulares de tokens XRT se ha multiplicado en comparación con 2017, el token comenzó a comercializarse en muchos Exchange. Alrededor de Robonomics, la vida comenzó a hervir, el proyecto continuó su desarrollo después del criptoinvierno. Hoy es importante enfocarse en el futuro de toda la comunidad, y no en tratar de implementar los planes del 2017 después de 5 años. Así, surgió la pregunta: ¿Qué hacer con el 70% de la emisión inicial, que se ha convertido en una espada de Damocles para toda la comunidad?
 
-![Token contract overview](./images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-3.png)
+![Token contract overview](../images/7-years-of-Robonomics-development-and-burning-7-million-XRT/7-years-img-3.png)
 
 ## AYUNTAMIENTO DE ROBONOMICS EN VERANO 2022
 

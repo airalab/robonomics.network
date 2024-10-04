@@ -3,7 +3,7 @@ title: "Robonomics startet offiziell das Ambassador Programm!"
 date: 2022-04-17
 published: true
 locale: 'de'
-cover_image: ./images/robonomics-officially-launches-the-ambassador-program/cover.jpg
+cover_image: ../images/robonomics-officially-launches-the-ambassador-program/cover.jpg
 description: "Das Robonomics-Team lädt alle ein, die sich für die Idee des Projekts begeistern und bereit sind, zur Entwicklung und Förderung von Robonomics in der internationalen Arena ihren Beitrag zu leisten"
 abstract: "Das Robonomics-Team lädt alle ein, die sich für die Idee des Projekts begeistern und bereit sind, zur Entwicklung und Förderung von Robonomics in der internationalen Arena ihren Beitrag zu leisten"
 tags: ['Robonomics Parachain', 'Gemeinschaft']

@@ -10,6 +10,8 @@ tags: ['Online school']
 ---
 import Card from '~/components/TextCard.vue'
 
+<ExpiredInfo/>
+
 The participants of the winter school will have three lectures and gain a lot of practice using (d)apps based on the Robonomics platform.
 
 <Card>

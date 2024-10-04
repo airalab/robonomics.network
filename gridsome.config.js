@@ -14,6 +14,14 @@ module.exports = {
 
   titleTemplate: '%s',
 
+  /* cancel prefetch other pages */
+  prefetch: { mask: '^$', },
+
+  images: {
+    defaultBlur: 15,
+    compress: false,
+  },
+
   plugins: [
     
     {
@@ -35,31 +43,17 @@ module.exports = {
           },
         },
         plugins: [
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']},  'gridsome-remark-katex'],
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}]
         ]
       }
     },
 
     {
-      // Create posts from markdown files
-      use: "@gridsome/vue-remark",
-      options: {
-        typeName: "Land",
-        baseDir: "content/land",
-        route: '/land/:path',
-        template: './src/templates/Land.vue',
-        plugins: [
-          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
-        ]
-      }
-    },
-    
-    {
       use: "gridsome-plugin-translateit",
       options: {
-        locales: ["en", "ru", "zh", "es", "ko", "de", "ja", "pt", "az", "it", "tr", "fr", "uk"],
+        locales: ["ar","de","el","en","es","fr","it","ja","ko","nl","pt","ru","uk","zh"],
         defaultLocale: "en",
-        translations: yaml.load(fs.readFileSync('./src/data/locales/translations.yaml', 'utf8')),
+        translations: [],
         collections: ['blog', 'jobs'],
         routes: yaml.load(fs.readFileSync('./src/data/locales/routes.yaml', 'utf8')),
         exclude: ["/blog/tag/"]
@@ -83,9 +77,15 @@ module.exports = {
 
     {
       use: "gridsome-plugin-google-sheets-post",
-      
     },
-    
+
+    {
+      use: 'gridsome-plugin-matomo',
+      options: {
+        host: 'https://matomo.robonomics.network/',
+        siteId: 3,
+      }
+    }
   ],
 
 
@@ -95,5 +95,7 @@ module.exports = {
     svgRule
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
+
+    config.resolve.alias.set('@imagesMarkdown', '/content/posts/')
   }
 };

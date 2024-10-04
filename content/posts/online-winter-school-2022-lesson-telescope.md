@@ -11,6 +11,8 @@ tags: ['Online school', 'Use Cases']
 import Card from '~/components/TextCard.vue'
 import UserForm from '~/components/blocks/UserForm.vue'
 
+<ExpiredInfo/>
+
 We love the space theme and we all look forward to the James Web Telescope revealing to mankind the secrets of the early state of the universe.
 
 In the meantime, we want to give you the opportunity to explore the observable universe in an entertaining way and make yourself or your loved ones a beautiful NFT of deep space.

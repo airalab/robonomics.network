@@ -3,7 +3,7 @@ title: "最高到 1.2 版：质押、技术传播和司库"
 date: 2021-09-17
 published: true
 locale: 'zh'
-cover_image: ./images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
+cover_image: ../images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
 description: "项目研发人员采用2种重要变更推行机器人经济学平行链工作。第一 种是 接入XRT质押泛函数，第二 种是启动第一个链上管理机制。"
 abstract: "项目研发人员采用2种重要变更推行机器人经济学平行链工作。第一 种是 接入XRT质押泛函数，第二 种是启动第一个链上管理机制。"
 tags: ['Robonomics 平行链', 'XRT 代币', 'RWS 令牌', '质押', '新版本']
@@ -40,13 +40,13 @@ import Card from '~/components/TextCard.vue'
 
 ### 实践
 
-Dapp应用程序准备就绪：https://dapp.robonomics.network/#/staking/
+Dapp应用程序准备就绪：https://robonomics.app/#/staking/
 
-![Dapp应用程序准备就绪](./images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
+![Dapp应用程序准备就绪](../images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
 
 第一次交易后，您将获得具有统计信息的表格:
 
-![Dapp](./images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
+![Dapp](../images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
 
 平行链上账户之间的代币发送仍是被禁用。在Kusama网络上出现平行链后，将可以接入转移代币。
 
@@ -58,11 +58,11 @@ Dapp应用程序准备就绪：https://dapp.robonomics.network/#/staking/
 
 由于与Subscan结合，机器人经济学平行链中的XRT持有者可以使用以下精彩的界面：https://robonomics.subscan.io/account
 
-![Subscan.io](./images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
+![Subscan.io](../images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
 
-在dapp Exodus界面，可以看到以太坊到平行链的迁移统计：https://dapp.robonomics.network/#/exodus
+在dapp Exodus界面，可以看到以太坊到平行链的迁移统计：https://robonomics.app/#/exodus
 
-![dapp Exodus](./images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
+![dapp Exodus](../images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
 
 ### 进一步改进质押功能
 
@@ -80,7 +80,7 @@ Dapp应用程序准备就绪：https://dapp.robonomics.network/#/staking/
 
 技术委员会工作界面可由以下链接进入： https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/techcomm
 
-![网络技术委员会](./images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
+![网络技术委员会](../images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
 
 如9月15日看到的，技术委员会新增了6名成员，他们是：2名Devops专业人员，软件架构师，执行Substrate的总设计师，高级工程师-机器人技术专家和dapp高级 开发人员。
 
@@ -94,7 +94,7 @@ Dapp应用程序准备就绪：https://dapp.robonomics.network/#/staking/
 
 可通过以下链接进入平行链金库界面： https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/treasury
 
-![库](./images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
+![库](../images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
 
 在过去的一个月里，大约10万个XRT已在2021年夏天从金库中分配到机器人经济学第一家Crowdloan公司的平衡表中。这些操作不会反映在请求中，因为它们是通过 sudo 函数达到的。现在我们有技术委员会，请求将通过投票决定。
 

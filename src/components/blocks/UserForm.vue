@@ -2,24 +2,17 @@
     <div class="form" :class="'status-'+status">
         <form @submit.prevent="onSubmit" >
             <label class="label">
-                <span>{{$ts('Your email')}}:</span>
+                <span>{{$t('Your email')}}:</span>
                 <input type="email" v-model="email" name="email" required/>
             </label>
 
-            <label><input type="checkbox" name="agreement" required/> {{$ts('I agree to receive emails')}}</label>
-
-            <vue-recaptcha
-            ref="invisibleRecaptcha"
-            @verify="onVerify"
-            size="invisible"
-            :sitekey="recaptchaSitekey">
-            </vue-recaptcha>
+            <label><input type="checkbox" name="agreement" required/> {{$t('I agree to receive emails')}}</label>
             <div>
-                <button>{{$ts('Send')}}</button>
+                <rb-button>{{$t('Send')}}</rb-button>
             </div>
         </form>
 
-        <div class="form-message">{{$ts('Thanks, your application has been sent!')}}</div>
+        <div class="form-message">{{$t('Thanks, your application has been sent!')}}</div>
     </div>
 </template>
 
@@ -28,7 +21,6 @@
     form {
         display: block;
         max-width: calc(var(--w-content) * 0.7) !important;
-        font-family: var(--font-family-code);
     }
 
     input[type="checkbox"] {
@@ -64,7 +56,7 @@
     }
 
     .label {
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--color-border);
         padding: calc(var(--space) * 0.2) calc(var(--space) * 0.5) calc(var(--space) * 0.5);
         transition: 0.4s all ease;
     }
@@ -110,9 +102,6 @@
 
 <script>
 export default {
-  components: {
-      VueRecaptcha: () => import("vue-recaptcha")
-  },
 
   metaInfo: {
     script: [
@@ -131,8 +120,6 @@ export default {
     return {
       email: null,
       status: 'none',
-      recaptchaSitekey: process.env.GRIDSOME_RECAPTCHA
-      // recaptchaSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test localhost
     }
   },
 
