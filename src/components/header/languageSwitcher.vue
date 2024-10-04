@@ -19,16 +19,18 @@
 
 <style scoped>
   select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2.21 11.44'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23000;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg data-name='Слой 1'%3E%3Crect class='cls-1' width='2.21' height='2.21'/%3E%3Crect class='cls-1' y='4.62' width='2.21' height='2.21'/%3E%3Crect class='cls-1' y='9.23' width='2.21' height='2.21'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-size: 8px 15px;
-    background-position: 34px 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='4' height='21' viewBox='0 0 4 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.58449 0H0.92643C0.414777 0 0 0.414777 0 0.92643V2.58449C0 3.09615 0.414777 3.51092 0.92643 3.51092H2.58449C3.09615 3.51092 3.51093 3.09615 3.51093 2.58449V0.926431C3.51093 0.414777 3.09615 0 2.58449 0Z' fill='black'/%3E%3Cpath d='M2.58449 8.33789H0.92643C0.414777 8.33789 0 8.75267 0 9.26432V10.9224C0 11.434 0.414777 11.8488 0.92643 11.8488H2.58449C3.09615 11.8488 3.51093 11.434 3.51093 10.9224V9.26432C3.51093 8.75267 3.09615 8.33789 2.58449 8.33789Z' fill='black'/%3E%3Cpath d='M2.58449 16.6758H0.92643C0.414777 16.6758 0 17.0906 0 17.6022V19.2603C0 19.7719 0.414777 20.1867 0.92643 20.1867H2.58449C3.09615 20.1867 3.51093 19.7719 3.51093 19.2603V17.6022C3.51093 17.0906 3.09615 16.6758 2.58449 16.6758Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-size: 8px 18px;
+    background-position: -2px 9px;
     padding: 0.35rem 0.6rem;
     padding-right: 1rem;
+    font-family: var(--font-family);
     font-size: 80%;
+    font-weight: 900;
     color: var(--color-dark);
     text-transform: uppercase;
     background-color: transparent;
-    border: 1px solid var(--color-dark);
+    border: 1px solid transparent;
     height: 100%;
   }
 
@@ -36,46 +38,26 @@
     position: relative;
   }
 
-  .bigGap {
-    margin-right: calc(var(--space) * 1.2) !important;
-  }
-
   .select-wrapper span{
     position: absolute;
     top: 2px;
-    right: -20px;
+    right: -5px;
     width: 25px;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: calc(var(--base-font-size) * 0.6);
-    color: var(--color-light);
-    background-color: var(--color-dark);
+    font-weight: 600;
+    color: var(--color-dark);
     z-index: -1;
   }
 
 
-  @media screen and (max-width: 1650px) {
+  @media screen and (max-width: 940px) {
     select {
-
-      background-size: 8px 15px;
-      background-position: 34px 9px;
-
-    }
-  }
-
-  @media screen and (max-width: 1005px) {
-    select {
-      background-size: 5px 12px;
-      background-position: 30px 9px;
-    }
-  }
-
-  @media screen and (max-width: 460px) {
-    
-    .bigGap {
-      margin-right: calc(var(--space) * 1.6) !important;
+      background-size: 8px 16px;
+      background-position: 0px 8px;
     }
   }
 

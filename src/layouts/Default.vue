@@ -7,8 +7,7 @@
       </div>
 
       <div v-show="isLoaded" class="screen banner">
-      
-        <span class="right-border"></span>
+  
 
         <Header :translated="translated" />
 
@@ -18,9 +17,6 @@
           <ClientOnly> <Footer :translated="translated"/> </ClientOnly>
         </div>
 
-        <div class="sidetext sidetext-left">
-          <a href="/timeline">Working since 2015</a>
-        </div>
       </div>
 
     </div>
@@ -69,10 +65,7 @@
 
 .screen {
 	position: relative;
-  background-color: var(--color-gray-light);
-  border-style: solid;
-  border-color: var(--header-bg);
-  border-width: 0 var(--screen-padding-right) var(--screen-padding-right) var(--screen-padding-left);
+  background-color: var(--color-light);
   padding-top: var(--screen-padding-top);
   padding-bottom: var(--screen-padding-bottom);
   height: 100vh;
@@ -83,42 +76,10 @@
 	.screen::-webkit-scrollbar { display: none; }
 
 
-  .screen:after {
-    content: "";
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: var(--screen-padding-right);
-    background-color: var(--header-bg);
-    z-index: 900;
-  }
-
-  .screen:before {
-    content: "";
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: var(--screen-padding-left);
-    background-color: var(--header-bg);
-    z-index: 900;
-  }
-
-  .right-border {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    width: var(--screen-padding-right);
-    background-color: var(--header-bg);
-    z-index: 900;
-  }
-
 
 .screen-content {
   position: relative;
-  background-color: var(--color-gray-light);
+  background-color: var(--color-light);
 }
 
 </style>

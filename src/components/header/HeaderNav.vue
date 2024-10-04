@@ -179,20 +179,25 @@
     }
 
     .nav-toggler {
-        width: 37px;
+        width: 42px;
         height: 37px;
         cursor: pointer;
         padding: 0.55rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid var(--color-dark);
+        border: 1px solid transparent;
     }
 
     .nav-toggler div {
-        height: 1.5px;
+        height: 3.5px;
         width: 100%;
         background-color: var(--color-dark);  
+        border-radius: 5px;
+    }
+
+    .nav-toggler div:not(:last-child) {
+        margin-bottom: 2px;
     }
 
     .open  .nav-content {
@@ -203,7 +208,7 @@
     }
 
     .open .nav-toggler div {
-        transform-origin: 50% 50%;
+        transform-origin: 50% 62%;
         transition: 0.1s linear all;
     }
     
@@ -339,8 +344,13 @@
         }
 
         .nav-toggler {
-            width: 30px;
-            height: 30px;
+            width: 38px;
+            height: 32px;
+        }
+
+
+        .nav-toggler div {
+            height: 3px;
         }
 
         

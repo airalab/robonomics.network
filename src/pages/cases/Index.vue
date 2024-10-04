@@ -470,6 +470,7 @@ export default {
   .cases__main-title {
     max-width: 340px;
     margin-right: 2rem;
+    align-self: flex-start;
   }
 
   .cases-top p {

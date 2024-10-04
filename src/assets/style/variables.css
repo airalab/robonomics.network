@@ -2,7 +2,7 @@ body {
 
 	--base-font-size: 1.2rem;
 	--font-family: "Roboto Flex", 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-  	--font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 	--font-flex-bold: 'wght' 1000, 'wdth' 90, 'opsz' 38, 'XTRA' 500, 'XOPQ' 100;
 	--font-flex-medium: 'wght' 900, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
 	--font-flex-lightmedium: 'wght' 800, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
@@ -29,6 +29,7 @@ body {
 	--color-blue-mid: hsl(198, 98%, 47%);
 	--color-blue: hsl(228.7,67.5%,49.4%); 
 	--color-blue-dark: hsl(228.7,67.5%,40%);
+	--color-blue-contacts: hsl(228, 41%, 27%);
 	--color-blue-xrt: hsl(220, 89%, 74%);  /* xrt page */
 
 	--color-violet: hsl(226, 73%, 83%); /* white paper page */
@@ -38,6 +39,7 @@ body {
 
 	--rb-color-blue: var(--color-blue);
 	--rb-color-blue-dark: var(--color-blue-dark);
+	--rb-color-green-accent: hsl(83, 100%, 71%);
 	--rb-color-green: hsl(82,96%,41%);
 	--rb-color-green-dark: hsl(82,96%,35%);
 	--rb-color-greenish: hsl(72, 100%, 41%);
