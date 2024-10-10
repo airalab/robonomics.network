@@ -140,6 +140,11 @@ export default {
     font-size: 10px;
     padding: 0.2rem 0rem;
   }
+
+  .home-product__model {
+    min-height: 580px;
+  }
+
 }
 
 </style>

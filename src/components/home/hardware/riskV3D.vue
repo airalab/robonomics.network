@@ -55,35 +55,51 @@ export default {
         modelPivot.add(model); // Add the model to the pivot object
 
         model.traverse((node) => {
-                if (node.isMesh) {
-                    // node.castShadow = true; // Enable shadow casting
-                    // node.receiveShadow = true; // Enable shadow receiving
+          if (node.isMesh) {
+            // node.castShadow = true; // Enable shadow casting
+            // node.receiveShadow = true; // Enable shadow receiving
 
-                    // Apply smooth shading
-                    node.geometry.computeVertexNormals(); // Ensure smooth shading is applied
+            // Apply smooth shading
+            node.geometry.computeVertexNormals(); // Ensure smooth shading is applied
 
-                    // Use MeshStandardMaterial for smoother reflections
-                    node.material = new THREE.MeshStandardMaterial({
-                        color: node.material.color, // Preserve original color
-                        roughness: 2, // Smoother appearance
-                        metalness: 1.8, // Low metalness for subtle reflections
-                        flatShading: false, // Disable flat shading for smooth shading
-                    });
-                }
+            // Use MeshStandardMaterial for smoother reflections
+            node.material = new THREE.MeshStandardMaterial({
+                color: node.material.color, // Preserve original color
+                roughness: 2, // Smoother appearance
+                metalness: 1.8, // Low metalness for subtle reflections
+                flatShading: false, // Disable flat shading for smooth shading
             });
+          }
+        });
 
-        // Compute the bounding box to center the model
-        const box = new THREE.Box3().setFromObject(model); // Create a bounding box around the model
-        const size = box.getSize(new THREE.Vector3()); // Get the size of the model
-        const center = box.getCenter(new THREE.Vector3()); // Get the center of the bounding box
+        let cachedBox = JSON.parse(localStorage.getItem('boundingBoxCache'));
+
+        if (!cachedBox) {
+            // Compute the bounding box only if it's not cached
+            const box = new THREE.Box3().setFromObject(model); // Create bounding box
+            const vector = new THREE.Vector3();
+            const size = box.getSize(vector); // Get size of the model
+            const center = box.getCenter(vector); // Get center of the bounding box
+
+            // Cache bounding box data for future use
+            cachedBox = {
+                center: { x: center.x, y: center.y, z: center.z },
+                size: { x: size.x, y: size.y, z: size.z }
+            };
+            localStorage.setItem('boundingBoxCache', JSON.stringify(cachedBox));
+        }
+
+        const fixedCenter = new THREE.Vector3(cachedBox.center.x, cachedBox.center.y, cachedBox.center.z);
+        const fixedSize = new THREE.Vector3(cachedBox.size.x, cachedBox.size.y, cachedBox.size.z);
 
         // Calculate scale to fit into the container
-        const maxDimension = Math.max(size.x, size.y, size.z);
+        const maxDimension = Math.max(fixedSize.x, fixedSize.y, fixedSize.z);
         const scale = Math.min(205 * maxDimension, 230 * maxDimension); // Ensure model fits both dimensions
 
         // Center the model and scale it
         model.scale.set(scale, scale, scale); // Scale the model uniformly
-        model.position.set(-center.x * scale, -center.y * scale, -center.z * scale); // Center the model
+        model.position.set(-fixedCenter.x * scale, -fixedCenter.y * scale, -fixedCenter.z * scale); // Center the model
+
     }, undefined, (error) => {
         console.error(error);
     });
@@ -141,7 +157,8 @@ export default {
 
 @media screen and (max-width: 520px) {
   .risk-v-3d {
-    bottom: -30px;
+    bottom: -10px;
+    right: -20px;
   }
 }
 
