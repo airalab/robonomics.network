@@ -142,13 +142,16 @@
 	max-width: calc(var(--text-width) * 0.6);
 }
 
-
 .layout__mid {
 	max-width: calc(var(--mid-width) + (var(--space) * 2));
 }
 
 .layout__wide {
 	max-width: calc(1500px  + (var(--space) * 4));
+}
+
+.layout__new {
+	max-width: 980px;
 }
 
 .page hr.animate {
