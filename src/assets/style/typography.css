@@ -105,7 +105,7 @@ h2, h3, h4, h5 {
 }
 
 
-.turned-text-green {
+.turned-text {
   position: absolute;
   left: -20px;
   top: 0;
@@ -113,8 +113,7 @@ h2, h3, h4, h5 {
   font-family: var(--font-family);
   font-size: 24px;
   font-weight: 900;
-  /* color: var(--rb-color-green-accent); */
-  color: hsl(83deg 66.95% 56.78%);
+  color: var(--rb-color-green-accent);
   transform: rotate(-90deg) translate(-100%, 0);
   transform-origin: 0 0;
   white-space: nowrap;
@@ -372,7 +371,6 @@ li:not(:last-child) {
   break-inside: avoid-column;
 }
 
-
 /* ambassador program */
 .label-red {
   display: inline-block;
@@ -383,4 +381,91 @@ li:not(:last-child) {
 
 .underline {
   text-decoration: underline;
+}
+
+/* text classes */
+.title1 {
+  font-family: var(--font-family);
+  font-size: var(--desktopTitle);
+  font-weight: 900;
+}
+
+.title2 {
+  font-family: var(--font-family);
+  font-size: var(--desktopTitle2);
+  font-weight: 900;
+}
+
+.title3 {
+  font-family: var(--font-family);
+  font-size: var(--desktopTitle3);
+  font-weight: 900;
+}
+
+.title5 {
+  font-size: var(--desktopTitle5);
+  font-weight: 900;
+}
+
+.simple-text {
+  font-family: var(--font-family);
+  font-size: var(--desktopText);
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.bold-text {
+  font-family: var(--font-family);
+  font-size: var(--desktopText);
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.small-text {
+  font-family: var(--font-family);
+  font-size: var(--desktopSmall);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+@media screen and (max-width: 475px) {
+  .title1 {
+    font-size: var(--mobileTitle);
+  }
+  
+  .title2 {
+    font-size: var(--mobileTitle2);
+  }
+  
+  .title3 {
+    font-size: var(--mobileTitle3);
+  }
+  
+  .title5 {
+    font-size: var(--mobileTitle5);
+  }
+  
+  .simple-text {
+    font-size: var(--mobileText);
+  }
+  
+  .bold-text {
+    font-size: var(--mobileText);
+  }
+  
+  .small-text {
+    font-size: var(--mobileSmall);
+  }
+}
+
+
+.highlighted-text {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  margin-bottom: 10px;
+  font-weight: 900;
+  line-height: 0.8;
+  font-size: calc(var(--base-font-size) * 0.8);
+  background-color: var(--rb-color-green-accent);
 }

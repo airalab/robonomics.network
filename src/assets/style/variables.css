@@ -90,6 +90,22 @@ body {
   --screen-padding-left: 3rem;
 
 	--space-bannertop: 4.5rem;
+
+
+	/* text */
+	--desktopTitle: 30px;
+	--desktopTitle2: 26px;
+	--desktopTitle3: 22px;
+	--desktopTitle5: 20px;
+	--desktopText: 20px;
+	--desktopSmall: 16px;
+
+	--mobileTitle: 26px;
+	--mobileTitle2: 22px;
+	--mobileTitle3: 18px;
+	--mobileTitle5: 17px;
+	--mobileText: 18px;
+	--mobileSmall: 18px;
 }
 
 
