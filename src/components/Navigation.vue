@@ -121,4 +121,11 @@ export default {
   }
 
 
+  @media screen and (max-width: 510px) {
+    .navigation__layout {
+      padding-left: calc(var(--space) + 10px);
+    }
+  }
+
+
 </style>
