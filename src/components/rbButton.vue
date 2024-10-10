@@ -44,7 +44,7 @@ export default {
       type: String,
       default: 'blue',
       validator: function (value) {
-        return ['blue', 'green', 'pale-blue', 'vivid-blue', 'violet', 'white', 'black'].indexOf(value) !== -1;
+        return ['blue', 'green', 'pale-blue', 'vivid-blue', 'violet', 'white', 'black', 'accent-green'].indexOf(value) !== -1;
       }
     },
 
@@ -105,6 +105,7 @@ export default {
     color: var(--b-color-text);
     cursor: pointer;
     display: inline-flex;
+    font-family: var(--font-family);
     font-size: var(--base-font-size);
     font-variation-settings: var(--font-flex-medium);
     font-weight: 500;
@@ -168,5 +169,12 @@ export default {
 
   .rb-button-black {
     --b-color-background: var(--rb-color-dark);
+  }
+
+  .rb-button-accent-green{
+    --b-color-background: var(--rb-color-green-accent);
+    --b-color-background-hover: var(--rb-color-violet-dark);
+    --b-color-text: var(--rb-color-dark);
+    font-weight: 900;
   }
 </style>

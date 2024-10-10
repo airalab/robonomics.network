@@ -13,8 +13,9 @@
 
         <div class="screen-content">
           <slot/>
-          <Contacts :withGap="withGap" />
+          <ContactsForm/>
           <ClientOnly> <Footer :translated="translated"/> </ClientOnly>
+          <Contacts :withGap="withGap" />
         </div>
 
       </div>
@@ -94,6 +95,7 @@ export default {
     Footer: () => import('~/components/footer/Footer.vue'),
     Contacts: () => import('~/components/footer/Contacts.vue'),
     Loader: () => import('~/components/utils/Loader.vue'),
+    ContactsForm: () => import("~/components//utils/contactsForm.vue"),
   },
 
   props: {

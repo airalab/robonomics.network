@@ -1,7 +1,7 @@
 <template>
   <section class="section section__solid contacts" :class="{'withGap': withGap}" dir="ltr">
 
-    <ContactsForm />
+    <!-- <ContactsForm /> -->
 
     <div class="contacts__container grid-4">
       <Item v-for="item in items" 
@@ -20,7 +20,7 @@
   import contacts from '@/data/contact.yaml'
 export default {
   components: { 
-    ContactsForm: () => import("../utils/contactsForm.vue"),
+    // ContactsForm: () => import("../utils/contactsForm.vue"),
     Item: () => import ('./ContactsItem.vue'),
   },
 
@@ -74,7 +74,7 @@ export default {
     padding-top: 0 !important;
     padding-bottom: 0;
     background-color: transparent;
-    border-top: 1rem solid var(--color-light);
+    /* border-top: 1rem solid var(--color-light); */
   }
 
   .contacts__container {
