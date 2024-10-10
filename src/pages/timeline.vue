@@ -42,10 +42,6 @@
 </style>
 
 <script>
-  import * as THREE from 'three';
-  import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-  import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-
   import MetaInfo from '~/components/MetaInfo.vue';
   import TimelineItem from '~/components/timeline/TimelineItem.vue'
 
@@ -189,49 +185,6 @@
         ]
       }
     },
-
-    // async mounted() {
-    //   this.scene = new THREE.Scene();
-    //   this.camera = new THREE.PerspectiveCamera(  75, window.innerWidth / window.innerHeight, 0.001, 1000 );
-
-    //   this.renderer = new THREE.WebGLRenderer();
-
-    //   this.scene.background = new THREE.Color(0xffffff);
-
-    //   const result = await new GLTFLoader().loadAsync('/model.glb');
-
-    //   this.renderer.setSize( window.innerWidth, window.innerHeight );
-
-    //   this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    //   this.renderer.toneMappingExposure = 1;
-    //   this.renderer.outputEncoding = THREE.sRGBEncoding;
-    //   this.renderer.setPixelRatio(window.devicePixelRatio);
-
-    //   const ambientLight = new THREE.AmbientLight( 0xffffff, 0.8 );
-    //   this.scene.add( ambientLight );
-
-    //   const dirLight = new THREE.DirectionalLight( 0xefefff, 2.5 );
-    //   dirLight.position.set( 10, 10, 10 );
-    //   this.scene.add( dirLight );
-
-    //   result.scene.traverse( ( object ) => { if ( object.isMesh ) { object.material.flatShading = true}})
-
-    //   this.renderer.setAnimationLoop( () => {
-    //     this.renderer.render( this.scene, this.camera );
-    //   } );
-
-
-    //   document.querySelector('.screen-content').appendChild( this.renderer.domElement );
-
-
-    //   this.scene.add(result.scene)
-    //   const controls = new OrbitControls(this.camera, this.renderer.domElement);
-    //   controls.update();
-    //   result.scene.scale.set(2, 2, 2);
-    //   this.camera.position.set(0, 0, 0.5);
-
-    //   console.log(result)
-    // }
   }
   
 </script>

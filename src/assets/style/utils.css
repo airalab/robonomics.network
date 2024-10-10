@@ -152,10 +152,6 @@
   background-color: var(--color-blue-dark-mid)
 }
 
-.bold-text {
-  font-weight: 500;
-}
-
 .italic-abstract {
   font-style: italic;
   font-weight: 300;

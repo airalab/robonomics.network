@@ -6,166 +6,34 @@
         pageDescription = "Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy."
       />
 
-      <section id="homebanner" class="slide section section__solid">
-        <div id="homebanner-content" :style="bannertransform">
+    <section class="home">
 
-          <div id="homebanner-scheme">
-            <a id="homebanner-pic" href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank">
-              <g-image alt="Robonomics as a decentralized word computer scheme, how it works" src="~/assets/images/robonomics-scheme-x2.png" srcset="~/assets/images/robonomics-scheme.png 420px" quality="100" />
-            </a>
-            <div id="homebanner-scheme-subtitle">
-              <h4>Robonomics<br/> {{ $t('is a part of the World Computer') }}</h4>
-              <IconBannerArrowLeft aria-hidden="true" />
-            </div>
-            <div id="homebanner-scheme-video">
-              <h4>{{ $t('Watch the video') }}<br/> {{ $t('“What is Robonomics”') }}</h4>
-              <a href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank"><g-image alt="Video - What is Robonomics" src="~/assets/images/robonomics-scheme-video.webp" quality="100" /></a>
-              <IconBannerArrowRight aria-hidden="true" />
-            </div>
-            <a id="homebanner-link" href="https://youtu.be/onMv_An8h2Q?si=cysEy9NF1wjepo5C" target="_blank">{{ $t('What is Robonomics') }}</a>
+      <div class="layout layout__new">
+        <h1 class="home__title title2">Hardware for cyber punks 2025 line up</h1>
+        <Products/>
+      </div>
+
+      <Member/>
+
+      <div class="layout layout__new"> 
+        <div class="home__advantages grid-3">
+          <div class="home__advantages-item">
+            <h3 class="home__advantages-title home__advantages-title--scalable title2">Scalable</h3>
+            <p class="simple-text">Since Blockchain started its rapid growing we are on top of technologies and know how radical they can change and how to scale WEB3 infrastructure according to new network standards.</p>
           </div>
-
-          <div class="layout layout__content">
-            <h1>{{$t('Web3 cloud')}}<br/> {{ $t('for Robotics and IoT Devices') }}</h1>
+          <div class="home__advantages-item">
+            <h3 class="home__advantages-title home__advantages-title--antiscam title2">anti-scam</h3>
+            <p class="simple-text">It’s always tempting to promise what the market expects—even beyond reality. While we’re tech optimists, we prioritize solid architecture and failure-resistant solutions.</p>
           </div>
-          
+          <div class="home__advantages-item">
+            <h3 class="home__advantages-title home__advantages-title--privacy title2">Privacy friendly</h3>
+            <p class="simple-text">We adhere to decentralized, open-source paradigms, which are crucial for the smart hardware already being used by the masses in everyday life.</p>
+          </div>
         </div>
-      </section>
+        <g-link to="/timeline/" class="advantages__link"><span>Robonomics Timeline</span></g-link>
+      </div>
 
-
-      <section class="section__whitespace">
-        <div class="layout layout__text animate-inside" v-in-viewport.once>
-          <h2>{{ $t('What is Robonomics') }}</h2>
-          <p class="text-center">{{ $t('Robonomics is already functioning Web3 Cloud, which allows managing IoT devices, performing techno-economic transactions between people and machines, and building serverless IoT apps. Create use cases from the world of IoT/Robotics with a focus on global accessibility, cybersecurity, and data privacy.') }}</p>
-        </div>
-
-        <div class="layout layout__content ">
-          <Scheme/>
-        </div>
-
-      </section>
-
-      <hr/>
-
-      <section class="section__whitespace">
-        <div class="layout layout__text align-center">
-          <h2>{{$t('Get started')}}</h2>
-        </div>
-
-        <section class="index-getstarted layout layout__content grid-4 animate-inside" v-in-viewport.once>
-          <g-link class="oldy oldy__link" to="/intro/">
-            <div class="img-back">
-              <g-image aria-hidden="true" alt="" src="~/assets/images/explore-1.png" />
-            </div>
-            <h3>{{$t('Explore Robonomics')}}</h3>
-            <p>{{$t('Robonomics is an open-source technology for IoT market available for everyone. Read an executive summary to know more')}}</p>
-          </g-link>
-
-          <g-link class="oldy oldy__link" to="/xrt">
-            <div class="img-back">
-              <g-image alt="" aria-hidden="true" src="~/assets/images/explore-2.png" />
-            </div>
-            <h3>{{$t('Get XRT')}}</h3>
-            <p>{{$t('XRT is the utility token that make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain')}}</p>
-          </g-link>
-
-          <g-link class="oldy oldy__link" to="https://robonomics.app/#/">
-          <div class="img-back">
-              <g-image aria-hidden="true" alt="" src="~/assets/images/explore-3.png" />
-            </div>
-            <h3>{{$t('Use a Dapp')}}</h3>
-            <p>{{$t('Take a look at the Beta version of decentralized application for managing IoT devices')}}</p>
-          </g-link>
-
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/">
-            <div class="img-back">
-              <g-image aria-hidden="true" alt="" src="~/assets/images/explore-4.png" />
-            </div>
-            <h3>{{$t('Start building')}}</h3>
-            <p>{{$t('Learn Robonomics through tutorials and practically useful experimenting in Robonomics WIKI')}}</p>
-          </g-link>
-        </section>
-      </section>
-
-      <hr/>
-
-      <section class="section__whitespace">
-        <section class="layout layout__text align-center">
-          <h2>{{$t('Robonomics objectives')}}</h2>
-          <p class="text-center">{{$t('Based on the achievements of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. There are the main tasks for which Robonomics is being developed')}}:</p>
-        </section>
-
-        <div class="goals animate-inside" v-in-viewport.once>
-
-          <section class="section layout layout__content animate-inside" v-in-viewport.once>
-
-            <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/robots-digitalTwins.png" />
-
-            <div class="text-col-1">
-              <h3>1. {{$t('IoT device management with a decentralized cloud')}}</h3>
-              <p class="hyphens">{{$t('Blockchain networks have all the capabilities to provide the highest degree of security for running a device and getting its telemetry. The interaction with the device can actually be described by changing the state of the digital twin stored in the blockchain network and sending information about these changes. In the case of a permissionless blockchain, we can talk about the guarantees of global availability of providers for IoT, as well as a high level of protection of digital twin data from unwanted changes.')}}</p>
-            </div>
-
-          </section>
-
-          <section class="section layout layout__content animate-inside" v-in-viewport.once>
-
-            <g-image aria-hidden="true" alt="" quality="75"  src="~/assets/images/intro-rwsFeature-3.png" />
-            
-            <div class="text-col-1">
-              <h3>2. {{$t('Techno-economic transactions between humans and machines')}}</h3>
-              <p class="hyphens">{{$t('Thanks to the mechanism of cryptocurrencies and smart contracts, we can provide access to automated systems directly to digital markets. For example, Ethereum already implements most of the basic tools of economic activity that can be used in the operation of autonomous devices. The applications created for the interaction between the end user and the IoT device will be much more effective if the terms of service and payment for it are inseparable from the launch parameters of the device.')}}</p>
-            </div>
-
-            
-          </section>
-
-          <section class="section layout layout__content animate-inside" v-in-viewport.once>
-
-            <g-image src="~/assets/images/robots-cloud.png" />
-            
-            <div class="text-col-1">
-              <h3>3. {{$t('Serverless IoT applications for users')}}</h3>
-              <p class="hyphens">{{$t('Modern advances in web3-technology can solve the issue of user privacy. With web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.')}}</p>
-            </div>
-            
-          </section>
-        </div>
-
-      </section>
-
-      <hr/>
-
-      <section class="section__whitespace">
-        <div class="layout layout__text align-center">
-          <h2>{{$t('Learn with Robonomics')}}</h2>
-        </div>
-        <section class="index-academy layout layout__content grid-3 animate-inside" v-in-viewport.once>
-          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/school-2024-privacy-insights/overview/">
-            <div class="img-back">
-              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/frontpage-privacy-course.png" />
-            </div>
-            <h3>{{ $t("IoT Privacy study '2024") }}</h3>
-            <p>{{$t('Based on a dozen recent scientific publications and reports, this study looks on actual state of privacy question in smart home industry, nowadays risks and pitfalls. You will get some answers on how to protect yourself as well.')}}</p>
-          </g-link>
-
-          <g-link class="oldy oldy__link" to="https://robonomics.academy/en/learn/world-computer/overview/">
-            <div class="img-back spot">
-              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/frontpage-world-computer.png" />
-            </div>
-            <h3>{{ $t('How the World Computer can save us') }}</h3>
-            <p>{{ $t("What is a world computer? How it works, can it replace corporate cloud infrastructure, who owns data? Please, don't skip these 4 lectures written on our Academy and widen your mind.") }}</p>
-          </g-link>
-
-          <g-link class="oldy oldy__link" to="https://wiki.robonomics.network/docs/robonomics-smart-home-overview/#secure-iot-with-blockchain">
-            <div class="img-back">
-              <g-image quality="75" alt="" aria-hidden="true" src="~/assets/images/frontpage-smarthome.png" />
-            </div>
-            <h3>{{ $t('Build safe smart home') }}</h3>
-            <p>{{ $t('Practical guide on how to build vendor- and corporate- independent smart home with Robonomics and Home Assistant. All steps and requirements in one place.') }}</p>
-          </g-link>
-        </section>
-      </section>
+    </section>
 
     
   </layout>
@@ -182,256 +50,82 @@ query {
 
 <script>
   import MetaInfo from '~/components/MetaInfo.vue'
-  import Scheme from  '~/components/scheme/SchemeWithPopups.vue'
-  import IconBannerArrowLeft from  '~/components/svg/icon-1.vue'
-  import IconBannerArrowRight from  '~/components/svg/icon-2.vue'
+  import Products from '~/components/Products.vue'
+  import Member from '~/components/home/homeMember.vue'
 
   export default {
 
     components: {
       MetaInfo,
-      Scheme,
-      IconBannerArrowLeft,
-      IconBannerArrowRight,
-    },
-
-    data() {
-      return {
-        bannerscale: 0,
-        scrollstarted: false
-      }
-    },
-
-    computed: {
-      bannertransform() {
-        if(this.scrollstarted) {
-          return 'transform: scale(' + (1 - this.bannerscale) + ') !important; transform-origin: 50% 80% !important;';
-        }
-      }
-    },
-
-    methods: {
-      onScroll() {
-      
-        if(window.scrollY > 20 && window.scrollY < window.innerHeight/2) {
-          this.scrollstarted = true;
-          this.bannerscale = window.scrollY/1000;
-        }
-
-        if(window.scrollY <= 20) {
-          this.bannerscale = 0;
-        }
-      },
-    },
-
-    mounted() {
-      window.addEventListener('scroll', this.onScroll);
-    },
-
-    beforeDestroy () {
-      window.removeEventListener('scroll', this.onScroll);
+      Products,
+      Member
     }
-   
+
   }
 </script>
 
 
 <style scoped>
 
-  /* + BANNER */
-  
-  #homebanner {
-    background-color: var(--color-blue-notheme);
-    background-image: url('../assets/images/robonomics-pattern.webp');
-    background-size: 600px;
-    padding: 0;
+  .home {
+    padding-bottom: calc(var(--space) * 3);
   }
 
-  #homebanner-content {
-    align-items: start;
-    animation: bannershow 1s cubic-bezier(0.175, -0.885, 0.32, 1.575) 0.4s forwards;
-    background-color: var(--color-blue-notheme);
-    box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
-    color: var(--color-light-notheme);
-    display: grid;
-    gap: var(--space);
-    grid-template-rows: 3fr auto;
-    justify-content: center;
-    min-height: calc(100vh - var(--screen-padding-top) - var(--screen-padding-bottom));
-    transform-origin: 50% 0;
-    transform: scaleY(0);
-    padding: var(--space) 0;
+  .home__advantages {
+    margin-bottom: var(--space);
   }
 
-  #homebanner-content h1 {
-    margin: 0;
-    padding: 0;
-  }
-
-  #homebanner-pic {
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  #homebanner-scheme {
-    align-self: center;
-    animation: FadeIn 0.8s linear 1.3s forwards;
-    margin: 0 auto;
-    max-width: 85vw;
-    opacity: 0;
-    position: relative;
-    text-align: center;
-    visibility: hidden;
-    width: 640px;
-  }
-  
-  #homebanner-scheme-subtitle {
-    left: -240px;
-    position: absolute;
+  .home__advantages-title {
+    padding-top: 60px;
+    text-transform: uppercase;
     text-align: left;
-    top: 50%;
-    width: 240px;
+    background-position: left;
+    background-repeat: no-repeat;
   }
 
-  #homebanner-scheme-subtitle h4, #homebanner-scheme-video h4 {
-    text-align: left;
+  .home__advantages-title--scalable {
+    background-image: url("data:image/svg+xml,%3Csvg width='102' height='8' viewBox='0 0 102 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M101.854 4.35355C102.049 4.15829 102.049 3.84171 101.854 3.64645L98.6716 0.464466C98.4763 0.269204 98.1597 0.269204 97.9645 0.464466C97.7692 0.659728 97.7692 0.976311 97.9645 1.17157L100.793 4L97.9645 6.82843C97.7692 7.02369 97.7692 7.34027 97.9645 7.53553C98.1597 7.7308 98.4763 7.7308 98.6716 7.53553L101.854 4.35355ZM1 4.5H101.5V3.5H1V4.5Z' fill='%233F3F3F'/%3E%3Cpath d='M0.646446 4.35355C0.451187 4.15829 0.451187 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53554 0.464466C4.7308 0.659728 4.7308 0.976311 4.53554 1.17157L1.70711 4L4.53554 6.82843C4.7308 7.02369 4.7308 7.34027 4.53554 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM101.5 4.5H1V3.5H101.5V4.5Z' fill='%233F3F3F'/%3E%3C/svg%3E%0A");
   }
 
-  #homebanner-scheme-subtitle svg {
-    width: 55px;
-    position: absolute;
-    right: 0;
-    top: 0;
+
+  .home__advantages-title--antiscam {
+    background-image: url("data:image/svg+xml,%3Csvg width='102' height='14' viewBox='0 0 102 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7C14.3689 -1 17.2751 -1 9.71882 7C2.16251 15 5.06878 15 18.4376 7C31.8065 -1 34.7128 -1 27.1565 7C19.6001 15 22.5064 15 35.8753 7C49.2441 -1 52.1504 -1 44.5941 7C37.0378 15 39.9441 15 53.3129 7C66.6818 -1 69.588 -1 62.0317 7C54.4754 15 57.3817 15 70.7505 7C84.1194 -1 87.0257 -1 79.4694 7C71.9131 15 74.8193 15 88.1882 7C101.557 -1 104.463 -1 96.907 7' stroke='%233F3F3F'/%3E%3C/svg%3E%0A");
   }
 
-  #homebanner-scheme-video {
-    position: absolute;
-    width: 300px;
-    right: -300px;
-    top: 2rem;
+  .home__advantages-title--privacy {
+    background-size: 109px 15px;
+    background-image: url("../assets/images/hardware-2025/privacy.png");
   }
 
-  #homebanner-scheme-video svg {
-    width: 70px;
-    position: absolute;
-    right: -30px;
-    top: 0;
-  }
-
-  #homebanner-scheme-video > a {
+  .advantages__link {
     display: block;
-    width: 220px;
-  }
-
-  #homebanner-link {
-    font-variation-settings: var(--font-flex-medium);
-    color: #FF0000;
-    margin: 4rem auto 0;
-    display: none;
     text-align: center;
-    border-bottom: 0.5px solid #FF0000;
+    font-weight: 900;
   }
 
-  @keyframes bannershow {
-    to {
-      transform: scaleY(1);
-    }
-  }
-
-  @media screen and (max-width: 1320px) {
-
-    #homebanner-content {
-      grid-template-rows: auto auto;
-    }
-
-    #homebanner-scheme-subtitle { display: none; }
-    #homebanner-scheme-video { display: none; }
-    #homebanner-link { display: inline-block; }
-    #homebanner-scheme {
-      text-align: center;
-    }
-  }
-
-  /* - BANNER */
-
-  @media screen and (max-width: 400px) {
-    .img-back {
-      height: 232px;
-    }
-  }
-
-  .index-academy .oldy  {
+  .advantages__link span {
     position: relative;
   }
-  
-  .index-getstarted a,
-  .index-academy a {
-      text-decoration: none;
-      color: var(--text-color);
+
+  .advantages__link span::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-blue);
   }
 
-  .index-getstarted h3,
-  .index-academy h3 {
-    margin-top: 0; margin-bottom: calc(var(--space) * 0.4)
-  }
+  @media screen and (max-width: 990px) {
 
-  .index-academy .oldy  h3 {
-    text-transform: none;
-  }
-      
-  .index-getstarted .img-back,
-  .index-academy .img-back {
-      margin-bottom: calc(var(--space) * 0.7);
-  }
-
-  .goals > section {
-      max-width: 1400px;
-      display: grid;
-      grid-template-columns: 0.5fr 1fr ;
-      gap: var(--space);
-      align-items: center;
-  }
-
-  .goals h3,
-  .goals p {
-    font-size: calc(var(--base-font-size) * 0.9)
-  }
-  
-  @media screen and (max-width: 1100px) {
-      .goals > section {
-        grid-template-columns: 1fr 1fr;
-      }
+    .home__advantages-title {
+      padding-top: 0;
+      padding-right: 100px;
+      background-position: right;
     }
-
-    @media screen and (max-width: 760px) {
-
-      .goals > section {
-        grid-template-columns: 1fr;
-      }
-
-      .goals img {
-        grid-row-start: 2;
-      }
-    }
-
-  .oldy h3 {
-    margin-bottom: calc(var(--space) * 0.5);
-    font-size: calc(var(--base-font-size) * 0.9);
-    color: var(--color-blue);
-    text-transform: capitalize;
-    text-align: left;
-    letter-spacing: 0;
   }
 
-  .oldy {
-    text-align: left;
-    font-size: calc(var(--base-font-size) * 0.9)
-  }
 
-  .img-back.spot img {
-    object-fit: contain;
-    height: 192px;
-  }
 
 </style>

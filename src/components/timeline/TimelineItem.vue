@@ -123,6 +123,7 @@ export default {
           currPos = window.getComputedStyle(line).getPropertyValue("top")
           const width = window.getComputedStyle(line).getPropertyValue("width")
           const max = block.clientHeight - parseInt(width.slice(0, -2))
+    
 
             if(lastKnown.pos > window.scrollY) {
               if(self.currentScrollPos > 0) {
