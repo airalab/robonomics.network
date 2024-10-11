@@ -14,14 +14,14 @@
     <section class="devices-banner"></section>
 
     <section class="devices-intro layout layout__new">
-      <h2 class="devices-intro__title title1"> Begin your adventure in the world of cyber punks</h2>
-      <p class="bold-text">Meet smart devices & futuristic hardware from an autonomous team with extensive expertise in robotics, blockchain, and IoT.</p>
+      <h2 class="devices-intro__title"> Begin your adventure in the world of cyber punks</h2>
+      <p><b>Meet smart devices & futuristic hardware from an autonomous team with extensive expertise in robotics, blockchain, and IoT</b>.</p>
     </section>
 
     <!-- products -->
     <section class="products">
       <div class="layout layout__new">
-        <h2 class="devices__title title2">
+        <h2 class="devices__title">
           <span>Hardware for cyber punks 2025 line up</span>
         </h2>
         <Products/>
@@ -59,7 +59,7 @@ export default {
   .devices-banner {
     padding: 0 0 var(--space);
     margin-bottom: var(--space);
-    min-height: 300px;
+    min-height: 620px;
     height: 100%;
     background-image: url('../../assets/images/banner-new-desktop.png');
     background-size: contain;
@@ -86,6 +86,7 @@ export default {
 
   @media screen and (max-width: 520px) {
     .devices-banner {
+      min-height: 300px;
       background-image: url('../../assets/images/banner-new-mobile.png');
     }
 

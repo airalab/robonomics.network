@@ -13,7 +13,7 @@
         <h1><span>{{ $t('Robonomics merch') }}</span></h1>
       </div>
 
-      <div class="blue-banner-layout layout layout__mid">
+      <div class="blue-banner-layout layout layout__content">
           <g-image class="merch__banner-img"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/merch/merch-banner-girls.png"/>
         <div class="merch-banner-content">
           <p class="blue-banner__text">{{ $t('Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.') }} </p>

@@ -12,6 +12,7 @@
       <g-image class="home-product__img products__img" src="~/assets/images/hardware-2025/altruist-demo.png" :alt="products[0].title" quality="75"/>
     </Product>
     <Product
+      class="with-models"
       :id="products[1].id"
       :title="products[1].title"
       :highlightedText="products[1].highlightedText"

@@ -11,7 +11,7 @@
         <h1><span>{{ $t('Robonomics nfts') }}</span></h1>
       </div>
 
-      <div class="layout layout__mid nft__banner">
+      <div class="layout layout__content nft__banner">
         <p>{{ $t("Here, we've assembled a collection of NFTs minted during our extensive crypto journey, both independently and with great teams. These unique tokens offer verifiable ownership on the blockchain and make for great swag to adorn your blockchain account. You can bid on some of them at auction or even mint your own unique piece.") }}</p>
         <div class="nft__banner-img">
           <g-image quality="75" alt="girls" src="~/assets/images/nft-banner.png"/>

@@ -130,8 +130,9 @@
 
 
 .layout__content {
-	max-width: var(--content-width);
-	text-align: center;
+	/* max-width: var(--content-width); */
+	max-width: 980px;
+	/* text-align: center; */
 }
 
 .layout__text {

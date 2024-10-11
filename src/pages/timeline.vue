@@ -11,7 +11,7 @@
       <h1><span>{{ $t('Timeline since 2015') }}</span></h1>
     </div>
 
-    <section class="layout layout__text">
+    <section class="layout layout__content">
       <TimelineItem 
         v-for="item in items"
         :key="item.id"

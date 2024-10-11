@@ -33,7 +33,6 @@
         top: var(--screen-padding-top);
         left: 0;
         right: 0;
-        bottom: 0;
         background-color: #fff;
         /* padding: var(--space); */
         padding-top: calc(var(--space)*2);
@@ -278,17 +277,14 @@
 
         mounted() {
 
-            // Close all opened details on body click
+            // Close nav on body click
             document.body.onclick = (e) => {
-                const current = e.target.parentNode; //save clicked element to detect if it is our current detail
+                const nav = document.querySelector('nav.sidetext');
+                let clickInside = nav.contains(e.target)
 
-                document.body.querySelectorAll('nav:not(.open) details')
-                    .forEach((e) => {
-                       if(e !== current){ //we need this condition not to break details behavior
-                           e.open = false
-                       }
-                })
-
+                if(!clickInside && nav.classList.contains('open')) {
+                    nav.classList.remove('open')
+                }
             }
 
         }

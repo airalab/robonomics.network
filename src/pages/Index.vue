@@ -8,26 +8,27 @@
 
     <section class="home">
 
-      <div class="layout layout__new">
-        <h1 class="home__title title2">Hardware for cyber punks 2025 line up</h1>
+      <div class="layout layout__content">
+        <h2 class="home__title">Hardware for cyber punks 2025 line up</h2>
         <Products/>
       </div>
 
       <Member/>
 
       <div class="layout layout__new"> 
+        <h2>Features of Each Device</h2>
         <div class="home__advantages grid-3">
           <div class="home__advantages-item">
-            <h3 class="home__advantages-title home__advantages-title--scalable title2">Scalable</h3>
-            <p class="simple-text">Since Blockchain started its rapid growing we are on top of technologies and know how radical they can change and how to scale WEB3 infrastructure according to new network standards.</p>
+            <h3 class="home__advantages-title home__advantages-title--scalable">Pure Open Source</h3>
+            <p class="simple-text">Every device is fully open: you can find the source code, circuit schematics, and instructions for self-updating without the need to connect to any cloud servers. The devices are designed to ensure you can easily understand their structure and onboard components.</p>
           </div>
           <div class="home__advantages-item">
-            <h3 class="home__advantages-title home__advantages-title--antiscam title2">anti-scam</h3>
-            <p class="simple-text">It’s always tempting to promise what the market expects—even beyond reality. While we’re tech optimists, we prioritize solid architecture and failure-resistant solutions.</p>
+            <h3 class="home__advantages-title home__advantages-title--antiscam">Local and Global Availability</h3>
+            <p class="simple-text">The combination of p2p communication and web3 cloud guarantees that your devices will always be accessible for interaction. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are.</p>
           </div>
           <div class="home__advantages-item">
-            <h3 class="home__advantages-title home__advantages-title--privacy title2">Privacy friendly</h3>
-            <p class="simple-text">We adhere to decentralized, open-source paradigms, which are crucial for the smart hardware already being used by the masses in everyday life.</p>
+            <h3 class="home__advantages-title home__advantages-title--privacy">Privacy from the First Use</h3>
+            <p class="simple-text">By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.</p>
           </div>
         </div>
         <g-link to="/timeline/" class="advantages__link"><span>Robonomics Timeline</span></g-link>
@@ -76,8 +77,10 @@ query {
   }
 
   .home__advantages-title {
-    padding-top: 60px;
-    text-transform: uppercase;
+    padding-top: 160px;
+    max-width: 204px;
+    min-height: 240px;
+    /* height: 100%; */
     text-align: left;
     background-position: left;
     background-repeat: no-repeat;
@@ -122,6 +125,8 @@ query {
     .home__advantages-title {
       padding-top: 0;
       padding-right: 100px;
+      max-width: unset;
+      min-height: unset;
       background-position: right;
     }
   }
