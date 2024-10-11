@@ -13,9 +13,11 @@
 
         <div class="screen-content">
           <slot/>
-          <ContactsForm/>
-          <ClientOnly> <Footer :translated="translated"/> </ClientOnly>
+          <div class="footer-form layout layout__new" v-if="!$route.path.includes('contact')">
+            <ContactsForm/>
+          </div>
           <Contacts :withGap="withGap" />
+          <ClientOnly> <Footer :translated="translated"/> </ClientOnly>
         </div>
 
       </div>
@@ -81,6 +83,12 @@
 .screen-content {
   position: relative;
   background-color: var(--color-light);
+}
+
+@media screen and (max-width: 680px) {
+  .footer-form.layout__new {
+    padding-left: 0;
+  }
 }
 
 </style>

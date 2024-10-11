@@ -1,6 +1,6 @@
 <template>
   <div class="contacts__form-wrapper">
-    <g-image class="contacts__form-decor" alt="" src="~/assets/images/contacts__decor.png" aria-hidden="true"/>
+    <g-image class="contacts__form-decor" alt="" src="~/assets/images/contacts__decor.webp" aria-hidden="true" immediate/>
     <gsp-form class="contacts__form" :gscriptID="gscript" :siteKey="siteKey">
       <input
         required 
@@ -113,7 +113,7 @@ export default {
     display: flex;
     align-items: flex-end;
     /* padding-right: var(--space); */
-    padding: 0 var(--space);
+    padding: 0 calc(var(--space) - 15px);
   }
 
   .contacts__form-decor {
@@ -130,6 +130,10 @@ export default {
     width: 100%;
   }
 
+  .google-sheets-form__actions {
+    margin-bottom: 18px;
+  }
+
   .google-sheets-form__actions button {
     display: flex;
     text-align: center;
@@ -142,7 +146,7 @@ export default {
   .contacts__input {
     width: 100%;
     padding: 15px 10px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-family: var(--font-family);
     font-weight: 700;
     border: 1px solid var(--color-dark);
@@ -184,11 +188,11 @@ export default {
 
   .contacts__form-agreement {
     display: block;
-    margin-top: var(--space);
-    padding-block: var(--space);
+    padding-bottom: calc(var(--space) * 2);
     font-family: var(--font-family);
-    font-weight: 400;
-    color: #757171;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-dark);
   }
 
 

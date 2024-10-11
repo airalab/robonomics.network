@@ -91,7 +91,7 @@
 
         </section>
 
-        <section class="layout layout__text xrt-ethereum">
+        <section class="layout layout__content xrt-ethereum">
             <h2>{{ $t('XRT in Ethereum') }}</h2>
 
             <section>
@@ -129,7 +129,7 @@
     
         </section>
 
-        <section class="layout layout__text xrt-polkadot">
+        <section class="layout layout__content xrt-polkadot">
             <h2>{{ $t('XRT In Polkadot') }}</h2>
 
             <section>
@@ -180,7 +180,7 @@
             </section>
         </section>
 
-        <section class="layout layout__text xrt-questions">
+        <section class="layout layout__content xrt-questions">
                 <h2>{{ $t('Other questions') }}</h2>
 
                 <div class="xrt-polkadot__info">

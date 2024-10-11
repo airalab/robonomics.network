@@ -1,5 +1,5 @@
 <template>
-  <footer class="animate-inside" v-in-viewport.once>
+  <footer>
     <Navigation/>
     <g-link class="footer__privacy" aria-label="see privacy policy page" to="/privacy-policy/">Privacy Policy</g-link>
   </footer>
@@ -20,7 +20,7 @@ query {
 
   footer {
     margin-top: var(--space);
-    min-height: 312px;
+    min-height: 450px;
     height: 100%;
     color: #000;
     padding: var(--space) 0;
@@ -43,8 +43,9 @@ query {
   @media screen and (max-width: 780px) {
 
     .footer__privacy {
-      left: calc(var(--space) + 20px);
-      right: unset;
+      position: relative;
+      margin-top: calc(var(--space) * 2);
+      padding-left: calc(var(--space) + 50px);
     }
     
   }
