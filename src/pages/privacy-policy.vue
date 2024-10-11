@@ -7,7 +7,7 @@
     />
 
     <section class="privacy-policy">
-      <div class="layout layout__mid">
+      <div class="layout layout__content">
         <h1>{{$t('Privacy Policy')}}</h1>
 
           <p class="privacy-policy__descr">{{$t('This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us.')}}</p>

@@ -3,7 +3,7 @@ body {
 	--base-font-size: 1.2rem;
 	--font-family: "Roboto Flex", 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-	--font-flex-bold: 'wght' 1000, 'wdth' 90, 'opsz' 38, 'XTRA' 500, 'XOPQ' 100;
+	--font-flex-bold: 'wght' 900, 'wdth' 100, 'opsz' 26, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
 	--font-flex-medium: 'wght' 900, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
 	--font-flex-lightmedium: 'wght' 800, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
 
@@ -80,7 +80,7 @@ body {
 	/* helpers */
   --space: 2rem;
   --space-text: 2rem;
-  --content-width: 1660px;
+  --content-width: 960px;
 	--text-width: calc(1000px + (var(--space) * 2));
 	--mid-width: 1180px;
 
@@ -90,27 +90,12 @@ body {
   --screen-padding-left: 3rem;
 
 	--space-bannertop: 4.5rem;
-
-
-	/* text */
-	--desktopTitle: 30px;
-	--desktopTitle2: 26px;
-	--desktopTitle3: 22px;
-	--desktopTitle5: 20px;
-	--desktopText: 20px;
-	--desktopSmall: 16px;
-
-	--mobileTitle: 26px;
-	--mobileTitle2: 22px;
-	--mobileTitle3: 18px;
-	--mobileTitle5: 17px;
-	--mobileText: 18px;
-	--mobileSmall: 18px;
 }
 
 
 @media screen and (max-width: 450px) {
 	body {
 		--space: 1.2rem;
+		--screen-padding-left: 1.5rem
 	}
 }

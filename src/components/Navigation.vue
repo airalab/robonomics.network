@@ -20,8 +20,8 @@
       </div>
       <div class="navigation__column navigation__bottom-row-column">
         <g-link class="navigation__link" aria-label="see robonomics timeline" to="/timeline/">Timeline</g-link>
-        <g-link class="navigation__link" aria-label="see robonomics assets" to="/logo-and-assets/">Brand assets</g-link>
-        <g-link class="navigation__link" aria-label="see robonomics wallpapers" to="/cases/">wallpapers</g-link>
+        <g-link class="navigation__link" aria-label="see robonomics assets" to="/logos-and-assets/">Brand assets</g-link>
+        <g-link class="navigation__link" aria-label="see robonomics wallpapers" to="/wallpapers/">wallpapers</g-link>
       </div>
       <div class="navigation__column navigation__bottom-row-column">
         <g-link class="navigation__link" aria-label="see robonomics home assistant themes" to="/home-assistant-themes/">Home assistant themes</g-link>

@@ -12,7 +12,7 @@
         <h1><span>{{ $t('Home assistant themes') }}</span></h1>
       </div>
 
-      <div class="blue-banner-layout themes__banner-layout layout layout__mid">
+      <div class="blue-banner-layout themes__banner-layout layout layout__content">
           <g-image class="themes__banner-img"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/themes/themes-banner.png"/>
         <div class="themes-banner-content">
           <p class="blue-banner__text">{{ $t('Customize your Home Assistant with our free to use themes. Follow the instructions for installation on') }} <u>{{ $t('Github') }}</u></p>

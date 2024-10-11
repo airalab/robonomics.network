@@ -9,7 +9,7 @@
 
     <div class="page">
       <section class="section section__solid section__dotted_darkblue wide">
-        <h1 class="layout layout__text clean">{{$t('Building Dapps && Web Services for IoT on Robonomics Parachain')}}</h1>
+        <h1 class="layout layout__content clean">{{$t('Building Dapps && Web Services for IoT on Robonomics Parachain')}}</h1>
         <div class="layout layout__text animate subtitle" v-in-viewport.once>{{$t('Sergei Lonshakov, software architect')}}</div>
       </section>
 

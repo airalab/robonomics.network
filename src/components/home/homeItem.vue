@@ -4,19 +4,19 @@
       <span class="home-product__number">{{ id + 1 }}</span>
       <div class="home-product__header-text">
         <span class="home-product__highlighted highlighted-text" :class="{'blue': highlightedText.toLocaleLowerCase() !== 'early access for community members'}">{{ highlightedText }}</span>
-        <h2 v-if="!titleLink" class="home-product__title title3">{{ title }}</h2>
-        <h2 v-else class="home-product__title title3">
+        <h3 v-if="!titleLink" class="home-product__title">{{ title }}</h3>
+        <h3 v-else class="home-product__title">
           <g-link :aria-label="'go to '+ title + ' page'" :to="titleLink">{{ title }}</g-link>
-        </h2>
+        </h3>
       </div>
     </div>
     <div class="home-product__model">
       <slot/>
     </div>
     <div class="home-product__text">
-      <p class="home-product__descr simple-text" v-html="text"></p>
-      <span class="home-product__use-title title5">Use case:</span>
-      <p class="home-product__use-text simple-text">{{ cases }}</p>
+      <p class="home-product__descr" v-html="text"></p>
+      <h5 class="home-product__use-title">Use case:</h5>
+      <p class="home-product__use-text">{{ cases }}</p>
     </div>
     <div class="home-product__adds" v-if="casesImages.length">
       <g-image v-for="image in casesImages"  :key="image" :src="require('!!assets-loader!~/assets/images/hardware-2025/'+ image)" quality="75"/>
@@ -70,7 +70,7 @@ export default {
   display: flex;
   align-items: flex-start;
   text-transform: uppercase;
-  margin-block: var(--space);
+  margin-bottom: calc(var(--space) * 1.5);
 }
 
 .home-product__number {
@@ -99,9 +99,16 @@ export default {
   overflow: hidden;
 }
 
+.home-product__model img {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .home-product__text {
   max-width: 680px;
   margin: 0 auto;
+  margin-top: calc(var(--space) * 2.5);
   margin-bottom: calc(var(--space) * 2.5);
 }
 
@@ -111,6 +118,8 @@ export default {
 
 .home-product__use-title {
   display: inline-block;
+  text-transform: none;
+  margin-top: 0;
   margin-bottom: calc(var(--space) * 0.3);
 }
 
@@ -141,7 +150,7 @@ export default {
     padding: 0.2rem 0rem;
   }
 
-  .home-product__model {
+  .with-models .home-product__model {
     min-height: 580px;
   }
 

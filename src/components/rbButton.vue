@@ -95,6 +95,7 @@ export default {
     --b-color-shadow: var(--rb-color-dark);
     --b-color-borderwidth: 1px;
     --b-color-padding: 1rem;
+    --b-color-hover: var(--rb-color-light);
 
     align-content: center;
     appearance: none;
@@ -122,7 +123,7 @@ export default {
   .rb-button:hover {
     background-color: var(--b-color-background-hover);
     border-color: var(--b-color-background-hover);
-    color: var(--b-color-text);
+    color: var(--b-color-hover);
   }
 
   .rb-button-3d {

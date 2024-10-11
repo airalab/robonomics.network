@@ -116,7 +116,7 @@ export default {
 
     window.addEventListener('scroll', () => {
       const scrollY = window.scrollY; // Get current scroll position
-      const rotationSpeed = 0.008; // Set rotation speed
+      const rotationSpeed = -0.004; // Set rotation speed
 
       
 

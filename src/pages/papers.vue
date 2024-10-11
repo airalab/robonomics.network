@@ -12,7 +12,7 @@
         <h1><span>{{ $t('Research papers') }}</span></h1>
       </div>
 
-      <div class="layout layout__mid papers__banner">
+      <div class="layout layout__content papers__banner">
         <div class="papers__banner-wrapper">
           <p>{{ $t("Without academic research, the advancement of complex systems that can be integrated into our daily lives may lose its purpose or even pose risks. We must carefully contemplate our direction, objectives, and potential consequences. The spheres where Robonomics operates, specifically Robotics, Economic relations, and Web3 technologies, are worth studying individually, exploring how they can be integrated with each other, and assessing their potential impact on our lives.") }}</p>
           <g-image quality="75" aria-hidden="true" alt=""  src="~/assets/images/papers/papers-text.svg"/>
@@ -25,7 +25,7 @@
       </section>
 
 
-    <section class="layout layout__mid">
+    <section class="layout layout__content">
       <!-- pinned item -->
         <div class="papers-pinned oldy" v-if="pinned.length">
           <div class="papers-pinned__header">
