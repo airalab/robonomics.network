@@ -366,9 +366,9 @@ p:last-child, ul:last-child, ol:last-child, blockquote:last-child, table:last-ch
   margin-bottom: 0;
 }
 
-li:not(:last-child) {
+/* li:not(:last-child) {
   margin-bottom: var(--space);
-}
+} */
 
 .text-col-2, .text-col-3 {
   column-count: 2;

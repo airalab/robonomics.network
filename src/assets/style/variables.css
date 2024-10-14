@@ -2,7 +2,7 @@ body {
 
 	--base-font-size: 1.2rem;
 	--font-family: "Roboto Flex", 'Roboto', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  	--font-family-code: 'Roboto Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 	--font-flex-bold: 'wght' 900, 'wdth' 100, 'opsz' 26, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
 	--font-flex-medium: 'wght' 900, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
 	--font-flex-lightmedium: 'wght' 800, 'wdth' 80, 'opsz' 25, 'XTRA' 500, 'XOPQ' 80;
@@ -90,6 +90,9 @@ body {
   --screen-padding-left: 3rem;
 
 	--space-bannertop: 4.5rem;
+
+	/* this should be adopted globally */
+	--layout-sidepadding: var(--space);
 }
 
 
