@@ -6,8 +6,6 @@
         pageDescription = "Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy."
       />
 
-    <section class="home">
-
       <div class="layout layout__content">
         <h2 class="home__title">Hardware for cyber punks 2025 line up</h2>
         <Products/>
@@ -33,8 +31,6 @@
         </div>
         <g-link to="/timeline/" class="advantages__link"><span>Robonomics Timeline</span></g-link>
       </div>
-
-    </section>
 
     
   </layout>
@@ -67,10 +63,6 @@ query {
 
 
 <style scoped>
-
-  .home {
-    padding-bottom: calc(var(--space) * 3);
-  }
 
   .home__advantages {
     margin-bottom: var(--space);

@@ -1,44 +1,45 @@
 <template>
-  <div class="contacts__form-wrapper">
-    <g-image class="contacts__form-decor" alt="" src="~/assets/images/contacts__decor.webp" aria-hidden="true" immediate/>
-    <gsp-form class="contacts__form" :gscriptID="gscript" :siteKey="siteKey">
-      <input
-        required 
-        name="email" 
-        class="contacts__input" 
-        :class="{'sent': result === 'success'}"
-        type="email" 
-        :placeholder="$t('Your email')" 
-        data-gsp-name="Email" 
-        :data-gsp-data="data_email" 
-        v-model="data_email"
-        :disabled="result === 'success'"
-      >
+  <div class="footer-form">
+    <div class="footer-form-content">
+      <gsp-form :gscriptID="gscript" :siteKey="siteKey">
+        <input
+          required 
+          name="email" 
+          class="contacts__input" 
+          :class="{'sent': result === 'success'}"
+          type="email" 
+          :placeholder="$t('Your email')" 
+          data-gsp-name="Email" 
+          :data-gsp-data="data_email" 
+          v-model="data_email"
+          :disabled="result === 'success'"
+        >
 
-      <input       
-        type="hidden" 
-        placeholder="Location" 
-        data-gsp-name="Location" 
-        :data-gsp-data="location" 
-        v-model="location"
-      />
+        <input       
+          type="hidden" 
+          placeholder="Location" 
+          data-gsp-name="Location" 
+          :data-gsp-data="location" 
+          v-model="location"
+        />
 
-      <div class="google-sheets-form__actions">
-        <rb-button @click="onSubmit" v-if="result !== 'success'" block :disabled="result === 'error' || result === 'wait'">
-          <span class="contacts__form-btn-text" v-if="result !== 'wait'">{{$t('Email me')}}</span>
-          <span class="isLoading contacts__form-btn-text" v-else>{{$t('Adding you to our special list...')}}</span>
-          <span  v-if="result === 'wait'" class="spinner">
-            <Spinner/>
-          </span>
-        </rb-button >
-        <rb-button block disabled v-else class="button-success contacts__form-btn-text">{{$t('Nice, you are in the list')}}</rb-button>
-        <div v-if="result === 'error'" class="error">{{$t('Something went  wrong. Try again later')}}</div>
-      </div>
+        <div class="google-sheets-form__actions">
+          <rb-button @click="onSubmit" v-if="result !== 'success'" block :disabled="result === 'error' || result === 'wait'">
+            <span class="contacts__form-btn-text" v-if="result !== 'wait'">{{$t('Email me')}}</span>
+            <span class="isLoading contacts__form-btn-text" v-else>{{$t('Adding you to our special list...')}}</span>
+            <span  v-if="result === 'wait'" class="spinner">
+              <Spinner/>
+            </span>
+          </rb-button >
+          <rb-button block disabled v-else class="button-success contacts__form-btn-text">{{$t('Nice, you are in the list')}}</rb-button>
+          <div v-if="result === 'error'" class="error">{{$t('Something went  wrong. Try again later')}}</div>
+        </div>
 
-      <span class="contacts__form-agreement">
-        By clicking on the button “Email me” you agree to receive regular emails from Robonomics. 
-      </span>
-    </gsp-form>
+        <span class="contacts__form-agreement">
+          By clicking on the button “Email me” you agree to receive regular emails from Robonomics. 
+        </span>
+      </gsp-form>
+    </div>
   </div>
 </template>
 
@@ -108,26 +109,52 @@ export default {
 
 <style scoped>
 
-  .contacts__form-wrapper {
+  /* .contacts__form-wrapper {
     position: relative;
     display: flex;
     align-items: flex-end;
-    /* padding-right: var(--space); */
     padding: 0 calc(var(--space) - 15px);
   }
 
   .contacts__form-decor {
-    /* position: absolute; */
     width: 284px;
     height: 364px;
     margin-right: 50px;
-    /* top: 0;
-    left: 0; */
-  }
+  } */
 
-  .contacts__form {
-    max-width: 294px;
+   .footer-form {
+    text-align: center;
     width: 100%;
+   }
+
+   .footer-form-content {
+    text-align: left;
+    display: inline-block;
+    background: url('~@/assets/images/contacts__decor.webp') no-repeat 0 100%;
+    background-size: 284px 364px;
+    padding-left: calc(284px + var(--space));
+    min-height: 364px;
+    padding-top: 100px;
+    margin-left: -384px;
+   }
+
+
+   @media screen and (width < 1000px) {
+    .footer-form-content {
+      margin-left: 0;
+    }
+   }
+
+   @media screen and (width < 480px) {
+    .footer-form-content {
+      background-position: -100px 0;
+      padding-left: 184px;
+    }
+   }
+
+  .footer-form form {
+    max-width: 294px;
+    width: calc(100% - var(--space));
   }
 
   .google-sheets-form__actions {

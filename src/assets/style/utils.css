@@ -1,30 +1,21 @@
 .oldy {
-  --oldy-box-color: var(--color-gray);
+  --oldy-box-color: var(--color-dark);
   --oldy-bg-color: var(--color-light);
-  --oldy-padding: calc(var(--space));
-  /* border: 1px solid var(--oldy-box-color); */
-  /* box-shadow: .2rem .2rem 0 var(--oldy-box-color); */
-	padding: var(--oldy-padding);
-  font-family: var(--font-family);
+  --oldy-padding: calc(var(--space) * 0.5);
 	background-color: var(--oldy-bg-color);
+	padding: var(--oldy-padding);
+  border: 1px solid var(--oldy-box-color);
+  box-shadow: .4rem .4rem 0 var(--oldy-box-color);
+  font-family: var(--font-family);
   transition: all 0.2s ease-out;
-  background: var(--header-bg);
-  border: 1px solid #000;;
-  text-align: center;
-  box-shadow: .4rem .4rem 0 #000;
-}
-
-.oldy.dark {
-  --oldy-box-color: #000
 }
 
 .oldy__link {
   cursor: pointer;
 }
 
-.oldy__link:hover {
-  border-color: #ececec;
-  box-shadow: .2rem .2rem 0 var(--color-darkness);
+.oldy__link:hover, .oldy:hover {
+  --oldy-box-color: var(--color-link);
 }
 
 
