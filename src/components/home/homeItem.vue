@@ -99,6 +99,12 @@ export default {
   overflow: hidden;
 }
 
+
+.home-product__model .with-models {
+  min-height: 480px;
+  height: 100%;
+}
+
 .home-product__model img {
   max-width: 480px;
   width: 100%;
@@ -151,7 +157,8 @@ export default {
   }
 
   .with-models .home-product__model {
-    min-height: 580px;
+    min-height: 480px;
+    align-items: flex-start;
   }
 
 }

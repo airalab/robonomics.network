@@ -1,6 +1,6 @@
 <template>
     
-    <nav class="sidetext" :class="{'open': isOpen}">
+    <div class="sidetext" :class="{'open': isOpen}">
 
         <div class="nav-toggler" tabindex="0" @click="isOpen = !isOpen">
             <div></div>
@@ -13,7 +13,7 @@
             <Contacts withoutGap/>
         </div>
 
-    </nav>
+    </div>
 </template>
 
 <style scoped>
@@ -22,7 +22,7 @@
         font-size: 75% !important;
     } */
 
-    nav:not(.open) .nav-content li {
+    div:not(.open) .nav-content li {
         white-space: nowrap;
     }
 
@@ -34,6 +34,7 @@
         left: 0;
         right: 0;
         background-color: #fff;
+        height: 100%;
         /* padding: var(--space); */
         padding-top: calc(var(--space)*2);
         transform: translateX(-20px);
@@ -279,7 +280,7 @@
 
             // Close nav on body click
             document.body.onclick = (e) => {
-                const nav = document.querySelector('nav.sidetext');
+                const nav = document.querySelector('div.sidetext');
                 let clickInside = nav.contains(e.target)
 
                 if(!clickInside && nav.classList.contains('open')) {
