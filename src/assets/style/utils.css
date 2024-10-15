@@ -12,10 +12,15 @@
 
 .oldy__link {
   cursor: pointer;
+  --oldy-box-color: var(--rb-color-blue);
 }
 
 .oldy__link:hover, .oldy:hover {
   --oldy-box-color: var(--color-link);
+}
+
+.oldy.accent {
+  --oldy-box-color: var(--rb-color-green-accent);
 }
 
 

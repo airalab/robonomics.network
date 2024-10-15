@@ -23,7 +23,7 @@
 
         <!-- <div class="screen-content">
           <slot/>
-          <div class="footer-form layout layout__new" v-if="!$route.path.includes('contact')">
+          <div class="footer-form layout layout__content" v-if="!$route.path.includes('contact')">
             <ContactsForm/>
           </div>
           <Contacts :withGap="withGap" />
@@ -96,7 +96,7 @@
 }
 
 @media screen and (max-width: 680px) {
-  .footer-form.layout__new {
+  .footer-form.layout__content {
     padding-left: 0;
   }
 }

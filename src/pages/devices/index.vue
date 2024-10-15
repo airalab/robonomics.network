@@ -13,14 +13,14 @@
 
     <section class="devices-banner"></section>
 
-    <section class="devices-intro layout layout__new">
+    <section class="devices-intro layout layout__content">
       <h2 class="devices-intro__title"> Begin your adventure in the world of cyber punks</h2>
       <p><b>Meet smart devices & futuristic hardware from an autonomous team with extensive expertise in robotics, blockchain, and IoT</b>.</p>
     </section>
 
     <!-- products -->
     <section class="products">
-      <div class="layout layout__new">
+      <div class="layout layout__content">
         <h2 class="devices__title">
           <span>Hardware for cyber punks 2025 line up</span>
         </h2>
