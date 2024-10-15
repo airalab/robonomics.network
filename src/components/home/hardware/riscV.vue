@@ -74,6 +74,21 @@ export default {
       };
     },
 
+    checkHeight(container) {
+      const absoluteElements = document.querySelectorAll('.risc-v-model-part');
+      
+      let maxHeight = 0;
+      
+      absoluteElements.forEach(element => {
+        const elementBottom = element.offsetTop + element.offsetHeight;
+        if (elementBottom > maxHeight) {
+          maxHeight = elementBottom;
+        }
+      });
+
+      container.style.height = maxHeight + 20 + 'px';
+    },
+
     updatePartPositions() {
       const scrollPosition = window.scrollY; // Current scroll position
       const maxScroll = document.body.scrollHeight - window.innerHeight; // Maximum scroll value
@@ -98,6 +113,8 @@ export default {
         if (newTopPosition > maxTopPosition) {
           maxTopPosition = newTopPosition;
         }
+        
+        this.checkHeight(this.$refs.model)
       });
 
       // Update the height of the container based on the maximum top position of parts
@@ -124,6 +141,7 @@ export default {
 
     if(this.$route.path.includes('devices')) {
       this.speed = 5
+      this.initialOffset = -30
     }
   },
 
@@ -166,8 +184,16 @@ export default {
 @media screen and (max-width: 520px) {
   .risc-v-model {
     top: 26px;
-    min-height: 420px; /* Adjusted for smaller screens */
-    height: 100%;
+    /* min-height: 420px; Adjusted for smaller screens */
+    /* height: 100%; */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .risc-v-model {
+    top: 32px;
+    /* min-height: 420px; Adjusted for smaller screens */
+    /* height: 100%; */
   }
 }
 </style>

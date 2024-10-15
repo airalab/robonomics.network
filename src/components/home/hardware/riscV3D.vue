@@ -162,4 +162,12 @@ export default {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .risc-v-3d {
+    transform: scale(0.7);
+  }
+}
+
+
+
 </style>
