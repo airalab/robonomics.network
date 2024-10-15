@@ -32,7 +32,7 @@
       :cases="products[2].cases"
       :casesImages="products[2].casesImages"
     >
-      <g-image class="home-product__img products__img" src="~/assets/images/hardware-2025/risk-v-open-source.png" :alt="products[2].title"  quality="75"/>
+      <g-image class="home-product__img products__img" src="~/assets/images/hardware-2025/tamagotchi.png" :alt="products[2].title"  quality="75"/>
     </Product>
     <Product
       :id="products[3].id"
@@ -51,8 +51,8 @@
 export default {
   components: {
     Product: () => import("~/components/home/homeItem.vue"),
-    RiskV: () => import ('~/components/home/hardware/riskV.vue'),
-    RiskV3D: () => import ('~/components/home/hardware/riskV3D.vue')
+    RiskV: () => import ('~/components/home/hardware/riscV.vue'),
+    RiskV3D: () => import ('~/components/home/hardware/riscV3D.vue')
   },
 
   data() {
@@ -68,11 +68,11 @@ export default {
         },
         {
           id: 1,
-          title: 'risk-v open source server',
+          title: 'risc-v open source server',
           highlightedText: 'early access for community members',
           text: 'The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.',
           cases: 'Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.',
-          casesImages: ['risk-v-cases-1.png', 'risk-v-cases-2.png', 'risk-v-cases-3.png', 'risk-v-cases-4.png']
+          casesImages: ['risc-v-cases-1.png', 'risc-v-cases-2.png', 'risc-v-cases-3.png', 'risc-v-cases-4.png']
         },
         {
           id: 2,

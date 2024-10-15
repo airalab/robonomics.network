@@ -35,8 +35,6 @@ export default {
   .papers__item {
     margin-bottom: var(--space);
     border: none;
-    background-color: #fff;
-    color: #000;
   }
 
   .papers__item-title {

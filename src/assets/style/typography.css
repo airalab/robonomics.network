@@ -66,7 +66,7 @@ h3 {
 }
 
 h5 {
-  font-size: calc(var(--base-font-size) * 0.8)l;
+  font-size: calc(var(--base-font-size) * 0.95);
   font-variation-settings: var(--font-flex-bold);
 }
 
@@ -192,12 +192,7 @@ ol li {
   margin-bottom: .6rem;
 }
 
-li {
-  font-size: calc(var(--base-font-size) * 0.95);
-  font-variation-settings: 'wght' 400, 'wdth' 100;
-}
-
-p {
+li, p {
   font-size: calc(var(--base-font-size) * 0.95);
   font-variation-settings: 'wght' 400, 'wdth' 100;
 }
