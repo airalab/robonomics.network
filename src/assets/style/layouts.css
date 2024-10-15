@@ -151,10 +151,6 @@
 	max-width: calc(1500px  + (var(--space) * 4));
 }
 
-.layout__new {
-	max-width: 980px;
-}
-
 .page hr.animate {
 	transform-origin: 50% 50%;
 	transform: scaleX(0);

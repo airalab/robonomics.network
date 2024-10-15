@@ -1,6 +1,6 @@
 <template>
   <div class="home-member">
-    <div class="layout layout__new">
+    <div class="layout layout__content">
       <rb-button class="home-member__btn" buttoncolor="accent-green" to="https://robonomics.app/">Become a Member</rb-button>
     </div>
   </div>
@@ -17,7 +17,6 @@ export default {
     margin-top: -2rem;
     margin-bottom: calc(var(--space) * 3);
     min-height: 125px;
-    height: 100%;
     display: flex;
     align-items: center;
     background-image: url("../../assets/images/home-member-decor.png");

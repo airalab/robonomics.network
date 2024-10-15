@@ -104,7 +104,7 @@
             />
 
             <div class="youtube-embed">
-                <div class="oldy dark">
+                <div class="oldy">
                     <div class="token__link timeline">
                         <g-link to="/timeline">
                             <h3 class="token__subtitle">{{$t('Timeline')}}</h3>
@@ -156,7 +156,7 @@
                     />
 
                     <div class="youtube-embed">
-                        <div class="oldy dark">
+                        <div class="oldy">
                             <div class="token__link use">
                                 <g-link to="https://robonomics.app/#/">
                                     <h3 class="token__subtitle">{{ $t('Use XRT') }}</h3>

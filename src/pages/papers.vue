@@ -27,7 +27,7 @@
 
     <section class="layout layout__content">
       <!-- pinned item -->
-        <div class="papers-pinned oldy" v-if="pinned.length">
+        <div class="papers-pinned oldy accent" v-if="pinned.length">
           <div class="papers-pinned__header">
 
             <div class="papers-pinned__info">
@@ -460,7 +460,7 @@
 
   .papers__section-blue {
     position: relative;
-    margin: 0;
+    margin-bottom: var(--space);
   }
 
   .papers__banner {
@@ -507,9 +507,6 @@
     padding-left: 0;
     margin-bottom: calc(var(--space) * 2);
     border: none;
-    background-color: #fff;
-    color: #000;
-    box-shadow: 0.4rem 0.4rem 0 #a7d100;
     text-align: left;
   }
 

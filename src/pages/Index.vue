@@ -13,7 +13,7 @@
 
       <Member/>
 
-      <div class="layout layout__new"> 
+      <div class="layout layout__content"> 
         <h2>Features of Each Device</h2>
         <div class="home__advantages grid-3">
           <div class="home__advantages-item">
@@ -30,6 +30,17 @@
           </div>
         </div>
         <g-link to="/timeline/" class="advantages__link"><span>Robonomics Timeline</span></g-link>
+      </div>
+
+      <div class="home__timeline">
+        <div class="home__timeline-img">
+          <g-image src="~/assets/images/home__hands.webp" alt="" aria-label="false" immediate />
+        </div>
+        <div class="layout layout__content">
+          <h2>Interested in how the team reached this stage?</h2>
+          <g-link to="/timeline/" class="advantages__link"><h5>The Robonomics Timeline</h5></g-link>
+          <span>can guide you through our journey</span>
+        </div>
       </div>
 
     
@@ -94,22 +105,51 @@ query {
 
   .advantages__link {
     display: block;
+    margin-bottom: calc(var(--space) * 0.3);
     text-align: center;
-    font-weight: 900;
   }
 
-  .advantages__link span {
+  .advantages__link h5 {
     position: relative;
+    display: inline-block;
+    text-transform: none;
+    letter-spacing: 0;
   }
 
-  .advantages__link span::after {
+  .advantages__link h5::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -2px;
     left: 0;
     height: 1px;
     width: 100%;
     background-color: var(--color-blue);
+  }
+
+  .home__timeline {
+    margin-top: calc(var(--space) * 3);
+  }
+
+  .home__timeline .layout {
+    margin-top: calc(var(--space) * 0.8);
+  }
+
+  .home__timeline-img {
+    position: relative;
+  }
+
+  .home__timeline-img img {
+    display: block;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .home__timeline span {
+    display: block;
+    font-size: calc(var(--base-font-size) * 0.95);
+    font-variation-settings: 'wght' 400, 'wdth' 100;
+    text-align: center;
   }
 
   @media screen and (max-width: 990px) {
@@ -124,5 +164,21 @@ query {
   }
 
 
+  @media screen and (max-width: 520px) {
+
+    .home__timeline-img  {
+      height: 124px;
+      overflow: hidden
+    }
+    
+    .home__timeline-img img {
+      width: 446px;
+      height: 124px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 
 </style>

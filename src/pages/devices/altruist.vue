@@ -12,7 +12,7 @@
       <h1><span>{{ $t('Altruist outdoor sensor') }}</span></h1>
     </div>
 
-    <div class="altruist__intro layout layout__new">
+    <div class="altruist__intro layout layout__content">
       <g-link class="altruist__back-link" to="/devices/"> < All hardware</g-link>
       <g-image class="altruist__img" src="~/assets/images/hardware-2025/altruist-demo.png" alt="Altruist outdoor sensor" quality="75"/>
 
@@ -26,7 +26,7 @@
     </div>
 
     <section class="depin">
-      <div class="layout layout__new">
+      <div class="layout layout__content">
         <h3 class="depin__header">
           <span class="highlighted-text">Simple & hardcore ways</span>
           to become a part of a sensor-based DePIN:

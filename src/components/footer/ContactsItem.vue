@@ -40,15 +40,12 @@ export default {
   .contacts__item {
     display: flex;
     padding: calc(var(--space) * 0.8);
-    background-color: var(--color-light);
-    color: var(--color-dark);
     border-color: transparent;
     transition: box-shadow 0.33s ease-in-out;
   }
 
   .contacts__item:hover {
     color: var(--color-dark);
-    box-shadow: .25rem .25rem 0 #fff;
   }
 
   .contacts__img {
