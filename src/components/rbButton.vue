@@ -108,7 +108,7 @@ export default {
     display: inline-flex;
     font-family: var(--font-family);
     font-size: var(--base-font-size);
-    font-variation-settings: var(--font-flex-medium);
+    font-variation-settings: var(--font-flex-bold);
     font-weight: 500;
     gap: var(--b-color-padding);
     justify-content: center;

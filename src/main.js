@@ -13,7 +13,7 @@ import Vue from 'vue'
 import Default from '~/layouts/Default.vue'
 
 // components
-import Contacts from '~/components/footer/Contacts.vue'
+// import Contacts from '~/components/footer/Contacts.vue'
 import rbButton from '~/components/rbButton.vue'
 import rbImage from '~/components/rbImage.vue'
 import rbCode from '~/components/rbCode.vue'
@@ -36,7 +36,7 @@ export default function (Vue, { isClient }) {
 
   // Set default layout as a global component
   Vue.component('layout', Default)
-  Vue.component('Contacts', Contacts)
+  // Vue.component('Contacts', Contacts)
   Vue.component('rb-button', rbButton)
   Vue.component('rb-image', rbImage)
   Vue.component('rb-code', rbCode)

@@ -6,14 +6,22 @@
         pageDescription = "Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy."
       />
 
+      <section class="banner">
+        <div class="banner-content">
+          <banner-index />
+          <h1>Begin your adventure in the world of cyber punks</h1>
+          <h4>#DePIN, #NetworkStates</h4>
+        </div>
+      </section>
+
       <div class="layout layout__content">
-        <h2 class="home__title">Hardware for cyber punks 2025 line up</h2>
+        <h2>Hardware for cyber punks 2025 line up</h2>
         <Products/>
       </div>
 
       <Member/>
 
-      <div class="layout layout__content"> 
+      <div class="layout"> 
         <h2>Features of Each Device</h2>
         <div class="home__advantages grid-3">
           <div class="home__advantages-item">
@@ -29,7 +37,6 @@
             <p class="simple-text">By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.</p>
           </div>
         </div>
-        <g-link to="/timeline/" class="advantages__link"><span>Robonomics Timeline</span></g-link>
       </div>
 
       <div class="home__timeline">
@@ -47,26 +54,19 @@
   </layout>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName,
-    siteDescription
-  }
-}
-</static-query>
-
 <script>
   import MetaInfo from '~/components/MetaInfo.vue'
   import Products from '~/components/Products.vue'
   import Member from '~/components/home/homeMember.vue'
+  import BannerIndex from '~/components/svg/BannerIndex.vue'
 
   export default {
 
     components: {
       MetaInfo,
       Products,
-      Member
+      Member,
+      BannerIndex
     }
 
   }
@@ -74,6 +74,37 @@ query {
 
 
 <style scoped>
+
+  /* + banner */
+  .banner {
+    margin-bottom: calc(var(--space) * 3);
+  }
+
+  .banner, .banner-content {
+    padding: var(--layout-sidepadding);
+  }
+
+  .banner-content {
+    border-radius: 4px;
+    background: var(--color-red);
+    color: var(--color-light);
+  }
+
+  .banner h1, .banner h4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner h4 { 
+    font-weight: 400;
+  }
+
+  .banner svg {
+    display: block;
+    max-width: 700px;
+    margin: var(--space) auto;
+  }
+  /* - banner */
 
   .home__advantages {
     margin-bottom: var(--space);
@@ -83,7 +114,6 @@ query {
     padding-top: 160px;
     max-width: 204px;
     min-height: 240px;
-    /* height: 100%; */
     text-align: left;
     background-position: left;
     background-repeat: no-repeat;
