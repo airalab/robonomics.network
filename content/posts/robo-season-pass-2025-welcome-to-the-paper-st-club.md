@@ -8,6 +8,7 @@ description: "Today, we live in a world where we rely more on technology more th
 tags: ['Announcements', 'Events']
 ---
 
+
 Today, we live in a world where we rely more on technology more than ever before, the fear of being disconnected is real, and it’s only growing. With the number of smart, useful devices set to skyrocket in the next five years, the idea of “cutting the digital umbilical cord” from corporate clouds and surviving sounds impossible.   
 But the engineers at Robonomics know how to guide you toward a self-sovereign digital life where your tech only answers to you.
 
