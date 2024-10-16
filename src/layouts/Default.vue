@@ -17,19 +17,6 @@
           <Footer :translated="translated"/>
         </ClientOnly>
 
-        <!-- <Contacts :withGap="withGap" />
-        <ClientOnly> <Footer :translated="translated"/> </ClientOnly> -->
-
-
-        <!-- <div class="screen-content">
-          <slot/>
-          <div class="footer-form layout layout__content" v-if="!$route.path.includes('contact')">
-            <ContactsForm/>
-          </div>
-          <Contacts :withGap="withGap" />
-          <ClientOnly> <Footer :translated="translated"/> </ClientOnly>
-        </div> -->
-
       </div>
 
     </div>
@@ -111,10 +98,7 @@ export default {
   components: {
     Header: () => import('~/components/header/Header.vue'),
     Footer: () => import('~/components/Footer.vue'),
-    Footer2: () => import('~/components/footer/Footer.vue'),
-    Contacts: () => import('~/components/footer/Contacts.vue'),
     Loader: () => import('~/components/utils/Loader.vue'),
-    ContactsForm: () => import("~/components//utils/contactsForm.vue"),
   },
 
   props: {

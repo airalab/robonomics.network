@@ -15,7 +15,7 @@
     </div>
     <div class="home-product__text">
       <p class="home-product__descr" v-html="text"></p>
-      <h5 class="home-product__use-title">Use case:</h5>
+      <h5>Use case:</h5>
       <p class="home-product__use-text">{{ cases }}</p>
     </div>
     <div class="home-product__adds" v-if="casesImages.length">
@@ -120,13 +120,6 @@ export default {
 
 .home-product__descr {
   margin-bottom: calc(var(--space) * 2);
-}
-
-.home-product__use-title {
-  display: inline-block;
-  text-transform: none;
-  margin-top: 0;
-  margin-bottom: calc(var(--space) * 0.3);
 }
 
 .home-product__adds {

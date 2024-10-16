@@ -30,43 +30,37 @@ body {
   line-height: 1.5;
 }
 
-h4 { font-size: calc(var(--base-font-size) * 1.1) }
-
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
+  font-variation-settings: var(--font-flex-bold);
   letter-spacing: 0.5px;
+  line-height: 1.2;
   margin-top: calc(var(--space)*2);
   text-align: center;
-  transition: color .6s;
+  text-transform: uppercase;
 }
 
 h1 {
-  font-variation-settings: var(--font-flex-bold);
-  line-height: 1.5;
   font-size: calc(var(--base-font-size) * 1.5);
-  margin-bottom: var(--space);
-  padding-top: calc(var(--space) * 2);
-  text-transform: uppercase;
 }
 
-h2, h3, h4, h5 {
-  font-variation-settings: var(--font-flex-medium);
-  line-height: 1.2;
+h2, h3, h4 {
   margin-bottom: var(--space-text);
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: calc(var(--base-font-size) * 1.2);
-  font-variation-settings: var(--font-flex-bold);
 }
 
 h3 {
   font-size: calc(var(--base-font-size) * 1.05);
-  font-variation-settings: var(--font-flex-bold);
+}
+
+h4 {
+  font-size: calc(var(--base-font-size) * .95);
 }
 
 h5 {
-  font-size: calc(var(--base-font-size) * 0.95);
+  font-size: calc(var(--base-font-size) * 1);
   font-variation-settings: var(--font-flex-bold);
 }
 
@@ -87,7 +81,6 @@ h5 {
 .title-with-bg h1 {
   display: inline;
   font-size: calc(var(--base-font-size) * 1.2);
-  font-variation-settings: var(--font-flex-medium);
   margin: 0;
   padding: 0;
   text-align: left;

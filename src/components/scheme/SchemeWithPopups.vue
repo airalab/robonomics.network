@@ -202,7 +202,6 @@ export default {
   .scheme-a {
     position: relative;
     font-size: 0.6em;
-    font-variation-settings: var(--font-flex-lightmedium);
   }
 
   .scheme-a span {
