@@ -10,7 +10,6 @@
 
         <div  class="nav-content">
             <Navigation/>
-            <!-- <Contacts withoutGap/> -->
         </div>
 
     </div>
@@ -266,7 +265,6 @@
 
         components: { 
             Navigation: () => import ('../Navigation.vue'),
-            // Contacts: () => import ('../footer/Contacts.vue')
         },
 
         data() {
