@@ -6,7 +6,7 @@
         <Loader/>
       </div>
 
-      <div v-show="isLoaded" class="screen banner">
+      <div v-show="isLoaded" class="screen">
   
 
         <Header :translated="translated" />
