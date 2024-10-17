@@ -36,7 +36,7 @@ export default {
       initialOffset: -40, // Starting offset for parts
       distance: 12,        // Distance between parts
       parts: [],  
-      speed: 7,           // Store part elements for easy access
+      speed: 6.5,           // Store part elements for easy access
     };
   },
 
@@ -107,7 +107,7 @@ export default {
 
         // Calculate new top position based on easing function
         const newTopPosition = this.initialOffset + (index * this.distance) * (1 - easeInOut * this.speed);
-        part.style.top = `${newTopPosition}px`; // Set new top position in pixels
+        part.style.top = `${index !== '7' ? newTopPosition : newTopPosition + 7}px`; // Set new top position in pixels
 
         // Update the max top position if the current one is greater
         if (newTopPosition > maxTopPosition) {
@@ -176,7 +176,7 @@ export default {
 .risc-v-model-part-5 { top: 40px; z-index: 7; }
 .risc-v-model-part-6 { top: 50px; z-index: 6; }
 .risc-v-model-part-7 { top: 60px; z-index: 5; }
-.risc-v-model-part-8 { top: 70px; z-index: 4; }
+.risc-v-model-part-8 { top: 70px;  z-index: 4; }
 
 @media screen and (max-width: 520px) {
   .risc-v-model {
