@@ -10,6 +10,7 @@
 
         <div  class="nav-content">
             <Navigation/>
+            <Socials/>
         </div>
 
     </div>
@@ -33,7 +34,6 @@
         left: 0;
         right: 0;
         background-color: #fff;
-        height: 100%;
         /* padding: var(--space); */
         padding-top: calc(var(--space)*2);
         transform: translateX(-20px);
@@ -255,6 +255,10 @@
         .new-column {
             margin-top: calc(var(--space) * 2);
         }
+
+        .nav-content {
+            height: 100%;
+        }
     }
 
 
@@ -265,6 +269,7 @@
 
         components: { 
             Navigation: () => import ('../Navigation.vue'),
+            Socials: () => import ('~/components/utils/socials.vue')
         },
 
         data() {
