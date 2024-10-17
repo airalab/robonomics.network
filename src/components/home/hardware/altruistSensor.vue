@@ -34,9 +34,10 @@ export default {
       observer: null,
       scrollPos: 0,
       maxScroll: 0,
+      lastScrollPosition: 0,
       parts: [],      
       speed: 25, 
-      distance: 60,      // Distance between parts
+      distance: 50,      // Distance between parts
       initialOffset: 0,  // Set initial offset for assembly
       randomHeight: 150
     };
@@ -73,6 +74,14 @@ export default {
       const maxScroll = document.body.scrollHeight - window.innerHeight; // Maximum scroll value
       const scrollRatio = Math.min(1, Math.max(0, scrollPosition / maxScroll)); // Normalize scroll position
 
+        if ((document.body.getBoundingClientRect()).top < this.scrollPos) {
+          if(parseInt(window.getComputedStyle(this.parts[0]).getPropertyValue("top")) < 0) {
+            return
+          } 
+        }
+
+
+
       // Initialize variable to track the maximum top position of parts
       let maxTopPosition = this.initialOffset;
 
@@ -86,6 +95,8 @@ export default {
 
         // Calculate new top position based on easing function
         const newTopPosition = this.initialOffset + (index * this.distance) * (1 - easeInOut * this.speed);
+
+
         part.style.top = `${newTopPosition}px`; // Set new top position in pixels
 
         // Update the max top position if the current one is greater
@@ -94,6 +105,8 @@ export default {
         }
         
         this.checkHeight(this.$refs.model2)
+        // saves the new position for iteration.
+	      this.scrollPos = (document.body.getBoundingClientRect()).top;
       });
 
     },
@@ -131,7 +144,7 @@ export default {
     this.throttledScrollHandler = this.throttle(this.updatePartPositions, 50);
 
     if(this.$route.path.includes('devices')) {
-      this.speed = 12
+      this.speed = 15
     }
   },
 
@@ -151,6 +164,7 @@ export default {
   top: -120px;
   overflow: hidden;
   transform: scale(1.3);
+  transition: height 0.2s ease-out, top 0.33s ease-out;
 }
 
 .altruist-model-part {
