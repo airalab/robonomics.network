@@ -114,7 +114,6 @@ export default {
 .home-product__text {
   max-width: 680px;
   margin: 0 auto;
-  margin-top: var(--space);
   margin-bottom: calc(var(--space) * 2.5);
 }
 
