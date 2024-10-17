@@ -1,6 +1,7 @@
 <template>
   <div class="home__products products">
     <Product
+      class="with-models-2"
       :id="products[0].id"
       :title="products[0].title"
       :highlightedText="products[0].highlightedText"
@@ -9,7 +10,7 @@
       :casesImages="products[0].casesImages"
       titleLink="/devices/altruist"
     >
-      <g-image class="home-product__img products__img" src="~/assets/images/hardware-2025/altruist-demo.png" :alt="products[0].title" quality="75"/>
+      <AltruistSensor/>
     </Product>
     <Product
       class="with-models"
@@ -52,7 +53,8 @@ export default {
   components: {
     Product: () => import("~/components/home/homeItem.vue"),
     RiskV: () => import ('~/components/home/hardware/riscV.vue'),
-    RiskV3D: () => import ('~/components/home/hardware/riscV3D.vue')
+    RiskV3D: () => import ('~/components/home/hardware/riscV3D.vue'),
+    AltruistSensor: () => import ('~/components/home/hardware/altruistSensor.vue')
   },
 
   data() {

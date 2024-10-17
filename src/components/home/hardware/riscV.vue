@@ -34,9 +34,9 @@ export default {
       observer: null,
       scrollPos: 0,
       initialOffset: -40, // Starting offset for parts
-      distance: 8,        // Distance between parts
+      distance: 12,        // Distance between parts
       parts: [],  
-      speed: 8,           // Store part elements for easy access
+      speed: 7,           // Store part elements for easy access
     };
   },
 
@@ -86,7 +86,7 @@ export default {
         }
       });
 
-      container.style.height = maxHeight + 20 + 'px';
+      container.style.height = maxHeight + 10 + 'px';
     },
 
     updatePartPositions() {
@@ -102,7 +102,7 @@ export default {
         const index = part.getAttribute('data-part');
         // Use a non-linear easing function for a smoother effect
         const easeInOut = scrollRatio < 0.5 
-          ? (2 * scrollRatio ** 2) 
+          ? (2 * scrollRatio ** 2.8) 
           : (1 - (2 * (1 - scrollRatio) ** this.speed));
 
         // Calculate new top position based on easing function
@@ -116,9 +116,6 @@ export default {
         
         this.checkHeight(this.$refs.model)
       });
-
-      // Update the height of the container based on the maximum top position of parts
-      // this.$refs.model.style.height = `${this.$refs.model.clientHeight + maxTopPosition + this.distance}px`; // Add some buffer space if needed
 
     },
     
@@ -140,7 +137,7 @@ export default {
     window.addEventListener('scroll', this.onScroll); // Track scroll position
 
     if(this.$route.path.includes('devices')) {
-      this.speed = 5
+      this.speed = 4
       this.initialOffset = -30
     }
   },
