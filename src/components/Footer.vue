@@ -100,6 +100,7 @@ export default {
         display: grid;
         gap: var(--space);
         grid-template-columns: repeat(4, 1fr);
+        line-height: 1.2;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -109,7 +110,7 @@ export default {
     .footer-socials li {
         display: grid;
         gap: calc(var(--space) * 0.5);
-        grid-template-columns: .7fr 3fr;
+        grid-template-columns: .6fr 3fr;
         position: relative;
     }
 
@@ -129,7 +130,8 @@ export default {
     .footer-socials a {
         display: block;
         text-transform: uppercase;
-        font-variation-settings: 'wght' 800;
+        font-variation-settings: var(--font-flex-bold);
+        margin-bottom: calc(var(--space) * 0.2);
     }
 
     .footer-socials a:before {

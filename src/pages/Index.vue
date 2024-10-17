@@ -7,8 +7,8 @@
       />
 
       <section class="banner">
-        <div class="banner-content">
-          <banner-index />
+        <div class="banner-content" :style="bannertransform">
+          <svg-banner />
           <h1>Begin your adventure in the world of cyber punks</h1>
           <h4>#DePIN, #NetworkStates</h4>
         </div>
@@ -58,7 +58,7 @@
   import MetaInfo from '~/components/MetaInfo.vue'
   import Products from '~/components/Products.vue'
   import Member from '~/components/home/homeMember.vue'
-  import BannerIndex from '~/components/svg/BannerIndex.vue'
+  import SvgBanner from '~/components/svg/BannerIndex.vue'
 
   export default {
 
@@ -66,7 +66,46 @@
       MetaInfo,
       Products,
       Member,
-      BannerIndex
+      SvgBanner
+    },
+
+    data() {
+      return {
+        bannershift: 0,
+        scrollstarted: false
+      }
+    },
+
+    computed: {
+      bannertransform() {
+        if(this.scrollstarted) {
+          return 'transform: translateY(' + ((-1) * this.bannershift) + 'px);';
+        }
+      }
+    },
+
+    methods: {
+      onScroll() {
+      
+        if(window.scrollY > 20 && window.scrollY < window.innerHeight/2) {
+          this.scrollstarted = true;
+          this.bannershift = window.scrollY / 3;
+        }
+
+        if(window.scrollY <= 20) {
+          this.bannershift = 0;
+        }
+
+        console.log('this.bannershift', this.bannershift)
+      },
+    },
+
+    mounted() {
+      window.addEventListener('scroll', this.onScroll);
+    },
+
+    beforeDestroy () {
+      window.removeEventListener('scroll', this.onScroll);
     }
 
   }
@@ -78,6 +117,20 @@
   /* + banner */
   .banner {
     margin-bottom: calc(var(--space) * 3);
+    position: relative;
+  }
+
+  .banner:before {
+    background-color: var(--color-blue-notheme);
+    background-image: url('../assets/images/robonomics-pattern.webp');
+    background-size: 600px;
+    border-radius: 4px;
+    bottom: var(--layout-sidepadding);
+    content: "";
+    left: var(--layout-sidepadding);
+    position: absolute;
+    right: var(--layout-sidepadding);
+    top: var(--layout-sidepadding);
   }
 
   .banner, .banner-content {
@@ -85,9 +138,11 @@
   }
 
   .banner-content {
-    border-radius: 4px;
     background: var(--color-red);
+    border-radius: 4px;
     color: var(--color-light);
+    position: relative;
+    z-index: 1;
   }
 
   .banner h1, .banner h4 {
