@@ -21,11 +21,13 @@
       </div>
 
     </div>
+    
     <div class="product__model" :class="{'product__model--altruist': title === 'Altruist outdoor sensor'}">
       <slot/>
     </div>
+
     <div class="product__text">
-      <p class="product__descr" v-html="text"></p>
+      <p v-html="text"></p>
       <h5>Use case:</h5>
       <p class="product__use-text">{{ cases }}</p>
     </div>
@@ -73,7 +75,7 @@ div[class^='product__']:not(.product__model) {
 }
 
 .product:not(:last-child) {
-  margin-bottom: calc(var(--space) * 3)
+  margin-bottom: calc(var(--space) * 4)
 }
 
 .product__header {
@@ -132,11 +134,6 @@ a.highlight, .highlight-solid-green {
 .product__text {
   max-width: 680px;
   margin: 0 auto;
-  margin-bottom: calc(var(--space) * 2.5);
-}
-
-.product__descr {
-  margin-bottom: calc(var(--space) * 2);
 }
 
 .product__adds {
@@ -144,6 +141,7 @@ a.highlight, .highlight-solid-green {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: var(--space);
+  margin-top: var(--space);
 }
 
 

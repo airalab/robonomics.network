@@ -6,36 +6,43 @@
         pageDescription = "Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy."
       />
 
-      <section class="banner">
+      <div class="banner">
         <div class="banner-content" :style="bannertransform">
           <svg-banner />
           <h1>Begin your adventure in the world of cyber punks</h1>
           <h4>#DePIN, #NetworkStates</h4>
           <g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">About membership pass</g-link>
         </div>
-      </section>
+      </div>
 
       <h2 class="title-lined"><span>Hardware for cyber punks 2025 line up</span></h2>
       <div class="layout layout__content">
         <Products specialCl="altruist-page"/>
       </div>
 
-      <div class="layout"> 
+      <div class="layout">
+
         <h2 class="title-lined"><span>Features of Each Device</span></h2>
-        <div class="home__advantages grid-3">
-          <div class="home__advantages-item">
-            <h3 class="home__advantages-title home__advantages-title--scalable">Pure Open Source</h3>
-            <p class="simple-text">Every device is fully open: you can find the source code, circuit schematics, and instructions for self-updating without the need to connect to any cloud servers. The devices are designed to ensure you can easily understand their structure and onboard components.</p>
+
+        <section class="grid-3">
+
+          <div>
+            <h3 class="align-left">Pure Open Source</h3>
+            <p>Every device is fully open: you can find the source code, circuit schematics, and instructions for self-updating without the need to connect to any cloud servers. The devices are designed to ensure you can easily understand their structure and onboard components.</p>
           </div>
-          <div class="home__advantages-item">
-            <h3 class="home__advantages-title home__advantages-title--antiscam">Local and Global Availability</h3>
-            <p class="simple-text">The combination of p2p communication and web3 cloud guarantees that your devices will always be accessible for interaction. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are.</p>
+
+          <div>
+            <h3 class="align-left">Local and Global Availability</h3>
+            <p>The combination of p2p communication and web3 cloud guarantees that your devices will always be accessible for interaction. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are.</p>
           </div>
-          <div class="home__advantages-item">
-            <h3 class="home__advantages-title home__advantages-title--privacy">Privacy from the First Use</h3>
-            <p class="simple-text">By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.</p>
+
+          <div>
+            <h3 class="align-left">Privacy from the First Use</h3>
+            <p>By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.</p>
           </div>
-        </div>
+
+        </section>
+
       </div>
 
       <div class="home__timeline">

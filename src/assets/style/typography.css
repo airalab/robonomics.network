@@ -34,13 +34,10 @@ h1, h2, h3, h4 {
   font-variation-settings: var(--font-flex-bold);
   letter-spacing: 0.5px;
   line-height: 1.2;
-  margin-top: calc(var(--space)*2);
+  margin-bottom: var(--space-text);
+  margin-top: calc(var(--space-text) * 2);
   text-align: center;
   text-transform: uppercase;
-}
-
-h2, h3, h4 {
-  margin-bottom: calc(var(--space-text) * 2);
 }
 
 h1 {
