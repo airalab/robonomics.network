@@ -39,12 +39,12 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
-h1 {
-  font-size: calc(var(--base-font-size) * 1.7);
-}
-
 h2, h3, h4 {
   margin-bottom: calc(var(--space-text) * 2);
+}
+
+h1 {
+  font-size: calc(var(--base-font-size) * 1.7);
 }
 
 h2 {
@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(var(--base-font-size) * 1.05);
+  font-size: calc(var(--base-font-size) * 1.2);
 }
 
 h4 {
@@ -429,12 +429,10 @@ p:last-child, ul:last-child, ol:last-child, blockquote:last-child, table:last-ch
 }
 
 
-.highlighted-text {
-  display: inline-block;
-  padding: 0.2rem 0.3rem;
-  margin-bottom: 10px;
-  line-height: 0.8;
-  font-variation-settings: 'wght' 900, 'wdth' 100, 'opsz' 14, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;;
-  font-size: calc(var(--base-font-size) * 0.7);
+.highlight-solid-green {
   background-color: var(--rb-color-green-accent);
+  display: inline-block;
+  font-variation-settings: var(--font-flex-bold);
+  line-height: 1;
+  padding: 0.2rem 0;
 }

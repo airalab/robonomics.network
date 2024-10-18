@@ -2,6 +2,7 @@
   <div class="home-product">
     <div class="home-product__header">
       <span class="home-product__number">{{ id + 1 }}</span>
+      
       <div class="home-product__header-text">
         <span class="home-product__highlighted highlighted-text" :class="{'blue': highlightedText.toLocaleLowerCase() !== 'early access for community members'}">{{ highlightedText }}</span>
         <h3 v-if="!titleLink" class="home-product__title">{{ title }}</h3>
@@ -61,6 +62,11 @@ export default {
 </script>
 
 <style scoped>
+
+div[class^='home-product__']:not(.home-product__model) {
+  position: relative;
+  z-index: 1;
+}
 
 .home-product {
   margin-bottom: calc(var(--space) * 3)

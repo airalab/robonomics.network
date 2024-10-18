@@ -1,56 +1,28 @@
 <template>
-  <div class="home__products products">
-    <Product
-      class="with-models-2"
-      :id="products[0].id"
-      :title="products[0].title"
-      :highlightedText="products[0].highlightedText"
-      :text="products[0].text"
-      :cases="products[0].cases"
-      :casesImages="products[0].casesImages"
-      titleLink="/devices/altruist"
-    >
-      <AltruistSensor/>
-    </Product>
-    <Product
-      class="with-models"
-      :id="products[1].id"
-      :title="products[1].title"
-      :highlightedText="products[1].highlightedText"
-      :text="products[1].text"
-      :cases="products[1].cases"
-      :casesImages="products[1].casesImages"
-      titleLink="/devices/"
-    >
-      <RiskV/>
-      <RiskV3D/>
-    </Product>
-    <Product
-      :id="products[2].id"
-      :title="products[2].title"
-      :highlightedText="products[2].highlightedText"
-      :text="products[2].text"
-      :cases="products[2].cases"
-      :casesImages="products[2].casesImages"
-    >
-      <g-image class="product-image" src="~/assets/images/hardware-2025/tamagotchi.webp" :alt="products[2].title" />
-    </Product>
-    <Product
-      :id="products[3].id"
-      :title="products[3].title"
-      :highlightedText="products[3].highlightedText"
-      :text="products[3].text"
-      :cases="products[3].cases"
-      :casesImages="products[3].casesImages"
-    >
-      <g-image class="product-image" src="~/assets/images/hardware-2025/safe-on-smart-contract.webp" :alt="products[3].title" />
-    </Product>
+  <div class="products">
+
+    <Product-item v-for="product in products" :key="product.id" 
+      :class="product.class"
+      :product="product"
+      >
+        <AltruistSensor v-if="product.id === 0" />
+        <RiskV v-if="product.id === 1" />
+        <RiskV3D v-if="product.id === 1" />
+        <g-image
+          v-if="product.id === 2 || product.id === 3" 
+          class="product-image" 
+          :src="require('!!assets-loader!~/assets/images/hardware-2025/' + productimg(product.id))"
+          :alt="product.title"
+        />
+      </Product-item>
+
   </div>
 </template>
 
 <script>
 export default {
   components: {
+    ProductItem: () => import("~/components/Product.vue"),
     Product: () => import("~/components/home/homeItem.vue"),
     RiskV: () => import ('~/components/home/hardware/riscV.vue'),
     RiskV3D: () => import ('~/components/home/hardware/riscV3D.vue'),
@@ -59,19 +31,20 @@ export default {
 
   data() {
     return {
-      products: [
+      products:[
         {
           id: 0,
           title: 'Altruist outdoor sensor',
-          highlightedText: 'early access for community members',
+          status: 'ready',
           text: 'A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized <a aria-label="see decentralized sensor map" href="https://sensors.social/" target="_blank">sensor map</a>.',
           cases: 'Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.',
-          casesImages: ['altruist-cases-1.webp', 'altruist-cases-2.webp', 'altruist-cases-3.webp', 'altruist-cases-4.webp']
+          casesImages: ['altruist-cases-1.webp', 'altruist-cases-2.webp', 'altruist-cases-3.webp', 'altruist-cases-4.webp'],
+          titleLink: '/devices/altruist'
         },
         {
           id: 1,
           title: 'risc-v open source server',
-          highlightedText: 'early access for community members',
+          status: 'ready',
           text: 'The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.',
           cases: 'Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.',
           casesImages: ['risc-v-cases-1.webp', 'risc-v-cases-2.webp', 'risc-v-cases-3.webp', 'risc-v-cases-4.webp']
@@ -79,18 +52,30 @@ export default {
         {
           id: 2,
           title: 'Hikikomori smart Tamagotchi',
-          highlightedText: 'coming soon',
+          status: 'coming',
           text: 'Finally, a smart Tamagotchi that’s more than just a game! A smart wearable station that checks the status of sensors from your home or clothing.',
           cases: 'Connect your smart home and smart clothing to the Hikikomori to monitor sensor data—right at your fingertips. Literally.'
         },
         {
           id: 3,
           title: 'Safe on a smart contract',
-          highlightedText: 'coming soon',
+          status: 'coming',
           text: 'A safe that unlocks with a smart contract based on user-defined conditions.',
           cases: 'View logs of the safe’s openings and closings. Program the safe to suit your needs, such as granting access to trusted accounts after an extended period of inactivity.'
         },
       ]
+    }
+  },
+
+  methods: {
+    productimg(id) {
+      if( id === 2 ) {
+        return 'tamagotchi.webp'
+      }
+
+      if( id === 3 ) {
+        return 'safe-on-smart-contract.webp'
+      }
     }
   }
 
