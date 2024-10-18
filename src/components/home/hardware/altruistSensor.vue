@@ -92,20 +92,27 @@ export default {
 
         if ((document.body.getBoundingClientRect()).top < this.scrollPos) {
           if(parseInt(window.getComputedStyle(this.parts[0]).getPropertyValue("top")) < 0 || parseInt(window.getComputedStyle(this.parts[1]).getPropertyValue("top")) < 0) {
-                this.parts[0].style.top = '2px';
-                this.parts[1].style.top = '2px';
-                this.parts[2].style.top = '2px';
-                this.parts[3].style.top = '1px';
-                this.parts[4].style.top = '1px';
-                this.parts[5].style.top = '1px';
-                this.parts[6].style.top = '1px';
-                this.parts[7].style.top = '2px';
+            document.querySelectorAll('.altruist-model-part ').forEach(p => {
+              p.style.opacity = 0
+            }) 
+                // this.parts[0].style.top = '2px';
+                // this.parts[1].style.top = '2px';
+                // this.parts[2].style.top = '2px';
+                // this.parts[3].style.top = '1px';
+                // this.parts[4].style.top = '1px';
+                // this.parts[5].style.top = '1px';
+                // this.parts[6].style.top = '1px';
+                // this.parts[7].style.top = '2px';
             return
           } 
         }
 
       // Initialize variable to track the maximum top position of parts
       let maxTopPosition = this.initialOffset;
+
+      document.querySelectorAll('.altruist-model-part ').forEach(p => {
+        p.style.opacity = 1
+      }) 
 
       // Calculate new positions for each part based on the scroll ratio
       this.parts.forEach((part) => {
