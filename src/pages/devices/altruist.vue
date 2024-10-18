@@ -169,7 +169,7 @@ export default {
 
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
-    Altruist: () => import("~/components/home/hardware/altruistSensor.vue"),
+    Altruist: () => import("~/components/3dmodels/altruistSensor.vue"),
   },
 
   data() {

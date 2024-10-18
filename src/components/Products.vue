@@ -23,10 +23,9 @@
 export default {
   components: {
     ProductItem: () => import("~/components/Product.vue"),
-    Product: () => import("~/components/home/homeItem.vue"),
-    RiskV: () => import ('~/components/home/hardware/riscV.vue'),
-    RiskV3D: () => import ('~/components/home/hardware/riscV3D.vue'),
-    AltruistSensor: () => import ('~/components/home/hardware/altruistSensor.vue')
+    RiskV: () => import ('~/components/3dmodels/riscV.vue'),
+    RiskV3D: () => import ('~/components/3dmodels/riscV3D.vue'),
+    AltruistSensor: () => import ('~/components/3dmodels/altruistSensor.vue')
   },
 
   data() {
