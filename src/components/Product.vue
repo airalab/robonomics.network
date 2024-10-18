@@ -6,7 +6,7 @@
       
       <div class="product__header-text">
         <h3>
-            <temlate v-if="!titleLink">{{ title }}</temlate>
+            <template v-if="!titleLink">{{ title }}</template>
             <g-link v-else :aria-label="'go to '+ title + ' page'" :to="titleLink">{{ title }}</g-link>
         </h3>
 
@@ -21,7 +21,7 @@
       </div>
 
     </div>
-    <div class="product__model">
+    <div class="product__model" :class="{'product__model--altruist': title === 'Altruist outdoor sensor'}">
       <slot/>
     </div>
     <div class="product__text">
@@ -68,6 +68,10 @@ div[class^='product__']:not(.product__model) {
   z-index: 1;
 }
 
+.product {
+  overflow: hidden;
+}
+
 .product:not(:last-child) {
   margin-bottom: calc(var(--space) * 3)
 }
@@ -109,7 +113,11 @@ a.highlight, .highlight-solid-green {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.product__model.product__model--altruist {
+  max-width: unset;
 }
 
 .product__model .with-models {
