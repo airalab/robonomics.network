@@ -11,18 +11,19 @@
           <svg-banner />
           <h1>Begin your adventure in the world of cyber punks</h1>
           <h4>#DePIN, #NetworkStates</h4>
+          <g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">About membership pass</g-link>
         </div>
       </section>
 
+      <h2 class="title-lined"><span>Hardware for cyber punks 2025 line up</span></h2>
       <div class="layout layout__content">
-        <h2>Hardware for cyber punks 2025 line up</h2>
         <Products/>
       </div>
 
       <Member/>
 
       <div class="layout"> 
-        <h2>Features of Each Device</h2>
+        <h2 class="title-lined"><span>Features of Each Device</span></h2>
         <div class="home__advantages grid-3">
           <div class="home__advantages-item">
             <h3 class="home__advantages-title home__advantages-title--scalable">Pure Open Source</h3>
@@ -45,7 +46,7 @@
         </div>
         <div class="layout layout__content">
           <h2>Interested in how the team reached this stage?</h2>
-          <g-link to="/timeline/" class="advantages__link"><h5>The Robonomics Timeline</h5></g-link>
+          <g-link to="/timeline/" class="highlight">The Robonomics Timeline</g-link>
           <span>can guide you through our journey</span>
         </div>
       </div>
@@ -140,9 +141,22 @@
   .banner-content {
     background: var(--color-red);
     border-radius: 4px;
-    color: var(--color-light);
     position: relative;
+    text-align: center;
     z-index: 1;
+  }
+
+  .banner-content, .banner-content a {
+    color: var(--color-light);
+  }
+
+  .banner-content a.highlight {
+    display: inline-block;
+    margin-top: var(--space);
+  }
+
+  .banner-content a.highlight:hover {
+    border-width: 2px;
   }
 
   .banner h1, .banner h4 {
@@ -186,29 +200,6 @@
   .home__advantages-title--privacy {
     background-size: 109px 15px;
     background-image: url("../assets/images/hardware-2025/privacy.png");
-  }
-
-  .advantages__link {
-    display: block;
-    margin-bottom: calc(var(--space) * 0.3);
-    text-align: center;
-  }
-
-  .advantages__link h5 {
-    position: relative;
-    display: inline-block;
-    text-transform: none;
-    letter-spacing: 0;
-  }
-
-  .advantages__link h5::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    height: 1px;
-    width: 100%;
-    background-color: var(--color-blue);
   }
 
   .home__timeline {

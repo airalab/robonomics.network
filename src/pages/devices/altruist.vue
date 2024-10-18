@@ -13,8 +13,8 @@
     </div>
 
     <div class="altruist__intro layout layout__content">
-      <g-link class="altruist__back-link" to="/devices/"> < All hardware</g-link>
-      <g-image class="altruist__img" src="~/assets/images/hardware-2025/altruist-demo.png" alt="Altruist outdoor sensor" quality="75"/>
+      <g-link class="altruist__back-link" to="/devices/"> &larr; All hardware</g-link>
+      <!-- <g-image class="altruist__img" src="~/assets/images/hardware-2025/altruist-demo.png" alt="Altruist outdoor sensor" quality="75"/> -->
 
       <p class="altruist__text-bold"> <b>A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">sensor map</g-link></b>.</p>
 

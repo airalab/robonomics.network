@@ -105,12 +105,6 @@ export default {
   height: 100%;
 }
 
-.home-product__model img {
-  max-width: 480px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .home-product__text {
   max-width: 680px;
   margin: 0 auto;

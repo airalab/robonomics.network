@@ -40,15 +40,15 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: calc(var(--base-font-size) * 1.5);
+  font-size: calc(var(--base-font-size) * 1.7);
 }
 
 h2, h3, h4 {
-  margin-bottom: var(--space-text);
+  margin-bottom: calc(var(--space-text) * 2);
 }
 
 h2 {
-  font-size: calc(var(--base-font-size) * 1.2);
+  font-size: calc(var(--base-font-size) * 1.5);
 }
 
 h3 {
@@ -63,6 +63,32 @@ h5 {
   font-size: calc(var(--base-font-size) * 1);
   font-variation-settings: var(--font-flex-bold);
 }
+
+/* + Title with line throw */
+
+.title-lined {
+  position: relative;
+}
+
+.title-lined:before {
+  content:"";
+  height: 1px;
+  background-color: var(--color-dark);
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  right: 0;
+}
+
+.title-lined span {
+  display: inline-block;
+  background-color: var(--body-bg);
+  position: relative;
+  z-index: 1;
+  padding: 0 var(--space);
+}
+
+/* - Title with line throw */
 
 .title-with-bg {
   background-color: var(--color-dark);
@@ -208,6 +234,11 @@ a:not(.button):hover, .link:not(.button):hover {
 a:not(.button).dashed, .link:not(.button).dashed {
   text-decoration: none;
   border-bottom: 1px dashed currentColor
+}
+
+a.highlight {
+  border-bottom: 0.5px solid currentColor;
+  font-variation-settings: var(--font-flex-bold);
 }
 
 

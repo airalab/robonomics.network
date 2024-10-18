@@ -109,6 +109,7 @@ export default {
     text-transform: uppercase;
     font-variation-settings: var(--font-flex-bold);
     margin-bottom: calc(var(--space) * 0.2);
+    color: var(--text-color)
 }
 
 .socials a:before {

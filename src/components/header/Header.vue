@@ -106,7 +106,7 @@ export default {
     left: 0;
     right: 0;
     z-index:1000;
-    border-bottom: 1px solid var(--color-dark);
+    border-bottom: 2px solid var(--color-dark);
     background-color: var(--header-bg);
   }
   

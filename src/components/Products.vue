@@ -33,7 +33,7 @@
       :cases="products[2].cases"
       :casesImages="products[2].casesImages"
     >
-      <g-image class="home-product__img products__img" src="~/assets/images/hardware-2025/tamagotchi.png" :alt="products[2].title"  quality="75"/>
+      <g-image class="product-image" src="~/assets/images/hardware-2025/tamagotchi.webp" :alt="products[2].title" />
     </Product>
     <Product
       :id="products[3].id"
@@ -43,7 +43,7 @@
       :cases="products[3].cases"
       :casesImages="products[3].casesImages"
     >
-      <g-image class="home-product__img products__img" src="~/assets/images/hardware-2025/safe-on-smart-contract.png" :alt="products[3].title"  quality="75"/>
+      <g-image class="product-image" src="~/assets/images/hardware-2025/safe-on-smart-contract.webp" :alt="products[3].title" />
     </Product>
   </div>
 </template>
@@ -66,7 +66,7 @@ export default {
           highlightedText: 'early access for community members',
           text: 'A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized <a aria-label="see decentralized sensor map" href="https://sensors.social/" target="_blank">sensor map</a>.',
           cases: 'Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.',
-          casesImages: ['altruist-cases-1.png', 'altruist-cases-2.png', 'altruist-cases-3.png', 'altruist-cases-4.png']
+          casesImages: ['altruist-cases-1.webp', 'altruist-cases-2.webp', 'altruist-cases-3.webp', 'altruist-cases-4.webp']
         },
         {
           id: 1,
@@ -74,7 +74,7 @@ export default {
           highlightedText: 'early access for community members',
           text: 'The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.',
           cases: 'Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.',
-          casesImages: ['risc-v-cases-1.png', 'risc-v-cases-2.png', 'risc-v-cases-3.png', 'risc-v-cases-4.png']
+          casesImages: ['risc-v-cases-1.webp', 'risc-v-cases-2.webp', 'risc-v-cases-3.webp', 'risc-v-cases-4.webp']
         },
         {
           id: 2,
@@ -118,9 +118,12 @@ export default {
     background-repeat: repeat-y;
   }
 
-  .product__img {
-    display: inline-block;
-    margin-bottom: var(--space);
+  .product-image {
+    display: block;
+    max-height: 250px;
+    object-fit: contain;
+    width: 100%;
+    margin: 0 auto calc(var(--space) * 2);
   }
 
   @media screen and (max-width: 990px) {
