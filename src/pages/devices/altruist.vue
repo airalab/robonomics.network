@@ -14,8 +14,7 @@
 
     <div class="altruist__intro layout layout__content">
       <g-link class="altruist__back-link" to="/devices/"> &larr; All hardware</g-link>
-      <!-- <g-image class="altruist__img" src="~/assets/images/hardware-2025/altruist-demo.png" alt="Altruist outdoor sensor" quality="75"/> -->
-
+      <Altruist class="altruist-page"/>
       <p class="altruist__text-bold"> <b>A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">sensor map</g-link></b>.</p>
 
       <h5 class="altruist__cases-title">Use case:</h5>
@@ -169,7 +168,8 @@
 export default {
 
   components: {
-    MetaInfo: () => import("~/components/MetaInfo.vue")
+    MetaInfo: () => import("~/components/MetaInfo.vue"),
+    Altruist: () => import("~/components/home/hardware/altruistSensor.vue"),
   },
 
   data() {
@@ -193,6 +193,7 @@ export default {
   .altruist__intro {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .altruist__back-link {
@@ -201,6 +202,7 @@ export default {
     font-size: 12px;
     font-weight: 900;
     text-transform: uppercase;
+    z-index: 20;
   }
 
   .altruist__img {
@@ -216,6 +218,7 @@ export default {
   }
 
   .altruist__intro-highlighted-text {
+    margin-bottom: calc(var(--space) * 3);
     align-self: center;
     text-transform: uppercase;
   }
@@ -304,7 +307,7 @@ export default {
 
   .depin-guide__item::before {
     position: absolute;
-    top: -2px;
+    top: 4px;
     left: -20px;
     display: flex;
     align-items: center;
@@ -318,7 +321,7 @@ export default {
   .depin-guide__item::after {
     content: '.';
     position: absolute;
-    top: -2px;
+    top: 4px;
     left: -10px;
     display: flex;
     align-items: center;
