@@ -48,7 +48,7 @@ export default {
   methods: {
     callback(entries) {
       entries.forEach(({ isIntersecting }) => {
-        if (isIntersecting && !this.$route.path.includes('altruist')) {
+        if (isIntersecting && !this.$route.path.includes('altruist') && this.$route.path !== '/') {
           if(this.animationDelay) {
             setTimeout(() => {
               window.addEventListener('scroll', this.throttledScrollHandler);
@@ -62,7 +62,7 @@ export default {
           window.removeEventListener('scroll', this.throttledScrollHandler);
         }
 
-        if(isIntersecting && this.$route.path.includes('altruist')) {
+        if((isIntersecting && this.$route.path === '/') || (isIntersecting && this.$route.path.includes('altruist'))) {
           this.disassemble()
         } else {
           this.assemble()
@@ -92,17 +92,9 @@ export default {
 
         if ((document.body.getBoundingClientRect()).top < this.scrollPos) {
           if(parseInt(window.getComputedStyle(this.parts[0]).getPropertyValue("top")) < 0 || parseInt(window.getComputedStyle(this.parts[1]).getPropertyValue("top")) < 0) {
-            document.querySelectorAll('.altruist-model-part ').forEach(p => {
+            document.querySelectorAll('.altruist-model-part').forEach(p => {
               p.style.opacity = 0
             }) 
-                // this.parts[0].style.top = '2px';
-                // this.parts[1].style.top = '2px';
-                // this.parts[2].style.top = '2px';
-                // this.parts[3].style.top = '1px';
-                // this.parts[4].style.top = '1px';
-                // this.parts[5].style.top = '1px';
-                // this.parts[6].style.top = '1px';
-                // this.parts[7].style.top = '2px';
             return
           } 
         }
@@ -110,7 +102,7 @@ export default {
       // Initialize variable to track the maximum top position of parts
       let maxTopPosition = this.initialOffset;
 
-      document.querySelectorAll('.altruist-model-part ').forEach(p => {
+      document.querySelectorAll('.altruist-model-part').forEach(p => {
         p.style.opacity = 1
       }) 
 
@@ -164,11 +156,13 @@ export default {
     },
     assemble() {
       // Reset all parts to (0, 0) and rotate -90deg
-      this.parts.forEach((part, index) => {
-        const partEl = document.querySelector('.altruist-page').querySelector(`.altruist-model-part-${index + 1}`);
-        partEl.style.opacity = 0;
-        partEl.style.transform = 'translate(0, 0)';
-      });
+      if(document.querySelector('.altruist-page')) {
+        this.parts.forEach((part, index) => {
+          const partEl = document.querySelector('.altruist-page').querySelector(`.altruist-model-part-${index + 1}`);
+          partEl.style.opacity = 0;
+          partEl.style.transform = 'translate(0, 0)';
+        });
+      }
     },
     getTranslateY(index) {
       // First part stays in place, others move with a gap of 10px between each
@@ -233,6 +227,10 @@ export default {
   transform: scale(1.3) rotate(-90deg) translate(0%, -18%);
 }
 
+.product__model--altruist .altruist-page.altruist-model {
+  transform: scale(1.3) rotate(-90deg) translate(0%, -28%);
+}
+
 .altruist-model-part {
   position: absolute;
   left: 0;
@@ -268,6 +266,10 @@ export default {
     height: 380px;
     transform: scale(1.0) rotate(-90deg) translate(-2%, -66%);
   }
+  .product__model--altruist .altruist-page.altruist-model {
+    transform: scale(1.0) rotate(-90deg) translate(-2%, -58%);
+  }
+ 
 }
 
 @media screen and (max-width: 560px) {
@@ -282,6 +284,10 @@ export default {
   .altruist-model {
     top: -90px;
     height: 260px;
+  }
+
+  .product__model--altruist .altruist-page.altruist-model {
+    transform: scale(0.75) rotate(-90deg) translate(-2%, -88%);
   }
 }
 
