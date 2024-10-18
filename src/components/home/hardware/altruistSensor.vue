@@ -1,28 +1,28 @@
 <template>
   <div class="altruist-model" ref="model2">
     <div data-part="1" class="altruist-model-part altruist-model-part-1" ref="part1">
-      <g-image src="~/assets/images/hardware-2025/altruist-model-1.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/altruist-model-1.webp" quality="75" immediate />
     </div>
     <div data-part="8" class="altruist-model-part altruist-model-part-2" ref="part2">
-      <g-image src="~/assets/images/hardware-2025/altruist-model-2.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/altruist-model-2.webp" quality="75" immediate />
     </div>
     <div data-part="3" class="altruist-model-part altruist-model-part-3" ref="part3">
-      <g-image src="~/assets/images/hardware-2025/altruist-model-3.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/altruist-model-3.webp" quality="75" immediate />
     </div>
     <div data-part="4" class="altruist-model-part altruist-model-part-4" ref="part4">
-      <g-image src="~/assets/images/hardware-2025/altruist-model-4.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/altruist-model-4.webp" quality="75" immediate />
     </div>
     <div data-part="5" class="altruist-model-part altruist-model-part-5" ref="part5">
-      <g-image src="~/assets/images/hardware-2025/altruist-model-5.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/altruist-model-5.webp" quality="75" immediate />
     </div>
     <div data-part="6" class="altruist-model-part altruist-model-part-6" ref="part6">
-      <g-image src="~/assets/images/hardware-2025/altruist-model-6.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/altruist-model-6.webp" quality="75" immediate />
     </div>
     <div data-part="7" class="altruist-model-part altruist-model-part-7" ref="part7">
-      <g-image src="~/assets/images/hardware-2025/altruist-model-7.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/altruist-model-7.webp" quality="75" immediate />
     </div>
     <div data-part="8" class="altruist-model-part altruist-model-part-8" ref="part8">
-      <g-image src="~/assets/images/hardware-2025/altruist-model-8.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/altruist-model-8.webp" quality="75" immediate />
     </div>
   </div>
 </template>
@@ -39,7 +39,8 @@ export default {
       speed: 25, 
       distance: 50,      // Distance between parts
       initialOffset: 0,  // Set initial offset for assembly
-      randomHeight: 150
+      randomHeight: 150,
+      animationDelay: true
     };
   },
 
@@ -47,7 +48,15 @@ export default {
     callback(entries) {
       entries.forEach(({ isIntersecting }) => {
         if (isIntersecting) {
-          window.addEventListener('scroll', this.throttledScrollHandler);
+          if(this.animationDelay) {
+            setTimeout(() => {
+              window.addEventListener('scroll', this.throttledScrollHandler);
+              this.animationDelay = false
+            }, 800)
+          } else {
+            window.addEventListener('scroll', this.throttledScrollHandler);
+          }
+
         } else {
           window.removeEventListener('scroll', this.throttledScrollHandler);
         }
@@ -75,12 +84,18 @@ export default {
       const scrollRatio = Math.min(1, Math.max(0, scrollPosition / maxScroll)); // Normalize scroll position
 
         if ((document.body.getBoundingClientRect()).top < this.scrollPos) {
-          if(parseInt(window.getComputedStyle(this.parts[0]).getPropertyValue("top")) < 0) {
+          if(parseInt(window.getComputedStyle(this.parts[0]).getPropertyValue("top")) < 0 || parseInt(window.getComputedStyle(this.parts[1]).getPropertyValue("top")) < 0) {
+                this.parts[0].style.top = '2px';
+                this.parts[1].style.top = '2px';
+                this.parts[2].style.top = '2px';
+                this.parts[3].style.top = '1px';
+                this.parts[4].style.top = '1px';
+                this.parts[5].style.top = '1px';
+                this.parts[6].style.top = '1px';
+                this.parts[7].style.top = '2px';
             return
           } 
         }
-
-
 
       // Initialize variable to track the maximum top position of parts
       let maxTopPosition = this.initialOffset;
@@ -95,7 +110,8 @@ export default {
 
         // Calculate new top position based on easing function
         const newTopPosition = this.initialOffset + (index * this.distance) * (1 - easeInOut * this.speed);
-
+        
+        this.checkHeight(this.$refs.model2)
 
         part.style.top = `${newTopPosition}px`; // Set new top position in pixels
 
@@ -103,8 +119,6 @@ export default {
         if (newTopPosition > maxTopPosition) {
           maxTopPosition = newTopPosition;
         }
-        
-        this.checkHeight(this.$refs.model2)
         // saves the new position for iteration.
 	      this.scrollPos = (document.body.getBoundingClientRect()).top;
       });
@@ -141,7 +155,7 @@ export default {
     this.observer = new IntersectionObserver(this.callback, { threshold: 0.3 });
     this.observer.observe(this.$refs.model2);
 
-    this.throttledScrollHandler = this.throttle(this.updatePartPositions, 50);
+    this.throttledScrollHandler = this.throttle(this.updatePartPositions, 100);
 
     if(this.$route.path.includes('devices')) {
       this.speed = 15
@@ -158,13 +172,12 @@ export default {
 <style scoped>
 .altruist-model {
   position: relative;
-  height: 620px;         /* Initial height */
-  max-width: 520px;     /* Max width */
+  height: 320px;
+  max-width: 520px;     
   width: 100%;
   top: -120px;
-  overflow: hidden;
   transform: scale(1.3);
-  transition: height 0.2s ease-out, top 0.33s ease-out;
+  transition: height 0.2s ease-out;
 }
 
 .altruist-model-part {
@@ -177,19 +190,30 @@ export default {
 }
 
 /* Adjust these positions for each part to be closer together */
-.altruist-model-part-1 { top: 20px; z-index: 11; }
+/* .altruist-model-part-1 { top: 20px; z-index: 11; }
 .altruist-model-part-2 { top: 140px; z-index: 10; }
 .altruist-model-part-3 { top: 40px; z-index: 9; }
 .altruist-model-part-4 { top: 60px; z-index: 8; }
 .altruist-model-part-5 { top: 80px; z-index: 7; }
 .altruist-model-part-6 { top: 100px; z-index: 6; }
 .altruist-model-part-7 { top: 120px; z-index: 5; }
-.altruist-model-part-8 { top: 140px; z-index: 5; }
+.altruist-model-part-8 { top: 140px; z-index: 5; } */
+
+/* assembled state */
+.altruist-model-part-1 { top: 0px; z-index: 11; }
+.altruist-model-part-2 { top: 2px; z-index: 10; }
+.altruist-model-part-3 { top: 2px; z-index: 9; }
+.altruist-model-part-4 { top: 1px; z-index: 8; }
+.altruist-model-part-5 { top: 1px; z-index: 7; }
+.altruist-model-part-6 { top: 1px; z-index: 6; }
+.altruist-model-part-7 { top: 1px; z-index: 5; }
+.altruist-model-part-8 { top: 2px; z-index: 5; }
 
 
 @media screen and (max-width: 460px) {
   .altruist-model {
     top: -90px;
+    height: 260px;
   }
 }
 
@@ -198,4 +222,5 @@ export default {
     top: -70px;
   }
 }
+
 </style>
