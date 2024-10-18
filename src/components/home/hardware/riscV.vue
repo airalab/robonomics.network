@@ -1,28 +1,28 @@
 <template>
   <div class="risc-v-model" ref="model">
     <div data-part="0" class="risc-v-model-part risc-v-model-part-1" ref="part1">
-      <g-image src="~/assets/images/hardware-2025/risc-v-model-1.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/risc-v-model-1.webp" quality="75" immediate />
     </div>
     <div data-part="1" class="risc-v-model-part risc-v-model-part-2" ref="part2">
-      <g-image src="~/assets/images/hardware-2025/risc-v-model-2.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/risc-v-model-2.webp" quality="75" immediate />
     </div>
     <div data-part="2" class="risc-v-model-part risc-v-model-part-3" ref="part3">
-      <g-image src="~/assets/images/hardware-2025/risc-v-model-3.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/risc-v-model-3.webp" quality="75" immediate />
     </div>
     <div data-part="3" class="risc-v-model-part risc-v-model-part-4" ref="part4">
-      <g-image src="~/assets/images/hardware-2025/risc-v-model-4.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/risc-v-model-4.webp" quality="75" immediate />
     </div>
     <div data-part="4" class="risc-v-model-part risc-v-model-part-5" ref="part5">
-      <g-image src="~/assets/images/hardware-2025/risc-v-model-5.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/risc-v-model-5.webp" quality="75" immediate />
     </div>
     <div data-part="5" class="risc-v-model-part risc-v-model-part-6" ref="part6">
-      <g-image src="~/assets/images/hardware-2025/risc-v-model-6.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/risc-v-model-6.webp" quality="75" immediate />
     </div>
     <div data-part="6" class="risc-v-model-part risc-v-model-part-7" ref="part7">
-      <g-image src="~/assets/images/hardware-2025/risc-v-model-7.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/risc-v-model-7.webp" quality="75" immediate />
     </div>
     <div data-part="7" class="risc-v-model-part risc-v-model-part-8" ref="part8">
-      <g-image src="~/assets/images/hardware-2025/risc-v-model-8.png" quality="75" immediate />
+      <g-image src="~/assets/images/hardware-2025/risc-v-model-8.webp" quality="75" immediate />
     </div>
   </div>
 </template>
