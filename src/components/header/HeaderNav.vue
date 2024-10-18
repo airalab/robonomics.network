@@ -27,20 +27,19 @@
     }
 
     .nav-content {
-        display: none;
-        position: fixed;
-        z-index: 1012;
-        top: var(--screen-padding-top);
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        /* padding: var(--space); */
-        padding-top: calc(var(--space)*2);
-        transform: translateX(-20px);
-        opacity: 0;
         animation: navContent 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+        background-color: var(--color-light);
+        border-bottom: 1px solid var(--color-dark);
+        display: none;
+        left: 0;
+        opacity: 0;
         overflow-y: auto;
+        position: fixed;
+        right: 0;
         text-align: left;
+        top: var(--screen-padding-top);
+        transform: translateX(-20px);
+        z-index: 1012;
     }
 
     .nav-content .navigation__layout {
