@@ -40,14 +40,15 @@ export default {
       distance: 50,      // Distance between parts
       initialOffset: 0,  // Set initial offset for assembly
       randomHeight: 150,
-      animationDelay: true
+      animationDelay: true,
+      gap: 35
     };
   },
 
   methods: {
     callback(entries) {
       entries.forEach(({ isIntersecting }) => {
-        if (isIntersecting) {
+        if (isIntersecting && !this.$route.path.includes('altruist')) {
           if(this.animationDelay) {
             setTimeout(() => {
               window.addEventListener('scroll', this.throttledScrollHandler);
@@ -59,6 +60,12 @@ export default {
 
         } else {
           window.removeEventListener('scroll', this.throttledScrollHandler);
+        }
+
+        if(isIntersecting && this.$route.path.includes('altruist')) {
+          this.disassemble()
+        } else {
+          this.assemble()
         }
       });
     },
@@ -135,12 +142,42 @@ export default {
         }
       };
     },
+
+    disassemble() {
+
+      // Sequentially apply transform one by one
+      this.parts.forEach((part, index) => {
+        const partEl = document.querySelector('.altruist-page').querySelector(`.altruist-model-part-${index + 1}`);
+        const index1 = partEl.getAttribute('data-part');
+        const translateY = this.getTranslateY(index1);
+        partEl.style.opacity = 1;
+        partEl.style.transform = `translate(0, ${translateY}px)`
+        
+      });
+    },
+    assemble() {
+      // Reset all parts to (0, 0) and rotate -90deg
+      this.parts.forEach((part, index) => {
+        const partEl = document.querySelector('.altruist-page').querySelector(`.altruist-model-part-${index + 1}`);
+        partEl.style.opacity = 0;
+        partEl.style.transform = 'translate(0, 0)';
+      });
+    },
+    getTranslateY(index) {
+      // First part stays in place, others move with a gap of 10px between each
+      if (index === '1') return 0; // First part stays at the top
+      return index * this.gap; // 10px gap between each part (each part height + margin)
+    },
   },
 
   mounted() {
     if (window.matchMedia("(max-width: 460px)").matches) {
       this.distance = 30;
       this.randomHeight = 115
+    }
+
+    if (window.matchMedia("(max-width: 390px)").matches) {
+      this.gap = 20
     }
 
     window.addEventListener('resize', () => {
@@ -153,11 +190,12 @@ export default {
     this.parts = this.$refs.model2.querySelectorAll('.altruist-model-part');
 
     this.observer = new IntersectionObserver(this.callback, { threshold: 0.3 });
+
     this.observer.observe(this.$refs.model2);
 
     this.throttledScrollHandler = this.throttle(this.updatePartPositions, 100);
 
-    if(this.$route.path.includes('devices')) {
+    if(this.$route.path.includes('devices') && !this.$route.path.includes('altruist')) {
       this.speed = 15
     }
   },
@@ -180,13 +218,21 @@ export default {
   transition: height 0.2s ease-out;
 }
 
+.altruist-page.altruist-model {
+  top: 50%;
+  left: var(--space);
+  left: var(--space);
+  height: 435px;
+  transform: scale(1.3) rotate(-90deg) translate(0%, -18%);
+}
+
 .altruist-model-part {
   position: absolute;
   left: 0;
   top: 0;
   max-width: 520px;
-  height: auto;          /* Allow height to be auto for images */
-  transition: top 0.2s ease; /* Smooth transition for top property */
+  height: auto;    /* Allow height to be auto for images */
+  transition: top 0.2s ease, transform 0.7s ease, opacity 0.5s ease-in-out; /* Smooth transition for top property */
 }
 
 /* Adjust these positions for each part to be closer together */
@@ -210,6 +256,21 @@ export default {
 .altruist-model-part-8 { top: 2px; z-index: 5; }
 
 
+@media screen and (max-width: 770px) {
+  .altruist-page.altruist-model {
+    height: 380px;
+    transform: scale(1.0) rotate(-90deg) translate(-2%, -66%);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .altruist-page.altruist-model {
+    height: 240px;
+    transform: scale(0.8) rotate(-90deg) translate(-7%, -102%);
+  }
+}
+
+
 @media screen and (max-width: 460px) {
   .altruist-model {
     top: -90px;
@@ -220,6 +281,11 @@ export default {
 @media screen and (max-width: 380px) {
   .altruist-model {
     top: -70px;
+  }
+
+  .altruist-page.altruist-model {
+    height: 220px;
+    transform: scale(0.8) rotate(-90deg) translate(-7%, -64%);
   }
 }
 
