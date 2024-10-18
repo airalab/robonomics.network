@@ -26,7 +26,6 @@
         </h2>
         <Products/>
       </div>
-      <Member/>
     </section>
 
 
@@ -39,7 +38,6 @@ export default {
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     Products: () => import("~/components/Products.vue"),
-    Member: () => import("~/components/home/homeMember.vue"),
   },
 
 
