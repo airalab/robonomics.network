@@ -99,10 +99,13 @@ export default {
   overflow: hidden;
 }
 
-
 .home-product__model .with-models {
   min-height: 480px;
   height: 100%;
+}
+
+.with-models-2 .home-product__model {
+  overflow: unset;
 }
 
 .home-product__text {
