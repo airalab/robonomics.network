@@ -20,8 +20,6 @@
         <Products/>
       </div>
 
-      <Member/>
-
       <div class="layout"> 
         <h2 class="title-lined"><span>Features of Each Device</span></h2>
         <div class="home__advantages grid-3">
@@ -58,7 +56,6 @@
 <script>
   import MetaInfo from '~/components/MetaInfo.vue'
   import Products from '~/components/Products.vue'
-  import Member from '~/components/home/homeMember.vue'
   import SvgBanner from '~/components/svg/BannerIndex.vue'
 
   export default {
@@ -66,7 +63,6 @@
     components: {
       MetaInfo,
       Products,
-      Member,
       SvgBanner
     },
 
@@ -96,8 +92,6 @@
         if(window.scrollY <= 20) {
           this.bannershift = 0;
         }
-
-        console.log('this.bannershift', this.bannershift)
       },
     },
 
@@ -175,9 +169,6 @@
   }
   /* - banner */
 
-  .home__advantages {
-    margin-bottom: var(--space);
-  }
 
   .home__advantages-title {
     padding-top: 160px;
