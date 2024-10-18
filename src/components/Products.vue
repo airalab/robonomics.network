@@ -5,7 +5,7 @@
       :class="product.class"
       :product="product"
       >
-        <AltruistSensor v-if="product.id === 0" />
+        <AltruistSensor v-if="product.id === 0" :class="specialCl" />
         <RiskV v-if="product.id === 1" />
         <RiskV3D v-if="product.id === 1" />
         <g-image
@@ -26,6 +26,14 @@ export default {
     RiskV: () => import ('~/components/3dmodels/riscV.vue'),
     RiskV3D: () => import ('~/components/3dmodels/riscV3D.vue'),
     AltruistSensor: () => import ('~/components/3dmodels/altruistSensor.vue')
+  },
+  
+
+  props: {
+    specialCl: {
+      type: String,
+      default: ''
+    }
   },
 
   data() {
@@ -62,7 +70,7 @@ export default {
           text: 'A safe that unlocks with a smart contract based on user-defined conditions.',
           cases: 'View logs of the safe’s openings and closings. Program the safe to suit your needs, such as granting access to trusted accounts after an extended period of inactivity.'
         },
-      ]
+      ],
     }
   },
 

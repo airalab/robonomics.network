@@ -17,7 +17,7 @@
 
       <h2 class="title-lined"><span>Hardware for cyber punks 2025 line up</span></h2>
       <div class="layout layout__content">
-        <Products/>
+        <Products specialCl="altruist-page"/>
       </div>
 
       <div class="layout"> 

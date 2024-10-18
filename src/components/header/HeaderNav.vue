@@ -285,11 +285,8 @@
                 const nav = document.querySelector('div.sidetext');
                 let clickInside = nav.contains(e.target)
 
-                console.log('click')
-
                 if(!clickInside && nav.classList.contains('open')) {
                     nav.classList.remove('open')
-                    console.log('click2')
                 }
             })
 
