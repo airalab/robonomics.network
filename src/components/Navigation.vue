@@ -46,6 +46,10 @@
     text-decoration: underline;
   }
 
+  .navigation a:hover {
+    color: var(--color-link);
+  }
+
   ul {
     position: relative;
     margin: 0;
@@ -54,6 +58,7 @@
   ul li {
     padding-left: var(--space);
     margin-bottom: calc(var(--space) * 0.3);
+    break-inside: avoid-column;
   }
 
   ul:before {
