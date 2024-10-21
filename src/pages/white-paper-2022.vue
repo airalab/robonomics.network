@@ -26,7 +26,6 @@
         <div class="astronaut">
           <div id="parallax-astronaut">
             <div data-depth="0.2" class="parallax-astronaut__wrapper-logo">
-              <!-- <g-image  src="~/assets/images/white-paper-2022/astronaut-logo.svg"  alt="astronaut-logo"/> -->
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.45 100.44" width="100" height="100"><g id="Layer_2" data-name="Layer 2"><g><polygon class="cls-1 triangle-1" points="55.1 35.84 55.1 67.2 80.03 80.93 55.1 35.84"/><polygon class="cls-2 triangle-2" points="55.1 67.2 30.16 80.93 80.03 80.93 55.1 67.2"/><polygon class="cls-3 triangle-3" points="55.1 35.84 30.16 80.93 55.14 67.2 55.1 35.84"/><polygon class="cls-4" points="55.1 3.86 3.44 96.58 106.76 96.58 55.1 3.86"/><ellipse class="cls-5" cx="3.69" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-5" cx="106.76" cy="96.58" rx="3.69" ry="3.86"/><ellipse class="cls-5" cx="55.1" cy="3.86" rx="3.69" ry="3.86"/></g></g>
               </svg>
             </div>
@@ -352,7 +351,6 @@ export default {
   }
 
   .chapter__title {
-    /* white-space: nowrap; */
     text-align: left;
   }
 
@@ -360,7 +358,6 @@ export default {
   .chapter__subtitle {
     text-transform: none;
     text-align: left;
-    /* white-space: nowrap; */
   }
 
   .chapter__list {
@@ -402,11 +399,6 @@ export default {
     align-items: center;
     overflow: hidden;
    }
-
-   /* .chapter__sub-list {
-    list-style: disc;
-    margin-left: 0;
-   } */
 
   .chapter__item {
     margin-bottom: 0;
@@ -580,13 +572,9 @@ export default {
 
   .small-robot__wrapper {
     position: absolute;
-    /* left: 20%; */
     left: calc(50% + 300px);
-    /* bottom: calc(14% - 6px); */
     bottom: 94px;
     z-index: 15;
-    /* transform: translateX(-25vw); */
-    /* animation: robotMove 25s infinite linear 1.5s; */
   }
 
   @keyframes robotMove {
@@ -630,9 +618,6 @@ export default {
     position: absolute;
     bottom: calc(10% - 12px);
     z-index: 15;
-    /* transform: translateX(-25vw); */
-    /* animation: robotMove 25s infinite linear 1.5s;
-    -webkit-animation: robotMove 25s infinite linear 1.5s; */
   }
 
   .small-robot-antenna {
@@ -640,9 +625,6 @@ export default {
     left: calc(20% + 20px);
     bottom: calc(10% + 61px);
     z-index: 16;
-    /* transform: translateX(-25vw);
-    animation: robotMove 25s infinite linear 1.5s;
-    -webkit-animation: robotMove 25s infinite linear 1.5s; */
   }
 
   .small-robot-antenna .circle {
@@ -667,11 +649,6 @@ export default {
     animation: FadeOut 2s infinite 1.2s linear;
     -webkit-animation: FadeOut 2s infinite 1.2s linear;
   }
-
-  /* .small-robot-wheel {
-    animation: spin 1s infinite linear;
-  } */
-
   .logos {
     position: absolute;
     left: 58%;
