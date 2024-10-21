@@ -12,9 +12,8 @@
     </section>
 
     <div class="layout layout__content">
-      <Products />
+      <Products specialCl="altruist-page altruist-page--devices" />
     </div>
-
   </layout>
 </template>
 
