@@ -1,16 +1,10 @@
 <template>
-  <layout>
+  <layout title="Read books">
 
     <MetaInfo
       pageTitle="Books"
       pageImage="/website_cover_books.png"
     />
-
-
-    <div class="title-with-bg">
-      <h1><span>{{ $t('Read books') }}</span></h1>
-    </div>
-
 
     <section class="layout layout__content e-books">
   

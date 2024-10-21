@@ -12,7 +12,7 @@
           v-if="product.id === 2 || product.id === 3" 
           class="product-image" 
           :src="require('!!assets-loader!~/assets/images/hardware-2025/' + productimg(product.id))"
-          :alt="product.title"
+          :alt="'Picture for the product: ' + product.title"
         />
       </Product-item>
 

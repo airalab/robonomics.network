@@ -1,6 +1,6 @@
 <template>
   
-  <layout :withGap="false">
+  <layout title="Robonomics merch" >
 
     <MetaInfo
       pageTitle = "Robonomics merch"
@@ -8,33 +8,17 @@
       :pageImage = "'/website_cover_merch.png'"
     />
 
-    <section class="merch__banner section__blue blue-banner">
-      <div class="merch__main-title title-with-bg">
-        <h1><span>{{ $t('Robonomics merch') }}</span></h1>
-      </div>
+    <section class="layout">
+      <g-image class="bannerimg" aria-hidden="true" src="~/assets/images/merch/banner.webp"/>
 
-      <div class="blue-banner-layout layout layout__content">
-          <g-image class="merch__banner-img"  quality="75" aria-hidden="true" alt=""  src="~/assets/images/merch/merch-banner-girls.png"/>
-        <div class="merch-banner-content">
-          <p class="blue-banner__text">{{ $t('Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.') }} </p>
-          <g-image quality="75" aria-hidden="true" alt="" src="@/assets/images/logos-and-assets/logo-banner-text.svg" />
-        </div>
-      </div>
+      <section class="grid-3">
+        <g-link class="oldy" v-for="store in stores" :key="store.id" :to="store.link" :data-geo="store.locale">
+          <g-image :aria-label="store.label" :src="require(`!!assets-loader!@/assets/images/merch/${store.img}`)"/>
+        </g-link>
+      </section>
+
+      <p class="layout__content">{{ $t('Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.') }}</p>
     </section>
-
-    <section class="merch-stores">
-      <div class="layout layout__mid grid-3">
-        <ShopItem
-          v-for="store in stores" 
-          :key="store.id" 
-          :link="store.link"
-          :image="store.img"
-          :locale="store.locale"
-        />
-      </div>
-    </section>
-
-
 
   </layout>
 
@@ -45,8 +29,7 @@
 export default {
 
   components: {
-    MetaInfo: () => import("~/components/MetaInfo.vue"),
-    ShopItem: () => import("~/components/shop/ShopItem.vue"),
+    MetaInfo: () => import("~/components/MetaInfo.vue")
   },
 
   data() {
@@ -55,20 +38,23 @@ export default {
         {
           id: 0,
           link: 'https://robonomics.threadless.com/',
-          img: 'threadless.png',
-          locale: 'us'
+          img: 'threadless.webp',
+          locale: 'us',
+          label: 'Threadless Marketplace (USA)'
         },
         {
           id: 1,
           link: 'https://www.redbubble.com/people/roboxart/shop?artistUserName=roboxart&iaCode=u-clothing',
-          img: 'redbubble.png',
-          locale: 'eu'
+          img: 'redbubble.webp',
+          locale: 'eu',
+          label: 'Redbubble Marketplace (Europe)'
         },
         {
           id: 2,
           link: 'https://robonomics.printdirect.ru/',
-          img: 'printdirect.png',
-          locale: 'ru'
+          img: 'printdirect.webp',
+          locale: 'ru',
+          label: 'Printdirect Marketplace (Russia)'
         }
       ]
     }
@@ -77,27 +63,37 @@ export default {
 </script>
 
 <style scoped>
-
-.blue-banner-layout {
-  padding-bottom: 0;
-}
-.merch__banner-img {
-  height: 104%;
-}
-
-.merch-stores {
-  padding-bottom: calc( var(--space) * 3);
-}
-
-@media screen and (max-width: 780px) {
-
-  .blue-banner-layout {
-    grid-template-columns: 1fr;
+  .layout {
+    text-align: center;
+    font-variation-settings: var(--font-flex-medium);
+    margin-bottom: var(--space-section);
   }
 
-  .merch-banner-content {
-    order: -1;
+  .bannerimg {
+    display: inline-block;
+    max-width: 300px;
   }
-}
 
+  .grid-3 {
+    margin: var(--space) 0;
+    gap: calc(var(--space) * 2);
+  }
+
+  .oldy {
+    --oldy-padding: calc(var(--space) * 2);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .oldy img {
+    display: block;
+    max-height: 200px;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .oldy:before {
+    content: attr(data-geo);
+  }
 </style>
