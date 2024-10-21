@@ -17,46 +17,41 @@
 
       <h2 class="title-lined"><span>Hardware for cyber punks 2025 line up</span></h2>
       <div class="layout layout__content">
-        <Products specialCl="altruist-page"/>
+        <Products specialCl="altruist-page" />
       </div>
 
-      <div class="layout">
+      <section class="layout section">
 
         <h2 class="title-lined"><span>Features of Each Device</span></h2>
 
-        <section class="grid-3">
-
+        <div class="grid-3">
           <div>
-            <h3 class="align-left">Pure Open Source</h3>
+            <g-image src="~/assets/images/lined-scalable.svg" immediate aria-hidden="true" />
+            <h3 class="align-left m-t-0">Pure Open Source</h3>
             <p>Every device is fully open: you can find the source code, circuit schematics, and instructions for self-updating without the need to connect to any cloud servers. The devices are designed to ensure you can easily understand their structure and onboard components.</p>
           </div>
 
           <div>
-            <h3 class="align-left">Local and Global Availability</h3>
+            <g-image src="~/assets/images/lined-wave.svg" immediate aria-hidden="true" />
+            <h3 class="align-left m-t-0">Local and Global Availability</h3>
             <p>The combination of p2p communication and web3 cloud guarantees that your devices will always be accessible for interaction. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are.</p>
           </div>
 
           <div>
-            <h3 class="align-left">Privacy from the First Use</h3>
+            <g-image src="~/assets/images/lined-key.svg" immediate aria-hidden="true" />
+            <h3 class="align-left m-t-0">Privacy from the First Use</h3>
             <p>By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.</p>
           </div>
-
-        </section>
-
-      </div>
-
-      <div class="home__timeline">
-        <div class="home__timeline-img">
-          <g-image src="~/assets/images/home__hands.webp" alt="" aria-label="false" immediate />
         </div>
-        <div class="layout layout__content">
-          <h2>Interested in how the team reached this stage?</h2>
+
+        <div class="timeline align-center">
+          <g-image src="~/assets/images/home__hands.webp" aria-hidden="true" immediate />
+          <h3 class="m-t-0">Interested in how the team reached this stage?</h3>
           <g-link to="/timeline/" class="highlight">The Robonomics Timeline</g-link>
-          <span>can guide you through our journey</span>
+          <p>can guide you through our journey</p>
         </div>
-      </div>
+      </section>
 
-    
   </layout>
 </template>
 
@@ -176,83 +171,11 @@
   }
   /* - banner */
 
-
-  .home__advantages-title {
-    padding-top: 160px;
-    max-width: 204px;
-    min-height: 240px;
-    text-align: left;
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  .home__advantages-title--scalable {
-    background-image: url("data:image/svg+xml,%3Csvg width='102' height='8' viewBox='0 0 102 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M101.854 4.35355C102.049 4.15829 102.049 3.84171 101.854 3.64645L98.6716 0.464466C98.4763 0.269204 98.1597 0.269204 97.9645 0.464466C97.7692 0.659728 97.7692 0.976311 97.9645 1.17157L100.793 4L97.9645 6.82843C97.7692 7.02369 97.7692 7.34027 97.9645 7.53553C98.1597 7.7308 98.4763 7.7308 98.6716 7.53553L101.854 4.35355ZM1 4.5H101.5V3.5H1V4.5Z' fill='%233F3F3F'/%3E%3Cpath d='M0.646446 4.35355C0.451187 4.15829 0.451187 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53554 0.464466C4.7308 0.659728 4.7308 0.976311 4.53554 1.17157L1.70711 4L4.53554 6.82843C4.7308 7.02369 4.7308 7.34027 4.53554 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM101.5 4.5H1V3.5H101.5V4.5Z' fill='%233F3F3F'/%3E%3C/svg%3E%0A");
-  }
-
-
-  .home__advantages-title--antiscam {
-    background-image: url("data:image/svg+xml,%3Csvg width='102' height='14' viewBox='0 0 102 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7C14.3689 -1 17.2751 -1 9.71882 7C2.16251 15 5.06878 15 18.4376 7C31.8065 -1 34.7128 -1 27.1565 7C19.6001 15 22.5064 15 35.8753 7C49.2441 -1 52.1504 -1 44.5941 7C37.0378 15 39.9441 15 53.3129 7C66.6818 -1 69.588 -1 62.0317 7C54.4754 15 57.3817 15 70.7505 7C84.1194 -1 87.0257 -1 79.4694 7C71.9131 15 74.8193 15 88.1882 7C101.557 -1 104.463 -1 96.907 7' stroke='%233F3F3F'/%3E%3C/svg%3E%0A");
-  }
-
-  .home__advantages-title--privacy {
-    background-size: 109px 15px;
-    background-image: url("../assets/images/hardware-2025/privacy.png");
-  }
-
-  .home__timeline {
-    margin-top: calc(var(--space) * 3);
-  }
-
-  .home__timeline .layout {
-    margin-top: calc(var(--space) * 0.8);
-  }
-
-  .home__timeline-img {
-    position: relative;
-  }
-
-  .home__timeline-img img {
+  .timeline img {
     display: block;
-    max-width: 720px;
+    max-height: 215px;
+    object-fit: contain;
     width: 100%;
-    margin: 0 auto;
+    margin: calc(var(--space)*2) auto var(--space);
   }
-
-  .home__timeline span {
-    display: block;
-    font-size: calc(var(--base-font-size) * 0.95);
-    font-variation-settings: 'wght' 400, 'wdth' 100;
-    text-align: center;
-  }
-
-  @media screen and (max-width: 990px) {
-
-    .home__advantages-title {
-      padding-top: 0;
-      padding-right: 100px;
-      max-width: unset;
-      min-height: unset;
-      background-position: right;
-    }
-  }
-
-
-  @media screen and (max-width: 520px) {
-
-    .home__timeline-img  {
-      height: 124px;
-      overflow: hidden
-    }
-    
-    .home__timeline-img img {
-      width: 446px;
-      height: 124px;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
 </style>

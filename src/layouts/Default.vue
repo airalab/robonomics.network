@@ -11,6 +11,8 @@
 
         <Header :translated="translated" />
 
+        <h1 v-if="title" v-html="title" class="pagetitle" />
+
         <slot/>
 
         <ClientOnly>
@@ -28,6 +30,16 @@
 
 
 <style scoped>
+
+  .pagetitle {
+    background-color: var(--color-dark);
+    display: inline-block;
+    font-variation-settings: var(--font-flex-bold);
+    color: var(--color-light);
+    font-size: calc(var(--base-font-size) * 1.4);
+    padding: 0.3rem 1rem;
+    margin: 0 0 calc(var(--space) * 2);
+  }
 
   .fade-enter-active,
   .fade-leave-active {
@@ -102,13 +114,12 @@ export default {
   },
 
   props: {
-    withGap: {
-      type: Boolean,
-      default: true
-    },
     translated: {
       type: Boolean,
       default: false
+    },
+    title: {
+      type: String
     }
   },
 

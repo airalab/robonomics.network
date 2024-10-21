@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout title="Robonomics hardware">
 
     <MetaInfo
       pageTitle = "Smart devices from Robonomics"
@@ -7,27 +7,13 @@
       :pageImage = "'/website_cover_devices.png'"
     />
 
-    <div class="title-with-bg">
-        <h1><span>{{ $t('Robonomics hardware') }}</span></h1>
-      </div>
-
-    <section class="devices-banner"></section>
-
     <section class="devices-intro layout layout__content">
-      <h2 class="devices-intro__title"> Begin your adventure in the world of cyber punks</h2>
       <p><b>Meet smart devices & futuristic hardware from an autonomous team with extensive expertise in robotics, blockchain, and IoT</b>.</p>
     </section>
 
-    <!-- products -->
-    <section class="products">
-      <div class="layout layout__content">
-        <h2 class="devices__title">
-          <span>Hardware for cyber punks 2025 line up</span>
-        </h2>
-        <Products/>
-      </div>
-    </section>
-
+    <div class="layout layout__content">
+      <Products />
+    </div>
 
   </layout>
 </template>
@@ -54,17 +40,6 @@ export default {
     text-align: left;
   }
 
-  .devices-banner {
-    padding: 0 0 var(--space);
-    margin-bottom: var(--space);
-    min-height: 620px;
-    height: 100%;
-    background-image: url('../../assets/images/banner-new-desktop.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   .devices-intro {
     margin-top: 0;
     margin-bottom: calc(var(--space) * 3);
@@ -83,10 +58,6 @@ export default {
   }
 
   @media screen and (max-width: 520px) {
-    .devices-banner {
-      min-height: 300px;
-      background-image: url('../../assets/images/banner-new-mobile.png');
-    }
 
     .title-with-bg  {
       padding-top: 10px;
