@@ -490,7 +490,7 @@ export default {
   .parallax-astronaut__wrapper-logo {
     position: absolute;
     top: 100px !important;
-    left: 5px  !important;
+    left: 166px !important;
     z-index: 30;
   }
 
@@ -1251,6 +1251,11 @@ export default {
         height: 370px;
         width: 380px;
         overflow: hidden;
+      }
+
+      .parallax-astronaut__wrapper-logo {
+        top: 85px !important;
+        left: 150px !important;
       }
 
       .logos {
