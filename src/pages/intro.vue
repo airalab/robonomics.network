@@ -23,7 +23,7 @@
         </div>
       </section>
 
-      <section class="section__solid section__lightblue">
+      <section class="section__solid section section__lightblue">
         <div class="layout layout__text grid-2 middle animate-inside" v-in-viewport.once>
           <g-image aria-hidden="true" alt="" quality="75" src="~/assets/images/robots-handshaking.png" />
           <div class="hyphens text-big">
@@ -47,7 +47,7 @@
 
       <section class="section">
 
-        <section class="layout layout__content">
+        <section class="layout section layout__content">
           <h2 class="animate" v-in-viewport.once>{{$t('Robonomics tools')}}</h2>
           <div class="introTools grid-4 animate-inside" v-in-viewport.once>
             <div>
@@ -69,7 +69,7 @@
           </div>
         </section>
 
-        <div class="layout layout__text hyphens">
+        <div class="layout section layout__text hyphens">
           <p class="animate" v-in-viewport.once>{{$t('Robonomics contains a complete set of tools for developing IoT applications, both on the robotics and the user interface sides. Communication between the user and device happens using the most successful technologies from the Web3 world – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure applications for Smart Cities and Industry 4.0.')}}</p>
           <div class="introLogos animate-inside-fast" v-in-viewport.once>
             <g-image quality="75" alt="Rust" src="~/assets/images/logos/rust.png" />
@@ -90,8 +90,8 @@
 
        <section class="section">
 
-          <section class="layout layout__content">
-            <section class="animate-inside" v-in-viewport.once>
+          <section class="layout section layout__content">
+            <section class="animate-inside section" v-in-viewport.once>
               <h2>{{$t('Robonomics Connectivity')}}</h2>
               <p class="layout__text" v-html="$t('For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS).')" />
             </section>
@@ -216,7 +216,7 @@
           <p>{{$t('In the technical architecture, IoT digital twins provide the visibility and monitoring of things and related events (e.g., using IoT devices to automatically capture the origin of a product), and blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events')}} <i>[{{$t('from Gartner research')}}]</i></p>
           <p>{{$t('Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.')}}</p>
         </div>
-        <section class="layout layout__content img" aria-hidden="true">
+        <section class="section layout layout__content img" aria-hidden="true">
             <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/digitalTwins.png"/>
         </section>
       </section>
@@ -238,6 +238,10 @@
 
   @media screen and (max-width: 350px) {
     h1 { font-size: calc(var(--base-font-size) * 1) }
+  }
+
+  h2 {
+    margin-bottom: var(--space);
   }
 
 
