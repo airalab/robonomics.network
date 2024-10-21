@@ -149,8 +149,6 @@ h5 {
   z-index: 900;
 }
 
-h2:first-child, h3:first-child, h4:first-child, h5:first-child { margin-top: 0 }
-h2:last-child, h3:last-child, h4:last-child, h5:last-child { margin-bottom: 0 }
 
 .subtitle {
   font-size: 90%;
@@ -206,16 +204,6 @@ ol {
 
 ol li {
   margin-bottom: .6rem;
-}
-
-li, p {
-  font-size: calc(var(--base-font-size) * 0.95);
-  font-variation-settings: 'wght' 400, 'wdth' 100;
-}
-
-b {
-  font-size: calc(var(--base-font-size) * 0.95);
-  font-variation-settings: 'wght' 700, 'wdth' 100;
 }
 
 a:not(.button), .link:not(.button) {
@@ -432,4 +420,8 @@ p:last-child, ul:last-child, ol:last-child, blockquote:last-child, table:last-ch
   font-variation-settings: var(--font-flex-bold);
   line-height: 1;
   padding: 0.2rem 0;
+}
+
+.linereduce {
+  line-height: 1;
 }

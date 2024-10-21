@@ -17,7 +17,9 @@
             </span>
         </div>
 
-        <g-link v-if="status === 'ready'" class="highlight" to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/">How to get membership pass</g-link>
+        <div class="linereduce">
+          <g-link v-if="status === 'ready'" class="highlight" to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/">How to get membership pass</g-link>
+        </div>
       </div>
 
     </div>
@@ -81,7 +83,7 @@ div[class^='product__']:not(.product__model) {
 .product__header {
   display: flex;
   align-items: flex-start;
-  margin-bottom: calc(var(--space) * 1.5);
+  margin-bottom: var(--space);
 }
 
 .product__header h3 {

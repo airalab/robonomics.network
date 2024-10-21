@@ -1,15 +1,11 @@
 <template>
-  <layout>
+  <layout title="Timeline since 2015">
 
     <MetaInfo
         pageTitle = "Timeline of infrastructure & tech development"
         pageDescription = "The Robonomics project started on 2015. See what was start idea and our checkpoints over the years. This is good brief introduction for newcomers and summary for pioneers."
         pageImage = "/website_cover_timeline.jpg"
       />
-
-    <div class="timeline__main-title title-with-bg">
-      <h1><span>{{ $t('Timeline since 2015') }}</span></h1>
-    </div>
 
     <section class="layout layout__content">
       <TimelineItem 
