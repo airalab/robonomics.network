@@ -3,6 +3,12 @@
     - link: 'https://twitter.com/AIRA_Robonomics'
       text: 'Follow us'
 
+- title: 'Github'
+  img: 'contacts__github.png'
+  options:
+    - link: 'https://github.com/airalab'
+      text: 'Github'
+
 
 - title: 'Youtube'
   img: 'contacts-youtube-square.svg'

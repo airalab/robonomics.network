@@ -1,6 +1,6 @@
-.section, section {
-  margin-top: calc(var(--space)*2);
-  margin-bottom: calc(var(--space)*2);
+.section {
+  margin-top: calc(var(--space) * 3);
+  margin-bottom: calc(var(--space) * 3);
 }
 
 .section-wide {
@@ -130,8 +130,9 @@
 
 
 .layout__content {
-	max-width: var(--content-width);
-	text-align: center;
+	/* max-width: var(--content-width); */
+	max-width: 980px;
+	/* text-align: center; */
 }
 
 .layout__text {
@@ -141,7 +142,6 @@
 .layout__text_small {
 	max-width: calc(var(--text-width) * 0.6);
 }
-
 
 .layout__mid {
 	max-width: calc(var(--mid-width) + (var(--space) * 2));

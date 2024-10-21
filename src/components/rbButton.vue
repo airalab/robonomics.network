@@ -44,7 +44,7 @@ export default {
       type: String,
       default: 'blue',
       validator: function (value) {
-        return ['blue', 'green', 'pale-blue', 'vivid-blue', 'violet', 'white', 'black'].indexOf(value) !== -1;
+        return ['blue', 'green', 'pale-blue', 'vivid-blue', 'violet', 'white', 'black', 'accent-green'].indexOf(value) !== -1;
       }
     },
 
@@ -95,6 +95,7 @@ export default {
     --b-color-shadow: var(--rb-color-dark);
     --b-color-borderwidth: 1px;
     --b-color-padding: 1rem;
+    --b-color-hover: var(--rb-color-light);
 
     align-content: center;
     appearance: none;
@@ -105,8 +106,9 @@ export default {
     color: var(--b-color-text);
     cursor: pointer;
     display: inline-flex;
+    font-family: var(--font-family);
     font-size: var(--base-font-size);
-    font-variation-settings: var(--font-flex-medium);
+    font-variation-settings: var(--font-flex-bold);
     font-weight: 500;
     gap: var(--b-color-padding);
     justify-content: center;
@@ -121,7 +123,7 @@ export default {
   .rb-button:hover {
     background-color: var(--b-color-background-hover);
     border-color: var(--b-color-background-hover);
-    color: var(--b-color-text);
+    color: var(--b-color-hover);
   }
 
   .rb-button-3d {
@@ -168,5 +170,12 @@ export default {
 
   .rb-button-black {
     --b-color-background: var(--rb-color-dark);
+  }
+
+  .rb-button-accent-green{
+    --b-color-background: var(--rb-color-green-accent);
+    --b-color-background-hover: var(--rb-color-violet-dark);
+    --b-color-text: var(--rb-color-dark);
+    font-weight: 900;
   }
 </style>

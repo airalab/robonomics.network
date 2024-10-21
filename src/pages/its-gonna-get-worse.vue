@@ -31,7 +31,7 @@
 
     <section class="iggw__main layout">
 
-      <div class="iggw__why-human grid-2 layout__mid">
+      <div class="iggw__why-human grid-2 layout__content">
         <div class="iggw__wrapper">
           <h2 class="iggw__title">{{ $t('Why human?') }}</h2>
           <p class="iggw__text">{{ $t("Have you ever wondered why, in the process of evolution on Earth, the human species prevailed instead of, for example, fungi? Even now, it's challenging to provide a definitive answer to this question. The success of Homo sapiens is often attributed to successful cooperation, but then why not bees or ants? Our survival is also owed to a crucial characteristic—the autonomy of an individual within the population. In other words, the ability not to unquestionably submit to the queen bee. Ultimately, the group where each member has the right to be independent prevails.") }}</p>

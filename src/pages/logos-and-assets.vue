@@ -14,7 +14,7 @@
         <h1><span>{{ $t('logos and assets') }}</span></h1>
       </div>
 
-      <div class="layout layout__text text-center container">
+      <div class="layout layout__content text-center container">
         <g-image class="logos-and-assets__banner-logo" quality="75" src="@/assets/images/logos-and-assets/logo-banner.svg" alt="robonomics logo"/>
         <p class="logos-and-assets__banner-text">{{ $t("Download the Robonomics logos here. We've got two options for your") }} <u>{{ $t('basic needs') }}</u> {{$t('and one designed for')}} <u>{{$t('XRT')}}</u> {{$t('token. Additionally, discover the optimal')}} <u>{{ $t('color palette') }}</u> {{$t('for the distinguished Robonomics brand')}}.</p>
         <g-image quality="75" aria-hidden="true" alt="" src="@/assets/images/logos-and-assets/logo-banner-text.svg" />

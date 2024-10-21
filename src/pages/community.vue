@@ -6,7 +6,7 @@
                 <p>If you are not automaticly redirected please follow links below.</p>
             </section>
 
-            <section class="layout layout__text">
+            <section class="layout layout__content">
                 <Card link="/xrt/" image="/website_cover_token.jpg" :imageRound="false" orientation="vertical" imageSize="block">
                     <h3>{{$t('Robonomics token')}}, XRT</h3>
                 </Card>

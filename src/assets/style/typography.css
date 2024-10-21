@@ -30,41 +30,71 @@ body {
   line-height: 1.5;
 }
 
-h1 { font-size: calc(var(--base-font-size) * 1.8) }
-h2 { font-size: calc(var(--base-font-size) * 1.4) }
-h3 { font-size: calc(var(--base-font-size) * 1.2) }
-h4 { font-size: calc(var(--base-font-size) * 1.1) }
-h5 { font-size: calc(var(--base-font-size) * 0.8) }
-
-h1, h2, h3, h4, h5 {
-  letter-spacing: 0.5px;
-  margin-top: calc(var(--space)*2);
-  text-align: center;
-  transition: color .6s;
-}
-
-h1 {
+h1, h2, h3, h4 {
   font-variation-settings: var(--font-flex-bold);
-  line-height: 1.5;
-  margin-bottom: var(--space);
-  padding-top: calc(var(--space) * 2);
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  margin-bottom: var(--space-text);
+  margin-top: calc(var(--space-text) * 2);
+  text-align: center;
   text-transform: uppercase;
 }
 
-h2, h3, h4, h5 {
-  font-variation-settings: var(--font-flex-medium);
-  line-height: 1.2;
-  margin-bottom: var(--space-text);
+h1 {
+  font-size: calc(var(--base-font-size) * 1.7);
 }
+
+h2 {
+  font-size: calc(var(--base-font-size) * 1.5);
+}
+
+h3 {
+  font-size: calc(var(--base-font-size) * 1.2);
+}
+
+h4 {
+  font-size: calc(var(--base-font-size) * .95);
+}
+
+h5 {
+  font-size: calc(var(--base-font-size) * 1);
+  font-variation-settings: var(--font-flex-bold);
+}
+
+/* + Title with line throw */
+
+.title-lined {
+  position: relative;
+}
+
+.title-lined:before {
+  content:"";
+  height: 1px;
+  background-color: var(--color-dark);
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  right: 0;
+}
+
+.title-lined span {
+  display: inline-block;
+  background-color: var(--body-bg);
+  position: relative;
+  z-index: 1;
+  padding: 0 var(--space);
+}
+
+/* - Title with line throw */
 
 .title-with-bg {
   background-color: var(--color-dark);
   display: inline-block;
-  left: calc(var(--screen-padding-left) * -1);
+  left: calc(var(--screen-padding-left) * -0.5);
   margin-top: 0;
   max-width: 1040px;
   overflow: hidden;
-  padding: 0.3rem 1rem 0.3rem var(--screen-padding-left);
+  padding: 0.3rem 1rem 0.3rem 4.3rem;
   position: relative;
   transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
   width: fit-content;
@@ -74,7 +104,6 @@ h2, h3, h4, h5 {
 .title-with-bg h1 {
   display: inline;
   font-size: calc(var(--base-font-size) * 1.2);
-  font-variation-settings: var(--font-flex-medium);
   margin: 0;
   padding: 0;
   text-align: left;
@@ -99,8 +128,25 @@ h2, h3, h4, h5 {
     display: block;
     inset: 0;
     text-align: center;
+    padding: 0.3rem 1rem 0.3rem var(--screen-padding-left);
     width: 100%;
   }
+}
+
+.turned-text {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  display: block;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--rb-color-green-accent);
+  transform: rotate(-90deg) translate(-100%, 0);
+  transform-origin: 0 0;
+  white-space: nowrap;
+  text-transform: uppercase;
+  z-index: 900;
 }
 
 h2:first-child, h3:first-child, h4:first-child, h5:first-child { margin-top: 0 }
@@ -162,6 +208,15 @@ ol li {
   margin-bottom: .6rem;
 }
 
+li, p {
+  font-size: calc(var(--base-font-size) * 0.95);
+  font-variation-settings: 'wght' 400, 'wdth' 100;
+}
+
+b {
+  font-size: calc(var(--base-font-size) * 0.95);
+  font-variation-settings: 'wght' 700, 'wdth' 100;
+}
 
 a:not(.button), .link:not(.button) {
   color: var(--color-link);
@@ -176,6 +231,11 @@ a:not(.button):hover, .link:not(.button):hover {
 a:not(.button).dashed, .link:not(.button).dashed {
   text-decoration: none;
   border-bottom: 1px dashed currentColor
+}
+
+a.highlight {
+  border-bottom: 0.5px solid currentColor;
+  font-variation-settings: var(--font-flex-bold);
 }
 
 
@@ -322,9 +382,9 @@ p:last-child, ul:last-child, ol:last-child, blockquote:last-child, table:last-ch
   margin-bottom: 0;
 }
 
-li:not(:last-child) {
+/* li:not(:last-child) {
   margin-bottom: var(--space);
-}
+} */
 
 .text-col-2, .text-col-3 {
   column-count: 2;
@@ -353,7 +413,6 @@ li:not(:last-child) {
   break-inside: avoid-column;
 }
 
-
 /* ambassador program */
 .label-red {
   display: inline-block;
@@ -364,4 +423,13 @@ li:not(:last-child) {
 
 .underline {
   text-decoration: underline;
+}
+
+
+.highlight-solid-green {
+  background-color: var(--rb-color-green-accent);
+  display: inline-block;
+  font-variation-settings: var(--font-flex-bold);
+  line-height: 1;
+  padding: 0.2rem 0;
 }

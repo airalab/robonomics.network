@@ -71,7 +71,7 @@
   typename: 'page'
 
 - path: '/devices/'
-  component: './src/pages/devices.vue'
+  component: './src/pages/devices/index.vue'
   typename: 'page'
 
 - path: '/its-gonna-get-worse/'
@@ -93,6 +93,13 @@
 
 - path: '/cases/rust-for-ros2'
   component: './src/pages/cases/rust-for-ros2.vue'
+  typename: 'page'
+
+
+
+# all devices go here 
+- path: '/devices/altruist'
+  component: './src/pages/devices/altruist.vue'
   typename: 'page'
 
 
