@@ -279,9 +279,6 @@ query {
     }
 
     .token__intro p {
-        /* margin-right: var(--space); */
-        /* align-self: end;
-        padding-bottom: 50px; */
         font-size: 132%;
         font-weight: 500;
         align-self: center;
@@ -396,7 +393,6 @@ query {
         display: flex;
         width: 100%;
         align-items: center;
-        /* justify-content: end; */
         direction: ltr;
     }
 
@@ -423,8 +419,6 @@ query {
         position: relative;
         height: 100%;
         max-width: 202px;
-        /* left: 0;
-        bottom: 50px; */
     }
 
     .token__graph-arrow svg {
@@ -477,7 +471,6 @@ query {
 
     .xrt-bridge__text {
         color: #fff;
-        /* margin-right: calc(var(--space) * 3); */
     }
 
     .xrt-bridge__text .token__big-text {
@@ -491,9 +484,6 @@ query {
     .xrt-bridge__imgs {
         position: relative;
         display: flex;
-        /* width: 100%;
-        justify-content: space-between;
-        max-width: 783px; */
         margin-right: calc(var(--space) * 2);
 
     }
@@ -659,13 +649,11 @@ query {
         .xrt-bridge__imgs {
             max-width: 100%;
             margin-right: 0;
-            /* margin-bottom: var(--space); */
         }
 
         .xrt-bridge .grid-2 {
             display: flex !important;
             flex-direction: column-reverse;
-            /* grid-template-columns: 1fr; */
         }
 
         .token-additional-info__wrapper {

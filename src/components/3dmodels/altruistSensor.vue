@@ -48,21 +48,22 @@ export default {
   methods: {
     callback(entries) {
       entries.forEach(({ isIntersecting }) => {
-        if (isIntersecting && !this.$route.path.includes('altruist') && this.$route.path !== '/') {
-          if(this.animationDelay) {
-            setTimeout(() => {
-              window.addEventListener('scroll', this.throttledScrollHandler);
-              this.animationDelay = false
-            }, 800)
-          } else {
-            window.addEventListener('scroll', this.throttledScrollHandler);
-          }
+        // vertical
+        // if (isIntersecting) {
+        //   if(this.animationDelay) {
+        //     setTimeout(() => {
+        //       window.addEventListener('scroll', this.throttledScrollHandler);
+        //       this.animationDelay = false
+        //     }, 800)
+        //   } else {
+        //     window.addEventListener('scroll', this.throttledScrollHandler);
+        //   }
 
-        } else {
-          window.removeEventListener('scroll', this.throttledScrollHandler);
-        }
+        // } else {
+        //   window.removeEventListener('scroll', this.throttledScrollHandler);
+        // }
 
-        if((isIntersecting && this.$route.path === '/') || (isIntersecting && this.$route.path.includes('altruist'))) {
+        if(isIntersecting) {
           this.disassemble()
         } else {
           this.assemble()
@@ -196,9 +197,9 @@ export default {
 
     this.throttledScrollHandler = this.throttle(this.updatePartPositions, 100);
 
-    if(this.$route.path.includes('devices') && !this.$route.path.includes('altruist')) {
-      this.speed = 15
-    }
+    // if(this.$route.path.includes('devices') && !this.$route.path.includes('altruist')) {
+    //   this.speed = 15
+    // }
   },
 
   beforeDestroy() {
@@ -273,10 +274,13 @@ export default {
 }
 
 @media screen and (max-width: 560px) {
+  .product__model--altruist .altruist-page.altruist-model,
   .altruist-page.altruist-model {
     height: 240px;
     transform: scale(0.8) rotate(-90deg) translate(-7%, -102%);
   }
+
+
 }
 
 
@@ -291,15 +295,17 @@ export default {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
   .altruist-model {
     top: -70px;
   }
 
+  .product__model--altruist .altruist-page.altruist-model,
   .altruist-page.altruist-model {
     height: 220px;
-    transform: scale(0.8) rotate(-90deg) translate(-7%, -64%);
+    transform: scale(0.8) rotate(-90deg) translate(-7%, -64%) !important;
   }
+
 }
 
 </style>

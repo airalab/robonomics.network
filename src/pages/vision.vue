@@ -41,7 +41,7 @@
         <div class="vision-decortext right">{{ $t('At the frontier of cybernetics and economics') }}</div>
       </section>
 
-      <section class="vision-iot layout layout__content grid-2 animate-inside" v-in-viewport.once>
+      <section class="vision-iot section layout layout__content grid-2 animate-inside" v-in-viewport.once>
         <div class="text-col-2">
           <h2>{{$t(`Build your IoT services on Robonomics platform`)}} <sup>*</sup></h2>
           <p><i>* {{$t(`taking full advantage of decentralized architecture`)}}</i></p>
@@ -60,7 +60,7 @@
         </div>
       </section>
 
-      <section class="vision-beginning section__solid">
+      <section class="vision-beginning section section__solid">
         <div class="layout layout__content">
           <div class="hyphens vision-beginning-text animate-inside" v-in-viewport.once>
             <h2>{{$t(`From smart contracts to cross chain IoT platform`)}}</h2>
@@ -72,7 +72,7 @@
         <g-image quality="75" aria-hidden="true" alt=""  class="bg" src="~/assets/images/wintercoding.png" />
       </section>
 
-      <section class="vision-cybernetics section__solid animate-inside" v-in-viewport.once>
+      <section class="vision-cybernetics section section__solid animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <article>
             <h2>{{$t(`At the frontier of cybernetics and economics`)}}</h2>
@@ -86,7 +86,7 @@
         </div>
       </section>
 
-      <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
+      <section class="vision-fathers section layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
           <h2>{{$t(`Move towards the factory of the future`)}}</h2>
@@ -106,7 +106,7 @@
 
       <hr/>
 
-      <section class="vision-fathers vision-get-rid layout layout__content animate-inside" v-in-viewport.once>
+      <section class="vision-fathers vision-get-rid section layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
           {{$t(`The idea of reducing transaction costs through the ability of all participants in the business process (production, logistics, consumption) to unite at a closer level`)}}
           <g-link to="https://ieeexplore.ieee.org/abstract/document/8792577">{{$t(`clearly correlates`)}}</g-link> {{$t(`with the problems and challenges faced by manufacturers of automation solutions. Over the past 50 years, the standard/regular operations of most business processes of large companies have been almost completely automated. The manufacturers are essentially left with the task of building secure communication between fully automated parts of the supply chain, and this task is a factor holding back further reduction of transaction costs through automation. The desire to market more competitive products or services compared to partially automated`)}}
@@ -122,7 +122,7 @@
 
       <hr/>
 
-      <section class="vision-fathers vision-cps layout layout__content animate-inside" v-in-viewport.once>
+      <section class="vision-fathers section vision-cps layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
           <h2>{{$t(`Our future in smart cities`)}}</h2>
@@ -141,7 +141,7 @@
 
       <hr/>
 
-      <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
+      <section class="vision-fathers section layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
           <h2>{{$t(`Self-regulating systems`)}}</h2>
@@ -162,7 +162,7 @@
 
       </section>
 
-      <section class="vision-industry40 section__solid section__lightblue animate-inside" v-in-viewport.once>
+      <section class="vision-industry40 section section__solid section__lightblue animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <div>
             <h2>
@@ -219,7 +219,7 @@
         </div>
       </section>
 
-      <section class="vision-bitcoin animate-inside" v-in-viewport.once>
+      <section class="vision-bitcoin section animate-inside" v-in-viewport.once>
         <div class="layout layout__content hyphens text-col-3">
 
           <p>{{$t(`One of the examples of our experiments: negotiating road space and right of way payments for autonomous vehicles to reduce congestion. What a person would absolutely not do in traffic, the car will do for you without difficulties: you want to switch lanes, your car and your neighbor's car exchange offers on the cost of such an operation at a rate of hundreds msgs per second, they will reveal an equilibrium price, and so you are already in the next faster moving lane. This means that now it will become available to "charge" your ride with uber and make it faster.`)}}</p>
@@ -232,7 +232,7 @@
 
       <hr/>
 
-      <section class="layout layout__content animate-inside" v-in-viewport.once>
+      <section class="layout layout__content section animate-inside" v-in-viewport.once>
         <div class="text-col-3">
           <h2>
             <b>{{$t(`Smart contracts`)}}</b><br/>
@@ -255,7 +255,7 @@
 
       <hr/>
 
-      <section class="layout layout__content animate-inside" v-in-viewport.once>
+      <section class="section layout layout__content animate-inside" v-in-viewport.once>
         <div class="text-col-3">
           <h2>
             <b>{{$t(`Parachains`)}}</b><br/>
@@ -313,29 +313,6 @@
           </div>
         </div>
       </section>
-
-      <!-- <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
-
-        <div class="vision-fathers-image">
-          <h2>{{$ts(`OPEN QUESTIONS OF TELEOLOGY`)}}</h2>
-          <i>{{$ts(`Inspired by Norbert Wiener`)}}</i>
-
-          <g-image alt="" src="~/assets/images/person-lugwig-von-mises.png"/>
-        </div>
-
-        <article class="hyphens">
-          <p>{{$ts(`One extremely popular question that still remains open — the goal setting of robots when providing services to people. This is a specific but academically important question. The fact is that human economics often includes factors related to the good faith performance of tasks in a contract, the desire of the parties to achieve a result, and the opportunistic and altruistic behavior of the individual in society. It is difficult to talk about such issues in robotics today, so the developers of Robonomics would like to leave teleological issues open for further study, and focus their attention on the praxeological part of robots’ behavior as economic agents. Regarding goal setting, an early article by Norbert Wiener and his colleagues “Behavior, Purpose and Teleology”, as well as the work of the American economist and philosopher Ludwig von Mises on human activity can be considered as points of reference.`)}}</p>
-          <br>
-          <p>{{$ts(`Mises, in his book`)}} <strong>{{$ts(`«Human Action: A Treatise of Economics»`)}}</strong> {{$ts(`, looks at the human being in economics from a praxeological perspective. Praxeology gives us an interesting insight into human behavior without a direct correlation to the ultimate goal. By continuing to study the phenomena in human economics from the perspective of the processes themselves, separated from the end goals, we can understand more about the framework that can be formed for a robot economy, so as not to delve into questions of machine teleology.`)}}</p>
-        </article>
-
-
-      </section> -->
-
-<!--   TODO move the following code to /src/pages/architecture.vue   -->
-
-<!--  TODO moving up to here -->
-      
       <section class="section section__solid section__darkgray">
         <div class="vision-books layout layout__content">
           <div>
@@ -461,6 +438,13 @@ export default {
 <style scoped>
 
 
+.vision .layout__content {
+  --content-width: 1660px;
+  max-width: var(--content-width);
+	text-align: center;
+}
+
+
 .vision article {
   text-align: left;
 }
@@ -566,13 +550,7 @@ export default {
 
 
 .vision-subtitle {
-  /* position: absolute;
-  z-index: 1;
-  bottom: 20px;
-  left: 0;
-  right: 0; */
   text-align: center;
-  /* white-space: nowrap; */
 }
 
 .vision-subtitle .text {
