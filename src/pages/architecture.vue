@@ -6,7 +6,7 @@
       :pageImage="'/website_cover_architecture.jpg'"
     />
     <div class="page architecture">
-      <section class="architecture-banner section__solid animate-inside" v-in-viewport.once>
+      <section class="architecture-banner section section__solid animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <article>
             <h1>{{$t('Robonomics architecture')}}</h1>
@@ -20,7 +20,7 @@
         </div>
       </section>
 
-      <section class="vision-fathers layout layout__content animate-inside" v-in-viewport.once>
+      <section class="vision-fathers section layout layout__content animate-inside" v-in-viewport.once>
 
         <div class="vision-fathers-image">
           <h2>{{$t('Overview of the state of the internet of things (IoT)')}}</h2>
@@ -39,7 +39,7 @@
 
       <hr/>
 
-       <section class="architecture-digital-twin layout layout__content animate-inside" v-in-viewport.once>
+       <section class="architecture-digital-twin section layout layout__content animate-inside" v-in-viewport.once>
         <div>
           <h2>{{$t(`New challenges`)}}</h2>
           <g-image alt="" quality="75" aria-hidden="true" src="~/assets/images/vision-digital-twin.png"/>
@@ -54,7 +54,7 @@
 
       <hr/>
 
-      <section class="architecture-iot-classification layout layout__content animate-inside" v-in-viewport.once>
+      <section class="architecture-iot-classification section layout layout__content animate-inside" v-in-viewport.once>
         <div>
           <h2>{{$t(`Classification of IoT devices`)}}</h2>
           <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/iot-classification.png"/>
@@ -86,7 +86,7 @@
 
       <hr/>
 
-      <section class="architecture-iot-providers layout layout__content animate-inside" v-in-viewport.once>
+      <section class="architecture-iot-providers section layout layout__content animate-inside" v-in-viewport.once>
         <div class="grid-2">
           <div>
             <h3>{{$t(`Internet of Things providers`)}}</h3>
@@ -112,7 +112,7 @@
 
       <hr/>
 
-      <section class="architecture-data-flows layout layout__content animate-inside" v-in-viewport.once>
+      <section class="architecture-data-flows section layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
           <h3>{{$t(`IoT data flows in cloud services`)}}</h3>
           <div class="grid-3">
@@ -137,7 +137,7 @@
 
       <hr/>
 
-      <section class="architecture-data-flows layout layout__content animate-inside" v-in-viewport.once>
+      <section class="architecture-data-flows section layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
           <h3>{{$t(`Popular examples of IoT solutions`)}}</h3>
           <div class="grid-3">
@@ -162,7 +162,7 @@
 
       <hr/>
 
-      <section class="architecture-current-problems layout layout__content animate-inside" v-in-viewport.once>
+      <section class="architecture-current-problems section layout layout__content animate-inside" v-in-viewport.once>
         <article class="hyphens">
           <div>
             <h2>{{$t(`Current problems of building IoT solutions`)}}</h2>
@@ -189,10 +189,10 @@
         </article>
       </section>
 
-      <section class="architecture-main-tasks section__solid section__blue-lightest animate-inside" v-in-viewport.once>
+      <section class="architecture-main-tasks section section__solid section__blue-lightest animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <article class="hyphens">
-            <h2>{{$t(`"Main tasks of robonomics architecture`)}}</h2>
+            <h2>{{$t(`"Main tasks of robonomics architecture`)}}"</h2>
             <p>{{$t(`Building on the achievements and challenges of cloud platforms, Robonomics aims to offer the IoT market safer and more advanced Internet solutions at every stage of human-machine communication. Below are the main tasks that Robonomics is aimed at:`)}}</p>
             <div>
               <h3>1 >> </h3>
@@ -221,7 +221,7 @@
 
       <hr class="no-margins"/>
 
-      <section class="architecture-basic-components section__solid section__blue-lightest animate-inside" v-in-viewport.once>
+      <section class="architecture-basic-components section section__solid section__blue-lightest animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <h2>{{$t(`Basic components of Robonomics architecture`)}}</h2>
           <div class="grid-2">
@@ -265,7 +265,7 @@
 
       <hr class="no-margins"/>
 
-      <section class="architecture-simple-representation section__solid section__blue-lightest animate-inside" v-in-viewport.once>
+      <section class="architecture-simple-representation section section__solid section__blue-lightest animate-inside" v-in-viewport.once>
         <div class="layout layout__content">
           <h2>{{$t(`A simple representation of Robonomics architecture`)}}</h2>
           <div class="grid-2">
@@ -303,6 +303,12 @@ export default {
 </script>
 
 <style scoped>
+
+  .architecture .layout__content {
+    --content-width: 1660px;
+    max-width: var(--content-width);
+    text-align: center;
+  }
 
   .architecture article,
   .activity h2,
