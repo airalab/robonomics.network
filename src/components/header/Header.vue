@@ -74,8 +74,13 @@ export default {
 <style scoped>
 
   .hideDesktop {
+    display: block;
+  }
+
+  .hideMobile {
     display: none;
   }
+
   .header-logo {
     padding-left: calc(var(--screen-padding-left) * 0.6);
   }
@@ -101,7 +106,7 @@ export default {
     left: 0;
     right: 0;
     z-index:1000;
-
+    border-bottom: 2px solid var(--color-dark);
     background-color: var(--header-bg);
   }
   
@@ -122,18 +127,10 @@ export default {
     align-items: stretch;
   } 
 
-  .header-side > *:not(:last-child) {
+  /* .header-side > *:not(:last-child) {
     margin-right: calc(var(--space) * 0.4);
-  }
+  } */
 
-  @media screen and (max-width: 510px) {
-    .hideDesktop {
-      display: block;
-    }
-    .hideMobile {
-      display: none;
-    }
-  }
 
   @media screen and (max-width: 425px) {
 

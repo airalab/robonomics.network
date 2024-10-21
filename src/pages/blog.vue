@@ -14,7 +14,7 @@
     <div v-if="$page.posts.edges.length === 0" class=" blog__no-post align-center">
       <blockquote>{{$t('No posts yet')}}</blockquote>
 
-      <div class="layout layout__text oldy " v-if="$locale != $defaultLocale">
+      <div class="layout layout__content oldy " v-if="$locale != $defaultLocale">
         <p>{{ $t('If you want to help us with translation') }}:</p>
         <ul class="list-simple">
           <li>{{ $t('contact us at') }}: <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a></li>

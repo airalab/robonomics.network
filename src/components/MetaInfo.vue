@@ -94,6 +94,7 @@ export default {
       htmlAttrs: {
         lang: locale,
         amp: true,
+        // dir: locale === 'ar' ? 'rtl' : ''
       },
       meta: [
         { key: 'description', name: 'description', content: description },

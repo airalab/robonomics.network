@@ -12,7 +12,7 @@
     </div>
 
 
-    <section class="layout layout__mid e-books">
+    <section class="layout layout__content e-books">
   
       <div class="layout__text books__abstract">
         <p>{{ $t("We think reading books can really open up your mind. Whether it's simple but smart ideas or more complex ones, books are the best way for your brain to soak it all in. You can grab our books for free and check out our list of recommended reads to dive into the exciting world of robotics!") }}</p>
@@ -26,7 +26,7 @@
 
     </section>
 
-    <section class="layout books-recommendations layout__mid">
+    <section class="layout books-recommendations layout__content">
 
       <h2>{{ $t('Open your mind [list of recommendations]') }}</h2>
 

@@ -1,38 +1,46 @@
 <template>
-  <gsp-form class="contacts__form" :gscriptID="gscript" :siteKey="siteKey">
-    <input
-      required 
-      name="email" 
-      class="contacts__input" 
-      :class="{'sent': result === 'success'}"
-      type="email" 
-      :placeholder="$t('Your email')" 
-      data-gsp-name="Email" 
-      :data-gsp-data="data_email" 
-      v-model="data_email"
-      :disabled="result === 'success'"
-    >
+  <div class="footer-form">
+    <div class="footer-form-content">
+      <gsp-form :gscriptID="gscript" :siteKey="siteKey">
+        <input
+          required 
+          name="email" 
+          class="contacts__input" 
+          :class="{'sent': result === 'success'}"
+          type="email" 
+          :placeholder="$t('Your email')" 
+          data-gsp-name="Email" 
+          :data-gsp-data="data_email" 
+          v-model="data_email"
+          :disabled="result === 'success'"
+        >
 
-    <input       
-      type="hidden" 
-      placeholder="Location" 
-      data-gsp-name="Location" 
-      :data-gsp-data="location" 
-      v-model="location"
-    />
+        <input       
+          type="hidden" 
+          placeholder="Location" 
+          data-gsp-name="Location" 
+          :data-gsp-data="location" 
+          v-model="location"
+        />
 
-    <div class="google-sheets-form__actions">
-      <rb-button @click="onSubmit" v-if="result !== 'success'" block :disabled="result === 'error' || result === 'wait'">
-        <span v-if="result !== 'wait'">{{$t('Want emails from robonomics')}}</span>
-        <span class="isLoading" v-else>{{$t('Adding you to our special list...')}}</span>
-        <span class="spinner">
-          <Spinner v-if="result === 'wait'"/>
+        <div class="google-sheets-form__actions">
+          <rb-button @click="onSubmit" v-if="result !== 'success'" block :disabled="result === 'error' || result === 'wait'">
+            <span class="contacts__form-btn-text" v-if="result !== 'wait'">{{$t('Email me')}}</span>
+            <span class="isLoading contacts__form-btn-text" v-else>{{$t('Adding you to our special list...')}}</span>
+            <span  v-if="result === 'wait'" class="spinner">
+              <Spinner/>
+            </span>
+          </rb-button >
+          <rb-button block disabled v-else class="button-success contacts__form-btn-text">{{$t('Nice, you are in the list')}}</rb-button>
+          <div v-if="result === 'error'" class="error">{{$t('Something went  wrong. Try again later')}}</div>
+        </div>
+
+        <span class="contacts__form-agreement">
+          By clicking on the button “Email me” you agree to receive regular emails from Robonomics. 
         </span>
-      </rb-button >
-      <rb-button block disabled v-else class="button-success">{{$t('Nice, you are in the list')}}</rb-button>
-      <div v-if="result === 'error'" class="error">{{$t('Something went  wrong. Try again later')}}</div>
+      </gsp-form>
     </div>
-  </gsp-form>
+  </div>
 </template>
 
 <script>
@@ -100,15 +108,63 @@ export default {
 </script>
 
 <style scoped>
-  form {
+
+  /* .contacts__form-wrapper {
     position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 calc(var(--space) - 15px);
   }
 
-  /* .google-sheets-form__actions {
-    padding-right: 7px;
-    padding-bottom: 6px;
+  .contacts__form-decor {
+    width: 284px;
+    height: 364px;
+    margin-right: 50px;
   } */
 
+   .footer-form {
+    text-align: center;
+    width: 100%;
+   }
+
+   .footer-form-content {
+    text-align: left;
+    display: inline-block;
+    background: url('~@/assets/images/contacts__decor.webp') no-repeat 0 100%;
+    background-size: 284px 364px;
+    padding-left: calc(284px + var(--space));
+    min-height: 364px;
+    padding-top: 100px;
+    margin-left: -384px;
+   }
+
+
+   @media screen and (width < 1000px) {
+    .footer-form-content {
+      margin-left: 0;
+    }
+   }
+
+   @media screen and (width < 480px) {
+    .footer-form-content {
+      background-position: -100px 0;
+      padding-left: 184px;
+    }
+   }
+
+  .footer-form form {
+    max-width: 294px;
+    width: calc(100% - var(--space));
+  }
+
+  .google-sheets-form__actions {
+    margin-bottom: 18px;
+  }
+
+  .google-sheets-form__actions button {
+    display: flex;
+    text-align: center;
+  }
 
   .button-success {
     background-color: var(--rb-color-green);
@@ -116,16 +172,26 @@ export default {
 
   .contacts__input {
     width: 100%;
-    padding: 15px 20px;
-    margin-bottom: 5px;
-    font-weight: 300;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    font-weight: 700;
     border: 1px solid var(--color-dark);
     color: var(--color-dark);
     background-color: var(--color-light);
   }
 
+  .contacts__input::placeholder {
+    color: var(--color-dark);
+  }
+
   .contacts__input.sent {
-    background-color: var(--color-green) !important;
+    background-color: var(--rb-color-green-accent) !important;
+  }
+
+  .contacts__form-btn-text {
+    font-family: var(--font-family);
+    font-weight: 700;
   }
 
   .error {
@@ -134,7 +200,7 @@ export default {
 
   .spinner {
     order: -1;
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
 
   .spinner svg{
@@ -143,7 +209,56 @@ export default {
   }
 
   .isLoading {
-    font-size: 1.2rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .contacts__form-agreement {
+    display: block;
+    padding-bottom: calc(var(--space) * 2);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-dark);
+  }
+
+
+  @media screen and (max-width: 680px) {
+    .contacts__form-wrapper {
+      align-items: center;
+      padding-left: 0;
+    }
+
+    .contacts__form-decor  {
+      width: 280px;
+      margin-right: 0;
+      margin-left: -25px;
+    }
+
+    .contacts__input {
+      font-size: 12px;
+    }
+
+    .contacts__input::placeholder {
+      font-size: 12px;
+    }
+
+    .contacts__form-agreement {
+      margin-top: calc(var(--space) * 0.5);
+      font-size: 11px;
+    }
+  }
+
+  @media screen and (max-width: 395px) {
+    .contacts__form-decor  {
+      width: 220px;
+      height: 300px;
+      margin-right: 0;
+    }
+
+    .contacts__form-btn-text {
+      font-size: 16px;
+    }
   }
 
 
