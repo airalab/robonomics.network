@@ -20,8 +20,8 @@
       <h5 class="altruist__cases-title">Use case:</h5>
       <p>Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.</p>
 
-      <rb-button to="https://robonomics.app/#/" class="altruist__intro-btn">GET A DEVICE</rb-button>
-      <span class="altruist__intro-highlighted-text highlighted-text">early access for community members</span>
+      <!-- <rb-button to="https://robonomics.app/#/" class="altruist__intro-btn">GET A DEVICE</rb-button>
+      <span class="altruist__intro-highlighted-text highlighted-text">early access for community members</span> -->
     </div>
 
     <section class="depin">
@@ -194,6 +194,11 @@ export default {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+  }
+
+  .altruist__intro p {
+    position: relative;
+    z-index: 20;
   }
 
   .altruist__back-link {
