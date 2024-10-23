@@ -101,6 +101,9 @@
 - path: '/devices/altruist'
   component: './src/pages/devices/altruist.vue'
   typename: 'page'
+- path: '/devices/risc-v'
+  component: './src/pages/devices/riscV.vue'
+  typename: 'page'
 
 
 
