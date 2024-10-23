@@ -136,9 +136,14 @@ export default {
     
     window.addEventListener('scroll', this.onScroll); // Track scroll position
 
-    if(this.$route.path.includes('devices')) {
+    if(this.$route.path.includes('devices') && !this.$route.path.includes('risc-v')) {
       this.speed = 4
       this.initialOffset = -30
+    }
+
+    if(this.$route.path.includes('risc-v')) {
+      this.speed = 16
+      this.initialOffset = -20
     }
   },
 
