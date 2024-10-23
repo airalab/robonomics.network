@@ -12,6 +12,7 @@
         <Header :translated="translated" />
 
         <h1 v-if="title" v-html="title" class="pagetitle" />
+        <g-link class="backlink" v-if="backlink" :to="backlink.link" :aria-label="backlink.label">&larr; {{backlink.title}}</g-link>
 
         <slot/>
 
@@ -27,18 +28,81 @@
 </template>
 
 
+<script>
+
+export default {
+
+  components: {
+    Header: () => import('~/components/header/Header.vue'),
+    Footer: () => import('~/components/Footer.vue'),
+    Loader: () => import('~/components/utils/Loader.vue'),
+  },
+
+  props: {
+    backlink: {
+      type: Object
+    },
+    translated: {
+      type: Boolean,
+      default: false
+    },
+    title: {
+      type: String
+    }
+  },
+
+  data () {
+    return {
+      isLoaded: false,
+    }
+  },
+
+  methods: {
+    activateTracker() {
+      this.$matomo && this.$matomo.disableCookies();
+      this.$matomo && this.$matomo.trackPageView();
+    }
+  },
+
+  async mounted () {
+
+      window.scrollTo(0,0);
+
+      this.activateTracker();
+
+      setTimeout(() => {
+        this.isLoaded = true;
+      }, 1000)
+  }
+}
+</script>
 
 
 <style scoped>
 
   .pagetitle {
     background-color: var(--color-dark);
-    display: inline-block;
-    font-variation-settings: var(--font-flex-bold);
     color: var(--color-light);
-    font-size: calc(var(--base-font-size) * 1.4);
-    padding: 0.3rem 1rem;
+    display: inline-block;
+    font-size: calc(var(--base-font-size) * 1.1);
+    font-variation-settings: var(--font-flex-bold);
     margin: 0 0 calc(var(--space) * 2);
+    padding: 0.4rem var(--layout-sidepadding);
+  }
+
+  .backlink {
+    color: var(--text-color);
+    display: block;
+    font-size: 0.8rem;
+    font-variation-settings: var(--font-flex-bold);
+    margin-left: var(--layout-sidepadding);
+    margin-top: calc(var(--space) * -2);
+    padding: 0.3rem 0;
+    text-transform: uppercase;
+  }
+
+  .backlink:hover {
+    color: var(--color-link);
   }
 
   .fade-enter-active,
@@ -101,50 +165,3 @@
 }
 
 </style>
-
-
-<script>
-
-export default {
-
-  components: {
-    Header: () => import('~/components/header/Header.vue'),
-    Footer: () => import('~/components/Footer.vue'),
-    Loader: () => import('~/components/utils/Loader.vue'),
-  },
-
-  props: {
-    translated: {
-      type: Boolean,
-      default: false
-    },
-    title: {
-      type: String
-    }
-  },
-
-  data () {
-    return {
-      isLoaded: false,
-    }
-  },
-
-  methods: {
-    activateTracker() {
-      this.$matomo && this.$matomo.disableCookies();
-      this.$matomo && this.$matomo.trackPageView();
-    }
-  },
-
-  async mounted () {
-
-      window.scrollTo(0,0);
-
-      this.activateTracker();
-
-      setTimeout(() => {
-        this.isLoaded = true;
-      }, 1000)
-  }
-}
-</script>

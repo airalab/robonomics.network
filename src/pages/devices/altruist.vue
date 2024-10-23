@@ -1,6 +1,6 @@
 <template>
 
-  <layout>
+  <layout :backlink="{title: 'All hardware', link: '/devices/', label: 'Go to all hardware'}" :title="$t('Altruist outdoor sensor')">
 
     <MetaInfo
       pageTitle = "Smart devices from Robonomics"
@@ -8,157 +8,115 @@
       :pageImage = "'/website_cover_devices.png'"
     />
 
-    <div class="title-with-bg">
-      <h1><span>{{ $t('Altruist outdoor sensor') }}</span></h1>
-    </div>
-
-    <div class="altruist__intro layout layout__content">
-      <g-link class="altruist__back-link" to="/devices/"> &larr; All hardware</g-link>
+    <div class="layout layout__content">
       <Altruist class="altruist-page"/>
-      <p class="altruist__text-bold"> <b>A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">sensor map</g-link></b>.</p>
-
-      <h5 class="altruist__cases-title">Use case:</h5>
+      <p><b>A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">sensor map</g-link></b>.</p>
       <p>Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.</p>
+      <p class="align-center"><g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">Available for members</g-link></p>
 
-      <!-- <rb-button to="https://robonomics.app/#/" class="altruist__intro-btn">GET A DEVICE</rb-button>
-      <span class="altruist__intro-highlighted-text highlighted-text">early access for community members</span> -->
+      <h2 class="title-lined"><span>Usage</span></h2>
+
+      <section class="section">
+        <h3 class="highlight-solid-green">Into the map</h3>
+        <p>Connect your device as simple as other smart devices and look at your environmental outdoor data on a decentralized 
+          fully distributed sensor map, <g-link class="highlight" to="https://sensors.social/" aria-label="check the sensor map">this</g-link> or 
+          any other independent fork.</p>
+        <g-link class="depin__github" aria-label="check our firmware" to="https://github.com/airalab/altruist-firmware">Open-source under the hood: check our firmware</g-link>
+      </section>
+
+      <section class="section">
+        <h3 class="highlight-solid-green">Join the Connectivity</h3>
+        <p>Data processing is always a sensitive issue. That's why we offer a fully open-source 
+          <g-link class="highlight" to="https://github.com/airalab/sensors-connectivity" aria-label="check open source connectivity module">connectivity module</g-link>  
+          giving you the freedom to choose which servers to use for processing. No closed clouds, no opaque code.</p>
+        <h5>Use Robonomics Connectivity</h5>
+        <p>Robonomics established three Connectivity hubs to ensure a stable connection. This option switched on by default on the station.</p>
+        <h5>Create your own Connectivity</h5>
+        <p>You may launch your own hub for receiving data from Altruist Civil Station and further processing.</p>
+        <details>
+          <summary>Steps to set up your Connectivity</summary>
+          <ol>
+            <li>
+              <p><b>Deploy Connectivity</b></p>
+              <p>Technical requirements:</p>
+              <ul class="list-smallgap">
+                <li>2 CPU cores;</li>
+                <li>4 GB RAM;</li>
+                <li>40 GB storage;</li>
+                <li>Static IP.</li>
+              </ul>
+              <p>Than set up <g-link aria-label="see open source connectivity module" to="https://github.com/airalab/sensors-connectivity">connectivity module</g-link> and follow <g-link aria-label="check the instruction for  connectivity" to="https://robonomics.academy/en/learn/sensors-connectivity-course/sensors-connectivity-module/">the instructions</g-link>.</p>
+            </li>
+
+            <li>
+              <p><b>Connect a station to your connectivity</b></p>
+              <ol class="list-smallgap">
+                  <li>Open your sensor settings by its IP.</li>
+                  <li>Go to APIs settings.</li>
+                  <li>Check the checkbox for sending data to custom API and fill corresponding fields (server IP, ports, etc.).</li>
+                </ol>
+            </li>
+
+            <li>
+              <p><b>Join with your setup to global map (optional)</b></p>
+              <p>If you want to publish data to <g-link aria-label="see the sensors map" to="https://sensors.social/">the global map</g-link>, you need to make two pull requests:</p>
+
+              <ol class="list-smallgap">
+                  <li>Add IPFS ID of your Connectivity to agents list of sensor map: <g-link aria-label="check agents.json file" to="https://github.com/airalab/sensors.social/blob/master/src/agents.json">https://github.com/airalab/sensors.social/blob/master/src/agents.json</g-link></li>
+                  <li>Add parachain address of your Connectivity to template agents list of long-term storage server: <g-link aria-label="check agents.template.json file" to="https://github.com/airalab/RoSeMAN/blob/master/config/agents.template.json">https://github.com/airalab/RoSeMAN/blob/master/config/agents.template.json</g-link></li>
+              </ol>
+            </li>
+          </ol>
+        </details>
+
+        <g-link class="depin__github" aria-label="check our connectivity module" to="https://github.com/airalab/sensors-connectivity">Open-source under the hood: check our connectivity module</g-link>
+      </section>
+
+      <section class="section">
+        <h3 class="highlight-solid-green">Your own air quality map</h3>
+        <p>You have an opportunity to become the administrator of a sovereign sensor infrastructure, giving you full control over how data is collected, processed, and shared within your own independent network.</p>
+        <details>
+          <summary>Steps for launching your own map</summary>
+          <ol>
+            <li>
+              <p><b>Deploy web interface</b></p>
+
+              <ol class="list-smallgap">
+                  <li>Fork the map repository: <g-link to="https://github.com/airalab/sensors.social" aria-label="see the sensors map repository">https://github.com/airalab/sensors.social</g-link></li>
+                  <li>Edit the settings to customize your map, including the domain, provider, starting viewpoint, and your connectivity IPFS ID for the list of agents.</li>
+                  <li>Deploy your own version of the web interface and begin receiving real-time data from your sensor.</li>
+              </ol>
+
+              <p>Full guide here: <g-link aria-label="see full guide" to="https://github.com/airalab/sensors.social?tab=readme-ov-file#setup-your-own-map"> https://github.com/airalab/sensors.social?tab=readme-ov-file#setup-your-own-map </g-link></p>
+
+            </li>
+
+            <li>
+              <p><b>Launch long-term storage</b></p>
+              <p>Simply collecting data from sensors is not enough; it needs to be processed. Tweak a server for collecting sensor’s data based on with open-source node.js software <g-link aria-label="check node.js software for sensors" to="https://github.com/airalab/RoSeMAN">Robonomics Sensors Measure Analytics and Archive Node (RoSeMAN)</g-link> and get your own working server for long-term map data storage.</p>
+              <p>Technical requirements:</p>
+              <ul class="list-smallgap">
+                <li>2 CPU cores;</li>
+                <li>4 GB RAM;</li>
+                <li>40 GB storage;</li>
+                <li>Static IP.</li>
+              </ul>
+              <p>Steps for launching a storage:</p>
+              <ol class="list-smallgap">
+                  <li>Fork the RoSeMAN repository: <g-link aria-label="check the roseman repository" to="https://github.com/airalab/RoSeMAN">https://github.com/airalab/RoSeMAN</g-link></li>
+                  <li>Choose Docker or Node.js (required MongoDB database) version.</li>
+                  <li>Add a parachain address of your Connectivity to agents list.</li>
+                  <li>Add RoSeMAN domain to remote provider of map.</li>
+                  <li>Run the project.</li>
+                </ol>
+            </li>
+          </ol>
+        </details>
+
+        <g-link class="depin__github" aria-label="check our server-side software" to="https://github.com/airalab/RoSeMAN">Open-source under the hood: check our server-side software</g-link>
+      </section>
+
     </div>
-
-    <section class="depin">
-      <div class="layout layout__content">
-        <h3 class="depin__header">
-          <span class="highlighted-text">Simple & hardcore ways</span>
-          to become a part of a sensor-based DePIN:
-        </h3>
-
-        <ol class="depin__list">
-
-          <li class="depin__item">
-            <h2 class="depin__title">Into the map</h2>
-            <p class="depin__text">Connect your device as simple as other smart devices and look at your environmental outdoor data on a decentralized fully distributed sensor map, <g-link class="depin__link" to="https://sensors.social/" aria-label="check the sensor map">this</g-link> or any other independent fork.</p>
-            <g-link class="depin__github" aria-label="check our firmware" to="https://github.com/airalab/altruist-firmware">Open-source under the hood: check our firmware</g-link>
-          </li>
-
-          <li class="depin__item">
-            <h2 class="depin__title">join the Connectivity</h2>
-            <p class="depin__text depin__text--first">Data processing is always a sensitive issue. That's why we offer a fully open-source <g-link class="depin__link" to="https://github.com/airalab/sensors-connectivity" aria-label="check open source connectivity module">connectivity module</g-link>  giving you the freedom to choose which servers to use for processing. No closed clouds, no opaque code.</p>
-
-            <div class="depin__info">
-              <h3 class="depin__subtitle">Robonomics Connectivity</h3>
-              <p class="depin__text">Robonomics established three Connectivity hubs to ensure a stable connection. This option switched on by default on the station.</p>
-            </div>
-
-            <div class="depin__info">
-              <h3 class="depin__subtitle">your own connectivity</h3>
-              <p class="depin__text">You may launch your own hub for receiving data from Altruist Civil Station and further processing.</p>
-            </div>
-
-            <ol class="depin-guide__list">
-              <li class="depin-guide__item">
-                <h5>Deploy Connectivity</h5>
-                <button @click="show.firstContainer = !show.firstContainer" aria-label="open technical requirements" class="depin-guide__requirements-btn bold-text"><b>Technical requirements</b></button>
-                <div ref="myText" class="depin-guide__requirements simple-text" v-show="show.firstContainer">
-                  <ul class="depin-guide__requirements-list">
-                    <li class="depin-guide__requirements-item">2 CPU cores;</li>
-                    <li class="depin-guide__requirements-item">4 GB RAM;</li>
-                    <li class="depin-guide__requirements-item">40 GB storage;</li>
-                    <li class="depin-guide__requirements-item">Static IP.</li>
-                  </ul>
-                </div>
-                <p>Than set up <g-link aria-label="see open source connectivity module" to="https://github.com/airalab/sensors-connectivity">connectivity module</g-link> and follow <g-link aria-label="check the instruction for  connectivity" to="https://robonomics.academy/en/learn/sensors-connectivity-course/sensors-connectivity-module/">the instructions</g-link>.</p>
-              </li>
-              <li class="depin-guide__item">
-                <h5>Connect a station to your connectivity</h5>
-                <ol class="depin-guide__sublist">
-                  <li class="depin-guide__subitem">
-                    Open your sensor settings by its IP.
-                  </li>
-                  <li class="depin-guide__subitem">
-                    Go to APIs settings.
-                  </li>
-                  <li class="depin-guide__subitem">
-                    Check the checkbox for sending data to custom API and fill corresponding fields (server IP, ports, etc.).
-                  </li>
-                </ol>
-              </li>
-              <li class="depin-guide__item">
-                <h5>Join with your setup to global map (optional)</h5>
-                <p class="simple-text">If you want to publish data to <g-link aria-label="see the sensors map" to="https://sensors.social/">the global map</g-link>, you need to make two pull requests:</p>
-
-                <ol class="depin-guide__sublist">
-                  <li class="depin-guide__subitem">
-                    Add IPFS ID of your Connectivity to agents list of sensor map: <g-link aria-label="check agents.json file" to="https://github.com/airalab/sensors.social/blob/master/src/agents.json">https://github.com/airalab/sensors.social/blob/master/src/agents.json</g-link>
-                  </li>
-                  <li class="depin-guide__subitem">
-                    Add parachain address of your Connectivity to template agents list of long-term storage server: <g-link aria-label="check agents.template.json file" to="https://github.com/airalab/RoSeMAN/blob/master/config/agents.template.json">https://github.com/airalab/RoSeMAN/blob/master/config/agents.template.json</g-link>
-                  </li>
-                </ol>
-
-              </li>
-            </ol>
-
-            <g-link class="depin__github" aria-label="check our connectivity module" to="https://github.com/airalab/sensors-connectivity">Open-source under the hood: check our connectivity module</g-link>
-          </li>
-
-          <li class="depin__item">
-            <h2 class="depin__title">your own air quality map</h2>
-            <p class="depin__text depin__text--first">You have the opportunity to become the administrator of a sovereign sensor infrastructure, giving you full control over how data is collected, processed, and shared within your own independent network.</p>
-
-            <ol class="depin-guide__list">
-              <li class="depin-guide__item">
-                <h5>Deploy a map</h5>
-                <ol class="depin-guide__sublist">
-                  <li class="depin-guide__subitem">
-                    Fork the map repository: <g-link to="https://github.com/airalab/sensors.social" aria-label="see the sensors map repository">https://github.com/airalab/sensors.social</g-link>
-                  </li>
-                  <li class="depin-guide__subitem">
-                    Edit the settings to customize your map, including the domain, provider, starting viewpoint, and your connectivity IPFS ID for the list of agents.
-                  </li>
-                  <li class="depin-guide__subitem">
-                    Deploy your own version of the web interface and begin receiving real-time data from your sensor.
-                  </li>
-                </ol>
-                <p>Full guide here: <g-link aria-label="see full guide" to="https://github.com/airalab/sensors.social?tab=readme-ov-file#setup-your-own-map"> https://github.com/airalab/sensors.social?tab=readme-ov-file#setup-your-own-map </g-link></p>
-              </li>
-              <li class="depin-guide__item">
-                <h5>Launch long-term storage</h5>
-                <p>Simply collecting data from sensors is not enough; it needs to be processed. Tweak a server for collecting sensor’s data based on with open-source node.js software <g-link aria-label="check node.js software for sensors" to="https://github.com/airalab/RoSeMAN">Robonomics Sensors Measure Analytics and Archive Node (RoSeMAN)</g-link> and get your own working server for long-term map data storage.</p>
-                <button @click="show.secondContainer = !show.secondContainer" aria-label="open technical requirements" class="depin-guide__requirements-btn bold-text"><b>Technical requirements</b></button>
-                <div ref="myText" class="depin-guide__requirements" v-show="show.secondContainer">
-                  <ul class="depin-guide__requirements-list">
-                    <li class="depin-guide__requirements-item">2 CPU cores;</li>
-                    <li class="depin-guide__requirements-item">4 GB RAM;</li>
-                    <li class="depin-guide__requirements-item">40 GB storage;</li>
-                    <li class="depin-guide__requirements-item">Static IP.</li>
-                  </ul>
-                </div>
-                <span class="depin_instructions">Instructions:</span>
-                <ol class="depin-guide__sublist">
-                  <li class="depin-guide__subitem">
-                    Fork the RoSeMAN repository: <g-link aria-label="check the roseman repository" to="https://github.com/airalab/RoSeMAN">https://github.com/airalab/RoSeMAN</g-link>
-                  </li>
-                  <li class="depin-guide__subitem">
-                    Choose Docker or Node.js (required MongoDB database) version.
-                  </li>
-                  <li class="depin-guide__subitem">
-                    Add a parachain address of your Connectivity to agents list.
-                  </li>
-                  <li class="depin-guide__subitem">
-                    Add RoSeMAN domain to remote provider of map.
-                  </li>
-                  <li class="depin-guide__subitem">
-                    Run the project.
-                  </li>
-                </ol>
-              </li>
-            </ol>
-
-            <g-link class="depin__github" aria-label="check our server-side software" to="https://github.com/airalab/RoSeMAN">Open-source under the hood: check our server-side software</g-link>
-          </li>
-        </ol>
-      </div>
-
-    </section>
 
   </layout>
   
@@ -185,30 +143,6 @@ export default {
 </script>
 
 <style scoped>
-
-  .title-with-bg  {
-    text-align: left;
-  }
-
-  .altruist__intro {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
-  .altruist__intro p {
-    position: relative;
-    z-index: 20;
-  }
-
-  .altruist__back-link {
-    position: absolute;
-    left: var(--screen-padding-left);
-    font-size: 12px;
-    font-weight: 900;
-    text-transform: uppercase;
-    z-index: 20;
-  }
 
   .altruist__img {
     max-width: 350px;

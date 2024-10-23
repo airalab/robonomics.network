@@ -218,6 +218,7 @@ export default {
   top: -120px;
   transform: scale(1.3);
   transition: height 0.2s ease-out;
+  pointer-events: none;
 }
 
 .altruist-page.altruist-model {

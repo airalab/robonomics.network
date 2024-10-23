@@ -193,17 +193,8 @@ em {
   font-style: italic;
 }
 
-ul { 
-  margin-left: 1rem;
-}
-
-ol { 
-  list-style-type: decimal; 
+ul, ol { 
   margin-left: var(--space-text);
-}
-
-ol li {
-  margin-bottom: .6rem;
 }
 
 a:not(.button), .link:not(.button) {
@@ -358,21 +349,31 @@ table tbody tr:hover {
   }
 }
 
-p, ul, ol, blockquote, table, dd {
+p, ul, ol, blockquote, table, dd, summary, details {
   margin-bottom: var(--space-text);
+}
+
+ul.list-smallgap li , ol.list-smallgap li {
+  margin-bottom: calc(var(--space-text) * 0.5);
 }
 
 p.text-small {
   margin-bottom: calc(var(--space-text) * 0.5);
 }
 
-p:last-child, ul:last-child, ol:last-child, blockquote:last-child, table:last-child, dd:last-child {
+/* p:last-child, ul:last-child, ol:last-child, blockquote:last-child, table:last-child, dd:last-child {
   margin-bottom: 0;
+} */
+
+li:not(:last-child) {
+  margin-bottom: var(--space);
 }
 
-/* li:not(:last-child) {
-  margin-bottom: var(--space);
-} */
+summary { 
+  color: var(--color-link);
+  cursor: pointer;
+  font-variation-settings: var(--font-flex-bold);
+}
 
 .text-col-2, .text-col-3 {
   column-count: 2;
