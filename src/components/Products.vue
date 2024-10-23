@@ -54,7 +54,8 @@ export default {
           status: 'ready',
           text: 'The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.',
           cases: 'Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.',
-          casesImages: ['risc-v-cases-1.webp', 'risc-v-cases-2.webp', 'risc-v-cases-3.webp', 'risc-v-cases-4.webp']
+          casesImages: ['risc-v-cases-1.webp', 'risc-v-cases-2.webp', 'risc-v-cases-3.webp', 'risc-v-cases-4.webp'],
+          titleLink: '/devices/risc-v'
         },
         {
           id: 2,
