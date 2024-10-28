@@ -95,6 +95,10 @@ export default {
     color: var(--color-link);
 }
 
+.socials li:not(:last-child) {
+    margin-bottom: 0;
+}
+
 .socials svg {
     display: block;
     width: 100%;

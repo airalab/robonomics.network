@@ -40,6 +40,8 @@
   }
 
   .navigation a {
+    display: block;
+    margin-bottom: calc(var(--space) * .5);
     color: var(--text-color);
     font-size: 80%;
     font-variation-settings: var(--font-flex-bold);
@@ -57,7 +59,8 @@
 
   ul li {
     padding-left: var(--space);
-    margin-bottom: calc(var(--space) * 0.3);
+    /* margin-bottom: calc(var(--space) * 0.3); */
+    margin-bottom: 0;
     break-inside: avoid-column;
   }
 
