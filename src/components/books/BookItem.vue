@@ -90,6 +90,11 @@ export default {
     font-size: calc(var(--base-font-size) * 0.9);
   }
 
+  [dir="rtl"]   .e-book__header span {
+    margin-right: 0;
+    margin-left: calc(var(--space) * 0.5);
+  }
+
   .e-books__links {
     font-weight: 500;
     max-width: 186px;

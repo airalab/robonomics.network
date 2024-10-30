@@ -36,7 +36,7 @@
         </div>
 
         <span class="contacts__form-agreement">
-          By clicking on the button “Email me” you agree to receive regular emails from Robonomics. 
+          {{ $t('By clicking on the button “Email me” you agree to receive regular emails from Robonomics.') }}
         </span>
       </gsp-form>
     </div>

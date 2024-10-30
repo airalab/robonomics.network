@@ -1,28 +1,28 @@
 <template>
   <nav class="navigation">
-    <ul aria-label="Use it">
-      <li><g-link aria-label="Robonomics smart devices" to="/devices/">Smart devices</g-link></li>
-      <li><g-link aria-label="Robonomics dapp" to="https://robonomics.app/">dapp</g-link></li>
-      <li><g-link aria-label="Robonomics merch" to="/merch/">Wearable merch</g-link></li>
+    <ul :aria-label="$t('Use it')">
+      <li><g-link aria-label="Robonomics smart devices" to="/devices/">{{ $t('Smart devices') }}</g-link></li>
+      <li><g-link aria-label="Robonomics dapp" to="https://robonomics.app/">{{ $t('dapp') }}</g-link></li>
+      <li><g-link aria-label="Robonomics merch" to="/merch/">{{ $t('Wearable merch') }}</g-link></li>
     </ul>
 
-    <ul aria-label="Learn">
-      <li><g-link aria-label="Robonomics academy" to="https://robonomics.academy/">Academy</g-link></li>
-      <li><g-link aria-label="Robonomics wiki" to="https://wiki.robonomics.network/">Wiki</g-link></li>
+    <ul :aria-label="$t('Learn')">
+      <li><g-link aria-label="Robonomics academy" to="https://robonomics.academy/">{{ $t('Academy') }}</g-link></li>
+      <li><g-link aria-label="Robonomics wiki" to="https://wiki.robonomics.network/">{{ $t('Wiki') }}</g-link></li>
     </ul>
 
-    <ul aria-label="Explore website">
-      <li><g-link aria-label="Robonomics papers" to="/papers/">Science & White paper</g-link></li>
-      <li><g-link aria-label="about XRT" to="/xrt/">Tokenomics</g-link></li>
-      <li><g-link aria-label="use cases" to="/cases/">Cases</g-link></li>
-      <li><g-link aria-label="timeline" to="/timeline/">Timeline</g-link></li>
-      <li><g-link aria-label="assets" to="/logos-and-assets/">Brand assets</g-link></li>
-      <li><g-link aria-label="wallpapers" to="/wallpapers/">Wallpapers</g-link></li>
-      <li><g-link aria-label="Home assistant themes" to="/home-assistant-themes/">Home assistant themes</g-link></li>
-      <li><g-link aria-label="Robonomics NFT" to="/nft/">NFT</g-link></li>
-      <li><g-link aria-label="books" to="/books/">Books & reading inspiration</g-link></li>
-      <li><g-link aria-label="blog" to="/blog/">Blog</g-link></li>
-      <li><g-link aria-label="contact us" to="/contact/">Contacts</g-link></li>
+    <ul :aria-label="$t('Explore website')">
+      <li><g-link aria-label="Robonomics papers" to="/papers/">{{$t('Science & White paper')}}</g-link></li>
+      <li><g-link aria-label="about XRT" to="/xrt/">{{ $t('Tokenomics') }}</g-link></li>
+      <li><g-link aria-label="use cases" to="/cases/">{{ $t('Cases') }}</g-link></li>
+      <li><g-link aria-label="timeline" to="/timeline/">{{ $t('Timeline') }}</g-link></li>
+      <li><g-link aria-label="assets" to="/logos-and-assets/">{{ $t('Brand assets') }}</g-link></li>
+      <li><g-link aria-label="wallpapers" to="/wallpapers/">{{ $t('Wallpapers') }}</g-link></li>
+      <li><g-link aria-label="Home assistant themes" to="/home-assistant-themes/">{{ $t('Home assistant themes') }}</g-link></li>
+      <li><g-link aria-label="Robonomics NFT" to="/nft/">{{ $t('NFT') }}</g-link></li>
+      <li><g-link aria-label="books" to="/books/">{{ $t('Books & reading inspiration') }}</g-link></li>
+      <li><g-link aria-label="blog" to="/blog/">{{ $t('Blog') }}</g-link></li>
+      <li><g-link aria-label="contact us" to="/contact/">{{ $t('Contacts') }}</g-link></li>
     </ul>
   </nav>
 </template>
@@ -36,7 +36,7 @@
     line-height: 1.2;
     padding: var(--space) var(--layout-sidepadding);
     text-transform: uppercase;
-    min-height: 23ch;
+    min-height: 32ch;
   }
 
   .navigation a {
@@ -79,7 +79,7 @@
   }
 
   ul:nth-child(3) {
-    column-count: 4;
+    column-count: 4 !important;
     gap: var(--space);
   }
 

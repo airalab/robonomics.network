@@ -67,8 +67,8 @@ export default {
       cases: [
         {
           id: 0,
-          title: 'Fronius Solar.web integration with Home Assistant',
-          description: 'Collaboration with real estate developer on Cyprus for tracking the daily distribution, consumption and offsetting any excess carbon footprint.',
+          title: this.$t('Fronius Solar.web integration with Home Assistant'),
+          description: this.$t('Collaboration with real estate developer on Cyprus for tracking the daily distribution, consumption and offsetting any excess carbon footprint.'),
           path: 'cases/fronius-solar-web',
           cover_image: 'fronius-solar-web.png',
           metaImg: '/website_cover_fronius_solar_web.png',
@@ -85,8 +85,8 @@ export default {
         },
         {
           id: 1,
-          title: 'Robonomics Middleware Framework for ROS 2',
-          description: 'One of our goals in developing this case is to turn Robonomics into ROS 2 Middleware.This will allow us to use Robonomics on Substrate to create an dapp that can run ROS 2 right from the browser!',
+          title: this.$t('Robonomics Middleware Framework for ROS 2'),
+          description: this.$t('One of our goals in developing this case is to turn Robonomics into ROS 2 Middleware.This will allow us to use Robonomics on Substrate to create an dapp that can run ROS 2 right from the browser!'),
           path: 'cases/rust-for-ros2',
           cover_image: 'rust-ros2.jpg',
           metaImg: '/website_cover_rust_ros2.png',
@@ -103,8 +103,8 @@ export default {
         },
         {
           id: 2,
-          title: 'Eisenkoch, the robot chef',
-          description: 'Real case fot the robot equipped with two waffle irons and baking 6 waffles at the same time in 5-7 minutes.',
+          title: this.$t('Eisenkoch, the robot chef'),
+          description: this.$t('Real case fot the robot equipped with two waffle irons and baking 6 waffles at the same time in 5-7 minutes.'),
           path: 'cases/eisenkoch',
           cover_image: 'eisenkoch.jpg',
           // progress field needs for "sort by progress" filter
@@ -120,8 +120,8 @@ export default {
         },
         {
           id: 3,
-          title: 'Blockchain-powered smart coffee machine',
-          description: 'Robonomics coffee - is a smart coffee machine integrated in Robonomics Network. This project aims to show Robonomics potential in the IoT sphere by a real-world example.',
+          title: this.$t('Blockchain-powered smart coffee machine'),
+          description: this.$t('Robonomics coffee - is a smart coffee machine integrated in Robonomics Network. This project aims to show Robonomics potential in the IoT sphere by a real-world example.'),
           path: 'cases/blockchain-coffee-machine',
           cover_image: 'blockchain-coffee.jpg',
           metaImg: '/website_cover_coffee-machine.jpg',
@@ -138,7 +138,7 @@ export default {
         },
         {
           id: 4,
-          title: 'Water environmental inspector',
+          title: this.$t('Water environmental inspector'),
           description: '',
           path: 'cases/water-inspector',
           cover_image: 'water-inspector.jpg',
@@ -389,6 +389,10 @@ export default {
 
   .case-page__tag:not(:last-child) {
     margin-right: calc(var(--space) * 0.3);
+  }
+
+  [dir="rtl"] .case-page__tag:not(:last-child) {
+    margin-left: calc(var(--space) * 0.3);
   }
 
 

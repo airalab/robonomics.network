@@ -101,6 +101,11 @@ export default {
     text-transform: uppercase;
   }
 
+  [dir="rtl"]  .backlink  {
+    margin-left: 0;
+    margin-right: var(--layout-sidepadding);
+  }
+
   .backlink:hover {
     color: var(--color-link);
   }

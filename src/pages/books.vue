@@ -1,5 +1,5 @@
 <template>
-  <layout title="Read books">
+  <layout :title="$t('Read books')">
 
     <MetaInfo
       pageTitle="Books"

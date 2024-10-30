@@ -12,25 +12,25 @@
 
         <div>
             <span class="highlight-solid-green" :class="{'blue': status === 'coming'}">
-                <template v-if="status === 'ready'">Early access for community members</template>
-                <template v-if="status === 'coming'">Coming soon</template>
+                <template v-if="status === 'ready'">{{ $t('Early access for community members') }}</template>
+                <template v-if="status === 'coming'">{{ $t('Coming soon') }}</template>
             </span>
         </div>
 
         <div class="linereduce">
-          <g-link v-if="status === 'ready'" class="highlight" to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/">How to get membership pass</g-link>
+          <g-link v-if="status === 'ready'" class="highlight" to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/">{{$t('How to get membership pass') }}</g-link>
         </div>
       </div>
 
     </div>
     
-    <div class="product__model" :class="{'product__model--altruist': title === 'Altruist outdoor sensor'}">
+    <div dir="ltr" class="product__model" :class="{'product__model--altruist': defaultTitle === 'Altruist outdoor sensor'}">
       <slot/>
     </div>
 
     <div class="product__text">
       <p v-html="text"></p>
-      <h5>Use case:</h5>
+      <h5>{{$t('Use case:')}}</h5>
       <p class="product__use-text">{{ cases }}</p>
     </div>
     <div class="product__adds" v-if="casesImages && casesImages.length">
@@ -59,6 +59,7 @@ export default {
         casesImages: this.product.casesImages,
         titleLink: this.product.titleLink,
         status: this.product.status,
+        defaultTitle: this.product.defaultTitle
     }
   },
 
@@ -97,6 +98,11 @@ div[class^='product__']:not(.product__model) {
   font-size: 125px;
   line-height: 0.8;
   font-weight: 900;
+}
+
+[dir="rtl"] .product__number {
+  margin-right: 0;
+  margin-left: var(--space);
 }
 
 .highlight-solid-green {
@@ -156,15 +162,6 @@ a.highlight, .highlight-solid-green {
 }
 
 @media screen and (max-width: 520px) {
-  /* .product__number {
-    font-size: 45px;
-    margin-right: calc(var(--space) * 0.5);
-  }
-
-  .highlighted-text {
-    font-size: 10px;
-    padding: 0.2rem 0rem;
-  } */
 
   .with-models .product__model {
     min-height: 480px;
