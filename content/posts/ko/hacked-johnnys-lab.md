@@ -1,5 +1,5 @@
 ---
-title: 해킹된 ��니의 연구소
+title: 해킹된 니의 연구소
 date: 2024-06-25
 published: true
 locale: 'ko'
@@ -21,7 +21,7 @@ abstract: "여보세요! PaTara입니다. 최근 Robonomics가 주최한 이벤�
 (정확히 479,001,600). 처리해야 할 양이 상당하다!
 
 
-## 전략 1: 어���석고 직접적인 것.
+## 전략 1: 어�석고 직접적인 것.
 
 음, 무엇이 더 필요한가, 그냥 가서 정리하면 된다! 그러나 여기 첫 번째 속임수가 있다: 12! 기억구문은 내 64GB RAM에 맞지 않았다! IDE 콘솔에서 SIGTERM 오류가 발생했다. 
 평가용 실행. 그러나 문제는: 내 노트북은 심지어 최대 속도로 팬을 돌리지 않았다! 단일 코어만 로드되었다. 
@@ -42,7 +42,7 @@ abstract: "여보세요! PaTara입니다. 최근 Robonomics가 주최한 이벤�
 <rb-image zoom src="./images/hacked-johnnys-lab/1_1.png" alt="CPU Load"/>
 
 
-네트워크에서 extrinsics를 수행하는 것이었다. 노드는 단순히 DDOS로 나를 금지시킬 ��이고 그렇지 않아도 영원히 걸릴 것이다! 
+네트워크에서 extrinsics를 수행하는 것이었다. 노드는 단순히 DDOS로 나를 금지시킬 이고 그렇지 않아도 영원히 걸릴 것이다! 
 디버깅 목적으로 스크립트를 시작했고 (노드 통신에는 
 [py-substrate-interface](https://pypi.org/project/substrate-interface/1.0.3/) 패키지를 사용했음) 호출 전에
 

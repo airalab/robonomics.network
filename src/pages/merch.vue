@@ -1,6 +1,6 @@
 <template>
   
-  <layout title="Robonomics merch" >
+  <layout :title="$t('Robonomics merch')" >
 
     <MetaInfo
       pageTitle = "Robonomics merch"

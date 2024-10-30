@@ -8,7 +8,7 @@
   "What do we have here: a set of 12 words in a mixed order. This gives us 12! (factorial) options of phrases": "ماذا لدينا هنا: مجموعة من 12 كلمة بترتيب مختلط. وهذا يعطينا 12 خيارًا (عامليًا) من العبارات",
   "(479’001’600 to be precise). Quite an amount to process!": "(479’001’600 على وجه التحديد). كمية كبيرة من المال تحتاج إلى معالجتها!",
   "## Strategy 1: dumb and straightforward.": "## الإستراتيجية 1: غبية ومباشرة.",
-  "Well, what else do I need, just go and sort through! But here is the first trick: 12! mnemonic phrases just didn’t fit in": "حسنًا، ��اذا آخر يحتاج، فقط اذهب وانقب! ولكن ها هو الخدعة الأولى: 12! العبارات الذاكرية لم تناسب فقط",
+  "Well, what else do I need, just go and sort through! But here is the first trick: 12! mnemonic phrases just didn’t fit in": "حسنًا، اذا آخر يحتاج، فقط اذهب وانقب! ولكن ها هو الخدعة الأولى: 12! العبارات الذاكرية لم تناسب فقط",
   "my 64 GB RAM! I got a SIGTERM error in the IDE console.": "64 جيجابايت من ذاكرة الوصول العشوائي! حصلت على خطأ SIGTERM في وحدة التحكم IDE.",
   "Just an evaluative run. But the thing is: my laptop didn’t even spin its fans at max! A single core was loaded.": "تشغيل تقييمي فقط. ولكن المشكلة هي: لم تقم الكمبيوتر المحمول بتشغيل مراوحه حتى الحد الأقصى! تم تحميل نواة واحدة فقط.",
   "I googled a Python [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) package to load all": "لقد بحثت عن حزمة Python [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) لتحميل كل",
@@ -42,8 +42,8 @@
   "Look. The rules say that the desired account has **exactly** 42 XRT. Why wouldn’t I get all the active addresses in the network,": "فرزها بوجود 42 XRT بالضبط ومقارنة كل عنوان تم إنشاؤه بقائمة الأهداف المحتملة",
   "filter them by having exactly 42 XRT and compare each generated address with a list of possible targets": "(حوالي 20، تنخفض إلى 1 في النهاية). سهلة القول والقيام بها.",
   "(around 20, decreasing to 1 in the end). Easy to say and to do.": "الآن، بعد تعديل النص الخاص بي مرة أخرى أخيرًا وصلت إلى استعلام واحد فقط وعملية واحدة ستمنحني بالتأكيد",
-  "Now, after modifying my script once more I finally made it to only one query and one transaction which would for sure": "الجائزة المرغ��بة.",
+  "Now, after modifying my script once more I finally made it to only one query and one transaction which would for sure": "الجائزة المرغبة.",
   "give me the desired prize.": "الآن، بعد مشاهدة 25 ثانية من الفيديو (في الوقت نفسه ملء كلمات ذاكرية)،",
   "Now, after I watched 25 seconds of the video (meanwhile filling in the words of a mnemonic),": "سأحتاج فقط إلى 30 ثانية كحد أقصى لسرقة الجائزة. قد نجحت.",
-  "I would only need 30 seconds at max to steal the reward. Hacked it.": "سأحتاج ف��ط 30 ثانية كحد أقصى لسرقة الجائزة. تم اختراقها."
+  "I would only need 30 seconds at max to steal the reward. Hacked it.": "سأحتاج فط 30 ثانية كحد أقصى لسرقة الجائزة. تم اختراقها."
 }

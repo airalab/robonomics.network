@@ -56,12 +56,15 @@ img {
 }
 
 /* arabic */
-html[lang="ar"] h1, html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] h4,html[lang="ar"] h5,html[lang="ar"] h6,html[lang="ar"] p,html[lang="ar"] a,html[lang="ar"] span {
-  direction: rtl;
+[dir="rtl"] h1, [dir="rtl"] h2,[dir="rtl"] h3,[dir="rtl"] h4,[dir="rtl"] h5,html[lang="ar"] h6,[dir="rtl"] p,[dir="rtl"] a,[dir="rtl"] span {
   unicode-bidi: embed;
 }
 
-html[lang="ar"] p {
-  text-align: end;
+[dir="rtl"] h1, [dir="rtl"] h2,[dir="rtl"] h3,[dir="rtl"] h4,[dir="rtl"] h5 {
+  text-align: right !important;
 }
+
+/* [dir="rtl"] p {
+  text-align: end;
+} */
 

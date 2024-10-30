@@ -262,6 +262,7 @@ export default {
 
   .logos-and-assets__banner {
     margin: 0;
+    margin-bottom: var(--space);
     padding-bottom: var(--space);
   }
 

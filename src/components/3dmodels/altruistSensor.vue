@@ -224,7 +224,6 @@ export default {
 .altruist-page.altruist-model {
   top: 50%;
   left: var(--space);
-  left: var(--space);
   height: 435px;
   transform: scale(1.3) rotate(-90deg) translate(0%, -18%);
 }
@@ -233,6 +232,16 @@ export default {
   transform: scale(1.3) rotate(-90deg) translate(0%, -28%);
 }
 
+[dir="rtl"] .product__model--altruist .altruist-page.altruist-model {
+  transform: scale(1.3) rotate(-90deg) translate(0%, -32%);
+}
+
+
+[dir="rtl"] .altruist-page.altruist-model {
+  transform: scale(1.3) rotate(-90deg) translate(0%, -60%)
+}
+
+ 
 .altruist-model-part {
   position: absolute;
   left: 0;
@@ -271,6 +280,11 @@ export default {
   .product__model--altruist .altruist-page.altruist-model {
     transform: scale(1.0) rotate(-90deg) translate(-2%, -58%);
   }
+
+  [dir="rtl"] .product__model--altruist .altruist-page.altruist-model,
+  [dir="rtl"] .altruist-page.altruist-model {
+    transform: scale(1.0) rotate(-90deg) translate(-2%, -56%);
+  }
  
 }
 
@@ -279,6 +293,11 @@ export default {
   .altruist-page.altruist-model {
     height: 240px;
     transform: scale(0.8) rotate(-90deg) translate(-7%, -102%);
+  }
+
+  [dir="rtl"] .product__model--altruist .altruist-page.altruist-model,
+  [dir="rtl"] .altruist-page.altruist-model {
+    transform: scale(0.8) rotate(-90deg) translate(-7%, -97%);
   }
 
 
@@ -294,6 +313,11 @@ export default {
   .product__model--altruist .altruist-page.altruist-model {
     transform: scale(0.75) rotate(-90deg) translate(-2%, -88%);
   }
+
+  [dir="rtl"] .product__model--altruist .altruist-page.altruist-model,
+  [dir="rtl"] .altruist-page.altruist-model {
+    transform: scale(0.75) rotate(-90deg) translate(-4%, -90%);
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -305,6 +329,11 @@ export default {
   .altruist-page.altruist-model {
     height: 220px;
     transform: scale(0.8) rotate(-90deg) translate(-7%, -64%) !important;
+  }
+
+  [dir="rtl"] .product__model--altruist .altruist-page.altruist-model,
+  [dir="rtl"] .altruist-page.altruist-model {
+    transform:  scale(0.7) rotate(-90deg) translate(-7%, -84%) !important;
   }
 
 }

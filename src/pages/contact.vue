@@ -1,5 +1,5 @@
 <template>
-  <layout title="Community & Contacts">
+  <layout :title="$t('Community & Contacts')">
 
     <MetaInfo
       pageTitle = "Contacts"
@@ -129,6 +129,7 @@
           {
             id: 4,
             title: this.$t('Telegram chat'),
+            defaultTitle: 'Telegram chat',
             description: this.$t('Local communities & news. You are welcome!'),
             img: 'tg-logo.svg',
             rawSvg: `
@@ -174,7 +175,7 @@
     computed: {
 
       allTelegrams() {
-        return this.contacts.filter(asset => asset.title === 'Telegram chat')
+        return this.contacts.filter(asset => asset.defaultTitle === 'Telegram chat')
       }
     },
 

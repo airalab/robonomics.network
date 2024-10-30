@@ -5,7 +5,7 @@
     <Navigation/>
 
     <section class="footer-privacy">
-        <g-link aria-label="see privacy policy page" to="/privacy-policy/">Privacy Policy</g-link>
+        <g-link aria-label="see privacy policy page" to="/privacy-policy/">{{ $t('Privacy Policy') }}</g-link>
     </section>
     
   </footer>
@@ -24,13 +24,19 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
     footer {
         margin-top: calc(var(--space) * 3);
     }
 
     footer a {
         color: var(--text-color);
+    }
+
+
+    [dir="rtl"] footer nav ul li{
+        padding-right: var(--space);
+        padding-left: 0;
     }
 
 
