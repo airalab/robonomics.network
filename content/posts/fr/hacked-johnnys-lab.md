@@ -82,7 +82,7 @@ ordinateur portable n'explose pas avec des données en chaîne dans sa ROM) J'ai
 regarder une vidéo entière. Si seulement je pouvais connaître l'adresse exacte du compte! Mais pour cela j'ai besoin d'une phrase mnémonique... **Ou en ai-je vraiment besoin?** 
 je regarde une vidéo entière. Si seulement je pouvais connaître l'adresse exacte du compte ! Mais pour cela, il me faut une phrase mnémotechnique… **Ou est-ce vraiment le cas ?**
 
-Regardez. Les r��gles disent que le compte désiré a **exactement** 42 XRT. Pourquoi ne pas obtenir toutes les adresses actives dans le réseau,
+Regardez. Les rgles disent que le compte désiré a **exactement** 42 XRT. Pourquoi ne pas obtenir toutes les adresses actives dans le réseau,
 les filtrer en ayant exactement 42 XRT et comparer chaque adresse générée avec une liste de cibles possibles 
 (environ 20, diminuant à 1 à la fin). Facile à dire et à faire. 
 

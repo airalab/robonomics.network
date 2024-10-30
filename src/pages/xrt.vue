@@ -530,6 +530,11 @@ query {
         text-align: left;
     }
 
+    [dir="rtl"] .token__link {
+        text-align: right;
+    }
+    
+
     .token__link:not(last-child) {
         margin-bottom: var(--space);
     }
@@ -539,6 +544,13 @@ query {
         background-size: 20px 20px;
         background-repeat: no-repeat;
         background-position: left
+    }
+
+    [dir="rtl"] .token__link h3 {
+        text-align: right;        
+        background-position: right;
+        padding-right: 34px;
+        padding-left: 0;
     }
 
     .token__link.timeline h3 {

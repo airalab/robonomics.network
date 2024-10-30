@@ -1,7 +1,7 @@
 <template>
 
   <ul class="list-simple grid-3"  v-if="assets && allTelegrams.length">
-    <li class="share" :class="classes" v-for="(asset, key) in assets" :key="key" v-if="asset.title != 'Telegram chat'">
+    <li class="share" :class="classes" v-for="(asset, key) in assets" :key="key" v-if="asset.defaultTitle != 'Telegram chat'">
       <ShareItem :asset=asset>
         <div v-html="asset.rawSvg">
         </div>
@@ -36,6 +36,11 @@ export default {
     classes: '',
     allTelegrams: { type: Array, default: () => [] },
   },
+
+  mounted() {
+    console.log(this.$props.assets)
+    console.log(this.$props.allTelegrams)
+  }
 
 
 }

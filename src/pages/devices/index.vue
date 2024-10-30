@@ -1,5 +1,5 @@
 <template>
-  <layout title="Robonomics hardware">
+  <layout :title="$t('Robonomics hardware')">
 
     <MetaInfo
       pageTitle = "Smart devices from Robonomics"
@@ -8,7 +8,7 @@
     />
 
     <section class="devices-intro layout layout__content">
-      <p><b>Meet smart devices & futuristic hardware from an autonomous team with extensive expertise in robotics, blockchain, and IoT</b>.</p>
+      <p><b>{{ $t('Meet smart devices & futuristic hardware from an autonomous team with extensive expertise in robotics, blockchain, and IoT') }}</b>.</p>
     </section>
 
     <div class="layout layout__content">

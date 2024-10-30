@@ -7,7 +7,7 @@
       :pageImage = "'/website_cover_themes.png'"
     />
 
-    <section class="themes__banner section__blue blue-banner">
+    <section class="section themes__banner section__blue blue-banner">
       <div class="devices__main-title title-with-bg">
         <h1><span>{{ $t('Home assistant themes') }}</span></h1>
       </div>
