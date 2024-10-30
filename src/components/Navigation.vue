@@ -79,7 +79,7 @@
   }
 
   ul:nth-child(3) {
-    column-count: 4 !important;
+    column-count: 4;
     gap: var(--space);
   }
 
