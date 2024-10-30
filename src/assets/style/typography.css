@@ -133,23 +133,6 @@ h5 {
   }
 }
 
-.turned-text {
-  position: absolute;
-  left: -20px;
-  top: 0;
-  display: block;
-  font-family: var(--font-family);
-  font-size: 24px;
-  font-weight: 900;
-  color: var(--rb-color-green-accent);
-  transform: rotate(-90deg) translate(-100%, 0);
-  transform-origin: 0 0;
-  white-space: nowrap;
-  text-transform: uppercase;
-  z-index: 900;
-}
-
-
 .subtitle {
   font-size: 90%;
   font-style: italic;
@@ -174,10 +157,9 @@ h5 {
 
 
 small, .text-small { font-size: 70%; line-height: 1.2; }
-.text-little { font-size: 80%; }
 .text-big { font-size: 120%; line-height: 1.6; }
 
-.text-small p:not(:last-child), .text-little p:not(:last-child) { margin-bottom: calc(var(--space-text) * 0.5);}
+.text-small p:not(:last-child) { margin-bottom: calc(var(--space-text) * 0.5);}
 
 blockquote {
   font-size: 110%;
@@ -240,7 +222,7 @@ hr.color-lightgray {
 }
 
 
-.hyphens{
+.hyphens {
   text-align: justify !important;
   hyphens: auto;
 }
@@ -269,24 +251,6 @@ code {
 
 code::-webkit-scrollbar { display: none; }
 
-.code-inline {
-  display: inline;
-  vertical-align: unset;
-  border-radius: 3px;
-  /* direction: ltr; */
-  text-align: left;
-  word-spacing: normal;
-  /* word-break: normal; */
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
-  -webkit-hyphens: none;
-  hyphens: none;
-  word-break: break-all;
-  padding: 0.15rem 0.25rem;
-  color: var(--color-light);
-  background: var(--color-link);
-}
 
 div pre[class*="language-"] {
   padding-right: 3rem !important;
@@ -361,10 +325,6 @@ p.text-small {
   margin-bottom: calc(var(--space-text) * 0.5);
 }
 
-/* p:last-child, ul:last-child, ol:last-child, blockquote:last-child, table:last-child, dd:last-child {
-  margin-bottom: 0;
-} */
-
 li:not(:last-child) {
   margin-bottom: var(--space);
 }
@@ -397,23 +357,6 @@ summary {
     column-count: 2;
   }
 }
-
-.text-col-nobreak {
-  break-inside: avoid-column;
-}
-
-/* ambassador program */
-.label-red {
-  display: inline-block;
-  padding: 0 0.2rem;
-  background-color: var(--color-red);
-  color: var(--color-light)
-}
-
-.underline {
-  text-decoration: underline;
-}
-
 
 .highlight-solid-green {
   background-color: var(--rb-color-green-accent);

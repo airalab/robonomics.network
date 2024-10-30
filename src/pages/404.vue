@@ -20,18 +20,12 @@
 
 <script>
   import MetaInfo from '~/components/MetaInfo.vue'
-  import Parallax from 'parallax-js'
 
   export default {
 
     components: {
       MetaInfo
-    },
-
-    mounted() {
-      const scene = document.getElementById('parallax');
-      const parallaxInstance = new Parallax(scene);
-    },
+    }
 
   }
 </script>

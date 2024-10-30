@@ -17,7 +17,7 @@
             <div>
               <span>{{ $t('contact us at') }}:  <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a> </span>
             </div>
-            <h3>Meanwhile, you can check available translations:</h3>
+            <h3>{{ $t('Meanwhile, you can check available translations') }}:</h3>
           </div>
 
           <section class="layout blog_grid">
@@ -142,6 +142,10 @@ export default {
 
   .text-wrapper {
     padding-top: var(--space);
+    text-align: center;
+  }
+
+  [dir="rtl"] .text-wrapper p {
     text-align: center;
   }
 

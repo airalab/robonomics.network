@@ -41,35 +41,36 @@ export default {
       products:[
         {
           id: 0,
-          title: 'Altruist outdoor sensor',
+          title: this.$t('Altruist outdoor sensor'),
+          defaultTitle: 'Altruist outdoor sensor',
           status: 'ready',
-          text: 'A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized <a aria-label="see decentralized sensor map" href="https://sensors.social/" target="_blank">sensor map</a>.',
-          cases: 'Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.',
+          text: `${this.$t('A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized')} <a aria-label="see decentralized sensor map" href="https://sensors.social/" target="_blank">${this.$t('sensor map')}</a>.`,
+          cases: this.$t('Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.'),
           casesImages: ['altruist-cases-1.webp', 'altruist-cases-2.webp', 'altruist-cases-3.webp', 'altruist-cases-4.webp'],
           titleLink: '/devices/altruist'
         },
         {
           id: 1,
-          title: 'risc-v open source server',
+          title: this.$t('risc-v open source server'),
           status: 'ready',
-          text: 'The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.',
-          cases: 'Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.',
+          text: this.$t('The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.'),
+          cases: this.$t('Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.'),
           casesImages: ['risc-v-cases-1.webp', 'risc-v-cases-2.webp', 'risc-v-cases-3.webp', 'risc-v-cases-4.webp'],
           titleLink: '/devices/risc-v'
         },
         {
           id: 2,
-          title: 'Hikikomori smart Tamagotchi',
+          title: this.$t('Hikikomori smart Tamagotchi'),
           status: 'coming',
-          text: 'Finally, a smart Tamagotchi that’s more than just a game! A smart wearable station that checks the status of sensors from your home or clothing.',
-          cases: 'Connect your smart home and smart clothing to the Hikikomori to monitor sensor data—right at your fingertips. Literally.'
+          text: this.$t('Finally, a smart Tamagotchi that’s more than just a game! A smart wearable station that checks the status of sensors from your home or clothing.'),
+          cases: this.$t('Connect your smart home and smart clothing to the Hikikomori to monitor sensor data—right at your fingertips. Literally.')
         },
         {
           id: 3,
-          title: 'Safe on a smart contract',
+          title: this.$t('Safe on a smart contract'),
           status: 'coming',
-          text: 'A safe that unlocks with a smart contract based on user-defined conditions.',
-          cases: 'View logs of the safe’s openings and closings. Program the safe to suit your needs, such as granting access to trusted accounts after an extended period of inactivity.'
+          text: this.$t('A safe that unlocks with a smart contract based on user-defined conditions.'),
+          cases: this.$t('View logs of the safe’s openings and closings. Program the safe to suit your needs, such as granting access to trusted accounts after an extended period of inactivity.')
         },
       ],
     }

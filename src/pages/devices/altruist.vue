@@ -1,6 +1,6 @@
 <template>
 
-  <layout :backlink="{title: 'All hardware', link: '/devices/', label: 'Go to all hardware'}" :title="$t('Altruist outdoor sensor')">
+  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('Altruist outdoor sensor')">
 
     <MetaInfo
       pageTitle = "Smart devices from Robonomics"
@@ -10,110 +10,108 @@
 
     <div class="layout layout__content">
       <Altruist class="altruist-page"/>
-      <p><b>A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">sensor map</g-link></b>.</p>
-      <p>Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.</p>
-      <p class="align-center"><g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">Available for members</g-link></p>
+      <p><b>{{ $t('A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized') }} <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">{{ $t('sensor map') }}</g-link></b>.</p>
+      <p>{{$t('Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.')}}</p>
+      <p class="align-center"><g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">{{ $t('Available for members') }}</g-link></p>
 
-      <h2 class="title-lined"><span>Usage</span></h2>
+      <h2 class="title-lined"><span>{{ $t('Usage') }}</span></h2>
 
       <section class="section">
-        <h3 class="highlight-solid-green">Into the map</h3>
-        <p>Connect your device as simple as other smart devices and look at your environmental outdoor data on a decentralized 
-          fully distributed sensor map, <g-link class="highlight" to="https://sensors.social/" aria-label="check the sensor map">this</g-link> or 
-          any other independent fork.</p>
-        <g-link class="depin__github" aria-label="check our firmware" to="https://github.com/airalab/altruist-firmware">Open-source under the hood: check our firmware</g-link>
+        <h3 class="highlight-solid-green">{{ $t('Into the map') }}</h3>
+        <p> {{ $t('Connect your device as simple as other smart devices and look at your environmental outdoor data on a decentralized fully distributed sensor map') }}, <g-link class="highlight" to="https://sensors.social/" aria-label="check the sensor map">{{ $t('this') }}</g-link> {{ $t('or any other independent fork') }}.</p>
+        <g-link class="depin__github" aria-label="check our firmware" to="https://github.com/airalab/altruist-firmware">{{ $t('Open-source under the hood: check our firmware') }}</g-link>
       </section>
 
       <section class="section">
-        <h3 class="highlight-solid-green">Join the Connectivity</h3>
-        <p>Data processing is always a sensitive issue. That's why we offer a fully open-source 
-          <g-link class="highlight" to="https://github.com/airalab/sensors-connectivity" aria-label="check open source connectivity module">connectivity module</g-link>  
-          giving you the freedom to choose which servers to use for processing. No closed clouds, no opaque code.</p>
-        <h5>Use Robonomics Connectivity</h5>
-        <p>Robonomics established three Connectivity hubs to ensure a stable connection. This option switched on by default on the station.</p>
-        <h5>Create your own Connectivity</h5>
-        <p>You may launch your own hub for receiving data from Altruist Civil Station and further processing.</p>
+        <h3 class="highlight-solid-green">{{ $t('Join the Connectivity') }}</h3>
+        <p> {{ $t("Data processing is always a sensitive issue. That's why we offer a fully open-source") }}
+          <g-link class="highlight" to="https://github.com/airalab/sensors-connectivity" aria-label="check open source connectivity module">{{$t('connectivity module')}}</g-link>  
+          {{ $t('giving you the freedom to choose which servers to use for processing. No closed clouds, no opaque code.') }}</p>
+        <h5>{{ $t('Use Robonomics Connectivity') }}</h5>
+        <p>{{$t('Robonomics established three Connectivity hubs to ensure a stable connection. This option switched on by default on the station.')}}</p>
+        <h5>{{ $t('Create your own Connectivity') }}</h5>
+        <p>{{ $t('You may launch your own hub for receiving data from Altruist Civil Station and further processing.') }}</p>
         <details>
-          <summary>Steps to set up your Connectivity</summary>
+          <summary>{{$t('Steps to set up your Connectivity')}}</summary>
           <ol>
             <li>
-              <p><b>Deploy Connectivity</b></p>
-              <p>Technical requirements:</p>
+              <p><b>{{ $t('Deploy Connectivity') }}</b></p>
+              <p>{{ $t('Technical requirements:') }}</p>
               <ul class="list-smallgap">
-                <li>2 CPU cores;</li>
-                <li>4 GB RAM;</li>
-                <li>40 GB storage;</li>
-                <li>Static IP.</li>
+                <li>{{ $t('2 CPU cores;') }}</li>
+                <li>{{ $t('4 GB RAM;') }}</li>
+                <li>{{ $t('40 GB storage;') }}</li>
+                <li>{{$t('Static IP')}}.</li>
               </ul>
-              <p>Than set up <g-link aria-label="see open source connectivity module" to="https://github.com/airalab/sensors-connectivity">connectivity module</g-link> and follow <g-link aria-label="check the instruction for  connectivity" to="https://robonomics.academy/en/learn/sensors-connectivity-course/sensors-connectivity-module/">the instructions</g-link>.</p>
+              <p>{{ $t('Than set up') }} <g-link aria-label="see open source connectivity module" to="https://github.com/airalab/sensors-connectivity">{{$t('connectivity module')}}</g-link> {{ $t('and follow') }} <g-link aria-label="check the instruction for  connectivity" to="https://robonomics.academy/en/learn/sensors-connectivity-course/sensors-connectivity-module/">{{$t('the instructions')}}</g-link>.</p>
             </li>
 
             <li>
-              <p><b>Connect a station to your connectivity</b></p>
+              <p><b>{{ $t('Connect a station to your connectivity') }}</b></p>
               <ol class="list-smallgap">
-                  <li>Open your sensor settings by its IP.</li>
-                  <li>Go to APIs settings.</li>
-                  <li>Check the checkbox for sending data to custom API and fill corresponding fields (server IP, ports, etc.).</li>
+                  <li>{{ $t('Open your sensor settings by its IP.') }}</li>
+                  <li>{{$t('Go to APIs settings')}}.</li>
+                  <li>{{$t('Check the checkbox for sending data to custom API and fill corresponding fields (server IP, ports, etc.).')}}</li>
                 </ol>
             </li>
 
             <li>
-              <p><b>Join with your setup to global map (optional)</b></p>
-              <p>If you want to publish data to <g-link aria-label="see the sensors map" to="https://sensors.social/">the global map</g-link>, you need to make two pull requests:</p>
+              <p><b>{{ $t('Join with your setup to global map (optional)') }}</b></p>
+              <p>{{ $t('If you want to publish data to') }} <g-link aria-label="see the sensors map" to="https://sensors.social/">{{ $t('the global map') }}</g-link>, {{ $t('you need to make two pull requests:') }}</p>
 
               <ol class="list-smallgap">
-                  <li>Add IPFS ID of your Connectivity to agents list of sensor map: <g-link aria-label="check agents.json file" to="https://github.com/airalab/sensors.social/blob/master/src/agents.json">https://github.com/airalab/sensors.social/blob/master/src/agents.json</g-link></li>
-                  <li>Add parachain address of your Connectivity to template agents list of long-term storage server: <g-link aria-label="check agents.template.json file" to="https://github.com/airalab/RoSeMAN/blob/master/config/agents.template.json">https://github.com/airalab/RoSeMAN/blob/master/config/agents.template.json</g-link></li>
+                  <li>{{$t('Add IPFS ID of your Connectivity to agents list of sensor map:')}} <g-link aria-label="check agents.json file" to="https://github.com/airalab/sensors.social/blob/master/src/agents.json">https://github.com/airalab/sensors.social/blob/master/src/agents.json</g-link></li>
+                  <li>{{ $t('Add parachain address of your Connectivity to template agents list of long-term storage server:') }} <g-link aria-label="check agents.template.json file" to="https://github.com/airalab/RoSeMAN/blob/master/config/agents.template.json">https://github.com/airalab/RoSeMAN/blob/master/config/agents.template.json</g-link></li>
               </ol>
             </li>
           </ol>
         </details>
 
-        <g-link class="depin__github" aria-label="check our connectivity module" to="https://github.com/airalab/sensors-connectivity">Open-source under the hood: check our connectivity module</g-link>
+        <g-link class="depin__github" aria-label="check our connectivity module" to="https://github.com/airalab/sensors-connectivity">{{$t('Open-source under the hood: check our connectivity module')}}</g-link>
       </section>
 
       <section class="section">
-        <h3 class="highlight-solid-green">Your own air quality map</h3>
-        <p>You have an opportunity to become the administrator of a sovereign sensor infrastructure, giving you full control over how data is collected, processed, and shared within your own independent network.</p>
+        <h3 class="highlight-solid-green">{{$t('Your own air quality map')}}</h3>
+        <p>{{ $t('You have an opportunity to become the administrator of a sovereign sensor infrastructure, giving you full control over how data is collected, processed, and shared within your own independent network.') }}</p>
         <details>
-          <summary>Steps for launching your own map</summary>
+          <summary>{{$t('Steps for launching your own map')}}</summary>
           <ol>
             <li>
-              <p><b>Deploy web interface</b></p>
+              <p><b>{{$t('Deploy web interface')}}</b></p>
 
               <ol class="list-smallgap">
-                  <li>Fork the map repository: <g-link to="https://github.com/airalab/sensors.social" aria-label="see the sensors map repository">https://github.com/airalab/sensors.social</g-link></li>
-                  <li>Edit the settings to customize your map, including the domain, provider, starting viewpoint, and your connectivity IPFS ID for the list of agents.</li>
-                  <li>Deploy your own version of the web interface and begin receiving real-time data from your sensor.</li>
+                  <li>{{$t('Fork the map repository:')}} <g-link to="https://github.com/airalab/sensors.social" aria-label="see the sensors map repository">https://github.com/airalab/sensors.social</g-link></li>
+                  <li>{{ $t('Edit the settings to customize your map, including the domain, provider, starting viewpoint, and your connectivity IPFS ID for the list of agents.') }}</li>
+                  <li>{{$t('Deploy your own version of the web interface and begin receiving real-time data from your sensor.')}}</li>
               </ol>
 
-              <p>Full guide here: <g-link aria-label="see full guide" to="https://github.com/airalab/sensors.social?tab=readme-ov-file#setup-your-own-map"> https://github.com/airalab/sensors.social?tab=readme-ov-file#setup-your-own-map </g-link></p>
+              <p>{{$t('Full guide here:')}} <g-link aria-label="see full guide" to="https://github.com/airalab/sensors.social?tab=readme-ov-file#setup-your-own-map"> https://github.com/airalab/sensors.social?tab=readme-ov-file#setup-your-own-map </g-link></p>
 
             </li>
 
             <li>
-              <p><b>Launch long-term storage</b></p>
-              <p>Simply collecting data from sensors is not enough; it needs to be processed. Tweak a server for collecting sensor’s data based on with open-source node.js software <g-link aria-label="check node.js software for sensors" to="https://github.com/airalab/RoSeMAN">Robonomics Sensors Measure Analytics and Archive Node (RoSeMAN)</g-link> and get your own working server for long-term map data storage.</p>
-              <p>Technical requirements:</p>
+              <p><b>{{ $t('Launch long-term storage') }}</b></p>
+              <p>{{$t('Simply collecting data from sensors is not enough; it needs to be processed. Tweak a server for collecting sensor’s data based on with open-source node.js software')}} <g-link aria-label="check node.js software for sensors" to="https://github.com/airalab/RoSeMAN">{{$t('Robonomics Sensors Measure Analytics and Archive Node (RoSeMAN)')}}</g-link> {{$t('and get your own working server for long-term map data storage.')}}</p>
+              <p>{{$t('Technical requirements:')}}</p>
               <ul class="list-smallgap">
-                <li>2 CPU cores;</li>
-                <li>4 GB RAM;</li>
-                <li>40 GB storage;</li>
-                <li>Static IP.</li>
+                <li>{{ $t('2 CPU cores;') }}</li>
+                <li>{{$t('4 GB RAM;')}}</li>
+                <li>{{$t('40 GB storage;')}}</li>
+                <li>{{$t('Static IP.')}}</li>
               </ul>
-              <p>Steps for launching a storage:</p>
+              <p>{{$t('Steps for launching a storage:')}}</p>
               <ol class="list-smallgap">
-                  <li>Fork the RoSeMAN repository: <g-link aria-label="check the roseman repository" to="https://github.com/airalab/RoSeMAN">https://github.com/airalab/RoSeMAN</g-link></li>
-                  <li>Choose Docker or Node.js (required MongoDB database) version.</li>
-                  <li>Add a parachain address of your Connectivity to agents list.</li>
-                  <li>Add RoSeMAN domain to remote provider of map.</li>
-                  <li>Run the project.</li>
+                  <li>{{$t('Fork the RoSeMAN repository:')}} <g-link aria-label="check the roseman repository" to="https://github.com/airalab/RoSeMAN">https://github.com/airalab/RoSeMAN</g-link></li>
+                  <li>{{ $t('Choose Docker or Node.js (required MongoDB database) version.') }}</li>
+                  <li>{{$t('Add a parachain address of your Connectivity to agents list.')}}</li>
+                  <li>{{ $t('Add RoSeMAN domain to remote provider of map.') }}</li>
+                  <li>{{$t('Run the project.')}}</li>
                 </ol>
             </li>
           </ol>
         </details>
 
-        <g-link class="depin__github" aria-label="check our server-side software" to="https://github.com/airalab/RoSeMAN">Open-source under the hood: check our server-side software</g-link>
+        <g-link class="depin__github" aria-label="check our server-side software" to="https://github.com/airalab/RoSeMAN">{{ $t('Open-source under the hood: check our server-side software') }}</g-link>
       </section>
 
     </div>

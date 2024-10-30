@@ -95,23 +95,6 @@
   height: 100%;
 }
 
-
-.img-back {
-  background: var(--header-bg);
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-}
-
-.img-back img {
-  --oldy-card-i-size: 270px;
-  position: absolute;
-  bottom: 0;
-  left: calc(51% - var(--oldy-card-i-size)/2);
-  width: var(--oldy-card-i-size);
-  max-width: var(--oldy-card-i-size); /* rewrite */
-}
-
 .no-margins {
   margin: 0 !important;
 }
@@ -127,25 +110,6 @@
 
 .list-simple li {
   margin-bottom: 0.2rem;
-}
-
-
-.bold {
-  font-weight: 600;
-}
-
-.link-btn {
-  padding: calc(var(--space) * 0.4) calc(var(--space) * 1.4);
-  background-color: var(--color-blue);
-  color: var(--color-light) !important;
-  font-size: var(--base-font-size);
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: background-color 0.33s ease-in-out;
-}
-
-.link-btn:hover {
-  background-color: var(--color-blue-dark-mid)
 }
 
 .italic-abstract {
@@ -172,14 +136,6 @@
   text-shadow: 8px 2px var(--text-color);
 }
 
-.banner-with-pattern__img  {
-  position: absolute;
-  right: 150px;
-  top: 11px;
-  max-width: 815px;
-  width: 100%;
-}
-
 .blue-banner {
   margin-top: 0;
 }
@@ -198,7 +154,6 @@
   font-size: calc(var(--base-font-size) * 1.2);
 }
 
-
 .loader-wrapper {
   height: 100vh;
   width: 100%;
@@ -210,8 +165,7 @@
 
 /* form elements */
 
-.contacts__input,
-.contacts__textarea {
+.contacts__input {
   padding: calc(var(--space) * 0.6);
   font-size: var(--base-font-size);
   font-family: inherit;
@@ -220,11 +174,6 @@
   background-color: #fff;
   border: 1px solid #000;
   width: 100%;
-}
-
-.contacts__textarea {
-  resize: none;
-  margin-bottom: var(--space)
 }
 
 .contacts__label {

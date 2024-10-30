@@ -9,46 +9,46 @@
       <div class="banner">
         <div class="banner-content" :style="bannertransform">
           <svg-banner />
-          <h1>Begin your adventure in the world of cyber punks</h1>
+          <h1>{{ $t('Begin your adventure in the world of cyber punks') }}</h1>
           <h4>#DePIN, #NetworkStates</h4>
-          <g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">About membership pass</g-link>
+          <g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">{{ $t('About membership pass') }}</g-link>
         </div>
       </div>
 
-      <h2 class="title-lined"><span>Hardware for cyber punks 2025 line up</span></h2>
+      <h2 class="title-lined"><span>{{ $t('Hardware for cyber punks 2025 line up') }}</span></h2>
       <div class="layout layout__content">
         <Products specialCl="altruist-page" />
       </div>
 
       <section class="layout section">
 
-        <h2 class="title-lined"><span>Features of Each Device</span></h2>
+        <h2 class="title-lined"><span>{{ $t('Features of Each Device') }}</span></h2>
 
         <div class="grid-3">
           <div>
             <g-image src="~/assets/images/lined-scalable.svg" immediate aria-hidden="true" />
-            <h3 class="align-left m-t-0">Pure Open Source</h3>
-            <p>Every device is fully open: you can find the source code, circuit schematics, and instructions for self-updating without the need to connect to any cloud servers. The devices are designed to ensure you can easily understand their structure and onboard components.</p>
+            <h3 class="align-left m-t-0">{{ $t('Pure Open Source') }}</h3>
+            <p>{{ $t('Every device is fully open: you can find the source code, circuit schematics, and instructions for self-updating without the need to connect to any cloud servers. The devices are designed to ensure you can easily understand their structure and onboard components') }}.</p>
           </div>
 
           <div>
             <g-image src="~/assets/images/lined-wave.svg" immediate aria-hidden="true" />
-            <h3 class="align-left m-t-0">Local and Global Availability</h3>
-            <p>The combination of p2p communication and web3 cloud guarantees that your devices will always be accessible for interaction. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are.</p>
+            <h3 class="align-left m-t-0">{{ $t('Local and Global Availability') }}</h3>
+            <p>{{ $t('The combination of p2p communication and web3 cloud guarantees that your devices will always be accessible for interaction. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are') }}.</p>
           </div>
 
           <div>
             <g-image src="~/assets/images/lined-key.svg" immediate aria-hidden="true" />
-            <h3 class="align-left m-t-0">Privacy from the First Use</h3>
-            <p>By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.</p>
+            <h3 class="align-left m-t-0">{{ $t('Privacy from the First Use') }}</h3>
+            <p>{{$t('By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.')}}</p>
           </div>
         </div>
 
         <div class="timeline align-center">
           <g-image src="~/assets/images/home__hands.webp" aria-hidden="true" immediate />
-          <h3 class="m-t-0">Interested in how the team reached this stage?</h3>
-          <g-link to="/timeline/" class="highlight">The Robonomics Timeline</g-link>
-          <p>can guide you through our journey</p>
+          <h3 class="m-t-0">{{$t('Interested in how the team reached this stage?')}}</h3>
+          <g-link to="/timeline/" class="highlight">{{ $t('The Robonomics Timeline') }}</g-link>
+          <p>{{ $t('can guide you through our journey') }}</p>
         </div>
       </section>
 

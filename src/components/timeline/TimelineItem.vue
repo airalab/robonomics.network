@@ -192,6 +192,11 @@ export default {
     right: 0;
   }
 
+  [dir="rtl"] .timeline__header-right {
+    right: unset;
+    left: 0;
+  }
+
   .timeline__header-right img {
     width: 154px;
     height: 156px;
@@ -225,6 +230,11 @@ export default {
     margin-right: calc(var(--space) * 0.5);
     font-weight: 700;
     font-size: 20px;
+  }
+
+  [dir="rtl"] .timeline__link-with-arrow {
+    margin-right: 0;
+    margin-left: calc(var(--space) * 0.5);
   }
 
   .timeline__link-with-arrow::after {
@@ -295,15 +305,6 @@ export default {
     z-index: 900;
   }
 
-  /* for ar locale */
-  html[lang="ar"] .timeline__events {
-    align-self: flex-end;
-  }
-
-  html[lang="ar"] .timeline__events h3 {
-    text-align: right;
-  }
-
   @media screen and (max-width: 560px) {
 
     .timeline__header-left {
@@ -335,7 +336,7 @@ export default {
     }
 
     .timeline__sideline {
-      left: -30px;
+      left: -10px;
     }
     
   }

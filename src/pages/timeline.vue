@@ -1,5 +1,5 @@
 <template>
-  <layout title="Timeline since 2015">
+  <layout :title="$t('Timeline since 2015')">
 
     <MetaInfo
         pageTitle = "Timeline of infrastructure & tech development"
@@ -61,7 +61,7 @@
             linkWithImg: 'https://gw.crust-gateway.com/ipfs/QmaCXn8RdSdh4oxX3R5nzNSfoUPiLMLM4JmLSk1WnYi5ah',
             title: this.$t('Device Design and Development'),
             sideLine: "Robonomics 2023-2024",
-            text: `<p class='timeline__descr'>${this.$t('The team is acquiring new skills in designing and programming smart devices from the ground up. The')} <a class='timeline__link' href='https://sensors.social/' target='_blank'>${this.$t('sensors.social')}</a> ${this.$t('network, where testbed devices developed by Robonomics engineers operate, has been created. A line of smart home devices based on Tasmota Wi-Fi has also been developed, and since summer 2024, this line has been undergoing certification for the EU market. In fall 2024, the project team will introduce a line of open-source devices powered by Web3 technologies, under the name "Hardware for Cryptopunks."')}</p><p class='timeline__descr'>${this.$t('Robonomics continues to grow within the Polkadot ecosystem. The Kusama network parachain has been running for over two years, and starting in fall 2024, a parachain will also launch on the Polkadot network. More than 5 million transactions from user devices have been recorded on the network. The team is continuing to explore possibilities for integrating their implementations across both Ethereum and Polkadot.')}</p><p class='timeline__descr'>${this.$t('Robo Smart Devices:')} <a class='timeline__link' href='https://robonomics.network/devices' target='_blank'>${this.$t('https://robonomics.network/devices/')}</a></p>`,
+            text: `<p class='timeline__descr'>${this.$t('The team is acquiring new skills in designing and programming smart devices from the ground up. The')} <a class='timeline__link' href='https://sensors.social/' target='_blank'>${this.$t('sensors.social')}</a> ${this.$t('network, where testbed devices developed by Robonomics engineers operate, has been created. A line of smart home devices based on Tasmota Wi-Fi has also been developed, and since summer 2024, this line has been undergoing certification for the EU market. In fall 2024, the project team will introduce a line of open-source devices powered by Web3 technologies, under the name "Hardware for Cryptopunks."')}</p><p class='timeline__descr'>${this.$t('Robonomics continues to grow within the Polkadot ecosystem. The Kusama network parachain has been running for over two years, and starting in fall 2024, a parachain will also launch on the Polkadot network. More than 5 million transactions from user devices have been recorded on the network. The team is continuing to explore possibilities for integrating their implementations across both Ethereum and Polkadot.')}</p><p class='timeline__descr'>${this.$t('Robo Smart Devices:')} <a class='timeline__link' href='https://robonomics.network/devices' target='_blank'>https://robonomics.network/devices/</a></p>`,
             events: [
               {
                 id: 0,
