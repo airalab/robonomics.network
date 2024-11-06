@@ -47,6 +47,7 @@ export default {
     }
 
     .footer-privacy a {
+        color: var(--color-dark);
         text-transform: uppercase;
         font-size: 80%;
         text-decoration: underline;
