@@ -26,7 +26,7 @@
     padding-right: 1rem;
     font-family: var(--font-family);
     font-size: 80%;
-    font-weight: 900;
+    font-variation-settings: var(--font-flex-bold);
     color: var(--color-dark);
     text-transform: uppercase;
     background-color: transparent;

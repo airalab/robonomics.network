@@ -2,8 +2,8 @@
   <div class="wallpaper__item">
     <g-image :src="require('!!assets-loader!~/assets/images/wallpapers/'+ img)" quality="75"/>
     <div class="wallpapers__links">
-      <a aria-label="download wallpaper for desktop"  class="wallpapers-link-desktop" :href="desktopLink" download="">Desktop</a>
-      <a aria-label="download wallpaper for smartphone" class="link-phone" :href="phoneLink" download>Smartphone</a>
+      <a aria-label="download wallpaper for desktop"  class="wallpapers-link-desktop" :href="desktopLink" download="">{{ $t('Desktop') }}</a>
+      <a aria-label="download wallpaper for smartphone" class="link-phone" :href="phoneLink" download>{{$t('Smartphone')}}</a>
     </div>
   </div>
 </template>

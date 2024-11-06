@@ -8,22 +8,24 @@
 
     <section class="space-monkey">
       <div class="layout layout__content">
-        <h2 class="m-t-0 highlight-solid-green">{{ $t('Space monkey devcon 2024 special') }}</h2>
+        <div class="highlight-solid-green__wrapper">
+          <h2 class="m-t-0 highlight-solid-green">{{ $t('Space monkey devcon 2024 special') }}</h2>
+        </div>
         <div class="space-monkey__container grid-2">
           <g-image src="~/assets/images/wallpapers/space-monkey.webp" immediate/>
           <div class="space-monkey__content">
-            <p>Download this picture to your device and join our special Devcon 2024 quest at thrilling locations around Bangkok!</p>
+            <p>{{ $t('Download this picture to your device and join our special Devcon 2024 quest at thrilling locations around Bangkok!') }}</p>
             <div class="wallpapers__links"> 
               <g-image src="~/assets/images/wallpapers/desktop.svg" immediate aria-hidden="true" />
-              <g-link to="/">Desktop</g-link>
+              <a aria-label="download special space monkey wallpaper for desktop" href="/wallpapers/space-monkey/space-monkey-desktop.jpg" download="">{{ $t('Desktop') }}</a>
             </div>
             <div class="wallpapers__links"> 
               <g-image src="~/assets/images/wallpapers/smartphone.svg" immediate aria-hidden="true" />
               <div class="wallpapers__links-wrapper">
-                <g-link to="/">Iphone 13</g-link>
-                <g-link to="/">Iphone 14</g-link>
-                <g-link to="/">Iphone 15</g-link>
-                <g-link to="/">Samsung Galaxy</g-link>
+                <a download aria-label="download special space monkey wallpaper for iphone 13" href="/wallpapers/space-monkey/space-monkey-iphone-13.jpg">{{$t('Iphone 13')}}</a>
+                <a download aria-label="download special space monkey wallpaper for iphone 14" href="/wallpapers/space-monkey/space-monkey-iphone-14.jpg">{{ $t('Iphone 14') }}</a>
+                <a download aria-label="download special space monkey wallpaper for iphone 15" href="/wallpapers/space-monkey/space-monkey-iphone-15.jpg">{{$t('Iphone 15')}}</a>
+                <a download aria-label="download special space monkey wallpaper for Samsung Galaxy" href="/wallpapers/space-monkey/space-monkey-samsung-galaxy.jpg">{{ $t('Samsung Galaxy') }}</a>
               </div>
             </div>
             <div class="space-monkey__decor">
@@ -38,7 +40,9 @@
       <div class="layout layout__mid">
         <div class="wallpapers__header">
           <g-image src="~/assets/images/wallpapers/cellphone.svg" immediate aria-hidden="true" />
-          <h2 class="highlight-solid-green">{{ $t('Free Wallpapers for you from our artists') }}</h2>
+          <div class="highlight-solid-green__wrapper">
+            <h2 class="highlight-solid-green">{{ $t('Free Wallpapers for you from our artists') }}</h2>
+        </div>
         </div>
           <div class="wallpapers__wrapper grid-3">
             <WallpapersItem 
@@ -54,13 +58,15 @@
 
     <section class="hidden-wallpapers">
       <div class="layout layout__content">
-        <h2 class="highlight-solid-green">{{ $t('Hide your folder with secret wallpaper') }}</h2>
+        <div class="highlight-solid-green__wrapper">
+          <h2 class="highlight-solid-green">{{ $t('Hide your folder with secret wallpaper') }}</h2>
+        </div>
         <g-image src="~/assets/images/wallpapers/bw_astronaut_artboard_1.webp" immediate/>
-        <p>We've created secret wallpapers just for you! Download the background and folder icons, and your folders will blend seamlessly into your Home Screen—leaving only beautiful artwork visible.</p>
+        <p>{{ $t("We've created secret wallpapers just for you! Download the background and folder icons, and your folders will blend seamlessly into your Home Screen—leaving only beautiful artwork visible.") }}</p>
         <div class="wallpapers__links">
-          <a aria-label="download hidden wallpaper for desktop" class="wallpapers-link-desktop" href="/wallpapers/hidden/bw-astronaut-artboard.jpg" download>Desktop background</a>
-          <a aria-label="download hidden wallpaper icons for Mac OS" class="hidden-wallpaper-mac" href="/wallpapers/hidden/icons-for-os.zip" download>Mac OS icons</a>
-          <a aria-label="download hidden wallpaper icons for Windows" class="hidden-wallpaper-windows" href="/wallpapers/hidden/icons-for-windows.zip" download>Windows icons</a>
+          <a aria-label="download hidden wallpaper for desktop" class="wallpapers-link-desktop" href="/wallpapers/hidden/bw-astronaut-artboard.jpg" download>{{$t('Desktop background')}}</a>
+          <a aria-label="download hidden wallpaper icons for Mac OS" class="hidden-wallpaper-mac" href="/wallpapers/hidden/icons-for-os.zip" download>{{ $t('Mac OS icons') }}</a>
+          <a aria-label="download hidden wallpaper icons for Windows" class="hidden-wallpaper-windows" href="/wallpapers/hidden/icons-for-windows.zip" download>{{$t('Windows icons')}}</a>
         </div>
       </div>
     </section>
@@ -164,9 +170,15 @@ export default {
 
 <style scoped>
   h2.highlight-solid-green {
+    display: inline;
     font-size: calc(var(--base-font-size)* 1.25);
     font-variation-settings: var(--font-flex-extrabold);
     padding: 0.4rem 0.8rem;
+    text-align: left;
+  }
+
+  .highlight-solid-green__wrapper {
+    margin-bottom: var(--space-text);
   }
 
   .wallpapers__links-wrapper {
@@ -193,6 +205,10 @@ export default {
     align-items: center;
     gap: var(--space);
     margin-bottom: var(--space);
+  }
+
+  .hidden-wallpapers {
+    margin-bottom: calc(var(--space) * 4);
   }
 
   .hidden-wallpapers img {
@@ -222,5 +238,18 @@ export default {
     padding-left: 30px;
     background-image: url("data:image/svg+xml,%3Csvg width='26' height='28' viewBox='0 0 26 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.87475 3.28266L0 5.05333V13.2454L8.87469 13.096L8.87475 3.28266ZM25.3188 15.18L10.9054 14.9333V25.1213L25.3188 28V15.18ZM8.87475 14.9027L6.18961e-05 14.752V22.9427L8.87475 24.7147V14.9027ZM25.3188 0L10.9054 2.876V13.064L25.3188 12.8187V0Z' fill='%23010002'/%3E%3C/svg%3E%0A");
     background-size: 25px 28px;
+  }
+
+  @media screen and (max-width: 430px) {
+    .space-monkey__decor {
+      width: 30%;
+      bottom: -50px;
+      left: 80%;
+    }
+
+    h2.highlight-solid-green {
+    padding: 0rem 0.2rem;
+  }
+    
   }
 </style>
