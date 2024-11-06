@@ -36,7 +36,7 @@
     line-height: 1.2;
     padding: var(--space) var(--layout-sidepadding);
     text-transform: uppercase;
-    min-height: 32ch;
+    min-height: 23ch;
   }
 
   .navigation a {
