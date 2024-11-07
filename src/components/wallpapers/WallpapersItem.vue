@@ -1,6 +1,8 @@
 <template>
   <div class="wallpaper__item">
-    <g-image :src="require('!!assets-loader!~/assets/images/wallpapers/'+ img)" quality="75"/>
+    <a aria-label="download wallpapers for both desktop and smartphone" :href="link" download>
+      <g-image :src="require('!!assets-loader!~/assets/images/wallpapers/'+ img)" quality="75"/>
+    </a>
     <div class="wallpapers__links">
       <a aria-label="download wallpaper for desktop"  class="wallpapers-link-desktop" :href="desktopLink" download="">{{ $t('Desktop') }}</a>
       <a aria-label="download wallpaper for smartphone" class="link-phone" :href="phoneLink" download>{{$t('Smartphone')}}</a>
@@ -12,6 +14,10 @@
 export default {
 
   props: {
+    link: {
+      type: String,
+      default: '#'
+    },
     img: {
       type: String,
       required: true
@@ -31,11 +37,23 @@ export default {
 
 <style scoped>
 
-.wallpaper__item img {
-  margin-bottom: calc(var(--space) * 0.3);
-  width: 100%;
+.wallpaper__item > a {
+  display: block;
   height: 362px;
+  margin-bottom: calc(var(--space) * 0.3);
+  overflow: hidden;
+}
+
+.wallpaper__item > a:hover > img {
+  filter: brightness(125%);
+  transform: scale(1.1);
+}
+
+.wallpaper__item img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease-in, filter 0.33s ease-in-out;
 }
 
 .wallpapers__links a {
