@@ -22,14 +22,11 @@
             <div class="wallpapers__links"> 
               <g-image src="~/assets/images/wallpapers/smartphone.svg" immediate aria-hidden="true" />
               <div class="wallpapers__links-wrapper">
-                <a download aria-label="download special space monkey wallpaper for iphone 13" href="/wallpapers/space-monkey/space-monkey-iphone-13.jpg">{{$t('Iphone 13')}}</a>
-                <a download aria-label="download special space monkey wallpaper for iphone 14" href="/wallpapers/space-monkey/space-monkey-iphone-14.jpg">{{ $t('Iphone 14') }}</a>
-                <a download aria-label="download special space monkey wallpaper for iphone 15" href="/wallpapers/space-monkey/space-monkey-iphone-15.jpg">{{$t('Iphone 15')}}</a>
-                <a download aria-label="download special space monkey wallpaper for Samsung Galaxy" href="/wallpapers/space-monkey/space-monkey-samsung-galaxy.jpg">{{ $t('Samsung Galaxy') }}</a>
+                <a download aria-label="download special space monkey wallpaper for iphone" href="/wallpapers/space-monkey/space-monkey-iphone.jpg">{{$t('Iphone')}}</a>
+                <a download aria-label="download special space monkey wallpaper for Samsung Galaxy" href="/wallpapers/space-monkey/space-monkey-samsung.jpg">{{ $t('Samsung') }}</a>
+                <a download aria-label="download special space monkey wallpaper for Pixel" href="/wallpapers/space-monkey/space-monkey-pixel.jpg">{{ $t('Pixel') }}</a>
+                <a download aria-label="download special space monkey wallpaper for smartphone" href="/wallpapers/space-monkey/space-monkey-smartphone.jpg">{{ $t('Smartphone') }}</a>
               </div>
-            </div>
-            <div class="space-monkey__decor">
-              <g-image src="~/assets/images/wallpapers/television.svg" immediate aria-hidden="true" />
             </div>
           </div>
         </div>
@@ -38,16 +35,14 @@
 
     <section class="section wallpapers">
       <div class="layout layout__mid">
-        <div class="wallpapers__header">
-          <g-image src="~/assets/images/wallpapers/cellphone.svg" immediate aria-hidden="true" />
           <div class="highlight-solid-green__wrapper">
             <h2 class="highlight-solid-green">{{ $t('Free Wallpapers for you from our artists') }}</h2>
-        </div>
-        </div>
+          </div>
           <div class="wallpapers__wrapper grid-3">
             <WallpapersItem 
               v-for="item in wallpapers" 
               :key="item.id"
+              :link="item.link"
               :img="item.img"
               :desktopLink="item.desktopLink"
               :phoneLink="item.phoneLink"
@@ -64,9 +59,9 @@
         <g-image src="~/assets/images/wallpapers/bw_astronaut_artboard_1.webp" immediate/>
         <p>{{ $t("We've created secret wallpapers just for you! Download the background and folder icons, and your folders will blend seamlessly into your Home Screen—leaving only beautiful artwork visible.") }}</p>
         <div class="wallpapers__links">
-          <a aria-label="download hidden wallpaper for desktop" class="wallpapers-link-desktop" href="/wallpapers/hidden/bw-astronaut-artboard.jpg" download>{{$t('Desktop background')}}</a>
-          <a aria-label="download hidden wallpaper icons for Mac OS" class="hidden-wallpaper-mac" href="/wallpapers/hidden/icons-for-os.zip" download>{{ $t('Mac OS icons') }}</a>
-          <a aria-label="download hidden wallpaper icons for Windows" class="hidden-wallpaper-windows" href="/wallpapers/hidden/icons-for-windows.zip" download>{{$t('Windows icons')}}</a>
+          <a aria-label="download hidden wallpaper for desktop" class="wallpapers-link-desktop" href="/wallpapers/hidden/robonomics-secret-wallpapers.jpg" download>{{$t('Desktop background')}}</a>
+          <a aria-label="download hidden wallpaper icons for Mac OS" class="hidden-wallpaper-mac" href="/wallpapers/hidden/robonomics-secret-wallpapers-icons-os.zip" download>{{ $t('Mac OS icons') }}</a>
+          <a aria-label="download hidden wallpaper icons for Windows" class="hidden-wallpaper-windows" href="/wallpapers/hidden/robonomics-secret-wallpapers-icons-windows.zip" download>{{$t('Windows icons')}}</a>
         </div>
       </div>
     </section>
@@ -88,42 +83,49 @@ export default {
       wallpapers: [
         {
           id: 0,
+          link: '/wallpapers/full-package/robonomics-wallpapers-robot-and-cat.zip',
           img: 'robot_and_cat_artboard_1.webp',
           desktopLink: '/wallpapers/regular/robot-and-cat-artboard.jpg',
           phoneLink: '/wallpapers/phone/robot-and-cat-artboard.jpg'
         },
         {
           id: 1,
+          link: '/wallpapers/full-package/robonomics-wallpapers-robot-and-cosmonaut.zip',
           img: 'robot_and_cosmonaut_artboard_1.webp',
           desktopLink: '/wallpapers/regular/robot-and-cosmonaut-artboard.jpg',
           phoneLink: '/wallpapers/phone/robot-and-cosmonaut-artboard.jpg'
         },
         {
           id: 2,
+          link: '/wallpapers/full-package/robonomics-wallpapers-robot-and-electrics-sheep.zip',
           img: 'robot_and_electrics_sheep_artboard_1.webp',
           desktopLink: '/wallpapers/regular/robot-and-electrics-sheep-artboard.jpg',
           phoneLink: '/wallpapers/phone/robot-and-electrics-sheep-artboard.jpg'
         },
         {
           id: 3,
+          link: '/wallpapers/full-package/robonomics-wallpapers-coloured-astronaut.zip',
           img: 'coloured_astronaut_artboard_1.webp',
           desktopLink: '/wallpapers/regular/coloured-astronaut-artboard.jpg',
           phoneLink: '/wallpapers/phone/coloured-astronaut-artboard.jpg'
         },
         {
           id: 4,
+          link: '/wallpapers/full-package/robonomics-wallpapers-robot-and-apple.zip',
           img: 'robot_and_apple_artboard_1.webp',
           desktopLink: '/wallpapers/regular/robot-and-apple-artboard.jpg',
           phoneLink: '/wallpapers/phone/robot-and-apple-artboard.jpg'
         },
         {
           id: 5,
+          link: '/wallpapers/full-package/robonomics-wallpapers-space-travelers.zip',
           img: 'space_travelers_artboard_1.webp',
           desktopLink: '/wallpapers/regular/space-travelers-artboard.jpg',
           phoneLink: '/wallpapers/phone/space-travelers-artboard.jpg'
         },
         {
           id: 6,
+          link: '/wallpapers/full-package/robonomics-wallpapers-bw-astronaut.zip',
           img: 'bw_astronaut_artboard_1.webp',
           desktopLink: '/wallpapers/regular/bw-astronaut-artboard.jpg',
           phoneLink: '/wallpapers/phone/bw-astronaut-artboard.jpg'
@@ -141,7 +143,7 @@ export default {
 
 .wallpapers__links {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: calc(var(--space) * 0.5);
     margin-bottom: var(--space);
   }
@@ -188,23 +190,12 @@ export default {
     gap: calc(var(--space) * 0.5);
   }
 
-  .space-monkey__content {
-    position: relative;
-    padding-bottom: calc(var(--space) * 3);
+  .wallpapers__links img {
+    min-width: 31px;
   }
 
-  .space-monkey__decor {
-    position: absolute;
-    bottom: -70px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .wallpapers__header {
-    display: flex;
-    align-items: center;
-    gap: var(--space);
-    margin-bottom: var(--space);
+  .space-monkey{
+    margin-bottom: calc(var(--space) * 4);
   }
 
   .hidden-wallpapers {
@@ -228,28 +219,32 @@ export default {
   }
 
   .hidden-wallpaper-mac {
-    padding-left: 30px;
+    padding-left: 42px;
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='30' viewBox='0 0 24 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.6645 0C17.733 0 17.8015 0 17.8739 0C18.042 2.07605 17.2496 3.62728 16.2865 4.75062C15.3416 5.86621 14.0476 6.94818 11.9547 6.78401C11.8151 4.73769 12.6088 3.30152 13.5706 2.18076C14.4625 1.13627 16.0978 0.20683 17.6645 0Z' fill='black'/%3E%3Cpath d='M24 21.6086C24 21.6293 24 21.6474 24 21.6668C23.4118 23.4481 22.5729 24.9748 21.5491 26.3916C20.6145 27.6778 19.4691 29.4087 17.4241 29.4087C15.657 29.4087 14.4832 28.2724 12.6722 28.2414C10.7564 28.2104 9.7029 29.1915 7.95131 29.4384C7.75094 29.4384 7.55058 29.4384 7.35409 29.4384C6.06787 29.2523 5.02984 28.2336 4.27362 27.3158C2.04374 24.6038 0.320586 21.1006 0 16.6176C0 16.1781 0 15.7398 0 15.3003C0.135732 12.0919 1.69471 9.48324 3.76689 8.21899C4.8605 7.5468 6.36389 6.97414 8.03792 7.23009C8.75536 7.34126 9.48831 7.58687 10.1308 7.82989C10.7396 8.06387 11.501 8.47882 12.2223 8.45685C12.711 8.44263 13.197 8.18797 13.6895 8.00828C15.1322 7.48733 16.5464 6.89011 18.4104 7.17062C20.6507 7.50931 22.2407 8.50468 23.2231 10.0404C21.328 11.2465 19.8298 13.064 20.0857 16.1677C20.3133 18.9871 21.9524 20.6365 24 21.6086Z' fill='black'/%3E%3C/svg%3E%0A");
     background-size: 25px 30px;
   }
 
   .hidden-wallpaper-windows {
     padding-top: 9px;
-    padding-left: 30px;
+    padding-left: 42px;
     background-image: url("data:image/svg+xml,%3Csvg width='26' height='28' viewBox='0 0 26 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.87475 3.28266L0 5.05333V13.2454L8.87469 13.096L8.87475 3.28266ZM25.3188 15.18L10.9054 14.9333V25.1213L25.3188 28V15.18ZM8.87475 14.9027L6.18961e-05 14.752V22.9427L8.87475 24.7147V14.9027ZM25.3188 0L10.9054 2.876V13.064L25.3188 12.8187V0Z' fill='%23010002'/%3E%3C/svg%3E%0A");
     background-size: 25px 28px;
   }
 
-  @media screen and (max-width: 430px) {
-    .space-monkey__decor {
-      width: 30%;
-      bottom: -50px;
-      left: 80%;
-    }
+  @media screen and (max-width: 450px) {
 
     h2.highlight-solid-green {
-    padding: 0rem 0.2rem;
-  }
+      padding: 0rem 0.2rem;
+    }
+
+    .wallpapers__links {
+      gap: var(--space);
+    }
+
+    .wallpapers__links img {
+      min-width: unset;
+      width: 20px;
+    }
     
   }
 </style>
