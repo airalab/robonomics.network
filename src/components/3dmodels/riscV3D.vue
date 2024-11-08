@@ -5,12 +5,14 @@
 <script>
   import * as THREE from 'three';
   import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+  import WebGL from 'three/examples/jsm/capabilities/WebGL.js';
 export default {
 
   async mounted() {
     const scene = new THREE.Scene();
+    const isSupported = WebGL.isWebGL2Available();
     const camera = new THREE.PerspectiveCamera(75, 205 / 230, 0.1, 1000); // Aspect ratio based on container
-    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    const renderer = new THREE.WebGLRenderer({ alpha: true,  logarithmicDepthBuffer: true });
 
     const container = this.$refs.container;
     renderer.setSize(305, 330); // Width and height match the container
@@ -107,11 +109,16 @@ export default {
     // Set camera position
     camera.position.z = 3.5; // Closer camera position to fit the model in the view
 
+
     // Animation loop
     const animate = () => {
-        requestAnimationFrame(animate);
+      requestAnimationFrame(animate);
+      renderer.render(scene, camera);
 
-        renderer.render(scene, camera);
+      if(!isSupported) {
+        modelPivot.rotation.y = -0.8;
+        modelPivot.rotation.x = 0.3;
+      }
     };
 
     window.addEventListener('scroll', () => {
@@ -119,14 +126,18 @@ export default {
       const rotationSpeed = -0.004; // Set rotation speed
 
       
-
-      if (modelPivot) {
+      if (modelPivot && isSupported) {
           // Rotate the model on scroll
-          modelPivot.rotation.y = -scrollY * rotationSpeed;
+        modelPivot.rotation.y = -scrollY * rotationSpeed;
       }
     });
 
-
+    // if (WebGL.isWebGL2Available() ) {
+    //   // Initiate function or other initializations here
+    //     animate();
+    //   } else {
+    //     const warning = WebGL.getWebGL2ErrorMessage();
+    //   }
     animate();
   }
 
