@@ -40,7 +40,7 @@
 </template>
 
 <script>
-  // import pingIPFS from 'ping-ipfs-gateway'
+  import pingIPFS from 'ping-ipfs-gateway'
   export default {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
@@ -51,7 +51,7 @@
 
     data() {
       return {
-        bookGateway: 'https://gw.crust-gateway.xyz/ipfs/ ',
+        bookGateway: '',
         books: [
         {
             title: this.$t("Robonomics R&D"),
@@ -59,12 +59,12 @@
             year:' 2023 & 2024',
             options: [
               {
-                link: 'QmaCXn8RdSdh4oxX3R5nzNSfoUPiLMLM4JmLSk1WnYi5ah',
+                link: 'QmZK64M7M31mkMsDd8yQa1dfX4a4KeDCyaUMsTuzsKq6LC',
                 text: 'EN',
                 id: 0
               },
               {
-                link: 'Qmd8sSoGokc1UeAbbAfmEPJTubWEpWGetYGyj9MCpwmE42',
+                link: 'QmNsiaWWFw4ZoqAnW5vuTXNz2jwYBu7ShyXSYqU1uNDjrF',
                 text: 'RU',
                 id: 1
               }
@@ -207,9 +207,20 @@
       }
     },
 
-    // async created() {
-    //  this.bookGateway = await pingIPFS()
-    // }
+    async created() {
+      this.bookGateway = await pingIPFS(
+        [
+          'https://gw.crust-gateway.xyz/ipfs/',
+          'https://gw.crust-gateway.com/ipfs/',
+          'https://gateway.pinata.cloud/ipfs/',
+          'https://ipfs.io/ipfs/'
+        ]
+      )
+
+      if(!this.bookGateway) {
+        this.bookGateway = 'https://gw.crust-gateway.xyz/ipfs/'
+      }
+    }
   }
 </script>
 
