@@ -59,12 +59,12 @@
             year:' 2023 & 2024',
             options: [
               {
-                link: 'QmZK64M7M31mkMsDd8yQa1dfX4a4KeDCyaUMsTuzsKq6LC',
+                link: 'QmaCXn8RdSdh4oxX3R5nzNSfoUPiLMLM4JmLSk1WnYi5ah',
                 text: 'EN',
                 id: 0
               },
               {
-                link: 'QmNsiaWWFw4ZoqAnW5vuTXNz2jwYBu7ShyXSYqU1uNDjrF',
+                link: 'Qmd8sSoGokc1UeAbbAfmEPJTubWEpWGetYGyj9MCpwmE42',
                 text: 'RU',
                 id: 1
               }
