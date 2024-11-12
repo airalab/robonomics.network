@@ -32,8 +32,6 @@ Here is the list of Top-5 application areas for professional service robotics in
 
 ![card-1.png](./images/ohf-part-1/card-1.png)
 
-
-
 However, as these technologies evolve, traditional financing approaches fail to keep up with the unique challenges posed by smart equipment leasing and investment in robotics. 
 
 **Traditional models**, like loans or leasing, are often **inadequate for smart equipment** due to rapid technological obsolescence, information asymmetry, and performance uncertainty. Robotics and AI technologies evolve quickly, making long-term investments risky, as traditional models do not account for the frequent upgrades or retrofits required. Manufacturers often have more knowledge about equipment performance than lessees, leading to inefficiencies in capital allocation or mispricing. Additionally, fixed payment schedules fail to reflect real equipment value, especially when performance depends on software updates or integration. The lack of expertise among financial institutions in managing AI-driven assets further contributes to underinvestment in these high-potential technologies.
@@ -42,9 +40,7 @@ A better capital allocation system is required for smart, connected equipment. O
 
 
 
-
-
-### Principles of Robust Mechanism Design
+## Principles of Robust Mechanism Design
 
 Mechanism design is a **field in economics and game theory** that focuses on designing rules or systems (mechanisms) to achieve specific objectives, even when participants have private information and may act strategically or collude. A classic example is designing auctions where bidders have private valuations of the goods being auctioned.
 
@@ -66,15 +62,12 @@ I believe it is important to use incentive compatible mechanisms when introducin
 
 
 
-
-
-### Real-World Asset (RWA) Market Design for Smart Equipment
+## Real-World Asset (RWA) Market Design for Smart Equipment
 
 Designing a robust mechanism for capital allocation into new categories of smart equipment is incredibly challenging due to the complexity and evolving nature of the field. However, I see an opportunity for several strategies to enhance robustness of this mechanism.
 
 
-
-#### **Digital Twins and Beyond** 
+### **Digital Twins and Beyond** 
 
 This is at the core of what Robonomics does. In the article ["Introduction to Digital Twins"](https://robonomics.network/blog/digital-twins-introduction/), we explained the concept - digital representations of physical entities or processes. Digital Twins are not static models but dynamic systems that continuously receive real-time data from their physical counterparts, allowing for ongoing updates and accurate reflections of the current state. This continuous data flow enables precise simulations and analyses, facilitating informed decisions regarding the operation, maintenance, and optimization of physical assets.
 
@@ -85,8 +78,7 @@ Digital twins serve as the foundational layer for implementing robust mechanism 
 Digital Twins in the context of capital allocation also open the conversation about autonomous robocorporations, which are guided by on-chain governance mechanisms. These autonomous entities can independently execute decisions based on market input, making them capable of managing assets, allocating resources, and even engaging in economic transactions without human intervention.
 
 
-
-#### **Prediction Markets**
+### **Prediction Markets**
 
 Prediction markets and robust mechanism design both aim to elicit truthful information from agents with private knowledge to achieve efficient outcomes. By integrating prediction markets into our mechanism framework, we can **improve ex-post efficiency** of capital allocation decisions by ensuring that decisions reflect the most up-to-date and accurate information available, leading to better alignment of resource allocation with realized outcomes.
 
@@ -106,8 +98,7 @@ When new information becomes available, such as updated Digital Twin of the smar
 By aligning capital allocation with continuously updated market insights, underwriters can make better-informed decisions, optimize their portfolios and reduce financial risk.
 
 
-
-#### **Risk Sharing Strategies**
+### **Risk Sharing Strategies**
 
 Risk-sharing strategies play a crucial role in reshaping capital allocation mechanism for smart equipment, helping to balance risks and **increase incentive compatibility**. Traditional leasing arrangements are relatively rigid, typically relying on fixed payments without accounting for the equipment's dynamic performance or unexpected changes. 
 
@@ -122,8 +113,7 @@ For example, if a logistics robot enhances warehouse efficiency by 20%, a portio
 With smart equipment that can generate data in real-time, robust risk-sharing mechanisms become feasible, allowing for dynamic responses to performance issues and aligning incentives around actual outcomes. This evolution in leasing structures allows market participants to respond adaptively to technological change, ensuring that the risks and rewards of adopting advanced equipment are shared more equitably. In effect, the relationship becomes more of a partnership, rather than a rigid contractual arrangement, fostering trust and encouraging innovation.
 
 
-
-#### **DAO Governance for Equipment Origination and Underwriting**
+### **DAO Governance for Equipment Origination and Underwriting**
 
 It is crucial to establish governance structures that support efficient, incentive-aligned capital allocation over the next 3-5 years as the robotics industry takes shape. 
 
@@ -143,11 +133,7 @@ Here is a simple scheme of operation for such a DAO:
 
 
 
-
-
-
-
-### **Practical Considerations and Next Steps**
+## **Practical Considerations and Next Steps**
 
 This is just the beginning. My goal is to create a robust capital allocation mechanism that makes the productivity gains of the robotics revolution accessible to everyone. 
 
