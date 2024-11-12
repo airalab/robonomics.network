@@ -1,5 +1,5 @@
 <template v-if="zoom">
-  <figure class="rb-image">
+  <figure class="rb-image" :class="{'rb-image-space': space}">
     <g-link 
       v-if="pictureLink"
       :to="pictureLink" 
@@ -26,7 +26,7 @@
 
       <img v-if="isGif() && type === 'markdown'" v-bind="$attrs" :src="picture" />
     </template>
-    <figcaption v-if="caption" class="rb-image__text" :class="{'caption-center': captionCenter}">{{caption}}</figcaption>
+    <figcaption v-if="caption" :class="classListCaption">{{caption}}</figcaption>
   </figure>
 </template>
 
@@ -59,6 +59,18 @@ export default {
     captionCenter: {
       type: Boolean,
       default: false
+    },
+    captionSize: {
+      type: String,
+      default: 'normal'
+    },
+    captionItalic: {
+      type: Boolean,
+      default: true
+    },
+    space: {
+      type: Boolean,
+      default: true
     }
   },
 
@@ -80,7 +92,16 @@ export default {
           return null
         }
       }
-    }
+    },
+
+    classListCaption() {
+      return {
+        'rb-image__text': true,
+        [`rb-image-text-size-${this.captionSize}`]: true,
+        [`caption-center`]: this.captionCenter,
+        [`caption-italic`]: this.captionItalic
+      };
+    },
   },
 
   methods: {
@@ -99,11 +120,14 @@ export default {
 </script>
 
 <style scoped>
-  .rb-image{
+  .rb-image {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: calc(var(--space) * 0.5);
+  }
+
+  .rb-image-space {
+    margin-bottom: var(--space);
   }
 
   .rb-image__link[target=_blank]:after {
@@ -112,12 +136,26 @@ export default {
 
   .rb-image__text {
     align-self: flex-start;
-    font-style: italic;
-    margin-bottom: var(--space);
+  }
+
+  .rb-image-text-size-normal{
+    font-size: var(--base-font-size);
+  }
+
+  .rb-image-text-size-small{
+    font-size: calc(var(--base-font-size) * 0.5);
+  }
+
+  .rb-image-text-size-x2{
+    font-size: calc(var(--base-font-size) * 2);
   }
 
   .caption-center {
     align-self: unset;
+  }
+
+  .caption-italic {
+    font-style: italic;
   }
 
 </style>
