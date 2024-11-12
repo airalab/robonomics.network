@@ -92,17 +92,60 @@ If you need to localize your cover than your *cover_image* will look something l
   cover_image: ../images/ru/digital-twins-introduction/cover.png
 ```
 
-- Props:
-
+- Properties:
 
 | Property | Type | Required | Default | Description |
 |---|---|---|---|---|
 | `src` | `String` | `true` |  | path to the image |
 | `link` | `String` | `false` |  | loops youtube video |
 | `zoom` | `Boolean` | `false` | `false` | add zoom to the image |
+| `space` | `Boolean` | `false` | `true` | add or remove space after picture element |
 | `caption` | `String` | `false` |  | caption for the image |
-| `captionCenter` | `Boolean` | `false` |  | puts image caption to the center |
+| `captionCenter` | `Boolean` | `false` | `false` | puts image caption to the center |
+| `captionSize` | `String` | `false` | `normal` | change caption font size<br>Available options:<br>'small', 'normal', 'x2' |
+| `captionItalic` | `Boolean` | `false` | `true` | remove or add italic font style from caption |
 
+
+
+#### Grid 
+
+The component helps to position elements in grid. 
+
+- Use grid wrapper component first: 
+
+```c
+<rb-grid></rb-grid>
+```
+
+- And then use as many grid items components as you like inside wrapper:
+
+```c
+  <rb-grid :columns="4" textAlign="center" align="end">
+    <rb-grid-element>
+      <rb-image zoom src="./images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensors Network Air Quality Hardware" caption="Caption testing" :captionItalic="false" :space="false" />
+    </rb-grid-element>
+    <rb-grid-element>
+      <rb-image zoom src="./images/robonomics-open-hardware-origins/altruist-hq.jpg" alt="Altruist Air Station" caption="Caption testing" :captionItalic="false" :space="false" />
+    </rb-grid-element>
+        <rb-grid-element>
+      <rb-image zoom src="./images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensors Network Air Quality Hardware" />
+    </rb-grid-element>
+    <rb-grid-element>
+      <rb-image zoom src="./images/robonomics-open-hardware-origins/altruist-hq.jpg" alt="Altruist Air Station" />
+    </rb-grid-element>
+  </rb-grid>
+
+```
+
+- Properties:
+
+| Property | Type | Required | Default | Description |
+|---|---|---|---|---|
+| `columns` | `Number` | `false` | 4 | Number of columns for grid.<br>Options: from `1` to `6` |
+| `align` | `String` | `false` |  | align items on the block axis<br>Options: `start`, `center`, `end` |
+| `justify` | `String` | `false` |  | align items on the inline axis<br>Options: `start`, `center`,`end` |
+| `space` | `String` | `false` | `space` | adjust gap between grid elements<br>Options: '0', 'space', 'x2' |
+| `textAlign` | `String` | `false` | `left` | align text inside grid<br>Options: `left`,`center`,`right` |
 
 #### Code block
 
