@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 ---
 
 title: Robust Mechanism Design for Smart Equipment RWA Market
