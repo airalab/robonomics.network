@@ -43,7 +43,7 @@ input[type="checkbox"] {
 	padding: 0;
 	cursor: pointer;
 	width: 1.3rem;
-    height: 1.3rem;
+  height: 1.3rem;
 	position: relative;
 	margin-right: 1rem;
 	border-color: var(--color-border) !important;

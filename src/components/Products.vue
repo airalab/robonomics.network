@@ -51,7 +51,7 @@ export default {
         },
         {
           id: 1,
-          title: this.$t('risc-v open source server'),
+          title: this.$t('Risc-v open source server'),
           status: 'ready',
           text: this.$t('The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.'),
           cases: this.$t('Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.'),
