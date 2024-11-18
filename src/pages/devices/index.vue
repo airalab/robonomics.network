@@ -32,7 +32,7 @@ export default {
 <style scoped>
 
   .layout {
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .title-with-bg {
