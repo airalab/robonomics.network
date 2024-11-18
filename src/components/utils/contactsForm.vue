@@ -1,6 +1,7 @@
 <template>
   <div class="footer-form">
     <div class="footer-form-content">
+      <h3>{{ $t('Robo Newsletter') }}</h3>
       <gsp-form :gscriptID="gscript" :siteKey="siteKey">
         <input
           required 
@@ -150,6 +151,12 @@ export default {
       background-position: -100px 0;
       padding-left: 184px;
     }
+   }
+
+   .footer-form-content h3 {
+    margin-top: 0;
+    margin-bottom: calc(var(--space) * 0.5);
+    text-align: left;
    }
 
   .footer-form form {
