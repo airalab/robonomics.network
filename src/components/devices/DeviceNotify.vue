@@ -85,7 +85,7 @@ export default {
     return {
       data_email: '',
       customTags: [],
-   result: this.$response,
+      result: this.$response,
       interval: null,
       gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
       siteKey: process.env.GRIDSOME_RECAPTCHA,
