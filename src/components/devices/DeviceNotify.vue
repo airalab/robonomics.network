@@ -15,12 +15,12 @@
         <label :for="`devices-checkbox-${id}`" class="product-notify-modal__label">
           <input type="checkbox" :value="`${deviceName}`" name="check" :id="`devices-checkbox-${id}`" class="product-notify-modal__input" v-model="customTags" />
           <span class="product-notify-modal__checkbox checkbox"></span>
-          <b>Get updates about smart devices</b>
+          <b>{{ $t('Get updates about smart devices') }}</b>
         </label>
           <label :for="`robonomics-checkbox-${id}`" class="product-notify-modal__label">
             <input type="checkbox" value="website" name="check" :id="`robonomics-checkbox-${id}`" class="product-notify-modal__input" v-model="customTags"/>
             <span class="product-notify-modal__checkbox checkbox"></span>
-            <b>Receive regular emails from Robonomics</b>
+            <b>{{ $t('Receive regular emails from Robonomics') }}</b>
           </label>
 
           <input
@@ -85,7 +85,7 @@ export default {
     return {
       data_email: '',
       customTags: [],
-      result: this.$response,
+   result: this.$response,
       interval: null,
       gscript: process.env.GRIDSOME_CONTACTS_FORM_SCRIPT,
       siteKey: process.env.GRIDSOME_RECAPTCHA,

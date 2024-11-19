@@ -730,7 +730,6 @@
   "A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized": "Um sensor inteligente que coleta dados ambientais - ruído, poeira e temperatura, e os armazena em um",
   "sensor map": "mapa de sensores",
   "Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.": "Torne-se um provedor de dados ambientais para seus amigos e vizinhos na área. Acesse medições verdadeiramente descentralizadas de qualidade do ar, ruído, temperatura e outras condições ambientais no mapa de sensores.",
-  "risc-v open source server": "servidor de código aberto risc-v",
   "The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.": "O servidor doméstico inteligente mais de código aberto, alimentado por RISC-V, com uma nuvem Web3 substituindo os servidores do Google sob o capô.",
   "Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.": "Dispositivos WI-FI MQTT inteligentes com firmware de código aberto Tasmota na placa totalmente compatíveis com o Home Assistant.",
   "Hikikomori smart Tamagotchi": "Hikikomori smart Tamagotchi",
@@ -875,5 +874,11 @@
   "Windows icons": "Ícones do Windows",
   "Iphone": "Iphone",
   "Samsung": "Samsung",
-  "Pixel": "Pixel"
+  "Pixel": "Pixel",
+  "Risc-v open source server": "Servidor de código aberto Risc-v",
+  "Get updates about smart devices": "Receba atualizações sobre dispositivos inteligentes",
+  "Receive regular emails from Robonomics": "Receba e-mails regulares da Robonomics",
+  "Notify me when available": "Me avise quando estiver disponível",
+  "Signed up successfully": "Inscrito com sucesso",
+  "Robo Newsletter": "Boletim informativo Robo"
 }

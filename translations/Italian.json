@@ -730,7 +730,6 @@
   "A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized": "Un sensore intelligente che raccoglie dati ambientali - rumore, polvere e temperatura, e li memorizza su una mappa decentralizzata dei sensori",
   "sensor map": "Diventa un fornitore di dati ambientali per i tuoi amici e vicini della zona. Accedi a misurazioni veramente decentralizzate della qualità dell'aria, del rumore, della temperatura e di altre condizioni ambientali sulla mappa dei sensori.",
   "Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.": "server open source risc-v",
-  "risc-v open source server": "Il server per smart home più open source, alimentato da RISC-V, con un cloud Web3 che sostituisce i server di Google sotto il cofano.",
   "The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.": "Dispositivi WI-FI MQTT intelligenti con firmware open source Tasmota sulla scheda completamente compatibili con Home Assistant.",
   "Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.": "Hikikomori smart Tamagotchi",
   "Hikikomori smart Tamagotchi": "Finalmente, un Tamagotchi intelligente che è più di un semplice gioco! Una stazione indossabile intelligente che controlla lo stato dei sensori dalla tua casa o dall'abbigliamento.",
@@ -875,5 +874,11 @@
   "Windows icons": "Icone Windows",
   "Iphone": "Iphone",
   "Samsung": "Samsung",
-  "Pixel": "Pixel"
+  "Pixel": "Pixel",
+  "Risc-v open source server": "Server open source Risc-v",
+  "Get updates about smart devices": "Ricevi aggiornamenti sui dispositivi intelligenti",
+  "Receive regular emails from Robonomics": "Ricevi regolarmente email da Robonomics",
+  "Notify me when available": "Avvisami quando disponibile",
+  "Signed up successfully": "Iscritto con successo",
+  "Robo Newsletter": "Newsletter Robo"
 }
