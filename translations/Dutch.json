@@ -730,7 +730,6 @@
   "A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized": "Een slimme sensor die milieugegevens verzamelt - geluid, stof en temperatuur, en ze opslaat op een gedecentraliseerde",
   "sensor map": "sensorkaart",
   "Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.": "Word een leverancier van milieugegevens voor uw vrienden en buren in de omgeving. Toegang tot echt gedecentraliseerde metingen van luchtkwaliteit, geluid, temperatuur en andere milieutoestanden op de sensorkaart.",
-  "risc-v open source server": "risc-v open source server",
   "The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.": "De meest open-source slimme thuisserver, aangedreven door RISC-V, met een Web3-cloud die Google-servers onder de motorkap vervangt.",
   "Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.": "Slimme WI-FI MQTT-apparaten met open-source firmware Tasmota op het bord volledig compatibel met Home Assistant.",
   "Hikikomori smart Tamagotchi": "Hikikomori slimme Tamagotchi",
@@ -875,5 +874,11 @@
   "Windows icons": "Windows pictogrammen",
   "Iphone": "Iphone",
   "Samsung": "Samsung",
-  "Pixel": "Pixel"
+  "Pixel": "Pixel",
+  "Risc-v open source server": "Risc-v open source server",
+  "Get updates about smart devices": "Ontvang updates over slimme apparaten",
+  "Receive regular emails from Robonomics": "Ontvang regelmatig e-mails van Robonomics",
+  "Notify me when available": "Meld mij wanneer beschikbaar",
+  "Signed up successfully": "Met succes aangemeld",
+  "Robo Newsletter": "Robo Nieuwsbrief"
 }

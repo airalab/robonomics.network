@@ -730,7 +730,6 @@
   "A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized": "環境データ（騒音、ほこり、温度）を収集し、分散型に保存するスマートセンサー",
   "sensor map": "センサーマップ",
   "Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.": "地域の友人や隣人に環境データの提供者になりましょう。センサーマップ上で空気の質、騒音、温度、その他の環境条件の本当に分散型の測定にアクセスできます。",
-  "risc-v open source server": "risc-vオープンソースサーバー",
   "The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.": "Googleサーバーを置き換えるWeb3クラウドで動作する、RISC-Vによって駆動される最もオープンソースのスマートホームサーバー。",
   "Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.": "ボード上のオープンソースファームウェアTasmotaを搭載したスマートWI-FI MQTTデバイス。Home Assistantと完全に互換性があります。",
   "Hikikomori smart Tamagotchi": "引きこもりスマートたまごっち",
@@ -875,5 +874,11 @@
   "Windows icons": "Windowsアイコン",
   "Iphone": "アイフォン",
   "Samsung": "サムスン",
-  "Pixel": "ピクセル"
+  "Pixel": "ピクセル",
+  "Risc-v open source server": "Risc-vオープンソースサーバー",
+  "Get updates about smart devices": "スマートデバイスに関する最新情報を入手",
+  "Receive regular emails from Robonomics": "Robonomicsから定期的なメールを受け取る",
+  "Notify me when available": "利用可能になったときに通知する",
+  "Signed up successfully": "正常にサインアップされました",
+  "Robo Newsletter": "Roboニュースレター"
 }

@@ -730,7 +730,6 @@
   "A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized": "Ein intelligenter Sensor, der Umweltdaten wie Lärm, Staub und Temperatur sammelt und auf einem dezentralen Sensor-Map speichert",
   "sensor map": "Werden Sie Anbieter von Umweltdaten für Ihre Freunde und Nachbarn in der Umgebung. Greifen Sie auf wirklich dezentrale Messungen der Luftqualität, des Lärms, der Temperatur und anderer Umweltbedingungen auf der Sensor-Map zu.",
   "Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.": "RISC-V Open Source Server",
-  "risc-v open source server": "Der offenste Smart-Home-Server, betrieben von RISC-V, mit einer Web3-Cloud, die die Google-Server unter der Haube ersetzt.",
   "The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.": "Smart WI-FI MQTT-Geräte mit Open-Source-Firmware Tasmota auf dem Board, voll kompatibel mit Home Assistant.",
   "Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.": "Hikikomori Smart Tamagotchi",
   "Hikikomori smart Tamagotchi": "Endlich ein intelligentes Tamagotchi, das mehr als nur ein Spiel ist! Eine intelligente tragbare Station, die den Status von Sensoren aus Ihrem Zuhause oder Ihrer Kleidung überprüft.",
@@ -875,5 +874,11 @@
   "Windows icons": "Windows-Symbole",
   "Iphone": "Iphone",
   "Samsung": "Samsung",
-  "Pixel": "Pixel"
+  "Pixel": "Pixel",
+  "Risc-v open source server": "Risc-v Open Source Server",
+  "Get updates about smart devices": "Erhalten Sie Updates zu intelligenten Geräten",
+  "Receive regular emails from Robonomics": "Erhalten Sie regelmäßig E-Mails von Robonomics",
+  "Notify me when available": "Benachrichtigen Sie mich, wenn verfügbar",
+  "Signed up successfully": "Erfolgreich angemeldet",
+  "Robo Newsletter": "Robo Newsletter"
 }

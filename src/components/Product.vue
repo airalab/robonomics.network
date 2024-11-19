@@ -22,7 +22,7 @@
         </div> -->
 
         <div class="product__notify-btn">
-          <rb-button buttoncolor="accent-green" @click="openModal = true">Notify me when available</rb-button>
+          <rb-button buttoncolor="accent-green" @click="openModal = true">{{ $t('Notify me when available') }}</rb-button>
         </div>
       </div>
 
