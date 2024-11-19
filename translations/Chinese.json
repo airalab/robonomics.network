@@ -730,7 +730,6 @@
   "A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized": "收集环境数据 - 噪音、灰尘和温度，并将其存储在分散的智能传感器地图上",
   "sensor map": "成为您朋友和邻居区域的环境数据提供者。在传感器地图上访问真正分散的空气质量、噪音、温度和其他环境条件的测量数据。",
   "Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.": "risc-v开源服务器",
-  "risc-v open source server": "最开放的智能家居服务器，由RISC-V驱动，具有Web3云取代Google服务器的功能。",
   "The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.": "智能WI-FI MQTT设备，板载开源固件Tasmota，与Home Assistant完全兼容。",
   "Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.": "Hikikomori智能玩具",
   "Hikikomori smart Tamagotchi": "终于有一个不仅仅是游戏的智能玩具！一个智能可穿戴站，检查您家中或衣物上传感器的状态。",
@@ -875,5 +874,11 @@
   "Windows icons": "Windows图标",
   "Iphone": "苹果",
   "Samsung": "三星",
-  "Pixel": "像素"
+  "Pixel": "像素",
+  "Risc-v open source server": "Risc-v开源服务器",
+  "Get updates about smart devices": "获取智能设备的更新",
+  "Receive regular emails from Robonomics": "定期收到Robonomics的电子邮件",
+  "Notify me when available": "当有货时通知我",
+  "Signed up successfully": "成功注册",
+  "Robo Newsletter": "Robo通讯"
 }

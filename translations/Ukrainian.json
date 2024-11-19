@@ -730,7 +730,6 @@
   "A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized": "Розумний датчик, який збирає середовищні дані - шум, пил та температуру, та зберігає їх на децентралізованій",
   "sensor map": "карті датчиків",
   "Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.": "Станьте постачальником середовищних даних для своїх друзів та сусідів у вашому районі. Отримуйте дійсно децентралізовані виміри якості повітря, шуму, температури та інших середовищних умов на карті датчиків.",
-  "risc-v open source server": "відкритий сервер risc-v",
   "The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.": "Найбільш відкритий домашній сервер з використанням RISC-V, з хмарою Web3, що замінює сервери Google під капотом.",
   "Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.": "Розумні пристрої WI-FI MQTT з відкритим програмним забезпеченням Tasmota на борту, повністю сумісні з Home Assistant.",
   "Hikikomori smart Tamagotchi": "Розумний Tamagotchi Hikikomori",
@@ -875,5 +874,11 @@
   "Windows icons": "Іконки Windows",
   "Iphone": "Iphone",
   "Samsung": "Samsung",
-  "Pixel": "Pixel"
+  "Pixel": "Pixel",
+  "Risc-v open source server": "Відкритий сервер Risc-v з відкритим вихідним кодом",
+  "Get updates about smart devices": "Отримуйте оновлення про розумні пристрої",
+  "Receive regular emails from Robonomics": "Отримуйте регулярні електронні листи від Robonomics",
+  "Notify me when available": "Повідомте мене, коли буде доступно",
+  "Signed up successfully": "Успішно підписано",
+  "Robo Newsletter": "Робо-новини"
 }

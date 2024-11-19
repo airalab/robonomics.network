@@ -256,15 +256,18 @@ export default {
     }
   }
 
+  @media screen and (max-width: 510px) {
+    
+    .contacts__form-btn-text {
+      font-size: 12px;
+    }
+  }
+
   @media screen and (max-width: 395px) {
     .contacts__form-decor  {
       width: 220px;
       height: 300px;
       margin-right: 0;
-    }
-
-    .contacts__form-btn-text {
-      font-size: 16px;
     }
   }
 

@@ -730,7 +730,6 @@
   "A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized": "جهاز استشعار ذكي يجمع بيانات بيئية - الضوضاء، الغبار، ودرجة الحرارة، ويخزنها على نحو متميز",
   "sensor map": "خريطة الاستشعار",
   "Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.": "كن مزودًا لبيانات البيئة لأصدقائك وجيرانك في المنطقة. الوصول إلى قياسات متميزة حقًا لجودة الهواء، الضوضاء، درجة الحرارة، وشروط بيئية أخرى على خريطة الاستشعار.",
-  "risc-v open source server": "خادم مصدره مفتوح risc-v",
   "The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.": "أكثر خوادم المنزل الذكي مصدرها مفتوح risc-v، مع سحابة Web3 تحل محل خوادم Google تحت الغطاء.",
   "Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.": "أجهزة WI-FI الذكية ببرنامج تشغيل مفتوح المصدر Tasmota على اللوحة متوافقة تمامًا مع Home Assistant.",
   "Hikikomori smart Tamagotchi": "هيكيكوموري تاماغوتشي ذكي",
@@ -875,5 +874,11 @@
   "Windows icons": "رموز نظام التشغيل Windows",
   "Iphone": "آيفون",
   "Samsung": "سامسونج",
-  "Pixel": "بيكسل"
+  "Pixel": "بيكسل",
+  "Risc-v open source server": "خادم مفتوح المصدر Risc-v",
+  "Get updates about smart devices": "احصل على تحديثات حول الأجهزة الذكية",
+  "Receive regular emails from Robonomics": "استقبل رسائل البريد الإلكتروني بانتظام من Robonomics",
+  "Notify me when available": "أعلمني عند توفره",
+  "Signed up successfully": "تم التسجيل بنجاح",
+  "Robo Newsletter": "نشرة Robo"
 }

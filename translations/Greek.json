@@ -730,7 +730,6 @@
   "A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized": "Ένα έξυπνο αισθητήρα που συλλέγει δεδομένα περιβάλλοντος - θόρυβο, σκόνη και θερμοκρασία, και τα αποθηκεύει σε ένα αποκεντρωμένο",
   "sensor map": "χάρτη αισθητήρων",
   "Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.": "Γίνετε πάροχος δεδομένων περιβάλλοντος στους φίλους και τους γείτονές σας στην περιοχή. Αποκτήστε πρόσβαση σε πραγματικά αποκεντρωμένες μετρήσεις ποιότητας αέρα, θορύβου, θερμοκρασίας και άλλων περιβαλλοντικών συνθηκών στο χάρτη αισθητήρων.",
-  "risc-v open source server": "risc-v ανοικτού κώδικα διακομιστής",
   "The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.": "Ο πιο ανοικτού κώδικα διακομιστής έξυπνου σπιτιού, με τροφοδοσία από RISC-V, με ένα νέφος Web3 που αντικαθιστά τους διακομιστές της Google κάτω από το καπό.",
   "Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.": "Έξυπνες συσκευές WI-FI MQTT με ανοικτού κώδικα firmware Tasmota στο πίνακα πλήρως συμβατές με το Home Assistant.",
   "Hikikomori smart Tamagotchi": "Έξυπνο Hikikomori Tamagotchi",
@@ -875,5 +874,11 @@
   "Windows icons": "Εικονίδια Windows",
   "Iphone": "Ιphone",
   "Samsung": "Samsung",
-  "Pixel": "Pixel"
+  "Pixel": "Pixel",
+  "Risc-v open source server": "Ανοιχτός πηγαίος εξυπηρετητής Risc-v",
+  "Get updates about smart devices": "Λάβετε ενημερώσεις σχετικά με έξυπνες συσκευές",
+  "Receive regular emails from Robonomics": "Λαμβάνετε τακτικά emails από τη Robonomics",
+  "Notify me when available": "Ειδοποιήστε με όταν είναι διαθέσιμο",
+  "Signed up successfully": "Εγγραφή επιτυχής",
+  "Robo Newsletter": "Ενημερωτικό δελτίο Robo"
 }
