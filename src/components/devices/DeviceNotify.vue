@@ -1,6 +1,6 @@
 <template>
   <transition name="pop" appear>
-  <div class="product-notify-modal">
+  <div class="product-notify-modal" ref="modal">
     <rb-button class="product-notify-modal__close-btn" @click="$emit('closeModal')">
       <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
        <path d="M9.66198 1.96966L6.63204 4.99993L9.66198 8.03006C10.1127 8.48093 10.1127 9.21127 9.66198 9.66213C9.4368 9.88732 9.14156 10 8.84647 10C8.55089 10 8.25563 9.88749 8.03062 9.66213L5.00001 6.63165L1.96964 9.6621C1.74448 9.88729 1.44922 9.99997 1.15387 9.99997C0.85861 9.99997 0.563548 9.88746 0.338189 9.6621C-0.1125 9.21144 -0.1125 8.48107 0.338189 8.03004L3.36804 4.9999L0.338017 1.96966C-0.112672 1.51896 -0.112672 0.788452 0.338017 0.33776C0.788619 -0.112587 1.5187 -0.112587 1.96947 0.33776L4.99999 3.36804L8.03027 0.33776C8.48113 -0.112587 9.2113 -0.112587 9.66181 0.33776C10.1127 0.788452 10.1127 1.51896 9.66198 1.96966Z" fill="black"/>
@@ -131,6 +131,17 @@ export default {
 
   mounted() {
     this.customTags.push(this.$props.deviceName)
+
+    const modal = this.$refs.modal;
+
+    // Close modal on body click
+    window.document.addEventListener('click', (e) => {
+      let clickInside = modal.contains(e.target)
+
+      if(!clickInside && !e.target.parentElement.classList.contains('product__notify-btn')) {
+        this.$emit('closeModal')
+      }
+    })
   }
 
 }
