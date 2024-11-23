@@ -73,17 +73,6 @@ export default {
         defaultTitle: this.product.defaultTitle,
         openModal: false
     }
-  },
-
-
-  mounted() {
-
-    // Close modal on body click
-    // window.document.addEventListener('click', (e) => {
-    //   if(this.openModal && !e.target.parentElement.classList.contains('product__notify-btn')) {
-    //       this.openModal = false
-    //     }
-    // })
   }
 
 }
