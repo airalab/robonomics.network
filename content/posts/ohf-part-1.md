@@ -10,7 +10,7 @@ locale: 'en'
 
 tags: ['Announcements']
 
-cover_image: ./images/ohf-part-1/cover.png
+cover_image: ./images/ohf-part-1/cover.webp
 
 description: "To address the unique challenges of financing smart equipment, a robust mechanism design is proposed, involving digital twins for real-time equipment monitoring, prediction markets to guide efficient capital allocation, and risk-sharing contracts to align incentives and mitigate uncertainties. A DAO governance model can manage underwriting, ensuring transparent and optimal decision-making for capital allocation in the new categories of rapidly evolving connected equipment market."
 

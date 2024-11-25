@@ -30,7 +30,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
+    margin: var(--space) 0;
   }
 
   .pagination a {
