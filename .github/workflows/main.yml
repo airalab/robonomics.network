@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "22.x"
+          node-version: "22.9.0"
 
       - name: Install and Build 🔧
         run: |
