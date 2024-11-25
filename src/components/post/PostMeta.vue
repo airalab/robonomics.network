@@ -1,6 +1,6 @@
 <template>
    <div class="post-meta">
-      <p>
+      <div>
         <span>{{ post.date }}</span>
       
         <span v-if="post.tags.length > 0">in</span>
@@ -11,8 +11,8 @@
           <span class="divide" v-if="(index+1) != post.tags.length" :key="tag.id">,</span>
         </template>
 
-        / <g-link to="/blog">All posts</g-link>
-      </p>
+        / <g-link to="/blog"><b>All posts</b></g-link>
+      </div>
 
       <post-author v-if="author" :author="author"/>
 
@@ -40,7 +40,7 @@ export default {
     /* border-width: 1px 0;
     border-style: dashed;
     border-color: var(--color-gray); */
-    padding: var(--space) 0;
+    /* padding: var(--space) 0; */
     padding-bottom: 0;
     text-align: center;
   }

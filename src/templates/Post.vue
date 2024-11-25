@@ -8,10 +8,11 @@
       :pageImageHeight = "'576'"
     />
 
-    <g-link to="/blog/" class="small-banner section__blue">
-      <h3>{{$t('Important news and announcements')}}</h3>
-      <g-image quality="75" alt="" src="~/assets/images/blog-banner-img.svg" aria-hidden="true" />
-    </g-link>
+    <div class="layout">
+      <h1 v-html="$page.post.title"/>
+      <PostMeta :post="$page.post" :author="$page.post.author" />
+      <!-- <post-author v-if="$page.post.author" :author="$page.post.author"/> -->
+    </div>
 
     <hr/>
 
@@ -19,18 +20,13 @@
         <g-image  quality="75" :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
     </div>
 
-    <div class="layout__title">
-      <h1 v-html="$page.post.title"/>
-    </div>
+    <!-- <div class="layout__title">
+      
+    </div> -->
 
     <Abstract v-if="$page.post.abstract" :text="$page.post.abstract" :className="'post_abstract'"/>
 
-    <div class="layout">
-      <PostMeta :post="$page.post" :author="$page.post.author" />
-      <!-- <post-author v-if="$page.post.author" :author="$page.post.author"/> -->
-    </div>
-
-    <section class="post layout layout__text hyphens">
+    <section class="post layout layout__text">
        <VueRemarkContent />
     </section>
 
@@ -135,8 +131,7 @@ query($id: ID!) {
   .post__header {
       /* margin-top: var(--space-text); */
       /* max-width: 1400px; */
-      margin-left: auto;
-      margin-right: auto;
+      margin: var(--space) auto;
   }
 
 
