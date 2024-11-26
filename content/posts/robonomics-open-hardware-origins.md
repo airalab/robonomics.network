@@ -70,6 +70,9 @@ In early 2021, Robonomics started the Robossembler project with a big goal: to c
 
 Most open robotic manipulators initially used stepper motors, which were not ideal. Modern proprietary robots now use servo drives with integrated controllers for better feedback. Our team developed a custom servo drive controller, applicable to various motor projects.
 
+
+<rb-image zoom src="./images/robonomics-open-hardware-origins/robossembler-servo-reducer-exploding-view-01.jpg" alt="Robossembler Servo Exploding View" />
+
 <rb-image zoom src="./images/robonomics-open-hardware-origins/servo.jpg" alt="Robossembler Servo" />
 
 We designed our servo drive to be user-friendly for DIY enthusiasts. You don't need a high-tech workshop to make the stator. Instead of expensive electrical steel for the magnetic core, we use regular DIN screws. You can create the main parts of the rotor and stator using a 3D printer. This makes it much easier for hobbyists to build the project at home. Sources are available in our repository at [gitlab](https://gitlab.com/robossembler/servo).
@@ -77,7 +80,6 @@ We designed our servo drive to be user-friendly for DIY enthusiasts. You don't n
 ### Winding machine
 
 During motor development, we initially wound several stators by hand—an extremely labor-intensive process. Without much hesitation, we decided to create a specialized machine for automatic stator coil winding. The result? A remarkably cost-effective solution at around $150. Currently, this stands as the world's first open-source winding machine. We've designed it with accessibility in mind: most parts are 3D-printable. You can watch the entire process—from assembly to the machine's inaugural 8-hour stator winding—in this [video](https://youtu.be/5glGYkbpT6w?si=H6iFg7i56K8elXjw). Sources are available in our repository at [gitlab](https://gitlab.com/robossembler/cnc/motor-wire-winder).
-
 
 <rb-image zoom src="./images/robonomics-open-hardware-origins/winder.jpg" alt="Motor Wire Winder" />
 
