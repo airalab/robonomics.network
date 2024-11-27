@@ -8,26 +8,32 @@
       :pageImageHeight = "'576'"
     />
 
-    <div class="layout">
-      <h1 v-html="$page.post.title"/>
-      <PostMeta :post="$page.post" :author="$page.post.author" />
-      <!-- <post-author v-if="$page.post.author" :author="$page.post.author"/> -->
-    </div>
+    <h1 v-html="$page.post.title" class="layout"/>
 
-    <hr/>
+    <section class="layout metainfo">
+      <div v-if="$page.post.author">By {{$page.post.author}}</div>
+      <div>
+        <template v-if="$page.post.date">{{ $page.post.date }} </template>
 
-    <div class="post__header">
-        <g-image  quality="75" :alt="$page.post.title" v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
-    </div>
+        <template v-if="$page.post.tags.length > 0">
+          in 
+          <template v-for="(tag, index) in $page.post.tags">
+            <g-link :to="tag.path" :key="tag.id">{{ tag.title }}</g-link>
+            <span v-if="(index+1) != $page.post.tags.length" :key="tag.id" class="tagdivide">,</span>
+          </template>
+        </template> 
+        
+        <template v-if="$page.post.date || $page.post.tags.length > 0"> / </template>
+        <g-link to="/blog"><b>All posts</b></g-link>
+      </div>
+    </section>
 
-    <!-- <div class="layout__title">
-      
-    </div> -->
+    <p class="abstract layout layout__text" v-if="$page.post.abstract">{{$page.post.abstract}}</p>
 
-    <Abstract v-if="$page.post.abstract" :text="$page.post.abstract" :className="'post_abstract'"/>
+    <g-image v-if="$page.post.cover_image" :src="$page.post.cover_image" aria-hidden="true" class="poster" />
 
     <section class="post layout layout__text">
-       <VueRemarkContent />
+      <VueRemarkContent />
     </section>
 
     <PostRelated v-if="$page.post.related.length > 0" />
@@ -86,11 +92,8 @@ query($id: ID!) {
 
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
-      PostMeta: () => import('~/components/post/PostMeta.vue'),
-      // PostTags: () => import('~/components/post/PostTags.vue'),
       PostCard: () => import('~/components/PostCard.vue'),
       PostRelated: () => import('~/components/post/PostRelated.vue'),
-      Abstract: () => import('~/components/TextAbstract.vue'),
       PostAuthor: () => import('~/components/blocks/PostAuthor.vue'),
     },
 
@@ -98,8 +101,35 @@ query($id: ID!) {
 
 </script>
 
+<style scoped>
+  .abstract {
+    font-size: 120%;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .metainfo {
+    font-size: 90%;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: var(--space);
+  }
+
+  .tagdivide {
+    margin-right: 5px;
+  }
+
+  .poster {
+    display: block;
+    margin: var(--space) auto;
+    max-width: 100%;
+  }
+
+</style>
+
 
 <style>
+
   .post {
     padding: 0 var(--space);
     text-align: left;
@@ -127,20 +157,6 @@ query($id: ID!) {
   .post .big-table table {
     white-space: nowrap;
   }
-
-  .post__header {
-      /* margin-top: var(--space-text); */
-      /* max-width: 1400px; */
-      margin: var(--space) auto;
-  }
-
-
-  .post__header img {
-      display: block;
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
 
   .post code {
     vertical-align: middle;

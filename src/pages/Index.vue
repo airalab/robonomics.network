@@ -11,7 +11,7 @@
           <svg-banner />
           <h1>{{ $t('Begin your adventure in the world of cyber punks') }}</h1>
           <h4>#DePIN, #NetworkStates</h4>
-          <g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">{{ $t('About membership pass') }}</g-link>
+          <g-link to="/devices/" class="highlight">{{ $t('Hardware for cyber punks') }}</g-link>
         </div>
       </div>
 

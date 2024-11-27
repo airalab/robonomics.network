@@ -161,6 +161,10 @@ small, .text-small { font-size: 70%; line-height: 1.2; }
 
 .text-small p:not(:last-child) { margin-bottom: calc(var(--space-text) * 0.5);}
 
+b, strong {
+  font-variation-settings: var(--font-flex-medium);
+}
+
 blockquote {
   font-size: 110%;
   font-weight: 300;
@@ -169,10 +173,6 @@ blockquote {
   background-color: var(--color-light);
 
   border-left: 1px solid var(--text-color);
-}
-
-em {
-  font-style: italic;
 }
 
 ul, ol { 

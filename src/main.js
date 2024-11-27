@@ -20,7 +20,6 @@ import rbCode from '~/components/rbCode.vue'
 import rbGrid from '~/components/rbGridWrapper.vue'
 import rbGridElement from '~/components/rbGridElement.vue'
 import Card from '~/components/TextCard.vue'
-import Abstract from '~/components/TextAbstract.vue'
 import Youtube from '~/components/Youtube.vue'
 
 // Post
@@ -45,7 +44,6 @@ export default function (Vue, { isClient }) {
   Vue.component('rb-grid', rbGrid)
   Vue.component('rb-grid-element', rbGridElement)
   Vue.component('Card', Card)
-  Vue.component('Abstract', Abstract)
   Vue.component('Youtube', Youtube)
   Vue.component('ExpiredInfo',  ExpiredInfo)
 
