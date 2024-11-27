@@ -9,7 +9,6 @@ description: "The Robonomics team wishes the community a Happy Valentine's Day! 
 abstract: "The Robonomics team wishes the community a Happy Valentine's Day! Today, we all have one more reason to talk about our feelings, to express love and gratitude, to give something sweet and pleasant to our soulmate, friend - to whomever our heart desires."
 ---
 import Card from '~/components/TextCard.vue'
-import Abstract from '~/components/TextAbstract.vue'
 
 The Robonomics team, together with the [MerkleBot](https://merklebot.com/) project, has prepared another interesting experience with the Boston Dynamics Spot: you can connect to a robot-dog living in a laboratory in San Francisco and create a unique digital work of art with it. The resulting NFT picture can be added to your collection or used instead of a regular postcard - original and eco-friendly! The opportunity [to interact with Spot](https://spot.merklebot.com/) is available to everyone - for Robonomics this is an additional way to show love to the community<3
 
@@ -17,7 +16,7 @@ The Robonomics team, together with the [MerkleBot](https://merklebot.com/) proje
 
 This question should open up a discussion about the emotional aspects of integrating robotics into human life.
 
-<Abstract :style="{marginBottom: '2rem'}" class="post_abstract"  :text="`<b>Robotics</b> is a rapidly developing field of science that allows people to create machines that can safely exist in a complex human world, interact with its inhabitants (humans and other machines), perform some useful actions, usually aimed at improving the humans’ quality of life and in some way to simplify it.`" />
+> Robotics is a rapidly developing field of science that allows people to create machines that can safely exist in a complex human world, interact with its inhabitants (humans and other machines), perform some useful actions, usually aimed at improving the humans’ quality of life and in some way to simplify it.
 
 It seems that there are only benefits from robotic progress, however, along with it, a number of ethical issues and problems associated with the use of robots in humans’ everyday life arise.
 

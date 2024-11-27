@@ -125,7 +125,6 @@
 
 export default {
   components: {
-    Abstract: () => import('~/components/TextAbstract.vue'),
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     LogosItem: () => import("~/components/logos-and-assets/LogosItem.vue"),
   },
