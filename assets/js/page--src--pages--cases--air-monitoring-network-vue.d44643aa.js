@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{yMPv:function(n,t,o){"use strict";o.r(t);var i={},e=o("KHd+"),r=Object(e.a)(i,(function(){var n=this._self._c;return n("layout",[n("section",[this._v("air-monitoring-network")])])}),[],!1,null,null,null);t.default=r.exports}}]);

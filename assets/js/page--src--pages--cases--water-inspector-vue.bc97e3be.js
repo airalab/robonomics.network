@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{"6/0W":function(n,t,e){"use strict";e.r(t);var s={},o=e("KHd+"),u=Object(o.a)(s,(function(){var n=this._self._c;return n("layout",[n("section",[this._v("water-inspector")])])}),[],!1,null,null,null);t.default=u.exports}}]);
