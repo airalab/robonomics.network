@@ -1,6 +1,6 @@
 <template>
 
-  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('Altruist outdoor sensor')">
+  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('Outdoor sensor “Altruist“')">
 
     <MetaInfo
       pageTitle = "Smart devices from Robonomics"
@@ -10,9 +10,15 @@
 
     <div class="layout layout__content">
       <Altruist class="altruist-page"/>
-      <p><b>{{ $t('A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized') }} <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">{{ $t('sensor map') }}</g-link></b>.</p>
+
+      <!-- <h5>Be an Altruist with a fully independent Outdoor Air Sensor</h5> -->
+      <p>Join the movement with an <strong>open-source hardware sensor</strong> integrated into a <strong>decentralized map</strong>. Share and access <strong>noise, dust, and temperature data</strong> from other independent sensors nearby. Forget corporate servers—this data is <strong>securely distributed worldwide</strong> through innovative blockchain technology.</p>
+
+      <p>Experience the power of <strong>true DePIN (Decentralized Physical Infrastructure Network)</strong> — a revolutionary technological movement <strong>brought to life and thriving for years on our <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">decentralized sensor map</g-link></strong>.</p>
+
+      <!-- <p><b>{{ $t('A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized') }} <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">{{ $t('sensor map') }}</g-link></b>.</p>
       <p>{{$t('Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.')}}</p>
-      <p class="align-center"><g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">{{ $t('Available for members') }}</g-link></p>
+      <p class="align-center"><g-link to="/blog/robo-season-pass-2025-welcome-to-the-paper-st-club/" class="highlight">{{ $t('Available for members') }}</g-link></p> -->
 
       <h2 class="title-lined"><span>{{ $t('Usage') }}</span></h2>
 

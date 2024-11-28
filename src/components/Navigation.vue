@@ -12,9 +12,9 @@
     </ul>
 
     <ul :aria-label="$t('Explore website')">
-      <li><g-link aria-label="Robonomics papers" to="/papers/">{{$t('Science & White paper')}}</g-link></li>
       <li><g-link aria-label="about XRT" to="/xrt/">{{ $t('Tokenomics') }}</g-link></li>
-      <li><g-link aria-label="use cases" to="/cases/">{{ $t('Cases') }}</g-link></li>
+      <li><g-link aria-label="Robonomics papers" to="/papers/">{{$t('Science & White paper')}}</g-link></li>
+      <!-- <li><g-link aria-label="use cases" to="/cases/">{{ $t('Cases') }}</g-link></li> -->
       <li><g-link aria-label="timeline" to="/timeline/">{{ $t('Timeline') }}</g-link></li>
       <li><g-link aria-label="assets" to="/logos-and-assets/">{{ $t('Brand assets') }}</g-link></li>
       <li><g-link aria-label="wallpapers" to="/wallpapers/">{{ $t('Wallpapers') }}</g-link></li>

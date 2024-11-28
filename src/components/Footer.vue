@@ -26,7 +26,7 @@ export default {
 
 <style>
     footer {
-        margin-top: calc(var(--space) * 3);
+        margin-top: calc(var(--space) * 5);
     }
 
     footer a {
