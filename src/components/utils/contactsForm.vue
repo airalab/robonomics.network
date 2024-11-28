@@ -135,7 +135,7 @@ export default {
     background-size: 284px 364px;
     padding-left: calc(284px + var(--space));
     min-height: 364px;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     margin-left: -384px;
    }
 
