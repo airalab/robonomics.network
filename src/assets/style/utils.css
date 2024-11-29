@@ -12,10 +12,10 @@
 
 .oldy__link {
   cursor: pointer;
-  --oldy-box-color: var(--rb-color-blue);
+  /* --oldy-box-color: var(--rb-color-blue); */
 }
 
-.oldy__link:hover, .oldy:hover {
+.oldy__link:hover {
   --oldy-box-color: var(--color-link);
 }
 
@@ -242,3 +242,17 @@
   fill: var(--color-link) !important;
 }
 /* - list links */
+
+/* + margins & other space */
+.space-b {
+  margin-bottom: var(--space);
+}
+
+.space-b-05 {
+  margin-bottom: calc(var(--space) * 0.5);
+}
+
+.space-b-2 {
+  margin-bottom: calc(var(--space) * 2);
+}
+/* - margins & other space */
