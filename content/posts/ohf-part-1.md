@@ -76,7 +76,7 @@ Prediction markets and robust mechanism design both aim to elicit truthful infor
 
 The following steps illustrate how the process could be implemented:
 
-- Establish a prediction market for each category of smart equipment under consideration (delivery rovers, packacking arms, etc.).
+- Establish a prediction market for each category of smart equipment under consideration (delivery rovers, packaging arms, etc.).
 - Allow a broad group of stakeholders to trade contracts based on future performance metrics of the equipment, such as uptime percentage and maintenance costs.
 - Use the market price to reflect the collective belief about whether the equipment will meet specific performance benchmarks over the lease period.
 - If the prediction market indicates a high probability that the equipment will perform well (e.g., high uptime and low maintenance costs), allocate more capital towards leasing that equipment.
