@@ -47,7 +47,7 @@
 <script>
 export default {
     components: {
-      Spinner: () => import ('@/components/utils/Spinner.vue')
+      Spinner: () => import ('@/components/utils/spinner.vue')
     },
     
 
