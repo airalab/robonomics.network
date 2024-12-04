@@ -10,6 +10,7 @@ body {
 	/* + brand Robonomics colors */
 	--color-blue: hsl(229, 67%, 49%, 100%);
 	--color-red: hsl(337, 100%, 47%, 100%);
+	--color-green: hsl(72, 100%, 41%);
 	/* - brand Robonomics colors */
 
 	--color-dark: hsl(299, 0%, 0%);

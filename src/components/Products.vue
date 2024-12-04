@@ -24,7 +24,7 @@ export default {
   components: {
     ProductItem: () => import("~/components/Product.vue"),
     RiskV: () => import ('~/components/3dmodels/riscV.vue'),
-    RiskV3D: () => import ('~/components/3dmodels/riscV3D.vue'),
+    RiskV3D: () => import ('~/components/3dmodels/switch.vue'),
     AltruistSensor: () => import ('~/components/3dmodels/altruistSensor.vue')
   },
   
@@ -41,8 +41,8 @@ export default {
       products:[
         {
           id: 0,
-          title: this.$t('Altruist outdoor sensor'),
-          defaultTitle: 'Altruist outdoor sensor',
+          title: this.$t('Outdoor sensor “Altruist“'),
+          defaultTitle: 'Outdoor sensor “Altruist“',
           status: 'ready',
           text: `${this.$t('A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized')} <a aria-label="see decentralized sensor map" href="https://sensors.social/" target="_blank">${this.$t('sensor map')}</a>.`,
           cases: this.$t('Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.'),

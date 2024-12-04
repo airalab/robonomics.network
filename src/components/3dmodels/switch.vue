@@ -1,5 +1,5 @@
 <template>
-  <div ref="container" class="risc-v-3d"></div>
+  <div ref="container" v-bind="$attrs"></div>
 </template>
 
 <script>
@@ -143,42 +143,3 @@ export default {
 
 }
 </script>
-
-<style scoped>
-
-.risc-v-3d {
-  position: absolute;
-  width: 305px;
-  height: 330px;
-  right: -50px;
-  top: 0;
-  z-index: 15;
-  overflow: hidden;
-}
-
-
-@media screen and (max-width: 720px) {
-  .risc-v-3d {
-    top: unset;
-    bottom: -20px;
-    right: -20px;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .risc-v-3d {
-    bottom: -78px;
-    right: -20px;
-    transform: scale(0.8);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .risc-v-3d {
-    transform: scale(0.7);
-  }
-}
-
-
-
-</style>

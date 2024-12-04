@@ -5,8 +5,8 @@
       <gsp-form :gscriptID="gscript" :siteKey="siteKey">
         <input
           required 
-          name="email" 
-          class="contacts__input" 
+          name="email"
+          class="block"
           :class="{'sent': result === 'success'}"
           type="email" 
           :placeholder="$t('Your email')" 
@@ -47,7 +47,7 @@
 <script>
 export default {
     components: {
-      Spinner: () => import ('@/components/utils/spinner.vue')
+      Spinner: () => import ('@/components/utils/Spinner.vue')
     },
     
 
@@ -110,19 +110,6 @@ export default {
 
 <style scoped>
 
-  /* .contacts__form-wrapper {
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    padding: 0 calc(var(--space) - 15px);
-  }
-
-  .contacts__form-decor {
-    width: 284px;
-    height: 364px;
-    margin-right: 50px;
-  } */
-
    .footer-form {
     text-align: center;
     width: 100%;
@@ -135,7 +122,6 @@ export default {
     background-size: 284px 364px;
     padding-left: calc(284px + var(--space));
     min-height: 364px;
-    /* padding-top: 100px; */
     margin-left: -384px;
    }
 
@@ -175,25 +161,6 @@ export default {
 
   .button-success {
     background-color: var(--rb-color-green);
-  }
-
-  .contacts__input {
-    width: 100%;
-    padding: 15px 10px;
-    margin-bottom: 15px;
-    font-family: var(--font-family);
-    font-weight: 700;
-    border: 1px solid var(--color-dark);
-    color: var(--color-dark);
-    background-color: var(--color-light);
-  }
-
-  .contacts__input::placeholder {
-    color: var(--color-dark);
-  }
-
-  .contacts__input.sent {
-    background-color: var(--rb-color-green-accent) !important;
   }
 
   .contacts__form-btn-text {
@@ -240,14 +207,6 @@ export default {
       width: 280px;
       margin-right: 0;
       margin-left: -25px;
-    }
-
-    .contacts__input {
-      font-size: 12px;
-    }
-
-    .contacts__input::placeholder {
-      font-size: 12px;
     }
 
     .contacts__form-agreement {
