@@ -17,7 +17,7 @@
 
       <h2 class="title-lined"><span>{{ $t('Hardware for cyber punks 2025 line up') }}</span></h2>
       <div class="layout layout__content">
-        <Products specialCl="altruist-page" />
+        <DevicesList />
       </div>
 
       <section class="layout section">
@@ -56,16 +56,13 @@
 </template>
 
 <script>
-  import MetaInfo from '~/components/MetaInfo.vue'
-  import Products from '~/components/Products.vue'
-  import SvgBanner from '~/components/svg/BannerIndex.vue'
 
   export default {
 
     components: {
-      MetaInfo,
-      Products,
-      SvgBanner
+      MetaInfo: () => import("@/components/MetaInfo.vue"),
+      DevicesList: () => import ('@/components/blocks/DevicesList.vue'),
+      SvgBanner: () => import ('@/components/svg/BannerIndex.vue'),
     },
 
     data() {
