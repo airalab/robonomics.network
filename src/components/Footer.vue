@@ -15,9 +15,9 @@
 
 export default {
     components: {
-        ContactsForm: () => import("~/components/utils/contactsForm.vue"),
-        Navigation: () => import ('~/components/Navigation.vue'),
-        Socials: () => import ('~/components/utils/socials.vue'),
+        ContactsForm: () => import("~/components/blocks/contactsForm.vue"),
+        Navigation: () => import ('~/components/blocks/Navigation.vue'),
+        Socials: () => import ('~/components/blocks/socials.vue'),
     },
   }
 

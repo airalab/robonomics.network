@@ -8,7 +8,7 @@
 
     <div class="layout layout__text">
       <ul class="list-links">
-        <li class="oldy" v-for="item in contactlist" :key="item.title" :to="item.link">
+        <li class="oldy oldy__link" v-for="item in contactlist" :key="item.title" :to="item.link">
             <div class="icon" v-html="item.svg" aria-hidden="true"/>
             <g-link :to="item.link"><b>{{ $t(item.text) }}</b></g-link>
         </li>

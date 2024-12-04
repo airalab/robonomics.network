@@ -194,10 +194,19 @@ a:not(.button).dashed, .link:not(.button).dashed {
   border-bottom: 1px dashed currentColor
 }
 
+.highlight, .highlight-green {
+  font-variation-settings: var(--font-flex-bold);
+  border-bottom: 0.5px solid currentColor;
+}
+
+.highlight-green {
+  border-bottom: 0;
+  background-color: var(--rb-color-green-accent);
+}
+/* 
 a.highlight {
   border-bottom: 0.5px solid currentColor;
-  font-variation-settings: var(--font-flex-bold);
-}
+} */
 
 
 hr {
@@ -368,4 +377,8 @@ summary {
 
 .linereduce {
   line-height: 1;
+}
+
+.text-break {
+  word-break: break-all;
 }

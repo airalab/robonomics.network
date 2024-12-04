@@ -1,6 +1,6 @@
 <template>
     <ul class="list-links">
-      <li class="oldy" v-for="item in contactlist" :key="item.title" :to="item.link">
+      <li class="oldy oldy__link" v-for="item in contactlist" :key="item.title" :to="item.link">
           <div v-html="item.svg" aria-hidden="true"/>
           <div>
               <g-link :to="item.link"><b>{{ $t(item.title) }}</b></g-link>

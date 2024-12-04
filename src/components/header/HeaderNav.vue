@@ -16,6 +16,38 @@
     </div>
 </template>
 
+<script>
+    export default {
+
+        components: { 
+            Navigation: () => import ('~/components/blocks/Navigation.vue'),
+            Socials: () => import ('~/components/blocks/socials.vue')
+        },
+
+        data() {
+            return {
+                isOpen: false,
+            }
+        },
+
+
+        mounted() {
+
+            // Close nav on body click
+            window.document.addEventListener('click', (e) => {
+                const nav = document.querySelector('div.sidetext');
+                let clickInside = nav.contains(e.target)
+
+                if(!clickInside && nav.classList.contains('open')) {
+                    nav.classList.remove('open')
+                }
+            })
+
+        }
+    }
+</script>
+
+
 <style scoped>
 
     /* nav {
@@ -152,33 +184,3 @@
 
 </style>
 
-<script>
-    export default {
-
-        components: { 
-            Navigation: () => import ('../Navigation.vue'),
-            Socials: () => import ('~/components/utils/socials.vue')
-        },
-
-        data() {
-            return {
-                isOpen: false,
-            }
-        },
-
-
-        mounted() {
-
-            // Close nav on body click
-            window.document.addEventListener('click', (e) => {
-                const nav = document.querySelector('div.sidetext');
-                let clickInside = nav.contains(e.target)
-
-                if(!clickInside && nav.classList.contains('open')) {
-                    nav.classList.remove('open')
-                }
-            })
-
-        }
-    }
-</script>
