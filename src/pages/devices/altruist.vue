@@ -3,9 +3,9 @@
   <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('Outdoor sensor “Altruist“')">
 
     <MetaInfo
-      pageTitle = "Smart devices from Robonomics"
-      pageDescription = "Take full control over your smart devices using open-source firmwares, software and cloud-free hardware from Robonomics. Start with Universal IR Remote Control, Smart Energy Power Consumption Monitoring, 1,2 gang wi-fi Smart Switch, Air Quality Sensor, Tasmota firmware and Home Assistant smart home dashboard."
-      :pageImage = "'/website_cover_devices.png'"
+      :pageTitle="$t('Outdoor sensor “Altruist“')"
+      :pageDescription="$t('Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.')"
+      :pageImage = "'/og-pics/devices-altruist.webp'"
     />
 
     <div class="layout layout__content">

@@ -1,10 +1,10 @@
 <template>
-  <layout :title="$t('Robonomics hardware')">
+  <layout :title="$t('Robonomics open-source hardware')">
 
     <MetaInfo
-      pageTitle = "Smart devices from Robonomics"
-      pageDescription = "Take full control over your smart devices using open-source firmwares, software and cloud-free hardware from Robonomics. Start with Universal IR Remote Control, Smart Energy Power Consumption Monitoring, 1,2 gang wi-fi Smart Switch, Air Quality Sensor, Tasmota firmware and Home Assistant smart home dashboard."
-      :pageImage = "'/website_cover_devices.png'"
+      :pageTitle = "$t('Open-source hardware')"
+      :pageDescription = "$t('Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving with Robonomics')"
+      :pageImage = "'/og-pics/devices.webp'"
     />
 
     <div class="layout layout__content">
