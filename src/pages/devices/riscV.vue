@@ -1,11 +1,11 @@
 <template>
 
-  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('RISC-V Smart Home Server')">
+  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('Home server with Web3 cloud')">
 
     <MetaInfo
-      pageTitle = "Smart devices from Robonomics"
-      pageDescription = "Take full control over your smart devices using open-source firmwares, software and cloud-free hardware from Robonomics. Start with Universal IR Remote Control, Smart Energy Power Consumption Monitoring, 1,2 gang wi-fi Smart Switch, Air Quality Sensor, Tasmota firmware and Home Assistant smart home dashboard."
-      :pageImage = "'/website_cover_devices.png'"
+      :pageTitle="$t('Home server with Web3 cloud')"
+      :pageDescription="$t('The first server for a smart home built entirely on open-source — from CPU to decentralized cloud.')"
+      :pageImage = "'/og-pics/devices-riscv.webp'"
     />
 
     <div class="layout layout__content">
