@@ -9,7 +9,6 @@ abstract: "Hello friends! In this lesson, we will show you possibly our most ins
 tags: ['Online school', 'Use Cases']
 ---
 import Card from '~/components/TextCard.vue'
-import UserForm from '~/components/blocks/UserForm.vue'
 
 <ExpiredInfo/>
 

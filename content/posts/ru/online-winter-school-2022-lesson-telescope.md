@@ -9,7 +9,6 @@ abstract: "Привет друзья! В этом уроке мы покажем
 tags: ['Онлайн школа', 'Сценарии использования']
 ---
 import Card from '~/components/TextCard.vue'
-import UserForm from '~/components/blocks/UserForm.vue'
 
 <ExpiredInfo/>
 
@@ -46,15 +45,5 @@ https://telescope.merklebot.com
 ### Вот как выглядит весь процесс:
 
 https://youtu.be/q7yaqlmrzZs
-
-</Card>
-
-<Card>
-
-## Stay tuned!
-
-If you'd like to receive email notifications about lessons start and some helpful materials, feel free to subscribe:
-
-<UserForm comment="robonomics.network telescope"/>
 
 </Card>

@@ -9,7 +9,6 @@ abstract: ""
 tags: ['Robonomics parachain', 'Roadmap', 'New release']
 ---
 import Card from '~/components/TextCard.vue'
-import UserForm from '~/components/blocks/UserForm.vue'
 
 The Robonomics parachain was launched in January of this year, and our first publicly available progress report was published on January 18th [in a blog post](https://robonomics.network/blog/parachain-on-kusama-first-week-report/). Now, we will provide details of the work we have already performed within the task list as specified in the roadmap on Github: [Tracking issue for Robonomics Parachains on Kusama Launch #145](https://github.com/airalab/robonomics/issues/145).
 
