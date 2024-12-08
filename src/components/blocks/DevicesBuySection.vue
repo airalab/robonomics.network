@@ -8,13 +8,13 @@
             </div>
         </div>
         
-        <gsp-form :gscriptID="gscript" :siteKey="siteKey" @gsp-beforesubmit="beforeSubmit" @gsp-onsubmit="onSubmit">
+        <gsp-form :gscriptID="gscript" :siteKey="siteKey" @gsp-beforesubmit="beforeSubmit" @gsp-onsubmit="onSubmit" @gsp-oncaptchanotverified="captchaError">
             <label class="block"><input type="email" data-gsp-name="Email" :data-gsp-data="email" v-model="email" :placeholder="$t('Your email')" class="block" required /></label>
             <label class="block"><input disabled type="checkbox" v-model="deviceupdates" /> <span>Get updates about smart devices</span></label>
             <label class="block"><input type="checkbox" v-model="regularupdates" /> <span>Receive regular emails from Robonomics</span></label>
             
             <input type="hidden" data-gsp-name="Location" :data-gsp-data="location" />
-            <input type="hidden" data-gsp-name="customTags" :data-gsp-data="tags.toString()" />
+            <input type="hidden" data-gsp-name="Tags" :data-gsp-data="tags.toString()" />
 
             <robo-button class="block" :loading="status === 'process'" :type="buttontype">{{buttontext}}</robo-button>
             <span v-if="message">{{message}}</span>
@@ -53,7 +53,8 @@
             buttontype() {
                return {
                     'ok': 'ok',
-                    'error': 'error'
+                    'error': 'error',
+                    'na': 'na',
                 }[this.status] ?? 'primary'
             },
 
@@ -66,14 +67,13 @@
         },
 
         methods: {
-            beforeSubmit(responce) {
-                this.status = 'process';
+            captchaError() {
+                this.status = 'na';
+                this.message = 'Captcha is not verified. Please, check your internet connection';
+            },
 
-                if(responce === 'captcha error') {
-                    this.status = 'error';
-                    this.message = 'Some network error occured. Please, check your network and try to submit later.';
-                    return;
-                }
+            beforeSubmit() {
+                this.status = 'process';
 
                 if(!this.regularupdates) {
                     this.tags.push('only-devices');
@@ -81,14 +81,11 @@
             },
 
             onSubmit(responce, postbody) {
-                if(responce === 'success') {
+                if(responce.result === 'success') {
                     this.status = 'ok';
                 } else {
-                    console.log('responce', responce);
                     this.status = 'error';
                 }
-
-                console.log('postbody', postbody);
             }
         }
     }
