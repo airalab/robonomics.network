@@ -9,7 +9,6 @@ abstract: "Привет всем участникам! Мы рады, что в�
 tags: ['Онлайн школа', 'Философия Робономики']
 ---
 import Card from '~/components/TextCard.vue'
-import UserForm from '~/components/blocks/UserForm.vue'
 
 <ExpiredInfo/>
 

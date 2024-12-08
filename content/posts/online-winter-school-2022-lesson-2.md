@@ -9,7 +9,6 @@ abstract: "Hello to all participants! We are glad that you were able to pass thr
 tags: ['Online school', 'Philosophy of Robonomics']
 ---
 import Card from '~/components/TextCard.vue'
-import UserForm from '~/components/blocks/UserForm.vue'
 
 <ExpiredInfo/>
 
@@ -43,16 +42,5 @@ You can read the chapter in the original in different languages at the links:
 After reading the chapter, be sure to pass the test for the second lesson in order to participate in the prize draw. You will be asked 17 questions, and we hope they will inspire you to think deeper about our ideas. To pass the test, you need to score 10 correct answers out of 17 (60%, the standard value in academic practice).  Correct answers and a list of those who successfully completed the lesson will be published on the final day of the school.
 
 <rb-button to="https://lesson2.robonomics.academy/">Take the Quiz</rb-button>
-
-</Card>
-
-
-<Card>
-
-## Stay tuned!
-
-If you'd like to receive email notifications about lessons start and some helpful materials, feel free to subscribe:
-
-<UserForm comment="robonomics.network lesson 2"/>
 
 </Card>
