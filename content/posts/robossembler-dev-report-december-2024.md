@@ -3,7 +3,7 @@ title: "Robossembler Dev Report #1"
 date: 2024-12-08
 published: true
 locale: 'en'
-cover_image: ./images/web3-devops-stack/web3-devops-stack-Cover.png
+cover_image: ./images/robossembler-dev-report-december-2024/Robossembler-1-cover.png
 description: "The Robossembler project focuses on developing industrial robots and tools for their production that are accessible to any DIY enthusiast. In this article, we'll share our current progress - an updated and tested gearbox, the 5th version of the winding machine, and a robot manipulator with additional optimizations for 3D printing!"
 abstract: "The Robossembler project focuses on developing industrial robots and tools for their production that are accessible to any DIY enthusiast. In this article, we'll share our current progress - an updated and tested gearbox, the 5th version of the winding machine, and a robot manipulator with additional optimizations for 3D printing!"
 tags: ['Robossembler']
