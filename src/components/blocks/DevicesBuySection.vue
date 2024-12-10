@@ -1,25 +1,29 @@
 <template>
-    <section>
-        <div class="price" v-if="price">
-            <div class="price-number">{{price}}</div>
-            <div class="price-desc">
-                <div>Early bird price</div>
-                <div>Stay Tuned: Sales Starting Soon!</div>
-            </div>
-        </div>
-        
-        <gsp-form :gscriptID="gscript" :siteKey="siteKey" @gsp-beforesubmit="beforeSubmit" @gsp-onsubmit="onSubmit" @gsp-oncaptchanotverified="captchaError">
-            <label class="block"><input type="email" data-gsp-name="Email" :data-gsp-data="email" v-model="email" :placeholder="$t('Your email')" class="block" required /></label>
-            <label class="block"><input disabled type="checkbox" v-model="deviceupdates" /> <span>Get updates about smart devices</span></label>
-            <label class="block"><input type="checkbox" v-model="regularupdates" /> <span>Receive regular emails from Robonomics</span></label>
-            
-            <input type="hidden" data-gsp-name="Location" :data-gsp-data="location" />
-            <input type="hidden" data-gsp-name="Tags" :data-gsp-data="tags.toString()" />
+     <div class="layout layout__content section-vivid-green">
+        <slot />
 
-            <robo-button class="block" :loading="status === 'process'" :type="buttontype">{{buttontext}}</robo-button>
-            <span v-if="message">{{message}}</span>
-        </gsp-form>
-    </section>
+        <section>
+            <div class="price" v-if="price">
+                <div class="price-number">{{price}}</div>
+                <div class="price-desc">
+                    <div>Early bird price</div>
+                    <div>Stay Tuned: Sales Starting Soon!</div>
+                </div>
+            </div>
+            
+            <gsp-form :gscriptID="gscript" :siteKey="siteKey" @gsp-beforesubmit="beforeSubmit" @gsp-onsubmit="onSubmit" @gsp-oncaptchanotverified="captchaError">
+                <label class="block"><input type="email" data-gsp-name="Email" :data-gsp-data="email" v-model="email" :placeholder="$t('Your email')" class="block" required /></label>
+                <label class="block"><input disabled type="checkbox" v-model="deviceupdates" /> <span>Get updates about smart devices</span></label>
+                <label class="block"><input type="checkbox" v-model="regularupdates" /> <span>Receive regular emails from Robonomics</span></label>
+                
+                <input type="hidden" data-gsp-name="Location" :data-gsp-data="location" />
+                <input type="hidden" data-gsp-name="Tags" :data-gsp-data="tags.toString()" />
+
+                <robo-button class="block" :loading="status === 'process'" :type="buttontype">{{buttontext}}</robo-button>
+                <span v-if="message">{{message}}</span>
+            </gsp-form>
+        </section>
+    </div>
 </template>
 
 <script>
@@ -92,9 +96,25 @@
 </script>
 
 <style scoped>
+    .section-vivid-green {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        gap: calc(var(--space) * 2);
+        margin-top: calc(var(--space) * 2);
+        margin-bottom: calc(var(--space) * 2);
+    }
+
+    @media screen and (width < 600px) {
+        .section-vivid-green {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space);
+        }
+    }
+
     section {
         max-width: 500px;
-        margin: calc(var(--space)*2) auto calc(var(--space)*3);
+        /* margin: calc(var(--space)*2) auto calc(var(--space)*3); */
     }
 
     .price {
