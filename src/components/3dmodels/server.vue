@@ -1,5 +1,5 @@
 <template>
-  <div v-bind="$attrs" class="model" aria-label="3d model for open-source server Risc-V" v-in-viewport='{ margin: "-200px 0%" }'>
+  <div v-bind="$attrs" :class="classes" aria-label="3d model for open-source server Risc-V" v-in-viewport='{ margin: "-200px 0%" }'>
 
     <g-image src="~/assets/images/hardware-2025/riscv/RiscV-Layout-1.webp" immediate />
     <g-image src="~/assets/images/hardware-2025/riscv/RiscV-Layout-2.webp" immediate />
@@ -12,6 +12,26 @@
 
   </div>
 </template>
+
+<script>
+    export default {
+        props: {
+            noanimation: {
+              type: Boolean,
+              default: false
+            }
+        },
+
+        computed: {
+          classes() {
+            return {
+              [`model`]: true,
+              [`model-noanimation`]: this.noanimation,
+            };
+          },
+        }
+    }
+</script>
 
 <style scoped>
 
@@ -33,7 +53,7 @@
   }
 
   .model {
-     --opengap: 10px;
+    --opengap: 10px;
     position: relative;
     width: 100%;
     max-width: 500px;
@@ -43,10 +63,18 @@
     display: block;
     width: 100%;
     margin-bottom: calc(var(--opengap) * 8 * var(--koef));
+  }
+
+  .model:not(.model-noanimation) img {
     animation: openmodel 1s ease-in-out forwards;
   }
 
-  .model.in-viewport img {
+  .model.model-noanimation img {
+    --opengap: 0px;
+    --koef: 1;
+  }
+
+  .model:not(.model-noanimation).in-viewport img {
     animation: closemodel 0.5s linear 0s forwards;
   }
 
