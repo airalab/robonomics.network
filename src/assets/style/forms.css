@@ -7,7 +7,7 @@ input, select, button {
 	--font-settings: var(--font-flex-bold);
 	--font-family: var(--font-family);
 	--font-size: var(--base-font-size);
-	--checkbox-size: 1rem;
+	--checkbox-size: 1.3rem;
 	font-variation-settings: var(--font-settings);
 }
 
@@ -17,6 +17,10 @@ input, select, button {
 	font-size: var(--font-size);
 	display: inline-block;
 	border: var(--border-width) solid var(--border-color);
+}
+
+input[disabled], select[disabled] {
+	opacity: 0.5;
 }
 
 input:not([type='checkbox']):not([type='radio']), select, button {
@@ -48,6 +52,9 @@ input[type='checkbox']:last-child {
 
 input[type='checkbox']:checked {
 	background-color: var(--rb-color-green-accent);
+	background-image: url('data:image/svg+xml,<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_825_12739)"><path d="M13.5899 4.29821L6.20435 11.6833C5.65744 12.2303 4.77026 12.2303 4.22283 11.6833L0.410339 7.87051C-0.13678 7.3235 -0.13678 6.43622 0.410339 5.8891C0.957562 5.34188 1.84467 5.34188 2.39165 5.88889L5.21388 8.71116L11.6083 2.31669C12.1555 1.76947 13.0427 1.76989 13.5897 2.31669C14.1367 2.86381 14.1367 3.75078 13.5899 4.29821Z" fill="black"/></g><defs><clipPath id="clip0_825_12739"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 
