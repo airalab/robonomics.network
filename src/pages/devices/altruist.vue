@@ -8,48 +8,46 @@
       :pageImage = "'/og-pics/devices-altruist.webp'"
     />
 
-    <div class="layout layout__content">
-      <ModelAltruist class="model" />
+    <DeviceBuySection price="$95">
+      <ModelAltruist vertical noanimation />
+      <ModelAltruist noanimation />
+    </DeviceBuySection>
 
-      <article>
-        <p>Join the movement with an open-source hardware sensor integrated into a decentralized map. Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.</p>
-        <p>Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">decentralized sensor map</g-link>.</p>
-      </article>
+    <article class="layout layout__content space-b-2">
+      <p>Join the movement with an open-source hardware sensor integrated into a decentralized map. Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.</p>
+      <p>Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">decentralized sensor map</g-link>.</p>
+    </article>
 
-      <device-buy-section price="$95" />
+    <h2 class="layout title-lined"><span>{{ $t('3 ways to use it') }}</span></h2>
 
-      <h2 class="title-lined"><span>{{ $t('3 ways to use it') }}</span></h2>
-    </div>
-
-    <section class="layout space-b-2">
+    <article class="layout space-b-2">
       <div class="grid-3">
-        <article class="oldy">
-          <h5 class="space-b-05">Monitor Air Quality</h5>
-
+        <section class="oldy">
+          <h5 class="space-b-05">{{ $t('Monitor Air Quality') }}</h5>
           <p>Access <strong>noise, dust, and temperature data</strong> from other independent sensors on our <g-link class="highlight" aria-label="go to decentralized sensor map" to="https://sensors.social/">decentralized sensor map</g-link>.</p>
-          
           <p>Connect your device as simple as other smart devices and share your environmental outdoor data with community.</p>
-
           <g-link class="highlight" aria-label="check our firmware" to="https://github.com/airalab/altruist-firmware">{{ $t('Check open-source sensor firmware on GitHub') }}</g-link>
-        </article>
-        <article class="oldy">
-          <h5 class="space-b-05">{{ $t("Operate your own Data Server") }}</h5>
+        </section>
+
+        <section class="oldy">
+          <h5 class="space-b-05">{{ $t("Operate your own Data Server") }} +</h5>
            <p>{{ $t("Data processing is always a sensitive issue. That's why we offer a fully open-source") }}
           <g-link class="highlight" to="https://github.com/airalab/sensors-connectivity" aria-label="check open source connectivity module">{{$t('connectivity module')}}</g-link>  
           {{ $t('giving you the freedom to choose which servers to use for processing. No proprietary clouds, no hidden code.') }}</p>
           <p>Keep in mind, you can join the <g-link class="highlight" aria-label="go to decentralized sensor map" to="https://sensors.social/">global decentralized sensor map</g-link> even with a sensor connected through your own server!</p>
-          
-        </article>
-        <article class="oldy">
-          <h5 class="space-b-05">Run your own Interactive Map</h5>
+        </section>
+
+        <section class="oldy">
+          <h5 class="space-b-05">{{ $t('Run your own Interactive Map') }} ++</h5>
           <p>Love the idea of a decentralized map but want to customize it with extra layouts and become an administrator of new sovereign sensor infrastructure? You can deploy <g-link to="https://github.com/airalab/sensors.social/" aria-label="GitHub Reposytory for the map" class="highlight">your own version by forking</g-link> our open-source code on GitHub (be sure to check the license type). Remember to use open-source resources responsibly.</p>
-        </article>
+        </section>
+
       </div>
-    </section>
+    </article>
 
-    <section class="layout layout__text space-b-2">
-      <h2 class="title-lined"><span>{{ $t('Device Specifications') }}</span></h2>
+    <h2 class="layout title-lined"><span>{{ $t('Device Specifications') }}</span></h2>
 
+    <article class="layout layout__text space-b-2">
       <ul>
         <li><b>Input Voltage:</b> AC 100-240V 50/60Hz</li>
         <li><b>Wireless protocol:</b> Supports 2.4GHz Wi-Fi 6 (802.11 b/g/n) and Bluetooth 5 (LE), Zigbee with onboard antenna</li>
@@ -59,11 +57,12 @@
         <li><b>PM sensor:</b> SDS011 laser PM2.5/PM10 sensor</li>
         <li><b>Supported sensors:</b> T&H: SHT3X,BME280,HTU21D; Noise Level Sensor:  I2S INMP441; Geiger counter : Radsens.</li>
       </ul>
-    </section>
+    </article>
 
-    <section class="layout layout__text space-b-2">
-      <h2 class="title-lined"><span>{{ $t('Help & support') }}</span></h2>
-
+   <h2 class="layout title-lined"><span>{{ $t('Help & support') }}</span></h2>
+   
+   <article class="layout layout__text space-b-2">
+    
         <details>
           <summary class="text-center">{{$t('Steps to set up your Connectivity')}}</summary>
 
@@ -140,7 +139,7 @@
             </li>
           </ol>
         </details>
-    </section>
+    </article>
 
   </layout>
   
@@ -159,8 +158,17 @@ export default {
 </script>
 
 <style scoped>
-  .model {
+  /* .model {
     margin: var(--space) auto;
     max-width: 600px;
+  } */
+
+  .model-gorizontal {
+    display: none;
+  }
+
+  @media screen and (width < 600px) {
+    .model-gorizontal { display: block; }
+    .model-vertical { display: none; }
   }
 </style>
