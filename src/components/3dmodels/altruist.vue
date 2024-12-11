@@ -212,6 +212,7 @@
     }
   }
 
+
   @media screen and (max-width: 400px) {
     .model img {
       --opengap: 20px !important;
