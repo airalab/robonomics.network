@@ -64,7 +64,7 @@
 
             buttontext() {
                return {
-                    'ok': 'Thanks for the submition!',
+                    'ok': 'Thanks for your submission!',
                     'error': 'Not submitted'
                 }[this.status] ?? 'Notify me when available'
             }
