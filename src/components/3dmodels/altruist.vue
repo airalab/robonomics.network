@@ -202,19 +202,19 @@
   /* + media query fallback */
   @media screen and (max-width: 850px) {
     .model img {
-      --opengap: 50px;
+      --opengap: 50px !important;
     }
   }
 
   @media screen and (max-width: 650px) {
     .model img {
-      --opengap: 30px;
+      --opengap: 30px !important;
     }
   }
 
   @media screen and (max-width: 400px) {
     .model img {
-      --opengap: 20px;
+      --opengap: 20px !important;
     }
   }
   /* - media query fallback */
