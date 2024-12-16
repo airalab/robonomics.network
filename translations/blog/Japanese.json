@@ -1,5 +1,5 @@
 {
-  "Hacked Johnny's Lab": "ハッキン�されたジョニーの研究室",
+  "Hacked Johnny's Lab": "ハッキンされたジョニーの研究室",
   "Hey there! PaTara on the line. There was a recent event “Hack Johnny’s Lab” by Robonomics and I believe I did hack it in a way! Apart from the very first try which I lost due to rules misunderstanding, I won every round I took part in and here is a short “howto” story.": "こんにちは！PaTaraです。最近、Robonomicsによるイベント「Hack Johnny's Lab」があり、私はある意味でそれをハックしたと思います！最初の試みはルールの誤解により失敗しましたが、参加したすべてのラウンドで勝利し、ここに短い「ハウツー」ストーリーがあります。",
   "There was a recent event “Hack Johnny’s Lab” by Robonomics and I believe I did hack it in a way! Apart from the very first try which I lost due to rules misunderstanding, I won every round I took part in and here is a short “howto” story.": "最近、Robonomicsによるイベント「Hack Johnny's Lab」があり、私はある意味でそれをハックしたと思います！最初の試みはルールの誤解により失敗しましたが、参加したすべてのラウンドで勝利し、ここに短い「ハウツー」ストーリーがあります。",
   "I’m sort of familiar with programming and I have a decent laptop and almost no skill in image recognition. More than that,": "私はプログラミングにはある程度慣れており、まあまあのラップトップを持っていますが、画像認識のスキルはほとんどありません。それ以上に、",
@@ -23,7 +23,7 @@
   "I would save tons of time! GitHub parsing led me to": "コード行にたどり着き、スクリプトに組み合わせの検証を追加しました。これにより、潜在的な外部入力の数がおおよそ39'000'000倍速く減少しました！",
   "[this](https://github.com/polkascan/py-substrate-interface/blob/master/substrateinterface/keypair.py#L170)": "しかし、それでも、3900万回の呼び出しは永遠に私を禁止するでしょう。だから、もっと掘り下げる必要がありました。どうやって計算の数を大幅に削減できるでしょうか？",
   "line of code and I added a combination validation to my script. This has reduced the number of potential extrinsics down": "少し初期の戦略を裏切ることで、それを実現できます。ビデオの視聴を避けるつもりでしたが、",
-  "to roughly 39’000’000 12 times faster!": "「ビデオを必要としないハッカー」という考えを変えさせたの�数学でした。132倍速い戦略に変更しました。",
+  "to roughly 39’000’000 12 times faster!": "「ビデオを必要としないハッカー」という考えを変えさせたの学でした。132倍速い戦略に変更しました。",
   "But still, 39 million calls would ban me forever, so I needed more digging. How could I significantly cut the": "以下に説明します。",
   "number of calculations? Well, by a little bit betraying my initial strategy. See, I was going to avoid video watching,": "それにより、フレーズ内の単語の2つの正しい位置だけを知る必要がありました（1つだけだと時間がかかりすぎることが実験で確認されました）。",
   "“a hacker, who won’t even need a video”, but the math made me change my mind. Change it to a 132 times faster strategy.": "10！の組み合わせを繰り返し、2つの単語を正しい位置に挿入し、フレーズを検証し、",
@@ -44,6 +44,6 @@
   "up my own local Robonomics node synchronized with the chain and ask it for a resulting account address balance!": "自分自身のローカルRobonomicsノードをチェーンと同期させ、その結果のアカウントアドレス残高を尋ねます！",
   "Query is way “easier” than an extrinsic. After a whole night of synchronizing (I’ve set a cache limit so that my)": "クエリは外部からの要求よりもはるかに「簡単」です。同期化の一晩中（ROM内のチェーンデータでラップトップが爆発しないようにキャッシュ制限を設定しました）",
   "(laptop won’t blow up with chain data in its ROM) I gave it a try and.. this was a disaster. Network transactions": "試してみましたが...これは災害でした。ネットワークトランザクション（localhost内でも）には時間がかかりすぎました。最後まで待つ必要もなく、明らかにビデオを見るよりも遅かったです。アカウントの正確なアドレスを知ることができればよかったのですが！しかし、そのためにはニーモニックフレーズが必要です... **本当に必要なのでしょうか？**",
-  "(even within a localhost) took too much time. I didn’t even wait till the end, it was obviously way slower than": "（ローカル�スト内でも）時間がかかりすぎました。最後まで待つこともなく、明らかにビデオ全体を見るよりも遅かったです",
+  "(even within a localhost) took too much time. I didn’t even wait till the end, it was obviously way slower than": "（ローカルト内でも）時間がかかりすぎました。最後まで待つこともなく、明らかにビデオ全体を見るよりも遅かったです",
   "watching a whole video. If only I could know the exact address of the account! But for that I need a mnemonic phrase… **Or do I really?**": "アカウントの正確なアドレスを知ることができればいいのに！でもそのためにはニーモニックフレーズが必要です... **本当に必要なのか？**"
 }

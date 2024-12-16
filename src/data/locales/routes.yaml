@@ -104,6 +104,12 @@
 - path: '/devices/risc-v'
   component: './src/pages/devices/riscV.vue'
   typename: 'page'
+- path: '/devices/hikikomori'
+  component: './src/pages/devices/hikikomori.vue'
+  typename: 'page'
+- path: '/devices/energy-monitor'
+  component: './src/pages/devices/energyMonitor.vue'
+  typename: 'page'
 
 
 
