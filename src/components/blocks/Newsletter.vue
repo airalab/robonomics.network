@@ -43,17 +43,17 @@
 
             buttontext() {
                return {
-                    'ok': 'Thanks for the submition!',
-                    'error': 'Not submitted',
-                    'process': 'Submitting'
-                }[this.status] ?? 'Submit'
+                    'ok': this.$t('Thanks for the submition!'),
+                    'error': this.$t('Not submitted'),
+                    'process': this.$t('Submitting')
+                }[this.status] ?? this.$t('Submit')
             }
         },
 
         methods: {
             captchaError() {
                 this.status = 'na';
-                this.message = 'Captcha is not verified. Please, check your internet connection';
+                this.message = this.$t('Captcha is not verified. Please, check your internet connection');
             },
 
             beforeSubmit() {

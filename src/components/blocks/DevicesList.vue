@@ -10,7 +10,7 @@
 
             <p v-if="product.text" v-html="product.text" />
             <template v-if="product.cases">
-            <h5>Use cases:</h5>
+            <h5>{{ $t('Use cases') }}:</h5>
             <p>{{product.cases}}</p>
             </template>
 
@@ -21,10 +21,8 @@
             <ModelSwitch v-if="product.code === 'server'" class="product-picture-switch" />
 
             <g-image v-if="product.code === 'hikikomori'" src="~/assets/images/hardware-2025/tamagotchi.webp" :alt="product.title + ' picture'" />
+            <g-image class="product-picture--energy-monitor" v-if="product.code === 'energy-monitor'" src="~/assets/images/hardware-2025/energy-monitor.webp" :alt="product.title + ' picture'" />
             </div>
-
-            
-
         </article>
     </section>
 </template>
@@ -61,7 +59,14 @@ export default {
           code: 'hikikomori',
           title: this.$t('Hikikomori smart Tamagotchi'),
           text: this.$t('Finally, a smart Tamagotchi that’s more than just a game! A smart wearable station that checks the status of sensors from your home or clothing.'),
-          cases: this.$t('Connect your smart home and smart clothing to the Hikikomori to monitor sensor data—right at your fingertips. Literally.')
+          cases: this.$t('Connect your smart home and smart clothing to the Hikikomori to monitor sensor data—right at your fingertips. Literally.'),
+          titleLink: '/devices/hikikomori'
+        },
+        {
+          code: 'energy-monitor',
+          title: this.$t('Energy Monitor'),
+          text: this.$t('A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.'),
+          titleLink: '/devices/energy-monitor'
         },
       ],
     }
@@ -96,6 +101,13 @@ export default {
   .product-picture {
     position: relative;
     overflow: hidden;
+  }
+
+  .product-picture .product-picture--energy-monitor {
+    max-width: 540px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 
   .product-picture-server {

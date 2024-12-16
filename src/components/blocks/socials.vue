@@ -17,7 +17,8 @@ import contacts from '@/data/contact.yaml'
 export default {
     data() {
       return {
-        showcontacts: ['Github', 'X', 'Youtube', 'Discord']
+        showcontacts: ['Github', 'X', 'Youtube', 'Discord'],
+        socialsText: [this.$t('Follow for latest news and important updates'), this.$t('The best way to check open-source project'), this.$t('Useful, serious, cute videos, teasers etc.'), this.$t('Chat for engineers and developers'), this.$t('Github'), this.$t('X'), this.$t('Youtube'), this.$t('Discord'), this.$t('Unofficial chat for crypto fellows')] // for translations purpose
       }
     },
 
