@@ -14,7 +14,7 @@
         <g-link
           v-for="link in book.options"
           :key="link.id"
-          :to="gateway + link.link"
+          :to="booksLinks[link.name]"
         >
         {{ link.text }}
         </g-link>
@@ -39,6 +39,67 @@ export default {
       required: true,
       default: ''
     }
+  },
+
+  data() {
+    return {
+      booksLinks: {}
+    }
+  },
+
+  methods: {
+
+    // Helper to fetch and check if a gateway link is working
+    async fetchGateway(link) {
+      try {
+        const response = await fetch(link); 
+        return response.ok;
+      } catch {
+        return false
+      }
+    },
+
+    // Helper to build and save a book link to localStorage
+    async checkLocalStorage(item, gateway) {
+      const isGatewayWorking = await this.fetchGateway(gateway + item.link);
+
+      const linkDetails = {
+        link: isGatewayWorking ? gateway + item.link : item.static,
+        date: new Date().toISOString(), // Save as ISO for better parsing
+      };
+
+      localStorage.setItem(item.name, JSON.stringify(linkDetails));
+      return linkDetails;
+      
+    },
+
+    async checkLink(item) {
+      const storageItem = localStorage.getItem(item.name);
+
+      if (storageItem) {
+        const cachedBook = JSON.parse(storageItem);
+        const today = new Date();
+        const sevenDaysAgo = new Date(cachedBook.date);
+        sevenDaysAgo.setDate(sevenDaysAgo.getDate() + 7);
+
+        // If the cached date is older than 7 days, remove and update it
+        if (today > sevenDaysAgo) {
+          localStorage.removeItem(item.name);
+          return (await this.checkLocalStorage(item, this.gateway)).link;
+        }
+        this.booksLinks[item.name] = cachedBook.link; // Return the cached link if it's still valid
+      } else {
+        // Save and return the link if it's not in localStorage
+        this.booksLinks[item.name] = (await this.checkLocalStorage(item, this.gateway)).link;
+      }
+    }
+  },
+
+  async created() {
+    // getting valid link for all book options
+    this.book.options.map(async book => {
+      await this.checkLink(book)
+    })
   }
 
 }
