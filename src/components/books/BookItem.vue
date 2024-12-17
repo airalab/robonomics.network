@@ -19,6 +19,9 @@
         {{ link.text }}
         </g-link>
       </div>
+      <div v-else>
+        <Spinner/>
+      </div>
     </div>
     
 
@@ -27,6 +30,10 @@
 
 <script>
 export default {
+
+  components: {
+    Spinner: () => import ('@/components/utils/LoaderSpin.vue')
+  },
 
   props: {
     book: {
