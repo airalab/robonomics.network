@@ -10,11 +10,11 @@
         <span>{{ book.year }}</span>
         <h3> {{ book.title }} </h3>
       </div>
-      <div class="e-books__links">
+      <div class="e-books__links" v-if="!loading">
         <g-link
           v-for="link in book.options"
           :key="link.id"
-          :to="booksLinks[link.name]"
+          :to="booksLinks[link.name] || '#'"
         >
         {{ link.text }}
         </g-link>
@@ -43,7 +43,8 @@ export default {
 
   data() {
     return {
-      booksLinks: {}
+      booksLinks: {},
+      loading: true
     }
   },
 
@@ -87,19 +88,26 @@ export default {
           localStorage.removeItem(item.name);
           return (await this.checkLocalStorage(item, this.gateway)).link;
         }
-        this.booksLinks[item.name] = cachedBook.link; // Return the cached link if it's still valid
+        this.booksLinks[item.name] = cachedBook.link  // Return the cached link if it's still valid
       } else {
         // Save and return the link if it's not in localStorage
         this.booksLinks[item.name] = (await this.checkLocalStorage(item, this.gateway)).link;
       }
-    }
+    },
+
+    async resolveLinks() {
+      // Fetch valid links for all book options and update booksLinks
+      for (const option of this.book.options) {
+        await this.checkLink(option);
+      }
+
+      this.loading = false
+    },
   },
 
-  async created() {
+  async mounted() {
     // getting valid link for all book options
-    this.book.options.map(async book => {
-      await this.checkLink(book)
-    })
+    await this.resolveLinks(); 
   }
 
 }

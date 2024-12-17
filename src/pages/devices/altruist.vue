@@ -1,9 +1,9 @@
 <template>
 
-  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('Outdoor sensor “Altruist“')">
+  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="altruist[0].title">
 
     <MetaInfo
-      :pageTitle="$t('Outdoor sensor “Altruist“')"
+      :pageTitle="altruist[0].title"
       :pageDescription="$t('Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.')"
       :pageImage = "'/og-pics/devices-altruist.webp'"
     />
@@ -146,13 +146,20 @@
 </template>
 
 <script>
+import devices from '@/data/devices.js'
 export default {
 
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     ModelAltruist: () => import("~/components/3dmodels/altruist.vue"),
     DeviceBuySection: () => import ('@/components/blocks/DevicesBuySection.vue')
-  }
+  },
+
+  computed: {
+    altruist() {
+      return devices.products.filter(product => (product.code === 'altruist'))
+    }
+  },
 
 }
 </script>

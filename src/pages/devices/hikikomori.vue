@@ -1,10 +1,11 @@
 <template>
 
-  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('Hikikomori smart Tamagotchi')">
+  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="hikikomori[0].title">
 
     <MetaInfo
-      :pageTitle="$t('Hikikomori smart Tamagotchi')"
+      :pageTitle="hikikomori[0].title"
       :pageDescription="$t('A smart home assistant you’ll enjoy caring for, even when you’re away. Only devs.')"
+      pageImage="/og-pics/devices-hikikomori.webp"
     />
 
     <DeviceBuySection price="$75">
@@ -43,11 +44,20 @@
 </template>
 
 <script>
+
+import devices from '@/data/devices.js'
+
 export default {
 
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     DeviceBuySection: () => import ('@/components/blocks/DevicesBuySection.vue'),
+  },
+
+  computed: {
+    hikikomori() {
+      return devices.products.filter(product => (product.code === 'hikikomori'))
+    }
   },
 
 }
