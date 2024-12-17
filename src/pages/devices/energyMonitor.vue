@@ -1,10 +1,11 @@
 <template>
 
-  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('Energy Monitor')">
+  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="eMonitor[0].title">
 
     <MetaInfo
-      :pageTitle="$t('Energy Monitor')"
+      :pageTitle="eMonitor[0].title"
       :pageDescription="$t('A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.')"
+      pageImage="/og-pics/devices-e-monitor.webp"
     />
 
     <DeviceBuySection price="$45">
@@ -44,11 +45,18 @@
 </template>
 
 <script>
+import devices from '@/data/devices.js'
 export default {
 
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     DeviceBuySection: () => import ('@/components/blocks/DevicesBuySection.vue'),
+  },
+
+  computed: {
+    eMonitor() {
+      return devices.products.filter(product => (product.code === 'energy-monitor'))
+    }
   },
 
 }

@@ -20,7 +20,7 @@
             <ModelRiskV v-if="product.code === 'server'" class="product-picture-server" />
             <ModelSwitch v-if="product.code === 'server'" class="product-picture-switch" />
 
-            <g-image v-if="product.code === 'hikikomori'" src="~/assets/images/hardware-2025/tamagotchi.webp" :alt="product.title + ' picture'" />
+            <g-image class="product-picture--hikikomori" v-if="product.code === 'hikikomori'" src="~/assets/images/hardware-2025/hikikomori.webp" :alt="product.title + ' picture'" />
             <g-image class="product-picture--energy-monitor" v-if="product.code === 'energy-monitor'" src="~/assets/images/hardware-2025/energy-monitor.webp" :alt="product.title + ' picture'" />
             </div>
         </article>
@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import devices from '@/data/devices.js'
 export default {
 
   components: {
@@ -36,41 +37,11 @@ export default {
     ModelAltruist: () => import ('@/components/3dmodels/altruist.vue'),
   },
 
-  data() {
-    return {
-      products:[
-        {
-          code: 'altruist',
-          title: this.$t('Outdoor sensor “Altruist“'),
-          text: `${this.$t('A smart sensor that collects environmental data - noise, dust, and temperature, and stores them on a decentralized')} <a aria-label="see decentralized sensor map" href="https://sensors.social/" target="_blank">${this.$t('sensor map')}</a>.`,
-          cases: this.$t('Become a provider of environmental data to your friends and neighbors in the area. Access truly decentralized measurements of air quality, noise, temperature, and other environmental conditions on the sensor map.'),
-          casesImages: ['altruist-cases-1.webp', 'altruist-cases-2.webp', 'altruist-cases-3.webp', 'altruist-cases-4.webp'],
-          titleLink: '/devices/altruist'
-        },
-        {
-          code: 'server',
-          title: this.$t('Risc-v open source server'),
-          text: this.$t('The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.'),
-          cases: this.$t('Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.'),
-          casesImages: ['risc-v-cases-1.webp', 'risc-v-cases-2.webp', 'risc-v-cases-3.webp', 'risc-v-cases-4.webp'],
-          titleLink: '/devices/risc-v'
-        },
-        {
-          code: 'hikikomori',
-          title: this.$t('Hikikomori smart Tamagotchi'),
-          text: this.$t('Finally, a smart Tamagotchi that’s more than just a game! A smart wearable station that checks the status of sensors from your home or clothing.'),
-          cases: this.$t('Connect your smart home and smart clothing to the Hikikomori to monitor sensor data—right at your fingertips. Literally.'),
-          titleLink: '/devices/hikikomori'
-        },
-        {
-          code: 'energy-monitor',
-          title: this.$t('Energy Monitor'),
-          text: this.$t('A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.'),
-          titleLink: '/devices/energy-monitor'
-        },
-      ],
+  computed: {
+    products() {
+      return devices.products
     }
-  },
+  }
 
 }
 </script>
@@ -105,6 +76,13 @@ export default {
 
   .product-picture .product-picture--energy-monitor {
     max-width: 540px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .product-picture--hikikomori {
+    max-width: 240px;
     width: 100%;
     display: block;
     margin: 0 auto;
