@@ -72,7 +72,7 @@ export default {
       const isGatewayWorking = await this.fetchGateway(gateway + item.link);
 
       const linkDetails = {
-        link: isGatewayWorking ? gateway + item.link : item.static,
+        link: isGatewayWorking && gateway ? gateway + item.link : item.static,
         date: new Date().toISOString(), // Save as ISO for better parsing
       };
 

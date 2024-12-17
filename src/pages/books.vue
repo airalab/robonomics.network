@@ -14,9 +14,12 @@
 
       <h2>{{ $t('Download books about Robonomics') }}</h2>
 
-      <ul class="list-simple e-books__list grid-3 animate-inside in-viewport" v-in-viewport.once>
+      <ul class="list-simple e-books__list grid-3 animate-inside in-viewport" v-in-viewport.once v-if="bookGateway">
         <BookItem v-for="book in books" :key="book.title" :book="book" :gateway="bookGateway"/>
       </ul>
+      <div v-else>
+        <Spinner/>
+      </div>
 
     </section>
 
@@ -47,6 +50,7 @@
       BookItem: () => import('~/components/books/BookItem.vue'),
       RecommendationItem: () => import('~/components/books/RecommendationItem.vue'),
       BooksFooter: () => import('~/components/books/BooksFooter.vue'),
+      Spinner: () => import ('@/components/utils/LoaderSpin.vue')
     },
 
     data() {
