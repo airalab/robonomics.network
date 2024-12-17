@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{"TT/y":function(t,n,l){"use strict";l.r(n);var o={},c=l("KHd+"),e=Object(c.a)(o,(function(){var t=this._self._c;return t("layout",[t("section",[this._v("quality control platform “Feecc”")])])}),[],!1,null,null,null);n.default=e.exports}}]);
