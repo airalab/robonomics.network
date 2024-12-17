@@ -61,12 +61,16 @@
               {
                 link: 'QmaCXn8RdSdh4oxX3R5nzNSfoUPiLMLM4JmLSk1WnYi5ah',
                 text: 'EN',
-                id: 0
+                id: 0,
+                static: 'https://static.robonomics.network/docs/book-2023-2024/robonomics.network-book-2023-2024-en.pdf',
+                name: 'book2023-2024en'
               },
               {
                 link: 'Qmd8sSoGokc1UeAbbAfmEPJTubWEpWGetYGyj9MCpwmE42',
                 text: 'RU',
-                id: 1
+                id: 1,
+                static: 'https://static.robonomics.network/docs/book-2023-2024/robonomics.network-book-2023-2024-ru.pdf',
+                name: 'book2023-2024ru'
               }
             ]
           },
@@ -78,12 +82,16 @@
               {
                 link: 'QmZK64M7M31mkMsDd8yQa1dfX4a4KeDCyaUMsTuzsKq6LC',
                 text: 'EN',
-                id: 0
+                id: 0,
+                static: 'https://static.robonomics.network/docs/book-2022/robonomics.network-book-2022-en.pdf',
+                name: 'book2022en'
               },
               {
                 link: 'QmNsiaWWFw4ZoqAnW5vuTXNz2jwYBu7ShyXSYqU1uNDjrF',
                 text: 'RU',
-                id: 1
+                id: 1,
+                static: 'https://static.robonomics.network/docs/book-2022/robonomics.network-book-2022-ru.pdf',
+                name: 'book2022ru'
               }
             ]
           },
@@ -95,17 +103,23 @@
               {
                 link: 'QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi',
                 text: 'EN',
-                id: 0
+                id: 0,
+                static: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-en.pdf',
+                name: 'book2021en'
               },
               {
                 link: 'QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V',
                 text: 'RU',
-                id: 1
+                id: 1,
+                static: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-ru.pdf',
+                name: 'book2021ru'
               },
               {
                 link: 'QmU8CFPD9bQheKJhKdyAZ11GNhuqHKPok5Tu8bUrNjCZtg',
                 text: 'ES',
-                id: 2
+                id: 2,
+                static: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-en.pdf',
+                name: 'book2021es'
               }
             ]
           },
@@ -117,17 +131,23 @@
               {
                 link: 'QmQ3k8p9SQS5wjovPcjUtQceRZZ6nv3Eqirt1vVQ2wP2JL',
                 text: 'EN',
-                id: 0
+                id: 0,
+                static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-en.pdf',
+                name: 'book2018en'
               },
               {
                 link: 'QmUqNnzdZnic61UYTuKT9EzBNzMW6jc5uHSFk4Xzd3iM93',
                 text: 'RU',
-                id: 1
+                id: 1,
+                static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-ru.pdf',
+                name: 'book2018ru'
               },
               {
                 link: 'QmXhWarATZNTy3CweoVAdy4aTMrGMCsipo3gPSWVsUyQW6',
                 text: 'IT',
-                id: 2
+                id: 2,
+                static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-it.pdf',
+                name: 'book2018it'
               }
             ]
           },
@@ -139,17 +159,23 @@
               {
                 link: 'QmWue3YfuZvuRvgcNb4vZuheX9TaZ9E1b8aCdxSoaGTbVN',
                 text: 'EN',
-                id: 0
+                id: 0,
+                static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-en.pdf',
+                name: 'book2017en'
               },
               {
                 link: 'QmUjBPgDzmHFHiDkQAG93szJQguiZiowm9sedFMhPfQP4y',
                 text: 'RU',
-                id: 1
+                id: 1,
+                static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-ru.pdf',
+                name: 'book2017ru'
               },
               {
                 link: 'QmTp3srjo3r1L2TKpAEGFafjdzSCTKJT9kkBEkCQDEF6tz',
                 text: 'DE',
-                id: 2
+                id: 2,
+                static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-de.pdf',
+                name: 'book2017de'
               }
             ]
           }
@@ -208,6 +234,7 @@
     },
 
     async created() {
+    if(!localStorage.getItem('book2023-2024en'))
       this.bookGateway = await pingIPFS(
         [
           'https://gw.crust-gateway.xyz/ipfs/',
