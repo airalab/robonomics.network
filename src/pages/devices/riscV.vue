@@ -1,9 +1,9 @@
 <template>
 
-  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="$t('Home server with Web3 cloud')">
+  <layout :backlink="{title: $t('All hardware'), link: '/devices/', label: 'Go to all hardware'}" :title="riscv[0].title">
 
     <MetaInfo
-      :pageTitle="$t('Home server with Web3 cloud')"
+      :pageTitle="riscv[0].title"
       :pageDescription="$t('The first server for a smart home built entirely on open-source — from CPU to decentralized cloud.')"
       :pageImage = "'/og-pics/devices-riscv.webp'"
     />
@@ -80,12 +80,19 @@
 </template>
 
 <script>
+import devices from '@/data/devices.js'
 export default {
 
   components: {
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     RiscV: () => import("~/components/3dmodels/server.vue"),
     DeviceBuySection: () => import ('@/components/blocks/DevicesBuySection.vue')
+  },
+
+  computed: {
+    riscv() {
+      return devices.products.filter(product => (product.code === 'server'))
+    }
   },
 
 }
