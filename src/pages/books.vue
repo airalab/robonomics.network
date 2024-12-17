@@ -234,7 +234,6 @@
     },
 
     async created() {
-    if(localStorage && !localStorage.getItem('book2023-2024en'))
       this.bookGateway = await pingIPFS(
         [
           'https://gw.crust-gateway.xyz/ipfs/',
