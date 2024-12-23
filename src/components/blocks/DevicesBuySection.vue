@@ -105,7 +105,7 @@
         margin-bottom: calc(var(--space) * 2);
     }
 
-    @media screen and (width < 600px) {
+    @media screen and (max-width: 600px) {
         .section-vivid-green {
         display: flex;
         flex-direction: column;
@@ -132,6 +132,7 @@
     }
 
     .price-desc {
+        min-width: 170px;
         font-variation-settings: var(--font-flex-medium);
     }
 </style>
