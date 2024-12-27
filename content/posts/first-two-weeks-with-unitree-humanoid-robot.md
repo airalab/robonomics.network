@@ -4,7 +4,7 @@ date: 2024-12-27
 published: true
 locale: 'en'
 tags: ['Robotics', 'ROS 2']
-cover_image: ./images/first-two-weeks-with-unitree-humanoid-robot/cover.png
+cover_image: ./images/first-two-weeks-with-unitree-humanoid-robot/cover.webp
 description: "It's been two weeks since the Unitree G1 humanoid robot arrived at the Robonomics lab. A team of at least five engineers with master's degrees in robotics immediately set to work studying and programming the new device. We want to share the first news from the field: impressions, findings and challenges on the way to, as we hope, a humanoid revolution!"
 abstract: "It's been two weeks since the Unitree G1 humanoid robot arrived at the Robonomics lab. A team of at least five engineers with master's degrees in robotics immediately set to work studying and programming the new device. We want to share the first news from the field: impressions, findings and challenges on the way to, as we hope, a humanoid revolution!"
 ---
@@ -17,7 +17,7 @@ abstract: "It's been two weeks since the Unitree G1 humanoid robot arrived at th
 - Got acquainted with the **Python SDK** library from the developers (we even fixed a critical bug): now we can control the robot from scripts: walk, sit, stand up and damp.
 - Built **ROS 2 packages**, connected to topics, launched several examples, but additional testing is required.
 
-<rb-image zoom src="./images/first-two-weeks-with-unitree-humanoid-robot/image-schemes.png" alt="G1 Scheme" />
+<rb-image zoom src="./images/first-two-weeks-with-unitree-humanoid-robot/image-schemes.webp" alt="Unitree humanoid robot data stream" />
 
 ## Notes from the Field
 
@@ -49,10 +49,10 @@ export CYCLONEDDS_HOME='/home/unitree/cyclonedds/install'
 
 <rb-grid :columns="2" textAlign="center" align="end">
   <rb-grid-element>
-    <rb-image zoom src="./images/first-two-weeks-with-unitree-humanoid-robot/first-entering.jpeg" alt="G1 Scheme" />
+    <rb-image zoom src="./images/first-two-weeks-with-unitree-humanoid-robot/first-entering.webp" alt="Unitree humanoid robot first enter" />
   </rb-grid-element>
   <rb-grid-element>
-    <rb-image zoom src="./images/first-two-weeks-with-unitree-humanoid-robot/cyclonedds-error.png" alt="G1 Scheme" />
+    <rb-image zoom src="./images/first-two-weeks-with-unitree-humanoid-robot/cyclonedds-error.webp" alt="Unitree humanoid robot cyclonedds error" />
   </rb-grid-element>
 </rb-grid>
 
