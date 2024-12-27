@@ -1,0 +1,73 @@
+---
+title: 'The First Two Weeks of Working with the Unitree G1 Humanoid Robot'
+date: 2024-12-27
+published: true
+locale: 'en'
+tags: ['Robotics', 'ROS 2']
+cover_image: ./images/first-two-weeks-with-unitree-humanoid-robot/cover.png
+description: "It's been two weeks since the Unitree G1 humanoid robot arrived at the Robonomics lab. A team of at least five engineers with master's degrees in robotics immediately set to work studying and programming the new device. We want to share the first news from the field: impressions, findings and challenges on the way to, as we hope, a humanoid revolution!"
+abstract: "It's been two weeks since the Unitree G1 humanoid robot arrived at the Robonomics lab. A team of at least five engineers with master's degrees in robotics immediately set to work studying and programming the new device. We want to share the first news from the field: impressions, findings and challenges on the way to, as we hope, a humanoid revolution!"
+---
+
+## TL;DR
+
+- Successfully connected to dev unit / PC2 (see diagrams below).
+- Set up a remote connection via **SSH** through **Zerotier** and **Yggdrasil**.
+- Studied the Linux-based system on board the humanoid, performed standard DevOps tasks.
+- Got acquainted with the **Python SDK** library from the developers (we even fixed a critical bug): now we can control the robot from scripts: walk, sit, stand up and damp.
+- Built **ROS 2 packages**, connected to topics, launched several examples, but additional testing is required.
+
+<rb-image zoom src="./images/first-two-weeks-with-unitree-humanoid-robot/image-schemes.png" alt="G1 Scheme" />
+
+## Notes from the Field
+
+**About Python SDK:**
+
+- Used virtual environment (**venv**) on **Python 3.10** — the SDK does not work with other versions.
+- Worked via **eth0** interface from dev unit.
+- Although **CycloneDDS** was pre-installed, it was rebuilt manually without conflicts.
+- To run scripts, you need to set an environment variable (recommended to add to `.bashrc`). **Important:** specify the full path in single quotes:
+
+<rb-code>
+
+```
+export CYCLONEDDS_HOME='/home/unitree/cyclonedds/install'
+```
+</rb-code>
+
+- Scripts do not work in the robot's debug mode, although according to the docs they should.
+- To fix the SDK and make the robot move, we added the line `self.Start()` to the `Move()` function of the **g1_loco_client.py** file.
+
+**About ROS 2**
+
+- Built packages from the **unitree_ros2** repository, including **CycloneDDS** support.
+- Sourced the files of the built package to add them to ROS 2 environment.
+- Among the examples:
+  - Successfully received controller states.
+  - Examples related to motion states did not work (topics are empty).
+- The packages can be used to create your own ROS nodes (no matter Python or C++).
+
+<rb-grid :columns="2" textAlign="center" align="end">
+  <rb-grid-element>
+    <rb-image zoom src="./images/first-two-weeks-with-unitree-humanoid-robot/first-entering.jpeg" alt="G1 Scheme" />
+  </rb-grid-element>
+  <rb-grid-element>
+    <rb-image zoom src="./images/first-two-weeks-with-unitree-humanoid-robot/cyclonedds-error.png" alt="G1 Scheme" />
+  </rb-grid-element>
+</rb-grid>
+
+## Task Plan
+
+1. **Check the possibility of power supply from the cable.** Perhaps such a function already exists, we need to check the electrical documentation or purchase a suitable cable.
+2. **Understand the debug mode for the SDK.** The documentation states that it works, but in practice it does not.
+3. **Lack of advanced examples.** Repositories are limited to basic actions (sit, stand up, motor control). For CES 2025, we need to either adapt ready-made simple solutions or develop low-level movement algorithms.
+4. **Choice of technology:**
+  - The entire process can be implemented in **Python**, including integration with Robonomics.
+  - However, it is preferable to use **ROS 2** for structure and scalability.
+5. **Study reinforcement learning methods** for possible use in robot control.
+
+## Useful links
+
+- Main repository: [https://github.com/unitreerobotics](https://github.com/unitreerobotics)   
+- Python SDK: [https://github.com/unitreerobotics/unitree_sdk2_python](https://github.com/unitreerobotics/unitree_sdk2_python)   
+- ROS 2 packages: [https://github.com/unitreerobotics/unitree_ros2](https://github.com/unitreerobotics/unitree_ros2)   
