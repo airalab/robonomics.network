@@ -37,7 +37,7 @@ export default {
         return this.$static.metadata.siteUrl + this.pageImage
       }
       else{
-        return this.$static.metadata.siteUrl + '/website_cover.jpg'
+        return this.$static.metadata.siteUrl + '/website_cover.webp'
       }
     },
 
@@ -94,7 +94,7 @@ export default {
       htmlAttrs: {
         lang: locale,
         amp: true,
-        // dir: locale === 'ar' ? 'rtl' : ''
+        dir: locale === 'ar' ? 'rtl' : 'ltr'
       },
       meta: [
         { key: 'description', name: 'description', content: description },

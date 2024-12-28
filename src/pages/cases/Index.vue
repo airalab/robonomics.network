@@ -96,7 +96,6 @@ export default {
   components: {
     MetaInfo: () => import('~/components/MetaInfo.vue'),
     PostCard: () => import('~/components/PostCard.vue'),
-    Abstract: () => import('~/components/TextAbstract.vue'),
   },
 
   data() {

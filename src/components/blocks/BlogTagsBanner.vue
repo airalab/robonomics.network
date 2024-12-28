@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <section id="blog-banner" class="section__solid section__blue">
+    <section id="blog-banner" class="section section__solid section__blue">
       <div class="layout">
           <h1>{{$t('Important news &amp; announcements')}}</h1>
           <div class="blog-banner__wrapper">
@@ -66,6 +66,7 @@ export default {
   #blog-banner {
     padding-top: calc(var(--space)*4);
     padding-bottom: calc(var(--space)*4);
+    margin-bottom: calc(var(--space) * 3);
   }
 
   h1 {

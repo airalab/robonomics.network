@@ -125,7 +125,6 @@
 
 export default {
   components: {
-    Abstract: () => import('~/components/TextAbstract.vue'),
     MetaInfo: () => import("~/components/MetaInfo.vue"),
     LogosItem: () => import("~/components/logos-and-assets/LogosItem.vue"),
   },
@@ -262,6 +261,7 @@ export default {
 
   .logos-and-assets__banner {
     margin: 0;
+    margin-bottom: var(--space);
     padding-bottom: var(--space);
   }
 

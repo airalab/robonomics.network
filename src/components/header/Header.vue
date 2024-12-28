@@ -1,7 +1,7 @@
 <template>
       <header class="header">
 
-        <div class="header-content" dir="ltr">
+        <div class="header-content">
           <div class="header-logo" @contextmenu.prevent="openLogoPage">
             <g-link to="/">
               <svg width="162" height="31" viewBox="0 0 162 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-robot hide-mobile">
@@ -30,7 +30,7 @@
             </g-link>
           </div>
 
-          <div class="header-side" dir="ltr">
+          <div class="header-side">
             <languageSwitcher :translated="translated"/>
             <HeaderNav/>
           </div>
@@ -92,6 +92,13 @@ export default {
     text-decoration: none;
   }
 
+  [dir="rtl"] .header-logo a {
+    display: block;
+    position: relative;
+    right: -100px;
+  }
+
+
   .logo-robot__eye {
     animation-name: blink;
     animation-duration: 7s;
@@ -121,15 +128,17 @@ export default {
     padding-right: var(--screen-padding-right);
   }
 
+  [dir="rtl"] .header-content {
+    padding-right: var(--logo-padding);
+    padding-left: var(--screen-padding-right);
+  }
+
   .header-side {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    gap: calc(var(--space) / 3);
   } 
-
-  /* .header-side > *:not(:last-child) {
-    margin-right: calc(var(--space) * 0.4);
-  } */
 
 
   @media screen and (max-width: 425px) {
@@ -142,6 +151,11 @@ export default {
       display: inline-block;
       width: 60px;
     }
+
+
+      [dir="rtl"] .header-logo  {
+        margin-right: 0;
+      }
   }
 
   /* eye animation */

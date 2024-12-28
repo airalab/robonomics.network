@@ -1,6 +1,6 @@
 <template>
   
-  <layout title="Robonomics merch" >
+  <layout :title="$t('Robonomics merch')" >
 
     <MetaInfo
       pageTitle = "Robonomics merch"
@@ -9,15 +9,15 @@
     />
 
     <section class="layout">
-      <g-image class="bannerimg" aria-hidden="true" src="~/assets/images/merch/banner.webp"/>
+      <!-- <g-image class="bannerimg" aria-hidden="true" src="~/assets/images/merch/banner.webp"/> -->
+
+      <p class="layout layout__text">{{ $t('Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.') }}</p>
 
       <section class="grid-3">
         <g-link class="oldy" v-for="store in stores" :key="store.id" :to="store.link" :data-geo="store.locale">
           <g-image :aria-label="store.label" :src="require(`!!assets-loader!@/assets/images/merch/${store.img}`)"/>
         </g-link>
       </section>
-
-      <p class="layout__content">{{ $t('Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.') }}</p>
     </section>
 
   </layout>

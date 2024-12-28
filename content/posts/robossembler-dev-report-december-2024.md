@@ -1,0 +1,85 @@
+---
+title: "Robossembler Dev Report #1"
+date: 2024-12-08
+published: true
+locale: 'en'
+cover_image: ./images/robossembler-dev-report-december-2024/Cover.webp
+description: "The Robossembler project focuses on developing industrial robots and tools for their production that are accessible to any DIY enthusiast. In this article, we'll share our current progress - an updated and tested gearbox, the 5th version of the winding machine, and a robot manipulator with additional optimizations for 3D printing!"
+abstract: "The Robossembler project focuses on developing industrial robots and tools for their production that are accessible to any DIY enthusiast. In this article, we'll share our current progress - an updated and tested gearbox, the 5th version of the winding machine, and a robot manipulator with additional optimizations for 3D printing!"
+tags: ['Robossembler']
+---
+
+
+## Servo
+
+A motor alone typically lacks sufficient torque to turn or lift heavy objects in the real world, which is why it needs a gearbox or transmission. A gearbox converts the motor's torque into usable output force. This proved especially important in our case — our printed stator with DIN screws as magnetic cores tested 3-4 times weaker than counterparts using solid metal stators made of electrical steel.
+
+<rb-image zoom src="./images/robossembler-dev-report-december-2024/stator-photo_2024-12-08_00-03-21.webp" alt="" />
+
+Given this relatively low force output, we needed a gearbox with a high gear ratio that, like everything else in Robossembler, would be simple to assemble and suitable for 3D printing. We explored numerous gearbox designs, including some exotic ones, but each fell short of our criteria. Our last attempt—a strain wave gearbox with intermediate rolling elements—performed well but proved too complex to manufacture.
+
+After extensive experimentation, we finally discovered the perfect design: a precessing gearbox with a 1:43 gear ratio!
+
+<rb-image zoom src="./images/robossembler-dev-report-december-2024/reducer-photo_2024-12-07_21-54-20.webp" alt="" />
+
+Check out how simple it is to assemble:
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0vXwFmTB_L4?si=soNbSNKg9tjPWY1f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The gearbox has completed its key tests and trials. Here's something impressive — the servo drive with gearbox weighs only 273g, matching the weight of a standard metal motor without any gearbox or controller!
+
+<rb-image zoom src="./images/robossembler-dev-report-december-2024/reducer-photo_2024-12-08_14-02-33.webp" alt="" />
+
+## Stator Winding Machine
+
+While version 4 of our winding machine successfully wound the first stators semi-automatically, it needed improvement in stability and repeatability. Version 5 brings numerous enhancements, and here are the key ones.
+
+We've upgraded from the proprietary Creality stepper motor controller used in version 4 to a RAMPS — a proven controller from the legendary RepRap printer.
+
+<rb-image zoom src="./images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-50-12.webp" alt="" />
+
+- We made the machine parts lighter and better - they now use 25% less plastic material and can be 3D printed more easily without extra support structures
+- The wire feeding system is now more stable with an added spool brake and deeper wire groove on the wheel
+- We've redesigned the display case and back cover to better protection
+- The project documentation is now complete with detailed fastener specifications, printing times and plastic consumption data.
+
+<rb-image zoom src="./images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-51-26.webp" alt="" />
+
+We've added a needle calibrator to the machine design to simplify equipment setup.
+
+<rb-image zoom src="./images/robossembler-dev-report-december-2024/winder-photo_2024-12-04_11-41-56.webp" alt="" />
+
+Version 5 is currently in testing, alongside our new winding GCode program generator. Instead of the previous hardcoded program for specific motor modifications, our new GCode generator enables quick adaptation for different stator designs.
+
+## Robot Manipulator
+
+As we near production readiness with the motor and gearbox, we're refining the manipulator's design. While we thought it was well-optimized for 3D printing, our new team members — a 3D technologists with 10 years of experience — spotted several areas for improvement. We've focused on making part printing predictable even on low-cost printers, including redesigning the main body links to print with minimal supports.
+
+<rb-image zoom src="./images/robossembler-dev-report-december-2024/3d-supports.webp" alt="" />
+
+<rb-image zoom src="./images/robossembler-dev-report-december-2024/roboarm-3d-optimize-photo_2024-11-20_15-56-53.webp" alt="" />
+
+At our motion control programmer's request, we redesigned the fork—the component that connects the manipulator's drive links into a single kinematic chain. The previous design offered a larger working radius but caused frequent singular positions during trajectory calculations, complicating simulation control. Our new fork design eliminates this issue, making the robot's kinematics more optimal and more similar to Kuka Iiwa ;D.
+
+<rb-image zoom src="./images/robossembler-dev-report-december-2024/fork-roboarm-photo_2024-12-07_11-39-31.webp" alt="" />
+
+For control software, we're developing a solution using ROS 2 Humble (testing Jazzy) and Behaviour Tree CPP v4, currently being validated on AR4. A key innovation is our extensive use of lifecycle management nodes for runtime parameter changes—like controller configurations or loading new machine vision neural network weights on the fly.
+
+## Plans
+
+Our upcoming goals:
+
+- Release an upgraded gripping device with new motor, gearbox, and interchangeable fingers
+- Test the winding machine's GCode generator and fully automatic stator winding
+- Complete the robot's 3D optimization and create an assembly demonstration video
+- Optimize servo drive temperature management and test it under load within a link
+
+Follow updates on my blog at [x.com](https://x.com/movefasta) !
+
+## Software & Hardware Sources
+
+- Robossembler Arm - https://gitlab.com/robossembler/roboarm-diy-version
+- Winding Machine: https://gitlab.com/robossembler/cnc/motor-wire-winder
+- Servo - https://gitlab.com/robossembler/servo
+- Grip Tool - https://gitlab.com/robossembler/arm-tools/grip-tool
+- Robossembler ROS 2 runtime - https://gitlab.com/robossembler/robossembler-ros2

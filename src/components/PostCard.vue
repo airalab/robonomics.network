@@ -1,5 +1,5 @@
 <template>
-  <div class="post-card" :class="{'post-card--case': isCase}">
+  <div class="post-card oldy" :class="{'post-card--case': isCase}">
     <div class="post-card__header" v-if="!isCase">
       <g-image :alt="post.title" v-if="post.cover_image" class="post-card__image" :src="post.cover_image" />
     </div>
@@ -89,6 +89,7 @@ export default {
 
      .post-card__content h4 {
         margin-bottom: calc(var(--space)/2);
+        margin-top: 0;
       }
     
 
