@@ -82,6 +82,10 @@
   component: './src/pages/privacy-policy.vue'
   typename: 'page'
 
+- path: '/rent-unitree-humanoid/'
+  component: './src/pages/rent-unitree-humanoid.vue'
+  typename: 'page'
+
 # all cases go here
 - path: '/cases/fronius-solar-web'
   component: './src/pages/cases/fronius-solar-web.vue'
