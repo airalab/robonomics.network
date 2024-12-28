@@ -248,7 +248,8 @@
   margin-bottom: var(--space);
 }
 
-.space-b-05 {
+.space-b-05, 
+li.space-b-05 {
   margin-bottom: calc(var(--space) * 0.5);
 }
 
