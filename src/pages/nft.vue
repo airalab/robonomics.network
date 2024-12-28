@@ -6,7 +6,7 @@
     />
 
     <!-- nft banner section -->
-    <section class="nft-hero section__blue">
+    <section class="section nft-hero section__blue">
       <div class="nft__main-title title-with-bg">
         <h1><span>{{ $t('Robonomics nfts') }}</span></h1>
       </div>
@@ -308,6 +308,11 @@
     width: 100%;
   }
 
+  [dir="rtl"] .nft-hero::after  {
+    left: 0;
+    right: unset;
+  }
+
   .nft__banner {
     position: relative;
     padding: calc(var(--space) * 2);
@@ -326,9 +331,14 @@
   .nft__banner-img {
     position: absolute;
     bottom: -22px;
-    right: 0;
+    right: -60px;
     max-width: 450px;
     width: 100%;
+  }
+
+  [dir="rtl"] .nft__banner-img {
+    left: 0;
+    right: unset;
   }
 
   .nft__list {
@@ -361,6 +371,11 @@
     font-size: 4rem;
     text-align: center;
     background-color: var(--color-dark);
+  }
+
+  [dir="rtl"] .nft__item::before {
+    margin-right: 0;
+    margin-left: var(--space-text);
   }
 
   .nav__item--top::before {
@@ -398,6 +413,11 @@
     margin-right: var(--space-text);
     letter-spacing: 0;
     color: var(--color-blue);
+  }
+
+  [dir="rtl"] .nft__title {
+    margin-right: 0;
+    margin-left: var(--space-text);
   }
 
   .nft__minted {
@@ -477,6 +497,12 @@
     z-index: 5;
   }
 
+  [dir="rtl"] .nft-spot-img {
+    top: -14px;
+    left: unset;
+    right: calc(100% - 865px);
+  }
+
   .nft__imgs-wrapper {
     position: absolute;
     left: 0;
@@ -533,6 +559,11 @@
     width: 100%;
   }
 
+  [dir="rtl"] .nft-telescope-img {
+    right: unset;
+    left: -122px;
+  }
+
   .nft-polkapet .nft__wrapper--leftImg {
     grid-template-columns: minmax(350px, 1fr) minmax(150px, 680px);
     align-items: center;
@@ -578,6 +609,11 @@
     max-width: 456px;
   }
 
+  [dir="rtl"] .nft__img--jetpack {
+    left: 0;
+    right: unset;
+  }
+
   .nft-jetpack .nft__imgs {
     display: flex;
     align-items: center;
@@ -601,6 +637,11 @@
     flex-direction: column;
     align-items: center;
     font-weight: 500;
+  }
+
+  [dir="rtl"] .nft__rmrk {
+    left: 124px;
+    right: unset;
   }
 
   @media screen and (max-width: 1660px) {
@@ -712,7 +753,7 @@
 
     .nft__banner-img {
       right: unset;
-      left: 50%;
+      left: 50% !important;
       transform: translateX(-50%);
       z-index: 2;
     }

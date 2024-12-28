@@ -85,7 +85,7 @@
 
             <section class="pink-block">
                 <div class="layout token__top">
-                    <p class="text-abstract token__text-abstract"> <b>{{ $t('Be aware of scammers') }}</b>: {{ $t('please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our') }} <g-link :to="twitter[0].options[0].link">Twitter</g-link> {{$t('for official updates. Be careful, be safe.')}}</p>              
+                    <p class="text-abstract token__text-abstract"> <b>{{ $t('Be aware of scammers') }}</b>: {{ $t('please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our') }} <g-link :to="twitter[0].link">Twitter</g-link> {{$t('for official updates. Be careful, be safe.')}}</p>              
                 </div>
             </section>
 
@@ -220,7 +220,7 @@ query {
 
         computed: {
             twitter() {
-                return contacts.filter(item => item.title.toLowerCase() === "twitter");
+                return contacts.filter(item => item.title.toLowerCase() === "x");
             }
         }
     }
@@ -530,6 +530,11 @@ query {
         text-align: left;
     }
 
+    [dir="rtl"] .token__link {
+        text-align: right;
+    }
+    
+
     .token__link:not(last-child) {
         margin-bottom: var(--space);
     }
@@ -539,6 +544,13 @@ query {
         background-size: 20px 20px;
         background-repeat: no-repeat;
         background-position: left
+    }
+
+    [dir="rtl"] .token__link h3 {
+        text-align: right;        
+        background-position: right;
+        padding-right: 34px;
+        padding-left: 0;
     }
 
     .token__link.timeline h3 {

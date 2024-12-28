@@ -82,6 +82,10 @@
   component: './src/pages/privacy-policy.vue'
   typename: 'page'
 
+- path: '/rent-unitree-humanoid/'
+  component: './src/pages/rent-unitree-humanoid.vue'
+  typename: 'page'
+
 # all cases go here
 - path: '/cases/fronius-solar-web'
   component: './src/pages/cases/fronius-solar-web.vue'
@@ -100,6 +104,15 @@
 # all devices go here 
 - path: '/devices/altruist'
   component: './src/pages/devices/altruist.vue'
+  typename: 'page'
+- path: '/devices/risc-v'
+  component: './src/pages/devices/riscV.vue'
+  typename: 'page'
+- path: '/devices/hikikomori'
+  component: './src/pages/devices/hikikomori.vue'
+  typename: 'page'
+- path: '/devices/energy-monitor'
+  component: './src/pages/devices/energyMonitor.vue'
   typename: 'page'
 
 

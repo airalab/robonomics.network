@@ -1,28 +1,85 @@
-input, select, button{
+input, select, button, textarea {
+	--border-width: 2px;
+	--border-color: var(--color-dark);
+	--input-background: var(--color-light);
+	--input-padding: .5rem;
+	--input-text-color: var(--color-dark);
+	--font-settings: var(--font-flex-bold);
+	--font-family: var(--font-family);
+	--font-size: var(--base-font-size);
+	--checkbox-size: 1.3rem;
+	font-variation-settings: var(--font-settings);
+}
+
+input, select, button, textarea {
+	font-variation-settings: var(--font-settings);
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	display: inline-block;
+	border: var(--border-width) solid var(--border-color);
+}
+
+input[disabled], select[disabled] {
+	opacity: 0.5;
+}
+
+input:not([type='checkbox']):not([type='radio']), select, button, textarea {
+	padding: var(--input-padding) calc(var(--input-padding) * 1.2);
+	background-color: var(--input-background);
+	color: var(--input-text-color);
+}
+
+input:not([type='submit']):focus {
+	--border-color: var(--color-link);
+	--input-text-color: var(--color-link);
+}
+
+input[type='checkbox'] {
 	appearance: none;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
-	padding: .5rem .8rem;
-	border: 1px solid var(--color-border);
-	background-color: var(--body-bg);
-	font-size: var(--base-font-size);
-	font-weight: 500;
+input[type='checkbox']:first-child {
+	margin-left: 0;
+}
 
-	border-radius: 0;
+input[type='checkbox']:last-child {
+	margin-right: 0;
+}
+
+input[type='checkbox']:checked {
+	background-color: var(--rb-color-green-accent);
+	background-image: url('data:image/svg+xml,<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_825_12739)"><path d="M13.5899 4.29821L6.20435 11.6833C5.65744 12.2303 4.77026 12.2303 4.22283 11.6833L0.410339 7.87051C-0.13678 7.3235 -0.13678 6.43622 0.410339 5.8891C0.957562 5.34188 1.84467 5.34188 2.39165 5.88889L5.21388 8.71116L11.6083 2.31669C12.1555 1.76947 13.0427 1.76989 13.5897 2.31669C14.1367 2.86381 14.1367 3.75078 13.5899 4.29821Z" fill="black"/></g><defs><clipPath id="clip0_825_12739"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 
-input.block, select.block, label.block {
+label.block, select.block, input.block, button.block, span.block, textarea.block {
 	display: block;
 	width: 100%;
 	margin-bottom: calc(var(--space)/2);
 }
 
-
-input:not(.button) {
-	color: var(--color-dark);
+select {
+	appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg width='4' height='21' viewBox='0 0 4 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.58449 0H0.92643C0.414777 0 0 0.414777 0 0.92643V2.58449C0 3.09615 0.414777 3.51092 0.92643 3.51092H2.58449C3.09615 3.51092 3.51093 3.09615 3.51093 2.58449V0.926431C3.51093 0.414777 3.09615 0 2.58449 0Z' fill='black'/%3E%3Cpath d='M2.58449 8.33789H0.92643C0.414777 8.33789 0 8.75267 0 9.26432V10.9224C0 11.434 0.414777 11.8488 0.92643 11.8488H2.58449C3.09615 11.8488 3.51093 11.434 3.51093 10.9224V9.26432C3.51093 8.75267 3.09615 8.33789 2.58449 8.33789Z' fill='black'/%3E%3Cpath d='M2.58449 16.6758H0.92643C0.414777 16.6758 0 17.0906 0 17.6022V19.2603C0 19.7719 0.414777 20.1867 0.92643 20.1867H2.58449C3.09615 20.1867 3.51093 19.7719 3.51093 19.2603V17.6022C3.51093 17.0906 3.09615 16.6758 2.58449 16.6758Z' fill='black'/%3E%3C/svg%3E%0A");
+	background-size: 4px;
+	background-position: calc(100% - 4px) 50%;
+	background-repeat: no-repeat;
+	padding-right: calc(var(--input-padding) + 9px);
 }
 
-input:not(.button):focus {
+textarea {
+	resize: none;
+}
+
+
+
+/* input:not(.button):focus {
 	border-color: var(--color-dark)
 }
 
@@ -43,7 +100,7 @@ input[type="checkbox"] {
 	padding: 0;
 	cursor: pointer;
 	width: 1.3rem;
-    height: 1.3rem;
+  height: 1.3rem;
 	position: relative;
 	margin-right: 1rem;
 	border-color: var(--color-border) !important;
@@ -104,7 +161,6 @@ input[type="submit"], button {
     border-color: var(--color-blue);
     background-color: var(--color-blue);
     color: var(--color-light);
-    /* margin-top: var(--space); */
 		text-transform: uppercase;
 		letter-spacing: 1px;
     cursor: pointer;
@@ -114,10 +170,4 @@ input[type="submit"], button {
 input[type="submit"]:hover, button:hover {
     background-color: var(--color-green);
     border-color: var(--color-green);
-}
-
-/* some captcha styles  */
-.jCaptcha {
-	width: 100%;
-	margin-bottom: 20px;
-}
+} */

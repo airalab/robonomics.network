@@ -1,20 +1,19 @@
 <template>
-  <layout>
+  <layout :title="$t('Tech Blog & Updates')">
 
     <MetaInfo
       pageTitle = "Blog"
       pageDescription = "Futuristic, secure, and server-less IoT platform on top of Ethereum and Polkadot. Bringing economy of robots into the 4th industrial revolution."
       :pageImage = "'/website_cover_blogs.jpg'"
     />
-<!-- 
-    <h1 v-if="$ts('Robonomics blog')" class="layout layout__content">{{$ts('Robonomics blog')}}</h1> -->
 
-    <BlogTagsBanner :allTags="$page.allPostsTags.edges"/>
+
+    <!-- <BlogTagsBanner :allTags="$page.allPostsTags.edges"/> -->
 
     <div v-if="$page.posts.edges.length === 0" class=" blog__no-post align-center">
       <blockquote>{{$t('No posts yet')}}</blockquote>
 
-      <div class="layout layout__content oldy " v-if="$locale != $defaultLocale">
+      <div class="layout layout__content oldy" v-if="$locale != $defaultLocale">
         <p>{{ $t('If you want to help us with translation') }}:</p>
         <ul class="list-simple">
           <li>{{ $t('contact us at') }}: <a href="mailto:localization@robonomics.network?subject=Robonomics%20WIKI%20Localization">localization@robonomics.network</a></li>
@@ -93,7 +92,7 @@ query ($locale: String!, $page: Int) {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       PostCard: () => import('~/components/PostCard.vue'),
-      Pagination: () => import('~/components/utils/Pagination.vue'),
+      Pagination: () => import('~/components/blocks/Pagination.vue'),
       BlogTagsBanner: () => import('~/components/blocks/BlogTagsBanner.vue')
     },
 

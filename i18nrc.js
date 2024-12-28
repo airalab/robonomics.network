@@ -5,7 +5,7 @@ module.exports = {
   funcName: 't',
   entry: join(__dirname, './src/'), // for vue files
   // entry: join(__dirname, './content/posts/'), // for markdown files
-  fileRegExp: /\.vue$/, // for vue files
+  fileRegExp: /\.(vue|js)$/, // for vue files
   // fileRegExp: /\.md$/, // for markdown files
   output: {
     path: join(__dirname, './translations/'), // for vue
