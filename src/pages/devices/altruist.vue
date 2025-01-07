@@ -14,16 +14,56 @@
     </DeviceBuySection>
 
     <article class="layout layout__content space-b-2">
-      <p>{{ $t('Join the movement with an open-source hardware sensor integrated into a decentralized map. Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.') }}</p>
+      <p>{{ $t('With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distribute﻿d network.') }}</p>
       <p>{{$t('Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our')}} <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">{{$t('decentralized sensor map')}}</g-link>.</p>
     </article>
-
-    <h2 class="layout title-lined"><span>{{ $t('3 ways to use it') }}</span></h2>
 
     <article class="layout space-b-2">
       <div class="grid-3">
         <section class="oldy">
-          <h5 class="space-b-05">{{ $t('Monitor Air Quality') }}</h5>
+          <h5 class="space-b-05">{{ $t('Trust the Code') }}</h5>
+          <p>{{$t('Fully open-source, no hidden algorithms, no corporate surveillance. It’s transparency for the true decentralist.')}}</p>
+          <g-link class="highlight" aria-label="check our firmware" to="https://github.com/airalab/altruist-firmware">{{ $t('Check open-source sensor firmware on GitHub') }}</g-link>
+        </section>
+
+        <section class="oldy">
+          <h5 class="space-b-05">{{ $t("Your data, your keys") }}</h5>
+          <p>{{ $t("Take full control of your data with our fully open-source connectivity module. Choose between Robonomics or secure Web3 cloud storage with your personal key—no closed clouds, no opaque code.") }}</p>
+        </section>
+
+        <section class="oldy">
+          <h5 class="space-b-05">{{ $t('Always Connected, Always Secure') }}</h5>
+          <p>{{$t('Local P2P communication and Web3 cloud ensures that your your sensor is always accessible, no matter where you are. No centralized points of failure—just pure, peer-to-peer connection.')}}</p>
+        </section>
+
+      </div>
+    </article>
+
+    <h2 class="layout title-lined"><span>{{ $t('3 ways to use it') }}</span></h2>
+
+    <article class="layout layout__text space-b-2">
+      <h5 class="space-b-05">1. {{ $t('Join the Altruist Collective') }}</h5>
+      <p>{{$t('Plug the device into the global,')}}   <g-link class="highlight" aria-label="go to decentralized sensor map" to="https://sensors.social/">{{$t('decentralized sensor map')}}</g-link>. 
+      {{$t('Share your environmental intel with your neighbors, your community, or your decentralized network.')}}</p>
+    </article>
+
+    <article class="layout layout__text space-b-2">
+      <h5 class="space-b-05">2. {{ $t("Operate your own Data Server") }} +</h5>
+      <p>{{ $t("Data processing is always a sensitive issue. That's why we offer a fully open-source") }}
+      <g-link class="highlight" to="https://github.com/airalab/sensors-connectivity" aria-label="check open source connectivity module">{{$t('connectivity module')}}</g-link>  
+      {{ $t('giving you the freedom to choose which servers to use for processing. No proprietary clouds, no hidden code.') }}</p>
+      <p>{{$t('Keep in mind, you can join the')}} <g-link class="highlight" aria-label="go to decentralized sensor map" to="https://sensors.social/">{{$t('global decentralized sensor map')}}</g-link> {{ $t('even with a sensor connected through your own server!') }}</p>
+    </article>
+
+    <article class="layout layout__text space-b-2">
+      <h5 class="space-b-05">3. {{ $t('Run your own Interactive Map') }} ++</h5>
+      <p>{{$t('Love the idea of a decentralized map but want to customize it with extra layouts and become an administrator of new sovereign sensor infrastructure? You can deploy')}} <g-link to="https://github.com/airalab/sensors.social/" aria-label="GitHub Repository for the map" class="highlight">{{$t('your own version by forking')}}</g-link> {{$t('our open-source code on GitHub (be sure to check the license type). Remember to use open-source resources responsibly.')}}</p>
+    </article>
+
+    <!-- <article class="layout space-b-2">
+      <div class="grid-3">
+        <section class="oldy">
+          <h5 class="space-b-05">{{ $t('Join the Altruist Collective') }}</h5>
           <p>{{$t('Access')}} <strong>{{$t('noise, dust, and temperature data')}}</strong> {{$t('from other independent sensors on our')}}   <g-link class="highlight" aria-label="go to decentralized sensor map" to="https://sensors.social/">{{$t('decentralized sensor map')}}</g-link>.</p>
           <p>{{$t('Connect your device as simple as other smart devices and share your environmental outdoor data with community.')}}</p>
           <g-link class="highlight" aria-label="check our firmware" to="https://github.com/airalab/altruist-firmware">{{ $t('Check open-source sensor firmware on GitHub') }}</g-link>
@@ -43,7 +83,7 @@
         </section>
 
       </div>
-    </article>
+    </article> -->
 
     <h2 class="layout title-lined"><span>{{ $t('Device Specifications') }}</span></h2>
 

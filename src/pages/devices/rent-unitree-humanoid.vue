@@ -7,9 +7,7 @@
       :pageImage = "'/website_cover_unitree.webp'"
     />
 
-    <article class="layout layout__content space-b-2 unitree-intro">
-      <b><p>{{ $t('For California residents and guests, our partners offer an exciting chance to rent a humanoid robot, a new product spreading across the market.') }}</p></b>
-    </article>
+    <p class="layout layout__content space-b-2 intro">{{ $t('Rent the cutting-edge humanoid robot for your research, programming, and entertainment projects.') }}</p>
 
     <RentSection/>
 
@@ -55,7 +53,7 @@
 
     <article class="layout layout__text space-b-2">
       <p>{{ $t('The G1 humanoid robot with its innovative features offers versatility for research, programming, and entertainment needs. The Unitree G1 includes a Power Control Dexterous Hand, enabling it to perform delicate tasks such as handling objects, pressing buttons, and carrying out other precise operations with various items.') }}</p>
-      <g-image src="~/assets/images/humanoid/decor-img.webp" alt="Unitree Dex3-1 Power Control Dexterous Hand, Operate Everything"/>
+      <g-image src="~/assets/images/devices/unitree-g1/unitree-g1-dex3.webp" alt="Unitree Dex3-1 Power Control Dexterous Hand, Operate Everything"/>
     </article>
 
     <h2 class="layout title-lined space-b-2"><span>{{ $t('Tech specification') }}</span></h2>
@@ -136,10 +134,11 @@ export default {
     width: 100%;
   }
 
-  .unitree-intro {
-    font-size: calc(var(--base-font-size) * 1.3);
+  .intro {
+    font-size: calc(var(--base-font-size) * 1.2);
     line-height: 1.2;
     text-align: center;
+    font-variation-settings: var(--font-flex-medium);
   }
 
   .unitree-prices {

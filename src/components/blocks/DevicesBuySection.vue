@@ -7,7 +7,7 @@
                 <div class="price-number">{{price}}</div>
                 <div class="price-desc">
                     <div>{{$t('Early bird price')}}</div>
-                    <div>{{$t('Stay Tuned: Sales Starting Soon!')}}</div>
+                    <div>{{$t('Coming in early 2025')}}</div>
                 </div>
             </div>
             

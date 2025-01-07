@@ -13,7 +13,7 @@
     </DeviceBuySection>
 
     <article class="layout layout__text space-b-2">
-      <p>{{ $t('Take control of your smart home data with an open-source server and stay connected using Web3 remote control technologies.') }}</p>
+      <p>{{ $t('Take control of your smart home data with open-source home server on RISC-V processor and Web3 connectivity.') }}</p>
       <p>{{ $t('Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our') }} <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">{{ $t('decentralized sensor map') }}</g-link>.</p>
     </article>
 
@@ -22,25 +22,25 @@
 
       <div class="grid-3">
         <section class="oldy">
-          <h5 class="space-b-05">{{ $t('Worldwide available') }}</h5>
-          <p>{{ $t('There are no restrictions on using this smart home server anywhere in the world.') }}</p>
+          <h5 class="space-b-05">{{ $t('Surveillance-free') }}</h5>
+          <p>{{ $t('No hidden data logs on corporate servers while still allowing secure remote access.') }}</p>
         </section>
         <section class="oldy">
-          <h5 class="space-b-05">{{ $t('Free from vendor lock-in') }}</h5>
-          <p>{{ $t('Available over 3,000 integrations with devices from a wide range of manufacturers.') }}</p>
+          <h5 class="space-b-05">{{ $t('No vendor lock-in') }}</h5>
+          <p>{{ $t('Supports over 3000 integrations with devices from various manufacturers.') }}</p>
         </section>
         <section class="oldy">
-          <h5 class="space-b-05">{{ $t('Secure Web3 Cloud') }}</h5>
-          <p>{{ $t('No hidden data logs on corporate servers while still allowing remote control.') }}</p>
+          <h5 class="space-b-05">{{ $t('Open hardware') }}</h5>
+          <p>{{ $t('Open processor architecture and open-source code ensure a trustless system.') }}</p>
         </section>
       </div>
     </article>
 
 
-    <h2 class="layout title-lined"><span>{{ $t('Well-engineered hardware architecture') }}</span></h2>
+    <h2 class="layout title-lined"><span>{{ $t('Open and efficient hardware') }}</span></h2>
 
     <article class="layout layout__text space-b-2">
-      <p>{{ $t('RISC-V is an open and modular processor architecture based on a reduced instruction set (RISC). Unlike proprietary solutions, it offers flexibility for customization without licensing restrictions, making it ideal for IoT devices and servers. RISC-V enables highly efficient and cost-effective designs, which translate into lower power consumption and better performance of your home server.') }}</p>
+      <p>{{ $t('Our Home Server is powered by a RISC-V processor and features fully transparent circuit board schematics. RISC-V is an open and modular processor architecture that comes with a BSD license. Unlike proprietary ARM, it offers flexibility for customization without licensing restrictions, making it ideal for trustless IoT devices and servers.') }}</p>
       <ul>
           <li><b>{{ $t('Processor:') }}</b> {{ $t('StarFive JH-7110 with RISC-V 4-core CPU, 2 MB L2 cache, up to 1.5 GHz, RV64GC ISA support') }}</li>
           <li><b>{{$t('GPU:')}}</b> {{ $t('IMG BXE-4-32 MC1, up to 600 MHz') }}</li>
@@ -52,17 +52,25 @@
         </ul>
     </article>
 
-    <h2 class="layout title-lined"><span>{{ $t('Broad device range with open-source software') }}</span></h2>
+    <h2 class="layout title-lined"><span>{{ $t('Vendor agnostic smart home heart') }}</span></h2>
 
     <article class="layout layout__text space-b-2">
-      <p>{{ $t('By installing an open-source platform Home Assistant on this server, you can create a smart home with a wide variety of devices from different manufacturers, without being tied to a specific brand.') }}</p>
-      <p>{{$t('With extensive integrations for Zigbee and Wi-Fi, Home Assistant connects nearly 4,000 devices, from temperature sensors to energy monitors, right out of the box using Zigbee2MQTT.')}}</p>
+      <p>{{ $t('The server comes pre-installed with Home Assistant, an open-source home automation platform, giving you full control of your smart home without relying on third-party cloud services.') }}</p>
+      <p>{{$t('Its modular design allows you to easily add components, automations, and integrations, supporting over 3,000 devices from various manufacturers without vendor lock-in. With support for Zigbee and Wi-Fi protocols, you can connect a wide range of devices, from temperature sensors to energy consumption monitors, all to a local server.')}}</p>
     </article>
 
-    <h2 class="layout title-lined"><span>{{ $t('Truly decentralized cloud for quick remote control') }}</span></h2>
+    <h2 class="layout title-lined"><span>{{ $t('Designed for privacy') }}</span></h2>
     
     <article class="layout layout__text space-b-2">
-      <p>{{ $t('With over 10 years of expertise in decentralized technologies, we deliver exceptional peer-to-peer communication for your smart home. Enjoy remote device access via parachain or Libp2p, cryptographic user access control, and secure storage of backups and digital twins of your smart home in an encrypted decentralized cloud.') }}</p>
+      <p>{{ $t('Our smart home server eliminates corporate interference, keeping your data local or encrypted with your personal key in decentralized Web3 storage. Enjoy complete privacy with no tracking, no surveillance—just secure, trustless control over your smart home.') }}</p>
+      <p>{{ $t('With Robonomics Web3 cloud and p2p remote control, you get cryptographic access to all the functions of smart home:') }}</p>
+      <ul>
+        <li>Access current device states remotely</li>
+        <li>Control devices remotely via parachain or Libp2p</li>
+        <li>Manage Home Assistant users</li>
+        <li>Back up and restore Home Assistant configurations</li>
+        <li>Store your home's digital twin in a secure, decentralized cloud</li>
+      </ul>
     </article>
 
     <h2 class="layout title-lined"><span>{{ $t('Help & support') }}</span></h2>
