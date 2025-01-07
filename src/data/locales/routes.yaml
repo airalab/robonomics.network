@@ -74,16 +74,12 @@
   component: './src/pages/devices/index.vue'
   typename: 'page'
 
-- path: '/its-gonna-get-worse/'
-  component: './src/pages/its-gonna-get-worse.vue'
-  typename: 'page'
-
 - path: '/privacy-policy/'
   component: './src/pages/privacy-policy.vue'
   typename: 'page'
 
 - path: '/rent-unitree-humanoid/'
-  component: './src/pages/rent-unitree-humanoid.vue'
+  component: './src/pages/devices/rent-unitree-humanoid.vue'
   typename: 'page'
 
 # all cases go here

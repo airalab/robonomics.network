@@ -14,8 +14,8 @@
 
 
     <article class="layout layout__text space-b-2">
-      <p>{{ $t('HIKIKOMORI') }} <b>{{ $t('ESP32-C6-LCD-1.47') }}</b> {{ $t('is a microcontroller development board with 2.4GHz Wi-Fi 6 and Bluetooth BLE 5 support, integrates 4MB Flash.') }}</p>
-      <p>{{ $t('Onboard 1.47inch LCD screen can smoothly run GUI programs such as LVGL. Combined with various peripheral interfaces, suitable for the quick development of the HMI and other ESP32-C6 applications.') }}</p>
+      <p>{{ $t('Hikikomori runs on a ESP32-C6 microcontroller development board, has an LCD display, Wi-Fi 6 and BLE 5 support.') }}</p>
+      <p>{{ $t('Hikikomori is suitable for the quick development of Web3 powered IoT applications. This can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!') }}</p>
     </article>
 
 
