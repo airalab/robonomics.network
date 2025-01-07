@@ -265,3 +265,15 @@ li.space-b-05 {
   padding: var(--space);
 }
 /* - vivid sections */
+
+.link-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.0;
+  overflow: hidden;
+  text-indent: -9999px;
+  z-index: 1000;
+}

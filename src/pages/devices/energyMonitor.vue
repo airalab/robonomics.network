@@ -14,8 +14,8 @@
 
 
     <article class="layout layout__text space-b-2">
-      <p><b>{{ $t('A non-invasive') }}</b> {{ $t('device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.') }}</p>
-      <p><b>{{$t('Equipped')}}</b> {{ $t('with USB-C') }}, <b>{{ $t('supports') }}</b> {{$t('WiFi and Zigbee. Records electricity consumption and generation data in the Polkadot network at 10-minute intervals.')}}</p>
+      <p>{{ $t('A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.') }}</p>
+      <p>{{ $t('Equipped with USB-C supports WiFi and Zigbee. Records electricity consumption and generation data in the Polkadot network at 10-minute intervals.') }}</p>
     </article>
 
 

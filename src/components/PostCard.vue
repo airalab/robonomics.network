@@ -26,7 +26,7 @@
       <div class="post-card__status" :class="{'progress': post.progress === 'proceeding'}" />
       </div>
     </div>
-    <g-link v-if="!isCase"  class="post-card__link" :to="post.path">Link</g-link>
+    <g-link v-if="!isCase"  class="link-cover" :to="post.path">Link</g-link>
   </div>
 </template>
 
@@ -57,19 +57,6 @@ export default {
       font-weight: 500;
       letter-spacing: 0;
       text-align: left;
-    }
-
-
-    .post-card__link {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.0;
-      overflow: hidden;
-      text-indent: -9999px;
-      z-index: 0;
     }
 
     .post-card__header {
