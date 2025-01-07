@@ -43,6 +43,7 @@
     </div>
 </template>
 
+
 <script>
 import devices from '@/data/devices.js'
 export default {
