@@ -1,6 +1,6 @@
 <template>
   <div class="layout layout__content section-vivid-green">
-    <g-image src="~/assets/images/humanoid/unitree.webp" alt="Humanoid Unitree" immediate/>
+    <g-image src="~/assets/images/devices/unitree-g1/unitree-g1.webp" alt="Humanoid Unitree" immediate/>
 
      <section>
         <h2 class="title">{{ $t('Rent in California, USA') }}</h2>

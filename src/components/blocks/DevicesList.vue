@@ -1,30 +1,46 @@
 <template>
-    <section class="products">
+    <div>
+      <section class="products">
 
         <article v-for="(product, i) in products" :key="i" class="product">
 
             <h2>
-            <span>{{i+1}}</span>
             <component :is="product.titleLink ? 'g-link' : 'span'" :to="product.titleLink ? product.titleLink : null">{{product.title}}</component>
             </h2>
 
             <p v-if="product.text" v-html="product.text" />
-            <template v-if="product.cases">
+            <!-- <template v-if="product.cases">
             <h5>{{ $t('Use cases') }}:</h5>
             <p>{{product.cases}}</p>
-            </template>
+            </template> -->
 
             <div class="product-picture">
-            <ModelAltruist v-if="product.code === 'altruist'" />
+              <ModelAltruist v-if="product.code === 'altruist'" />
+              <ModelRiskV v-if="product.code === 'server'" class="product-picture-server" />
+              <ModelSwitch v-if="product.code === 'server'" class="product-picture-switch" />
 
-            <ModelRiskV v-if="product.code === 'server'" class="product-picture-server" />
-            <ModelSwitch v-if="product.code === 'server'" class="product-picture-switch" />
+              <g-image class="product-picture--hikikomori" v-if="product.code === 'hikikomori'" src="~/assets/images/hardware-2025/hikikomori.webp" :alt="product.title + ' picture'" />
+              <g-image class="product-picture--energy-monitor" v-if="product.code === 'energy-monitor'" src="~/assets/images/hardware-2025/energy-monitor.webp" :alt="product.title + ' picture'" />
 
-            <g-image class="product-picture--hikikomori" v-if="product.code === 'hikikomori'" src="~/assets/images/hardware-2025/hikikomori.webp" :alt="product.title + ' picture'" />
-            <g-image class="product-picture--energy-monitor" v-if="product.code === 'energy-monitor'" src="~/assets/images/hardware-2025/energy-monitor.webp" :alt="product.title + ' picture'" />
+              <g-link v-if="product.titleLink" :to="product.titleLink" class="link-cover"></g-link>
             </div>
         </article>
     </section>
+
+      <section class="unitree">
+        <div>
+          <g-image src="~/assets/images/devices/unitree-g1/unitree-g1-hello.webp" alt="Unitree G1 Humanoid Robot image" />
+          <g-link to="/devices/rent-unitree-humanoid" class="link-cover"></g-link>
+        </div>
+
+        <div>
+          <div class="label">Special offer</div>
+          <h2><g-link to="/devices/rent-unitree-humanoid">Unitree G1 Humanoid Robot</g-link></h2>
+          <h3>Rent in California, USA</h3>
+          <p>Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.</p>
+        </div>
+      </section>
+    </div>
 </template>
 
 <script>
@@ -54,19 +70,12 @@ export default {
     background-repeat: repeat-y;
     padding-left:calc(var(--space) * 2);
     position: relative;
+    text-align: center;
   }
 
-  .product h2 {
-    align-items: center;
-    display: flex;
-    gap: calc(var(--space) /2);
-    text-align: left;
-  }
-
-  .product h2 span:first-child {
-    font-size: 250%;
-    font-variation-settings: var(--font-flex-extrabold);
-    line-height: 1;
+  .product {
+    margin-top: calc(var(--space) * 3);
+    margin-bottom: calc(var(--space) * 3);
   }
 
   .product-picture {
@@ -99,6 +108,37 @@ export default {
     z-index: 10;
     width: 305px;
     height: 330px;
+  }
+
+  .unitree {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    text-align: left;
+    margin-top: calc(var(--space) * 3);
+  }
+
+  .unitree h2, .unitree h3 {
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .unitree h3, .unitree .label {
+    margin-bottom: var(--space);
+  }
+
+  .unitree .label {
+    background-color: var(--rb-color-green-accent);
+    display: inline-block;
+    font-variation-settings: var(--font-flex-bold);
+    letter-spacing: 0.5px;
+    padding: 0 4px;
+    text-transform: uppercase;
+    transform: rotate(-15deg);
+  }
+
+  .unitree > div {
+    position: relative;
   }
 
 </style>
