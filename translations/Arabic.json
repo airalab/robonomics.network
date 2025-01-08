@@ -652,7 +652,7 @@
   "Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.": "احصل على منتجاتك ذات العلامة التجارية الفريدة مع فن Robonomics الذي رسمه فتياتنا الرائعات. لقد أنشأنا متاجر على أكبر الأسوا عبر الإنترنت للفنانين، تحقق منها واعثر على تي شيرتات وأكمام طويلة وهوديز وستائر الحمام ووسائد وبطاطين وأشياء أخرى مفيدة.",
   "We have chosen the most well-known robotics framework called Robot Operating System (ROS) as the standard interface for integrating any compatible cyber-physical system. Robonomics supports several uses for ROS. The implementation of Robonomics for the Ethereum network is in the form of the ROS package robonomics_comm. For the ROS 2 architecture, we implement support for Robonomics as a middleware layer (see «Robonomics as ROS 2 Middleware» for details). When the use of ROS is redundant (e.g., when working with IoT devices), a Python robonomics-interface module has been developed. It helps to access the functions of Robonomics natively and works with both local and private and remote and public nodes.": "لقد اخترنا إطار عمل الروبوتات الأكثر شهرة والمسمى نظام تشغيل الروبوت (ROS) باعتباره الواجهة القياسية لدمج أي نظام مادي إلكتروني متوافق. يدعم Robonomics عدة استخدامات لـ ROS. يتم تنفيذ Robonomics لشبكة Ethereum في شكل حزمة ROS robonomics_comm. بالنسبة لبنية ROS 2، نقوم بتنفيذ دعم Robonomics كطبقة برمجية وسيطة (راجع «Robonomics as ROS 2 Middleware» للحصول على التفاصيل). عندما يكون استخدام ROS زائدًا عن الحاجة (على سبيل المثال، عند العمل مع أجهزة إنترنت الأشياء)، فقد تم تطوير وحدة واجهة Python robonomics. فهو يساعد على الوصول إلى وظائف Robonomics محليًا ويعمل مع العقد المحلية والخاصة والبعيدة والعامة",
   "read our almanac": "اقرأ دليلنا",
-  "Begin your adventure in the world of cyber punks": "ابدأ مغامرتك في عالم السايبر بانكس",
+  "Begin your adventure in the world of cyberpunks": "ابدأ مغامرتك في عالم السايبر بانكس",
   "Pure Open Source": "مفتوح المصدر بشكل كامل",
   "Local and Global Availability": "التوفر المحلي والعالمي",
   "By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.": "من خلال استخدام المصدر المفتوح والاتصال نقطة لنقطة و web3، لا يوجد مجال لحيل الشركات، مما يضمن حماية بياناتك الشخصية. يتم تخزين جميع المعلومات إما محليًا أو مشفرة بمفتاحك الشخصي في سحابة web3.",
@@ -707,7 +707,7 @@
   "Outdoor sensor “Altruist“": "جهاز استشعار خارجي “Altruist“",
   "Sign up for updates": "اشترك للحصول على التحديثات",
   "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "بالنقر فوق الزر “إرسال”، فإنك توافق على تلقي رسائل البريد الإلكتروني الدورية من Robonomics.",
-  "Hardware for cyber punks": "أجهزة للهاكرز السيبرانية",
+  "Hardware for cyberpunks": "أجهزة للهاكرز السيبرانية",
   "Tech Blog & Updates": "مدونة تقنية وتحديثات",
   "Robonomics open-source hardware": "أجهزة Robonomics مفتوحة المصدر",
   "Open-source hardware": "أجهزة مفتوحة المصدر",
@@ -951,5 +951,7 @@
   "days": "أيام",
   "week": "أسبوع",
   "weeks": "أسابيع",
-  "on demand": "عند الطلب"
+  "on demand": "عند الطلب",
+  "Special offer": "عرض خاص",
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "احصل على وصول حصري إلى واحدة من أول الروبوتات البشرية المتاحة تجاريًا. خيارات تأجير مرنة للاحتياجات البحثية والبرمجية والترفيهية."
 }

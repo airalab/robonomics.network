@@ -652,7 +652,7 @@
   "Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.": "Obtenez votre marchandise avec des œuvres d'art uniques de Robonomics peintes par nos magnifiques filles. Nous avons créé des boutiques sur les plus grands marchés en ligne pour les artistes, jetez un coup d'œil et trouvez des t-shirts, des manches longues, des sweats à capuche, des rideaux de douche, des oreillers, des couvertures et d'autres articles utiles.",
   "We have chosen the most well-known robotics framework called Robot Operating System (ROS) as the standard interface for integrating any compatible cyber-physical system. Robonomics supports several uses for ROS. The implementation of Robonomics for the Ethereum network is in the form of the ROS package robonomics_comm. For the ROS 2 architecture, we implement support for Robonomics as a middleware layer (see «Robonomics as ROS 2 Middleware» for details). When the use of ROS is redundant (e.g., when working with IoT devices), a Python robonomics-interface module has been developed. It helps to access the functions of Robonomics natively and works with both local and private and remote and public nodes.": "Nous avons choisi le cadre de robotique le plus connu appelé Robot Operating System (ROS) comme interface standard pour intégrer tout système cyber-physique compatible. Robonomics prend en charge plusieurs utilisations pour ROS. L'implémentation de Robonomics pour le réseau Ethereum se présente sous la forme du package ROS robonomics_comm. Pour l'architecture ROS 2, nous implémentons le support de Robonomics en tant que couche intermédiaire (voir «Robonomics en tant que middleware ROS 2» pour plus de détails). Lorsque l'utilisation de ROS est redondante (par exemple, lors de travailler avec des appareils IoT), un module d'interface Python robonomics a été développé. Il permet d'accéder aux fonctions de Robonomics de manière native et fonctionne avec des nœuds locaux et privés ainsi que des nœuds publics et distants.",
   "read our almanac": "lisez notre almanach",
-  "Begin your adventure in the world of cyber punks": "Commencez votre aventure dans le monde des cyber punks",
+  "Begin your adventure in the world of cyberpunks": "Commencez votre aventure dans le monde des cyberpunks",
   "Pure Open Source": "Pure Open Source",
   "Local and Global Availability": "Disponibilité locale et mondiale",
   "By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.": "En utilisant l'open source, le p2p et le web3, il n'y a pas de place pour les astuces des entreprises, garantissant la protection de vos données personnelles. Toutes les informations sont stockées localement ou chiffrées avec votre clé personnelle dans le cloud web3.",
@@ -768,7 +768,7 @@
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "Un dispositif non invasif à installer dans les tableaux électriques avec un montage sur rail DIN. Basé sur la puce Espressif ESP32C6 avec une architecture RISC-V ouverte.",
   "Sign up for updates": "Inscrivez-vous pour les mises à jour",
   "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "En cliquant sur le bouton “Soumettre”, vous acceptez de recevoir régulièrement des e-mails de Robonomics.",
-  "Hardware for cyber punks": "Matériel pour les cyber punks",
+  "Hardware for cyberpunks": "Matériel pour les cyberpunks",
   "Tech Blog & Updates": "Blog technologique et mises à jour",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "Partagez et accédez aux données de bruit, de poussière et de température d'autres capteurs indépendants à proximité. Oubliez les serveurs d'entreprise, ces données sont distribuées de manière sécurisée dans le monde entier grâce à la technologie Web3 innovante.",
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "Découvrez la puissance du véritable DePIN (Réseau d'Infrastructure Physique Décentralisée) — un mouvement technologique révolutionnaire qui a vu le jour et prospère depuis des années sur notre",
@@ -951,5 +951,7 @@
   "days": "jours",
   "week": "semaine",
   "weeks": "semaines",
-  "on demand": "sur demande"
+  "on demand": "sur demande",
+  "Special offer": "Offre spéciale",
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Obtenez un accès exclusif à l'un des premiers robots humanoïdes commercialement disponibles. Options de location flexibles pour les besoins de recherche, de programmation et de divertissement."
 }

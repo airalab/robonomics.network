@@ -652,7 +652,7 @@
   "Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.": "Πάρτε τα εμπορεύματά σας με μοναδική τέχνη Robonomics ζωγραφισμένη από τα όμορφα κορίτσια μας. Δημιουργήσαμε καταστήματα στις μεγαλύτερες online αγορές για καλλιτέχνες, τσεκάρετέ το και βρείτε μπλούζες, μακρυμάνικα, φούτερ, κουρτίνες ντους, μαξιλάρια, κουβέρτες και άλλα χρήσιμα αντικείμενα.",
   "We have chosen the most well-known robotics framework called Robot Operating System (ROS) as the standard interface for integrating any compatible cyber-physical system. Robonomics supports several uses for ROS. The implementation of Robonomics for the Ethereum network is in the form of the ROS package robonomics_comm. For the ROS 2 architecture, we implement support for Robonomics as a middleware layer (see «Robonomics as ROS 2 Middleware» for details). When the use of ROS is redundant (e.g., when working with IoT devices), a Python robonomics-interface module has been developed. It helps to access the functions of Robonomics natively and works with both local and private and remote and public nodes.": "Έχουμε επιλέξει το πιο γνωστό πλαίσιο ρομποτικής που ονομάζεται Λειτουργικό Σύστημα Ρομπότ (ROS) ως το πρότυπο διεπαφής για την ολοκλήρωση οποιουδήποτε συμβατού κυβερνο-φυσικού συστήματος. Το Robonomics υποστηρίζει αρκετές χρήσεις για το ROS. Η υλοποίηση του Robonomics για το δίκτυο Ethereum είναι στη μορφή του πακέτου ROS robonomics_comm. Για την αρχιτεκτονική ROS 2, υλοποιούμε υποστήριξη για το Robonomics ως ενδιάμεσο επίπεδο (δείτε το «Robonomics ως ενδιάμεσο επίπεδο ROS 2» για λεπτομέρειες). Όταν η χρήση του ROS είναι περιττή (π.χ. όταν εργάζεστε με συσκευές IoT), έχει αναπτυχθεί ένα πρόσθετο Python robonomics-interface module. Βοηθά στην πρόσβαση στις λειτουργίες του Robonomics με φυσικό τρόπο και λειτουργεί τόσο με τοπικούς και ιδιωτικούς κόμβους όσο και με απομακρυσμένους και δημόσιους κόμβους.",
   "read our almanac": "διαβάστε τον αλμανάκ μας",
-  "Begin your adventure in the world of cyber punks": "Ξεκινήστε την περιπέτειά σας στον κόσμο των cyber punks",
+  "Begin your adventure in the world of cyberpunks": "Ξεκινήστε την περιπέτειά σας στον κόσμο των cyberpunks",
   "Pure Open Source": "Καθαρό Open Source",
   "Local and Global Availability": "Τοπική και Παγκόσμια Διαθεσιμότητα",
   "By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.": "Χρησιμοποιώντας το ανοιχτό κώδικα, την p2p και το web3, δεν υπάρχει χώρος για εταιρικά κόλπα, εξασφαλίζοντας ότι τα προσωπικά σας δεδομένα προστατεύονται. Όλες οι πληροφορίες αποθηκεύονται είτε τοπικά είτε κρυπτογραφημένες με το προσωπικό σας κλειδί στο web3 cloud.",
@@ -750,7 +750,7 @@
   "Outdoor sensor “Altruist“": "Εξωτερικός αισθητήρας “Altruist“",
   "Sign up for updates": "Εγγραφείτε για ενημερώσεις",
   "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "Κάνοντας κλικ στο κουμπί “Υποβολή” συμφωνείτε να λαμβάνετε τακτικά emails από τη Robonomics.",
-  "Hardware for cyber punks": "Υλικό για cyber punks",
+  "Hardware for cyberpunks": "Υλικό για cyberpunks",
   "Tech Blog & Updates": "Τεχνικό Blog & Ενημερώσεις",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "Κοινοποιήστε και έχετε πρόσβαση σε δεδομένα θορύβου, σκόνης και θερμοκρασίας από άλλους ανεξάρτητους αισθητήρες κοντά. Ξεχάστε τους εταιρικούς διακομιστές—αυτά τα δεδομένα διανέμονται με ασφάλεια παγκοσμίως μέσω καινοτόμων τεχνολογιών Web3.",
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "Ζήστε τη δύναμη του πραγματικού DePIN (Αποκεντρωμένο Δίκτυο Φυσικής Υποδομής) — μια επαναστατική τεχνολογική κίνηση που έχει ζωντανέψει και ακμάζει εδώ και χρόνια στο",
@@ -951,5 +951,7 @@
   "days": "ημέρες",
   "week": "εβδομάδα",
   "weeks": "εβδομάδες",
-  "on demand": "κατόπιν αιτήματος"
+  "on demand": "κατόπιν αιτήματος",
+  "Special offer": "Ειδική προσφορά",
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Αποκτήστε αποκλειστική πρόσβαση σε έναν από τους πρώτους εμπορικά διαθέσιμους ανθρωποειδείς ρομπότ. Ευέλικτες επιλογές ενοικίασης για ερευνητικές, προγραμματιστικές και ψυχαγωγικές ανάγκες."
 }

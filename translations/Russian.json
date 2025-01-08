@@ -652,7 +652,7 @@
   "Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.": "Заберите свой мерч с уникальным искусством Robonomics, нарисованным нашими великолепными девушками. Мы создали магазины на крупнейших онлайн-рынках для художников, загляните и найдите футболки, длинные рукава, толстовки, занавески для душа, подушки, одеяла и другие полезные вещи.",
   "We have chosen the most well-known robotics framework called Robot Operating System (ROS) as the standard interface for integrating any compatible cyber-physical system. Robonomics supports several uses for ROS. The implementation of Robonomics for the Ethereum network is in the form of the ROS package robonomics_comm. For the ROS 2 architecture, we implement support for Robonomics as a middleware layer (see «Robonomics as ROS 2 Middleware» for details). When the use of ROS is redundant (e.g., when working with IoT devices), a Python robonomics-interface module has been developed. It helps to access the functions of Robonomics natively and works with both local and private and remote and public nodes.": "Мы выбрали самый известный фреймворк робототехники под названием Robot Operating System (ROS) в качестве стандартного интерфейса для интеграции любой совместимой кибер-физической системы. Robonomics поддерживает несколько вариантов использования ROS. Реализация Robonomics для сети Ethereum представлена в виде пакета ROS под названием robonomics_comm. Для архитектуры ROS 2 мы реализуем поддержку Robonomics в виде промежуточного слоя (см. «Robonomics как промежуточное ПО ROS 2» для подробностей). Когда использование ROS излишне (например, при работе с устройствами IoT), был разработан модуль Python robonomics-interface. Он помогает получить доступ к функциям Robonomics нативно и работает как с локальными и частными, так и с удаленными и публичными узлами.",
   "read our almanac": "Прочитайте наш альманах",
-  "Begin your adventure in the world of cyber punks": "Начните свое приключение в мире кибер-панков",
+  "Begin your adventure in the world of cyberpunks": "Начните свое приключение в мире кибер-панков",
   "Pure Open Source": "Чистый открытый исходный код",
   "Local and Global Availability": "Локальная и глобальная доступность",
   "By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.": "Используя открытый исходный код, p2p и веб3, нет места для корпоративных уловок, обеспечивая защиту ваших персональных данных. Вся информация хранится либо локально, либо зашифрована с использованием вашего личного ключа в облачном веб3",
@@ -768,7 +768,7 @@
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "Неинвазивное устройство для установки в электрических щитах с монтажом на DIN-рейку. Построен на микросхеме Espressif ESP32C6 с открытой архитектурой RISC-V.",
   "Sign up for updates": "Подпишитесь на обновления",
   "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "Нажимая на кнопку «Отправить», вы соглашаетесь получать регулярные электронные письма от Robonomics.",
-  "Hardware for cyber punks": "Аппаратное обеспечение для кибер-панков",
+  "Hardware for cyberpunks": "Аппаратное обеспечение для кибер-панков",
   "Tech Blog & Updates": "Технический блог и обновления",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "Делитесь и получайте данные о шуме, пыли и температуре от других независимых датчиков поблизости. Забудьте о корпоративных серверах - эти данные безопасно распространяются по всему миру с помощью инновационной технологии Web3.",
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "Почувствуйте мощь истинной DePIN (Децентрализованной Физической Инфраструктурной Сети) - революционного технологического движения, ожившего и процветающего уже много лет на нашей",
@@ -951,5 +951,7 @@
   "days": "дней",
   "week": "неделя",
   "weeks": "недель",
-  "on demand": "по требованию"
+  "on demand": "по требованию",
+  "Special offer": "Специальное предложение",
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Получите эксклюзивный доступ к одному из первых коммерчески доступных гуманоидных роботов. Гибкие варианты аренды для исследований, программирования и развлечений."
 }
