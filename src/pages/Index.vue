@@ -9,13 +9,13 @@
       <div class="banner">
         <div class="banner-content" :style="bannertransform">
           <svg-banner />
-          <h1>{{ $t('Begin your adventure in the world of cyber punks') }}</h1>
+          <h1>{{ $t('Begin your adventure in the world of cyberpunks') }}</h1>
           <h4>#DePIN, #NetworkStates</h4>
           <g-link to="/devices/" class="highlight">{{ $t('Smart devices from Robonomics') }}</g-link>
         </div>
       </div>
 
-      <h2 class="title-lined"><span>{{ $t('Hardware for cyber punks') }}</span></h2>
+      <h2 class="title-lined"><span>{{ $t('Hardware for cyberpunks') }}</span></h2>
       <div class="layout layout__content">
         <DevicesList />
       </div>

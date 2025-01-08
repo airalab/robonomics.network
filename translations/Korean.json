@@ -652,7 +652,7 @@
   "Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.": "우리 아름다운 여자들이 그린 독특한 로보노믹스 아트로 상품을 가져가세요. 우리는 아티스트를 위한 가장 큰 온라인 시장에 상점을 만들었습니다. 확인하고 티셔츠, 긴 소매 티셔츠, 후드, 샤워 커튼, 베개, 담요 및 기타 유용한 물건을 찾아보세요.",
   "We have chosen the most well-known robotics framework called Robot Operating System (ROS) as the standard interface for integrating any compatible cyber-physical system. Robonomics supports several uses for ROS. The implementation of Robonomics for the Ethereum network is in the form of the ROS package robonomics_comm. For the ROS 2 architecture, we implement support for Robonomics as a middleware layer (see «Robonomics as ROS 2 Middleware» for details). When the use of ROS is redundant (e.g., when working with IoT devices), a Python robonomics-interface module has been developed. It helps to access the functions of Robonomics natively and works with both local and private and remote and public nodes.": "로보노믹스는 호환되는 사이버 물리 시스템을 통합하기 위한 표준 인터페이스로 로봇 운영 시스템(ROS)이라는 가장 잘 알려진 로보틱스 프레임워크를 선택했습니다. 로보노믹스는 ROS에 대한 여러 용도를 지원합니다. 이더리움 네트워크를 위한 로보노믹스의 구현은 ROS 패키지인 robonomics_comm 형태로 이루어집니다. ROS 2 아키텍처에 대해 로보노믹스를 미들웨어 레이어로 지원하고 있습니다(자세한 내용은 «로보노믹스가 ROS 2 미들웨어로서» 참조). ROS 사용이 불필요한 경우(예: IoT 장치와 작업할 때)에는 Python robonomics-interface 모듈이 개발되었습니다. 이 모듈은 로보노믹스의 기능에 네이티브로 액세스할 수 있도록 도와주며 로컬 및 개인 노드뿐만 아니라 원격 및 공개 노드와도 작동합니다.",
   "read our almanac": "우리의 농부들을 읽어보세요",
-  "Begin your adventure in the world of cyber punks": "사이버 펑크 세계에서 모험을 시작하세요",
+  "Begin your adventure in the world of cyberpunks": "사이버 펑크 세계에서 모험을 시작하세요",
   "Pure Open Source": "순수한 오픈 소스",
   "Local and Global Availability": "로컬 및 글로벌 가용성",
   "By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.": "오픈 소스, p2p 및 web3를 활용하여 기업의 속임수가 없도록 하여 개인 데이터가 보호됩니다. 모든 정보는 로컬에 저장되거나 웹3 클라우드에서 개인 키로 암호화됩니다.",
@@ -768,7 +768,7 @@
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "DIN 레일 장착용 전자 패널에 설치할 수 있는 비침입형 장치. 오픈 RISC-V 아키텍처를 기반으로 한 Espressif ESP32C6 칩으로 제작되었습니다.",
   "Sign up for updates": "업데이트 신청",
   "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "로보노믹스로부터 정기적인 이메일을 수신하는 것에 동의하는 것입니다.",
-  "Hardware for cyber punks": "사이버 펑크를 위한 하드웨어",
+  "Hardware for cyberpunks": "사이버 펑크를 위한 하드웨어",
   "Tech Blog & Updates": "기술 블로그 및 업데이트",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "주변의 다른 독립적인 센서로부터 소음, 먼지 및 온도 데이터를 공유하고 액세스하세요. 기업 서버를 잊으세요 - 이 데이터는 혁신적인 Web3 기술을 통해 전 세계적으로 안전하게 분산됩니다.",
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "진정한 DePIN(분산 물리 인프라 네워크)의 힘을 경험하세요 - 수년간 살아 숨쉬며 번성하는 혁명적인 기술적 움직임입니다.",
@@ -951,5 +951,7 @@
   "days": "일",
   "week": "주",
   "weeks": "주",
-  "on demand": "요청에 따라"
+  "on demand": "요청에 따라",
+  "Special offer": "특별 제안",
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "상업적으로 이용 가능한 최초의 인간형 로봇 중 하나에 독점 액세스를 받으세요. 연구, 프로그래밍 및 엔터테인먼트 필요에 따른 유연한 렌탈 옵션."
 }

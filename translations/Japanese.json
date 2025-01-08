@@ -652,7 +652,7 @@
   "Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.": "美しい女性によって描かれたユニークなRobonomicsアートであなたの商品を手に入れてください。私たちはアーティスト向けの最大のオンラインマーケットにショップを作成しました。チェックして、Tシャツ、ロングスリーブ、ーディー、シャワーカーテン、枕、毛布など、他の便利なアイテムを見つけてください。",
   "We have chosen the most well-known robotics framework called Robot Operating System (ROS) as the standard interface for integrating any compatible cyber-physical system. Robonomics supports several uses for ROS. The implementation of Robonomics for the Ethereum network is in the form of the ROS package robonomics_comm. For the ROS 2 architecture, we implement support for Robonomics as a middleware layer (see «Robonomics as ROS 2 Middleware» for details). When the use of ROS is redundant (e.g., when working with IoT devices), a Python robonomics-interface module has been developed. It helps to access the functions of Robonomics natively and works with both local and private and remote and public nodes.": "私たちは、Robot Operating System（ROS）と呼ばれる最もよく知られたロボティクスフレームワークを、互換性のあるサイバー物理システムを統合するための標準インターフェースとして選択しました。RobonomicsはROSに対していくつかの用途をサポートしています。Ethereumネットワーク用のRobonomicsの実装は、ROSパッケージrobonomics_commの形で行われています。ROS 2アーキテクチャでは、Robonomicsをミドルウェアレイヤーとしてサポートする実装を行っています（詳細は「Robonomics as ROS 2 Middleware」を参照）。ROSの使用が冗長な場合（例：IoTデバイスとの作業時）、Pythonのrobonomics-interfaceモジュールが開発されています。これにより、Robonomicsの機能にネイティブにアクセスでき、ローカルおよびプライベートノードとリモートおよびパブリックノードの両方と連携できます。",
   "read our almanac": "私たちの暦を読む",
-  "Begin your adventure in the world of cyber punks": "サイバーパンクの世界で冒険を始める",
+  "Begin your adventure in the world of cyberpunks": "サイバーパンクの世界で冒険を始める",
   "Pure Open Source": "純粋なオープンソース",
   "Local and Global Availability": "ローカルおよびグローバルな利用可能性",
   "By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.": "オープンソース、p2p、およびweb3を利用することで、企業のトリックの余地はなく、個人データが保護されます。すべての情報は、ローカルに保存されるか、個人のキでweb3クラウドに暗号化されます",
@@ -768,7 +768,7 @@
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "DINレール取り付け用の電気パネルに取り付けるための非侵襲デバイス。Espressif ESP32C6チップとオープンRISC-Vアーキテクチャを搭載しています。",
   "Sign up for updates": "更新情報をサインアップ",
   "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "「送信」ボタンをクリックすると、Robonomicsから定期的なメールを受け取ることに同意したものとみなされます。",
-  "Hardware for cyber punks": "サイバーパンク向けハードウェア",
+  "Hardware for cyberpunks": "サイバーパンク向けハードウェア",
   "Tech Blog & Updates": "テックブログ＆更新情報",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "他の独立したセンサーからノイズ、ほこり、温度データを共有およびアクセス。企業のサーバーを忘れてください—このデータは革新的なWeb3テクノロジーを通じて世界中に安全に分散されています。",
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "真のDePIN（分散物理インフラネットワーク）の力てください—数年間にわたって生き生きとした革新的な技術運動が実現しています",
@@ -951,5 +951,7 @@
   "days": "日々",
   "week": "週",
   "weeks": "週間",
-  "on demand": "オンデマンド"
+  "on demand": "オンデマンド",
+  "Special offer": "特別オファー",
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "最初に商業的に利用可能なヒューマノイドロボットの独占アクセスを手に入れましょう。研究、プログラミング、エンターテイメントのニーズに合わせた柔軟なレンタルオプション。"
 }

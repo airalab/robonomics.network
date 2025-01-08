@@ -34,10 +34,10 @@
         </div>
 
         <div>
-          <div class="label">Special offer</div>
-          <h2><g-link to="/devices/rent-unitree-humanoid">Unitree G1 Humanoid Robot</g-link></h2>
-          <h3>Rent in California, USA</h3>
-          <p>Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.</p>
+          <div class="label">{{ $t('Special offer') }}</div>
+          <h2><g-link to="/devices/rent-unitree-humanoid">{{ $t('Unitree G1 Humanoid Robot') }}</g-link></h2>
+          <h3>{{$t('Rent in California, USA')}}</h3>
+          <p>{{ $t('Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.') }}</p>
         </div>
       </section>
     </div>
@@ -119,9 +119,15 @@ export default {
   }
 
   .unitree h2, .unitree h3 {
+    position: relative;
     text-align: left;
     margin-bottom: 0;
     margin-top: 0;
+    z-index: 5;
+  }
+
+  html[lang="ar"] .unitree h2, .unitree h3, .unitree p  {
+    margin-right: 20px;
   }
 
   .unitree h3, .unitree .label {
