@@ -22,15 +22,15 @@
                 />
               </label>
               <select v-model="selectedUnit" @change="handleUnitChange">
-                <option value="hour">hour</option>
-                <option v-if="selectedUnit=='hours'" value="hours">hours</option>
-                <option value="day">day</option>
-                <option v-if="selectedUnit=='days'" value="days">days</option>
-                <option value="week">week</option>
-                <option v-if="selectedUnit=='weeks'" value="weeks">weeks</option>
+                <option value="hour">{{ $t('hour') }}</option>
+                <option v-if="selectedUnit=='hours'" value="hours">{{ $t('hours') }}</option>
+                <option value="day">{{ $t('day') }}</option>
+                <option v-if="selectedUnit=='days'" value="days">{{ $t('days') }}</option>
+                <option value="week">{{ $t('week') }}</option>
+                <option v-if="selectedUnit=='weeks'" value="weeks">{{ $t('weeks') }}</option>
             </select>
             </div>
-             <div class="price-number" :class="{'on-demand': selectedUnit === 'week' || selectedUnit === 'weeks'}"> <span v-if="price !== 'on demand'">$</span> {{price}}</div>
+             <div class="price-number" :class="{'on-demand': selectedUnit === 'week' || selectedUnit === 'weeks'}"> <span v-if="/^-?[\d.]+(?:e-?\d+)?$/.test(price)">$</span> {{price}}</div>
           </div>
              <label class="block"><input type="email" data-gsp-name="Email" :data-gsp-data="email" v-model="email" :placeholder="$t('Your email')" class="block" required /></label>
              <label class="block"><input type="text" data-gsp-name="Name" :data-gsp-data="name" v-model="name" :placeholder="$t('Your name')" class="block" required /></label>
@@ -167,7 +167,7 @@
       } else if (curr === 'day' || curr === 'days') {
         this.price = this.inputValue * 900;
       } else {
-        this.price = 'on demand'
+        this.price = this.$t('on demand')
       }
     },
 
@@ -177,7 +177,7 @@
       } else if (this.selectedUnit === 'day' || this.selectedUnit === 'days') {
         this.price = value * 900;
       } else {
-        this.price = 'on demand'
+        this.price = this.$t('on demand')
       }
     }
   }

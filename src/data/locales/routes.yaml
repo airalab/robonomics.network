@@ -78,7 +78,7 @@
   component: './src/pages/privacy-policy.vue'
   typename: 'page'
 
-- path: '/rent-unitree-humanoid/'
+- path: '/devices/rent-unitree-humanoid/'
   component: './src/pages/devices/rent-unitree-humanoid.vue'
   typename: 'page'
 
