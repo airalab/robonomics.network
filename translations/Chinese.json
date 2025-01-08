@@ -652,7 +652,7 @@
   "Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.": "通过我们美丽的女孩们绘制的独特Robonomics艺术品购买您的商品。我们在最大的艺术家在线市场上创建了商店，快来看看并找到T恤、长袖衬衫、帽衫、淋浴帘、枕头、毯子和其他有用的东西。",
   "We have chosen the most well-known robotics framework called Robot Operating System (ROS) as the standard interface for integrating any compatible cyber-physical system. Robonomics supports several uses for ROS. The implementation of Robonomics for the Ethereum network is in the form of the ROS package robonomics_comm. For the ROS 2 architecture, we implement support for Robonomics as a middleware layer (see «Robonomics as ROS 2 Middleware» for details). When the use of ROS is redundant (e.g., when working with IoT devices), a Python robonomics-interface module has been developed. It helps to access the functions of Robonomics natively and works with both local and private and remote and public nodes.": "我们选择了最知名的机器人操作系统（ROS）作为集成任何兼容的网络物理系统的标准接口。Robonomics支持ROS的几种用途。Robonomics对以太坊网络的实现以ROS包robonomics_comm的形式存在。对于ROS 2架构，我们将Robonomics支持实现为中间件层（详见《Robonomics作为ROS 2中间件》）。当使用ROS是多余的（例如，与物联网设备一起工作时），已开发了一个Python robonomics-interface模块。它有助于本地和私有以及远程和公共节点访问Robonomics的功能。",
   "read our almanac": "阅读我们的年鉴",
-  "Begin your adventure in the world of cyber punks": "开始你在赛博朋克世界的冒险",
+  "Begin your adventure in the world of cyberpunks": "开始你在赛博朋克世界的冒险",
   "Pure Open Source": "纯开源",
   "Local and Global Availability": "本地和全球可用性",
   "By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.": "通过利用开源、p2p和web3，没有公司把戏的空间，确保您的个人数据受到保护。所有信息都存储在本地或使用您的个人密钥加密在web3云中",
@@ -764,7 +764,7 @@
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "一种非侵入式设备，可安装在具有DIN导轨安装的电气面板上。基于Espressif ESP32C6芯片，采用开放的RISC-V架构。",
   "Sign up for updates": "注册更新",
   "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "点击“提交”按钮即表示您同意接收Robonomics定期发送的电子邮件。",
-  "Hardware for cyber punks": "适用于网络朋克的硬件",
+  "Hardware for cyberpunks": "适用于网络朋克的硬件",
   "Tech Blog & Updates": "技术博客和更新",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "共享并访问附近其他独立传感器的噪音、灰尘和温度数据。忘记企业服务器——通过创新的Web3技术，这些数据安全地分布在全球。",
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "体验真正的DePIN（去中心化物理基础设施网络）的力量——这是一个革命性的技术运动，已经在我们的去中心化传感器地图上生动地存在和繁荣多年。",
@@ -951,5 +951,7 @@
   "days": "天",
   "week": "周",
   "weeks": "周",
-  "on demand": "按需"
+  "on demand": "按需",
+  "Special offer": "特别优惠",
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "独家获得首批商用人形机器人之一的专属访问权。灵活的租赁选项，满足研究、编程和娱乐需求。"
 }
