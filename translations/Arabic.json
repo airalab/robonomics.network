@@ -741,7 +741,7 @@
   "We'll get in touch shortly!": "سنتواصل معك قريبًا!",
   "Contact me": "اتصل بي",
   "A smart sensor that collects environmental data and integrates it into a decentralized sensor map.": "جهاز استشعار ذكي يجمع بيانات بيئية ويدمجها في خريطة جهاز استشعار لامركزية.",
-  "Smart Tamagochi “Hikikomori“": "تاماغوتشي ذكي “هيكيكوموري“",
+  "Smart Tamagotchi “Hikikomori“": "تاماغوتشي ذكي “هيكيكوموري“",
   "A microcontroller development board designed to integrate with Web3 systems. It can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!": "لوحة تطوير ميكروكنترولر مصممة للتكامل مع أنظمة Web3. يمكن أن يكون تاماغوتشي منزلك الذكي، جهاز تحكم في الألعاب، أداة تعليمية - أي شيء تصممه!",
   "Energy monitor with USB-C": "مراقب الطاقة بمنفذ USB-C",
   "A non-invasive device designed for DIN rail mounting in electrical panels, tracks electricity consumption and generation.": "جهاز غير غازل مصمم للتركيب على السكك الحديدية DIN في اللوحات الكهربائية، يتتبع استهلاك الكهرباء والتوليد.",
@@ -752,7 +752,6 @@
   "Privacy by design": "الخصوصية من التصميم",
   "All hardware": "جميع الأجهزة",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "شارك واستمر في الوصول إلى بيانات الضوضاء والغبار ودرجة الحرارة من أجهزة استشعار مستقلة أخرى بالقرب منك. انسَ نظام الخوادم الشركية - هذه البيانات موزعة بشكل آمن على نطاق عالمي من خلال تقنية الويب3 المبتكرة.",
-  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distribute﻿d network.": "مع جهاز استشعار الهواء الطلق Altruist، تصبح قوة في مراقبة البيئة المتمركزة. التقط بيانات الضوضاء والغبار ودرجة الحرارة - مشفرة، معدلة، ومشاركة عبر شبكة موزعة.",
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "استمتع بقوة DePIN الحقيقية (Decentralized Physical Infrastructure Network) - حركة تكنولوجية ثورية تم إحياؤها وازدهارها لسنوات على",
   "decentralized sensor map": "خريطة الاستشعار المتمركزة",
   "Trust the Code": "ثق بالشيفرة",
@@ -953,5 +952,11 @@
   "weeks": "أسابيع",
   "on demand": "عند الطلب",
   "Special offer": "عرض خاص",
-  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "احصل على وصول حصري إلى واحدة من أول الروبوتات البشرية المتاحة تجاريًا. خيارات تأجير مرنة للاحتياجات البحثية والبرمجية والترفيهية."
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "احصل على وصول حصري إلى واحدة من أول الروبوتات البشرية المتاحة تجاريًا. خيارات تأجير مرنة للاحتياجات البحثية والبرمجية والترفيهية.",
+  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distributed network.": "مع جهاز الاستشعار الخارجي الذي يعمل بالإيثار، تصبح قوة في مراقبة البيئة المتمركزة. التقاط بيانات الضوضاء والغبار ودرجة الحرارة - مشفرة ومعدلة ومشتركة عبر شبكة موزعة.",
+  "Access current device states remotely": "الوصول إلى حالات الجهاز الحالية عن بعد",
+  "Control devices remotely via parachain or Libp2p": "التحكم في الأجهزة عن بعد عبر باراشين أو Libp2p",
+  "Manage Home Assistant users": "إدارة مستخدمي Home Assistant",
+  "Back up and restore Home Assistant configurations": "نسخ احتياطي واستعادة تكوينات Home Assistant",
+  "Store your home's digital twin in a secure, decentralized cloud": "تخزين نسخة رقمية لمنزلك في سحابة آمنة ومتمركزة"
 }

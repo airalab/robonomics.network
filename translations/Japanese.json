@@ -868,7 +868,7 @@
   "We'll get in touch shortly!": "すぐに連絡します！",
   "Contact me": "連絡してください",
   "A smart sensor that collects environmental data and integrates it into a decentralized sensor map.": "環境データを収集し、分散型センサーマップに統合するスマートセンサー",
-  "Smart Tamagochi “Hikikomori“": "スマートタマゴチ「ひきこもり」",
+  "Smart Tamagotchi “Hikikomori“": "スマートタマゴチ「ひきこもり」",
   "A microcontroller development board designed to integrate with Web3 systems. It can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!": "Web3システムと統合するために設計されたマイクロコントローラー開発ボード。スマートホームのタマゴチ、ゲームコントローラー、教育ツールなど、あなたが設計したものです！",
   "Energy monitor with USB-C": "USB-Cを備えたエネルギーモニター",
   "A non-invasive device designed for DIN rail mounting in electrical panels, tracks electricity consumption and generation.": "電気パネルにDINレール取り付け用に設計された非侵襲デバイスで、電力消費と発電を追跡します。",
@@ -877,7 +877,6 @@
   "Our devices are designed for total transparency. Every product comes with open RISC-V processor, open-source code and circuit schematics, and local update instructions—no need for cloud connections. You’re empowered to understand, customize, and trust your technology from the ground up": "私たちのデバイスは完全な透明性を備えて設計されています。すべての製品にはオープンなRISC-Vプロセッサ、オープンソースコードと回路図、およびローカルアップデー手順が付属しています。クラウド接続は不要です。技術を理解し、カスタマイズし、信頼できるようになります",
   "The combination of p2p communication and web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are": "P2P通信とWeb3クラウドの組み合わせにより、デバイスが常に接続されることが保証されます。インターネットにアクセスできない場合でも、デバイスに直接接続できます。新しい地域に移動したり、休暇に行ったりしても、デバイスは常にオンラインでアクセス可能です",
   "Privacy by design": "設計にプライバシーを取り入れる",
-  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distribute﻿d network.": "Altruist Outdoor Sensorを使用すると、分散型環境モニタリングにおいて力を持つことができます。ノイズ、ほこり、温度データを収集し、暗号化してマッピングし、分散ネットワーク全体で共有します",
   "Trust the Code": "コードを信頼する",
   "Fully open-source, no hidden algorithms, no corporate surveillance. It’s transparency for the true decentralist.": "完全なオープンソース、隠されたアルゴリズムなし、企業の監視なし。真の分散主義者のための透明性です",
   "Your data, your keys": "あなたのデータ、あなたのキー",
@@ -953,5 +952,11 @@
   "weeks": "週間",
   "on demand": "オンデマンド",
   "Special offer": "特別オファー",
-  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "最初に商業的に利用可能なヒューマノイドロボットの独占アクセスを手に入れましょう。研究、プログラミング、エンターテイメントのニーズに合わせた柔軟なレンタルオプション。"
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "最初に商業的に利用可能なヒューマノイドロボットの独占アクセスを手に入れましょう。研究、プログラミング、エンターテイメントのニーズに合わせた柔軟なレンタルオプション。",
+  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distributed network.": "アルトルイストアウトドアセンサーを使用すると、分散環境モニタリングにおいて力を持つことができます。ノイズ、ほこり、温度データを収集し、暗号化され、マッピングされ、分散ネットワーク全体で共有されます。",
+  "Access current device states remotely": "リモートで現在のデバイスの状態にアクセス",
+  "Control devices remotely via parachain or Libp2p": "パラチェーンまたはLibp2pを介してデバイスをリモートで制御",
+  "Manage Home Assistant users": "Home Assistantユーザーを管理",
+  "Back up and restore Home Assistant configurations": "Home Assistantの構成をバックアップおよび復元",
+  "Store your home's digital twin in a secure, decentralized cloud": "自宅のデジタルツインを安全で分散されたクラウドに保存"
 }

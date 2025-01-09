@@ -868,7 +868,7 @@
   "We'll get in touch shortly!": "Мы свяжемся с вами в ближайшее время!",
   "Contact me": "Свяжитесь со мной",
   "A smart sensor that collects environmental data and integrates it into a decentralized sensor map.": "Умный датчик, собирающий окружающие данные и интегрирующий их в децентрализованную карту датчиков.",
-  "Smart Tamagochi “Hikikomori“": "Умный Тамагочи 'Hikikomori'",
+  "Smart Tamagotchi “Hikikomori“": "Умный Тамагочи 'Hikikomori'",
   "A microcontroller development board designed to integrate with Web3 systems. It can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!": "Плата разработки микроконтроллера, предназначенная для интеграции с системами Web3. Это может быть ваш умный домашний тамагочи, игровой контроллер, образовательный инструмент - все, что вы разработаете!",
   "Energy monitor with USB-C": "Энергетический монитор с USB-C",
   "A non-invasive device designed for DIN rail mounting in electrical panels, tracks electricity consumption and generation.": "Неинвазивное устройство, предназначенное для монтажа на DIN-рейке в электрических щитах, отслеживает потребление и генерацию электроэнергии.",
@@ -877,7 +877,6 @@
   "Our devices are designed for total transparency. Every product comes with open RISC-V processor, open-source code and circuit schematics, and local update instructions—no need for cloud connections. You’re empowered to understand, customize, and trust your technology from the ground up": "Наши устройства разработаны для полной прозрачности. Каждый продукт поставляется с открытым процессором RISC-V, открытым исходным кодом и схемами схем, а также инструкциями по локальному обновлению - нет необходимости в облачных подключениях. Вы можете понять, настроить и доверять вашей технологии с нуля",
   "The combination of p2p communication and web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are": "Комбинация p2p-коммуникации и облачного веб3 гарантирует, что ваши устройства всегда будут подключены. Нет доступа к интернету? Вы все равно можете подключиться напрямую к устройству. Переезжаете в новый регион или уезжаете в отпуск? Ваши устройства останутся онлайн и доступными где бы вы ни находились",
   "Privacy by design": "Конфиденциальность по дизайну",
-  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distribute﻿d network.": "С датчиком Altruist Outdoor вы становитесь силой в децентрализованном окружающем мониторинге. Захватывайте данные о шуме, пыли и температуре - зашифрованные, отображенные и распределенные по сети.",
   "Trust the Code": "Доверьтесь коду",
   "Fully open-source, no hidden algorithms, no corporate surveillance. It’s transparency for the true decentralist.": "Полностью открытый исходный код, без скрытых алгоритмов, без корпоративного наблюдения. Это прозрачность для истинного децентрализатора.",
   "Your data, your keys": "Ваши данные, ваши ключи",
@@ -953,5 +952,11 @@
   "weeks": "недель",
   "on demand": "по требованию",
   "Special offer": "Специальное предложение",
-  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Получите эксклюзивный доступ к одному из первых коммерчески доступных гуманоидных роботов. Гибкие варианты аренды для исследований, программирования и развлечений."
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Получите эксклюзивный доступ к одному из первых коммерчески доступных гуманоидных роботов. Гибкие варианты аренды для исследований, программирования и развлечений.",
+  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distributed network.": "С датчиком Altruist Outdoor вы становитесь силой в децентрализованном экологическом мониторинге. Захватывайте данные о шуме, пыли и температуре - зашифрованные, отображенные и распределенные по сети.",
+  "Access current device states remotely": "Доступ к текущему состоянию устройств удаленно",
+  "Control devices remotely via parachain or Libp2p": "Управление устройствами удаленно через парачейн или Libp2p",
+  "Manage Home Assistant users": "Управление пользователями Home Assistant",
+  "Back up and restore Home Assistant configurations": "Резервное копирование и восстановление конфигураций Home Assistant",
+  "Store your home's digital twin in a secure, decentralized cloud": "Храните цифровой двойник вашего дома в безопасном, децентрализованном облаке"
 }
