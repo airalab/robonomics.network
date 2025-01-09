@@ -868,7 +868,7 @@
   "We'll get in touch shortly!": "我们会尽快与您联系！",
   "Contact me": "联系我",
   "A smart sensor that collects environmental data and integrates it into a decentralized sensor map.": "智能传感器，可收集环境数据并将其整合到去中心化传感器地图中。",
-  "Smart Tamagochi “Hikikomori“": "智能玩具“Hikikomori“",
+  "Smart Tamagotchi “Hikikomori“": "智能玩具“Hikikomori“",
   "A microcontroller development board designed to integrate with Web3 systems. It can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!": "一款设计用于与Web3系统集成的微控制器开发板。它可以成为您的智能家居玩具、游戏控制器、教育工具 - 任何您设计的东西！",
   "Energy monitor with USB-C": "带有USB-C的能源监视器",
   "A non-invasive device designed for DIN rail mounting in electrical panels, tracks electricity consumption and generation.": "一种非侵入式设备，设计用于电气面板的DIN轨道安装，跟踪电力消耗和发电。",
@@ -877,7 +877,6 @@
   "Our devices are designed for total transparency. Every product comes with open RISC-V processor, open-source code and circuit schematics, and local update instructions—no need for cloud connections. You’re empowered to understand, customize, and trust your technology from the ground up": "我们的设备设计具有完全透明性。每个产品都配备开放的RISC-V处理器、开源代码和电路原理图，以及本地更新说明—无需云连接。您有权了解、定制和信任您的技术从根本上开始",
   "The combination of p2p communication and web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are": "p2p通信和web3云的结合确保您的设备始终连接。没有互联网访问？您仍然可以直接连接设备。搬到新地区或度假？您的设备将始终在线并可访问，无论您身在何处",
   "Privacy by design": "隐私设计",
-  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distribute﻿d network.": "通过Altruist户外传感器，您成为去中心化环境监测的力量。捕获噪音、灰尘和温度数据—加密、映射并在分布式网络中共享。",
   "Trust the Code": "相信代码",
   "Fully open-source, no hidden algorithms, no corporate surveillance. It’s transparency for the true decentralist.": "完全开源，没有隐藏算法，没有企业监视。这是真正去中心化的透明度。",
   "Your data, your keys": "您的数据，您的密钥",
@@ -953,5 +952,11 @@
   "weeks": "周",
   "on demand": "按需",
   "Special offer": "特别优惠",
-  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "独家获得首批商用人形机器人之一的专属访问权。灵活的租赁选项，满足研究、编程和娱乐需求。"
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "独家获得首批商用人形机器人之一的专属访问权。灵活的租赁选项，满足研究、编程和娱乐需求。",
+  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distributed network.": "通过Altruist户外传感器，您可以成为分散式环境监测中的一股力量。捕获噪音、灰尘和温度数据——加密、映射并在分布式网络中共享。",
+  "Access current device states remotely": "远程访问当前设备状态",
+  "Control devices remotely via parachain or Libp2p": "通过parachain或Libp2p远程控制设备",
+  "Manage Home Assistant users": "管理Home Assistant用户",
+  "Back up and restore Home Assistant configurations": "备份和恢复Home Assistant配置",
+  "Store your home's digital twin in a secure, decentralized cloud": "将您家的数字孪生存储在安全的分散式云中"
 }

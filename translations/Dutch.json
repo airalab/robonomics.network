@@ -868,7 +868,7 @@
   "We'll get in touch shortly!": "We nemen binnenkort contact met u op!",
   "Contact me": "Neem contact met mij op",
   "A smart sensor that collects environmental data and integrates it into a decentralized sensor map.": "Een slimme sensor die omgevingsgegevens verzamelt en integreert in een gedecentraliseerde sensor kaart.",
-  "Smart Tamagochi “Hikikomori“": "Slimme Tamagochi 'Hikikomori'",
+  "Smart Tamagotchi “Hikikomori“": "Slimme Tamagotchi 'Hikikomori'",
   "A microcontroller development board designed to integrate with Web3 systems. It can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!": "Een microcontroller-ontwikkelingsbord ontworpen om te integreren met Web3-systemen. Het kan uw slimme huistamagotchi zijn, een gamecontroller, een educatief hulpmiddel - alles wat u ontwerpt!",
   "Energy monitor with USB-C": "Energiemonitor met USB-C",
   "A non-invasive device designed for DIN rail mounting in electrical panels, tracks electricity consumption and generation.": "Een niet-invasief apparaat ontworpen voor DIN-railmontage in elektrische panelen, volgt elektriciteitsverbruik en -opwekking.",
@@ -877,7 +877,6 @@
   "Our devices are designed for total transparency. Every product comes with open RISC-V processor, open-source code and circuit schematics, and local update instructions—no need for cloud connections. You’re empowered to understand, customize, and trust your technology from the ground up": "Onze apparaten zijn ontworpen voor totale transparantie. Elk product wordt geleverd met een open RISC-V-processor, open-source code en schakelschema's, en lokale update-instructies - geen cloudverbindingen nodig. U bent in staat om uw technologie vanaf de basis te begrijpen, aan te passen en te vertrouwen",
   "The combination of p2p communication and web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are": "De combinatie van p2p-communicatie en web3-cloud garandeert dat uw apparaten altijd verbonden zullen zijn. Geen internettoegang? U kunt nog steeds rechtstreeks verbinding maken met het apparaat. Verhuizen naar een nieuwe regio of op vakantie gaan? Uw apparaten blijven online en toegankelijk waar u ook bent",
   "Privacy by design": "Privacy by design",
-  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distribute﻿d network.": "Met de Altruist Outdoor Sensor wordt u een kracht in gedecentraliseerde milieumonitoring. Leg geluids-, stof- en temperatuurgegevens vast - versleuteld, in kaart gebracht en gedeeld over een gedistribueerd netwerk.",
   "Trust the Code": "Vertrouw op de code",
   "Fully open-source, no hidden algorithms, no corporate surveillance. It’s transparency for the true decentralist.": "Volledig open-source, geen verborgen algoritmen, geen bedrijfsspionage. Het is transparantie voor de ware decentralist.",
   "Your data, your keys": "Uw gegevens, uw sleutels",
@@ -953,5 +952,11 @@
   "weeks": "weken",
   "on demand": "op verzoek",
   "Special offer": "Speciale aanbieding",
-  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Krijg exclusieve toegang tot een van de eerste commercieel verkrijgbare humanoïde robots. Flexibele verhuuropties voor onderzoek, programmering en entertainment behoeften."
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Krijg exclusieve toegang tot een van de eerste commercieel verkrijgbare humanoïde robots. Flexibele verhuuropties voor onderzoek, programmering en entertainment behoeften.",
+  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distributed network.": "Met de Altruist Outdoor Sensor word je een kracht in gedecentraliseerde milieumonitoring. Leg geluids-, stof- en temperatuurgegevens vast - versleuteld, in kaart gebracht en gedeeld over een gedistribueerd netwerk.",
+  "Access current device states remotely": "Toegang tot huidige apparaatstatussen op afstand",
+  "Control devices remotely via parachain or Libp2p": "Apparaten op afstand bedienen via parachain of Libp2p",
+  "Manage Home Assistant users": "Beheer Home Assistant-gebruikers",
+  "Back up and restore Home Assistant configurations": "Maak back-ups en herstel Home Assistant-configuraties",
+  "Store your home's digital twin in a secure, decentralized cloud": "Bewaar de digitale tweeling van je huis in een veilige, gedecentraliseerde cloud"
 }
