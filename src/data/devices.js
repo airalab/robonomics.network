@@ -21,7 +21,7 @@ export default {
     },
     {
       code: 'hikikomori',
-      title: t('Smart Tamagochi “Hikikomori“'),
+      title: t('Smart Tamagotchi “Hikikomori“'),
       text: t('A microcontroller development board designed to integrate with Web3 systems. It can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!'),
       cases: t('Connect your smart home and smart clothing to the Hikikomori to monitor sensor data—right at your fingertips. Literally.'),
       titleLink: '/devices/hikikomori'
