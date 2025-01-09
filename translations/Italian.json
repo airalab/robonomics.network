@@ -868,7 +868,7 @@
   "We'll get in touch shortly!": "Ci metteremo in contatto a breve!",
   "Contact me": "Contattami",
   "A smart sensor that collects environmental data and integrates it into a decentralized sensor map.": "Un sensore intelligente che raccoglie dati ambientali e li integra in una mappa di sensori decentralizzata.",
-  "Smart Tamagochi “Hikikomori“": "Smart Tamagochi 'Hikikomori'",
+  "Smart Tamagotchi “Hikikomori“": "Smart Tamagotchi 'Hikikomori'",
   "A microcontroller development board designed to integrate with Web3 systems. It can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!": "Una scheda di sviluppo microcontroller progettata per integrarsi con i sistemi Web3. Può essere il tuo tamagotchi per la casa intelligente, un controller per videogiochi, uno strumento educativo - qualsiasi cosa tu progetti!",
   "Energy monitor with USB-C": "Monitoraggio energetico con USB-C",
   "A non-invasive device designed for DIN rail mounting in electrical panels, tracks electricity consumption and generation.": "Un dispositivo non invasivo progettato per il montaggio su guida DIN nei quadri elettrici, monitora il consumo e la generazione di elettricità.",
@@ -877,7 +877,6 @@
   "Our devices are designed for total transparency. Every product comes with open RISC-V processor, open-source code and circuit schematics, and local update instructions—no need for cloud connections. You’re empowered to understand, customize, and trust your technology from the ground up": "I nostri dispositivi sono progettati per la massima trasparenza. Ogni prodotto è dotato di processore RISC-V aperto, codice sorgente e schemi circuitali open-source, e istruzioni per gli aggiornamenti locali, senza necessità di connessioni cloud. Hai il potere di capire, personalizzare e fidarti della tua tecnologia fin dal principio",
   "The combination of p2p communication and web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are": "La combinazione di comunicazione p2p e cloud web3 garantisce che i tuoi dispositivi saranno sempre connessi. Senza accesso a internet? Puoi comunque connetterti direttamente al dispositivo. Ti trasferisci in una nuova regione o vai in vacanza? I tuoi dispositivi rimarranno online e accessibili ovunque tu sia",
   "Privacy by design": "Privacy by design",
-  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distribute﻿d network.": "Con l'Altruist Outdoor Sensor, diventi una forza nel monitoraggio ambientale decentralizzato. Cattura dati su rumore, polvere e temperatura - criptati, mappati e condivisi su una rete distribuita.",
   "Trust the Code": "Fidati del Codice",
   "Fully open-source, no hidden algorithms, no corporate surveillance. It’s transparency for the true decentralist.": "Totalmente open-source, senza algoritmi nascosti, senza sorveglianza aziendale. È trasparenza per il vero decentralista.",
   "Your data, your keys": "I tuoi dati, le tue chiavi",
@@ -953,5 +952,11 @@
   "weeks": "settimane",
   "on demand": "su richiesta",
   "Special offer": "Offerta speciale",
-  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Ottieni l'accesso esclusivo a uno dei primi robot umanoidi disponibili commercialmente. Opzioni di noleggio flessibili per esigenze di ricerca, programmazione e intrattenimento."
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Ottieni l'accesso esclusivo a uno dei primi robot umanoidi disponibili commercialmente. Opzioni di noleggio flessibili per esigenze di ricerca, programmazione e intrattenimento.",
+  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distributed network.": "Con il sensore esterno Altruist, diventi una forza nel monitoraggio ambientale decentralizzato. Cattura dati su rumore, polvere e temperatura - criptati, mappati e condivisi su una rete distribuita.",
+  "Access current device states remotely": "Accedi agli stati attuali dei dispositivi a distanza",
+  "Control devices remotely via parachain or Libp2p": "Controlla i dispositivi a distanza tramite parachain o Libp2p",
+  "Manage Home Assistant users": "Gestisci gli utenti di Home Assistant",
+  "Back up and restore Home Assistant configurations": "Esegui il backup e il ripristino delle configurazioni di Home Assistant",
+  "Store your home's digital twin in a secure, decentralized cloud": "Archivia il gemello digitale della tua casa in un cloud sicuro e decentralizzato"
 }

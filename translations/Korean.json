@@ -868,7 +868,7 @@
   "We'll get in touch shortly!": "곧 연락 드리겠습니다!",
   "Contact me": "연락처",
   "A smart sensor that collects environmental data and integrates it into a decentralized sensor map.": "환경 데이터를 수집하고 분산 센서 맵에 통합하는 스마트 센서",
-  "Smart Tamagochi “Hikikomori“": "스마트 타마고치 '히키코모리'",
+  "Smart Tamagotchi “Hikikomori“": "스마트 타마고치 '히키코모리'",
   "A microcontroller development board designed to integrate with Web3 systems. It can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!": "Web3 시스템과 통합되도록 설계된 마이크로컨트롤러 개발 보드. 스마트 홈 타마고치, 게임 컨트롤러, 교육 도구 등으로 사용할 수 있습니다. - 당신이 디자인하는 모든 것!",
   "Energy monitor with USB-C": "USB-C를 지원하는 에너지 모니터",
   "A non-invasive device designed for DIN rail mounting in electrical panels, tracks electricity consumption and generation.": "전기 패널에 DIN 레일 장착을 위해 설계된 비침입 장치로 전기 소비 및 발전을 추적합니다.",
@@ -877,7 +877,6 @@
   "Our devices are designed for total transparency. Every product comes with open RISC-V processor, open-source code and circuit schematics, and local update instructions—no need for cloud connections. You’re empowered to understand, customize, and trust your technology from the ground up": "우리의 장치는 완전한 투명성을 위해 설계되었습니다. 모든 제품에는 오픈 RISC-V 프로세서, 오픈 소스 코드 및 회로 도면, 그리고 로컬 업데이 지침이 포함되어 있습니다. 클라우드 연결이 필요하지 않습니다. 기술을 처음부터 이해하고 사용자 정의하고 신뢰할 수 있습니다.",
   "The combination of p2p communication and web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are": "p2p 통신과 web3 클라우드의 결합은 귀하의 장치가 항상 연결되어 있을 것을 보장합니다. 인터넷 접속이 안 되는 경우? 여전히 장치에 직접 연결할 수 있습니다. 새로운 지역으로 이사하거나 휴가를 가는 경우? 귀하의 장치는 항상 온라인이며 어디에서나 접근할 수 있습니다.",
   "Privacy by design": "디자인에 의한 개인정보 보호",
-  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distribute﻿d network.": "Altruist Outdoor Sensor를 사용하면 분산 환경 모니터링에서 힘을 발휘할 수 있습니다. 소음, 먼지 및 온도 데이터를 캡처하여 암호화하고 매핑하여 분산 네트워크 전체에 공유합니다.",
   "Trust the Code": "코드를 신뢰하십시오",
   "Fully open-source, no hidden algorithms, no corporate surveillance. It’s transparency for the true decentralist.": "완전히 오픈 소스, 숨겨진 알고리즘이 없으며 기업 감시도 없습니다. 진정한 분산주의자를 위한 투명성입니다.",
   "Your data, your keys": "귀하의 데이터, 귀하의 키",
@@ -953,5 +952,11 @@
   "weeks": "주",
   "on demand": "요청에 따라",
   "Special offer": "특별 제안",
-  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "상업적으로 이용 가능한 최초의 인간형 로봇 중 하나에 독점 액세스를 받으세요. 연구, 프로그래밍 및 엔터테인먼트 필요에 따른 유연한 렌탈 옵션."
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "상업적으로 이용 가능한 최초의 인간형 로봇 중 하나에 독점 액세스를 받으세요. 연구, 프로그래밍 및 엔터테인먼트 필요에 따른 유연한 렌탈 옵션.",
+  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distributed network.": "알트루이스트 야외 센서를 사용하면 분산 환경 모니터링에서 힘이 됩니다. 소음, 먼지 및 온도 데이터를 캡처하고 암호화되어 분산 네트워크를 통해 매핑되고 공유합니다.",
+  "Access current device states remotely": "원격으로 현재 장치 상태에 액세스",
+  "Control devices remotely via parachain or Libp2p": "파라체인 또는 Libp2p를 통해 원격으로 장치 제어",
+  "Manage Home Assistant users": "홈 어시스턴트 사용자 관리",
+  "Back up and restore Home Assistant configurations": "홈 어시스턴트 구성을 백업하고 복원",
+  "Store your home's digital twin in a secure, decentralized cloud": "홈의 디지털 트윈을 안전한 분산 클라우드에 저장"
 }

@@ -820,7 +820,7 @@
   "We'll get in touch shortly!": "Θα επικοινωνήσουμε σύντομα!",
   "Contact me": "Επικοινωνήστε μαζί μου",
   "A smart sensor that collects environmental data and integrates it into a decentralized sensor map.": "Ένα έξυπνο αισθητήρα που συλλέγει περιβαλλοντικά δεδομένα και τα ενσωματώνει σε ένα αποκεντρωμένο χάρτη αισθητήρων.",
-  "Smart Tamagochi “Hikikomori“": "Έξυπνο Tamagochi 'Hikikomori'",
+  "Smart Tamagotchi “Hikikomori“": "Έξυπνο Tamagotchi 'Hikikomori'",
   "A microcontroller development board designed to integrate with Web3 systems. It can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!": "Πίνακας ανάπτυξης μικροελεγκτή σχεδιασμένος για να ενσωματωθεί σε συστήματα Web3. Μπορεί να είναι το έξυπνο tamagotchi του σπιτιού σας, ένας ελεγκτής παιχνιδιών, ένα εκπαιδευτικό εργαλείο - οτιδήποτε σχεδιάζετε!",
   "Energy monitor with USB-C": "Παρακολούθηση ενέργειας με USB-C",
   "A non-invasive device designed for DIN rail mounting in electrical panels, tracks electricity consumption and generation.": "Ένα μη επεμβατικό συσκευή σχεδιασμένη για τοποθέτηση σε ράγα DIN σε ηλεκτρικούς πίνακες, καταγράφει την κατανάλωση και παραγωγή ηλεκτρικής ενέργειας.",
@@ -829,7 +829,6 @@
   "Our devices are designed for total transparency. Every product comes with open RISC-V processor, open-source code and circuit schematics, and local update instructions—no need for cloud connections. You’re empowered to understand, customize, and trust your technology from the ground up": "Οι συσκευές μας είναι σχεδιασμένες για απόλυτη διαφάνεια. Κάθε προϊόν διαθέτει ανοιχτό επεξεργαστή RISC-V, κώδικα και κυκλώματα ανοιχτού κώδικα, και τοπικές οδηγίες ενημέρωσης - χωρίς ανάγκη για συνδέσεις στο cloud. Έχετε τη δυνατότητα να κατανοήσετε, να προσαρμόσετε και να εμπιστευτείτε την τεχνολογία σας από την αρχή",
   "The combination of p2p communication and web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are": "Η συνδυασμός της επικοινωνίας p2p και του cloud web3 εγγυάται ότι οι συσκευές σας θα είναι πάντα συνδεδεμένες. Δεν έχετε πρόσβαση στο internet; Μπορείτε ακόμα να συνδθείτε απευθείας στη συσκευή. Μετακομίζετε σε νέα περιοχή ή πηγαίνετε διακοπές; Οι συσκευές σας θα παραμείνουν online και προσβάσιμες οπουδήποτε βρίσκεστε",
   "Privacy by design": "Απορρήτου με σχεδιασμό",
-  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distribute﻿d network.": "Με τον Αλτρουιστικό Αισθητήρα Εξωτερικού, γίνεστε δύναμη στην αποκεντρωμένη παρακολούθηση του περιβάλλοντος. Καταγράψτε δεδομένα θορύβου, σκόνης και θερμοκρασίας - κρυπτογραφημένα, χαρτογραφημένα και κοινοποιημένα σε ένα διανεμημένο δίκτυο.",
   "Trust the Code": "Εμπιστευτείτε τον Κώδικα",
   "Fully open-source, no hidden algorithms, no corporate surveillance. It’s transparency for the true decentralist.": "Πλήρως ανοιχτός κώδικας, χωρίς κρυμμένους αλγόριθμους, χωρίς εταιρική παρακολούθηση. Είναι διαφάνεια για τον αληθινό αποκεντρωτιστή.",
   "Your data, your keys": "Τα δεδομένα σας, τα κλειδιά σας",
@@ -953,5 +952,11 @@
   "weeks": "εβδομάδες",
   "on demand": "κατόπιν αιτήματος",
   "Special offer": "Ειδική προσφορά",
-  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Αποκτήστε αποκλειστική πρόσβαση σε έναν από τους πρώτους εμπορικά διαθέσιμους ανθρωποειδείς ρομπότ. Ευέλικτες επιλογές ενοικίασης για ερευνητικές, προγραμματιστικές και ψυχαγωγικές ανάγκες."
+  "Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.": "Αποκτήστε αποκλειστική πρόσβαση σε έναν από τους πρώτους εμπορικά διαθέσιμους ανθρωποειδείς ρομπότ. Ευέλικτες επιλογές ενοικίασης για ερευνητικές, προγραμματιστικές και ψυχαγωγικές ανάγκες.",
+  "With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distributed network.": "Με τον Αλτρουιστικό Εξωτερικό Αισθητήρα, γίνεστε μια δύναμη στην αποκεντρωμένη περιβαλλοντική παρακολούθηση. Καταγράψτε δεδομένα θορύβου, σκόνης και θερμοκρασίας - κρυπτογραφημένα, χαρτογραφημένα και κοινοποιημένα σε ένα κατανεμημένο δίκτυο.",
+  "Access current device states remotely": "Πρόσβαση σε τρέχουσες καταστάσεις συσκευών απομακρυσμένα",
+  "Control devices remotely via parachain or Libp2p": "Έλεγχος συσκευών απομακρυσμένα μέσω parachain ή Libp2p",
+  "Manage Home Assistant users": "Διαχείριση χρηστών Home Assistant",
+  "Back up and restore Home Assistant configurations": "Αντίγραφα ασφαλείας και επαναφορά ρυθμίσεων Home Assistant",
+  "Store your home's digital twin in a secure, decentralized cloud": "Αποθηκεύστε το ψηφιακό δίδυμο του σπιτιού σας σε ένα ασφαλές, αποκεντρωμένο νέφος"
 }

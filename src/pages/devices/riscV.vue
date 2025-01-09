@@ -65,11 +65,11 @@
       <p>{{ $t('Our smart home server eliminates corporate interference, keeping your data local or encrypted with your personal key in decentralized Web3 storage. Enjoy complete privacy with no tracking, no surveillance—just secure, trustless control over your smart home.') }}</p>
       <p>{{ $t('With Robonomics Web3 cloud and p2p remote control, you get cryptographic access to all the functions of smart home:') }}</p>
       <ul>
-        <li>Access current device states remotely</li>
-        <li>Control devices remotely via parachain or Libp2p</li>
-        <li>Manage Home Assistant users</li>
-        <li>Back up and restore Home Assistant configurations</li>
-        <li>Store your home's digital twin in a secure, decentralized cloud</li>
+        <li>{{$t('Access current device states remotely')}}</li>
+        <li>{{ $t('Control devices remotely via parachain or Libp2p') }}</li>
+        <li>{{ $t('Manage Home Assistant users') }}</li>
+        <li>{{ $t('Back up and restore Home Assistant configurations') }}</li>
+        <li>{{ $t("Store your home's digital twin in a secure, decentralized cloud") }}</li>
       </ul>
     </article>
 
