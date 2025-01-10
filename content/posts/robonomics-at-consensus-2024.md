@@ -4,7 +4,7 @@ date: 2024-05-22
 published: true
 locale: 'en'
 cover_image: ./images/robonomics-at-consensus-2024/cover.png
-description: "Robonomics is hosting a track at Consensus 2024 Hackathon, challenging participants to build useful DePIN projects. Participants will have remote access to robotics and smart home labs and can add their favorite web3 tools to build infrastructure for the real world."
+description: "Robonomics is hosting a track at Consensus 2024 Hackathon, challenging participants to build useful DePIN projects. Participants will have remote access to robotics and smart home labs and can add their favorite Web3 tools to build infrastructure for the real world."
 abstract: "Robonomics is hosting a track at Consensus 2024 Hackathon giving participants access to works with smart homes and robotics equipment"
 tags: ['Robonomics parachain', 'Consensus', 'Events', 'Buidl']
 ---
@@ -13,7 +13,7 @@ Win 500 DOT for 1st place and the latest Razer laptop for 2nd at the Coindesk Co
 
 Join us for a unique and exciting track focused on using Robonomics for smart home and robotics use cases. We offer remote access to two cutting-edge labs:
 
-- **Boston Dynamics Spot Lab:** Work with the renowned Boston Dynamics Spot, a quadrupedal robot known for its agility and maneuverability. Explore how to control Spot using web3 tools, create decentralized applications (dApps) for Spot, or use Spot's data to develop innovative services.
+- **Boston Dynamics Spot Lab:** Work with the renowned Boston Dynamics Spot, a quadrupedal robot known for its agility and maneuverability. Explore how to control Spot using Web3 tools, create decentralized applications (dApps) for Spot, or use Spot's data to develop innovative services.
 - **Smart Home Lab:** At present, Polkadot is one of the largest DAOs in the world! There are many interesting events taking place in the ecosystem as part of the on-chain governance experiment. Robonomics developers suggest that hackathon participants increase Polkadot community immersion by integrating events related to voting, new treasury requests, epoch changes, and much more, into a typical smart home system.
 
 With our track, you'll have the opportunity to:

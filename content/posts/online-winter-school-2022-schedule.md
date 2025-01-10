@@ -42,7 +42,7 @@ Practical lesson regarding connecting home IoT infrastructure managed by the Rob
 
 ### February 25 / Lesson 4 / Robonomics Whitepaper 2022. Chapter 2. Architecture Robonomics.
 
-Theoretical lesson, the second of three chapters based on the  updated Robonomics Whitepaper. School participants will learn about the past 10 years of history, and the development of the Internet of things; topical problems which this field of knowledge faces today; and how web3 can be the solution to some of these problems.
+Theoretical lesson, the second of three chapters based on the  updated Robonomics Whitepaper. School participants will learn about the past 10 years of history, and the development of the Internet of things; topical problems which this field of knowledge faces today; and how Web3 can be the solution to some of these problems.
 
 </Card>
 

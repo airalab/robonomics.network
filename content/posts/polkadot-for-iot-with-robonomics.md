@@ -40,7 +40,7 @@ https://youtu.be/AQ7ZzgbN7jU
 
 There is an interesting new use case in Robonomics. For four months already, an industrial manipulator has been operating in a manufacturing facility in the United States with an hourly wage. At the end of each shift, the manipulator updates its digital twin instance stored in the parachain. Based on the changes in the digital twin, an invoice is issued for the use of the manipulator structured as IoT-enabled leasing. 
 
-Thus, we can say that Kusama will be an example of a fintech solution from web3 for the new industry 4.0. [Someday the public will understand the significance of this use case](https://www2.deloitte.com/content/dam/Deloitte/us/Documents/manufacturing/us-supply-chain-of-the-autonomous-robots.pdf), and we will see a boom of DeFi for this modern industry!
+Thus, we can say that Kusama will be an example of a fintech solution from Web3 for the new industry 4.0. [Someday the public will understand the significance of this use case](https://www2.deloitte.com/content/dam/Deloitte/us/Documents/manufacturing/us-supply-chain-of-the-autonomous-robots.pdf), and we will see a boom of DeFi for this modern industry!
 
 ## Digital Passports for IoT systems
 

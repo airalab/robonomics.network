@@ -55,7 +55,7 @@ Junte-se à Crust Network agora e desfrute de acesso a cerca de 1.000 Pb de arma
 
 ## SOBRE A ROBONOMICS
 
-A Robonomics é uma plataforma de código aberto para aplicações de IoT. Apoiamos uma nova geração de tecnologias da internet (web3) que implementam a troca de informações técnicas e econômicas na forma de transações atômicas entre aplicativos de usuários, serviços de IoT e robótica complexa.
+A Robonomics é uma plataforma de código aberto para aplicações de IoT. Apoiamos uma nova geração de tecnologias da internet (Web3) que implementam a troca de informações técnicas e econômicas na forma de transações atômicas entre aplicativos de usuários, serviços de IoT e robótica complexa.
 
 A Robonomics contém um conjunto completo de ferramentas para o desenvolvimento de aplicativos IoT, tanto na robótica quanto na interface do usuário. A comunicação entre o usuário e o dispositivo acontece usando as tecnologias de maior sucesso do mundo Web3 – IPFS, Ethereum e Polkadot. Assim, os desenvolvedores podem criar aplicativos modernos e seguros desde o Smart Home até a Indústria 4.0.
 

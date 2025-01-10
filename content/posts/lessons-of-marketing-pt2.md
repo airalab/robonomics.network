@@ -64,7 +64,7 @@ Let me introduce you to this impressive list of colleagues, partners, and projec
 
 **Robotics and IoT Leaders:**
 
-- Open Source Robotics Alliance and ROS 2 — support for Rust bindings for ROS 2, search for web3 applications for robotics
+- open source Robotics Alliance and ROS 2 — support for Rust bindings for ROS 2, search for Web3 applications for robotics
 - Boston Dynamics — system for log storage in Web3 cloud for the Spot robot, creating courses on Spot SDK
 - KUKA — KUKA manipulator control system via Web3 cloud, the Gaka-chu robot artist project
 - Universal Robots — the Eisenkoch robot baker project
@@ -111,7 +111,7 @@ Of course, activities with other projects and partners are important. However, w
 
 Another option is to prominently display only the integrations and collaborations that are currently in use. In Robonomics' case, it would look like this:
 
-- Open Source Robotics Alliance
+- open source Robotics Alliance
 - Home Assistant
 - Tasmota
 - Protocol Labs

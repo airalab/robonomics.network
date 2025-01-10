@@ -55,7 +55,7 @@ Unisciti subito a Crust Network e goditi l’accesso a circa 1.000 Pb di storage
 
 ## Riguardo a Robonomics
 
-Robonomics è una piattaforma open source per applicazioni IoT. Supportiamo una nuova generazione di tecnologie Internet (web3) che implementa lo scambio di informazioni tecniche ed economiche, sotto forma di transazioni atomiche fra applicazioni utente, servizi IoT e robotica complessa.
+Robonomics è una piattaforma open source per applicazioni IoT. Supportiamo una nuova generazione di tecnologie Internet (Web3) che implementa lo scambio di informazioni tecniche ed economiche, sotto forma di transazioni atomiche fra applicazioni utente, servizi IoT e robotica complessa.
 
 Robonomics contiene un set completo di strumenti per lo sviluppo di applicazioni IoT, sia dal punto di vista della robotica che dell’interfaccia utente. La comunicazione fra l’utente e il dispositivo avviene utilizzando le tecnologie di maggior successo nel mondo Web3: IPFS, Ethereum e Polkadot. Pertanto, gli sviluppatori possono creare delle applicazioni moderne e sicure per casi d’uso che vanno dalle Smart Home all’Industria 4.0.
 
