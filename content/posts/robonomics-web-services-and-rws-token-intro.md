@@ -16,7 +16,7 @@ RWS is a state-of-the-art infrastructure that you will love. RWS lets connect de
 
 The first RWS IoT Core services over Robonomics Parachain:
 
-* **RWS: PubSub Message Broker.** Use unlimited messaging over a p2p network based on IPFS protocol.
+* **RWS: PubSub Message Broker.** Use unlimited messaging over a P2P network based on IPFS protocol.
 * **RWS: Data Blockchainization Service.** Put data into IPFS and store hashes in a public Blockchain.
 * **RWS: Robot Actions.** Switch on / off; launch or stop your IoT devices under control of decentralized computer.
 

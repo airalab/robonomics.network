@@ -19,7 +19,7 @@ but the idea behind [FEECC](https://multi-agent.io/projects/feecc/) started with
 <rb-image zoom src="./images/feecc-recap/1-coffee.png" alt="Coffee Schema" />
 
 So basically this was just a recording software which was triggered via a big red button and a QR-code label printer, 
-but beneath the hood there was a whole set of web3 magic.
+but beneath the hood there was a whole set of Web3 magic.
 First, the video wasn’t stored in a regular file system. Instead, IPFS was used. The key benefit behind this is the 
 thing called CID - Content Identifier. A fixed-length key to find your file from all over the world (theoretically).
 Second and most important, the CID was put in a Datalog - a Robonomics Parachain pallet feature which allows you to 
@@ -70,5 +70,5 @@ some numbers to share:
 
 <rb-image zoom src="./images/feecc-recap/5-numbers.png" alt="Numbers" />
 
-With all that we can definitely say that FEECC is a real-life-proved web3 application to provide secure data 
+With all that we can definitely say that FEECC is a real-life-proved Web3 application to provide secure data 
 accumulation and storage for productions.

@@ -208,7 +208,7 @@
               <h3>3 >> </h3>
               <h3>{{$t(`Serverless IoT applications for users`)}}</h3>
             </div>
-            <p>{{$t(`Modern advances in web3-technology can solve the issue of user privacy. With web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.`)}}</p>
+            <p>{{$t(`Modern advances in Web3-technology can solve the issue of user privacy. With Web3 there is no need to authenticate or require connection to specific servers to access telemetry and control the device.`)}}</p>
           </article>
           <div>
             <div>
@@ -273,7 +273,7 @@
               <p>{{$t(`Here is a general diagram of the complete device startup cycle using the Robonomics platform:`)}}</p>
               <ol>
                 <li>{{$t(`The user’s decentralized application sends a request for a device control function through the Robonomics network.`)}}</li>
-                <li>{{$t(`The Robonomics network provides request translation using libp2p and captures events in Ethereum blockchain or Robonomics parachain.`)}}</li>
+                <li>{{$t(`The Robonomics network provides request translation using libP2P and captures events in Ethereum blockchain or Robonomics parachain.`)}}</li>
                 <li>{{$t(`The control of the device is provided by a decentralized network, which is guaranteed to store the necessary information to run the IoT device.`)}}</li>
                 <li>{{$t(`The IoT device independently receives information from Ethereum and Polkadot networks about the current state of the digital twin. This ensures that the device can be started safely only after the technical and economic start-up parameters have been settled.`)}}</li>
                 <li>{{$t(`As a result of the operation, the IoT device publishes a log of completed operations, which can be used as evidence of the service provided or for debugging errors.`)}}</li>

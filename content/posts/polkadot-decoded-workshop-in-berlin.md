@@ -31,8 +31,8 @@ Let's consider a more complex scenario from the IoT world. You are the administr
 
 ### Part 4: Robonomics use cases today and tomorrow
 
-In the final part of the master class, we will talk about web3 application scenarios in the field of IoT which have already been launched. You can familiarize yourself with these scenarios, and try to interact with them on your own after the lesson is over.
+In the final part of the master class, we will talk about Web3 application scenarios in the field of IoT which have already been launched. You can familiarize yourself with these scenarios, and try to interact with them on your own after the lesson is over.
 
-## We invite everyone who is interested to learn about the use of web3 technologies!
+## We invite everyone who is interested to learn about the use of Web3 technologies!
 
 To fully participate in the master class, you will need a laptop with the [polkadot.js extension](https://polkadot.js.org/extension/) installed. However we also invite listeners who would like to learn more about the use of Polkadot in scenarios from the IoT and robotics world.

@@ -22,7 +22,7 @@ You do not have to have a Kanaria bird to get this bonus item, but you do have t
 
 ## About Robonomics
 
-Robonomics is an open-source platform for IoT applications. They support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
+Robonomics is an open-source platform for IoT applications. They support a new generation of internet technologies (Web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.
 
 The Robonomics platform provides tools for working with the robot economy network. Robonomics allow designers of smart cities and industry 4.0 zones to build trust among the autonomous robots services, provide direct user access via dapp for ordering products from autonomous factories and services of urban sensor networks. This in turn allows Robonomics and it’s users to put in place a decentralized system that globally monitors the activities of cyber physical systems.
 

@@ -70,7 +70,7 @@
          <div class="oldy-wrap-count">
            <section class="oldy dark">
             <div class="oldy-count-content">
-              {{$ts('Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}
+              {{$ts('Robonomics is an open-source platform for IoT applications. We support a new generation of internet technologies (Web3) that implements the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}}
             </div>
           </section>
 
@@ -246,7 +246,7 @@
             <div>
               <div class="img"><g-image alt="" src="~/assets/images/plo-holder-3.png"/></div>
               <h3>{{$ts('For tech-inspired')}}</h3>
-              <p class="hyphens">{{$ts('Robonomics already has complex ecosystem for connecting real world to')}} <g-link to="https://web3-technology-stack.readthedocs.io">{{$ts('Web3 Technology Stack Crowdloan 2')}}</g-link>. {{$ts("It's free, it's opensource, everybody can try it for IoT and Smart services. With Polkadot it can be even more cost-effective.")}}</p>
+              <p class="hyphens">{{$ts('Robonomics already has complex ecosystem for connecting real world to')}} <g-link to="https:/web3technology-stack.readthedocs.io">{{$ts('Web3 Technology Stack Crowdloan 2')}}</g-link>. {{$ts("It's free, it's opensource, everybody can try it for IoT and Smart services. With Polkadot it can be even more cost-effective.")}}</p>
             </div>
 
           </section>

@@ -10,7 +10,7 @@ description: "A partir del próximo año, Gear Protocol integrará el ejemplo de
 
 ---
 
-El equipo de Robonomics presentó su primera línea de dispositivos, **["Hardware for Cyberpunks 2025," en Bangkok](https://x.com/AIRA_Robonomics/status/1856724439439913110)**. Uno de los dispositivos destacados es el Hikikomori Tamagotchi, ¡un excelente proyecto educativo! Al estudiar cómo funciona Hikikomori, los usuarios pueden aprender a enviar transacciones directamente desde dispositivos que cuestan menos de $10 a una nube web3. Con ejemplos de interacción con Robonomics o Vara / Gear.exe, los usuarios también pueden ganar experiencia en la gestión del gemelo digital de un dispositivo.
+El equipo de Robonomics presentó su primera línea de dispositivos, **["Hardware for Cyberpunks 2025," en Bangkok](https://x.com/AIRA_Robonomics/status/1856724439439913110)**. Uno de los dispositivos destacados es el Hikikomori Tamagotchi, ¡un excelente proyecto educativo! Al estudiar cómo funciona Hikikomori, los usuarios pueden aprender a enviar transacciones directamente desde dispositivos que cuestan menos de $10 a una nube Web3. Con ejemplos de interacción con Robonomics o Vara / Gear.exe, los usuarios también pueden ganar experiencia en la gestión del gemelo digital de un dispositivo.
 
 A partir del próximo año, **Gear Protocol** integrará el ejemplo de Tamagotchi en **[Gear.exe](https://gear-tech.io/gear-exe) - una solución sin puentes diseñada para potenciar las dApps de Ethereum** - y el dispositivo Hikikomori se utilizará en sus **clases de talleres universitarios** en todo el mundo.
 

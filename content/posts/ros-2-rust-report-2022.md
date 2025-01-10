@@ -26,7 +26,7 @@ About a year and a half ago, we met Esteve and agreed to help him with the devel
 
 ## Progress of Development
 
-At the moment, ros2-rust has already implemented support for message generation, publisher/subscriber mechanism, clients and services. One of our big goals is to develop Robonomics as ROS 2 Middleware, and this requires adding a Robonomics transport layer for ros2-rust. To implement this functionality, support for the libp2p communication library is being added instead of the standard Data Distribution Service (DDS) for ROS2. DDS provides a publish-subscribe transport in a distributed discovery way, allowing any two programs to communicate without the need for a centralized tool like the ROS master. But DDS requires developing an additional bridge for adding Robonomics to ROS2, while libp2p allows native Robonomics integration.
+At the moment, ros2-rust has already implemented support for message generation, publisher/subscriber mechanism, clients and services. One of our big goals is to develop Robonomics as ROS 2 Middleware, and this requires adding a Robonomics transport layer for ros2-rust. To implement this functionality, support for the libP2P communication library is being added instead of the standard Data Distribution Service (DDS) for ROS2. DDS provides a publish-subscribe transport in a distributed discovery way, allowing any two programs to communicate without the need for a centralized tool like the ROS master. But DDS requires developing an additional bridge for adding Robonomics to ROS2, while libP2P allows native Robonomics integration.
 
 ![ros-2-stack](./images/ros-2-rust-report-2022/ros-client-library-api-stack.png)
 
