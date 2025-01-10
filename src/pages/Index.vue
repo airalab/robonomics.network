@@ -27,20 +27,20 @@
         <div class="grid-3">
           <div>
             <g-image src="~/assets/images/lined-scalable.svg" immediate aria-hidden="true" />
-            <h3 class="align-left m-t-0">{{ $t('Pure Open Source') }}</h3>
+            <h3 class="align-left m-t-0">{{ $t('Pure open source') }}</h3>
             <p>{{ $t('Our devices are designed for total transparency. Every product comes with open RISC-V processor, open-source code and circuit schematics, and local update instructions—no need for cloud connections. You’re empowered to understand, customize, and trust your technology from the ground up') }}.</p>
           </div>
 
           <div>
             <g-image src="~/assets/images/lined-wave.svg" immediate aria-hidden="true" />
             <h3 class="align-left m-t-0">{{ $t('Local and Global Availability') }}</h3>
-            <p>{{ $t('The combination of p2p communication and web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are') }}.</p>
+            <p>{{ $t('The combination of P2P communication and Web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are') }}.</p>
           </div>
 
           <div>
             <g-image src="~/assets/images/lined-key.svg" immediate aria-hidden="true" />
             <h3 class="align-left m-t-0">{{ $t('Privacy by design') }}</h3>
-            <p>{{$t('By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.')}}</p>
+            <p>{{$t('By utilizing open source, P2P, and Web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the Web3 cloud.')}}</p>
           </div>
         </div>
 

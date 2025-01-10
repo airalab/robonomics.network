@@ -11,7 +11,7 @@ abstract: "Robonomics has won a Polkadot Parachain slot auction and will be conn
 
 ## Launch of the Robonomics Parachain in Polkadot
 
-The past two years of Robonomics' presence on the Kusama network have been extremely beneficial: we tested the operation of the web3 cloud for IoT in numerous R&D projects with 5 million+ transactions through the parachain over 2 years; delivered a dozen updates with the help of the technical committee; experimented with managing the treasury in the DAO format of token holders; and acquired many other skills important for the project's development in the Polkadot ecosystem.
+The past two years of Robonomics' presence on the Kusama network have been extremely beneficial: we tested the operation of the Web3 cloud for IoT in numerous R&D projects with 5 million+ transactions through the parachain over 2 years; delivered a dozen updates with the help of the technical committee; experimented with managing the treasury in the DAO format of token holders; and acquired many other skills important for the project's development in the Polkadot ecosystem.
 
 [Launching the production of our own IoT devices](https://x.com/RobonomicsHW) under the Robonomics brand, the emergence of [the first multi-apartment building projects with Robonomics technologies in Cyprus](https://robonomics.network/blog/cyprus-residence-with-home-assistant/), and of course the maturation of the Polkadot ecosystem itself - all of these things have led to the decision for the project to push to be connected to the Polkadot Relay Chain.
 
@@ -34,7 +34,7 @@ The launch of the Robonomics parachain on Polkadot will be an interesting event,
 
 The Robonomics parachain on the Kusama network has processed more than 5 million extrinsics to date and has been used in dozens of R&D projects to connect robots and smart devices over the past 2 years.
 
-The project team does not plan to stop the parachain on the Kusama network but wants to turn it into an opportunity to create a free version of the web3 cloud for smart homes for users. You can read more on my Twitter: [Freemium Pattern to Rescue Kusama](https://x.com/EnsRationis/status/1742535268492615983).
+The project team does not plan to stop the parachain on the Kusama network but wants to turn it into an opportunity to create a free version of the Web3 cloud for smart homes for users. You can read more on my Twitter: [Freemium Pattern to Rescue Kusama](https://x.com/EnsRationis/status/1742535268492615983).
 
 The Robonomics parachain on the Kusama network will be subsidized by the project’s developers, will have a bridge to the Polkadot network to allow switching from a free plan to a paid one, and the developers do not plan to completely abandon the maintenance and further support of the Kusama network. I want to emphasize once again that Kusama is a great place to create free versions of your products for any project in the Polkadot ecosystem, and I urge teams to subsidize free versions of their products within the Kusama network! It is inexpensive and will provide greater security than your own testnet, and users will get a real product instead of a toy.
 

@@ -56,8 +56,8 @@
   data() {
     return {
       inputValue: 1, // default value
-      selectedUnit: 'hour', // default unit
-      price: 200,
+      selectedUnit: 'day', // default unit
+      price: 900,
       email: '',
       name: '',
       comment: '',

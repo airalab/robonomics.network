@@ -12,7 +12,7 @@ import Card from '~/components/TextCard.vue'
 
 https://youtu.be/nLPJPQhsdEY
 
-## The Longest Open Source Chain of 2024!   
+## The Longest open source Chain of 2024!   
 
 What you saw at the beginning of the video (turning on the light from a phone) is a unique example of a fully open-source solution covering all stages of interaction between a person and a smart device. To date, this is the only experiment successfully demonstrating a hybrid (cloud-local) and fully integrated IoT solution, entirely built on open-source technologies!
 
@@ -27,7 +27,7 @@ What you saw at the beginning of the video (turning on the light from a phone) i
 
 All elements of the demo — from the user application and connection services to the cloud and home devices — are fully open-source and built with the Robonomics platform!  
 
-## Robonomics Open Source Platform: Full Stack DePIN for the Polkadot Ecosystem   
+## Robonomics open source Platform: Full Stack DePIN for the Polkadot Ecosystem   
 
 During our time in the Polkadot ecosystem, the Robonomics team has published 25 significant repositories,  215 releases, and made around 20,000 code commits that can benefit the community. Among our pinned repositories, you'll find not only the network node's source code but also software solutions for connecting devices and robots directly to decentralized user applications built on Polkadot!  
 

@@ -14,7 +14,7 @@ Robonomics has come a long way in the Polkadot ecosystem. For four years, in par
 
 Robonomics team consists of robotics engineers, academic researchers, and software developers. We are one of the few who have been studying the possibilities of Bitcoin, Ethereum, IPFS and Polkadot for communication between people and automated services connected to the Internet for seven years. We want to see smart cities of the future today, but we don't wish these cities of the future to be smart concentration camps for people watching you and can get access to your house, car, or pacemaker without your permission. 
 
-I am sure that the only alternative for total control is the p2p economically significant interaction, so the IoT platform we are developing is called Robonomics.
+I am sure that the only alternative for total control is the P2P economically significant interaction, so the IoT platform we are developing is called Robonomics.
 
 By winning a parachain slot in the Kusama network, we will open the doors for hundreds of IoT developers to the Polkadot ecosystem and help them take their first steps under the guidance of experienced teachers and roboticists. Most IoT developers we interviewed are happy to try an alternative to the usual corporate clouds, but it simply does not exist today. Almost every engineer we know understands the problems associated with client-server solutions. However, today there is still no environment that a corporation does not manage and at the same time produces user’s trust.
 

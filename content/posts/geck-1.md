@@ -12,7 +12,7 @@ import Card from '~/components/TextCard.vue'
 
 Over the past two years, I have noticed an increase in publications and various phenomena surrounding topics such as network states and digital nomadism. Last year, I attended the "The Network States Amsterdam" conference with great interest. After several days of reflection in Amsterdam, I initiated a project called G.E.C.K.
 
-Six months later, our team conducted field trials of home automation in the jungles of Bali. Today, I want to share the first report on the current state of our work on creating an autonomous home image that would be controlled by the owner of an NFT access token. Our concept is that such a smart home image will allow the crypto community to integrate physical-world objects into the web3 world to create various forms of network states.
+Six months later, our team conducted field trials of home automation in the jungles of Bali. Today, I want to share the first report on the current state of our work on creating an autonomous home image that would be controlled by the owner of an NFT access token. Our concept is that such a smart home image will allow the crypto community to integrate physical-world objects into the Web3 world to create various forms of network states.
 
 ## "G.E.C.K. - is something from the world of Fallout?"
 
@@ -28,11 +28,11 @@ Garden of Eden Creation Kit (G.E.C.K.) is a suitcase containing everything neede
 My personal analysis of the history of forming small communities, network structures, and attempts to create sovereign states anywhere on planet Earth shows that the greatest challenge lies in providing new communities with basic social rights and responsibilities, as well as establishing key public institutions. It is not so much about having a strong government capable of creating numerous sub-legal acts, but rather ensuring the preservation of civil relations acts, property ownership registries, and guaranteeing the fulfillment of obligations by the parties involved. These are crucial functions that should be integrated into any human community, no matter how small. Of course, this applies to situations when you are thinking about how this community will live in 20 or 40 years.
 
 In personal conversations, I never tire of emphasizing the significance of Bitcoin, not just as electronic cash, but as an entire societal institution that ensures the functionality of this financial system. Similarly, I hold the view of Ethereum as the first legal platform where contracts can be executed with guaranteed enforcement of their terms. Adding to this list are platforms that provide services based on creating separate registries of ownership, more complex financial services from the DeFi world, prediction markets, insurance solutions, experiments with on-chain governance in Polkadot, and all together, this resembles the emergence of a platform for launching numerous experiments with network states.
-However, one thing I have not yet seen among these solutions, which is a necessary binding entity, is the implementation of connections between physical objects in the surrounding world and the societal institutions that will exist in the web3 cloud.
+However, one thing I have not yet seen among these solutions, which is a necessary binding entity, is the implementation of connections between physical objects in the surrounding world and the societal institutions that will exist in the Web3 cloud.
 
 ## Robonomics serves as a connecting link between network states and physical locations on planet Earth
 
-I don't want to delve into all aspects of forming network states right now, such as which specific smart contract templates are needed first, which digital currency deserves the status of primary, and many others. My interest lies in the area where our team has maximum expertise, which is connecting physical objects to the world of web3. Since the launch of Ethereum in 2015, I have been focused on studying scenarios and conducting experiments to connect various robots, smart devices for implementing smart home control scenarios, vending machines, or drone delivery using smart contracts or specially designed web3 environments for IoT.
+I don't want to delve into all aspects of forming network states right now, such as which specific smart contract templates are needed first, which digital currency deserves the status of primary, and many others. My interest lies in the area where our team has maximum expertise, which is connecting physical objects to the world of Web3. Since the launch of Ethereum in 2015, I have been focused on studying scenarios and conducting experiments to connect various robots, smart devices for implementing smart home control scenarios, vending machines, or drone delivery using smart contracts or specially designed Web3 environments for IoT.
 
 This is indeed the main goal of the G.E.C.K. project today - to develop a scenario for using a set of smart devices to support the daily life of a small autonomous village in the jungles of Bali, on the shores of the Caribbean Sea... or wherever your imagination allows, even on Mars!
 
@@ -63,7 +63,7 @@ Below is a detailed list of devices that we plan to assemble into a single kit (
 
 - Single-board computer for local smart home server x1
 - Single-board computer for connecting solar panels and batteries to the smart home system x1
-- Mini server for synchronization with the web3 cloud without intermediaries x1
+- Mini server for synchronization with the Web3 cloud without intermediaries x1
 - IoT gateway (Zigbee2MQTT) x1
 - Outdoor Wi-Fi routers x2
 - Outdoor Wi-Fi bridge x1
