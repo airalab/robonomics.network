@@ -82,7 +82,7 @@ Enquanto estava em Bangkok, fui inspirado pela cidade e sua atmosfera a embarcar
 
 https://www.youtube.com/watch?v=EmBsWiML-2Y&embeds_referring_euri=https%3A%2F%2Fwww.notion.so%2F&source_ve_path=Mjg2NjY
 
-<rb-image zoom src="./images/retorno-para-a-arte-do-canvas-no-mundo-da-tecnologia/thisrt.webp" alt="visualização de camisetas pintadas" />
+<rb-image zoom src="./images/return-to-canvas-art-in-the-world-of-technology/t-shirt.webp" alt="visualização de camisetas pintadas" />
 
 ## Planos Futuros
 
