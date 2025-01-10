@@ -187,7 +187,7 @@
                   <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/intro-rwsFeature-1.png"/>
               </div>
               <h5>{{$t('RWS PubSub Message Broker')}}</h5>
-              {{$t('Use unlimited messaging over a p2p network based on IPFS protocol')}}
+              {{$t('Use unlimited messaging over a P2P network based on IPFS protocol')}}
             </div>
 
             <div>

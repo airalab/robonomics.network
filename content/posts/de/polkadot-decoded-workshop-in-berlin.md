@@ -33,6 +33,6 @@ Betrachten wir nun ein komplexeres Szenario aus der IoT-Welt. Angenommen du bist
 
 Im letzten Teil der Masterclass werden wir über Web3-Anwendungsszenarien im Bereich des IoT informieren. Du kannst dich mit diesen Szenarien vertraut machen und nach der Lektion versuchen dich selbst damit vertraut zu machen.
 
-## Wir laden alle ein, die sich für die Nutzung von web3-Technologien interessieren!
+## Wir laden alle ein, die sich für die Nutzung von Web3-Technologien interessieren!
 
 Um an der Masterclass teilnehmen zu können, benötigst du einen Laptop auf dem die [polkadot.js-Erweiterung](https://polkadot.js.org/extension/) installiert ist. Wir laden jedoch auch Zuhörer ein die mehr über den Einsatz von Polkadot in Szenarien aus der IoT- und Robotik-Welt erfahren möchten.

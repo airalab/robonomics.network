@@ -5,8 +5,8 @@ published: true
 locale: 'en'
 tags: ['Announcements']
 cover_image: ./images/otaberu-part-1/cover.png
-description: "The rapid growth in device numbers creates new challenges for availability and security. A more efficient solution is needed for secure device communication that addresses SSH-based PKI limitations. Robot-agent Otaberu offers this solution, enabling a custom PKI for robots using modern libp2p standards and protocols to resolve these issues."
-abstract: "The rapid growth in device numbers creates new challenges for availability and security. A more efficient solution is needed for secure device communication that addresses SSH-based PKI limitations. Robot-agent Otaberu offers this solution, enabling a custom PKI for robots using modern libp2p standards and protocols to resolve these issues."
+description: "The rapid growth in device numbers creates new challenges for availability and security. A more efficient solution is needed for secure device communication that addresses SSH-based PKI limitations. Robot-agent Otaberu offers this solution, enabling a custom PKI for robots using modern libP2P standards and protocols to resolve these issues."
+abstract: "The rapid growth in device numbers creates new challenges for availability and security. A more efficient solution is needed for secure device communication that addresses SSH-based PKI limitations. Robot-agent Otaberu offers this solution, enabling a custom PKI for robots using modern libP2P standards and protocols to resolve these issues."
 ---
 
 At the dawn of the computer era, multiple people used a single computer. Now, the number of devices around us is proliferating, and it's common for each person to have two, three, or more devices. Companies own hundreds or thousands of devices that form fleets, and soon, most people will have fleets of devices the size of small businesses today. As a result, there is a growing need for simple yet effective tools to secure communication between these devices, surpassing the limitations of traditional methods like SSH.
@@ -35,19 +35,19 @@ Otaberu aims to provide ordinary developers with the highest level of protection
 
 ### Network **Accessibility**
 
-In the article [Secure Robotics Remote Control: Robonomics Solution](https://robonomics.network/blog/secure-robotics-remote-control-via-web3/), we first touched upon the aspect of secure connection to robots, the problems that arise in the form of NAT, and what the web3 world can offer in this regard, where we briefly mentioned the libp2p library.
+In the article [Secure Robotics Remote Control: Robonomics Solution](https://robonomics.network/blog/secure-robotics-remote-control-via-web3/), we first touched upon the aspect of secure connection to robots, the problems that arise in the form of NAT, and what the Web3 world can offer in this regard, where we briefly mentioned the libP2P library.
 
-In general, libp2p is not exactly a library, as it is usually called. Its nature is twofold. On one hand, libp2p represents a so-called network stack or set of specifications. In this regard, it is more similar to the Internet rather than any specific software project.
+In general, libP2P is not exactly a library, as it is usually called. Its nature is twofold. On one hand, libP2P represents a so-called network stack or set of specifications. In this regard, it is more similar to the Internet rather than any specific software project.
 
-The legendary classic of the Open Source movement, creator of ZeroMQ Peter Hintjens, wrote in his book "Social Architecture": 
+The legendary classic of the open source movement, creator of ZeroMQ Peter Hintjens, wrote in his book "Social Architecture": 
 
 > The innovative nature of the Internet comes not from a small, select band of Einsteins. It comes from RFCs anyone can use and improve, made by hundreds and thousands of smart, though not uniquely smart, individuals. It comes from open-source software that anyone can use and improve. It comes from sharing, remixing, and scale of community. It comes from the continuous accretion of good solutions, and the disposal of bad ones.
 
-At the core of libp2p are various documents or specifications that standardize formats, protocols, and conventions, prescribing how various p2p technologies should work. The second aspect of libp2p, or the periphery of this stack, consists of libraries implementing these standards. These libraries are written in different programming languages (currently, implementations in Go, Rust, TypeScript, Nim, C++, Swift, Kotlin/JVM, Python exist and are actively developing) or frameworks. Still, they are all compatible with each other if they support the same set of standards and the protocol used.
+At the core of libP2P are various documents or specifications that standardize formats, protocols, and conventions, prescribing how various P2P technologies should work. The second aspect of libP2P, or the periphery of this stack, consists of libraries implementing these standards. These libraries are written in different programming languages (currently, implementations in Go, Rust, TypeScript, Nim, C++, Swift, Kotlin/JVM, Python exist and are actively developing) or frameworks. Still, they are all compatible with each other if they support the same set of standards and the protocol used.
 
-The carefully designed original architecture of libp2p allows the use of different transport options (tcp, quic, websocket), routing and NAT traversal (autonat, circuit-relay-v2, hole-punching), secure connection (tls, noise), node discovery (bootstrap, random-walk, mdns-discovery, rendezvous), message transmission protocols, data stream multiplexing, and other tools for creating peer-to-peer networks. Detailed information can be obtained on the [libp2p.io implementations page](https://libp2p.io/implementations/).
+The carefully designed original architecture of libP2P allows the use of different transport options (tcp, quic, websocket), routing and NAT traversal (autonat, circuit-relay-v2, hole-punching), secure connection (tls, noise), node discovery (bootstrap, random-walk, mdns-discovery, rendezvous), message transmission protocols, data stream multiplexing, and other tools for creating peer-to-peer networks. Detailed information can be obtained on the [libp2p.io implementations page](https://libP2P.io/implementations/).
 
-With the help of libp2p, otaberu simplifies device connectivity without complex network configurations. Devices without direct internet access can connect to other devices in the local area network and receive updates from the global network. By combining these technologies, this tool allows for the efficient self-organization of robots and edge devices into cohesive networks, regardless of whether they operate in the same physical space or are distributed globally.
+With the help of libP2P, otaberu simplifies device connectivity without complex network configurations. Devices without direct internet access can connect to other devices in the local area network and receive updates from the global network. By combining these technologies, this tool allows for the efficient self-organization of robots and edge devices into cohesive networks, regardless of whether they operate in the same physical space or are distributed globally.
 
 ## Use Cases
 
@@ -62,7 +62,7 @@ The capabilities of this tool are extensive, offering solutions to a variety of 
 We are actively working on expanding the functionality of this P2P tool:
 
 - **Access Control Lists (ACLs)**: Introducing user-based access controls to enable different levels of permissions. This will allow system administrators, developers, and end-users to interact with specific robots or functionalities according to their role.
-- **Optimized Data Streaming**: Implementing direct links after initial discovery through libp2p to enhance video streaming performance, optimizing the available bandwidth for video-heavy use cases.
+- **Optimized Data Streaming**: Implementing direct links after initial discovery through libP2P to enhance video streaming performance, optimizing the available bandwidth for video-heavy use cases.
 
 ### Stay Informed
 

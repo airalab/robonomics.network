@@ -31,7 +31,7 @@ Consideremos un escenario más complejo del mundo de IoT. Eres el administrador 
 
 ### Parte 4: Casos de Uso de Robonomics de Hoy y Mañana
 
-En la parte final de la clase magistral, hablaremos sobre escenarios de aplicaciones web3 en el campo de IoT que ya se han lanzado. Puede familiarizarse con estos escenarios e intentar interactuar con ellos por su cuenta después de que termine la lección.
+En la parte final de la clase magistral, hablaremos sobre escenarios de aplicaciones Web3 en el campo de IoT que ya se han lanzado. Puede familiarizarse con estos escenarios e intentar interactuar con ellos por su cuenta después de que termine la lección.
 
 ## Invitamos a todos los interesados en aprender sobre el uso de las Web3 Technologies!
 

@@ -105,7 +105,7 @@ Next, we will look at an example of architecture using multiple Polkadot paracha
 
 Consider an example of a truly decentralized Uber service.
 
-By implementing Uber Parachain, developers could focus on the rating system of drivers, the system for processing user requests in p2p mode, and other customer service issues, and not worry about the need to simultaneously support the IoT component of their applications — Robonomics will help with IoT. Uber Parachain will only need to integrate the Robobank pallet into its runtime in order to provide customer access to the car after payment and receive trip reports directly from the IoT modules of the car.
+By implementing Uber Parachain, developers could focus on the rating system of drivers, the system for processing user requests in P2P mode, and other customer service issues, and not worry about the need to simultaneously support the IoT component of their applications — Robonomics will help with IoT. Uber Parachain will only need to integrate the Robobank pallet into its runtime in order to provide customer access to the car after payment and receive trip reports directly from the IoT modules of the car.
 
 ### Let's have a look at the diagram above and highlight the important points:
 

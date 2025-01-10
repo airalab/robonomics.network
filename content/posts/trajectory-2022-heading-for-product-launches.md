@@ -10,9 +10,9 @@ tags: ['Roadmap', 'Use Cases']
 ---
 import Card from '~/components/TextCard.vue'
 
-The year 2021 ends and with it a 4-year cycle of studying the Polkadot technology and R&D work on the implementation of the Robonomics para chain. We want to devote the next year to the development of Robonomics as an already working infrastructure, focusing on the most viable web3 application scenarios in the area of the Internet of Things. In this context, the key thing is that we have the relevant experience and a team willing to devote their time to research development and more. 
+The year 2021 ends and with it a 4-year cycle of studying the Polkadot technology and R&D work on the implementation of the Robonomics para chain. We want to devote the next year to the development of Robonomics as an already working infrastructure, focusing on the most viable Web3 application scenarios in the area of the Internet of Things. In this context, the key thing is that we have the relevant experience and a team willing to devote their time to research development and more. 
 
-Next, I will try to tell you about the products that we plan to release so as to provide Robonomics users with web3 application scenarios for IoT, which are useful in everyday life.
+Next, I will try to tell you about the products that we plan to release so as to provide Robonomics users with Web3 application scenarios for IoT, which are useful in everyday life.
 
 ## Kusama – a network for connecting personal IoT infrastructure and start-up projects; Polkadot – for corporate
 
@@ -20,7 +20,7 @@ This is how we imagine the development of Robonomics as a parachain. We want to 
 
 !["Kusama and Polkadot plans"](./images/trajectory-2022-heading-for-product-launches/Kusama_Polkadot.jpg)
 
-Thus, users of Robonomics 2022 are the owners of home IoT infrastructure and start-up projects, which are interested in the possibilities of web3, and they are ready to trust something new :) 
+Thus, users of Robonomics 2022 are the owners of home IoT infrastructure and start-up projects, which are interested in the possibilities of Web3, and they are ready to trust something new :) 
 
 Further information on our plans for this user category, next year.
 
@@ -28,7 +28,7 @@ Further information on our plans for this user category, next year.
 
 During 2020, a basic architecture was developed for representing the parachain as a familiar cloud for IoT devices. Moving forward, part of the future infrastructure of Robonomics in a parachain format, will be called RWS.
 
-In 2021, numerous [experiments were conducted to connect popular smart home solutions to RWS services](https://youtu.be/H-w2FX-zd0M). Developers are now ready to provide a monthly subscription service for those who already use a home IoT infrastructure and would like to try web3-based services. 
+In 2021, numerous [experiments were conducted to connect popular smart home solutions to RWS services](https://youtu.be/H-w2FX-zd0M). Developers are now ready to provide a monthly subscription service for those who already use a home IoT infrastructure and would like to try Web3-based services. 
 
 Some of the specific actions we have completed, to connect a smart home controlled by the Kusama network, are as follows:
 
@@ -80,7 +80,7 @@ Merklebot's product team is preparing to launch an integration with Chilean tele
 
 ## Annex 1: contacting with the community
 
-Throughout the year the Robonomics custdev team conducted interviews with developers, professionals and experts from the fields of robotics, engineering, IoT and cloud technologies to get their point of view on web3, distributed technologies and understand the problems they face when developing software applications and technical solutions. We also collected feedback about Robonomics, and in which use cases our platform could be useful in the opinion of the respondents. Below we would like to share our findings based on these interviews.
+Throughout the year the Robonomics custdev team conducted interviews with developers, professionals and experts from the fields of robotics, engineering, IoT and cloud technologies to get their point of view on Web3, distributed technologies and understand the problems they face when developing software applications and technical solutions. We also collected feedback about Robonomics, and in which use cases our platform could be useful in the opinion of the respondents. Below we would like to share our findings based on these interviews.
 
 **Statistics by respondents:**
 
@@ -88,9 +88,9 @@ Throughout the year the Robonomics custdev team conducted interviews with develo
 * Geography: European countries (36%), India (22%), USA (19%), other countries (23%)
 * Areas of activity: ROS developers, robotics engineers, IoT engineers, startup founders, students and professors: Computer science, Robotics, Mechanical Engineering
 
-In general, robotic and IoT software developers still vaguely understand the concept of web3, or know about it, but do not use these technologies in their professional work. For some respondents, the idea of using blockchain and smart contracts to securely manage a network of devices was quite a surprise. Nevertheless, discussing the general problems of robotics, many developers have come to the same conclusions that we have come to: for the full-scale implementation of robotic devices in the future, the question of their reliable authentication will inevitably arise. Web3 technologies can be a possible solution, which, moreover, will make it possible to democratize and decentralize access to robots for all of humanity.
+In general, robotic and IoT software developers still vaguely understand the concept of Web3, or know about it, but do not use these technologies in their professional work. For some respondents, the idea of using blockchain and smart contracts to securely manage a network of devices was quite a surprise. Nevertheless, discussing the general problems of robotics, many developers have come to the same conclusions that we have come to: for the full-scale implementation of robotic devices in the future, the question of their reliable authentication will inevitably arise. Web3 technologies can be a possible solution, which, moreover, will make it possible to democratize and decentralize access to robots for all of humanity.
 
-Overall, the responses highlight the idea that the manufacturing industry wants to change its old business model, but does not yet know how to do it painlessly. Several specialists from B2B industries in interviews noted that large companies, on the one hand, are worried about the reliability of IoT connectivity through conventional networks, but on the other hand, they are not yet ready for web3 solutions as an alternative. The respondents were advised to demonstrate streamlined use cases that provide more profitable and less costly security than current, centralized solutions. A niche is open here for solutions like Robonomics, and according to one respondent, the motto “be robotically capable, but human readable” is a good approach to disseminate our ideas. The main obstacle was most often called the legal nuances of blockchains and cryptocurrencies, as well as the fact that we propose to preserve the confidentiality of data sent by user devices, which may contradict the business models of some companies.
+Overall, the responses highlight the idea that the manufacturing industry wants to change its old business model, but does not yet know how to do it painlessly. Several specialists from B2B industries in interviews noted that large companies, on the one hand, are worried about the reliability of IoT connectivity through conventional networks, but on the other hand, they are not yet ready for Web3 solutions as an alternative. The respondents were advised to demonstrate streamlined use cases that provide more profitable and less costly security than current, centralized solutions. A niche is open here for solutions like Robonomics, and according to one respondent, the motto “be robotically capable, but human readable” is a good approach to disseminate our ideas. The main obstacle was most often called the legal nuances of blockchains and cryptocurrencies, as well as the fact that we propose to preserve the confidentiality of data sent by user devices, which may contradict the business models of some companies.
 
 Among the most frequent mentions in the stories of respondents was the problem of the high cost and complexity of deploying robotic solutions. Our common conclusion with the respondents was that the application of the concept of “robot-as-a-service” and smart leasing can make IoT and robots more accessible. 
 
@@ -114,7 +114,7 @@ During an interview with Kapil, it turned out that we came to the same ideas in 
 
 **Occupation:** Software Developer; **Experience:** ROS with different robots — PAL Robotics TIAGo, KUKA youBot, MiR100, UR5, Jackal UGV, Turtlebot3, Parrot Bebop2.
 
-The interview with Houman is a case where an engineer deeply immersed in robotics, mentioned in [the article](https://blog.ut.ee/robotics-wizard/) as a “robotics wizard”, became interested in the possibility of using web3 for robots. After several interviews, Houman became so interested in our project that he has become a full-fledged Robonomics tutor. He is currently supervising our wiki with meaningful comments on its structure and reviewing the quality of guides and video tutorials. 
+The interview with Houman is a case where an engineer deeply immersed in robotics, mentioned in [the article](https://blog.ut.ee/robotics-wizard/) as a “robotics wizard”, became interested in the possibility of using Web3 for robots. After several interviews, Houman became so interested in our project that he has become a full-fledged Robonomics tutor. He is currently supervising our wiki with meaningful comments on its structure and reviewing the quality of guides and video tutorials. 
 
 </Card>
 

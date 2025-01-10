@@ -40,7 +40,7 @@ published: true # the status of the post (if `false` it won't be visible)
 locale: 'en' # locale in which the post was published
 tags: ['Digital Twin', 'Web3', 'Philosophy of Robonomics'] # tags to use on blog and filter posts
 cover_image: ./images/digital-twins-introduction/cover.png # cover image
-description: "Digital twins are a powerful concept in modern technology. This guide will introduce you to the basics of digital twins, covering their history, types, current industry standards, and potential applications in web3. Whether you're new to the topic or looking to refresh your knowledge, this concise overview will provide valuable insights." # description of the post
+description: "Digital twins are a powerful concept in modern technology. This guide will introduce you to the basics of digital twins, covering their history, types, current industry standards, and potential applications in Web3. Whether you're new to the topic or looking to refresh your knowledge, this concise overview will provide valuable insights." # description of the post
 abstract: "Digital twins are not a new concept; they emerged in the early 1990s and have since periodically captured the attention of researchers, engineers, and founders. Now, in 2024, digital twins are again in the spotlight—since 2016, according to Google Trends, interest in them has steadily grown. We believe it's important to familiarize readers with this concept, as the term is often interpreted loosely, making it challenging to understand. Igor Brylev [movefasta]" # abstract that will be added atop of the post page (not necessary)
 translated: true # add this parameter if you translated the post by yourself and did not use AI.
 ---
