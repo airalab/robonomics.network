@@ -28,7 +28,8 @@
       </div>
     </section>
 
-    <p class="abstract layout layout__text" v-if="$page.post.abstract">{{$page.post.abstract}}</p>
+    <p class="abstract layout layout__text" :class="{'space-b-05': $page.post.abstractAuthor}" v-if="$page.post.abstract">{{$page.post.abstract}}</p>
+    <b class="abstract layout layout__text" v-if="$page.post.abstractAuthor"> {{ $page.post.abstractAuthor }}</b>
 
     <g-image v-if="$page.post.cover_image" :src="$page.post.cover_image" aria-hidden="true" class="poster" />
 
@@ -63,7 +64,8 @@ query($id: ID!) {
     date (format: "MMMM D, YYYY")
     content
     related
-    abstract
+    abstract,
+    abstractAuthor
     locale
     tags {
       id
@@ -138,6 +140,10 @@ query($id: ID!) {
     line-height: 1.75;
   }
 
+  html[lang="ar"] .post {
+    text-align: right;
+  }
+
   .postpage h1, .post h2, .post h3, .post h4, .post h5 {
     font-family: var(--font-family);
     font-weight: 800;
@@ -147,6 +153,10 @@ query($id: ID!) {
   .post h2, .post h3, .post h4, .post h5 {
     text-align: left !important;
     hyphens: initial;
+  }
+
+  html[lang="ar"] .post h2, html[lang="ar"] .post h3, html[lang="ar"] .post h4, html[lang="ar"] .post h5 {
+    text-align: right !important;
   }
 
   .post .big-table {
