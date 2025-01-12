@@ -57,6 +57,25 @@
       return {
         bookGateway: '',
         books: [
+          {
+            title: this.$t("Almanac"),
+            img: 'docs-book-2024-2025.webp',
+            year:'2024>>2025',
+            options: [
+              {
+                text: 'EN',
+                id: 0,
+                static: 'https://static.robonomics.network/docs/book-2024-2025/Robonomics.network-Almanac-2024-en.pdf',
+                name: 'book2024-2025en'
+              },
+              {
+                text: 'RU',
+                id: 1,
+                static: 'https://static.robonomics.network/docs/book-2024-2025/Robonomics.network-Almanac-2024-ru.pdf',
+                name: 'book2024-2025ru'
+              }
+            ]
+          },
         {
             title: this.$t("Robonomics R&D"),
             img: 'docs-book-5.png',

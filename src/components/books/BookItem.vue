@@ -1,7 +1,6 @@
 <template>
   <li class="e-books__item">
-
-    <g-link class="e-books__img" :to="gateway + book.options[0].link">
+    <g-link class="e-books__img" :to="booksLinks[book.options[0].name] || '#'">
       <g-image :src="require('!!assets-loader!~/assets/images/'+book.img)" quality="75"/>
     </g-link>
 
@@ -114,7 +113,7 @@ export default {
 
   async mounted() {
     // getting valid link for all book options
-    await this.resolveLinks(); 
+    await this.resolveLinks();
   }
 
 }
