@@ -1,6 +1,6 @@
 <template>
   <li class="e-books__item">
-    <g-link class="e-books__img" :to="booksLinks[book.options[0].name] || '#'">
+    <g-link class="e-books__img" :to="booksLinks[book.options[0].name] || book.options[0].static">
       <g-image :src="require('!!assets-loader!~/assets/images/'+book.img)" quality="75"/>
     </g-link>
 
