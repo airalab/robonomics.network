@@ -322,7 +322,24 @@ export default {
           // use lowerCase
           tags: ['ethereum', 'smart service'],
           done: false
-        }
+        },
+        {
+          id: 15,
+          title: this.$t('Tokenization of Data of IOT devices'),
+          description: 'The tokenization of data from IoT (Internet of Things) devices represents a groundbreaking development in the digital economy.',
+          path: 'cases/tokenization',
+          cover_image: 'tokenization.webp',
+          // progress field needs for "sort by progress" filter
+          progress: 'complete',
+          // created field needs for "sort by date" filter (for earliest option)
+          created: '2019-05-15',
+          // updated field needs for "sort by date" filter (for recent option)
+          updated: '2020-04-18',
+          // tags field needs for "sort by interest" filter
+          // use lowerCase
+          tags: ['ethereum'],
+          done: true
+        },
       ]
     }
   },
@@ -357,6 +374,11 @@ export default {
     text-transform: unset;
     text-align: left;
   }
+
+  img {
+    width: 100%;
+  }
+  
   .case-page__header-info {
     display: flex;
     align-items: center;
