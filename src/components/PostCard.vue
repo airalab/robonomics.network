@@ -134,7 +134,7 @@ export default {
       align-items: center;
       position: absolute;
       bottom: 20px;
-      width: 92%;
+      width: 88%;
     }
 
     .post-card__status {

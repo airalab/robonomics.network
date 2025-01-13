@@ -62,12 +62,12 @@
 
 
       <ul v-if="filteredCases.length > 0" class="layout blog_grid text-center cases__wrapper list-simple">
-        <li class="cases__item" v-for="caseR in filteredCases"
-        :key="caseR.id"> 
+        <li class="cases__item" v-for="caseItem in filteredCases"
+        :key="caseItem.id"> 
           <PostCard 
-            :post="caseR" 
+            :class="{'in-progress': !caseItem.done}"
+            :post="caseItem" 
             :isCase="true"
-            :class="{'in-progress': !caseR.done}"
           />
         </li>
       </ul>
@@ -367,7 +367,24 @@ export default {
           // use lowerCase
           tags: ['ethereum', 'smart service'],
           done: false
-        }
+        },
+        {
+          id: 15,
+          title: this.$t('Tokenization of Data of IOT devices'),
+          description: 'The tokenization of data from IoT (Internet of Things) devices represents a groundbreaking development in the digital economy.',
+          path: 'cases/tokenization',
+          cover_image: 'tokenization.webp',
+          // progress field needs for "sort by progress" filter
+          progress: 'complete',
+          // created field needs for "sort by date" filter (for earliest option)
+          created: '2019-05-15',
+          // updated field needs for "sort by date" filter (for recent option)
+          updated: '2020-04-18',
+          // tags field needs for "sort by interest" filter
+          // use lowerCase
+          tags: ['ethereum'],
+          done: true
+        },
       ]
     }
   },
