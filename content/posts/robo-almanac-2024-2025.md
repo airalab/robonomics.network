@@ -15,21 +15,25 @@ This publication captures the key outcomes of the past year and offers an inspir
 Each issue serves as a guide to the cutting edge of modern internet technologies and robotics. The 2024 review features the most exciting events, achievements, and inspiring stories:
 
 - **Hardware for Cyberpunks — Technology for the People:**
-In 2024, Robonomics introduced new hardware solutions that make Web3 accessible to everyone. Our focus was on open-source smart devices, such as energy monitors, air quality sensors, and autonomous servers for smart homes.
-
+    
+    In 2024, Robonomics introduced new hardware solutions that make Web3 accessible to everyone. Our focus was on open-source smart devices, such as energy monitors, air quality sensors, and autonomous servers for smart homes.
+    
 - **JohnnyB’s Lab:**
-Expanding the lineup of robots and elevating experiments to new levels, the lab welcomed:
-- **TurtleBot 4** — a mobile platform with computer vision.
-- **Mini Pupper (versions 1 and 2)** — four-legged robots integrated with Web3.
-- **Unitree G1 Humanoid** — an experimental platform for studying human-robot interaction in the Web3 world.
-We don’t just develop robots — we teach them to thrive in the Web3 ecosystem. Read how our experiments transform robotics into decentralized agents ready for real-world tasks.
-
+    
+    Expanding the lineup of robots and elevating experiments to new levels, the lab welcomed:
+    
+    - **TurtleBot 4** — a mobile platform with computer vision.
+    - **Mini Pupper** (versions 1 and 2) — four-legged robots integrated with Web3.
+    - **myBuddy 280** — a two-armed robot ideal for multi-agent tasks.
+    - **Unitree G1 Humanoid** — an experimental platform for studying human-robot interaction in the Web3 world.
+    We don’t just develop robots — we teach them to thrive in the Web3 ecosystem. Read how our experiments transform robotics into decentralized agents ready for real-world tasks.
 - **G.E.C.K. Project: The Smart Home of the Future in Bali**
-An experiment in creating a future home on the island of Bali, where all management systems are built on Web3 technologies.
-
-**Key idea:** integrating physical objects with Web3 to create autonomous homes that offer comfort, sustainability, and independence from centralized systems anywhere in the world.
-
-The G.E.C.K. project is more than an experiment; it’s a significant step toward building homes that embody Web3 philosophy: freedom, autonomy, and sustainability.
+    
+    An experiment in creating a future home on the island of Bali, where all management systems are built on Web3 technologies.
+    
+    **Key idea:** integrating physical objects with Web3 to create autonomous homes that offer comfort, sustainability, and independence from centralized systems anywhere in the world.
+    
+    The G.E.C.K. project is more than an experiment; it’s a significant step toward building homes that embody Web3 philosophy: freedom, autonomy, and sustainability.
 
 - **Web3 Innovations and Success Stories:**
     - **Smart Home Automation and Pinout's Achievements:** One of the year's highlights was smart home automation with integration into decentralized networks. Special attention is given to **Pinout**, a smart home integrator in Cyprus.
