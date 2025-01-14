@@ -63,11 +63,11 @@
 
       <ul v-if="filteredCases.length > 0" class="layout blog_grid text-center cases__wrapper list-simple">
         <li class="cases__item" v-for="caseItem in filteredCases"
-        :key="caseItem.id"> 
+        :key="caseItem.id">  
           <PostCard 
             :class="{'in-progress': !caseItem.done}"
             :post="caseItem" 
-            :isCase="true"
+            :isCase="true" 
           />
         </li>
       </ul>
@@ -90,8 +90,9 @@
 
 <script>
 
+import items from '@/data/cases.js'
+
 export default {
-  
 
   components: {
     MetaInfo: () => import('~/components/MetaInfo.vue'),
@@ -102,297 +103,19 @@ export default {
     return {
       caseDate: 'recent',
       caseProgress: 'any progress',
-      // currTag: 'all',
       currTags: [],
       tags: ['all', 'smart home', 'carbon footprint offsetting', 'robotics', 'ethereum', 'polkadot ecosystem', 'sensors', 'data storage', 'smart service'],
       currentPage: 1,
       visible: 9,
       showNext: 3,
       tagsArrayLength: null,
-      cases: [
-        {
-          id: 0,
-          title: this.$t('Fronius Solar.web integration with Home Assistant'),
-          description: this.$t('Collaboration with real estate developer on Cyprus for tracking the daily distribution, consumption and offsetting any excess carbon footprint.'),
-          path: 'cases/fronius-solar-web',
-          cover_image: 'fronius-solar-web.png',
-          metaImg: '/website_cover_fronius_solar_web.png',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2022-12-31',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2023-07-14',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['smart home', 'carbon footprint offsetting'],
-          done: true
-        },
-        {
-          id: 1,
-          title: this.$t('Robonomics Middleware Framework for ROS 2'),
-          description: this.$t('One of our goals in developing this case is to turn Robonomics into ROS 2 Middleware.This will allow us to use Robonomics on Substrate to create an dapp that can run ROS 2 right from the browser!'),
-          path: 'cases/rust-for-ros2',
-          cover_image: 'rust-ros2.jpg',
-          metaImg: '/website_cover_rust_ros2.png',
-          // progress field needs for "sort by progress" filter
-          progress: 'proceeding',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2022-08-08',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2023-07-12',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['robotics'],
-          done: true
-        },
-        {
-          id: 2,
-          title: this.$t('Eisenkoch, the robot chef'),
-          description: this.$t('Real case fot the robot equipped with two waffle irons and baking 6 waffles at the same time in 5-7 minutes.'),
-          path: 'cases/eisenkoch',
-          cover_image: 'eisenkoch.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2022-03-27',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2023-03-27',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['robotics', 'polkadot ecosystem', 'smart service'],
-          done: false
-        },
-        {
-          id: 3,
-          title: this.$t('Blockchain-powered smart coffee machine'),
-          description: this.$t('Robonomics coffee - is a smart coffee machine integrated in Robonomics Network. This project aims to show Robonomics potential in the IoT sphere by a real-world example.'),
-          path: 'cases/blockchain-coffee-machine',
-          cover_image: 'blockchain-coffee.jpg',
-          metaImg: '/website_cover_coffee-machine.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2022-02-11',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2023-02-11',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['smart service', 'polkadot ecosystem'],
-          done: true
-        },
-        {
-          id: 4,
-          title: this.$t('Water environmental inspector'),
-          description: '',
-          path: 'cases/water-inspector',
-          cover_image: 'water-inspector.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2022-01-16',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2023-01-16',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['robotics', 'polkadot ecosystem', 'sensors', 'data storage'],
-          done: false
-        },
-        {
-          id: 5,
-          title: this.$t('Air monitoring network'),
-          description: '',
-          path: 'cases/air-monitoring-network',
-          cover_image: 'air-monitoring.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'proceeding',
-          // created field needs for "sort by date" filter (for earliest option)
-          // created: '2022-01-03'
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2023-01-03',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['polkadot ecosystem', 'sensors', 'data storage'],
-          done: false
-        },
-        {
-          id: 6,
-          title: this.$t('Production quality control platform “Feecc”'),
-          description: '',
-          path: 'cases/quality-control-platform-feecc',
-          cover_image: 'feecc.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'proceeding',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2021-05-06',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2022-05-06',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['polkadot ecosystem', 'data storage', 'smart service'],
-          done: false
-        },
-        {
-          id: 7,
-          title: this.$t('Backup and archiving service for robotics companies'),
-          description: '',
-          path: 'cases/quality-control-platform-feecc',
-          cover_image: 'robotic-companies.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2021-04-18',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2022-04-18',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['robotics', 'polkadot ecosystem', 'data storage'],
-          done: false
-        },
-        {
-          id: 8,
-          title: this.$t('Public lab with Boston Dynamics Spot'),
-          description: '',
-          path: 'cases/quality-control-platform-feecc',
-          cover_image: 'spot.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'proceeding',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2021-11-05',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2022-11-05',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['robotics', 'polkadot ecosystem', 'ethereum', 'smart service'],
-          done: false
-        },
-        {
-          id: 9,
-          title: this.$t('Autonomous telescope service'),
-          description: '',
-          path: 'cases/quality-control-platform-feecc',
-          cover_image: 'telescope.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2022-06-02',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2022-12-17',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['robotics', 'polkadot ecosystem', 'smart service'],
-          done: false
-        },
-        {
-          id: 10,
-          title: this.$t('Smart home secure remote control and backup service'),
-          description: '',
-          path: 'cases/quality-control-platform-feecc',
-          cover_image: 'smart-home.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'proceeding',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2021-01-21',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2023-02-15',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['polkadot ecosystem', 'smart home', 'data storage'],
-          done: false
-        },
-        {
-          id: 11,
-          title: this.$t('Blockchain as quality control system for chemistry'),
-          description: '',
-          path: 'cases/quality-control-platform-feecc',
-          cover_image: 'blockchain-chemistry.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2020-12-09',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2022-10-15',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['ethereum', 'smart service', 'data storage'],
-          done: false
-        },
-        {
-          id: 12,
-          title: this.$t('Real CO2 emissions reduction with blockchain-proven certificates'),
-          description: '',
-          path: 'cases/quality-control-platform-feecc',
-          cover_image: 'emissions.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2020-08-22',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2021-04-11',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['ethereum', 'smart service', 'carbon footprint offsetting'],
-          done: false
-        },
-        {
-          id: 13,
-          title: this.$t('Robot-artist Gaka-Chu'),
-          description: '',
-          path: 'cases/quality-control-platform-feecc',
-          cover_image: 'gakachu.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2020-03-19',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2021-05-06',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['ethereum', 'smart service'],
-          done: false
-        },
-        {
-          id: 14,
-          title: this.$t('Demo “Get the weather of Fuji mountain”'),
-          description: '',
-          path: 'cases/quality-control-platform-feecc',
-          cover_image: 'fuji.jpg',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2020-02-17',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2021-03-17',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['ethereum', 'smart service'],
-          done: false
-        },
-        {
-          id: 15,
-          title: this.$t('Tokenization of Data of IOT devices'),
-          description: 'The tokenization of data from IoT (Internet of Things) devices represents a groundbreaking development in the digital economy.',
-          path: 'cases/tokenization',
-          cover_image: 'tokenization.webp',
-          // progress field needs for "sort by progress" filter
-          progress: 'complete',
-          // created field needs for "sort by date" filter (for earliest option)
-          created: '2019-05-15',
-          // updated field needs for "sort by date" filter (for recent option)
-          updated: '2020-04-18',
-          // tags field needs for "sort by interest" filter
-          // use lowerCase
-          tags: ['ethereum'],
-          done: true
-        },
-      ]
     }
   },
 
   computed: {
-    // cases() {
-    //   return cases;
-    // },
+    cases() {
+      return items.cases
+    },
 
     filteredCases() {
       let filtered = [];
@@ -422,11 +145,7 @@ export default {
         }
 
       return this.currentPage === 1 ? filtered.slice(0, this.currentPage * this.visible) : filtered.slice(0, this.showNext * (this.currentPage - 1) + this.visible)
-    },
-
-    // totalPages() {
-    //     return Math.ceil(this.cases.length / this.visible)
-    // }
+    }
   },
 
   methods: {
@@ -463,9 +182,7 @@ export default {
     },
 
     nextPage() {
-      console.log(this.currentPage)
       if(this.filteredCases.length !== this.cases.length) this.currentPage++;
-      // if(this.currentPage < this.totalPages) this.currentPage++;
     }
   },
 
@@ -613,6 +330,7 @@ export default {
     font-weight: 400;
     color: var(--color-dark);
     background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.33224 8.75071C6.93646 9.34483 6.06354 9.34483 5.66776 8.75072L1.04032 1.80442C0.597597 1.13984 1.07402 0.25 1.87256 0.25L11.1274 0.25C11.926 0.25 12.4024 1.13984 11.9597 1.80442L7.33224 8.75071Z' fill='black'/%3E%3C/svg%3E");
+    background-size: 14px;
   }
   .btn-show-more {
     position: relative;

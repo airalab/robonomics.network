@@ -138,8 +138,8 @@ export default {
     }
 
     .post-card__status {
-      width: 22px;
-      height: 22px;
+      width: 40px;
+      height: 25px;
       background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='%23D9E021'/%3E%3Cg clip-path='url(%23clip0_476_905)'%3E%3Cpath d='M15.812 8.176C16.0631 8.41034 16.0631 8.7909 15.812 9.02524L10.6697 13.8245C10.4186 14.0588 10.0109 14.0588 9.75978 13.8245L7.18864 11.4249C6.93755 11.1905 6.93755 10.81 7.18864 10.5756C7.43972 10.3413 7.84749 10.3413 8.09858 10.5756L10.2158 12.5497L14.9039 8.176C15.155 7.94166 15.5627 7.94166 15.8138 8.176H15.8118H15.812Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_476_905'%3E%3Crect width='9' height='6' fill='white' transform='translate(7 8)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: right;
