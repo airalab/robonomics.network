@@ -95,6 +95,18 @@
   component: './src/pages/cases/rust-for-ros2.vue'
   typename: 'page'
 
+- path: '/cases/tokenization'
+  component: './src/pages/cases/tokenization.vue'
+  typename: 'page'
+
+- path: '/cases/the-weather-of-fuji'
+  component: './src/pages/cases/the-weather-of-fuji.vue'
+  typename: 'page'
+
+- path: '/cases/digital-markets-for-robots'
+  component: './src/pages/cases/digital-markets-for-robots.vue'
+  typename: 'page'
+
 
 
 # all devices go here 
