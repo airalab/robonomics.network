@@ -294,6 +294,23 @@ export default {
       // use lowerCase
       tags: ['ethereum'],
       done: true
+    },
+    {
+      id: 17,
+      title: t('Industrial zone management with capital'),
+      description: t('This case explores the role of smart factories in responding to capital shifts in modern markets. As part of the Industry 4.0 transformation, it introduces a decentralized communication protocol using cyber-physical systems to improve economic coordination among industrial agents.'),
+      path: 'cases/industrial-zone-management-with-capital',
+      cover_image: 'industrial-zone-management.webp',
+      // progress field needs for "sort by progress" filter
+      progress: 'complete',
+      // created field needs for "sort by date" filter (for earliest option)
+      created: '2019-05-15',
+      // updated field needs for "sort by date" filter (for recent option)
+      updated: '2020-07-08',
+      // tags field needs for "sort by interest" filter
+      // use lowerCase
+      tags: ['ethereum'],
+      done: false
     }
   ]
 }

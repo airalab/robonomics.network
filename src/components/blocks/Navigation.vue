@@ -20,7 +20,7 @@
       <li><g-link aria-label="wallpapers" to="/wallpapers/">{{ $t('Wallpapers') }}</g-link></li>
       <li><g-link aria-label="Home assistant themes" to="/home-assistant-themes/">{{ $t('Home assistant themes') }}</g-link></li>
       <li><g-link aria-label="Robonomics NFT" to="/nft/">{{ $t('NFT') }}</g-link></li>
-      <li><g-link aria-label="books" to="/books/">{{ $t('Books & reading inspiration') }}</g-link></li>
+      <li><g-link aria-label="books" to="/books/">{{ $t('Books') }}</g-link></li>
       <li><g-link aria-label="blog" to="/blog/">{{ $t('Blog') }}</g-link></li>
       <li><g-link aria-label="contact us" to="/contact/">{{ $t('Contacts') }}</g-link></li>
     </ul>
