@@ -107,6 +107,22 @@
   component: './src/pages/cases/digital-markets-for-robots.vue'
   typename: 'page'
 
+- path: '/cases/industrial-zone-management-with-capital'
+  component: './src/pages/cases/industrial-zone-management-with-capital.vue'
+  typename: 'page'
+
+- path: '/cases/mars-colonization'
+  component: './src/pages/cases/mars-colonization.vue'
+  typename: 'page'
+
+- path: '/cases/negotiating-road-space'
+  component: './src/pages/cases/negotiating-road-space.vue'
+  typename: 'page'
+
+- path: '/cases/service-for-robotics-companies'
+  component: './src/pages/cases/service-for-robotics-companies.vue'
+  typename: 'page'
+
 
 
 # all devices go here 

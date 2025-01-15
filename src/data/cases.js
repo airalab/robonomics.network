@@ -128,8 +128,8 @@ export default {
     {
       id: 7,
       title: t('Backup and archiving service for robotics companies'),
-      description: '',
-      path: 'cases/quality-control-platform-feecc',
+      description: t('In 2022, the Robonomics team began collaborating with other parachain teams within the Polkadot ecosystem to leverage the unique strengths of this decentralized network. This collaboration resulted in the launch of a Backup and Data Archiving Service designed specifically for robotics companies.'),
+      path: 'cases/service-for-robotics-companies',
       cover_image: 'robotic-companies.jpg',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
@@ -140,7 +140,7 @@ export default {
       // tags field needs for "sort by interest" filter
       // use lowerCase
       tags: ['robotics', 'polkadot ecosystem', 'data storage'],
-      done: false
+      done: true
     },
     {
       id: 8,
@@ -255,7 +255,7 @@ export default {
       // created field needs for "sort by date" filter (for earliest option)
       created: '2020-05-15',
       // updated field needs for "sort by date" filter (for recent option)
-      updated: '2021-04-18',
+      updated: '2021-04-08',
       // tags field needs for "sort by interest" filter
       // use lowerCase
       tags: ['robotics', 'ethereum', 'polkadot ecosystem', 'smart service'],
@@ -304,13 +304,47 @@ export default {
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
-      created: '2019-05-15',
+      created: '2020-05-15',
       // updated field needs for "sort by date" filter (for recent option)
-      updated: '2020-07-08',
+      updated: '2021-07-08',
       // tags field needs for "sort by interest" filter
       // use lowerCase
-      tags: ['ethereum'],
-      done: false
+      tags: ['robotics', 'ethereum', 'polkadot ecosystem', 'smart service'],
+      done: true
+    },
+    {
+      id: 18,
+      title: t('Mars colonization, impossible without kusama'),
+      description: t("This R&D case explores the role of Kusama network's decentralized infrastructure in supporting interplanetary missions, particularly Mars colonization."),
+      path: 'cases/mars-colonization',
+      cover_image: 'mars-colonization.webp',
+      // progress field needs for "sort by progress" filter
+      progress: 'complete',
+      // created field needs for "sort by date" filter (for earliest option)
+      created: '2020-05-15',
+      // updated field needs for "sort by date" filter (for recent option)
+      updated: '2021-07-08',
+      // tags field needs for "sort by interest" filter
+      // use lowerCase
+      tags: ['robotics', 'polkadot ecosystem', 'data storage', 'sensors'],
+      done: true
+    },
+    {
+      id: 18,
+      title: t('A decentralized system for negotiating road space'),
+      description: t('Our goal was to develop a decentralized system for negotiating road space where autonomous vehicles can pay for routes and permissions.'),
+      path: 'cases/negotiating-road-space',
+      cover_image: 'road-space.webp',
+      // progress field needs for "sort by progress" filter
+      progress: 'complete',
+      // created field needs for "sort by date" filter (for earliest option)
+      created: '2021-02-11',
+      // updated field needs for "sort by date" filter (for recent option)
+      updated: '2021-11-05',
+      // tags field needs for "sort by interest" filter
+      // use lowerCase
+      tags: ['robotics', 'ethereum', 'polkadot ecosystem', 'smart service'],
+      done: true
     }
   ]
 }
