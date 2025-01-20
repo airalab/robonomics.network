@@ -21,13 +21,6 @@ module.exports = function (api) {
 
   })
 
-  api.configureServer(app => {
-    app.use("/api", proxy({
-        target: 'https://api.unisender.com/ru/',
-        changeOrigin: true 
-    }))
-  })
-
   api.loadSource(async (actions) => {
 
       const collection = actions.getCollection('Post');
