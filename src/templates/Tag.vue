@@ -11,10 +11,7 @@
       <section class="layout blog_grid">
         <PostCard v-for="edge in postList" :key="edge.node.id" :post="edge.node"/>
       </section>
-      
-      <!-- <Pagination class="pagination" 
-        :pageInfo="$page.TagPosts.belongsTo.pageInfo"
-      /> -->
+    
   </layout>
 </template>
 
