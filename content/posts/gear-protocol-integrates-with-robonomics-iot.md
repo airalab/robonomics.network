@@ -31,4 +31,4 @@ The code has been tested using a basic scenario where the Hikikomori device send
 
 This innovative project allows you to engage with your digital pet in ways that blend automation, IoT, and blockchain, creating a fun and meaningful addition to your smart home.
 
-**Find out more about Gear at gear-tech.io and Vara at vara.network**
+**Find out more about Gear at [gear-tech.io](https://gear-tech.io) and Vara at [vara.network](https://vara.network)**

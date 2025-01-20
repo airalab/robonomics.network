@@ -31,4 +31,4 @@ Il codice è stato testato utilizzando uno scenario di base in cui il dispositiv
 
 Questo progetto innovativo ti permette di interagire con il tuo animale domestico digitale in modi che uniscono automazione, IoT e blockchain, creando un'aggiunta divertente e significativa al tuo smart home.
 
-**Scopri di più su Gear su gear-tech.io e su Vara su vara.network**
+**Scopri di più su Gear su [gear-tech.io](https://gear-tech.io) e su Vara su [vara.network](https://vara.network)**
