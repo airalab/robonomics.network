@@ -12,9 +12,9 @@
         <PostCard v-for="edge in postList" :key="edge.node.id" :post="edge.node"/>
       </section>
       
-      <Pagination class="pagination" 
+      <!-- <Pagination class="pagination" 
         :pageInfo="$page.TagPosts.belongsTo.pageInfo"
-      />
+      /> -->
   </layout>
 </template>
 
@@ -65,7 +65,6 @@ export default {
   components: {
     MetaInfo: () => import('~/components/MetaInfo.vue'),
     PostCard: () => import('~/components/PostCard.vue'),
-    Pagination: () => import('~/components/blocks/Pagination.vue'),
     BlogTagsBanner: () => import('~/components/blocks/BlogTagsBanner.vue')
   },
 
