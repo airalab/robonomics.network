@@ -25,11 +25,11 @@ Existen tres métodos comunes de control de acceso para computadoras. El primero
 
 Otaberu tiene como objetivo proporcionar a los desarrolladores comunes el más alto nivel de protección sin desplegar servicios complejos de gestión de secretos y profundos conocimientos de redes. La herramienta permite la creación de un análogo de una CA (Autoridad de Certificación) basado en las claves criptográficas del propietario de la flota de robots. El papel de la CA en otaberu lo desempeña el propietario, el primer y clave papel en el conjunto de funciones de otaberu. El propietario posee un único archivo de configuración para su flota de robots, a través del cual se lleva a cabo la gestión de accesos. Allí, el propietario enumera todos sus robots, sus claves y metadatos, y los usuarios autorizados para conectarse a ellos. Nuestro equipo también ha desarrollado una utilidad de línea de comandos llamada rn-cli para crear y editar el archivo de configuración utilizando una interfaz de terminal. La capacidad de lanzar una interfaz de terminal es especialmente significativa para dispositivos sin pantalla gráfica, como computadoras remotas o de placa única con recursos limitados.
 
-<rb-image zoom src="./imágenes/otaberu-part-1/otaberu-tui-1.png" alt="Interfaz de Usuario Otaberu TUI" />  
+<rb-image zoom src="./images/otaberu-part-1/otaberu-tui-1.png" alt="Interfaz de Usuario Otaberu TUI" />  
 
 *Interfaz de Usuario de Terminal - Usuarios*
 
-<rb-image zoom src="./imágenes/otaberu-part-1/otaberu-tui-2.png" alt="Interfaz de Robots Otaberu TUI" />  
+<rb-image zoom src="./images/otaberu-part-1/otaberu-tui-2.png" alt="Interfaz de Robots Otaberu TUI" />  
 
 *Interfaz de Usuario de Terminal - Robots*
 
