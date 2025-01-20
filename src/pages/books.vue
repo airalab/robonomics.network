@@ -63,14 +63,14 @@
             year:'2024>>2025',
             options: [
               {
-                // link: 'QmebSPtuUDn7ws6FGHMQkToXGumQFnC42Ws9uXRsF2FR3s',
+                link: 'QmZhbgDPFXbZUb419zt6firGHGcRTF1Bu6BsK7qTKsffQh',
                 text: 'EN',
                 id: 0,
                 static: 'https://static.robonomics.network/docs/book-2024-2025/Robonomics.network-Almanac-2024-en.pdf',
                 name: 'book2024-2025en'
               },
               {
-                // link: 'QmbSGYsHbmezJuDPk62euQNkuEUVTKTMJRcaKyCswpVMhT',
+                link: 'QmSQZsMLfBCYPAXKHGGbzH5U56W3v5RZt55hbBnG8qEmL9',
                 text: 'RU',
                 id: 1,
                 static: 'https://static.robonomics.network/docs/book-2024-2025/Robonomics.network-Almanac-2024-ru.pdf',

@@ -31,4 +31,4 @@ Hikikomoriプロジェクトは、ソフトウェアとハードウェアを組�
 
 この革新的なプロジェクトは、あなたのデジタルペットと、オートメーション、IoT、ブロックチェーンを融合させた方法で関わることを可能にし、スマートホームに楽しく意味のある追加を提供します。
 
-**Gearの詳細はgear-tech.io、Varaの詳細はvara.networkをご覧ください**
+**Gearの詳細は[gear-tech.io](https://gear-tech.io)、Varaの詳細は[vara.network](https://vara.network)をご覧ください**
