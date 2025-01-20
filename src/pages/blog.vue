@@ -210,11 +210,6 @@ query ($locale: String!) {
         }
       },
       goToPage(page) {
-        // if (page >= 1 && page <= this.totalPages) {
-        //   this.currentPage = page;
-        //    this.$router.push({ path: this.$route.path, query: { page } });
-        // }
-
         if (page !== this.currentPage) {
           if (page === 1) {
             // Redirect to clean path without query for the first page
@@ -235,13 +230,9 @@ query ($locale: String!) {
 
     watch: {
       '$route.query.page': {
-        immediate: true,
+        // immediate: true,
         handler(newPage) {
-          // Set currentPage based on the query param, default to 1
           const parsedPage = parseInt(newPage, 10) || 1;
-          // if (parsedPage !== this.currentPage) {
-          //   this.currentPage = parsedPage;
-          // }
           if (parsedPage > this.totalPages) {
             this.currentPage = 1; // Redirect to the first page
             this.$router.push({ path: this.$route.path });
@@ -252,14 +243,15 @@ query ($locale: String!) {
       },
     },
 
-    created() {
+   mounted() {
       const pageFromQuery = parseInt(this.$route.query.page, 10);
       this.currentPage = pageFromQuery > 0 ? pageFromQuery : 1;
-    },
-
-    mounted() {
       this.getAllPosts();
       this.allPosts = this.allPosts.sort((a,b) => (new Date(b.node.date) - new Date(a.node.date)));
+      if (pageFromQuery > this.totalPages) { 
+        this.currentPage = 1; 
+        this.$router.push({ path: this.$route.path });
+      }
     }
   }
 
