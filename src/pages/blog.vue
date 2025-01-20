@@ -7,10 +7,9 @@
       :pageImage = "'/website_cover_blogs.jpg'"
     />
 
-
     <!-- <BlogTagsBanner :allTags="$page.allPostsTags.edges"/> -->
 
-    <div v-if="$page.posts.edges.length === 0" class=" blog__no-post align-center">
+    <div v-if="allPosts.length === 0" class=" blog__no-post align-center">
       <blockquote>{{$t('No posts yet')}}</blockquote>
 
       <div class="layout layout__content oldy" v-if="$locale != $defaultLocale">
@@ -23,12 +22,60 @@
     </div>
 
     <section class="layout blog_grid">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
+      <PostCard v-for="edge in paginatedPosts" :key="edge.node.id" :post="edge.node" />
     </section>
 
-    <Pagination class="pagination" 
-      :pageInfo="$page.posts.pageInfo"
-    />
+    <div class="pagination">
+      <!-- First Page -->
+      <a 
+        :href="generateRoute(1)"
+        aria-label="Go to first page"
+        @click.prevent="goToPage(1)"
+        :class="{ disabled: currentPage === 1 }"
+      >
+      
+      </a>
+
+      <!-- Previous Page -->
+      <a 
+        :href="generateRoute(currentPage - 1)"
+        aria-label="Go to previous page"
+        @click.prevent="goToPage(currentPage - 1)"
+        :class="{ disabled: currentPage === 1 }"
+      >
+      
+      </a>
+
+      <a
+        v-for="page in totalPages"
+        :key="page"
+        :href="generateRoute(page)"
+        :class="{ active: currentPage === page }"
+        @click.prevent="goToPage(page)"
+      >
+        {{ page }}
+      </a>
+
+      <!-- Next Page -->
+      <a 
+        :href="generateRoute(currentPage + 1)" 
+        aria-label="Go to next page"
+        @click.prevent="goToPage(currentPage + 1)"
+        :class="{ disabled: currentPage === totalPages }"
+      >
+      
+      </a>
+
+      <!-- Last Page -->
+      <a 
+        :href="generateRoute(totalPages)"
+        aria-label="Go to last page"
+        @click.prevent="goToPage(totalPages)"
+        :class="{ disabled: currentPage === totalPages }"
+      >
+      
+      </a>
+    </div>
 
   </layout>
 </template>
@@ -44,7 +91,7 @@
 </static-query>
 
 <page-query>
-query ($locale: String!, $page: Int) {
+query ($locale: String!) {
 
   allPostsTags: allPost(filter: {locale: { eq: $locale }} ) {
     edges {
@@ -58,12 +105,26 @@ query ($locale: String!, $page: Int) {
     }
   }
   
-  posts: allPost(filter: { published: { eq: true }, locale: { eq: $locale } },perPage: 12, page: $page) @paginate {
-
-    pageInfo {
-      totalPages
-      currentPage
+  posts: allPost(filter: { published: { eq: true }, locale: { eq: $locale } }) {
+    edges {
+      node {
+        id
+        title
+        date (format: "D. MMMM YYYY")
+        description
+        cover_image (width: 1500, quality: 100)
+        path
+        tags {
+          id
+          title
+          path
+        }
+        locale
+      }
     }
+  }
+
+  fallbackPosts: allPost(filter: { published: { eq: true }, locale: { eq: "en" } }) {
     edges {
       node {
         id
@@ -92,14 +153,113 @@ query ($locale: String!, $page: Int) {
     components: {
       MetaInfo: () => import('~/components/MetaInfo.vue'),
       PostCard: () => import('~/components/PostCard.vue'),
-      Pagination: () => import('~/components/blocks/Pagination.vue'),
       BlogTagsBanner: () => import('~/components/blocks/BlogTagsBanner.vue')
+    },
+
+    data() {
+      return {
+        allPosts: [],
+        currentPage: 1,
+        postsPerPage: 12,
+      }
     },
 
     computed: {
       lang(){
         return this.$locale
       },
+      totalPages() {
+        return Math.ceil(this.allPosts.length / this.postsPerPage);
+      },
+
+      paginatedPosts() {
+        const start = (this.currentPage - 1) * this.postsPerPage;
+        const end = start + this.postsPerPage;
+        return this.allPosts.slice(start, end);
+      }
+    },
+
+    methods: {
+
+      addFallbackPosts() {
+
+        this.$page.fallbackPosts.edges.map(p => {
+          const path =  p.node.path.substring(0, p.node.path.length - 1).split("/").pop();
+
+          const exists =  this.allPosts.filter(existingItem => {
+            const localePath = existingItem.node.path.substring(0, existingItem.node.path.length - 1).split("/").pop()
+            return localePath === path;
+          });
+
+          if(!exists[0]) {
+            this.allPosts.push(p)
+          }
+    
+        })
+      
+      },
+
+      getAllPosts() {
+        if(this.lang !== 'en') {
+          this.$page.posts.edges.map(post => {
+            this.allPosts.push(post)
+          })
+          this.addFallbackPosts();
+        } else {
+          this.allPosts.push(...this.$page.posts.edges);
+        }
+      },
+      goToPage(page) {
+        // if (page >= 1 && page <= this.totalPages) {
+        //   this.currentPage = page;
+        //    this.$router.push({ path: this.$route.path, query: { page } });
+        // }
+
+        if (page !== this.currentPage) {
+          if (page === 1) {
+            // Redirect to clean path without query for the first page
+            this.$router.push({ path: this.$route.path });
+          } else {
+            // Redirect to query-based path for other pages
+            this.$router.push({ path: this.$route.path, query: { page } });
+          }
+        }
+
+      },
+
+      generateRoute(page) {
+        return page === 1 ? this.$route.path : `${this.$route.path}?page=${page}`;
+      },
+
+    },
+
+    watch: {
+      '$route.query.page': {
+        immediate: true,
+        handler(newPage) {
+          // Set currentPage based on the query param, default to 1
+          const parsedPage = parseInt(newPage, 10) || 1;
+          // if (parsedPage !== this.currentPage) {
+          //   this.currentPage = parsedPage;
+          // }
+          if (parsedPage > this.totalPages) {
+            this.currentPage = 1; // Redirect to the first page
+            this.$router.push({ path: this.$route.path });
+          } else {
+            this.currentPage = parsedPage;
+          }
+        },
+      },
+    },
+
+    created() {
+      const pageFromQuery = parseInt(this.$route.query.page, 10);
+      this.currentPage = pageFromQuery > 0 ? pageFromQuery : 1;
+    },
+
+    mounted() {
+      this.getAllPosts();
+      this.allPosts = this.allPosts.sort((a,b) => (new Date(b.node.date) - new Date(a.node.date)));
     }
   }
 
@@ -130,6 +290,68 @@ query ($locale: String!, $page: Int) {
   .blog__no-post .oldy li:not(:last-child) {
     margin-bottom: calc(var(--space) * 0.3);
   }
+
+  /* pagination */
+
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--space) 0;
+  }
+
+  .pagination a {
+    color: var(--color-blue);
+    text-decoration: none;
+  }
+
+  .pagination a:not(:last-child) {
+    margin-right: 45px;
+  }
+
+
+  .pagination a.active {
+    color: var(--color-dark);
+  }
+
+  .pagination a:hover {
+    opacity: 0.5;
+  }
+
+  .pagination a[aria-label="Go to first page"],
+  .pagination a[aria-label^="Go to last page"],
+  .pagination a[aria-label^="Go to previous page"],
+  .pagination a[aria-label^="Go to next page"]
+   {
+    font-family: 'customIcons';
+    font-size: 1.5rem;
+  }
+
+  .pagination a[aria-label="Go to first page"],
+  .pagination a[aria-label^="Go to previous page"]
+  {
+    color: var(--color-dark);
+  }
+
+  .pagination a[aria-label^="Go to last page"],
+  .pagination a[aria-label^="Go to next page"] {
+    display: inline-block;
+    transform: scale(-1);
+  }
+
+  .pagination .disabled {
+    display: none !important;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .pagination a:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  /* end of pagination  */
 
 </style> 
 

@@ -838,7 +838,7 @@
   "ESP32-S3 MCU-based system on a chip (SoC) dual-core microprocessor (Xtensa 32-bit LX7), up to 240 MHz": "Микроконтроллер ESP32-S3 на основе системы на одной микросхеме (SoC) с двухъядерным микропроцессором (Xtensa 32-битный LX7), до 240 МГц",
   "448 KB ROM, 520 KB SRAM, 8 MB FLASH": "448 КБ ROM, 520 КБ SRAM, 8 МБ FLASH",
   "for development and updates": "для разработки и обновлений",
-  "To configure the device, please visit:": "Для настройки устройства, пожалуйста, поите:",
+  "To configure the device, please visit:": "Для настройки устройства, пожалуйста, посетите:",
   "multiple IO interfaces,": "несколько интерфейсов ввода-вывода,",
   "Early bird price": "Цена для ранних покупателей",
   "Get updates about smart devices": "Получайте обновления о смарт-устройствах",

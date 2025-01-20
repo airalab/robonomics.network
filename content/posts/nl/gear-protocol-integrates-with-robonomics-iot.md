@@ -5,7 +5,7 @@ date: 2024-11-25
 published: true
 locale: 'nl'
 tags: ['Announcements', 'Internet of Things', 'Collaborations']
-cover_image: ./images/gear-protocol-integrates-with-robonomics-iot/cover.webp
+cover_image: ../images/gear-protocol-integrates-with-robonomics-iot/cover.webp
 description: "Vanaf volgend jaar zal Gear Protocol het Tamagotchi-voorbeeld integreren in Gear.exe - een bruggeloze oplossing ontworpen om Ethereum dApps te versnellen - en zal het Hikikomori-apparaat wereldwijd worden gebruikt in hun universitaire workshopklassen!"
 
 ---
