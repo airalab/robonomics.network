@@ -25,11 +25,11 @@ Existem três métodos comuns de controle de acesso para computadores. O primeir
 
 Otaberu tem como objetivo fornecer aos desenvolvedores comuns o mais alto nível de proteção sem a necessidade de implantar serviços complexos de gerenciamento de segredos e conhecimentos profundos em redes. A ferramenta permite a criação de um análogo de AC (Autoridade de Certificação) com base nas chaves criptográficas do proprietário da frota de robôs. O papel de AC no otaberu é desempenhado pelo proprietário - o primeiro e principal papel no conjunto de funções do otaberu. O proprietário possui um único arquivo de configuração para sua frota de robôs, por meio do qual é realizada a gestão de acesso. Lá, o proprietário lista todos os seus robôs, suas chaves e metadados, e os usuários autorizados a se conectar a eles. Nossa equipe também desenvolveu uma utilidade de linha de comando chamada rn-cli para criar e editar o arquivo de configuração usando uma interface de terminal. A capacidade de iniciar uma interface de terminal é especialmente significativa para dispositivos sem um display gráfico, como computadores remotos ou de placa única com recursos limitados.
 
-<rb-image zoom src="./images/otaberu-parte-1/otaberu-tui-1.png" alt="Interface de Usuários Otaberu TUI" />  
+<rb-image zoom src="./images/otaberu-part-1/otaberu-tui-1.png" alt="Interface de Usuários Otaberu TUI" />  
 
 *Interface de Usuário do Terminal - Usuários*
 
-<rb-image zoom src="./images/otaberu-parte-1/otaberu-tui-2.png" alt="Interface de Robôs Otaberu TUI" />  
+<rb-image zoom src="./images/otaberu-part-1/otaberu-tui-2.png" alt="Interface de Robôs Otaberu TUI" />  
 
 *Interface de Usuário do Terminal - Robôs*
 
