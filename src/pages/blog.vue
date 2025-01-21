@@ -93,7 +93,7 @@
 <page-query>
 query ($locale: String!) {
 
-  allPostsTags: allPost(filter: {locale: { eq: $locale }} ) {
+  allPostsTags: allPost(filter: {locale: { eq: $locale }}) {
     edges {
       node {
         tags {
