@@ -13,7 +13,7 @@
         <g-link
           v-for="link in book.options"
           :key="link.id"
-          :to="booksLinks[link.name] || '#'"
+          :to="booksLinks[link.name] || link.static"
         >
         {{ link.text }}
         </g-link>
