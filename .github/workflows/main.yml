@@ -25,11 +25,20 @@ jobs:
         with:
           node-version: "18.x"
 
+      - name: Get Updated Files
+        id: changes
+        run: |
+          git diff --name-only HEAD~1 HEAD > updated_files.txt
+          cat updated_files.txt
+
       - name: Install and Build 🔧
         run: |
           sudo npm install --global @gridsome/cli
           npm ci
           export NODE_OPTIONS="--max_old_space_size=4096"
+          echo "Updated files: $(cat updated_files.txt)"
+          UPDATED_FILES=$(cat updated_files.txt)
+          echo $UPDATED_FILES
           gridsome build
         env:
           FORM_SCRIPT: ${{ secrets.FORM_SCRIPT }}
