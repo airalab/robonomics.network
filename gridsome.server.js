@@ -132,8 +132,11 @@ module.exports = function (api) {
           console.log('exists');
         } else {
           createPage({
-            path: `/blog/${locale}/${path}`,
-            component: './src/templates/BlogTranslations.vue',
+            path: `/blog/${locale}/${node.name}/`,
+            component: 'src/pages/redirect.vue',
+            context: {
+              redirect: `/blog/${node.name.toLowerCase()}/`,
+            },
           });
         }
       });
