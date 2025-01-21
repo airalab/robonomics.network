@@ -15,6 +15,10 @@ query {
 <script>
 export default {
   metaInfo() {
+    if (!this.redirect) {
+        return {}; // Do not add meta info if no redirection is needed
+    }
+
         return {
             // title: `Redirecting to https://robonomics.network/${this.redirect}`,
             meta: [
@@ -36,10 +40,19 @@ export default {
 
   computed: {
       redirect(){
-          if(this.$context.redirect){
-              return this.$context.redirect
-          }
-      }
+        const target = this.$context.redirect;
+
+        if (target && this.$route.path !== target) {
+            return target;
+        }
+            return null;
+        }
+  },
+
+  mounted() {
+    if(this.$context.redirect.includes('blog')) {
+        this.$setLocale('en')
+    }
   }
 }
 </script>
