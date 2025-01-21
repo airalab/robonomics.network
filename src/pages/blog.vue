@@ -230,7 +230,6 @@ query ($locale: String!) {
 
     watch: {
       '$route.query.page': {
-        // immediate: true,
         handler(newPage) {
           const parsedPage = parseInt(newPage, 10) || 1;
           if (parsedPage > this.totalPages) {
