@@ -13,8 +13,6 @@ jobs:
     steps:
       # Step 1: Checkout repository with full commit history
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # Ensure the full commit history is fetched
 
       # Step 2: Get the list of updated files since the last commit
       - name: Get changes
