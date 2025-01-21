@@ -58,10 +58,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           cname: robonomics.network
-
-      # Optional: Upload updated files as an artifact (for debugging)
-      - name: Upload updated files
-        uses: actions/upload-artifact@v2
-        with:
-          name: updated-files
-          path: updated_files.txt
