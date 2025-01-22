@@ -20,8 +20,22 @@
                         <div class="token__intro-container">
                             <p> <span class="token__big-text">XRT</span> {{ $t('is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.') }} </p>
                         </div>
-    
-                        <g-link to="https://gw.crust-gateway.com/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph" dir="ltr">
+                        <div class="token__intro-container">
+                            <p style="font-weight: 200;font-size: 120%;">
+                                <b>Total supply current:</b><br />
+                                <b>{{circulation}} XRT</b><br />
+                                Ethereum: <b>{{ethereum}} XRT</b><br />
+                                Polkadot: <b>{{polkadot}} XRT</b><br />
+                                Kusama: <b>{{kusama}} XRT</b>
+                            </p>
+                            <p>
+                                Total supply on 01.01.2024:<br />
+                                <b>{{archive}} XRT</b><br />
+                                Total deflation: {{deflation}}%
+                            </p>
+                        </div>
+
+                        <!-- <g-link to="https://gw.crust-gateway.com/ipfs/Qmb3efpK5jihHbZDVL9fBsvpTMn97uxw3cqUT4frzKua1s"  class="token__graph" dir="ltr">
                             <div class="token__graph-arrow">
                                 <span>{{ $t('Token distribution') }}</span>
                                 <ArrowIcon />
@@ -29,7 +43,7 @@
                             <div class="graph-img">
                                 <XRTGraph v-in-viewport.once/>
                             </div>
-                        </g-link>
+                        </g-link> -->
 
                     </div>
                 </div>
@@ -221,6 +235,38 @@ query {
         computed: {
             twitter() {
                 return contacts.filter(item => item.title.toLowerCase() === "x");
+            }
+        },
+
+        data() {
+            return {
+                deflation: '',
+                circulation: '',
+                ethereum: '',
+                kusama: '',
+                polkadot: '',
+                archive: '',
+            }
+        },
+
+        async mounted() {
+            const response = await fetch('https://xrt-stat.robonomics.network/api/token');
+
+            if (response.ok) {
+                const json = await response.json();
+
+                function numberWithSpaces(x) {
+                    return parseInt(x / 10**9).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+                }
+
+                this.deflation = json.result.deflation;
+                this.circulation = numberWithSpaces(json.result.current.sum);
+                this.ethereum = numberWithSpaces(json.result.current.chains.ethereum.value);
+                this.kusama = numberWithSpaces(json.result.current.chains.kusama.value);
+                this.polkadot = numberWithSpaces(json.result.current.chains.polkadot.value);
+                this.archive = numberWithSpaces(json.result.archive.sum);
+            } else {
+                console.log("Ошибка HTTP: " + response.status);
             }
         }
     }
