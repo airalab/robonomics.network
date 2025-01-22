@@ -121,8 +121,6 @@ module.exports = function (api) {
 
     // Blog posts and translations
     allPossiblePaths.forEach((node) => {
-      const path = node.path.slice(0, -1).split('/').pop();
-
       // For blog post translations
       // translateBlogPost(fs, path);
 
