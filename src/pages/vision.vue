@@ -172,7 +172,7 @@
 
             <div class="industry40">
               <div>
-                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industy-1.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industry-1.png" />
                 <div class="text">
                   <h5>{{$t(`Industry 1.0`)}}</h5>
                   <small>{{$t(`Mechanization:`)}} <br/>{{$t(`replacement of muscle power with steam energy.`)}}</small>
@@ -181,7 +181,7 @@
               </div>
 
               <div>
-                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industy-2.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industry-2.png" />
                 <div class="text">
                   <h5>{{$t(`Industry 2.0`)}}</h5>
                   <small>{{$t(`Electrification:`)}} <br/>{{$t(`introduction of assembly-line production.`)}}</small>
@@ -190,7 +190,7 @@
               </div>
 
               <div>
-                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industy-3.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industry-3.png" />
                 <div class="text">
                   <h5>{{$t(`Industry 3.0`)}}</h5>
                   <small>{{$t(`Automation:`)}} <br/>{{$t(`introduction of automated systems with CNC.`)}}</small>
@@ -199,7 +199,7 @@
               </div>
 
               <div>
-                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industy-4.png" />
+                <g-image quality="75" aria-hidden="true" alt="" src="~/assets/images/industry-4.png" />
                 <div class="text">
                   <h5>{{$t(`Industry 4.0`)}}</h5>
                   <small>{{$t(`Smart production:`)}} <br/>{{$t(`development of cyber physical systems.`)}}</small>
