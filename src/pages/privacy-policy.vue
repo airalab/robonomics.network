@@ -6,77 +6,272 @@
       pageDescription = "This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us."
     />
 
-    <section class="privacy-policy">
+    <article class="privacy-policy">
       <div class="layout layout__content">
-        <h1>{{$t('Privacy Policy')}}</h1>
+        <h1 class="text-center">{{$t('Privacy Policy')}}</h1>
+        <span class="privacy-policy__updated block mb-space text-center highlight-green"><em>{{ $t('Last updated: February 03, 2025') }}</em></span>
 
-          <p class="privacy-policy__descr">{{$t('This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us.')}}</p>
+          <p class="privacy-policy__descr">{{$t('This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.')}}</p>
+
+          <p class="privacy-policy__descr">{{$t('We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.')}}</p>
 
 
           <div class="privacy-policy__wrapper">
-            <h2 class="privacy-policy__subtitle">
-              {{$t('Where are those annoying cookie consent pop-ups')}}?
+            <h2 class="privacy-policy__subtitle title-lined">
+              <span>{{$t('Interpretation and Definitions')}}</span>
             </h2>
-            <p class="privacy-policy__descr">{{$t("We don't need cookie consent is needed because")}}:</p>
+            <h3>{{ $t('Interpretation') }}</h3>
+            <p class="privacy-policy__descr">{{$t("The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.")}}</p>
+
+            <h3>{{$t('Definitions')}}</h3>
+            <p class="privacy-policy__descr">{{ $t('For the purposes of this Privacy Policy:') }}</p>
             <ul>
-              <li>{{ $t('Tracking cookies are not used') }}</li>
-              <li>{{ $t('The data is not used for any other purpose than analytics') }}</li>
-              <li>{{ $t("Visitors aren't tracked across websites") }}</li>
-              <li>{{$t('A user cannot be tracked across days within the same website')}}</li>
+              <li><strong>{{ $t('Affiliate') }}</strong> {{ $t('means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.') }}</li>
+              <li>
+                <strong>{{$t('Company')}}</strong> {{ $t('(referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Robonomics Network.') }}
+                <p class="privacy-policy__descr">{{$t('For the purpose of the GDPR, the Company is the Data Controller.')}}</p>
+              </li>
+              <li><strong>{{$t('Cookies')}}</strong> {{ $t('are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses. More detailed information on cookies and how they work can be found at:') }} <g-link to="https://allaboutcookies.org/">https://allaboutcookies.org/</g-link></li>
+              <li><strong>{{$t('Country')}}</strong> {{ $t('refers to: Cyprus') }}</li>
+              <li><strong>{{ $t('Data Controller') }}</strong>, {{ $t('for the purposes of the GDPR (General Data Protection Regulation), refers to the Company as the legal person which alone or jointly with others determines the purposes and means of the processing of Personal Data.') }}</li>
+              <li><strong>{{ $t('Device') }}</strong> {{ $t('means any device that can access the Service such as a computer, a cellphone or a digital tablet.') }}</li>
+              <li><strong>{{ $t('GDPR') }}</strong> {{ $t('refers to EU General Data Protection Regulation.') }}</li>
+              <li>
+                <strong>{{ $t('Personal Data') }}</strong> {{ $t('is any information that relates to an identified or identifiable individual.') }}
+                <p class="privacy-policy__descr">{{$t('For the purposes of GDPR, Personal Data means any information relating to You such as a name, an identification number, location data, online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity.')}}</p>
+              </li>
+              <li><strong>{{ $t('Service') }}</strong>{{ $t('refers to the Website') }}.</li>
+              <li><strong>{{ $t('Service Provider') }}</strong> {{ $t('means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used. For the purpose of the GDPR, Service Providers are considered Data Processors.') }}</li>
+              <li><strong>{{$t('Usage Data')}}</strong> {{ $t('refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).') }}</li>
+              <li>{{ $t('Website') }} {{ $t('refers to Robonomics Network, accessible from') }} <g-link to="/">https://robonomics.network/</g-link></li>
+              <li>
+                <strong>{{ $t('You') }}</strong> {{ $t('means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.') }}
+                <p class="privacy-policy__descr">{{ $t('Under GDPR, You can be referred to as the Data Subject or as the User as you are the individual using the Service.') }}</p>
+              </li>
             </ul>
+
           </div>
 
           <div class="privacy-policy__wrapper">
-            <h2 class="privacy-policy__subtitle">
-              {{$t('What We Collect and Receive')}}
+            <h2 class="privacy-policy__subtitle title-lined">
+              <span>{{$t('Collecting and Using Your Personal Data')}}</span>
             </h2>
-            <p class="privacy-policy__descr">{{$t('In order for us to provide you the best possible experience on our websites, we need to collect and process certain information. Depending on your use of the Services, that may include')}}:</p>
+            <h3>{{ $t('Types of Data Collected') }}</h3>
+            <h4>{{$t('Personal Data')}}</h4>
+            <p class="privacy-policy__descr">{{$t('While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:')}}:</p>
 
             <ul>
-              <li> <b>{{ $t('Contact us via email') }}</b> — {{ $t('for example, when you submit our forms, send us questions or comments, or report a problem, we will collect your name, email address, message, etc. We use this data solely in connection with answering the queries we receive.') }}</li>
-              <li>
-                <b>{{ $t('Usage data') }}</b> — {{$t('when you visit our website, we will store: the URL from which you visited us from, web pages of our website you visit, the date and duration of your visit, your anonymized IP address, the device specifications (device type, operating system, screen resolution, language, country you are located in, and web browser type) you used during your visit, and')}} <g-link to="https://matomo.org/faq/general/faq_18254/">{{$t('other')}}</g-link> {{ $t('non-personal data. We process this usage data only on our server, not passing it to third-parties with') }}<g-link to="https://matomo.org/privacy-policy/#:~:text=usage%20data%20in-,Matomo%20Analytics,-for%20statistical%20purposes"> Matomo </g-link> {{$t('web analytics platform that gives us 100% data ownership. This analytics helps us to improve user experience with our website and to recognize and stop any misuse.')}}
-              </li>
-              <li>
-                <b>{{ $t('Non-personalized cookies') }}</b>  — {{ $t('we use non-tracking cookies (small data files transferred onto computers or devices by sites) for record-keeping purposes and to enhance functionality on our website. You may deactivate or restrict the transmission of these cookies by changing the settings of your web browser or by opt-out on this page in the form below. Cookies that are already stored may be deleted at any time.') }}
-              </li>
+              <li>{{ $t('Email address') }}</li>
+              <li>{{ $t('First name and last name') }}</li>
+              <li>{{$t('Usage Data')}}</li>
             </ul>
-          </div>
 
-          <div class="privacy-policy__wrapper">
-            <h2 class="privacy-policy__subtitle">{{ $t('Opt-out of website tracking') }}</h2>
-            <p class="privacy-police__descr">{{$t('You can opt out of being tracked by our Matomo Analytics instance below:')}}</p>
+            <h4>{{ $t('Usage Data') }}</h4>
+            <p class="privacy-policy__descr">{{ $t('Usage Data is collected automatically when using the Service.') }}</p>
+            <p class="privacy-policy__descr">{{ $t("Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.") }}</p>
+            <p class="privacy-policy__descr">{{ $t('When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.') }}</p>
+            <p class="privacy-policy__descr">{{ $t('We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.') }}</p>
+
+            <h4>{{ $t('Cookies & Browser Storage') }}</h4>
+            <p class="policy-privacy__descr">{{ $t('The Websites may use cookies. We use cookies and browser storage only for essential settings to improve your experience—not for tracking. These help remember your preferences, such as language settings or consent choices, so you don’t have to reset them each time you visit.') }}</p>
+            <p>{{ $t('We do not use cookies for tracking or personalized advertising. You can manage or disable cookies in your browser settings, but some features may not work properly without them.') }}</p>
+
+            <h3 class="privacy-policy__subtitle">{{ $t('Matomo Analytics') }}</h3>
+            <p class="privacy-policy__descr">{{$t('Our website may use Matomo, an open-source analytics platform, to gather insights into website usage. This includes anonymized data such as:')}}</p>
+
+            <ul>
+              <li>{{ $t('Pages visited and navigation paths') }}</li>
+              <li>{{ $t('Time spent on our website') }}</li>
+              <li>{{ $t('Whether you’re a returning or new visitor') }}</li>
+              <li>{{ $t('Your device type (desktop, mobile, etc.)') }}</li>
+            </ul>
+
+            <p class="privacy-policy__descr">{{ $t('To protect your privacy, your IP address is anonymized before being stored. The data we collect is only used to improve the website and is not used for personal identification.') }}</p>
+
+            <p class="policy-privacy__descr">
+              <strong>{{ $t('Under Art. 6(1)(f) GDPR') }}</strong>, {{ $t('we process this data based on our legitimate interest in enhancing our services.') }}
+            </p>
+
+            <h4>{{ $t('Opt-Out Option') }}</h4>
+            <p>{{$t('You can disable Matomo tracking at any time:') }}</p>
 
             <MatomoOptOutForm/>
-          </div>
 
-          <div class="privacy-policy__wrapper">
-            <h2 class="privacy-policy__subtitle">{{ $t('Your Rights') }}</h2>
-            <p class="privacy-police__descr">
-              {{ $t('You have the right to be informed of Personal Data processed by Matomo, a right to rectification/correction, erasure and restriction of processing. You also have the right to ask from us a structured, common and machine-readable format of Personal Data you provided to us.') }}
+            <h3 class="privacy-policy__subtitle">{{ $t('Use of Your Personal Data') }}</h3>
+            <p class="privacy-policy__descr">
+              {{ $t('The Company may use Personal Data for the following purposes:') }}
             </p>
-            <p class="privacy-police__descr">
-              {{$t('We can only identify you via your email address and we can only adhere to your request and provide information if we have Personal Data about you through you having made contact with us directly and/or you using our site and/or service. We cannot provide, rectify or delete any data that we store on behalf of our users or customers.')}}
+            <ul>
+              <li><strong>{{$t('To provide and maintain our Service')}}</strong>, {{ $t('including to monitor the usage of our Service.') }}</li>
+              <li><strong>{{$t('For the performance of a contract')}}</strong>: {{ $t('the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.') }}</li>
+              <li><strong>{{$t('To contact You')}}</strong>: {{ $t("To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.") }}</li>
+              <li><strong>{{$t('To provide You')}}</strong> {{ $t("with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.") }}</li>
+              <li><strong>{{$t('To manage Your requests')}}</strong>: {{ $t("To attend and manage Your requests to Us.") }}</li>
+              <li><strong>{{$t('For business transfers')}}</strong>: {{ $t("We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.") }}</li>
+              <li><strong>{{$t('For other purposes')}}</strong>: {{ $t("We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.") }}</li>
+            </ul>
+            <p class="policy-privacy__descr">
+              {{ $t('We may share Your personal information in the following situations:') }}
             </p>
-            <p class="privacy-police__descr">
-              {{$t('To exercise any of the rights mentioned in this Privacy Policy and/or in the event of questions or comments relating to the use of Personal Data you may contact us.')}}
-            </p>
-            <p class="privacy-police__descr">
-              {{$t('In addition, you have the right to lodge a complaint with the data protection authority in your jurisdiction.')}}
-            </p>
-          </div>
+            <ul>
+              <li><strong>{{ $t('With Service Providers') }}</strong>: {{ $t('We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.') }}</li>
+              <li><strong>{{ $t('For business transfers') }}</strong>: {{ $t('We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.') }}</li>
+              <li><strong>{{ $t('With Affiliates') }}</strong>: {{ $t('We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.') }}</li>
+              <li><strong>{{ $t('With business partners') }}</strong>: {{ $t('We may share Your information with Our business partners to offer You certain products, services or promotions.') }}</li>
+              <li><strong>{{ $t('With other users') }}</strong>: {{ $t('when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.') }}</li>
+              <li><strong>{{ $t('With Your consent') }}</strong>: {{ $t('We may disclose Your personal information for any other purpose with Your consent.') }}</li>
+            </ul>
 
-          <div class="privacy-policy__wrapper">
-            <h2 class="privacy-policy__subtitle">{{ $t('Retention of data') }}</h2>
-            <p class="privacy-police__descr">
-              {{ $t('We will retain your information as long as necessary to provide you with the services or as otherwise set forth in this Policy. We will also retain and use this information as necessary for the purposes set out in this Policy and to the extent necessary to comply with our legal obligations, resolve disputes, enforce our agreements and protect Robonomics Network legal rights.') }}
-            </p>
-            <p class="privacy-police__descr">{{ $t('We also collect and maintain aggregated, anonymized or pseudonymized information which we may retain indefinitely to protect the safety and security of our Site, improve our Services or comply with legal obligations') }}.</p>
-          </div>
+          <h3 class="privacy-policy__subtitle">{{ $t('Retention of Your Personal Data') }}</h3>
+          <p class="privacy-policy__descr">
+            {{ $t('The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.') }}
+          </p>
+          <p class="privacy-policy__descr">{{ $t('The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.') }}.</p>
+
+          <h3 class="privacy-policy__subtitle">{{ $t('Transfer of Your Personal Data') }}</h3>
+          <p class="privacy-policy__descr">
+            {{ $t("Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.") }}
+          </p>
+          <p class="privacy-policy__descr">{{ $t('Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.') }}.</p>
+          <p class="privacy-policy__descr">{{ $t('The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.') }}.</p>
+
+          <h3 class="privacy-policy__subtitle">{{ $t('Delete Your Personal Data') }}</h3>
+          <p class="privacy-policy__descr">
+            {{ $t("You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.") }}
+          </p>
+          <p class="privacy-policy__descr">{{ $t('Our Service may give You the ability to delete certain information about You from within the Service.') }}.</p>
+          <p class="privacy-policy__descr">{{ $t('Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.') }}.</p>
+
+          <h3>{{ $t('Disclosure of Your Personal Data') }}</h3>
+          <h4>{{ $t('Business Transactions') }}</h4>
+          <p class="privacy-policy__descr">{{ $t('If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.') }}</p>
+
+          <h4>{{ $t('Law enforcement') }}</h4>
+          <p class="privacy-policy__descr">{{ $t('Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).') }}</p>
+
+          <h4>{{ $t('Other legal requirements') }}</h4>
+          <p class="privacy-policy__descr">{{ $t('The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:') }}</p>
+          <ul>
+            <li>{{ $t('Comply with a legal obligation') }}</li>
+            <li>{{ $t('Protect and defend the rights or property of the Company') }}</li>
+            <li>{{ $t('Prevent or investigate possible wrongdoing in connection with the Service') }}</li>
+            <li>{{ $t('Protect the personal safety of Users of the Service or the public') }}</li>
+            <li>{{ $t('Protect against legal liability') }}</li>
+          </ul>
+
+          <h3>{{ $t('Security of Your Personal Data') }}</h3>
+          <p class="privacy-policy__descr">{{ $t('The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.') }}</p>
+        </div>
 
 
+        <div class="privacy-policy__wrapper">
+          <h2 class="privacy-policy__subtitle title-lined">
+            <span>{{$t('Detailed Information on the Processing of Your Personal Data')}}</span>
+          </h2>
+          <p class="privacy-policy__descr">{{$t("The Service Providers We use may have access to Your Personal Data. These third-party vendors collect, store, use, process and transfer information about Your activity on Our Service in accordance with their Privacy Policies.")}}</p>
+
+          <h3>{{$t('Email Marketing')}}</h3>
+          <p class="privacy-policy__descr">{{ $t('We may use Your Personal Data to contact You with newsletters, marketing or promotional materials and other information that may be of interest to You. You may opt-out of receiving any, or all, of these communications from Us by following the unsubscribe link or instructions provided in any email We send or by contacting Us.') }}</p>
+          <p class="privacy-policy__descr">{{ $t('We may use Email Marketing Service Providers to manage and send emails to You;') }}</p>
+          <ul>
+            <li>
+              <strong>{{ $t('Unisender') }}</strong> 
+              <p class="privacy-policy__descr">{{ $t('Their Privacy Policy can be viewed at') }} <g-link to="https://www.unisender.com/ru/privacy-notice">https://www.unisender.com/ru/privacy-notice/</g-link></p>
+            </li>
+          </ul>
+
+          <h3>{{ $t('Usage, Performance and Miscellaneous') }}</h3>
+          <p class="privacy-policy__descr">{{ $t('We may use third-party Service Providers to maintain and improve our Service.') }}</p>
+          <ul>
+            <li>
+              <strong>{{ $t('hcaptcha') }}</strong> 
+              <p class="privacy-policy__descr">{{ $t('Their Privacy Policy can be viewed at') }} <g-link to="https://www.hcaptcha.com/privacy"> https://www.hcaptcha.com/privacy</g-link></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="privacy-policy__wrapper">
+          <h2 class="privacy-policy__subtitle title-lined">
+            <span>{{$t('GDPR Privacy')}}</span>
+          </h2>
+          <h3>{{ $t('Legal Basis for Processing Personal Data under GDPR') }}</h3>
+          <p class="privacy-policy__descr">{{$t("We may process Personal Data under the following conditions:")}}</p>
+          <ul>
+            <li>
+              <strong>{{ $t('Consent:') }}</strong> {{ $t('You have given Your consent for processing Personal Data for one or more specific purposes.') }}
+            </li>
+            <li>
+              <strong>{{ $t('Performance of a contract:') }}</strong> {{ $t('Provision of Personal Data is necessary for the performance of an agreement with You and/or for any pre-contractual obligations thereof.') }}
+            </li>
+            <li>
+              <strong>{{ $t('Legal obligations:') }}</strong> {{ $t('Processing Personal Data is necessary for compliance with a legal obligation to which the Company is subject.') }}
+            </li>
+            <li>
+              <strong>{{ $t('Vital interests:') }}</strong> {{ $t('Processing Personal Data is necessary in order to protect Your vital interests or of another natural person.') }}
+            </li>
+            <li>
+              <strong>{{ $t('Public interests:') }}</strong> {{ $t('Processing Personal Data is related to a task that is carried out in the public interest or in the exercise of official authority vested in the Company.') }}
+            </li>
+            <li>
+              <strong>{{ $t('Legitimate interests:') }}</strong> {{ $t('Processing Personal Data is necessary for the purposes of the legitimate interests pursued by the Company.') }}
+            </li>
+          </ul>
+          <p class="privacy-policy__descr">{{ $t('In any case, the Company will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract.') }}</p>
+
+          <h3>{{ $t('Your Rights under the GDPR') }}</h3>
+          <p class="privacy-policy__descr">{{ $t('The Company undertakes to respect the confidentiality of Your Personal Data and to guarantee You can exercise Your rights.') }}</p>
+          <p class="privacy-policy__descr">{{ $t('You have the right under this Privacy Policy, and by law if You are within the EU, to:') }}</p>
+          <ul>
+            <li><strong>{{ $t('Request access to Your Personal Data. ') }}</strong> {{ $t('The right to access, update or delete the information We have on You. Whenever made possible, you can access, update or request deletion of Your Personal Data directly within Your account settings section. If you are unable to perform these actions yourself, please contact Us to assist You. This also enables You to receive a copy of the Personal Data We hold about You.') }}</li>
+            <li><strong>{{ $t('Request correction of the Personal Data that We hold about You.') }}</strong> {{ $t('You have the right to have any incomplete or inaccurate information We hold about You corrected.') }}</li>
+            <li><strong>{{ $t('Object to processing of Your Personal Data.') }}</strong> {{ $t('This right exists where We are relying on a legitimate interest as the legal basis for Our processing and there is something about Your particular situation, which makes You want to object to our processing of Your Personal Data on this ground. You also have the right to object where We are processing Your Personal Data for direct marketing purposes.') }}</li>
+            <li><strong>{{ $t('Request erasure of Your Personal Data.') }}</strong> {{ $t('You have the right to ask Us to delete or remove Personal Data when there is no good reason for Us to continue processing it.') }}</li>
+            <li><strong>{{ $t('Request the transfer of Your Personal Data.') }}</strong> {{ $t('We will provide to You, or to a third-party You have chosen, Your Personal Data in a structured, commonly used, machine-readable format. Please note that this right only applies to automated information which You initially provided consent for Us to use or where We used the information to perform a contract with You.') }}</li>
+            <li><strong>{{ $t('Withdraw Your consent.') }}</strong> {{ $t('You have the right to withdraw Your consent on using your Personal Data. If You withdraw Your consent, We may not be able to provide You with access to certain specific functionalities of the Service.') }}</li>
+          </ul>
+
+          <h3>{{ $t('Exercising of Your GDPR Data Protection Rights') }}</h3>
+          <p class="privacy-policy__descr">{{ $t('You may exercise Your rights of access, rectification, cancellation and opposition by contacting Us. Please note that we may ask You to verify Your identity before responding to such requests. If You make a request, We will try our best to respond to You as soon as possible.') }}</p>
+          <p class="privacy-policy__descr">{{ $t('You have the right to complain to a Data Protection Authority about Our collection and use of Your Personal Data. For more information, if You are in the European Economic Area (EEA), please contact Your local data protection authority in the EEA.') }}</p>
+        </div>
+
+        <div class="privacy-policy__wrapper">
+          <h2 class="privacy-policy__subtitle title-lined">
+            <span>{{$t("Children's Privacy")}}</span>
+          </h2>
+          <p class="privacy-policy__descr">{{$t("Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.")}}</p>
+          <p class="privacy-policy__descr">{{$t("If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.")}}</p>
+        </div>
+        
+
+        <div class="privacy-policy__wrapper">
+          <h2 class="privacy-policy__subtitle title-lined">
+            <span>{{$t("Links to Other Websites")}}</span>
+          </h2>
+          <p class="privacy-policy__descr">{{$t("Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.")}}</p>
+          <p class="privacy-policy__descr">{{$t("We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.")}}</p>
+        </div>
+
+        <div class="privacy-policy__wrapper">
+          <h2 class="privacy-policy__subtitle title-lined">
+            <span>{{$t("Changes to this Privacy Policy")}}</span>
+          </h2>
+          <p class="privacy-policy__descr">{{$t("We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.")}}</p>
+          <p class="privacy-policy__descr">{{$t('We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.')}}</p>
+          <p class="privacy-policy__descr">{{$t('You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.')}}</p>
+        </div>
+
+        <div class="privacy-policy__wrapper">
+          <h2 class="privacy-policy__subtitle title-lined">
+            <span>{{$t("Contact Us")}}</span>
+          </h2>
+          <p class="privacy-policy__descr">{{$t("If you have any questions about this Privacy Policy, You can contact us:")}}</p>
+          <ul>
+            <li>{{ $t('By visiting this page on our website:') }} <g-link to="/contact">https://robonomics.network/contact/</g-link></li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </article>
   </layout>
 </template>
 
@@ -92,10 +287,6 @@ export default {
 </script>
 
 <style scoped>
-
-  h1, h2 {
-    text-align: left;
-  }
 
   ul {
     padding-left: calc(var(--space) * 0.5);
