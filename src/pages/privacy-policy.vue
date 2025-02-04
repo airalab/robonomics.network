@@ -286,4 +286,14 @@ export default {
     text-align: right;
   }
 
+  @media screen and (max-width: 540px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
 </style>
