@@ -8,7 +8,7 @@
         <span v-if="message">{{message}}</span>
 
         <div class="text-small">
-            {{ $t('By clicking on the button “Submit” you agree to receive regular emails from Robonomics.') }}
+            {{ $t('By clicking on the button “Submit” you agree to receive regular emails from Robonomics (no more than 1 per month) and you agree with') }} <g-link to="/privacy-policy/">{{$t('Privacy Policy')}}</g-link>
         </div>
     </gsp-form>
 </template>

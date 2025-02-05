@@ -191,7 +191,7 @@
           <p class="privacy-policy__descr">{{ $t('The DAO undertakes to respect the confidentiality of Your Personal Data and to guarantee You can exercise Your rights.') }}</p>
           <p class="privacy-policy__descr">{{ $t('You have the right under this Privacy Policy, and by law if You are within the EU, to:') }}</p>
           <ul>
-            <li><strong>{{ $t('Request access to Your Personal Data. ') }}</strong> {{ $t('The right to access, update or delete the information We have on You. Whenever made possible, you can access, update or request deletion of Your Personal Data directly within Your account settings section. If you are unable to perform these actions yourself, please contact Us to assist You. This also enables You to receive a copy of the Personal Data We hold about You.') }}</li>
+            <li><strong>{{ $t('Request access to Your Personal Data.') }}</strong> {{ $t('The right to access, update or delete the information We have on You. Whenever made possible, you can access, update or request deletion of Your Personal Data directly within Your account settings section. If you are unable to perform these actions yourself, please contact Us to assist You. This also enables You to receive a copy of the Personal Data We hold about You.') }}</li>
             <li><strong>{{ $t('Request correction of the Personal Data that We hold about You.') }}</strong> {{ $t('You have the right to have any incomplete or inaccurate information We hold about You corrected.') }}</li>
             <li><strong>{{ $t('Object to processing of Your Personal Data.') }}</strong> {{ $t('This right exists where We are relying on a legitimate interest as the legal basis for Our processing and there is something about Your particular situation, which makes You want to object to our processing of Your Personal Data on this ground. You also have the right to object where We are processing Your Personal Data for direct marketing purposes.') }}</li>
             <li><strong>{{ $t('Request erasure of Your Personal Data.') }}</strong> {{ $t('You have the right to ask Us to delete or remove Personal Data when there is no good reason for Us to continue processing it.') }}</li>
@@ -288,11 +288,16 @@ export default {
 
   @media screen and (max-width: 540px) {
     h1 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
 
     h2 {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      margin: var(--space) 0;
+      font-size: 1.2rem;
     }
   }
 

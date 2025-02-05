@@ -732,7 +732,6 @@
   "Outdoor sensor “Altruist“": "Sensore esterno “Altruist“",
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "Dispositivo non invasivo per l'installazione nei quadri elettrici con montaggio su guida DIN. Basato sul chip Espressif ESP32C6 con architettura RISC-V aperta.",
   "Sign up for updates": "Iscriviti per gli aggiornamenti",
-  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "Cliccando sul pulsante “Invia” accetti di ricevere regolarmente email da Robonomics.",
   "Hardware for cyberpunks": "Hardware per cyber punk",
   "Tech Blog & Updates": "Blog tecnologico e aggiornamenti",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "Condividi e accedi ai dati su rumore, polvere e temperatura provenienti da altri sensori indipendenti nelle vicinanze. Dimentica i server aziendali: questi dati vengono distribuiti in modo sicuro in tutto il mondo attraverso la tecnologia innovativa Web3.",
@@ -1126,5 +1125,7 @@
   "Contact Us": "Contattaci",
   "If you have any questions about this Privacy Policy, You can contact us:": "Se hai domande su questa Informativa sulla privacy, puoi contattarci:",
   "By visiting this page on our website:": "Visitando questa pagina sul nostro sito web:",
-  "This Agreement is originally written in English. This AI translation is provided for your reference only.": "Questo Accordo è originariamente scritto in inglese. Questa traduzione automatica è fornita solo a scopo informativo."
+  "This Agreement is originally written in English. This AI translation is provided for your reference only.": "Questo Accordo è originariamente scritto in inglese. Questa traduzione automatica è fornita solo a scopo informativo.",
+  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics (no more than 1 per month) and you agree with": "Cliccando sul pulsante “Invia” accetti di ricevere regolarmente email da Robonomics (non più di 1 al mese) e accetti di",
+  "Request access to Your Personal Data.": "Richiedere l'accesso ai Tuoi Dati Personali."
 }

@@ -736,7 +736,6 @@
   "Outdoor sensor “Altruist“": "屋外センサー「アルトゥリスト」",
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "DINレール取り付け用の電気パネルに取り付けるための非侵襲デバイス。Espressif ESP32C6チップとオープンRISC-Vアーキテクチャを搭載しています。",
   "Sign up for updates": "更新情報をサインアップ",
-  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "「送信」ボタンをクリックすると、Robonomicsから定期的なメールを受け取ることに同意したものとみなされます。",
   "Hardware for cyberpunks": "サイバーパンク向けハードウェア",
   "Tech Blog & Updates": "テックブログ＆更新情報",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "他の独立したセンサーからノイズ、ほこり、温度データを共有およびアクセス。企業のサーバーを忘れてください—このデータは革新的なWeb3テクノロジーを通じて世界中に安全に分散されています。",
@@ -1126,5 +1125,7 @@
   "The Role of IoT Devices in Tokenization": "IoTデバイスのトークン化における役割",
   "Tokenizing IoT data through blockchain not only enhances data security and transparency but also paves the way for autonomous, machine-driven economies. This transformative approach creates a new generation of tokenized assets, unlocking immense potential for global innovation and economic growth.": "ブロックチェーンを介したIoTデータのトークン化は、データのセキュリティと透明性を向上させるだけでなく、自律的で機械駆動の経済の道を開くものです。この革新的なアプローチは、新世代のトークン化された資産を生み出し、グローバルなイノベーションと経済成長の莫大な可能性を開放します。",
   "Last updated: February 03, 2025": "最終更新日：2025年2月3日",
-  "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.": "このプライバシーポリシーは、サービスの利用時におけるお客様の情報の収集、利用、開示に関する当社の方針と手続きについて説明し、お客様のプライバシー権利についてお知らせし、法律がお客様をどのように保護するかを説明します。"
+  "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.": "このプライバシーポリシーは、サービスの利用時におけるお客様の情報の収集、利用、開示に関する当社の方針と手続きについて説明し、お客様のプライバシー権利についてお知らせし、法律がお客様をどのように保護するかを説明します。",
+  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics (no more than 1 per month) and you agree with": "ボタン「送信」をクリックすると、Robonomicsから定期的なメールを受け取ることに同意し（1か月に1回を超えない）、",
+  "Request access to Your Personal Data.": "個人データへのアクセスをリクエストすることに同意します。"
 }
