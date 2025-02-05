@@ -288,11 +288,16 @@ export default {
 
   @media screen and (max-width: 540px) {
     h1 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
 
     h2 {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      margin: var(--space) 0;
+      font-size: 1.2rem;
     }
   }
 
