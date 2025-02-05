@@ -736,7 +736,6 @@
   "Outdoor sensor “Altruist“": "Buitensensor 'Altruist'",
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "Een niet-invasief apparaat voor installatie in elektrische panelen met DIN-railmontage. Gebouwd op de Espressif ESP32C6-chip met open RISC-V-architectuur.",
   "Sign up for updates": "Meld je aan voor updates",
-  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "Door op de knop 'Verzenden' te klikken, stem je ermee in regelmatig e-mails van Robonomics te ontvangen.",
   "Hardware for cyberpunks": "Hardware voor cyberpunks",
   "Tech Blog & Updates": "Tech Blog & Updates",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "Deel en krijg toegang tot geluids-, stof- en temperatuurgegevens van andere onafhankelijke sensoren in de buurt. Vergeet bedrijfsservers - deze gegevens worden veilig wereldwijd gedistribueerd via innovatieve Web3-technologie.",
@@ -1126,5 +1125,7 @@
   "Legal Basis for Processing Personal Data under GDPR": "Juridische basis voor de verwerking van persoonsgegevens onder de GDPR",
   "We may process Personal Data under the following conditions:": "We kunnen persoonsgegevens verwerken onder de volgende voorwaarden:",
   "Consent:": "Toestemming:",
-  "You have given Your consent for processing Personal Data for one or more specific purposes.": "U heeft uw toestemming gegeven voor de verwerking van persoonsgegevens voor een of meer specifieke doeleinden."
+  "You have given Your consent for processing Personal Data for one or more specific purposes.": "U heeft uw toestemming gegeven voor de verwerking van persoonsgegevens voor een of meer specifieke doeleinden.",
+  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics (no more than 1 per month) and you agree with": "Door op de knop 'Verzenden' te klikken, stemt u ermee in om regelmatig e-mails te ontvangen van Robonomics (niet meer dan 1 per maand) en stemt u in met het aanvragen van toegang tot uw persoonlijke gegevens.",
+  "Request access to Your Personal Data.": "Verzoek toegang tot uw persoonlijke gegevens."
 }

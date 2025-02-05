@@ -736,7 +736,6 @@
   "Outdoor sensor “Altruist“": "야외 센서 '알트루이스트'",
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "DIN 레일 장착용 전자 패널에 설치할 수 있는 비침입형 장치. 오픈 RISC-V 아키텍처를 기반으로 한 Espressif ESP32C6 칩으로 제작되었습니다.",
   "Sign up for updates": "업데이트 신청",
-  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "로보노믹스로부터 정기적인 이메일을 수신하는 것에 동의하는 것입니다.",
   "Hardware for cyberpunks": "사이버 펑크를 위한 하드웨어",
   "Tech Blog & Updates": "기술 블로그 및 업데이트",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "주변의 다른 독립적인 센서로부터 소음, 먼지 및 온도 데이터를 공유하고 액세스하세요. 기업 서버를 잊으세요 - 이 데이터는 혁신적인 Web3 기술을 통해 전 세계적으로 안전하게 분산됩니다.",
@@ -1126,5 +1125,7 @@
   "Tokenizing IoT data through blockchain not only enhances data security and transparency but also paves the way for autonomous, machine-driven economies. This transformative approach creates a new generation of tokenized assets, unlocking immense potential for global innovation and economic growth.": "블록체인을 통한 IoT 데이터의 토큰화는 데이터 보안과 투명성을 향상시킬 뿐만 아니라 자율적이고 기계 주도적인 경제를 위한 길을 열어줍니다. 이 혁신적인 접근 방식은 새로운 세대의 토큰화된 자산을 만들어내어 글로벌 혁신과 경제 성장에 엄청난 잠재력을 발휘합니다.",
   "Last updated: February 03, 2025": "마지막 업데이트: 2025년 2월 3일",
   "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.": "이 개인정보 보호 정책은 서비스 이용 시 귀하의 정보 수집, 사용 및 공개에 대한 저희의 정책 및 절차를 설명하며 귀하의 개인정보 보호 권리 및 법률이 귀하를 어떻게 보호하는지 알려드립니다.",
-  "We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.": "귀하의 개인 데이터를 제공하고 서비스를 개선하기 위해 사용합니다. 서비스를 이용함으로써 귀하는 본 개인정보 보호 정책에 따라 정보의 수집 및 사용에 동의하는 것입니다."
+  "We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.": "귀하의 개인 데이터를 제공하고 서비스를 개선하기 위해 사용합니다. 서비스를 이용함으로써 귀하는 본 개인정보 보호 정책에 따라 정보의 수집 및 사용에 동의하는 것입니다.",
+  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics (no more than 1 per month) and you agree with": "버튼 '제출'을 클릭하면 로보노믹스로부터 정기적인 이메일을 수신하는 데 동의하고(월 1회 이상 아님) 동의합니다",
+  "Request access to Your Personal Data.": "개인 데이터에 대한 액세스 요청."
 }

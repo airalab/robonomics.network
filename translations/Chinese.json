@@ -732,7 +732,6 @@
   "Outdoor sensor “Altruist“": "户外传感器“Altruist”",
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "一种非侵入式设备，可安装在具有DIN导轨安装的电气面板上。基于Espressif ESP32C6芯片，采用开放的RISC-V架构。",
   "Sign up for updates": "注册更新",
-  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "点击“提交”按钮即表示您同意接收Robonomics定期发送的电子邮件。",
   "Hardware for cyberpunks": "适用于网络朋克的硬件",
   "Tech Blog & Updates": "技术博客和更新",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "共享并访问附近其他独立传感器的噪音、灰尘和温度数据。忘记企业服务器——通过创新的Web3技术，这些数据安全地分布在全球。",
@@ -1126,5 +1125,7 @@
   "Key Benefits of Tokenized IoT Data": "令牌化物联网数据的关键优势",
   "Tokenizing IoT data through blockchain not only enhances data security and transparency but also paves the way for autonomous, machine-driven economies. This transformative approach creates a new generation of tokenized assets, unlocking immense potential for global innovation and economic growth.": "通过区块链对物联网数据进行令牌化不仅增强了数据安全性和透明度，还为自主、机器驱动的经济铺平了道路。这种变革性的方法创造了一代新的令牌化资产，为全球创新和经济增长开辟了巨大潜力。",
   "Last updated: February 03, 2025": "最后更新时间：2025年2月3日",
-  "We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.": "我们使用您的个人数据来提供和改进服务。通过使用服务，您同意根据本隐私政策收集和使用信息。"
+  "We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.": "我们使用您的个人数据来提供和改进服务。通过使用服务，您同意根据本隐私政策收集和使用信息。",
+  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics (no more than 1 per month) and you agree with": "点击“提交”按钮即表示您同意接收来自Robonomics的定期电子邮件（每月不超过1封），并同意",
+  "Request access to Your Personal Data.": "请求访问您的个人数据。"
 }

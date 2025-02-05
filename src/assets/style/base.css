@@ -11,7 +11,7 @@ html{
 
 body {
  	color: var(--text-color);
- 	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: "Roboto Flex", system-ui, sans-serif;;
 	line-height: 1.5;
   background-color: var(--body-bg);
   transition: color .6s, background-color .6s;
