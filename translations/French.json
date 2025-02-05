@@ -736,7 +736,6 @@
   "Outdoor sensor “Altruist“": "Capteur extérieur “Altruist“",
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "Un dispositif non invasif à installer dans les tableaux électriques avec un montage sur rail DIN. Basé sur la puce Espressif ESP32C6 avec une architecture RISC-V ouverte.",
   "Sign up for updates": "Inscrivez-vous pour les mises à jour",
-  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "En cliquant sur le bouton “Soumettre”, vous acceptez de recevoir régulièrement des e-mails de Robonomics.",
   "Hardware for cyberpunks": "Matériel pour les cyberpunks",
   "Tech Blog & Updates": "Blog technologique et mises à jour",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "Partagez et accédez aux données de bruit, de poussière et de température d'autres capteurs indépendants à proximité. Oubliez les serveurs d'entreprise, ces données sont distribuées de manière sécurisée dans le monde entier grâce à la technologie Web3 innovante.",
@@ -1126,5 +1125,7 @@
   "Contact Us": "Contactez-nous",
   "If you have any questions about this Privacy Policy, You can contact us:": "Si vous avez des questions concernant cette politique de confidentialité, vous pouvez nous contacter:",
   "By visiting this page on our website:": "En visitant cette page sur notre site web:",
-  "This Agreement is originally written in English. This AI translation is provided for your reference only.": "Cet accord est initialement rédigé en anglais. Cette traduction automatique est fournie à titre de référence uniquement."
+  "This Agreement is originally written in English. This AI translation is provided for your reference only.": "Cet accord est initialement rédigé en anglais. Cette traduction automatique est fournie à titre de référence uniquement.",
+  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics (no more than 1 per month) and you agree with": "En cliquant sur le bouton “Soumettre”, vous acceptez de recevoir régulièrement des e-mails de Robonomics (pas plus d'un par mois) et vous acceptez de",
+  "Request access to Your Personal Data.": "Demander l'accès à Vos Données Personnelles."
 }

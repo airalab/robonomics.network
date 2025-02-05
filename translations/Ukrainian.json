@@ -736,7 +736,6 @@
   "Outdoor sensor “Altruist“": "Зовнішній датчик “Альтруїст“",
   "A non-invasive device for installation in electrical panels with DIN rail mounting. Built on the Espressif ESP32C6 chip with open RISC-V architecture.": "Неінвазивний пристрій для встановлення в електричних щитах з монтажем на DIN-рейку. Побудований на мікросхемі Espressif ESP32C6 з відкритою архітектурою RISC-V.",
   "Sign up for updates": "Підписатися на оновлення",
-  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics.": "Натискаючи кнопку “Надіслати”, ви погоджуєтеся отримувати регулярні електронні листи від Robonomics.",
   "Hardware for cyberpunks": "Обладнання для кібер-панків",
   "Tech Blog & Updates": "Технічний блог та оновлення",
   "Share and access noise, dust, and temperature data from other independent sensors nearby. Forget corporate servers—this data is securely distributed worldwide through innovative Web3 technology.": "Діліться та отримуйте дані про шум, пил та температуру від інших незалежних датчиків поруч. Забудьте про корпоративні сервери - ці дані безпечно розподіляються по всьому світу за допомогою інноваційної технології Web3.",
@@ -1126,5 +1125,7 @@
   "Background": "Фон",
   "The Role of IoT Devices in Tokenization": "Роль пристроїв Інтернету речей в токенізації",
   "Key Benefits of Tokenized IoT Data": "Ключові переваги токенізованих даних Інтернету речей",
-  "Tokenizing IoT data through blockchain not only enhances data security and transparency but also paves the way for autonomous, machine-driven economies. This transformative approach creates a new generation of tokenized assets, unlocking immense potential for global innovation and economic growth.": "Токенізація даних Інтернету речей через блокчейн не тільки підвищує безпеку та прозорість даних, але також відкриває шлях для автономних, машинних економік. Цей трансформаційний підхід створює нове покоління токенізованих активів, розблоковуючи величезний потенціал для глобальної інновації та економічного зростання."
+  "Tokenizing IoT data through blockchain not only enhances data security and transparency but also paves the way for autonomous, machine-driven economies. This transformative approach creates a new generation of tokenized assets, unlocking immense potential for global innovation and economic growth.": "Токенізація даних Інтернету речей через блокчейн не тільки підвищує безпеку та прозорість даних, але також відкриває шлях для автономних, машинних економік. Цей трансформаційний підхід створює нове покоління токенізованих активів, розблоковуючи величезний потенціал для глобальної інновації та економічного зростання.",
+  "By clicking on the button “Submit” you agree to receive regular emails from Robonomics (no more than 1 per month) and you agree with": "Натиснувши кнопку «Надіслати», ви погоджуєтеся отримувати регулярні електронні листи від Robonomics (не більше 1 на місяць) і ви погоджуєтеся з",
+  "Request access to Your Personal Data.": "Запит доступу до ваших особистих даних."
 }
