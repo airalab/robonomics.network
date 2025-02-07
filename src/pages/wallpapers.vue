@@ -9,6 +9,33 @@
     <section class="space-monkey">
       <div class="layout layout__content">
         <div class="highlight-solid-green__wrapper">
+          <h2 class="m-t-0 highlight-solid-green">{{ $t('Aira is back') }}</h2>
+        </div>
+        <div class="space-monkey__container grid-2">
+          <g-image src="~/assets/images/wallpapers/aira.webp" immediate/>
+          <div class="space-monkey__content">
+            <p>{{ $t('Transform your screen with our brand new wallpaper—download now!') }}</p>
+            <div class="wallpapers__links"> 
+              <g-image src="~/assets/images/wallpapers/desktop.svg" immediate aria-hidden="true" />
+              <a aria-label="download special aira wallpaper for desktop" href="/wallpapers/aira/aira-desktop.zip" download="">{{ $t('Desktop') }}</a>
+            </div>
+            <div class="wallpapers__links"> 
+              <g-image src="~/assets/images/wallpapers/smartphone.svg" immediate aria-hidden="true" />
+              <div class="wallpapers__links-wrapper">
+                <a download aria-label="download special aira wallpaper for iphone" href="/wallpapers/aira/aira-iphone.zip">{{$t('Iphone')}}</a>
+                <a download aria-label="download special aira wallpaper for Samsung Galaxy" href="/wallpapers/aira/aira-samsung.zip">{{ $t('Samsung') }}</a>
+                <a download aria-label="download special aira wallpaper for Pixel" href="/wallpapers/aira/aira-pixel.zip">{{ $t('Pixel') }}</a>
+                <a download aria-label="download special aira wallpaper for smartphone" href="/wallpapers/aira/aira-smartphone.zip">{{ $t('Smartphone') }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-monkey">
+      <div class="layout layout__content">
+        <div class="highlight-solid-green__wrapper">
           <h2 class="m-t-0 highlight-solid-green">{{ $t('Space monkey devcon 2024 special') }}</h2>
         </div>
         <div class="space-monkey__container grid-2">
