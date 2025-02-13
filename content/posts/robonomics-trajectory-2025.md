@@ -1,7 +1,7 @@
 ---
 
 title: Robonomics Trajectory 2025
-date: 2025-02-7
+date: 2025-02-07
 published: true
 locale: 'en'
 tags: ['Announcements']
