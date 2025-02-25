@@ -9,7 +9,6 @@
     />
 
     <DeviceBuySection price="$95">
-      <ModelAltruist vertical noanimation />
       <ModelAltruist noanimation />
     </DeviceBuySection>
 
