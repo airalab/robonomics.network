@@ -1,22 +1,22 @@
 <template>
   <div v-bind="$attrs" :class="classes" aria-label="3d model for outdoor sensor Altruist" ref="modelContainer"  v-in-viewport.once>
     <div class="img">
-      <img src="/hardware-2025/altruist/yellow/Altruist-Layout-1.webp" alt="Altruist Layout 1" />
-      <img v-if="showColor === 'pink'" src="/hardware-2025/altruist/pink/Altruist-Layout-1.webp" alt="Altruist Layout 1" />
+      <img src="/hardware-2025/altruist/pink/Altruist-Layout-1.webp" alt="Altruist Layout 1" />
+      <img v-if="showColor === 'yellow'" src="/hardware-2025/altruist/yellow/Altruist-Layout-1.webp" alt="Altruist Layout 1" />
       <img v-if="showColor === 'blue'" src="/hardware-2025/altruist/blue/Altruist-Layout-1.webp" alt="Altruist Layout 1" />
     </div>
 
     <div class="img">
-      <img src="/hardware-2025/altruist/yellow/Altruist-Layout-2.webp" alt="Altruist Layout 2" />
-      <img v-if="showColor === 'pink'" src="/hardware-2025/altruist/pink/Altruist-Layout-2.webp" alt="Altruist Layout 2" />
+      <img src="/hardware-2025/altruist/pink/Altruist-Layout-2.webp" alt="Altruist Layout 2" />
+      <img v-if="showColor === 'yellow'" src="/hardware-2025/altruist/yellow/Altruist-Layout-2.webp" alt="Altruist Layout 2" />
       <img v-if="showColor === 'blue'" src="/hardware-2025/altruist/blue/Altruist-Layout-2.webp" alt="Altruist Layout 2" />
     </div>
 
     <img class="img" v-if="!noanimation" src="/hardware-2025/altruist/Altruist-Layout-3.webp" alt="Altruist Layout 3" />
 
     <div class="img">
-      <img src="/hardware-2025/altruist/yellow/Altruist-Layout-4.webp" alt="Altruist Layout 4" />
-      <img v-if="showColor === 'pink'" src="/hardware-2025/altruist/pink/Altruist-Layout-4.webp" alt="Altruist Layout 4" />
+      <img src="/hardware-2025/altruist/pink/Altruist-Layout-4.webp" alt="Altruist Layout 4" />
+      <img v-if="showColor === 'yellow'" src="/hardware-2025/altruist/yellow/Altruist-Layout-4.webp" alt="Altruist Layout 4" />
       <img v-if="showColor === 'blue'" src="/hardware-2025/altruist/blue/Altruist-Layout-4.webp" alt="Altruist Layout 4" />
     </div>
 
@@ -36,11 +36,11 @@ export default {
   data() {
     return {
       scrollProgress: 0,
-      colors: ['yellow', 'pink', 'blue'],
+      colors: ['pink', 'yellow', 'blue'],
       colorIndex: 0,
       cycleCount: 0,
-      maxCycles: 3,
-      colorChangeDelay: 200, // Задержка в миллисекундах
+      maxCycles: 5,
+      colorChangeDelay: 500, // Задержка в миллисекундах
       lastColorChangeTime: 0,
       hasEnteredViewport: false,
       imagesLoaded: false

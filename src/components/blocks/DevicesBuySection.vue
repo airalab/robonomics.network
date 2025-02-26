@@ -132,9 +132,9 @@
 
     @media screen and (max-width: 600px) {
         .section-vivid-green {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space);
         }
     }
 
@@ -151,7 +151,7 @@
     }
 
     .price-number {
-        font-variation-settings: var(--font-flex-bold);
+        font-variation-settings: var(--font-flex-extrabold);
         font-size: 3rem;
         line-height: 1;
     }
