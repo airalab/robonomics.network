@@ -2,27 +2,52 @@
      <div class="layout layout__content section-vivid-green">
         <slot />
 
-        <section>
-            <div class="price" v-if="price">
-                <div class="price-number">{{price}}</div>
-                <div class="price-desc">
-                    <div>{{$t('Early bird price')}}</div>
-                    <div>{{$t('Coming in early 2025')}}</div>
-                </div>
-            </div>
-            
-            <gsp-form :gscriptID="gscript" :siteKey="siteKey" @gsp-beforesubmit="beforeSubmit" @gsp-onsubmit="onSubmit" @gsp-oncaptchanotverified="captchaError">
-                <label class="block"><input type="email" data-gsp-name="Email" :data-gsp-data="email" v-model="email" :placeholder="$t('Your email')" class="block" required /></label>
-                <label class="block"><input disabled type="checkbox" v-model="deviceupdates" /> <span>{{ $t('Get updates about smart devices') }}</span></label>
-                <label class="block"><input type="checkbox" v-model="regularupdates" /> <span>{{ $t('Receive regular emails from Robonomics') }}</span></label>
-                
-                <input type="hidden" data-gsp-name="Location" :data-gsp-data="location" />
-                <input type="hidden" data-gsp-name="Tags" :data-gsp-data="tags.toString()" />
+        <!-- Todo: remove hardcoding, make dynamic props analitycs -->
 
-                <robo-button class="block" :loading="status === 'process'" :type="buttontype">{{buttontext}}</robo-button>
-                <span v-if="message">{{message}}</span>
-            </gsp-form>
-        </section>
+        <template v-if="$route.path.includes('altruist')">
+            <section class="product-available">
+                <section class="lined">
+                    <div class="price-number">{{$t('Outdoor sensor “ALTRUIST“')}}</div>
+                    <div class="price" v-if="price">
+                        <div class="price-number">{{price}}</div>
+                        <div class="price-desc">
+                            <div>{{$t('Now Available!')}}</div>
+                            <div>{{$t('Worldwide Shipping')}}</div>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>{{$t('Open-Source Hardware & Software')}}</li>
+                            <li>{{$t('Independent Decentralized Network Technologies')}}</li>
+                            <li>{{$t('Colorful 3D-Printed Cases of Your Choice')}}</li>
+                        </ul>
+                    </div>
+                </section>
+                <rb-button block to="https://shop.pinout.cloud/altruist">{{$t('Order Now')}}</rb-button>
+            </section>
+        </template>
+        <template v-else>
+            <section>
+                <div class="price" v-if="price">
+                    <div class="price-number">{{price}}</div>
+                    <div class="price-desc">
+                        <div>{{$t('Early bird price')}}</div>
+                        <div>{{$t('Coming in early 2025')}}</div>
+                    </div>
+                </div>
+                <gsp-form :gscriptID="gscript" :siteKey="siteKey" @gsp-beforesubmit="beforeSubmit" @gsp-onsubmit="onSubmit" @gsp-oncaptchanotverified="captchaError">
+                    <label class="block"><input type="email" data-gsp-name="Email" :data-gsp-data="email" v-model="email" :placeholder="$t('Your email')" class="block" required /></label>
+                    <label class="block"><input disabled type="checkbox" v-model="deviceupdates" /> <span>{{ $t('Get updates about smart devices') }}</span></label>
+                    <label class="block"><input type="checkbox" v-model="regularupdates" /> <span>{{ $t('Receive regular emails from Robonomics') }}</span></label>
+                    
+                    <input type="hidden" data-gsp-name="Location" :data-gsp-data="location" />
+                    <input type="hidden" data-gsp-name="Tags" :data-gsp-data="tags.toString()" />
+
+                    <robo-button class="block" :loading="status === 'process'" :type="buttontype">{{buttontext}}</robo-button>
+                    <span v-if="message">{{message}}</span>
+                </gsp-form>
+            </section>
+        </template>
     </div>
 </template>
 
@@ -134,5 +159,22 @@
     .price-desc {
         min-width: 170px;
         font-variation-settings: var(--font-flex-medium);
+    }
+
+    .product-available {
+        align-self: start;
+    }
+
+    .lined > * {
+        margin-bottom: var(--space);
+    }
+
+    .lined > *:not(:last-child) {
+        padding-bottom: var(--space);
+        border-bottom: 1px solid var(--color-dark);
+    }
+
+    .lined li {
+        margin-bottom: calc(var(--space)/2);
     }
 </style>
