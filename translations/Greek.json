@@ -724,10 +724,6 @@
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "Ζήστε τη δύναμη του πραγματικού DePIN (Αποκεντρωμένο Δίκτυο Φυσικής Υποδομής) — μια επαναστατική τεχνολογική κίνηση που έχει ζωντανέψει και ακμάζει εδώ και χρόνια στο",
   "decentralized sensor map": "αποκεντρωμένο χάρτη αισθητήρων",
   "3 ways to use it": "3 τρόποι για να το χρησιμοποιήσετε",
-  "Access": "Πρόσβαση",
-  "noise, dust, and temperature data": "σε δεδομένα θορύβου, σκόνης και θερμοκρασίας",
-  "from other independent sensors on our": "από άλλους ανεξάρτητους αισθητήρες στον",
-  "Connect your device as simple as other smart devices and share your environmental outdoor data with community.": "Συνδέστε τη συσκευή σας τόσο απλά όσο και άλλες έξυπνες συσκευές και μοιραστείτε τα δεδομένα περιβαλλοντικού χώρου σας με την κοινότητα.",
   "Check open-source sensor firmware on GitHub": "Ελέγξτε το ανοιχτού κώδικα λογισμικό αισθητήρα στο GitHub",
   "Operate your own Data Server": "Λειτουργήστε τον Δικό σας Διακομιστή Δεδομένων",
   "giving you the freedom to choose which servers to use for processing. No proprietary clouds, no hidden code.": "δίνοντάς σας την ελευθερία να επιλέξετε ποιους διακομιστές θα χρησιμοποιήσετε για την επεξεργασία. Χωρίς ιδιοκτησία συννεφιών, χωρίς κρυφό κώδικα.",
@@ -1093,5 +1089,8 @@
   "Open-Source Hardware & Software": "Υλικό & Λογισμικό Ανοιχτού Κώδικα",
   "Independent Decentralized Network Technologies": "Ανεξάρτητες Αποκεντρωμένες Τεχνολογίες Δικτύων",
   "Colorful 3D-Printed Cases of Your Choice": "Πολύχρωμες θήκες με τρισδιάστατη εκτύπωση της επιλογής σας",
-  "Order Now": "Παραγγείλετε τώρα"
+  "Order Now": "Παραγγείλετε τώρα",
+  "Altruist": "Αλτρουιστής",
+  "Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“": "Οι ειδικές ταπετσαρίες μας για τον εορτασμό της κυκλοφορίας του αισθητήρα εξωτερικού χώρου “Altruist“",
+  "3 highlights for you": "3 highlights για εσάς"
 }
