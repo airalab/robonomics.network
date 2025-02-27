@@ -738,10 +738,6 @@
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "Erleben Sie die Kraft des wahren DePIN (Decentralized Physical Infrastructure Network) – eine revolutionäre technologische Bewegung, die seit Jahren auf unserer",
   "decentralized sensor map": "dezentralen Sensorkarte",
   "3 ways to use it": "3 Möglichkeiten zur Verwendung",
-  "Access": "Zugriff auf",
-  "noise, dust, and temperature data": "Lärm-, Staub- und Temperaturdaten",
-  "from other independent sensors on our": "von anderen unabhängigen Sensoren auf unserer",
-  "Connect your device as simple as other smart devices and share your environmental outdoor data with community.": "Verbinden Sie Ihr Gerät so einfach wie andere intelligente Geräte und teilen Sie Ihre Umweltdaten im Freien mit der Community.",
   "Check open-source sensor firmware on GitHub": "Überprüfen Sie die Open-Source-Sensor-Firmware auf GitHub",
   "Operate your own Data Server": "Betreiben Sie Ihren eigenen Datenserver",
   "giving you the freedom to choose which servers to use for processing. No proprietary clouds, no hidden code.": "und wählen Sie frei aus, welche Server zur Verarbeitung verwendet werden sollen. Keine proprietären Clouds, kein versteckter Code.",
@@ -1136,5 +1132,8 @@
   "Open-Source Hardware & Software": "Open-Source Hardware & Software",
   "Independent Decentralized Network Technologies": "Unabhängige dezentrale Netzwerktechnologien",
   "Colorful 3D-Printed Cases of Your Choice": "Bunte 3D-gedruckte Gehäuse Ihrer Wahl",
-  "Order Now": "Jetzt bestellen"
+  "Order Now": "Jetzt bestellen",
+  "Altruist": "Altruist",
+  "3 highlights for you": "3 Highlights für Sie",
+  "Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“": "Unsere speziellen Hintergrundbilder zur Einführung des Outdoor-Sensors 'Altruist'"
 }
