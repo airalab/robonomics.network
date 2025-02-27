@@ -738,10 +738,6 @@
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "体验真正的DePIN（去中心化物理基础设施网络）的力量——这是一个革命性的技术运动，已经在我们的去中心化传感器地图上生动地存在和繁荣多年。",
   "decentralized sensor map": "去中心化传感器地图",
   "3 ways to use it": "使用它的3种方式",
-  "Access": "访问",
-  "noise, dust, and temperature data": "噪音灰尘和温度数据",
-  "from other independent sensors on our": "从我们的其他独立传感器上",
-  "Connect your device as simple as other smart devices and share your environmental outdoor data with community.": "将您的设备连接到社区，就像连接其他智能设备一样，并与社区共享您的户外环境数据。",
   "Check open-source sensor firmware on GitHub": "在GitHub上检查开源传感器固件",
   "Operate your own Data Server": "操作您自己的数据服务器",
   "giving you the freedom to choose which servers to use for processing. No proprietary clouds, no hidden code.": "让您自由选择用于处理的服务器。没有专有云，没有隐藏的代码。",
@@ -1136,5 +1132,8 @@
   "Open-Source Hardware & Software": "开源硬件和软件",
   "Independent Decentralized Network Technologies": "独立去中心化网络技术",
   "Colorful 3D-Printed Cases of Your Choice": "丰富多彩的3D打印外壳可供选择",
-  "Order Now": "立即下单"
+  "Order Now": "立即下单",
+  "Altruist": "利他主义者",
+  "3 highlights for you": "为您准备的3个亮点",
+  "Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“": "我们特别设计的壁纸，以纪念户外传感器“Altruist”的推出"
 }

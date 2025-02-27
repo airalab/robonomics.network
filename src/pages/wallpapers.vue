@@ -6,14 +6,41 @@
       :pageImage = "'/website_cover_wallpapers.png'"
     />
 
-    <section class="space-monkey">
+    <section class="wallpaper-display">
+      <div class="layout layout__content">
+        <div class="highlight-solid-green__wrapper">
+          <h2 class="m-t-0 highlight-solid-green">{{ $t('Altruist') }}</h2>
+        </div>
+        <div class="wallpaper-display__container grid-2">
+          <g-image src="~/assets/images/wallpapers/altruist.webp" immediate/>
+          <div class="wallpaper-display__content">
+            <p>{{ $t('Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“') }}</p>
+            <div class="wallpapers__links"> 
+              <g-image src="~/assets/images/wallpapers/desktop.svg" immediate aria-hidden="true" />
+              <a aria-label="download special aira wallpaper for desktop" href="/wallpapers/altruist/altruist-desktop.jpg" download="">{{ $t('Desktop') }}</a>
+            </div>
+            <div class="wallpapers__links"> 
+              <g-image src="~/assets/images/wallpapers/smartphone.svg" immediate aria-hidden="true" />
+              <div class="wallpapers__links-wrapper">
+                <a download aria-label="download special aira wallpaper for iphone" href="/wallpapers/altruist/altruist-iphone.jpg">{{$t('Iphone')}}</a>
+                <a download aria-label="download special aira wallpaper for Samsung Galaxy" href="/wallpapers/altruist/altruist-samsung.zip">{{ $t('Samsung') }}</a>
+                <a download aria-label="download special aira wallpaper for Pixel" href="/wallpapers/altruist/altruist-pixel.zip">{{ $t('Pixel') }}</a>
+                <a download aria-label="download special aira wallpaper for smartphone" href="/wallpapers/altruist/altruist-iphone.jpg">{{ $t('Smartphone') }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wallpaper-display">
       <div class="layout layout__content">
         <div class="highlight-solid-green__wrapper">
           <h2 class="m-t-0 highlight-solid-green">{{ $t('Aira is back') }}</h2>
         </div>
-        <div class="space-monkey__container grid-2">
+        <div class="wallpaper-display__container grid-2">
           <g-image src="~/assets/images/wallpapers/aira.webp" immediate/>
-          <div class="space-monkey__content">
+          <div class="wallpaper-display__content">
             <p>{{ $t('Transform your screen with our brand new wallpaper—download now!') }}</p>
             <div class="wallpapers__links"> 
               <g-image src="~/assets/images/wallpapers/desktop.svg" immediate aria-hidden="true" />
@@ -33,14 +60,14 @@
       </div>
     </section>
 
-    <section class="space-monkey">
+    <section class="wallpaper-display">
       <div class="layout layout__content">
         <div class="highlight-solid-green__wrapper">
           <h2 class="m-t-0 highlight-solid-green">{{ $t('Space monkey devcon 2024 special') }}</h2>
         </div>
-        <div class="space-monkey__container grid-2">
+        <div class="wallpaper-display__container grid-2">
           <g-image src="~/assets/images/wallpapers/space-monkey.webp" immediate/>
-          <div class="space-monkey__content">
+          <div class="wallpaper-display__content">
             <p>{{ $t('Download this picture to your device and join our special Devcon 2024 quest at thrilling locations around Bangkok!') }}</p>
             <div class="wallpapers__links"> 
               <g-image src="~/assets/images/wallpapers/desktop.svg" immediate aria-hidden="true" />
@@ -221,7 +248,7 @@ export default {
     min-width: 31px;
   }
 
-  .space-monkey{
+  .wallpaper-display{
     margin-bottom: calc(var(--space) * 4);
   }
 

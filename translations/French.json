@@ -742,10 +742,6 @@
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "Découvrez la puissance du véritable DePIN (Réseau d'Infrastructure Physique Décentralisée) — un mouvement technologique révolutionnaire qui a vu le jour et prospère depuis des années sur notre",
   "decentralized sensor map": "carte de capteurs décentralisée",
   "3 ways to use it": "3 façons de l'utiliser",
-  "Access": "Accéder aux données de",
-  "noise, dust, and temperature data": "bruit, de poussière et de température",
-  "from other independent sensors on our": "d'autres capteurs indépendants sur notre",
-  "Connect your device as simple as other smart devices and share your environmental outdoor data with community.": "Connectez votre appareil aussi simplement que d'autres appareils intelligents et partagez vos données environnementales extérieures avec la communauté.",
   "Check open-source sensor firmware on GitHub": "Consultez le micrologiciel du capteur open-source sur GitHub",
   "Operate your own Data Server": "Faites fonctionner votre propre serveur de données",
   "giving you the freedom to choose which servers to use for processing. No proprietary clouds, no hidden code.": "vous donnant la liberté de choisir les serveurs à utiliser pour le traitement. Pas de clouds propriétaires, pas de code caché.",
@@ -1136,5 +1132,8 @@
   "Open-Source Hardware & Software": "Matériel et logiciel open-source",
   "Independent Decentralized Network Technologies": "Technologies de réseau décentralisées indépendantes",
   "Colorful 3D-Printed Cases of Your Choice": "Boîtiers colorés imprimés en 3D de votre choix",
-  "Order Now": "Commandez maintenant"
+  "Order Now": "Commandez maintenant",
+  "Altruist": "Altruiste",
+  "3 highlights for you": "3 points forts pour vous",
+  "Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“": "Nos papiers peints spéciaux pour commémorer le lancement du capteur extérieur “Altruist“"
 }

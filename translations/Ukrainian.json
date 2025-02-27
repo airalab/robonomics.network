@@ -742,10 +742,6 @@
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "Відчуйте силу справжньої DePIN (Децентралізованої Фізичної Інфраструктурної Мережі) - революційного технологічного руху, який ожив і процвітає вже кілька років на нашій",
   "decentralized sensor map": "децентралізованій карті датчиків",
   "3 ways to use it": "3 способи використання",
-  "Access": "Доступ",
-  "noise, dust, and temperature data": "до даних про шум, пил та температуру",
-  "from other independent sensors on our": "від інших незалежних датчиків нашої",
-  "Connect your device as simple as other smart devices and share your environmental outdoor data with community.": "Підключіть ваш пристрій так само просто, як і інші розумні пристрої та діліться своїми даними про зовнішнє середовище зі спільнотою.",
   "Check open-source sensor firmware on GitHub": "Перевірте відкрите програмне забезпечення атчика на GitHub",
   "Operate your own Data Server": "Управляйте своїм власним сервером даних",
   "giving you the freedom to choose which servers to use for processing. No proprietary clouds, no hidden code.": "що дає вам свободу вибору серверів для обробки. Немає пропрієтарних хмар, немає схованого коду.",
@@ -1136,5 +1132,8 @@
   "Open-Source Hardware & Software": "Відкрите апаратне та програмне забезпечення",
   "Independent Decentralized Network Technologies": "Незалежні децентралізовані технології мережі",
   "Colorful 3D-Printed Cases of Your Choice": "Кольорові 3D-надруковані корпуси на ваш вибір",
-  "Order Now": "Замовити зараз"
+  "Order Now": "Замовити зараз",
+  "Altruist": "Альтруїст",
+  "3 highlights for you": "3 основні моменти для вас",
+  "Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“": "Наші спеціальні шпалери для вшанування запуску зовнішнього датчика «Альтруїст»"
 }

@@ -742,10 +742,6 @@
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "Почувствуйте мощь истинной DePIN (Децентрализованной Физической Инфраструктурной Сети) - революционного технологического движения, ожившего и процветающего уже много лет на нашей",
   "decentralized sensor map": "децентрализованной карте датчиков",
   "3 ways to use it": "3 способа использования",
-  "Access": "Доступ",
-  "noise, dust, and temperature data": "данные о шуме, пыли и температуре",
-  "from other independent sensors on our": "от других независимых датчиков на нашей",
-  "Connect your device as simple as other smart devices and share your environmental outdoor data with community.": "Подключите ваше устройство так же просто, как другие умные устройства, и делитесь своими данными об окружающей среде на открытом воздухе с сообществом.",
   "Check open-source sensor firmware on GitHub": "Проверьте открытую прошивку датчика на GitHub",
   "Operate your own Data Server": "Управляйте своим собственным сервером данных",
   "giving you the freedom to choose which servers to use for processing. No proprietary clouds, no hidden code.": "предоставляя вам свободу выбора серверов для обработки. Нет собственных облаков, нет скрытого кода.",
@@ -1136,5 +1132,8 @@
   "Open-Source Hardware & Software": "Аппаратное и программное обеспечение с открытым исходным кодом",
   "Independent Decentralized Network Technologies": "Независимые децентрализованные сетевые технологии",
   "Colorful 3D-Printed Cases of Your Choice": "Яркие 3D-напечатанные корпуса на ваш выбор",
-  "Order Now": "Заказать сейчас"
+  "Order Now": "Заказать сейчас",
+  "Altruist": "Альтруист",
+  "Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“": "Наши специальные обои для отметки запуска датчика на открытом воздухе «Альтруист»",
+  "3 highlights for you": "3 основных момента для вас"
 }

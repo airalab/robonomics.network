@@ -742,10 +742,6 @@
   "Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our": "진정한 DePIN(분산 물리 인프라 네워크)의 힘을 경험하세요 - 수년간 살아 숨쉬며 번성하는 혁명적인 기술적 움직임입니다.",
   "decentralized sensor map": "분산 센서 지도",
   "3 ways to use it": "사용 방법 3가지",
-  "Access": "액세스",
-  "noise, dust, and temperature data": "소음, 먼지 및 온도 데이터",
-  "from other independent sensors on our": "다른 독립적인 센서로부터",
-  "Connect your device as simple as other smart devices and share your environmental outdoor data with community.": "다른 스마트 기기와 같이 장치를 연결하고 커뮤니티와 환경 야외 데이터를 공유하세요.",
   "Check open-source sensor firmware on GitHub": "GitHub에서 오픈 소스 센서 펌웨어 확인",
   "Operate your own Data Server": "자체 데이터 서버 운영",
   "giving you the freedom to choose which servers to use for processing. No proprietary clouds, no hidden code.": "처리에 사용할 서버를 선택할 수 있는 자유를 제공합니다. 프로프리어터리 클라우드나 숨겨진 코드가 없습니다.",
@@ -1136,5 +1132,8 @@
   "Open-Source Hardware & Software": "오픈 소스 하드웨어 및 소프트웨어",
   "Independent Decentralized Network Technologies": "독립 분산 네트워크 기술",
   "Colorful 3D-Printed Cases of Your Choice": "선택한 다양한 3D 프린팅 케이스",
-  "Order Now": "지금 주문하세요"
+  "Order Now": "지금 주문하세요",
+  "Altruist": "알트루이스트",
+  "3 highlights for you": "당신을 위한 3가지 하이라이트",
+  "Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“": "알트루이스트 야외 센서 출시를 기념하는 특별한 배경화면"
 }
