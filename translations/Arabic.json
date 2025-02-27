@@ -744,10 +744,6 @@
   "Love the idea of a decentralized map but want to customize it with extra layouts and become an administrator of new sovereign sensor infrastructure? You can deploy": "نسختك الخاصة عن طريق الفورك",
   "your own version by forking": "لشيفرتنا المفتوحة على GitHub (تأكد من التحقق من نوع الترخيص). تذكر استخدام الموارد مفتوحة المصدر بشكل مسؤول.",
   "our open-source code on GitHub (be sure to check the license type). Remember to use open-source resources responsibly.": "الوصول",
-  "Access": "بيانات الضوضاء والغبار ودرجة الحرارة",
-  "noise, dust, and temperature data": "من أجهزة استشعار مستقلة أخرى على",
-  "from other independent sensors on our": "قم بتوصيل جهازك بسهولة مثل الأجهزة الذكية الأخرى وشارك بياناتك البيئية الخارجية مع المجتمع.",
-  "Connect your device as simple as other smart devices and share your environmental outdoor data with community.": "مواصفات الجهاز",
   "Device Specifications": "الجهد الكهربائي المدخل:",
   "Input Voltage:": "AC 100-240V 50/60Hz",
   "AC 100-240V 50/60Hz": "بروتوكول لاسلكي:",
@@ -1136,5 +1132,8 @@
   "Open-Source Hardware & Software": "أجهزة وبرمجيات مفتوحة المصدر",
   "Independent Decentralized Network Technologies": "تقنيات شبكات مستقلة مركزية",
   "Colorful 3D-Printed Cases of Your Choice": "حالات مطبوعة ثلاثية الأبعاد ملونة من اختيارك",
-  "Order Now": "اطلب الآن"
+  "Order Now": "اطلب الآن",
+  "Altruist": "المتفاني",
+  "3 highlights for you": "3 أضواء لك",
+  "Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“": "جدراننا الخاصة للاحتفال بإطلاق جهاز الاستشعار الخارجي 'المتفاني'"
 }
