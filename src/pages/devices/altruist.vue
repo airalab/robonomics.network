@@ -215,6 +215,7 @@ export default {
   .twitter-share {
     display: inline-flex;
     align-items: center;
+    padding: var(--space);
     gap: var(--space);
   }
 
@@ -225,6 +226,7 @@ export default {
 
   .twitter-share h2 {
     margin: 0;
+    margin-bottom: 10px;
     text-align: left;
   }
 
@@ -251,8 +253,11 @@ export default {
   }
 
   @media screen and (max-width: 460px)  {
+    .twitter-share {
+      padding: var(--space) calc(var(--space) * 1);
+    }
     .twitter-share h2 {
-      font-size: calc(var(--space)  * 1.1)
+      font-size: calc(var(--space)  * 1.08)
     }
   }
 
