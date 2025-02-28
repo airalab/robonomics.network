@@ -23,7 +23,7 @@
                         </ul>
                     </div>
                 </section>
-                <div class="product-buy__container" :class="{'oldy': showOrder}">
+                <div class="product-buy__container" :class="{'active': showOrder}">
                     <rb-button buttoncolor="black" block @click="showOrder = !showOrder">{{$t('Order Now')}}</rb-button>
                     <div :class="{'active': showOrder}">
                         <p class="italic-text">📦 {{$t('Choose your preferred shipping location for faster delivery!')}}</p>
@@ -141,7 +141,7 @@
                 const productBuy = document.querySelector('.product-buy__container');
                 let clickInside = productBuy.contains(e.target)
 
-                if(!clickInside && productBuy.classList.contains('oldy')) {
+                if(!clickInside && productBuy.classList.contains('active')) {
                     this.showOrder = false;
                 }
             })
@@ -221,17 +221,29 @@
         margin-bottom: calc(var(--space) * 0.3);
     }
 
-    .product-buy__container.oldy {
-        position: absolute;
-        right: 0;
-        text-align: center;
+    .product-buy__container {
+        background-color: transparent;
+        transition: all 0.6s ease-in-out; 
     }
 
-    .product-buy__container.oldy button {
+    .product-buy__container.active {
+        position: absolute;
+        right: 0;
+        min-height: 100px;
+        text-align: center;
+        background-color: var(--color-light);;
+        padding: calc(var(--space) * 0.5);
+        border: 1px solid var(--color-dark);
+        box-shadow: .3rem .3rem 0 var(--color-dark);
+        font-family: var(--font-family);
+        background-color: var(--color-light);
+    }
+
+    .product-buy__container.active button {
         margin-bottom: var(--space);
     }
 
-    .product-buy__container.oldy a {
+    .product-buy__container.active a {
         padding-right: 60px;
         background-image: url("data:image/svg+xml,%3Csvg width='44' height='16' viewBox='0 0 44 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M43.7071 8.70711C44.0976 8.31658 44.0976 7.68342 43.7071 7.29289L37.3431 0.928932C36.9526 0.538408 36.3195 0.538408 35.9289 0.928932C35.5384 1.31946 35.5384 1.95262 35.9289 2.34315L41.5858 8L35.9289 13.6569C35.5384 14.0474 35.5384 14.6805 35.9289 15.0711C36.3195 15.4616 36.9526 15.4616 37.3431 15.0711L43.7071 8.70711ZM0 9H43V7H0V9Z' fill='%232949D3'/%3E%3C/svg%3E%0A");
         background-position: right;
@@ -242,23 +254,25 @@
     .product-buy__container div {
         position: relative;
         height: 0;
-        transform: translateY(30px);
+        transform: translateY(100px);
         opacity: 0;
-        visibility: hidden;
+        visibility: hidden; 
         background-color: transparent;
-        transition: transform 0.5s ease-in-out, height 0.33s ease-in, background-color 0.5s ease;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
     }
 
     .product-buy__container div.active {
-        height: unset;
-        transform: translateY(0);
         opacity: 1;
         visibility: visible;
+        height: auto;
+        transform: translateY(0);
         background-color: var(--color-light);
     }
 
     .product-buy__container div p {
         margin-bottom: calc( var(--space) * 0.7);
     }
+
 
 </style>
