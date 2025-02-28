@@ -143,6 +143,10 @@ export default {
 
   @media screen and (max-width: 425px) {
 
+    .header-side {
+      align-items: center;
+   }
+
     .header-logo {
       margin-right: calc(var(--space) * 1.2);
     }

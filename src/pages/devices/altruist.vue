@@ -17,6 +17,28 @@
       <p>{{$t('Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our')}} <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">{{$t('decentralized sensor map')}}</g-link>.</p>
     </article>
 
+    <h2 class="layout title-lined"><span>{{ $t('In its natural habitat') }}</span></h2>
+
+    <article class="layout layout--text-center space-b-2">
+      <div class="grid-3 space-b-2 grid-with-scroll">
+        <g-image alt="altruist photo" quality="75" aria-hidden="true" src="~/assets/images/hardware-2025/altruist-photo-6.webp"/>
+        <g-image alt="altruist photo" quality="75" aria-hidden="true" src="~/assets/images/hardware-2025/altruist-photo.webp"/>
+        <g-image alt="altruist photo" quality="75" aria-hidden="true" src="~/assets/images/hardware-2025/altruist-photo-2.webp"/>
+        <g-image alt="altruist photo" quality="75" aria-hidden="true" src="~/assets/images/hardware-2025/altruist-photo-3.webp"/>
+        <g-image alt="altruist photo" quality="75" aria-hidden="true" src="~/assets/images/hardware-2025/altruist-photo-4.webp"/>
+        <g-image alt="altruist photo" quality="75" aria-hidden="true" src="~/assets/images/hardware-2025/altruist-photo-5.webp"/>
+      </div>
+
+      <div class="twitter-share oldy">
+        <g-image alt="altruist photo" quality="75" aria-hidden="true" src="~/assets/images/twitter.webp"/>
+        <div>
+          <h2>📸 {{ $t('Share Your “Altruist” in Action') }}</h2>
+          <p class="text-center"><b>{{$t('Tag')}} <g-link to="https://x.com/RobonomicsHW">@RobonomicsHW</g-link> {{$t('(Robonomics Hardware) in your post with a photo.')}}</b></p>
+        </div>
+      </div>
+    </article>
+
+
     <h2 class="layout title-lined"><span>{{ $t('3 highlights for you') }}</span></h2>
 
     <article class="layout space-b-2">
@@ -190,9 +212,48 @@ export default {
     display: none;
   }
 
+  .twitter-share {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space);
+  }
+
+  .twitter-share img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .twitter-share h2 {
+    margin: 0;
+    text-align: left;
+  }
+
+  .twitter-share p {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .twitter-share p b {
+    font-variation-settings: var(--font-flex-bold);
+  }
+
   @media screen and (width < 600px) {
     .model-gorizontal { display: block; }
     .model-vertical { display: none; }
+
+
+  }
+
+  @media screen and (max-width: 560px)  {
+    .twitter-share h2 {
+      font-size: calc(var(--space) * 0.8)
+    }
+  }
+
+  @media screen and (max-width: 460px)  {
+    .twitter-share h2 {
+      font-size: calc(var(--space)  * 1.1)
+    }
   }
 
   .text-big {

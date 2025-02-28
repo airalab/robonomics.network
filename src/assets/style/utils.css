@@ -51,6 +51,39 @@
   grid-template-columns: repeat(2,1fr);
 }
 
+*[class*='grid-'].grid-valign-top {
+    align-items: start;
+  }
+
+.grid { display: grid; }
+
+.grid-with-scroll {
+  max-height: calc((550px * 2) + (var(--space) * 2) ); 
+  padding: 0 42px;
+  overflow-y: auto; 
+}
+
+.grid-with-scroll::-webkit-scrollbar {
+  width: 8px; /* Set width of the scrollbar */
+}
+
+.grid-with-scroll::-webkit-scrollbar-track {
+  background: #fff; /* Track background */
+  border: 1px solid #000;
+}
+
+.grid-with-scroll::-webkit-scrollbar-thumb {
+  background: #000000; /* Scrollbar thumb color */
+}
+
+.grid-with-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue); /* Scrollbar thumb hover color */
+}
+
+.grid-with-scroll::-webkit-scrollbar-button {
+  background: transparent; /* Optional: make buttons invisible if you want */
+}
+
 @media screen and (max-width:880px){
   .grid-5 { grid-template-columns: 1fr; }
 }
@@ -58,6 +91,11 @@
 @media screen and (max-width:990px){
   .grid-4 { grid-template-columns: repeat(2,1fr); }
   .grid-3 { grid-template-columns: 1fr; }
+  .grid-with-scroll {
+    padding: 0;
+    max-height: unset;
+    overflow: unset;
+  }
 }
 
 @media screen and (max-width:570px){
@@ -65,11 +103,6 @@
   .grid-2 { grid-template-columns: 1fr; }
 }
 
-*[class*='grid-'].grid-valign-top {
-    align-items: start;
-  }
-
-.grid { display: grid; }
 
 .youtube-embed {
   margin-bottom: var(--space);
@@ -276,4 +309,10 @@ li.space-b-05 {
   overflow: hidden;
   text-indent: -9999px;
   z-index: 1000;
+}
+
+.italic-text {
+  font-size: calc(var(--base-font-size) * 0.75);
+  font-variation-settings: 'wght' 500, 'wdth' 100, 'opsz' 26, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712,  'slnt' -10;
+  letter-spacing: 1px;
 }
