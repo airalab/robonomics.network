@@ -23,7 +23,7 @@
                         </ul>
                     </div>
                 </section>
-                <div class="product-buy__container" :class="{'active': showOrder}">
+                <div class="product-buy__container" :class="{'oldy active': showOrder}">
                     <rb-button buttoncolor="black" block @click="showOrder = !showOrder">{{$t('Order Now')}}</rb-button>
                     <div :class="{'active': showOrder}">
                         <p class="italic-text">📦 {{$t('Choose your preferred shipping location for faster delivery!')}}</p>
@@ -169,7 +169,6 @@
 
     section {
         max-width: 500px;
-        /* margin: calc(var(--space)*2) auto calc(var(--space)*3); */
     }
 
     .price {
@@ -221,26 +220,20 @@
         margin-bottom: calc(var(--space) * 0.3);
     }
 
-    .product-buy__container {
-        background-color: transparent;
-        transition: all 0.6s ease-in-out; 
-    }
-
     .product-buy__container.active {
         position: absolute;
         right: 0;
-        min-height: 100px;
         text-align: center;
-        background-color: var(--color-light);;
-        padding: calc(var(--space) * 0.5);
-        border: 1px solid var(--color-dark);
-        box-shadow: .3rem .3rem 0 var(--color-dark);
-        font-family: var(--font-family);
-        background-color: var(--color-light);
+        transition: none;
     }
 
     .product-buy__container.active button {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
         margin-bottom: var(--space);
+        z-index: 5;
+        cursor: pointer;
     }
 
     .product-buy__container.active a {
@@ -253,21 +246,13 @@
 
     .product-buy__container div {
         position: relative;
-        height: 0;
-        transform: translateY(100px);
-        opacity: 0;
-        visibility: hidden; 
-        background-color: transparent;
+        padding: 0 calc(var(--space)* 0.8);
         text-align: center;
-        transition: all 0.4s ease-in-out;
+        display: none;
     }
 
     .product-buy__container div.active {
-        opacity: 1;
-        visibility: visible;
-        height: auto;
-        transform: translateY(0);
-        background-color: var(--color-light);
+        display: block;
     }
 
     .product-buy__container div p {
