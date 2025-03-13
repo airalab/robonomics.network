@@ -8,7 +8,7 @@
       pageImage="/og-pics/devices-hikikomori.webp"
     />
 
-    <DeviceBuySection price="$75">
+    <DeviceBuySection price="$75" :title="hikikomori[0].title" :orderLinks="hikikomori[0].orderLinks" :available="hikikomori[0].available">
       <g-image src="~/assets/images/hardware-2025/hikikomori.webp" alt="Hikikomori smart Tamagotchi picture'" />
     </DeviceBuySection>
 

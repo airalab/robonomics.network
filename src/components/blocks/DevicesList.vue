@@ -9,10 +9,6 @@
             </h2>
 
             <p v-if="product.text" v-html="product.text" />
-            <!-- <template v-if="product.cases">
-            <h5>{{ $t('Use cases') }}:</h5>
-            <p>{{product.cases}}</p>
-            </template> -->
 
             <div class="product-picture">
               <ModelAltruist v-if="product.code === 'altruist'" />
@@ -77,6 +73,15 @@ export default {
   .product {
     margin-top: calc(var(--space) * 3);
     margin-bottom: calc(var(--space) * 3);
+  }
+
+  .product p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    text-align: center;
+
   }
 
   .product-picture {
