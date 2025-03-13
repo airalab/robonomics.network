@@ -62,6 +62,7 @@ export default {
         font-variation-settings: var(--font-flex-extrabold);
         font-size: 3rem;
         line-height: 1;
+        hyphens: auto;
     }
 
     .price-desc {
