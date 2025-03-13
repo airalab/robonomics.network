@@ -65,6 +65,7 @@ h5 {
 
 .title-lined {
   position: relative;
+  hyphens: auto;
 }
 
 .title-lined:before {
