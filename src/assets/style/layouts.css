@@ -141,6 +141,14 @@
 	text-align: center;
 }
 
+.layout li {
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Ensures text breaks properly */
+  white-space: normal;  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Ensures text breaks properly */
+  white-space: normal; 
+}
+
 .page hr.animate {
 	transform-origin: 50% 50%;
 	transform: scaleX(0);

@@ -8,12 +8,12 @@
       :pageImage = "'/og-pics/devices-altruist.webp'"
     />
 
-    <DeviceBuySection price="$95">
+    <DeviceBuySection price="$95" :title="altruist[0].title" :orderLinks="altruist[0].orderLinks" :available="altruist[0].available">
       <ModelAltruist noanimation />
     </DeviceBuySection>
 
     <article class="text-big layout layout__content space-b-2">
-      <p>{{ $t('With the Altruist Outdoor Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data—encrypted, mapped, and shared across a distributed network.') }}</p>
+      <p>{{ $t('With the Altruist Air Quality Sensor, you become a force in decentralized environmental monitoring. Capture noise, dust, and temperature data — signed, mapped, and shared across a distributed network.') }}</p>
       <p>{{$t('Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our')}} <g-link aria-label="go to decentralized sensor map" to="https://sensors.social/">{{$t('decentralized sensor map')}}</g-link>.</p>
     </article>
 
@@ -203,13 +203,19 @@ export default {
 </script>
 
 <style scoped>
-  /* .model {
-    margin: var(--space) auto;
-    max-width: 600px;
-  } */
 
   .model-gorizontal {
     display: none;
+  }
+
+  .text-big {
+    font-weight: 500;
+    max-width: calc(980px + (var(--space) * 2));
+  }
+
+  .text-big a {
+    color: var(--color-dark);
+    text-decoration: underline;
   }
 
   .twitter-share {
@@ -261,7 +267,4 @@ export default {
     }
   }
 
-  .text-big {
-    font-weight: 500;
-  }
 </style>
