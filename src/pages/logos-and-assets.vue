@@ -42,6 +42,25 @@
           />
         </ul>
 
+        <!-- hardware -->
+        <div class="logos-and-assets__header">
+          <h2>{{$t('Robonomics Hardware logos')}}</h2>
+          <a href="/logos/logos-robonomics-hw.zip" download>{{ $t('Download all') }}</a>
+        </div>
+
+        <ul class="logos__wrapper logos__hardware grid-3 list-simple">
+          <LogosItem 
+            class="logos-and-assets__item"
+            v-for="logo in hwLogos"
+            :key="logo.id"
+            :srcImg="logo.srcImg"
+            :alt="logo.alt"
+            :srcPNG="logo.srcPNG"
+            :srcSVG="logo.srcSVG"
+            :itemBackground="logo.background"
+          />
+        </ul>
+
         <!-- XRT -->
         <div class="logos-and-assets__header">
           <h2>{{$t('XRT logos')}}</h2>
@@ -232,6 +251,31 @@ export default {
           srcPNG: '/logos/logos-rws/rws-logo.png',
           srcSVG: '/logos/logos-rws/rws-logo.svg'
         }
+      ],
+      hwLogos: [
+        {
+          id: 0,
+          srcImg: 'robo-hw-logo-blue.svg',
+          alt: "robonomics hardware logo blue",
+          srcPNG: '/logos/logos-robonomics-hw/robo-hw-logo-blue.png',
+          srcSVG: '/logos/logos-robonomics-hw/robo-hw-logo-blue.svg',
+          background: 'light'
+        },
+        {
+          id: 1,
+          srcImg: 'robo-hw-logo-white.svg',
+          alt: "robonomics hardware white",
+          srcPNG: '/logos/logos-robonomics-hw/robo-hw-logo-white.png',
+          srcSVG: '/logos/logos-robonomics-hw/robo-hw-logo-white.svg',
+          background: 'alto'
+        },
+        {
+          id: 2,
+          srcImg: 'robo-hw-logo-black.svg',
+          alt: "robonomics hardware black",
+          srcPNG: '/logos/logos-robonomics-hw/robo-hw-logo-black.png',
+          srcSVG: '/logos/logos-robonomics-hw/robo-hw-logo-black.svg',
+        },
       ]
     }
   }
