@@ -8,7 +8,7 @@
       pageImage="/og-pics/devices-e-monitor.webp"
     />
 
-    <DeviceBuySection price="$45" :title="eMonitor[0].title" :orderLinks="eMonitor[0].orderLinks" :available="eMonitor[0].available">
+    <DeviceBuySection price="$45" :title="eMonitor[0].title" :orderLinks="eMonitor[0].orderLinks" :info="eMonitor[0].info"  :available="eMonitor[0].available">
       <g-image src="~/assets/images/hardware-2025/energy-monitor-nobg.webp" alt="energy-monitor picture" />
     </DeviceBuySection>
 

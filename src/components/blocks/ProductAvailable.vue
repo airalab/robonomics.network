@@ -3,10 +3,11 @@
     <section class="lined">
       <div class="price-number">{{ title }}</div>
       <PriceSection :price="price" :message1="$t('Now Available!')" :message2="$t('Worldwide Shipping')" />
-      <ul v-if="$route.path.includes('altruist')">
-        <li class="italic-text">{{$t('Open-Source Hardware & Software')}}</li>
+      <ul>
+        <li class="italic-text" v-for="item in info" :key="item">{{item}}</li>
+        <!-- <li class="italic-text">{{$t('Open-Source Hardware & Software')}}</li>
         <li class="italic-text">{{$t('Independent Decentralized Network Technologies')}}</li>
-        <li class="italic-text">{{$t('Colorful 3D-Printed Cases of Your Choice')}}</li>
+        <li class="italic-text">{{$t('Colorful 3D-Printed Cases of Your Choice')}}</li> -->
       </ul>
     </section>
     <div class="product-buy__container" :class="{ 'active oldy': showOrder }">
@@ -28,7 +29,7 @@ import OrderLink from "@/components/blocks/OrderLink.vue";
 
 export default {
   components: { PriceSection, OrderLink },
-  props: { title: String, price: String, showOrder: Boolean, orderLinks: Array },
+  props: { title: String, price: String, showOrder: Boolean, orderLinks: Array, info: Array },
 };
 </script>
 
@@ -60,9 +61,13 @@ export default {
 
     .price-number {
         font-variation-settings: var(--font-flex-extrabold);
-        font-size: 3rem;
+        font-size: calc(var(--space) * 1.3);
         line-height: 1;
-        hyphens: auto;
+    }
+
+    html[lang="de"] .price-number,
+    html[lang="nl"] .price-number {
+      hyphens: auto;
     }
 
     .price-desc {
@@ -133,6 +138,12 @@ export default {
 
     .product-buy__container div p {
         margin-bottom: calc( var(--space) * 0.7);
+    }
+
+    @media screen and (max-width: 460px) {
+      .price-number {
+        font-size: calc(var(--space) * 1.8);
+      }
     }
 
 
