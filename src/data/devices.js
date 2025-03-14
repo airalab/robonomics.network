@@ -82,7 +82,8 @@ export default {
             }
           ]
         }
-      ]
+      ],
+      info: [t('Open-Source Hardware & Software'), t('Independent Decentralized Network Technologies'), t('Colorful 3D-Printed Cases of Your Choice')]
     },
     {
       code: 'server',
@@ -172,7 +173,8 @@ export default {
             }
           ]
         }
-      ]
+      ],
+      info: [t('Multi-tool Device for developers'), t('Design your own software'), t('OPEN-SOURCE HARDWARE'), t('Extend it in whatever way you like')]
     },
     {
       code: 'energy-monitor',
@@ -253,7 +255,8 @@ export default {
           ]
           
         }
-      ]
+      ],
+      info: [t('Real-time monitor of electricity consumption'), t('INDEPENDENT DECENTRALIZED data backup'), t('OPEN-SOURCE HARDWARE & SOFTWARE')]
     },
   ],
 }
