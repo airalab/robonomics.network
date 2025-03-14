@@ -8,6 +8,7 @@
           :price="price" 
           :showOrder="showOrder"
           :orderLinks="orderLinks"
+          :info="info"
           @toggle-order="toggleOrder" 
         />
       </template>
@@ -77,6 +78,10 @@
         required: true
       },
       orderLinks: {
+        type: Array,
+        required: true
+      },
+      info: {
         type: Array,
         required: true
       },
@@ -152,7 +157,7 @@
   <style scoped>
   .section-vivid-green {
     position: relative;
-    min-height: 405px;
+    min-height: 460px;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     gap: calc(var(--space) * 2);

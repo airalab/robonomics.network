@@ -8,7 +8,7 @@
       :pageImage = "'/og-pics/devices-altruist.webp'"
     />
 
-    <DeviceBuySection price="$95" :title="altruist[0].title" :orderLinks="altruist[0].orderLinks" :available="altruist[0].available">
+    <DeviceBuySection price="$95" :title="altruist[0].title" :orderLinks="altruist[0].orderLinks" :info="altruist[0].info" :available="altruist[0].available">
       <ModelAltruist noanimation />
     </DeviceBuySection>
 
