@@ -157,7 +157,7 @@
   <style scoped>
   .section-vivid-green {
     position: relative;
-    min-height: 498px;
+    min-height: 548px;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     gap: calc(var(--space) * 2);
@@ -165,6 +165,12 @@
     margin-top: calc(var(--space) * 2);
     margin-bottom: calc(var(--space) * 2);
     z-index: 15;
+  }
+
+  @media screen and (max-width: 900px) {
+    .section-vivid-green {
+      min-height: 498px;
+    }
   }
   
   @media screen and (max-width: 600px) {
