@@ -62,6 +62,10 @@ export default {
     margin-bottom: var(--space);
   }
 
+  .logos__hardware img {
+    width: 50%;
+  }
+
   .logos__links {
     display: flex;
     align-items: center;

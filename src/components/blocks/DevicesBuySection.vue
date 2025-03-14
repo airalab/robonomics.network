@@ -157,7 +157,7 @@
   <style scoped>
   .section-vivid-green {
     position: relative;
-    min-height: 460px;
+    min-height: 498px;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     gap: calc(var(--space) * 2);
