@@ -143,7 +143,7 @@
 
     mounted() {
       window.document.addEventListener('click', (e) => {
-        const productBuy = document.querySelector('.product-buy__container');
+        const productBuy = document.querySelector('.product-buy__wrapper');
         let clickInside = productBuy.contains(e.target)
 
         if(!clickInside && productBuy.classList.contains('active')) {
@@ -157,7 +157,7 @@
   <style scoped>
   .section-vivid-green {
     position: relative;
-    min-height: 548px;
+    min-height: 564px;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     gap: calc(var(--space) * 2);

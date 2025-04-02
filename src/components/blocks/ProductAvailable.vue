@@ -5,20 +5,19 @@
       <PriceSection :price="price" :message1="$t('Now Available!')" :message2="$t('Worldwide Shipping')" />
       <ul>
         <li class="italic-text" v-for="item in info" :key="item">{{item}}</li>
-        <!-- <li class="italic-text">{{$t('Open-Source Hardware & Software')}}</li>
-        <li class="italic-text">{{$t('Independent Decentralized Network Technologies')}}</li>
-        <li class="italic-text">{{$t('Colorful 3D-Printed Cases of Your Choice')}}</li> -->
       </ul>
     </section>
-    <div class="product-buy__container" :class="{ 'active oldy': showOrder }">
+    <div class="product-buy__wrapper" :class="{ 'active': showOrder }">
       <rb-button buttoncolor="black" block @click="$emit('toggle-order')">
         {{$t('Order Now')}}
       </rb-button>
+    <div class="product-buy__container" :class="{ 'active oldy': showOrder }">
       <div v-if="showOrder" class="active">
         <ul>
           <OrderLink v-for="orderLink in orderLinks" :key="orderLink.id" :link="orderLink.link" :flag="orderLink.flag" :text="orderLink.label" :region="orderLink.region"  :payments="orderLink.payments" :title="title" />
         </ul>
       </div>
+    </div>
     </div>
   </section>
 </template>
@@ -94,6 +93,10 @@ export default {
         margin-bottom: calc(var(--space) * 0.3);
     }
 
+    .product-buy__wrapper.active button {
+      margin-bottom: calc(var(--space) * 0.5);
+    }
+
     .product-buy__container.active {
         position: absolute;
         right: 0;
@@ -102,20 +105,6 @@ export default {
         text-align: center;
         transition: none;
         box-shadow: none;
-    }
-
-    .product-buy__container.active button {
-        position: relative;
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: calc( var(--space) * 0.5);
-        z-index: 5;
-        cursor: default;
-        box-shadow: none;
-    }
-
-    .product-buy__container.active button:hover {
-      background-color: var(--color-dark);
     }
 
     .product-buy__container.active a {
