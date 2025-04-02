@@ -76,6 +76,7 @@ export default {
   background-position: 98% 17px;
   background-repeat: no-repeat;
   font-variation-settings: 'wght' 800, 'wdth' 100, 'opsz' 26, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712,  'slnt' -10;
+  cursor: pointer;
 }
 
 .order-item .region {

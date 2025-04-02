@@ -143,7 +143,7 @@
 
     mounted() {
       window.document.addEventListener('click', (e) => {
-        const productBuy = document.querySelector('.product-buy__container');
+        const productBuy = document.querySelector('.product-buy__wrapper');
         let clickInside = productBuy.contains(e.target)
 
         if(!clickInside && productBuy.classList.contains('active')) {
