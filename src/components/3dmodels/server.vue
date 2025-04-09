@@ -230,7 +230,7 @@ export default {
 }
 
 .model .img:nth-child(2) {
-  z-index: 9;
+  z-index: 11;
   transform: translateY(calc(var(--opengap) * var(--koef) * 4));
 }
 
