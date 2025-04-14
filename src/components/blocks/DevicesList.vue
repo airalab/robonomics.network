@@ -13,7 +13,6 @@
             <div class="product-picture">
               <ModelAltruist v-if="product.code === 'altruist'" />
               <ModelRiskV v-if="product.code === 'server'" class="product-picture-server" />
-              <ModelSwitch v-if="product.code === 'server'" class="product-picture-switch" />
 
               <g-image class="product-picture--hikikomori" v-if="product.code === 'hikikomori'" src="~/assets/images/hardware-2025/hikikomori.webp" :alt="product.title + ' picture'" />
               <g-image class="product-picture--energy-monitor" v-if="product.code === 'energy-monitor'" src="~/assets/images/hardware-2025/energy-monitor.webp" :alt="product.title + ' picture'" />
@@ -46,7 +45,6 @@ export default {
 
   components: {
     ModelRiskV: () => import ('@/components/3dmodels/server.vue'),
-    ModelSwitch: () => import ('@/components/3dmodels/switch.vue'),
     ModelAltruist: () => import ('@/components/3dmodels/altruist.vue'),
   },
 
