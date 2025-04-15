@@ -1,0 +1,106 @@
+---
+title: De ultieme gids voor Robonomics, RWS en Robonomics parachain op Polkadot
+date: 2021-02-25
+published: true
+locale: 'nl'
+cover_image: /blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-logo.jpg
+description: "Dit artikel duikt in de verbinding tussen het Robonomics-platform, zijn parachain in het Polkadot-ecosysteem en de Robonomics Web Services (RWS)"
+abstract: "Dit artikel duikt in de verbinding tussen het Robonomics-platform, zijn parachain in het Polkadot-ecosysteem en de Robonomics Web Services (RWS)"
+tags: ['Robonomics parachain', 'RWS-token', 'Abonnement']
+---
+
+Rekening houdend met de eindeloze discussies over de ruggengraatwerking van Robonomics, laten we de onderliggende structuur onderzoeken en de belangrijkste pijlers van het netwerk schetsen. Dit artikel duikt in de verbinding tussen het Robonomics-platform, zijn [parachain](https://blog.aira.life/robonomics-parachain-on-kusama-40853780c709) in het Polkadot-ecosysteem en de [Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42) (RWS).
+
+Het Robonomics Network bestaat uit meerdere [code-repositories](https://github.com/airalab) die afzonderlijk kunnen worden gebruikt bij de implementatie van een volledig IoT-toepassing. Als je bijvoorbeeld van plan bent om je smartphone te verbinden met een IoT-apparaat, is het niet voldoende om een app te ontwikkelen en een reeks sensoren eraan te koppelen. In plaats daarvan moet je een [reeks acties](https://blog.aira.life/simple-iot-scheme-990224363803) uitvoeren die uiteindelijk leiden tot een verbonden IoT-apparaat en onderling verbonden elementen van de infrastructuur, waardoor het signaal van het apparaat jou kan bereiken.
+
+## De chronologie van de ontwikkeling van het Robonomics Network
+
+Hoe is het idee ontstaan om de [Robonomics parachain](https://parachain.robonomics.network/#/explorer) en het [Robonomics Network](https://robonomics.network/land/say-hello-to-robonomics/) te creëren? Oorspronkelijk, in de periode 2015-2017, begonnen we met de ontwikkeling van een vrij complexoplossing noemen we de [Economie van Robots](https://blog.aira.life/the-first-in-the-economy-of-robots-6f4bb115643b). We zijn ervan overtuigd dat dit precies is waar slimme steden, industrie 4.0 en de ontwikkeling van IoT-apps naartoe zullen gaan.
+
+Ons primaire doel was het creëren van software voor cyber-fysieke systemen die autonome en onafhankelijke apparaten kunnen beheren binnen het technische en economische transactiekader. Daarom besloten we een technische en economiegerichte transactie te genereren en deze te laten dienen als basis voor de ontwikkeling van complexere processen.
+
+Een van mijn favoriete scenario's van de Economie van Robots heet [Smart Building Offsetting](https://new.dapp.ipci.io/#/offsetting). Het is een dienst die een autonoom gebouw in staat stelt informatie te verzamelen en te aggregeren over zijn energieverbruik en dit vervolgens te communiceren met een andere agent binnen het Robonomics Network, en zelfs verzoeken om compensatiediensten voor de koolstofvoetafdruk. Op zijn beurt verifieert de agent de locatie van het gebouw, berekent een toepasselijke CO2-emissiecoëfficiënt en synchroniseert deze gegevens vervolgens met een partnerproject [DAO IPCI](http://ipci.io/), om het aantal koolstofkredieten uit de groene financiële markt te bepalen dat nodig is om de koolstofvoetafdruk van het gebouw te compenseren. Deze operaties werden succesvol uitgevoerd op de Ethereum blockchain.
+
+### De oplossing voor het probleem
+
+Vandaag de dag omvat de Economie van Robots die we in 2017 met onze collega's en partners hebben weten op te bouwen, een op het eerste gezicht ingewikkelde keten, die fungeert als de uiteindelijke stap in de evolutie van de IoT-industrie. Het grootste probleem dat we hadden was dat we alle kennis verzamelden en onze ideeën realiseerden, zonder de kans te krijgen om ze aan iemand over te dragen. Elk nieuw [scenario van de Economie van Robots](https://wiki.robonomics.network/docs/r-and-d-based-on-robonomics-network/), gecreëerd tijdens de ontwikkeling van het Robonomics Network-platform, maakte het eindproduct steeds wat moeilijker te begrijpen voor mensen die niet bekend zijn met de materie. Met andere woorden, men moet vertrouwd zijn met meerdere competenties en jaren besteden om de gedachtegang achter de elkaar kruisende disciplines die de concepten van economie en machines die samenwerken vormen, te begrijpen.
+
+Wanneer je de nuances achter de ontwikkeling van een IoT-toepassing begint te begrijpen, wordt al snel duidelijk dat technische specialisten jaren moeten besteden om een volledig functionerend product te bereiken. Daarom besloten we potentiële gebruikers van ons platform om te vormen tot mede-ontwikkelaars. We richtten ons op het opleiden van hen om professionele IT-ingenieurs te worden in de ruimte van IoT-toepassingen en zo.Als resultaat hebben we Robonomics parachain en Robonomics Web Services gecreëerd.
+
+![DAO IPCI met Robonomics-netwerk](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network.jpg)
+
+
+## Kennismaking met Robonomics Web Services
+
+Het is duidelijk dat de Economie van Robots interessant is voor het publiek. Desalniettemin is het grootste probleem dat deze gebruikers na korte tijd nog steeds naar Amazon Web Services gaan voor IoT-apparaten en dat in plaats daarvan gaan gebruiken, zonder de kritieke voordelen te begrijpen die het Robonomics Network biedt in vergelijking met de bekende IT-reuzen. Dit bracht ons tot de conclusie dat we niet alleen beloftes kunnen doen over iets in de toekomst zonder hier en nu een echt product te leveren.
+
+Daarom hebben we besloten dat een reeks echte diensten moet worden geleverd aan onze potentiële gebruikers. Diensten vergelijkbaar met wat andere cloudplatforms aanbieden maar beter. Als resultaat hebben we Robonomics Web Services gecreëerd, een product gebouwd op onze in-house protocollen en platform dat gebruikmaakt van een open-source robotica-framework (ROS). Vervolgens hebben we 2 jaar gewijd aan de ontwikkeling van de belangrijkste functies waar ik nu dieper op in zal gaan.
+
+### De belangrijkste functies van RWS:
+
+**1. Abonnement**
+
+De standaardbenadering van blockchain-diensten omvat altijd transactiekosten die bekend staan als transactiekosten of transactiegas. Dit betekent dat wanneer u een transactie uitvoert, de prioriteit ervan afhankelijk is van de kosten of vergoeding die u bereid bent ervoor te betalen. Hoe hoger de vergoeding die u betaalt, hoe sneller uw transactie zal worden verwerkt. Zo'n model is niet geschikt voor systemen die vertrouwen op gegarandeerde bandbreedte. U moet er absoluut zeker van zijn dat uw apparaat in staat zal zijn om een transactie te doen op het ingestelde tijdstip en tegen een voorspelbare kostprijs. Dit is iets wat we vandaag de dag niet vaak zien, aangezien transactiekosten volledig afhankelijk zijn van de schommelingen van de wisselkoersen, soms oplopend tot $50 aan kosten.
+
+Om dit probleem op te lossen, hebben we een Abonnementsservice gecreëerd, die een alternatief kostmodel is op de Robonomics parachain voor Polkadot. Het garandeert de uitvoering van een vooraf betaald aantal transacties en kent deze een hogere prioriteit toe in vergelijking met transacties die worden betaald via het vergoedingsmodel. Voor meer informatie over het verschil tussen maandelijks Abonnement en XRT-tokens kunt u teruggaan naar mijn '[Heterogene tokenomics](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855)' artikel, terwijl mijn andere stuk geplandwordt eind december vrijgegeven en zal de definitieve architectuur en interconnectie van de twee modellen schetsen.
+
+Ons abonnementsmodel lost niet alleen het gegarandeerde overgangsprobleem op, maar kost ook slechts $10 per apparaat, waardoor het een uiterst winstgevend aanbod is voor de eindgebruiker. Bovendien biedt het een stabiele bandbreedte voor duizenden maandelijkse transacties, wat een behoorlijke prestatie is.
+
+**2. Lancering**
+
+Lancering is een zeer eenvoudige maar economische functie vanuit het oogpunt van het gebruik van rekenkracht en blockchain. Het stelt je in staat om je apparaat aan of uit te zetten en de binaire instelling ervan te wijzigen van 1 naar 0 en terug door een verzoek te sturen in de vorm van een transactie. Aangezien er niet veel complexiteit verbonden is aan deze functie, laten we doorgaan naar de volgende kritieke pijler.
+
+**3. Datalog**
+
+Deze functie werkt met telemetrie en vereist daarom dat ik er verder op inga. Het werkt in twee modi waarbij je ofwel je IPFS-hashes opslaat of gegevens op de keten bewaart.
+
+Hoe gebruik je deze modi? De on-chain datalogfunctie is van toepassing wanneer de grootte van je gegevens onder de vier variabelen ligt. Er is gewoon geen punt om een ​​dergelijke kleine hoeveelheid gegevens op IPFS (off-chain) op te slaan, aangezien deze on-chain log qua bytes niet incrementeel groter zal zijn dan de IPFS-hash. We raden aan om de volledige ruwe data-inflow op te nemen als een enkele functie of te kiezen voor de IPFS-hash. Vervolgens zal Robonomics als platform voor ontwikkelaars de opgenomen gegevens verwerken, of het nu rauw is of in de vorm van een IPFS-hash, en beslissen waar het moet worden geschreven. Deze datalog-verwerking zal verborgen zijn voor de eindgebruiker en hij/zij zal zelfs het verschil tussen twee verschillende soorten opslag niet opmerken.
+
+'Liability' is onze laatste functie, maar deze wordt niet vrijgegeven aan het publiek totdat we de doelen kennen die grootschalige Economy of Robots-projecten nastreven. Een ander mijlpaalproduct voor ons waar we aan werken, is gericht op [Robot as a Service](https://blog.aira.life/what-is-robonomics-network-robot-as-a-service-and-future-parachain-of-polkadot-or-something-more-36deece9f3cb) framework, of zoals wij het noemen, de 'contractueel verplichte robot' op Ethereum. [Deze infrastructuur](https://blog.aira.life/robots-under-robonomics-control-overview-39337ac9fbbb) is al in volledige detail beschreven in onze kennisbank en impliceert een situatie waarin de eindgebruiker onze service tokens gebruikt.zonder te vertrouwen op XRT of andere tokens om te betalen voor parachain-gebruik.
+
+![De belangrijkste functies van Robonomics Web Services (RWS)](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-rws.jpg)
+
+## Wat is de connectie tussen RWS en de Economie van Robots?
+
+Zoals eerder vermeld, is een van de doelen achter Robonomics Web Services om onze gebruikers op te leiden en van hen mede-ontwikkelaars te maken die de Economie van Robots begrijpen. We geloven dat deze taak niet ingewikkeld is zolang de gebruiker vertrouwd raakt met de basisfunctionaliteit die hierboven is besproken.
+
+### Digitale Tweelingen
+
+De volgende stap bij het toepassen van de instrumenten die Robonomics Web Services biedt, is om te leren hoe je een Digitale Tweeling kunt maken, ook wel bekend als een Digitale Schaduw voor de app. Het fungeert als een digitale versie van de echte apparatuur en kopieert al zijn technische kenmerken.
+
+Wat betekent dit hoor ik je vragen! Laten we een ingewikkelde structuur van sensoren die de luchtkwaliteit meten als voorbeeld nemen. Je kunt ze niet elke 5 seconden metingen laten doen omdat hun interne kalibratie en balancering van gemeten gegevens 2 minuten in beslag neemt. Hier komt een Digitale Tweeling van pas, waardoor we een app kunnen maken die reageert op de commando's van de gebruiker.
+
+Volgens het [Gartner-rapport over IoT-markttrends](https://www.gartner.com/en/innovation-strategy/trends/iot-adoption-trends) heeft 85% van de bedrijven die deel uitmaakten van de studie al Digitale Tweelingen geïmplementeerd of zijn van plan dit in de loop van het komende jaar te doen. De meeste van deze bedrijven hebben interne engineeringteams die werken aan eigen oplossingen. Desalniettemin erkennen ze allemaal dat ze moeten vertrouwen op reeds bestaande oplossingen om snel te kunnen opschalen en hun diensten aanpasbaar te houden aan de voortdurend veranderende omgeving van de IoT-industrie.
+
+Daarom biedt onze parachain op het Robonomics Network niet alleen de eerder genoemde functies die niet beschikbaar zijn op Ethereum IPFS, maar stelt het onze gebruikers ook in staat om Digitale Tweelingen van hun apparaten te maken.
+
+We ontwikkelen deze functie om gebruikers in staat te stellen hun eigen Digitale Tweelingen te bouwen, ze te interpreteren op webdiensten/IoT-apps en ze vooral op te slaan als een model dat de datalog zal schrijven. Onze [Wiki](http://wiki.robonomics.network/) wordt voortdurend bijgewerkt met alle benodigde kennis om de eerder genoemde oplossingen uit te voeren en zal binnenkort compleet zijn met basisinformatie die een Digitale Tweeling van A tot Z uitlegt.
+
+### Het toepassen van DigitaalTweelingen
+
+Zodra het gegevensverwerkingsmodel is afgerond en je Digitale Tweeling volledig gestructureerd is, moet je beslissen wat de relatie zal zijn met de webservice of een IoT-toepassing.
+
+Analyse is vaak de gebruikelijke keuze voor een dergelijke digitale service, waarbij een sensor je de gegevens stuurt die het meet (bijwerkt van zijn digitale kopie). Deze gegevens zullen hoogstwaarschijnlijk worden onderworpen aan post-processing, aangezien het zeer onwaarschijnlijk is dat je geïnteresseerd bent in de Pascal-drukwaarde binnenin je landhuisverwarmingssysteem. In plaats daarvan moet je weten of de temperatuur in het huis juist is en of het verwarmingssysteem nog steeds aan staat. Je moet in feite beslissen hoe je de digitale tweeling van de gegevens die je erop hebt opgeslagen, kunt toepassen en hier kunnen aanvullende diensten helpen.
+
+Nu gaan we over naar een complex scenario van Slimme Gebouwcompensatie, waar een kopie van energieverbruiksgegevens fungeert als een digitale tweeling. Laten we zeggen dat je energieverbruiksgegevens voor een bepaald appartement wilt opslaan en de Datalog-functie met IPFS-opslag ervoor wilt gebruiken. Als je wilt weten wat het totale energieverbruik is, zou je het op de keten opslaan. Aan de andere kant, stel je voor dat we een digitale tweeling van het slimme gebouw laten draaien. De Compensatiedienst zal deze digitale tweeling regelmatig vragen om verschillende gegevens over energieverbruik te verstrekken, deze opslaan en na het uitvoeren van off-chain berekeningen, verbinding maken/met Robonomics om de vereiste diensten te leveren.
+
+We hebben dergelijke diensten verzameld in een gespecialiseerde [marktplaats](https://robonomics.app/#/services) die fungeert als een App Store voor robots.
+
+![Decentrale toepassing, dapp in Robonomics-netwerk](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-dapp.jpg)
+
+## Het begrijpen van de Marktplaats
+Om een model van onderling verbonden digitale tweelingen en diensten te implementeren, moeten we een leveringsmedium hiervoor creëren of met andere woorden een app op je smartphone. Deze marktplaats, gebouwd op een gedecentraliseerd grootboek in de vorm van gedecentraliseerde toepassingen, kan worden gebruikt om duplicaten te maken en individuele kopieën en digitale tweelingen te creëren voor elk vereist doel via vooraf gedefinieerde sjablonen. Het belangrijkste is dat dit gebeurt zonder tussenpersonen en externe opslag, waardoor onze IoT-dienstenmarkt censuur- en gecentraliseerde linkvrij is.
+
+Last but not least, laten we het hebben over de gebruikersinterface. We streven er altijd naar onze gebruikers de meest up-to-date online technologieën aan te bieden en verlenen daarom toegang tot gedecentraliseerde toepassingen. De grootste functie die je krijgt tijdens de ontwikkeling vanJouw Dapp heeft het voordeel van geen kwetsbaarheden aan jouw kant. Terwijl jouw app op IPFS staat, is deze verbonden met het ENS-register of het Polkadot-ecosysteemregister en wordt de gebruiker dus niet geconfronteerd met de kwetsbaarheid van het omgaan met een vervangen app of een verzoek bij het volgen van de hyperlink. Het is gewoon heel handig vanuit het oogpunt van de ontwikkeling van eindgebruikersapplicaties en het onderhoud ervan.
+
+Een ander voordeel van gedecentraliseerde applicaties is peer-to-peer communicatie. Met andere woorden, jouw app kan communiceren met zijn digitale tweeling, de IoT-service en de eindgebruikersapplicatie zonder een enkel punt van signaalverlies, waardoor de noodzaak voor derde partijen en tussenpersonen wordt geëlimineerd wanneer een taak moet worden uitgevoerd. Dit is waar [robonomics.js](https://github.com/airalab/robonomics-js) voor dient, gebruikt bij de ontwikkeling van [Dapp Robonomics](https://robonomics.app/#/). We zijn momenteel bezig met het toevoegen van een nieuwe iteratie van verbeteringen en zullen binnenkort een Robonomics Stylebook uitbrengen (een interfacegids gebaseerd op Web3.js en polkadot.js functies), waardoor je gemakkelijk jouw applicatie kunt structureren. Als gevolg hiervan voltooien we de volledige Economy of Robots-keten.
+
+![Robonomics Network](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network-2.jpg)
+
+## Samenvatting
+* Ons doel is om [robots onderdeel te maken van de economie](https://blog.aira.life/the-first-in-the-economy-of-robots-6f4bb115643b) maar eerst moeten we de gebruiker leren hoe alles werkt en opgezet moet worden.
+* Om dit doel te ondersteunen, hebben we het [Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42) product gecreëerd waarmee gebruikers samen met ons apps en services kunnen bouwen (abonnement, lancering, datalog).
+* Een abonnement op RWS lost alle transactiegerelateerde problemen op en voegt functies toe zoals: apparaat aan/uit zetten, telemetrie (opslag van een digitale tweeling).
+* Zodra je een digitale tweeling hebt gemaakt via in-house sjablonen, kun je een IoT-service ontwikkelen en deze toevoegen aan onze [marktplaats](https://robonomics.app/#/services). De vooraf gestructureerde interfaces in Dapp worden gebruikt als een leveringsmechanisme dat jouw service naar de eindgebruiker brengt.
+* [Dapp](https://robonomics.app/) fungeert als een waterdichte manier om een peer-to-peer (directe) communicatie met een digitale tweeling tot stand te brengen, zelfs wanneer de service stopt met werken. Ongeacht de externe omstandigheden, zal de markt nooit stoppen met werken.
+* De eerder genoemde keten is een pad naar de Economie van Robots zoals beschreven in dit artikel.

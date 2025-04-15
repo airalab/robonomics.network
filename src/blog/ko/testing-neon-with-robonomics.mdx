@@ -1,0 +1,148 @@
+---
+title: 로보노믹스 스마트 계약으로 네온 EVM 테스트하기
+date: 2022-10-03
+published: true
+locale: 'ko'
+tags: ['로보노믹스 이더리움', '협업', '스마트 계약', '네온']
+cover_image: /blog/images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
+description: "이 테스트의 목적은 사이버-물리 시스템(로봇)이 기술적 경제 거래를 할 수 있게 하는 로보노믹스 스마트 계약을 사용하여 네온 플랫폼이 제품 단계로 이동할 준비가 되었는지 확인하는 것이었습니다."
+abstract: ""
+---
+
+## TL;DR
+
+이 테스트의 목적은 [Neon](https://neon-labs.org/) 플랫폼이 로보노믹스 스마트 계약을 사용하여 사이버-물리 시스템(로봇)이 기술적 경제 거래를 할 수 있게 하는 준비가 되었는지 확인하는 것이었습니다.
+
+로보노믹스 네트워크에서는 두 당사자 간의 상호 작용이 설정됩니다: 약속자 - 서비스를 주문하고 기술적 작업 설명을 보내고 실행을 위한 자금을 이체하는 사람; 약속받는 사람 - 서비스를 수행하는 사람. 약속자와 약속받는 사람 간에 책임 계약이 체결되는 전형적인 시나리오가 테스트되었으며, 그 후 결과물이 제3자에 의해 검증되고 당사자 간 계약을 동반한 노드에 수수료가 지불되었습니다.
+
+이 예에서는 로봇 팔의 시뮬레이션이 사용되었으며, 일련의 작업을 수행하도록 요청되었습니다. 테스트는 성공적이었습니다.
+
+## 테스트의 범위와 목표
+
+[Multi-Agent Systems](https://multi-agent.io/)의 엔지니어들은 [로보노믹스 네트워크](https://robonomics.network/)와 함께 수년간 작업해 왔습니다. 로보노믹스 네트워크의 첫 번째 구현은 이더리움 네트워크를 위해 만들어졌습니다. 이는 기계 간 통신을 위한 스마트 계약 세트입니다.
+
+로보노믹스 네트워크의 핵심은 [책임](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol) 계약으로, 서비스의 고객(약속자)과 서비스 제공자(약속받는 사람) 간의 전형적인 관계를 재현하며 그들 사이의 거래의 기술적 및 경제적 매개변수를 포함합니다. 당사자는 자율 에이전트와 사람(인간-기계 상호 작용) 또는 순수한 두 자율 에이전트(기계-기계 상호 작용)가 될 수 있습니다. 약속자와 약속받는 사람은 매개변수를 포함한 메시지를 브로드캐스트합니다.그들의 기술 경제 거래 후 거래의 결론은 이러한 매개변수의 일치를 찾는 특수 노드인 제공자에 의해 제공됩니다. 제공자는 [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol)에 의해 제어되며, 제공자가 당사자 간의 시장 일치를 설정할 때 거래를 실행하는 특수 스마트 계약입니다.
+
+채무 이행이 발생할 수 있는 세 가지 시나리오가 있습니다:
+
+1. 간단한 약속 (최종 결과의 확인 없이, 제공자 노드에 수수료가 지불되지 않음)
+2. 제공자에게 지불되는 수수료가 있는 의무
+3. 제3자 - 관측 네트워크의 도움을 받아 제공자에게 수수료를 지불하고 결과를 확인하는 약속
+
+이 테스트의 목적은 네온 EVM 플랫폼에서 가장 복잡한 세 번째 Robonomics 시나리오를 테스트하는 것입니다.
+
+## 테스트 시나리오 설명
+
+산업 지역과 현대 도시의 인프라를 개발함에 따라, 사이버-물리 시스템(CPS)에 의해 제어되는 완전 자동화된 기업 및 서비스가 등장하고 자율 에이전트로서의 서비스를 제공하는 것이 매우 가능성이 높습니다. 이에 따라, 우리는 또한 생산 및 서비스 제공 과정에서 통신의 속도와 품질을 향상시키기 위해 자율 CPS 네트워크의 형성을 기대할 수 있습니다.
+
+스마트 계약의 가능성을 최대로 활용하기 위해 두 개의 자율 경제 에이전트 간의 상호 작용 시나리오가 선택되었습니다. Robonomics 네트워크에서 책임 수명주기를 고려해 보겠습니다:
+
+![책임 수명주기](/blog/images/testing-neon-with-robonomics/step-by-step-3.jpg)
+
+위 그림은 Robonomics 네트워크 제공자가 Lighthouse 계약을 호출하고, Lighthouse 계약이 다시 [계약 공장](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)을 호출하여 책임 계약을 생성하는 것을 보여줍니다. 책임 계약에는 업무 내용, 서비스 비용, 검증자 주소 및 마감 기한과 같은 거래에 대한 데이터가 포함되어 있습니다.
+
+Robonomics의 가능한 사용 사례에 대해 더 알아보려면 Robonomics [R&D](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer) 페이지를 확인해보세요!
+
+네온 네트워크 상에 전체 Robonomics 인프라를 복제하기 위해 책임 계약을 통해 로봇 발사 시나리오를 구현할 것입니다.비슷한 [예시](https://wiki.robonomics.network/docs/en/kuka/)와 같습니다. 스크립트를 반복할 수 있다면 모든 기능이 작동합니다.
+
+## 납품품
+
+Robonomics 계약의 소스 코드는 [여기](https://github.com/airalab/robonomics_contracts)에서 사용할 수 있습니다.
+계약은 다음을 포함하는 이더리움 VM의 많은 기능을 사용합니다:
+
+- ERC20 [XRT](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/XRT.sol) 토큰
+- [Factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)
+- ENS를 위한 자체 계약 [ENS](https://github.com/airalab/robonomics_contracts/blob/master/contracts/ens/ENS.sol)
+- 계약을 위한 [Proxy](https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/SharedCode.sol)
+- 계약 내의 다양한 수정자 및 역할
+
+Neon devnet 네트워크의 계약 주소 https://devnet.neonevm.org
+
+| 계약 이름      | 주소                                       |
+|----------------|--------------------------------------------|
+| Migrations     | 0x1DC538bE2C8572509a571B150f11aB55E52EF12E |
+| ENS            | 0xa7AEa12F60D0278F01e14DBC7cc459d04d051406 |
+| DutchAuction   | 0xF44F8803548D72Dbc3E28340EFD7b5328aa4F058 |
+| 책임           | 0xA694196351dc1488e3884eCc6b650F0d8D55346a |
+| 등대           | 0x80FB5CC4c396E272b56700E6ffF5DBf4661013A8 |
+| XRT            | 0x3322d7D99cF65Cab5A92073c928b5E9674af3c29 |
+| PublicAmbix    | 0x85c03bE5ccFf11E79a0A776D183eF067590549d1 |
+| Factory        | 0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C |
+| PublicResolver | 0xAC9E9AA8A4cB524FE87f2b14489F1D6bE68dc46e |
+
+[시나리오에 대한 소스 코드](https://github.com/Multi-Agent-io/neon-kuka-demo)
+
+## 원본 계약에 대한 변경 사항
+
+계약은 Solidity 0.5.0으로 작성되었습니다. 따라서 계약을 배포하고 사용할 때 변경 사항이 필요하지 않았습니다.
+
+## 테스트 워크플로우
+
+일반적으로 테스트는 한 에이전트에서 다른 에이전트로 해당 메시지를 보내는 것으로 구성됩니다.
+
+다음으로 Promisor는 네트워크에서 새로운 채무 계약을 찾아 실행을 시작합니다. 작업이 완료되면 결과가 포함된 메시지가 전송되고, 이후 계약에 기록됩니다.
+
+시작하는 방법에 대한 단계별 지침은 [README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md)에 있습니다.
+
+## 상세한 테스트 결과
+
+과정의 화면 녹화
+
+<YouTube id="https://youtu.be/fYJVF7KrNnI" posterQuality="max" />
+
+![채무](/blog/images/testing-neon-with-robonomics/liability.jpg)
+
+시뮬레이션이 시작되면 제안 메시지가 생성되고, Promisee로부터 수요 메시지가 오고, 그 후 Lighthouse 계약의 createLiability 함수를 사용하여 채무 계약이 생성됩니다. XRT 계약을 통해 Promisee의 주소에서 채무 계약의 주소로 토큰이 이체됩니다.
+
+Neon 개발 네트워크에서 새로운 채무 계약을 발견하면 에이전트가 작업을 시작합니다. 작업 결과(텔레메트리)는 파일에 기록되어 IPFS로 전송되며, 파일에서 해시가 결과로 저장됩니다.
+
+작업이 완료되면 Lighthouse 계약의 finalizeLiability() 함수를 사용하여 채무 계약이 완료되고, 토큰이 채무 주소에서 Promisor 및 Validator의 주소로 이체됩니다.
+
+시뮬레이션의 성공적인 실행은 모든 계약이 올바르게 작동하고 Neon 플랫폼이 작동함을 보여주었습니다.
+
+## Neon 플랫폼의 단점
+
+### 네트워크로부터 응답을 받지 못하면 Truffle이 실패합니다
+
+계약을 배포하는 과정에서 프록시가 때때로 제 시간에 응답을 반환하지 않는 것으로 나타났습니다. 이로 인해 Truffle은 오류로 종료됩니다:
+
+<RbCode>
+
+```sh
+TypeError: Cannot read properties of null (reading 'from')                                    
+    at Web3인터페이스 어댑터.(익명) (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist/adapter/web3/index.js:71:1)                                           
+    at Generator.next (<anonymous>)                                                          
+    at fulfilled (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
+/adapter/web3/index.js:5:43)                                                                  
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Truffle v5.5.23 (코어: 5.5.23)
+Node v16.14.0
+
+오류 발생과 테스트 조건 간의 관계를 찾을 수 없었지만, 아마도 Neon EVM이 트랜잭션 영수증을 보낼 수 없어서 Truffle이 Null 응답을 처리할 수 없는 것으로 보입니다.
+
+여기 [index.ts#L75](https://github.com/trufflesuite/truffle/blob/develop/packages/interface-adapter/lib/adapter/web3/index.ts#L75)에 시간 초과 및 재시도를 추가하면 배포가 오류 없이 진행될 것입니다.
+
+### WS/WSS 엔드포인트 없음
+
+네온 EVM은 이더리움과 달리 WS/WSS 엔드포인트가 없어 네트워크에서 이벤트를 구독할 수 없습니다. 따라서 테스트 중에 이벤트를 수동으로 모니터링했습니다.
+
+### 이벤트 이름 없음
+
+네온 EVM은 트랜잭션 후 이벤트에 대한 설명이 다소 부족합니다. 예를 들어:
+
+<RbCode>[객체]
+    },
+...
+```
+</RbCode>
+
+0, 1 등 대신 명명된 이벤트를 볼 것으로 예상했습니다.
+
+## 결론
+
+Neon EVM 플랫폼을 사용하여 약속자와 약속받은 사이의 책임 계약이 성공적으로 테스트되었으며, 이후 제3자에 의해 수행된 작업 결과의 유효성이 검증되었습니다. 또한 공급과 수요 간의 일치를 확인하고 이에 대한 수수료를 받는 제공자가 참여했습니다.
+
+시연에서는 일련의 작업을 수행하기 위해 고용된 로봇 팔의 시뮬레이션이 사용되었습니다. 작업 결과로 로봇은 작업 중에 수신한 텔레메트리 파일을 전송했습니다.
+
+네트워크 작동에 일부 독특한 점이 있었지만, 최종적으로 모든 참여 계약이 Neon 환경에서 작동 가능함을 보여주었습니다.

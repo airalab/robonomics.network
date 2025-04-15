@@ -1,0 +1,102 @@
+---
+title: Robonomics 众贷活动，2022年11月
+date: 2022-11-18
+published: true
+locale: 'zh'
+tags: ['Robonomics 平行链', 'Polkadot']
+cover_image: /blog/images/robonomics-crowdloan-campaigns-november-2022/cover.jpg
+description: "Robonomics 在 Kusama 网络上的第一个租赁期即将结束。通过赢得第20次拍卖，我们获得了在 Polkadot 生态系统内启动、设置和测试基于 Robonomics 的第一个项目的机会。"
+abstract: "Robonomics 在 Kusama 网络上的第一个租赁期即将结束。通过赢得第20次拍卖，我们获得了在 Polkadot 生态系统内启动、设置和测试基于 Robonomics 的第一个项目的机会。"
+
+---
+
+在2022年，Robonomics 在 Kusama 的平行链上用于十几个研发项目，并总共处理了[400万笔交易](https://robonomics.subscan.io/)，用于物联网设备。
+
+Robonomics 开发人员希望继续在 Kusama 网络上实施平行链。现在整个 Polkadot 生态系统正处于动态发展阶段，我们希望站在这一进程的前沿。换句话说，我们希望留在 Kusama 网络中。
+
+我们对2023年的计划包括围绕建立一个用于控制家庭物联网基础设施的去中心化云的概念进行积极开发。现在，我们正在努力确保我们的[去中心化应用](https://robonomics.app/)、[维基项目](https://wiki.robonomics.network/)以及我们的教育资源，[Robonomics 学院](http://robonomics.academy/)，具备所有物联网基础设施所有者所需的功能和信息。
+
+我们还将继续尝试在 Polkadot 生态系统内开设新的 XCM 通道，以找到最优化的物联网去中心化云的“构建”，在这个过程中，不仅使用我们的平行链，而且使用整个平行链生态系统来解决物联网世界中出现的问题。例如，这个方向中最明显的一个场景是一个名为 Crust Network 的去中心化数据存储项目，我们已经开设了一系列 HRMP 通道。2023年，Robonomics IoT订阅的所有用户将自动支付他们在Crust网络上的存储使用费用。2023年，我们将尝试采用类似的方法来支付其他平行链服务的费用，使用存储在Robonomics平行链上的资金。
+
+因此，今天我们在Kusama网络上推出了一个用于启动和发送IoT设备遥测数据的工作平行链。我们准备继续进行研发工作，努力成为IoT领域与AWS竞争的全面对手，明年我们将最大程度地支持那些决定放弃传统集中式云的人。
+
+## 自动化众贷活动，第2部分
+
+去年，在文章[自动化众贷活动](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/)中首次提出了用于众贷活动的自主预言机的概念。对于Robonomics平行链的开发者来说，找到一种使平行链生活自主化的选项是构建IoT分散式云的重要组成部分。今年，我们将首次尝试代表平行链启动众贷活动。以下是我们计划最终转变为完全自主流程的新众贷活动参数计算，该流程将能够独立启动新活动并成功续订插槽租约。
+
+正如我们预期的那样，在第一批疯狂的拍卖竞标之后，情况变得更加稳定/正常，现在我们终于可以转向一些有关插槽租赁成本的统计数据。续订算法将从最近的十几次拍卖中收集统计数据，以计算中位租赁价格。例如，下表显示了从2022年7月到11月的汇总统计数据（信息取自[parachains.info](https://parachains.info/auctions/)）。
+
+<div class="big-table">
+
+  |                              | 拍卖60   | 拍卖59     | 拍卖58 | 拍卖57   | 拍卖56 | 拍卖55   | 拍卖54      | 拍卖53   | 拍卖52   | 拍卖51 | 拍卖50  | 拍卖49      | 拍卖48    |                                            
+    |------------------------------|--------------|----------------|------------|--------------|------------|--------------|-----------------|--------------|--------------|------------|-------------|-----------------|---------------|  
+  | **赢家**                   | 时代精神    | 螃蟹网络   | -          | 地壳阴影 | Genshiro   | DAO IPCI     | Parathread 2223 | 石英       | Bit.Country  | 雪       | Subsocial   | Parathread 2130 | GM Parachain  |
+  | **最后出价（KSM）**           | 500          | 11             | 0          | 1 807        | 2 000      | 111          | 1 001           | 1 005        | 3 500        | 13 926     | 1 001       | 1 131           | 5 014         |
+  | **贡献**            | 自筹资金  | 自筹资金    | -          | 209          | 160        | 自筹资金  | 自筹资金     | 自筹资金  | 自筹资金  | 782        | 自筹资金 | 自筹资金     | 738           |
+  | **参与者数量**   | 2            | 1              | 0          | 1            | 2          | 2            | 2               | 2            | 2            | 1          | 1           | 1               | 1             |
+
+</div>
+
+<TextCard alignContent="center" back="transparent">
+
+**在这种情况下，中位出价为:**
+
+![beta subscript med equals 1001KSM](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-1.svg)
+
+</TextCard>
+
+> 12月5日更新：由于 Kusama 网络的更新（[Gov2 升级](https://twitter.com/nachortti/status/1588203599129190403)），Robonomics 众贷活动将在未来几天内重新启动。集资上限将增加至 10,050 KSM。
+
+因此，算法将使用此出价来估计众贷活动的上限。
+
+此外，正如在[先前的发布](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/)中提到的，作为计算参与众贷活动奖励的主要标准，我们使用了估算 KSM 投票者的机会成本与在中继链上质押的成本之间的比较。波卡生态系统的质押机制是设计为系统以一种方式提供回报给那些帮助维护网络安全的人，同时努力确保本地代币的流动性。为了做到这一点，引入了“*理想质押率*”参数（网络应该达到的目标）。如果质押代币数量低于理想值，质押奖励将增加（从而促使用户增加质押，增强网络安全性）。反之，如果质押率超过理想值，奖励将呈指数级下降。
+
+我们的算法假设系统处于高于理想质押的状态（因为网络安全对我们很重要），因此**在这些条件下可能的最大年化质押利率**由理想质押率参数和质押者的最大通胀率确定（即支付给验证者和提名者的铸币代币总数）：
+
+<TextCard alignContent="center" back="transparent">
+
+![i 下标 'ideal' 等于 I 下标 NPoS 除以 x 下标 'ideal'](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-2.svg)
+
+</TextCard>
+
+您可以在来自W3F研究的[Token Economics](https://research.web3.foundation/en/latest/polkadot/overview/2-token-economics.html)文章中详细了解这些计算。
+
+在Kusama网络中，通胀率设定为10%，即在理想情况下将铸造给质押者的最大数量。理想质押率根据平行链数量而变化，目前为45%（如在Kusama网络的Polkadot.js门户上所示）。因此，我们得到：
+
+<TextCard alignContent="center" back="transparent">
+
+![i 下标 'ideal' 等于 0.1 除以 0.45 乘以 100% 等于 22.22%](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-3.svg)
+
+</TextCard>
+
+目前，*实际质押率*为52.6%，质押参与者的利润低于理想水平（约为15%）。因此，算法可以采用*理想利率*参数用于众贷活动，从而找到参与众贷的奖励水平。这对网络是公平的，对质押者是有吸引力的。
+
+现在我们可以根据市场上代币的成本来计算参与众贷活动的奖励（每1个KSM的XRT），知道了市场上代币的成本：
+
+<TextCard alignContent="center" back="transparent">
+
+![R下标'perKSM'等于（1乘以$KSM乘以i下标'ideal'）除以$XRT](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-4.svg)
+
+</TextCard>
+
+根据当前的KSM和XRT汇率，众贷奖励约为**每1个KSM 2.06 XRT**。知道这个值和租用插槽的中位成本，可以轻松计算众贷参与者的总支付：
+
+<TextCard alignContent="center" back="transparent">
+
+![R下标'total'等于beta下标'med'乘以R下标'perKSM'等于2075.03XRT](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-5.svg)
+
+</TextCard>
+
+> 12月5日更新：由于Kusama网络更新（[Gov2升级](https://twitter.com/nachortti/status/1588203599129190403)），Robonomics众贷活动将在未来几天内重新启动。总奖励池已增加至20,750 XRT。
+
+## 从通胀性到紧缩性平行链经济学的转变
+
+Kusama网络上的共享安全成本已经稳定。从最近的插槽拍卖统计数据可以看出，项目不需要分配大量的平行链本地代币供应来奖励众贷活动参与者。除此之外，我们还应考虑到，Robonomics具体的本地代币销毁机制是在用户激活物联网订阅时 - 这意味着Robonomics架构在Polkadot生态系统内实际上可以成为具有紧缩性通证经济学的平行链。
+
+据估计，2023年新的Robonomics平行链代币的总发行量将低于总平行链代币发行量的0.38%。Robonomics平行链的金库中还存有约370,000 XRT，其中3,500 XRT是每个月都会自动燃烧。这意味着2023年的Robonomics平行链将呈现明显的通缩动态，很可能是平行链代币通缩超过3%。实际的通缩量将取决于IoT用户订阅激活期间燃烧的XRT数量。
+
+因此，Robonomics开发人员计划在下一个平行链插槽租赁期间取消代币质押，并重点致力于进一步开发平行链的架构。此外，将重点减少新XRT代币的生成（在可行范围内），并积极开发更多利用XRT代币支出（燃烧）的平行链服务。
+
+继续前行...
+
+![](/blog/images/robonomics-crowdloan-campaigns-november-2022/keep-walking.jpg)

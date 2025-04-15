@@ -1,0 +1,87 @@
+---
+title: "Robonomics School 2024: 游戏规则，黑客约翰尼实验室"
+date: 2024-06-05
+published: true
+locale: 'zh'
+cover_image: /blog/images/robonomics-school-2024-hack-johnny-lab/cover.jpeg
+description: "在未来的日子里，我们将启动Robonomics School 2024的实践任务，届时您将能够感受到真正的隐私侵犯者，甚至可以“窃取”代币。感兴趣吗？查看游戏“黑客约翰尼实验室”的规则！"
+abstract: "在未来的日子里，我们将启动Robonomics School 2024的实践任务，届时您将能够感受到真正的隐私侵犯者，甚至可以“窃取”代币。感兴趣吗？查看游戏黑客约翰尼实验室的规则！"
+tags: ['公告', '活动', '在线学校']
+---
+
+
+## 游戏动机
+
+这个游戏从逃离《黑镜》的想法中汲取了很多灵感，Sergei在Robonomics Academy的文章中谈到了这些想法（[第一篇](https://robonomics.academy/en/learn/escape-from-black-mirror/overview/)和[第二篇](https://robonomics.academy/en/learn/school-2024-iot-vs-ai/overview/)）。
+
+想象一下，一台普通的廉价机器人吸尘器有严重的窥探其所有者生活的能力。即使一些恶意人士获得了这些数据也无所谓；通过视频录像的AI分析就足以得出关于一个人生活的非公开方面的结论。任何肮脏的秘密、不可察觉的行为模式和私人信息——一切都被记录在档案中。想一想，当您试图获取一些免费代币时。
+
+## 游戏目标
+
+在游戏中，玩家的任务是从移动机器人的数据中恢复种子短语。机器人在实验室内随机移动，记录视频。机器人不时发布种子短语中的一个词（共12个）。在机器人停下来的某个时刻，玩家可以在视频中看到一个带有数字的标志，这个数字提示了该词在种子短语中的顺序。任务是将标志上的数字与机器人停下时收到的词组进行匹配，以恢复正确的种子短语。
+
+首先恢复种子短语并从其地址提取所有XRT代币的玩家获胜。
+
+## 游戏规则
+
+*玩家注册*
+
+- 参与者必须在Robonomics平行链上创建一个新帐户，必须使用Edwards（ed25519）加密类型创建。有关说明，请参阅[我们的维基](https://wiki.robonomics.network/docs/create-account-in-dapp/)。
+- 接下来，玩家需要转到Robonomics服务器上的[Discord机器人](https://discordapp.com/channels/803947358492557312/1245395009964871772)，等待有关新会话开始的消息。
+- 在会话开始时，玩家将创建的帐户地址以**Robonomics平行链格式**发送给Discord机器人。玩家将有60分钟的时间输入。
+
+*实验室探索*
+
+- 注册完成后，移动机器人将前往实验室进行探索。之后，机器人将发送视频录像和种子短语中的单词列表（顺序不正确）。
+- 等待来自Discord机器人的有关从机器人接收结果的消息，并转到[链接](https://robonomics.academy/en/demoapps/johnnyb-lab/)的应用程序开始恢复种子短语。
+
+*恢复种子短语*
+
+- 玩家必须使用注册的Robonomics帐户才能访问数据。
+- 玩家将获得视频录像和种子短语单词集。玩家的任务是根据实验室中标志上的数字找到单词的正确顺序。
+
+<TextCard alignContent="left">
+
+**示例。** 如果单词集为：
+
+`finding -> church -> relation -> dog -> sample`
+
+以及从视频重建的机器人路线为：
+
+`标志 #5 -> 标志 #3 -> 标志 #1 -> 标志 #2 -> 标志 #4`
+
+那么：
+
+`finding — 标志 #5 -> finding是第5个单词`
+
+`church — 标志 #3 -> church是第3个单词`
+
+`relation — 标志 #1 -> relation是第1个单词`
+
+`dog — 标志 #2 -> dog是第2个单词`
+
+`sample — 标志 #4 -> sample是第4个单词`
+
+因此，正确的种子短语为：`relation dog church sample finding`
+
+</TextCard>
+
+
+- 找到种子短语后，玩家可以使用任何应用程序恢复带有代币的帐户的访问权限。
+- 例如，在Polkadot.js扩展中，可以使用*从现有种子导入帐户*功能来完成此操作。
+- 所有恢复的带有XRT的帐户都具有**Schnorrkel（sr25519）**加密类型，在大多数Polkadot / Kusama钱包中受支持。
+
+
+*宣布获胜者*
+
+- 一旦玩家访问了帐户，他或她必须提取XRT以成为会话的获胜者，直到其他人这样做。
+- 例如，在Polkadot.js扩展中，可以在[我们的Polkadot / Substrate门户](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/accounts)的帐户页面上完成此操作。只需按下发送按钮并将代币提取到任何您想要的地方。您可以使用*转移全部帐户余额，收割发送者*复选框来进行全额提取。
+- 在会话结束后，代币被提取后，机器人将通过在Discord频道上发布获胜者的地址来通知。
+
+## 活动条件
+
+该活动将持续9天，在此期间，每天早上和晚上（共18次）您将有机会在每个会话中首先达到**42 XRT**。
+
+每天的会话注册时间为**10:00和20:00 EEST**，持续60分钟。
+
+关注我们的社交网络，以便不会错过活动的开始！

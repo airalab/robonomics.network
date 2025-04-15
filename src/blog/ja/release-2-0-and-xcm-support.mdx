@@ -1,0 +1,64 @@
+---
+title: 'リリース2.0＆XCMサポート'
+date: 2022-06-09
+published: true
+locale: 'ja'
+cover_image: /blog/images/release-2.0-&-xcm-support/cover.jpg
+description: "リリース2.0は、RobonomicsをKusamaエコシステムの他のパラチェーンと統合する可能性を開くため、当社のプロジェクトとコミュニティにとって非常に重要なマイルストーンです。今後数ヶ月、プロジェクトのR&Dチームは、Statemine、Karura、Moonriver、Crust、KILTパラチェーンとの統合に専念します。"
+abstract: "リリース2.0とXCMサポートがここにあります！"
+tags: ['Robonomicsパラチェーン', 'ロードマップ', '新リリース']
+---
+
+[リリース2.0](https://github.com/airalab/robonomics/releases/tag/v2.0.0)は、RobonomicsをKusamaエコシステムの他のパラチェーンと統合する可能性を開くため、当社のプロジェクトとコミュニティにとって非常に重要なマイルストーンです。今後数ヶ月、プロジェクトのR&Dチームは、Statemine、Karura、Moonriver、Crust、KILTパラチェーンとの統合に専念します。
+
+1.5年前にパラチェーン間の通信の最初のステップを踏み出し、サンクトペテルブルクでのマスタークラスで2つのブロックチェーン間でメッセージの交換を実証しました。昨年、Gavは、XCMPが修正された一連の記事を公開し、クロスコンセンサスメッセージフォーマット（XCM）に変更され、最初のバージョン番号がゼロ以上になりました。
+
+XCMのリファクタリングから2か月後、RobonomicsチームはRococoでのテストを完了し、Kusamaエコシステムの他のパラチェーンとの統合に備えています。
+
+## RobonomicsにおけるXCMの基本サポート
+
+Kusama自体が異種ネットワークであるという考えに従い、Robonomicsの開発者は、IoT/ロボティクス固有の機能をRobonomicsパラチェーンコードに実装しようとしています。
+
+可能な限り、他のパラチェーンの機能を最大限に活用し、スマートホーム/都市や産業シナリオを実装するのに役立つでしょう。例えば, 今年は、他のパラチェーンの既存のソリューションを使用する予定です（以下のために独自のソリューションを作成しません）：（1）ユーザーアクセストークンの個人残高、（2）dappおよびIoTデバイスユーザー識別システム、（3）大容量ファイルストレージ、（4）仕事のスマートコントラクトでのIoTデバイスの使用。
+
+バージョン2.0のリリース時点で、RobonomicsはKusamaネットワーク上で実行されている任意のパラチェーンと統合する準備が整っています。 XCMサポートのソフトウェア実装は、Substrate上の主要なRobonomicsリポジトリの[アルファランタイムディレクトリ](https://github.com/airalab/robonomics/tree/master/runtime/alpha)で見つけることができます。
+
+2022年5月と6月には、RococoネットワークでRelayチェーンとの互換性テストがすでに行われ、ネイティブのRococo Relay ChainトークンであるROC（KSMに類似していますが、Rococoテストネットワーク上のもの）をRobonomicsパラチェーンにテレポートする例が示されました。
+
+<YouTube id="https://youtu.be/BJHSFDZt0y4" posterQuality="max"/>
+
+[Twitterの投稿](https://twitter.com/AIRA_Robonomics/status/1534081132765097984):
+
+<Tweet id="https://twitter.com/AIRA_Robonomics/status/1534081132765097984" />
+
+Robonomicsを他のKusamaパラチェーンと統合するアイデアがある場合は、research@robonomics.networkにメールを送るか、[Discord](https://discord.gg/atduhWZpVr)に参加して、主要なコミュニティチャンネルで議論してください。
+
+## Statemineとの統合
+
+Statemineとの統合の主な目標は、Robonomicsパラチェーンのliability()関数の完全な開始です。 liability()関数は、Ethereumの主要なRobonomics関数と非常に似ており、ロボットをサービスとして使用するフルサイクルを組織することができます。 Statemineとの統合後、IoTアプリケーションの開発者は、Statemineで独自のトークンを作成したり（または既存のStatemineトークンを使用したり）して、スマートデバイス/ロボットを起動して指定されたプログラムを実行することができます。 ユーザープログラムが実行された後、トークンは自動的にロボットの残高に転送されます。
+
+春先には、Statemineでトークンを使用してコーヒーマシンを起動する簡単な例を示し、アクセスのトークン化開発のシナリオの1つを説明しました。記事中の装備: [Coworking for crypto-anarchists, p1](https://blog.aira.life/coworking-for-crypto-anarchists-p1-5ebecb252f2d)。オフィスでの装備の使用と装備へのアクセスの差別的な配布を考慮すると、責任（）機能とアクセストークンを組み合わせることが非常に適しています。
+
+StatemineとRobonomicsの統合の別の例は、望遠鏡を使用してNFTポストカードを作成する能力です。現在、ユーザーの残高はStatemineに保存され、その後NFTがRMRKを使用して発行されます。Statemineとの統合を開始すると、望遠鏡は責任（）機能を介して画像を作成するタスクを受け取り、望遠鏡に送信されたアクセストークンは、責任（）の実行結果にNFTへのリンクを追加した後にのみ望遠鏡の残高に移動します。
+
+作業状況: 2022年第3四半期
+
+## Karuraとの統合
+
+EthereumとDotsamaエコシステムの長期ビルダーとして、RobonomicsはRobonomicsパラチェーンネイティブトークン（XRT）の分散型交換手段を統合することを信じています。XRTをKaruraスワップにリストアップすることは、当社のトークンコミュニティがパラチェーンネイティブトークンを分散型の方法で交換できる理想的な方法であり、これらのHRMP通信チャネルを開くことはその目標を達成するための第一歩です。
+
+Karuraとのさらなる統合のアイデアの1つは、Kusamaネットワークトークンの自動通貨および価値交換ポイントです。これについては別途詳細を共有し、最初のステップでXRTをKaruraスワップに追加した後に確実に共有します。
+
+作業状況: 2022年第3四半期
+
+## Moonriverとの統合
+
+RobonomicsパラチェーンはMoonriverスマートコントラクト内からスマートデバイスを起動するための普遍的なメカニズムになり得ます。現在、このアーキテクチャに取り組んでおり、Moonriverパラチェーン上で[DAO IPCIスマートコントラクト](https://github.com/DAO-IPCI/DAO-IPCI)を使用した独自の炭素排出オフセットシナリオについて議論しています。
+
+作業状況: 2022年第3四半期
+
+## KILTとの統合
+
+Robonomicsの開発者は、ロボティクス市場を研究してきた数年間で、複雑なシナリオを考慮する際に都市生活、物流、産業サプライチェーンの自動化に関する重要なタスクの1つとしてデバイス識別が重要であると合意しています。KILTは、さまざまなパラチェーンの機能を統合するための取り組みを継続する優れた例です。異種ネットワークと、IoT市場にとって重要な問題の解決に取り組んでいます。
+
+作業状況: 2022年第4四半期

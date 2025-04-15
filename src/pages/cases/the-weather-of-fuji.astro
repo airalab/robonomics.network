@@ -1,0 +1,130 @@
+---
+// components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/cases/CaseHeader.astro";
+import Footer from "../../components/cases/CaseFooter.astro";
+import CaseText from "../../components/cases/CaseText.astro";
+import Youtube from "../../components/utils/Youtube.astro";
+---
+
+<Layout
+  casePath={Astro.url}
+>
+  
+  <Header
+    path={Astro.url.pathname}
+    introText={$tr("Send a request message and get the result from the autonomous agent. The resulting file is saved to IPFS and the resultant message requires a signature with a private key.")}
+    introImg="fuji.webp"
+  />
+
+  <section class="case-page layout">
+
+    <CaseText
+    title={$tr('Overview')}
+    text={$tr('This case study explores how Robonomics Network facilitates decentralized data access using IoT devices and blockchain technology. By leveraging the Robonomics dApp connected to a weather sensor on Fuji Mountain, users can obtain real-time weather data securely and transparently.')}
+    />
+
+    <CaseText
+      title={$tr('How does it work?')}
+      multiple
+    >
+
+      <h4>{$tr('Requirements:')}</h4>
+      <ul>
+        <li>{$tr('MetaMask Extension')} (<a href="https://metamask.io/" aria-label="download the extension here" target="_blank">{$tr('Download here')}</a>)</li>
+      </ul>
+
+      <h3>{$tr('Steps to Retrieve Weather Data:')}</h3>
+      <ol>
+        <li>
+          <b>{$tr('Open the dApp:')}</b>
+          {$tr('Visit the')} <a href="https://robonomics.app/#/fuji/airalab/QmbQT8cj9TJKfYVaidfShnrEX1g14yTC9bdG1XbcRX73wY/0x4D8a26e1f055c0b28D71cf1deA05f0f595a6975d/" aria-label="open robonomics dapp for fuji weather sensor" target="_blank">{$tr('Fuji Weather Sensor')}</a> {$tr('page in the Robonomics dApp.')}
+        </li>
+        <li>
+          <p>
+            <b>{$tr('Install MetaMask (if needed):')}</b> {$tr('If MetaMask is not installed, you will be prompted to install it for the dApp to function properly.')}
+          </p>
+          <img src="/images/cases/fuji/sensor-demo-1.webp" alt="Robonomics dApp if no MetaMask installed" />
+        </li>
+        <li>
+          <p> <b>{$tr('Allow Connection:')}</b>
+            {$tr('Connect your MetaMask wallet to the Robonomics dApp when prompted.')}
+          </p>
+          <img src="/images/cases/fuji/sensor-demo-2.webp" alt="Connection to Robonomics dApp via Metamask" />
+        </li>
+        <li>
+          <p>
+            <b>{$tr('Request Sensor Data:')}</b>
+            {$tr('Click the "Request current values" button to initiate the data request.')}
+          </p>
+          <img src="/images/cases/fuji/sensor-demo-3.webp" alt="Request sensor's data in Robonomics network via dApp" />
+        </li>
+        <li>
+          <p>
+            <b>{$tr('Sign the Message:')}</b>
+            {$tr('Confirm the data request by signing a message via MetaMask. No tokens or ether are required.')}
+          </p>
+          <img src="/images/cases/fuji/sensor-demo-4.webp" alt="Sign a message in Robonomics network via dApp" />
+        </li>
+        <li>
+          <p>
+            <b>{$tr('Data Collection Process:')}</b>
+            {$tr('An autonomous agent will gather the weather data from the Fuji Mountain sensor and transmit it back. Wait for the response.')}
+          </p>
+          <img" src="/images/cases/fuji/sensor-demo-5.webp" alt="Wait for response of the agent in Robonomics network via dApp" />
+        </li>
+        <li>
+          <p>
+            <b>{$tr('Receive the Result:')}</b>
+            {$tr('The dApp will download the result file from IPFS (InterPlanetary File System), a decentralized storage solution.')}
+          </p>
+          <img src="/images/cases/fuji/sensor-demo-6.webp" alt="Wait for IPFS file with results in Robonomics network via dApp" />
+        </li>
+        <li>
+          <p>
+            <b>{$tr('View Weather Data:')}</b>
+            {$tr('The retrieved weather data from Fuji Mountain will be displayed in the dApp interface.')}
+          </p>
+          <img src="/images/cases/fuji/sensor-demo-7.webp" alt="The results of sensor network in Robonomics via dApp" />
+        </li>
+      </ol>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Technical Insights')}
+      multiple
+    >
+      <ul>
+        <li> <b>{$tr('Decentralized Communication:')}</b> {$tr('The weather data request is processed using the Robonomics protocol, ensuring transparent communication without intermediaries.')}</li>
+        <li><b>{$tr('IPFS Storage:')}</b> {$tr('The results are securely stored on IPFS, with cryptographic signing ensuring data integrity.')}</li>
+        <li><b>{$tr('Autonomous Agents:')}</b> {$tr('Smart contracts and autonomous agents facilitate secure data collection and delivery.')}</li>
+      </ul>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Key Benefits')}
+      multiple
+    >
+      <ul>
+        <li><b>{$tr('Trustless Data Retrieval:')}</b> {$tr('No central authority is required to validate the data.')}</li>
+        <li><b>{$tr('Security:')}</b> {$tr("Data is cryptographically signed using the agent's private key.")}</li>
+        <li><b>{$tr('Transparency:')}</b> {$tr('All interactions and results are immutably stored on the blockchain and IPFS.')}</li>
+      </ul>
+    </CaseText>
+
+    <CaseText
+    title={$tr(`Here's a walkthrough video:`)}
+    multiple>
+      <Youtube
+        title="walkthrough video"
+        src="https://www.youtube.com/embed/t098NlMELk4"
+      />
+    </CaseText>
+
+  </section>
+
+  <Footer 
+    text={`<p class=italic-abstract>${$tr('This R&D case highlights the capabilities of decentralized technologies in real-world data collection and access. Robonomics Network empowers secure, verifiable data retrieval from IoT sensors, advancing the reliability of environmental monitoring solutions.')}</p>`}
+    title={$tr('Conclusion')}
+  />
+</Layout>

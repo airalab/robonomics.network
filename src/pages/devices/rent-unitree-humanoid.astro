@@ -1,0 +1,161 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import RentHumanoidSection from '../../components/blocks/RentHumanoidSection.vue';
+---
+
+<Layout
+  title={$tr("Unitree G1 Humanoid Robot")}
+  description={$tr("For California residents and guests, our partners offer an exciting chance to rent a humanoid robot, a new product spreading across the market.")}
+  ogImage="/website_cover_unitree.webp"
+  pageTitle="Unitree G1 Humanoid Robot"
+>
+
+  <p class="layout layout__content space-b-2 intro">{$tr("Rent the cutting-edge humanoid robot for your research, programming, and entertainment projects.")}</p>
+
+  <RentHumanoidSection client:only/>
+
+  <article class="layout space-b-2">
+    <div class="grid-3 unitree-prices">
+      <section class="oldy">
+        <div class="space-b unitree__price-info">
+          <span>{$tr('Hour')}</span>
+          <h5>$200</h5>
+        </div>
+        <ul>
+          <li class="space-b-05">{$tr('Rent on site (Oakland, CA)')}</li>
+          <li class="space-b-05">{$tr('Suitable for short tasks')}</li>
+          <li class="space-b-05">{$tr('No engineering support included')}</li>
+        </ul>
+      </section>
+      <section class="oldy">
+        <div class="space-b unitree__price-info">
+          <span>{$tr('Day')}</span>
+          <h5>{$tr('$900')}</h5>
+        </div>
+        <ul>
+          <li class="space-b-05">{$tr('Rent on site (Oakland, CA)')}</li>
+          <li class="space-b-05">{$tr('Suitable for bigger tasks')}</li>
+          <li class="space-b-05">{$tr('Basic engineering support included')}</li>
+        </ul>
+      </section>
+      <section class="oldy">
+        <div class="space-b unitree__price-info">
+          <span>{$tr('Week+')}</span>
+          <h5>{$tr('On demand')}</h5>
+        </div>
+        <ul>
+          <li class="space-b-05">{$tr('Delivery to your location')}</li>
+          <li class="space-b-05">{$tr('Customized approach')}</li>
+          <li class="space-b-05">{$tr('Engineering support can be included')}</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  <h2 class="layout title-lined"><span>{$tr('Enter the new era')}</span></h2>
+
+  <article class="layout layout__text space-b-2">
+    <p>{$tr('The G1 humanoid robot with its innovative features offers versatility for research, programming, and entertainment needs. The Unitree G1 includes a Power Control Dexterous Hand, enabling it to perform delicate tasks such as handling objects, pressing buttons, and carrying out other precise operations with various items.')}</p>
+    <img src="/images/devices/unitree-g1/unitree-g1-dex3.webp" alt="Unitree Dex3-1 Power Control Dexterous Hand, Operate Everything"/>
+  </article>
+
+  <h2 class="layout title-lined space-b-2"><span>{$tr('Tech specification')}</span></h2>
+  <article class="layout layout__text space-b-2 unitree-specification">
+    <ul class="align-center">
+      <li>
+        <b>{$tr('Height, Width and Thickness（Stand）')}</b>
+        <span>{$tr('1320x450x200mm')}</span>
+      </li>
+      <li>
+        <b>{$tr('Height, Width and Thickness（Fold）')}</b>
+        <span>{$tr('690x450x300mm')}</span>
+      </li>
+      <li>
+        <b>{$tr('Weight (With Battery)')}</b>
+        <span>{$tr('About 35kg')}</span>
+      </li>
+      <li>
+        <b>{$tr('Arm Maximum Load')}</b>
+        <span>{$tr('About 2Kg')}</span>
+      </li>
+      <li>
+        <b>{$tr('Cooling System')}</b>
+        <span>{$tr('Local air cooling')}</span>
+      </li>
+      <li>
+        <b>{$tr('Smart Battery (Quick Release)')}</b>
+        <span>{$tr('9000mAh')}</span>
+      </li>
+      <li>
+        <b>{$tr('Charger')}</b>
+        <span>{$tr('54V 5A')}</span>
+      </li>
+      <li>
+        <b>{$tr('Battery Life')}</b>
+        <span>{$tr('About 2h')}</span>
+      </li>
+      <li>
+        <b>{$tr('Sensing Sensor')}</b>
+        <span>{$tr('Depth Camera+3D LiDAR')}</span>
+      </li>
+      <li>
+        <b>{$tr('5W Speaker')}</b>
+      </li>
+      <li>
+        <b>{$tr('WiFi 6 , Bluetooth 5.2')}</b>
+      </li>
+      <li>
+        <b>{$tr('Manual Controller')}</b>
+      </li>
+    </ul>
+  </article>
+
+</Layout>
+
+
+<style>
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  section.oldy {
+    width: 100%;
+  }
+
+  .intro {
+    font-size: calc(var(--base-font-size) * 1.2);
+    line-height: 1.2;
+    text-align: center;
+    font-variation-settings: var(--font-flex-medium);
+  }
+
+  .unitree-prices {
+    justify-items: center;
+  }
+
+  .unitree__price-info h5 {
+    font-size: calc(var(--base-font-size) * 1.7);
+    font-variation-settings: var(--font-flex-extrabold);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .unitree__price-info span {
+    font-size: calc(var(--base-font-size) * 0.8);
+    font-variation-settings: var(--font-flex-bold);
+  }
+
+  .unitree-specification li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .unitree-specification li:not(:last-child) {
+    margin-bottom: calc(var(--space) * 0.8);
+  }
+  
+</style>

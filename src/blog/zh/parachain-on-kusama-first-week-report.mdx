@@ -1,0 +1,153 @@
+---
+title: "Robonomics在Kusama上的平行链：第一周报告"
+date: 2022-01-18
+published: true
+locale: 'zh'
+tags: ['Robonomics平行链']
+cover_image: /blog/images/parachain-on-kusama-first-week-report/cover.jpg
+description: "自Robonomics平行链推出以来，我们已经成功完成了相当大范围的任务，对此，我要特别感谢所有在1月2日和3日早早离开美好的餐点、香槟和拜访朋友家人的人们 :) 以下信息是我个人参与的内容，也是我想告诉大家的。"
+abstract: "自Robonomics平行链推出以来，我们已经成功完成了相当大范围的任务，对此，我要特别感谢所有在1月2日和3日早早离开美好的餐点、香槟和拜访朋友家人的人们 :) 以下信息是我个人参与的内容，也是我想告诉大家的。"
+author: '@ensrationis'
+---
+
+## Robonomics平行链的基本基础设施
+
+Robonomics平行链[于2022年1月9日推出](https://twitter.com/EnsRationis/status/1480139879057174530)。推出时，[发布了“Kusama Parachain Launch”的1.4版本](https://github.com/airalab/robonomics/releases/tag/v1.4.0) - 可用于启动[收集器](https://wiki.polkadot.network/docs/learn-collator) - 在GitHub上发布。
+
+[与p2p.org合作](https://economy.p2p.org/p2p-validator-and-robonomics-announce-partnership-for-launch-of-parachains-on-kusama/)，我们启动了第一个平行链收集器。在平行链运行的第一周，出现了一个由[40多个收集器](https://telemetry.parachain.robonomics.network/#/Robonomics)组成的开放网络。
+
+我要提醒大家，收集器的作用是收集平行链块候选项并将它们传输到Kusama中继链的验证节点网络进行验证。平行链收集器对当前块进行计算。，并尽快在平行链收集器之间传播形成的区块。作为计算奖励的回报，收集器将获得少量保证的XRT，以及区块中生成的所有佣金的50%。
+
+在[启动平行链的第二天](https://discord.com/channels/803947358492557312/895723411278557227/930224374630473738)，社区成员之间举行了一场比赛，看谁能第一个设置收集器。
+
+第三天，[Subscan切换](https://twitter.com/AIRA_Robonomics/status/1480833207834664960)将Robonomics平行链区块浏览器从测试网（Frontier Network）切换到主网。
+
+Robonomics维基已更新，提供经社区测试的构建和运行平行链收集器的说明，包括：
+
+- [如何从源代码构建收集器节点](https://wiki.robonomics.network/docs/en/how-to-build-collator-node/)
+- [如何启动Robonomics收集器](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/)
+
+可以讨论与收集器工作相关的问题：
+
+- 在Discord上：https://discord.gg/hBJS7uE2NC
+- 或在Element上：https://app.element.io/#/room/#robonomics:matrix.org
+
+## 今日的运行时平行链
+
+对于那些尚不熟悉运行时概念的人，我建议您先阅读这篇文章：https://docs.substrate.io/v3/runtime/frame/
+
+Robonomics当前的运行时结构如下：
+
+<TextCard>
+
+### Robonomics平行链
+
+#### 物理网络系统功能
+- 数字孪生
+- 发射
+- 数据日志
+- 机器人即服务
+
+#### 物联网订阅
+- 订阅拍卖
+- 抵押
+
+#### 链上治理
+- 财政
+- 技术委员会
+- 民主
+
+#### 代币
+- 余额
+- 交易
+- 多重签名
+- 解锁
+
+#### 网络维护
+- 灯塔
+- 身份
+
+</TextCard>
+
+您可以在以下链接处阅读特定于Robonomics平行链的运行时模块的技术描述：https://crates.robonomics.network/pallet_robonomics_datalog/index.html
+
+此外，我们还将单独讨论Robonomics随着我们接近将于2022年2月举行的冬季开发者学校，我们将讨论Robonomics Parachain模块的最新情况。
+
+## Parachain技术委员会的建立
+
+![Parachain技术委员会](/blog/images/parachain-on-kusama-first-week-report/1-parachain-technical-committee.png)
+
+将最经常参与前沿网络开发的六位项目开发者加入了[Parachain技术委员会](https://wiki.polkadot.network/ru-RU/docs/learn-governance#technical-committee)。
+
+技术委员会可以提出紧急公投，这些公投将加快投票和实施过程。这些用于紧急错误修复或快速将经过测试的新功能实施到运行时中。
+
+## Parachain Treasury充足并准备就绪
+
+类似于Kusama网络的[Treasury](https://wiki.polkadot.network/ru-RU/docs/learn-treasury)运作方式，Robonomics开发者计划使用超过400,000 XRT来支持社区。有关向Kusama Treasury提交请求的示例，请访问 kusama.polkassembly.io。
+
+有关如何向Robonomics Treasury提交请求以及有关资金优先领域的详细信息将在随后的博客文章中单独讨论。
+
+![Robonomics Treasury](/blog/images/parachain-on-kusama-first-week-report/2-Treasury.png)
+
+Treasury可在此处找到：https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/treasury
+
+## 第4次众贷活动参与者的1/12众贷奖励已分发，并启动了锁定模块
+
+Robonomics开发者已完成将1/12的众贷奖励分发给众贷参与者的余额。您可以使用Developer > Chain state > system.account():FrameSystemAccountInfo来查看余额。
+
+![Robonomics Chain state](/blog/images/parachain-on-kusama-first-week-report/3-chain-state.png)
+
+屏幕截图中显示的自由价值对应于1,102,517,448 Wn ≈ 1.1 XRT（自由余额以微型XRT 10<sup>−6</sup>显示），这是可在网络内转移的自由余额。最新的运行时更新中还启用了归属模块。本周将发送11/12份赏金，这也将显示在Developer > Chain state > system.account():FrameSystemAccountInfo下的“miscFrozen”中。
+
+完整的众贷奖励将在接下来的11个月内线性解锁。可解锁的金额可以在“Accounts”页面的“vested”字段中查看。
+
+![可解锁的金额](/blog/images/parachain-on-kusama-first-week-report/4-amount-available.png)
+
+在一月底，我们将提供更多关于声称在众贷期间每贡献1个KSM可获得额外1个XRT的信息，这适用于拥有Robonomics Pioneer NFT的用户。Robonomics Developers将在[Twitter](https://twitter.com/AIRA_Robonomics)上单独报告此事。
+
+## 从前沿网络迁移XRT
+
+在过去的六个月中，我们继续测试[前沿网络](https://robonomics.network/blog/robonomics-frontier/)中的平行链功能。在Kusama的平行链生命周期的第一周，开发人员停止了前沿网络的工作，并将平行链余额分发到了Kusama。
+
+![前沿网络](/blog/images/parachain-on-kusama-first-week-report/5-frontier-network.png)
+
+正如您在屏幕截图中所看到的，Robonomics平行链在前沿网络中的最后一个区块是#1,046,628，前沿网络在143小时前停止生成区块。
+
+您可以使用以下链接（Developer > Chain state > system.account: AccountInfo）检查在前沿网络最后一个区块时的余额：
+https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier .rpc.robonomics.network%2F#/chainstate
+
+值得注意的是，余额的转移是一个多层次的任务：
+- 首先，收集了自由和抵押代币。
+- 稍后，收集了尚未被用户领取（未声明）的抵押奖励。
+- 奖励也被添加到其中，并请求提取但未从抵押中提取。
+- 11/12的众贷奖励用于参与第一次众贷活动（“Plan B”）。奖励）从用户余额中扣除（见下文）。
+- 接收到的价值被累加并发送到一个由开发者拥有的地址以进行分发。
+- 第4次众贷活动参与者的众贷奖励的11/12被发送到11个月的锁定期。
+
+因此，Kusama平行链参与者的初始余额应包括：
+- 通过exodus桥转移的XRT代币。
+- 存在于前沿网络中继链上的平行链生命周期内生成的质押奖励。
+- 收集者奖励
+- 从第1次众贷活动（“Plan B”奖励）参与中的众贷贡献奖励的1/12。
+- 从第4次（获胜）众贷活动参与中的众贷贡献奖励的1/12
+
+## Kusama平行链上的XRT质押
+
+在Robonomics平行链的第二次更新中，包含了XRT质押模块。
+
+![Robonomics dapp](/blog/images/parachain-on-kusama-first-week-report/6-Robonomics-dapp.png)
+*在Robonomics dapp中使用质押部分的示例*
+
+XRT质押可在Robonomics dapp的以下链接处进行：https://robonomics.app/#/staking/
+
+质押奖励约为每年10%。
+
+对于第4次众贷活动的参与者，Robonomics开发人员已将质押奖励提高到50%。请注意，此质押奖励百分比仅限于通过您在第4次众贷活动中生成的XRT数量。
+
+值得注意的是，[自主平行链生命周期](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/)的完整实施将会将质押奖励的恒定值更改为适应Relay链上KSM质押奖励规模的变量。这个话题将在Robonomics Whitepaper 2022中进行更详细的讨论。在其发布后，我们将开始更改网络。
+
+## 最重要的事情在前方！
+
+Robonomics应用场景[已经从前沿网络转移到了Kusama平行链](https://twitter.com/EnsRationis/status/1481900111856906240)。到一月底，我们将宣布Robonomics IoT项目演示周的日期，这些项目已准备好基于Kusama平行链展示他们的解决方案。
+
+关注我们的[Twitter](https://twitter.com/AIRA_Robonomics)获取更新，记住，Robonomics的目标不是成为加密项目中的独角兽，直到我们为用户增长铺平可持续发展之路。在2022年，我们将迎来数十个有趣的Web3应用场景，涉及物联网领域。然而，只有当Robonomics对成千上万的常规用户有用时，该项目才会占据其应有的位置。与此同时，我们都需要继续努力工作并帮助发展该项目；尝试改变你周围的世界，朝着引入Web3技术的方向前进；例如，通过Robonomics平行链将Home Assistant连接到物联网设备的数据传输：[Leemo视频](https://www.youtube.com/watch?v=iB2Z8HtERgs)（[GitHub上的指南](https://github.com/airalab/robonomics-smarthome))。

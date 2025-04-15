@@ -1,0 +1,153 @@
+---
+title: "Kusama上のRobonomicsパラチェーン：初週のレポート"
+date: 2022-01-18
+published: true
+locale: 'ja'
+tags: ['Robonomicsパラチェーン']
+cover_image: /blog/images/parachain-on-kusama-first-week-report/cover.jpg
+description: "Robonomicsパラチェーンの立ち上げ以来、かなり幅広いタスクを完了することができました。そのため、1月2日と3日に素敵な食事やシャンパン、友人や家族との旅行から早めに離れてくれた皆さんに特別な感謝を申し上げます :) 以下の情報は、私が個人的に参加した内容であり、皆さんにお伝えしたいことです。"
+abstract: "Robonomicsパラチェーンの立ち上げ以来、かなり幅広いタスクを完了することができました。そのため、1月2日と3日に素敵な食事やシャンパン、友人や家族との旅行から早めに離れてくれた皆さんに特別な感謝を申し上げます :) 以下の情報は、私が個人的に参加した内容であり、皆さんにお伝えしたいことです。"
+author: '@ensrationis'
+---
+
+## Robonomicsパラチェーンの基本インフラ
+
+Robonomicsパラチェーンは[2022年1月9日に立ち上げられました](https://twitter.com/EnsRationis/status/1480139879057174530)。立ち上げ時には、[「Kusama Parachain Launch」のリリース1.4](https://github.com/airalab/robonomics/releases/tag/v1.4.0)がGitHubに投稿され、[コレーターを起動するために使用できます](https://wiki.polkadot.network/docs/learn-collator)。
+
+[p2p.orgと共同で](https://economy.p2p.org/p2p-validator-and-robonomics-announce-partnership-for-launch-of-parachains-on-kusama/)、最初のパラチェーンコレーターを立ち上げました。パラチェーンの運用初週には、[40以上のコレーターのオープンネットワーク](https://telemetry.parachain.robonomics.network/#/Robonomics)が現れました。
+
+コレーターの役割は、パラチェーンブロック候補を収集し、それらをKusamaリレーチェーンのバリデーターノードネットワークに検証のために転送することです。パラチェーンコレーターは現在のブロックで計算を行います。、そしてできるだけ早く形成されたブロックをパラチェーンコレーター間で広めようとします。その代わりに、コレーターは、計算に費やした報酬として少額のXRTを保証された金額で受け取り、ブロックで生成されたすべての手数料の50%を受け取ります。
+
+パラチェーンの開始から2日後、コミュニティメンバーの間で最初のコレーターを設定できるかどうかを確認するためにコンテストが開催されました。
+
+3日目に、[Subscanが](https://twitter.com/AIRA_Robonomics/status/1480833207834664960)Robonomicsパラチェーンブロックエクスプローラーをテストネット（Frontier Network）からメインネットに切り替えました。
+
+Robonomicsウィキは、パラチェーンコレーターの構築と実行に関するコミュニティでテストされた手順を提供するために更新されました：
+
+- [ソースからコレーターノードを構築する方法](https://wiki.robonomics.network/docs/en/how-to-build-collator-node/)
+- [Robonomicsコレーターを起動する方法](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/)
+
+コレーターの作業に関連する問題は以下で議論できます：
+
+- Discord: https://discord.gg/hBJS7uE2NC
+- またはElement: https://app.element.io/#/room/#robonomics:matrix.org
+
+## 今日のランタイムパラチェーン
+
+ランタイムの概念にまだ慣れていない方には、まずこの記事を読むことをお勧めします：https://docs.substrate.io/v3/runtime/frame/
+
+Robonomicsの現在のランタイム構造は次のとおりです：
+
+<TextCard>
+
+### Robonomicsパラチェーン
+
+#### サイバー物理システム機能
+- デジタルツイン
+- ローンチ
+- データログ
+- ロボット・アズ・ア・サービス
+
+#### IoTサブスクリプション
+- サブスクリプションオークション
+- ステーキング
+
+#### オンチェーンガバナンス
+- 財務省
+- テックコム
+- 民主主義
+
+#### トークン
+- 残高
+- トランザクション
+- マルチシグ
+- ベスティング
+
+#### ネットワークメンテナンス
+- ライトハウス
+- アイデンティティ
+
+</TextCard>
+
+Robonomicsパラチェーンに固有のランタイムモジュールの技術的な説明は、次のリンクで読むことができます：https://crates.robonomics.network/pallet_robonomics_datalog/index.html
+
+さらに、Robについても別途話します。onomicsのパラチェーンモジュールは、2022年のウィンターデベロッパースクールに向けて進化しています。このイベントは2月に開催されます。
+
+## パラチェーン技術委員会の設立
+
+![パラチェーン技術委員会](/blog/images/parachain-on-kusama-first-week-report/1-parachain-technical-committee.png)
+
+フロンティアネットワーク開発に最も頻繁に参加した6人のプロジェクト開発者が、[パラチェーン技術委員会](https://wiki.polkadot.network/ru-RU/docs/learn-governance#technical-committee)に加わりました。
+
+技術委員会は緊急のレファレンダムを行うことができ、これらは急なバグ修正や新しいが実戦済みの機能をランタイムに迅速に実装するために使用されます。
+
+## パラチェーントレジャリーが補充され、準備が整いました
+
+Kusama Networkの[Treasury](https://wiki.polkadot.network/ru-RU/docs/learn-treasury)が機能する方法と同様に、Robonomicsの開発者はコミュニティをサポートするために40万XRT以上を使用する計画です。Kusama Treasuryへのリクエストの例は、kusama.polkassembly.ioで入手できます。
+
+Robonomics Treasuryへのリクエストの提出方法や資金提供の優先領域に関する詳細は、後続のブログ記事で別途議論されます。
+
+![Robonomics Treasury](/blog/images/parachain-on-kusama-first-week-report/2-Treasury.png)
+
+Treasuryはこちらで利用可能です: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/treasury
+
+## 第4回クラウドローンキャンペーンの参加者に対するクラウドローン報酬の1/12が配布され、ベスティングモジュールの開始
+
+Robonomicsの開発者は、クラウドローンへの貢献者の残高にクラウドローン報酬の1/12を配布しました。残高はDeveloper > Chain state > system.account():FrameSystemAccountInfoを使用して確認できます。
+
+![Robonomics Chain state](/blog/images/parachain-on-kusama-first-week-report/3-chain-state.png)
+
+スクリーンショットに表示されているフリーバリューは、1,102,517,448 Wn ≈ 1.1 XRTに相当し（フリーバランスはマイクロXRT 10<sup>−6</sup>で表示されます）、これはネットワーク内での転送可能なフリーバランスです。最新のランタイムアップデートでベスティングモジュールも有効になりました。今週、11/12のバウンティが送信され、Developer > Chain state > system.account():FrameSystemAccountInfoの"miscFrozen"にも表示されます。
+
+完全なクラウドローン貢献報酬は、次の11ヶ月でリニアにアンロックされます。アンロック可能な金額は、アカウントページの「vested」フィールドで確認できます。
+
+![アンロック可能な金額](/blog/images/parachain-on-kusama-first-week-report/4-amount-available.png)
+
+1月末には、Robonomics Pioneer NFTを所有している人々に対して、クラウドローンでの1 KSMごとに追加で1 XRTを請求する方法に関する詳細情報を提供します。 Robonomics Developersはこれについて[Twitter](https://twitter.com/AIRA_Robonomics)で別途報告します。
+
+## フロンティアネットワークからXRTを移行する
+
+過去6ヶ月間、私たちは[フロンティアネットワーク](https://robonomics.network/blog/robonomics-frontier/)でパラチェーンの機能をテストし続けてきました。Kusamaでのパラチェーンの生活の最初の週に、開発者はフロンティアネットワークでの作業を停止し、パラチェーンの残高をKusamaに配布しました。
+
+![フロンティアネットワーク](/blog/images/parachain-on-kusama-first-week-report/5-frontier-network.png)
+
+スクリーンショットで確認できるように、フロンティアネットワークのリレーチェーン上のRobonomicsパラチェーンの最後のブロックは#1,046,628であり、フロンティアネットワークは143時間前にブロックの生成を停止しました。
+
+フロンティアネットワークの最後のブロック時の残高を確認するには、次のリンクを使用してください（Developer > Chain state > system.account: AccountInfo）: 
+https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier .rpc.robonomics.network%2F#/chainstate 
+
+残高の移行は複数段階のタスクであることに注意する必要があります：
+- まず、無料およびステークされたトークンが収集されました。
+- 後で、ユーザーがまだ受け取っていない（未請求の）ステーキング報酬が収集されました。
+- 報酬が追加され、引き出しを要求されましたが、ステーキングから引き出されていません。
+- 第1クラウドローンキャンペーン（"Plan B"）に参加している場合の11/12のクラウドローン報酬も追加されました。報酬)がユーザーの残高から差し引かれました（以下参照）。
+- 受け取った値が合算され、1つの開発者所有のアドレスに送られて分配されました。
+- 第4回クラウドローンキャンペーンの参加者向けのクラウドローン報酬の11/12が、11ヶ月間のベスティングに送られました。
+
+したがって、Kusamaパラチェーンの参加者の初期残高は次のようになります:
+- エクソダスブリッジを介して転送されたXRTトークン。
+- フロンティアネットワークリレーチェーン上に存在したパラチェーンの寿命中に生成されたステーキング報酬。
+- コレクター報酬
+- 第1回クラウドローンキャンペーンへの参加によるクラウドローン貢献報酬の11分の1（"プランB"報酬）。
+- 第4回（優勝）クラウドローンキャンペーンへの参加によるクラウドローン貢献報酬の11分の1
+
+## Kusamaパラチェーン上のXRTステーキング
+
+Robonomicsパラチェーンの第2のアップデートでは、XRTステーキングモジュールが含まれていました。
+
+![Robonomics dapp](/blog/images/parachain-on-kusama-first-week-report/6-Robonomics-dapp.png)
+*Robonomics dapp内のステーキングセクションの操作例*
+
+XRTステーキングは、Robonomics dappの以下のリンクで利用可能です: https://robonomics.app/#/staking/
+
+ステーキング報酬は年間約10%です。
+
+第4回クラウドローンキャンペーンの参加者向けに、Robonomicsの開発者はステーキング報酬を50%に増やしました。このステーキング報酬の割合は、第4回クラウドローンキャンペーンへの参加によって生成されたXRTの金額にのみ制限されることに注意してください。
+
+[自律パラチェーンライフサイクル](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/)の完全な実装により、ステーキング報酬の定数値がリレーチェーン上のKSMステーキング報酬のサイズに適応する変数に変更されます。このトピックは、Robonomics Whitepaper 2022で詳細に議論されます。その公開後、ネットワークの変更を開始します。
+
+## 最も重要なことはこれからです！
+
+Robonomicsアプリケーションシナリオはすでに[フロンティアネットワークからKusamaパラチェーンに移行しています](https://twitter.com/EnsRationis/status/1481900111856906240)。1月末に向けて、Robonomicsのデモ週間のIoTプロジェクトの日程を発表します。これらのプロジェクトは、Kusamaパラチェーンに基づいたソリューションを提供する準備が整っています。
+
+最新情報は[Twitter](https://twitter.com/AIRA_Robonomics)でフォローしてください。Robonomicsは、ユーザーの成長のための持続可能な開発パスを築くまで、暗号プロジェクトの中でユニコーンを目指すことはありません。2022年には、IoT分野で数十の興味深いWeb3アプリケーションシナリオが私たちを待っています。しかし、Robonomicsが何千もの通常のユーザーにとって有用になるのは、プロジェクトが正しい位置を占めるときだけです。その間、私たちは皆、プロジェクトの開発を続け、世界を変えるためにWeb3テクノロジーの導入に向けて取り組む必要があります。たとえば、Home Assistantを使用してIoTデバイスからのデータ転送をRobonomicsパラチェーン経由で行う方法については、[Leemoビデオ](https://www.youtube.com/watch?v=iB2Z8HtERgs)（[GitHubでの手順](https://github.com/airalab/robonomics-smarthome)）をご覧ください。

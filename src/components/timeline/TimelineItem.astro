@@ -1,0 +1,280 @@
+---
+
+const defaultProps = {
+  events: [],
+  img: '',
+  linkWithImg: '',
+  sideLine: '',
+};
+
+const props = Astro.props as typeof defaultProps;
+---
+<div class="timeline__item">
+  <div class="timeline__header">
+    <div class="timeline__header-left">
+      <span class="timeline__year">{props.year}</span>
+      <h2 class="timeline__title">{props.title}</h2>
+    </div>
+    {props.img && (
+      <div class="timeline__header-right">
+        <a class="timeline__link-with-arrow" target="_blank" href={props.linkWithImg} aria-label="check the book">
+          {$tr('Read our almanac')}
+        </a>
+        <a class="timeline__img" href={props.linkWithImg} target="_blank" aria-label="check the book">
+          <img src={`/images/books/${props.img}`} alt="" loading="lazy" />
+        </a>
+      </div>
+    )}
+  </div>
+  <div class={`timeline__text-wrapper block${props.id}`}>
+    <div class="timeline__text" set:html={props.text}></div>
+    {props.sideLine && (
+      <span class={`timeline__sideline line${props.id}`}>{props.sideLine}</span>
+    )}
+  </div>
+  {props.events && props.events.length > 0 && (
+    <div class="timeline__events">
+      <h3>{$tr('Notable events:')}</h3>
+      <ul class="timeline__events-list">
+        {props.events.map((event) => (
+          <li class="timeline__events-item" key={event.id}>
+            <a class="timeline__link" href={event.link} target="_blank" aria-label="check out the event">
+              {event.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</div>
+
+<script define:vars={{props}}>
+  // JavaScript for the scroll behavior
+const addScrollBehavior = (blockId) => {
+  const block = document.querySelector(`.block${blockId}`);
+  const line = block?.querySelector('.timeline__sideline');
+  let visible = false;
+  let currentScrollPos = 0;
+
+  const scrollHandler = () => {
+    if (!visible) return;
+
+    const currPos = parseInt(window.getComputedStyle(line).getPropertyValue('top'), 10);
+    const max = block && block.clientHeight - parseInt(window.getComputedStyle(line).getPropertyValue('width'), 10);
+    const value = block && block.clientHeight > 900 ? 8 : 5;
+
+    const scrollDirection = window.scrollY > currentScrollPos ? 'down' : 'up';
+    currentScrollPos = window.scrollY;
+
+    if (scrollDirection === 'up' && currPos > 0) {
+      line.style.top = `${Math.max(currPos - value, 0)}px`;
+    } else if (scrollDirection === 'down' && currPos < max) {
+      line.style.top = `${Math.min(currPos + value, max)}px`;
+    }
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(({ isIntersecting }) => {
+      visible = isIntersecting;
+    });
+  });
+
+  observer.observe(block);
+  window.addEventListener('scroll', scrollHandler);
+};
+
+addScrollBehavior(props.id);
+</script>
+
+<style>
+
+  .timeline__item {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 166px;
+  }
+
+  .timeline__header {
+    position: relative;
+    width: 100%;
+    min-height: 166px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(200px, 520px) minmax(250px, 1fr);
+    margin-bottom: var(--space);
+    gap: calc(var(--space) * 0.5);
+  }
+
+  .timeline__header-right {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  html[dir="rtl"] .timeline__header-right {
+    right: unset;
+    left: 0;
+  }
+
+  .timeline__header-right img {
+    width: 154px;
+    height: 156px;
+  } 
+
+  .timeline__year {
+    display: inline-block;
+    padding: 0.2rem 0.9rem;
+    margin-bottom: calc(var(--space) * 0.5);
+    font-weight: 900;
+    font-size: calc(var(--base-font-size) * 1.5);
+    background-color: var(--rb-color-green-accent);
+  }
+
+  .timeline__title {
+    margin-top: 0;
+    padding-left: calc(var(--space) * 0.5);
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: calc(var(--base-font-size) * 1.3);
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .timeline__img {
+    flex-shrink: 0;
+  }
+
+  .timeline__link-with-arrow {
+    position: relative;
+    margin-right: calc(var(--space) * 0.5);
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  html[dir="rtl"] .timeline__link-with-arrow {
+    margin-right: 0;
+    margin-left: calc(var(--space) * 0.5);
+  }
+
+  .timeline__link-with-arrow::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -3px;
+    width: 67px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='67' height='16' viewBox='0 0 67 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM66.7071 8.70711C67.0976 8.31658 67.0976 7.68342 66.7071 7.29289L60.3431 0.928932C59.9526 0.538408 59.3195 0.538408 58.9289 0.928932C58.5384 1.31946 58.5384 1.95262 58.9289 2.34315L64.5858 8L58.9289 13.6569C58.5384 14.0474 58.5384 14.6805 58.9289 15.0711C59.3195 15.4616 59.9526 15.4616 60.3431 15.0711L66.7071 8.70711ZM1 9L66 9V7L1 7L1 9Z' fill='%232949D3'/%3E%3C/svg%3E%0A");
+  }
+
+  .timeline__link{
+    text-decoration: none;
+  }
+
+  .timeline__text-wrapper {
+    position: relative;
+  }
+
+
+  .timeline__events {
+    margin-top: var(--space);
+    align-self: flex-start;
+  }
+
+  .timeline__events h3 {
+    margin-bottom: calc(var(--space) * 0.5);
+    text-align: left;
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .timeline__events-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .timeline__events-item::marker {
+    color: var(--color-blue);
+  } 
+
+
+  .timeline__events-item .timeline__link  {
+    text-decoration: underline;
+  }
+
+  .timeline__events-item:not(:last-child) {
+    margin-bottom: calc(var(--space) * 0.3);
+  }
+
+  /* side line */
+  .timeline__sideline {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    display: block;
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--rb-color-green-accent);
+    transform: rotate(-90deg) translate(-100%, 0);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+    z-index: 900;
+  }
+
+  @media screen and (max-width: 560px) {
+
+    .timeline__header-left {
+      padding-bottom: calc(var(--space) * 2);
+    }
+    
+    .timeline__title {
+      font-size: calc(var(--base-font-size) * 1.15);
+    }
+
+    .timeline__img img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .timeline__link-with-arrow {
+      font-size: 18px;
+    }
+
+    .timeline__sideline {
+      left: -22px;
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    .timeline__text-wrapper {
+      padding-left: 20px;
+    }
+
+    .timeline__sideline {
+      left: -10px;
+    }
+    
+  }
+
+  @media screen and (max-width: 390px) {
+    .timeline__title {
+      max-width: 150px;
+      font-size: calc(var(--base-font-size) * 0.8);
+    }
+
+    .timeline__link-with-arrow {
+      font-size: 16px;
+    }
+  }
+
+
+</style>

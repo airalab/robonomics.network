@@ -1,0 +1,128 @@
+---
+title: Robonomics Crowdloan和后续步骤，2021年6月
+date: 2021-06-11
+published: true
+locale: 'zh'
+cover_image: /blog/images/kusama-crowdloan-details/robonomics-crowdloan-on-kusama.jpg
+description: "详细了解Cowdloan模块，启动后的平行链更新计划以及有关拍卖的常见问题"
+abstract: "详细了解Cowdloan模块，启动后的平行链更新计划以及有关拍卖的常见问题"
+related: ['Kusama Parachain Lease Offering, April 2021', 'Trajectory of Robonomics Development 2021, Part 1', 'Robobank. Accept any Polkadot token in automation services', 'The ultimate guide to Robonomics, RWS and Robonomics parachain on Polkadot']
+tags: ['Robonomics平行链']
+---
+
+2021年夏季，我们将看到首次五次拍卖，允许项目租用Kusama网络插槽，租期为48周（或1年）。成为Kusama的平行链之一是为您的Substrate项目提供在Polkadot生态系统内的访问权限的好方法，为小型项目实施目前不可用的区块链网络安全性，以及尽快启动与其他生态系统项目的集成过程。Robonomics在2022年的目标是成为IoT项目在Polkadot生态系统中的完全运作的导体。这就是为什么我们对启动Kusama网络的所有前述好处如此重要。总的来说，我们的策略[早就已经发布](/blog/robonomics-parachain-lease-offering/) - “首选Kusama，而Polkadot是一个愿景”。在本文中，我们将详细解析Cowdloan模块的使用，并查看启动后的平行链更新计划。
+
+## Kusama众贷已经开始！
+
+*Dr. Gavin Wood，2021年6月8日，[Kusama平行链拍卖](https://polkadot.network/kusama-parachain-auctions/):*
+
+> 以下情况假设中继链逻辑没有发现重大且意外的问题。（在这种情况下，所有选项应保持开放）网络治理，包括暂停或推迟任何已安排或正在进行的拍卖活动。）
+
+**拍卖初步时间表：**
+
+- 2021/06/15，12:00 GMT：第一个Kusama Parachain Slot拍卖开始。可以进行竞标。
+
+- 2021/06/22，12:00 GMT：第二个Kusama Parachain Slot拍卖开始。
+
+- 2021/06/29，12:00 GMT：第三个Kusama Parachain Slot拍卖开始。
+
+- 2021/07/06，12:00 GMT：第四个Kusama Parachain Slot拍卖开始。
+
+- 2021/07/13，12:00 GMT：第五个Kusama Parachain Slot拍卖开始。
+
+Polkadot允许平行链为其平行链竞标筹集代币，采用去中心化的[众贷](https://wiki.polkadot.network/docs/en/learn-crowdloans)。一旦众贷活动开放，任何人都可以通过发送引用该活动索引的特殊交易来参与。用于参与的代币必须是可转让的 — 也就是说，不能因为抵押、解锁或治理等原因而被锁定 — 因为它们将被转移到专门为此活动生成的模块控制账户中。
+
+四个项目启动了他们的KSM众贷活动（Kurara最多1.5百万KSM，Shiden最多1百万KSM，Crust最多1百万KSM，Moonriver最多1百万KSM）来为在Kusama上租赁平行链槽位收集资源，在平行链租赁拍卖期间。
+
+Robonomics Dev DAO旨在出价确切数量的KSM，以确保获得第三至第五个平行链槽位。因此，众贷模块将在Kusama第二个槽位拍卖结束后立即启动。
+
+## Robonomics众贷启动的预计时间为6月28日
+
+您可以通过[专用页面](/kusama-slot)参与Robonomics众贷。
+
+**在参与众贷之前，请通过[Twitter](https://twitter.com/AIRA_Robonomics)确认活动正在进行中。**
+
+## 如何参与Robonomics众贷
+
+默认情况下，Polkadot开发人员提供了一个本机界面在[Substrate门户](https://polkadot.js.org/apps/#/parachains/crowdloan)
+
+![Polkadot门户上的Crowdloan](/blog/images/kusama-crowdloan-details/crowdloan-on-polkadot-portal.png)
+*2021年6月11日Crowdloan页面示例*
+
+四月初，Robonomics通过Rococo网络上的Crowdloan模块练习参与拍卖。您可以查看这个Twitter主题以熟悉社区参与[Polkadot拍卖](https://twitter.com/AIRA_Robonomics/status/1377653645827833860)的标准界面
+
+另外，值得一提的是，在官方[Robonomics网站](/kusama-slot)，将提供与Crowdloan模块交互的功能。
+
+这是Robonomics网站上的Crowdloan参与将在6月28日之后看起来。
+
+关于如何通过Robonomics网站使用Crowdloan界面模块的说明将在第三轮拍卖开始前发布。
+
+## 社区中的热门问题
+
+<TextCard back="transparent">
+
+### 为什么Robonomics参与仅从第三轮开始？
+
+开发者今天可以发布Crowdloan模块，但那样我们就必须实施限制。可以注意到，前4个发布其Crowdloan模块的项目设定了100万个KSM代币的限制。
+
+我们押注于100,000个KSM足以赢得Kusama网络拍卖中的一个，但也为自己保留了空间，以便在第一轮和第二轮结束时了解到需要收集更多KSM代币时能够快速调整限制。总的来说，我们正在努力寻找一个槽位的最佳租金成本。
+
+</TextCard>
+
+<TextCard back="transparent">
+
+### 如果Robonomics没有赢得第5轮拍卖会发生什么？
+
+老实说，我们没有B计划。[我们会像施瓦辛格一样](https://youtu.be/Ri-M_Vo3w5A)。
+
+</TextCard>
+
+<TextCard back="transparent">
+
+### 是否可以通过交易所参与Robonomics的crowdloan？
+
+一些知名交易所如Kraken和Okex已经为他们的用户提供crowdloan支持. 在第3轮拍卖开始时，Robonomics网站将提供支持与Crowdloan模块互动的相关交易所列表。
+
+</TextCard>
+
+<TextCard back="transparent">
+
+### 48小时后会发生什么？
+
+如果在48周后项目再次未能赢得拍卖，那么平行链将转变为[parathread](https://wiki.polkadot.network/docs/en/learn-parathreads#docsNav)。然而，开发人员已经发布了未来插槽拍卖的准备计划：这是2020年10月26日的一篇文章，[Robonomics Parachain Lease Offering, On-chain Governance Strategy](/blog/robonomics-parachain-lease-offering/)。此外，我们还有一个关于开发将内置到Robonomics协议中的算法的秘密计划，该算法将自动生成有利的绑定条款，使KSM/DOT持有者也受益于Robonomics。总的来说，我们提前考虑中期问题，并继续思考保持Robobomics作为平行链的重要事项。
+
+</TextCard>
+
+## 拍卖后的生活
+
+平行链的生命从拍卖结果结束的那一刻开始。但对于一个项目来说，这并不意味着工作结束。还记得Polkadot中继链是如何启动的吗？Robonomics团队正在考虑类似的启动形式，逐步增加用户可访问的功能。
+
+## Robonomics将以以下可能性开始其存在：
+
+- 在余额之间进行XRT转账
+
+- 使用XRT启动IoT设备以支付交易费用
+
+- 使用XRT发送IoT设备遥测数据以支付交易费用
+
+- Sudo
+
+- 技术委员会
+
+## 进一步更新计划
+
+- Genesis状态：核心功能（第0周）。启动上述功能集。
+
+- 更新0.1：质押（1 - 3周）。将允许您以10%的APY质押您的XRT，对于代币持有者和Crowdloan参与者则为125%。
+
+- 更新0.2：财政（4 - 6周）。将允许将DAO资金的一部分从以太坊转移到平行链。
+
+- 更新0.3：RWS（7 - 8周）。将允许使用IoT管理功能，不仅包括佣金支付，还包括月度订阅。更新 0.4：机器人即服务（9 - 10周）。将允许实施自动化服务供应的控制流程，并在交易中使用支付来启动设备。
+
+- 更新 0.5：Robobank（11 - 12周）。您可以在这篇文章中阅读有关Robonomics的信息：https://robonomics.network/blog/robobank-introduction/
+
+- 更新 0.6：移除Sudo（13 - 14周）。开发人员将无法干预网络操作，除非技术委员会介入。
+
+- 生态系统集成更新（年底前）。此外，我们将重点关注与其他平行链的集成，以扩展对Polkadot能力感兴趣的物联网项目的功能。
+
+敬请关注并在[Twitter](https://twitter.com/AIRA_Robonomics)上关注我们的更新。

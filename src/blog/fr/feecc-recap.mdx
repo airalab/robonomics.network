@@ -1,0 +1,67 @@
+---
+title: "FEECC : Un système d'accumulation de données de fabrication décentralisé"
+date: 2024-09-12
+published: true
+locale: 'fr'
+tags: ["Cas d'utilisation", 'Web3']
+cover_image: /blog/images/feecc-recap/0-cover.png
+description: 'Depuis près de 4 ans, une expérience de longue durée est menée pour appliquer les technologies Robonomics à une entreprise de production réelle. Voici un bref récapitulatif.'
+abstract: "Et si un vendeur pouvait fournir une preuve irréfutable de l'authenticité de votre.. cappuccino ? Et s'il ne s'agissait pas d'une tasse de café, mais plutôt d'une grande chaîne d'approvisionnement pour un fabricant de voitures. Ou, encore plus responsable, une entreprise d'équipements médicaux ? Pavel Tarasov [PaTara]"
+---
+
+Alors, le café. Disons, il n'a ni été renversé et remplacé par de l'eau, ni n'était un mélange de vieux coups ou quelque chose du genre.
+Je sais, la grande majorité des entreprises valorisent leur réputation et prouvent au quotidien leur intégrité et le café est un produit qui ne peut pas vraiment avoir un impact important.
+
+Mais avec les équipements médicaux, les conséquences pourraient ne pas se limiter à un goût gâté. Quoi qu'il en soit, nous n'avions aucune idée de la médecine, mais l'idée derrière [FEECC](https://multi-agent.io/projects/feecc/) a commencé avec une expérience de café.
+
+<RbImage zoom src="/blog/images/feecc-recap/1-coffee.png" alt="Schéma du café" />
+
+En gros, il s'agissait simplement d'un logiciel d'enregistrement déclenché par un gros bouton rouge et une imprimante d'étiquettes QR-code, mais sous le capot, il y avait tout un ensemble de magie Web3.
+Tout d'abord, la vidéo n'était pas stockée dans un système de fichiers classique. Au lieu de cela, IPFS était utilisé. Le principal avantage de cela est la chose appelée CID - Content Identifier. Une clé de longueur fixe pour retrouver votre fichier partout dans le monde (théoriquement).
+Deuxièmement et surtout, le CID était placé dans un Datalog - une fonctionnalité de palette Robonomics Parachain qui vous permet de stocker n'importe quelle chaîne de caractères jusqu'à 512 octets dans une blockchain pour toujours ! Cela signifie qu'en mettant le pointeur lié au contenu dans un stockage de données cryptographique, vous assurez la transparence et la confiance dans cette tasse de café. Vous n'en aurez peut-être pas besoin à chaque fois que vous prenez votre lavande raf préféré, mais le jour où il a un goût amer, vous et le vendeur pouvez être totalement sûrs de qui est lecoupable ici.
+
+
+## Non seulement un service client, mais aussi un module MES interne.
+
+MES signifie Manufacturing Execution System. Il est responsable de l'optimisation et de l'analyse des processus de fabrication 
+et il y a un endroit spécifique où FEECC peut être utile. Voyez-vous, il y a une entreprise d'équipements médicaux, EndoStars, 
+qui utilise des composants assemblés manuellement et qui sont sujets aux risques de défauts. Avant l'installation de FEECC, 
+vous ne pouviez jamais dire si le défaut était de la faute du fournisseur ou de l'assembleur. De plus, il y avait plusieurs 
+processus encore à optimiser, comme la fourniture de schémas d'assemblage sous forme numérique plutôt que de chercher à travers des 
+tonnes de papiers. Ainsi, après un certain temps de développement et d'intégration des processus, le schéma suivant est maintenant utilisé :
+
+<RbImage zoom src="/blog/images/feecc-recap/2-assembly.png" alt="Assemblage" />
+
+Les assembleurs reçoivent leurs pièces et déclenchent le processus d'enregistrement avec un bouton d'application web (cette application 
+contient également des instructions d'assemblage). Ensuite, ils reçoivent un code-barres unique à coller sur la pièce et l'assemblent sous 
+surveillance vidéo. Lorsque le processus d'assemblage est terminé, de la même manière qu'avec le café, ils obtiennent les données stockées 
+dans IPFS pour être distribuées et le CID est mis dans la chaîne Robonomics pour être sauvegardé pour toujours. En option, ils peuvent obtenir 
+un QR-code (indépendant de la base de données) pour un client, mais la majorité des cas d'utilisation est pour un département de contrôle de 
+qualité interne.
+
+
+Avant de livrer les marchandises au client, ils effectuent un contrôle de qualité. Ce processus est également facilité avec certains modules 
+web FEECC et le protocole est également enregistré dans la chaîne, mais le point clé ici est le lien du produit avec ses données d'assemblage 
+(vidéos pour l'instant). Ce lien est irremplaçable car les données sont dans la blockchain et l'adresse est également liée au contenu lui-même. 
+Ainsi, le département de contrôle de qualité peut être sûr de l'innocence de leurs collègues et les assembleurs peuvent se protéger contre les 
+accusations.
+
+<RbImage zoom src="/blog/images/feecc-recap/3-qcd.png" alt="QCD" />
+
+## Architecture.
+Ci-dessous se trouve un récapitulatif schématisé de l'architecture du logiciel utilisé dans ce cas. Certains détails techniques sont 
+omis mais le concept lui-même est clair : FEECC vous permet de sauvegarder des données précieuses sous une forme irremplaçable pour éviter 
+la fraude et garantir des chaînes d'approvisionnement sûres. Cela peut être accompagné d'autres modules de fabrication avec la même idée 
+fondamentale à l'intérieur : sécurisé.et
+stockage et utilisation transparents des données.
+
+<RbImage zoom src="/blog/images/feecc-recap/4-architecture.png" alt="Architecture" />
+
+## Quels sont les chiffres?
+
+L'expérience du café a commencé il y a 4 ans et l'intégration de la fabrication médicale a eu lieu à l'automne 2021. Et nous avons
+quelques chiffres à partager :
+
+<RbImage zoom src="/blog/images/feecc-recap/5-numbers.png" alt="Numbers" />
+
+Avec tout cela, nous pouvons certainement dire que FEECC est une application Web3 éprouvée dans la vie réelle pour fournir une accumulation et un stockage sécurisés des données pour les productions.

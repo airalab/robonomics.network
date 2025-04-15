@@ -1,0 +1,84 @@
+---
+title: "Informe de desarrollo de Robossembler #1"
+date: 2024-12-08
+published: true
+locale: 'es'
+cover_image: /blog/images/robossembler-dev-report-december-2024/Cover.webp
+description: "El proyecto Robossembler se centra en el desarrollo de robots industriales y herramientas para su producción que sean accesibles para cualquier entusiasta del bricolaje. En este artículo, compartiremos nuestro progreso actual: una caja de cambios actualizada y probada, la quinta versión de la máquina de bobinado y un manipulador de robots con optimizaciones adicionales para impresión 3D."
+abstract: "El proyecto Robossembler se centra en el desarrollo de robots industriales y herramientas para su producción que sean accesibles para cualquier entusiasta del bricolaje. En este artículo, compartiremos nuestro progreso actual: una caja de cambios actualizada y probada, la quinta versión de la máquina de bobinado y un manipulador de robots con optimizaciones adicionales para impresión 3D."
+tags: ['Robossembler']
+---
+
+
+## Servomotor
+
+Un motor por sí solo suele carecer de suficiente par para girar o levantar objetos pesados en el mundo real, por lo que necesita una caja de cambios o transmisión. Una caja de cambios convierte el par del motor en una fuerza de salida utilizable. Esto resultó especialmente importante en nuestro caso: nuestro estator impreso con tornillos DIN como núcleos magnéticos resultó 3-4 veces más débil que los equivalentes que utilizan estatores de metal sólido hechos de acero eléctrico.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/stator-photo_2024-12-08_00-03-21.webp" alt="" />
+
+Dado este rendimiento relativamente bajo, necesitábamos una caja de cambios con una alta relación de engranajes que, al igual que todo en Robossembler, fuera simple de ensamblar y adecuada para la impresión 3D. Exploramos numerosos diseños de cajas de cambios, incluidos algunos exóticos, pero ninguno cumplía con nuestros criterios. Nuestro último intento, una caja de cambios de onda de deformación con elementos rodantes intermedios, funcionó bien pero resultó demasiado compleja de fabricar.
+
+Después de una extensa experimentación, finalmente descubrimos el diseño perfecto: ¡una caja de cambios precesora con una relación de engranajes de 1:43!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-07_21-54-20.webp" alt="" />
+
+¡Mira lo sencillo que es ensamblarlo:
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0vXwFmTB_L4?si=soNbSNKg9tjPWY1f" title="Reproductor de video de YouTube" frameborder="0" allow="acelerómetro; autoplay; clipboard-write; encrypted-media; giroscopio; imagen-en-imagen; compartir-en-la-web" referrerpolicy="estricto-origen-cuando-sea-cruzado" allowfullscreen></iframe>
+
+La caja de cambios ha completado sus pruebas y ensayos clave. Aquí hay algo impresionante: el servoaccionamiento con caja de cambios pesa solo 273 g, igualando el peso de un estándar.¡motor de metal sin caja de cambios ni controlador!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-08_14-02-33.webp" alt="" />
+
+## Máquina de Bobinado del Estator
+
+Mientras que la versión 4 de nuestra máquina de bobinado enrolló con éxito los primeros estatores de forma semiautomática, necesitaba mejoras en estabilidad y repetibilidad. La versión 5 trae numerosas mejoras, y aquí están las principales.
+
+Hemos actualizado desde el controlador de motor paso a paso Creality propietario utilizado en la versión 4 a un RAMPS, un controlador probado de la legendaria impresora RepRap.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-50-12.webp" alt="" />
+
+- Hicimos las piezas de la máquina más ligeras y mejores: ahora usan un 25% menos de material plástico y se pueden imprimir en 3D más fácilmente sin estructuras de soporte adicionales
+- El sistema de alimentación de alambre es ahora más estable con un freno de carrete adicional y una ranura de alambre más profunda en la rueda
+- Hemos rediseñado la carcasa de visualización y la cubierta trasera para una mejor protección
+- La documentación del proyecto está ahora completa con especificaciones detalladas de sujetadores, tiempos de impresión y datos de consumo de plástico.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-51-26.webp"alt="" />
+
+Hemos añadido un calibrador de aguja al diseño de la máquina para simplificar la configuración del equipo.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-04_11-41-56.webp" alt="" />
+
+La versión 5 se encuentra actualmente en pruebas, junto con nuestro nuevo generador de programas de código G para bobinado. En lugar del programa codificado previamente para modificaciones específicas de motores, nuestro nuevo generador de código G permite una rápida adaptación para diferentes diseños de estatores.
+
+## Manipulador de Robot
+
+A medida que nos acercamos a la preparación para la producción con el motor y la caja de cambios, estamos perfeccionando el diseño del manipulador. Aunque pensábamos que estaba bien optimizado para la impresión en 3D, nuestros nuevos miembros del equipo —un tecnólogo en 3D con 10 años de experiencia— identificaron varias áreas de mejora. Nos hemos centrado en hacer que la impresión de piezas sea predecible incluso en impresoras de bajo costo, incluida la reconfiguración de los enlaces del cuerpo principal para imprimir con soportes mínimos.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/3d-supports.webp" alt="" />
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/roboarm-3d-optimize-photo_2024-11-20_15-56-53.webp" alt="" />
+
+A petición de nuestro programador de control de movimiento, rediseñamos la horquilla —el componente que conecta los enlaces de accionamiento del manipulador en una sola cadena cinemática.El diseño anterior ofrecía un radio de trabajo más amplio pero causaba posiciones singulares frecuentes durante los cálculos de trayectoria, complicando el control de la simulación. Nuestro nuevo diseño de horquilla elimina este problema, haciendo que la cinemática del robot sea más óptima y más similar a Kuka Iiwa ;D.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/fork-roboarm-photo_2024-12-07_11-39-31.webp" alt="" />
+
+Para el software de control, estamos desarrollando una solución utilizando ROS 2 Humble (probando Jazzy) y Behaviour Tree CPP v4, actualmente en proceso de validación en AR4. Una innovación clave es nuestro amplio uso de nodos de gestión del ciclo de vida para cambios de parámetros en tiempo de ejecución, como configuraciones de controlador o carga de nuevos pesos de redes neuronales de visión artificial en tiempo real.
+
+## Planes
+
+Nuestros próximos objetivos:
+
+- Lanzar un dispositivo de agarre mejorado con nuevo motor, caja de cambios y dedos intercambiables
+- Probar el generador de GCode de la máquina de bobinado y el bobinado totalmente automático del estator
+- Completar la optimización en 3D del robot y crear un video de demostración de ensamblaje
+- Optimizar la gestión de la temperatura del accionamiento del servomotor y probarlo bajo carga dentro de un eslabón
+
+¡Sigue las actualizaciones en mi blog en [x.com](https://x.com/movefasta) !
+
+## Fuentes de Software y Hardware
+
+- Brazo Robossembler - https://gitlab.com/robossembler/roboarm-diy-version
+- Máquina de Bobinado: https://gitlab.com/robossembler/cnc/motor-wire-winder- Servo - https://gitlab.com/robossembler/servo
+- Herramienta de agarre - https://gitlab.com/robossembler/arm-tools/grip-tool
+- Tiempo de ejecución de Robossembler ROS 2 - https://gitlab.com/robossembler/robossembler-ros2

@@ -1,0 +1,62 @@
+---
+title: "FEECC: Ein dezentrales System zur Datensammlung in der Fertigung"
+date: 2024-09-12
+published: true
+locale: 'de'
+tags: ['Anwendungsfälle', 'Web3']
+cover_image: /blog/images/feecc-recap/0-cover.png
+description: 'Seit fast 4 Jahren läuft ein langanhaltendes Experiment, um Robonomics-Technologien auf ein reales Produktionsgeschäft anzuwenden. Hier ist eine kurze Zusammenfassung.'
+abstract: "Was ist, wenn ein Verkäufer unwiderlegbaren Beweis für die Echtheit Ihres.. Cappuccinos liefern kann? Und was ist, wenn es nicht eine Tasse Kaffee ist, sondern eher eine große Lieferkette für einen Automobilhersteller. Oder noch verantwortungsbewusster, ein Medizinausrüstungsunternehmen? Pavel Tarasov [PaTara]"
+---
+
+Also, Kaffee. Angenommen, er wurde weder verschüttet und mit Wasser ersetzt, noch war es eine Mischung aus alten Aufnahmen oder so.
+Ich weiß, die überwiegende Mehrheit der Unternehmen schätzt ihren Ruf und beweist tagtäglich ihre Integrität, und Kaffee ist das Produkt, das das nicht wirklich stark beeinflussen kann.
+
+Aber bei medizinischer Ausrüstung können die Folgen nicht nur ein verdorbener Geschmack sein. Wie auch immer, wir hatten keine Ahnung von Medizin, aber die Idee hinter [FEECC](https://multi-agent.io/projects/feecc/) begann mit einem Kaffeeexperiment.
+
+<RbImage zoom src="/blog/images/feecc-recap/1-coffee.png" alt="Kaffee-Schema" />
+
+Im Grunde genommen handelte es sich hierbei nur um eine Aufnahmesoftware, die über einen großen roten Knopf und einen QR-Code-Etikettendrucker ausgelöst wurde, aber unter der Oberfläche steckte eine ganze Menge Web3-Magie.
+Erstens wurde das Video nicht in einem herkömmlichen Dateisystem gespeichert. Stattdessen wurde IPFS verwendet. Der Hauptvorteil dabei ist das sogenannte CID - Content Identifier. Ein Schlüssel fester Länge, um Ihre Datei theoretisch von überall auf der Welt zu finden.
+Zweitens und am wichtigsten wurde der CID in ein Datalog eingefügt - ein Feature des Robonomics Parachain-Paletts, das es Ihnen ermöglicht, jeden String von bis zu 512 Bytes für immer in einer Blockchain zu speichern! Das bedeutet, dass Sie durch das Einsetzen des inhaltsbezogenen Zeigers in einen krypto-gesicherten Datenspeicher die Transparenz und das Vertrauen in diese Tasse Kaffee gewährleisten. Sie benötigen es vielleicht nicht jedes Mal, wenn Sie Ihren Lieblings-Lavendel-Raf trinken, aber an dem Tag, an dem er bitter schmeckt, können Sie und der Verkäufer sich vollkommen sicher sein, wer derSchuldiger hier.
+
+## Nicht nur ein Kundenservice, sondern auch ein internes MES-Modul.
+
+MES steht für Manufacturing Execution System. Es ist verantwortlich für die Optimierung und Analyse von Fertigungsprozessen 
+und es gibt einen spezifischen Bereich, in dem FEECC nützlich sein kann. Sehen Sie, es gibt ein medizinisches Geräteunternehmen, EndoStars, 
+das manuell montierte Komponenten verwendet, die einem Risiko von Mängeln unterliegen. Vor der Installation von FEECC 
+konnte man nie sagen, ob der Mangel an einem Lieferantenfehler lag oder am Fehler des Monteurs. Darüber hinaus gab es mehrere 
+Prozesse, die noch optimiert werden mussten, wie z.B. die Bereitstellung von Montageplänen in digitaler Form anstelle von 
+der Suche durch Tonnen von Papieren. Also, nach einer Weile der Entwicklungs- und Integrationsprozesse wird das folgende Schema jetzt verwendet:
+
+<RbImage zoom src="/blog/images/feecc-recap/2-assembly.png" alt="Montage" />
+
+Die Montagearbeiter erhalten ihre Teile und starten den Aufnahmeprozess mit einem Webanwendungsbutton (diese Anwendung enthält auch 
+Montageanweisungen). Dann erhalten sie einen eindeutigen Barcode, den sie am Teil anbringen und unter Videoüberwachung montieren. 
+Wenn der Montageprozess abgeschlossen ist, erhalten sie die Daten, die wie bei Kaffee im IPFS gespeichert sind, um verteilt zu werden, 
+und die CID wird in die Robonomics-Kette eingefügt, um für immer gespeichert zu werden. Optional erhalten sie einen QR-Code 
+(datenbankunabhängig) für einen Kunden, aber die Mehrheit der Anwendungsfälle ist für eine interne Qualitätskontrollabteilung.
+
+Bevor sie die Waren an den Kunden versenden, führen sie eine Qualitätsprüfung durch. Auch dieser Prozess wird durch einige 
+FEECC-Webmodule erleichtert und das Protokoll wird ebenfalls in der Kette gespeichert, aber der Schlüsselpunkt hier ist die Verknüpfung des Produkts 
+mit seinen Montagedaten (Videos im Moment). Diese Verknüpfung ist unersetzlich, da die Daten in der Blockchain sind und die 
+Adresse auch mit dem Inhalt selbst verknüpft ist. Damit kann die Qualitätskontrollabteilung sicher sein, dass ihre Kollegen unschuldig sind 
+und die Montagearbeiter sich gegen Schuld schützen können.
+
+<RbImage zoom src="/blog/images/feecc-recap/3-qcd.png" alt="QCD" />
+
+## Architektur.
+Nachfolgend finden Sie eine schematische Zusammenfassung der Architektur der in diesem Fall verwendeten Software. Einige technische Details werden 
+ausgelassen, aber das Konzept selbst ist klar: FEECC ermöglicht es Ihnen, wertvolle Daten in einer unersetzlichen Form zu speichern, um Betrug zu vermeiden und 
+sichere Lieferketten zu gewährleisten. Dies kann mit anderen Fertigungsmodulen mit derselben Kernidee kommen: sicher.und
+transparente Datenspeicherung und -nutzung.
+
+<RbImage zoom src="/blog/images/feecc-recap/4-architecture.png" alt="Architektur" />
+
+## Was sind die Zahlen?
+
+Das Kaffeeexperiment begann vor 4 Jahren und die Integration der medizinischen Herstellung erfolgte im Herbst 2021. Und wir haben einige Zahlen zu teilen:
+
+<RbImage zoom src="/blog/images/feecc-recap/5-numbers.png" alt="Zahlen" />
+
+Mit all dem können wir definitiv sagen, dass FEECC eine Web3-Anwendung ist, die sich im realen Leben bewährt hat, um eine sichere Datensammlung und -speicherung für Produktionen bereitzustellen.

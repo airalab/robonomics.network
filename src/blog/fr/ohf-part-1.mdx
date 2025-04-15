@@ -1,0 +1,143 @@
+---
+
+title: Conception de mécanismes robustes pour le marché RWA des équipements intelligents
+
+date: 2024-11-11
+
+published: true
+
+locale: 'fr'
+
+tags: ['Annonces']
+
+cover_image: /blog/images/ohf-part-1/cover.webp
+
+description: "Le financement du marché des équipements intelligents en constante évolution présente des défis importants. Cet article propose une solution qui combine des jumeaux numériques pour la surveillance en temps réel, des marchés de prédiction pour une allocation efficace des capitaux et des contrats de partage des risques, le tout régis par un modèle DAO transparent pour permettre une prise de décision optimale dans cette industrie transformative."
+
+---
+
+Les récentes avancées en matière d'apprentissage automatique (ML) ont ouvert un afflux massif d'opportunités pour la robotique afin d'automatiser de nouvelles tâches dans le monde réel. Alors que la robotique industrielle reste le segment dominant en termes de taille, les robots de service - ceux qui opèrent parmi les personnes - ont connu la croissance la plus rapide. La valeur estimée du marché des robots de service professionnels était d'environ **21,6 milliards de dollars américains en 2023,** avec un taux de croissance annuel composé de 38%. Les percées en ML et la pénurie croissante de main-d'œuvre ont créé un moment unique où la robotique de service est enfin prête pour une mise en œuvre généralisée, répondant à des besoins critiques dans divers secteurs et dans notre vie quotidienne.
+
+"Les petites et moyennes entreprises (PME) ont besoin d'un accès facile à l'automatisation" et "La démocratisation" de la robotique sont les tendances clés en robotique actuellement, [selon l'IFR](https://ifr.org/img/worldrobotics/Press_Conference_2024.pdf). Les robots de logistique et d'entreposage ont connumenant cette tendance. Les premiers déploiements de robots de livraison en ville ont commencé et il est clair que l'optimisation des itinéraires est essentielle pour maintenir les marges. Les robots médicaux ont connu une forte augmentation pendant la pandémie et ont également été l'une des catégories les plus importantes depuis, la désinfection et la stérilisation étant les cas d'utilisation dominants. Les robots d'accueil dans les hôtels et les restaurants ont connu une forte hausse sur les marchés asiatiques et nous commençons à les voir davantage en Europe et aux États-Unis. L'agriculture, le nettoyage professionnel, les inspections et la maintenance, la construction et les industries lourdes, la sécurité / la recherche et le sauvetage - la liste des nouveaux domaines d'application ne cesse de s'allonger. Certaines des prévisions les plus optimistes indiquent que nous pourrions avoir plus de robots humanoïdes que de personnes dans la prochaine décennie.
+
+Voici la liste des cinq principaux domaines d'application pour la robotique de service professionnel en 2023, selon la Fédération internationale de robotique :
+
+![card-1.png](/blog/images/ohf-part-1/card-1.png)
+
+Cependant, à mesure que ces technologies évoluent, les approches de financement traditionnelles peinent à suivre les défis uniques posés par la location d'équipements intelligents et l'investissement dans la robotique.
+
+Les **modèles traditionnels**, tels que les prêts ou la location, sont souvent **inadaptés pour les équipements intelligents** en raison de l'obsolescence technologique rapide, de l'asymétrie de l'information et de l'incertitude des performances. Les technologies de robotique et d'IA évoluent rapidement, rendant les investissements à long terme risqués, car les modèles traditionnels ne tiennent pas compte des mises à niveau ou rétrofits fréquents nécessaires. Les fabricants ont souvent plus de connaissances sur les performances des équipements que les locataires, ce qui entraîne des inefficacités dans l'allocation du capital ousous-évaluation. De plus, les calendriers de paiement fixes ne parviennent pas à refléter la valeur réelle de l'équipement, surtout lorsque les performances dépendent de mises à jour logicielles ou d'intégrations. Le manque d'expertise des institutions financières dans la gestion des actifs pilotés par l'IA contribue également à un sous-investissement dans ces technologies à fort potentiel.
+
+Un meilleur système d'allocation de capital est nécessaire pour les équipements intelligents et connectés. Un système qui sera réactif au rythme beaucoup plus rapide de l'innovation et résilient aux incertitudes et aux informations asymétriques détenues par les différents participants du marché.
+
+
+
+## Principes de la conception de mécanismes robustes
+
+La conception de mécanismes est un **domaine de l'économie et de la théorie des jeux** qui se concentre sur la conception de règles ou de systèmes (mécanismes) pour atteindre des objectifs spécifiques, même lorsque les participants ont des informations privées et peuvent agir de manière stratégique ou collusoire. Un exemple classique est la conception d'enchères où les enchérisseurs ont des évaluations privées des biens mis aux enchères.
+
+Un défi clé dans la conception de mécanismes robustes est de gérer les **espaces de types** - toutes les caractéristiques possibles des agents, comme leurs préférences et leurs croyances. Étant donné que nous ne pouvons pas tenir compte de tous les espaces de types possibles, les mécanismes doivent être conçus pour gérer des situations diverses où les agents peuvent ne pas connaître pleinement les préférences ou les croyances des autres.
+
+Il existe de nombreux **agents différents** qui peuvent être directement impliqués dans la transaction d'équipement, tels que les **fabricants d'équipements d'origine (OEM)**, les **intégrateurs et les fournisseurs de maintenance**, les **initiateurs d'actifs**, les **souscripteurs** et les **investisseurs**. La coordination entre eux implique des coûts transactionnels importants, sans oublier les complexités supplémentaires liées à la prise en compte des intérêts publics plus larges. Malgré la complexité de cesinteractions, nous avons pour objectif de développer un mécanisme robuste qui :
+
+- **Garantit la compatibilité des incitations** pour tous les participants du marché
+- **Alloue des capitaux pour atteindre l'efficacité ex-post**
+- **Reste résilient aux incertitudes** des conditions du marché et des croyances des participants.
+
+Permettez-moi d'illustrer ceci avec un exemple simple pour faciliter la compréhension :
+
+**Compatibilité des incitations** : Imaginez que vous jouiez à un jeu où vous devez dire combien vous aimez différents bonbons. Si vous dites la vérité, vous obtiendrez votre bonbon préféré. La **compatibilité des incitations** signifie que votre meilleure option est d'être honnête car de cette manière, vous obtiendrez ce que vous voulez vraiment. En d'autres termes, dire la vérité est le choix le plus judicieux.
+
+**Efficacité ex-post** : Une fois que tout le monde a partagé ses préférences, les bonbons sont distribués. L'**efficacité ex-post** signifie que tout le monde finit par avoir le bonbon qu'il préfère, et aucun bonbon n'est gaspillé ou donné à quelqu'un qui ne l'aime pas. Cela garantit que chacun reçoit son bonbon préféré, rendant tout le monde aussi heureux que possible avec ce qu'ils reçoivent.
+
+Je crois qu'il est important d'utiliser des mécanismes compatibles avec les incitations lors de l'introduction de technologies aussi importantes que la robotique et l'IA incarnée, qui ont le potentiel de modifier fondamentalement le tissu de la société. S'assurer que ces mécanismes sont robustes est essentiel pour maximiser les avantages sociaux et obtenir des résultats équitables et efficaces dans le déploiement de technologies transformatrices.
+
+
+
+## Conception de marché d'actifs du monde réel (RWA) pour l'équipement intelligent
+
+Concevoir un mécanisme robusteLe mécanisme d'allocation de capital dans de nouvelles catégories d'équipements intelligents est incroyablement difficile en raison de la complexité et de la nature évolutive du domaine. Cependant, je vois une opportunité pour plusieurs stratégies visant à renforcer la robustesse de ce mécanisme.
+
+### **Les Jumeaux Numériques et Au-delà**
+
+C'est au cœur de ce que fait Robonomics. Dans l'article ["Introduction aux Jumeaux Numériques"](https://robonomics.network/blog/digital-twins-introduction/), nous avons expliqué le concept - des représentations numériques d'entités ou de processus physiques. Les Jumeaux Numériques ne sont pas des modèles statiques mais des systèmes dynamiques qui reçoivent en continu des données en temps réel de leurs homologues physiques, permettant des mises à jour constantes et des réflexions précises de l'état actuel. Ce flux continu de données permet des simulations et des analyses précises, facilitant des décisions éclairées concernant le fonctionnement, la maintenance et l'optimisation des actifs physiques.
+
+Pour capturer et gérer efficacement les données des équipements intelligents, Robonomics propose un outil open-source appelé [Otaberu](https://robonomics.network/blog/otaberu-part-1/). Otaberu est conçu pour faciliter le réseau pair-à-pair (P2P) pour les appareils périphériques et les robots, permettant une communication fluide et sécurisée entre les appareils sans une configuration réseau étendue. Il fournit un cadre robuste pour la collecte de données et la gestion des jumeaux numériques.
+
+Les jumeaux numériques servent de couche fondamentale pour la mise en œuvre de conceptions de mécanismes robustes pour l'allocation de capital sur les marchés d'équipements intelligents. En fournissant une représentation numérique complète et en temps réel des actifs physiques, les jumeaux numériques permettent une surveillance précise et une analyse des performances des équipements, des modèles d'utilisation et des besoins en maintenance. Cette vision détaillée permetPour le développement de stratégies sophistiquées qui optimisent l'allocation du capital, en veillant à ce que les ressources soient dirigées de manière efficace pour maximiser les rendements et améliorer la longévité et la productivité de l'équipement intelligent.
+
+Les jumeaux numériques dans le contexte de l'allocation du capital ouvrent également la discussion sur les robocorporations autonomes, qui sont guidées par des mécanismes de gouvernance on-chain. Ces entités autonomes peuvent prendre des décisions de manière indépendante en se basant sur les informations du marché, ce qui les rend capables de gérer des actifs, d'allouer des ressources et même de participer à des transactions économiques sans intervention humaine.
+
+
+### **Marchés de Prédiction**
+
+Les marchés de prédiction et la conception de mécanismes robustes visent tous deux à obtenir des informations véridiques des agents ayant des connaissances privées pour parvenir à des résultats efficaces. En intégrant les marchés de prédiction dans notre cadre de mécanisme, nous pouvons **améliorer l'efficacité ex-post** des décisions d'allocation de capital en veillant à ce que les décisions reflètent les informations les plus récentes et précises disponibles, ce qui conduit à une meilleure alignement de l'allocation des ressources avec les résultats réalisés.
+
+Les étapes suivantes illustrent comment le processus pourrait être mis en œuvre :
+
+- Établir un marché de prédiction pour chaque catégorie d'équipement intelligent envisagée (rovers de livraison, bras de conditionnement, etc.).
+- Permettre à un large groupe d'intervenants de négocier des contrats basés sur les indicateurs de performance future de l'équipement, tels que le pourcentage de disponibilité et les coûts de maintenance.
+- Utiliser le prix du marché pour refléter la croyance collective quant à savoir si l'équipement atteindra des objectifs de performance spécifiques sur la période de location.
+- Si le marché de prédiction indique une forte probabilité que l'équipement fonctionne bien (par exemple, une disponibilité élevée et des coûts de maintenance faibles), allouer davantage de capital à la location de cet équipement.
+- En revanche, si le marché de prédiction suggère une mauvaise performance, réduire l'allocation de capital ouajuster les termes du bail pour atténuer les pertes potentielles.
+- Les participants du marché des prédictions sont récompensés ou pénalisés en fonction des paris qu'ils font.
+
+Les marchés de prédiction permettent une agrégation efficace des connaissances privées de divers intervenants, des mises à jour en temps réel sur les attentes de performance et une adaptation continue aux nouvelles informations, ce qui réduit l'incertitude et aboutit à une conception de mécanisme plus résiliente.
+
+Lorsque de nouvelles informations deviennent disponibles, telles que la mise à jour du jumeau numérique de l'équipement intelligent, les prix du marché des prédictions s'ajustent en conséquence, permettant une réaffectation dynamique du capital. Cela aide à atténuer le risque de surinvestissement dans des actifs sous-performants tout en garantissant que les actifs performants reçoivent un financement approprié à long terme.
+
+En alignant l'allocation de capital avec des informations de marché continuellement mises à jour, les assureurs peuvent prendre des décisions mieux informées, optimiser leurs portefeuilles et réduire les risques financiers.
+
+
+### **Stratégies de Partage des Risques**
+
+Les stratégies de partage des risques jouent un rôle crucial dans le remodelage du mécanisme d'allocation de capital pour l'équipement intelligent, aidant à équilibrer les risques et à **accroître la compatibilité des incitations**. Les arrangements de location traditionnels sont relativement rigides, reposant généralement sur des paiements fixes sans tenir compte de la performance dynamique de l'équipement ou des changements inattendus.
+
+Des stratégies telles que les contrats de type assurance ou les bonus basés sur la performance peuvent être utilisées pour créer une approche plus flexible et adaptative qui partage efficacement les risques et conduit à une conception de mécanisme plus robuste.
+
+Par exemple, un contrat de type assurance peut aider à répartir le risque des temps d'arrêt imprévus : si les données du jumeau numérique révèlent des temps d'arrêt inattendus dus à des défauts de fabrication, une partie du paiement pourrait être remboursée. De cette manière, le fardeau financier des problèmes opérationnels est atténué, et tout le monde est incité àmaintenir la performance.
+
+Le modèle de paiement basé sur les résultats offre une couche supplémentaire de partage des risques. Le modèle Robots-as-a-service (RAAS) gagne du terrain dans le domaine de la robotique, mais est encore considéré comme novateur par de nombreux acteurs traditionnels du financement d'équipements. En liant les paiements aux avantages commerciaux générés par la technologie (comme le nombre de boîtes déplacées en une journée ou les kilomètres parcourus en livraison autonome), les participants sont encouragés à se concentrer sur la réalisation d'objectifs tangibles.
+
+Par exemple, si un robot logistique améliore l'efficacité de l'entrepôt de 20 %, une partie de cet gain d'efficacité peut être utilisée pour financer le paiement mensuel. Cette approche aide les entreprises à relier le coût de l'équipement à leur propre succès opérationnel, réduisant ainsi le risque financier pendant les périodes incertaines où les résultats pourraient être moins prévisibles. L'alignement ici est double : les entreprises se sentent plus en sécurité en ne payant qu'en fonction de la valeur qu'elles reçoivent, tandis que les fournisseurs sont encouragés à fournir des équipements qui offrent de manière fiable des avantages commerciaux.
+
+Avec des équipements intelligents capables de générer des données en temps réel, des mécanismes de partage des risques robustes deviennent réalisables, permettant des réponses dynamiques aux problèmes de performance et alignant les incitations autour des résultats réels. Cette évolution dans les structures de location permet aux participants du marché de répondre de manière adaptative aux changements technologiques, garantissant que les risques et les récompenses liés à l'adoption d'équipements avancés sont partagés de manière plus équitable. En effet, la relation devient davantage un partenariat, plutôt qu'un arrangement contractuel rigide, favorisant la confiance et encourageant l'innovation.
+
+
+### **Gouvernance DAO pour l'Origination et la Souscription d'Équipements**
+
+Il est crucial d'établir des structures de gouvernance qui soutiennent une allocation efficace du capital alignée sur les incitations au cours des 3 à 5 prochaines années.années alors que l'industrie de la robotique prend forme.
+
+L'Organisation Autonome Décentralisée (DAO) est une structure de gouvernance idéale pour gérer le processus de souscription dans les transactions d'équipements intelligents. Son objectif principal est de déterminer quelles nouvelles catégories soutenir et comment allouer efficacement le capital.
+
+En appliquant les principes de la conception de mécanismes robustes, nous pouvons améliorer les chances que les ressources soient dirigées vers des opportunités d'investissement à forte valeur ajoutée tout en minimisant les risques associés à l'information asymétrique et aux incertitudes du marché.
+
+Le DAO des Souscripteurs devrait utiliser des mécanismes basés sur des enchères pour parier de manière éclairée sur des catégories prometteuses. Les informations du marché des prédictions devraient améliorer l'exactitude des évaluations et informer les stratégies d'enchères ici. Un processus autonome peut ensuite allouer le capital de manière optimale, en fonction de la combinaison unique de croyances détenues par les membres du DAO des Souscripteurs.
+
+Au fur et à mesure que le capital initial est regroupé dans le DAO et alloué, une boucle de rétroaction basée sur les données des jumeaux numériques commence à orienter davantage la prise de décision. À ce stade, un plus grand nombre d'investisseurs peuvent commencer à participer via des tranches supplémentaires, offrant une couverture, un produit adossé à des équipements, aux investisseurs d'actifs numériques.
+
+La capacité de décider quelles transactions sont offertes à la communauté élargie des investisseurs regroupés est cruciale, et les paris réussis devraient être récompensés de manière appropriée. C'est ce qui crée de la valeur en faisant partie de la gouvernance du DAO en soi, indépendamment de la participation adossée à des actifs proportionnelle au capital investi dans les équipements intelligents.
+
+Voici un schéma simple de fonctionnement pour un tel DAO :
+
+![card-2.png](/blog/images/ohf-part-1/card-2.png)
+
+
+
+## **Considérations Pratiques et Prochaines étapes**
+
+Ce n'est que le début. Mon objectif est de créer un mécanisme robuste d'allocation de capital qui rende les gains de productivité de la révolution robotique accessibles à tous.
+
+Les idées ci-dessus offrent un bon point de départ, mais il y a des limitations à prendre en compte. Les participants peuvent encore adopter un comportement stratégique s'ils pensent pouvoir influencer les prix pour un gain personnel, et une liquidité limitée aux premiers stades peut rendre les choses encore plus faciles. Avec suffisamment de liquidité sur les marchés de prévision et de capitaux, cela peut être surmonté, mais aux premiers stades, il est important de choisir soigneusement les membres de l'Underwriters DAO.
+
+**Étapes pour lancer un mécanisme robuste d'allocation de capital dans de nouvelles catégories d'équipements intelligents :**
+
+1. Lancer des marchés de prévision pour choisir de nouvelles catégories
+2. Former l'Underwriters DAO pour commencer à conclure les premiers accords
+3. Utiliser des contrats de partage des risques pour gérer le risque du portefeuille
+4. Utiliser les données des jumeaux numériques pour améliorer encore l'allocation
+5. Développer une structure pour une participation plus large des investisseurs aux gains de productivité de la révolution robotique
+
+Si vous êtes intéressé à faire partie de ce voyage ou si vous avez simplement quelques questions - laissez votre e-mail ci-dessous.
+
+*Vitaly, Évangéliste de Robonomics*

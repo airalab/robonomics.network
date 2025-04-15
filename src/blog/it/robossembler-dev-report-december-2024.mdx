@@ -1,0 +1,84 @@
+---
+title: "Report sullo sviluppo di Robossembler #1"
+date: 2024-12-08
+published: true
+locale: 'it'
+cover_image: /blog/images/robossembler-dev-report-december-2024/Cover.webp
+description: "Il progetto Robossembler si concentra sullo sviluppo di robot industriali e strumenti per la loro produzione accessibili a qualsiasi appassionato di fai-da-te. In questo articolo condivideremo i nostri progressi attuali - un cambio aggiornato e testato, la quinta versione della macchina per avvolgere e un manipolatore robotico con ottimizzazioni aggiuntive per la stampa 3D!"
+abstract: "Il progetto Robossembler si concentra sullo sviluppo di robot industriali e strumenti per la loro produzione accessibili a qualsiasi appassionato di fai-da-te. In questo articolo condivideremo i nostri progressi attuali - un cambio aggiornato e testato, la quinta versione della macchina per avvolgere e un manipolatore robotico con ottimizzazioni aggiuntive per la stampa 3D!"
+tags: ['Robossembler']
+---
+
+
+## Servomotore
+
+Un motore da solo di solito non ha sufficiente coppia per girare o sollevare oggetti pesanti nel mondo reale, motivo per cui ha bisogno di un cambio o di un trasmissione. Un cambio converte la coppia del motore in una forza di uscita utilizzabile. Questo si è dimostrato particolarmente importante nel nostro caso: il nostro statore stampato con viti DIN come nuclei magnetici ha testato una resistenza 3-4 volte inferiore rispetto ai corrispettivi con statore in metallo massiccio realizzato in acciaio elettrico.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/stator-photo_2024-12-08_00-03-21.webp" alt="" />
+
+Dato l'output di forza relativamente basso, avevamo bisogno di un cambio con un alto rapporto di trasmissione che, come tutto il resto in Robossembler, fosse semplice da assemblare e adatto alla stampa 3D. Abbiamo esplorato numerosi design di cambi, inclusi alcuni esotici, ma ognuno non soddisfaceva i nostri criteri. Il nostro ultimo tentativo - un cambio a onda di deformazione con elementi intermedi rotanti - si è comportato bene ma si è rivelato troppo complesso da produrre.
+
+Dopo un'ampia sperimentazione, abbiamo finalmente scoperto il design perfetto: un cambio precessivo con un rapporto di trasmissione di 1:43!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-07_21-54-20.webp" alt="" />
+
+Guarda quanto è semplice da assemblare:
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0vXwFmTB_L4?si=soNbSNKg9tjPWY1f" title="Lettore video di YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Il cambio ha completato i suoi test e le prove chiave. Ecco qualcosa di impressionante - il servomotore con cambio pesa solo 273g, corrispondente al peso di un standardmotore metallico senza alcun cambio o controller!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-08_14-02-33.webp" alt="" />
+
+## Macchina per l'Avvolgimento dello Statore
+
+Mentre la versione 4 della nostra macchina per l'avvolgimento ha avvolto con successo i primi statore in modo semiautomatico, aveva bisogno di miglioramenti in termini di stabilità e ripetibilità. La versione 5 porta numerosi miglioramenti, ed ecco i principali.
+
+Abbiamo aggiornato il controller del motore passo-passo Creality proprietario utilizzato nella versione 4 a un RAMPS - un controller collaudato della leggendaria stampante RepRap.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-50-12.webp" alt="" />
+
+- Abbiamo reso più leggeri e migliori i componenti della macchina - ora utilizzano il 25% in meno di materiale plastico e possono essere stampati in 3D più facilmente senza strutture di supporto aggiuntive
+- Il sistema di alimentazione del filo è ora più stabile con un freno a bobina aggiunto e una scanalatura più profonda per il filo sulla ruota
+- Abbiamo ridisegnato il case del display e il coperchio posteriore per una migliore protezione
+- La documentazione del progetto è ora completa con specifiche dettagliate dei fissaggi, tempi di stampa e dati di consumo di plastica.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-51-26.webp"alt="" />
+
+Abbiamo aggiunto un calibratore di ago al design della macchina per semplificare la configurazione dell'attrezzatura.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-04_11-41-56.webp" alt="" />
+
+La versione 5 è attualmente in fase di test, insieme al nostro nuovo generatore di programmi GCode per l'avvolgimento. Invece del programma codificato in precedenza per specifiche modifiche al motore, il nostro nuovo generatore GCode consente un'adattamento rapido per differenti design dello statore.
+
+## Manipolatore Robotico
+
+Mentre ci avviciniamo alla prontezza della produzione con il motore e il cambio, stiamo perfezionando il design del manipolatore. Sebbene pensassimo che fosse ben ottimizzato per la stampa 3D, i nuovi membri del team — un tecnologo 3D con 10 anni di esperienza — hanno individuato diverse aree per il miglioramento. Ci siamo concentrati su rendere la stampa delle parti prevedibile anche su stampanti a basso costo, incluso il ridisegno dei collegamenti del corpo principale per stampare con il minimo supporto.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/3d-supports.webp" alt="" />
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/roboarm-3d-optimize-photo_2024-11-20_15-56-53.webp" alt="" />
+
+Su richiesta del nostro programmatore di controllo del movimento, abbiamo ridisegnato la forcella — il componente che collega i collegamenti di guida del manipolatore in una singola catena cinematica.Il design precedente offriva un raggio di lavoro più ampio ma causava posizioni singolari frequenti durante i calcoli della traiettoria, complicando il controllo della simulazione. Il nostro nuovo design della forcella elimina questo problema, rendendo la cinematica del robot più ottimale e simile a Kuka Iiwa ;D.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/fork-roboarm-photo_2024-12-07_11-39-31.webp" alt="" />
+
+Per il software di controllo, stiamo sviluppando una soluzione utilizzando ROS 2 Humble (testando Jazzy) e Behaviour Tree CPP v4, attualmente in fase di convalida su AR4. Una delle principali innovazioni è il nostro ampio utilizzo dei nodi di gestione del ciclo di vita per modifiche dei parametri in tempo reale, come configurazioni del controller o caricamento di nuovi pesi di reti neurali per la visione artificiale della macchina al volo.
+
+## Piani
+
+I nostri obiettivi futuri:
+
+- Rilasciare un dispositivo di presa aggiornato con nuovo motore, scatola del cambio e dita intercambiabili
+- Testare il generatore di codice GCode della macchina per avvolgimento e l'avvolgimento completamente automatico dello statore
+- Completare l'ottimizzazione 3D del robot e creare un video dimostrativo dell'assemblaggio
+- Ottimizzare la gestione della temperatura del servodrive e testarla sotto carico all'interno di un collegamento
+
+Segui gli aggiornamenti sul mio blog su [x.com](https://x.com/movefasta) !
+
+## Fonti Software e Hardware
+
+- Braccio Robossembler - https://gitlab.com/robossembler/roboarm-diy-version
+- Macchina per l'avvolgimento: https://gitlab.com/robossembler/cnc/motor-wire-winder- Servo - https://gitlab.com/robossembler/servo
+- Strumento di presa - https://gitlab.com/robossembler/arm-tools/grip-tool
+- Runtime Robossembler ROS 2 - https://gitlab.com/robossembler/robossembler-ros2

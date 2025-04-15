@@ -1,0 +1,133 @@
+---
+title: Robonomics Crowdloan e passaggi successivi, giugno 2021
+date: 2021-06-11
+published: true
+locale: 'it'
+cover_image: /blog/images/kusama-crowdloan-details/robonomics-crowdloan-on-kusama.jpg
+description: "Dai un'occhiata al modulo Cowdloan in dettaglio, al piano di aggiornamento della parachain dopo il lancio e alle FAQ relative all'asta"
+abstract: "Dai un'occhiata al modulo Cowdloan in dettaglio, al piano di aggiornamento della parachain dopo il lancio e alle FAQ relative all'asta"
+related: ['Kusama Parachain Lease Offering, April 2021', 'Trajectory of Robonomics Development 2021, Part 1', 'Robobank. Accept any Polkadot token in automation services', 'The ultimate guide to Robonomics, RWS and Robonomics parachain on Polkadot']
+tags: ['parachain Robonomics']
+---
+
+Durante l'estate del 2021, vedremo le prime cinque aste che permetteranno ai progetti di affittare slot di rete Kusama per un periodo di 48 settimane (o 1 anno). Diventare una delle parachain di Kusama è un ottimo modo per fornire accesso al tuo progetto Substrate all'interno dell'ecosistema Polkadot, implementare la sicurezza di rete Blockchain attualmente non disponibile per i piccoli progetti, nonché avviare il processo di integrazione con altri progetti dell'ecosistema il prima possibile. L'obiettivo di Robonomics per il 2022 è diventare un conduttore completamente funzionante dei progetti IoT nell'ecosistema Polkadot. Ecco perché tutti i benefici sopra menzionati del lancio di una rete Kusama sono importanti per noi. E in generale, la nostra strategia è stata [già pubblicata](/blog/robonomics-parachain-lease-offering/) molto tempo fa - "Kusama prima, mentre Polkadot è una visione". In questo post, analizzeremo l'uso del modulo Cowdloan in dettaglio e daremo un'occhiata al piano di aggiornamento della parachain dopo il lancio.
+
+## Sono iniziate le crowdloan di Kusama!
+
+*Dott. Gavin Wood, 8 giugno 2021, [Aste Parachain Kusama](https://polkadot.network/kusama-parachain-auctions/):*
+
+> Quanto segue è il caso in cui non vengano riscontrati problemi significativi e inaspettati con la logica della relay-chain. (In tal caso, tutte le opzioni dovrebbero rimanere sul tavolo pergoverno della rete, inclusa la pausa o il rinvio di eventuali aste programmate o in corso.)
+
+**Programma preliminare delle aste:**
+
+- 15/06/2021, 12:00 GMT: Inizio dell'asta del primo slot Parachain di Kusama. Le offerte possono essere effettuate.
+
+- 22/06/2021, 12:00 GMT: Inizio dell'asta del secondo slot Parachain di Kusama.
+
+- 29/06/2021, 12:00 GMT: Inizio dell'asta del terzo slot Parachain di Kusama.
+
+- 06/07/2021, 12:00 GMT: Inizio dell'asta del quarto slot Parachain di Kusama.
+
+- 13/07/2021, 12:00 GMT: Inizio dell'asta del quinto slot Parachain di Kusama.
+
+Polkadot consente alle Parachain di ottenere token per le loro offerte Parachain in un [crowdloan](https://wiki.polkadot.network/docs/en/learn-crowdloans) decentralizzato. Una volta aperta una campagna di crowdloan, chiunque può partecipare inviando una transazione speciale che fa riferimento all'indice della campagna. I token utilizzati per partecipare devono essere trasferibili, cioè non bloccati per nessun motivo, inclusi staking, vesting e governance, poiché saranno spostati in un account controllato dal modulo generato unicamente per questa campagna.
+
+Quattro progetti che hanno lanciato le loro campagne di crowdloan KSM (Kurara fino a 1,5 mln KSM, Shiden fino a 1 mln KSM, Crust fino a 1 mln KSM, Moonriver fino a 1 mln KSM) per raccogliere risorse per il noleggio dello slot Parachain su Kusama durante le aste di offerta del noleggio Parachain.
+
+Robonomics Dev DAO mira a fare un'offerta esatta di KSM necessari per garantire un terzo-quinto slot Parachain. Pertanto, il modulo di crowdloan sarà lanciato subito dopo la fine dell'asta per il 2° slot su Kusama.
+
+## Si prevede che il lancio del crowdloan di Robonomics avverrà il 28 giugno
+
+Potrai partecipare al crowdloan di Robonomics attraverso la [pagina dedicata](/kusama-slot).
+
+**Prima di partecipare al crowdloan, assicurati che la campagna sia attiva [su Twitter](https://twitter.com/AIRA_Robonomics).**
+
+## Come partecipare al Crowdloan di Robonomics
+
+Di default, gli sviluppatori di Polkadot hanno fornito un nativo interfaccia nel [portale Substrate](https://polkadot.js.org/apps/#/parachains/crowdloan)
+
+![Crowdloan sul portale Polkadot](/blog/images/kusama-crowdloan-details/crowdloan-on-polkadot-portal.png)
+*Esempio della pagina Crowdloan dell'11 giugno 2021*
+
+All'inizio di aprile, Robonomics ha praticato la partecipazione alle aste utilizzando il modulo Crowdloan sulla rete Rococo. Puoi controllare questo thread su Twitter per familiarizzare con l'interfaccia standard per la partecipazione della comunità alle [aste di Polkadot](https://twitter.com/AIRA_Robonomics/status/1377653645827833860)
+
+Inoltre, vale la pena menzionare che sul sito ufficiale di [Robonomics](/kusama-slot), sarà resa disponibile la funzionalità per interagire con il modulo Crowdloan.
+
+Ecco come apparirà la partecipazione al Crowdloan sul sito di Robonomics dopo il 28 giugno.
+
+Le istruzioni su come utilizzare il modulo interfaccia Crowdloan attraverso il sito web di Robonomics saranno pubblicate più vicino all'inizio della terza asta.
+
+## Domande popolari tra la comunità
+
+<TextCard back="trasparente">
+
+### Perché la partecipazione di Robonomics inizia solo dal terzo round?
+
+Gli sviluppatori potrebbero pubblicare il modulo Crowdloan oggi, ma dovremmo poi implementare dei limiti. Come si può notare, i primi 4 progetti che hanno pubblicato i loro moduli Crowdloan hanno stabilito un limite di 1 milione di token KSM.
+
+Scommettiamo che 100.000 KSM siano sufficienti per vincere una delle aste della rete Kusama, ma stiamo anche riservando spazio per poter regolare rapidamente il limite se capiremo che sarà necessario raccogliere più token KSM entro la conclusione del primo e del secondo round. In generale, stiamo cercando di manovrare alla ricerca di un costo di noleggio ottimale per uno slot.
+
+</TextCard>
+
+<TextCard back="trasparente">
+
+### Cosa succederà se Robonomics non vince la quinta asta?
+
+Onestamente, non abbiamo un piano B. [Saremo come Schwarzenegger](https://youtu.be/Ri-M_Vo3w5A).
+
+</TextCard>
+
+<TextCard back="trasparente">
+
+### Sarà possibile partecipare al crowdloan di Robonomics attraverso gli exchange?
+
+Alcuni exchange ben noti come Kraken e Okex stanno già fornendo supporto per il crowdloan ai loro utenti. Un elenco degli scambi rilevanti che supportano l'interazione con il modulo Crowdloan sarà fornito sul sito web di Robonomics all'inizio del terzo asta.
+
+</TextCard>
+
+<TextCard back="trasparente">
+
+### Cosa succederà tra 48?
+
+Se dopo 48 settimane il progetto non riuscirà nuovamente a vincere un'asta, allora la parachain si trasformerà in un [parathread](https://wiki.polkadot.network/docs/en/learn-parathreads#docsNav). Tuttavia, gli sviluppatori hanno già pubblicato piani di preparazione per future aste di slot: ecco una pubblicazione del 26 ottobre 2020, [Robonomics Parachain Lease Offering, On-chain Governance Strategy](/blog/robonomics-parachain-lease-offering/). Ma abbiamo anche un piano segreto riguardante lo sviluppo di un algoritmo da integrare nel protocollo Robonomics, che genererà autonomamente condizioni di bonding vantaggiose per i detentori di KSM/DOT che beneficeranno anche di Robonomics. In generale, riflettiamo su questioni a medio termine in anticipo e continuiamo a pensare a questioni importanti come mantenere Robobomics nello stato di una parachain oggi.
+
+</TextCard>
+
+## Vita dopo le aste
+
+Una parachain prende vita in modo inscindibile dal momento in cui i risultati dell'asta sono conclusi. Ma per un progetto, ciò non significa che il lavoro sia finito. Ricordate come è stato lanciato il Polkadot Relay Chain? Il team di Robonomics sta riflettendo su una forma di lancio analoga, aumentando gradualmente la funzionalità accessibile a un utente.
+
+## Robonomics inizierà la sua esistenza con le seguenti possibilità:
+
+- Trasferimenti XRT tra bilanci
+
+- Lancio di dispositivi IoT utilizzando XRT per pagare le commissioni di transazione
+
+- Invio di telemetria dei dispositivi IoT utilizzando XRT per pagare le commissioni di transazione
+
+- Sudo
+
+- Un comitato tecnico
+
+## Piano di aggiornamento successivo
+
+- Stato di genesi: Funzionalità principali (0 settimana). Lancio del set di funzioni sopra menzionato.
+
+- Aggiornamento 0.1: Staking (1 - 3 settimane). Ti permetterà di fare staking del tuo XRT con un APY del 10% per i detentori di token e del 125% per i partecipanti al Crowdloan.
+
+- Aggiornamento 0.2: Tesoreria (4 - 6 settimane). Permetterà il trasferimento di una quota dei fondi del DAO da Ethereum alla parachain.
+
+- Aggiornamento 0.3: RWS (7 - 8 settimane). Permetterà di utilizzare funzioni di gestione IoT non solo con pagamenti a commissioni, ma anche con un abbonamento mensile.---
+locale: it
+---
+
+Aggiornamento 0.4: Robot come servizio (9 - 10 settimane). Consentirà di implementare un processo di controllo per la fornitura di servizi automatizzati e utilizzare pagamenti all'interno delle transazioni per avviare dispositivi.
+
+- Aggiornamento 0.5: Robobank (11 - 12 settimane). Puoi leggere di più su Robonomics in questo articolo:
+https://robonomics.network/blog/robobank-introduction/
+
+- Aggiornamento 0.6: Rimozione di Sudo (13 - 14 settimane). Gli sviluppatori non avranno la possibilità di interferire con le operazioni della rete senza il coinvolgimento del comitato tecnico.
+
+- Aggiornamenti sull'integrazione dell'ecosistema (entro la fine dell'anno). Inoltre, ci concentreremo sull'integrazione con altre parachains per espandere le capacità dei progetti IoT interessati a ciò che Polkadot può fare.
+
+Resta sintonizzato e segui i nostri aggiornamenti [su Twitter](https://twitter.com/AIRA_Robonomics)

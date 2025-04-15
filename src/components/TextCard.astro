@@ -1,0 +1,292 @@
+---
+// components
+import RbButton from "./RbButton.astro";
+
+const {
+  link, 
+  linkText, 
+  linkButton = false, 
+  overlap = true,
+  icon,
+  image,
+  className,
+  imageExternal,
+  imageSize = 'small',
+  imageRound = true,
+  orientation = 'horizontal',
+  back = 'white',
+  shadow = 'gray',
+  alignContent = 'none',
+  alignContentV = 'top'
+} = Astro.props;
+
+// Generate the CSS classes based on the props
+const card_classes = [
+  'card',
+  icon && 'icon',
+  (image || imageExternal) && `image`,
+  orientation && `${orientation}`,
+  back && `${back}`,
+  shadow && `card-shadow-${shadow}`,
+  `alignContent-${alignContent}`,
+  `alignContentV-${alignContentV}`,
+  back != `transparent` && `oldy`,
+  link && `oldy__link`,
+  className && className
+].filter(Boolean).join(' ');
+
+const pic_classes = [
+  `pic`,
+  imageRound && `round`,
+  icon && `icon`,
+  (image || imageExternal) && `image`,
+  imageSize
+].filter(Boolean).join(' ');
+
+const link_classes = [
+  `link`,
+  linkText && `text`,
+  overlap && `overlap`
+].filter(Boolean).join(' ');
+   
+
+const pic_src = () => {
+  if (icon || image) {
+    return `/images/${image ? image : icon}`
+  }
+  if (imageExternal) {
+    return imageExternal
+  }
+};
+
+const slot2 = Astro.slots.has('default');
+
+---
+
+
+<div class={card_classes}>
+
+  {(icon || image || imageExternal) && (
+    <div class={pic_classes}>
+      <img aria-hidden="true" alt="" src={pic_src()}/>
+    </div>
+  )}
+
+
+{slot2 && (
+  <div class="content">
+    <slot/>
+  </div>
+)}
+
+
+  {(link || linkButton) && (
+    <a target="_blank" class={link_classes} href={link}>
+      {linkText && linkText}
+    </a>
+  )}
+  {(link && linkText && linkButton) && (
+    <RbButton href={link}>{ linkText }</RbButton>
+  )}
+
+
+
+<style>
+
+  .card {
+    position: relative;
+    padding: var(--space);
+    margin-bottom: var(--space);
+    font-weight: 300;
+  }
+
+    /* ORIENTATION */
+
+    .card.icon, .card.image {
+      display: grid;
+      gap: var(--space);
+      align-content: start; 
+      align-items: start;
+    }
+
+    .card.vertical.alignContent-none,
+    .card.vertical.alignContent-none h1,
+    .card.vertical.alignContent-none h2,
+    .card.vertical.alignContent-none h3,
+    .card.vertical.alignContent-none h4,
+    .card.vertical.alignContent-none h5,
+
+    .card.alignContent-center,
+    .card.alignContent-center h1,
+    .card.alignContent-center h2,
+    .card.alignContent-center h3,
+    .card.alignContent-center h4,
+    .card.alignContent-center h5
+    { text-align: center; }
+
+    .card.vertical.icon, .card.vertical.image { grid-template-rows: auto 1fr; } /* pic + content */
+
+    .card.horizontal.alignContent-none,
+    .card.horizontal.alignContent-none h1,
+    .card.horizontal.alignContent-none h2,
+    .card.horizontal.alignContent-none h3,
+    .card.horizontal.alignContent-none h4,
+    .card.horizontal.alignContent-none h5,
+
+    .card.alignContent-left,
+    .card.alignContent-left h1,
+    .card.alignContent-left h2,
+    .card.alignContent-left h3,
+    .card.alignContent-left h4,
+    .card.alignContent-left h5
+    { text-align: left; }
+
+    .card.alignContent-right,
+    .card.alignContent-right h1,
+    .card.alignContent-right h2,
+    .card.alignContent-right h3,
+    .card.alignContent-right h4,
+    .card.alignContent-right h5
+    { text-align: right; }
+    
+    @media screen and (min-width: 650px) {
+      .card.horizontal.icon, .card.horizontal.image { grid-template-columns: auto 1fr; } /* pic + content */
+    }
+
+    @media screen and (max-width: 650px) {
+      .card.horizontal.icon, .card.horizontal.image { grid-template-columns: 1fr; }
+    }
+
+    .card.alignContentV-middle {
+      align-content: center; 
+      align-items: center;
+    }
+
+    /* end of ORIENTATION */
+
+    /* COLORING */
+    .card {
+      --color-back: transparent;
+      --color-text: var(--clor-dark);
+      --color-iconback: #000; 
+      
+      background-color: var(--color-back);
+      color: var(--color-text);
+    }
+
+    .card .pic.round.icon { background-color: var(--color-iconback); }
+
+    .card.oldy__link:hover {
+      transform: translateY(.2rem);
+    }
+
+    .card.oldy__link:hover .pic.round.icon {
+        --color-iconback: var(--color-blue-mid);
+      }
+
+    .card.white {
+      --color-back: var(--color-light);
+      --color-text: var(--color-dark);
+    }
+    .card.blue {
+      --color-back: var(--color-blue-mid);
+      --color-text: var(--color-light);
+    }
+    .card.darkblue {
+      --color-back: var(--color-blue);
+      --color-text: var(--color-light);
+    }
+
+    .card-shadow-light {
+      --oldy-box-color: var(--color-light);
+    }
+
+    .card-shadow-gray {
+      --oldy-box-color: var(--color-gray);
+    }
+
+    .card-shadow-dark {
+      --oldy-box-color: var(--color-dark);
+    }
+
+
+
+    .card.blue .pic.round.icon {
+        background-color: #000;
+    }
+
+      .card.blue.oldy__link:hover .pic.round.icon {
+          background-color: var(--color-blue-mid);
+      }
+    /* end of COLORING */
+
+    .card .button {
+      text-align: center;
+    }
+
+
+    /* PICTURES */
+
+    .card .pic {
+      margin: 0 auto;
+      overflow: hidden;
+
+      /* Centering image within */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* PICTURES -- SIZING */
+      --image-size: 5rem;
+      width: var(--image-size);
+    }
+
+    .card .pic.round.icon img {
+          max-width: 60%;
+          max-height: 60%;
+        }
+
+      .card .pic.round {
+        height: var(--image-size);
+        border-radius: calc(var(--image-size)*2);
+      }
+
+      .card .pic.mid { --image-size: 10rem }
+      .card .pic.big { --image-size: 15rem}
+      .card .pic.block { --image-size: 100%}
+    
+
+    /*end of PICTURES */
+
+    /* LINK */
+    .link.overlap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+    
+    /* end of LINK */
+
+    /* CONTENT */
+    .card .content h1:not(:last-child),
+    .card .content h2:not(:last-child),
+    .card .content h3:not(:last-child),
+    .card .content h4:not(:last-child),
+    .card .content h5:not(:last-child),
+    .card .content p:not(:last-child)
+    {
+      margin-bottom: calc(var(--space) * 0.7);
+    }
+    /* end of CONTENT */
+
+    .withImg img {
+      width: 80%;
+      padding: calc(var(--space) * 0.5);
+      background-color: #fff;
+    }
+  
+</style>

@@ -1,0 +1,126 @@
+---
+title: "Update naar Versie 1.2: Staking, Technisch Comité en Schatkist"
+date: 2021-09-17
+published: true
+locale: 'nl'
+cover_image: /blog/images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
+description: "De projectontwikkelaars hebben 2 belangrijke veranderingen doorgevoerd in de werking van de Robonomics parachain. De eerste is de opname van XRT-staking, en de tweede is de lancering van de eerste on-chain governance mechanismen."
+abstract: "De projectontwikkelaars hebben 2 belangrijke veranderingen doorgevoerd in de werking van de Robonomics parachain. De eerste is de opname van XRT-staking, en de tweede is de lancering van de eerste on-chain governance mechanismen."
+tags: ['Robonomics parachain', 'XRT-token', 'RWS-token', 'Staking', 'Nieuwe release']
+---
+
+## Update 1.1: Staking
+
+### Theorie
+
+Gedecentraliseerde PoS-netwerken waarborgen hun veiligheid door de fondsen van de validators en alle tokenhouders op het netwerk die deelnemen aan de selectie van de validatorpool te vergrendelen. Om validators en tokenhouders te belonen, wordt meestal een analoog PoW-beloningsmodel gebruikt, gebaseerd op de inflatie + alle commissiekosten in het blok. Zo wordt NPoS geïmplementeerd in Polkadot/Kusama.
+
+> Opmerkelijk is dat zowel Ethereum als Polkadot aanvullende voorwaarden bevatten voor hun beloningsmodellen. Het instellen van inflatiedoelen, het verdelen van de commissiekosten in verschillende richtingen, en zelfs het verbranden van een bepaald percentage van de commissiekosten zijn aanvullende instellingen waarmee zowel volwassen als nieuwere netwerken experimenteren in hun implementaties.
+
+Parachains hebben geen staking nodig in hun kernfunctionaliteit. Parachains worden beveiligd door Relay Chain validators. Dit is een gedeeld beveiligingsmodel waarbij de projecten strijden om slots tijdens veilingen.
+
+#### Staking Heruitvinden
+
+Parachains die willen profiteren van de "wijsheid van de massa" en taken toewijzen aan de gemeenschap, moeten staking heruitvinden. Bij Robonomics is dat wat we hebben gedaan. De staking-architectuur in de Robonomics parachain is uniek en specifiek voor de blockchainproblemen die we oplossen voor de IoT-markt. We bieden twee manieren om te betalen voor de basisfunctionaliteit van slimme apparaten: per transactie of via een maandelijks abonnement.
+
+De betaling per transactie spreekt voor zich. De abonnementsfunctie heeft wat uitleg nodig.. Sommige IoT-gebruiksscenario's moeten periodiek toegang hebben tot cloudfuncties, en het is zeer ongewenst dat deze mislukken. Het gasprijsmechanisme lost dit probleem nog steeds niet volledig op, vooral als het gaat om het garanderen van transacties op elk blok. Met dit in gedachten kwamen we op het idee om het stakingsmechanisme te gebruiken om een gegarandeerd quotum te beheren met een abonnementsmodel. Aan de Substrate-kant hebben we een trucje toegepast, gebaseerd op het verwerken van transactieprioriteit met nul gewicht. Als een IoT-apparaat een abonnement activeert, zullen al zijn transacties prioriteit hebben boven alle anderen, behalve natuurlijk andere transacties met nul gewicht. Naarmate er meer tokens in de stakingspool van het netwerk komen, zullen er meer abonnementen beschikbaar komen voor gebruikers.
+
+<TextCard>
+
+*Bijvoorbeeld:*
+
+Totaal aantal tokens: 2.000.000 XRT;
+gestaked: 800.000 XRT;
+parachain bandbreedte: 5400 tx per blok.
+
+Dit geeft ons 5400 * 800.000 / 2.000.000 = 2.160 maandelijkse abonnementen voor IoT-apparaten.
+
+</TextCard>
+
+Ik zal schrijven over hoe de abonnementen en het betalingspool zullen worden verdeeld in een apart artikel getiteld "Geautomatiseerde Abonnementsveiling."
+
+### Praktisch Gebruik
+
+DApp klaar om te gaan: https://robonomics.app/#/staking/
+
+![XRT staking in Robonomics dapp, nieuw bonding scherm](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
+
+Na de eerste transactie krijgt u een tabel met statistieken zoals deze:
+
+![XRT staking in Robonomics dapp, bonding lijst scherm](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
+
+Het verzenden van tokens tussen accounts op de parachain blijft uitgeschakeld. De mogelijkheid om tokens over te dragen wordt ingeschakeld nadat de parachain live gaat op het Kusama-netwerk.
+
+### Waarnemingen
+
+Vanaf [blok # 235.047](https://robonomics.subscan.io/block/235047) hebben we ongeveer duizend accounts; de grootste tokenhouder is de schatkist. Schatkistfondsen zullen niet deelnemen aan staking.
+
+De overige accounts op het netwerk zijn verschenen als gevolg van het gebruik van de Exodus DApp door ERC-20 tokenhouders, of ze waren deelnemers aan de eerste crowdloan-campagne in de Kusama-veilingen.
+
+Dankzij de integratie met Subscan kunnen XRT-houders op de Robonomics parachain gebruikendeze prachtige interface: https://robonomics.subscan.io/account
+
+![Robonomics Subscan.io account scherm](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
+
+Op de Exodus DApp-interface kunt u de migratiestatistieken van de Ethereum blockchain naar de Robonomics parachain zien: https://robonomics.app/#/exodus
+
+![XRT van de Ethereum blockchain naar de Robonomics parachain in de Robonomics dapp](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
+
+### Verdere verbeteringen van stakingsfunctionaliteit
+
+De huidige taak voor de ontwikkelaars is om de basis stakingsmechanismen voor tokenhouders onder echte omstandigheden te testen: toevoegen aan de stakingspool, beloningen opbouwen en tokens binnen 7 dagen ontdooien.
+
+*Een interessante taak voor de gemeenschap:* controleer de juistheid van de beloningscalculator, rekening houdend met de twee opties: een jaarlijkse beloning van 10% voor deelnemers aan de Exodus-migratie en een jaarlijkse beloning van 50% voor leden van de crowdloan-campagne.
+
+Na de 1.3 RWS-update zal het stakingsmechanisme live gaan op het netwerk. De RWS-update zal abonnementsmogelijkheden toevoegen voor digitale tweelingen, en de uitdaging van bandbreedtetoewijzing zal zinvol worden. Dienovereenkomstig zullen we later in staat zijn om de juistheid van het stakingsmechanisme volledig te beoordelen.
+
+## Update 1.2: Technisch Comité en Schatkist
+
+Net als bij update 1.1 is dit al geïmplementeerd in het parachain-werk. Het technisch comité bestaat momenteel uit zes technische specialisten die de afgelopen 2 jaar hebben deelgenomen aan de ontwikkeling van de parachain; de DAO [heeft 692.500 XRT overgedragen](https://etherscan.io/tx/0x6b9a9cbe7d21badf565ebce0fb50b865da8f5f784899db5fb455d1b276d14acf) naar het saldo van de schatkist van de parachain door ERC-20-tokens te verbranden via de Exodus DApp. De schatkist van het netwerk en het technisch comité zijn de eerste elementen van on-chain governance die de parachain-ontwikkelaars tot nu toe hebben geïmplementeerd. Meer details over elk van hen worden hieronder gegeven.
+
+### Netwerk Technisch Comité
+
+Het portaal van het technisch comité is beschikbaar op: https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/techcomm
+
+![Het technisch comitéportaal in de Robonomics parachain](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
+
+Vanaf 15 september kunt u de zes leden van het technisch comité zien die zijn toegevoegd: 2 devops-specialisten, een softwarearchitect, de belangrijkste Substrate-implementatieontwikkelaar, een senior robotica-ingenieur en een senior DApp-ontwikkelaar.
+Het technisch comité zal zorgen voor het bijwerken van de parachain-runtimecode, te beginnen met opeenvolgende releases op GitHub.
+
+U kunt meer lezen over het werk van dit comité in de Polkadot-wiki: https://wiki.polkadot.network/docs/learn-governance#technical-committee
+
+Totdat de Robonomics parachain live gaat op Kusama, zullen de projectontwikkelaars geen on-chain governance uitbreiden door raden of referenda toe te voegen. Na de succesvolle lancering van de parachain zullen we de vraag heroverwegen over nieuwe mogelijkheden om de netwerkoperaties te beïnvloeden voor nieuwe projectdeelnemers.
+
+### Schatkist
+
+De parachain-schatkist is hier beschikbaar: https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/treasury
+
+![De schatkist in de Robonomics parachain](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
+
+In de afgelopen maand is ongeveer 100k XRT uit de schatkist verdeeld over de saldi van deelnemers aan de eerste Robonomics crowdloan-campagne van de zomer van 2021. Deze operaties worden niet weergegeven als verzoeken, maar worden uitgevoerd door Sudo. Nu we een technisch comité hebben, zullen verzoeken via een stemming gaan.
+
+Het is ook vermeldenswaardig dat er een interessant mechanisme is van de schatkist: het periodiek verbranden van saldi. U kunt meer lezen over het werk van de schatkist in de Polkadot-wiki: https://wiki.polkadot.network/docs/learn-treasury
+
+De gemeenschap kan verzoeken dat de parachain-schatkist XRT toewijst voor taken die nuttig zullen zijn bij de ontwikkeling van Robonomics in het Polkadot-ecosysteem of voor het aantrekken van gebruikers uit de IoT-markt.
+
+### Conclusie
+
+Er staan veel spannende updates op stapel en elk daarvan zal nieuwe mogelijkheden openen voor de gemeenschap. Updates van het community-ontwikkelingsprogramma van het project zullen binnenkort worden gepubliceerd met meer informatie over wat beschikbaar zal zijn voor de gemeenschap overvolgende 6 maanden.
+
+<TextCard image="/avatars/Sergei-Lonshakov.jpg" back="transparent" imageSize="big">
+
+EnsRationis
+
+Robonomics netwerkarchitect
+
+element: @ensrationis:robonomics.network
+
+</TextCard>
+
+
+<TextCard icon="/icons/icon-notification.png" link="https://twitter.com/AIRA_Robonomics">
+
+### Doe mee op Twitter
+
+Blijf op de hoogte en volg updates
+
+</TextCard>

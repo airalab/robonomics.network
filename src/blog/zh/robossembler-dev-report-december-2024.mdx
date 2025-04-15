@@ -1,0 +1,85 @@
+---
+title: "Robossembler Dev Report #1"
+date: 2024-12-08
+published: true
+locale: 'zh'
+cover_image: /blog/images/robossembler-dev-report-december-2024/Cover.webp
+description: "Robossembler项目专注于开发工业机器人和工具，以便任何DIY爱好者都可以使用。在本文中，我们将分享我们目前的进展 - 经过更新和测试的齿轮箱，第5版绕线机以及一个具有额外优化的机器人操作器，用于3D打印！"
+abstract: "Robossembler项目专注于开发工业机器人和工具，以便任何DIY爱好者都可以使用。在本文中，我们将分享我们目前的进展 - 经过更新和测试的齿轮箱，第5版绕线机以及一个具有额外优化的机器人操作器，用于3D打印！"
+tags: ['Robossembler']
+---
+
+
+## 伺服电机
+
+单独的电机通常缺乏足够的扭矩来转动或举起现实世界中的重物，这就是为什么它需要齿轮箱或传动装置。齿轮箱将电机的扭矩转换为可用的输出力。在我们的情况下，这尤为重要 - 我们的印刷定子与 DIN 螺钉作为磁芯相比，测试结果弱了3-4倍，后者使用由电工钢制成的实心金属定子。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/stator-photo_2024-12-08_00-03-21.webp" alt="" />
+
+考虑到这种相对较低的力输出，我们需要一个具有高齿轮比的变速箱，就像Robossembler中的其他一切一样，它将简单组装并适合3D打印。我们探索了许多变速箱设计，包括一些奇特的设计，但每种设计都未达到我们的标准。我们的最后一次尝试——一种带有中间滚动元件的应变波变速箱表现良好，但制造过程过于复杂。
+
+经过大量实验，我们终于发现了完美的设计：一个带有1:43齿轮比的进动变速箱！
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-07_21-54-20.webp" alt="" />
+
+看看它有多简单组装：
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0vXwFmTB_L4?si=soNbSNKg9tjPWY1f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+变速箱已经完成了关键测试和试验。这里有一些令人印象深刻的事实——带有变速箱的伺服驱动器仅重273克，与标准金属电机，没有任何齿轮箱或控制器！
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-08_14-02-33.webp" alt="" />
+
+## 定子绕线机
+
+尽管我们的绕线机第4版成功地半自动绕制了第一个定子，但它需要在稳定性和重复性方面进行改进。第5版带来了许多增强功能，以下是关键内容。
+
+我们已经从第4版中使用的专有Creality步进电机控制器升级到了RAMPS——这是来自传奇RepRap打印机的经过验证的控制器。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-50-12.webp" alt="" />
+
+- 我们使机器部件更轻更好 - 现在它们使用的塑料材料减少了25%，可以更容易地进行3D打印，无需额外的支撑结构
+- 现在的送线系统更加稳定，增加了线轴制动器和轮子上更深的线槽
+- 我们重新设计了显示盒和后盖，以提供更好的保护
+- 项目文档现已完整，包括详细的紧固件规格、打印时间和塑料消耗数据。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-51-26.webp"alt="" />
+
+我们在机器设计中添加了一个针对校准仪，以简化设备设置。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-04_11-41-56.webp" alt="" />
+
+版本5目前正在测试中，与我们的新绕线GCode程序生成器一起。与以前针对特定电机修改的硬编码程序不同，我们的新GCode生成器可以快速适应不同的定子设计。
+
+## 机器人操纵器
+
+随着电机和齿轮箱接近生产准备阶段，我们正在完善操纵器的设计。虽然我们认为它对于3D打印已经优化得很好，但我们的新团队成员——一位具有10年经验的3D技术专家——发现了几个改进的地方。我们专注于使零件打印在低成本打印机上也能可预测，包括重新设计主体链接，以便最小化支撑。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/3d-supports.webp" alt="" />
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/roboarm-3d-optimize-photo_2024-11-20_15-56-53.webp" alt="" />
+
+应我们运动控制程序员的要求，我们重新设计了叉子——将操纵器的传动链接连接成单个运动链的组件。先前的设计提供了更大的工作半径，但在轨迹计算过程中导致频繁的奇异位置，使仿真控制变得复杂。我们的新叉设计消除了这个问题，使机器人的运动学更加优化，更类似于库卡 Iiwa ;D。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/fork-roboarm-photo_2024-12-07_11-39-31.webp" alt="" />
+
+对于控制软件，我们正在开发一个解决方案，使用 ROS 2 Humble（测试 Jazzy）和行为树 CPP v4，目前正在 AR4 上进行验证。一个关键创新是我们广泛使用生命周期管理节点进行运行时参数更改，比如控制器配置或在运行时加载新的机器视觉神经网络权重。
+
+## 计划
+
+我们的即将到来的目标：
+
+- 发布升级的夹持装置，配备新的电机、齿轮箱和可互换的手指
+- 测试绕线机的 GCode 生成器和完全自动定子绕线
+- 完成机器人的三维优化，并创建一个装配演示视频
+- 优化伺服驱动器温度管理，并在一个连杆内负载测试
+
+关注我的博客更新，网址为 [x.com](https://x.com/movefasta)！
+
+## 软件和硬件来源
+
+- Robossembler 机械臂 - https://gitlab.com/robossembler/roboarm-diy-version
+- 绕线机：https://gitlab.com/robossembler/cnc/motor-wire-winder
+- Servo - https://gitlab.com/robossembler/servo
+- Grip Tool - https://gitlab.com/robossembler/arm-tools/grip-tool
+- Robossembler ROS 2 runtime - https://gitlab.com/robossembler/robossembler-ros2

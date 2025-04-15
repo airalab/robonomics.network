@@ -1,0 +1,97 @@
+---
+title: "Robonomics Open Hardware Origins"
+date: 2024-11-11
+published: true
+locale: 'en'
+cover_image: /blog/images/robonomics-open-hardware-origins/cover.png
+description: "As we launch of the Hardware for Cyberpunks project, it's time to reflect on our hardware journey since 2020. This essay will explore Robonomics' open hardware movement."
+abstract: "As we launch of the Hardware for Cyberpunks project, it's time to reflect on our hardware journey since 2020. This essay will explore Robonomics' open hardware movement."
+tags: ['Roadmap', 'Smart Home']
+---
+
+Robonomics has always been partly a "hardware" project. For us, blockchain was the technology through which devices could become true economic agents and use financial assets to produce changes in real life. Starting with the first drone flight launched by a smart contract in 2016, we haven't stopped thinking about real hardware for a minute — hardware that senses the real world and is capable of influencing it: sensors and robots. At the same time, remaining committed to the open-source software movement, we tried to make hardware projects open as well. Now, the blueprints of all devices we develop are published under open licenses.
+
+Much time has passed since 2020, and now it's the perfect time to recall how much interesting hardware we have developed. In this essay, we will review the history of the open hardware movement in Robonomics and the most interesting developments of the past, present, and future.
+
+## Sensors Network - Air Quality
+
+The civic sensor network project began on April 2020, when we developed a special DApp for viewing all sensors providing data to the Robonomics network on a world map. We quickly realized that to ensure the best user experience, a Plug&Play solution was needed, so that one could buy a sensor, connect it, and immediately become a community member without deep knowledge of programming and circuit design. In August 2021, work began on an air quality sensor, and just a few months later, we obtained the first prototype, which included an SDS011 PM2.5/PM10 laser particle sensor and a popular DHT22 (AM2302) temperature and humidity sensor.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensors Network Air Quality Hardware" />
+
+Over the past three years, the device has undergone extensive modifications, culminating in its latest incarnation: the "Altruist" Civil Monitoring Station. This smart sensor collects environmental data—including noise levels, dust particles, and temperature—and stores it on a decentralized [sensor map](https://sensors.social/). Station can be extended by following sensors with I2C interface: BMP180 — temperature and humidity, BME/P280 — temperature, humidity, atmospheric pressure, HTU21D — temperature and humidity, CCS811 VOC SENSOR — volatile organic compounds, CO2 equivalent and  sensors with 1-Wire interface: DS18B20 — temperature.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/altruist-hq.jpg" alt="Altruist Air Station" />
+
+We have many educational materials on the sensor network on the [Robonomics Academia](https://robonomics.academy/en/learn/sensors-connectivity-course/overview/) websites and in the [Wiki](https://wiki.robonomics.network/docs/sds-sensor-connect/). The [video](https://www.youtube.com/watch?v=OdTd1sacCso) shows how you can make your own individual monitoring station using our modules and connect to the civil monitoring sensor network.
+
+## Cyber-Economy - Tokenized Coffee Machine
+
+In addition to the global sensor network, we also considered scenarios for using Robonomics for household devices. One of the first projects in this area was a blockchain-connected coffee machine, launched in October 2021. Yes, this wasn't development in the traditional sense of the word, but rather hacking. We used serial models of coffee machines and our engineering skills to make these machines Web3-compatible.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/robonomics-coffee-maker.jpg" alt="robonomics-coffee-maker" />
+
+However, this hardware project incorporated all the Robonomics innovations available at that time:
+
+- Lightweight Robonomics substrate node on a single-board computer
+- Real World Asset (RWA) in the form of coffee tokens issued on the Statemine parachain when a new package of coffee is received and distributed evenly among team members in the office
+- Practical application of the liability pallet to simplify interaction between supply and demand agents — with this function, Coffee Maker searched for the most profitable coffee suppliers
+
+You can read more about this fascinating project [here](https://robonomics.network/cases/blockchain-coffee-machine/) and in Sergey Lonshakov's blog on Medium [Coworking for crypto-anarchists](https://blog.aira.life/coworking-for-crypto-anarchists-p1-5ebecb252f2d)
+
+## Smart Home Devices
+
+In 2022, we began developing secure and private smart home solutions based on Web3 technologies. We focused on wireless communication, creating a line of remotely controlled devices compatible with the decentralized Robonomics cloud. Our journey started with the popular ESP8266 WiFi chip from Espressif Systems. We then progressed to the more versatile ESP32-C3, featuring open RISC-V architecture and Bluetooth 5 support. In 2024, we adopted Espressif's most advanced chip — the ESP32-C6 — which added Thread/Zigbee protocol support. Now, our entire Robonomics smart home device line uses ESP32-C6 chips. These devices are all compatible with the open-source smart home server Home Assistant. Users can easily update the firmware via our [Web Flasher](https://webflasher.robonomics.network/). We've published the source files for our modules in [our Github repository](https://github.com/airalab/hardware).
+
+### Switches
+
+Traditionally, wired building automation systems are engineered alongside other electrical networks during initial construction. If your residence wasn't designed this way, adding smart devices often requires costly renovations. Our switches offer a solution: implement intelligent control without renovations. Simply install the switch in a standard outlet box, and it becomes accessible to the Home Assistant server—bringing smart home functionality to traditionally wired spaces.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/2-gang-switch.jpg" alt="" />
+
+### Infra-Red Remote Control
+
+Infrared transceivers have long dominated the market for remotely controlled household appliances. Nearly every home contains such devices—including media players, air conditioners, and many others. To simplify the integration of these devices into smart home systems, we've developed a configurable gateway. This gateway allows you to easily connect your IR-controlled appliances to your home server using the MQTT protocol, all through a straightforward configuration process.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/ir-remote-control.jpg" alt="IR Remote Control" />
+
+### Energy Monitor
+
+Energy saving is undoubtedly one of the most significant functions of a smart home. While the ability to control any device without leaving your couch is great, it's even more satisfying to receive electricity bills 15–20% lower than usual, thanks to historical data on energy consumption changes. This motivation led to the development of our first DIN rail-mountable device—the industry standard for automation. Like all our smart home devices, the Energy Monitor wirelessly connects to the Home Assistant server via the MQTT protocol. Look at [demonstration video](https://www.youtube.com/watch?v=xtXIsORJGP0) showcasing the unboxing, setup, and initial use of the monitor.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/energy-monitor.jpg" alt="Energy Monitor" />
+
+
+## DIY & Industrial Robotics
+
+In early 2021, Robonomics started the Robossembler project with a big goal: to change how industrial robots are made. We wanted to move towards robots that could build themselves. While keeping this dream alive, we set a more practical target in 2021. We decided to create an open-source robotic arm that anyone could build and use. This arm would be able to assemble things automatically and might even be able to make copies of itself. The classic design of an industrial robot does not include the possibility of automatically assembling it, so we had to revise all structural components, starting with the motor. We focused on improving the motor, gearbox, and overall structure of the robot. This process has been challenging and time-consuming. However, we're now beginning to see positive results from our efforts. Our hard work is starting to pay off, and we're making good progress on the project.
+
+### Servo
+
+Most open robotic manipulators initially used stepper motors, which were not ideal. Modern proprietary robots now use servo drives with integrated controllers for better feedback. Our team developed a custom servo drive controller, applicable to various motor projects.
+
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/robossembler-servo-reducer-exploding-view-01.jpg" alt="Robossembler Servo Exploding View" />
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/servo.jpg" alt="Robossembler Servo" />
+
+We designed our servo drive to be user-friendly for DIY enthusiasts. You don't need a high-tech workshop to make the stator. Instead of expensive electrical steel for the magnetic core, we use regular DIN screws. You can create the main parts of the rotor and stator using a 3D printer. This makes it much easier for hobbyists to build the project at home. Sources are available in our repository at [gitlab](https://gitlab.com/robossembler/servo).
+
+### Winding machine
+
+During motor development, we initially wound several stators by hand—an extremely labor-intensive process. Without much hesitation, we decided to create a specialized machine for automatic stator coil winding. The result? A remarkably cost-effective solution at around $150. Currently, this stands as the world's first open-source winding machine. We've designed it with accessibility in mind: most parts are 3D-printable. You can watch the entire process—from assembly to the machine's inaugural 8-hour stator winding—in this [video](https://youtu.be/5glGYkbpT6w?si=H6iFg7i56K8elXjw). Sources are available in our repository at [gitlab](https://gitlab.com/robossembler/cnc/motor-wire-winder).
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/winder.jpg" alt="Motor Wire Winder" />
+
+Now that we've solved the most basic tasks - developing the motor and equipment for its production, we can move forward! In 2025, we plan to test the Robossembler Arm, a fully open source 6-axis robotic manipulator. We've already developed a unique gearbox with a gear ratio of 1:43, which will provide the necessary force for the robot even with our DIY motor!
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/robossembler-arm.jpg" alt="Robossembler Arm" />
+
+
+## What’s next?
+
+We're not stopping here - we have big plans for 2025! We're going to make many more devices. Right now, you can check out our new Hardware for Cyberpunks line at [robonomics.network/devices](https://robonomics.network/devices/). This new line will have several devices, including the Altruist station we already talked about. Here's what else we're working on:
+
+- RISC-V Smart Home Server. The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood. Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.
+- Hikikomori Tamagotchi. A smart wearable station that checks the status of sensors from your home or clothing.
+- Smart Safe. A safe that unlocks with a smart contract based on user-defined conditions. View logs of the safe’s openings and closings. Program the safe to suit your needs, such as granting access to trusted accounts after an extended period of inactivity.

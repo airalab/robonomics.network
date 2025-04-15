@@ -1,0 +1,230 @@
+---
+title: L'esperimento con il Beer Bar al Polkadot Decoded 2024
+date: 2024-07-19
+published: true
+locale: 'it'
+tags: ['Eventi', 'Polkadot', 'Web3']
+cover_image: /blog/images/beer-bar-decoded2024/cover.png
+description: La scorsa settimana, il team di Robonomics ha visitato l'evento Polkadot Decoded a Bruxelles. Hanno condotto un esperimento per misurare diverse letture dai sensori intorno allo Stand della Birra Gratuita di ChaosDAO. Il team voleva vedere quante persone hanno partecipato e quanto fossero interessate al bar. Leggi questo articolo per scoprire cosa hanno scoperto.
+---
+
+La scorsa settimana, il team di Robonomics ha visitato l'evento Polkadot Decoded a Bruxelles. Hanno condotto un esperimento per misurare diverse letture dai sensori intorno allo [**Stand della Birra Gratuita di ChaosDAO**](https://polkadot.polkassembly.io/referenda/821). Il team voleva vedere quante persone hanno partecipato e quanto fossero interessate al bar. Leggi questo articolo per scoprire cosa hanno scoperto.
+
+## Attrezzatura
+
+Per l'esperimento è stata scelta una serie di sensori:
+
+- sensori di temperatura e umidità
+- sensori di movimento
+- sensori di porta
+- sensore di qualità dell'aria
+- contatore di meme sulla birra sotto forma di lampadina e due pulsanti
+
+È stato utilizzato un Raspberry Pi 4 con Home Assistant installato e integrazione Robonomics per salvare tutti i dati nel cloud Web3. Alla fine dell'articolo, vedrai una descrizione su come ottenere questi dati.
+
+## Installazione
+
+Ecco com'era il bar:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/bar.jpg" alt="Bar della birra" /> 
+
+Il bancone principale dove veniva distribuita la birra. Dietro il bancone c'era un rubinetto e 2 frigoriferi con le bevande. C'erano anche piccoli divani e una PlayStation 1 con giochi di corse sulla destra.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/play-zone.jpg" alt="zona giochi" /> 
+
+I sensori di porta si adattavano perfettamente ai frigoriferi. Ciò ci ha permesso di contare quante volte venivano aperti per prendere una bottiglia.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/fridges.jpg" alt="frigoriferi" />
+
+Un sensore di movimento è stato installato nell'area PlayStation in modo che si attivasse solo quando una persona si avvicinava alla TV.per prendere un gamepad:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/sofas.jpg" alt="Zona PlayStation" />
+
+È stato anche posizionato un sensore di movimento sul bancone del bar principale e orientato per attivarsi solo quando una persona si trovava direttamente al bancone. 
+È visibile sulla sinistra sulla colonna. È stato inoltre installato un sensore di temperatura e umidità nelle vicinanze:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/column.jpg" alt="installazione del sensore di movimento" />
+
+Diversi altri sensori di temperatura sono stati posizionati all'interno del bancone del bar e al punto caffè nelle vicinanze.
+
+È stato inoltre installato un contatore di meme sulla birra, che si illuminava di verde per 5 secondi se veniva premuto il pulsante "Birra", o di rosso se veniva premuto il pulsante "non premere":
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/mem-beer.jpg" alt="contatore di meme sulla birra" />
+
+## Dati Ottenuti
+
+**Avviso: In questa sezione, tutti i dati verranno mostrati nell'interfaccia di Home Assistant per una visualizzazione comoda.** 
+Questi stessi dati possono essere ottenuti dalla parachain di Robonomics e confrontati. Le istruzioni saranno fornite successivamente.
+
+Periodo di studio: Per il periodo di studio, prenderemo il tempo dalle 16:00 del 11 luglio alle 20:00 del 12 luglio, che corrisponde alla metà del primo giorno di 
+Decoded e l'intero secondo giorno.
+
+È anche importante chiarire che il bar ha aperto alle 12:00, il che limita anche l'intervallo misurabile.
+
+### Temperatura e Umidità
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temperature.jpg" alt="sensore di temperatura" />
+
+Primo giorno (11 luglio) - come si può vedere dai grafici, è stata mantenuta una temperatura confortevole di 25-27 gradi all'interno.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp11.png" alt="temperatura 11" />
+
+Secondo giorno (12 luglio) - la temperatura è scesa di alcuni gradi ma è rimasta confortevole.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp12.png" alt="temperatura 12" />
+
+La diminuzione della temperatura è correlata alla pioggia del secondo giorno, che è chiaramente visibile sui grafici dell'umidità. L'umidità è aumentata del 10-15%. Primo giorno:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum11.png" alt="umidità 11" />
+
+Secondo giorno:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum12.png" alt="umidità 12" />
+
+### Sensori di movimento
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motion-sesnors.jpg" alt="sensore di movimento" />
+
+Il giallo indica il momento in cui qualcuno era vicino al bar, il grigio - quando non c'erano persone. Sensore di movimento al bar - primo giorno:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar11.png" alt="sensore di movimento al bar 11" />
+
+Secondo giorno:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar12.png" alt="sensore di movimento al bar 12" />
+
+E area PlayStation - primo giorno:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay11.png" alt="sensore di movimento nella zona giochi 11" />
+
+Secondo giorno:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay12.png" alt="sensore di movimento nella zona giochi 12" />
+
+Dai sensori, possiamo vedere che quasi tutto il tempo il bar era aperto, qualcuno era in piedi al bancone. 
+Inoltre, quasi la metà del tempo, qualcuno stava giocando alla PlayStation.
+
+### Sensori di porta
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door-sensors.jpg" alt="sensori di porta sul frigorifero" />
+
+Bene, abbiamo esaminato gli indicatori generali intorno al bar, ora cerchiamo di ottenere alcuni numeri. Per questo, abbiamo sensori di porta. 
+C'erano 2 frigoriferi. Sull'esempio di uno di essi, vediamo come contare il numero di aperture.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door.png" alt="esempio di sensore di porta" />
+
+Naturalmente, potresti contare il numero di strisce gialle su questo grafico, che sono i momenti in cui la porta è stata aperta. 
+Ma puoi esportarlo in un file csv e ottenere quanto segue:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/doorcsv.png" alt="esempio di csv di porta" />
+
+Qui, ogni riga individuale mostra l'ora del cambiamento dello stato del sensore. Quindi, semplicemente dividendo il numero di righe a metà, 
+tuposso ottenere il numero di aperture del frigorifero.
+Di conseguenza, otteniamo la seguente tabella:
+
+|          | frigo 1 | frigo 2 |
+| -------- |--------|---------|
+| Primo giorno  | 76     | 78      |
+| Secondo giorno | 111    | 87      |
+| somma    | 187    | 165     |
+
+Un totale di 352 aperture del frigorifero. E possiamo affermare con sicurezza che questo è il limite inferiore del numero di bottiglie di birra/acqua che sono state prese in due giorni, poiché più bottiglie potrebbero essere prese con un'unica apertura della porta.
+
+### Contatore di meme sulla birra
+
+E infine, il contatore di meme sulla birra. È stato installato solo il secondo giorno. C'erano 2 pulsanti, uno etichettato "Birra" e l'altro "Non premere". Quante volte è stato premuto ciascun pulsante?
+
+| Birra       | Non premere |
+|------------|--------------|
+| 83         | 44           |
+
+Come puoi vedere, circa 2/3 delle persone hanno scelto il pulsante giusto.
+
+## Verifica dei dati
+
+Passiamo ora a ottenere questi dati dalla blockchain. Tutti i dati sono memorizzati nei datalog di questo account - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". Apriamolo in [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+
+Vedremo tutti i suoi estrinseci. Filtriamoli per data. Ne otterremo circa 140 estrinseci.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="estrinseci subscan" />
+
+Ognuno di essi contiene un CID IPFS con telemetria. Prendiamo un estrinseco e estraiamo i dati da esso. Ad esempio, [questo](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+CID IPFS al suo interno - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`fdUVdpJ4c3`.
+
+Tutto ciò che devi fare è utilizzare questo script per decodificare i dati. Sostituisci l'IPFS CID nella riga 11 con quello di cui hai bisogno:
+
+```
+import requests
+from substrateinterface import Keypair, KeypairType
+from robonomicsinterface import Account
+import typing as tp
+import json
+import os
+
+ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
+IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
+
+def decrypt_message(data: tp.Union[str, dict]) -> str:
+
+    """Decodifica il messaggio che è stato crittografato per i dispositivi
+    :param data: Dati crittografati
+    :param sender_address: Indirizzo del mittente
+    :param recipient_keypair: Coppia di chiavi dell'account destinatario
+
+    :return: Messaggio decodificato
+    """
+    try:
+        account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+        admin_keypair = account.keypair
+        print(account.get_address())
+        sender_public_key = admin_keypair.public_key
+        if isinstance(data, str):
+            data_json = json.loads(data)
+        else:
+            data
+        if admin_keypair.ss58_address in data_json:
+            decrypted_seed = _decrypt_message(
+                data_json[admin_keypair.ss58_address],
+                sender_public_key,
+                admin_keypair,
+            ).decode("utf-8")
+            decrypted_acc = Account(decrypted_seed, crypto_type=KeypairType.ED25519)
+            decrypted_data = _decrypt_message(data_json["data"], sender_public_key, decrypted_acc.keypair).decode(
+                "utf-8"
+            )
+            return decrypted_data
+        else:
+            print(f"Errore nella decodifica per i dispositivi: l'account non è nei dispositivi")
+    except Exception as e:
+        print(e)
+
+def _decrypt_message(encrypted_message: str, sender_public_key: bytes, admin_keypair) -> str:
+    """Decodifica il messaggio con la chiave privata del destinatario e la chiave pubblica del mittente
+    :param encrypted_message: Messaggio da decodificare
+    :param sender_public_key: Chiave pubblica del mittente
+
+    :return: Messaggio decodificato
+    """
+    if encrypted_message[:2] == "0x":
+        encrypted_message = encrypted_message[2:]
+    bytes_encrypted= bytes.fromhex(messaggio_criptato)
+    return admin_keypair.decrypt_message(bytes_criptati, chiave_pubblica_mittente)
+
+def main():
+    account = Account(SEME_AMMINISTRATIVO, tipo_crypto=TipoChiave.ED25519)
+    admin_keypair = account.keypair
+    risposta = requests.get(f"<https://gateway.pinata.cloud/ipfs/{HASH_IPFS}>")
+    stampa(risposta)
+    with open("telemetry.txt", "w") as f:
+        contenuto_decifrato = decifra_messaggio(risposta.testo)
+        stampa(contenuto_decifrato)
+        f.write(contenuto_decifrato)
+
+if __name__ == "__main__":
+    main()
+
+Come risultato, otterrai un file "telemetry.txt" con un json al suo interno. Esso conterrà tutti i dati che abbiamo esaminato in precedenza. Sarà sufficiente analizzarlo.
+
+## Conclusioni
+
+Grazie a tutti questi indicatori, possiamo dire che l'idea della "birra gratuita" da ChaosDAO è stata un successo e le persone l'hanno utilizzata attivamente, anche se la birra non è finita. E grazie ai sensori e al team di Robonomics, è possibile visualizzare indicatori quantitativi e qualitativi di questo evento con i dati salvati nella rete Kusama.

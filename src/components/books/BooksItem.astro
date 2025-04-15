@@ -1,0 +1,166 @@
+---
+// components 
+import Spinner from '../utils/LoaderSpin.vue'
+
+const { book, gateway } = Astro.props;
+---
+
+<li class="e-books__item">
+  <a class="e-books__img" href={gateway + book.options[0].link} aria-label="check the book" target="_blank">
+    <img src={`/images/books/${book.img}`} alt={book.title} loading="lazy" />
+  </a>
+
+  <div class="e-books__content">
+    <div class="e-book__header">
+      <span>{book.year}</span>
+      <h3>{book.title}</h3>
+    </div>
+    <div class="e-books__links-wrapper">
+      <div id={`spinner-${book.id}`} class="spinner" style="display: none;">
+        <Spinner/>
+      </div>
+      <div id={'book-options-' + book.id} class="e-books__links" style="display: none;"></div>
+    </div>
+  </div>
+</li>
+
+<script define:vars={{book, gateway}}>
+
+  // Helper functions
+  const fetchGateway = async (link) => {
+    try {
+      const response = await fetch(link);
+      return response.ok;
+    } catch {
+      return false;
+    }
+  };
+
+  const checkLocalStorage = async (item, gateway) => {
+    const isGatewayWorking = await fetchGateway(gateway + item.link);
+    const linkDetails = {
+      link: isGatewayWorking && gateway ? gateway + item.link : item.static,
+      date: new Date().toISOString(),
+    };
+    localStorage.setItem(item.name, JSON.stringify(linkDetails));
+    return linkDetails;
+  };
+
+  const resolveLinks = async (bookOptions, gateway) => {
+    const booksLinks = {};
+    for (const option of bookOptions) {
+      const storageItem = localStorage.getItem(option.name);
+      if (storageItem) {
+        const cachedBook = JSON.parse(storageItem);
+        const today = new Date();
+        const sevenDaysAgo = new Date(cachedBook.date);
+        sevenDaysAgo.setDate(sevenDaysAgo.getDate() + 7);
+
+        if (today > sevenDaysAgo) {
+          localStorage.removeItem(option.name);
+          booksLinks[option.name] = (await checkLocalStorage(option, gateway)).link;
+        } else {
+          booksLinks[option.name] = cachedBook.link;
+        }
+      } else {
+        booksLinks[option.name] = (await checkLocalStorage(option, gateway)).link;
+      }
+    }
+    return booksLinks;
+  };
+
+  // Run after page loads
+  document.addEventListener("DOMContentLoaded", async () => {
+    const loading = document.querySelector(`#spinner-${book.id}`);
+    const bookLinksElement = document.querySelector(`#book-options-${book.id}`);
+
+    loading.style.display = "block";
+
+    // Resolve links after loading
+    const booksLinks = await resolveLinks(book.options, gateway);
+
+    // Hide loading spinner
+    loading.style.display = "none";
+    bookLinksElement.style.display = "block";
+
+    // Create links dynamically
+    book.options.forEach(option => {
+      const link = booksLinks[option.name] || "#";
+      const anchor = document.createElement("a");
+      anchor.href = link;
+      anchor.innerText = option.text;
+      anchor.setAttribute('target', '_blank')
+      bookLinksElement.appendChild(anchor);
+    });
+  });
+</script>
+
+
+<style>
+  .e-books__item {
+    display: grid;
+    font-family: var(--font-family);
+    font-weight: 900;
+    grid-template-columns: 1fr;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: inherit;
+    font-size: calc(var(--base-font-size) * 0.9);
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .e-books__content {
+    max-width: 578px;
+    width: 100%;
+    margin: 0 auto;
+    padding: calc(var(--space) * 0.3) calc(var(--space) * 0.75);
+    background-color: var(--color-light);
+  }
+
+  .e-book__header {
+    display: flex;
+    align-items: center;
+  }
+
+  .e-book__header span {
+    display: inline-block;
+    margin-right: calc(var(--space) * 0.5);
+    font-weight: 600;
+    font-size: calc(var(--base-font-size) * 0.9);
+  }
+
+  .e-books__links {
+    font-weight: 500;
+    max-width: 186px;
+    font-size: calc(var(--base-font-size) * 0.8);
+  }
+
+  .e-books__links :global(a:not(:last-of-type)) {
+    margin-right: calc(var(--space) * 0.5);
+  }
+
+  .e-books__img {
+    max-width: 578px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 980px) {
+    .e-books__content {
+      text-align: center;
+    }
+
+    .e-book__header {
+      justify-content: center;
+    }
+
+    .e-books__links {
+      max-width: unset;
+    }
+  }
+</style>

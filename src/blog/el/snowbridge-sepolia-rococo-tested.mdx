@@ -1,0 +1,110 @@
+---
+title: "Επιτυχή τεστ μεταφοράς XRT μεταξύ Sepolia και Rococo Asset Hub μέσω του Snowbridge"
+date: 2024-07-22
+published: true
+locale: 'el'
+cover_image: /blog/images/snowbridge-sepolia-rococo-tested/snowbridge-sepolia-rococo-tested.png
+description: "Πραγματοποιήσαμε με επιτυχία δοκιμές μεταφοράς των τοκεν XRT μεταξύ των δικτύων Sepolia και Rococo Asset Hub χρησιμοποιώντας το πρωτόκολλο Snowbridge."
+abstract: "Το Snowbridge είναι ένα γενικού σκοπού, αξιόπιστο και αποκεντρωμένο γέφυρα μεταξύ του Polkadot και του Ethereum."
+tags: ['Polkadot', 'Ethereum']
+---
+
+## Εισαγωγή
+
+Χαιρετώ όλους, όπως γνωρίζετε, το έργο Robonomics λειτουργεί ταυτόχρονα σε δύο δίκτυα: το Ethereum και το Kusama. Προς το παρόν, δεν υπάρχει τρόπος να μεταφερθεί το τοκεν XRT μεταξύ αυτών των δικτύων. Γι' αυτό, παρακολουθούμε στενά το έργο Snowbridge, το οποίο αναπτύσσεται ως μια καθολική γέφυρα μεταξύ του Ethereum και του Polkadot: https://docs.snowbridge.network/
+
+Τον τελευταίο μήνα, μεταφέραμε με επιτυχία τα τοκεν XRT του ERC20 μεταξύ των δοκιμαστικών δικτύων Sepolia και Rococo Asset Hub ακολουθώντας τις οδηγίες του Snowbridge: 
+
+https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers
+
+## Αναπτύξτε το συμβόλαιο XRT και καταχωρίστε το τοκεν στο Snowbridge
+
+Αρχικά, το συμβόλαιο XRT αναπτύχθηκε στο Sepolia: 
+
+https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf
+
+Καθώς χρειαζόμασταν να δοκιμάσουμε την αποστολή του δικού μας τοκεν, έπρεπε να το καταχωρίσουμε. Αυτό το βήμα αποτελείται από δύο μέρη: έλεγχο της απαιτούμενης προμήθειας και καταχώρηση του τοκεν:
+
+1. Για να ελέγξουμε την απαιτούμενη προμήθεια, καλέσαμε τη μέθοδο `quoteRegisterTokenFee` του συμβολαίου γέφυρας (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#readProxyContract) και λάβαμε την τιμή `5000000500000000000`:
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteRegisterTokenFee.png" alt="quoteRegisterTokenFee" />
+
+2. Για να καταχωρίσουμε το τοκεν, καλέσαμε τη μέθοδο `registerToken` του συμβολαίου γέφυρας (https://sepolia.etherscan.io/διεύθυνση/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#writeProxyContract), καθορίζοντας την απαιτούμενη χρέωση και τη διεύθυνση του αναπτυγμένου τόκεν:
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/registerToken.png" alt="registerToken" />
+
+Η διαδικασία εγγραφής θα πρέπει να διαρκέσει περίπου 30 λεπτά, και το νέο τόκεν θα πρέπει να εμφανιστεί στα foreignAssets στο Rococo Asset Hub. Αυτό μπορεί να ελεγχθεί χρησιμοποιώντας μια ερώτηση κατάστασης αλυσίδας στο Rococo Asset Hub (https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/chainstate):
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/foreign_asset_query.png" alt="Check if token registered" />
+
+Μετά την επιτυχή εγγραφή, λάβαμε την ακόλουθη απάντηση:
+```
+{
+    owner: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    issuer: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    admin: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    freezer: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    supply: 0
+    deposit: 100,000,000,000
+    minBalance: 1
+    isSufficient: false
+    accounts: 1
+    sufficients: 0
+    approvals: 0
+    status: Live
+}
+```
+
+## Δοκιμή μεταφοράς XRT από τη Sepolia στο Rococo Asset Hub
+
+Το επόμενο βήμα ήταν η αποστολή του τόκεν XRT από τη Sepolia στο Rococo Asset Hub. Για αυτό, πραγματοποιήσαμε τις ακόλουθες ενέργειες:
+
+1. Αρχικά, επιτρέψαμε στο συμβόλαιο γέφυρας να χρησιμοποιήσει 15 XRT από τον λογαριασμό: 
+
+    https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf#writeContract
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="Έγκριση XRT spender" />
+
+2. Στη συνέχεια, ζητήθηκε η απαιτούμενη χρέωση για την αποστολή του τόκεν:
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
+
+3.  Εκκίνησε τη μεταφορά του XRT από τη Σεπολία στο Rococo Asset Hub ακολουθώντας τις οδηγίες της Snowbridge χρησιμοποιώντας το παράδειγμα WETH: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
+    
+    Μια κρίσιμη σημείωση σχετικά με το πεδίο `destinationAddress.data`: η τιμή του έπρεπε να είναι περικλεισμένη σε εισαγωγικά (π.χ. "0xb0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d").
+
+    Σε αυτό το στάδιο, αντιμετωπίσαμε σημαντικές καθυστερήσεις. Αντί για τα αναμενόμενα 30 λεπτά, η συναλλαγή πήρε αρκετές μέρες. Τελικά, όλες οι μεταφορές μας ολοκληρώθηκαν με επιτυχία.
+    Παράδειγμα συναλλαγής: https://sepolia.etherscan.io/tx/0xec539cd89cb955ffea2ff65cae6685a8abb0966a2c1b76876a308cc036cd18fb
+
+    Το υπόλοιπο XRT στον λογαριασμό-στόχο στο Rococo Asset Hub μπορεί να ελεγχθεί με την αποστολή ενός αιτήματος `foreignAssets.account()` στην κατάσταση της αλυσίδας:
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="Παράδειγμα του foreignAssets.account" />
+
+    Στείλαμε συνολικά 15 XRT, οπότε το υπόλοιπο στο Rococo Asset Hub φαινόταν έτσι:
+    ```
+    {
+        balance: 15,000,000,000
+        status: Liquid
+        reason: Consumer
+        extra: null
+    }
+    ```
+
+## Δοκιμή μεταφοράς XRT από το Rococo Asset Hub στη Σεπολία 
+
+Το τελικό βήμα ήταν η αποστολή του XRT από το Rococo Asset Hub πίσω στη Σεπολία. Πραγματοποιήσαμε το ακόλουθο εξωτερικό στο Rococo Asset Hub: 
+
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/extrinsics/decode/0xe1028400b0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d01360c34e5d8f49f802fc1cc2413bfcd827b054b3ab1195bddcba0168dfaf9a47693b305b96e68d238d9adeed276452c2bc156b3bd189ba016543c354edd95ad81f501040000001f0b03020109079edaa8020300010300f42680c6a807de3cfdfcfe49583b01d80278a39e030400020209079edaa80203009e216c3af5f0c6ce70851b93dddb62573380cfef0002286bee0000000000
+
+Αυτή η συναλλαγή μπορεί να προβληθεί στον εξερευνητή μπλοκ Rococo Asset Hub:
+
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/explorer/query/0x3524f4bef9e736cdff1d812d79e130cf6ade7a3fe3222a0853772fd1b6c3c89a
+
+Η αντίστοιχη συναλλαγή στο Sepolia:
+
+https://sepolia.etherscan.io/tx/0xe8a95dca350143a0c41891137e332962f2918351dcfc2612519e69c7a5c46772
+
+Αυτό το βήμα ολοκληρώθηκε σχετικά γρήγορα, μέσα σε μισή ώρα. Ως αποτέλεσμα, 1 XRT μεταφέρθηκε πίσω στο Sepolia. Το υπόλοιπο XRT στο Rococo Asset Hub παρέμεινε στα 14 XRT:
+
+```
+{
+    balance: 14,000,000,000
+    status: Liquid
+    reason: Consumer
+    extra: null
+}
+```

@@ -1,0 +1,230 @@
+---
+title: Эксперимент с пивным баром на мероприятии Polkadot Decoded 2024
+date: 2024-07-19
+published: true
+locale: 'ru'
+tags: ['События', 'Polkadot', 'Web3']
+cover_image: /blog/images/beer-bar-decoded2024/cover.png
+description: 'На прошлой неделе команда Robonomics посетила мероприятие Polkadot Decoded в Брюсселе. Они провели эксперимент по измерению различных показателей с датчиков вокруг стенда [**Free Beer от ChaosDAO**](https://polkadot.polkassembly.io/referenda/821). Команда хотела узнать, сколько людей посетило мероприятие и насколько заинтересованы они были в баре. Прочтите эту статью, чтобы узнать, что они обнаружили.'
+---
+
+На прошлой неделе команда Robonomics посетила мероприятие Polkadot Decoded в Брюсселе. Они провели эксперимент по измерению различных показателей с датчиков вокруг стенда [**Free Beer от ChaosDAO**](https://polkadot.polkassembly.io/referenda/821). Команда хотела узнать, сколько людей посетило мероприятие и насколько заинтересованы они были в баре. Прочтите эту статью, чтобы узнать, что они обнаружили.
+
+## Оборудование
+
+Для эксперимента был выбран набор датчиков:
+
+- датчики температуры и влажности
+- датчики движения
+- датчики дверей
+- датчик качества воздуха
+- счетчик мемов о пиве в виде лампочки и двух кнопок
+
+Для сохранения всех данных в облаке Web3 использовался Raspberry Pi 4 с установленным Home Assistant и интеграцией Robonomics. В конце статьи вы увидите описание того, как получить эти данные.
+
+## Установка
+
+Вот как выглядел бар:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/bar.jpg" alt="Пивной бар" /> 
+
+Основной стол, где раздавали пиво. За стойкой был кран и 2 холодильника с напитками. Также были небольшие диваны и PlayStation 1 с гоночными играми справа.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/play-zone.jpg" alt="игровая зона" /> 
+
+Датчики дверей идеально подходили к холодильникам. Это позволило нам подсчитать, сколько раз их открывали, чтобы взять бутылку.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/fridges.jpg" />
+
+Датчик движения был установлен в зоне PlayStation, чтобы срабатывал только при приближении человека к телевизору.взять геймпад:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/sofas.jpg" alt="Зона PlayStation" />
+
+Также был установлен датчик движения на главном барном столе и настроен так, чтобы срабатывать только при нахождении человека непосредственно у стойки. 
+Он виден слева на колонне. Рядом также был установлен датчик температуры и влажности:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/column.jpg" alt="установка датчика движения" />
+
+Несколько дополнительных датчиков температуры были размещены внутри барной стойки и в кофейном уголке, который находился поблизости.
+
+Также был установлен счетчик мемов о пиве, который зажигался зеленым цветом на 5 секунд, если была нажата кнопка "Пиво", или красным, если была нажата кнопка "не нажимать":
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/mem-beer.jpg" alt="счетчик мемов о пиве" />
+
+## Полученные данные
+
+**Отказ от ответственности: В этом разделе все данные будут показаны в интерфейсе Home Assistant для удобной визуализации.** 
+Эти же данные можно получить из парачейна Robonomics и сравнить. Инструкции будут предоставлены позже.
+
+Период исследования: Для периода исследования мы возьмем время с 16:00 11 июля по 20:00 12 июля, что соответствует половине первого дня 
+Decoded и целому второму дню.
+
+Также важно уточнить, что бар открылся в 12 часов дня, что также ограничивает измеряемый интервал.
+
+### Температура и Влажность
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temperature.jpg" alt="датчик температуры" />
+
+Первый день (11 июля) - как видно из графиков, в помещении поддерживалась комфортная температура 25-27 градусов.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp11.png" alt="температура 11-го" />
+
+Второй день (12 июля) - температура немного снизилась, но оставалась комфортной.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp12.png" alt="температура 12-го" />
+
+Снижение температуры связано с дождем во второй день, что явно видно на графиках влажности. Влажность увеличилась на 10-15%. Первый день:11.png" alt="влажность 11-го" />
+
+Второй день:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum12.png" alt="влажность 12-го" />
+
+### Датчики движения
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motion-sesnors.jpg" alt="датчик движения" />
+
+Желтый цвет указывает на время, когда кто-то был рядом с баром, серый - когда людей не было. Датчик движения у бара - первый день:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar11.png" alt="датчик движения у бара 11-го" />
+
+Второй день:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar12.png" alt="датчик движения у бара 12-го" />
+
+А зона PlayStation - первый день:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay11.png" alt="датчик движения в игровой зоне 11-го" />
+
+Второй день:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay12.png" alt="датчик движения в игровой зоне 12-го" />
+
+Из датчиков видно, что почти все время, когда бар был открыт, кто-то стоял у прилавка. 
+Также почти половина времени кто-то играл на PlayStation.
+
+### Датчики дверей
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door-sensors.jpg" alt="датчики дверей на холодильнике" />
+
+Отлично, мы рассмотрели общие показатели вокруг бара, теперь давайте попробуем получить некоторые цифры. Для этого у нас есть датчики дверей. 
+Было 2 холодильника. На примере одного из них давайте посмотрим, как посчитать количество открытий.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door.png" alt="пример датчика двери" />
+
+Конечно, вы могли бы посчитать количество желтых полос на этом графике, которые обозначают моменты открытия двери. 
+Но вы можете экспортировать это в файл csv и получить следующее:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/doorcsv.png" alt="пример csv файла двери" />
+
+Здесь каждая отдельная строка показывает время изменения состояния датчика. Таким образом, просто разделив количество строк пополам, 
+выМожно получить количество открытий холодильника.
+В результате получаем следующую таблицу:
+
+|          | холодильник 1 | холодильник 2 |
+| -------- |--------|---------|
+| Первый день  | 76     | 78      |
+| Второй день | 111    | 87      |
+| итого    | 187    | 165     |
+
+Всего 352 открытия холодильника. И мы можем уверенно сказать, что это нижняя граница количества взятых бутылок пива/воды за два дня, так как при одном открытии двери могли брать несколько бутылок.
+
+### Счетчик мемов о пиве
+
+И наконец, счетчик мемов о пиве. Он был установлен только на второй день. Было 2 кнопки, одна подписана "Пиво", а другая "Не нажимать". Сколько раз была нажата каждая кнопка?
+
+| Пиво       | Не нажимать |
+|------------|--------------|
+| 83         | 44           |
+
+Как видите, примерно 2/3 людей выбрали правильную кнопку.
+
+## Проверка данных
+
+Перейдем к получению этих данных из блокчейна. Все данные хранятся в журналах этого аккаунта - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Давайте откроем его в [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+
+Мы увидим все его экструзии. Давайте отфильтруем их по дате. Мы получим около 140 экструзий.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
+
+Каждая из них содержит IPFS CID с телеметрией. Давайте возьмем любую экструзию и извлечем данные из нее. Например, [эту](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+IPFS CID внутри - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
+
+Затем вам нужно всего лишь использовать этот скрипт для расшифровки данных. Замените IPFS CID в строке 11 на тот, который вам нужен:
+
+```
+import requests
+from substrateinterface import Keypair, KeypairType
+from robonomicsinterface import Account
+import typing as tp
+import json
+import os
+
+ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
+IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
+
+def decrypt_message(data: tp.Union[str, dict]) -> str:
+
+    """Расшифровать сообщение, которое было зашифровано для устройств
+    :param data: Зашифрованные данные
+    :param sender_address: Адрес отправителя
+    :param recipient_keypair: Пара ключей учетной записи получателя
+
+    :return: Расшифрованное сообщение
+    """
+    try:
+        account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+        admin_keypair = account.keypair
+        print(account.get_address())
+        sender_public_key = admin_keypair.public_key
+        if isinstance(data, str):
+            data_json = json.loads(data)
+        else:
+            data
+        if admin_keypair.ss58_address in data_json:
+            decrypted_seed = _decrypt_message(
+                data_json[admin_keypair.ss58_address],
+                sender_public_key,
+                admin_keypair,
+            ).decode("utf-8")
+            decrypted_acc = Account(decrypted_seed, crypto_type=KeypairType.ED25519)
+            decrypted_data = _decrypt_message(data_json["data"], sender_public_key, decrypted_acc.keypair).decode(
+                "utf-8"
+            )
+            return decrypted_data
+        else:
+            print(f"Ошибка при расшифровке для устройств: учетная запись отсутствует в устройствах")
+    except Exception as e:
+        print(e)
+
+def _decrypt_message(encrypted_message: str, sender_public_key: bytes, admin_keypair) -> str:
+    """Расшифровать сообщение с помощью закрытого ключа получателя и открытого ключа отправителя
+    :param encrypted_message: Сообщение для расшифровки
+    :param sender_public_key: Открытый ключ отправителя
+
+    :return: Расшифрованное сообщение
+    """
+    if encrypted_message[:2] == "0x":
+        encrypted_message = encrypted_message[2:]
+    bytes_encrypted= bytes.fromhex(encrypted_message)
+    return admin_keypair.decrypt_message(bytes_encrypted, sender_public_key)
+
+def main():
+    account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+    admin_keypair = account.keypair
+    response = requests.get(f"<https://gateway.pinata.cloud/ipfs/{IPFS_HASH}>")
+    print(response)
+    with open("telemetry.txt", "w") as f:
+        decrypted_content = decrypt_message(response.text)
+        print(decrypted_content)
+        f.write(decrypted_content)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+В результате вы получите файл "telemetry.txt" с json внутри. Он будет содержать те же данные, которые мы рассмотрели ранее. Вам просто нужно будет их обработать.
+
+## Выводы
+
+Благодаря всем этим показателям мы можем сказать, что идея "бесплатного пива" от ChaosDAO была успешной, и люди активно ею пользовались, хотя некоторого пива не хватило. И благодаря датчикам и команде Robonomics вы можете увидеть количественные и качественные показатели этого события с данными, сохраненными в сети Kusama.

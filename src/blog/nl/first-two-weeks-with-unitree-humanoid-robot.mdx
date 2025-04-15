@@ -1,0 +1,74 @@
+---
+title: 'De Eerste Twee Weken Werken met de Unitree G1 Humanoïde Robot'
+date: 2024-12-27
+published: true
+locale: 'nl'
+tags: ['Robotica', 'ROS 2']
+cover_image: /blog/images/first-two-weeks-with-unitree-humanoid-robot/cover.webp
+description: "Het is twee weken geleden dat de Unitree G1 humanoïde robot arriveerde in het Robonomics-lab. Een team van minstens vijf ingenieurs met masterdiploma's in robotica begon onmiddellijk met het bestuderen en programmeren van het nieuwe apparaat. We willen het eerste nieuws vanuit het veld delen: indrukken, bevindingen en uitdagingen op weg naar, zoals we hopen, een humanoïde revolutie!"
+abstract: "Het is twee weken geleden dat de Unitree G1 humanoïde robot arriveerde in het Robonomics-lab. Een team van minstens vijf ingenieurs met masterdiploma's in robotica begon onmiddellijk met het bestuderen en programmeren van het nieuwe apparaat. We willen het eerste nieuws vanuit het veld delen: indrukken, bevindingen en uitdagingen op weg naar, zoals we hopen, een humanoïde revolutie!"
+---
+
+## TL;DR
+
+- Succesvol verbonden met dev unit / PC2 (zie diagrammen hieronder).
+- Een externe verbinding opgezet via **SSH** met **Zerotier** en **Yggdrasil**.
+- Het Linux-gebaseerde systeem aan boord van de humanoïde bestudeerd en standaard DevOps-taken uitgevoerd.
+- Bekend geraakt met de **Python SDK**-bibliotheek van de ontwikkelaars (we hebben zelfs een kritieke bug opgelost): nu kunnen we de robot bedienen vanuit scripts: lopen, zitten, opstaan en dempen.
+- **ROS 2 packages** gebouwd, verbonden met topics, verschillende voorbeelden gestart, maar verdere tests zijn vereist.
+
+<RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/image-schemes.webp" alt="Unitree humanoïde robot datastroom" />
+
+## Notities uit het Veld
+
+**Over Python SDK:**
+
+- Virtuele omgeving (**venv**) gebruikt op **Python 3.10** — de SDK werkt niet met andere versies.
+- Werkte via **eth0**-interface vanaf dev unit.
+- Hoewel **CycloneDDS** vooraf was geïnstalleerd, werd het handmatig opnieuw opgebouwd zonder conflicten.
+- Om scripts uit te voeren, moet een omgevingsvariabele worden ingesteld (aanbevolen om toe te voegen aan `.bashrc`). **Belangrijk:** specificeer het volledige pad in enkele aanhalingstekens:
+
+<RbCode>
+
+```
+export CYCLONEDDS_HOME='/home/unitree/cyclonedds/install'
+```
+</RbCode>
+
+- Scripts werken niet in de debugmodus van de robot, hoewel de documentatie aangeeft van wel.
+- Om de SDK te repareren en de robot te laten bewegen, hebben we de regel `self.Start()` toegevoegd aan de `Move()`-functie van het bestand **g1_loco_client.py**.
+
+**Over ROS 2**
+
+- Packages gebouwd uit de **unitree_ros2**-repository, inclusief **CycloneDDS**-ondersteuning.
+- De bestanden van het gebouwde pakket gesourced om ze toe te voegen aan de ROS 2-omgeving.
+- Onder de voorbeelden:
+  - Controllerstatistieken succesvol ontvangen.
+  - Voorbeelden met betrekking tot bewegingsstatussen werkten niet (topics zijn leeg).
+- De pakketten kunnen worden gebruikt om je eigen ROS-nodes te maken (ongeacht Python of C++).
+
+<RbGridWrapper columns="2" textAlign="center" align="end">
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/first-entering.webp" alt="Unitree humanoïde robot eerste invoer" />
+  </RbGridElement>
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/cyclonedds-error.webp" alt="Unitree humanoïde robot cyclonedds fout" />
+  </RbGridElement>
+</RbGridWrapper>
+
+## Taakplan
+
+1. **Controleer de mogelijkheid van stroomtoevoer via de kabel.** Misschien bestaat zo'n functie al, we moeten de elektrische documentatie controleren of een geschikte kabel aanschaffen.
+2. **Begrijp de debugmodus voor de SDK.** De documentatie stelt dat deze werkt, maar in de praktijk niet.
+3. **Gebrek aan geavanceerde voorbeelden.** Repositories zijn beperkt tot basisacties (zitten, opstaan, motorbediening). Voor CES 2025 moeten we ofwel eenvoudige oplossingen aanpassen of laag-niveau bewegingsalgoritmen ontwikkelen.
+4. **Keuze van technologie:**
+  - Het hele proces kan worden geïmplementeerd in **Python**, inclusief integratie met Robonomics.
+  - Het is echter beter om **ROS 2** te gebruiken voor structuur en schaalbaarheid.
+5. **Bestudeer methoden voor versterkend leren** voor mogelijk gebruik bij robotbesturing.
+
+## Nuttige links
+
+- Hoofdrepository: [https://github.com/unitreerobotics](https://github.com/unitreerobotics)   
+- Python SDK: [https://github.com/unitreerobotics/unitree_sdk2_python](https://github.com/unitreerobotics/unitree_sdk2_python)   
+- ROS 2 packages: [https://github.com/unitreerobotics/unitree_ros2](https://github.com/unitreerobotics/unitree_ros2)
+

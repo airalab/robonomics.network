@@ -1,0 +1,71 @@
+---
+title: Otaberu - Open-Source Tool voor het Beheren van P2P Netwerken voor Edge Devices en Robotica
+date: 2024-10-19
+published: true
+locale: 'nl'
+tags: ['Announcements']
+cover_image: /blog/images/otaberu-part-1/cover.png
+description: "De snelle groei van het aantal apparaten creëert nieuwe uitdagingen op het gebied van beschikbaarheid en beveiliging. Een efficiëntere oplossing is nodig voor veilige communicatie tussen apparaten die de beperkingen van SSH-gebaseerde PKI aanpakken. Robot-agent Otaberu biedt deze oplossing door een aangepaste PKI voor robots mogelijk te maken met moderne libP2P-standaarden en protocollen."
+abstract: "De snelle groei van het aantal apparaten creëert nieuwe uitdagingen op het gebied van beschikbaarheid en beveiliging. Een efficiëntere oplossing is nodig voor veilige communicatie tussen apparaten die de beperkingen van SSH-gebaseerde PKI aanpakken. Robot-agent Otaberu biedt deze oplossing door een aangepaste PKI voor robots mogelijk te maken met moderne libP2P-standaarden en protocollen."
+---
+
+Aan het begin van het computertijdperk gebruikten meerdere mensen één computer. Tegenwoordig neemt het aantal apparaten om ons heen exponentieel toe, en het is gebruikelijk dat elke persoon twee, drie of meer apparaten heeft. Bedrijven bezitten honderden of duizenden apparaten die samen vloten vormen, en binnenkort zal het voor veel mensen normaal zijn om een vloot apparaten te beheren ter grootte van een klein bedrijf. Dit leidt tot een groeiende behoefte aan eenvoudige maar effectieve tools om de communicatie tussen deze apparaten te beveiligen, voorbij de beperkingen van traditionele methoden zoals SSH.
+
+Wij introduceren [otaberu](https://github.com/airalab/otaberu) - een open-source tool die peer-to-peer (P2P) netwerken voor edge devices en robotica faciliteert. Deze tool richt zich op toegankelijkheid, waardoor robots en edge devices naadloos lokaal of wereldwijd verbinding kunnen maken zonder uitgebreide netwerkconfiguratie. Uitgebracht onder de MIT-licentie, biedt deze tool de beveiliging en transparantie die ontwikkelaars van kritische fysieke infrastructuurprojecten echt nodig hebben. Of je nu een klein roboticalab beheert of een vloot van miljoenen apparaten, deze P2P-oplossing is ontworpen om zich aan te passen aan jouw behoeften. Het maakt wereldwijde communicatie mogelijk met een ingebouwde Public Key Infrastructure (PKI), waardoor eenvoudig gewisseld kan worden tussen lokale en wereldwijde operaties zonder handmatige herconfiguratie. Het kernprotocol van deze tool is getest in enkele van de grootste gedistribueerde systemen, wat robuustheid en betrouwbaarheid garandeert.
+
+<YouTube id="https://www.youtube.com/watch?v=2ZKs4cWMLTE" posterQuality="max"/>
+
+*Deze korte videodemonstratie toont de mogelijkheden van otaberu met de Boston Dynamics Spot-robot.*
+
+Belangrijkste kenmerken
+Toegangsbeheer
+Er zijn drie veelgebruikte methoden voor toegangsbewaking bij computers. De eerste - het gebruik van wachtwoorden - is kenmerkend voor onervaren gebruikers. Het is de zwakste methode qua beveiliging. De tweede - autorisatie via een cryptografische sleutel - wordt doorgaans gebruikt door IT-specialisten in de meeste organisaties. Het vereist al enige systeembeheervaardigheden van gebruikers voor het uitgeven, opslaan en waarborgen van de beveiliging van deze sleutels, omdat ze meestal op de harde schijf worden opgeslagen. En tenslotte is de meest veilige methode autorisatie via certificaten. Het onderhouden van zo'n systeem vereist doorgaans extra diensten die geconfigureerd moeten worden. Het is de meest complexe methode, vereist hoge kwalificaties en wordt voornamelijk gebruikt door grote IT-bedrijven zoals Facebook, Amazon, Netflix, voor wie het onderhouden van IT-infrastructuur direct gerelateerd is aan de waarde die zij aan hun klanten bieden.
+
+Otaberu heeft als doel gewone ontwikkelaars het hoogste niveau van bescherming te bieden zonder complexe geheimenbeheer-diensten en diepgaande netwerkinformatie. De tool maakt het mogelijk om een CA (Certificate Authority) analogie te creëren op basis van de cryptografische sleutels van de eigenaar van de robotvloot. De rol van CA in Otaberu wordt vervuld door de eigenaar - de eerste en belangrijkste rol in de set van Otaberu-functies. De eigenaar beschikt over een enkel configuratiebestand voor zijn robotvloot, waarmee het toegangsbeheer wordt uitgevoerd. Daarin somt de eigenaar al zijn robots op, hun sleutels en metadata, en de gebruikers die bevoegd zijn om verbinding te maken. Ons team heeft ook een commandoregeltool ontwikkeld, genaamd rn-cli, om het configuratiebestand te maken en te bewerken met behulp van een terminalinterface. De mogelijkheid om een terminalinterface te starten is vooral belangrijk voor apparaten zonder grafisch display, zoals remote computers of single-board computers met beperkte middelen.
+
+<RbImage zoom src="/blog/images/otaberu-part-1/otaberu-tui-1.png" alt="Otaberu TUI Gebruikersinterface" />
+
+Terminal Gebruikersinterface - Gebruikers
+
+<RbImage zoom src="/blog/images/otaberu-part-1/otaberu-tui-2.png" alt="Otaberu TUI Robots Interface" />
+
+Terminal Gebruikersinterface - Robots
+
+Netwerk Toegankelijkheid
+In het artikel Secure Robotics Remote Control: Robonomics Solution hebben we voor het eerst het aspect van een veilige verbinding met robots besproken, de problemen die zich voordoen in de vorm van NAT, en wat de Web3-wereld hierin kan bieden, waarbij we kort de libP2P-bibliotheek noemden.
+
+In het algemeen is libP2P niet precies een bibliotheek, zoals het vaak wordt genoemd. De aard ervan is dubbel. Enerzijds vertegenwoordigt libP2P een zogenaamde netwerkstack of een set specificaties. In dit opzicht lijkt het meer op het internet dan op een specifiek softwareproject.
+
+De legendarische klassieker van de open-sourcebeweging, maker van ZeroMQ Peter Hintjens, schreef in zijn boek "Social Architecture":
+
+> De innovatieve aard van het internet komt niet van een klein select groepje Einstein’s. Het komt van RFC's die iedereen kan gebruiken en verbeteren, gemaakt door honderden en duizenden slimme, maar niet uniek slimme, individuen. Het komt van open-source software die iedereen kan gebruiken en verbeteren. Het komt van delen, remixeren en de schaal van de gemeenschap. Het komt van de voortdurende aanwas van goede oplossingen en het afstoten van slechte.
+
+In de kern van libP2P bevinden zich verschillende documenten of specificaties die formaten, protocollen en conventies standaardiseren en voorschrijven hoe verschillende P2P-technologieën zouden moeten werken. Het tweede aspect van libP2P, of de periferie van deze stack, bestaat uit bibliotheken die deze standaarden implementeren. Deze bibliotheken zijn geschreven in verschillende programmeertalen (momenteel bestaan er implementaties in Go, Rust, TypeScript, Nim, C++, Swift, Kotlin/JVM, Python en zijn ze actief in ontwikkeling) of frameworks. Toch zijn ze allemaal compatibel met elkaar als ze dezelfde set van standaarden en het gebruikte protocol ondersteunen.
+
+De zorgvuldig ontworpen oorspronkelijke architectuur van libP2P maakt het gebruik van verschillende transportopties mogelijk (tcp, quic, websocket), routering en NAT-traversal (autonat, circuit-relay-v2, hole-punching), veilige verbinding (tls, noise), node-ontdekking (bootstrap, random-walk, mdns-discovery, rendezvous), berichttransmissieprotocollen, gegevensstroommultiplexing en andere tools voor het creëren van peer-to-peer-netwerken. Gedetailleerde informatie kan worden verkregen op de [libp2p.io implementatiepagina](https://libP2P.io/implementations/).
+
+Met behulp van libP2P vereenvoudigt Otaberu de apparaatverbinding zonder complexe netwerkconfiguraties. Apparaten zonder directe internettoegang kunnen verbinding maken met andere apparaten in het lokale netwerk en updates ontvangen van het wereldwijde netwerk. Door deze technologieën te combineren, maakt deze tool de efficiënte zelforganisatie van robots en edge-apparaten in samenhangende netwerken mogelijk, ongeacht of ze zich in dezelfde fysieke ruimte bevinden of wereldwijd verspreid zijn.
+
+## Toepassingsgebieden
+
+De mogelijkheden van deze tool zijn uitgebreid en bieden oplossingen voor verschillende netwerkuitdagingen in edge-apparaten en robotica:
+
+- **CI/CD-pijplijnen voor Robotica-ontwikkeling**: Automatiseer de CI/CD-processen binnen de robotvloot. Deze tool ondersteunt het efficiënt bijwerken van software over meerdere knooppunten, waardoor ontwikkelings- en implementatiecycli worden gestroomlijnd.
+- **Gegevensstroompijplijnen**: Zet betrouwbare communicatie op voor gegevensverzameling en verwerking binnen een vloot. Dit leidt tot consistente inzichten uit de gegevens die door verschillende edge-apparaten worden gegenereerd, wat helpt om gegevens uit silo's te halen.
+- **Configuratie-updates zonder internettoegang**: Een praktisch voorbeeld is een robot die een bijgewerkte configuratie ontvangt van een cloudservice en deze vervolgens lokaal deelt met andere robots in het netwerk. Deze benadering maakt het mogelijk om robots zonder internetverbinding up-to-date te houden zonder directe internetverbinding.
+
+### Toekomstige Verbeteringen
+
+We werken actief aan het uitbreiden van de functionaliteit van deze P2P-tool:
+
+- **Toegangscontrolelijsten (ACL's)**: Het introduceren van gebruikersgebaseerde toegangscontrole om verschillende niveaus van machtigingen in te stellen. Dit stelt systeembeheerders, ontwikkelaars en eindgebruikers in staat om met specifieke robots of functionaliteiten te werken op basis van hun rol.
+- **Geoptimaliseerde Gegevensstreaming**: Het implementeren van directe verbindingen na de initiële ontdekking via libP2P om de videostreamingprestaties te verbeteren en de beschikbare bandbreedte te optimaliseren voor video-intensieve toepassingen.
+
+### Blijf Geïnformeerd
+
+Dit bericht maakt deel uit van onze doorlopende serie over moderne softwareontwikkeling voor robotica. Toekomstige artikelen zullen onder andere discussies bevatten over de integratie van PKI in robotica, effectieve CI/CD-strategieën en best practices voor de integratie van deze tool met ROS 2 (Robot Operating System). Voor ontwikkelaars die geïnteresseerd zijn in het bouwen van gedistribueerde systemen, het beheren van robotica-netwerken of het uitbreiden van vlootcapaciteiten, is deze tool ontworpen om waarde te bieden en uw operaties te vereenvoudigen. We moedigen u aan om de open-source repository te verkennen en bij te dragen aan de ontwikkeling ervan. We ontvangen graag uw feedback op Github of Discord.
+
+**Begin Aan De Slag**: Toegang tot onze open-source repository [hier](https://github.com/airalab/otaberu) en volg de documentatie om uw eerste P2P-netwerk op te zetten.
+
+
+

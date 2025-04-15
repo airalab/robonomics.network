@@ -1,58 +1,45 @@
 name: Robonomics Network
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: ['master']
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: ['20']
+
+    permissions:
+      contents: write
+
     steps:
-      # Step 1: Checkout repository with full commit history
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      # Step 2: Get the list of updated files since the last commit
-      - name: Get changes
-        id: changes
-        run: |
-          # Check if HEAD~1 exists (this avoids issues in shallow clones)
-          if git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
-            echo "Fetching updated files"
-            git diff --name-only HEAD~1 HEAD > updated_files.txt
-          else
-            echo "No previous commit or shallow clone detected, skipping diff."
-            echo "" > updated_files.txt  # No files to update
-          fi
-
-      # Step 3: Setup Node.js environment
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'  
 
-      # Step 4: Install dependencies and build project
-      - name: Install and Build 🔧
-        run: |
-          sudo npm install --global @gridsome/cli
-          npm ci
-          export NODE_OPTIONS="--max_old_space_size=4096"
-          echo "Updated files: $(cat updated_files.txt)"
-          UPDATED_FILES=$(cat updated_files.txt)
-          echo $UPDATED_FILES
-          gridsome build
-        env:
-          FORM_SCRIPT: ${{ secrets.FORM_SCRIPT }}
-          GRIDSOME_RECAPTCHA: ${{ secrets.GRIDSOME_RECAPTCHA }}
-          GRIDSOME_CONTACTS_FORM_SCRIPT: ${{ secrets.GRIDSOME_CONTACTS_FORM_SCRIPT }}
-          GRIDSOME_RENT_KEY: ${{ secrets.GRIDSOME_RENT_KEY }}
+      - name: Install packages
+        run: yarn install 
 
-      # Step 5: Deploy to GitHub Pages
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Run yarn build
+        run: yarn build  
+        env: 
+          PUBLIC_RECAPTCHA: ${{ secrets.PUBLIC_RECAPTCHA }}
+          PUBLIC_CONTACTS_FORM_SCRIPT: ${{ secrets.PUBLIC_CONTACTS_FORM_SCRIPT }}
+          PUBLIC_RENT_KEY: ${{ secrets.PUBLIC_RENT_KEY }}
+
+      - name: Add .nojekyll file
+        run: touch dist/.nojekyll
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           cname: robonomics.network

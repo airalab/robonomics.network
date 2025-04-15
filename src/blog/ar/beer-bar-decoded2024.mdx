@@ -1,0 +1,231 @@
+---
+title: التجربة مع حانة البيرة في Polkadot Decoded 2024
+date: 2024-07-19
+published: true
+locale: 'ar'
+tags: ['الفعاليات', 'Polkadot', 'Web3']
+cover_image: /blog/images/beer-bar-decoded2024/cover.png
+description: 'في الأسبوع الماضي، زار فريق Robonomics حدث Polkadot Decoded في بروكسل. قاموا بتجربة لقياس قراءات مختلفة من الحساسات حول جناح البيرة المجانية من ChaosDAO. أراد الفريق معرفة كم شخص حضر وكم كانوا مهتمين بالحانة. اقرأ هذه المقالة لمعرفة ما اكتشفوه.'
+---
+
+في الأسبوع الماضي، زار فريق Robonomics حدث Polkadot Decoded في بروكسل. قاموا بتجربة لقياس قراءات مختلفة من الحساسات حول 
+[**جناح البيرة المجانية من ChaosDAO**](https://polkadot.polkassembly.io/referenda/821). أراد الفريق معرفة كم شخص حضر وكم كانوا مهتمين بالحانة. اقرأ هذه المقالة لمعرفة ما اكتشفوه.
+
+## المعدات
+
+للتجربة، تم اختيار مجموعة من الحساسات:
+
+- حساسات درجة الحرارة والرطوبة
+- حساسات الحركة
+- حساسات الأبواب
+- حساس جودة الهواء
+- عداد ميم للبيرة على شكل مصباح وزرين
+
+تم استخدام Raspberry Pi 4 مع Home Assistant مثبت وتكامل Robonomics لحفظ جميع البيانات في سحابة Web3. 
+في نهاية المقال، ستجد وصفًا لكيفية الحصول على هذه البيانات.
+
+## التثبيت
+
+هكذا كانت تبدو الحانة:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/bar.jpg" alt="حانة بيرة" /> 
+
+المنضدة الرئيسية حيث تم توزيع البيرة. خلف العداد، كان هناك صنبور وثلاجتان بمشروبات. 
+كما كانت هناك كنب صغيرة وبلايستيشن 1 مع ألعاب سباق على اليمين.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/play-zone.jpg" alt="منطقة اللعب" /> 
+
+تناسبت حساسات الأبواب بشكل مثالي على الثلاجات. مما سمح لنا بعد الاحتساب كم مرة تم فتحها لاخراج زجاجة.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/fridges.jpg" alt="ثلاجات" />
+
+تم تثبيت حساس الحركة في منطقة البلايستيشن بحيث يتم تنشيطه فقط عند اقتراب شخص من التلفازلتشغيل يد تحكم اللعبة:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/sofas.jpg" alt="منطقة PlayStation" />
+
+تم أيضًا وضع مستشعر حركة عند البار الرئيسي وتوجيهه للتنشيط فقط عندما يكون شخص مباشرة عند البار. 
+يمكن رؤيته على اليسار على العمود. تم تثبيت مستشعر درجة الحرارة والرطوبة أيضًا بالقرب منه:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/column.jpg" alt="تثبيت مستشعر الحركة" />
+
+تم وضع العديد من مستشعرات الحرارة داخل البار وعند نقطة تحضير القهوة التي كانت بالقرب منه.
+
+تم أيضًا تثبيت عداد ميم للبيرة، الذي سيضيء باللون الأخضر لمدة 5 ثوانٍ إذا تم الضغط على زر "البيرة"، أو باللون الأحمر إذا تم الضغط على زر "عدم الضغط":
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/mem-beer.jpg" alt="عداد ميم للبيرة" />
+
+## البيانات المحصل عليها
+
+**إخلاء المسؤولية: في هذا القسم، ستُعرض جميع البيانات في واجهة Home Assistant لتصور مريح.** 
+يمكن الحصول على نفس البعد من سلسلة Robonomics ومقارنته. سيتم توفير التعليمات لاحقًا.
+
+فترة الدراسة: خلال فترة الدراسة، سنأخذ الوقت من الساعة 16:00 يوم 11 يوليو إلى الساعة 20:00 يوم 12 يوليو، والتي تتوافق مع نصف اليوم الأول من 
+Decoded واليوم الثاني بالكامل.
+
+من المهم أيضًا توضيح أن البار افتتح في الساعة 12 ظهرًا، مما يحد من الفترة القابلة للقياس أيضًا.
+
+### درجة الحرارة والرطوبة
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temperature.jpg" alt="مستشعر الحرارة" />
+
+اليوم الأول (11 يوليو) - كما يمكن رؤيته من الرسوم البيانية، تم الحفاظ على درجة حرارة مريحة تتراوح بين 25-27 درجة داخل المبنى.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp11.png" alt="درجة الحرارة في اليوم 11" />
+
+اليوم الثاني (12 يوليو) - انخفضت درجة الحرارة بضع درجات ولكنها ظلت مريحة.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp12.png" alt="درجة الحرارة في اليوم 12" />
+
+انخفاض درجة الحرارة مرتبط بالأمطار في اليوم الثاني، والتي يمكن رؤيتها بوضوح على الرسوم البيانية للرطوبة. زادت الرطوبة بنسبة 10-15%. اليوم الأول:11.png" alt="الرطوبة في اليوم الحادي عشر" />
+
+اليوم الثاني:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum12.png" alt="الرطوبة في اليوم الثاني عشر" />
+
+### أجهزة الاستشعار الحركي
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motion-sesnors.jpg" alt="جهاز استشعار الحركة" />
+
+اللون الأصفر يشير إلى الوقت الذي كان فيه شخص ما بالقرب من البار، واللون الرمادي - عندما لم يكن هناك أشخاص. جهاز استشعار الحركة في البار - اليوم الأول:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar11.png" alt="جهاز استشعار الحركة في البار في اليوم الحادي عشر" />
+
+اليوم الثاني:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar12.png" alt="جهاز استشعار الحركة في البار في اليوم الثاني عشر" />
+
+ومنطقة بلايستيشن - اليوم الأول:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay11.png" alt="جهاز استشعار الحركة في منطقة اللعب في اليوم الحادي عشر" />
+
+اليوم الثاني:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay12.png" alt="جهاز استشعار الحركة في منطقة اللعب في اليوم الثاني عشر" />
+
+من خلال الأجهزة، يمكننا أن نرى أنه تقريبًا في جميع الأوقات كان البار مفتوحًا، وكان هناك شخص ما يقف عند العداد. 
+أيضًا، تقريبًا نصف الوقت، كان هناك شخص يلعب على البلايستيشن.
+
+### أجهزة الاستشعار على الأبواب
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door-sensors.jpg" alt="أجهزة الاستشعار على الثلاجة" />
+
+رائع، لقد نظرنا إلى المؤشرات العامة حول البار، الآن دعونا نحاول الحصول على بعض الأرقام. لهذا، لدينا أجهزة استشعار على الأبواب. 
+كان هناك 2 ثلاجات. على سبيل المثال في إحداها، دعونا نرى كيفية عدد مرات الفتح.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door.png" alt="مثال على جهاز استشعار الباب" />
+
+بالطبع، يمكنك عد الخطوط الصفراء على هذا الرسم البياني، والتي تمثل اللحظات التي تم فيها فتح الباب. 
+ولكن يمكنك تصدير هذا إلى ملف csv والحصول على ما يلي:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/doorcsv.png" alt="مثال على ملف csv للأبواب" />
+
+هنا، كل صف فردي يظهر وقت تغيير حالة الجهاز. لذلك، بقسمة عدد الصفوف على النصف، يمكنكيمكن الحصول على عدد فتحات الثلاجة.
+ونحصل على الجدول التالي كنتيجة:
+
+|          | ثلاجة 1 | ثلاجة 2 |
+| -------- |--------|---------|
+| اليوم الأول  | 76     | 78      |
+| اليوم الثاني | 111    | 87      |
+| الملخص    | 187    | 165     |
+
+مجموع فتحات الثلاجة 352. ويمكننا القول بثقة أن هذا هو الحد الأدنى لعدد زجاجات البيرة/الماء التي تم أخذها على مدى يومين، حيث يمكن أخذ عدة زجاجات في فتحة واحدة.
+
+### عداد ميمي البيرة
+
+وأخيرًا، عداد ميمي البيرة. تم تثبيته فقط في اليوم الثاني. كان هناك زران، أحدهما مسمى "بيرة" والآخر "لا تضغط". كم مرة تم الضغط على كل زر؟
+
+| بيرة       | لا تضغط |
+|------------|--------------|
+| 83         | 44           |
+
+كما ترون، اختار حوالي ثلثي الأشخاص الزر الصحيح.
+
+## التحقق من البيانات
+
+لننتقل إلى الحصول على هذه البيانات من سلسلة الكتل. تم تخزين جميع البيانات في سجلات البيانات لهذا الحساب - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". دعونا نفتحه في [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+
+سنرى جميع العمليات الخارجية. دعونا نقوم بتصفيتها حسب التاريخ. سنحصل على حوالي 140 عملية خارجية.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
+
+كل منها يحتوي على معرف IPFS مع بيانات الاستشعار. دعونا نأخذ أي عملية خارجية ونستخرج البيانات منها. 
+على سبيل المثال، [هذه](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+معرف IPFS داخلها - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`ثم كل ما عليك فعله هو استخدام هذا النص لفك تشفير البيانات. استبدل معرف IPFS CID في السطر 11 بالذي تحتاجه:
+
+```
+import requests
+from substrateinterface import Keypair, KeypairType
+from robonomicsinterface import Account
+import typing as tp
+import json
+import os
+
+ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
+IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
+
+def decrypt_message(data: tp.Union[str, dict]) -> str:
+
+    """فك تشفير الرسالة التي تم تشفيرها للأجهزة
+    :param data: البيانات المشفرة
+    :param sender_address: عنوان المرسل
+    :param recipient_keypair: مفتاح الحساب المستلم
+
+    :return: الرسالة المفككة
+    """
+    try:
+        account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+        admin_keypair = account.keypair
+        print(account.get_address())
+        sender_public_key = admin_keypair.public_key
+        if isinstance(data, str):
+            data_json = json.loads(data)
+        else:
+            data
+        if admin_keypair.ss58_address in data_json:
+            decrypted_seed = _decrypt_message(
+                data_json[admin_keypair.ss58_address],
+                sender_public_key,
+                admin_keypair,
+            ).decode("utf-8")
+            decrypted_acc = Account(decrypted_seed, crypto_type=KeypairType.ED25519)
+            decrypted_data = _decrypt_message(data_json["data"], sender_public_key, decrypted_acc.keypair).decode(
+                "utf-8"
+            )
+            return decrypted_data
+        else:
+            print(f"خطأ في فك تشفير الأجهزة: الحساب غير موجود في الأجهزة")
+    except Exception as e:
+        print(e)
+
+def _decrypt_message(encrypted_message: str, sender_public_key: bytes, admin_keypair) -> str:
+    """فك تشفير الرسالة باستخدام مفتاح خاص للمستلم ومفتاح عام للمرسل
+    :param encrypted_message: الرسالة المراد فك تشفيرها
+    :param sender_public_key: مفتاح عام للمرسل
+
+    :return: الرسالة المفككة
+    """
+    if encrypted_message[:2] == "0x":
+        encrypted_message = encrypted_message[2:]
+    bytes_encrypted= bytes.fromhex(encrypted_message)
+    return admin_keypair.decrypt_message(bytes_encrypted, sender_public_key)
+
+def main():
+    account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+    admin_keypair = account.keypair
+    response = requests.get(f"<https://gateway.pinata.cloud/ipfs/{IPFS_HASH}>")
+    print(response)
+    with open("telemetry.txt", "w") as f:
+        decrypted_content = decrypt_message(response.text)
+        print(decrypted_content)
+        f.write(decrypted_content)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+ونتيجة لذلك، ستحصل على ملف "telemetry.txt" بداخله json. سيحتوي على جميع البيانات نفسها التي قمنا بمراجعتها سابقًا. ستحتاج فقط إلى تحليلها.
+
+## الاستنتاجات
+
+بفضل كل هذه المؤشرات، يمكننا القول إن فكرة "البيرة المجانية" من ChaosDAO كانت ناجحة، واستخدم الناس بنشاط، حتى وإن لم تنفد البيرة. وبفضل الحساسات وفريق Robonomics، يمكنك رؤية المؤشرات الكمية والنوعية لهذا الحدث مع البيانات المحفوظة في شبكة Kusama.

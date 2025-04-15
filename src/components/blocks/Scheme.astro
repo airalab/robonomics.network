@@ -1,0 +1,95 @@
+<div class="scheme">
+  <div class="scheme-item animate"><div>{$tr('User (D)App')}</div></div>
+
+  <div class="scheme-a animate-inside">
+    <div class="scheme-a-right">
+      <span>{$tr('Function request')}</span>
+      <span aria-hidden="true" class="arrow">---------------&gt;</span>
+    </div>
+    <div class="scheme-a-left">
+      <span>{$tr('Report')}</span>
+      <span aria-hidden="true" class="arrow">&lt;---------------</span>
+    </div>
+  </div>
+
+  <div class="scheme-item animate"><div>{$tr('Digital twin')}</div></div>
+
+  <div class="scheme-a animate-inside">
+    <div class="scheme-a-right">
+      <span>{$tr('Control')}</span>
+      <span aria-hidden="true" class="arrow">---------------></span>
+    </div>
+    <div class="scheme-a-left">
+      <span>{$tr('Log')}</span>
+      <span aria-hidden="true" class="arrow">&lt;---------------</span>
+    </div>
+  </div>
+
+  <div class="scheme-item animate"><div>{$tr('IoT Device')}</div></div>
+</div>
+
+
+
+<style>
+  .scheme {
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr 150px 1fr;
+    gap: var(--space);
+    align-items: stretch;
+    align-content: center;
+    justify-items: stretch;
+    justify-content: space-between;
+    margin: calc(var(--space)*2) 0 0;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .scheme > * {
+    display: grid;
+    align-content: center;
+  }
+
+  .scheme-item {
+    min-height: 150px;
+    border: 1px dashed var(--color-blue-light);
+    padding: var(--space);
+  }
+
+  .scheme-a {
+    font-size: 60%;
+    color: var(--color-blue-light);
+  }
+
+  .scheme-a span {
+    display: block;
+  }
+
+  .scheme-a .arrow {
+    white-space: nowrap;
+  }
+
+  .scheme-a-left {
+    color: var(--color-pink);
+  }
+
+  @media screen and (max-width: 1200px) {
+    .scheme {
+      gap: 0;
+      grid-template-columns: 1fr 120px 1fr 120px 1fr;
+      font-size: 80%;
+    }
+  }
+
+  @media screen and (max-width: 786px) {
+    .scheme {
+      grid-template-columns: 1fr;
+      gap: calc(var(--space)*2);
+    }
+
+    .scheme .scheme-a {
+      font-size: 80%;
+      transform: rotate(90deg);
+    }
+  }
+</style>
