@@ -1,0 +1,229 @@
+---
+title: ポルカドットデコード2024のビールバーでの実験
+date: 2024-07-19
+published: true
+locale: 'ja'
+tags: ['イベント', 'Polkadot', 'Web3', ]
+cover_image: /blog/images/beer-bar-decoded2024/cover.png
+description: '先週、Robonomicsチームはブリュッセルで開催されたポルカドットデコードイベントを訪れました。彼らはChaosDAOのFree Beer Stand周りのセンサーから異なる読み取り値を測定する実験を行いました。チームは、どれだけ多くの人が参加し、バーにどれだけ興味を持っているかを知りたかったのです。彼らが発見したことを知るために、この記事を読んでください。'
+---
+
+先週、Robonomicsチームはブリュッセルで開催されたポルカドットデコードイベントを訪れました。彼らはChaosDAOの[**Free Beer Stand**](https://polkadot.polkassembly.io/referenda/821)周りの異なる読み取り値を測定する実験を行いました。チームは、どれだけ多くの人が参加し、バーにどれだけ興味を持っているかを知りたかったのです。彼らが発見したことを知るために、この記事を読んでください。
+
+## 装備
+
+実験には、以下のセンサーが選ばれました：
+
+- 温度および湿度センサー
+- モーションセンサー
+- ドアセンサー
+- 空気品質センサー
+- ビールミームカウンター（電球と2つのボタンの形をしています）
+
+Raspberry Pi 4にHome Assistantがインストールされ、Robonomics統合が使用され、すべてのデータがWeb3クラウドに保存されました。記事の最後に、このデータを取得する方法の説明が表示されます。
+
+## インストール
+
+こちらがバーの外観です：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/bar.jpg" alt="ビールバー" /> 
+
+ビールが提供されていたメインカウンター。カウンターの後ろには、タップと飲み物が入った冷蔵庫が2つありました。右側には小さなソファとレーシングゲームが入ったPlayStation 1もありました。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/play-zone.jpg" alt="プレイゾーン" /> 
+
+ドアセンサーは冷蔵庫に完璧に取り付けられていました。これにより、ボトルを取り出すために何回開かれたかを数えることができました。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/fridges.jpg" />
+
+プレイステーションエリアにはモーションセンサーが取り付けられており、TVに近づくとトリガーされるようになっていました。ゲームパッドを取る：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/sofas.jpg" alt="PlayStationゾーン" />
+
+メインバーカウンターにはモーションセンサーも設置され、カウンターに直接人がいるときのみトリガーされるように向きを調整されました。
+それは左の柱に見ることができます。 近くには温度および湿度センサーも設置されました：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/column.jpg" alt="モーションセンサーの設置" />
+
+さらに、複数の温度センサーがバーカウンターや近くのコーヒースポットに設置されました。
+
+ビールミームカウンターも設置され、"ビール"ボタンが押されると5秒間緑色に点灯し、"押さないで"ボタンが押されると赤色に点灯します：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/mem-beer.jpg" alt="mem-beerカウンター" />
+
+## 取得したデータ
+
+**免責事項：このセクションでは、すべてのデータがホームアシスタントインターフェースに表示され、便利な視覚化が行われます。**
+この同じデータはRobonomicsパラチェーンから取得し比較することができます。手順は後で提供されます。
+
+研究期間：研究期間では、7月11日の16:00から7月12日の20:00までの時間を取ります。これはDecodedの最初の日の半分と2日目全体に相当します。
+
+また、バーは正午に開店したことも重要であり、これは測定可能な間隔を制限します。
+
+### 温度と湿度
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temperature.jpg" alt="温度センサー" />
+
+初日（7月11日）- グラフからわかるように、室内の快適な温度は25〜27度を保ちました。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp11.png" alt="11日の温度" />
+
+2日目（7月12日）- 温度は数度下がりましたが、快適なままでした。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp12.png" alt="12日の温度" />
+
+温度の低下は2日目の雨と関連しており、湿度グラフでも明らかです。湿度は10〜15％増加しました。初日：11.png" alt="湿度11日目" />
+
+2日目：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum12.png" alt="湿度12日目" />
+
+### モーションセンサー
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motion-sesnors.jpg" alt="モーションセンサー" />
+
+黄色は誰かがバーの近くにいた時間を示し、グレーは人がいなかった時間を示します。バーのモーションセンサー - 初日：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar11.png" alt="バーのモーションセンサー11日目" />
+
+2日目：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar12.png" alt="バーのモーションセンサー12日目" />
+
+そして、プレイステーションエリア - 初日：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay11.png" alt="プレイゾーンのモーションセンサー11日目" />
+
+2日目：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay12.png" alt="プレイゾーンのモーションセンサー12日目" />
+
+センサーから、バーがほぼ常に開いているとき、誰かがカウンターに立っていたことがわかります。
+また、ほぼ半分の時間、誰かがプレイステーションで遊んでいました。
+
+### ドアセンサー
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door-sensors.jpg" alt="冷蔵庫のドアセンサー" />
+
+素晴らしいですね、バー周辺の一般的な指標を見てきましたが、さて、数値を取得してみましょう。そのために、ドアセンサーがあります。
+冷蔵庫が2台ありました。そのうちの1つの例を見て、開閉回数を数える方法を見てみましょう。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door.png" alt="ドアセンサーの例" />
+
+もちろん、このグラフ上の黄色いストライプの数を数えることもできます。それはドアが開いた瞬間を示しています。
+しかし、これをcsvファイルにエクスポートして次のように取得することもできます：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/doorcsv.png" alt="ドアのcsv例" />
+
+ここでは、各個々の行がセンサーの状態変更の時間を示しています。したがって、単純に行数を半分に分けることで、
+冷蔵庫の開閉回数を取得できます。
+その結果、次の表を取得します：
+
+|          | 冷蔵庫1 | 冷蔵庫2 |
+| -------- |--------|---------|
+| 初日      | 76     | 78      |
+| 2日目     | 111    | 87      |
+| 合計      | 187    | 165     |
+
+合計352回の冷蔵庫の開閉がありました。そして、これが2日間に取られたビール/水のボトルの数の下限であると断言できます。1回のドアの開閉で複数のボトルが取られる可能性があるためです。
+
+### ビール ミームカウンター
+
+最後に、ビールミームカウンターです。これは2日目にのみ設置されました。2つのボタンがあり、「ビール」と書かれたものと「押さないで」と書かれたものです。それぞれのボタンが何回押されたか？
+
+| ビール      | 押さないで   |
+|------------|--------------|
+| 83         | 44           |
+
+約3分の2の人々が正しいボタンを選択したことがわかります。
+
+## データの検証
+
+次に、このデータをブロックチェーンから取得しましょう。すべてのデータはこのアカウントのデータログに保存されています - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”。[Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB)で開いてみましょう。
+
+すべてのエクストリンシックを見ることができます。日付でフィルタリングしてみましょう。約140のエクストリンシックを取得します。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
+
+それぞれにはテレメトリーが含まれるIPFS CIDがあります。任意のエクストリンシックを取り、そのデータを抽出しましょう。たとえば、[このエクストリンシック](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7)。その中に含まれるIPFS CIDは `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX` です。fdUVdpJ4c3`。
+
+次に、このスクリプトを使用してデータを復号化する必要があります。必要なIPFS CIDで11行目のIPFS CIDを置き換えてください：
+
+```
+import requests
+from substrateinterface import Keypair, KeypairType
+from robonomicsinterface import Account
+import typing as tp
+import json
+import os
+
+ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
+IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
+
+def decrypt_message(data: tp.Union[str, dict]) -> str:
+
+    """デバイス向けに暗号化されたメッセージを復号化する
+    :param data: 暗号化されたデータ
+    :param sender_address: 送信者のアドレス
+    :param recipient_keypair: 受信者アカウントのキーペア
+
+    :return: 復号化されたメッセージ
+    """
+    try:
+        account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+        admin_keypair = account.keypair
+        print(account.get_address())
+        sender_public_key = admin_keypair.public_key
+        if isinstance(data, str):
+            data_json = json.loads(data)
+        else:
+            data
+        if admin_keypair.ss58_address in data_json:
+            decrypted_seed = _decrypt_message(
+                data_json[admin_keypair.ss58_address],
+                sender_public_key,
+                admin_keypair,
+            ).decode("utf-8")
+            decrypted_acc = Account(decrypted_seed, crypto_type=KeypairType.ED25519)
+            decrypted_data = _decrypt_message(data_json["data"], sender_public_key, decrypted_acc.keypair).decode(
+                "utf-8"
+            )
+            return decrypted_data
+        else:
+            print(f"デバイスの復号化中にエラーが発生しました：アカウントがデバイスに存在しません")
+    except Exception as e:
+        print(e)
+
+def _decrypt_message(encrypted_message: str, sender_public_key: bytes, admin_keypair) -> str:
+    """受信者の秘密鍵と送信者の公開鍵でメッセージを復号化する
+    :param encrypted_message: 復号化するメッセージ
+    :param sender_public_key: 送信者の公開鍵
+
+    :return: 復号化されたメッセージ
+    """
+    if encrypted_message[:2] == "0x":
+        encrypted_message = encrypted_message[2:]
+    bytes_encrypted```ja
+= bytes.fromhex(encrypted_message)
+    return admin_keypair.decrypt_message(bytes_encrypted, sender_public_key)
+
+def main():
+    account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+    admin_keypair = account.keypair
+    response = requests.get(f"<https://gateway.pinata.cloud/ipfs/{IPFS_HASH}>")
+    print(response)
+    with open("telemetry.txt", "w") as f:
+        decrypted_content = decrypt_message(response.text)
+        print(decrypted_content)
+        f.write(decrypted_content)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+その結果、jsonが含まれた「telemetry.txt」ファイルが生成されます。上記で確認したデータと同じデータが含まれます。解析する必要があります。
+
+## 結論
+
+これらの指標のおかげで、ChaosDAOからの「無料ビール」というアイデアが成功したと言えます。人々は積極的に利用しましたが、ビールがなくならなかったこともあります。センサーとRobonomicsチームのおかげで、Kusamaネットワークに保存されたデータでこのイベントの数量および質的指標を確認できます。

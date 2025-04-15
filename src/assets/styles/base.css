@@ -1,0 +1,71 @@
+body, html{
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+body {
+ 	color: var(--text-color);
+ 	font-family: "Roboto", system-ui, sans-serif;
+	line-height: 1.5;
+  background-color: var(--body-bg);
+  transition: color .6s, background-color .6s;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+  height: auto;
+}
+
+.blog_grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space);
+}
+
+@media screen and (max-width: 970px) {
+  .blog_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .blog_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* for pagination icons */
+@font-face {
+  font-family: 'customIcons';
+  src: url('../fonts/icomoon.woff');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* kusama-slot page */
+
+.light-theme .theme-support-light {
+  display: initial !important;
+}
+
+/* arabic */
+html[dir="rtl"] h1, html[dir="rtl"] h2,html[dir="rtl"] h3,html[dir="rtl"] h4,html[dir="rtl"] h5,html[lang="ar"] h6,html[dir="rtl"] p,html[dir="rtl"] a,html[dir="rtl"] span {
+  unicode-bidi: embed;
+}
+
+html[dir="rtl"] h1, html[dir="rtl"] h2,html[dir="rtl"] h3,html[dir="rtl"] h4,html[dir="rtl"] h5 {
+  text-align: right !important;
+}
+
+/* html[dir="rtl"] p {
+  text-align: end;
+} */
+

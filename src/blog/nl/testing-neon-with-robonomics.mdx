@@ -1,0 +1,166 @@
+---
+title: Testen van Neon EVM met Robonomics Smart Contracts
+date: 2022-10-03
+published: true
+locale: 'nl'
+tags: ['Robonomics in Ethereum', 'Samenwerkingen', 'Smart Contracts', 'Neon']
+cover_image: /blog/images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
+description: "Het doel van deze tests was om de gereedheid van het Neon-platform te valideren om over te gaan naar de productiefase met behulp van Robonomics smart contracts, die cyber-fysieke systemen (robots) in staat stellen technisch-economische transacties uit te voeren."
+abstract: ""
+---
+
+## TL;DR
+
+Het doel van deze tests was om de gereedheid van het [Neon](https://neon-labs.org/) platform te valideren om over te gaan naar de productiefase met behulp van Robonomics smart contracts, die cyber-fysieke systemen (robots) in staat stellen technisch-economische transacties uit te voeren.
+
+In het Robonomics-netwerk wordt interactie tot stand gebracht tussen twee partijen: Promisee - degene die de service bestelt, een beschrijving van de technische taak verzendt en fondsen overmaakt voor de uitvoering ervan; Promisor - degene die de service uitvoert. Er werd een typisch scenario getest, waarbij een aansprakelijkheidscontract werd gesloten tussen een Promisee en een Promisor - gevolgd door validatie van het resulterende werk door een derde partij, en een commissiebetaling aan de node die het contract tussen de partijen begeleidde.
+
+Voor dit voorbeeld werd een simulatie van een robotarm gebruikt, die werd gevraagd een reeks acties uit te voeren. De tests waren succesvol.
+
+## Scope en Doelen van de Testen
+
+Ingenieurs van [Multi-Agent Systems](https://multi-agent.io/) werken al enkele jaren met het [Robonomics Network](https://robonomics.network/). De eerste implementatie van het Robonomics Network werd gemaakt voor het Ethereum-netwerk. Het is een reeks smart contracts voor machine-naar-machine communicatie.
+
+De kern van het Robonomics Network is het [Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol) contract, een smart contract dat de typische relatie tussen de klant van een service (Promisee) en de dienstverlener (Promisor) reproduceert, en de technische en economische parameters van de transactie tussen hen omvat. De partijen kunnen ofwel een autonome agent en een persoon zijn (mens-tot-machine interactie), of puur twee autonome agenten (machine-tot-machine interactie). De Promisee en Promisor zenden berichten uit met de parameters vanhun technisch-economische transactie, en vervolgens wordt de conclusie van de transactie geleverd door een speciale node - de Provider - die op zoek gaat naar overeenkomsten van deze parameters. Providers worden gecontroleerd door [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol), wat een speciaal smart contract is dat een transactie uitvoert wanneer de provider een marktmatch tot stand brengt tussen de partijen.
+
+Er zijn drie scenario's waarin de nakoming van een verplichting kan plaatsvinden:
+
+1. Een eenvoudige verbintenis (zonder verificatie van het eindresultaat en zonder commissie die aan Provider-nodes wordt betaald)
+2. Verplichting met een commissie die aan de Provider wordt betaald
+3. Verbintenis met een commissie aan de Provider en validatie van de resultaten met behulp van een derde partij - waarnemend netwerk.
+
+Het doel van deze test is om het meest complexe, derde Robonomics-scenario op het Neon EVM-platform te testen.
+
+## Beschrijving van Testscenario's
+
+Naarmate we de industriële zones en de infrastructuur van moderne steden ontwikkelen, is het zeer waarschijnlijk dat volledig geautomatiseerde bedrijven en diensten ontstaan die worden aangestuurd door cyber-fysieke systemen (CPS) en die hun diensten verlenen als autonome agenten. In dit verband kunnen we ook verwachten dat er netwerken van autonome CPS worden gevormd om de snelheid en kwaliteit van communicatie in het productie- en dienstverleningsproces te verhogen.
+
+Om optimaal gebruik te maken van de mogelijkheden van smart contracts, is een scenario van interactie tussen twee autonome economische agenten gekozen. Bekijk de aansprakelijkheidslevenscyclus in het Robonomics-netwerk:
+
+![Aansprakelijkheidslevenscyclus](/blog/images/testing-neon-with-robonomics/step-by-step-3.jpg)
+
+De bovenstaande figuur toont dat de Robonomics-netwerkprovider het Lighthouse-contract oproept, dat op zijn beurt de [contractfabriek](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) oproept om het Aansprakelijkheidscontract te creëren. Het Aansprakelijkheidscontract bevat gegevens over de transactie, zoals de taakomschrijving, betaling voor de dienst, validatoradres en de deadline.
+
+Om meer te weten te komen over mogelijke gebruiksscenario's voor Robonomics, bekijk de Robonomics [R&D](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer) pagina!
+
+Om de volledige Robonomics-infrastructuur op het Neon-netwerk te repliceren, zullen we een robots lanceerscenario implementeren via een Aansprakelijkheidscontractvergelijkbaar met dit [voorbeeld](https://wiki.robonomics.network/docs/nl/kuka/). Als het script herhaald kan worden, zullen alle functies werken.
+
+## Opleveringen
+
+De broncode voor de Robonomics-contracten is beschikbaar [hier](https://github.com/airalab/robonomics_contracts).
+De contracten maken gebruik van vele functies van de Ethereum VM, waaronder:
+
+- ERC20 [XRT](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/XRT.sol) Token
+- [Factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)
+- Eigen contract voor [ENS](https://github.com/airalab/robonomics_contracts/blob/master/contracts/ens/ENS.sol)
+- [Proxy](https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/SharedCode.sol) voor contracten
+- Diverse modifiers en rollen in contracten
+
+Adressen van contracten in het Neon devnet-netwerk https://devnet.neonevm.org
+
+| Contractnaam  | Adres                                    |
+|----------------|--------------------------------------------|
+| Migraties     | 0x1DC538bE2C8572509a571B150f11aB55E52EF12E |
+| ENS            | 0xa7AEa12F60D0278F01e14DBC7cc459d04d051406 |
+| DutchAuction   | 0xF44F8803548D72Dbc3E28340EFD7b5328aa4F058 |
+| Aansprakelijkheid      | 0xA694196351dc1488e3884eCc6b650F0d8D55346a |
+| Vuurtoren     | 0x80FB5CC4c396E272b56700E6ffF5DBf4661013A8 |
+| XRT            | 0x3322d7D99cF65Cab5A92073c928b5E9674af3c29 |
+| PublicAmbix    | 0x85c03bE5ccFf11E79a0A776D183eF067590549d1 |
+| Fabriek        | 0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C |
+| PublicResolver | 0xAC9E9AA8A4cB524FE87f2b14489F1D6bE68dc46e |
+
+[Source code](https://github.com/Multi-Agent-io/neon-kuka-demo) voor het scenario
+
+## Wijzigingen aangebracht in de oorspronkelijke contracten
+
+De contracten zijn geschreven voor Solidity 0.5.0. Daarom waren er geen wijzigingen nodig bij het implementeren en gebruiken van de contracten.
+
+## Testworkflow
+
+Over het algemeen bestaat de test uit het verzenden van overeenkomstige berichten van de ene agent naar de andere.
+
+Vervolgens vindt de Promisor een nieuw aansprakelijkheidscontract in het netwerk en begint het uit te voeren. Na voltooiing van het werk wordt een bericht met het resultaat verzonden, dat vervolgens wordt vastgelegd in het contract.
+
+Stapsgewijze instructies voor het starten zijn te vinden in [README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md)
+
+## Gedetailleerde testresultaten
+
+Screencast van het proces
+
+<YouTube id="https://youtu.be/fYJVF7KrNnI" posterQuality="max" />
+
+![Aansprakelijkheid](/blog/images/testing-neon-with-robonomics/liability.jpg)
+
+Bij het starten van de simulatie wordt een aanbiedingsbericht gemaakt en komt er een vraagbericht van de Promisee, waarna een Aansprakelijkheidscontract wordt gemaakt met behulp van de createLiability-functie van het Lighthouse-contract. Met behulp van het XRT-contract worden tokens overgebracht van het adres van de Promisee naar het adres van het Aansprakelijkheidscontract.
+
+Nadat er een nieuw Aansprakelijkheidscontract is ontdekt op het Neon-devnet, begint de agent te werken. Het resultaat van het werk (telemetrie) wordt naar een bestand geschreven en naar IPFS gestuurd, de hash van het bestand wordt opgeslagen als resultaat.
+
+Na voltooiing van het werk wordt het Aansprakelijkheidscontract afgerond met behulp van de finalizeLiability()-functie van het Lighthouse-contract en worden de tokens overgebracht van het adres van de Aansprakelijkheid naar de adressen van de Promisor en Validator.
+
+De succesvolle uitvoering van de simulatie toonde aan dat alle contracten correct werkten en het Neon-platform functioneert.
+
+## Nadelen van het Neon-platform
+
+### Truffle faalt als het geen reactie van het netwerk krijgt
+
+Tijdens het proces van het implementeren van contracten bleek dat de proxy niet altijd op tijd een reactie teruggeeft, waardoor Truffle eindigt met een foutmelding:
+
+<RbCode>
+
+```sh
+TypeError: Kan eigenschappen van null niet lezen (lezen van 'from')                                    
+    bij Web3InterfaceAdapter.(<anoniem>) (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist/adapter/web3/index.js:71:1)                                           
+    bij Generator.next (<anoniem>)                                                          
+    bij voltooid (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
+/adapter/web3/index.js:5:43)                                                                  
+    bij runMicrotasks (<anoniem>)
+    bij processTicksAndRejections (node:internal/process/task_queues:96:5)
+Truffle v5.5.23 (kern: 5.5.23)
+Node v16.14.0
+```
+</RbCode>
+
+Het was niet mogelijk om een relatie te vinden tussen de testvoorwaarden en het optreden van een fout, maar hoogstwaarschijnlijk kan Neon EVM geen transactieontvangst verzenden en kan Truffle geen Null-reactie verwerken.
+
+Als we hier time-out en retry toevoegen [index.ts#L75](https://github.com/trufflesuite/truffle/blob/develop/packages/interface-adapter/lib/adapter/web3/index.ts#L75), dan zou de implementatie zonder fouten moeten verlopen.
+
+### Geen WS/WSS-eindpunt
+
+Neon EVM heeft in tegenstelling tot Ethereum geen WS/WSS-eindpunt, waardoor het onmogelijk is om zich te abonneren op gebeurtenissen vanuit het netwerk. Daarom hebben we tijdens het testen de gebeurtenissen handmatig gecontroleerd.
+
+### Geen gebeurtenisnamen
+
+Neon EVM geeft nogal summiere beschrijvingen van gebeurtenissen na een transactie, bijvoorbeeld:
+
+<RbCode>
+
+```sh
+ gebeurtenissen: {
+    '0': {
+      adres: '0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C',
+      transactiehash: '0x9894a984e6b3f6ce469c8837e11739f6e50d00216cf7c5bc3d32da106a58d50a',
+      transactielogindex: '0x1',
+      blokhash: '0x72040f317d3a469d30327d4e1def903790b70dbede46b4f0ea4f28f30a679a80',
+      bloknummer: 156073183,
+      transactie-index: 0,
+      logindex: 1,
+      id: 'log_e51e2f9f',
+      returnValues: Resultaat {},
+      gebeurtenis: ongedefinieerd,
+      handtekening: null,
+      ruw: [Object]
+    },
+...
+```
+</RbCode>
+
+In plaats van 0, 1, enz. hadden we verwacht om benoemde gebeurtenissen te zien.
+
+## Conclusie
+
+Met behulp van het Neon EVM-platform werd met succes een scenario getest waarbij een aansprakelijkheidscontract tussen een Belovende en een Belover werd afgesloten met daaropvolgende validatie van het resultaat van het werk dat door een derde partij werd verricht. Daarnaast nam een Provider deel, die de overeenkomst van vraag en aanbod tussen de partijen controleerde en hiervoor een commissie ontving.
+
+De demonstratie gebruikte een simulatie van een robotarm die was ingehuurd om een reeks acties uit te voeren. Als resultaat van het werk stuurde de robot een bestand met telemetrie dat tijdens de taak was ontvangen.
+
+Ondanks enkele eigenaardigheden in de werking van het netwerk, toonden alle deelnemende contracten uiteindelijk hun bruikbaarheid in de Neon-omgeving.

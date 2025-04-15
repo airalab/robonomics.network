@@ -1,0 +1,73 @@
+---
+title: "Datenharvester-Projekt: April-Bericht"
+date: 2024-04-11
+published: true
+locale: 'de'
+cover_image: /blog/images/data-harvester-report-april-2024/cover.png
+description: "Das Robonomics-Team entwickelt die Idee einer autonomen Plattform für die Datenerfassung. Seit Ivan, unserem Wissenschaftsadministrator, zuletzt Einblicke in das Projekt geteilt hat, ist anderthalb Monate vergangen. In dieser Zeit hat der Datenharvester bedeutende Updates erhalten, und wir freuen uns, sie in diesem Blogbeitrag hervorzuheben."
+abstract: "Das Robonomics-Team entwickelt die Idee einer autonomen Plattform für die Datenerfassung. Seit Ivan, unserem Wissenschaftsadministrator, zuletzt Einblicke in das Projekt geteilt hat, ist anderthalb Monate vergangen. In dieser Zeit hat der Datenharvester bedeutende Updates erhalten, und wir freuen uns, sie in diesem Blogbeitrag hervorzuheben."
+tags: ['Ankündigungen', 'Anwendungsfälle', 'Kooperationen', 'Smart Home']
+---
+
+Das Robonomics-Team entwickelt die Idee einer autonomen Plattform für die Datenerfassung. Seit Ivan, unserem Wissenschaftsadministrator, zuletzt [geteilt](https://twitter.com/berman_ivan/status/1759943496742404346) hat, sind anderthalb Monate vergangen. In dieser Zeit hat der Datenharvester bedeutende Updates erhalten, und wir freuen uns, sie in diesem Blogbeitrag hervorzuheben.
+
+## Was ist der Datenharvester?
+
+Lassen Sie uns zunächst zusammenfassen, worum es bei diesem Projekt geht. In seiner einfachsten Form handelt es sich um eine mobile robotische Plattform mit Sensoren, die dazu gedacht ist, verfügbare Daten über ihre Umgebung zu sammeln. In unserem Szenario verwenden wir den [Turtlebot 4 Pro](https://clearpathrobotics.com/turtlebot-4/), hergestellt von Clearpath Robotics, ausgestattet mit einer 3D-Kamera, 2D-Lidar und einem Satz Standard-Sensoren für Radroboter. Die zentrale Recheneinheit ist der Raspberry Pi. Alle Komponenten des Roboters kommunizieren über das ROS 2-Framework.
+
+Das Ziel ist es, den Roboter in eine Datenerfassungsmaschine umzuwandeln, die sichere Informationen über die Innenumgebung sammelt und sie in einem benutzerfreundlichen Format präsentiert. Um dies zu erreichen, werden zusätzliche Sensoren mit den grundlegenden Aufnahmegeräten integriert und Software entwickelt, um eine umfassende Datensammlung von diesen Sensoren zu erleichtern.
+
+## Hardware-Update des Turtlebot 4 Pro
+
+Ursprünglich wurden eine Reihe von Luftsensoren auf Basis des ESP32-Controllers in den Roboter integriert. Diese Sensoren umfassen:
+
+- SHT3X: Temperatur- und Feuchtigkeitssensor
+- BH1750: Lichtintensitätssensor
+- SCD4X: Kohlendioxidkonzentrationssensor
+
+Darüber hinaus wurden leichte Verbesserungen am grundlegenden Setup des Roboters vorgenommen, um den gestiegenen Rechenanforderungen und Sicherheitsüberlegungen gerecht zu werden:
+
+- Der Raspberry Pi 4GB wurde auf die leistungsstärkere 8GB-Version aufgerüstet.
+- Ein 3D-gedrucktes Gehäuse wurde hergestellt, um die Luftsensoren kompakt anzuordnen.
+- Ein Schutzrahmen für Kamera und Lidar wurde ebenfalls 3D-gedruckt.
+- Darüber hinaus ist der Roboter jetzt mit Warnband umhüllt, um die Sichtbarkeit zu erhöhen.
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/upgraded-turtle-bot-4-pro.jpg" alt="Aufgerüsteter Turtle Bot 4 Pro" />
+
+## Fortschritt bei der Softwareentwicklung
+
+Der Turtlebot wird mit einem Satz von Standardpaketen für grundlegende Operationen geliefert, darunter simultane Lokalisierung und Kartierung (SLAM) und Navigation. Die Aufgabe besteht jedoch darin, diese Module für eine einheitliche Funktionalität zu integrieren und spezifische Funktionen für die Datenerfassung zu implementieren. Im aktuellen Setup soll der Roboter Daten von Luftsensoren sammeln und Wi-Fi-Netzwerke scannen.
+
+Derzeit wurden drei Haupt-ROS 2-Pakete für den Roboter entwickelt:
+
+- **data_harvester_navigation** - kümmert sich um die Lokalisierung und Navigation des Roboters auf einer mit SLAM erstellten vordefinierten Karte.
+- **data_harvester_perception** - ist verantwortlich für die Veröffentlichung von Daten aus Luftsensoren und die Durchführung von Wi-Fi-Netzwerkscans.
+- **data_harvester_chronicler** - verwaltet die Protokollierung von Daten und deren anschließende Veröffentlichung im endgültigen Archiv.
+
+Für den ESP32-Controller wurde die Firmware ```esp32-sensors``` basierend auf dem ESP-IDF-Framework mit Unterstützung für alle verwendeten Sensoren geschrieben. Die Firmware ist in zwei Versionen verfügbar: eine Online-Version (mit dem Controller verbunden mit Wi-Fi) und eine Offline-Version.
+
+Der Quellcode ist auf GitHub verfügbar: https://github.com/Fingerling42/data-harvester
+
+## Feldtechnik und Tests
+
+Seit Anfang März wurden experimentelle Fahrten mit dem Roboter unternommen. Das Ziel der Feldtests ist ein Bürogebäude in Paphos, Zypern. Nach der ersten Einrichtung wurde der Roboter im Büro zurückgelassen, und seine Steuerung begann ferngesteuert über eine Verbindung durch das End-to-End-Yggdrasil-Protokoll zu erfolgen.
+
+Zunächst wurden mehrere SLAM-Runden im Bürogebiet durchgeführt. Dadurch wurde eine qualitativ hochwertige Karte des untersuchten Bereichs erstellt.
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/turtle-bot-map-testing.png" alt="Turtle Bot Kartenprüfung" caption="Eine Karte eines Bürogebäudes mit einer Überlagerung von Roboterkoordinaten nach einer der Missionen" />
+
+Anschließend begab sich der Roboter basierend auf der Karte auf eine Mission zur Datensammlung. Nach deren Abschluss wurden Daten zur Luftqualität und zur Qualität des Wi-Fi-Signals gesammelt sowie Daten zum Standort des Roboters auf der Karte. Dies ermöglichte es, die gesammelten Daten mit den Punkten zu kombinieren, an denen sie gesammelt wurden. Schließlich wurde das endgültige Archiv zur Verarbeitung und Visualisierung gesendet.
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/turtle-bot-4-app-1.png" alt="Turtle Bot Anwendung Luftsensor-Daten" caption="Benutzeroberfläche für die von den auf dem Turtlebot 4 Pro installierten Luftsensoren gesammelten Daten" />
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/turtle-bot-4-app-2.png" alt="Turtle Bot Anwendung Wi-Fi-Abdeckung" caption="Benutzeroberfläche für Wi-Fi-Abdeckungsanalytik basierend auf den Daten des aufgerüsteten Turtlebot 4 Pro" />
+
+## Nächste Meilensteine
+
+Unser nächster Schwerpunkt wird auf der Entwicklung einer umfassenden Pfadplanung für die vollständige Traversierung des Roboterbereichs liegen, wobei der bereits ausgewählte Backtracking Spiral Algorithmus verwendet wird. Darüber hinaus wird die Integration mit der neuesten Version des Robonomics ROS 2 Wrapper implementiert, um Daten sicher von ROS 2 an die Robonomics-Cloud zu übertragen.
+
+Auf der Hardware-Seite planen wir, einen dedizierten Router in den Roboter zu integrieren, um Einfachheit und Unabhängigkeit bei Netzwerkverbindungen für alle Komponenten zu gewährleisten.
+
+Letztendlich ist unser Ziel die Entwicklung einer dedizierten Data Harvester UI-Anwendung, die es ermöglicht, gesammelte Daten in einem benutzerfreundlichen Format darzustellen. Dies könnte insbesondere für Büroadministratoren von unschätzbarem Wert sein.
+
+Bleiben Sie dran für weitere Updates!

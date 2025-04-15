@@ -1,0 +1,252 @@
+---
+title: Robonomics Network x Ocean Protocol p. 2&#58; 从机器人和物联网设备中实现数据货币化
+date: 2021-07-01
+published: true
+locale: 'zh'
+tags: ['合作']
+cover_image: /blog/images/ocean-protocol-p-2/Robonomics_Ocean_p_2.jpg
+description: "Robonomics Network与Ocean Protocol合作的首个成果"
+abstract: "Robonomics Network与Ocean Protocol合作的首个成果"
+---
+
+## 介绍
+
+本文扩展了Robonomics Network和Ocean Protocol之间的集成。将具体描述如何将机器人设备连接到协议，以及这种集成可能为自主系统的运行增加价值的潜在用例。
+
+对于不熟悉Ocean Protocol的人：其理念是通过代币化将任何数据转化为完整的资产，具有购买/出售和转让所有权的能力。简而言之，当对数据进行代币化时，您部署并铸造一个ERC20代币（数据代币），其所有权使您能够访问与其分配的数据（1个数据代币=访问数据集）。该协议允许您灵活管理访问权限，例如，组织对数据的临时访问或提供对其分析的访问权限而不侵犯隐私。因此，可以将代币化的数据货币化，为其创建市场，并利用去中心化金融工具的全部功能。
+
+Robonomics团队深知通过代币化实现货币化的价值，但更重要的是，我们理解自动化的价值。我们已经学会如何自动化地实现机器人和物联网设备的有用活动的货币化，那么为什么不自动化这些活动的结果（日志和数据）的货币化呢？通过Ocean Protocol，几乎任何生成有价值数据的机器人设备都可以成为其所有者的简单收入来源。或者设备可以成为消费有用数据以完成其任务的消费者。
+
+## ROS设备集成方面
+
+为了使Robonomics能够与许多不同类型的设备配合工作，我们使用了机器人操作系统（ROS），这是一个中间件套件，使我们能够方便地为机器人设备部署软件。借助ROS，连接新类型的设备到网络变得相当容易。活跃的ROS社区已经为各种设备开发了数百个可供使用的软件包。多年来，机器人和物联网设备的发展。
+
+ROS 环境中的三个主要抽象是节点、主题和消息。节点是执行特定任务并通过主题与其他节点通信的进程/程序。节点订阅主题，等待消息，或者向其发布自己的消息。在这种实现中，机器人系统的不同类型组件能够在同一级别上相互交互。
+
+下图描述了在以太坊网络上运行的Robonomics v1中，机器人设备（promisor）接受并完成任务的典型过程。AIRA 客户端块是设备所需软件的部署图像，包括ROS。图中显示（蓝色框架）设备通过AIRA客户端与去中心化网络通信，通过在相应的ROS主题中接收和发送消息。设备的任务以将结果消息最终发送到IPFS网络结束，其中包含一个指向潜在可用于货币化的数据的链接。
+
+!["Robonomics v2的流程"](/blog/images/ocean-protocol-p-2/uml-robonomics-ver1.png)
+
+在正在作为Polkadot生态系统的[平行链](https://parachain.robonomics.network/)开发的Robonomics v2中，该过程略有不同。目前，`launch()` 和 `datalog()`&nbsp;[函数](https://wiki.robonomics.network/docs/en/rio-overview/)可用于设备控制；第一个函数允许执行交易以打开/关闭设备，第二个函数将数据字符串发送到区块链。但是，日志和设备数据仍然使用ROS主题进行收集。然后可以直接将它们传递给 `datalog()`，或者首先发送到IPFS。
+
+因此，将Ocean Protocol与Robonomics Network集成的第一个任务是将协议API引入ROS环境。此外，这样一个用于ROS的软件包可以集成到AIRA客户端中，并自动部署创建数据代币。
+
+## Ocean与ROS集成示例
+
+本节介绍了由Robonomics工程师创建的 ocean_ros 存储库，这是一个实现Ocean Protocol API与ROS集成的ROS软件包。Ocean Protocol提供了几种用于与其一起工作的API选项，在这种情况下，使用[ocean.py](https://github.com/oceanprotocol/ocean.py) Python库。使用ROS时，可以使用Python客户端库[rospy](http://wiki.ros.org/rospy)。该软件包的主要目的是创建三个ROS节点，通过这些节点，机器人设备可以部署和生成数据令牌，创建一个用于在市场上交易的池，或者购买数据令牌以供使用。让我们来安装和启动该软件包。
+
+这个示例也可以在YouTube上找到：
+
+<YouTube id="https://youtu.be/Ssit8-u6dZY" PosterQuality="max"/>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 要求和安装
+
+该软件包需要：
+
+* Ubuntu
+* Python 3.8.5或更高版本
+* ROS，Melodic版本（安装说明[在这里](http://wiki.ros.org/melodic/Installation/Ubuntu)）
+
+安装软件包：
+
+<RbCode>
+
+```sh
+git clone https://github.com/LoSk-p/ocean_ros
+cd ..
+catkin_make
+source devel/setup.bash
+```
+
+</RbCode>
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 设置以太坊网络和节点
+
+在这个示例中，使用Infura提供程序来建立连接。Infura允许您远程使用以太坊基础设施，而无需启动完整节点，这对于计算能力有限的紧凑型机器人设备非常方便。
+
+请注意，为了这个示例，正在配置连接到以太坊测试网络Rinkeby。如果您需要切换到主网或其他网络，请参考Ocean的[文档](https://docs.oceanprotocol.com/concepts/networks/)。
+
+设置步骤如下：
+
+* 访问 https://infura.io 并注册。
+* 在Infura网站上创建一个新项目。
+* 在项目设置页面中，记下您的Infura项目ID值。这将在下一步中使用。
+* 在config目录中创建`config.ini`文件（您可以在`config_template.ini`文件中找到配置示例）。
+* 在配置文件中为网络写入您的Infura项目ID。
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 设置以太坊账户并获取Rinkeby ETH代币
+
+* 在浏览器中安装Metamask钱包并生成一个以太坊账户。具体说明请参见[这里](https://docs.oceanprotocol.com/tutorials/metamask)。-设置/）。
+* 从[faucet](https://faucet.rinkeby.io/)获取Rinkeby ETH代币。
+* [导出](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key)从Metamask中的私钥，并创建一个包含您的私钥的文件：
+
+<RbCode>
+
+```sh
+echo <private_key> > private_ocean
+```
+</RbCode>
+
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 安装Python库
+
+安装Python模块venv以创建虚拟环境：
+
+<RbCode>
+
+```sh
+sudo apt-get install python3.8-venv
+```
+</RbCode>
+
+创建Python虚拟环境并安装必要的库：
+
+<RbCode>
+
+```sh
+python3.8 -m venv venv
+source venv/bin/activate 
+pip install ocean-lib rospkg catkin_pkg
+```
+</RbCode>
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 获取Rinkeby测试OCEAN代币
+
+通过此[faucet](https://faucet.rinkeby.oceanprotocol.com/)获取Rinkeby OCEAN。
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 运行ocean_ros
+
+在具有Python虚拟环境的终端中运行ROS启动文件：
+
+<RbCode>
+
+```sh
+roslaunch ocean_ros datatokens.launch
+```
+
+</RbCode>
+
+现在您可以访问ROS主题以处理数据令牌。
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 创建数据令牌
+
+要创建数据令牌，您需要向主题`/ocean/create_datatoken`发布消息。消息应包含来自您的Metamask帐户的私钥文件的路径，来自设备的数据的IPFS URL，OCEAN和数据令牌流动性。消息示例：
+
+<RbCode>
+
+```sh
+rostopic pub /ocean/create_datatoken ocean_ros/Metadata "private_key_path: '/home/user/private_ocean'                     
+data_created: '2021-12-28T10:55:11Z'
+type: 'dataset' 
+name: 'test_ros'
+author: 'author'             
+license: 'CC0: Public Domain'    
+files_content_type: ['text/text']
+files_url: ['https://gateway.ipfs.io/ipfs/QmWRjFcQi4Xcisqi8FP3AbGS3PB3gNHgtnfzbcpodKKCBP']                 
+tokens_nomber: 100.0
+ocean_amount: 10.0
+```
+
+</RbCode>
+
+相应的ROS节点将创建一个数据令牌，并且该令牌将变为可供出售。您可以在`/ocean/token_response`主题中查看有关数据令牌的信息：
+
+<RbCode>
+
+```sh
+rostopic echo /ocean/token_response
+```
+
+</RbCode>
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 购买数据令牌
+
+要购买数据令牌，您需要向主题`/ocean/get_datatoken`发布一条消息。消息应包含来自您的Metamask帐户的私钥文件路径以及您想要购买的数据令牌的信息（您可以在[市场](https://market.oceanprotocol.com/)或`/ocean/token_response`主题中找到）。消息示例（不要忘记在消息中更改`destination`）：
+
+
+<RbCode>
+
+```sh
+rostopic pub /ocean/get_datatoken ocean_ros/BuyDatatoken "{private_key_path: '/home/user/private_ocean', destination: '/home/user/', token_address: '0x9fb21F68257F1d718d764B68b1430B6460796e42', did: 'did:op:9fb21F68257F1d718d764B68b1430B6460796e42', pool_address: '0xcF295B85ef5ADd0E513B789477C6d14eA6Bc718a'}"
+```
+
+</RbCode>
+
+您可以在`/ocean/buying_response`主题中看到已下载数据文件的路径：
+
+<RbCode>
+
+```sh
+rostopic echo /ocean/buying_response
+```
+
+</RbCode>
+
+</TextCard>
+
+## 用例
+
+本节将描述机器人设备接收的数据自动令牌化的应用潜力示例。
+
+### 环境数据
+
+也许最有趣的应用示例是环境数据的令牌化。这类数据的价值不断增长，考虑到人口、公司和监管机构对环境管理问题日益增加的兴趣。这里的主要问题是生态规模（空气、水、土壤乘以地球巨大且常常无法接触的领土）和对收集数据的信任问题。移动自动设备（空气或水无人机）或一组固定传感器完美解决了第一个问题，而区块链和去中心化技术则缓解了第二个问题。通过使用Ocean Protocol对这些数据进行代币化，完全新的市场正在开放，其中诸如公民科学和碳信用等概念完全适用。
+
+Robonomics长期以来一直致力于生态设备。例如，开发了[sensors-connectivity](https://github.com/airalab/sensors-connectivity)包，可以将兼容ROS的传感器转换为遥测代理。Robonomics工程师正在开发各种模型的[水无人机](https://blog.aira.life/water-drone-2-0-first-stage-of-development-db8ad6c81d3c)来收集河流和湖泊中的化学指标，并且还在探索使用[UAVs](http://www.ijeetc.com/uploadfile/2019/1009/20191009035041545.pdf)来评估空气质量。
+
+<RbCode>
+
+```
+1556199372.384576 <=>\x86##5E1567057C105409#DOV01SW#0#WT:6.53#PH:8.89#DO:90.4#COND:348.9#
+```
+
+</RbCode>
+
+收集的水质数据示例：温度、PH值、溶解氧、电导率
+在每种情况下，设备生成传感器和GPS日志，然后将其[发布](https://gateway.ipfs.io/ipfs/QmWRjFcQi4Xcisqi8FP3AbGS3PB3gNHgtnfzbcpodKKCBP)到IPFS，并由设备提供结果。我们可以通过使用Ocean Protocol创建datatoken来为这些数据增加价值。Robonomics Network将确保数据是由特定机器人为特定任务收集的，而Ocean Protocol将确保只有拥有datatoken的人才能访问它。
+
+### 营销数据
+
+日常生活中的机器人趋势正在增长，很容易找到机器人推广者或客户机器人的示例。服务。这些机器人与人的互动体验可以用于营销研究，类似于收集用户数据的网站。此外，这些数据的价值将更高，因为与人的互动发生在更亲近的层面。
+
+我们可以想象一个机器人设备，在执行其特定任务的过程中（例如，机器人服务员），同时收集关于客户的视觉、声音或其他信息。在这种情况下，可以使用机器学习工具来创建关于客户对特定服务或产品反应的全新数据类型。这为使用datatokens提供了很大的空间，既可以用于来自机器人的原始数据，也可以用于算法分析的数据。此外，Ocean Protocol具有一种Compute-to-data功能，允许我们提供私人数据进行分析，而不会违反保密性。
+
+### 技术日志
+
+改进机器人的算法还需要分析它们的运行数据。这主要涉及机器学习，需要数据集，但我们也可以谈论在相同或类似环境中运行的设备之间共享三维地图（例如，用于同时定位和映射）。这些技术日志的货币化将更具领域特定性，但其价值将在于其独特性和稀缺性。
+
+例如，通过对由机器人吸尘器生成的数据进行标记化，以改善其性能（绕过障碍物，在公寓中更好地识别环境）。另一个例子是生产线的服务数据，其处理将优化运营或生产成本。
+
+## 结论
+
+这些例子表明，Robonomics Network和Ocean Protocol的结合创造了一种基本全新的资产类型，以前由于技术流程自动化不足以及无法安全控制和交换其结果而无法获得。此外，这些只是明显的想法，在未来，随着物联网和机器人的普及，完全新的网络物理数据市场可能会出现。

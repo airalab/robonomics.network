@@ -1,0 +1,102 @@
+---
+// components
+import Layout from '../layouts/Layout.astro';
+
+// data
+const stores = [
+  {
+    id: 0,
+    link: 'https://robonomics.threadless.com/',
+    img: 'threadless.webp',
+    locale: 'us',
+    label: $tr('Threadless Marketplace (USA)')
+  },
+  {
+    id: 1,
+    link: 'https://www.redbubble.com/people/roboxart/shop?artistUserName=roboxart&iaCode=u-clothing',
+    img: 'redbubble.webp',
+    locale: 'eu',
+    label: $tr('Redbubble Marketplace (Europe)')
+  },
+  {
+    id: 2,
+    link: 'https://robonomics.printdirect.ru/',
+    img: 'printdirect.webp',
+    locale: 'ru',
+    label: $tr('Printdirect Marketplace (Russia)')
+  }
+]
+
+---
+
+
+<Layout 
+  title={$tr("Robonomics merch")}
+  description={$tr("We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.")}
+  ogImage="/website_cover_merch.webp"
+  pageTitle={$tr("Robonomics merch")}
+>
+
+  <section class="layout">
+    <p class="layout layout__text">{$tr('Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.')}</p>
+
+    <section class="grid-3">
+      {stores.map((store) => {
+        const imageSrc = store.img;
+
+        if (!imageSrc) {
+          console.error(`Image not found for: ${store.img}`);
+          return (
+            <div class="oldy">
+              <p>{$tr('Image not available')}</p>
+            </div>
+          );
+        }
+
+        return (
+          <a class="oldy" href={store.link} data-geo={store.locale} target="_blank">
+            <img aria-label={store.label} src={'/images/merch/' + imageSrc} alt={store.label} />
+          </a>
+        );
+      })}
+    </section>
+  </section>
+</Layout>
+
+
+<style>
+  .layout {
+    text-align: center;
+    font-variation-settings: var(--font-flex-medium);
+    margin-bottom: var(--space-section);
+  }
+
+  .bannerimg {
+    display: inline-block;
+    max-width: 300px;
+  }
+
+  .grid-3 {
+    margin: var(--space) 0;
+    gap: calc(var(--space) * 2);
+  }
+
+  .oldy {
+    --oldy-padding: calc(var(--space) * 2);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .oldy img {
+    display: block;
+    max-height: 200px;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .oldy:before {
+    content: attr(data-geo);
+  }
+</style>

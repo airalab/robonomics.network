@@ -1,0 +1,179 @@
+---
+import Navigation from '../blocks/Navigation.astro';
+import Socials from '../blocks/Socials.astro'
+---
+
+<div id="sidetext" class="sidetext">
+  <div id="nav-toggler" class="nav-toggler" tabindex="0">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div  class="nav-content">
+      <Navigation/>
+      <Socials/>
+  </div>
+
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    let isOpen = false; // State management
+    const sidetext = document.getElementById('sidetext');
+    const navToggler = document.getElementById('nav-toggler');
+
+    navToggler?.addEventListener('click', () => {
+      isOpen = !isOpen; // Toggle state
+      if (isOpen) {
+        sidetext?.classList.add('open');
+      } else {
+        sidetext?.classList.remove('open');
+      }
+    });
+
+
+    // Close nav on body click
+    window.document.addEventListener('click', (e) => {
+        const nav = document.querySelector('div.sidetext');
+        let clickInside = nav?.contains(e.target)
+
+        if(!clickInside && nav?.classList.contains('open')) {
+            nav.classList.remove('open')
+        }
+    })
+  });
+</script>
+
+
+<style>
+
+  div:not(.open) .nav-content li {
+      white-space: nowrap;
+  } 
+
+  .nav-content {
+      animation: navContent 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+      background-color: var(--color-light);
+      border-bottom: 1px solid var(--color-dark);
+      display: none;
+      left: 0;
+      opacity: 0;
+      overflow-y: auto;
+      position: fixed;
+      right: 0;
+      text-align: left;
+      top: var(--screen-padding-top);
+      transform: translateX(-20px);
+      z-index: 1012;
+  }
+
+  .nav-content .navigation__layout {
+      margin-bottom: var(--space);
+  }
+
+  ul, li {
+      padding: 0;
+      margin: 0;
+  }
+
+  li {
+      margin: 0 calc(var(--space)*0.35) calc(var(--space)*0.35);
+      letter-spacing: 0;
+      font-weight: 400;
+  }
+
+  li a {
+      color: var(--color-dark);
+      text-decoration: none;
+  }
+
+  .nav-toggler {
+      width: 42px;
+      height: 37px;
+      cursor: pointer;
+      padding: 0.55rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid transparent;
+  }
+
+  .nav-toggler div {
+      height: 3.5px;
+      width: 100%;
+      background-color: var(--color-dark);  
+      border-radius: 5px;
+  }
+
+  .nav-toggler div:not(:last-child) {
+      margin-bottom: 2px;
+  }
+
+  .open  .nav-content {
+      display: block;
+  }
+
+  .open .nav-toggler div {
+      transform-origin: 50% 62%;
+      transition: 0.1s linear all;
+  }
+  
+  .open .nav-toggler div:nth-child(1) {
+      transform: rotate(45deg);
+      position: relative;
+      top: calc(50% - 1px)
+  }
+
+  .open .nav-toggler div:nth-child(2) {
+      display: none;
+  }
+
+  .open .nav-toggler div:nth-child(3) {
+      transform: rotate(135deg);
+      position: relative;
+      top: calc(-44% + 0.5px);
+  }
+
+  .nav-content > li:not(:last-child) {
+      margin-bottom: calc(var(--space) * 0.5);
+  }
+
+  @keyframes navContent {
+      to {
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+  
+  @media screen and (max-width: 950px) {
+      .open .nav-content {
+          grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav-toggler {
+          width: 38px;
+          height: 32px;
+      }
+
+
+      .nav-toggler div {
+          height: 3px;
+      }
+
+      
+  }
+
+  @media screen and (max-width: 510px) {
+      .open .nav-content {
+          grid-template-columns: 1fr;
+          justify-items: start;
+      }
+
+      .nav-content {
+          height: 100%;
+      }
+  }
+
+</style>

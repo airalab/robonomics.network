@@ -1,0 +1,110 @@
+---
+title: "اختبارات ناجحة لنقل XRT بين سيبوليا ومركز أصول روكوكو عبر Snowbridge"
+date: 2024-07-22
+published: true
+locale: 'ar'
+cover_image: /blog/images/snowbridge-sepolia-rococo-tested/snowbridge-sepolia-rococo-tested.png
+description: "لقد قمنا بنجاح بإجراء اختبارات لنقل رموز XRT بين شبكتي سيبوليا ومركز أصول روكوكو باستخدام بروتوكول Snowbridge."
+abstract: "Snowbridge هو جسر عام غير معتمد ولامركزي بين بولكادوت وإيثيريوم."
+tags: ['بولكادوت', 'إيثيريوم']
+---
+
+## مقدمة
+
+مرحبًا بالجميع، كما تعلمون، يعمل مشروع Robonomics على شبكتين بشكل متزامن: إيثيريوم وكوساما. حاليًا، ليس هناك وسيلة لنقل رمز XRT بين هاتين الشبكتين. لذلك، نحن نتابع عن كثب مشروع Snowbridge، الذي يتم تطويره كجسر عالمي بين إيثيريوم وبولكادوت: https://docs.snowbridge.network/
+
+خلال الشهر الماضي، قمنا بنجاح بنقل رموز XRT ERC20 بين شبكتي الاختبار سيبوليا ومركز أصول روكوكو وفقًا لتعليمات Snowbridge:
+
+https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers
+
+## نشر عقد XRT وتسجيل الرمز على Snowbridge
+
+أولًا، تم نشر عقد XRT على سيبوليا:
+
+https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf
+
+نظرًا لأننا احتجنا إلى اختبار إرسال رمزنا الخاص، كان علينا تسجيله. يتكون هذا الخطوة من جزأين: التحقق من الرسوم المطلوبة وتسجيل الرمز:
+
+1. للتحقق من الرسوم المطلوبة، قمنا بالاتصال بطريقة `quoteRegisterTokenFee` لعقد الجسر (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#readProxyContract) واستلمنا القيمة `5000000500000000000`:
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteRegisterTokenFee.png" alt="quoteRegisterTokenFee" />
+
+2. لتسجيل الرمز، قمنا بالاتصال بطريقة `registerToken` لعقد الجسر (https://sepolia.etherscan.io/ address / 0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#writeProxyContract) ، محددًا الرسوم المطلوبة وعنوان الرمز المشفر الذي تم نشره:
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/registerToken.png" alt="registerToken" />
+
+يجب أن يستغرق عملية التسجيل حوالي 30 دقيقة ، ويجب أن يظهر الرمز الجديد في foreignAssets في Rococo Asset Hub. يمكن التحقق من ذلك باستخدام استعلام حالة السلسلة في Rococo Asset Hub (https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/chainstate):
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/foreign_asset_query.png" alt="Check if token registered" />
+
+بعد التسجيل الناجح ، تلقينا الاستجابة التالية:
+```
+{
+    owner: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    issuer: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    admin: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    freezer: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    supply: 0
+    deposit: 100,000,000,000
+    minBalance: 1
+    isSufficient: false
+    accounts: 1
+    sufficients: 0
+    approvals: 0
+    status: Live
+}
+```
+
+## اختبار تحويل XRT من سيبوليا إلى Rococo Asset Hub
+
+كان الخطوة التالية هي إرسال رمز XRT من سيبوليا إلى Rococo Asset Hub. لهذا ، قمنا بأداء الإجراءات التالية:
+
+1. أولاً ، سمحنا لعقد الجسر باستخدام 15 XRT من الحساب:
+
+    https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf#writeContract
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="الموافقة على XRT spender" />
+
+2. ثم طلبت الرسوم المطلوبة لإرسال الرمز:
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
+
+3.  بدأت نقل XRT من سيبوليا إلى Rococo Asset Hub باتباع تعليمات Snowbridge باستخدام مثال WETH: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
+    
+    ملاحظة حرجة بخصوص حقل `destinationAddress.data`: كان يجب أن تكون قيمته محاطة بعلامات اقتباس (على سبيل المثال "0xb0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d").
+
+    في هذه المرحلة، واجهنا تأخيرات كبيرة. بدلاً من الـ 30 دقيقة المتوقعة، استغرقت العملية عدة أيام. في النهاية، تمت جميع عمليات النقل بنجاح.
+    مثال على العملية: https://sepolia.etherscan.io/tx/0xec539cd89cb955ffea2ff65cae6685a8abb0966a2c1b76876a308cc036cd18fb
+
+    يمكن التحقق من رصيد XRT في الحساب المستهدف في Rococo Asset Hub عن طريق إرسال طلب `foreignAssets.account()` في حالة السلسلة:
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="مثال على foreignAssets.account" />
+
+    تم إرسال مجموع 15 XRT، لذلك كان يبدو الرصيد في Rococo Asset Hub على النحو التالي:
+    ```
+    {
+        balance: 15,000,000,000
+        status: Liquid
+        reason: Consumer
+        extra: null
+    }
+    ```
+
+## اختبار نقل XRT من Rococo Asset Hub إلى سيبوليا 
+
+الخطوة النهائية كانت إرسال XRT من Rococo Asset Hub إلى سيبوليا. قمنا بتنفيذ العملية الخارجية التالية في Rococo Asset Hub: 
+
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/extrinsics/decode/0xe1028400b0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d01360c34e5d8f49f802fc1cc2413bfcd827b054b3ab1195bddcba0168dfaf9a47693b305b96e68d238d9adeed276452c2bc156b3bd189ba016543c354edd95ad81f501040000001f0b03020109079edaa8020300010300f42680c6a807de3cfdfcfe49583b01d80278a39e030400020209079edaa80203009e216c3af5f0c6ce70851b93dddb62573380cfef0002286bee0000000000
+
+يمكن عرض هذه المعاملة في مستكشف كتل Rococo Asset Hub:
+
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/explorer/query/0x3524f4bef9e736cdff1d812d79e130cf6ade7a3fe3222a0853772fd1b6c3c89a
+
+المعاملة المقابلة في Sepolia:
+
+https://sepolia.etherscan.io/tx/0xe8a95dca350143a0c41891137e332962f2918351dcfc2612519e69c7a5c46772
+
+تم إكمال هذه الخطوة بسرعة نسبياً، خلال نصف ساعة. نتيجة لذلك، تم تحويل 1 XRT مرة أخرى إلى Sepolia. بقي رصيد XRT في Rococo Asset Hub عند 14 XRT:
+
+```
+{
+    balance: 14,000,000,000
+    status: Liquid
+    reason: Consumer
+    extra: null
+}
+```

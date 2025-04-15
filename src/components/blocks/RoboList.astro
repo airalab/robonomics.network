@@ -1,0 +1,22 @@
+---
+const {
+  type="ordered"
+} = Astro.props;
+
+---
+
+{type === 'ordered' ? (
+  <ol class="robo-list">
+    <slot/>
+  </ol>
+) : (
+  <ul class="robo-list">
+    <slot/>
+  </ul>
+)}
+
+<style>
+  .robo-list {
+    list-style: none;
+  }
+</style>

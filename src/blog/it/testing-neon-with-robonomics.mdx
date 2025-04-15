@@ -1,0 +1,165 @@
+---
+title: Test di Neon EVM con Contratti Intelligenti Robonomics
+date: 2022-10-03
+published: true
+locale: 'it'
+tags: ['Robonomics in Ethereum', 'Collaborazioni', 'Contratti Intelligenti', 'Neon']
+cover_image: /blog/images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
+description: Lo scopo di questi test era quello di convalidare la prontezza della piattaforma Neon per passare alla fase di produzione utilizzando i contratti intelligenti Robonomics, che consentono ai sistemi cibernetico-fisici (robot) di effettuare transazioni tecniche ed economiche.
+---
+
+## TL;DR
+
+Lo scopo di questi test era quello di convalidare la prontezza della [piattaforma Neon](https://neon-labs.org/) per passare alla fase di produzione utilizzando i contratti intelligenti Robonomics, che consentono ai sistemi cibernetico-fisici (robot) di effettuare transazioni tecniche ed economiche.
+
+Nella rete Robonomics, l'interazione è stabilita tra due parti: il Promittente - colui che ordina il servizio, invia una descrizione del compito tecnico e trasferisce fondi per la sua esecuzione; il Promittente - colui che esegue un servizio. È stato testato uno scenario tipico, in cui viene concluso un contratto di responsabilità tra un Promittente e un Promittente - seguito dalla convalida del lavoro risultante da parte di una terza parte e dal pagamento di una commissione al nodo che ha accompagnato il contratto tra le parti.
+
+Per questo esempio è stata utilizzata una simulazione di un braccio robotico, al quale è stato chiesto di eseguire una sequenza di azioni. I test sono stati completati con successo.
+
+## Ambito e Obiettivi del Test
+
+Gli ingegneri dei [Sistemi Multi-Agente](https://multi-agent.io/) lavorano con la [Rete Robonomics](https://robonomics.network/) da diversi anni. La prima implementazione della Rete Robonomics è stata creata per la rete Ethereum. Si tratta di un insieme di contratti intelligenti per la comunicazione tra macchine.
+
+Il cuore della Rete Robonomics è il contratto di [Responsabilità](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol), un contratto intelligente che riproduce la tipica relazione tra il cliente di un servizio (Promittente) e il fornitore del servizio (Promittente), e include i parametri tecnici ed economici della transazione tra loro. Le parti possono essere un agente autonomo e una persona (interazione umano-macchina) o semplicemente due agenti autonomi (interazione macchina-macchina). Il Promittente e il Promittente trasmettono messaggi con i parametri diLa loro transazione tecnico-economica, e poi la conclusione della transazione è fornita da un nodo speciale - il Provider - che cerca corrispondenze di questi parametri. I Provider sono controllati da [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol), che è un contratto intelligente speciale che esegue una transazione quando il provider stabilisce una corrispondenza di mercato tra le parti.
+
+Ci sono tre scenari in cui il soddisfacimento di un obbligo può avvenire:
+
+1. Un impegno semplice (senza verifica del risultato finale e senza commissioni pagate ai nodi Provider)
+2. Obbligo con una commissione pagata al Provider
+3. Impegno con una commissione al Provider e convalida dei risultati con l'aiuto di una terza parte - rete di osservazione.
+
+Lo scopo di questo test è quello di testare lo scenario Robonomics più complesso, terzo, sulla piattaforma Neon EVM.
+
+## Descrizione degli scenari di test
+
+Mentre sviluppiamo le zone industriali e l'infrastruttura delle città moderne, è molto probabile l'emergere di imprese completamente automatizzate e servizi controllati da sistemi cibernetico-fisici (CPS) che forniscono i loro servizi come agenti autonomi. A tal proposito, possiamo anche aspettarci la formazione di reti di CPS autonome al fine di aumentare la velocità e la qualità della comunicazione nel processo di produzione e fornitura di servizi.
+
+Al fine di sfruttare appieno le possibilità dei contratti intelligenti, è stato scelto uno scenario di interazione tra due agenti economici autonomi. Consideriamo il ciclo di vita della responsabilità nella rete Robonomics:
+
+![Ciclo di vita della responsabilità](/blog/images/testing-neon-with-robonomics/step-by-step-3.jpg)
+
+La figura sopra mostra che il provider della rete Robonomics chiama il contratto Lighthouse, che a sua volta chiama il [contratto factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) per creare il contratto di Responsabilità. Il contratto di Responsabilità contiene dati sulla transazione, come i termini di riferimento, il pagamento per il servizio, l'indirizzo del validatore e la scadenza.
+
+Per saperne di più sui possibili casi d'uso per Robonomics, dai un'occhiata alla pagina di [R&S](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer) di Robonomics!
+
+Per replicare l'intera infrastruttura di Robonomics sulla rete Neon, implementeremo uno scenario di lancio di un robot attraverso un contratto di Responsabilitàsimile a questo [esempio](https://wiki.robonomics.network/docs/it/kuka/). Se lo script può essere ripetuto, allora tutte le funzioni funzioneranno.
+
+## Prodotti consegnabili
+
+Il codice sorgente per i contratti Robonomics è disponibile [qui](https://github.com/airalab/robonomics_contracts).
+I contratti utilizzano molte funzionalità della VM Ethereum che includono:
+
+- Token ERC20 [XRT](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/XRT.sol)
+- [Factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)
+- Contratto proprio per [ENS](https://github.com/airalab/robonomics_contracts/blob/master/contracts/ens/ENS.sol)
+- [Proxy](https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/SharedCode.sol) per contratti
+- Vari modificatori e ruoli nei contratti
+
+Indirizzi dei contratti nella rete Neon devnet https://devnet.neonevm.org
+
+| Nome del Contratto | Indirizzo                                   |
+|----------------|--------------------------------------------|
+| Migrations     | 0x1DC538bE2C8572509a571B150f11aB55E52EF12E |
+| ENS            | 0xa7AEa12F60D0278F01e14DBC7cc459d04d051406 |
+| Asta Olandese  | 0xF44F8803548D72Dbc3E28340EFD7b5328aa4F058 |
+| Responsabilità  | 0xA694196351dc1488e3884eCc6b650F0d8D55346a |
+| Faro           | 0x80FB5CC4c396E272b56700E6ffF5DBf4661013A8 |
+| XRT            | 0x3322d7D99cF65Cab5A92073c928b5E9674af3c29 |
+| PublicAmbix    | 0x85c03bE5ccFf11E79a0A776D183eF067590549d1 |
+| Factory        | 0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C |
+| PublicResolver | 0xAC9E9AA8A4cB524FE87f2b14489F1D6bE68dc46e |
+
+[Codice sorgente](https://github.com/Multi-Agent-io/neon-kuka-demo) per lo scenario
+
+## Modifiche apportate ai contratti originali
+
+I contratti sono scritti per Solidity 0.5.0. Pertanto, non sono state necessarie modifiche durante il rilascio e l'utilizzo dei contratti.
+
+## Flusso di lavoro di testing
+
+In generale, il test consiste nell'invio di messaggi corrispondenti da un agente all'altro.
+
+Successivamente, il Promittente trova un nuovo contratto di responsabilità nella rete e inizia ad eseguirlo. Al termine del lavoro, viene inviato un messaggio con il risultato, che viene quindi registrato nel contratto.
+
+Istruzioni passo dopo passo per l'avvio sono disponibili in [README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md)
+
+## Dettagli dei risultati del testing
+
+Screencast del processo
+
+<YouTube id="https://youtu.be/fYJVF7KrNnI" posterQuality="max" />
+
+![Responsabilità](/blog/images/testing-neon-with-robonomics/liability.jpg)
+
+Quando la simulazione inizia, viene creato un messaggio di offerta e arriva un messaggio di domanda dal Promittente, dopodiché viene creato un contratto di responsabilità utilizzando la funzione createLiability del contratto Lighthouse. Con l'aiuto del contratto XRT, i token vengono trasferiti dall'indirizzo del Promittente all'indirizzo del contratto di responsabilità.
+
+Dopo che è stato scoperto un nuovo contratto di responsabilità sulla Neon devnet, l'agente inizia a lavorare. Il risultato del lavoro (telemetria) viene scritto su un file e inviato a IPFS, l'hash del file viene salvato come risultato.
+
+Dopo il completamento del lavoro, il contratto di responsabilità viene finalizzato utilizzando la funzione finalizeLiability() del contratto Lighthouse e i token vengono trasferiti dall'indirizzo di responsabilità agli indirizzi del Promittente e del Validatore.
+
+L'esecuzione riuscita della simulazione ha mostrato che tutti i contratti hanno funzionato correttamente e che la piattaforma Neon funziona.
+
+## Svantaggi della piattaforma Neon
+
+### Truffle fallisce se non riceve una risposta dalla rete
+
+Durante il processo di rilascio dei contratti, è emerso che il proxy non restituisce sempre una risposta in tempo, motivo per cui Truffle termina con un errore:
+
+<RbCode>
+
+```sh
+TypeError: Cannot read properties of null (reading 'from')                                    
+    at Web3InterfacciaAdapter.(<anonimo>) (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist/adapter/web3/index.js:71:1)                                           
+    a Generator.next (<anonimo>)                                                          
+    a completato (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
+/adapter/web3/index.js:5:43)                                                                  
+    a eseguiMicrotask (<anonimo>)
+    a processTicksAndRejections (node:internal/process/task_queues:96:5)
+Truffle v5.5.23 (core: 5.5.23)
+Node v16.14.0
+```
+</RbCode>
+
+Non è stato possibile trovare una relazione tra le condizioni di prova e l'occorrenza di un errore, ma molto probabilmente Neon EVM non può inviare una ricevuta di transazione e Truffle non può elaborare una risposta Null.
+
+Se aggiungiamo un timeout e un tentativo qui [index.ts#L75](https://github.com/trufflesuite/truffle/blob/develop/packages/interface-adapter/lib/adapter/web3/index.ts#L75), allora il rilascio dovrebbe procedere senza errori.
+
+### Nessun Endpoint WS/WSS
+
+Neon EVM non ha un endpoint WS/WSS a differenza di Ethereum, il che rende impossibile sottoscriversi agli eventi dalla rete. Pertanto, durante i test, abbiamo monitorato manualmente gli eventi.
+
+### Nessun Nome Evento
+
+Neon EVM restituisce descrizioni piuttosto scarse degli eventi dopo una transazione, ad esempio:
+
+<RbCode>
+
+```sh
+ events: {
+    '0': {
+      address: '0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C',
+      transactionHash: '0x9894a984e6b3f6ce469c8837e11739f6e50d00216cf7c5bc3d32da106a58d50a',
+      transactionLogIndex: '0x1',
+      blockHash: '0x72040f317d3a469d30327d4e1def903790b70dbede46b4f0ea4f28f30a679a80',
+      blockNumber: 156073183,
+      transactionIndex: 0,
+      logIndex: 1,
+      id: 'log_e51e2f9f',
+      returnValues: Result {},
+      event: undefined,
+      signature: null,
+      raw: [Object]
+    },
+...
+```
+</RbCode>
+
+Invece di 0, 1, ecc. ci aspettavamo di vedere eventi nominati.
+
+## Conclusione
+
+Utilizzando la piattaforma Neon EVM, è stato testato con successo uno scenario in cui un contratto di responsabilità tra un Promittente e un Promittente viene concluso con la successiva convalida del risultato del lavoro svolto da un terzo. Inoltre, ha partecipato un Provider, che ha verificato la coincidenza tra offerta e domanda tra le parti e ha ricevuto una commissione per questo lavoro.
+
+La dimostrazione ha utilizzato una simulazione di un braccio robotico che è stato assunto per eseguire una sequenza di azioni. Come risultato del lavoro, il robot ha inviato un file con telemetria ricevuta durante il compito.
+
+Nonostante alcune peculiarità nel funzionamento della rete, alla fine tutti i contratti partecipanti hanno mostrato la loro operatività nell'ambiente Neon.

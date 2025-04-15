@@ -1,0 +1,148 @@
+---
+title: Robonomicsスマートコントラクトを使用したNeon EVMのテスト
+date: 2022-10-03
+published: true
+locale: 'ja'
+tags: ['EthereumのRobonomics', 'コラボレーション', 'スマートコントラクト', 'Neon']
+cover_image: /blog/images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
+description: "これらのテストの目的は、サイバー物理システム（ロボット）が技術経済取引を行うRobonomicsスマートコントラクトを使用して、Neonプラットフォームが本番段階に移行できる準備が整っていることを検証することでした。"
+abstract: ""
+---
+
+## 要約
+
+これらのテストの目的は、サイバー物理システム（ロボット）が技術経済取引を行うRobonomicsスマートコントラクトを使用して、[Neon](https://neon-labs.org/)プラットフォームが本番段階に移行できる準備が整っていることを検証することでした。
+
+Robonomicsネットワークでは、2つの当事者間での相互作用が確立されます：約束者（Promisee）- サービスを注文し、技術的タスクの説明を送信し、その実行のための資金を送金する者；約束者（Promisor）- サービスを提供する者。典型的なシナリオがテストされ、約束者と約束者の間で責任契約が締結され、その結果の作業が第三者によって検証され、当事者間の契約を伴うノードに手数料が支払われました。
+
+この例では、ロボットアームのシミュレーションが使用され、一連のアクションを実行するように求められました。テストは成功しました。
+
+## テストの範囲と目標
+
+[Multi-Agent Systems](https://multi-agent.io/)のエンジニアたちは数年間、[Robonomics Network](https://robonomics.network/)と協力してきました。 Robonomics Networkの最初の実装はEthereumネットワーク向けに作成されました。これは、機械間通信のためのスマートコントラクトのセットです。
+
+Robonomics Networkの中核は、[Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol)契約です。これは、サービスの顧客（Promisee）とサービス提供者（Promisor）の間の典型的な関係を再現し、それらの間の取引の技術的および経済的パラメーターを含んだスマートコントラクトです。当事者は、自律エージェントと人間（人間と機械の相互作用）または純粋に2つの自律エージェント（機械と機械の相互作用）のいずれかです。PromiseeとPromisorは、それぞれのパラメータを含むメッセージをブロードキャストします。彼らの技術経済取引の後、取引の結論は、これらのパラメータの一致を探す特別なノードであるプロバイダーによって提供されます。プロバイダーは、[Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol)によって制御されており、プロバイダーが当事者間で市場の一致を確立したときに取引を実行する特別なスマートコントラクトです。
+
+債務の履行が行われる3つのシナリオがあります：
+
+1. 簡単なコミットメント（最終結果の検証なし、プロバイダーノードに支払われる手数料なし）
+2. プロバイダーに支払われる手数料のある債務
+3. プロバイダーに手数料が支払われ、結果が第三者である観察ネットワークの助けを借りて検証されるコミットメント
+
+このテストの目的は、Neon EVMプラットフォームで最も複雑な第三のRobonomicsシナリオをテストすることです。
+
+## テストシナリオの説明
+
+産業地域や現代都市のインフラを開発するにつれて、サイバー物理システム（CPS）によって制御される完全自動化された企業やサービスが登場し、これらが自律エージェントとしてサービスを提供することが非常に可能性が高くなります。この点から、生産やサービス提供のプロセスにおけるコミュニケーションの速度と品質を向上させるために、自律CPSのネットワークの形成も期待されます。
+
+スマートコントラクトの可能性を最大限に活用するために、2つの自律経済エージェント間の相互作用のシナリオが選択されました。Robonomicsネットワークにおける責任ライフサイクルを考えてみましょう：
+
+![責任ライフサイクル](/blog/images/testing-neon-with-robonomics/step-by-step-3.jpg)
+
+上記の図は、RobonomicsネットワークプロバイダーがLighthouseコントラクトを呼び出し、Lighthouseコントラクトが[コントラクトファクトリ](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)を呼び出して責任コントラクトを作成することを示しています。責任コントラクトには、業務内容、サービスの支払い、検証者のアドレス、締め切りなどの取引に関するデータが含まれています。
+
+Robonomicsの可能なユースケースについて詳しく知りたい場合は、Robonomicsの[R&D](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer)ページをご覧ください！
+
+Neonネットワーク上でRobonomicsインフラ全体を複製するために、責任契約を介したロボットの起動シナリオを実装します。この[例](https://wiki.robonomics.network/docs/ja/kuka/)に類似しています。スクリプトを繰り返すことができれば、すべての機能が機能します。
+
+## 成果物
+
+Robonomics契約のソースコードは[こちら](https://github.com/airalab/robonomics_contracts)で入手できます。
+契約ではEthereum VMの多くの機能が使用されています:
+
+- ERC20 [XRT](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/XRT.sol) トークン
+- [Factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)
+- ENSのための独自の契約[ENS](https://github.com/airalab/robonomics_contracts/blob/master/contracts/ens/ENS.sol)
+- 契約のための[Proxy](https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/SharedCode.sol)
+- 契約内のさまざまな修飾子と役割
+
+Neon devnetネットワーク内の契約のアドレス https://devnet.neonevm.org
+
+| 契約名        | アドレス                                    |
+|----------------|--------------------------------------------|
+| Migrations     | 0x1DC538bE2C8572509a571B150f11aB55E52EF12E |
+| ENS            | 0xa7AEa12F60D0278F01e14DBC7cc459d04d051406 |
+| DutchAuction   | 0xF44F8803548D72Dbc3E28340EFD7b5328aa4F058 |
+| Liability      | 0xA694196351dc1488e3884eCc6b650F0d8D55346a |
+| Lighthouse     | 0x80FB5CC4c396E272b56700E6ffF5DBf4661013A8 |
+| XRT            | 0x3322d7D99cF65Cab5A92073c928b5E9674af3c29 |
+| PublicAmbix    | 0x85c03bE5ccFf11E79a0A776D183eF067590549d1 |
+| Factory        | 0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C |
+| PublicResolver | 0xAC9E9AA8A4cB524FE87f2b14489F1D6bE68dc46e |
+
+[シナリオのソースコード](https://github.com/Multi-Agent-io/neon-kuka-demo)
+
+## オリジナルの契約への変更
+
+契約はSolidity 0.5.0用に書かれています。そのため、契約のデプロイと使用時に変更は必要ありませんでした。
+
+## テストワークフロー
+
+一般的に、テストは1つのエージェントから別のエージェントに対応するメッセージを送信することで構成されます。
+
+次に、Promisorはネットワーク内で新しい責任契約を見つけ、それを実行し始めます。作業が完了すると、結果とともにメッセージが送信され、その後契約に記録されます。
+
+起動の手順は[README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md)に記載されています。
+
+## テスト結果の詳細
+
+プロセスのスクリーンキャスト
+
+<YouTube id="https://youtu.be/fYJVF7KrNnI" posterQuality="max" />
+
+![責任](/blog/images/testing-neon-with-robonomics/liability.jpg)
+
+シミュレーションが開始すると、オファーメッセージが作成され、Promiseeから需要メッセージが届き、その後、Lighthouse契約のcreateLiability関数を使用して責任契約が作成されます。XRT契約の助けを借りて、トークンがPromiseeのアドレスから責任契約のアドレスに送信されます。
+
+Neon devnetで新しい責任契約が見つかると、エージェントは作業を開始します。作業の結果（テレメトリー）はファイルに書き込まれ、IPFSに送信され、ファイルからのハッシュが結果として保存されます。
+
+作業が完了すると、Lighthouse契約のfinalizeLiability()関数を使用して責任契約が完了し、トークンが責任アドレスからPromisorとValidatorのアドレスに送信されます。
+
+シミュレーションの成功した実行は、すべての契約が正しく機能し、Neonプラットフォームが機能していることを示しました。
+
+## Neonプラットフォームの欠点
+
+### ネットワークからの応答がない場合、Truffleが失敗する
+
+契約のデプロイプロセス中に、プロキシが常にタイムリーに応答を返さないことがわかりました。そのため、Truffleはエラーで終了します：
+
+<RbCode>
+
+```sh
+TypeError: Cannot read properties of null (reading 'from')                                    
+    at Web3InterfaceAdapter.(<匿名>) (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist/adapter/web3/index.js:71:1)                                           
+    at Generator.next (<匿名>)                                                          
+    at fulfilled (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
+/adapter/web3/index.js:5:43)                                                                  
+    at runMicrotasks (<匿名>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Truffle v5.5.23 (core: 5.5.23)
+Node v16.14.0
+
+エラーの発生とテスト条件の関係を見つけることはできませんでしたが、おそらくNeon EVMはトランザクションレシートを送信できず、TruffleはNull応答を処理できない可能性が高いです。
+
+ここにタイムアウトとリトライを追加すると、[index.ts#L75](https://github.com/trufflesuite/truffle/blob/develop/packages/interface-adapter/lib/adapter/web3/index.ts#L75)、デプロイメントはエラーなしで進行するはずです。
+
+### WS/WSSエンドポイントなし
+
+Neon EVMには、Ethereumとは異なり、WS/WSSエンドポイントがありません。そのため、ネットワークからイベントにサブスクライブすることはできません。したがって、テスト中はイベントを手動で監視しました。
+
+### イベント名なし
+
+Neon EVMは、トランザクション後にイベントのかなり貧弱な説明を返します。例えば：
+
+<RbCode>[オブジェクト]
+    },
+...
+```
+</RbCode>
+
+0、1などではなく、名前付きのイベントが表示されることを期待していました。
+
+## 結論
+
+Neon EVMプラットフォームを使用して、約束者と約束者の間での責任契約が締結され、その後、第三者による作業結果の検証が行われるシナリオが成功裏にテストされました。さらに、需要と供給の一致を確認し、この作業に対して手数料を受け取ったプロバイダーが参加しました。
+
+デモンストレーションでは、一連のアクションを実行するために雇われたロボットアームのシミュレーションが使用されました。作業の結果、ロボットはタスク中に受信したテレメトリファイルを送信しました。
+
+ネットワークの動作にいくつかの特異性があったにもかかわらず、最終的には、すべての参加契約がNeon環境での運用可能性を示しました。

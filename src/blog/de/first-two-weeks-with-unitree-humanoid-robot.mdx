@@ -1,0 +1,71 @@
+---
+title: 'Die ersten zwei Wochen der Arbeit mit dem humanoiden Roboter Unitree G1'
+date: 2024-12-27
+published: true
+locale: 'de'
+tags: ['Robotik', 'ROS 2']
+cover_image: /blog/images/first-two-weeks-with-unitree-humanoid-robot/cover.webp
+description: "Es sind zwei Wochen vergangen, seit der humanoide Roboter Unitree G1 im Robonomics-Labor angekommen ist. Ein Team von mindestens fünf Ingenieuren mit Master-Abschlüssen in Robotik hat sofort damit begonnen, das neue Gerät zu studieren und zu programmieren. Wir möchten die ersten Neuigkeiten aus dem Feld teilen: Eindrücke, Erkenntnisse und Herausforderungen auf dem Weg zu, wie wir hoffen, einer humanoiden Revolution!"
+abstract: "Es sind zwei Wochen vergangen, seit der humanoide Roboter Unitree G1 im Robonomics-Labor angekommen ist. Ein Team von mindestens fünf Ingenieuren mit Master-Abschlüssen in Robotik hat sofort damit begonnen, das neue Gerät zu studieren und zu programmieren. Wir möchten die ersten Neuigkeiten aus dem Feld teilen: Eindrücke, Erkenntnisse und Herausforderungen auf dem Weg zu, wie wir hoffen, einer humanoiden Revolution!"
+---
+
+## TL;DR
+
+- Erfolgreich mit Entwicklungsgerät / PC2 verbunden (siehe untenstehende Diagramme).
+- Einrichtung einer Remote-Verbindung über **SSH** über **Zerotier** und **Yggdrasil**.
+- Studium des auf Linux basierenden Systems an Bord des Humanoiden, Durchführung von Standard-DevOps-Aufgaben.
+- Vertraut gemacht mit der **Python SDK**-Bibliothek vonEntwickler (wir haben sogar einen kritischen Fehler behoben): Jetzt können wir den Roboter aus Skripten steuern: gehen, sitzen, aufstehen und dämpfen.
+- Erstellte **ROS 2-Pakete**, die mit Themen verbunden sind, startete mehrere Beispiele, aber zusätzliche Tests sind erforderlich.
+
+<RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/image-schemes.webp" alt="Datenstrom des Unitree-Humanoiden-Roboters" />
+
+## Notizen aus dem Feld
+
+**Über Python SDK:**
+
+- Verwendete virtuelle Umgebung (**venv**) auf **Python 3.10** — das SDK funktioniert nicht mit anderen Versionen.
+- Arbeitete über die **eth0**-Schnittstelle von der Entwicklereinheit aus.
+- Obwohl **CycloneDDS** vorinstalliert war, wurde es manuell ohne Konflikte neu erstellt.
+- Um Skripte auszuführen, müssen Sie eine Umgebungsvariable festlegen (empfohlen, sie zur `.bashrc` hinzuzufügen). **Wichtig:** Geben Sie den vollständigen Pfad in einfachen Anführungszeichen an:
+
+<RbCode>
+
+```
+export CYCLONEDDS_HOME='/home/unitree/cyclonedds/install'
+```
+</RbCode>
+
+- Skripte funktionieren nicht im Debug-Modus des Roboters, obwohl sie laut Dokumentation sollten.
+- Um das SDK zu reparieren und den Roboter zu bewegen, fügten wir die Zeile `self.Start()` zur Funktion `Move()` der Datei **g1_loco_client.py** hinzu.
+
+**Über ROS 2**
+
+- Erstellte Pakete aus dem **unitree_ros2**-Repository, einschließlich Unterstützung für **CycloneDDS**.- Beschaffung der Dateien des erstellten Pakets, um sie der ROS 2-Umgebung hinzuzufügen.
+- Zu den Beispielen:
+  - Erfolgreich Controller-Status empfangen.
+  - Beispiele im Zusammenhang mit Bewegungsstatus funktionierten nicht (Themen sind leer).
+- Die Pakete können verwendet werden, um eigene ROS-Knoten zu erstellen (unabhängig davon, ob Python oder C++).
+
+<RbGridWrapper columns="2" textAlign="center" align="end">
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/first-entering.webp" alt="Unitree Humanoid Robot erster Eintritt" />
+  </RbGridElement>
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/cyclonedds-error.webp" alt="Unitree Humanoid Robot CycloneDDS-Fehler" />
+  </RbGridElement>
+</RbGridWrapper>
+
+## Aufgabenplan
+
+1. **Überprüfen der Möglichkeit der Stromversorgung über das Kabel.** Möglicherweise existiert bereits eine solche Funktion, wir müssen die elektrische Dokumentation überprüfen oder ein geeignetes Kabel kaufen.
+2. **Verstehen des Debug-Modus für das SDK.** Die Dokumentation besagt, dass es funktioniert, aber in der Praxis funktioniert es nicht.
+3. **Fehlen von fortgeschrittenen Beispielen.** Die Repositories beschränken sich auf grundlegende Aktionen (sitzen, aufstehen, Motorsteuerung). Für CES 2025 müssen wir entweder fertige einfache Lösungen anpassen oder Low-Level-Bewegungsalgorithmen entwickeln.4. **Technologieauswahl:**
+  - Der gesamte Prozess kann in **Python** implementiert werden, einschließlich der Integration mit Robonomics.
+  - Es ist jedoch vorzuziehen, **ROS 2** für Struktur und Skalierbarkeit zu verwenden.
+5. **Studieren von Methoden des verstärkenden Lernens** für mögliche Verwendung in der Robotersteuerung.
+
+## Nützliche Links
+
+- Haupt-Repository: [https://github.com/unitreerobotics](https://github.com/unitreerobotics)   
+- Python SDK: [https://github.com/unitreerobotics/unitree_sdk2_python](https://github.com/unitreerobotics/unitree_sdk2_python)   
+- ROS 2-Pakete: [https://github.com/unitreerobotics/unitree_ros2](https://github.com/unitreerobotics/unitree_ros2)  

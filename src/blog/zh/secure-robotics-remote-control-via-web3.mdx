@@ -1,0 +1,65 @@
+---
+title: "安全的机器人远程控制：Robonomics解决方案"
+date: 2024-04-19
+published: true
+locale: 'zh'
+cover_image: /blog/images/secure-robotics-remote-control-via-web3/remote_control_cover.png
+description: "远程连接和控制自己的智能设备是用户中非常受欢迎的功能。然而，对于经验不足的用户来说，这样一个琐碎的任务仍然会带来许多困难 - 从克服NAT到安全问题。在一篇新文章中，我们将展示如何借助Robonomics克服这些困难。"
+related: ['Robonomics Helps Enable Rust for ROS 2', 'Automation: Home meets Industrial']
+abstract: "远程连接和控制自己的智能设备是用户中非常受欢迎的功能。然而，对于经验不足的用户来说，这样一个琐碎的任务仍然会带来许多困难 - 从克服NAT到安全问题。在一篇新文章中，我们将展示如何借助Robonomics克服这些困难。"
+tags: ['ROS 2', '智能家居']
+---
+
+在上一篇文章中，我们谈到了如何在机器人化智能家居的基础设施中利用工业解决方案的优势。我们展示了ROS 2框架及其中间件协议如何在本地网络中提供自动设备发现和密集互动（包括实时互动），这非常方便。然而，这种方法主要适用于所谓的受信任区域 - 计算机网络中任何第三方参与者出现的可能性很小的部分。在这种情况下，我们信任所有正在运行的程序，并且不需要像在计算机内部程序相互交换数据时那样使用加密。
+
+但是，如果您需要确保ROS 2设备与某个外部服务的运行或者从外部提供对它们的远程访问怎么办？在这种时刻，会出现安全问题 - 一旦获得对一个ROS 2节点的访问权限，外部服务（潜在的恶意人员）基本上就获得了对所有其他节点的访问权限 - 它可以完全监听所有内部DDS流量并访问所有可用的系统服务。
+
+安全和速度/便利之间的经典权衡通过将主权智能家居系统分为两部分 - 安全和不安全部分来解决。
+
+## ROS 2安全性
+
+在ROS 2节点的工作空间中指定具有特殊安全要求的区域是一个相当不平凡的任务。标准ROS 2安全包（[sros2](https://docs.ros.org/zh/rolling/Concepts/Intermediate/About-Security.html))是[ros-core](https://ros.org/reps/rep-2001.html#id32)的一部分，所有ROS 2发行版都是基于它构建的，根据核心开发人员的说法，它旨在解决这个问题。它提供了在单个本地网络中设置相对简单的公钥基础设施（PKI）的能力。对于每个ROS 2节点，设置了对其他节点数据的访问策略，以及一组用于这种情况的标准文件 - 加密密钥和证书。在程序执行期间，节点只“看到”在项目启动阶段的配置中明确写入访问权限的数据源。然而，这种方法有一个主要缺点 - 系统中的所有流量都是加密的，这可能会影响由DDS创建的网络负载下的性能。将需要写出所有访问策略并为所有节点生成密钥。这很难设置和维护。最重要的是，我们正在失去ROS 2中间件的主要优势 - 性能。
+
+## 桥接器
+
+另一个解决方案是创建所谓的网关，它们传输必要的数据同时保持其他所有内容私密。通常，这是通过使用VPN或SSH隧道来实现的。在安全数据交换空间中创建一个单独的节点，该节点具有用于外部连接的公共地址。在这种情况下，安全管理仅在该节点的级别进行（实质上是对外界的一个窗口），而不影响所有其他节点。这种方法在项目[Husarnet](https://github.com/husarnet/husarnet)、[DDS Router](https://github.com/eProsima/DDS-Router)和[Zenoh Bridge](https://github.com/eclipse-zenoh/zenoh-plugin-ros2dds)中使用，但它也有其缺点。在这种情况下，您需要建立一个严格与对方IP地址或域名相关联的安全通信渠道。这些可能会发生变化，被阻止，或者容易受到攻击。在创建SSH时，这并没有被考虑。此外，SSH主要依赖于操作系统的访问控制系统，具有所有固有的缺点。
+
+<RbImage zoom src="/blog/images/secure-robotics-remote-control-via-web3/remote_control_legacy_approach.png" alt="通过公共IP和SSH/VPN进行经典远程控制"/>
+
+*这是用户目前通常远程连接到他们的机器人的方式。然而，这种方法有一些缺点。它需要一个公共IP或/和DNS名称，在一些国家可能会被阻止。它还需要将额外的私钥存储在潜在不安全的位置（例如，~/.ssh）中。*
+
+SSH主要由系统管理员和IT专家使用，需要对Bash命令行有基本的了解，并信任操作系统，因为加密密钥直接存储在文件系统或SSH代理中。管理访问密钥对于普通用户来说仍然是一个相当复杂的任务，以确保安全地保护他们的数据。
+
+## Web3解决方案
+
+正如我们所看到的，上述方法并非没有缺点，因此我们将考虑使用点对点网络技术的可能解决方案，而Robonomics就是建立在这些技术之上的。在这种情况下，分散的Robonomics云可以被视为一个安全的路由表，其中对方的地址是节点的公钥。您需要一个本地的Robonomics节点，并且需要知道您的对方有哪个公钥，以免依赖DNS系统（包括域名注册商和服务器）和IP地址阻止。Robonomics使用的[libP2P](https://libp2p.io/)库可以使用不同的传输协议进行消息传递。
+
+此外，随着Web3技术的进步，出现了更有效的管理关键信息（包括私钥）的方法。其中之一是助记词或种子 - 一组12或24个单词，用于在分散网络中创建帐户。这种方法既方便又安全，因为种子在初始化时仅写入外部介质（例如纸张）一次，并且仅用于恢复帐户。从助记词创建主密钥，可以为不同任务创建任何密钥层次结构（请参阅**[分层确定性密钥](https://docs.substrate.io/reference/command-line-tools/subkey/#hierarchical-deterministic-keys)**）。这简化了密钥管理以及在它们丢失时的恢复。如果恶意人士获得您的密钥对中的一个，他们将无法获取从助记词创建的其他密钥的信息。软派生密钥功能允许您确认对根帐户的所有权，而不必将其公开。因为软密钥可以使用父公钥派生，所以它们可以用于识别父级。密钥，而不暴露父种子。
+
+## 在Home Assistant中进行远程控制
+
+让我们更详细地研究连接过程。去中心化的[Robonomics应用程序](https://robonomics.app/)（或称DApp）直接在您的浏览器中运行，无需安装任何额外的软件，也无需在大量程序环境中存储密钥，这些程序的安全性您无法确定。访问密钥管理通过Polkadot JS扩展执行，还可以借助外部硬件密钥存储（例如[Polkadot Vault](https://wiki.polkadot.network/docs/polkadot-vault)）来提高可靠性。除了专门用于与Robonomics互动的软件外，DApp还包括一个轻量级的libP2P节点，通过该节点与Home Assistant建立连接。
+
+<RbImage zoom src="/blog/images/secure-robotics-remote-control-via-web3/robonomics_home_assistant_usecase.png" alt="Home Assistant远程控制" />
+
+Robonomics Web服务订阅的所有者通过所谓的控制器管理对智能家居基础设施的访问权限 - 这是一个账户，以加密形式在数字孪生体中管理所有敏感信息。只有添加到订阅中的用户才能解密这些数据。数字孪生体除了存储访问密钥外，还存储DApp配置和所谓的libP2P多地址，DApp连接到该地址以进行安全连接。多地址是使libP2P方法如此独特和灵活的创新之一。这是节点的地址的特殊格式，意味着存在许多IP地址、传输和网络标识符、协议和端口，通过这些可以联系到特定节点。支持的协议的完整列表在[规范](https://github.com/multiformats/multiaddr/blob/master/protocols.csv)中列出。
+
+因此，添加到订阅的用户从Robonomics数字孪生体中提取多地址，并与仅自己知道的Peer ID建立安全连接。成功！
+
+## 在ROS 2中进行远程控制
+
+同样，您可以利用Robonomics现有的功能与机器人进行互动。Robossembler团队在Robonomics Grant Program下开发了一个名为[Robonomics Bridge](https://gitlab.com/robossembler/robonomics_bridge)的概念验证项目。这个桥梁使您的ROS 2节点可以连接到任何外部服务、远程工作站或另一个ROS 2系统。
+
+<RbImage zoom src="/blog/images/secure-robotics-remote-control-via-web3/robonomics_ros2_usecase.png" alt="ROS 2通过Robonomics进行远程控制" />
+
+*这是一个关于在ROS 2中远程控制家用机器人的示例图。这种方法有许多重要优势：无需公共IP，即使通过网络防火墙（NAT），也可以访问机器人，私密加密密钥不会存储在磁盘上，得到可靠保护。*
+
+ROS 2中使用的协议DDS与libP2P自然结合，因为它们都具有类似的发布-订阅模型，用于节点交互。借助Robonomics桥接器，ROS 2节点及其接口 - 主题、服务、消息类型（例如，使用eProsima Integration Service）可以通过声明性配置，从而实现与外部机器人的交互。这也允许在连接到远程计算机时获得额外的安全性。获取对等方的PeerID的机制可以与Home Assistant中的情况相同 - 通过Robonomics节点的数字孪生请求，唯一的区别是，ROS 2机器人将取代Home Assistant服务器，Robonomics ROS 2包装器将连接到机器人，而不是libP2P-websocker-proxy。
+
+## 未来的潜在机会
+
+然而，这并不是去中心化云Web3技术可以提供的所有可能性。在上述示例中，这些技术用于在远程计算机之间传输消息数据流相对简单。
+
+这可以称为Robonomics网络堆栈中的基本传输级别，这是更复杂的高级协议实现的基础。从SSH类似物开始，意味着用户与其网络物理系统更互动，到应用协议，意味着大量用户与自主机器人基础设施进行交互。
+
+例如，决定启动某种产品的生产可以与组织内潜在消费者的投票联系起来，考虑到经济可行性。目前，启动任何生产的决定是通过投资机制做出的，投资者在获得有关潜在需求的信息后，可以购买那些未来可以满足这种需求的公司的股份。如果消费者能更积极地参与新产品的开发和定价，那么从长远来看，我们可以转向这种运作模式，生产将自动重组以满足消费者在网络中提供的数据所需求。

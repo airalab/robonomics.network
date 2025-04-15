@@ -1,34 +1,38 @@
-# Official website of Robonomics Network
+# Official Website of Robonomics Network
 
-This website is supposed to contain all useful information for our community. 
+This website serves as a hub for all essential information for our community.
 
-### How to suggest any changes
+## How to Suggest Changes
 
-1. Create an issue for this repo.
-2. Be sure you checked website carefully and the description of issue is quite clear.
-3. We will consider your suggestion as soon as we can and give you reply.
+1. **Create an issue** in this repository.
+2. **Review the website carefully** to ensure your issue is valid and clearly described.
+3. We will review your suggestion as soon as possible and respond accordingly.
 
-## For developers
+## For Developers
 
-* Built with [Gridsome](https://gridsome.org/).
-* Please, use [npm](https://www.npmjs.com) to install packages
+- Built with [Astro](https://astro.build/).
+- Use [yarn](https://yarnpkg.com/) to manage dependencies.
+- Node.js version must be **>=18.17.1**.
 
-To start it locally you need install node.js and [Gridsome framework](https://gridsome.org).
+### Getting Started
 
-**Start**
-`npm i`
+Ensure you have Node.js and the [Astro framework](https://astro.build/) installed before proceeding.
 
-**Develop**
-`gridsome develop`
+- **Install dependencies:** 
+`yarn install`
 
-**Build**
-`gridsome build`
+- **Start development server**
+`yarn dev`
+
+- **Build for production**
+`yarn build`
 
 ### How to add a new post
 
-1. You need to create **markdown** file in ``content/posts``. File name must be in *kebab case*: e.g `digital-twins-introduction.md`.
+1. Create a **Markdown (MDX)** file in the /scr/blog/ directory.
+- Use *kebab-case* for filenames (e.g., digital-twins-introduction.mdx).
 
-2. Then, you need to add ***Frontmatter***:
+2. Add **Frontmatter** metadata at the top of the file:
  
 It must be at the top of the Markdown file, and must take the form of valid YAML set between triple-dashed lines. Between the triple-dashed lines, you can set or edit following options:
 
@@ -38,7 +42,7 @@ title: 'Introduction to Digital Twins' # Title for the page, you do not need to 
 date: 2024-08-23 # Publishing date
 published: true # the status of the post (if `false` it won't be visible)
 locale: 'en' # locale in which the post was published
-tags: ['Digital Twin', 'Web3', 'Philosophy of Robonomics'] # tags to use on blog and filter posts
+tags: ['Digital Twin', 'Web3', 'Philosophy of Robonomics'] # tags to use on blog and filter posts (it a must parameter, include at least one tag)
 cover_image: ./images/digital-twins-introduction/cover.png # cover image
 description: "Digital twins are a powerful concept in modern technology. This guide will introduce you to the basics of digital twins, covering their history, types, current industry standards, and potential applications in Web3. Whether you're new to the topic or looking to refresh your knowledge, this concise overview will provide valuable insights." # description of the post
 abstract: "Digital twins are not a new concept; they emerged in the early 1990s and have since periodically captured the attention of researchers, engineers, and founders. Now, in 2024, digital twins are again in the spotlight—since 2016, according to Google Trends, interest in them has steadily grown. We believe it's important to familiarize readers with this concept, as the term is often interpreted loosely, making it challenging to understand. Igor Brylev [movefasta]" # abstract that will be added atop of the post page (not necessary)
@@ -46,42 +50,42 @@ translated: true # add this parameter if you translated the post by yourself and
 ---
 ```
 
-3. Add contents of the post following markdown syntax.
+3. Write the post content using **Markdown syntax**.
 
-### Components for post
+### Custom Components for Posts
 
 #### Images 
 
-- Create a folder with the same name as your post in `content/posts/images/url-of-your-post`. Upload images in the folder.
+- Create a folder with the same name as your post in `/public/blog/images/url-of-your-post`. Upload images in the folder.
 
-  - For localized posts:
-      Create folder with the locale you are using in `content/posts/images/locale`. Then, create folder with the same name as your post in `content/posts/images/locale/url-of-your-post`. Upload images in the folder.
+- For localized posts:
+  Create folder with the locale you are using in `public/blog/images/locale`. Then, create folder with the same name as your post in `/public/blog/images/locale/url-of-your-post`. Upload images in the folder.
 
 - There are two ways for inserting pictures in your post:
 
-1. With the custom component `rb-image`.
-It is recommended to insert pictures with built-in tag <rb-image>, however you may also use standard way for Markdown files.
+1. With the custom component `RbImage`.
+It is recommended to insert pictures with built-in tag <RbImage>, however you may also use standard way for Markdown files.
 
 ```
-  <rb-image zoom src="./images/digital-twins-introduction/2.png" alt="Physical asset's model" />
+  <RbImage zoom src="./images/digital-twins-introduction/2.png" alt="Physical asset's model" />
 ```
 
 - localized
 
 ```
-  <rb-image zoom src="../images/ru/digital-twins-introduction/1.png" alt="Классическая модель" /> 
+  <RbImage zoom src="../images/ru/digital-twins-introduction/1.png" alt="Классическая модель" /> 
 ```
 
 2. Using markdown syntax:
 
 ```
-  !["Robot Class Model"](./images/digital-twins-introduction/1.png)
+  !["Robot Class Model"](/images/digital-twins-introduction/1.png)
 ```
 
 - localized
 
 ```
-  !["Классическая модель"](../images/ru/digital-twins-introduction/1.png) 
+  !["Классическая модель"](/images/ru/digital-twins-introduction/1.png) 
 ```
 
 - Inserting localized post covers 
@@ -89,7 +93,7 @@ It is recommended to insert pictures with built-in tag <rb-image>, however you m
 If you need to localize your cover than your *cover_image* will look something like this: 
 
 ```
-  cover_image: ../images/ru/digital-twins-introduction/cover.png
+  cover_image: /images/ru/digital-twins-introduction/cover.png
 ```
 
 - Properties:
@@ -97,7 +101,7 @@ If you need to localize your cover than your *cover_image* will look something l
 | Property | Type | Required | Default | Description |
 |---|---|---|---|---|
 | `src` | `String` | `true` |  | path to the image |
-| `link` | `String` | `false` |  | loops youtube video |
+| `link` | `String` | `false` |  | if you want to make a link |
 | `zoom` | `Boolean` | `false` | `false` | add zoom to the image |
 | `space` | `Boolean` | `false` | `true` | add or remove space after picture element |
 | `caption` | `String` | `false` |  | caption for the image |
@@ -109,31 +113,30 @@ If you need to localize your cover than your *cover_image* will look something l
 
 #### Grid 
 
-The component helps to position elements in grid. 
+To structure content in a grid: 
 
 - Use grid wrapper component first: 
 
 ```c
-<rb-grid></rb-grid>
+<RbGridWrapper></RbGridWrapper>
 ```
 
 - And then use as many grid items components as you like inside wrapper:
 
 ```c
-  <rb-grid :columns="4" textAlign="center" align="end">
-    <rb-grid-element>
-      <rb-image zoom src="./images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensors Network Air Quality Hardware" caption="Caption testing" :captionItalic="false" :space="false" />
-    </rb-grid-element>
-    <rb-grid-element>
-      <rb-image zoom src="./images/robonomics-open-hardware-origins/altruist-hq.jpg" alt="Altruist Air Station" caption="Caption testing" :captionItalic="false" :space="false" />
-    </rb-grid-element>
-        <rb-grid-element>
-      <rb-image zoom src="./images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensors Network Air Quality Hardware" />
-    </rb-grid-element>
-    <rb-grid-element>
-      <rb-image zoom src="./images/robonomics-open-hardware-origins/altruist-hq.jpg" alt="Altruist Air Station" />
-    </rb-grid-element>
-  </rb-grid>
+  <RbGridWrapper columns="4" textAlign="center" align="end">
+    <RbGridElement>
+      <RbImage zoom src="/blog/images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensors Network Air Quality Hardware" caption="Caption testing" captionItalic="false" space="false" />
+    </RbGridElement>
+    <RbGridElement>
+      <RbImage zoom src="/blog/images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensors Network Air Quality Hardware" caption="Caption testing" captionItalic="false" space="false" />
+    </RbGridElement>
+    <RbGridElement>
+      <RbImage zoom src="/blog/images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensors Network Air Quality Hardware" caption="Caption testing" captionItalic="false" space="false" />
+    </RbGridElement>
+    <RbGridElement>
+      <RbImage zoom src="/blog/images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensors Network Air Quality Hardware" caption="Caption testing" captionItalic="false" space="false" />
+  </RbGridWrapper>
 
 ```
 
@@ -165,9 +168,9 @@ IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
 ```
 </pre>
 
-or `rb-code` component
+or `RbCode` component
 
-``<rb-code>``
+``<RbCode>``
 
 <pre>
 ```sh
@@ -180,19 +183,19 @@ import os
 ```
 </pre>
 
-``</rb-code>``
+``</RbCode>``
 
 
 #### Text Card
 
-You may use text card `<card>` component to accentuate you text block:
+You may use text card `<TextCard>` component to accentuate you text block:
 
 ```
-<Card alignContent="center">
+<TextCard alignContent="center">
 
 **1. Statistics of median leasing price from August to November 2022 (information taken from [parachains.info](http://parachains.info/)):**
 
-</Card>
+</TextCard>
 
 ```
 
@@ -201,28 +204,53 @@ You may use text card `<card>` component to accentuate you text block:
 | Property | Type | Required | Default | Description |
 |---|---|---|---|---|
 | `link` | `String` | `false` |  | if you want your card to be a link |
-| `linkTex` | `String` | `false` |  | text for the link |
-| `imageLocal` | `String` | `false` |  | if you need local image for your text card |
+| `linkText` | `String` | `false` |  | text for the link |
+| `imageExternal` | `String` | `false` |  | if you need an external image for your text card |
 | `image` | `String` | `false` |  | if you need image for your text card |
 | `imageSize` | `String` | `false` | `small` | size of your image </br> Options: `small`, `mid`, `big`, `block` |
-| `orientation` | `String` | `false` | `horizontal` | orientation for your text card </br> Options: `horizontal`, `vertical` |
+| `imageRound` | `Boolean` | `false` | `true` | border-radius for the icon |
+| `icon` | `String` | `false` | `` | if you want to add a small icon at the top of the card |
+| `orientation` | `String` | `` | `horizontal` | orientation for your text card </br> Options: `horizontal`, `vertical` |
 | `back` | `String` | `false` | `white` | background color of your card </br> Options: `transparent`, `white`, `darkblue`, `gradient` |
 | `shadow` | `String` | `false` | `gray` | shadow color for your card </br> Options: `light`, `gray`, `dark` |
 | `alignContent` | `String` | `false` | `none` | aligns content horizontally </br> Options: `left`, `center`, `right`,  `none` |
 | `alignContentV` | `String` | `false` | `top` | aligns content vertically </br> Options: `top`, `middle` |
+| `overlap` | `Boolean` | `false` | `true` | if link prop is not empty then the whole card becomes clickable link |
+| `className` | `Boolean` | `false` | `true` | if additional classes need to be added |
 
 
-#### Text Abstract
-You may use text abstract in your posts:
+### YouTube Embeds
+
+You may add YouTube video to a post like that:
 
 ```
-<Abstract :style="{marginBottom: '2rem'}" class="post_abstract"  :text="`<b>Robotics</b> is a rapidly developing field of science that allows people to create machines that can safely exist in a complex human world, interact with its inhabitants (humans and other machines), perform some useful actions, usually aimed at improving the humans’ quality of life and in some way to simplify it.`" />
+<YouTube id="https://www.youtube.com/watch?v=qX24V99GeW4" posterQuality="max" />
 ```
 
-| Property | Type | Required | Default | Description |
-|---|---|---|---|---|
-| `text` | `String` | `true` |  | text you want to add  for your abstract |
-| `className` | `String` | `false` |  | custom class for the component |
+Learn more about properties [here](https://astro-embed.netlify.app/components/youtube/)
+
+
+### How to Translate a Post
+
+- You must create **.env** file and add *OPENAI_KEY* variable with your key!
+
+- If you wish to translate your md document you need to run the command: 
+ 
+```bash
+yarn translate-md
+```
+
+> To translate all at once, every new lines in pages, new document or changed document you need only one command now 
+
+```bash
+yarn translate-all
+```
+
+> Also, make sure you are translating only the changed files that are **needed** to be translated. For example, you need to change 5 files. Three of them includes text changes and removing some outdated information. And the other two need to update links for some images or just change an external link. In this case, it would be wise to change the first three files and translate them and only then change links in the other two.
+
+> Translation happens to all changed files (24 hours update), but it's not necessary for the updated links, especially if the file large and therefore translation takes some time.
+
+After running the needed command all you have to do is wait and check the files (ai translations have some flaws). To check files run `yarn dev` and see if there are any errors.
 
 
 ## For contributors

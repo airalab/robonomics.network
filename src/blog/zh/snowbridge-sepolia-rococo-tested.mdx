@@ -1,0 +1,110 @@
+---
+title: "通过Snowbridge在Sepolia和Rococo资产中心之间成功测试XRT转移"
+date: 2024-07-22
+published: true
+locale: 'zh'
+cover_image: /blog/images/snowbridge-sepolia-rococo-tested/snowbridge-sepolia-rococo-tested.png
+description: "我们成功地使用Snowbridge协议在Sepolia和Rococo资产中心网络之间转移XRT代币进行了测试。"
+abstract: "Snowbridge是波卡和以太坊之间的通用、无信任和去中心化桥梁。"
+tags: ['Polkadot', 'Ethereum']
+---
+
+## 介绍
+
+大家好，正如您所知，Robonomics项目同时在以太坊和Kusama两个网络上运行。目前，还没有办法在这些网络之间转移XRT代币。因此，我们正在密切关注Snowbridge项目，该项目正在开发成为以太坊和波卡之间的通用桥梁：https://docs.snowbridge.network/
+
+在过去的一个月里，我们成功地按照Snowbridge的指导，通过测试网络Sepolia和Rococo资产中心之间转移了ERC20 XRT代币：
+
+https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers
+
+## 部署XRT合约并在Snowbridge上注册代币
+
+首先，在Sepolia上部署了XRT合约：
+
+https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf
+
+由于我们需要测试发送我们自己的代币，我们必须注册它。这一步骤包括两个部分：检查所需费用和注册代币：
+
+1. 为了检查所需费用，我们调用了桥梁合约的`quoteRegisterTokenFee`方法（https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#readProxyContract），得到了价值`5000000500000000000`：
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteRegisterTokenFee.png" alt="quoteRegisterTokenFee" />
+
+2. 为了注册代币，我们调用了桥梁合约的`registerToken`方法（https://sepolia.etherscan.io//地址/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#writeProxyContract)，指定所需费用和部署代币的地址：
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/registerToken.png" alt="registerToken" />
+
+注册过程大约需要30分钟，新代币应出现在Rococo Asset Hub的foreignAssets中。可以通过Rococo Asset Hub中的链状态查询进行检查（https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/chainstate）：
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/foreign_asset_query.png" alt="Check if token registered" />
+
+成功注册后，我们收到以下响应：
+```
+{
+    owner: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    issuer: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    admin: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    freezer: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    supply: 0
+    deposit: 100,000,000,000
+    minBalance: 1
+    isSufficient: false
+    accounts: 1
+    sufficients: 0
+    approvals: 0
+    status: Live
+}
+```
+
+## 从Sepolia测试XRT转账到Rococo Asset Hub
+
+接下来是将XRT代币从Sepolia发送到Rococo Asset Hub。为此，我们执行了以下操作：
+
+1. 首先，我们允许桥接合约从账户中使用15个XRT：
+
+    https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf#writeContract
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="批准 XRT 支出者" />
+
+2. 然后请求发送代币所需的费用：
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
+
+3. 根据 Snowbridge 的指示，使用 WETH 示例，启动了从 Sepolia 到 Rococo 资产中心的 XRT 转移：https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
+    
+    关于 `destinationAddress.data` 字段的重要说明：其值需要用引号括起来（例如 "0xb0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d"）。
+
+    在这个阶段，我们遇到了显著的延迟。交易花了几天的时间，而不是预期的 30 分钟。最终，我们所有的转账都成功完成了。
+    交易示例：https://sepolia.etherscan.io/tx/0xec539cd89cb955ffea2ff65cae6685a8abb0966a2c1b76876a308cc036cd18fb
+
+    可以通过在链状态中发送 `foreignAssets.account()` 请求来检查 Rococo 资产中心目标账户上的 XRT 余额：
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="foreignAssets.account 示例" />
+
+    总共发送了 15 XRT，因此 Rococo 资产中心的余额如下所示：
+    ```
+    {
+        balance: 15,000,000,000
+        status: Liquid
+        reason: Consumer
+        extra: null
+    }
+    ```
+
+## 从 Rococo 资产中心向 Sepolia 测试 XRT 转账
+
+最后一步是从 Rococo 资产中心将 XRT 发送回 Sepolia。我们在 Rococo 资产中心执行了以下外部操作： 
+
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/extrinsics/decode/0xe1028400b0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d01360c34e5d8f49f802fc1cc2413bfcd827b054b3ab1195bddcba0168dfaf9a47693b305b96e68d238d9adeed276452c2bc156b3bd189ba016543c354edd95ad81f501040000001f0b03020109079edaa8020300010300f42680c6a807de3cfdfcfe49583b01d80278a39e030400020209079edaa80203009e216c3af5f0c6ce70851b93dddb62573380cfef0002286bee0000000000
+
+此交易可在Rococo Asset Hub区块浏览器中查看：
+
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/explorer/query/0x3524f4bef9e736cdff1d812d79e130cf6ade7a3fe3222a0853772fd1b6c3c89a
+
+在Sepolia中对应的交易：
+
+https://sepolia.etherscan.io/tx/0xe8a95dca350143a0c41891137e332962f2918351dcfc2612519e69c7a5c46772
+
+这一步骤完成得相对较快，不到半小时。因此，1 XRT被转回Sepolia。Rococo Asset Hub中的XRT余额保持在14 XRT：
+
+```
+{
+    balance: 14,000,000,000
+    status: Liquid
+    reason: Consumer
+    extra: null
+}
+```

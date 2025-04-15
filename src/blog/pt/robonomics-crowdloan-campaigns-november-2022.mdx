@@ -1,0 +1,102 @@
+---
+title: Campanhas de Crowdloan da Robonomics, novembro de 2022
+date: 2022-11-18
+published: true
+locale: 'pt'
+tags: ['Parachain Robonomics', 'Polkadot']
+cover_image: /blog/images/robonomics-crowdloan-campaigns-november-2022/cover.jpg
+description: "O primeiro período de locação para o slot de Parachain da Robonomics na rede Kusama está chegando ao fim. Ao vencer o leilão #20, obtivemos a oportunidade de lançar, configurar e testar os primeiros projetos baseados na Robonomics dentro do ecossistema Polkadot."
+abstract: "O primeiro período de locação para o slot de Parachain da Robonomics na rede Kusama está chegando ao fim. Ao vencer o leilão #20, obtivemos a oportunidade de lançar, configurar e testar os primeiros projetos baseados na Robonomics dentro do ecossistema Polkadot."
+---
+
+Durante 2022, o Parachain Robonomics na Kusama foi utilizado em uma dúzia de projetos de P&D e processou mais de [4 milhões de transações](https://robonomics.subscan.io/) para dispositivos IoT no total.
+
+Os desenvolvedores da Robonomics desejam continuar a implementação do Parachain na rede Kusama. Agora, todo o ecossistema Polkadot está em uma fase de desenvolvimento dinâmico, e queremos estar na vanguarda desse processo. Em outras palavras, queremos permanecer na rede Kusama.
+
+Nossos planos para 2023 incluem o desenvolvimento ativo em torno da ideia de uma nuvem descentralizada para o controle da infraestrutura IoT doméstica. Atualmente, estamos trabalhando para garantir que nossa [aplicação descentralizada](https://robonomics.app/), [projeto wiki](https://wiki.robonomics.network/) e nosso recurso educacional, a [Academia Robonomics](http://robonomics.academy/), tenham todas as funções e informações necessárias para os proprietários de infraestrutura IoT.
+
+Também continuaremos a experimentar a abertura de novos canais XCM dentro do ecossistema Polkadot para encontrar a "construção" mais ótima da nuvem descentralizada para IoT, onde não apenas nosso Parachain, mas o ecossistema de Parachain em sua totalidade é usado para resolver os problemas decorrentes do mundo da Internet das Coisas. Por exemplo, um dos cenários mais óbvios nessa direção é um projeto de armazenamento de dados descentralizado chamado Crust Network, com o qual já abrimos um conjunto de canais HRMP.Em 2023, todos os usuários das assinaturas Robonomics IoT terão seu uso de armazenamento na rede Crust pago automaticamente. Em 2023, tentaremos aplicar uma abordagem semelhante em relação ao pagamento pelos serviços de outras parachains usando fundos armazenados na parachain Robonomics.
+
+Como resultado, hoje temos uma parachain funcional para lançar e enviar a telemetria de dispositivos IoT na rede Kusama. Estamos prontos para continuar nosso trabalho de P&D no caminho para nos tornarmos um concorrente totalmente qualificado da AWS para IoT, e no próximo ano daremos ênfase máxima em apoiar aqueles que deram o importante passo de decidir abandonar as nuvens centralizadas habituais.
+
+
+## Automatizando Campanhas de Empréstimo Coletivo, parte 2
+
+No ano passado, o conceito de um oráculo autônomo para campanhas de empréstimo coletivo foi introduzido pela primeira vez no artigo [Automating Crowdloan Campaigns](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/). Para os desenvolvedores da parachain Robonomics, encontrar uma opção para automatizar a vida da parachain é uma parte importante na construção de uma nuvem descentralizada para IoT. Este ano, pela primeira vez, tentaremos lançar uma campanha de empréstimo coletivo em nome da própria parachain. Abaixo, você pode encontrar os cálculos dos parâmetros da nova campanha de empréstimo coletivo, que planejamos eventualmente transformar em um processo completamente autônomo que será capaz de lançar novas campanhas e renovar com sucesso o contrato de locação de slot.
+
+Como esperado, após o primeiro lote de lances loucos em leilões, a situação se tornou muito mais estável / normal, e agora finalmente podemos nos voltar para algumas estatísticas sobre o custo de locação de slot. O algoritmo de renovação coletará estatísticas dos últimos doze leilões para calcular o preço médio de locação. Por exemplo, a tabela abaixo mostra estatísticas resumidas de julho a novembro de 2022 (informações retiradas de [parachains.info](https://parachains.info/auctions/)).
+
+<div class="big-table">
+
+  |                              | Leilão 60   | Leilão 59     | Leilão 58 | Leilão 57   | Leilão 56 | Leilão 55   | Leilão 54      | Leilão 53   | Leilão 52   | Leilão 51 | Leilão 50  | Leilão 49      | Leilão 48    |                                            
+    |------------------------------|--------------|----------------|------------|--------------|------------|--------------|-----------------|--------------|--------------|------------|-------------|-----------------|---------------|  
+  | **Vencedor**                 | Zeitgeist    | Crab Network   | -          | Crust Shadow | Genshiro   | DAO IPCI     | Parathread 2223 | Quartz       | Bit.Country  | Snow       | Subsocial   | Parathread 2130 | GM Parachain  |
+  | **Última Oferta (KSM)**      | 500          | 11             | 0          | 1 807        | 2 000      | 111          | 1 001           | 1 005        | 3 500        | 13 926     | 1 001       | 1 131           | 5 014         |
+  | **Contribuições**            | autofinanciado | autofinanciado | -       | 209          | 160        | autofinanciado | autofinanciado  | autofinanciado | autofinanciado | 782       | autofinanciado | autofinanciado  | 738           |
+  | **Número de participantes**  | 2            | 1              | 0          | 1            | 2          | 2            | 2               | 2            | 2            | 1          | 1           | 1               | 1             |
+
+</div>
+
+<TextCard alignContent="center" back="transparent">
+
+**Neste caso, a oferta mediana é:**
+
+![beta subscript med equals 1001KSM](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-1.svg)
+
+</TextCard>
+
+> Atualização 5 de dezembro: Devido a atualizações na rede Kusama ([atualização Gov2](https://twitter.com/nachortti/status/1588203599129190403)), a campanha de empréstimo coletivo da Robonomics será reiniciada nos próximos dias. O limite de coleta será aumentado para 10.050 KSM.
+
+Assim, o algoritmo usará esta oferta para estimar o limite da campanha de empréstimo coletivo.
+
+Além disso, como mencionado na [publicação anterior](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/), como critério principal para calcular a recompensa pela participação no empréstimo coletivo, usamos a estimativa do custo de oportunidade dos detentores de KSM em relação ao staking na Relay Chain. O mecanismo de staking do ecossistema Polkadot é projetado emde modo que o sistema forneça um retorno para aqueles que ajudam a manter a segurança da rede, ao mesmo tempo em que tenta garantir a liquidez do token nativo. Para isso, o parâmetro "*taxa de staking ideal*" (que a rede deve atingir) foi introduzido. Se o número de tokens em staking cair abaixo do valor ideal, as recompensas de staking aumentam (incentivando assim os usuários a fazer mais staking para melhorar a segurança da rede). E vice-versa, se a taxa de staking exceder o ideal, então as recompensas diminuem exponencialmente.
+
+Nosso algoritmo pressupõe que o sistema está em um estado acima do staking ideal (porque a segurança da rede é importante para nós), então **a taxa de juros anual máxima para staking** que é possível nessas condições é determinada pelo parâmetro de taxa de staking ideal e pela taxa de inflação máxima para stakers (ou seja, o número total de tokens emitidos para pagar aos validadores e indicadores):
+
+<TextCard alignContent="center" back="transparent">
+
+![i subscrito 'ideal' é igual a I subscrito NPoS dividido por x subscrito 'ideal'](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-2.svg)
+
+</TextCard>
+
+Você pode ler mais sobre esses cálculos no artigo de [Economia de Token](https://research.web3.foundation/en/latest/polkadot/overview/2-token-economics.html) da Pesquisa W3F.
+
+Na rede Kusama, a taxa de inflação é definida em 10%, ou seja, este é o máximo que será emitido para stakers em um cenário ideal. A taxa de staking ideal varia dependendo do número de parachains e atualmente é de 45% (conforme indicado no portal Polkadot.js da rede Kusama). Assim, obtemos:
+
+<TextCard alignContent="center" back="transparent">
+
+![i subscrito 'ideal' é igual a 0.1 dividido por 0.45 multiplicado por 100 por cento é igual a 22.22 por cento](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-3.svg)
+
+</TextCard>
+
+No momento, a *taxa de staking real* é de 52,6%, e o lucro dos participantes do staking está abaixo do nível ideal (cerca de 15%). Portanto, o algoritmo pode considerar o parâmetro de *taxa de juros ideal* para a campanha de crowdloan, encontrando assim um nível de recompensa para a participação na crowdloanque é justo para a rede e atrativo para os stakers.
+
+Agora podemos calcular a recompensa pela participação na campanha de empréstimo coletivo (XRT por 1 KSM), conhecendo o custo dos tokens no mercado:
+
+<TextCard alignContent="center" back="transparent">
+
+![R subscrito 'perKSM' é igual a (1 multiplicado por $KSM multiplicado por i subscrito 'ideal') dividido por $XRT](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-4.svg)
+
+</TextCard>
+
+Com a taxa de câmbio atual de KSM e XRT, a recompensa do empréstimo coletivo será de aproximadamente **2,06 XRT por 1 KSM**. Sabendo desse valor e do custo médio de alugar um slot, é fácil calcular os pagamentos totais aos participantes do empréstimo coletivo:
+
+<TextCard alignContent="center" back="transparent">
+
+![R subscrito 'total' é igual a beta subscrito 'med' multiplicado por R subscrito 'perKSM' é igual a 2075,03XRT](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-5.svg)
+
+</TextCard>
+
+> Atualização em 5 de dezembro: Devido às atualizações na rede Kusama ([atualização Gov2](https://twitter.com/nachortti/status/1588203599129190403)), a campanha de empréstimo coletivo da Robonomics será reiniciada nos próximos dias. O total do pool de recompensas foi aumentado para 20.750 XRT.
+
+## Movimento de tokenômica de parachain inflacionária para deflacionária
+
+O custo da segurança compartilhada na rede Kusama se estabilizou. Isso pode ser visto pelas estatísticas recentes de leilões de slots, os projetos não precisam alocar uma quantidade substancial de seu fornecimento de tokens nativos de parachain para recompensar os participantes da campanha de empréstimo coletivo. Além desse fato, devemos considerar que um mecanismo específico da Robonomics para queima de tokens nativos é ativado no momento em que um usuário ativa uma assinatura IoT - o que significa que a arquitetura da Robonomics dentro do ecossistema Polkadot pode realmente ser uma parachain com tokenômica deflacionária.
+
+Estima-se que a geração total de novos tokens de parachain da Robonomics em 2023 será inferior a 0,38% do número total de emissão de tokens de parachain. Há também ~370k XRT armazenados no tesouro da parachain da Robonomics, dos quais 3,5k XRT estãoautomaticamente queimada a cada mês. Isso significa que a parachain Robonomics em 2023 mostrará dinâmicas deflacionárias definitivas, com uma alta probabilidade de a deflação do token da parachain ser maior que 3%. A quantidade real de deflação dependerá da quantidade de XRT queimada durante a ativação das assinaturas de usuários de IoT.
+
+Devido a isso, os desenvolvedores da Robonomics planejam cancelar o staking de tokens durante o próximo período de locação de slot da parachain e focar fortemente no desenvolvimento adicional da arquitetura da parachain. Além disso, haverá um forte foco na redução da geração de novos tokens XRT (até onde for praticável) e no desenvolvimento ativo de mais serviços de parachain que utilizem a despesa (queima) de tokens XRT.
+
+Continue caminhando...
+
+![](/blog/images/robonomics-crowdloan-campaigns-november-2022/keep-walking.jpg)

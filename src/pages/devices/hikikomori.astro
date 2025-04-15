@@ -1,0 +1,64 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// data
+import devices from '../../data/devices.js';
+
+// components import 
+import DeviceBuySection from '../../components/blocks/DevicesBuySection.vue';
+
+// images
+import HikikomoriImage from "../../assets/images/hardware-2025/hikikomori.webp";
+
+// Filter products to get the current one
+const hikikomori = devices.products.filter(product => product.code === 'hikikomori');
+---
+
+
+<Layout 
+  title={$tr(hikikomori[0].title)} 
+  description={$tr("A smart home assistant you’ll enjoy caring for, even when you’re away. Only devs.")}
+  ogImage="/og-pics/devices-hikikomori.webp"
+  pageTitle={$tr(hikikomori[0].title)} 
+  backlink={{title: $tr('All hardware'), link: '/devices/', label: $tr('Go to all hardware')}}
+>
+
+  <DeviceBuySection price="$75" title={hikikomori[0].title} orderLinks={hikikomori[0].orderLinks} info={hikikomori[0].info} available={hikikomori[0].available} client:only>
+    <Image src={HikikomoriImage} alt={'Hikikomori smart Tamagotchi picture'}/>
+  </DeviceBuySection>
+
+  <article class="layout layout__text space-b-2">
+    <p>{$tr('Hikikomori runs on a ESP32-C6 microcontroller development board, has an LCD display, Wi-Fi 6 and BLE 5 support.')}</p>
+    <p>{$tr('Hikikomori is suitable for the quick development of Web3 powered IoT applications. This can be your smart home tamagotchi, a gaming controller, an educational tool - anything you design!')}</p>
+  </article>
+
+
+  <h2 class="layout title-lined"><span>{$tr('Device Specifications')}</span></h2>
+
+  <article class="layout layout__text space-b-2">
+    <ul>
+      <li> {$tr('Equipped with a high-performance')} <b>{$tr('32-bit RISC-V processor')}</b> {$tr('with clock speed up to 160 MHz, and a low-power 32-bit RISC-V processor with clock speed up to 20MHz')}</li>
+      <li><b>{$tr('Supports')}</b> {$tr('2.4GHz Wi-Fi 6 (802.11 b/g/n) and Bluetooth 5 (LE), with onboard antenna')}</li>
+      <li> <b> {$tr('Built in')}</b> {$tr('320KB ROM, 512KB of HP SRAM, 16KB LP SRAM and 4MB Flash memory')}</li>
+      <li><b>{$tr('Onboard')}</b> {$tr('1.47inch LCD display, 172x320 resolution, 262K color')}</li>
+      <li> <b>{$tr('Adapting')}</b> {$tr('multiple IO interfaces,')} <b>{$tr('integrates')}</b> {$tr('full-speed USB-С port')}
+      </li>
+      <li> {$tr('Onboard TF card slot</b> for external TF card storage of pictures or files')}</li>
+      <li><b>{$tr('Supports accurate control')}</b> {$tr('such as flexible clock and multiple power modes to realize low power consumption in different scenarios')}</li>
+      <li><b>{$tr('Built-in RGB LED')}</b> {$tr('with clear acrylic sandwich panel for cool lighting effect')}</li>
+      <li><b>{$tr('Battery Level Gauge')}</b></li>
+      <li><b>{$tr('Low-Power I2C Temperature sensor')}</b></li>
+      <li><b>{$tr('RV-3032-C7 Real-Time Clock Module')}</b></li>
+      <li><b>{$tr('Battery 180mA')}</b></li>
+    </ul>
+  </article>
+
+</Layout>
+
+
+<style>
+  img {
+    height: 100%;
+  }
+</style>

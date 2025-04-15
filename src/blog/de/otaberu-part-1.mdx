@@ -1,0 +1,71 @@
+---
+title: Otaberu - Open-Source-Tool zur Verwaltung von P2P-Netzwerken für Edge-Geräte und Robotik
+date: 2024-10-19
+published: true
+locale: 'de'
+tags: ['Ankündigungen']
+cover_image: /blog/images/otaberu-part-1/cover.png
+description: "Das rasante Wachstum der Gerätezahlen stellt neue Herausforderungen für Verfügbarkeit und Sicherheit dar. Eine effizientere Lösung ist erforderlich für die sichere Gerätekommunikation, die die Einschränkungen der auf SSH basierenden PKI anspricht. Der Roboter-Agent Otaberu bietet diese Lösung und ermöglicht eine benutzerdefinierte PKI für Roboter unter Verwendung moderner libP2P-Standards und Protokolle, um diese Probleme zu lösen."
+abstract: "Das rasante Wachstum der Gerätezahlen stellt neue Herausforderungen für Verfügbarkeit und Sicherheit dar. Eine effizientere Lösung ist erforderlich für die sichere Gerätekommunikation, die die Einschränkungen der auf SSH basierenden PKI anspricht. Der Roboter-Agent Otaberu bietet diese Lösung und ermöglicht eine benutzerdefinierte PKI für Roboter unter Verwendung moderner libP2P-Standards und Protokolle, um diese Probleme zu lösen."
+---
+
+Am Anfang des Computerzeitalters nutzten mehrere Personen einen einzigen Computer. Heutzutage nimmt die Anzahl der Geräte um uns herum stetig zu, und es ist üblich, dass jede Person zwei, drei oder mehr Geräte besitzt. Unternehmen besitzen Hunderte oder Tausende von Geräten, die Flotten bilden, und bald werden die meisten Menschen Flotten von Geräten in der Größe kleiner Unternehmen von heute haben. Daher besteht ein wachsender Bedarf an einfachen, aber effektiven Tools zur Sicherung der Kommunikation zwischen diesen Geräten, die die Einschränkungen traditioneller Methoden wie SSH überwinden..
+
+Wir stellen [otaberu](https://github.com/airalab/otaberu) vor - ein Open-Source-Tool, das entwickelt wurde, um Peer-to-Peer (P2P)-Netzwerke für Edge-Geräte und Robotik zu erleichtern. Dieses Tool konzentriert sich auf Zugänglichkeit und ermöglicht eine nahtlose Verbindung von Robotern und Edge-Geräten lokal oder global, ohne dass umfangreiche Netzwerkkonfigurationen erforderlich sind. Unter der MIT-Lizenz veröffentlicht, bietet dieses Tool die Sicherheit und Transparenz, die Entwickler wichtiger physischer Infrastrukturprojekte wirklich benötigen. Egal, ob Sie ein kleines Robotiklabor oder eine Flotte von Millionen verwalten, diese P2P-Lösung ist darauf ausgelegt, sich an Ihre Anforderungen anzupassen. Sie ermöglicht eine globale Kommunikation mithilfe der integrierten Public Key Infrastructure (PKI), die ein müheloses Umschalten zwischen lokalen und globalen Operationen ohne manuelle Neukonfiguration ermöglicht. Das Kernprotokoll, das in diesem Tool verwendet wird, wurde in einigen der größten verteilten Systeme getestet, um Robustheit und Zuverlässigkeit zu gewährleisten. Das Tool eignet sich für eine Vielzahl von Anwendungsfällen, einschließlich CI/CD-Automatisierung, Softwarebereitstellungen und effiziente Konfigurationsupdates für groß angelegte Roboterflotten. In diesem Beitrag werden wir auf die technischen Details eingehen und potenzielle Anwendungen erkunden.
+
+<YouTube id="https://www.youtube.com/watch?v=2ZKs4cWMLTE" posterQuality="max" />
+
+*Dieses kurze Video zeigt die Möglichkeiten von otaberu am Beispiel des Boston Dynamics Spot*
+
+## Hauptmerkmale
+
+### Zugriffsverwaltung
+
+Es gibt drei gängige Methoden zur Zugriffskontrolle für Computer. Die erste - die Verwendung von Passwörtern - ist charakteristisch für unerfahrene Benutzer. Es ist die schwächste inIm Bereich der Sicherheit gibt es drei Hauptmethoden zur Autorisierung von Zugriffen. Die zweite Methode - die Autorisierung durch kryptografischen Schlüssel - wird in den meisten Organisationen typischerweise von IT-Spezialisten verwendet. Diese Methode erfordert bereits einige Systemadministrationsfähigkeiten von den Benutzern, um die Ausgabe, Speicherung und Sicherheit dieser Schlüssel zu gewährleisten, da sie normalerweise auf der Festplatte gespeichert sind. Und schließlich ist die sicherste Methode die Autorisierung über Zertifikate. Die Aufrechterhaltung eines solchen Systems erfordert in der Regel zusätzliche Dienste, die konfiguriert werden müssen. Es handelt sich um die komplexeste Methode, erfordert hohe Qualifikationen und wird hauptsächlich von großen IT-Unternehmen wie Facebook, Amazon, Netflix verwendet, für die die Aufrechterhaltung der IT-Infrastruktur direkt mit dem Wert verbunden ist, den sie ihren Kunden bieten.
+
+Otaberu zielt darauf ab, gewöhnlichen Entwicklern den höchsten Schutz zu bieten, ohne komplexe Geheimverwaltungsdienste und tiefgreifendes Netzwerk-Know-how bereitzustellen. Das Tool ermöglicht die Erstellung eines CA (Certificate Authority)-Analogons basierend auf den kryptografischen Schlüsseln des Besitzers des Roboterflotten. Die Rolle des CA in Otaberu wird vom Besitzer übernommen - die erste und wichtigste Rolle im Set der Otaberu-Funktionen. Der Besitzer verfügt über eine einzige Konfigurationsdatei für seine Roboterflotte, über die das Zugriffsmanagement durchgeführt wird. Dort listet der Besitzer all seine Roboter, ihre Schlüssel und Metadaten sowie die autorisierten Benutzer auf, die eine Verbindung zu ihnen herstellen dürfen. Unser Team hat auch ein Befehlszeilen-Dienstprogramm namens rn-cli entwickelt, um die Konfigurationsdatei mithilfe einer Terminal-Schnittstelle zu erstellen und zu bearbeiten. Die Möglichkeit, eine Terminal-Schnittstelle zu starten, ist besonders wichtig für Geräte ohne grafische Anzeige, wie entfernte oder Einplatinencomputer mit begrenzten Ressourcen.
+
+<RbImage zoom src="/blog/images/otaberu-part-1/otaberu-tui-1.png" alt="Otaberu TUI Benutzeroberfläche" />  
+
+*Terminal-Benutzeroberfläche - Benutzer*
+
+<RbImage zoom src="/blog/images/otaberu-part-1/otaberu-tui-2.png" alt="Otaberu TUI Roboter-Benutzeroberfläche" />  
+
+*Terminal-Benutzeroberfläche - Roboter*
+
+### Netzwerk **Zugänglichkeit**
+
+Im Artikel [Sichere Robotik-Fernsteuerung: Robonomics-Lösung](https://robonomics.network/blog/secure-robotics-remote-control-via-web3/) gingen wir erstmals auf den Aspekt der sicheren Verbindung zu Robotern ein, die Probleme in Form von NAT mit sich bringt, und was die Web3-Welt in dieser Hinsicht bieten kann, wo wir kurz die libP2P-Bibliothek erwähnten.
+
+Im Allgemeinen ist libP2P nicht genau eine Bibliothek, wie sie normalerweise genannt wird. Ihre Natur ist zweigleisig. Einerseits repräsentiert libP2P einen sogenannten Netzwerkstapel oder eine Reihe von Spezifikationen. In dieser Hinsicht ähnelt es eher dem Internet als einem bestimmten Softwareprojekt.
+
+Der legendäre Klassiker der Open-Source-Bewegung, der Schöpfer von ZeroMQ Peter Hintjens, schrieb in seinem Buch "Soziale Architektur": 
+
+> Die innovative Natur des Internets stammt nicht von einer kleinen, ausgewählten Gruppe von Einsteins. Sie stammt von RFCs, die jeder nutzen und verbessern kann, erstellt von Hunderten und Tausenden.von intelligenten, wenn auch nicht einzigartig intelligenten, Personen. Es stammt aus Open-Source-Software, die jeder nutzen und verbessern kann. Es kommt aus dem Teilen, Remixen und der Skalierung der Community. Es kommt aus der kontinuierlichen Anhäufung guter Lösungen und der Beseitigung schlechter.
+
+Im Kern von libP2P befinden sich verschiedene Dokumente oder Spezifikationen, die Formate, Protokolle und Konventionen standardisieren und vorschreiben, wie verschiedene P2P-Technologien funktionieren sollten. Der zweite Aspekt von libP2P oder der Rand dieses Stapels besteht aus Bibliotheken, die diese Standards implementieren. Diese Bibliotheken sind in verschiedenen Programmiersprachen geschrieben (derzeit gibt es Implementierungen in Go, Rust, TypeScript, Nim, C++, Swift, Kotlin/JVM, Python und sie werden aktiv entwickelt) oder Frameworks. Dennoch sind sie alle kompatibel, wenn sie denselben Satz von Standards und das verwendete Protokoll unterstützen.
+
+Die sorgfältig entworfene Originalarchitektur von libP2P ermöglicht die Verwendung verschiedener Transportoptionen (tcp, quic, websocket), Routing und NAT-Traversal (autonat, circuit-relay-v2, hole-punching), sichere Verbindung (tls, noise), Knotenerkennung (Bootstrap, Random-Walk, mdns-discovery, Rendezvous), Nachrichtenübertragungsprotokolle, Datenstrom-Multiplexing und andere Tools zur Erstellung von Peer-to-Peer-Netzwerken. Detaillierte Informationen finden Sie auf der [Implementierungsseite von libp2p.io](https://libP2P.io/implementations/).
+
+Mit Hilfe von libP2P vereinfacht otaberu die Geräteverbindung ohne komplexe Netzwerkkonfigurationen. Geräte ohne direkten Internetzugang können sich mit anderen Geräten im lokalen Netzwerk verbinden und Updates aus dem globalen Netzwerk empfangen. Durch die Kombination dieser Technologien ermöglicht dieses Tool die effiziente Selbstorganisation von Robotern und Edge-Geräten in zusammenhängende Netzwerke, unabhängig davon, ob sie sich im selben physischen Raum befinden oder global verteilt sind.
+
+## Anwendungsfälle
+
+Die Möglichkeiten dieses Tools sind umfangreich und bieten Lösungen für eine Vielzahl von Netzwerkherausforderungen bei Edge-Geräten und Robotik:
+
+- **CI/CD-Pipelines für die Robotikentwicklung**: Automatisieren Sie CI/CD-Prozesse über die gesamte Robotikflotte hinweg. Dieses Tool unterstützt die effiziente Aktualisierung von Software auf mehreren Knoten, was die Entwicklung und Bereitstellungszyklen optimiert.
+- **Datenstrom-Pipelines**: Etablieren Sie eine zuverlässige Kommunikation für die Datensammlung und -verarbeitung innerhalb einer Flotte. Dies führt zu konsistenten Erkenntnissen aus den von verschiedenen Edge-Geräten generierten Daten und hilft dabei, die Daten zu entkoppeln.
+- **Konfigurationsupdates ohne Internetzugang**: Ein praktisches Beispiel ist ein Roboter, der eine aktualisierte Konfiguration von einem Cloud-Dienst empfängt und diese Aktualisierung dann lokal mit anderen Robotern im Netzwerk teilt. Dieser Ansatz ermöglicht es nicht internetverbundenen Robotern, auf dem neuesten Stand zu bleiben, ohne direkte Internetverbindung zu benötigen.
+
+### Zukünftige Verbesserungen
+
+Wir arbeiten aktiv daran, die Funktionalität dieses P2P-Tools zu erweitern:
+
+- **Zugriffssteuerungslisten (ACLs)**: Einführung von benutzerbasierten Zugriffskontrollen, um unterschiedliche Berechtigungsebenen zu ermöglichen. Dies wird es Systemadministratoren, Entwicklern und Endbenutzern ermöglichen,interagieren Sie mit spezifischen Robotern oder Funktionalitäten gemäß ihrer Rolle.
+- **Optimierter Datenstreaming**: Implementierung von Direktverbindungen nach der anfänglichen Entdeckung durch libP2P zur Verbesserung der Leistung des Video-Streamings, Optimierung der verfügbaren Bandbreite für videolastige Anwendungsfälle.
+
+### Bleiben Sie informiert
+
+Dieser Beitrag ist Teil unserer laufenden Serie zur modernen Softwareentwicklung für Robotik. Zukünftige Artikel werden Diskussionen zur PKI-Integration in der Robotik, effektive CI/CD-Strategien und bewährte Verfahren zur Integration dieses Tools mit ROS 2 (Robot Operating System) umfassen. Für Entwickler, die an der Entwicklung verteilter Systeme, der Verwaltung von Robotiknetzwerken oder der Erweiterung der Flottenfähigkeiten interessiert sind, ist dieses Tool darauf ausgelegt, Wert zu bieten und Ihre Operationen zu vereinfachen. Wir ermutigen Sie, das Open-Source-Repository zu erkunden und zu dessen Entwicklung beizutragen. Wir würden uns freuen, Ihr Feedback auf Github oder Discord zu erhalten.
+
+**Erste Schritte**: Greifen Sie auf unser Open-Source-Repository [hier](https://github.com/airalab/otaberu) zu und folgen Sie der Dokumentation, um Ihr erstes P2P-Netzwerk einzurichten.

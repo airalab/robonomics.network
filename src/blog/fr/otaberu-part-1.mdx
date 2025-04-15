@@ -1,0 +1,67 @@
+---
+title: Otaberu - Outil Open-Source pour Gérer les Réseaux P2P des Appareils Périphériques et des Robots
+date: 2024-10-19
+published: true
+locale: 'fr'
+tags: ['Annonces']
+cover_image: /blog/images/otaberu-part-1/cover.png
+description: "La croissance rapide du nombre d'appareils crée de nouveaux défis en termes de disponibilité et de sécurité. Une solution plus efficace est nécessaire pour assurer une communication sécurisée entre les appareils, en contournant les limitations de la PKI basée sur SSH. L'agent-robot Otaberu propose cette solution, permettant de mettre en place une PKI personnalisée pour les robots en utilisant des normes et des protocoles modernes libP2P pour résoudre ces problèmes."
+abstract: "La croissance rapide du nombre d'appareils crée de nouveaux défis en termes de disponibilité et de sécurité. Une solution plus efficace est nécessaire pour assurer une communication sécurisée entre les appareils, en contournant les limitations de la PKI basée sur SSH. L'agent-robot Otaberu propose cette solution, permettant de mettre en place une PKI personnalisée pour les robots en utilisant des normes et des protocoles modernes libP2P pour résoudre ces problèmes."
+---
+
+À l'aube de l'ère de l'informatique, plusieurs personnes utilisaient un seul ordinateur. Aujourd'hui, le nombre d'appareils autour de nous se multiplie, et il est courant pour chaque personne de posséder deux, trois ou plus d'appareils. Les entreprises possèdent des centaines ou des milliers d'appareils qui forment des flottes, et bientôt, la plupart des gens auront des flottes d'appareils de la taille de petites entreprises aujourd'hui. Par conséquent, il est de plus en plus nécessaire de disposer d'outils simples mais efficaces pour sécuriser la communication entre ces appareils, dépassant les limitations des méthodes traditionnelles telles que SSH.Nous présentons [otaberu](https://github.com/airalab/otaberu) - un outil open source conçu pour faciliter le réseau pair à pair (P2P) pour les appareils périphériques et la robotique. Cet outil met l'accent sur l'accessibilité, permettant une connexion transparente des robots et des appareils périphériques localement ou mondialement sans avoir besoin d'une configuration réseau étendue. Publié sous la licence MIT, cet outil fournit la sécurité et la transparence dont les développeurs de projets d'infrastructure physique importante ont vraiment besoin. Que vous gériez un petit laboratoire de robotique ou une flotte de millions, cette solution P2P est conçue pour s'adapter à vos besoins. Elle permet une communication mondiale en utilisant une infrastructure à clé publique (PKI) intégrée, permettant un basculement sans effort entre les opérations locales et mondiales sans reconfiguration manuelle. Le protocole de base utilisé dans cet outil a été testé dans certains des plus grands systèmes distribués, garantissant robustesse et fiabilité. L'outil est bien adapté à une gamme de cas d'utilisation, y compris l'automatisation CI/CD, les déploiements de logiciels et les mises à jour de configuration efficaces pour les flottes de robots à grande échelle. Cet article explorera les spécificités techniques et les applications potentielles.
+
+<YouTube id="https://www.youtube.com/watch?v=2ZKs4cWMLTE" posterQuality="max" />
+
+*Cette courte démonstration vidéo montre les possibilités d'otaberu dans le cas du Boston Dynamics Spot*
+
+## Fonctionnalités clés
+
+### Gestion des accès
+
+Il existe trois méthodes courantes de contrôle d'accès pour les ordinateurs. La première - l'utilisation de mots de passe - est caractéristique des utilisateurs peu qualifiés. C'est la plus faible enEn termes de sécurité, la deuxième - l'autorisation par clé cryptographique - est généralement utilisée par les spécialistes en informatique dans la plupart des organisations. Cela nécessite déjà des compétences en administration système de la part des utilisateurs pour l'émission, le stockage et la garantie de la sécurité de ces clés car elles sont généralement stockées sur le disque dur. Enfin, la méthode la plus sécurisée est l'autorisation par certificats. Généralement, la maintenance d'un tel système nécessite des services supplémentaires qui nécessitent une configuration. C'est la méthode la plus complexe, exige des qualifications élevées et est principalement utilisée par de grandes entreprises informatiques comme Facebook, Amazon, Netflix, pour lesquelles la maintenance de l'infrastructure informatique est directement liée à la valeur qu'elles apportent à leurs clients.
+
+Otaberu vise à fournir aux développeurs ordinaires le plus haut niveau de protection sans déployer de services complexes de gestion des secrets et de connaissances approfondies en réseau. L'outil permet la création d'un analogue de CA (Certificate Authority) basé sur les clés cryptographiques du propriétaire de la flotte de robots. Le rôle de CA dans otaberu est joué par le propriétaire - le premier et principal rôle dans l'ensemble des fonctions d'otaberu. Le propriétaire possède un seul fichier de configuration pour sa flotte de robots, à travers lequel la gestion des accès est effectuée. Là, le propriétaire répertorie tous ses robots, leurs clés et métadonnées, et les utilisateurs autorisés à s'y connecter. Notre équipe a également développé un utilitaire en ligne de commande appelé rn-cli pour créer et modifier le fichier de configuration en utilisant une interface de terminal. La possibilité de lancer une interface de terminal est particulièrement significative pour les appareils sans affichage graphique, comme les ordinateurs à distance ou à carte unique avec des ressources limitées.
+
+<RbImage zoom src="/blog/images/otaberu-part-1/otaberu-tui-1.png" alt="Interface Utilisateur Otaberu TUI" />  
+
+*Interface Utilisateur Terminal - Utilisateurs*
+
+<RbImage zoom src="/blog/images/otaberu-part-1/otaberu-tui-2.png" alt="Interface Robots Otaberu TUI" />  
+
+*Interface Utilisateur Terminal - Robots*
+
+### **Accessibilité du Réseau**
+
+Dans l'article [Contrôle à Distance Sécurisé des Robots : Solution Robonomics](https://robonomics.network/blog/secure-robotics-remote-control-via-web3/), nous avons abordé en premier lieu l'aspect de la connexion sécurisée aux robots, les problèmes qui se posent sous la forme de NAT, et ce que le monde Web3 peut offrir à cet égard, où nous avons brièvement mentionné la bibliothèque libP2P.
+
+En général, libP2P n'est pas exactement une bibliothèque, comme on l'appelle habituellement. Sa nature est double. D'une part, libP2P représente une pile réseau ou un ensemble de spécifications. À cet égard, il est plus similaire à l'Internet qu'à un projet logiciel spécifique.
+
+Le classique légendaire du mouvement open source, créateur de ZeroMQ Peter Hintjens, a écrit dans son livre "Social Architecture" :
+
+> La nature innovante de l'Internet ne vient pas d'un petit groupe restreint d'Einstein. Elle vient des RFC que tout le monde peut utiliser et améliorer, créés par des centaines et des milliers.d'individus intelligents, bien que pas nécessairement uniques. Il provient d'un logiciel open source que tout le monde peut utiliser et améliorer. Il découle du partage, du remixage et de l'échelle de la communauté. Il découle de l'accumulation continue de bonnes solutions et de l'élimination des mauvaises.
+
+Au cœur de libP2P se trouvent divers documents ou spécifications qui standardisent les formats, les protocoles et les conventions, prescrivant comment diverses technologies P2P devraient fonctionner. Le deuxième aspect de libP2P, ou la périphérie de cette pile, se compose de bibliothèques mettant en œuvre ces normes. Ces bibliothèques sont écrites dans différents langages de programmation (actuellement, des implémentations en Go, Rust, TypeScript, Nim, C++, Swift, Kotlin/JVM, Python existent et sont en développement actif) ou frameworks. Néanmoins, elles sont toutes compatibles entre elles si elles prennent en charge le même ensemble de normes et le protocole utilisé.
+
+L'architecture originale soigneusement conçue de libP2P permet l'utilisation de différentes options de transport (tcp, quic, websocket), de routage et de traversée NAT (autonat, circuit-relay-v2, hole-punching), de connexion sécurisée (tls, noise), de découverte de nœuds (bootstrap, random-walk, mdns-discovery, rendezvous), de protocoles de transmission de messages, de multiplexage de flux de données, et d'autres outils pour créer des réseaux pair à pair. Des informations détaillées peuvent être obtenues sur la page des implémentations de [libp2p.io](https://libP2P.io/implementations/)Avec l'aide de libP2P, otaberu simplifie la connectivité des appareils sans configurations réseau complexes. Les appareils sans accès direct à Internet peuvent se connecter à d'autres appareils dans le réseau local et recevoir des mises à jour du réseau mondial. En combinant ces technologies, cet outil permet l'auto-organisation efficace des robots et des appareils périphériques en réseaux cohésifs, qu'ils opèrent dans le même espace physique ou soient répartis à l'échelle mondiale.
+
+## Cas d'utilisation
+
+Les capacités de cet outil sont étendues, offrant des solutions à divers défis de mise en réseau dans les appareils périphériques et la robotique :
+
+- **Pipelines CI/CD pour le développement robotique** : Permet l'automatisation des processus CI/CD à travers la flotte robotique. Cet outil prend en charge la mise à jour du logiciel sur plusieurs nœuds de manière efficace, rationalisant les cycles de développement et de déploiement.
+- **Pipelines de flux de données** : Établir une communication fiable pour la collecte et le traitement des données au sein d'une flotte. Cela permet d'obtenir des informations cohérentes à partir des données générées par différents appareils périphériques, aidant à briser les silos de données.
+- **Mises à jour de configuration sans accès à Internet** : Un exemple pratique est un robot recevant une configuration mise à jour à partir d'un service cloud, puis partageant cette mise à jour localement avec d'autres robots dans le réseau. Cette approche permet aux robots non connectés à Internet de rester à jour sans nécessiter de connectivité Internet directe.
+
+### Améliorations futures
+
+Nous travaillons activement à étendre les fonctionnalités de cet outil P2P :
+
+- **Listes de contrôle d'accès (ACL)** : Introduction de contrôles d'accès basés sur les utilisateurs pour permettre différents niveaux d'autorisations. Cela permettra aux administrateurs système, aux développeurs et aux utilisateurs finaux deinteragir avec des robots spécifiques ou des fonctionnalités selon leur rôle.
+- **Diffusion de données optimisée** : Mise en œuvre de liens directs après la découverte initiale via libP2P pour améliorer les performances de diffusion vidéo, optimisant la bande passante disponible pour des cas d'utilisation riches en vidéos.
+
+### Rester Informé
+
+Cet article fait partie de notre série continue couvrant le développement de logiciels robotiques modernes. Les prochains articles incluront des discussions sur l'intégration de PKI dans la robotique, des stratégies efficaces de CI/CD, et les meilleures pratiques pour intégrer cet outil avec ROS 2 (Robot Operating System). Pour les développeurs intéressés par la construction de systèmes distribués, la gestion de réseaux robotiques, ou l'extension des capacités de flotte, cet outil est conçu pour apporter de la valeur et simplifier vos opérations. Nous vous encourageons à explorer le dépôt open-source et à contribuer à son développement. Nous aimerions recevoir vos retours sur Github ou Discord.
+
+**Commencez**: Accédez à notre dépôt open-source [ici](https://github.com/airalab/otaberu) et suivez la documentation pour configurer votre premier réseau P2P.

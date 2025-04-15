@@ -1,0 +1,19 @@
+/* default */
+@import "./variables.css";
+@import './reset.css';
+@import './base.css';
+@import './layouts.css';
+@import './typography.css';
+@import './utils.css';
+
+/* extras */
+@import "./animation.css";
+@import "./fonts.css";
+
+/* components */
+@import "./forms.css";
+@import './components/3dmodels.css';
+@import './components/postCard.css';
+
+
+

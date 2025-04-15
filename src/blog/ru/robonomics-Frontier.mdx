@@ -1,0 +1,105 @@
+---
+title: Robonomics Frontier
+date: 2021-07-23
+published: true
+locale: 'ru'
+cover_image: /blog/images/Robonomics-Frontier/Robonomics-Frontier_cover_2_blog.jpg
+description: "В результате летних краудлоанов Kusama Robonomics достигла Топ-10 проектов экосистемы Polkadot. Перед следующей волной аукционов разработчики проекта решили развернуть и поддерживать функционально идентичную сеть."
+abstract: "В результате летних краудлоанов Kusama Robonomics достигла Топ-10 проектов экосистемы Polkadot. Перед следующей волной аукционов разработчики проекта решили развернуть и поддерживать функционально идентичную сеть — Frontier Relay chain, которая будет интегрирована с парачейном Robonomics."
+tags: ['Robonomics парачейн', 'токен XRT', 'Стейкинг', 'План развития']
+---
+
+## Не дикий кузен Kusama
+
+Цепь ретрансляции Kusama находится в стадии разработки и проходит все обновления, используя стабильные версии релизов Polkadot. Например, текущая версия Kusama была построена на [polkadot v0.9.8](https://github.com/paritytech/polkadot/releases/tag/v0.9.8) релизе.
+
+![Цепь ретрансляции Kusama и релиз Polkadot 0.9.8](/blog/images/Robonomics-Frontier/Kusama-Relay-Chain-and-Polkadot-release-0-9-8.jpg)
+
+Цепь ретрансляции Frontier будет использовать те же версии релизов Polkadot, которые будут реализованы сетью Kusama в виде ее цепи ретрансляции.
+
+Чтобы подключиться к цепи ретрансляции Frontier, вы можете использовать портал Substrate, перейдя по этой ссылке: https://parachain.robonomics.network/
+
+Подключив парачейн Robonomics к цепи ретрансляции Frontier, мы можем иметь блокчейн, который может работать в реальном времени и будет интегрирован в сеть Kusama. Это означает, что нам нужно преодолеть все проблемы, с которыми столкнутся парачейны Kusama. Все новые возможности, которые появятся с новыми релизами Polkadot, также будут поддерживаться парачейном Robonomics.
+
+## XCMP и интеграция с парачейнами Kusama
+
+Возможно, единственным недостатком сегодня (в 2021 году), когда мы говорим о жизненном цикле в сети Frontier, а нео главной сети Kusama отсутствует интеграция через [XCMP](https://wiki.polkadot.network/docs/learn-crosschain#overview-of-xcmp).
+
+Но это не означает, что нельзя выполнить технические задачи по интеграции и подготовить параконтракт Robonomics к работе с Karura, Moonriver и Khala. Именно эти три параконтракта интересны команде Robonomics с точки зрения интеграции. Мы можем начать поддерживать работу в сети Frontier с копиями упомянутых проектов, но только после выпуска общедоступной документации и первых образцов использования Kusama (как создать торговую пару на Karura, связать функции параконтракта с умными контрактами solidity/ink на Moonriver или обеспечить конфиденциальность данных с помощью Khala).
+
+Лично я ожидаю, что процесс интеграции параконтрактов будет проводиться очень осторожно в первый год, и возможно, другие проекты также будут работать вместе в песочницах, а затем передадут механизмы интеграции в сеть Kusama. Таким образом, Robonomics сможет быть в сети Kusama прямо до момента активной интеграции между проектами.
+
+## Генезис-блок параконтракта Robonomics в сети Frontier
+
+В генезис-блоке будут представлены балансы XRT участников эксодуса, участников краудлоана и коллаторов открытой тестовой сети. Этот блок будет сформирован всего за несколько дней до запуска параконтракта в сети Frontier. Мы объявим об этом обновлении в нашем [Twitter](https://twitter.com/AIRA_Robonomics) и [Telegram](https://t.me/Robonomics_ann).
+
+Мы ожидаем, что генезис-блок будет сформирован в период с 28 по 31 июля.
+
+Важная информация для держателей XRT в сети Ethereum: Чтобы участвовать в генезис-блоке параконтракта и принимать участие в стейкинге, вы можете использовать dapp exodus до 28 июля. После 28 июля возможность перевода токенов XRT в Ethereum на Frontier останется доступной. Но этот процесс будет выполняться техническим комитетом сети не чаще одного раза в неделю.
+
+Также мы хотели бы отметить, что эксодус не позволит вам вернуться до момента подключения параконтракта Robonomics к сети Kusama и появления подходящего моста к Ethereum. Ситуация примерно аналогична процессу перехода на Ethereum 2.0 для держателей ETH.
+
+## Стейкинг XRT
+
+Стейкинг XRT вRobonomics parachain aims to split the capacity between two options of payments: for transaction or for subscription. You can read more about this in the article [“RWS overview, part 2 “Heterogeneous tokenomics”](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855) on Medium.
+
+The basis of reward for the staking will be ~ 10%. This amount helps to launch the parachain. In the future, the reward will be determined by [Democracy pallet](https://substrate.dev/rustdocs/latest/pallet_democracy/) for XRT holders. 
+
+Crowdloan contributors will get increased reward rate — 50%. Thus, it will help us to test the mechanism: “Parachain, which always wins”, which will propose adaptive reward for staking Robonomics to the reward for staking in Kusama / Polkadot relay chain and considering XRT price to KSM/DOT. We will explain later in detail about this mechanism and after a few tests. 
+
+Staking will be available from the update 1.1 in Frontier network. Please note that tokens transfer in parachain will be turned off on the start, similar to the launch of the Polkadot Relay chain.
+
+## Roadmap - Life after auction
+
+Regardless of that we did not win a slot — the roadmap of parachain development won’t change. Below you will find our plans that were published in the article: https://robonomics.network/blog/crowdloan-starts-today/.
+
+<TextCard>
+
+### Part 1: Establishing core functionality
+
+In 3 months after the Robonomics parachain launch, Robonomics developers are going to activate the core functionally that’s been developing during 2019-2021, and also supplement the network with modules that have proven themselves in the Polkadot and Kusama ecosystems.
+
+* **Genesis state: (0 week)** Launch of the starter pack of Robonomics parachain functions with IoT management services and collators reward systems.
+* **Update 1.1** Staking and allowing transfers (3 - 4 week). Will allow you to transfer XRT and stake your XRT with a 10% APR for all token holders and 50% for Crowdloan participants.
+* **Update 1.2** Treasury and Technical committee (4 - 6 week). Will allow transferring a share ofПеревод на русский язык:
+
+DAO переводит средства с Ethereum на парачейн. Технический комитет может проводить экстренные референдумы. Они используются для экстренного устранения ошибок или быстрой реализации новых, но проверенных в бою функций в рабочее время.
+* **Обновление 1.3** RWS (7 - 8 недель). Позволит использовать функции управления IoT не только с оплатой комиссии в XRT, но и с ежемесячной подпиской.
+* **Обновление 1.4** Робот-как-сервис (9 - 10 недель). Позволит реализовать процесс управления предоставлением автоматизированных услуг и использовать платежи в рамках транзакций для запуска устройств.
+* **Обновление 1.5** Функциональность XCMP и Robobank (11 - 12 недель). Решение основано на архитектуре Polkadot XCMP, которая позволит любому парачейну получить доступ к управлению устройствами IoT с оплатой в собственном токене.
+* **Обновление 1.6** Демократия и удаление Sudo (13 - 14 недель). Разработчики не смогут вмешиваться в работу сети без участия технического комитета или голосования держателей токенов парачейна.
+
+</TextCard>
+
+<TextCard>
+
+### Часть 2: Запуск сервисов на основе исследований и разработок Robonomics
+
+Вторая часть роста парачейна Robonomics в Kusama предназначена для запуска сервисов на основе предыдущих проектов исследований и разработок команды Robonomics.
+
+* **Глобально доступные цифровые паспорта продуктов** Дополняя статус цифровых двойников информацией о произведенных продуктах, клиенты смогут выдавать цифровые паспорта, защищенные от изменений и потери информации в будущем. Этот сценарий использования уже реализован в качестве пилотного проекта на предприятии, производящем дроны. Решение используется для контроля качества во время упаковки с видеозаписью.
+* **Умная аренда IoT и робототехники** Мы продемонстрируем возможность использования парачейна Robonomics для аренды устройства IoT/робототехники. На примере 2 роботов, управляемых парачейном Robonomics в 2 разных отраслях. Первый сценарий использования - образовательная программа на основе SDK Boston Dynamics, в рамках которой разработчики научатся управлять знаменитым роботом-собакой - Spot. Второй - промышленный манипулятор, проданный по договору аренды в Соединенных Штатах. Оба робота предоставят клиентам автоматически генерируемые отчеты в конце пользовательской сессии.
+* **Сервисы по смягчению воздействия на окружающую среду для умных зданий с реальными кредитами углерода** Это позволит клиентам автоматически собирать информацию о потреблении электроэнергии в доме или многоквартирном здании, сжигать кредиты углерода., и сохранить отчет в парачейне.
+* **Сеть датчиков гражданской безопасности с повышенной отказоустойчивостью** Полный набор программных модулей для создания сети датчиков в городе или предприятии для отслеживания необходимых показателей и предоставления к ним доступа без центральной точки отказа. Сегодня она проходит тестирование в одном из промышленных городов России - Тольятти.
+* **Решение по управлению движением беспилотных автомобилей и дронов для избежания столкновений маршрутов в общественных местах** Это позволит управлять флотом дронов с общедоступным мониторингом доступа к изменениям маршрута для органов власти, ответственных за местную безопасность и эффективность воздушного пространства и дорог.
+* **Обновления интеграции экосистемы** Мы сосредоточимся на интеграциях с другими парачейнами для расширения возможностей проектов Интернета вещей, заинтересованных в функциях экосистемы Polkadot.
+
+</TextCard>
+
+<TextCard>
+
+### Часть 3: Преобразование в цепочку ретрансляции Robonomics
+
+Последним заданием на 48 недель существования в сети Kusama является преобразование парачейна Robonomics в цепочку ретрансляции Robonomics. Это наше видение будущего Robonomics, как полного сегмента инфраструктуры Polkadot, специально подготовленного для работы с устройствами Интернета вещей.
+
+</TextCard>
+
+<TextCard image="/avatars/Sergei-Lonshakov.jpg" back="transparent" imageSize="big" alignContentV="middle">
+
+#### EnsRationis
+
+Архитектор сети Robonomics
+
+элемент: @ensrationis:robonomics.network
+
+</TextCard>

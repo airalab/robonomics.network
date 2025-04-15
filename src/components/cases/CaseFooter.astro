@@ -1,0 +1,60 @@
+---
+// components 
+import CaseGithubLink from './CaseGithubLink.astro';
+
+const {link, linkText, showFooter = true, title, text, isProgress = false} = Astro.props;
+---
+
+<section v-if="showFooter" class="case-page-footer layout">
+  {!isProgress ? (
+      <div class="layout__text">
+        <h2>{ title }</h2>
+        <div class="mb" set:html={text} />
+        {link && (<CaseGithubLink link={link} linkText={linkText}/>)}
+      </div>
+  ) : (
+  <div class="layout__text footer-in-progress">
+    {$tr("This case is currently in motion; don't miss out news — subscribe for updates in the box below")}
+  </div>
+  )}
+  
+</section>
+
+<style>
+
+  .case-page-footer {
+    padding-bottom: var(--space);
+  }
+  .case-page-footer p {
+    margin-bottom: var(--space);
+  }
+
+  .case-page-footer h2 {
+    margin-bottom: calc(var(--space) * 0.5);
+    text-align: left;
+    text-transform: unset;
+    font-family: var(--font-family);
+    font-size: calc(var(--base-font-size) * 1.3);
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+
+  .mb {
+    margin-bottom: var(--space);
+  }
+
+  .case-page-footer .footer-in-progress {
+    padding-left: 72px;
+    font-weight: 800;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: calc(var(--base-font-size) * 1.2);
+    line-height: 1.2;
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='%23F9C032'/%3E%3Cg clip-path='url(%23clip0_491_1690)'%3E%3Cpath d='M13.3994 8.85763H12.2069C11.7874 8.85763 11.4484 9.17679 11.4484 9.57183C11.4484 9.96688 11.7874 10.286 12.2069 10.286H15.2413C15.6609 10.286 15.9999 9.96688 15.9999 9.57183V6.71501C15.9999 6.31996 15.6611 6.0008 15.2413 6.0008C14.8215 6.0008 14.4827 6.31996 14.4827 6.71501V7.85774L14.0655 7.46492C11.9912 5.51202 8.62973 5.51202 6.55547 7.46492C4.48121 9.41783 4.48121 12.5827 6.55547 14.5356C8.62973 16.4885 11.9912 16.4885 14.0655 14.5356C14.3618 14.2566 14.3618 13.8035 14.0655 13.5245C13.7692 13.2455 13.2879 13.2455 12.9916 13.5245C11.51 14.9194 9.10859 14.9194 7.62697 13.5245C6.14536 12.1296 6.14536 9.86867 7.62697 8.47374C9.10859 7.07881 11.51 7.07881 12.9916 8.47374L13.3994 8.85763Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_491_1690'%3E%3Crect width='11' height='10' fill='white' transform='translate(5 6)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50px 50px;
+  }
+
+</style>

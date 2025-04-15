@@ -1,0 +1,11 @@
+/* 
+  Subsets used on website see here:
+  /src/assets/styles/variables.css
+
+  --font-flex-{styleweight}
+ */
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('/fonts/RobotoFlex-CustomSubset.woff2') format('woff2');
+  font-display: swap;
+}

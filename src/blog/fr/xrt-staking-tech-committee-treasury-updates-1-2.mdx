@@ -1,0 +1,126 @@
+---
+title: "Mise à jour vers la version 1.2 : Mise en jeu, Comité technique et Trésorerie"
+date: 2021-09-17
+published: true
+locale: 'fr'
+cover_image: /blog/images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
+description: "Les développeurs du projet ont mis en place 2 changements importants dans le fonctionnement de la parachain Robonomics. Le premier est l'inclusion de la mise en jeu XRT, et le second est le lancement des premiers mécanismes de gouvernance on-chain."
+abstract: "Les développeurs du projet ont mis en place 2 changements importants dans le fonctionnement de la parachain Robonomics. Le premier est l'inclusion de la mise en jeu XRT, et le second est le lancement des premiers mécanismes de gouvernance on-chain."
+tags: ['Parachain Robonomics', 'jeton XRT', 'jeton RWS', 'Mise en jeu', 'Nouvelle version']
+---
+
+## Mise à jour 1.1 : Mise en jeu
+
+### Théorie
+
+Les réseaux décentralisés de preuve d'enjeu assurent leur sécurité en verrouillant les fonds des validateurs et de tous les détenteurs de jetons sur le réseau qui participent à la sélection du pool de validateurs. Pour récompenser les validateurs et les détenteurs de jetons, un modèle de récompense PoW analogue est généralement utilisé, basé sur l'inflation + tous les frais de commission dans le bloc. C'est ainsi que NPoS est implémenté dans Polkadot/Kusama.
+
+> Il est à noter qu'Ethereum et Polkadot incluent des conditions supplémentaires pour leurs modèles de récompense. Établir des objectifs d'inflation, diviser les frais de commission en plusieurs directions, voire brûler un certain pourcentage des frais de commission sont des paramètres supplémentaires que les réseaux matures et plus récents expérimentent dans leurs implémentations.
+
+Les parachains n'ont pas besoin de mise en jeu dans leur fonctionnalité de base. Les parachains sont sécurisées par les validateurs de la chaîne de relais. Il s'agit d'un modèle de sécurité partagé où les projets se disputent des emplacements lors d'enchères.
+
+#### Réinventer la mise en jeu
+
+Les parachains qui souhaitent tirer parti de la "sagesse de la foule" et confier des tâches à la communauté doivent réinventer la mise en jeu. C'est ce que nous avons fait chez Robonomics. L'architecture de mise en jeu dans la parachain Robonomics est unique et spécifique aux problèmes de blockchain que nous résolvons pour le marché de l'IoT. Nous proposons deux façons de payer pour la fonctionnalité de base des appareils intelligents : par transaction ou par abonnement mensuel.
+
+Le paiement par transaction est explicite. La fonction d'abonnement nécessite une petite explication.. Certains cas d'utilisation de l'IoT nécessitent un accès périodique aux fonctions cloud, et il est hautement indésirable que ces accès échouent. Le mécanisme du prix du gaz ne résout toujours pas pleinement ce problème, surtout en ce qui concerne la garantie des transactions sur chaque bloc. Avec cela à l'esprit, nous avons eu l'idée d'utiliser le mécanisme de mise en jeu pour gérer un quota garanti avec un modèle d'abonnement. Du côté de Substrate, nous avons fait un petit tour de passe-passe, basé sur le traitement prioritaire des transactions à poids nul. Si un appareil IoT active un abonnement, alors toutes ses transactions auront la priorité sur toutes les autres, sauf bien sûr les transactions à poids nul. À mesure que plus de jetons entrent dans le pool de mise en jeu du réseau, plus d'abonnements seront disponibles pour les utilisateurs.
+
+<TextCard>
+
+*Par exemple :*
+
+Total de jetons : 2 000 000 XRT ;
+mises en jeu : 800 000 XRT ;
+bande passante de la parachain : 5400 tx par bloc.
+
+Cela nous donne 5400 * 800 000 / 2 000 000 = 2 160 abonnements mensuels pour les appareils IoT.
+
+</TextCard>
+
+Je parlerai de la manière dont les abonnements et le pool de paiement seront distribués dans un article séparé intitulé "Vente aux enchères automatisée des abonnements".
+
+### Utilisation Pratique
+
+DApp prête à l'emploi : https://robonomics.app/#/staking/
+
+![Mise en jeu XRT dans l'application Robonomics, nouvelle interface de liaison](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
+
+Après la première transaction, vous obtiendrez un tableau de statistiques comme celui-ci :
+
+![Mise en jeu XRT dans l'application Robonomics, écran de liste de liaison](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
+
+L'envoi de jetons entre les comptes sur la parachain restera désactivé. La possibilité de transférer des jetons sera activée après le lancement de la parachain sur le réseau Kusama.
+
+### Observations
+
+À partir du [bloc n° 235 047](https://robonomics.subscan.io/block/235047), nous avons environ mille comptes ; le plus grand détenteur de jetons est le trésor. Les fonds du trésor ne participeront pas à la mise en jeu.
+
+Les comptes restants sur le réseau sont apparus suite à l'utilisation de l'application Exodus DApp par les détenteurs de jetons ERC-20, ou ils ont été participants à la première campagne de prêt collectif dans les enchères Kusama.
+
+Grâce à l'intégration avec Subscan, les détenteurs de XRT sur la parachain Robonomics peuvent utilisercette interface merveilleuse : https://robonomics.subscan.io/account
+
+![Écran du compte Robonomics Subscan.io](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
+
+Sur l'interface de l'application Exodus DApp, vous pouvez voir les statistiques de migration de la blockchain Ethereum vers la parachain Robonomics : https://robonomics.app/#/exodus
+
+![XRT de la blockchain Ethereum vers la parachain Robonomics dans l'application Robonomics](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
+
+### Améliorations supplémentaires de la fonctionnalité de mise en jeu
+
+La tâche actuelle des développeurs est de tester les mécanismes de base de mise en jeu pour les détenteurs de jetons dans des conditions réelles : ajout au pool de mise en jeu, accumulation de récompenses et dégel des jetons dans les 7 jours.
+
+*Une tâche intéressante pour la communauté :* vérifier la justesse du calculateur de récompenses, en tenant compte des deux options : une récompense annuelle de 10 % pour les participants à la migration Exodus et une récompense annuelle de 50 % pour les membres de la campagne de prêt communautaire.
+
+Après la mise à jour 1.3 de RWS, le mécanisme de mise en jeu sera lancé sur le réseau. La mise à jour de RWS ajoutera la capacité d'abonnement pour les jumeaux numériques, et le défi de l'allocation de bande passante aura du sens. En conséquence, nous pourrons évaluer pleinement la justesse du mécanisme de mise en jeu ultérieurement.
+
+## Mise à jour 1.2 : Comité technique et Trésorerie
+
+Comme pour la mise à jour 1.1, cela a déjà été mis en œuvre dans le travail de la parachain. Le comité technique est actuellement composé de six spécialistes techniques qui ont participé au développement de la parachain au cours des 2 dernières années ; la DAO [a transféré 692 500 XRT](https://etherscan.io/tx/0x6b9a9cbe7d21badf565ebce0fb50b865da8f5f784899db5fb455d1b276d14acf) au solde de la trésorerie de la parachain en brûlant des jetons ERC-20 via l'application Exodus DApp. La trésorerie du réseau et le comité technique sont les premiers éléments de gouvernance on-chain que les développeurs de la parachain ont mis en œuvre jusqu'à présent. Plus de détails sur chacun d'eux sont donnés ci-dessous.
+
+### Comité technique du réseau
+
+Le portail du comité technique est disponible à l'adresse : https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/techcomm
+
+![Le portail du comité technique dans la parachain Robonomics](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
+
+À partir du 15 septembre, vous pouvez voir les six membres du comité technique qui ont été ajoutés : 2 spécialistes devops, un architecte logiciel, le principal développeur de l'implémentation Substrate, un ingénieur robotique senior et un développeur senior de DApp.
+Le comité technique se chargera de mettre à jour le code de runtime de la parachain, en commençant par les versions ultérieures sur GitHub.
+
+Vous pouvez en savoir plus sur le travail de ce comité dans le wiki de Polkadot : https://wiki.polkadot.network/docs/learn-governance#technical-committee
+
+Jusqu'à ce que la parachain Robonomics soit lancée sur Kusama, les développeurs du projet n'étendront pas la gouvernance on-chain en ajoutant des conseils ou des référendums. Après le lancement réussi de la parachain, nous réexaminerons la question de nouvelles opportunités pour influencer les opérations réseau pour de nouveaux participants au projet.
+
+### Trésorerie
+
+La trésorerie de la parachain est disponible ici : https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/treasury
+
+![La trésorerie dans la parachain Robonomics](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
+
+Au cours du dernier mois, environ 100k XRT ont été distribués de la trésorerie aux soldes des participants de la première campagne de prêt communautaire Robonomics de l'été 2021. Ces opérations ne sont pas affichées en tant que demandes, mais plutôt effectuées par Sudo. Maintenant que nous avons un comité technique, les demandes passeront par un vote.
+
+Il convient également de noter un mécanisme intéressant de la trésorerie : la combustion périodique des soldes. Vous pouvez en savoir plus sur le travail de la trésorerie dans le wiki de Polkadot : https://wiki.polkadot.network/docs/learn-treasury
+
+La communauté peut demander à la trésorerie de la parachain d'allouer des XRT pour des tâches qui seront utiles dans le développement de Robonomics dans l'écosystème Polkadot ou pour attirer des utilisateurs du marché de l'IoT.
+
+### Conclusion
+
+De nombreuses mises à jour passionnantes sont à venir, et chacune ouvrira de nouvelles opportunités pour la communauté. Les mises à jour du programme de développement communautaire du projet seront bientôt publiées avec plus d'informations sur ce qui sera disponible pour la communauté auprochains 6 mois.
+
+<TextCard image="/avatars/Sergei-Lonshakov.jpg" back="transparent" imageSize="big">
+
+EnsRationis
+
+Architecte réseau Robonomics
+
+élément: @ensrationis:robonomics.network
+
+</TextCard>
+
+
+<TextCard icon="/icons/icon-notification.png" link="https://twitter.com/AIRA_Robonomics">
+
+### Rejoignez-nous sur Twitter
+
+Restez à l'écoute et suivez les mises à jour
+
+</TextCard>

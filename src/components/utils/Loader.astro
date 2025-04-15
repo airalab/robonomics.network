@@ -1,0 +1,107 @@
+<div class="loader">
+  <div class="loader-logos">
+    <div class="loader-logo">
+      <svg width="60" height="31" viewBox="0 0 60 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-robot hide-mobile">
+        <path class="logo-robot__eye" d="M19.5505 20.5403C21.4977 20.5403 23.0829 18.9521 23.0829 16.9993C23.0829 15.0465 21.4986 13.4584 19.5505 13.4584C17.6024 13.4584 16.0181 15.0465 16.0181 16.9993C16.0181 18.9521 17.6024 20.5403 19.5505 20.5403Z" fill="black"/>
+        <path d="M36.9846 17.6785C36.8528 17.6785 36.7248 17.692 36.5996 17.7151C36.129 16.54 35.2723 15.7546 34.2935 15.7546C34.2444 15.7546 34.1962 15.7565 34.1491 15.7604V11.8345C34.1491 10.0563 32.6976 8.6004 30.9227 8.6004H22.8694V8.50488C22.8694 7.9308 22.4054 7.46575 21.8327 7.46575H19.9491V4.17568C20.8673 3.94412 21.5488 3.1134 21.5488 2.12059C21.5488 0.94929 20.6017 -0.00106812 19.4322 -0.00106812C18.2628 -0.00106812 17.3156 0.948325 17.3156 2.12059C17.3156 3.1134 17.9971 3.94412 18.9153 4.17568V7.46575H17.0317C16.459 7.46575 15.9951 7.9308 15.9951 8.50488V8.6004H7.94169C6.16777 8.6004 4.71534 10.0554 4.71534 11.8345V15.7575C3.774 15.8038 2.95586 16.5766 2.49963 17.7151C2.3745 17.692 2.24648 17.6785 2.11462 17.6785C0.946125 17.6785 -0.00195312 18.6279 -0.00195312 19.8001C-0.00195312 20.9724 0.945163 21.9218 2.11462 21.9218C2.24648 21.9218 2.3745 21.9083 2.49963 21.8851C2.95586 23.0236 3.77496 23.7955 4.71534 23.8428V27.7668C4.71534 29.5449 6.16681 31.0009 7.94169 31.0009H30.9227C32.6966 31.0009 34.1491 29.5459 34.1491 27.7668V23.8409C34.1972 23.8447 34.2453 23.8466 34.2935 23.8466C35.2723 23.8466 36.129 23.0603 36.5996 21.8861C36.7248 21.9093 36.8528 21.9228 36.9846 21.9228C38.1531 21.9228 39.1012 20.9734 39.1012 19.8011C39.1012 18.6288 38.1541 17.6794 36.9846 17.6794V17.6785ZM19.5506 11.0559C22.8193 11.0559 25.4797 13.7217 25.4797 16.9992C25.4797 20.2768 22.8203 22.9426 19.5506 22.9426C16.2809 22.9426 13.6215 20.2768 13.6215 16.9992C13.6215 13.7217 16.2809 11.0559 19.5506 11.0559ZM28.939 24.1351C28.7965 24.303 25.3767 28.2521 19.182 28.2521C12.9872 28.2521 10.1834 24.1843 10.0708 24.0116C9.70983 23.4559 9.86769 22.711 10.4221 22.3502C10.9746 21.9903 11.7138 22.1456 12.0757 22.6966C12.1719 22.8403 14.2548 25.8496 19.182 25.8496C24.1091 25.8496 27.0005 22.7091 27.116 22.575C27.5481 22.0752 28.3028 22.0173 28.8042 22.4467C29.3047 22.877 29.3663 23.6305 28.939 24.1342V24.1351Z" fill="black"/>
+        <defs>
+        <clipPath id="clip0_951_181">
+        <rect width="161.703" height="31" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+      <span class="circle"></span>
+    </div>
+  </div>
+</div>
+
+<style>
+
+  .loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .loader-logos {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .loader-logo:nth-child(1) {
+    position: relative;
+    animation: flickerAnimation 4s infinite;
+  }
+
+  .loader-logo svg path {
+    fill: var(--color-dark);
+  }
+
+  .logo-robot__eye {
+    animation-name: blinkEye;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  .loader-text {
+    display: block;
+    /* width: fit-content; */
+    font-weight: 900;
+    font-family: "Roboto Mono";
+    font-size: 30px;
+    clip-path: inset(0 2.8ch 0 0);
+    animation: l4 1s steps(6) infinite;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .circle {
+    position: absolute;
+    width: 5px;
+    height: 4.5px;
+    top: 0px;
+    left: 17px;
+    background-color: var(--body-bg);
+    border-radius: 100%;
+  }
+
+  .circle::after {
+    content: '';
+    position: absolute;
+    width: 4.5px;
+    height: 4.5px;
+    top: 0px;
+    left: 0px;
+    background-color: var(--color-dark);
+    border-radius: 100%;
+    animation: bounce2 2s ease infinite;
+  }
+
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-10px);}
+	60% {transform: translateY(-5px);}
+}
+
+@keyframes l4 {to{clip-path: inset(0 -2ch 0 0)}}
+
+  /* eye animation */
+  @keyframes blinkEye {
+    0% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+    2% {
+      transform: translateY(14px) scaleY(0.2);
+    }
+    4% {
+      animation-timing-function: ease-out;
+    }
+    6% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+  }
+</style>

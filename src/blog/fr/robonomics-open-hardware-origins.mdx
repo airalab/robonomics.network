@@ -1,0 +1,96 @@
+---
+title: "Origines du matériel ouvert de Robonomics"
+date: 2024-11-11
+published: true
+locale: 'fr'
+cover_image: /blog/images/robonomics-open-hardware-origins/cover.png
+description: "Alors que nous lançons le projet Hardware for Cyberpunks, il est temps de réfléchir à notre parcours matériel depuis 2020. Cet essai explorera le mouvement de matériel ouvert de Robonomics."
+abstract: "Alors que nous lançons le projet Hardware for Cyberpunks, il est temps de réfléchir à notre parcours matériel depuis 2020. Cet essai explorera le mouvement de matériel ouvert de Robonomics."
+tags: ['Feuille de route', 'Maison intelligente']
+---
+
+Robonomics a toujours été en partie un projet "matériel". Pour nous, la blockchain était la technologie grâce à laquelle les appareils pouvaient devenir de véritables agents économiques et utiliser des actifs financiers pour produire des changements dans la vie réelle. À partir du premier vol de drone lancé par un contrat intelligent en 2016, nous n'avons pas cessé de penser au matériel réel une minute - un matériel qui perçoit le monde réel et est capable de l'influencer : capteurs et robots. En même temps, restant fidèles au mouvement du logiciel open-source, nous avons essayé de rendre également les projets matériels ouverts. Aujourd'hui, les plans de tous les appareils que nous développons sont publiés sous des licences ouvertes.
+
+Beaucoup de temps s'est écoulé depuis 2020, et c'est maintenant le moment idéal pour se rappeler combien de matériel intéressant nous avons développé. Dans cet essai, nous passerons en revue l'histoire du mouvement de matériel ouvert dans Robonomics et les développements les plus intéressants du passé, du présent et du futur.
+
+## Réseau de capteurs - Qualité de l'air
+
+Le projet de réseau de capteurs civiques a débuté en avril 2020, lorsque nous avons développé un capteur spécial DApplication pour visualiser tous les capteurs fournissant des données au réseau Robonomics sur une carte du monde. Nous avons rapidement réalisé qu'une solution Plug&Play était nécessaire pour garantir la meilleure expérience utilisateur, afin que l'on puisse acheter un capteur, le connecter et devenir immédiatement membre de la communauté sans avoir une connaissance approfondie de la programmation et de la conception de circuits. En août 2021, le travail a commencé sur un capteur de qualité de l'air, et quelques mois plus tard, nous avons obtenu le premier prototype, qui comprenait un capteur de particules laser SDS011 PM2.5/PM10 et un capteur de température et d'humidité DHT22 (AM2302) populaire.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Matériel de qualité de l'air du réseau de capteurs" />
+
+Au cours des trois dernières années, l'appareil a subi de nombreuses modifications, aboutissant à sa dernière incarnation : la "Station de Surveillance Civile Altruiste". Ce capteur intelligent collecte des données environnementales, y compris les niveaux de bruit, les particules de poussière et la température, et les stocke sur une [carte de capteurs décentralisée](https://sensors.social/). La station peut être étendue en suivant des capteurs avec une interface I2C : BMP180 — température et humidité, BME/P280 — température, humidité, pression atmosphérique, HTU21D — température et humidité, CCS811 VOC SENSOR — composés organiques volatils, équivalent CO2 et capteurs avec une interface 1-Wire : DS18B20 — température.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/altruist-hq.jpg" alt="Station de surveillance de l'air Altruiste" />
+
+Nous avons de nombreux documents éducatifs sur le réseau de capteurs sur [Robonomics Academia](https://robonomics.academy/en/learn/sensors-connectivity-course/overview/) et dans le [Wiki](https://wiki.robonomics.network/docs/sds-sensor-connect/). La [vidéo](https://www.youtube.com/watch?v=OdTd1sacCso) montre comment vous pouvez créer votre propre station de surveillance individuelle en utilisant nos modules et vous connecter au réseau de capteurs de surveillance civile.
+
+## Cyber-Économie - Distributeur de Café Tokenisé
+
+En plus du réseau mondial de capteurs, nous avons également envisagé des scénarios d'utilisation de Robonomics pour les appareils domestiques. L'un des premiers projets dans ce domaine a été un distributeur de café connecté à la blockchain, lancé en octobre 2021. Oui, ce n'était pas un développement au sens traditionnel du terme, mais plutôt du piratage. Nous avons utilisé des modèles de distributeurs de café en série et nos compétences en ingénierie pour rendre ces machines compatibles avec Web3.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/robonomics-coffee-maker.jpg" alt="distributeur-de-cafe-robonomics" />
+
+Cependant, ce projet matériel incorporait toutes les innovations de Robonomics disponibles à ce moment-là :
+
+- Noeud Robonomics léger sur un ordinateur monocarte
+- Actif du Monde Réel (RWA) sous forme de jetons de café émis sur la parachain Statemine lorsqu'un nouveau lot de café est reçu et distribué de manière équitable parmi les membres de l'équipe au bureau
+- Application pratique de la palette de responsabilité pour simplifier l'interaction entre les agents d'offre et de demande — avec cette fonction, le Distributeur de Café recherchait les fournisseurs de café les plus rentables
+
+Vous pouvez en savoir plus sur ce projet fascinant [ici](https://robonomics.network/cases/blockchain-coffee-machine/) et dans le blog de Sergey Lonshakov sur Medium [Coworking for crypto-anarchists](https://blog.air[a.life/coworking-for-crypto-anarchists-p1-5ebecb252f2d)
+
+## Appareils Domestiques Intelligents
+
+En 2022, nous avons commencé à développer des solutions domestiques intelligentes sécurisées et privées basées sur les technologies Web3. Nous nous sommes concentrés sur la communication sans fil, en créant une gamme d'appareils contrôlés à distance compatibles avec le cloud décentralisé Robonomics. Notre parcours a commencé avec la puce WiFi ESP8266 populaire d'Espressif Systems. Nous sommes ensuite passés à la puce plus polyvalente ESP32-C3, dotée d'une architecture ouverte RISC-V et de la prise en charge du Bluetooth 5. En 2024, nous avons adopté la puce la plus avancée d'Espressif — l'ESP32-C6 — qui a ajouté la prise en charge du protocole Thread/Zigbee. Aujourd'hui, toute notre gamme d'appareils domestiques intelligents Robonomics utilise des puces ESP32-C6. Ces appareils sont tous compatibles avec le serveur domestique intelligent open-source Home Assistant. Les utilisateurs peuvent facilement mettre à jour le micrologiciel via notre [Web Flasher](https://webflasher.robonomics.network/). Nous avons publié les fichiers sources de nos modules dans [notre dépôt Github](https://github.com/airalab/hardware).
+
+### Interrupteurs
+
+Traditionnellement, les systèmes de domotique câblés sont conçus en parallèle avec d'autres réseaux électriques lors de la construction initiale. Si votre résidence n'a pas été conçue de cette manière, l'ajout d'appareils intelligents nécessite souvent des rénovations coûteuses. Nos interrupteurs offrent une solution : implémenter un contrôle intelligent sans rénovations. Il suffit d'installer l'interrupteur dans une boîte de sortie standard, et il devient accessible au serveur Home Assistant — apportant des fonctionnalités de maison intelligente dans des espaces traditionnellement câblés.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/2-gang-switch.jpg" alt="" />
+
+### Télécommande Infrarouge
+
+Les émetteurs-récepteurs infrarouges ont longtemps dominé le marchépour les appareils électroménagers contrôlés à distance. Presque chaque maison contient de tels appareils, y compris les lecteurs multimédias, les climatiseurs et bien d'autres. Pour simplifier l'intégration de ces appareils dans les systèmes domotiques, nous avons développé une passerelle configurable. Cette passerelle vous permet de connecter facilement vos appareils contrôlés par infrarouge à votre serveur domestique en utilisant le protocole MQTT, le tout grâce à un processus de configuration simple.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/ir-remote-control.jpg" alt="Télécommande infrarouge" />
+
+### Moniteur d'énergie
+
+L'économie d'énergie est sans aucun doute l'une des fonctions les plus importantes d'une maison intelligente. Alors que la capacité de contrôler n'importe quel appareil sans quitter votre canapé est géniale, il est encore plus satisfaisant de recevoir des factures d'électricité 15 à 20 % inférieures à la normale, grâce aux données historiques sur les changements de consommation d'énergie. Cette motivation a conduit au développement de notre premier appareil montable sur rail DIN, la norme de l'industrie pour l'automatisation. Comme tous nos appareils domotiques, le Moniteur d'énergie se connecte sans fil au serveur Home Assistant via le protocole MQTT. Regardez la [vidéo de démonstration](https://www.youtube.com/watch?v=xtXIsORJGP0) présentant le déballage, la configuration et l'utilisation initiale du moniteur.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/energy-monitor.jpg" alt="Moniteur d'énergie" />
+
+
+## Robotique DIY et industrielle
+
+Au début de 2021, Robonomics a lancé le projet Robossembler avec un grand objectif : changer la façon dont les robots industriels sont fabriqués. Nous voulions nous orienter vers des robots capables de se construire eux-mêmes. Tout en gardant ce rêve vivant, nous nous sommes fixé un objectif plus pratique en 2021. Nous avons décidé de créer un bras robotique open-source que n'importe qui pourrait construire et utiliser.. Ce bras serait capable d'assembler automatiquement des choses et pourrait même être capable de se reproduire. La conception classique d'un robot industriel ne comprend pas la possibilité de s'assembler automatiquement, nous avons donc dû réviser tous les composants structurels, en commençant par le moteur. Nous nous sommes concentrés sur l'amélioration du moteur, de la boîte de vitesses et de la structure globale du robot. Ce processus a été difficile et chronophage. Cependant, nous commençons maintenant à voir des résultats positifs de nos efforts. Notre travail acharné commence à porter ses fruits et nous progressons bien dans le projet.
+
+### Servomoteur
+
+La plupart des manipulateurs robotiques ouverts utilisaient initialement des moteurs pas à pas, qui n'étaient pas idéaux. Les robots propriétaires modernes utilisent désormais des servomoteurs avec des contrôleurs intégrés pour une meilleure rétroaction. Notre équipe a développé un contrôleur de servomoteur personnalisé, applicable à divers projets de moteurs.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/robossembler-servo-reducer-exploding-view-01.jpg" alt="Vue éclatée du servomoteur Robossembler" />
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/servo.jpg" alt="Servomoteur Robossembler" />
+
+Nous avons conçu notre servomoteur pour être convivial pour les passionnés de bricolage. Vous n'avez pas besoin d'un atelier high-tech pour fabriquer le stator. Au lieu d'utiliser de l'acier électrique coûteux pour le noyau magnétique, nous utilisons des vis DIN ordinaires. Vous pouvez créer les principales parties du rotor et du stator à l'aide d'une imprimante 3D. Cela facilite beaucoup la construction du projet à domicile pour les amateurs. Les sources sont disponibles dans notre dépôt sur [gitlab](https://gitlab.com/robossembler/servo).
+
+### Enrouleuse
+
+Pendant le développement du moteur, nous avons initialement enroulé plusieurs statorsà la main, un processus extrêmement laborieux. Sans hésitation, nous avons décidé de créer une machine spécialisée pour l'enroulement automatique des bobines de stator. Le résultat ? Une solution remarquablement rentable, aux alentours de 150 $. Actuellement, il s'agit de la première machine d'enroulement open-source au monde. Nous l'avons conçue en pensant à l'accessibilité : la plupart des pièces sont imprimables en 3D. Vous pouvez observer l'ensemble du processus, de l'assemblage au premier enroulement de stator de 8 heures de la machine, dans cette [vidéo](https://youtu.be/5glGYkbpT6w?si=H6iFg7i56K8elXjw). Les sources sont disponibles dans notre dépôt sur [gitlab](https://gitlab.com/robossembler/cnc/motor-wire-winder).
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/winder.jpg" alt="Enrouleur de fil de moteur" />
+
+Maintenant que nous avons résolu les tâches les plus basiques - le développement du moteur et de l'équipement pour sa production, nous pouvons avancer ! En 2025, nous prévoyons de tester le Robossembler Arm, un manipulateur robotique à 6 axes entièrement open source. Nous avons déjà développé une boîte de vitesses unique avec un rapport de 1:43, qui fournira la force nécessaire au robot même avec notre moteur DIY !
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/robossembler-arm.jpg" alt="Bras Robossembler" />
+
+
+## Quelle est la prochaine étape ?
+
+Nous ne nous arrêtons pas là - nous avons de grands projets pour 2025 ! Nous allons créer de nombreux autres appareils. En ce moment, vous pouvez découvrir notre nouvelle ligne de matériel pour Cyberpunks sur [robonomics.network/devices](https://robonomics.network/devices/). Cette nouvelle ligne comportera plusieurs appareils, y compris la station Altruist dont nous avons déjà parlé. Voici sur quoi nous travaillons :
+
+- Serveur domestique intelligent RISC-V. Le serveur domestique intelligent le plus open-source, alimenté par RISC-V, avec un cloud Web3 remplaçant les serveurs Google sous le capot. Des appareils WI-FI MQTT intelligents avec le micrologiciel open-source Tasmota sur la carte entièrement compatibles avec Home Assistant.
+- Hikikomori Tamagotchi. Une station portable intelligente qui vérifie l'état des capteurs de votre maison ou de vos vêtements.
+- Coffre-fort intelligent. Un coffre-fort qui se déverrouille avec un contrat intelligent basé sur des conditions définies par l'utilisateur. Consultez les journaux des ouvertures et des fermetures du coffre-fort. Programmez le coffre-fort selon vos besoins, comme accorder l'accès à des comptes de confiance après une période prolongée d'inactivité.

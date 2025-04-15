@@ -1,0 +1,102 @@
+---
+title: Robonomics Crowdloan Campaigns, 2022年11月
+date: 2022-11-18
+published: true
+locale: 'ja'
+tags: ['Robonomics parachain', 'Polkadot']
+cover_image: /blog/images/robonomics-crowdloan-campaigns-november-2022/cover.jpg
+description: "Kusamaネットワーク上のRobonomics parachainスロットの最初のリース期間が終了間近です。オークション＃20に勝利することで、Robonomicsをベースにした最初のプロジェクトをPolkadotエコシステム内で立ち上げ、設定、テストする機会を得ました。"
+abstract: "Kusamaネットワーク上のRobonomics parachainスロットの最初のリース期間が終了間近です。オークション＃20に勝利することで、Robonomicsをベースにした最初のプロジェクトをPolkadotエコシステム内で立ち上げ、設定、テストする機会を得ました。"
+
+---
+
+2022年には、KusamaのRobonomics parachainが数多くのR&Dプロジェクトで使用され、合計で[400万件以上の取引](https://robonomics.subscan.io/)を処理しました。
+
+Robonomicsの開発者は、Kusamaネットワーク上でのparachainの実装を継続したいと考えています。現在、Polkadotエコシステム全体がダイナミックな発展段階にあり、私たちはこのプロセスの最前線に立ちたいと考えています。つまり、Kusamaネットワークにとどまりたいということです。
+
+2023年の計画には、家庭IoTインフラストラクチャの制御のための分散型クラウドのアイデアを中心に積極的な開発が含まれます。現在、私たちは[分散型アプリケーション](https://robonomics.app/)、[ウィキプロジェクト](https://wiki.robonomics.network/)、および教育リソースである[Robonomics Academy](http://robonomics.academy/)が、IoTインフラストラクチャ所有者に必要な機能と情報をすべて備えていることを確認するために取り組んでいます。
+
+また、Polkadotエコシステム内で新しいXCMチャンネルを開く実験を続け、IoTのための分散型クラウドの最適な構築を見つけるために取り組んでいます。ここで言う最適な「構築」とは、私たちのparachainだけでなく、parachainエコシステム全体がIoTの世界から生じる問題を解決するために使用されることを意味します。この方向性の最も明らかなシナリオの1つは、Crust Networkと呼ばれる分散型データストレージプロジェクトであり、すでに一連のHRMPチャンネルを開設しています。2023年、Robonomics IoTサブスクリプションのすべてのユーザーは、Crustネットワーク上のストレージ使用料が自動的に支払われます。2023年には、Robonomicsパラチェーンに格納された資金を使用して、他のパラチェーンのサービスの支払いに関して同様のアプローチを試みます。
+
+その結果、今日、Kusamaネットワーク上のIoTデバイスの起動とテレメトリの送信のための動作するパラチェーンを持っています。私たちは、IoT向けのAWSの完全な競合他社になる道を研究開発する準備が整っており、来年は、通常の中央集権化されたクラウドを捨てる重要な一歩を踏んだ人々をサポートすることに最大の重点を置きます。
+
+
+## クラウドローンキャンペーンの自動化、パート2
+
+昨年、クラウドローンキャンペーンの自律オラクルの概念が最初に紹介されたのは、[Automating Crowdloan Campaigns](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/)という記事でした。Robonomicsパラチェーンの開発者にとって、パラチェーンの生活を自律化するオプションを見つけることは、IoT向けの分散型クラウドを構築する重要な部分です。今年は、初めて、パラチェーン自体の名義でクラウドローンキャンペーンを開始しようとします。以下に、新しいクラウドローンキャンペーンのパラメータの計算を見つけることができ、最終的には新しいキャンペーンを独立して開始し、スロットリースを成功裏に更新できる完全に自律化されたプロセスに変える予定です。
+
+予想通り、最初のバッチの狂ったオークション入札の後、状況ははるかに安定して/正常になり、ついにスロットリースのコストに関するいくつかの統計に取り組むことができます。更新アルゴリズムは、最後の数回のオークションから統計を収集して、中央借り入れ価格を計算します。たとえば、以下の表には、2022年7月から11月までの要約された統計情報が示されています（[parachains.info](https://parachains.info/auctions/)からの情報）。
+
+<div class="big-table">
+  |                              | Auction 60   | Auction 59     | Auction 58 | Auction 57   | Auction 56 | Auction 55   | Auction 54      | Auction 53   | Auction 52   | Auction 51 | Auction 50  | Auction 49      | Auction 48    | 
+  |------------------------------|--------------|----------------|------------|--------------|------------|--------------|-----------------|--------------|--------------|------------|-------------|-----------------|---------------|                                          
+  | **勝者**                      | Zeitgeist    | Crab Network   | -          | Crust Shadow | Genshiro   | DAO IPCI     | Parathread 2223 | Quartz       | Bit.Country  | Snow       | Subsocial   | Parathread 2130 | GM Parachain  |
+  | **最終入札（KSM）**            | 500          | 11             | 0          | 1 807        | 2 000      | 111          | 1 001           | 1 005        | 3 500        | 13 926     | 1 001       | 1 131           | 5 014         |
+  | **貢献**                      | 自己資金調達  | 自己資金調達    | -          | 209          | 160        | 自己資金調達  | 自己資金調達     | 自己資金調達  | 自己資金調達  | 782        | 自己資金調達 | 自己資金調達     | 738           |
+  | **参加者数**   | 2             | 1              | 0          | 1            | 2          | 2            | 2               | 2            | 2            | 1          | 1           | 1               | 1             |
+
+</div>
+
+<TextCard alignContent="center" back="transparent">
+
+**この場合、中央値の入札は次のとおりです:**
+
+![beta subscript med equals 1001KSM](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-1.svg)
+
+</TextCard>
+
+> 12月5日の更新: Kusamaネットワークのアップデート（[Gov2アップグレード](https://twitter.com/nachortti/status/1588203599129190403)）により、Robonomicsクラウドローンキャンペーンが近日中に再開されます。集める上限額は10,050 KSMに増加します。
+
+したがって、アルゴリズムはこの入札を使用してクラウドローンキャンペーンの上限額を推定します。
+
+さらに、[前回の記事](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/)で述べたように、クラウドローンへの参加の報酬を計算する主要な基準として、KSMステーカーの機会費用の見積もりを使用しています。Relay Chainでのステーキングと比較して。Polkadotエコシステムのステーキングメカニズムは、システムがネットワークのセキュリティを維持するのを支援する人々にリターンを提供する一方で、ネイティブトークンの流動性を確保しようとする方法は、**「理想的なステーキング率」**パラメーター（ネットワークが達成すべき目標）を導入することで実現されました。ステーキングされたトークンの数が理想的な値を下回ると、ステーキング報酬が増加します（これにより、ユーザーがさらにステーキングしてネットワークセキュリティを向上させるよう促されます）。逆に、ステーキング率が理想を超えると、報酬は指数関数的に減少します。
+
+当社のアルゴリズムは、システムが理想的なステーキングを上回る状態にあると仮定しています（ネットワークセキュリティが重要であるため）、したがって、**ステーキングの最大年間利率**は、理想的なステーキング率パラメーターとステーカー向けの最大インフレ率（つまり、バリデーターとノミネーターに支払うために鋳造されるトークンの総数）によって決定されます：
+
+<TextCard alignContent="center" back="transparent">
+
+![i subscript 'ideal' ​equals I subscript NPoS divided by ​ x  subscript 'ideal'](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-2.svg)
+
+</TextCard>
+
+これらの計算については、W3F Researchの[Token Economics](https://research.web3.foundation/en/latest/polkadot/overview/2-token-economics.html)記事で詳しく説明されています。
+
+Kusamaネットワークでは、インフレ率が10%に設定されており、これが理想的なシナリオでステーカーに鋳造される最大量です。理想的なステーキング率は、パラチェーンの数に応じて異なり、現在は45%です（KusamaネットワークのPolkadot.jsポータルに記載されています）。したがって、次のようになります：
+
+<TextCard alignContent="center" back="transparent">
+
+![i subscript 'ideal' equals 0.1 divided by 0.45 multiply by 100 percent  equals 22.22 percent](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-3.svg)
+
+</TextCard>
+
+現時点では、*実際のステーキング率*は52.6%であり、ステーキング参加者の利益は理想的なレベル（約15%）を下回っています。したがって、アルゴリズムは、クラウドローンキャンペーンへの参加に対する報酬レベルを見つけるために、*理想的な利率*パラメーターを取ることができます。ネットワークにとって公平でステーカーにとって魅力的です。
+
+今、市場でのトークンの価格を知ることで、クラウドローンキャンペーンへの参加に対する報酬を計算できます（1 KSMあたりのXRT）：
+
+<TextCard alignContent="center" back="transparent">
+
+![R subscript 'perKSM' ​equals (1 multiply by $KSM ​multiply by i subscript 'ideal' ) divided by $XRT ](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-4.svg)
+
+</TextCard>
+
+現在のKSMとXRTの為替レートでは、クラウドローンの報酬は約**1 KSMあたり2.06 XRT**になります。この値とスロットのリースの中央値を知っていれば、クラウドローン参加者への総支払いを簡単に計算できます：
+
+<TextCard alignContent="center" back="transparent">
+
+![R subscript 'total' equals beta subscript 'med' ​multiply by R subscript 'perKSM' equals 2075.03XRT](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-5.svg)
+
+</TextCard>
+
+> 12月5日更新：Kusamaネットワークのアップデート（[Gov2アップグレード](https://twitter.com/nachortti/status/1588203599129190403)）により、Robonomicsクラウドローンキャンペーンが近日中に再開されます。総報酬プールは20,750 XRTに増加しました。
+
+## インフレーションからデフレーションへのパラチェーントークン経済への移行
+
+Kusamaネットワークでの共有セキュリティのコストが安定しています。最近のスロットオークションの統計からもわかるように、プロジェクトはパラチェーンのネイティブトークン供給の多くをクラウドローンキャンペーン参加者に報酬として割り当てる必要がありません。さらに、Robonomics固有のネイティブトークンを燃やすメカニズムを考慮する必要があります。これは、ユーザーがIoTサブスクリプションをアクティブ化する際にRobonomicsアーキテクチャ内で実際にデフレーション的なトークン経済を持つPolkadotエコシステム内のパラチェーンとして機能できるということです。
+
+2023年に新しいRobonomicsパラチェーントークンの総発行量は、総パラチェントークン発行量の0.38％未満と推定されています。また、Robonomicsパラチェーンの財務には約370k XRTが保管されており、そのうち3.5k XRTが毎月自動的に燃やされます。これは、2023年のRobonomicsパラチェーンが明確なデフレーションダイナミクスを示し、パラチェーントークンのデフレーション率が3%を上回る可能性が高いことを意味します。実際のデフレーション額は、IoTユーザーのサブスクリプションのアクティベーション中に燃やされるXRTの量に依存します。
+
+このため、Robonomicsの開発者は、次のパラチェーンスロットリース期間中にトークンのステーキングをキャンセルし、パラチェーンのアーキテクチャのさらなる開発に重点を置く予定です。さらに、新しいXRTトークンの生成を減らすことに重点を置き（実用的な範囲で）、XRTトークンの支出（燃焼）を利用するより多くのパラチェーンサービスを積極的に開発する予定です。
+
+そのまま進んでください...
+
+![](/blog/images/robonomics-crowdloan-campaigns-november-2022/keep-walking.jpg)

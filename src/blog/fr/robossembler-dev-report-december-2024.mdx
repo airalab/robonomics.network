@@ -1,0 +1,84 @@
+---
+title: "Rapport de développement Robossembler n°1"
+date: 2024-12-08
+published: true
+locale: 'fr'
+cover_image: /blog/images/robossembler-dev-report-december-2024/Cover.webp
+description: "Le projet Robossembler se concentre sur le développement de robots industriels et d'outils pour leur production accessibles à tout passionné de bricolage. Dans cet article, nous partagerons nos progrès actuels - un engrenage mis à jour et testé, la 5e version de la machine à enrouler et un manipulateur de robot avec des optimisations supplémentaires pour l'impression 3D !"
+abstract: "Le projet Robossembler se concentre sur le développement de robots industriels et d'outils pour leur production accessibles à tout passionné de bricolage. Dans cet article, nous partagerons nos progrès actuels - un engrenage mis à jour et testé, la 5e version de la machine à enrouler et un manipulateur de robot avec des optimisations supplémentaires pour l'impression 3D !"
+tags: ['Robossembler']
+---
+
+
+## Servomoteur
+
+Un moteur seul manque généralement de couple pour tourner ou soulever des objets lourds dans le monde réel, c'est pourquoi il a besoin d'un engrenage ou d'une transmission. Un engrenage convertit le couple du moteur en force de sortie utilisable. Cela s'est avéré particulièrement important dans notre cas - notre stator imprimé avec des vis DIN en tant que noyaux magnétiques s'est révélé 3 à 4 fois plus faible que les homologues utilisant des stators en métal massif en acier électrique.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/stator-photo_2024-12-08_00-03-21.webp" alt="" />
+
+Étant donné cette sortie de force relativement faible, nous avions besoin d'une boîte de vitesses avec un rapport élevé qui, comme tout le reste dans Robossembler, serait simple à assembler et adapté à l'impression 3D. Nous avons exploré de nombreux designs de boîtes de vitesses, y compris certains exotiques, mais chacun ne répondait pas à nos critères. Notre dernière tentative - une boîte de vitesses à onde de contrainte avec des éléments roulants intermédiaires - s'est bien comportée mais s'est avérée trop complexe à fabriquer.
+
+Après de nombreuses expérimentations, nous avons enfin découvert le design parfait : une boîte de vitesses en précession avec un rapport de 1:43 !
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-07_21-54-20.webp" alt="" />
+
+Découvrez à quel point il est simple à assembler :
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0vXwFmTB_L4?si=soNbSNKg9tjPWY1f" title="Lecteur vidéo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+La boîte de vitesses a terminé ses tests et essais clés. Voici quelque chose d'impressionnant - l'entraînement de servo avec la boîte de vitesses ne pèse que 273g, correspondant au poids d'un standardmoteur métallique sans boîtier de vitesses ni contrôleur !
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-08_14-02-33.webp" alt="" />
+
+## Machine d'enroulement de stator
+
+Alors que la version 4 de notre machine d'enroulement a réussi à enrouler les premiers stators de manière semi-automatique, elle nécessitait des améliorations en termes de stabilité et de répétabilité. La version 5 apporte de nombreuses améliorations, et voici les principales.
+
+Nous sommes passés du contrôleur de moteur pas à pas Creality propriétaire utilisé dans la version 4 à un RAMPS - un contrôleur éprouvé du légendaire imprimante RepRap.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-50-12.webp" alt="" />
+
+- Nous avons rendu les pièces de la machine plus légères et meilleures - elles utilisent désormais 25 % de matériau plastique en moins et peuvent être imprimées en 3D plus facilement sans structures de support supplémentaires
+- Le système d'alimentation en fil est désormais plus stable avec un frein de bobine ajouté et une rainure de fil plus profonde sur la roue
+- Nous avons redessiné le boîtier d'affichage et le couvercle arrière pour une meilleure protection
+- La documentation du projet est désormais complète avec des spécifications détaillées des fixations, des temps d'impression et des données de consommation de plastique.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-51-26.webp"alt="" />
+
+Nous avons ajouté un calibrateur d'aiguille à la conception de la machine pour simplifier la configuration de l'équipement.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-04_11-41-56.webp" alt="" />
+
+La version 5 est actuellement en phase de test, aux côtés de notre nouveau générateur de programme GCode d'enroulement. Au lieu du programme précédemment codé en dur pour des modifications de moteur spécifiques, notre nouveau générateur GCode permet une adaptation rapide pour différents designs de stator.
+
+## Manipulateur de robot
+
+Alors que nous approchons de la préparation à la production avec le moteur et la boîte de vitesses, nous peaufinons la conception du manipulateur. Alors que nous pensions qu'il était bien optimisé pour l'impression 3D, nos nouveaux membres de l'équipe — un technologue 3D avec 10 ans d'expérience — ont repéré plusieurs domaines à améliorer. Nous nous sommes concentrés sur la prévisibilité de l'impression des pièces même sur des imprimantes bon marché, y compris la refonte des maillons principaux du corps pour une impression avec un minimum de supports.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/3d-supports.webp" alt="" />
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/roboarm-3d-optimize-photo_2024-11-20_15-56-53.webp" alt="" />
+
+À la demande de notre programmeur de contrôle de mouvement, nous avons redessiné la fourche — le composant qui relie les maillons d'entraînement du manipulateur en une seule chaîne cinématique.Le design précédent offrait un plus grand rayon de travail mais entraînait des positions singulières fréquentes lors des calculs de trajectoire, compliquant le contrôle de la simulation. Notre nouveau design de fourche élimine ce problème, rendant la cinématique du robot plus optimale et plus similaire à celle de Kuka Iiwa ;D.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/fork-roboarm-photo_2024-12-07_11-39-31.webp" alt="" />
+
+Pour le logiciel de contrôle, nous développons une solution en utilisant ROS 2 Humble (testant Jazzy) et Behaviour Tree CPP v4, actuellement en cours de validation sur AR4. Une innovation clé est notre utilisation extensive des nœuds de gestion du cycle de vie pour les changements de paramètres en temps d'exécution, comme les configurations de contrôleur ou le chargement de nouveaux poids de réseau neuronal de vision artificielle en vol.
+
+## Plans
+
+Nos objectifs à venir :
+
+- Lancer un dispositif de préhension amélioré avec un nouveau moteur, une boîte de vitesses et des doigts interchangeables
+- Tester le générateur de GCode de la machine d'enroulement et l'enroulement entièrement automatique du stator
+- Finaliser l'optimisation 3D du robot et créer une vidéo de démonstration d'assemblage
+- Optimiser la gestion de la température du servomoteur et la tester sous charge dans un maillon
+
+Suivez les mises à jour sur mon blog à l'adresse [x.com](https://x.com/movefasta) !
+
+## Sources logicielles et matérielles
+
+- Bras Robossembler - https://gitlab.com/robossembler/roboarm-diy-version
+- Machine d'enroulement : https://gitlab.com/robossembler/cnc/motor-wire-winder- Servo - https://gitlab.com/robossembler/servo
+- Outil de préhension - https://gitlab.com/robossembler/arm-tools/grip-tool
+- Exécution de Robossembler ROS 2 - https://gitlab.com/robossembler/robossembler-ros2

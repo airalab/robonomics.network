@@ -1,0 +1,111 @@
+---
+title: Automatisering van Crowdloan-campagnes
+date: 2021-12-08
+published: true
+locale: 'nl'
+cover_image: /blog/images/automating-kusama-crowdloan-campaigns/cover.jpg
+description: "De ervaring en gegevens van de eerste groep teams die crowdloans hebben veiliggesteld, kunnen nu een basis bieden waar toekomstige teams op kunnen voortbouwen om crowdloans beter te prijzen en het proces van het veiligstellen van crowdloans en het winnen van veilingen te automatiseren."
+abstract: "De ervaring en gegevens van de eerste groep teams die crowdloans hebben veiliggesteld, kunnen nu een basis bieden waar toekomstige teams op kunnen voortbouwen om crowdloans beter te prijzen en het proces van het veiligstellen van crowdloans en het winnen van veilingen te automatiseren."
+tags: ['Robonomics parachain']
+---
+import KusamaSlotBanner from '../../components/blocks/KusamaSlotBanner.astro'
+
+De initiële parachain-slotveilingen en de bijbehorende crowdloans hadden last van een first mover disadvantage die ervoor zorgde dat hun prijzen moeilijk te voorspellen waren en vaak te hoog waren. Dit nadeel is gebruikelijk in elke nieuwe markt die prijsontdekking ondergaat, vooral markten zoals de parachain-veilingen waar teams diverse producten met diverse behoeften lanceren.
+
+De ervaring en gegevens van de eerste groep teams die crowdloans hebben veiliggesteld, kunnen nu een basis bieden waar toekomstige teams op kunnen voortbouwen om crowdloans beter te prijzen en het proces van het veiligstellen van crowdloans en het winnen van veilingen te automatiseren.
+					
+De kernontwikkelaars van Robonomics zullen een geautomatiseerde oracle implementeren vanaf de 4e parachain crowdloan-campagne om deel te nemen aan toekomstige Kusama parachain-slotveilingen. Dit mechanisme zal het robonomics-team in staat stellen om de betaling van elke toekomstige parachain-slotlease bij verlenging te automatiseren. Het robonomics-team hoopt dat deze inspanning andere toekomstige teams zal inspireren om hun eigen geautomatiseerde proces te gebruiken of te implementeren om het algehele slotveilingsysteem te stroomlijnen en de neerwaartse risico's voor teams te verminderen.
+
+## Parameters momenteel onafhankelijk bepaald door Parachains
+
+> Bijdrageplafond; Campagneperiode; Deelnemersbeloningen; Bron van beloningen; Verdeling van tokens.
+
+Om risico's en onvoorspelbaarheid voor zowel projecten als deelnemers te beperken, en om de kosten van het winnen van deze veilingen realistisch en in lijn te houden met hun waardepropositie, zouden we voorstellen dat deze eerder genoemde parameters worden geëvalueerd en vervolgens niet onafhankelijk worden bepaald door Parachains, maar door een geautomatiseerde oracle. Met toepassing en in de loop van de tijd verwachten we dat deze oracle geïntegreerd kan worden als een algemeen goed parachain op Kusama en uiteindelijk Polkadot. 
+
+Vaak over het hoofd gezien in deDe opwinding van deze eerste Crowdloans en hun genereuze beloningsmechanismen, is de realiteit dat winnende projecten een levensduur van 48 weken hebben als een werkende operationele parachain op Kusama voordat hun lease afloopt en ze hun positie moeten vernieuwen.
+
+Met dit in gedachten hebben we een samenvatting van onze geautomatiseerde orakelalgoritme v1 opgesteld en de voorwaarden waarin het relevant en effectief zou kunnen zijn in de context van het grotere slotveilingprotocol.
+
+## Autonoom orakel van crowdloan-campagnes
+
+Zo vaak wil je de eerste zijn, maar na verloop van tijd realiseer je je dat het belangrijker is om in het spel te blijven. Het Polkadot-ecosysteem is precies de plek waar het niet uitmaakt of je de eerste of de laatste bent, wat telt is dat er een "vrije stoel" voor je is. We vragen ons af of je in je kindertijd het spel ["stoelendans"](https://nl.wikipedia.org/wiki/Stoelendans) hebt gespeeld, maar we herinneren het ons nog goed van de kleuterschool.
+
+Natuurlijk is hier ook een belangrijke specificiteit: de parachain-slotlease moet worden verlengd vóór het einde van de huidige lease, anders kan er een onderbreking of complicatie optreden in parachain-services (de parachain zal overschakelen naar [Pay-as-you-go Parachains](https://medium.com/polkadot-network/parathreads-pay-as-you-go-parachains-7440d23dde06), ook bekend als een parathread, gedurende enige tijd).
+
+!["Polkadot-ecosysteem"](/blog/images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
+
+Over het algemeen is het belangrijk om in lijn te blijven. Hieronder zullen we praten over de eerste versie van ons voorgestelde algoritme voor autonome berekening van de belangrijkste parameters van het crowdloan-campagne-orakel. Misschien moeten we het een naam geven, maar tot nu toe komt er niets interessants in gedachten.
+
+### Bijdrageplafond Gemiddelde
+
+Binnen dit model zouden we voorstellen dat het geautomatiseerde orakel de mediaankosten in KSM berekent en gemiddeld om te winnen bij elke veiling van #15 - #29. Deze resulterende gemiddelde kosten zouden worden ingesteld als het KSM Crowdloan-bijdrageplafond voor slot #30.
+
+### Levensduur van een crowdloan-campagne
+
+We gaan ervan uit dat een Crowdloan-campagne gericht moet zijn op het inzamelen gedurende 5 weken. In geval van mislukking moet het orakel de steekproeframing van de mediaanvergoedingen van een reeks [15-29] veilingen verschuiven naar [20-34] enzovoort, om rekening te houden met de resultaten van eerdere veilingen. Op deze manier zal er automatisch worden ingesteld tot het punt waarop met succes een slot wordt verkregen.
+
+### Evaluatie van de beloning voor elke KSM ten gunste van de crowdloan-campagne
+
+Dit is het meest complexe deel van het orakelalgoritme, dat de infrastructuur van de draaiende parachains vereist. Door de cyclisch herhalende economie van parachains die al enkele jaren actief zijn te voorspellen, blijven we trouw aan de opvatting dat [de beloning voor deelnemers aan de crowdloan-campagne gelijk is aan het verloren rendement van staking in de Relay-keten](https://robonomics.network/blog/robonomics-parachain-lease-offering/).
+
+Belangrijk is dat de beloning uit staking autonoom kan worden geschat door een orakel met een redelijk hoge mate van nauwkeurigheid. Zo kunnen we bijvoorbeeld nu praten over een verloren winst van 0,19 KSM voor elke 1 KSM gedurende het jaar. De metriek van verloren inkomsten alleen is echter niet voldoende, aangezien de beloning in parachain wordt aangeboden in de parachain-native token. Hierdoor wordt het schema iets ingewikkelder, maar niet al te veel. We gaan ervan uit dat de Kusama- en Polkadot-ecosystemen altijd prijsnoteringen zullen hebben voor native parachain-tokens. Bijvoorbeeld, Karura's $KAR kan al dit jaar zo'n ticker zijn in het Kusama-netwerk. We zien dat het orakel zelfstandig, zonder hulp van buitenaf, gegevens kan verkrijgen over (1) de huidige stakingsvergoeding in de Relay-keten, (2) zelfstandig gegevens kan verkrijgen over de prijs van een native parachain-token vanuit het DeFi-segment van de ecosysteemticker en op basis van die gegevens een aanbod kan doen dat vergelijkbaar is met de KSM-staking.
+
+De DOT- en KSM-houder zullen hun tas met tokens verdelen tussen staking in de Relay-keten en het ondersteunen van verschillende (misschien wel enkele tientallen) crowdloan-campagnes, op basis van de wens om de beloning te behouden zoals het zou zijn als alle DOT/KSM gestaked waren, maar het risico van een enkele tokenprijs te diversifiëren. Ja, op dit moment worden de beloningen in parachains meer gezien als een percentage van alle native tokens, en cijfers van 20% van de totale voorraad lijken niet overdreven in de gemeenschap. Hoewel het moeilijk voor te stellen is dat elk jaar 20% van alle tokens alleen voor slotverhuur wordt aangeboden. Toch is dit de genesisstaat in de fase van de eerste veilingen en, nogmaals, een normaal beeld aan het begin. Echter, het nemen van huidige beloningen voor het dagelijks leven gedurende een decennium is geen goed idee.
+
+Het belangrijkste criterium voor het berekenen van de beloning zal de verloren winst zijn van het staken in de crowdloan-campagne van een van de projecten en de conversie van deze waarde naar het aantal inheemse tokens tegen de huidige koers. Deze taak kan worden uitgevoerd door een autonoom proces.
+
+### Bron van beloning en tokenverdeling in parachain
+
+We stellen voor om een mechanisme te implementeren voor het uitgeven van nieuwe tokens in de parachain via het schatkistmodule. Op zijn beurt zal de parachain-schatkist nieuwe parachain-munten maandelijks verdelen onder de deelnemers aan de crowdloan-campagne gedurende de huidige slotleaseperiode.
+
+## De cirkel sluiten
+
+Hierboven hebben we een algemene beschrijving gegeven van de eerste versie van het orakelalgoritme, dat bedoeld is om het Robonomics-protocol levensvatbaarder te maken zonder directe betrokkenheid van ontwikkelaars. Het is echter nog belangrijker om de verbinding te begrijpen tussen de slotlease in het ecosysteem en de doelfunctie van het project. In het geval van Robonomics is het een vergoeding voor het opslaan, bijwerken en interactie van de gebruiker met de digitale tweeling van het cyber-fysieke systeem. Ons doel op de horizon van 3 jaar is om een Robonomics-segment te vormen dat in staat is om tot 1 miljoen digitale tweelingen per maand te bedienen tegen ~0,25 XRT.
+
+Als de doellast wordt bereikt, zullen we meer dan $60 miljoen per jaar aan vraag hebben naar XRT-aankopen op de markt, die zullen worden verbrand wanneer het abonnement wordt geactiveerd.
+
+(Ik zal meer praten over de levenscyclus van het abonnement apart wanneer ik de volgende release van Robonomics publiceer, gewijd aan het veilingmechanisme voor abonnementen). Het blijkt dat de waarde van XRT niet zal dalen als het aantal verkochte abonnementen voor XRT gedurende het jaar cumulatief de waarde overschrijdt die de schatkist van parachain zal betalen volgens het orakel van crowdloan-campagnes.
+
+Over het algemeen zijn mijn team en ik op koers om dit schema te creëren, dat het mogelijk moet maken om de tokenomics van de parachain te sluiten vanaf het moment dat de slot wordt verkregen tot het moment dat de lease wordt vernieuwd. We willen dit proces zo autonoom mogelijk maken en alleen de tokenhouders en ontwikkelaars overlaten om verbeteringen aan het algoritme voor te stellen via het mechanisme van democratie en het technisch comité van de parachain. Geen handwerk in perspectief. Ondertussen, zoals altijd gebeurt met hypotheses, zullen we nog steeds de eerste stappen handmatig nemen. Hieronder staat hoe het orakel van de toekomst eruit zou zien.werk voor de 4e crowdloan-campagne (ongeveer).
+
+## De parameters van de vierde crowdloan-campagne
+
+<TextCard>
+
+### Verzamelingslimiet **47.425,5262 KSM**
+
+Gebaseerd op de kosteninschatting van de 15e veiling, Geshiro
+
+</TextCard>
+
+<TextCard>
+
+### Duur **5 weken**
+
+</TextCard>
+
+<TextCard>
+
+### Vergoeding **4,20 XRT**
+
+1 KSM ~ 370$ APR = 19%,<br/>1XRT ~ 17$
+
+</TextCard>
+
+<TextCard>
+
+### Bonus
+
+Pionier NFT-kaarthouders ontvangen een extra 1XRT voor elke KSM
+
+</TextCard>
+
+<TextCard>
+
+### Distributie beloningen **Maandelijks**
+
+Proportioneel gelijke aandelen gedurende 12 maanden. De treasury voert dit uit door nieuwe tokens te genereren in de parachain
+
+</TextCard>
+
+<KusamaSlotBanner />

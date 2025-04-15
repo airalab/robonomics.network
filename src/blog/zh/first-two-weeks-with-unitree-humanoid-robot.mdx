@@ -1,0 +1,71 @@
+---
+title: '与Unitree G1人形机器人共事的前两周'
+date: 2024-12-27
+published: true
+locale: 'zh'
+tags: ['机器人技术', 'ROS 2']
+cover_image: /blog/images/first-two-weeks-with-unitree-humanoid-robot/cover.webp
+description: "自Unitree G1人形机器人抵达Robonomics实验室以来已经过去了两周。至少五名拥有机器人学硕士学位的工程师团队立即开始研究和编程这款新设备。我们希望分享来自第一线的最新消息：对于我们希望实现的人形革命，印象、发现和面临的挑战！"
+abstract: "自Unitree G1人形机器人抵达Robonomics实验室以来已经过去了两周。至少五名拥有机器人学硕士学位的工程师团队立即开始研究和编程这款新设备。我们希望分享来自第一线的最新消息：对于我们希望实现的人形革命，印象、发现和面临的挑战！"
+---
+
+## 简而言之
+
+- 成功连接到开发单元/PC2（请参见下面的图表）。
+- 通过**Zerotier**和**Yggdrasil**建立了远程连接。
+- 研究了人形机器人上基于Linux的系统，执行了标准的DevOps任务。
+- 熟悉了来自 **Python SDK**库的开发人员（我们甚至修复了一个关键错误）：现在我们可以从脚本中控制机器人：行走、坐下、站起来和阻尼。
+- 构建了**ROS 2软件包**，连接到主题，启动了几个示例，但需要进行额外的测试。
+
+<RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/image-schemes.webp" alt="Unitree humanoid robot data stream" />
+
+## 现场笔记
+
+**关于Python SDK：**
+
+- 在**Python 3.10**上使用虚拟环境（**venv**）- SDK不适用于其他版本。
+- 通过开发单元的**eth0**接口工作。
+- 尽管**CycloneDDS**已预安装，但手动重新构建以避免冲突。
+- 要运行脚本，需要设置一个环境变量（建议添加到`.bashrc`）。**重要提示：**在单引号中指定完整路径：
+
+<RbCode>
+
+```
+export CYCLONEDDS_HOME='/home/unitree/cyclonedds/install'
+```
+</RbCode>
+
+- 脚本在机器人的调试模式下无法工作，尽管根据文档应该可以。
+- 为了修复SDK并使机器人移动，我们在**g1_loco_client.py**文件的`Move()`函数中添加了一行`self.Start()`。
+
+**关于ROS 2**
+
+- 从**unitree_ros2**存储库构建软件包，包括**CycloneDDS**支持- 从构建包的文件中获取它们并添加到ROS 2环境中。
+- 其中的示例包括：
+  - 成功接收控制器状态。
+  - 与运动状态相关的示例无法运行（主题为空）。
+- 这些包可用于创建自己的ROS节点（无论是Python还是C++）。
+
+<RbGridWrapper columns="2" textAlign="center" align="end">
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/first-entering.webp" alt="Unitree humanoid robot first enter" />
+  </RbGridElement>
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/cyclonedds-error.webp" alt="Unitree humanoid robot cyclonedds error" />
+  </RbGridElement>
+</RbGridWrapper>
+
+## 任务计划
+
+1. **检查电缆供电的可能性。**也许这样的功能已经存在，我们需要查看电气文档或购买合适的电缆。
+2. **了解SDK的调试模式。**文档中表示它可以工作，但实际上却不能。
+3. **缺乏高级示例。**存储库仅限于基本操作（坐下、站起、电机控制）。对于CES 2025，我们需要要么调整现成的简单解决方案，要么开发低级运动算法。4. **技术选择:**
+  - 整个过程可以使用**Python**实现，包括与Robonomics的集成。
+  - 然而，最好使用**ROS 2**来实现结构和可扩展性。
+5. 研究强化学习方法，以便可能在机器人控制中使用。
+
+## 有用链接
+
+- 主要存储库: [https://github.com/unitreerobotics](https://github.com/unitreerobotics)   
+- Python SDK: [https://github.com/unitreerobotics/unitree_sdk2_python](https://github.com/unitreerobotics/unitree_sdk2_python)   
+- ROS 2软件包: [https://github.com/unitreerobotics/unitree_ros2](https://github.com/unitreerobotics/unitree_ros2)  

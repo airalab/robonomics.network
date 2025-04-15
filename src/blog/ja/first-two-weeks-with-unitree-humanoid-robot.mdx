@@ -1,0 +1,71 @@
+---
+title: 'ユニツリーG1ヒューマノイドロボットとの最初の2週間'
+date: 2024-12-27
+published: true
+locale: 'ja'
+tags: ['ロボティクス', 'ROS 2']
+cover_image: /blog/images/first-two-weeks-with-unitree-humanoid-robot/cover.webp
+description: "RobonomicsラボにユニツリーG1ヒューマノイドロボットが到着してから2週間が経ちました。少なくとも5人のロボティクス修士号を持つエンジニアチームが新しいデバイスの研究とプログラミングにすぐに取り掛かりました。我々は、人間の革命への道のりでの印象、発見、そして課題を共有したいと考えています！"
+abstract: "RobonomicsラボにユニツリーG1ヒューマノイドロボットが到着してから2週間が経ちました。少なくとも5人のロボティクス修士号を持つエンジニアチームが新しいデバイスの研究とプログラミングにすぐに取り掛かりました。我々は、人間の革命への道のりでの印象、発見、そして課題を共有したいと考えています！"
+---
+
+## 要約
+
+- 開発ユニット/PC2に正常に接続しました（下の図を参照）。
+- **Zerotier**および**Yggdrasil**を介した**SSH**を介したリモート接続を設定しました。
+- ヒューマノイドに搭載されたLinuxベースのシステムを研究し、標準のDevOpsタスクを実行しました。
+- **Python SDK**ライブラリに慣れました。開発者（重要なバグも修正しました）：スクリプトからロボットを制御できるようになりました。歩行、座る、立ち上がる、ダンプが可能です。
+- **ROS 2 パッケージ**を構築し、トピックに接続し、いくつかの例を起動しましたが、追加のテストが必要です。
+
+<RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/image-schemes.webp" alt="Unitree humanoid robot data stream" />
+
+## 現場からのメモ
+
+**Python SDKについて：**
+
+- **Python 3.10**で仮想環境（**venv**）を使用しました。他のバージョンではSDKが動作しません。
+- 開発ユニットから**eth0**インターフェースを介して作業しました。
+- **CycloneDDS**は事前にインストールされていましたが、競合がないように手動で再構築しました。
+- スクリプトを実行するには、環境変数を設定する必要があります（`.bashrc` に追加することをお勧めします）。**重要：**シングルクォートでフルパスを指定してください：
+
+<RbCode>
+
+```
+export CYCLONEDDS_HOME='/home/unitree/cyclonedds/install'
+```
+</RbCode>
+
+- ロボットのデバッグモードではスクリプトが動作しませんが、ドキュメントによれば動作するはずです。
+- SDKを修正してロボットを動かすために、**g1_loco_client.py**ファイルの`Move()`関数に`self.Start()`の行を追加しました。
+
+**ROS 2について**
+
+- **unitree_ros2**リポジトリからパッケージを構築し、**CycloneDDS**のサポートを含めました。- ビルドされたパッケージのファイルをソースとして、それらをROS 2環境に追加しました。
+- 例の中で：
+  - コントローラの状態を正常に受信しました。
+  - モーションの状態に関連する例は機能しませんでした（トピックが空です）。
+- これらのパッケージは、PythonでもC++でも、独自のROSノードを作成するために使用できます。
+
+<RbGridWrapper columns="2" textAlign="center" align="end">
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/first-entering.webp" alt="Unitree humanoid robot first enter" />
+  </RbGridElement>
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/first-two-weeks-with-unitree-humanoid-robot/cyclonedds-error.webp" alt="Unitree humanoid robot cyclonedds error" />
+  </RbGridElement>
+</RbGridWrapper>
+
+## タスクプラン
+
+1. **ケーブルからの電源供給の可能性を確認します。** おそらくそのような機能はすでに存在していますが、電気のドキュメントを確認するか適切なケーブルを購入する必要があります。
+2. **SDKのデバッグモードを理解します。** ドキュメントには機能すると記載されていますが、実際には機能しません。
+3. **高度な例の不足。** リポジトリは基本的なアクション（座る、立ち上がる、モーター制御）に限定されています。CES 2025では、既製の簡単なソリューションを適応するか、低レベルの移動アルゴリズムを開発する必要があります。4. **技術の選択:**
+  - Robonomicsとの統合を含め、全プロセスを**Python**で実装することができます。
+  - ただし、構造と拡張性のために**ROS 2**を使用することが好ましいです。
+5. ロボット制御における利用可能な**強化学習手法**の研究。
+
+## 便利なリンク
+
+- メインリポジトリ: [https://github.com/unitreerobotics](https://github.com/unitreerobotics)   
+- Python SDK: [https://github.com/unitreerobotics/unitree_sdk2_python](https://github.com/unitreerobotics/unitree_sdk2_python)   
+- ROS 2 パッケージ: [https://github.com/unitreerobotics/unitree_ros2](https://github.com/unitreerobotics/unitree_ros2)  

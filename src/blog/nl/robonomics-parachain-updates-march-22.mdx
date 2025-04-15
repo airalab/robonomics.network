@@ -1,0 +1,103 @@
+---
+title: "Robonomics parachain updates, maart’22"
+date: 2022-03-17
+published: true
+locale: 'nl'
+cover_image: /blog/images/robonomics-parachain-updates-march-22/cover.jpg
+description: "De Robonomics parachain werd gelanceerd in januari van dit jaar, en ons eerste publiekelijk beschikbare voortgangsrapport werd gepubliceerd op 18 januari in een blogpost. Nu zullen we details verstrekken over het werk dat we al hebben uitgevoerd binnen de takenlijst"
+abstract: ""
+tags: ['Robonomics parachain', 'Roadmap', 'Nieuwe release']
+---
+
+De Robonomics parachain werd gelanceerd in januari van dit jaar, en ons eerste publiekelijk beschikbare voortgangsrapport werd gepubliceerd op 18 januari [in een blogpost](https://robonomics.network/blog/parachain-on-kusama-first-week-report/). Nu zullen we details verstrekken over het werk dat we al hebben uitgevoerd binnen de takenlijst zoals gespecificeerd in de roadmap op Github: [Tracking issue for Robonomics Parachains on Kusama Launch #145](https://github.com/airalab/robonomics/issues/145).
+
+## Over de belangrijkste zaken in het werk van de Robonomics parachain op Kusama in 2 maanden
+
+- De parachain is stabiel en heeft de eerste miljoen extrinsieken verwerkt. Het huidige netwerk van collators blijft ook open met ongeveer [80 collators](https://telemetry.parachain.robonomics.network/#list/Robonomics). Iedereen kan [een Robonomics collator worden](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/) en beloningen ontvangen voor het voorbereiden van parachain blokkandidaten en deze door te geven aan de Kusama validators.
+
+- [In release 1.8.2](https://github.com/airalab/robonomics/releases/tag/v1.8.2) werd de sudo-functie verwijderd. De wijziging werd geaccepteerd door de parachain bij blok [347.918](https://robonomics.subscan.io/block/347918). Dit betekent dat het projectontwikkelingsteam niet langer de administratieve functies heeft om de parachain te beheren.
+
+- [Het technisch comité](https://polkadot.js.org/apps/#/techcomm) heeft de eerste update van het netwerkprotocol voltooid via het on-chain governance mechanisme. In slechts 2 maanden heeft het technischeHet comité heeft ongeveer 40 verzoeken verwerkt, zoals exodus-evenementen, schatkistvoorstellen en runtime-upgrades.
+
+- [Vanaf release 1.8.0](https://github.com/airalab/robonomics/releases/tag/v1.8.0) is de Robot-as-a-service functie volledig beschikbaar. Met behulp van deze functie kunt u de technische en economische parameters van het lanceren van een IoT-apparaat combineren.
+
+- [Het mechanisme van IoT-abonnementen in de Robonomics parachain](https://wiki.robonomics.network/docs/en/get-subscription/) heeft de fase van de eerste toepassingen in echte werksituaties doorstaan. Het is nu de belangrijkste functionaliteit van de parachain geworden, die de ontwikkelaars van Robonomics van plan zijn aan te bieden aan eigenaren van thuisinfrastructuur.
+
+- De Winterschool werd op 24 februari stopgezet. Na 3 weken besloten de ontwikkelaars om de voortzetting van de school als evenement te staken. De lessen van de Winterschool zijn herontworpen als een introductiecursus Robonomics, die gedurende 2022 online 24/7 beschikbaar zal zijn vanaf elke locatie ter wereld. De cursus zal tegen het einde van maart worden gepubliceerd op de [robonomics.academy-website](https://robonomics.academy/).
+
+- Een extra 1 XRT voor deelnemers aan de crowdoan-campagne die een pioneerpas hebben, [is beschikbaar via de Robonomics dapp](https://robonomics.app/#/bonus-for-pioneer).
+
+## Parachainstatistieken voor 2 maanden
+
+U kunt de meeste statistieken zelf vinden op de Subscan.io block explorer op: [robonomics.subscan.io](https://robonomics.subscan.io)
+
+![Parachainstatistieken op Subscan.io](/blog/images/robonomics-parachain-updates-march-22/robonomics-parachain-subscan.jpg)
+
+### De Robonomics parachain heeft 1 miljoen transacties verwerkt
+
+Het is correcter om [extrinsieken](https://wiki.polkadot.network/docs/build-protocol-info#extrinsics) te zeggen, maar we zullen soms dergelijke aannames gebruiken voor eenvoud.
+
+![extrinsieken voor Robonomics](/blog/images/robonomics-parachain-updates-march-22/montly-extrinsics.png)
+
+De dagelijkse belasting op de parachain varieert vandaag van 10 tot 25 duizend transacties per dag. De datalog() functie wordt voornamelijk gebruikt om gegevens op afstand te verzamelen van IoT-apparaten. Ook zijn de ontwikkelaars van Robonomics sinds februari begonnen met het gebruikenparachain IoT-abonnementen voor de eerste Robonomics-scenario's waar we de afgelopen 2 jaar op hebben voorbereid.
+
+![De dagelijkse belasting op de parachain vandaag](/blog/images/robonomics-parachain-updates-march-22/robonomics-parachain-transactions.jpg)
+
+Het aantal volledige Robonomics-nodes dat verzendt naar [de openbaar beschikbare parachain-telemetrieservice](https://telemetry.parachain.robonomics.network/#list/Robonomics) is verdubbeld van 40 naar 80 volledige netwerknodes. Iedereen kan [een Robonomics-collator worden](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/) en beloningen ontvangen voor het voorbereiden van parachain-blok-kandidaten en het doorgeven ervan aan de Kusama-validatoren.
+
+### De eerste Robonomics-gebruikers
+
+Al begin februari hadden we er vertrouwen in dat de Robonomics-parachain klaar was om zijn eerste gebruikers te accepteren. Het betrekken van vroege gebruikers houdt altijd in dat er veel nadruk wordt gelegd op training en hulp bieden bij welke situatie een vroege versiegebruiker ook tegenkomt. Het is ook een zoektocht naar de meest geduldige en responsieve mensen die geïnteresseerd zijn in de technologieën die we gebruiken. Ja, er zijn er altijd een paar, en het is moeilijk om ze in grotere aantallen te vinden dan een paar vrienden en collega's, maar dit is precies de taak waarmee we worden geconfronteerd in 2022. Door een gemeenschap te creëren van Web3 + IoT power users die klaar staan om te experimenteren voor educatieve doeleinden, zullen we de exponentiële groei van het project in 2023-2024 kunnen waarborgen.
+
+Het belangrijkste wat we willen doen om de eerste gebruikers aan te trekken, is het ontwikkelen van enkele trainingscursussen in 2022 die niet alleen nuttig zullen zijn om vaardigheden te verwerven, maar ook interessant om te voltooien.
+
+Natuurlijk zijn de Robonomics-ontwikkelaars van plan om wedstrijden te organiseren en de gemeenschap aan te moedigen om actief te zijn. We geloven echter nog steeds dat creativiteit/enthousiasme sterker is dan het leermateriaal dat we zouden kunnen bieden. Het is gaaf als je tijdens het leren kunt proberen [door een zwart spiegel](https://blackmirror.robonomics.academy/#/) te gaan en, terwijl de QR-code op het scherm verandert, je een aflevering van de gelijknamige serie of een scène uit het boek "Ubik" van Philip K. Dick kunt herinneren, waarin het hoofdpersonage ruzie maakt met de deur, waaraan hij een paar munten verschuldigd is... Kortom, eenEen van de belangrijkste taken van het team is om in de toekomst een creatieve benadering te behouden voor gebruikerseducatie.
+
+![](/blog/images/robonomics-parachain-updates-march-22/blackmirror-lesson.jpg)
+
+De Winterschool [werd op 24 februari opgeschort](https://twitter.com/EnsRationis/status/1496885398404059136). Gelukkig kun je nu nog steeds de eerste les proberen! Volg hiervoor de link: [https://blackmirror.robonomics.academy/#/](https://blackmirror.robonomics.academy/#/)
+
+Degenen die de eerste les van de School in februari al hebben afgerond, zullen merken dat het adres van de (D)app is gewijzigd. Nu is de les beschikbaar op het domein robonomics.academy, en binnenkort zullen alle 5 lessen die we gepland hadden om in het evenementformaat van de laatste week van februari te geven, 24/7 online beschikbaar zijn in het introductiecursusformaat van Robonomics. Hierover zullen we apart informeren.
+
+### De Robonomics releases op GitHub
+
+In de afgelopen 2 weken zijn er veel releases geweest van de Robonomics parachain client. De meest relevante op het moment van schrijven is [1.8.4](https://github.com/airalab/robonomics/releases).
+
+[Het bouwen van de Robonomics parachain client](https://wiki.robonomics.network/docs/en/how-to-build-collator-node/) op Ubuntu 21.10 en draaien zonder enige moeilijkheden:
+
+![Het bouwen van de Robonomics parachain client](/blog/images/robonomics-parachain-updates-march-22/building-client-for-robonomics-parachain.jpg)
+
+Naast systeemupdates in releases, is het belangrijk om de volgende verbeteringen te vermelden:
+
+- [Release 1.8.0](https://github.com/airalab/robonomics/releases/tag/v1.8.0) - toegevoegde pallet liability, waarmee je het Robot-as-a-Service model volledig kunt implementeren en een IoT-apparaat kunt lanceren met de overdracht van technische en economische informatie in een atomaire vorm.
+- [Release 1.8.2](https://github.com/airalab/robonomics/releases/tag/v1.8.2) - de supergebruiker (sudo) is verwijderd uit de Robonomics parachain. Vandaag de dag heeft de Robonomics parachain niet langer de mogelijkheid van directe controle door de ontwikkelaars.Je kunt kennismaken met alle veranderingen in de Robonomics parachain-client op de link: [https://github.com/airalab/robonomics/releases](https://github.com/airalab/robonomics/releases)
+
+## De eerste fase van de routekaart 2022 is voor 90% voltooid
+
+Tegen het einde van het eerste kwartaal van 2022 heeft het projectteam bijna alle [taken om de basisfunctionaliteit van de parachain te implementeren](https://github.com/airalab/robonomics/issues/145) voltooid, en verschillende Robonomics-scenario's die eerder alleen in de testmodus werkten, bevinden zich al in de pilotfase.
+
+### De belangrijkste taak van Q2 2022 - XCM-integraties
+
+Zoals te zien is in [het Tracking issue voor Robonomics Parachains on Kusama Launch #145](https://github.com/airalab/robonomics/issues/145), heeft het eerste deel van de taken een item dat verband houdt met [XCMP](https://research.web3.foundation/en/latest/polkadot/XCMP/index.html) implementatie. We hebben de eerste tests uitgevoerd met berichten tussen 2 instanties van de Robonomics parachain tijdens [een masterclass in Sint-Petersburg in de herfst van 2020](https://youtu.be/zCH7RuIHEMg). Het is echter zo dat XCMP in de afgelopen 1,5 jaar veel veranderingen heeft ondergaan, en nu is het correcter om te spreken over [XCM (Cross-Consensus Message)](https://wiki.polkadot.network/docs/learn-crosschain).
+
+Gavin Wood introduceerde de eerste versie van XCM in de herfst van 2021. XCM wordt goed behandeld in drie artikelen op medium:
+
+- [XCM: Het Cross-Consensus Message Format](https://medium.com/polkadot-network/xcm-the-cross-consensus-message-format-3b77b1373392)
+- [XCM Deel II: Versiebeheer en Compatibiliteit](https://medium.com/polkadot-network/xcm-part-ii-versioning-and-compatibility-b313fc257b83)
+- [XCM Deel III: Uitvoering en Foutenbeheer](https://medium.com/polkadot-network/xcm-part-iii-execution-and-error-management-ceb8155dd166) 
+
+Al in februari zijn we begonnen met het verfijnen van de Robonomics parachain om de eerste integratie binnen het Kusama-ecosysteem te implementeren. Onze eersteDe taak in deze richting is de integratie met de Statemine parachain. Deze integratie zal gebruikers in staat stellen om elk statemine-token te gebruiken om te betalen volgens het Robot-as-a-Service-model, bijvoorbeeld [bij het op afstand besturen van een telescoop in de Atacamawoestijn](http://telescope.merklebot.com/) of om te betalen voor items in een verkoopautomaat met tokens overal ter wereld.
+
+Naast de integratie met Statemine omvatten de plannen voor Q2:
+
+- Integratie met Karura om XRT/kUSD-liquiditeitspool toe te voegen.
+- Integratie met Moonriver om IoT-apparaten te beheren met behulp van willekeurige solidity-contracten.
+- Het bestuderen van de technologie van bruggen tussen Ethereum en Kusama aan de hand van het voorbeeld van Darwinia.
+
+We zullen elk integratiescenario afzonderlijk beschrijven op basis van de resultaten van tests in Rococo, Westend of andere zandbakken waar Karura, Moonriver, Darwinia parachains hun eigen testversies hebben.
+
+## Tot slot
+
+Er heerst nu complete chaos om ons heen, maar het projectteam heeft onze koers voor het Web3-universum al lang geleden uitgestippeld - we publiceren de resultaten van ons werk op internet zodat experimenten overal ter wereld kunnen worden herhaald, want behalve open source code en toegang tot de blockchain heb je niets meer nodig. Natuurlijk is het leven in de wereld van Web3 niet zo eenvoudig als het op veel details aankomt, maar we kunnen het aan. Als ingenieurs kunnen we ons de gevolgen van de militarisering in de 21e eeuw voorstellen. Het beste wat we allemaal kunnen doen, met de huidige geopolitieke situaties in gedachten, is persoonlijk deelnemen aan vreedzame projecten en zoveel mogelijk open source software creëren voor de taken van gewone mensen. Het afgelopen jaar hebben onze inspanningen projecten gelanceerd zoals: een educatief programma voor [op afstand bedienen van de robotische hond Boston Dynamics](https://spot-sdk.education/); [op afstand waarnemen van de sterrenhemel](https://www.youtube.com/watch?v=Up8hESnXnaY) vanaf de meest geschikte plek hiervoor op aarde - de Atacamawoestijn; [burgerlijk sensorsysteem voor monitoring van de kwaliteit van de stedelijke omgeving](https://airalab.org/en/air-monitoring) in de industriestad Togliatti; [monitoring van de waterkwaliteit](https://www.youtube.com/watch?v=4iCkdF2UJmo) in de grachten van Sint-Petersburg. Dit jaar zullen we ons richten op slimme thuisscenario's zodat jekan [uw thuis IoT-infrastructuur beheren zonder de hulp van clouds](https://wiki.robonomics.network/docs/nl/home-assistant-begin/).
+
+We zullen meer met u delen in de volgende updates van de routekaart.

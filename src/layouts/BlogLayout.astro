@@ -1,0 +1,102 @@
+---
+import Layout from './Layout.astro';
+
+const {currentPage, totalPages} = Astro.props;
+
+
+function generateRoute(page) {
+  return page === 1 ? '/blog/' : `/blog/page/${page}/`;
+}
+---
+
+
+<Layout
+  title={$tr("Blog")}
+  description={$tr("Futuristic, secure, and server-less IoT platform on top of Ethereum and Polkadot. Bringing economy of robots into the 4th industrial revolution.")}
+  ogImage="/website_cover_blogs.jpg"
+  pageTitle={$tr("Tech blog & updates")}
+>
+
+  <slot/>
+
+  <div class="pagination">
+    <a href={generateRoute(1)} aria-label="Go to first page" class={currentPage === 1 ? 'disabled' : ''}></a>
+    <a href={generateRoute(currentPage - 1)} aria-label="Go to previous page" class={currentPage === 1 ? 'disabled' : ''}></a>
+
+    {Array.from({ length: totalPages }).map((_, i) => {
+      const page = i + 1;
+      return (
+        <a href={generateRoute(page)} class={currentPage === page ? 'active' : ''}>
+          {page}
+        </a>
+      );
+    })}
+
+    <a href={generateRoute(currentPage + 1)} aria-label="Go to next page" class={currentPage === totalPages ? 'disabled' : ''}></a>
+    <a href={generateRoute(totalPages)} aria-label="Go to last page" class={currentPage === totalPages ? 'disabled' : ''}></a>
+  </div>
+</Layout>
+
+<style>
+
+/* pagination */
+   .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--space) 0;
+  }
+
+  .pagination a {
+    color: var(--color-blue);
+    text-decoration: none;
+  }
+
+  .pagination a:not(:last-child) {
+    margin-right: 45px;
+  }
+
+
+  .pagination a.active {
+    color: var(--color-dark);
+  }
+
+  .pagination a:hover {
+    opacity: 0.5;
+  }
+
+  .pagination a[aria-label="Go to first page"],
+  .pagination a[aria-label^="Go to last page"],
+  .pagination a[aria-label^="Go to previous page"],
+  .pagination a[aria-label^="Go to next page"]
+   {
+    font-family: 'customIcons';
+    font-size: 1.5rem;
+  }
+
+  .pagination a[aria-label="Go to first page"],
+  .pagination a[aria-label^="Go to previous page"]
+  {
+    color: var(--color-dark);
+  }
+
+  .pagination a[aria-label^="Go to last page"],
+  .pagination a[aria-label^="Go to next page"] {
+    display: inline-block;
+    transform: scale(-1);
+  }
+
+  .pagination .disabled {
+    display: none !important;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .pagination a:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+/* end of pagination  */
+
+</style>

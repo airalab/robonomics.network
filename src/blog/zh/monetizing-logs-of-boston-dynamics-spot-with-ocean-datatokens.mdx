@@ -1,0 +1,42 @@
+---
+title: 使用Ocean Datatokens为波士顿动力Spot的日志赚钱
+date: 2021-09-09
+published: true
+locale: 'zh'
+cover_image: /blog/images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/Robonomics_Ocean_p3_blog.jpg
+description: "在上一篇文章中，我们介绍了我们的ROS软件包-ocean_ros，它连接了Ocean API和ROS，并部分涉及了出售机器人技术日志的用例。今天我们将深入探讨这个用例，并描述设备数据代币化的具体示例。"
+abstract: "是时候与Ocean Protocol进行新阶段的整合了。"
+tags: ['合作', '用例']
+---
+
+是时候与Ocean Protocol进行新阶段的整合了。在[上一篇文章](/blog/ocean-protocol-p-2/)中，我们介绍了我们的ROS软件包-ocean_ros，它连接了Ocean API和ROS，并部分涉及了出售机器人技术日志的用例。今天我们将深入探讨这个用例，并描述设备数据代币化的具体示例。
+
+首先，我们需要了解这些数据以及从中创建的数据代币可以带来什么实际的实用性。显然，在机器人和设备运行过程中获得的服务信息不断被重复使用以改进算法或用户体验。但在大多数情况下，这些信息并没有超出设备制造商本身。当市场上出现工作原理类似的设备（例如机器人吸尘器）或发布了一个被定位为其他解决方案基础的开放平台（如Raspberry Pi、Arduino、ROS的TurtleBot）时，困难就开始出现。对于第一种情况，世界各地许多相同类型的设备生成了大量专用于特定任务的数据。对于第二种情况，开放平台的开发人员在其项目中获得了各种任务的独特数据集。然而，这种经验并没有被汇总和共享。它仍然无法用于分析，这限制了系统的改进，并使得在控制过程中找到新方法变得困难。
+
+例如，对于机械手的运动规划，逆运动学是一个挑战。需要找到运动链的关节参数，以将链的末端移动到所需的位置和方向。换句话说，为了移动手臂的末端将手臂移动到正确位置 - 我们需要计算手臂的每个关节的位置。通常这个问题是通过分析或数值方法来解决的，但有时这些方法会出现问题，尤其是计算方面的问题。随着机器学习的兴起，[神经网络方法](https://doi.org/10.1016/j.protcy.2013.12.451)开始被用来解决逆运动学问题，但它们需要有关真实设备运动信息的[数据集](https://mint-lab.github.io/awesome-robotics-datasets/)来训练模型。
+
+这些数据需要被收集并提供给感兴趣的各方。这就是[Ocean Protocol](https://oceanprotocol.com/)数据代币的用武之地。它们可以自动化这一过程并推动机器人数据集市场。现在这一领域主要由开放数据集占据，但它们的主要缺点是在商业用例中质量较低。让我们继续看看我们的机器人数据代币化示例。
+
+##  相遇波士顿动力的Spot出售其遥测数据
+
+Spot是一个复杂多用途平台的相关示例，具有各种应用场景。事实上，使用真实的Spot遥测数据是相当困难的，这可能会严重拖慢为机器人开发定制模块的速度，尤其是如果开发人员想要使用机器学习。开发人员可以恢复和研究的操作示例在这里将非常有用，但到目前为止，在使用机器人方面可用的数据非常少，特别是在美国以外。这就是为什么我们希望我们的Spot能够成为提供执行相同操作时获得的实际遥测数据高质量日志的供应商。这将为开发人员提供多次重复相同场景的记录，这应该有助于他们开发或改进自己的解决方案。
+
+## 实施
+
+与Ocean API的主要集成由我们之前编写的ROS软件包 - [*ocean_ros*](https://github.com/LoSk-p/ocean_ros) 提供。为了将Spot SDK与ROS抽象连接起来，并在这个操作系统中处理机器人日志，我们使用了由Clearpath Robotics创建的[驱动程序](https://clearpathrobotics.com/assets/guides/melodic/spot-ros/ros_setup.html)。您可以通过我们的同事Merklebot在[教育计划](https://spot-sdk.education/)中了解如何使用Spot SDK收集遥测数据。
+
+在Spot执行任何命令后，我们会得到一个rosbag格式的文件。使用来自/tf ROS主题的数据，描述了Spot框架相对于彼此的位置。框架代表机器人和周围物体的部分，机器人可以通过技术视觉看到。两个框架之间的关系由三元素平移向量描述，该向量描述了两个框架原点位置之间的差异，以及旋转四元数，显示了两个框架坐标系旋转之间的差异。每个框架的位置是相对于父框架计算的（例如，臀部相对于身体），初始框架是Spot在开始时的位置。
+
+在Spot执行任何命令后，我们会得到一个以rosbag格式的文件，其中包含来自/tf ROS主题的数据，描述了Spot框架相对于彼此的位置。框架代表机器人和周围物体的部分，机器人可以通过技术视觉看到。两个框架之间的关系由三元素平移向量描述，该向量描述了两个框架原点位置之间的差异，以及旋转四元数，显示了两个框架坐标系旋转之间的差异。每个框架的位置是相对于父框架计算的（例如，臀部相对于身体），初始框架是Spot在开始时的位置。
+
+![Spot的不同部分和框架之间关系的图表](/blog/images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/spot-scheme.png)
+
+*Spot的不同部分和框架之间关系的图表。来源: https://dev.bostondynamics.com/docs/concepts/about_spot.html*
+
+<YouTube id="https://youtu.be/6i9zYpCMzn8" posterQuality="max"/>
+
+该视频展示了创建、销售和购买Spot遥测数据代币的命令序列（有关ocean_ros软件包的工作原理的更多详细信息，请参见[这里](https://www.youtube.com/watch?v=Ssit8-u6dZY)）。值得注意的是，rosbag文件预先加载到IPFS文件系统中，以通过哈希链接访问，这在铸造数据代币时使用。
+
+![3D机器人模型上的Spot](/blog/images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/Spot-on-a-3D-robot-model.jpg)
+
+该视频还展示了购买这些数据代币的过程以及恢复整个Spot在3D机器人模型上执行的命令序列。为此，我们使用ROS的[rviz](http://wiki.ros.org/rviz)可视化工具。因此，开发人员可以使用任何真实的Spot遥测数据，即使没有访问机器人的权限。

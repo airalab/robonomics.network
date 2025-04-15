@@ -1,0 +1,72 @@
+---
+const { 
+  title, 
+  text, 
+  img, 
+  imgAlt = 'image', 
+  multiple = false, 
+  subtitle = false, 
+  imageOutside = false, 
+  imageTop = false, 
+  imgClasses = '' 
+} = Astro.props;
+
+const TitleTag = subtitle ? 'h4' : 'h2';
+---
+
+<div class="case-page__text">
+  {img && imageOutside && (
+    <div class="layout__mid img-top layout">
+      <img class={imgClasses} src={`/images/cases/${img}`} alt={imgAlt} />
+    </div>
+  )}
+
+  <div class="case-page__text-container layout__text">
+    {img && !imageOutside && imageTop && (
+      <img class={imgClasses} src={`/images/cases/${img}`} alt={imgAlt} />
+    )}
+
+    {title && (<TitleTag>{title}</TitleTag>)}
+
+    {multiple ? (
+      <div class="case-page__text-wrapper">
+        <slot />
+      </div>
+    ) : (
+      <p>{text}</p>
+    )}
+
+    {img && !imageOutside && !imageTop && (
+      <img class={imgClasses} src={`/images/cases/${img}`} alt={imgAlt} />
+    )}
+  </div>
+
+  {imageOutside && !imageTop && (
+    <div class="layout__mid img-bottom layout">
+      <img class={imgClasses} src={`/images/cases/${img}`} alt={imgAlt} />
+    </div>
+  )}
+</div>
+
+<style>
+  .case-page__text {
+    margin-bottom: calc(var(--space) * 3);
+  }
+
+  .case-page__text-wrapper p {
+    margin-bottom: var(--space-text);
+  }
+
+  .case-page__text-container img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .case-page__text .img-top {
+    margin-bottom: calc(var(--space) * 0.7);
+  }
+
+  .case-page__text .img-bottom {
+    padding: 0;
+  }
+</style>

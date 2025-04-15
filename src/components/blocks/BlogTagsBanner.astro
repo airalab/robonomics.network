@@ -1,0 +1,127 @@
+---
+// data
+import { getCollection } from 'astro:content';
+import { languageTag } from '../../paraglide/runtime';
+
+const allPosts = await getCollection('blog'); 
+
+const tags = [
+  ...new Set(
+    allPosts
+      .filter((post: any) => post.data.locale === languageTag()) // Filter valid posts
+      .flatMap((post: any) => post.data.tags) // Flatten the tags array
+      .map((tag: string) => tag.toLowerCase()) // Convert to lowercase
+  ),
+]
+
+const {activeTag} = Astro.props;
+---
+
+
+<section id="blog-banner" class="section section__solid section__blue">
+  <div class="layout">
+      <h1>{$tr('Important news &amp; announcements')}</h1>
+      <div class="blog-banner__wrapper">
+        <div class="blog-banner__img">
+          <img alt="" src="/images/blog-banner-img.svg" aria-hidden="true" />
+        </div>
+        <div class="blog-banner__tags-wrapper" v-show="tags.length">
+          <ul class="list blog-banner__tags-list animate-inside-fast" v-in-viewport.once>
+            <li class="blog-banner__tags-item">
+              <a class="blog-banner__tags-link" href="/blog/" aria-label="go to all posts">#{$tr('All posts')}</a>
+            </li>
+            {tags.map(tag => (
+              <li class="blog-banner__tags-item">
+                <a class="blog-banner__tags-link" class:list={[{'inactiveTag': activeTag !== '' && tag !== activeTag}]}href={`/blog/tags/${encodeURIComponent(tag)}/`}>#{tag}</a>
+              </li>
+            ))}
+
+          </ul>
+        </div>
+      </div>
+  </div>
+</section>
+
+<style>
+
+  #blog-banner {
+    padding-top: calc(var(--space)*4);
+    padding-bottom: calc(var(--space)*4);
+    margin-bottom: calc(var(--space) * 3);
+  }
+
+  h1 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .blog-banner__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-banner__img {
+    margin-right: 60px;
+  }
+
+  .blog-banner__tags-wrapper {
+    width: 100%;
+    max-width: 655px;
+  }
+
+  .blog-banner__tags-list {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .blog-banner__tags-item {
+    margin: 0;
+    margin-right: 40px;
+    margin-bottom: 15px;
+  }
+
+  .blog-banner__tags-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .inactiveTag {
+    opacity: 0.4;
+  }
+
+    @media screen and (max-width: 680px) {
+    .blog-banner__wrapper {
+      flex-direction: column;
+    }
+
+    .blog-banner__img {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    .blog-banner__tags-list  {
+      justify-content: center;
+    }
+
+    .blog-banner__tags-item {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+    .blog-banner__tags-link {
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+  }
+  
+</style>

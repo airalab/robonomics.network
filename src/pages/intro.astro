@@ -1,0 +1,554 @@
+---
+// components
+import Layout from '../layouts/Layout.astro';
+import Scheme from '../components/blocks/Scheme.astro';
+
+---
+
+<Layout
+  title = {$tr("Building Dapps && Web Services for IoT on Robonomics Parachain")}
+  description = {$tr("The future of humanity itself depends on how we teach robots to handle their capabilities.")}
+  ogImage = "/website_cover.webp"
+>
+
+<div class="page">
+  <section class="section section__solid section__dotted_darkblue wide">
+    <h1 class="layout layout__content clean">{$tr("Building Dapps && Web Services for IoT on Robonomics Parachain")}</h1>
+    <div class="layout layout__text animate subtitle">{$tr("Sergei Lonshakov, software architect")}</div>
+  </section>
+
+  <section class="section">
+    <div class="layout layout__text animate-inside grid-2">
+      <img aria-hidden="true" alt="" src="/images/intro/person-norbert-wiener.webp" />
+      <div class="hyphens">
+        <p>&laquo;{$tr('Let us remember that the automatic machine is the precise economic equivalent of slave labor. Any labor which competes with slave labor must accept the economic consequences of slave labor.')}&raquo;</p>
+        <p>― {$tr('Norbert Wiener, cybernetics')}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__solid section section__lightblue">
+    <div class="layout layout__text grid-2 middle animate-inside">
+      <img aria-hidden="true" alt="" src="/images/intro/robots-handshaking.webp" />
+      <div class="hyphens text-big">
+        <p>{$tr('Robots are like grown-up children today – they already can manage money, and enter into legal relations, be independent.')}</p>
+        <p>{$tr('The future of humanity itself depends on how we teach robots to handle their capabilities.')}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section__solid section__blue">
+    <div class="layout layout__text animate-inside">
+      <h2>{$tr('What is Robonomics network?')}</h2>
+      <p class="hyphens">{$tr('Robonomics is an open-source platform for IoT applications which enables the exchange of technical and economic information in the form of atomic transactions between user applications, IoT services, and complex robotics.')}</p>
+    </div>
+
+    <div class="layout layout__content">
+      <Scheme/>
+    </div> 
+  </section>
+
+
+  <section class="section">
+
+    <section class="layout section layout__content">
+      <h2 class="animate">{$tr('Robonomics tools')}</h2>
+      <div class="introTools grid-4 animate-inside">
+        <div>
+          <img aria-hidden="true" alt="" src="/images/intro/robots-digitalTwins.webp" />
+          <h5 set:html={$tr("Operate with digital twins of IoT devices")} />
+        </div>
+        <div>
+          <img aria-hidden="true" alt="" src="/images/intro/robots-smartContract.webp" />
+          <h5 set:html={$tr("The first tools of the robot economy: money for robots, contracts for robots")} />
+        </div>
+        <div>
+          <img aria-hidden="true" alt="" src="/images/intro/robots-cloud.webp" />
+          <h5 set:html={$tr("Software for connecting devices to a decentralized cloud")} />
+        </div>
+        <div>
+          <img aria-hidden="true" alt="" src="/images/intro/robots-console.webp" />
+          <h5 set:html={$tr("API library for custom IoT applications")} />
+        </div>
+      </div>
+    </section>
+
+    <div class="layout section layout__text hyphens">
+      <p class="animate">{$tr('Robonomics contains a complete set of tools for developing IoT applications, both on the robotics and the user interface sides. Communication between the user and device happens using the most successful technologies from the Web3 world – IPFS, Ethereum, and Polkadot. Thus, developers can create modern and secure applications for Smart Cities and Industry 4.0.')}</p>
+      <div class="introLogos animate-inside-fast">
+        <img alt="Rust" src="/images/logos/rust.webp" />
+        <img alt="Python" src="/images/logos/python.svg" />
+        <img alt="Haskell" src="/images/logos/haskell.webp" />
+        <img alt="JavaScript" src="/images/logos/JavaScript.svg" />
+        <img alt="ROS" src="/images/logos/ros.svg" />
+        <img alt="NixOS" src="/images/logos/nixos.webp" />
+        <img alt="IPFS" src="/images/logos/IPFS.webp" />
+        <img alt="Ethereum" src="/images/logos/ethereum.svg" />
+        <img alt="Polkadot" src="/images/logos/polkadot.svg" />
+        <img alt="AIRA" src="/images/logos/aira.svg" />
+      </div>
+    </div>
+  </section>
+
+  <hr/>
+
+   <section class="section">
+
+      <section class="layout section layout__content">
+        <section class="animate-inside section">
+          <h2>{$tr('Robonomics Connectivity')}</h2>
+          <p class="layout__text" set:html={$tr("For the developers’ convenience, Robonomics contains a set of software for connecting: IoT devices using the HTTP/MQTT protocol, complex robotic systems using the Robot Operating System (ROS)")} />
+        </section>
+
+        <div class="introTools grid-3 animate-inside">
+          <div>
+            <img aria-hidden="true" alt="" src="/images/intro/robots-sensor.webp" />
+            <h5>
+              <a href="https://wiki.robonomics.network/docs/connect-sensor-to-robonomics/" target="_blank" aria-label="connect a sensor to the robonomics network">{$tr('Connect a sensor')}</a> {$tr('to the Robonomics network')}
+            </h5>
+          </div>
+          <div>
+            <img aria-hidden="true" alt="" src="/images/intro/robonomics-io.webp" />
+            <h5>
+              {$tr('Try')} <a href="https://wiki.robonomics.network/docs/rio-overview/" target="_blank" aria-label="Robonomics IO overview">{$tr('Robonomics IO')}</a> – {$tr('a simple prototyping tool')}
+            </h5>
+          </div>
+          <div>
+            <img aria-hidden="true" alt="" src="/images/intro/robots-aira.webp" />
+            <h5>
+              {$tr('Start building your own cyber physical system with')} <a href="https://wiki.robonomics.network/docs/aira-installation-on-vb/" target="_blank" aria-label="aira installation">{$tr('Aira OS')}</a>
+            </h5>
+          </div>
+        </div>
+      </section>
+
+  </section>
+
+
+  <section class="introRobots section section__solid section__lightblue">
+    <div class="layout layout__content animate">
+      <h2>{$tr('Robonomics Supports Hundreds of Robots Out of the Box')}</h2>
+    </div>
+
+    <div class="layout layout__text animate-inside">
+      <div class="grid-2 middle">
+        <p class="hyphens text-big">{$tr('Platform users can connect ROS-compatible robots to digital economy in a matter of minutes. For a complete list of supported robots, please follow the link:')} <a href="https://robots.ros.org/" target="_blank" aria-label="check the list of supported robots">https://robots.ros.org/</a></p>
+        <a href="https://robots.ros.org/" target="_blank" aria-label="ros website"><img aria-hidden="true" src="/ros-website.gif"/></a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="no-margins"/>
+
+  <section class="section section__solid section__gradient-purpleblue">
+    <div class="layout layout__content animate">
+      <h2>{$tr('Decentralized Cloud infrastructure for IoT')}</h2>
+    </div>
+
+    <div class="layout layout__content">
+
+      <p class="text-big layout__text_small">{$tr('Robonomics Web Services (RWS) is the basic infrastructural service for Robotics and IoT on top of Robonomics Parachain and IPFS.')}</p>
+     
+      <div class="scheme-rwsPlace animate-inside">
+          <div class="item">
+            {$tr('IoT Device')}
+            <div class="img" aria-hidden="true">
+              <img aria-hidden="true" alt="" src="/images/intro/schemeRwsPlace-1.webp"/>
+            </div>
+          </div>
+          <div class="item">
+            {$tr('Robonomics Connectivity')}
+            <div class="img" aria-hidden="true">
+              <img aria-hidden="true" alt="" src="/images/intro/schemeRwsPlace-2.webp"/>
+            </div>
+          </div>
+          <div class="item highlight">
+            {$tr('Robonomics web services (RWS)')}
+            <div class="img" aria-hidden="true">
+              <img aria-hidden="true" alt="" src="/images/intro/schemeRwsPlace-3.webp"/>
+            </div>
+          </div>
+          <div class="item">
+            {$tr('Robonomics dapp')}
+            <div class="img" aria-hidden="true">
+              <img aria-hidden="true" alt="" src="/images/intro/schemeRwsPlace-4.webp"/>
+            </div>
+          </div>
+          <div class="item core">{$tr('economy of robots')}</div>
+        </div>
+    </div>
+  </section>
+
+  <hr class="no-margins"/>
+
+  <section class="section section__solid section__darkpurple">
+    <div class="layout layout__content">
+      <h2 class="animate">{$tr('Core RWS features available for IoT today')}</h2>
+       
+      <div class="introRwsFeature grid-3 animate-inside">
+        <div>
+          <div class="img" aria-hidden="true">
+              <img aria-hidden="true" alt="" src="/images/intro/intro-rwsFeature-1.webp"/>
+          </div>
+          <h5>{$tr('RWS PubSub Message Broker')}</h5>
+          {$tr('Use unlimited messaging over a p2p network based on IPFS protocol')}
+        </div>
+
+        <div>
+          <div class="img" aria-hidden="true">
+              <img aria-hidden="true" alt="" src="/images/intro/intro-rwsFeature-2.webp"/>
+          </div>
+          <h5>{$tr('RWS Data Blockchainization Service')}</h5>
+          {$tr('Put data into IPFS and store hashes in a public Blockchain')}
+        </div>
+
+        <div>
+          <div class="img" aria-hidden="true">
+              <img aria-hidden="true" alt="" src="/images/intro/intro-rwsFeature-3.webp"/>
+          </div>
+          <h5>{$tr('RWS Robot Actions')}</h5>
+          {$tr('Switch on / off; launch or stop your IoT devices under the control of a decentralized computer')}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="no-margins"/>
+  <section class="introDigitalTwins section section__solid section__dotted_darkblue animate-inside">
+    <h2 class="layout layout__content">{$tr('Heart of Your IoT Application - Digital Twin on Blockchain')}</h2>
+    <div class="layout layout__text hyphens text-big">
+      <p>{$tr('In the technical architecture, IoT digital twins provide the visibility and monitoring of things and related events (e.g., using IoT devices to automatically capture the origin of a product), and blockchain enables the shared single version of the truth as to the state of these things across their life cycles and associated business events')} <i>{$tr('[from Gartner research]')}</i></p>
+      <p>{$tr('Robonomics Parachain provides an opportunity to create a model of a digital twin and update its state every 6 seconds.')}</p>
+    </div>
+    <section class="section layout layout__content img" aria-hidden="true">
+        <img aria-hidden="true" alt="" src="/images/intro/digitalTwins.webp"/>
+    </section>
+  </section>
+</div>
+
+</Layout>
+
+
+<style>
+  h1 {
+    font-size: calc(var(--base-font-size) * 1.8);
+  }
+
+  @media screen and (max-width: 500px) {
+    h1 { font-size: calc(var(--base-font-size) * 1.4) }
+  }
+
+  @media screen and (max-width: 350px) {
+    h1 { font-size: calc(var(--base-font-size) * 1) }
+  }
+
+  h2 {
+    margin-bottom: var(--space);
+  }
+
+
+  .scheme {
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr 150px 1fr;
+    gap: var(--space);
+    align-items: stretch;
+    align-content: center;
+    justify-items: stretch;
+    justify-content: space-between;
+    margin: calc(var(--space)*2) 0 0;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .scheme > * {
+    display: grid;
+    align-content: center;
+  }
+
+  .scheme-item {
+    min-height: 150px;
+    border: 1px dashed var(--color-blue-light);
+    padding: var(--space);
+  }
+
+  .scheme-a {
+    font-size: 60%;
+    color: var(--color-blue-light);
+  }
+
+  .scheme-a span {
+    display: block;
+  }
+
+  .scheme-a .arrow {
+    white-space: nowrap;
+  }
+
+  .scheme-a-left {
+    color: var(--color-pink);
+  }
+
+  @media screen and (max-width: 1200px) {
+    .scheme {
+      gap: 0;
+      grid-template-columns: 1fr 120px 1fr 120px 1fr;
+      font-size: 80%;
+    }
+  }
+
+  @media screen and (max-width: 786px) {
+    .scheme {
+      grid-template-columns: 1fr;
+      gap: calc(var(--space)*2);
+    }
+
+    .scheme .scheme-a {
+      font-size: 80%;
+      transform: rotate(90deg);
+    }
+  }
+
+  .introTools h5 {
+    margin-top: var(--space)
+  }
+
+  .introTools.grid-4 img { max-width: 80%; }
+  .introTools.grid-3 img { max-width: 60%; }
+
+  .introLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .introLogos img {
+      max-width: 8rem;
+      filter: grayscale(1) opacity(0.4);
+      margin: var(--space) var(--space) 0;
+  }
+
+  .introRobots {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 16rem;
+
+    background-image: url('/images/intro/robots-multiUniversal.webp');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 100%;
+  }
+
+  .introRobots .layout * {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 900px) {
+    .introRobots { background-size: 1000px; }
+  }
+
+  @media screen and (max-width: 500px) {
+    .introRobots {
+      padding-bottom: 9rem;
+      background-size: 600px;
+    }
+  }
+
+  .scheme-rwsPlace {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .scheme-rwsPlace .item {
+      position: relative;
+      padding: calc(var(--space) * 0.5);
+      border: 1px dashed var(--color-blue-light);
+
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      color: var(--color-blue-light);
+  }
+
+  .scheme-rwsPlace .item:not(:last-child) {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+  }
+
+  .scheme-rwsPlace .img {
+    position: absolute;
+    height: 80px;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .scheme-rwsPlace img {
+      height: 100%;
+      width: auto;
+  }
+
+  .scheme-rwsPlace .item.highlight {
+    color: #fff;
+    background-color: var(--color-blue-light);
+  }
+
+  .scheme-rwsPlace .item.core {
+    color: var(--color-orangeYellow);
+    border-color: var(--color-orangeYellow);
+
+    margin-top: 120px;
+    position: relative;
+  }
+
+  .scheme-rwsPlace .item.core:before, .scheme-rwsPlace .item.core:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 120px;
+    border-left: 1px dashed var(--color-orangeYellow);
+
+    position: absolute;
+    top: -120px;
+  }
+
+  .scheme-rwsPlace .item.core:before {
+    transform: rotate(135deg);
+    left: calc(50% - 80px);
+  }
+
+  .scheme-rwsPlace .item.core:after {
+    transform: rotate(45deg);
+    right: calc(50% - 80px);
+  }
+
+  .introRWS {
+    gap: calc(var(--space)*2);
+  }
+
+  @media screen and (max-width: 720px) {
+    .introRWS { grid-template-columns: 1fr; }
+  }
+  
+
+  .introRwsFeature .img img {
+      max-width: 80%;
+  }
+
+
+  .introDigitalTwins {
+    padding-bottom: 0;
+  }
+
+  .introDigitalTwins section.img {
+      margin-bottom: 0;
+  }
+
+  .introDigitalTwins img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .introMarketplace {
+
+    align-items: start;
+  }
+
+  .introMarketplace h2 {
+    text-align: left;
+  }
+
+  .introMarketplace .img {
+      position: relative;
+  }
+
+ .introMarketplace .img > img {
+        width: 100%;
+        max-width: 300px;
+        position: absolute;
+        bottom: 0;
+        left: var(--space);
+  }
+
+    .marketplace {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: calc(var(--space) * 0.5);
+      padding: calc(var(--space)*2) calc(var(--space)*2) 280px;
+      text-decoration: none;
+      background: var(--color-gradient-marketplace);
+      border-radius: 4px;
+    }
+
+    .marketplace .item {
+        background: #fff;
+        padding: calc(var(--space) * 0.5);
+        color: var(--color-blue-mid);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 60%;
+        font-weight: 500;
+        border-radius: 4px;
+        text-align: left;
+      }
+
+    .marketplace-add {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      background: var(--color-blue-mid);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 1;
+   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      top: 300px;
+      right: calc(var(--space)*2);
+    }
+
+    .marketplace-add:hover {
+        color: #fff;
+        background: var(--color-green);
+    }
+
+    @media screen and (max-width: 1330px) {
+      .introMarketplace { grid-template-columns: 1fr; }
+
+      .marketplace-add .img {
+        grid-row-start: 2;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .marketplace {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .marketplace-add > div:last-child {
+          display: none;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+      .marketplace {
+        grid-template-columns: minmax(0, 200px);
+      }
+
+      .marketplace > div:not(:first-child) {
+          display: none;
+        }
+    }
+  
+
+</style>
