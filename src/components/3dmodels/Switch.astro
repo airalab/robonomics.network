@@ -1,0 +1,138 @@
+---
+const {classList} = Astro.props;
+---
+
+<div class={`switch-container ${classList}`}></div>
+
+<script>
+  import * as THREE from 'three';
+  import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+  import WebGL from 'three/examples/jsm/capabilities/WebGL.js';
+
+  const scene = new THREE.Scene();
+  const isSupported = WebGL.isWebGL2Available();
+  const camera = new THREE.PerspectiveCamera(75, 205 / 230, 0.1, 1000); // Aspect ratio based on container
+  const renderer = new THREE.WebGLRenderer({ alpha: true,  logarithmicDepthBuffer: true });
+
+  const container = document.querySelector('.switch-container');
+  renderer.setSize(305, 330); // Width and height match the container
+  container.appendChild(renderer.domElement);
+
+  // this.scene.background = new THREE.Color(0xffffff);
+
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1;
+  // this.renderer.outputEncoding = THREE.sRGBEncoding;
+
+  const ambientLight = new THREE.AmbientLight( 0xffffff, 0.8 );
+  scene.add( ambientLight );
+
+  const dirLight = new THREE.DirectionalLight( 0xefefff, 2.5 );
+  dirLight.position.set( 10, 10, 10 );
+  scene.add( dirLight );
+
+  // Lighting setup for contrast
+
+  // Ground plane for shadow
+  const planeGeometry = new THREE.PlaneGeometry(500, 500);
+  const planeMaterial = new THREE.ShadowMaterial({ opacity: 0.2 }); // Make shadows softer
+  const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+  plane.rotation.x = -Math.PI / 2; // Rotate to lie flat
+  plane.position.y = -0.5; // Position below the model
+  plane.receiveShadow = true;
+  scene.add(plane);
+
+  // Create a parent object for the model
+  const modelPivot = new THREE.Object3D();
+  scene.add(modelPivot); // Add pivot to the scene
+
+  renderer.setPixelRatio(8);
+
+  // Load your 3D model
+  const loader = new GLTFLoader();
+  let model;
+
+  loader.load('/models/model-v3.glb', (gltf) => {
+      model = gltf.scene;
+      modelPivot.add(model); // Add the model to the pivot object
+
+      model.traverse((node) => {
+        if (node.isMesh) {
+          // node.castShadow = true; // Enable shadow casting
+          // node.receiveShadow = true; // Enable shadow receiving
+
+          // Apply smooth shading
+          node.geometry.computeVertexNormals(); // Ensure smooth shading is applied
+
+          // Use MeshStandardMaterial for smoother reflections
+          node.material = new THREE.MeshStandardMaterial({
+              color: node.material.color, // Preserve original color
+              roughness: 2, // Smoother appearance
+              metalness: 1.8, // Low metalness for subtle reflections
+              flatShading: false, // Disable flat shading for smooth shading
+          });
+        }
+      });
+
+      let cachedBox = JSON.parse(localStorage.getItem('boundingBoxCache'));
+
+      if (!cachedBox) {
+          // Compute the bounding box only if it's not cached
+          const box = new THREE.Box3().setFromObject(model); // Create bounding box
+          const vector = new THREE.Vector3();
+          const size = box.getSize(vector); // Get size of the model
+          const center = box.getCenter(vector); // Get center of the bounding box
+
+          // Cache bounding box data for future use
+          cachedBox = {
+              center: { x: center.x, y: center.y, z: center.z },
+              size: { x: size.x, y: size.y, z: size.z }
+          };
+          localStorage.setItem('boundingBoxCache', JSON.stringify(cachedBox));
+      }
+
+      const fixedCenter = new THREE.Vector3(cachedBox.center.x, cachedBox.center.y, cachedBox.center.z);
+      const fixedSize = new THREE.Vector3(cachedBox.size.x, cachedBox.size.y, cachedBox.size.z);
+
+      // Calculate scale to fit into the container
+      const maxDimension = Math.max(fixedSize.x, fixedSize.y, fixedSize.z);
+      const scale = Math.min(205 * maxDimension, 230 * maxDimension); // Ensure model fits both dimensions
+
+      // Center the model and scale it
+      model.scale.set(scale, scale, scale); // Scale the model uniformly
+      model.position.set(-fixedCenter.x * scale, -fixedCenter.y * scale, -fixedCenter.z * scale); // Center the model
+
+  }, undefined, (error) => {
+      console.error(error);
+  });
+
+  // Set camera position
+  camera.position.z = 3.5; // Closer camera position to fit the model in the view
+
+
+  // Animation loop
+  const animate = () => {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+
+    if(!isSupported) {
+      modelPivot.rotation.y = -0.8;
+      modelPivot.rotation.x = 0.3;
+    }
+  };
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY; // Get current scroll position
+    const rotationSpeed = -0.004; // Set rotation speed
+
+    
+    if (modelPivot && isSupported) {
+      // Rotate the model on scroll
+      modelPivot.rotation.y = -scrollY * rotationSpeed;
+    }
+  });
+
+  animate();
+
+
+</script>

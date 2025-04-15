@@ -1,0 +1,216 @@
+---
+// components
+import Layout from '../../layouts/Layout.astro';
+import PostRelated from '../../components/post/PostRelated.astro';
+
+import { languageTag } from '../../paraglide/runtime';
+
+// data
+import { getCollection, render } from 'astro:content';
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  const posts = allPosts.filter(post => (post.data.locale === languageTag())) // getting only english/default posts 
+  return posts.map(post => {
+      return {
+        params: { id: post.id.includes('/') ? post.id.split('/')[1] : post.id},
+        props: { page: post },
+      }
+  });
+}
+
+const id = Astro.params?.id;
+const {page} = Astro.props;
+const posts = await getCollection('blog');
+let post = languageTag() === 'en' ? page : posts.find(p => p.id === `${languageTag()}/${id}`);
+
+if (!post) {
+  console.log(`No post found for locale: ${languageTag()} and ID: ${id}. Loading default locale...`); 
+  post = page;
+}
+
+const { Content } = await render(post);
+
+const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+---
+
+<Layout
+  title={post.data.title}
+  description={post.data.description}
+  ogImage={post.data.cover_image}
+  pageImageHeight="576"
+>
+  <section class="postpage">
+    <h1 class="layout">{post.data.title}</h1>
+
+    <section class="layout metainfo">
+      {post.data.author && (<div >By {post.data.author}</div>)}
+      <div>
+        {post.data.date && (<span>{new Date(post.data.date).toLocaleDateString('en-US', dateOptions)}</span>)}
+        {post.data.tags.length > 0 && (
+          <span> in
+            {post.data.tags.map((tag, index) => (
+              <>
+                <a href={`/blog/tags/${tag.toLowerCase()}/`}>{ tag }</a>
+                {index + 1 !== post.data.tags.length && (<span class="tagdivide">,</span>)}
+              </>
+            ))}
+          </span>
+        )} 
+        {(post.data.date || post.data.tags.length > 0) && (<span>/</span>)}
+        <a href="/blog/" aria-label="check all posts"><b>All posts</b></a>
+      </div>
+    </section>
+
+    {post.data.abstract && (<p class="abstract layout layout__text" class:list={{'space-b-05': post.data.abstractAuthor}} set:html={post.data.abstract}/>)}
+    {post.data.abstractAuthor && (<b class="abstract layout layout__text"> {post.data.abstractAuthor }</b>)}
+
+
+    {post.data.cover_image && (<img alt={post.data.title} src={post.data.cover_image} aria-hidden="true" class="poster" />)}
+
+    <section class="post layout layout__text">
+      <Content />
+    </section>
+
+    {post.data.related && post.data.related.length > 0 && (<PostRelated pageRelated={post.data.related}/>)}
+
+  </section>
+</Layout>
+
+
+<style>
+  .abstract {
+    font-size: 120%;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .metainfo {
+    font-size: 90%;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: var(--space);
+  }
+
+  /* .tagdivide {
+    margin-right: 5px;
+  } */
+
+  .poster {
+    display: block;
+    margin: var(--space) auto;
+    max-width: 100%;
+  }
+
+</style>
+
+
+<style is:global>
+
+  .post {
+    padding: 0 var(--space);
+    text-align: left;
+    font-weight: 400;
+    overflow: hidden;
+    line-height: 1.75;
+  }
+
+  html[lang="ar"] .post {
+    text-align: right;
+  }
+
+  .postpage h1, .post h2, .post h3, .post h4, .post h5 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .post h2, .post h3, .post h4, .post h5 {
+    text-align: left !important;
+    hyphens: initial;
+  }
+
+  html[lang="ar"] .post h2, html[lang="ar"] .post h3, html[lang="ar"] .post h4, html[lang="ar"] .post h5 {
+    text-align: right !important;
+  }
+
+  .post .big-table {
+    margin-bottom: var(--space);
+    overflow-y: auto;
+  }
+
+  .post .big-table table {
+    white-space: nowrap;
+  }
+
+  .post code {
+    vertical-align: middle;
+    padding: calc(var(--space) * 0.1)  calc(var(--space) * 0.3);
+    background-color: hsl(220.87deg 50.39% 29.76%);
+    font-weight: 600;
+    color: var(--color-light);
+  }
+
+  .post h2 strong, .post h3 strong, .post h4 strong, .post h5 strong {
+    color: var(--color-green);
+  }
+
+  .small-banner {
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .small-banner h3 {
+    margin-bottom: 0;
+    margin-right: 35px;
+    color: #fff;
+  }
+
+  .small-banner img {
+    width: 94px;
+    height: 103px;
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  img {
+    height: auto;
+  }
+
+  @media screen and (max-width: 700px) {
+    .small-banner img {
+      width: 94px;
+      height: 60px;
+    }
+  }
+
+  @media screen and (max-width: 510px) {
+    .post table {
+      display: block;
+      /* white-space: nowrap; */
+      overflow: scroll;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .small-banner {
+      padding: 5px;
+    }
+
+    .small-banner img {
+      height: 50px;
+    }
+
+    .small-banner h3 {
+      margin-right: 0;
+      font-size: 0.8rem;
+    }
+  }
+</style>
+

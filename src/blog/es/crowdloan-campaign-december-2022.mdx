@@ -1,0 +1,116 @@
+---
+title: Nueva Campaña de Préstamo Colectivo de Robonomics, Diciembre 2022
+date: 2022-12-12
+published: true
+locale: 'es'
+tags: ['Paracadena de Robonomics', 'Polkadot', 'Anuncios']
+cover_image: /blog/images/crowdloan-campaign-december-2022/cover.jpg
+description: "Después de un pequeño contratiempo causado por el caos en los primeros días de OpenGov, estamos listos para reiniciar la campaña de préstamo colectivo de Robonomics. En este artículo, echaremos un vistazo a la serie de eventos que llevaron al reinicio de la campaña y presentaremos sus nuevos parámetros."
+abstract: "Después de un pequeño contratiempo causado por el caos en los primeros días de OpenGov, estamos listos para reiniciar la campaña de préstamo colectivo de Robonomics. En este artículo, echaremos un vistazo a la serie de eventos que llevaron al reinicio de la campaña y presentaremos sus nuevos parámetros."
+---
+
+## Kusama OpenGov Causa Problemas
+
+La tan esperada llegada del nuevo sistema de gobernanza, OpenGov (Gov2), finalmente ha llegado a Kusama, pero trajo consigo mucho caos. La instauración del nuevo sistema OpenGov resultó en que las subastas programadas previamente no se llevaran a cabo con éxito. La comunidad de Kusama había iniciado el [referéndum Gov1 #252](https://kusama.polkassembly.io/referendum/252) para corregir el calendario de las subastas, pero no se llevó a cabo con éxito debido a las restricciones del privilegio de AuctionAdmin. Este error se debió al hecho de que en el nuevo sistema de gobernanza es obligatorio presentar la propuesta de OpenGov en la pista de subastas para lanzar las subastas. Se decidió ajustar los parámetros de OpenGov con [una actualización en tiempo de ejecución](https://kusama.polkassembly.io/referendum/254), pero este referéndum tampoco tuvo éxito debido a un conflicto entre la lógica de Gov1 y Gov2.
+
+En resumen, a la comunidad de Kusama y a los desarrolladores les llevó un par de semanas entender las complejidades del nuevo sistema de gobernanza. Esto fue imprevisto y afectó los planes del proyecto Robonomics de pujar en una subasta de espacio de paracadena en nuestra campaña de préstamo colectivo de noviembre de 2022. Ya hemos disuelto [la campaña de préstamo colectivo de noviembre de 2022](/blog/robonomics-crowdloan-campaigns-november-2022/) que se inició enparaID 2237, y todo el KSM ha sido devuelto a los contribuyentes de la crowdloan.
+
+## Nuevos desafíos para extender el arrendamiento del slot
+
+**El método estándar** para intercambiar arrendamientos de parachain antes del lanzamiento de OpenGov era el siguiente:
+
+1. Generar un nuevo paraID usando el extrínseco registrar(Reserve).
+2. Establecer un ID en cadena para el nuevo paraID.
+3. Abrir la crowdloan usando el extrínseco crowdloan(Create).
+4. Pujar en una subasta de slot de parachain.
+5. Si tiene éxito en la subasta, entonces los desarrolladores iniciarían una acción de gobernanza para intercambiar el arrendamiento de este paraID donante al paraID de parachain en funcionamiento utilizando las funciones forceLease y registrar:swap, similar a estos referendos anteriores: [Intercambio de arrendamiento de Karura](https://kusama.polkassembly.io/referendum/192), [Intercambio de arrendamiento de Moonriver y Khala](https://kusama.polkassembly.io/motion/468), [Intercambio de arrendamiento de Shiden](https://kusama.polkassembly.io/referendum/199), [Intercambio de arrendamiento de Parallel-Heiko](https://kusama.polkassembly.io/referendum/219), [Intercambio de arrendamiento de Genshiro](https://kusama.polkassembly.io/referendum/246).
+6. El resultado final sería que el parachain en funcionamiento tendría su arrendamiento extendido, continuaría produciendo bloques y no sufriría ninguna interrupción.
+
+Sin embargo, con la introducción de OpenGov, los umbrales para la acción de gobernanza en Kusama se han vuelto extraordinariamente altos. En términos básicos, el nuevo sistema OpenGov tiene múltiples pistas. Cada pista puede admitir un tipo específico de función (puede llamar solo extrínsecos particulares). Algunas pistas tienen poder limitado, como dar propinas en pequeñas cantidades de KSM, pero otras tienen un poder tremendo, como la pista Root.
+
+Los umbrales para las pistas de OpenGov son extraordinariamente altos, y ya hay acciones dentro de la comunidad de Kusama para reducirlos, ya que ya están causando problemas para proyectos de parachain como [Kintsugi](https://twitter.com/kintsugi_btc/status/1599036329399943168). En pocas palabras, un referendo en particular debe obtener suficiente apoyo de los interesados de la red (titulares de KSM) para que el referendo pase del período de votación al período de confirmación.
+
+Para que el parachain pueda llevar a cabo el plan de 6 pasos mencionado para intercambiar el arrendamiento, es necesario volver a iniciar el cronograma de subasta de parachain, estosignifica que un referéndum de OpenGov debería aprobarse para reiniciar las subastas ya sea a través de la pista de Administración de Arrendamiento, o posiblemente como parte de una actualización en tiempo de ejecución a través de las pistas de Root/Whitelisted Caller. Aquí es donde surge el problema: para que el referéndum entre en el período de confirmación de manera oportuna, se requiere un porcentaje significativo de todo el suministro circulante de tokens KSM para votar a favor del referéndum. La participación típica de los votantes en Kusama es relativamente baja, lo que significa que potencialmente podría tomar varias semanas para que un referéndum de la pista de Administración de Arrendamiento alcance un umbral en el que sea realísticamente posible que el referéndum se apruebe para el período de confirmación.
+
+Aunque aún esperamos que la comunidad ajuste los parámetros de OpenGov, afortunadamente, hay una forma en la que la paracadena puede utilizar XCM para ejecutar el plan de 6 pasos sin necesidad de utilizar el nuevo sistema de OpenGov de la cadena de retransmisión.
+
+Podemos registrar un nuevo paraID utilizando el extrínseco del registrador (Reserva) y cargar un tiempo de ejecución de shell en ese paraID utilizando el extrínseco del registrador (Registro). Esta paracadena solo debería iniciar mensajes XCM para intercambios de arrendamiento. Luego enviamos un mensaje XCM que contiene una solicitud de intercambio de arrendamiento desde la paracadena principal a la paracadena de shell. Cuando la paracadena de shell gana una subasta y el arrendamiento se vuelve activo, se lanza un entorno mínimo que puede enviar un mensaje XCM para intercambiar el espacio de arrendamiento con la paracadena principal.
+
+## Nuevos Parámetros para la Campaña de Préstamo Colectivo
+
+Como [se mencionó anteriormente](https://robonomics.network/blog/robonomics-crowdloan-campaigns-november-2022/), queremos automatizar nuestras campañas de préstamo colectivo basándonos en las estadísticas sobre el costo del arrendamiento de espacio y la tasa de participación ideal. Echemos un vistazo a los parámetros actuales para el algoritmo de renovación.
+
+<TextCard alignContent="center">
+
+**1. Estadísticas del precio mediano de arrendamiento de agosto a noviembre de 2022 (información tomada de [parachains.info](http://parachains.info/)):**
+
+</TextCard>
+
+<div class="big-table">
+
+| | Subasta 62 | Subasta 61 | Subasta 60 | Subasta 59 | Subasta 58 | Subasta 57 | Subasta 56 | Subasta 55 | Subasta 54 | Subasta 53 | Subasta 52 | Subasta 51 | Subasta 50 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Ganador | Parathread 2236 | Parathread 2233 | Zeitgeist | Crab Network | — | Crust Shadow | Genshiro | DAO IPCI | Parathread 2223 | Cuarzo | Bit.Country | Nieve | Subsocial |
+| Última oferta (KSM) | 1 005 | 241 | 500 | 11 | 0 | 1 807 | 2 000 | 111 | 1 001 | 1 005 | 3 500 | 13 926 | 1 001 |
+| Contribuciones | autofinanciado | autofinanciado | autofinanciado | autofinanciado | — | 209 | 160 | autofinanciado | autofinanciado | autofinanciado | autofinanciado | 782 | autofinanciado |
+| Número de participantes | 1 | 3 | 2 | 1 | 0 | 1 | 2 | 2 | 2 | 2 | 2 | 1 | 1 |
+
+</div>
+
+<TextCard className="withImg" alignContent="center">
+
+**2. La oferta mediana es:**
+
+![beta subíndice med igual a 1001KSM](/blog/images/crowdloan-campaign-december-2022/formula-1.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**3. Además, introducimos una corrección si las campañas de crowdloan anteriores no tuvieron éxito. La oferta mediana ajustada por intentos anteriores de crowdloan es:**
+
+![beta subíndice 'adjmed' igual a 1001 multiplicado por 2 igual a 2002 KSM](/blog/images/crowdloan-campaign-december-2022/formula-2.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**4. La tasa de participación ideal es:**
+
+![x subíndice ideal igual a 45.0 por ciento](/blog/images/crowdloan-campaign-december-2022/formula-3.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**5. La tasa de participación real es:**
+
+![x subíndice 'real' igual a 49.3% mayor que el porcentaje x subíndice 'ideal'](/blog/images/crowdloan-campaign-december-2022/formula-4.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**6. La tasa de interés ideal es:**
+
+![i subíndice 'ideal' es igual a I subíndice 'NPoS' dividido por x subíndice 'ideal' es igual a 0.1 dividido por 0.45 multiplicado por 100 por ciento es igual a 22.22 por ciento](/blog/images/crowdloan-campaign-december-2022/formula-5.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**7. La recompensa por participar en la campaña de préstamo colectivo (XRT por 1 KSM):**
+
+![R subíndice 'porKSM' es igual a (1 multiplicado por $KSM multiplicado por i subíndice 'ideal') dividido por $XRT es igual a (1 multiplicado por 24.65$ multiplicado por 0.22) dividido por 2.30$ es igual a 2.38 XRT por KSM](/blog/images/crowdloan-campaign-december-2022/formula-6.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**8. Pagos totales a los participantes del préstamo colectivo:**
+
+![R subíndice 'total' es igual a B subíndice 'adjmed' multiplicado por R subíndice 'porKSM' es igual a 4768.05 XRT](/blog/images/crowdloan-campaign-december-2022/formula-7.svg)
+
+</TextCard>
+
+Esa es la historia. Y, como siempre, ₑₓₚₑcₜ cₕₐₒₛ.

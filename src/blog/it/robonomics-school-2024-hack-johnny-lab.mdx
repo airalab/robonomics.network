@@ -1,0 +1,86 @@
+---
+title: "Robonomics School 2024: Regole del gioco per Hack Johnny's Lab"
+date: 2024-06-05
+published: true
+locale: 'it'
+cover_image: /blog/images/robonomics-school-2024-hack-johnny-lab/cover.jpeg
+description: "Nei prossimi giorni, avvieremo una pratica ricerca della Robonomics School 2024, durante la quale potrai sentirti come un vero violatore della privacy e persino 'rubare' token. Interessato? Scopri le regole del gioco 'Hack Johnny's Lab'!"
+abstract: "Nei prossimi giorni, avvieremo una pratica ricerca della Robonomics School 2024, durante la quale potrai sentirti come un vero violatore della privacy e persino 'rubare' token. Interessato? Scopri le regole del gioco Hack Johnny's Lab!"
+tags: ['Annunci', 'Eventi', 'Scuola online']
+---
+
+
+## Motivazione del Gioco
+
+Questo gioco trae molta ispirazione dalle idee riguardanti la fuga da Black Mirror, di cui Sergei ha parlato nei suoi articoli ([primo](https://robonomics.academy/en/learn/escape-from-black-mirror/overview/) e [secondo](https://robonomics.academy/en/learn/school-2024-iot-vs-ai/overview/)) presso la Robonomics Academy.
+
+Immagina, un normale aspirapolvere robot economico ha la capacità di spiare la vita dei suoi proprietari. Non importa nemmeno se una persona malintenzionata ottiene accesso a questi dati; l'analisi AI delle registrazioni video è sufficiente per trarre conclusioni su aspetti non pubblici della vita di una persona. Qualsiasi segreto sporco, modelli di comportamento impercettibili e informazioni private — tutto finisce nel forno dei profili. Rifletti su questo mentre cerchi di ottenere alcuni token gratuiti.
+
+## Obiettivo del Gioco
+
+Nel gioco, ai giocatori viene chiesto di ripristinare la frase seed dai dati del robot mobile. Il robot si muove casualmente intorno al laboratorio, registrando video. Di tanto in tanto, il robot pubblica una delle 12 parole della frase seed. Durante una delle soste del robot, i giocatori possono vedere sul video un cartello con un numero, che suggerisce l'ordine di quella parola nella frase seed. Il compito è abbinare i numeri sui cartelli con l'insieme di parole ricevute alle soste del robot, per ripristinare la frase seed corretta.
+
+Il giocatore che per primo ripristina la frase seed e preleva tutti i token XRT dal suo indirizzo vince.
+
+## Regole del Gioco
+
+*Registrazione dei giocatori*
+
+- Per partecipare, i giocatori devono creare un nuovo account sulla parachain di Robonomics, che deve essere creato con il tipo di crittografia Edwards (ed25519). Le istruzioni sono disponibili sul [nostro wiki](https://wiki.robonomics.network/docs/create-account-in-dapp/).
+- Successivamente, i giocatori devono andare al [bot Discord](https://discordapp.com/channels/803947358492557312/1245395009964871772) sul server di Robonomics e attendere un messaggio sull'inizio di una nuova sessione.
+- All'inizio della sessione, i giocatori inviano gli indirizzi degli account creati nel **formato della parachain di Robonomics** al bot Discord. I giocatori avranno 60 minuti per partecipare.
+
+*Esplorazione del laboratorio*
+
+- Dopo il completamento della registrazione, il robot mobile andrà ad esplorare il laboratorio. Successivamente, il robot invierà una registrazione video e un elenco delle parole nella frase seed (non nell'ordine corretto).
+- I giocatori attendono un messaggio dal bot Discord riguardo ai risultati ricevuti dal robot e vanno all'applicazione [tramite un link](https://robonomics.academy/en/demoapps/johnnyb-lab/) per iniziare a ripristinare la frase seed.
+
+*Ripristino della Frase Seed*
+
+- Per accedere ai dati, i giocatori devono utilizzare l'account Robonomics registrato.
+- I giocatori avranno accesso alla registrazione video e all'insieme di parole della frase seed. Il compito del giocatore è trovare l'ordine corretto delle parole in base ai numeri sui cartelli situati nel laboratorio.
+
+<TextCard alignContent="left">
+
+**Esempio.** Se l'insieme di parole è: 
+
+`trovare -> chiesa -> relazione -> cane -> campione`
+
+E il percorso del robot, ricostruito dal video: 
+
+`Cartello n. 5 -> Cartello n. 3 -> Cartello n. 1 -> Cartello n. 2 -> Cartello n. 4`
+
+Allora:
+
+`trovare — Cartello n. 5 -> trovare è la 5ª parola`
+
+`chiesa — Cartello n. 3 -> chiesa è la 3ª parola`
+
+`relazione — Cartello n. 1 -> relazione è la 1ª parola`
+
+`cane — Cartello n. 2 -> cane è la 2ª parola`
+
+`campione — Cartello n. 4 -> campione è la 4ª parola`
+
+Come risultato, la frase seed corretta: `relazione cane chiesa campione trovare`
+
+</TextCard>
+
+
+- Dopo aver trovato la frase seed, i giocatori possono ripristinare l'accesso all'account con i token utilizzando qualsiasi applicazione.
+- Ad esempio, nell'estensione Polkadot.js, ciò può essere fatto utilizzando la funzione *Importa account da frase seed preesistente*.
+- Tutti gli account ripristinati con XRT hanno il tipo di crittografia **Schnorrkel (sr25519)**, supportato nella maggior parte dei portafogli Polkadot / Kusama.
+
+*Annuncio del vincitore*
+
+- Una volta che un giocatore ha accesso all'account, deve prelevare XRT per diventare il vincitore della sessione, finché qualcun altro non lo fa.
+- Ad esempio, utilizzando l'estensione Polkadot.js, ciò può essere fatto sul [nostro portale Polkadot / Substrate](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/accounts) nella pagina dell'Account. Basta premere il pulsante Invia e prelevare i token in qualsiasi luogo desideri. Puoi utilizzare il controllo *Trasferisci l'intero saldo dell'account, mieti il mittente* per effettuare il prelievo dell'intero saldo.
+- Al termine della sessione, dopo il prelievo dei token, il bot notificherà il canale Discord pubblicando l'indirizzo del vincitore.
+
+## Condizioni dell'Evento
+
+L'evento durerà 9 giorni, durante i quali mattina e sera (18 volte in totale) avrai l'opportunità di essere il primo a raggiungere **42 XRT** in ciascuna sessione.
+
+La registrazione per la sessione inizia alle **10:00 e alle 20:00 EEST** ogni giorno e dura 60 minuti.
+
+Segui i nostri social network per non perdere l'inizio dell'evento!

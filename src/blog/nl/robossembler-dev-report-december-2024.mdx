@@ -1,0 +1,87 @@
+---
+
+title: "Robossembler Dev Report #1"  
+date: 2024-12-08  
+published: true  
+locale: 'nl'  
+cover_image: /blog/images/robossembler-dev-report-december-2024/Cover.webp  
+description: "Het Robossembler-project richt zich op het ontwikkelen van industriële robots en de gereedschappen voor hun productie die toegankelijk zijn voor elke doe-het-zelver. In dit artikel delen we onze huidige vooruitgang: een bijgewerkte en geteste versnellingsbak, de 5e versie van de wikkelmachine en een robotmanipulator met extra optimalisaties voor 3D-printen!"  
+abstract: "Het Robossembler-project richt zich op het ontwikkelen van industriële robots en de gereedschappen voor hun productie die toegankelijk zijn voor elke doe-het-zelver. In dit artikel delen we onze huidige vooruitgang: een bijgewerkte en geteste versnellingsbak, de 5e versie van de wikkelmachine en een robotmanipulator met extra optimalisaties voor 3D-printen!"  
+tags: ['Robossembler']  
+
+---  
+
+
+## Servo
+
+Een motor alleen heeft meestal niet voldoende koppel om zware objecten in de echte wereld te draaien of op te tillen, daarom heeft hij een versnellingsbak of transmissie nodig. Een versnellingsbak zet het koppel van de motor om in bruikbare uitvoerkracht. Dit bleek vooral belangrijk in ons geval — onze geprinte stator met DIN-schroeven als magnetische kernen testte 3-4 keer zwakker dan de tegenhangers met massieve metalen stators van elektrisch staal.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/stator-photo_2024-12-08_00-03-21.webp" alt="" />
+
+Gezien deze relatief lage krachtoutput, hadden we een versnellingsbak nodig met een hoge overbrengingsverhouding die, net als alles in Robossembler, eenvoudig in elkaar te zetten en geschikt voor 3D-printen zou zijn. We hebben talloze ontwerpen voor versnellingsbakken verkend, waaronder enkele exotische, maar elk voldeed niet aan onze criteria. Onze laatste poging — een strain wave versnellingsbak met tussenliggende rollende elementen — presteerde goed, maar bleek te complex om te vervaardigen.
+
+Na uitgebreide experimenten ontdekten we eindelijk het perfecte ontwerp: een precesserende versnellingsbak met een overbrengingsverhouding van 1:43!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-07_21-54-20.webp" alt="" />
+
+Bekijk hoe eenvoudig het is om in elkaar te zetten:
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0vXwFmTB_L4?si=soNbSNKg9tjPWY1f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+De versnellingsbak heeft zijn belangrijkste tests en proeven doorstaan. Hier is iets indrukwekkends — de servoaandrijving met versnellingsbak weegt slechts 273g, wat overeenkomt met het gewicht van een standaard metalen motor zonder versnellingsbak of controller!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-08_14-02-33.webp" alt="" />
+
+## Stator Wikkelmachine
+
+Terwijl versie 4 van onze wikkelmachine de eerste stators semi-automatisch wikkelde, had hij verbetering nodig op het gebied van stabiliteit en herhaalbaarheid. Versie 5 brengt tal van verbeteringen, en hier zijn de belangrijkste.
+
+We hebben de propriëtaire Creality-stappenmotoraansturing, die in versie 4 werd gebruikt, geüpgraded naar een RAMPS — een bewezen controller van de legendarische RepRap-printer.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-50-12.webp" alt="" />
+
+- We hebben de machineonderdelen lichter en beter gemaakt — ze gebruiken nu 25% minder plastic materiaal en kunnen gemakkelijker 3D-geprint worden zonder extra ondersteuningsstructuren
+- Het draadvoedingssysteem is nu stabieler, met een toegevoegde spoelrem en een dieper draadgroef op het wiel
+- We hebben de displaykast en de achterklep herontworpen voor betere bescherming
+- De projectdocumentatie is nu compleet met gedetailleerde specificaties van bevestigingsmiddelen, printtijden en plasticverbruiksgegevens.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-51-26.webp" alt="" />
+
+We hebben een naaldkalibrator toegevoegd aan het machineontwerp om de installatie van de apparatuur te vereenvoudigen.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-04_11-41-56.webp" alt="" />
+
+Versie 5 is momenteel in test, samen met onze nieuwe GCode-programmagenerator voor het wikkelen. In plaats van het vorige hardgecodeerde programma voor specifieke motormodificaties, stelt onze nieuwe GCode-generator snelle aanpassingen mogelijk voor verschillende statorontwerpen.
+
+## Robot Manipulator
+
+Naarmate we de productievoorbereiding voor de motor en versnellingsbak naderen, verfijnen we het ontwerp van de manipulator. Terwijl we dachten dat het goed geoptimaliseerd was voor 3D-printen, zagen onze nieuwe teamleden — 3D-technologen met 10 jaar ervaring — verschillende gebieden voor verbetering. We hebben ons gericht op het voorspelbaar maken van het printen van onderdelen, zelfs op goedkope printers, door de belangrijkste lichaamsdelen opnieuw te ontwerpen zodat ze met minimale ondersteuning kunnen worden geprint.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/3d-supports.webp" alt="" />
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/roboarm-3d-optimize-photo_2024-11-20_15-56-53.webp" alt="" />
+
+Op verzoek van onze motion control-programmeur hebben we de vork herontworpen — het onderdeel dat de aandrijfarmen van de manipulator in een enkele kinetische keten verbindt. Het vorige ontwerp bood een groter werkbereik, maar veroorzaakte frequente singulariteitspunten tijdens de trajectberekeningen, wat de simulatiecontrole bemoeilijkte. Ons nieuwe vorkontwerp elimineert dit probleem en maakt de kinematica van de robot optimaler en meer vergelijkbaar met de Kuka Iiwa ;D.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/fork-roboarm-photo_2024-12-07_11-39-31.webp" alt="" />
+
+Voor de besturingssoftware ontwikkelen we een oplossing met behulp van ROS 2 Humble (testversie Jazzy) en Behaviour Tree CPP v4, die momenteel wordt gevalideerd op AR4. Een belangrijke innovatie is ons uitgebreide gebruik van lifecycle management-nodes voor runtime parameterwijzigingen — zoals controllerconfiguraties of het laden van nieuwe machinevisie-neurale netwerkgewichten.
+
+## Plannen
+
+Onze aankomende doelen:
+
+- Lanceren van een verbeterd grijpgereedschap met nieuwe motor, versnellingsbak en verwisselbare vingers
+- Testen van de GCode-generator voor de wikkelmachine en volledig automatische statorwikkeling
+- Afronden van de 3D-optimalisatie van de robot en het maken van een assemblagedemonstratievideo
+- Optimaliseren van het temperatuurbeheer van de servoaandrijving en testen onder belasting binnen een schakelarm
+
+Volg updates op mijn blog op [x.com](https://x.com/movefasta) !
+
+## Software & Hardware Bronnen
+
+- Robossembler Arm - https://gitlab.com/robossembler/roboarm-diy-version
+- Wikkelmachine: https://gitlab.com/robossembler/cnc/motor-wire-winder
+- Servo - https://gitlab.com/robossembler/servo
+- Grip Tool - https://gitlab.com/robossembler/arm-tools/grip-tool
+- Robossembler ROS 2 runtime - https://gitlab.com/robossembler/robossembler-ros2

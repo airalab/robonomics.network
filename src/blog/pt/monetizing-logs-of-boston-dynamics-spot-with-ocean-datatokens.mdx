@@ -1,0 +1,42 @@
+---
+title: Monetização de Registos do Boston Dynamics Spot com Ocean Datatokens
+date: 2021-09-09
+published: true
+locale: 'pt'
+cover_image: /blog/images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/Robonomics_Ocean_p3_blog.jpg
+description: "No último artigo, apresentamos nosso pacote ROS - ocean_ros, que conecta a API Ocean e o ROS, e também tocamos parcialmente no caso de uso para vender registos técnicos dos robôs. Hoje vamos aprofundar este caso de uso e descrever um exemplo específico de tokenização de dados de dispositivos."
+abstract: "É hora de uma nova etapa de integração com o Protocolo Ocean."
+tags: ['Colaborações', 'Casos de Uso']
+---
+
+É hora de uma nova etapa de integração com o Protocolo Ocean. No [último artigo](/blog/ocean-protocol-p-2/), apresentamos nosso pacote ROS - ocean_ros, que conecta a API Ocean e o ROS, e também tocamos parcialmente no caso de uso para vender registos técnicos dos robôs. Hoje vamos aprofundar este caso de uso e descrever um exemplo específico de tokenização de dados de dispositivos.
+
+Primeiro, precisamos entender qual utilidade prática real esses dados e datatokens criados a partir deles podem trazer. Está claro que as informações de serviço obtidas durante a operação de robôs e dispositivos são constantemente reutilizadas para melhorar algoritmos ou a experiência do usuário. Mas, na maioria das vezes, essas informações não vão além do próprio fabricante do dispositivo. As dificuldades começam quando dispositivos com um princípio de funcionamento semelhante aparecem no mercado (por exemplo, aspiradores robóticos) ou uma plataforma aberta é lançada, que é posicionada como a base para outras soluções (Raspberry Pi, Arduino, TurtleBot do ROS). Para o primeiro caso, muitos dispositivos do mesmo tipo em todo o mundo geram quantidades gigantescas de dados dedicados a uma tarefa específica. Para o segundo caso, os desenvolvedores de plataformas abertas recebem conjuntos de dados únicos em seus projetos em uma variedade de tarefas. No entanto, essa experiência não é agregada e compartilhada. Permanece indisponível para análise, o que limita a melhoria do sistema e dificulta a descoberta de novas abordagens no processo de controle.
+
+Por exemplo, para o planeamento de movimento de manipuladores, a cinemática inversa é um desafio. Os parâmetros das juntas da cadeia cinemática precisam ser encontrados para mover a extremidade da cadeia para a posição e orientação desejadas. Em outras palavras, para mover a extremidade do braço.para a posição correta - precisamos calcular as posições de todas as articulações que o braço possui. Frequentemente, esse problema é resolvido de forma analítica ou numérica, mas às vezes essas abordagens têm problemas, não menos importante os computacionais. Com o surgimento do aprendizado de máquina, [abordagens de redes neurais](https://doi.org/10.1016/j.protcy.2013.12.451) começaram a ser usadas para resolver a cinemática inversa, mas elas requerem [conjuntos de dados](https://mint-lab.github.io/awesome-robotics-datasets/) que tenham informações sobre o movimento de um dispositivo real para treinar o modelo.
+
+Esses dados precisam ser coletados e fornecidos às partes interessadas. É aí que entram os datatokens da [Ocean Protocol](https://oceanprotocol.com/). Eles permitem automatizar esse processo e impulsionar o mercado de conjuntos de dados de robôs. Atualmente, esse nicho é ocupado principalmente por conjuntos de dados abertos, mas sua principal desvantagem é a baixa qualidade para casos de uso empresarial. Vamos avançar para o nosso exemplo de tokenização de dados robóticos.
+
+## Conheça o Spot da Boston Dynamics vendendo sua telemetria
+
+O Spot é um exemplo relevante de uma plataforma multipropósito complexa com uma ampla variedade de cenários de aplicação. O fato é que trabalhar com a telemetria real do Spot é bastante difícil, e isso pode retardar significativamente o desenvolvimento de módulos personalizados para o robô, e ainda mais se o desenvolvedor quiser usar aprendizado de máquina. Exemplos de operações que o desenvolvedor poderia recuperar e estudar seriam muito úteis aqui, mas até agora há muito poucos dados disponíveis sobre o uso do robô, especialmente fora dos Estados Unidos. É por isso que queremos que nosso Spot se torne um fornecedor de registros de alta qualidade da telemetria real obtida ao realizar as mesmas operações. Isso dará aos desenvolvedores múltiplos registros repetidos do mesmo cenário, o que deve ajudá-los a desenvolver ou melhorar suas próprias soluções.
+
+## Implementação
+
+A integração principal com a API da Ocean é fornecida pelo nosso pacote ROS previamente escrito - [*ocean_ros*](https://github.com/LoSk-p/ocean_ros) Para vincular o SDK do Spot com abstrações do ROS e trabalhar com registros do robô dentro desse sistema operacional, usamos [um driver](https://clearpathrobotics.com/assets/guides/melodic/spot-ros/ros_setup.html) criado pela Clearpath Robotics. Você pode aprender mais sobre como coletar telemetria usando o SDK do Spot no [programa educacional](https://spot-sdk.education/) de nossos colegas da Merklebot.
+
+Após o Spot executar qualquer comando, obtemos um arquivo no formato rosbagcom dados do tópico /tf ROS, que descreve a posição dos quadros do Spot em relação uns aos outros. Os quadros representam partes dos robôs e objetos ao redor que o robô pode ver com visão técnica. A relação entre dois quadros é descrita por um vetor de translação de três elementos, que descreve a diferença entre as posições da origem de dois quadros, e um quaternion de rotação, que mostra a diferença entre as rotações dos sistemas de coordenadas de dois quadros. A posição de cada quadro é calculada em relação ao quadro pai (por exemplo, o quadril em relação ao corpo), o quadro inicial é a posição do Spot no início.
+
+Após o Spot executar qualquer comando, obtemos um arquivo no formato rosbag com dados do tópico /tf ROS, que descreve a posição dos quadros do Spot em relação uns aos outros. Os quadros representam partes dos robôs e objetos ao redor que o robô pode ver com visão técnica. A relação entre dois quadros é descrita por um vetor de translação de três elementos, que descreve a diferença entre as posições da origem de dois quadros, e um quaternion de rotação, que mostra a diferença entre as rotações dos sistemas de coordenadas de dois quadros. A posição de cada quadro é calculada em relação ao quadro pai (por exemplo, o quadril em relação ao corpo), o quadro inicial é a posição do Spot no início.
+
+![Diferentes partes do Spot e o diagrama da relação entre os quadros](/blog/images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/spot-scheme.png)
+
+*Diferentes partes do Spot e o diagrama da relação entre os quadros. Fonte: https://dev.bostondynamics.com/docs/concepts/about_spot.html*
+
+<YouTube id="https://youtu.be/6i9zYpCMzn8" posterQuality="max"/>
+
+O vídeo mostra a sequência de comandos para criar, vender e comprar datatokens de telemetria do Spot (para mais detalhes sobre como funciona o pacote ocean_ros, [veja aqui](https://www.youtube.com/watch?v=Ssit8-u6dZY)). Deve-se notar que o arquivo rosbag é pré-carregado no sistema de arquivos IPFS para acessá-lo por meio de um link de hash, que é usado ao cunhar datatokens.
+
+![Spot em um modelo de robô 3D](/blog/images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/Spot-on-a-3D-robot-model.jpg)
+
+O vídeo também demonstra a compra desses datatokens e um exemplo de restauração de todo osequência de comandos executados pelo Spot em um modelo de robô 3D. Para fazer isso, usamos a ferramenta de visualização [rviz](http://wiki.ros.org/rviz) para o ROS. Assim, os desenvolvedores podem trabalhar com qualquer telemetria real do Spot, mesmo sem ter acesso ao robô.

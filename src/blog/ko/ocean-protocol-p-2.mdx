@@ -1,0 +1,252 @@
+---
+title: Robonomics Network x Ocean Protocol p. 2&#58; 로봇 및 IoT 장치에서 데이터 화폐화
+date: 2021-07-01
+published: true
+locale: 'ko'
+tags: ['협업']
+cover_image: /blog/images/ocean-protocol-p-2/Robonomics_Ocean_p_2.jpg
+description: "Robonomics Network과 Ocean Protocol 간 협업의 첫 결과"
+abstract: "Robonomics Network과 Ocean Protocol 간 협업의 첫 결과"
+---
+
+## 소개
+
+이 기사는 Robonomics Network와 Ocean Protocol 간의 통합을 확장합니다. 이 글에서는 어떻게 로봇 장치를 프로토콜에 연결하고, 이러한 통합이 자율 시스템의 운영에 가치를 더할 수 있는 사용 사례에 구체적으로 설명될 것입니다.
+
+Ocean Protocol에 익숙하지 않은 분들을 위해 간단히 설명하자면: 어떤 데이터든 토큰화를 통해 완전한 자산으로 변환하는 것이 아이디어입니다. 구매/판매 및 소유권 이전이 가능한 ERC20 토큰(datatokens)을 발행하고 창출함으로써 데이터를 토큰화할 때, 해당 토큰의 소유권을 통해 해당 데이터에 액세스할 수 있습니다 (1 datatoken = 데이터 집합에 액세스). 이 프로토콜을 사용하면 액세스를 유연하게 관리할 수 있으며, 예를 들어 데이터에 대한 임시 액세스를 조직하거나 개인 정보 침해 없이 분석에 대한 액세스를 제공할 수 있습니다. 따라서 토큰화된 데이터를 화폐화하고, 해당 데이터를 위한 시장을 만들고, 탈중앙화된 금융 도구의 전체 기능을 활용할 수 있게 됩니다.
+
+Robonomics 팀은 토큰화를 통한 화폐화의 가치를 잘 알고 있지만, 더 중요한 것은 자동화의 가치를 이해하고 있다는 점입니다. 이미 로봇 및 IoT 장치의 유용한 활동을 자동으로 화폐화하는 방법을 배웠으므로, 이러한 활동의 결과(로그 및 데이터)를 자동으로 화폐화하는 것이 어렵지 않습니다. Ocean Protocol을 통해 가치 있는 데이터를 생성하는 거의 모든 로봇 장치는 소유자에게 수입원이 될 수 있습니다. 또는 장치는 작업을 완료하기 위해 유용한 데이터의 소비자가 될 수도 있습니다.
+
+## ROS-장치 통합 측면
+
+Robonomics가 다양한 유형의 장치와 작동하도록 하기 위해 Robot Operating System을 사용합니다. 이는 로봇 장치에 소프트웨어를 편리하게 배포할 수 있게 해주는 미들웨어 스위트입니다. ROS 덕분에 새로운 유형의 장치를 네트워크에 쉽게 연결할 수 있습니다. 활발한 ROS 커뮤니티는 다양한 종류의 사용 준비 패키지를 수백 개 개발했습니다.로봇 및 IoT 장치들이 몇 년 동안 발전해 왔습니다.
+
+ROS 환경에서의 세 가지 주요 추상화는 노드, 토픽 및 메시지입니다. 노드는 특정 작업을 수행하고 다른 노드들과 통신하는 프로세스/프로그램입니다. 노드는 토픽을 구독하여 메시지를 기다리거나 자체 메시지를 게시합니다. 이 구현에서 로봇 시스템의 서로 다른 유형의 구성 요소들이 동일한 수준에서 상호 작용할 수 있습니다.
+
+아래 그림은 이더리움 네트워크에서 실행되는 Robonomics v1의 로봇 장치(약속자)가 작업을 수락하고 완료하는 일반적인 프로세스를 보여줍니다. AIRA 클라이언트 블록은 해당 장치에 필요한 소프트웨어 이미지를 배포한 것으로, ROS를 포함합니다. 그림은 (파란 프레임으로 표시된) 장치가 AIRA 클라이언트를 통해 분산 네트워크와 통신하며 해당 ROS 토픽에서 메시지를 수신하고 전송하는 것을 보여줍니다. 장치의 임무는 결과 메시지를 IPFS 네트워크로 최종 전송하여, 이는 금전화할 수 있는 데이터에 대한 링크를 포함합니다.
+
+!["로보노믹스 v2의 프로세스"](/blog/images/ocean-protocol-p-2/uml-robonomics-ver1.png)
+
+Polkadot 생태계의 [패러체인](https://parachain.robonomics.network/)으로 개발 중인 Robonomics v2에서는 프로세스가 약간 다릅니다. 현재 장치 제어를 위해 `launch()` 및 `datalog()`&nbsp;[함수](https://wiki.robonomics.network/docs/en/rio-overview/)가 사용 가능합니다. 첫 번째 함수는 장치를 켜거나 끄기 위한 트랜잭션을 수행하고, 두 번째 함수는 데이터 문자열을 블록체인으로 전송합니다. 그러나 로그 및 장치 데이터는 여전히 ROS 토픽을 사용하여 수집됩니다. 그런 다음 이를 직접 `datalog()`로 전달하거나 먼저 IPFS로 보낼 수 있습니다.
+
+따라서 Robonomics Network와 Ocean Protocol을 통합하는 첫 번째 작업은 프로토콜 API를 ROS 환경으로 가져오는 것입니다. 또한 ROS용 이러한 패키지는 AIRA 클라이언트에 통합되어 자동으로 데이터 토큰 생성을 배포할 수 있습니다.
+
+## ROS와 Ocean 통합 예시
+
+이 섹션에서는 Robonomics 엔지니어들이 만든 ocean_ros 저장소에 대한 설명을 제공합니다. 이 저장소는 Ocean Protocol API와 ROS의 통합을 구현하는 ROS 패키지입니다. Ocean Protocol은 여러 API 옵션을 제공하는데, 이 경우 [ocean.py](https://github.com/oceanprotocol/ocean.py) Python 라이브러리를 사용합니다.사용되었습니다. ROS에는 Python 클라이언트 라이브러리 [rospy](http://wiki.ros.org/rospy)가 있습니다. 이 패키지의 주요 목적은 로봇 장치가 데이터 토큰을 배포하고 생성하거나 시장에 배치하기 위한 풀을 만들거나 사용을 위해 데이터 토큰을 구매할 수 있는 세 개의 ROS 노드를 생성하는 것입니다. 이 패키지의 설치와 실행을 살펴보겠습니다.
+
+이 예제는 YouTube에서 스크린 캐스트로도 제공됩니다:
+
+<YouTube id="https://youtu.be/Ssit8-u6dZY" PosterQuality="max"/>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 요구 사항 및 설치
+
+이 패키지에는 다음이 필요합니다:
+
+* Ubuntu
+* Python 3.8.5 이상
+* ROS, Melodic ver. (설치 지침은 [여기](http://wiki.ros.org/melodic/Installation/Ubuntu)에서 확인)
+
+패키지 설치:
+
+<RbCode>
+
+```sh
+git clone https://github.com/LoSk-p/ocean_ros
+cd ..
+catkin_make
+source devel/setup.bash
+```
+
+</RbCode>
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 이더리움 네트워크 및 노드 설정
+
+이 예제에서는 연결 설정을 위해 Infura 공급업체를 사용합니다. Infura를 사용하면 전체 노드를 시작할 필요 없이 이더리움 인프라를 원격으로 사용할 수 있어서 연산 능력이 제한된 소형 로봇 장치에 매우 편리합니다.
+
+예제에서는 Ethereum 테스트넷인 Rinkeby에 연결하고 있음을 유의하십시오. 메인넷이나 다른 네트워크로 전환해야 하는 경우 Ocean [문서](https://docs.oceanprotocol.com/concepts/networks/)를 참조하십시오.
+
+설정 단계는 다음과 같습니다:
+
+* https://infura.io로 이동하여 가입합니다.
+* Infura 사이트에서 새 프로젝트를 생성합니다.
+* 프로젝트 설정 페이지에서 Infura 프로젝트 ID 값을 확인합니다. 다음 단계에서 사용될 것입니다.
+* config 디렉토리에 `config.ini` 파일을 생성합니다 (구성 예는 `config_template.ini` 파일에서 찾을 수 있습니다).
+* 네트워크를 위해 Infura 프로젝트 ID를 구성 파일에 작성합니다.
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 이더리움 계정 설정 및 Rinkeby ETH 토큰 획득
+
+* 브라우저에 Metamask 지갑을 설치하고 Ethereum 계정을 생성합니다. 지침은 [여기](https://docs.oceanprotocol.com/tutorials/metamask)에서 확인할 수 있습니다.-setup/).
+* [수도꾼](https://faucet.rinkeby.io/)에서 Rinkeby ETH 토큰을 받으세요.
+* Metamask에서 [개인 키를 내보내세요](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key) 그리고 개인 키가 담긴 파일을 만드세요:
+
+<RbCode>
+
+```sh
+echo <private_key> > private_ocean
+```
+</RbCode>
+
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Python 라이브러리 설치
+
+가상 환경을 만들기 위해 Python 모듈 venv를 설치하세요:
+
+<RbCode>
+
+```sh
+sudo apt-get install python3.8-venv
+```
+</RbCode>
+
+Python 가상 환경을 만들고 필요한 라이브러리를 설치하세요:
+
+<RbCode>
+
+```sh
+python3.8 -m venv venv
+source venv/bin/activate 
+pip install ocean-lib rospkg catkin_pkg
+```
+</RbCode>
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Rinkeby 테스트 OCEAN 토큰 받기
+
+이 [수도꾼](https://faucet.rinkeby.oceanprotocol.com/)을 통해 Rinkeby OCEAN을 받으세요.
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### ocean_ros 실행
+
+Python 가상 환경이 설정된 터미널에서 ROS 런치 파일을 실행하세요:
+
+<RbCode>
+
+```sh
+roslaunch ocean_ros datatokens.launch
+```
+
+</RbCode>
+
+이제 datatokens을 사용하기 위해 ROS 토픽에 액세스할 수 있습니다.
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### datatoken 생성
+
+datatoken을 만들려면 `/ocean/create_datatoken` 토픽에 메시지를 발행해야 합니다. 메시지에는 Metamask 계정의 개인 키 파일 경로, 장치에서 데이터로부터 IPFS URL, OCEAN 및 datatoken 유동성이 포함되어야 합니다. 메시지 예시:
+
+<RbCode>
+
+```sh
+rostopic pub /ocean/create_datatoken ocean_ros/Metadata "private_key_path: '/home/user/private_ocean'                     
+data_created: '2021-12-28T10:55:11Z'
+type: 'dataset' 
+name: 'test_ros'
+author: 'author'             
+license: 'CC0: Public Domain'    
+files_content_type: ['text/text']
+files_url: ['https://gateway.ipfs.io/ipfs/QmWRjFcQi4Xcisqi8FP3AbGS3PB3gNHgtnfzbcpodKKCBP']                 
+tokens_nomber: 100.0
+ocean_amount: 10.0
+```
+
+</RbCode>
+
+해당 ROS 노드는 데이터 토큰을 생성하고 판매할 수 있게 됩니다. `/ocean/token_response` 토픽에서 데이터 토큰에 대한 정보를 확인할 수 있습니다:
+
+<RbCode>
+
+```sh
+rostopic echo /ocean/token_response
+```
+
+</RbCode>
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### 데이터 토큰 구매
+
+데이터 토큰을 구매하려면 `/ocean/get_datatoken` 토픽에 메시지를 발행해야 합니다. 메시지에는 Metamask 계정의 개인 키 파일 경로와 구매하려는 데이터 토큰에 대한 정보가 포함되어야 합니다(시장에서 찾을 수 있거나 `/ocean/token_response` 토픽에서 확인할 수 있습니다). 메시지 예시(메시지에서 `destination`를 변경하는 것을 잊지 마세요):
+
+
+<RbCode>
+
+```sh
+rostopic pub /ocean/get_datatoken ocean_ros/BuyDatatoken "{private_key_path: '/home/user/private_ocean', destination: '/home/user/', token_address: '0x9fb21F68257F1d718d764B68b1430B6460796e42', did: 'did:op:9fb21F68257F1d718d764B68b1430B6460796e42', pool_address: '0xcF295B85ef5ADd0E513B789477C6d14eA6Bc718a'}"
+```
+
+</RbCode>
+
+다운로드한 데이터 파일의 경로를 `/ocean/buying_response` 토픽에서 확인할 수 있습니다:
+
+<RbCode>
+
+```sh
+rostopic echo /ocean/buying_response
+```
+
+</RbCode>
+
+</TextCard>
+
+## 사용 사례
+
+이 섹션에서는 로봇 장치에서 수신한 데이터의 자동 토큰화 응용 사례를 설명합니다.
+
+### 환경 데이터
+
+환경 데이터의 토큰화가 가장 흥미로운 응용 사례일 것입니다. 이러한 데이터의 가치는 계속해서 증가하며,인구, 기업 및 규제기관의 환경 관리 문제에 대한 관심이 증가함을 고려할 때, 주요 문제는 생태학의 규모(대기, 수, 토양이 지구의 거대하고 종종 접근하기 어려운 영토에 곱해진 것)와 수집된 데이터에 대한 신뢰 문제입니다. 모바일 자동 장치(대기 또는 수중 드론) 또는 정지 센서 네트워크는 첫 번째 문제를 완벽하게 해결하며, 블록체인과 분산 기술은 두 번째 문제를 완화합니다. 이러한 데이터를 Ocean Protocol을 사용하여 토큰화할 수 있는 능력으로 완전히 새로운 시장이 열리며 시민 과학 및 탄소 크레딧과 같은 개념이 완벽하게 들어맞습니다.
+
+로보노믹스는 오랜 기간 생태학 장치와 함께 작업해 왔습니다. 예를 들어, [sensors-connectivity](https://github.com/airalab/sensors-connectivity) 패키지를 개발하여 ROS 호환 센서를 텔레메트리 에이전트로 변환할 수 있습니다. 로보노믹스 엔지니어들은 강과 호수에서 화학 지표를 수집하기 위한 다양한 모델의 [수중 드론](https://blog.aira.life/water-drone-2-0-first-stage-of-development-db8ad6c81d3c)을 개발하고 있으며, 또한 [UAVs](http://www.ijeetc.com/uploadfile/2019/1009/20191009035041545.pdf)를 사용하여 대기 질을 평가하는 가능성을 탐구하고 있습니다.
+
+<RbCode>
+
+```
+1556199372.384576 <=>\x86##5E1567057C105409#DOV01SW#0#WT:6.53#PH:8.89#DO:90.4#COND:348.9#
+```
+
+</RbCode>
+
+수집된 수질 데이터 예시: 온도, PH 값, 용존 산소, 전도도
+각 경우 장치는 센서 및 GPS 로그를 생성하고, 이후에는 [게시](https://gateway.ipfs.io/ipfs/QmWRjFcQi4Xcisqi8FP3AbGS3PB3gNHgtnfzbcpodKKCBP)하여 IPFS에 제공됩니다. 이 데이터에 가치를 추가하여 Ocean Protocol의 데이터 토큰을 생성함으로써 이 데이터에 가치를 추가할 수 있습니다. 로보노믹스 네트워크는 데이터가 특정 로봇에 의해 특정 작업을 위해 수집되었음을 보장하고, Ocean Protocol은 데이터 토큰을 소유한 사람만 액세스할 수 있도록 보장할 것입니다.
+
+### 마케팅 데이터
+
+일상생활에서 로봇 공학의 추세가 증가하고 있으며 로봇 홍보자나 고객을 위한 로봇의 예시를 쉽게 찾을 수 있습니다.서비스. 이러한 로봇들과 사람들의 상호작용 경험은 사용자 데이터를 수집하는 사이트와 유사한 마케팅 연구에 활용될 수 있습니다. 더불어, 이러한 데이터의 가치는 상호작용이 더 가까운 수준에서 발생하기 때문에 더욱 높아질 것입니다.
+
+우리는 특정 작업을 수행하는 과정에서 (예를 들어, 로봇 웨이터) 시각, 소리 또는 다른 정보를 동시에 수집하는 로봇 장치를 상상할 수 있습니다. 이 경우, 기계 학습 도구를 사용하여 특정 서비스나 제품에 대한 고객 반응에 대한 완전히 새로운 유형의 데이터를 생성하는 데 활용할 수 있습니다. 이는 데이터토큰을 사용하여 기계 학습 알고리즘에 의해 분석된 데이터뿐만 아니라 로봇에서 나오는 생 데이터에 대한 좋은 활용 가능성을 제공합니다. 게다가, Ocean Protocol에는 기밀성을 침해하지 않고 분석을 위해 개인 데이터를 제공할 수 있는 Compute-to-data 기능이 있습니다.
+
+### 기술 로그
+
+로봇의 알고리즘을 개선하기 위해서는 그들의 운영 데이터를 분석하는 것도 필요합니다. 이는 주로 데이터셋이 필요한 기계 학습과 관련이 있지만, 동일하거나 유사한 환경에서 작동하는 장치 간에 3차원 지도(예: 동시 위치추적 및 매핑을 위한)를 공유하는 것에 대해서도 이야기할 수 있습니다. 이러한 기술 로그의 화폐화는 보다 분야별이지만, 그 가치는 그들의 독특함과 희귀성에 있을 것입니다.
+
+예시로는 로봇 청소기가 생성하는 데이터의 토큰화가 있습니다. 이를 통해 성능을 향상시킬 수 있습니다(장애물 우회, 아파트 환경 인식 개선). 또 다른 예시로는 생산 라인의 서비스 데이터가 있습니다. 이 데이터의 처리를 통해 운영 또는 생산 비용을 최적화할 수 있습니다.
+
+## 결론
+
+이 예시들은 Robonomics Network와 Ocean Protocol의 결합이 기존에는 자동화 기술 프로세스의 미흡함과 결과물의 안전한 통제 및 교환의 불가능성으로 인해 이전에는 이용할 수 없었던 근본적으로 새로운 자산 유형을 만들어냄을 보여줍니다. 게다가, 이는 명백한 아이디어에 불과하며, 미래에는 사물인터넷과 로봇의 보급으로 사이버-물리 데이터에 대한 완전히 새로운 시장이 나타날 수 있습니다.

@@ -1,0 +1,103 @@
+---
+title: "Mises à jour de la parachain Robonomics, mars’22"
+date: 2022-03-17
+published: true
+locale: 'fr'
+cover_image: /blog/images/robonomics-parachain-updates-march-22/cover.jpg
+description: "La parachain Robonomics a été lancée en janvier de cette année, et notre premier rapport d'avancement publiquement disponible a été publié le 18 janvier dans un article de blog. Maintenant, nous fournirons des détails sur le travail que nous avons déjà effectué dans la liste des tâches"
+abstract: ""
+tags: ['Parachain Robonomics', 'Feuille de route', 'Nouvelle version']
+---
+
+La parachain Robonomics a été lancée en janvier de cette année, et notre premier rapport d'avancement publiquement disponible a été publié le 18 janvier [dans un article de blog](https://robonomics.network/blog/parachain-on-kusama-first-week-report/). Maintenant, nous fournirons des détails sur le travail que nous avons déjà effectué dans la liste des tâches telles que spécifiées dans la feuille de route sur Github : [Problème de suivi pour les parachains Robonomics sur le lancement de Kusama #145](https://github.com/airalab/robonomics/issues/145).
+
+## À propos des choses les plus importantes dans le travail de la parachain Robonomics sur Kusama en 2 mois
+
+- La parachain est stable et a traité le premier million d'extrinsèques. Le réseau actuel des collators reste également ouvert avec environ [80 collators](https://telemetry.parachain.robonomics.network/#list/Robonomics). Tout le monde peut [devenir un collator Robonomics](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/) et recevoir des récompenses pour préparer des candidats de blocs de parachain et les transmettre aux validateurs de Kusama.
+
+- [Dans la version 1.8.2](https://github.com/airalab/robonomics/releases/tag/v1.8.2), la fonction sudo a été supprimée. Le changement a été accepté par la parachain au bloc [347,918](https://robonomics.subscan.io/block/347918). Cela signifie que l'équipe de développement du projet n'a plus les fonctions administratives de gestion de la parachain.
+
+- [Le comité technique](https://polkadot.js.org/apps/#/techcomm) a terminé la première mise à jour du protocole réseau via le mécanisme de gouvernance on-chain. En seulement 2 mois, le comité techniqueLe comité a traité environ 40 demandes, telles que des événements d'exode, des propositions de trésorerie et des mises à niveau en cours d'exécution.
+
+- [À partir de la version 1.8.0](https://github.com/airalab/robonomics/releases/tag/v1.8.0), la fonction Robot-as-a-service est entièrement disponible. En utilisant cette fonction, vous pouvez combiner les paramètres techniques et économiques pour lancer un appareil IoT.
+
+- [Le mécanisme des abonnements IoT dans la parachain Robonomics](https://wiki.robonomics.network/docs/en/get-subscription/) a passé le stade des premières applications dans des scénarios de travail réel. Il est maintenant devenu la fonctionnalité principale de la parachain, que les développeurs de Robonomics prévoient d'offrir aux propriétaires d'infrastructures domestiques.
+
+- L'école d'hiver a été suspendue le 24 février. Après 3 semaines, les développeurs ont décidé d'abandonner la poursuite de l'école en tant qu'événement. Les leçons de l'école d'hiver ont été transformées en un cours d'introduction à Robonomics, qui sera disponible en ligne 24h/24 et 7j/7 en 2022, de n'importe où dans le monde. Le cours sera publié sur le site [robonomics.academy](https://robonomics.academy/) d'ici la fin du mois de mars.
+
+- Un XRT supplémentaire est disponible pour les participants à la campagne Crowdoan qui possèdent une carte pionnière [via l'application Robonomics dapp](https://robonomics.app/#/bonus-for-pioneer).
+
+## Statistiques de la parachain pour 2 mois
+
+Vous pouvez trouver la plupart des statistiques vous-même sur l'explorateur de blocs Subscan.io à l'adresse : [robonomics.subscan.io](https://robonomics.subscan.io)
+
+![Statistiques de la parachain sur Subscan.io](/blog/images/robonomics-parachain-updates-march-22/robonomics-parachain-subscan.jpg)
+
+### La parachain Robonomics a traité 1 million de transactions
+
+Il est plus correct de dire [extrinsèques](https://wiki.polkadot.network/docs/build-protocol-info#extrinsics), mais nous utiliserons parfois de telles hypothèses pour simplifier.
+
+![Extrinsèques pour Robonomics](/blog/images/robonomics-parachain-updates-march-22/montly-extrinsics.png)
+
+La charge quotidienne sur la parachain est actuellement de 10 à 25 milliers de transactions par jour. La fonction datalog() est principalement utilisée pour collecter à distance des données à partir d'appareils IoT. De plus, depuis février, les développeurs de Robonomics ont commencé à utiliserparachain IoT abonnements pour les premiers scénarios Robonomics pour lesquels nous nous préparons depuis les 2 dernières années.
+
+![La charge quotidienne sur le parachain aujourd'hui](/blog/images/robonomics-parachain-updates-march-22/robonomics-parachain-transactions.jpg)
+
+Le nombre de nœuds Robonomics complets qui transmettent au [service de télémétrie de parachain publiquement disponible](https://telemetry.parachain.robonomics.network/#list/Robonomics) a doublé passant de 40 à 80 nœuds réseau complets. Tout le monde peut [devenir un collator Robonomics](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/) et recevoir des récompenses pour préparer des candidats de blocs de parachain et les transmettre aux validateurs de Kusama.
+
+### Les premiers utilisateurs de Robonomics
+
+Déjà au début de février, nous avions la certitude que le parachain Robonomics était prêt à accueillir ses premiers utilisateurs. Impliquer les premiers adoptants implique toujours de mettre beaucoup l'accent sur la formation et d'aider dans n'importe quelle situation dans laquelle un utilisateur de la première version se retrouve. C'est aussi une recherche des personnes les plus patientes et réactives qui s'intéressent aux technologies que nous utilisons. Oui, il y en a toujours quelques-uns, et il est difficile d'en trouver plus que quelques amis et collègues de travail, mais c'est précisément la tâche à laquelle nous sommes confrontés en 2022. En créant une communauté d'utilisateurs puissants de Web3 + IoT prêts à expérimenter pour l'éducation, nous pourrons assurer la croissance exponentielle du projet en 2023-2024.
+
+La principale chose que nous voulons faire pour attirer les premiers utilisateurs est de développer des cours de formation en 2022 qui seront non seulement utiles pour acquérir des compétences, mais aussi intéressants à suivre.
+
+Bien sûr, les développeurs de Robonomics prévoient d'organiser des concours et d'encourager la communauté à être active. Cependant, nous croyons toujours que la créativité/l'enthousiasme est plus forte que le matériel d'apprentissage que nous pourrions fournir. C'est génial quand, dans le processus d'apprentissage, vous pouvez essayer [de passer à travers un miroir noir](https://blackmirror.robonomics.academy/#/) et, pendant que le code QR à l'écran change, se rappeler d'un épisode de la série du même nom ou d'une scène du livre de Philip K. Dick "Ubik", dans lequel le personnage principal se dispute avec la porte, à laquelle il doit quelques pièces de monnaie... En général, unL'une des principales tâches de l'équipe est de maintenir une approche créative de l'éducation des utilisateurs à l'avenir.
+
+![](/blog/images/robonomics-parachain-updates-march-22/blackmirror-lesson.jpg)
+
+L'école d'hiver [a été suspendue le 24 février](https://twitter.com/EnsRationis/status/1496885398404059136). Heureusement, vous pouvez toujours essayer la première leçon maintenant ! Pour ce faire, suivez le lien : [https://blackmirror.robonomics.academy/#/](https://blackmirror.robonomics.academy/#/)
+
+Ceux qui ont déjà terminé la première leçon de l'école en février peuvent remarquer que l'adresse de l'application (D)app a changé. Maintenant, la leçon est disponible sur le domaine robonomics.academy, et bientôt toutes les 5 leçons que nous avions prévu de donner sous forme d'événement la dernière semaine de février seront disponibles en ligne 24h/24 et 7j/7 dans le format du cours d'introduction à Robonomics. Nous vous en parlerons séparément.
+
+### Les versions de Robonomics sur GitHub
+
+Au cours des 2 dernières semaines, de nombreuses versions du client parachain de Robonomics ont été publiées. La plus pertinente au moment de la rédaction de cet article est la [1.8.4](https://github.com/airalab/robonomics/releases).
+
+[Construction du client parachain Robonomics](https://wiki.robonomics.network/docs/en/how-to-build-collator-node/) sur Ubuntu 21.10 et exécution sans difficultés :
+
+![Construction du client parachain Robonomics](/blog/images/robonomics-parachain-updates-march-22/building-client-for-robonomics-parachain.jpg)
+
+En plus des mises à jour système dans les versions, il est important de noter les améliorations suivantes :
+
+- [Version 1.8.0](https://github.com/airalab/robonomics/releases/tag/v1.8.0) - ajout de la palette de responsabilité, qui permet de mettre en œuvre pleinement le modèle Robot-as-a-Service et de lancer un appareil IoT avec le transfert d'informations techniques et économiques de manière atomique.
+- [Version 1.8.2](https://github.com/airalab/robonomics/releases/tag/v1.8.2) - le superutilisateur (sudo) a été supprimé du parachain Robonomics. Dès aujourd'hui, le parachain Robonomics n'a plus la possibilité d'un contrôle direct par les développeurs.Vous pouvez vous familiariser avec toutes les modifications apportées au client de parachain Robonomics en suivant le lien : [https://github.com/airalab/robonomics/releases](https://github.com/airalab/robonomics/releases)
+
+## La première étape de la feuille de route 2022 est achevée à 90 %
+
+À la fin du premier trimestre 2022, l'équipe du projet a presque terminé [les tâches pour mettre en œuvre la fonctionnalité de base de la parachain](https://github.com/airalab/robonomics/issues/145), et plusieurs scénarios Robonomics qui fonctionnaient auparavant uniquement en mode test sont déjà à l'étape pilote.
+
+### La principale tâche du deuxième trimestre 2022 - Intégrations XCM
+
+Comme vous pouvez le voir dans [la question de suivi pour les parachains Robonomics sur le lancement de Kusama #145](https://github.com/airalab/robonomics/issues/145), la première partie des tâches comporte un élément lié à la mise en œuvre de [XCMP](https://research.web3.foundation/en/latest/polkadot/XCMP/index.html). Nous avons réalisé les premiers tests avec la messagerie entre 2 instances de la parachain Robonomics lors [d'un cours magistral à Saint-Pétersbourg à l'automne 2020](https://youtu.be/zCH7RuIHEMg). Il est cependant vrai qu'au cours des 1,5 dernières années, XCMP a subi de nombreux changements, et il est maintenant plus correct de parler de [XCM (Message de consensus croisé)](https://wiki.polkadot.network/docs/learn-crosschain).
+
+Gavin Wood a introduit la première version de XCM à l'automne 2021. XCM est bien couvert dans trois articles sur Medium :
+
+- [XCM : Le format de message de consensus croisé](https://medium.com/polkadot-network/xcm-the-cross-consensus-message-format-3b77b1373392)
+- [XCM Partie II : Versioning et compatibilité](https://medium.com/polkadot-network/xcm-part-ii-versioning-and-compatibility-b313fc257b83)
+- [XCM Partie III : Exécution et gestion des erreurs](https://medium.com/polkadot-network/xcm-part-iii-execution-and-error-management-ceb8155dd166)
+
+Déjà en février, nous avons commencé à peaufiner la parachain Robonomics afin de mettre en œuvre la première intégration au sein de l'écosystème Kusama. Notre premièreLa tâche dans cette direction est l'intégration avec la parachain Statemine. Cette intégration permettra aux utilisateurs d'utiliser des jetons statemine pour payer selon le modèle Robot-as-a-Service, par exemple, [lors du contrôle à distance d'un télescope dans le désert d'Atacama](http://telescope.merklebot.com/) ou pour payer des articles dans un distributeur automatique avec des jetons n'importe où dans le monde.
+
+En plus de l'intégration avec Statemine, les plans pour le deuxième trimestre incluent :
+
+- Intégration avec Karura pour ajouter un pool de liquidité XRT/kUSD.
+- Intégration avec Moonriver pour gérer des appareils IoT en utilisant des contrats de solidité arbitraires.
+- Étude de la technologie des ponts entre Ethereum et Kusama en utilisant l'exemple de Darwinia.
+
+Nous décrirons chaque scénario d'intégration séparément en fonction des résultats des tests dans Rococo, Westend ou d'autres environnements de test où les parachains Karura, Moonriver, Darwinia ont leurs propres versions de test.
+
+## En conclusion
+
+Il y a un chaos complet autour de nous maintenant, mais l'équipe du projet a tracé notre trajectoire pour l'univers Web3 il y a longtemps - nous publions les résultats de notre travail sur Internet afin que les expériences puissent être répétées n'importe où dans le monde, car en dehors du code source ouvert et de l'accès à la blockchain, vous n'avez besoin de rien d'autre. Bien sûr, la vie dans le monde de Web3 n'est pas si facile quand il s'agit de beaucoup de détails, mais nous pouvons y faire face. En tant qu'ingénieurs, nous pouvons imaginer les conséquences de la militarisation au 21e siècle. La meilleure chose que nous puissions tous faire, compte tenu des situations géopolitiques actuelles, est de participer personnellement à des projets pacifiques et de créer autant de logiciels open source que possible pour les tâches des gens ordinaires. Au cours de l'année écoulée, nos efforts ont lancé des projets tels qu'un programme éducatif pour le [contrôle à distance du chien robotique Boston Dynamics](https://spot-sdk.education/); [l'observation à distance du ciel étoilé](https://www.youtube.com/watch?v=Up8hESnXnaY) depuis l'endroit le plus approprié pour cela sur la planète Terre - le désert d'Atacama; [un réseau de capteurs civils pour surveiller la qualité de l'environnement urbain](https://airalab.org/en/air-monitoring) dans la ville industrielle de Togliatti; [surveillance de la qualité de l'eau](https://www.youtube.com/watch?v=4iCkdF2UJmo) dans les canaux de Saint-Pétersbourg. Cette année, nous nous concentrerons sur les scénarios de maison intelligente afin que vouspeut [gérer votre infrastructure IoT domestique sans l'aide des clouds](https://wiki.robonomics.network/docs/fr/home-assistant-begin/).
+
+Nous partagerons plus d'informations avec vous lors des prochaines mises à jour de la feuille de route.

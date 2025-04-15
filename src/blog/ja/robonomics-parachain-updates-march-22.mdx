@@ -1,0 +1,103 @@
+---
+title: "Robonomicsのパラチェーンの最新情報、22年3月"
+date: 2022-03-17
+published: true
+locale: 'ja'
+cover_image: /blog/images/robonomics-parachain-updates-march-22/cover.jpg
+description: "Robonomicsのパラチェーンは今年の1月に開始され、最初の公開進捗レポートは1月18日にブログ投稿されました。今回は、GitHubのロードマップで指定されたタスクリスト内で既に実行された作業の詳細を提供します。"
+abstract: ""
+tags: ['Robonomicsのパラチェーン', 'ロードマップ', '新リリース']
+---
+
+Robonomicsのパラチェーンは今年の1月に開始され、最初の公開進捗レポートは1月18日に[ブログ投稿](https://robonomics.network/blog/parachain-on-kusama-first-week-report/)されました。今回は、GitHubのロードマップで指定されたタスクリスト内で既に実行された作業の詳細を提供します: [Tracking issue for Robonomics Parachains on Kusama Launch #145](https://github.com/airalab/robonomics/issues/145)。
+
+## KusamaのRobonomicsパラチェーンの作業で最も重要なことについて、2か月間の進捗について
+
+- パラチェーンは安定しており、最初の100万のエクストリンシックスを処理しました。現在のコレーターネットワークは約[80人のコレーター](https://telemetry.parachain.robonomics.network/#list/Robonomics)で引き続きオープンです。誰でも[Robonomicsのコレーターになる](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/)ことができ、パラチェーンのブロック候補を準備し、それらをKusamaのバリデータに渡すことで報酬を受け取ることができます。
+
+- [リリース1.8.2](https://github.com/airalab/robonomics/releases/tag/v1.8.2)では、sudo機能が削除されました。この変更はブロック[347,918](https://robonomics.subscan.io/block/347918)でパラチェーンによって受け入れられました。これにより、プロジェクト開発チームはもはやパラチェーンの管理機能を持たなくなりました。
+
+- [技術委員会](https://polkadot.js.org/apps/#/techcomm)は、オンチェーンガバナンスメカニズムを通じてネットワークプロトコルの最初のアップデートを完了しました。わずか2か月で、技術委員会は、エクソダスイベント、財務提案、ランタイムのアップグレードなど、約40件のリクエストを処理しました。
+
+- [リリース1.8.0から](https://github.com/airalab/robonomics/releases/tag/v1.8.0)、Robot-as-a-service機能が完全に利用可能になりました。この機能を使用すると、IoTデバイスの起動の技術的および経済的パラメータを組み合わせることができます。
+
+- [Robonomicsパラチェーン内のIoTサブスクリプションの仕組み](https://wiki.robonomics.network/docs/en/get-subscription/)は、実際の作業シナリオでの最初のアプリケーションの段階を通過しました。現在、これはRobonomics開発者が家庭のインフラ所有者に提供する予定のパラチェーンの主要機能となっています。
+
+- 冬の学校は2月24日に中断されました。3週間後、開発者たちは学校の継続をイベントとして中止することを決定しました。冬の学校の授業は、2022年中に世界中のどこからでも24時間365日オンラインで利用可能なRobonomicsの入門コースとして再設計されました。このコースは、3月末までに[robonomics.academyのウェブサイト](https://robonomics.academy/)に公開されます。
+
+- パイオニアカードを持つクラウドファンキャンペーン参加者には、[Robonomics dappを通じて追加の1 XRT](https://robonomics.app/#/bonus-for-pioneer)が利用可能です。
+
+## 2か月間のパラチェーン統計
+
+Subscan.ioブロックエクスプローラーでほとんどの統計情報を自分で見つけることができます: [robonomics.subscan.io](https://robonomics.subscan.io)
+
+![Subscan.io上のRobonomicsパラチェーン統計](/blog/images/robonomics-parachain-updates-march-22/robonomics-parachain-subscan.jpg)
+
+### Robonomicsパラチェーンは100万件のトランザクションを処理しました
+
+より正確には[エクストリンシック](https://wiki.polkadot.network/docs/build-protocol-info#extrinsics)と言うべきですが、簡便のためにこのような仮定を時折使用します。
+
+![Robonomicsのエクストリンシック](/blog/images/robonomics-parachain-updates-march-22/montly-extrinsics.png)
+
+パラチェーンへの日々の負荷は、現在、1日あたり1万〜2.5万件のトランザクションです。datalog()関数は、主にIoTデバイスからデータをリモートで収集するために使用されています。また、2月以降、Robonomics開発者は、parachain IoTのサブスクリプションは、過去2年間にわたって準備してきた最初のRobonomicsシナリオです。
+
+![今日のパラチェーンへのデイリーロード](/blog/images/robonomics-parachain-updates-march-22/robonomics-parachain-transactions.jpg)
+
+[公開されているパラチェーンテレメトリーサービス](https://telemetry.parachain.robonomics.network/#list/Robonomics)に送信する完全なRobonomicsノードの数が、40から80の完全なネットワークノードに倍増しました。誰でも[Robonomicsコレーターになる](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/)ことができ、パラチェーンブロック候補を準備してKusamaバリデータに渡すことで報酬を受け取ることができます。
+
+### 最初のRobonomicsユーザー
+
+早くも2月初旬に、Robonomicsパラチェーンが最初のユーザーを受け入れる準備が整っているという自信を持っていました。早期採用者を巻き込むことは、常に早期バージョンのユーザーが陥る状況に対処し、トレーニングを重点的に行いサポートすることを意味します。また、使用している技術に興味を持つ最も忍耐強く反応の良い人々を探すことでもあります。はい、常にそのような人がいくらかいますが、それらを数人の友人や同僚よりも多く見つけることは難しいですが、これが2022年に直面する課題です。教育のために実験をする準備ができたWeb3 + IoTのパワーユーザーのコミュニティを作成することで、プロジェクトの爆発的な成長を2023年から2024年に確実にすることができます。
+
+最初のユーザーを引き付けるために行いたい主な取り組みは、2022年にいくつかのトレーニングコースを開発することです。これらのコースは、スキルを習得するという点だけでなく、完了するのが面白いものになるでしょう。
+
+もちろん、Robonomicsの開発者はコンテストを開催し、コミュニティを活発にするために励ます予定です。しかし、私たちは依然として、提供できる学習教材よりも創造性/熱意が強いと考えています。学習の過程で、[ブラックミラーを体験](https://blackmirror.robonomics.academy/#/)して、画面上のQRコードが変わる間に、同名のシリーズのエピソードやフィリップ・K・ディックの小説「Ubik」からのシーンを思い出すことができるというのは素晴らしいことです。主人公がドアと口論し、それに数枚のコインを支払うことになるシーンなどを思い出すことができます... 一般的に言って、チームの主なタスクの1つは、将来のユーザー教育に対する創造的なアプローチを維持することです。
+
+![](/blog/images/robonomics-parachain-updates-march-22/blackmirror-lesson.jpg)
+
+冬の学校は[2月24日に中断されました](https://twitter.com/EnsRationis/status/1496885398404059136)。幸いなことに、今でも最初のレッスンを試すことができます！これを行うには、次のリンクに従ってください：[https://blackmirror.robonomics.academy/#/](https://blackmirror.robonomics.academy/#/)
+
+2月に学校の最初のレッスンを完了した人は、(D)appのアドレスが変更されたことに気付くかもしれません。現在、レッスンはrobonomics.academyドメインで利用可能であり、2月の最終週のイベント形式で実施する予定だった5つのレッスンがすぐにオンラインで24時間365日利用可能なRobonomics入門コース形式で提供される予定です。これについては別途お知らせします。
+
+### GitHubでのRobonomicsリリース
+
+過去2週間で、Robonomicsパラチェーンクライアントの多くのリリースがありました。この執筆時点で最も関連性のあるのは、[1.8.4](https://github.com/airalab/robonomics/releases)です。
+
+Ubuntu 21.10でRobonomicsパラチェーンクライアントをビルドし、問題なく実行する方法については、[Robonomicsパラチェーンクライアントのビルド](https://wiki.robonomics.network/docs/en/how-to-build-collator-node/)を参照してください：
+
+![Robonomicsパラチェーンクライアントのビルド](/blog/images/robonomics-parachain-updates-march-22/building-client-for-robonomics-parachain.jpg)
+
+リリースにおけるシステムの更新に加えて、以下の改善点についても重要です：
+
+- [リリース1.8.0](https://github.com/airalab/robonomics/releases/tag/v1.8.0) - パレット責任が追加され、Robot-as-a-Serviceモデルを完全に実装し、技術的および経済的情報を原子形式で転送してIoTデバイスを起動できるようになりました。
+- [リリース1.8.2](https://github.com/airalab/robonomics/releases/tag/v1.8.2) - Robonomicsパラチェーンからスーパーユーザー（sudo）が削除されました。すでに今日、Robonomicsパラチェーンは開発者による直接的な制御の可能性を持っていません。Robonomicsパラチェーンクライアントのすべての変更については、リンク先で確認できます：[https://github.com/airalab/robonomics/releases](https://github.com/airalab/robonomics/releases)
+
+## ロードマップ2022の第1段階は90%完了
+
+2022年第1四半期までに、プロジェクトチームはほぼすべての[パラチェーンの基本機能を実装するためのタスク](https://github.com/airalab/robonomics/issues/145)を完了し、以前はテストモードでのみ動作していたいくつかのRobonomicsシナリオがすでにパイロット段階にあります。
+
+### 2022年第2四半期の主なタスク - XCM統合
+
+[Robonomics Parachains on Kusama Launchのトラッキングイシュー＃145](https://github.com/airalab/robonomics/issues/145)からわかるように、最初のタスクの一部には[XCMP](https://research.web3.foundation/en/latest/polkadot/XCMP/index.html)の実装に関連する項目があります。2020年秋のサンクトペテルブルクでのマスタークラス中に、Robonomicsパラチェーンの2つのインスタンス間でメッセージングをテストしました。ただし、過去1.5年間でXCMPは多くの変更を経ており、今では[XCM（Cross-Consensus Message）](https://wiki.polkadot.network/docs/learn-crosschain)と言う方が正確です。
+
+Gavin Woodは2021年秋にXCMの最初のバージョンを導入しました。XCMについては、Mediumの3つの記事で詳しく説明されています：
+
+- [XCM：クロスコンセンサスメッセージフォーマット](https://medium.com/polkadot-network/xcm-the-cross-consensus-message-format-3b77b1373392)
+- [XCM Part II：バージョニングと互換性](https://medium.com/polkadot-network/xcm-part-ii-versioning-and-compatibility-b313fc257b83)
+- [XCM Part III：実行とエラー管理](https://medium.com/polkadot-network/xcm-part-iii-execution-and-error-management-ceb8155dd166)
+
+すでに2月に、Kusamaエコシステム内で最初の統合を実装するためにRobonomicsパラチェーンを改良し始めました。私たちの最初この方向性のタスクは、Statemineパラチェーンとの統合です。この統合により、ユーザーは例えば、[アタカマ砂漠で望遠鏡を遠隔操作する](http://telescope.merklebot.com/)際に、Statemineトークンを使用してRobot-as-a-Serviceモデルに従って支払いを行ったり、世界中のどこでもトークンで自動販売機の商品を支払ったりすることができます。
+
+Statemineとの統合に加えて、Q2の計画には以下が含まれます:
+
+- Karuraとの統合によるXRT/kUSD流動性プールの追加。
+- Moonriverとの統合による任意のソリディティ契約を使用してIoTデバイスを管理する機能。
+- Darwiniaの例を使用して、EthereumとKusama間のブリッジ技術の研究。
+
+Karura、Moonriver、Darwiniaパラチェーンがそれぞれ独自のテストバージョンを持つRococo、Westend、または他のサンドボックスでのテスト結果に基づいて、それぞれの統合シナリオを個別に説明します。
+
+## 結論
+
+現在私たちの周りには完全な混乱がありますが、プロジェクトチームはWeb3ユニバースの軌道をずっと前から定めてきました - 私たちはインターネット上での作業結果を公開し、どこでも実験を繰り返すことができるようにしています。オープンソースコードとブロックチェーンへのアクセス以外には何も必要ありません。もちろん、Web3の世界での生活は、多くの詳細が絡むときにはそう簡単ではありませんが、私たちは対処できます。エンジニアとして、21世紀の軍事化の影響を想像することができます。現在の地政学的状況を考慮すると、私たちができる最善のことは、平和なプロジェクトに個人的に参加し、一般の人々の課題に対応するためのオープンソースソフトウェアをできるだけ多く作成することです。過去1年間、私たちの取り組みにより、次のようなプロジェクトが立ち上がりました: [ボストン・ダイナミクスのロボット犬の遠隔操作のための教育プログラム](https://spot-sdk.education/); 地球上で最適な場所からの[星空の遠隔観測](https://www.youtube.com/watch?v=Up8hESnXnaY) - アタカマ砂漠; 産業都市トリヤッティの[都市環境の品質を監視するための市民センサーネットワーク](https://airalab.org/en/air-monitoring); サンクトペテルブルクの運河での[水質監視](https://www.youtube.com/watch?v=4iCkdF2UJmo)。今年はスマートホームシナリオに焦点を当てます。[クラウドの助けを借りずに自宅のIoTインフラを管理することができます](https://wiki.robonomics.network/docs/ja/home-assistant-begin/)。
+
+次のロードマップの更新でさらに情報を共有します。

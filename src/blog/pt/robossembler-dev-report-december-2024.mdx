@@ -1,0 +1,84 @@
+---
+title: "Relatório de Desenvolvimento do Robossembler #1"
+date: 2024-12-08
+published: true
+locale: 'pt'
+cover_image: /blog/images/robossembler-dev-report-december-2024/Cover.webp
+description: "O projeto Robossembler foca no desenvolvimento de robôs industriais e ferramentas para sua produção que são acessíveis a qualquer entusiasta de DIY. Neste artigo, compartilharemos nosso progresso atual - uma caixa de engrenagens atualizada e testada, a 5ª versão da máquina de enrolamento e um manipulador de robô com otimizações adicionais para impressão 3D!"
+abstract: "O projeto Robossembler foca no desenvolvimento de robôs industriais e ferramentas para sua produção que são acessíveis a qualquer entusiasta de DIY. Neste artigo, compartilharemos nosso progresso atual - uma caixa de engrenagens atualizada e testada, a 5ª versão da máquina de enrolamento e um manipulador de robô com otimizações adicionais para impressão 3D!"
+tags: ['Robossembler']
+---
+
+
+## Servo
+
+Um motor sozinho geralmente não possui torque suficiente para girar ou levantar objetos pesados no mundo real, por isso ele precisa de uma caixa de engrenagens ou transmissão. Uma caixa de engrenagens converte o torque do motor em força de saída utilizável. Isso se mostrou especialmente importante em nosso caso - nosso estator impresso com parafusos DIN como núcleos magnéticos testou 3-4 vezes mais fraco do que os concorrentes que usam estatores de metal sólido feitos de aço elétrico.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/stator-photo_2024-12-08_00-03-21.webp" alt="" />
+
+Dado esse resultado relativamente baixo de força, precisávamos de uma caixa de engrenagens com uma alta relação de transmissão que, assim como tudo em Robossembler, fosse simples de montar e adequada para impressão 3D. Exploramos inúmeros designs de caixas de engrenagens, incluindo alguns exóticos, mas cada um não atendia aos nossos critérios. Nossa última tentativa - uma caixa de engrenagens de onda de deformação com elementos rolantes intermediários - teve um bom desempenho, mas se mostrou muito complexa para fabricar.
+
+Após extensas experimentações, finalmente descobrimos o design perfeito: uma caixa de engrenagens precessora com uma relação de transmissão de 1:43!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-07_21-54-20.webp" alt="" />
+
+Veja como é simples de montar:
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0vXwFmTB_L4?si=soNbSNKg9tjPWY1f" title="YouTube player de vídeo" frameborder="0" allow="acelerômetro; autoplay; clipboard-write; encrypted-media; giroscópio; imagem-em-imagem; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+A caixa de engrenagens completou seus testes e ensaios-chave. Aqui está algo impressionante - o acionamento de servo com caixa de engrenagens pesa apenas 273g, equivalente ao peso de um padrão.motor de metal sem caixa de velocidades ou controlador!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-08_14-02-33.webp" alt="" />
+
+## Máquina de Enrolamento do Estator
+
+Enquanto a versão 4 da nossa máquina de enrolamento enrolava com sucesso os primeiros estatores de forma semi-automática, precisava de melhorias em termos de estabilidade e repetibilidade. A versão 5 traz inúmeras melhorias, e aqui estão as principais.
+
+Atualizamos o controlador do motor de passo Creality proprietário usado na versão 4 para um RAMPS - um controlador comprovado da lendária impressora RepRap.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-50-12.webp" alt="" />
+
+- Tornamos as peças da máquina mais leves e melhores - agora usam 25% menos material plástico e podem ser impressas em 3D com mais facilidade sem estruturas de suporte adicionais
+- O sistema de alimentação de fio agora é mais estável com um freio de carretel adicional e um sulco de fio mais profundo na roda
+- Redesenhamos o estojo de exibição e a tampa traseira para uma melhor proteção
+- A documentação do projeto está agora completa com especificações detalhadas de fixadores, tempos de impressão e dados de consumo de plástico.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-51-26.webp"alt="" />
+
+Adicionamos um calibrador de agulha ao design da máquina para simplificar a configuração do equipamento.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-04_11-41-56.webp" alt="" />
+
+A Versão 5 está atualmente em teste, juntamente com o nosso novo gerador de programa GCode de enrolamento. Em vez do programa codificado anteriormente para modificações específicas de motores, o nosso novo gerador GCode permite uma rápida adaptação para diferentes designs de estatores.
+
+## Manipulador de Robô
+
+À medida que nos aproximamos da prontidão para produção com o motor e a caixa de engrenagens, estamos a refinar o design do manipulador. Embora tenhamos pensado que estava bem otimizado para impressão 3D, os nossos novos membros da equipa — um tecnólogo 3D com 10 anos de experiência — identificaram várias áreas para melhorias. Concentramo-nos em tornar a impressão de peças previsível mesmo em impressoras de baixo custo, incluindo a reformulação dos elos principais do corpo para imprimir com suportes mínimos.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/3d-supports.webp" alt="" />
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/roboarm-3d-optimize-photo_2024-11-20_15-56-53.webp" alt="" />
+
+A pedido do nosso programador de controlo de movimento, redesenhamos o garfo — o componente que conecta os elos de acionamento do manipulador numa única cadeia cinemática.O design anterior oferecia um raio de trabalho maior, mas causava posições singulares frequentes durante cálculos de trajetória, complicando o controle da simulação. Nosso novo design de garfo elimina esse problema, tornando a cinemática do robô mais otimizada e mais semelhante ao Kuka Iiwa ;D.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/fork-roboarm-photo_2024-12-07_11-39-31.webp" alt="" />
+
+Para o software de controle, estamos desenvolvendo uma solução usando ROS 2 Humble (testando Jazzy) e Behaviour Tree CPP v4, atualmente sendo validado no AR4. Uma inovação chave é o nosso amplo uso de nós de gerenciamento de ciclo de vida para alterações de parâmetros em tempo de execução, como configurações de controlador ou carregamento de novos pesos de rede neural de visão de máquina dinamicamente.
+
+## Planos
+
+Nossos próximos objetivos:
+
+- Lançar um dispositivo de agarre atualizado com novo motor, caixa de engrenagens e dedos intercambiáveis
+- Testar o gerador de GCode da máquina de enrolamento e o enrolamento totalmente automático do estator
+- Concluir a otimização 3D do robô e criar um vídeo de demonstração de montagem
+- Otimizar o gerenciamento de temperatura do acionamento do servo e testá-lo sob carga dentro de um elo
+
+Siga as atualizações no meu blog em [x.com](https://x.com/movefasta) !
+
+## Fontes de Software e Hardware
+
+- Braço Robossembler - https://gitlab.com/robossembler/roboarm-diy-version
+- Máquina de Enrolamento: https://gitlab.com/robossembler/cnc/motor-wire-winder- Servo - https://gitlab.com/robossembler/servo
+- Ferramenta de Agarrar - https://gitlab.com/robossembler/arm-tools/grip-tool
+- Tempo de Execução Robossembler ROS 2 - https://gitlab.com/robossembler/robossembler-ros2

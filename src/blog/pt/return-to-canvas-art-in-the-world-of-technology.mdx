@@ -1,0 +1,93 @@
+---
+title: 'ARTE, Cyberpunk & WEB3: Um Retorno à Arte em Tela no Mundo da Tecnologia'
+date: 2025-01-10
+published: true
+locale: 'pt'
+cover_image: '/blog/images/return-to-canvas-art-in-the-world-of-technology/cover.webp'
+description: "Você me conhece como designer da Robonomics, mas este ano retornei como artista. A IA realmente se destaca nisso em um nível elevado. Mas eu tinha uma pergunta: ainda há espaço para artistas reais no mundo da tecnologia? Para encontrar a resposta, decidi conduzir um experimento."
+abstract: "Olá! Você me conhece como designer da Robonomics, mas este ano retornei como artista. Tenho observado há muito tempo o quão rapidamente a inteligência artificial está se desenvolvendo e quantos a estão usando para criar imagens. A IA realmente se destaca nisso em um nível elevado. Mas eu tinha uma pergunta: ainda há espaço para artistas reais no mundo da tecnologia? Para encontrar a resposta, decidi conduzir um experimento."
+abstractAuthor: 'Anna Wimmer-Savinova'
+tags: ['Web3']
+---
+
+## Pintura, Cyberpunk e Web3: Como Funciona
+
+Meu experimento ocorreu em novembro em Bangkok durante dois eventos importantes — Polkadot Sub0 Reset e Devcon.
+
+O tema das pinturas foi o cyberpunk de nosso tempo, uma direção relevante para nossa equipe hoje. Em meu trabalho, busquei inspiraçãoDo romance "Neuromancer" de William Gibson, as Três Leis da Robótica de Isaac Asimov, e imaginei como o ciberpunk poderia parecer no mundo moderno e no futuro. Minha visão foi ainda mais moldada pelos panoramas de Bangkok — uma cidade que por si só parece uma cidade do futuro, capturando perfeitamente a atmosfera ciberpunk.
+
+O processo de criação da pintura foi gravado em vídeo em tempo real. Essas gravações foram carregadas no IPFS com o CID armazenado no parachain Robonomics por meio do nosso projeto Feecc, criando um passaporte digital para cada pintura. Essa abordagem garantiu total transparência: qualquer pessoa poderia ver cada etapa do processo de pintura — desde o primeiro traço até os toques finais. Você pode saber mais sobre o projeto Feecc e seus recursos neste [artigo](/blog/feecc-recap/).
+
+Também adicionamos sensores de temperatura e umidade às pinturas, que registraram dados sobre as condições durante sua criação. Esses dados foram armazenados no passaporte digital e continuaram a ser atualizados mesmo após a conclusão da pintura. Novos proprietários poderiam ativar o sensor, permitindo que ele continuasse enviando dados para o parachain Robonomics, tornando a obra de arte parte de seu ecossistema digital.
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/feecc-art.webp" alt="processo de pintura" />
+
+## Descrição do Processo Feecc no Experimento de Arte  
+
+1. **Início do Processo:**  
+    Quando o botão "Iniciar" é pressionado,A memória temporária do dispositivo é limpa, e o sistema começa a gravar novos dados. Neste ponto, o título e a descrição da pintura são salvos, e a coleta de dados dos sensores conectados, como temperatura e umidade, começa.
+
+2. **Gravação em Timelapse:**  
+   Simultaneamente à gravação de dados, uma gravação em timelapse com um fator de 60 é iniciada, capturando o processo de criação da pintura.
+
+3. **Transmissão de Dados:**  
+   Durante todo o processo de pintura, os sensores transmitem dados diretamente para o parachain da Robonomics e a plataforma Feecc. Isso marcou a primeira transação pública enviada para o parachain da Robonomics (e possivelmente em todo o ecossistema Dotsama) usando um microcontrolador ESP32. A câmera continua gravando o timelapse durante esta fase.
+
+4. **Conclusão:**  
+   Quando o botão "Concluir" é pressionado, o sistema finaliza a gravação:  
+   - O timelapse gerado e os gráficos de dados são carregados na rede IPFS e fixados via Crust para armazenamento e acessibilidade a longo prazo.  
+   - Todos os identificadores, incluindo o título e a descrição da pintura, são registrados em um modelo de passaporte digital, que também é carregado no IPFS com o CID armazenado no parachain da Robonomics.  
+   - Códigos QR que vinculam à transação e ao passaporte digital no IPFS são automaticamente impressos e anexados à pintura, permitindo que qualquer pessoa acesse os dados.
+
+5. **Operação de Sensor a Longo Prazo:**  
+   Após o processo de pinturaestá concluído, os sensores podem continuar a transmitir dados para a rede, fornecendo informações contínuas sobre as condições de armazenamento da pintura.
+
+Este processo demonstra como as tecnologias IoT e blockchain podem se integrar à arte, criando um sistema transparente e de longo prazo para documentar trabalhos criativos.
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/art.webp" alt="visualização de pinturas" />
+
+### Passaportes de Pinturas Digitais com Hashes IPFS:
+
+1. [Pintura - Código Lunar](https://ipfs.io/ipfs/QmZDD4kgaD2f7zWaJibKjDmCkh73aodLkNb2x96h4GfxDx)  
+2. [Pintura - Confiança na Era Digital](https://ipfs.io/ipfs/QmUwGQWSouxCtnHYtLep59waerVJWotVUmzcxiepvTwUeJ)  
+3. [Pintura - Pulso Cibernético](https://ipfs.io/ipfs/Qme36C3Gmp1fRvME2sSypfSTSv4Kj9u3za2hhymy7oeqw6)  
+4. [Pintura - Ilusão Cibernética](https://ipfs.io/ipfs/QmTaKjMxrrPU7M4iCubHnWi6TfrxAXL3iQ6rQ3mev69gjz)  
+5. [Pintura - **Evolução da Liberdade: O Caminho do Ethereum**](https://ipfs.io/ipfs/QmPBYuLFTw9sGHigZzQZ4LQHSZtUvgMfnFnRXFUi1nob5Y)  
+
+
+## Estúdio Móvel de Artista com Iluminação Inteligente
+
+Para este experimento, a equipe de engenharia da Robonomics me ajudou a criar um estúdio móvel de artista equipado com automação de iluminação inteligente como parte do nosso projeto [Web3 Smart Home](https://wiki.robonomics.network/docs/robonomics-smart-home-overview/). Esta configuração se tornou um verdadeiro sistema de suporte.  
+
+Eu não precisava mais levantar constantemente para ajustar a iluminação ou mover as lâmpadas com base no horário do dia. A iluminação inteligente se adaptava automaticamente, criando condições ideais de trabalho. Isso me permitiu manter o foco no processo criativo sem interrupções.  
+
+Para um artista, isso é especialmente importante: a iluminação afeta diretamente a percepção das cores, detalhes e a atmosfera geral de uma pintura. Com esse suporte, meu processo se tornou mais confortável e produtivo.  
+
+
+## O Que Descobri: Arte e Tecnologia Juntas
+
+O experimento foi um sucesso. As reações das pessoas mostraram que elas gostaram de observar o processo de pintura e testemunhar um artista ao vivo trabalhando. Este é um sinal importante: apesar do avanço da IA, a arte genuína e a criatividade continuam sendo valiosas.  
+
+Acredito que a arte e a tecnologia podem coexistir harmoniosamente, enriquecendo e complementando uma à outra. Meu experimento demonstrou que digitalAs soluções podem expandir os limites da criatividade em vez de substituí-la.
+
+Essa abordagem também pode ser valiosa para galerias de arte e colecionadores que preservam cuidadosamente suas pinturas e desejam dados transparentes sobre as condições de armazenamento. Sensores de temperatura e umidade permitem o monitoramento contínuo das obras de arte durante o transporte, exposição em galerias ou na casa de um novo proprietário. Esse método ajuda a garantir a máxima preservação e uma vida longa para a obra de arte.
+
+<YouTube id="https://www.youtube.com/watch?v=Rwp2bx1azzU&embeds_referring_euri=https%3A%2F%2Fwww.notion.so%2F&source_ve_path=Mjg2NjY" posterQuality="max"/>
+
+## Novo Experimento: Camisetas Estilo Cyberpunk
+
+Enquanto estava em Bangkok, fui inspirado pela cidade e sua atmosfera a embarcar em um novo experimento — pintar em camisetas. Criei vários protótipos de camisetas no estilo cyberpunk e planejo lançar uma coleção completa em 2025. Cada camiseta, assim como as pinturas, será equipada com um passaporte digital carregado na parachain Polkadot por meio do projeto Feecc.
+
+[Passaporte Digital da Primeira Camiseta Cyberpunk com Hash IPFS](https://ipfs.io/ipfs/QmRjvPGaWEqZ7LjhgyZtUBcuccJYJZj2vfcqhzNSfg5mSc)
+
+
+<YouTube id="https://www.youtube.com/watch?v=EmBsWiML-2Y&embeds_referring_euri=https%3A%2F%2Fwww.notion.so%2F&source_ve_path=Mjg2NjY" posterQuality="max"/>
+
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/t-shirt.webp" alt="visualização de camisetas pintadas" />
+
+## Planos Futuros
+
+Essa experiência me inspirou a seguir em frente. Planejo continuar desenvolvendo este projeto, explorando novas possibilidades para a interação entre arte tradicional e tecnologias modernas. Há muitas experiências e ideias emocionantes pela frente, mal posso esperar para ver o que vem a seguir.
+
+Fique ligado para atualizações, novas pinturas e preparativos para o lançamento da nova coleção de produtos na minha conta do Twitter: [@Anna_Wimmer_S](https://twitter.com/Anna_Wimmer_S).

@@ -1,0 +1,142 @@
+---
+
+title: Design Robusto de Mecanismos para o Mercado de RWA de Equipamentos Inteligentes
+
+date: 2024-11-11
+
+published: true
+
+locale: 'pt'
+
+tags: ['Anúncios']
+
+cover_image: /blog/images/ohf-part-1/cover.webp
+
+description: "Financiar o mercado de equipamentos inteligentes em rápida evolução apresenta desafios significativos. Este artigo propõe uma solução que combina gêmeos digitais para monitoramento em tempo real, mercados de previsão para alocação eficiente de capital e contratos de compartilhamento de riscos, todos governados por um modelo DAO transparente para permitir tomadas de decisão ótimas nesta indústria transformadora."
+
+---
+
+Avanços recentes em aprendizado de máquina (ML) abriram um influxo massivo de oportunidades para a robótica automatizar novas tarefas no mundo real. Enquanto a robótica industrial permanece como o segmento dominante em tamanho, os robôs de serviço - aqueles que operam entre as pessoas - têm visto o crescimento mais rápido. O valor estimado em dólares do mercado de robótica de serviços profissionais foi de aproximadamente **USD 21,6 bilhões em 2023,** com uma taxa de crescimento anual composta de 38%. Avanços em ML e a crescente escassez de mão de obra criaram um momento único em que a robótica de serviços está finalmente pronta para implementação generalizada, atendendo às necessidades críticas em diversas indústrias e em nossas vidas diárias.
+
+"Pequenas e médias empresas (PMEs) precisam de acesso fácil à automação" e "Democratizar" a robótica são as principais tendências na robótica agora, [de acordo com a IFR](https://ifr.org/img/worldrobotics/Press_Conference_2024.pdf). Robôs de logística e armazenamento têm sidoliderando essa tendência. Os primeiros lançamentos de rovers de entrega em cidades começaram e está claro que a otimização de rotas é fundamental para manter as margens. A robótica médica viu um grande aumento durante a pandemia e também tem sido uma das principais categorias desde então, com desinfecção e esterilização sendo os principais casos de uso. Os rovers de hospitalidade em hotéis e restaurantes tiveram um grande aumento nos mercados asiáticos e começamos a vê-los mais na Europa e nos EUA. Agricultura, limpeza profissional, inspeções e manutenção, construção e indústrias pesadas, segurança/busca e resgate - a lista de novas áreas de aplicação continua crescendo. Algumas das previsões mais otimistas dizem que podemos ter mais robôs humanoides do que pessoas na próxima década.
+
+Aqui está a lista das cinco principais áreas de aplicação para robótica de serviços profissionais em 2023, de acordo com a Federação Internacional de Robótica:
+
+![card-1.png](/blog/images/ohf-part-1/card-1.png)
+
+No entanto, à medida que essas tecnologias evoluem, abordagens de financiamento tradicionais não conseguem acompanhar os desafios únicos apresentados pelo leasing de equipamentos inteligentes e investimentos em robótica.
+
+**Modelos tradicionais**, como empréstimos ou leasing, muitas vezes são **inadequados para equipamentos inteligentes** devido à rápida obsolescência tecnológica, assimetria de informações e incerteza de desempenho. As tecnologias de robótica e IA evoluem rapidamente, tornando os investimentos de longo prazo arriscados, já que os modelos tradicionais não levam em conta as atualizações ou adaptações frequentes necessárias. Os fabricantes muitas vezes têm mais conhecimento sobre o desempenho do equipamento do que os locatários, levando a ineficiências na alocação de capital ousubavaliação. Além disso, os cronogramas de pagamento fixos não conseguem refletir o valor real do equipamento, especialmente quando o desempenho depende de atualizações de software ou integração. A falta de expertise entre as instituições financeiras na gestão de ativos impulsionados por IA contribui ainda mais para o subinvestimento nessas tecnologias de alto potencial.
+
+Um sistema de alocação de capital melhor é necessário para equipamentos inteligentes e conectados. Um que seja responsivo ao ritmo muito mais rápido de inovação e resiliente às incertezas e informações assimétricas detidas por diferentes participantes do mercado.
+
+
+
+## Princípios do Design de Mecanismos Robustos
+
+O design de mecanismos é um **campo na economia e na teoria dos jogos** que se concentra em projetar regras ou sistemas (mecanismos) para alcançar objetivos específicos, mesmo quando os participantes têm informações privadas e podem agir estrategicamente ou em conluio. Um exemplo clássico é o design de leilões nos quais os licitantes têm valorações privadas dos bens leiloados.
+
+Um desafio chave no design de mecanismos robustos é lidar com **espaços de tipos** - todas as possíveis características dos agentes, como suas preferências e crenças. Como não podemos considerar todos os espaços de tipos possíveis, os mecanismos devem ser projetados para lidar com situações diversas onde os agentes podem não conhecer completamente as preferências ou crenças uns dos outros.
+
+Existem muitos **agentes diferentes** que podem estar diretamente envolvidos no negócio de equipamentos, como **fabricantes de equipamentos originais (OEMs)**, **integradores e provedores de manutenção**, **originadores de ativos**, **seguradoras** e **investidores**. A coordenação entre eles envolve custos significativos de transação, sem mencionar as complexidades adicionais de abordar interesses públicos mais amplos. Apesar da complexidade dessesinterações, temos como objetivo desenvolver um mecanismo robusto que:
+
+- **Garanta a compatibilidade de incentivos** para todos os participantes do mercado
+- **Aloque capital para alcançar eficiência ex-post**
+- **Permaneça resiliente às incertezas** nas condições de mercado e nas crenças dos participantes.
+
+Vou ilustrar isso com um exemplo simples para facilitar o entendimento:
+
+**Compatibilidade de Incentivos**: Imagine que você está jogando um jogo onde precisa dizer o quanto gosta de diferentes doces. Se você falar a verdade, receberá seu doce favorito. A **compatibilidade de incentivos** significa que sua melhor opção é ser honesto, porque dessa forma você receberá o que realmente deseja. Em outras palavras, ser sincero é a escolha mais inteligente.
+
+**Eficiência Ex-Post**: Depois que todos compartilharem seus favoritos, os doces são distribuídos. A **eficiência ex-post** significa que todos acabam com o doce que mais gostam, e nenhum doce é desperdiçado ou dado a alguém que não gosta. Isso garante que todos recebam seu doce favorito, tornando todos o mais felizes possível com o que recebem.
+
+Acredito ser importante usar mecanismos compatíveis com incentivos ao introduzir tecnologias tão importantes, como Robótica e IA Incorporada, que têm o potencial de alterar fundamentalmente a estrutura da sociedade. Garantir que esses mecanismos sejam robustos é essencial para maximizar o benefício social e alcançar resultados justos e eficientes na implementação de tecnologias transformadoras.
+
+
+
+## Design de Mercado de Ativos do Mundo Real (RWA) para Equipamentos Inteligentes
+
+Projetando umO mecanismo de alocação de capital em novas categorias de equipamentos inteligentes é incrivelmente desafiador devido à complexidade e à natureza em constante evolução do campo. No entanto, vejo uma oportunidade para várias estratégias que podem aprimorar a robustez desse mecanismo.
+
+
+### **Gêmeos Digitais e Além** 
+
+Isso está no cerne do que a Robonomics faz. No artigo ["Introdução aos Gêmeos Digitais"](https://robonomics.network/blog/digital-twins-introduction/), explicamos o conceito - representações digitais de entidades ou processos físicos. Os Gêmeos Digitais não são modelos estáticos, mas sistemas dinâmicos que recebem continuamente dados em tempo real de suas contrapartes físicas, permitindo atualizações contínuas e reflexões precisas do estado atual. Esse fluxo contínuo de dados possibilita simulações e análises precisas, facilitando decisões informadas sobre a operação, manutenção e otimização de ativos físicos.
+
+Para capturar e gerenciar efetivamente dados de equipamentos inteligentes, a Robonomics oferece uma ferramenta de código aberto chamada [Otaberu](https://robonomics.network/blog/otaberu-part-1/). Otaberu é projetado para facilitar a rede peer-to-peer (P2P) para dispositivos de borda e robótica, permitindo comunicação contínua e segura entre dispositivos sem extensa configuração de rede. Ele fornece um robusto framework para coleta de dados e gerenciamento de gêmeos digitais.
+
+Os gêmeos digitais servem como camada fundamental para implementar designs de mecanismos robustos para alocação de capital nos mercados de equipamentos inteligentes. Ao fornecer uma representação digital abrangente e em tempo real de ativos físicos, os gêmeos digitais possibilitam o monitoramento preciso e a análise do desempenho dos equipamentos, padrões de uso e necessidades de manutenção. Essa visão detalhada permitePara o desenvolvimento de estratégias sofisticadas que otimizem a alocação de capital, garantindo que os recursos sejam direcionados de forma eficiente para maximizar os retornos e aprimorar a longevidade e produtividade de equipamentos inteligentes.
+
+Os Gêmeos Digitais no contexto da alocação de capital também abrem a conversa sobre robocorporações autônomas, que são guiadas por mecanismos de governança on-chain. Essas entidades autônomas podem executar decisões de forma independente com base em informações de mercado, tornando-as capazes de gerenciar ativos, alocar recursos e até mesmo realizar transações econômicas sem intervenção humana.
+
+
+### **Mercados de Previsão**
+
+Os mercados de previsão e o design robusto de mecanismos têm como objetivo obter informações verídicas de agentes com conhecimento privado para alcançar resultados eficientes. Ao integrar os mercados de previsão em nosso framework de mecanismos, podemos **melhorar a eficiência ex-post** das decisões de alocação de capital, garantindo que as decisões reflitam as informações mais atualizadas e precisas disponíveis, levando a uma melhor alinhamento da alocação de recursos com os resultados realizados.
+
+Os seguintes passos ilustram como o processo poderia ser implementado:
+
+- Estabelecer um mercado de previsão para cada categoria de equipamento inteligente em consideração (rovers de entrega, braços de embalagem, etc.).
+- Permitir que um amplo grupo de partes interessadas negocie contratos com base em métricas de desempenho futuro do equipamento, como porcentagem de tempo de atividade e custos de manutenção.
+- Utilizar o preço de mercado para refletir a crença coletiva sobre se o equipamento atenderá a benchmarks de desempenho específicos ao longo do período de locação.
+- Se o mercado de previsão indicar uma alta probabilidade de que o equipamento terá um bom desempenho (por exemplo, alto tempo de atividade e baixos custos de manutenção), alocar mais capital para a locação desse equipamento.
+- Por outro lado, se o mercado de previsão sugerir um desempenho ruim, reduzir a alocação de capital ouajustar os termos do contrato de arrendamento para mitigar possíveis perdas.
+- Os participantes do mercado de previsão são recompensados ou penalizados dependendo das apostas que fazem.
+
+Os mercados de previsão permitem a agregação eficiente de conhecimento privado de diversas partes interessadas, atualizações em tempo real sobre expectativas de desempenho e adaptação contínua a novas informações, o que reduz a incerteza e resulta em um design de mecanismo mais resiliente.
+
+Quando novas informações se tornam disponíveis, como uma atualização do Gêmeo Digital do equipamento inteligente, os preços do mercado de previsão se ajustam de acordo, permitindo a realocação dinâmica de capital. Isso ajuda a mitigar o risco de investir demais em ativos com baixo desempenho, garantindo que ativos de alto desempenho recebam financiamento adequado a longo prazo.
+
+Ao alinhar a alocação de capital com insights de mercado continuamente atualizados, os subscritores podem tomar decisões mais bem informadas, otimizar suas carteiras e reduzir o risco financeiro.
+
+
+### **Estratégias de Compartilhamento de Risco**
+
+As estratégias de compartilhamento de risco desempenham um papel crucial na reformulação do mecanismo de alocação de capital para equipamentos inteligentes, ajudando a equilibrar os riscos e aumentar a compatibilidade de incentivos. Acordos de arrendamento tradicionais são relativamente rígidos, geralmente dependendo de pagamentos fixos sem considerar o desempenho dinâmico do equipamento ou mudanças inesperadas.
+
+Estratégias como contratos no estilo de seguro ou bônus baseados em desempenho podem ser empregadas para criar uma abordagem mais flexível e adaptativa que compartilha efetivamente os riscos e leva a um design de mecanismo mais robusto.
+
+Por exemplo, um contrato no estilo de seguro pode ajudar a distribuir o risco de tempos de inatividade imprevistos: se os dados do Gêmeo Digital revelarem tempos de inatividade inesperados devido a defeitos de fabricação, parte do pagamento pode ser reembolsada. Dessa forma, o ônus financeiro de problemas operacionais é mitigado, e todos são incentivados amanter o desempenho.
+
+O modelo de pagamento por resultados fornece uma camada adicional de compartilhamento de riscos. O modelo de robôs como serviço (RAAS) está ganhando impulso na robótica, mas ainda é considerado inovador por muitos players tradicionais de financiamento de equipamentos. Ao vincular os pagamentos aos benefícios comerciais gerados pela tecnologia (como o número de caixas movidas em um dia ou quilômetros percorridos na entrega autônoma), os participantes são incentivados a focar na obtenção de resultados tangíveis.
+
+Por exemplo, se um robô de logística aumenta a eficiência do armazém em 20%, uma parte desse ganho de eficiência pode ser usada para financiar o pagamento mensal. Essa abordagem ajuda as empresas a conectar o custo do equipamento ao seu próprio sucesso operacional, reduzindo o risco financeiro durante períodos incertos, quando os resultados podem ser menos previsíveis. A alinhamento aqui é duplo: as empresas se sentem mais seguras de que estão pagando apenas de acordo com o valor que recebem, enquanto os fornecedores são incentivados a fornecer equipamentos que oferecem benefícios comerciais de forma confiável.
+
+Com equipamentos inteligentes que podem gerar dados em tempo real, mecanismos robustos de compartilhamento de riscos se tornam viáveis, permitindo respostas dinâmicas a problemas de desempenho e alinhando incentivos em torno de resultados reais. Essa evolução nas estruturas de locação permite que os participantes do mercado respondam de forma adaptativa às mudanças tecnológicas, garantindo que os riscos e recompensas da adoção de equipamentos avançados sejam compartilhados de forma mais equitativa. Na prática, a relação se torna mais uma parceria do que um arranjo contratual rígido, promovendo a confiança e incentivando a inovação.
+
+
+### **Governança DAO para Originação e Subscrição de Equipamentos**
+
+É crucial estabelecer estruturas de governança que apoiem a alocação eficiente de capital alinhada a incentivos nos próximos 3-5anos à medida que a indústria de robótica se molda.
+
+A Organização Autônoma Descentralizada (DAO) é uma estrutura de governança ideal para gerenciar o processo de subscrição em negociações de equipamentos inteligentes. Seu principal objetivo é determinar quais novas categorias apoiar e como alocar capital de forma eficaz.
+
+Ao aplicar princípios do design de mecanismos robustos, podemos melhorar as chances de direcionar recursos para oportunidades de investimento de alto valor, ao mesmo tempo em que minimizamos os riscos associados à informação assimétrica e incertezas de mercado.
+
+A DAO de Subscritores deve usar mecanismos baseados em leilão para fazer apostas informadas em categorias promissoras. As percepções do mercado de previsão devem aprimorar a precisão das valorações e informar as estratégias de licitação aqui. Um processo autônomo pode então alocar capital de forma ótima, com base na combinação única de crenças mantidas pelos membros da DAO de Subscritores.
+
+À medida que o capital inicial é agrupado na DAO e alocado, um ciclo de feedback baseado em dados de Gêmeos Digitais começa a impulsionar decisões adicionais. Nesta fase, um grupo maior de investidores pode começar a participar por meio de tranches adicionais, oferecendo hedge, produto lastreado em equipamentos para investidores de ativos digitais.
+
+A capacidade de decidir quais negociações são oferecidas à comunidade maior de investidores agrupados é crítica, e as apostas bem-sucedidas devem ser recompensadas adequadamente. Isso é o que cria o valor de fazer parte da governança da DAO por si só, separado da participação lastreada em ativos proporcional ao capital investido em equipamentos inteligentes.
+
+Aqui está um esquema simples de operação para tal DAO:
+
+![card-2.png](/blog/imageso/hf-part-1/card-2.png)
+
+## **Considerações Práticas e Próximos Passos**
+
+Este é apenas o começo. Meu objetivo é criar um mecanismo robusto de alocação de capital que torne os ganhos de produtividade da revolução da robótica acessíveis a todos.
+
+As ideias acima oferecem um bom ponto de partida, mas existem limitações que precisam ser consideradas. Os participantes ainda podem se envolver em comportamentos estratégicos se acreditarem que podem influenciar os preços para ganho pessoal e a liquidez limitada nas fases iniciais pode tornar isso ainda mais fácil. Com liquidez suficiente nos mercados de previsão e de capital, isso pode ser superado, mas nas fases iniciais é importante escolher cuidadosamente os membros do Underwriters DAO.
+
+Passos para lançar um mecanismo robusto de alocação de capital em novas categorias de equipamentos inteligentes:
+
+1. Lançar mercados de previsão para escolher novas categorias
+2. Formar o Underwriters DAO para começar a fazer os primeiros negócios
+3. Usar contratos de compartilhamento de riscos para gerenciar o risco da carteira
+4. Usar dados de Digital Twin para melhorar ainda mais a alocação
+5. Desenvolver uma estrutura para uma participação mais ampla de investidores nos ganhos de produtividade da revolução da robótica
+
+Se você está interessado em fazer parte desta jornada ou apenas quer fazer algumas perguntas - deixe seu e-mail abaixo.
+
+*Vitaly, Evangelista da Robonomics*

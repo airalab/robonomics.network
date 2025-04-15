@@ -1,0 +1,142 @@
+---
+title: Robobank. Acceptez n'importe quel jeton Polkadot dans les services d'automatisation
+date: 2021-03-26
+published: true
+locale: 'fr'
+cover_image: /blog/images/robobank-introduction/robobank-introduction-cover.jpg
+description: "Les développeurs de Robonomics ont trouvé une solution basée sur l'architecture Polkadot qui permettra à n'importe quelle parachain d'accéder à la gestion des appareils IoT avec paiement en jeton natif"
+abstract: "Les développeurs de Robonomics ont trouvé une solution basée sur l'architecture Polkadot qui permettra à n'importe quelle parachain d'accéder à la gestion des appareils IoT avec paiement en jeton natif"
+tags: ['Robonomics parachain', 'jeton XRT', "Cas d'utilisation"]
+---
+
+<section class="animate-inside">
+
+## Acceptez n'importe quel jeton Polkadot dans les services d'automatisation
+
+</section>
+
+<section class="animate-inside">
+
+!["Robobank de l'introduction de Robonomics, bannière 1"](/blog/images/robobank-introduction/robobank-introduction-banner-1.jpg)
+
+</section>
+
+Les distributeurs automatiques, le covoiturage, les appartements intelligents Airbnb, les bureaux "Google"... seront prêts à exécuter des services avec des paiements en jetons de l'écosystème Polkadot cette année.
+
+Les développeurs de Robonomics ont trouvé une solution basée sur l'architecture Polkadot qui permettra à n'importe quelle parachain d'accéder à la gestion des appareils IoT avec paiement en jeton natif. Chaque parachain qui ajoute une succursale de Robobank à son exécution pourra utiliser les fonctions de lancement d'un appareil intelligent fonctionnant sous le contrôle de la parachain Robonomics.
+
+
+Les utilisateurs n'auront pas à payer de commissions en dehors du jeton natif de la parachain - tout paiement effectué via Robobank fournira une exécution gratuite d'un service automatisé / lancement d'un appareil IoT pour l'utilisateur. La seule chose dont le propriétaire du service automatisé aura besoin est un abonnement actif de l'appareil IoT pour utiliser la parachain Robonomics.
+
+<section class="animate-inside">
+
+## Polkadot pour l'IoT. Modules Robonomics avec support XCMP
+
+</section>
+
+<section class="animate-inside">
+
+!["Robobank de l'introduction de Robonomics, bannière 2"](/blog/images/robobank-introduction/robobank-introduction-banner-2.jpg)
+
+</section>
+
+Pour aider l'écosystème Polkadot à évoluer vers l'IoT, Robonomics va fournir aux parachains la plus grande intégration possible avec les appareils les plus populaires.les années à venir.
+
+
+Si Robonomics est facilement disponible, alors la fonctionnalité de la parachain s'étendra dans le sens de l'automatisation des services qui nous entourent dans le monde réel :
+
+
+* Acala pourra intégrer ses instruments DeFI dans les terminaux et les points de paiement.
+* Plasm et Moonbeam pourront contrôler la mise en œuvre des termes d'un contrat intelligent dans les foyers modernes, les bureaux, les voitures et tout autre oracle IoT.
+* Darwinia pourra émettre des jetons NFT liés au journal de l'imprimante 3D, au dessin du robot ou à la composition musicale générée par l'IA.
+* Phala pourra augmenter le niveau de confidentialité des applications utilisateur, avec lesquelles nous contrôlons les appareils IoT dans notre espace personnel.
+* etc.
+
+
+Ce ne sont que des exemples qui sont venus à l'esprit de l'auteur, et vous pouvez essayer de continuer la liste vous-même en pensant aux services pour les villes intelligentes.
+
+<section class="animate-inside">
+
+## Robobank est la première fonctionnalité de Robonomics utilisant XCMP
+
+</section>
+
+
+Une parachain séparée fournit des fonctions spécifiques, et le jeton natif est utilisé pour payer les commissions pour l'exécution de ces fonctions sur le réseau Polkadot.
+
+Les créateurs de la parachain limitent les capacités de leur segment Polkadot pour augmenter les performances, tandis que la présence d'autres parachains et la possibilité d'envoyer une transaction d'une parachain à une autre en utilisant [XCMP](https://wiki.polkadot.network/docs/en/learn-crosschain) peuvent atteindre un effet de réseau.
+
+Chaque parachain construit sa propre ['runtime' à partir de modules appelés 'pallet'](https://substrate.dev/docs/en/knowledgebase/runtime/).
+
+<section class="animate-inside">
+
+!["Robobank de l'introduction à Robonomics, 3"](/blog/images/robobank-introduction/robobank-introduction-3.png)
+
+*En utilisant les termes d'architecture Ethereum, le runtime est une machine virtuelle distincte construite pour les tâches de seulement quelques contrats intelligents.*
+
+</section>
+
+En résumant les fonctions impliquées dans une parachain séparée, nous obtenons une solution complète avec des économies de ressources pour des capacités "pas les plus importantes" pour un projet spécifique.
+
+<section class="animate-inside">
+
+> Les parachains sont similaires aux shards, mais chacun est assemblé à sa manière.
+
+</section>
+
+En étant dans [sécurité partagée](https://wiki.polkadot.network/docs/en/learn-security#shared-security), les parachains peuvent créer des connexions de confiance entre eux. Cette approche nous protège de la peur d'être dansun bac à sable cool mais vide.
+
+La présence de la parachain Robonomics permettra à d'autres parachains Polkadot d'étendre les fonctionnalités des jetons natifs en ajoutant, au lieu de la fonctionnalité complète et plutôt complexe de travail avec des appareils IoT à votre machine virtuelle (c'est-à-dire le runtime), des fonctions telles que : payer pour le lancement d'un appareil IoT ou recevoir des données de l'appareil pendant le processus de paiement.
+
+Ensuite, nous examinerons un exemple d'architecture utilisant plusieurs parachains Polkadot afin d'étendre les capacités de tout projet grâce à des solutions d'intégration d'infrastructure basées sur XCMP.
+
+<section class="animate-inside">
+
+## Architecture de Robobank
+
+</section>
+
+<section class="animate-inside">
+
+!["Robobank de l'introduction de Robonomics, infographie"](/blog/images/robobank-introduction/robobank-introduction-infographics.png)
+
+</section>
+
+Considérons un exemple de service Uber vraiment décentralisé.
+
+En mettant en œuvre Uber Parachain, les développeurs pourraient se concentrer sur le système de notation des conducteurs, le système de traitement des demandes des utilisateurs en mode P2P, et d'autres problèmes de service client, sans se soucier de la nécessité de prendre en charge simultanément la composante IoT de leurs applications - Robonomics aidera avec l'IoT. Uber Parachain n'aura besoin que d'intégrer le paquet Robobank dans son runtime pour fournir aux clients l'accès à la voiture après paiement et recevoir directement les rapports de voyage des modules IoT de la voiture.
+
+### Jetons un œil au diagramme ci-dessus et mettons en évidence les points importants :
+
+* **Jeton Polkadot** est un jeton natif de la parachain, implémenté par exemple à travers le paquet d'actifs.
+* **Services Web Robonomics** est un paquet à l'intérieur de la parachain Robonomics, qui implémente la capacité de connecter un appareil IoT sous le contrôle du réseau Polkadot sur un modèle d'abonnement mensuel avec une bande passante garantie.
+* **Application IoT** est une application personnalisée pour automatiser la commande de services, dans laquelle le jeton natif de la parachain est utilisé pour le paiement. Dans l'exemple avec Uber Parachain, ce serait une application téléphonique familière pour les résidents de la ville pour commander un taxi ou rechercher un service de covoiturage.
+* **L'icône de la voiture** est un appareil IoT agissant en tant que partie prenante d'un service automatisé, fournissant partiellement ou complètement un service. Dans l'exemple, ce serait une voiture, et en aucun cas un conducteur ! C'est la voiture qui serait la partie fournissant l'accès à l'ouverture des portes de la voiture et générant un rapport de voyage avec des données de télémétrie.
+* **Agence Robobank**le module Robonomics pour inclusion dans le réseau de parachains Polkadot.
+* **Robobank Tower** est le module Robonomics qui s'exécute en permanence dans le runtime de la parachain Robonomics et peut lancer des appareils IoT avec un abonnement actif basé sur des transactions de transfert de jetons dans les parachains voisines.
+
+Comme le montre le diagramme et la description des modules, les parachains doivent installer Robobank Branch, ce qui peut être effectué en mode de mise à jour de la parachain [update mode](https://wiki.polkadot.network/docs/en/build-protocol-info#runtime-upgrades) sans effectuer de hard fork.
+
+Maintenant, examinons un cas d'utilisation étape par étape pour représenter le cycle complet du module Robobank après l'activation de Robobank Branch par la parachain Polkadot.
+
+1. `PaymentToRobot()` — cette fonction peut être vue entre autres dans la parachain après l'activation du module Robobank Branch. Suite à l'envoi d'une transaction par un utilisateur depuis une application IoT, Robobank Branch recevra des données sur le montant du paiement et l'appareil qui doit être lancé pour l'exécution.
+2. `TransferToRobobank()` – assurera le transfert des fonds du compte utilisateur au compte Robobank avec la possibilité de retirer le montant accumulé en une seule transaction à partir de l'appareil IoT. Par exemple, après avoir effectué 10 trajets ou travaillé pendant 5 heures, la voiture peut générer des transactions automatiques pour transférer des fonds du compte Robobank à l'adresse de l'échange de crypto-monnaie. Il n'y a pas de mouvement réel de jetons d'une parachain à une autre.
+3. `SignalToRobonomics()` — sera une fonction utilisant XCMP. Il est important de noter que nous serons en mesure de garantir que les messages envoyés au nom de Robobank Branch sont identifiés et marqués comme fiables. Quelque chose d'analogue à la communication entre les contrats intelligents dans le réseau Ethereum.
+4. `SignalFromRobonomicsBranch()`  — le message envoyé à l'étape précédente sera envoyé à travers la chaîne de relais pour traitement au nœud central du module Robobank Tower. Après avoir reçu un message de la parachain, Robobank Tower enregistrera la demande de lancement de l'appareil de paiement dans la parachain Robonomics, éliminant ainsi le besoin de stocker le journal des paiements du côté de chaque parachain qui utilise le module Robobank Branch. En fait, les succursales de Robobank effectueront les fonctions de comptes correspondants et seront subordonnées à la succursale principale dans leforme d'une Tour, dans laquelle sera conservée toute l'histoire de l'exécution du service automatisé avec paiement dans la parachain voisine.
+5. `FreeTXtoRWS()` — deux modules de la parachain Robonomics peuvent se faire confiance mutuellement, tout comme les contrats intelligents sur Ethereum. Si nous pouvons garantir la confiance dans la demande de la succursale de Robobank à la Tour de Robobank, alors de la même manière, nous pouvons fournir la possibilité de lancer un appareil avec un abonnement actif non pas à partir de l'adresse de l'appareil, mais sur la base du paiement en jetons.
+6. `Launch || Datalog` — la combinaison de ces fonctions permettra, par exemple, de lancer un service pour exécution en indiquant l'utilisateur qui aura accès à la porte arrière de la voiture dans l'application Uber Parachain, ou d'enregistrer les données nécessaires à la fourniture du service.
+7. Les étapes 7 à 10 mettent en œuvre la possibilité décrite à l'étape 2. `TransferToRobobank()` pour vider périodiquement le compte de votre appareil IoT en envoyant une transaction dans la parachain Robonomics directement à la Tour de Robobank.
+
+En fin de compte, nous avons examiné l'architecture d'une solution utilisant des transactions inter-chaînes pour étendre les capacités d'un projet séparé aux dépens d'un écosystème commun.
+
+<section class="animate-inside">
+
+## État actuel et plans
+
+</section>
+
+Après les premiers tests sur le réseau Rococo, les développeurs publieront des instructions pour la mise en œuvre et l'utilisation du module Rocobank sur le [wiki.robonomics.network](https://wiki.robonomics.network/)
+
+Notre objectif principal est de préparer le module Robobank pour le lancement de parachains sur le réseau Kusama à l'été 2021.
+
+Pour en savoir plus, restez en contact sur [Twitter](https://twitter.com/AIRA_Robonomics).

@@ -1,0 +1,127 @@
+---
+import { getLocale } from "astro-i18n-aut";
+const locale = getLocale(Astro.url);
+
+const generatePath = (path) => {
+  return locale === 'en' ? path : `/${locale}${path}`
+}
+---
+
+
+<nav class="navigation">
+  <ul aria-label="Use it">
+    <li><a aria-label="Robonomics smart devices" href={generatePath("/devices/")}>{$tr('Smart devices')}</a></li>
+    <li><a aria-label="Robonomics dapp" href="https://robonomics.app/" target="_blank">{$tr('dapp')}</a></li>
+    <li><a aria-label="Robonomics merch" href={generatePath("/merch/")}>{$tr('Wearable merch')}</a></li>
+  </ul>
+
+  <ul aria-label="Learn">
+    <li><a aria-label="Robonomics academy" href="https://robonomics.academy/" target="_blank">{$tr('Academy')}</a></li>
+    <li><a aria-label="Robonomics wiki" href="https://wiki.robonomics.network/" target="_blank">{$tr('Wiki')}</a></li>
+  </ul>
+
+  <ul aria-label="Explore website">
+    <li><a aria-label="about XRT" href={generatePath("/xrt/")}>{$tr('Tokenomics')}</a></li>
+    <li><a aria-label="Robonomics papers" href={generatePath("/papers/")}>{$tr('Science & White paper')}</a></li>
+    <!-- <li><a aria-label="use cases" href="/cases/">Cases</a></li> -->
+    <li><a aria-label="timeline" href={generatePath("/timeline/")}>{$tr('Timeline')}</a></li>
+    <li><a aria-label="assets" href={generatePath("/logos-and-assets/")}>{$tr('Brand assets')}</a></li>
+    <li><a aria-label="wallpapers" href={generatePath("/wallpapers/")}>{$tr('Wallpapers')}</a></li>
+    <li><a aria-label="Home assistant themes" href={generatePath("/home-assistant-themes/")}>{$tr('Home assistant themes')}</a></li>
+    <li><a aria-label="Robonomics NFT" href={generatePath("/nft/")}>{$tr('NFT')}</a></li>
+    <li><a aria-label="books" href={generatePath("/books/")}>{$tr('Books')}</a></li>
+    <li><a aria-label="blog" href={generatePath("/blog/")}>{$tr('Blog')}</a></li>
+    <li><a aria-label="contact us" href={generatePath("/contact/")}>{$tr('Contacts')}</a></li>
+  </ul>
+</nav>
+
+<style>
+  .navigation {
+    display: flex;
+    font-size: 80%;
+    font-variation-settings: var(--font-flex-bold);
+    gap: var(--space);
+    line-height: 1.2;
+    padding: var(--space) var(--layout-sidepadding);
+    text-transform: uppercase;
+    min-height: 23ch;
+  }
+
+  .navigation a {
+    display: block;
+    margin-bottom: calc(var(--space) * .5);
+    color: var(--text-color);
+    font-size: 80%;
+    font-variation-settings: var(--font-flex-bold);
+    text-decoration: underline;
+  }
+
+  .navigation a:hover {
+    color: var(--color-link);
+  }
+
+  ul {
+    position: relative;
+    margin: 0;
+  }
+
+  ul li {
+    padding-left: var(--space);
+    /* margin-bottom: calc(var(--space) * 0.3); */
+    margin-bottom: 0;
+    break-inside: avoid-column;
+  }
+
+  ul:before {
+    content: attr(aria-label);
+    position: absolute;
+    writing-mode: vertical-lr;
+    writing-mode: sideways-lr;
+    white-space: nowrap;
+
+    color: var(--rb-color-light-gray);
+  }
+
+  ul:nth-child(1) a {
+    white-space: nowrap;
+  }
+
+  ul:nth-child(3) {
+    column-count: 4;
+    gap: var(--space);
+  }
+
+  @media screen and (width > 1400px) {
+    ul:nth-child(3) {
+      column-count: 5;
+    }
+  }
+
+  @media screen and (width < 1200px) {
+    ul:nth-child(3) {
+      column-count: 3;
+    }
+  }
+
+  @media screen and (width < 900px) {
+    ul:nth-child(3) {
+      column-count: 2;
+    }
+  }
+
+  @media screen and (width < 700px) {
+    ul:nth-child(3) {
+      column-count: 1;
+    }
+  }
+
+  @media screen and (width < 500px) {
+    .navigation {
+      flex-direction: column;
+    }
+
+    ul li {
+      padding-left: calc(var(--space) * 2);
+    }
+  }
+</style>

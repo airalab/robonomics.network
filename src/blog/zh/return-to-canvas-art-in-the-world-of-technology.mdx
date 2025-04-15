@@ -1,0 +1,90 @@
+---
+title: '艺术、赛博朋克与WEB3：在科技世界中重返画布艺术'
+date: 2025-01-10
+published: true
+locale: 'zh'
+cover_image: '/blog/images/return-to-canvas-art-in-the-world-of-technology/cover.webp'
+description: "你们知道我是Robonomics的设计师，但今年我以艺术家的身份回归。人工智能在高水平上真正擅长这一点。但我有一个问题：在科技世界中，是否仍有空间留给真正的艺术家？为了找到答案，我决定进行一项实验。"
+abstract: "你好！你们知道我是Robonomics的设计师，但今年我以艺术家的身份回归。我长期以来一直在观察人工智能的迅速发展以及许多人如何利用它来创作图像。人工智能在高水平上真正擅长这一点。但我有一个问题：在科技世界中，是否仍有空间留给真正的艺术家？为了找到答案，我决定进行一项实验。"
+abstractAuthor: '安娜·维默-萨维诺娃'
+tags: ['Web3']
+---
+
+## 绘画、赛博朋克和Web3：它是如何运作的
+
+我的实验发生在今年十一月的曼谷，在两个重要活动——Polkadot Sub0 Reset和Devcon期间。
+
+这些绘画的主题是我们这个时代的赛博朋克，这是我们团队今天的一个相关方向。在我的工作中，我汲取了灵感。从威廉·吉布森的小说《神经漫游者》、艾萨克·阿西莫夫的《机器人三大定律》，以及对现代世界和未来的赛博朋克想象中，我构想了赛博朋克在现代世界和未来可能的样子。我的愿景受到曼谷的全景影响——这座城市本身就感觉像一个未来之城，完美地捕捉了赛博朋克的氛围。
+
+绘画创作过程被实时录制在视频中。这些录像被上传到IPFS，CID存储在我们的Feecc项目的Robonomics平行链上，为每幅画创建了一个数字护照。这种方法确保了完全透明性：任何人都可以看到绘画过程的每个阶段——从第一笔触到最后的润色。您可以在[这篇文章](/blog/feecc-recap/)中了解更多关于Feecc项目及其功能的信息。
+
+我们还在绘画上添加了温度和湿度传感器，记录了创作过程中的环境数据。这些数据被存储在数字护照中，并在绘画完成后继续更新。新主人可以激活传感器，使其继续向Robonomics平行链发送数据，使艺术品成为他们数字生态系统的一部分。
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/feecc-art.webp" alt="绘画过程" />
+
+## 在艺术实验中描述Feecc过程
+
+1. **过程开始：**  
+    当按下“开始”按钮时，设备的临时内存被清除，系统开始记录新数据。此时，绘画的标题和描述被保存，连接的传感器（如温度和湿度）开始收集数据。
+
+2. **延时录制：**  
+   与数据记录同时进行，以60倍速开始延时录制，捕捉绘画创作过程。
+
+3. **数据传输：**  
+   在整个绘画过程中，传感器直接将数据传输到Robonomics平行链和Feecc平台。这标志着使用ESP32微控制器向Robonomics平行链（可能是整个Dotsama生态系统）发送的第一笔公共交易。相机在此阶段继续录制延时录像。
+
+4. **完成：**  
+   当按下“完成”按钮时，系统完成录制：  
+   - 生成的延时录像和数据图被上传到IPFS网络，并通过Crust固定以进行长期存储和访问。  
+   - 所有标识符，包括绘画的标题和描述，都记录在数字护照模板中，并上传到IPFS，CID存储在Robonomics平行链上。  
+   - 链接到交易和IPFS上的数字护照的QR码会自动打印并附在绘画上，使任何人都能访问数据。
+
+5. **长期传感器操作：**  
+   绘画过程结束后完成后，传感器可以继续向网络传输数据，持续提供有关绘画存储条件的信息。
+
+这个过程展示了物联网和区块链技术如何融入艺术，打造一个透明且长期的系统，用于记录创意作品。
+
+### 带有IPFS哈希的数字绘画护照：
+
+1. [绘画 - 月球密码](https://ipfs.io/ipfs/QmZDD4kgaD2f7zWaJibKjDmCkh73aodLkNb2x96h4GfxDx)  
+2. [绘画 - 数字时代的信任](https://ipfs.io/ipfs/QmUwGQWSouxCtnHYtLep59waerVJWotVUmzcxiepvTwUeJ)  
+3. [绘画 - 网络脉冲](https://ipfs.io/ipfs/Qme36C3Gmp1fRvME2sSypfSTSv4Kj9u3za2hhymy7oeqw6)  
+4. [绘画 - 网络幻觉](https://ipfs.io/ipfs/QmTaKjMxrrPU7M4iCubHnWi6TfrxAXL3iQ6rQ3mev69gjz)  
+5. [绘画 - **自由的演变：以太坊之路**](https://ipfs.io/ipfs/QmPBYuLFTw9sGHigZzQZ4LQHSZtUvgMfnFnRXFUi1nob5Y)  
+
+
+## 带智能照明的移动艺术家工作室
+
+在这个实验中，Robonomics工程团队帮助我创建了一个配备智能照明自动化的移动艺术家工作室，作为我们[Web3智能家居](https://wiki.robonomics.network/docs/robonomics-smart-home-overview/)项目的一部分。这个设置成为了一个真正的支持系统。  
+
+我不再需要不断起身调整照明或根据白天时间移动灯具。智能照明自动适应，创造出理想的工作条件。这让我能够专注于创作过程，没有中断。  
+
+对于一个艺术家来说，这尤为重要：照明直接影响颜色、细节和绘画的整体氛围的感知。有了这种支持，我的创作过程变得更加舒适和高效。  
+
+
+## 我发现的：艺术与技术共存
+
+这个实验取得了成功。人们的反应表明他们喜欢观察绘画过程，见证现场艺术家的工作。这是一个重要的信号：尽管人工智能不断发展，真正的艺术和创造力仍然具有价值。  
+
+我相信艺术和技术可以和谐共存，相互丰富和补充。我的实验表明，数字化解决方案可以拓展创意的边界，而不是取代它。
+
+这种方法对于艺术画廊和收藏家也可能很有价值，他们会精心保存自己的绘画作品，并希望获得关于存储条件的透明数据。温度和湿度传感器可以在运输、画廊展览或新主人家中持续监测艺术品。这种方法有助于确保艺术品得到最大程度的保存，延长其寿命。
+
+<YouTube id="https://www.youtube.com/watch?v=Rwp2bx1azzU&embeds_referring_euri=https%3A%2F%2Fwww.notion.so%2F&source_ve_path=Mjg2NjY" posterQuality="max"/>
+
+
+## 新实验：赛博朋克风格T恤
+
+在曼谷期间，我受到这座城市及其氛围的启发，开始了一项新的实验——在T恤上绘画。我设计了几款赛博朋克风格的原型T恤，并计划在2025年推出一整套系列。每件T恤，就像绘画一样，都将配备一个数字护照，通过Feecc项目上传到Polkadot平行链。
+
+[第一款赛博朋克T恤的数字护照，附带IPFS哈希](https://ipfs.io/ipfs/QmRjvPGaWEqZ7LjhgyZtUBcuccJYJZj2vfcqhzNSfg5mSc)
+
+<YouTube id="https://www.youtube.com/watch?v=EmBsWiML-2Y&embeds_referring_euri=https%3A%2F%2Fwww.notion.so%2F&source_ve_path=Mjg2NjY" posterQuality="max"/>
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/t-shirt.webp" alt="绘制T恤的预览" />
+
+## 未来计划
+
+这次经历激发了我继续前进的动力。我计划继续开发这个项目，探索传统艺术与现代技术之间的新可能性。未来有许多令人兴奋的实验和想法，我迫不及待地想看到接下来会发生什么。
+
+敬请关注我的Twitter更新、新绘画作品以及新商品系列的准备工作：[@Anna_Wimmer_S](https://twitter.com/Anna_Wimmer_S)。

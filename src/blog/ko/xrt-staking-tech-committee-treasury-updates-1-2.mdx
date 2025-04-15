@@ -1,0 +1,126 @@
+---
+title: "버전 1.2로 업데이트: 스테이킹, 기술 위원회 및 자금"
+date: 2021-09-17
+published: true
+locale: 'ko'
+cover_image: /blog/images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
+description: "프로젝트 개발자들은 Robonomics 파라체인의 운영에 중요한 2가지 변경 사항을 시행했습니다. 첫 번째는 XRT 스테이킹의 포함이며, 두 번째는 최초의 온체인 거버넌스 메커니즘을 시작했습니다."
+abstract: "프로젝트 개발자들은 Robonomics 파라체인의 운영에 중요한 2가지 변경 사항을 시행했습니다. 첫 번째는 XRT 스테이킹의 포함이며, 두 번째는 최초의 온체인 거버넌스 메커니즘을 시작했습니다."
+tags: ['Robonomics 파라체인', 'XRT 토큰', 'RWS 토큰', '스테이킹', '새로운 릴리스']
+---
+
+## 업데이트 1.1: 스테이킹
+
+### 이론
+
+분산 PoS 네트워크는 검증자들과 네트워크에 참여하는 모든 토큰 홀더들의 자금을 잠그는 것으로 보안을 보장합니다. 검증자와 토큰 홀더에게 보상을 주기 위해 일반적으로 인플레이션 + 블록의 모든 수수료에 기반한 유사한 PoW 보상 모델이 사용됩니다. 이것이 Polkadot/Kusama에서 NPoS가 구현된 방식입니다.
+
+> 특히, 이더리움과 Polkadot은 보상 모델에 추가 조건을 포함합니다. 인플레이션 목표 설정, 수수료를 여러 방향으로 분할하거나 수수료의 일정 비율을 소각하는 것은 성숙한 네트워크와 최신 네트워크가 자신들의 구현에서 실험 중인 추가 설정입니다.
+
+파라체인은 핵심 기능에서 스테이킹이 필요하지 않습니다. 파라체인은 릴레이 체인 검증자들에 의해 보호됩니다. 이는 프로젝트들이 경매 중 슬롯을 경쟁하는 공유 보안 모델입니다.
+
+#### 스테이킹 재발명
+
+"대중의 지혜"를 활용하고 커뮤니티에 작업을 할당하려는 파라체인은 스테이킹을 재발명해야 합니다. Robonomics에서 우리가 한 일입니다. Robonomics 파라체인의 스테이킹 아키텍처는 IoT 시장을 위해 해결하는 블록체인 문제에 고유하며 특별합니다. 스마트 기기의 기본 기능을 지불하는 두 가지 방법을 제공합니다: 거래당 또는 월 구독료로.
+
+거래당 지불은 자명합니다. 구독 기능은 약간의 설명이 필요합니다.일부 IoT 사용 사례는 주기적으로 클라우드 기능에 액세스해야 하며, 이러한 기능이 실패하는 것은 매우 바람직하지 않습니다. 가스 가격 메커니즘은 이 문제를 완전히 해결하지 못했으며, 특히 모든 블록에서 거래를 보장하는 것에 관련하여 그렇습니다. 이를 염두에 두고, 우리는 구독 모델을 사용하여 보증 할당량을 관리하기 위해 스테이킹 메커니즘을 사용하는 아이디어를 고안했습니다. Substrate 쪽에서는, 영 가중치 트랜잭션 우선 처리를 기반으로 한 작은 속임수를 사용했습니다. IoT 장치가 구독을 활성화하면, 해당하는 모든 트랜잭션은 물론 다른 영 가중치 트랜잭션을 제외하고 다른 모든 트랜잭션보다 우선순위를 갖게 됩니다. 네트워크의 스테이킹 풀에 더 많은 토큰이 들어가면, 사용자에게 더 많은 구독이 제공될 것입니다.
+
+<TextCard>
+
+*예를 들어:*
+
+총 토큰: 2,000,000 XRT;
+스테이킹된 토큰: 800,000 XRT;
+패러체인 대역폭: 블록당 5400개의 트랜잭션.
+
+이로써 우리는 IoT 장치에 대한 매월 2,160개의 구독을 얻을 수 있습니다.
+
+</TextCard>
+
+저는 "자동 구독 경매"라는 별도의 기사에서 구독과 지불 풀이 어떻게 분배될지에 대해 쓸 것입니다.
+
+### 실용적인 사용
+
+시작할 준비가 된 DApp: https://robonomics.app/#/staking/
+
+![로보노믹스 DApp에서 XRT 스테이킹, 새로운 본딩 화면](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
+
+첫 번째 트랜잭션 이후에는 다음과 같은 통계 표를 받게 될 것입니다:
+
+![로보노믹스 DApp에서 XRT 스테이킹, 본딩 목록 화면](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
+
+패러체인에서 계정 간 토큰 전송은 계속 비활성화될 것입니다. 토큰 전송 기능은 패러체인이 Kusama 네트워크에서 활성화된 후에 가능해질 것입니다.
+
+### 관찰
+
+[블록 # 235,047](https://robonomics.subscan.io/block/235047)을 기준으로, 약 천 개의 계정이 있으며, 가장 큰 토큰 보유자는 재정입니다. 재정 자금은 스테이킹에 참여하지 않을 것입니다.
+
+네트워크의 나머지 계정들은 ERC-20 토큰 보유자들이 Exodus DApp을 사용하거나 Kusama 경매의 첫 번째 크라우드 대출 캠페인에 참여한 결과로 나타났습니다.
+
+Subscan과의 통합 덕분에 로보노믹스 패러체인의 XRT 보유자들은 사용할 수 있습니다.이 멋진 인터페이스를 확인하세요: https://robonomics.subscan.io/account
+
+![Robonomics Subscan.io 계정 화면](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
+
+Exodus DApp 인터페이스에서는 이더리움 블록체인에서 Robonomics 파라체인으로의 이주 통계를 확인할 수 있습니다: https://robonomics.app/#/exodus
+
+![Robonomics dapp에서 이더리움 블록체인에서 Robonomics 파라체인으로의 XRT](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
+
+### 스테이킹 기능의 추가 개선
+
+개발자들의 현재 작업은 토큰 홀더들을 위한 기본 스테이킹 메커니즘을 실제 조건에서 테스트하는 것입니다: 스테이킹 풀에 추가, 보상 누적, 그리고 7일 내에 토큰 언프리징.
+
+*커뮤니티를 위한 흥미로운 작업:* Exodus 이주 참가자들을 위한 연간 10% 보상과 크라우드 대출 캠페인 참가자들을 위한 연간 50% 보상을 고려하여 보상 계산기의 정확성을 확인해보세요.
+
+1.3 RWS 업데이트 이후, 스테이킹 메커니즘은 네트워크에서 활성화될 것입니다. RWS 업데이트는 디지털 트윈에 대한 구독 기능을 추가하며 대역폭 할당의 도전이 의미를 갖게 할 것입니다. 따라서 나중에 스테이킹 메커니즘의 정확성을 완전히 평가할 수 있을 것입니다.
+
+## 업데이트 1.2: 기술 위원회 및 자금
+
+1.1 업데이트와 마찬가지로, 이것은 이미 파라체인 작업에 구현되었습니다. 기술 위원회는 지난 2년 동안 파라체인 개발에 참여한 6명의 기술 전문가로 구성되어 있으며, DAO는 ERC-20 토큰을 Exodus DApp을 통해 태우면서 692,500 XRT를 파라체인 자금의 잔고로 이체했습니다. 네트워크의 자금과 기술 위원회는 파라체인 개발자들이 지금까지 구현한 온체인 거버넌스의 첫 요소들입니다. 각각에 대한 자세한 내용은 아래에서 확인할 수 있습니다.
+
+### 네트워크 기술 위원회
+
+기술 위원회 포털은 다음에서 이용 가능합니다: https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/techcomm
+
+![로보노믹스 파라체인의 기술 위원회 포털](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
+
+2021년 9월 15일 기준으로 추가된 기술 위원회의 여섯 명 구성원을 확인할 수 있습니다: 2명의 데브옵스 전문가, 소프트웨어 아키텍트, 주요 서브스트레이트 구현 개발자, 고급 로봇 공학자 및 고급 DApp 개발자입니다.
+기술 위원회는 GitHub에서 후속 릴리스부터 파라체인 런타임 코드를 업데이트할 예정입니다.
+
+이 위원회의 작업에 대해 더 자세히 알아보려면 Polkadot 위키를 참조하세요: https://wiki.polkadot.network/docs/learn-governance#technical-committee
+
+로보노믹스 파라체인이 Kusama에 런칭되기 전까지 프로젝트 개발자들은 의회나 국민투표를 추가하여 온체인 거버넌스를 확장하지 않을 것입니다. 파라체인이 성공적으로 런칭된 후에는 새로운 프로젝트 참가자들이 네트워크 운영에 영향을 미칠 수 있는 새로운 기회에 대해 재고할 것입니다.
+
+### 자금
+
+파라체인 자금은 여기에서 확인할 수 있습니다: https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/treasury
+
+![로보노믹스 파라체인의 자금](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
+
+지난 한 달 동안, 여름 2021년 첫 번째 로보노믹스 크라우드 대출 캠페인 참가자들의 잔액으로부터 약 100k XRT가 분배되었습니다. 이러한 작업은 요청으로 표시되지 않고 Sudo를 통해 처리되었습니다. 이제 기술 위원회가 생겼으므로 요청은 투표를 거쳐 진행될 것입니다.
+
+또한 자금의 흥미로운 메커니즘인 주기적인 잔액 소각에 대해 언급할 가치가 있습니다. 자금의 작업에 대해 더 자세히 알아보려면 Polkadot 위키를 참조하세요: https://wiki.polkadot.network/docs/learn-treasury
+
+커뮤니티는 파라체인 자금이 Polkadot 생태계에서 로보노믹스의 개발에 유용하거나 IoT 시장에서 사용자를 유치하는 데 도움이 될 작업을 위해 XRT를 할당하도록 요청할 수 있습니다.
+
+### 결론
+
+곧 다가올 많은 흥미로운 업데이트들이 있을 것이며, 각각이 커뮤니티에게 새로운 기회를 제공할 것입니다. 프로젝트의 커뮤니티 개발 프로그램에 대한 업데이트는 곧 발표될 예정이며, 커뮤니티에게 무엇이 제공될지에 대한 더 많은 정보가 포함될 것입니다.다음 6개월 동안.
+
+<TextCard image="/avatars/Sergei-Lonshakov.jpg" back="transparent" imageSize="big">
+
+EnsRationis
+
+Robonomics 네트워크 아키텍트
+
+element: @ensrationis:robonomics.network
+
+</TextCard>
+
+
+<TextCard icon="/icons/icon-notification.png" link="https://twitter.com/AIRA_Robonomics">
+
+### 트위터에 참여하세요
+
+계속해서 업데이트를 받아보세요
+
+</TextCard>

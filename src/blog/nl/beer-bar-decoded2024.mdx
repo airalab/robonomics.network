@@ -1,0 +1,233 @@
+---
+title: Het Experiment Met Bierbar op Polkadot Decoded 2024
+date: 2024-07-19
+published: true
+locale: 'nl'
+tags: ['Evenementen', 'Polkadot', 'Web3', ]
+cover_image: /blog/images/beer-bar-decoded2024/cover.png
+description: 'Vorige week bezocht het Robonomics-team het evenement Polkadot Decoded in Brussel. Ze deden een experiment om verschillende metingen van sensoren rond de Free Beer Stand van ChaosDAO te meten. Het team wilde zien hoeveel mensen er aanwezig waren en hoe geïnteresseerd ze waren in de bar. Lees dit artikel om erachter te komen wat ze ontdekten.'
+---
+
+Vorige week bezocht het Robonomics-team het evenement Polkadot Decoded in Brussel. Ze deden een experiment om verschillende metingen van sensoren rond de [**Free Beer Stand van ChaosDAO**](https://polkadot.polkassembly.io/referenda/821) te meten. Het team wilde zien hoeveel mensen er aanwezig waren en hoe geïnteresseerd ze waren in de bar. Lees dit artikel om erachter te komen wat ze ontdekten.
+
+## Apparatuur
+
+Voor het experiment werd een set sensoren gekozen:
+
+- temperatuur- en vochtigheidssensoren
+- bewegingssensoren
+- deursensoren
+- luchtkwaliteitssensor
+- biermeme-teller in de vorm van een gloeilamp en twee knoppen
+
+Een Raspberry Pi 4 met Home Assistant geïnstalleerd en Robonomics-integratie werden gebruikt om alle gegevens in de Web3-cloud op te slaan. 
+Aan het einde van het artikel vind je een beschrijving van hoe je deze gegevens kunt verkrijgen.
+
+## Installatie
+
+Zo zag de bar eruit:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/bar.jpg" alt="Bierbar" /> 
+
+De hoofdcounter waar bier werd uitgedeeld. Achter de counter stond een tap en 2 koelkasten met drankjes. 
+Er stonden ook kleine banken en een PlayStation 1 met racegames aan de rechterkant.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/play-zone.jpg" alt="speelzone" /> 
+
+De deursensoren pasten perfect op de koelkasten. Hierdoor konden we tellen hoe vaak ze werden geopend om een fles te pakken.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/fridges.jpg" />
+
+Een bewegingssensor was geïnstalleerd in het PlayStation-gebied zodat deze alleen zou activeren wanneer iemand naar de tv liep.om een gamepad te pakken:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/sofas.jpg" alt="PlayStation zone" />
+
+Er werd ook een bewegingssensor geplaatst op de hoofdbar en gericht om alleen te activeren wanneer er iemand rechtstreeks bij de bar stond. 
+Het is te zien aan de linkerkant op de pilaar. Een temperatuur- en vochtigheidssensor werd ook in de buurt geïnstalleerd:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/column.jpg" alt="installatie bewegingssensor" />
+
+Verschillende temperatuursensoren werden geplaatst in de bar en bij de koffiehoek die in de buurt was.
+
+Er werd ook een biermeme-teller geïnstalleerd, die groen zou oplichten gedurende 5 seconden als de "Bier" knop werd ingedrukt, of rood als de "niet indrukken" knop werd ingedrukt:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/mem-beer.jpg" alt="meme-bierteller" />
+
+## Verkregen Gegevens
+
+**Disclaimer: In dit gedeelte worden alle gegevens getoond in de Home Assistant-interface voor handige visualisatie.** 
+Dezelfde gegevens kunnen worden verkregen van de Robonomics parachain en vergeleken. Instructies worden later verstrekt.
+
+Studieperiode: Voor de studieperiode nemen we de tijd van 16:00 uur op 11 juli tot 20:00 uur op 12 juli, wat overeenkomt met de helft van de eerste dag van 
+Decoded en de hele tweede dag.
+
+Het is ook belangrijk om te verduidelijken dat de bar om 12 uur 's middags openging, wat ook het meetbare interval beperkt.
+
+### Temperatuur en Vochtigheid
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temperature.jpg" alt="temperatuursensor" />
+
+Eerste dag (11 juli) - zoals te zien is op de grafieken, werd een comfortabele temperatuur van 25-27 graden binnenshuis gehandhaafd.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp11.png" alt="temperatuur 11e" />
+
+Tweede dag (12 juli) - de temperatuur daalde met een paar graden maar bleef comfortabel.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp12.png" alt="temperatuur 12e" />
+
+De temperatuurdaling is gerelateerd aan de regen op de tweede dag, wat duidelijk zichtbaar is op de vochtigheidsgrafieken. Vochtigheid nam toe met 10-15%. Eerste dag:11.png" alt="luchtvochtigheid 11e" />
+
+Tweede dag:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum12.png" alt="luchtvochtigheid 12e" />
+
+### Bewegingssensoren
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motion-sesnors.jpg" alt="bewegingssensor" />
+
+Geel geeft aan wanneer er iemand bij de bar was, grijs - wanneer er geen mensen waren. Bewegingssensor bij de bar - eerste dag:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar11.png" alt="bewegingssensor bij de bar 11e" />
+
+Tweede dag:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar12.png" alt="bewegingssensor bij de bar 12e" />
+
+En het PlayStation-gebied - eerste dag:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay11.png" alt="bewegingssensor bij de speelzone 11e" />
+
+Tweede dag:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay12.png" alt="bewegingssensor bij de speelzone 12e" />
+
+Uit de sensoren kunnen we zien dat bijna de hele tijd dat de bar open was, er iemand aan de toonbank stond. 
+Ook speelde bijna de helft van de tijd iemand op de PlayStation.
+
+### Deursensoren
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door-sensors.jpg" alt="deursensoren op koelkast" />
+
+Geweldig, we hebben gekeken naar de algemene indicatoren rond de bar, laten we nu proberen wat cijfers te krijgen. Hiervoor hebben we deursensoren. 
+Er waren 2 koelkasten. Aan de hand van een van hen, laten we eens kijken hoe we het aantal openingen kunnen tellen.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door.png" alt="voorbeeld deursensor" />
+
+Natuurlijk zou je het aantal gele strepen op deze grafiek kunnen tellen, dat zijn de momenten waarop de deur werd geopend. 
+Maar je kunt dit exporteren naar een csv-bestand en het volgende krijgen:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/doorcsv.png" alt="voorbeeld deur-csv" />
+
+Hier toont elke individuele rij het tijdstip van de verandering van de sensorstatus. Dus door eenvoudig het aantal rijen door twee te delen, 
+kun jeKan het aantal koelkastopeningen krijgen.
+Als resultaat krijgen we de volgende tabel:
+
+|          | koelkast 1 | koelkast 2 |
+| -------- |--------|---------|
+| Eerste dag  | 76     | 78      |
+| Tweede dag | 111    | 87      |
+| samenvatting    | 187    | 165     |
+
+In totaal 352 koelkastopeningen. En we kunnen met zekerheid zeggen dat dit het onderste aantal bier-/waterflessen is dat in twee dagen is meegenomen, aangezien er bij één deuropening meerdere flessen kunnen worden meegenomen.
+
+### Bier meme-teller
+
+En tot slot, de bier meme-teller. Deze werd alleen geïnstalleerd op de tweede dag. Er waren 2 knoppen, één gelabeld "Bier" en de andere "Niet indrukken". Hoe vaak werd er op elke knop gedrukt?
+
+| Bier       | Niet indrukken |
+|------------|--------------|
+| 83         | 44           |
+
+Zoals je kunt zien, koos ongeveer 2/3 van de mensen de juiste knop.
+
+## Gegevensverificatie
+
+Laten we doorgaan met het verkrijgen van deze gegevens uit de blockchain. Alle gegevens worden opgeslagen in de datalogs van dit account - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". Laten we het openen in [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+
+We zullen al zijn extrinsieken zien. Laten we ze filteren op datum. We zullen ongeveer 140 extrinsieken krijgen.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsieken" />
+
+Elk van hen bevat een IPFS CID met telemetrie. Laten we een willekeurige extrinsiek nemen en de gegevens daaruit halen. 
+Bijvoorbeeld, [deze](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+IPFS CID erin - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
+
+Het enige wat je nu nog hoeft te doen is dit script gebruiken om de gegevens te decoderen. Vervang de IPFS CID in regel 11 door degene die je nodig hebt:
+
+```
+import requests
+from substrateinterface import Keypair, KeypairType
+from robonomicsinterface import Account
+import typing as tp
+import json
+import os
+
+ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
+IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
+
+def decrypt_message(data: tp.Union[str, dict]) -> str:
+
+    """Bericht decoderen dat is versleuteld voor apparaten
+    :param data: Versleutelde gegevens
+    :param sender_address: Afzenderadres
+    :param recipient_keypair: Ontvanger account keypair
+
+    :return: Gedecodeerd bericht
+    """
+    try:
+        account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+        admin_keypair = account.keypair
+        print(account.get_address())
+        sender_public_key = admin_keypair.public_key
+        if isinstance(data, str):
+            data_json = json.loads(data)
+        else:
+            data
+        if admin_keypair.ss58_address in data_json:
+            decrypted_seed = _decrypt_message(
+                data_json[admin_keypair.ss58_address],
+                sender_public_key,
+                admin_keypair,
+            ).decode("utf-8")
+            decrypted_acc = Account(decrypted_seed, crypto_type=KeypairType.ED25519)
+            decrypted_data = _decrypt_message(data_json["data"], sender_public_key, decrypted_acc.keypair).decode(
+                "utf-8"
+            )
+            return decrypted_data
+        else:
+            print(f"Fout bij decoderen voor apparaten: account staat niet in apparaten")
+    except Exception as e:
+        print(e)
+
+def _decrypt_message(encrypted_message: str, sender_public_key: bytes, admin_keypair) -> str:
+    """Bericht decoderen met ontvanger privésleutel en afzender openbare sleutel
+    :param encrypted_message: Bericht om te decoderen
+    :param sender_public_key: Afzender openbare sleutel
+
+    :return: Gedecodeerd bericht
+    """
+    if encrypted_message[:2] == "0x":
+        encrypted_message = encrypted_message[2:]
+    bytes_encrypted= bytes.fromhex(encrypted_message)
+    return admin_keypair.decrypt_message(bytes_encrypted, sender_public_key)
+
+def main():
+    account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+    admin_keypair = account.keypair
+    response = requests.get(f"<https://gateway.pinata.cloud/ipfs/{IPFS_HASH}>")
+    print(response)
+    with open("telemetry.txt", "w") as f:
+        decrypted_content = decrypt_message(response.text)
+        print(decrypted_content)
+        f.write(decrypted_content)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+Als resultaat krijg je een "telemetry.txt" bestand met json erin. Het zal alle dezelfde gegevens bevatten die we hierboven hebben bekeken. Je hoeft het alleen maar te analyseren.
+
+## Conclusies
+
+Dankzij al deze indicatoren kunnen we zeggen dat het idee van "gratis bier" van ChaosDAO succesvol was en dat mensen het actief hebben gebruikt, ook al was het bier niet op. En dankzij de sensoren en het Robonomics-team kun je kwantitatieve en kwalitatieve indicatoren van dit evenement zien met gegevens die zijn opgeslagen in het Kusama-netwerk.

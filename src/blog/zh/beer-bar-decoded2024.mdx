@@ -1,0 +1,224 @@
+---
+title: 在 Polkadot Decoded 2024 的啤酒吧实验
+date: 2024-07-19
+published: true
+locale: 'zh'
+tags: ['事件', 'Polkadot', 'Web3']
+cover_image: /blog/images/beer-bar-decoded2024/cover.png
+description: '上周，Robonomics团队参观了布鲁塞尔的Polkadot Decoded活动。他们进行了一个实验，测量了来自ChaosDAO的自由啤酒吧周围传感器的不同读数。团队想要了解有多少人参加了活动，以及他们对酒吧有多感兴趣。阅读本文以了解他们发现了什么。'
+---
+
+上周，Robonomics团队参观了布鲁塞尔的Polkadot Decoded活动。他们进行了一个实验，测量了来自[**ChaosDAO的自由啤酒吧**](https://polkadot.polkassembly.io/referenda/821)周围传感器的不同读数。团队想要了解有多少人参加了活动，以及他们对酒吧有多感兴趣。阅读本文以了解他们发现了什么。
+
+## 设备
+
+为了这个实验，选择了一组传感器：
+
+- 温湿度传感器
+- 运动传感器
+- 门磁传感器
+- 空气质量传感器
+- 啤酒迷因计数器，形式为一个灯泡和两个按钮
+
+使用安装了Home Assistant和Robonomics集成的Raspberry Pi 4将所有数据保存在Web3云中。在本文末尾，您将看到如何获取这些数据的描述。
+
+## 安装
+
+这是酒吧的外观：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/bar.jpg" alt="啤酒吧" /> 
+
+主柜台，用于分发啤酒。柜台后面有一个龙头和两台冰箱，里面装满了饮料。右侧还有小沙发和一台带有赛车游戏的PlayStation 1。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/play-zone.jpg" alt="游戏区" /> 
+
+门磁传感器完美地安装在冰箱上。这使我们能够计算它们被打开多少次以取出一瓶饮料。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/fridges.jpg" alt="冰箱" />
+
+在PlayStation区域安装了一个运动传感器，这样当有人靠近电视时它才会触发。拿起游戏手柄：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/sofas.jpg" alt="PlayStation区" />
+
+还在主吧台上放置了一个运动传感器，并定向触发只有当有人直接在吧台上时才会触发。
+它可以在柱子的左侧看到。附近还安装了一个温度和湿度传感器：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/column.jpg" alt="运动传感器安装" />
+
+在吧台内部和附近的咖啡区域还放置了几个温度传感器。
+
+还安装了一个啤酒迷因计数器，如果按下“啤酒”按钮，则会在5秒内变成绿色，如果按下“不要按”按钮，则会变成红色：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/mem-beer.jpg" alt="mem-beer计数器" />
+
+## 获取的数据
+
+**免责声明：在本节中，所有数据将显示在Home Assistant界面中，以便进行方便的可视化。**
+这些相同的数据可以从Robonomics平行链中获取并进行比较。具体操作说明将稍后提供。
+
+研究期间：对于研究期间，我们将从7月11日下午16:00到7月12日晚上20:00的时间，这对应于Decoded的第一天的一半和整个第二天。
+
+还需要澄清的是，酒吧在中午12点开业，这也限制了可测量的时间间隔。
+
+### 温度和湿度
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temperature.jpg" alt="温度传感器" />
+
+第一天（7月11日）- 从图表中可以看出，室内保持了25-27度的舒适温度。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp11.png" alt="11日温度" />
+
+第二天（7月12日）- 温度下降了几度，但仍然保持舒适。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp12.png" alt="12日温度" />
+
+温度下降与第二天的降雨有关，这在湿度图表上清晰可见。湿度增加了10-15%。第一天：11.png" alt="湿度第11天" />
+
+第二天：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum12.png" alt="湿度第12天" />
+
+### 运动传感器
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motion-sesnors.jpg" alt="运动传感器" />
+
+黄色表示有人靠近酒吧的时间，灰色表示没有人。酒吧的运动传感器 - 第一天：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar11.png" alt="酒吧运动传感器第11天" />
+
+第二天：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar12.png" alt="酒吧运动传感器第12天" />
+
+还有 PlayStation 区域 - 第一天：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay11.png" alt="游戏区运动传感器第11天" />
+
+第二天：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay12.png" alt="游戏区运动传感器第12天" />
+
+通过传感器，我们可以看到酒吧几乎一直开着，柜台上总是有人站着。此外，几乎一半的时间有人在 PlayStation 上玩游戏。
+
+### 门传感器
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door-sensors.jpg" alt="冰箱上的门传感器" />
+
+很好，我们已经查看了酒吧周围的一般指标，现在让我们尝试获取一些数字。为此，我们有门传感器。有2个冰箱。以其中一个为例，让我们看看如何计算开启次数。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door.png" alt="门传感器示例" />
+
+当然，您可以数一下这张图上的黄色条纹的数量，这些是门打开的时刻。但是您也可以将其导出为 csv 文件，得到以下结果：
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/doorcsv.png" alt="门的 csv 示例" />
+
+在这里，每一行显示传感器状态更改的时间。因此，只需将行数除以二，您可以获取冰箱开启次数。
+因此，我们得到以下表格：
+
+|          | 冰箱1 | 冰箱2 |
+| -------- |--------|---------|
+| 第一天    | 76     | 78      |
+| 第二天    | 111    | 87      |
+| 总计      | 187    | 165     |
+
+共计 352 次冰箱开启。我们可以自信地说，这是在两天内取走啤酒/水瓶数量的下限，因为在一次开门时可能取走多个瓶子。
+
+### 啤酒迷因计数器
+
+最后是啤酒迷因计数器。它仅在第二天安装。有两个按钮，一个标有“啤酒”，另一个标有“不要按”。每个按钮被按下了多少次？
+
+| 啤酒       | 不要按     |
+|------------|--------------|
+| 83         | 44           |
+
+正如您所见，大约有2/3的人选择了正确的按钮。
+
+## 数据验证
+
+让我们继续从区块链中获取这些数据。所有数据都存储在这个账户的数据日志中 - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”。让我们在[Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB)中打开它。
+
+我们将看到所有的外部交易。让我们按日期筛选它们。我们将得到大约 140 个外部交易。
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
+
+每个外部交易都包含一个带有遥测数据的 IPFS CID。让我们取任何一个外部交易并从中提取数据。例如，[这个](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7)。其中包含的 IPFS CID 为 `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`。fdUVdpJ4c3`。
+
+然后，您只需要使用此脚本解密数据。将第11行中的IPFS CID替换为您需要的CID：
+
+```
+import requests
+from substrateinterface import Keypair, KeypairType
+from robonomicsinterface import Account
+import typing as tp
+import json
+import os
+
+ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
+IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
+
+def decrypt_message(data: tp.Union[str, dict]) -> str:
+
+    """解密为设备加密的消息
+    :param data: 加密数据
+    :param sender_address: 发件人地址
+    :param recipient_keypair: 收件人账户密钥对
+
+    :return: 解密后的消息
+    """
+    try:
+        account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+        admin_keypair = account.keypair
+        print(account.get_address())
+        sender_public_key = admin_keypair.public_key
+        if isinstance(data, str):
+            data_json = json.loads(data)
+        else:
+            data
+        if admin_keypair.ss58_address in data_json:
+            decrypted_seed = _decrypt_message(
+                data_json[admin_keypair.ss58_address],
+                sender_public_key,
+                admin_keypair,
+            ).decode("utf-8")
+            decrypted_acc = Account(decrypted_seed, crypto_type=KeypairType.ED25519)
+            decrypted_data = _decrypt_message(data_json["data"], sender_public_key, decrypted_acc.keypair).decode(
+                "utf-8"
+            )
+            return decrypted_data
+        else:
+            print(f"解密设备时出错：账户不在设备中")
+    except Exception as e:
+        print(e)
+
+def _decrypt_message(encrypted_message: str, sender_public_key: bytes, admin_keypair) -> str:
+    """使用接收方私钥和发送方公钥解密消息
+    :param encrypted_message: 要解密的消息
+    :param sender_public_key: 发件人公钥
+
+    :return: 解密后的消息
+    """
+    if encrypted_message[:2] == "0x":
+        encrypted_message = encrypted_message[2:]
+    bytes_encrypted= bytes.fromhex(encrypted_message)
+    return admin_keypair.decrypt_message(bytes_encrypted, sender_public_key)
+
+def main():
+    account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+    admin_keypair = account.keypair
+    response = requests.get(f"<https://gateway.pinata.cloud/ipfs/{IPFS_HASH}>")
+    print(response)
+    with open("telemetry.txt", "w") as f:
+        decrypted_content = decrypt_message(response.text)
+        print(decrypted_content)
+        f.write(decrypted_content)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+因此，您将获得一个包含json的“telemetry.txt”文件。它将包含我们上面审查的所有相同数据。您只需要解析它。
+
+## 结论
+
+由于所有这些指标，我们可以说ChaosDAO的“免费啤酒”理念取得了成功，人们积极参与，尽管有些啤酒没有喝完。感谢传感器和Robonomics团队，您可以在Kusama网络中保存的数据中看到此活动的定量和定性指标。

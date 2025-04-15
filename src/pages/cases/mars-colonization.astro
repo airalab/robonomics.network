@@ -1,0 +1,86 @@
+---
+// components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/cases/CaseHeader.astro";
+import Footer from "../../components/cases/CaseFooter.astro";
+import CaseText from "../../components/cases/CaseText.astro";
+import Youtube from "../../components/utils/Youtube.astro";
+---
+
+<Layout
+  casePath={Astro.url}
+>
+  
+  <Header
+    path={Astro.url.pathname}
+    introText={$tr("This R&D case explores the role of Kusama network's decentralized infrastructure in supporting interplanetary missions, particularly Mars colonization.")}
+    introImg="mars-colonization.webp"
+  />
+
+  <section class="case-page layout">
+
+    <CaseText
+      title={$tr(`Exploring Kusama's Role in Space Exploration`)}
+      multiple
+    >
+      <p>{$tr('During the Hackusama — Hack on Polkadot’s Wild Cousin, our team examined the UN Agreement Governing the Activities of States on the Moon and Other Celestial Bodies (1979). From this analysis, we proposed a decentralized interplanetary architecture using the Kusama network and developed software modules implementing:')}</p>
+      <ul>
+        <li><b>{$tr('Article 6:')}</b> {$tr('Freedom of scientific investigation')}</li>
+        <li><b>{$tr('Article 7:')}</b> {$tr('Preventing disruption of the existing environmental balance')}</li>
+        <li><b>{$tr('Article 9:')}</b> {$tr('Establishment of manned and unmanned stations')}</li>
+      </ul>
+    </CaseText>
+
+    <CaseText
+      title={$tr('The Mars Rover Experiment')}
+      multiple
+    >
+      <p>{$tr('As part of the experiment, a rover was deployed within the boundaries of a simulated Mars habitat station. The rover performed the following tasks:')}</p>
+      <ul>
+        <li>{$tr('Traversed a predefined route')}</li>
+        <li>{$tr('Published odometry data and photos directly to the Kusama network')}</li>
+      </ul>
+      <p>{$tr('This data could be sufficient for organizations like SpaceY to begin designing and selling living spaces on Mars through a parachain slot on Kusama.')}</p>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Technical Implementation')}
+      multiple
+    >
+      <ul>
+        <li><b>{$tr('Data Storage:')}</b> {$tr('Blockchain-based storage inspired by the 1979 UN Agreement.')}</li>
+        <li><b>{$tr('IoT Infrastructure:')}</b> {$tr('The “Mars-1” base camp featured IoT devices for environmental monitoring.')}</li>
+        <li><b>{$tr('Satellite Connectivity:')}</b> {$tr('Satellite equipment facilitated data transmission to Kusama on the Mars parachain.')}</li>
+        <li><b>{$tr('Rover Integration:')}</b> {$tr('The “Mars-2” rover was equipped with hardware and software to publish data to the Kusama network.')}</li>
+      </ul>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Use Cases and Potential Impact')}
+      multiple
+    >
+      <ol>
+        <li><b>{$tr('Supply Chain Management:')}</b> {$tr('Tokenized IoT data can verify the authenticity and condition of goods in real-time.')}</li>
+        <li><b>{$tr('Energy Markets:')}</b> {$tr('Smart meters can tokenize energy data for direct peer-to-peer energy trading.')}</li>
+        <li><b>{$tr('Environmental Monitoring:')}</b> {$tr('IoT sensors can provide verified data for carbon credits and sustainability projects.')}</li>
+      </ol>
+      <p>{$tr('Learn more about Kusama architecture')} <a href="https://blog.aira.life/" target="_blank" aria-label="learn more about kusama architecture">{$tr('here')}</a>.</p>
+    </CaseText>
+
+    <CaseText
+    title={$tr(`A fun video about the use of KUSAMA on Mars:`)}
+    multiple>
+      <Youtube
+        title="the use of KUSAMA on Mars"
+        src="https://www.youtube.com//embed/31zXeUq3htE"
+      />
+    </CaseText>
+
+  </section>
+
+  <Footer 
+    text={`<p class=italic-abstract>${$tr('This R&D case demonstrates how the Kusama network can support scientific exploration, resource management, and data transparency for space missions. The decentralized architecture offers a promising foundation for the future of Mars colonization and beyond.')}</p>`}
+    title={$tr('Conclusion')}
+  />
+
+</Layout>

@@ -1,0 +1,116 @@
+---
+title: Nieuwe Robonomics Crowdloan-campagne, december 2022
+date: 2022-12-12
+published: true
+locale: 'nl'
+tags: ['Robonomics parachain', 'Polkadot', 'Aankondigingen']
+cover_image: /blog/images/crowdloan-campaign-december-2022/cover.jpg
+description: "Na een kleine tegenslag veroorzaakt door de chaos in de beginperiode van OpenGov, zijn we klaar om de Robonomics crowdloan-campagne te herstarten. In dit artikel zullen we kijken naar de reeks gebeurtenissen die hebben geleid tot de herstart van de campagne en de nieuwe parameters ervan presenteren."
+abstract: "Na een kleine tegenslag veroorzaakt door de chaos in de beginperiode van OpenGov, zijn we klaar om de Robonomics crowdloan-campagne te herstarten. In dit artikel zullen we kijken naar de reeks gebeurtenissen die hebben geleid tot de herstart van de campagne en de nieuwe parameters ervan presenteren."
+---
+
+## Kusama OpenGov veroorzaakt chaos
+
+De langverwachte komst van het nieuwe governance-systeem, OpenGov (Gov2), is eindelijk aangekomen op Kusama, maar het bracht veel chaos met zich mee. De invoering van het nieuwe OpenGov-systeem resulteerde in het niet succesvol uitvoeren van de eerder geplande veilingen. De Kusama-gemeenschap was begonnen met [Gov1 referendum #252](https://kusama.polkassembly.io/referendum/252) om het veilingenschema te herstellen, maar dit werd niet succesvol uitgevoerd vanwege beperkingen van de AuctionAdmin-privilege. Deze fout werd veroorzaakt doordat het in het nieuwe gov-systeem verplicht is om het OpenGov-voorstel op het Auction-traject te pushen om veilingen te starten. Er werd besloten om OpenGov-parameters aan te passen met [een runtime-upgrade](https://kusama.polkassembly.io/referendum/254), maar ook dit referendum was niet succesvol vanwege een conflict tussen de logica van Gov1 en Gov2.
+
+Al met al kostte het de Kusama-gemeenschap en ontwikkelaars een paar weken om de complexiteiten van het nieuwe governance-systeem te doorgronden. Dit was onvoorziene omstandigheden en had invloed op de plannen van het Robonomics-project om mee te bieden in een parachain-slotveiling in onze crowdloan-campagne van november 2022. We hebben reeds [de crowdloan van november 2022](/blog/robonomics-crowdloan-campaigns-november-2022/) ontbonden die was gestart opparaID 2237, en al het KSM is teruggegeven aan de crowdloan-bijdragers.
+
+## Nieuwe Uitdagingen voor het Verlengen van de Lease van de Slot
+
+**De standaardmethode** voor het ruilen van parachain-leases vóór de release van OpenGov was als volgt:
+
+1. Genereer een nieuwe paraID met behulp van de registrar(Reserve) extrinsieke.
+2. Stel een on-chain ID in voor de nieuwe paraID.
+3. Open een crowdloan met behulp van de crowdloan(Create) extrinsieke.
+4. Bied mee in een parachain-slotveiling.
+5. Als het succesvol is in de veiling, zouden de ontwikkelaars een governance-actie initiëren om de lease over te zetten van deze donerende paraID naar de werkende parachain paraID met behulp van de forceLease en registrar:swap functies, vergelijkbaar met deze eerdere referenda: [Karura lease swap](https://kusama.polkassembly.io/referendum/192), [Moonriver en Khala lease swap](https://kusama.polkassembly.io/motion/468), [Shiden lease swap](https://kusama.polkassembly.io/referendum/199), [Parallel-Heiko lease swap](https://kusama.polkassembly.io/referendum/219), [Genshiro lease swap](https://kusama.polkassembly.io/referendum/246).
+6. Het eindresultaat zou zijn dat de werkende parachain zijn lease verlengd zou hebben, doorgaat met het produceren van blokken en geen downtime zou ondervinden.
+
+Echter, met de introductie van OpenGov zijn de drempels voor governance-acties op Kusama buitengewoon hoog geworden. In basisbegrippen heeft het nieuwe OpenGov-systeem meerdere tracks. Elke track kan een specifiek type functie ondersteunen (kan alleen bepaalde extrinsieke functies aanroepen). Sommige tracks hebben beperkte kracht, zoals het geven van kleine bedragen KSM als fooi, maar andere hebben enorme kracht, zoals de Root-track.
+
+De drempels voor OpenGov-tracks zijn buitengewoon hoog, en er zijn al acties binnen de Kusama-gemeenschap om ze te verlagen, omdat ze al problemen veroorzaken voor parachain-projecten zoals [Kintsugi](https://twitter.com/kintsugi_btc/status/1599036329399943168). Simpel gezegd moet een bepaald referendum voldoende steun krijgen van de belanghebbenden van het netwerk (KSM-houders) om van de stemperiode naar de bevestigingsperiode over te gaan.
+
+Om de parachain in staat te stellen het eerder genoemde 6-stappenplan uit te voeren om de lease te ruilen, moet het nodig zijn om het parachain-veilingschema opnieuw te starten, ditDit betekent dat er een OpenGov-referendum moet worden aangenomen dat de veilingen opnieuw start, ofwel via de Lease Admin-track, of mogelijk als onderdeel van een runtime-upgrade via de Root/Whitelisted Caller-tracks. Hier doet zich een probleem voor: om het referendum tijdig in de bevestigingsperiode te plaatsen, is een aanzienlijk percentage van alle circulerende voorraad KSM-tokens nodig om voor het referendum te stemmen. De typische opkomst van stemmers op Kusama is relatief laag, wat betekent dat het mogelijk meerdere weken kan duren voordat een Lease Admin-track-referendum de drempel bereikt waarbij het realistisch mogelijk is dat het referendum naar de bevestigingsperiode wordt doorgestuurd.
+
+Hoewel we nog steeds hopen dat de gemeenschap de OpenGov-parameters zal aanpassen, is er gelukkig een manier waarop de parachain XCM kan gebruiken om het 6-stappenplan uit te voeren zonder de nieuwe OpenGov-systeem van de relay chain te gebruiken.
+
+We kunnen een nieuwe paraID registreren met behulp van de registrar(Reserve) extrinsieke waarde, en een shell-runtime laden naar die paraID met behulp van de registrar(Register) extrinsieke waarde. Deze parachain moet alleen XCM-berichten initiëren voor lease swaps. Vervolgens sturen we een XCM-bericht met een lease swap-verzoek van de hoofdparachain naar de shell-parachain. Wanneer de shell-parachain een veiling wint en de lease actief wordt, wordt er een minimaal platform gelanceerd dat in staat is om een XCM-bericht te sturen om de lease-slot te ruilen met de hoofdparachain.
+
+## Nieuwe parameters voor Crowdloan-campagne
+
+Zoals [eerder vermeld](https://robonomics.network/blog/robonomics-crowdloan-campaigns-november-2022/), willen we onze crowdloan-campagnes automatiseren op basis van de statistieken over de kosten van slotverhuur en het ideale stakingspercentage. Laten we eens kijken naar de huidige parameters voor het vernieuwingsalgoritme.
+
+<TextCard alignContent="center">
+
+**1. Statistieken van de mediane verhuurprijs van augustus tot november 2022 (informatie afkomstig van [parachains.info](http://parachains.info/)):**
+
+</TextCard>
+
+<div class="big-table">
+
+|  | Veiling 62 | Veiling 61 | Veiling 60 | Veiling 59 | Veiling 58 | Veiling 57 | Veiling 56 | Veiling 55 | Veiling 54 | Veiling 53 | Veiling 52 | Veiling 51 | Veiling 50 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|Winnaar | Parathread 2236 | Parathread 2233 | Zeitgeist | Crab Network | — | Crust Shadow | Genshiro | DAO IPCI | Parathread 2223 | Quartz | Bit.Country | Snow | Subsocial |
+| Laatste bod (KSM) | 1 005 | 241 | 500 | 11 | 0 | 1 807 | 2 000 | 111 | 1 001 | 1 005 | 3 500 | 13 926 | 1 001 |
+| Bijdragen | zelf gefinancierd | zelf gefinancierd | zelf gefinancierd | zelf gefinancierd | — | 209 | 160 | zelf gefinancierd | zelf gefinancierd | zelf gefinancierd | zelf gefinancierd | 782 | zelf gefinancierd |
+| Aantal deelnemers | 1 | 3 | 2 | 1 | 0 | 1 | 2 | 2 | 2 | 2 | 2 | 1 | 1 |
+
+</div>
+
+<TextCard className="withImg" alignContent="center">
+
+**2. Het mediane bod is:**
+
+![beta subscript med equals 1001KSM](/blog/images/crowdloan-campaign-december-2022/formula-1.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**3. We introduceren ook een correctie als eerdere crowdloan-campagnes niet succesvol waren. Het gecorrigeerde mediane bod voor eerdere crowdloan-pogingen is:**
+
+![beta subscript 'adjmed' equals 1001 multiplied by 2 equals 2002 KSM](/blog/images/crowdloan-campaign-december-2022/formula-2.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**4. Het ideale stakingpercentage is:**
+
+![x subscript ideal equals 45.0 percent](/blog/images/crowdloan-campaign-december-2022/formula-3.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**5. Het werkelijke stakingpercentage is:**
+
+![x subscript 'real' equals 49.3%  greater than percent x subscript 'ideal'](/blog/images/crowdloan-campaign-december-2022/formula-4.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**6. Het ideale rentepercentage is:**
+
+![i subscript 'ideaal' ​is gelijk aan I subscript 'NPoS' ​ gedeeld door x subscript 'ideaal' is gelijk aan 0,1 gedeeld door 0,45 vermenigvuldigd met 100 procent is gelijk aan 22,22 procent](/blog/images/crowdloan-campaign-december-2022/formula-5.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**7. De beloning voor deelname aan de crowdloan-campagne (XRT per 1 KSM):**
+
+![R subscript 'perKSM' ​is gelijk aan (1 vermenigvuldigd met $KSM ​vermenigvuldigd met i subscript 'ideaal') gedeeld door $XRT ​is gelijk aan (1 vermenigvuldigd met 24,65$ vermenigvuldigd met 0,22) gedeeld door 2,30$ is gelijk aan 2,38 XRT per KSM](/blog/images/crowdloan-campaign-december-2022/formula-6.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**8. Totale uitbetalingen aan crowdloan-deelnemers:**
+
+![R subscript 'totaal' ​is gelijk aan B  subscript 'adjmed' ​vermenigvuldigd met R subscript 'perKSM' is gelijk aan 4768,05 XRT](/blog/images/crowdloan-campaign-december-2022/formula-7.svg)
+
+</TextCard>
+
+Dat is het verhaal. En, zoals altijd, ₑₓₚₑcₜ cₕₐₒₛ.

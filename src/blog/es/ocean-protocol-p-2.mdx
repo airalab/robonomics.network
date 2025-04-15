@@ -1,0 +1,252 @@
+---
+title: Robonomics Network x Ocean Protocol p. 2&#58; Monetización de Datos de Robots y Dispositivos IoT
+date: 2021-07-01
+published: true
+locale: 'es'
+tags: ['Colaboraciones']
+cover_image: /blog/images/ocean-protocol-p-2/Robonomics_Ocean_p_2.jpg
+description: "Primeros resultados de la colaboración entre Robonomics Network y OCEAN Protocol"
+abstract: "Primeros resultados de la colaboración entre Robonomics Network y OCEAN Protocol"
+---
+
+## Introducción
+
+Este artículo [expande la integración](/blog/article-ocean-p1/) entre Robonomics Network y Ocean Protocol. Se describirá específicamente cómo conectar dispositivos robóticos al protocolo, así como posibles casos de uso donde dicha integración agregará valor a la operación del sistema autónomo.
+
+Para aquellos que no están familiarizados con Ocean Protocol: la idea es transformar cualquier dato en un activo completo mediante la tokenización, con la capacidad de comprar/vender y transferir la propiedad. En resumen, al tokenizar datos, despliegas y acuñas un token ERC20 (datatokens), cuya propiedad te permite acceder a los datos asignados a él (1 datatoken = acceso al conjunto de datos). El protocolo te permite gestionar el acceso de forma flexible, por ejemplo, organizar el acceso temporal a los datos o dar acceso a sus análisis sin violar la privacidad. De esta manera, se vuelve posible monetizar datos tokenizados, crear mercados para ellos y utilizar toda la potencia de las herramientas de finanzas descentralizadas.
+
+El equipo de Robonomics es muy consciente del valor de la monetización a través de la tokenización, pero aún mejor, entendemos el valor de la automatización. Ya hemos aprendido cómo monetizar automáticamente las actividades útiles de robots y dispositivos IoT, entonces ¿por qué no automatizar la monetización de los resultados (registros y datos) de esta actividad? Con Ocean Protocol, casi cualquier dispositivo robótico que genere datos valiosos puede convertirse en una simple fuente de ingresos para su propietario. O el dispositivo puede convertirse en un consumidor de datos útiles para completar su tarea.
+
+## Aspectos de integración para dispositivos ROS
+
+Para que Robonomics funcione con muchos tipos diferentes de dispositivos, utilizamos el Sistema Operativo de Robots (ROS), un conjunto de middleware que nos permite implementar software de forma conveniente para dispositivos robóticos. Gracias a ROS, es bastante fácil conectar un nuevo tipo de dispositivo a la red. La activa comunidad de ROS ha desarrollado cientos de paquetes listos para usar para diversosrobots y dispositivos IoT a lo largo de los años.
+
+Las tres principales abstracciones en el entorno de ROS son nodos, temas y mensajes. Un nodo es un proceso / programa que realiza una tarea específica y se comunica con otros nodos a través de temas. Un nodo se suscribe a un tema, esperando mensajes, o publica sus propios mensajes en ellos. En esta implementación, los componentes de diferentes tipos del sistema robótico pueden interactuar entre sí al mismo nivel.
+
+La figura a continuación representa un proceso típico para aceptar y completar una tarea por un dispositivo robótico (promisor) en Robonomics v1 que se ejecuta en la red Ethereum. El bloque de cliente AIRA es una imagen implementada del software requerido para el dispositivo, incluido ROS. La figura muestra (en marcos azules) que el dispositivo se comunica con la red descentralizada a través del cliente AIRA al recibir y enviar mensajes en los temas ROS correspondientes. La misión del dispositivo finaliza con el envío final del mensaje resultante a la red IPFS, que contiene un enlace a datos potencialmente aceptables para la monetización.
+
+!["El proceso de Robonomics v2"](/blog/images/ocean-protocol-p-2/uml-robonomics-ver1.png)
+
+En Robonomics v2, que se está desarrollando como una [paracadena](https://parachain.robonomics.network/) del ecosistema Polkadot, el proceso es ligeramente diferente. Actualmente, las funciones `launch()` y `datalog()` están disponibles para el control del dispositivo; la primera función le permite realizar transacciones para encender / apagar el dispositivo, y la segunda envía una cadena de datos al blockchain. Pero los registros y los datos del dispositivo aún se recopilan utilizando temas de ROS. Luego, pueden pasarse directamente a `datalog()`, o enviarse primero a IPFS.
+
+Por lo tanto, la primera tarea en la integración de Ocean Protocol con Robonomics Network es llevar la API del protocolo al entorno de ROS. Además, dicho paquete para ROS puede integrarse en el cliente AIRA y desplegar automáticamente la creación de datatokens.
+
+## Ejemplo de integración de Ocean con ROS
+
+Esta sección proporciona una descripción del repositorio ocean_ros, creado por ingenieros de Robonomics, que es un paquete de ROS que implementa la integración de la API de Ocean Protocol y ROS. Ocean Protocol ofrece varias opciones de API para trabajar con él, en este caso se utiliza la biblioteca Python [ocean.py](https://github.com/oceanprotocol/ocean.py).usado, ya que ROS tiene la biblioteca de cliente de Python [rospy](http://wiki.ros.org/rospy). El propósito principal del paquete es crear tres nodos de ROS, a través de los cuales un dispositivo robótico puede implementar y generar datatokens, crear un grupo para colocarlo en el mercado o comprar datatokens para su uso. Vamos a través de la instalación y puesta en marcha del paquete.
+
+Este ejemplo también está disponible como un screencast en YouTube:
+
+<YouTube id="https://youtu.be/Ssit8-u6dZY" PosterQuality="max"/>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Requisitos e Instalación
+
+El paquete requiere:
+
+* Ubuntu
+* Python 3.8.5 o posterior
+* ROS, ver. Melodic (instrucciones de instalación [aquí](http://wiki.ros.org/melodic/Installation/Ubuntu))
+
+Instalando el paquete:
+
+<RbCode>
+
+```sh
+git clone https://github.com/LoSk-p/ocean_ros
+cd ..
+catkin_make
+source devel/setup.bash
+```
+
+</RbCode>
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Configuración de la red y nodo Ethereum
+
+En el ejemplo, se utiliza el proveedor Infura para configurar la conexión. Infura te permite usar de forma remota la infraestructura de Ethereum sin necesidad de lanzar un nodo completo, lo cual es muy conveniente para un dispositivo robótico compacto con potencia de cálculo limitada.
+
+Ten en cuenta que para el ejemplo, se está configurando una conexión a Rinkeby, la red de prueba de Ethereum. Si necesitas cambiar a la red principal u otra, consulta la [documentación](https://docs.oceanprotocol.com/concepts/networks/) de Ocean.
+
+Los pasos para configurar son los siguientes:
+
+* Ve a https://infura.io y regístrate.
+* En el sitio de Infura, crea un nuevo proyecto.
+* Dentro de la página de configuración del proyecto, toma nota de tu valor de ID de proyecto de Infura. Esto se usará en el siguiente paso.
+* Crea un archivo `config.ini` en el directorio de configuración (puedes encontrar un ejemplo de configuración en el archivo `config_template.ini`).
+* Escribe tu ID de proyecto de Infura para la red en el archivo de configuración.
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Configuración de la cuenta Ethereum y obtención de tokens ETH de Rinkeby
+
+* Instala la billetera Metamask en tu navegador y genera una cuenta Ethereum. Las instrucciones están [aquí](https://docs.oceanprotocol.com/tutorials/metamask-configuración/).
+* Obtén tokens ETH de Rinkeby desde un [grifo](https://faucet.rinkeby.io/).
+* [Exporta](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key) la clave privada de Metamask y crea un archivo con tu clave privada:
+
+<RbCode>
+
+```sh
+echo <private_key> > private_ocean
+```
+</RbCode>
+
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Instalando bibliotecas de Python
+
+Instala el módulo Python venv para crear entornos virtuales:
+
+<RbCode>
+
+```sh
+sudo apt-get install python3.8-venv
+```
+</RbCode>
+
+Crea un entorno virtual de Python e instala las bibliotecas necesarias:
+
+<RbCode>
+
+```sh
+python3.8 -m venv venv
+source venv/bin/activate 
+pip install ocean-lib rospkg catkin_pkg
+```
+</RbCode>
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Obteniendo tokens de prueba OCEAN de Rinkeby
+
+Obtén OCEAN de Rinkeby a través de este [grifo](https://faucet.rinkeby.oceanprotocol.com/).
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Ejecutando ocean_ros
+
+En la terminal con el entorno virtual de Python, ejecuta el archivo de lanzamiento de ROS:
+
+<RbCode>
+
+```sh
+roslaunch ocean_ros datatokens.launch
+```
+
+</RbCode>
+
+Ahora puedes acceder a los temas de ROS para trabajar con datatokens.
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Creando datatoken
+
+Para crear un datatoken, necesitas publicar un mensaje en el tema `/ocean/create_datatoken`. El mensaje debe contener la ruta al archivo de clave privada de tu cuenta de Metamask, la URL de IPFS para los datos del dispositivo, OCEAN y la liquidez del datatoken. Ejemplo de mensaje:
+
+<RbCode>
+
+```sh
+rostopic pub /ocean/create_datatoken ocean_ros/Metadata "private_key_path: '/home/user/private_ocean'                     
+data_created: '2021-12-28T10:55:11Z'
+type: 'dataset' 
+name: 'test_ros'
+author: 'author'             
+license: 'CC0: Public Domain'    
+files_content_type: ['text/text']
+files_url: ['https://gateway.ipfs.io/ipfs/QmWRjFcQi4Xcisqi8FP3AbGS3PB3gNHgtnfzbcpodKKCBP']                 
+tokens_nomber: 100.0
+ocean_amount: 10.0
+```
+
+</RbCode>
+
+El nodo ROS correspondiente creará un datatoken y estará disponible para la venta. Puedes ver información sobre el datatoken en el tema `/ocean/token_response`:
+
+<RbCode>
+
+```sh
+rostopic echo /ocean/token_response
+```
+
+</RbCode>
+
+</TextCard>
+
+<TextCard orientation="vertical" alignContent="left">
+
+### Compra de datatoken
+
+Para comprar un datatoken, necesitas publicar un mensaje en el tema `/ocean/get_datatoken`. El mensaje debe contener la ruta al archivo de clave privada de tu cuenta de Metamask e información sobre el datatoken que deseas comprar (puedes encontrarlo en el [mercado](https://market.oceanprotocol.com/) o en el tema `/ocean/token_response`). Ejemplo de mensaje (no olvides cambiar `destination` en el mensaje):
+
+
+<RbCode>
+
+```sh
+rostopic pub /ocean/get_datatoken ocean_ros/BuyDatatoken "{private_key_path: '/home/user/private_ocean', destination: '/home/user/', token_address: '0x9fb21F68257F1d718d764B68b1430B6460796e42', did: 'did:op:9fb21F68257F1d718d764B68b1430B6460796e42', pool_address: '0xcF295B85ef5ADd0E513B789477C6d14eA6Bc718a'}"
+```
+
+</RbCode>
+
+Puedes ver la ruta al archivo de datos descargado en el tema `/ocean/buying_response`:
+
+<RbCode>
+
+```sh
+rostopic echo /ocean/buying_response
+```
+
+</RbCode>
+
+</TextCard>
+
+## Casos de uso
+
+Esta sección describirá ejemplos potenciales de la aplicación de la tokenización automática de datos recibidos por dispositivos robóticos.
+
+### Datos ambientales
+
+Quizás la ilustración más interesante de la aplicación sería la tokenización de datos ambientales. El valor de tales datos solo está creciendo, tomandoTeniendo en cuenta el creciente interés de la población, empresas y reguladores en los problemas de gestión ambiental. Los principales problemas aquí son la escala de la ecología (aire, agua, suelo multiplicados por los enormes y a menudo inaccesibles territorios de la Tierra) y el problema de la confianza en los datos recopilados. Un dispositivo automático móvil (dron de aire o agua) o una red de sensores estacionarios resuelven perfectamente el primer problema, y la tecnología blockchain y descentralizada mitigan el segundo. Con la capacidad de tokenizar estos datos utilizando el Protocolo Ocean, se están abriendo mercados completamente nuevos donde conceptos como la ciencia ciudadana y los créditos de carbono encajan perfectamente.
+
+Robonomics ha estado trabajando con dispositivos para la ecología desde hace mucho tiempo. Por ejemplo, se desarrolló el paquete [sensors-connectivity](https://github.com/airalab/sensors-connectivity), que permite convertir sensores compatibles con ROS en agentes de telemetría. Los ingenieros de Robonomics están desarrollando varios modelos de [drones de agua](https://blog.aira.life/water-drone-2-0-first-stage-of-development-db8ad6c81d3c) para recopilar indicadores químicos en ríos y lagos, y también están explorando la posibilidad de utilizar [UAVs](http://www.ijeetc.com/uploadfile/2019/1009/20191009035041545.pdf) para evaluar la calidad del aire.
+
+<RbCode>
+
+```
+1556199372.384576 <=>\x86##5E1567057C105409#DOV01SW#0#WT:6.53#PH:8.89#DO:90.4#COND:348.9#
+```
+
+</RbCode>
+
+Ejemplo de datos de agua recopilados: temperatura, valor de PH, oxígeno disuelto, conductividad
+En cada caso, los dispositivos generan registros de sensores y GPS, que luego se [publican](https://gateway.ipfs.io/ipfs/QmWRjFcQi4Xcisqi8FP3AbGS3PB3gNHgtnfzbcpodKKCBP) en IPFS y son proporcionados por el dispositivo como resultado. Aquí es donde podemos agregar valor a estos datos creando un datatoken mediante el Protocolo Ocean. La Red Robonomics se asegurará de que los datos fueron recopilados por un robot específico para una tarea específica, y el Protocolo Ocean garantizará que solo aquellos que posean el datatoken puedan acceder a él.
+
+### Datos de marketing
+
+La tendencia de la robótica en la vida cotidiana está creciendo y es bastante fácil encontrar ejemplos de promotores de robots o un robot para el clienteservicio. La experiencia de interacción de tales robots con las personas se puede utilizar para investigaciones de marketing, similar a los sitios que recopilan datos sobre los usuarios. Además, el valor de estos datos será aún mayor, porque la interacción con la persona ocurre a un nivel más cercano.
+
+Podemos imaginar un dispositivo robótico que, en el proceso de realizar su tarea específica (por ejemplo, un camarero robótico), simultáneamente recopila información visual, de sonido u otra información sobre el cliente. En este caso, se pueden utilizar herramientas de aprendizaje automático para crear un tipo completamente nuevo de datos sobre la reacción del cliente a un tipo específico de servicio o producto. Este es un gran campo para utilizar datatokens, tanto para datos sin procesar de robots como para aquellos analizados por algoritmos. Además, Ocean Protocol tiene una función de Cómputo a datos que nos permite proporcionar datos privados para análisis sin violar la confidencialidad.
+
+### Registros técnicos
+
+Mejorar los algoritmos de los robots también requiere el análisis de sus datos operativos. Esto se refiere principalmente al aprendizaje automático, que requiere conjuntos de datos, pero también podemos hablar sobre compartir mapas tridimensionales (por ejemplo, para localización y mapeo simultáneos) entre dispositivos que operan en el mismo o un entorno similar. La monetización de estos registros técnicos será más específica para el campo, pero el valor residirá en su singularidad y rareza.
+
+Ejemplos incluyen la tokenización de datos generados por aspiradoras robóticas para mejorar su rendimiento (evitando obstáculos, mejor reconocimiento del entorno en los apartamentos). Otro ejemplo es los datos de servicio de una línea de producción, cuyo procesamiento optimizará los costos operativos o de producción.
+
+## Conclusión
+
+Los ejemplos muestran que la combinación de Robonomics Network y Ocean Protocol crea un tipo de activos fundamentalmente nuevo, anteriormente no disponible debido a la escasa automatización de los procesos técnicos y la imposibilidad de controlar de forma segura e intercambiar sus resultados. Además, estas son solo ideas obvias, y en el futuro, con la proliferación del IoT y los robots, pueden aparecer mercados completamente nuevos para datos ciberfísicos.

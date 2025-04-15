@@ -1,0 +1,117 @@
+---
+const { columns = 4, align, justify, textAlign = 'left', flexible = true, space = 'space' } = Astro.props;
+
+const getClassList = () => {
+  return [
+    'rb-grid-container',
+    `grid-${columns}`,
+    align ? `grid-align-${align}` : '',
+    justify ? `grid-justify-${justify}` : '',
+    `grid-text-${textAlign}`,
+    flexible ? 'grid-flexible' : '',
+    `grid-space-${space}`,
+  ].filter(Boolean).join(' ');
+};
+---
+
+<div class={getClassList()}>
+  <slot></slot> <!-- This is the content slot -->
+</div>
+
+<style>
+  .rb-grid-container {
+    display: grid;
+    grid-template-rows: 1fr min-content ;
+    gap: var(--grid-space);
+    align-items: start;
+    margin-bottom: var(--space);
+  }
+
+  .grid-space-0 {
+    --grid-space: 0rem;
+  }
+
+  .grid-space-space {
+    --grid-space: 1rem;
+  }
+
+  .grid-space-x2 {
+    --grid-space: 4rem;
+  }
+
+  .rb-grid-container.grid-1 {
+    grid-template-columns: 1fr
+  }
+
+  .rb-grid-container.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rb-grid-container.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .rb-grid-container.grid-4 {
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--text-width) / 4 - var(--grid-space)), 1fr));
+  }
+
+  .rb-grid-container.grid-5 {
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--text-width) / 5 - var(--grid-space)), 1fr));
+  }
+
+  .rb-grid-container.grid-6 {
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--text-width) / 6 - var(--grid-space)), 1fr));
+  }
+
+  .rb-grid-container.grid-align-start {
+    align-items: start;
+  }
+
+  .rb-grid-container.grid-align-center {
+    align-items: center;
+  }
+
+  .rb-grid-container.grid-align-end {
+    align-items: end;
+  }
+
+  .rb-grid-container.grid-justify-start {
+    justify-items: start;
+  }
+
+  .rb-grid-container.grid-justify-center {
+    justify-items: center;
+  }
+
+  .rb-grid-container.grid-justify-end {
+    justify-items: end;
+  }
+
+  .rb-grid-container.grid-text-left {
+    text-align: left;
+  }
+
+  .rb-grid-container.grid-text-center {
+    text-align: center;
+  }
+
+  .rb-grid-container.grid-text-right {
+    text-align: right;
+  }
+
+  @media screen and (max-width: 1080px) {
+    .rb-grid-container.grid-2.grid-flexible {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .rb-grid-container.grid-2.grid-flexible {
+      grid-template-columns: 1fr;
+    }
+
+    .rb-grid-container.grid-3.grid-flexible {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

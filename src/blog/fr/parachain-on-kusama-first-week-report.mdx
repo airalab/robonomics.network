@@ -1,0 +1,153 @@
+---
+title: "Robonomics parachain sur Kusama : rapport de la première semaine"
+date: 2022-01-18
+published: true
+locale: 'fr'
+tags: ['Robonomics parachain']
+cover_image: /blog/images/parachain-on-kusama-first-week-report/cover.jpg
+description: "Depuis le lancement du parachain Robonomics, nous avons réussi à accomplir une assez large gamme de tâches, et pour cela, un grand merci à tous ceux qui ont interrompu tôt leurs repas agréables, le champagne et les voyages entre amis et en famille les 2 et 3 janvier :) Les informations ci-dessous sont celles auxquelles j'ai personnellement participé et que je veux vous partager."
+abstract: "Depuis le lancement du parachain Robonomics, nous avons réussi à accomplir une assez large gamme de tâches, et pour cela, un grand merci à tous ceux qui ont interrompu tôt leurs repas agréables, le champagne et les voyages entre amis et en famille les 2 et 3 janvier :) Les informations ci-dessous sont celles auxquelles j'ai personnellement participé et que je veux vous partager."
+author: '@ensrationis'
+---
+
+## Infrastructure de base du parachain Robonomics
+
+Le parachain Robonomics [a été lancé le 9 janvier 2022](https://twitter.com/EnsRationis/status/1480139879057174530). À son lancement, [la version 1.4 de "Kusama Parachain Launch"](https://github.com/airalab/robonomics/releases/tag/v1.4.0) – qui peut être utilisée pour lancer un [collator](https://wiki.polkadot.network/docs/learn-collator) – a été publiée sur GitHub.
+
+[En collaboration avec p2p.org](https://economy.p2p.org/p2p-validator-and-robonomics-announce-partnership-for-launch-of-parachains-on-kusama/), nous avons lancé le premier des collators de parachain. Au cours de la première semaine d'exploitation du parachain, un réseau ouvert de [plus de 40 collators](https://telemetry.parachain.robonomics.network/#/Robonomics) est apparu.
+
+Permettez-moi de vous rappeler que le rôle du collator est de collecter les candidats de blocs de parachain et de les transférer pour validation au réseau de nœuds validateurs de la chaîne de relais Kusama. Les collators de parachain effectuent des calculs sur le bloc actuel., et essayez de propager le bloc formé le plus rapidement possible parmi les collateurs de parachain. En retour, le collateur reçoit une petite quantité garantie de XRT en récompense des calculs effectués plus 50 % de toutes les commissions générées dans le bloc.
+
+Deux [jours après le lancement de la parachain](https://discord.com/channels/803947358492557312/895723411278557227/930224374630473738), un concours a été organisé parmi les membres de la communauté pour voir qui pourrait mettre en place les premiers collateurs.
+
+Le troisième jour, [Subscan a basculé](https://twitter.com/AIRA_Robonomics/status/1480833207834664960) l'explorateur de blocs de la parachain Robonomics du testnet (Frontier Network) vers le mainnet.
+
+Le wiki de Robonomics a été mis à jour pour fournir des instructions testées par la communauté pour la construction et l'exécution d'un collateur de parachain, notamment :
+
+- [comment construire un nœud collateur à partir de la source](https://wiki.robonomics.network/docs/en/how-to-build-collator-node/)
+- [comment lancer le collateur Robonomics](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/)
+
+Les problèmes liés au travail des collateurs peuvent être discutés :
+
+- sur Discord : https://discord.gg/hBJS7uE2NC
+- ou sur Element : https://app.element.io/#/room/#robonomics:matrix.org
+
+## Parachain en cours d'exécution pour aujourd'hui
+
+Pour ceux qui ne sont pas encore familiers avec le concept de runtime, je vous conseille de lire cet article en premier : https://docs.substrate.io/v3/runtime/frame/
+
+La structure actuelle du runtime de Robonomics est la suivante :
+
+<TextCard>
+
+### Parachain Robonomics
+
+#### Fonctions du système cyber-physique
+- Jumeau numérique
+- Lancement
+- Datalog
+- Robot-en-service
+
+#### Abonnement IoT
+- Enchère d'abonnement
+- Mise en jeu
+
+#### Gouvernance on-chain
+- Trésorerie
+- Tech comm
+- Démocratie
+
+#### Jeton
+- Soldes
+- Transaction
+- Multisig
+- Vesting
+
+#### Maintenance du réseau
+- Phare
+- Identité
+
+</TextCard>
+
+Vous pouvez lire les descriptions techniques des modules de runtime spécifiques à la parachain Robonomics sur le lien suivant : https://crates.robonomics.network/pallet_robonomics_datalog/index.html
+
+De plus, nous parlerons également séparément de RobLes modules parachain de Robonomics alors que nous approchons de l'École de Développeurs d'Hiver 2022, qui se tiendra en février.
+
+## Création du Comité Technique Parachain
+
+![le Comité Technique Parachain](/blog/images/parachain-on-kusama-first-week-report/1-parachain-technical-committee.png)
+
+Les six développeurs de projet ayant le plus souvent participé au développement du réseau de frontière ont été ajoutés au [Comité Technique Parachain](https://wiki.polkadot.network/ru-RU/docs/learn-governance#technical-committee).
+
+Le Comité Technique peut produire des référendums d'urgence, qui sont accélérés pour le vote et la mise en œuvre. Ceux-ci sont utilisés pour des correctifs de bogues d'urgence ou pour une mise en œuvre rapide de nouvelles fonctionnalités éprouvées en combat dans le runtime.
+
+## Trésorerie Parachain reconstituée et prête à l'emploi
+
+Similaire au fonctionnement du [Trésor](https://wiki.polkadot.network/ru-RU/docs/learn-treasury) du Réseau Kusama, les développeurs de Robonomics prévoient d'utiliser plus de 400 000 XRT pour soutenir la communauté. Des exemples de demandes au Trésor de Kusama sont disponibles ici kusama.polkassembly.io.
+
+Les instructions sur la manière de soumettre une demande au Trésor de Robonomics et les détails concernant les domaines prioritaires de financement seront discutés séparément dans des articles de blog ultérieurs.
+
+![Trésorerie Robonomics](/blog/images/parachain-on-kusama-first-week-report/2-Treasury.png)
+
+Le Trésor est disponible à l'adresse : https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/treasury
+
+## 1/12ème de la récompense de crowdloan pour les participants de la 4ème campagne de crowdloan distribué et le lancement du module de dotation
+
+Les développeurs de Robonomics ont terminé la distribution du 1/12ème des récompenses de crowdloan aux soldes des contributeurs de crowdloan. Vous pouvez vérifier le solde en utilisant Développeur > État de la chaîne > system.account():FrameSystemAccountInfo
+
+![État de la chaîne Robonomics](/blog/images/parachain-on-kusama-first-week-report/3-chain-state.png)
+
+La valeur libre comme indiquée dans la capture d'écran correspond à 1 102 517 448 Wn ≈ 1,1 XRT (le solde libre est affiché en micro XRT 10<sup>−6</sup>) et c'est le solde libre disponible pour le transfert dans le réseau.Le module de dotation a également été activé lors de la dernière mise à jour du runtime. Cette semaine, les primes 11/12 sont en cours d'envoi, et elles apparaîtront également dans Développeur > État de la chaîne > system.account(): FrameSystemAccountInfo sous "miscFrozen".
+
+La récompense complète de contribution au prêt de masse monétaire sera débloquée de manière linéaire au cours des 11 prochains mois. Le montant disponible pour le déblocage peut être consulté dans le champ "acquis" de la page Comptes.
+
+![Le montant disponible pour le déblocage](/blog/images/parachain-on-kusama-first-week-report/4-amount-available.png)
+
+Vers la fin de janvier, nous fournirons plus d'informations sur la réclamation d'un XRT supplémentaire par KSM contribué lors du prêt de masse monétaire pour ceux qui possèdent un NFT Robonomics Pioneer. Les développeurs de Robonomics en feront rapport séparément sur [Twitter](https://twitter.com/AIRA_Robonomics).
+
+## Migration de XRT depuis le réseau de la frontière
+
+Au cours des six derniers mois, nous avons continué à tester la fonctionnalité de la parachain dans le [réseau de la frontière](https://robonomics.network/blog/robonomics-frontier/). Lors de la première semaine de vie de la parachain sur Kusama, les développeurs ont arrêté le travail sur le réseau de la frontière et ont distribué les soldes de la parachain à Kusama.
+
+![Réseau de la frontière](/blog/images/parachain-on-kusama-first-week-report/5-frontier-network.png)
+
+Comme vous pouvez le voir sur la capture d'écran, le dernier bloc de la parachain Robonomics sur le réseau de la frontière de la chaîne de relais est le n°1 046 628, et le réseau de la frontière a cessé de produire des blocs il y a 143 heures.
+
+Vous pouvez vérifier votre solde au moment du dernier bloc dans le réseau de la frontière en utilisant le lien (Développeur > État de la chaîne > system.account: AccountInfo): 
+https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier .rpc.robonomics.network%2F#/chainstate 
+
+Il convient de noter que le transfert des soldes était une tâche multi-couches :
+- Tout d'abord, les jetons gratuits et misés ont été collectés.
+- Ensuite, les récompenses de mise ont été collectées, qui n'ont pas encore été reçues par les utilisateurs (non réclamées).
+- Les récompenses leur ont également été ajoutées et demandées pour retrait mais n'ont pas été retirées de la mise.
+- 11/12 des récompenses du prêt de masse monétaire pour avoir participé à la 1ère campagne de prêt de masse monétaire ("Plan B")les récompenses) ont été déduites des soldes des utilisateurs (voir ci-dessous).
+- Les valeurs reçues ont été ajoutées et envoyées à une adresse détenue par un développeur pour distribution.
+- Les 11/12 des récompenses de crowdloan pour les participants de la 4e campagne de crowdloan ont été envoyés en période de gel pendant 11 mois.
+
+Ainsi, le solde initial des participants sur la parachain Kusama devrait comprendre :
+- Les jetons XRT transférés via le pont Exodus.
+- Les récompenses de mise générées pendant la durée de vie de la parachain qui existait sur le réseau de relais du réseau frontalier.
+- Les récompenses des collators
+- 1/12 de la récompense de contribution de crowdloan de la participation à la 1ère campagne de crowdloan (récompenses "Plan B").
+- 1/12 des récompenses de contribution de crowdloan de la participation à la 4e campagne de crowdloan (gagnante)
+
+## Mise en jeu de XRT sur la parachain Kusama
+
+Dans la deuxième mise à jour de la parachain Robonomics, le module de mise en jeu XRT a été inclus.
+
+![Robonomics dapp](/blog/images/parachain-on-kusama-first-week-report/6-Robonomics-dapp.png)
+*Un exemple de travail avec la section de mise en jeu dans l'application Robonomics*
+
+La mise en jeu de XRT est disponible sur l'application Robonomics au lien suivant : https://robonomics.app/#/staking/
+
+La récompense de mise est d'environ 10% par an.
+
+Pour les participants à la 4e campagne de crowdloan, les développeurs de Robonomics ont augmenté la récompense de mise à 50%. Veuillez noter que ce pourcentage de récompense de mise est limité uniquement au montant de XRT généré via votre participation à la 4e campagne de crowdloan.
+
+Il convient de noter que la pleine mise en œuvre du [cycle de vie autonome de la parachain](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/) changera les valeurs constantes de la récompense de mise en variables qui s'adaptent à la taille de la récompense de mise de KSM sur la chaîne de relais. Ce sujet sera discuté plus en détail dans le Livre blanc de Robonomics 2022. Après sa publication, nous commencerons à modifier le réseau.
+
+## Le plus important est à venir !
+
+Les scénarios d'application de Robonomics [passent déjà du réseau frontalier à la parachain Kusama](https://twitter.com/EnsRationis/status/1481900111856906240). Vers la fin de janvier,Nous annoncerons les dates de la semaine de démonstration Robonomics des projets IoT prêts à présenter leurs solutions basées sur la parachain Kusama.
+
+Suivez notre [Twitter](https://twitter.com/AIRA_Robonomics) pour les mises à jour, et rappelez-vous que Robonomics ne vise pas à être une licorne parmi les projets cryptographiques tant que nous n'aurons pas tracé un chemin de développement durable pour la croissance des utilisateurs. En 2022, des dizaines de scénarios d'application Web3 intéressants dans le domaine de l'IoT nous attendent. Cependant, le projet ne prendra sa place légitime que lorsque Robonomics deviendra utile pour des milliers d'utilisateurs réguliers. En attendant, nous devons tous continuer à travailler et à aider au développement du projet; essayez de changer le monde qui vous entoure vers l'introduction des technologies Web3; par exemple, connectez Home Assistant au transfert de données des appareils IoT via la parachain Robonomics: [Vidéo Leemo](https://www.youtube.com/watch?v=iB2Z8HtERgs) ([Instructions sur GitHub](https://github.com/airalab/robonomics-smarthome)).

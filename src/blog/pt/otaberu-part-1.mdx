@@ -1,0 +1,69 @@
+---
+title: Otaberu - Ferramenta de Código Aberto para Gerenciar Redes P2P para Dispositivos de Borda e Robótica
+date: 2024-10-19
+published: true
+locale: 'pt'
+tags: ['Anúncios']
+cover_image: /blog/images/otaberu-part-1/cover.png
+description: "O rápido crescimento no número de dispositivos cria novos desafios para disponibilidade e segurança. Uma solução mais eficiente é necessária para a comunicação segura entre dispositivos que aborda as limitações do PKI baseado em SSH. O robô-agente Otaberu oferece essa solução, possibilitando um PKI personalizado para robôs usando padrões e protocolos modernos libP2P para resolver esses problemas."
+abstract: "O rápido crescimento no número de dispositivos cria novos desafios para disponibilidade e segurança. Uma solução mais eficiente é necessária para a comunicação segura entre dispositivos que aborda as limitações do PKI baseado em SSH. O robô-agente Otaberu oferece essa solução, possibilitando um PKI personalizado para robôs usando padrões e protocolos modernos libP2P para resolver esses problemas."
+---
+
+No início da era dos computadores, várias pessoas usavam um único computador. Agora, o número de dispositivos ao nosso redor está se proliferando, e é comum que cada pessoa tenha dois, três ou mais dispositivos. Empresas possuem centenas ou milhares de dispositivos que formam frotas, e em breve, a maioria das pessoas terá frotas de dispositivos do tamanho de pequenas empresas hoje. Como resultado, há uma crescente necessidade de ferramentas simples, porém eficazes, para garantir a comunicação entre esses dispositivos, superando as limitações de métodos tradicionais como o SSH..
+
+Estamos apresentando [otaberu](https://github.com/airalab/otaberu) - uma ferramenta de código aberto projetada para facilitar a rede peer-to-peer (P2P) para dispositivos de borda e robótica. Esta ferramenta foca na acessibilidade, permitindo a conexão perfeita de robôs e dispositivos de borda localmente ou globalmente sem a necessidade de extensa configuração de rede. Lançado sob a licença MIT, esta ferramenta fornece a segurança e transparência que os desenvolvedores de projetos importantes de infraestrutura física realmente precisam. Seja você gerenciando um pequeno laboratório de robótica ou uma frota de milhões, esta solução P2P é projetada para se adaptar às suas necessidades. Ela permite a comunicação global usando a Infraestrutura de Chave Pública (PKI) integrada, permitindo a troca sem esforço entre operações locais e globais sem a necessidade de reconfiguração manual. O protocolo central usado nesta ferramenta foi testado em alguns dos maiores sistemas distribuídos, garantindo robustez e confiabilidade. A ferramenta é adequada para uma variedade de casos de uso, incluindo automação CI/CD, implantações de software e atualizações de configuração eficientes para frotas de robôs em grande escala. Este post irá aprofundar nos detalhes técnicos e explorar aplicações potenciais.
+
+<YouTube id="https://www.youtube.com/watch?v=2ZKs4cWMLTE" posterQuality="max"/>
+
+*Esta breve demonstração em vídeo mostra as possibilidades do otaberu no caso do Boston Dynamics Spot*
+
+## Principais características
+
+### Gerenciamento de acesso
+
+Existem três métodos comuns de controle de acesso para computadores. O primeiro - usando senhas - é característico de usuários não qualificados. É o mais fraco emEm termos de segurança, a segunda - autorização por chave criptográfica - é tipicamente usada por especialistas em TI na maioria das organizações. Isso já requer algumas habilidades de administração de sistemas dos usuários para emissão, armazenamento e garantia da segurança dessas chaves, pois geralmente são armazenadas no disco rígido. E, finalmente, o método mais seguro é a autorização por meio de certificados. Geralmente, manter um sistema desse tipo requer serviços adicionais que precisam de configuração. É o método mais complexo, exige qualificações elevadas e é principalmente utilizado por grandes empresas de TI como Facebook, Amazon, Netflix, para as quais a manutenção da infraestrutura de TI está diretamente relacionada ao valor que oferecem aos seus clientes.
+
+Otaberu tem como objetivo fornecer aos desenvolvedores comuns o mais alto nível de proteção sem a necessidade de implantar serviços complexos de gerenciamento de segredos e conhecimentos profundos em redes. A ferramenta permite a criação de um análogo de AC (Autoridade de Certificação) com base nas chaves criptográficas do proprietário da frota de robôs. O papel de AC no otaberu é desempenhado pelo proprietário - o primeiro e principal papel no conjunto de funções do otaberu. O proprietário possui um único arquivo de configuração para sua frota de robôs, por meio do qual é realizada a gestão de acesso. Lá, o proprietário lista todos os seus robôs, suas chaves e metadados, e os usuários autorizados a se conectar a eles. Nossa equipe também desenvolveu uma utilidade de linha de comando chamada rn-cli para criar e editar o arquivo de configuração usando uma interface de terminal. A capacidade de iniciar uma interface de terminal é especialmente significativa para dispositivos sem um display gráfico, como computadores remotos ou de placa única com recursos limitados.
+
+<RbImage zoom src="/blog/images/otaberu-part-1/otaberu-tui-1.png" alt="Interface de Usuários Otaberu TUI" />  
+
+*Interface de Usuário do Terminal - Usuários*
+
+<RbImage zoom src="/blog/images/otaberu-part-1/otaberu-tui-2.png" alt="Interface de Robôs Otaberu TUI" />  
+
+*Interface de Usuário do Terminal - Robôs*
+
+### **Acessibilidade de Rede**
+
+No artigo [Controle Remoto Seguro de Robótica: Solução Robonomics](https://robonomics.network/blog/secure-robotics-remote-control-via-web3/), abordamos pela primeira vez o aspecto da conexão segura com robôs, os problemas que surgem na forma de NAT e o que o mundo Web3 pode oferecer a esse respeito, onde mencionamos brevemente a biblioteca libP2P.
+
+Em geral, a libP2P não é exatamente uma biblioteca, como geralmente é chamada. Sua natureza é dupla. Por um lado, a libP2P representa uma pilha de rede ou conjunto de especificações. Nesse sentido, é mais semelhante à Internet do que a qualquer projeto de software específico.
+
+O lendário clássico do movimento de código aberto, criador do ZeroMQ Peter Hintjens, escreveu em seu livro "Arquitetura Social":
+
+> A natureza inovadora da Internet não vem de um pequeno e seleto grupo de Einsteins. Ela vem de RFCs que qualquer um pode usar e melhorar, feitos por centenas e milhares.de indivíduos inteligentes, embora não exclusivamente inteligentes. Ele vem do software de código aberto que qualquer pessoa pode usar e melhorar. Ele vem do compartilhamento, da remistura e da escala da comunidade. Ele vem da contínua acumulação de boas soluções e da eliminação das ruins.
+
+No cerne do libP2P estão vários documentos ou especificações que padronizam formatos, protocolos e convenções, prescrevendo como várias tecnologias P2P devem funcionar. O segundo aspecto do libP2P, ou a periferia deste conjunto, consiste em bibliotecas que implementam esses padrões. Essas bibliotecas são escritas em diferentes linguagens de programação (atualmente, implementações em Go, Rust, TypeScript, Nim, C++, Swift, Kotlin/JVM, Python existem e estão em desenvolvimento ativo) ou frameworks. Ainda assim, todas são compatíveis entre si se suportarem o mesmo conjunto de padrões e o protocolo utilizado.
+
+A arquitetura original cuidadosamente projetada do libP2P permite o uso de diferentes opções de transporte (tcp, quic, websocket), roteamento e travessia de NAT (autonat, circuit-relay-v2, hole-punching), conexão segura (tls, noise), descoberta de nós (bootstrap, random-walk, mdns-discovery, rendezvous), protocolos de transmissão de mensagens, multiplexação de fluxo de dados e outras ferramentas para criar redes peer-to-peer. Informações detalhadas podem ser obtidas na página de implementações do [libp2p.io](https://libP2P.io/implementations/)Com a ajuda do libP2P, otaberu simplifica a conectividade de dispositivos sem configurações de rede complexas. Dispositivos sem acesso direto à internet podem se conectar a outros dispositivos na rede local e receber atualizações da rede global. Ao combinar essas tecnologias, essa ferramenta permite a auto-organização eficiente de robôs e dispositivos de borda em redes coesas, independentemente de operarem no mesmo espaço físico ou estarem distribuídos globalmente.
+
+## Casos de Uso
+
+As capacidades dessa ferramenta são extensas, oferecendo soluções para uma variedade de desafios de rede em dispositivos de borda e robótica:
+
+- **Pipelines CI/CD para Desenvolvimento de Robótica**: Possibilita a automação dos processos CI/CD em toda a frota de robôs. Essa ferramenta suporta a atualização de software em vários nós de forma eficiente, otimizando os ciclos de desenvolvimento e implantação.
+- **Pipelines de Fluxo de Dados**: Estabelece comunicação confiável para coleta e processamento de dados dentro de uma frota. Isso resulta em insights consistentes a partir dos dados gerados por diferentes dispositivos de borda, ajudando a desagregar os dados.
+- **Atualizações de Configuração Sem Acesso à Internet**: Um exemplo prático é um robô recebendo uma configuração atualizada de um serviço em nuvem e compartilhando essa atualização localmente com outros robôs na rede. Esse método permite que robôs sem conexão à internet permaneçam atualizados sem necessidade de conectividade direta com a internet.
+
+### Aprimoramentos Futuros
+
+Estamos trabalhando ativamente na expansão da funcionalidade dessa ferramenta P2P:
+
+- **Listas de Controle de Acesso (ACLs)**: Introduzindo controles de acesso baseados em usuários para permitir diferentes níveis de permissões. Isso permitirá que administradores de sistema, desenvolvedores e usuários finaisinteraja com robôs ou funcionalidades específicas de acordo com seu papel.
+- **Streaming de Dados Otimizado**: Implementação de links diretos após a descoberta inicial por meio do libP2P para aprimorar o desempenho do streaming de vídeo, otimizando a largura de banda disponível para casos de uso com muitos vídeos.
+
+### Mantenha-se Informado
+
+Esta postagem faz parte de nossa série contínua que aborda o desenvolvimento de software de robótica moderna. Futuros artigos incluirão discussões sobre integração de PKI em robótica, estratégias eficazes de CI/CD e melhores práticas para integrar essa ferramenta com o ROS 2 (Sistema Operacional de Robô). Para desenvolvedores interessados em construir sistemas distribuídos, gerenciar redes de robótica ou expandir as capacidades da frota, esta ferramenta foi projetada para fornecer valor e simplificar suas operações. Encorajamos você a explorar o repositório de código aberto e contribuir para o seu desenvolvimento. Adoraríamos receber seu feedback no Github ou Discord.
+
+**Comece Agora**: Acesse nosso repositório de código aberto [aqui](https://github.com/airalab/otaberu) e siga a documentação para configurar sua primeira rede P2P.

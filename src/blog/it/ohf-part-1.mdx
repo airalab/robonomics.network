@@ -1,0 +1,141 @@
+---
+
+title: Progettazione di Meccanismi Robusti per il Mercato RWA di Attrezzature Intelligenti
+
+date: 2024-11-11
+
+published: true
+
+locale: 'it'
+
+tags: ['Annunci']
+
+cover_image: /blog/images/ohf-part-1/cover.webp
+
+description: "Finanziare il mercato delle attrezzature intelligenti in rapida evoluzione presenta significativi ostacoli. Questo articolo propone una soluzione che combina gemelli digitali per il monitoraggio in tempo reale, mercati di previsione per un'allocazione efficiente del capitale e contratti di condivisione del rischio, tutti governati da un modello DAO trasparente per consentire decisioni ottimali in questa industria trasformativa."
+
+---
+
+I recenti progressi nell'apprendimento automatico (ML) hanno aperto un'enorme ondata di opportunità per la robotica per automatizzare nuovi compiti nel mondo reale. Mentre la robotica industriale rimane il segmento dominante per dimensioni, i robot di servizio - quelli che operano tra le persone - hanno registrato la crescita più rapida. Il valore stimato in dollari del mercato dei robot di servizio professionale era di circa **21,6 miliardi di dollari USA nel 2023,** con un tasso di crescita annuo composto del 38%. I progressi nell'ML e la crescente carenza di manodopera hanno creato un momento unico in cui la robotica di servizio è finalmente pronta per un'ampia implementazione, affrontando esigenze critiche in vari settori e nella nostra vita quotidiana.
+
+"Le piccole e medie imprese (PMI) hanno bisogno di un facile accesso all'automazione" e "Democratizzare" la robotica sono le tendenze chiave nella robotica attuale, [secondo l'IFR](https://ifr.org/img/worldrobotics/Press_Conference_2024.pdf). I robot per la logistica e i magazzini sono statiguidando questa tendenza. I primi dispiegamenti di rover per la consegna in città sono iniziati ed è chiaro che l'ottimizzazione del percorso è fondamentale per mantenere i margini. La robotica medica ha visto un'enorme crescita durante la pandemia ed è stata anche una delle categorie leader da allora, con disinfezione e sterilizzazione che rappresentano i principali casi d'uso. I rover per l'ospitalità in hotel e ristoranti hanno registrato un grande aumento nei mercati asiatici e li stiamo vedendo sempre di più in Europa e negli Stati Uniti. Agricoltura, pulizia professionale, ispezioni e manutenzione, costruzione e industrie pesanti, sicurezza / ricerca e soccorso - l'elenco delle nuove aree di applicazione continua a crescere. Alcune delle previsioni più ottimistiche dicono che potremmo avere più robot umanoidi che persone nel prossimo decennio.
+
+Ecco l'elenco delle prime 5 aree di applicazione per la robotica di servizio professionale nel 2023, secondo la Federazione Internazionale di Robotica:
+
+![card-1.png](/blog/images/ohf-part-1/card-1.png)
+
+Tuttavia, man mano che queste tecnologie evolvono, gli approcci finanziari tradizionali non riescono a tenere il passo con le sfide uniche poste dal leasing di attrezzature intelligenti e dagli investimenti in robotica.
+
+**I modelli tradizionali**, come prestiti o leasing, spesso sono **inadeguati per le attrezzature intelligenti** a causa dell'obsolescenza tecnologica rapida, dell'asimmetria delle informazioni e dell'incertezza delle prestazioni. Le tecnologie di robotica e intelligenza artificiale evolvono rapidamente, rendendo gli investimenti a lungo termine rischiosi, poiché i modelli tradizionali non tengono conto degli aggiornamenti o delle modifiche richieste frequentemente. I produttori spesso hanno una maggiore conoscenza sulle prestazioni delle attrezzature rispetto ai locatari, portando a inefficienze nell'allocazione del capitale osottoprezzatura. Inoltre, i programmi di pagamento fissi non riescono a riflettere il vero valore dell'attrezzatura, specialmente quando le prestazioni dipendono dagli aggiornamenti software o dall'integrazione. La mancanza di competenza tra le istituzioni finanziarie nel gestire asset basati sull'IA contribuisce ulteriormente alla sottocapitalizzazione di queste tecnologie ad alto potenziale.
+
+È necessario un sistema migliore di allocazione del capitale per l'attrezzatura intelligente e connessa. Un sistema che sia reattivo al ritmo molto più veloce dell'innovazione e resiliente alle incertezze e alle informazioni asimmetriche detenute dai diversi partecipanti di mercato.
+
+## Principi del Design del Meccanismo Robusto
+
+Il design del meccanismo è un campo dell'economia e della teoria dei giochi che si concentra sulla progettazione di regole o sistemi (meccanismi) per raggiungere obiettivi specifici, anche quando i partecipanti dispongono di informazioni private e possono agire strategicamente o colludere. Un esempio classico è la progettazione di aste in cui i partecipanti hanno valutazioni private dei beni all'asta.
+
+Una sfida chiave nel design del meccanismo robusto è gestire gli **spazi dei tipi** - tutte le possibili caratteristiche degli agenti, come le loro preferenze e convinzioni. Poiché non possiamo considerare tutti gli spazi dei tipi possibili, i meccanismi devono essere progettati per gestire situazioni diverse in cui gli agenti potrebbero non conoscere appieno le preferenze o le convinzioni reciproche.
+
+Ci sono molti **agenti diversi** che possono essere direttamente coinvolti nella trattativa dell'attrezzatura, come i **produttori di attrezzature (OEM)**, gli **integratori e fornitori di manutenzione**, gli **originatori di asset**, gli **sottoscrittori** e gli **investitori**. La coordinazione tra di loro comporta costi transazionali significativi, senza considerare le complessità aggiuntive nel gestire gli interessi pubblici più ampi. Nonostante la complessità di questeinterazioni, abbiamo l'obiettivo di sviluppare un meccanismo robusto che:
+
+- **Garantisce la compatibilità degli incentivi** per tutti i partecipanti al mercato
+- **Assegna il capitale per raggiungere l'efficienza ex-post**
+- **Rimane resiliente alle incertezze** nelle condizioni di mercato e nelle convinzioni dei partecipanti.
+
+Per rendere più facile la comprensione, ti illustro questo concetto con un semplice esempio:
+
+**Compatibilità degli Incentivi**: Immagina di giocare a un gioco in cui devi dire quanto ti piacciono diversi tipi di caramelle. Se dici la verità, otterrai la tua caramella preferita. La **compatibilità degli incentivi** significa che la scelta migliore è essere onesti perché in questo modo otterrai ciò che desideri veramente. In altre parole, essere sinceri è la mossa più intelligente.
+
+**Efficienza Ex-Post**: Dopo che tutti hanno condiviso le loro preferenze, le caramelle vengono distribuite. L'**efficienza ex-post** significa che ognuno ottiene la caramella che preferisce e nessuna caramella viene sprecata o data a qualcuno che non la gradisce. Questo garantisce che ognuno riceva la propria caramella preferita, rendendo tutti felici con ciò che ricevono.
+
+Ritengo importante utilizzare meccanismi compatibili agli incentivi quando si introducono tecnologie così importanti, come la Robotica e l'Intelligenza Artificiale Incarnata, che hanno il potenziale di alterare profondamente il tessuto della società. Assicurarsi che questi meccanismi siano robusti è essenziale per massimizzare il beneficio sociale e ottenere risultati equi ed efficienti nella diffusione delle tecnologie trasformative.
+
+
+
+## Progettazione del Mercato degli Asset del Mondo Reale (RWA) per l'Equipaggiamento Intelligente
+
+Progettare un robustoIl meccanismo di allocazione di capitale in nuove categorie di apparecchiature intelligenti è estremamente impegnativo a causa della complessità e della natura in evoluzione del settore. Tuttavia, vedo un'opportunità per diversi approcci per potenziare la solidità di questo meccanismo.
+
+### **Gemelli Digitali e Oltre**
+
+Questo è al centro di ciò che fa Robonomics. Nell'articolo ["Introduzione ai Gemelli Digitali"](https://robonomics.network/blog/digital-twins-introduction/), abbiamo spiegato il concetto - rappresentazioni digitali di entità fisiche o processi. I Gemelli Digitali non sono modelli statici ma sistemi dinamici che ricevono continuamente dati in tempo reale dai loro corrispettivi fisici, consentendo aggiornamenti continui e riflessioni accurate dello stato attuale. Questo flusso continuo di dati consente simulazioni e analisi precise, facilitando decisioni informate riguardo all'operatività, manutenzione e ottimizzazione degli asset fisici.
+
+Per catturare ed gestire efficacemente i dati provenienti dalle apparecchiature intelligenti, Robonomics offre uno strumento open-source chiamato [Otaberu](https://robonomics.network/blog/otaberu-part-1/). Otaberu è progettato per facilitare la rete peer-to-peer (P2P) per dispositivi periferici e robotica, consentendo comunicazioni fluide e sicure tra dispositivi senza configurazioni di rete estese. Fornisce un solido framework per la raccolta dati e la gestione dei gemelli digitali.
+
+I gemelli digitali fungono da strato fondamentale per implementare progetti di meccanismi solidi per l'allocazione di capitale nei mercati delle apparecchiature intelligenti. Fornendo una rappresentazione digitale completa e in tempo reale degli asset fisici, i gemelli digitali consentono il monitoraggio preciso e l'analisi delle prestazioni delle apparecchiature, dei modelli di utilizzo e delle esigenze di manutenzione. Questa dettagliata conoscenza permetteper lo sviluppo di strategie sofisticate che ottimizzano l'allocazione di capitale, garantendo che le risorse siano dirette in modo efficiente per massimizzare i rendimenti e migliorare la longevità e la produttività dell'attrezzatura intelligente.
+
+I Digital Twins nel contesto dell'allocazione di capitale aprono anche la discussione sugli autonomi robocorporations, che sono guidate da meccanismi di governance on-chain. Queste entità autonome possono prendere decisioni in modo indipendente basandosi sull'input di mercato, rendendole capaci di gestire attività, allocare risorse e persino partecipare a transazioni economiche senza intervento umano.
+
+
+### **Mercati delle previsioni**
+
+I mercati delle previsioni e il robusto design dei meccanismi mirano entrambi a ottenere informazioni veritiere da agenti con conoscenze riservate per raggiungere risultati efficienti. Integrando i mercati delle previsioni nel nostro quadro di meccanismi, possiamo **migliorare l'efficienza ex-post** delle decisioni sull'allocazione di capitale garantendo che le decisioni riflettano le informazioni più aggiornate e accurate disponibili, portando a una migliore allineamento dell'allocazione delle risorse con i risultati realizzati.
+
+I seguenti passaggi illustrano come il processo potrebbe essere implementato:
+
+- Stabilire un mercato delle previsioni per ciascuna categoria di attrezzatura intelligente in considerazione (rovers di consegna, braccia di imballaggio, ecc.).
+- Consentire a un ampio gruppo di portatori di interessi di scambiare contratti basati su metriche di prestazioni future dell'attrezzatura, come percentuale di uptime e costi di manutenzione.
+- Utilizzare il prezzo di mercato per riflettere la convinzione collettiva su se l'attrezzatura raggiungerà specifici obiettivi di prestazione nel periodo di locazione.
+- Se il mercato delle previsioni indica una probabilità elevata che l'attrezzatura si comporterà bene (ad esempio, uptime elevato e bassi costi di manutenzione), allocare più capitale per il noleggio di quell'attrezzatura.
+- Al contrario, se il mercato delle previsioni suggerisce una scarsa prestazione, ridurre l'allocazione di capitale omodificare i termini del contratto di locazione per mitigare le potenziali perdite.
+- I partecipanti al mercato delle previsioni vengono premiati o penalizzati a seconda delle scommesse che effettuano.
+
+I mercati delle previsioni consentono un'efficiente aggregazione delle conoscenze private provenienti da diversi portatori di interesse, aggiornamenti in tempo reale sulle aspettative di performance e un'adattamento continuo alle nuove informazioni, riducendo l'incertezza e portando a un design meccanico più resiliente.
+
+Quando diventano disponibili nuove informazioni, come ad esempio l'aggiornamento del Digital Twin dell'attrezzatura intelligente, i prezzi dei mercati delle previsioni si adeguano di conseguenza, consentendo una riallocazione dinamica del capitale. Questo aiuta a mitigare il rischio di sovrainvestire in asset che non performano bene, garantendo nel lungo periodo che gli asset ad alte prestazioni ricevano finanziamenti adeguati.
+
+Allineando l'allocazione del capitale con le intuizioni di mercato continuamente aggiornate, gli underwriter possono prendere decisioni più informate, ottimizzare i loro portafogli e ridurre il rischio finanziario.
+
+
+### **Strategie di Condivisione del Rischio**
+
+Le strategie di condivisione del rischio giocano un ruolo cruciale nel ridefinire il meccanismo di allocazione del capitale per l'attrezzatura intelligente, aiutando a bilanciare i rischi e **aumentare la compatibilità degli incentivi**. Gli accordi di leasing tradizionali sono relativamente rigidi, basandosi tipicamente su pagamenti fissi senza tener conto delle prestazioni dinamiche dell'attrezzatura o dei cambiamenti imprevisti.
+
+Strategie come contratti simili a quelli assicurativi o bonus basati sulle prestazioni possono essere impiegate per creare un approccio più flessibile e adattivo che condivida efficacemente i rischi e porti a un design meccanico più robusto.
+
+Ad esempio, un contratto simile a un'assicurazione può aiutare a distribuire il rischio di tempi di inattività imprevisti: se i dati del Digital Twin rivelano tempi di inattività imprevisti dovuti a difetti del produttore, una parte del pagamento potrebbe essere rimborsata. In questo modo, il peso finanziario dei problemi operativi viene mitigato e tutti sono incentivati ​​amantenere le prestazioni.
+
+Il modello pay-for-outcomes fornisce un ulteriore livello di condivisione del rischio. Il modello Robots-as-a-service (RAAS) sta guadagnando slancio nel settore della robotica, ma è ancora considerato innovativo da molti attori tradizionali nel finanziamento di attrezzature. Collegando i pagamenti ai benefici aziendali generati dalla tecnologia (come il numero di scatole spostate in un giorno o i chilometri percorsi nella consegna autonoma), i partecipanti sono incoraggiati a concentrarsi sul raggiungimento di risultati tangibili.
+
+Ad esempio, se un robot logistico migliora l'efficienza del magazzino del 20%, una parte di quel guadagno di efficienza può essere utilizzata per finanziare il pagamento mensile. Questo approccio aiuta le aziende a collegare il costo dell'attrezzatura al proprio successo operativo, riducendo il rischio finanziario durante periodi incerti in cui i risultati potrebbero essere meno prevedibili. L'allineamento qui è duplice: le aziende si sentono più sicure di pagare solo in proporzione al valore ricevuto, mentre i fornitori sono incoraggiati a fornire attrezzature che offrono in modo affidabile benefici aziendali.
+
+Con attrezzature intelligenti in grado di generare dati in tempo reale, diventano fattibili meccanismi robusti di condivisione del rischio, consentendo risposte dinamiche ai problemi di prestazione e allineando gli incentivi attorno ai risultati effettivi. Questa evoluzione nelle strutture di leasing consente ai partecipanti di mercato di rispondere in modo adattivo ai cambiamenti tecnologici, garantendo che i rischi e i premi derivanti dall'adozione di attrezzature avanzate siano condivisi in modo più equo. In effetti, la relazione diventa più una partnership, piuttosto che un accordo contrattuale rigido, favorendo la fiducia e incoraggiando l'innovazione.
+
+
+### **Governance DAO per l'Origine e la Sottoscrizione di Attrezzature**
+
+È cruciale stabilire strutture di governance che supportino un'allocazione efficiente e incentrata sugli incentivi del capitale nei prossimi 3-5anni mentre l'industria della robotica prende forma.
+
+L'Organizzazione Autonoma Decentralizzata (DAO) è una struttura di governance ideale per gestire il processo di sottoscrizione nelle trattative di attrezzature intelligenti. Il suo obiettivo principale è determinare quali nuove categorie supportare e come allocare il capitale in modo efficace.
+
+Applicando i principi del robusto design dei meccanismi, possiamo migliorare le probabilità che le risorse siano dirette verso opportunità di investimento ad alto valore, minimizzando i rischi associati all'informazione asimmetrica e alle incertezze di mercato.
+
+L'Underwriters DAO dovrebbe utilizzare meccanismi basati su aste per fare scommesse informate su categorie promettenti. Le intuizioni dei mercati predittivi dovrebbero migliorare l'accuratezza delle valutazioni e informare le strategie di offerta qui. Un processo autonomo può quindi allocare il capitale in modo ottimale, basandosi sulla combinazione unica di convinzioni detenute dai membri dell'Underwriters DAO.
+
+Una volta che il capitale iniziale è raccolto nel DAO e allocato, un ciclo di feedback basato sui dati del Digital Twin inizia a guidare ulteriori decisioni. A questo punto, un numero maggiore di investitori può iniziare a partecipare tramite tranche aggiuntive, offrendo coperture, prodotti garantiti da attrezzature, agli investitori di asset digitali.
+
+La capacità di decidere quali trattative vengono offerte alla comunità più ampia di investitori raggruppati è fondamentale, e le scommesse vincenti dovrebbero essere appropriate ricompensate. Questo è ciò che crea il valore di far parte della governance del DAO di per sé, separato dalla quota garantita da asset proporzionale al capitale investito nelle attrezzature intelligenti.
+
+Ecco uno schema operativo semplice per un tale DAO:
+
+![card-2.png](/blog/images/ohf-part-1/card-2.png)
+
+
+
+## **Considerazioni Pratiche e Passaggi successivi**
+
+Questo è solo l'inizio. Il mio obiettivo è creare un meccanismo robusto di allocazione del capitale che renda i guadagni di produttività della rivoluzione robotica accessibili a tutti.
+
+Le idee sopra offrono un buon punto di partenza, ma ci sono limitazioni che devono essere prese in considerazione. I partecipanti potrebbero ancora impegnarsi in comportamenti strategici se credono di poter influenzare i prezzi per un guadagno personale e la limitata liquidità nelle fasi iniziali può rendere tutto ancora più semplice. Con abbastanza liquidità nei mercati di previsione e di capitale, questo ostacolo può essere superato, ma nelle fasi iniziali è importante scegliere attentamente i membri dell'Underwriters DAO.
+
+**Passaggi per lanciare un meccanismo robusto di allocazione del capitale in nuove categorie di attrezzature intelligenti:**
+
+1. Lanciare mercati di previsione per scegliere nuove categorie
+2. Formare l'Underwriters DAO per iniziare a concludere i primi affari
+3. Utilizzare contratti di condivisione del rischio per gestire il rischio del portafoglio
+4. Utilizzare i dati del Digital Twin per migliorare ulteriormente l'allocazione
+5. Sviluppare una struttura per una partecipazione più ampia degli investitori nei guadagni di produttività della rivoluzione robotica
+
+Se sei interessato a far parte di questo percorso o semplicemente desideri fare qualche domanda, lascia la tua email qui sotto.
+
+*Vitaly, Evangelista di Robonomics*

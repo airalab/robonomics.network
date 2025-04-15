@@ -1,12 +1,29 @@
-*.log
-.cache
-.DS_Store
-src/.temp
-node_modules
-dist
+# build output
+dist/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
 .env
-backup
-.vscode
-.idea
-commit.txt
-gscript.js
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/
+
+# vscode
+.vscode/
+
+astro_tmp_pages_*

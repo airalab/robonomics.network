@@ -1,0 +1,70 @@
+---
+title: Gehackt Johnny's Lab
+date: 2024-06-25
+published: true
+locale: 'nl'
+tags: ['Evenementen', 'Online school', 'Web3']
+cover_image: /blog/images/hacked-johnnys-lab/cover.png
+description: Er was onlangs een evenement "Hack Johnny's Lab" door Robonomics en ik geloof dat ik het op een bepaalde manier heb gehackt! Afgezien van de allereerste poging die ik verloor vanwege een misverstand over de regels, won ik elke ronde waaraan ik deelnam en hier is een kort "howto" verhaal.
+abstract: Hoi daar! PaTara aan de lijn. Er was onlangs een evenement "Hack Johnny's Lab" door Robonomics en ik geloof dat ik het op een bepaalde manier heb gehackt! Afgezien van de allereerste poging die ik verloor vanwege een misverstand over de regels, won ik elke ronde waaraan ik deelnam en hier is een kort "howto" verhaal. Pavel Tarasov [PaTara]"
+---
+
+Dus, een snelle en noodzakelijke herhaling van de regels: 12 woorden in een willekeurige volgorde, een 5-minuten durende video van een TurtleBot 4 die rondloopt in een laboratorium en de mnemonische zin verpest, 5-20 deelnemers die willen winnen en een vrije zondag om een strategie te bedenken.
+
+<RbImage zoom src="/blog/images/hacked-johnnys-lab/0.png" alt="Spelinterface" />
+
+Ik ben redelijk bekend met programmeren en ik heb een degelijke laptop en bijna geen vaardigheid in beeldherkenning. Meer dan dat, besloot ik om het eerlijk te spelen, wat betekent geen video downloaden, geen misbruik van afspeelsnelheid, geen navigatiebalk. Dus de gekozen strategie was een goede oude brutefKracht. Klinkt meer als hacken dan wat anders.
+Wat hebben we hier: een set van 12 woorden in een gemengde volgorde. Dit geeft ons 12! (factoriaal) opties voor zinnen 
+(479.001.600 om precies te zijn). Een behoorlijke hoeveelheid om te verwerken!
+
+
+## Strategie 1: dom en rechttoe rechtaan.
+
+Nou, wat heb ik nog meer nodig, gewoon gaan en sorteren! Maar hier is de eerste truc: 12! mnemonische zinnen pasten gewoon niet in 
+mijn 64 GB RAM! Ik kreeg een SIGTERM-fout in de IDE-console. 
+Dus ik heb een [iterator](https://docs.python.org/3/library/itertools.html#itertools.permutations) gemaakt en ben begonnen met het proces. 
+Het kostte me wat tijd, niet precies zeker hoeveel, maar binnen 30 seconden, om het aantal combinaties te berekenen. 
+Gewoon een evaluatieve run. Maar het ding is: mijn laptop liet zelfs zijn ventilatoren niet op volle toeren draaien! Een enkele kern was belast. 
+
+Ik zocht een Python [multiprocessing](https://docs.python.org/3/library/multiprocessing.html)-pakket om alle 
+logische kernen van mijn CPU te belasten (20 in totaal) om de berekeningen parallel uit te voeren. Anders zou het een eeuwige reis zijn geweest. 
+Maar daarvoor moest ik mijn iterator in 12 delen opsplitsen. De itertools multiprocessing-pakketten werken samen, 
+maar alleen wanneer een hele reeks opties in het RAM-geheugen staat. Dat was niet mijn geval, dus het volgende werd uitgevoerd:
+
+<RbImage zoom src="/blog/images/hacked-johnnys-lab/1.png" alt="Paralleliseren"/>
+
+
+Vanaf dat moment en daarna zou ik deze strategie gebruiken om mijn CPU-belastingsmonitor er zo uit te laten zien:
+
+<RbImage zoom src="/blog/images/hacked-johnnys-lab/1_1.png" alt="CPU-belasting"/>
+
+
+Ik geloof dat dit de uitvoeringstijd heeft verkort tot ongeveer 5 seconden. Ik vond de beste manier om door de combinaties te itereren, maar er waren er gewoon te veel! De eerste stap omvatte ongeveer 480 miljoen extrinsieken in het netwerk. De node zou me eenvoudigweg verbannen voor DDOS en zelfs zonder dat zou het eeuwig duren!
+
+<RbImage zoom src="/blog/images/hacked-johnnys-lab/2.png" alt="1e poging"/>
+
+
+Alleen voor debugdoeleinden startte ik het script (voor node-communicatie gebruikte ik een [py-substrate-interface](https://pypi.org/project/substrate-interface/1.0.3/) pakket) en merkte ik op dat vóór het uitvoeren van de oproep fouten kreeg zoals _ongeldige mnemonische zin_. Een aanwijzing! Als ik de combinatie vooraf kon valideren, zou ik veel tijd besparen! GitHub-analyse leidde me naar [deze](https://github.com/polkascan/py-substrate-interface/blob/master/substrateinterface/keypair.py#L170) regel code en ik voegde een combinatievalidatie toe aan mijn script. Dit heeft het aantal mogelijke extrinsieken teruggebracht tot ongeveer 39.000.000, 12 keer sneller!
+
+<RbImage zoom src="/blog/images/hacked-johnnys-lab/3.png" alt="2e poging"/>
+
+
+Maar nog steeds, 39 miljoen oproepen zouden me voor altijd verbannen, dus ik moest dieper graven. Hoe kon ik het aantal berekeningen aanzienlijk verminderen? Nou, door een beetje af te wijken van mijn oorspronkelijke strategie. Zie je, ik was van plan om het bekijken van video's te vermijden,"Een hacker, die zelfs geen video nodig heeft", maar de wiskunde deed me van gedachten veranderen. Verander het naar een strategie die 132 keer sneller is. Hieronder staat de uitleg:
+
+<RbImage zoom src="/blog/images/hacked-johnnys-lab/4.png" alt="2 Woorden Invoegen"/>
+
+Hiermee hoefde ik alleen maar twee juiste posities van woorden in een zin te weten (één zou te lang duren, experimenteel bevestigd). Ik zou door 10! combinaties itereren, twee woorden op de juiste posities invoegen en de zin valideren, waardoor de opties werden teruggebracht tot ongeveer 300.000, een behoorlijke afname! Bovendien paste het 10! combinatieset perfect in mijn RAM, uitstekend!
+
+<RbImage zoom src="/blog/images/hacked-johnnys-lab/5.png" alt="3e Poging"/>
+
+Ook besloot ik in plaats van alle tokens elke 300k keer over te dragen en een openbare node daarvoor te bellen, mijn eigen lokale Robonomics-node op te zetten die gesynchroniseerd is met de keten en het te vragen om het saldo van een resulterend accountadres! Een query is veel "makkelijker" dan een extrinsieke. Na een hele nacht synchroniseren (ik heb een cache limiet ingesteld zodat mijn laptop niet opblaast met ketengegevens in zijn ROM) probeerde ik het en.. dit was een ramp. Netwerktransacties (zelfs binnen een localhost) kostten te veel tijd. Ik wachtte niet eens tot het einde, het was overduidelijk veel langzamer dan het kijken van een hele video. Als ik maar het exacte adres van het account zou weten! Maar daarvoor heb ik een mnemonische zin nodig... **Of toch niet echt?**
+
+Kijk. De regels zeggen dat het gewenste accountheeft **precies** 42 XRT. Waarom zou ik niet alle actieve adressen in het netwerk krijgen, ze filteren op precies 42 XRT en elk gegenereerd adres vergelijken met een lijst van mogelijke doelwitten (ongeveer 20, afnemend tot 1 aan het einde). Makkelijk gezegd en gedaan.
+
+Nu, nadat ik mijn script nogmaals heb aangepast, ben ik eindelijk tot slechts één query en één transactie gekomen die me zeker de gewenste prijs zouden opleveren.
+
+<RbImage zoom src="/blog/images/hacked-johnnys-lab/6.png" alt="4e poging"/>
+
+Nu, nadat ik 25 seconden van de video heb bekeken (ondertussen de woorden van een mnemonische invullend), zou ik slechts 30 seconden nodig hebben om de beloning te stelen. Gehackt.
+
+<RbImage zoom src="/blog/images/hacked-johnnys-lab/7.png" alt="Discord Bot-melding"/>

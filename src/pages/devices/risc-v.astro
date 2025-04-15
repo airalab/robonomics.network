@@ -1,0 +1,99 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// data
+import devices from '../../data/devices.js';
+
+// components import 
+import DeviceBuySection from '../../components/blocks/DevicesBuySection.vue';
+import RiscVModel from '../../components/3dmodels/Server.vue';
+
+// images
+
+// Filter products to get the current one
+const riscv = devices.products.filter(product => product.code === 'server');
+---
+
+
+<Layout 
+  title={$tr(riscv[0].title)} 
+  description={$tr("The first server for a smart home built entirely on open-source — from CPU to decentralized cloud.")}
+  ogImage="/og-pics/devices-riscv.webp"
+  pageTitle={$tr(riscv[0].title)} 
+  backlink={{title: $tr('All hardware'), link: '/devices/', label: $tr('Go to all hardware')}}
+>
+
+  <DeviceBuySection price="$275" client:only>
+    <RiscVModel noanimation client:visible/>
+  </DeviceBuySection>
+
+  <article class="layout layout__text space-b-2">
+    <p>{$tr('Take control of your smart home data with open-source home server on RISC-V processor and Web3 connectivity')}.</p>
+    <p>{$tr('Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving for years on our')} <a aria-label="go to decentralized sensor map" href="https://sensors.social/" target="_blank">{$tr('decentralized sensor map')}</a>.</p>
+  </article>
+
+  <article class="layout space-b-2">
+    <div class="grid-3">
+      <section class="oldy">
+        <h5 class="space-b-05">{$tr('Surveillance-free')}</h5>
+        <p>{$tr('No hidden data logs on corporate servers while still allowing secure remote access.')}</p>
+      </section>
+      <section class="oldy">
+        <h5 class="space-b-05">{$tr('No vendor lock-in')}</h5>
+        <p>{$tr('Supports over 3000 integrations with devices from various manufacturers.')}</p>
+      </section>
+      <section class="oldy">
+        <h5 class="space-b-05">{$tr('Open hardware')}</h5>
+        <p>{$tr('Open processor architecture and open-source code ensure a trustless system.')}</p>
+      </section>
+    </div>
+  </article>
+
+
+  <h2 class="layout title-lined"><span>{$tr('Open and efficient hardware')}</span></h2>
+
+  <article class="layout layout__text space-b-2">
+    <p>{$tr('Our Home Server is powered by a RISC-V processor and features fully transparent circuit board schematics. RISC-V is an open and modular processor architecture that comes with a BSD license. Unlike proprietary ARM, it offers flexibility for customization without licensing restrictions, making it ideal for trustless IoT devices and servers.')}</p>
+    <ul>
+        <li>{$tr('Processor:')} </b> {$tr('StarFive JH-7110 with RISC-V 4-core CPU, 2 MB L2 cache, up to 1.5 GHz, RV64GC ISA support')}</li>
+        <li><b>{$tr('GPU:')}</b> {$tr('IMG BXE-4-32 MC1, up to 600 MHz')}</li>
+        <li><b>{$tr('Memory:')}</b> {$tr('8 GB LPDDR4 SDRAM, up to 2800 Mbps')}</li>
+        <li><b>{$tr('Storage:')}</b> {$tr('32 GB TF card (minimum)')}</li>
+        <li><b>{$tr('Interfaces:')}</b> {$tr('2x Gigabit Ethernet ports, 4x USB 3.0 Type-A ports, 40-pin GPIO header, M.2 connector,  eMMC socket, 2-pin fan header')}</li>
+        <li><b>{$tr('Power:')}</b> {$tr('5V DC via USB-C, up to 30 W (minimum 3 A) or 5V input via 40-pin GPIO')}</li>
+        <li><b>{$tr('OS:')}</b> {$tr('Ubuntu 24.04 LTS')}</li>
+      </ul>
+  </article>
+
+  <h2 class="layout title-lined"><span>{$tr('Vendor agnostic smart home heart')}</span></h2>
+
+  <article class="layout layout__text space-b-2">
+    <p>{$tr('The server comes pre-installed with Home Assistant, an open-source home automation platform, giving you full control of your smart home without relying on third-party cloud services.')}</p>
+    <p>{$tr('Its modular design allows you to easily add components, automations, and integrations, supporting over 3,000 devices from various manufacturers without vendor lock-in. With support for Zigbee and Wi-Fi protocols, you can connect a wide range of devices, from temperature sensors to energy consumption monitors, all to a local server.')}</p>
+  </article>
+
+  <h2 class="layout title-lined"><span>{$tr('Designed for privacy')}</span></h2>
+  
+  <article class="layout layout__text space-b-2">
+    <p>{$tr('Our smart home server eliminates corporate interference, keeping your data local or encrypted with your personal key in decentralized Web3 storage. Enjoy complete privacy with no tracking, no surveillance—just secure, trustless control over your smart home.')}</p>
+
+    <p>{$tr('With Robonomics Web3 cloud and p2p remote control, you get cryptographic access to all the functions of smart home:')}</p>
+    <ul>
+      <li>{$tr('Access current device states remotely')}</li>
+      <li>{$tr('Control devices remotely via parachain or Libp2p')}</li>
+      <li>{$tr('Manage Home Assistant users')}</li>
+      <li>{$tr('Back up and restore Home Assistant configurations')}</li>
+      <li>{$tr("Store your home's digital twin in a secure, decentralized cloud")}</li>
+    </ul>
+  </article>
+
+  <h2 class="layout title-lined"><span>{$tr('Help & support')}</span></h2>
+  <article class="layout layout__text space-b-2">
+    <ul>
+      <li><a class="highlight" href="https://wiki.robonomics.network/docs/home-server-on-risc/#ubuntu-installation" target="_blank">{$tr('Home server on RISC V')}</a></li>
+      <li><a class="highlight" href="https://wiki.robonomics.network/docs/home-server-on-risc/#home-assistant-core-installation" target="_blank">{$tr('Home Assistant Core Installation')}</a></li>
+      <li><a class="highlight" href="https://wiki.robonomics.network/docs/home-server-on-risc/#robonomics-integration-installation" target="_blank">{$tr('Robonomics Integration Installation')}</a></li>
+      <li><a class="highlight" href="https://wiki.robonomics.network/docs/zigbee-devices/" target="_blank">{$tr('Zigbee Devices in Zigbee2MQTT')}</a></li>
+    </ul>
+  </article>
+</Layout>

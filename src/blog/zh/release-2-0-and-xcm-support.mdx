@@ -1,0 +1,64 @@
+---
+title: '发布 2.0 版本和 XCM 支持'
+date: 2022-06-09
+published: true
+locale: 'zh'
+cover_image: /blog/images/release-2.0-&-xcm-support/cover.jpg
+description: "发布 2.0 版本对我们的项目和社区来说是一个非常重要的里程碑，因为它为将 Robonomics 与 Kusama 生态系统中的其他平行链集成的可能性打开了大门。在未来几个月里，项目的研发团队将致力于与 Statemine、Karura、Moonriver、Crust 和 KILT 平行链的集成。"
+abstract: "发布 2.0 版本和 XCM 支持来啦！"
+tags: ['Robonomics 平行链', '路线图', '新版本发布']
+---
+
+[发布 2.0 版本](https://github.com/airalab/robonomics/releases/tag/v2.0.0) 对我们的项目和社区来说是一个非常重要的里程碑，因为它为将 Robonomics 与 Kusama 生态系统中的其他平行链集成的可能性打开了大门。在未来几个月里，项目的研发团队将致力于与 Statemine、Karura、Moonriver、Crust 和 KILT 平行链的集成。
+
+1.5 年前，我们迈出了通向平行链通信的第一步，在圣彼得堡的一次大师班上展示了两个区块链之间的消息交换。去年，Gav 发表了一系列文章，修改了 XCMP，将其转变为跨共识消息格式（XCM），并获得了第一个大于零的版本号。
+
+在对 XCM 进行重构两个月后，Robonomics 团队现在已经完成了我们在 Rococo 上的测试，并准备好与 Kusama 生态系统中的其他平行链集成。
+
+## Robonomics 中对 XCM 的基本支持
+
+Robonomics 开发人员认为 Kusama 本身是一个异构网络，正在尝试将物联网/机器人特定功能实现到 Robonomics 平行链代码中。
+
+我们将最大程度地利用其他平行链的功能，以帮助在可能的情况下实现智能家居/城市或工业场景。例如, 今年我们计划使用其他平行链的现有解决方案（而不是为以下问题创建我们自己的解决方案）：（1）用户访问令牌的个人余额，（2）dapp和IoT设备用户识别系统，（3）大文件存储，（4）在工作智能合约中使用IoT设备。
+
+在2.0版本发布时，Robonomics已准备好与在Kusama网络上运行的任何平行链集成。您可以在[主Robonomics存储库的Substrate](https://github.com/airalab/robonomics/tree/master/runtime/alpha)中找到XCM支持的软件实现。
+
+2022年5月和6月，已经在Rococo网络上与Relay链进行了兼容性测试，示例是将本机Rococo Relay Chain代币ROC（类似于KSM，但在Rococo测试网络上）传送到Robonomics平行链。
+
+<YouTube id="https://youtu.be/BJHSFDZt0y4" posterQuality="max"/>
+
+[Twitter帖子](https://twitter.com/AIRA_Robonomics/status/1534081132765097984)：
+
+<Tweet id="https://twitter.com/AIRA_Robonomics/status/1534081132765097984" />
+
+如果您有任何基于将Robonomics与其他Kusama平行链集成的想法，请发送电子邮件至research@robonomics.network或加入我们的[Discord](https://discord.gg/atduhWZpVr)以在我们的主要社区频道中进行讨论。
+
+## 与Statemine集成
+
+我们与Statemine集成的主要目标是启动Robonomics平行链的liability()函数。liability()函数与以太坊中的主要Robonomics函数非常相似，允许您组织一个完整的周期-使用机器人作为服务。从与Statemine集成的那一刻起，IoT应用程序的开发人员将能够在Statemine中创建自己的代币（或使用任何现有的Statemine代币）来启动智能设备/机器人以执行给定的程序。用户程序执行完毕后，代币将自动转移到机器人的余额中。
+
+早在春天，我们展示了一个简单的示例，使用Statemine中的代币来启动咖啡机，并描述了访问令牌化开发的一个场景。文章中提到的设备：[加密无政府主义者的联合办公，p1](https://blog.aira.life/coworking-for-crypto-anarchists-p1-5ebecb252f2d)。考虑到办公室设备的使用和对设备访问的差异分配，与访问令牌结合使用非常契合，同时还结合了责任（）功能。
+
+另一个关于Statemine与Robonomics集成的例子，基于我们现有的用例，是使用望远镜来铸造NFT明信片的能力。今天，用户余额存储在Statemine中，然后使用RMRK发行NFT。从我们与Statemine的集成开始，望远镜将能够接收一个任务，通过责任（）功能创建一幅图像，然后将发送给望远镜的访问令牌仅在将NFT链接添加到责任（）执行结果后才会进入望远镜的余额。
+
+工作状态：2022年第3季度
+
+## 与Karura的集成
+
+作为以太坊和Dotsama生态系统的长期建设者，Robonomics相信整合去中心化的交换方式来交换Robonomics平行链本地代币（XRT）。在Karura交换上列出XRT是允许我们的代币社区以去中心化的方式交换平行链本地代币的理想方式，打开这些HRMP通信渠道是实现这一目标的第一步。
+
+Robonomics开发者与Karura进一步整合的一个想法是为Kusama网络代币提供自动货币和价值交换点。我们将单独分享更多信息，当然在将XRT添加到Karura Swap的第一步之后。
+
+工作状态：2022年第3季度
+
+## 与Moonriver的集成
+
+Robonomics平行链可以成为从Moonriver智能合约内部启动智能设备的通用机制。我们目前正在研究这种架构，并讨论在Moonriver平行链上使用[DAO IPCI智能合约](https://github.com/DAO-IPCI/DAO-IPCI)进行单独的碳足迹抵消方案。
+
+工作状态：2022年第3季度
+
+## 与KILT的集成
+
+多年来研究机器人市场，Robonomics开发者一致认为，在考虑自动化城市生活、物流和工业供应链的复杂场景时，设备识别是最重要的任务之一。KILT是将各种平行链功能集成到一起的持续工作的绝佳示例。一个异构网络，解决对物联网市场至关重要的问题。
+
+工作状态：2022年第四季度

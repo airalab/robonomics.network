@@ -1,0 +1,86 @@
+---
+title: "Robonomics Schule 2024: Spielregeln für Hack Johnny's Lab"
+date: 2024-06-05
+published: true
+locale: 'de'
+cover_image: /blog/images/robonomics-school-2024-hack-johnny-lab/cover.jpeg
+description: "In den kommenden Tagen werden wir eine praktische Quest der Robonomics Schule 2024 starten, bei der Sie sich wie ein echter Datenschutzverletzer fühlen und sogar 'Tokens stehlen' können. Interessiert? Schauen Sie sich die Regeln für das Spiel 'Hack Johnny's Lab' an!"
+abstract: "In den kommenden Tagen werden wir eine praktische Quest der Robonomics Schule 2024 starten, bei der Sie sich wie ein echter Datenschutzverletzer fühlen und sogar 'Tokens stehlen' können. Interessiert? Schauen Sie sich die Regeln für das Spiel Hack Johnny's Lab an!"
+tags: ['Ankündigungen', 'Veranstaltungen', 'Online-Schule']
+---
+
+## Motivation für das Spiel
+
+Dieses Spiel schöpft viele Inspirationen aus den Ideen über die Flucht aus Black Mirror, über die Sergei in seinen Artikeln ([erster](https://robonomics.academy/en/learn/escape-from-black-mirror/overview/) und [zweiter](https://robonomics.academy/en/learn/school-2024-iot-vs-ai/overview/)) an der Robonomics Academy gesprochen hat.
+
+Stellen Sie sich vor, ein gewöhnlicher billiger Roboter-Staubsauger hat die ernsthafte Fähigkeit, das Leben seiner Besitzer auszuspionieren. Es spielt keine Rolle, ob eine bösartige Person Zugriff auf diese Daten erhält; Die KI-Analyse von Videoaufnahmen reicht aus, um Schlüsse über nicht öffentliche Aspekte des Lebens einer Person zu ziehen. Jede schmutzige Geheimnis, unauffällige Verhaltensmuster und private Informationen - alles landet im Profilofen. Denken Sie darüber nach, während Sie versuchen, einige kostenlose Tokens zu ergattern.
+
+## Ziel des Spiels
+
+In dem Spiel sollen die Spieler die Seed-Phrase aus den Daten des mobilen Roboters wiederherstellen. Der Roboter bewegt sich zufällig im Labor und zeichnet Videos auf. Von Zeit zu Zeit veröffentlicht der Roboter eines der 12 Wörter der Seed-Phrase. Während eines der Stopps des Roboters können die Spieler auf dem Video ein Schild mit einer Zahl sehen, das auf die Reihenfolge dieses Wortes in der Seed-Phrase hinweist. Die Aufgabe besteht darin, die Zahlen auf den Schildern mit dem Satz von Wörtern abzugleichen, die an den Stopps des Roboters erhalten wurden, um die korrekte Seed-Phrase wiederherzustellen.
+
+Der Spieler, der zuerst die Seed-Phrase wiederherstellt und alle XRT-Tokens von seiner Adresse abhebt, gewinnt.
+
+## Spielregeln
+
+*Registrierung der Spieler*
+
+- Um teilzunehmen, müssen die Spieler ein neues Konto auf der Robonomics-Parachain erstellen, und es muss mit dem Verschlüsselungstyp Edwards (ed25519) erstellt werden. Anleitungen sind auf [unserem Wiki](https://wiki.robonomics.network/docs/create-account-in-dapp/) verfügbar.
+- Anschließend müssen die Spieler zum [Discord-Bot](https://discordapp.com/channels/803947358492557312/1245395009964871772) auf dem Robonomics-Server gehen und auf eine Nachricht über den Beginn einer neuen Sitzung warten.
+- Zu Beginn der Sitzung senden die Spieler die erstellten Kontoadressen im **Robonomics-Parachain-Format** an den Discord-Bot. Die Spieler haben 60 Minuten Zeit, um einzutreten.
+
+*Laboruntersuchung*
+
+- Nach Abschluss der Registrierung wird der mobile Roboter das Labor erkunden. Danach sendet der Roboter eine Videoaufzeichnung und eine Liste der Wörter in der Seed-Phrase (nicht in der richtigen Reihenfolge).
+- Die Spieler warten auf eine Nachricht vom Discord-Bot über den Erhalt der Ergebnisse vom Roboter und gehen über einen Link zur Anwendung [zurück](https://robonomics.academy/en/demoapps/johnnyb-lab/), um mit der Wiederherstellung der Seed-Phrase zu beginnen.
+
+*Wiederherstellung der Seed-Phrase*
+
+- Um auf die Daten zuzugreifen, müssen die Spieler das registrierte Robonomics-Konto verwenden.
+- Die Spieler haben Zugriff auf die Videoaufzeichnung und das Set der Seed-Phrase-Wörter. Die Aufgabe des Spielers besteht darin, die richtige Reihenfolge der Wörter basierend auf den Zahlen auf den Schildern im Labor zu finden.
+
+<TextCard alignContent="left">
+
+**Beispiel.** Wenn das Set der Wörter lautet: 
+
+`finding -> church -> relation -> dog -> sample`
+
+Und die Route des Roboters, rekonstruiert aus dem Video, lautet: 
+
+`Schild #5 -> Schild #3 -> Schild #1 -> Schild #2 -> Schild #4`
+
+Dann:
+
+`finding — Schild #5 -> finding ist das 5. Wort`
+
+`church — Schild #3 -> church ist das 3. Wort`
+
+`relation — Schild #1 -> relation ist das 1. Wort`
+
+`dog — Schild #2 -> dog ist das 2. Wort`
+
+`sample — Schild #4 -> sample ist das 4. Wort`
+
+Als Ergebnis ergibt sich die korrekte Seed-Phrase: `relation dog church sample finding`
+
+</TextCard>
+
+
+- Nachdem die Seed-Phrase gefunden wurde, können die Spieler den Zugriff auf das Konto mit Tokens mithilfe einer beliebigen Anwendung wiederherstellen.
+- Zum Beispiel kann dies in der Polkadot.js-Erweiterung mit der Funktion *Konto aus vorheriger Seed importieren* erfolgen.
+- Alle wiederhergestellten Konten mit XRTs haben den Verschlüsselungstyp **Schnorrkel (sr25519)**, der in den meisten Polkadot-/Kusama-Brieftaschen unterstützt wird.
+
+
+*Bekanntgabe des Gewinners*
+
+- Sobald ein Spieler auf das Konto zugegriffen hat, muss er oder sie XRT abheben, um zum Gewinner der Sitzung zu werden, bis es jemand anderes tut.
+- Dies kann beispielsweise mithilfe der Polkadot.js-Erweiterung auf [unserem Polkadot-/Substrat-Portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/accounts) auf der Kontoseite erfolgen. Drücken Sie einfach die Senden-Schaltfläche und heben Sie die Tokens an einen beliebigen Ort ab. Sie können das Kontrollkästchen *Transfer the full account balance, reap the sender* verwenden, um den gesamten Kontostand abzuheben.
+- Nach Abschluss der Sitzung, nachdem die Tokens abgehoben wurden, wird der Bot den Discord-Kanal benachrichtigen, indem er die Adresse des Gewinners veröffentlicht.
+
+## Veranstaltungsbedingungen
+
+Die Veranstaltung dauert 9 Tage, während der Sie morgens und abends (insgesamt 18 Mal) die Möglichkeit haben, innerhalb jeder Sitzung als Erster **42 XRT** zu erreichen.
+
+Die Registrierung für die Sitzung beginnt jeden Tag um **10:00 und 20:00 EEST** und dauert 60 Minuten.
+
+Folgen Sie unseren sozialen Netzwerken, damit Sie den Start der Veranstaltung nicht verpassen!

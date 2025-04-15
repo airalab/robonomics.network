@@ -1,0 +1,72 @@
+---
+title: "FEECC: Een Gedecentraliseerd Productiegegevens Accumulatiesysteem"
+date: 2024-09-12
+published: true
+locale: 'nl'
+tags: ["Gebruiksscenario's", 'Web3']
+cover_image: /blog/images/feecc-recap/0-cover.png
+description: 'Al bijna 4 jaar wordt er een langdurig experiment uitgevoerd om Robonomics-technologieën toe te passen op een productiebedrijf in het echte leven. Hier volgt een korte samenvatting.'
+abstract: "Wat als een verkoper onweerlegbaar bewijs kan leveren van de echtheid van jouw.. cappuccino? En wat als het niet om een kopje koffie gaat, maar eerder om een grote toeleveringsketen voor een autofabrikant. Of, nog verantwoordelijker, een medisch apparatuurbedrijf? Pavel Tarasov [PaTara]"
+---
+
+Dus, koffie. Stel, het is niet gemorst en vervangen door water, en het was ook geen mix van oude shots of iets dergelijks. 
+Ik weet het, de overgrote meerderheid van bedrijven hecht waarde aan hun reputatie en bewijst dagelijks hun integriteit en koffie 
+is het product dat niet echt zoveel invloed kan hebben. 
+
+Maar met medische apparatuur kunnen de gevolgen meer zijn dan alleen een bedorven smaak. Hoe dan ook, we wisten niets van geneeskunde, 
+maar het idee achter [FEECC](https://multi-agent.io/projects/feecc/) begon met een koffie-experiment.
+
+<RbImage zoom src="/blog/images/feecc-recap/1-coffee.png" alt="Koffieschema" />
+
+Dus eigenlijk was dit gewoon opnamesoftware die werd geactiveerd via een grote rode knop en een QR-code labelprinter, 
+maar onder de motorkap zat een hele set Web3-magie.
+Ten eerste werd de video niet opgeslagen in een regulier bestandssysteem. In plaats daarvan werd IPFS gebruikt. Het belangrijkste voordeel hiervan is het 
+ding genaamd CID - Content Identifier. Een sleutel met een vaste lengte om je bestand van over de hele wereld te vinden (theoretisch).
+Ten tweede en het belangrijkste, de CID werd in een Datalog geplaatst - een functie van het Robonomics Parachain-pallet waarmee je 
+elke tekenreeks tot 512 bytes voor altijd in een blockchain kunt opslaan! Dit betekent dat door de contentgerelateerde pointer in 
+een door crypto ondersteunde gegevensopslag te plaatsen, je de transparantie en het vertrouwen in dat kopje koffie waarborgt. Je hebt het misschien niet elke 
+keer nodig als je je favoriete lavanda raf neemt, maar op die ene dag dat het bitter smaakt, kunnen jij en de verkoper er helemaal zeker van zijn wie deschuldige hier.
+
+
+## Niet alleen een klantenservice, maar ook een intern MES-module.
+
+MES staat voor Manufacturing Execution System. Het is verantwoordelijk voor het optimaliseren en analyseren van het productieproces 
+en er is een specifieke plek waar FEECC van pas kan komen. Zie je, er is een medisch apparatuurbedrijf, EndoStars, 
+dat handmatig geassembleerde onderdelen gebruikt en die onderhevig zijn aan het risico op defecten. Voordat FEECC geïnstalleerd was 
+kon je nooit zeggen of het defect te wijten was aan een leveranciersfout of aan een fout van de assembler. Bovendien waren er verschillende 
+processen die nog geoptimaliseerd moesten worden, zoals het verstrekken van assemblageschema's in digitale vorm in plaats van het doorzoeken van stapels 
+papier. Dus na een tijdje van ontwikkelings- en integratieprocessen wordt het volgende schema nu gebruikt:
+
+<RbImage zoom src="/blog/images/feecc-recap/2-assembly.png" alt="Assemblage" />
+
+De monteurs krijgen hun onderdelen en starten het opnameproces met een knop in een webapplicatie (deze applicatie bevat ook assemblage-instructies). 
+Vervolgens krijgen ze een unieke barcode om op het onderdeel te plakken en assembleren ze het onder videobewaking. Wanneer het assemblageproces is voltooid, 
+net als bij koffie, krijgen ze de gegevens opgeslagen in IPFS om te worden gedistribueerd en wordt de CID in de Robonomics-keten geplaatst om voor altijd te worden 
+opgeslagen. Optioneel kunnen ze een QR-code krijgen (onafhankelijk van de database) voor een klant, maar de meerderheid van de gevallen is voor een interne 
+kwaliteitscontroleafdeling.
+
+
+Voordat ze de goederen aan de klant verzenden, voeren ze een kwaliteitscontrole uit. Dit proces wordt ook vergemakkelijkt met enkele 
+FEECC-webmodules en het protocol wordt ook in de keten opgeslagen, maar het belangrijkste punt hier is de link van het product 
+met zijn assemblagegegevens (video's op dit moment). Deze link is onvervangbaar omdat de gegevens in de blockchain staan en het 
+adres ook is gekoppeld aan de inhoud zelf. Hiermee kan de kwaliteitscontroleafdeling er zeker van zijn dat hun collega's onschuldig zijn 
+en kunnen de monteurs zichzelf beschermen tegen beschuldigingen.
+
+<RbImage zoom src="/blog/images/feecc-recap/3-qcd.png" alt="QCD" />
+
+## Architectuur.
+Hieronder staat een schematische samenvatting van de architectuur van de software die in dit geval is gebruikt. Sommige technische details zijn
+weggelaten, maar het concept zelf is duidelijk: met FEECC kunt u waardevolle gegevens opslaan in een onvervangbare vorm om fraude te voorkomen en
+veilige toeleveringsketens te garanderen. Dit kan worden geleverd met andere productiemodules met hetzelfde kernidee: veilige en
+transparante gegevensopslag en -gebruik.
+
+<RbImage zoom src="/blog/images/feecc-recap/4-architecture.png" alt="Architecture" />
+
+## Wat zijn de cijfers?
+
+Het koffie-experiment begon 4 jaar geleden en de integratie van medische productie vond plaats in het najaar van 2021. En we hebben
+enkele cijfers om te delen:
+
+<RbImage zoom src="/blog/images/feecc-recap/5-numbers.png" alt="Numbers" />
+
+Met dat alles kunnen we zeker zeggen dat FEECC een in het echte leven bewezen Web3-applicatie is om veilige gegevensaccumulatie en -opslag voor producties te bieden.

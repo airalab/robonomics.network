@@ -1,0 +1,110 @@
+---
+title: "Sepolia와 Rococo 자산 허브 간 XRT 전송의 Snowbridge를 통한 성공적인 테스트"
+date: 2024-07-22
+published: true
+locale: 'ko'
+cover_image: /blog/images/snowbridge-sepolia-rococo-tested/snowbridge-sepolia-rococo-tested.png
+description: "우리는 Sepolia와 Rococo 자산 허브 네트워크 간 XRT 토큰을 Snowbridge 프로토콜을 사용하여 성공적으로 전송하는 테스트를 진행했습니다."
+abstract: "Snowbridge는 Polkadot과 이더리움 간의 일반 목적, 신뢰할 수 있고 탈중앙화된 브릿지입니다."
+tags: ['Polkadot', 'Ethereum']
+---
+
+## 소개
+
+안녕하세요, 여러분, 로보노믹스 프로젝트는 현재 이더리움과 Kusama 두 네트워크에서 운영되고 있습니다. 현재 이 두 네트워크 간에 XRT 토큰을 전송하는 방법이 없습니다. 그래서 우리는 Ethereum과 Polkadot 간의 범용 브릿지로 개발 중인 Snowbridge 프로젝트를 주목하고 있습니다: https://docs.snowbridge.network/
+
+지난 한 달 동안, 우리는 Snowbridge의 지침을 따라 테스트 네트워크 Sepolia와 Rococo Asset Hub 간에 ERC20 XRT 토큰을 성공적으로 전송했습니다:
+
+https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers
+
+## XRT 계약 배포 및 Snowbridge에 토큰 등록
+
+먼저, XRT 계약을 Sepolia에 배포했습니다:
+
+https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf
+
+우리 자체 토큰을 전송하는 것을 테스트해야 했기 때문에 이를 등록해야 했습니다. 이 단계는 두 부분으로 구성되어 있습니다: 필요한 수수료 확인 및 토큰 등록:
+
+1. 필요한 수수료를 확인하기 위해 브릿지 계약의 `quoteRegisterTokenFee` 메서드를 호출하여 `5000000500000000000`이라는 값을 받았습니다:
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteRegisterTokenFee.png" alt="quoteRegisterTokenFee" />
+
+2. 토큰을 등록하기 위해 브릿지 계약의 `registerToken` 메서드를 호출했습니다: (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#readProxyContract)/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#writeProxyContract)를 사용하여 필요한 수수료와 배포된 토큰의 주소를 지정합니다:
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/registerToken.png" alt="registerToken" />
+
+등록 프로세스는 약 30분 정도 소요되며, 새로운 토큰은 Rococo 자산 허브의 foreignAssets에 나타날 것입니다. 이를 Rococo 자산 허브의 chain state query를 사용하여 확인할 수 있습니다 (https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/chainstate):
+<RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/foreign_asset_query.png" alt="Check if token registered" />
+
+등록에 성공한 후 다음 응답을 받았습니다:
+```
+{
+    owner: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    issuer: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    admin: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    freezer: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
+    supply: 0
+    deposit: 100,000,000,000
+    minBalance: 1
+    isSufficient: false
+    accounts: 1
+    sufficients: 0
+    approvals: 0
+    status: Live
+}
+```
+
+## Sepolia에서 Rococo 자산 허브로 XRT 전송 테스트
+
+다음 단계는 Sepolia에서 Rococo 자산 허브로 XRT 토큰을 전송하는 것이었습니다. 이를 위해 다음 작업을 수행했습니다:
+
+1. 먼저, 다음 계정에서 브릿지 계약이 15 XRT를 사용할 수 있도록 허용했습니다: 
+
+    https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf#writeContract
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="XRT 지출자 승인" />
+
+2. 그런 다음 토큰을 보내기 위해 필요한 수수료를 요청했습니다:
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
+
+3.  Snowbridge의 지침에 따라 Sepolia에서 Rococo 자산 허브로 XRT 이체를 시작했습니다. WETH 예시를 사용했습니다: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
+    
+    `destinationAddress.data` 필드에 대한 중요한 참고 사항: 해당 값은 따옴표로 둘러싸여야 했습니다 (예: "0xb0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d").
+
+    이 단계에서 우리는 상당한 지연을 겪었습니다. 예상했던 30분 대신 거래는 몇 일이 걸렸습니다. 결국, 모든 이체가 성공적으로 완료되었습니다.
+    예시 거래: https://sepolia.etherscan.io/tx/0xec539cd89cb955ffea2ff65cae6685a8abb0966a2c1b76876a308cc036cd18fb
+
+    Rococo 자산 허브의 대상 계정에 있는 XRT 잔액은 체인 상태에서 `foreignAssets.account()` 요청을 보내어 확인할 수 있습니다:
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="foreignAssets.account 예시" />
+
+    총 15 XRT를 보냈으므로 Rococo 자산 허브의 잔액은 다음과 같았습니다:
+    ```
+    {
+        balance: 15,000,000,000
+        status: Liquid
+        reason: Consumer
+        extra: null
+    }
+    ```
+
+## Rococo 자산 허브에서 Sepolia로 XRT 이체 테스트
+
+마지막 단계는 Rococo 자산 허브에서 Sepolia로 XRT를 보내는 것이었습니다. Rococo 자산 허브에서 다음 extrinsic을 수행했습니다: 
+
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/extrinsics/decode/0xe1028400b0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d01360c34e5d8f49f802fc1cc2413bfcd827b054b3ab1195bddcba0168dfaf9a47693b305b96e68d238d9adeed276452c2bc156b3bd189ba016543c354edd95ad81f501040000001f0b03020109079edaa8020300010300f42680c6a807de3cfdfcfe49583b01d80278a39e030400020209079edaa80203009e216c3af5f0c6ce70851b93dddb62573380cfef0002286bee0000000000
+
+이 거래는 Rococo 자산 허브 블록 탐색기에서 볼 수 있습니다:
+
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/explorer/query/0x3524f4bef9e736cdff1d812d79e130cf6ade7a3fe3222a0853772fd1b6c3c89a
+
+Sepolia의 해당 거래:
+
+https://sepolia.etherscan.io/tx/0xe8a95dca350143a0c41891137e332962f2918351dcfc2612519e69c7a5c46772
+
+이 단계는 비교적 빠르게 완료되었습니다. 결과적으로 1 XRT가 Sepolia로 다시 이체되었습니다. Rococo 자산 허브의 XRT 잔액은 14 XRT로 유지되었습니다:
+
+```
+{
+    balance: 14,000,000,000
+    status: Liquid
+    reason: Consumer
+    extra: null
+}
+```

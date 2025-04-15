@@ -1,0 +1,42 @@
+---
+import PapersItem from './Papersitem.astro';
+
+const {assets = [], classes = ''} = Astro.props;
+
+const years = [2023, 2022, 2021, 2020, 2019, 2018, 2017]
+
+
+const yearPapers = (year) =>  {
+  return assets.filter(asset => asset.year === year && !asset.pinned)
+}
+---
+
+{assets && (<div class="papers__container"> 
+  {years.length && years.map(year => (
+    <div>
+      <h2>{ year }</h2>
+      <ul class="list-simple papers__list">
+        {yearPapers(year).length && yearPapers(year).map(asset => (
+          <li class="share" class={classes}>
+            <PapersItem asset={asset} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+
+</div>)}
+
+<style>
+  .papers__container > div {
+    margin-bottom: calc(var(--space) * 2)
+  }
+
+  .papers__container h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: calc(var(--space) * 0.4);
+    letter-spacing: 0;
+  }
+</style>

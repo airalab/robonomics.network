@@ -1,0 +1,76 @@
+---
+// components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/cases/CaseHeader.astro";
+import Footer from "../../components/cases/CaseFooter.astro";
+import CaseText from "../../components/cases/CaseText.astro";
+---
+
+<Layout
+  casePath={Astro.url}
+>
+  
+  <Header
+    path={Astro.url.pathname}
+    introText={$tr("In 2022, the Robonomics team began collaborating with other parachain teams within the Polkadot ecosystem to leverage the unique strengths of this decentralized network. This collaboration resulted in the launch of a Backup and Data Archiving Service designed specifically for robotics companies.")}
+    introImg="robotic-companies.webp"
+  />
+
+  <section class="case-page layout">
+
+    <CaseText
+      text={$tr('With robots generating enormous amounts of data—including videos, raw technical data, and logs—storage can become a significant challenge, especially at scale. This new service offers an affordable and secure solution to meet these needs.')}
+    />
+
+    <CaseText
+      title={$tr('Addressing the Challenge of Data Storage')}
+      multiple
+    >
+      <p>{$tr('Robots generate vast quantities of data daily, from technical logs and sensor readings to videos and other valuable information. Storing such data efficiently and affordably has been a longstanding issue, especially as the data continues to grow in volume. Traditional storage solutions can be costly, which presents a significant barrier for robotics companies seeking to manage and archive this data on a large scale.')}</p>
+      <p>{$tr('As these companies scale up their operations, managing this data effectively while ensuring security, privacy, and compliance with regulatory standards becomes a complex challenge. The need for an affordable, secure, and easily accessible data archiving solution is more pressing than ever.')}</p>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Our Solution: A Decentralized Approach')}
+      multiple
+    >
+    <p><b>{$tr('The Robonomics platform')}</b> {$tr('has now made it possible for robotics companies to archive their data using a')} <b>{$tr('Web3-based backup and data archiving service')}</b>. {$tr('This solution leverages the Polkadot ecosystem and integrates with the')} <b>{$tr('Crust Network')}</b> {$tr('to provide a cost-effective, secure, and transparent way of storing large volumes of robot-generated data.')}</p>
+    <p>{$tr('Key aspects of the solution include:')}</p>
+      <ul>
+        <li><b>{$tr('Affordable Data Storage:')}</b> {$tr('By using')} <b>{$tr('Crust Network')}</b>{$tr(', a decentralized storage solution, robotics companies can store their data affordably. This integration reduces the overall cost of storing massive datasets while maintaining access and scalability.')}</li>
+        <li><b>{$tr('Security and Traceability:')}</b> {$tr('Data stored on the <b>Crust Network</b> is encrypted with the user’s or device’s private key, ensuring that only authorized parties have access. Moreover, the data is fully traceable through the blockchain at every stage of its lifecycle, providing transparency and ensuring data integrity.')}</li>
+        <li><b>{$tr('Data Management Compliance:')}</b> {$tr('The decentralized and encrypted nature of the service also helps robotics companies meet their privacy and regulatory obligations. Whether for auditing purposes or for regulatory compliance, the service ensures that data is managed securely and in line with industry standards.')}</li>
+      </ul>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Key Technology Behind the Service')}
+      multiple
+    >
+      <p>{$tr('The breakthrough enabling this service is the creation of an')} <b>{$tr('HRMP (Horizontal Relay-routed Message Passing)')}</b> {$tr('channel between the')} <b>{$tr('Robonomics parachain')}</b> {$tr('and the')} <b>{$tr('Crust Network')} </b> {$tr('parachain. This channel facilitates the seamless flow of data between the two networks, combining Robonomics’ robotics-focused platform with Crust’s decentralized storage capabilities.')}</p>
+      <p>{$tr('This integration makes it possible to offer decentralized backup and data archiving services that are both secure and scalable. The decentralized nature of the storage solution ensures that data is safe, accessible, and traceable on the blockchain.')}</p>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Why This Service Is Essential')}
+      multiple
+    >
+      <p>{$tr('For robotics companies, reducing the cost of data storage and ensuring secure, transparent management of that data are critical. The')} <b>{$tr('Backup and Data Archiving Service')}</b> {$tr('provided by')} <b>{$tr('Robonomics')}</b> {$tr('and')} <b>{$tr('Crust Network')}</b> {$tr('meets these needs, offering a long-term solution for companies seeking to scale their data storage operations without breaking the bank.')}</p>
+      <p>{$tr('As the robotics industry continues to grow, the amount of data generated will continue to rise. This service ensures that companies can manage their data efficiently while adhering to privacy and regulatory standards. Furthermore, it allows companies to focus on innovation and growth rather than data storage challenges.')}</p>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Looking Ahead')}
+      multiple
+    >
+      <p>{$tr('This service represents the first step in what will likely be an expanding ecosystem of decentralized solutions for robotics companies. As the technology and industry continue to evolve, there will be further developments to enhance scalability, provide more encryption options, and integrate with other Web3 services.')}</p>
+    </CaseText>
+
+  </section>
+
+  <Footer 
+    text={`<p class=italic-abstract>${$tr('For additional details about the collaboration between Robonomics and Crust Network and how decentralized storage is reshaping data management for robotics companies, visit the official')} <a class='block' href='/blog/robonomics-and-crust-networks-strategic-partnership/' aria-label='Learn More About Robonomics and Crust Collaboration' target='_blank'>${$tr('blog')}</a>.</p>`}
+    title={$tr('Learn More About the Collaboration')}
+  />
+
+</Layout>

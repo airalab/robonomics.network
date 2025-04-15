@@ -1,0 +1,116 @@
+---
+title: ロボノミクス・クラウドローンキャンペーン、2022年12月
+date: 2022-12-12
+published: true
+locale: 'ja'
+tags: ['Robonomics parachain', 'Polkadot', 'お知らせ']
+cover_image: /blog/images/crowdloan-campaign-december-2022/cover.jpg
+description: "OpenGovの初期混乱による小さなトラブルの後、私たちはロボノミクスのクラウドローンキャンペーンを再開する準備が整いました。この記事では、キャンペーンの再開につながった一連の出来事を見て、新しいパラメータを紹介します。"
+abstract: "OpenGovの初期混乱による小さなトラブルの後、私たちはロボノミクスのクラウドローンキャンペーンを再開する準備が整いました。この記事では、キャンペーンの再開につながった一連の出来事を見て、新しいパラメータを紹介します。"
+---
+
+## Kusama OpenGov Causes cₕₐₒₛ
+
+新しいガバナンスシステムであるOpenGov（Gov2）の待望の到着がついにKusamaにやってきましたが、それには多くの混乱が伴いました。新しいOpenGovシステムの導入により、以前に予定されていたオークションがうまく実施されなかった結果となりました。Kusamaコミュニティは、オークションのスケジュールを修正するために[Gov1リファレンダム＃252](https://kusama.polkassembly.io/referendum/252)を開始しましたが、これはAuctionAdmin権限の制限により正常に実施されませんでした。このエラーは、新しいガバナンスシステムでは、オークションを開始するためにOpenGov提案をAuctionトラックにプッシュすることが義務付けられているために発生しました。[ランタイムアップグレード](https://kusama.polkassembly.io/referendum/254)でOpenGovパラメータを調整することになりましたが、このリファレンダムもGov1とGov2のロジックの間の衝突のために成功しませんでした。
+
+結局のところ、Kusamaコミュニティと開発者は、新しいガバナンスシステムの複雑さを理解するのに数週間かかりました。これは予期せず、Robonomicsプロジェクトの11月2022年のクラウドローンキャンペーンでパラチェーンスロットオークションに入札する計画に影響を与えました。すでに[2022年11月のクラウドローン](/blog/robonomics-crowdloan-campaigns-november-2022/)は解散しました。paraID 2237、およびすべてのKSMがクラウドローンの貢献者に返却されました。
+
+## スロットのリースを延長するための新しい課題
+
+**オープンガバナンスのリリース前にパラチェーンのリースを交換する標準的な方法**は次のとおりです：
+
+1. 登録(Reserve) extrinsicを使用して新しいparaIDを生成します。
+2. 新しいparaIDのためにオンチェーンIDを設定します。
+3. クラウドローンを開始するためにcrowdloan(Create) extrinsicを使用します。
+4. パラチェーンスロットオークションに入札します。
+5. オークションに成功した場合、開発者はforceLeaseおよびregistrar:swap関数を使用して、この寄付者paraIDから作業中のパラチェーンparaIDにリースを交換するためのガバナンスアクションを開始します。これは以前の提案と同様です：[Karuraリース交換](https://kusama.polkassembly.io/referendum/192)、[MoonriverおよびKhalaリース交換](https://kusama.polkassembly.io/motion/468)、[Shidenリース交換](https://kusama.polkassembly.io/referendum/199)、[Parallel-Heikoリース交換](https://kusama.polkassembly.io/referendum/219)、[Genshiroリース交換](https://kusama.polkassembly.io/referendum/246)。
+6. 最終的な結果は、作業中のパラチェーンがリースを延長し、ブロックを継続的に生成し、ダウンタイムを受けないようになります。
+
+しかし、OpenGovの導入により、Kusamaでのガバナンスアクションの閾値が非常に高くなりました。基本的に、新しいOpenGovシステムには複数のトラックがあります。各トラックは特定の種類の機能をサポートできます（特定のextrinsicsのみを呼び出すことができます）。一部のトラックには小額のKSMをチップするなどの限られた権限がありますが、他のトラックにはRootトラックなどの非常に大きな権限があります。
+
+OpenGovトラックの閾値は非常に高く、Kusamaコミュニティ内で既にそれらを下げるための取り組みがあります。これらの閾値はすでに[Kintsugi](https://twitter.com/kintsugi_btc/status/1599036329399943168)などのパラチェーンプロジェクトに問題を引き起こしています。要するに、特定の提案がネットワークのステークホルダー（KSM保有者）から十分な支持を得なければ、投票期間から確認期間に移行するためには、その提案が必要です。
+
+前述の6段階のリース交換計画を実行するためには、パラチェーンオークションスケジュールを再度開始する必要があります。オープンガバナンスの是非を問うOpenGovの国民投票が通過すべきであり、それによってオークションがリース管理トラックを介して再開されるか、ルート/ホワイトリストコーラートラックを介したランタイムアップグレードの一部として再開される可能性があります。ここで問題が生じるのは、国民投票が適切なタイミングで確認期間に入るためには、KSMトークンの全循環供給量のかなりの割合が国民投票に賛成票を投じる必要があるということです。Kusamaでの典型的な投票率は比較的低いため、リース管理トラックの国民投票が確認期間に押し進められる可能性が現実的になる閾値に到達するまでに複数の週がかかる可能性があります。
+
+コミュニティがオープンガバナンスのパラメータを調整することを引き続き期待していますが、幸いなことに、パラチェーンはリレーチェーンの新しいオープンガバナンスシステムを利用する必要なく、XCMを使用して6段階の計画を実行する方法があります。
+
+登録者（Reserve）外部関数を使用して新しいparaIDを登録し、登録者（Register）外部関数を使用してそのparaIDにシェルランタイムをロードします。このパラチェーンは、リーススワップのためにのみXCMメッセージを開始すべきです。その後、メインパラチェーンからシェルパラチェーンにリーススワップリクエストを含むXCMメッセージを送信します。シェルパラチェーンがオークションに勝利し、リースが有効になると、メインパラチェーンとリーススロットを交換するためのXCMメッセージを送信できる最小限の環境が起動します。
+
+## クラウドローンキャンペーンの新しいパラメータ
+
+以前に[言及したように](https://robonomics.network/blog/robonomics-crowdloan-campaigns-november-2022/)、スロットリースのコストと理想的なステーキング率の統計に基づいてクラウドローンキャンペーンを自動化したいと考えています。更新アルゴリズムの現在のパラメータを見てみましょう。
+
+<TextCard alignContent="center">
+
+**1. 2022年8月から11月までの中央リース価格の統計（[parachains.info](http://parachains.info/)からの情報）：**
+
+</TextCard>
+
+<div class="big-table">
+
+|  | オークション62 | オークション61 | オークション60 | オークション59 | オークション58 | オークション57 | オークション56 | オークション55 | オークション54 | オークション53 | オークション52 | オークション51 | オークション50 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|勝者 | パラスレッド2236 | パラスレッド2233 | ザイトガイスト | クラブネットワーク | — | クラストシャドウ | ゲンシロ | DAO IPCI | パラスレッド2223 | クォーツ | ビットカントリー | スノー | サブソーシャル |
+| 最終入札額（KSM） | 1 005 | 241 | 500 | 11 | 0 | 1 807 | 2 000 | 111 | 1 001 | 1 005 | 3 500 | 13 926 | 1 001 |
+| 貢献 | 自己資金 | 自己資金 | 自己資金 | 自己資金 | — | 209 | 160 | 自己資金 | 自己資金 | 自己資金 | 自己資金 | 782 | 自己資金 |
+| 参加者数 | 1 | 3 | 2 | 1 | 0 | 1 | 2 | 2 | 2 | 2 | 2 | 1 | 1 |
+
+</div>
+
+<TextCard className="withImg" alignContent="center">
+
+**2. 中央値の入札額は次のとおりです:**
+
+![ベータ添字medが1001KSMに等しい](/blog/images/crowdloan-campaign-december-2022/formula-1.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**3. 前回のクラウドローンキャンペーンが成功しなかった場合、前回のクラウドローン試行に対して調整された中央値の入札額は次のとおりです:**
+
+![ベータ添字'adjmed'が1001に2を掛けたものに等しい KSM](/blog/images/crowdloan-campaign-december-2022/formula-2.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**4. 理想的なステーキング率は次のとおりです:**
+
+![x添字idealが45.0パーセントに等しい](/blog/images/crowdloan-campaign-december-2022/formula-3.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**5. 実際のステーキング率は次のとおりです:**
+
+![x添字'real'が49.3% でパーセントx添字'ideal'よりも大きい](/blog/images/crowdloan-campaign-december-2022/formula-4.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**6. 理想的な利率は次のとおりです:**
+
+![i添字 '理想' ​は、I添字 'NPoS' ​をx添字 '理想' で割ったものが0.1を0.45で乗じたものに100をかけたものと等しいとします（/blog/images/crowdloan-campaign-december-2022/formula-5.svg）
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**7. クラウドローンキャンペーンへの参加報酬（1 KSMあたりのXRT）:**
+
+![R添字 'perKSM' ​は、(1 × $KSM ​× i添字 '理想') ÷ $XRT ​は、(1 × 24.65$ × 0.22) ÷ 2.30$ であり、1 KSMあたり2.38 XRTです（/blog/images/crowdloan-campaign-december-2022/formula-6.svg）
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**8. クラウドローン参加者への合計支払い:**
+
+![R添字 'total' ​は、B添字 'adjmed' ​× R添字 'perKSM' で4768.05 XRTです（/blog/images/crowdloan-campaign-december-2022/formula-7.svg）
+
+</TextCard>
+
+これが物語です。そしていつも通り、ₑₓₚₑcₜ cₕₐₒₛ。

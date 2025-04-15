@@ -1,0 +1,73 @@
+---
+title: "Projeto Colheitadeira de Dados: Relatório de Abril"
+date: 2024-04-11
+published: true
+locale: 'pt'
+cover_image: /blog/images/data-harvester-report-april-2024/cover.png
+description: "A equipe da Robonomics está desenvolvendo a ideia de uma plataforma autônoma para colheita de dados. Desde que Ivan, nosso administrador de ciência, compartilhou insights sobre o projeto pela última vez, passou um mês e meio. Neste período, a Colheitadeira de Dados recebeu atualizações significativas e estamos animados para destacá-las neste post do blog."
+abstract: "A equipe da Robonomics está desenvolvendo a ideia de uma plataforma autônoma para colheita de dados. Desde que Ivan, nosso administrador de ciência, compartilhou insights sobre o projeto pela última vez, passou um mês e meio. Neste período, a Colheitadeira de Dados recebeu atualizações significativas e estamos animados para destacá-las neste post do blog."
+tags: ['Anúncios', 'Casos de Uso', 'Colaborações', 'Casa Inteligente']
+---
+
+A equipe da Robonomics está desenvolvendo a ideia de uma plataforma autônoma para colheita de dados. Desde que Ivan, nosso administrador de ciência, compartilhou [insights](https://twitter.com/berman_ivan/status/1759943496742404346) sobre o projeto pela última vez, passou um mês e meio. Neste período, a Colheitadeira de Dados recebeu atualizações significativas e estamos animados para destacá-las neste post do blog.
+
+## O que é a Colheitadeira de Dados?
+
+Primeiramente, vamos recapitular sobre o que se trata este projeto. Em sua forma mais simples, trata-se de uma plataforma robótica móvel equipada com sensores, destinada a coletar dados disponíveis sobre seu entorno. Em nosso cenário, utilizamos o [Turtlebot 4 Pro](https://clearpathrobotics.com/turtlebot-4/), fabricado pela Clearpath Robotics, equipado com uma câmera 3D, lidar 2D e um conjunto de sensores padrão para robôs com rodas. A unidade de computação central é o Raspberry Pi. Todos os componentes do robô se comunicam por meio do framework ROS 2.
+
+O objetivo é transformar o robô em uma máquina de colheita de dados, coletando informações seguras sobre o ambiente interno e apresentando-as em um formato amigável ao usuário. Para alcançar isso, sensores adicionais são integrados aos dispositivos de gravação básicos, e o software é desenvolvido para facilitar a coleta abrangente de dados desses sensores.
+
+## Atualização de Hardware do Turtlebot 4 Pro
+
+Inicialmente, um conjunto de sensores de ar baseados no controlador ESP32 foi integrado ao robô. Esses sensores incluem:
+
+- SHT3X: sensor de temperatura e umidade
+- BH1750: sensor de intensidade de luz
+- SCD4X: sensor de concentração de dióxido de carbono
+
+Além disso, a configuração fundamental do robô passou por pequenas melhorias para acomodar demandas computacionais e considerações de segurança aumentadas:
+
+- O Raspberry Pi 4GB foi atualizado para a versão mais potente de 8GB.
+- Foi criada uma caixa impressa em 3D para abrigar os sensores de ar, garantindo sua disposição compacta.
+- Uma estrutura de proteção para a câmera e o lidar também foi impressa em 3D.
+- Além disso, o robô agora está envolto em fita de advertência para uma visibilidade aprimorada.
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/upgraded-turtle-bot-4-pro.jpg" alt="Turtle Bot 4 Pro atualizado" />
+
+## Progresso no Desenvolvimento de Software
+
+O Turtlebot vem com um conjunto de pacotes padrão para operações básicas, incluindo localização e mapeamento simultâneos (SLAM) e navegação. No entanto, a tarefa permanece em integrar esses módulos para funcionalidade unificada e incorporar recursos específicos para a colheita de dados. Na configuração atual, espera-se que o robô colete dados dos sensores de ar e escaneie redes Wi-Fi.
+
+Atualmente, três principais pacotes ROS 2 foram desenvolvidos para o robô:
+
+- **data_harvester_navigation** - lida com a localização e navegação do robô em um mapa pré-existente construído com SLAM.
+- **data_harvester_perception** - responsável por publicar dados dos sensores de ar e realizar varreduras de redes Wi-Fi.
+- **data_harvester_chronicler** - gerencia o registro de dados e a subsequente publicação no arquivo final.
+
+Para o controlador ESP32, o firmware ```esp32-sensors``` foi escrito com base no framework ESP-IDF com suporte para todos os sensores utilizados. O firmware está disponível em duas versões: uma versão online (com o controlador conectado ao Wi-Fi) e uma versão offline.
+
+O código-fonte está disponível no GitHub: https://github.com/Fingerling42/data-harvester
+
+## Engenharia de Campo e Testes
+
+Desde o início de março, foram feitas viagens experimentais com o robô. O objeto dos testes de campo é um espaço de escritório em Paphos, Chipre. Após a configuração inicial, o robô foi deixado no escritório, e seu controle começou a ser realizado remotamente, usando uma conexão através do protocolo Yggdrasil de ponta a ponta.
+
+Inicialmente, foram feitas várias voltas de SLAM ao redor do território do escritório. Como resultado, foi formado um mapa de alta qualidade da área estudada.
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/turtle-bot-map-testing.png" alt="Teste de mapa do Turtle Bot" caption="Um mapa de um espaço de escritório com uma sobreposição das coordenadas do robô após uma das missões" />
+
+Em seguida, com base no mapa, o robô embarcou em uma missão para coletar dados. Após sua conclusão, foram coletados dados sobre a qualidade do ar e a qualidade do sinal Wi-Fi, juntamente com dados sobre a localização do robô no mapa. Isso permitiu que os dados colhidos fossem combinados com os pontos onde foram coletados. No final, o arquivo final foi enviado para processamento e visualização.
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/turtle-bot-4-app-1.png" alt="Dados do sensor de ar do aplicativo Turtle Bot" caption="Interface para os dados coletados dos sensores de ar instalados no Turtlebot 4 Pro" />
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/turtle-bot-4-app-2.png" alt="Cobertura Wi-Fi do aplicativo Turtle Bot" caption="Interface para análise de cobertura Wi-Fi com base nos dados coletados do Turtlebot 4 Pro atualizado" />
+
+## Próximos Marcos
+
+Nosso próximo foco será desenvolver um planejamento abrangente de caminho de cobertura para a travessia completa da área pelo robô, utilizando o Algoritmo Espiral de Retrocesso que já foi selecionado. Além disso, a integração com a versão mais recente do Robonomics ROS 2 Wrapper será implementada para transmitir dados com segurança para a nuvem da Robonomics a partir do ROS 2.
+
+No aspecto de hardware, planejamos incorporar um roteador dedicado ao robô para garantir simplicidade e independência nas conexões de rede para todos os componentes.
+
+Por fim, nosso objetivo é criar um aplicativo de interface do usuário dedicado para a Colheitadeira de Dados, permitindo que os dados coletados sejam apresentados em um formato amigável ao usuário. Isso pode ser inestimável, especialmente para administradores de escritório.
+
+Fique ligado para mais atualizações!

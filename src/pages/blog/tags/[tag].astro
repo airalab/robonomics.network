@@ -1,0 +1,80 @@
+---
+// components
+import Layout from '../../../layouts/Layout.astro';
+import PostCard from '../../../components/post/PostCard.astro';
+import BlogTagsBanner from '../../../components/blocks/BlogTagsBanner.astro';
+
+import { getCollection } from 'astro:content';
+import { languageTag } from '../../../paraglide/runtime';
+
+
+// data
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog'); 
+
+  const uniqueTags = [
+    ...new Set(
+      allPosts
+        .map((post: any) => post.data.tags)
+        .flat()
+        .map((tag: string) => tag.toLowerCase()) // Convert each tag to lowercase
+    ),
+  ];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post: any) =>
+      post.data.tags.map((t: string) => t.toLowerCase()).includes(tag.toLowerCase())
+    );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  })
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+
+const allPosts = [];
+const localizedPosts = posts.filter(post => (post.data.locale === languageTag()))
+const fallbackPosts = posts.filter(post => (post.data.locale === 'en'));
+
+
+function addFallbackPosts() {
+  fallbackPosts.map(p => {
+    const path = p.id.substring(0, p.id.length - 1).split("/").pop();
+
+    const exists = localizedPosts.filter(existingItem => {
+      const localePath = existingItem.id.substring(0, existingItem.id.length - 1).split("/").pop()
+      return localePath === path;
+    });
+
+    if(!exists[0]) {
+      allPosts.push(p)
+    }
+  })
+};
+
+function getAllPosts() {
+  localizedPosts.map(post => {
+    allPosts.push(post)
+  })
+  addFallbackPosts();
+};
+
+getAllPosts();
+
+---
+
+<Layout
+  title={`Robonomics blog, ${tag}`}
+  pageImage = "/website_cover_blogs.jpg"
+>
+
+  <BlogTagsBanner activeTag={tag}/>
+
+  <section class="layout blog_grid">
+    {allPosts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date)).map((post: any) => <PostCard post={{...post.data, url: !post.id.includes(`${languageTag()}/`) ? post.id : post.id.split('/')[1]}}/>)}
+  </section>
+
+</Layout>

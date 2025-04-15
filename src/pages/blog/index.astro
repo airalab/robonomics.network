@@ -1,0 +1,98 @@
+---
+// components
+import Layout from '../../layouts/BlogLayout.astro';
+import PostCard from '../../components/post/PostCard.astro';
+
+// data
+import { getCollection } from 'astro:content';
+import { languageTag } from '../../paraglide/runtime';
+
+const allPosts = await getCollection('blog');
+const posts = [];
+const localizedPosts = allPosts.filter(post => (post.data.locale === languageTag()))
+const fallbackPosts = allPosts.filter(post => (post.data.locale === 'en'));
+
+
+function addFallbackPosts() {
+  fallbackPosts.map(p => {
+    const path = p.id.substring(0, p.id.length - 1).split("/").pop();
+
+    const exists = localizedPosts.filter(existingItem => {
+      const localePath = existingItem.id.substring(0, existingItem.id.length - 1).split("/").pop()
+      return localePath === path;
+    });
+
+    if(!exists[0]) {
+      posts.push(p)
+    }
+  })
+};
+
+function getAllPosts() {
+  localizedPosts.map(post => {
+    posts.push(post)
+  })
+  if(languageTag() !== 'en') {
+    addFallbackPosts();
+  }
+  
+};
+
+getAllPosts();
+
+const postsPerPage = 12;
+
+const currentPage = 1;
+const totalPages = Math.ceil(posts.length / postsPerPage);
+const paginatedPosts = posts
+  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date)) // Sort by date
+  .slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage);
+
+---
+
+<Layout
+  totalPages={totalPages}
+  currentPage={currentPage}
+>
+
+  {paginatedPosts.length === 0 ? (
+    <div class="blog__no-post align-center">
+      <blockquote>No posts yet</blockquote>
+    </div>
+  ) : (
+    <section class="layout blog_grid">
+      {paginatedPosts.map((post) => (
+        post.data.published && <PostCard post={{...post.data, url: !post.id.includes(`${languageTag()}/`) ? post.id: post.id.split('/')[1]}} locale={languageTag()} />
+      )
+
+      )}
+    </section>
+  )} 
+
+</Layout>
+
+<style>
+  blockquote {
+    border-left: none;
+  }
+
+  .blog__no-post .oldy {
+    text-align: center;
+  }
+
+  .blog__no-post .oldy p {
+    margin-bottom: calc(var(--space) * 0.7);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .blog__no-post .oldy li {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .blog__no-post .oldy li:not(:last-child) {
+    margin-bottom: calc(var(--space) * 0.3);
+  }
+
+</style> 

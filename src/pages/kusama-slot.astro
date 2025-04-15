@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RbButton from '../components/RbButton.astro';
+---
+
+<Layout
+  title={$tr("Robonomics Kusama slot")}
+  description={$tr("During 2022, the Robonomics parachain in Kusama was used in a dozen R&D projects and processed more than 4 million transactions for IoT devices in total.")}
+  ogImage="/website_cover_crowdloan.jpg"
+>
+
+  <div class="page">
+    <section class="banner-leftside section__solid section__blue">
+      <div class="content layout">
+        <section class="banner-leftside-title">
+          <h1>{$tr('Robonomics Kusama slot')}</h1>
+          <p>{$tr('4 million transactions')}<br/> {$tr('for IoT devices in 2022')}</p>
+        </section>
+
+        <section class="banner-leftside-state">
+          <div id="confetti-container">
+            <p>{$tr('Status:')}</p>
+            <p>{$tr('сampaign for renewal of slot')}<br/> {$tr('is in progress')}</p>
+            <img id="confetti" src="/images/confetti.webp" aria-hidden="true" alt=""  />
+          </div>
+        </section>
+
+        <RbButton href="https://parachains.info/auctions/kusama" buttoncolor="vivid-blue" target="_blank">{$tr('Auction status on Kusama')}</RbButton>
+      </div>
+    </section>
+
+    <section>
+    <div class="content layout layout__text text-cite-big">
+      {$tr('During 2022, the Robonomics parachain in Kusama was used in a dozen R&D projects and processed more than 4 million transactions for IoT devices in total.')}
+    </div>
+    </section>
+
+    <section>
+    <div class="sec-i-t content layout">
+      <img alt="Robonomics dapp smart home" src="/images/dapp-smart-devices.webp" />
+      <article>
+        <h3>{$tr('Decentralized cloud for IoT, updates for wiki, courses for Academy')}</h3>
+        <p>{$tr('Our plans for 2023 include the active development around the idea of a decentralized cloud for the control of home IoT infrastructure. Now we are working to ensure that our')} <a href="https://robonomics.app/" aria-label="check our dapp" target="_blank">{$tr('decentralized application')}</a>, <a href="https://wiki.robonomics.network" aria-label="check our wiki" target="_blank">{$tr('wiki')}</a> {$tr('project and our educational resource, the')} <a href="https://robonomics.academy/" aria-label="check our academy" target="_blank">{$tr('Robonomics Academy')}</a>{$tr(', have all the necessary functions and information for IoT infrastructure owners.')}</p>
+      </article>
+    </div>
+    </section>
+
+    <section id="formula">
+    <div class="content layout layout__text text-cite-big">
+      <img class="theme-support-light" src="/images/crowdloan-formula.webp" aria-hidden="true" alt=""  />
+      <p>{$tr('For developers of the Robonomics parachain, finding an option to autonomize the life of the parachain is an important part of building a decentralized cloud for IoT. This year, for the first time, we are trying to launch a crowdloan campaign on behalf of the parachain itself.')}</p>
+      <p><a href="/blog/robonomics-crowdloan-campaigns-november-2022/" aria-label="find out more in our blog">{$tr('Read more')}</a></p>
+    </div>
+    </section>
+
+  <section class="participate section__solid section__blue">
+    <div class="content layout">
+      <div>{$tr('Campaign for renewal of slot')}<br/> {$tr('is in progress')}</div>
+      <RbButton href="https://parachains.info/auctions/kusama" buttoncolor="vivid-blue" target="_blank">{$tr('Check status')}</RbButton>
+    </div>
+    </section>
+
+  </div>
+
+</Layout>
+
+
+<style>
+
+  /* + BANNER */
+
+  .banner-leftside {
+    letter-spacing: 1px;
+    line-height: 1.2;
+    overflow: hidden;
+    padding-bottom: calc(var(--space) * 4);
+    padding-top: calc(var(--space) * 4);
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .banner-leftside-title {
+    font-size: calc(var(--base-font-size) * 1.2);
+  }
+
+  .banner-leftside-title h1 {
+    padding-top: 0;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .banner-leftside-title p {
+    text-align: left;
+  }
+
+  .banner-leftside-state {
+    color: var(--color-blue-vivid);
+    font-weight: 300;
+  }
+
+  .banner-leftside .numbers {
+    left: auto;
+    right: -250px;
+  }
+
+  .banner-leftside .content {
+    position: relative;
+    max-width: 1300px;
+    z-index: 1;
+  }
+
+  #confetti-container {
+    display: inline-block;
+    position: relative;
+  }
+
+  #confetti {
+    display: block;
+    height: 1400px;
+    max-width: none;
+    position: absolute;
+    left: calc(100% + var(--space-text));
+    width: auto;
+    top: calc(50% - 700px - var(--space-text)*2);
+  }
+  /* - BANNER */
+
+
+  .text-cite-big {
+    margin-top: var(--space);
+    font-size: calc(var(--base-font-size) * 1.5);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .sec-i-t {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: calc(var(--space) * 4);
+    text-align: left;
+  }
+
+  .sec-i-t h3 {
+    text-align: left;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .sec-i-t {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .sec-i-t {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #formula .layout__text {
+    max-width: 1200px;
+  }
+
+  #formula img {
+    display: block;
+    margin: calc(var(--space) * 2) auto var(--space);
+    width: 500px;
+  }
+
+  #formula p:last-child {
+    text-align: right;
+  }
+
+  .participate .content {
+    align-items: center;
+    color: var(--color-blue-vivid);
+    display: flex;
+    font-weight: 300;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+</style>

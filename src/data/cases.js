@@ -1,15 +1,12 @@
-// for translations
-import { t } from '../../translations/i18n.js'
-
 export default {
   cases: [
     {
       id: 0,
-      title: t('Fronius Solar.web integration with Home Assistant'),
-      description: t('Collaboration with real estate developer on Cyprus for tracking the daily distribution, consumption and offsetting any excess carbon footprint.'),
+      title: $trVue('Fronius Solar.web integration with Home Assistant'),
+      description: $trVue('Collaboration with real estate developer on Cyprus for tracking the daily distribution, consumption and offsetting any excess carbon footprint.'),
       path: 'cases/fronius-solar-web',
-      cover_image: 'fronius-solar-web.png',
-      metaImg: '/website_cover_fronius_solar_web.png',
+      cover_image: 'fronius-solar-web.webp',
+      metaImg: '/website_cover_fronius_solar_web.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -23,11 +20,11 @@ export default {
     },
     {
       id: 1,
-      title: t('Robonomics Middleware Framework for ROS 2'),
-      description: t('One of our goals in developing this case is to turn Robonomics into ROS 2 Middleware.This will allow us to use Robonomics on Substrate to create an dapp that can run ROS 2 right from the browser!'),
+      title: $trVue('Robonomics Middleware Framework for ROS 2'),
+      description: $trVue('One of our goals in developing this case is to turn Robonomics into ROS 2 Middleware.This will allow us to use Robonomics on Substrate to create an dapp that can run ROS 2 right from the browser!'),
       path: 'cases/rust-for-ros2',
-      cover_image: 'rust-ros2.jpg',
-      metaImg: '/website_cover_rust_ros2.png',
+      cover_image: 'rust-ros2.webp',
+      metaImg: '/website_cover_rust_ros2.webp',
       // progress field needs for "sort by progress" filter
       progress: 'proceeding',
       // created field needs for "sort by date" filter (for earliest option)
@@ -41,10 +38,10 @@ export default {
     },
     {
       id: 2,
-      title: t('Eisenkoch, the robot chef'),
-      description: t('Real case fot the robot equipped with two waffle irons and baking 6 waffles at the same time in 5-7 minutes.'),
+      title: $trVue('Eisenkoch, the robot chef'),
+      description: $trVue('Real case fot the robot equipped with two waffle irons and baking 6 waffles at the same time in 5-7 minutes.'),
       path: 'cases/eisenkoch',
-      cover_image: 'eisenkoch.jpg',
+      cover_image: 'eisenkoch.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -58,11 +55,11 @@ export default {
     },
     {
       id: 3,
-      title: t('Blockchain-powered smart coffee machine'),
-      description: t('Robonomics coffee - is a smart coffee machine integrated in Robonomics Network. This project aims to show Robonomics potential in the IoT sphere by a real-world example.'),
+      title: $trVue('Blockchain-powered smart coffee machine'),
+      description: $trVue('Robonomics coffee - is a smart coffee machine integrated in Robonomics Network. This project aims to show Robonomics potential in the IoT sphere by a real-world example.'),
       path: 'cases/blockchain-coffee-machine',
-      cover_image: 'blockchain-coffee.jpg',
-      metaImg: '/website_cover_coffee-machine.jpg',
+      cover_image: 'blockchain-coffee.webp',
+      metaImg: '/website_cover_coffee-machine.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -76,10 +73,10 @@ export default {
     },
     {
       id: 4,
-      title: t('Water environmental inspector'),
+      title: $trVue('Water environmental inspector'),
       description: '',
       path: 'cases/water-inspector',
-      cover_image: 'water-inspector.jpg',
+      cover_image: 'water-inspector.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -93,10 +90,10 @@ export default {
     },
     {
       id: 5,
-      title: t('Air monitoring network'),
+      title: $trVue('Air monitoring network'),
       description: '',
       path: 'cases/air-monitoring-network',
-      cover_image: 'air-monitoring.jpg',
+      cover_image: 'air-monitoring.webp',
       // progress field needs for "sort by progress" filter
       progress: 'proceeding',
       // created field needs for "sort by date" filter (for earliest option)
@@ -110,10 +107,10 @@ export default {
     },
     {
       id: 6,
-      title: t('Production quality control platform “Feecc”'),
+      title: $trVue('Production quality control platform “Feecc”'),
       description: '',
       path: 'cases/quality-control-platform-feecc',
-      cover_image: 'feecc.jpg',
+      cover_image: 'feecc.webp',
       // progress field needs for "sort by progress" filter
       progress: 'proceeding',
       // created field needs for "sort by date" filter (for earliest option)
@@ -127,10 +124,10 @@ export default {
     },
     {
       id: 7,
-      title: t('Backup and archiving service for robotics companies'),
-      description: t('In 2022, the Robonomics team began collaborating with other parachain teams within the Polkadot ecosystem to leverage the unique strengths of this decentralized network. This collaboration resulted in the launch of a Backup and Data Archiving Service designed specifically for robotics companies.'),
+      title: $trVue('Backup and archiving service for robotics companies'),
+      description: $trVue('In 2022, the Robonomics team began collaborating with other parachain teams within the Polkadot ecosystem to leverage the unique strengths of this decentralized network. This collaboration resulted in the launch of a Backup and Data Archiving Service designed specifically for robotics companies.'),
       path: 'cases/service-for-robotics-companies',
-      cover_image: 'robotic-companies.jpg',
+      cover_image: 'robotic-companies.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -144,10 +141,10 @@ export default {
     },
     {
       id: 8,
-      title: t('Public lab with Boston Dynamics Spot'),
+      title: $trVue('Public lab with Boston Dynamics Spot'),
       description: '',
       path: 'cases/quality-control-platform-feecc',
-      cover_image: 'spot.jpg',
+      cover_image: 'spot.webp',
       // progress field needs for "sort by progress" filter
       progress: 'proceeding',
       // created field needs for "sort by date" filter (for earliest option)
@@ -161,10 +158,10 @@ export default {
     },
     {
       id: 9,
-      title: t('Autonomous telescope service'),
+      title: $trVue('Autonomous telescope service'),
       description: '',
       path: 'cases/quality-control-platform-feecc',
-      cover_image: 'telescope.jpg',
+      cover_image: 'telescope.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -178,10 +175,10 @@ export default {
     },
     {
       id: 10,
-      title: t('Smart home secure remote control and backup service'),
+      title: $trVue('Smart home secure remote control and backup service'),
       description: '',
       path: 'cases/quality-control-platform-feecc',
-      cover_image: 'smart-home.jpg',
+      cover_image: 'smart-home.webp',
       // progress field needs for "sort by progress" filter
       progress: 'proceeding',
       // created field needs for "sort by date" filter (for earliest option)
@@ -195,10 +192,10 @@ export default {
     },
     {
       id: 11,
-      title: t('Blockchain as quality control system for chemistry'),
+      title: $trVue('Blockchain as quality control system for chemistry'),
       description: '',
       path: 'cases/quality-control-platform-feecc',
-      cover_image: 'blockchain-chemistry.jpg',
+      cover_image: 'blockchain-chemistry.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -212,10 +209,10 @@ export default {
     },
     {
       id: 12,
-      title: t('Real CO2 emissions reduction with blockchain-proven certificates'),
+      title: $trVue('Real CO2 emissions reduction with blockchain-proven certificates'),
       description: '',
       path: 'cases/quality-control-platform-feecc',
-      cover_image: 'emissions.jpg',
+      cover_image: 'emissions.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -229,10 +226,10 @@ export default {
     },
     {
       id: 13,
-      title: t('Robot-artist Gaka-Chu'),
+      title: $trVue('Robot-artist Gaka-Chu'),
       description: '',
       path: 'cases/quality-control-platform-feecc',
-      cover_image: 'gakachu.jpg',
+      cover_image: 'gakachu.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -246,8 +243,8 @@ export default {
     },
     {
       id: 14,
-      title: t('Digital markets for robots'),
-      description: t('The development of robotics and automated systems during the Fourth Industrial Revolution will require robots to have the capability to order services for their own maintenance.'),
+      title: $trVue('Digital markets for robots'),
+      description: $trVue('The development of robotics and automated systems during the Fourth Industrial Revolution will require robots to have the capability to order services for their own maintenance.'),
       path: 'cases/digital-markets-for-robots',
       cover_image: 'digital-markets-for-robots.webp',
       // progress field needs for "sort by progress" filter
@@ -263,10 +260,10 @@ export default {
     },
     {
       id: 15,
-      title: t('Demo “Get the weather of Fuji mountain”'),
+      title: $trVue('Demo “Get the weather of Fuji mountain”'),
       description: 'Send a request message and get the result from the autonomous agent. The resulting file is saved to IPFS and the resultant message requires a signature with a private key.',
       path: 'cases/the-weather-of-fuji',
-      cover_image: 'fuji.jpg',
+      cover_image: 'fuji.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -280,8 +277,8 @@ export default {
     },
     {
       id: 16,
-      title: t('Tokenization of Data of IOT devices'),
-      description: t('The tokenization of data from IoT (Internet of Things) devices represents a groundbreaking development in the digital economy.'),
+      title: $trVue('Tokenization of Data of IOT devices'),
+      description: $trVue('The tokenization of data from IoT (Internet of Things) devices represents a groundbreaking development in the digital economy.'),
       path: 'cases/tokenization',
       cover_image: 'tokenization.webp',
       // progress field needs for "sort by progress" filter
@@ -297,8 +294,8 @@ export default {
     },
     {
       id: 17,
-      title: t('Industrial zone management with capital'),
-      description: t('This case explores the role of smart factories in responding to capital shifts in modern markets. As part of the Industry 4.0 transformation, it introduces a decentralized communication protocol using cyber-physical systems to improve economic coordination among industrial agents.'),
+      title: $trVue('Industrial zone management with capital'),
+      description: $trVue('This case explores the role of smart factories in responding to capital shifts in modern markets. As part of the Industry 4.0 transformation, it introduces a decentralized communication protocol using cyber-physical systems to improve economic coordination among industrial agents.'),
       path: 'cases/industrial-zone-management-with-capital',
       cover_image: 'industrial-zone-management.webp',
       // progress field needs for "sort by progress" filter
@@ -314,8 +311,8 @@ export default {
     },
     {
       id: 18,
-      title: t('Mars colonization, impossible without kusama'),
-      description: t("This R&D case explores the role of Kusama network's decentralized infrastructure in supporting interplanetary missions, particularly Mars colonization."),
+      title: $trVue('Mars colonization, impossible without kusama'),
+      description: $trVue("This R&D case explores the role of Kusama network's decentralized infrastructure in supporting interplanetary missions, particularly Mars colonization."),
       path: 'cases/mars-colonization',
       cover_image: 'mars-colonization.webp',
       // progress field needs for "sort by progress" filter
@@ -331,8 +328,8 @@ export default {
     },
     {
       id: 18,
-      title: t('A decentralized system for negotiating road space'),
-      description: t('Our goal was to develop a decentralized system for negotiating road space where autonomous vehicles can pay for routes and permissions.'),
+      title: $trVue('A decentralized system for negotiating road space'),
+      description: $trVue('Our goal was to develop a decentralized system for negotiating road space where autonomous vehicles can pay for routes and permissions.'),
       path: 'cases/negotiating-road-space',
       cover_image: 'road-space.webp',
       // progress field needs for "sort by progress" filter
