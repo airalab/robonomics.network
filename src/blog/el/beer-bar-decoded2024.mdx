@@ -1,0 +1,233 @@
+---
+title: Το Πείραμα με το Μπαρ μπύρας στο Polkadot Decoded 2024
+date: 2024-07-19
+published: true
+locale: 'el'
+tags: ['Εκδηλώσεις', 'Polkadot', 'Web3', ]
+cover_image: /blog/images/beer-bar-decoded2024/cover.png
+description: 'Την προηγούμενη εβδομάδα, η ομάδα Robonomics επισκέφθηκε την εκδήλωση Polkadot Decoded στις Βρυξέλλες. Διεξήγαγαν ένα πείραμα για να μετρήσουν διαφορετικές αναγνώσεις από αισθητήρες γύρω από το [**Δωρεάν Περίπτερο Μπύρας από το ChaosDAO**](https://polkadot.polkassembly.io/referenda/821). Η ομάδα ήθελε να δει πόσοι άνθρωποι παρευρέθηκαν και πόσο ενδιαφέρον έδειξαν για το μπαρ. Διαβάστε αυτό το άρθρο για να μάθετε τι ανακάλυψαν.'
+
+---
+
+Την προηγούμενη εβδομάδα, η ομάδα Robonomics επισκέφθηκε την εκδήλωση Polkadot Decoded στις Βρυξέλλες. Διεξήγαγαν ένα πείραμα για να μετρήσουν διαφορετικές αναγνώσεις από αισθητήρες γύρω από το [**Δωρεάν Περίπτερο Μπύρας από το ChaosDAO**](https://polkadot.polkassembly.io/referenda/821). Η ομάδα ήθελε να δει πόσοι άνθρωποι παρευρέθηκαν και πόσο ενδιαφέρον έδειξαν για το μπαρ. Διαβάστε αυτό το άρθρο για να μάθετε τι ανακάλυψαν.
+
+## Εξοπλισμός
+
+Για το πείραμα, επιλέχθηκε ένα σετ αισθητήρων:
+
+- αισθητήρες θερμοκρασίας και υγρασίας
+- αισθητήρες κίνησης
+- αισθητήρες πόρτας
+- αισθητήρας ποιότητας αέρα
+- μετρητής μεμέ μπύρας σε μορφή λαμπτήρα και δύο κουμπιά
+
+Χρησιμοποιήθηκε ένα Raspberry Pi 4 με εγκατεστημένο το Home Assistant και ολοκλήρωση Robonomics για να αποθηκεύσει όλα τα δεδομένα στο νέφος Web3. Στο τέλος του άρθρου, θα δείτε μια περιγραφή για το πώς να αποκτήσετε αυτά τα δεδομένα.
+
+## Εγκατάσταση
+
+Δείτε πώς φαινόταν το μπαρ:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/bar.jpg" alt="Μπαρ μπύρας" /> 
+
+Το κύριο περίπτερο όπου διανεμόταν η μπύρα. Πίσω από το περίπτερο, υπήρχε ένα βρύσι και 2 ψυγεία με ποτά. Υπήρχαν επίσης μικροί καναπέδες και μια PlayStation 1 με παιχνίδια αγώνων στα δεξιά.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/play-zone.jpg" alt="ζώνη παιχνιδιών" /> 
+
+Οι αισθητήρες πόρτας ταιριάζουν τέλεια στα ψυγεία. Αυτό μας επέτρεψε να μετρήσουμε πόσες φορές ανοίχτηκαν για να βγει μια φιάλη.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/fridges.jpg" alt="ψυγεία" />
+
+Ένας αισθητήρας κίνησης εγκαταστάθηκε στην περιοχή της PlayStation έτσι ώστε να ενεργοποιείται μόνο όταν κάποιος πλησιάζει την τηλεόραση.Για να πάρετε ένα χειριστήριο παιχνιδιού:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/sofas.jpg" alt="Ζώνη PlayStation" />
+
+Ένας αισθητήρας κίνησης τοποθετήθηκε επίσης στον κεντρικό πάγκο του μπαρ και ευθυγραμμίστηκε ώστε να ενεργοποιείται μόνο όταν κάποιος βρισκόταν ακριβώς στον πάγκο. 
+Μπορείτε να το δείτε στα αριστερά στη στήλη. Ένας αισθητήρας θερμοκρασίας και υγρασίας τοποθετήθηκε επίσης κοντά:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/column.jpg" alt="εγκατάσταση αισθητήρα κίνησης" />
+
+Πολλοί ακόμη αισθητήρες θερμοκρασίας τοποθετήθηκαν μέσα στον πάγκο του μπαρ και στον χώρο του καφέ που ήταν κοντά.
+
+Ένας μετρητής μεμονωμένων μπύρας εγκαταστάθηκε επίσης, ο οποίος θα φωτίζονταν πράσινο για 5 δευτερόλεπτα αν πατιόταν το κουμπί "Μπύρα", ή κόκκινο αν πατιόταν το κουμπί "μην πατήσετε":
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/mem-beer.jpg" alt="μετρητής μεμονωμένων μπύρας" />
+
+## Δεδομένα Που Αποκτήθηκαν
+
+**Αποποίηση: Σε αυτήν την ενότητα, όλα τα δεδομένα θα εμφανίζονται στο περιβάλλον του Home Assistant για βολική οπτικοποίηση.** 
+Αυτά τα ίδια δεδομένα μπορούν να αποκτηθούν από το parachain του Robonomics και να συγκριθούν. Οδηγίες θα παρασχεθούν αργότερα.
+
+Περίοδος μελέτης: Για την περίοδο μελέτης, θα πάρουμε την ώρα από τις 16:00 της 11ης Ιουλίου έως τις 20:00 της 12ης Ιουλίου, που αντιστοιχεί στο μισό της πρώτης μέρας του 
+Decoded και ολόκληρη τη δεύτερη μέρα.
+
+Είναι επίσης σημαντικό να διευκρινιστεί ότι το μπαρ άνοιξε στις 12 το μεσημέρι, πράγμα που περιορίζει επίσης το μετρήσιμο διάστημα.
+
+### Θερμοκρασία και Υγρασία
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temperature.jpg" alt="αισθητήρας θερμοκρασίας" />
+
+Πρώτη μέρα (11η Ιουλίου) - όπως φαίνεται από τα γραφήματα, διατηρήθηκε μια άνετη θερμοκρασία 25-27 βαθμών στο εσωτερικό.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp11.png" alt="θερμοκρασία 11η" />
+
+Δεύτερη μέρα (12η Ιουλίου) - η θερμοκρασία μειώθηκε κατά μερικούς βαθμούς αλλά παρέμεινε άνετη.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp12.png" alt="θερμοκρασία 12η" />
+
+Η μείωση της θερμοκρασίας σχετίζεται με τη βροχή τη δεύτερη μέρα, που είναι εμφανής στα γραφήματα υγρασίας. Η υγρασία αυξήθηκε κατά 10-15%. Πρώτη μέρα: 
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum11.png" alt="υγρασία 11η" />
+
+Δεύτερη μέρα:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum12.png" alt="υγρασία 12η" />
+
+### Αισθητήρες Κίνησης
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motion-sesnors.jpg" alt="αισθητήρας κίνησης" />
+
+Το κίτρινο χρώμα υποδεικνύει την ώρα που κάποιος βρισκόταν κοντά στο μπαρ, το γκρι - όταν δεν υπήρχαν άνθρωποι. Αισθητήρας κίνησης στο μπαρ - πρώτη μέρα:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar11.png" alt="αισθητήρας κίνησης στο μπαρ 11η" />
+
+Δεύτερη μέρα:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar12.png" alt="αισθητήρας κίνησης στο μπαρ 12η" />
+
+Και η περιοχή του PlayStation - πρώτη μέρα:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay11.png" alt="αισθητήρας κίνησης στην περιοχή παιχνιδιού 11η" />
+
+Δεύτερη μέρα:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay12.png" alt="αισθητήρας κίνησης στην περιοχή παιχνιδιού 12η" />
+
+Από τους αισθητήρες, βλέπουμε ότι σχεδόν όλη την ώρα το μπαρ ήταν ανοιχτό, κάποιος ήταν όρθιος στο πάγκο. 
+Επίσης, σχεδόν το μισό χρόνο, κάποιος έπαιζε στο PlayStation.
+
+### Αισθητήρες Πόρτας
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door-sensors.jpg" alt="αισθητήρες πόρτας στο ψυγείο" />
+
+Εξαιρετικά, κοιτάξαμε τους γενικούς δείκτες γύρω από το μπαρ, τώρα ας προσπαθήσουμε να πάρουμε μερικούς αριθμούς. Γι' αυτό, έχουμε αισθητήρες πόρτας. 
+Υπήρχαν 2 ψυγεία. Στο παράδειγμα ενός από αυτά, ας δούμε πώς να μετρήσουμε τον αριθμό των ανοιγμάτων.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door.png" alt="παράδειγμα αισθητήρα πόρτας" />
+
+Φυσικά, θα μπορούσατε να μετρήσετε τον αριθμό των κίτρινων ραβδιών σε αυτό το γράφημα, που είναι οι στιγμές όταν άνοιγε η πόρτα. 
+Αλλά μπορείτε να εξάγετε αυτό σε ένα αρχείο csv και να πάρετε τα ακόλουθα:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/doorcsv.png" alt="παράδειγμα csv πόρτας" />
+
+Εδώ, κάθε μεμονωμένη γραμμή δείχνει την ώρα της αλλαγής κατάστασης του αισθητήρα. Έτσι, απλά διαιρώντας τον αριθμό των γραμμών στα δύο, 
+μπορείτεΜπορούμε να πάρουμε τον αριθμό των ανοιγμάτων του ψυγείου.
+Ως αποτέλεσμα, έχουμε τον παρακάτω πίνακα:
+
+|          | ψυγείο 1 | ψυγείο 2 |
+| -------- |--------|---------|
+| Πρώτη μέρα  | 76     | 78      |
+| Δεύτερη μέρα | 111    | 87      |
+| σύνοψη    | 187    | 165     |
+
+Συνολικά 352 ανοίγματα ψυγείου. Και μπορούμε να πούμε με βεβαιότητα ότι αυτό είναι το κατώτερο όριο του αριθμού των μπουκαλιών μπύρας/νερού που πήραν για δύο ημέρες, καθώς μπορεί να παραληφθούν πολλά μπουκάλια με ένα άνοιγμα πόρτας.
+
+### Μετρητής μεμέ μπύρας
+
+Και τέλος, ο μετρητής μεμέ μπύρας. Ήταν εγκατεστημένος μόνο τη δεύτερη μέρα. Υπήρχαν 2 κουμπιά, ένα με την ετικέτα "Μπύρα" και το άλλο "Μην πατήσετε". Πόσες φορές πατήθηκε κάθε κουμπί;
+
+| Μπύρα       | Μην πατήσετε |
+|------------|--------------|
+| 83         | 44           |
+
+Όπως βλέπετε, περίπου το 2/3 των ατόμων επέλεξαν το σωστό κουμπί.
+
+## Επαλήθευση Δεδομένων
+
+Ας προχωρήσουμε στην απόκτηση αυτών των δεδομένων από τη blockchain. Όλα τα δεδομένα αποθηκεύονται στα datalogs αυτού του λογαριασμού - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Ας το ανοίξουμε στο [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+
+Θα δούμε όλα τα extrinsics του. Ας τα φιλτράρουμε ανά ημερομηνία. Θα λάβουμε περίπου 140 extrinsics.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
+
+Κάθε ένα από αυτά περιέχει ένα IPFS CID με τηλεμετρία. Ας πάρουμε οποιοδήποτε extrinsic και ανακτήσουμε τα δεδομένα από αυτό. Για παράδειγμα, [αυτό](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+Το IPFS CID μέσα σε αυτό - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
+
+Στη συνέχεια, χρειάζεται να χρησιμοποιήσετε αυτό το σενάριο για να αποκρυπτογραφήσετε τα δεδομένα. Αντικαταστήστε το IPFS CID στη γραμμή 11 με αυτό που χρειάζεστε:
+
+```
+import requests
+from substrateinterface import Keypair, KeypairType
+from robonomicsinterface import Account
+import typing as tp
+import json
+import os
+
+ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
+IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
+
+def decrypt_message(data: tp.Union[str, dict]) -> str:
+
+    """Αποκρυπτογράφηση μηνύματος που κρυπτογραφήθηκε για συσκευές
+    :param data: Κρυπτογραφημένα δεδομένα
+    :param sender_address: Διεύθυνση αποστολέα
+    :param recipient_keypair: Ζεύγος κλειδιών λογαριασμού παραλήπτη
+
+    :return: Αποκρυπτογραφημένο μήνυμα
+    """
+    try:
+        account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+        admin_keypair = account.keypair
+        print(account.get_address())
+        sender_public_key = admin_keypair.public_key
+        if isinstance(data, str):
+            data_json = json.loads(data)
+        else:
+            data
+        if admin_keypair.ss58_address in data_json:
+            decrypted_seed = _decrypt_message(
+                data_json[admin_keypair.ss58_address],
+                sender_public_key,
+                admin_keypair,
+            ).decode("utf-8")
+            decrypted_acc = Account(decrypted_seed, crypto_type=KeypairType.ED25519)
+            decrypted_data = _decrypt_message(data_json["data"], sender_public_key, decrypted_acc.keypair).decode(
+                "utf-8"
+            )
+            return decrypted_data
+        else:
+            print(f"Σφάλμα κατά την αποκρυπτογράφηση για συσκευές: ο λογαριασμός δεν υπάρχει στις συσκευές")
+    except Exception as e:
+        print(e)
+
+def _decrypt_message(encrypted_message: str, sender_public_key: bytes, admin_keypair) -> str:
+    """Αποκρυπτογράφηση μηνύματος με το ιδιωτικό κλειδί του παραλήπτη και το δημόσιο κλειδί του αποστολέα
+    :param encrypted_message: Μήνυμα προς αποκρυπτογράφηση
+    :param sender_public_key: Δημόσιο κλειδί αποστολέα
+
+    :return: Αποκρυπτογραφημένο μήνυμα
+    """
+    if encrypted_message[:2] == "0x":
+        encrypted_message = encrypted_message[2:]
+    bytes_encrypted= bytes.fromhex(encrypted_message)
+    return admin_keypair.decrypt_message(bytes_encrypted, sender_public_key)
+
+def main():
+    account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+    admin_keypair = account.keypair
+    response = requests.get(f"<https://gateway.pinata.cloud/ipfs/{IPFS_HASH}>")
+    print(response)
+    with open("telemetry.txt", "w") as f:
+        decrypted_content = decrypt_message(response.text)
+        print(decrypted_content)
+        f.write(decrypted_content)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+Ως αποτέλεσμα, θα λάβετε ένα αρχείο "telemetry.txt" με json μέσα. Θα περιέχει όλα τα ίδια δεδομένα που εξετάσαμε παραπάνω. Απλά θα χρειαστεί να το αναλύσετε.
+
+## Συμπεράσματα
+
+Χάρη σε όλα αυτά τα δείκτες, μπορούμε να πούμε ότι η ιδέα του "δωρεάν μπύρας" από το ChaosDAO ήταν επιτυχής, και οι άνθρωποι τη χρησιμοποίησαν ενεργά, ακόμη κι αν κάποια μπύρα δεν τελείωσε. Και χάρη στους αισθητήρες και την ομάδα Robonomics, μπορείτε να δείτε ποσοτικούς και ποιοτικούς δείκτες αυτού του γεγονότος με δεδομένα που αποθηκεύονται στο δίκτυο Kusama.

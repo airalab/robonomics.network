@@ -1,0 +1,84 @@
+---
+title: "ART, Cyberpunk & WEB3: Un retour à l'art sur toile dans le monde de la technologie"
+date: 2025-01-10
+published: true
+locale: 'fr'
+cover_image: '/blog/images/return-to-canvas-art-in-the-world-of-technology/cover.webp'
+description: "Vous me connaissez en tant que designer pour Robonomics, mais cette année, je suis revenu en tant qu'artiste. L'IA excelle vraiment à ce niveau. Mais je me posais une question : y a-t-il encore de la place pour de vrais artistes dans le monde de la technologie ? Pour trouver la réponse, j'ai décidé de mener une expérience."
+abstract: "Bonjour ! Vous me connaissez en tant que designer pour Robonomics, mais cette année, je suis revenu en tant qu'artiste. J'ai longtemps observé à quel point l'intelligence artificielle se développe rapidement et combien de personnes l'utilisent pour créer des images. L'IA excelle vraiment à ce niveau. Mais je me posais une question : y a-t-il encore de la place pour de vrais artistes dans le monde de la technologie ? Pour trouver la réponse, j'ai décidé de mener une expérience."
+abstractAuthor: 'Anna Wimmer-Savinova'
+tags: ['Web3']
+---
+
+## Peinture, Cyberpunk et Web3 : Comment ça marche
+
+Mon expérience a eu lieu en novembre à Bangkok lors de deux événements majeurs — Polkadot Sub0 Reset et Devcon.
+
+Le thème des peintures était le cyberpunk de notre époque, une direction pertinente pour notre équipe aujourd'hui. Dans mon travail, je me suis inspiré du roman de William Gibson "Neuromancien", des Trois lois de la robotique d'Isaac Asimov, et j'ai imaginé à quoi pourrait ressembler le cyberpunk dans le monde moderne et le futur. Ma vision a été également influencée par les panoramas de Bangkok.— une ville qui semble elle-même être une ville du futur, capturant parfaitement l'atmosphère cyberpunk.
+
+Le processus de création des peintures a été enregistré en vidéo en temps réel. Ces enregistrements ont été téléchargés sur IPFS avec l'identifiant CID stocké sur la parachain Robonomics via notre projet Feecc, créant un passeport numérique pour chaque peinture. Cette approche garantissait une transparence totale : tout le monde pouvait voir chaque étape du processus de peinture — du premier coup de pinceau aux touches finales. Vous pouvez en savoir plus sur le projet Feecc et ses fonctionnalités dans [cet article](/blog/feecc-recap/).
+
+Nous avons également ajouté des capteurs de température et d'humidité aux peintures, qui ont enregistré des données sur les conditions pendant leur création. Ces données ont été stockées dans le passeport numérique et continuaient à se mettre à jour même après la fin de la peinture. Les nouveaux propriétaires pouvaient activer le capteur, lui permettant de continuer à envoyer des données à la parachain Robonomics, intégrant ainsi l'œuvre d'art à leur écosystème numérique.
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/feecc-art.webp" alt="processus de peinture" />
+
+## Description du Processus Feecc dans l'Expérience Artistique  
+
+1. **Démarrage du Processus :**  
+    Lorsque le bouton "Démarrer" est enclenché, la mémoire temporaire de l'appareil est effacée, et le système commence à enregistrer de nouvelles données. À ce stade, le titre et la description de la peinture sont enregistrés, et la collecte de données à partir des capteurs connectés, tels que la température et l'humidité, commence.  
+
+2. **Enregistrement en Timelapse :**  
+   Simultanément à l'enregistrement des données, un enregistrement en timelapse avec un facteur de 60 est lancé, capturant le processus de création de la peinture.  
+
+3. **Transmission des Données :**  
+   Tout au long du processus de peinture, les capteurs transmettent directement des donnéesà la parachain Robonomics et à la plateforme Feecc. Cela a marqué la première transaction publique envoyée à la parachain Robonomics (et peut-être à l'ensemble de l'écosystème Dotsama) en utilisant un microcontrôleur ESP32. La caméra continue d'enregistrer le timelapse pendant cette phase.  
+
+4. **Achèvement :**  
+   Lorsque le bouton "Terminer" est pressé, le système finalise l'enregistrement :  
+   - Le timelapse généré et les graphiques de données sont téléchargés sur le réseau IPFS et épinglés via Crust pour un stockage et une accessibilité à long terme.  
+   - Tous les identifiants, y compris le titre et la description de la peinture, sont enregistrés dans un modèle de passeport numérique, qui est également téléchargé sur IPFS avec le CID stocké sur la parachain Robonomics.  
+   - Des codes QR liant à la transaction et au passeport numérique sur IPFS sont automatiquement imprimés et attachés à la peinture, permettant à quiconque d'accéder aux données.  
+
+5. **Fonctionnement à long terme des capteurs :**  
+   Après l'achèvement du processus de peinture, les capteurs peuvent continuer à transmettre des données au réseau, fournissant des informations continues sur les conditions de stockage de la peinture.  
+
+Ce processus démontre comment les technologies IoT et blockchain peuvent s'intégrer dans l'art, créant un système transparent et à long terme pour documenter le travail créatif.
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/art.webp" alt="aperçu des peintures" />
+
+### Passeports de peinture numérique avec les hachages IPFS :
+
+1. [Peinture - Code Lunaire](https://ipfs.io/ipfs/QmZDD4kgaD2f7zWaJibKjDmCkh73aodLkNb2x96h4GfxDx)  
+2. [Peinture -## Studio d'artiste mobile avec éclairage intelligent
+
+Pour cette expérience, l'équipe d'ingénierie de Robonomics m'a aidé à créer un studio d'artiste mobile équipé d'une automatisation de l'éclairage intelligent dans le cadre de notre projet [Web3 Smart Home](https://wiki.robonomics.network/docs/robonomics-smart-home-overview/). Cette configuration est devenue un véritable système de soutien.
+
+Je n'avais plus besoin de me lever constamment pour ajuster l'éclairage ou déplacer des lampes en fonction de l'heure de la journée. L'éclairage intelligent s'adaptait automatiquement, créant des conditions de travail idéales. Cela m'a permis de rester concentré sur le processus créatif sans interruptions.
+
+Pour un artiste, c'est particulièrement important : l'éclairage affecte directement la perception des couleurs, des détails,et l'atmosphère générale d'une peinture. Avec ce soutien, mon processus est devenu plus confortable et productif.  
+
+## Ce que j'ai découvert : l'art et la technologie ensemble
+
+L'expérience a été un succès. Les réactions des gens ont montré qu'ils appréciaient d'observer le processus de peinture et de voir un artiste en direct au travail. C'est un signal important : malgré l'avancée de l'IA, l'art authentique et la créativité restent précieux.  
+
+Je crois que l'art et la technologie peuvent coexister harmonieusement, s'enrichissant et se complétant mutuellement. Mon expérience a démontré que les solutions numériques peuvent élargir les frontières de la créativité plutôt que de la remplacer.  
+
+Cette approche pourrait également être précieuse pour les galeries d'art et les collectionneurs qui préservent soigneusement leurs peintures et souhaitent des données transparentes sur les conditions de stockage. Les capteurs de température et d'humidité permettent une surveillance continue des œuvres d'art pendant le transport, l'exposition en galerie ou chez un nouveau propriétaire. Cette méthode contribue à garantir une préservation maximale et une longue vie à l'œuvre d'art.  
+
+<YouTube id="https://www.youtube.com/watch?v=Rwp2bx1azzU&embeds_referring_euri=https%3A%2F%2Fwww.notion.so%2F&source_ve_path=Mjg2NjY" posterQuality="max"  />
+
+## Nouvelle expérience : T-shirts de style cyberpunk
+
+Lors de mon séjour à Bangkok, j'ai été inspiré par la ville et son atmosphère pour me lancer dans une nouvelle expérience — peindre sur des t-shirts. J'ai créé plusieurs prototypes de t-shirts de style cyberpunk et prévois de lancer une collection complète en 2025. Chaque t-shirt, comme les peintures, sera équipé d'un passeport numérique téléchargé sur la parachain Polkadot via le projet Feecc.  
+
+[Passeport numérique du premier t-shirt de style cyberpunk avec hachage IPFS](https://ipfs.io/ipfs/QmRjvPGaWEqZ7LjhgyZtUBcuccJYJZj2vfcqhzNSfg5mSc)  
+
+<YouTube id="https://www.youtube.com/watch?v=EmBsWiML-2Y&embeds_referring_euri=https%3A%2F%2Fwww.notion.so%2F&source_ve_path=Mjg2NjY" posterQuality="max" />
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/t-shirt.webp" alt="aperçu des t-shirts peints" />
+
+## Projets futurs 
+
+Cette expérience m'a inspiré à continuer d'avancer. Je prévois de poursuivre le développement de ce projet, en explorant de nouvelles possibilités pour l'interaction entre l'art traditionnel et les technologies modernes. De nombreuses expériences et idées passionnantes sont à venir, et j'ai hâte de voir ce qui se passera ensuite.  
+
+Restez à l'écoute pour les mises à jour, les nouvelles peintures et les préparatifs pour le lancement de la nouvelle collection de marchandises sur mon Twitter : [@Anna_Wimmer_S](https://twitter.com/Anna_Wimmer_S).

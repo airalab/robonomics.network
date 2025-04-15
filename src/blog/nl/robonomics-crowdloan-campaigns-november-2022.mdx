@@ -1,0 +1,102 @@
+---
+title: Robonomics Crowdloan Campagnes, november 2022
+date: 2022-11-18
+published: true
+locale: 'nl'
+tags: ['Robonomics parachain', 'Polkadot']
+cover_image: /blog/images/robonomics-crowdloan-campaigns-november-2022/cover.jpg
+description: "De eerste leaseperiode voor de Robonomics parachain-slot op het Kusama-netwerk loopt ten einde. Door veiling #20 te winnen, kregen we de kans om de eerste projecten gebaseerd op Robonomics binnen het Polkadot-ecosysteem te lanceren, op te zetten en te testen."
+abstract: "De eerste leaseperiode voor de Robonomics parachain-slot op het Kusama-netwerk loopt ten einde. Door veiling #20 te winnen, kregen we de kans om de eerste projecten gebaseerd op Robonomics binnen het Polkadot-ecosysteem te lanceren, op te zetten en te testen."
+---
+
+Gedurende 2022 werd de Robonomics parachain in Kusama gebruikt in een dozijn R&D-projecten en verwerkte in totaal meer dan [4 miljoen transacties](https://robonomics.subscan.io/) voor IoT-apparaten.
+
+De ontwikkelaars van Robonomics willen de implementatie van parachain op het Kusama-netwerk voortzetten. Nu bevindt het hele Polkadot-ecosysteem zich in een fase van dynamische ontwikkeling, en we willen voorop lopen in dit proces. Met andere woorden, we willen in het Kusama-netwerk blijven.
+
+Onze plannen voor 2023 omvatten de actieve ontwikkeling rond het idee van een gedecentraliseerde cloud voor de controle van thuis-IoT-infrastructuur. We werken er nu aan om ervoor te zorgen dat onze [gedecentraliseerde applicatie](https://robonomics.app/), [wiki-project](https://wiki.robonomics.network/) en onze educatieve bron, de [Robonomics Academy](http://robonomics.academy/), alle benodigde functies en informatie hebben voor eigenaars van IoT-infrastructuur.
+
+We zullen ook doorgaan met experimenteren met het openen van nieuwe XCM-kanalen binnen het Polkadot-ecosysteem om de meest optimale "bouw" van de gedecentraliseerde cloud voor IoT te vinden, waarbij niet alleen onze parachain, maar het parachain-ecosysteem in zijn geheel wordt gebruikt om de problemen op te lossen die voortkomen uit de wereld van het Internet of Things. Een van de meest voor de hand liggende scenario's in deze richting is bijvoorbeeld een project van gedecentraliseerde gegevensopslag genaamd Crust Network, waarmee we al een reeks HRMP-kanalen hebben geopend.In 2023 zullen alle gebruikers van Robonomics IoT-abonnementen automatisch hun opslaggebruik op het Crust-netwerk laten betalen. In 2023 zullen we proberen een vergelijkbare aanpak toe te passen met betrekking tot het betalen voor de diensten van andere parachains met behulp van fondsen die zijn opgeslagen op de Robonomics parachain.
+
+Als gevolg hiervan hebben we vandaag een werkende parachain voor het lanceren en verzenden van de telemetrie van IoT-apparaten op het Kusama-netwerk. We zijn klaar om ons R&D-werk voort te zetten op weg naar een volwaardige concurrent van AWS voor IoT, en volgend jaar zullen we de maximale nadruk leggen op het ondersteunen van degenen die de belangrijke stap hebben gezet om de gebruikelijke gecentraliseerde clouds achter zich te laten.
+
+
+## Automatisering van Crowdloan-campagnes, deel 2
+
+Vorig jaar werd het concept van een autonome oracle voor crowdloan-campagnes voor het eerst geïntroduceerd in het artikel [Automating Crowdloan Campaigns](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/). Voor ontwikkelaars van de Robonomics parachain is het vinden van een optie om het leven van de parachain te automatiseren een belangrijk onderdeel van het bouwen van een gedecentraliseerde cloud voor IoT. Dit jaar zullen we voor het eerst proberen een crowdloan-campagne te lanceren namens de parachain zelf. Hieronder vindt u de berekeningen van de parameters van de nieuwe crowdloan-campagne, die we uiteindelijk willen omvormen tot een volledig autonoom proces dat in staat zal zijn om zelfstandig nieuwe campagnes te lanceren en succesvol de slotlease te vernieuwen.
+
+Zoals verwacht, is de situatie na de eerste reeks gekke veilingbiedingen een stuk stabieler / normaler geworden, en nu kunnen we eindelijk wat statistieken bekijken over de kosten van slotverhuur. Het vernieuwingsalgoritme zal statistieken verzamelen van de laatste tientallen veilingen om de mediane verhuurprijs te berekenen. Bijvoorbeeld, de onderstaande tabel toont samengevatte statistieken van juli tot november 2022 (informatie afkomstig van [parachains.info](https://parachains.info/auctions/)).
+
+<div class="big-table">
+
+  |                              | Veiling 60   | Veiling 59     | Veiling 58 | Veiling 57   | Veiling 56 | Veiling 55   | Veiling 54      | Veiling 53   | Veiling 52   | Veiling 51 | Veiling 50  | Veiling 49      | Veiling 48    |                                            
+    |------------------------------|--------------|----------------|------------|--------------|------------|--------------|-----------------|--------------|--------------|------------|-------------|-----------------|---------------|  
+  | **Winnaar**                  | Zeitgeist    | Crab Network   | -          | Crust Shadow | Genshiro   | DAO IPCI     | Parathread 2223 | Quartz       | Bit.Country  | Snow       | Subsocial   | Parathread 2130 | GM Parachain  |
+  | **Laatste bod (KSM)**        | 500          | 11             | 0          | 1 807        | 2 000      | 111          | 1 001           | 1 005        | 3 500        | 13 926     | 1 001       | 1 131           | 5 014         |
+  | **Bijdragen**                | zelf gefinancierd | zelf gefinancierd | -     | 209          | 160        | zelf gefinancierd | zelf gefinancierd | zelf gefinancierd | zelf gefinancierd | 782 | zelf gefinancierd | zelf gefinancierd | 738 |
+  | **Aantal deelnemers**        | 2            | 1              | 0          | 1            | 2          | 2            | 2               | 2            | 2            | 1          | 1           | 1               | 1             |
+
+</div>
+
+<TextCard alignContent="center" back="transparent">
+
+**In dit geval is het mediane bod:**
+
+![beta subscript med equals 1001KSM](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-1.svg)
+
+</TextCard>
+
+> Update 5 december: Vanwege updates aan het Kusama-netwerk ([Gov2-upgrade](https://twitter.com/nachortti/status/1588203599129190403)) zal de Robonomics crowdloan-campagne in de komende dagen opnieuw worden gestart. Het verzamelingslimiet zal worden verhoogd naar 10.050 KSM.
+
+Daarom zal het algoritme dit bod gebruiken om de limiet van de crowdloan-campagne te schatten.
+
+Verder, zoals vermeld in de [vorige publicatie](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/), als belangrijkste criterium voor het berekenen van de beloning voor deelname aan de crowdloan, gebruiken we de schatting van de opportuniteitskosten van KSM-stakers in vergelijking met staking op de Relay Chain. Het stakingmechanisme van het Polkadot-ecosysteem is ontworpen inOp zo'n manier dat het systeem een beloning biedt aan degenen die helpen bij het handhaven van de netwerkbeveiliging, terwijl ze proberen de liquiditeit van de inheemse token te waarborgen. Hiervoor werd het parameter "*ideale stakingssnelheid*" (die het netwerk zou moeten bereiken) geïntroduceerd. Als het aantal gestaakte tokens onder de ideale waarde daalt, nemen de stakingsbeloningen toe (waardoor gebruikers worden aangemoedigd om meer te staken om de netwerkbeveiliging te verbeteren). En vice versa, als de stakingssnelheid de ideale overschrijdt, dan dalen de beloningen exponentieel.
+
+Ons algoritme gaat ervan uit dat het systeem zich in een staat boven de ideale staking bevindt (omdat netwerkbeveiliging belangrijk voor ons is), dus **het maximale jaarlijkse rentepercentage voor staking** dat onder deze omstandigheden mogelijk is, wordt bepaald door de ideale stakingssnelheid en het maximale inflatiepercentage voor stakers (d.w.z. het totale aantal gemunte tokens om te betalen aan validators en nominators):
+
+<TextCard alignContent="center" back="transparent">
+
+![i subscript 'ideaal' ​is gelijk aan I subscript NPoS gedeeld door ​ x  subscript 'ideaal'](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-2.svg)
+
+</TextCard>
+
+Je kunt meer lezen over deze berekeningen in het [Token Economics](https://research.web3.foundation/en/latest/polkadot/overview/2-token-economics.html) artikel van W3F Research.
+
+In het Kusama-netwerk is het inflatiepercentage ingesteld op 10%, d.w.z. dit is het maximum dat zal worden gemunt voor stakers in een ideale scenario. De ideale stakingssnelheid varieert afhankelijk van het aantal parachains en is momenteel 45% (zoals aangegeven op het Polkadot.js portaal van het Kusama-netwerk). Dus, we krijgen:
+
+<TextCard alignContent="center" back="transparent">
+
+![i subscript 'ideaal' is gelijk aan 0.1 gedeeld door 0.45 vermenigvuldigd met 100 procent is gelijk aan 22.22 procent](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-3.svg)
+
+</TextCard>
+
+Op dit moment is de *werkelijke stakingssnelheid* 52,6%, en de winst van de stakende deelnemers ligt onder het ideale niveau (ongeveer 15%). Daarom kan het algoritme de parameter *ideale rentevoet* voor de crowdloan-campagne overnemen, en zo een beloningsniveau vinden voor deelname aan de crowdloan.dat eerlijk is voor het netwerk en aantrekkelijk is voor stakers.
+
+Nu kunnen we de beloning berekenen voor deelname aan de crowdloan-campagne (XRT per 1 KSM), wetende de kosten van tokens op de markt:
+
+<TextCard alignContent="center" back="transparent">
+
+![R subscript 'perKSM' ​is gelijk aan (1 vermenigvuldigd met $KSM ​vermenigvuldigd met i subscript 'ideaal' ) gedeeld door $XRT ](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-4.svg)
+
+</TextCard>
+
+Bij de huidige wisselkoers van KSM en XRT zal de crowdloan-beloning ongeveer **2,06 XRT per 1 KSM** zijn. Met deze waarde en de gemiddelde kosten van het leasen van een slot, is het eenvoudig om de totale uitbetalingen aan crowdloan-deelnemers te berekenen:
+
+<TextCard alignContent="center" back="transparent">
+
+![R subscript 'totaal' is gelijk aan beta subscript 'med' ​vermenigvuldigd met R subscript 'perKSM' is gelijk aan 2075,03XRT](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-5.svg)
+
+</TextCard>
+
+> Update 5 december: Vanwege updates aan het Kusama-netwerk ([Gov2-upgrade](https://twitter.com/nachortti/status/1588203599129190403)) zal de Robonomics crowdloan-campagne in de komende dagen opnieuw worden gestart. Het totale beloningsfonds is verhoogd naar 20.750 XRT.
+
+## Overgang van inflatoire naar deflatoire parachain-tokenomics
+
+De kosten van gedeelde beveiliging op het Kusama-netwerk zijn gestabiliseerd. Dit is te zien aan de recente statistieken van slotveilingen, waaruit blijkt dat projecten geen aanzienlijk aantal van hun parachain's eigen tokenvoorraad hoeven toe te wijzen om crowdloan-campagnedeelnemers te belonen. Naast dit feit moeten we ook overwegen dat een Robonomics-specifiek mechanisme voor het verbranden van eigen tokens op het moment dat een gebruiker een IoT-abonnement activeert - wat betekent dat de Robonomics-architectuur binnen het Polkadot-ecosysteem eigenlijk een parachain kan zijn met deflatoire tokenomics.
+
+Er wordt geschat dat de totale generatie van nieuwe Robonomics parachain-tokens in 2023 minder dan 0,38% zal zijn van het totale aantal uitgegeven parachain-tokens. Er is ook ~370k XRT opgeslagen in de schatkist van de Robonomics parachain, waarvan 3,5k XRT isAutomatisch verbrand elke maand. Dit betekent dat de Robonomics parachain in 2023 duidelijke deflatoire dynamiek zal vertonen, met een grote kans dat de deflatie van parachain token groter is dan 3%. De daadwerkelijke deflatiehoeveelheid zal afhangen van de hoeveelheid XRT die wordt verbrand tijdens de activering van IoT-gebruikersabonnementen.
+
+Om deze reden zijn de Robonomics-ontwikkelaars van plan om tokenstaking tijdens de volgende parachain-slotverhuurperiode te annuleren en zich zwaar te richten op verdere ontwikkeling van de architectuur van de parachain. Daarnaast zal er een sterke focus liggen op het verminderen van de generatie van nieuwe XRT-tokens (tot een haalbare mate) en op het actief ontwikkelen van meer parachain-services die gebruikmaken van de uitgaven (verbranding) van XRT-tokens.
+
+Blijf lopen...
+
+![](/blog/images/robonomics-crowdloan-campaigns-november-2022/keep-walking.jpg)

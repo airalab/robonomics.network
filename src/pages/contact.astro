@@ -1,0 +1,63 @@
+---
+// components
+import Layout from '../layouts/Layout.astro'
+
+// data
+import {contacts} from '../data/socials.js';
+
+// social array
+const showcontacts = ['X', 'Discord', 'Telegram Traders', 'Youtube'];
+
+let contactlist = [];
+
+// map data for specific social
+const mapContactlist = () => {
+  showcontacts.forEach(c => {
+    contacts.forEach(i => {
+      if(c === i.title) {
+        contactlist.push(i);
+      }
+    })
+  });
+}
+
+mapContactlist();
+---
+
+<Layout 
+  title={$tr("Contacts")}
+  ogImage="/website_cover_contacts.webp"
+  pageTitle={$tr("Contacts")}
+>
+
+  <div class="layout layout__text">
+    <ul class="list-links">
+      {contactlist.map((item) => (
+        <li class="oldy oldy__link">
+            <div class="icon" set:html={item.svg} aria-hidden="true"/>
+            <a href={item.link} aria-label={`go to ${item.text}`} target="_blank"><b>{$tr(item.text)}</b></a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+</Layout>
+
+
+<style>
+  .list-links li {
+    display: flex;
+    gap: var(--space);
+    align-items: center;
+  }
+  
+  .list-links a {
+      font-variation-settings: var(--font-flex-bold);
+      margin-bottom: calc(var(--space) * 0.2);
+      color: var(--text-color);
+  }
+  
+  .icon {
+    width: 50px;
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+title: Monetizing Logs van Boston Dynamics Spot met Ocean Datatokens
+date: 2021-09-09
+published: true
+locale: 'nl'
+cover_image: /blog/images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/Robonomics_Ocean_p3_blog.jpg
+description: "In het laatste artikel presenteerden we onze ROS-package - ocean_ros, die de Ocean API en ROS verbindt, en raakten we ook gedeeltelijk het gebruiksscenario aan voor het verkopen van technische logs van de robots. Vandaag zullen we dieper ingaan op dit gebruiksscenario en een specifiek voorbeeld beschrijven van de tokenisatie van apparatengegevens."
+abstract: "Het is tijd voor een nieuwe fase van integratie met het Ocean Protocol."
+tags: ['Samenwerkingen', "Gebruiksscenario's"]
+---
+
+Het is tijd voor een nieuwe fase van integratie met het Ocean Protocol. In het [laatste artikel](/blog/ocean-protocol-p-2/), presenteerden we onze ROS-package - ocean_ros, die de Ocean API en ROS verbindt, en raakten we ook gedeeltelijk het gebruiksscenario aan voor het verkopen van technische logs van de robots. Vandaag zullen we dieper ingaan op dit gebruiksscenario en een specifiek voorbeeld beschrijven van de tokenisatie van apparatengegevens.
+
+Allereerst moeten we begrijpen welke praktische bruikbaarheid dergelijke gegevens en datatokens die daaruit zijn gemaakt, met zich mee kunnen brengen. Het is duidelijk dat de service-informatie die wordt verkregen tijdens de werking van robots en apparaten voortdurend wordt hergebruikt om algoritmen of gebruikerservaring te verbeteren. Maar grotendeels blijft deze informatie beperkt tot de fabrikant van het apparaat zelf. Moeilijkheden ontstaan wanneer apparaten met een vergelijkbaar werkingsprincipe op de markt verschijnen (bijv. robotstofzuigers) of wanneer een open platform wordt uitgebracht dat wordt gepositioneerd als de basis voor andere oplossingen (Raspberry Pi, Arduino, TurtleBot van ROS). Voor het eerste geval genereren veel van dezelfde soorten apparaten over de hele wereld gigantische hoeveelheden gegevens die zijn toegewijd aan één specifieke taak. Voor het tweede geval ontvangen ontwikkelaars van open platforms unieke datasets in hun projecten voor een verscheidenheid aan taken. Deze ervaring wordt echter niet geaggregeerd en gedeeld. Het blijft niet beschikbaar voor analyse, wat de systeemverbetering beperkt en het moeilijk maakt om nieuwe benaderingen in het controleproces te vinden.
+
+Bijvoorbeeld, voor bewegingsplanning van manipulatoren is inverse kinematica een uitdaging. De parameters van de gewrichten van de kinematische keten moeten worden gevonden om het uiteinde van de keten naar de gewenste positie en oriëntatie te verplaatsen. Met andere woorden, om het uiteinde van de arm te verplaatsenom de arm naar de juiste positie te brengen, moeten we de posities van elke gewricht van de arm berekenen. Vaak wordt dit probleem opgelost op analytische of numerieke wijze, maar soms hebben deze benaderingen problemen, niet in de laatste plaats op het gebied van berekeningen. Met de opkomst van machine learning begonnen [neurale netwerkbenaderingen](https://doi.org/10.1016/j.protcy.2013.12.451) te worden gebruikt om de inverse kinematica op te lossen, maar hiervoor zijn [datasets](https://mint-lab.github.io/awesome-robotics-datasets/) nodig die informatie bevatten over de beweging van een echt apparaat voor het trainen van het model.
+
+Dergelijke gegevens moeten worden verzameld en verstrekt aan geïnteresseerde partijen. Hier komen de datatokens van [Ocean Protocol](https://oceanprotocol.com/) van pas. Ze maken het automatiseren van dit proces mogelijk en stimuleren de markt van robotdatasets. Op dit moment wordt deze niche voornamelijk ingenomen door open datasets, maar hun grootste nadeel is de lage kwaliteit voor zakelijke toepassingen. Laten we doorgaan naar ons voorbeeld van robotgegevenstokenisatie.
+
+## Ontmoet Boston Dynamics Spot die zijn telemetrie verkoopt
+
+Spot is een relevant voorbeeld van een complex multi-inzetbaar platform met een breed scala aan toepassingsscenario's. Het werken met echte Spot-telemetrie is behoorlijk moeilijk, wat de ontwikkeling van aangepaste modules voor de robot aanzienlijk kan vertragen, vooral als de ontwikkelaar machine learning wil gebruiken. Voorbeelden van operaties die de ontwikkelaar zou kunnen herstellen en bestuderen zouden hier zeer nuttig zijn, maar tot nu toe is er zeer weinig data beschikbaar over het gebruik van de robot, vooral buiten de Verenigde Staten. Daarom willen we dat onze Spot een leverancier wordt van hoogwaardige logs van de daadwerkelijke telemetrie die is verkregen bij het uitvoeren van dezelfde operaties. Dit zal ontwikkelaars meerdere herhaalde records van hetzelfde scenario geven, wat hen zou moeten helpen bij het ontwikkelen of verbeteren van hun eigen oplossingen.
+
+## Implementatie
+
+De belangrijkste integratie met de Ocean API wordt geleverd door onze eerder geschreven ROS-package - [*ocean_ros*](https://github.com/LoSk-p/ocean_ros) Om de Spot SDK te koppelen aan ROS abstracties en om te werken met robotlogs binnen dit besturingssysteem, gebruiken we [een driver](https://clearpathrobotics.com/assets/guides/melodic/spot-ros/ros_setup.html) gemaakt door Clearpath Robotics. U kunt meer te weten komen over hoe u telemetrie kunt verzamelen met behulp van de Spot SDK in het [educatieve programma](https://spot-sdk.education/) van onze collega's bij Merklebot.
+
+Nadat Spot een opdracht heeft uitgevoerd, krijgen we een bestand in rosbag-indelingmet gegevens van het /tf ROS-onderwerp, dat de positie van Spot-frames ten opzichte van elkaar beschrijft. Frames vertegenwoordigen delen van robots en omringende objecten die de robot kan zien met technische visie. De relatie tussen twee frames wordt beschreven door een driedimensionale translatievector, die het verschil tussen de posities van de oorsprong van twee frames beschrijft, en een rotatiequaternion, dat het verschil tussen rotaties van de coördinatiesystemen van twee frames laat zien. De positie van elk frame wordt berekend ten opzichte van het ouderframe (bijvoorbeeld de heup ten opzichte van het lichaam), het initiële frame is de positie van Spot aan het begin.
+
+Nadat Spot een opdracht heeft uitgevoerd, krijgen we een bestand in rosbag-indeling met gegevens van het /tf ROS-onderwerp, dat de positie van Spot-frames ten opzichte van elkaar beschrijft. Frames vertegenwoordigen delen van robots en omringende objecten die de robot kan zien met technische visie. De relatie tussen twee frames wordt beschreven door een driedimensionale translatievector, die het verschil tussen de posities van de oorsprong van twee frames beschrijft, en een rotatiequaternion, dat het verschil tussen rotaties van de coördinatiesystemen van twee frames laat zien. De positie van elk frame wordt berekend ten opzichte van het ouderframe (bijvoorbeeld de heup ten opzichte van het lichaam), het initiële frame is de positie van Spot aan het begin.
+
+![Verschillende delen van Spot en het diagram van de relatie tussen frames](/blog/images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/spot-scheme.png)
+
+*Verschillende delen van Spot en het diagram van de relatie tussen frames. Bron: https://dev.bostondynamics.com/docs/concepts/about_spot.html*
+
+<YouTube id="https://youtu.be/6i9zYpCMzn8" posterQuality="max"/>
+
+De video toont de reeks opdrachten voor het maken, verkopen en kopen van Spot-telemetrie-datatokens (voor meer details over hoe het ocean_ros-pakket werkt, [zie hier](https://www.youtube.com/watch?v=Ssit8-u6dZY)). Het is vermeldenswaard dat het rosbag-bestand vooraf is geladen in het IPFS-bestandssysteem om er toegang toe te krijgen via een hash-link, die wordt gebruikt bij het slaan van datatokens.
+
+![Spot op een 3D-robotmodel](/blog/images/monetizing-logs-of-boston-dynamics-spot-with-ocean-datatokens/Spot-on-a-3D-robot-model.jpg)
+
+De video toont ook de aankoop van deze datatokens en een voorbeeld van het herstellen van het volledigeVolgorde van commando's uitgevoerd door Spot op een 3D robotmodel. Hiervoor gebruiken we de [rviz](http://wiki.ros.org/rviz) visualisatietool voor ROS. Op deze manier kunnen ontwikkelaars werken met echte Spot-telemetrie, zelfs zonder toegang te hebben tot de robot.

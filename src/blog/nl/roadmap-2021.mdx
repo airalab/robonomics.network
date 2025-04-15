@@ -1,0 +1,73 @@
+---
+title: Traject van Robonomics Ontwikkeling 2021, Deel 1
+date: 2021-02-18
+published: true
+locale: 'nl'
+cover_image: /blog/images/roadmap-2021/1.jpg
+description: "De Polkadot-architectuur wordt explicieter en completer, wat ons als parachain-ontwikkelaars in staat zou moeten stellen om onze focus te verleggen van het onderhouden van verbeteringen in Polkadot-afhankelijkheden (het substraatkader, cumulus en andere) naar het vergroten van de functionaliteit van onze parachain."
+abstract: "De Polkadot-architectuur wordt explicieter en completer, wat ons als parachain-ontwikkelaars in staat zou moeten stellen om onze focus te verleggen van het onderhouden van verbeteringen in Polkadot-afhankelijkheden (het substraatkader, cumulus en andere) naar het vergroten van de functionaliteit van onze parachain."
+tags: ['Roadmap', 'Robonomics parachain']
+---
+
+Vanaf dit artikel wil ik graag de taken delen die het kernprojectontwikkelingsteam vandaag met de gemeenschap wil delen.
+
+In totaal hebben we ongeveer [20 taken](https://github.com/orgs/airalab/projects/7) geteld die we dit jaar willen uitvoeren. Sommige daarvan zijn volwaardige taken, terwijl het tweede deel eerder weerspiegelt dat de kernontwikkelaars tijd besteden aan dit gebied, zoals het ondersteunen van de academische gemeenschap, het organiseren van dev-camps en het ontwikkelen van internetbronnen rond het project.
+
+Vandaag zal ik de plannen van het ontwikkelingsteam delen met betrekking tot taak #1 - het lanceren van een parachain op het Kusama-netwerk.
+
+## Taak #1: Parachain op Kusama
+Leads: [@ensrationis](https://scholar.google.com/citations?user=0c53yygAAAAJ&hl=nl), [@akru](https://github.com/akru)
+
+!["Robonomics Parachain op Kusama eerst"](/blog/images/robonomics-parachain-lease-offering/Robonomics_Parachain-web.jpg)
+
+Eerder presenteerden we een algemene visie op de ontwikkeling in het Polkadot-ecosysteem - [Robonomics Parachain op Kusama eerst, Robonomics Relay Chain op Polkadot is een visie](https://robonomics.network/blog/robonomics-parachain-lease-offering/). Laten we nu meer details toevoegen.
+
+### Rococo > Kusama > Polkadot 
+
+Op 31 december 2020, [deRobonomics heeft "Rococo V1-ondersteuning" uitgebracht voor het testen van de parachain in het belangrijkste Polkadot-testnet Rococo v1. Tijdens januari - februari 2021 blijven we de Robonomics-code verbeteren door nieuwe commits samen te voegen die verband houden met de herstarts van Rococo Relay Chain. Om de werking van de Robonomics parachain te testen, houden de ontwikkelaars onze eigen fork van Rococo Relay Chain up-to-date, dus het aansluiten van onze parachain op het openbare netwerk is eerder een kwestie van (1) openbaar bewijs van de compatibiliteit van het project met het ecosysteem, (2) de mogelijkheid om tests uit te voeren met andere projecten uit het ecosysteem - Phala, Acala, Moonbeam, Darwinia, enzovoort - om samenwerkingsimplementaties te zoeken met behulp van de nu beschikbare XCMP in Rococo v1.
+
+### Kusama Slotveiling
+
+Voor ons liggen taken met betrekking tot deelname aan de veiling van slots van het Kusama-netwerk. Allereerst moeten we de implementatie van dit mechanisme begrijpen. Natuurlijk bestuderen we de theorie al lange tijd, maar de praktijk van deelname aan de veiling zal nieuwe taken voor het team openen. In ieder geval zullen we proberen de veiling te oefenen en de resultaten met de gemeenschap delen via een blogpost.
+
+### Democratie, Schatkist en andere parachain-modules
+
+Naast de deelname aan de veiling zijn de ontwikkelaars in discussie over de volgende kwesties met betrekking tot de lancering van de parachain op het Kusama-netwerk:
+
+* Welke modules uit de standaard en gebruikt in het Polkadot / Kusama-netwerk kunnen nuttig zijn voor ontwikkelaars en de gemeenschap na de lancering van de parachain?
+* Hoe gaan we de parachain lanceren: het scenario volgen van rootprivileges voor de belangrijkste ontwikkelaars tot democratie, of ...
+* Hoeveel XRT-tokens moeten worden overgebracht van Ethereum naar Kusama en vervolgens naar Polkadot?
+* De minimale inflatieparameters in het Robonomics-netwerk voor een succesvolle lancering van het stakingmechanisme bij de start van de parachain.
+* ...
+
+Natuurlijk zijn er meer vragen, maar deze zullen waarschijnlijk in de eerste plaats interessant zijn voor de gemeenschap en we denken erover na als prioriteit.
+
+### Specifieke functies van Robonomics Parachain
+
+Bij het spreken over de lancering van de parachain moeten we de belangrijkste en speciale functies begrijpen, die zich openenHet openen van nieuwe mogelijkheden van het Polkadot-netwerk voor een bepaalde groep gebruikers. Robonomics zal de mogelijkheid bieden om slimme apparaten die verbonden zijn met het internet te beheren met behulp van de functionaliteit van de Robonomics Web Services (kortweg RWS), en we zullen ook de functionaliteit implementeren die al is getest op het Ethereum-netwerk voor de opkomende robot-economie - slimme contracten voor het leveren van geautomatiseerde diensten. Zo streeft Robonomics ernaar om het hele Polkadot-ecosysteem te helpen de mogelijkheden van elk project afzonderlijk te vergroten naar diepe integratie met de IoT-markt.
+
+Tot op heden is de mogelijkheid al geïmplementeerd (1) om de IoT-taak in- en uit te schakelen en over te dragen naar het apparaat/robot via de Robonomics parachain; (2) om apparaattelemetrie rechtstreeks via de parachain te ontvangen of in combinatie met IPFS + parachain voor big data, en (3) een parachain-abonnementsmechanisme met gegarandeerde bandbreedte.
+
+Voor ons ligt de implementatie van functionaliteiten zoals:
+
+1. Robobank om elke Polkadot-token te accepteren in automatiseringsdiensten
+2. Enkele versie van True via Digital Twins op Blockchain
+3. Bitcoin-betalingen voor onroerend goed
+4. Privacy bij het gebruik van IoT-toepassingen
+5. wereldwijde toeleveringsketens op blockchain
+6. DeFi-connectiviteit voor IoT
+7. NFT voor IoT
+
+Zoals u kunt zien, zijn taken zoals (3), (4), (6), (7) bijzonder interessant, omdat ze integratie met andere parachains impliceren om hun nuttige functies in Robonomics te benutten.
+
+Laten we de kracht zien van een gemeenschappelijk ecosysteem van vele specifieke projecten!
+
+### Conclusie
+
+De architectuur van Polkadot wordt steeds explicieter en completer, wat ons, als parachain-ontwikkelaars, zou moeten toestaan om onze focus te verleggen van het onderhouden van verbeteringen in Polkadot-afhankelijkheden (het substraatkader, cumulus en andere), en over te gaan tot het verhogen van de functionaliteit van onze parachain.
+
+Het is belangrijk om niet te vergeten dat het proces van het strijden om een parachain-slot een intern ontwikkelingsproces is, maar nog belangrijker - een specifieke functionaliteit van een parachain; het belangrijkste is om Robonomics-functies aan andere parachains te bieden en het gebruik van andere parachains in uw code te implementeren. Dan zal het hele ecosysteem interessante functionaliteit kunnen bieden aan gebruikers; functionaliteit die buitengewoon moeilijk te vinden zal zijn buiten Polkadot.
+
+In het volgende artikel zal ik praten over het Robobank-project, de verbeteringen van de op Substrate gebaseerde client van het Robonomics Network, evenals onze plannen voor de ontwikkeling van Robonom.ics dapp en Robonomics Web Services.
+
+*ensrationis*

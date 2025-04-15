@@ -1,0 +1,92 @@
+---
+title: 'KUNST, Cyberpunk & WEB3: Eine Rückkehr zur Leinwandkunst in der Welt der Technologie'
+date: 2025-01-10
+published: true
+locale: 'de'
+cover_image: '/blog/images/return-to-canvas-art-in-the-world-of-technology/cover.webp'
+description: "Ihr kennt mich als Designerin für Robonomics, aber dieses Jahr bin ich als Künstlerin zurückgekehrt. KI ist wirklich auf einem hohen Niveau herausragend. Aber ich hatte eine Frage: Gibt es immer noch Platz für echte Künstler in der Welt der Technologie? Um die Antwort zu finden, beschloss ich, ein Experiment durchzuführen."
+abstract: "Hallo! Ihr kennt mich als Designerin für Robonomics, aber dieses Jahr bin ich als Künstlerin zurückgekehrt. Ich habe lange beobachtet, wie schnell künstliche Intelligenz sich entwickelt und wie viele sie nutzen, um Bilder zu erstellen. KI ist wirklich auf einem hohen Niveau herausragend. Aber ich hatte eine Frage: Gibt es immer noch Platz für echte Künstler in der Welt der Technologie? Um die Antwort zu finden, beschloss ich, ein Experiment durchzuführen."
+abstractAuthor: 'Anna Wimmer-Savinova'
+tags: ['Web3']
+---
+
+## Malerei, Cyberpunk und Web3: Wie es funktioniert
+
+Mein Experiment fand diesen November in Bangkok während zweier großer Veranstaltungen statt - Polkadot Sub0 Reset und Devcon.
+
+Das Thema der Gemälde war der Cyberpunk unserer Zeit, eine relevante Richtung für unser Team heute. In meiner Arbeit ließ ich mich inspirieren.Aus William Gibsons Roman "Neuromancer", den Drei Gesetzen der Robotik von Isaac Asimov und der Vorstellung, wie Cyberpunk in der modernen Welt und Zukunft aussehen könnte, entstand meine Vision. Diese wurde weiter geprägt von den Panoramen Bangkoks - einer Stadt, die selbst wie eine Stadt der Zukunft wirkt und die Cyberpunk-Atmosphäre perfekt einfängt.
+
+Der Malprozess wurde in Echtzeit auf Video aufgezeichnet. Diese Aufnahmen wurden auf IPFS hochgeladen, wobei die CID im Robonomics-Parachain über unser Feecc-Projekt gespeichert wurde, um für jedes Gemälde einen digitalen Reisepass zu erstellen. Dieser Ansatz gewährleistete vollständige Transparenz: Jeder konnte jeden Schritt des Malprozesses sehen - vom ersten Pinselstrich bis zu den letzten Feinheiten. Weitere Informationen zum Feecc-Projekt und seinen Funktionen finden Sie in [diesem Artikel](/blog/feecc-recap/).
+
+Wir haben auch Temperatur- und Feuchtigkeitssensoren an den Gemälden angebracht, die Daten über die Bedingungen während ihrer Entstehung aufzeichneten. Diese Daten wurden im digitalen Reisepass gespeichert und aktualisierten sich auch nach Abschluss des Gemäldes weiter. Neue Besitzer konnten den Sensor aktivieren, um ihn weiterhin Daten an den Robonomics-Parachain zu senden und das Kunstwerk in ihr digitales Ökosystem zu integrieren.
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/feecc-art.webp" alt="Malprozess" />
+
+## Beschreibung des Feecc-Prozesses im Kunstexperiment  
+
+1. **Prozessstart:**  
+    Wenn die Schaltfläche "Start" gedrückt wird,Der temporäre Speicher des Geräts wird gelöscht, und das System beginnt mit der Aufzeichnung neuer Daten. Zu diesem Zeitpunkt werden der Titel und die Beschreibung des Gemäldes gespeichert, und die Datensammlung von verbundenen Sensoren wie Temperatur und Luftfeuchtigkeit beginnt.
+
+2. **Zeitrafferaufnahme:**  
+   Gleichzeitig mit der Datenaufzeichnung wird eine Zeitrafferaufnahme mit einem Faktor von 60 gestartet, die den Malprozess erfasst.
+
+3. **Datenübertragung:**  
+   Während des Malprozesses übertragen die Sensoren Daten direkt an die Robonomics-Parachain und die Feecc-Plattform. Dies markierte die erste öffentliche Transaktion, die an die Robonomics-Parachain gesendet wurde (und möglicherweise im gesamten Dotsama-Ökosystem) unter Verwendung eines ESP32-Mikrocontrollers. Die Kamera zeichnet während dieser Phase weiterhin den Zeitraffer auf.
+
+4. **Abschluss:**  
+   Wenn die Schaltfläche "Fertig" gedrückt wird, finalisiert das System die Aufzeichnung:  
+   - Der generierte Zeitraffer und die Datengrafiken werden im IPFS-Netzwerk hochgeladen und über Crust für langfristige Speicherung und Zugänglichkeit gepinnt.  
+   - Alle Identifikatoren, einschließlich des Titels und der Beschreibung des Gemäldes, werden in einer digitalen Passvorlage erfasst, die ebenfalls im IPFS mit der CID gespeichert auf der Robonomics-Parachain hochgeladen wird.  
+   - QR-Codes, die auf die Transaktion und den digitalen Pass auf IPFS verlinken, werden automatisch gedruckt und am Gemälde angebracht, sodass jeder auf die Daten zugreifen kann.
+
+5. **Langzeit-Sensorbetrieb:**  
+   Nach dem Malprozessist abgeschlossen, die Sensoren können weiterhin Daten an das Netzwerk übertragen und kontinuierlich Informationen über die Lagerbedingungen des Gemäldes liefern.
+
+Dieser Prozess zeigt, wie IoT- und Blockchain-Technologien in die Kunst integriert werden können, um ein transparentes und langfristiges System zur Dokumentation kreativer Arbeiten zu schaffen.
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/art.webp" alt="Vorschau von Gemälden" />
+
+### Digitale Gemälde-Pässe mit IPFS-Hashes:
+
+1. [Gemälde - Lunar Code](https://ipfs.io/ipfs/QmZDD4kgaD2f7zWaJibKjDmCkh73aodLkNb2x96h4GfxDx)  
+2. [Gemälde - Vertrauen im digitalen Zeitalter](https://ipfs.io/ipfs/QmUwGQWSouxCtnHYtLep59waerVJWotVUmzcxiepvTwUeJ)  
+3. [Gemälde - Cyber Pulse](https://ipfs.io/ipfs/Qme36C3Gmp1fRvME2sSypfSTSv4Kj9u3za2hhymy7oeqw6)  
+4. [Gemälde - Cyber Illusion](https://ipfs.io/ipfs/QmTaKjMxrrPU7M4iCubHnWi6TfrxAXL3iQ6rQ3mev69gjz)  
+5. [Malerei - **Evolution der Freiheit: Der Weg von Ethereum**](https://ipfs.io/ipfs/QmPBYuLFTw9sGHigZzQZ4LQHSZtUvgMfnFnRXFUi1nob5Y)  
+
+
+## Mobiles Künstlerstudio mit intelligenter Beleuchtung
+
+Für dieses Experiment half mir das Robonomics-Entwicklungsteam, ein mobiles Künstlerstudio mit intelligenter Beleuchtungsautomatisierung im Rahmen unseres [Web3 Smart Home](https://wiki.robonomics.network/docs/robonomics-smart-home-overview/) Projekts zu schaffen. Diese Einrichtung wurde zu einem echten Unterstützungssystem.  
+
+Ich musste nicht mehr ständig aufstehen, um die Beleuchtung anzupassen oder Lampen je nach Tageszeit zu verschieben. Die intelligente Beleuchtung passte sich automatisch an und schuf ideale Arbeitsbedingungen. Dies ermöglichte es mir, mich auf den kreativen Prozess zu konzentrieren, ohne Unterbrechungen.  
+
+Für einen Künstler ist dies besonders wichtig: Die Beleuchtung beeinflusst direkt die Wahrnehmung von Farben, Details und der allgemeinen Atmosphäre eines Gemäldes. Mit dieser Unterstützung wurde mein Prozess komfortabler und produktiver.  
+
+
+## Was ich entdeckt habe: Kunst und Technologie zusammen
+
+Das Experiment war ein Erfolg. Die Reaktionen der Menschen zeigten, dass sie es genossen, den Malprozess zu beobachten und einen Live-Künstler bei der Arbeit zu sehen. Dies ist ein wichtiges Signal: Trotz des Fortschritts der KI bleiben echte Kunst und Kreativität wertvoll.  
+
+Ich glaube, Kunst und Technologie können harmonisch nebeneinander existieren und sich gegenseitig bereichern und ergänzen. Mein Experiment zeigte, dass digitaleLösungen können die Grenzen der Kreativität erweitern, anstatt sie zu ersetzen.
+
+Dieser Ansatz könnte auch für Kunstgalerien und Sammler wertvoll sein, die ihre Gemälde sorgfältig aufbewahren und transparente Daten zu Lagerbedingungen wünschen. Temperatur- und Feuchtigkeitssensoren ermöglichen eine kontinuierliche Überwachung von Kunstwerken während des Transports, der Galerieausstellung oder im Zuhause eines neuen Besitzers. Diese Methode hilft, eine maximale Konservierung und eine lange Lebensdauer der Kunstwerke zu gewährleisten.
+
+<YouTube id="https://www.youtube.com/watch?v=Rwp2bx1azzU&embeds_referring_euri=https%3A%2F%2Fwww.notion.so%2F&source_ve_path=Mjg2NjY" posterQuality="max" />
+
+## Neues Experiment: Cyberpunk-Style T-Shirts
+
+Während meines Aufenthalts in Bangkok ließ ich mich von der Stadt und ihrer Atmosphäre inspirieren, um ein neues Experiment zu starten - das Malen auf T-Shirts. Ich habe mehrere Prototypen von T-Shirts im Cyberpunk-Stil erstellt und plane, 2025 eine vollständige Kollektion zu veröffentlichen. Jedes T-Shirt wird, ähnlich wie die Gemälde, mit einem digitalen Pass ausgestattet sein, der über das Feecc-Projekt auf die Polkadot-Parachain hochgeladen wird.
+
+[Digitaler Pass des ersten Cyberpunk-T-Shirts mit IPFS-Hash](https://ipfs.io/ipfs/QmRjvPGaWEqZ7LjhgyZtUBcuccJYJZj2vfcqhzNSfg5mSc)
+
+<YouTube id="https://www.youtube.com/watch?v=EmBsWiML-2Y&embeds_referring_euri=https%3A%2F%2Fwww.notion.so%2F&source_ve_path=Mjg2NjY" posterQuality="max" />
+
+
+<RbImage zoom src="/blog/images/return-to-canvas-art-in-the-world-of-technology/t-shirt.webp" alt="Vorschau von bemalten T-Shirts" />
+
+## Zukünftige Pläne
+
+Diese Erfahrung hat mich inspiriert, weiterzumachen. Ich plane, dieses Projekt weiterzuentwickeln und neue Möglichkeiten für die Interaktion zwischen traditioneller Kunst und modernen Technologien zu erkunden. Es stehen viele spannende Experimente und Ideen bevor, und ich kann es kaum erwarten zu sehen, was als Nächstes kommt.
+
+Bleiben Sie dran für Updates, neue Gemälde und Vorbereitungen für den Start der neuen Merch-Kollektion auf meinem Twitter: [@Anna_Wimmer_S](https://twitter.com/Anna_Wimmer_S).

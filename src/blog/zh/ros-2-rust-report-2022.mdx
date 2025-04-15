@@ -1,0 +1,46 @@
+---
+title: Robonomics帮助实现Rust对ROS 2的支持
+date: 2022-12-29
+published: true
+locale: 'zh'
+tags: ['ROS 2', '使用案例', '合作']
+cover_image: /blog/images/ros-2-rust-report-2022/cover.jpg
+description: "这是我们与Esteve Fernandez合作的故事，他是创建机器人操作系统2原始团队的前成员。他已经为ROS 2开发Rust绑定几年了。我们想分享这个项目的故事，解释我们如何帮助Esteve，以及为什么拥有Rust对机器人应用很有用。"
+abstract: "这是我们与Esteve Fernandez合作的故事，他是创建机器人操作系统2原始团队的前成员。他已经为ROS 2开发Rust绑定几年了。我们想分享这个项目的故事，解释我们如何帮助Esteve，以及为什么拥有Rust对机器人应用很有用。"
+---
+
+## 从ROS 1到ROS 2
+
+ROS最初是为特定类型的机器人开发环境而创建的。最初，操作系统的第一个版本旨在为具有板载计算资源和可靠网络连接的单个机器人提供服务，无需实时控制。因此，开发人员最初认为ROS 1最适合研究和学术应用。
+
+然而，ROS最终超越了研究界，被商业用途采用。为了满足新的使用案例需求，开发人员着手添加新功能，例如支持多机器人和小型嵌入式系统，以及与实时控制的集成。他们还决定改进API并整合自ROS 1发布以来出现的新技术。与此同时，他们选择不更改现有版本的机器人操作系统，因为这将对现有应用程序产生重大影响。因此诞生了[ROS 2](https://design.ros2.org/)。
+
+## 关于Esteve
+
+Esteve是最初开始开发ROS第二版的团队之一。他是一位拥有20多年开源开发和自动驾驶汽车经验的机器人工程师。即使离开核心ROS 2团队，他继续积极为项目的存储库做出贡献。
+
+Esteve的个人目标之一是开发项目，使开发人员能够用Rust编写ROS 2应用程序（绑定、代码生成器等），为他们提供一个强大的工具来创建高效、稳健的机器人程序。然而，该项目一开始进展缓慢，因为Esteve在空闲时间里几乎独自工作了4年。
+
+大约一年半前，我们遇到了Esteve，并同意帮助他开发ros2-rust。多亏了这一点，Esteve能够额外投入时间来开发该项目并吸引更多关注。Rust上的ROS2社区已经壮大，其他人也开始通过Esteve的审查为该项目做出贡献。现在[主存储库](https://github.com/ros2-rust/ros2_rust)在Github上有27位贡献者，75个分支和466个星标。
+
+## 开发进展
+
+目前，ros2-rust已经实现了消息生成、发布者/订阅者机制、客户端和服务端的支持。我们的一个重要目标是将Robonomics作为ROS 2中间件开发，这需要为ros2-rust添加一个Robonomics传输层。为了实现这个功能，正在添加对libP2P通信库的支持，而不是ROS2的标准数据分发服务（DDS）。DDS以分布式发现方式提供发布-订阅传输，允许任何两个程序进行通信，无需像ROS主节点这样的集中工具。但是DDS需要开发一个额外的桥接来将Robonomics添加到ROS2中，而libP2P允许原生Robonomics集成。
+
+![ros-2-stack](/blog/images/ros-2-rust-report-2022/ros-client-library-api-stack.png)
+
+*ROS客户端库API堆栈图，显示ROS 2中间件（rmw）的位置。来源：[ROS 2文档](https://docs.ros.org/en/foxy/Concepts/About-Internal-Interfaces.html)*
+
+## 为什么选择Rust上的ROS2？
+
+除了作为Substrate上Robonomics的主要语言外，Rust对于机器人应用有着显著的优势。
+
+一般来说，对于用于商业和大规模部署的最常用机器人平台，通常使用C++，因此首先为ROS添加了C++支持。这是因为C++能够在‘接近’的情况下工作。硬件'及其在具有有限计算资源的机器人应用中的适用性。然而，这也使得C++更加危险，因为在开发过程中很容易出现关键错误，这些错误只有在后来在真实（和损坏的）硬件上才会被发现。
+
+这就是Rust的优势所在。它实现了类似C++的低级开发，但具有额外的内存安全性。这种安全性不会带来额外的运行时成本，保持了应用程序的高执行速度。此外，Rust使得开发复杂和风险较高的机器人项目更加高效。
+
+## 未来计划
+
+在不久的将来，Esteve计划在ros2-rust中添加操作（对节点功能的异步调用）。它们允许客户端跟踪请求的进度，获取最终结果，并在请求完成之前选择性地取消请求。特别是，这使得机器人可以创建查询，例如用于导航和定位目的。
+
+长期计划包括构建一个在Robonomics Network之上启动的ROS 2原型。这将使我们能够在Substrate上使用Robonomics创建一个WebAssembly应用程序，该应用程序可以在Robonomics分散式云上的浏览器中运行ROS2。我们期待在[Robonomics Academy](https://robonomics.academy)推出一门专门针对ROS 2的课程，并可以直接在任何浏览器上进行工作！

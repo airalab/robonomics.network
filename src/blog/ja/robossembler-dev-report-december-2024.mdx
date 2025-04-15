@@ -1,0 +1,84 @@
+---
+title: "Robossembler 開発レポート＃1"
+date: 2024-12-08
+published: true
+locale: 'ja'
+cover_image: /blog/images/robossembler-dev-report-december-2024/Cover.webp
+description: "Robossemblerプロジェクトは、どんなDIY愛好家でもアクセス可能な産業用ロボットとその製造のためのツールの開発に焦点を当てています。この記事では、現在の進捗状況を共有します - 更新されたテスト済みのギアボックス、5番目の巻線機のバージョン、および3Dプリント用に追加の最適化が施されたロボットマニピュレーターです！"
+abstract: "Robossemblerプロジェクトは、どんなDIY愛好家でもアクセス可能な産業用ロボットとその製造のためのツールの開発に焦点を当てています。この記事では、現在の進捗状況を共有します - 更新されたテスト済みのギアボックス、5番目の巻線機のバージョン、および3Dプリント用に追加の最適化が施されたロボットマニピュレーターです！"
+tags: ['Robossembler']
+---
+
+
+## サーボ
+
+モーター単体では、現実世界で重いオブジェクトを回転させたり持ち上げたりするのに十分なトルクが不足しているため、ギアボックスやトランスミッションが必要です。ギアボックスは、モーターのトルクを利用可能な出力力に変換します。これは、私たちの場合に特に重要でした - DINネジを磁気コアとして使用した印刷されたステータは、電気鋼製の固体メタルステータを使用した対照物よりも3〜4倍弱いことがテストされました。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/stator-photo_2024-12-08_00-03-21.webp" alt="" />
+
+この比較的低い出力に対して、Robossemblerのすべてと同様に、組み立てが簡単で3Dプリントに適した高いギア比のギアボックスが必要でした。私たちは、いくつかのエキゾチックなデザインを含む多くのギアボックスの設計を試みましたが、それぞれが私たちの基準を満たすことができませんでした。最後の試みである中間の転動要素を持つねじれ波ギアボックスは性能が良かったものの、製造が複雑すぎることが判明しました。
+
+長期にわたる実験の結果、ついに完璧な設計を発見しました：1:43のギア比を持つプリセッシングギアボックスです！
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-07_21-54-20.webp" alt="" />
+
+組み立てがどれほど簡単かをご覧ください：
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0vXwFmTB_L4?si=soNbSNKg9tjPWY1f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ギアボックスは主要なテストと試験を完了しました。ここで印象的なことがあります - ギアボックス付きのサーボドライブの重量はわずか273gで、標準の重量と一致しています。ギアボックスやコントローラーのない金属モーター！
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-08_14-02-33.webp" alt="" />
+
+## ステータ巻線機
+
+バージョン4の巻線機は最初のステータを半自動で巻くことに成功しましたが、安定性と繰り返し性の向上が必要でした。バージョン5では多くの改良が施され、以下に主なものを示します。
+
+バージョン4で使用されていた独自のCrealityステッパーモーターコントローラーから、伝説のRepRapプリンターからの実績のあるRAMPSコントローラーにアップグレードしました。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-50-12.webp" alt="" />
+
+- 機械部品を軽量化し、より良くしました - 今では25%少ないプラスチック材料を使用し、追加のサポート構造なしでより簡単に3Dプリントできます
+- ワイヤ供給システムは、追加のスプールブレーキとホイールのワイヤ溝を深くすることでより安定しています
+- ディスプレイケースと裏蓋を再設計して保護性を向上させました
+- プロジェクトの文書は、詳細な留め具仕様、印刷時間、およびプラスチック消費データを含む完全なものになりました。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-51-26.webp"alt="" />
+
+機械設計に針キャリブレータを追加し、機器のセットアップを簡素化しました。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-04_11-41-56.webp" alt="" />
+
+バージョン5は現在テスト中であり、新しい巻線Gコードプログラムジェネレータと一緒にテストされています。以前の特定のモーター修正用にハードコードされたプログラムの代わりに、新しいGコードジェネレータは異なるステータ設計に迅速に適応できるようになりました。
+
+## ロボットマニピュレータ
+
+モーターとギアボックスの生産準備が近づくにつれ、マニピュレータの設計を改良しています。3D印刷に最適化されていると考えていましたが、新しいチームメンバーである10年の経験を持つ3D技術者が改善すべき点をいくつか見つけました。低コストのプリンターでも部品の印刷を予測可能にすることに焦点を当て、メインボディリンクを最小限のサポートで印刷できるように再設計しました。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/3d-supports.webp" alt="" />
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/roboarm-3d-optimize-photo_2024-11-20_15-56-53.webp" alt="" />
+
+モーションコントロールプログラマーの要求に応じて、マニピュレータの駆動リンクを単一の運動連鎖に接続するコンポーネントであるフォークを再設計しました。以前のデザインはより大きな作業半径を提供していましたが、軌道計算中に頻繁に特異な位置を引き起こし、シミュレーション制御を複雑にしました。新しいフォークデザインはこの問題を解消し、ロボットの運動学をより最適化し、Kuka Iiwaにより類似したものにしました。
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/fork-roboarm-photo_2024-12-07_11-39-31.webp" alt="" />
+
+制御ソフトウェアについては、ROS 2 Humble（テスト中のJazzy）とBehaviour Tree CPP v4を使用したソリューションを開発中で、現在はAR4で検証中です。主要な革新点は、ランタイムパラメータの変更（コントローラーの構成や新しい機械ビジョンニューラルネットワークの重みの動的読み込みなど）に対するライフサイクル管理ノードの広範な使用です。
+
+## 予定
+
+私たちの今後の目標：
+
+- 新しいモーター、ギアボックス、および交換可能な指を備えたアップグレードされたグリッピングデバイスをリリースする
+- ワインディングマシンのGCodeジェネレーターをテストし、完全自動ステータ巻線を行う
+- ロボットの3D最適化を完了し、組み立てデモ動画を作成する
+- サーボドライブの温度管理を最適化し、リンク内で負荷下でテストする
+
+私のブログで最新情報をチェックしてください：[x.com](https://x.com/movefasta)！
+
+## ソフトウェア＆ハードウェアソース
+
+- Robossembler Arm - https://gitlab.com/robossembler/roboarm-diy-version
+- ワインディングマシン：https://gitlab.com/robossembler/cnc/motor-wire-winder- Servo - https://gitlab.com/robossembler/servo
+- Grip Tool - https://gitlab.com/robossembler/arm-tools/grip-tool
+- Robossembler ROS 2 runtime - https://gitlab.com/robossembler/robossembler-ros2

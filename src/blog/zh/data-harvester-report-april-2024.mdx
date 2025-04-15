@@ -1,0 +1,73 @@
+---
+title: "数据收割机项目：四月报告"
+date: 2024-04-11
+published: true
+locale: 'zh'
+cover_image: /blog/images/data-harvester-report-april-2024/cover.png
+description: "Robonomics团队正在开发一个用于数据收集的自主平台的概念。自从我们的科学管理员伊万上次分享有关该项目的见解以来，已经过去了一个半月。在这段时间里，数据收割机已经接受了重大更新，我们很高兴在这篇博文中突出显示它们。"
+abstract: "Robonomics团队正在开发一个用于数据收集的自主平台的概念。自从我们的科学管理员伊万上次分享有关该项目的见解以来，已经过去了一个半月。在这段时间里，数据收割机已经接受了重大更新，我们很高兴在这篇博文中突出显示它们。"
+tags: ['公告', '用例', '合作', '智能家居']
+---
+
+Robonomics团队正在开发一个用于数据收集的自主平台的概念。自从我们的科学管理员伊万上次[分享](https://twitter.com/berman_ivan/status/1759943496742404346)有关该项目的见解以来，已经过去了一个半月。在这段时间里，数据收割机已经接受了重大更新，我们很高兴在这篇博文中突出显示它们。
+
+## 什么是数据收割机？
+
+首先，让我们回顾一下这个项目的内容。简单来说，这是一个配备传感器的移动机器人平台，旨在收集其周围环境的可用数据。在我们的场景中，我们使用由Clearpath Robotics制造的[Turtlebot 4 Pro](https://clearpathrobotics.com/turtlebot-4/)，配备了3D摄像头、2D激光雷达和一组用于轮式机器人的标准传感器。中央计算单元是树莓派。机器人的所有组件通过ROS 2框架进行通信。
+
+我们的目标是将机器人转变为一个数据收集机器，收集室内环境的安全信息，并以用户友好的格式呈现出来。为实现这一目标，额外的传感器已与基本记录设备集成，并开发了软件以便从这些传感器中进行全面数据收集。
+
+## Turtlebot 4 Pro硬件更新
+
+最初，基于ESP32控制器的一组空气传感器被集成到机器人中。这些传感器包括：
+
+- SHT3X：温湿度传感器
+- BH1750：光强度传感器
+- SCD4X：二氧化碳浓度传感器
+
+此外，机器人的基本设置经过轻微改进，以适应增加的计算需求和安全考虑：
+
+- Raspberry Pi 4GB升级为性能更强大的8GB版本。
+- 制作了一个3D打印外壳来容纳空气传感器，确保它们被紧凑地安排。
+- 还为摄像头和激光雷达制作了一个保护框架。
+- 另外，现在机器人被包裹在警示胶带中，以增强可见性。
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/upgraded-turtle-bot-4-pro.jpg" alt="升级后的Turtle Bot 4 Pro" />
+
+## 软件开发进展
+
+Turtlebot带有一组用于基本操作的默认软件包，包括同时定位和映射（SLAM）以及导航。然而，任务仍然是将这些模块集成为统一功能，并为数据收集整合特定功能。在当前设置中，机器人预计从空气传感器收集数据并扫描Wi-Fi网络。
+
+目前，已为机器人开发了三个主要的ROS 2软件包：
+
+- **data_harvester_navigation** - 处理机器人在使用SLAM构建的预先存在地图上的定位和导航。
+- **data_harvester_perception** - 负责发布来自空气传感器的数据并进行Wi-Fi网络扫描。
+- **data_harvester_chronicler** - 管理数据记录并随后发布到最终存档。
+
+对于ESP32控制器，基于ESP-IDF框架编写了固件```esp32-sensors```，支持所有使用的传感器。该固件有两个版本：在线版本（控制器连接到Wi-Fi）和离线版本。
+
+源代码可在GitHub上找到：https://github.com/Fingerling42/data-harvester
+
+## 现场工程和测试
+
+自三月初以来，已经进行了几次机器人的实验性出行。实地测试的对象是塞浦路斯帕福斯的一个办公空间。在初始设置完成后，机器人被留在办公室，其控制开始远程进行，使用端到端Yggdrasil协议进行连接。
+
+首先，围绕办公室领地进行了几次SLAM圈。结果，形成了对研究区域的高质量地图。
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/turtle-bot-map-testing.png" alt="Turtle Bot地图测试" caption="一张办公空间地图，覆盖了机器人坐标在一次任务后的位置" />
+
+然后，基于地图，机器人开始执行收集数据的任务。完成后，收集了有关空气质量和Wi-Fi信号质量的数据，以及有关机器人在地图上位置的数据。这使得收集的数据能够与它们被收集的点结合起来。最终，最终存档被发送进行处理和可视化。
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/turtle-bot-4-app-1.png" alt="Turtle Bot应用空气传感器数据" caption="从安装在Turtlebot 4 Pro上的空气传感器收集的数据的用户界面" />
+
+<RbImage zoom src="/blog/images/data-harvester-report-april-2024/turtle-bot-4-app-2.png" alt="Turtle Bot应用Wi-Fi覆盖范围" caption="基于从升级后的Turtlebot 4 Pro收集的数据进行Wi-Fi覆盖分析的用户界面" />
+
+## 下一步里程碑
+
+我们下一个重点将是为机器人完整遍历区域开发全面的覆盖路径规划，利用已经选择的回溯螺旋算法。此外，将实现与最新版本的Robonomics ROS 2 Wrapper的集成，以便从ROS 2安全地传输数据到Robonomics云。
+
+在硬件方面，我们计划将专用路由器整合到机器人中，以确保所有组件在网络连接方面简单且独立。
+
+最终，我们的目标是创建一个专用的数据收割机UI应用程序，允许收集的数据以用户友好的格式呈现。这对办公室管理员尤其有价值。
+
+敬请关注更多更新！

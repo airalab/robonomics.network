@@ -1,0 +1,105 @@
+---
+title: Robonomics、RWS 和 Polkadot 上的 Robonomics 平行链的终极指南
+date: 2021-02-25
+published: true
+locale: 'zh'
+cover_image: /blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-logo.jpg
+description: "本文深入探讨了Robonomics平台、其在Polkadot生态系统上的平行链以及Robonomics Web Services（RWS）之间的关系"
+abstract: "本文深入探讨了Robonomics平台、其在Polkadot生态系统上的平行链以及Robonomics Web Services（RWS）之间的关系"
+tags: ['Robonomics平行链', 'RWS代币', '订阅']
+---
+
+考虑到关于Robonomics骨干运作的讨论永无止境，让我们深入研究其内部结构并概述网络的主要支柱。本文深入探讨了Robonomics平台、其在[Polkadot生态系统上的平行链](https://blog.aira.life/robonomics-parachain-on-kusama-40853780c709)以及[Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42)（RWS）之间的关系。
+
+Robonomics网络由多个[代码存储库](https://github.com/airalab)组成，可以分别用于实现完整的物联网应用程序。例如，如果您计划将智能手机连接到物联网设备，仅仅开发一个应用程序并将一堆传感器连接到它是不够的。相反，您必须执行一系列[操作](https://blog.aira.life/simple-iot-scheme-990224363803)，最终将导致连接的物联网设备和基础设施的互连元素，使设备的信号能够传达到您这里。
+
+## Robonomics网络发展的时间线
+
+那么，是如何产生创建[Robonomics平行链](https://parachain.robonomics.network/#/explorer)和[Robonomics网络](https://robonomics.network/land/say-hello-to-robonomics/)的想法呢？最初，在2015年至2017年期间，我们开始开发一个非常复杂的我们称之为[Economy of Robots](https://blog.aira.life/the-first-in-the-economy-of-robots-6f4bb115643b)的解决方案。我们相信这正是智能城市、工业4.0和物联网应用程序发展的方向。
+
+我们的主要目标是为了创建能够管理技术和经济交易框架内的自主设备的软件。因此，我们决定生成一个技术和经济偏向的交易，并将其作为更复杂流程发展的基础。
+
+我最喜欢的Economy of Robots场景之一被称为[智能建筑抵消](https://new.dapp.ipci.io/#/offsetting)。这是一个服务，允许自主建筑收集和汇总其能源消耗信息，然后将其传达给Robonomics Network内的另一个代理，并甚至请求碳足迹抵消服务。然后，代理验证建筑物的位置，计算适用的二氧化碳排放系数，然后将这些数据与合作项目[DAO IPCI](http://ipci.io/)同步，以确定绿色金融市场所需的碳信用额度，以抵消建筑物的碳足迹。这些操作已成功在以太坊区块链上执行。
+
+### 问题的解决方案
+
+今天，我们在2017年与同事和合作伙伴共同构建的Economy of Robots，构成了一个乍一看复杂的链条，作为物联网行业演进的最终转折点。我们遇到的最大问题是，我们积累了所有的知识并实现了我们的想法，却没有机会将它们传递给任何人。在Robonomics Network平台开发过程中创建的每个新的[Economy of Robots场景](https://wiki.robonomics.network/docs/r-and-d-based-on-robonomics-network/)，使最终产品对于对这一领域陌生的人来说变得更加难以理解。换句话说，人们必须熟悉多种能力，并花费多年时间才能理解经济和机器共同工作概念背后的交叉学科思维。
+
+当您开始理解IoT应用程序开发背后的微妙之处时，很快就会意识到技术专家必须花费多年时间才能达到完全运行的产品阶段。这就是为什么我们决定将我们平台的潜在用户转变为共同开发者。我们专注于教导他们成为IoT应用程序领域的专业IT工程师，以此来缩短技术专家们达到完全运行产品阶段所需的时间。因此，我们创建了Robonomics平行链和Robonomics Web服务。
+
+![DAO IPCI与Robonomics网络](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network.jpg)
+
+
+## Robonomics Web服务简介
+
+很明显，机器人经济对公众很有吸引力。然而，主要问题在于，这些用户在短时间内仍然会转向亚马逊Web服务以获取物联网设备，并开始使用它，而没有弄清楚Robonomics网络相对于著名的IT巨头的关键优势。这使我们得出结论，我们不能只是承诺未来完成某事，而不提供真正的产品。
+
+因此，我们决定必须向我们潜在用户提供一系列真实的服务。类似于其他云平台提供的服务，但更好。因此，我们创建了Robonomics Web服务，这是一个建立在我们内部协议和平台上的产品，使用开源机器人框架（ROS）。然后，我们花了2年时间开发我将在下文更详细地介绍的关键功能。
+
+### RWS的关键功能：
+
+**1. 订阅**
+
+区块链服务的标准方法总是包括称为交易费用或交易燃气的交易成本。这意味着当您进行交易时，其优先级取决于您愿意支付的费用或费用。您支付的费用越高，您的交易处理速度就越快。这种模式不适用于依赖于有保障带宽的系统。您必须绝对确定您的设备能够在设定的时间内进行交易，并且成本是可预测的。这是我们今天很少看到的情况，因为交易成本完全取决于汇率的波动，有时会达到50美元的成本。
+
+为了解决这个问题，我们创建了一个订阅服务，这是Polkadot上Robonomics平行链的另一种成本模型。它保证执行预付数量的交易，并为它们分配比通过费用模型支付的交易更高的优先级。要了解有关月度订阅和XRT代币之间的区别，您可以参考我的“[异构经济学](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855)”文章，而我计划的其他部分。将于12月底发布，将概述两个模型的最终架构和互连。
+
+我们的订阅模型不仅解决了过渡问题，而且每台设备仅需10美元，对最终用户来说是一项极具盈利性的提供。此外，它为数千次每月交易提供了稳定的带宽，这是一个相当出色的成就。
+
+**2. 发布**
+
+发布是一个非常简单但经济实惠的功能，从计算能力和区块链的角度来看。它允许您通过发送请求以事务形式打开或关闭设备，并将其二进制设置从1更改为0，然后再次更改。由于这个功能并不复杂，让我们转向下一个关键支柱。
+
+**3. 数据日志**
+
+这个功能与遥测一起工作，因此需要我对其进行扩展。它以两种模式工作，您可以保存IPFS哈希，也可以将数据存储在链上。
+
+那么如何使用这些模式呢？当您的数据大小低于四个变量时，链上数据日志功能是适用的。在这种情况下，将这么小的数据块保存在IPFS（链下）上是没有意义的，因为就字节而言，这个链上日志不会比IPFS哈希增量大。我们建议将整个原始数据流入记录为单个函数，或选择IPFS哈希。然后，Robonomics作为开发者的平台将处理记录的数据，无论是原始数据还是IPFS哈希形式，并决定将其写入何处。这个数据日志处理将对最终用户隐藏，他/她甚至不会注意到两种不同存储类型之间的区别。
+
+‘责任’是我们的最终功能，但在我们了解到大规模机器人经济项目追求的目标之前，它不会向公众发布。我们正在努力开发的另一个里程碑产品是针对[机器人即服务](https://blog.aira.life/what-is-robonomics-network-robot-as-a-service-and-future-parachain-of-polkadot-or-something-more-36deece9f3cb)框架，或者我们称之为在以太坊上的‘合同义务机器人’。[这个基础设施](https://blog.aira.life/robots-under-robonomics-control-overview-39337ac9fbbb)已经在我们的知识中心中详细描述，并暗示着最终用户使用我们的服务代币的情况。而不依赖XRT或其他代币来支付平行链使用费用。
+
+![Robonomics Web Services（RWS）的关键功能](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-rws.jpg)
+
+## RWS与机器人经济之间有什么联系？
+
+正如前面提到的，Robonomics Web Services背后的目标之一是教育我们的用户，并将他们转变为了解机器人经济的共同开发者。我们相信只要用户熟悉上面讨论的基本功能，这项任务就不会太复杂。
+
+### 数字孪生体
+
+应用Robonomics Web Services提供的工具的下一步是学习如何创建数字孪生体，也称为应用的数字影子。它充当真实设备的数字版本，并复制其所有技术特征。
+
+你可能会问这意味着什么！让我们以测量空气质量的传感器复杂结构为例。你不能让它们每5秒进行一次测量，因为它们的内部校准和平衡测量数据需要2分钟。这就是数字孪生体的作用，使我们能够创建一个对用户命令响应灵敏的应用程序。
+
+根据[关于物联网市场趋势的Gartner报告](https://www.gartner.com/en/innovation-strategy/trends/iot-adoption-trends)，参与研究的公司中，85%已经实施或计划在未来一年内实施数字孪生体。其中大多数公司拥有内部工程团队，致力于专有解决方案。然而，他们都承认，为了能够快速扩展并使其服务适应不断变化的物联网行业环境，他们必须依赖已有的解决方案。
+
+这就是为什么我们在Robonomics Network上的平行链不仅提供了上述在以太坊IPFS上不可用的功能，还允许我们的用户创建其设备的数字孪生体。
+
+我们正在开发此功能，让用户构建自己的数字孪生体，在Web服务/IoT应用程序上解释它们，并最重要的是将其保存为将写入数据日志的模型。我们的[Wiki](http://wiki.robonomics.network/)正在不断更新，提供执行上述解决方案所需的所有知识，并很快将完整地解释从A到Z构建数字孪生体的基本信息。
+
+### 应用数字双胞胎
+
+一旦数据处理模型确定并且您的数字孪生完全结构化，您必须决定它与网络服务或物联网应用程序的关系。
+
+分析通常是这种数字服务的常见选择，传感器向您发送它测量的数据（更新其数字副本）。由于您极不可能对您的乡间别墅供暖系统内的帕斯卡压力值感兴趣，这些数据很可能会经过后处理。相反，您需要知道房屋内的温度是否适宜以及供暖系统是否仍在运行。基本上，您必须决定如何应用您保存在其上的数据的数字孪生，这就是额外服务可以帮助的地方。
+
+现在，我们转向一个复杂的智能建筑抵消场景，其中能源消耗数据的副本充当数字孪生。假设您想保存给定公寓的能源消耗数据，并使用IPFS存储的Datalog功能。如果您想要找出消耗的总能量量，您将把它保存在链上。相反，想象一下我们运行智能建筑的数字孪生。抵消服务将经常要求这个数字孪生提供有关能源消耗的各种数据，然后存储它，并在进行链下计算后，连接/与Robonomics交流，以提供所需的服务。
+
+我们在一个专门的[市场](https://robonomics.app/#/services)中收集了这样的服务，该市场充当机器人的应用商店。
+
+![在Robonomics网络中的去中心化应用程序，dapp](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-dapp.jpg)
+
+## 理解市场
+为了实现互连数字孪生和服务模型，我们必须为其创建一个交付媒介，换句话说，在您的智能手机上创建一个应用程序。这个市场建立在去中心化应用程序的去中心化分类账上，可以通过预定义的模板用于复制和创建任何所需目的的个体副本和数字孪生。最重要的是，这是在没有中间人和外部存储的情况下完成的，使我们的物联网服务市场无需审查和中心化链接。
+
+最后但同样重要的是，让我们谈谈用户界面。我们始终致力于为用户提供最新的在线技术，因此授予访问权利去中心化应用程序。在开发期间，您获得的最大功能是您的Dapp，在您这一边缺乏漏洞。虽然您的应用程序位于IPFS上，但它连接到ENS注册表或Polkadot生态系统注册表，因此用户不会面临处理替代应用程序或在跟随超链接时出现请求的漏洞。从最终用户应用程序开发和维护的角度来看，这非常方便。
+
+去中心化应用程序的另一个优势是点对点通信。换句话说，您的应用程序可以与其数字孪生体、物联网服务和最终用户应用程序进行通信，而无需信号下降的单一点，从而消除了在执行任务时需要第三方和中介资源的需求。这就是[robonomics.js](https://github.com/airalab/robonomics-js)的作用，用于开发[Dapp Robonomics](https://robonomics.app/#/)。我们目前正在添加一系列新的改进，并将很快发布一个Robonomics Stylebook（基于Web3.js和polkadot.js函数的界面指南），让您轻松地构建您的应用程序。因此，我们完成了完整的机器人经济链。
+
+![Robonomics Network](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network-2.jpg)
+
+## 摘要
+* 我们的目标是使[机器人成为经济的一部分](https://blog.aira.life/the-first-in-the-economy-of-robots-6f4bb115643b)，但首先，我们需要教用户如何运作和设置。
+* 为了达到这个目的，我们创建了[Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42)产品，允许用户与我们一起构建应用程序和服务（订阅、启动、数据日志）。
+* 订阅RWS解决了所有与交易相关的问题，并添加了包括打开/关闭设备、遥测（数字孪生体存储）在内的功能。
+* 一旦您通过内部模板创建了数字孪生体，您可以开发物联网服务并将其添加到我们的[市场](https://robonomics.app/#/services)。Dapp中的预结构化接口被用作将您的服务传递给最终用户的交付机制。Dapp](https://robonomics.app/)作为一种坚不可摧的方式，可以与数字孪生体建立点对点（直接）通信，即使服务停止运行也是如此。无论外部环境如何，市场永远不会停止运转。
+* 上述链是本文中描述的机器人经济的路径。

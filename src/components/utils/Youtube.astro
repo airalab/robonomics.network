@@ -1,0 +1,20 @@
+---
+const {title="video title", src="", withBorder, width="auto", height="0"} = Astro.props;
+---
+
+
+<div class="youtube-embed">
+  <div class="youtube-embed__wrapper">
+    <div class:list={['youtube-embed__container', { 'with-border': withBorder }]} style={{ width: width && width, 'height': height && height }}>
+        <iframe width="860" height="480" src={src} title={title}frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .youtube-embed__container.with-border {
+    border: 5px solid white;
+    border-radius: 5px;
+  }
+</style>

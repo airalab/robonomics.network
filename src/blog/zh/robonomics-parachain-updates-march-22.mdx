@@ -1,0 +1,103 @@
+---
+title: "Robonomics空投链更新，2022年3月"
+date: 2022-03-17
+published: true
+locale: 'zh'
+cover_image: /blog/images/robonomics-parachain-updates-march-22/cover.jpg
+description: "Robonomics空投链于今年1月启动，我们的第一份公开可用的进展报告发布在1月18日的博客文章中。现在，我们将提供我们已经在任务清单中完成的工作细节"
+abstract: ""
+tags: ['Robonomics空投链', '路线图', '新发布']
+---
+
+Robonomics空投链于今年1月启动，我们的第一份公开可用的进展报告发布在1月18日的[博客文章](https://robonomics.network/blog/parachain-on-kusama-first-week-report/)中。现在，我们将提供我们已经在GitHub路线图中指定的任务清单中完成的工作细节：[在Kusama上启动Robonomics空投链的跟踪问题＃145](https://github.com/airalab/robonomics/issues/145)。
+
+## 关于Robonomics空投链在Kusama上工作中最重要的事情
+
+- 空投链稳定，并已处理了前100万个外部交易。当前的碎片网络也保持开放状态，大约有[80个碎片](https://telemetry.parachain.robonomics.network/#list/Robonomics)。任何人都可以[成为Robonomics碎片](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/)，并获得准备空投链区块候选者并将其传递给Kusama验证者的奖励。
+
+- [在版本1.8.2中](https://github.com/airalab/robonomics/releases/tag/v1.8.2)，sudo功能已被移除。该更改在区块[347,918](https://robonomics.subscan.io/block/347918)上被空投链接受。这意味着项目开发团队不再具有管理空投链的管理功能。
+
+- [技术委员会](https://polkadot.js.org/apps/#/techcomm)通过链上治理机制完成了网络协议的第一次更新。在短短2个月内，技术委员会已处理约40个请求，例如大规模事件、财务提案和运行时升级。
+
+- [从版本1.8.0开始](https://github.com/airalab/robonomics/releases/tag/v1.8.0)，Robot-as-a-service功能已完全可用。使用此功能，您可以结合启动物联网设备的技术和经济参数。
+
+- [Robonomics平行链中的物联网订阅机制](https://wiki.robonomics.network/docs/en/get-subscription/)已经通过了在真实工作场景中的首次应用阶段。现在它已成为Robonomics平行链的主要功能，Robonomics开发人员计划向家庭基础设施所有者提供该功能。
+
+- 冬季学校于2月24日暂停。经过3周的时间，开发人员决定放弃将学校继续作为一个活动。冬季学校课程已重新设计为一个介绍性的Robonomics课程，将在2022年全年24/7在线提供，全球任何地方都可以访问。该课程将于3月底前发布在[robonomics.academy网站](https://robonomics.academy/)上。
+
+- 通过Robonomics dapp，对于持有先驱卡的crowdoan活动参与者，可获得额外的1 XRT，[请查看此链接](https://robonomics.app/#/bonus-for-pioneer)。
+
+## 过去2个月的平行链统计
+
+您可以在Subscan.io区块浏览器上找到大部分统计数据：[robonomics.subscan.io](https://robonomics.subscan.io)
+
+![Subscan.io上的Robonomics平行链统计](/blog/images/robonomics-parachain-updates-march-22/robonomics-parachain-subscan.jpg)
+
+### Robonomics平行链处理了100万笔交易
+
+更准确地说是[外部交易](https://wiki.polkadot.network/docs/build-protocol-info#extrinsics)，但为简便起见，我们有时会使用这样的假设。
+
+![Robonomics的外部交易](/blog/images/robonomics-parachain-updates-march-22/montly-extrinsics.png)
+
+今天平行链的日负载量为每天10至25万笔交易。datalog()函数主要用于远程收集物联网设备的数据。此外，自2月以来，Robonomics开发人员开始使用parachain IoT订阅，这是我们过去两年一直在准备的Robonomics场景之一。
+
+![今天对parachain的日常负载](/blog/images/robonomics-parachain-updates-march-22/robonomics-parachain-transactions.jpg)
+
+向[公开可用的parachain遥测服务](https://telemetry.parachain.robonomics.network/#list/Robonomics)传输的完整Robonomics节点数量已从40个增加到80个完整网络节点。任何人都可以[成为Robonomics收集者](https://wiki.robonomics.network/docs/en/how-to-launch-the-robonomics-collator/)，为准备parachain区块候选者并将其传递给Kusama验证者而获得奖励。
+
+### 第一批Robonomics用户
+
+早在二月初，我们就有信心Robonomics parachain已经准备好接受第一批用户。吸引早期采用者总是需要大量强调培训和帮助早期版本用户遇到的任何情况。这也是在寻找对我们使用的技术感兴趣的最有耐心和响应迅速的人的过程。是的，总会有一些这样的人，但要找到比几个朋友和同事更多的人是困难的，但这正是我们在2022年面临的任务。通过创建一个愿意为了教育而进行实验的Web3 + IoT强大用户社区，我们将能够确保项目在2023-2024年呈指数增长。
+
+我们想要吸引第一批用户的主要举措是在2022年开发一些培训课程，这些课程不仅在获得技能方面有用，而且完成起来也很有趣。
+
+当然，Robonomics开发人员计划组织比赛并鼓励社区积极参与。然而，我们仍然相信创造力/热情比我们可以提供的学习材料更强大。在学习过程中，你可以尝试[通过黑镜](https://blackmirror.robonomics.academy/#/)，当屏幕上的QR码变化时，回忆起同名系列的任何一集或菲利普·狄克的书《Ubik》中的一幕，主人公与门发生争执，他欠门几个硬币... 总的来说，一团队的主要任务之一是在未来保持对用户教育的创造性方法。
+
+![](/blog/images/robonomics-parachain-updates-march-22/blackmirror-lesson.jpg)
+
+冬季学校[于2月24日暂停](https://twitter.com/EnsRationis/status/1496885398404059136)。幸运的是，您现在仍然可以尝试第一课！要做到这一点，请访问以下链接：[https://blackmirror.robonomics.academy/#/](https://blackmirror.robonomics.academy/#/)
+
+那些在2月已经完成了学校的第一课程的人可能会注意到（D）app的地址已更改。现在该课程可在robonomics.academy域上访问，很快我们计划在2月最后一周的活动形式中进行的所有5节课程将以Robonomics入门课程的在线24/7格式提供。我们将另行告知。
+
+### Robonomics在GitHub上的发布
+
+在过去的两周里，Robonomics平行链客户端已发布了许多版本。在撰写本文时，最相关的版本是[1.8.4](https://github.com/airalab/robonomics/releases)。
+
+在Ubuntu 21.10上[构建Robonomics平行链客户端](https://wiki.robonomics.network/docs/en/how-to-build-collator-node/)并且无需任何困难地运行：
+
+![构建Robonomics平行链客户端](/blog/images/robonomics-parachain-updates-march-22/building-client-for-robonomics-parachain.jpg)
+
+除了版本更新外，以下改进也值得注意：
+
+- [发布1.8.0](https://github.com/airalab/robonomics/releases/tag/v1.8.0) - 添加了责任模块，允许您完全实现“机器即服务”模型，并以原子形式传输技术和经济信息来启动物联网设备。
+- [发布1.8.2](https://github.com/airalab/robonomics/releases/tag/v1.8.2) - 从Robonomics平行链中删除了超级用户（sudo）。今天起，Robonomics平行链不再具有开发人员直接控制的可能性。您可以通过以下链接了解Robonomics平行链客户端中的所有更改：[https://github.com/airalab/robonomics/releases](https://github.com/airalab/robonomics/releases)
+
+## 2022年路线图的第一阶段已完成90%
+
+到2022年第一季度结束时，项目团队已经完成了几乎所有[实现平行链基本功能的任务](https://github.com/airalab/robonomics/issues/145)，以及一些之前仅在测试模式下运行的Robonomics场景已经进入试点阶段。
+
+### 2022年第二季度的主要任务 - XCM集成
+
+从[Robonomics Parachains在Kusama Launch的跟踪问题＃145](https://github.com/airalab/robonomics/issues/145)可以看出，任务的第一部分涉及[XCMP](https://research.web3.foundation/en/latest/polkadot/XCMP/index.html)实现。我们在2020年秋季的圣彼得堡大师班期间实现了Robonomics平行链的两个实例之间的消息传递的第一次测试。然而，过去1.5年中，XCMP已经经历了许多变化，现在更正确的说法是[XCM（跨共识消息）](https://wiki.polkadot.network/docs/learn-crosschain)。
+
+Gavin Wood在2021年秋季推出了XCM的第一个版本。XCM在Medium上有三篇文章详细介绍：
+
+- [XCM：跨共识消息格式](https://medium.com/polkadot-network/xcm-the-cross-consensus-message-format-3b77b1373392)
+- [XCM第二部分：版本和兼容性](https://medium.com/polkadot-network/xcm-part-ii-versioning-and-compatibility-b313fc257b83)
+- [XCM第三部分：执行和错误管理](https://medium.com/polkadot-network/xcm-part-iii-execution-and-error-management-ceb8155dd166)
+
+已经在二月份，我们开始完善Robonomics平行链，以便在Kusama生态系统内实现第一个集成。我们的第一个任务的方向是与Statemine平行链集成。这种集成将允许用户使用任何statemine代币按照机器人即服务模式进行支付，例如，[远程控制阿塔卡马沙漠的望远镜](http://telescope.merklebot.com/)，或者在全球任何地方使用代币支付自动售货机中的物品。
+
+除了与Statemine的集成，Q2的计划还包括：
+
+- 与Karura集成，添加XRT/kUSD流动性池。
+- 与Moonriver集成，使用任意的Solidity合约管理物联网设备。
+- 研究以Darwinia为例，在以太坊和Kusama之间建立桥梁的技术。
+
+我们将根据在Rococo、Westend或其他沙盒中进行测试的结果描述每个集成场景，其中Karura、Moonriver、Darwinia平行链都有自己的测试版本。
+
+## 总结
+
+现在我们周围一片混乱，但项目团队很早就为我们的Web3宇宙轨迹做了标记 - 我们在互联网上发布我们的工作结果，以便实验可以在世界任何地方重复进行，因为除了开源代码和区块链访问权限，你不需要任何其他东西。当涉及到许多细节时，生活在Web3世界并不那么容易，但我们可以应对。作为工程师，我们可以想象21世纪军事化的后果。考虑到当前的地缘政治局势，我们所有人可以做的最好的事情就是个人参与和平项目，并为普通人的任务创造尽可能多的开源软件。在过去的一年里，我们的努力启动了诸如：[远程控制波士顿动力机器狗](https://spot-sdk.education/)的教育项目；从地球上最适合这样做的地方 - 阿塔卡马沙漠，[远程观测星空](https://www.youtube.com/watch?v=Up8hESnXnaY)；在工业城市托利亚蒂，建立了[用于监测城市环境质量的民用传感器网络](https://airalab.org/en/air-monitoring)；在圣彼得堡的运河中进行[水质监测](https://www.youtube.com/watch?v=4iCkdF2UJmo)。今年我们将专注于智能家居场景，这样您可以[在没有云的帮助下管理您的家庭物联网基础设施](https://wiki.robonomics.network/docs/zh/home-assistant-begin/)。
+
+我们将在接下来的路线图更新中与您分享更多信息。

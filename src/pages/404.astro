@@ -1,0 +1,51 @@
+---
+// components
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title = {$tr("Page not found")}
+  description = {$tr("In some reason the page you were looking for was not found. Maybe it was deprecated or url has a typo. Anyway, you may use navigation on robonomics.network to find what you need.")}
+>
+
+<section class="section__solid section__404">
+  <div class="layout layout__content">
+    <h1 class="title-lined"><span>{$tr('This page is out of your space')}</span></h1>
+  </div>
+  <p>{ $tr('Check url once more or create an') } <a class="link" href="https://github.com/airalab/robonomics.network/issues" target="_blank">issue</a> { $tr('telling us that you’ve got 404 error (do not forget to mention current url)') }</p>
+
+</section>
+
+</Layout>
+
+
+<style>
+  .section__404 {
+    padding-left: var(--space);
+    padding-right: var(--space);
+    color: #111;
+    overflow: hidden;
+  }
+
+  .section__404 h1 {
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .section__404 p {
+    margin: 0 auto;
+    max-width: 625px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--color-link-contacts);
+  }
+
+</style>
+
+
+<script src="../assets/scripts/utils/redirect-404.js"></script>

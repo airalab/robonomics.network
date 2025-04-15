@@ -1,0 +1,111 @@
+---
+title: Automatisation des campagnes de prêt de masse
+date: 2021-12-08
+published: true
+locale: 'fr'
+cover_image: /blog/images/automating-kusama-crowdloan-campaigns/cover.jpg
+description: "L'expérience et les données de la première cohorte d'équipes ayant sécurisé des prêts de masse peuvent désormais fournir une base à partir de laquelle les futures équipes peuvent mieux fixer les prix et automatiser le processus de sécurisation des prêts de masse et de remporter des enchères."
+abstract: "L'expérience et les données de la première cohorte d'équipes ayant sécurisé des prêts de masse peuvent désormais fournir une base à partir de laquelle les futures équipes peuvent mieux fixer les prix et automatiser le processus de sécurisation des prêts de masse et de remporter des enchères."
+tags: ['Robonomics parachain']
+---
+import KusamaSlotBanner from '../../components/blocks/KusamaSlotBanner.astro'
+
+Les premières enchères de créneaux de parachain et leurs prêts de masse associés ont souffert d'un désavantage du premier arrivé qui a causé des prix difficiles à prévoir et souvent trop élevés. Ce désavantage est courant dans tout nouveau marché en cours de découverte des prix, en particulier dans des marchés comme les enchères de parachain où les équipes lancent des produits divers avec des besoins divers.
+
+L'expérience et les données de la première cohorte d'équipes ayant sécurisé des prêts de masse peuvent désormais fournir une base à partir de laquelle les futures équipes peuvent mieux fixer les prix et automatiser le processus de sécurisation des prêts de masse et de remporter des enchères.
+					
+Les développeurs principaux de Robonomics mettront en place un oracle automatisé à partir de la 4e campagne de prêt de masse de parachain afin de participer aux futures enchères de créneaux de parachain de Kusama. Ce mécanisme permettra à l'équipe de Robonomics d'automatiser le paiement de chaque renouvellement de bail de créneau de parachain à l'avenir. L'équipe de Robonomics espère que cet effort inspirera d'autres équipes futures à utiliser ou à mettre en œuvre leur propre processus automatisé pour mieux rationaliser et réduire les risques pour les équipes du système global d'enchères de créneaux.
+
+## Paramètres actuellement déterminés de manière indépendante par les Parachains
+
+> Plafond de contribution ; Période de campagne ; Récompenses des participants ; Source des récompenses ; Distribution des jetons.
+
+Pour atténuer les risques et l'imprévisibilité pour les projets et les participants, et pour aider à maintenir le coût de la victoire de ces enchères réaliste et en adéquation avec leur proposition de valeur, nous proposerions que ces paramètres susmentionnés soient évalués et ultérieurement déterminés non pas de manière indépendante par les Parachains, mais par un oracle automatisé. Avec l'application et le temps, nous anticipons que cet oracle pourrait être intégré en tant que parachain bien commun sur Kusama et éventuellement Polkadot. 
+
+Souvent négligé dans leL'excitation de ces premiers Crowdloans et de leurs mécanismes de récompenses généreux, c'est la réalité que les projets gagnants ont une durée de vie de 48 semaines en tant que parachain opérationnel sur Kusama avant l'expiration de leur bail et qu'ils doivent renouveler leur position.
+
+Avec cela à l'esprit, nous avons dressé un résumé de la version 1 de notre algorithme oracle automatisé et des conditions dans lesquelles il pourrait être pertinent et efficace dans le contexte du protocole de vente aux enchères de slots plus large.
+
+## Oracle autonome des campagnes de Crowdloan
+
+Si souvent, vous voulez être le premier, mais avec le temps, vous réalisez qu'il est plus important de rester dans la course. L'écosystème Polkadot est exactement le genre d'endroit où il n'importe pas si vous êtes le premier ou le dernier, ce qui compte, c'est qu'il y ait une "chaise libre" pour vous. Nous nous demandons si dans votre enfance vous avez joué au jeu [« chaises musicales »](https://fr.wikipedia.org/wiki/Chaises_musicales), mais nous nous en souvenons très bien de la maternelle.
+
+Bien sûr, il y a aussi une spécificité importante ici : le bail de slot de parachain doit être prolongé avant la fin du bail actuel, sinon il pourrait y avoir une interruption ou une complication dans les services de parachain (le parachain passera aux [Parachains à paiement à l'utilisation](https://medium.com/polkadot-network/parathreads-pay-as-you-go-parachains-7440d23dde06), également connu sous le nom de parathread, pendant un certain temps).
+
+!["Écosystème Polkadot"](/blog/images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
+
+En général, il est important de rester en ligne. Ci-dessous, nous parlerons de la première version de notre algorithme proposé pour le calcul autonome des principaux paramètres de l'oracle de campagne de Crowdloan. Peut-être devrions-nous lui donner un nom, mais pour l'instant rien d'intéressant ne me vient à l'esprit.
+
+### Moyenne du plafond de contribution
+
+Dans ce modèle, nous proposerions que l'oracle automatisé calcule et fasse la moyenne du coût médian en KSM nécessaire pour remporter chaque enchère de #15 à #29. Ce coût moyen résultant serait défini comme le plafond de contribution au Crowdloan en KSM pour le slot #30.
+
+### Durée de vie d'une campagne de Crowdloan
+
+Nous supposons qu'une campagne de Crowdloan devrait viser à collecter pendant 5 semaines. En cas d'échec, l'oracle devra déplacer l'estimation de l'échantillon des frais médians d'une fourchette d'enchères [15-29] à [20-29].-34] et ainsi de suite, pour tenir compte des résultats des enchères précédentes. De cette manière, il y aura une configuration automatique jusqu'à ce que vous obteniez avec succès un emplacement.
+
+### Évaluation de la récompense pour chaque KSM en faveur de la campagne de prêt de masse
+
+C'est la partie la plus complexe de l'algorithme oracle, nécessitant l'infrastructure des parachains en cours d'exécution. En prévoyant l'économie cycliquement répétitive des parachains opérant depuis plusieurs années maintenant, nous restons fidèles à l'opinion que [la récompense pour les participants à la campagne de prêt de masse est égale au profit perdu du jalonnement dans la chaîne Relay](https://robonomics.network/blog/robonomics-parachain-lease-offering/).
+
+Plus important encore, la récompense du jalonnement peut être estimée de manière autonome par un oracle avec un degré de précision assez élevé. Par exemple, nous pouvons maintenant parler d'un profit perdu de 0,19 KSM pour chaque 1 KSM pendant l'année. Cependant, la seule métrique de revenu perdu n'est pas suffisante, car la récompense dans le parachain est offerte dans le jeton natif du parachain. C'est pourquoi le schéma devient un peu plus compliqué, mais pas trop. Nous supposons que les écosystèmes Kusama et Polkadot auront toujours des indicateurs de prix pour les jetons natifs des parachains. Par exemple, le $KAR de Karura pourrait être un tel indicateur dès cette année dans le réseau Kusama. Nous constatons que l'oracle peut indépendamment, sans l'aide de quiconque de l'extérieur, : (1) obtenir des données sur les frais de jalonnement actuels dans la chaîne Relay, (2) obtenir de manière autonome des données sur le prix d'un jeton natif de parachain à partir du segment DeFi de l'indicateur de l'écosystème et, sur la base de ces données, faire une offre similaire au jalonnement KSM.
+
+Le détenteur de DOT et KSM divisera son sac de jetons entre le jalonnement dans la chaîne Relay et le soutien de plusieurs (peut-être plusieurs dizaines) campagnes de prêt de masse, en fonction du désir de maintenir la récompense comme si tous les DOT/KSM étaient jalonnés, mais en diversifiant le risque d'un prix de jeton unique. Oui, actuellement, les récompenses dans les parachains sont davantage considérées comme un pourcentage de tous les jetons natifs, et des chiffres de 20 % de l'offre totale ne semblent pas exagérés dans la communauté. Bien qu'il soit difficile d'imaginer une situation où chaque année 20 % de tous les jetons seront offerts uniquement pour des locations d'emplacement. Néanmoins, c'est l'état de genèse au stade des premières enchères et, encore une, une image normale au début. Cependant, prendre des récompenses actuelles pour la vie quotidienne pendant une décennie n'est pas une bonne idée.
+
+Le principal critère de calcul de la récompense sera le profit perdu du staking dans la campagne de crowdloan de n'importe quel projet et la conversion de cette valeur en nombre de jetons natifs au taux actuel. Cette tâche peut être effectuée par un processus autonome.
+
+### Source de récompense et distribution de jetons dans la parachain
+
+Nous proposons de mettre en œuvre un mécanisme d'émission de nouveaux jetons dans la parachain grâce au module de trésorerie. À son tour, la trésorerie de la parachain distribuera de nouveaux jetons de parachain parmi les participants à la campagne de crowdloan sur une base mensuelle tout au long de la durée de location actuelle de la fente.
+
+## Boucler la boucle
+
+Ci-dessus, nous avons donné une description généralisée de la première version de l'algorithme oracle, qui vise à rendre le protocole Robonomics plus viable sans l'implication directe des développeurs. Cependant, il est encore plus important de comprendre le lien entre la location de fente dans l'écosystème et la fonction cible du projet. Dans le cas de Robonomics, il s'agit d'un frais pour stocker, mettre à jour et interagir avec le jumeau numérique du système cyber-physique. Notre objectif à l'horizon de 3 ans est de former un segment Robonomics capable de servir jusqu'à 1 million de jumeaux numériques par mois à ~0,25 XRT.
+
+Si la charge cible est atteinte, nous aurons plus de 60 millions de dollars par an de demande d'achats de XRT sur le marché, qui seront brûlés lors de l'activation de l'abonnement.
+
+(Je parlerai plus en détail du cycle de vie de l'abonnement séparément lorsque je publierai la prochaine version de Robonomics, dédiée au mécanisme d'enchères d'abonnement). Il s'avère que la valeur de XRT ne diminuera pas si le nombre d'abonnements vendus pour XRT au cours de l'année dépasse cumulativement la valeur que la trésorerie de la parachain paiera selon l'oracle des campagnes de crowdloan.
+
+En général, mon équipe et moi-même sommes en train de créer ce schéma, qui devrait permettre de clore la tokenomie de la parachain du moment où la fente est obtenue jusqu'au renouvellement de la location. Nous voulons rendre ce processus aussi autonome que possible, ne laissant que les détenteurs de jetons et les développeurs proposer des améliorations à l'algorithme grâce au mécanisme de démocratie et au comité technique de la parachain. Aucun travail manuel en perspective. En attendant, comme cela se produit toujours avec les hypothèses, nous ferons encore les premiers pas manuellement. Voici comment l'oracle du futur se présenteraittravailler pour la 4ème campagne de prêt de la foule (environ).
+
+## Les paramètres de la quatrième campagne de prêt de la foule
+
+<TextCard>
+
+### Limite de collecte **47 425,5262 KSM**
+
+Basé sur l'évaluation des frais de la 15ème enchère, Geshiro
+
+</TextCard>
+
+<TextCard>
+
+### Durée **5 semaines**
+
+</TextCard>
+
+<TextCard>
+
+### Rémunération **4,20 XRT**
+
+1 KSM ~ 370 $ TAP = 19%,<br/>1XRT ~ 17 $
+
+</TextCard>
+
+<TextCard>
+
+### Bonus
+
+Les détenteurs de cartes NFT Pioneer recevront un supplément de 1XRT pour chaque KSM
+
+</TextCard>
+
+<TextCard>
+
+### Distribution des récompenses **Mensuelle**
+
+Parts proportionnellement égales pendant 12 mois. Le trésor agit en générant de nouveaux jetons dans la parachain
+
+</TextCard>
+
+<KusamaSlotBanner />

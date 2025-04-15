@@ -1,0 +1,103 @@
+---
+import { getLocale } from "astro-i18n-aut";
+
+const locale = getLocale(Astro.url);
+const localesList = ["ar", "de", "el", "en", "es", "fr", "it", "ja", "ko", "nl", "pt", "ru", "uk", "zh"];
+const translated = false;
+let initialLocale = locale ? locale : 'en';
+---
+
+<div class="select-wrapper" id="select-wrapper">
+  <select id="locale-select" aria-label="choose preferably language" tabindex="0">
+    {localesList.map((item) => (
+      <option value={item} selected={item === initialLocale}>
+        {item}
+      </option>
+    ))}
+  </select>
+  {initialLocale !== 'en' && !translated && <span>AI</span>}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const localeSelect = document.getElementById('locale-select');
+    const path = window.location.pathname; 
+    const allLanguages = ["ar", "de", "el", "en", "es", "fr", "it", "ja", "ko", "nl", "pt", "ru", "uk", "zh"];
+
+    const changeURL = (newLocale) => {
+      let segments = path.split('/').filter(segment => segment); 
+      let currentLocale = allLanguages.includes(segments[0]) ? segments[0] : 'en';
+
+      if (newLocale === 'en') {
+        // Remove the locale prefix if switching to English
+        if (currentLocale !== 'en') {
+          segments.shift(); // Remove the first segment (locale)
+        }
+      } else {
+        // Replace or add the new locale
+        if (currentLocale !== 'en') {
+          segments[0] = newLocale; // Replace existing locale
+        } else {
+          segments.unshift(newLocale); // Add new locale
+        }
+      }
+
+      // Ensure the path is correctly formatted
+      let newPath = '/' + segments.join('/') + '/';
+      
+      newPath = newPath.replace(/\/+/g, '/'); 
+
+      if (newPath === '/') {
+        newPath = '/';
+      }
+
+      window.location.href = newPath;
+    }
+
+
+    localeSelect.addEventListener('change', (event) => {
+      const newLocale = event.target.value;
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('locale', newLocale);
+      }
+      changeURL(newLocale);
+    });
+
+    // Auto-redirect to stored locale (if not already in URL)
+    const storedLocale = localStorage.getItem('locale');
+    if (storedLocale && !path.startsWith(`/${storedLocale}/`) && storedLocale !== 'en') {
+      changeURL(storedLocale);
+    }
+  });
+</script>
+
+<style>
+
+  .select-wrapper {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .select-wrapper span{
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--base-font-size) * 0.6);
+    font-weight: 600;
+    color: var(--color-dark);
+    z-index: -1;
+  }
+
+  select {
+    --border-width: 0;
+    --input-padding: .2rem;
+    text-transform: uppercase;
+    font-size: 80%;
+    cursor: pointer;
+  }
+</style>

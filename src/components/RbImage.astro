@@ -1,0 +1,97 @@
+---
+const {
+  caption,
+  src,
+  link,
+  type = 'markdown',
+  zoom = false,
+  captionCenter = false,
+  captionSize = 'normal',
+  captionItalic = true,
+  space = true,
+} = Astro.props;
+
+const isGif = (src) => {
+  const dotIndex = src.lastIndexOf('.');
+  const format = src.substring(dotIndex);
+  return format === '.gif';
+};
+
+const picture = src;
+
+const linkDone = link ? link : null;
+const zoomDone = zoom ? picture : null; 
+
+const pictureLink = linkDone ? link : zoomDone;
+ 
+const classListCaption = [
+  'rb-image__text',
+  `rb-image-text-size-${captionSize}`,
+  captionCenter ? 'caption-center' : '',
+  captionItalic ? 'caption-italic' : ''
+].filter(Boolean).join(' ');
+
+---
+
+<figure class:list={['rb-image', {'rb-image-space': space}]}>
+  {pictureLink && (
+    <a href={pictureLink} target="_blank" class="rb-image__link">
+      {!isGif(src) && <img src={picture} alt={caption} {...Astro.props} />}
+      {isGif(src) && <img src={picture} alt={caption} {...Astro.props} />}
+    </a>
+  )}
+
+  {!pictureLink && (
+    <>
+      {!isGif(src) && <img src={picture} alt={caption} {...Astro.props} />}
+      {isGif(src) && <img src={picture} alt={caption} {...Astro.props} />}
+    </>
+  )}
+
+  {caption && <figcaption class={classListCaption}>{caption}</figcaption>}
+</figure>
+
+<style>
+  img {
+    height: auto;
+  }
+
+  .rb-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .rb-image-space {
+    margin-bottom: var(--space);
+  }
+
+  .rb-image__link[target=_blank]:after {
+    display: none;
+  }
+
+  .rb-image__text {
+    align-self: flex-start;
+  }
+
+  .rb-image-text-size-normal{
+    font-size: var(--base-font-size);
+  }
+
+  .rb-image-text-size-small{
+    font-size: calc(var(--base-font-size) * 0.5);
+  }
+
+  .rb-image-text-size-x2{
+    font-size: calc(var(--base-font-size) * 2);
+  }
+
+  .caption-center {
+    align-self: unset;
+  }
+
+  .caption-italic {
+    font-style: italic;
+  }
+
+</style>

@@ -1,0 +1,103 @@
+---
+title: 2022년 11월 Robonomics 크라우드론 캠페인
+date: 2022-11-18
+published: true
+locale: 'ko'
+tags: ['Robonomics 파라체인', 'Polkadot']
+cover_image: /blog/images/robonomics-crowdloan-campaigns-november-2022/cover.jpg
+description: "Kusama 네트워크의 Robonomics 파라체인 슬롯에 대한 첫 임대 기간이 끝나가고 있습니다. 경매 #20에서 우승하여 Robonomics를 기반으로 한 첫 프로젝트를 Polkadot 생태계 내에서 시작, 설정 및 테스트할 수 있는 기회를 얻었습니다."
+abstract: "Kusama 네트워크의 Robonomics 파라체인 슬롯에 대한 첫 임대 기간이 끝나가고 있습니다. 경매 #20에서 우승하여 Robonomics를 기반으로 한 첫 프로젝트를 Polkadot 생태계 내에서 시작, 설정 및 테스트할 수 있는 기회를 얻었습니다."
+
+---
+
+2022년 동안 Kusama의 Robonomics 파라체인은 수십 개의 R&D 프로젝트에서 사용되었으며 총 [400만 건의 거래](https://robonomics.subscan.io/)를 처리했습니다.
+
+Robonomics 개발자들은 Kusama 네트워크에서 파라체인의 구현을 계속하고자 합니다. 현재 전체 Polkadot 생태계가 동적 발전 단계에 있으며, 이 과정의 최전선에 서고자 합니다. 다시 말해, Kusama 네트워크에 머물고자 합니다.
+
+2023년의 계획에는 가정 IoT 인프라의 제어를 위한 탈중앙화된 클라우드 아이디어 주변의 적극적인 개발이 포함됩니다. 현재 우리는 [탈중앙화된 애플리케이션](https://robonomics.app/), [위키 프로젝트](https://wiki.robonomics.network/) 및 교육 자원인 [Robonomics Academy](http://robonomics.academy/)가 IoT 인프라 소유자들을 위한 필요한 기능과 정보를 모두 갖추도록 작업 중입니다.
+
+또한 IoT를 위한 탈중앙화된 클라우드의 가장 최적의 "구축"을 찾기 위해 Polkadot 생태계 내에서 새로운 XCM 채널을 개방하는 실험을 계속할 것입니다. 이 방향으로의 가장 명백한 시나리오 중 하나는 이미 HRMP 채널 세트를 열었던 Crust Network라는 분산 데이터 저장 프로젝트입니다.2023년에는 Robonomics IoT 구독 사용자들이 Crust 네트워크에서의 저장 공간 사용량을 자동으로 지불받게 될 것입니다. 2023년에는 Robonomics 파라체인에 저장된 자금을 사용하여 다른 파라체인의 서비스 비용을 결제하는 방식을 시도할 것입니다.
+
+결과적으로, 오늘날 우리는 Kusama 네트워크에서 IoT 장치의 발사와 텔레메트리 전송을 위한 작동 중인 파라체인을 보유하고 있습니다. 우리는 IoT를 위한 AWS의 완전한 경쟁 업체가 되기 위한 길에 대한 연구 및 개발 작업을 계속할 준비가 되어 있으며, 내년에는 기존의 중앙 집중식 클라우드를 포기하기로 중요한 결정을 내린 사람들을 지원하는 데 최대한의 노력을 기울일 것입니다.
+
+
+## 크라우드론 캠페인 자동화, 파트 2
+
+작년에는 [Automating Crowdloan Campaigns](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/)라는 기사에서 처음으로 크라우드론 캠페인을 위한 자율 오라클 개념이 소개되었습니다. Robonomics 파라체인 개발자들에게 파라체인의 생명주기를 자동화하는 옵션을 찾는 것은 IoT를 위한 분산 클라우드를 구축하는 중요한 부분입니다. 올해는 처음으로 파라체인을 대표하여 크라우드론 캠페인을 시작해 보려고 합니다. 아래에서 우리가 새로운 크라우드론 캠페인의 매개변수 계산을 찾을 수 있으며, 이를 완전히 자율적인 프로세스로 전환하여 새로운 캠페인을 독립적으로 시작하고 슬롯 임대를 성공적으로 갱신할 수 있는 프로세스로 만들 계획입니다.
+
+첫 번째 일괄 경매 입찰 후 예상대로 상황이 훨씬 안정되고 정상화되었으며, 이제 슬롯 임대 비용에 대한 일부 통계를 살펴볼 수 있습니다. 갱신 알고리즘은 최근 12회 경매에서 중앙값 임대 가격을 계산하기 위해 통계를 수집할 것입니다. 예를 들어, 아래 표는 2022년 7월부터 11월까지의 요약된 통계를 보여줍니다 ([parachains.info](https://parachains.info/auctions/)에서 얻은 정보).
+
+<div class="big-table">
+
+  |                              | Auction 60   | Auction 59     | Auction 58 | Auction 57   | Auction 56 | Auction 55   | Auction 54      | Auction 53   | Auction 52   | Auction 51 | Auction 50  | Auction 49      | Auction 48    |                                            
+    |------------------------------|--------------|----------------|------------|--------------|------------|--------------|-----------------|--------------|--------------|------------|-------------|-----------------|---------------|  
+  | **승자**                   | Zeitgeist    | Crab Network   | -          | Crust Shadow | Genshiro   | DAO IPCI     | Parathread 2223 | Quartz       | Bit.Country  | Snow       | Subsocial   | Parathread 2130 | GM Parachain  |
+  | **마지막 입찰 (KSM)**           | 500          | 11             | 0          | 1 807        | 2 000      | 111          | 1 001           | 1 005        | 3 500        | 13 926     | 1 001       | 1 131           | 5 014         |
+  | **기여**            | 자체 자금  | 자체 자금    | -          | 209          | 160        | 자체 자금  | 자체 자금     | 자체 자금  | 자체 자금  | 782        | 자체 자금 | 자체 자금     | 738           |
+  | **참가자 수**   | 2            | 1              | 0          | 1            | 2          | 2            | 2               | 2            | 2            | 1          | 1           | 1               | 1             |
+
+</div>
+
+<TextCard alignContent="center" back="transparent">
+
+**이 경우, 중앙 입찰은 다음과 같습니다:**
+
+![베타 아래 첨자 med는 1001KSM입니다](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-1.svg)
+
+</TextCard>
+
+> 12월 5일 업데이트: 쿠사마 네트워크의 업데이트로 인해 ([Gov2 업그레이드](https://twitter.com/nachortti/status/1588203599129190403)), 로보노믹스 크라우드론 캠페인이 다가오는 날에 다시 시작될 예정입니다. 모금 한도가 10,050 KSM으로 증가될 것입니다.
+
+따라서 알고리즘은 크라우드론 캠페인의 한도를 추정하기 위해 이 입찰을 사용할 것입니다.
+
+또한, [이전 게시물](https://robonomics.network/blog/automating-kusama-crowdloan-campaigns/)에서 언급했듯이, 크라우드론 참여 보상을 계산하는 주요 기준으로는 KSM 스테이커의 기회 비용을 중계 체인에 스테이킹하는 것과 대조합니다. 폴카닷 생태계의 스테이킹 메커니즘은 다음과 같이 설계되었습니다.시스템이 네트워크 보안을 유지하는 데 도움을 주는 사람들에게 반환을 제공하면서 네이티브 토큰의 유동성을 보장하려는 방식은 다음과 같습니다. 이를 위해 네트워크가 달성해야 하는 "*이상적인 스테이킹 비율*" 매개변수가 도입되었습니다. 만약 스테이킹된 토큰의 수가 이상적인 값보다 낮아지면, 스테이킹 보상이 증가합니다(이로써 사용자들이 더 많이 스테이킹하여 네트워크 보안을 강화하도록 유도됩니다). 그리고 그 반대로, 스테이킹 비율이 이상적인 값을 초과하면 보상이 지수적으로 감소합니다.
+
+우리의 알고리즘은 시스템이 이상적인 스테이킹 상태에 있다고 가정합니다(네트워크 보안이 우리에게 중요하기 때문에), 따라서 **스테이킹을 위한 최대 연간 이자율**은 이러한 조건 하에서 가능한 것으로 이상적인 스테이킹 비율 매개변수와 스테이커들에게 지급할 총 발행 토큰 수에 의해 결정됩니다:
+
+<TextCard alignContent="center" back="transparent">
+
+![i subscript 'ideal' ​equals I subscript NPoS divided by ​ x  subscript 'ideal'](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-2.svg)
+
+</TextCard>
+
+이 계산에 대해 더 읽어보려면 W3F Research의 [토큰 경제학](https://research.web3.foundation/en/latest/polkadot/overview/2-token-economics.html) 기사를 확인할 수 있습니다.
+
+쿠사마 네트워크에서 인플레이션 비율은 10%로 설정되어 있습니다. 즉, 이것은 이상적인 시나리오에서 스테이커들에게 발행될 최대량입니다. 이상적인 스테이킹 비율은 파라체인 수에 따라 다르며 현재 45%입니다(쿠사마 네트워크의 Polkadot.js 포털에 표시되어 있음). 따라서 다음과 같이 계산됩니다:
+
+<TextCard alignContent="center" back="transparent">
+
+![i subscript 'ideal' equals 0.1 divided by 0.45 multiply by 100 percent  equals 22.22 percent](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-3.svg)
+
+</TextCard>
+
+현재 *실제 스테이킹 비율*은 52.6%이며, 스테이킹 참가자들의 수익은 이상적인 수준보다 낮습니다(약 15%). 따라서 알고리즘은 크라우드론 캠페인에 대한 *이상적인 이자율* 매개변수를 채택하여 크라우드론 참여에 대한 보상 수준을 찾을 수 있습니다.네트워크에게 공정하고 지분자에게 매력적인 것입니다.
+
+이제 시장에서 토큰의 비용을 알고 있으므로 크라우드론 캠페인에 참여한 보상을 계산할 수 있습니다(XRT당 1 KSM).
+
+<TextCard alignContent="center" back="transparent">
+
+![R subscript 'perKSM' ​는 (1 곱하기 $KSM 곱하기 i subscript 'ideal' ) 나누기 $XRT 와 같습니다](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-4.svg)
+
+</TextCard>
+
+현재 KSM과 XRT의 환율에 따르면, 크라우드론 보상은 약 **1 KSM당 2.06 XRT**입니다. 이 값을 알고 있고 슬롯 임대의 중간 비용을 알고 있다면, 크라우드론 참여자들에게 총 지급액을 쉽게 계산할 수 있습니다:
+
+<TextCard alignContent="center" back="transparent">
+
+![R subscript 'total' ​는 beta subscript 'med' 곱하기 R subscript 'perKSM' 와 같습니다, 2075.03XRT](/blog/images/robonomics-crowdloan-campaigns-november-2022/formula-5.svg)
+
+</TextCard>
+
+> 12월 5일 업데이트: 쿠사마 네트워크 업데이트로([Gov2 업그레이드](https://twitter.com/nachortti/status/1588203599129190403)) Robonomics 크라우드론 캠페인이 다가오는 날에 재시작될 예정입니다. 총 보상 풀은 20,750 XRT로 증가되었습니다.
+
+## 인플레이션적인 것에서 디플레이션적인 파라체인 토큰 경제로의 이동
+
+쿠사마 네트워크에서 공유 보안 비용이 안정화되었습니다. 최근 슬롯 경매 통계에서 확인할 수 있습니다. 프로젝트들은 크라우드론 캠페인 참여자들에게 보상하기 위해 자사의 파라체인 네이티브 토큰 공급량을 상당량 할당할 필요가 없습니다. 이 사실 외에도, Robonomics 특정 메커니즘을 고려해야 합니다. 이 메커니즘은 사용자가 IoT 구독을 활성화할 때 네이티브 토큰을 소각하는 것입니다. 이는 Polkadot 생태계 내 Robonomics 아키텍처가 실제로 디플레이션적인 토큰 경제를 갖는 파라체인이 될 수 있다는 것을 의미합니다.
+
+2023년에 새로운 Robonomics 파라체인 토큰의 총 생성량은 총 파라체인 토큰 발행량의 0.38% 미만으로 추정됩니다. 또한 Robonomics 파라체인의 보관고에는 약 370,000 XRT가 보관되어 있으며, 이 중 3,500 XRT가 있습니다.매월 자동으로 소각됩니다. 이는 2023년 Robonomics 파라체인이 분명한 불소멸적 역학을 보여줄 것을 의미하며, 파라체인 토큰의 불소멸 확률이 3% 이상일 가능성이 높습니다. 실제 불소멸량은 IoT 사용자 구독 활성화 중에 소각된 XRT 양에 따라 달라질 것입니다.
+
+이에 따라 Robonomics 개발자들은 다음 파라체인 슬롯 임대 기간 동안 토큰 스테이킹을 취소하고, 파라체인 아키텍처의 추가 개발에 집중할 계획입니다. 또한, 새로운 XRT 토큰 생성을 줄이는 데 (실용적인 한도 내에서) 크게 초점을 맞출 것이며, XRT 토큰의 지출(소각)을 활용하는 더 많은 파라체인 서비스를 적극적으로 개발할 것입니다.
+
+계속 걸어가세요...
+
+![](/blog/images/robonomics-crowdloan-campaigns-november-2022/keep-walking.jpg)

@@ -1,0 +1,46 @@
+---
+title: Robonomics Aide à Activer Rust pour ROS 2
+date: 2022-12-29
+published: true
+locale: 'fr'
+tags: ['ROS 2', "Cas d'utilisation", 'Collaborations']
+cover_image: /blog/images/ros-2-rust-report-2022/cover.jpg
+description: "Voici l'histoire de notre collaboration avec Esteve Fernandez, un ancien membre de l'équipe originale qui a créé le Robot Operating System 2. Il développe des liaisons Rust pour ROS 2 depuis plusieurs années. Nous voulons partager l'histoire de ce projet, expliquer comment nous avons aidé Esteve, et pourquoi avoir Rust est utile pour les applications robotiques."
+abstract: "Voici l'histoire de notre collaboration avec Esteve Fernandez, un ancien membre de l'équipe originale qui a créé le Robot Operating System 2. Il développe des liaisons Rust pour ROS 2 depuis plusieurs années. Nous voulons partager l'histoire de ce projet, expliquer comment nous avons aidé Esteve, et pourquoi avoir Rust est utile pour les applications robotiques."
+---
+
+## De ROS 1 à ROS 2
+
+ROS a été initialement créé comme environnement de développement pour des types spécifiques de robots. Initialement, la première version du système d'exploitation était destinée à des robots individuels avec des ressources informatiques embarquées et une connexion réseau fiable ne nécessitant pas de contrôle en temps réel. En conséquence, les développeurs pensaient initialement que ROS 1 serait le mieux adapté pour la recherche et les applications académiques.
+
+Cependant, ROS a finalement dépassé la communauté de la recherche et a été adopté à des fins commerciales. Pour répondre aux besoins de nouveaux cas d'utilisation, les développeurs ont entrepris d'ajouter de nouvelles fonctionnalités, telles que le support multi-robots et les petits systèmes embarqués, ainsi que l'intégration en temps réel. Ils ont également décidé d'améliorer l'API et d'incorporer de nouvelles technologies qui étaient apparues depuis la sortie de ROS 1. En même temps, ils ont choisi de ne pas modifier la version existante du Robot Operating System, car cela aurait eu un impact majeur sur les applications existantes. Ainsi est né [ROS 2](https://design.ros2.org/).
+
+## À Propos d'Esteve
+
+Esteve faisait partie de l'équipe originale qui [a commencé à développer](https://www.ros.org/news/2016/04/dirk-thomas-esteve-fernandez-and-william-woodall-osrf-state-of-ros-2.html) la deuxième version de ROS. Il est ingénieur en robotique avec plus de deux décennies d'expérience dans le développement open source et les voitures autonomes. Même après avoir quitté l'équipe principaleL'équipe ROS 2, il a continué à contribuer activement aux dépôts du projet.
+
+L'un des objectifs personnels d'Esteve était de développer des projets permettant aux développeurs d'écrire des applications ROS 2 en Rust (liaisons, générateur de code et plus encore), leur fournissant un outil puissant pour créer des programmes robotiques efficaces et robustes. Cependant, le projet a progressé lentement au début, Esteve travaillant pratiquement seul pendant 4 ans, sur son temps libre.
+
+Il y a environ un an et demi, nous avons rencontré Esteve et convenu de l'aider dans le développement de ros2-rust. Grâce à cela, Esteve a pu consacrer plus de temps au projet et attirer davantage l'attention sur celui-ci. La communauté ROS2 sur Rust a grandi, et d'autres ont également commencé à contribuer au projet avec des révisions par Esteve. Maintenant, le [dépôt principal](https://github.com/ros2-rust/ros2_rust) compte 27 contributeurs, 75 forks et 466 étoiles sur Github.
+
+## Progrès du développement
+
+À l'heure actuelle, ros2-rust a déjà mis en œuvre la prise en charge de la génération de messages, du mécanisme éditeur/abonné, des clients et des services. Un de nos grands objectifs est de développer Robonomics en tant que Middleware ROS 2, ce qui nécessite d'ajouter une couche de transport Robonomics pour ros2-rust. Pour implémenter cette fonctionnalité, la prise en charge de la bibliothèque de communication libP2P est ajoutée au lieu du Service de Distribution de Données (DDS) standard pour ROS2. DDS fournit un transport de publication-abonnement de manière distribuée, permettant à deux programmes de communiquer sans avoir besoin d'un outil centralisé comme le maître ROS. Mais DDS nécessite le développement d'un pont supplémentaire pour ajouter Robonomics à ROS2, tandis que libP2P permet une intégration native de Robonomics.
+
+![ros-2-stack](/blog/images/ros-2-rust-report-2022/ros-client-library-api-stack.png)
+
+*Diagramme de la pile API de la bibliothèque client ROS montrant la position du Middleware ROS 2 (rmw). Source : [Documentation ROS 2](https://docs.ros.org/en/foxy/Concepts/About-Internal-Interfaces.html)*
+
+## Pourquoi ROS2 en Rust ?
+
+Outre le fait d'être le langage principal pour Robonomics sur Substrate, Rust présente des avantages significatifs pour les applications robotiques.
+
+Généralement, pour les plates-formes robotiques les plus largement utilisées destinées au déploiement commercial et à grande échelle, le C++ est utilisé, et c'est pourquoi il a été ajouté en premier pour ROS. Cela est dû à sa capacité à travailler "proche dele matériel et sa pertinence pour les applications robotiques avec des ressources informatiques limitées. Cependant, cela rend également le C++ plus dangereux, car il est très facile de commettre une erreur critique pendant le développement, et ces erreurs ne sont découvertes que plus tard sur du matériel réel (et défectueux).
+
+C'est là que les avantages de Rust entrent en jeu. Il permet le développement de bas niveau, comme le C++, mais avec une sécurité mémoire supplémentaire. Cette sécurité s'accompagne sans coûts supplémentaires d'exécution, préservant la vitesse d'exécution élevée de l'application. De plus, Rust rend le développement de projets robotiques complexes et risqués plus efficace.
+
+## Projets futurs
+
+Dans un avenir proche, Esteve prévoit d'ajouter des actions (appels asynchrones à la fonctionnalité d'un nœud) dans ros2-rust. Ils permettent à un client de suivre la progression d'une demande, d'obtenir le résultat final et éventuellement d'annuler la demande avant son achèvement. Cela permet notamment aux robots de créer des requêtes, par exemple, à des fins de navigation et de localisation.
+
+Les projets à long terme incluent la construction d'un prototype ROS 2 lancé sur le réseau Robonomics. Cela nous permettra d'utiliser Robonomics sur Substrate pour créer une application WebAssembly capable d'exécuter ROS2 à partir d'un navigateur sur le cloud décentralisé de Robonomics. Nous attendons avec impatience un nouveau cours à l'[Académie Robonomics](https://robonomics.academy) dédié à ROS 2 et fonctionnant directement depuis n'importe quel navigateur!

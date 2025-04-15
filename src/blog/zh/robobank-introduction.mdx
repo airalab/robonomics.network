@@ -1,0 +1,145 @@
+---
+title: Robobank。在自动化服务中接受任何 Polkadot 代币
+date: 2021-03-26
+published: true
+locale: 'zh'
+cover_image: /blog/images/robobank-introduction/robobank-introduction-cover.jpg
+description: "Robonomics 开发人员提出了一种基于 Polkadot 架构的解决方案，将允许任何平行链访问 IoT 设备管理，并使用本机代币进行支付"
+abstract: "Robonomics 开发人员提出了一种基于 Polkadot 架构的解决方案，将允许任何平行链访问 IoT 设备管理，并使用本机代币进行支付"
+tags: ['Robonomics 平行链', 'XRT 代币', '用例']
+---
+
+<section class="animate-inside">
+
+## 在自动化服务中接受任何 Polkadot 代币
+
+</section>
+
+<section class="animate-inside">
+
+!["Robonomics 介绍中的 Robobank，横幅 1"](/blog/images/robobank-introduction/robobank-introduction-banner-1.jpg)
+
+</section>
+
+自动售货机、共享汽车、Airbnb 智能公寓、"Google" 办公室...将准备好在今年执行任何 Polkadot 生态系统代币支付的服务。
+
+Robonomics 开发人员提出了一种基于 Polkadot 架构的解决方案，将允许任何平行链访问 IoT 设备管理，并使用本机代币进行支付。每个将 Robobank 分支添加到其运行时的平行链都将能够使用在 Robonomics 平行链控制下运行智能设备的功能。
+
+
+用户不必支付本机平行链代币之外的佣金 — 通过 Robobank 进行的任何支付都将为用户提供自动服务执行/启动 IoT 设备的免费执行。唯一需要的是自动服务所有者需要将 IoT 设备订阅激活以使用 Robonomics 平行链。
+
+<section class="animate-inside">
+
+## 用于 IoT 的 Polkadot。带有 XCMP 支持的 Robonomics 模块
+
+</section>
+
+<section class="animate-inside">
+
+!["Robonomics 介绍中的 Robobank，横幅 2"](/blog/images/robobank-introduction/robobank-introduction-banner-2.jpg)
+
+</section>
+
+为了帮助 Polkadot 生态系统朝着 IoT 进化，Robonomics 将为平行链提供与最受欢迎设备的最大可能集成。未来几年。
+
+
+如果Robonomics随时可用，那么parachain的功能将朝着自动化我们周围服务的方向扩展：
+
+
+* Acala将能够将其DeFI工具集成到终端和支付点中。
+* Plasm和Moonbeam将能够控制智能合约条款在现代家庭、办公室、汽车和任何其他物联网预言机的实施。
+* Darwinia将能够发行与3D打印机日志、机器人绘图或AI生成音乐作品相关的NFT代币。
+* Phala将能够提高用户应用程序的隐私级别，通过这些应用程序我们控制个人空间中的物联网设备。
+* 等等。
+
+
+这些只是作者想到的例子，您可以尝试继续思考关于智慧城市服务的列表。
+
+<section class="animate-inside">
+
+## Robobank是第一个使用XCMP的Robonomics功能
+
+</section>
+
+
+单独的parachain提供特定功能，并且本机代币用于支付在Polkadot网络上执行这些功能的佣金。
+
+parachain的创建者限制其Polkadot段的功能以提高性能，而其他parachain的存在以及使用[XCMP](https://wiki.polkadot.network/docs/en/learn-crosschain)从一个parachain发送交易到另一个parachain的能力可以实现网络效应。
+
+每个parachain都从称为“pallet”的模块构建自己的['runtime'](https://substrate.dev/docs/en/knowledgebase/runtime/)。
+
+<section class="animate-inside">
+
+!["Robonomics介绍中的Robobank，3"](/blog/images/robobank-introduction/robobank-introduction-3.png)
+
+*使用以太坊架构术语，runtime是为少数智能合约任务构建的独立虚拟机。*
+
+</section>
+
+总结涉及单独parachain的功能，我们得到一个完整的解决方案，可以节省资源，用于特定项目的“不是最重要”的功能。
+
+<section class="animate-inside">
+
+> Parachains与分片相同，但每个都以自己的方式组装。
+
+</section>
+
+通过参与[共享安全](https://wiki.polkadot.network/docs/en/learn-security#shared-security)，parachains可以在彼此之间创建可信任的连接。这种方法使我们摆脱了被困在一个酷但空无一物的沙盒。
+
+Robonomics平行链的存在将使其他Polkadot平行链能够通过在您的虚拟机（即运行时）中添加与物联网设备交互的全面且相当复杂的功能，例如：支付启动物联网设备或在支付过程中接收设备数据，从而扩展本机代币的功能。
+
+接下来，我们将通过使用多个Polkadot平行链来扩展任何项目的能力，通过基于XCMP的基础设施集成解决方案，来看一个架构示例。
+
+<section class="animate-inside">
+
+## Robobank架构
+
+</section>
+
+<section class="animate-inside">
+
+!["Robonomics介绍中的Robobank，信息图"](/blog/images/robobank-introduction/robobank-introduction-infographics.png)
+
+</section>
+
+考虑一个真正去中心化的Uber服务的示例。
+
+通过实施Uber Parachain，开发人员可以专注于司机评分系统、P2P模式中处理用户请求的系统以及其他客户服务问题，而不必担心同时支持其应用程序的物联网组件的需求 — Robonomics将帮助处理物联网。Uber Parachain只需要将Robobank调色板集成到其运行时中，以便在付款后为客户提供对汽车的访问权限，并直接从汽车的物联网模块接收行程报告。
+
+### 让我们看一下上面的图表，并强调重要的要点：
+
+* **Polkadot代币**是一种本机平行链代币，例如通过资产调色板实现。
+* **Robonomics Web Services**是Robonomics平行链内的一个调色板，实现了在月度订阅模式下连接物联网设备到Polkadot网络并提供带宽保证的能力。
+* **物联网应用**是用于自动化服务订购的自定义应用程序，其中使用本机平行链代币进行支付。在Uber Parachain的示例中，它将是一个熟悉的手机应用程序，供城市居民订购出租车或搜索共享汽车服务。
+* **汽车图标**是充当自动化服务一方的物联网设备，部分或完全提供服务。在示例中，它将是一辆汽车，绝不是司机！汽车将是提供开启车门访问权限并生成带有遥测数据的行程报告的一方。
+* **Robobank分支**是Robonomics模块用于纳入Polkadot平行链网络。
+* **Robobank Tower**是Robonomics模块，它在Robonomics平行链的运行时中永久运行，并可以启动具有基于令牌转移交易的活动订阅的IoT设备，这些交易发生在相邻的平行链中。
+
+从图表和模块描述中可以看出，平行链需要安装Robobank Branch，可以在不进行硬分叉的情况下通过平行链[更新模式](https://wiki.polkadot.network/docs/en/build-protocol-info#runtime-upgrades)执行。
+
+现在让我们逐步查看一个用例，代表了Robobank模块在Polkadot平行链启用Robobank Branch后的完整周期。
+
+1. `PaymentToRobot()` — 在启用Robobank Branch模块后，可以在其他函数中看到此功能。当用户从IoT应用程序发送交易时，Robobank Branch将接收有关付款金额和需要启动执行的设备的数据。
+2. `TransferToRobobank()` — 将确保将资金从用户帐户转移到Robobank帐户，并有能力在一次交易中从IoT设备中提取累积金额。例如，在进行10次行程或在5小时内工作后，汽车可以生成自动交易，将资金从Robobank帐户转移到加密交易所的地址。实际上，并没有从一个平行链向另一个平行链移动令牌。
+3. `SignalToRobonomics()` — 将使用XCMP的函数。重要的是要注意，我们将能够确保代表Robobank Branch发送的消息被识别并标记为可信任的。这类似于以太坊网络中智能合约之间的通信。
+4. `SignalFromRobonomicsBranch()` — 在前一步发送的消息将通过Relay链发送到Robobank Tower模块的中央节点进行处理。收到来自平行链的消息后，Robobank Tower将记录启动支付设备的请求在Robonomics平行链中，并因此消除了每个使用Robobank Branch模块的平行链一侧存储支付日志的需要。实际上，Robobank分支将执行对应账户的功能，并隶属于主分支。以塔的形式，将在邻近的平行链中保留执行自动化服务并带有付款的完整历史。
+
+5. `FreeTXtoRWS()` — Robonomics平行链的两个模块可以彼此信任，就像以太坊中的智能合约一样。如果我们可以确保Robobank分行对Robobank Tower的请求的信任，那么同样我们可以通过基于代币支付而不是基于设备地址来启动具有活动订阅的设备。
+
+6. `Launch || Datalog` — 这些功能的组合将允许，例如，在Uber Parachain应用程序中启动一个服务以执行，并指定将访问汽车后门的用户，或记录提供服务所需的数据。
+
+7. 步骤7-10实现了步骤2中描述的可能性。`TransferToRobobank()` 定期通过在Robonomics平行链中直接向Robobank Tower发送交易来清空您的物联网设备帐户。
+
+因此，我们研究了使用跨链交易的架构解决方案，以扩展单个项目的功能，以共同生态系统为代价。
+
+<section class="animate-inside">
+
+## 当前状态和计划
+
+</section>
+
+在Rococo网络上进行首次测试后，开发人员将在[wiki.robonomics.network](https://wiki.robonomics.network/)上发布Rocobank模块的实施和使用说明。
+
+我们的主要目标是为了在2021年夏季在Kusama网络上启动Robobank模块。
+
+要了解更多信息，请保持关注[Twitter](https://twitter.com/AIRA_Robonomics)。

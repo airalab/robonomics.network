@@ -1,0 +1,64 @@
+---
+title: 'Lançamento 2.0 e suporte XCM'
+date: 2022-06-09
+published: true
+locale: 'pt'
+cover_image: /blog/images/release-2.0-&-xcm-support/cover.jpg
+description: "O Lançamento 2.0 é um marco muito importante para o nosso projeto e comunidade, pois abre a possibilidade de integrar Robonomics com outras parachains no ecossistema Kusama. Nos próximos meses, a equipe de P&D do projeto se dedicará às integrações com as parachains Statemine, Karura, Moonriver, Crust e KILT."
+abstract: "O Lançamento 2.0 e o suporte XCM estão aqui!"
+tags: ['Parachain Robonomics', 'Roadmap', 'Novo lançamento']
+---
+
+[O Lançamento 2.0](https://github.com/airalab/robonomics/releases/tag/v2.0.0) é um marco muito importante para o nosso projeto e comunidade, pois abre a possibilidade de integrar Robonomics com outras parachains no ecossistema Kusama. Nos próximos meses, a equipe de P&D do projeto se dedicará às integrações com as parachains Statemine, Karura, Moonriver, Crust e KILT.
+
+Há 1,5 anos, demos os primeiros passos em direção à comunicação entre parachains, [demonstrando a troca de mensagens entre duas blockchains](https://wiki.robonomics.network/docs/en/cross-chain-messages/) durante uma aula magna em São Petersburgo. No ano passado, [Gav publicou uma série de artigos nos quais o XCMP foi modificado](https://medium.com/polkadot-network/xcm-the-cross-consensus-message-format-3b77b1373392) - ele foi transformado em mensagens de consenso cruzado (XCM) e recebeu sua primeira versão acima de zero.
+
+Dois meses após a refatoração do XCM, a equipe da Robonomics concluiu nossos testes no Rococo e estamos prontos para integrar com outras parachains no ecossistema Kusama.
+
+## Suporte básico para XCM na Robonomics
+
+Seguindo a visão de que o próprio Kusama é uma rede heterogênea, os desenvolvedores da Robonomics estão tentando implementar funcionalidades específicas de IoT/Robótica no código da parachain da Robonomics.
+
+Vamos maximizar nosso uso das funcionalidades de outras parachains que podem ajudar a implementar cenários de casa/cidade inteligente ou industrial sempre que possível. Por exemplo, este ano planejamos usar as soluções existentes de outras parachains (não criar nossas próprias soluções para): (1) saldos pessoais de tokens de acesso do usuário, (2) sistema de identificação de usuários de dapp e dispositivos IoT, (3) armazenamento de arquivos grandes, (4) uso de dispositivos IoT em contratos inteligentes de trabalho.
+
+No momento do lançamento da versão 2.0, a Robonomics está pronta para integração com qualquer parachain em execução na rede Kusama. A implementação de software do suporte XCM pode ser encontrada no [diretório de tempo de execução alfa](https://github.com/airalab/robonomics/tree/master/runtime/alpha) do repositório principal da Robonomics no Substrate.
+
+Em maio e junho de 2022, testes de compatibilidade com a Relay chain já foram realizados na rede Rococo usando o exemplo de teletransporte do token nativo da Relay Chain do Rococo - ROC (análogo ao KSM, mas na rede de teste Rococo) - para a parachain da Robonomics.
+
+<YouTube id="https://youtu.be/BJHSFDZt0y4" posterQuality="max"/>
+
+[Post no Twitter](https://twitter.com/AIRA_Robonomics/status/1534081132765097984):
+
+<Tweet id="https://twitter.com/AIRA_Robonomics/status/1534081132765097984" />
+
+Se você tiver ideias com base na integração da Robonomics com outras parachains do Kusama, envie um e-mail para research@robonomics.network ou junte-se ao nosso [Discord](https://discord.gg/atduhWZpVr) para discussão em nossos principais canais da comunidade.
+
+## Integração com Statemine
+
+O principal objetivo de nossa integração com Statemine é o lançamento completo da função liability() da parachain da Robonomics. A função liability() é bastante semelhante à função principal da Robonomics no Ethereum, que permite organizar um ciclo completo - usando um robô como serviço. A partir do momento da integração com Statemine, os desenvolvedores de aplicativos IoT poderão criar seu próprio token no Statemine (ou usar qualquer token existente no Statemine) para lançar um dispositivo inteligente/robô para executar um programa específico. Após a execução do programa do usuário, os tokens serão transferidos automaticamente para o saldo do robô.
+
+Na primavera passada, mostramos um exemplo simples de uso de tokens no Statemine para lançar uma máquina de café e descrevemos um dos cenários de desenvolvimento de tokenização de acesso aequipamento no artigo: [Coworking para criptoanarquistas, p1](https://blog.aira.life/coworking-for-crypto-anarchists-p1-5ebecb252f2d). A contabilização do uso de equipamentos no escritório e a distribuição diferencial de acesso aos equipamentos se encaixa muito bem com tokens de acesso em conjunto com a função de responsabilidade ().
+
+Outro exemplo do uso da integração do Statemine com Robonomics, com base em nossos casos de uso existentes, é a capacidade de usar um telescópio para criar cartões postais NFT. Atualmente, os saldos dos usuários são armazenados no Statemine e, em seguida, os NFTs são emitidos usando RMRKs. Começando com nossa integração com o Statemine, o telescópio será capaz de receber uma tarefa para criar uma imagem através da função de responsabilidade (), e os tokens de acesso enviados para o telescópio irão para o saldo do telescópio somente após adicionar um link para o NFT nos resultados da execução da função de responsabilidade ().
+
+Status do trabalho: Q3 2022
+
+## Integração com Karura
+
+Como construtores de longo prazo nos ecossistemas Ethereum e Dotsama, a Robonomics acredita na integração de meios de troca descentralizados para o token nativo da parachain da Robonomics (XRT). Listar XRT na troca Karura é a maneira ideal de permitir que nossa comunidade de tokens troque tokens nativos da parachain de forma descentralizada, e abrir esses canais de comunicação HRMP é o primeiro passo para alcançar esse objetivo.
+
+Uma das ideias dos desenvolvedores da Robonomics para uma integração adicional com Karura é a automatização de pontos de troca de moeda e valor para tokens da rede Kusama. Compartilharemos mais sobre isso separadamente, e certamente após o primeiro passo com a adição do XRT ao Karura Swap.
+
+Status do trabalho: Q3 2022
+
+## Integração com Moonriver
+
+A parachain da Robonomics pode se tornar um mecanismo universal para lançar dispositivos inteligentes de dentro dos contratos inteligentes do Moonriver. Atualmente, estamos trabalhando nessa arquitetura e discutindo um cenário separado de compensação de pegada de carbono usando [contratos inteligentes DAO IPCI](https://github.com/DAO-IPCI/DAO-IPCI) na parachain do Moonriver.
+
+Status do trabalho: Q3 2022
+
+## Integração com KILT
+
+Ao longo dos anos de estudo do mercado de robótica, os desenvolvedores da Robonomics concordaram que a identificação de dispositivos é uma das tarefas mais importantes ao considerar cenários complexos para automatizar a vida na cidade, logística e cadeias de suprimentos industriais. O KILT é um excelente exemplo de trabalho contínuo em direção à integração da funcionalidade de várias parachains dentrouma rede heterogênea e resolvendo problemas significativos para o mercado de IoT.
+
+Status do trabalho: T4 2022

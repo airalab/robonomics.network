@@ -1,0 +1,87 @@
+---
+title: "Robonomics School 2024: Spelregels voor Hack Johnny's Lab"
+date: 2024-06-05
+published: true
+locale: 'nl'
+cover_image: /blog/images/robonomics-school-2024-hack-johnny-lab/cover.jpeg
+description: "In de komende dagen zullen we een praktische queeste van Robonomics School 2024 lanceren, waarbij je je kunt voelen als een echte privacyschender en zelfs 'tokens kunt stelen. Geïnteresseerd? Bekijk de regels voor het spel 'Hack Johnny's lab'!"
+abstract: "In de komende dagen zullen we een praktische queeste van Robonomics School 2024 lanceren, waarbij je je kunt voelen als een echte privacyschender en zelfs 'tokens kunt stelen. Geïnteresseerd? Bekijk de regels voor het spel Hack Johnny's Lab!"
+tags: ['Aankondigingen', 'Evenementen', 'Online school']
+---
+
+
+## Motivatie voor Het Spel
+
+Dit spel haalt veel inspiratie uit de ideeën over ontsnappen uit Black Mirror, waar Sergei over sprak in zijn artikelen ([eerste](https://robonomics.academy/en/learn/escape-from-black-mirror/overview/) en [tweede](https://robonomics.academy/en/learn/school-2024-iot-vs-ai/overview/)) op de Robonomics Academy.
+
+Stel je voor, een gewone goedkope robotstofzuiger heeft het vermogen om het leven van zijn eigenaars te bespioneren. Het maakt niet eens uit of een kwaadwillende persoon toegang krijgt tot deze gegevens; AI-analyse van videobeelden is voldoende om conclusies te trekken over niet-openbare aspecten van iemands leven. Alle vuile geheimen, onopvallende gedragspatronen en privé-informatie — alles gaat de profielfornuis in. Denk daar maar eens over na terwijl je probeert wat gratis tokens te bemachtigen.
+
+## Het Doel van Het Spel
+
+In het spel krijgen spelers de opdracht om de herstelzin te herstellen uit de gegevens van de mobiele robot. De robot beweegt willekeurig rond het laboratorium en neemt video's op. Af en toe publiceert de robot een van de 12 woorden van de herstelzin. Tijdens een van de stops van de robot kunnen spelers op de video een bord met een nummer zien, wat een hint is naar de volgorde van dat woord in de herstelzin. De taak is om de nummers op de borden te matchen met de set woorden die zijn ontvangen op de stops van de robot, om de juiste herstelzin te herstellen.
+
+De speler die als eerste de herstelzin herstelt en alle XRT-tokens van zijn adres opneemt, wint.
+
+## De Spelregels
+
+*Registratie van spelers*
+
+- Om deel te nemen, moeten spelers een nieuw account aanmaken op de Robonomics parachain, en dit moet worden aangemaakt met het Edwards (ed25519) encryptietype. Instructies zijn beschikbaar op [onze wiki](https://wiki.robonomics.network/docs/create-account-in-dapp/).
+- Vervolgens moeten spelers naar de [Discord-bot](https://discordapp.com/channels/803947358492557312/1245395009964871772) op de Robonomics-server gaan en wachten op een bericht over het begin van een nieuwe sessie.
+- Aan het begin van de sessie sturen spelers de aangemaakte accountadressen in **Robonomics parachain-formaat** naar de Discord-bot. Spelers hebben 60 minuten de tijd om in te voeren.
+
+*Laboratoriumverkenning*
+
+- Nadat de registratie is voltooid, zal de mobiele robot het laboratorium gaan verkennen. Daarna stuurt de robot een videoregistratie en een lijst van de woorden in de herstelzin (niet in de juiste volgorde).
+- Spelers wachten op een bericht van de Discord-bot over het ontvangen van resultaten van de robot en gaan naar de applicatie [via een link](https://robonomics.academy/en/demoapps/johnnyb-lab/) om te beginnen met het herstellen van de herstelzin.
+
+*Herstellen van de Herstelzin*
+
+- Om toegang te krijgen tot de gegevens, moeten spelers het geregistreerde Robonomics-account gebruiken.
+- Spelers hebben toegang tot de videoregistratie en de set herstelzinwoorden. De taak van de speler is om de juiste volgorde van de woorden te vinden op basis van de nummers op de borden die zich in het laboratorium bevinden.
+
+<TextCard alignContent="left">
+
+**Voorbeeld.** Als de set woorden is: 
+
+`vinden -> kerk -> relatie -> hond -> monster`
+
+En de route van de robot, gereconstrueerd uit de video, is: 
+
+`Bord #5 -> Bord #3 -> Bord #1 -> Bord #2 -> Bord #4`
+
+Dan:
+
+`vinden — Bord #5 -> vinden is het 5e woord`
+
+`kerk — Bord #3 -> kerk is het 3e woord`
+
+`relatie — Bord #1 -> relatie is het 1e woord`
+
+`hond — Bord #2 -> hond is het 2e woord`
+
+`monster — Bord #4 -> monster is het 4e woord`
+
+Als resultaat is de juiste herstelzin: `relatie hond kerk monster vinden`
+
+</TextCard>
+
+
+- Nadat de herstelzin is gevonden, kunnen spelers toegang tot het account herstellen met tokens met behulp van een willekeurige applicatie.
+- Bijvoorbeeld, in de Polkadot.js-extensie kan dit worden gedaan met de functie *Account importeren vanuit een bestaande herstelzin*.
+- Alle herstelde accounts met XRT's hebben **een Schnorrkel (sr25519)** encryptietype, dat wordt ondersteund in de meeste Polkadot / Kusama wallets.
+
+
+*Aankondiging van de winnaar*
+
+- Zodra een speler toegang heeft tot het account, moet hij of zij XRT opnemen om de winnaar van de sessie te worden, totdat iemand anders dit doet.
+- Bijvoorbeeld, met behulp van de Polkadot.js-extensie, kan dit worden gedaan op [onze Polkadot / Substrate-portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/accounts) op de Account-pagina. Druk gewoon op de Verzenden-knop en neem de tokens op naar elke gewenste locatie. Je kunt de optie *Transfer het volledige accountsaldo, oogst de verzender* aanvinken om het volledige saldo op te nemen.
+- Na afronding van de sessie, nadat de tokens zijn opgenomen, zal de bot het Discord-kanaal op de hoogte stellen door het adres van de winnaar te publiceren.
+
+## Evenementsvoorwaarden
+
+Het evenement duurt 9 dagen, waarbij je 's ochtends en 's avonds (in totaal 18 keer) de kans krijgt om als eerste **42 XRT** te bereiken binnen elke sessie.
+
+De registratie voor de sessie begint om **10:00 en 20:00 EEST** elke dag en duurt 60 minuten.
+
+Volg onze sociale netwerken zodat je de start van het evenement niet mist!

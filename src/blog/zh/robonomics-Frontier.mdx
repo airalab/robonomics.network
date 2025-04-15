@@ -1,0 +1,104 @@
+---
+title: Robonomics Frontier
+date: 2021-07-23
+published: true
+locale: 'zh'
+cover_image: /blog/images/Robonomics-Frontier/Robonomics-Frontier_cover_2_blog.jpg
+description: "由于夏季 Kusama 众贷，Robonomics 成为 Polkadot 生态系统中前十大项目之一。在下一波拍卖之前，项目开发人员决定部署和维护一个功能上相同的网络。"
+abstract: "由于夏季 Kusama 众贷，Robonomics 成为 Polkadot 生态系统中前十大项目之一。在下一波拍卖之前，项目开发人员决定部署和维护一个功能上相同的网络 —— Frontier 中继链，该链将与 Robonomics 平行链集成。"
+tags: ['Robonomics 平行链', 'XRT 代币', '质押', '路线图']
+---
+
+## 不是 Kusama 的野生近亲
+
+Kusama 中继链正在开发中，并使用 Polkadot 发行版的稳定版本进行所有更新。例如，当前版本的 Kusama 是基于 [polkadot v0.9.8](https://github.com/paritytech/polkadot/releases/tag/v0.9.8) 发行版构建的。
+
+![Kusama 中继链和 Polkadot 发行版 0.9.8](/blog/images/Robonomics-Frontier/Kusama-Relay-Chain-and-Polkadot-release-0-9-8.jpg)
+
+Frontier 中继链将使用与 Polkadot 发行版相同的版本，这将由 Kusama 网络以其中继链的形式实施。
+
+要连接到 Frontier 中继链，您可以使用 Substrate 门户，点击此链接：https://parachain.robonomics.network/
+
+将 Robonomics 平行链连接到 Frontier 中继链后，我们可以拥有一个可以实时运行并集成到 Kusama 网络中的区块链。这意味着我们需要克服 Kusama 平行链可能遇到的任何挑战。所有随着新 Polkadot 发行版出现的新功能也将得到 Robonomics 平行链的支持。
+
+## XCMP 和与 Kusama 平行链的集成
+
+也许今天（2021 年）唯一的缺点是，在讨论 Frontier 网络的生命周期时，而不是关于主要的Kusama网络，缺乏通过[XCMP](https://wiki.polkadot.network/docs/learn-crosschain#overview-of-xcmp)进行集成。
+
+但这并不意味着您无法执行技术集成任务并准备一个Robonomics平行链与Karura、Moonriver和Khala合作。就集成而言，Robonomics团队对这三个平行链很感兴趣。我们可以开始在Frontier网络中维护与提到的项目副本的工作，但只能在公共文档发布和首次使用Kusama的示例（如在Karura上创建交易对、在Moonriver中将平行链功能与solidity/ink智能合约连接，或者在Khala中提供数据隐私）之后进行。
+
+我个人期待在第一年中非常谨慎地执行平行链集成过程，也许其他项目也会在沙盒中共同合作，然后将集成机制转移到Kusama网络。因此，Robonomics可能会在项目之间积极集成的时刻就进入Kusama网络。
+
+## Robonomics平行链在Frontier网络的创世区块
+
+创世区块将展示出逃离参与者、众贷贡献者和开放测试网络整理者的XRT余额。这个区块将在平行链在Frontier网络中启动前的几天形成。我们将在我们的[Twitter](https://twitter.com/AIRA_Robonomics)和[Telegram](https://t.me/Robonomics_ann)上宣布此更新。
+
+我们预计创世区块将在7月28日至31日之间形成。
+
+对于以太坊网络中的XRT持有者的重要信息：要参与平行链的创世区块并参与质押，您可以在7月28日之前使用dapp exodus。7月28日后，将仍然可以将XRT代币转移到以太坊到Frontier。但此过程将由网络的技术委员会执行，且不会频繁于每周一次。
+
+另外，我们想提醒，exodus将不允许您在Robonomics平行链连接到Kusama网络并有适当的桥接到以太坊之前返回。这种情况类似于ETH持有者转移到以太坊2.0的过程。
+
+## XRT质押
+
+XRT质押Robonomics parachain旨在在两种支付选项之间分配容量：用于交易或订阅。您可以在Medium的文章[“RWS概述，第2部分“异构通证经济学”](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855)中了解更多信息。
+
+质押奖励的基础将为~10%。这个金额有助于启动parachain。未来，奖励将由[XRT持有者的“民主”调色板](https://substrate.dev/rustdocs/latest/pallet_democracy/)确定。
+
+众贷款人将获得增加的奖励率——50%。因此，这将帮助我们测试“总是获胜的Parachain”机制，该机制将提出适应性奖励，用于在Kusama / Polkadot中质押Robonomics的奖励，并考虑XRT价格对KSM/DOT的影响。我们稍后将详细解释这个机制，并进行几次测试。
+
+质押将从Frontier网络的更新1.1中可用。请注意，在启动时，类似于Polkadot Relay链的启动，parachain中的代币转移将被关闭。
+
+## 路线图 - 拍卖后的生活
+
+尽管我们没有赢得一个插槽，但parachain开发的路线图不会改变。以下是我们在文章中发布的计划: https://robonomics.network/blog/crowdloan-starts-today/。
+
+<TextCard>
+
+### 第1部分：建立核心功能
+
+在Robonomics parachain启动后的3个月内，Robonomics开发人员将激活在2019年至2021年期间开发的核心功能，并为网络增加已在Polkadot和Kusama生态系统中证明自己的模块。
+
+* **创世状态：（第0周）** 启动带有物联网管理服务和整理器奖励系统的Robonomics parachain功能的入门套件。
+* **更新1.1** 质押和允许转账（第3 - 4周）。将允许您转移XRT并质押您的XRT，所有代币持有者的年利率为10%，众贷款参与者为50%。
+* **更新1.2** 财政和技术委员会（第4 - 6周）。将允许转移一部分将以太坊的DAO资金转移到平行链。技术委员会可以提出紧急公投。这些用于紧急错误修复或快速实施新的经过实战测试的功能到运行时。
+* **更新 1.3** RWS（7 - 8 周）。将允许使用物联网管理功能，不仅可以使用XRT进行佣金支付，还可以进行月度订阅。
+* **更新 1.4** 机器人即服务（9 - 10 周）。将允许实施用于提供自动服务的控制流程，并在交易中使用支付来启动设备。
+* **更新 1.5** XCMP功能和Robobank（11 - 12 周）。该解决方案基于Polkadot XCMP架构，将允许任何平行链以本地代币支付获取物联网设备管理权限。
+* **更新 1.6** 民主和移除Sudo（13 - 14 周）。开发人员将无法干预网络操作，除非技术委员会介入或平行链本地代币持有者投票。
+
+</TextCard>
+
+<TextCard>
+
+### 第二部分：基于Robonomics R&D启动服务
+
+Robonomics平行链在Kusama中的增长的第二部分旨在启动基于之前Robonomics团队的研发项目的服务。
+
+* **产品的全球可用数字护照** 通过将数字孪生状态与生产产品的信息相结合，客户将能够发行受保护免受未来信息更改和丢失的数字护照。这种用例已经作为试点在生产无人机的企业中实施。解决方案用于在包装过程中进行质量控制，并进行视频记录。
+* **物联网和机器人的智能租赁** 我们将展示使用Robonomics平行链租赁物联网/机器人设备的能力。通过两个由Robonomics平行链控制的机器人的示例，分别应用于两个不同的行业。第一个用例是基于波士顿动力SDK的教育计划，开发人员将学习如何控制著名的机器狗Spot。第二个用例是在美国根据租赁协议出售的工业机械手。这两个机器人将在用户会话结束时为客户提供自动生成的报告。
+* **智能建筑环境缓解服务与真实碳信用** 它将允许客户自动收集有关家庭或公寓楼电力消耗的信息，燃烧碳信用。，并将报告存储在平行链中。
+* **容错的公民传感器网络** 一套完整的软件模块，用于在城市或企业中创建传感器网络，以跟踪所需的指标并提供对它们的访问，而无需中心故障点。今天，它正在俄罗斯的一个工业城市 - 托里亚蒂进行测试。
+* **自动驾驶汽车和无人机交通管理解决方案，以避免公共区域的路线冲突** 它将允许管理一支无人机队伍，公开监控对公共机构的路线更改，这些机构负责当地安全和空中及道路效率。
+* **生态系统集成更新** 我们将专注于与其他平行链的集成，以扩展对Polkadot生态系统功能感兴趣的物联网项目的能力。
+
+</TextCard>
+
+<TextCard>
+
+### 第三部分：转变为Robonomics中继链
+
+在Kusama网络中存在48周的最后任务是将Robonomics平行链转变为Robonomics中继链。这是我们对Robonomics未来的愿景，作为Polkadot基础设施的一个完整部分，专门为与物联网设备合作而准备。
+
+</TextCard>
+
+<TextCard image="/avatars/Sergei-Lonshakov.jpg" back="transparent" imageSize="big" alignContentV="middle">
+
+#### EnsRationis
+
+Robonomics网络架构师
+
+element: @ensrationis:robonomics.network
+
+</TextCard>
+

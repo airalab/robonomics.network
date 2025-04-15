@@ -1,0 +1,102 @@
+---
+import ModelRiskV from '../3dmodels/Server.vue';
+import ModelAltruist from '../3dmodels/Altruist.vue'
+import { getLocale } from "astro-i18n-aut";;
+// images
+import { Image } from 'astro:assets';
+import Tamagotchi from "../../assets/images/hardware-2025/hikikomori.webp"
+import EnergyMonitor from "../../assets/images/hardware-2025/energy-monitor.webp"
+
+// styles
+import '../../assets/styles/components/3dmodels.css'
+
+// data
+import items from '../../data/devices.js'
+
+const locale = getLocale(Astro.url);
+
+const generatePath = (path) => {
+  return locale === 'en' ? path + '/' : `/${locale}${path}/`
+}
+---
+
+
+<section class="products">
+  {items.products.map((product, i) => (
+    <article class="product">
+      <h2>
+        {product.titleLink ? (
+          <a href={generatePath(product.titleLink)}>{$tr(product.title)}</a>
+        ) : (
+          <span>{$tr(product.title)}</span>
+        )}
+      </h2>
+      {product.text && <p  set:html={$tr(product.text)}></p>}
+      <div class="product-picture">
+        {product.code === 'altruist' && <ModelAltruist client:only />}
+        {product.code === 'server' && (
+            <ModelRiskV classList="product-picture-server" client:only />
+        )}
+        {product.code === 'hikikomori' && (
+          <Image
+            src={Tamagotchi}
+            alt={`${product.title} picture`}
+            class="product-picture--hikikomori"
+          />
+        )}
+        {product.code === 'energy-monitor' && (
+          <Image
+            class="product-picture--energy-monitor"
+            src={EnergyMonitor}
+            alt={`${product.title} picture`}
+          />
+        )} 
+        {product.titleLink && (
+          <a href={generatePath(product.titleLink)} class="link-cover"></a>
+        )}
+      </div>
+    </article>
+  ))}
+</section>
+
+<section class="unitree">
+  <div>
+    <img src="/images/unitree-g1/unitree-g1-hello.webp" alt="Unitree G1 Humanoid Robot image" />
+    <a href="/devices/rent-unitree-humanoid/" class="link-cover"></a>
+  </div>
+
+  <div>
+    <div class="label">{$tr('Special offer')}</div>
+    <h2><a href="/devices/rent-unitree-humanoid/" target="_blank" aria-label="go rent Unitree G1 Humanoid Robot">{$tr('Unitree G1 Humanoid Robot')}</a></h2>
+    <h3>{$tr('Rent in California, USA')}</h3>
+    <p>{$tr('Get exclusive access to one of the first commercially available humanoid robots. Flexible rental options for research, programming and entertainment needs.')}</p>
+  </div>
+</section>
+
+<style>
+  .product-picture .product-picture--energy-monitor {
+    max-width: 540px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .product-picture .product-picture--hikikomori {
+    max-width: 240px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .product p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  
+</style>
+
+

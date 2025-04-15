@@ -1,0 +1,97 @@
+---
+title: "Robonomics Open Hardware Origins"
+date: 2024-11-11
+published: true
+locale: 'nl'
+cover_image: /blog/images/robonomics-open-hardware-origins/cover.png
+description: "Nu we het Hardware for Cyberpunks-project lanceren, is het tijd om terug te kijken op onze hardware-reis sinds 2020. Dit essay zal de open hardwarebeweging van Robonomics verkennen."
+abstract: "Nu we het Hardware for Cyberpunks-project lanceren, is het tijd om terug te kijken op onze hardware-reis sinds 2020. Dit essay zal de open hardwarebeweging van Robonomics verkennen."
+tags: ['Wegkaart', 'Slim Thuis']
+---
+
+Robonomics is altijd deels een "hardware" project geweest. Voor ons was blockchain de technologie waardoor apparaten echte economische agenten konden worden en financiële activa konden gebruiken om veranderingen in het echte leven teweeg te brengen. Vanaf de eerste dronevlucht gelanceerd door een smart contract in 2016, hebben we geen moment opgehouden met nadenken over echte hardware - hardware die de echte wereld waarneemt en in staat is deze te beïnvloeden: sensoren en robots. Tegelijkertijd, trouw blijvend aan de open-source softwarebeweging, hebben we geprobeerd om hardwareprojecten ook open te maken. Nu worden de blauwdrukken van alle apparaten die we ontwikkelen gepubliceerd onder open licenties.
+
+Er is veel tijd verstreken sinds 2020, en nu is het het perfecte moment om te herinneren hoeveel interessante hardware we hebben ontwikkeld. In dit essay zullen we de geschiedenis van de open hardwarebeweging in Robonomics en de meest interessante ontwikkelingen uit het verleden, heden en toekomst bespreken.
+
+## Sensors Network - Luchtkwaliteit
+
+Het burgerlijke sensornetwerkproject begon in april 2020, toen we een speciale DApp voor het bekijken van alle sensoren die gegevens leveren aan het Robonomics-netwerk op een wereldkaart. We realiseerden ons al snel dat om de beste gebruikerservaring te garanderen, een Plug&Play-oplossing nodig was, zodat men een sensor kon kopen, aansluiten en meteen lid kon worden van de gemeenschap zonder diepgaande kennis van programmeren en circuitontwerp. In augustus 2021 begon het werk aan een luchtkwaliteitssensor, en slechts enkele maanden later verkregen we het eerste prototype, dat een SDS011 PM2.5/PM10 laserdeeltjessensor en een populaire DHT22 (AM2302) temperatuur- en vochtigheidssensor omvatte.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/air-quality-station.jpg" alt="Sensoren Netwerk Luchtkwaliteit Hardware" />
+
+In de afgelopen drie jaar heeft het apparaat uitgebreide wijzigingen ondergaan, resulterend in zijn nieuwste versie: het "Altruist" Burgerlijk Monitoring Station. Deze slimme sensor verzamelt milieugegevens, waaronder geluidsniveaus, stofdeeltjes en temperatuur, en slaat deze op in een gedecentraliseerde [sensorkaart](https://sensors.social/). Het station kan worden uitgebreid met sensoren met I2C-interface: BMP180 — temperatuur en vochtigheid, BME/P280 — temperatuur, vochtigheid, atmosferische druk, HTU21D — temperatuur en vochtigheid, CCS811 VOC SENSOR — vluchtige organische stoffen, CO2-equivalent en sensoren met 1-Wire-interface: DS18B20 — temperatuur.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/altruist-hq.jpg" alt="Altruist Luchtstation" />
+
+We hebben veel educatief materiaal over het sensornetwerk op de [Robonomics Academia](https://robonomics.academy/en/learn/sensors-connectivity-course/overview/) websites en in de [Wiki](https://wiki.robonomics.network/docs/sds-sensor-connect/). De [video](https://www.youtube.com/watch?v=OdTd1sacCso) laat zien hoe je je eigen individuele monitoringsstation kunt maken met behulp van onze modules en kunt aansluiten op het civiele monitoringsensornetwerk.
+
+## Cyber-Economie - Getokeniseerde Koffiemachine
+
+Naast het wereldwijde sensornetwerk hebben we ook scenario's overwogen voor het gebruik van Robonomics voor huishoudelijke apparaten. Een van de eerste projecten op dit gebied was een blockchain-verbonden koffiemachine, gelanceerd in oktober 2021. Ja, dit was geen ontwikkeling in de traditionele zin van het woord, maar eerder hacken. We gebruikten seriemodellen van koffiemachines en onze technische vaardigheden om deze machines Web3-compatibel te maken.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/robonomics-coffee-maker.jpg" alt="robonomics-coffee-maker" />
+
+Dit hardwareproject omvatte echter alle Robonomics-innovaties die destijds beschikbaar waren:
+
+- Lichtgewicht Robonomics-substraatknooppunt op een single-board computer
+- Real World Asset (RWA) in de vorm van koffietokens uitgegeven op de Statemine parachain wanneer een nieuw pakket koffie wordt ontvangen en gelijkmatig wordt verdeeld onder teamleden op kantoor
+- Praktische toepassing van het aansprakelijkheidspalet om de interactie tussen aanbod- en vraagagenten te vereenvoudigen — met deze functie zocht de Koffiemaker naar de meest winstgevende koffieleveranciers
+
+Je kunt meer lezen over dit fascinerende project [hier](https://robonomics.network/cases/blockchain-coffee-machine/) en in het blog van Sergey Lonshakov op Medium [Coworking voor crypto-anarchisten](https://blog.air[a.life/coworking-for-crypto-anarchists-p1-5ebecb252f2d)
+
+## Slimme Huisapparaten
+
+In 2022 zijn we begonnen met het ontwikkelen van veilige en privé slimme huisoplossingen op basis van Web3-technologieën. We hebben ons gericht op draadloze communicatie en hebben een reeks op afstand bedienbare apparaten gemaakt die compatibel zijn met de gedecentraliseerde Robonomics-cloud. Onze reis begon met de populaire ESP8266 WiFi-chip van Espressif Systems. Vervolgens zijn we overgestapt naar de veelzijdigere ESP32-C3, met een open RISC-V-architectuur en ondersteuning voor Bluetooth 5. In 2024 hebben we Espressifs meest geavanceerde chip aangenomen - de ESP32-C6 - die ondersteuning biedt voor het Thread/Zigbee-protocol. Nu maakt onze volledige Robonomics slimme huisapparatenlijn gebruik van ESP32-C6-chips. Deze apparaten zijn allemaal compatibel met de open-source slimme thuisserver Home Assistant. Gebruikers kunnen eenvoudig de firmware bijwerken via onze [Web Flasher](https://webflasher.robonomics.network/). We hebben de bronbestanden voor onze modules gepubliceerd in [ons Github-opslagplaats](https://github.com/airalab/hardware).
+
+### Schakelaars
+
+Traditioneel worden bekabelde gebouwautomatiseringssystemen ontworpen samen met andere elektrische netwerken tijdens de initiële constructie. Als uw woning niet op deze manier is ontworpen, vereist het toevoegen van slimme apparaten vaak kostbare renovaties. Onze schakelaars bieden een oplossing: implementeer intelligente controle zonder renovaties. Installeer eenvoudig de schakelaar in een standaard stopcontact en deze wordt toegankelijk voor de Home Assistant-server, waardoor slimme functionaliteit naar traditioneel bekabelde ruimtes wordt gebracht.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/2-gang-switch.jpg" alt="" />
+
+### Infrarood Afstandsbediening
+
+Infraroodzenders domineren al lange tijd de marktvoor op afstand bediende huishoudelijke apparaten. Bijna elk huis bevat dergelijke apparaten, waaronder mediaspelers, airconditioners en vele anderen. Om de integratie van deze apparaten in slimme thuissystemen te vereenvoudigen, hebben we een configureerbare gateway ontwikkeld. Deze gateway maakt het gemakkelijk om uw met IR bediende apparaten te verbinden met uw homeserver via het MQTT-protocol, allemaal via een eenvoudig configuratieproces.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/ir-remote-control.jpg" alt="IR Afstandsbediening" />
+
+### Energiemonitor
+
+Energiebesparing is ongetwijfeld een van de belangrijkste functies van een slim huis. Terwijl het geweldig is om elk apparaat te kunnen bedienen zonder van de bank af te komen, is het nog bevredigender om elektriciteitsrekeningen te ontvangen die 15-20% lager zijn dan normaal, dankzij historische gegevens over veranderingen in energieverbruik. Deze motivatie leidde tot de ontwikkeling van ons eerste DIN-railmonteerbare apparaat - de industriestandaard voor automatisering. Net als al onze slimme thuisapparaten verbindt de Energiemonitor draadloos met de Home Assistant-server via het MQTT-protocol. Bekijk de [demonstratievideo](https://www.youtube.com/watch?v=xtXIsORJGP0) waarin het uitpakken, de installatie en het eerste gebruik van de monitor worden getoond.
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/energy-monitor.jpg" alt="Energiemonitor" />
+
+
+## DIY & Industriële Robotica
+
+Begin 2021 startte Robonomics het Robossembler-project met een groot doel: de manier veranderen waarop industriële robots worden gemaakt. We wilden evolueren naar robots die zichzelf konden bouwen. Terwijl we deze droom levend hielden, stelden we in 2021 een meer praktisch doel. We besloten een open-source robotarm te creëren die iedereen kon bouwen en gebruiken.Deze arm zou in staat zijn om dingen automatisch in elkaar te zetten en zou zelfs kopieën van zichzelf kunnen maken. Het klassieke ontwerp van een industriële robot omvat niet de mogelijkheid om zich automatisch in elkaar te zetten, dus moesten we alle structurele componenten herzien, te beginnen met de motor. We hebben ons gericht op het verbeteren van de motor, de versnellingsbak en de algehele structuur van de robot. Dit proces was uitdagend en tijdrovend. Echter, we beginnen nu positieve resultaten te zien van onze inspanningen. Ons harde werk begint vruchten af te werpen en we boeken goede vooruitgang met het project.
+
+### Servo
+
+De meeste open robotmanipulatoren gebruikten aanvankelijk stappenmotoren, die niet ideaal waren. Moderne gepatenteerde robots gebruiken nu servoaandrijvingen met geïntegreerde controllers voor betere feedback. Ons team heeft een aangepaste servoaandrijfcontroller ontwikkeld, toepasbaar op verschillende motorenprojecten.
+
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/robossembler-servo-reducer-exploding-view-01.jpg" alt="Robossembler Servo Exploding View" />
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/servo.jpg" alt="Robossembler Servo" />
+
+We hebben onze servoaandrijving ontworpen om gebruiksvriendelijk te zijn voor doe-het-zelvers. Je hebt geen high-tech werkplaats nodig om de stator te maken. In plaats van duur elektrisch staal voor de magnetische kern, gebruiken we gewone DIN-schroeven. Je kunt de belangrijkste onderdelen van de rotor en stator maken met een 3D-printer. Dit maakt het veel gemakkelijker voor hobbyisten om het project thuis te bouwen. Bronnen zijn beschikbaar in ons repository op [gitlab](https://gitlab.com/robossembler/servo).
+
+### Wikkelmachine
+
+Tijdens de ontwikkeling van de motor wikkelden we aanvankelijk verschillende stators.met de hand - een uiterst arbeidsintensief proces. Zonder veel aarzeling besloten we een gespecialiseerde machine te maken voor automatisch statorspoelwikkeling. Het resultaat? Een opmerkelijk kosteneffectieve oplossing van ongeveer $150. Momenteel staat dit bekend als 's werelds eerste open-source wikkelmachine. We hebben het ontworpen met toegankelijkheid in gedachten: de meeste onderdelen zijn 3D-printbaar. Je kunt het hele proces bekijken - van de assemblage tot de eerste 8 uur durende statorwikkeling van de machine - in deze [video](https://youtu.be/5glGYkbpT6w?si=H6iFg7i56K8elXjw). Bronnen zijn beschikbaar in ons repository op [gitlab](https://gitlab.com/robossembler/cnc/motor-wire-winder).
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/winder.jpg" alt="Motor Wire Winder" />
+
+Nu we de meest basistaken hebben opgelost - het ontwikkelen van de motor en de apparatuur voor de productie ervan, kunnen we verder! In 2025 zijn we van plan om de Robossembler Arm te testen, een volledig open source 6-assige robotmanipulator. We hebben al een unieke versnellingsbak ontwikkeld met een overbrengingsverhouding van 1:43, die de nodige kracht zal leveren voor de robot, zelfs met onze DIY-motor!
+
+<RbImage zoom src="/blog/images/robonomics-open-hardware-origins/robossembler-arm.jpg" alt="Robossembler Arm" />
+
+
+## Wat is het volgende?
+
+We stoppen hier niet - we hebben grote plannen voor 2025! We gaan veel meer apparaten maken. Op dit moment kun je onze nieuwe Hardware for Cyberpunks-lijn bekijken op [robonomics.network/devices](https://robonomics.network/devices/). Deze nieuwe regel zal verschillende apparaten bevatten, waaronder het Altruist station waar we het al over hebben gehad. Dit is waar we nog meer aan werken:
+
+- RISC-V Smart Home Server. De meest open-source slimme thuisserver, aangedreven door RISC-V, met een Web3-cloud die Google-servers onder de motorkap vervangt. Slimme WI-FI MQTT-apparaten met open-source firmware Tasmota op het bord, volledig compatibel met Home Assistant.
+- Hikikomori Tamagotchi. Een slim draagbaar station dat de status van sensoren vanuit je huis of kleding controleert.
+- Slimme Kluis. Een kluis die wordt ontgrendeld met een smart contract op basis van door de gebruiker gedefinieerde voorwaarden. Bekijk logs van de openingen en sluitingen van de kluis. Programmeer de kluis naar wens, zoals toegang verlenen aan vertrouwde accounts na een langere periode van inactiviteit.

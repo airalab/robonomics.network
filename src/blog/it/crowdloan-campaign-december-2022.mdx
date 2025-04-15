@@ -1,0 +1,116 @@
+---
+title: Nuova Campagna di Crowdloan di Robonomics, Dicembre 2022
+date: 2022-12-12
+published: true
+locale: 'it'
+tags: ['Parachain di Robonomics', 'Polkadot', 'Annunci']
+cover_image: /blog/images/crowdloan-campaign-december-2022/cover.jpg
+description: "Dopo un piccolo contrattempo causato dal caos nei primi giorni di OpenGov, siamo pronti a riavviare la campagna di crowdloan di Robonomics. In questo articolo, esamineremo la serie di eventi che hanno portato al riavvio della campagna e presenteremo i suoi nuovi parametri."
+abstract: "Dopo un piccolo contrattempo causato dal caos nei primi giorni di OpenGov, siamo pronti a riavviare la campagna di crowdloan di Robonomics. In questo articolo, esamineremo la serie di eventi che hanno portato al riavvio della campagna e presenteremo i suoi nuovi parametri."
+---
+
+## Kusama OpenGov Causa Problemi
+
+L'attesa arrivo del nuovo sistema di governance, OpenGov (Gov2), è finalmente avvenuto su Kusama, ma ha portato con sé molto caos. L'istituzione del nuovo sistema OpenGov ha comportato il mancato svolgimento delle aste precedentemente programmate. La comunità di Kusama aveva avviato il [referendum Gov1 n. 252](https://kusama.polkassembly.io/referendum/252) per risolvere il problema dello schedule delle aste, ma non è stato attuato con successo a causa delle restrizioni del privilegio AuctionAdmin. Questo errore è stato causato dal fatto che nel nuovo sistema di governo è obbligatorio spingere la proposta OpenGov sulla traccia delle aste per poterle avviare. Si è deciso di aggiustare i parametri di OpenGov con [un aggiornamento del runtime](https://kusama.polkassembly.io/referendum/254), ma nemmeno questo referendum è stato concluso con successo a causa di un conflitto tra la logica di Gov1 e Gov2.
+
+Tutto sommato, alla comunità di Kusama e agli sviluppatori sono servite un paio di settimane per capire le complessità del nuovo sistema di governance. Questo è stato imprevisto e ha influenzato i piani del progetto Robonomics di partecipare a un'asta per un parachain nella nostra campagna di crowdloan di novembre 2022. Abbiamo già sciolto [il crowdloan di novembre 2022](/blog/robonomics-crowdloan-campaigns-november-2022/) che era stato avviato ilperché il paraID 2237 e tutto il KSM è stato restituito ai contributori del crowdloan.
+
+## Nuove sfide per estendere il contratto di locazione dello slot
+
+**Il metodo standard** per lo scambio di contratti di locazione di parachain prima del rilascio di OpenGov era il seguente:
+
+1. Generare un nuovo paraID utilizzando l'estrinseco del registrar (Riserva).
+2. Impostare l'ID on-chain per il nuovo paraID.
+3. Aprire un crowdloan utilizzando l'estrinseco crowdloan (Crea).
+4. Fare un'offerta in un'asta di slot di parachain.
+5. Se si ha successo all'asta, allora gli sviluppatori avvieranno un'azione di governance per scambiare il contratto di locazione da questo paraID donatore al paraID di parachain funzionante utilizzando le funzioni forceLease e registrar:swap, simili a questi referendum precedenti: [scambio di contratto di locazione di Karura](https://kusama.polkassembly.io/referendum/192), [scambio di contratto di locazione di Moonriver e Khala](https://kusama.polkassembly.io/motion/468), [scambio di contratto di locazione di Shiden](https://kusama.polkassembly.io/referendum/199), [scambio di contratto di locazione di Parallel-Heiko](https://kusama.polkassembly.io/referendum/219), [scambio di contratto di locazione di Genshiro](https://kusama.polkassembly.io/referendum/246).
+6. Il risultato finale sarebbe che la parachain funzionante avrebbe il suo contratto di locazione esteso, continuerebbe a produrre blocchi e non subirebbe alcun downtime.
+
+Tuttavia, con l'introduzione di OpenGov, le soglie per le azioni di governance su Kusama sono diventate straordinariamente alte. In termini semplici, il nuovo sistema OpenGov ha più percorsi. Ogni percorso può supportare un tipo specifico di funzione (può chiamare solo estrinseci particolari). Alcuni percorsi hanno poteri limitati, come dare piccole quantità di KSM, ma altri hanno un potere enorme, come il percorso Root.
+
+Le soglie per i percorsi di OpenGov sono straordinariamente alte, e ci sono già azioni all'interno della comunità di Kusama per abbassarle, poiché stanno già causando problemi ai progetti di parachain come [Kintsugi](https://twitter.com/kintsugi_btc/status/1599036329399943168). In poche parole, un particolare referendum deve ottenere abbastanza supporto dagli stakeholder della rete (possessori di KSM) affinché il referendum passi dal periodo di votazione al periodo di conferma.
+
+Affinché la parachain possa portare a termine il suddetto piano in 6 fasi per lo scambio del contratto di locazione, è necessario avviare nuovamente il programma di asta di parachain, questosignifica che un referendum OpenGov dovrebbe passare che riavvia le aste o tramite la traccia Lease Admin, o eventualmente come parte di un aggiornamento in tempo di esecuzione tramite le tracce Root/Whitelisted Caller. Qui sorge il problema: affinché il referendum venga inserito nel periodo di conferma in modo tempestivo, è necessario che una percentuale significativa di tutto l'offerta circolante di token KSM voti a favore del referendum. La partecipazione tipica degli elettori su Kusama è relativamente bassa, il che significa che potrebbero essere necessarie diverse settimane affinché un referendum sulla traccia Lease Admin raggiunga una soglia in cui è realisticamente possibile far passare il referendum al periodo di conferma.
+
+Mentre speriamo ancora che la comunità regoli i parametri di OpenGov, fortunatamente c'è un modo per cui la parachain può utilizzare XCM per eseguire il piano in 6 fasi senza dover utilizzare il nuovo sistema OpenGov della relay chain.
+
+Possiamo registrare un nuovo paraID utilizzando l'estrinseco del registrar(Reserve) e caricare un runtime shell su quel paraID utilizzando l'estrinseco del registrar(Register). Questa parachain dovrebbe avviare solo messaggi XCM per scambi di leasing. Inviamo quindi un messaggio XCM contenente una richiesta di scambio di leasing dalla parachain principale alla parachain shell. Quando la parachain shell vince un'asta e il leasing diventa attivo, viene avviato un ambiente minimo che è in grado di inviare un messaggio XCM per scambiare lo slot di leasing con la parachain principale.
+
+## Nuovi parametri per la campagna di prestito collettivo
+
+Come [già menzionato in precedenza](https://robonomics.network/blog/robonomics-crowdloan-campaigns-november-2022/), vogliamo automatizzare le nostre campagne di prestito collettivo basandoci sulle statistiche sul costo del leasing dello slot e sul tasso di scommessa ideale. Diamo un'occhiata ai parametri attuali per l'algoritmo di rinnovo.
+
+<TextCard alignContent="center">
+
+**1. Statistiche del prezzo mediano del leasing da agosto a novembre 2022 (informazioni tratte da [parachains.info](http://parachains.info/)):**
+
+</TextCard>
+
+<div class="big-table">
+
+|  | Asta 62 | Asta 61 | Asta 60 | Asta 59 | Asta 58 | Asta 57 | Asta 56 | Asta 55 | Asta 54 | Asta 53 | Asta 52 | Asta 51 | Asta 50 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Vincitore | Parathread 2236 | Parathread 2233 | Zeitgeist | Crab Network | — | Crust Shadow | Genshiro | DAO IPCI | Parathread 2223 | Quarzo | Bit.Country | Neve | Subsocial |
+| Ultima offerta (KSM) | 1 005 | 241 | 500 | 11 | 0 | 1 807 | 2 000 | 111 | 1 001 | 1 005 | 3 500 | 13 926 | 1 001 |
+| Contributi | autofinanziato | autofinanziato | autofinanziato | autofinanziato | — | 209 | 160 | autofinanziato | autofinanziato | autofinanziato | autofinanziato | 782 | autofinanziato |
+| Numero di partecipanti | 1 | 3 | 2 | 1 | 0 | 1 | 2 | 2 | 2 | 2 | 2 | 1 | 1 |
+
+</div>
+
+<TextCard className="withImg" alignContent="center">
+
+**2. L'offerta mediana è:**
+
+![beta pedice med uguale a 1001KSM](/blog/images/crowdloan-campaign-december-2022/formula-1.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**3. Introduciamo inoltre una correzione se le campagne di crowdloan precedenti non sono state riuscite. L'offerta mediana corretta per i tentativi precedenti di crowdloan è:**
+
+![beta pedice 'adjmed' uguale a 1001 moltiplicato per 2 uguale a 2002 KSM](/blog/images/crowdloan-campaign-december-2022/formula-2.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**4. Il tasso di staking ideale è:**
+
+![x pedice ideale uguale a 45.0 percento](/blog/images/crowdloan-campaign-december-2022/formula-3.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**5. Il tasso di staking reale è:**
+
+![x pedice 'reale' uguale a 49.3% maggiore di percento x pedice 'ideale'](/blog/images/crowdloan-campaign-december-2022/formula-4.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**6. Il tasso di interesse ideale è:**
+
+![i pedice 'ideale' uguale a I pedice 'NPoS' diviso per x pedice 'ideale' uguale a 0,1 diviso per 0,45 moltiplicato per 100 percento uguale a 22,22 percento](/blog/images/crowdloan-campaign-december-2022/formula-5.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**7. La ricompensa per la partecipazione alla campagna di prestito collettivo (XRT per 1 KSM):**
+
+![R pedice 'perKSM' uguale a (1 moltiplicato per $KSM moltiplicato per i pedice 'ideale') diviso per $XRT uguale a (1 moltiplicato per 24,65$ moltiplicato per 0,22) diviso per 2,30$ uguale a 2,38 XRT per KSM](/blog/images/crowdloan-campaign-december-2022/formula-6.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**8. Pagamenti totali ai partecipanti al prestito collettivo:**
+
+![R pedice 'totale' uguale a B pedice 'adjmed' moltiplicato per R pedice 'perKSM' uguale a 4768,05 XRT](/blog/images/crowdloan-campaign-december-2022/formula-7.svg)
+
+</TextCard>
+
+Questa è la storia. E, come sempre, ₑₓₚₑcₜ cₕₐₒₛ.

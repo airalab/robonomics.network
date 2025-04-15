@@ -1,0 +1,85 @@
+---
+// components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/cases/CaseHeader.astro";
+import Footer from "../../components/cases/CaseFooter.astro";
+import CaseText from "../../components/cases/CaseText.astro";
+---
+
+<Layout
+  casePath={Astro.url}
+>
+
+  <Header
+    path={Astro.url.pathname}
+    introText={$tr("The development of robotics and automated systems during the Fourth Industrial Revolution will require robots to have the capability to order services for their own maintenance.")}
+    introImg="digital-markets-for-robots.webp"
+  />
+
+  <section class="case-page layout">
+
+    <CaseText
+      multiple
+    >
+      <p>{$tr('Historically, similar technological transitions have occurred. For example, the shift of calculations related to production, logistics, and consumption from people to machines. If all financial operations had to be carried out manually today, the entire global population would be insufficient to handle the complexity of these calculations.')}</p>
+      <p>{$tr('We aim to offer hundreds of automated services to assist people with their daily routines. However, there are not enough workers to maintain all vending machines, car-sharing operations, drone deliveries, 3D printers, and other automated services. The solution lies in empowering robots to independently order water or coffee, self-charge, request maintenance at base stations, and call engineers directly without human call center involvement.')}</p>
+      <p>{$tr('This need will become increasingly apparent over the next decade, driving the creation of digital markets for robots. The question will focus only on the most efficient and scalable technologies needed to meet smart city standards.')}</p>
+
+      <div class="cases__image">
+        <img src="/images/cases/digital-markets/digital-markets-1.webp" alt="" aria-hidden="true" />
+      </div>
+    </CaseText>
+
+    <CaseText
+      title={$tr(`Robonomics' Approach`)}
+      text={$tr('Robonomics provides an alternative to centralized corporate-controlled cloud services. Instead of relying on such systems, it leverages public blockchain networks, such as Ethereum and Polkadot, to facilitate secure and autonomous transactions between robots and service providers.')}
+    />
+
+    <CaseText
+      title={$tr('How Digital Markets for Robots Work')}
+      multiple
+    >
+      <ul>
+        <li><b>{$tr('Autonomous Service Ordering:')}</b> {$tr('Robots can order maintenance, charging, and other operational services independently.')}</li>
+        <li><b>{$tr('Decentralized Transactions:')}</b> {$tr('Service orders and payments are managed on a blockchain network.')}</li>
+        <li><b>{$tr('Transparency and Security:')}</b> {$tr('All transactions are recorded immutably on the blockchain.')}</li>
+      </ul>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Key Benefits')}
+      multiple
+    >
+      <ul>
+        <li><b>{$tr('Scalability:')}</b> {$tr('Robots manage their own service needs without human involvement.')}</li>
+        <li><b>{$tr('Efficiency:')}</b> {$tr('Automated systems experience reduced downtime with proactive self-maintenance.')}</li>
+        <li><b>{$tr('Decentralization:')}</b> {$tr('Removes reliance on centralized infrastructure, ensuring greater autonomy.')}</li>
+      </ul>
+      <div class="case__images-wrapper">
+        <img quality="75" src="/images/cases/digital-markets/digital-markets-3.webp" alt="" aria-hidden="true" />
+        <img src="/images/cases/digital-markets/digital-markets-4.webp" alt="" aria-hidden="true" />
+      </div>
+    </CaseText>
+
+  </section>
+
+  <Footer 
+    text={`<p class=italic-abstract>${$tr("Digital markets for robots represent a critical step toward supporting the next wave of automation and smart city infrastructure. Robonomics' decentralized approach ensures secure, scalable, and autonomous service management for robots.")}</p>`}
+    title={$tr('Conclusion')}
+  />
+
+</Layout>
+
+<style>
+  .case__images-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    justify-items: center;
+  }
+  
+
+  .case__images-wrapper img, .cases__image img {
+    max-width: 250px;
+    width: 100%;
+  }
+</style>

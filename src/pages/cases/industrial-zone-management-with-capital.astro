@@ -1,0 +1,82 @@
+---
+// components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/cases/CaseHeader.astro";
+import Footer from "../../components/cases/CaseFooter.astro";
+import CaseText from "../../components/cases/CaseText.astro";
+---
+
+<Layout
+  casePath={Astro.url}
+>
+
+  <Header
+    path={Astro.url.pathname}
+    introText={$tr("This case explores the role of smart factories in responding to capital shifts in modern markets. As part of the Industry 4.0 transformation, it introduces a decentralized communication protocol using cyber-physical systems to improve economic coordination among industrial agents.")}
+    introImg="industrial-zone-management.webp"
+  />
+
+  <section class="case-page layout">
+
+    <CaseText
+      title={$tr('Why Smart Factories Should Respond to Capital Changes')}
+      multiple
+    >
+      <p>{$tr('Investors often engage in arbitrage investing, shifting capital between markets with supply shortages and oversupply. This behavior effectively influences market supply levels, guiding producers to adjust their production strategies to align better with market demands.')}</p>
+      <p>{$tr('By following these capital flows, smart factories can reduce inefficiencies in production allocation and minimize mismatches between production output and consumption needs. As a result, investors act as "oracles" of the global economy, signaling market conditions for automated production adjustments.')}</p>
+    </CaseText>
+
+    <CaseText
+      title={$tr('A Decentralized Protocol for Economic Coordination')}
+      multiple
+    >
+      <p>{$tr('Robonomics introduces a blockchain-based communication protocol designed for modern and future industrial processes. The protocol focuses on enabling:')}</p>
+      <ul>
+        <li><b>{$tr('Cyber-Physical Systems:')}</b> {$tr('Designed for Industry 4.0 standards, integrating physical production systems with digital intelligence.')}</li>
+        <li><b>{$tr('Peer-to-Peer Coordination:')}</b> {$tr('A decentralized P2P network ensuring secure data exchange between industrial agents.')}</li>
+        <li><b>{$tr('Blockchain Technology:')}</b> {$tr('Using Ethereum smart contracts, with future support for Polkadot, to manage economic agreements securely.')}</li>
+      </ul>
+      <p>{$tr('This protocol offers a universal software framework implemented on the Robot Operating System (ROS), making it adaptable for various industrial agents.')}</p>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Balancing Production and Capital')}
+      multiple
+    >
+      <p>{$tr('Beyond supply shortages or market saturation, transaction costs also play a key role in production adjustments. Key insights include:')}</p>
+      <ul>
+        <li><b>{$tr('Transaction Costs Impact:')}</b> {$tr('Higher transaction costs often increase investor interest in a market, as they may reflect higher potential revenue generation.')}</li>
+        <li><b>{$tr('Capital Efficiency:')}</b> {$tr('Aligning production strategies with capital flows can optimize resource distribution and reduce inefficiencies.')}</li>
+      </ul>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Technical Foundation')}
+      multiple
+    >
+      <ul>
+        <li><b>{$tr('Blockchain Integration:')}</b> {$tr('Economic coordination through Ethereum smart contracts, with plans to extend to Polkadot.')}</li>
+        <li><b>{$tr('ROS Implementation:')}</b> {$tr('Real-time decision-making and automated adjustments using ROS-based software.')}</li>
+      </ul>
+      <p> {$tr('For a detailed technical reference, visit the')} <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" aria-label="check out the article here" target="_blank">{$tr('IEEE article on blockchain protocols for Industry 4.0')}</a>.</p>
+    </CaseText>
+
+    <CaseText
+      title={$tr('Key Benefits')}
+      multiple
+    >
+      <ul>
+        <li><b>{$tr('Adaptive Production:')}</b> {$tr('Factories can self-adjust production rates based on market conditions.')}</li>
+        <li><b>{$tr('Decentralized Coordination:')}</b> {$tr('Reduces reliance on centralized market controls.')}</li>
+        <li><b>{$tr('Industry 4.0 Ready:')}</b> {$tr('Designed for modern automated industrial processes.')}</li>
+      </ul>
+    </CaseText>
+
+  </section>
+
+  <Footer 
+    text={`<p class=italic-abstract>${$tr(`This R&D case presents how capital flows can act as economic signals for smart factories. By adopting Robonomics' decentralized protocol, industries can better manage production efficiency and stay aligned with the evolving standards of Industry 4.0.`)}</p>`}
+    title={$tr('Conclusion')}
+  />
+
+</Layout>

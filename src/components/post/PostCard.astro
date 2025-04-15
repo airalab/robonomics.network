@@ -1,0 +1,19 @@
+---
+const {post, locale, isCase, cls} = Astro.props;
+// console.log(post)
+---
+
+<div class:list={[`post-card oldy ${cls}`]}>
+    <div class="post-card__header">
+      {post.cover_image && 
+         <img alt={post.title} class="post-card__image" src={post.cover_image} />
+      }
+    </div>
+
+  <div class="post-card__content">
+
+    <h4 class="post-card__title" set:html={post.title} /> 
+    <p class="post-card__description" set:html={post.description} />
+  </div>
+  <a class="link-cover" aria-label="check out link" href={ '/blog/' + post.url + '/'}>Link</a>
+</div>

@@ -1,0 +1,84 @@
+---
+title: "Robossembler Entwicklungsbericht #1"
+date: 2024-12-08
+published: true
+locale: 'de'
+cover_image: /blog/images/robossembler-dev-report-december-2024/Cover.webp
+description: "Das Robossembler-Projekt konzentriert sich auf die Entwicklung von Industrierobotern und Werkzeugen für deren Produktion, die für jeden DIY-Enthusiasten zugänglich sind. In diesem Artikel werden wir unseren aktuellen Fortschritt teilen - ein aktualisiertes und getestetes Getriebe, die 5. Version der Wickelmaschine und ein Roboter-Manipulator mit zusätzlichen Optimierungen für den 3D-Druck!"
+abstract: "Das Robossembler-Projekt konzentriert sich auf die Entwicklung von Industrierobotern und Werkzeugen für deren Produktion, die für jeden DIY-Enthusiasten zugänglich sind. In diesem Artikel werden wir unseren aktuellen Fortschritt teilen - ein aktualisiertes und getestetes Getriebe, die 5. Version der Wickelmaschine und ein Roboter-Manipulator mit zusätzlichen Optimierungen für den 3D-Druck!"
+tags: ['Robossembler']
+---
+
+
+## Servo
+
+Ein Motor allein hat in der realen Welt typischerweise nicht genügend Drehmoment, um schwere Objekte zu bewegen oder anzuheben, weshalb er ein Getriebe oder eine Übertragung benötigt. Ein Getriebe wandelt das Drehmoment des Motors in eine nutzbare Ausgangskraft um. Dies erwies sich insbesondere in unserem Fall als wichtig - unser gedruckter Stator mit DIN-Schrauben als magnetische Kerne war im Test 3-4 Mal schwächer als Gegenstücke, die aus massivem Metallstator aus elektrischem Stahl hergestellt wurden.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/stator-photo_2024-12-08_00-03-21.webp" alt="" />
+
+Aufgrund dieses relativ geringen Kraftaufwands benötigten wir ein Getriebe mit einem hohen Übersetzungsverhältnis, das wie alles andere in Robossembler einfach zu montieren und für den 3D-Druck geeignet sein würde. Wir haben zahlreiche Getriebe-Designs erkundet, darunter auch einige exotische, aber keines erfüllte unsere Kriterien. Unser letzter Versuch - ein Strain-Wave-Getriebe mit Zwischenwalzelementen - schnitt gut ab, erwies sich jedoch als zu komplex in der Herstellung.
+
+Nach umfangreichen Experimenten haben wir schließlich das perfekte Design entdeckt: ein präzessionsgetriebenes Getriebe mit einem Übersetzungsverhältnis von 1:43!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-07_21-54-20.webp" alt="" />
+
+Schauen Sie, wie einfach es zu montieren ist:
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0vXwFmTB_L4?si=soNbSNKg9tjPWY1f" title="YouTube-Video-Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Das Getriebe hat seine wichtigsten Tests und Versuche abgeschlossen. Hier ist etwas Beeindruckendes - der Servoantrieb mit Getriebe wiegt nur 273 g, was dem Gewicht eines standardisiertenMetallmotor ohne Getriebe oder Steuerung!
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/reducer-photo_2024-12-08_14-02-33.webp" alt="" />
+
+## Stator-Wickelmaschine
+
+Während Version 4 unserer Wickelmaschine erfolgreich die ersten Statorwicklungen halbautomatisch durchführte, musste sie in Bezug auf Stabilität und Wiederholgenauigkeit verbessert werden. Version 5 bringt zahlreiche Verbesserungen mit sich, und hier sind die wichtigsten.
+
+Wir haben das proprietäre Creality-Schrittmotor-Steuergerät aus Version 4 durch ein RAMPS ersetzt - ein bewährtes Steuergerät des legendären RepRap-Druckers.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-50-12.webp" alt="" />
+
+- Wir haben die Maschinenteile leichter und besser gemacht - sie verwenden jetzt 25 % weniger Kunststoffmaterial und können einfacher ohne zusätzliche Stützstrukturen 3D-gedruckt werden
+- Das Drahtzuführungssystem ist jetzt stabiler mit einer zusätzlichen Spulenbremse und einer tieferen Drahtnut am Rad
+- Wir haben das Displaygehäuse und die Rückabdeckung neu gestaltet, um einen besseren Schutz zu gewährleisten
+- Die Projektunterlagen sind nun vollständig mit detaillierten Befestigungsspezifikationen, Druckzeiten und Kunststoffverbrauchsdaten.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-07_21-51-26.webp"alt="" />
+
+Wir haben einen Nadelkalibrator zum Maschinendesign hinzugefügt, um die Einrichtung der Ausrüstung zu vereinfachen.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/winder-photo_2024-12-04_11-41-56.webp" alt="" />
+
+Version 5 befindet sich derzeit in der Testphase, zusammen mit unserem neuen Wickel-GCode-Programmgenerator. Anstelle des vorher fest codierten Programms für spezifische Motoranpassungen ermöglicht unser neuer GCode-Generator eine schnelle Anpassung an verschiedene Stator-Designs.
+
+## Roboter-Manipulator
+
+Da wir uns der Produktionsbereitschaft des Motors und des Getriebes nähern, verfeinern wir das Design des Manipulators. Obwohl wir dachten, dass es gut für den 3D-Druck optimiert war, haben unsere neuen Teammitglieder - ein 3D-Technologe mit 10 Jahren Erfahrung - mehrere Verbesserungsbereiche identifiziert. Wir haben uns darauf konzentriert, den Druck von Teilen auch auf kostengünstigen Druckern vorhersehbar zu machen, einschließlich der Neugestaltung der Hauptkörperverbindungen, um mit minimalen Stützen gedruckt zu werden.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/3d-supports.webp" alt="" />
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/roboarm-3d-optimize-photo_2024-11-20_15-56-53.webp" alt="" />
+
+Auf Wunsch unseres Motion-Control-Programmierers haben wir die Gabel - das Bauteil, das die Antriebsverbindungen des Manipulators in eine einzige kinematische Kette verbindet - umgestaltet.Das vorherige Design bot einen größeren Arbeitsradius, führte jedoch zu häufigen einzelnen Positionen während der Trajektorieberechnungen, was die Simulationsteuerung komplizierte. Unser neues Gabeldesign beseitigt dieses Problem und macht die Kinematik des Roboters optimaler und ähnlicher dem Kuka Iiwa ;D.
+
+<RbImage zoom src="/blog/images/robossembler-dev-report-december-2024/fork-roboarm-photo_2024-12-07_11-39-31.webp" alt="" />
+
+Für die Steuerungssoftware entwickeln wir eine Lösung unter Verwendung von ROS 2 Humble (Test Jazzy) und Behaviour Tree CPP v4, die derzeit auf AR4 validiert wird. Eine wichtige Innovation ist unser umfangreicher Einsatz von Lebenszyklus-Managementknoten für Laufzeitparameteränderungen - wie Controllerkonfigurationen oder das Laden neuer Gewichte für neuronale Netzwerke für die maschinelle Bildverarbeitung während des Betriebs.
+
+## Pläne
+
+Unsere bevorstehenden Ziele:
+
+- Veröffentlichung eines aufgerüsteten Greifgeräts mit neuem Motor, Getriebe und austauschbaren Fingern
+- Test des GCode-Generators der Wickelmaschine und vollautomatisches Statorwickeln
+- Abschluss der 3D-Optimierung des Roboters und Erstellung eines Montage-Demonstrationsvideos
+- Optimierung des Temperaturmanagements des Servoantriebs und Test unter Last innerhalb eines Glieds
+
+Verfolgen Sie Updates auf meinem Blog unter [x.com](https://x.com/movefasta) !
+
+## Software- & Hardware-Quellen
+
+- Robossembler Arm - https://gitlab.com/robossembler/roboarm-diy-version
+- Wickelmaschine: https://gitlab.com/robossembler/cnc/motor-wire-winder- Servo - https://gitlab.com/robossembler/servo
+- Greifwerkzeug - https://gitlab.com/robossembler/arm-tools/grip-tool
+- Robossembler ROS 2 Laufzeitumgebung - https://gitlab.com/robossembler/robossembler-ros2

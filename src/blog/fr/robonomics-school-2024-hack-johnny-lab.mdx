@@ -1,0 +1,86 @@
+---
+title: "Robonomics School 2024: Règles du jeu pour le laboratoire de piratage de Johnny"
+date: 2024-06-05
+published: true
+locale: 'fr'
+cover_image: /blog/images/robonomics-school-2024-hack-johnny-lab/cover.jpeg
+description: "Dans les prochains jours, nous lancerons une quête pratique de l'École Robonomics 2024, au cours de laquelle vous pourrez vous sentir comme un véritable violeur de la vie privée et même 'voler' des jetons. Intéressé ? Découvrez les règles du jeu 'Hack Johnny's Lab' !"
+abstract: "Dans les prochains jours, nous lancerons une quête pratique de l'École Robonomics 2024, au cours de laquelle vous pourrez vous sentir comme un véritable violeur de la vie privée et même 'voler' des jetons. Intéressé ? Découvrez les règles du jeu Hack Johnny's Lab !"
+tags: ['Annonces', 'Événements', 'École en ligne']
+---
+
+
+## Motivation pour le jeu
+
+Ce jeu s'inspire fortement des idées d'évasion de Black Mirror, dont Sergei a parlé dans ses articles ([premier](https://robonomics.academy/en/learn/escape-from-black-mirror/overview/) et [deuxième](https://robonomics.academy/en/learn/school-2024-iot-vs-ai/overview/)) à l'Académie Robonomics.
+
+Imaginez, un simple aspirateur robot bon marché a la capacité sérieuse d'espionner la vie de ses propriétaires. Peu importe si une personne malveillante accède à ces données ; l'analyse par IA des enregistrements vidéo suffit pour tirer des conclusions sur des aspects non publics de la vie d'une personne. Tous les secrets sales, les schémas de comportement imperceptibles et les informations privées — tout va dans le fourneau du profil. Pensez-y pendant que vous essayez de saisir quelques jetons gratuits.
+
+## Objectif du jeu
+
+Dans le jeu, les joueurs doivent restaurer la phrase de récupération à partir des données du robot mobile. Le robot se déplace de manière aléatoire dans le laboratoire, en enregistrant des vidéos. De temps en temps, le robot publie l'un des 12 mots de la phrase de récupération. Lors d'un des arrêts du robot, les joueurs peuvent voir sur la vidéo un panneau avec un numéro, qui donne un indice sur l'ordre de ce mot dans la phrase de récupération. La tâche est d'associer les numéros sur les panneaux avec l'ensemble de mots reçus aux arrêts du robot, pour restaurer la phrase de récupération correcte.
+
+Le joueur qui restaure en premier la phrase de récupération et retire tous les jetons XRT de son adresse gagne.
+
+## Règles du jeu
+
+*Enregistrement des joueurs*
+
+- Pour participer, les joueurs doivent créer un nouveau compte sur la parachain Robonomics, et il doit être créé avec le type de cryptage Edwards (ed25519). Les instructions sont disponibles sur [notre wiki](https://wiki.robonomics.network/docs/create-account-in-dapp/).
+- Ensuite, les joueurs doivent se rendre sur le [bot Discord](https://discordapp.com/channels/803947358492557312/1245395009964871772) sur le serveur Robonomics et attendre un message sur le début d'une nouvelle session.
+- Au début de la session, les joueurs envoient les adresses des comptes créés au format **parachain Robonomics** au bot Discord. Les joueurs auront 60 minutes pour entrer.
+
+*Exploration du laboratoire*
+
+- Une fois l'enregistrement terminé, le robot mobile part explorer le laboratoire. Ensuite, le robot enverra un enregistrement vidéo et une liste des mots de la phrase de récupération (pas dans le bon ordre).
+- Les joueurs attendent un message du bot Discord sur la réception des résultats du robot et se rendent à l'application [via un lien](https://robonomics.academy/en/demoapps/johnnyb-lab/) pour commencer à restaurer la phrase de récupération.
+
+*Restauration de la phrase de récupération*
+
+- Pour accéder aux données, les joueurs doivent utiliser le compte Robonomics enregistré.
+- Les joueurs auront accès à l'enregistrement vidéo et à l'ensemble des mots de la phrase de récupération. La tâche du joueur est de trouver l'ordre correct des mots en se basant sur les numéros sur les panneaux situés dans le laboratoire.
+
+<TextCard alignContent="left">
+
+**Exemple.** Si l'ensemble de mots est : 
+
+`trouver -> église -> relation -> chien -> échantillon`
+
+Et le parcours du robot, reconstruit à partir de la vidéo : 
+
+`Panneau n°5 -> Panneau n°3 -> Panneau n°1 -> Panneau n°2 -> Panneau n°4`
+
+Alors :
+
+`trouver — Panneau n°5 -> trouver est le 5ème mot`
+
+`église — Panneau n°3 -> église est le 3ème mot`
+
+`relation — Panneau n°1 -> relation est le 1er mot`
+
+`chien — Panneau n°2 -> chien est le 2ème mot`
+
+`échantillon — Panneau n°4 -> échantillon est le 4ème mot`
+
+En résultat, la phrase de récupération correcte est : `relation chien église échantillon trouver`
+
+</TextCard>
+
+
+- Après avoir trouvé la phrase de récupération, les joueurs peuvent restaurer l'accès au compte avec les jetons en utilisant n'importe quelle application.
+- Par exemple, dans l'extension Polkadot.js, cela peut être fait en utilisant la fonction *Importer un compte à partir d'une phrase de récupération préexistante*.
+- Tous les comptes restaurés avec des XRT ont le type de cryptage **Schnorrkel (sr25519)**, pris en charge dans la plupart des portefeuilles Polkadot / Kusama.
+
+*Annonce du gagnant*
+
+- Une fois qu'un joueur a accédé au compte, il doit retirer des XRT pour devenir le gagnant de la session, jusqu'à ce que quelqu'un d'autre le fasse.
+- Par exemple, en utilisant l'extension Polkadot.js, cela peut être fait sur [notre portail Polkadot / Substrate](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/accounts) sur la page du compte. Il suffit d'appuyer sur le bouton Envoyer et de retirer les jetons à l'endroit souhaité. Vous pouvez cocher *Transférer le solde total du compte, récolter l'expéditeur* pour effectuer un retrait du solde total.
+- À la fin de la session, une fois les jetons retirés, le bot notifiera le canal Discord en publiant l'adresse du gagnant.
+
+## Conditions de l'événement
+
+L'événement durera 9 jours, pendant lesquels le matin et le soir (18 fois au total), vous aurez l'opportunité d'être le premier à atteindre **42 XRT** lors de chaque session.
+
+L'inscription pour la session commence à **10h00 et 20h00 EEST** chaque jour et dure 60 minutes.
+
+Suivez nos réseaux sociaux pour ne pas manquer le début de l'événement !

@@ -1,0 +1,195 @@
+---
+// Importing data
+import { meta } from '../data/meta';
+
+// Translations
+import { languageTag } from '../paraglide/runtime';
+import "../assets/scripts/utils/translate.js";
+
+// Components
+import Header from '../components/header/Header.astro';
+import Footer from '../components/Footer.astro';
+
+// Extract site metadata
+const { siteName, siteDescription, siteUrl } = meta;
+const { 
+  title, 
+  description, 
+  ogImage, 
+  pageImageWidth = '1280', 
+  pageImageHeight = '765', 
+  translated = false, 
+  pageTitle, 
+  backlink, 
+  casePath 
+} = Astro.props;
+
+
+// Get case data if casePath exists
+import items from '../data/cases.js';
+const caseData = casePath ? items.cases.filter(c => casePath.pathname.includes(c.path)) : [];
+
+// Default meta values
+const pageTitleFinal = caseData.length ? await $tr(caseData[0]?.title) : await title || `${siteName} / Robonomics Network`;
+const pageDescriptionFinal = caseData.length ? await $tr(caseData[0]?.description) : await description || siteDescription;
+const pageImageFinal = caseData.length ? caseData[0]?.metaImg : ogImage || `${siteUrl}/website_cover.webp`;
+
+// Import styles
+import '../assets/styles/main.css';
+
+const isHome = Astro.url.pathname === '/';
+
+---
+
+<!doctype html>
+<html lang={languageTag()} amp dir={languageTag() === 'ar' ? 'rtl' : 'ltr'}>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+	<meta name="generator" content={Astro.generator} />
+
+	<title>{pageTitleFinal}</title>
+	<meta name="description" content={pageDescriptionFinal}>
+
+  <link rel="preload" as="font" href="/fonts/RobotoFlex-CustomSubset.woff2" type="font/woff2" crossorigin />
+
+	<!-- Open Graph Metadata -->
+	<meta property="og:title" content={pageTitleFinal}>
+	<meta property="og:description" content={$trVue(pageDescriptionFinal)}>
+	<meta property="og:type" content="website">
+	<meta property="og:url" content={Astro.url || siteUrl}>
+	<meta property="og:image" content={pageImageFinal}>
+	<meta property="og:image:width" content={pageImageWidth}>
+	<meta property="og:image:height" content={pageImageHeight}>
+	<meta property="og:site_name" content={siteName}>
+	
+	<!-- Twitter Metadata -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content={Astro.url.pathname || siteUrl}>
+	<meta name="twitter:title" content={pageTitleFinal}>
+	<meta name="twitter:description" content={pageDescriptionFinal}>
+	<meta name="twitter:image" content={pageImageFinal}>
+	<meta name="twitter:site" content="@AIRA_Robonomics">
+	<meta name="twitter:creator" content="@AIRA_Robonomics">
+
+  {isHome && (
+    // Preload important graphics
+    <>
+      <link rel="preload" as="fetch" href="/images/home/home-banner.svg" type="image/svg+xml" fetchpriority="high" />
+      <link rel="preload" as="image" href="/images/home/robonomics-pattern.webp" type="image/webp" />
+    </>
+  )}
+</head>
+	<body transition:animate="fade">
+      <main class="main screen">
+        <Header translated={translated}/>
+
+        {pageTitle && <h1 set:html={pageTitle} class="pagetitle" />}
+        {backlink && <a class="backlink" href={backlink.link} aria-label={backlink.label}>&larr; {backlink.title}</a>}
+
+         <slot />
+         <Footer translated={translated}/>
+      </main>
+	</body>
+</html>
+
+<script>;
+</script>
+
+
+<style>
+
+  .hide {
+    display: none;
+  }
+
+  .pagetitle {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    display: inline-block;
+    font-size: calc(var(--base-font-size) * 1.1);
+    font-variation-settings: var(--font-flex-bold);
+    margin: 0 0 calc(var(--space) * 2);
+    padding: 0.4rem var(--layout-sidepadding);
+  }
+
+  .backlink {
+    color: var(--text-color);
+    display: block;
+    font-size: 0.8rem;
+    font-variation-settings: var(--font-flex-bold);
+    margin-left: var(--layout-sidepadding);
+    margin-top: calc(var(--space) * -2);
+    padding: 0.3rem 0;
+    text-transform: uppercase;
+  }
+
+  html[dir="rtl"]  .backlink  {
+    margin-left: 0;
+    margin-right: var(--layout-sidepadding);
+  }
+
+  .backlink:hover {
+    color: var(--color-link);
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.33s cubic-bezier(0,.44,.38,.99);
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  .sidetext {
+    font-size: calc(var(--base-font-size) * 0.6);
+    text-transform: uppercase;
+  }
+
+  .sidetext a:not(.button) {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .sidetext-left {
+    position:  fixed;
+    left: calc(var(--screen-padding-left) * 0.3);
+    bottom: 0;
+
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    z-index: 900;
+  }
+
+  .sidetext-left.active--exact, .sidetext-left a.active--exact { opacity: .5; }
+
+
+.screen {
+	position: relative;
+  background-color: var(--color-light);
+  padding-top: var(--screen-padding-top);
+  padding-bottom: var(--screen-padding-bottom);
+  height: 100vh;
+  scrollbar-width: none;
+}
+
+.screen::-webkit-scrollbar { display: none; }
+
+.screen-content {
+  position: relative;
+  background-color: var(--color-light);
+}
+
+@media screen and (max-width: 680px) {
+  .footer-form.layout__content {
+    padding-left: 0;
+  }
+}
+
+</style>
+
+<script src="../assets/scripts/utils/scroll-in-view-animation.js"></script>

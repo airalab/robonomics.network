@@ -1,0 +1,103 @@
+---
+title: Robonomics Frontier
+date: 2021-07-23
+published: true
+locale: 'pt'
+cover_image: /blog/images/Robonomics-Frontier/Robonomics-Frontier_cover_2_blog.jpg
+description: "Como resultado dos crowdloans de verão da Kusama, a Robonomics alcançou o Top-10 dos projetos do ecossistema Polkadot. Antes da próxima onda de leilões, os desenvolvedores do projeto decidiram implantar e manter uma rede funcionalmente idêntica."
+abstract: "Como resultado dos crowdloans de verão da Kusama, a Robonomics alcançou o Top-10 dos projetos do ecossistema Polkadot. Antes da próxima onda de leilões, os desenvolvedores do projeto decidiram implantar e manter uma rede funcionalmente idêntica — a Frontier Relay chain, que será integrada à parachain da Robonomics."
+tags: ['parachain Robonomics', 'token XRT', 'Staking', 'Roadmap']
+---
+
+## Não é um primo selvagem da Kusama
+
+A cadeia de retransmissão da Kusama está em desenvolvimento e passa por todas as atualizações usando versões estáveis dos lançamentos do Polkadot. Por exemplo, a versão atual da Kusama foi construída no lançamento [polkadot v0.9.8](https://github.com/paritytech/polkadot/releases/tag/v0.9.8).
+
+![Cadeia de Retransmissão da Kusama e lançamento do Polkadot 0.9.8](/blog/images/Robonomics-Frontier/Kusama-Relay-Chain-and-Polkadot-release-0-9-8.jpg)
+
+A Frontier Relay chain usará as mesmas versões dos lançamentos do Polkadot, que serão implementadas pela rede Kusama na forma de sua cadeia de retransmissão.
+
+Para se conectar à Frontier Relay chain, você pode usar o portal Substrate seguindo este link: https://parachain.robonomics.network/
+
+Após conectar a parachain da Robonomics à Frontier Relay chain, podemos ter uma blockchain que poderia funcionar em tempo real e seria integrada à rede Kusama. Isso significa que precisamos superar quaisquer desafios que as parachains da Kusama terão. Todas as novas capacidades que surgirão com os novos lançamentos do Polkadot também serão suportadas pela parachain da Robonomics.
+
+## XCMP e integração com as parachains da Kusama
+
+Talvez a única desvantagem hoje (em 2021), quando estamos falando sobre o ciclo de vida em uma rede Frontier e nãosobre a rede principal Kusama, há uma falta de integração via [XCMP](https://wiki.polkadot.network/docs/learn-crosschain#overview-of-xcmp).
+
+Mas isso não significa que você não pode executar tarefas de integração técnica e preparar uma parachain Robonomics para trabalhar com Karura, Moonriver e Khala. São essas três parachains que interessam à equipe Robonomics em termos de integração. Podemos começar a manter o trabalho em uma rede Frontier com cópias dos projetos mencionados, mas somente após o lançamento da documentação pública e dos primeiros exemplos de uso do Kusama (como criar um par de negociação no Karura, conectar funções da parachain com contratos inteligentes solidity/ink no Moonriver, ou fornecer privacidade de dados com o Khala).
+
+Pessoalmente, espero que o processo de integração de parachains seja executado com muito cuidado no primeiro ano, e talvez outros projetos também trabalhem juntos em ambientes de teste e, em seguida, transfiram mecanismos de integração para a rede Kusama. Assim, a Robonomics poderia estar na rede Kusama até o momento da integração ativa entre os projetos.
+
+## Bloco Genesis da parachain Robonomics na rede Frontier
+
+No bloco genesis serão apresentados saldos XRT dos participantes do êxodo, contribuintes do empréstimo coletivo e coletores da rede de testes aberta. Este bloco será formado apenas alguns dias antes do lançamento da parachain na rede Frontier. Vamos anunciar esta atualização em nosso [Twitter](https://twitter.com/AIRA_Robonomics) e [Telegram](https://t.me/Robonomics_ann).
+
+Estamos esperando que o bloco genesis seja formado durante o período de 28 a 31 de julho.
+
+Informações importantes para os detentores de XRT na rede Ethereum: Para participar do bloco genesis da parachain e participar do staking, você pode usar o dapp exodus até 28 de julho. Após 28 de julho, a oportunidade de transferir tokens XRT para o Ethereum para o Frontier ainda estará disponível. Mas esse processo será executado pelo comitê técnico da rede e não mais do que uma vez por semana.
+
+Também gostaríamos de observar que o êxodo não permitirá que você retorne até o momento em que a parachain Robonomics estiver conectada à rede Kusama e quando houver uma ponte adequada para o Ethereum. A situação é ~ semelhante ao processo de transferência para o Ethereum 2.0 para os detentores de ETH.
+
+## Staking XRT
+
+O staking XRT emA parachain Robonomics tem como objetivo dividir a capacidade entre duas opções de pagamentos: para transação ou para assinatura. Você pode ler mais sobre isso no artigo ["Visão geral do RWS, parte 2 "Tokenomics heterogêneo"](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855) no Medium.
+
+A base da recompensa para o staking será de ~ 10%. Essa quantia ajuda a lançar a parachain. No futuro, a recompensa será determinada pelo [Democracy pallet](https://substrate.dev/rustdocs/latest/pallet_democracy/) para os detentores de XRT.
+
+Os contribuintes do Crowdloan receberão uma taxa de recompensa aumentada — 50%. Assim, isso nos ajudará a testar o mecanismo: "Parachain, que sempre vence", que proporá uma recompensa adaptativa para o staking Robonomics em relação à recompensa para o staking na cadeia de retransmissão Kusama / Polkadot e considerando o preço XRT para KSM/DOT. Explicaremos mais detalhadamente sobre esse mecanismo e após alguns testes.
+
+O staking estará disponível a partir da atualização 1.1 na rede Frontier. Por favor, note que a transferência de tokens na parachain será desativada no início, semelhante ao lançamento da cadeia de retransmissão Polkadot.
+
+## Roadmap - Vida após o leilão
+
+Independentemente de não termos ganho um slot, o roadmap do desenvolvimento da parachain não mudará. Abaixo, você encontrará nossos planos que foram publicados no artigo: https://robonomics.network/blog/crowdloan-starts-today/.
+
+<TextCard>
+
+### Parte 1: Estabelecendo funcionalidades principais
+
+Em 3 meses após o lançamento da parachain Robonomics, os desenvolvedores da Robonomics pretendem ativar a funcionalidade principal que foi desenvolvida durante 2019-2021, e também complementar a rede com módulos que se provaram nos ecossistemas Polkadot e Kusama.
+
+* **Estado Genesis: (0 semana)** Lançamento do pacote inicial de funções da parachain Robonomics com serviços de gerenciamento de IoT e sistemas de recompensa para collators.
+* **Atualização 1.1** Staking e permitir transferências (3 - 4 semanas). Permitirá que você transfira XRT e faça staking do seu XRT com uma APR de 10% para todos os detentores de tokens e 50% para os participantes do Crowdloan.
+* **Atualização 1.2** Tesouro e Comitê Técnico (4 - 6 semanas). Permitirá transferir uma parcela deOs fundos do DAO do Ethereum para a parachain. O Comitê Técnico pode produzir referendos de emergência. Estes são usados para correções de bugs de emergência ou implementação rápida de novos recursos testados em batalha na runtime.
+* **Atualização 1.3** RWS (7 - 8 semanas). Permitirá o uso de funções de gerenciamento de IoT não apenas com pagamentos de comissão em XRT, mas também com uma assinatura mensal.
+* **Atualização 1.4** Robot-como-serviço (9 - 10 semanas). Permitirá implementar um processo de controle para a prestação de serviços automatizados e usar pagamentos dentro de transações para lançar dispositivos.
+* **Atualização 1.5** Funcionalidade XCMP e Robobank (11 - 12 semanas). A solução é baseada na arquitetura XCMP do Polkadot que permitirá que qualquer parachain tenha acesso ao gerenciamento de dispositivos IoT com pagamento em um token nativo.
+* **Atualização 1.6** Democracia e Remoção do Sudo (13 - 14 semanas). Os desenvolvedores não terão a capacidade de interferir nas operações da rede sem o envolvimento do comitê técnico ou votação dos detentores de tokens nativos da parachain.
+
+</TextCard>
+
+<TextCard>
+
+### Parte 2: Lançamento de serviços baseados em P&D da Robonomics
+
+A 2ª parte do crescimento da parachain da Robonomics no Kusama designada para o lançamento de serviços baseados em projetos anteriores de P&D da equipe da Robonomics.
+
+* **Passaportes digitais globalmente disponíveis de produtos** Ao complementar o status de gêmeos digitais com informações sobre os produtos produzidos, os clientes poderão emitir passaportes digitais protegidos contra alterações e perda de informações no futuro. Este caso de uso já está implementado como piloto na empresa que produz drones. A solução é usada para controle de qualidade durante o empacotamento com gravação de vídeo.
+* **Locação inteligente de IoT & Robótica** Demonstraremos a capacidade de usar a parachain da Robonomics para alugar um dispositivo IoT/Robótica. Usando o exemplo de 2 robôs controlados pela parachain da Robonomics em 2 indústrias diferentes. O primeiro caso de uso - um programa educacional baseado no SDK da Boston Dynamics, durante o qual os desenvolvedores aprenderão a controlar o famoso robô cão - Spot. O segundo - um manipulador industrial vendido sob um contrato de locação nos Estados Unidos. Ambos os robôs fornecerão aos clientes relatórios gerados automaticamente no final da sessão do usuário.
+* **Serviços de mitigação ambiental para edifícios inteligentes com créditos de carbono reais** Isso permitirá que os clientes coletem automaticamente informações sobre o consumo de eletricidade da casa ou prédio de apartamentos, queimem créditos de carbono., e armazenar um relatório na paracadeia.
+* **Rede de sensores civis tolerante a falhas** Um conjunto completo de módulos de software para criar uma rede de sensores em uma cidade ou empresa para rastrear os indicadores desejados e fornecer acesso a eles sem um ponto central de falha. Atualmente está sendo testado em uma das cidades industriais da Rússia - Togliatti.
+* **Solução de gerenciamento de tráfego de carros autônomos e drones para evitar colisões de rotas em áreas públicas** Isso permitirá gerenciar uma frota de drones com acesso publicamente monitorado a alterações de rota para agências públicas responsáveis pela segurança local e eficiência do espaço aéreo e das estradas.
+* **Atualizações de integração de ecossistema** Vamos focar em integrações com outras paracadeias para expandir as capacidades de projetos de IoT interessados nas funcionalidades do ecossistema Polkadot.
+
+</TextCard>
+
+<TextCard>
+
+### Parte 3: Transformar em Robonomics Relay Chain
+
+A tarefa final para as 48 semanas de existência na rede Kusama é a transformação da paracadeia Robonomics na Robonomics Relay Chain. Esta é a nossa visão do futuro da Robonomics, como um segmento completo da infraestrutura Polkadot especificamente preparado para trabalhar com dispositivos IoT.
+
+</TextCard>
+
+<TextCard image="/avatars/Sergei-Lonshakov.jpg" back="transparent" imageSize="big" alignContentV="middle">
+
+#### EnsRationis
+
+Arquiteto de rede Robonomics
+
+elemento: @ensrationis:robonomics.network
+
+</TextCard>

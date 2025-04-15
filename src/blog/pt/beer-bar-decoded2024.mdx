@@ -1,0 +1,232 @@
+---
+title: A Experiência com o Bar de Cerveja no Polkadot Decoded 2024
+date: 2024-07-19
+published: true
+locale: 'pt'
+tags: ['Eventos', 'Polkadot', 'Web3']
+cover_image: /blog/images/beer-bar-decoded2024/cover.png
+description: 'Na semana passada, a equipe da Robonomics visitou o evento Polkadot Decoded em Bruxelas. Eles realizaram uma experiência para medir diferentes leituras dos sensores ao redor do Stand de Cerveja Grátis da ChaosDAO. A equipe queria ver quantas pessoas compareceram e o quanto estavam interessadas no bar. Leia este artigo para descobrir o que eles descobriram.'
+---
+
+Na semana passada, a equipe da Robonomics visitou o evento Polkadot Decoded em Bruxelas. Eles realizaram uma experiência para medir diferentes leituras dos sensores ao redor do [**Stand de Cerveja Grátis da ChaosDAO**](https://polkadot.polkassembly.io/referenda/821). A equipe queria ver quantas pessoas compareceram e o quanto estavam interessadas no bar. Leia este artigo para descobrir o que eles descobriram.
+
+## Equipamento
+
+Para a experiência, um conjunto de sensores foi escolhido:
+
+- sensores de temperatura e umidade
+- sensores de movimento
+- sensores de porta
+- sensor de qualidade do ar
+- contador de memes de cerveja na forma de uma lâmpada e dois botões
+
+Um Raspberry Pi 4 com Home Assistant instalado e integração Robonomics foram usados para salvar todos os dados na nuvem Web3. No final do artigo, você verá uma descrição de como obter esses dados.
+
+## Instalação
+
+Veja como era o bar:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/bar.jpg" alt="Bar de cerveja" /> 
+
+O balcão principal onde a cerveja era distribuída. Atrás do balcão, havia uma torneira e 2 geladeiras com bebidas. Também havia pequenos sofás e um PlayStation 1 com jogos de corrida à direita.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/play-zone.jpg" alt="zona de jogos" /> 
+
+Os sensores de porta se encaixavam perfeitamente nas geladeiras. Isso nos permitiu contar quantas vezes elas foram abertas para retirar uma garrafa.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/fridges.jpg" alt="geladeiras" />
+
+Um sensor de movimento foi instalado na área do PlayStation para que ele só fosse acionado quando alguém se aproximasse da TV.para pegar um gamepad:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/sofas.jpg" alt="Zona PlayStation" />
+
+Um sensor de movimento também foi colocado no balcão principal do bar e orientado para disparar apenas quando uma pessoa estivesse diretamente no balcão.
+Pode ser visto à esquerda na coluna. Um sensor de temperatura e umidade também foram instalados nas proximidades:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/column.jpg" alt="instalação do sensor de movimento" />
+
+Vários sensores de temperatura foram colocados dentro do balcão do bar e no local do café que estava próximo.
+
+Um contador de memes de cerveja também foi instalado, que acenderia verde por 5 segundos se o botão "Cerveja" fosse pressionado, ou vermelho se o botão "não pressionar" fosse pressionado:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/mem-beer.jpg" alt="contador de memes de cerveja" />
+
+## Dados Obtidos
+
+**Aviso Legal: Nesta seção, todos os dados serão mostrados na interface do Home Assistant para uma visualização conveniente.**
+Esses mesmos dados podem ser obtidos a partir da paracadeia Robonomics e comparados. Instruções serão fornecidas posteriormente.
+
+Período de estudo: Para o período de estudo, consideraremos o tempo das 16:00 de 11 de julho até as 20:00 de 12 de julho, que corresponde à metade do primeiro dia do Decoded e todo o segundo dia.
+
+Também é importante esclarecer que o bar abriu ao meio-dia, o que também limita o intervalo mensurável.
+
+### Temperatura e Umidade
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temperature.jpg" alt="sensor de temperatura" />
+
+Primeiro dia (11 de julho) - como pode ser visto nos gráficos, uma temperatura confortável de 25-27 graus foi mantida no interior.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp11.png" alt="temperatura dia 11" />
+
+Segundo dia (12 de julho) - a temperatura caiu alguns graus, mas permaneceu confortável.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/temp12.png" alt="temperatura dia 12" />
+
+A queda de temperatura está relacionada à chuva no segundo dia, o que é claramente visível nos gráficos de umidade. A umidade aumentou em 10-15%. Primeiro dia:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum11.png" alt="umidade 11º" />
+
+Segundo dia:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/hum12.png" alt="umidade 12º" />
+
+### Sensores de Movimento
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motion-sesnors.jpg" alt="sensor de movimento" />
+
+O amarelo indica o momento em que alguém estava perto do bar, o cinza - quando não havia pessoas. Sensor de movimento no bar - primeiro dia:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar11.png" alt="sensor de movimento no bar 11º" />
+
+Segundo dia:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionbar12.png" alt="sensor de movimento no bar 12º" />
+
+E área do PlayStation - primeiro dia:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay11.png" alt="sensor de movimento na zona de jogos 11º" />
+
+Segundo dia:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/motionplay12.png" alt="sensor de movimento na zona de jogos 12º" />
+
+Pelos sensores, podemos ver que quase o tempo todo o bar estava aberto, alguém estava em pé no balcão. 
+Além disso, quase metade do tempo, alguém estava jogando no PlayStation.
+
+### Sensores de Porta
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door-sensors.jpg" alt="sensores de porta na geladeira" />
+
+Ótimo, analisamos os indicadores gerais ao redor do bar, agora vamos tentar obter alguns números. Para isso, temos sensores de porta. 
+Havia 2 geladeiras. No exemplo de uma delas, vamos ver como contar o número de aberturas.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/door.png" alt="exemplo de sensor de porta" />
+
+Claro, você poderia contar o número de listras amarelas neste gráfico, que são os momentos em que a porta foi aberta. 
+Mas você pode exportar isso para um arquivo csv e obter o seguinte:
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/doorcsv.png" alt="exemplo de csv de porta" />
+
+Aqui, cada linha individual mostra o momento da mudança de estado do sensor. Portanto, simplesmente dividindo o número de linhas ao meio, 
+vocêPodemos obter o número de aberturas de geladeira.
+Como resultado, obtemos a seguinte tabela:
+
+|          | geladeira 1 | geladeira 2 |
+| -------- |--------|---------|
+| Primeiro dia  | 76     | 78      |
+| Segundo dia | 111    | 87      |
+| resumo    | 187    | 165     |
+
+Um total de 352 aberturas de geladeira. E podemos afirmar com confiança que este é o limite inferior do número de garrafas de cerveja/água que foram retiradas ao longo de dois dias, pois várias garrafas podem ser retiradas em uma única abertura de porta.
+
+### Contador de memes de cerveja
+
+E por último, o contador de memes de cerveja. Ele foi instalado apenas no segundo dia. Havia 2 botões, um rotulado como "Cerveja" e o outro como "Não pressione". Quantas vezes cada botão foi pressionado?
+
+| Cerveja       | Não pressione |
+|------------|--------------|
+| 83         | 44           |
+
+Como pode ver, cerca de 2/3 das pessoas escolheram o botão correto.
+
+## Verificação de Dados
+
+Vamos avançar para obter esses dados do blockchain. Todos os dados estão armazenados nos datalogs desta conta - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Vamos abri-lo em [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+
+Veremos todos os seus extrínsecos. Vamos filtrá-los por data. Vamos obter cerca de 140 extrínsecos.
+
+<RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="extrínsecos do subscan" />
+
+Cada um deles contém um CID do IPFS com telemetria. Vamos pegar qualquer extrínseco e extrair os dados dele. 
+Por exemplo, [este](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+O CID do IPFS dentro dele é - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
+
+Então, tudo que você precisa fazer é usar este script para descriptografar os dados. Substitua o CID do IPFS na linha 11 pelo que você precisa:
+
+```
+import requests
+from substrateinterface import Keypair, KeypairType
+from robonomicsinterface import Account
+import typing as tp
+import json
+import os
+
+ADMIN_SEED="client teach develop blush just ginger depart sister orange rather measure park"
+IPFS_HASH="QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3"
+
+def decrypt_message(data: tp.Union[str, dict]) -> str:
+
+    """Descriptografa a mensagem que foi criptografada para dispositivos
+    :param data: Dados criptografados
+    :param sender_address: Endereço do remetente
+    :param recipient_keypair: Par de chaves da conta do destinatário
+
+    :return: Mensagem descriptografada
+    """
+    try:
+        account = Account(ADMIN_SEED, crypto_type=KeypairType.ED25519)
+        admin_keypair = account.keypair
+        print(account.get_address())
+        sender_public_key = admin_keypair.public_key
+        if isinstance(data, str):
+            data_json = json.loads(data)
+        else:
+            data
+        if admin_keypair.ss58_address in data_json:
+            decrypted_seed = _decrypt_message(
+                data_json[admin_keypair.ss58_address],
+                sender_public_key,
+                admin_keypair,
+            ).decode("utf-8")
+            decrypted_acc = Account(decrypted_seed, crypto_type=KeypairType.ED25519)
+            decrypted_data = _decrypt_message(data_json["data"], sender_public_key, decrypted_acc.keypair).decode(
+                "utf-8"
+            )
+            return decrypted_data
+        else:
+            print(f"Erro na descriptografia para dispositivos: a conta não está nos dispositivos")
+    except Exception as e:
+        print(e)
+
+def _decrypt_message(encrypted_message: str, sender_public_key: bytes, admin_keypair) -> str:
+    """Descriptografa a mensagem com a chave privada do destinatário e a chave pública do remetente
+    :param encrypted_message: Mensagem a ser descriptografada
+    :param sender_public_key: Chave pública do remetente
+
+    :return: Mensagem descriptografada
+    """
+    if encrypted_message[:2] == "0x":
+        encrypted_message = encrypted_message[2:]
+    bytes_encrypted= bytes.fromhex(mensagem_encriptada)
+    return par_chave_admin.decriptar_mensagem(bytes_encriptados, chave_publica_remetente)
+
+def principal():
+    conta = Conta(SEMENTE_ADMIN, tipo_crypto=TipoParChaves.ED25519)
+    par_chave_admin = conta.par_chaves
+    resposta = requests.get(f"<https://gateway.pinata.cloud/ipfs/{HASH_IPFS}>")
+    print(resposta)
+    with open("telemetria.txt", "w") as f:
+        conteudo_decriptado = decriptar_mensagem(resposta.text)
+        print(conteudo_decriptado)
+        f.write(conteudo_decriptado)
+
+if __name__ == "__main__":
+    principal()
+
+```
+
+Como resultado, você obterá um arquivo "telemetria.txt" com json dentro. Ele conterá todos os mesmos dados que revisamos anteriormente. Você só precisará analisá-lo.
+
+## Conclusões
+
+Graças a todos esses indicadores, podemos dizer que a ideia de "cerveja grátis" da ChaosDAO foi bem-sucedida e as pessoas a utilizaram ativamente, mesmo que a cerveja não tenha acabado. E graças aos sensores e à equipe da Robonomics, você pode ver indicadores quantitativos e qualitativos deste evento com dados salvos na rede Kusama.

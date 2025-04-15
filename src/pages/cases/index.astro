@@ -1,0 +1,78 @@
+---
+// components
+import Layout from "../../layouts/Layout.astro";
+import CasesList from "../../components/cases/CasesList.vue";
+
+import items from '../../data/cases.js';
+---
+
+<Layout
+  title={$tr("Cases")}
+  ogImage="/website_cover_cases.png"
+>
+
+<div class="cases-top">
+
+  <div class="cases__main-title title-with-bg">
+    <h1><span>{ $tr('R&D cases') }</span></h1>
+  </div>
+  <div>
+    <p>{$tr('Robonomics is 100% open-source, secure, сost-effective, and futuristic IoT platform for connecting robotics under Polkadot and Ethereum control. Anyone can build services with Robonomics.')}</p>
+    <p>{$tr('Below a list of our  proven applications of modern robotics technologies.')}</p>
+    </div>
+</div>
+
+<section class="cases">
+  <CasesList items={items} client:only/>
+</section>
+
+</Layout>
+
+
+<style>
+  .cases {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .cases-top {
+    display: flex;
+    padding-right: calc(var(--space) * 2);
+  }
+
+  .cases__main-title {
+    max-width: 340px;
+    margin-right: 2rem;
+    align-self: flex-start;
+  }
+
+  .cases-top p {
+    align-self: flex-end;
+    font-weight: 300;
+    font-style: italic;
+    max-width: 910px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .cases-top p:first-of-type {
+    padding-top: calc(var(--space) * 2);
+  }
+
+  @media screen and (max-width: 850px) {
+    .cases-top  {
+      flex-direction: column;
+      margin-bottom: var(--space);
+    }
+
+    .cases__main-title {
+      max-width: unset;
+    }
+
+    .cases-top p{
+      padding: 0 var(--space);
+    }
+  }
+ 
+</style>

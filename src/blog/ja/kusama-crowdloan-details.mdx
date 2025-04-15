@@ -1,0 +1,129 @@
+---
+title: Robonomics Crowdloanとその後のステップ、2021年6月
+date: 2021-06-11
+published: true
+locale: 'ja'
+cover_image: /blog/images/kusama-crowdloan-details/robonomics-crowdloan-on-kusama.jpg
+description: "Cowdloanモジュールの詳細、ローンチ後のパラチェーン更新計画、オークションに関するFAQをご覧ください"
+abstract: "Cowdloanモジュールの詳細、ローンチ後のパラチェーン更新計画、オークションに関するFAQをご覧ください"
+related: ['Kusama Parachain Lease Offering, April 2021', 'Trajectory of Robonomics Development 2021, Part 1', 'Robobank. Accept any Polkadot token in automation services', 'The ultimate guide to Robonomics, RWS and Robonomics parachain on Polkadot']
+tags: ['Robonomicsパラチェーン']
+---
+
+2021年の夏には、プロジェクトがKusamaネットワークスロットを48週間（または1年）の期間借りるオークションが初めて5つ開催されます。Kusamaのパラチェーンになることは、Substrateプロジェクトへのアクセスを提供する良い方法であり、現在利用できないブロックチェーンネットワークセキュリティを小規模プロジェクトに実装し、他のエコシステムプロジェクトとの統合プロセスをできるだけ早く開始する方法です。Robonomicsの2022年の目標は、IoTプロジェクトをPolkadotエコシステムに完全に機能するコンダクターにすることです。これが、Kusamaネットワークをローンチすることの前述の利点が私たちにとって重要である理由です。そして一般的に、私たちの戦略は[すでに公開されています](/blog/robonomics-parachain-lease-offering/) - "Polkadotがビジョンである間、Kusamaが最初"。この投稿では、Cowdloanモジュールの使用を詳細に解説し、ローンチ後のパラチェーン更新計画を見ていきます。
+
+## Kusamaのクラウドローンが始まりました！
+
+*Dr. Gavin Wood, 2021年6月8日、[Kusama Parachain Auctions](https://polkadot.network/kusama-parachain-auctions/):*
+
+> リレーチェーンロジックに重大な予期せぬ問題が見つかった場合を除き、以下はその場合の考慮です。 (そのような場合、すべてのオプションは可能性の範囲内にとどまるべきです)ネットワークガバナンスには、スケジュールされているオークションの一時停止や延期などが含まれます。）
+
+**オークションの予備スケジュール:**
+
+- 2021/06/15, 12:00 GMT: 最初のKusama Parachainスロットオークションが開始されます。 入札をすることができます。
+
+- 2021/06/22, 12:00 GMT: 2番目のKusama Parachainスロットオークションが開始されます。
+
+- 2021/06/29, 12:00 GMT: 3番目のKusama Parachainスロットオークションが開始されます。
+
+- 2021/07/06, 12:00 GMT: 4番目のKusama Parachainスロットオークションが開始されます。
+
+- 2021/07/13, 12:00 GMT: 5番目のKusama Parachainスロットオークションが開始されます。
+
+Polkadotは、パラチェーンがパラチェーン入札のためにトークンを調達するのを可能にします。これは分散型の[crowdloan](https://wiki.polkadot.network/docs/en/learn-crowdloans)です。crowdloanキャンペーンが開始されると、誰でもそのキャンペーンのインデックスを参照する特別なトランザクションを送信することで参加できます。参加に使用されるトークンは移動可能でなければなりません。つまり、ステーキング、ベスティング、およびガバナンスを含む、いかなる理由でもロックされていてはいけません。なぜなら、これらのトークンは、このキャンペーンのためにユニークに生成されたモジュール制御アカウントに移動されるからです。
+
+KSM crowdloanキャンペーンを立ち上げた4つのプロジェクト（Kurara最大150万KSM、Shiden最大100万KSM、Crust最大100万KSM、Moonriver最大100万KSM）は、Kusamaのパラチェーンリースオファーオークション中にパラチェーンスロットのリースのためのリソースを集めるために行われました。
+
+Robonomics Dev DAOは、3番目から5番目のパラチェーンスロットを確保するために必要なKSMの正確な金額を入札することを目指しています。したがって、2番目のスロットのオークションが終了した直後にcrowdloanモジュールが開始されます。
+
+## Robonomics crowdloanの開始予定時刻は6月28日です
+
+Robonomics crowdloanには、[専用ページ](/kusama-slot)を通じて参加できます。
+
+**crowdloanに参加する前に、キャンペーンが[Twitter](https://twitter.com/AIRA_Robonomics)でライブであることを再確認してください。**
+
+## Robonomics Crowdloanへの参加方法
+
+デフォルトでは、Polkadotの開発者はネイティブ[Substrateポータル](https://polkadot.js.org/apps/#/parachains/crowdloan)のインターフェース
+
+![PolkadotポータルのCrowdloan](/blog/images/kusama-crowdloan-details/crowdloan-on-polkadot-portal.png)
+*2021年6月11日のCrowdloanページの例*
+
+4月初めに、RobonomicsはRococoネットワーク上のCrowdloanモジュールを使用してオークションに参加することを実践しました。[Polkadotオークション](https://twitter.com/AIRA_Robonomics/status/1377653645827833860)でのコミュニティ参加の標準インターフェースに慣れるために、このTwitterスレッドをチェックしてください。
+
+また、公式の[Robonomicsサイト](/kusama-slot)では、Crowdloanモジュールとのやり取りの機能が提供されます。
+
+これが6月28日以降のRobonomicsサイトでのCrowdloan参加の様子です。
+
+Robonomicsウェブサイトを通じてCrowdloanインターフェースモジュールを使用する方法に関する手順は、第3オークションの開始に近づいた時点で公開されます。
+
+## コミュニティでよくある質問
+
+<TextCard back="transparent">
+
+### Robonomicsの参加が3回目から始まるのはなぜですか？
+
+開発者はCrowdloanモジュールを今日公開することができますが、その場合は制限を実装する必要があります。最初の4つのプロジェクトが自分たちのCrowdloanモジュールを公開し、100万KSMトークンの制限を設定したことがわかります。
+
+Kusamaネットワークのオークションで勝つのに十分なのは100,000KSMだと考えていますが、第1ラウンドと第2ラウンドの終了時により多くのKSMトークンを集める必要があると理解した場合には、すぐに制限を調整できるように自分たちのためのスペースも確保しています。一般的に、スロットの最適なレンタルコストを探るために機動しています。
+
+</TextCard>
+
+<TextCard back="transparent">
+
+### Robonomicsが5回目のオークションに勝たなかった場合、どうなりますか？
+
+正直に言うと、私たちにはプランBがありません。[私たちはシュワルツェネッガーのようになります](https://youtu.be/Ri-M_Vo3w5A)。
+
+</TextCard>
+
+<TextCard back="transparent">
+
+### 取引所を通じてRobonomicsのクラウドローンに参加することは可能ですか？
+
+KrakenやOkexなどの一部の有名取引所は、ユーザーにクラウドローンのサポートを提供しています。. クラウドローンモジュールとのやり取りをサポートする関連取引所のリストは、第3オークションの開始時にRobonomicsのウェブサイトで提供されます。
+
+</TextCard>
+
+<TextCard back="transparent">
+
+### 48時間後に何が起こりますか？
+
+48週後にプロジェクトが再びオークションに勝利できない場合、パラチェーンは[パラスレッド](https://wiki.polkadot.network/docs/en/learn-parathreads#docsNav)に変わります。ただし、開発者は既に将来のスロットオークションの準備計画を公開しています。2020年10月26日の記事「Robonomics Parachain Lease Offering, On-chain Governance Strategy」をご覧ください。また、RobonomicsにもKSM/DOTホルダーに利益をもたらす有益なボンディング条件を自律的に生成するアルゴリズムを開発するという秘密の計画があります。一般的に、中長期的な問題について事前に検討し、Robonomicsをパラチェーンの状態で維持するという重要な問題についても引き続き考えています。
+
+</TextCard>
+
+## オークション後の生活
+
+パラチェーンはオークション結果がまとまる瞬間から不可分の存在となります。しかし、プロジェクトにとって、これは作業が終了したことを意味するわけではありません。Polkadotリレーチェーンがどのように立ち上がったかを覚えていますか？ Robonomicsチームは、ユーザーに利用可能な機能を段階的に拡大する類似の立ち上げ形式について検討しています。
+
+## Robonomicsは以下の可能性で存在を開始します：
+
+- バランス間のXRT送金
+
+- トランザクション手数料支払いにXRTを使用してIoTデバイスを起動
+
+- トランザクション手数料支払いにXRTを使用してIoTデバイスのテレメトリを送信
+
+- Sudo
+
+- 技術委員会
+
+## さらなるアップデート計画
+
+- Genesis state: コア機能（0週）。上記の機能セットの開始。
+
+- アップデート0.1: ステーキング（1 - 3週）。トークン保有者には10%のAPY、Crowdloan参加者には125%のAPYでXRTをステーキングできるようになります。
+
+- アップデート0.2: 財務（4 - 6週）。DAO資金の一部をイーサリアムからパラチェーンに移すことができるようになります。
+
+- アップデート0.3: RWS（7 - 8週）。手数料支払いだけでなく、月額定額制でもIoT管理機能を使用できるようになります。更新0.4: ロボット・アズ・ア・サービス（9 - 10週）。自動サービスの提供のための制御プロセスを実装し、取引内での支払いを使用してデバイスを起動することができます。
+
+- 更新0.5: Robobank（11 - 12週）。Robonomicsについては、この記事を読むことができます：
+https://robonomics.network/blog/robobank-introduction/
+
+- 更新0.6: Sudoの削除（13 - 14週）。開発者は技術委員会の関与なしにネットワークの操作に干渉する能力を持たなくなります。
+
+- エコシステム統合の更新（年末まで）。さらに、Polkadotができることに興味を持つIoTプロジェクトの機能を拡張するために、他のパラチェーンとの統合に注力します。
+
+最新情報をお見逃しなく、[Twitter](https://twitter.com/AIRA_Robonomics)で更新情報をフォローしてください。

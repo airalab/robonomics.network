@@ -1,0 +1,141 @@
+---
+
+title: Diseño de Mecanismos Robustos para el Mercado de RWA de Equipos Inteligentes
+
+date: 2024-11-11
+
+published: true
+
+locale: 'es'
+
+tags: ['Anuncios']
+
+cover_image: /blog/images/ohf-part-1/cover.webp
+
+description: "Financiar el mercado de equipos inteligentes en constante evolución presenta desafíos significativos. Este artículo propone una solución que combina gemelos digitales para monitoreo en tiempo real, mercados de predicción para una asignación eficiente de capital y contratos de reparto de riesgos, todos gobernados por un modelo DAO transparente para permitir la toma de decisiones óptima en esta industria transformadora."
+
+---
+
+Los recientes avances en aprendizaje automático (ML) han abierto una gran cantidad de oportunidades para la robótica para automatizar nuevas tareas en el mundo real. Mientras que la robótica industrial sigue siendo el segmento dominante en tamaño, los robots de servicio, aquellos que operan entre las personas, han experimentado el crecimiento más rápido. El valor estimado en dólares del mercado de robótica de servicios profesionales fue de aproximadamente **USD 21.6 mil millones en 2023,** con una tasa de crecimiento anual compuesta del 38%. Los avances en ML y la creciente escasez de mano de obra han creado un momento único en el que la robótica de servicios finalmente está lista para una implementación generalizada, abordando necesidades críticas en diversas industrias y en nuestra vida diaria.
+
+"Las pequeñas y medianas empresas (PYME) necesitan un acceso fácil a la automatización" y "La democratización de la robótica" son las tendencias clave en la robótica actualmente, [según la IFR](https://ifr.org/img/worldrobotics/Press_Conference_2024.pdf). Los robots de logística y almacenamiento han sidoliderando esta tendencia. Los primeros despliegues de rovers de entrega en la ciudad han comenzado y está claro que la optimización de rutas es fundamental para mantener los márgenes. La robótica médica ha experimentado un gran aumento durante la pandemia y también ha sido una de las categorías líderes desde entonces, con la desinfección y esterilización como los casos de uso dominantes. Los rovers de hospitalidad en hoteles y restaurantes han experimentado un gran aumento en los mercados asiáticos y comenzamos a verlos más en Europa y Estados Unidos. Agricultura, limpieza profesional, inspecciones y mantenimiento, construcción e industrias pesadas, seguridad/búsqueda y rescate: la lista de nuevas áreas de aplicación sigue creciendo. Algunas de las predicciones más optimistas dicen que podríamos tener más robots humanoides que personas en la próxima década.
+
+Aquí está la lista de las 5 principales áreas de aplicación para la robótica de servicios profesionales en 2023, según la Federación Internacional de Robótica:
+
+![card-1.png](/blog/images/ohf-part-1/card-1.png)
+
+Sin embargo, a medida que estas tecnologías evolucionan, los enfoques de financiamiento tradicionales no logran mantenerse al día con los desafíos únicos planteados por el arrendamiento de equipos inteligentes y la inversión en robótica.
+
+**Los modelos tradicionales**, como los préstamos o el arrendamiento, a menudo son **inadecuados para equipos inteligentes** debido a la rápida obsolescencia tecnológica, la asimetría de la información y la incertidumbre en el rendimiento. Las tecnologías de robótica e IA evolucionan rápidamente, lo que hace que las inversiones a largo plazo sean arriesgadas, ya que los modelos tradicionales no tienen en cuenta las actualizaciones o adaptaciones frecuentes requeridas. Los fabricantes a menudo tienen más conocimiento sobre el rendimiento del equipo que los arrendatarios, lo que lleva a ineficiencias en la asignación de capital osobrevaloración. Además, los horarios de pago fijos no reflejan el valor real del equipo, especialmente cuando el rendimiento depende de actualizaciones de software o integración. La falta de experiencia entre las instituciones financieras en la gestión de activos impulsados por IA contribuye aún más a la falta de inversión en estas tecnologías de alto potencial.
+
+Se requiere un mejor sistema de asignación de capital para equipos inteligentes y conectados. Uno que sea receptivo al ritmo mucho más rápido de la innovación y resistente a las incertidumbres y a la información asimétrica que poseen diferentes participantes del mercado.
+
+## Principios del Diseño de Mecanismos Robustos
+
+El diseño de mecanismos es un **campo en economía y teoría de juegos** que se centra en diseñar reglas o sistemas (mecanismos) para lograr objetivos específicos, incluso cuando los participantes tienen información privada y pueden actuar estratégicamente o coludirse. Un ejemplo clásico es diseñar subastas donde los postores tienen valoraciones privadas de los bienes subastados.
+
+Un desafío clave en el diseño de mecanismos robustos es manejar los **espacios de tipos** —todas las posibles características de los agentes, como sus preferencias y creencias. Dado que no podemos tener en cuenta todos los espacios de tipos posibles, los mecanismos deben diseñarse para manejar situaciones diversas donde los agentes pueden no conocer completamente las preferencias o creencias de los demás.
+
+Hay muchos **agentes diferentes** que pueden estar directamente involucrados en la transacción de equipos, como los **fabricantes de equipos originales (OEM)**, los **integradores y proveedores de mantenimiento**, los **originadores de activos**, los **aseguradores** y los **inversores**. La coordinación entre ellos implica costos transaccionales significativos, sin mencionar las complejidades adicionales de abordar los intereses públicos más amplios. A pesar de la complejidad de estosinteracciones, tenemos como objetivo desarrollar un mecanismo sólido que:
+
+- **Garantice la compatibilidad de incentivos** para todos los participantes del mercado
+- **Asigne capital para lograr eficiencia ex post**
+- **Permanezca resiliente a las incertidumbres** en las condiciones del mercado y las creencias de los participantes.
+
+Permíteme ilustrar esto con un ejemplo sencillo para que sea más fácil de entender:
+
+**Compatibilidad de Incentivos**: Imagina que estás jugando un juego en el que debes decir cuánto te gustan diferentes dulces. Si dices la verdad, obtendrás tu dulce favorito. La **compatibilidad de incentivos** significa que tu mejor opción es ser honesto porque de esa manera obtendrás lo que realmente deseas. En otras palabras, ser sincero es la decisión más inteligente.
+
+**Eficiencia Ex Post**: Después de que todos hayan compartido sus favoritos, se reparten los dulces. La **eficiencia ex post** significa que todos terminan con el dulce que más les gusta, y ningún dulce se desperdicia o se le da a alguien a quien no le gusta. Garantiza que todos reciban su dulce favorito, haciendo que todos estén lo más felices posible con lo que reciben.
+
+Creo que es importante utilizar mecanismos compatibles con incentivos al introducir tecnologías tan importantes como la Robótica y la IA Encarnada, que tienen el potencial de alterar fundamentalmente el tejido de la sociedad. Asegurar que estos mecanismos sean sólidos es esencial para maximizar el beneficio social y lograr resultados justos y eficientes en la implementación de tecnologías transformadoras.
+
+
+
+## Diseño de Mercado de Activos del Mundo Real (RWA) para Equipos Inteligentes
+
+Diseñar unEl mecanismo de asignación de capital en nuevas categorías de equipos inteligentes es increíblemente desafiante debido a la complejidad y naturaleza evolutiva del campo. Sin embargo, veo una oportunidad para implementar varias estrategias que mejoren la robustez de este mecanismo.
+
+### **Gemelos Digitales y Más Allá**
+
+Esto es lo que hace Robonomics. En el artículo ["Introducción a los Gemelos Digitales"](https://robonomics.network/blog/digital-twins-introduction/), explicamos el concepto: representaciones digitales de entidades o procesos físicos. Los Gemelos Digitales no son modelos estáticos, sino sistemas dinámicos que reciben continuamente datos en tiempo real de sus contrapartes físicas, lo que permite actualizaciones constantes y reflejos precisos del estado actual. Este flujo continuo de datos permite simulaciones y análisis precisos, facilitando decisiones informadas sobre la operación, mantenimiento y optimización de activos físicos.
+
+Para capturar y gestionar eficazmente los datos de equipos inteligentes, Robonomics ofrece una herramienta de código abierto llamada [Otaberu](https://robonomics.network/blog/otaberu-part-1/). Otaberu está diseñado para facilitar la conexión punto a punto (P2P) para dispositivos periféricos y robótica, permitiendo una comunicación fluida y segura entre dispositivos sin una extensa configuración de red. Proporciona un marco sólido para la recopilación de datos y la gestión de gemelos digitales.
+
+Los gemelos digitales sirven como capa fundamental para implementar diseños de mecanismos robustos para la asignación de capital en los mercados de equipos inteligentes. Al proporcionar una representación digital completa y en tiempo real de activos físicos, los gemelos digitales permiten un monitoreo y análisis precisos del rendimiento de los equipos, patrones de uso y necesidades de mantenimiento. Esta visión detallada permitepara el desarrollo de estrategias sofisticadas que optimicen la asignación de capital, asegurando que los recursos se dirijan de manera eficiente para maximizar los rendimientos y mejorar la longevidad y productividad del equipo inteligente.
+
+Los Gemelos Digitales en el contexto de la asignación de capital también abren la conversación sobre las robocorporaciones autónomas, que están guiadas por mecanismos de gobernanza en cadena. Estas entidades autónomas pueden ejecutar decisiones de forma independiente basadas en la información del mercado, lo que las hace capaces de gestionar activos, asignar recursos e incluso participar en transacciones económicas sin intervención humana.
+
+
+### **Mercados de Predicción**
+
+Los mercados de predicción y el diseño robusto de mecanismos tienen como objetivo obtener información veraz de agentes con conocimientos privados para lograr resultados eficientes. Al integrar los mercados de predicción en nuestro marco de mecanismos, podemos **mejorar la eficiencia ex post** de las decisiones de asignación de capital al garantizar que las decisiones reflejen la información más actualizada y precisa disponible, lo que conduce a una mejor alineación de la asignación de recursos con los resultados obtenidos.
+
+Los siguientes pasos ilustran cómo podría implementarse el proceso:
+
+- Establecer un mercado de predicción para cada categoría de equipo inteligente bajo consideración (rovers de entrega, brazos de empaquetado, etc.).
+- Permitir que un amplio grupo de partes interesadas intercambie contratos basados en métricas de rendimiento futuro del equipo, como el porcentaje de tiempo de actividad y los costos de mantenimiento.
+- Utilizar el precio de mercado para reflejar la creencia colectiva sobre si el equipo cumplirá con benchmarks de rendimiento específicos durante el período de arrendamiento.
+- Si el mercado de predicción indica una alta probabilidad de que el equipo funcione bien (por ejemplo, alto tiempo de actividad y bajos costos de mantenimiento), asignar más capital para arrendar ese equipo.
+- Por el contrario, si el mercado de predicción sugiere un mal rendimiento, reducir la asignación de capital oajustar los términos del arrendamiento para mitigar posibles pérdidas.
+- Los participantes del mercado de predicción son recompensados o penalizados según las apuestas que realicen.
+
+Los mercados de predicción permiten una eficiente agregación de conocimiento privado de diversos interesados, actualizaciones en tiempo real sobre las expectativas de rendimiento y una adaptación continua a nueva información, lo que reduce la incertidumbre y resulta en un diseño de mecanismo más resiliente.
+
+Cuando se dispone de nueva información, como una actualización del Gemelo Digital del equipo inteligente, los precios del mercado de predicción se ajustan en consecuencia, permitiendo una realocación dinámica de capital. Esto ayuda a mitigar el riesgo de sobreinvertir en activos con bajo rendimiento, al tiempo que garantiza que los activos con alto rendimiento reciban financiamiento adecuado a largo plazo.
+
+Al alinear la asignación de capital con información de mercado continuamente actualizada, los suscriptores pueden tomar decisiones más informadas, optimizar sus carteras y reducir el riesgo financiero.
+
+
+### **Estrategias de Compartir Riesgos**
+
+Las estrategias de compartir riesgos desempeñan un papel crucial en remodelar el mecanismo de asignación de capital para equipos inteligentes, ayudando a equilibrar los riesgos y aumentar la compatibilidad de incentivos. Los acuerdos de arrendamiento tradicionales son relativamente rígidos, generalmente basados en pagos fijos sin tener en cuenta el rendimiento dinámico del equipo o cambios inesperados.
+
+Estrategias como contratos de estilo de seguro o bonificaciones basadas en el rendimiento pueden emplearse para crear un enfoque más flexible y adaptativo que comparta eficazmente los riesgos y conduzca a un diseño de mecanismo más sólido.
+
+Por ejemplo, un contrato de estilo de seguro puede ayudar a distribuir el riesgo de tiempos de inactividad imprevistos: si los datos del Gemelo Digital revelan tiempos de inactividad inesperados debido a defectos del fabricante, parte del pago podría ser reembolsado. De esta manera, se mitiga la carga financiera de los problemas operativos y se incentiva a todos amantener el rendimiento.
+
+El modelo de pago por resultados proporciona una capa adicional de intercambio de riesgos. El modelo de robots como servicio (RAAS) está ganando impulso en la robótica, pero aún es considerado novedoso por muchos actores tradicionales en financiamiento de equipos. Al vincular los pagos a los beneficios comerciales generados por la tecnología (como la cantidad de cajas movidas en un día o las millas conducidas en la entrega autónoma), se anima a los participantes a centrarse en lograr resultados tangibles.
+
+Por ejemplo, si un robot logístico mejora la eficiencia del almacén en un 20%, una parte de esa ganancia de eficiencia puede utilizarse para financiar el pago mensual. Este enfoque ayuda a las empresas a conectar el costo del equipo con su propio éxito operativo, reduciendo el riesgo financiero durante períodos inciertos cuando los resultados pueden ser menos predecibles. La alineación aquí es doble: las empresas se sienten más seguras de que solo están pagando en proporción al valor que reciben, mientras que los proveedores son alentados a proporcionar equipos que brinden beneficios comerciales de manera confiable.
+
+Con equipos inteligentes que pueden generar datos en tiempo real, se vuelven factibles mecanismos robustos de intercambio de riesgos, lo que permite respuestas dinámicas a problemas de rendimiento y alinea los incentivos en torno a resultados reales. Esta evolución en las estructuras de arrendamiento permite a los participantes del mercado responder de manera adaptable al cambio tecnológico, asegurando que los riesgos y recompensas de adoptar equipos avanzados se compartan de manera más equitativa. En efecto, la relación se convierte más en una asociación que en un acuerdo contractual rígido, fomentando la confianza y alentando la innovación.
+
+
+### **Gobernanza DAO para la Originación y Evaluación de Equipos**
+
+Es crucial establecer estructuras de gobernanza que respalden una asignación eficiente de capital alineada con incentivos en los próximos 3-5años a medida que la industria de la robótica toma forma.
+
+La Organización Autónoma Descentralizada (DAO) es una estructura de gobernanza ideal para gestionar el proceso de suscripción en acuerdos de equipos inteligentes. Su objetivo principal es determinar qué nuevas categorías apoyar y cómo asignar el capital de manera efectiva.
+
+Al aplicar principios del diseño de mecanismos sólidos, podemos mejorar las probabilidades de dirigir los recursos hacia oportunidades de inversión de alto valor mientras se minimizan los riesgos asociados con la información asimétrica y las incertidumbres del mercado.
+
+El DAO de Suscriptores debería utilizar mecanismos basados en subastas para realizar apuestas informadas en categorías prometedoras. Los conocimientos del mercado de predicción deberían mejorar la precisión de las valoraciones e informar las estrategias de oferta aquí. Un proceso autónomo puede entonces asignar capital de manera óptima, basándose en la combinación única de creencias sostenidas por los miembros del DAO de Suscriptores.
+
+A medida que el capital inicial se agrupa en el DAO y se asigna, un bucle de retroalimentación basado en datos de Gemelo Digital comienza a impulsar la toma de decisiones adicionales. En esta etapa, un grupo más grande de inversores puede comenzar a participar a través de tramos adicionales, ofreciendo cobertura, productos respaldados por equipos a inversores de activos digitales.
+
+La capacidad de decidir qué acuerdos se ofrecen a la comunidad más amplia de inversores agrupados es crítica, y las apuestas exitosas deberían ser recompensadas adecuadamente. Esto es lo que crea el valor de ser parte de la gobernanza del DAO en sí mismo, independientemente de la participación respaldada por activos proporcional al capital invertido en equipos inteligentes.
+
+Aquí hay un esquema simple de operación para dicho DAO:
+
+![card-2.png](/blog/images/ohf-part-1/card-2.png)
+
+
+
+## **Consideraciones Prácticas y Próximos Pasos**
+
+Esto es solo el comienzo. Mi objetivo es crear un mecanismo sólido de asignación de capital que haga que las ganancias de productividad de la revolución de la robótica sean accesibles para todos.
+
+Las ideas anteriores ofrecen un buen punto de partida, pero hay limitaciones que deben considerarse. Los participantes aún pueden involucrarse en comportamientos estratégicos si creen que pueden influir en los precios para obtener ganancias personales y la liquidez limitada en las etapas iniciales puede facilitarlo aún más. Con suficiente liquidez en los mercados de predicción y de capital, esto se puede superar, pero en las etapas iniciales es importante elegir cuidadosamente a los miembros del Underwriters DAO.
+
+**Pasos para lanzar un mecanismo sólido de asignación de capital en nuevas categorías de equipos inteligentes:**
+
+1. Lanzar mercados de predicción para elegir nuevas categorías
+2. Formar el Underwriters DAO para comenzar a realizar los primeros acuerdos
+3. Utilizar contratos de reparto de riesgos para gestionar el riesgo de la cartera
+4. Utilizar Datos de Gemelo Digital para mejorar aún más la asignación
+5. Desarrollar una estructura para una mayor participación de inversores en las ganancias de productividad de la revolución de la robótica
+
+Si estás interesado en ser parte de este viaje o simplemente quieres hacer algunas preguntas, deja tu correo electrónico a continuación.
+
+*Vitaly, Evangelista de Robonomics*

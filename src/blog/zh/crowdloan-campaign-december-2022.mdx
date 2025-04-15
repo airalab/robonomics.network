@@ -1,0 +1,116 @@
+---
+title: 新的Robonomics Crowdloan活动，2022年12月
+date: 2022-12-12
+published: true
+locale: 'zh'
+tags: ['Robonomics parachain', 'Polkadot', '公告']
+cover_image: /blog/images/crowdloan-campaign-december-2022/cover.jpg
+description: "在OpenGov早期混乱引起的小问题之后，我们准备重新启动Robonomics Crowdloan活动。在本文中，我们将回顾导致活动重新启动的一系列事件，并介绍其新参数。"
+abstract: "在OpenGov早期混乱引起的小问题之后，我们准备重新启动Robonomics Crowdloan活动。在本文中，我们将回顾导致活动重新启动的一系列事件，并介绍其新参数。"
+---
+
+## Kusama OpenGov引起混乱
+
+期待已久的新治理系统OpenGov（Gov2）终于抵达Kusama，但它也带来了许多混乱。新的OpenGov系统的实施导致先前计划的拍卖未能成功进行。Kusama社区已经发起了[Gov1公投＃252](https://kusama.polkassembly.io/referendum/252)来修复拍卖计划，但由于AuctionAdmin特权的限制，它并未成功实施。这个错误是由于在新的治理系统中，必须将OpenGov提案推送到Auction轨道才能启动拍卖。决定通过[运行时升级](https://kusama.polkassembly.io/referendum/254)调整OpenGov参数，但由于Gov1和Gov2逻辑之间的冲突，这个公投也未成功。
+
+总的来说，Kusama社区和开发人员花了几周时间来弄清楚新治理系统的复杂性。这是意料之外的，并影响了Robonomics项目计划在2022年11月的众贷活动中竞标一个平行链插槽。我们已经解散了[2022年11月的众贷活动](/blog/robonomics-crowdloan-campaigns-november-2022/)，该活动是在paraID 2237，所有KSM已经退还给众贷款人。
+
+## 延长插槽租约的新挑战
+
+在发布OpenGov之前，交换平行链租约的标准方法如下：
+
+1. 使用注册机（Reserve）外部生成新的paraID。
+2. 为新的paraID设置链上ID。
+3. 使用众贷款（Create）外部开启众贷款。
+4. 在平行链插槽拍卖中出价。
+5. 如果在拍卖中成功，开发人员将发起治理操作，使用forceLease和registrar:swap函数将租约从捐赠者paraID转移到工作的平行链paraID，类似于这些先前的公投：[Karura租约交换](https://kusama.polkassembly.io/referendum/192)，[Moonriver和Khala租约交换](https://kusama.polkassembly.io/motion/468)，[Shiden租约交换](https://kusama.polkassembly.io/referendum/199)，[Parallel-Heiko租约交换](https://kusama.polkassembly.io/referendum/219)，[Genshiro租约交换](https://kusama.polkassembly.io/referendum/246)。
+6. 最终结果是，工作的平行链将延长其租约，继续生成区块，并不会遭受任何停机时间。
+
+然而，随着OpenGov的引入，Kusama上的治理行动门槛变得异常之高。简单来说，新的OpenGov系统有多个轨道。每个轨道可以支持特定类型的功能（只能调用特定的外部函数）。一些轨道的权力有限，比如小额KSM的打赏，但其他轨道的权力巨大，比如Root轨道。
+
+OpenGov轨道的门槛异常之高，Kusama社区内已经有行动来降低这些门槛，因为它们已经给平行链项目带来问题，比如[Kintsugi](https://twitter.com/kintsugi_btc/status/1599036329399943168)。简单来说，特定的公投必须获得网络利益相关者（KSM持有者）足够的支持，以便公投从投票期过渡到确认期。
+
+为了让平行链能够执行上述的6步计划来交换租约，需要重新启动平行链拍卖计划，这将这意味着应该通过一个OpenGov公投来重新启动拍卖，可以通过租赁管理跟踪或可能作为根/白名单调用者跟踪的运行时升级的一部分。这就是问题所在 - 为了使公投及时进入确认期，需要相当大比例的所有流通中的KSM代币投票支持公投。Kusama上的典型选民投票率相对较低，这意味着租赁管理跟踪公投可能需要多周时间才能达到一个实际上可能推动公投进入确认期的阈值。
+
+虽然我们仍然希望社区会调整OpenGov参数，幸运的是，波卡平行链可以利用XCM来执行这个6步计划，而无需使用中继链的新OpenGov系统。
+
+我们可以使用注册器（Reserve）外部函数注册一个新的paraID，并使用注册器（Register）外部函数将一个外壳运行时加载到该paraID。这个平行链应该只为租赁交换发起XCM消息。然后，我们向外壳平行链发送一个包含租赁交换请求的XCM消息，从主平行链到外壳平行链。当外壳平行链赢得拍卖并且租赁生效时，将启动一个最小环境，能够发送一个XCM消息来与主平行链交换租赁插槽。
+
+## 众贷活动的新参数
+
+正如[之前提到的](https://robonomics.network/blog/robonomics-crowdloan-campaigns-november-2022/)，我们希望根据插槽租赁成本和理想质押率的统计数据自动化我们的众贷活动。让我们看看续约算法的当前参数。
+
+<TextCard alignContent="center">
+
+**1. 2022年8月至11月的中位租赁价格统计数据（信息来源于[parachains.info](http://parachains.info/)）：**
+
+</TextCard>
+
+<div class="big-table">
+
+|  | 拍卖62 | 拍卖61 | 拍卖60 | 拍卖59 | 拍卖58 | 拍卖57 | 拍卖56 | 拍卖55 | 拍卖54 | 拍卖53 | 拍卖52 | 拍卖51 | 拍卖50 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 获胜者 | Parathread 2236 | Parathread 2233 | 时代精神 | 螃蟹网络 | — | 地壳阴影 | Genshiro | DAO IPCI | Parathread 2223 | 石英 | Bit.Country | 雪 | Subsocial |
+| 最后出价（KSM） | 1 005 | 241 | 500 | 11 | 0 | 1 807 | 2 000 | 111 | 1 001 | 1 005 | 3 500 | 13 926 | 1 001 |
+| 贡献 | 自筹资金 | 自筹资金 | 自筹资金 | 自筹资金 | — | 209 | 160 | 自筹资金 | 自筹资金 | 自筹资金 | 自筹资金 | 782 | 自筹资金 |
+| 参与者人数 | 1 | 3 | 2 | 1 | 0 | 1 | 2 | 2 | 2 | 2 | 2 | 1 | 1 |
+
+</div>
+
+<TextCard className="withImg" alignContent="center">
+
+**2. 中位出价为：**
+
+![beta subscript med equals 1001KSM](/blog/images/crowdloan-campaign-december-2022/formula-1.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**3. 如果以前的众贷活动不成功，我们还会引入一个修正值。根据以前的众贷尝试调整的中位出价为：**
+
+![beta subscript 'adjmed' equals 1001 multiplied by 2 equals 2002 KSM](/blog/images/crowdloan-campaign-december-2022/formula-2.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**4. 理想的质押率是：**
+
+![x subscript ideal equals 45.0 percent](/blog/images/crowdloan-campaign-december-2022/formula-3.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**5. 实际质押率是：**
+
+![x subscript 'real' equals 49.3%  greater than percent x subscript 'ideal'](/blog/images/crowdloan-campaign-december-2022/formula-4.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**6. 理想利率是：**
+
+![我订阅 '理想' 等于 I 订阅 'NPoS' 除以 x 订阅 '理想' 等于 0.1 除以 0.45 乘以 100 百分比等于 22.22 百分比](/blog/images/crowdloan-campaign-december-2022/formula-5.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**7. 参与众贷活动的奖励（每1个KSM的XRT）：**
+
+![R 订阅 'perKSM' 等于（1 乘以 $KSM 乘以 I 订阅 '理想'）除以 $XRT 等于（1 乘以 24.65$ 乘以 0.22）除以 2.30$ 等于每KSM 2.38 XRT](/blog/images/crowdloan-campaign-december-2022/formula-6.svg)
+
+</TextCard>
+
+<TextCard className="withImg" alignContent="center">
+
+**8. 众贷参与者的总支付：**
+
+![R 订阅 'total' 等于 B 订阅 'adjmed' 乘以 R 订阅 'perKSM' 等于 4768.05 XRT](/blog/images/crowdloan-campaign-december-2022/formula-7.svg)
+
+</TextCard>
+
+这就是故事。而且，像往常一样，ₑₓₚₑcₜ cₕₐₒₛ.

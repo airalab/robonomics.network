@@ -1,0 +1,73 @@
+---
+title: 2021年Robonomics发展轨迹，第1部分
+date: 2021-02-18
+published: true
+locale: 'zh'
+cover_image: /blog/images/roadmap-2021/1.jpg
+description: "Polkadot架构变得明确和完整，这应该使我们作为平行链开发人员能够将重点从维护Polkadot依赖关系（substrate框架、cumulus等）转移到增加我们平行链功能的方向。"
+abstract: "Polkadot架构变得明确和完整，这应该使我们作为平行链开发人员能够将重点从维护Polkadot依赖关系（substrate框架、cumulus等）转移到增加我们平行链功能的方向。"
+tags: ['路线图', 'Robonomics平行链']
+---
+
+从这篇文章开始，我想与社区分享核心项目开发团队今天准备与大家分享的任务。
+
+总共，我们计划实施约[20个任务](https://github.com/orgs/airalab/projects/7)。其中一些是完整的任务，而第二部分更多地反映了核心开发人员将时间投入到这一领域的事实，例如支持学术界、举办开发营和围绕项目开发互联网资源。
+
+今天我将分享与任务＃1相关的开发团队计划 - 在Kusama网络上启动平行链。
+
+## 任务＃1：Kusama上的平行链
+负责人：[@ensrationis](https://scholar.google.com/citations?user=0c53yygAAAAJ&hl=en), [@akru](https://github.com/akru)
+
+!["Robonomics在Kusama上的平行链首次"](/blog/images/robonomics-parachain-lease-offering/Robonomics_Parachain-web.jpg)
+
+早些时候，我们提出了在Polkadot生态系统中的发展总体愿景 - [Robonomics在Kusama上的平行链首次，Robonomics在Polkadot上的中继链是一个愿景](https://robonomics.network/blog/robonomics-parachain-lease-offering/)。现在让我们添加更多细节。
+
+### Rococo > Kusama > Polkadot 
+
+2020年12月31日，[theRobonomics发布了"Rococo V1支持"，用于在主Polkadot测试网Rococo v1中测试平行链。在2021年1月至2月期间，我们继续改进Robonomics代码，合并与Rococo Relay Chain重启相关的新提交。为了测试Robonomics平行链的运行，开发人员保持我们自己的Rococo Relay Chain分支最新，因此将我们的平行链连接到公共网络的问题更多是一个（1）项目与生态系统兼容性的公共证明问题，（2）利用Rococo v1中现在可用的XCMP与生态系统中的其他项目（如Phala、Acala、Moonbeam、Darwinia等）进行测试，寻找合作实现。
+
+### Kusama插槽拍卖
+
+我们面临着参与Kusama网络插槽拍卖的任务。首先，我们需要弄清楚这一机制的实施。当然，我们已经研究了理论很长时间，但参与拍卖的实践将为团队带来新的任务。无论如何，我们将尝试排练拍卖，并通过博客文章与社区分享结果。
+
+### 民主、财政和其他平行链模块
+
+除了参与拍卖外，开发人员正在讨论以下与在Kusama网络上启动平行链相关的问题：
+
+- 在启动平行链后，标准中使用的哪些模块对开发人员和社区可能有用？
+- 我们将如何启动平行链：遵循从主要开发人员的根权限到民主的情景，还是…
+- 有多少XRT代币应该从以太坊转移到Kusama，然后再转移到Polkadot？
+- Robonomics网络中成功启动抵押机制所需的最低通胀参数。
+- …
+
+当然，还有更多问题，但这些问题很可能首先对社区感兴趣，我们认为这些问题是优先考虑的。
+
+### Robonomics平行链的特定功能
+
+在谈到启动平行链时，我们必须了解其主要和特殊功能，这些功能开启开启了Polkadot网络对某一群用户的新可能性。Robonomics将提供使用Robonomics Web Services（简称RWS）功能来管理连接到互联网的智能设备的能力，我们还将为新兴的机器人经济在以太坊网络上已经测试过的功能实施 - 为自动化服务提供智能合同。因此，Robonomics旨在帮助整个Polkadot生态系统增加每个项目单独向深度集成IoT市场的能力。
+
+到目前为止，已经实现了以下可能性：（1）通过Robonomics平行链启用、禁用和转移IoT任务到设备/机器人；（2）直接通过平行链或IPFS + 平行链组合接收设备遥测数据，以及（3）具有带宽保证的平行链订阅机制。
+
+我们将实施以下功能：
+
+1. Robobank接受任何Polkadot代币的自动化服务
+2. 通过区块链上的数字孪生体实现真实的单一版本
+3. 用于房地产的比特币支付
+4. 使用IoT应用程序的隐私
+5. 区块链上的全球供应链
+6. 用于IoT的DeFi连接性
+7. 用于IoT的NFT
+
+正如您所看到的，诸如（3）、（4）、（6）、（7）的任务尤为重要，因为它们意味着与其他平行链集成，以利用它们在Robonomics中的有用功能。
+
+让我们看看许多特定项目共同生态系统的力量！
+
+### 结论
+
+Polkadot架构变得明确和完整，这应该使我们作为平行链开发人员能够将重点从维护Polkadot依赖关系（substrate框架、cumulus等）转移到增加我们平行链的功能。
+
+重要的是不要忘记，争夺平行链插槽的过程是一个内部开发过程，但更重要的是 - 平行链的具体功能；最重要的是为其他平行链提供Robonomics功能，并在您的代码中实现其他平行链的使用。然后整个生态系统将能够为用户提供有趣的功能；这些功能在Polkadot之外将极其难以找到。
+
+在下一篇文章中，我将讨论Robobank项目、基于Substrate的Robonomics Network客户端的改进，以及我们对Robonomics发展的计划。ics dapp和Robonomics Web Services。
+
+*ensrationis*

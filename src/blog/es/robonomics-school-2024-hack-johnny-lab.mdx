@@ -1,0 +1,86 @@
+---
+title: "Robonomics School 2024: Reglas del Juego para el Laboratorio de Hack de Johnny"
+date: 2024-06-05
+published: true
+locale: 'es'
+cover_image: /blog/images/robonomics-school-2024-hack-johnny-lab/cover.jpeg
+description: "En los próximos días, lanzaremos una búsqueda práctica de Robonomics School 2024, durante la cual podrás sentirte como un verdadero violador de la privacidad e incluso 'robar' tokens. ¿Interesado? ¡Consulta las reglas del juego 'Hack Johnny's Lab'!"
+abstract: "En los próximos días, lanzaremos una búsqueda práctica de Robonomics School 2024, durante la cual podrás sentirte como un verdadero violador de la privacidad e incluso 'robar' tokens. ¿Interesado? ¡Consulta las reglas del juego Hack Johnny's Lab!"
+tags: ['Anuncios', 'Eventos', 'Escuela en línea']
+---
+
+
+## Motivación para el Juego
+
+Este juego se inspira en gran medida en las ideas sobre escapar de Black Mirror, de las cuales Sergei habló en sus artículos ([primero](https://robonomics.academy/en/learn/escape-from-black-mirror/overview/) y [segundo](https://robonomics.academy/en/learn/school-2024-iot-vs-ai/overview/)) en Robonomics Academy.
+
+Imagina, un simple robot aspirador barato tiene la capacidad de espiar la vida de sus propietarios. Ni siquiera importa si alguna persona maliciosa accede a estos datos; el análisis de IA de las grabaciones de video es suficiente para sacar conclusiones sobre aspectos no públicos de la vida de una persona. Cualquier secreto sucio, patrones de comportamiento imperceptibles e información privada, todo va al horno del perfil. Piénsalo mientras intentas obtener algunos tokens gratis.
+
+## Objetivo del Juego
+
+En el juego, a los jugadores se les asigna la tarea de restaurar la frase semilla a partir de los datos del robot móvil. El robot se mueve aleatoriamente por el laboratorio, grabando videos. De vez en cuando, el robot publica una de las 12 palabras de la frase semilla. Durante una de las paradas del robot, los jugadores pueden ver en el video un letrero con un número, que sugiere el orden de esa palabra en la frase semilla. La tarea es emparejar los números en los letreros con el conjunto de palabras recibidas en las paradas del robot, para restaurar la frase semilla correcta.
+
+El jugador que primero restaure la frase semilla y retire todos los tokens XRT de su dirección gana.
+
+## Reglas del Juego
+
+*Registro de jugadores*
+
+- Para participar, los jugadores deben crear una nueva cuenta en la parachain de Robonomics, y debe crearse con el tipo de cifrado Edwards (ed25519). Las instrucciones están disponibles en [nuestro wiki](https://wiki.robonomics.network/docs/create-account-in-dapp/).
+- Luego, los jugadores deben ir al [bot de Discord](https://discordapp.com/channels/803947358492557312/1245395009964871772) en el servidor de Robonomics y esperar un mensaje sobre el inicio de una nueva sesión.
+- Al comienzo de la sesión, los jugadores envían las direcciones de cuenta creadas en **formato de parachain de Robonomics** al bot de Discord. Los jugadores tendrán 60 minutos para ingresar.
+
+*Exploración del laboratorio*
+
+- Después de completar el registro, el robot móvil irá a explorar el laboratorio. Después de eso, el robot enviará una grabación de video y una lista de las palabras de la frase semilla (no en el orden correcto).
+- Los jugadores esperan un mensaje del bot de Discord sobre la recepción de resultados del robot y van a la aplicación [a través de un enlace](https://robonomics.academy/en/demoapps/johnnyb-lab/) para comenzar a restaurar la frase semilla.
+
+*Restauración de la Frase Semilla*
+
+- Para acceder a los datos, los jugadores deben usar la cuenta registrada en Robonomics.
+- Los jugadores tendrán acceso a la grabación de video y al conjunto de palabras de la frase semilla. La tarea del jugador es encontrar el orden correcto de las palabras basándose en los números en los letreros ubicados en el laboratorio.
+
+<TextCard alignContent="left">
+
+**Ejemplo.** Si el conjunto de palabras es: 
+
+`encontrar -> iglesia -> relación -> perro -> muestra`
+
+Y la ruta del robot, reconstruida a partir del video es: 
+
+`Letrero #5 -> Letrero #3 -> Letrero #1 -> Letrero #2 -> Letrero #4`
+
+Entonces:
+
+`encontrar — Letrero #5 -> encontrar es la 5ª palabra`
+
+`iglesia — Letrero #3 -> iglesia es la 3ª palabra`
+
+`relación — Letrero #1 -> relación es la 1ª palabra`
+
+`perro — Letrero #2 -> perro es la 2ª palabra`
+
+`muestra — Letrero #4 -> muestra es la 4ª palabra`
+
+Como resultado, la frase semilla correcta es: `relación perro iglesia muestra encontrar`
+
+</TextCard>
+
+
+- Después de encontrar la frase semilla, los jugadores pueden restaurar el acceso a la cuenta con tokens utilizando cualquier aplicación.
+- Por ejemplo, en la extensión Polkadot.js, esto se puede hacer utilizando la función *Importar cuenta desde frase semilla preexistente*.
+- Todas las cuentas restauradas con XRT tienen el tipo de cifrado **Schnorrkel (sr25519)**, que es compatible con la mayoría de billeteras de Polkadot / Kusama.
+
+*Anuncio del Ganador*
+
+- Una vez que un jugador haya accedido a la cuenta, debe retirar XRT para convertirse en el ganador de la sesión, hasta que alguien más lo haga.
+- Por ejemplo, utilizando la extensión Polkadot.js, esto se puede hacer en [nuestro portal de Polkadot / Substrate](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/accounts) en la página de Cuenta. Simplemente presiona el botón Enviar y retira los tokens a donde desees. Puedes usar la opción *Transferir el saldo completo de la cuenta, cosechar el remitente* para realizar un retiro del saldo completo.
+- Al finalizar la sesión, después de que se retiren los tokens, el bot notificará al canal de Discord publicando la dirección del ganador.
+
+## Condiciones del Evento
+
+El evento durará 9 días, durante los cuales por la mañana y por la noche (18 veces en total) tendrás la oportunidad de ser el primero en alcanzar **42 XRT** en cada sesión.
+
+El registro para la sesión comienza a las **10:00 y 20:00 EEST** todos los días y dura 60 minutos.
+
+¡Sigue nuestras redes sociales para no perderte el inicio del evento!
