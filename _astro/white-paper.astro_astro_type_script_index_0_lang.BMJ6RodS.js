@@ -1,0 +1,1 @@
+import{_ as n}from"./preload-helper.CLcXU_4U.js";document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementById("parallax-astronaut");t&&n(()=>import("./parallax.Cp1Z1SYm.js").then(e=>e.p),[]).then(e=>{new e.default(t)})});
