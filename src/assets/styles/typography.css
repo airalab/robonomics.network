@@ -90,6 +90,11 @@ html[lang="nl"] .title-lined {
   hyphens: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .title-lined {
+   overflow: hidden;
+  }
+}
 /* - Title with line throw */
 
 .title-with-bg {
