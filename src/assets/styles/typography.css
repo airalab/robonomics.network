@@ -93,6 +93,7 @@ html[lang="nl"] .title-lined {
 @media screen and (max-width: 480px) {
   .title-lined {
     hyphens: auto;
+    overflow: hidden;
   }
 }
 /* - Title with line throw */
