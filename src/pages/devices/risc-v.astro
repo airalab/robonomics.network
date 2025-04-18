@@ -23,7 +23,7 @@ const riscv = devices.products.filter(product => product.code === 'server');
   backlink={{title: $tr('All hardware'), link: '/devices/', label: $tr('Go to all hardware')}}
 >
 
-  <DeviceBuySection price="$275" client:only>
+  <DeviceBuySection price="$275" title={riscv[0].title} orderLinks={riscv[0].orderLinks} info={riscv[0].info} available={riscv[0].available} client:only>
     <RiscVModel noanimation client:visible/>
   </DeviceBuySection>
 
