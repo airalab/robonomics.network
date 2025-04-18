@@ -98,6 +98,14 @@ html[lang="nl"] .title-lined {
   .title-lined:before {
     display: none;
   }
+
+  .title-lined span {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
 }
 /* - Title with line throw */
 
