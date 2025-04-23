@@ -10,7 +10,7 @@ const generatePath = (path) => {
 
 <nav class="navigation">
   <ul aria-label="Use it">
-    <li><a aria-label="Robonomics smart devices" href={generatePath("/devices/")}>{$tr('Smart devices')}</a></li>
+    <li><a class="nav__link--accent" aria-label="Robonomics smart devices" href={generatePath("/devices/")}>{$tr('Smart devices')}</a></li>
     <li><a aria-label="Robonomics dapp" href="https://robonomics.app/" target="_blank">{$tr('dapp')}</a></li>
     <li><a aria-label="Robonomics merch" href={generatePath("/merch/")}>{$tr('Wearable merch')}</a></li>
   </ul>
@@ -89,6 +89,24 @@ const generatePath = (path) => {
   ul:nth-child(3) {
     column-count: 4;
     gap: var(--space);
+  }
+
+  nav a.nav__link--accent {
+    padding: 0.6em 1em;
+    margin-bottom: calc(var(--space) * 0.5);
+    background: var(--rb-color-green-accent);
+    font-size: 80%;
+    font-variation-settings: var(--font-flex-bold);
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    clip-path: polygon(
+      0% 5%, 10% 0%, 20% 6%, 30% 3%, 40% 5%, 
+      50% 0%, 60% 6%, 70% 2%, 80% 7%, 90% 0%, 
+      100% 4%, 100% 100%, 0% 100%
+    );
+    box-shadow: 2px 2px 0 var(--color-dark);
+    transform: rotate(-1.5deg);
   }
 
   @media screen and (width > 1400px) {
