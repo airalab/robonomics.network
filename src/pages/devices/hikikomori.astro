@@ -1,15 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { Image } from 'astro:assets';
 
 // data
 import devices from '../../data/devices.js';
 
 // components import 
 import DeviceBuySection from '../../components/blocks/DevicesBuySection.vue';
+import HikikomoriModel from '../../components/3dmodels/Hikikomori.vue';
 
-// images
-import HikikomoriImage from "../../assets/images/hardware-2025/hikikomori.webp";
 
 // Filter products to get the current one
 const hikikomori = devices.products.filter(product => product.code === 'hikikomori');
@@ -25,7 +23,7 @@ const hikikomori = devices.products.filter(product => product.code === 'hikikomo
 >
 
   <DeviceBuySection price="$75" title={hikikomori[0].title} orderLinks={hikikomori[0].orderLinks} info={hikikomori[0].info} available={hikikomori[0].available} client:only>
-    <Image src={HikikomoriImage} alt={'Hikikomori smart Tamagotchi picture'}/>
+    <HikikomoriModel noanimation client:visible />
   </DeviceBuySection>
 
   <article class="layout layout__text space-b-2">
