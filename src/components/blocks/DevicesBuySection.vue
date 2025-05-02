@@ -165,7 +165,7 @@ onMounted(() => {
 <style scoped>
 .section-vivid-green {
   position: relative;
-  min-height: 568px;
+  min-height: 468px;
   display: grid;
   grid-template-columns: 1.5fr 2fr;
   gap: calc(var(--space) * 2);
@@ -174,7 +174,6 @@ onMounted(() => {
   margin-bottom: calc(var(--space) * 2);
   z-index: 15;
 }
-
 section {
   max-width: 500px;
 }
