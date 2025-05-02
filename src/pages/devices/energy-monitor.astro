@@ -1,15 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { Image } from 'astro:assets';
 
 // data
 import devices from '../../data/devices.js';
 
 // components import 
 import DeviceBuySection from '../../components/blocks/DevicesBuySection.vue';
+import EMonitorModel from '../../components/3dmodels/E-Monitor.vue';
 
-// images
-import EMonitorImage from "../../assets/images/hardware-2025/energy-monitor-nobg.webp";
 
 // Filter products to get the current one
 const eMonitor = devices.products.filter(product => product.code === 'energy-monitor');
@@ -25,7 +23,7 @@ const eMonitor = devices.products.filter(product => product.code === 'energy-mon
 >
 
   <DeviceBuySection price="$45" title={eMonitor[0].title} orderLinks={eMonitor[0].orderLinks} info={eMonitor[0].info} available={eMonitor[0].available} client:only>
-    <Image src={EMonitorImage} alt={'Energy Monitor picture'}/>
+    <EMonitorModel noanimation client:visible/>
   </DeviceBuySection>
 
 
