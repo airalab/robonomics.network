@@ -1,11 +1,9 @@
 ---
 import ModelRiskV from '../3dmodels/Server.vue';
 import ModelAltruist from '../3dmodels/Altruist.vue'
+import ModelEMonitor from '../3dmodels/E-Monitor.vue'
+import ModelHikikomori from '../3dmodels/Hikikomori.vue'
 import { getLocale } from "astro-i18n-aut";;
-// images
-import { Image } from 'astro:assets';
-import Tamagotchi from "../../assets/images/hardware-2025/hikikomori.webp"
-import EnergyMonitor from "../../assets/images/hardware-2025/energy-monitor.webp"
 
 // styles
 import '../../assets/styles/components/3dmodels.css'
@@ -38,18 +36,10 @@ const generatePath = (path) => {
             <ModelRiskV classList="product-picture-server" client:only />
         )}
         {product.code === 'hikikomori' && (
-          <Image
-            src={Tamagotchi}
-            alt={`${product.title} picture`}
-            class="product-picture--hikikomori"
-          />
+          <ModelHikikomori client:only />
         )}
         {product.code === 'energy-monitor' && (
-          <Image
-            class="product-picture--energy-monitor"
-            src={EnergyMonitor}
-            alt={`${product.title} picture`}
-          />
+          <ModelEMonitor client:only />
         )} 
         {product.titleLink && (
           <a href={generatePath(product.titleLink)} class="link-cover"></a>
