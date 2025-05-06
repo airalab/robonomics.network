@@ -232,7 +232,7 @@ const hwLogos = [
 	</section>
 
 	<!-- color pallet section -->
-	<section class="color-pallet animate-inside">
+	<section class="color-pallet animate-inside space-b-2">
 		<div class="layout text-center container">
 			<div class="logos-and-assets__header">
 				<h2 id="colorPalette">
@@ -265,6 +265,13 @@ const hwLogos = [
 						<span class="color-pallet__code">#5fce05</span>
 					</li>
 				</ul>
+		</div>
+	</section>
+
+	<section class="font-used">
+		<div class="layout layout-text container">
+			<h2 class="highlight-solid-green">{$tr('Typography')}</h2>
+			<p>{$tr('We use')} <b>Roboto Flex (Variable)</b> {$tr("as our primary typeface for its modern versatility and adaptability across screen sizes and weights. It's designed for clarity, performance, and a cohesive visual identity across all platforms. It’s available for free online, so anyone can download and stay aligned with our style.")}</p>
 		</div>
 	</section>
 
@@ -382,6 +389,11 @@ const hwLogos = [
   .color-pallet__item--green {
     background-color: #5fce05
   }
+
+	.font-used h2 {
+    margin-bottom: calc(var(--space) * 0.5);
+		text-align: left;
+	}
 
   @media screen and (max-width: 920px) {
     .logos-and-assets__banner .container {
