@@ -1351,5 +1351,13 @@
 	"ESP32_C6_series_of_SoCs__32_bit_RISC_V_single_core_microprocessor": "ESP32-C6 시리즈 SoC, 32비트 RISC-V 싱글코어 마이크로프로세서",
 	"_320_KB_ROM__512_KB_SRAM__4_MB_FLASH": "320 KB ROM, 512 KB SRAM, 4 MB FLASH",
 	"Powered_by_Tasmota__an_open_firmware_distributed_under_GNU_GPLv3__the_firmware_can_be_upgraded_via_USB_C_or_OTA__To_learn_more_and_download_the_latest_firmware__visit_": "Tasmota로 구동되며 GNU GPLv3 하에 배포되는 오픈 펌웨어로, 펌웨어는 USB-C 또는 OTA를 통해 업그레이드할 수 있습니다. 자세한 내용 및 최신 펌웨어 다운로드는 방문하세요:",
-	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; 소음 레벨 센서: I2S INMP441, ICS-43434; GPS: BN220-GSP; 게이거 카운터 : Radsens."
+	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; 소음 레벨 센서: I2S INMP441, ICS-43434; GPS: BN220-GSP; 게이거 카운터 : Radsens.",
+	"Decentralized_Photo_Experience_at_Lugano_2025___Powered_by_IPFS___Home_Assistant": "루가노 2025에서의 분산형 사진 체험 - IPFS 및 홈 어시스턴트로 구동됩니다",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added__Everything_is_fully_decentralized__the_camera_and_smart_LED_are_connected_to_Home_Assistant__the_photos_are_stored_on_IPFS__and_participants_can_browse_and_download_their_pictures_from_the_gallery_on_our_website_hosted_on_GitHub___all_without_any_tracking__targeting__or_surveillance_": "우리는 Decentralized Lugano 2025에 참여하는 것을 기대하고 있습니다! 5월 8일에 참가자들은 재미있고 미소 가득한 사진을 찍을 수 있습니다 - 미소는 무작위로 자동으로 추가됩니다. 모든 것이 완전히 분산화되어 있습니다: 카메라와 스마트 LED는 Home Assistant에 연결되어 있고, 사진은 IPFS에 저장되며, 참가자들은 우리의 GitHub 호스팅 웹사이트 갤러리에서 사진을 찾아보고 다운로드할 수 있습니다 - 모두 추적, 타겟팅 또는 감시 없이.",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added_": "우리는 Decentralized Lugano 2025에 참여하는 것을 기대하고 있습니다! 5월 8일에 참가자들은 재미있고 미소 가득한 사진을 찍을 수 있습니다 - 미소가 무작위로 자동으로 추가됩니다.",
+	"Check_out_the_gallery": "갤러리를 확인해보세요",
+	"Photo_Gallery_for_Lugano_2025": "루가노 2025를 위한 사진 갤러리",
+	"Come_get_your_photo_": "사진을 가져가세요.",
+	"Gallery": "갤러리",
+	"Download": "다운로드"
 }

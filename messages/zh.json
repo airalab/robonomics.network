@@ -1351,5 +1351,13 @@
 	"ESP32_C6_series_of_SoCs__32_bit_RISC_V_single_core_microprocessor": "ESP32-C6 系列 SoC，32 位 RISC-V 单核微处理器",
 	"_320_KB_ROM__512_KB_SRAM__4_MB_FLASH": "320 KB 只读存储器，512 KB 静态随机存取存储器，4 MB 闪存",
 	"Powered_by_Tasmota__an_open_firmware_distributed_under_GNU_GPLv3__the_firmware_can_be_upgraded_via_USB_C_or_OTA__To_learn_more_and_download_the_latest_firmware__visit_": "由Tasmota提供支持，这是一个在GNU GPLv3下分发的开源固件，固件可以通过USB-C或OTA进行升级。要了解更多信息并下载最新固件，请访问：",
-	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; 噪音级传感器: I2S INMP441, ICS-43434; GPS: BN220-GSP; 核辐射计: Radsens."
+	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; 噪音级传感器: I2S INMP441, ICS-43434; GPS: BN220-GSP; 核辐射计: Radsens.",
+	"Decentralized_Photo_Experience_at_Lugano_2025___Powered_by_IPFS___Home_Assistant": "2025年卢加诺分散式照片体验 — 由IPFS和Home Assistant提供支持",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added__Everything_is_fully_decentralized__the_camera_and_smart_LED_are_connected_to_Home_Assistant__the_photos_are_stored_on_IPFS__and_participants_can_browse_and_download_their_pictures_from_the_gallery_on_our_website_hosted_on_GitHub___all_without_any_tracking__targeting__or_surveillance_": "我们很高兴参加2025年分散式卢加诺活动！5月8日，参与者可以拍摄充满乐趣和微笑的照片 — 微笑会被随机自动添加。一切都是完全分散的：相机和智能LED连接到Home Assistant，照片存储在IPFS上，参与者可以在我们托管在GitHub上的网站画廊中浏览和下载他们的照片 — 一切都没有任何跟踪、定位或监视。",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added_": "我们很高兴参加2025年分散式卢加诺活动！参与者可以在5月8日拍摄充满乐趣和微笑的照片，微笑会被随机自动添加。",
+	"Check_out_the_gallery": "查看画廊",
+	"Photo_Gallery_for_Lugano_2025": "卢加诺2025年的照片库",
+	"Come_get_your_photo_": "来拿你的照片。",
+	"Gallery": "画廊",
+	"Download": "下载"
 }

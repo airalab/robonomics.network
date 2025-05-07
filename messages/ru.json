@@ -1351,5 +1351,13 @@
 	"ESP32_C6_series_of_SoCs__32_bit_RISC_V_single_core_microprocessor": "Серия микроконтроллеров ESP32-C6, 32-разрядный одноядерный микропроцессор RISC-V",
 	"_320_KB_ROM__512_KB_SRAM__4_MB_FLASH": "320 КБ ROM, 512 КБ SRAM, 4 МБ FLASH",
 	"Powered_by_Tasmota__an_open_firmware_distributed_under_GNU_GPLv3__the_firmware_can_be_upgraded_via_USB_C_or_OTA__To_learn_more_and_download_the_latest_firmware__visit_": "Работает на Tasmota, открытой прошивке, распространяемой по лицензии GNU GPLv3, прошивку можно обновить через USB-C или OTA. Чтобы узнать больше и загрузить последнюю версию прошивки, посетите:",
-	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; Датчик уровня шума: I2S INMP441, ICS-43434; GPS: BN220-GSP; Счетчик Гейгера: Radsens."
+	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; Датчик уровня шума: I2S INMP441, ICS-43434; GPS: BN220-GSP; Счетчик Гейгера: Radsens.",
+	"Decentralized_Photo_Experience_at_Lugano_2025___Powered_by_IPFS___Home_Assistant": "Децентрализованный фотоопыт в Лугано 2025 года — на базе IPFS и Home Assistant",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added__Everything_is_fully_decentralized__the_camera_and_smart_LED_are_connected_to_Home_Assistant__the_photos_are_stored_on_IPFS__and_participants_can_browse_and_download_their_pictures_from_the_gallery_on_our_website_hosted_on_GitHub___all_without_any_tracking__targeting__or_surveillance_": "Мы рады принять участие в мероприятии Decentralized Lugano 2025! В 8 мая участники смогут сделать веселые фотографии с улыбками, которые будут добавлены случайным и автоматическим образом. Все полностью децентрализовано: камера и умный светодиод подключены к Home Assistant, фотографии хранятся на IPFS, и участники могут просматривать и загружать свои фотографии из галереи на нашем сайте, размещенном на GitHub, - все это без отслеживания, таргетинга или наблюдения.",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added_": "Мы рады принять участие в мероприятии Decentralized Lugano 2025! 8 мая участники смогут сделать веселые фотографии, на которых улыбки будут добавлены случайным и автоматическим образом.",
+	"Check_out_the_gallery": "Посмотрите галерею",
+	"Photo_Gallery_for_Lugano_2025": "Фотогалерея для Лугано 2025",
+	"Come_get_your_photo_": "Подойдите за своим фото.",
+	"Gallery": "Галерея",
+	"Download": "Скачать"
 }

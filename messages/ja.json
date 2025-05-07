@@ -1351,5 +1351,13 @@
 	"ESP32_C6_series_of_SoCs__32_bit_RISC_V_single_core_microprocessor": "ESP32-C6シリーズのSoC、32ビットRISC-Vシングルコアマイクロプロセッサ",
 	"_320_KB_ROM__512_KB_SRAM__4_MB_FLASH": "320 KB ROM、512 KB SRAM、4 MB FLASH",
 	"Powered_by_Tasmota__an_open_firmware_distributed_under_GNU_GPLv3__the_firmware_can_be_upgraded_via_USB_C_or_OTA__To_learn_more_and_download_the_latest_firmware__visit_": "Tasmotaによって動作し、GNU GPLv3の下で配布されているオープンファームウェアは、USB-CまたはOTA経由でファームウェアをアップグレードすることができます。詳細や最新のファームウェアをダウンロードするには、以下をご覧ください：",
-	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; Noise Level Sensor: I2S INMP441, ICS-43434; GPS: BN220-GSP; Geiger counter : Radsens."
+	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; Noise Level Sensor: I2S INMP441, ICS-43434; GPS: BN220-GSP; Geiger counter : Radsens.",
+	"Decentralized_Photo_Experience_at_Lugano_2025___Powered_by_IPFS___Home_Assistant": "ルガーノ2025での分散型写真体験 — IPFSとHome Assistantによって提供",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added__Everything_is_fully_decentralized__the_camera_and_smart_LED_are_connected_to_Home_Assistant__the_photos_are_stored_on_IPFS__and_participants_can_browse_and_download_their_pictures_from_the_gallery_on_our_website_hosted_on_GitHub___all_without_any_tracking__targeting__or_surveillance_": "Decentralized Lugano 2025 に参加することを楽しみにしています！5月8日、参加者は楽しく笑顔いっぱいの写真を撮ることができます — 笑顔はランダムに自動的に追加されます。すべてが完全に分散化されています：カメラとスマートLEDはHome Assistantに接続され、写真はIPFSに保存され、参加者はGitHubでホストされたウェブサイトのギャラリーから自分の写真を閲覧してダウンロードすることができます — すべてが追跡、ターゲティング、監視なしで行われます。",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added_": "私たちはDecentralized Lugano 2025に参加することを楽しみにしています！5月8日、参加者は楽しく笑顔いっぱいの写真を撮ることができます — 笑顔がランダムに自動的に追加されます。",
+	"Check_out_the_gallery": "ギャラリーをチェックしてください",
+	"Photo_Gallery_for_Lugano_2025": "ルガーノ2025の写真ギャラリー",
+	"Come_get_your_photo_": "写真を取りに来てください。",
+	"Gallery": "ギャラリー",
+	"Download": "ダウンロード"
 }
