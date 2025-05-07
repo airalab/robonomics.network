@@ -36,14 +36,14 @@
     <ul v-if="filteredCases.length > 0" class="layout blog_grid text-center cases__wrapper list-simple">
       <li class="cases__item" v-for="caseItem in filteredCases" :key="caseItem.id">
         <div class="post-card oldy post-card--case" :class="{ 'in-progress': !caseItem.done }">
-          <a :href="caseItem.done ? '/' + caseItem.path + '/' : '/cases/'" target="_blank"
+          <a :href="caseItem.done ? '/' + caseItem.path + '/' : '/cases/'"
             aria-label="learn more about the case">
             <img v-if="caseItem.cover_image" alt={caseItem.title} class="post-card__image"
               :src="`/images/cases/${caseItem.cover_image}`"
               loading="lazy" />
           </a>
           <div class="post-card__content">
-            <a :href="caseItem.done ? '/' + caseItem.path + '/' : '/cases/'" target="_blank"
+            <a :href="caseItem.done ? '/' + caseItem.path + '/' : '/cases/'"
               aria-label="learn more about the case">
               <h4 class="post-card__title" v-html="$tr(caseItem.title)" />
             </a>

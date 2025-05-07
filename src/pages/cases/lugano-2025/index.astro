@@ -18,7 +18,7 @@ import CaseText from "../../../components/cases/CaseText.astro";
     <CaseText
       multiple
     >
-      <div class="space-b text-center"><img src="/images/cases/lugano-2025.webp" alt="Galley preview"/></div>
+      <div class="space-b-2 text-center"><img src="/images/cases/lugano-2025.webp" alt="Galley preview"/></div>
 
       <p>{$tr('We’re excited to participate in Decentralized Lugano 2025! On May 8th, participants can take fun, smile-filled photos — with smiles randomly and automatically added. Everything is fully decentralized: the camera and smart LED are connected to Home Assistant, the photos are stored on IPFS, and participants can browse and download their pictures from the gallery on our website hosted on GitHub — all without any tracking, targeting, or surveillance.')}</p>
 
@@ -30,3 +30,10 @@ import CaseText from "../../../components/cases/CaseText.astro";
   </section>
 
 </Layout>
+
+<style is:global>
+  .case-page__status {
+    display: none;
+  }
+
+</style>
