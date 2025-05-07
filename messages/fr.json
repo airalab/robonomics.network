@@ -1351,5 +1351,13 @@
 	"ESP32_C6_series_of_SoCs__32_bit_RISC_V_single_core_microprocessor": "Série de SoCs ESP32-C6, microprocesseur monocœur RISC-V 32 bits",
 	"_320_KB_ROM__512_KB_SRAM__4_MB_FLASH": "320 Ko ROM, 512 Ko SRAM, 4 Mo FLASH",
 	"Powered_by_Tasmota__an_open_firmware_distributed_under_GNU_GPLv3__the_firmware_can_be_upgraded_via_USB_C_or_OTA__To_learn_more_and_download_the_latest_firmware__visit_": "Alimenté par Tasmota, un micrologiciel open source distribué sous GNU GPLv3, le micrologiciel peut être mis à jour via USB-C ou OTA. Pour en savoir plus et télécharger le dernier micrologiciel, visitez :",
-	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; Capteur de niveau sonore: I2S INMP441, ICS-43434; GPS: BN220-GSP; Compteur Geiger : Radsens."
+	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; Capteur de niveau sonore: I2S INMP441, ICS-43434; GPS: BN220-GSP; Compteur Geiger : Radsens.",
+	"Decentralized_Photo_Experience_at_Lugano_2025___Powered_by_IPFS___Home_Assistant": "Expérience photo décentralisée à Lugano 2025 — Propulsée par IPFS & Home Assistant",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added__Everything_is_fully_decentralized__the_camera_and_smart_LED_are_connected_to_Home_Assistant__the_photos_are_stored_on_IPFS__and_participants_can_browse_and_download_their_pictures_from_the_gallery_on_our_website_hosted_on_GitHub___all_without_any_tracking__targeting__or_surveillance_": "Nous sommes ravis de participer à Decentralized Lugano 2025! Le 8 mai, les participants peuvent prendre des photos amusantes remplies de sourires - avec des sourires ajoutés de manière aléatoire et automatique. Tout est entièrement décentralisé: l'appareil photo et la LED intelligente sont connectés à Home Assistant, les photos sont stockées sur IPFS, et les participants peuvent parcourir et télécharger leurs images depuis la galerie sur notre site web hébergé sur GitHub - le tout sans aucun suivi, ciblage ou surveillance.",
+	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added_": "Nous sommes ravis de participer à Decentralized Lugano 2025 ! Le 8 mai, les participants pourront prendre des photos amusantes remplies de sourires, avec des sourires ajoutés de manière aléatoire et automatique.",
+	"Check_out_the_gallery": "Découvrez la galerie",
+	"Photo_Gallery_for_Lugano_2025": "Galerie photo pour Lugano 2025",
+	"Come_get_your_photo_": "Viens chercher ta photo.",
+	"Gallery": "Galerie",
+	"Download": "Télécharger"
 }

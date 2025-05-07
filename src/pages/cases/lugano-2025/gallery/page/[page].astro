@@ -1,0 +1,147 @@
+---
+import Layout from "../../../../../layouts/Layout.astro";
+import Loader from "../../../../../components/utils/LoaderSpin.vue";
+
+export async function getStaticPaths() {
+  const limit = 30;
+  const allFiles = await fetch(`https://media-roseman.robonomics.network/api/files?limit=${limit}`);
+  const res = await allFiles.json(); 
+  const result = res.result;
+  const { totalPages } = result;
+
+  // Generate paths for pages 2, 3, ...
+  return Array.from({ length: totalPages - 1 }, (_, i) => ({
+    params: { page: String(i + 2) },
+  }));
+}
+
+
+const { page } = Astro.params;
+const limit = 30;
+const API_URL = `https://media-roseman.robonomics.network/api/files?limit=${limit}&page=${page}`;
+const res = await fetch(API_URL);
+const result = await res.json(); 
+const fullResult = result.result;
+const { files, totalPages } = fullResult;
+const currentPage = Number(page);
+
+const images = files.map((file) => ({
+  url: `https://plum-relevant-hamster-134.mypinata.cloud/ipfs/${file.cid}`,
+  filename: file.filename,
+  timestamp: file.timestamp,
+}));
+---
+
+<Layout
+title={$tr('Photo Gallery for Lugano 2025 ')} 
+description={$tr('Come get your photo.')}
+>
+
+  <div class="layout">
+
+    <div class="highlight-solid-green__wrapper">
+      <h1 class="highlight-solid-green">{ $tr('Gallery') }</h1>
+    </div>
+    <div class="gallery grid grid-4">
+      {images.map((img) => (
+        <div class="gallery-item">
+          <div class="image-wrapper">
+            <Loader/>
+            <a href={img.url} download={img.filename}>
+              <img src={img.url} alt={img.filename} loading="lazy"  onload="this.parentElement.previousElementSibling.style.display='none'" />
+            </a>
+          </div>
+          <div class="caption">
+            <a class="download-link" href={img.url} download={img.filename}>
+              ⬇️ Download
+            </a>
+          </div>
+        </div>
+      ))}
+
+    </div>
+    <nav class="pagination">
+      {Array.from({ length: totalPages }, (_, i) => {
+        const pageNum = i + 1;
+        const href = pageNum === 1 ? '/cases/lugano-2025/gallery/' : `/cases/lugano-2025/gallery/page/${pageNum}/`;
+        return (
+          <a href={href} class={pageNum === currentPage ? 'active' : ''}>
+            {pageNum}
+          </a>
+        );
+      })}
+    </nav>
+  </div>
+</Layout>
+
+<style>
+
+  .gallery-item {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    text-align: center;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.02);
+  }
+
+  .gallery-item img {
+    height: auto;
+    display: block;
+  }
+
+  .image-wrapper {
+    min-height: 40px;
+    position: relative;
+  }
+
+  .caption {
+    padding: 0.5rem;
+  }
+
+  .download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    font-variation-settings: var(--font-flex-bold);
+    text-decoration: none;
+  }
+
+  .download-link:hover {
+    text-decoration: underline;
+  }
+
+  .pagination {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .pagination a {
+    padding: 0.3rem 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.33s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .pagination a:hover {
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+  }
+
+  .pagination a.active {
+    font-weight: 700;
+    background: var(--rb-color-green-accent);
+  }
+
+</style>
