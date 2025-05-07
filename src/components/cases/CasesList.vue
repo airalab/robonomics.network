@@ -45,10 +45,10 @@
           <div class="post-card__content">
             <a :href="caseItem.done ? '/' + caseItem.path + '/' : '/cases/'" target="_blank"
               aria-label="learn more about the case">
-              <h4 class="post-card__title" v-html="caseItem.title" />
+              <h4 class="post-card__title" v-html="$tr(caseItem.title)" />
             </a>
 
-            <p class="post-card__description" v-html="caseItem.description" />
+            <p class="post-card__description" v-html="$tr(caseItem.description)" />
             <div class="post-card__cases-bottom">
               <div class="post-card__tags">
                 <span v-for="tag in caseItem.tags" :key="tag" class="post-card__tag">
