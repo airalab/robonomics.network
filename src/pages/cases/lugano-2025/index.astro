@@ -1,0 +1,32 @@
+---
+// components
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/cases/CaseHeader.astro";
+import CaseText from "../../../components/cases/CaseText.astro";
+---
+
+<Layout
+  casePath={Astro.url}
+>
+
+  <Header
+    path={Astro.url.pathname}
+  />
+
+  <section class="case-page layout">
+
+    <CaseText
+      multiple
+    >
+      <div class="space-b text-center"><img src="/images/cases/lugano-2025.webp" alt="Galley preview"/></div>
+
+      <p>{$tr('We’re excited to participate in Decentralized Lugano 2025! On May 8th, participants can take fun, smile-filled photos — with smiles randomly and automatically added. Everything is fully decentralized: the camera and smart LED are connected to Home Assistant, the photos are stored on IPFS, and participants can browse and download their pictures from the gallery on our website hosted on GitHub — all without any tracking, targeting, or surveillance.')}</p>
+
+      <p><b>{$tr('Check out the gallery')} <a href="/cases/lugano-2025/gallery/">{$tr('here')}</a> 📷</b> </p>
+
+
+    </CaseText>
+
+  </section>
+
+</Layout>
