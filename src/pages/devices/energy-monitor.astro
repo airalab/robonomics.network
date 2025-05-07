@@ -38,10 +38,11 @@ const eMonitor = devices.products.filter(product => product.code === 'energy-mon
   <article class="layout layout__text space-b-2">
     <ul>
       <li> <b>{$tr('Input Voltage:')}</b> {$tr('AC 100-240V 50/60Hz')}</li>
-      <li><b>{$tr('Measuring Range:')} </b> {$tr('0.1-80A')}</li>
-      <li> <b>{$tr('Wireless Protocol:')} </b> {$tr('IEEE 802.11b/g/n (2.4 GHz Wi-Fi)')}</li>
-      <li><b>{$tr('CPU:')} </b> {$tr('ESP32-S3 MCU-based system on a chip (SoC) dual-core microprocessor (Xtensa 32-bit LX7), up to 240 MHz')}</li>
-      <li><b>{$tr('Memory:')} </b> {$tr('448 KB ROM, 520 KB SRAM, 8 MB FLASH')}
+      <li><b>{$tr('Measuring Range:')} </b> {$tr('0.1-60A')}</li>
+      <li><b>{$tr('Current transformer:')} </b> {$tr('OPCT10ATL 0-60A 1000/1')}</li>
+      <li> <b>{$tr('Wireless Protocol:')} </b> {$tr('IEEE 802.15.4 radio, Thread, Zigbee and Bluetooth 5 (LE), 2.4GHz Wi-Fi6 (802.11 b/g/n/ax)')}</li>
+      <li><b>{$tr('CPU:')} </b> {$tr('ESP32-C6 series of SoCs, 32-bit RISC-V single-core microprocessor')}</li>
+      <li><b>{$tr('Memory:')} </b> {$tr('320 KB ROM, 512 KB SRAM, 4 MB FLASH')}
       </li>
       <li><b>{$tr('USB-C')} </b> {$tr('for development and updates')} </li>
     </ul>
@@ -50,6 +51,9 @@ const eMonitor = devices.products.filter(product => product.code === 'energy-mon
   <h2 class="layout title-lined"><span>{$tr('Help & support')} </span></h2>
   <article class="layout layout__text space-b-2">
     <ul>
+      <li>
+        {$tr('Powered by Tasmota, an open firmware distributed under GNU GPLv3, the firmware can be upgraded via USB-C or OTA. To learn more and download the latest firmware, visit:')} <a class="highlight" href="https://tasmota.github.io/docs/Power-Monitoring-Calibration" target="_blank">https://tasmota.github.io/docs/Power-Monitoring-Calibration</a> <a class="highlight" href="https://tasmota.github.io/docs/Commands/#power-monitoring" target="_blank">https://tasmota.github.io/docs/Commands/#power-monitoring</a> 
+      </li>
       <li>{$tr('To configure the device, please visit:')} <a class="highlight" href="https://tasmota.github.io/docs/MQTT/" target="_blank">https://tasmota.github.io/docs/MQTT/</a></li>
     </ul>
   </article>
