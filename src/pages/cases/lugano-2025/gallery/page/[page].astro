@@ -47,15 +47,10 @@ description={$tr('Come get your photo.')}
         <div class="gallery-item">
           <div class="image-wrapper">
             <Loader/>
-            <a href={img.url} download={img.filename}>
+            <a href={img.url} download={img.filename} target="_blank">
               <img src={img.url} alt={img.filename} loading="lazy"  onload="this.parentElement.previousElementSibling.style.display='none'" />
             </a>
           </div>
-          {/* <div class="caption">
-            <a class="download-link" href={img.url} download={img.filename}>
-              ⬇️ Download
-            </a>
-          </div> */}
         </div>
       ))}
 
