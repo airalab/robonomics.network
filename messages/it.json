@@ -1233,8 +1233,6 @@
 	"As_the_robotics_industry_continues_to_grow__the_amount_of_data_generated_will_continue_to_rise__This_service_ensures_that_companies_can_manage_their_data_efficiently_while_adhering_to_privacy_and_regulatory_standards__Furthermore__it_allows_companies_to_focus_on_innovation_and_growth_rather_than_data_storage_challenges_": "Poiché l'industria della robotica continua a crescere, la quantità di dati generati continuerà ad aumentare. Questo servizio garantisce che le aziende possano gestire i propri dati in modo efficiente nel rispetto degli standard di privacy e regolamentari. Inoltre, consente alle aziende di concentrarsi sull'innovazione e sulla crescita anziché sulle sfide legate allo storage dei dati.",
 	"Looking_Ahead": "Guardando avanti",
 	"This_service_represents_the_first_step_in_what_will_likely_be_an_expanding_ecosystem_of_decentralized_solutions_for_robotics_companies__As_the_technology_and_industry_continue_to_evolve__there_will_be_further_developments_to_enhance_scalability__provide_more_encryption_options__and_integrate_with_other_Web3_services_": "Questo servizio rappresenta il primo passo in quello che probabilmente sarà un ecosistema in espansione di soluzioni decentralizzate per le aziende di robotica. Poiché la tecnologia e l'industria continuano a evolversi, ci saranno ulteriori sviluppi per migliorare la scalabilità, fornire più opzioni di crittografia e integrarsi con altri servizi Web3.",
-	"For_additional_details_about_the_collaboration_between_Robonomics_and_Crust_Network_and_how_decentralized_storage_is_reshaping_data_management_for_robotics_companies__visit_the_official": "Per ulteriori dettagli sulla collaborazione tra Robonomics e Crust Network e su come lo storage decentralizzato sta ridefinendo la gestione dei dati per le aziende di robotica, visita il sito ufficiale",
-	"blog": "blog",
 	"Learn_More_About_the_Collaboration": "Scopri di più sulla collaborazione",
 	"Robonomics_is_an_open_source_platform_that_facilitates_both_simple_IoT_services_and_complex_robotics__enabling_effective_communication_between_agents__whether_they_are_human_or_robotic__To_integrate_robots_into_this_system__we_utilize_ROS__In_this_article__we_aim_to_provide_an_overview_of_our_process_for_integrating_Robonomics_into_ROS_2_": "Robonomics è una piattaforma open-source che facilita sia servizi IoT semplici che robotica complessa, consentendo una comunicazione efficace tra agenti, che siano umani o robotici. Per integrare i robot in questo sistema, utilizziamo ROS. In questo articolo, ci proponiamo di fornire una panoramica del nostro processo per integrare Robonomics in ROS 2.",
 	"Why_ROS_2_in_Robonomics_": "Perché ROS 2 in Robonomics?",
@@ -1358,8 +1356,8 @@
 	"Check_out_the_gallery": "Guarda la galleria",
 	"Photo_Gallery_for_Lugano_2025": "Galleria fotografica per Lugano 2025",
 	"Come_get_your_photo_": "Vieni a prendere la tua foto.",
-	"Gallery": "Galleria",
 	"Funny_gallery": "Galleria divertente",
 	"Decentralized_Lugano_2025_Case": "Caso Lugano 2025 Decentralizzato",
-	"Go_to_Decentralized_Lugano_2025_Case": "Vai al caso di Lugano Decentralizzato 2025"
+	"Go_to_Decentralized_Lugano_2025_Case": "Vai al caso di Lugano Decentralizzato 2025",
+	"For_additional_details_about_the_collaboration_between_Robonomics_and_Crust_Network_and_how_decentralized_storage_is_reshaping_data_management_for_robotics_companies__visit_the_official_blog_": "Per ulteriori dettagli sulla collaborazione tra Robonomics e Crust Network e su come lo storage decentralizzato sta ridefinendo la gestione dei dati per le aziende di robotica, visita il blog ufficiale:"
 }

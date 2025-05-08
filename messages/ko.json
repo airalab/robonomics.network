@@ -1233,8 +1233,6 @@
 	"As_the_robotics_industry_continues_to_grow__the_amount_of_data_generated_will_continue_to_rise__This_service_ensures_that_companies_can_manage_their_data_efficiently_while_adhering_to_privacy_and_regulatory_standards__Furthermore__it_allows_companies_to_focus_on_innovation_and_growth_rather_than_data_storage_challenges_": "로봇공학 산업이 계속 성장함에 따라 생성되는 데이터 양도 계속 증가할 것입니다. 이 서비스는 기업이 개인정보 보호 및 규제 기준을 준수하면서 데이터를 효율적으로 관리할 수 있도록 보장합니다. 더불어, 이는 기업이 데이터 저장에 대한 도전이 아닌 혁신과 성장에 집중할 수 있도록 합니다.",
 	"Looking_Ahead": "전망하기",
 	"This_service_represents_the_first_step_in_what_will_likely_be_an_expanding_ecosystem_of_decentralized_solutions_for_robotics_companies__As_the_technology_and_industry_continue_to_evolve__there_will_be_further_developments_to_enhance_scalability__provide_more_encryption_options__and_integrate_with_other_Web3_services_": "로봇 기업을 위한 탈중앙화 솔루션의 확장 생태계의 첫 번째 단계를 대표하는 이 서비스는 기술과 산업이 계속 발전함에 따라 확장 가능성을 향상시키고 더 많은 암호화 옵션을 제공하며 다른 Web3 서비스와 통합하기 위한 추가 발전이 있을 것입니다.",
-	"For_additional_details_about_the_collaboration_between_Robonomics_and_Crust_Network_and_how_decentralized_storage_is_reshaping_data_management_for_robotics_companies__visit_the_official": "로보노믹스와 크러스트 네트워크 간의 협력 및 로봇 공장 기업을 위한 데이터 관리를 재구성하는 탈중앙화 스토리지에 대한 자세한 내용은 공식 사이트에서 확인하세요.",
-	"blog": "블로그",
 	"Learn_More_About_the_Collaboration": "협업에 대해 더 알아보기",
 	"Robonomics_is_an_open_source_platform_that_facilitates_both_simple_IoT_services_and_complex_robotics__enabling_effective_communication_between_agents__whether_they_are_human_or_robotic__To_integrate_robots_into_this_system__we_utilize_ROS__In_this_article__we_aim_to_provide_an_overview_of_our_process_for_integrating_Robonomics_into_ROS_2_": "로보노믹스는 간단한 IoT 서비스와 복잡한 로봇 공학을 모두 용이하게 하는 오픈 소스 플랫폼으로, 인간이나 로봇인지에 상관없이 효과적인 에이전트 간 통신을 가능하게 합니다. 이 시스템에 로봇을 통합하기 위해 우리는 ROS를 활용합니다. 이 글에서는 로보노믹스를 ROS 2에 통합하는 과정에 대한 개요를 제공하고자 합니다.",
 	"Why_ROS_2_in_Robonomics_": "로보노믹스에서 ROS 2를 사용하는 이유는 무엇인가요?",
@@ -1358,8 +1356,8 @@
 	"Check_out_the_gallery": "갤러리를 확인해보세요",
 	"Photo_Gallery_for_Lugano_2025": "루가노 2025를 위한 사진 갤러리",
 	"Come_get_your_photo_": "사진을 가져가세요.",
-	"Gallery": "갤러리",
 	"Funny_gallery": "웃긴 갤러리",
 	"Decentralized_Lugano_2025_Case": "분산화된 루가노 2025 사례",
-	"Go_to_Decentralized_Lugano_2025_Case": "분산형 루가노 2025 사례로 이동하세요"
+	"Go_to_Decentralized_Lugano_2025_Case": "분산형 루가노 2025 사례로 이동하세요",
+	"For_additional_details_about_the_collaboration_between_Robonomics_and_Crust_Network_and_how_decentralized_storage_is_reshaping_data_management_for_robotics_companies__visit_the_official_blog_": "로보노믹스와 크러스트 네트워크 간의 협력 및 분산 저장소가 로봇 기업들의 데이터 관리를 혁신하는 방법에 대한 자세한 내용은 공식 블로그를 방문하세요:"
 }

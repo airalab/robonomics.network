@@ -33,6 +33,7 @@ const caseData = casePath ? items.cases.filter(c => casePath.pathname.includes(c
 const pageTitleFinal = caseData.length ? await $tr(caseData[0]?.title) : await title || `${siteName} / Robonomics Network`;
 const pageDescriptionFinal = caseData.length ? await $tr(caseData[0]?.description) : await description || siteDescription;
 const pageImageFinal = caseData.length ? caseData[0]?.metaImg : (ogImage && `${siteUrl}${ogImage}` || `${siteUrl}/website_cover.webp`);
+const backlinkLabel = backlink && await $tr(backlink.label);
 
 // Import styles
 import '../assets/styles/main.css';
@@ -45,7 +46,7 @@ const isHome = Astro.url.pathname === '/';
 <html lang={languageTag()} amp dir={languageTag() === 'ar' ? 'rtl' : 'ltr'}>
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 	<meta name="generator" content={Astro.generator} />
 
@@ -86,7 +87,7 @@ const isHome = Astro.url.pathname === '/';
         <Header translated={translated}/>
 
         {pageTitle && <h1 set:html={pageTitle} class="pagetitle" />}
-        {backlink && <a class="backlink" href={backlink.link} aria-label={backlink.label}>&larr; {backlink.title}</a>}
+        {backlink && <a class="backlink" href={backlink.link} aria-label={backlinkLabel}>&larr; {backlink.title}</a>}
 
          <slot />
          <Footer translated={translated}/>

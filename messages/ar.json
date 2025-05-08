@@ -1233,8 +1233,6 @@
 	"As_the_robotics_industry_continues_to_grow__the_amount_of_data_generated_will_continue_to_rise__This_service_ensures_that_companies_can_manage_their_data_efficiently_while_adhering_to_privacy_and_regulatory_standards__Furthermore__it_allows_companies_to_focus_on_innovation_and_growth_rather_than_data_storage_challenges_": "كما تستمر صناعة الروبوتات في النمو، سيستمر حجم البيانات المُنتجة في الزيادة. يضمن هذا الخدمة أن تتمكن الشركات من إدارة بياناتها بكفاءة مع الالتزام بمعايير الخصوصية والتنظيمية. علاوة على ذلك، تتيح للشركات التركيز على الابتكار والنمو بدلاً من تحديات تخزين البيانات.",
 	"Looking_Ahead": "النظر إلى المستقبل",
 	"This_service_represents_the_first_step_in_what_will_likely_be_an_expanding_ecosystem_of_decentralized_solutions_for_robotics_companies__As_the_technology_and_industry_continue_to_evolve__there_will_be_further_developments_to_enhance_scalability__provide_more_encryption_options__and_integrate_with_other_Web3_services_": "هذه الخدمة تمثل الخطوة الأولى في ما سيكون على الأرجح نظامًا بيئيًا متناميًا من الحلول اللامركزية لشركات الروبوتات. مع استمرار تطور التكنولوجيا والصناعة، ستكون هناك مزيد من التطورات لتعزيز التوسعية، وتوفير المزيد من خيارات التشفير، والاندماج مع خدمات الويب3 الأخرى.",
-	"For_additional_details_about_the_collaboration_between_Robonomics_and_Crust_Network_and_how_decentralized_storage_is_reshaping_data_management_for_robotics_companies__visit_the_official": "للحصول على تفاصيل إضافية حول التعاون بين Robonomics و Crust Network وكيف أن تخزين البيانات اللامركزي يعيد تشكيل إدارة البيانات لشركات الروبوتات، قم بزيارة الموقع الرسمي",
-	"blog": "مدونة",
 	"Learn_More_About_the_Collaboration": "تعرف أكثر عن التعاون",
 	"Robonomics_is_an_open_source_platform_that_facilitates_both_simple_IoT_services_and_complex_robotics__enabling_effective_communication_between_agents__whether_they_are_human_or_robotic__To_integrate_robots_into_this_system__we_utilize_ROS__In_this_article__we_aim_to_provide_an_overview_of_our_process_for_integrating_Robonomics_into_ROS_2_": "روبونوميكس هو منصة مفتوحة المصدر تسهل كل من خدمات الإنترنت الأشياء البسيطة والروبوتات المعقدة، مما يمكن من التواصل الفعال بين الوكلاء، سواء كانوا بشرًا أو روبوتات. لدمج الروبوتات في هذا النظام، نستخدم ROS. في هذه المقالة، نهدف إلى تقديم نظرة عامة على عملية دمج روبونوميكس في ROS 2.",
 	"Why_ROS_2_in_Robonomics_": "لماذا ROS 2 في Robonomics؟",
@@ -1358,8 +1356,8 @@
 	"Check_out_the_gallery": "انظر إلى المعرض",
 	"Photo_Gallery_for_Lugano_2025": "معرض الصور للوغانو 2025",
 	"Come_get_your_photo_": "تعال واحصل على صورتك",
-	"Gallery": "صالة العرض",
 	"Funny_gallery": "معرض مضحك",
 	"Decentralized_Lugano_2025_Case": "حالة لوغانو 2025 لامركزية",
-	"Go_to_Decentralized_Lugano_2025_Case": "انتقل إلى حالة لوغانو اللامركزية 2025"
+	"Go_to_Decentralized_Lugano_2025_Case": "انتقل إلى حالة لوغانو اللامركزية 2025",
+	"For_additional_details_about_the_collaboration_between_Robonomics_and_Crust_Network_and_how_decentralized_storage_is_reshaping_data_management_for_robotics_companies__visit_the_official_blog_": "لمزيد من التفاصيل حول التعاون بين Robonomics و Crust Network وكيف أن تخزين البيانات اللامركزي يعيد تشكيل إدارة البيانات لشركات الروبوتات، قم بزيارة المدونة الرسمية:"
 }

@@ -3,13 +3,19 @@
 import CaseGithubLink from './CaseGithubLink.astro';
 
 const {link, linkText, showFooter = true, title, text, isProgress = false} = Astro.props;
+
 ---
 
 <section v-if="showFooter" class="case-page-footer layout">
   {!isProgress ? (
       <div class="layout__text">
         <h2>{ title }</h2>
-        <div class="mb" set:html={text} />
+        <div class="mb">
+          {text.map((paragraph) => (
+            // <p class="italic-abstract">{paragraph}</p>
+            <p class="italic-abstract" set:html={paragraph} />
+          ))}
+        </div>
         {link && (<CaseGithubLink link={link} linkText={linkText}/>)}
       </div>
   ) : (
