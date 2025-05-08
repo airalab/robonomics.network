@@ -1,9 +1,9 @@
 ---
 import Layout from "../../../../../layouts/Layout.astro";
-import Loader from "../../../../../components/utils/LoaderSpin.vue";
+import Gallery from "../../../../../components/blocks/Gallery.vue";
 
 export async function getStaticPaths() {
-  const limit = 30;
+  const limit = 50;
   const allFiles = await fetch(`https://media-roseman.robonomics.network/api/files?limit=${limit}`);
   const res = await allFiles.json(); 
   const result = res.result;
@@ -14,22 +14,6 @@ export async function getStaticPaths() {
     params: { page: String(i + 2) },
   }));
 }
-
-
-const { page } = Astro.params;
-const limit = 30;
-const API_URL = `https://media-roseman.robonomics.network/api/files?limit=${limit}&page=${page}`;
-const res = await fetch(API_URL);
-const result = await res.json(); 
-const fullResult = result.result;
-const { files, totalPages } = fullResult;
-const currentPage = Number(page);
-
-const images = files.map((file) => ({
-  url: `https://plum-relevant-hamster-134.mypinata.cloud/ipfs/${file.cid}`,
-  filename: file.filename,
-  timestamp: file.timestamp,
-}));
 ---
 
 <Layout
@@ -38,86 +22,5 @@ description={$tr('Come get your photo.')}
 pageTitle={$tr('Funny gallery')} 
 backlink={{title: $tr('Decentralized Lugano 2025 Case'), link: '/cases/lugano-2025/', label: $tr('Go to Decentralized Lugano 2025 Case')}}
 >
-
-<section class="section">
-  <div class="layout">
-    <div class="gallery grid grid-4">
-      {images.map((img) => (
-        <div class="gallery-item">
-          <div class="image-wrapper">
-            <Loader/>
-            <a href={img.url} download={img.filename} target="_blank">
-              <img src={img.url} alt={img.filename} loading="lazy"  onload="this.parentElement.previousElementSibling.style.display='none'" />
-            </a>
-          </div>
-        </div>
-      ))}
-
-    </div>
-    <nav class="pagination">
-      {Array.from({ length: totalPages }, (_, i) => {
-        const pageNum = i + 1;
-        const href = pageNum === 1 ? '/cases/lugano-2025/gallery/' : `/cases/lugano-2025/gallery/page/${pageNum}/`;
-        return (
-          <a href={href} class={pageNum === currentPage ? 'active' : ''}>
-            {pageNum}
-          </a>
-        );
-      })}
-    </nav>
-  </div>
-</section>
+<Gallery client:load />
 </Layout>
-
-<style>
-
-  .gallery-item {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
-    text-align: center;
-  }
-
-  .gallery-item:hover {
-    transform: scale(1.02);
-  }
-
-  .gallery-item img {
-    height: auto;
-    display: block;
-  }
-
-  .image-wrapper {
-    min-height: 40px;
-    position: relative;
-  }
-
-  .pagination {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 3rem;
-    justify-content: center;
-  }
-
-  .pagination a {
-    padding: 0.3rem 0.7rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.33s ease-in-out, border 0.3s ease-in-out;
-  }
-
-  .pagination a:hover {
-    color: var(--color-blue);
-    border: 1px solid var(--color-blue);
-  }
-
-  .pagination a.active {
-    font-weight: 700;
-    background: var(--rb-color-green-accent);
-  }
-
-</style>

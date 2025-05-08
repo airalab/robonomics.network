@@ -1,21 +1,6 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
-import Loader from "../../../components/utils/LoaderSpin.vue";
-
-const page = Number(Astro.url.searchParams.get("page") || 1);
-const limit = 30;
-
-const response = await fetch(`https://media-roseman.robonomics.network/api/files?limit=${limit}&page=${page}`);
-const res = await response.json(); 
-const result = res.result;
-
-const totalPages =  result.totalPages;
-
-const images = result.files.map((file) => ({
-  url: `https://plum-relevant-hamster-134.mypinata.cloud/ipfs/${file.cid}`,
-  filename: file.filename,
-  timestamp: file.timestamp,
-}));
+import Gallery from "../../../components/blocks/Gallery.vue";
 ---
 
 <Layout
@@ -24,81 +9,5 @@ const images = result.files.map((file) => ({
   pageTitle={$tr('Funny gallery')} 
   backlink={{title: $tr('Decentralized Lugano 2025 Case'), link: '/cases/lugano-2025/', label: $tr('Go to Decentralized Lugano 2025 Case')}}
 >
-<section class="section">
-  <div class="layout">
-    <div class="gallery grid grid-4">
-      {images.map((img) => (
-        <div class="gallery-item">
-          <div class="image-wrapper">
-            <Loader/>
-            <a href={img.url} download={img.filename} target="_blank">
-              <img src={img.url} alt={img.filename} loading="lazy"  onload="this.parentElement.previousElementSibling.style.display='none'" />
-            </a>
-          </div>
-        </div>
-      ))}
-
-    </div>
-    {totalPages !== 1 && <nav class="pagination">
-      {Array.from({ length: totalPages }, (_, i) => {
-        const page = i + 1;
-        const href = page === 1 ? '/cases/lugano-2025/gallery/' : `/cases/lugano-2025/gallery/page/${page}/`;
-        return <a href={href} class={page === 1 ? 'active' : ''}>{page}</a>;
-      })}
-    </nav>}
-  </div>
-</section>
+  <Gallery client:load />
 </Layout>
-
-<style>
-
-  .gallery-item {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
-    text-align: center;
-  }
-
-  .gallery-item:hover {
-    transform: scale(1.02);
-  }
-
-  .gallery-item img {
-    height: auto;
-    display: block;
-  }
-
-  .image-wrapper {
-    min-height: 40px;
-    position: relative;
-  }
-
-  .pagination {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 3rem;
-    justify-content: center;
-  }
-
-  .pagination a {
-    padding: 0.3rem 0.7rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.33s ease-in-out, border 0.3s ease-in-out;
-  }
-
-  .pagination a:hover {
-    color: var(--color-blue);
-    border: 1px solid var(--color-blue);
-  }
-
-  .pagination a.active {
-    font-weight: 700;
-    background: var(--rb-color-green-accent);
-  }
-
-</style>
