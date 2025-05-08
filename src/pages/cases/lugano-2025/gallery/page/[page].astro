@@ -33,15 +33,14 @@ const images = files.map((file) => ({
 ---
 
 <Layout
-title={$tr('Photo Gallery for Lugano 2025 ')} 
+title={$tr('Photo Gallery for Lugano 2025')} 
 description={$tr('Come get your photo.')}
+pageTitle={$tr('Funny gallery')} 
+backlink={{title: $tr('Decentralized Lugano 2025 Case'), link: '/cases/lugano-2025/', label: $tr('Go to Decentralized Lugano 2025 Case')}}
 >
 
+<section class="section">
   <div class="layout">
-
-    <div class="highlight-solid-green__wrapper">
-      <h1 class="highlight-solid-green">{ $tr('Gallery') }</h1>
-    </div>
     <div class="gallery grid grid-4">
       {images.map((img) => (
         <div class="gallery-item">
@@ -67,6 +66,7 @@ description={$tr('Come get your photo.')}
       })}
     </nav>
   </div>
+</section>
 </Layout>
 
 <style>
@@ -94,29 +94,10 @@ description={$tr('Come get your photo.')}
     position: relative;
   }
 
-  .caption {
-    padding: 0.5rem;
-  }
-
-  .download-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    margin-top: 0.3rem;
-    font-size: 1.2rem;
-    color: var(--color-blue);
-    font-variation-settings: var(--font-flex-bold);
-    text-decoration: none;
-  }
-
-  .download-link:hover {
-    text-decoration: underline;
-  }
-
   .pagination {
     display: flex;
     gap: 0.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     justify-content: center;
   }
 
