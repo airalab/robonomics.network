@@ -121,4 +121,11 @@ const stores = [
     font-variation-settings: var(--font-flex-extrabold);
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: 450px) {
+    .oldy:before {
+      top: 5px;
+      font-size: calc(var(--base-font-size) * 1.5);
+    }
+  }
 </style>
