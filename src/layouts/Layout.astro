@@ -87,7 +87,7 @@ const isHome = Astro.url.pathname === '/';
         <Header translated={translated}/>
 
         {pageTitle && <h1 set:html={pageTitle} class="pagetitle" />}
-        {backlink && <a class="backlink" href={backlink.link} aria-label={backlinkLabel}>&larr; {backlink.title}</a>}
+        {backlink && <div class="backlink"><a href={backlink.link} aria-label={backlinkLabel}>&larr; {backlink.title}</a></div>}
 
          <slot />
          <Footer translated={translated}/>
@@ -116,14 +116,20 @@ const isHome = Astro.url.pathname === '/';
   }
 
   .backlink {
-    color: var(--text-color);
-    display: block;
-    font-size: 0.8rem;
-    font-variation-settings: var(--font-flex-bold);
     margin-left: var(--layout-sidepadding);
     margin-top: calc(var(--space) * -2);
+  }
+
+  .backlink a {
     padding: 0.3rem 0;
+    font-size: 0.8rem;
+    font-variation-settings: var(--font-flex-bold);
+    color: var(--text-color);
     text-transform: uppercase;
+  }
+
+  .backlink a:hover {
+    color: var(--color-blue)
   }
 
   html[dir="rtl"]  .backlink  {
@@ -169,25 +175,25 @@ const isHome = Astro.url.pathname === '/';
   .sidetext-left.active--exact, .sidetext-left a.active--exact { opacity: .5; }
 
 
-.screen {
-	position: relative;
-  background-color: var(--color-light);
-  padding-top: var(--screen-padding-top);
-  padding-bottom: var(--screen-padding-bottom);
-  height: 100vh;
-  scrollbar-width: none;
-}
+  .screen {
+    position: relative;
+    background-color: var(--color-light);
+    padding-top: var(--screen-padding-top);
+    padding-bottom: var(--screen-padding-bottom);
+    height: 100vh;
+    scrollbar-width: none;
+  }
 
-.screen::-webkit-scrollbar { display: none; }
+  .screen::-webkit-scrollbar { display: none; }
 
-.screen-content {
-  position: relative;
-  background-color: var(--color-light);
-}
+  .screen-content {
+    position: relative;
+    background-color: var(--color-light);
+  }
 
-@media screen and (max-width: 680px) {
-  .footer-form.layout__content {
-    padding-left: 0;
+  @media screen and (max-width: 680px) {
+    .footer-form.layout__content {
+      padding-left: 0;
   }
 }
 

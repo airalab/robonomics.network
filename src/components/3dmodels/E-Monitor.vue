@@ -1,24 +1,24 @@
 <template>
   <div v-bind="$attrs" :class="classes" aria-label="3d model for energy monitor" ref="modelContainer">
     <div class="img">
-      <img src="/images/hardware-2025/energy-monitor/pink/E-Monitor-Layout-1.webp" alt="Energy Monitor Layout 1" />
-      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/energy-monitor/yellow/E-Monitor-Layout-1.webp" alt="Energy Monitor Layout 1" />
-      <img v-if="showColor === 'blue'" src="/images/hardware-2025/energy-monitor/blue/E-Monitor-Layout-1.webp" alt="Energy Monitor Layout 1" />
-    </div>
-
-    <div class="img">
-      <img src="/images/hardware-2025/energy-monitor/pink/E-Monitor-Layout-2.webp" alt="Energy Monitor Layout 2" />
-      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/energy-monitor/yellow/E-Monitor-Layout-2.webp" alt="Energy Monitor Layout 2" />
-      <img v-if="showColor === 'blue'" src="/images/hardware-2025/energy-monitor/blue/E-Monitor-Layout-2.webp" alt="Energy Monitor Layout 2" />
+      <img src="/images/hardware-2025/energy-monitor/pink/E-Monitor-Layout-4.webp" alt="Energy Monitor Layout 4" />
+      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/energy-monitor/yellow/E-Monitor-Layout-4.webp" alt="Energy Monitor Layout 4" />
+      <img v-if="showColor === 'blue'" src="/images/hardware-2025/energy-monitor/blue/E-Monitor-Layout-4.webp" alt="Energy Monitor Layout 4" />
     </div>
 
     <img class="img" src="/images/hardware-2025/energy-monitor/E-Monitor-Layout-3.webp" alt="Energy Monitor Layout 3" />
 
 
     <div class="img">
-      <img src="/images/hardware-2025/energy-monitor/pink/E-Monitor-Layout-4.webp" alt="Energy Monitor Layout 4" />
-      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/energy-monitor/yellow/E-Monitor-Layout-4.webp" alt="Energy Monitor Layout 4" />
-      <img v-if="showColor === 'blue'" src="/images/hardware-2025/energy-monitor/blue/E-Monitor-Layout-4.webp" alt="Energy Monitor Layout 4" />
+      <img src="/images/hardware-2025/energy-monitor/pink/E-Monitor-Layout-2.webp" alt="Energy Monitor Layout 2" />
+      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/energy-monitor/yellow/E-Monitor-Layout-2.webp" alt="Energy Monitor Layout 2" />
+      <img v-if="showColor === 'blue'" src="/images/hardware-2025/energy-monitor/blue/E-Monitor-Layout-2.webp" alt="Energy Monitor Layout 2" />
+    </div>
+    
+    <div class="img">
+      <img src="/images/hardware-2025/energy-monitor/pink/E-Monitor-Layout-1.webp" alt="Energy Monitor Layout 1" />
+      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/energy-monitor/yellow/E-Monitor-Layout-1.webp" alt="Energy Monitor Layout 1" />
+      <img v-if="showColor === 'blue'" src="/images/hardware-2025/energy-monitor/blue/E-Monitor-Layout-1.webp" alt="Energy Monitor Layout 1" />
     </div>
 
   </div>
@@ -69,7 +69,6 @@ const {
   position: relative;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
 }
 
 .model .img {
@@ -80,10 +79,6 @@ const {
   transition: transform 0.5s ease-out;
 }
 
-.model .img:first-child {
-  margin-bottom: calc(var(--opengap) * var(--koef) * 4);
-}
-
 .model .img:not(:first-child) {
   position: absolute;
   left: 0;
@@ -92,14 +87,14 @@ const {
 
 .model .img:nth-child(1) {
   position: relative;
-  z-index: 10;
+  z-index: 8;
 }
 
 .model .img img:nth-child(2) {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 4;
 }
 
 .model .img:nth-child(2) {
@@ -107,15 +102,18 @@ const {
 }
 
 .model .img:nth-child(3) {
-  z-index: 2;
+  z-index: 10;
 }
 
-.model .img:nth-child(2), .model .img:nth-child(4) {
-  transform: translateX(calc(var(--opengap) * var(--koef) * (-8)));
+.model .img:nth-child(2) {
+    z-index: 8;
+  transform: translateX(calc(var(--opengap) * var(--koef) * (4)));
 }
 
-.model .img:nth-child(3) {
-  transform: translateX(calc(var(--opengap) * var(--koef) * (-4)));
+
+.model .img:nth-child(4) {
+  z-index: 9;
+  transform: translateX(calc(var(--opengap) * var(--koef) * (7)));
 }
 
 

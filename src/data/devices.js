@@ -112,7 +112,7 @@ export default {
       title: $trVue('Home server with Web3 cloud'),
       text: $trVue('The most open-source smart home server, powered by RISC-V, with a Web3 cloud replacing Google servers under the hood.'),
       cases: $trVue('Smart WI-FI MQTT devices with open-source firmware Tasmota on the board fully compatible with Home Assistant.'),
-      titleLink: '/devices/risc-v',
+      titleLink: '/devices/smart-home-server',
       available:  true,
       orderLinks: [
         {

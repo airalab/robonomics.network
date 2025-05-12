@@ -37,10 +37,10 @@ const stores = [
   pageTitle={$tr("Robonomics merch")}
 >
 
-  <section class="layout">
-    <p class="layout layout__text">{$tr('Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.')}</p>
+  <section class="merch">
+    <div class="merch__banner"></div>
 
-    <section class="grid-3">
+    <section class="layout grid-3">
       {stores.map((store) => {
         const imageSrc = store.img;
 
@@ -60,32 +60,48 @@ const stores = [
         );
       })}
     </section>
+
+    <p class="layout layout__text">{$tr('Grab your merch with unique Robonomics art painted by our gorgeous girls. We created shops on the biggest online markets for artists, check it out and find t-shirts, long sleeves, hoodies, shower curtains, pillows, blankets and other useful stuff.')}</p>
   </section>
 </Layout>
 
 
 <style>
+
   .layout {
     text-align: center;
     font-variation-settings: var(--font-flex-medium);
     margin-bottom: var(--space-section);
   }
 
-  .bannerimg {
-    display: inline-block;
-    max-width: 300px;
+
+  .merch {
+    margin-top: 0;
+  }
+
+  .merch__banner{
+    min-height: 370px;
+    height: 100%;
+    width: 100%;
+    background-image: url('/images/merch/banner.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .grid-3 {
-    margin: var(--space) 0;
+    margin: calc(var(--space) * 2) 0;
+    margin-top: -50px;
     gap: calc(var(--space) * 2);
   }
 
   .oldy {
     --oldy-padding: calc(var(--space) * 2);
+    position: relative;
     display: flex;
     align-content: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   .oldy img {
@@ -98,5 +114,11 @@ const stores = [
 
   .oldy:before {
     content: attr(data-geo);
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: calc(var(--base-font-size) * 2);
+    font-variation-settings: var(--font-flex-extrabold);
+    text-transform: uppercase;
   }
 </style>

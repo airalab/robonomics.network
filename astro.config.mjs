@@ -27,6 +27,9 @@ const locales = {
 };
 
 export default defineConfig({
+  redirects: {
+    "/devices/risc-v/": "/devices/smart-home-server/",
+  },
   markdown: {
     syntaxHighlight: 'prism',
     gfm: true,
