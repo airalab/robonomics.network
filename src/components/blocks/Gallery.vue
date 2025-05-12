@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="layout">
+    <div class="layout" v-if="images && images.length">
       <div class="gallery grid grid-4">
         <div v-for="img in images" :key="img.filename" class="gallery-item">
           <div class="image-wrapper">
@@ -27,6 +27,10 @@
           {{ pageNum }}
         </a>
       </nav>
+    </div>
+
+    <div class="layout text-center" v-else>
+      No images were loaded...
     </div>
   </section>
 </template>

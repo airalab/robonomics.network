@@ -1,22 +1,7 @@
 <template>
   <div v-bind="$attrs" :class="classes" aria-label="3d model for Hikikomori" ref="modelContainer">
-    <img class="img" src="/images/hardware-2025/hikikomori/Hikikomori-Layout-2.webp" alt="Hikikomori Layout 2" />
-    <div class="img">
-      <img src="/images/hardware-2025/hikikomori/pink/Hikikomori-Layout-1.webp" alt="Hikikomori Layout 1" />
-      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/hikikomori/yellow/Hikikomori-Layout-1.webp" alt="Hikikomori Layout 1" />
-      <img v-if="showColor === 'blue'" src="/images/hardware-2025/hikikomori/blue/Hikikomori-Layout-1.webp" alt="Hikikomori Layout 1" />
-    </div>
 
-    <div class="img">
-      <img src="/images/hardware-2025/hikikomori/pink/Hikikomori-Layout-3.webp" alt="Hikikomori Layout 3" />
-      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/hikikomori/yellow/Hikikomori-Layout-3.webp" alt="Hikikomori Layout 3" />
-      <img v-if="showColor === 'blue'" src="/images/hardware-2025/hikikomori/blue/Hikikomori-Layout-3.webp" alt="Hikikomori Layout 3" />
-    </div>
-
-    <img class="img" src="/images/hardware-2025/hikikomori/Hikikomori-Layout-4.webp" alt="Hikikomori Layout 4" />
-
-
-    <img class="img" src="/images/hardware-2025/hikikomori/Hikikomori-Layout-5.webp" alt="Hikikomori Layout 5" />
+    <img class="img img-static" src="/images/hardware-2025/hikikomori/hikikomori.webp" />
 
     <div class="img">
       <img src="/images/hardware-2025/hikikomori/pink/Hikikomori-Layout-6.webp" alt="Hikikomori Layout 6" />
@@ -24,7 +9,23 @@
       <img v-if="showColor === 'blue'" src="/images/hardware-2025/hikikomori/blue/Hikikomori-Layout-6.webp" alt="Hikikomori Layout 6" />
     </div>
 
-    <img class="img img-static" src="/images/hardware-2025/hikikomori/hikikomori.webp" />
+    <img class="img" src="/images/hardware-2025/hikikomori/Hikikomori-Layout-5.webp" alt="Hikikomori Layout 5" />
+
+    <img class="img" src="/images/hardware-2025/hikikomori/Hikikomori-Layout-4.webp" alt="Hikikomori Layout 4" />
+
+    <div class="img">
+      <img src="/images/hardware-2025/hikikomori/pink/Hikikomori-Layout-3.webp" alt="Hikikomori Layout 3" />
+      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/hikikomori/yellow/Hikikomori-Layout-3.webp" alt="Hikikomori Layout 3" />
+      <img v-if="showColor === 'blue'" src="/images/hardware-2025/hikikomori/blue/Hikikomori-Layout-3.webp" alt="Hikikomori Layout 3" />
+    </div>
+
+    <div class="img">
+      <img src="/images/hardware-2025/hikikomori/pink/Hikikomori-Layout-1.webp" alt="Hikikomori Layout 1" />
+      <img v-if="showColor === 'yellow'" src="/images/hardware-2025/hikikomori/yellow/Hikikomori-Layout-1.webp" alt="Hikikomori Layout 1" />
+      <img v-if="showColor === 'blue'" src="/images/hardware-2025/hikikomori/blue/Hikikomori-Layout-1.webp" alt="Hikikomori Layout 1" />
+    </div>
+
+    <img class="img" src="/images/hardware-2025/hikikomori/Hikikomori-Layout-2.webp" alt="Hikikomori Layout 2" />
 
   </div>
 </template>
@@ -84,9 +85,6 @@ const {
   transition: transform 0.5s ease-out;
 }
 
-.model .img:first-child {
-  margin-bottom: calc(var(--opengap) * var(--koef) * 4);
-}
 
 .model .img:not(:first-child) {
   position: absolute;
@@ -96,7 +94,7 @@ const {
 
 .model .img:nth-child(1) {
   position: relative;
-  z-index: 9;
+  z-index: 6;
 }
 
 .model .img img:nth-child(2), .model .img img:nth-child(5),  .model .img img:nth-child(6) {
@@ -105,41 +103,53 @@ const {
   left: 0;
   z-index: 1;
 }
+
 .model .img:nth-child(2) {
-  z-index: 11;
-  /* transform:translateX(calc(var(--opengap) * var(--koef) * 4)); */
+  z-index: 9;
+  transform: translateX(calc(var(--opengap) * var(--koef) * (5)));
 }
 
-.model .img:nth-child(3), .model .img:nth-child(6) {
-  z-index: 8;
-  transform: translateX(calc(var(--opengap) * var(--koef) * (-3)));
-}
 
 .model .img:nth-child(3) {
   z-index: 9;
 }
 
-
 .model .img:nth-child(4) {
-  z-index: 6;
-  transform:translateX(calc(var(--opengap) * var(--koef) * (-5)));
+  z-index: 10;
+  transform:translateX(calc(var(--opengap) * var(--koef) * (3)));
 }
 
 .model .img:nth-child(5) {
-  z-index: 3;
-  transform:translateX(calc(var(--opengap) * var(--koef) * (-6)));
+  z-index: 11;
+  transform: translateX(calc(var(--opengap) * var(--koef) * (5)));
+}
+
+ .model .img:nth-child(6) {
+  z-index: 11;
+  transform:translateX(calc(var(--opengap) * var(--koef) * (7)));
+ }
+
+.model .img:nth-child(7) {
+  z-index: 10;
+  transform:translateX(calc(var(--opengap) * var(--koef) * (7)));
 }
 
 .model .img.img-static {
   z-index: 15;
-  left: 70%;
+  left: -20%;
 }
+
 .model-noanimation {
   overflow: hidden;
 }
 @media screen and (max-width: 850px) {
   .model .img {
     --opengap: 50px !important;
+  }
+
+  .model .img.img-static {
+    z-index: 15;
+    left: 0%;
   }
 }
 

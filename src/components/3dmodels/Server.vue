@@ -1,15 +1,15 @@
 <template>
   <div v-bind="$attrs" :class="classes" aria-label="3d model for Risc V" ref="modelContainer">
     <div class="img">
-      <img src="/images/hardware-2025/risc-v/pink/RiscV-Layout-2.webp" alt="RiscV Layout 2" />
+      <img src="/images/hardware-2025/risc-v/blue/RiscV-Layout-2.webp" alt="RiscV Layout 2" />
+      <img v-if="showColor === 'pink'" src="/images/hardware-2025/risc-v/pink/RiscV-Layout-2.webp" alt="RiscV Layout 2" />
       <img v-if="showColor === 'yellow'" src="/images/hardware-2025/risc-v/yellow/RiscV-Layout-2.webp" alt="RiscV Layout 2" />
-      <img v-if="showColor === 'blue'" src="/images/hardware-2025/risc-v/blue/RiscV-Layout-2.webp" alt="RiscV Layout 2" />
     </div>
 
     <div class="img">
-      <img src="/images/hardware-2025/risc-v/pink/RiscV-Layout-5.1.webp" alt="RiscV Layout 5.1" />
+      <img src="/images/hardware-2025/risc-v/blue/RiscV-Layout-5.1.webp" alt="RiscV Layout 5.1" />
+      <img v-if="showColor === 'pink'" src="/images/hardware-2025/risc-v/pink/RiscV-Layout-5.1.webp" alt="RiscV Layout 5.1" />
       <img v-if="showColor === 'yellow'" src="/images/hardware-2025/risc-v/yellow/RiscV-Layout-5.1.webp" alt="RiscV Layout 5.1" />
-      <img v-if="showColor === 'blue'" src="/images/hardware-2025/risc-v/blue/RiscV-Layout-5.1.webp" alt="RiscV Layout 5.1" />
     </div>
 
     <img class="img" src="/images/hardware-2025/risc-v/RiscV-Layout-3.webp" alt="RiscV Layout 3" />
@@ -18,15 +18,15 @@
     <img class="img" src="/images/hardware-2025/risc-v/RiscV-Layout-4.webp" alt="RiscV Layout 4" />
 
     <div class="img">
-      <img src="/images/hardware-2025/risc-v/pink/RiscV-Layout-1.webp" alt="RiscV Layout 1" />
+      <img src="/images/hardware-2025/risc-v/blue/RiscV-Layout-1.webp" alt="RiscV Layout 1" />
+      <img v-if="showColor === 'pink'" src="/images/hardware-2025/risc-v/pink/RiscV-Layout-1.webp" alt="RiscV Layout 1" />
       <img v-if="showColor === 'yellow'" src="/images/hardware-2025/risc-v/yellow/RiscV-Layout-1.webp" alt="RiscV Layout 1" />
-      <img v-if="showColor === 'blue'" src="/images/hardware-2025/risc-v/blue/RiscV-Layout-1.webp" alt="RiscV Layout 1" />
     </div>
 
     <div class="img">
-      <img src="/images/hardware-2025/risc-v/pink/RiscV-Layout-5.webp" alt="RiscV Layout 5" />
+      <img src="/images/hardware-2025/risc-v/blue/RiscV-Layout-5.webp" alt="RiscV Layout 5" />
+      <img v-if="showColor === 'pink'" src="/images/hardware-2025/risc-v/pink/RiscV-Layout-5.webp" alt="RiscV Layout 5" />
       <img v-if="showColor === 'yellow'" src="/images/hardware-2025/risc-v/yellow/RiscV-Layout-5.webp" alt="RiscV Layout 5" />
-      <img v-if="showColor === 'blue'" src="/images/hardware-2025/risc-v/blue/RiscV-Layout-5.webp" alt="RiscV Layout 5" />
     </div>
 
   </div>
