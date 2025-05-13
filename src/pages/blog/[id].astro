@@ -142,6 +142,10 @@ const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     white-space: nowrap;
   }
 
+  .post pre {
+    margin-bottom: var(--space);
+  }
+
   .post code {
     vertical-align: middle;
     padding: calc(var(--space) * 0.1)  calc(var(--space) * 0.3);
@@ -152,6 +156,10 @@ const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
 
   .post h2 strong, .post h3 strong, .post h4 strong, .post h5 strong {
     color: var(--color-green);
+  }
+
+  .post a {
+    word-break: break-word;
   }
 
   .small-banner {

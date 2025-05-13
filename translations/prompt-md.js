@@ -1,8 +1,9 @@
 import dotenv from "dotenv";
 import fs from "node:fs";
-import axios from "axios";
 import chalk from 'chalk';
 import { encode, decode } from 'gpt-tokenizer';
+
+import OpenAI from "openai";
 
 // Load environment variables from .env file
 dotenv.config();
@@ -21,6 +22,10 @@ const inputFolder = configMD.inputFolder; // folder with default files
 const outputFolder = configMD.outputFolder; // endpoint translations folder
 const isInProgress = []; // to notify when all jobs are completed
 const changedFiles = []; // array of modified files to translate
+
+const openai = new OpenAI({
+  apiKey: key, 
+});
 
 const readMarkdown = (filePath) => {
   return fs.readFileSync(filePath, 'utf8');
@@ -46,96 +51,100 @@ const deleteFile = (path) => {
 
 }
 
-const countTokens = (str) => {
-  return encode(str).length
-}
+const translationData = (from, to, input) => [
+  {
+    role: "system",
+    content: [
+      `Translate the markdown file from ${from} to ${to} according to the BCP 47 standard.`,
+      `DO NOT add anything, new tags or additional markdown tags.`,
+      `DO NOT CHANGE custom tags.`,
+      `Translate ONLY the given prompt; do not add anything new.`,
+      `Remove occurrences of \`\`\`${to}`,
+      `Change locale value in frontmatter from ${from} to ${to} if necessary.`,
+      `DO NOT change or translate 'related' value in frontmatter.`,
+      `DO NOT change or translate any tags (they usually start with <).`,
+      `DO NOT change or translate any link or URL paths.`,
+      `Here are some references to help with better translation: ---${defaultReference}---`,
+      `Ensure the output remains a valid markdown file.`,
+      `REMEMBER: do NOT add anything new, just return the same text translated to the target language.`,
+    ].join('\n')
+  },
+  {
+    role: "user",
+    content: input
+  }
+];
 
-const translationData = (from, to, input) => {
-  return {
-    model: "gpt-3.5-turbo", // gpt model
-    messages: [
-      { role: "system", content: [
-        `Translate the markdown file from ${from} to ${to} according to the BCP 47 standard. DO NOT add anything, new tags or additional markdown tags. DO NOT CHANGE custom tags as well. Translate ONLY given prompt, do not add anything new.`,
-        "ALSO make sure to remove - '```'" + to + "",
-        `Change locale value in frontmatter from ${from} to ${to} if necessary.`,
-        `DO NOT change or translate related value in frontmatter.`,
-        `DO NOT change or translate any tags (the tags usually starts with <).`,
-        `DO NOT change or translate any link or url paths.`,
-        `Here are some reference to help with better translation.  ---${defaultReference}---`,
-        `Make sure the output remains a valid markdown file.`,
-        `REMEMBER do NOT add anything new, just return the same text but translated to specific language.`,
-      ]
-        .filter(Boolean)
-        .join('\n'), },
-      { role: "user", content: input },
-    ],
-    temperature: 0,
-    max_tokens: 4096,
-    top_p: 1,
-  };
-}
-
-const translateMD = async(from, to, input, output, file, locale) => {
-
-  const headers = {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${key}`,
-  };
-
+const translateMD = async (from, to, input, output, file, locale) => {
+  const tokenLimit = 1000;
+  const encodedInput = encode(input);
   const chunksOfDoc = [];
 
-  // checking token count due to token limit (4096)
-  // setting 1000 token because greek takes way more than other locales and outputs incorrect document
-  if(countTokens(input) > 1000) {
-    // if it's a big doc than we cut text in chunks for correct output in all locales (greek especially)
-    const parts =  Math.ceil(countTokens(input) / 500);
+  if (encodedInput.length > tokenLimit) {
+    const parts = Math.ceil(encodedInput.length / 500);
     let sliceAmount = 0;
 
     for (let i = 0; i < parts; i++) {
-      chunksOfDoc.push(decode(encode(input).slice(sliceAmount, sliceAmount + 500)))
+      chunksOfDoc.push(decode(encodedInput.slice(sliceAmount, sliceAmount + 500)));
       sliceAmount += 500;
     }
-  }  
-
+  }
 
   try {
-    console.log(chalk.yellow(`🤖 starting translation for ${file.substring(0, file.indexOf("."))}`), '-', chalk.magenta(locale) );
+    console.log(
+      chalk.yellow(`🤖 Starting translation for ${file.replace(/\..+$/, '')}`),
+      '-', chalk.magenta(locale)
+    );
+
     let result = '';
 
-    if(chunksOfDoc.length) {
-      console.log(chalk.bgBlueBright('⏳ translation may take some time, please wait...⌛️'))
+    if (chunksOfDoc.length) {
+      console.log(chalk.bgBlueBright('⏳ Translation may take some time, please wait...⌛️'));
       const translatedChunks = [];
 
       for await (const chunk of chunksOfDoc) {
-        const response = await axios.post(url, translationData(from, to, chunk), {headers});
-        translatedChunks.push(response.data.choices[0].message.content)
+        const response = await openai.chat.completions.create({
+          model: 'gpt-4.1',
+          messages: translationData(from, to, chunk, defaultReference),
+          temperature: 0,
+          top_p: 1,
+        });
+
+        translatedChunks.push(response.choices[0].message.content);
       }
 
-      console.log(chalk.green(`✅ translation completed -`), chalk.greenBright(`${locale}/${file.substring(0, file.indexOf("."))}`))
-      writeFile(output, translatedChunks.join(''));
-      isInProgress.pop();
-      if(!isInProgress.length) {
-        console.log(chalk.magentaBright('all done 💠'))
-      }
+      result = translatedChunks.join('');
     } else {
-      const response = await axios.post(url, translationData(from, to, input), {headers});
-      result = response.data.choices[0].message.content;
-      console.log(chalk.green(`✅ translation completed -`), chalk.greenBright(`${locale}/${file.substring(0, file.indexOf("."))}`))
-      writeFile(output, result)
-      isInProgress.pop();
-      if(!isInProgress.length) {
-        console.log(chalk.magentaBright('all done 💠'))
-      }
+      const response = await openai.chat.completions.create({
+        model: 'gpt-4.1',
+        messages: translationData(from, to, input, defaultReference),
+        temperature: 0,
+        top_p: 1,
+      });
+
+      result = response.choices[0].message.content;
     }
+
+    writeFile(output, result);
+    console.log(
+      chalk.green(`✅ Translation completed -`),
+      chalk.greenBright(`${locale}/${file.replace(/\..+$/, '')}`)
+    );
+
+    isInProgress.pop();
+    if (!isInProgress.length) {
+      console.log(chalk.magentaBright('All done 💠'));
+    }
+
   } catch (error) {
     console.error(
-      chalk.red("❌ Error calling ChatGPT API:"),
-      error.response ? error.response.data : error.message
+      chalk.red("❌ Error calling OpenAI API:"),
+      error?.message || error
     );
     throw error;
   }
+};
 
-}
 
 // check if doc in default folder was removed and delete the doc from all the locales
 const checkDeletedFile = () => {
@@ -160,9 +169,7 @@ const getFileUpdatedDate = (path) => {
   if(fs.existsSync(`${outputFolder}ru/${path.split("/").pop()}`)) {
     randomLocaleFile = fs.statSync(`${outputFolder}ru/${path.split("/").pop()}`);
   }
-
   if(stats.mtimeMs > ago24 && randomLocaleFile.mtimeMs < stats.mtimeMs && !changedFiles.includes(path.split("/").pop())) {
-    console.log(chalk.bgGreenBright('🤖 checking modified markdown files and preparing to translate 🤖 '))
     changedFiles.push(path.split("/").pop())
   } else {
     return
@@ -172,6 +179,7 @@ const getFileUpdatedDate = (path) => {
 
 const setChangedFiles = async () => {
   
+  console.log(chalk.bgGreenBright('🤖 checking modified markdown files 🤖 '))
   for await (const file of fs.readdirSync(inputFolder)) {
     if (file.includes('mdx')) {
       getFileUpdatedDate(`${outputFolder}${file}`)

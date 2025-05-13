@@ -1,25 +1,25 @@
 ---
-title: 'Robonomics与Moonriver开始XCM集成'
+title: 'Robonomics 与 Moonriver 开始 XCM 集成'
 date: 2022-11-22
 published: true
 locale: 'zh'
 cover_image: /blog/images/xcm-integration-with-moonriver-started/cover.jpg
-description: "我们很高兴地宣布，Moonbeam，一个跨链连接的智能合约平台，和Robonomics Network已经开始合作，通过在Moonriver和Robonomics平行链之间开设一组双边HRMP通道。"
-tags: ['Robonomics平行链', '合作']
+description: "我们很高兴地宣布，跨链智能合约平台 Moonbeam 与 Robonomics Network 已通过在 Moonriver 和 Robonomics 平行链之间开通一组双向 HRMP 通道，开始合作。"
+tags: ['Robonomics parachain', 'Collaborations']
 ---
 
-我们很高兴地宣布，[Moonbeam](http://moonbeam.network/)，一个跨链连接的智能合约平台，和Robonomics Network已经开始合作，通过在Moonriver和Robonomics平行链之间开设一组双边HRMP通道。现在，XRT代币可以在Moonriver生态系统中作为[xcXRT](https://moonbeam.network/announcements/moonriver-adds-cross-chain-capabilities-and-xcksm/)使用。
+我们很高兴地宣布，[Moonbeam](http://moonbeam.network/)，一个跨链连接的智能合约平台，与 Robonomics Network 已经开始合作，通过在 Moonriver 和 Robonomics 平行链之间开通一组双向 HRMP 通道。现在，XRT 代币可以作为 [xcXRT](https://moonbeam.network/announcements/moonriver-adds-cross-chain-capabilities-and-xcksm/) 在 Moonriver 生态系统中使用。
 
-通过这种集成，Robonomics可以将Moonriver智能合约整合到我们在Kusama上的平行链中。特别是，我们对从智能合约调用启动和数据日志功能的场景感兴趣。这一功能使我们能够将链上数据转化为现实世界事件，这对于智能设备的适用性尤为重要。
+通过此次集成，Robonomics 可以将 Moonriver 的智能合约功能引入我们在 Kusama 上的平行链。特别是，我们对从智能合约调用启动和数据记录功能的场景非常感兴趣。此功能使我们能够获取链上数据，并将其转化为现实世界的事件，这对于智能设备的应用尤为重要。
 
-今年8月，Moonbeam宣布在Moonbase Alpha TestNet上实现了[XCM到EVM功能](https://moonbeam.network/announcements/xcm-to-evm-functionality-moonbase-alpha/)的概念验证。这使得远程链上的开发人员可以触发Moonriver/Moonbeam平台上的功能调用，让他们能够利用其本地链上的开发者友好的EVM功能。如果Moonbeam生态系统上启用了通过XCM进行远程EVM调用，那么Robonomics的IoT设备和应用将能够通过XCM远程调用Moonriver上的智能合约，利用Kusama链的本地安全性。这为在Robonomics平行链上运行的IoT设备开启了全新的可能性领域，因为它们将能够访问智能合约的不可变性和安全性。
+今年八月，Moonbeam 在 Moonbase Alpha 测试网上宣布了 [XCM-to-EVM 功能](https://moonbeam.network/announcements/xcm-to-evm-functionality-moonbase-alpha/) 的概念验证。这使得远程链上的开发者能够在 Moonriver/Moonbeam 平台上触发函数调用，从而让他们能够在本链上利用开发者友好的 EVM 的特性。如果 Moonbeam 生态系统启用通过 XCM 的远程 EVM 调用，那么 Robonomics 的物联网设备和应用将能够通过 XCM，利用 Kusama 链的原生安全性，远程调用 Moonriver 上的智能合约。这为在 Robonomics 平行链上运行的物联网设备打开了全新的可能性，因为它们将能够访问智能合约的不可篡改性和安全性。
 
-我们期待着新的功能升级，构建一个真正去中心化的机器人、物联网和智能设备世界！
+我们期待着新的功能升级，共同构建一个真正去中心化的机器人、物联网和智能设备世界！
 
-## 关于Moonbeam
+## 关于 Moonbeam
 
-Moonbeam是一个智能合约平台，用于构建可以访问任何链上用户、资产和服务的跨链连接应用程序。通过将来自以太坊、Cosmos、Polkadot等的功能统一到一个平台上，Moonbeam解决了当今碎片化的用户体验问题，实现了真正的互操作性，为下一代应用程序铺平了道路。Moonbeam平台利用集成的跨链消息传递，允许开发人员创建可以访问许多远程区块链上服务的智能合约。这种方法，加上Moonbeam的开发者友好的EVM平台、广泛的工具支持和现代的Substrate架构，为构建连接应用程序创造了理想的开发环境。
+Moonbeam 是一个智能合约平台，用于构建跨链连接的应用程序，可以访问任何链上的用户、资产和服务。通过将以太坊、Cosmos、Polkadot 等多种功能整合到一个平台，Moonbeam 解决了当今用户体验碎片化的问题，实现了真正的互操作性，并为下一代应用铺平了道路。Moonbeam 平台采用集成的跨链消息传递，允许开发者创建能够访问众多远程区块链服务的智能合约。这种方式，加上 Moonbeam 对开发者友好的 EVM 平台、丰富的工具支持和现代 Substrate 架构，为构建互联应用提供了理想的开发环境。
 
-## 关于Robonomics
+## 关于 Robonomics
 
-Robonomics Network是一个用于安全可靠控制物联网应用程序的去中心化云。它结合了去中心化、区块链技术和基于代币的经济模式，用于保护智能设备及其数据。Robonomics旨在：1）以安全性和全球可用性控制智能设备，2）为用户提供隐私的无服务器物联网应用程序，3）为人与机器以及机器与机器之间的技术和经济交易提供服务效率。此外，Robonomics平行链具有一个允许用户在一个月的时间内发送设备交易而无需费用的IoT订阅功能。这允许特别是使智能家居完全独立于集中式服务提供商，同时保持安全地远程访问家中设备的能力。
+Robonomics Network —— 一个用于安全可靠控制物联网应用的去中心化云平台。它结合了去中心化、区块链技术和基于代币的经济模型，以保护智能设备及其数据。Robonomics 的目标包括：1）以安全和全球可用性控制智能设备，2）为用户提供无服务器的物联网应用以保护隐私，3）在人与机器、机器与机器之间进行技术和经济交易以提升服务效率。此外，Robonomics 平行链还具备物联网订阅功能，允许用户在一个月内免手续费发送设备交易。这尤其可以让智能家居完全摆脱中心化服务商的依赖，同时保持对家中设备的安全远程访问能力。

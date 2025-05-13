@@ -1,9 +1,10 @@
 import dotenv from "dotenv";
 import fs from "node:fs";
-import axios from"axios";
 import chalk from 'chalk';
 import { encode, decode } from 'gpt-tokenizer';
 import { glob } from 'glob';
+
+import OpenAI from "openai";
 
 // Load environment variables from .env file
 dotenv.config();
@@ -15,12 +16,16 @@ const key = config.key;
 // reference for ai translation
 const defaultReference = 'You can adjust the tone and style, taking into account the cultural connotations and regional differences of certain words. As a translator, you need to translate the original text into a translation that meets the standards of accuracy and elegance.';
 
-const url = 'https://api.openai.com/v1/chat/completions';
+
 const defaultLocale = config.defaultLocale;
 const locales = config.locales; // array with all locales
 const outputFolder = config.outputFolder; // endpoint translations folder
 const differences = []; // array to check deleted lines
 const isInProgress = []; // to notify when all jobs are complete
+
+const openai = new OpenAI({
+  apiKey: key, 
+});
 
 const readFile = (filePath) => {
   const data = fs.readFileSync(filePath, 'utf8');
@@ -60,33 +65,38 @@ const checkExistingFiles = (path) => {
 }
 
 const translateNewLine = async (from, to, input, locale) => {
-  const headers = {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${key}`,
-  };
-
-  const data = {
-    model: "gpt-3.5-turbo", // gpt model
-    messages: [
-      { role: "system", content: [
-        `Translate this string from ${from} to ${to}`,
-        `Do NOT add any commas or dots if there are none in the original text and do NOT change the case of the original words`,
-      ]
-        .filter(Boolean)
-        .join('\n'), },
-      { role: "user", content: input },
-    ],
-    temperature: 0,
-    // max_tokens: 4000,
-    top_p: 1,
-  };
-
   try {
-      console.log(chalk.yellow(`🤖 starting translation for a new line - ${input}`), '-', chalk.magenta(locale) );
-      const response = await axios.post(url, data, {headers});
-      const result = response.data.choices[0].message.content;
-      console.log(chalk.green(`✅ translation completed -`), chalk.greenBright(`new line for ${locale} translated`))
-     return result;
+    console.log(
+      chalk.yellow(`🤖 starting translation for a new line - ${input}`),
+      '-',
+      chalk.magenta(locale)
+    );
+
+    const response = await openai.chat.completions.create({
+      model: "gpt-4.1",
+      messages: [
+        {
+          role: "system",
+          content: [
+            `Translate this string from ${from} to ${to}.`,
+            `Do NOT add any commas or dots if there are none in the original text and do NOT change the case of the original words.`
+          ].join('\n')
+        },
+        {
+          role: "user",
+          content: input
+        }
+      ],
+      temperature: 0,
+      top_p: 1,
+    });
+
+    const result = response.choices[0].message.content;
+    console.log(
+      chalk.green(`✅ translation completed -`),
+      chalk.greenBright(`new line for ${locale} translated`)
+    );
+    return result;
   } catch (error) {
     console.error(
       chalk.red(" ❌ Error calling ChatGPT API:"),
@@ -158,92 +168,82 @@ const updateFile = async (path, key, item) => {
     isInProgress.pop();
 }
 
-const countTokens = (str) => {
-  return encode(str).length
-}
-
 const translationData = (from, to, input) => {
-  return {
-    model: "gpt-3.5-turbo", // gpt model
-    messages: [
-      { role: "system", content: [
-        `Translate the i18n JSON file from ${from} to ${to} according to the BCP 47 standard. Never translate the keys and leave them in English`,
-        `Here are some reference to help with better translation.  ---${defaultReference}---`,
-        `If there are any underscores in values, please, replace them with spaces`,
-        `Do NOT add any commas or dots if there are none in the original text and do NOT change the case of the original words`,
+  return [
+    {
+      role: "system",
+      content: [
+        `Translate the i18n JSON file from ${from} to ${to} according to the BCP 47 standard. Never translate the keys and leave them in English.`,
+        `Here are some reference to help with better translation.  ---${defaultReference || ''}---`,
+        `If there are any underscores in values, please, replace them with spaces.`,
+        `Do NOT add any commas or dots if there are none in the original text and do NOT change the case of the original words.`,
         `Keep the keys the same as the original file and make sure the output remains a valid i18n JSON file.`
-      ]
-        .filter(Boolean)
-        .join('\n'), },
-      { role: "user", content: input },
-    ],
-    temperature: 0,
-    max_tokens: 4000,
-    top_p: 1,
-  };
-}
+      ].join('\n')
+    },
+    {
+      role: "user",
+      content: input
+    }
+  ];
+};
 
-const translateFile = async(from, to, input, output, file, locale) => {
-
-  const headers = {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${key}`,
-  };
-
+const translateFile = async (from, to, input, output, file, locale) => {
   const chunksOfFile = [];
 
-  // checking token count due to token limit (4096)
-  // setting 1200 token because greek takes way more than other locales and outputs incorrect file
-  if(countTokens(input) > 1200) {
-    // if it's a big file than we cut text in chunks for correct output in all locales (greek especially)
-    const parts =  Math.ceil(countTokens(input) / 1200);
+  const tokenLimit = 1200;
+
+  if (encode(input).length > tokenLimit) {
+    const parts = Math.ceil(encode(input).length / tokenLimit);
     let sliceAmount = 0;
 
     for (let i = 0; i < parts; i++) {
-      chunksOfFile.push(decode(encode(input).slice(sliceAmount, sliceAmount + 1200)))
-      sliceAmount += 1200;
+      chunksOfFile.push(decode(encode(input).slice(sliceAmount, sliceAmount + tokenLimit)));
+      sliceAmount += tokenLimit;
     }
-  }  
+  }
 
   try {
-    console.log(chalk.yellow(`🤖 starting translation for ${file.substring(0, file.indexOf("."))}`), '-', chalk.magenta(locale) );
+    console.log(chalk.yellow(`🤖 starting translation for ${file.replace(/\..+$/, '')}`), '-', chalk.magenta(locale));
     let result = '';
 
-    if(chunksOfFile.length) {
-      console.log(chalk.bgBlueBright('⏳ translation may take some time, please wait...⌛️'))
+    if (chunksOfFile.length) {
+      console.log(chalk.bgBlueBright('⏳ translation may take some time, please wait...⌛️'));
       const translatedChunks = [];
 
       for await (const chunk of chunksOfFile) {
-        const response = await axios.post(url, translationData(from, to, chunk), {headers});
-        translatedChunks.push(JSON.parse(response.data.choices[0].message.content))
+        const response = await openai.chat.completions.create({
+          model: "gpt-4",
+          messages: translationData(from, to, chunk),
+          temperature: 0,
+          top_p: 1,
+        });
+
+        translatedChunks.push(JSON.parse(response.choices[0].message.content));
       }
 
-      console.log(chalk.green(`✅ translation completed -`), chalk.greenBright(`${locale}/${file.substring(0, file.indexOf("."))}`))
-      const obj = Object.assign({}, ...translatedChunks)
-      writeFile('', JSON.stringify(obj, null, "\t"), true, locale);
-      isInProgress.pop();
-      if(!isInProgress.length) {
-        console.log(chalk.magentaBright('all done 💠'))
-      }
+      const obj = Object.assign({}, ...translatedChunks);
+      writeFile('', JSON.stringify(obj, null, '\t'), true, locale);
     } else {
-      const response = await axios.post(url, translationData(from, to, input), {headers});
-      result = response.data.choices[0].message.content;
-      console.log(chalk.green(`✅ translation completed -`), chalk.greenBright(`${locale}/${file.substring(0, file.indexOf("."))}`))
+      const response = await openai.chat.completions.create({
+        model: "gpt-4",
+        messages: translationData(from, to, input),
+        temperature: 0,
+        top_p: 1,
+      });
+
+      result = response.choices[0].message.content;
       writeFile('', result, true, locale);
-      isInProgress.pop();
-      if(!isInProgress.length) {
-        console.log(chalk.magentaBright('all done 💠'))
-      }
     }
+
+    console.log(chalk.green(`✅ translation completed -`), chalk.greenBright(`${locale}/${file.replace(/\..+$/, '')}`));
   } catch (error) {
     console.error(
       chalk.red("❌ Error calling ChatGPT API:"),
-      error.response ? error.response.data : error.message
+      error?.message || error
     );
     throw error;
   }
-
-}
+};
 
 const translationsSet = async () => {
   console.log(chalk.yellow('🤖 getting json files 🤖'));
