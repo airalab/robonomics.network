@@ -24,6 +24,7 @@
     "astro-i18n": "^2.2.4",
     "astro-i18n-aut": "^0.7.3",
     "astro-matomo": "^1.8.0",
+    "openai": "^4.98.0",
     "parallax-js": "^3.1.0",
     "ping-ipfs-gateway": "^1.0.1",
     "three": "^0.168.0",

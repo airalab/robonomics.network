@@ -1,79 +1,81 @@
 ---
-title: "最高到 1.2 版：质押、技术传播和司库"
+title: "更新至1.2版本：质押、技术委员会与金库"
 date: 2021-09-17
 published: true
 locale: 'zh'
 cover_image: /blog/images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
-description: "项目研发人员采用2种重要变更推行机器人经济学平行链工作。第一 种是 接入XRT质押泛函数，第二 种是启动第一个链上管理机制。"
-abstract: "项目研发人员采用2种重要变更推行机器人经济学平行链工作。第一 种是 接入XRT质押泛函数，第二 种是启动第一个链上管理机制。"
-tags: ['Robonomics 平行链', 'XRT 代币', 'RWS 令牌', '质押', '新版本']
+description: "项目开发者在Robonomics平行链的运行中实施了两项重要变更。第一项是引入XRT质押，第二项是启动首个链上治理机制。"
+abstract: "项目开发者在Robonomics平行链的运行中实施了两项重要变更。第一项是引入XRT质押，第二项是启动首个链上治理机制。"
+tags: ['Robonomics parachain', 'XRT token', 'RWS token', 'Staking', 'New release']
 ---
 
-## 更新1.1版：质押
+## 1.1版本更新：质押
 
-### 原理
+### 理论
 
-使用了PoS机制的分散网络通过联锁验证者和所有参与验证者池选择的网络代币持有者的资金来确保己方安全。为了奖励验证者和代币持有者，通常使用类似的PoW奖励模型 - 发行+区块中的所有佣金。这就是NPOS在Polkadot/Kusama中的实现方式。
+去中心化的PoS网络通过锁定验证者及所有参与验证者池选择的网络代币持有者的资金来保障其安全性。为了奖励验证者和代币持有者，通常采用类似PoW的奖励模型，基于通胀+区块内所有手续费。这正是Polkadot/Kusama中NPoS的实现方式。
 
-> 值得注意的是，以太坊和polkadot都为己方的奖励模型提出了补充条件。设定目标发行指标、将佣金划分成几个方向，包括销毁一定比例的佣金 — 这已经是附加调整，尝试在自己的工作中实验性推行大量成熟的以及不太成熟的网络。
+> 值得注意的是，以太坊和Polkadot都为其奖励模型加入了额外条件。设定通胀目标、将手续费分配到多个方向，甚至销毁一定比例的手续费，这些都是成熟及新兴网络在其实现中不断尝试的附加设置。
 
-在其基本功能中，平行链不需要质押。中继链验证者将确保平行链的安全性。这就是项目在拍卖期间为之拼搏的shared security。
+平行链在其核心功能中并不需要质押。平行链的安全由中继链验证者保障。这是一种共享安全模型，项目在拍卖期间竞争插槽。
 
-#### 重塑质押
+#### 质押的再定义
 
-想要利用群众的智慧并为社区分配一些任务的平行链将不得不重塑质押。在机器人经济学的案例中，我们做到了。机器人经济学平行链中的质押架构是独一无二的，并且专门用于我们为物联网市场解决的任务。我们为智能设备基本功能提供两种支付方式 - 按交易付费或按月订阅。
+希望利用“群体智慧”并将任务分配给社区的平行链，需要重新定义质押。在Robonomics，我们正是这样做的。Robonomics平行链的质押架构独特且专门针对我们为物联网市场解决的区块链问题。我们为智能设备的基础功能提供两种付费方式：按交易付费或按月订阅。
 
-按交易付费是很容易理解的，不需要解释其工作原理。订阅功能需要稍微解释一下。物联网使用的一些场景要求可以定期访问云功能，最好不要违反此工作计划。含天然气价格的机制仍然没有100%解决该问题，尤其是在保证每个区块的交易时。考虑到这些想法，我们提出了使用质押机制来管理订阅模型上的保证配额的想法。在研发substrate方面，我们做了一个基于零权重交易优先级处理的技巧。如果物联网设备激活订阅，那么来自它的所有交易都将优先于任何其他交易，当然其他零权重交易除外。网络中的代币越多，用户可以获得的订阅就越多。
+按交易付费无需多言。订阅功能则需要稍作解释。. 一些物联网用例需要定期访问云函数，而这些操作失败是极其不可取的。Gas 价格机制仍未能完全解决这个问题，尤其是在保证每个区块都能完成交易方面。考虑到这一点，我们提出了利用质押机制，通过订阅模式来管理有保障的配额的想法。在 Substrate 端，我们做了一些小技巧，基于零权重交易的优先处理。如果物联网设备激活了订阅，那么它的所有交易都将优先于其他交易，当然除了其他零权重交易。随着更多代币进入网络的质押池，用户可用的订阅数量也会增加。
 
 <TextCard>
 
-*示例:*
+*例如：*
 
-总代币：2000000XRT；在质押中：800000XRT；平行链通过能力：5400 tx per block。
+总代币：2,000,000 XRT；
+已质押：800,000 XRT；
+平行链带宽：每个区块 5400 笔交易。
 
-得出5400 * 2000000/800000=13500物联网设备的订阅。
+这意味着我们每月可为物联网设备提供 5400 * 800,000 / 2,000,000 = 2,160 个订阅名额。
 
 </TextCard>
 
-就如何分配订阅和支付池的问题我将单独写一篇“自动订阅拍卖”的文章。
+关于订阅和支付池的分配方式，我将在另一篇名为“自动化订阅拍卖”的文章中详细介绍。
 
-### 实践
+### 实际应用
 
-Dapp应用程序准备就绪：https://robonomics.app/#/staking/
+DApp 已准备就绪：https://robonomics.app/#/staking/
 
-![Dapp应用程序准备就绪](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
+![Robonomics dapp 中的 XRT 质押，新质押界面](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
 
-第一次交易后，您将获得具有统计信息的表格:
+完成首次交易后，您将获得如下统计表：
 
-![Dapp](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
+![Robonomics dapp 中的 XRT 质押，质押列表界面](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
 
-平行链上账户之间的代币发送仍是被禁用。在Kusama网络上出现平行链后，将可以接入转移代币。
+在平行链上，账户间的代币转账功能仍处于禁用状态。代币转账功能将在平行链上线 Kusama 网络后启用。
 
-### 监测
+### 观察
 
-在 [#235047区块](https://robonomics.subscan.io/block/235047) 上，我们有大约一千个账户，最大的代币持有者是金库。金库的资金不参与质押。
+截至[区块 # 235,047](https://robonomics.subscan.io/block/235047)，我们大约有一千个账户；最大的代币持有者是金库。金库资金不会参与质押。
 
-网络上的其余账户是ERC-20持有者使用dapp exodus代币的结果，或者是Kusama拍卖中第一家Crowdloan公司的入股人。
+网络上的其他账户主要是 ERC-20 代币持有者通过 Exodus DApp 使用后产生的，或者是 Kusama 拍卖首轮众贷活动的参与者。
 
-由于与Subscan结合，机器人经济学平行链中的XRT持有者可以使用以下精彩的界面：https://robonomics.subscan.io/account
+得益于与 Subscan 的集成，Robonomics 平行链上的 XRT 持有者可以使用这个精彩的界面：https://robonomics.subscan.io/account
 
-![Subscan.io](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
+![Robonomics Subscan.io 账户界面](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
 
-在dapp Exodus界面，可以看到以太坊到平行链的迁移统计：https://robonomics.app/#/exodus
+在 Exodus DApp 界面上，你可以看到从以太坊区块链迁移到 Robonomics 平行链的统计数据：https://robonomics.app/#/exodus
 
-![dapp Exodus](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
+![Robonomics dapp 中从以太坊区块链到 Robonomics 平行链的 XRT](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
 
-### 进一步改进质押功能
+### 质押功能的进一步改进
 
-目前，研发人员的任务是在真实条件下测试代币持有者的基本质押机制 — 增加质押、累积奖励、在7天内解冻代币。
+开发者当前的任务是在真实条件下测试代币持有者的基本质押机制：加入质押池、累积奖励，以及在 7 天内解冻代币。
 
-*社区的有趣任务：* 检查奖励计算器的正确性，考虑两种计算项目 - 结果参与者的10%的annual reward和Crowdloan公司入股人50%的annual reward。
+*给社区的有趣任务：* 检查奖励计算器的正确性，考虑两种选项：Exodus 迁移参与者的年化 10% 奖励，以及众贷活动成员的年化 50% 奖励。
 
-1.3 RWS 更新后，质押机制将对网络产生影响。RWS 的更新将为数字孪生添加订阅功能，通过能力的分配任务将变得有意义。因此，我们稍后将能够全面评估质押机制工作的正确性。
+在 1.3 RWS 更新后，质押机制将在网络上正式上线。RWS 更新将为数字孪生体增加订阅功能，带宽分配的挑战也将变得有意义。因此，之后我们将能够全面评估质押机制的正确性。
 
-## 更新 1.2 版：技术委员会和金库
+## 更新 1.2：技术委员会与金库
 
-该更新版与更新1.1版相同。已经在平行链的工作中推广了。技术委员会目前由6名近2年参与平行链研发的技术专家组成， [研发人员的DAO通过dapp exodus销毁ERC-20代币，将692500XRT转移到平行链的金库平衡表中。](https://etherscan.io/tx/0x6b9a9cbe7d21badf565ebce0fb50b865da8f5f784899db5fb455d1b276d14acf) 网络的金库和技术委员会是平行链开发人员迄今为止采用的链上管理的第一个要素。以下是关于每一个的更多细节。
+与 1.1 更新一样，这一功能已经被实现到平行链的工作中。技术委员会目前由六位技术专家组成，他们在过去两年中参与了平行链的开发；DAO [向平行链金库余额转移了 692,500 XRT](https://etherscan.io/tx/0x6b9a9cbe7d21badf565ebce0fb50b865da8f5f784899db5fb455d1b276d14acf)，通过 Exodus DApp 销毁 ERC-20 代币。网络的金库和技术委员会是到目前为止平行链开发者实现的链上治理的首批要素。关于它们的更多细节如下所述。
 
 ### 网络技术委员会
 
@@ -81,35 +83,36 @@ Dapp应用程序准备就绪：https://robonomics.app/#/staking/
 
 ![网络技术委员会](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
 
-如9月15日看到的，技术委员会新增了6名成员，他们是：2名Devops专业人员，软件架构师，执行Substrate的总设计师，高级工程师-机器人技术专家和dapp高级 开发人员。
+![Robonomics 平行链中的技术委员会门户](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
 
-技术委员会将执行更新平行链代码runtime的任务，自Github下一版本开始。
+截至 9 月 15 日，您可以看到已添加的六位技术委员会成员：2 名运维专家、一名软件架构师、主要的 Substrate 实现开发者、一名高级机器人工程师和一名高级 DApp 开发者。
+技术委员会将负责更新平行链的运行时代码，从 GitHub 上的后续版本开始。
 
-您可以在Polkadot wiki中阅读有关技术委员会工作原理的更多信息： https://wiki.polkadot.network/docs/learn-governance#technical-committee
+您可以在 Polkadot wiki 上阅读更多关于该委员会工作的内容：https://wiki.polkadot.network/docs/learn-governance#technical-committee
 
-在区块机器人经济学平行链出现前，项目研发人员不会在增加领事和民主方面扩展链上管理功能。平行链成功出现后，我们将返回到新项目参与者影响网络运营的新机会问题上。
+在 Robonomics 平行链上线 Kusama 之前，项目开发者不会通过添加理事会或公投来扩展链上治理。平行链成功上线后，我们将重新讨论为新项目参与者影响网络运营提供新机会的问题。
 
-### 金库
+### 国库
 
-可通过以下链接进入平行链金库界面： https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/treasury
+平行链国库可在此处访问：https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/treasury
 
-![库](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
+![Robonomics 平行链中的国库](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
 
-在过去的一个月里，大约10万个XRT已在2021年夏天从金库中分配到机器人经济学第一家Crowdloan公司的平衡表中。这些操作不会反映在请求中，因为它们是通过 sudo 函数达到的。现在我们有技术委员会，请求将通过投票决定。
+在过去一个月中，约 10 万 XRT 从国库分发给了 2021 年夏季首轮 Robonomics 众贷活动的参与者余额。这些操作并未以请求形式显示，而是由 Sudo 执行。现在我们有了技术委员会，请求将通过投票进行。
 
-同样值得关注的还有金库的有趣机制 — 定期销毁平衡表。您可以在 Polkadot wiki 中阅读有关金库工作的更多信息： https://wiki.polkadot.network/docs/learn-treasury
+还值得注意的是国库的一个有趣机制：余额的定期销毁。您可以在 Polkadot wiki 上阅读更多关于国库工作的内容：https://wiki.polkadot.network/docs/learn-treasury
 
-社区可以向平行链金库提出请求，要求分配XRT以完成Polkadot 生态系统中机器人经济学的发展或从物联网市场吸引用户的任务。
+社区可以请求平行链国库为有助于 Robonomics 在 Polkadot 生态系统发展或吸引物联网市场用户的任务分配 XRT。
 
-### 最后
+### 结论
 
-将来还有很多有趣的更新等着我们，每一次更新都将为社区带来新的机会。在不久的将来，将发布项目社区发展计划的更新，我们将在其中详细介绍未来6个月内社区可访问的内容。
+还有许多令人兴奋的更新即将到来，每一次都会为社区带来新的机遇。项目社区发展计划的更新也将很快发布，届时会有更多关于社区可用内容的信息。接下来的6个月。
 
 <TextCard image="/avatars/Sergei-Lonshakov.jpg" back="transparent" imageSize="big">
 
 EnsRationis
 
-Robonomics network architect
+Robonomics 网络架构师
 
 element: @ensrationis:robonomics.network
 
@@ -118,8 +121,8 @@ element: @ensrationis:robonomics.network
 
 <TextCard icon="/icons/icon-notification.png" link="https://twitter.com/AIRA_Robonomics">
 
-### Join our Twitter
+### 加入我们的 Twitter
 
-Stay tuned and follow updates
+请关注并获取最新动态
 
 </TextCard>
