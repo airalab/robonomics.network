@@ -73,7 +73,8 @@ const {
 .model {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
+  min-height: 484px;
   margin: 0 auto;
 }
 
@@ -139,9 +140,15 @@ const {
   left: -20%;
 }
 
+.model-noanimation .img.img-static {
+  left: 2%;
+}
+
 .model-noanimation {
   overflow: hidden;
+  min-height: 430px;
 }
+
 @media screen and (max-width: 850px) {
   .model .img {
     --opengap: 50px !important;
@@ -151,17 +158,37 @@ const {
     z-index: 15;
     left: 0%;
   }
+
+  .model-noanimation {
+    overflow: hidden;
+    min-height: 364px;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .model .img {
     --opengap: 30px !important;
   }
+
+  .model-noanimation {
+    overflow: hidden;
+    min-height: 470px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .model .img {
     --opengap: 20px !important;
+  }
+
+  .model {
+    max-width: 300px;
+    min-height: 364px;
+  }
+
+  .model-noanimation {
+    overflow: hidden;
+    min-height: 425px;
   }
 }
 </style>
