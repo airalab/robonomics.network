@@ -8,6 +8,14 @@
     "im.vector.riot.jitsi": {
         "preferredDomain": "https://jitsi.robonomics.network/"
     },
+    "io.element.jitsi": {
+        "preferredDomain": "https://jitsi.robonomics.network/",
+        "useFor1To1Calls": true
+    },
+    "io.element.e2ee": {
+        "preferredDomain": true,
+        "secure_backup_required": true
+    },
     "org.matrix.msc4143.rtc_foci": [
         {
            "type": "livekit",
