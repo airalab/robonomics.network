@@ -5,6 +5,9 @@
     "m.identity_server": {
         "base_url": "https://vector.im"
     },
+    "im.vector.riot.jitsi": {
+        "preferredDomain": "https://jitsi.robonomics.network/"
+    },
     "org.matrix.msc4143.rtc_foci": [
         {
            "type": "livekit",
