@@ -32,7 +32,7 @@ const caseData = casePath ? items.cases.filter(c => casePath.pathname.includes(c
 // Default meta values
 const pageTitleFinal = caseData.length ? await $tr(caseData[0]?.title) : await title || `${siteName} / Robonomics Network`;
 const pageDescriptionFinal = caseData.length ? await $tr(caseData[0]?.description) : await description || siteDescription;
-const pageImageFinal = caseData.length ? caseData[0]?.metaImg : (ogImage && `${siteUrl}${ogImage}` || `${siteUrl}/website_cover.webp`);
+const pageImageFinal = caseData.length ? `${siteUrl}${caseData[0]?.metaImg}` : (ogImage && `${siteUrl}${ogImage}` || `${siteUrl}/website_cover.webp`);
 const backlinkLabel = backlink && await $tr(backlink.label);
 
 // Import styles

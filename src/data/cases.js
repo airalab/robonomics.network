@@ -349,6 +349,7 @@ export default {
       description: $trVue('We’re excited to participate in Decentralized Lugano 2025! On May 8th, participants can take fun, smile-filled photos — with smiles randomly and automatically added.'),
       path: 'cases/lugano-2025',
       cover_image: 'lugano-2025.webp',
+      metaImg: '/og-pics/cases-lugano-2025.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
