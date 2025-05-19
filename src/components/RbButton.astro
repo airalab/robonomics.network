@@ -9,6 +9,7 @@ const {
   scale = '1',
   disabled = false,
   extraCls = '',
+  noTarget =  false,
   ...attrs
 } = Astro.props;
 
@@ -35,7 +36,7 @@ const smoothScroll = anchor ? { updateHistory: false, offset: -250 } : null;
     style={`transform: scale(${scale});`}
     smooth-scroll={JSON.stringify(smoothScroll)}
     onclick={attrs.onClick}
-    target="_blank"
+    target={!noTarget ? "_blank" : "_self"} 
   >
     <slot />
   </a>
