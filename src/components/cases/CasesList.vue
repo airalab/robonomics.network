@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="cases__banner layout layout__content">
+    <div class="cases__banner layout layout__content" v-if="!tagsList">
       <!-- tags -->
       <div class="cases-tags">
         <span class="cases__small-text">{{ $tr('By interest:') }}</span>
@@ -85,10 +85,14 @@ const props = defineProps({
     type: Array,
     default: []
   },
+  tagsList: {
+    type: Boolean,
+    default: false
+  }
 })
 
 // Computed properties
-const cases = computed(() => props.items.cases);
+const cases = computed(() => !props.tagsList ? props.items.cases : props.items);
 
 // Data variables using ref()
 const caseDate = ref('recent');

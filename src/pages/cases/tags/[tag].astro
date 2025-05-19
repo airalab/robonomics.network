@@ -1,0 +1,54 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CasesList from "../../../components/cases/CasesList.vue";
+import items from '../../../data/cases.js';
+
+const data = items.default ?? items;
+const { tag } = Astro.params;
+
+const slugify = str => str.toLowerCase().replace(/\s+/g, '-');
+
+const allTags = Array.from(
+  new Set(data.cases.reduce((acc, post) => acc.concat(post.tags), []))
+);
+
+const originalTag = allTags.find(t => slugify(t) === tag);
+
+
+const filteredPosts = originalTag
+  ? data.cases.filter(c => c.tags.includes(originalTag))
+  : [];
+
+
+export async function getStaticPaths() {
+  const slugify = str => str.toLowerCase().replace(/\s+/g, '-');
+  const posts = (items.default ?? items).cases;
+  const allTags = Array.from(
+    new Set(posts.reduce((acc, post) => acc.concat(post.tags), []))
+  );
+
+  return allTags.map(tag => ({
+    params: { tag: slugify(tag) }
+  }));
+}
+---
+
+
+<Layout
+  title={$tr("Cases")}
+  ogImage="/website_cover_cases.png"
+>
+
+<div class="cases__main-title title-with-bg blue mb-space-0">
+  <h1><a href="/cases/" aria-label="see all our r&d cases">{ $tr('R&D cases') }</a></h1>
+</div>
+
+<section class="section">
+  {filteredPosts.length === 0 ? (
+  <p>No matching cases found.</p>
+) : (
+  <CasesList items={filteredPosts} tagsList client:visible />
+)}
+</section>
+
+</Layout>
