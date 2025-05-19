@@ -8,13 +8,14 @@ const {
   subtitle = false, 
   imageOutside = false, 
   imageTop = false, 
-  imgClasses = '' 
+  imgClasses = '', 
+  extraCls = ''
 } = Astro.props;
 
 const TitleTag = subtitle ? 'h4' : 'h2';
 ---
 
-<div class="case-page__text">
+<div class={`case-page__text ${extraCls ?? extraCls}`} >
   {img && imageOutside && (
     <div class="layout__mid img-top layout">
       <img class={imgClasses} src={`/images/cases/${img}`} alt={imgAlt} />
@@ -49,8 +50,24 @@ const TitleTag = subtitle ? 'h4' : 'h2';
 </div>
 
 <style>
+
+
+  h2 {
+    font-variation-settings: var(--font-flex-extrabold);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .title-gap  h2{
+    margin-bottom: calc(var(--space) * 2);
+  }
+
   .case-page__text {
     margin-bottom: calc(var(--space) * 3);
+  }
+
+  .section-gap {
+    margin-bottom: calc(var(--space) * 4);
   }
 
   .case-page__text-wrapper p {

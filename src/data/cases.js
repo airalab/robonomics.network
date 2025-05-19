@@ -345,7 +345,7 @@ export default {
     },
     {
       id: 18,
-      title: $trVue('Decentralized Photo Experience at Lugano 2025 — Powered by IPFS & Home Assistant'),
+      title: $trVue('Robonomics Photo-Booth at Decentralized Lugano 2025'),
       description: $trVue('We’re excited to participate in Decentralized Lugano 2025! On May 8th, participants can take fun, smile-filled photos — with smiles randomly and automatically added.'),
       path: 'cases/lugano-2025',
       cover_image: 'lugano-2025.webp',
@@ -357,7 +357,7 @@ export default {
       updated: '2025-05-07',
       // tags field needs for "sort by interest" filter
       // use lowerCase
-      tags: [''],
+      tags: ['smart home', 'events'],
       done: true
     }
   ]

@@ -116,7 +116,7 @@ html[lang="nl"] .title-lined {
   margin-top: 0;
   max-width: 1040px;
   overflow: hidden;
-  padding: 0.3rem 1rem 0.3rem 4.3rem;
+  padding: 0.3rem 1rem 0.3rem 2.7rem;
   position: relative;
   transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
   width: fit-content;
@@ -125,7 +125,7 @@ html[lang="nl"] .title-lined {
 
 .title-with-bg h1 {
   display: inline;
-  font-size: calc(var(--base-font-size) * 1.2);
+  font-size: calc(var(--base-font-size) * 1.1);
   margin: 0;
   padding: 0;
   text-align: left;
@@ -215,6 +215,20 @@ a:not(.button).dashed, .link:not(.button).dashed {
   text-decoration: none;
   border-bottom: 1px dashed currentColor
 }
+
+
+.post a:not(.button), .case-page a:not(.button), .case-page__header a:not(.button) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  color: var(--color-blue);
+  transition: opacity 0.2s, text-decoration-color 0.3s ease-in-out;
+  word-break: break-word;
+}
+
+.post a:not(:is(:hover, :focus)), .case-page a:not(:is(:hover, :focus)), .case-page__header a:not(:is(:hover, :focus)) {
+  text-decoration-color: color-mix(in srgb, currentColor, transparent 55%);
+  }
 
 .highlight, .highlight-green {
   font-variation-settings: var(--font-flex-bold);

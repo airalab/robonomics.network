@@ -3,6 +3,8 @@
 import Layout from "../../../layouts/Layout.astro";
 import Header from "../../../components/cases/CaseHeader.astro";
 import CaseText from "../../../components/cases/CaseText.astro";
+
+import RbButton from "../../../components/RbButton.astro";
 ---
 
 <Layout
@@ -11,29 +13,131 @@ import CaseText from "../../../components/cases/CaseText.astro";
 
   <Header
     path={Astro.url.pathname}
+    introText={$tr("Showcase a fully decentralized media pipeline using Robonomics, IPFS and Home Assistant: capture funny photos, apply on-the-fly computer-vision filters, store them on IPFS, register all media hashes on the Robonomics Datalog, and let any DApp read and display photo gallery.")}
   />
 
   <section class="case-page layout">
 
-    <CaseText
-      multiple
-    >
-      <div class="space-b-2 text-center"><img src="/images/cases/lugano-2025.webp" alt="Galley preview"/></div>
+    <div class="case-page__content hyphens">
+      <CaseText
+        multiple
+        title={$tr('The Idea')}
+        extraCls=section-gap"
+      >
 
-      <p>{$tr('We’re excited to participate in Decentralized Lugano 2025! On May 8th, participants can take fun, smile-filled photos — with smiles randomly and automatically added. Everything is fully decentralized: the camera and smart LED are connected to Home Assistant, the photos are stored on IPFS, and participants can browse and download their pictures from the gallery on our website hosted on GitHub — all without any tracking, targeting, or surveillance.')}</p>
+      <img class="space-b-2" src="/images/cases/lugano-2025/the-idea.webp" alt="the idea scheme">
 
-      <p><b>{$tr('Check out the gallery')} <a href="/cases/lugano-2025/gallery/">{$tr('here')}</a> 📷</b> </p>
+      <article class="text-center">
+        <h5 class="space-b-05">{$tr('1. Photo Capture & Face Detection')}</h5>
+        <p>{$tr('A camera was integrated into the Home Assistant environment to capture images on demand, which an embedded Python service processes with OpenCV’s Haar-cascade classifier (no GPU required) to detect every face; each detected face is then anonymized by overlaying a smiling emoji via the Pillow library.')}</p>
+      </article>
 
+      <article class="text-center">
+        <h5 class="space-b-05">{$tr('2. Integration with Home Assistant')}</h5>
+        <p>{$tr('To streamline deployment within Home Assistant, Alena, our main contributor to Robonomics integration with Home Assistant, created a lightweight “media integration” module based on the main Robonomics HA integration')} (<a aria-label="check out the main Robonomics HA integration" href="https://github.com/airalab/homeassistant-robonomics-integration" target="_blank">https://github.com/airalab/homeassistant-robonomics-integration</a>) {$tr('The package')} (<a aria-label="check out Robonomics package" href="https://github.com/LoSk-p/robonomics_media_integration" target="_blank">https://github.com/LoSk-p/robonomics_media_integration</a>)  {$tr('reuses the core connector for subscribing to camera events and publishing meta-file CIDs to the Robonomics Datalog, but strips out unused features—so installation and configuration took only minutes.')}</p>
+      </article>
 
-    </CaseText>
+      <article class="text-center">
+        <h5 class="space-b-05">{$tr('3. IPFS Storage')}</h5>
+        <p>{$tr('After processing, each image is pinned to IPFS using Pinata’s pinning service, which returns a unique content identifier (CID) that serves as the permanent reference for the snapshot.')}</p>
+      </article>
+
+      <article class="text-center">
+        <h5 class="space-b-05">{$tr('4. Metadata File & Datalog')}</h5>
+        <p>{$tr('For every new photo, the system rebuilds the JSON list of all image CIDs and pins that list to IPFS. A background task runs once a minute to compare the CID of the latest pinned list with the one recorded in the Robonomics Datalog—and if they don’t match, the new list’s CID is sent to the Datalog to keep the on-chain reference up to date.')}</p>
+      </article>
+
+      <article class="text-center">
+        <h5 class="space-b-05">{$tr('RoSeMAN Indexing')}</h5>
+        <p>{$tr('RoSeMAN, our off-chain indexer (also used in the Sensor-Map case), is a Node.js service (see')} (<a aria-label="learn more about RoSeMAN" href="https://github.com/airalab/RoSeMAN" target="_blank">https://github.com/airalab/RoSeMAN</a>) {$tr('that subscribes to the Robonomics Datalog via a Substrate-based sensor agent.')}</p>
+        <div class="divider space-b"><b>_</b></div>
+        <p>{$tr('On each new meta-file CID logged in the Datalog, it performs an HTTP fetch from IPFS to retrieve and parse the JSON list of photo CIDs.')}</p>
+        <div class="divider space-b"><b>_</b></div>
+        <p>{$tr('Parsed CIDs are inserted into RoSeMAN’s MongoDB backend and exposed through a simple HTTP API, so any external DApp can query RoSeMAN for an up-to-date gallery of all photos pinned on IPFS.')}</p>
+      </article>
+
+      <article class="text-center">
+        <h5 class="space-b-05">{$tr('As a result')}</h5>
+        <p>{$tr('Visitors see a live, censorship-resistant')} <a href="/cases/lugano-2025/gallery/" aria-label="check out the gallery">{$tr('gallery')}</a> {$tr('of every smile captured in Lugano—no central server, no single point of failure.')} </p>
+      </article>
+    
+      </CaseText>
+
+      <CaseText
+        multiple
+        title={$tr('How it worked')}
+        extraCls="title-gap text-center"
+      >
+
+        <div class="item-with-plate case-page__item-with-plate case-page__item-with-plate--videos">
+          <span class="text-plate">{$tr('1. Creating & coding & crafting')}</span>
+          <video style="width: 100%; height: 100%; object-fit: cover;" class="space-b-2"  autoplay loop muted playsinline>
+            <source src="/images/cases/lugano-2025/timelaps-printing-polkadot-lamp.webm"  type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+          <video class="space-b-2 small-video"  autoplay loop muted playsinline>
+            <source src="/images/cases/lugano-2025/robonomics-team-testing-out-stand-setup.webm"  type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="item-with-plate case-page__item-with-plate">
+          <span class="text-plate">{$tr('2. Testing & Packing')}</span>
+          <img class="space-b-2" src="/images/cases/lugano-2025/testing.webp" alt="testing and packing image">
+        </div>
+
+        <div class="item-with-plate case-page__item-with-plate">
+          <span class="text-plate">{$tr('3. setting up in lugano!')}</span>
+          <video style="width: 100%; height: 100%; object-fit: cover;" class="space-b-2"  autoplay loop muted playsinline>
+            <source src="/images/cases/lugano-2025/robonomics-lugano-stand.webm"  type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="item-with-plate case-page__item-with-plate">
+          <span class="text-plate">{$tr('.. And smile!')}</span>
+          <img class="space-b-2" src="/images/cases/lugano-2025/smile.webp" alt="testing and packing image">
+        </div>
+
+        <RbButton extraCls="button text-center" href="/cases/lugano-2025/gallery/" aria-label="see the cool gallery">{$tr('📷 Take a look at the gallery')}</RbButton>
+      </CaseText>
+
+    </div>
 
   </section>
 
 </Layout>
 
-<style is:global>
-  .case-page__status {
-    display: none;
+<style>
+
+.case-page__item-with-plate--videos {
+  position: relative;
+}
+
+.small-video {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 205px;
+  height: 365px;
+  object-fit: cover;
+  border: 1px solid var(--color-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 720px) {
+  .small-video {
+    width: 165px;
+    height: 245px;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .small-video {
+    bottom: -10px;
+    width: 105px;
+    height: 165px;
+  }
+}
 
 </style>
