@@ -1,0 +1,129 @@
+---
+title: "JAM for Robotics: Application and Limitations"
+date: 2025-05-20
+published: true
+locale: 'en'
+tags: ['JAM', 'Robotics', 'Polkadot', 'Digital Twin']
+cover_image: /blog/images/jam-for-robotics/cover.webp
+description: "In this article, we want to examine how the JAM stack can be used in robotics: in which tasks the JAM supercomputer will perform best, and in what areas its use will be redundant or unjustified."
+abstract: "As the architectural update of Polkadot's Relay Chain advances toward the Join-Accumulate Machine (JAM), we at Robonomics are considering what benefits this technology will bring to us and our devices. In this article, I want to examine how the JAM stack can be used in robotics: in which tasks the JAM supercomputer will perform best, and in what areas its use will be redundant or unjustified @ Ivan Berman [JohnnyB]"
+---
+
+## Components of Modern Robot
+
+To define the scope of tasks in robotics, let's start by looking at what parts a robot typically consists of. There are many classifications, but considering modern robot tasks (which have become closely intertwined with AI), we can identify the following subsystems and examples of their functions:
+
+- actuating (e.g. motors, gripping, stabilization, balance)
+- sensing (e.g. cameras, lidars, IMU, sensors)
+- information processing (e.g. recognition, sensor fusion, SLAM)
+- control (e.g. joint controllers, posture, motion optimization)
+- planning (e.g. path, motion, task)
+- estimating (e.g. odometry, filters, context)
+- communicating (e.g. network interfaces, human-machine interaction, speech)
+- reasoning (e.g. symbolic planning, LLM reasoning, logic, goal management, explainability)
+- learning (e.g. deep, meta, continual learning, knowledge base)
+
+## What is JAM?
+
+For those who don't follow the latest and upcoming innovations in the Polkadot ecosystem, here's a brief overview. **JAM** is a protocol designed to transform the network into a decentralized supercomputer. It combines the strengths of Ethereum and Polkadot: a unified global permissionless object space similar to Ethereum smart contracts, and secure parallel computing with the scalability inherent to Polkadot.
+
+This is proposed to be achieved through the distribution of validator computing power into virtual **cores**. Heavy user computations are executed only on a specific core (*in-core*) in parallel with others, while all shared security infrastructure remains *on-chain* and is executed by each validator. A developer who wants to deploy their code (**service**) on cores only needs to purchase **core-time** — and pay exactly for the amount of resources that are actually needed.
+
+For protocol details, I suggest referring to [JAM Gray Paper](https://graypaper.com/), and you can find the projected characteristics of the machine in the appendix. Next, we will examine the applicability of JAM to robotics tasks.
+
+## Applications of JAM
+
+Where can JAM be most beneficial? Let's eliminate the most obvious — there's no point in moving computations of the main actuating components to JAM cores, where control loops with periods < 10 ms are encountered. Now we can check how the developers themselves describe their brainchild. Dr. Gavin Wood in Gray Paper identifies five factors that determine JAM's development:
+
+- *Resilience* — the system must remain operational and unstoppable despite any intervention by the participants
+- *Generality* — the system supports Turing-complete computations
+- *Performance* — the system must perform calculations quickly at low cost
+- *Coherency* — the system must be able to establish causal relationships between states
+- *Accessibility* — the system could be used by anyone, easy, fast, cheap and permissionless
+
+These factors already give us a hint that the JAM supercomputer is especially useful where computation verifiability and operation in a trustless environment are required. It's not surprising that this is where the entire spectrum of tasks that Robonomics has been dealing with since its foundation fits perfectly:
+
+- immutable logs of robot actions for subsequent audit or certification
+- digital twins of devices
+- tokenization of telemetry for exchange or sale
+- robot economy: payments for tasks, “robot-as-a-service” model
+
+In addition, thanks to the fact that JAM provides a global computation environment, we can think about fundamentally new solutions. For instance, a digital twin in the core easily transforms from a simple state ledger into a full-fledged simulation model, updated through snapshots of the real device.
+
+JAM will enable resource-intensive global path planning that doesn't require instant response, thus offloading the robot's local computer. Even more promising is the global optimization of tasks, paths, and goals for an entire swarm of robots.
+
+For swarm technologies, the decentralized supercomputer is perfectly suited for collaborative tasks between robots. Examples include: collaborative trusted SLAM, where multiple independent robots build and refine a unified map of the environment, or federated learning — collaborative training of a neural network model, where JAM ensures true data decentralization and verifiable contribution of each robot to the training.
+
+Finally, even at the low level of actuating components, there are specific use cases: periodic recalculation of PID controller coefficients during calibration (with guaranteed recording of this fact) or delivery of OTA firmware updates for drives with cryptographic signatures.
+
+Of course, each of the listed ideas will require thinking through the logic of such a service in JAM terms. However, developers are already preparing **CoreVM** — a special service that acts as an operating system. It provides developers with a container for continuous code execution, hiding the internal working process of the cores under the hood. This effectively turns Polkadot into a distributed cloud computing platform, alternative to Amazon Web Services or Microsoft Azure. Thanks to this, it will be possible to run any robotics tasks, provided they are physically feasible within the cores and have paid core-time.
+
+Of particular interest is the ability to host compact LLM agents in CoreVM for speech synthesis, planning, or simple dialogs. For the first time, there's an opportunity to use a distributed cloud LLM instead of a corporate service. Of course, local agents on dedicated GPUs still work faster, but CoreVM will reduce power consumption — a critical factor for humanoid robots whose autonomy is limited to just a few hours.
+
+## Example: Digital Twin Living in JAM
+
+Let's try to simulate what life would be like for a digital twin of a small agricultural watering robot, whose computations are performed inside JAM cores. Our goal is to predict the timing of the next irrigation and, if necessary, recalibrate the robot's IMU/odometry due to temperature drift.
+
+1. Every N minutes, the robot collects a telemetry package (soil moisture, temperature, odometry) and generates a **work-package**, specifying:
+    - targeted JAM service for analytics and calibration;
+    - fresh sensor readings as extrinsic;
+    - imported segment from the **D3L** layer (long-lasting **Distributed, Decentralized, Data Lake**) where the previous calibration filter matrix is stored;
+    - proof of payment for core-time and other parameters.
+
+    The work package is signed with the robot's key and sent to the network.
+
+2. The designated core receives the package; at least two validators-guarantors execute the `refine` function:
+    - load the previous filter matrix from D3L;
+    - calculate a new filter and obtain IMU/odometry calibration coefficients;
+    - predict the moment when moisture will drop to a threshold value;
+    - make a **work-report** with the prediction and coefficients;
+    - export the new filter matrix back to D3L.
+
+    After signing the report, the guarantors send it to the author of the future block.
+
+3. After the author collects all the reports from the cores, all validators check that the work-reports are correct. Then the `accumulate` function is called, which:
+    - updates the on-chain state fields for next irrigation time and calibration coefficients;
+    - links to the new filter matrix in D3L.
+
+    All that remains is to finalize the block so that all results become irreversible.
+
+4. The robot periodically reads its state from the blockchain, sees new calibration coefficients, and applies them to the controller. The robot and its user (e.g., in a dapp) see the irrigation prediction.
+
+If we now describe where the parts of the digital twin live, we get the following:
+
+- **Current values for irrigation and coefficients** — on-chain state
+- **Filter matrix** — D3L
+- **Raw telemetry packages** — if they are small and not needed for long, then directly in the work-package; archived and large ones are stored in D3L for audit
+- **Service algorithm** — service account in the blockchain state
+
+
+## Limitations in Robotics
+
+There are several areas in robotics where the use of JAM is impractical. In principle, any robot component requiring strict real-time operation, millisecond latencies, and instant acquisition of new sensor data is more efficient to keep locally on the robot. This applies, for example, to a motion planner responding to constant vision data stream, or critical collision avoidance algorithms. Processing heavy streaming data from sensors (3D lidar, cameras) and sensor fusion may be too heavy for JAM if fast processing is needed.
+
+To summarize — computations on JAM in robotics are justified if:
+
+- the task's scale fits within seconds / can wait for several blocks until completion
+- it is acceptable to not wait for block finalization
+- the system can tolerate potential state rollbacks
+- strict real-time streaming of heavy data is not required, or it is sufficient to transfer limited batches/snapshots
+- there is a more or less stable network connection
+
+
+## Conclusion
+
+Even without robotics applications, JAM already looks extremely attractive, marking a new milestone in the Web3 technology stack. However, when thinking about the future of robotics on the planet, it is easy to imagine several scenarios where robots operating on a decentralized supercomputer would be preferable (and less frightening) than on anything else. The task of our Robonomics team is to test these scenarios and present verified results to the community.
+
+## Annex: Characteristics of Machine
+
+According to the current JAM Gray Paper (v 0.6.6), the system is characterized as follows:
+
+- 1023 validator nodes
+- single validator configuration: 16 core CPU, 64 GB RAM, 8 TB storage, 0.5 GbE networking
+- 341 cores (1023 / 3 guarantors)
+
+Taking into account the load of validators on protocol support, the estimated actual computing power available for code in a single core is as follows:
+
+- 25-50% of core processor power
+- 2 GB RAM
+- 2 MB/s bandwidth for input/output
