@@ -1,0 +1,127 @@
+---
+title: "JAM voor Robotica: Toepassing en Beperkingen"
+date: 2025-05-20
+published: true
+locale: 'nl'
+tags: ['JAM', 'Robotics', 'Polkadot', 'Digital Twin']
+cover_image: /blog/images/jam-for-robotics/cover.webp
+description: "In dit artikel willen we onderzoeken hoe de JAM-stack kan worden gebruikt in robotica: bij welke taken de JAM-supercomputer het beste zal presteren, en op welke gebieden het gebruik ervan overbodig of niet gerechtvaardigd zal zijn."
+abstract: "Naarmate de architecturale update van Polkadot's Relay Chain richting de Join-Accumulate Machine (JAM) vordert, overwegen wij bij Robonomics welke voordelen deze technologie ons en onze apparaten zal brengen. In dit artikel wil ik onderzoeken hoe de JAM-stack kan worden gebruikt in robotica: bij welke taken de JAM-supercomputer het beste zal presteren, en op welke gebieden het gebruik ervan overbodig of niet gerechtvaardigd zal zijn @ Ivan Berman [JohnnyB]"
+---
+
+## Componenten van de Moderne Robot
+
+Om de reikwijdte van taken in robotica te bepalen, laten we beginnen met te kijken uit welke onderdelen een robot doorgaans bestaat. Er zijn veel classificaties, maar als we kijken naar moderne robottaken (die nauw verweven zijn geraakt met AI), kunnen we de volgende subsystemen en voorbeelden van hun functies onderscheiden:
+
+- aandrijving (bijv. motoren, grijpen, stabilisatie, balans)
+- waarneming (bijv. camera's, lidars, IMU, sensoren)
+- informatieverwerking (bijv. herkenning, sensorfusie, SLAM)
+- besturing (bijv. gewrichtscontrollers, houding, bewegingsoptimalisatie)
+- planning (bijv. pad, beweging, taak)
+- schatting (bijv. odometrie, filters, context)
+- communicatie (bijv. netwerkinterfaces, mens-machine-interactie, spraak)
+- redeneren (bijv. symbolische planning, LLM-redeneren, logica, doelbeheer, uitlegbaarheid)
+- leren (bijv. diep, meta, continu leren, kennisbank)
+
+## Wat is JAM?
+
+Voor degenen die de laatste en aankomende innovaties in het Polkadot-ecosysteem niet volgen, hier een kort overzicht. **JAM** is een protocol dat is ontworpen om het netwerk te transformeren tot een gedecentraliseerde supercomputer. Het combineert de sterke punten van Ethereum en Polkadot: een verenigde, wereldwijde, permissieloze objectruimte vergelijkbaar met Ethereum smart contracts, en veilige parallelle computing met de schaalbaarheid die inherent is aan Polkadot.
+
+Dit wordt voorgesteldte bereiken door de rekenkracht van validators te verdelen over virtuele **cores**. Zware gebruikersberekeningen worden alleen uitgevoerd op een specifieke core (*in-core*) parallel aan andere, terwijl alle gedeelde beveiligingsinfrastructuur *on-chain* blijft en door elke validator wordt uitgevoerd. Een ontwikkelaar die zijn code (**service**) op cores wil uitrollen, hoeft alleen maar **core-time** aan te schaffen — en betaalt precies voor de hoeveelheid resources die daadwerkelijk nodig zijn.
+
+Voor protocoldetails verwijs ik naar de [JAM Gray Paper](https://graypaper.com/), en in de bijlage vind je de verwachte kenmerken van de machine. Vervolgens bekijken we de toepasbaarheid van JAM op robotica-taken.
+
+## Toepassingen van JAM
+
+Waar kan JAM het meest van nut zijn? Laten we het meest voor de hand liggende uitsluiten — het heeft geen zin om de berekeningen van de belangrijkste actuatoren naar JAM-cores te verplaatsen, waar regellussen met periodes < 10 ms voorkomen. Nu kunnen we kijken hoe de ontwikkelaars zelf hun geesteskind beschrijven. Dr. Gavin Wood noemt in de Gray Paper vijf factoren die de ontwikkeling van JAM bepalen:
+
+- *Veerkracht* — het systeem moet operationeel en onstuitbaar blijven ondanks elke interventie van deelnemers
+- *Algemeenheid* — het systeem ondersteunt Turing-volledige berekeningen
+- *Prestaties* — het systeem moet snel en goedkoop berekeningen uitvoeren
+- *Samenhang* — het systeem moet in staat zijn causale verbanden tussen toestanden vast te stellen
+- *Toegankelijkheid* — het systeem moet door iedereen gebruikt kunnen worden, eenvoudig, snel, goedkoop en zonder toestemming
+
+Deze factoren geven ons al een aanwijzing dat de JAM-supercomputer vooral nuttig is waar verifieerbaarheid van berekeningen en functioneren in een trustless omgeving vereist zijn. Het is dan ook niet verwonderlijk dat hier het volledige spectrum van taken past waar Robonomics zich sinds de oprichting mee bezighoudt:
+
+- onveranderlijke logboeken van robotacties voor latere audit of certificering
+- digitale tweelingen van apparaten
+- tokenisatie van telemetrie voor uitwisseling of verkoop
+- roboteconomie: betalingen voor taken, “robot-as-a-service”-model
+
+Bovendien kunnen we dankzij het feit dat JAM een globale rekenomgeving biedt, nadenken over fundamenteel nieuwe oplossingen. Zo verandert een digitale tweeling in de core eenvoudig van een simpele toestandsadministratie in een volwaardig simulatiemodel, bijgewerkt via snapshots van het echte apparaat.
+
+JAM maakt resource-intensieve globale padplanning mogelijk die geen directe respons vereist, waardoor de lokale computer van de robot wordt ontlast. Nog veelbelovender is de wereldwijde optimalisatie van taken, paden en doelen voor een hele zwerm robots.
+
+Voor zwermtechnologieën is de gedecentraliseerde supercomputer perfect geschikt voor samenwerkingsopdrachten tussen robots. Voorbeelden hiervan zijn: collaboratieve vertrouwde SLAM, waarbij meerdere onafhankelijke robots samen een uniforme kaart van de omgeving opbouwen en verfijnen, of federated learning — gezamenlijke training van een neuraal netwerkmodel, waarbij JAM zorgt voor echte datadecentralisatie en verifieerbare bijdrage van elke robot aan de training.
+
+Zelfs op het lage niveau van actuatoren zijn er specifieke use-cases: periodieke herberekening van PID-regelaarcoëfficiënten tijdens kalibratie (met gegarandeerde registratie hiervan) of het leveren van OTA-firmware-updates voor aandrijvingen met cryptografische handtekeningen.
+
+Natuurlijk vereist elk van de genoemde ideeën het doordenken van de logica van zo'n dienst in JAM-termen. Ontwikkelaars bereiden echter al **CoreVM** voor — een speciale dienst die fungeert als een besturingssysteem. Het biedt ontwikkelaars een container voor continue code-uitvoering, waarbij het interne werkproces van de cores onder de motorkap wordt verborgen. Dit verandert Polkadot feitelijk in een gedistribueerd cloud computing-platform, een alternatief voor Amazon Web Services of Microsoft Azure. Hierdoor wordt het mogelijk om elke robotica-taak uit te voeren, mits deze fysiek haalbaar is binnen de cores en er core-tijd is betaald.
+
+Bijzonder interessant is de mogelijkheid om compacte LLM-agenten te hosten in CoreVM voor spraaksynthese, planning of eenvoudige dialogen. Voor het eerst is er een mogelijkheid om een gedistribueerde cloud-LLM te gebruiken in plaats van een bedrijfsdienst. Natuurlijk werken lokale agenten op speciale GPU's nog steeds sneller, maar CoreVM zal het energieverbruik verminderen — een cruciale factor voor humanoïde robots waarvan de autonomie beperkt is tot slechts enkele uren.
+
+## Voorbeeld: Digitale Tweeling die in JAM leeft
+
+Laten we proberen te simuleren hoe het leven eruit zou zien voor een digitale tweeling van een kleine agrarische bewateringsrobot, waarvan de berekeningen worden uitgevoerd binnen JAM-cores. Ons doel is om het tijdstip van de volgende irrigatie te voorspellen en, indien nodig, de IMU/odometrie van de robot opnieuw te kalibreren vanwege temperatuurdrift.
+
+1. Elke N minuten verzamelt de robot een telemetriepakket (bodemvocht, temperatuur, odometrie) en genereert een **work-package**, met daarin:
+    - de beoogde JAM-dienst voor analyse en kalibratie;
+    - verse sensorwaarden als extrinsic;
+    - geïmporteerd segment uit de **D3L**-laag (langdurige **Distributed, Decentralized, Data Lake**) waar de vorige kalibratiefiltermatrix is opgeslagen;
+    - betalingsbewijs voor core-tijd en andere parameters.Het werkpakket wordt ondertekend met de sleutel van de robot en naar het netwerk verzonden.
+
+2. De aangewezen core ontvangt het pakket; minstens twee validators-garanten voeren de `refine`-functie uit:
+    - laad de vorige filtermatrix uit D3L;
+    - bereken een nieuw filter en verkrijg IMU/odometrie kalibratiecoëfficiënten;
+    - voorspel het moment waarop het vochtgehalte tot een drempelwaarde zal dalen;
+    - maak een **werkrapport** met de voorspelling en coëfficiënten;
+    - exporteer de nieuwe filtermatrix terug naar D3L.
+
+    Na ondertekening van het rapport sturen de garanten het naar de auteur van het toekomstige blok.
+
+3. Nadat de auteur alle rapporten van de cores heeft verzameld, controleren alle validators of de werkrapporten correct zijn. Vervolgens wordt de `accumulate`-functie aangeroepen, die:
+    - de on-chain statusvelden bijwerkt voor de volgende irrigatietijd en kalibratiecoëfficiënten;
+    - een koppeling maakt naar de nieuwe filtermatrix in D3L.
+
+    Het enige wat nog rest is het blok te finaliseren zodat alle resultaten onomkeerbaar worden.
+
+4. De robot leest periodiek zijn status van de blockchain, ziet nieuwe kalibratiecoëfficiënten en past deze toe op de controller. De robot en zijn gebruiker (bijvoorbeeld in een dapp) zien de irrigatievoorspelling.
+
+Als we nu beschrijven waar de onderdelen van de digitale tweeling zich bevinden, krijgen we het volgende:
+
+- **Huidige waarden voor irrigatie en coëfficiënten** — on-chain status
+- **Filtermatrix** — D3L
+- **Ruwe telemetriepakketten** — als ze klein zijn en niet lang nodig zijn, dan direct in het werkpakket; gearchiveerde en grote worden opgeslagen in D3L voor audit
+- **Service-algoritme** — serviceaccount in de blockchainstatus
+
+
+## Beperkingen in Robotica
+
+Er zijn verschillende gebieden in de robotica waar het gebruik van JAM onpraktisch is. In principe is elk robotonderdeel dat strikte real-time werking, milliseconde-latenties en directe acquisitie van nieuwe sensorgegevens vereist, efficiënter om lokaal op de robot te houden. Dit geldt bijvoorbeeld voor een bewegingsplanner die reageert op een constante stroom van visuele gegevens, of kritieke algoritmen voor botsingsvermijding. Het verwerken van zware streaminggegevens van sensoren (3D lidar, camera's) en sensorfusie kan te zwaar zijn voor JAM als snelle verwerking nodig is.
+
+Samengevat — berekeningen op JAM in robotica zijn gerechtvaardigd als:
+
+- de schaal van de taak binnen seconden past / enkele blokken kan wachten tot voltooiing
+- het acceptabel is om niet te wachten op blokfinalisatie
+- het systeemkan potentiële terugdraaien van de staat tolereren
+- strikte real-time streaming van zware data is niet vereist, of het is voldoende om beperkte batches/snapshots over te dragen
+- er is een min of meer stabiele netwerkverbinding
+
+
+## Conclusie
+
+Zelfs zonder robotica-toepassingen ziet JAM er al buitengewoon aantrekkelijk uit, waarmee het een nieuwe mijlpaal in de Web3-technologiestack markeert. Maar als we nadenken over de toekomst van robotica op de planeet, is het gemakkelijk om verschillende scenario's voor te stellen waarin robots die werken op een gedecentraliseerde supercomputer de voorkeur zouden hebben (en minder beangstigend zijn) dan op om het even wat anders. De taak van ons Robonomics-team is om deze scenario's te testen en geverifieerde resultaten aan de gemeenschap te presenteren.
+
+## Bijlage: Kenmerken van Machine
+
+Volgens het huidige JAM Gray Paper (v 0.6.6) wordt het systeem als volgt gekarakteriseerd:
+
+- 1023 validator nodes
+- enkele validatorconfiguratie: 16 core CPU, 64 GB RAM, 8 TB opslag, 0,5 GbE netwerk
+- 341 cores (1023 / 3 garantstellers)
+
+Rekening houdend met de belasting van validators op protocolondersteuning, is het geschatte daadwerkelijke rekenvermogen beschikbaar voor code in een enkele core als volgt:
+
+- 25-50% van de core processorcapaciteit
+- 2 GB RAM
+- 2 MB/s bandbreedte voor input/output
