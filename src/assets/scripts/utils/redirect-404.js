@@ -1,5 +1,5 @@
-const locale = localStorage.getItem('locale');
-
-if (locale !== 'en' && !window.location.pathname.includes(`/${locale}/404`)) {
-  window.location.href = `/${locale}/404/`;
-}
+  const savedLocale = localStorage.getItem('locale') || 'en';
+  
+  if (savedLocale !== 'en' && !window.location.pathname.includes(`/${savedLocale}/404`)) {
+    window.location.replace(`/${savedLocale}/404/`);
+  }
