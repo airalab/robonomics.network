@@ -240,7 +240,6 @@ html[lang="nl"] .price-number {
 
 .product-buy__wrapper button {
   padding: 1rem;
-  background-color: var(--color-dark);
   transition: background-color 0.33s ease-in-out;
 }
 
