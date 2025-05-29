@@ -57,16 +57,10 @@
 	"Device_Specifications": "مواصفات الجهاز",
 	"Input_Voltage_": "فولتية الإدخال:",
 	"AC_100_240V_50_60Hz": "AC 100-240V 50/60Hz",
-	"Wireless_protocol_": "بروتوكول لاسلكي:",
-	"Supports_2_4GHz_Wi_Fi_6__802_11_b_g_n__and_Bluetooth_5__LE___Zigbee_with_onboard_antenna": "يدعم 2.4GHz Wi-Fi 6 (802.11 b/g/n) و Bluetooth 5 (LE)، Zigbee مع هوائي مدمج",
 	"Equipped_with_a_high_performance": "مجهز بأداء عالي",
 	"Memory_": "الذاكرة:",
 	"_320KB_ROM__512KB_of_HP_SRAM__16KB_LP_SRAM_and_4MB_Flash_memory": "320KB ROM, 512KB of HP SRAM, 16KB LP SRAM and 4MB Flash memory",
 	"USB_C": "USB C",
-	"for_firmware_development_and_updates": "لتطوير البرامج الثابتة وتحديثاتها",
-	"PM_sensor_": "مستشعر PM:",
-	"SDS011_laser_PM2_5_PM10_sensor": "جهاز قياس الجسيمات الدقيقة بالليزر SDS011 PM2.5/PM10",
-	"Supported_sensors_": "الأجهزة الاستشعار المدعومة:",
 	"Help___support": "مساعدة و دعم",
 	"Steps_to_set_up_your_Connectivity": "خطوات لإعداد الاتصال الخاص بك",
 	"With_Robonomics_decentralized_map_you_can_use_Robonomics_Connectivity_or_create_your_own_Connectivity_Service_": "مع خريطة Robonomics المركزية يمكنك استخدام Robonomics Connectivity أو إنشاء خدمة الاتصال الخاصة بك.",
@@ -1349,7 +1343,6 @@
 	"ESP32_C6_series_of_SoCs__32_bit_RISC_V_single_core_microprocessor": "سلسلة ESP32-C6 من مجموعة SoCs، معالج ميكروبوسر 32 بت من نوع RISC-V واحد النواة",
 	"_320_KB_ROM__512_KB_SRAM__4_MB_FLASH": "320 كيلوبايت ROM، 512 كيلوبايت SRAM، 4 ميجابايت FLASH",
 	"Powered_by_Tasmota__an_open_firmware_distributed_under_GNU_GPLv3__the_firmware_can_be_upgraded_via_USB_C_or_OTA__To_learn_more_and_download_the_latest_firmware__visit_": "مدعوم بواسطة Tasmota، برنامج تشغيل مفتوح المصدر موزع بموجب رخصة GNU GPLv3، يمكن ترقية البرنامج التشغيلي عبر USB-C أو OTA. لمعرفة المزيد وتحميل أحدث البرامج التشغيلية، قم بزيارة:",
-	"T_H__SHT3X_BME280_HTU21D__Noise_Level_Sensor__I2S_INMP441__ICS_43434__GPS__BN220_GSP__Geiger_counter___Radsens_": "T&H: SHT3X,BME280,HTU21D; جهاز استشعار مستوى الضوضاء: I2S INMP441, ICS-43434; GPS: BN220-GSP; عداد جيجر: Radsens.",
 	"We_re_excited_to_participate_in_Decentralized_Lugano_2025__On_May_8th__participants_can_take_fun__smile_filled_photos___with_smiles_randomly_and_automatically_added_": "نحن متحمسون للمشاركة في Decentralized Lugano 2025! في 8 مايو، يمكن للمشاركين التقاط صور مليئة بالسعادة - مع إضافة الابتسامات بشكل عشوائي وتلقائي.",
 	"Photo_Gallery_for_Lugano_2025": "معرض الصور للوغانو 2025",
 	"Come_get_your_photo_": "تعال واحصل على صورتك",
@@ -1387,5 +1380,19 @@
 	"_2__Testing___Packing": "2. Testing & Packing",
 	"_3__setting_up_in_lugano_": "3. الإعداد في لوغانو!",
 	"___And_smile_": ".. وابتسم!",
-	"___Take_a_look_at_the_gallery": "📷 ألق نظرة على المعرض"
+	"___Take_a_look_at_the_gallery": "📷 ألق نظرة على المعرض",
+	"Good_quality_sensors_": "أجهزة استشعار عالية الجودة",
+	"Air_quality_sensor__SDS011_laser_based_particulate_matter_sensor__PM2_5___PM10___Noise_sensor__ICS_43434_digital_MEMS_microphone_for_ambient_noise_monitoring__Environmental_sensor__BME280_for_atmospheric_pressure__humidity__and_temperature": "مستشعر جودة الهواء SDS011 مستشعر الجسيمات المعتمد على الليزر PM2.5 / PM10 مستشعر الضوضاء ICS-43434 ميكروفون MEMS رقمي لمراقبة الضوضاء المحيطة مستشعر البيئة BME280 لقياس الضغط الجوي والرطوبة ودرجة الحرارة",
+	"ESP32_C3FH4___high_performance_32_bit_single_core_RISC_V_CPU__up_to_160_MHz": "ESP32-C3FH4 — معالج RISC-V أحادي النواة عالي الأداء 32 بت يصل حتى 160 ميجاهرتز",
+	"_384_KB_ROM__400_KB_SRAM__including_16_KB_cache___8_KB_SRAM_in_RTC__4_MB_Flash_integrated_in_the_chip": "384 كيلوبايت ROM 400 كيلوبايت SRAM بما في ذلك 16 كيلوبايت كاش 8 كيلوبايت SRAM في RTC 4 ميجابايت فلاش مدمجة في الشريحة",
+	"Connectivity_": "الاتصال",
+	"Wi_Fi_2_4_GHz__IEEE_802_11_b_g_n_compliant": "واي فاي 2.4 جيجاهرتز IEEE 802.11 b/g/n متوافق",
+	"Power_Supply_": "مزود الطاقة",
+	"Powered_via_USB_C_connector": "يعمل عبر موصل USB-C",
+	"Operating_voltage_": "جهد التشغيل",
+	"_5_V": "٥ فولت",
+	"Energy_consumption_": "استهلاك الطاقة",
+	"_0_5_Wh_per_hour": "0.5 واط ساعة لكل ساعة",
+	"Interface_": "واجهة",
+	"USB_C_port_for_firmware_development_and_updates": "منفذ USB-C لتطوير البرامج الثابتة والتحديثات"
 }
