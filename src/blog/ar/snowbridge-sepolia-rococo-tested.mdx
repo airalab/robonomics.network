@@ -5,7 +5,7 @@ published: true
 locale: 'ar'
 cover_image: /blog/images/snowbridge-sepolia-rococo-tested/snowbridge-sepolia-rococo-tested.png
 description: "لقد أجرينا بنجاح اختبارات لنقل رموز XRT بين شبكتي Sepolia و Rococo Asset Hub باستخدام بروتوكول Snowbridge."
-abstract: "Snowbridge هو جسر عام، لا مركزي وخالي من الثقة بين Polkadot و Ethereum."
+abstract: "Snowbridge هو جسر عام، غير موثوق ولا مركزي بين Polkadot و Ethereum."
 tags: ['Polkadot', 'Ethereum']
 ---
 
@@ -34,7 +34,7 @@ https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf
 يجب أن تستغرق عملية التسجيل حوالي 30 دقيقة، ويجب أن يظهر التوكن الجديد في foreignAssets في Rococo Asset Hub. يمكن التحقق من ذلك باستخدام استعلام حالة السلسلة في Rococo Asset Hub (https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/chainstate):
 <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/foreign_asset_query.png" alt="Check if token registered" />
 
-بعد التسجيل الناجح، تلقينا الاستجابة التالية:
+بعد نجاح التسجيل، تلقينا الاستجابة التالية:
 ```
 {
     owner: 5GjRnmh5o3usSYzVmsxBWzHEpvJyHK4tKNPhjpUR3ASrruBy
@@ -63,20 +63,20 @@ locale: ar
 ---
 
 DB62573380CfEf#writeContract
-    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="Approve XRT spender" />
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="الموافقة على XRT كمُنفق" />
 
 2. ثم تم طلب الرسوم المطلوبة لإرسال الرمز:
     <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
 
 3. تم بدء تحويل XRT من Sepolia إلى Rococo Asset Hub باتباع تعليمات Snowbridge باستخدام مثال WETH: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
     
-    ملاحظة هامة بخصوص الحقل `destinationAddress.data`: كان يجب أن تكون قيمته بين علامات اقتباس (مثال: "0xb0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d").
+    ملاحظة هامة بخصوص حقل `destinationAddress.data`: كان يجب أن تكون قيمته محاطة بعلامات اقتباس (مثال: "0xb0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d").
 
     في هذه المرحلة، واجهنا تأخيرات كبيرة. بدلاً من الوقت المتوقع وهو 30 دقيقة، استغرقت المعاملة عدة أيام. في النهاية، تم إكمال جميع تحويلاتنا بنجاح.
     مثال على معاملة: https://sepolia.etherscan.io/tx/0xec539cd89cb955ffea2ff65cae6685a8abb0966a2c1b76876a308cc036cd18fb
 
     يمكن التحقق من رصيد XRT في الحساب المستهدف في Rococo Asset Hub عن طريق إرسال طلب `foreignAssets.account()` في حالة السلسلة:
-    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="Example of foreignAssets.account" />
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="مثال على foreignAssets.account" />
 
     تم إرسال ما مجموعه 15 XRT، لذا كان الرصيد في Rococo Asset Hub كما يلي:
     ```
@@ -100,7 +100,7 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/
 
 https://sepolia.etherscan.io/tx/0xe8a95dca350143a0c41891137e332962f2918351dcfc2612519e69c7a5c46772
 
-تم إكمال هذه الخطوة بسرعة نسبياً، خلال نصف ساعة تقريباً. ونتيجة لذلك، تم تحويل 1 XRT مرة أخرى إلى Sepolia. ظل رصيد XRT في Rococo Asset Hub عند 14 XRT:
+تم إكمال هذه الخطوة بسرعة نسبياً، خلال نصف ساعة تقريباً. ونتيجة لذلك، تم تحويل 1 XRT مرة أخرى إلى Sepolia. بقي رصيد XRT في Rococo Asset Hub عند 14 XRT:
 
 ```
 {
