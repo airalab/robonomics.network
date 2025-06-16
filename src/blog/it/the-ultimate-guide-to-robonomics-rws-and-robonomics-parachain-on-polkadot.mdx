@@ -1,0 +1,111 @@
+---
+title: La guida definitiva a Robonomics, RWS e la parachain Robonomics su Polkadot
+date: 2021-02-25
+published: true
+locale: 'it'
+cover_image: /blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-logo.jpg
+description: "Questo articolo approfondisce la connessione tra la piattaforma Robonomics, la sua parachain nell'ecosistema Polkadot e i Robonomics Web Services (RWS)"
+abstract: "Questo articolo approfondisce la connessione tra la piattaforma Robonomics, la sua parachain nell'ecosistema Polkadot e i Robonomics Web Services (RWS)"
+tags: ['Robonomics parachain', 'RWS token', 'Subscription']
+---
+
+Tenendo conto delle interminabili discussioni sul funzionamento di base di Robonomics, analizziamo la struttura interna e delineiamo i pilastri principali della rete. Questo articolo approfondisce la connessione tra la piattaforma Robonomics, la sua [parachain](https://blog.aira.life/robonomics-parachain-on-kusama-40853780c709) nell'ecosistema Polkadot e i [Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42) (RWS).
+
+La Robonomics Network è composta da diversi [repository di codice](https://github.com/airalab) che possono essere utilizzati separatamente nell'implementazione di un'applicazione IoT completa. Se, ad esempio, hai intenzione di collegare il tuo smartphone a un dispositivo IoT, non basta sviluppare un'app e collegarvi una serie di sensori. Invece, è necessario eseguire una [catena di azioni](https://blog.aira.life/simple-iot-scheme-990224363803) che porterà infine a un dispositivo IoT connesso e a elementi interconnessi dell'infrastruttura, permettendo al segnale del dispositivo di raggiungerti.
+
+## La cronologia dello sviluppo della Robonomics Network
+
+Come è nata l'idea di creare la [parachain Robonomics](https://parachain.robonomics.network/#/explorer) e la [Robonomics Network](https://robonomics.network/land/say-hello-to-robonomics/)? In origine, tra il 2015 e il 2017, abbiamo iniziato con lo sviluppo di un sistema piuttosto complessosoluzione che abbiamo chiamato [Economia dei Robot](https://blog.aira.life/the-first-in-the-economy-of-robots-6f4bb115643b). Siamo certi che sia esattamente ciò a cui arriveranno le smart city, l'industria 4.0 e lo sviluppo delle app IoT.
+
+Il nostro obiettivo principale era creare un software per sistemi ciber-fisici in grado di gestire dispositivi autonomi e indipendenti all'interno del quadro delle transazioni tecniche ed economiche. Pertanto, abbiamo deciso di generare una transazione a orientamento tecnico ed economico e di farne la base per lo sviluppo di processi più complessi.
+
+Uno dei miei scenari preferiti dell'Economia dei Robot si chiama [Smart Building Offsetting](https://new.dapp.ipci.io/#/offsetting). Si tratta di un servizio che consente a un edificio autonomo di raccogliere e aggregare informazioni sul proprio consumo energetico e poi comunicarle a un altro agente all'interno della Robonomics Network, e persino richiedere servizi di compensazione dell'impronta di carbonio. A sua volta, l'agente verifica la posizione dell'edificio, calcola un coefficiente applicabile di emissioni di CO2 e poi sincronizza questi dati con un progetto partner [DAO IPCI](http://ipci.io/), per determinare il numero di crediti di carbonio dal mercato della finanza verde necessari a compensare l'impronta di carbonio dell'edificio. Queste operazioni sono state eseguite con successo sulla blockchain di Ethereum.
+
+### La soluzione al problema
+
+Oggi, l'Economia dei Robot che siamo riusciti a costruire nel 2017 insieme a colleghi e partner, comprende una catena che a prima vista appare complessa, e che rappresenta la fase finale dell'evoluzione dell'industria IoT. Il problema più grande che abbiamo avuto è stato quello di accumulare tutte le conoscenze e realizzare le nostre idee, senza avere la possibilità di trasmetterle a nessuno. Ogni nuovo [scenario dell'Economia dei Robot](https://wiki.robonomics.network/docs/r-and-d-based-on-robonomics-network/), creato durante lo sviluppo della piattaforma Robonomics Network, rendeva il prodotto finale un po' più difficile da comprendere per chi non era del settore. In altre parole, bisogna possedere molteplici competenze e impiegare anni per comprendere il pensiero che sta dietro alle discipline intersecate che formano i concetti di economia e macchine che lavorano insieme.
+
+Quando si inizia a comprendere le sfumature dello sviluppo di un'applicazione IoT, diventa subito evidente che gli specialisti tecnici devono impiegare anni per arrivare a una fase di prodotto pienamente funzionante. Per questo motivo abbiamo deciso di trasformare i potenziali utenti della nostra piattaforma in co-sviluppatori. Ci siamo concentrati sull'insegnare loro a diventare ingegneri IT professionisti nello spazio delle applicazioni IoT e comedi conseguenza, abbiamo creato la parachain Robonomics e i Robonomics Web Services.
+
+![DAO IPCI with Robonomics network](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network.jpg)
+
+
+## Introduzione ai Robonomics Web Services
+
+È chiaro che l’Economia dei Robot suscita interesse nel pubblico. Tuttavia, il problema principale è che dopo poco tempo questi utenti si riversano comunque su Amazon Web Services per i dispositivi IoT e iniziano a utilizzare quelli, senza comprendere i vantaggi critici che la Robonomics Network offre rispetto ai rinomati giganti dell’IT. Questo ci ha portato alla conclusione che non possiamo limitarci a promettere qualcosa per il futuro senza fornire un prodotto reale qui e ora.
+
+Per questo motivo, abbiamo deciso che doveva essere offerta una gamma di servizi reali ai nostri potenziali utenti. Servizi simili a quelli che offrono altre piattaforme cloud, ma migliori. Di conseguenza, abbiamo creato i Robonomics Web Services, un prodotto costruito sui nostri protocolli e piattaforma proprietari che utilizza un framework di robotica open-source (ROS). Abbiamo poi dedicato 2 anni allo sviluppo delle funzioni chiave che ora approfondirò nel dettaglio.
+
+### Le funzioni chiave di RWS:
+
+**1. Abbonamento**
+
+L’approccio standard ai servizi blockchain prevede sempre costi di transazione noti come commissioni di transazione o gas di transazione. Questo significa che quando effettui una transazione, la sua priorità dipende dal costo o dalla commissione che sei disposto a pagare. Più alta è la commissione che paghi, più velocemente la tua transazione verrà elaborata. Un tale modello non è adatto a sistemi che si basano su una larghezza di banda garantita. Devi essere assolutamente certo che il tuo dispositivo sarà in grado di effettuare una transazione al momento stabilito e a un costo prevedibile. Questo è qualcosa che oggi vediamo raramente, poiché i costi di transazione dipendono completamente dalle fluttuazioni dei tassi di cambio, arrivando talvolta a costare fino a 50 dollari.
+
+Per risolvere questo problema, abbiamo creato un servizio di Abbonamento, che rappresenta un modello di costo alternativo sulla parachain Robonomics per Polkadot. Garantisce l’esecuzione di un numero prepagato di transazioni e assegna loro una priorità superiore rispetto alle transazioni pagate tramite il modello a commissione. Per saperne di più sulla differenza tra l’Abbonamento mensile e i token XRT puoi consultare il mio articolo ‘[Heterogeneous tokenomics](https://blog.aira.life/rws-overview-part-2-heterogeneous-tokenomics-afc209cc855)’, mentre un altro mio pezzo in programmache sarà rilasciato alla fine di dicembre illustrerà l'architettura finale e l'interconnessione dei due modelli.
+
+Il nostro modello di Abbonamento non solo risolve il problema della transizione garantita, ma costa anche solo 10 dollari per dispositivo, rendendolo un'offerta estremamente redditizia per l'utente finale. Inoltre, fornisce una larghezza di banda stabile per migliaia di transazioni mensili, il che rappresenta un risultato davvero notevole.
+
+**2. Avvio**
+
+L'Avvio è una funzione molto semplice ma economica dal punto di vista dell'utilizzo della potenza di calcolo e della blockchain. Ti permette di accendere o spegnere il tuo dispositivo e di cambiare la sua impostazione binaria da 1 a 0 e viceversa inviando una richiesta sotto forma di transazione. Poiché questa funzione non presenta molta complessità, passiamo al prossimo pilastro fondamentale.
+
+**3. Datalog**
+
+Questa funzione lavora con la telemetria e quindi necessita di un approfondimento. Funziona in due modalità: puoi salvare i tuoi hash IPFS oppure memorizzare i dati sulla chain.
+
+Come si usano queste modalità? La funzione datalog on-chain è applicabile quando la dimensione dei tuoi dati è inferiore a quattro variabili. Non ha senso salvare un blocco di dati così piccolo su IPFS (off chain), poiché in termini di byte questo log on-chain non sarà molto più grande dell'hash IPFS. Suggeriamo di registrare l'intero flusso di dati grezzi come una singola funzione oppure di optare per l'hash IPFS. Poi, Robonomics come piattaforma per sviluppatori elaborerà i dati registrati, siano essi grezzi o sotto forma di hash IPFS, e deciderà dove scriverli. Questo processo di datalog sarà nascosto all'utente finale, che non noterà nemmeno la differenza tra i due diversi tipi di archiviazione.
+
+‘Liability’ è la nostra funzione finale, ma non sarà rilasciata al pubblico finché non conosceremo gli obiettivi perseguiti dai grandi progetti di Economia dei Robot. Un altro prodotto fondamentale su cui stiamo lavorando è rivolto al framework [Robot as a Service](https://blog.aira.life/what-is-robonomics-network-robot-as-a-service-and-future-parachain-of-polkadot-or-something-more-36deece9f3cb), o come lo chiamiamo noi, il ‘robot contrattualmente obbligato’ su Ethereum. [Questa infrastruttura](https://blog.aira.life/robots-under-robonomics-control-overview-39337ac9fbbb) è già stata descritta in dettaglio nel nostro knowledge hub e implica una situazione in cui l'utente finale utilizza i nostri token di serviziosenza fare affidamento su XRT o altri token per pagare l'utilizzo della parachain.
+
+![Le funzioni chiave di Robonomics Web Services (RWS)](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-rws.jpg)
+
+## Qual è la connessione tra RWS e l'Economia dei Robot?
+
+Come accennato in precedenza, uno degli obiettivi di Robonomics Web Services è educare i nostri utenti e trasformarli in co-sviluppatori che comprendano l'Economia dei Robot. Crediamo che non ci sia nulla di complicato in questo compito, purché l'utente si familiarizzi con le funzionalità di base discusse sopra.
+
+### Gemelli Digitali
+
+Il passo successivo nell'applicazione degli strumenti forniti da Robonomics Web Services è imparare a creare un Gemello Digitale, noto anche come Ombra Digitale per l'app. Esso funge da versione digitale dell'apparecchiatura reale e ne copia tutte le caratteristiche tecniche.
+
+Cosa significa questo, mi chiederai! Prendiamo come esempio una struttura complessa di sensori che misurano la qualità dell'aria. Non puoi farli effettuare misurazioni ogni 5 secondi perché la loro calibrazione interna e il bilanciamento dei dati misurati richiedono 2 minuti. Qui entra in gioco il Gemello Digitale, che ci permette di creare un'app reattiva ai comandi dell'utente.
+
+Secondo il [rapporto Gartner sulle tendenze del mercato IoT](https://www.gartner.com/en/innovation-strategy/trends/iot-adoption-trends), l'85% delle aziende che hanno partecipato allo studio ha già implementato o prevede di implementare Gemelli Digitali nel corso del prossimo anno. La maggior parte di queste aziende dispone di team di ingegneri interni che lavorano su soluzioni proprietarie. Tuttavia, tutte riconoscono di dover fare affidamento su soluzioni già esistenti per poter scalare rapidamente e mantenere i loro servizi adattabili all'ambiente in continua evoluzione dell'industria IoT.
+
+Ecco perché la nostra parachain su Robonomics Network non offre solo le funzioni sopra menzionate, che non sono disponibili su Ethereum IPFS, ma consente anche ai nostri utenti di creare Gemelli Digitali dei loro dispositivi.
+
+Stiamo sviluppando questa funzionalità per permettere agli utenti di costruire i propri Gemelli Digitali, interpretarli su servizi web/app IoT e, soprattutto, salvarli come modello che scriverà il datalog. La nostra [Wiki](http://wiki.robonomics.network/) viene costantemente aggiornata con tutte le conoscenze necessarie per eseguire le soluzioni sopra descritte e sarà presto completa di informazioni di base che spiegano la costruzione di un Gemello Digitale dalla A alla Z.
+
+### Applicare i Gemelli Digitali---
+locale: it
+related: []
+---
+
+ Twins
+
+Una volta finalizzato il modello di elaborazione dei dati e strutturato completamente il tuo Digital Twin, devi decidere quale sarà la sua relazione con il servizio web o un'applicazione IoT.
+
+L'analisi dei dati è spesso la scelta comune per questo tipo di servizio digitale, dove un sensore ti invia i dati che misura (aggiorna la sua copia digitale). Questi dati saranno molto probabilmente soggetti a post-elaborazione, poiché è altamente improbabile che tu sia interessato al valore della pressione in Pascal all'interno del sistema di riscaldamento della tua casa di campagna. Invece, hai bisogno di sapere se la temperatura in casa è corretta e se il sistema di riscaldamento è ancora acceso. In sostanza, devi decidere come applicare il digital twin ai dati che hai salvato su di esso e qui possono essere utili servizi aggiuntivi.
+
+Ora, passiamo a uno scenario complesso di Smart Building Offsetting, dove una copia dei dati di consumo energetico funge da digital twin. Supponiamo che tu voglia salvare i dati di consumo energetico di un determinato appartamento e utilizzare la funzione Datalog con archiviazione IPFS per essi. Se vuoi conoscere la quantità totale di energia consumata, la salveresti on-chain. Al contrario, immagina di gestire un digital twin dell'edificio intelligente. Il Servizio di Offsetting chiederà frequentemente a questo digital twin di fornire vari dati sul consumo energetico, poi li archivierà e, dopo aver effettuato calcoli off chain, si collegherà/parlerà con Robonomics per fornire i servizi richiesti.
+
+Abbiamo raccolto tali servizi in un [marketplace](https://robonomics.app/#/services) specializzato che funge da App Store per robot.
+
+![Applicazione decentralizzata, dapp nella rete Robonomics](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-dapp.jpg)
+
+## Comprendere il Marketplace
+Per implementare un modello di digital twin e servizi interconnessi, dobbiamo creare un mezzo di consegna, ovvero un'app sul tuo smartphone. Questo marketplace, costruito su un registro decentralizzato sotto forma di applicazioni decentralizzate, può essere utilizzato per duplicare e creare copie individuali e digital twin per qualsiasi scopo richiesto tramite modelli predefiniti. Soprattutto, questo avviene senza intermediari e archiviazione esterna, rendendo il nostro marketplace di servizi IoT libero da censure e collegamenti centralizzati.
+
+Infine, parliamo dell'interfaccia utente. Ci impegniamo a offrire sempre ai nostri utenti le tecnologie online più aggiornate e quindi garantiamo l'accesso alle applicazioni decentralizzate. La caratteristica più importante che ottieni durante lo sviluppo dila tua Dapp, è l'assenza di vulnerabilità dalla tua parte. Anche se la tua app è su IPFS, è collegata al registro ENS o al registro dell'ecosistema Polkadot e quindi l'utente non si trova di fronte alla vulnerabilità di dover gestire un'app sostituita o una richiesta quando segue il collegamento ipertestuale. È semplicemente molto conveniente dal punto di vista dello sviluppo e della manutenzione dell'applicazione per l'utente finale.
+
+Un altro vantaggio delle applicazioni decentralizzate è la comunicazione peer-to-peer. In altre parole, la tua app può comunicare con il suo gemello digitale, il servizio IoT e l'applicazione dell'utente finale senza un singolo punto di caduta del segnale, eliminando la necessità di terze parti e risorse intermediarie quando un compito deve essere eseguito. Questo è lo scopo di [robonomics.js](https://github.com/airalab/robonomics-js), utilizzato nello sviluppo di [Dapp Robonomics](https://robonomics.app/#/). Attualmente siamo in fase di aggiunta di una nuova iterazione di miglioramenti e presto rilasceremo un Robonomics Stylebook (una guida all'interfaccia basata sulle funzioni di Web3.js e polkadot.js), lasciandoti il compito semplice di strutturare correttamente la tua applicazione. Di conseguenza, completiamo l'intera catena dell'Economia dei Robot.
+
+![Robonomics Network](/blog/images/the-ultimate-guide-to-robonomics-rws-and-robonomics-parachain-on-polkadot/robonomics-network-2.jpg)
+
+## Sommario
+* Il nostro obiettivo è rendere i [robot parte dell'economia](https://blog.aira.life/the-first-in-the-economy-of-robots-6f4bb115643b) ma prima dobbiamo insegnare all'utente come funziona tutto e come configurare il sistema.
+* Per questo scopo, abbiamo creato il prodotto [Robonomics Web Services](https://blog.aira.life/robonomics-web-services-and-rws-token-intro-d730ab50ad42) che permette agli utenti di costruire app e servizi insieme a noi (abbonamento, avvio, datalog).
+* L'abbonamento a RWS risolve tutti i problemi legati alle transazioni e aggiunge funzioni che includono: accensione/spegnimento del dispositivo, telemetria (archiviazione di un gemello digitale).
+* Una volta creato un gemello digitale tramite i template interni, puoi sviluppare un servizio IoT e aggiungerlo al nostro [marketplace](https://robonomics.app/#/services). Le interfacce pre-strutturate nella Dapp vengono utilizzate come meccanismo di consegna che porta il tuo servizio all'utente finale.
+* [Dapp](https://robonomics.app/) serve come un modo a prova di proiettile per stabilire una comunicazione peer-to-peer (diretta) con un gemello digitale, anche quando il servizio smette di funzionare. Indipendentemente dalle circostanze esterne, il mercato non smetterà mai di funzionare.
+* La catena sopra menzionata è un percorso verso l'Economia dei Robot descritta in questo articolo.
