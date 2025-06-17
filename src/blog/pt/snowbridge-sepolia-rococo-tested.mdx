@@ -58,17 +58,16 @@ O próximo passo foi enviar o token XRT de Sepolia para o Rococo Asset Hub. Para
 
 1. Primeiro, permitimos que o contrato da ponte utilizasse 15 XRT da conta:
 
-    https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93dd---
-locale: pt
----
+    https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf#escreverContrato
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="Aprovar XRT spender" />
 
 DB62573380CfEf#writeContract
     <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="Aprovar XRT como gastador" />
 
-2. Em seguida, solicitou a taxa necessária para enviar o token:
+2. Em seguida, foi solicitado a taxa necessária para enviar o token:
     <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
 
-3.  Iniciou a transferência de XRT de Sepolia para Rococo Asset Hub seguindo as instruções do Snowbridge usando o exemplo do WETH: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
+3.  Iniciou-se a transferência de XRT de Sepolia para Rococo Asset Hub seguindo as instruções do Snowbridge usando o exemplo do WETH: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
     
     Uma observação crítica sobre o campo `destinationAddress.data`: seu valor precisava estar entre aspas (por exemplo, "0xb0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d").
 
@@ -92,7 +91,7 @@ DB62573380CfEf#writeContract
 
 A etapa final foi enviar XRT do Rococo Asset Hub de volta para Sepolia. Realizamos a seguinte extrínseca no Rococo Asset Hub: 
 
-https://polkadot.js.org/apps/?rpc=wss%3A%2FEsta transação pode ser visualizada no explorador de blocos do Rococo Asset Hub:
+Esta transação pode ser visualizada no explorador de blocos Rococo Asset Hub:
 
 https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/explorer/query/0x3524f4bef9e736cdff1d812d79e130cf6ade7a3fe3222a0853772fd1b6c3c89a
 

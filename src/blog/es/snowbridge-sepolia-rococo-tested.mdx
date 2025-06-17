@@ -25,10 +25,10 @@ https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf
 
 Como necesitábamos probar el envío de nuestro propio token, tuvimos que registrarlo. Este paso consta de dos partes: comprobar la tarifa requerida y registrar el token:
 
-1. Para comprobar la tarifa requerida, llamamos al método `quoteRegisterTokenFee` del contrato del puente (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#readProxyContract) y recibimos el valor `5000000500000000000`:
+1. Para comprobar la tarifa requerida, llamamos al método `quoteRegisterTokenFee` del contrato puente (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#readProxyContract) y recibimos el valor `5000000500000000000`:
 <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteRegisterTokenFee.png" alt="quoteRegisterTokenFee" />
 
-2. Para registrar el token, llamamos al método `registerToken` del contrato del puente (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#writeProxyContract), especificando la tarifa requerida y la dirección del token desplegado:
+2. Para registrar el token, llamamos al método `registerToken` del contrato puente (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#writeProxyContract), especificando la tarifa requerida y la dirección del token desplegado:
 <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/registerToken.png" alt="registerToken" />
 
 El proceso de registro debería tomar alrededor de 30 minutos, y el nuevo token debería aparecer en foreignAssets en Rococo Asset Hub. Esto se puede comprobar usando una consulta de estado de la cadena en Rococo Asset Hub (https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/chainstate):
@@ -71,7 +71,7 @@ El siguiente paso fue enviar el token XRT desde Sepolia a Rococo Asset Hub. Para
     En esta etapa, experimentamos retrasos significativos. En lugar de los 30 minutos esperados, la transacción tardó varios días. Finalmente, todas nuestras transferencias se completaron con éxito.
     Transacción de ejemplo: https://sepolia.etherscan.io/tx/0xec539cd89cb955ffea2ff65cae6685a8abb0966a2c1b76876a308cc036cd18fb
 
-    El saldo de XRT en la cuenta de destino en Rococo Asset Hub se puede consultar enviando una solicitud `foreignAssets.account()` en el estado de la cadena:
+    El saldo de XRT en la cuenta de destino en Rococo Asset Hub puede consultarse enviando una solicitud `foreignAssets.account()` en el estado de la cadena:
     <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="Ejemplo de foreignAssets.account" />
 
     Se enviaron un total de 15 XRT, por lo que el saldo en Rococo Asset Hub se veía así:
@@ -84,7 +84,7 @@ El siguiente paso fue enviar el token XRT desde Sepolia a Rococo Asset Hub. Para
     }
     ```
 
-## Probar la transferencia de XRT de Rococo Asset Hub a Sepolia
+## Probar transferencia de XRT de Rococo Asset Hub a Sepolia
 
 El paso final fue enviar XRT desde Rococo Asset Hub de regreso a Sepolia. Realizamos la siguiente extrínseca en Rococo Asset Hub: 
 

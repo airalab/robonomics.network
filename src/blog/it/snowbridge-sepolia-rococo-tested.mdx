@@ -54,14 +54,14 @@ Dopo la registrazione avvenuta con successo, abbiamo ricevuto la seguente rispos
 
 ## Test del trasferimento di XRT da Sepolia a Rococo Asset Hub
 
-Il passo successivo è stato inviare il token XRT da Sepolia a Rococo Asset Hub. Per questo, abbiamo eseguito le seguenti azioni:
+Il passo successivo è stato l'invio del token XRT da Sepolia a Rococo Asset Hub. Per questo, abbiamo eseguito le seguenti azioni:
 
 1. Per prima cosa, abbiamo autorizzato il contratto bridge a utilizzare 15 XRT dall'account: 
 
     https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf#writeContract
     <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="Approva XRT spender" />
 
-2. Poi è stata richiesta la commissione necessaria per inviare il token:
+2. Poi è stata richiesta la commissione necessaria per l'invio del token:
     <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
 
 3.  È stato avviato il trasferimento di XRT da Sepolia a Rococo Asset Hub seguendo le istruzioni di Snowbridge utilizzando l'esempio WETH: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
@@ -74,7 +74,7 @@ Il passo successivo è stato inviare il token XRT da Sepolia a Rococo Asset Hub.
     Il saldo XRT sull'account di destinazione in Rococo Asset Hub può essere verificato inviando una richiesta `foreignAssets.account()` nello stato della chain:
     <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="Esempio di foreignAssets.account" />
 
-    Sono stati inviati in totale 15 XRT, quindi il saldo in Rococo Asset Hub appariva così:
+    Sono stati inviati in totale 15 XRT, quindi il saldo in Rococo Asset Hub risultava così:
     ```
     {
         balance: 15,000,000,000
@@ -86,9 +86,9 @@ Il passo successivo è stato inviare il token XRT da Sepolia a Rococo Asset Hub.
 
 ## Test trasferimento XRT da Rococo Asset Hub a Sepolia 
 
-L'ultimo passaggio è stato l'invio di XRT da Rococo Asset Hub a Sepolia. Abbiamo eseguito la seguente extrinsic in Rococo Asset Hub: 
+L'ultimo passaggio è stato l'invio di XRT da Rococo Asset Hub di nuovo a Sepolia. Abbiamo eseguito la seguente extrinsic in Rococo Asset Hub: 
 
-https://polkadot.js.org/apps/?rpc=wss%3A%2FQuesta transazione può essere visualizzata nell'explorer dei blocchi di Rococo Asset Hub:
+Questa transazione può essere visualizzata nell'esploratore di blocchi Rococo Asset Hub:
 
 https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/explorer/query/0x3524f4bef9e736cdff1d812d79e130cf6ade7a3fe3222a0853772fd1b6c3c89a
 
@@ -96,7 +96,7 @@ La transazione corrispondente su Sepolia:
 
 https://sepolia.etherscan.io/tx/0xe8a95dca350143a0c41891137e332962f2918351dcfc2612519e69c7a5c46772
 
-Questo passaggio è stato completato relativamente rapidamente, in meno di mezz'ora. Di conseguenza, 1 XRT è stato trasferito nuovamente su Sepolia. Il saldo XRT su Rococo Asset Hub è rimasto a 14 XRT:
+Questo passaggio è stato completato relativamente in fretta, entro mezz'ora. Di conseguenza, 1 XRT è stato trasferito nuovamente su Sepolia. Il saldo XRT su Rococo Asset Hub è rimasto a 14 XRT:
 
 ```
 {

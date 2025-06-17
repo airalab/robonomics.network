@@ -4,7 +4,7 @@ date: 2024-07-22
 published: true
 locale: 'de'
 cover_image: /blog/images/snowbridge-sepolia-rococo-tested/snowbridge-sepolia-rococo-tested.png
-description: "Wir haben erfolgreich Tests zum Transfer von XRT-Token zwischen den Netzwerken Sepolia und Rococo Asset Hub mit dem Snowbridge-Protokoll durchgeführt."
+description: "Wir haben erfolgreich Tests zum Transfer von XRT-Token zwischen den Netzwerken Sepolia und Rococo Asset Hub unter Verwendung des Snowbridge-Protokolls durchgeführt."
 abstract: "Snowbridge ist eine universelle, vertrauenslose und dezentralisierte Brücke zwischen Polkadot und Ethereum."
 tags: ['Polkadot', 'Ethereum']
 ---
@@ -59,22 +59,22 @@ Der nächste Schritt war das Senden des XRT-Tokens von Sepolia zum Rococo Asset 
 1. Zuerst haben wir dem Bridge-Contract erlaubt, 15 XRT vom Konto zu verwenden: 
 
     https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf#writeContract
-    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="Approve XRT spender" />
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="XRT-Spender genehmigen" />
 
 2. Dann wurde die für den Tokenversand erforderliche Gebühr abgefragt:
     <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/quoteSendTokenFee.png" alt="quoteSendTokenFee" />
 
-3.  Der Transfer von XRT von Sepolia zum Rococo Asset Hub wurde gemäß den Anweisungen von Snowbridge unter Verwendung des WETH-Beispiels eingeleitet: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
+3.  Der Transfer von XRT von Sepolia zum Rococo Asset Hub wurde gemäß den Anweisungen von Snowbridge unter Verwendung des WETH-Beispiels initiiert: https://docs.snowbridge.network/rococo-testnet/rococo-sepolia-token-transfers#id-5.-send-weth-to-polkadot
     
     Ein wichtiger Hinweis zum Feld `destinationAddress.data`: Der Wert musste in Anführungszeichen gesetzt werden (z. B. "0xb0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d").
 
     In diesem Schritt traten erhebliche Verzögerungen auf. Anstelle der erwarteten 30 Minuten dauerte die Transaktion mehrere Tage. Letztendlich wurden alle unsere Transfers erfolgreich abgeschlossen.
     Beispieltransaktion: https://sepolia.etherscan.io/tx/0xec539cd89cb955ffea2ff65cae6685a8abb0966a2c1b76876a308cc036cd18fb
 
-    Der XRT-Saldo auf dem Zielkonto im Rococo Asset Hub kann durch Senden einer `foreignAssets.account()`-Anfrage im Chain State überprüft werden:
-    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="Example of foreignAssets.account" />
+    Der XRT-Kontostand auf dem Zielkonto im Rococo Asset Hub kann durch Senden einer `foreignAssets.account()`-Anfrage im Chain State überprüft werden:
+    <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/example_of_foreignAssets_account.png" alt="Beispiel für foreignAssets.account" />
 
-    Insgesamt wurden 15 XRT gesendet, sodass der Saldo im Rococo Asset Hub folgendermaßen aussah:
+    Insgesamt wurden 15 XRT gesendet, sodass der Kontostand im Rococo Asset Hub folgendermaßen aussah:
     ```
     {
         balance: 15,000,000,000
@@ -84,11 +84,11 @@ Der nächste Schritt war das Senden des XRT-Tokens von Sepolia zum Rococo Asset 
     }
     ```
 
-## Teste XRT-Transfer vom Rococo Asset Hub nach Sepolia 
+## Test XRT-Transfer vom Rococo Asset Hub nach Sepolia
 
 Der letzte Schritt war das Senden von XRT vom Rococo Asset Hub zurück nach Sepolia. Wir führten den folgenden Extrinsic im Rococo Asset Hub aus: 
 
-https://polkadot.js.org/apps/?rpc=wss%3A%2FDiese Transaktion kann im Rococo Asset Hub Block Explorer eingesehen werden:
+Diese Transaktion kann im Rococo Asset Hub-Block-Explorer eingesehen werden:
 
 https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/explorer/query/0x3524f4bef9e736cdff1d812d79e130cf6ade7a3fe3222a0853772fd1b6c3c89a
 

@@ -5,17 +5,17 @@ published: true
 locale: 'it'
 tags: ['Robonomics in Ethereum', 'Collaborations', 'Smart Contracts', 'Neon']
 cover_image: /blog/images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
-description: "Lo scopo di questi test era validare la prontezza della piattaforma Neon per passare alla fase di produzione utilizzando gli smart contract Robonomics, che permettono ai sistemi ciber-fisici (robot) di effettuare transazioni tecnico-economiche."
+description: "Lo scopo di questi test era validare la prontezza della piattaforma Neon per passare alla fase di produzione utilizzando gli smart contract Robonomics, che permettono ai sistemi cibernetico-fisici (robot) di effettuare transazioni tecnico-economiche."
 abstract: ""
 ---
 
 ## TL;DR
 
-Lo scopo di questi test era validare la prontezza della piattaforma [Neon](https://neon-labs.org/) per passare alla fase di produzione utilizzando gli smart contract Robonomics, che permettono ai sistemi ciber-fisici (robot) di effettuare transazioni tecnico-economiche.
+Lo scopo di questi test era validare la prontezza della piattaforma [Neon](https://neon-labs.org/) per passare alla fase di produzione utilizzando gli smart contract Robonomics, che permettono ai sistemi cibernetico-fisici (robot) di effettuare transazioni tecnico-economiche.
 
-Nella rete Robonomics, l'interazione viene stabilita tra due parti: il Promissario - colui che ordina il servizio, invia una descrizione del compito tecnico e trasferisce i fondi per la sua esecuzione; il Promittente - colui che esegue il servizio. È stato testato uno scenario tipico, in cui viene stipulato un contratto di responsabilità tra un Promissario e un Promittente - seguito dalla validazione del lavoro risultante da parte di una terza parte, e dal pagamento di una commissione al nodo che ha accompagnato il contratto tra le parti.
+Nella rete Robonomics, l'interazione viene stabilita tra due parti: il Promissario - colui che ordina il servizio, invia una descrizione del compito tecnico e trasferisce i fondi per la sua esecuzione; il Promittente - colui che esegue il servizio. È stato testato uno scenario tipico, in cui viene stipulato un contratto di responsabilità tra un Promissario e un Promittente - a cui segue la validazione del lavoro risultante da parte di una terza parte, e il pagamento di una commissione al nodo che ha accompagnato il contratto tra le parti.
 
-Per questo esempio, è stata utilizzata una simulazione di un braccio robotico, al quale è stato chiesto di eseguire una sequenza di azioni. I test sono stati superati con successo.
+Per questo esempio è stata utilizzata una simulazione di un braccio robotico, al quale è stato chiesto di eseguire una sequenza di azioni. I test sono stati superati con successo.
 
 ## Ambito e Obiettivi del Test
 
@@ -60,14 +60,14 @@ Indirizzi dei contratti nella rete devnet di Neon https://devnet.neonevm.org
 
 | Nome Contratto | Indirizzo                                   |
 |----------------|---------------------------------------------|
-| Migrations     | 0x1DC538bE2C8572509a571B150f11aB55E52EF12E  |
-| ENS            | 0xa7AEa12F60D0278F01e14DBC7cc459d04d051406  |
-| DutchAuction   | 0xF44F8803548D72Dbc3E28340EFD7b5328aa4F058  |
-| Liability      | 0xA694196351dc1488e3884eCc6b650F0d8D55346a  |
-| Lighthouse     | 0x80FB5CC4c396E272b56700E6ffF5DBf4661013A8  |
-| XRT            | 0x3322d7D99cF65Cab5A92073c928b5E9674af3c29  |
-| PublicAmbix    | 0x85c03bE5ccFf11E79a0A776D183eF067590549d1  |
-| Factory        | 0xCFa833bF0D46369D9024f95c9C8dFa1           |E4a07806C |
+| Migrations     | 0x1DC538bE2C8572509a571B150f11aB55E52EF12E |
+| ENS            | 0xa7AEa12F60D0278F01e14DBC7cc459d04d051406 |
+| DutchAuction   | 0xF44F8803548D72Dbc3E28340EFD7b5328aa4F058 |
+| Liability      | 0xA694196351dc1488e3884eCc6b650F0d8D55346a |
+| Lighthouse     | 0x80FB5CC4c396E272b56700E6ffF5DBf4661013A8 |
+| XRT            | 0x3322d7D99cF65Cab5A92073c928b5E9674af3c29 |
+| PublicAmbix    | 0x85c03bE5ccFf11E79a0A776D183eF067590549d1 |
+| Factory        | 0xCFa833bF0D46369D9024f95c9C8dFa1E4a07806C |
 | PublicResolver | 0xAC9E9AA8A4cB524FE87f2b14489F1D6bE68dc46e |
 
 [Codice sorgente](https://github.com/Multi-Agent-io/neon-kuka-demo) per lo scenario
@@ -132,7 +132,7 @@ Neon EVM non dispone di un endpoint WS/WSS a differenza di Ethereum, il che rend
 
 ### Nessun Nome Evento
 
-Neon EVM restituisce descrizioni piuttosto scarse degli eventi dopo una transazione, ad esempio:
+Neon EVM restituisce descrizioni piuttosto scarne degli eventi dopo una transazione, ad esempio:
 
 <RbCode>
 
@@ -164,4 +164,4 @@ Utilizzando la piattaforma Neon EVM, è stato testato con successo uno scenario 
 
 La dimostrazione ha utilizzato una simulazione di un braccio robotico che è stato assunto per eseguire una sequenza di azioni. Come risultato del lavoro, il robot ha inviato un file con la telemetria ricevuta durante il compito.
 
-Nonostante alcune particolarità nel funzionamento della rete, alla fine tutti i contratti partecipanti hanno dimostrato la loro operatività nell'ambiente Neon.
+Nonostante alcune peculiarità nel funzionamento della rete, alla fine tutti i contratti partecipanti hanno dimostrato la loro operatività nell'ambiente Neon.

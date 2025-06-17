@@ -13,7 +13,7 @@ tags: ['Robonomics parachain', 'XRT token', 'RWS token', 'Staking', 'New release
 
 ### Théorie
 
-Les réseaux PoS décentralisés assurent leur sécurité en bloquant les fonds des validateurs et de tous les détenteurs de tokens du réseau qui participent à la sélection du pool de validateurs. Pour récompenser les validateurs et les détenteurs de tokens, un modèle de récompense analogue au PoW est généralement utilisé, basé sur l'inflation + tous les frais de commission dans le bloc. C'est ainsi que le NPoS est mis en œuvre dans Polkadot/Kusama.
+Les réseaux PoS décentralisés assurent leur sécurité en bloquant les fonds des validateurs et de tous les détenteurs de tokens du réseau qui participent à la sélection du pool de validateurs. Pour récompenser les validateurs et les détenteurs de tokens, un modèle de récompense similaire à celui du PoW est généralement utilisé, basé sur l'inflation + tous les frais de commission dans le bloc. C'est ainsi que le NPoS est mis en œuvre dans Polkadot/Kusama.
 
 > Il est à noter que tant Ethereum que Polkadot incluent des conditions supplémentaires pour leurs modèles de récompense. La fixation d'objectifs d'inflation, la division des frais de commission en plusieurs directions, et même la destruction d'un certain pourcentage des frais de commission sont des paramètres supplémentaires avec lesquels les réseaux matures comme les plus récents expérimentent dans leurs implémentations.
 
@@ -23,7 +23,7 @@ Les parachains n'ont pas besoin de staking dans leur fonctionnalité de base. Le
 
 Les parachains qui souhaitent tirer parti de la « sagesse de la foule » et confier des tâches à la communauté doivent réinventer le staking. Chez Robonomics, c'est ce que nous avons fait. L'architecture de staking dans la parachain Robonomics est unique et spécifique aux problématiques blockchain que nous résolvons pour le marché de l'IoT. Nous proposons deux moyens de payer la fonctionnalité de base des objets connectés : par transaction ou par abonnement mensuel.
 
-Le paiement à la transaction est explicite. La fonction d'abonnement nécessite une petite explication. Certains cas d'utilisation de l'IoT nécessitent un accès périodique aux fonctions cloud, et il est hautement indésirable que ces accès échouent. Le mécanisme de prix du gaz ne résout pas encore complètement ce problème, en particulier lorsqu'il s'agit de garantir des transactions à chaque bloc. Dans cette optique, nous avons eu l'idée d'utiliser le mécanisme de staking pour gérer un quota garanti avec un modèle d'abonnement. Côté Substrate, nous avons fait une petite astuce, basée sur le traitement prioritaire des transactions à poids nul. Si un appareil IoT active un abonnement, alors toutes ses transactions auront la priorité sur toutes les autres, sauf bien sûr les autres transactions à poids nul. À mesure que plus de jetons entrent dans le pool de staking du réseau, plus d'abonnements seront disponibles pour les utilisateurs.
+Le paiement à la transaction est explicite. La fonction d'abonnement nécessite une petite explication. Certains cas d'utilisation de l'IoT nécessitent un accès périodique aux fonctions cloud, et il est hautement indésirable que ces accès échouent. Le mécanisme de prix du gaz ne résout pas entièrement ce problème, en particulier lorsqu'il s'agit de garantir des transactions à chaque bloc. Dans cette optique, nous avons eu l'idée d'utiliser le mécanisme de staking pour gérer un quota garanti avec un modèle d'abonnement. Côté Substrate, nous avons réalisé une petite astuce, basée sur le traitement prioritaire des transactions à poids nul. Si un appareil IoT active un abonnement, alors toutes ses transactions auront la priorité sur toutes les autres, sauf bien sûr les autres transactions à poids nul. À mesure que davantage de jetons sont placés dans le pool de staking du réseau, plus d'abonnements seront disponibles pour les utilisateurs.
 
 <TextCard>
 
@@ -37,7 +37,7 @@ Cela nous donne 5400 * 800 000 / 2 000 000 = 2 160 abonnements mensuels pour les
 
 </TextCard>
 
-J'écrirai dans un article séparé intitulé « Enchère automatisée d'abonnement » sur la façon dont les abonnements et le pool de paiement seront distribués.
+J'écrirai dans un article séparé intitulé « Vente aux enchères automatisée d'abonnements » sur la façon dont les abonnements et le pool de paiement seront distribués.
 
 ### Utilisation pratique
 
@@ -55,27 +55,27 @@ L'envoi de jetons entre comptes sur la parachain restera désactivé. La possibi
 
 À partir du [bloc # 235,047](https://robonomics.subscan.io/block/235047), nous avons environ un millier de comptes ; le plus grand détenteur de jetons est la trésorerie. Les fonds de la trésorerie ne participeront pas au staking.
 
-Les autres comptes du réseau sont apparus suite à l'utilisation de l'application Exodus par les détenteurs de jetons ERC-20, ou ils étaient participants à la première campagne de crowd loan lors des enchères Kusama.
+Les autres comptes du réseau sont apparus suite à l'utilisation de l'application Exodus par les détenteurs de jetons ERC-20, ou ils étaient participants à la première campagne de crowdloan lors des enchères Kusama.
 
 Grâce à l'intégration avec Subscan, les détenteurs de XRT sur la parachain Robonomics peuvent utilisercette interface merveilleuse : https://robonomics.subscan.io/account
 
 ![Écran de compte Robonomics Subscan.io](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image3.jpg)
 
-Sur l’interface Exodus DApp, vous pouvez voir les statistiques de migration de la blockchain Ethereum vers la parachain Robonomics : https://robonomics.app/#/exodus
+Sur l'interface Exodus DApp, vous pouvez voir les statistiques de migration de la blockchain Ethereum vers la parachain Robonomics : https://robonomics.app/#/exodus
 
 ![XRT de la blockchain Ethereum vers la parachain Robonomics dans le dapp Robonomics](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image6.jpg)
 
 ### Améliorations futures de la fonctionnalité de staking
 
-La tâche actuelle des développeurs est de tester les mécanismes de base du staking pour les détenteurs de tokens dans des conditions réelles : ajout au pool de staking, accumulation des récompenses et déblocage des tokens sous 7 jours.
+La tâche actuelle des développeurs est de tester les mécanismes de staking de base pour les détenteurs de tokens dans des conditions réelles : ajout au pool de staking, accumulation des récompenses et déblocage des tokens sous 7 jours.
 
-*Une tâche intéressante pour la communauté :* vérifier l’exactitude du calculateur de récompenses, en tenant compte des deux options : une récompense annuelle de 10 % pour les participants à la migration Exodus et une récompense annuelle de 50 % pour les membres de la campagne de crowd loan.
+*Une tâche intéressante pour la communauté :* vérifier l'exactitude du calculateur de récompenses, en tenant compte des deux options : une récompense annuelle de 10 % pour les participants à la migration Exodus et une récompense annuelle de 50 % pour les membres de la campagne de crowd loan.
 
-Après la mise à jour 1.3 RWS, le mécanisme de staking sera mis en service sur le réseau. La mise à jour RWS ajoutera la capacité d’abonnement pour les jumeaux numériques, et la question de l’allocation de la bande passante prendra tout son sens. En conséquence, nous pourrons ensuite évaluer pleinement la justesse du mécanisme de staking.
+Après la mise à jour 1.3 RWS, le mécanisme de staking sera mis en service sur le réseau. La mise à jour RWS ajoutera la capacité d'abonnement pour les jumeaux numériques, et la question de l'allocation de la bande passante prendra tout son sens. En conséquence, nous pourrons plus tard évaluer pleinement la justesse du mécanisme de staking.
 
 ## Mise à jour 1.2 : Comité technique et Trésorerie
 
-Comme pour la mise à jour 1.1, cela a déjà été mis en œuvre dans le fonctionnement de la parachain. Le comité technique est actuellement composé de six spécialistes techniques ayant participé au développement de la parachain au cours des deux dernières années ; la DAO [a transféré 692 500 XRT](https://etherscan.io/tx/0x6b9a9cbe7d21badf565ebce0fb50b865da8f5f784899db5fb455d1b276d14acf) au solde de la trésorerie de la parachain en brûlant des tokens ERC-20 via l’Exodus DApp. La trésorerie du réseau et le comité technique sont les premiers éléments de gouvernance on-chain que les développeurs de la parachain ont mis en place jusqu’à présent. Plus de détails sur chacun d’eux sont donnés ci-dessous.
+Comme pour la mise à jour 1.1, cela a déjà été mis en œuvre dans le fonctionnement de la parachain. Le comité technique est actuellement composé de six spécialistes techniques ayant participé au développement de la parachain au cours des deux dernières années ; la DAO [a transféré 692 500 XRT](https://etherscan.io/tx/0x6b9a9cbe7d21badf565ebce0fb50b865da8f5f784899db5fb455d1b276d14acf) au solde de la trésorerie de la parachain en brûlant des tokens ERC-20 via l'Exodus DApp. La trésorerie du réseau et le comité technique sont les premiers éléments de gouvernance on-chain que les développeurs de la parachain ont mis en place jusqu'à présent. Plus de détails sur chacun d'eux sont donnés ci-dessous.
 
 ### Comité technique du réseau
 
@@ -100,7 +100,7 @@ Au cours du mois dernier, environ 100 000 XRT ont été distribués depuis la tr
 
 Il convient également de noter un mécanisme intéressant de la trésorerie : la destruction périodique des soldes. Vous pouvez en savoir plus sur le fonctionnement de la trésorerie dans le wiki Polkadot : https://wiki.polkadot.network/docs/learn-treasury
 
-La communauté peut demander que la trésorerie de la parachain alloue des XRT pour des tâches utiles au développement de Robonomics dans l’écosystème Polkadot ou pour attirer des utilisateurs du marché de l’IoT.
+La communauté peut demander que la trésorerie de la parachain alloue des XRT pour des tâches qui seront utiles au développement de Robonomics dans l’écosystème Polkadot ou pour attirer des utilisateurs du marché de l’IoT.
 
 ### Conclusion
 
@@ -121,6 +121,6 @@ element : @ensrationis:robonomics.network
 
 ### Rejoignez notre Twitter
 
-Restez à l'écoute et suivez les mises à jour
+Restez informé et suivez les mises à jour
 
 </TextCard>
