@@ -31,7 +31,7 @@ https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf
 2. Для регистрации токена мы вызвали метод `registerToken` контракта моста (https://sepolia.etherscan.io/address/0x5b4909ce6ca82d2ce23bd46738953c7959e710cd#writeProxyContract), указав необходимую комиссию и адрес развернутого токена:
 <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/registerToken.png" alt="registerToken" />
 
-Процесс регистрации должен занять около 30 минут, и новый токен должен появиться в foreignAssets в Rococo Asset Hub. Это можно проверить с помощью запроса состояния цепи в Rococo Asset Hub (https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/chainstate):
+Процесс регистрации должен занять около 30 минут, и новый токен должен появиться в foreignAssets в Rococo Asset Hub. Это можно проверить с помощью запроса состояния цепочки в Rococo Asset Hub (https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/chainstate):
 <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/foreign_asset_query.png" alt="Check if token registered" />
 
 После успешной регистрации мы получили следующий ответ:
@@ -54,14 +54,9 @@ https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93ddDB62573380CfEf
 
 ## Тестирование перевода XRT с Sepolia в Rococo Asset Hub
 
-Следующим шагом была отправка токена XRT с Sepolia в Rococo Asset Hub. Для этого мы выполнили следующие действия:
+Следующим шагом была отправка токена XRT из Sepolia в Rococo Asset Hub. Для этого мы выполнили следующие действия:
 
 1. Сначала мы разрешили контракту моста использовать 15 XRT с аккаунта: 
-
-    https://sepolia.etherscan.io/address/0x9e216c3aF5F0c6cE70851B93dd---
-locale: ru
-related: []
----
 
 DB62573380CfEf#writeContract
     <RbImage zoom src="/blog/images/snowbridge-sepolia-rococo-tested/xrt_approve_snowbridge_as_spender.png" alt="Approve XRT spender" />
@@ -73,7 +68,7 @@ DB62573380CfEf#writeContract
     
     Важное замечание относительно поля `destinationAddress.data`: его значение должно быть заключено в кавычки (например, "0xb0fca9a0c5e03ab5b2294784fbbabea010295b3e1e48575cfe18dc2172ef657d").
 
-    На этом этапе мы столкнулись со значительными задержками. Вместо ожидаемых 30 минут транзакция заняла несколько дней. В конечном итоге все наши переводы были успешно завершены.
+    На этом этапе мы столкнулись со значительными задержками. Вместо ожидаемых 30 минут транзакция заняла несколько дней. В итоге все наши переводы были успешно завершены.
     Пример транзакции: https://sepolia.etherscan.io/tx/0xec539cd89cb955ffea2ff65cae6685a8abb0966a2c1b76876a308cc036cd18fb
 
     Баланс XRT на целевом аккаунте в Rococo Asset Hub можно проверить, отправив запрос `foreignAssets.account()` в состоянии цепочки:
@@ -89,11 +84,11 @@ DB62573380CfEf#writeContract
     }
     ```
 
-## Тестирование перевода XRT из Rococo Asset Hub в Sepolia 
+## Тестирование перевода XRT из Rococo Asset Hub в Sepolia
 
 Последним шагом была отправка XRT из Rococo Asset Hub обратно в Sepolia. Мы выполнили следующий extrinsic в Rococo Asset Hub: 
 
-https://polkadot.js.org/apps/?rpc=wss%3A%2FЭту транзакцию можно просмотреть в обозревателе блоков Rococo Asset Hub:
+Эту транзакцию можно просмотреть в исследователе блоков Rococo Asset Hub: 
 
 https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-asset-hub-rpc.polkadot.io#/explorer/query/0x3524f4bef9e736cdff1d812d79e130cf6ade7a3fe3222a0853772fd1b6c3c89a
 

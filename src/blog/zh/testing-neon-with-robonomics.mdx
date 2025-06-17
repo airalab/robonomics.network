@@ -5,23 +5,23 @@ published: true
 locale: 'zh'
 tags: ['Robonomics in Ethereum', 'Collaborations', 'Smart Contracts', 'Neon']
 cover_image: /blog/images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
-description: "这些测试的目的是验证 Neon 平台在使用 Robonomics 智能合约的情况下，是否已准备好进入生产阶段。Robonomics 智能合约允许网络物理系统（机器人）进行技术-经济交易。"
+description: "这些测试的目的是验证 Neon 平台在使用 Robonomics 智能合约时，是否已准备好进入生产阶段。Robonomics 智能合约允许网络物理系统（机器人）进行技术-经济交易。"
 abstract: ""
 ---
 
 ## 摘要
 
-这些测试的目的是验证 [Neon](https://neon-labs.org/) 平台在使用 Robonomics 智能合约的情况下，是否已准备好进入生产阶段。Robonomics 智能合约允许网络物理系统（机器人）进行技术-经济交易。
+这些测试的目的是验证 [Neon](https://neon-labs.org/) 平台在使用 Robonomics 智能合约时，是否已准备好进入生产阶段。Robonomics 智能合约允许网络物理系统（机器人）进行技术-经济交易。
 
-在 Robonomics 网络中，交互在两方之间建立：Promisee（承诺接受方）——即服务的订购者，发送技术任务描述并转账以执行任务；Promisor（承诺提供方）——即服务的执行者。测试了一个典型场景，即 Promisee 与 Promisor 之间签订责任合约，随后由第三方对结果进行验证，并向伴随双方合约的节点支付佣金。
+在 Robonomics 网络中，交互在两方之间建立：Promisee（服务订购方）——发送技术任务描述并转账以执行任务的人；Promisor（服务提供方）——执行服务的人。测试了一个典型场景，即 Promisee 与 Promisor 之间签订责任合约，随后由第三方对结果进行验证，并向伴随双方合约的节点支付佣金。
 
 在本例中，使用了机械臂的仿真，要求其执行一系列动作。测试取得了成功。
 
 ## 测试范围与目标
 
-[Multi-Agent Systems](https://multi-agent.io/) 的工程师们与 [Robonomics Network](https://robonomics.network/) 已合作多年。Robonomics Network 的第一个实现是为以太坊网络创建的。它是一组用于机器与机器通信的智能合约。
+[Multi-Agent Systems](https://multi-agent.io/) 的工程师们与 [Robonomics Network](https://robonomics.network/) 已合作多年。Robonomics Network 的第一个实现是为以太坊网络创建的。这是一组用于机器与机器通信的智能合约。
 
-Robonomics Network 的核心是 [Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol) 合约，这是一个智能合约，重现了服务客户（Promisee）与服务提供者（Promisor）之间的典型关系，并包含了他们之间交易的技术和经济参数。双方可以是自主代理与人（人机交互），也可以是纯粹的两个自主代理（机机交互）。Promisee 和 Promisor 会广播带有参数的消息他们的技术经济交易，然后交易的达成由一个特殊节点——Provider（提供者）——来完成，该节点会寻找这些参数的匹配。Provider 由 [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol) 控制，Lighthouse 是一个特殊的智能合约，当 Provider 在双方之间建立市场匹配时会执行交易。
+Robonomics Network 的核心是 [Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol) 合约，这是一个智能合约，重现了服务客户（Promisee）与服务提供者（Promisor）之间的典型关系，并包含了他们之间交易的技术和经济参数。双方可以是自主代理与人（人机交互），也可以是两个自主代理（机机交互）。Promisee 和 Promisor 会广播带有参数的消息他们的技术经济交易，然后交易的达成由一个特殊节点——Provider（提供者）——来完成，该节点会寻找这些参数的匹配。Provider 由 [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol) 控制，Lighthouse 是一个特殊的智能合约，当 Provider 在双方之间建立市场匹配时会执行交易。
 
 履行义务有三种情景：
 
@@ -33,9 +33,9 @@ Robonomics Network 的核心是 [Liability](https://github.com/airalab/robonomic
 
 ## 测试场景描述
 
-随着工业园区和现代城市基础设施的发展，由网络物理系统（CPS）控制的全自动化企业和服务的出现变得极有可能，这些企业和服务作为自主代理提供服务。在这种情况下，我们还可以预期会形成自主 CPS 的网络，以提高生产和服务过程中的通信速度和质量。
+随着工业园区和现代城市基础设施的发展，由网络物理系统（CPS）控制的全自动化企业和服务的出现变得极有可能，这些企业和服务作为自主代理提供服务。在这种情况下，我们还可以预期自主 CPS 网络的形成，以提高生产和服务过程中通信的速度和质量。
 
-为了充分利用智能合约的可能性，选择了两个自主经济体之间交互的场景。请考虑 Robonomics 网络中责任生命周期的过程：
+为了充分利用智能合约的可能性，选择了两个自主经济体之间的交互场景。请考虑 Robonomics 网络中责任生命周期：
 
 ![Liability Life Cycle](/blog/images/testing-neon-with-robonomics/step-by-step-3.jpg)
 
@@ -53,7 +53,7 @@ Robonomics 合约的源代码可在[此处](https://github.com/airalab/robonomic
 - ERC20 [XRT](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/XRT.sol) 代币
 - [Factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)
 - 用于 [ENS](https://github.com/airalab/robonomics_contracts/blob/master/contracts/ens/ENS.sol) 的自有合约
-- 合约的 [Proxy](https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/SharedCode.sol)
+- 合约的[代理](https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/SharedCode.sol)
 - 合约中的各种修饰符和角色
 
 Neon devnet 网络上的合约地址 https://devnet.neonevm.org
@@ -63,11 +63,11 @@ Neon devnet 网络上的合约地址 https://devnet.neonevm.org
 | Migrations     | 0x1DC538bE2C8572509a571B150f11aB55E52EF12E  |
 | ENS            | 0xa7AEa12F60D0278F01e14DBC7cc459d04d051406  |
 | DutchAuction   | 0xF44F8803548D72Dbc3E28340EFD7b5328aa4F058  |
-| Liability      | 0xA694196351dc1488e3884eCc6b650F0d8D55346a  |
+| Liability      | 0xA694196351dc1488e3884eCc6b650F0d8D55346a   |
 | Lighthouse     | 0x80FB5CC4c396E272b56700E6ffF5DBf4661013A8  |
 | XRT            | 0x3322d7D99cF65Cab5A92073c928b5E9674af3c29  |
 | PublicAmbix    | 0x85c03bE5ccFf11E79a0A776D183eF067590549d1  |
-| Factory        | 0xCFa833bF0D46369D9024f95c9C8dFa1           |E4a07806C |
+| Factory        | 0xCFa833bF0D46369D9024f95c9C8dFa1            |E4a07806C |
 | PublicResolver | 0xAC9E9AA8A4cB524FE87f2b14489F1D6bE68dc46e |
 
 [场景源码](https://github.com/Multi-Agent-io/neon-kuka-demo)
@@ -80,29 +80,29 @@ Neon devnet 网络上的合约地址 https://devnet.neonevm.org
 
 一般来说，测试包括从一个代理向另一个代理发送相应的消息。
 
-接下来，承诺方在网络中发现一个新的责任合约并开始执行。工作完成后，会发送一条包含结果的消息，然后将其记录在合约中。
+接下来，Promisor 会在网络中发现一个新的 Liability 合约并开始执行。工作完成后，会发送一条带有结果的消息，然后将其记录在合约中。
 
 启动的分步说明见 [README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md)
 
 ## 详细测试结果
 
-过程录屏
+过程演示视频
 
 <YouTube id="https://youtu.be/fYJVF7KrNnI" posterQuality="max" />
 
 ![Liability](/blog/images/testing-neon-with-robonomics/liability.jpg)
 
-当仿真开始时，会创建一个 offer 消息，并从承诺接受方收到一个 demand 消息，随后通过 Lighthouse 合约的 createLiability 函数创建一个 Liability 合约。在 XRT 合约的帮助下，代币从承诺接受方的地址转移到 Liability 合约的地址。
+当仿真开始时，会创建一个 offer 消息，并从 Promisee 处收到一个 demand 消息，随后通过 Lighthouse 合约的 createLiability 函数创建一个 Liability 合约。在 XRT 合约的帮助下，代币从 Promisee 的地址转移到 Liability 合约的地址。
 
 在 Neon devnet 上发现新的 Liability 合约后，代理开始工作。工作的结果（遥测数据）被写入文件并发送到 IPFS，文件中的哈希被保存为结果。
 
-工作完成后，通过 Lighthouse 合约的 finalizeLiability() 函数完成 Liability 合约，并将代币从 Liability 地址转移到承诺方和验证方的地址。
+工作完成后，通过 Lighthouse 合约的 finalizeLiability() 函数完成 Liability 合约，并将代币从 Liability 地址转移到 Promisor 和 Validator 的地址。
 
 仿真的成功执行表明所有合约均正常工作，Neon 平台运行良好。
 
 ## Neon 平台的不足之处
 
-### 如果未收到网络响应，Truffle 会失败
+### 如果没有收到网络响应，Truffle 会失败
 
 在部署合约的过程中，发现代理并不总是能及时返回响应，这导致 Truffle 报错：
 
@@ -128,7 +128,7 @@ Node v16.14.0
 
 ### 无 WS/WSS 端点
 
-Neon EVM 不像以太坊那样拥有 WS/WSS 端点，这使得无法从网络订阅事件。因此，在测试期间，我们手动监控了事件。
+与以太坊不同，Neon EVM 没有 WS/WSS 端点，因此无法从网络订阅事件。因此，在测试期间，我们手动监控了事件。
 
 ### 无事件名称
 
@@ -160,8 +160,8 @@ Neon EVM 在交易后返回的事件描述相当简陋，例如：
 
 ## 结论
 
-通过使用 Neon EVM 平台，成功测试了这样一个场景：受诺人（Promisee）与承诺人（Promisor）之间签订了一份责任合同，随后由第三方对工作成果进行了验证。此外，还有一位服务提供者（Provider）参与，他负责检查双方供需是否匹配，并因此获得了佣金。
+通过使用 Neon EVM 平台，成功测试了这样一个场景：Promisee（受诺人）与 Promisor（承诺人）之间签订了一份责任合同，随后由第三方对工作成果进行了验证。此外，还有一位 Provider（服务提供者）参与，他负责检查双方供需是否匹配，并因此获得了佣金。
 
-演示中模拟了一个被雇佣执行一系列动作的机械臂。工作完成后，机器人发送了一份包含任务期间获取的遥测数据的文件。
+演示中模拟了一个被雇佣执行一系列动作的机械臂。工作完成后，机器人发送了一份包含任务期间采集的遥测数据的文件。
 
-尽管网络运行中存在一些特殊情况，但最终，所有参与的合约都在 Neon 环境中展现了其可用性。
+尽管网络运行中存在一些特殊情况，但最终，所有参与的合约都在 Neon 环境中展现了其可操作性。

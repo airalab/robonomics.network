@@ -21,9 +21,9 @@ Le parachain non hanno bisogno dello staking nella loro funzionalità di base. L
 
 #### Reinventare lo Staking
 
-Le parachain che vogliono sfruttare la "saggezza della folla" e assegnare compiti alla comunità devono reinventare lo staking. In Robonomics, è proprio quello che abbiamo fatto. L'architettura dello staking nella parachain Robonomics è unica e specifica per le problematiche blockchain che risolviamo per il mercato IoT. Offriamo due modi per pagare la funzionalità di base dei dispositivi smart: per transazione o tramite abbonamento mensile.
+Le parachain che vogliono sfruttare la "saggezza della folla" e assegnare compiti alla comunità devono reinventare lo staking. In Robonomics, è proprio quello che abbiamo fatto. L’architettura dello staking nella parachain Robonomics è unica e specifica per le problematiche blockchain che risolviamo per il mercato IoT. Offriamo due modi per pagare la funzionalità di base dei dispositivi smart: per transazione o tramite abbonamento mensile.
 
-Il pagamento per transazione è autoesplicativo. La funzione di abbonamento necessita di qualche spiegazione. Alcuni casi d'uso IoT necessitano di accedere periodicamente a funzioni cloud, ed è altamente indesiderabile che questi accessi falliscano. Il meccanismo del gas-price non risolve ancora completamente questo problema, soprattutto quando si tratta di garantire transazioni su ogni blocco. Tenendo presente ciò, abbiamo avuto l'idea di utilizzare il meccanismo di staking per gestire una quota garantita con un modello di abbonamento. Sul lato Substrate, abbiamo fatto un piccolo trucco, basato sull'elaborazione prioritaria delle transazioni a peso zero. Se un dispositivo IoT attiva un abbonamento, tutte le sue transazioni avranno priorità su tutte le altre, tranne ovviamente le altre transazioni a peso zero. Man mano che più token entrano nel pool di staking della rete, più abbonamenti saranno disponibili per gli utenti.
+Il pagamento per transazione è autoesplicativo. La funzione di abbonamento necessita di una piccola spiegazione. Alcuni casi d'uso IoT necessitano di accedere periodicamente a funzioni cloud, ed è altamente indesiderabile che questi accessi falliscano. Il meccanismo del gas-price non risolve ancora completamente questo problema, soprattutto quando si tratta di garantire transazioni su ogni blocco. Tenendo presente ciò, abbiamo avuto l'idea di utilizzare il meccanismo di staking per gestire una quota garantita con un modello di abbonamento. Dal lato Substrate, abbiamo fatto un piccolo trucco, basato sull'elaborazione prioritaria delle transazioni a peso zero. Se un dispositivo IoT attiva un abbonamento, tutte le sue transazioni avranno priorità su tutte le altre, tranne ovviamente le altre transazioni a peso zero. Man mano che più token entrano nel pool di staking della rete, più abbonamenti saranno disponibili per gli utenti.
 
 <TextCard>
 
@@ -53,7 +53,7 @@ L'invio di token tra account sulla parachain rimarrà disabilitato. La possibili
 
 ### Osservazioni
 
-A partire dal [blocco n. 235.047](https://robonomics.subscan.io/block/235047), abbiamo circa mille account; il maggior detentore di token è il tesoro. I fondi del tesoro non parteciperanno allo staking.
+A partire dal [blocco # 235.047](https://robonomics.subscan.io/block/235047), abbiamo circa mille account; il maggior detentore di token è il tesoro. I fondi del tesoro non parteciperanno allo staking.
 
 Gli altri account sulla rete sono apparsi come risultato dell'utilizzo della DApp Exodus da parte dei possessori di token ERC-20, oppure erano partecipanti alla prima campagna di crowd loan nelle aste Kusama.
 
@@ -71,11 +71,11 @@ Il compito attuale per gli sviluppatori è testare i meccanismi di staking di ba
 
 *Un compito interessante per la comunità:* verificare la correttezza del calcolatore delle ricompense, tenendo conto delle due opzioni: una ricompensa annuale del 10% per i partecipanti alla migrazione Exodus e una ricompensa annuale del 50% per i membri della campagna crowd loan.
 
-Dopo l'aggiornamento 1.3 RWS, il meccanismo di staking sarà attivo sulla rete. L'aggiornamento RWS aggiungerà la possibilità di abbonamento per i gemelli digitali, e la sfida dell'allocazione della larghezza di banda avrà senso. Di conseguenza, in seguito potremo valutare pienamente la correttezza del meccanismo di staking.
+Dopo l'aggiornamento 1.3 RWS, il meccanismo di staking sarà attivo sulla rete. L'aggiornamento RWS aggiungerà la capacità di sottoscrizione per i gemelli digitali, e la sfida dell'allocazione della larghezza di banda avrà senso. Di conseguenza, in seguito saremo in grado di valutare pienamente la correttezza del meccanismo di staking.
 
 ## Aggiornamento 1.2: Comitato Tecnico e Tesoreria
 
-Come per l'aggiornamento 1.1, questo è già stato implementato nel lavoro della parachain. Il comitato tecnico è attualmente composto da sei specialisti tecnici che hanno partecipato allo sviluppo della parachain negli ultimi 2 anni; la DAO [ha trasferito 692.500 XRT](https://etherscan.io/tx/0x6b9a9cbe7d21badf565ebce0fb50b865da8f5f784899db5fb455d1b276d14acf) al saldo della tesoreria della parachain bruciando token ERC-20 tramite l'Exodus DApp. La tesoreria della rete e il comitato tecnico sono i primi elementi di governance on-chain che gli sviluppatori della parachain hanno implementato finora. Maggiori dettagli su ciascuno di essi sono forniti di seguito.
+Come per l'aggiornamento 1.1, questo è già stato implementato nel lavoro della parachain. Il comitato tecnico è attualmente composto da sei specialisti tecnici che hanno partecipato allo sviluppo della parachain negli ultimi 2 anni; la DAO [ha trasferito 692.500 XRT](https://etherscan.io/tx/0x6b9a9cbe7d21badf565ebce0fb50b865da8f5f784899db5fb455d1b276d14acf) al saldo della tesoreria della parachain bruciando token ERC-20 tramite la DApp Exodus. La tesoreria della rete e il comitato tecnico sono i primi elementi di governance on-chain che gli sviluppatori della parachain hanno implementato finora. Maggiori dettagli su ciascuno di essi sono forniti di seguito.
 
 ### Comitato Tecnico della Rete
 
@@ -104,7 +104,7 @@ La comunità può richiedere che la tesoreria della parachain assegni XRT per co
 
 ### Conclusione
 
-Ci sono molti aggiornamenti entusiasmanti in arrivo, e ognuno di essi aprirà nuove opportunità per la comunità. Gli aggiornamenti al programma di sviluppo della comunità del progetto saranno presto pubblicati con maggiori informazioni su ciò che sarà disponibile per la comunità nel corso deiprossimi 6 mesi.
+Ci sono molti aggiornamenti entusiasmanti in arrivo, e ognuno di essi aprirà nuove opportunità per la comunità. Gli aggiornamenti al programma di sviluppo della comunità del progetto saranno presto pubblicati con maggiori informazioni su ciò che sarà disponibile per la comunità nel corso delprossimi 6 mesi.
 
 <TextCard image="/avatars/Sergei-Lonshakov.jpg" back="transparent" imageSize="big">
 

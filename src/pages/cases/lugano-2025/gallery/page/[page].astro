@@ -7,7 +7,7 @@ export async function getStaticPaths() {
   const allFiles = await fetch(`https://media-roseman.robonomics.network/api/files?limit=${limit}`);
   const res = await allFiles.json(); 
   const result = res.result;
-  const { totalPages } = result;
+  const { totalPages } = result ?? [];
 
   // Generate paths for pages 2, 3, ...
   return Array.from({ length: totalPages - 1 }, (_, i) => ({

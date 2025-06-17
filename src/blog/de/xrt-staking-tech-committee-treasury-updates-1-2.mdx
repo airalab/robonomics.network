@@ -1,11 +1,11 @@
 ---
-title: "Update auf Version 1.2: Staking, Technischer Ausschuss und Schatzkammer"
+title: "Update auf Version 1.2: Staking, Technischer Ausschuss und Treasury"
 date: 2021-09-17
 published: true
 locale: 'de'
 cover_image: /blog/images/xrt-staking-tech-committee-treasury-updates-1-2/113_Up_to_version_1_2_stakingtech_comm_treasury.jpg
-description: "Die Projektentwickler haben zwei wichtige Änderungen im Betrieb der Robonomics-Parachain implementiert. Die erste ist die Einführung von XRT-Staking, und die zweite ist der Start der ersten On-Chain-Governance-Mechanismen."
-abstract: "Die Projektentwickler haben zwei wichtige Änderungen im Betrieb der Robonomics-Parachain implementiert. Die erste ist die Einführung von XRT-Staking, und die zweite ist der Start der ersten On-Chain-Governance-Mechanismen."
+description: "Die Entwickler des Projekts haben zwei wichtige Änderungen im Betrieb der Robonomics-Parachain implementiert. Die erste ist die Einführung von XRT-Staking, und die zweite ist der Start der ersten On-Chain-Governance-Mechanismen."
+abstract: "Die Entwickler des Projekts haben zwei wichtige Änderungen im Betrieb der Robonomics-Parachain implementiert. Die erste ist die Einführung von XRT-Staking, und die zweite ist der Start der ersten On-Chain-Governance-Mechanismen."
 tags: ['Robonomics parachain', 'XRT token', 'RWS token', 'Staking', 'New release']
 ---
 
@@ -13,17 +13,17 @@ tags: ['Robonomics parachain', 'XRT token', 'RWS token', 'Staking', 'New release
 
 ### Theorie
 
-Dezentrale PoS-Netzwerke sichern ihre Integrität, indem sie die Gelder der Validatoren und aller Token-Inhaber, die an der Auswahl des Validatorenpools teilnehmen, sperren. Um Validatoren und Token-Inhaber zu belohnen, wird üblicherweise ein analoges PoW-Belohnungsmodell verwendet, das auf Inflation + allen Kommissionsgebühren im Block basiert. So wird NPoS in Polkadot/Kusama implementiert.
+Dezentrale PoS-Netzwerke sichern ihre Integrität, indem sie die Gelder der Validatoren und aller Token-Inhaber im Netzwerk sperren, die an der Auswahl des Validatorenpools teilnehmen. Um Validatoren und Token-Inhaber zu belohnen, wird in der Regel ein analoges PoW-Belohnungsmodell verwendet, das auf Inflation + allen Kommissionsgebühren im Block basiert. So wird NPoS in Polkadot/Kusama implementiert.
 
-> Bemerkenswert ist, dass sowohl Ethereum als auch Polkadot zusätzliche Bedingungen für ihre Belohnungsmodelle einbeziehen. Die Festlegung von Inflationszielen, die Aufteilung der Kommissionsgebühren in mehrere Richtungen und sogar das Verbrennen eines bestimmten Prozentsatzes der Kommissionsgebühren sind zusätzliche Einstellungen, mit denen sowohl etablierte als auch neuere Netzwerke in ihren Implementierungen experimentieren.
+> Bemerkenswert ist, dass sowohl Ethereum als auch Polkadot zusätzliche Bedingungen für ihre Belohnungsmodelle enthalten. Die Festlegung von Inflationszielen, die Aufteilung der Kommissionsgebühren in mehrere Richtungen und sogar das Verbrennen eines bestimmten Prozentsatzes der Kommissionsgebühren sind zusätzliche Einstellungen, mit denen sowohl etablierte als auch neuere Netzwerke in ihren Implementierungen experimentieren.
 
-Parachains benötigen Staking nicht in ihrer Kernfunktionalität. Parachains werden durch die Validatoren der Relay Chain gesichert. Dies ist ein gemeinsames Sicherheitsmodell, bei dem die Projekte während Auktionen um Slots konkurrieren.
+Parachains benötigen Staking nicht in ihrer Kernfunktionalität. Parachains werden durch die Validatoren der Relay Chain gesichert. Dies ist ein Shared-Security-Modell, bei dem die Projekte während Auktionen um Slots konkurrieren.
 
 #### Staking neu erfinden
 
-Parachains, die von der „Weisheit der Menge“ profitieren und Aufgaben an die Community vergeben möchten, müssen Staking neu erfinden. Genau das haben wir bei Robonomics getan. Die Staking-Architektur in der Robonomics-Parachain ist einzigartig und spezifisch für die Blockchain-Probleme, die wir für den IoT-Markt lösen. Wir bieten zwei Möglichkeiten, die Grundfunktionalität von Smart Devices zu bezahlen: pro Transaktion oder per monatlichem Abonnement.
+Parachains, die von der „Weisheit der Menge“ profitieren und Aufgaben an die Community vergeben möchten, müssen Staking neu erfinden. Genau das haben wir bei Robonomics getan. Die Staking-Architektur in der Robonomics-Parachain ist einzigartig und spezifisch für die Blockchain-Probleme, die wir für den IoT-Markt lösen. Wir bieten zwei Möglichkeiten, die Grundfunktionalität von Smart Devices zu bezahlen: pro Transaktion oder per Monatsabonnement.
 
-Die Bezahlung pro Transaktion erklärt sich von selbst. Die Abonnementfunktion benötigt eine kleine Erklärung. Einige IoT-Anwendungsfälle müssen regelmäßig auf Cloud-Funktionen zugreifen, und es ist äußerst unerwünscht, dass diese fehlschlagen. Der Gaspreis-Mechanismus löst dieses Problem noch nicht vollständig, insbesondere wenn es darum geht, Transaktionen in jedem Block zu garantieren. Vor diesem Hintergrund kamen wir auf die Idee, den Staking-Mechanismus zu nutzen, um ein garantiertes Kontingent mit einem Abonnementmodell zu verwalten. Auf der Substrate-Seite haben wir einen kleinen Trick angewendet, der auf der Prioritätsverarbeitung von Transaktionen mit Nullgewicht basiert. Wenn ein IoT-Gerät ein Abonnement aktiviert, haben alle seine Transaktionen Vorrang vor allen anderen, außer natürlich vor anderen Transaktionen mit Nullgewicht. Je mehr Token in den Staking-Pool des Netzwerks fließen, desto mehr Abonnements werden den Nutzern zur Verfügung stehen.
+Die Bezahlung pro Transaktion erklärt sich von selbst. Die Abonnementfunktion benötigt eine kleine Erklärung. Einige IoT-Anwendungsfälle erfordern den periodischen Zugriff auf Cloud-Funktionen, und es ist äußerst unerwünscht, dass diese fehlschlagen. Der Gaspreis-Mechanismus löst dieses Problem noch nicht vollständig, insbesondere wenn es darum geht, Transaktionen in jedem Block zu garantieren. Vor diesem Hintergrund kamen wir auf die Idee, den Staking-Mechanismus zu nutzen, um ein garantiertes Kontingent mit einem Abonnementmodell zu verwalten. Auf der Substrate-Seite haben wir einen kleinen Trick angewendet, der auf der Prioritätsverarbeitung von Transaktionen mit Nullgewicht basiert. Wenn ein IoT-Gerät ein Abonnement aktiviert, haben alle seine Transaktionen Vorrang vor allen anderen, mit Ausnahme natürlich anderer Transaktionen mit Nullgewicht. Je mehr Token in den Staking-Pool des Netzwerks fließen, desto mehr Abonnements werden den Nutzern zur Verfügung stehen.
 
 <TextCard>
 
@@ -37,7 +37,7 @@ Das ergibt 5400 * 800.000 / 2.000.000 = 2.160 monatliche Abonnements für IoT-Ge
 
 </TextCard>
 
-Ich werde in einem separaten Artikel mit dem Titel „Automatisierte Abonnement-Auktion“ darüber schreiben, wie die Abonnements und der Zahlungspool verteilt werden.
+Ich werde in einem separaten Artikel mit dem Titel „Automatisierte Abonnementauktion“ darüber schreiben, wie die Abonnements und der Zahlungspool verteilt werden.
 
 ### Praktische Anwendung
 
@@ -71,19 +71,21 @@ Die aktuelle Aufgabe für die Entwickler besteht darin, die grundlegenden Stakin
 
 *Eine interessante Aufgabe für die Community:* Überprüfen Sie die Korrektheit des Belohnungsrechners unter Berücksichtigung der beiden Optionen: eine jährliche Belohnung von 10 % für Teilnehmer an der Exodus-Migration und eine jährliche Belohnung von 50 % für Mitglieder der Crowdloan-Kampagne.
 
-Nach dem 1.3 RWS-Update wird der Staking-Mechanismus im Netzwerk live geschaltet. Das RWS-Update wird die Abonnementfähigkeit für digitale Zwillinge hinzufügen, und die Herausforderung der Bandbreitenzuweisung wird relevant. Dementsprechend werden wir später die Korrektheit des Staking-Mechanismus vollständig bewerten können.
+Nach dem 1.3 RWS-Update wird der Staking-Mechanismus im Netzwerk live gehen. Das RWS-Update wird die Abonnementfähigkeit für digitale Zwillinge hinzufügen, und die Herausforderung der Bandbreitenzuweisung wird sinnvoll. Dementsprechend werden wir später in der Lage sein, die Korrektheit des Staking-Mechanismus vollständig zu bewerten.
 
-## Update 1.2: Tech Committee und Treasury
+## Update 1.2: Technisches Komitee und Treasury
 
 Wie bei Update 1.1 wurde dies bereits in die Arbeit der Parachain implementiert. Das technische Komitee besteht derzeit aus sechs technischen Spezialisten, die in den letzten 2 Jahren an der Entwicklung der Parachain beteiligt waren; die DAO [überwies 692.500 XRT](https://etherscan.io/tx/0x6b9a9cbe7d21badf565ebce0fb50b865da8f5f784899db5fb455d1b276d14acf) auf das Guthaben des Treasury der Parachain, indem ERC-20-Token über die Exodus DApp verbrannt wurden. Das Treasury des Netzwerks und das technische Komitee sind die ersten Elemente der On-Chain-Governance, die die Parachain-Entwickler bisher implementiert haben. Weitere Details zu jedem von ihnen finden Sie unten.
 
 ### Technisches Komitee des Netzwerks
 
+### Netzwerktechnisches Komitee
+
 Das Portal des technischen Komitees ist verfügbar unter: https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/techcomm
 
 ![Das Portal des technischen Komitees in der Robonomics-Parachain](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
 
-Seit dem 15. September sind die sechs Mitglieder des technischen Komitees sichtbar, die hinzugefügt wurden: 2 DevOps-Spezialisten, ein Softwarearchitekt, der Hauptentwickler der Substrate-Implementierung, ein leitender Robotikingenieur und ein leitender DApp-Entwickler.
+Ab dem 15. September können Sie die sechs Mitglieder des technischen Komitees sehen, die hinzugefügt wurden: 2 DevOps-Spezialisten, ein Softwarearchitekt, der Hauptentwickler der Substrate-Implementierung, ein leitender Robotikingenieur und ein leitender DApp-Entwickler.
 Das technische Komitee wird sich um die Aktualisierung des Parachain-Runtime-Codes kümmern, beginnend mit den nachfolgenden Releases auf GitHub.
 
 Mehr über die Arbeit dieses Komitees können Sie im Polkadot-Wiki lesen: https://wiki.polkadot.network/docs/learn-governance#technical-committee
@@ -96,7 +98,7 @@ Die Parachain-Treasury ist hier verfügbar: https://parachain.robonomics.network
 
 ![Die Treasury in der Robonomics-Parachain](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
 
-Im vergangenen Monat wurden etwa 100.000 XRT aus der Treasury an die Guthaben der Teilnehmer der ersten Robonomics-Crowdloan-Kampagne aus dem Sommer 2021 verteilt. Diese Vorgänge werden nicht als Anträge angezeigt, sondern von Sudo durchgeführt. Jetzt, da wir ein technisches Komitee haben, werden Anträge per Abstimmung entschieden.
+Im vergangenen Monat wurden etwa 100.000 XRT aus der Treasury an die Guthaben der Teilnehmer der ersten Robonomics-Crowdloan-Kampagne aus dem Sommer 2021 verteilt. Diese Vorgänge werden nicht als Anfragen angezeigt, sondern von Sudo durchgeführt. Jetzt, da wir ein technisches Komitee haben, werden Anfragen per Abstimmung entschieden.
 
 Es ist auch ein interessanter Mechanismus der Treasury zu beachten: das periodische Verbrennen von Guthaben. Mehr über die Arbeit der Treasury können Sie im Polkadot-Wiki lesen: https://wiki.polkadot.network/docs/learn-treasury
 
@@ -112,7 +114,7 @@ EnsRationis
 
 Robonomics Netzwerkarchitekt
 
-Element: @ensrationis:robonomics.network
+element: @ensrationis:robonomics.network
 
 </TextCard>
 
@@ -121,6 +123,6 @@ Element: @ensrationis:robonomics.network
 
 ### Treten Sie unserem Twitter bei
 
-Bleiben Sie dran und verfolgen Sie Updates
+Bleiben Sie dran und verfolgen Sie die Updates
 
 </TextCard>

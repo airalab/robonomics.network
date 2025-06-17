@@ -21,7 +21,7 @@ Para este exemplo, foi utilizada uma simulação de um braço robótico, ao qual
 
 Engenheiros da [Multi-Agent Systems](https://multi-agent.io/) vêm trabalhando com a [Robonomics Network](https://robonomics.network/) há vários anos. A primeira implementação da Robonomics Network foi criada para a rede Ethereum. Trata-se de um conjunto de contratos inteligentes para comunicação máquina a máquina.
 
-O núcleo da Robonomics Network é o contrato [Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol), um contrato inteligente que reproduz a relação típica entre o cliente de um serviço (Promissário) e o prestador do serviço (Promitente), incluindo os parâmetros técnicos e econômicos da transação entre eles. As partes podem ser tanto um agente autônomo e uma pessoa (interação humano-máquina), quanto dois agentes autônomos (interação máquina-máquina). O Promissário e o Promitente transmitem mensagens com os parâmetros desua transação técnico-econômica, e então a conclusão da transação é fornecida por um nó especial - o Provedor - que procura correspondências desses parâmetros. Os Provedores são controlados pelo [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol), que é um contrato inteligente especial que executa uma transação quando o provedor estabelece uma correspondência de mercado entre as partes.
+O núcleo da Robonomics Network é o contrato [Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol), um contrato inteligente que reproduz a relação típica entre o cliente de um serviço (Promissário) e o prestador do serviço (Promitente), e inclui os parâmetros técnicos e econômicos da transação entre eles. As partes podem ser tanto um agente autônomo e uma pessoa (interação humano-máquina), quanto dois agentes autônomos (interação máquina-máquina). O Promissário e o Promitente transmitem mensagens com os parâmetros desua transação técnico-econômica, e então a conclusão da transação é fornecida por um nó especial - o Provedor - que procura correspondências desses parâmetros. Os Provedores são controlados pelo [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol), que é um contrato inteligente especial que executa uma transação quando o provedor estabelece uma correspondência de mercado entre as partes.
 
 Existem três cenários nos quais o cumprimento de uma obrigação pode ocorrer:
 
@@ -39,11 +39,11 @@ Para aproveitar ao máximo as possibilidades dos contratos inteligentes, foi esc
 
 ![Ciclo de Vida da Obrigação](/blog/images/testing-neon-with-robonomics/step-by-step-3.jpg)
 
-A figura acima mostra que o provedor da rede Robonomics chama o contrato Lighthouse, que por sua vez chama a [fábrica de contratos](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) para criar o contrato de Obrigação. O contrato de Obrigação contém dados sobre a transação, como os termos de referência, pagamento pelo serviço, endereço do validador e o prazo.
+A figura acima mostra que o provedor da rede Robonomics chama o contrato Lighthouse, que por sua vez chama a [fábrica de contratos](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) para criar o contrato Liability. O contrato Liability contém dados sobre a transação, como os termos de referência, pagamento pelo serviço, endereço do validador e o prazo final.
 
 Para saber mais sobre os possíveis casos de uso do Robonomics, confira a página de [P&D](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer) do Robonomics!
 
-Para replicar toda a infraestrutura do Robonomics na rede Neon, implementaremos um cenário de lançamento de robô por meio de um contrato de Obrigaçãosimilar to this [exemplo](https://wiki.robonomics.network/docs/en/kuka/). Se o script puder ser repetido, então todas as funções irão funcionar.
+Para replicar toda a infraestrutura do Robonomics na rede Neon, implementaremos um cenário de lançamento de robô por meio de um contrato Liabilitysemelhante a este [exemplo](https://wiki.robonomics.network/docs/en/kuka/). Se o script puder ser repetido, então todas as funções irão funcionar.
 
 ## Entregáveis
 
@@ -76,13 +76,13 @@ Endereços dos contratos na rede devnet Neon https://devnet.neonevm.org
 
 Os contratos foram escritos para Solidity 0.5.0. Portanto, nenhuma alteração foi necessária ao implantar e usar os contratos.
 
-## Fluxo de Teste
+## Fluxo de Testes
 
 Em geral, o teste consiste em enviar mensagens correspondentes de um agente para outro.
 
 Em seguida, o Promisor encontra um novo contrato de responsabilidade na rede e começa a executá-lo. Após a conclusão do trabalho, uma mensagem é enviada com o resultado, que é então registrado no contrato.
 
-Instruções passo a passo para o lançamento estão em [README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md)
+Instruções passo a passo para execução estão em [README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md)
 
 ## Resultados dos Testes em Detalhe
 
@@ -92,11 +92,11 @@ Gravação em vídeo do processo
 
 ![Liability](/blog/images/testing-neon-with-robonomics/liability.jpg)
 
-Quando a simulação começa, uma mensagem de oferta é criada, e uma mensagem de demanda vem do Promissário, após o que um contrato de Responsabilidade é criado usando a função createLiability do contrato Lighthouse. Com a ajuda do contrato XRT, tokens são transferidos do endereço do Promissário para o endereço do contrato de Responsabilidade.
+Quando a simulação começa, uma mensagem de oferta é criada, e uma mensagem de demanda vem do Promisee, após o que um contrato de responsabilidade é criado usando a função createLiability do contrato Lighthouse. Com a ajuda do contrato XRT, tokens são transferidos do endereço do Promisee para o endereço do contrato de responsabilidade.
 
-Após um novo contrato de Responsabilidade ser descoberto na devnet Neon, o agente começa a trabalhar. O resultado do trabalho (telemetria) é escrito em um arquivo e enviado para o IPFS, o hash do arquivo é salvo como resultado.
+Após um novo contrato de responsabilidade ser descoberto na devnet Neon, o agente começa a trabalhar. O resultado do trabalho (telemetria) é escrito em um arquivo e enviado para o IPFS, o hash do arquivo é salvo como resultado.
 
-Após a conclusão do trabalho, o contrato de Responsabilidade é finalizado usando a função finalizeLiability() do contrato Lighthouse e os tokens são transferidos do endereço de Responsabilidade para os endereços do Promisor e do Validador.
+Após a conclusão do trabalho, o contrato de responsabilidade é finalizado usando a função finalizeLiability() do contrato Lighthouse e os tokens são transferidos do endereço de responsabilidade para os endereços do Promisor e do Validador.
 
 A execução bem-sucedida da simulação mostrou que todos os contratos funcionaram corretamente e a plataforma Neon funciona.
 
@@ -104,7 +104,7 @@ A execução bem-sucedida da simulação mostrou que todos os contratos funciona
 
 ### Truffle falha se não receber uma resposta da rede
 
-Durante o processo de implantação dos contratos, descobriu-se que o proxy nem sempre retorna uma resposta a tempo, razão pela qual o Truffle termina com um erro:
+Durante o processo de implantação dos contratos, verificou-se que o proxy nem sempre retorna uma resposta a tempo, razão pela qual o Truffle termina com um erro:
 
 <RbCode>
 
@@ -160,7 +160,7 @@ Em vez de 0, 1, etc., esperávamos ver eventos nomeados.
 
 ## Conclusão
 
-Utilizando a plataforma Neon EVM, foi testado com sucesso um cenário em que um contrato de responsabilidade entre um Promissário e um Promitente é celebrado, com posterior validação do resultado do trabalho realizado por um terceiro. Além disso, participou um Provedor, que verificou a coincidência entre oferta e demanda das partes e recebeu uma comissão por esse trabalho.
+Utilizando a plataforma Neon EVM, foi testado com sucesso um cenário em que um contrato de responsabilidade entre um Promissário e um Promitente é firmado, com posterior validação do resultado do trabalho realizado por um terceiro. Além disso, participou um Provedor, que verificou a coincidência entre oferta e demanda das partes, recebendo uma comissão por esse serviço.
 
 A demonstração utilizou uma simulação de um braço robótico contratado para executar uma sequência de ações. Como resultado do trabalho, o robô enviou um arquivo com a telemetria recebida durante a tarefa.
 

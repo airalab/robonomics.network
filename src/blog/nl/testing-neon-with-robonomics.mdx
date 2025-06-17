@@ -21,27 +21,27 @@ Voor dit voorbeeld werd een simulatie van een robotarm gebruikt, die werd gevraa
 
 Ingenieurs van [Multi-Agent Systems](https://multi-agent.io/) werken al enkele jaren samen met het [Robonomics Network](https://robonomics.network/). De eerste implementatie van het Robonomics Network werd gemaakt voor het Ethereum-netwerk. Het is een set smart contracts voor machine-tot-machine communicatie.
 
-De kern van het Robonomics Network is het [Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol) contract, een smart contract dat de typische relatie tussen de klant van een dienst (Promisee) en de dienstverlener (Promisor) nabootst, en de technische en economische parameters van de transactie tussen hen bevat. De partijen kunnen zowel een autonoom agent en een persoon zijn (mens-tot-machine interactie), als puur twee autonome agenten (machine-tot-machine interactie). De Promisee en Promisor zenden berichten uit met de parameters vanhun technisch-economische transactie, waarna de afronding van de transactie wordt verzorgd door een speciale node - de Provider - die zoekt naar overeenkomsten van deze parameters. Providers worden aangestuurd door [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol), een speciaal smart contract dat een transactie uitvoert wanneer de provider een marktmatch tussen de partijen tot stand brengt.
+De kern van het Robonomics Network is het [Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol) contract, een smart contract dat de typische relatie tussen de klant van een dienst (Promisee) en de dienstverlener (Promisor) nabootst, en de technische en economische parameters van de transactie tussen hen bevat. De partijen kunnen zowel een autonoom agent en een persoon zijn (mens-tot-machine interactie), als puur twee autonome agenten (machine-tot-machine interactie). De Promisee en Promisor zenden berichten uit met de parameters vanhun technisch-economische transactie, en vervolgens wordt de afronding van de transactie verzorgd door een speciale node - de Provider - die zoekt naar overeenkomsten van deze parameters. Providers worden aangestuurd door [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol), een speciaal smart contract dat een transactie uitvoert wanneer de provider een marktmatch tussen de partijen tot stand brengt.
 
 Er zijn drie scenario's waarin de nakoming van een verplichting kan plaatsvinden:
 
-1. Een eenvoudige verplichting (zonder verificatie van het eindresultaat en zonder commissie voor Provider-nodes)
-2. Verplichting met een commissie voor de Provider
-3. Verplichting met een commissie voor de Provider en validatie van de resultaten met behulp van een derde partij - een observerend netwerk.
+1. Een eenvoudige verplichting (zonder verificatie van het eindresultaat, en zonder commissie betaald aan Provider-nodes)
+2. Verplichting met een commissie betaald aan de Provider
+3. Verplichting met een commissie aan de Provider en validatie van de resultaten met behulp van een derde partij - observerend netwerk.
 
 Het doel van deze test is om het meest complexe, derde Robonomics-scenario te testen op het Neon EVM-platform.
 
 ## Beschrijving van de Testscenario's
 
-Naarmate we de industriële zones en de infrastructuur van moderne steden ontwikkelen, is de opkomst van volledig geautomatiseerde ondernemingen en diensten die worden aangestuurd door cyber-fysieke systemen (CPS) en hun diensten aanbieden als autonome agenten zeer waarschijnlijk. In dit opzicht kunnen we ook de vorming van netwerken van autonome CPS verwachten om de snelheid en kwaliteit van communicatie in het productieproces en de dienstverlening te verhogen.
+Naarmate we de industriële zones en de infrastructuur van moderne steden ontwikkelen, is de opkomst van volledig geautomatiseerde ondernemingen en diensten die worden aangestuurd door cyber-fysieke systemen (CPS) en die hun diensten aanbieden als autonome agenten zeer waarschijnlijk. In dit opzicht kunnen we ook de vorming van netwerken van autonome CPS verwachten om de snelheid en kwaliteit van communicatie in het productieproces en de dienstverlening te verhogen.
 
-Om optimaal gebruik te maken van de mogelijkheden van smart contracts, is gekozen voor een scenario van interactie tussen twee autonome economische agenten. Bekijk de levenscyclus van een verplichting in het Robonomics-netwerk:
+Om volledig te profiteren van de mogelijkheden van smart contracts, is gekozen voor een scenario van interactie tussen twee autonome economische agenten. Bekijk de levenscyclus van een verplichting in het Robonomics-netwerk:
 
 ![Liability Life Cycle](/blog/images/testing-neon-with-robonomics/step-by-step-3.jpg)
 
-De bovenstaande afbeelding laat zien dat de provider van het Robonomics-netwerk het Lighthouse-contract aanroept, dat op zijn beurt de [contractfabriek](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) aanroept om het Liability-contract aan te maken. Het Liability-contract bevat gegevens over de transactie, zoals de opdrachtomschrijving, betaling voor de dienst, validatoradres en de deadline.
+De bovenstaande afbeelding laat zien dat de provider van het Robonomics-netwerk het Lighthouse-contract aanroept, dat op zijn beurt de [contract factory](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol) aanroept om het Liability-contract aan te maken. Het Liability-contract bevat gegevens over de transactie, zoals de opdrachtomschrijving, betaling voor de dienst, validatoradres en de deadline.
 
-Wil je meer weten over mogelijke use-cases voor Robonomics? Bekijk dan de Robonomics [R&D](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer) pagina!
+Wil je meer weten over de mogelijke use-cases voor Robonomics, bekijk dan de Robonomics [R&D](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer) pagina!
 
 Om de volledige Robonomics-infrastructuur op het Neon-netwerk te repliceren, zullen we een robotscenario implementeren via een Liability-contract vergelijkbaar met dit [voorbeeld](https://wiki.robonomics.network/docs/en/kuka/). Als het script herhaald kan worden, zullen alle functies werken.
 
@@ -74,7 +74,7 @@ Adressen van contracten in het Neon devnet netwerk https://devnet.neonevm.org
 
 ## Wijzigingen aangebracht aan de originele contracten
 
-De contracten zijn geschreven voor Solidity 0.5.0. Er waren daarom geen wijzigingen nodig bij het implementeren en gebruiken van de contracten.
+De contracten zijn geschreven voor Solidity 0.5.0. Er waren daarom geen wijzigingen nodig bij het deployen en gebruiken van de contracten.
 
 ## Testworkflow
 
@@ -104,16 +104,15 @@ De succesvolle uitvoering van de simulatie toonde aan dat alle contracten correc
 
 ### Truffle faalt als het geen antwoord van het netwerk krijgt
 
-Tijdens het proces van het implementeren van contracten bleek dat de proxy niet altijd op tijd een antwoord terugstuurt, waardoor Truffle eindigt met een foutmelding:
+Tijdens het deployen van contracten bleek dat de proxy niet altijd op tijd een antwoord terugstuurt, waardoor Truffle eindigt met een foutmelding:
 
 <RbCode>
 
 ```sh
-TypeError: Cannot read properties of null (reading 'from')                                    
-    at Web3InterfaceAdapter.(<anonymous>) (/usr/lib/node_modules/truffle/build/webpack:/packages
-/interface-adapter/dist/adapter/web3/index.js:71:1)                                           
-    at Generator.next (<anonymous>)                                                          
-    at fulfilled (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
+TypeError: Kan eigenschappen van null niet lezen (lezen van 'from')                                    
+    bij Web3InterfaceAdapter.(<anoniem>) (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist/adapter/web3/index.js:71:1)                                           
+    bij Generator.next (<anoniem>)                                                          
+    bij voltooid (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
 /adapter/web3/index.js:5:43)                                                                  
     at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
@@ -122,7 +121,7 @@ Node v16.14.0
 ```
 </RbCode>
 
-Het was niet mogelijk om een relatie te vinden tussen de testcondities en het optreden van een fout, maar hoogstwaarschijnlijk kan Neon EVM geen transactiebevestiging versturen en kan Truffle geen Null-respons verwerken.
+Het was niet mogelijk om een relatie te vinden tussen de testomstandigheden en het optreden van een fout, maar hoogstwaarschijnlijk kan Neon EVM geen transactiebevestiging versturen en kan Truffle geen Null-respons verwerken.
 
 Als we hier een timeout en retry toevoegen [index.ts#L75](https://github.com/trufflesuite/truffle/blob/develop/packages/interface-adapter/lib/adapter/web3/index.ts#L75), zou de deployment zonder fouten moeten verlopen.
 
@@ -150,18 +149,18 @@ Neon EVM geeft vrij magere beschrijvingen van gebeurtenissen na een transactie, 
       returnValues: Result {},
       event: undefined,
       signature: null,
-      raw: [Object]
+      raw:[Object]
     },
 ...
 ```
 </RbCode>
 
-In plaats van 0, 1, enz. verwachtten we benoemde gebeurtenissen te zien.
+In plaats van 0, 1, enz. verwachtten we benoemde events te zien.
 
 ## Conclusie
 
-Met behulp van het Neon EVM-platform is met succes een scenario getest waarbij een aansprakelijkheidscontract tussen een Belofteontvanger en een Belovende wordt afgesloten, met daaropvolgende validatie van het resultaat van het geleverde werk door een derde partij. Daarnaast nam er een Aanbieder deel, die de overeenstemming tussen vraag en aanbod tussen de partijen controleerde en hiervoor een commissie ontving.
+Met behulp van het Neon EVM-platform is met succes een scenario getest waarbij een aansprakelijkheidscontract tussen een Belover en een Belofte-ontvanger wordt afgesloten, met daaropvolgende validatie van het resultaat van het geleverde werk door een derde partij. Daarnaast nam er een Aanbieder deel, die de overeenstemming tussen vraag en aanbod tussen de partijen controleerde en hiervoor een commissie ontving.
 
 Voor de demonstratie werd een simulatie gebruikt van een robotarm die werd ingehuurd om een reeks handelingen uit te voeren. Als resultaat van het werk stuurde de robot een bestand met telemetrie die tijdens de taak was verzameld.
 
-Ondanks enkele eigenaardigheden in de werking van het netwerk, hebben uiteindelijk alle deelnemende contracten hun functionaliteit in de Neon-omgeving aangetoond.
+Ondanks enkele eigenaardigheden in de werking van het netwerk, hebben uiteindelijk alle deelnemende contracten hun werking in de Neon-omgeving aangetoond.

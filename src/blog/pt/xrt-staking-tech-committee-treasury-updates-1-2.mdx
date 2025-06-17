@@ -23,13 +23,13 @@ Parachains não precisam de staking em sua funcionalidade principal. As parachai
 
 Parachains que desejam aproveitar a "sabedoria da multidão" e atribuir tarefas à comunidade precisam reinventar o staking. Na Robonomics, foi isso que fizemos. A arquitetura de staking na parachain Robonomics é única e específica para as questões de blockchain que resolvemos para o mercado de IoT. Oferecemos duas formas de pagar pela funcionalidade básica dos dispositivos inteligentes: por transação ou por assinatura mensal.
 
-O pagamento por transação é autoexplicativo. A função de assinatura precisa de uma pequena explicação. Alguns casos de uso de IoT precisam acessar periodicamente funções em nuvem, e é altamente indesejável que essas operações falhem. O mecanismo de preço do gás ainda não resolve totalmente esse problema, especialmente quando se trata de garantir transações em todos os blocos. Com isso em mente, tivemos a ideia de usar o mecanismo de staking para gerenciar uma cota garantida com um modelo de assinatura. No lado do Substrate, fizemos um pequeno truque, baseado no processamento de prioridade de transações de peso zero. Se um dispositivo IoT ativar uma assinatura, então todas as suas transações terão prioridade sobre quaisquer outras, exceto, é claro, outras transações de peso zero. À medida que mais tokens entram no pool de staking da rede, mais assinaturas estarão disponíveis para os usuários.
+O pagamento por transação é autoexplicativo. A função de assinatura precisa de uma pequena explicação. Alguns casos de uso de IoT precisam acessar funções em nuvem periodicamente, e é altamente indesejável que essas operações falhem. O mecanismo de preço do gás ainda não resolve totalmente esse problema, especialmente quando se trata de garantir transações em todos os blocos. Com isso em mente, tivemos a ideia de usar o mecanismo de staking para gerenciar uma cota garantida com um modelo de assinatura. No lado do Substrate, fizemos um pequeno truque, baseado no processamento de prioridade de transações de peso zero. Se um dispositivo IoT ativar uma assinatura, então todas as suas transações terão prioridade sobre quaisquer outras, exceto, é claro, outras transações de peso zero. À medida que mais tokens entram no pool de staking da rede, mais assinaturas ficarão disponíveis para os usuários.
 
 <TextCard>
 
 *Por exemplo:*
 
-Tokens totais: 2.000.000 XRT;
+Total de tokens: 2.000.000 XRT;
 em staking: 800.000 XRT;
 largura de banda da parachain: 5400 tx por bloco.
 
@@ -43,11 +43,11 @@ Escreverei sobre como as assinaturas e o pool de pagamentos serão distribuídos
 
 DApp pronto para uso: https://robonomics.app/#/staking/
 
-![XRT staking in Robonomics dapp, new bonding screen](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
+![Staking de XRT no dapp Robonomics, nova tela de bonding](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image2.jpg)
 
 Após a primeira transação, você verá uma tabela de estatísticas como esta:
 
-![XRT staking in Robonomics dapp, bonding list screen](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
+![Staking de XRT no dapp Robonomics, tela de lista de bonding](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image4.jpg)
 
 O envio de tokens entre contas na parachain permanecerá desabilitado. A capacidade de transferir tokens será habilitada após a parachain entrar em operação na rede Kusama.
 
@@ -69,7 +69,7 @@ Na interface do DApp Exodus, você pode ver as estatísticas de migração da bl
 
 A tarefa atual para os desenvolvedores é testar os mecanismos básicos de staking para os detentores de tokens em condições reais: adicionar ao pool de staking, acumular recompensas e descongelar tokens em até 7 dias.
 
-*Uma tarefa interessante para a comunidade:* verificar a correção do calculador de recompensas, levando em conta as duas opções: uma recompensa anual de 10% para participantes da migração Exodus e uma recompensa anual de 50% para membros da campanha de crowd loan.
+*Uma tarefa interessante para a comunidade:* verificar a correção do calculador de recompensas, levando em consideração as duas opções: uma recompensa anual de 10% para participantes da migração Exodus e uma recompensa anual de 50% para membros da campanha de crowd loan.
 
 Após a atualização 1.3 RWS, o mecanismo de staking será ativado na rede. A atualização RWS adicionará a capacidade de assinatura para gêmeos digitais, e o desafio de alocação de banda passará a fazer sentido. Assim, mais tarde poderemos avaliar completamente a correção do mecanismo de staking.
 
@@ -79,18 +79,14 @@ Assim como na atualização 1.1, isso já foi implementado no funcionamento da p
 
 ### Comitê Técnico da Rede
 
-O portal do comitê técnico está disponível em: https://parachain.robonomics.network/?rpc=wss%3A%2---
-locale: pt
----
-
-F%2Fmain.frontier.rpc.robonomics.network%2F#/techcomm
+O portal do comitê técnico está disponível em: https://parachain.robonomics.network/?rpc=wss%3A%2F%2Fmain.frontier.rpc.robonomics.network%2F#/techcomm
 
 ![O portal do comitê técnico na parachain Robonomics](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image5.jpg)
 
-A partir de 15 de setembro, você pode ver os seis membros do comitê técnico que foram adicionados: 2 especialistas em devops, um arquiteto de software, o principal desenvolvedor de implementação Substrate, um engenheiro sênior de robótica e um desenvolvedor sênior de DApp.
+A partir de 15 de setembro, você pode ver os seis membros do comitê técnico que foram adicionados: 2 especialistas em devops, um arquiteto de software, o principal desenvolvedor da implementação Substrate, um engenheiro sênior de robótica e um desenvolvedor sênior de DApp.
 O comitê técnico será responsável por atualizar o código de runtime da parachain, começando com os lançamentos subsequentes no GitHub.
 
-Você pode ler mais sobre o trabalho deste comitê na wiki da Polkadot: https://wiki.polkadot.network/docs/learn-governance#technical-committee
+Você pode ler mais sobre o trabalho deste comitê na wiki do Polkadot: https://wiki.polkadot.network/docs/learn-governance#technical-committee
 
 Até que a parachain Robonomics seja lançada na Kusama, os desenvolvedores do projeto não expandirão a governança on-chain adicionando conselhos ou referendos. Após o lançamento bem-sucedido da parachain, revisitaremos a questão de novas oportunidades para influenciar as operações da rede para novos participantes do projeto.
 
@@ -100,9 +96,9 @@ A tesouraria da parachain está disponível aqui: https://parachain.robonomics.n
 
 ![A tesouraria na parachain Robonomics](/blog/images/xrt-staking-tech-committee-treasury-updates-1-2/image1.jpg)
 
-No último mês, cerca de 100 mil XRT foram distribuídos da tesouraria para os saldos dos participantes da primeira campanha de crowd loan da Robonomics do verão de 2021. Essas operações não são mostradas como solicitações, mas sim feitas por Sudo. Agora que temos um comitê técnico, as solicitações passarão por votação.
+No último mês, cerca de 100 mil XRT foram distribuídos da tesouraria para os saldos dos participantes da primeira campanha de crowd loan da Robonomics do verão de 2021. Essas operações não aparecem como solicitações, mas sim feitas por Sudo. Agora que temos um comitê técnico, as solicitações passarão por votação.
 
-Também vale destacar um mecanismo interessante da tesouraria: a queima periódica de saldos. Você pode ler mais sobre o funcionamento da tesouraria na wiki da Polkadot: https://wiki.polkadot.network/docs/learn-treasury
+Também vale destacar um mecanismo interessante da tesouraria: a queima periódica de saldos. Você pode ler mais sobre o funcionamento da tesouraria na wiki do Polkadot: https://wiki.polkadot.network/docs/learn-treasury
 
 A comunidade pode solicitar que a tesouraria da parachain aloque XRT para tarefas que serão úteis no desenvolvimento da Robonomics no ecossistema Polkadot ou para atrair usuários do mercado de IoT.
 

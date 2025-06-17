@@ -5,25 +5,25 @@ published: true
 locale: 'ja'
 tags: ['Robonomics in Ethereum', 'Collaborations', 'Smart Contracts', 'Neon']
 cover_image: /blog/images/testing-neon-with-robonomics/blog_cover_neon_multi-agent.jpg
-description: "これらのテストの目的は、サイバーフィジカルシステム（ロボット）が技術経済的な取引を行うことを可能にするRobonomicsスマートコントラクトを用いて、Neonプラットフォームが本番段階へ移行する準備ができているかを検証することでした。"
+description: "これらのテストの目的は、サイバーフィジカルシステム（ロボット）が技術経済的な取引を行うことを可能にするRobonomicsスマートコントラクトを用いて、Neonプラットフォームが本番段階に移行する準備ができているかを検証することでした。"
 abstract: ""
 ---
 
 ## TL;DR
 
-これらのテストの目的は、[Neon](https://neon-labs.org/)プラットフォームが、サイバーフィジカルシステム（ロボット）が技術経済的な取引を行うことを可能にするRobonomicsスマートコントラクトを用いて、本番段階へ移行する準備ができているかを検証することでした。
+これらのテストの目的は、[Neon](https://neon-labs.org/)プラットフォームが本番段階に移行する準備ができているかを、サイバーフィジカルシステム（ロボット）が技術経済的な取引を行うことを可能にするRobonomicsスマートコントラクトを用いて検証することでした。
 
-Robonomicsネットワークでは、2者間のやり取りが確立されています。Promisee（サービスを注文し、技術的なタスクの説明を送り、その実行のための資金を送る者）と、Promisor（サービスを実行する者）です。典型的なシナリオとして、PromiseeとPromisorの間で責任契約（Liability contract）が締結され、その後、第三者による成果物の検証と、両者間の契約を仲介したノードへの手数料支払いが行われる流れをテストしました。
+Robonomicsネットワークでは、2者間のやり取りが確立されています。Promisee（約束を受ける者）- サービスを注文し、技術的なタスクの説明を送り、その実行のための資金を送金する者；Promisor（約束をする者）- サービスを実行する者です。典型的なシナリオとして、PromiseeとPromisorの間で責任契約（Liability contract）が締結され、その後、第三者による成果物の検証と、両者間の契約を仲介したノードへの手数料支払いが行われる流れをテストしました。
 
 この例では、ロボットアームのシミュレーションを用い、一連の動作を実行するよう指示しました。テストは成功しました。
 
 ## テストの範囲と目的
 
-[Multi-Agent Systems](https://multi-agent.io/)のエンジニアは、数年間にわたり[Robonomics Network](https://robonomics.network/)と協力してきました。Robonomics Networkの最初の実装はEthereumネットワーク向けに作られました。これは、マシン同士の通信のためのスマートコントラクト群です。
+[Multi-Agent Systems](https://multi-agent.io/)のエンジニアは、数年間にわたり[Robonomics Network](https://robonomics.network/)と協力してきました。Robonomics Networkの最初の実装はEthereumネットワーク向けに作成されました。これは、マシン同士の通信のためのスマートコントラクト群です。
 
-Robonomics Networkの中核は[Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol)コントラクトであり、これはサービスの顧客（Promisee）とサービス提供者（Promisor）との間の典型的な関係を再現し、両者間の取引における技術的・経済的パラメータを含みます。両者は自律エージェントと人間（ヒューマン・トゥ・マシンのやり取り）でも、純粋に2つの自律エージェント（マシン・トゥ・マシンのやり取り）でも構いません。PromiseeとPromisorは、そのパラメータを含むメッセージをブロードキャストします。彼らの技術経済的な取引において、取引の成立は特別なノードであるプロバイダーによって提供されます。プロバイダーはこれらのパラメータの一致を探します。プロバイダーは [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol) によって制御されており、これはプロバイダーが当事者間で市場の一致を確立したときに取引を実行する特別なスマートコントラクトです。
+Robonomics Networkの中核は[Liability](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol)コントラクトであり、サービスの顧客（Promisee）とサービス提供者（Promisor）との間の典型的な関係を再現し、両者間の取引における技術的・経済的パラメータを含みます。両者は自律エージェントと人間（人と機械の相互作用）でも、純粋に2つの自律エージェント（機械同士の相互作用）でもかまいません。PromiseeとPromisorは、そのパラメータを含むメッセージをブロードキャストします。彼らの技術経済的な取引において、取引の成立は特別なノードであるプロバイダーによって提供されます。プロバイダーはこれらのパラメータの一致を探します。プロバイダーは [Lighthouse](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol) によって制御されており、これはプロバイダーが当事者間で市場の一致を確立したときに取引を実行する特別なスマートコントラクトです。
 
-義務の履行が行われるシナリオは3つあります。
+義務の履行が行われるシナリオは3つあります：
 
 1. 単純なコミットメント（最終結果の検証なし、プロバイダーノードへの手数料なし）
 2. プロバイダーに手数料を支払う義務
@@ -33,13 +33,13 @@ Robonomics Networkの中核は[Liability](https://github.com/airalab/robonomics_
 
 ## テストシナリオの説明
 
-産業ゾーンや現代都市のインフラを開発する中で、サイバーフィジカルシステム（CPS）によって制御され、自律エージェントとしてサービスを提供する完全自動化された企業やサービスの出現は非常に高い確率で起こるでしょう。この観点から、生産やサービス提供の過程で通信の速度と品質を高めるために、自律CPSのネットワークが形成されることも期待できます。
+産業ゾーンや現代都市のインフラを開発する中で、サイバーフィジカルシステム（CPS）によって制御され、自律エージェントとしてサービスを提供する完全自動化された企業やサービスが出現する可能性が高いです。この観点から、生産やサービス提供の過程で通信の速度と品質を向上させるために、自律CPSのネットワークが形成されることも期待できます。
 
-スマートコントラクトの可能性を最大限に活用するために、2つの自律経済エージェント間の相互作用のシナリオが選ばれました。Robonomicsネットワークにおける責任のライフサイクルを考えてみましょう。
+スマートコントラクトの可能性を最大限に活用するために、2つの自律経済エージェント間の相互作用のシナリオが選ばれました。Robonomicsネットワークにおける責任のライフサイクルを考えてみましょう：
 
 ![Liability Life Cycle](/blog/images/testing-neon-with-robonomics/step-by-step-3.jpg)
 
-上図は、RobonomicsネットワークのプロバイダーがLighthouseコントラクトを呼び出し、それがさらに[コントラクトファクトリー](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)を呼び出してLiabilityコントラクトを作成する様子を示しています。Liabilityコントラクトには、取引に関するデータ（仕様書、サービスの支払い、バリデーターアドレス、期限など）が含まれています。
+上の図は、RobonomicsネットワークのプロバイダーがLighthouseコントラクトを呼び出し、それがさらに[コントラクトファクトリー](https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Factory.sol)を呼び出してLiabilityコントラクトを作成する様子を示しています。Liabilityコントラクトには、取引に関するデータ（仕様書、サービスの支払い、バリデーターアドレス、期限など）が含まれています。
 
 Robonomicsの利用例について詳しく知りたい方は、Robonomicsの [R&D](https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer) ページをご覧ください！
 
@@ -56,7 +56,7 @@ Robonomicsコントラクトのソースコードは[こちら](https://github.c
 - コントラクト用の[Proxy](https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/SharedCode.sol)
 - コントラクト内の様々な修飾子やロール
 
-Neon devnetネットワーク上のコントラクトアドレス https://devnet.neonevm.org
+Neon devnetネットワークにおけるコントラクトのアドレス https://devnet.neonevm.org
 
 | コントラクト名   | アドレス                                    |
 |------------------|---------------------------------------------|
@@ -74,13 +74,13 @@ Neon devnetネットワーク上のコントラクトアドレス https://devnet
 
 ## 元のコントラクトに加えた変更点
 
-コントラクトは Solidity 0.5.0 用に書かれています。そのため、コントラクトのデプロイや利用時に変更は必要ありませんでした。
+コントラクトは Solidity 0.5.0 用に書かれています。そのため、コントラクトのデプロイおよび使用時に変更は必要ありませんでした。
 
 ## テストワークフロー
 
 一般的に、テストは一方のエージェントからもう一方のエージェントへ対応するメッセージを送信することで構成されます。
 
-次に、Promisor がネットワーク上で新しい Liability コントラクトを見つけて実行を開始します。作業が完了すると、結果を含むメッセージが送信され、それがコントラクトに記録されます。
+次に、Promisor はネットワーク内で新しい Liability コントラクトを見つけて実行を開始します。作業が完了すると、結果を含むメッセージが送信され、それがコントラクトに記録されます。
 
 起動手順の詳細は [README.md](https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md) に記載されています。
 
@@ -96,7 +96,7 @@ Neon devnetネットワーク上のコントラクトアドレス https://devnet
 
 Neon devnet で新しい Liability コントラクトが発見されると、エージェントが作業を開始します。作業の結果（テレメトリ）はファイルに書き込まれ、IPFS に送信され、ファイルから得られたハッシュが結果として保存されます。
 
-作業が完了すると、Lighthouse コントラクトの finalizeLiability() 関数を使って Liability コントラクトがファイナライズされ、トークンが Liability アドレスから Promisor と Validator のアドレスへ転送されます。
+作業が完了すると、Lighthouse コントラクトの finalizeLiability() 関数を使って Liability コントラクトがファイナライズされ、トークンが Liability アドレスから Promisor および Validator のアドレスへ転送されます。
 
 シミュレーションの正常な実行により、すべてのコントラクトが正しく動作し、Neon プラットフォームが機能することが示されました。
 
@@ -104,19 +104,14 @@ Neon devnet で新しい Liability コントラクトが発見されると、エ
 
 ### ネットワークからの応答がない場合、Truffle が失敗する
 
-コントラクトのデプロイ作業中、プロキシが必ずしもタイムリーに応答を返さないことが判明し、そのため Truffle がエラーで終了します:
+コントラクトのデプロイ中、プロキシが必ずしもタイムリーに応答を返さないことが判明し、そのため Truffle がエラーで終了します:
 
 <RbCode>
 
 ```sh
 TypeError: Cannot read properties of null (reading 'from')                                    
-    at Web3---
-locale: ja
----
-
-InterfaceAdapter.(<anonymous>) (/usr/lib/node_modules/truffle/build/webpack:/packages
-/interface-adapter/dist/adapter/web3/index.js:71:1)                                           
-    at Generator.next (<anonymous>)                                                          
+    at Web3InterfaceAdapter.(<匿名>) (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist/adapter/web3/index.js:71:1)                                           
+    at Generator.next (<匿名>)                                                          
     at fulfilled (/usr/lib/node_modules/truffle/build/webpack:/packages/interface-adapter/dist
 /adapter/web3/index.js:5:43)                                                                  
     at runMicrotasks (<anonymous>)
@@ -128,15 +123,15 @@ Node v16.14.0
 
 テスト条件とエラー発生の間に関係性を見つけることはできませんでしたが、おそらくNeon EVMがトランザクションレシートを送信できず、TruffleがNullレスポンスを処理できないことが原因です。
 
-ここ [index.ts#L75](https://github.com/trufflesuite/truffle/blob/develop/packages/interface-adapter/lib/adapter/web3/index.ts#L75) にタイムアウトとリトライを追加すれば、デプロイはエラーなく進行するはずです。
+ここでタイムアウトとリトライを追加すれば[index.ts#L75](https://github.com/trufflesuite/truffle/blob/develop/packages/interface-adapter/lib/adapter/web3/index.ts#L75)、デプロイはエラーなく進行するはずです。
 
 ### WS/WSSエンドポイントなし
 
-Neon EVMにはEthereumとは異なりWS/WSSエンドポイントが存在しないため、ネットワークからのイベント購読ができません。そのため、テスト中は手動でイベントを監視しました。
+Neon EVMはEthereumとは異なりWS/WSSエンドポイントを持たないため、ネットワークからのイベント購読ができません。そのため、テスト中は手動でイベントを監視しました。
 
 ### イベント名なし
 
-Neon EVMはトランザクション後のイベントの説明が非常に乏しく、例えば以下のようになります。
+Neon EVMはトランザクション後のイベントの説明が非常に乏しいです。例えば、次のようになります。
 
 <RbCode>
 
@@ -164,8 +159,8 @@ Neon EVMはトランザクション後のイベントの説明が非常に乏し
 
 ## 結論
 
-Neon EVMプラットフォームを使用して、Promisee（債権者）とPromisor（債務者）間で責任契約が締結され、その後、第三者による作業結果の検証が行われるシナリオのテストに成功しました。さらに、Provider（提供者）も参加し、両者間の需給の一致を確認し、その作業に対する手数料を受け取りました。
+Neon EVMプラットフォームを使用して、Promisee（受益者）とPromisor（約束者）間で責任契約が締結され、その後第三者による作業結果の検証が行われるシナリオのテストに成功しました。さらに、Provider（提供者）も参加し、両者間の需給の一致を確認し、その作業に対する手数料を受け取りました。
 
-デモンストレーションでは、一連の動作を実行するために雇われたロボットアームのシミュレーションを使用しました。作業の結果として、ロボットはタスク中に取得したテレメトリを含むファイルを送信しました。
+デモンストレーションでは、一連の動作を実行するために雇われたロボットアームのシミュレーションが使用されました。作業の結果として、ロボットはタスク中に取得したテレメトリを含むファイルを送信しました。
 
-ネットワークの動作にいくつか特有の点があったものの、最終的には、すべての参加契約がNeon環境で正常に機能することが示されました。
+ネットワークの動作にいくつか特有の点があったものの、最終的にはすべての参加コントラクトがNeon環境で正常に機能することが示されました。
