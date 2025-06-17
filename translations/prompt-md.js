@@ -1,55 +1,50 @@
 import dotenv from "dotenv";
 import fs from "node:fs";
 import chalk from 'chalk';
+import crypto from 'node:crypto';
 import { encode, decode } from 'gpt-tokenizer';
-
 import OpenAI from "openai";
+import { configMD } from './tr-config.js';
 
-// Load environment variables from .env file
 dotenv.config();
 
-import {configMD} from './tr-config.js';
-
 const key = configMD.key;
-
-// reference for ai translation
 const defaultReference = 'You can adjust the tone and style, taking into account the cultural connotations and regional differences of certain words. As a translator, you need to translate the original text into a translation that meets the standards of accuracy and elegance.';
-
-const url = 'https://api.openai.com/v1/chat/completions';
 const defaultLocale = configMD.defaultLocale;
-const locales = configMD.locales; // array with all locales
-const inputFolder = configMD.inputFolder; // folder with default files
-const outputFolder = configMD.outputFolder; // endpoint translations folder
-const isInProgress = []; // to notify when all jobs are completed
-const changedFiles = []; // array of modified files to translate
+const locales = configMD.locales;
+const inputFolder = configMD.inputFolder;
+const outputFolder = configMD.outputFolder;
+const HASH_CACHE_FILE = './translations/hash-cache.json';
 
-const openai = new OpenAI({
-  apiKey: key, 
-});
+const isInProgress = [];
+const changedFiles = [];
 
-const readMarkdown = (filePath) => {
-  return fs.readFileSync(filePath, 'utf8');
-};
+const openai = new OpenAI({ apiKey: key });
 
-const writeFile = (filePath, data) => {
-  fs.writeFileSync(filePath, data, 'utf8');
-}
-
-const checkExistingFiles = (path) => {
-  if (fs.existsSync(path)) {
-    return true
-  } else {
-    return false
-  }
-}
+const readMarkdown = (filePath) => fs.readFileSync(filePath, 'utf8');
+const writeFile = (filePath, data) => fs.writeFileSync(filePath, data, 'utf8');
+const checkExistingFiles = (path) => fs.existsSync(path);
 
 const deleteFile = (path) => {
-  locales.map(locale => {
-    if(fs.existsSync(`${outputFolder}${locale}/${path}`))
-    fs.unlinkSync(`${outputFolder}${locale}/${path}`)
-  })
+  locales.forEach(locale => {
+    const filePath = `${outputFolder}${locale}/${path}`;
+    if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
+  });
+};
 
-}
+const getFileHash = (filePath) => {
+  const content = fs.readFileSync(filePath);
+  return crypto.createHash('sha256').update(content).digest('hex');
+};
+
+const loadHashCache = () => {
+  if (!fs.existsSync(HASH_CACHE_FILE)) return {};
+  return JSON.parse(fs.readFileSync(HASH_CACHE_FILE, 'utf-8'));
+};
+
+const saveHashCache = (cache) => {
+  fs.writeFileSync(HASH_CACHE_FILE, JSON.stringify(cache, null, 2), 'utf-8');
+};
 
 const translationData = (from, to, input) => [
   {
@@ -105,7 +100,7 @@ const translateMD = async (from, to, input, output, file, locale) => {
       for await (const chunk of chunksOfDoc) {
         const response = await openai.chat.completions.create({
           model: 'gpt-4.1',
-          messages: translationData(from, to, chunk, defaultReference),
+          messages: translationData(from, to, chunk),
           temperature: 0,
           top_p: 1,
         });
@@ -117,7 +112,7 @@ const translateMD = async (from, to, input, output, file, locale) => {
     } else {
       const response = await openai.chat.completions.create({
         model: 'gpt-4.1',
-        messages: translationData(from, to, input, defaultReference),
+        messages: translationData(from, to, input),
         temperature: 0,
         top_p: 1,
       });
@@ -149,68 +144,70 @@ const translateMD = async (from, to, input, output, file, locale) => {
 // check if doc in default folder was removed and delete the doc from all the locales
 const checkDeletedFile = () => {
   const defaultDir = fs.readdirSync(inputFolder).filter(f => f.includes('mdx'));
-  const localeDir = fs.readdirSync(`${outputFolder}${locales[0]}/`).filter(f => f.includes('mdx'))
+  const localeDir = fs.readdirSync(`${outputFolder}${locales[0]}/`).filter(f => f.includes('mdx'));
 
-  if (JSON.stringify(defaultDir) !== JSON.stringify(localeDir)) {
-    const res = localeDir.filter(x => !defaultDir.includes(x));
-
-    res.map(file => {
-      deleteFile(file)
-    })
-  }
-}
-
-const getFileUpdatedDate = (path) => {
-  const ago24 = new Date().getTime() - (24*3600*1000)
-  const stats = fs.statSync(path) 
-
-  let randomLocaleFile = 0;
-
-  if(fs.existsSync(`${outputFolder}ru/${path.split("/").pop()}`)) {
-    randomLocaleFile = fs.statSync(`${outputFolder}ru/${path.split("/").pop()}`);
-  }
-  if(stats.mtimeMs > ago24 && randomLocaleFile.mtimeMs < stats.mtimeMs && !changedFiles.includes(path.split("/").pop())) {
-    changedFiles.push(path.split("/").pop())
-  } else {
-    return
-  }
-}
-
+  const deletedFiles = localeDir.filter(x => !defaultDir.includes(x));
+  deletedFiles.forEach(file => deleteFile(file));
+};
 
 const setChangedFiles = async () => {
-  
-  console.log(chalk.bgGreenBright('🤖 checking modified markdown files 🤖 '))
-  for await (const file of fs.readdirSync(inputFolder)) {
-    if (file.includes('mdx')) {
-      getFileUpdatedDate(`${outputFolder}${file}`)
+  console.log(chalk.bgGreenBright('🤖 checking modified markdown files (by hash) 🤖'));
+
+  const currentHashCache = loadHashCache();
+  const isFirstRun = Object.keys(currentHashCache).length === 0;
+
+  for (const file of fs.readdirSync(inputFolder)) {
+    if (!file.endsWith('.mdx')) continue;
+
+    const filePath = inputFolder + file;
+    const currentHash = getFileHash(filePath);
+
+    // First run? Don’t mark files as changed
+    if (!isFirstRun && currentHashCache[file] !== currentHash) {
+      changedFiles.push(file);
     }
   }
 
-  if(changedFiles.length) {
-    changedFiles.forEach(modFile => {
-      deleteFile(modFile)
-    })
+  if (!isFirstRun && changedFiles.length) {
+    changedFiles.forEach(deleteFile);
   }
-}
+
+  if (isFirstRun) {
+    console.log(chalk.cyanBright('🟢 First run detected — no files will be translated.'));
+  }
+};
+
 
 const set = async () => {
   await setChangedFiles();
-  console.log(chalk.yellow('🤖 getting markdown files from 🤖 ', inputFolder))
+
+  console.log(chalk.yellow('🤖 getting markdown files from 🤖 ', inputFolder));
+
   for await (const locale of locales) {
     for await (const file of fs.readdirSync(inputFolder)) {
-      if(file.includes('mdx')) {
-        if(!checkExistingFiles(`${outputFolder}${locale}/${file}`)) {
+      if (file.includes('mdx')) {
+        const filePath = inputFolder + file;
+        const outPath = `${outputFolder}${locale}/${file}`;
+
+        if (!checkExistingFiles(outPath) || changedFiles.includes(file)) {
           isInProgress.push('+');
-          await translateMD(defaultLocale, locale, readMarkdown(inputFolder + file), `${outputFolder}${locale}/${file}`, file, locale)
+          await translateMD(defaultLocale, locale, readMarkdown(filePath), outPath, file, locale);
         }
       }
     }
   }
 
-  if(!isInProgress.length) {
-    console.log(chalk.magentaBright('all done 💠'))
+  if (!isInProgress.length) {
+    console.log(chalk.magentaBright('all done 💠'));
+
+    const newCache = {};
+    for (const file of fs.readdirSync(inputFolder)) {
+      if (!file.endsWith('.mdx')) continue;
+      newCache[file] = getFileHash(inputFolder + file);
+    }
+    saveHashCache(newCache);
   }
-}
+};
 
 checkDeletedFile();
 set();
