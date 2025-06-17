@@ -145,6 +145,9 @@ const checkDeletedLine = (path, arr) => {
 }
 
 const updateFile = async (path, key, item) => {
+
+  console.log(chalk.gray(`🔄 Checking key: ${key}`));
+
   // checking existing key
   const exsObject = JSON.parse(readFile(path));
   if (!Object.keys(exsObject).includes(toValidJSKey(key.trim()))) {
@@ -161,6 +164,8 @@ const updateFile = async (path, key, item) => {
           const localeObj = JSON.parse(readFile(pathWithLocale))
           localeObj[toValidJSKey(key.trim())] = newKey;
           writeFile(pathWithLocale, localeObj)
+        } else {
+          console.log(chalk.gray(`- Key ${l} - ${key} already exists, skipping add`));
         }
       }
     }
@@ -247,6 +252,15 @@ const translateFile = async (from, to, input, output, file, locale) => {
 
 const translationsSet = async () => {
   console.log(chalk.yellow('🤖 getting json files 🤖'));
+  console.log(chalk.blueBright("🚀 Starting translation process..."));
+  const files = await allFiles();
+
+  if (!files.length) {
+    console.error(chalk.red("❌ No files matched your pattern. Check `config.allFiles`."));
+    process.exit(1);
+  }
+
+  console.log(chalk.cyan(`🔍 Found ${files.length} file(s):`));
   for await (const locale of locales) {
     if(!checkExistingFiles(`${outputFolder}${locale}.json`)) {
       isInProgress.push('+');
@@ -327,4 +341,3 @@ const set = async () => {
 
 // start prompt
 set();
-
