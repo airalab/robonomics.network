@@ -11,12 +11,14 @@ tags: []
 
 The product is based on a scenario we've been working on for over 7 years: research, pilot launches, and testing in the field of civic air quality monitoring in cities. This is not just a new device — it's the first step toward a smart home ecosystem where there is no place for selling user data. We put your digital freedom first: the ability to use devices without mandatory linkage to Google or Amazon clouds.    Additionally, we want to demonstrate how an open source project, supported by just a thousand users, can disrupt an entire surveillance market. We call this project the Altruist open dataset. More details about the kick-start campaign and the open dataset idea based on 'Altruists' — in this post.
 
+<iframe class="youtubeframe" src="https://www.youtube.com/embed/f2A-KR7h-do?si=2Sfl8Kpl_WGLS-yb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Meet the product itself — Altruist Air Quality Bundle: Urban & Insight
 
 A smart air monitor for indoors and outdoors: measure urban air pollutants (PM), outdoor noise, bedroom CO₂, and compare temperature and humidity indoors and outdoors. Dive into weather prediction with a barometric pressure sensor. E-Ink display, Wi-Fi, USB-C, no forced clouds, fully compatible with Home Assistant, open to DIY and modding.
 
 >💥 **Super Early Bird — €149,** July–August on Indiegogo (estimated Amazon price — €295, Fall 2025)! Subscribe to our Indiegogo project page to get notified when the campaign launches — and don’t miss your chance to be one of the first 42 backers to receive a **42% discount**!
-**[Altruist on Indiegogo, join -->](https://www.indiegogo.com/projects/altruist-air-quality-bundle-urban-insight/coming_soon/x/38660721?utm_source=website&utm_medium=blog)**
+**[Altruist on Indiegogo, join -->](https://www.indiegogo.com/projects/altruist-air-quality-bundle-urban-insight/coming_soon/x/38660721#utm_source=website&utm_medium=blog)**
 
 
 ## Key benefits of Altruist [Urban & Insight]
@@ -91,4 +93,4 @@ Thanks to the unique architecture of **sensors.social** and the Altruist device,
 
 Subscribe to our Indiegogo project page to get notified when the campaign launches — and don’t miss your chance to be one of the first 42 backers to receive a **42% discount**!
 
-**Link:** [https://www.indiegogo.com/projects/altruist-air-quality-bundle-urban-insight/coming\_soon](https://www.indiegogo.com/projects/altruist-air-quality-bundle-urban-insight/coming_soon/x/38660721?utm_source=website&utm_medium=blog)   
+**Link:** [https://www.indiegogo.com/projects/altruist-air-quality-bundle-urban-insight/coming\_soon](https://www.indiegogo.com/projects/altruist-air-quality-bundle-urban-insight/coming_soon/x/38660721#utm_source=website&utm_medium=blog)   

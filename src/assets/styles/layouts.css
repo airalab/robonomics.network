@@ -94,10 +94,10 @@
 	  margin-top: 0;
   }
 
- section > h2, section > h3,
+ /* section > h2, section > h3,
 .section > h2, .section > h3 {
 	  margin-top: 0;
-  }
+  } */
 
 
 .section__solid .oldy {
