@@ -2,12 +2,14 @@
 // components import
 import HeaderNav from './HeaderNav.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
+import IndieGoGo from './IndieGoGo.astro';
 
 const {translated = false} = Astro.props;
 ---
 
 <header class="header">
 
+  <IndieGoGo/>
   <div class="header-content">
     <div class="header-logo">
       <a href="/">
