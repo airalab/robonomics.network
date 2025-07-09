@@ -1,0 +1,85 @@
+---
+import { Image } from 'astro:assets';
+
+import indiegogoImg from '../../assets/images/indiegogo.svg';
+---
+
+<div id="header-banner" class="header-banner">
+  <a id="header-banner-link" href="#" target="_blank">
+    <span id="header-banner-label"></span>
+    <Image
+      src={indiegogoImg}
+      alt="Indiegogo"
+      class="header-banner-svg"
+      loading="lazy"
+      width={120}
+      height={32}
+    />
+  </a>
+</div>
+
+<script>
+  const bannerVariants = [
+    {
+      label: "<b>New Altruist</b> [Urban + Insight + Add-ons] on",
+      textKey: "text_a",
+    },
+    {
+      label: "<b>Limited</b> Altruist Bundles on",
+      textKey: "text_b",
+    },
+  ];
+
+  const bannerColors = [
+    { color: "#e51075", colorKey: "color_1" },
+    { color: "#000",    colorKey: "color_2" },
+    { color: "#4b01d4", colorKey: "color_3" },
+  ];
+
+  const v = bannerVariants[Math.floor(Math.random() * bannerVariants.length)];
+  const c = bannerColors[Math.floor(Math.random() * bannerColors.length)];
+
+  const banner = {
+    label: v.label,
+    color: c.color,
+    href:
+      "https://www.indiegogo.com/projects/altruist-air-quality-bundle-urban-insight/coming_soon" +
+      `?utm_source=website&utm_medium=head_banner&utm_content=${v.textKey}_${c.colorKey}`,
+  };
+
+  const root = document.getElementById('header-banner');
+  const label = document.getElementById('header-banner-label');
+  const link = document.getElementById('header-banner-link');
+
+  if (root && label && link) {
+    root.style.backgroundColor = banner.color;
+    label.innerHTML = banner.label;
+    link.href = banner.href;
+  }
+</script>
+
+<style is:global>
+ #header-banner-label b {
+    font-variation-settings: var(--font-flex-extrabold);
+  }
+</style>
+
+<style>
+  .header-banner {
+    padding: calc(var(--space) * 0.3);
+    color: #fff;
+  }
+
+  .header-banner a {
+    width: 100%;
+    color: currentColor;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-banner-svg {
+    padding: 0 5px;
+  }
+</style>
