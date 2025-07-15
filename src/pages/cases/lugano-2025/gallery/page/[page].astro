@@ -1,15 +1,44 @@
 ---
-import Layout from "../../../../../layouts/Layout.astro";
+import Layout  from "../../../../../layouts/Layout.astro";
 import Gallery from "../../../../../components/blocks/Gallery.vue";
 
-export async function getStaticPaths() {
-  const limit = 50;
-  const allFiles = await fetch(`https://media-roseman.robonomics.network/api/files?limit=${limit}`);
- const res = await allFiles.json(); 
-  const result = res.result ?? {};
-  const { totalPages = 0 } = result;
 
-  // Generate paths for pages 2, 3, ...
+export async function getStaticPaths() {
+
+  const fetchJSON = async (url) => {
+  const res = await fetch(url, {
+    headers: { Accept: "application/json" },   
+  });
+
+  if (!res.ok) {
+    console.warn(`[getStaticPaths] ${url} → ${res.status}`);
+    return null;
+  }
+
+  const ctype = res.headers.get("content-type") || "";
+  if (!ctype.includes("application/json")) {
+    console.warn(`[getStaticPaths] ${url} returned ${ctype}`);
+    return null;
+  }
+
+  try {
+    return await res.json();
+  } catch (err) {
+    console.warn(`[getStaticPaths] Could not parse JSON from ${url}`, err);
+    return null;
+  }
+};
+
+  const limit   = 50;
+  const apiURL  = `https://media-roseman.robonomics.network/api/files?limit=${limit}`;
+  const payload = await fetchJSON(apiURL);
+
+  if (!payload?.result?.totalPages || payload.result.totalPages <= 1) {
+    return [];
+  }
+
+  const totalPages = payload.result.totalPages;
+
   return Array.from({ length: totalPages - 1 }, (_, i) => ({
     params: { page: String(i + 2) },
   }));
@@ -17,10 +46,11 @@ export async function getStaticPaths() {
 ---
 
 <Layout
-title={$tr('Photo Gallery for Lugano 2025')} 
-description={$tr('Come get your photo.')}
-pageTitle={$tr('Funny gallery')} 
-backlink={{title: $tr('Decentralized Lugano 2025 Case'), link: '/cases/lugano-2025/', label: $trVue('Go to Decentralized Lugano 2025 Case')}}
+  title={$tr('Photo Gallery for Lugano 2025')}
+  description={$tr('Come get your photo.')}
+  pageTitle={$tr('Funny gallery')}
+  backlink={{title: $tr('Decentralized Lugano 2025 Case'), link: '/cases/lugano-2025/', label: $trVue('Go to Decentralized Lugano 2025 Case'),
+  }}
 >
   <Gallery client:load />
 </Layout>
