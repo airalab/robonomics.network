@@ -24,73 +24,79 @@ const { book, gateway } = Astro.props;
   </div>
 </li>
 
-<script define:vars={{book, gateway}}>
+<script define:vars={{ book, gateway }}>
+  const TIMEOUT_MS = 15_000;       
+  const MAX_CACHE_AGE = 7 * 24 * 3600 * 1_000;   
 
-  // Helper functions
-  const fetchGateway = async (link) => {
+  const fetchGateway = async (url, timeout = TIMEOUT_MS) => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeout);
+
     try {
-      const response = await fetch(link);
-      return response.ok;
-    } catch {
+      const res = await fetch(url, {
+        method: "HEAD",               
+        cache:  "no-store",
+        signal: controller.signal,
+      });
+      return res.ok;
+    } catch {                          
       return false;
+    } finally {
+      clearTimeout(timer);
     }
   };
 
-  const checkLocalStorage = async (item, gateway) => {
-    const isGatewayWorking = await fetchGateway(gateway + item.link);
-    const linkDetails = {
-      link: isGatewayWorking && gateway ? gateway + item.link : item.static,
-      date: new Date().toISOString(),
-    };
-    localStorage.setItem(item.name, JSON.stringify(linkDetails));
-    return linkDetails;
-  };
+  const getFreshCache = (key) => {
+    const raw = localStorage.getItem(key);
+    if (!raw) return null;
 
-  const resolveLinks = async (bookOptions, gateway) => {
-    const booksLinks = {};
-    for (const option of bookOptions) {
-      const storageItem = localStorage.getItem(option.name);
-      if (storageItem) {
-        const cachedBook = JSON.parse(storageItem);
-        const today = new Date();
-        const sevenDaysAgo = new Date(cachedBook.date);
-        sevenDaysAgo.setDate(sevenDaysAgo.getDate() + 7);
-
-        if (today > sevenDaysAgo) {
-          localStorage.removeItem(option.name);
-          booksLinks[option.name] = (await checkLocalStorage(option, gateway)).link;
-        } else {
-          booksLinks[option.name] = cachedBook.link;
-        }
-      } else {
-        booksLinks[option.name] = (await checkLocalStorage(option, gateway)).link;
-      }
+    try {
+      const cached = JSON.parse(raw);
+      const isFresh = Date.now() - Date.parse(cached.date) < MAX_CACHE_AGE;
+      return isFresh ? cached : null;
+    } catch {
+      return null;
     }
-    return booksLinks;
   };
 
-  // Run after page loads
+  const resolveLinks = async (options, gw) => {
+    const entries = await Promise.all(
+      options.map(async (opt) => {
+        const cached = getFreshCache(opt.name);
+        if (cached) return [opt.name, cached.link];
+        const gatewayUrl = gw + opt.link;
+        const ok = await fetchGateway(gatewayUrl);
+        const finalUrl = ok ? gatewayUrl : opt.static;
+        localStorage.setItem(
+          opt.name,
+          JSON.stringify({ link: finalUrl, date: new Date().toISOString() })
+        );
+        return [opt.name, finalUrl];
+      })
+    );
+    return Object.fromEntries(entries);
+  };
+
   document.addEventListener("DOMContentLoaded", async () => {
-    const loading = document.querySelector(`#spinner-${book.id}`);
-    const bookLinksElement = document.querySelector(`#book-options-${book.id}`);
+    const spinner   = document.querySelector(`#spinner-${book.id}`);
+    const linksWrap = document.querySelector(`#book-options-${book.id}`);
 
-    loading.style.display = "block";
+    spinner.style.display = "block";
 
-    // Resolve links after loading
-    const booksLinks = await resolveLinks(book.options, gateway);
+    let links = {};
+    try {
+      links = await resolveLinks(book.options, gateway);
+    } finally {
+      spinner.style.display   = "none";
+      linksWrap.style.display = "block";
+    }
 
-    // Hide loading spinner
-    loading.style.display = "none";
-    bookLinksElement.style.display = "block";
-
-    // Create links dynamically
-    book.options.forEach(option => {
-      const link = booksLinks[option.name] || "#";
-      const anchor = document.createElement("a");
-      anchor.href = link;
-      anchor.innerText = option.text;
-      anchor.setAttribute('target', '_blank')
-      bookLinksElement.appendChild(anchor);
+    book.options.forEach((opt) => {
+      const a = document.createElement("a");
+      a.href        = links[opt.name] || opt.static;
+      a.textContent = opt.text;
+      a.target      = "_blank";
+      linksWrap.appendChild(a);
     });
   });
 </script>
