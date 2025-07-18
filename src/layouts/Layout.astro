@@ -179,7 +179,8 @@ const isHome = Astro.url.pathname === '/';
   .screen {
     position: relative;
     background-color: var(--color-light);
-    padding-top: var(--screen-padding-top);
+    /* padding-top: var(--screen-padding-top); */
+    padding-top: calc(var(--screen-padding-top) + 50px);
     padding-bottom: var(--screen-padding-bottom);
     height: 100vh;
     scrollbar-width: none;
