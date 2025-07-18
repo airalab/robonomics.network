@@ -64,7 +64,7 @@ import Socials from '../blocks/Socials.astro'
       position: fixed;
       right: 0;
       text-align: left;
-      top: var(--screen-padding-top);
+      top: calc(var(--screen-padding-top) + 50px);
       transform: translateX(-20px);
       z-index: 1012;
   }
@@ -173,6 +173,7 @@ import Socials from '../blocks/Socials.astro'
 
       .nav-content {
           height: 100%;
+          top: calc(var(--screen-padding-top) + 90px);
       }
   }
 
