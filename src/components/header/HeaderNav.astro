@@ -64,7 +64,7 @@ import Socials from '../blocks/Socials.astro'
       position: fixed;
       right: 0;
       text-align: left;
-      top: calc(var(--screen-padding-top) + 50px);
+      top: calc(var(--screen-padding-top) + 44px);
       transform: translateX(-20px);
       z-index: 1012;
   }
@@ -173,8 +173,16 @@ import Socials from '../blocks/Socials.astro'
 
       .nav-content {
           height: 100%;
-          top: calc(var(--screen-padding-top) + 90px);
+          top: calc(var(--screen-padding-top) + 44px);
+          /* top: calc(var(--screen-padding-top) + 90px); */
       }
   }
+
+  @media screen and (max-width: 480px) {
+    .nav-content {
+        top: calc(var(--screen-padding-top) + 90px);
+    }
+  }
+
 
 </style>
