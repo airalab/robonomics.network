@@ -8,8 +8,6 @@ import RecommendationItem from '../components/books/RecommendationItem.astro';
 import BooksFooter from '../components/books/BooksFooter.astro';
 import Spinner from '../components/utils/LoaderSpin.vue';
 
-
-
 const books = [
   {
     id:0,
@@ -165,6 +163,7 @@ const books = [
     ]
   }
 ];
+
 const recs = [
   {
     title: $tr('The Nature of the Firm'),
@@ -221,22 +220,29 @@ const gateways = [
   'https://gw.crust-gateway.com/ipfs/',
   'https://gateway.pinata.cloud/ipfs/',
   'https://ipfs.io/ipfs/',
+  'https://hardbin.com/ipfs/',
+  'https://ipfs.eth.aragon.network/ipfs/',
+  'https://nftstorage.link/ipfs/',
+  'https://4everland.io/ipfs/',
+  'https://w3s.link/ipfs/',
+  'https://trustless-gateway.link/ipfs/'
 ];
 
 let bookGateway = null;
 
 try {
-  const res = await pingIPFS(gateways);
-  console.log(res)
-  if (res.ok) {
-    bookGateway = gateway;
-    console.log(res)
+  const result = await pingIPFS(gateways);
+  if (result) {
+    bookGateway = result;
+    console.log("✅ Selected IPFS Gateway:", bookGateway);
+  } else {
+    console.warn("⚠️ No working gateway found via pingIPFS(), using fallback.");
+     bookGateway = 'https://gw.crust-gateway.xyz/ipfs/';
   }
-} catch {
-  bookGateway = 'https://gw.crust-gateway.xyz/ipfs/';
+} catch (err) {
+  console.error("❌ pingIPFS() failed, using fallback gateway. Error:", err);
 }
 
-bookGateway = bookGateway ? bookGateway : 'https://gw.crust-gateway.xyz/ipfs/';
 ---
 
 <Layout
@@ -245,6 +251,7 @@ bookGateway = bookGateway ? bookGateway : 'https://gw.crust-gateway.xyz/ipfs/';
   pageTitle={$tr("Read books")}
 >
 
+<p>Selected IPFS Gateway: {Astro.props.gateway}</p>
   <section class="layout layout__content e-books">
     <div class="layout__text books__abstract">
       <p>{$tr("We think reading books can really open up your mind. Whether it's simple but smart ideas or more complex ones, books are the best way for your brain to soak it all in. You can grab our books for free and check out our list of recommended reads to dive into the exciting world of robotics!")}</p>
