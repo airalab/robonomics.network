@@ -8,34 +8,6 @@ import Youtube from "../components/utils/Youtube.astro";
 import { contacts } from "../data/socials.js";
 
 const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
-
-let deflation = "";
-let circulation = "";
-let ethereum = "";
-let kusama = "";
-let polkadot = "";
-let archive = "";
-
-const response = await fetch("https://xrt-stat.robonomics.network/api/token");
-
-if (response.ok) {
-  const json = await response.json();
-
-  function numberWithSpaces(x) {
-    return parseInt(x / 10 ** 9)
-      .toString()
-      .replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  }
-
-  deflation = json.result.deflation;
-  circulation = numberWithSpaces(json.result.current.sum);
-  ethereum = numberWithSpaces(json.result.current.chains.ethereum.value);
-  kusama = numberWithSpaces(json.result.current.chains.kusama.value);
-  polkadot = numberWithSpaces(json.result.current.chains.polkadot.value);
-  archive = numberWithSpaces(json.result.archive.sum);
-} else {
-  console.log("Ошибка HTTP: " + response.status);
-}
 ---
 
 <Layout
@@ -50,131 +22,206 @@ if (response.ok) {
     </div>
   </section>
 
-  <section class="top-part">
-    <section class="token section__blue section__solid">
-      <div class="layout token__top">
-        <div class="grid-2 token__intro">
-          <div class="token__intro-container">
-            <p>
-              <span class="token__big-text">{$tr('XRT')}</span> {$tr('is the utility token that will make it possible to control IoT devices on top of the Ethereum network and the Robonomics parachain in Polkadot ecosystem.')}
-            </p>
-          </div>
-          <div class="token__intro-container">
-            <p style="font-weight: 200;font-size: 120%;">
-              <b>{$tr('Total supply current:')}</b><br />
-              <b>{circulation} XRT</b><br />
-              Ethereum: <b>{ethereum} XRT</b><br />
-              Polkadot: <b>{polkadot} XRT</b><br />
-              Kusama: <b>{kusama} XRT</b>
-            </p>
-            <p>
-              {$tr('Total supply on 01.01.2024:')}<br />
-              <b>{archive} XRT</b><br />
-              {$tr('Total deflation:')} {deflation}%
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <hr class="no-margins" />
-
-    <section class="xrt-bridge section__solid">
-      <div class="layout grid-2">
-        <div class="xrt-bridge__imgs" aria-hidden="true">
-          <img
-            src="/images/xrt/xrt-bridge-img.webp"
-            aria-hidden="true"
-            alt=""
-          />
-        </div>
-        <div class="xrt-bridge__text token__intro">
+<section class="top-part">
+  <section class="token section__blue section__solid">
+    <div class="layout token__top">
+      <div class="grid-2 token__intro">
+        <div class="token__intro-container">
           <p>
-            <span class="token__big-text">{$tr('The task')}</span> {$tr('of the Robonomics token is to ensure the operation of a decentralized network for the maintenance of Smart Cities and Industry 4.0 in blockchain infrastructure. In order to achieve this goal, the token economy needs to reflect the incentives for the implementation of the network.')}
+            <span class="token__big-text">{$tr('XRT')}</span> {$tr('is the utility token for controlling IoT devices using Ethereum and the Robonomics parachain in the Polkadot ecosystem.')}
           </p>
-          <div class="section-align-right">
-            <RbButton href="https://robonomics.app/">{$tr('Try our Dapp')}</RbButton>
+        </div>
+        <div class="token__intro-container">
+          <div id="xrt-stats">
+            <div id="xrt-loading" class="spinner-container">
+              <div class="spinner"></div>
+              <p>Loading tokenomics...</p>
+            </div>
+
+            <div id="xrt-data" style="display: none;">
+              <p style="font-weight: 200; font-size: 120%;">
+                <b>{$tr('Total supply current:')}</b><br />
+                <b><span id="circulation">...</span> XRT</b><br />
+                Ethereum: <b><span id="ethereum">...</span> XRT</b><br />
+                Polkadot: <b><span id="polkadot">...</span> XRT</b><br />
+                Kusama: <b><span id="kusama">...</span> XRT</b>
+              </p>
+              <p>
+                {$tr('Total supply on 01.01.2024:')}<br />
+                <b><span id="archive">...</span> XRT</b><br />
+                {$tr('Total deflation:')} <span id="deflation">...</span>%
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <hr class="no-margins color-lightgray" />
-
-    <section class="token-additional-info section__solid">
-      <div class="layout token__top">
-        <p class="token-additional-info__txt">
-          <span class="token__big-text">{$tr('In addition')}</span> {$tr('you can operate XRT within blockchains using tools provided by different independent teams in Polkadot (Kusama) and Ethereum communities.')}
-        </p>
-
-        <div class="token-additional-info__wrapper grid-2">
-          <div class="token-additional-info__kusama">
-            <p>
-              {$tr('Within the Kusama network, you have the capability use')} <a
-                class="link-light"
-                href="https://wiki.polkadot.network/docs/learn-xcm-transport"
-                aria-label="check out XCMP"
-                target="_blank">{$tr('XCMP')}</a
-              > {$tr('communication between the Robonomics parachain and other parachains using various decentralized applications (dApps):')}
-            </p>
-            <ul class="list-simple">
-              <li class="bold-text">
-                <a
-                  href="https://apps.moonbeam.network/moonriver/xcm"
-                  target="_blank"
-                  aria-label="check out Moonriver">Moonriver</a
-                >
-              </li>
-              <li class="bold-text">
-                <a
-                  href="https://app.basilisk.cloud/"
-                  target="_blank"
-                  aria-label="check out Basilisk">Basilisk</a
-                >
-              </li>
-              <li class="bold-text">
-                <a
-                  href="https://novawallet.io"
-                  target="_blank"
-                  aria-label="check out nova wallet">Nova Wallet</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="token-additional-info__ethereum">
-            <p>
-              {$tr('Within the Ethereum network you can use decentralized application powered by the')} <a
-                class="bold-text"
-                href="https://app.uniswap.org/"
-                target="_blank"
-                aria-label="check out uniswap">Uniswap</a
-              > {$tr('Protocol.')}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr class="no-margins color-lightgray" />
-
-    <section class="pink-block">
-      <div class="layout token__top">
-        <p class="text-abstract token__text-abstract">
-          <b>{$tr('Be aware of scammers')}</b>{$tr(': please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our')} <a
-            href={twitter[0].link}
-            target="_blank"
-            aria-label="check out our Twitter">{$tr('Twitter')}</a
-          > {$tr('for official updates. Be careful, be safe.')}
-        </p>
-      </div>
-    </section>
+    </div>
   </section>
+
+  <hr class="no-margins" />
+
+  <section class="xrt-section">
+    <div class="layout">
+
+      <h2 class="m-t-0">{$tr("Utility of the Robonomics Token ($XRT)")}</h2>
+
+      <h3 class="text-left">{$tr('What XRT Enables')}</h3>
+      <p>
+        {$tr("XRT allows users to purchase monthly Web3 cloud subscriptions with predictable latency—essential for IoT use cases—which directly fuel its deflationary model. Users can also pay per transaction.")}
+      </p>
+
+      <div class="xrt-box">
+        <p>
+          <b>{$tr('Collators')}</b> {$tr('(who produce blocks) receive small incentives. The Robonomics Rollup now pays monthly for shared security—a shift from the previous annual or biannual model. To cover these costs, the protocol mints new tokens.')}
+        </p>
+      </div>
+
+      <p>
+        {$tr('The combination of protocol-level token issuance and real user demand from IoT subscriptions creates a dynamic, developer-independent market for XRT. This market is crucial for building a globally accessible, decentralized cloud—one that could support every smart home, wearable, or personal robot 🤖.')}
+      </p>
+
+      <div class="xrt-box pink">
+        <p>
+          {$tr('When user activity and subscriptions increase while infrastructure costs remain low')} → <b>{$tr('deflation')}</b>.  
+          {$tr('When usage drops and costs rise')} → <b>{$tr('inflation')}</b>.  
+          {$tr('This mechanism maintains a stable and economically balanced system.')}
+        </p>
+      </div>
+
+      <p>
+        {$tr('This is also why Robonomics doesn’t use staking—cybersecurity is handled by Polkadot validators, who are paid directly.')}
+      </p>
+
+      <h3 class="text-left">{$tr('XRT Token Lifecycle in Robonomics')}</h3>
+
+      <figure class="xrt-image">
+        <img src="/images/xrt/xrt-scheme.webp" alt="Robonomics token lifecycle scheme" />
+        <figcaption>{$tr('Robonomics #parachain token lifecycle in Kusama network')}</figcaption>
+      </figure>
+
+      <h3 class="text-left">{$tr('Transaction Logic & Subscription Model')}</h3>
+
+      <ul class="space-b-2">
+        <li>{$tr('XRT can be used to pay one-time fees for transactions (launch, liability, datalog, digitalTwins).')}</li>
+        <li>{$tr('Fees are split 50/50 between the parachain treasury and the block-producing collator.')}</li>
+        <li>{$tr('Users can activate subscriptions, granting priority transaction processing over one-time payers.')}</li>
+        <li>{$tr('Subscriptions are ideal for users needing predictable latency close to one block period.')}</li>
+        <li>{$tr('Subscription fees are set via an ultra-fast auction (~10 blocks or ~1–2 minutes).')}</li>
+        <li>{$tr('Winning subscription fees are burned, reducing total supply.')}</li>
+      </ul>
+
+      <div class="xrt-box">
+        <h4 class="no-mt space-b-05">{$tr('Balanced Tokenomics')}</h4>
+        <p>{$tr('Robonomics maintains balance through:')}</p>
+        <ul class="space-t-05">
+          <li><b>{$tr('Inflation')}</b> {$tr('occurs if lease costs exceed demand.')}</li>
+          <li><b>{$tr('Deflation')}</b> {$tr('happens when subscription usage outweighs lease costs.')}</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="no-margins" />
+
+  <section class="xrt-bridge section__solid">
+    <div class="layout grid-2">
+      <div class="xrt-bridge__imgs" aria-hidden="true">
+        <img
+          src="/images/xrt/xrt-bridge-img.webp"
+          aria-hidden="true"
+          alt=""
+        />
+      </div>
+      <div class="xrt-bridge__text token__intro">
+        <p>
+          <span class="token__big-text">{$tr('The task')}</span> {$tr('of the Robonomics token is to ensure the operation of a decentralized network for Smart Cities and Industry 4.0 maintenance on blockchain infrastructure. To achieve this, the tokenomics must reflect incentives for network implementation.')}
+        </p>
+        <div class="section-align-right">
+          <RbButton href="https://robonomics.app/">{$tr('Try our Dapp')}</RbButton>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="no-margins color-lightgray" />
+
+  <section class="token-additional-info section__solid">
+    <div class="layout token__top">
+      <p class="token-additional-info__txt">
+        <span class="token__big-text">{$tr('In addition')}</span> {$tr('you can operate XRT within blockchains using tools provided by independent teams in the Polkadot (Kusama) and Ethereum ecosystems.')}
+      </p>
+
+      <div class="token-additional-info__wrapper grid-2">
+        <div class="token-additional-info__kusama">
+          <p>
+            {$tr('Within the Kusama network, you can use')} <a
+              class="link-light"
+              href="https://wiki.polkadot.network/docs/learn-xcm-transport"
+              aria-label="check out XCMP"
+              target="_blank">{$tr('XCMP')}</a
+            > {$tr('communication between the Robonomics parachain and other parachains, enabling various decentralized applications (dApps):')}
+          </p>
+          <ul class="list-simple">
+            <li class="bold-text">
+              <a
+                href="https://apps.moonbeam.network/moonriver/xcm"
+                target="_blank"
+                aria-label="check out Moonriver">Moonriver</a
+              >
+            </li>
+            <li class="bold-text">
+              <a
+                href="https://app.basilisk.cloud/"
+                target="_blank"
+                aria-label="check out Basilisk">Basilisk</a
+              >
+            </li>
+            <li class="bold-text">
+              <a
+                href="https://novawallet.io"
+                target="_blank"
+                aria-label="check out nova wallet">Nova Wallet</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="token-additional-info__ethereum">
+          <p>
+            {$tr('Within the Ethereum network, you can use decentralized applications powered by the')} <a
+              class="bold-text"
+              href="https://app.uniswap.org/"
+              target="_blank"
+              aria-label="check out uniswap">Uniswap</a
+            > {$tr('Protocol.')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="no-margins color-lightgray" />
+
+  <section class="pink-block">
+    <div class="layout token__top">
+      <p class="text-abstract token__text-abstract">
+        <b>{$tr('Be aware of scammers')}</b>{$tr(': please use only well-known markets to exchange XRT. Do not send your tokens to accounts given to you in private messages, regardless of the transaction type (buy or sell). If you receive any suspicious “airdrops” or loud statements about Robonomics tokens, please verify updates on our')} <a
+          href={twitter[0].link}
+          target="_blank"
+          aria-label="check out our Twitter">{$tr('Twitter')}</a
+        > {$tr('or official website (https://robonomics.network/). Be careful, be safe.')}
+      </p>
+    </div>
+  </section>
+</section>
 
   <section class="layout layout__content xrt-ethereum">
     <h2>{$tr('XRT in Ethereum')}</h2>
 
     <section>
       <p>
-        {$tr("Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. We needed to think about the lifecycle of each individual smart device’s liability to perform a service. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with a significant improvements in Ethereum.")}
+        {$tr("Implementing Robonomics project in 2015 - 2018, the project team needed to find a connection between the provision of a useful function by Robonomics Network, namely the launch of IoT devices according to the robot-as-a-service model, and the reimbursement of the costs to Robonomics providers for gas fees in Ethereum. As a result of the early R&D in Robonomics, the team came up with a mechanism for mining new tokens to reward each created robot-as-a-service smart contract. This model remains viable for future of Robonomics on Ethereum, but only with significant improvements in Ethereum.")}
       </p>
     </section>
 
@@ -225,7 +272,6 @@ if (response.ok) {
 
   <section class="layout layout__content xrt-polkadot">
     <h2>{$tr('XRT In Polkadot')}</h2>
-
     <section>
       <p class="xrt-polkadot__text">
         {$tr('Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.')}
@@ -238,6 +284,17 @@ if (response.ok) {
           aria-label="learn more in this twitter thread">{$tr('Learn more')}</a
         > {$tr('in Twitter thread from our network architect.')}
       </p>
+
+      <h3 class="text-left">{$tr('Key Mechanics in the Polkadot Ecosystem:')}</h3>
+
+        <ul>
+          <li>{$tr('Parachains (like Robonomics) are full blockchains that lease slots on Polkadot.')}</li>
+          <li>{$tr('Lease renewal costs are tied to user activity (like IoT device launches).')}</li>
+          <li>{$tr('Annual rewards are distributed for crowdloan participants.')}</li>
+          <li>{$tr('Parachain parameters are auto-calculated to offer fair incentives compared to staking in the Relay Chain.')}</li>
+          <li>{$tr('Small XRT rewards are issued to incentivize collators, with amounts governed by token holder referenda.')}</li>
+          <li>{$tr('Total XRT emission ensures sustainable parachain leasing and active block production.')}</li>
+        </ul>
 
       <div class="xrt-polkadot__info">
         <h3 class="token__subtitle">{$tr('Usage:')}</h3>
@@ -316,7 +373,7 @@ if (response.ok) {
     <div class="xrt-polkadot__info">
       <h3 class="token__subtitle">{$tr('What is AIRA/AIR ID?')}</h3>
       <p>
-        {$tr('Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens was connected to created infrastructure of the project through')} <a
+        {$tr('Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens were connected to created infrastructure of the project through')} <a
           href="https://github.com/airalab/robonomics_contracts/blob/master/contracts/misc/AbstractAmbix.sol"
           target="_blank"
           aria-label="check out ambix smart contract">{$tr('ambix smart contract')}</a
@@ -326,7 +383,66 @@ if (response.ok) {
   </section>
 </Layout>
 
+<script>
+ function formatXRT(value) {
+    return parseInt(value / 1e9).toLocaleString("en-US").replace(/,/g, " ");
+  }
+
+  async function loadTokenData() {
+    try {
+      const res = await fetch("https://xrt-stat.robonomics.network/api/token");
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      const { result } = await res.json();
+
+      document.getElementById("deflation").textContent = result.deflation;
+      document.getElementById("circulation").textContent = formatXRT(result.current.sum);
+      document.getElementById("ethereum").textContent = formatXRT(result.current.chains.ethereum.value);
+      document.getElementById("kusama").textContent = formatXRT(result.current.chains.kusama.value);
+      document.getElementById("polkadot").textContent = formatXRT(result.current.chains.polkadot.value);
+      document.getElementById("archive").textContent = formatXRT(result.archive.sum);
+
+      document.getElementById("xrt-loading").style.display = "none";
+      document.getElementById("xrt-data").style.display = "block";
+    } catch (err) {
+      console.error("Failed to fetch token data:", err);
+      document.getElementById("xrt-loading").textContent = "Failed to load data.";
+    }
+  }
+
+  loadTokenData();
+</script>
+
+
 <style>
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .spinner-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .spinner {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   .top-part {
     position: relative;
     overflow: hidden;
@@ -365,6 +481,46 @@ if (response.ok) {
     display: none;
     max-width: 200px;
     margin: 0 auto;
+  }
+
+  .xrt-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 3rem;
+  }
+
+  .xrt-section h3 {
+    margin-bottom: calc(var(--space) * 0.5)
+  }
+
+  .xrt-section p {
+    margin-bottom: 1rem;
+  }
+
+  .xrt-box {
+    background-color: #f5f8ff;
+    border-left: 4px solid var(--color-blue);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 6px;
+  }
+
+  .xrt-box.pink {
+    background-color: #ffeef4;
+    border-left-color: #ee005b;
+  }
+
+  .xrt-image {
+    text-align: center;
+    font-style: italic;
+    margin: 2rem 0;
+    color: #444444;
+  }
+
+  .xrt-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   }
 
   .token__intro {
@@ -409,6 +565,7 @@ if (response.ok) {
     font-size: 218%;
     line-height: 0;
   }
+
 
   .token-additional-info {
     padding-bottom: calc(var(--space) * 1.5);

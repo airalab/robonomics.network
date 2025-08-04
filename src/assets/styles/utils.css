@@ -298,6 +298,10 @@ background: transparent; /* Optional: make buttons invisible if you want */
   margin-bottom: calc(var(--space) * 2);
 }
 
+.space-t-05 {
+  margin-top: calc(var(--space) * 0.5);
+}
+
 .no-mt {
   margin-top: 0;
 }
