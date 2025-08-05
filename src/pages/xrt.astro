@@ -17,7 +17,7 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
   pageImageHeight="650"
 >
   <section class="section__blue section__title-with-bg">
-    <div class="token__main-title title-with-bg">
+    <div class="title-with-bg">
       <h1><span>{$tr('Robonomics tokenomics')}</span></h1>
     </div>
   </section>
@@ -27,13 +27,12 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
   <section class="token section__blue section__solid">
     <div class="layout token__top">
       <div class="grid-2 token__intro">
-        <div class="token__intro-container">
+        <div>
           <p>
             <span class="token__big-text">{$tr('XRT')}</span> {$tr('is the utility token for controlling IoT devices using Ethereum and the Robonomics parachain in the Polkadot ecosystem.')}
           </p>
         </div>
-        <div class="token__intro-container">
-          <div id="xrt-stats">
+                  <div id="xrt-stats">
             <div id="xrt-loading" class="spinner-container">
               <div class="spinner"></div>
               <p>Loading tokenomics...</p>
@@ -54,7 +53,6 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
               </p>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </section>
@@ -64,14 +62,14 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
   <section class="xrt-section">
     <div class="layout">
 
-      <h2 class="m-t-0">{$tr("Utility of the Robonomics Token ($XRT)")}</h2>
+      <h2 class="m-t-0">{$tr("Utility of the Robonomics Token ($XRT) in Polkadot")}</h2>
 
-      <h3 class="text-left">{$tr('What XRT Enables')}</h3>
+      <h3 class="title-lined"><span>{$tr("What XRT Enables")}</span></h3>
       <p>
         {$tr("XRT allows users to purchase monthly Web3 cloud subscriptions with predictable latency—essential for IoT use cases—which directly fuel its deflationary model. Users can also pay per transaction.")}
       </p>
 
-      <div class="xrt-box">
+      <div class="oldy space-b">
         <p>
           <b>{$tr('Collators')}</b> {$tr('(who produce blocks) receive small incentives. The Robonomics Rollup now pays monthly for shared security—a shift from the previous annual or biannual model. To cover these costs, the protocol mints new tokens.')}
         </p>
@@ -81,26 +79,26 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
         {$tr('The combination of protocol-level token issuance and real user demand from IoT subscriptions creates a dynamic, developer-independent market for XRT. This market is crucial for building a globally accessible, decentralized cloud—one that could support every smart home, wearable, or personal robot 🤖.')}
       </p>
 
-      <div class="xrt-box pink">
-        <p>
-          {$tr('When user activity and subscriptions increase while infrastructure costs remain low')} → <b>{$tr('deflation')}</b>.  
-          {$tr('When usage drops and costs rise')} → <b>{$tr('inflation')}</b>.  
-          {$tr('This mechanism maintains a stable and economically balanced system.')}
-        </p>
-      </div>
+     
+      <p>
+        {$tr('When user activity and subscriptions increase while infrastructure costs remain low')} → <b>{$tr('deflation')}</b>.  
+        {$tr('When usage drops and costs rise')} → <b>{$tr('inflation')}</b>.  
+        {$tr('This mechanism maintains a stable and economically balanced system.')}
+      </p>
 
       <p>
         {$tr('This is also why Robonomics doesn’t use staking—cybersecurity is handled by Polkadot validators, who are paid directly.')}
       </p>
 
-      <h3 class="text-left">{$tr('XRT Token Lifecycle in Robonomics')}</h3>
+       <h3 class="title-lined"><span>{$tr("XRT Token Lifecycle in Robonomics")}</span></h3>
 
       <figure class="xrt-image">
         <img src="/images/xrt/xrt-scheme.webp" alt="Robonomics token lifecycle scheme" />
         <figcaption>{$tr('Robonomics #parachain token lifecycle in Kusama network')}</figcaption>
       </figure>
 
-      <h3 class="text-left">{$tr('Transaction Logic & Subscription Model')}</h3>
+      <h3 class="title-lined"><span>{$tr("Transaction Logic & Subscription Model")}</span></h3>
+      
 
       <ul class="space-b-2">
         <li>{$tr('XRT can be used to pay one-time fees for transactions (launch, liability, datalog, digitalTwins).')}</li>
@@ -111,14 +109,12 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
         <li>{$tr('Winning subscription fees are burned, reducing total supply.')}</li>
       </ul>
 
-      <div class="xrt-box">
-        <h4 class="no-mt space-b-05">{$tr('Balanced Tokenomics')}</h4>
-        <p>{$tr('Robonomics maintains balance through:')}</p>
-        <ul class="space-t-05">
-          <li><b>{$tr('Inflation')}</b> {$tr('occurs if lease costs exceed demand.')}</li>
-          <li><b>{$tr('Deflation')}</b> {$tr('happens when subscription usage outweighs lease costs.')}</li>
-        </ul>
-      </div>
+       <h4 class="title-lined"><span>{$tr("Balanced Tokenomics")}</span></h4>
+      <p>{$tr('Robonomics maintains balance through:')}</p>
+      <ul class="space-t-05">
+        <li><b>{$tr('Inflation')}</b> {$tr('occurs if lease costs exceed demand.')}</li>
+        <li><b>{$tr('Deflation')}</b> {$tr('happens when subscription usage outweighs lease costs.')}</li>
+      </ul>
 
     </div>
   </section>
@@ -150,35 +146,27 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
   <section class="token-additional-info section__solid">
     <div class="layout token__top">
       <p class="token-additional-info__txt">
-        <span class="token__big-text">{$tr('In addition')}</span> {$tr('you can operate XRT within blockchains using tools provided by independent teams in the Polkadot (Kusama) and Ethereum ecosystems.')}
+        {$tr('You can operate XRT within blockchains using tools provided by independent teams in the Polkadot (Kusama) and Ethereum ecosystems.')}
       </p>
 
       <div class="token-additional-info__wrapper grid-2">
         <div class="token-additional-info__kusama">
           <p>
             {$tr('Within the Kusama network, you can use')} <a
-              class="link-light"
               href="https://wiki.polkadot.network/docs/learn-xcm-transport"
               aria-label="check out XCMP"
               target="_blank">{$tr('XCMP')}</a
             > {$tr('communication between the Robonomics parachain and other parachains, enabling various decentralized applications (dApps):')}
           </p>
           <ul class="list-simple">
-            <li class="bold-text">
-              <a
-                href="https://apps.moonbeam.network/moonriver/xcm"
-                target="_blank"
-                aria-label="check out Moonriver">Moonriver</a
-              >
-            </li>
-            <li class="bold-text">
+            <li>
               <a
                 href="https://app.basilisk.cloud/"
                 target="_blank"
                 aria-label="check out Basilisk">Basilisk</a
               >
             </li>
-            <li class="bold-text">
+            <li>
               <a
                 href="https://novawallet.io"
                 target="_blank"
@@ -190,8 +178,7 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
         <div class="token-additional-info__ethereum">
           <p>
             {$tr('Within the Ethereum network, you can use decentralized applications powered by the')} <a
-              class="bold-text"
-              href="https://app.uniswap.org/"
+              href="https://app.uniswap.org/#/swap?inputCurrency=0x7de91b204c1c737bcee6f000aaa6569cf7061cb7&outputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
               target="_blank"
               aria-label="check out uniswap">Uniswap</a
             > {$tr('Protocol.')}
@@ -273,11 +260,11 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
   <section class="layout layout__content xrt-polkadot">
     <h2>{$tr('XRT In Polkadot')}</h2>
     <section>
-      <p class="xrt-polkadot__text">
+      <p>
         {$tr('Moving from Ethereum to Polkadot, we need to do a “scaling up” in tokenomics. Parachains in the Polkadot ecosystem are not the equivalent of a smart contract, but are a fully programmable blockchain that leases a segment of the overall network.')}
       </p>
 
-      <p class="xrt-polkadot__text">
+      <p>
         {$tr('The actual payment on the part of Polkadot and Kusama parachains is long-term bonding of native Relay chain tokens (DOT / KSM) in sufficient quantity to win one of the auctions. The XRT in the Robonomics parachain supports slot renewal and rewards for stakeholders. The XRT burning mechanism underlying the activation of IoT subscriptions is designed to reduce inflation to a minimum, and in case of increased interest to zero.')}<a
           href="https://twitter.com/EnsRationis/status/1607327921793892354"
           target="_blank"
@@ -489,8 +476,8 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
     padding-top: 3rem;
   }
 
-  .xrt-section h3 {
-    margin-bottom: calc(var(--space) * 0.5)
+  .xrt-section h3, .xrt-section h4{
+    font-variation-settings: var(--font-flex-medium);
   }
 
   .xrt-section p {
@@ -848,11 +835,6 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
   }
 
   @media screen and (max-width: 1130px) {
-    .token__intro {
-      grid-template-columns: minmax(0, 1fr);
-      gap: calc(var(--space) * 2);
-    }
-
     .token__intro p {
       margin-right: 0;
       padding-bottom: 0;
@@ -929,11 +911,14 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
     }
   }
 
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 720px) {
     .token__intro {
+      grid-template-columns: minmax(0, 1fr);
       gap: var(--space);
     }
+  }
 
+  @media screen and (max-width: 580px) {
     .xrt-bridge__img-2 {
       display: none;
     }

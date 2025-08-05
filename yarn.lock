@@ -3276,6 +3276,11 @@ inline-style-parser@0.2.4:
   resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.2.4.tgz#f4af5fe72e612839fcd453d989a586566d695f22"
   integrity sha512-0aO8FkhNZlj/ZIbNi7Lxxr12obT7cL1moPfE4tg1LkX7LlLfC6DeX4l2ZEud1ukP9jNQyNnfzQVqwbwmAATY4Q==
 
+ipfs-smart-gateway@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ipfs-smart-gateway/-/ipfs-smart-gateway-1.0.11.tgz#c6872481d6fe69db84665a325ed99d967acf1f9c"
+  integrity sha512-8EhJSgRR/kwk4vulZ8ubyglFOKACqG70cLgA7YMH7SjNiN/lkIbge+B/qTQFZjE+b2c9uuIbj6oVQbQ6RDBtDA==
+
 iron-webcrypto@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/iron-webcrypto/-/iron-webcrypto-1.2.1.tgz#aa60ff2aa10550630f4c0b11fd2442becdb35a6f"
@@ -4507,11 +4512,6 @@ pify@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-5.0.0.tgz#1f5eca3f5e87ebec28cc6d54a0e4aaf00acc127f"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
-
-ping-ipfs-gateway@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ping-ipfs-gateway/-/ping-ipfs-gateway-1.0.1.tgz#0ef544d37eba1e3407864a47e9f37da01fda48a8"
-  integrity sha512-VxAwN+Dv1tvSp5L7C4j+BYvJqrmDxzFZ9yAvQbxsFWlHwmKUFJ1N11qrifAnpJCuAzCtjOrWW8H7i3ZbmKqJ7g==
 
 postcss@^8.4.48, postcss@^8.5.3:
   version "8.5.3"

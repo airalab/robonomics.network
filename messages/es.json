@@ -813,7 +813,6 @@
 	"Total_deflation_": "Deflación total:",
 	"The_task": "La tarea",
 	"Try_our_Dapp": "Prueba nuestra Dapp",
-	"In_addition": "Además",
 	"XCMP": "XCMP",
 	"Protocol_": "Protocol.",
 	"Be_aware_of_scammers": "Ten cuidado con los estafadores",
@@ -1330,7 +1329,6 @@
 	"USB_C_port_for_firmware_development_and_updates": "Puerto USB-C para desarrollo y actualizaciones de firmware",
 	"Logos___Brand": "Logos y Marca",
 	"is_the_utility_token_for_controlling_IoT_devices_using_Ethereum_and_the_Robonomics_parachain_in_the_Polkadot_ecosystem_": "es el token de utilidad para controlar dispositivos IoT usando Ethereum y la parachain Robonomics en el ecosistema Polkadot",
-	"Utility_of_the_Robonomics_Token___XRT_": "Utilidad del Robonomics Token ($XRT)",
 	"What_XRT_Enables": "Lo que permite XRT",
 	"XRT_allows_users_to_purchase_monthly_Web3_cloud_subscriptions_with_predictable_latency_essential_for_IoT_use_cases_which_directly_fuel_its_deflationary_model__Users_can_also_pay_per_transaction_": "XRT permite a los usuarios comprar suscripciones mensuales de nube Web3 con latencia predecible esencial para casos de uso de IoT lo que alimenta directamente su modelo deflacionario Los usuarios también pueden pagar por transacción",
 	"Collators": "Coladores",
@@ -1358,7 +1356,6 @@
 	"Deflation": "Deflación",
 	"happens_when_subscription_usage_outweighs_lease_costs_": "ocurre cuando el uso de la suscripción supera los costos de arrendamiento",
 	"of_the_Robonomics_token_is_to_ensure_the_operation_of_a_decentralized_network_for_Smart_Cities_and_Industry_4_0_maintenance_on_blockchain_infrastructure__To_achieve_this__the_tokenomics_must_reflect_incentives_for_network_implementation_": "del token Robonomics es garantizar el funcionamiento de una red descentralizada para el mantenimiento de Ciudades Inteligentes e Industria 4.0 sobre infraestructura blockchain Para lograr esto la tokenómica debe reflejar incentivos para la implementación de la red",
-	"you_can_operate_XRT_within_blockchains_using_tools_provided_by_independent_teams_in_the_Polkadot__Kusama__and_Ethereum_ecosystems_": "puedes operar XRT dentro de blockchains usando herramientas proporcionadas por equipos independientes en los ecosistemas de Polkadot Kusama y Ethereum",
 	"Within_the_Kusama_network__you_can_use": "Dentro de la red Kusama puedes usar",
 	"communication_between_the_Robonomics_parachain_and_other_parachains__enabling_various_decentralized_applications__dApps__": "comunicacion entre la Robonomics parachain y otras parachains habilitando varias aplicaciones descentralizadas dApps",
 	"Within_the_Ethereum_network__you_can_use_decentralized_applications_powered_by_the": "Dentro de la red de Ethereum puedes usar aplicaciones descentralizadas impulsadas por la",
@@ -1372,5 +1369,7 @@
 	"Parachain_parameters_are_auto_calculated_to_offer_fair_incentives_compared_to_staking_in_the_Relay_Chain_": "Los parámetros de Parachain se calculan automáticamente para ofrecer incentivos justos en comparación con el staking en la Relay Chain",
 	"Small_XRT_rewards_are_issued_to_incentivize_collators__with_amounts_governed_by_token_holder_referenda_": "Pequeñas recompensas XRT se otorgan para incentivar a los validadores con montos gobernados por referendos de los poseedores de tokens",
 	"Total_XRT_emission_ensures_sustainable_parachain_leasing_and_active_block_production_": "La emisión total de XRT garantiza el arrendamiento sostenible de parachain y la producción activa de bloques",
-	"Pre_XRT_token_distributed_in_2017_as_a_autonomous_part_of_futher_Robonomics_infrastructure_on_Ethereum__After_successful_launch_of_Robonomics_over_Ethereum_in_2019_AIRA_tokens_were_connected_to_created_infrastructure_of_the_project_through": "Pre-XRT token distribuido en 2017 como una parte autónoma de la futura infraestructura de Robonomics en Ethereum Después del exitoso lanzamiento de Robonomics sobre Ethereum en 2019 los tokens AIRA fueron conectados a la infraestructura creada del proyecto a través de"
+	"Pre_XRT_token_distributed_in_2017_as_a_autonomous_part_of_futher_Robonomics_infrastructure_on_Ethereum__After_successful_launch_of_Robonomics_over_Ethereum_in_2019_AIRA_tokens_were_connected_to_created_infrastructure_of_the_project_through": "Pre-XRT token distribuido en 2017 como una parte autónoma de la futura infraestructura de Robonomics en Ethereum Después del exitoso lanzamiento de Robonomics sobre Ethereum en 2019 los tokens AIRA fueron conectados a la infraestructura creada del proyecto a través de",
+	"Utility_of_the_Robonomics_Token___XRT__in_Polkadot": "Utilidad del Robonomics Token ($XRT) en Polkadot",
+	"You_can_operate_XRT_within_blockchains_using_tools_provided_by_independent_teams_in_the_Polkadot__Kusama__and_Ethereum_ecosystems_": "Puedes operar XRT dentro de blockchains usando herramientas proporcionadas por equipos independientes en los ecosistemas de Polkadot Kusama y Ethereum"
 }

@@ -813,7 +813,6 @@
 	"Total_deflation_": "总通货紧缩:",
 	"The_task": "任务",
 	"Try_our_Dapp": "尝试我们的 Dapp",
-	"In_addition": "此外",
 	"XCMP": "XCMP",
 	"Protocol_": "协议",
 	"Be_aware_of_scammers": "小心骗子",
@@ -1330,7 +1329,6 @@
 	"USB_C_port_for_firmware_development_and_updates": "用于固件开发和更新的USB-C端口",
 	"Logos___Brand": "标志与品牌",
 	"is_the_utility_token_for_controlling_IoT_devices_using_Ethereum_and_the_Robonomics_parachain_in_the_Polkadot_ecosystem_": "是在Polkadot生态系统中使用以太坊和Robonomics平行链控制物联网设备的实用代币",
-	"Utility_of_the_Robonomics_Token___XRT_": "Robonomics 代币 ($XRT) 的实用性",
 	"What_XRT_Enables": "XRT的功能",
 	"XRT_allows_users_to_purchase_monthly_Web3_cloud_subscriptions_with_predictable_latency_essential_for_IoT_use_cases_which_directly_fuel_its_deflationary_model__Users_can_also_pay_per_transaction_": "XRT允许用户以可预测的延迟购买每月Web3云订阅这对于物联网用例至关重要并直接推动其通缩模型用户也可以按交易付费",
 	"Collators": "整理者",
@@ -1358,7 +1356,6 @@
 	"Deflation": "通货紧缩",
 	"happens_when_subscription_usage_outweighs_lease_costs_": "当订阅使用量超过租赁成本时",
 	"of_the_Robonomics_token_is_to_ensure_the_operation_of_a_decentralized_network_for_Smart_Cities_and_Industry_4_0_maintenance_on_blockchain_infrastructure__To_achieve_this__the_tokenomics_must_reflect_incentives_for_network_implementation_": "Robonomics 代币的目的是确保在区块链基础设施上为智慧城市和工业4.0的维护运营去中心化网络。为实现这一目标代币经济学必须反映出对网络实施的激励措施",
-	"you_can_operate_XRT_within_blockchains_using_tools_provided_by_independent_teams_in_the_Polkadot__Kusama__and_Ethereum_ecosystems_": "你可以在区块链中使用由Polkadot（Kusama）和Ethereum生态系统中的独立团队提供的工具来操作XRT",
 	"Within_the_Kusama_network__you_can_use": "在Kusama网络中你可以使用",
 	"communication_between_the_Robonomics_parachain_and_other_parachains__enabling_various_decentralized_applications__dApps__": "Robonomics平行链与其他平行链之间的通信实现各种去中心化应用dApps",
 	"Within_the_Ethereum_network__you_can_use_decentralized_applications_powered_by_the": "在以太坊网络中你可以使用由",
@@ -1372,5 +1369,7 @@
 	"Parachain_parameters_are_auto_calculated_to_offer_fair_incentives_compared_to_staking_in_the_Relay_Chain_": "Parachain参数是自动计算的以提供与在中继链质押相比公平的激励",
 	"Small_XRT_rewards_are_issued_to_incentivize_collators__with_amounts_governed_by_token_holder_referenda_": "发放少量XRT奖励以激励collators，奖励数量由代币持有者公投决定",
 	"Total_XRT_emission_ensures_sustainable_parachain_leasing_and_active_block_production_": "总XRT发行确保可持续的平行链租赁和活跃的区块生产",
-	"Pre_XRT_token_distributed_in_2017_as_a_autonomous_part_of_futher_Robonomics_infrastructure_on_Ethereum__After_successful_launch_of_Robonomics_over_Ethereum_in_2019_AIRA_tokens_were_connected_to_created_infrastructure_of_the_project_through": "Pre-XRT 代币于 2017 年作为 Robonomics 在以太坊上进一步基础设施的自主部分分发 在 2019 年 Robonomics 成功在以太坊上线后 AIRA 代币通过项目创建的基础设施被连接"
+	"Pre_XRT_token_distributed_in_2017_as_a_autonomous_part_of_futher_Robonomics_infrastructure_on_Ethereum__After_successful_launch_of_Robonomics_over_Ethereum_in_2019_AIRA_tokens_were_connected_to_created_infrastructure_of_the_project_through": "Pre-XRT 代币于 2017 年作为 Robonomics 在以太坊上进一步基础设施的自主部分分发 在 2019 年 Robonomics 成功在以太坊上线后 AIRA 代币通过项目创建的基础设施被连接",
+	"Utility_of_the_Robonomics_Token___XRT__in_Polkadot": "Robonomics Token（$XRT）在Polkadot中的用途",
+	"You_can_operate_XRT_within_blockchains_using_tools_provided_by_independent_teams_in_the_Polkadot__Kusama__and_Ethereum_ecosystems_": "你可以在区块链中使用由Polkadot（Kusama）和以太坊生态系统中的独立团队提供的工具来操作XRT"
 }

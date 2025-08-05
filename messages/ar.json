@@ -813,7 +813,6 @@
 	"Total_deflation_": "انكماش كلي:",
 	"The_task": "المهمة",
 	"Try_our_Dapp": "جرب تطبيقنا",
-	"In_addition": "بالإضافة",
 	"XCMP": "XCMP",
 	"Protocol_": "بروتوكول",
 	"Be_aware_of_scammers": "كن حذرًا من النصابين",
@@ -1330,7 +1329,6 @@
 	"USB_C_port_for_firmware_development_and_updates": "منفذ USB-C لتطوير البرامج الثابتة والتحديثات",
 	"Logos___Brand": "شعارات و علامة تجارية",
 	"is_the_utility_token_for_controlling_IoT_devices_using_Ethereum_and_the_Robonomics_parachain_in_the_Polkadot_ecosystem_": "هو رمز المنفعة للتحكم في أجهزة إنترنت الأشياء باستخدام إيثيريوم و روبونوميكس باراشين في نظام بولكادوت البيئي",
-	"Utility_of_the_Robonomics_Token___XRT_": "فائدة رمز Robonomics XRT",
 	"What_XRT_Enables": "ما الذي تمكّنه XRT",
 	"XRT_allows_users_to_purchase_monthly_Web3_cloud_subscriptions_with_predictable_latency_essential_for_IoT_use_cases_which_directly_fuel_its_deflationary_model__Users_can_also_pay_per_transaction_": "تتيح XRT للمستخدمين شراء اشتراكات سحابية Web3 شهرية بزمن استجابة متوقع وهو أمر أساسي لحالات استخدام إنترنت الأشياء مما يغذي نموذجها الانكماشي مباشرة يمكن للمستخدمين أيضًا الدفع لكل معاملة",
 	"Collators": "جامعو البيانات",
@@ -1358,7 +1356,6 @@
 	"Deflation": "Deflation",
 	"happens_when_subscription_usage_outweighs_lease_costs_": "يحدث عندما تتجاوز استخدامات الاشتراك تكاليف الإيجار",
 	"of_the_Robonomics_token_is_to_ensure_the_operation_of_a_decentralized_network_for_Smart_Cities_and_Industry_4_0_maintenance_on_blockchain_infrastructure__To_achieve_this__the_tokenomics_must_reflect_incentives_for_network_implementation_": "الغرض من Robonomics token هو ضمان تشغيل شبكة لامركزية لمدن ذكية وصيانة الصناعة 40 على بنية تحتية للبلوكشين لتحقيق ذلك يجب أن تعكس tokenomics الحوافز لتنفيذ الشبكة",
-	"you_can_operate_XRT_within_blockchains_using_tools_provided_by_independent_teams_in_the_Polkadot__Kusama__and_Ethereum_ecosystems_": "يمكنك تشغيل XRT ضمن سلاسل الكتل باستخدام الأدوات التي توفرها الفرق المستقلة في أنظمة Polkadot Kusama و Ethereum البيئية",
 	"Within_the_Kusama_network__you_can_use": "ضمن شبكة Kusama يمكنك استخدام",
 	"communication_between_the_Robonomics_parachain_and_other_parachains__enabling_various_decentralized_applications__dApps__": "الاتصال بين Robonomics parachain و parachains الأخرى مما يتيح تطبيقات لامركزية متنوعة dApps",
 	"Within_the_Ethereum_network__you_can_use_decentralized_applications_powered_by_the": "ضمن شبكة Ethereum يمكنك استخدام التطبيقات اللامركزية المدعومة بواسطة ال",
@@ -1372,5 +1369,7 @@
 	"Parachain_parameters_are_auto_calculated_to_offer_fair_incentives_compared_to_staking_in_the_Relay_Chain_": "يتم حساب معلمات Parachain تلقائيًا لتقديم حوافز عادلة مقارنة بالتخزين في Relay Chain",
 	"Small_XRT_rewards_are_issued_to_incentivize_collators__with_amounts_governed_by_token_holder_referenda_": "يتم إصدار مكافآت XRT صغيرة لتحفيز المجمعين ويتم تحديد المبالغ من خلال استفتاءات حاملي الرموز",
 	"Total_XRT_emission_ensures_sustainable_parachain_leasing_and_active_block_production_": "إجمالي إصدار XRT يضمن تأجير الباراشين المستدام وإنتاج الكتل النشط",
-	"Pre_XRT_token_distributed_in_2017_as_a_autonomous_part_of_futher_Robonomics_infrastructure_on_Ethereum__After_successful_launch_of_Robonomics_over_Ethereum_in_2019_AIRA_tokens_were_connected_to_created_infrastructure_of_the_project_through": "تم توزيع Pre-XRT token في 2017 كجزء مستقل من بنية روبونوميكس التحتية المستقبلية على إيثريوم بعد الإطلاق الناجح لروبونوميكس على إيثريوم في 2019 تم ربط رموز AIRA بالبنية التحتية التي تم إنشاؤها للمشروع من خلال"
+	"Pre_XRT_token_distributed_in_2017_as_a_autonomous_part_of_futher_Robonomics_infrastructure_on_Ethereum__After_successful_launch_of_Robonomics_over_Ethereum_in_2019_AIRA_tokens_were_connected_to_created_infrastructure_of_the_project_through": "تم توزيع Pre-XRT token في 2017 كجزء مستقل من بنية روبونوميكس التحتية المستقبلية على إيثريوم بعد الإطلاق الناجح لروبونوميكس على إيثريوم في 2019 تم ربط رموز AIRA بالبنية التحتية التي تم إنشاؤها للمشروع من خلال",
+	"Utility_of_the_Robonomics_Token___XRT__in_Polkadot": "فائدة رمز Robonomics ‏$XRT في Polkadot",
+	"You_can_operate_XRT_within_blockchains_using_tools_provided_by_independent_teams_in_the_Polkadot__Kusama__and_Ethereum_ecosystems_": "يمكنك تشغيل XRT ضمن سلاسل الكتل باستخدام الأدوات المقدمة من الفرق المستقلة في أنظمة Polkadot Kusama و Ethereum البيئية"
 }
