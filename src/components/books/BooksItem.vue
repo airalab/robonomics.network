@@ -1,8 +1,9 @@
 <template>
   <li v-if="book && book.options"  class="e-books__item">
     <a
+      v-if="resolvedOptions.length"
       class="e-books__img"
-      :href="resolvedOptions.length && resolvedOptions[0].finalUrl"
+      :href="resolvedOptions[0].finalUrl"
       aria-label="check the book"
       target="_blank"
     >
@@ -44,7 +45,6 @@ const loading = ref(true);
 const resolvedOptions = ref([]);
 
 const TIMEOUT_MS = 15_000;
-const MAX_CACHE_AGE = 3 * 24 * 3600 * 1_000;
 
 const fetchGateway = async (url, timeout = TIMEOUT_MS) => {
   const controller = new AbortController();
@@ -69,12 +69,6 @@ const resolveLinks = async () => {
       const url = props.gateway + opt.link;
       const ok = await fetchGateway(url);
       const finalUrl = ok ? url : opt.static;
-
-      localStorage.setItem(
-        opt.name,
-        JSON.stringify({ link: finalUrl, date: new Date().toISOString() })
-      );
-
       return { ...opt, finalUrl };
     })
   );
