@@ -23,7 +23,7 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
 
     <div class="layout xrt-top">
       <img src="/images/xrt/logo.webp" alt="xrt logo" />
-      <p><b>XRT</b> is a utility token for smart devices users — it enables them to purchase monthly web3 cloud subscriptions with predictable latency.</p>
+      <p><b>XRT</b> {$tr('is a utility token for smart devices users — it enables them to purchase monthly web3 cloud subscriptions with predictable latency.')}</p>
     </div>
   </section>
 
@@ -53,8 +53,8 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
           </div>
         </div>
         <div>
-          <p>IoT subscriptions with predictable latency  a critical feature and a unique Web3 solution for the IoT market developed by the Robo team. This kind of solution can currently only be built on <b>Polkadot</b>.</p>
-          <p>The total supply of XRT may increase or decrease over the course of a year. It depends on how expensive it is to maintain the infrastructure in a given year. Costs like shared security depend on the internal blockspace market, plus the expenses related to collators.</p>
+          <p>{$tr('IoT subscriptions with predictable latency  a critical feature and a unique Web3 solution for the IoT market developed by the Robo team. This kind of solution can currently only be built on')} <b>Polkadot</b>.</p>
+          <p>{$tr('The total supply of XRT may increase or decrease over the course of a year. It depends on how expensive it is to maintain the infrastructure in a given year. Costs like shared security depend on the internal blockspace market, plus the expenses related to collators.')}</p>
         </div>
       </div>
     </div>
@@ -70,10 +70,10 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
       </div>
 
       <div class="layout-p">
-        <p>Users can also pay for individual transactions. This user-oriented application of the token contributes to its deflationary mechanism.</p>
-        <p>At the same time, XRT serves as a token for supporting infrastructure. Collators who produce blocks receive a small reward (think of it as a tip). Additionally, the Robonomics Rollup makes regular payments for shared security. To cover this, the protocol mints new tokens.</p>
-        <p>As a result, the issuance of new tokens to support the infrastructure — combined with the demand for XRT driven by smart device owners activating subscriptions — creates an independent market for XRT, one that exists beyond the control of the developers.</p>
-        <p>So, we have a system where — if more users activate their IoT subscriptions in the Robonomics Rollup regularly, and the cost of maintaining the rollup and collators remains low — we experience deflation. If the opposite happens, we get inflation. But in both cases, it is fully transparent logical process.</p>
+        <p>{$tr('Users can also pay for individual transactions. This user-oriented application of the token contributes to its deflationary mechanism.')}</p>
+        <p>{$tr('At the same time, XRT serves as a token for supporting infrastructure. Collators who produce blocks receive a small reward (think of it as a tip). Additionally, the Robonomics Rollup makes regular payments for shared security. To cover this, the protocol mints new tokens.')}</p>
+        <p>{$tr('As a result, the issuance of new tokens to support the infrastructure — combined with the demand for XRT driven by smart device owners activating subscriptions — creates an independent market for XRT, one that exists beyond the control of the developers.')}</p>
+        <p>{$tr('So, we have a system where — if more users activate their IoT subscriptions in the Robonomics Rollup regularly, and the cost of maintaining the rollup and collators remains low — we experience deflation. If the opposite happens, we get inflation. But in both cases, it is fully transparent logical process.')}</p>
       </div>
 
       <img class="space-b" src="/images/xrt/xrt-scheme.webp" alt="Robonomics token lifecycle scheme" />
@@ -98,16 +98,16 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
           <img src="/images/xrt/dapp.webp" alt="dapp">
         </a>
         <figcaption>
-          <a href="https://robonomics.app/#/" target="_blank" aria-label="go to the robonomics dapp">Robonomics app for IoT subscriptions and smart devices control</a>
+          <a href="https://robonomics.app/#/" target="_blank" aria-label="go to the robonomics dapp">{$tr('Robonomics app for IoT subscriptions and smart devices control')}</a>
         </figcaption>
       </figure>
 
       <div class="layout-p">
-        <p>XRT can be used to purchase an IoT subscription that guarantees priority processing of device or user IoT transactions. All transactions within IoT subscriptions take precedence over transactions where one-time fee is paid.</p>
-        <p>Thus, for users who plan to regularly use the parachain, and for those for whom it is important to have predictable delay parameters for their IoT devices close to one block period, it is beneficial to choose a subscription model.</p>
-        <p>During the activation process of the IoT subscription, the payment amount is determined by an ultra-fast auction lasting 10 blocks (~1-2 min). The auction model allows the parachain to autonomously offer the most fair price to the user for activating the subscription.</p>
-        <p>The IoT subscription activation fee is burned in full at the end of the current IoT subscription auction.</p>
-        <p>More practical usages find in <a href={twitter[0].link} target="_blank" aria-label="check robonomics twitter">Robonomics X(Twitter) account</a>.</p>
+        <p>{$tr('XRT can be used to purchase an IoT subscription that guarantees priority processing of device or user IoT transactions. All transactions within IoT subscriptions take precedence over transactions where one-time fee is paid.')}</p>
+        <p>{$tr('Thus, for users who plan to regularly use the parachain, and for those for whom it is important to have predictable delay parameters for their IoT devices close to one block period, it is beneficial to choose a subscription model.')}</p>
+        <p>{$tr('During the activation process of the IoT subscription, the payment amount is determined by an ultra-fast auction lasting 10 blocks (~1-2 min). The auction model allows the parachain to autonomously offer the most fair price to the user for activating the subscription.')}</p>
+        <p>{$tr('The IoT subscription activation fee is burned in full at the end of the current IoT subscription auction.')}</p>
+        <p>{$tr('More practical usages find in')} <a href={twitter[0].link} target="_blank" aria-label="check robonomics twitter">{$tr('Robonomics X(Twitter) account')}</a>.</p>
       </div>
     </div>
   </section>
@@ -117,7 +117,7 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
       <h2 class="title-lined"><span>{$tr('Where to find')}</span></h2>
       <div class="grid-2 space-b">
         <div class="oldy">
-          <h3><span>XRT in</span> Polkadot / Kusama</h3>
+          <h3><span>{$tr('XRT in')}</span> Polkadot / Kusama</h3>
           <ul class="list-simple">
             <li><a href="https://www.kraken.com/learn/buy-robonomics.network-xrt" target="_blank" aria-label="find xrt on kraken">Kraken</a></li>
             <li><a href="https://app.basilisk.cloud/pools-and-farms" target="_blank" aria-label="find xrt on basilisk">Basilisk</a></li>
@@ -130,7 +130,7 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
           </ul>
         </div>
         <div class="oldy">
-          <h3><span>XRT in</span> Ethereum </h3>
+          <h3><span>{$tr('XRT in')}</span> Ethereum </h3>
           <ul class="list-simple">
             <li><a href="https://app.uniswap.org/swap?inputCurrency=0x7de91b204c1c737bcee6f000aaa6569cf7061cb7&outputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2" target="_blank" aria-label="find xrt on uniswap">Uniswap</a></li>
           </ul>
@@ -140,7 +140,7 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
         </div>
       </div>
 
-      <p class="find-beware"><b>Be aware of scammers:</b> please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our <a href={twitter[0].link} target="_blank" aria-label="check out the robonomics twitter">X (Twitter)</a> for official updates. Be carefull, be safe.</p>
+      <p class="find-beware"><b>{$tr('Be aware of scammers:')}</b> {$tr('please use only well known markets to exchange XRT. Do not send your tokens to accounts that are given to you in private messages whatever transaction you would like to carry out (buy or sell token). If you received any ‘loud statements’ about Robonomics token (scammers often use something like airdrop announcement), please check this website(https://robonomics.network/) or our')} <a href={twitter[0].link} target="_blank" aria-label="check out the robonomics twitter">{$tr('X (Twitter)')}</a> {$tr('for official updates. Be carefull, be safe')}.</p>
     </div>
   </section>
 
@@ -148,11 +148,11 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
     <div class="layout">
       <h2 class="title-lined"><span>{$tr('Other Questions')}</span></h2>
 
-      <h3 class="text-left">What is RWS?</h3>
-      <p>Under development of core functionality For engineers, Core Dev team will try to make different Robonomics usage models and the first step in this way is launching lifetime subscription token - RWS token. Each RWS token will give you 1 transaction per second (tps) from/to your IoT device over Robonomics Parachain. Activate your RWS token and make "free gas" transactions with prior to execute and predictable latency. Deactivate RWS token and trade it on DEX.</p>
+      <h3 class="text-left">{$tr('What is RWS?')}</h3>
+      <p>{$tr('Under development of core functionality For engineers, Core Dev team will try to make different Robonomics usage models and the first step in this way is launching lifetime subscription token - RWS token. Each RWS token will give you 1 transaction per second (tps) from/to your IoT device over Robonomics Parachain. Activate your RWS token and make "free gas" transactions with prior to execute and predictable latency. Deactivate RWS token and trade it on DEX.')}</p>
 
-      <h3 class="text-left">What is AIRA/AIR ID?</h3>
-      <p>Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens was connected to created infrastructure of the project through ambix smart contract which guaranteed autonomous and independent process of swapping pre-XRT to ERC-20 XRT.</p>
+      <h3 class="text-left">{$tr('What is AIRA/AIR ID?')}</h3>
+      <p>{$tr('Pre-XRT token distributed in 2017 as a autonomous part of futher Robonomics infrastructure on Ethereum. After successful launch of Robonomics over Ethereum in 2019 AIRA tokens was connected to created infrastructure of the project through ambix smart contract which guaranteed autonomous and independent process of swapping pre-XRT to ERC-20 XRT.')}</p>
     </div>
   </section>
 
@@ -365,7 +365,7 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
     font-variation-settings: var(--font-settings);
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1120px) {
     .total-deflation {
       position: static;
       max-width: 200px;
