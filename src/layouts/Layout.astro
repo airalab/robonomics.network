@@ -193,9 +193,21 @@ const isHome = Astro.url.pathname === '/';
     background-color: var(--color-light);
   }
 
+  @media screen and (max-width: 1000px) {
+    .screen {
+      padding-top: calc(var(--screen-padding-top) + 45px);
+    }
+  }
+
   @media screen and (max-width: 680px) {
     .footer-form.layout__content {
       padding-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 520px)   {
+    .screen {
+      padding-top: calc(var(--screen-padding-top) + 105px);
     }
   }
   
