@@ -83,7 +83,7 @@ const isHome = Astro.url.pathname === '/';
   )}
 </head>
 	<body transition:animate="fade">
-      <main class="main screen">
+      <main class="screen">
         <Header translated={translated}/>
 
         {pageTitle && <h1 set:html={pageTitle} class="pagetitle" />}
@@ -196,8 +196,9 @@ const isHome = Astro.url.pathname === '/';
   @media screen and (max-width: 680px) {
     .footer-form.layout__content {
       padding-left: 0;
+    }
   }
-}
+  
 
 </style>
 

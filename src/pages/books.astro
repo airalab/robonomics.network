@@ -1,168 +1,10 @@
 ---
-import pingIPFS from 'ping-ipfs-gateway';
-
 // components
 import Layout from "../layouts/Layout.astro";
-import BooksItem from '../components/books/BooksItem.astro';
+import BooksList from '../components/books/BooksList.vue';
 import RecommendationItem from '../components/books/RecommendationItem.astro';
 import BooksFooter from '../components/books/BooksFooter.astro';
-import Spinner from '../components/utils/LoaderSpin.vue';
 
-const books = [
-  {
-    id:0,
-    title: $tr("Almanac"),
-    img: 'docs-book-6.webp',
-    year:'2024>>2025',
-    options: [
-      {
-        link: 'QmZhbgDPFXbZUb419zt6firGHGcRTF1Bu6BsK7qTKsffQh',
-        text: 'EN',
-        id: 0,
-        static: 'https://static.robonomics.network/docs/book-2024-2025/Robonomics.network-Almanac-2024-en.pdf',
-        name: 'book2024-2025en'
-      },
-      {
-        link: 'QmSQZsMLfBCYPAXKHGGbzH5U56W3v5RZt55hbBnG8qEmL9',
-        text: 'RU',
-        id: 1,
-        static: 'https://static.robonomics.network/docs/book-2024-2025/Robonomics.network-Almanac-2024-ru.pdf',
-        name: 'book2024-2025ru'
-      }
-    ]
-  },
-  { 
-    id: 1,
-    title: $tr("Robonomics R&D"),
-    img: 'docs-book-5.webp',
-    year:' 2023 & 2024',
-    options: [
-      {
-        link: 'QmaCXn8RdSdh4oxX3R5nzNSfoUPiLMLM4JmLSk1WnYi5ah',
-        text: 'EN',
-        id: 0,
-        static: 'https://static.robonomics.network/docs/book-2023-2024/robonomics.network-book-2023-2024-en.pdf',
-        name: 'book2023-2024en'
-      },
-      {
-        link: 'Qmd8sSoGokc1UeAbbAfmEPJTubWEpWGetYGyj9MCpwmE42',
-        text: 'RU',
-        id: 1,
-        static: 'https://static.robonomics.network/docs/book-2023-2024/robonomics.network-book-2023-2024-ru.pdf',
-        name: 'book2023-2024ru'
-      }
-    ]
-  },
-  {
-    id: 2,
-    title: $tr('R&D 18-28'),
-    img: 'docs-book-4.webp',
-    year: '2022',
-    options: [
-      {
-        link: 'QmZK64M7M31mkMsDd8yQa1dfX4a4KeDCyaUMsTuzsKq6LC',
-        text: 'EN',
-        id: 0,
-        static: 'https://static.robonomics.network/docs/book-2022/robonomics.network-book-2022-en.pdf',
-        name: 'book2022en'
-      },
-      {
-        link: 'QmNsiaWWFw4ZoqAnW5vuTXNz2jwYBu7ShyXSYqU1uNDjrF',
-        text: 'RU',
-        id: 1,
-        static: 'https://static.robonomics.network/docs/book-2022/robonomics.network-book-2022-ru.pdf',
-        name: 'book2022ru'
-      }
-    ]
-  },
-  {
-    id: 3,
-    title: $tr('R&D 1-17'),
-    img: 'docs-book-3.webp',
-    year: "2021",
-    options: [
-      {
-        link: 'QmRHvtsEViqHFN6Mt66p9o5MvvzB2H5uvfMTi8maAnLmfi',
-        text: 'EN',
-        id: 0,
-        static: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-en.pdf',
-        name: 'book2021en'
-      },
-      {
-        link: 'QmUbQTQknKLuDB8SmJF9pUhkTPdJbXp5ghDwp7oXwwDb9V',
-        text: 'RU',
-        id: 1,
-        static: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-ru.pdf',
-        name: 'book2021ru'
-      },
-      {
-        link: 'QmU8CFPD9bQheKJhKdyAZ11GNhuqHKPok5Tu8bUrNjCZtg',
-        text: 'ES',
-        id: 2,
-        static: 'https://static.robonomics.network/docs/book-2021-cases/Robonomics.network-r-n-d-cases-2021-en.pdf',
-        name: 'book2021es'
-      }
-    ]
-  },
-  {
-    id: 4,
-    title: $tr('Robot economics'),
-    img: 'docs-book-2.webp',
-    year: "2018",
-    options: [
-      {
-        link: 'QmQ3k8p9SQS5wjovPcjUtQceRZZ6nv3Eqirt1vVQ2wP2JL',
-        text: 'EN',
-        id: 0,
-        static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-en.pdf',
-        name: 'book2018en'
-      },
-      {
-        link: 'QmUqNnzdZnic61UYTuKT9EzBNzMW6jc5uHSFk4Xzd3iM93',
-        text: 'RU',
-        id: 1,
-        static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-ru.pdf',
-        name: 'book2018ru'
-      },
-      {
-        link: 'QmXhWarATZNTy3CweoVAdy4aTMrGMCsipo3gPSWVsUyQW6',
-        text: 'IT',
-        id: 2,
-        static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-2-2018/robonomics.network-book-the-economy-of-robots-2-2018-it.pdf',
-        name: 'book2018it'
-      }
-    ]
-  },
-  {
-    id: 5,
-    title: $tr('Robot economics'),
-    img: 'docs-book-1.webp',
-    year: "2017",
-    options: [
-      {
-        link: 'QmWue3YfuZvuRvgcNb4vZuheX9TaZ9E1b8aCdxSoaGTbVN',
-        text: 'EN',
-        id: 0,
-        static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-en.pdf',
-        name: 'book2017en'
-      },
-      {
-        link: 'QmUjBPgDzmHFHiDkQAG93szJQguiZiowm9sedFMhPfQP4y',
-        text: 'RU',
-        id: 1,
-        static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-ru.pdf',
-        name: 'book2017ru'
-      },
-      {
-        link: 'QmTp3srjo3r1L2TKpAEGFafjdzSCTKJT9kkBEkCQDEF6tz',
-        text: 'DE',
-        id: 2,
-        static: 'https://static.robonomics.network/docs/book-the-economy-of-robots-1-2017/robonomics.network-book-the-economy-of-robots-1-2017-de.pdf',
-        name: 'book2017de'
-      }
-    ]
-  }
-];
 
 const recs = [
   {
@@ -215,34 +57,6 @@ const recs = [
   }
 ]
 
-const gateways = [
-  'https://gw.crust-gateway.xyz/ipfs/',
-  'https://gw.crust-gateway.com/ipfs/',
-  'https://gateway.pinata.cloud/ipfs/',
-  'https://ipfs.io/ipfs/',
-  'https://hardbin.com/ipfs/',
-  'https://ipfs.eth.aragon.network/ipfs/',
-  'https://nftstorage.link/ipfs/',
-  'https://4everland.io/ipfs/',
-  'https://w3s.link/ipfs/',
-  'https://trustless-gateway.link/ipfs/'
-];
-
-let bookGateway = null;
-
-try {
-  const result = await pingIPFS(gateways);
-  if (result) {
-    bookGateway = result;
-    console.log("✅ Selected IPFS Gateway:", bookGateway);
-  } else {
-    console.warn("⚠️ No working gateway found via pingIPFS(), using fallback.");
-     bookGateway = 'https://gw.crust-gateway.xyz/ipfs/';
-  }
-} catch (err) {
-  console.error("❌ pingIPFS() failed, using fallback gateway. Error:", err);
-}
-
 ---
 
 <Layout
@@ -254,22 +68,12 @@ try {
     <div class="layout__text books__abstract">
       <p>{$tr("We think reading books can really open up your mind. Whether it's simple but smart ideas or more complex ones, books are the best way for your brain to soak it all in. You can grab our books for free and check out our list of recommended reads to dive into the exciting world of robotics!")}</p>
     </div>
-
-    <h2>{$tr('Download books about Robonomics')}</h2>
-    {bookGateway ? (
-      <ul class="list-simple e-books__list grid-3 animate-inside in-viewport">
-        {books.map((book) => (
-          <BooksItem book={book} gateway={bookGateway} key={book.title} />
-        ))}
-      </ul>
-    ) : (
-      <Spinner />
-    )}
+    <BooksList client:only />
   </section>
 
   <section class="layout books-recommendations layout__content">
     <h2>{$tr('Open your mind [list of recommendations]')}</h2>
-    <ol class="list-simple books-recommendations__list">
+    <ol class="list-simple">
       {recs.map((rec) => (
         <li class="books-recommendations__item">
           <RecommendationItem rec={rec} />
