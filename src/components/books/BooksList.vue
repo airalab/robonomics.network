@@ -203,7 +203,6 @@ onMounted(async () => {
   try {
     await ipfsSmartGateway.checkGateways({ cid: 'QmYd1Mh2VHVyF3WgvFsN3NFkozXscnCVmEV2YG86UKtK3C' });
     const picked = ipfsSmartGateway.getPickedGateway();
-    console.log(picked)
     gateway.value = picked || 'https://gw.crust-gateway.xyz/ipfs/';
   } catch (e) {
     console.error("❌ Gateway fetch failed. Using fallback.", e);
