@@ -804,8 +804,6 @@
 	"Desktop_background": "바탕 화면",
 	"Mac_OS_icons": "맥 OS 아이콘",
 	"Windows_icons": "윈도우 아이콘",
-	"XRT_tokenomics": "XRT 토큰노믹스",
-	"XRT_is_the_utility_token_that_will_make_it_possible_to_control_IoT_devices_on_top_of_the_Ethereum_network_and_the_Robonomics_parachain_": "XRT는 이더리움 네트워크와 로보노믹스 파라체인 위에서 IoT 장치를 제어할 수 있게 해주는 유틸리티 토큰입니다.",
 	"Robonomics_tokenomics": "로보노믹스 토큰노믹스",
 	"What_is_RWS_": "RWS는 무엇인가요?",
 	"_Under_development_of_core_functionality__For_engineers__Core_Dev_team_will_try_to_make_different_Robonomics_usage_models_and_the_first_step_in_this_way_is_launching_lifetime_subscription_token___RWS_token__Each_RWS_token_will_give_you_1_transaction_per_second__tps__from_to_your_IoT_device_over_Robonomics_Parachain__Activate_your_RWS_token_and_make__free_gas__transactions_with_prior_to_execute_and_predictable_latency__Deactivate_RWS_token_and_trade_it_on_DEX_": "핵심 기능의 개발 중입니다. 엔지니어들을 위해, Core Dev 팀은 다양한 Robonomics 사용 모델을 만들려고 노력할 것이며, 이 방법의 첫 번째 단계는 평생 구독 토큰인 RWS 토큰을 발행하는 것입니다. 각 RWS 토큰은 Robonomics Parachain을 통해 당신의 IoT 장치로부터 1초당 1건의 거래(tps)를 제공합니다. RWS 토큰을 활성화하고, 실행 전에 예측 가능한 지연 시간으로 \"무료 가스\" 거래를 할 수 있습니다. RWS 토큰을 비활성화하고 DEX에서 거래할 수 있습니다.",
@@ -1321,5 +1319,7 @@
 	"for_official_updates__Be_carefull__be_safe": "공식 업데이트를 위해 조심하세요 안전하세요",
 	"Other_Questions": "기타 질문",
 	"Under_development_of_core_functionality_For_engineers__Core_Dev_team_will_try_to_make_different_Robonomics_usage_models_and_the_first_step_in_this_way_is_launching_lifetime_subscription_token___RWS_token__Each_RWS_token_will_give_you_1_transaction_per_second__tps__from_to_your_IoT_device_over_Robonomics_Parachain__Activate_your_RWS_token_and_make__free_gas__transactions_with_prior_to_execute_and_predictable_latency__Deactivate_RWS_token_and_trade_it_on_DEX_": "핵심 기능 개발 중 엔지니어를 위해 Core Dev 팀은 다양한 Robonomics 사용 모델을 만들려고 하며 이 과정의 첫 번째 단계는 평생 구독 토큰인 RWS 토큰을 출시하는 것입니다 각 RWS 토큰은 Robonomics Parachain을 통해 IoT 기기에서/로 초당 1건의 트랜잭션(tps)을 제공합니다 RWS 토큰을 활성화하고 실행 전 우선권과 예측 가능한 지연 시간으로 \"무료 가스\" 트랜잭션을 하세요 RWS 토큰을 비활성화하고 DEX에서 거래하세요",
-	"Pre_XRT_token_distributed_in_2017_as_a_autonomous_part_of_futher_Robonomics_infrastructure_on_Ethereum__After_successful_launch_of_Robonomics_over_Ethereum_in_2019_AIRA_tokens_was_connected_to_created_infrastructure_of_the_project_through_ambix_smart_contract_which_guaranteed_autonomous_and_independent_process_of_swapping_pre_XRT_to_ERC_20_XRT_": "2017년에 배포된 Pre-XRT 토큰은 Ethereum에서 향후 Robonomics 인프라의 자율적인 일부로 제공되었습니다 2019년에 Ethereum에서 Robonomics가 성공적으로 출시된 후 AIRA 토큰은 ambix 스마트 계약을 통해 프로젝트의 생성된 인프라에 연결되었으며 이는 pre-XRT를 ERC-20 XRT로 교환하는 자율적이고 독립적인 과정을 보장했습니다"
+	"Pre_XRT_token_distributed_in_2017_as_a_autonomous_part_of_futher_Robonomics_infrastructure_on_Ethereum__After_successful_launch_of_Robonomics_over_Ethereum_in_2019_AIRA_tokens_was_connected_to_created_infrastructure_of_the_project_through_ambix_smart_contract_which_guaranteed_autonomous_and_independent_process_of_swapping_pre_XRT_to_ERC_20_XRT_": "2017년에 배포된 Pre-XRT 토큰은 Ethereum에서 향후 Robonomics 인프라의 자율적인 일부로 제공되었습니다 2019년에 Ethereum에서 Robonomics가 성공적으로 출시된 후 AIRA 토큰은 ambix 스마트 계약을 통해 프로젝트의 생성된 인프라에 연결되었으며 이는 pre-XRT를 ERC-20 XRT로 교환하는 자율적이고 독립적인 과정을 보장했습니다",
+	"Robonomics_Tokenomics___XRT___RWS___AIRA_": "로보노믹스 토크노믹스 ($XRT $RWS $AIRA)",
+	"Learn_everything_about__XRT___the_main_Robonomics_token__Explore_its_utility__supply__and_statistics__Plus__get_brief_insights_on__RWS_and__AIRA_": "$XRT에 대해 모든 것을 알아보세요 — 주요 Robonomics 토큰입니다 그 유틸리티 공급량 및 통계를 살펴보세요 또한 $RWS와 $AIRA에 대한 간략한 인사이트도 얻으세요"
 }
