@@ -6,7 +6,7 @@ html {
 	@media screen and (max-device-width: 350px) {
   It's for testing out on desktop*/
   @media screen and (max-width: 350px) {
-    html { font-size: 80%; }
+    html { font-size: calc(var(--base-font-size) * 0.7); }
   }
 
   /*It's important for high res narrow devices
@@ -59,6 +59,22 @@ h4 {
 h5 {
   font-size: calc(var(--base-font-size) * 1);
   font-variation-settings: var(--font-flex-bold);
+}
+
+/* page-title styles */
+
+.page-title {
+  font-size: calc(var(--base-font-size) * 2.5);
+  font-variation-settings: var(--font-flex-extrabold);
+  text-transform: uppercase;
+  color: var(--color-dark);
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 680px) {
+  .page-title {
+    font-size: calc(var(--base-font-size) * 1.6);
+  }
 }
 
 /* + Title with line throw */
@@ -236,13 +252,20 @@ a:not(.button).dashed, .link:not(.button).dashed {
 }
 
 .highlight-green {
+  display: inline-block;
+  padding: 0.3rem;
+  font-size: calc(var(--base-font-size) * 1.3);
+  line-height: 1;
   border-bottom: 0;
+  color: var(--color-blue);
   background-color: var(--rb-color-green-accent);
 }
-/* 
-a.highlight {
-  border-bottom: 0.5px solid currentColor;
-} */
+
+@media screen and (max-width: 520px) {
+  .highlight-green {
+    font-size: var(--base-font-size);
+  }
+}
 
 
 hr {

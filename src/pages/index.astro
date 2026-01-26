@@ -1,15 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-
-
-// components import
-import DevicesList from '../components/blocks/DevicesList.astro';
-
-// images
-import DecorImage1 from '../assets/images/home/lined-scalable.svg';
-import DecorImage2 from '../assets/images/home/lined-wave.svg';
-import DecorImage3 from '../assets/images/home/lined-key.svg';
+import TrustBadges from '../components/blocks/TrustBadges.astro';
+import HomeEcosystemSwiper from '../components/home/HomeEcosystemSwiper.astro';
+import TweetGallery from '../components/home/TweetGallery.astro';
+import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
 
 ---
 
@@ -17,310 +11,279 @@ import DecorImage3 from '../assets/images/home/lined-key.svg';
   title="Robonomics Network" 
   description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
 >
-	<div class="banner">
-		<div class="banner-content">
-      <div id="banner-svg-wrapper" class="banner-svg"></div>
-			<h1>{$tr('Begin your adventure in the world of cyber punks')}</h1>
-			<h4>#OpenHardware, #AntiBlackMirror</h4>
-			<a href="/devices/" class="highlight">{$tr('Smart devices from Robonomics')}</a>
-		</div>
-	</div>
+  <section class="layout section home">
+    <div class="layout">
+      <h1 class="title-lined">
+        <span>{$tr('open-source smart devices ecosystem')}</span>
+      </h1>
+      <div class="home-hero__videos" aria-label="Use cases">
+        <a class="home-hero__card" href="/for-personal-usage/" aria-label="For personal usage">
+          <img class="home-hero__preview" src="/video/preview/home-preview-1.webp" alt="" loading="eager"/>
+          <video class="home-hero__video" src="/video/home-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <div class="home-hero__title">
+            <span>{$tr('FOR')}</span>
+            <span>{$tr('PERSONAL USAGE')}</span>
+          </div>
+          <HeroCardBadges
+            items={[
+              $tr('Cyberpunks shop'),
+              $tr('Self-care devices'),
+              $tr('Personal metrics'),
+            ]}
+            variant="light"
+            showArrow
+          />
+        </a>
 
-	<h2 class="title-lined"><span>{$tr("Hardware for cyberpunks 2025")}</span></h2>
-	<div class="layout layout__content">
-		<DevicesList />
-	</div>
+        <a class="home-hero__card" href="/for-smart-homes/" aria-label="For smart homes">
+          <img class="home-hero__preview" src="/video/preview/home-preview-2.webp" alt="" loading="eager"/>
+          <video class="home-hero__video" src="/video/home-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <div class="home-hero__title">
+            <span>{$tr('FOR')}</span>
+            <span>{$tr('SMART HOMES')}</span>
+          </div>
+          <HeroCardBadges
+            items={[
+              $tr('B2C & B2B solutions'),
+              $tr('Full service integration'),
+              $tr('DIY setup'),
+            ]}
+            variant="light"
+            showArrow
+          />
+        </a>
 
-  <section class="layout section">
+        <a class="home-hero__card home-hero__card--extra" href="/for-coworking-and-coliving/" aria-label="For co-working and co-living">
+          <img class="home-hero__preview" src="/video/preview/home-preview-3.webp" alt="" loading="eager"/>
+          <video class="home-hero__video home-hero__video--extra" src="/video/home-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <div class="home-hero__title">
+            <span>{$tr('FOR')}</span>
+            <span>{$tr('CO-WORKING & CO-LIVING')}</span>
+          </div>
+          <HeroCardBadges
+            items={[
+              $tr('B2C & B2B solutions'),
+              $tr('Smart access'),
+              $tr('Shared housekeeping'),
+            ]}
+            variant="light"
+            showArrow
+          />
+        </a>
 
-    <h2 class="title-lined"><span>{$tr('Our values')}</span></h2>
-
-    <div class="grid-3">
-      <div>
-        <Image src={DecorImage1} aria-hidden="true" alt="" />
-        <h3 class="align-left m-t-0">{$tr('Pure Open Source')}</h3>
-        <p>{$tr('Our devices are designed for total transparency. Every product comes with open RISC-V processor, open-source code and circuit schematics, and local update instructions—no need for cloud connections. You’re empowered to understand, customize, and trust your technology from the ground up.')}</p>
+        <a class="home-hero__card" href="/for-business/" aria-label="For business">
+          <img class="home-hero__preview" src="/video/preview/home-preview-4.webp" alt="" loading="eager"/>
+          <video class="home-hero__video" src="/video/home-4.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <div class="home-hero__title">
+            <span>{$tr('FOR')}</span>
+            <span>{$tr('BUSINESS')}</span>
+          </div>
+          <HeroCardBadges
+            items={[
+              $tr('Smart RWA'),
+              $tr('Digital passports'),
+              $tr('Custom hardware'),
+              $tr('Robotics integration'),
+            ]}
+            variant="light"
+            showArrow
+          />
+        </a>
       </div>
-
-      <div>
-        <Image src={DecorImage2} aria-hidden="true" alt="" />
-        <h3 class="align-left m-t-0">{$tr('Local and Global Availability')}</h3>
-        <p>{$tr('The combination of p2p communication and web3 cloud guarantees that your devices will always be connected. No internet access? You can still connect directly to the device. Moving to a new region or going on vacation? Your devices will stay online and accessible wherever you are.')}</p>
-      </div>
-
-      <div>
-        <Image src={DecorImage3} aria-hidden="true" alt="" />
-        <h3 class="align-left m-t-0">{$tr('Privacy by design')}</h3>
-        <p>{$tr('By utilizing open source, p2p, and web3, there’s no room for corporate tricks, ensuring your personal data is protected. All information is stored either locally or encrypted with your personal key in the web3 cloud.')}</p>
-      </div>
-    </div>
-
-    <div class="timeline align-center">
-      <Image src="/images/home/home-hands.webp" aria-hidden="true" alt="" width={2226} height={645} />
-      <h3 class="m-t-0">{$tr('Interested in how the team reached this stage?')}</h3>
-      <a href="/timeline/" aria-label="check robonomics timeline" class="highlight">{$tr('The Robonomics Timeline')}</a>
-      <p>{$tr('can guide you through our journey')}</p>
     </div>
   </section>
+
+  <div class="trust-badges-wrapper"><TrustBadges/></div>
+
+  <HomeEcosystemSwiper />
+
+  <TweetGallery />
 </Layout>
 
-
 <script>
-  // Используем requestIdleCallback для того, чтобы дать приоритет отрисовке основного контента
-  
-  // Полифил requestIdleCallback (для Safari/Firefox)
-  window.requestIdleCallback = window.requestIdleCallback || function (cb) {
-    return setTimeout(() => {
-      cb({ didTimeout: false, timeRemaining: () => Math.max(0, 50 - (Date.now() % 50)) });
-    }, 1);
-  };
-
-  window.cancelIdleCallback = window.cancelIdleCallback || function (id) {
-    clearTimeout(id);
-  };
-
-  // Scroll-параллакс
-  // уменьшаем количество перерисовок с requestAnimationFrame - 1 на кадр (60 FPS)
-  let bannerShift = 0;
-  let bannerContent = null;
-  let ticking = false;
-
-  const updateStyles = () => {
-    if (bannerContent) {
-      bannerContent.style.transform = `translateY(${(-1) * bannerShift}px)`;
-    }
-  };
-
-  // Пример: разрешаем сдвиг до maxShift
-  const onScroll = () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        const y = window.scrollY;
-
-        // Можно задать maxShift = (window.innerHeight / 2) / 3
-        // чтобы на высоте ~window.innerHeight/2 сдвиг переставал расти
-        const maxShift = (window.innerHeight / 2) / 3;
-
-        if (y > 20) {
-          // Сдвигаем баннер пропорционально y, но не более maxShift
-          bannerShift = Math.min(y / 3, maxShift);
-        } else {
-          bannerShift = 0;
-        }
-
-        updateStyles();
-        ticking = false;
-      });
-      ticking = true;
-    }
-  };
-
-
+  // Always show preview initially, then transition to video when ready
   document.addEventListener('DOMContentLoaded', () => {
-
-    // Подставляем свг для баннера после ΔΟΜ
-    const wrapper = document.getElementById("banner-svg-wrapper");
-    fetch("/images/home/home-banner.svg")
-      .then((r) => r.text())
-      .then((svg) => {
-        wrapper.innerHTML = svg;
-        wrapper.classList.add("svg-animate-ready");
-      });
-
-    // + Инициализация скролл-эффекта
-    bannerContent = document.querySelector('.banner-content');
-
-    requestIdleCallback(() => {
-      window.addEventListener('scroll', onScroll, { passive: true });
+    const videos = document.querySelectorAll('.home-hero__video');
+    
+    videos.forEach((video) => {
+      const preview = video.previousElementSibling;
+      
+      if (preview && preview.classList.contains('home-hero__preview')) {
+        let transitionStarted = false;
+        
+        const showVideo = () => {
+          if (transitionStarted) return;
+          transitionStarted = true;
+          
+          requestAnimationFrame(() => {
+            video.classList.add('playing');
+            preview.classList.add('hidden');
+          });
+        };
+        
+        // Check if video is already ready to play
+        if (video.readyState >= 3) { // HAVE_FUTURE_DATA - video is ready
+          // Video loaded fast, transition quickly
+          setTimeout(showVideo, 50);
+        } else {
+          // Wait for video to be ready
+          video.addEventListener('canplaythrough', showVideo, { once: true });
+          video.addEventListener('loadeddata', () => {
+            setTimeout(showVideo, 100);
+          }, { once: true });
+        }
+      }
     });
-
-    window.addEventListener('beforeunload', () => {
-      window.removeEventListener('scroll', onScroll);
-    });
-    // - Инициализация скролл-эффекта
-
-
-    // + Активируем анимации после полной вставки SVG
-    const svgWrapper = document.getElementById('banner-svg-wrapper');
-    if (svgWrapper) {
-      requestAnimationFrame(() => {
-        svgWrapper.classList.add('svg-animate-ready');
-      });
-    }
-    // - Активируем анимации после полной вставки SVG
-
   });
 </script>
 
-
-<style is:global>
-  /* До загрузки: отключаем анимации и резервируем место под баннер, чтобы не скакало */
-
-  #banner-svg-wrapper {
-    aspect-ratio: 700 / 597;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    min-height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .banner-svg:not(.svg-animate-ready) {
-    visibility: hidden;
-    opacity: 0;
-  }
-  .svg-animate-ready {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.6s ease-in-out 0s, visibility 0s linear 0.2s;
-  }
-
-  /* + banner svg */
-  .banner-svg svg {
-    --delay: 0.5s;
-    --speed: 1.4s;
-    display: block;
-    /* max-width: 700px; */
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    margin: var(--space) auto;
-  }
-  
-  .banner-svg *[id^='decor-'], .banner-svg *[id^='device-'], .banner-svg #Glasses, .banner-svg #hikikomori {
-      opacity: 0;
-  }
-  
-  .banner-svg  *[id^='device-'], .banner-svg #Glasses {
-      transform: translateY(-200px);
-  }
-  
-  .banner-svg *[id^='decor-'], .banner-svg *[id^='device-'], .banner-svg #Glasses, .banner-svg #hikikomori {
-      animation: devices cubic-bezier(0.175, 0.885, 0.32, 1) var(--speed) forwards;
-      animation-delay: var(--delay);
-  }
-  
-  /* 1 step */
-  .banner-svg *[id^='device-'] {
-      --speed: 1s;
-  }
-  
-  .banner-svg #device-sensor-air {
-      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  
-  .banner-svg #device-sensor-group-1, .banner-svg #device-sensor-group-3 {
-      animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .banner-svg #device-sensor-group-2, .banner-svg #device-sensor-group-4 {
-      animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.95);
-  }
-  
-  /* 2 step */
-  .banner-svg *[id^='decor-'], .banner-svg #Glasses {
-      animation-delay: calc(var(--speed) + var(--delay));
-  }
-  
-  /* 3 step */
-  .banner-svg #lines-pink path, .banner-svg #line-solar-1 path, .banner-svg #line-solar-2 path {
-      stroke-dasharray: 800;
-      stroke-dashoffset: 800;
-      animation: lines linear calc(var(--speed)*2) forwards;
-      animation-delay: calc(var(--speed) + var(--delay));
-  }
-  
-  /* 4 step */
-  .banner-svg #hikikomori {
-      --speed: 0.8s;
-      animation-delay: calc(var(--speed)*4 + var(--delay));
-      animation-name: blink;
-  }
-  
-  
-  @keyframes devices {
-      to {
-          opacity: 1;
-          transform: translateY(0);
-      }
-  }
-  
-  @keyframes lines {
-      to {
-          stroke-dasharray: 0;
-          stroke-dashoffset: 0;
-      }
-  }
-  /* - banner svg */
-</style>
-
-
 <style>
 
-  /* + banner */
-  .banner {
-    margin-bottom: calc(var(--space) * 3);
+  h1 {
+    margin-top: calc(var(--space) * 0.8);
+  }
+
+  .home {
+    margin-bottom: var(--space);
+    margin-top: 0;
+  }
+
+  .home-hero__videos {
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
-  .banner:before {
-    background-color: var(--color-blue-notheme);
-    background-image: url('/images/home/robonomics-pattern.webp');
-    background-size: 600px;
-    border-radius: 4px;
-    bottom: var(--layout-sidepadding);
-    content: "";
-    left: var(--layout-sidepadding);
-    position: absolute;
-    right: var(--layout-sidepadding);
-    top: var(--layout-sidepadding);
-  }
-
-  .banner, .banner-content {
-    padding: var(--layout-sidepadding);
-  }
-
-  .banner-content {
-    background: var(--color-red);
-    border-radius: 4px;
+  .home-hero__card {
     position: relative;
-    text-align: center;
-    z-index: 1;
-    will-change: transform;
-  }
-
-  .banner-content, .banner-content a {
-    color: var(--color-light);
-  }
-
-  .banner-content a.highlight {
-    display: inline-block;
-    margin-top: var(--space);
-  }
-
-  .banner-content a.highlight:hover {
-    border-width: 2px;
-  }
-
-  .banner h1, .banner h4 {
-    margin: 0;
-    padding: 0;
-  }
-
-  .banner h4 { 
-    font-weight: 400;
-  }
-  /* - banner */
-
-  .timeline img {
     display: block;
-    max-height: 215px;
-    object-fit: contain;
+    height: calc(100vh - var(--screen-padding-top) - 86px - var(--space));
+    text-decoration: none;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .home-hero__card--extra {
+    width: 101%;
+  }
+
+  .home-hero__preview {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    margin: calc(var(--space)*2) auto var(--space);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 1s ease-in-out, filter 0.3s ease-in;
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .home-hero__card:hover .home-hero__preview {
+    filter: brightness(1.2);
+  }
+
+  .home-hero__card .home-hero__preview.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .home-hero__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.92);
+    transition: opacity 1s ease-in-out, filter 0.3s ease-in;
+    z-index: 2;
+    opacity: 0;
+    will-change: opacity;
+  }
+
+  .home-hero__card--extra .home-hero__video  {
+    width: 101%;
+  }
+
+  .home-hero__card .home-hero__video.playing {
+    opacity: 1;
+  }
+
+  .home-hero__card:hover .home-hero__video {
+    filter: brightness(1.2);
+  }
+
+  .home-hero__title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-variation-settings: var(--font-flex-extrabold);
+    letter-spacing: 0.06em;
+    font-size: calc(var(--base-font-size) * 0.9);
+    white-space: pre-line;
+    z-index: 3;
+  }
+
+  .home-hero__heading-wrap {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .home-hero__heading {
+    margin: 0;
+    font-size: calc(var(--base-font-size) * 2.5);
+    letter-spacing: 0.08em;
+    color: var(--color-light);
+    text-shadow:
+      0 6px 0 rgba(0, 0, 0, 0.85),
+      0 14px 18px rgba(0, 0, 0, 0.35);
+  }
+
+  .trust-badges-wrapper {
+    background-color: var(--rb-color-green-accent);
+  }
+
+  @media screen and (max-width: 1024px) {
+    .home-hero__videos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .home-hero__card {
+      min-height: 420px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .home-hero__videos {
+      grid-template-columns: 1fr;
+    }
+    .home-hero__card {
+      height: 360px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .home-hero__heading-wrap {
+      inset: unset;
+      top: 20px
+    }
+
+    .home-hero__heading-wrap h1 {
+      font-size: calc(var(--base-font-size) * 1.6);
+    }
   }
 </style>
-
 

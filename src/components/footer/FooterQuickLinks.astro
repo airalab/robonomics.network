@@ -1,0 +1,223 @@
+---
+import HeroCardBadges from '../blocks/HeroCardBadges.astro';
+
+import { getLocale } from "astro-i18n-aut";
+const locale = getLocale(Astro.url);
+
+const generatePath = (path) => {
+  return locale === 'en' ? path : `/${locale}${path}`;
+};
+
+import personalUrl from '../../assets/images/footer/for-personal-usage.webp?url';
+import smartHomeUrl from '../../assets/images/footer/for-smart-home.webp?url';
+import coworkingUrl from '../../assets/images/footer/for-coworking.webp?url';
+import businessUrl from '../../assets/images/footer/for-business.webp?url';
+
+// Normalize path to handle locale prefixes
+const normalizePath = (path) => {
+  if (!path) return '/';
+  // Remove trailing slashes (except root)
+  let normalized = path.length > 1 ? path.replace(/\/+$/, '') : path;
+  // Remove locale prefix
+  if (locale !== 'en' && normalized.startsWith(`/${locale}`)) {
+    normalized = normalized.slice(locale.length + 1) || '/';
+  } else if (normalized.startsWith('/en/')) {
+    normalized = normalized.slice(3) || '/';
+  } else if (normalized === '/en') {
+    normalized = '/';
+  }
+  return normalized || '/';
+};
+
+const currentPath = normalizePath(Astro.url.pathname);
+
+const links = [
+  { 
+    href: generatePath('/for-personal-usage/'), 
+    label: 'FOR <br/> PERSONAL USAGE', 
+    img: personalUrl, 
+    tags: ['Cyberpunks shop', 'Self-care devices', 'Personal metrics'],
+    bgClass: 'bg-blue',
+    pathMatch: '/for-personal-usage'
+  },
+  { 
+    href: generatePath('/for-smart-homes/'), 
+    label: 'FOR <br/> SMART HOMES', 
+    img: smartHomeUrl, 
+    tags: ['B2C & B2B solutions', 'Full service integration', 'DIY setup'],
+    bgClass: 'bg-dark',
+    pathMatch: '/for-smart-homes'
+  },
+  { 
+    href: generatePath('/for-coworking-and-coliving/'), 
+    label: 'FOR  CO-WORKING & <br/> CO-LIVING', 
+    img: coworkingUrl, 
+    tags: ['B2C & B2B solutions', 'Smart access', 'Shared housekeeping'],
+    bgClass: 'bg-green',
+    pathMatch: '/for-coworking-and-coliving'
+  },
+  { 
+    href: generatePath('/for-business/'), 
+    label: 'FOR <br/> BUSINESS', 
+    img: businessUrl, 
+    tags: ['Smart RWA', 'Digital passports', 'Custom hardware', 'Robotics integration'],
+    bgClass: 'bg-dark-blue',
+    pathMatch: '/for-business'
+  },
+];
+
+// Check if current path matches a link
+const isActive = (pathMatch) => {
+  const normalizedMatch = normalizePath(pathMatch);
+  if (normalizedMatch === '/') return currentPath === '/';
+  return currentPath === normalizedMatch || currentPath.startsWith(`${normalizedMatch}/`);
+};
+
+// Determine which background class to apply to the section
+let sectionBgClass = '';
+for (const link of links) {
+  if (isActive(link.pathMatch)) {
+    sectionBgClass = link.bgClass;
+    break;
+  }
+}
+---
+
+<section class:list={["footer-quicklinks", sectionBgClass]} aria-label="Quick links">
+  <div class="footer-quicklinks__grid grid grid-4">
+    {links.map((item) => {
+      const active = isActive(item.pathMatch);
+      return (
+        <a 
+          class:list={["oldy", "oldy__link", "footer-quicklinks__item", active && item.bgClass, active && 'active']} 
+          href={item.href}
+        >
+          <img class="footer-quicklinks__img" src={item.img} alt="" aria-hidden="true" loading="lazy" />
+          <h4 class="footer-quicklinks__label" set:html={item.label}></h4>
+          <div class="footer-quicklinks__tags">
+            <HeroCardBadges
+              items={item.tags}
+              staticPos
+              variant="dark"
+            />
+          </div>
+        </a>
+      );
+    })}
+  </div>
+</section>
+
+<style is:global>
+  .footer-quicklinks .oldy__link:hover *  {
+    color: var(--color-light);
+  }
+
+  .footer-quicklinks .oldy__link:hover h4  {
+    color: var(--color-dark);
+  }
+</style>
+
+<style>
+  .footer-quicklinks {
+    background: var(--body-bg);
+    padding: calc(var(--space) * 2) var(--layout-sidepadding);
+    transition: background-color 0.3s ease;
+  }
+
+  .footer-quicklinks.bg-blue {
+    background-color: var(--color-blue);
+  }
+
+  .footer-quicklinks.bg-dark {
+    background-color: var(--color-darkness);
+  }
+
+  .footer-quicklinks.bg-green {
+    background-color: var(--rb-color-green-accent);
+  }
+
+  .footer-quicklinks.bg-dark-blue {
+    background-color: var(--color-blue-extra-dark);
+  }
+
+  .footer-quicklinks__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) * 0.8);
+    text-decoration: none;
+    color: var(--color-dark);
+    min-height: 120px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease-in-out;
+  }
+
+  .footer-quicklinks__item.active {
+    box-shadow: none;
+    border: none;
+    pointer-events: none;
+  }
+
+  .footer-quicklinks__item.bg-blue {
+    background-color: var(--color-blue);
+  }
+
+  .footer-quicklinks__item.bg-dark {
+    background-color: var(--color-darkness);
+  }
+
+  .footer-quicklinks__item.bg-green {
+    background-color: var(--rb-color-green-accent);
+  }
+
+  .footer-quicklinks__item.bg-dark-blue {
+    background-color: var(--color-blue-extra-dark);
+  }
+
+  .footer-quicklinks__item.bg-blue .footer-quicklinks__label, .footer-quicklinks__item.bg-blue .footer-quicklinks__tags {
+    color: var(--color-light);
+  }
+
+  .footer-quicklinks__item.bg-dark-blue .footer-quicklinks__label {
+    color: var(--color-light);
+  }
+
+  .footer-quicklinks__item.bg-dark .footer-quicklinks__label {
+    color: var(--color-light);
+  }
+
+  .footer-quicklinks__item.bg-dark-blue .footer-quicklinks__tags {
+    color: var(--rb-color-pale-blue);
+  }
+
+  .footer-quicklinks__label {
+    display: block;
+    text-align: left;
+    margin: 0;
+    color: var(--color-dark);
+    text-transform: uppercase;
+    font-variation-settings: var(--font-flex-extrabold);
+    line-height: 1.1;
+  }
+
+  .footer-quicklinks__tags {
+    width: 90%;
+    font-variation-settings: var(--font-flex-medium);
+    color: var(--color-blue);
+  }
+
+  /* Better alignment for Arabic / RTL */
+  html[dir="rtl"] .footer-quicklinks__label {
+    text-align: right;
+  }
+
+  html[dir="rtl"] .footer-quicklinks__tags {
+    text-align: right;
+  }
+
+</style>
+
+
+
+
+
+

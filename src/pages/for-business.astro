@@ -1,0 +1,246 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RbButton from '../components/RbButton.astro';
+import VideoGallery from '../components/blocks/VideoGallery.astro';
+import CasesDisplay from '../components/blocks/CasesDisplay.astro';
+
+import { Image } from 'astro:assets';
+
+// images
+import RWA from '../assets/images/for-business/real-estate.webp';
+
+import FACTORIES from '../assets/images/for-business/factories.webp';
+
+import HARDWARE from '../assets/images/for-business/hardware.webp';
+
+import ROBOTICS from '../assets/images/for-business/robotics.webp';
+
+// videos
+const videos = [
+  '/video/business-1.mp4',
+  '/video/business-2.mp4',
+  '/video/business-3.mp4',
+  '/video/home-4.mp4',
+];
+
+const previews = [
+  '/video/preview/business-preview-1.webp',
+  '/video/preview/business-preview-2.webp',
+  '/video/preview/business-preview-3.webp',
+  '/video/preview/home-preview-4.webp',
+];
+
+---
+
+<Layout 
+  title="For business" 
+  description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
+>
+
+  <div class="layout layout__content page-title"><h1 class="page-title">{$tr('For business')}</h1></div>
+
+  <VideoGallery small videos={videos} previews={previews} alt="For business video example" cls="mb"/>
+
+  <section class="smart-rwa">
+    <div class="layout">
+      <h2 class="title-lined">
+        <span>{$tr('SMART RWA')}</span>
+      </h2>
+    </div>
+    <div class="layout layout__content text-center">
+      <h3>{$tr('FOR REAL ESTATE BUSINESSES')}</h3>
+      <p>{$tr('Smart RWA is a service concept based on the digitization of key real-estate operational metrics using smart-home infrastructure and dedicated hardware (environmental analyzers, energy meters, and smart-home servers). Based on this data, a “living” token is formed that reflects the real condition and usage of a property, while maintaining a high level of privacy inside the home.')}</p>
+
+      <Image src={RWA} alt="smart rwa" class="image-mb" />
+
+      <RbButton 
+        href='/contact/?source=smart-rwa' 
+        block
+        buttoncolor="blue"
+        buttonstyle="flat"
+        radius
+        noTarget={true}
+      >
+        {$tr('CONNECT YOUR REAL ESTATE')}
+      </RbButton>
+    </div>
+  </section>
+
+  <section class="feecc">
+    <div class="layout">
+      <h2 class="title-lined">
+        <span>{$tr('FEECC:')}</span>
+      </h2>
+      <h2>
+        <span>{$tr('A Decentralized Manufacturing Data')}</span>
+        <span>{$tr('Accumulation System')}</span>
+      </h2>
+    </div>
+
+    <div class="layout layout__content text-center">
+      <h3>{$tr('FOR FACTORIES')}</h3>
+      <p>{$tr('FEECC is a system for creating digital product passports and manufacturing quality control built on Robonomics. It enables traceability of key production stages, allows pinpoint detection of errors in mass manufacturing, and ensures the integrity of data that cannot be altered or substituted thanks to blockchain-based immutability.')}</p>
+
+      <Image src={FACTORIES} alt="feecc" class="image-mb" />
+
+
+      <CasesDisplay 
+        items={[
+          { type: 'case', id: 11 },
+          { type: 'case', id: 6 },
+        ]}
+        layout="grid"
+        mb
+      />
+
+      <RbButton 
+        href='/contact/?source=feecc' 
+        block
+        buttoncolor="blue"
+        buttonstyle="flat"
+        radius
+        noTarget={true}
+      >
+        {$tr('DEPLOY FEECC AT YOUR FACTORY')}
+      </RbButton>
+    </div>
+  </section>
+
+  <section class="hardware">
+    <div class="layout">
+      <h2 class="title-lined">
+        <span>{$tr('CUSTOM HARDWARE')}</span>
+      </h2>
+    </div>
+    <div class="layout layout__content text-center">
+      <h3>{$tr('FOR HARDWARE PROJECTSS')}</h3>
+      <p>{$tr('We design and engineer privacy-first hardware devices tailored to your specific use case and ready for your own production. From architecture and electronics to firmware and system integration, we help turn your requirements into reliable devices built without hidden data collection, vendor lock-in, or corporate cloud dependencies.')}</p>
+
+      <Image src={HARDWARE} alt="custom hardware" class="image-mb" />
+
+      <RbButton 
+        href='/contact/?source=custom-hardware' 
+        block
+        buttoncolor="blue"
+        buttonstyle="flat"
+        radius
+        noTarget={true}
+      >
+        {$tr('CONTACT PCB ENGINEER')}
+      </RbButton>
+    </div>
+  </section>
+
+  <section class="robotics">
+    <div class="layout">
+      <h2 class="title-lined">
+        <span>{$tr('ROBOTICS')}</span>
+      </h2>
+    </div>
+
+    <div class="layout layout__content text-center">
+      <h3>{$tr('FOR REAL-WORLD ROBOT APPLICATIONS')}</h3>
+      <p>{$tr('The Robonomics project originally focused on robot interaction and autonomous operation. Since 2015, the team has been building deep practical experience in robotics and cyber-physical systems. Our work is carried out by engineers and researchers with master’s degrees in robotics and related fields, with hands-on experience working with industrial and service robots, including KUKA, Unitree, and Spot (Boston Dynamics).')}</p>
+      <p>{$tr('Today, we closely follow the development of humanoid platforms and are prepared to deliver some of the first practical applications for humanoid-robot marketplaces.')}</p>
+
+      <Image src={ROBOTICS} alt="robotics" class="image-mb" />
+    </div>
+
+    <div class="layout">
+            <CasesDisplay 
+        items={[
+          { type: 'case', id: 7 },
+          { type: 'blog', slug: 'home-meets-industrial-mybuddy280' },
+          { type: 'case', id: 14 },
+        ]}
+        layout="grid"
+        mb
+        large
+      />
+    </div>
+
+    <div class="layout layout__content text-center">
+      <RbButton 
+        href='/contact/?source=robotics' 
+        block
+        buttoncolor="blue"
+        buttonstyle="flat"
+        radius
+        noTarget={true}
+      >
+        {$tr('START ROBOTICS PROJECT')}
+      </RbButton>
+    </div>
+  </section>
+
+
+</Layout>
+
+<style>
+
+  h1 {
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  h2 {
+    margin-bottom: calc(var(--space) * 0.5);
+  }
+
+  .feecc h2.title-lined {
+    margin-bottom: 0;
+  }
+
+  h2:not(.title-lined) {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: var(--space);
+    font-size: calc(var(--base-font-size) * 1.5);
+    color: var(--color-blue)
+  }
+
+  h4 {
+    font-variation-settings: var(--font-flex-bold);
+    font-size: calc(var(--base-font-size) * 1.5);
+    text-transform: none;
+  }
+
+  p {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p:last-of-type {
+    margin-bottom: calc(var(--space) * 2.2);
+  }
+  
+  section {
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .image-mb {
+    margin-bottom: var(--space);
+  }
+
+  .smart-rwa img {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: var(--base-font-size);
+    }
+  }
+
+</style>

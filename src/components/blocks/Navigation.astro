@@ -38,7 +38,7 @@ const generatePath = (path) => {
 <style>
   .navigation {
     display: flex;
-    font-size: 80%;
+    font-size: calc(var(--base-font-size) * 0.7);
     font-variation-settings: var(--font-flex-bold);
     gap: var(--space);
     line-height: 1.2;
@@ -51,7 +51,7 @@ const generatePath = (path) => {
     display: block;
     margin-bottom: calc(var(--space) * .5);
     color: var(--text-color);
-    font-size: 80%;
+    font-size: calc(var(--base-font-size) * 0.7);
     font-variation-settings: var(--font-flex-bold);
     text-decoration: underline;
   }
@@ -75,11 +75,30 @@ const generatePath = (path) => {
   ul:before {
     content: attr(aria-label);
     position: absolute;
+    top: 0;
+    left: 0;
     writing-mode: vertical-lr;
     writing-mode: sideways-lr;
     white-space: nowrap;
-
     color: var(--rb-color-light-gray);
+    pointer-events: none;
+  }
+
+  /* In RTL, move the vertical labels to the right edge so they don't overlap items */
+  html[dir="rtl"] .navigation ul:before {
+    left: auto;
+    right: 0;
+  }
+
+  /* Add some extra padding on the side where the label sits */
+  html[dir="ltr"] .navigation ul li {
+    padding-left: calc(var(--space) * 1);
+  }
+
+  html[dir="rtl"] .navigation ul li {
+    padding-left: 0;
+    padding-right: calc(var(--space) * 2);
+    text-align: right;
   }
 
   ul:nth-child(1) a {
@@ -89,24 +108,6 @@ const generatePath = (path) => {
   ul:nth-child(3) {
     column-count: 4;
     gap: var(--space);
-  }
-
-  nav a.nav__link--accent {
-    padding: 0.6em 1em;
-    margin-bottom: calc(var(--space) * 0.5);
-    background: var(--rb-color-green-accent);
-    font-size: 80%;
-    font-variation-settings: var(--font-flex-bold);
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-    clip-path: polygon(
-      0% 5%, 10% 0%, 20% 6%, 30% 3%, 40% 5%, 
-      50% 0%, 60% 6%, 70% 2%, 80% 7%, 90% 0%, 
-      100% 4%, 100% 100%, 0% 100%
-    );
-    box-shadow: 2px 2px 0 var(--color-dark);
-    transform: rotate(-1.5deg);
   }
 
   @media screen and (width > 1400px) {

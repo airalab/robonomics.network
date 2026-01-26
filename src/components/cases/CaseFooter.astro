@@ -1,8 +1,9 @@
 ---
 // components 
 import CaseGithubLink from './CaseGithubLink.astro';
+import CaseWebsiteLink from './CaseWebsiteLink.astro';
 
-const {link, linkText, showFooter = true, title, text, isProgress = false} = Astro.props;
+const {link, linkText, showFooter = true, title, text, isProgress = false, linkType = 'github'} = Astro.props;
 
 ---
 
@@ -16,7 +17,11 @@ const {link, linkText, showFooter = true, title, text, isProgress = false} = Ast
             <p class="italic-abstract" set:html={paragraph} />
           ))}
         </div>
-        {link && (<CaseGithubLink link={link} linkText={linkText}/>)}
+        {link && (linkType === 'website' ? (
+          <CaseWebsiteLink link={link} linkText={linkText}/>
+        ) : (
+          <CaseGithubLink link={link} linkText={linkText}/>
+        ))}
       </div>
   ) : (
   <div class="layout__text footer-in-progress">

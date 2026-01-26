@@ -1,0 +1,210 @@
+---
+// Dynamic component for displaying specific cases and/or blog posts on any page
+import items from '../../data/cases.js';
+import { getCollection } from 'astro:content';
+import { languageTag } from '../../paraglide/runtime';
+
+const {
+  items: itemsProp = [],
+  limit,
+  layout = 'grid',
+  showStatus = true,
+  mb = false,
+  large = false
+} = Astro.props;
+
+// Get all blog posts for lookup
+const allBlogPosts = await getCollection('blog');
+const currentLocale = languageTag();
+
+// Helper to get blog post by slug
+function getBlogPostBySlug(slug: string) {
+  // Try to find localized version first
+  let post = allBlogPosts.find(p => {
+    const postSlug = p.id.includes('/') ? p.id.split('/')[1] : p.id;
+    return postSlug === slug && p.data.locale === currentLocale;
+  });
+  
+  // Fallback to English if not found
+  if (!post && currentLocale !== 'en') {
+    post = allBlogPosts.find(p => {
+      const postSlug = p.id.includes('/') ? p.id.split('/')[1] : p.id;
+      return postSlug === slug && p.data.locale === 'en';
+    });
+  }
+  
+  return post;
+}
+
+// Process items array
+let selectedItems: any[] = [];
+
+if (itemsProp.length > 0) {
+  // New unified items approach
+  for (const item of itemsProp) {
+    if (item.type === 'case') {
+      let caseItem = null;
+      if (item.id !== undefined) {
+        caseItem = items.cases.find(c => c.id === item.id);
+      } else if (item.path) {
+        caseItem = items.cases.find(c => c.path.includes(item.path!));
+      }
+      if (caseItem) {
+        selectedItems.push({ ...caseItem, _type: 'case' });
+      }
+    } else if (item.type === 'blog') {
+      if (item.slug) {
+        const blogPost = getBlogPostBySlug(item.slug);
+        if (blogPost) {
+          const postSlug = blogPost.id.includes('/') ? blogPost.id.split('/')[1] : blogPost.id;
+          selectedItems.push({
+            _type: 'blog',
+            title: blogPost.data.title,
+            description: blogPost.data.description,
+            cover_image: blogPost.data.cover_image,
+            url: postSlug,
+            published: blogPost.data.published
+          });
+        }
+      }
+    }
+  }
+}
+
+// Apply limit if specified
+if (limit && limit > 0) {
+  selectedItems = selectedItems.slice(0, limit);
+}
+
+const layoutClass = layout === 'list' ? 'cases-display--list' : 'cases-display--grid';
+
+const gapClass = mb && 'cases-display-mb';
+
+const largeCls = large && 'cases-display-large'
+---
+
+{selectedItems.length > 0 && (
+  <div class:list={['cases-display', layoutClass, gapClass, largeCls]}>
+    {selectedItems.map((item, index) => {
+      const isCase = item._type === 'case';
+      const isBlog = item._type === 'blog';
+      
+      // Case-specific data
+      const caseHref = isCase ? (item.done ? `/${item.path}/` : '/cases/') : null;
+      const caseImageSrc = isCase && item.cover_image ? `/images/cases/${item.cover_image}` : null;
+      const caseTitle = isCase ? $tr(item.title) : null;
+      const caseDescription = isCase ? $tr(item.description) : null;
+      
+      // Blog-specific data
+      const blogHref = isBlog ? `/blog/${item.url}/` : null;
+      const blogImageSrc = isBlog ? item.cover_image : null;
+      const blogTitle = isBlog ? item.title : null;
+      const blogDescription = isBlog ? item.description : null;
+      
+      // Common data
+      const href = isCase ? caseHref : blogHref;
+      const imageSrc = isCase ? caseImageSrc : blogImageSrc;
+      const title = isCase ? caseTitle : blogTitle;
+      const description = isCase ? caseDescription : blogDescription;
+      const ariaLabel = isCase ? `Learn more about ${item.title}` : `Read blog post: ${item.title}`;
+      
+      return (
+        <div class="cases-display__item" key={index}>
+          <div 
+            class:list={[
+              'post-card',
+              'oldy',
+              isCase && 'post-card--case',
+              isCase && !item.done && 'in-progress'
+            ]}
+          >
+            <a 
+              href={href || '#'}
+              aria-label={ariaLabel}
+            >
+              {imageSrc && (
+                <img 
+                  class="post-card__image"
+                  src={imageSrc}
+                  alt={title || ''}
+                  loading="lazy" 
+                />
+              )}
+            </a>
+            <div class="post-card__content">
+              <a 
+                href={href || '#'}
+                aria-label={ariaLabel}
+              >
+                <h4 class="post-card__title" set:html={title || ''} />
+              </a>
+
+              {description && (
+                <p class="post-card__description" set:html={description} />
+              )}
+              
+              {( (showStatus && isCase)) && (
+                <div class="post-card__cases-bottom">
+                  {showStatus && isCase && (
+                    <div 
+                      class:list={[
+                        'post-card__status',
+                        item.progress === 'proceeding' && 'progress'
+                      ]} 
+                    />
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+)}
+
+<style>
+
+  img {
+    min-height: 210px;
+  }
+
+  .cases-display {
+    display: grid;
+    gap: var(--space);
+  }
+
+  .cases-display-mb {
+    margin-bottom: calc(var(--space) * 1.5);
+  }
+
+  .cases-display--grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+
+  .cases-display-large.cases-display--grid {
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  }
+
+  .cases-display--list {
+    grid-template-columns: 1fr;
+  }
+
+  .cases-display__item {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+  }
+
+  .in-progress {
+    filter: grayscale(1);
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 680px) {
+    .cases-display--grid,
+    .cases-display-large.cases-display--grid  {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

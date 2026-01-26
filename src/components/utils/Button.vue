@@ -52,13 +52,15 @@ const classes = computed(() => ({
 .robo-button {
   --color-background: var(--color-blue);
   --color-text: var(--color-light);
-  --input-padding: 0.8rem;
+  --input-padding: 0.9rem;
 
   background-color: var(--color-background);
-  border: 1px solid var(--color-dark);
-  box-shadow: 0.2rem 0.2rem 0 var(--color-dark);
+  border: 1px transparent var(--color-dark);
+  border-radius: 6px;
+  /* box-shadow: 0.2rem 0.2rem 0 var(--color-dark); */
   color: var(--color-text);
   cursor: pointer;
+  font-variation-settings: var(--font-flex-extrabold);
   text-transform: uppercase;
   letter-spacing: 1px;
 
@@ -66,6 +68,8 @@ const classes = computed(() => ({
   display: inline-flex;
   gap: var(--input-padding);
   justify-content: center;
+
+  transition: background-color 0.33s ease-in-out;
 }
 
 .robo-button:hover {

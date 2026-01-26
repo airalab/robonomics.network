@@ -1,32 +1,53 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ShopHeroFeatures from '../../components/blocks/ShopHeroFeatures.astro';
+import VideoGallery from '../../components/blocks/VideoGallery.astro';
 
-// components import 
-import DevicesList from '../../components/blocks/DevicesList.astro';
+// Shop images for gallery
+const shopImages = [
+  '/images/shop/shop-5.webp',
+];
 
-// images
-
+// Shop videos
+const shopVideos = [
+  '/video/shop-1.mp4',
+  '/video/shop-2.mp4',
+  '/video/shop-3.mp4',
+  '/video/shop-4.mp4',
+  '/video/shop-6.mp4',
+];
 ---
 
 <Layout 
   title={$tr("Robonomics open-source hardware")} 
   description={$tr("Experience the power of true DePIN (Decentralized Physical Infrastructure Network) — a revolutionary technological movement brought to life and thriving with Robonomics.")}
   ogImage="/og-pics/devices.webp"
-  pageTitle={$tr("Robonomics open-source hardware")} 
 >
 
-  <div class="layout layout__content">
-    <p><b>{$tr('Meet smart devices & futuristic hardware from an autonomous team with extensive expertise in robotics, blockchain, and IoT.')}</b></p>
-    <DevicesList />
-  </div>
+  <div class="layout layout__content shop-title"><h1 class="page-title devices-title">{$tr('Shop devices')}</h1></div>
 
-  
+  <ShopHeroFeatures />
+
+  <VideoGallery videos={shopVideos}  cls="pt"/>
+
 </Layout>
-
 
 <style>
 
-.layout__content b {
-  font-size: calc(var(--base-font-size) * 1.1);
-}
+  .shop-title {
+    padding-top: calc(var(--space) * 2);
+  }
+
+  .devices-title {
+    margin: 0;
+    margin-bottom: calc(var(--space) * 2.5);
+  }
+
+  @media screen and (max-width: 680px) {
+    .devices-title {
+      font-size: calc(var(--base-font-size) * 1.6);
+    }
+  }
+
+
 </style>

@@ -1,0 +1,94 @@
+---
+// components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/cases/CaseHeader.astro";
+import Footer from "../../components/cases/CaseFooter.astro";
+import CaseText from "../../components/cases/CaseText.astro";
+---
+
+<Layout
+  casePath={Astro.url}
+>
+
+  <Header
+    path={Astro.url.pathname}
+    introText={$tr("Originally, the following task was set: developing a quality control system for the production of a certain chemical product.")}
+    introImg="/blockchain-chemistry.webp"
+  />
+
+  <section class="case-page layout">
+    <div class="case-page__content hyphens">
+
+      <CaseText
+        title={$tr('Why is monitoring the quality so important here?')}
+        text={$tr("The main active substance of this chemical product is chlorine dioxide. It is hazardous to health in high concentrations. And if the concentration is below normal then this chemical product is useless.")}
+      />
+
+      <CaseText
+        title={$tr('What does Blockchain have to do with it?')}
+        text={$tr("Blockchain helps to build trust for the manufacturing company. The consumer knows that no one can change the information in the Blockchain. That means that the manufacturing company can not forge the results of the audit.")}
+      />
+
+      <CaseText
+        title={$tr('An autonomous Cyber-Physical System (CPS)')}
+        text={$tr("An autonomous Cyber-Physical System (CPS) that checks the concentration of a random packet from each batch was developed in order to solve this problem. And a spectrograph is used for verification. The audit was carried out manually during tests, but, with the emergence of the production line, it can be automated using a manipulator.")}
+      />
+
+      <CaseText
+        title={$tr("It's interesting how a CPS is building into the network of Robonomics")}
+        text={$tr("The quality control system is an autonomous economic agent that lists one single service on the market — quality control.")}
+      />
+
+      <CaseText
+        title={$tr('We considered the following scenario of CPS work:')}
+        multiple
+      >
+        <ol class="cases__list cases__list--numbered">
+          <li>{$tr('Demand is created on the site')}</li>
+          <li>{$tr('The system creates a corresponding supply offer')}</li>
+          <li>{$tr('AIRA creates a liability contract')}</li>
+          <li>{$tr('The system receives the task and starts implementing it')}</li>
+          <li>{$tr('Finalization of the liability')}</li>
+          <li>{$tr('Customer gets a QR code with the link to results of the audit')}</li>
+        </ol>
+      </CaseText>
+
+      <CaseText
+        title={$tr('The main work process')}
+        multiple
+      >
+        <p>{$tr("The main work starts happening after receiving the message 'task'. In our case, the lab technician sees that a liability contract was created. He then takes the next packet, checks the concentration of chlorine dioxide, and sends the file to the system. When the file is received, it's published in the IPFS network. The hash of the file and the address of the liability contract are stored in the local database, for quick access to information.")}</p>
+
+        <p>{$tr("Finally, the last message about the finalization of the liability is sent and tokens are transferred to the beneficiary. If the lab technician is removed from the script, the system becomes incorruptible. The quality control system for the chemical product was designed and launched as part of this project. For the record, the architecture of the project turned out to be universal. All it takes to change the algorithm of work after receiving the message 'task' is to implement the exact system at another production.")}</p>
+        
+        <p>{$tr('For more details about the implementation, see the')} <a href="https://blog.aira.life/chemistry-quality-control-system-behind-the-scene-b6db062343ac" target="_blank" rel="noopener noreferrer">{$tr('blog post about the chemistry quality control system')}</a>.</p>
+      </CaseText>
+
+    </div>
+  </section>
+
+  <Footer 
+    title={$tr('Universal architecture for quality control')}
+    text={[$tr("The quality control system for the chemical product was designed and launched as part of this project. The architecture of the project turned out to be universal. All it takes to change the algorithm of work after receiving the message 'task' is to implement the exact system at another production.")]}
+  />
+</Layout>
+
+<style>
+  .case-page {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .case-page__content .layout__text {
+    margin-bottom: var(--space);
+  }
+
+  .cases__list--numbered {
+    list-style: decimal;
+    margin-left: var(--space-text);
+  }
+
+  .cases__list--numbered li {
+    margin-bottom: calc(var(--space) * 0.5);
+  }
+</style>

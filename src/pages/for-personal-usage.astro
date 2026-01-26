@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RbButton from '../components/RbButton.astro';
+import ShopHeroFeatures from '../components/blocks/ShopHeroFeatures.astro';
+import VideoGallery from '../components/blocks/VideoGallery.astro';
+
+import { Image } from 'astro:assets';
+
+import Preview1 from '../assets/images/wallpapers/preview-1.webp';
+import Preview2 from '../assets/images/wallpapers/preview-2.webp';
+import Preview3 from '../assets/images/wallpapers/preview-3.webp';
+
+// images
+const images = [Preview1, Preview2, Preview3]
+
+// videos
+const videos = [
+  '/video/home-1.mp4',
+  '/video/shop-1.mp4',
+  '/video/shop-2.mp4',
+  '/video/shop-3.mp4',
+];
+
+const previews = [
+  '/video/preview/home-preview-1.webp',
+  '/video/preview/shop-preview-1.webp',
+  '/video/preview/shop-preview-2.webp',
+  '/video/preview/shop-preview-3.webp',
+];
+
+---
+
+<Layout 
+  title="For personal usage" 
+  description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
+>
+
+  <div class="layout layout__content page-title"><h1 class="page-title">{$tr('For personal usage')}</h1></div>
+
+  <VideoGallery small videos={videos} previews={previews} alt="For personal usage video example" cls="mb"/>
+
+  <ShopHeroFeatures cls="mb" />
+
+  <section class="cyberpunk-art section-vivid-green">
+    <div class="layout">
+      <h2>{$tr('CYBERPUNK ART')}</h2>
+      <p>{$tr('We also have cool cyberpunk-style (and not only) desktop wallpapers')}</p>
+
+      <div class="grid grid-3">
+      {images.map((img, index) => (
+        <Image src={img} alt="Wallpaper preview" />
+      ))}
+      </div>
+
+    <RbButton 
+      href='/wallpapers/' 
+      block
+      buttoncolor="blue"
+      buttonstyle="flat"
+      radius
+      extraCls="cyberpunk-art-btn"
+      noTarget={true}
+    >
+      {$tr('Get wallpapers')}
+    </RbButton>
+    </div>
+  </section>
+</Layout>
+
+<style>
+
+ h1 {
+    padding-top: calc(var(--space) * 2);
+    margin: 0;
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: calc(var(--space) * 0.5);
+  }
+
+
+  p {
+    margin-bottom: calc(var(--space) * 1.5);
+  }
+
+  .grid-3 {
+    margin-bottom: var(--space);
+  }
+
+  .cyberpunk-art {
+    padding: var(--space);
+    text-align: center;
+  }
+
+  .cyberpunk-art-btn {
+    max-width: 645px;
+    margin: 0 auto;
+  }
+
+
+</style>

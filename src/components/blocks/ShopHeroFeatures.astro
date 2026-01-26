@@ -1,0 +1,500 @@
+---
+import RbButton from '../RbButton.astro';
+
+const {
+  subtitle = $tr('CYBERPUNKS HARDWARE'),
+  headline = $tr("FOR PERSONAL USE AT CYBERPUNKS.SHOP!"),
+  description = $tr("Every product in the store requires no mandatory subscription, doesn't force you to connect to corporate clouds to control your own devices, doesn't spy on you, and never sells your data to Google's partner network."),
+  imageSrc, // Optional - will be randomly selected by script
+  imageAlt = 'Cyberpunks Hardware device',
+  shopUrl = 'https://cyberpunks.shop',
+  cls = ''
+} = Astro.props;
+---
+
+<section class="devices-hero">
+  <div class="layout">
+    <h2 class="devices-subtitle title-lined">
+      <span>{$tr(subtitle)}</span>
+    </h2>
+  </div>
+  <div class="layout layout__content">
+    <p class="devices-headline">{$tr(headline)}</p>
+    <p class="devices-description">
+      {$tr(description)}
+    </p>
+  </div>
+</section>
+
+<section class=`devices-features ${cls}`>
+  <div class="layout layout__content">
+    <div class="features-container grid grid-3">
+      <!-- Left column - Negative features -->
+      <div class="features-column features-column--left">
+        <div class="feature-item feature-item--negative">
+          <p class="feature-label">{$tr('NO vendor cloud')}</p>
+          <div class="feature-icon">
+            <img src="/images/icons/no-cloud.svg" alt="No vendor cloud" />
+          </div>
+        </div>
+
+        <div class="feature-item feature-item--negative">
+          <p class="feature-label">{$tr('NO personal data tracking')}</p>
+          <div class="feature-icon">
+            <img src="/images/icons/no-tracking.svg" alt="No personal data tracking" />
+          </div>
+        </div>
+
+        <div class="feature-item feature-item--negative">
+          <p class="feature-label">{$tr('NO mandatory subscription')}</p>
+          <div class="feature-icon">
+            <img src="/images/icons/no-subscription.svg" alt="No mandatory subscription" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Center column - Random Image (crossfade between two images) -->
+      <div class="feature-image">
+        <img
+          id="product-image-a"
+          data-role="image"
+          class="feature-image__img feature-image__img--visible"
+          src={imageSrc || '/images/shop/random-1.webp'}
+          alt={imageAlt}
+        />
+        <img
+          id="product-image-b"
+          data-role="image"
+          class="feature-image__img feature-image__img--hidden"
+          src={imageSrc || '/images/shop/random-2.webp'}
+          alt={imageAlt}
+          aria-hidden="true"
+        />
+      </div>
+
+      <!-- Right column - Positive features -->
+      <div class="features-column features-column--right">
+        <div class="feature-item feature-item--positive">
+          <div class="feature-icon">
+            <img src="/images/icons/open-source.svg" alt="Fully open-source" />
+          </div>
+          <p class="feature-label">{$tr('Fully open-source')}</p>
+        </div>
+
+        <div class="feature-item feature-item--positive">
+          <div class="feature-icon">
+            <img src="/images/icons/privacy.svg" alt="Privacy by design" />
+          </div>
+          <p class="feature-label">{$tr('Privacy by design')}</p>
+        </div>
+
+        <div class="feature-item feature-item--positive">
+          <div class="feature-icon">
+            <img src="/images/icons/global.svg" alt="Globally accessible" />
+          </div>
+          <p class="feature-label">{$tr('Globally accessible')}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-icons">
+      <div class="tech-icon">
+        <img src="/images/icons/gh.svg" alt="GitHub" />
+      </div>
+      <div class="tech-icon">
+        <img src="/images/icons/clog.svg" alt="Gear" />
+      </div>
+      <div class="tech-icon">
+        <img src="/images/icons/keyhole.svg" alt="Open Source Initiative" />
+      </div>
+      <div class="tech-icon">
+        <img src="/images/icons/homeassistant.svg" alt="Home Assistant" />
+      </div>
+      <div class="tech-icon">
+        <img src="/images/icons/tasmota.svg" alt="Tasmota" />
+      </div>
+      <div class="tech-icon">
+        <img src="/images/icons/polkadot.svg" alt="Polkadot" />
+      </div>
+      <div class="tech-icon">
+        <img src="/images/icons/ethereum.svg" alt="Ethereum" />
+      </div>
+    </div>
+
+    <RbButton 
+      href={shopUrl} 
+      buttonstyle="flat" 
+      buttoncolor="blue"
+      block
+      radius
+      extraCls="shop-now-button"
+      noTarget={false}
+    >
+      {$tr('SHOP NOW')}
+    </RbButton>
+  </div>
+</section>
+
+<script>
+  // Array of all product images
+  const productImages = [
+    '/images/shop/random-1.webp',
+    '/images/shop/random-2.webp',
+    '/images/shop/random-3.webp',
+    '/images/shop/random-4.webp',
+    '/images/shop/random-5.webp',
+    '/images/shop/random-6.webp',
+    '/images/shop/random-7.webp',
+    '/images/shop/random-8.webp',
+    '/images/shop/random-9.webp',
+    '/images/shop/random-10.webp'
+  ];
+
+  // Preload all product images to avoid "pop-in" when switching
+  const preloadedImages = [];
+  productImages.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+    preloadedImages.push(img);
+  });
+
+  let currentImageIndex = -1;
+  let isAnimating = false;
+  let useImageAAsCurrent = true; // toggle between A and B
+
+  function getRandomImage() {
+    let randomIndex;
+    // Ensure we don't show the same image twice in a row
+    do {
+      randomIndex = Math.floor(Math.random() * productImages.length);
+    } while (randomIndex === currentImageIndex && productImages.length > 1);
+    
+    currentImageIndex = randomIndex;
+    return productImages[randomIndex];
+  }
+
+  function changeProductImage() {
+    if (isAnimating) return;
+
+    const imgA = document.getElementById('product-image-a');
+    const imgB = document.getElementById('product-image-b');
+    if (!imgA || !imgB) return;
+
+    isAnimating = true;
+
+    const currentImg = useImageAAsCurrent ? imgA : imgB;
+    const nextImg = useImageAAsCurrent ? imgB : imgA;
+
+    const nextSrc = getRandomImage();
+
+    // Prepare next image
+    nextImg.src = nextSrc;
+    nextImg.classList.add('feature-image__img--hidden');
+    nextImg.classList.remove('feature-image__img--visible');
+
+    // Force paint
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        // Start crossfade
+        currentImg.classList.remove('feature-image__img--visible');
+        currentImg.classList.add('feature-image__img--hidden');
+
+        nextImg.classList.remove('feature-image__img--hidden');
+        nextImg.classList.add('feature-image__img--visible');
+
+        // 🔑 Wait for opacity transition of the CURRENT image
+        const onFadeOutEnd = (e) => {
+          if (e.propertyName !== 'opacity') return;
+
+          currentImg.removeEventListener('transitionend', onFadeOutEnd);
+          useImageAAsCurrent = !useImageAAsCurrent;
+          isAnimating = false;
+        };
+
+        currentImg.addEventListener('transitionend', onFadeOutEnd);
+      });
+    });
+  }
+
+  // Initialize: set up two images and start rotation
+  document.addEventListener('DOMContentLoaded', () => {
+    const imgA = document.getElementById('product-image-a');
+    const imgB = document.getElementById('product-image-b');
+    if (imgA && imgB) {
+      const currentSrcA = imgA.getAttribute('src') || '';
+      const idxA = productImages.findIndex(
+        (imgPath) => currentSrcA === imgPath || currentSrcA.endsWith(imgPath),
+      );
+
+      if (idxA !== -1) {
+        currentImageIndex = idxA;
+      } else {
+        const initialImage = getRandomImage();
+        imgA.src = initialImage;
+      }
+
+      // ensure correct starting classes
+      imgA.classList.add('feature-image__img', 'feature-image__img--visible');
+      imgA.classList.remove('feature-image__img--hidden');
+
+      imgB.classList.add('feature-image__img', 'feature-image__img--hidden');
+      imgB.classList.remove('feature-image__img--visible');
+
+      // Change image every 3 seconds (adjust as you like)
+      setInterval(changeProductImage, 3000);
+    }
+  });
+</script>
+
+<style>
+  /* Hero Section */
+  .devices-hero {
+    padding: 0;
+    margin-bottom: var(--space);
+    text-align: center;
+  }
+
+  .devices-features.pt {
+    padding-top: calc(var(--space) * 2);
+  }
+
+  .devices-features.mb {
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .devices-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--space) * 1.5);
+    font-size: calc(var(--base-font-size) * 2);
+    font-variation-settings: var(--font-flex-extrabold);
+    text-transform: uppercase;
+    color: var(--color-dark);
+    margin: calc(var(--space) * 0.5) 0;
+    letter-spacing: 2px;
+  }
+
+  .devices-headline {
+    font-size: calc(var(--base-font-size) * 1.8);
+    font-variation-settings: var(--font-flex-extrabold);
+    color: var(--color-blue);
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: calc(var(--space) * 0.5);
+    letter-spacing: 1px;
+  }
+
+  .devices-description {
+    margin: 0;
+    margin-bottom: calc(var(--space) * 0.5);
+    font-variation-settings: var(--font-flex-medium);
+    color: var(--color-dark);
+  }
+
+  .features-container {
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .feature-image {
+    position: relative;
+    width: 100%;
+    max-width: 432px;   
+    aspect-ratio: 1 / 1; 
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .feature-image__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transform: scale(0.985);
+    transition:
+      opacity 0.5s ease,
+      transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+  }
+
+  .feature-image__img--visible {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+  }
+
+  .feature-image__img--hidden {
+    opacity: 0;
+    transform: scale(0.985);
+    z-index: 0;
+  }
+
+  .features-column {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) * 0.5)
+  }
+
+  .feature-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(var(--space) * 0.5);
+  }
+
+  .feature-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .feature-item--positive .feature-icon  {
+    justify-content: start;
+  }
+
+  .feature-icon img {
+    max-width: 80px;
+    height: 80px;
+  }
+
+  .feature-label {
+    width: 100%;
+    font-size: calc(var(--base-font-size) * 0.7);
+    font-variation-settings: var(--font-flex-bold);
+    color: var(--color-dark);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* Tech Icons Section */
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--space) * 1.5);
+    flex-wrap: wrap;
+    margin-bottom: calc(var(--space) * 1.4);
+  }
+
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  .tech-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: 680px) {
+    .devices-hero {
+      margin-bottom: calc(var(--space) * 2);
+    }
+    
+    .devices-subtitle {
+      font-size: calc(var(--base-font-size) * 1.4);
+    }
+
+    .devices-headline {
+      font-size: calc(var(--base-font-size) * 1.3);
+    }
+
+    .devices-description {
+      font-size: calc(var(--base-font-size) * 1);
+    }
+
+    .features-container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    .feature-icon  {
+      width: unset;
+    }
+
+    .feature-icon img {
+      max-width: 50px;
+    }
+
+    .feature-item {
+      gap: calc(var(--space) * 0.8);
+    }
+
+    .features-column--left  .feature-item  {
+      flex-direction: row-reverse;
+      align-items: center;
+      text-align: left;
+    }
+
+    .features-column--left .feature-icon {
+      justify-content: start;
+    }
+
+    .features-column--left .feature-label {
+      text-align: right !important;
+    }
+
+    .features-column--right {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .feature-image {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .features-container {
+      grid-template-columns: 1fr;
+      justify-items: start;
+    }
+
+    .features-column {
+      width: 100%;
+    }
+
+    .features-column--left {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .features-column--right {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .feature-label {
+      width: unset;
+      text-align: right !important;
+    }
+
+    .feature-image {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .feature-image__img {
+      transition: opacity 0.01s linear;
+      transform: none;
+    }
+  }
+</style>

@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RbButton from '../components/RbButton.astro';
+import VideoGallery from '../components/blocks/VideoGallery.astro';
+
+import { Image } from 'astro:assets';
+
+// images
+import HASS from '../assets/images/for-smart-home/home-assistant.webp';
+import HASS2 from '../assets/images/for-smart-home/home-assistant-2.webp';
+
+import HASSENG from'../assets/images/for-smart-home/hass-for-engineers.webp';
+import DIYGEEKS from'../assets/images/for-smart-home/diy-geeks.webp';
+
+// videos
+const videos = [
+  '/video/smart-home-1.mp4',
+  '/video/smart-home-2.mp4',
+  '/video/smart-home-3.mp4',
+  '/video/smart-home-4.mp4',
+];
+
+const previews = [
+  '/video/preview/smart-home-preview-1.webp',
+  '/video/preview/smart-home-preview-2.webp',
+  '/video/preview/smart-home-preview-3.webp',
+  '/video/preview/smart-home-preview-4.webp', 
+];
+
+---
+
+<Layout 
+  title="For smart homes" 
+  description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
+>
+
+  <div class="layout layout__content page-title"><h1 class="page-title devices-title">{$tr('For smart homes')}</h1></div>
+
+  <VideoGallery small videos={videos} previews={previews} alt="For smart homes video example" cls="mb"/>
+
+  <section class="support">
+    <div class="layout text-center">
+      <h2 class="title-lined">
+        <span>{$tr('PRO SMART HOME SUPPORT')}</span>
+      </h2>
+
+      <h4 class="highlight-green">{$tr('WE BUILD IT FOR YOU')}</h4>
+      <p class="description-bold">{$tr('If you need help implementing a smart home project for an apartment or private house almost anywhere in the world — contact our smart home integration engineers at')} <a href="https://pinout.cloud/" aria-label="go to pinout website" class="underline">Pinout.cloud.</a></p>
+      <p>{$tr('We’ll support you at every stage: from working with blueprints to programming, configuration, and on-site installation in most countries worldwide.')}</p>
+      <div class="grid grid-2">
+        <Image src={HASS} alt="homeassistant interface" />
+        <Image src={HASS2} alt="we built for you image" />
+      </div>
+      <RbButton 
+        href='https://pinout.cloud/contact-us' 
+        block
+        buttoncolor="blue"
+        buttonstyle="flat"
+        radius
+        extraCls="for-smart-home-btn"
+        noTarget={false}
+      >
+        {$tr('Request a Consultation by pinout')}
+      </RbButton>
+    </div>
+  </section>
+
+  <section class="diy">
+    <div class="layout text-center">
+      <h2 class="title-lined">
+        <span>{$tr('BUILD SMART HOME YOURSELF')}</span>
+      </h2>
+
+      <h4 class="highlight-green">{$tr('FOR ENGINEERS & DIY GEEKS')}</h4>
+      <p class="description-bold">{$tr('For those who want to build a smart home DIY-style, we’ve got something awesome for you too — a detailed guide!')}</p>
+      <div class="grid grid-2">
+        <Image src={HASSENG} alt="homeassistant for engineers" />
+        <Image src={DIYGEEKS} alt="diy geeks image" />
+      </div>
+      <RbButton 
+        href='https://wiki.robonomics.network/docs/install-smart-home/' 
+        block
+        buttoncolor="blue"
+        buttonstyle="flat"
+        radius
+        extraCls="for-smart-home-btn"
+        noTarget={false}
+      >
+        {$tr('wiki Smart Home Installation')}
+      </RbButton>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+
+   h1 {
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  h2 {
+    margin-bottom: calc(var(--space) * 0.5);
+  }
+
+  h4 {
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: var(--space);
+  }
+
+  p {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p:last-of-type {
+    margin-bottom: calc(var(--space) * 2.2);
+  }
+  
+  section {
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .grid-2 {
+    max-width: 1400px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .description-bold {
+    font-variation-settings: var(--font-flex-bold);
+  }
+
+  .for-smart-home-btn {
+    max-width: 645px;
+    margin: 0 auto;
+  }
+</style>

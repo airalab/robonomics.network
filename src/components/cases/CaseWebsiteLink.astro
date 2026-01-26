@@ -1,0 +1,44 @@
+---
+const {link, linkText} = Astro.props;
+---
+
+<a href={link} class="case-page__website-link" aria-label="go check the link" target="_blank" rel="noopener noreferrer">
+  <span class="case-page__website-link-text">{ linkText }</span>
+  <span class="arrow-icon" />
+</a>
+
+<style>
+
+  .case-page__website-link {
+    padding: calc(var(--space) * 0.5);
+    background-color: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.33s ease-in-out;
+    box-shadow: .5rem .4rem 0 var(--color-dark);
+  }
+  
+  .case-page__website-link:hover {
+    box-shadow: .4rem .4rem 0 var(--color-link);
+  }
+  
+  .case-page__website-link-text {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    padding-left: 0;
+    font-weight: 800;
+    color: var(--color-link);
+  }
+  
+  .arrow-icon {
+    display: inline-block;
+    width: 35px;
+    height: 36px;
+    background-image: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.5 2C28.5 1.17157 27.8284 0.500001 27 0.5L13.5 0.5C12.6716 0.5 12 1.17157 12 2C12 2.82843 12.6716 3.5 13.5 3.5L25.5 3.5L25.5 15.5C25.5 16.3284 26.1716 17 27 17C27.8284 17 28.5 16.3284 28.5 15.5L28.5 2ZM3.06066 28.0607L28.0607 3.06066L25.9393 0.93934L0.93934 25.9393L3.06066 28.0607Z' fill='%232949D3'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  
+  </style>

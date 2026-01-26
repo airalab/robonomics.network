@@ -9,6 +9,7 @@ const {
   scale = '1',
   disabled = false,
   extraCls = '',
+  radius = false,
   noTarget =  false,
   ...attrs
 } = Astro.props;
@@ -19,6 +20,7 @@ const classes = [
   block && 'rb-button-block',
   buttonstyle && `rb-button-${buttonstyle}`,
   buttoncolor && `rb-button-${buttoncolor}`,
+  radius && `rb-button-radius`,
   extraCls
 ].filter(Boolean).join(' ');
 
@@ -85,6 +87,7 @@ const smoothScroll = anchor ? { updateHistory: false, offset: -250 } : null;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out
   }
 
   .rb-button:hover {
@@ -144,5 +147,9 @@ const smoothScroll = anchor ? { updateHistory: false, offset: -250 } : null;
     --b-color-background-hover: var(--rb-color-violet-dark);
     --b-color-text: var(--rb-color-dark);
     font-weight: 900;
+  }
+
+  .rb-button-radius {
+    border-radius: 6px;
   }
 </style>

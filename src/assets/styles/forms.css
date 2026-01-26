@@ -2,7 +2,7 @@ input, select, button, textarea {
 	--border-width: 2px;
 	--border-color: var(--color-dark);
 	--input-background: var(--color-light);
-	--input-padding: .5rem;
+	--input-padding: .9rem;
 	--input-text-color: var(--color-dark);
 	--font-settings: var(--font-flex-bold);
 	--font-family: var(--font-family);
@@ -27,6 +27,10 @@ input:not([type='checkbox']):not([type='radio']), select, button, textarea {
 	padding: var(--input-padding) calc(var(--input-padding) * 1.2);
 	background-color: var(--input-background);
 	color: var(--input-text-color);
+}
+
+input:not([type='checkbox']):not([type='radio']) {
+	border-radius: 6px;
 }
 
 input:not([type='submit']):focus {
@@ -142,7 +146,7 @@ select {
 }
 
 label {
-	font-size: 80%;
+	font-size: calc(var(--base-font-size) * 0.7);
 }
 
 .error, input.error {

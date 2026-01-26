@@ -1,0 +1,162 @@
+---
+
+const {
+  videos = [],
+  previews = [],
+  small,
+  alt = 'Robonomics product',
+  cls = '',
+} = Astro.props;
+---
+
+<section class={`video-gallery ${cls}`}>
+  <div class={`layout ${small ? 'layout__content' : ''}`} >
+    <div class="gallery-grid">
+      {videos.map((video, index) => {
+        const preview = previews[index];
+        const hasPreview = !!preview;
+
+        return (
+          <div class="gallery-item">
+            {hasPreview && (
+              <img
+                class="video-gallery__preview"
+                src={preview}
+                alt=""
+                loading="lazy"
+              />
+            )}
+
+            <video 
+              class={`video-gallery__video ${hasPreview ? '' : 'video-gallery__video--visible'}`}
+              src={video} 
+              muted 
+              playsinline
+              autoplay
+              loop
+              preload="metadata"
+              aria-label={`${alt} ${index + 1}`}
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+<script>
+  // If previews are provided, show preview first and fade to video when ready
+  document.addEventListener('DOMContentLoaded', () => {
+    const videos = document.querySelectorAll<HTMLVideoElement>('.video-gallery__video');
+
+    videos.forEach((video) => {
+      const preview = video.previousElementSibling as HTMLImageElement | null;
+
+      if (!preview || !preview.classList.contains('video-gallery__preview')) return;
+
+      let transitionStarted = false;
+
+      const showVideo = () => {
+        if (transitionStarted) return;
+        transitionStarted = true;
+
+        requestAnimationFrame(() => {
+          video.classList.add('video-gallery__video--visible');
+          preview.classList.add('video-gallery__preview--hidden');
+        });
+      };
+
+      if (video.readyState >= 3) {
+        setTimeout(showVideo, 50);
+      } else {
+        video.addEventListener('canplaythrough', showVideo, { once: true });
+        video.addEventListener(
+          'loadeddata',
+          () => {
+            setTimeout(showVideo, 100);
+          },
+          { once: true }
+        );
+      }
+    });
+  });
+</script>
+
+<style>
+
+  .video-gallery.pt {
+    padding-top: calc(var(--space) * 2);
+  }
+
+  .video-gallery.mb {
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .gallery-grid {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: calc(var(--space) * 0.5);
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    min-height: 362px;
+    background-color: var(--color-gray-light);
+  }
+
+  .gallery-item img,
+  .gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover video {
+    transform: scale(1.05);
+  }
+
+  .video-gallery__preview {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 1s ease-in-out, filter 0.3s ease-in;
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .video-gallery__preview--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .video-gallery__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.92);
+    transition: opacity 1s ease-in-out, filter 0.3s ease-in;
+    z-index: 2;
+    opacity: 0;
+    will-change: opacity;
+  }
+
+  /* When there is no preview or after fade-in */
+  .video-gallery__video--visible {
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+  }
+</style>

@@ -1,0 +1,460 @@
+---
+import {
+  Swiper,
+  SwiperWrapper,
+  SwiperPagination,
+  SwiperButtonPrev,
+  SwiperButtonNext
+} from "astro-swiper";
+
+import type { SwiperOptions } from "swiper/types";
+
+import RbButton from "../../components/RbButton.astro";
+
+const slides = [
+  {
+    bg: "/images/home/banner-bg-1.webp",
+    bgMobile: "/images/home/banner-bg-mobile-1.webp",
+    bgColor: "var(--color-blue-extra-dark)",
+    title: $tr("We Are Building an Open Ecosystem of the Future"),
+    text:
+      $tr("Building and growing this kind of open-source ecosystem is our deep passion and mission. We'd be genuinely thrilled to see you join our community of users!"),
+    authorTitle: $tr("Project Architect"),
+    authorName: $tr("Sergey Lonshakov"),
+    authorAvatar: "sergey.webp",
+  },
+  {
+    bg: "/images/home/banner-bg-2.webp",
+    bgMobile: "/images/home/banner-bg-mobile-2.webp",
+    bgColor: "var(--color-gray)",
+    title: $tr("Comfort powered by open technologies"),
+    text:
+      $tr("Since 2017, I have been actively involved in the project, applying and developing open-source smart home solutions based on Robonomics, making people's lives in Cyprus more comfortable."),
+    authorTitle: $tr("Robonomics engineer"),
+    authorName: $tr("Vadim Manaenko"),
+    authorAvatar: "vadim.webp",
+  },
+  {
+    bg: "/images/home/banner-bg-3.webp",
+    bgMobile: "/images/home/banner-bg-mobile-3.webp",
+    bgColor: "var(--rb-color-green-accent)",
+    title: $tr("Cyberpunk is a choice in favor of privacy"),
+    text:
+     $tr("Privacy today has become something like art. But it is a norm that everyone should have. Value your digital freedom and personal space."),
+    authorTitle: $tr("Robo Art & Science"),
+    authorName: $tr("Anna Wimmer-S"),
+    authorAvatar: "anna.webp",
+  },
+];
+
+const uid = `ecosystem-${Math.random().toString(36).slice(2, 9)}`;
+
+const options: SwiperOptions = {
+  speed: 420,
+  slidesPerView: 1,
+  loop: true,
+  autoHeight: true,
+
+  pagination: {
+    el: `.${uid}-pagination`,
+    clickable: true,
+  },
+
+  navigation: {
+    prevEl: `.${uid}-prev`,
+    nextEl: `.${uid}-next`,
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+  a11y: {
+    prevSlideMessage: "Previous slide",
+    nextSlideMessage: "Next slide",
+  },
+};
+---
+<section class="home-ecosystem" aria-label="Project and team">
+    <div class="home-ecosystem__slider">
+      <Swiper options={options}>
+        <SwiperWrapper>
+          {slides.map((s) => (
+            <div class="home-ecosystem__slide swiper-slide" style={`background-color: ${s.bgColor};`}>
+              <img
+                class="home-ecosystem__bg "
+                src={s.bg}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+              />
+              <img
+                class="home-ecosystem__bg home-ecosystem__bg-mobile"
+                src={s.bgMobile}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+              />
+              <div class="home-ecosystem__slide-inside layout">
+                <div class="home-ecosystem__content">
+                  <h2>{s.title}</h2>
+                  <p>{s.text}</p>
+
+                  <div class="home-ecosystem__author">
+                    <img
+                      class="home-ecosystem__avatar"
+                      src={`/images/avatar/${s.authorAvatar}`}
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div>
+                      <div class="home-ecosystem__author-title">
+                        {s.authorTitle}
+                      </div>
+                      <div class="home-ecosystem__author-name">
+                        {s.authorName}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </SwiperWrapper>
+
+        <SwiperPagination
+          class={`home-ecosystem__dots ${uid}-pagination`}
+        />
+
+        <RbButton style="display:none" noTarget extraCls="button swiper-button" href="/intro/" aria-label="learn more about our project and our team">{$tr('MORE ABOUT PROJECT TEAM')}</RbButton>
+      </Swiper>
+
+      <SwiperButtonPrev
+        class={`home-ecosystem__arrow home-ecosystem__arrow--left ${uid}-prev`}
+      >
+        <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.585786 13.3137C-0.195262 14.0947 -0.195262 15.3611 0.585786 16.1421L13.3137 28.87C14.0948 29.6511 15.3611 29.6511 16.1421 28.87C16.9232 28.089 16.9232 26.8227 16.1421 26.0416L4.82843 14.7279L16.1421 3.4142C16.9232 2.63315 16.9232 1.36682 16.1421 0.58577C15.3611 -0.195279 14.0948 -0.195279 13.3137 0.58577L0.585786 13.3137ZM2 14.7279V16.7279H120V14.7279V12.7279H2V14.7279Z" fill="white"/>
+        </svg>
+      </SwiperButtonPrev>
+
+      <SwiperButtonNext
+        class={`home-ecosystem__arrow home-ecosystem__arrow--right ${uid}-next`}
+      >
+        <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);">
+          <path d="M0.585786 13.3137C-0.195262 14.0947 -0.195262 15.3611 0.585786 16.1421L13.3137 28.87C14.0948 29.6511 15.3611 29.6511 16.1421 28.87C16.9232 28.089 16.9232 26.8227 16.1421 26.0416L4.82843 14.7279L16.1421 3.4142C16.9232 2.63315 16.9232 1.36682 16.1421 0.58577C15.3611 -0.195279 14.0948 -0.195279 13.3137 0.58577L0.585786 13.3137ZM2 14.7279V16.7279H120V14.7279V12.7279H2V14.7279Z" fill="white"/>
+        </svg>
+      </SwiperButtonNext>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const initNavigation = () => {
+    const swiperEl = document.querySelector('.home-ecosystem .swiper');
+    const swiper = swiperEl?.swiper;
+
+    if (swiper && swiper.navigation) {
+      swiper.navigation.destroy();
+      swiper.navigation.init();
+      swiper.navigation.update();
+    }
+  };
+
+  if (document.readyState === 'complete') {
+    initNavigation();
+  } else {
+    window.addEventListener('load', initNavigation);
+  }
+</script>
+
+<style is:global>
+  /* Pagination container */
+.home-ecosystem__dots {
+  position: absolute;
+  width: unset !important;
+  left: 50% !important;
+  bottom: 10% !important;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  z-index: 6;
+}
+
+/* Bullet base */
+.home-ecosystem__dots .swiper-pagination-bullet {
+  width: 8px;
+  height: 20px;
+  border-radius: 0; 
+  background-color: var(--color-light);
+  border: none;
+  opacity: 1;
+  margin: 0 !important;
+  transition:
+    background-color 200ms ease,
+    transform 200ms ease,
+    opacity 200ms ease;
+  cursor: pointer;
+}
+
+/* Active bullet */
+.home-ecosystem__dots .swiper-pagination-bullet-active {
+  background-color: #FF1493;
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+.home-ecosystem__dots .swiper-pagination-bullet:hover {
+  background-color: #FF1493;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 720px) {
+  /* On mobile, keep bullets at the very bottom of the slide */
+  .home-ecosystem__dots {
+    bottom: 1rem !important;
+    z-index: 10 !important;
+  }
+}
+</style>
+
+<style>
+
+  .home-ecosystem__bg-mobile {
+    display: none;
+  }
+
+  .home-ecosystem__slider {
+    position: relative;
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+
+  /* In RTL, keep swiper aligned to the viewport instead of shifting it off-screen */
+  html[dir="rtl"] .home-ecosystem__slider {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .home-ecosystem__slide {
+    position: relative;
+    padding: var(--space) 0;
+    padding-bottom: calc(var(--space) * 5);
+    min-height: 650px;
+    display: flex;
+    align-items: stretch;
+    color: var(--color-dark)
+  }
+
+  /* Force swiper internal flow to remain LTR even on RTL pages */
+  html[dir="rtl"] .home-ecosystem__slider :global(.swiper) {
+    direction: ltr;
+  }
+
+  .home-ecosystem__slide[data-swiper-slide-index=0] {
+    color: var(--color-light)
+  }
+
+  .home-ecosystem__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .home-ecosystem__slide-inside {
+    width: calc(100% - 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    z-index: 20;
+  }
+
+  .home-ecosystem__content {
+    align-self: flex-end;
+  }
+
+  .home-ecosystem__content h2 {
+    margin: 0;
+    margin-bottom: calc(var(--space) * 0.5);
+    text-align: left;
+    text-transform: unset;
+    max-width: 634px;
+  }
+
+  .home-ecosystem__slide[data-swiper-slide-index=2] .home-ecosystem__content h2 {
+    text-shadow: 0 -2px 0 var(--rb-color-green-accent), 4px 0px 0 var(--rb-color-green-accent);
+  }
+
+  .home-ecosystem__content p {
+    max-width: 634px;
+  }
+
+  html[dir="rtl"] .home-ecosystem__content h2,
+  html[dir="rtl"] .home-ecosystem__content p {
+    text-align: right;
+  }
+
+
+  .home-ecosystem__author {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .home-ecosystem__avatar {
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .home-ecosystem__author-title {
+    font-size: 0.85rem;
+    opacity: 0.85;
+  }
+
+  .home-ecosystem__author-name {
+    font-variation-settings: var(--font-flex-bold);
+  }
+
+  .home-ecosystem__arrow {
+    position: absolute;
+    top: unset;
+    bottom: 5%;
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 2.4rem;
+    cursor: pointer;
+    z-index: 5;
+    padding: 0;
+    width: 260px;
+    height: 35px;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .home-ecosystem__arrow:hover {
+    opacity: 0.6;
+  }
+
+  .home-ecosystem__arrow svg {
+    width: 130px;;
+    height: 100%;
+    display: block;
+  }
+
+  .home-ecosystem__arrow--left { left: 0.6rem; }
+  .home-ecosystem__arrow--right { right: 0.6rem; }
+
+  html[dir="rtl"] .home-ecosystem__arrow--left {
+    left: auto;
+    right: 0.6rem;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  html[dir="rtl"] .home-ecosystem__arrow--right {
+    right: auto;
+    left: 0.6rem;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .swiper-button {
+    position: absolute;
+    left: 50%;
+    bottom: 3.5rem;
+    padding-left: 4rem; 
+    padding-right: 4rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%) !important;
+    z-index: 20;
+  }
+
+  /* Mirror CTA button for Arabic / RTL */
+  html[dir="rtl"] .swiper-button {
+    flex-direction: row-reverse;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .home-ecosystem__slide-inside {
+      width: calc(100% - 20px);
+    }
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .home-ecosystem__slide {
+      min-height: 520px;
+    }
+
+    .home-ecosystem__slide[data-swiper-slide-index="2"] .home-ecosystem__bg {
+      height: 100%;
+      transform: translateX(50%) translateY(30%);
+    }
+
+    .home-ecosystem__arrow {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .home-ecosystem__slide {
+      min-height: 580px;
+      padding-bottom: calc(var(--space) * 4); /* extra space for bullets */
+    }
+
+    .home-ecosystem__bg {
+      display: none;
+    }
+
+    .home-ecosystem__bg-mobile {
+      display: block;
+      inset: unset;
+      position: absolute;
+      bottom: 3.5rem; /* leave room below for bullets */
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      max-height: 55%;
+      object-fit: contain;
+      z-index: 1;
+    }
+
+    .home-ecosystem__slide[data-swiper-slide-index="0"] .home-ecosystem__bg-mobile {
+      width: 65%;
+      left: auto;
+      right: 0;
+    }
+
+    .home-ecosystem__slide[data-swiper-slide-index="2"] .home-ecosystem__bg {
+      transform: unset;
+    }
+  }
+
+  @media screen and (max-width: 590px) {
+    .home-ecosystem__slide {
+      /* min-height: 522px; */
+      padding-bottom: calc(var(--space) * 4);
+      padding-top: calc(var(--space) * 2.5);
+    }
+    
+
+    .home-ecosystem__slide-inside {
+      width: 100%;
+      justify-content: start;
+    }
+  }
+</style>

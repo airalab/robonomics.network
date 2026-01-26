@@ -1,63 +1,54 @@
 ---
 // components
 import Layout from '../layouts/Layout.astro'
-
-// data
-import {contacts} from '../data/socials.js';
-
-// social array
-const showcontacts = ['X', 'Discord', 'Telegram Traders', 'Youtube'];
-
-let contactlist = [];
-
-// map data for specific social
-const mapContactlist = () => {
-  showcontacts.forEach(c => {
-    contacts.forEach(i => {
-      if(c === i.title) {
-        contactlist.push(i);
-      }
-    })
-  });
-}
-
-mapContactlist();
+import ContactForm from '../components/blocks/ContactForm.vue';
 ---
 
 <Layout 
   title={$tr("Contacts")}
   ogImage="/website_cover_contacts.webp"
-  pageTitle={$tr("Contacts")}
 >
 
+<section>
   <div class="layout layout__text">
-    <ul class="list-links">
-      {contactlist.map((item) => (
-        <li class="oldy oldy__link">
-            <div class="icon" set:html={item.svg} aria-hidden="true"/>
-            <a href={item.link} aria-label={`go to ${item.text}`} target="_blank"><b>{$tr(item.text)}</b></a>
-        </li>
-      ))}
-    </ul>
+    <h1 class="page-title">{$tr('ASK A TECHNICIAN')}</h1>
+
+    <p>{$tr('If you are seeking technical collaboration involving smart devices or decentralized network infrastructure, feel free to ask any questions about Robonomics technologies, whether theoretical or practical.')}</p>
+    <p class="text-small">{$tr('Kindly avoid marketing inquiries :D')}</p>
+
+    <div class="form-container">
+      <ContactForm client:only />
+    </div>
   </div>
+</section>
+
 
 </Layout>
 
-
 <style>
-  .list-links li {
-    display: flex;
-    gap: var(--space);
-    align-items: center;
+  section {
+    padding-top: calc(var(--space) * 2);
   }
-  
-  .list-links a {
-      font-variation-settings: var(--font-flex-bold);
-      margin-bottom: calc(var(--space) * 0.2);
-      color: var(--text-color);
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: calc(var(--space) * 0.5);
+    text-align: center;
   }
-  
-  .icon {
-    width: 50px;
+
+  p {
+    margin-bottom: calc(var(--space) * 0.5);
+    text-align: center;
+  }
+
+  .form-container {
+    min-height: 350px;
+  }
+
+  .text-small {
+    font-size: calc(var(--base-font-size) * 0.75);
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: calc(var(--space) * 2);
   }
 </style>

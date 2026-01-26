@@ -1923,6 +1923,13 @@ astro-matomo@^1.8.0:
   resolved "https://registry.yarnpkg.com/astro-matomo/-/astro-matomo-1.8.0.tgz#79853f6f1b32739f92d5654b31ecc3cd715f1796"
   integrity sha512-yg7XgTEyYrVqVIWi/MiQtlbHdczIa2P/E+a/x3dW/oa3H4haH7rwcgvBLtsCWu++MAJYs+D956rz8Nl9nNvC6Q==
 
+astro-swiper@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/astro-swiper/-/astro-swiper-1.3.0.tgz#84fe25af345f3de4112845cc7d19585855fa9278"
+  integrity sha512-C6gYs/aSR+aj5/ieGyscOM1U7zVOx/drI6YAygKA5kXRkDkdrXoH6kR7fL4bhc0VYNqbGBxMCH9IMO9is2XHPg==
+  dependencies:
+    swiper "^12.0.0"
+
 astro@^5.5.3:
   version "5.5.3"
   resolved "https://registry.yarnpkg.com/astro/-/astro-5.5.3.tgz#9f6a66f0dd4183939da6776af6dd737155cd4e61"
@@ -5096,6 +5103,11 @@ svgo@^3.3.2:
     css-what "^6.1.0"
     csso "^5.0.5"
     picocolors "^1.0.0"
+
+swiper@^12.0.0:
+  version "12.0.3"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-12.0.3.tgz#c7804fd39955189d3ec652d9832896bd3d04733e"
+  integrity sha512-BHd6U1VPEIksrXlyXjMmRWO0onmdNPaTAFduzqR3pgjvi7KfmUCAm/0cj49u2D7B0zNjMw02TSeXfinC1hDCXg==
 
 three@^0.168.0:
   version "0.168.0"

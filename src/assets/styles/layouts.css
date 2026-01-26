@@ -86,8 +86,8 @@
 	
 	.section-vivid-green {
 		background: var(--rb-color-green-accent);
-    border-radius: 4px;
-    padding: var(--space);
+    /* border-radius: 4px;
+    padding: var(--space); */
 	}
 
   section section:first-child, .section section:first-child {

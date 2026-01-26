@@ -1,7 +1,7 @@
 ---
-import Navigation from '../blocks/Navigation.astro';
-import Socials from '../blocks/Socials.astro'
+import HeaderList from './HeaderList.astro'
 ---
+
 
 <div id="sidetext" class="sidetext">
   <div id="nav-toggler" class="nav-toggler" tabindex="0">
@@ -10,9 +10,8 @@ import Socials from '../blocks/Socials.astro'
     <div></div>
   </div>
 
-  <div  class="nav-content">
-      <Navigation/>
-      <Socials/>
+  <div class="nav-content" aria-label="Mobile menu">
+    <HeaderList/>
   </div>
 
 </div>
@@ -64,9 +63,10 @@ import Socials from '../blocks/Socials.astro'
       position: fixed;
       right: 0;
       text-align: left;
-      top: calc(var(--screen-padding-top) + 1px);
+      top: var(--header-height, calc(var(--screen-padding-top) + 1px));
       transform: translateX(-20px);
       z-index: 1012;
+      max-height: calc(100vh - var(--header-height, var(--screen-padding-top)));
   }
 
   .nav-content .navigation__layout {

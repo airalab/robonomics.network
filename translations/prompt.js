@@ -79,7 +79,7 @@ const translateNewLine = async (from, to, input, locale) => {
           role: "system",
           content: [
             `Translate this string from ${from} to ${to}.`,
-            `Do NOT add any commas or dots if there are none in the original text and do NOT change the case of the original words.`
+            `Do NOT add any commas or dots IF there are none in the original text and do NOT change the case of the original words.`
           ].join('\n')
         },
         {

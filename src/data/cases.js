@@ -108,19 +108,19 @@ export default {
     {
       id: 6,
       title: $trVue('Production quality control platform “Feecc”'),
-      description: '',
+      description: $trVue('For almost 4 years now there is a long-lasting experiment held to apply Robonomics technologies to a real-life production business. FEECC is a decentralized manufacturing data accumulation system that enables traceability of key production stages and ensures the integrity of data that cannot be altered or substituted thanks to blockchain-based immutability.'),
       path: 'cases/quality-control-platform-feecc',
       cover_image: 'feecc.webp',
       // progress field needs for "sort by progress" filter
-      progress: 'proceeding',
+      progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
       created: '2021-05-06',
       // updated field needs for "sort by date" filter (for recent option)
-      updated: '2022-05-06',
+      updated: '2024-09-12',
       // tags field needs for "sort by interest" filter
       // use lowerCase
-      tags: ['polkadot ecosystem', 'data storage', 'smart service'],
-      done: false
+      tags: ['polkadot ecosystem', 'data storage', 'smart service', 'quality control'],
+      done: true
     },
     {
       id: 7,
@@ -193,8 +193,8 @@ export default {
     {
       id: 11,
       title: $trVue('Blockchain as quality control system for chemistry'),
-      description: '',
-      path: 'cases/quality-control-platform-feecc',
+      description: $trVue('Originally, the following task was set: developing a quality control system for the production of a certain chemical product. An autonomous Cyber-Physical System (CPS) that checks the concentration of a random packet from each batch was developed in order to solve this problem.'),
+      path: 'cases/blockchain-quality-control-chemistry',
       cover_image: 'blockchain-chemistry.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
@@ -204,8 +204,8 @@ export default {
       updated: '2022-10-15',
       // tags field needs for "sort by interest" filter
       // use lowerCase
-      tags: ['ethereum', 'smart service', 'data storage'],
-      done: false
+      tags: ['ethereum', 'smart service', 'data storage', 'quality control'],
+      done: true
     },
     {
       id: 12,
@@ -359,6 +359,23 @@ export default {
       // tags field needs for "sort by interest" filter
       // use lowerCase
       tags: ['smart home', 'events'],
+      done: true
+    },
+    {
+      id: 19,
+      title: $trVue('Project G.E.C.K.: autonomous home kit case'),
+      description: $trVue('First R&D case report on creating an autonomous home image controlled by an NFT access token, based on field trials in Bali.'),
+      path: 'cases/geck-1',
+      cover_image: 'geck-1.webp',
+      // progress field needs for "sort by progress" filter
+      progress: 'complete',
+      // created field needs for "sort by date" filter (for earliest option)
+      created: '2024-04-16',
+      // updated field needs for "sort by date" filter (for recent option)
+      updated: '2024-04-16',
+      // tags field needs for "sort by interest" filter
+      // use lowerCase
+      tags: ['smart home', 'coworking', 'r&d'],
       done: true
     }
   ]

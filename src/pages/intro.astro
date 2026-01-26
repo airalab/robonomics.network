@@ -293,7 +293,7 @@ import Scheme from '../components/blocks/Scheme.astro';
     .scheme {
       gap: 0;
       grid-template-columns: 1fr 120px 1fr 120px 1fr;
-      font-size: 80%;
+      font-size: calc(var(--base-font-size) * 0.7);
     }
   }
 
@@ -304,7 +304,7 @@ import Scheme from '../components/blocks/Scheme.astro';
     }
 
     .scheme .scheme-a {
-      font-size: 80%;
+      font-size: calc(var(--base-font-size) * 0.7);
       transform: rotate(90deg);
     }
   }

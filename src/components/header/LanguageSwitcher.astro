@@ -15,7 +15,7 @@ let initialLocale = locale ? locale : 'en';
       </option>
     ))}
   </select>
-  {initialLocale !== 'en' && !translated && <span>AI</span>}
+  <!-- {initialLocale !== 'en' && !translated && <span>AI</span>} -->
 </div>
 
 <script>
@@ -97,7 +97,7 @@ let initialLocale = locale ? locale : 'en';
     --border-width: 0;
     --input-padding: .2rem;
     text-transform: uppercase;
-    font-size: 80%;
+    font-size: calc(var(--base-font-size) * 0.7);
     cursor: pointer;
   }
 </style>

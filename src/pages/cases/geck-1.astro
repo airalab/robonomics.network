@@ -1,0 +1,92 @@
+---
+// components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/cases/CaseHeader.astro";
+import Footer from "../../components/cases/CaseFooter.astro";
+import CaseText from "../../components/cases/CaseText.astro";
+import Youtube from "../../components/utils/Youtube.astro";
+---
+
+<Layout casePath={Astro.url}>
+  <Header
+    path={Astro.url.pathname}
+    introText={$tr("First R&D report on creating an autonomous home image controlled by an NFT access token, based on field trials in Bali.")}
+    introImg="/geck-1.webp"
+  />
+
+  <section class="case-page layout">
+    <div class="case-page__content hyphens">
+      <CaseText
+        title={$tr("Project G.E.C.K.: Motivation for Implementation and First R&D Report")}
+        multiple
+      >
+        <p>
+          {$tr("Over the past two years, we have seen a rise in ideas around network states and digital nomadism. G.E.C.K. is our attempt to turn these ideas into a practical, autonomous home kit that can be deployed anywhere—from Bali to Mars.")}
+        </p>
+        <p>
+          {$tr("This case describes the first experiments with a privacy‑first smart home image, where access and ownership are controlled by an NFT token. The goal is to give small communities a ready‑to‑use, open-source toolset for building autonomous living spaces.")}
+        </p>
+      </CaseText>
+
+      <CaseText
+        title={$tr("Field experiment in Bali, March 2024")}
+        multiple
+      >
+        <p>
+          {$tr("The first G.E.C.K. prototype was tested on the slope of a volcano in the jungles of Bali, where an autonomous village is being built. Our team installed and configured a full smart home stack: connectivity, sensors, local computing and a link to the Robonomics Web3 cloud.")}
+        </p>
+
+        <div class="youtube-wrapper">
+          <Youtube
+            title="G.E.C.K. field test in Bali"
+            src="https://www.youtube.com/embed/ZKXl-HL-Edg"
+          />
+        </div>
+      </CaseText>
+
+      <CaseText
+        title={$tr("G.E.C.K. ver. 0.1: what is inside the kit")}
+        multiple
+      >
+        <p>
+          {$tr("The first version of the G.E.C.K. kit is a curated set of smart devices that together provide connectivity, sensing and local control for an autonomous home.")}
+        </p>
+
+        <img
+          src="/images/cases/geck-1/geck-1-scheme.webp"
+          alt="Robonomics Geck-1 scheme"
+          loading="lazy"
+        />
+
+        <p>
+          {$tr("It includes local servers, connectivity hardware, Zigbee gateways, environmental sensors and user‑facing tablets. All components are orchestrated through Robonomics so that the home can act as a verifiable, on‑chain controlled space.")}
+        </p>
+      </CaseText>
+    </div>
+  </section>
+
+  <Footer
+    title={$tr("Read the full G.E.C.K. R&D report")}
+    text={[
+      $tr("For more context, motivation and detailed device lists, see the original blog post about Project G.E.C.K. on the Robonomics blog.")
+    ]}
+    link="/blog/geck-1/"
+    linkText="Project G.E.C.K. blog post"
+  />
+</Layout>
+
+<style>
+  img {
+    margin: 0 auto;
+    margin-top: calc(var(--space) * 0.7);
+    margin-bottom: calc(var(--space) * 2);
+    display: block;
+    max-width: 100%;
+  }
+
+  .case-page {
+    position: relative;
+    overflow-x: hidden;
+  }
+</style>
+

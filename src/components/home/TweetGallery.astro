@@ -1,0 +1,298 @@
+---
+const {
+  tweets: customTweets,
+  width = false,
+} = Astro.props;
+
+// Default tweets
+const defaultTweets = [
+  {
+    image: "/images/home/tweet-1.webp",
+    url: "https://x.com/EnsRationis/status/1985322718707761480",
+    alt: "Tweet about Robonomics hardware"
+  },
+  {
+    image: "/images/home/tweet-2.webp",
+    url: "https://x.com/EnsRationis/status/2001271515887628712",
+    alt: "Tweet about Robonomics project"
+  },
+  {
+    image: "/images/home/tweet-3.webp",
+    url: "https://x.com/AIRA_Robonomics/status/1998105755505848431",
+    alt: "Tweet from Robonomics about 10 year anniversary"
+  },
+  {
+    image: "/images/home/tweet-4.webp",
+    url: "https://x.com/AIRA_Robonomics/status/1958438070933745792",
+    alt: "Tweet about Experiment Day on Koh Phangan"
+  },
+  {
+    image: "/images/home/tweet-5.webp",
+    url: "https://x.com/EnsRationis/status/1998112566711865640",
+    alt: "Tweet about world's first video of using Ethereum to control a robot"
+  },
+  {
+    image: "/images/home/tweet-6.webp",
+    url: "https://x.com/positivecrash/status/1959901306862112892?s=12&t=L0SkriBV642yx7HfeGIo7Q",
+    alt: "Tweet about Altruist Insight"
+  },
+];
+
+const tweets = customTweets || defaultTweets;
+---
+
+<section class="tweet-gallery section" aria-label="What do creators say">
+  <div class=`layout ${!width ? 'layout__content' : ''}`>
+    <h2 class="tweet-gallery__title">
+      {$tr("What do creators say")}
+    </h2>
+    <p class="tweet-gallery__subtitle">
+      {$tr("We invite you to take a closer look at our ideas and our latest updates.")}
+    </p>
+    
+    <div class="tweet-gallery__grid">
+      {tweets.map((tweet, index) => (
+        <a 
+          href={tweet.url} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="tweet-gallery__item"
+          aria-label={tweet.alt || "View tweet"}
+          data-item-index={index}
+        >
+          <div class="tweet-gallery__inner">
+            <div class="tweet-gallery__skeleton" data-skeleton={index}></div>
+            <img 
+              src={tweet.image} 
+              alt={tweet.alt || ""}
+              loading="lazy"
+              class="tweet-gallery__image"
+              data-image={index}
+            />
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.tweet-gallery__image').forEach(img => {
+    const skeleton = img.previousElementSibling;
+    const inner = img.parentElement;
+    const item = inner.parentElement;
+
+    const calculateHeight = () => {
+      const getWidth = () => item.offsetWidth || item.clientWidth;
+      const width = getWidth();
+      
+      if (width > 0 && img.naturalWidth > 0 && img.naturalHeight > 0) {
+        const aspectRatio = img.naturalHeight / img.naturalWidth;
+        const height = Math.max(aspectRatio * width, 300);
+        item.style.minHeight = height + 'px';
+        inner.style.minHeight = height + 'px';
+        skeleton.style.height = height + 'px';
+        return height;
+      }
+      return null;
+    };
+
+    const syncHeight = () => {
+      const imgHeight = img.offsetHeight || img.naturalHeight;
+      if (imgHeight > 0) {
+        const height = Math.max(imgHeight, 300);
+        item.style.minHeight = height + 'px';
+        inner.style.minHeight = height + 'px';
+        skeleton.style.height = height + 'px';
+      }
+    };
+
+    const reveal = () => {
+      requestAnimationFrame(() => {
+        syncHeight();
+        img.classList.add('loaded');
+        skeleton?.classList.add('hidden');
+      });
+    };
+
+    // Preload to set initial height
+    const tempImg = new Image();
+    tempImg.onload = () => {
+      if (tempImg.naturalWidth > 0 && tempImg.naturalHeight > 0) {
+        const getWidth = () => item.offsetWidth || item.clientWidth;
+        let width = getWidth();
+        if (width === 0) {
+          setTimeout(() => {
+            width = getWidth();
+            if (width > 0) {
+              calculateHeight();
+            }
+          }, 50);
+        } else {
+          calculateHeight();
+        }
+      }
+    };
+    tempImg.src = img.src;
+
+    if (img.complete && img.naturalHeight > 0) {
+      reveal();
+    } else {
+      img.addEventListener('load', reveal, { once: true });
+      img.addEventListener('error', () => skeleton?.classList.add('hidden'), { once: true });
+    }
+
+    // Recalculate height on resize
+    let resizeTimeout;
+    const handleResize = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        if (img.naturalWidth > 0 && img.naturalHeight > 0) {
+          calculateHeight();
+        }
+      }, 150);
+    };
+
+    window.addEventListener('resize', handleResize);
+  });
+</script>
+
+<style>
+  .tweet-gallery {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: calc(var(--space) * 2);
+    padding-bottom: calc(var(--space) * 2);
+    background-color: hsla(219, 22%, 92%, 1);
+  }
+
+  .tweet-gallery__title {
+    margin-top: 0;
+    margin-bottom: calc(var(--space) * 0.5);
+    font-variation-settings: var(--font-flex-extrabold);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .tweet-gallery__subtitle {
+    text-align: center;
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .tweet-gallery__grid {
+    column-count: 3;
+    column-gap: var(--space);
+    column-fill: balance;
+    -webkit-column-count: 3;
+    -webkit-column-gap: var(--space);
+  }
+
+  .tweet-gallery__item {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 300px;
+    text-decoration: none;
+    border-radius: 12px;
+    overflow: visible;
+    transition: box-shadow 0.3s ease;
+    background-color: transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--space);
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+  }
+
+  .tweet-gallery__inner {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--color-light);
+    transition: transform 0.3s ease;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+
+  .tweet-gallery__item:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .tweet-gallery__item:hover .tweet-gallery__inner {
+    transform: translate3d(0, -4px, 0);
+    -webkit-transform: translate3d(0, -4px, 0);
+  }
+
+  .tweet-gallery__skeleton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background: linear-gradient(
+      90deg,
+      var(--color-gray-light) 0%,
+      hsl(0, 0%, 92%) 50%,
+      var(--color-gray-light) 100%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+    border-radius: 12px;
+    z-index: 1;
+  }
+
+  .tweet-gallery__skeleton.hidden {
+    display: none;
+  }
+
+  .tweet-gallery__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 2;
+    min-height: 300px;
+  }
+
+  .tweet-gallery__image.loaded {
+    opacity: 1;
+  }
+
+  .tweet-gallery__item:hover .tweet-gallery__image.loaded {
+    opacity: 0.9;
+  }
+
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  /* Responsive design */
+  @media screen and (max-width: 990px) {
+    .tweet-gallery__grid {
+      column-count: 2;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .tweet-gallery__grid {
+      column-count: 1;
+    }
+
+    .tweet-gallery {
+      margin-top: var(--space);
+      margin-bottom: var(--space);
+    }
+  }
+</style>

@@ -1,0 +1,209 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TweetGallery from '../components/home/TweetGallery.astro';
+
+// 16 community tweets
+const communityTweets = [
+  {
+    image: "/images/community/tweet-1.webp",
+    url: "https://t.me/robonomics/85077",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-2.webp",
+    url: "https://x.com/EnsRationis/status/2001271515887628712",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-3.webp",
+    url: "https://x.com/EnsRationis/status/1998112566711865640",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-4.webp",
+    url: "https://x.com/filippoweb3/status/1963989820520452484",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-5.webp",
+    url: "https://x.com/EnsRationis/status/1985322718707761480",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-6.webp",
+    url: "https://x.com/PaulBurg_/status/1959079994690576609",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-7.webp",
+    url: "https://x.com/AIRA_Robonomics/status/1958438070933745792",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-8.webp",
+    url: "https://x.com/Anna_Wimmer_S/status/1878064437598285944",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-9.webp",
+    url: "https://x.com/AIRA_Robonomics/status/1998105755505848431",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-10.webp",
+    url: "https://x.com/johnnyb_tutor/status/1923345752723468729",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-11.webp",
+    url: "https://x.com/RobonomicsHW/status/2001955611676741809",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-12.webp",
+    url: "https://x.com/khassan0v/status/1920486295714869689",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-13.webp",
+    url: "https://x.com/positivecrash/status/1959901306862112892?s=12&t=L0SkriBV642yx7HfeGIo7Q",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-14.webp",
+    url: "https://x.com/general_beck/status/1942518351856566463",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-15.webp",
+    url: "https://t.me/robonomics/84573",
+    alt: "Community tweet about Robonomics"
+  },
+  {
+    image: "/images/community/tweet-16.webp",
+    url: "https://x.com/fabsverseweb3/status/1913956885654364599",
+    alt: "Community tweet about Robonomics"
+  },
+];
+---
+
+<Layout 
+  title={$tr("Community")}
+  ogImage="/website_cover_community.webp"
+>
+  <section class="community-page">
+    <div class="layout">
+      <h1 class="community-page__title page-title">
+        {$tr("COMMUNITY")}
+      </h1>
+      
+      <p class="community-page__subtitle">
+        Share your experience with our hardware
+      </p>
+      
+      <p class="community-page__instructions">
+        Post on social media, tag <a href="https://x.com/AIRA_Robonomics" aria-label="go visit our x page" target="_blank">@AIRA Robonomics</a> and <a href="https://x.com/RobonomicsHW" aria-label="go visit our hardware x page" target="_blank">@RobonomicsHW</a>, and use the hashtags <span>#Robonomics</span>, <span>#AltruistAirQuality</span>. We regularly monitor posts using these hashtags.
+      </p>
+    </div>
+
+    <div class="community-page__gallery-wrapper">
+      <TweetGallery width tweets={communityTweets} />
+    </div>
+  </section>
+</Layout>
+
+<style>
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: calc(var(--space) * 0.5);
+    text-align: center;
+  }
+
+  .community-page {
+    padding-top: calc(var(--space) * 2);
+    padding-bottom: calc(var(--space) * 2);
+  }
+
+  .community-page__title {
+    margin-top: 0;
+    margin-bottom: calc(var(--space) * 0.5);
+    text-align: center;
+    font-variation-settings: var(--font-flex-extrabold);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .community-page__subtitle {
+    text-align: center;
+    margin-bottom: calc(var(--space) * 0.5);
+    font-size: calc(var(--base-font-size) * 1.1);
+  }
+
+  .community-page__instructions {
+    text-align: center;
+    margin-bottom: calc(var(--space) * 2);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .community-page__instructions span {
+    color: var(--color-blue)
+  }
+
+  .community-page__instructions span,
+  .community-page__instructions a {
+    font-variation-settings: var(--font-flex-bold);
+  }
+
+  .community-page__gallery-wrapper {
+    margin-top: 0;
+  }
+
+  /* Hide TweetGallery's default title and subtitle */
+  .community-page__gallery-wrapper :global(.tweet-gallery__title),
+  .community-page__gallery-wrapper :global(.tweet-gallery__subtitle) {
+    display: none;
+  }
+
+  /* Remove background from TweetGallery */
+  .community-page__gallery-wrapper :global(.tweet-gallery) {
+    padding-top: 0;
+    background-color: transparent;
+  }
+
+  /* Override TweetGallery grid for 4 columns on larger screens with smaller gaps */
+  .community-page__gallery-wrapper :global(.tweet-gallery__grid) {
+    column-count: 4;
+    column-gap: calc(var(--space) * 0.25);
+  }
+
+  /* Reduce margin between tweet items */
+  .community-page__gallery-wrapper :global(.tweet-gallery__item) {
+    margin-bottom: calc(var(--space) * 0.25);
+  }
+
+  @media screen and (max-width: 1200px) {
+    .community-page__gallery-wrapper :global(.tweet-gallery__grid) {
+      column-count: 3;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .community-page__gallery-wrapper :global(.tweet-gallery__grid) {
+      column-count: 2;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .community-page__gallery-wrapper :global(.tweet-gallery__grid) {
+      column-count: 1;
+    }
+
+    .community-page {
+      padding-top: var(--space);
+      padding-bottom: var(--space);
+    }
+  }
+</style>

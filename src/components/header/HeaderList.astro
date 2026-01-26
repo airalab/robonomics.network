@@ -1,0 +1,117 @@
+---
+import { getLocale } from "astro-i18n-aut";
+
+const locale = getLocale(Astro.url) || 'en';
+const {classList = ''} = Astro.props;
+
+const generatePath = (path) => (locale === 'en' ? path : `/${locale}${path}`);
+
+const normalizePath = (p) => {
+  if (!p) return '/';
+  // remove trailing slashes (except root)
+  let out = p.length > 1 ? p.replace(/\/+$/, '') : p;
+  // remove locale prefix (treat /en as root too)
+  if (locale !== 'en' && out.startsWith(`/${locale}`)) {
+    out = out.slice(locale.length + 1) || '/';
+  } else if (out.startsWith('/en/')) {
+    out = out.slice(3) || '/';
+  } else if (out === '/en') {
+    out = '/';
+  }
+  return out || '/';
+};
+
+const currentPath = normalizePath(Astro.url.pathname);
+const isActive = (target) => {
+  const t = normalizePath(target);
+  if (t === '/') return currentPath === '/';
+  return currentPath === t || currentPath.startsWith(`${t}/`);
+};
+---
+
+<nav class={'header-nav ' + classList} aria-label="Primary">
+  <a href={generatePath('/devices/')} class:list={["header-link", isActive('/devices') && "is-active"]} aria-label="go to the shop devices page">{$tr('SHOP DEVICES')}</a>
+  <a href="https://robonomics.app/" class="header-link header-link--dapp" aria-label="go check the dapp" target="_blank">
+    {$tr('DAPP')}
+    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="dapp-arrow">
+      <path d="M1 1L5 5M5 5H1M5 5V1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+  <a href={generatePath('/')} class:list={["header-link", "header-link--home", isActive('/') && "is-active"]} aria-label={$tr('HOME')} aria-label="go to the home page">{$tr('HOME')}</a>
+  <a href={generatePath('/community/')} class:list={["header-link", isActive('/community') && "is-active"]} aria-label="go to the community page">{$tr('COMMUNITY')}</a>
+  <a href={generatePath('/contact/')} class:list={["header-link", "header-link--ask", isActive('/contact') && "is-active"]} aria-label="go to the contact page and send us your inquiry">{$tr('ASK A TECHNICIAN')}</a>
+</nav>
+
+<style>
+
+  .header-nav {
+    width: 100%;
+    padding-left: calc(var(--space) * 2.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--space) * 1.2);
+    text-transform: uppercase;
+    font-size: calc(var(--base-font-size) * 0.7);
+    font-variation-settings: var(--font-flex-extrabold);
+    position: relative;
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+    will-change: transform;
+    contain: layout style;
+  }
+  
+  :global(.header.is-scrolled) :global(.header-nav) {
+    transform: scale(0.9);
+  }
+
+  .header-link:hover {
+    opacity: 0.85;
+  }
+
+  .header-link.is-active {
+    color: #000;
+  }
+
+  .header-link--ask {
+    color: #e6004c;
+    transition: color 0.33s ease-in-out;
+  }
+
+  .header-link--dapp {
+    font-variation-settings: var(--font-flex-extrabold);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .header-link--dapp .dapp-arrow {
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  @media screen and (max-width: 900px) {
+    .header-nav {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .header-nav {
+      padding-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .header-nav {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: calc(var(--space) * 2);
+      gap: calc(var(--space) * 0.5);
+      font-size: var(--base-font-size);
+      width: 100%;
+    }
+  }
+
+</style>

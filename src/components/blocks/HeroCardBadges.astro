@@ -1,0 +1,94 @@
+---
+// Reusable badges stack for hero cards (used on the home page banner)
+// Allows switching background/text colors via variant.
+
+const {
+  items = [],
+  variant = 'light',
+  staticPos = false,
+  showArrow = false,
+} = Astro.props;
+---
+
+{items.length > 0 && (
+  <div class:list={["hero-badges", `hero-badges--${variant} ${staticPos ? 'hero-badges--static' : ''}`]}>
+    {items.map((label) => (
+      <div class="hero-badges__item">
+        <span class="hero-badges__label">{label}</span>
+      </div>
+    ))}
+    {showArrow && (
+      <div class="hero-badges__arrow">
+        <svg width="119" height="15" viewBox="0 0 119 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M118.707 8.07112C119.098 7.6806 119.098 7.04743 118.707 6.65691L112.343 0.292946C111.953 -0.0975785 111.319 -0.0975785 110.929 0.292946C110.538 0.68347 110.538 1.31664 110.929 1.70716L116.586 7.36401L110.929 13.0209C110.538 13.4114 110.538 14.0446 110.929 14.4351C111.319 14.8256 111.953 14.8256 112.343 14.4351L118.707 8.07112ZM0 7.36401V8.36401H118V7.36401V6.36401H0V7.36401Z" fill="currentColor"/>
+        </svg>
+      </div>
+    )}
+  </div>
+)}
+
+<style>
+  .hero-badges {
+    --hero-badge-bg: var(--color-light);
+    --hero-badge-text: var(--color-dark);
+
+    position: absolute;
+    left: 0;
+    bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0 1rem;
+    z-index: 4;
+  }
+
+  .hero-badges--static {
+    position: static;
+    padding: 0;
+  }
+
+  .hero-badges--light {
+    --hero-badge-bg: var(--color-light);
+    --hero-badge-text: var(--color-dark);
+  }
+
+  .hero-badges--dark {
+    --hero-badge-bg: var(--color-dark);
+    --hero-badge-text: var(--color-light);
+  }
+
+  .hero-badges__item {
+    display: inline-block;
+    width: max-content;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--hero-badge-bg);
+    color: var(--hero-badge-text);
+    font-size: calc(var(--base-font-size) * 0.6);
+    font-variation-settings: var(--font-flex-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-radius: 0;
+  }
+
+  .hero-badges__label {
+    white-space: nowrap;
+  }
+
+  .hero-badges__arrow {
+    margin-top: 0.2rem;
+    color: var(--hero-badge-bg);
+    width: 100%;
+    height: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 640px) {
+    .hero-badges {
+      bottom: 1rem;
+      padding: 0 0.8rem;
+    }
+  }
+</style>
+

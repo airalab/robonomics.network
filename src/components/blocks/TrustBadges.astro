@@ -1,0 +1,118 @@
+---
+// Flexible trust badges component
+
+const {
+  variant = 'home',
+} = Astro.props;
+
+const baseItems = [
+  {
+    key: 'privacy',
+    label: $tr('privacy'),
+    type: 'svg',
+    svg: '<svg width="43" height="47" viewBox="0 0 43 47" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2328_427)"><path d="M37.41 6.72003C39.79 7.05003 41.55 9.09003 41.55 11.5V14.68C41.55 38.42 27.12 44.83 22.46 46.27C21.53 46.56 20.53 46.56 19.6 46.27C14.93 44.82 0.5 38.42 0.5 14.68V11.52C0.5 9.11003 2.27 7.06003 4.65 6.74003C10.93 5.91003 15.56 3.34003 18.26 1.41003C19.93 0.220026 22.16 0.200026 23.84 1.37003C26.6 3.29003 31.28 5.87003 37.4 6.73003L37.41 6.72003Z" fill="#C6FE6A" stroke="black" stroke-miterlimit="10"/><path d="M17.51 33.1C16.85 33.1 16.22 32.84 15.75 32.37L10.9 27.52C9.92999 26.55 9.92999 24.97 10.9 24C11.87 23.03 13.45 23.03 14.42 24L17.27 26.85L27.43 13.68C28.27 12.59 29.83 12.39 30.92 13.23C32.01 14.07 32.21 15.63 31.37 16.72L19.48 32.13C19.04 32.7 18.38 33.05 17.67 33.09C17.62 33.09 17.56 33.09 17.51 33.09V33.1Z" fill="black" stroke="black" stroke-miterlimit="10"/></g><defs><clipPath id="clip0_2328_427"><rect width="42.05" height="46.99" fill="white"/></clipPath></defs></svg>',
+  },
+  {
+    key: 'security',
+    label: $tr('security'),
+    type: 'svg',
+    svg: '<svg width="40" height="46" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2328_422)"><path d="M8.52002 17.75V12.04C8.52002 5.67 13.68 0.5 20.06 0.5C26.43 0.5 31.6 5.66 31.6 12.04V17.75" stroke="black" stroke-miterlimit="10"/><path d="M32.76 13.15H6.85C3.34299 13.15 0.5 15.993 0.5 19.5V39.1C0.5 42.607 3.34299 45.45 6.85 45.45H32.76C36.267 45.45 39.11 42.607 39.11 39.1V19.5C39.11 15.993 36.267 13.15 32.76 13.15Z" fill="#C6FE6A" stroke="black" stroke-miterlimit="10"/><path d="M23.84 24.14C23.84 21.9 22.02 20.08 19.78 20.08C17.54 20.08 15.72 21.9 15.72 24.14C15.72 25.52 16.41 26.74 17.47 27.48L15.77 36.37H23.81L22.11 27.48C23.17 26.75 23.86 25.53 23.86 24.14H23.84Z" fill="black" stroke="black" stroke-miterlimit="10"/></g><defs><clipPath id="clip0_2328_422"><rect width="39.61" height="45.95" fill="white"/></clipPath></defs></svg>',
+  },
+  {
+    key: 'open-source',
+    label: $tr('open-source'),
+    type: 'svg',
+    svg: '<svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2328_431)"><path d="M46.76 9.64001H0.5V38.69H46.76V9.64001Z" fill="#C6FE6A" stroke="black" stroke-miterlimit="10"/><path d="M46.76 9.64H0.5V0.5H12.84L18.25 5.34H46.76V9.64Z" fill="#C6FE6A" stroke="black" stroke-miterlimit="10"/><path d="M9.13001 22.03L5.28001 24.07L4.57001 24.17V23.34L9.13001 20.62V22.03ZM5.28001 23.69L9.13001 25.71V27.12L4.57001 24.39V23.56L5.28001 23.69Z" fill="black"/><path d="M17.18 18.05L13.8 29.43H12.91L16.3 18.05H17.18Z" fill="black"/><path d="M25.06 23.98L21.1 21.99V20.62L25.86 23.34V24.18L25.06 23.99V23.98ZM21.1 25.73L25.07 23.69L25.86 23.54V24.37L21.1 27.1V25.72V25.73Z" fill="black"/><path d="M3.72998 4.79999H12.87" stroke="black" stroke-miterlimit="10"/><path d="M39.12 18.85H33.21C31.4648 18.85 30.05 20.2648 30.05 22.01V25.84C30.05 27.5853 31.4648 29 33.21 29H39.12C40.8652 29 42.28 27.5853 42.28 25.84V22.01C42.28 20.2648 40.8652 18.85 39.12 18.85Z" fill="#C6FE6A" stroke="black" stroke-miterlimit="10"/><path d="M32.92 18.7L32.86 18.51C32.29 16.55 33.4 14.5 35.36 13.93C37.32 13.36 39.37 14.47 39.94 16.43L40 16.62" fill="#C6FE6A"/><path d="M32.92 18.7L32.86 18.51C32.29 16.55 33.4 14.5 35.36 13.93C37.32 13.36 39.37 14.47 39.94 16.43L40 16.62" stroke="black" stroke-miterlimit="10"/></g><defs><clipPath id="clip0_2328_431"><rect width="47.26" height="39.19" fill="white"/></clipPath></defs></svg>',
+  },
+  { key: 'global', 
+    label: $tr('globally accessible'), 
+    type: 'svg', 
+    svg: '<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M37.5796 63.613C51.3647 63.613 62.5396 52.438 62.5396 38.653C62.5396 24.868 51.3647 13.693 37.5796 13.693C23.7946 13.693 12.6196 24.868 12.6196 38.653C12.6196 52.438 23.7946 63.613 37.5796 63.613Z" fill="#C6FE6A" stroke="black" stroke-miterlimit="10"/><path d="M25.0895 33.533C26.7195 33.363 30.2195 32.323 31.0995 30.493C31.9795 28.663 33.5095 26.143 38.5295 28.013C40.5795 28.783 42.1495 23.283 40.5595 21.983C39.2195 20.883 38.0695 21.453 34.7895 18.703C31.5095 15.953 30.7795 17.783 27.2095 17.623C26.5095 17.593 25.7595 17.393 24.9895 17.093C19.9195 20.053 15.9895 24.753 14.0195 30.373C14.5495 31.483 15.1295 32.543 15.7495 33.403C18.6095 37.423 21.5095 36.293 23.7095 40.273C25.9095 44.253 22.2595 44.973 26.9595 47.073C31.6595 49.173 30.3395 56.303 31.4195 59.313C32.4995 62.323 34.7995 60.033 35.3995 58.523C35.9995 57.013 34.9195 53.773 38.7595 48.763C42.5995 43.763 39.8595 41.473 35.1595 39.423C30.4595 37.373 29.3995 39.303 26.4795 38.123C23.5595 36.943 23.3895 33.693 25.0895 33.513V33.533Z" fill="#C6FE6A" stroke="black" stroke-miterlimit="10"/><path d="M52.1697 18.403C50.0397 19.043 47.9297 20.033 47.6097 21.483C46.9397 24.513 47.3697 25.873 50.0697 26.343C52.7697 26.813 54.9897 24.243 54.9397 27.223C54.8897 30.213 49.5997 29.383 47.5197 29.743C45.4397 30.113 46.1897 31.293 45.5397 32.583C44.8897 33.873 41.4797 37.393 44.8797 38.703C48.2697 40.013 53.5097 39.433 53.6097 42.663C53.7097 45.893 53.6697 47.863 52.7597 48.943C51.8497 50.023 48.5897 53.033 50.7197 53.573C51.9697 53.893 55.4497 53.3129 58.4597 52.3329C61.0397 48.4029 62.5497 43.703 62.5497 38.653C62.5497 30.313 58.4597 22.933 52.1797 18.403H52.1697Z" fill="#C6FE6A" stroke="black" stroke-miterlimit="10"/><path d="M54.0598 16.283C64.4398 7.42299 72.1698 2.40298 73.7198 3.95298C76.1598 6.38298 62.5498 24.013 43.3298 43.333C24.0998 62.653 6.53978 76.343 4.09978 73.913C2.53978 72.363 7.51978 64.613 16.3298 54.193" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/><path d="M3.71559 34.2131L-0.00439453 34.2222L0.00469514 37.9422L3.72468 37.9331L3.71559 34.2131Z" fill="black"/><path d="M50.4509 3.72907L46.731 3.73816L46.74 7.45815L50.46 7.44906L50.4509 3.72907Z" fill="black"/><path d="M74.1433 57.871L70.4233 57.8801L70.4324 61.6001L74.1524 61.591L74.1433 57.871Z" fill="black"/><path d="M54.1619 4.56998e-06L50.4419 0.00909424L50.451 3.72908L54.171 3.71999L54.1619 4.56998e-06Z" fill="black"/><path d="M20.4801 16.283C10.1001 7.42299 2.37008 2.40298 0.820079 3.95298C-1.61992 6.38298 11.9901 24.013 31.2101 43.333C50.4401 62.653 68.0001 76.343 70.4401 73.913C72.0001 72.363 67.0201 64.613 58.2101 54.193" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/></svg>' 
+  },
+];
+
+const extendedItems = [
+  ...baseItems,
+  { key: 'web3', label: $tr('web3 native'), type: 'img', src: '/images/icons/web3.svg' },
+];
+
+const items = variant === 'cowork' ? extendedItems : baseItems;
+const isCowork = variant === 'cowork';
+---
+
+<div class:list={["trust-badges", isCowork && "trust-badges--large"]} aria-label="Key principles">
+  {items.map((i) => (
+    <div class:list={["trust-badges__item", isCowork && "trust-badges__item--large"]}>
+      {i.type === 'svg' ? (
+        <span class="trust-badges__icon" aria-hidden="true" set:html={i.svg}></span>
+      ) : (
+        <span class="trust-badges__icon" aria-hidden="true">
+          <img src={i.src} alt="" loading="lazy" />
+        </span>
+      )}
+      <span class="trust-badges__label">{i.label}</span>
+    </div>
+  ))}
+</div>
+
+<style>
+  .trust-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--space) * 2);
+    padding: calc(var(--space) * 1.2) var(--layout-sidepadding);
+  }
+
+  .trust-badges--large {
+    padding: 0;
+  }
+
+  .trust-badges__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-transform: lowercase;
+    font-variation-settings: var(--font-flex-medium);
+  }
+
+  .trust-badges__icon {
+    width: 46px;
+    height: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trust-badges__label {
+    font-size: 0.9rem;
+  }
+
+  /* Large variant for coworking page */
+  .trust-badges--large {
+    gap: calc(var(--space) * 2.5);
+  }
+
+  .trust-badges--large .trust-badges__icon{
+    width: 80px;
+    height: 60px;
+  }
+
+  .trust-badges__item--large {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-variation-settings: var(--font-flex-extrabold);
+  }
+
+  .trust-badges__item--large .trust-badges__label {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 760px) {
+    .trust-badges {
+      gap: var(--space);
+      flex-wrap: wrap;
+    }
+  }
+</style>
