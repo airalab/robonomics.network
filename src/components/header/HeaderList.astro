@@ -33,7 +33,7 @@ const isActive = (target) => {
   <a href={generatePath('/devices/')} class:list={["header-link", isActive('/devices') && "is-active"]} aria-label="go to the shop devices page">{$tr('SHOP DEVICES')}</a>
   <a href="https://robonomics.app/" class="header-link header-link--dapp" aria-label="go check the dapp" target="_blank">
     {$tr('DAPP')}
-    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="dapp-arrow">
+    <svg width="8" height="8" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="dapp-arrow">
       <path d="M1 1L5 5M5 5H1M5 5V1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </a>
@@ -66,8 +66,13 @@ const isActive = (target) => {
     transform: scale(0.9);
   }
 
+  .header-link {
+    transition: transform 0.25s ease-out;
+  }
+
   .header-link:hover {
     opacity: 0.85;
+    transform: translateY(-1.5px);
   }
 
   .header-link.is-active {
@@ -89,6 +94,8 @@ const isActive = (target) => {
   .header-link--dapp .dapp-arrow {
     display: inline-block;
     flex-shrink: 0;
+    position: relative;
+    transform: scale(1, -1);
   }
 
   @media screen and (max-width: 900px) {

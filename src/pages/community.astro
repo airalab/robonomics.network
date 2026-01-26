@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import TweetGallery from '../components/home/TweetGallery.astro';
+import TweetGallery from '../components/TweetGallery.astro';
 
 // 16 community tweets
 const communityTweets = [
@@ -107,7 +107,7 @@ const communityTweets = [
     </div>
 
     <div class="community-page__gallery-wrapper">
-      <TweetGallery width tweets={communityTweets} />
+      <TweetGallery tweets={communityTweets} />
     </div>
   </section>
 </Layout>
