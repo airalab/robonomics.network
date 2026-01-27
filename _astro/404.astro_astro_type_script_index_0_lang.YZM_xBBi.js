@@ -1,0 +1,1 @@
+const o=localStorage.getItem("locale")||"en";if(o!=="en"&&!window.location.pathname.includes(`/${o}/404`)){const e=new URL(window.location.href);e.pathname=`/${o}/404/`,window.location.replace(e.toString())}
