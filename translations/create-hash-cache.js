@@ -20,6 +20,7 @@ const generateInitialCache = () => {
     cache[file] = getFileHash(fullPath);
   }
 
+  
   fs.writeFileSync(HASH_CACHE_FILE, JSON.stringify(cache, null, 2), 'utf-8');
   console.log(`✅ Created initial hash cache with ${files.length} entries.`);
 };
