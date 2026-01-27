@@ -173,12 +173,6 @@ const communityTweets = [
     background-color: transparent;
   }
 
-  /* Override TweetGallery grid for 4 columns on larger screens with smaller gaps */
-  .community-page__gallery-wrapper :global(.tweet-gallery__grid) {
-    column-count: 4;
-    column-gap: calc(var(--space) * 0.25);
-  }
-
   /* Reduce margin between tweet items */
   .community-page__gallery-wrapper :global(.tweet-gallery__item) {
     margin-bottom: calc(var(--space) * 0.25);

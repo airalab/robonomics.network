@@ -45,6 +45,7 @@ const {
   .hero-badges--static {
     position: static;
     padding: 0;
+    min-width: 0;
   }
 
   .hero-badges--light {
@@ -73,6 +74,19 @@ const {
 
   .hero-badges__label {
     white-space: nowrap;
+  }
+
+  .hero-badges--static .hero-badges__item {
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    align-self: flex-start;
+  }
+
+  .hero-badges--static .hero-badges__label {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .hero-badges__arrow {

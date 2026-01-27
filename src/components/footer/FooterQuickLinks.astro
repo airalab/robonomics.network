@@ -34,33 +34,37 @@ const currentPath = normalizePath(Astro.url.pathname);
 const links = [
   { 
     href: generatePath('/for-personal-usage/'), 
-    label: 'FOR <br/> PERSONAL USAGE', 
+    labelTopKey: 'FOR',
+    labelBottomKey: 'PERSONAL_USAGE',
     img: personalUrl, 
-    tags: ['Cyberpunks shop', 'Self-care devices', 'Personal metrics'],
+    tags: [$tr('Cyberpunks_shop'), $tr('Self_care_devices'), $tr('Personal_metrics')],
     bgClass: 'bg-blue',
     pathMatch: '/for-personal-usage'
   },
   { 
     href: generatePath('/for-smart-homes/'), 
-    label: 'FOR <br/> SMART HOMES', 
+    labelTopKey: 'FOR',
+    labelBottomKey: 'SMART_HOMES',
     img: smartHomeUrl, 
-    tags: ['B2C & B2B solutions', 'Full service integration', 'DIY setup'],
+    tags: [$tr('B2C___B2B_solutions'), $tr('Full_service_integration'), $tr('DIY_setup')],
     bgClass: 'bg-dark',
     pathMatch: '/for-smart-homes'
   },
   { 
     href: generatePath('/for-coworking-and-coliving/'), 
-    label: 'FOR  CO-WORKING & <br/> CO-LIVING', 
+    labelTopKey: 'FOR',
+    labelBottomKey: 'CO_WORKING___CO_LIVING',
     img: coworkingUrl, 
-    tags: ['B2C & B2B solutions', 'Smart access', 'Shared housekeeping'],
+    tags: [$tr('B2C___B2B_solutions'), $tr('Smart_access'), $tr('Shared_housekeeping')],
     bgClass: 'bg-green',
     pathMatch: '/for-coworking-and-coliving'
   },
   { 
     href: generatePath('/for-business/'), 
-    label: 'FOR <br/> BUSINESS', 
+    labelTopKey: 'FOR',
+    labelBottomKey: 'BUSINESS',
     img: businessUrl, 
-    tags: ['Smart RWA', 'Digital Product Passport', 'Custom hardware', 'Robotics integration'],
+    tags: [$tr('SMART_RWA'), $tr('Digital_Product_Passport'), $tr('CUSTOM_HARDWARE'), $tr('Robotics_integration')],
     bgClass: 'bg-dark-blue',
     pathMatch: '/for-business'
   },
@@ -93,7 +97,11 @@ for (const link of links) {
           href={item.href}
         >
           <img class="footer-quicklinks__img" src={item.img} alt="" aria-hidden="true" loading="lazy" />
-          <h4 class="footer-quicklinks__label" set:html={item.label}></h4>
+          <h4 class="footer-quicklinks__label">
+            <span>{$tr(item.labelTopKey)}</span>
+            <br />
+            <span>{$tr(item.labelBottomKey)}</span>
+          </h4>
           <div class="footer-quicklinks__tags">
             <HeroCardBadges
               items={item.tags}
@@ -112,7 +120,9 @@ for (const link of links) {
     color: var(--color-light);
   }
 
-  .footer-quicklinks .oldy__link:hover h4  {
+  /* Keep the title readable (it's split into spans) */
+  .footer-quicklinks .oldy__link:hover .footer-quicklinks__label,
+  .footer-quicklinks .oldy__link:hover .footer-quicklinks__label * {
     color: var(--color-dark);
   }
 </style>
