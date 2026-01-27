@@ -21,11 +21,12 @@ let initialLocale = locale ? locale : 'en';
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const localeSelect = document.getElementById('locale-select');
-    const path = window.location.pathname; 
     const allLanguages = ["ar", "de", "el", "en", "es", "fr", "it", "ja", "ko", "nl", "pt", "ru", "uk", "zh"];
 
     const changeURL = (newLocale) => {
-      let segments = path.split('/').filter(segment => segment); 
+      // Preserve query params + hash when switching locale
+      const url = new URL(window.location.href);
+      let segments = url.pathname.split('/').filter(segment => segment); 
       let currentLocale = allLanguages.includes(segments[0]) ? segments[0] : 'en';
 
       if (newLocale === 'en') {
@@ -51,7 +52,8 @@ let initialLocale = locale ? locale : 'en';
         newPath = '/';
       }
 
-      window.location.href = newPath;
+      url.pathname = newPath;
+      window.location.href = url.toString();
     }
 
 
@@ -65,7 +67,8 @@ let initialLocale = locale ? locale : 'en';
 
     // Auto-redirect to stored locale (if not already in URL)
     const storedLocale = localStorage.getItem('locale');
-    if (storedLocale && !path.startsWith(`/${storedLocale}/`) && storedLocale !== 'en') {
+    const currentPathname = window.location.pathname;
+    if (storedLocale && !currentPathname.startsWith(`/${storedLocale}/`) && storedLocale !== 'en') {
       changeURL(storedLocale);
     }
   });

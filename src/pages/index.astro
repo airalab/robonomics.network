@@ -37,7 +37,7 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
 
         <a class="home-hero__card" href="/for-smart-homes/" aria-label="For smart homes">
           <img class="home-hero__preview" src="/video/preview/home-preview-2.webp" alt="" loading="eager"/>
-          <video class="home-hero__video" src="/video/home-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <video class="home-hero__video home-hero__video--extra" src="/video/home-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
           <div class="home-hero__title">
             <span>{$tr('FOR')}</span>
             <span>{$tr('SMART HOMES')}</span>
@@ -53,9 +53,9 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
           />
         </a>
 
-        <a class="home-hero__card home-hero__card--extra" href="/for-coworking-and-coliving/" aria-label="For co-working and co-living">
+        <a class="home-hero__card" href="/for-coworking-and-coliving/" aria-label="For co-working and co-living">
           <img class="home-hero__preview" src="/video/preview/home-preview-3.webp" alt="" loading="eager"/>
-          <video class="home-hero__video home-hero__video--extra" src="/video/home-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <video class="home-hero__video" src="/video/home-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
           <div class="home-hero__title">
             <span>{$tr('FOR')}</span>
             <span>{$tr('CO-WORKING & CO-LIVING')}</span>
@@ -166,10 +166,6 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
     overflow: hidden;
   }
 
-  .home-hero__card--extra {
-    width: 101%;
-  }
-
   .home-hero__preview {
     position: absolute;
     inset: 0;
@@ -205,7 +201,7 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
     will-change: opacity;
   }
 
-  .home-hero__card--extra .home-hero__video  {
+  .home-hero__video--extra {
     width: 101%;
   }
 
