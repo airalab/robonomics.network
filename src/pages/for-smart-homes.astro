@@ -9,7 +9,8 @@ import { Image } from 'astro:assets';
 import HASS from '../assets/images/for-smart-home/home-assistant.webp';
 import HASS2 from '../assets/images/for-smart-home/home-assistant-2.webp';
 
-import HASSENG from'../assets/images/for-smart-home/hass-for-engineers.webp';
+import HASSWEBM from'../assets/images/for-smart-home/hass-for-engineers.webm';
+import HASSGIF from'../assets/images/for-smart-home/hass-for-engineers.gif';
 import DIYGEEKS from'../assets/images/for-smart-home/diy-geeks.webp';
 
 // videos
@@ -74,7 +75,17 @@ const previews = [
       <h4 class="highlight-green">{$tr('FOR ENGINEERS & DIY GEEKS')}</h4>
       <p class="description-bold">{$tr('For those who want to build a smart home DIY-style, we’ve got something awesome for you too — a detailed guide!')}</p>
       <div class="grid grid-2">
-        <Image src={HASSENG} alt="homeassistant for engineers" />
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          aria-label="homeassistant interface"
+        >
+          <source src={HASSWEBM} type="video/webm" />
+          <img src={HASSGIF.src} alt="homeassistant interface" />
+        </video>
+
         <Image src={DIYGEEKS} alt="diy geeks image" />
       </div>
       <RbButton 
@@ -129,6 +140,10 @@ const previews = [
     justify-items: center;
     margin: 0 auto;
     margin-bottom: calc(var(--space) * 2);
+  }
+
+  .grid-2 video {
+    width: 100%;
   }
 
   .description-bold {
