@@ -65,7 +65,7 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
       <h2 class="title-lined"><span>{$tr('Token Lifecycle')}</span></h2>
 
       <div class="total-deflation layout-p oldy">
-        <h4>{$tr('Total deflation')}</h4>
+        <h4>{$tr('Total')} <span id="total-mode"></span></h4>
         <span id="deflation">...</span>%
       </div>
 
@@ -171,20 +171,53 @@ const twitter = contacts.filter((item) => item.title.toLowerCase() === "x");
 
       const { result } = await res.json();
 
-      document.getElementById("deflation").textContent = result.deflation;
-      document.getElementById("circulation").textContent = formatXRT(result.current.sum);
-      document.getElementById("ethereum").textContent = formatXRT(result.current.chains.ethereum.value);
-      document.getElementById("kusama").textContent = formatXRT(result.current.chains.kusama.value);
-      document.getElementById("polkadot").textContent = formatXRT(result.current.chains.polkadot.value);
-      document.getElementById("archive").textContent = formatXRT(result.archive.sum);
+      const oldSupply = Number(result.archive.sum);
+      const newSupply = Number(result.current.sum);
+
+      const delta = newSupply - oldSupply;
+      const percentChange = Math.abs(delta) / oldSupply * 100;
+
+      let supplyLabel;
+      let modeLabel;
+      if (delta > 0) {
+        modeLabel = `Inflation`
+        supplyLabel = `${percentChange.toFixed(2)}`;
+      } else if (delta < 0) {
+        modeLabel = `Deflation`
+        supplyLabel = `${percentChange.toFixed(2)}`;
+      } else {
+        supplyLabel = `No supply change`;
+      }
+
+      // Supply status (replaces misleading "deflation")
+      document.getElementById('total-mode').textContent = modeLabel;
+      document.getElementById("deflation").textContent = supplyLabel;
+
+      // Other fields stay the same
+      document.getElementById("circulation").textContent =
+        formatXRT(newSupply);
+
+      document.getElementById("ethereum").textContent =
+        formatXRT(result.current.chains.ethereum.value);
+
+      document.getElementById("kusama").textContent =
+        formatXRT(result.current.chains.kusama.value);
+
+      document.getElementById("polkadot").textContent =
+        formatXRT(result.current.chains.polkadot.value);
+
+      document.getElementById("archive").textContent =
+        formatXRT(oldSupply);
 
       document.getElementById("xrt-loading").style.display = "none";
       document.getElementById("xrt-data").style.display = "block";
     } catch (err) {
       console.error("Failed to fetch token data:", err);
-      document.getElementById("xrt-loading").textContent = "Failed to load data.";
+      document.getElementById("xrt-loading").textContent =
+        "Failed to load data.";
     }
   }
+
 
   loadTokenData();
 </script>
