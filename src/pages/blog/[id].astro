@@ -114,6 +114,15 @@ const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     line-height: 1.75;
   }
 
+  /* Keep very tall infographic-like images on screen without scrolling */
+  .post img[src$="waterfall-party.webp"] {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+    margin-inline: auto;
+  }
+
   html[lang="ar"] .post {
     text-align: right;
   }
