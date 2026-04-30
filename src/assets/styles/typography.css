@@ -5,23 +5,29 @@ html {
 /*It's important for high res narrow devices
 	@media screen and (max-device-width: 350px) {
   It's for testing out on desktop*/
-  @media screen and (max-width: 350px) {
-    html { font-size: calc(var(--base-font-size) * 0.7); }
+@media screen and (max-width: 350px) {
+  html {
+    font-size: calc(var(--base-font-size) * 0.7);
   }
+}
 
-  /*It's important for high res narrow devices
+/*It's important for high res narrow devices
 	@media screen and (max-device-width: 1000px) {
   It's for testing out on desktop*/
-	@media screen and (max-width: 1000px) {
-		html { font-size: 90%; }
-	}
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 90%;
+  }
+}
 
-  /*It's important for high res narrow devices
+/*It's important for high res narrow devices
 	@media screen and (min-device-width: 1660px) {
   It's for testing out on desktop*/
-	@media screen and (min-width: 1660px) {
-		html { font-size: 110% !important; } 
-	}
+@media screen and (min-width: 1660px) {
+  html {
+    font-size: 110% !important;
+  }
+}
 
 body {
   font-family: var(--font-family);
@@ -30,7 +36,10 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-variation-settings: var(--font-flex-bold);
   letter-spacing: 0.5px;
   line-height: 1.2;
@@ -53,7 +62,7 @@ h3 {
 }
 
 h4 {
-  font-size: calc(var(--base-font-size) * .95);
+  font-size: calc(var(--base-font-size) * 0.95);
 }
 
 h5 {
@@ -84,7 +93,7 @@ h5 {
 }
 
 .title-lined:before {
-  content:"";
+  content: "";
   height: 1px;
   background-color: var(--color-dark);
   position: absolute;
@@ -134,7 +143,9 @@ html[lang="nl"] .title-lined {
   overflow: hidden;
   padding: 0.3rem 1rem 0.3rem 2.7rem;
   position: relative;
-  transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  transition:
+    background-color 0.33s ease-in-out,
+    color 0.33s ease-in-out;
   width: fit-content;
   z-index: 990;
 }
@@ -162,7 +173,7 @@ html[lang="nl"] .title-lined {
 }
 
 @media screen and (max-width: 650px) {
-  .title-with-bg  {
+  .title-with-bg {
     display: block;
     inset: 0;
     text-align: center;
@@ -179,12 +190,12 @@ html[lang="nl"] .title-lined {
 }
 
 .subtitle:before {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 2rem;
-    background-color: #fff;
-    margin: 0 auto 0.4rem;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 2rem;
+  background-color: #fff;
+  margin: 0 auto 0.4rem;
 }
 
 .text-abstract {
@@ -193,13 +204,22 @@ html[lang="nl"] .title-lined {
   font-weight: 300;
 }
 
+small,
+.text-small {
+  font-size: 70%;
+  line-height: 1.2;
+}
+.text-big {
+  font-size: 120%;
+  line-height: 1.6;
+}
 
-small, .text-small { font-size: 70%; line-height: 1.2; }
-.text-big { font-size: 120%; line-height: 1.6; }
+.text-small p:not(:last-child) {
+  margin-bottom: calc(var(--space-text) * 0.5);
+}
 
-.text-small p:not(:last-child) { margin-bottom: calc(var(--space-text) * 0.5);}
-
-b, strong {
+b,
+strong {
   font-variation-settings: var(--font-flex-medium);
 }
 
@@ -213,40 +233,52 @@ blockquote {
   border-left: 1px solid var(--text-color);
 }
 
-ul, ol { 
+ul,
+ol {
   margin-left: var(--space-text);
 }
 
-a:not(.button), .link:not(.button) {
+a:not(.button),
+.link:not(.button) {
   color: var(--color-link);
   text-decoration: none;
-  transition: all .2s, color .2s;
+  transition:
+    all 0.2s,
+    color 0.2s;
 }
 
-a:not(.button):hover, .link:not(.button):hover {
+a:not(.button):hover,
+.link:not(.button):hover {
   color: var(--color-link-hover);
 }
 
-a:not(.button).dashed, .link:not(.button).dashed {
+a:not(.button).dashed,
+.link:not(.button).dashed {
   text-decoration: none;
-  border-bottom: 1px dashed currentColor
+  border-bottom: 1px dashed currentColor;
 }
 
-
-.post a:not(.button), .case-page a:not(.button), .case-page__header a:not(.button) {
+.post a:not(.button),
+.case-page a:not(.button),
+.case-page__header a:not(.button) {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
   color: var(--color-blue);
-  transition: opacity 0.2s, text-decoration-color 0.3s ease-in-out;
+  transition:
+    opacity 0.2s,
+    text-decoration-color 0.3s ease-in-out;
   word-break: break-word;
 }
 
-.post a:not(:is(:hover, :focus)), .case-page a:not(:is(:hover, :focus)), .case-page__header a:not(:is(:hover, :focus)) {
+.post a:not(:is(:hover, :focus)),
+.case-page a:not(:is(:hover, :focus)),
+.case-page__header a:not(:is(:hover, :focus)) {
   text-decoration-color: color-mix(in srgb, currentColor, transparent 55%);
-  }
+}
 
-.highlight, .highlight-green {
+.highlight,
+.highlight-green {
   font-variation-settings: var(--font-flex-bold);
   border-bottom: 0.5px solid currentColor;
 }
@@ -267,9 +299,8 @@ a:not(.button).dashed, .link:not(.button).dashed {
   }
 }
 
-
 hr {
-  margin: calc(var(--space-text)*2) 0;
+  margin: calc(var(--space-text) * 2) 0;
   border: 0;
   outline: 0;
   height: 1rem;
@@ -280,7 +311,6 @@ hr.no-margins {
   margin: 0;
 }
 
-
 hr.dark {
   background-color: var(--color-dark);
 }
@@ -289,16 +319,23 @@ hr.color-lightgray {
   background-color: var(--color-gray-light);
 }
 
-
 .hyphens {
   text-align: justify !important;
   hyphens: auto;
 }
 
 /* text alignment */
-.align-right { text-align: right; }
-.text-left, .align-left { text-align: left; }
-.text-center, .align-center { text-align: center; }
+.align-right {
+  text-align: right;
+}
+.text-left,
+.align-left {
+  text-align: left;
+}
+.text-center,
+.align-center {
+  text-align: center;
+}
 
 /* for code */
 code {
@@ -311,14 +348,15 @@ code {
   vertical-align: -webkit-baseline-middle;
 
   /* hide scrollbar */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
   font-size: calc(var(--base-font-size) * 0.8);
 }
 
-code::-webkit-scrollbar { display: none; }
-
+code::-webkit-scrollbar {
+  display: none;
+}
 
 div pre[class*="language-"] {
   padding-right: 3rem !important;
@@ -340,32 +378,38 @@ table thead th {
   font-weight: bold;
 }
 
-table th, table td {
-  padding: .5rem;
+table th,
+table td {
+  padding: 0.5rem;
   border: 1px solid var(--color-border);
   font-size: 90%;
 }
 
 table tbody tr:hover {
-    background-color: var(--color-gray-light);
+  background-color: var(--color-gray-light);
 }
 
-
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
   table.mobile {
     border: 1px solid var(--color-border);
   }
 
-  table.mobile td, table.mobile th {
+  table.mobile td,
+  table.mobile th {
     display: none;
   }
 
-  table.mobile, table.mobile tbody, table.mobile tr, table.mobile [data-th] {
-      display: block;
-      width: 100%;
+  table.mobile,
+  table.mobile tbody,
+  table.mobile tr,
+  table.mobile [data-th] {
+    display: block;
+    width: 100%;
   }
-  
-  table.mobile [data-th] { border-width: 0; }
+
+  table.mobile [data-th] {
+    border-width: 0;
+  }
 
   table.mobile tr:not(:last-child) {
     border-width: 0 0 2px;
@@ -381,11 +425,19 @@ table tbody tr:hover {
   }
 }
 
-p, ul, ol, blockquote, table, dd, summary, details {
+p,
+ul,
+ol,
+blockquote,
+table,
+dd,
+summary,
+details {
   margin-bottom: var(--space-text);
 }
 
-ul.list-smallgap li , ol.list-smallgap li {
+ul.list-smallgap li,
+ol.list-smallgap li {
   margin-bottom: calc(var(--space-text) * 0.5);
 }
 
@@ -397,24 +449,33 @@ li:not(:last-child) {
   margin-bottom: var(--space);
 }
 
-summary { 
+summary {
   color: var(--color-link);
   cursor: pointer;
   font-variation-settings: var(--font-flex-bold);
 }
 
-.text-col-2, .text-col-3 {
+.text-col-2,
+.text-col-3 {
   column-count: 2;
   column-gap: var(--space);
 }
 
 @media screen and (max-width: 750px) {
-  .text-col-2, .text-col-3 {
+  .text-col-2,
+  .text-col-3 {
     column-count: 1 !important;
   }
 }
 
-*[class*=text-col-], *[class*=text-col-] h1, *[class*=text-col-] h2, *[class*=text-col-] h3, *[class*=text-col-] h4, *[class*=text-col-] h5 { text-align: left; }
+*[class*="text-col-"],
+*[class*="text-col-"] h1,
+*[class*="text-col-"] h2,
+*[class*="text-col-"] h3,
+*[class*="text-col-"] h4,
+*[class*="text-col-"] h5 {
+  text-align: left;
+}
 
 .text-col-3 {
   column-count: 3;
@@ -440,4 +501,13 @@ summary {
 
 .text-break {
   word-break: break-all;
+}
+
+/* Keep very tall infographic-like images on screen without scrolling */
+.post img[src$="waterfall-party.webp"] {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+  margin-inline: auto;
 }
