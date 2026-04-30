@@ -54,12 +54,12 @@ export default defineConfig({
       }
     ],
   }),
-    mdx(), 
     vue({ devtools: true }),
     i18n({
       locales,
       defaultLocale,
     }),
+    mdx(),
     paraglide({
       project: './project.inlang',
       outdir: './src/paraglide', //where your files should be
