@@ -1,203 +1,161 @@
 ---
 // components
 import Layout from '../layouts/Layout.astro';
-import WallpapersItem from '../components/wallpapers/WallpapersItem.astro';
+import WallpapersGrid from '../components/wallpapers/WallpapersGrid.astro';
+import WallpapersGridItem from '../components/wallpapers/WallpapersGridItem.astro';
 
-// data
-const wallpapers = [
-  {
-    id: 0,
-    link: '/wallpapers/full-package/robonomics.network-robonomics-wallpapers-robot-and-cat.zip',
-    img: 'robot_and_cat_artboard_1.webp',
-    desktopLink: '/wallpapers/regular/robonomics.network-robot-and-cat-artboard.jpg',
-    phoneLink: '/wallpapers/phone/robonomics.network-robot-and-cat-artboard.jpg'
-  },
-  {
-    id: 1,
-    link: '/wallpapers/full-package/robonomics.network-robonomics-wallpapers-robot-and-cosmonaut.zip',
-    img: 'robot_and_cosmonaut_artboard_1.webp',
-    desktopLink: '/wallpapers/regular/robonomics.network-robot-and-cosmonaut-artboard.jpg',
-    phoneLink: '/wallpapers/phone/robonomics.network-robot-and-cosmonaut-artboard.jpg'
-  },
-  {
-    id: 2,
-    link: '/wallpapers/full-package/robonomics.network-robonomics-wallpapers-robot-and-electrics-sheep.zip',
-    img: 'robot_and_electrics_sheep_artboard_1.webp',
-    desktopLink: '/wallpapers/regular/robonomics.network-robot-and-electrics-sheep-artboard.jpg',
-    phoneLink: '/wallpapers/phone/robonomics.network-robot-and-electrics-sheep-artboard.jpg'
-  },
-  {
-    id: 3,
-    link: '/wallpapers/full-package/robonomics.network-robonomics-wallpapers-coloured-astronaut.zip',
-    img: 'coloured_astronaut_artboard_1.webp',
-    desktopLink: '/wallpapers/regular/robonomics.network-coloured-astronaut-artboard.jpg',
-    phoneLink: '/wallpapers/phone/robonomics.network-coloured-astronaut-artboard.jpg'
-  },
-  {
-    id: 4,
-    link: '/wallpapers/full-package/robonomics.network-robonomics-wallpapers-robot-and-apple.zip',
-    img: 'robot_and_apple_artboard_1.webp',
-    desktopLink: '/wallpapers/regular/robonomics.network-robot-and-apple-artboard.jpg',
-    phoneLink: '/wallpapers/phone/robonomics.network-robot-and-apple-artboard.jpg'
-  },
-  {
-    id: 5,
-    link: '/wallpapers/full-package/robonomics.network-robonomics-wallpapers-space-travelers.zip',
-    img: 'space_travelers_artboard_1.webp',
-    desktopLink: '/wallpapers/regular/robonomics.network-space-travelers-artboard.jpg',
-    phoneLink: '/wallpapers/phone/robonomics.network-space-travelers-artboard.jpg'
-  },
-  {
-    id: 6,
-    link: '/wallpapers/full-package/robonomics.network-robonomics-wallpapers-bw-astronaut.zip',
-    img: 'bw_astronaut_artboard_1.webp',
-    desktopLink: '/wallpapers/regular/robonomics.network-bw-astronaut-artboard.jpg',
-    phoneLink: '/wallpapers/phone/robonomics.network-bw-astronaut-artboard.jpg'
-  },
-]
+const aspectRatioDownloads = (
+  basePath: string,
+  filePrefix: string,
+  excludeFormats: string[] = [],
+) => [
+  { label: '16:9', href: `${basePath}/${filePrefix}-16-9.png` },
+  { label: '4:3', href: `${basePath}/${filePrefix}-4-3.png` },
+  { label: '3:4', href: `${basePath}/${filePrefix}-3-4.png` },
+  { label: '20:9', href: `${basePath}/${filePrefix}-20-9.png` },
+  { label: '1:1', href: `${basePath}/${filePrefix}-1-1.png` },
+].filter(({ label }) => !excludeFormats.includes(label));
+
+const gridWallpaper = ({
+  title,
+  image,
+  packageHref,
+  basePath,
+  filePrefix,
+  excludeFormats = [],
+  new: isNew = false,
+}: {
+  title: string;
+  image: string;
+  packageHref: string;
+  basePath: string;
+  filePrefix: string;
+  excludeFormats?: string[];
+  new?: boolean;
+}) => ({
+  title,
+  image,
+  packageHref,
+  new: isNew,
+  downloads: aspectRatioDownloads(basePath, filePrefix, excludeFormats),
+});
+
+const gridWallpapers = [
+  gridWallpaper({
+    title: 'Cyberpunks.shop hardware',
+    image: '/wallpapers/previews/cyberpunks-shop-hardware.webp',
+    packageHref: '/wallpapers/cyberpunks-shop-hardware/robonomics.network-cyberpunks-shop-hardware-wallpapers.zip',
+    basePath: '/wallpapers/cyberpunks-shop-hardware',
+    filePrefix: 'robonomics.network-cyberpunks-shop-hardware',
+    new: true,
+  }),
+  gridWallpaper({
+    title: 'Privacy first',
+    image: '/wallpapers/previews/privacy-first.webp',
+    packageHref: '/wallpapers/privacy-first/robonomics.network-privacy-first-wallpapers.zip',
+    basePath: '/wallpapers/privacy-first',
+    filePrefix: 'robonomics.network-privacy-first',
+    new: true,
+  }),
+  gridWallpaper({
+    title: 'Digital freedom',
+    image: '/wallpapers/previews/digital-freedom.webp',
+    packageHref: '/wallpapers/digital-freedom/robonomics.network-digital-freedom-wallpapers.zip',
+    basePath: '/wallpapers/digital-freedom',
+    filePrefix: 'robonomics.network-digital-freedom',
+  }),
+  gridWallpaper({
+    title: 'Altruist air',
+    image: '/wallpapers/previews/altruist-air.webp',
+    packageHref: '/wallpapers/altruist-air/robonomics.network-altruist-air.zip',
+    basePath: '/wallpapers/altruist-air',
+    filePrefix: 'robonomics.network-altruist-air',
+  }),
+  gridWallpaper({
+    title: 'Aira is back',
+    image: '/wallpapers/previews/aira-is-back.webp',
+    packageHref: '/wallpapers/aira-is-back/robonomics.network-aira-is-back.zip',
+    basePath: '/wallpapers/aira-is-back',
+    filePrefix: 'robonomics.network-aira-is-back',
+  }),
+  gridWallpaper({
+    title: 'Devcon 2024 Space Monkey',
+    image: '/wallpapers/previews/space-monkey.webp',
+    packageHref: '/wallpapers/space-monkey/robonomics.network-space-monkey.zip',
+    basePath: '/wallpapers/space-monkey',
+    filePrefix: 'robonomics.network-space-monkey',
+  }),
+  gridWallpaper({
+    title: 'Space cat and Robot',
+    image: '/wallpapers/previews/space-cat-and-robot.webp',
+    packageHref: '/wallpapers/space-monkey/robonomics.network-space-monkey.zip',
+    basePath: '/wallpapers/space-monkey',
+    filePrefix: 'robonomics.network-space-monkey',
+  }),
+  gridWallpaper({
+    title: 'Space Shiva',
+    image: '/wallpapers/previews/space-shiva.webp',
+    packageHref: '/wallpapers/space-shiva/robonomics.network-space-shiva.zip',
+    basePath: '/wallpapers/space-shiva',
+    filePrefix: 'robonomics.network-space-shiva',
+  }),
+  gridWallpaper({
+    title: 'Electric Sheep',
+    image: '/wallpapers/previews/electric-sheep.webp',
+    packageHref: '/wallpapers/electric-sheep/robonomics.network-electric-sheep.zip',
+    basePath: '/wallpapers/electric-sheep',
+    filePrefix: 'robonomics.network-electric-sheep',
+    excludeFormats: ['20:9'],
+  }),
+  gridWallpaper({
+    title: 'Space travelers',
+    image: '/wallpapers/previews/space-travelers.webp',
+    packageHref: '/wallpapers/space-travelers/robonomics.network-space-travelers.zip',
+    basePath: '/wallpapers/space-travelers',
+    filePrefix: 'robonomics.network-space-travelers',
+  }),
+  gridWallpaper({
+    title: 'Astronaut coloured',
+    image: '/wallpapers/previews/astronaut-coloured.webp',
+    packageHref: '/wallpapers/astronaut-coloured/robonomics.network-astronaut-coloured.zip',
+    basePath: '/wallpapers/astronaut-coloured',
+    filePrefix: 'robonomics.network-astronaut-coloured',
+  }),
+  gridWallpaper({
+    title: 'Astronaut black and white',
+    image: '/wallpapers/previews/astronaut-bw.webp',
+    packageHref: '/wallpapers/astronaut-bw/robonomics.network-astronaut-bw.zip',
+    basePath: '/wallpapers/astronaut-bw',
+    filePrefix: 'robonomics.network-astronaut-bw',
+  }),
+];
 ---
 
 
 <Layout 
 	title={$tr("Robonomics Wallpapers")}
 	description={$tr("We created beautiful Robonomics themed wallpapers for different devices that you can use!")}
-  pageTitle={$tr("our robo art wallpapers")}
+  pageTitle={$tr("wallpapers")}
 	ogImage="/website_cover_wallpapers.webp"
 >
 
-  <section class="wallpaper-display">
-    <div class="layout layout__content">
-      <div class="highlight-solid-green__wrapper">
-        <h2 class="m-t-0 highlight-solid-green">{ $tr('Risc-V') }</h2>
-      </div>
-      <div class="wallpaper-display__container grid-2">
-        <img src="/images/wallpapers/riscv.webp" aria-label="check out the altruist outdoor sensor wallpapers"/>
-        <div class="wallpaper-display__content">
-          <p>{ $tr('RISC-V guts. Web3 soul. Decorate your desktop with the future of freedom tech.') }</p>
-          <div class="wallpapers__links"> 
-            <img src="/images/wallpapers/desktop.svg" aria-hidden="true" />
-            <a aria-label="download special risc-v wallpaper for desktop" href="/wallpapers/riscv/robonomics.network-riscv-desktop.png" download="">{$tr('Desktop')}</a>
-          </div>
-          <div class="wallpapers__links"> 
-            <img src="/images/wallpapers/smartphone.svg" aria-hidden="true" />
-            <div class="wallpapers__links-wrapper">
-              <a download aria-label="download special risc-v wallpaper for iphone" href="/wallpapers/riscv/robonomics.network-riscv-iphone.png">{$tr('Iphone')}</a>
-              <a download aria-label="download special risc-v wallpaper for Samsung Galaxy" href="/wallpapers/riscv/robonomics.network-riscv-samsung.zip">{ $tr('Samsung') }</a>
-              <a download aria-label="download special risc-v wallpaper for Pixel" href="/wallpapers/riscv/robonomics.network-riscv-pixel.zip">{ $tr('Pixel') }</a>
-              <a download aria-label="download special risc-v wallpaper for smartphone" href="/wallpapers/riscv/robonomics.network-riscv-iphone.png">{ $tr('Smartphone') }</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="layout layout__content highlight text-center">
+    <p>We are passionate about what we do, so of course we can’t resist creating artistic wallpapers inspired by the Robonomics universe — robotics, cyberpunk aesthetics, digital freedom, and even space (no, we don’t have our own spaceship yet).</p>
+    <p>Download them for free and enjoy.</p>
   </section>
 
-  <section class="wallpaper-display">
-    <div class="layout layout__content">
-      <div class="highlight-solid-green__wrapper">
-        <h2 class="m-t-0 highlight-solid-green">{ $tr('Altruist') }</h2>
-      </div>
-      <div class="wallpaper-display__container grid-2">
-        <img src="/images/wallpapers/altruist.webp" aria-label="check out the altruist outdoor sensor wallpapers"/>
-        <div class="wallpaper-display__content">
-          <p>{ $tr('Our special wallpapers to commemorate the launch of the Outdoor sensor “Altruist“') }</p>
-          <div class="wallpapers__links"> 
-            <img src="/images/wallpapers/desktop.svg" aria-hidden="true" />
-            <a aria-label="download special altruist wallpaper for desktop" href="/wallpapers/altruist/robonomics.network-altruist-desktop.jpg" download="">{$tr('Desktop')}</a>
-          </div>
-          <div class="wallpapers__links"> 
-            <img src="/images/wallpapers/smartphone.svg" aria-hidden="true" />
-            <div class="wallpapers__links-wrapper">
-              <a download aria-label="download special altruist wallpaper for iphone" href="/wallpapers/altruist/robonomics.network-altruist-iphone.jpg">{$tr('Iphone')}</a>
-              <a download aria-label="download special altruist wallpaper for Samsung Galaxy" href="/wallpapers/altruist/robonomics.network-altruist-samsung.zip">{ $tr('Samsung') }</a>
-              <a download aria-label="download special altruist wallpaper for Pixel" href="/wallpapers/altruist/robonomics.network-altruist-pixel.zip">{ $tr('Pixel') }</a>
-              <a download aria-label="download special altruist wallpaper for smartphone" href="/wallpapers/altruist/robonomics.network-altruist-iphone.jpg">{ $tr('Smartphone') }</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <WallpapersGrid>
+    {gridWallpapers.map((item) => (
+      <WallpapersGridItem {...item} />
+    ))}
+  </WallpapersGrid>
 
-  <section class="wallpaper-display">
-    <div class="layout layout__content">
-      <div class="highlight-solid-green__wrapper">
-        <h2 class="m-t-0 highlight-solid-green">{$tr('Aira is back')}</h2>
-      </div>
-      <div class="wallpaper-display__container grid-2">
-        <img src="/images/wallpapers/aira.webp" alt="aira is back wallpapers" aria-label="get our brand new aira wallpaper"/>
-        <div class="wallpaper-display__content">
-          <p>{$tr('Transform your screen with our brand new wallpaper—download now!')}</p>
-          <div class="wallpapers__links"> 
-            <img src="/images/wallpapers/desktop.svg" aria-hidden="true" />
-            <a aria-label="download special aira wallpaper for desktop" href="/wallpapers/aira/robonomics.network-aira-desktop.zip" download="">{$tr('Desktop')}</a>
-          </div>
-          <div class="wallpapers__links"> 
-            <img src="/images/wallpapers/smartphone.svg" aria-hidden="true" />
-            <div class="wallpapers__links-wrapper">
-              <a download aria-label="download special aira wallpaper for iphone" href="/wallpapers/aira/robonomics.network-aira-iphone.zip">{$tr('Iphone')}</a>
-              <a download aria-label="download special aira wallpaper for Samsung Galaxy" href="/wallpapers/aira/robonomics.network-aira-samsung.zip">{$tr('Samsung')}</a>
-              <a download aria-label="download special aira wallpaper for Pixel" href="/wallpapers/aira/robonomics.network-aira-pixel.zip">{$tr('Pixel')}</a>
-              <a download aria-label="download special aira wallpaper for smartphone" href="/wallpapers/aira/robonomics.network-aira-smartphone.zip">{$tr('Smartphone')}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="wallpaper-display">
-    <div class="layout layout__content">
-      <div class="highlight-solid-green__wrapper">
-        <h2 class="m-t-0 highlight-solid-green">{$tr('Space monkey devcon 2024 special')}</h2>
-      </div>
-      <div class="wallpaper-display__container grid-2">
-        <img src="/images/wallpapers/space-monkey.webp" alt="space monkey wallpaper">
-        <div class="wallpaper-display__content">
-          <p>{$tr('Download this picture to your device and join our special Devcon 2024 quest at thrilling locations around Bangkok!')}</p>
-          <div class="wallpapers__links"> 
-            <img src="/images/wallpapers/desktop.svg" alt="" aria-hidden="true" />
-            <a aria-label="download special space monkey wallpaper for desktop" href="/wallpapers/space-monkey/robonomics.network-space-monkey-desktop.jpg" download="">{$tr('Desktop')}</a>
-          </div>
-          <div class="wallpapers__links"> 
-            <img src="/images/wallpapers/smartphone.svg" alt="" aria-hidden="true" />
-            <div class="wallpapers__links-wrapper">
-              <a download aria-label="download special space monkey wallpaper for iphone" href="/wallpapers/space-monkey/robonomics.network-space-monkey-iphone.jpg">{$tr('Iphone')}</a>
-              <a download aria-label="download special space monkey wallpaper for Samsung Galaxy" href="/wallpapers/space-monkey/robonomics.network-space-monkey-samsung.jpg">{$tr('Samsung')}</a>
-              <a download aria-label="download special space monkey wallpaper for Pixel" href="/wallpapers/space-monkey/robonomics.network-space-monkey-pixel.jpg">{$tr('Pixel')}</a>
-              <a download aria-label="download special space monkey wallpaper for smartphone" href="/wallpapers/space-monkey/robonomics.network-space-monkey-smartphone.jpg">{$tr('Smartphone')}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section wallpapers">
-    <div class="layout layout__mid">
-        <div class="highlight-solid-green__wrapper">
-          <h2 class="highlight-solid-green">{$tr('Free Wallpapers for you from our artists')}</h2>
-        </div>
-        <div class="wallpapers__wrapper grid-3">
-          {wallpapers.length && wallpapers.map(item => (
-            <WallpapersItem 
-              link={item.link}
-              img={item.img}
-              desktopLink={item.desktopLink}
-              phoneLink={item.phoneLink}
-            />
-          ))}
-        </div>
-    </div>
-  </section>
-
-  <section class="hidden-wallpapers">
+  <section class="hidden-wallpapers section">
     <div class="layout layout__content">
       <div class="highlight-solid-green__wrapper">
         <h2 class="highlight-solid-green">{$tr('Hide your folder with secret wallpaper')}</h2>
       </div>
-      <img src="/images/wallpapers/bw_astronaut_artboard_1.webp" alt="black and white astronaut wallpaper"/>
+      <img src="/wallpapers/previews/bw_astronaut_artboard_1.webp" alt="black and white astronaut wallpaper"/>
       <p>{$tr("We've created secret wallpapers just for you! Download the background and folder icons, and your folders will blend seamlessly into your Home Screen—leaving only beautiful artwork visible.")}</p>
       <div class="wallpapers__links">
         <a aria-label="download hidden wallpaper for desktop" class="wallpapers-link-desktop" href="/wallpapers/hidden/robonomics.network-robonomics-secret-wallpapers.jpg" download>{$tr('Desktop background')}</a>
@@ -242,6 +200,9 @@ const wallpapers = [
   </style>
   
   <style>
+
+
+
     h2.highlight-solid-green {
       display: inline;
       font-size: calc(var(--base-font-size)* 1.25);
@@ -263,14 +224,6 @@ const wallpapers = [
   
     .wallpapers__links img {
       min-width: 31px;
-    }
-  
-    .wallpaper-display{
-      margin-bottom: calc(var(--space) * 4);
-    }
-  
-    .hidden-wallpapers {
-      margin-bottom: calc(var(--space) * 4);
     }
   
     .hidden-wallpapers img {

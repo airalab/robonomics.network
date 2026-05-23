@@ -1,26 +1,30 @@
-.oldy {
+.oldy, a.oldy {
   --oldy-box-color: var(--color-dark);
+  --oldy-box-size: .3rem;
   --oldy-bg-color: var(--color-light);
   --oldy-padding: calc(var(--space) * 0.5);
+  --oldy-color: inherit;
 	background-color: var(--oldy-bg-color);
 	padding: var(--oldy-padding);
   border: 1px solid var(--oldy-box-color);
-  box-shadow: .3rem .3rem 0 var(--oldy-box-color);
+  box-shadow: var(--oldy-box-size) var(--oldy-box-size) 0 var(--oldy-box-color);
   font-family: var(--font-family);
   transition: all 0.2s ease-out;
+  color: var(--oldy-color);
 }
 
-.oldy__link {
+.oldy__link, a.oldy {
   cursor: pointer;
   /* --oldy-box-color: var(--rb-color-blue); */
 }
 
-.oldy__link:hover {
+.oldy__link:hover, a.oldy:hover {
   --oldy-box-color: var(--color-link);
+  --oldy-color: var(--color-blue);
 }
 
-.oldy__link:hover * {
-  color: var(--color-blue)
+.oldy__link:hover *, a.oldy:hover * {
+  --oldy-color: var(--color-blue);
 }
 
 .oldy.accent {

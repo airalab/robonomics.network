@@ -43,7 +43,7 @@ const isHome = Astro.url.pathname === '/';
 ---
 
 <!doctype html>
-<html lang={languageTag()} amp dir={languageTag() === 'ar' ? 'rtl' : 'ltr'}>
+<html lang={languageTag()} dir={languageTag() === 'ar' ? 'rtl' : 'ltr'}>
 <head>
 	<meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -83,11 +83,13 @@ const isHome = Astro.url.pathname === '/';
   )}
 </head>
 	<body transition:animate="fade">
-      <main class="screen">
+      <main class="screen page">
         <Header translated={translated}/>
 
-        {pageTitle && <h1 set:html={pageTitle} class="pagetitle" />}
-        {backlink && <div class="backlink"><a href={backlink.link} aria-label={backlinkLabel}>&larr; {backlink.title}</a></div>}
+        <div class="layout text-center">
+          </div>{pageTitle && <h1 set:html={pageTitle} />}
+          {backlink && <div class="backlink"><a href={backlink.link} aria-label={backlinkLabel}>&larr; {backlink.title}</a></div>}
+        </div>
 
          <slot />
          <Footer translated={translated}/>
@@ -106,14 +108,10 @@ const isHome = Astro.url.pathname === '/';
     display: none;
   }
 
-  .pagetitle {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    display: inline-block;
-    font-size: calc(var(--base-font-size) * 1.1);
+  .page h1 {
+    font-size: calc(var(--base-font-size) * 1.5);
     font-variation-settings: var(--font-flex-bold);
-    margin: 0 0 calc(var(--space) * 2);
-    padding: 0.4rem var(--layout-sidepadding);
+    margin: calc(var(--space) * 2) 0;
   }
 
   .backlink {
