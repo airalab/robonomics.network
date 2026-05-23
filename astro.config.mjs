@@ -26,9 +26,52 @@ const locales = {
   zh: "zh"
 };
 
+const cyberpunksShop = "https://cyberpunks.shop/";
+const devicePaths = ["altruist/", "smart-home-server/", "hikikomori/", "energy-monitor/", "risc-v/"];
+const localeCodes = Object.keys(locales).filter((c) => c !== defaultLocale).join("|");
+const devicesNoSlashRe = localeCodes
+  ? new RegExp(`^/(${localeCodes})/devices$|^/devices$`)
+  : /^\/devices$/;
+
+/** @type {Record<string, string>} */
+const deviceRedirects = {};
+for (const code of Object.keys(locales)) {
+  const prefix = code === defaultLocale ? "" : `/${code}`;
+  deviceRedirects[`${prefix}/devices`] = cyberpunksShop;
+  for (const slug of devicePaths) {
+    deviceRedirects[`${prefix}/devices/${slug}`] = cyberpunksShop;
+  }
+}
+
+/** Dev: trailingSlash middleware 404s /devices before redirects; run before it in the stack. */
+/** @returns {import('vite').Plugin} */
+function devicesNoSlashRedirectPlugin() {
+  return {
+    name: "devices-no-slash-redirect",
+    enforce: "post",
+    configureServer(server) {
+      return () => {
+        server.middlewares.stack.unshift({
+          route: "",
+          handle(req, res, next) {
+            const pathname = (req.url ?? "").split("?")[0];
+            if (devicesNoSlashRe.test(pathname)) {
+              res.writeHead(301, { Location: cyberpunksShop });
+              res.end();
+              return;
+            }
+            next();
+          },
+        });
+      };
+    },
+  };
+}
+
 export default defineConfig({
-  redirects: {
-    "/devices/risc-v/": "/devices/smart-home-server/",
+  redirects: deviceRedirects,
+  vite: {
+    plugins: [devicesNoSlashRedirectPlugin()],
   },
   markdown: {
     syntaxHighlight: 'prism',

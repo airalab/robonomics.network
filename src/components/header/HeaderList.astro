@@ -30,8 +30,13 @@ const isActive = (target) => {
 ---
 
 <nav class={'header-nav ' + classList} aria-label="Primary">
-  <a href={generatePath('/devices/')} class:list={["header-link", isActive('/devices') && "is-active"]} aria-label="go to the shop devices page">{$tr('SHOP DEVICES')}</a>
-  <a href="https://robonomics.app/" class="header-link header-link--dapp" aria-label="go check the dapp" target="_blank">
+  <a href="https://cyberpunks.shop/" class="header-link header-link--dapp" aria-label="go to cyberpunks shop" target="_blank" rel="noopener noreferrer">
+    {$tr('SHOP DEVICES')}
+    <svg width="8" height="8" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="dapp-arrow" aria-hidden="true">
+      <path d="M1 1L5 5M5 5H1M5 5V1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+  <a href="https://robonomics.app/" class="header-link header-link--dapp" aria-label="go check the dapp" target="_blank" rel="noopener noreferrer">
     {$tr('DAPP')}
     <svg width="8" height="8" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="dapp-arrow">
       <path d="M1 1L5 5M5 5H1M5 5V1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
