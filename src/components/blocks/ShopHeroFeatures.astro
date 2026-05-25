@@ -1,5 +1,6 @@
 ---
 import RbButton from '../RbButton.astro';
+import SvgIcon from '../SvgIcon.astro';
 
 const {
   subtitle = $tr('CYBERPUNKS HARDWARE'),
@@ -34,21 +35,21 @@ const {
         <div class="feature-item feature-item--negative">
           <p class="feature-label">{$tr('NO vendor cloud')}</p>
           <div class="feature-icon">
-            <img src="/images/icons/no-cloud.svg" alt="No vendor cloud" />
+            <SvgIcon class="feature-icon__svg" name="no-cloud" />
           </div>
         </div>
 
         <div class="feature-item feature-item--negative">
           <p class="feature-label">{$tr('NO personal data tracking')}</p>
           <div class="feature-icon">
-            <img src="/images/icons/no-tracking.svg" alt="No personal data tracking" />
+            <SvgIcon class="feature-icon__svg" name="no-tracking" />
           </div>
         </div>
 
         <div class="feature-item feature-item--negative">
           <p class="feature-label">{$tr('NO mandatory subscription')}</p>
           <div class="feature-icon">
-            <img src="/images/icons/no-subscription.svg" alt="No mandatory subscription" />
+            <SvgIcon class="feature-icon__svg" name="no-subscription" />
           </div>
         </div>
       </div>
@@ -76,21 +77,21 @@ const {
       <div class="features-column features-column--right">
         <div class="feature-item feature-item--positive">
           <div class="feature-icon">
-            <img src="/images/icons/open-source.svg" alt="Fully open-source" />
+            <SvgIcon class="feature-icon__svg" name="open-source" />
           </div>
           <p class="feature-label">{$tr('Fully open-source')}</p>
         </div>
 
         <div class="feature-item feature-item--positive">
           <div class="feature-icon">
-            <img src="/images/icons/privacy.svg" alt="Privacy by design" />
+            <SvgIcon class="feature-icon__svg" name="privacy" />
           </div>
           <p class="feature-label">{$tr('Privacy by design')}</p>
         </div>
 
         <div class="feature-item feature-item--positive">
           <div class="feature-icon">
-            <img src="/images/icons/global.svg" alt="Globally accessible" />
+            <SvgIcon class="feature-icon__svg" name="global" />
           </div>
           <p class="feature-label">{$tr('Globally accessible')}</p>
         </div>
@@ -99,25 +100,25 @@ const {
 
     <div class="tech-icons">
       <div class="tech-icon">
-        <img src="/images/icons/gh.svg" alt="GitHub" />
+        <SvgIcon class="tech-icon__svg" name="gh" />
       </div>
       <div class="tech-icon">
-        <img src="/images/icons/clog.svg" alt="Gear" />
+        <SvgIcon class="tech-icon__svg" name="clog" />
       </div>
       <div class="tech-icon">
-        <img src="/images/icons/keyhole.svg" alt="Open Source Initiative" />
+        <SvgIcon class="tech-icon__svg" name="keyhole" />
       </div>
       <div class="tech-icon">
-        <img src="/images/icons/homeassistant.svg" alt="Home Assistant" />
+        <SvgIcon class="tech-icon__svg" name="homeassistant" />
       </div>
       <div class="tech-icon">
-        <img src="/images/icons/tasmota.svg" alt="Tasmota" />
+        <SvgIcon class="tech-icon__svg" name="tasmota" />
       </div>
       <div class="tech-icon">
-        <img src="/images/icons/polkadot.svg" alt="Polkadot" />
+        <SvgIcon class="tech-icon__svg" name="polkadot" />
       </div>
       <div class="tech-icon">
-        <img src="/images/icons/ethereum.svg" alt="Ethereum" />
+        <SvgIcon class="tech-icon__svg" name="ethereum" />
       </div>
     </div>
 
@@ -176,14 +177,14 @@ const {
   function changeProductImage() {
     if (isAnimating) return;
 
-    const imgA = document.getElementById('product-image-a');
-    const imgB = document.getElementById('product-image-b');
+    const imgA = document.getElementById('product-image-a') as HTMLImageElement | null;
+    const imgB = document.getElementById('product-image-b') as HTMLImageElement | null;
     if (!imgA || !imgB) return;
 
     isAnimating = true;
 
-    const currentImg = useImageAAsCurrent ? imgA : imgB;
-    const nextImg = useImageAAsCurrent ? imgB : imgA;
+    const currentImg = (useImageAAsCurrent ? imgA : imgB) as HTMLImageElement;
+    const nextImg = (useImageAAsCurrent ? imgB : imgA) as HTMLImageElement;
 
     const nextSrc = getRandomImage();
 
@@ -218,8 +219,8 @@ const {
 
   // Initialize: set up two images and start rotation
   document.addEventListener('DOMContentLoaded', () => {
-    const imgA = document.getElementById('product-image-a');
-    const imgB = document.getElementById('product-image-b');
+    const imgA = document.getElementById('product-image-a') as HTMLImageElement | null;
+    const imgB = document.getElementById('product-image-b') as HTMLImageElement | null;
     if (imgA && imgB) {
       const currentSrcA = imgA.getAttribute('src') || '';
       const idxA = productImages.findIndex(
@@ -364,7 +365,8 @@ const {
     justify-content: start;
   }
 
-  .feature-icon img {
+  .feature-icon :global(.feature-icon__svg) {
+    width: 100%;
     max-width: 80px;
     height: 80px;
   }
@@ -394,10 +396,9 @@ const {
     flex-shrink: 0;
   }
 
-  .tech-icon img {
+  .tech-icon :global(.tech-icon__svg) {
     width: 100%;
     height: 100%;
-    object-fit: contain;
   }
 
   @media screen and (max-width: 680px) {
@@ -426,7 +427,7 @@ const {
       width: unset;
     }
 
-    .feature-icon img {
+    .feature-icon :global(.feature-icon__svg) {
       max-width: 50px;
     }
 

@@ -4,15 +4,6 @@ import RbButton from '../components/RbButton.astro';
 import ShopHeroFeatures from '../components/blocks/ShopHeroFeatures.astro';
 import VideoGallery from '../components/blocks/VideoGallery.astro';
 
-import { Image } from 'astro:assets';
-
-import Preview1 from '../assets/images/wallpapers/preview-1.webp';
-import Preview2 from '../assets/images/wallpapers/preview-2.webp';
-import Preview3 from '../assets/images/wallpapers/preview-3.webp';
-
-// images
-const images = [Preview1, Preview2, Preview3]
-
 // videos
 const videos = [
   '/video/home-1.mp4',
@@ -45,12 +36,6 @@ const previews = [
     <div class="layout">
       <h2>{$tr('CYBERPUNK ART')}</h2>
       <p>{$tr('We also have cool cyberpunk-style (and not only) desktop wallpapers')}</p>
-
-      <div class="grid grid-3">
-      {images.map((img, index) => (
-        <Image src={img} alt="Wallpaper preview" />
-      ))}
-      </div>
 
     <RbButton 
       href='/wallpapers/' 

@@ -32,7 +32,9 @@ const caseData = casePath ? items.cases.filter(c => casePath.pathname.includes(c
 // Default meta values
 const pageTitleFinal = caseData.length ? await $tr(caseData[0]?.title) : await title || `${siteName} / Robonomics Network`;
 const pageDescriptionFinal = caseData.length ? await $tr(caseData[0]?.description) : await description || siteDescription;
-const pageImageFinal = caseData.length ? `${siteUrl}${caseData[0]?.metaImg}` : (ogImage && `${siteUrl}${ogImage}` || `${siteUrl}/website_cover.webp`);
+const pageImageFinal = caseData.length
+  ? `${siteUrl}${caseData[0]?.metaImg || '/opengraph/default.webp'}`
+  : (ogImage && `${siteUrl}${ogImage}` || `${siteUrl}/opengraph/default.webp`);
 const backlinkLabel = backlink && await $tr(backlink.label);
 
 // Import styles
@@ -87,14 +89,13 @@ const isHome = Astro.url.pathname === '/';
         <Header translated={translated}/>
 
         <div class="layout text-center">
-          </div>{pageTitle && <h1 set:html={pageTitle} />}
+          {pageTitle && <h1 set:html={pageTitle} />}
           {backlink && <div class="backlink"><a href={backlink.link} aria-label={backlinkLabel}>&larr; {backlink.title}</a></div>}
         </div>
 
          <slot />
          <Footer translated={translated}/>
       </main>
-      <script src="../assets/scripts/utils/blog-redirect.js"/>
 	</body>
 </html>
 
@@ -106,12 +107,6 @@ const isHome = Astro.url.pathname === '/';
 
   .hide {
     display: none;
-  }
-
-  .page h1 {
-    font-size: calc(var(--base-font-size) * 1.5);
-    font-variation-settings: var(--font-flex-bold);
-    margin: calc(var(--space) * 2) 0;
   }
 
   .backlink {

@@ -1,0 +1,29 @@
+---
+interface Props {
+  name: string;
+  title?: string;
+  class?: string;
+  width?: number | string;
+  height?: number | string;
+}
+
+const {
+  name,
+  title,
+  class: className = "",
+  width = "1em",
+  height = "1em",
+} = Astro.props;
+---
+
+<svg
+  class={className}
+  width={width}
+  height={height}
+  aria-hidden={title ? undefined : "true"}
+  role={title ? "img" : "presentation"}
+  focusable="false"
+>
+  {title && <title>{title}</title>}
+  <use href={`/images/sprite.svg#${name}`}></use>
+</svg>

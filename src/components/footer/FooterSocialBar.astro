@@ -1,24 +1,16 @@
 ---
-import { Image } from 'astro:assets';
+import SvgIcon from '../SvgIcon.astro';
 import { contacts } from '../../data/socials';
-
-import xIcon from '../../assets/images/icons/x.svg';
-import discordIcon from '../../assets/images/icons/discord.svg';
-import tgIcon from '../../assets/images/icons/tg.svg';
-import instagramIcon from '../../assets/images/icons/instagram.svg';
-import tiktokIcon from '../../assets/images/icons/tiktok.svg';
-import youtubeIcon from '../../assets/images/icons/youtube.svg';
-import ghIcon from '../../assets/images/icons/gh.svg';
 
 // Map social titles to icon files
 const iconMap = {
-  'X': xIcon,
-  'Discord': discordIcon,
-  'Telegram': tgIcon,
-  'Instagram': instagramIcon,
-  'TikTok': tiktokIcon,
-  'Youtube': youtubeIcon,
-  'Github': ghIcon,
+  'X': 'x',
+  'Discord': 'discord',
+  'Telegram': 'tg',
+  'Instagram': 'instagram',
+  'TikTok': 'tiktok',
+  'Youtube': 'youtube',
+  'Github': 'gh',
 };
 
 // Build links from socials.js data
@@ -46,7 +38,7 @@ const links = contacts
             aria-disabled={item.disabled ? "true" : undefined}
             tabindex={item.disabled ? "-1" : undefined}
           >
-            <Image src={item.icon} alt={item.title} width={32} height={32} loading="lazy" />
+            <SvgIcon class="footer-social__icon" name={item.icon} width={32} height={32} />
           </a>
         </li>
       ))}
@@ -94,7 +86,7 @@ const links = contacts
     text-decoration: none;
   }
 
-  .footer-social__link :global(img) {
+  .footer-social__link :global(.footer-social__icon) {
     width: 100%;
     height: 100%;
     filter: brightness(0) invert(1);
@@ -102,7 +94,7 @@ const links = contacts
     transition: opacity 0.15s ease-out, transform 0.15s ease-out;
   }
 
-  .footer-social__link:hover :global(img) {
+  .footer-social__link:hover :global(.footer-social__icon) {
     opacity: 1;
     transform: translateY(-1px);
   }
@@ -112,7 +104,7 @@ const links = contacts
     cursor: not-allowed;
   }
 
-  .footer-social__link.is-disabled:hover :global(img) {
+  .footer-social__link.is-disabled:hover :global(.footer-social__icon) {
     transform: none;
   }
 

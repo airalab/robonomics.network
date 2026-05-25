@@ -70,24 +70,6 @@ h5 {
   font-variation-settings: var(--font-flex-bold);
 }
 
-/* page-title styles */
-
-.page-title {
-  font-size: calc(var(--base-font-size) * 2.5);
-  font-variation-settings: var(--font-flex-extrabold);
-  text-transform: uppercase;
-  color: var(--color-dark);
-  letter-spacing: 3px;
-}
-
-@media screen and (max-width: 680px) {
-  .page-title {
-    font-size: calc(var(--base-font-size) * 1.6);
-  }
-}
-
-/* + Title with line throw */
-
 .title-lined {
   position: relative;
 }
@@ -342,6 +324,10 @@ hr.color-lightgray {
   text-align: center;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 /* for code */
 code {
   max-width: 100%;
@@ -519,4 +505,28 @@ summary {
 
 html[lang="ar"] .case-page__content h2 {
 	text-align: right;
+}
+
+
+/* Text pages */
+.page h1 {
+  font-size: calc(var(--base-font-size) * 2.5);
+  font-variation-settings: var(--font-flex-extrabold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 680px) {
+  .page h1 {
+    font-size: calc(var(--base-font-size) * 1.6);
+  }
+}
+
+.page hr.animate {
+	transform-origin: 50% 50%;
+	transform: scaleX(0);
+}
+
+.page hr.animate.in-viewport {
+	animation: HR 0.4s ease-out 0.8s forwards;
 }

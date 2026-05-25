@@ -7,6 +7,8 @@ import { i18n, filterSitemapByDefaultLocale } from "astro-i18n-aut/integration";
 import paraglide from '@inlang/paraglide-astro';
 import matomo from 'astro-matomo';
 import sitemap from "@astrojs/sitemap";
+import { createRedirectConfig } from "./config/redirects.mjs";
+import { svgSpritePlugin } from "./config/svg-sprite.mjs";
 
 const defaultLocale = "en";
 const locales = {
@@ -26,52 +28,15 @@ const locales = {
   zh: "zh"
 };
 
-const cyberpunksShop = "https://cyberpunks.shop/";
-const devicePaths = ["altruist/", "smart-home-server/", "hikikomori/", "energy-monitor/", "risc-v/"];
-const localeCodes = Object.keys(locales).filter((c) => c !== defaultLocale).join("|");
-const devicesNoSlashRe = localeCodes
-  ? new RegExp(`^/(${localeCodes})/devices$|^/devices$`)
-  : /^\/devices$/;
-
-/** @type {Record<string, string>} */
-const deviceRedirects = {};
-for (const code of Object.keys(locales)) {
-  const prefix = code === defaultLocale ? "" : `/${code}`;
-  deviceRedirects[`${prefix}/devices`] = cyberpunksShop;
-  for (const slug of devicePaths) {
-    deviceRedirects[`${prefix}/devices/${slug}`] = cyberpunksShop;
-  }
-}
-
-/** Dev: trailingSlash middleware 404s /devices before redirects; run before it in the stack. */
-/** @returns {import('vite').Plugin} */
-function devicesNoSlashRedirectPlugin() {
-  return {
-    name: "devices-no-slash-redirect",
-    enforce: "post",
-    configureServer(server) {
-      return () => {
-        server.middlewares.stack.unshift({
-          route: "",
-          handle(req, res, next) {
-            const pathname = (req.url ?? "").split("?")[0];
-            if (devicesNoSlashRe.test(pathname)) {
-              res.writeHead(301, { Location: cyberpunksShop });
-              res.end();
-              return;
-            }
-            next();
-          },
-        });
-      };
-    },
-  };
-}
+const { redirects, devicesNoSlashRedirectPlugin } = createRedirectConfig({
+  locales,
+  defaultLocale,
+});
 
 export default defineConfig({
-  redirects: deviceRedirects,
+  redirects,
   vite: {
-    plugins: [devicesNoSlashRedirectPlugin()],
+    plugins: [devicesNoSlashRedirectPlugin(), svgSpritePlugin()],
   },
   markdown: {
     syntaxHighlight: 'prism',

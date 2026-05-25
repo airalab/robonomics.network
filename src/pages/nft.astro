@@ -1,57 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from 'astro:assets';
-
-// images
-import Pioneer from '../assets/images/nft/nft-pioneer.webp';
-
-import Girls from '../assets/images/nft/nft-girls.webp';
-
-import Spot from '../assets/images/nft/nft-spot.webp';
-import Spot1 from '../assets/images/nft/nft-spot-1.webp';
-import Spot2 from '../assets/images/nft/nft-spot-2.webp';
-import Spot3 from '../assets/images/nft/nft-spot-3.webp';
-
-import Telescope from '../assets/images/nft/nft-telescope.webp';
-import Telescope1 from '../assets/images/nft/nft-telescope-1.webp';
-import Telescope2 from '../assets/images/nft/nft-telescope-2.webp';
-import Telescope3 from '../assets/images/nft/nft-telescope-3.webp';
-
-import PolkaPet from '../assets/images/nft/nft-polka-pet.webp';
-
-import Jetpack from '../assets/images/nft/nft-jetpack.webp';
-import Jetpack1 from '../assets/images/nft/nft-jetpack-1.webp';
-import Jetpack2 from '../assets/images/nft/nft-jetpack-2.webp';
-import RMRK from '../assets/images/nft/nft-rmrk.svg';
-import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
 ---
 
 <Layout
   title="Robonomics NFTS"
-  ogImage="/website_cover_nft.webp"
+  pageTitle={$tr('Robonomics nfts')}
+  ogImage="/opengraph/nft.webp"
 >
 
-  <!-- nft banner section -->
-  <section class="section nft-hero section__blue">
-    <div class="nft__main-title title-with-bg">
-      <h1><span>{$tr('Robonomics nfts')}</span></h1>
-    </div>
-
-    <div class="layout layout__content nft__banner">
-      <p>{$tr("Here, we've assembled a collection of NFTs minted during our extensive crypto journey, both independently and with great teams. These unique tokens offer verifiable ownership on the blockchain and make for great swag to adorn your blockchain account. You can bid on some of them at auction or even mint your own unique piece.")}</p>
-      <div class="nft__banner-img">
-        <img alt="" aria-hidden="true" src="/images/nft/nft-banner.webp"/>
-      </div>
-    </div>
-  </section>
+<section class="layout layout__content highlight text-center">
+  <p>{$tr("Here, we've assembled a collection of NFTs minted during our extensive crypto journey, both independently and with great teams. These unique tokens offer verifiable ownership on the blockchain and make for great swag to adorn your blockchain account. You can bid on some of them at auction or even mint your own unique piece.")}</p>
+</section>
 
   <!-- nfts section -->
   <section class="nft">
     <div class="layout layout__mid">
-      <ol class="nft__list animate-inside">
+      <ol class="nft__list">
 
         <!-- robnomics pioneer  -->
-        <li class="nft__item nav__item--top nft-pioneer animate-inside">
+        <li class="nft__item nav__item--top nft-pioneer">
           <div class="nft__item--container">
             <div class="nft__header nft__header--end">
               <h3 class="nft__title nft--desktop"> 
@@ -65,7 +32,7 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
             </div>
             <div class="nft__wrapper nft__wrapper--leftImg">
               <a href="https://opensea.io/assets/ethereum/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1" class="nft__img" aria-label="check Robonomics Pioneer nft" target="_blank">
-                <Image  src={Pioneer} alt="nft Robonomics Pioneer"/>
+                <img src="/images/nft/nft-pioneer.webp" alt="nft Robonomics Pioneer" />
                 <span class="nft__minted nft--mobile">{$tr('minted: 992')}</span>
               </a>
               <div class="nft__info">
@@ -77,7 +44,7 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
         </li>
 
         <!-- nft girls -->
-        <li class="nft__item nft-girls animate-inside">
+        <li class="nft__item nft-girls">
           <div class="nft__item--container">
 
             <div class="nft__header">
@@ -94,14 +61,14 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
                 <a href="https://opensea.io/collection/robonomics-crypto-girls" class="nft__link nft__opensea" aria-label="check Robonomics crypto girls nft" target="_blank" />
               </div>
               <a href="https://opensea.io/collection/robonomics-crypto-girls" class="nft__img" aria-label="check Robonomics crypto girls nft" target="_blank">
-                <Image src={Girls} alt="nft Robonomics crypto girls"/>
+                <img src="/images/nft/nft-girls.webp" alt="nft Robonomics crypto girls" />
               </a>
             </div>
           </div>
         </li>
 
         <!-- nft spot -->
-        <li class="nft__item  nav__item--top nft-spot nft-with-gallery animate-inside">
+        <li class="nft__item  nav__item--top nft-spot nft-with-gallery">
           <div class="nft__item--container">
 
             <h3 class="nft__title nft--mobile"> 
@@ -110,12 +77,12 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
 
             <div class="nft__item-left">
               <div class="nft-spot-img">
-                <Image src={Spot} alt="nft spot"/>
+                <img src="/images/nft/nft-spot.webp" alt="nft spot" />
               </div>
               <div class="nft__imgs-wrapper">
-                <Image src={Spot1} alt="nft spot"/>
-                <Image src={Spot2} alt="nft spot"/>
-                <Image src={Spot3} alt="nft spot"/>
+                <img src="/images/nft/nft-spot-1.webp" alt="nft spot" />
+                <img src="/images/nft/nft-spot-2.webp" alt="nft spot" />
+                <img src="/images/nft/nft-spot-3.webp" alt="nft spot" />
               </div>
               <a href="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot" class="nft__link nft__singular" aria-label="check SEASONAL SPOT NFT COLLECTIONS" target="_blank" />
             </div>
@@ -136,7 +103,7 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
         </li>
 
         <!-- nft telescope -->
-        <li class="nft__item nav__item--top nft-telescope nft-with-gallery animate-inside">
+        <li class="nft__item nav__item--top nft-telescope nft-with-gallery">
           <div class="nft__item--container">
 
             <h3 class="nft__title nft--mobile"> 
@@ -145,9 +112,9 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
 
             <div class="nft__item-left">
               <div class="nft__imgs-wrapper">
-                <Image src={Telescope1} alt="nft telescope"/>
-                <Image src={Telescope2} alt="nft telescope"/>
-                <Image src={Telescope3} alt="nft telescope"/>
+                <img src="/images/nft/nft-telescope-1.webp" alt="nft telescope" />
+                <img src="/images/nft/nft-telescope-2.webp" alt="nft telescope" />
+                <img src="/images/nft/nft-telescope-3.webp" alt="nft telescope" />
               </div>
               <a href="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot" class="nft__link nft__singular" aria-label="check automated telescope collection" target="_blank" />
             </div>
@@ -163,14 +130,14 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
                 <p>{$tr("Located in the Atacama Desert, Chile, a physical telescope can be accessed through a decentralized app for capturing real-time images of astronomical objects in deep space. Every user with an internet connection can access it with $STRGZN tokens, which are available for purchase in the app using a credit card. Select an astronomical object, send a command to the telescope to take a picture, and wait for the minted NFT on the Singular platform. Please note that the app is only available for use from 11 pm to 6 am GMT-3 due to the telescope's operating hours.")}</p>
               </div>
               <div class="nft-telescope-img">
-                <Image src={Telescope} alt="nft telescope"/>
+                <img src="/images/nft/nft-telescope.webp" alt="nft telescope" />
               </div>
             </div>
           </div>
         </li>
 
         <!-- nft polka pet -->
-        <li class="nft__item nav__item--center nft-polkapet animate-inside">
+        <li class="nft__item nav__item--center nft-polkapet">
           <div class="nft__item--container">
             <div class="nft__wrapper nft__wrapper--leftImg">
               <h3 class="nft__title nft--mobile"> 
@@ -178,7 +145,7 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
               </h3>
               <div class="nft-img-with-adds">
                 <a href="https://opensea.io/assets/ethereum/0x8cb813bf27dc744fc5fb6ba7515504de45d39e08/24" class="nft__img" aria-label="check Robonomics Polka pet" target="_blank">
-                  <Image src={PolkaPet} alt="nft Robonomics Polka pet"/>
+                  <img src="/images/nft/nft-polka-pet.webp" alt="nft Robonomics Polka pet" />
                 </a>
                 <div class="nft--desktop">
                   <p>{$tr('In collaboration with Polkapets')}</p>
@@ -246,7 +213,7 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
         </li>
 
         <!-- nft Mecha Arm Jetpack-->
-        <li class="nft__item nft-jetpack animate-inside">
+        <li class="nft__item nft-jetpack">
           <h3 class="nft__title nft--mobile"> 
             <a href="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n" aria-label="check Mecha Arm Jetpack nft" target="_blank">{$tr('6. Mecha Arm Jetpack')}</a>
           </h3>
@@ -259,18 +226,18 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
               <a href="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n" class="nft__link nft__kanaria"  aria-label="check Mecha Arm Jetpack nft" target="_blank" />
             </div>
             <div class="nft__imgs">
-              <Image src={Jetpack1} alt="Mecha Arm Jetpack"/>
-              <Image src={Jetpack2} alt="Mecha Arm Jetpack"/>
+              <img src="/images/nft/nft-jetpack-1.webp" alt="Mecha Arm Jetpack" />
+              <img src="/images/nft/nft-jetpack-2.webp" alt="Mecha Arm Jetpack" />
             </div>
 
             <div class="nft-jetpack__wrapper">
               <a href="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n" class="nft__img nft__img--jetpack"  aria-label="check Mecha Arm Jetpack nft" target="_blank">
-                <Image src={Jetpack} alt="Mecha Arm Jetpack"/>
+                <img src="/images/nft/nft-jetpack.webp" alt="Mecha Arm Jetpack" />
               </a>
 
               <div class="nft__rmrk">
-                <Image class="nft--light" src={RMRK} alt="rmrk"/>
-                <Image class="nft--dark" src={RMRKLight} alt="rmrk"/>
+                <img class="nft--light" src="/images/nft/nft-rmrk.svg" alt="rmrk" />
+                <img class="nft--dark" src="/images/nft/nft-rmrk-light.svg" alt="rmrk" />
                 <span>{$tr('RMRK Partnerships')}</span>
               </div>
             </div>
@@ -301,64 +268,6 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
 
   .nft--dark {
     display: none;
-  }
-
-  .nft-hero {
-    margin-top: 0;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .nft-hero::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #5F7AF6;
-  }
-
-  .nft-hero::after {
-    content: url("data:image/svg+xml,%3Csvg width='233' height='178' viewBox='0 0 233 178' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='233' y='100' width='100' height='100' transform='rotate(180 233 100)' fill='%235F7AF6'/%3E%3Crect x='134' y='155' width='55' height='55' transform='rotate(180 134 155)' fill='%23CEB0FA'/%3E%3Crect x='23' y='178' width='23' height='23' transform='rotate(180 23 178)' fill='%23CEB0FA'/%3E%3Crect x='134' y='100' width='55' height='55' transform='rotate(180 134 100)' fill='%23F34C9A'/%3E%3Crect x='79' y='155' width='55' height='55' transform='rotate(180 79 155)' fill='%2381A8F8'/%3E%3C/svg%3E");;
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 233px;
-    width: 100%;
-  }
-
-  html[dir="rtl"] .nft-hero::after  {
-    left: 0;
-    right: unset;
-  }
-
-  .nft__banner {
-    position: relative;
-    padding: calc(var(--space) * 2);
-    min-height: 560px;
-  }
-
-  .nft__banner p {
-    max-width: 560px;
-    width: 100%;
-    font-size: calc(var(--base-font-size) * 1.1);
-    font-style: italic;
-    font-weight: 500;
-    margin-bottom: 0;
-  }
-
-  .nft__banner-img {
-    position: absolute;
-    bottom: -22px;
-    right: -60px;
-    max-width: 450px;
-    width: 100%;
-  }
-
-  html[dir="rtl"] .nft__banner-img {
-    left: 0;
-    right: unset;
   }
 
   .nft__list {
@@ -750,34 +659,6 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
       display: block;
       margin-bottom: var(--space);
     }
-    .nft__banner {
-      min-height: 675px;
-    }
-
-    .nft__banner p {
-      position: relative;
-      max-width: unset;
-      z-index: 5;
-    }
-
-    .nft-hero::before {
-      display: none;
-    }
-
-    .nft-hero::after {
-      top: 40%;
-      max-width: 233px;
-      width: 100%;
-      z-index: 0;
-    }
-
-    .nft__banner-img {
-      right: unset;
-      left: 50% !important;
-      transform: translateX(-50%);
-      z-index: 2;
-    }
-
     .nft__item h3 {
       text-align: left;
       margin-right: 0;
@@ -948,15 +829,6 @@ import RMRKLight from '../assets/images/nft/nft-rmrk-light.svg';
   }
 
   @media screen and (max-width: 602px) {
-
-    .nft__banner {
-      min-height: 748px;
-    }
-    
-    .nft-hero::after {
-      right: 20px;
-      top: 50%;
-    }
 
     .nft__item h3 {
       font-size: var(--base-font-size);

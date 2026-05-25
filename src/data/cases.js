@@ -6,7 +6,7 @@ export default {
       description: $trVue('Collaboration with real estate developer on Cyprus for tracking the daily distribution, consumption and offsetting any excess carbon footprint.'),
       path: 'cases/fronius-solar-web',
       cover_image: 'fronius-solar-web.webp',
-      metaImg: '/website_cover_fronius_solar_web.webp',
+      metaImg: '/opengraph/fronius_solar_web.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -24,7 +24,7 @@ export default {
       description: $trVue('One of our goals in developing this case is to turn Robonomics into ROS 2 Middleware.This will allow us to use Robonomics on Substrate to create an dapp that can run ROS 2 right from the browser!'),
       path: 'cases/rust-for-ros2',
       cover_image: 'rust-ros2.webp',
-      metaImg: '/website_cover_rust_ros2.webp',
+      metaImg: '/opengraph/rust_ros2.webp',
       // progress field needs for "sort by progress" filter
       progress: 'proceeding',
       // created field needs for "sort by date" filter (for earliest option)
@@ -59,7 +59,7 @@ export default {
       description: $trVue('Robonomics coffee - is a smart coffee machine integrated in Robonomics Network. This project aims to show Robonomics potential in the IoT sphere by a real-world example.'),
       path: 'cases/blockchain-coffee-machine',
       cover_image: 'blockchain-coffee.webp',
-      metaImg: '/website_cover_coffee-machine.webp',
+      metaImg: '/opengraph/coffee-machine.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)
@@ -349,7 +349,7 @@ export default {
       description: $trVue('We’re excited to participate in Decentralized Lugano 2025! On May 8th, participants can take fun, smile-filled photos — with smiles randomly and automatically added.'),
       path: 'cases/lugano-2025',
       cover_image: 'lugano-2025.webp',
-      metaImg: '/og-pics/cases-lugano-2025.webp',
+      metaImg: '/opengraph/cases-lugano-2025.webp',
       // progress field needs for "sort by progress" filter
       progress: 'complete',
       // created field needs for "sort by date" filter (for earliest option)

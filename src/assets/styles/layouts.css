@@ -154,15 +154,6 @@
   white-space: normal; 
 }
 
-.page hr.animate {
-	transform-origin: 50% 50%;
-	transform: scaleX(0);
-}
-
-.page hr.animate.in-viewport {
-	animation: HR 0.4s ease-out 0.8s forwards;
-}
-
 /* for cases */
 .case-page__content {
 	margin-bottom: calc(var(--space) * 2);

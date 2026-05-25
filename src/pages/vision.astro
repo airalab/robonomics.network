@@ -19,7 +19,7 @@ const books = [
 <Layout 
   title = {$tr("Robonomics network vision")}
   description = {$tr("We are experimenters, engineers and scientists. It is important for us not only to develop a solution that is relevant for today, but first to understand the scientific validity of the approach and achieve clarity in the presentation of the principles that should underlie the entire architecture of a software solution.")}
-  ogImage="/website_cover_vision.webp"
+  ogImage="/opengraph/vision.webp"
 >
 
   <div class="page vision">
@@ -375,6 +375,8 @@ const books = [
   let scrolled = false;
 
   document.addEventListener('click', (event) => {
+    if (!(event.target instanceof Element)) return;
+
     const target = event.target.closest('.book');
     scrolled = false;
     if (!target) return;
@@ -394,7 +396,9 @@ const books = [
       }
     } else {
       const teleologySection = document.getElementById('teleology');
-      teleologySection.style.display = 'none';
+      if (teleologySection) {
+        teleologySection.style.display = 'none';
+      }
     }
   });
 
