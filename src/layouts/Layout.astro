@@ -32,8 +32,8 @@ const caseData = casePath ? items.cases.filter(c => casePath.pathname.includes(c
 const pageTitleFinal = caseData.length ? await $tr(caseData[0]?.title) : await title || `${siteName} / Robonomics Network`;
 const pageDescriptionFinal = caseData.length ? await $tr(caseData[0]?.description) : await description || siteDescription;
 const pageImageFinal = caseData.length
-  ? `${siteUrl}${caseData[0]?.metaImg || '/opengraph/default.webp'}`
-  : (ogImage && `${siteUrl}${ogImage}` || `${siteUrl}/opengraph/default.webp`);
+  ? `${siteUrl}${caseData[0]?.metaImg || '/opengraph/default.png'}`
+  : (ogImage && `${siteUrl}${ogImage}` || `${siteUrl}/opengraph/default.png`);
 
 // Import styles
 import '../assets/styles/main.css';
