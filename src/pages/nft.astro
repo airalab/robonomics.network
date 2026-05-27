@@ -1,19 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const nftIntroText = `
+  <p>${await $tr("Here, we've assembled a collection of NFTs minted during our extensive crypto journey, both independently and with great teams. These unique tokens offer verifiable ownership on the blockchain and make for great swag to adorn your blockchain account. You can bid on some of them at auction or even mint your own unique piece.")}</p>
+`;
 ---
 
 <Layout
   title="Robonomics NFTS"
   pageTitle={$tr('Robonomics nfts')}
+  pageIntroText={nftIntroText}
   ogImage="/opengraph/nft.webp"
 >
 
-<section class="layout layout__content highlight text-center">
-  <p>{$tr("Here, we've assembled a collection of NFTs minted during our extensive crypto journey, both independently and with great teams. These unique tokens offer verifiable ownership on the blockchain and make for great swag to adorn your blockchain account. You can bid on some of them at auction or even mint your own unique piece.")}</p>
-</section>
-
   <!-- nfts section -->
-  <section class="nft">
+  <section class="section nft">
     <div class="layout layout__mid">
       <ol class="nft__list">
 
@@ -32,7 +33,7 @@ import Layout from "../layouts/Layout.astro";
             </div>
             <div class="nft__wrapper nft__wrapper--leftImg">
               <a href="https://opensea.io/assets/ethereum/0xdc9fe731ce957c14a7b055a34270b2400b0905ec/1" class="nft__img" aria-label="check Robonomics Pioneer nft" target="_blank">
-                <img src="/images/nft/nft-pioneer.webp" alt="nft Robonomics Pioneer" />
+                <img src="/pages/nft/nft-pioneer.webp" alt="nft Robonomics Pioneer" />
                 <span class="nft__minted nft--mobile">{$tr('minted: 992')}</span>
               </a>
               <div class="nft__info">
@@ -61,7 +62,7 @@ import Layout from "../layouts/Layout.astro";
                 <a href="https://opensea.io/collection/robonomics-crypto-girls" class="nft__link nft__opensea" aria-label="check Robonomics crypto girls nft" target="_blank" />
               </div>
               <a href="https://opensea.io/collection/robonomics-crypto-girls" class="nft__img" aria-label="check Robonomics crypto girls nft" target="_blank">
-                <img src="/images/nft/nft-girls.webp" alt="nft Robonomics crypto girls" />
+                <img src="/pages/nft/nft-girls.webp" alt="nft Robonomics crypto girls" />
               </a>
             </div>
           </div>
@@ -77,12 +78,12 @@ import Layout from "../layouts/Layout.astro";
 
             <div class="nft__item-left">
               <div class="nft-spot-img">
-                <img src="/images/nft/nft-spot.webp" alt="nft spot" />
+                <img src="/pages/nft/nft-spot.webp" alt="nft spot" />
               </div>
               <div class="nft__imgs-wrapper">
-                <img src="/images/nft/nft-spot-1.webp" alt="nft spot" />
-                <img src="/images/nft/nft-spot-2.webp" alt="nft spot" />
-                <img src="/images/nft/nft-spot-3.webp" alt="nft spot" />
+                <img src="/pages/nft/nft-spot-1.webp" alt="nft spot" />
+                <img src="/pages/nft/nft-spot-2.webp" alt="nft spot" />
+                <img src="/pages/nft/nft-spot-3.webp" alt="nft spot" />
               </div>
               <a href="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot" class="nft__link nft__singular" aria-label="check SEASONAL SPOT NFT COLLECTIONS" target="_blank" />
             </div>
@@ -112,9 +113,9 @@ import Layout from "../layouts/Layout.astro";
 
             <div class="nft__item-left">
               <div class="nft__imgs-wrapper">
-                <img src="/images/nft/nft-telescope-1.webp" alt="nft telescope" />
-                <img src="/images/nft/nft-telescope-2.webp" alt="nft telescope" />
-                <img src="/images/nft/nft-telescope-3.webp" alt="nft telescope" />
+                <img src="/pages/nft/nft-telescope-1.webp" alt="nft telescope" />
+                <img src="/pages/nft/nft-telescope-2.webp" alt="nft telescope" />
+                <img src="/pages/nft/nft-telescope-3.webp" alt="nft telescope" />
               </div>
               <a href="https://singular.app/space/Gecm9tRWX5sFzttHLB2j6PurJBeNM3oLHABvztnqXCnmHwZ/nfts/created?searchQuery=spot" class="nft__link nft__singular" aria-label="check automated telescope collection" target="_blank" />
             </div>
@@ -130,7 +131,7 @@ import Layout from "../layouts/Layout.astro";
                 <p>{$tr("Located in the Atacama Desert, Chile, a physical telescope can be accessed through a decentralized app for capturing real-time images of astronomical objects in deep space. Every user with an internet connection can access it with $STRGZN tokens, which are available for purchase in the app using a credit card. Select an astronomical object, send a command to the telescope to take a picture, and wait for the minted NFT on the Singular platform. Please note that the app is only available for use from 11 pm to 6 am GMT-3 due to the telescope's operating hours.")}</p>
               </div>
               <div class="nft-telescope-img">
-                <img src="/images/nft/nft-telescope.webp" alt="nft telescope" />
+                <img src="/pages/nft/nft-telescope.webp" alt="nft telescope" />
               </div>
             </div>
           </div>
@@ -145,7 +146,7 @@ import Layout from "../layouts/Layout.astro";
               </h3>
               <div class="nft-img-with-adds">
                 <a href="https://opensea.io/assets/ethereum/0x8cb813bf27dc744fc5fb6ba7515504de45d39e08/24" class="nft__img" aria-label="check Robonomics Polka pet" target="_blank">
-                  <img src="/images/nft/nft-polka-pet.webp" alt="nft Robonomics Polka pet" />
+                  <img src="/pages/nft/nft-polka-pet.webp" alt="nft Robonomics Polka pet" />
                 </a>
                 <div class="nft--desktop">
                   <p>{$tr('In collaboration with Polkapets')}</p>
@@ -226,18 +227,18 @@ import Layout from "../layouts/Layout.astro";
               <a href="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n" class="nft__link nft__kanaria"  aria-label="check Mecha Arm Jetpack nft" target="_blank" />
             </div>
             <div class="nft__imgs">
-              <img src="/images/nft/nft-jetpack-1.webp" alt="Mecha Arm Jetpack" />
-              <img src="/images/nft/nft-jetpack-2.webp" alt="Mecha Arm Jetpack" />
+              <img src="/pages/nft/nft-jetpack-1.webp" alt="Mecha Arm Jetpack" />
+              <img src="/pages/nft/nft-jetpack-2.webp" alt="Mecha Arm Jetpack" />
             </div>
 
             <div class="nft-jetpack__wrapper">
               <a href="https://kanaria.rmrk.app/catalogue?moreOnSale=aXBmczovL2lwZnMvUW1QbkdxZzRTeGRFMkIxQ2VIdW9OaHIyNlN1UXR3WDJwOHRhTEVCcEROUWNiWC9yb2Jvbm9taWNzX2JhY2tfdGh1bWIucG5n" class="nft__img nft__img--jetpack"  aria-label="check Mecha Arm Jetpack nft" target="_blank">
-                <img src="/images/nft/nft-jetpack.webp" alt="Mecha Arm Jetpack" />
+                <img src="/pages/nft/nft-jetpack.webp" alt="Mecha Arm Jetpack" />
               </a>
 
               <div class="nft__rmrk">
-                <img class="nft--light" src="/images/nft/nft-rmrk.svg" alt="rmrk" />
-                <img class="nft--dark" src="/images/nft/nft-rmrk-light.svg" alt="rmrk" />
+                <img class="nft--light" src="/pages/nft/nft-rmrk.svg" alt="rmrk" />
+                <img class="nft--dark" src="/pages/nft/nft-rmrk-light.svg" alt="rmrk" />
                 <span>{$tr('RMRK Partnerships')}</span>
               </div>
             </div>

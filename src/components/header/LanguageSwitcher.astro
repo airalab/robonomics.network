@@ -3,11 +3,10 @@ import { getLocale } from "astro-i18n-aut";
 
 const locale = getLocale(Astro.url);
 const localesList = ["ar", "de", "el", "en", "es", "fr", "it", "ja", "ko", "nl", "pt", "ru", "uk", "zh"];
-const translated = false;
-let initialLocale = locale ? locale : 'en';
+const initialLocale = locale || "en";
 ---
 
-<div class="select-wrapper" id="select-wrapper">
+<div class="select-wrapper">
   <select id="locale-select" aria-label="choose preferably language" tabindex="0">
     {localesList.map((item) => (
       <option value={item} selected={item === initialLocale}>
@@ -15,13 +14,16 @@ let initialLocale = locale ? locale : 'en';
       </option>
     ))}
   </select>
-  <!-- {initialLocale !== 'en' && !translated && <span>AI</span>} -->
 </div>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const localeSelect = document.getElementById('locale-select');
+    const localeSelect = document.getElementById('locale-select') as HTMLSelectElement | null;
     const allLanguages = ["ar", "de", "el", "en", "es", "fr", "it", "ja", "ko", "nl", "pt", "ru", "uk", "zh"];
+
+    if (!localeSelect) {
+      return;
+    }
 
     const changeURL = (newLocale) => {
       // Preserve query params + hash when switching locale
@@ -57,8 +59,8 @@ let initialLocale = locale ? locale : 'en';
     }
 
 
-    localeSelect.addEventListener('change', (event) => {
-      const newLocale = event.target.value;
+    localeSelect.addEventListener('change', () => {
+      const newLocale = localeSelect.value;
       if (typeof localStorage !== 'undefined') {
         localStorage.setItem('locale', newLocale);
       }
@@ -79,21 +81,6 @@ let initialLocale = locale ? locale : 'en';
   .select-wrapper {
     position: relative;
     cursor: pointer;
-  }
-
-  .select-wrapper span{
-    position: absolute;
-    top: 2px;
-    right: -5px;
-    width: 25px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(var(--base-font-size) * 0.6);
-    font-weight: 600;
-    color: var(--color-dark);
-    z-index: -1;
   }
 
   select {

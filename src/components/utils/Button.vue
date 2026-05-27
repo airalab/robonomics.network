@@ -73,7 +73,7 @@ const classes = computed(() => ({
 }
 
 .robo-button:hover {
-  --color-background: var(--color-blue-dark);
+  background-color: color-mix(in srgb, var(--color-background) 85%, black);
 }
 
 .robo-button-ok {
@@ -90,7 +90,7 @@ const classes = computed(() => ({
 
 .robo-button-na,
 .robo-button[disabled] {
-  --color-background: var(--color-gray-mid);
+  --color-background: var(--color-gray);
   cursor: default;
   pointer-events: none;
 }

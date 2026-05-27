@@ -5,8 +5,6 @@ import VideoGallery from '../components/blocks/VideoGallery.astro';
 import TrustBadges from '../components/blocks/TrustBadges.astro';
 import CasesDisplay from '../components/blocks/CasesDisplay.astro';
 
-import { Image } from 'astro:assets';
-
 // images
 import BANNER from '../assets/images/for-coworking-and-coliving/banner.webp';
 
@@ -30,9 +28,8 @@ const previews = [
 <Layout 
   title="For co-working and co-living" 
   description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
+  pageTitle={$tr('For co-working & co-living')}
 >
-
-  <div class="layout layout__content page-title"><h1 class="page-title">{$tr('For co-working & co-living')}</h1></div>
 
   <VideoGallery small videos={videos} preview={previews} alt="For co-working & co-living video example" cls="mb"/>
 
@@ -51,9 +48,9 @@ const previews = [
     <TrustBadges variant="cowork" />
   </section>
 
-  <section class="section-vivid-green">
+  <section class="section-green">
     <div class="layout">
-      <Image src={BANNER} alt="" aria-hidden="true" />
+      <img src={BANNER.src} alt="" aria-hidden="true" loading="lazy" />
     </div>
   </section>
 
@@ -126,14 +123,5 @@ const previews = [
   .description-bold {
     font-variation-settings: var(--font-flex-bold);
   }
-  
-  .section-vivid-green {
-    padding-top: var(--space);
-  }
-
-  .section-vivid-green div {
-    line-height: 0;
-  }
-
 
 </style>

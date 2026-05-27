@@ -33,7 +33,7 @@ const baseItems = [
 
 const extendedItems = [
   ...baseItems,
-  { key: 'web3', label: $tr('web3 native'), type: 'img', src: '/images/icons/web3.svg' },
+  { key: 'web3', label: $tr('web3 native'), type: 'img', src: '/images/web3.svg' },
 ];
 
 const items = variant === 'cowork' ? extendedItems : baseItems;
@@ -43,7 +43,7 @@ const isCowork = variant === 'cowork';
 <div class:list={["trust-badges", isCowork && "trust-badges--large"]} aria-label="Key principles">
   {items.map((i) => (
     <div class:list={["trust-badges__item", isCowork && "trust-badges__item--large"]}>
-      {i.type === 'svg' ? (
+      {'svg' in i ? (
         <span class="trust-badges__icon" aria-hidden="true" set:html={i.svg}></span>
       ) : (
         <span class="trust-badges__icon" aria-hidden="true">

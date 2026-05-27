@@ -3,16 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import RbButton from '../components/RbButton.astro';
 import VideoGallery from '../components/blocks/VideoGallery.astro';
 
-import { Image } from 'astro:assets';
-
-// images
-import HASS from '../assets/images/for-smart-home/home-assistant.webp';
-import HASS2 from '../assets/images/for-smart-home/home-assistant-2.webp';
-
-import HASSWEBM from'../assets/images/for-smart-home/hass-for-engineers.webm';
-import HASSGIF from'../assets/images/for-smart-home/hass-for-engineers.gif';
-import DIYGEEKS from'../assets/images/for-smart-home/diy-geeks.webp';
-
 // videos
 const videos = [
   '/video/smart-home-1.mp4',
@@ -33,9 +23,8 @@ const previews = [
 <Layout 
   title="For smart homes" 
   description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
+  pageTitle={$tr('For smart homes')}
 >
-
-  <div class="layout layout__content page-title"><h1 class="page-title devices-title">{$tr('For smart homes')}</h1></div>
 
   <VideoGallery small videos={videos} previews={previews} alt="For smart homes video example" cls="mb"/>
 
@@ -49,8 +38,8 @@ const previews = [
       <p class="description-bold">{$tr('If you need help implementing a smart home project for an apartment or private house almost anywhere in the world — contact our smart home integration engineers at')} <a href="https://pinout.cloud/" aria-label="go to pinout website" class="underline">Pinout.cloud.</a></p>
       <p>{$tr('We’ll support you at every stage: from working with blueprints to programming, configuration, and on-site installation in most countries worldwide.')}</p>
       <div class="grid grid-2">
-        <Image src={HASS} alt="homeassistant interface" />
-        <Image src={HASS2} alt="we built for you image" />
+          <img src="/pages/for-smart-homes/home-assistant.webp" alt="homeassistant interface" loading="lazy" />
+          <img src="/pages/for-smart-homes/home-assistant-2.webp" alt="we built for you image" loading="lazy" />
       </div>
       <RbButton 
         href='https://pinout.cloud/contact-us' 
@@ -82,11 +71,11 @@ const previews = [
           playsinline
           aria-label="homeassistant interface"
         >
-          <source src={HASSWEBM} type="video/webm" />
-          <img src={HASSGIF.src} alt="homeassistant interface" />
+          <source src="/pages/for-smart-homes/hass-for-engineers.webm" type="video/webm" />
+          <img src="/pages/for-smart-homes/hass-for-engineers.gif" alt="homeassistant interface" />
         </video>
 
-        <Image src={DIYGEEKS} alt="diy geeks image" />
+        <img src="/pages/for-smart-homes/diy-geeks.webp" alt="diy geeks image" loading="lazy" />
       </div>
       <RbButton 
         href='https://wiki.robonomics.network/docs/install-smart-home/' 

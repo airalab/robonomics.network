@@ -1,17 +1,18 @@
 ---
 // components
 import Layout from '../layouts/Layout.astro';
+
+const notFoundIntroText = `
+  <p>${await $tr('This page does not exist or has been deprecated. Please check the URL or use the website navigation to continue browsing.')}</p>
+  <p>${await $tr('If you believe this link should still work, please create an')} <a class="link" href="https://github.com/airalab/robonomics.network/issues" target="_blank">${await $tr('issue')}</a> ${await $tr('and mention the URL that returned the 404 page.')}</p>
+`;
 ---
 
 <Layout 
   title = {$tr("Page not found")}
   pageTitle={$tr("This page is out of your space")}
+  pageIntroText={notFoundIntroText}
   description = {$tr("The page you were looking for does not exist, may have been deprecated, or the URL may contain a typo. Use the website navigation to find what you need.")}
 >
-
-  <section class="layout layout__content text-bold text-center">
-    <p>{$tr('This page does not exist or has been deprecated. Please check the URL or use the website navigation to continue browsing.')}</p>
-    <p>{ $tr('If you believe this link should still work, please create an') } <a class="link" href="https://github.com/airalab/robonomics.network/issues" target="_blank">issue</a> { $tr('and mention the URL that returned the 404 page.') }</p>
-  </section>
 
 </Layout>

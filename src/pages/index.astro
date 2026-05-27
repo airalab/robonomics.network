@@ -10,12 +10,10 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
 <Layout 
   title="Robonomics Network" 
   description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
+  pageTitle={$tr('Open-Source IoT and Robotics ecosystem')}
 >
   <section class="layout section home">
     <div class="layout">
-      <h1 class="title-lined">
-        <span>{$tr('Open-Source IoT & Robotics ecosystem')}</span>
-      </h1>
       <div class="home-hero__videos" aria-label="Use cases">
         <a class="home-hero__card" href="/for-personal-usage/" aria-label="For personal usage">
           <img class="home-hero__preview" src="/video/preview/home-preview-1.webp" alt="" loading="eager"/>
@@ -103,7 +101,7 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
 <script>
   // Always show preview initially, then transition to video when ready
   document.addEventListener('DOMContentLoaded', () => {
-    const videos = document.querySelectorAll('.home-hero__video');
+    const videos = document.querySelectorAll<HTMLVideoElement>('.home-hero__video');
     
     videos.forEach((video) => {
       const preview = video.previousElementSibling;
@@ -250,7 +248,7 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
   }
 
   .trust-badges-wrapper {
-    background-color: var(--rb-color-green-accent);
+    background-color: var(--color-green-accent);
   }
 
   @media screen and (max-width: 1024px) {

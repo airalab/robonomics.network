@@ -1,8 +1,7 @@
 ---
 // components
 import Layout from '../layouts/Layout.astro';
-import WallpapersGrid from '../components/wallpapers/WallpapersGrid.astro';
-import WallpapersGridItem from '../components/wallpapers/WallpapersGridItem.astro';
+import DownloadItem from '../components/DownloadItem.astro';
 
 const aspectRatioDownloads = (
   basePath: string,
@@ -16,119 +15,144 @@ const aspectRatioDownloads = (
   { label: '1:1', href: `${basePath}/${filePrefix}-1-1.png` },
 ].filter(({ label }) => !excludeFormats.includes(label));
 
-const gridWallpaper = ({
-  title,
-  image,
-  packageHref,
-  basePath,
-  filePrefix,
-  excludeFormats = [],
-  new: isNew = false,
-}: {
+const aspectRatioPngChunks = (
+  basePath: string,
+  filePrefix: string,
+  excludeFormats: string[] = [],
+) =>
+  Object.fromEntries(
+    aspectRatioDownloads(basePath, filePrefix, excludeFormats).map(({ label, href }) => [
+      label,
+      href,
+    ]),
+  );
+
+type WallpaperItem = {
   title: string;
   image: string;
-  packageHref: string;
-  basePath: string;
-  filePrefix: string;
-  excludeFormats?: string[];
-  new?: boolean;
-}) => ({
-  title,
-  image,
-  packageHref,
-  new: isNew,
-  downloads: aspectRatioDownloads(basePath, filePrefix, excludeFormats),
-});
+  download: string;
+  downloadChunks: Record<string, string>;
+  label?: string;
+};
 
-const gridWallpapers = [
-  gridWallpaper({
+const wallpapers: WallpaperItem[] = [
+  {
     title: 'Cyberpunks.shop hardware',
-    image: '/wallpapers/previews/cyberpunks-shop-hardware.webp',
-    packageHref: '/wallpapers/cyberpunks-shop-hardware/robonomics.network-cyberpunks-shop-hardware.zip',
-    basePath: '/wallpapers/cyberpunks-shop-hardware',
-    filePrefix: 'robonomics.network-cyberpunks-shop-hardware',
-    new: true,
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/cyberpunks-shop-hardware.webp',
+    download: '/pages/wallpapers/cyberpunks-shop-hardware/robonomics.network-cyberpunks-shop-hardware.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/cyberpunks-shop-hardware',
+      'robonomics.network-cyberpunks-shop-hardware',
+    ),
+    label: 'new',
+  },
+  {
     title: 'Privacy first',
-    image: '/wallpapers/previews/privacy-first.webp',
-    packageHref: '/wallpapers/privacy-first/robonomics.network-privacy-first.zip',
-    basePath: '/wallpapers/privacy-first',
-    filePrefix: 'robonomics.network-privacy-first',
-    new: true,
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/privacy-first.webp',
+    download: '/pages/wallpapers/privacy-first/robonomics.network-privacy-first.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/privacy-first',
+      'robonomics.network-privacy-first',
+    ),
+    label: 'new',
+  },
+  {
     title: 'Digital freedom',
-    image: '/wallpapers/previews/digital-freedom.webp',
-    packageHref: '/wallpapers/digital-freedom/robonomics.network-digital-freedom-wallpapers.zip',
-    basePath: '/wallpapers/digital-freedom',
-    filePrefix: 'robonomics.network-digital-freedom',
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/digital-freedom.webp',
+    download: '/pages/wallpapers/digital-freedom/robonomics.network-digital-freedom-wallpapers.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/digital-freedom',
+      'robonomics.network-digital-freedom',
+    ),
+  },
+  {
     title: 'Altruist air',
-    image: '/wallpapers/previews/altruist-air.webp',
-    packageHref: '/wallpapers/altruist-air/robonomics.network-altruist-air.zip',
-    basePath: '/wallpapers/altruist-air',
-    filePrefix: 'robonomics.network-altruist-air',
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/altruist-air.webp',
+    download: '/pages/wallpapers/altruist-air/robonomics.network-altruist-air.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/altruist-air',
+      'robonomics.network-altruist-air',
+    ),
+  },
+  {
     title: 'Aira is back',
-    image: '/wallpapers/previews/aira-is-back.webp',
-    packageHref: '/wallpapers/aira-is-back/robonomics.network-aira-is-back.zip',
-    basePath: '/wallpapers/aira-is-back',
-    filePrefix: 'robonomics.network-aira-is-back',
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/aira-is-back.webp',
+    download: '/pages/wallpapers/aira-is-back/robonomics.network-aira-is-back.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/aira-is-back',
+      'robonomics.network-aira-is-back',
+    ),
+  },
+  {
     title: 'Devcon 2024 Space Monkey',
-    image: '/wallpapers/previews/space-monkey.webp',
-    packageHref: '/wallpapers/space-monkey/robonomics.network-space-monkey.zip',
-    basePath: '/wallpapers/space-monkey',
-    filePrefix: 'robonomics.network-space-monkey',
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/space-monkey.webp',
+    download: '/pages/wallpapers/space-monkey/robonomics.network-space-monkey.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/space-monkey',
+      'robonomics.network-space-monkey',
+    ),
+  },
+  {
     title: 'Space cat and Robot',
-    image: '/wallpapers/previews/space-cat-and-robot.webp',
-    packageHref: '/wallpapers/space-cat-and-robot/robonomics.network-space-cat-and-robot.zip',
-    basePath: '/wallpapers/space-cat-and-robot',
-    filePrefix: 'robonomics.network-space-cat-and-robot',
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/space-cat-and-robot.webp',
+    download: '/pages/wallpapers/space-cat-and-robot/robonomics.network-space-cat-and-robot.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/space-cat-and-robot',
+      'robonomics.network-space-cat-and-robot',
+    ),
+  },
+  {
     title: 'Space Shiva',
-    image: '/wallpapers/previews/space-shiva.webp',
-    packageHref: '/wallpapers/space-shiva/robonomics.network-space-shiva.zip',
-    basePath: '/wallpapers/space-shiva',
-    filePrefix: 'robonomics.network-space-shiva',
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/space-shiva.webp',
+    download: '/pages/wallpapers/space-shiva/robonomics.network-space-shiva.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/space-shiva',
+      'robonomics.network-space-shiva',
+    ),
+  },
+  {
     title: 'Electric Sheep',
-    image: '/wallpapers/previews/electric-sheep.webp',
-    packageHref: '/wallpapers/electric-sheep/robonomics.network-electric-sheep.zip',
-    basePath: '/wallpapers/electric-sheep',
-    filePrefix: 'robonomics.network-electric-sheep',
-    excludeFormats: ['20:9'],
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/electric-sheep.webp',
+    download: '/pages/wallpapers/electric-sheep/robonomics.network-electric-sheep.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/electric-sheep',
+      'robonomics.network-electric-sheep',
+      ['20:9'],
+    ),
+  },
+  {
     title: 'Space travelers',
-    image: '/wallpapers/previews/space-travelers.webp',
-    packageHref: '/wallpapers/space-travelers/robonomics.network-space-travelers.zip',
-    basePath: '/wallpapers/space-travelers',
-    filePrefix: 'robonomics.network-space-travelers',
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/space-travelers.webp',
+    download: '/pages/wallpapers/space-travelers/robonomics.network-space-travelers.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/space-travelers',
+      'robonomics.network-space-travelers',
+    ),
+  },
+  {
     title: 'Astronaut coloured',
-    image: '/wallpapers/previews/astronaut-coloured.webp',
-    packageHref: '/wallpapers/astronaut-coloured/robonomics.network-astronaut-coloured.zip',
-    basePath: '/wallpapers/astronaut-coloured',
-    filePrefix: 'robonomics.network-astronaut-coloured',
-  }),
-  gridWallpaper({
+    image: '/pages/wallpapers/previews/astronaut-coloured.webp',
+    download: '/pages/wallpapers/astronaut-coloured/robonomics.network-astronaut-coloured.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/astronaut-coloured',
+      'robonomics.network-astronaut-coloured',
+    ),
+  },
+  {
     title: 'Astronaut black and white',
-    image: '/wallpapers/previews/astronaut-bw.webp',
-    packageHref: '/wallpapers/astronaut-bw/robonomics.network-astronaut-bw.zip',
-    basePath: '/wallpapers/astronaut-bw',
-    filePrefix: 'robonomics.network-astronaut-bw',
-  }),
+    image: '/pages/wallpapers/previews/astronaut-bw.webp',
+    download: '/pages/wallpapers/astronaut-bw/robonomics.network-astronaut-bw.zip',
+    downloadChunks: aspectRatioPngChunks(
+      '/pages/wallpapers/astronaut-bw',
+      'robonomics.network-astronaut-bw',
+    ),
+  },
 ];
+
+const wallpapersIntroText = `
+  <p>${await $tr("We are passionate about what we do, so of course we can’t resist creating artistic wallpapers inspired by the Robonomics universe — robotics, cyberpunk aesthetics, digital freedom, and even space (no, we don’t have our own spaceship yet).")}</p>
+  <p>${await $tr("Download them for free and enjoy.")}</p>
+`;
 ---
 
 
@@ -136,31 +160,35 @@ const gridWallpapers = [
 	title={$tr("Robonomics Wallpapers")}
 	description={$tr("We created beautiful Robonomics themed wallpapers for different devices that you can use!")}
   pageTitle={$tr("wallpapers")}
+  pageIntroText={wallpapersIntroText}
 	ogImage="/opengraph/wallpapers.webp"
 >
 
-  <section class="layout layout__content highlight text-center">
-    <p>We are passionate about what we do, so of course we can’t resist creating artistic wallpapers inspired by the Robonomics universe — robotics, cyberpunk aesthetics, digital freedom, and even space (no, we don’t have our own spaceship yet).</p>
-    <p>Download them for free and enjoy.</p>
-  </section>
-
-  <WallpapersGrid>
-    {gridWallpapers.map((item) => (
-      <WallpapersGridItem {...item} />
+  <section class="section layout grid-3">
+    {wallpapers.map((item) => (
+      <DownloadItem
+        title={item.title}
+        image={item.image}
+        previewHref={item.download}
+        previewDownload={true}
+        previewAriaLabel={`download Robonomics wallpaper for desktop - ${item.title}`}
+        downloadChunks={item.downloadChunks}
+        badgeText={item.label}
+      />
     ))}
-  </WallpapersGrid>
+  </section>
 
   <section class="hidden-wallpapers section">
     <div class="layout layout__content">
       <div class="highlight-solid-green__wrapper">
         <h2 class="highlight-solid-green">{$tr('Hide your folder with secret wallpaper')}</h2>
       </div>
-      <img src="/wallpapers/previews/bw_astronaut_artboard_1.webp" alt="black and white astronaut wallpaper"/>
+      <img src="/pages/wallpapers/previews/bw_astronaut_artboard_1.webp" alt="black and white astronaut wallpaper"/>
       <p>{$tr("We've created secret wallpapers just for you! Download the background and folder icons, and your folders will blend seamlessly into your Home Screen—leaving only beautiful artwork visible.")}</p>
       <div class="wallpapers__links">
-        <a aria-label="download hidden wallpaper for desktop" class="wallpapers-link-desktop" href="/wallpapers/hidden/robonomics.network-robonomics-secret-wallpapers.jpg" download>{$tr('Desktop background')}</a>
-        <a aria-label="download hidden wallpaper icons for Mac OS" class="hidden-wallpaper-mac" href="/wallpapers/hidden/robonomics.network-robonomics-secret-wallpapers-icons-os.zip" download>{$tr('Mac OS icons')}</a>
-        <a aria-label="download hidden wallpaper icons for Windows" class="hidden-wallpaper-windows" href="/wallpapers/hidden/robonomics.network-robonomics-secret-wallpapers-icons-windows.zip" download>{$tr('Windows icons')}</a>
+        <a aria-label="download hidden wallpaper for desktop" class="wallpapers-link-desktop" href="/pages/wallpapers/hidden/robonomics.network-robonomics-secret-wallpapers.jpg" download>{$tr('Desktop background')}</a>
+        <a aria-label="download hidden wallpaper icons for Mac OS" class="hidden-wallpaper-mac" href="/pages/wallpapers/hidden/robonomics.network-robonomics-secret-wallpapers-icons-os.zip" download>{$tr('Mac OS icons')}</a>
+        <a aria-label="download hidden wallpaper icons for Windows" class="hidden-wallpaper-windows" href="/pages/wallpapers/hidden/robonomics.network-robonomics-secret-wallpapers-icons-windows.zip" download>{$tr('Windows icons')}</a>
       </div>
     </div>
   </section>
@@ -188,7 +216,7 @@ const gridWallpapers = [
     }
   
     .wallpapers__links a:hover {
-      color: var(--color-link);
+      color: var(--color-link-hover);
     }
   
     .wallpapers-link-desktop {
@@ -213,17 +241,6 @@ const gridWallpapers = [
   
     .highlight-solid-green__wrapper {
       margin-bottom: var(--space-text);
-    }
-  
-    .wallpapers__links-wrapper {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: calc(var(--space) * 0.5);
-    }
-  
-    .wallpapers__links img {
-      min-width: 31px;
     }
   
     .hidden-wallpapers img {
@@ -263,11 +280,6 @@ const gridWallpapers = [
   
       .wallpapers__links {
         gap: var(--space);
-      }
-  
-      .wallpapers__links img {
-        min-width: unset;
-        width: 20px;
       }
       
     }

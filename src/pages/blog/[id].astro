@@ -30,7 +30,11 @@ if (!post) {
 
 const { Content } = await render(post);
 
-const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+const dateOptions: Intl.DateTimeFormatOptions = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+};
 ---
 
 <Layout
@@ -39,8 +43,10 @@ const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
   ogImage={post.data.cover_image}
   pageImageHeight="576"
 >
-  <section class="postpage">
-    <h1 class="layout">{post.data.title}</h1>
+  <section class="postpage section">
+    <div class="layout">
+      <h1>{post.data.title}</h1>
+    </div>
 
     <section class="layout metainfo">
       {post.data.author && (<div >By {post.data.author}</div>)}
@@ -59,6 +65,7 @@ const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
         {(post.data.date || post.data.tags.length > 0) && (<span>/</span>)}
         <a href="/blog/" aria-label="check all posts"><b>All posts</b></a>
       </div>
+      {post.data.depricated && (<p class="text-color-red"><b>{$tr('This content is deprecated')}</b></p>)}
     </section>
 
     {post.data.abstract && (<p class="abstract layout layout__text" class:list={{'space-b-05': post.data.abstractAuthor}} set:html={post.data.abstract}/>)}

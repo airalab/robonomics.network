@@ -1,21 +1,12 @@
 ---
-// components
-import RbButton from "./RbButton.astro";
-
 const {
   link, 
-  linkText, 
-  linkButton = false, 
-  overlap = true,
   icon,
   image,
   className,
-  imageExternal,
   imageSize = 'small',
-  imageRound = true,
   orientation = 'horizontal',
   back = 'white',
-  shadow = 'gray',
   alignContent = 'none',
   alignContentV = 'top'
 } = Astro.props;
@@ -24,38 +15,28 @@ const {
 const card_classes = [
   'card',
   icon && 'icon',
-  (image || imageExternal) && `image`,
+  image && 'image',
   orientation && `${orientation}`,
   back && `${back}`,
-  shadow && `card-shadow-${shadow}`,
   `alignContent-${alignContent}`,
-  `alignContentV-${alignContentV}`,
-  back != `transparent` && `oldy`,
-  link && `oldy__link`,
+  alignContentV !== 'top' && `alignContentV-${alignContentV}`,
+  back !== 'transparent' && 'oldy',
+  link && 'oldy__link',
   className && className
 ].filter(Boolean).join(' ');
 
 const pic_classes = [
-  `pic`,
-  imageRound && `round`,
-  icon && `icon`,
-  (image || imageExternal) && `image`,
+  'pic',
+  'round',
+  icon && 'icon',
+  image && 'image',
   imageSize
-].filter(Boolean).join(' ');
-
-const link_classes = [
-  `link`,
-  linkText && `text`,
-  overlap && `overlap`
 ].filter(Boolean).join(' ');
    
 
 const pic_src = () => {
   if (icon || image) {
     return `/images/${image ? image : icon}`
-  }
-  if (imageExternal) {
-    return imageExternal
   }
 };
 
@@ -66,7 +47,7 @@ const slot2 = Astro.slots.has('default');
 
 <div class={card_classes}>
 
-  {(icon || image || imageExternal) && (
+  {(icon || image) && (
     <div class={pic_classes}>
       <img aria-hidden="true" alt="" src={pic_src()}/>
     </div>
@@ -80,13 +61,8 @@ const slot2 = Astro.slots.has('default');
 )}
 
 
-  {(link || linkButton) && (
-    <a target="_blank" class={link_classes} href={link}>
-      {linkText && linkText}
-    </a>
-  )}
-  {(link && linkText && linkButton) && (
-    <RbButton href={link}>{ linkText }</RbButton>
+  {link && (
+    <a target="_blank" class="link" href={link}></a>
   )}
 
 
@@ -141,14 +117,6 @@ const slot2 = Astro.slots.has('default');
     .card.alignContent-left h5
     { text-align: left; }
 
-    .card.alignContent-right,
-    .card.alignContent-right h1,
-    .card.alignContent-right h2,
-    .card.alignContent-right h3,
-    .card.alignContent-right h4,
-    .card.alignContent-right h5
-    { text-align: right; }
-    
     @media screen and (min-width: 650px) {
       .card.horizontal.icon, .card.horizontal.image { grid-template-columns: auto 1fr; } /* pic + content */
     }
@@ -168,7 +136,7 @@ const slot2 = Astro.slots.has('default');
     .card {
       --color-back: transparent;
       --color-text: var(--clor-dark);
-      --color-iconback: #000; 
+      --color-iconback: #000;
       
       background-color: var(--color-back);
       color: var(--color-text);
@@ -181,48 +149,14 @@ const slot2 = Astro.slots.has('default');
     }
 
     .card.oldy__link:hover .pic.round.icon {
-        --color-iconback: var(--color-blue-mid);
+        --color-iconback: var(--color-blue);
       }
 
     .card.white {
       --color-back: var(--color-light);
       --color-text: var(--color-dark);
     }
-    .card.blue {
-      --color-back: var(--color-blue-mid);
-      --color-text: var(--color-light);
-    }
-    .card.darkblue {
-      --color-back: var(--color-blue);
-      --color-text: var(--color-light);
-    }
-
-    .card-shadow-light {
-      --oldy-box-color: var(--color-light);
-    }
-
-    .card-shadow-gray {
-      --oldy-box-color: var(--color-gray);
-    }
-
-    .card-shadow-dark {
-      --oldy-box-color: var(--color-dark);
-    }
-
-
-
-    .card.blue .pic.round.icon {
-        background-color: #000;
-    }
-
-      .card.blue.oldy__link:hover .pic.round.icon {
-          background-color: var(--color-blue-mid);
-      }
     /* end of COLORING */
-
-    .card .button {
-      text-align: center;
-    }
 
 
     /* PICTURES */
@@ -251,15 +185,13 @@ const slot2 = Astro.slots.has('default');
         border-radius: calc(var(--image-size)*2);
       }
 
-      .card .pic.mid { --image-size: 10rem }
       .card .pic.big { --image-size: 15rem}
-      .card .pic.block { --image-size: 100%}
     
 
     /*end of PICTURES */
 
     /* LINK */
-    .link.overlap {
+    .link {
         position: absolute;
         top: 0;
         left: 0;
@@ -272,14 +204,24 @@ const slot2 = Astro.slots.has('default');
     /* end of LINK */
 
     /* CONTENT */
-    .card .content h1:not(:last-child),
-    .card .content h2:not(:last-child),
-    .card .content h3:not(:last-child),
-    .card .content h4:not(:last-child),
-    .card .content h5:not(:last-child),
-    .card .content p:not(:last-child)
+    .card .content > :global(h1:not(:last-child)),
+    .card .content > :global(h2:not(:last-child)),
+    .card .content > :global(h3:not(:last-child)),
+    .card .content > :global(h4:not(:last-child)),
+    .card .content > :global(h5:not(:last-child)),
+    .card .content > :global(p:not(:last-child))
     {
       margin-bottom: calc(var(--space) * 0.7);
+    }
+
+    .card .content > :global(h1:first-child),
+    .card .content > :global(h2:first-child),
+    .card .content > :global(h3:first-child),
+    .card .content > :global(h4:first-child),
+    .card .content > :global(h5:first-child),
+    .card .content > :global(p:first-child)
+    {
+      margin-top: 0 !important;
     }
     /* end of CONTENT */
 

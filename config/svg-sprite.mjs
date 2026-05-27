@@ -3,8 +3,8 @@ import { relative, resolve, sep } from "node:path";
 import { globSync } from "glob";
 import { optimize } from "svgo";
 
-const iconSourceDir = resolve("./public/images/icons");
-const iconSpritePath = resolve("./public/images/sprite.svg");
+const iconSourceDir = resolve("./public/sprite");
+const iconSpritePath = resolve("./public/sprite.svg");
 
 function extractSvgViewBox(svgAttributes) {
   const viewBoxMatch = svgAttributes.match(/\bviewBox=(['"])(.*?)\1/i);
@@ -22,6 +22,8 @@ function extractSvgViewBox(svgAttributes) {
 }
 
 async function generateSvgSprite() {
+  await mkdir(iconSourceDir, { recursive: true });
+
   const files = globSync("**/*.svg", {
     cwd: iconSourceDir,
     absolute: true,
@@ -84,14 +86,14 @@ async function generateSvgSprite() {
     "",
   ].join("\n");
 
-  await mkdir(resolve("./public/images"), { recursive: true });
+  await mkdir(resolve("./public"), { recursive: true });
   await writeFile(iconSpritePath, sprite, "utf8");
 }
 
 /** @returns {import('vite').Plugin} */
 export function svgSpritePlugin() {
   const isIconPath = (filePath) =>
-    filePath.endsWith(".svg") && filePath.includes(`${sep}public${sep}images${sep}icons${sep}`);
+    filePath.endsWith(".svg") && filePath.includes(`${sep}public${sep}sprite${sep}`);
 
   return {
     name: "svg-sprite-generator",

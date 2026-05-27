@@ -50,7 +50,15 @@ h4 {
 }
 
 h1 {
-  font-size: calc(var(--base-font-size) * 1.7);
+  font-size: calc(var(--base-font-size) * 2.5);
+  font-variation-settings: var(--font-flex-extrabold);
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: calc(var(--base-font-size) * 1.6);
+  }
 }
 
 h2 {
@@ -246,7 +254,7 @@ a:not(.button).dashed,
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  color: var(--color-blue);
+  color: var(--color-link);
   transition:
     opacity 0.2s,
     text-decoration-color 0.3s ease-in-out;
@@ -277,7 +285,7 @@ a:not(.button).dashed,
   line-height: 1;
   border-bottom: 0;
   color: var(--color-blue);
-  background-color: var(--rb-color-green-accent);
+  background-color: var(--color-green-accent);
 }
 
 @media screen and (max-width: 520px) {
@@ -304,6 +312,15 @@ hr.dark {
 
 hr.color-lightgray {
   background-color: var(--color-gray-light);
+}
+
+hr.animate {
+	transform-origin: 50% 50%;
+	transform: scaleX(0);
+}
+
+hr.animate.in-viewport {
+	animation: HR 0.4s ease-out 0.8s forwards;
 }
 
 .hyphens {
@@ -479,7 +496,7 @@ summary {
 }
 
 .highlight-solid-green {
-  background-color: var(--rb-color-green-accent);
+  background-color: var(--color-green-accent);
   display: inline-block;
   font-variation-settings: var(--font-flex-bold);
   line-height: 1;
@@ -508,25 +525,12 @@ html[lang="ar"] .case-page__content h2 {
 }
 
 
-/* Text pages */
-.page h1 {
-  font-size: calc(var(--base-font-size) * 2.5);
-  font-variation-settings: var(--font-flex-extrabold);
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.text-color-red {
+  color: var(--color-red);
 }
 
-@media screen and (max-width: 680px) {
-  .page h1 {
-    font-size: calc(var(--base-font-size) * 1.6);
-  }
-}
-
-.page hr.animate {
-	transform-origin: 50% 50%;
-	transform: scaleX(0);
-}
-
-.page hr.animate.in-viewport {
-	animation: HR 0.4s ease-out 0.8s forwards;
+.label-green {
+  padding: 0.15rem 0.5rem;
+  color: var(--color-dark);
+  background-color: var(--color-green-accent);
 }

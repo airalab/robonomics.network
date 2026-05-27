@@ -91,7 +91,7 @@ const largeCls = large && 'cases-display-large'
       
       // Case-specific data
       const caseHref = isCase ? (item.done ? `/${item.path}/` : '/cases/') : null;
-      const caseImageSrc = isCase && item.cover_image ? `/images/cases/${item.cover_image}` : null;
+      const caseImageSrc = isCase && item.cover_image ? `/pages/cases/${item.cover_image}` : null;
       const caseTitle = isCase ? $tr(item.title) : null;
       const caseDescription = isCase ? $tr(item.description) : null;
       

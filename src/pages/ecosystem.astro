@@ -1,0 +1,133 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SvgIcon from "../components/SvgIcon.astro";
+import Youtube from "../components/utils/Youtube.astro";
+
+const ecosystemIntroText = `
+  <p>${await $tr("Robonomics is a team with more than 10 years of experience in robotics and on-chain infrastructure solutions. Over the years, we have worked on a wide range of R&D projects, published scientific papers, and built real-world tools and technologies.")}</p>
+`;
+---
+
+<Layout
+  title={$tr("Robonomics ecosystem")}
+  description={$tr("Discover the people, values, and ideas behind the Robonomics ecosystem.")}
+  pageTitle={$tr("Robonomics ecosystem")}
+  pageIntroText={ecosystemIntroText}
+>
+  <section class="layout layout__text section-half">
+    <Youtube
+      title="Robonomics ecosystem video"
+      src="https://www.youtube.com/embed/onMv_An8h2Q"
+    />
+    <p class="text-center text-bold">
+      <a href="https://www.youtube.com/watch?v=onMv_An8h2Q" target="_blank">
+        {$tr('Watch other videos on our Youtube channel')} <br/>
+        <SvgIcon name="arrow-long" width="10rem" />
+      </a>
+    </p>
+  </section>
+
+  <h2>{$tr('Basic resources')}</h2>
+  <section class="grid-3 layout layout__mid section-half text-center">
+    <a href="https://wiki.robonomics.network/docs/create-account-in-dapp/" target="_blank" class="oldy">
+      <h5>{$tr('How to work with Robonomics parachain')}</h5>
+      <span class="label-green">wiki</span>
+    </a>
+    <a href="https://robonomics.academy/en/learn/sensors-connectivity-course/overview/" target="_blank" class="oldy">
+      <h5>{$tr('Build your own sensor map from scratch')}</h5>
+      <span class="label-green">academy</span>
+    </a>
+    <a href="https://robonomics.app" target="_blank" class="oldy">
+      <h5>{$tr('Work with Robonomics subscription')}</h5>
+      <span class="label-green">dapp</span>
+    </a>
+  </section>
+
+  
+  <section class="layout section__gray_light section__solid">
+    <h2>{$tr('Dive in')}</h2>
+    
+    <div class="grid-3 layout layout__mid text-center">
+      <a href="/tokenomics/" target="_blank" class="oldy">
+        <img src="/pages/ecosystem/tokenomics.svg" alt="" aria-hidden="true" />
+        <h5>{$tr('Tokenomics')}</h5>
+        <b class="text-small">$XRT, $RWS</b>
+      </a>
+      <a href="/papers/" target="_blank" class="oldy">
+        <img src="/pages/ecosystem/science.svg" alt="" aria-hidden="true" />
+        <h5>{$tr('Science')}</h5>
+        <b class="text-small">{$tr('Robonomics papers')}</b>
+      </a>
+      <a href="/blog/" target="_blank" class="oldy">
+        <img src="/pages/ecosystem/blog.svg" alt="" aria-hidden="true" />
+        <h5>{$tr('Blog')}</h5>
+        <b class="text-small">{$tr('Our plans, result, analytics and reports')}</b>
+      </a>
+    </div>
+    
+  </section>
+
+  <section class="layout section__black section__solid">
+    <p class="text-center" aria-hidden="true">
+      <a href="/logos-and-assets/">
+        <img alt="" src="/images/robonomics-logo-title-light.svg" />
+      </a>
+    </p>
+    <div class="text-center">
+      <h3>
+        <a href="/logos-and-assets/">
+          {$tr('Brand assets, download Robonomics logo')} <br/>
+          <SvgIcon name="arrow-long" width="10rem" />
+        </a>
+      </h3>
+    </div>
+  </section>
+
+  <section class="layout section__black section__solid wallpapers">
+    <div class="text-center">
+      <h3>
+        <a href="/wallpapers/">
+          {$tr('Free wallpapers for you')} <br/>
+          <SvgIcon name="arrow-long" width="10rem" />
+        </a>
+      </h3>
+    </div>
+  </section>
+
+  <section class="layout section__green section__solid">
+    <div class="text-center">
+
+      <h2>{$tr('Fancy Robonomics merch')}</h2>
+
+      <a href="https://robonomics.threadless.com" target="_blank" class="text-bold">
+        <img src="/pages/ecosystem/merch.webp" class="merch" aria-hidden="true" />
+        {$tr('Shop on Threadless')} <br/>
+        <SvgIcon name="arrow-long" width="10rem" />
+      </a>
+    </div>
+  </section>
+
+  
+</Layout>
+
+
+<style>
+  h5 {
+    margin-bottom: 0.5rem;
+  }
+
+  .brand-assets-arrow {
+    color: var(--color-light);
+  }
+
+  .wallpapers {
+    background: #000 url('/pages/ecosystem/wallpapers.webp') no-repeat 50% 35% / cover;
+  }
+
+  img.merch {
+    display: block;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

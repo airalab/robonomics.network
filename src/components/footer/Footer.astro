@@ -1,0 +1,333 @@
+---
+import SvgIcon from '../SvgIcon.astro';
+import { getLocale } from "astro-i18n-aut";
+import { contacts } from '../../data/socials';
+
+const locale = getLocale(Astro.url) || "en";
+
+const normalizePath = (path) => {
+  if (!path) return "/";
+
+  let value = path.length > 1 ? path.replace(/\/+$/, "") : path;
+
+  if (locale !== "en" && value.startsWith(`/${locale}`)) {
+    value = value.slice(locale.length + 1) || "/";
+  } else if (value.startsWith("/en/")) {
+    value = value.slice(3) || "/";
+  } else if (value === "/en") {
+    value = "/";
+  }
+
+  return value || "/";
+};
+
+const currentPath = normalizePath(Astro.url.pathname);
+const isActive = (target) => currentPath === normalizePath(target);
+
+const iconMap = {
+  X: 'x',
+  Discord: 'discord',
+  Telegram: 'tg',
+  Youtube: 'youtube',
+  Github: 'gh',
+};
+
+const socialLinks = [
+  { title: 'X' },
+  { title: 'Telegram' },
+  { title: 'Youtube' },
+  { title: 'Github' },
+]
+  .map(({ title }) => {
+    const contact = contacts.find((item) => item.title === title);
+    const icon = iconMap[title];
+    return contact && icon ? { title, href: contact.link, icon } : null;
+  })
+  .filter(Boolean);
+---
+
+<footer>
+
+  <section class="footer-guidelinks">
+    <div class="text-center layout" aria-hidden="true">
+      <img alt="" src="/images/robonomics-logo-title-light.svg" />
+    </div>
+    <div class="footer-guidelinks-links layout">
+      <a href="/for-personal-usage/" class:list={['oldy', isActive('/for-personal-usage/') && 'active']}><span class="text">For<br/> personal usage</span></a>
+      <a href="/for-smart-homes/" class:list={['oldy', isActive('/for-smart-homes/') && 'active']}><span class="text">For<br/> smart homes</span></a>
+      <a href="/for-coworking-and-coliving/" class:list={['oldy', isActive('/for-coworking-and-coliving/') && 'active']}><span class="text">For<br/> co-working<br/> co-living</span></a>
+      <a href="/for-business/" class:list={['oldy', isActive('/for-business/') && 'active']}><span class="text">For <br/> business</span></a>
+    </div>
+  </section>
+
+  <section class="footer-social" aria-label="Community social links">
+    <div class="layout">
+      {socialLinks.map((item) => (
+        <a
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={item.title}
+        >
+          <SvgIcon class="footer-social__icon" name={item.icon} />
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <nav class="navigation">
+    <ul aria-label="Use it">
+      <li><a class="nav__link--accent" aria-label="Cyberpunks shop" href="https://cyberpunks.shop/" target="_blank">cyberpunks.shop</a></li>
+      <li><a aria-label="Robonomics dapp" href="https://robonomics.app/" target="_blank">robonomics.app</a></li>
+      <li><a aria-label="Robonomics merch" href="https://robonomics.threadless.com" target="_blank">{$tr('Buy merch')}</a></li>
+    </ul>
+
+    <ul aria-label="Learn">
+      <li><a aria-label="Robonomics academy" href="https://robonomics.academy/" target="_blank">{$tr('Academy')}</a></li>
+      <li><a aria-label="Robonomics wiki" href="https://wiki.robonomics.network/" target="_blank">{$tr('Wiki')}</a></li>
+    </ul>
+
+    <ul aria-label="Explore website">
+      <li><a aria-label="about XRT" href="/tokenomics/">{$tr('Tokenomics')}</a></li>
+      <li><a aria-label="Robonomics papers" href="/papers/">{$tr('Science & White paper')}</a></li>
+      <li><a aria-label="use cases" href="/cases/">{$tr('Cases')}</a></li>
+      <li><a aria-label="timeline" href="/timeline/">{$tr('Timeline')}</a></li>
+      <li><a aria-label="assets" href="/logos-and-assets/">{$tr('Logos & Brand')}</a></li>
+      <li><a aria-label="wallpapers" href="/wallpapers/">{$tr('Wallpapers')}</a></li>
+      <li><a aria-label="Home assistant themes" href="/home-assistant-themes/">{$tr('Home assistant themes')}</a></li>
+      <li><a aria-label="Robonomics NFT" href="/nft/">{$tr('NFT')}</a></li>
+      <li><a aria-label="books" href="/books/">{$tr('Books')}</a></li>
+      <li><a aria-label="blog" href="/blog/">{$tr('Blog')}</a></li>
+      <li><a aria-label="contact us" href="/contact/">{$tr('Contacts')}</a></li>
+    </ul>
+  </nav>
+
+  <section class="footer-privacy layout">
+    <a href="/privacy-policy/">{$tr('Privacy policy')}</a>
+  </section>
+  
+</footer>
+
+
+<style>
+  footer {
+    background-color: var(--color-gray-light);
+  }
+
+  .footer-guidelinks {
+    background-color: var(--color-gray-dark);
+    color: var(--color-light);
+    padding-top: var(--space);
+    padding-bottom: var(--space);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: calc(var(--base-font-size) * 0.8);
+  }
+  
+  .footer-guidelinks-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space);
+    margin-top: var(--space);
+  }
+
+  .footer-guidelinks-links .oldy {
+    --oldy-bg-color: var(--color-gray);
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background-position: 0.5rem 100%;
+    background-repeat: no-repeat;
+    background-size: auto calc(100% - 0.5rem);
+    min-height: 160px;
+  }
+
+  .footer-guidelinks-links a.oldy:hover {
+    --oldy-bg-color: var(--color-green-accent);
+    --oldy-box-color: var(--color-dark);
+    color: var(--color-dark);
+  }
+
+  .footer-guidelinks-links a.oldy.active {
+    --oldy-bg-color: var(--color-gray-light);
+  }
+
+  .footer-guidelinks-links .oldy:nth-child(1) {
+    background-image: url("/images/footer/guidelinks-for-personal-usage.webp");
+  }
+
+  .footer-guidelinks-links .oldy:nth-child(2) {
+    background-image: url("/images/footer/guidelinks-for-smart-homes.webp");
+  }
+
+  .footer-guidelinks-links .oldy:nth-child(3) {
+    background-image: url("/images/footer/guidelinks-for-coworking-and-coliving.webp");
+  }
+
+  .footer-guidelinks-links .oldy:nth-child(4) {
+    background-image: url("/images/footer/guidelinks-for-business.webp");
+  }
+
+  @media screen and (width < 1350px) {
+    .footer-guidelinks-links {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (width < 670px) {
+    .footer-guidelinks-links {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+
+
+  .footer-social {
+    background-color: var(--color-dark);
+  }
+
+  .footer-social .layout {
+    display: flex;
+    gap: var(--space);
+    justify-content: center;
+    padding: var(--space) 0;
+  }
+
+  .footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    line-height: 0;
+    color: var(--color-light);
+    text-decoration: none;
+  }
+
+  .footer-social a :global(svg) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navigation {
+    display: flex;
+    font-size: calc(var(--base-font-size) * 0.7);
+    font-variation-settings: var(--font-flex-bold);
+    gap: var(--space);
+    line-height: 1.2;
+    padding: var(--space) var(--layout-sidepadding);
+    text-transform: uppercase;
+    min-height: 23ch;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navigation a {
+    display: block;
+    margin-bottom: calc(var(--space) * .5);
+    color: var(--text-color);
+    font-size: calc(var(--base-font-size) * 0.7);
+    font-variation-settings: var(--font-flex-bold);
+    text-decoration: underline;
+  }
+
+  .navigation a:hover {
+    color: var(--color-link-hover);
+  }
+
+  .navigation ul {
+    position: relative;
+    margin: 0;
+  }
+
+  .navigation ul li {
+    padding-left: var(--space);
+    margin-bottom: 0;
+    break-inside: avoid-column;
+  }
+
+  .navigation ul:before {
+    content: attr(aria-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+    writing-mode: sideways-lr;
+    white-space: nowrap;
+    color: var(--color-gray);
+    pointer-events: none;
+  }
+
+  html[dir="rtl"] .navigation ul:before {
+    left: auto;
+    right: 0;
+  }
+
+  html[dir="ltr"] .navigation ul li {
+    padding-left: calc(var(--space) * 1);
+  }
+
+  html[dir="rtl"] .navigation ul li {
+    padding-left: 0;
+    padding-right: calc(var(--space) * 2);
+    text-align: right;
+  }
+
+  .navigation ul:nth-child(1) a {
+    white-space: nowrap;
+  }
+
+  .navigation ul:nth-child(3) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, min-content);
+    align-content: start;
+    gap: 0 var(--space);
+  }
+
+  @media screen and (width > 1400px) {
+    .navigation ul:nth-child(3) {
+      grid-template-rows: repeat(3, min-content);
+    }
+  }
+
+  @media screen and (width < 1200px) {
+    .navigation ul:nth-child(3) {
+      grid-template-rows: repeat(4, min-content);
+    }
+  }
+
+  @media screen and (width < 900px) {
+    .navigation ul:nth-child(3) {
+      grid-template-rows: repeat(6, min-content);
+    }
+  }
+
+  @media screen and (width < 700px) {
+    .navigation ul:nth-child(3) {
+      display: block;
+    }
+  }
+
+  @media screen and (width < 500px) {
+    .navigation {
+      flex-direction: column;
+    }
+
+    .navigation ul li {
+      padding-left: calc(var(--space) * 2);
+    }
+  }
+
+  .footer-privacy {
+    text-align: right;
+  }
+
+  .footer-privacy a {
+    color: inherit;
+    font-size: calc(var(--base-font-size) * 0.8);
+  }
+</style>

@@ -9,13 +9,11 @@ import {
 
 import type { SwiperOptions } from "swiper/types";
 
-import RbButton from "../../components/RbButton.astro";
-
 const slides = [
   {
-    bg: "/images/home/banner-bg-1.webp",
-    bgMobile: "/images/home/banner-bg-mobile-1.webp",
-    bgColor: "var(--color-blue-extra-dark)",
+    bg: "/pages/home/banner-bg-1.webp",
+    bgMobile: "/pages/home/banner-bg-mobile-1.webp",
+    bgColor: "var(--color-blue)",
     title: $tr("We Are Building an Open Ecosystem of the Future"),
     text:
       $tr("Building and growing this kind of open-source ecosystem is our deep passion and mission. We'd be genuinely thrilled to see you join our community of users!"),
@@ -24,9 +22,9 @@ const slides = [
     authorAvatar: "sergey.webp",
   },
   {
-    bg: "/images/home/banner-bg-2.webp",
-    bgMobile: "/images/home/banner-bg-mobile-2.webp",
-    bgColor: "var(--color-gray)",
+    bg: "/pages/home/banner-bg-2.webp",
+    bgMobile: "/pages/home/banner-bg-mobile-2.webp",
+    bgColor: "var(--color-gray-light)",
     title: $tr("Comfort powered by open technologies"),
     text:
       $tr("Since 2017, I have been actively involved in the project, applying and developing open-source smart home solutions based on Robonomics, making people's lives in Cyprus more comfortable."),
@@ -35,9 +33,9 @@ const slides = [
     authorAvatar: "vadim.webp",
   },
   {
-    bg: "/images/home/banner-bg-3.webp",
-    bgMobile: "/images/home/banner-bg-mobile-3.webp",
-    bgColor: "var(--rb-color-green-accent)",
+    bg: "/pages/home/banner-bg-3.webp",
+    bgMobile: "/pages/home/banner-bg-mobile-3.webp",
+    bgColor: "var(--color-green-accent)",
     title: $tr("Cyberpunk is a choice in favor of privacy"),
     text:
      $tr("Privacy today has become something like art. But it is a norm that everyone should have. Value your digital freedom and personal space."),
@@ -104,7 +102,7 @@ const options: SwiperOptions = {
                   <div class="home-ecosystem__author">
                     <img
                       class="home-ecosystem__avatar"
-                      src={`/images/avatar/${s.authorAvatar}`}
+                      src={`/images/avatars/${s.authorAvatar}`}
                       alt=""
                       loading="lazy"
                     />
@@ -126,8 +124,6 @@ const options: SwiperOptions = {
         <SwiperPagination
           class={`home-ecosystem__dots ${uid}-pagination`}
         />
-
-        <RbButton style="display:none" noTarget extraCls="button swiper-button" href="/intro/" aria-label="learn more about our project and our team">{$tr('MORE ABOUT PROJECT TEAM')}</RbButton>
       </Swiper>
 
       <SwiperButtonPrev
@@ -151,8 +147,20 @@ const options: SwiperOptions = {
 </section>
 
 <script>
+  type SwiperNavigationApi = {
+    destroy: () => void;
+    init: () => void;
+    update: () => void;
+  };
+
+  type SwiperHostElement = Element & {
+    swiper?: {
+      navigation?: SwiperNavigationApi;
+    };
+  };
+
   const initNavigation = () => {
-    const swiperEl = document.querySelector('.home-ecosystem .swiper');
+    const swiperEl = document.querySelector('.home-ecosystem .swiper') as SwiperHostElement | null;
     const swiper = swiperEl?.swiper;
 
     if (swiper && swiper.navigation) {
@@ -294,7 +302,7 @@ const options: SwiperOptions = {
   }
 
   .home-ecosystem__slide[data-swiper-slide-index=2] .home-ecosystem__content h2 {
-    text-shadow: 0 -2px 0 var(--rb-color-green-accent), 4px 0px 0 var(--rb-color-green-accent);
+    text-shadow: 0 -2px 0 var(--color-green-accent), 4px 0px 0 var(--color-green-accent);
   }
 
   .home-ecosystem__content p {

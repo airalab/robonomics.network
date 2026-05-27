@@ -7,7 +7,7 @@
       aria-label="check the book"
       target="_blank"
     >
-      <img :src="`/images/books/${book.img}`" :alt="book.title" loading="lazy" />
+      <img :src="`/pages/books/${book.img}`" :alt="book.title" loading="lazy" />
     </a>
 
     <div class="e-books__content">

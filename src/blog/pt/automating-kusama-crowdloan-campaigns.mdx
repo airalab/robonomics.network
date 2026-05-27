@@ -1,78 +1,75 @@
 ---
-title: Automatização de Campanhas de Empréstimo em Grupo
+title: Automatizando Campanhas de Crowdloan
 date: 2021-12-08
 published: true
 locale: 'pt'
 cover_image: /blog/images/automating-kusama-crowdloan-campaigns/cover.jpg
-description: "A experiência e os dados da primeira coorte de equipes que garantiram empréstimos em grupo agora podem fornecer uma base da qual equipes futuras podem se basear para precificar melhor e automatizar o processo de garantir empréstimos em grupo e vencer leilões."
-abstract: "A experiência e os dados da primeira coorte de equipes que garantiram empréstimos em grupo agora podem fornecer uma base da qual equipes futuras podem se basear para precificar melhor e automatizar o processo de garantir empréstimos em grupo e vencer leilões."
+description: "A experiência e os dados do primeiro grupo de equipes que garantiram crowdloans agora podem fornecer uma base para que futuras equipes possam melhorar a precificação e automatizar o processo de garantir crowdloans e vencer leilões."
+abstract: "A experiência e os dados do primeiro grupo de equipes que garantiram crowdloans agora podem fornecer uma base para que futuras equipes possam melhorar a precificação e automatizar o processo de garantir crowdloans e vencer leilões."
 tags: ['Robonomics parachain']
+depricated: true
 ---
-import KusamaSlotBanner from '../../components/blocks/KusamaSlotBanner.astro'
+Os leilões iniciais de slots de parachain e seus respectivos crowdloans sofreram com a desvantagem do pioneirismo, o que tornou seus preços difíceis de prever e, muitas vezes, altos demais. Essa desvantagem é comum em qualquer novo mercado em fase de descoberta de preço, especialmente em mercados como os leilões de parachain, onde equipes estão lançando produtos diversos com necessidades diversas.
 
-Os leilões iniciais de slots de parachain e seus empréstimos em grupo associados sofreram de uma desvantagem do pioneiro que causou seus preços serem difíceis de prever e muitas vezes muito altos. Essa desvantagem é comum em qualquer novo mercado passando por descoberta de preços, especialmente em mercados como os leilões de parachain onde equipes estão lançando produtos diversos com necessidades diversas.
-
-A experiência e os dados da primeira coorte de equipes que garantiram empréstimos em grupo agora podem fornecer uma base da qual equipes futuras podem se basear para precificar melhor e automatizar o processo de garantir empréstimos em grupo e vencer leilões.
+A experiência e os dados do primeiro grupo de equipes que garantiram crowdloans agora podem fornecer uma base para que futuras equipes possam melhorar a precificação e automatizar o processo de garantir crowdloans e vencer leilões.
 					
-Os desenvolvedores principais da Robonomics implementarão um oráculo automatizado a partir da 4ª campanha de empréstimo em grupo de parachain para participar de futuros leilões de slots de parachain do Kusama. Esse mecanismo permitirá que a equipe da robonomics automatize o pagamento de cada renovação futura de locação de slot de parachain. A equipe da robonomics espera que esse esforço inspire outras equipes futuras a usar ou implementar seu próprio processo automatizado para melhorar e reduzir os riscos para as equipes do sistema geral de leilão de slots.
+Os desenvolvedores principais da Robonomics implementarão um oráculo automatizado a partir da 4ª campanha de crowdloan de parachain para participar dos futuros leilões de slots de parachain na Kusama. Esse mecanismo permitirá que a equipe da Robonomics automatize o pagamento de cada renovação de aluguel de slot de parachain no futuro. A equipe da Robonomics espera que esse esforço inspire outras equipes futuras a utilizarem ou implementarem seus próprios processos automatizados para otimizar e reduzir os riscos para as equipes no sistema geral de leilão de slots.
 
-## Parâmetros atualmente determinados de forma independente por Parachains
+## Parâmetros atualmente determinados de forma independente pelas Parachains
 
-> Limite de Contribuição; Período da Campanha; Recompensas para Participantes; Fonte das Recompensas; Distribuição de Tokens.
+> Limite de Contribuição; Período da Campanha; Recompensas aos Participantes; Fonte das Recompensas; Distribuição de Tokens.
 
-Para mitigar o risco e a imprevisibilidade tanto para projetos quanto para participantes, e para ajudar a manter o custo de vencer esses leilões realista e alinhado com sua proposta de valor, propomos que esses parâmetros mencionados sejam avaliados e subsequentemente determinados não de forma independente por Parachains, mas por um oráculo automatizado. Com aplicação e com o tempo, antecipamos que esse oráculo poderia ser integrado como um parachain de bem comum no Kusama e eventualmente no Polkadot. 
+Para mitigar riscos e imprevisibilidade tanto para projetos quanto para participantes, e para ajudar a manter o custo de vencer esses leilões realista e alinhado com sua proposta de valor, propomos que esses parâmetros mencionados sejam avaliados e, posteriormente, determinados não de forma independente pelas Parachains, mas por um oráculo automatizado. Com a aplicação e com o tempo, prevemos que esse oráculo possa ser integrado como uma parachain de bem comum na Kusama e, eventualmente, na Polkadot.
+ 								
+Frequentemente negligenciado na empolgação desses crowdloans iniciais e seus generosos mecanismos de recompensa,é a realidade que projetos vencedores têm uma vida útil de 48 semanas como uma parachain operacional em funcionamento na Kusama antes que seu aluguel expire e eles precisem renovar sua posição.
 
-Frequentemente negligenciado noA empolgação dessas Crowdloans iniciais e seus generosos mecanismos de recompensa, é a realidade de que os projetos vencedores têm uma vida útil de 48 semanas como uma parachain operacional em funcionamento no Kusama antes que seu contrato expire e eles sejam obrigados a renovar sua posição.
+Com isso em mente, apresentamos um resumo v1 do nosso algoritmo de oráculo automatizado e as condições sob as quais ele pode ser relevante e eficaz no contexto do protocolo maior de leilão de slots.
 
-Com isso em mente, elaboramos um resumo da versão 1 de nosso algoritmo de oráculo automatizado e as condições sob as quais ele poderia ser relevante e eficaz no contexto do protocolo de leilão de slots maior.
+## Oráculo autônomo de campanhas de crowdloan
 
-## Oráculo autônomo de campanhas de Crowdloan
+Muitas vezes, você quer ser o primeiro, mas com o tempo percebe que o mais importante é permanecer no jogo. O ecossistema Polkadot é exatamente o tipo de lugar onde não importa se você é o primeiro ou o último, o que importa é que haja uma "cadeira livre" para você. Ficamos curiosos se na sua infância você jogou o jogo [“cadeiras musicais”](https://en.wikipedia.org/wiki/Musical_chairs), mas nós lembramos muito bem dele do jardim de infância.
 
-Muitas vezes, você quer ser o primeiro, mas com o tempo percebe que é mais importante permanecer no jogo. O ecossistema Polkadot é exatamente o tipo de lugar onde não importa se você é o primeiro ou o último, o que importa é que haja uma "cadeira livre" para você. Nos perguntamos se na sua infância você já jogou o jogo ["musical chairs"](https://en.wikipedia.org/wiki/Musical_chairs), mas nos lembramos muito bem disso do jardim de infância.
-
-É claro que há uma especificidade importante aqui também: o contrato de slot de parachain deve ser renovado antes do final do contrato atual, caso contrário, pode haver uma interrupção ou complicação nos serviços de parachain (o parachain mudará para [Parathreads Pay-as-you-go](https://medium.com/polkadot-network/parathreads-pay-as-you-go-parachains-7440d23dde06), também conhecido como parathread, por algum tempo).
+Claro, há aqui também uma especificidade importante: o aluguel do slot da parachain deve ser estendido antes do término do aluguel atual, caso contrário, pode haver uma interrupção ou complicação nos serviços da parachain (a parachain passará para [Parathreads: Parachains Pay-as-you-go](https://medium.com/polkadot-network/parathreads-pay-as-you-go-parachains-7440d23dde06), também conhecidas como parathreads, por algum tempo).
 
 !["Ecossistema Polkadot"](/blog/images/automating-kusama-crowdloan-campaigns/polkadot-ecosystem.jpg)
 
-Em geral, é importante permanecer na linha. Abaixo falaremos sobre a primeira versão de nosso algoritmo proposto para o cálculo autônomo dos principais parâmetros do oráculo da campanha de Crowdloan. Talvez devêssemos dar um nome a ele, mas até agora nada interessante vem à mente.
+De modo geral, é importante permanecer na fila. Abaixo falaremos sobre a primeira versão do nosso algoritmo proposto para cálculo autônomo dos principais parâmetros do oráculo de campanhas de crowdloan. Talvez devêssemos dar um nome a ele, mas até agora nada interessante nos ocorreu.
 
-### Média do Limite de Contribuição
+### Média do Teto de Contribuição
 
-Dentro deste modelo, propomos que o oráculo automatizado calcule e faça a média do custo mediano em KSM necessário para vencer cada leilão de #15 a #29. Esse custo médio resultante seria definido como o limite de contribuição da Crowdloan em KSM para o slot #30.
+Dentro deste modelo, propomos que o oráculo automatizado calcule e faça a média do custo mediano em KSM necessário para vencer cada leilão do #15 ao #29. Esse custo médio resultante seria definido como o teto de contribuição em KSM para o crowdloan do slot #30.
 
-### Vida útil de uma campanha de Crowdloan
+### Vida útil de uma campanha de crowdloan
 
-Assumimos que uma Campanha de Crowdloan deve visar arrecadar fundos por 5 semanas. Em caso de falha, o oráculo terá que ajustar a estimativa amostral das taxas medianas de uma faixa de leilões [15-29] para [20-34] e assim por diante, para considerar os resultados de leilões anteriores. Dessa forma, haverá uma configuração automática até o ponto de obter com sucesso um slot.
+Assumimos que uma campanha de crowdloan deve buscar arrecadar durante 5 semanas. Em caso de falha, o oráculo terá que deslocar a estimativa amostral das taxas medianas de um intervalo de leilões [15-29] para [20-34] e assim por diante, para levar em conta os resultados deleilões anteriores. Desta forma, haverá uma configuração automática até o ponto de obtenção bem-sucedida de um slot.
 
-### Avaliação da recompensa para cada KSM a favor da campanha de empréstimo coletivo
+### Avaliação da recompensa para cada KSM em favor da campanha de crowdloan
 
-Esta é a parte mais complexa do algoritmo do oráculo, exigindo a infraestrutura das parachains em execução. Prevendo a economia ciclicamente repetitiva das parachains operando há vários anos, permanecemos fiéis à visão de que [a recompensa para os participantes da campanha de empréstimo coletivo é igual ao lucro perdido com o staking na cadeia Relay](https://robonomics.network/blog/robonomics-parachain-lease-offering/).
+Esta é a parte mais complexa do algoritmo do oráculo, exigindo a infraestrutura das parachains em funcionamento. Prevendo a economia ciclicamente repetitiva das parachains que operam há vários anos, mantemos a visão de que [a recompensa para os participantes da campanha de crowdloan é igual ao lucro perdido por não fazer staking na Relay chain](https://robonomics.network/blog/robonomics-parachain-lease-offering/).
 
-O mais importante é que a recompensa do staking pode ser estimada autonomamente por um oráculo com um grau de precisão bastante alto. Por exemplo, agora podemos falar sobre um lucro perdido de 0,19 KSM para cada 1 KSM durante o ano. No entanto, a métrica de receita perdida sozinha não é suficiente, uma vez que a recompensa na parachain é oferecida no token nativo da parachain. É devido a isso que o esquema se torna um pouco mais complicado, mas não muito. Pressupomos que os ecossistemas Kusama e Polkadot sempre terão cotações de preços para os tokens nativos das parachains. Por exemplo, o $KAR da Karura pode ser uma cotação desse tipo já este ano na rede Kusama. Concluímos que o oráculo, de forma independente, sem ajuda de ninguém externo, pode: (1) obter dados sobre a taxa de staking atual na cadeia Relay, (2) obter autonomamente dados sobre o preço de um token nativo da parachain do segmento DeFi do ticker do ecossistema e, com base nesses dados, fazer uma oferta semelhante ao staking de KSM.
+O mais importante é que a recompensa do staking pode ser estimada de forma autônoma por um oráculo com um grau de precisão bastante alto. Por exemplo, agora podemos falar de um lucro perdido de 0,19 KSM para cada 1 KSM durante o ano. No entanto, apenas a métrica de receita perdida não é suficiente, já que a recompensa na parachain é oferecida no token nativo da parachain. É por isso que o esquema fica um pouco mais complicado, mas não muito. Assumimos que os ecossistemas Kusama e Polkadot sempre terão tickers de preço para tokens nativos de parachain. Por exemplo, o $KAR da Karura pode ser esse ticker já este ano na rede Kusama. Assim, o oráculo pode, de forma independente, sem ajuda externa, (1) obter dados sobre a taxa de staking atual na Relay chain, (2) obter autonomamente dados sobre o preço de um token nativo de parachain a partir do segmento DeFi do ticker do ecossistema e, com base nesses dados, fazer uma oferta semelhante ao staking de KSM.
 
-O detentor de DOT e KSM dividirá sua carteira de tokens entre o staking na cadeia Relay e o suporte a várias (talvez várias dezenas) campanhas de empréstimo coletivo, com base no desejo de manter a recompensa como seria se todos os DOT/KSM estivessem staked, mas diversificando o risco do preço de um único token. Sim, atualmente as recompensas nas parachains são mais vistas como uma porcentagem de todos os tokens nativos, e números de 20% do fornecimento total não parecem inflacionados na comunidade. Embora seja difícil imaginar uma situação em que todos os anos 20% de todos os tokens serão oferecidos apenas para aluguéis de slots. Ainda assim, este é o estado inicial na fase dos primeiros leilões e, novamente, uma imagem normal no início. No entanto, tirar recompensas atuais para a vida cotidiana por uma década não é uma boa ideia.
+O detentor de DOT e KSM dividirá sua carteira de tokens entre o staking na Relay chain e o apoio a várias (talvez várias dezenas) campanhas de crowdloan, com base no desejo de manter a recompensa como seria se todos os DOT/KSM estivessem em staking, mas diversificando o risco do preço de um único token. Sim, neste momento as recompensas nas parachains são mais vistas como uma porcentagem de todos os tokens nativos, e números de 20% do fornecimento total não parecem inflados na comunidade. Embora seja difícil imaginar um cenário em que todo ano 20% de todos os tokens serão oferecidos apenas para aluguel de slots. Ainda assim, este é o estado gênese na fase dos primeiros leilões e, novamente, um quadro normal no início. No entanto, considerando as recompensas atuais para a vida cotidiana por uma década não é uma boa ideia.
 
-O principal critério para calcular a recompensa será o lucro perdido ao apostar na campanha de crowdloan de qualquer um dos projetos e a conversão desse valor em número de tokens nativos na taxa atual. Essa tarefa pode ser realizada por um processo autônomo.
+O principal critério para calcular a recompensa será o lucro perdido do staking na campanha de crowdloan de qualquer um dos projetos e a conversão desse valor em número de tokens nativos à taxa atual. Essa tarefa pode ser realizada por um processo autônomo.
 
-### Fonte de recompensa e distribuição de tokens na parachain
+### Fonte da recompensa e distribuição de tokens na parachain
 
-Propomos implementar um mecanismo para emitir novos tokens na parachain por meio do módulo do tesouro. Por sua vez, o tesouro da parachain distribuirá novas moedas da parachain entre os participantes da campanha de crowdloan mensalmente ao longo do prazo de locação do slot atual.
+Propomos implementar um mecanismo de emissão de novos tokens na parachain através do módulo de tesouraria. Por sua vez, a tesouraria da parachain distribuirá as novas moedas da parachain entre os participantes da campanha de crowdloan mensalmente durante todo o período vigente do aluguel do slot.
 
 ## Fechando o ciclo
 
-Acima, fornecemos uma descrição generalizada da primeira versão do algoritmo do oráculo, que tem como objetivo tornar o protocolo Robonomics mais viável sem envolvimento direto do desenvolvedor. No entanto, é ainda mais importante entender a conexão entre a locação de slot no ecossistema e a função alvo do projeto. No caso do Robonomics, é uma taxa para armazenar, atualizar e interagir com o gêmeo digital do sistema ciberfísico. Nosso objetivo no horizonte de 3 anos é formar um segmento Robonomics capaz de atender até 1 milhão de gêmeos digitais por mês a ~0,25 XRT.
+Acima, demos uma descrição generalizada da primeira versão do algoritmo do oráculo, que tem como objetivo tornar o protocolo Robonomics mais viável sem envolvimento direto dos desenvolvedores. No entanto, é ainda mais importante entender a conexão entre o aluguel do slot no ecossistema e a função-alvo do projeto. No caso do Robonomics, trata-se de uma taxa para armazenar, atualizar e interagir o usuário com o gêmeo digital do sistema ciberfísico. Nosso objetivo, no horizonte de 3 anos, é formar um segmento Robonomics capaz de atender até 1 milhão de gêmeos digitais por mês a ~0,25 XRT.
 
-Se a carga alvo for atingida, teremos mais de $60 milhões por ano em demanda por compras de XRT no mercado, que serão consumidos quando a assinatura for ativada.
+Se a carga-alvo for atingida, teremos mais de US$ 60 milhões por ano em demanda por compras de XRT no mercado, que serão queimados quando a assinatura for ativada.
 
-(Falarei mais sobre o ciclo de vida da assinatura separadamente quando publicar a próxima versão do Robonomics, dedicada ao mecanismo de leilão de assinatura). Acontece que o valor do XRT não diminuirá se o número de assinaturas vendidas por XRT durante o ano exceder cumulativamente o valor que o tesouro da parachain pagará de acordo com o oráculo das campanhas de crowdloan.
+(Falarei mais sobre o ciclo de vida da assinatura separadamente quando publicar o próximo lançamento do Robonomics, dedicado ao mecanismo de leilão de assinaturas). Acontece que o valor do XRT não diminuirá se o número de assinaturas vendidas por XRT durante o ano exceder cumulativamente o valor que a tesouraria da parachain pagará de acordo com o oráculo das campanhas de crowdloan.
 
-Em geral, minha equipe e eu estamos em curso para criar esse esquema, que deve tornar possível fechar a tokenômica da parachain desde o momento em que o slot é obtido até o momento em que o contrato de locação é renovado. Queremos tornar esse processo o mais autônomo possível, deixando apenas os detentores de tokens e desenvolvedores para propor melhorias ao algoritmo por meio do mecanismo de democracia e do comitê técnico da parachain. Sem trabalho manual em perspectiva. Enquanto isso, como sempre acontece com hipóteses, ainda daremos os primeiros passos manualmente. Abaixo está como o oráculo do futuro seriatrabalho para a 4ª campanha de crowdloan (aproximadamente).
-
-## Os parâmetros da quarta campanha de crowdloan
+De modo geral, minha equipe e eu estamos no caminho de criar esse esquema, que deve possibilitar fechar a tokenomics da parachain desde o momento em que o slot é obtido até o momento em que o aluguel é renovado. Queremos tornar esse processo o mais autônomo possível da vontade humana, deixando apenas os detentores de tokens e desenvolvedores para propor melhorias no algoritmo através do mecanismo de democracia e do comitê técnico da parachain. Nada de trabalho manual na perspectiva. Enquanto isso, como sempre acontece com hipóteses, ainda daremos os primeiros passos manualmente. Abaixo está como o oráculo do futuro funcionaria para a 4ª campanha de crowdloan (aproximadamente).## Os parâmetros da quarta campanha de crowdloan
 
 <TextCard>
 
-### Limite de arrecadação **47.425,5262 KSM**
+### Limite de coleta **47.425,5262 KSM**
 
 Com base na avaliação de taxas do 15º leilão, Geshiro
 
@@ -96,7 +93,7 @@ Com base na avaliação de taxas do 15º leilão, Geshiro
 
 ### Bônus
 
-Os detentores de cartões NFT Pioneer receberão um extra de 1XRT para cada KSM
+Portadores do Pioneer NFT receberão 1XRT extra para cada KSM
 
 </TextCard>
 
@@ -104,8 +101,6 @@ Os detentores de cartões NFT Pioneer receberão um extra de 1XRT para cada KSM
 
 ### Distribuição de recompensas **Mensal**
 
-Parcelas proporcionalmente iguais por 12 meses. O tesouro realiza isso gerando novos tokens na parachain
+Partes proporcionalmente iguais por 12 meses. O tesouro executa gerando novos tokens na parachain
 
 </TextCard>
-
-<KusamaSlotBanner />

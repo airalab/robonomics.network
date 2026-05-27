@@ -372,6 +372,10 @@ const papers =[
   },
 ];
 
+const papersIntroText = `
+  <p>${await $tr('Without academic research, the advancement of complex systems that can be integrated into our daily lives may lose its purpose or even pose risks. We must carefully contemplate our direction, objectives, and potential consequences. The spheres where Robonomics operates, specifically Robotics, Economic relations, and Web3 technologies, are worth studying individually, exploring how they can be integrated with each other, and assessing their potential impact on our lives.')}</p>
+`;
+
 const pinned = papers.filter(paper => paper.pinned);
 let selected = 0;
 ---
@@ -380,27 +384,11 @@ let selected = 0;
   title={$tr("Research papers")}
   description={$tr("Without academic research, the advancement of complex systems that can be integrated into our daily lives may lose its purpose or even pose risks. We must carefully contemplate our direction, objectives, and potential consequences. The spheres where Robonomics operates, specifically Robotics, Economic relations, and Web3 technologies, are worth studying individually, exploring how they can be integrated with each other, and assessing their potential impact on our lives.")}
   ogImage="/opengraph/papers.webp"
+  pageTitle={$tr("Research papers")}
+  pageIntroText={papersIntroText}
 >
 
-<!-- Papers banner section -->
-<section class="papers__section-blue section__blue">
-  <div class="papers__main-title title-with-bg">
-    <h1><span>{$tr("Research papers")}</span></h1>
-  </div>
-
-  <div class="layout layout__content papers__banner">
-    <div class="papers__banner-wrapper">
-      <p>{$tr('Without academic research, the advancement of complex systems that can be integrated into our daily lives may lose its purpose or even pose risks. We must carefully contemplate our direction, objectives, and potential consequences. The spheres where Robonomics operates, specifically Robotics, Economic relations, and Web3 technologies, are worth studying individually, exploring how they can be integrated with each other, and assessing their potential impact on our lives.')}</p>
-      <img src="/images/papers/papers-text.svg" alt="" aria-hidden="true"/>
-    </div>
-    <div class="papers__banner-img">
-      <img src="/images/papers/papers-banner-img.webp" alt="" aria-hidden="true"/>
-      <img src="/images/papers/papers-banner-img-mobile.webp" alt="" aria-hidden="true" class="mobile"/>
-    </div>
-  </div>
-</section>
-
-<section class="layout layout__content">
+<section class="section layout layout__content">
   {pinned.length > 0 && (
     <div class="papers-pinned oldy accent">
       <div class="papers-pinned__header">
@@ -452,55 +440,9 @@ let selected = 0;
     background-position: calc(100% - 10px) 50%;
   }
 
-  .papers__section-blue {
-    position: relative;
-    margin-bottom: var(--space);
-  }
-
-  .papers__banner {
-    padding: var(--space);
-    min-height: 575px;
-    height: 100%;
-    display: flex;
-  }
-
-  .papers__banner-wrapper {
-    position: relative;
-    padding-top: var(--space);
-    z-index: 5;
-  }
-
-  .papers__banner-wrapper p {
-    max-width: 808px;
-    width: 100%;
-    font-size: calc(var(--base-font-size) * 1.2);
-    font-style: italic;
-    font-weight: 400;
-    margin-bottom: calc(var(--space) * 2);
-  }
-
-  .papers__banner-img {
-    position: absolute;
-    bottom: -15px;
-    right: 20px;
-    max-width: 384px;
-    width: 100%;
-    z-index: 0;
-  }
-
-  .papers__banner-img img {
-    width: 100%;
-  }
-
-  .papers__banner-img .mobile {
-    display: none;
-  }
-
   .papers-pinned {
-    padding-top: 0;
     padding-left: 0;
     margin-bottom: calc(var(--space) * 2);
-    border-top: none;
     text-align: left;
   }
 
@@ -574,31 +516,6 @@ let selected = 0;
     padding-left: var(--space);
     padding-top: var(--space);
     font-size: calc(var(--base-font-size) * 0.9)
-  }
-
-  @media screen and (max-width: 1050px) {
-    .papers__banner {
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 0;
-    }
-
-    .papers__banner-wrapper {
-      margin-bottom: calc(var(--space) * 2);
-    }
-
-    .papers__banner-img {
-      position: static;
-      margin-bottom: -7px;
-    }
-
-    .papers__banner-img img {
-      display: none;
-    }
-
-    .papers__banner-img .mobile {
-      display: block;
-    }
   }
 
   @media screen and (max-width: 860px) {

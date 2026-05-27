@@ -8,7 +8,7 @@ import "../assets/scripts/utils/translate.js";
 
 // Components
 import Header from '../components/header/Header.astro';
-import Footer from '../components/Footer.astro';
+import Footer from '../components/footer/Footer.astro';
 
 // Extract site metadata
 const { siteName, siteDescription, siteUrl } = meta;
@@ -17,10 +17,9 @@ const {
   description, 
   ogImage, 
   pageImageWidth = '1280', 
-  pageImageHeight = '765', 
-  translated = false, 
+  pageImageHeight = '765',
   pageTitle, 
-  backlink, 
+  pageIntroText,
   casePath 
 } = Astro.props;
 
@@ -35,13 +34,9 @@ const pageDescriptionFinal = caseData.length ? await $tr(caseData[0]?.descriptio
 const pageImageFinal = caseData.length
   ? `${siteUrl}${caseData[0]?.metaImg || '/opengraph/default.webp'}`
   : (ogImage && `${siteUrl}${ogImage}` || `${siteUrl}/opengraph/default.webp`);
-const backlinkLabel = backlink && await $tr(backlink.label);
 
 // Import styles
 import '../assets/styles/main.css';
-
-const isHome = Astro.url.pathname === '/';
-
 ---
 
 <!doctype html>
@@ -49,7 +44,11 @@ const isHome = Astro.url.pathname === '/';
 <head>
 	<meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+	<link rel="icon" href="/favicon.ico" sizes="any" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="/app-icons/app-icon-120.png" />
+	<link rel="icon" type="image/png" sizes="192x192" href="/app-icons/app-icon-192.png" />
+	<link rel="icon" type="image/png" sizes="256x256" href="/app-icons/app-icon-256.png" />
 	<meta name="generator" content={Astro.generator} />
 
 	<title>{pageTitleFinal}</title>
@@ -76,123 +75,52 @@ const isHome = Astro.url.pathname === '/';
 	<meta name="twitter:site" content="@AIRA_Robonomics">
 	<meta name="twitter:creator" content="@AIRA_Robonomics">
 
-  {isHome && (
-    // Preload important graphics
-    <>
-      <link rel="preload" as="fetch" href="/images/home/home-banner.svg" type="image/svg+xml" fetchpriority="high" />
-      <link rel="preload" as="image" href="/images/home/robonomics-pattern.webp" type="image/webp" />
-    </>
-  )}
 </head>
-	<body transition:animate="fade">
-      <main class="screen page">
-        <Header translated={translated}/>
+	<body>
+      <Header />
+    
+      <main>
+    
+        {pageTitle && (
+          <>
+            <section class="layout text-center">
+              <h1 set:html={pageTitle} />
+            </section>
 
-        <div class="layout text-center">
-          {pageTitle && <h1 set:html={pageTitle} />}
-          {backlink && <div class="backlink"><a href={backlink.link} aria-label={backlinkLabel}>&larr; {backlink.title}</a></div>}
-        </div>
+            {pageIntroText && (
+              <section class="layout layout__content pageintro" set:html={pageIntroText}>
+              </section>
+            )}
+          </>
+        )}
 
-         <slot />
-         <Footer translated={translated}/>
+        <slot />
       </main>
+
+      <Footer />
 	</body>
 </html>
 
-<script>;
-</script>
-
-
 <style>
-
-  .hide {
-    display: none;
+  :global(body) {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
   }
 
-  .backlink {
-    margin-left: var(--layout-sidepadding);
-    margin-top: calc(var(--space) * -1.5);
+  main {
+    flex: 1 0 auto;
   }
 
-  .backlink a {
-    padding: 0.3rem 0;
-    font-size: 0.8rem;
-    font-variation-settings: var(--font-flex-bold);
-    color: var(--text-color);
-    text-transform: uppercase;
+  .pageintro {
+    font-weight: bold;
+    text-align: center;
   }
 
-  .backlink a:hover {
-    color: var(--color-blue)
+  .pageintro p:last-child {
+    margin-bottom: 0;
   }
-
-  html[dir="rtl"]  .backlink  {
-    margin-left: 0;
-    margin-right: var(--layout-sidepadding);
-  }
-
-  .backlink:hover {
-    color: var(--color-link);
-  }
-
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 0.33s cubic-bezier(0,.44,.38,.99);
-  }
-
-  .fade-enter-from,
-  .fade-leave-to {
-    opacity: 0;
-  }
-
-  .sidetext {
-    font-size: calc(var(--base-font-size) * 0.6);
-    text-transform: uppercase;
-  }
-
-  .sidetext a:not(.button) {
-    color: var(--text-color);
-    text-decoration: none;
-  }
-
-  .sidetext-left {
-    position:  fixed;
-    left: calc(var(--screen-padding-left) * 0.3);
-    bottom: 0;
-
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-    white-space: nowrap;
-    z-index: 900;
-  }
-
-  .sidetext-left.active--exact, .sidetext-left a.active--exact { opacity: .5; }
-
-
-  .screen {
-    position: relative;
-    background-color: var(--color-light);
-    /* padding-top: var(--screen-padding-top); */
-    padding-top: var(--screen-padding-top);
-    padding-bottom: var(--screen-padding-bottom);
-    height: 100vh;
-    scrollbar-width: none;
-  }
-
-  .screen::-webkit-scrollbar { display: none; }
-
-  .screen-content {
-    position: relative;
-    background-color: var(--color-light);
-  }
-
-  @media screen and (max-width: 680px) {
-    .footer-form.layout__content {
-      padding-left: 0;
-    }
-  }
-  
-
 </style>
 
 <script src="../assets/scripts/utils/scroll-in-view-animation.js"></script>

@@ -4,17 +4,6 @@ import RbButton from '../components/RbButton.astro';
 import VideoGallery from '../components/blocks/VideoGallery.astro';
 import CasesDisplay from '../components/blocks/CasesDisplay.astro';
 
-import { Image } from 'astro:assets';
-
-// images
-import RWA from '../assets/images/for-business/real-estate.webp';
-
-import FACTORIES from '../assets/images/for-business/factories.webp';
-
-import HARDWARE from '../assets/images/for-business/hardware.webp';
-
-import ROBOTICS from '../assets/images/for-business/robotics.webp';
-
 // videos
 const videos = [
   '/video/business-1.mp4',
@@ -35,9 +24,8 @@ const previews = [
 <Layout 
   title="For business" 
   description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
+  pageTitle={$tr('For business')}
 >
-
-  <div class="layout layout__content page-title"><h1 class="page-title">{$tr('For business')}</h1></div>
 
   <VideoGallery small videos={videos} previews={previews} alt="For business video example" cls="mb"/>
 
@@ -51,7 +39,7 @@ const previews = [
       <h3>{$tr('FOR REAL ESTATE BUSINESSES')}</h3>
       <p>{$tr('Smart RWA is a service concept based on the digitization of key real-estate operational metrics using smart-home infrastructure and dedicated hardware (environmental analyzers, energy meters, and smart-home servers). Based on this data, a “living” token is formed that reflects the real condition and usage of a property, while maintaining a high level of privacy inside the home.')}</p>
 
-      <Image src={RWA} alt="smart rwa" class="image-mb" />
+      <img src="/pages/for-business/real-estate.webp" alt="smart rwa" class="image-mb" loading="lazy" />
 
       <RbButton 
         href='/contact/?source=smart-rwa' 
@@ -81,7 +69,7 @@ const previews = [
       <h3>{$tr('FOR FACTORIES')}</h3>
       <p>{$tr('FEECC is a system for creating digital product passports and manufacturing quality control built on Robonomics. It enables traceability of key production stages, allows pinpoint detection of errors in mass manufacturing, and ensures the integrity of data that cannot be altered or substituted thanks to blockchain-based immutability.')}</p>
 
-      <Image src={FACTORIES} alt="feecc" class="image-mb" />
+      <img src="/pages/for-business/factories.webp" alt="feecc" class="image-mb" loading="lazy" />
 
 
       <CasesDisplay 
@@ -116,7 +104,7 @@ const previews = [
       <h3>{$tr('FOR HARDWARE PROJECTSS')}</h3>
       <p>{$tr('We design and engineer privacy-first hardware devices tailored to your specific use case and ready for your own production. From architecture and electronics to firmware and system integration, we help turn your requirements into reliable devices built without hidden data collection, vendor lock-in, or corporate cloud dependencies.')}</p>
 
-      <Image src={HARDWARE} alt="custom hardware" class="image-mb" />
+      <img src="/pages/for-business/hardware.webp" alt="custom hardware" class="image-mb" loading="lazy" />
 
       <RbButton 
         href='/contact/?source=custom-hardware' 
@@ -143,7 +131,7 @@ const previews = [
       <p>{$tr('The Robonomics project originally focused on robot interaction and autonomous operation. Since 2015, the team has been building deep practical experience in robotics and cyber-physical systems. Our work is carried out by engineers and researchers with master’s degrees in robotics and related fields, with hands-on experience working with industrial and service robots, including KUKA, Unitree, and Spot (Boston Dynamics).')}</p>
       <p>{$tr('Today, we closely follow the development of humanoid platforms and are prepared to deliver some of the first practical applications for humanoid-robot marketplaces.')}</p>
 
-      <Image src={ROBOTICS} alt="robotics" class="image-mb" />
+      <img src="/pages/for-business/robotics.webp" alt="robotics" class="image-mb" loading="lazy" />
     </div>
 
     <div class="layout">

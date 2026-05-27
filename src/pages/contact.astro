@@ -2,20 +2,22 @@
 // components
 import Layout from '../layouts/Layout.astro'
 import ContactForm from '../components/blocks/ContactForm.vue';
+
+const contactIntroText = `
+  <p>${await $tr('If you are seeking technical collaboration involving smart devices or decentralized network infrastructure, feel free to ask any questions about Robonomics technologies, whether theoretical or practical.')}</p>
+  <p class="text-small">${await $tr('Kindly avoid marketing inquiries :D')}</p>
+`;
 ---
 
 <Layout 
   title={$tr("Contacts")}
   ogImage="/opengraph/contacts.webp"
+  pageTitle={$tr('Ask a technician')}
+  pageIntroText={contactIntroText}
 >
 
-<section>
+<section class="section">
   <div class="layout layout__text">
-    <h1 class="page-title">{$tr('ASK A TECHNICIAN')}</h1>
-
-    <p>{$tr('If you are seeking technical collaboration involving smart devices or decentralized network infrastructure, feel free to ask any questions about Robonomics technologies, whether theoretical or practical.')}</p>
-    <p class="text-small">{$tr('Kindly avoid marketing inquiries :D')}</p>
-
     <div class="form-container">
       <ContactForm client:only />
     </div>
@@ -26,29 +28,7 @@ import ContactForm from '../components/blocks/ContactForm.vue';
 </Layout>
 
 <style>
-  section {
-    padding-top: calc(var(--space) * 2);
-  }
-
-  h1 {
-    margin-top: 0;
-    margin-bottom: calc(var(--space) * 0.5);
-    text-align: center;
-  }
-
-  p {
-    margin-bottom: calc(var(--space) * 0.5);
-    text-align: center;
-  }
-
   .form-container {
     min-height: 350px;
-  }
-
-  .text-small {
-    font-size: calc(var(--base-font-size) * 0.75);
-    opacity: 0.8;
-    text-align: center;
-    margin-bottom: calc(var(--space) * 2);
   }
 </style>

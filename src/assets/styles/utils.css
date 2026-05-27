@@ -15,32 +15,31 @@
 
 .oldy__link, a.oldy {
   cursor: pointer;
-  /* --oldy-box-color: var(--rb-color-blue); */
+  /* --oldy-box-color: var(--color-blue); */
 }
 
 .oldy__link:hover, a.oldy:hover {
   --oldy-box-color: var(--color-link);
-  --oldy-color: var(--color-blue);
+  --oldy-color: var(--color-link);
 }
 
 .oldy__link:hover *, a.oldy:hover * {
-  --oldy-color: var(--color-blue);
+  --oldy-color: var(--color-link);
 }
 
 .oldy.accent {
-  --oldy-box-color: var(--rb-color-green-accent);
-}
-
-
-*[class*='grid-'] { 
-  display: grid !important;
-  gap: var(--space);
+  --oldy-box-color: var(--color-green-accent);
 }
 
 *[class*='grid-'] > p, *[class*='grid-'] > .card { margin-bottom: 0; }
 
 *[class*='grid-'].middle {
   align-items: center;
+}
+
+.grid, *[class*='grid-'] {
+  display: grid;
+  gap: var(--space);
 }
 
 .grid-5{
@@ -62,8 +61,6 @@
 *[class*='grid-'].grid-valign-top {
   align-items: start;
 }
-
-.grid { display: grid; }
 
 .grid-with-scroll {
 max-height: calc((550px * 2) + (var(--space) * 2) ); 
@@ -114,8 +111,6 @@ background: transparent; /* Optional: make buttons invisible if you want */
 *[class*='grid-'].grid-valign-top {
     align-items: start;
   }
-
-.grid { display: grid; }
 
 .youtube-embed {
   margin-bottom: var(--space);
@@ -277,7 +272,7 @@ background: transparent; /* Optional: make buttons invisible if you want */
 }
 
 .list-links li:hover, .list-links li:hover a {
-  color: var(--color-link);
+  color: var(--color-link-hover);
 }
 
 .list-links svg path {
@@ -285,7 +280,7 @@ background: transparent; /* Optional: make buttons invisible if you want */
 }
 
 .list-links li:hover svg path {
-  fill: var(--color-link) !important;
+  fill: var(--color-link-hover) !important;
 }
 /* - list links */
 
@@ -325,12 +320,6 @@ background: transparent; /* Optional: make buttons invisible if you want */
   overflow: hidden;
   text-indent: -9999px;
   z-index: 1000;
-}
-
-.italic-text {
-  font-size: calc(var(--base-font-size) * 0.75);
-  font-variation-settings: var(--font-flex-italic);
-  letter-spacing: 1px;
 }
 
 lite-youtube {

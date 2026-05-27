@@ -21,7 +21,7 @@ const props = Astro.props as typeof defaultProps;
           {$tr('Read our almanac')}
         </a>
         <a class="timeline__img" href={props.linkWithImg} target="_blank" aria-label="check the book">
-          <img src={`/images/books/${props.img}`} alt="" loading="lazy" />
+          <img src={`/pages/books/${props.img}`} alt="" loading="lazy" />
         </a>
       </div>
     )}
@@ -132,7 +132,7 @@ addScrollBehavior(props.id);
     margin-bottom: calc(var(--space) * 0.5);
     font-weight: 900;
     font-size: calc(var(--base-font-size) * 1.5);
-    background-color: var(--rb-color-green-accent);
+    background-color: var(--color-green-accent);
   }
 
   .timeline__title {
@@ -221,7 +221,7 @@ addScrollBehavior(props.id);
     font-family: var(--font-family);
     font-size: 24px;
     font-weight: 900;
-    color: var(--rb-color-green-accent);
+    color: var(--color-green-accent);
     transform: rotate(-90deg) translate(-100%, 0);
     transform-origin: 0 0;
     white-space: nowrap;

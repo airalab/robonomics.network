@@ -18,13 +18,13 @@ const TitleTag = subtitle ? 'h4' : 'h2';
 <div class={`case-page__text ${extraCls ?? extraCls}`} >
   {img && imageOutside && (
     <div class="layout__mid img-top layout">
-      <img class={imgClasses} src={`/images/cases/${img}`} alt={imgAlt} />
+      <img class={imgClasses} src={`/pages/cases/${img}`} alt={imgAlt} />
     </div>
   )}
 
   <div class="case-page__text-container layout__text">
     {img && !imageOutside && imageTop && (
-      <img class={imgClasses} src={`/images/cases/${img}`} alt={imgAlt} />
+      <img class={imgClasses} src={`/pages/cases/${img}`} alt={imgAlt} />
     )}
 
     {title && (<TitleTag>{title}</TitleTag>)}
@@ -38,13 +38,13 @@ const TitleTag = subtitle ? 'h4' : 'h2';
     )}
 
     {img && !imageOutside && !imageTop && (
-      <img class={imgClasses} src={`/images/cases/${img}`} alt={imgAlt} />
+      <img class={imgClasses} src={`/pages/cases/${img}`} alt={imgAlt} />
     )}
   </div>
 
   {imageOutside && !imageTop && (
     <div class="layout__mid img-bottom layout">
-      <img class={imgClasses} src={`/images/cases/${img}`} alt={imgAlt} />
+      <img class={imgClasses} src={`/pages/cases/${img}`} alt={imgAlt} />
     </div>
   )}
 </div>

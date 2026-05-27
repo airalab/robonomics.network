@@ -11,7 +11,7 @@ This website serves as a hub for all essential information for our community.
 ## For Developers
 
 - Built with [Astro](https://astro.build/).
-- Use [yarn](https://yarnpkg.com/) to manage dependencies.
+- Use [npm](https://www.npmjs.com/) to manage dependencies.
 - Node.js version must be **>=18.17.1**.
 
 ### Getting Started
@@ -19,13 +19,13 @@ This website serves as a hub for all essential information for our community.
 Ensure you have Node.js and the [Astro framework](https://astro.build/) installed before proceeding.
 
 - **Install dependencies:** 
-`yarn install`
+`npm install`
 
 - **Start development server**
-`yarn dev`
+`npm run dev`
 
 - **Build for production**
-`yarn build`
+`npm run build`
 
 ### How to add a new post
 
@@ -237,20 +237,20 @@ Learn more about properties [here](https://astro-embed.netlify.app/components/yo
 - If you wish to translate your md document you need to run the command: 
  
 ```bash
-yarn translate-md
+npm run translate-md
 ```
 
 > To translate all at once, every new lines in pages, new document or changed document you need only one command now 
 
 ```bash
-yarn translate-all
+npm run translate-all
 ```
 
 > Also, make sure you are translating only the changed files that are **needed** to be translated. For example, you need to change 5 files. Three of them includes text changes and removing some outdated information. And the other two need to update links for some images or just change an external link. In this case, it would be wise to change the first three files and translate them and only then change links in the other two.
 
 > Translation happens to all changed files (24 hours update), but it's not necessary for the updated links, especially if the file large and therefore translation takes some time.
 
-After running the needed command all you have to do is wait and check the files (ai translations have some flaws). To check files run `yarn dev` and see if there are any errors.
+After running the needed command all you have to do is wait and check the files (ai translations have some flaws). To check files run `npm run dev` and see if there are any errors.
 
 
 ## For contributors

@@ -1,0 +1,143 @@
+---
+export interface DownloadLink {
+  label: string;
+  href: string;
+  download?: boolean | string;
+  ariaLabel?: string;
+}
+
+interface Props {
+  as?: 'article' | 'div' | 'li';
+  title?: string;
+  image: string;
+  imageAlt?: string;
+  previewHref?: string;
+  previewDownload?: boolean | string;
+  previewAriaLabel?: string;
+  downloads?: DownloadLink[];
+  // Object map for quick link rendering: { [label]: href }
+  // Used for cases like wallpapers aspect ratios and logo formats.
+  downloadChunks?: Record<string, string>;
+  badgeText?: string;
+  class?: string;
+}
+
+const {
+  as: Tag = 'article',
+  title,
+  image,
+  imageAlt = '',
+  previewHref,
+  previewDownload = false,
+  previewAriaLabel,
+  downloads = [],
+  downloadChunks,
+  badgeText,
+  class: className = '',
+} = Astro.props;
+
+const titleLabel = title ? await $tr(title) : null;
+const badgeLabel = badgeText ? await $tr(badgeText) : null;
+const getDownloadAttr = (value?: boolean | string) => {
+  if (value === true) {
+    return '';
+  }
+
+  if (typeof value === 'string') {
+    return value;
+  }
+
+  return undefined;
+};
+
+const resolvedLinks: DownloadLink[] =
+  downloads.length > 0
+    ? downloads
+    : downloadChunks
+      ? Object.entries(downloadChunks).map(([label, href]) => ({
+          label,
+          href,
+          download: true,
+        }))
+      : [];
+---
+
+<Tag class:list={['download-item', className]}>
+  <div class="download-item__media">
+    {previewHref ? (
+      <a aria-label={previewAriaLabel} href={previewHref} download={getDownloadAttr(previewDownload)}>
+        <img src={image} alt={imageAlt} />
+      </a>
+    ) : (
+      <img src={image} alt={imageAlt} />
+    )}
+
+    {badgeLabel && <span class="label-green">{badgeLabel}</span>}
+  </div>
+
+  {titleLabel && <h5>{titleLabel}</h5>}
+
+  {resolvedLinks.length > 0 && (
+    <div class="download-item__links">
+      {resolvedLinks.map(({ label, href, download = true, ariaLabel }) => (
+        <a
+          aria-label={ariaLabel ?? previewAriaLabel}
+          href={href}
+          download={getDownloadAttr(download)}
+          class="oldy oldy__link"
+        >
+          {label}
+        </a>
+      ))}
+    </div>
+  )}
+</Tag>
+
+<style>
+  .download-item {
+    --row-span: 3;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span var(--row-span, 3);
+    gap: 0.5rem;
+  }
+
+  .download-item__media {
+    position: relative;
+  }
+
+  .download-item__media > a {
+    display: block;
+    overflow: hidden;
+  }
+
+  .label-green {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-weight: bold;
+  }
+
+  .download-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .download-item__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .download-item__links .oldy {
+    --oldy-box-size: 0.1rem;
+    --oldy-color: var(--color-dark);
+  }
+
+  .download-item__links a {
+    padding: 0.2rem 1rem;
+    font-size: calc(var(--base-font-size) * 0.8);
+    font-weight: bold;
+  }
+</style>

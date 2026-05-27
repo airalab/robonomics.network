@@ -3,7 +3,7 @@
     {$tr('Do you want')}<br /> {$tr('to dive even deeper?')}
   </span>
   <div class="books-footer__links">
-    {$tr('Our')} <a href="/white-paper/">{$tr('White Paper')}</a> & <a href="/papers/">{$tr('Science')}</a>
+    {$tr('Our')} {$tr('White Paper')} & <a href="/papers/">{$tr('Science')}</a>
   </div>
 </div>
 
@@ -26,7 +26,7 @@
     right: -140px;
     width: 215px;
     height: 250px;
-    background-image: url('/images/books/books-decor.webp');
+    background-image: url('/pages/books/books-decor.webp');
     background-position: center;
     background-size: 215px;
   }
@@ -39,12 +39,16 @@
 
   .books-footer__links {
     font-size: calc(var(--base-font-size) * 1.2);
-    color: var(--color-blue);
+    color: var(--color-link);
     text-align: left;
   }
 
   .books-footer__links a {
-    color: var(--color-blue);
+    color: var(--color-link);
+  }
+
+  .books-footer__links a:hover {
+    color: var(--color-link-hover);
   }
 
   @media screen and (max-width: 865px) {

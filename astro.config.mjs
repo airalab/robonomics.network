@@ -11,6 +11,7 @@ import { createRedirectConfig } from "./config/redirects.mjs";
 import { svgSpritePlugin } from "./config/svg-sprite.mjs";
 
 const defaultLocale = "en";
+const isDev = process.argv.includes("dev");
 const locales = {
   ar: "ar", 
   de: "de",
@@ -28,7 +29,7 @@ const locales = {
   zh: "zh"
 };
 
-const { redirects, devicesNoSlashRedirectPlugin } = createRedirectConfig({
+const { redirects, trailingSlashRedirectPlugin } = createRedirectConfig({
   locales,
   defaultLocale,
 });
@@ -36,13 +37,16 @@ const { redirects, devicesNoSlashRedirectPlugin } = createRedirectConfig({
 export default defineConfig({
   redirects,
   vite: {
-    plugins: [devicesNoSlashRedirectPlugin(), svgSpritePlugin()],
+    plugins: [
+      ...(!isDev ? [trailingSlashRedirectPlugin()] : []),
+      svgSpritePlugin(),
+    ],
   },
   markdown: {
     syntaxHighlight: 'prism',
     gfm: true,
   },
-  trailingSlash: "always",
+  trailingSlash: isDev ? "ignore" : "always",
   build: {
     format: "directory",
   },

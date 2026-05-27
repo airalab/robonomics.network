@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <div class="cases__banner layout layout__content" v-if="!tagsList">
+
+    <section class="section">
+      <div class="cases__banner layout layout__content" v-if="!tagsList">
       <!-- tags -->
       <div class="cases-tags">
         <span class="cases__small-text">{{ $tr('By interest:') }}</span>
@@ -32,14 +33,16 @@
         </div>
       </div>
     </div>
+    </section>
 
-    <ul v-if="filteredCases.length > 0" class="layout blog_grid text-center cases__wrapper list-simple">
+    <section class="section-half">
+      <ul v-if="filteredCases.length > 0" class="layout blog_grid text-center cases__wrapper list-simple">
       <li class="cases__item" v-for="caseItem in filteredCases" :key="caseItem.id">
         <div class="post-card oldy post-card--case" :class="{ 'in-progress': !caseItem.done }">
           <a :href="caseItem.done ? '/' + caseItem.path + '/' : '/cases/'"
             aria-label="learn more about the case">
             <img v-if="caseItem.cover_image" alt={caseItem.title} class="post-card__image"
-              :src="`/images/cases/${caseItem.cover_image}`"
+              :src="`/pages/cases/${caseItem.cover_image}`"
               loading="lazy" />
           </a>
           <div class="post-card__content">
@@ -62,57 +65,105 @@
       </li>
     </ul>
 
-    <!-- Show more button -->
-    <button 
-      class="btn-show-more" 
-      @click="nextPage" 
-      v-if="!tagsArrayLength ? filteredCases.length !== cases.length : filteredCases.length !== tagsArrayLength"
-      :disabled="isLoading || noMorePosts">
-      <div v-if="isLoading" class="spinner"></div>
-      <span v-if="isLoading">Loading...</span>
-      <span v-else>{{$tr('Show more')}}</span>
-    </button>
+    <div class="text-center">
+      <button
+        @click="nextPage" 
+        v-if="!tagsArrayLength ? filteredCases.length !== cases.length : filteredCases.length !== tagsArrayLength"
+        :disabled="isLoading || noMorePosts">
+        <div v-if="isLoading" class="spinner"></div>
+        <span v-if="isLoading">Loading...</span>
+        <span v-else>{{$tr('Show more')}}</span>
+      </button>
+    </div>
+    </section>
+  
 
-  </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, computed } from 'vue';
 import { translateVue as $tr } from '../../assets/scripts/utils/translate';
 
-const props = defineProps({
-  items: {
-    type: Array,
-    default: []
-  },
-  tagsList: {
-    type: Boolean,
-    default: false
-  }
-})
+type CaseItem = {
+  id: number;
+  title: string;
+  description: string;
+  path: string;
+  cover_image?: string;
+  progress?: string;
+  created?: string;
+  updated?: string;
+  tags: string[];
+  done?: boolean;
+  [key: string]: unknown;
+};
+
+type CasesPayload = {
+  cases: CaseItem[];
+};
+
+const props = withDefaults(defineProps<{
+  items: CasesPayload | CaseItem[];
+  tagsList?: boolean;
+}>(), {
+  tagsList: false,
+});
 
 // Computed properties
-const cases = computed(() => !props.tagsList ? props.items.cases : props.items);
+const cases = computed<CaseItem[]>(() => {
+  if (Array.isArray(props.items)) {
+    return props.items;
+  }
+
+  return props.items.cases;
+});
 
 // Data variables using ref()
 const caseDate = ref('recent');
 const caseProgress = ref('any progress');
-const currTags = ref([]);
-const tags = ref(['All', ...new Set(cases.value.flatMap(item => item.tags.map(tag => tag.toLowerCase())))]);
+const currTags = ref<string[]>([]);
+const tags = ref(['All', ...new Set(cases.value.flatMap((item) => item.tags.map((tag) => tag.toLowerCase())))]);
 const currentPage = ref(1);
 const visible = ref(9);
 const showNext = ref(3);
-const tagsArrayLength = ref(null);
+const tagsArrayLength = ref<number | null>(null);
 const isLoading = ref(false);  // Loading state
 const noMorePosts = ref(false);  // To disable button if there are no more posts
 
-const filteredCases = computed(() => {
-  let filtered = [];
+const filterDate = (items: CaseItem[]) => {
+  return caseDate.value === 'recent'
+    ? items.sort((a, b) => new Date(b.updated ?? 0).getTime() - new Date(a.updated ?? 0).getTime())
+    : items.sort((a, b) => new Date(a.created ?? 0).getTime() - new Date(b.created ?? 0).getTime());
+};
+
+const filterProgress = (items: CaseItem[]) => {
+  if (caseProgress.value !== 'any progress') {
+    const first = items.filter((caseR) => caseR.progress && !caseR.progress.indexOf(caseProgress.value));
+    const last = items.filter((caseR) => caseR.progress && caseR.progress.indexOf(caseProgress.value));
+    return [...first, ...last];
+  }
+  return items;
+};
+
+const activateTag = (tag: string) => {
+  if (!currTags.value.includes(tag) && tag !== 'all') {
+    currTags.value.push(tag);
+  } else {
+    currTags.value = currTags.value.filter((t) => t !== tag);
+  }
+
+  if (tag === 'all') {
+    currTags.value = [];
+  }
+};
+
+const filteredCases = computed<CaseItem[]>(() => {
+  let filtered: CaseItem[] = [];
 
   // Filter cases based on the selected tags
   if (currTags.value.length) {
     cases.value.forEach((cs) => {
-      const caseContainsTag = (tag) => cs.tags.includes(tag);
+      const caseContainsTag = (tag: string) => cs.tags.includes(tag);
       if (currTags.value.some(caseContainsTag)) {
         filtered.push(cs);
       }
@@ -135,35 +186,7 @@ const filteredCases = computed(() => {
     : filtered.slice(0, showNext.value * (currentPage.value - 1) + visible.value);
 });
 
-// Methods
-function filterDate(cases) {
-  return caseDate.value === 'recent'
-    ? cases.sort((a, b) => new Date(b.updated) - new Date(a.updated))
-    : cases.sort((a, b) => new Date(a.created) - new Date(b.created));
-}
-
-function filterProgress(cases) {
-  if (caseProgress.value !== 'any progress') {
-    const first = cases.filter((caseR) => caseR.progress && !caseR.progress.indexOf(caseProgress.value));
-    const last = cases.filter((caseR) => caseR.progress && caseR.progress.indexOf(caseProgress.value));
-    return [...first, ...last];
-  }
-  return cases;
-}
-
-function activateTag(tag) {
-  if (!currTags.value.includes(tag) && tag !== 'all') {
-    currTags.value.push(tag);
-  } else {
-    currTags.value = currTags.value.filter((t) => t !== tag);
-  }
-
-  if (tag === 'all') {
-    currTags.value = [];
-  }
-}
-
-function nextPage() {
+const nextPage = () => {
   if (isLoading.value || noMorePosts.value) return;  // Prevent further clicks while loading or when no more posts are available
   
   isLoading.value = true;
@@ -177,13 +200,11 @@ function nextPage() {
     currentPage.value++;
     isLoading.value = false;
   }, 500); // Simulate a loading delay (adjust as necessary)
-}
+};
 </script>
 
 <style scoped>
 .cases__banner {
-  padding-top: calc(var(--space) * 2);
-  padding-bottom: calc(var(--space) * 2);
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -290,26 +311,6 @@ function nextPage() {
   background-size: 14px;
 }
 
-.btn-show-more {
-  position: relative;
-  padding: 20px 40px;
-  color: var(--color-blue);
-  background-color: transparent;
-  font-family: var(--font-family);
-  font-weight: 500;
-  text-transform: none;
-  box-shadow: none;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-
-.btn-show-more:hover {
-  background-color: transparent;
-  border: 1px solid transparent;
-  color: var(--color-blue);
-  opacity: 0.8;
-}
-
 .spinner {
   content: url("data:image/svg+xml,%3Csvg width='23' height='24' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_521_35981)'%3E%3Cpath d='M11.1638 6.36886L10.1333 7.89662C9.77071 8.43422 9.9011 9.15411 10.4251 9.50756C10.9491 9.86101 11.6654 9.71223 12.0281 9.17463L14.6504 5.2869C15.013 4.7493 14.8826 4.02941 14.3586 3.67596L10.5691 1.11994C10.0451 0.766485 9.32899 0.914957 8.96617 1.45286C8.60335 1.99077 8.73394 2.71035 9.25796 3.0638L10.7737 4.08621L9.89212 4.26932C5.50908 5.17967 2.60405 9.48655 3.40191 13.8915C4.19977 18.2964 8.39778 21.128 12.7808 20.2176C17.1639 19.3073 20.0689 15.0004 19.271 10.5955C19.1571 9.96621 18.5561 9.56084 17.9299 9.69089C17.3038 9.82094 16.8879 10.4375 17.0019 11.0668C17.5718 14.2131 15.4965 17.2899 12.3657 17.9402C9.23497 18.5904 6.23597 16.5676 5.66607 13.4212C5.09617 10.2748 7.17148 7.19806 10.3022 6.54781L11.1638 6.36886Z' fill='%232949D3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_521_35981'%3E%3Crect width='17' height='16' fill='white' transform='translate(0.114563 14.5737) rotate(-56)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
   position: absolute;
@@ -319,13 +320,6 @@ function nextPage() {
   height: 24px;
   animation: spin 2s linear infinite;
 }
-
-/* Button styles */
-.btn-show-more[disabled] {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
 
 /* case card */
 .post-card--case .post-card__description {

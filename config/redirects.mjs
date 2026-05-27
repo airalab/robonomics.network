@@ -17,11 +17,22 @@ const postsPerPage = 12;
  * }} options
  */
 export function createRedirectConfig({ locales, defaultLocale }) {
-  const localeCodes = Object.keys(locales).filter((code) => code !== defaultLocale).join("|");
-  // Match `/devices` without a trailing slash in dev before Astro returns 404.
-  const devicesNoSlashRe = localeCodes
-    ? new RegExp(`^/(${localeCodes})/devices$|^/devices$`)
-    : /^\/devices$/;
+  /**
+   * @param {string} location
+   */
+  const normalizeRedirectLocation = (location) => {
+    if (/^[a-z]+:\/\//i.test(location)) {
+      return location;
+    }
+
+    const lastSegment = location.split("/").pop() ?? "";
+    const looksLikeFile = lastSegment.includes(".");
+    if (location === "/" || location.endsWith("/") || looksLikeFile) {
+      return location;
+    }
+
+    return `${location}/`;
+  };
 
   // Collect blog slugs and tags so old `/blog/{locale}/...` URLs can be redirected.
   const blogPostSlugs = Object.fromEntries(
@@ -88,19 +99,38 @@ export function createRedirectConfig({ locales, defaultLocale }) {
     }
   }
 
-  /** @returns {import('vite').Plugin} */
-  function devicesNoSlashRedirectPlugin() {
+  /**
+   * Redirect slashless page requests in dev before Astro returns a 404.
+   * Keep file-like paths (`.png`, `.xml`, etc.) untouched.
+   *
+   * @returns {import('vite').Plugin}
+   */
+  function trailingSlashRedirectPlugin() {
     return {
-      name: "devices-no-slash-redirect",
+      name: "trailing-slash-redirect",
       enforce: "post",
       configureServer(server) {
         return () => {
           server.middlewares.stack.unshift({
             route: "",
             handle(req, res, next) {
-              const pathname = (req.url ?? "").split("?")[0];
-              if (devicesNoSlashRe.test(pathname)) {
-                res.writeHead(301, { Location: cyberpunksShop });
+              const url = req.url ?? "";
+              const [pathname, search = ""] = url.split("?");
+              const query = search ? `?${search}` : "";
+              const redirectTarget = redirects[pathname];
+
+              if (redirectTarget) {
+                res.writeHead(301, { Location: `${normalizeRedirectLocation(redirectTarget)}${query}` });
+                res.end();
+                return;
+              }
+
+              const lastSegment = pathname.split("/").pop() ?? "";
+              const looksLikeFile = lastSegment.includes(".");
+              const canAppendTrailingSlash = pathname !== "/" && !pathname.endsWith("/") && !looksLikeFile;
+
+              if (canAppendTrailingSlash) {
+                res.writeHead(301, { Location: `${pathname}/${query}` });
                 res.end();
                 return;
               }
@@ -114,6 +144,6 @@ export function createRedirectConfig({ locales, defaultLocale }) {
 
   return {
     redirects,
-    devicesNoSlashRedirectPlugin,
+    trailingSlashRedirectPlugin,
   };
 }

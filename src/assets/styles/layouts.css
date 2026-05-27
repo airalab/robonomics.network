@@ -3,15 +3,24 @@
   margin-bottom: calc(var(--space) * 3);
 }
 
+.section-half {
+	margin-top: calc(var(--space) * 1.5);
+	margin-bottom: calc(var(--space) * 1.5);
+}
+
 .section-align-right { text-align: right; }
 
 .section__solid {
 	background-color: var(--color-light);
 	padding-top: calc(var(--space)*2);
 	padding-bottom: calc(var(--space)*2);
-	margin-top: 0;
-	margin-bottom: 0;
 }
+
+.section__solid.section-half {
+	padding-top: var(--space);
+	padding-bottom: var(--space);
+}
+
 
 /* intro page */
 .section__solid.wide {
@@ -19,75 +28,44 @@
 	padding-bottom: calc(var(--space) * 4);
 }
 
-  .section__solid h1,
-  .section__solid h2,
-  .section__solid h3,
-  .section__solid h4,
-  .section__solid h5 {
-	margin-bottom: var(--space-text);
+.section__solid h1:first-child,
+  .section__solid h2:first-child,
+  .section__solid h3:first-child,
+  .section__solid h4:first-child,
+  .section__solid h5:first-child{
+	margin-top: 0;
 }
 
 /* index page */
-  .section__blue, 
-  .section__darkgray,
-  .section__darkpurple,
-  .section__gradient-purpleblue,
-  .section__lightblue, .section__lightblue .card.transparent,
-  .section__dotted_darkblue  {
-	  color: #fff;
-  }
-
-  .section__blue h1,
-  .section__darkgray h1,
-  .section__darkpurple h1,
-  .section__gradient-purpleblue h1,
-  .section__dotted_darkblue h1 {
-	color: #fff;
-	background: none;
-	-webkit-background-clip: unset;
-	-webkit-text-fill-color: unset;
-  }
-
   .section__blue {
-		background-color: var(--color-blue);
+    color: #fff;
+	background-color: var(--color-blue);
   }
 
-  .section__blue-lightest {
-	  background-color: var(--color-blue-lightest);
-  }
-  
-  .section__darkgray {
-		background-color: var(--color-darkgray);
-  }
-
-  .section__darkpurple {
-		background-color: var(--color-purple);
-  }
-
-  .section__gradient-purpleblue {
-		background: var(--color-gradient-purpleblue);
-  }
-
-  .section__lightblue {
-		background: var(--color-blue-mid);
-  }
-
-  .section__dotted {
-		background-color: var(--color-section-dotted);
-		background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><text x="20" y="20" font-size="20" fill="%23ccc">•</text></svg>');
-		background-size: 30px 30px;
-  }
-
-  .section__dotted_darkblue {
-		background-color: var(--color-purple);
-		background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><text x="20" y="20" font-size="20" fill="%23374275">•</text></svg>');
-		background-size: 50px 50px;
-  }
+	.section__blue h1 {
+		color: #fff;
+		background: none;
+		background-clip: unset;
+		-webkit-background-clip: unset;
+		-webkit-text-fill-color: unset;
+	}
 	
-	.section-vivid-green {
-		background: var(--rb-color-green-accent);
-    /* border-radius: 4px;
-    padding: var(--space); */
+	.section__green{
+		background: var(--color-green-accent);
+	}
+
+	.section__gray_light {
+		background-color: var(--color-gray-light);
+	}
+
+	.section__black {
+		background-color: var(--color-dark);
+		color: var(--color-light);
+	}
+
+	.section__black a:not(.button), .section__black a:not(.button):hover
+	{
+		color: inherit;
 	}
 
   section section:first-child, .section section:first-child {

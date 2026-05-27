@@ -1,0 +1,233 @@
+---
+title: 'Robonomics 生产阶段与生产代币经济学发布'
+date: 2026-05-22
+author: 'EnsRationis, Robonomics 软件架构师'
+published: true
+locale: 'zh'
+tags: ['Tokenomics', 'XRT', 'Robonomics', 'Production Stage', 'Polkadot']
+cover_image: /blog/images/production-stage-tokenomics-launch/cover.webp
+description: "经过 11 年的研发，Robonomics 正式进入生产阶段——这是首个围绕真实网络使用、配备实体消费设备的 web3 项目进入生产阶段。本文介绍了生产阶段的代币经济学：XRT 从研发链迁移、新的 510 万供应上限及其分配、所有死链资金的销毁、发行机制及预测。"
+abstract: "经过 11 年的研发，Robonomics 正式在 Polkadot 进入生产阶段。这是首个交付认证实体消费设备的 web3 项目，重点在于真实网络使用，而非代币。下文将介绍传统 XRT 如何迁移、哪些将被销毁，以及这对加密泡沫之外的意义。"
+---
+
+## 研发阶段 → 生产阶段
+
+经过 11 年的研发，Robonomics 正式进入生产阶段。这个里程碑的独特之处在于：我们是首个配备实体消费设备进入生产阶段的 web3 项目——其重点不在于代币，而在于为终端用户实际设备功能提供动力的真实网络使用。
+
+## 两大用例存活并持续增长
+
+自 2018 年在最初三年将机器人技术与 web3 结合研发后，我们打造了第一个原型，并探索了多个方向。我们最初的宏伟愿景——打造机器人经济网络——仍在研发中，且比以往任何时候都更接近实现。但要推出拥有 100+ 日常运营者或客户的生产级用例仍为时尚早。
+
+然而，自 2019 年以来我们所押注的两个方向——**开源硬件销售**和**智能家居集成**——已在真实客户中展现出强劲的实际吸引力。因此，我们决定将核心开发团队的注意力集中于此。
+
+## 为赛博朋克而生的硬件
+
+<RbImage zoom link="https://cyberpunks.shop/" src="/blog/images/production-stage-tokenomics-launch/cyberpunks-shop-homepage.webp" alt="cyberpunks.shop 首页 — 开源 web3 硬件商店，主打 Altruist 传感器" caption="cyberpunks.shop — Altruist 及其他开源 web3 硬件的销售地" />
+
+世界上首款 web3 硬件 —— **Altruist** —— 现已在我们的商店 <a href="https://cyberpunks.shop/" target="_blank" rel="noopener noreferrer"><strong>cyberpunks.shop</strong></a> 上架。
+
+目前，已有 100 多个传感器为运行在 web3 基础设施上的开放环境数据集做出贡献。你可以在 <a href="https://sensors.social/" target="_blank" rel="noopener noreferrer"><strong>sensors.social</strong></a> 的地图上查看所有数据。我们邀请你加入利他主义运动：购买一个传感器，安装在你的阳台上，开始贡献数据。或者选择 **Altruist Dual**，同时采集室内和室外数据。
+
+硬件销售要求 Robonomics 进入生产阶段——这对整个社区来说是一个重大事件。因为普通人将会在日常生活中订购并使用我们的传感器，项目已无法停留在研发阶段。因此，我们将以首款经过充分测试、完全认证的终端用户设备进入生产阶段。这是迈向为赛博朋克打造开源智能设备品牌的又一大步。
+
+接下来是亚马逊欧洲站。在完成欧洲零售认证后的两个月准备期后，我们的亚马逊卖家账户刚刚通过验证——因此在接下来的几周内，Altruist 将与 <a href="https://cyberpunks.shop/" target="_blank" rel="noopener noreferrer">cyberpunks.shop</a> 一同登陆欧洲各地的亚马逊平台。
+
+<RbImage zoom src="/blog/images/production-stage-tokenomics-launch/amazon-seller-verified.webp" alt="亚马逊卖家账户验证通知：“您的信息已验证——现在开始在亚马逊销售”" caption="亚马逊卖家验证刚刚确认——Altruist 即将在几周内登陆亚马逊欧洲站。" />
+
+## 智能家居解决方案
+
+在塞浦路斯，核心开发团队的一个分支正在为 Robonomics 平台开发智能家居应用场景。过去两年里，他们已在 4 栋住宅楼完成部署，目前为 100 多户公寓和家庭定期提供服务与支持。
+
+2026 年初，首批安装了这些系统的住宅小区正式投入使用 to end — 并且它们也是我们在 Robonomics 上构建的隐私保护远程监控技术栈的首次真实世界测试平台。请参阅 Pinout 团队在 <a href="https://x.com/pinoutcloud/status/2044745661979955303" target="_blank" rel="noopener noreferrer">X 上的帖子</a>，了解此次部署。
+
+<RbImage zoom style="max-width: 50%" src="/blog/images/production-stage-tokenomics-launch/pinout-cyprus-rollout-tweet.webp" alt="Pinout (@pinoutcloud) 在 X 上发布的推文，宣布在塞浦路斯两个住宅小区的 50 套公寓中交付智能家居" caption="Residence 28（利马索尔，CCS Stylianides Group）和 Qube Residences（帕福斯，INEX Group）共 50 套公寓，交付时间为 2025 年第三季度至 2026 年第一季度——完全本地化的 Home Assistant，Zigbee 3.0，无云端锁定。来源：@pinoutcloud 于 X。" />
+
+在过去两个月里，我们的智能家居工程师构建了解决方案，通过 Robonomics 在 Polkadot 上将公寓远程连接到 AI 支持代理。诸如自动触发的客户支持错误报告等功能，也要求 Robonomics 达到生产阶段——就像我们的第一款智能设备一样。
+
+## 开源，本心不改
+
+<RbImage zoom src="/blog/images/production-stage-tokenomics-launch/robonomics.network-digital-freedom-16-9.webp" alt="赛博朋克阁楼场景——黑客的房间，夜晚，墙上发光的‘自由抵抗’涂鸦，屏幕亮起，一人伸手向光" />
+
+Robonomics 始终保持开源——不仅仅是许可证意义上的。这个项目不属于任何一家公司；它不是任何人的私人知识产权。团队所构建的一切都与全人类共享，任何人都可以自由学习、运行和基于此进行开发。
+
+我们这些创造者会继续在自有产品中使用我们所构建的内容——销售开源硬件，部署智能家居，并随着时间推移，在 Robonomics 之上发展 <a href="https://x.com/EnsRationis/status/1915043484421046348" target="_blank" rel="noopener noreferrer">Robocorporation</a>——同时也会持续助力网络本身的成熟。我们拒绝将其变成封闭的企业工具——network 是一种公共产品，并且将一直保持如此。
+
+---
+
+## 如果网络不是关于代币的，那为什么需要 XRT？
+
+<RbImage zoom src="/blog/images/production-stage-tokenomics-launch/remote-cloud-access.webp" alt="Mockup — a laptop screen running the Robonomics dashboard with live Home Assistant Core, Altruist sensor readings, and IPFS / libp2p status, next to a phone screen showing the XRT cloud-subscription renewal UI on the Polkadot network." caption="激活 XRT 订阅后，用户可以通过点对点 web3 基础设施，从世界任何地方远程访问他们的智能家居、智能设备——未来还包括机器人——无需中心化企业云的参与。" />
+
+如果真正的用途才是重点，那代币到底是做什么用的？XRT 是用户支付云服务费用的媒介——与微软、IBM 和 AWS 数据中心提供的云服务同属一类，只不过是在 Robonomics 平台上交付，并在 Polkadot 上实现。
+
+生产用的 XRT 仅存在于 Polkadot 上——这是网络和所有云订阅实际运行所依赖的代币。在以太坊上交易的 XRT，是通过 <a href="https://app.snowbridge.network/send" target="_blank" rel="noopener noreferrer">Snowbridge</a> 桥接的 Polkadot 生产 XRT 本身：以 1:1 的比例与 Polkadot 代币铸造，仅在以太坊上用于为 Uniswap（全球主要的 DEX）提供和维持流动性。
+
+与任何企业云一样，Robonomics 允许设备存储其数字孪生体，维护其用户和访问列表，并运行标准云功能——远程启动设备、收集遥测数据，并将这些数据存储在云端。要实现这些功能，设备需要云订阅——而该订阅以 XRT 支付。
+
+我们的云旨在比传统企业云更便宜，并且更适合全球规模的应用。
+
+## 公平的订阅定价需要独立交易者
+
+由于订阅是用 XRT 支付的，XRT 的价格*就是*云服务的价格。这个价格不应由核心团队决定——它必须在公开市场上发现。
+
+这正是独立 XRT 交易者至关重要的原因。通过自由买卖，他们保持了代币价格的公正——也让每个 Robonomics 云订阅的实际成本保持真实设备所有者。没有交易者，就没有公平价格。
+
+因此，XRT 持有者的主要工作不仅仅是持有——而是进行交易。作为 XRT 的独立商人，在市场上挂出真实订单，这正是持有者为网络服务的方式。
+
+为了让这一切从第一天就成为可能，开发者们亲自注入了第一批流动性。你可以作为生产代币的首批交易者之一支持本次上线——在其开盘的**$0.5–$2 价格区间**内买入开发者注入的流动性——这是一个有意设定的启动入场区间，低于本帖后文用于估值的约 $2.20 参考价。以太坊上的生产阶段 XRT 智能合约：<a href="https://etherscan.io/token/0x1F752250f518e419f2F03804E25728c5C6DfF73f" target="_blank" rel="noopener noreferrer">0x1F752250f518e419f2F03804E25728c5C6DfF73f</a>。
+
+<RbImage zoom style="max-width: 60%" src="/blog/images/production-stage-tokenomics-launch/subscription-activated.webp" alt="Robonomics 云订阅在 Polkadot 上激活的界面——账户 Ens-Snail-On-The-slope，网络 Polkadot，当前订阅有效期至 2026.06.24，余额 4999.4175 XRT，订阅价格 1 XRT，激活时间约 2 分钟，29 个可用订阅，绿色‘SUBSCRIPTION ACTIVATED’确认。" caption="一个真实的 Robonomics 云订阅，在 Polkadot 上以 1 XRT 激活——每位设备所有者支付的价格，就是 XRT 交易者在公开市场上设定的价格。" />
+
+## XRT 从研发阶段迁移到 Polkadot 生产链
+
+<RbImage zoom src="/blog/images/production-stage-tokenomics-launch/robonomics-evolution.webp" alt="Robonomics 11 年演进——AIRA（2015，研发阶段 1），Robonomics（2021，研发阶段 2），生产（2026）" caption="Robonomics 11 年演进——从 AIRA 研发到生产阶段" />
+
+**当前总供应量由两个快照（ETH & Kusama）得出：约 2,700k X---
+locale: zh
+related: []
+---
+
+RT**
+
+### 两种选择
+
+**选项一 — 开发者回购计划。** 在接下来的12–36个月内，每1个XRT可获得2.20 USDT，并获得NFT成就：“Robonomics研发支持者”。
+
+**选项二 — 迁移到生产阶段XRT。** 获得“Robonomics生产建设者”NFT，并在每次兑换时获得最多+20%的额外XRT奖励。
+
+**时间安排 — 各方可操作的时间。**
+- **以太坊持有者。** 旧版XRT合约的余额快照将于**下周**发布；从该快照起，两种选项均可开放。
+- **Kusama持有者。** 在Kusama平行链关闭后**立即**开放两种选项（大约从现在起1个月内）。
+
+在两种情况下，生产阶段XRT（选项二）必须在**12个月**内激活——未激活的部分将作为“幽灵代币”被销毁（见下文*全部销毁*）。
+
+---
+
+## 全部销毁
+
+三次销毁中的两次**已经完成**。在开放迁移之前，开发团队已清理其控制的部分：
+
+- **Kusama金库 — 已销毁。** Robonomics Kusama金库已全部销毁。
+- **开发者DAO余额 — 已排除。** 以太坊生产迁移的余额快照已将开发者DAO地址移除；这些余额不会迁移。
+
+因此，只有**持有者代币**从研发阶段进入生产阶段——核心团队不会将自己的旧代币带入生产阶段。
+
+第三次销毁将在之后进行：
+
+- **幽灵代币。** 任何持有者在12个月迁移窗口内未激活的生产阶段XRT都将被销毁。
+
+### 如果错过了12个月窗口怎么办？
+
+不一定丢失——但需要链上治理，而不是沉默。如果持有者错过了激活窗口，可以凭原研发阶段XRT的链上所有权证明，将情况提交给Robonomics生产阶段治理。生产阶段XRT持有者社区随后可以投票恢复该余额。
+
+实际上，这种情况只会适用于极少数人。设立12个月窗口的目的就是划清界限——我们不希望默认将十年的历史遗留代币带入生产阶段。但对于真正的个别特殊情况，链上民主是解决之道；正是它存在的意义。
+
+## Robonomics 代币供应 2026–2028
+
+| 分配 | 数量 (XRT) | 占供应比例 | 解锁 / 归属 | 用途 |
+|---|---:|---:|---|---|
+| R&D 阶段的 XRT（ETH & Kusama） | 2,700,000 | 52.9% | 迁移时释放（12个月窗口） | 将遗留供应桥接到生产链 |
+| DAO Snail on the slope | 1,000,000 | 19.6% | 180天悬崖，3年线性释放 | 项目核心团队 DAO |
+| 迁移奖励 | 500,000 | 9.8% | 兑换时支付 +20% 奖励 | 鼓励迁移而非回购 |
+| 存在自主性 | 500,000 | 9.8% | 90天悬崖，3年线性释放 | 核心租赁、DevOps 基础设施、开发者资助 |
+| GameStop 流动性锁定 | 250,000 | 4.9% | 永久锁定于 $4.20 / $6.90 / $10 | 为社区提供永久底部流动性 |
+| 市场启动资金 | 150,000 | 2.9% | 第 0 天起生效 | Uniswap V4 启动流动性 |
+| **总上限** | **5,100,000** | **100%** | — | — |
+
+**年度发行量：** 每年最多 **25,000 XRT** 用于验证人奖励。未来 Town Hall 会议可重新计算。
+
+**FDV 参考 @ ~$2.20（2025 年均价）：** 5.1M × $2.20 ≈ **~$11.2M**
+
+<RbImage zoom src="/blog/images/production-stage-tokenomics-launch/tokenomics-infographic.webp" alt="Robonomics 生产阶段代币经济学信息图" caption="Robonomics 生产阶段代币经济学 — 全面概览" />
+
+## 预测
+
+开发者希望在 Robonomics 之上构建一个 Robocorporation，作为 web3 与硬件业务交汇的下一步。如果我们成功了，据我更为接近的估算，网络将会出现：
+
+- 前几年每年**销毁约 5% 的供应量**
+- 理论上的通缩上限可达到**每年数十个百分点**——完全由网络上的用户激活驱动
+
+## 市场参考
+
+以2025年XRT/USD平均价格为参考估值（2025年图表的时间加权估算，区间$0.90 — $5.50）：
+
+<RbImage zoom src="/blog/images/production-stage-tokenomics-launch/xrt-price-2025.webp" alt="2025年XRT兑美元价格走势图" caption="2025年XRT/USD价格（区间$0.90 – $5.50）" />
+
+- **2025年平均价格：** 约$2.20每XRT
+- **新总供应量：** 510万XRT（生产阶段上限，所有分配）
+- **完全稀释价值：** 约$1120万（510万 × 约$2.20）
+- **情景区间：** $460万（年内最低约$0.90）— $2800万（年内最高约$5.50）
+
+## 2026年市政厅
+
+2026年市政厅议程：
+
+- 设定验证人奖励
+- 设定每月总订阅金额
+- 设定订阅的起始/底价
+- 设定RWS总带宽
+
+### 验证人奖励——当前提案
+
+验证人通过收集物联网设备交易并为Polkadot验证人生成状态转换证明，来维护Robonomics应用（平行链）。为了激励其运营者，需定期重新校准每区块的验证人奖励——既要覆盖运行参考节点的成本并有约30%的利润空间，支持所需的最小活跃验证人数，还要反映当前（或最低期望）XRT价格。
+
+本周期DevOps输入为：OVH专用硬件（AMD Epyc 4345P，64GB内存，2×960GB NVMe——RAID0下当前约1.1TB数据库剩余约800GB），年费用约$2,040，最少7名验证人，XRT价格$1，约每年450万平行链区块（平均区块时间约7秒）。建议奖励：**每区块0.0042 XRT。**
+
+该方案针对早期生产阶段进行了校准。随着网络使用量和XRT价格的增长，能够从运行Robonomics验证人节点中获益的运营者群体应会自然扩大。目前，目标很简单，就是让一小部分服务提供者有真正的理由去维持网络的活力。
+
+### 总订阅上限——理论与实践之间
+
+从理论上讲，Polkadot 平行链的吞吐上限已经很高——远超网络未来数年所需的订阅量。实际上，我们希望谨慎地接近这些理论极限，而不是一跃而上。
+
+与此同时，可用订阅总数直接决定了 Robonomics 云在 Polkadot 上的财务模型——每一份发放的订阅都是链上的持续收入，而上限决定了这部分收入的增长空间。因此，这一参数的重要性不容忽视，不能悄然定下。
+
+在接下来的几年里，实际发放的订阅数量将公开讨论，活跃订阅的上限将通过代币持有者治理来设定——一场又一场的 Town Hall 会议。等到我们在真实网络中看到一个稳定的实际上限出现时，这一参数或许最终会从投票事项中移除。
+
+### 订阅起始价格——财务模型的另一面
+
+活跃订阅上限只是问题的一半，起始价格则是另一半。价格必须诚实地反映市场——不能低到低估 Robonomics 云的实际价值，也不能高到失去我们刚刚承诺的“比企业更便宜、全球规模”的定位。
+
+在 Town Hall 会议上，我会把建议的最低价格计算方式摆到台面上，供社区讨论和决定。
+
+### RWS 带宽——未被搁置，只是节奏放缓
+
+如果有人认为 RWS 代币已经被悄悄搁置——其实没有。RWS 依然在规划之中；它只是 Robonomics 内部一个有意限制的细分服务，面向的是一小部分会逐步出现的特定用户群体，而不是一开始就大规模上线。
+
+将 RWS 推进到生产网络，首先取决于重新计算 Robonomics 为其分配的平行链总带宽。最近的 Polkadot 基准测试结果令人鼓舞——它们表明我们很可能能为每 100 个 RWS 代币分配比以前更多的带宽。具体数值将由 Town Hall 决定。
+
+---
+
+## 致交易所与追踪平台的说明
+
+为避免任何歧义，以下是 XRT 在生产阶段各网络的分布情况：
+
+| 网络 | 角色 | 位置 | 状态及备注 |
+|---|---|---|---|
+| **Polkadot** | 生产 XRT — **主网** | Polkadot 上的 Robonomics 平行链 | 活跃。该网络及所有云订阅均运行在此代币上。 |
+| **以太坊（新）** | 跨链 Polkadot XRT — 用于 Uniswap 流动性 | <a href="https://etherscan.io/token/0x1F752250f518e419f2F03804E25728c5C6DfF73f" target="_blank" rel="noopener noreferrer">Etherscan 上的 0x1F75…73f</a> | 活跃。通过 Snowbridge 从 Polkadot 主网 XRT 1:1 跨链 — 专用于为全球主流 DEX Uniswap 提供流动性。 |
+| **以太坊（旧）** | 研发阶段 XRT — **已弃用** | <a href="https://etherscan.io/token/0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7" target="_blank" rel="noopener noreferrer">Etherscan 上的 0x7dE9…1cb7</a> | 待迁移。余额快照将于下周公布。 |
+| **Kusama** | 研发阶段 XRT — **已弃用** | Robonomics Kusama 平行链 | 待迁移。将在 Kusama 平行链关闭后立即进行（约 1 个月后）。 |
+
+新的以太坊 XRT 仅通过 Snowbridge 与 Polkadot 主网 XRT 跨链 — 此新合约与旧版以太坊 XRT 或 Kusama XRT 之间没有桥接。
+
+**链上实时状态。** 获取 Polkadot 上 Robonomics 的最新活动 — 区块、余额、治理提案、验证人状态 — 请使用标准的 Polkadot Apps 浏览器：<a href="https://polkadot.js.org/apps/#/explorer" target="_blank" rel="noopener noreferrer">polkadot.js.org/apps</a>（将浏览器指向 Robonomics 平行链端点以查看 Robonomics 数据）。
+
+<RbImage zoom src="/blog/images/production-stage-tokenomics-launch/polkadot-apps-robonomics-explorer.webp" alt="Polkadot Apps 浏览器已连接至 Polkadot 上的 Robonomics 平行链 — 最近区块列表、最新事件和实时 network stats" caption="Polkadot Apps 探索器已连接到 Robonomics 平行链 —— 实时区块、余额、事件以及提名人/验证人状态。" />
+
+**迁移时间表。** 以太坊余额快照将于下周发布，用于迁移到生产环境 XRT。Kusama 端的迁移将在 Kusama 平行链关闭后立即进行（一个月内完成）。
+
+**CoinGecko &amp; CoinMarketCap。** 请将以太坊的 XRT 代币信息更新为追踪新的 Polkadot 跨链桥接合约 — <a href="https://etherscan.io/token/0x1F752250f518e419f2F03804E25728c5C6DfF73f" target="_blank" rel="noopener noreferrer">0x1F752250f518e419f2F03804E25728c5C6DfF73f</a> — 并将旧合约标记为已弃用。
+
+**Kraken。** 一旦 Kusama 平行链关闭（一个月内），请准备下架 XRT。关闭后，XRT 仅可在 DEX 上交易 —— 仅限 Uniswap。
+
+## 为什么这很重要
+
+<RbImage zoom src="/blog/images/production-stage-tokenomics-launch/cyberpunks-hardware-vignette.webp" alt="一个安静的傍晚场景 —— 前景是冥想角落，阳光照射的墙上有 CYBERPUNKS HARDWARE 标志，树式瑜伽姿势的人影投射其上" />
+
+坦率地说，这一切的发生，正是自比特币诞生以来，所有老玩家一直默默等待的事情 —— 我自己也在其中：基于比特币所开创技术构建的产品，终于成长为现实世界中服务于人类自由的自觉、实用工具 —— 恰逢企业不断剥夺普通人数字权利的当下。
+
+对我而言，Robonomics 是当今世界上唯一真正达到这一阶段的 web3 项目。而我们如此努力推动真正的生产网络，唯一的原因也正是如此 —— 为现实世界中的真实用户提供真实服务，跳出加密泡沫。
+
+*—— EnsRationis，Robonomics 平台创始人 &amp; 软件架构师*
+
+*关注 <a href="https://x.com/AIRA_Robonomics" target="_blank" rel="noopener noreferrer">@AIRA_Robonomics</a>*a> 在 X 上关注 Robonomics 团队的最新动态。*
