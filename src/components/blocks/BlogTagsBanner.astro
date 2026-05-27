@@ -8,9 +8,12 @@ const allPosts = await getCollection('blog');
 const tags = [
   ...new Set(
     allPosts
-      .filter((post: any) => post.data.locale === languageTag()) // Filter valid posts
-      .flatMap((post: any) => post.data.tags) // Flatten the tags array
-      .map((tag: string) => tag.toLowerCase()) // Convert to lowercase
+      .filter((post: any) => post.data.locale === languageTag())
+      .flatMap((post: any) =>
+        (Array.isArray(post.data.tags) ? post.data.tags : [])
+          .filter((tag): tag is string => typeof tag === 'string' && tag.trim().length > 0)
+          .map((tag) => tag.toLowerCase()),
+      ),
   ),
 ]
 

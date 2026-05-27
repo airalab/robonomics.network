@@ -8,22 +8,21 @@ import { getCollection } from 'astro:content';
 import { languageTag } from '../../../paraglide/runtime';
 
 
-// data
 export async function getStaticPaths() {
+  const normalizeTags = (tags: unknown) =>
+    (Array.isArray(tags) ? tags : [])
+      .filter((tag): tag is string => typeof tag === 'string' && tag.trim().length > 0)
+      .map((tag) => tag.toLowerCase());
+
   const allPosts = await getCollection('blog'); 
 
   const uniqueTags = [
-    ...new Set(
-      allPosts
-        .map((post: any) => post.data.tags)
-        .flat()
-        .map((tag: string) => tag.toLowerCase()) // Convert each tag to lowercase
-    ),
+    ...new Set(allPosts.flatMap((post: any) => normalizeTags(post.data.tags))),
   ];
 
   return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter((post: any) =>
-      post.data.tags.map((t: string) => t.toLowerCase()).includes(tag.toLowerCase())
+      normalizeTags(post.data.tags).includes(tag)
     );
     return {
       params: { tag },
@@ -74,7 +73,16 @@ getAllPosts();
   <BlogTagsBanner activeTag={tag}/>
 
   <section class="layout blog_grid">
-    {allPosts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date)).map((post: any) => <PostCard post={{...post.data, url: !post.id.includes(`${languageTag()}/`) ? post.id : post.id.split('/')[1]}}/>)}
+    {allPosts
+      .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+      .map((post: any) => (
+        <PostCard
+          post={{
+            ...post.data,
+            url: !post.id.includes(`${languageTag()}/`) ? post.id : post.id.split('/')[1],
+          }}
+        />
+      ))}
   </section>
 
 </Layout>

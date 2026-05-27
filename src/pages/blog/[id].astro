@@ -52,17 +52,19 @@ const dateOptions: Intl.DateTimeFormatOptions = {
       {post.data.author && (<div >By {post.data.author}</div>)}
       <div>
         {post.data.date && (<span>{new Date(post.data.date).toLocaleDateString('en-US', dateOptions)}</span>)}
-        {post.data.tags.length > 0 && (
+        {Array.isArray(post.data.tags) && post.data.tags.length > 0 && (
           <span> in
-            {post.data.tags.map((tag, index) => (
+            {post.data.tags
+              .filter((tag): tag is string => typeof tag === 'string' && tag.trim().length > 0)
+              .map((tag, index, tags) => (
               <>
                 <a href={`/blog/tags/${tag.toLowerCase()}/`}>{ tag }</a>
-                {index + 1 !== post.data.tags.length && (<span class="tagdivide">,</span>)}
+                {index + 1 !== tags.length && (<span class="tagdivide">,</span>)}
               </>
             ))}
           </span>
         )} 
-        {(post.data.date || post.data.tags.length > 0) && (<span>/</span>)}
+        {(post.data.date || (Array.isArray(post.data.tags) && post.data.tags.length > 0)) && (<span>/</span>)}
         <a href="/blog/" aria-label="check all posts"><b>All posts</b></a>
       </div>
       {post.data.depricated && (<p class="text-color-red"><b>{$tr('This content is deprecated')}</b></p>)}
