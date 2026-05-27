@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    concurrency:
+      group: gh-pages-deploy
+      cancel-in-progress: false
 
     strategy:
       matrix:
@@ -43,3 +46,4 @@ jobs:
           publish_dir: ./dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
           cname: robonomics.network
+          force_orphan: true
