@@ -5,9 +5,11 @@ const {
   block = false,
   buttonstyle = '3d',
   buttoncolor = 'blue',
+  type = 'primary',
   link,
   scale = '1',
   disabled = false,
+  loading = false,
   extraCls = '',
   radius = false,
   noTarget =  false,
@@ -17,9 +19,11 @@ const {
 // Generate the CSS classes based on the props
 const classes = [
   'rb-button',
+  loading && 'rb-button-loading',
   block && 'rb-button-block',
   buttonstyle && `rb-button-${buttonstyle}`,
   buttoncolor && `rb-button-${buttoncolor}`,
+  type && `rb-button-${type}`,
   radius && `rb-button-radius`,
   extraCls
 ].filter(Boolean).join(' ');
@@ -39,7 +43,10 @@ const smoothScroll = anchor ? { updateHistory: false, offset: -250 } : null;
     smooth-scroll={JSON.stringify(smoothScroll)}
     onclick={attrs.onClick}
     target={!noTarget ? "_blank" : "_self"} 
+    aria-busy={loading ? 'true' : undefined}
+    aria-disabled={disabled || loading ? 'true' : undefined}
   >
+    {loading && <span class="rb-button__spinner" aria-hidden="true" />}
     <slot />
   </a>
 ) : (
@@ -49,14 +56,15 @@ const smoothScroll = anchor ? { updateHistory: false, offset: -250 } : null;
     style={`transform: scale(${scale});`}
     smooth-scroll={JSON.stringify(smoothScroll)}
     onclick={attrs.onClick}
-    disabled={disabled}
+    disabled={disabled || loading}
+    aria-busy={loading ? 'true' : undefined}
   >
+    {loading && <span class="rb-button__spinner" aria-hidden="true" />}
     <slot />
   </button>
 )}
 
-<style>
-
+<style is:global>
   .rb-button {
     --b-color-background: var(--color-blue);
     --b-color-text: var(--color-light);
@@ -86,10 +94,18 @@ const smoothScroll = anchor ? { updateHistory: false, offset: -250 } : null;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out,
+      color 0.3s ease-in-out;
   }
 
-  .rb-button:hover {
+  a.rb-button,
+  button.rb-button {
+    color: var(--b-color-text);
+  }
+
+  .rb-button:hover,
+  a.rb-button:hover,
+  button.rb-button:hover {
     background-color: color-mix(in srgb, var(--b-color-background) 85%, black);
     border-color: color-mix(in srgb, var(--b-color-background) 85%, black);
     color: var(--b-color-hover);
@@ -105,12 +121,50 @@ const smoothScroll = anchor ? { updateHistory: false, offset: -250 } : null;
     --b-color-background: var(--color-gray);
   }
 
-  .rb-button-block{
+  .rb-button-loading {
+    pointer-events: none;
+  }
+
+  .rb-button__spinner {
+    width: 1em;
+    height: 1em;
+    border: 2px solid color-mix(in srgb, var(--b-color-text) 35%, transparent);
+    border-top-color: var(--b-color-text);
+    border-radius: 50%;
+    display: inline-block;
+    animation: rb-button-spin 0.8s linear infinite;
+  }
+
+  @keyframes rb-button-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .rb-button-block {
     display: block;
     width: 100%;
   }
 
   .rb-button-radius {
     border-radius: 6px;
+  }
+
+  .rb-button-ok {
+    --b-color-background: var(--color-green);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .rb-button-error {
+    --b-color-background: var(--color-red);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .rb-button-na {
+    --b-color-background: var(--color-gray);
+    cursor: default;
+    pointer-events: none;
   }
 </style>

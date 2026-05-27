@@ -2,6 +2,7 @@
 // components
 import Layout from '../layouts/Layout.astro'
 import ContactForm from '../components/blocks/ContactForm.vue';
+import RbButton from '../components/utils/RbButton.astro';
 
 const contactIntroText = `
   <p>${await $tr('If you are seeking technical collaboration involving smart devices or decentralized network infrastructure, feel free to ask any questions about Robonomics technologies, whether theoretical or practical.')}</p>
@@ -23,6 +24,10 @@ const contactIntroText = `
     </div>
   </div>
 </section>
+
+<div hidden aria-hidden="true">
+  <RbButton tabindex="-1" />
+</div>
 
 
 </Layout>

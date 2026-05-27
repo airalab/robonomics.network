@@ -1,22 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import RbButton from '../components/RbButton.astro';
-import ShopHeroFeatures from '../components/blocks/ShopHeroFeatures.astro';
 import VideoGallery from '../components/blocks/VideoGallery.astro';
+import RbButton from '../components/utils/RbButton.astro';
 
 // videos
 const videos = [
-  '/video/home-1.mp4',
-  '/video/shop-1.mp4',
-  '/video/shop-2.mp4',
-  '/video/shop-3.mp4',
+  '/pages/for-personal-usage/home-1.mp4',
+  '/pages/for-personal-usage/shop-1.mp4',
+  '/pages/for-personal-usage/shop-2.mp4',
+  '/pages/for-personal-usage/shop-3.mp4',
 ];
 
 const previews = [
-  '/video/preview/home-preview-1.webp',
-  '/video/preview/shop-preview-1.webp',
-  '/video/preview/shop-preview-2.webp',
-  '/video/preview/shop-preview-3.webp',
+  '/pages/for-personal-usage/home-preview-1.webp',
+  '/pages/for-personal-usage/shop-preview-1.webp',
+  '/pages/for-personal-usage/shop-preview-2.webp',
+  '/pages/for-personal-usage/shop-preview-3.webp',
 ];
 
 ---
@@ -30,59 +29,109 @@ const previews = [
 
   <VideoGallery small videos={videos} previews={previews} alt="For personal usage video example" cls="mb"/>
 
-  <ShopHeroFeatures cls="mb" />
+  <section class="layout layout__content text-center text-bold">
+    {$tr('We build open-source hardware without required subscriptions, forcing you to connect to corporate clouds, doesn’t spy on you, and never sells your data to Google’s partner network. Your future and digital freedom is in your hands.')}
+  </section>
 
-  <section class="cyberpunk-art section-vivid-green">
-    <div class="layout">
-      <h2>{$tr('CYBERPUNK ART')}</h2>
-      <p>{$tr('We also have cool cyberpunk-style (and not only) desktop wallpapers')}</p>
-
-    <RbButton 
-      href='/wallpapers/' 
-      block
-      buttoncolor="blue"
-      buttonstyle="flat"
-      radius
-      extraCls="cyberpunk-art-btn"
-      noTarget={true}
-    >
-      {$tr('Get wallpapers')}
-    </RbButton>
+  <section class="shop section">
+    <div class="bg">
+      <img aria-hidden="true" src="/pages/for-personal-usage/cyberpunks-shop-bg.webp" />
     </div>
+
+    <div class="icons">
+      <img alt="{$tr('NO vendor cloud, NO personal data tracking, NO mandatory subscription, Fully open-source, Privacy by design, Globally accessible')}" src="/pages/for-personal-usage/cyberpunks-shop-icons.webp" />
+    </div>
+
+    <div class="button-wrap">
+      <RbButton
+          href="https://cyberpunks.shop"
+          buttoncolor="blue"
+          buttonstyle="flat"
+          radius
+          extraCls="shop-cta"
+        >
+          {$tr('Go to cyberpunks.shop')}
+      </RbButton>
+    </div>
+  </section>
+
+
+  <section class="layout layout__text text-center">
+    <p>{$tr('We have built an air-quality map powered by independent sensors. Join a decentralized open-source sensor network created to serve individuals and communities — not advertisers, corporations, or hidden beneficiaries.')}</p>
+    <p>{$tr('The platform offers two layers of decentralization of your choice: direct peer-to-peer connectivity for access to live sensor data, and a federated network for aggregating environmental measurements and visualizing historical data over time.')}</p>
+    <a href="https://sensors.social/" class="text-bold" target="_blank">{$tr('Open the map')}</a>
+  </section>
+
+  <section class="section layout layout__mid text-center">
+    <a href="https://sensors.social/" class="text-bold" target="_blank">
+      <img alt="sensors.social - {$tr('Open the map')}" src="/pages/for-personal-usage/sensors-social.webp" />
+    </a>
   </section>
 </Layout>
 
 <style>
-
- h1 {
-    padding-top: calc(var(--space) * 2);
-    margin: 0;
-    margin-bottom: calc(var(--space) * 2);
+  .shop {
+    position: relative;
   }
 
-  h2 {
-    margin-top: 0;
-    margin-bottom: calc(var(--space) * 0.5);
-  }
-
-
-  p {
-    margin-bottom: calc(var(--space) * 1.5);
-  }
-
-  .grid-3 {
-    margin-bottom: var(--space);
-  }
-
-  .cyberpunk-art {
-    padding: var(--space);
+  .icons {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
-  .cyberpunk-art-btn {
-    max-width: 645px;
-    margin: 0 auto;
+  .icons img {
+    display: block;
+    max-width: 785px;
+    margin-top: -10rem;
+    margin-bottom: calc(var(--space) * 2);
   }
 
+  .button-wrap {
+    position: absolute;
+    bottom: calc(var(--space)*2);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+  }
 
+  @media screen and (width < 1050px) {
+    .icons img {
+      width: 80vw;
+      max-width: 100%;
+      margin-top: -3rem;
+    }
+  }
+
+  /* @media screen and (width < 870px) {
+    .icons img {
+      width: 50vw;
+    }
+
+    .button-wrap {
+      bottom: var(--space);
+    }
+  } */
+
+  @media screen and (width < 550px) {
+    /* .icons img {
+      display: none;
+    } */
+
+    .bg {
+      overflow: hidden;
+    }
+
+    .bg img {
+      max-width: 200vw;
+      margin-left: calc(50% - 100vw);
+    }
+  }
 </style>

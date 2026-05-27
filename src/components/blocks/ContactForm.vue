@@ -105,13 +105,21 @@
       :data-gsp-data="tags.toString()"
     />
 
-    <RoboButton
-      class="block"
-      :loading="status === 'process'"
-      :type="buttontype"
+    <button
+      type="submit"
+      :class="[
+        'rb-button',
+        'rb-button-block',
+        'rb-button-radius',
+        buttontype && `rb-button-${buttontype}`,
+        status === 'process' && 'rb-button-loading',
+      ]"
+      :disabled="status === 'process' || buttontype !== 'primary'"
+      :aria-busy="status === 'process' ? 'true' : undefined"
     >
+      <span v-if="status === 'process'" class="rb-button__spinner" aria-hidden="true" />
       {{ buttontext }}
-    </RoboButton>
+    </button>
 
     <span class="text-small error" v-if="errorMessage">{{ errorMessage }}</span>
   </gsp-form>
@@ -121,7 +129,6 @@
 import { ref, computed, defineAsyncComponent, onMounted } from "vue";
 import { translateVue as $tr } from "../../assets/scripts/utils/translate";
 
-import RoboButton from "../utils/Button.vue";
 const GspForm = defineAsyncComponent(() => import("../utils/Form.vue"));
 
 const name = ref("");

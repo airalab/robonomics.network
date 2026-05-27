@@ -52,7 +52,7 @@ export default defineConfig({
   },
   integrations: [AutoImport({
     imports: [
-      '/src/components/RbButton.astro',
+      '/src/components/utils/RbButton.astro',
       '/src/components/RbImage.astro',
       '/src/components/RbCode.astro',
       '/src/components/RbGridWrapper.astro',
