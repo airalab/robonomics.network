@@ -109,6 +109,7 @@
       type="submit"
       :class="[
         'rb-button',
+        'button',
         'rb-button-block',
         'rb-button-radius',
         buttontype && `rb-button-${buttontype}`,

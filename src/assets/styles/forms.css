@@ -23,7 +23,7 @@ input[disabled], select[disabled] {
 	opacity: 0.5;
 }
 
-input:not([type='checkbox']):not([type='radio']), select, button, textarea {
+input:not([type='checkbox']):not([type='radio']), select, button:not(.rb-button), textarea {
 	padding: var(--input-padding) calc(var(--input-padding) * 1.2);
 	background-color: var(--input-background);
 	color: var(--input-text-color);
