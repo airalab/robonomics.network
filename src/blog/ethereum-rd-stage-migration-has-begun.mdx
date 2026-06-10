@@ -1,0 +1,157 @@
+---
+title: 'Ethereum R&D Stage migration has begun'
+date: 2026-06-10
+published: true
+locale: 'en'
+tags: ['Tokenomics', 'XRT', 'Robonomics', 'Migration', 'Ethereum', 'Polkadot']
+cover_image: /blog/images/ethereum-rd-stage-migration-has-begun/cover.jpg
+description: "The on-chain migration of R&D-stage XRT on Ethereum is live. Eligible holders can now claim production XRT 1:1 — plus a +20% migration bonus — through an open-source claim contract. Here is how it works, end to end."
+abstract: "The snapshot is published, the claim contract is deployed and verifiable, and the migration dApp is open. Below: what you are migrating to, how the +20% bonus works, the exact step-by-step flow, and how to audit the contract yourself before you sign anything. EnsRationis [Robonomics Software Architect]"
+---
+
+The Ethereum balance snapshot we promised at the production-stage launch is done, and the migration of R&D-stage XRT is now live on-chain. Eligible holders can open the migration dApp, verify the balance credited to their address, and claim **production XRT** — with a **+20% migration bonus** — in a single transaction.
+
+This post walks the whole thing end to end: what you are migrating *to*, why the snapshot looks the way it does, how the bonus works, the exact click-by-click flow, and — most importantly — how to verify the claim contract yourself before signing anything.
+
+## What you are migrating to
+
+Production XRT lives on Polkadot — that is the only chain the network and every cloud subscription actually run on. The XRT you see on Ethereum is the **bridged Polkadot production XRT**: minted 1:1 against the Polkadot token via Snowbridge ([https://app.snowbridge.network/send](https://app.snowbridge.network/send)), and present on Ethereum exclusively to seed and sustain liquidity on Uniswap.
+
+The migration hands you that new bridged production token directly on Ethereum, so you can hold it, bridge it to Polkadot, or trade it on the DEX immediately.
+
+| Token | Contract | Status |
+| --- | --- | --- |
+| **Production XRT (Ethereum)** | [`0x1F75…73f`](https://etherscan.io/token/0x1F752250f518e419f2F03804E25728c5C6DfF73f) | What you receive. Bridged 1:1 from Polkadot via Snowbridge. |
+| **R&D-stage XRT (legacy)** | [`0x7dE9…1cb7`](https://etherscan.io/token/0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7) | **Deprecated.** Subject to this migration. |
+
+## Why the snapshot, and what it covers
+
+On **February 5, 2026**, the gas-based emission mechanism of the legacy XRT ERC-20 was exploited for free minting, crashing the Ethereum price ~80%. The Polkadot/Kusama production XRT was **never affected** — but to migrate the Ethereum side fairly, we needed a clean picture of who held what *before* the damage spread.
+
+So the snapshot was taken at **block 24,390,081** (Feb 5, ~12:00 UTC), covering a 24-hour window ending at block 24,397,281. It was reconstructed from The Graph subgraphs (Uniswap V2/V3/V4) and the Etherscan API, and **published on IPFS** for permanent, independent verification.
+
+It is deliberately inclusive — direct holders, Uniswap liquidity providers, people who bought during the crash, and holders of legacy AIR / AIRA ID tokens are all counted as XRT for migration. Dev DAO balances were **excluded** before the snapshot, so none of those migrate.
+
+## Accept for +20%, or decline for the buyback
+
+Every eligible address can do one of two things, exactly once:
+
+- **Accept** — receive your full snapshot balance in production XRT, **plus a 20% bonus**. The bonus is funded by the 500,000 XRT *migration bounty* allocation from the production tokenomics — an incentive to migrate rather than take the buyback. You stay on board, holding production XRT.
+- **Decline** — opt out of the token migration and into the **buyback program** instead. On-chain, your entitlement is routed to the Robonomics DAO payback address, and you forfeit the migrated XRT and its bonus. Declining is less "sell now" than a way of saying *"this is enough for me, I'd like to step away"* — and withdraw further support for the project.
+
+What declining buys you is a claim to be bought back at the **$2.20 reference price** (the figure used for the valuation work, well above the $0.5–2 launch corridor). But read the terms plainly: it is paid out across a **12–36 month corridor**, and only as and when the development treasury actually has the funds to honor it in time. It is a real, honored exit — everyone who chooses it gets paid — but a deliberately patient and conditional one.
+
+That is the trade-off to weigh. Declining locks you to a fixed reference, far out and contingent on treasury timing. Accepting keeps your full balance plus 20% in a live, liquid, tradable token — with all of the upside (and risk) that holding through a thinly-traded production launch carries. For most holders, staying on board is the less patient and more open-ended of the two.
+
+The choice is enforced by the contract itself, not by the front-end — see below.
+
+## Step by step
+
+### 1. Open the dApp and verify eligibility
+
+Go to the migration dApp and connect the wallet that held XRT at the snapshot. It reads your snapshot entitlement and shows the bonus-adjusted amount you will receive.
+
+**[https://airalab.github.io/XRT-snapshot-Feb26-exploit/](https://airalab.github.io/XRT-snapshot-Feb26-exploit/)**
+
+<RbImage zoom src="/blog/images/ethereum-rd-stage-migration-has-begun/01-eligibility-bonus.png" alt="Migration dApp showing total XRT credited and the +20% bonus" caption="A worked example: 541.156425007 XRT at snapshot → 649.387710008 XRT after the +20% bonus. Accept or decline below." />
+
+### 2. Accept and sign
+
+Click **Accept Migration**. Your wallet pops up a single `agree(...)` transaction to the claim contract — review it and approve. Gas is the only ETH you spend; the XRT transfer itself carries no value transfer from you.
+
+<RbImage zoom src="/blog/images/ethereum-rd-stage-migration-has-begun/02-wallet-confirm.png" alt="Wallet transaction request for the migration claim" caption="One transaction to the audited claim contract — approve it in your wallet." />
+
+### 3. Confirmation on-chain
+
+Once mined, the dApp confirms the migration and links the transaction on Etherscan.
+
+<RbGridWrapper columns="2" align="start">
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/ethereum-rd-stage-migration-has-begun/03-migration-confirmed.png" alt="Migration confirmed on-chain in the dApp" space="false" />
+  </RbGridElement>
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/ethereum-rd-stage-migration-has-begun/04-etherscan-received.png" alt="Etherscan showing production XRT received" space="false" />
+  </RbGridElement>
+</RbGridWrapper>
+
+The claim contract transfers the production XRT — your snapshot balance plus the 20% bonus — straight to your address. In the example above, that is the full **649.387710008 XRT** landing in the wallet.
+
+### 4. You now hold production XRT
+
+The token is the live, bridged production XRT. Hold it, bridge it back to Polkadot via Snowbridge, or trade it on Uniswap right away — the direct ETH ↔ production-XRT swap:
+
+[https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x1f752250f518e419f2f03804e25728c5c6dff73f](https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x1f752250f518e419f2f03804e25728c5c6dff73f)
+
+<RbGridWrapper columns="2" align="start">
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/ethereum-rd-stage-migration-has-begun/05-uniswap-swap.png" alt="Trading production XRT on Uniswap" space="false" />
+  </RbGridElement>
+  <RbGridElement>
+    <RbImage zoom src="/blog/images/ethereum-rd-stage-migration-has-begun/06-swap-confirmed.png" alt="Swap confirmed on Uniswap" space="false" />
+  </RbGridElement>
+</RbGridWrapper>
+
+For this walkthrough I sold exactly **1 XRT** — not because I'm in a hurry to leave, but just to prove the round-trip works end to end (it netted about $0.42, and yes, the gas cost more than the trade 🙂). The other 648 are staying right where they are.
+
+## Don't trust — verify
+
+The claim contract is open-source and short enough to read in a couple of minutes. **Before you sign, check that the dApp talks to the contract below and nothing else.**
+
+- **Claim contract (Ethereum mainnet):** [`0xB1b702972A022cca1aCfC0a64EcDFa6cd7899A2c`](https://etherscan.io/address/0xB1b702972A022cca1aCfC0a64EcDFa6cd7899A2c)
+- **Source & deployment:** [https://github.com/airalab/xrt-claim-contracts](https://github.com/airalab/xrt-claim-contracts)
+
+The whole thing is a single `Agreement` contract. It holds the production XRT token address, the DAO payback address, and the snapshot Merkle root — all immutable, set once at deploy time:
+
+<RbCode>
+
+```solidity
+// XRT Snowbridge token.
+IERC20 public immutable XRT;        // 0x1F75…73f — production XRT
+// Robonomics DAO multisig.
+address public immutable PAYBACK;
+// Snapshot merkle root.
+bytes32 public immutable MERKLE_ROOT;
+
+function agree(bytes32[] calldata merkleProof, uint256 amount) external {
+    address holder = msg.sender;
+    verifyProof(merkleProof, holder, amount);   // your address + amount must be in the snapshot
+    amount += amount / 5;                        // +20% bonus
+    XRT.safeTransfer(holder, amount);            // production XRT sent to you
+    emit Agreed(holder, amount);
+}
+```
+
+</RbCode>
+
+Three things worth confirming for yourself:
+
+1. The `XRT` address is `0x1F75…73f` — the production token from the launch post, **not** the deprecated legacy contract.
+2. The `+20%` is literally `amount += amount / 5` in code — it cannot be more or less than your snapshot entitlement plus a fifth.
+3. Every claim is checked against the published snapshot Merkle root, and each address can only claim once (`hasClaimed`). There is no privileged mint, and the only admin function (`transferOwned`) is restricted to the DAO payback multisig.
+
+## Timeline
+
+The Ethereum-side migration is open now, within the 12-month migration window. Any production XRT that holders never activate within that window gets burned. The **Kusama-side** migration runs immediately after the Kusama parachain is wound down — expected within the month — and will be covered in a separate post.
+
+## Resources
+
+- **Migrate:** [https://airalab.github.io/XRT-snapshot-Feb26-exploit/](https://airalab.github.io/XRT-snapshot-Feb26-exploit/)
+- **Claim contract source:** [https://github.com/airalab/xrt-claim-contracts](https://github.com/airalab/xrt-claim-contracts)
+- **Production XRT (Ethereum):** [`0x1F752250f518e419f2F03804E25728c5C6DfF73f`](https://etherscan.io/token/0x1F752250f518e419f2F03804E25728c5C6DfF73f)
+- **Trade on Uniswap:** [https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x1f752250f518e419f2f03804e25728c5c6dff73f](https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x1f752250f518e419f2f03804e25728c5c6dff73f)
+- **Snowbridge:** [https://app.snowbridge.network/send](https://app.snowbridge.network/send)
+
+## Where to ask for help
+
+If you hit any snag during migration — a balance that looks off, a transaction that won't confirm, or you're simply unsure what to click — bring it to the **XRT Traders** chat on Telegram. As of today that is the single channel for token-related discussion:
+
+[https://t.me/xrt_trade](https://t.me/xrt_trade)
+
+That separation is deliberate. Our social accounts and other community spaces stay focused on actually *using* Robonomics — setting up the devices we build, connecting smart homes, and growing the community of users. Mixing crypto and trading talk into those channels tends to push that audience away, so we keep token questions in their own dedicated chat. Different channels for different needs — and the XRT Traders chat is the right place for anything about the token itself.
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/ethereum-rd-stage-migration-has-begun/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">https://x.com/EnsRationis</a></em></span>
+</div>
