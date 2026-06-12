@@ -69,7 +69,8 @@ const booksIntroText = `
   pageTitle={$tr("Read books")}
   pageIntroText={booksIntroText}
 >
-  <section class="layout layout__content e-books">
+  <div class="books-page">
+  <section class="layout layout__content space-b-2">
     <BooksList client:only />
   </section>
 
@@ -77,48 +78,16 @@ const booksIntroText = `
     <h2>{$tr('Open your mind [list of recommendations]')}</h2>
     <ol class="list-simple">
       {recs.map((rec) => (
-        <li class="books-recommendations__item">
+        <li>
           <RecommendationItem rec={rec} />
         </li>
       ))}
     </ol>
   </section>
 
-  <section class="books-footer__container layout layout__text">
+  <section class="layout layout__text_small">
     <BooksFooter />
   </section>
+  </div>
 
 </Layout>
-
-
-<style>
-
-  .e-books {
-    margin-bottom: calc(var(--space) * 4);
-  }
-
-
-  h2 {
-    text-align: left;
-    font-family:var(--font-family);
-    font-weight: 900;
-    text-transform: none;
-    letter-spacing: 0;
-  }
-  .books-recommendations__item {
-    background-color: var(--color-light);
-  }
-
-  .books-recommendations__item:not(:last-of-type) {
-    margin-bottom: calc(var(--space) * 0.5);
-  }
-
-  .books-recommendations h2 {
-    margin-bottom: calc(var(--space) * 0.8);
-  }
-
-  .books-footer__container {
-    max-width: 586px;
-  }
-
-</style>

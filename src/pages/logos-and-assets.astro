@@ -49,9 +49,10 @@ const logos = [
 		<h2>Robonomics & XRT {$tr('logo')} 2026</h2>
 	</section>
 
-	<section class="logo section layout layout__wide grid-2">
+	<section class="section layout layout__wide grid-2">
 		{logos.map((item) => (
 			<DownloadItem
+				framed
 				title={item.title}
 				image={item.image}
 				previewHref={item.download}
@@ -63,21 +64,3 @@ const logos = [
 	</section>
 
 </Layout>
-
-<style is:global>
-	.logo .download-item__media>a {
-		border: 1px solid var(--color-dark);
-		padding: calc(var(--space)*3);
-		display: flex !important;
-		align-content: center;
-		justify-content: center;
-	}
-	.logo .download-item__media img {
-		display: block;
-		max-width: 300px;
-	}
-
-	.logo .download-item:nth-child(even) .download-item__media {
-		background-color: var(--color-dark);
-	}
-</style>

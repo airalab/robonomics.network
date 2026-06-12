@@ -180,3 +180,124 @@ ul.cases__list--with-tick {
 
 .m-t-0 { margin-top: 0; }
 .m-b-0 { margin-bottom: 0; }
+
+.pageintro {
+	font-weight: bold;
+	text-align: center;
+}
+
+.pageintro p:last-child {
+	margin-bottom: 0;
+}
+
+*[class*='grid-'] a.oldy h5 {
+	margin-bottom: 0.5rem;
+}
+
+/* use-case landing pages (for-business, for-smart-homes, for-coworking) */
+.landing-page h1 {
+	margin-bottom: calc(var(--space) * 2);
+}
+
+.landing-page h2 {
+	margin-bottom: calc(var(--space) * 0.5);
+}
+
+.landing-page h3 {
+	margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: var(--space);
+	font-size: calc(var(--base-font-size) * 1.5);
+	color: var(--color-blue);
+}
+
+.landing-page h4 {
+	font-variation-settings: var(--font-flex-bold);
+	font-size: calc(var(--base-font-size) * 1.5);
+	text-transform: none;
+}
+
+.landing-page p {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.landing-page p:last-of-type {
+	margin-bottom: calc(var(--space) * 2.2);
+}
+
+.landing-page > section {
+	margin-bottom: calc(var(--space) * 2);
+}
+
+.landing-page--business .feecc h2.title-lined {
+	margin-bottom: 0;
+}
+
+.landing-page--business h2:not(.title-lined) {
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.landing-page--business .layout__content img {
+	max-width: 650px;
+	width: 100%;
+}
+
+.landing-page--smart-homes h4 {
+	margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: var(--space);
+	font-size: unset;
+	text-transform: unset;
+}
+
+.landing-page--smart-homes .grid-2 {
+	max-width: 1400px;
+	align-items: center;
+	justify-items: center;
+	margin-inline: auto;
+	margin-bottom: calc(var(--space) * 2);
+}
+
+.landing-page--smart-homes .grid-2 video {
+	width: 100%;
+}
+
+.landing-page--smart-homes .layout__content .button {
+	max-width: 645px;
+	margin-inline: auto;
+}
+
+@media screen and (max-width: 480px) {
+	.landing-page h2 {
+		font-size: 1.5rem;
+	}
+
+	.landing-page h3 {
+		font-size: var(--base-font-size);
+	}
+}
+
+/* books page */
+.books-page h2 {
+	text-align: left;
+	font-family: var(--font-family);
+	font-weight: 900;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+.books-page .list-simple > li {
+	background-color: var(--color-light);
+}
+
+.books-page .list-simple > li:not(:last-of-type) {
+	margin-bottom: calc(var(--space) * 0.5);
+}
+
+.books-page .books-recommendations h2 {
+	margin-bottom: calc(var(--space) * 0.8);
+}

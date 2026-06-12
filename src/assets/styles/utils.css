@@ -169,6 +169,65 @@ background: transparent; /* Optional: make buttons invisible if you want */
   background-position: center;
 }
 
+.img-centered {
+  display: block;
+  max-width: var(--img-centered-max, 360px);
+  margin-inline: auto;
+}
+
+.banner-overlay {
+  position: relative;
+}
+
+.banner-overlay__bg img {
+  display: block;
+  width: 100%;
+}
+
+.banner-overlay__content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-overlay__content img {
+  display: block;
+  max-width: 785px;
+  margin-top: -10rem;
+  margin-bottom: calc(var(--space) * 2);
+}
+
+.banner-overlay__cta {
+  position: absolute;
+  bottom: calc(var(--space) * 2);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+@media screen and (width < 1050px) {
+  .banner-overlay__content img {
+    width: 80vw;
+    max-width: 100%;
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (width < 550px) {
+  .banner-overlay__bg {
+    overflow: hidden;
+  }
+
+  .banner-overlay__bg img {
+    max-width: 200vw;
+    margin-left: calc(50% - 100vw);
+  }
+}
+
 .banner-with-pattern__text-shadow  {
   margin-top: 0;
   text-align: left;

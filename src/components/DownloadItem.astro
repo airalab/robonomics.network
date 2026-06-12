@@ -19,6 +19,7 @@ interface Props {
   // Used for cases like wallpapers aspect ratios and logo formats.
   downloadChunks?: Record<string, string>;
   badgeText?: string;
+  framed?: boolean;
   class?: string;
 }
 
@@ -33,6 +34,7 @@ const {
   downloads = [],
   downloadChunks,
   badgeText,
+  framed = false,
   class: className = '',
 } = Astro.props;
 
@@ -62,7 +64,7 @@ const resolvedLinks: DownloadLink[] =
       : [];
 ---
 
-<Tag class:list={['download-item', className]}>
+<Tag class:list={['download-item', framed && 'download-item--framed', className]}>
   <div class="download-item__media">
     {previewHref ? (
       <a aria-label={previewAriaLabel} href={previewHref} download={getDownloadAttr(previewDownload)}>
@@ -109,6 +111,22 @@ const resolvedLinks: DownloadLink[] =
   .download-item__media > a {
     display: block;
     overflow: hidden;
+  }
+
+  .download-item--framed .download-item__media > a {
+    border: 1px solid var(--color-dark);
+    padding: calc(var(--space) * 3);
+    display: flex !important;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .download-item--framed .download-item__media img {
+    max-width: 300px;
+  }
+
+  .download-item--framed:nth-child(even) .download-item__media {
+    background-color: var(--color-dark);
   }
 
   .label-green {

@@ -107,10 +107,10 @@ const options: SwiperOptions = {
                       loading="lazy"
                     />
                     <div>
-                      <div class="home-ecosystem__author-title">
+                      <div class="home-ecosystem__author">
                         {s.authorTitle}
                       </div>
-                      <div class="home-ecosystem__author-name">
+                      <div class="home-ecosystem__author">
                         {s.authorName}
                       </div>
                     </div>
@@ -296,8 +296,8 @@ const options: SwiperOptions = {
   .home-ecosystem__content h2 {
     margin: 0;
     margin-bottom: calc(var(--space) * 0.5);
+    font-variation-settings: var(--font-flex-extrabold);
     text-align: left;
-    text-transform: unset;
     max-width: 634px;
   }
 
@@ -322,18 +322,13 @@ const options: SwiperOptions = {
   }
 
   .home-ecosystem__avatar {
-    width: 54px;
-    height: 54px;
+    width: 117px;
+    height: 117px;
     border-radius: 100%;
     object-fit: cover;
   }
 
-  .home-ecosystem__author-title {
-    font-size: 0.85rem;
-    opacity: 0.85;
-  }
-
-  .home-ecosystem__author-name {
+  .home-ecosystem__author {
     font-variation-settings: var(--font-flex-bold);
   }
 

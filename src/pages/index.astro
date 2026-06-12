@@ -18,15 +18,13 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
         <a class="home-hero__card" href="/for-personal-usage/" aria-label="For personal usage">
           <img class="home-hero__preview" src="/video/preview/home-preview-1.webp" alt="" loading="eager"/>
           <video class="home-hero__video" src="/video/home-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <div class="home-hero__title">
+          <div class="home-hero__title highlight-solid-green-stack">
             <span>{$tr('FOR')}</span>
             <span>{$tr('PERSONAL USAGE')}</span>
           </div>
           <HeroCardBadges
             items={[
-              $tr('Cyberpunks shop'),
-              $tr('Self-care devices'),
-              $tr('Personal metrics'),
+              $tr('We build open-source hardware without required subscriptions. Explore our devices and where to buy them'),
             ]}
             variant="light"
             showArrow
@@ -36,15 +34,13 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
         <a class="home-hero__card" href="/for-smart-homes/" aria-label="For smart homes">
           <img class="home-hero__preview" src="/video/preview/home-preview-2.webp" alt="" loading="eager"/>
           <video class="home-hero__video home-hero__video--extra" src="/video/home-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <div class="home-hero__title">
+          <div class="home-hero__title highlight-solid-green-stack">
             <span>{$tr('FOR')}</span>
             <span>{$tr('SMART HOMES')}</span>
           </div>
           <HeroCardBadges
             items={[
-              $tr('B2C & B2B solutions'),
-              $tr('Full service integration'),
-              $tr('DIY setup'),
+              $tr('We have expertise in building and maintaining open, flexible smart home systems without vendor lock-in'),
             ]}
             variant="light"
             showArrow
@@ -54,15 +50,13 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
         <a class="home-hero__card" href="/for-coworking-and-coliving/" aria-label="For co-working and co-living">
           <img class="home-hero__preview" src="/video/preview/home-preview-3.webp" alt="" loading="eager"/>
           <video class="home-hero__video" src="/video/home-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <div class="home-hero__title">
+          <div class="home-hero__title highlight-solid-green-stack">
             <span>{$tr('FOR')}</span>
             <span>{$tr('CO-WORKING & CO-LIVING')}</span>
           </div>
           <HeroCardBadges
             items={[
-              $tr('B2C & B2B solutions'),
-              $tr('Smart access'),
-              $tr('Shared housekeeping'),
+              $tr('Shared spaces with reliable smart lockers and easy self-service access systems benefit from our expertise')
             ]}
             variant="light"
             showArrow
@@ -72,16 +66,13 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
         <a class="home-hero__card" href="/for-business/" aria-label="For business">
           <img class="home-hero__preview" src="/video/preview/home-preview-4.webp" alt="" loading="eager"/>
           <video class="home-hero__video" src="/video/home-4.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <div class="home-hero__title">
+          <div class="home-hero__title highlight-solid-green-stack">
             <span>{$tr('FOR')}</span>
             <span>{$tr('BUSINESS')}</span>
           </div>
           <HeroCardBadges
             items={[
-              $tr('Smart RWA'),
-              $tr('Digital Product Passport'),
-              $tr('Custom hardware'),
-              $tr('Robotics integration'),
+              $tr('If you have any other business that needs Robonomics expertise and on-chain infrastructure feel free to read more and write us')
             ]}
             variant="light"
             showArrow
@@ -91,7 +82,11 @@ import HeroCardBadges from '../components/blocks/HeroCardBadges.astro';
     </div>
   </section>
 
-  <div class="trust-badges-wrapper"><TrustBadges/></div>
+  <!-- <div class="trust-badges-wrapper"><TrustBadges/></div> -->
+  <section class="section layout layout__content pageintro ">
+    <p>Robonomics is a team with more than 10 years of experience in robotics and on-chain infrastructure solutions. Over the years, we have worked on a wide range of R&D projects, published scientific papers, and built real-world tools and technologies.</p>
+    <p>Today, we are bringing this experience into everyday life — creating practical, secure, and privacy-focused smart solutions and devices designed for real people and real environments. Explore what we are building and discover a new generation of safe and open smart technologies.</p>
+  </section>
 
   <HomeEcosystemSwiper />
 

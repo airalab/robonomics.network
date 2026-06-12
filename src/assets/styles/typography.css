@@ -315,12 +315,12 @@ hr.color-lightgray {
 }
 
 hr.animate {
-	transform-origin: 50% 50%;
-	transform: scaleX(0);
+  transform-origin: 50% 50%;
+  transform: scaleX(0);
 }
 
 hr.animate.in-viewport {
-	animation: HR 0.4s ease-out 0.8s forwards;
+  animation: HR 0.4s ease-out 0.8s forwards;
 }
 
 .hyphens {
@@ -343,6 +343,10 @@ hr.animate.in-viewport {
 
 .text-bold {
   font-weight: bold;
+}
+
+.description-bold {
+  font-variation-settings: var(--font-flex-bold);
 }
 
 /* for code */
@@ -503,6 +507,23 @@ summary {
   padding: 0.2rem 0;
 }
 
+.highlight-solid-green-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.12rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.highlight-solid-green-stack span {
+  background-color: var(--color-green-accent);
+  color: var(--color-dark);
+  display: inline-block;
+  line-height: 1;
+  padding: 0.2rem 0.35rem;
+}
+
 .linereduce {
   line-height: 1;
 }
@@ -521,9 +542,8 @@ summary {
 }
 
 html[lang="ar"] .case-page__content h2 {
-	text-align: right;
+  text-align: right;
 }
-
 
 .text-color-red {
   color: var(--color-red);

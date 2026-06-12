@@ -28,7 +28,8 @@ const previews = [
 
   <VideoGallery small videos={videos} previews={previews} alt="For smart homes video example" cls="mb"/>
 
-  <section class="support">
+  <div class="landing-page landing-page--smart-homes">
+  <section class="section">
     <div class="layout text-center">
       <h2 class="title-lined">
         <span>{$tr('PRO SMART HOME SUPPORT')}</span>
@@ -41,21 +42,22 @@ const previews = [
           <img src="/pages/for-smart-homes/home-assistant.webp" alt="homeassistant interface" loading="lazy" />
           <img src="/pages/for-smart-homes/home-assistant-2.webp" alt="we built for you image" loading="lazy" />
       </div>
+      <div class="layout layout__content">
       <RbButton 
         href='https://pinout.cloud/contact-us' 
         block
         buttoncolor="blue"
         buttonstyle="flat"
         radius
-        extraCls="for-smart-home-btn"
         noTarget={false}
       >
         {$tr('Request a Consultation by pinout')}
       </RbButton>
+      </div>
     </div>
   </section>
 
-  <section class="diy">
+  <section class="section">
     <div class="layout text-center">
       <h2 class="title-lined">
         <span>{$tr('BUILD SMART HOME YOURSELF')}</span>
@@ -77,70 +79,20 @@ const previews = [
 
         <img src="/pages/for-smart-homes/diy-geeks.webp" alt="diy geeks image" loading="lazy" />
       </div>
+      <div class="layout layout__content">
       <RbButton 
         href='https://wiki.robonomics.network/docs/install-smart-home/' 
         block
         buttoncolor="blue"
         buttonstyle="flat"
         radius
-        extraCls="for-smart-home-btn"
         noTarget={false}
       >
         {$tr('wiki Smart Home Installation')}
       </RbButton>
+      </div>
     </div>
   </section>
+  </div>
 
 </Layout>
-
-<style>
-
-   h1 {
-    margin-bottom: calc(var(--space) * 2);
-  }
-
-  h2 {
-    margin-bottom: calc(var(--space) * 0.5);
-  }
-
-  h4 {
-    margin: 0 auto;
-    margin-top: 0;
-    margin-bottom: var(--space);
-  }
-
-  p {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  p:last-of-type {
-    margin-bottom: calc(var(--space) * 2.2);
-  }
-  
-  section {
-    margin-bottom: calc(var(--space) * 2);
-  }
-
-  .grid-2 {
-    max-width: 1400px;
-    align-items: center;
-    justify-items: center;
-    margin: 0 auto;
-    margin-bottom: calc(var(--space) * 2);
-  }
-
-  .grid-2 video {
-    width: 100%;
-  }
-
-  .description-bold {
-    font-variation-settings: var(--font-flex-bold);
-  }
-
-  .for-smart-home-btn {
-    max-width: 645px;
-    margin: 0 auto;
-  }
-</style>

@@ -76,3 +76,7 @@ select {
 	background-repeat: no-repeat;
 	padding-right: calc(var(--input-padding) + 9px);
 }
+
+.form-container {
+	min-height: 350px;
+}
