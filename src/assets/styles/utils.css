@@ -1,11 +1,12 @@
-.oldy, a.oldy {
+.oldy,
+a.oldy {
   --oldy-box-color: var(--color-dark);
-  --oldy-box-size: .3rem;
+  --oldy-box-size: 0.3rem;
   --oldy-bg-color: var(--color-light);
   --oldy-padding: calc(var(--space) * 0.5);
   --oldy-color: inherit;
-	background-color: var(--oldy-bg-color);
-	padding: var(--oldy-padding);
+  background-color: var(--oldy-bg-color);
+  padding: var(--oldy-padding);
   border: 1px solid var(--oldy-box-color);
   box-shadow: var(--oldy-box-size) var(--oldy-box-size) 0 var(--oldy-box-color);
   font-family: var(--font-family);
@@ -13,17 +14,20 @@
   color: var(--oldy-color);
 }
 
-.oldy__link, a.oldy {
+.oldy__link,
+a.oldy {
   cursor: pointer;
   /* --oldy-box-color: var(--color-blue); */
 }
 
-.oldy__link:hover, a.oldy:hover {
+.oldy__link:hover,
+a.oldy:hover {
   --oldy-box-color: var(--color-link);
   --oldy-color: var(--color-link);
 }
 
-.oldy__link:hover *, a.oldy:hover * {
+.oldy__link:hover *,
+a.oldy:hover * {
   --oldy-color: var(--color-link);
 }
 
@@ -31,71 +35,81 @@
   --oldy-box-color: var(--color-green-accent);
 }
 
-*[class*='grid-'] > p, *[class*='grid-'] > .card { margin-bottom: 0; }
+*[class*="grid-"] > p,
+*[class*="grid-"] > .card {
+  margin-bottom: 0;
+}
 
-*[class*='grid-'].middle {
+*[class*="grid-"].middle {
   align-items: center;
 }
 
-.grid, *[class*='grid-'] {
+.grid,
+*[class*="grid-"] {
   display: grid;
   gap: var(--space);
 }
 
-.grid-5{
-  grid-template-columns: repeat(5,1fr);
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
 }
 
-.grid-4{
-  grid-template-columns: repeat(4,1fr);
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.grid-3{
-  grid-template-columns: repeat(3,1fr);
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.grid-2{
-  grid-template-columns: repeat(2,1fr);
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-*[class*='grid-'].grid-valign-top {
+*[class*="grid-"].grid-valign-top {
   align-items: start;
 }
 
 .grid-with-scroll {
-max-height: calc((550px * 2) + (var(--space) * 2) ); 
-padding: 0 42px;
-overflow-y: auto; 
+  max-height: calc((550px * 2) + (var(--space) * 2));
+  padding: 0 42px;
+  overflow-y: auto;
 }
 
 .grid-with-scroll::-webkit-scrollbar {
-width: 8px; /* Set width of the scrollbar */
+  width: 8px; /* Set width of the scrollbar */
 }
 
 .grid-with-scroll::-webkit-scrollbar-track {
-background: #fff; /* Track background */
-border: 1px solid #000;
+  background: #fff; /* Track background */
+  border: 1px solid #000;
 }
 
 .grid-with-scroll::-webkit-scrollbar-thumb {
-background: #000000; /* Scrollbar thumb color */
+  background: #000000; /* Scrollbar thumb color */
 }
 
 .grid-with-scroll::-webkit-scrollbar-thumb:hover {
-background: var(--color-blue); /* Scrollbar thumb hover color */
+  background: var(--color-blue); /* Scrollbar thumb hover color */
 }
 
 .grid-with-scroll::-webkit-scrollbar-button {
-background: transparent; /* Optional: make buttons invisible if you want */
+  background: transparent; /* Optional: make buttons invisible if you want */
 }
 
-@media screen and (max-width:880px){
-  .grid-5 { grid-template-columns: 1fr; }
+@media screen and (max-width: 880px) {
+  .grid-5 {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media screen and (max-width:990px){
-  .grid-4 { grid-template-columns: repeat(2,1fr); }
-  .grid-3 { grid-template-columns: 1fr; }
+@media screen and (max-width: 990px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
   .grid-with-scroll {
     padding: 0;
     max-height: unset;
@@ -103,36 +117,40 @@ background: transparent; /* Optional: make buttons invisible if you want */
   }
 }
 
-@media screen and (max-width:570px){
-  .grid-4 { grid-template-columns: 1fr; }
-  .grid-2 { grid-template-columns: 1fr; }
+@media screen and (max-width: 570px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
 }
 
-*[class*='grid-'].grid-valign-top {
-    align-items: start;
-  }
+*[class*="grid-"].grid-valign-top {
+  align-items: start;
+}
 
 .youtube-embed {
   margin-bottom: var(--space);
 }
 
 .youtube-embed__wrapper {
-  width: 100%; 
+  width: 100%;
   margin: 0px auto;
 }
 
 .youtube-embed__container {
-  position: relative; 
+  position: relative;
   padding-bottom: 56.25%;
-  padding-top: 25px; 
+  padding-top: 25px;
   height: 0px;
 }
 
 .youtube-embed__container iframe {
-  position: absolute; 
-  top: 0px; 
-  left: 0px; 
-  width: 100%; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
   height: 100%;
 }
 
@@ -172,6 +190,7 @@ background: transparent; /* Optional: make buttons invisible if you want */
 .img-centered {
   display: block;
   max-width: var(--img-centered-max, 360px);
+  width: 100%;
   margin-inline: auto;
 }
 
@@ -228,7 +247,7 @@ background: transparent; /* Optional: make buttons invisible if you want */
   }
 }
 
-.banner-with-pattern__text-shadow  {
+.banner-with-pattern__text-shadow {
   margin-top: 0;
   text-align: left;
   font-size: calc(var(--base-font-size) * 3);
@@ -244,7 +263,7 @@ background: transparent; /* Optional: make buttons invisible if you want */
   padding-top: var(--space);
   padding-bottom: var(--space);
   display: grid;
-  grid-template-columns: minmax(150px, 380px) minmax(180px,620px);
+  grid-template-columns: minmax(150px, 380px) minmax(180px, 620px);
   gap: var(--space);
 }
 
@@ -262,7 +281,6 @@ background: transparent; /* Optional: make buttons invisible if you want */
   justify-content: center;
 }
 
-
 /* form elements */
 
 .contacts__input {
@@ -270,7 +288,7 @@ background: transparent; /* Optional: make buttons invisible if you want */
   font-size: var(--base-font-size);
   font-family: inherit;
   font-weight: 500;
-  color: #214FDA !important;
+  color: #214fda !important;
   background-color: #fff;
   border: 1px solid #000;
   width: 100%;
@@ -286,22 +304,25 @@ background: transparent; /* Optional: make buttons invisible if you want */
   position: absolute;
   padding: 0;
   top: 5px;
-  left:  calc(var(--space) * 0.5);
+  left: calc(var(--space) * 0.5);
   font-size: calc(var(--base-font-size) * 0.6);
   font-weight: 500;
   color: #000;
-  transition: color 0.33s ease-in-out, opacity 0.33s ease-in-out, visibility 0.33s ease-in-out;
+  transition:
+    color 0.33s ease-in-out,
+    opacity 0.33s ease-in-out,
+    visibility 0.33s ease-in-out;
 }
 
 .contacts__label .contacts__input:focus + span,
-.contacts__label .contacts__textarea:focus + span   {
-  color: #214FDA;
-} 
+.contacts__label .contacts__textarea:focus + span {
+  color: #214fda;
+}
 
-.contacts__label .contacts__textarea:focus + span  {
+.contacts__label .contacts__textarea:focus + span {
   opacity: 0;
   visibility: hidden;
-} 
+}
 
 .contacts__textarea:focus,
 .contacts__input:focus {
@@ -330,7 +351,8 @@ background: transparent; /* Optional: make buttons invisible if you want */
   z-index: 2;
 }
 
-.list-links li:hover, .list-links li:hover a {
+.list-links li:hover,
+.list-links li:hover a {
   color: var(--color-link-hover);
 }
 
@@ -375,7 +397,7 @@ background: transparent; /* Optional: make buttons invisible if you want */
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.0;
+  opacity: 0;
   overflow: hidden;
   text-indent: -9999px;
   z-index: 1000;

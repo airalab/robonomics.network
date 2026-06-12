@@ -31,68 +31,31 @@ const previews = [
   <div class="landing-page landing-page--smart-homes">
   <section class="section">
     <div class="layout text-center">
-      <h2 class="title-lined">
-        <span>{$tr('PRO SMART HOME SUPPORT')}</span>
-      </h2>
-
-      <h4 class="highlight-green">{$tr('WE BUILD IT FOR YOU')}</h4>
-      <p class="description-bold">{$tr('If you need help implementing a smart home project for an apartment or private house almost anywhere in the world — contact our smart home integration engineers at')} <a href="https://pinout.cloud/" aria-label="go to pinout website" class="underline">Pinout.cloud.</a></p>
-      <p>{$tr('We’ll support you at every stage: from working with blueprints to programming, configuration, and on-site installation in most countries worldwide.')}</p>
-      <div class="grid grid-2">
-          <img src="/pages/for-smart-homes/home-assistant.webp" alt="homeassistant interface" loading="lazy" />
-          <img src="/pages/for-smart-homes/home-assistant-2.webp" alt="we built for you image" loading="lazy" />
-      </div>
-      <div class="layout layout__content">
+      <p>Building on our open-source hardware philosophy, we develop flexible smart home systems without vendor lock-in. We know how to combine IKEA, Xiaomi, Sonoff, and other smart device brands into one connected and interoperable smart home network.</p>
+      <p class="description-bold">
+        As part of our smart home solutions, we use the <a href="https://github.com/PinoutLTD/rrs-ha-integration" aria-label="check out the robonomics report service">Robonomics Report Service</a> — a private serverless on-chain infrastructure for receiving encrypted reports and diagnostic logs from smart home systems.
+      </p>
+      <p>We are based in Cyprus, but for interesting and groundbreaking projects with open-minded ideas, we are always open to collaboration worldwide.</p>
+      <img class="img-centered" src="/pages/for-smart-homes/home-assistant-2.webp" alt="we built for you image" loading="lazy" />
+      <span class="description-bold">Explore real-world smart home solutions and offers from our engineer’s Cyprus-based agency:</span>
       <RbButton 
         href='https://pinout.cloud/contact-us' 
-        block
         buttoncolor="blue"
         buttonstyle="flat"
         radius
         noTarget={false}
       >
-        {$tr('Request a Consultation by pinout')}
+        {$tr('Go to pinout.cloud')}
       </RbButton>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="layout text-center">
-      <h2 class="title-lined">
-        <span>{$tr('BUILD SMART HOME YOURSELF')}</span>
-      </h2>
-
-      <h4 class="highlight-green">{$tr('FOR ENGINEERS & DIY GEEKS')}</h4>
-      <p class="description-bold">{$tr('For those who want to build a smart home DIY-style, we’ve got something awesome for you too — a detailed guide!')}</p>
-      <div class="grid grid-2">
-        <video
-          autoplay
-          loop
-          muted
-          playsinline
-          aria-label="homeassistant interface"
-        >
-          <source src="/pages/for-smart-homes/hass-for-engineers.webm" type="video/webm" />
-          <img src="/pages/for-smart-homes/hass-for-engineers.gif" alt="homeassistant interface" />
-        </video>
-
-        <img src="/pages/for-smart-homes/diy-geeks.webp" alt="diy geeks image" loading="lazy" />
-      </div>
-      <div class="layout layout__content">
-      <RbButton 
-        href='https://wiki.robonomics.network/docs/install-smart-home/' 
-        block
-        buttoncolor="blue"
-        buttonstyle="flat"
-        radius
-        noTarget={false}
-      >
-        {$tr('wiki Smart Home Installation')}
-      </RbButton>
-      </div>
     </div>
   </section>
   </div>
 
 </Layout>
+
+<style>
+  span {
+    display: block;
+    margin-bottom: calc(var(--space) * 0.5);
+  }
+</style>

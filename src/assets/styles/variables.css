@@ -43,6 +43,8 @@ body {
 
   /* this should be adopted globally */
   --layout-sidepadding: var(--space);
+
+  --img-centered-max: 650px;
 }
 
 @media screen and (max-width: 580px) {
