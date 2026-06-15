@@ -23,7 +23,7 @@ const previews = [
 <Layout 
   title="For personal usage" 
   description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
-  ogImage="/opengraph/for-personal-usage.png"
+  ogImage="/opengraph/for-personal-usage.webp"
   pageTitle={$tr('For personal usage')}
 >
 
@@ -33,22 +33,21 @@ const previews = [
     {$tr('We build open-source hardware without required subscriptions, forcing you to connect to corporate clouds, doesn’t spy on you, and never sells your data to Google’s partner network. Your future and digital freedom is in your hands.')}
   </section>
 
-  <section class="shop section">
-    <div class="bg">
+  <section class="section banner-overlay">
+    <div class="banner-overlay__bg">
       <img aria-hidden="true" src="/pages/for-personal-usage/cyberpunks-shop-bg.webp" />
     </div>
 
-    <div class="icons">
+    <div class="banner-overlay__content">
       <img alt="{$tr('NO vendor cloud, NO personal data tracking, NO mandatory subscription, Fully open-source, Privacy by design, Globally accessible')}" src="/pages/for-personal-usage/cyberpunks-shop-icons.webp" />
     </div>
 
-    <div class="button-wrap">
+    <div class="banner-overlay__cta">
       <RbButton
           href="https://cyberpunks.shop"
           buttoncolor="blue"
           buttonstyle="flat"
           radius
-          extraCls="shop-cta"
         >
           {$tr('Go to cyberpunks.shop')}
       </RbButton>
@@ -68,70 +67,3 @@ const previews = [
     </a>
   </section>
 </Layout>
-
-<style>
-  .shop {
-    position: relative;
-  }
-
-  .icons {
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .icons img {
-    display: block;
-    max-width: 785px;
-    margin-top: -10rem;
-    margin-bottom: calc(var(--space) * 2);
-  }
-
-  .button-wrap {
-    position: absolute;
-    bottom: calc(var(--space)*2);
-    left: 0;
-    right: 0;
-    z-index: 1;
-    text-align: center;
-  }
-
-  @media screen and (width < 1050px) {
-    .icons img {
-      width: 80vw;
-      max-width: 100%;
-      margin-top: -3rem;
-    }
-  }
-
-  /* @media screen and (width < 870px) {
-    .icons img {
-      width: 50vw;
-    }
-
-    .button-wrap {
-      bottom: var(--space);
-    }
-  } */
-
-  @media screen and (width < 550px) {
-    /* .icons img {
-      display: none;
-    } */
-
-    .bg {
-      overflow: hidden;
-    }
-
-    .bg img {
-      max-width: 200vw;
-      margin-left: calc(50% - 100vw);
-    }
-  }
-</style>

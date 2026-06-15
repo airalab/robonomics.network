@@ -19,8 +19,8 @@ const {
     ))}
     {showArrow && (
       <div class="hero-badges__arrow">
-        <svg width="119" height="15" viewBox="0 0 119 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M118.707 8.07112C119.098 7.6806 119.098 7.04743 118.707 6.65691L112.343 0.292946C111.953 -0.0975785 111.319 -0.0975785 110.929 0.292946C110.538 0.68347 110.538 1.31664 110.929 1.70716L116.586 7.36401L110.929 13.0209C110.538 13.4114 110.538 14.0446 110.929 14.4351C111.319 14.8256 111.953 14.8256 112.343 14.4351L118.707 8.07112ZM0 7.36401V8.36401H118V7.36401V6.36401H0V7.36401Z" fill="currentColor"/>
+        <svg width="183" height="23" viewBox="0 0 183 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.5 9.5459C0.671573 9.5459 0 10.2175 0 11.0459C0 11.8743 0.671573 12.5459 1.5 12.5459V11.0459V9.5459ZM182.459 12.1066C183.045 11.5208 183.045 10.571 182.459 9.98524L172.913 0.439297C172.327 -0.14649 171.377 -0.14649 170.792 0.439297C170.206 1.02508 170.206 1.97483 170.792 2.56062L179.277 11.0459L170.792 19.5312C170.206 20.117 170.206 21.0667 170.792 21.6525C171.377 22.2383 172.327 22.2383 172.913 21.6525L182.459 12.1066ZM1.5 11.0459V12.5459H181.398V11.0459V9.5459H1.5V11.0459Z" fill="currentColor"/>
         </svg>
       </div>
     )}
@@ -31,6 +31,7 @@ const {
   .hero-badges {
     --hero-badge-bg: var(--color-light);
     --hero-badge-text: var(--color-dark);
+    --hero-badge-accent: var(--color-green-accent);
 
     position: absolute;
     left: 0;
@@ -59,41 +60,27 @@ const {
   }
 
   .hero-badges__item {
-    display: inline-block;
-    width: max-content;
-    align-items: center;
-    padding: 0.5rem 0.75rem;
-    background-color: var(--hero-badge-bg);
-    color: var(--hero-badge-text);
-    font-size: calc(var(--base-font-size) * 0.6);
-    font-variation-settings: var(--font-flex-bold);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    border-radius: 0;
-  }
-
-  .hero-badges__label {
-    white-space: nowrap;
-  }
-
-  .hero-badges--static .hero-badges__item {
-    display: inline-block;
-    width: fit-content;
-    max-width: 100%;
+    display: block;
+    max-width: 99%;
     align-self: flex-start;
   }
 
-  .hero-badges--static .hero-badges__label {
-    white-space: normal;
-    overflow-wrap: anywhere;
-    word-break: break-word;
+  .hero-badges__label {
+    display: inline;
+    background-color: var(--hero-badge-bg);
+    color: var(--hero-badge-text);
+    padding: 0.35rem 0.5rem;
+    font-variation-settings: var(--font-flex-bold);
+    line-height: 1.4;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
   }
 
   .hero-badges__arrow {
     margin-top: 0.2rem;
-    color: var(--hero-badge-bg);
+    color: var(--hero-badge-accent);
     width: 100%;
-    height: 15px;
+    height: 30px;
     display: flex;
     align-items: center;
   }

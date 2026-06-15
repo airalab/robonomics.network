@@ -14,11 +14,11 @@ body {
   --color-blue: #2949d1;
   --color-red: #f0005c;
   --color-green: #a0d100;
-  --color-green-accent: #c4ff6b;
+  --color-green-accent: #c7fe6c;
   --color-dark: #000000;
   --color-light: #ffffff;
-  --color-gray: #A8ADBE;
-  --color-gray-light: #DCDEE5;
+  --color-gray: #a8adbe;
+  --color-gray-light: #dcdee5;
   --color-gray-dark: #212121;
 
   --body-bg: var(--color-light);
@@ -43,6 +43,8 @@ body {
 
   /* this should be adopted globally */
   --layout-sidepadding: var(--space);
+
+  --img-centered-max: 650px;
 }
 
 @media screen and (max-width: 580px) {

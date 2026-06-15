@@ -2,6 +2,7 @@
 const {
   tweets: customTweets,
   width = false,
+  embedded = false,
 } = Astro.props;
 
 // Default tweets
@@ -41,14 +42,18 @@ const defaultTweets = [
 const tweets = customTweets || defaultTweets;
 ---
 
-<section class="tweet-gallery section" aria-label="What do creators say">
-  <div class=`layout ${!width ? 'layout__mid' : ''}`>
-    <h2 class="tweet-gallery__title">
-      {$tr("What do creators say")}
-    </h2>
-    <p class="tweet-gallery__subtitle">
-      {$tr("We invite you to take a closer look at our ideas and our latest updates.")}
-    </p>
+<section class:list={['tweet-gallery', 'section', embedded && 'tweet-gallery--embedded']} aria-label="What do creators say">
+  <div class={`layout ${!width ? 'layout__mid' : ''}`}>
+    {!embedded && (
+      <>
+        <h2 class="tweet-gallery__title">
+          {$tr("What do creators say")}
+        </h2>
+        <p class="tweet-gallery__subtitle">
+          {$tr("We invite you to explore our ideas and latest updates on")} <a href="https://x.com/AIRA_Robonomics">Twitter (X)</a>
+        </p>
+      </>
+    )}
     
     <div class="tweet-gallery__grid">
       {tweets.map((tweet, index) => (
@@ -163,14 +168,29 @@ const tweets = customTweets || defaultTweets;
     margin-bottom: 0;
     padding-top: calc(var(--space) * 2);
     padding-bottom: calc(var(--space) * 2);
-    background-color: hsla(219, 22%, 92%, 1);
+    background-color: #3c3c3c;
+    color:var(--color-light);
+  }
+
+  .tweet-gallery--embedded {
+    padding-top: 0;
+    background-color: transparent;
+  }
+
+  .tweet-gallery--embedded .tweet-gallery__item {
+    margin-bottom: calc(var(--space) * 0.25);
+  }
+
+  @media screen and (max-width: 1200px) {
+    .tweet-gallery--embedded .tweet-gallery__grid {
+      column-count: 3;
+    }
   }
 
   .tweet-gallery__title {
     margin-top: 0;
     margin-bottom: calc(var(--space) * 0.5);
     font-variation-settings: var(--font-flex-extrabold);
-    text-transform: none;
     letter-spacing: 0;
   }
 
@@ -178,6 +198,17 @@ const tweets = customTweets || defaultTweets;
     text-align: center;
     margin-bottom: calc(var(--space) * 2);
   }
+
+  .tweet-gallery__subtitle a {
+    color: inherit;
+    font-variation-settings: var(--font-flex-bold);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+   .tweet-gallery__subtitle a:hover {
+    opacity: 0.7;
+   } 
 
   .tweet-gallery__grid {
     column-count: 3;

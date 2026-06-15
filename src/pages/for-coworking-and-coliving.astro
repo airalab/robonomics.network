@@ -5,9 +5,6 @@ import VideoGallery from '../components/blocks/VideoGallery.astro';
 import TrustBadges from '../components/blocks/TrustBadges.astro';
 import CasesDisplay from '../components/blocks/CasesDisplay.astro';
 
-// images
-import BANNER from '../assets/images/for-coworking-and-coliving/banner.webp';
-
 // videos
 const videos = [
   '/video/coworking-1.mp4',
@@ -29,99 +26,57 @@ const previews = [
   title="For co-working and co-living" 
   description={$tr("Robonomics is a decentralized cloud for storing digital twins of robotics and IoT devices. Robonomics enables economic and technical communication between machines and humans. Its decentralized architecture secures the end user's privacy.")}
   pageTitle={$tr('For co-working & co-living')}
+  ogImage="/opengraph/for-coworking.webp"
 >
 
   <VideoGallery small videos={videos} preview={previews} alt="For co-working & co-living video example" cls="mb"/>
 
-  <section class="cypherpunk-space">
-    <div class="layout text-center">
-      <h2 class="title-lined">
-        <span>{$tr('CYPHERPUNK SPACE')}</span>
-      </h2>
-      <h3>{$tr('PRIVACY-FIRST SHARED SPACES')}</h3>
-      <p class="description-bold">{$tr('By combining a smart home system with our open hardware, we design and deploy a ready-to-use solution — a true cypherpunk co-living or co-working space.')}</p>
-      <p>{$tr('User management through subscriptions, control over access and infrastructure, and configuration of shared devices — from lighting to the coffee machine — all operate as a single autonomous system.')}</p>
-      <p>{$tr('You get privacy by default: no corporate clouds, no hidden data collection, and no dependency on external platforms. All data remains under your control and can be independently verified.')}</p>
-      <p>{$tr('Thanks to open-source software, the system remains flexible and extensible. You can adapt access logic, user management, lighting, and shared devices to the specific needs of your space — today and in the future.')}</p>
-    </div>
-
-    <TrustBadges variant="cowork" />
+  <div class="landing-page">
+    <section class="section">
+      <div class="layout text-center">
+        <p>You don’t need to depend on closed smart ecosystems. We know how to build practical systems for coworkings, colivings, and other shared spaces.</p>
+        <p>
+          With open-source smart home software such as Home Assistant, we can build flexible multi-brand smart spaces. Using Robonomics Accounts Management, we can implement secure access infrastructure, while the <a href="https://github.com/PinoutLTD/rrs-ha-integration" aria-label="check out the robonomics report service">Robonomics Report Service</a> enables private encrypted diagnostic reports for better maintenance and support.
+        </p>
+        <p>On top of that, your space can benefit from truly open-source hardware available through <a href="https://cyberpunks.shop./" arial-label="visit our online store and get yourself a cool device!">cyberpunks.shop</a>.</p>
+        <p>You get privacy by default: no corporate clouds, no hidden data collection, and no dependency on external platforms. All data remains under your control and can be independently verified.</p>
+        <RbButton 
+          href='/contact/?source=for-coworking-and-coliving' 
+          buttoncolor="blue"
+          buttonstyle="flat"
+          radius
+          noTarget={true}
+        >
+          {$tr('Contact us')}
+        </RbButton>
+      </div>
+    </section>
   </section>
 
-  <section class="section-green">
+  <TrustBadges variant="cowork" />
+  <section class="section section__green section__solid">
     <div class="layout">
-      <img src={BANNER.src} alt="" aria-hidden="true" loading="lazy" />
-    </div>
-  </section>
-
-  <section class="contact-us">
-    <div class="layout layout__content">
-      <RbButton 
-        href='/contact/?source=for-coworking-and-coliving' 
-        block
-        buttoncolor="blue"
-        buttonstyle="flat"
-        radius
-        noTarget={true}
-      >
-        {$tr('Contact us')}
-      </RbButton>
-
-      <h4>{$tr('Solution Examples')}</h4>
+     <h4>{$tr('Connected cases and R&Ds')}</h4>
 
       <CasesDisplay 
         items={[
-          { type: 'case', id: 3 },
           { type: 'case', id: 19 },
+          { type: 'case', id: 0 },
+          { type: 'case', id: 3 }
         ]}
         layout="grid"
       />
 
     </div>
   </section>
+  </div>
 
 </Layout>
 
 <style>
-
-  h1 {
-    margin-bottom: calc(var(--space) * 2);
+  .section__green {
+    margin-top: calc(var(--space) * 0.5);
+    margin-bottom: 0;
+    padding-top: var(--space);
   }
-
-  h2 {
-    margin-bottom: calc(var(--space) * 0.5);
-  }
-
-  h3 {
-    margin: 0 auto;
-    margin-top: 0;
-    margin-bottom: var(--space);
-    font-size: calc(var(--base-font-size) * 1.5);
-    color: var(--color-blue)
-  }
-
-  h4 {
-    font-variation-settings: var(--font-flex-bold);
-    font-size: calc(var(--base-font-size) * 1.5);
-    text-transform: none;
-  }
-
-  p {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  p:last-of-type {
-    margin-bottom: calc(var(--space) * 2.2);
-  }
-  
-  section {
-    margin-bottom: calc(var(--space) * 2);
-  }
-
-  .description-bold {
-    font-variation-settings: var(--font-flex-bold);
-  }
-
 </style>
