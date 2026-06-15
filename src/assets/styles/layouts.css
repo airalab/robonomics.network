@@ -210,6 +210,7 @@ ul.cases__list--with-tick {
 }
 
 .landing-page h2 {
+  font-variation-settings: var(--font-flex-extrabold);
   margin-bottom: calc(var(--space) * 0.5);
 }
 
@@ -222,9 +223,8 @@ ul.cases__list--with-tick {
 }
 
 .landing-page h4 {
-  font-variation-settings: var(--font-flex-bold);
+  font-variation-settings: var(--font-flex-extrabold);
   font-size: calc(var(--base-font-size) * 1.5);
-  text-transform: none;
 }
 
 .landing-page p {
@@ -238,7 +238,7 @@ ul.cases__list--with-tick {
 } */
 
 .landing-page > section {
-  margin-bottom: calc(var(--space) * 2);
+  margin-top: calc(var(--space) * 2);
 }
 
 .landing-page--business .feecc h2.title-lined {
