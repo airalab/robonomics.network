@@ -1,0 +1,201 @@
+---
+title: 'Robonomics 5.0, part one: the summer we took the protocol apart'
+date: 2026-09-20
+published: true
+locale: 'en'
+cover_image: /blog/images/robonomics-5-0-runtime-first/cover.jpg
+tags: ['Robonomics 5.0', 'Robonomics parachain', 'Polkadot', 'Cyber-physical systems']
+description: "Over the summer Robonomics stopped being a blockchain node with robotics pallets attached and started becoming an infrastructure protocol for cyber-physical systems. Release 50 — Runtime-First — split the runtime from the binaries, moved collators onto polkadot-omni-node, and put the 5.0 architecture on paper: CPS, Scope, Subscription, Storage, Compute, Policy."
+abstract: "Part one of three. What actually changed in the protocol between June and September: the repository split, the omni-node migration, the new chain-spec crate, the dead pallet storage we purged, and the architecture the next five milestones are built on. Parts two and three cover the connectivity layer and the devices. EnsRationis [Robonomics Software Architect]"
+---
+
+This summer we were building Robonomics 5.0. Not a rebrand and not a marketing number: a deliberate change in what the protocol is for, followed by the unglamorous work of taking the existing codebase apart to make room for it.
+
+This is part one of three, and it covers the protocol itself — the runtime, the repositories, the architecture. Part two will cover the connectivity layer that carries sensor data to the chain, and part three the devices and the people running them. I am writing the protocol part first because everything else this summer was, in one way or another, downstream of it.
+
+## What 5.0 is actually about
+
+Robonomics 4.x was a Polkadot parachain with a set of robotics pallets on it: `datalog` for immutable logs, `launch` for commands, `liability` for agreements, `rws` for subscriptions, `digital-twin` for state, and, since 4.1, `cps` for hierarchical device topology. Each pallet solved its own problem, with its own notion of who is allowed to do what and who pays for it.
+
+5.0 keeps the pallets and changes the frame around them — the `cps` pallet that shipped in 4.x moves to the centre of the model instead of sitting alongside the rest. The network becomes an infrastructure protocol for cyber-physical systems, organised around a small number of concepts that every service shares:
+
+<TextCard alignContent="left" back="white" shadow="gray">
+
+**CPS** — the topology and canonical state of physical infrastructure: what nodes exist, how they nest, who owns them.
+
+**Subscription** — global resource entitlement attached to an account: how much this account may consume.
+
+**Storage** — persistent, content-addressed data that does not live in ordinary chain state.
+
+**Compute** — verifiable execution that happens off-chain and comes back with a proof.
+
+</TextCard>
+
+Two more layers hold it together: **Governance**, which sets the global parameters, and **Policy**, which decides when a proven fact is allowed to change canonical state. The execution model reads as four lines:
+
+<RbCode>
+
+```text
+Storage records facts.
+Compute derives and proves facts.
+Policy decides when facts may change CPS state.
+Runtime commits the transition.
+```
+
+</RbCode>
+
+The full architecture is now written down in the repository as [`docs/robonomics-5.0-roadmap.md`](https://github.com/airalab/robonomics/blob/master/docs/robonomics-5.0-roadmap.md), which is what the rest of this post refers to.
+
+## Release 50: the protocol repository is now a runtime repository
+
+The first implementation step shipped on **15 September** as [release 50, "Runtime-First"](https://github.com/airalab/robonomics/releases/tag/v50). It contains almost no new features. What it contains is a split.
+
+`airalab/robonomics` is now **runtime only** — runtime, pallets, protocol logic, chain specs, runtime upgrades. Everything that is a binary or an operational tool moved to a new repository, [`airalab/robins`](https://github.com/airalab/robins) — which has since become the place where new tooling gets written too:
+
+<RbCode>
+
+```text
+Robonomics 50+          Robins 5.x
+  runtime                 blockchain node
+  pallets                 utilities
+  specs                   service tooling
+```
+
+</RbCode>
+
+Concretely:
+
+- **`bin/` is gone.** The protocol repository no longer builds a node. Collators are expected to run the generic [`polkadot-omni-node`](https://crates.io/crates/polkadot-omni-node) from the Polkadot SDK, driven purely by a chain spec, and the rewritten `COLLATOR_GUIDE.md` is the operating manual for it. What is left on our side is a thin `robonomics` binary in `robins`, built on `polkadot-omni-node-lib` rather than on a bespoke node implementation.
+- **`tools/` is gone**, together with the Nix package definitions, the Docker images and the packaging scripts around them. The flake and the build scripts that stayed behind were cut back to runtime-only builds; `libcps` and the MQTT bridge moved to `robins`.
+- **`chains/` became the `chain-spec` crate**, which exposes the raw Kusama and Polkadot chain specs as `&'static str` constants with no dependencies at all — its `[dependencies]` section is empty. Downstream tooling can depend on it instead of vendoring JSON or fetching it from GitHub.
+- The net effect on the workspace: **−21k / +2.5k lines**.
+
+That last number is the point. A protocol that has to evolve through six phases does not want a large custom node implementation hanging off it.
+
+### The cleanup underneath
+
+Preparing the runtime for the new resource model started with deleting dead state. Release 50 carries `RemovePallet<TeleportXRT>` and `RemovePallet<ClaimXRT>` single-block migrations, which purge the storage of two pallets retired earlier this year. Completed Cumulus and XCMP-queue migrations were dropped as well; only the permanent `MigrateToLatestXcmVersion` remains.
+
+`spec_version` went **43 → 50**, aligning the runtime version with the 5.0 line rather than with an incremental count.
+
+Alongside that: `subxt` and `subxt-signer` moved to **0.50.x** with `subxt-api` regenerated against the new metadata, the Rust toolchain is pinned to **1.93.1** with the `wasm32v1-none` target, and all pallets, the runtime, the `subxt-api` client and `chain-spec` are now **published to crates.io** — so integrators can depend on versioned releases instead of git references.
+
+`SECURITY.md` was rewritten at the same time, with private reporting through GitHub Security Advisories, defined response SLAs, and an explicit release gate: nothing ships with a known unresolved vulnerability in first-party code or dependencies unless it has been accepted with a documented, time-boxed justification, with `cargo audit` and `cargo deny` enforced in CI.
+
+### Where the chain itself stands
+
+A release artifact and a live network are different things. Release 50 is a **runtime release** — the WASM is built, published and ready. The upgrade itself is a governance step, and it has not happened yet.
+
+On the live networks:
+
+<RbCode>
+
+```text
+polkadot.rpc.robonomics.network   specVersion: 43
+kusama.rpc.robonomics.network     specVersion: 42
+```
+
+</RbCode>
+
+So runtime 43 is what your transactions hit today on the Polkadot side, and 42 on Kusama, which the collator guide now marks as deprecated. Enactment of 50 is the next visible event, and the first milestone, `M0 — P0: Governance & Finish-off`, is explicitly about replacing Sudo with governance before the network starts upgrading itself on this cadence.
+
+## Robins: where the moving parts went
+
+`airalab/robins` sat empty for most of August and filled up through September. It is a Cargo workspace with four crates:
+
+- **`robonomics`** — the node, built on `polkadot-omni-node-lib`.
+- **`libcps`** — the CPS library and CLI: hierarchical on-chain nodes, tree visualisation, multi-algorithm AEAD encryption (XChaCha20-Poly1305, AES-256-GCM, ChaCha20-Poly1305).
+- **`mqtt-bridge`** — pulled out of `libcps` into its own crate, so that the CPS library no longer drags an MQTT client along with it. The bridge itself still builds on `libcps`.
+- **`edge`** — the newest one, and the one I would watch.
+
+The edge gateway went from an empty crate to a working MVP in a single afternoon in mid-September — HTTP ingress with a whitelist and an authentication module, then libp2p pubsub with WebSocket support — and picked up message and envelope helpers with an `--owner` flag the following day. A week later came the **Meshtastic ingress**, landing against a transport spec that had gone into `connectivity-protocol` a few days earlier, with the framing MTU pinned down in both repositories the same evening.
+
+Meshtastic is a LoRa mesh. A sensor on it has no IP address, no TLS, and a payload budget measured in dozens of bytes. Getting Robonomics telemetry across that link is what forced the protocol structures to be optimised for size rather than convenience — and it is the clearest argument for why the connectivity layer is a protocol of its own rather than an HTTP endpoint. That is where part two starts.
+
+The chain-facing side runs on crates.io dependencies now: `robins` consumes the published runtime, `subxt-api` and `chain-spec` rather than a git checkout of the repository next door. The protobuf definitions still come in as a submodule of `connectivity-protocol` — that is part two's story.
+
+## The architecture, in plain terms
+
+The roadmap is precise and fairly dense. It reads much easier with a building in it, so: say you have put twenty air-quality sensors on an office block — a few per floor, a gateway on the roof.
+
+**CPS is the map of that installation.** Every sensor is a node with a permanent id and a permanent parent, so the nodes form a tree shaped like the building: device under floor under block. A node carries a short description that rarely changes — model, firmware, calibration — and a short current state: latest reading, status, mode. Measurements over time do not live here. The chain holds the shape of your installation, not its data. And since a parent never changes, you do not move a sensor to another floor: you create a new node there, and the old one stays as history.
+
+**Scope is the fence around it.** You draw one around the whole block, and it names the owner and the spending limits for everything underneath. Draw a second Scope around a single floor and that floor answers to its own owner instead. Fences do not leak — authority, permissions and budgets all stop at them. Handing the block to a new owner does not mean rewriting the tree either: they draw a fresh Scope over the same root, and the old one stops being the active one.
+
+**Access is the set of keys you hand out**, and the keys are deliberately separate from each other:
+
+<RbCode>
+
+```text
+Write        change what a node says about itself
+Transaction  spend the Scope's transaction budget
+Storage      spend the Scope's storage budget
+Compute      spend the Scope's compute budget
+CreateScope  hand the Scope to a new owner
+```
+
+</RbCode>
+
+So the contractor who services the sensors can hold `Write` and nothing else: he updates firmware and calibration records, and he cannot spend anything of yours. A key also works only inside the fence it was issued in — a key to one floor is not a key to the block.
+
+**Subscription is the wallet.** It belongs to an account rather than to a device, and it is filled either by locking XRT through RWS or by winning an auction. It answers exactly one question: how much this account may still consume. It says nothing about who is allowed to do what — that is what the keys are for.
+
+**Transactions are priced in XRT, and there is no second price list.** This is the part I like most. A subscription does not make transactions cheaper; it gives you a budget denominated in XRT and spends it at the ordinary rate — same base fee, same weight, same everything. What you choose is where the money comes from:
+
+<TextCard alignContent="left" back="white" shadow="gray">
+
+**Token** — from the signer's own XRT balance.
+
+**Subscription(Account)** — from the signer's own subscription.
+
+**Subscription(Scope)** — from the subscription of whoever owns the Scope the device sits in, which requires the `Transaction` key there.
+
+</TextCard>
+
+That third line is why twenty sensors on a roof can write to the chain while holding no tokens at all. They sign; the building pays. No second economy had to be invented for it.
+
+**Storage is where the readings actually go.** You hand it a node and some data; it works out which fence the node is behind, charges that Scope's storage budget, writes a content-addressed reference into the chain and puts the bytes themselves into transaction storage. Storing does not change what the node says about itself — for that you still need the `Write` key, or a Policy that allows it.
+
+**Compute is the mirror image.** A job is requested against a node, runs off-chain on a worker, and comes back with a RISC Zero proof. What returns is a proven fact, not permission to act on it.
+
+**Policy is what turns a proven fact into a change.** It is deliberately the smallest piece at the start: a rule saying which proof, against which expected previous state, may update which node — with guards so a stale proof cannot be replayed against state that has since moved on.
+
+## Where we actually are
+
+The implementation sequence in the roadmap has six phases; the repository tracks the work in five milestones that follow it loosely. M0 — governance and the finish-off work around it — is most of the way through. M1, the resource model, has barely started. M2, M3 and M4 are still issue lists.
+
+Release 50 closed the first item of the sequence — runtime separation. The path from here, in the order it is planned:
+
+<RbCode>
+
+```text
+Runtime separation            <- shipped
+  -> Community governance
+  -> Subscription resource accounting
+  -> CPS authorization and resource budgets
+  -> Storage (Bulletin Chain based)
+  -> Verifiable Compute (RISC Zero based)
+```
+
+</RbCode>
+
+There is no Storage or Compute code yet. The diagram above is a plan, not a status report.
+
+## What this summer looked like from the inside
+
+It was, mostly, subtraction. Twenty-one thousand lines deleted, two pallets' worth of storage purged, a bespoke node implementation retired in favour of one maintained by the Polkadot SDK team, a repository split in half. The visible output of three months is a runtime that does roughly what the old one did, in a workspace a fraction of the size, plus a document describing what it is going to do next.
+
+That is what the work looks like when the goal is to make room. The features arrive in the milestones after this one — and the parts of the summer that produced something you can hold, or watch data move through, are parts two and three.
+
+---
+
+*Part two: the connectivity layer — protobuf envelopes, the cloud pipeline, and why a LoRa mesh redesigned our message format.*
+
+Release notes: [github.com/airalab/robonomics/releases/tag/v50](https://github.com/airalab/robonomics/releases/tag/v50)
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/robonomics-5-0-runtime-first/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">https://x.com/EnsRationis</a></em></span>
+</div>
