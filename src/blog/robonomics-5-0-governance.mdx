@@ -90,14 +90,14 @@ After that, there is no developer key.
 
 ## Where it stands
 
-The work is in [airalab/robonomics#652](https://github.com/airalab/robonomics/pull/652), tracked in [#629](https://github.com/airalab/robonomics/issues/629):
+*Updated 22 September:* the governance code is merged. It went in through [airalab/robonomics#652](https://github.com/airalab/robonomics/pull/652), tracked in [#629](https://github.com/airalab/robonomics/issues/629):
 
 - `pallet-preimage`, `pallet-scheduler`, `pallet-referenda`, `pallet-conviction-voting` and `pallet-whitelist` are integrated and benchmarked, with a minimal custom origin for the fast track;
 - the track parameters above were agreed in the team on 21 September;
-- the storage left behind by the old 4.x governance pallets (Democracy, Treasury, Technical Committee), switched off but never cleaned, is being cleared before the new pallets take over the same names;
+- the storage left behind by the old 4.x governance pallets (Democracy, Identity, Preimage, Treasury, Technical Committee and Membership), switched off but never cleaned, is gone: on 22 September the developer multisig removed all 43 keys in a single Sudo batch ([#660](https://github.com/airalab/robonomics/issues/660)), so the new pallets take over the same names on a clean state;
 - the developer guide now has a section for running a local chain with `polkadot-omni-node`, so anyone can try referenda before they reach the live network.
 
-The plan is to ship governance in version 5.1, together with the next CPS updates, as a runtime upgrade on the Polkadot parachain. The numbers above are current code, not final law. Once governance is live, changing them will itself be a referendum.
+What remains is the release: governance ships in version 5.1, together with the next CPS updates, as a runtime upgrade on the Polkadot parachain. The numbers above are current code, not final law. Once governance is live, changing them will itself be a referendum.
 
 ## What to do if you hold XRT
 
