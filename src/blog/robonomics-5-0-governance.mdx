@@ -1,0 +1,115 @@
+---
+title: 'Robonomics 5.0: handing the keys to XRT holders'
+date: 2026-09-22
+published: true
+locale: 'en'
+cover_image: /blog/images/robonomics-5-0-governance/cover.jpg
+tags: ['Robonomics 5.0', 'Robonomics parachain', 'Polkadot', 'Governance', 'OpenGov']
+description: "Today governance of the Robonomics parachain comes down to a developer multisig. Starting with version 5.1 we give that privilege up in favour of standard Polkadot OpenGov, configured for a project with a small community: a permissionless Root track, a whitelisted fast track, and XRT holders deciding both."
+abstract: "A progress note from the Robonomics 5.0 work: how the new governance is designed, the two referendum tracks and their current parameters, the staged handover that ends with a referendum removing the developer privilege, and where the code stands today. EnsRationis [Robonomics Software Architect]"
+---
+
+On 21 September the Robonomics parachain on Polkadot was upgraded to runtime 50, the ["Runtime-First" release](https://github.com/airalab/robonomics/releases/tag/v50) from [part one](/blog/robonomics-5-0-runtime-first/). The first step of the 5.0 plan is now live on the main network, and work has moved on to the second one: governance.
+
+Today governance of the Robonomics parachain comes down to the work of a developer multisig. Every privileged action — a runtime upgrade, collator limits and bonds, a protocol parameter — goes through Sudo, and Sudo is held by a multisig of the development team. That was the right tool for bootstrapping a network. It is the wrong tool for the network 5.0 is meant to be.
+
+Starting with version 5.1, we give that privilege up in favour of the standard Polkadot mechanism, OpenGov, configured for the job at hand: a project with a small community.
+
+In the 5.0 roadmap, community governance is step two, right after the runtime split from [part one](/blog/robonomics-5-0-runtime-first/), and it carries the highest priority of the whole plan. The reason is where Robonomics is now. The network has entered early production: real devices and real users depend on it. To call Robonomics a truly open cloud for IoT, we have to give up the simplest possible scheme for steering that cloud from here on, a developer key. That is why we are starting to roll out OpenGov now.
+
+This post covers what we are building, how a decision passes, and where the work stands this week.
+
+## Standard OpenGov, sized for a small community
+
+We are not inventing a governance system: the pallets are the ones Polkadot itself runs. What we change is the configuration. Polkadot's setup — dozens of tracks, a Fellowship, treasury spending lines — is built for a very large and active electorate. Robonomics has a small community, so we keep the mechanism and very little of the structure around it:
+
+<TextCard alignContent="left" back="white" shadow="gray">
+
+**The community owns Root.** Any account can submit a referendum. XRT holders decide it.
+
+**Two tracks only.** A general Root track and a Whitelisted Caller fast track.
+
+**No Council, no Fellowship, no Root key for the core team.** Once the developer multisig gives up Sudo, nobody can dispatch a privileged call directly.
+
+</TextCard>
+
+Treasury governance, Safe Mode, transaction pause and specialised spending tracks are explicitly out of scope. They can come later as separate proposals, when there is a concrete need for them. None of them is required to give up the developer privilege.
+
+## How a decision passes
+
+Anyone can put a call on chain as a preimage and open a referendum on it. XRT holders vote with conviction: locking tokens for longer multiplies the vote, from 1x for a 7-day lock up to 6x for 224 days, or 0.1x with no lock at all. Voting power can be delegated.
+
+A referendum passes when two curves are met at once. **Approval** is the share of "aye" in the votes cast. **Support** is the share of all XRT that voted "aye". Both thresholds start high and decline over the decision period. Once a referendum passes and holds through its confirmation window, the Scheduler enacts the call as Root.
+
+## Two tracks
+
+**Root** is the conservative path for anything that needs Root: runtime upgrades, governance changes, collator limits (slots, bond, invulnerables) and protocol configuration. In the current code:
+
+<RbCode>
+
+```text
+Root track
+  decision period     up to 14 days
+  approval            90% -> 51%
+  support             50% -> 15%
+  prepare / confirm   12 h / 24 h
+  deciding at once    1
+```
+
+</RbCode>
+
+The support floor went through a team discussion of its own. A common rule of thumb for legitimate turnout is around 25%, and we settled on starting at 50% and letting it decline to 15%.
+
+**Whitelisted Caller** is the fast path for reviewed, time-sensitive technical changes. The core team — a small collective of at most seven members, where half of the members must agree — can whitelist the hash of one specific call. Whitelisting executes nothing. It only makes that exact call eligible for a fast public referendum:
+
+<RbCode>
+
+```text
+Whitelisted Caller track
+  decision period     up to 3 days
+  approval            99% -> 80%
+  support             2% -> 1%
+  confirm             20 min
+  deciding at once    10
+```
+
+</RbCode>
+
+The trade is deliberate: a much higher approval bar and a prior technical review in exchange for lower turnout and shorter windows. Even the fast track needs at least 1% of all XRT voting "aye". A call that is not whitelisted cannot execute through it, and can still go through the normal Root track.
+
+That leaves exactly two ways to do anything privileged on Robonomics: a community Root referendum, or a core-team-reviewed call plus a fast community referendum. Both end in an XRT-holder vote.
+
+## Handing over without a cliff
+
+Giving up the multisig's privilege on the same day governance switches on would be reckless. If the first configuration turned out to be broken, there would be no way back. So the handover happens in two stages:
+
+1. **Bootstrap.** The governance pallets ship in a normal runtime upgrade. The developer multisig keeps Sudo for a short while as a recovery tool in case something in the new setup is wrong.
+2. **Self-removal.** The first real governance action is a runtime upgrade, submitted and enacted through OpenGov itself, that removes Sudo and with it the multisig's privilege. If it passes, it also proves that governance can upgrade the chain without developer access.
+
+After that, there is no developer key.
+
+## Where it stands
+
+The work is in [airalab/robonomics#652](https://github.com/airalab/robonomics/pull/652), tracked in [#629](https://github.com/airalab/robonomics/issues/629):
+
+- `pallet-preimage`, `pallet-scheduler`, `pallet-referenda`, `pallet-conviction-voting` and `pallet-whitelist` are integrated and benchmarked, with a minimal custom origin for the fast track;
+- the track parameters above were agreed in the team on 21 September;
+- the storage left behind by the old 4.x governance pallets (Democracy, Treasury, Technical Committee), switched off but never cleaned, is being cleared before the new pallets take over the same names;
+- the developer guide now has a section for running a local chain with `polkadot-omni-node`, so anyone can try referenda before they reach the live network.
+
+The plan is to ship governance in version 5.1, together with the next CPS updates, as a runtime upgrade on the Polkadot parachain. The numbers above are current code, not final law. Once governance is live, changing them will itself be a referendum.
+
+## What to do if you hold XRT
+
+Keep your XRT in a wallet you control on the Robonomics parachain. Tokens sitting on an exchange cannot vote. We will publish a short guide to voting and delegating when the first referendum opens.
+
+---
+
+Release 50 and the 5.0 architecture: [Robonomics 5.0, part one](/blog/robonomics-5-0-runtime-first/) · Roadmap: [docs/robonomics-5.0-roadmap.md](https://github.com/airalab/robonomics/blob/master/docs/robonomics-5.0-roadmap.md)
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/robonomics-5-0-runtime-first/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">https://x.com/EnsRationis</a></em></span>
+</div>
