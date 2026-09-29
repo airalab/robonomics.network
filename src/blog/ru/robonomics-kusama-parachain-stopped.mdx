@@ -1,0 +1,40 @@
+---
+title: 'Парачейн Robonomics на Kusama остановлен'
+date: 2026-09-29
+published: true
+locale: 'ru'
+cover_image: /blog/images/robonomics-kusama-parachain-stopped/cover.jpg
+tags: ['Kusama', 'Robonomics parachain', 'Polkadot', 'XRT', 'Migration']
+description: "28 сентября парачейн Robonomics на Kusama выпустил последний блок — #12 268 838. R&D-стадия закончена. Балансы XRT на Kusama переносятся на Polkadot с бонусом +20%."
+abstract: "Коротко о закрытии главы Kusama: когда остановилась сеть, как мы её остановили, где лежит архив и что будет с XRT на Kusama. EnsRationis [Robonomics Software Architect]"
+translated: true
+---
+
+28 сентября 2026 года парачейн Robonomics на Kusama (para ID 2048) выпустил последний блок: **#12 268 838**, в 19:48 UTC. С тех пор новых блоков нет.
+
+На Kusama с 2021 года шла R&D-стадия Robonomics. Продакшн переехал на Polkadot, и на этом глава Kusama закрыта.
+
+## Как мы её остановили
+
+Первой попыткой был вызов через мультисиг команды, который удалил очередь ключей коллаторов. На следующей смене сессии набор валидаторов действительно опустел, но список авторов блоков в Aura остался прежним, и блоки продолжали идти. Тогда мы провели через тот же мультисиг финальный апгрейд рантайма (spec version 49). Он вступил в силу на блоке #12 268 835, и через три блока сеть встала. Кортайм на Kusama был оплачен до 22 сентября, продлевать его не стали.
+
+Состояние сети на последнем блоке сохраняется как есть. Архив базы парачейна лежит на [snapshots.robonomics.network](https://snapshots.robonomics.network/#kusama).
+
+## Что будет с XRT на Kusama
+
+Все балансы XRT на последнем блоке переносятся на Polkadot с **бонусом +20%**. Buyback для Kusama не предусмотрен.
+
+Почему не так, как в Ethereum: для держателей XRT в Ethereum переход на Polkadot был разворотом. Для них многое поменялось, поэтому им дали выбор между миграцией с бонусом и buyback. У держателей на Kusama не меняется ничего, кроме перехода из R&D в продакшн. +20% — наше спасибо за то, что дошли до продакшна вместе.
+
+Где балансы появятся на Polkadot и нужно ли что-то для этого делать, расскажем отдельным постом.
+
+Торговля XRT продолжается на DEX (Uniswap). О токеномике: [Robonomics production stage: tokenomics launch](/blog/robonomics-production-stage-tokenomics-launch/) (на английском).
+
+Спасибо сообществу Kusama и всем, кто держал коллаторы и строил на Robonomics.
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/robonomics-5-0-runtime-first/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">https://x.com/EnsRationis</a></em></span>
+</div>

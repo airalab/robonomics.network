@@ -1,0 +1,39 @@
+---
+title: 'The Robonomics parachain on Kusama has stopped'
+date: 2026-09-29
+published: true
+locale: 'en'
+cover_image: /blog/images/robonomics-kusama-parachain-stopped/cover.jpg
+tags: ['Kusama', 'Robonomics parachain', 'Polkadot', 'XRT', 'Migration']
+description: "On September 28 the Robonomics parachain on Kusama produced its final block, #12,268,838. The R&D stage is over. Kusama XRT balances move to Polkadot with a +20% bonus."
+abstract: "A short note on closing the Kusama chapter: when the chain stopped, how we stopped it, where the archive lives, and what happens to Kusama XRT. EnsRationis [Robonomics Software Architect]"
+---
+
+On September 28, 2026 the Robonomics parachain on Kusama (para ID 2048) produced its final block: **#12,268,838**, at 19:48 UTC. No blocks have been produced since.
+
+Kusama hosted the Robonomics R&D stage since 2021. Production has moved to Polkadot, and this closes the Kusama chapter.
+
+## How we stopped it
+
+The first attempt was a team multisig call that removed the queued collator keys. The session validator set did go empty at the next rotation, but the block authoring set in Aura stayed as it was, so blocks kept coming. We then enacted a final runtime upgrade (spec version 49) through the same multisig. It took effect at block #12,268,835, and the chain halted three blocks later. Coretime on Kusama ran until September 22 and was not renewed.
+
+The chain state at the final block stays as it is. A database archive of the parachain is available at [snapshots.robonomics.network](https://snapshots.robonomics.network/#kusama).
+
+## What happens to Kusama XRT
+
+All XRT balances at the final block move to Polkadot with a **+20% bonus**. There is no buyback option on the Kusama side.
+
+Why this differs from Ethereum: for XRT holders on Ethereum the move to Polkadot was a pivot. A lot changed for them, so they were offered a choice between migrating with a bonus and the buyback. For Kusama holders nothing changes except the step from R&D into production. The +20% is our thank-you for making it to production together.
+
+Where the balances show up on Polkadot and whether any action is needed will follow in a separate post.
+
+XRT trading continues on DEX (Uniswap). Tokenomics background: [Robonomics production stage: tokenomics launch](/blog/robonomics-production-stage-tokenomics-launch/).
+
+Thanks to the Kusama community and to everyone who ran collators and built on Robonomics there.
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/robonomics-5-0-runtime-first/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">https://x.com/EnsRationis</a></em></span>
+</div>
