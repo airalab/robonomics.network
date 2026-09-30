@@ -1,0 +1,67 @@
+---
+title: 'Релиз Robonomics 51: управление переходит к держателям XRT, у CPS появились Scope и Access'
+date: 2026-09-30
+published: true
+locale: 'ru'
+cover_image: /blog/images/robonomics-release-51-governance/cover.jpg
+tags: ['Robonomics 5.0', 'Governance', 'OpenGov', 'CPS', 'Runtime']
+description: "Релиз 51 закрывает большую часть первой фазы роадмапа Robonomics 5.0: минимальный OpenGov под управлением держателей XRT, модель полномочий Scope / Access для CPS и крейт метаданных для встраиваемых клиентов."
+abstract: "Что вошло в рантайм 51, что меняется для интеграторов и что дальше. EnsRationis [Robonomics Software Architect]"
+translated: true
+---
+
+Вышел [релиз 51 «Governance»](https://github.com/airalab/robonomics/releases/tag/v51). Он закрывает большую часть первой фазы [роадмапа Robonomics 5.0](https://github.com/airalab/robonomics/blob/master/docs/robonomics-5.0-roadmap.md): управление сообществом и модель полномочий для киберфизических систем (CPS).
+
+**Статус:** рантайм 51 собран и опубликован, но ещё не активирован. Парачейн Robonomics на Polkadot работает на spec version 50.
+
+## OpenGov под управлением держателей XRT
+
+Это стек, о котором мы писали в посте [Robonomics 5.0: управление](/ru/blog/robonomics-5-0-governance/), теперь он вошёл в релиз ([#652](https://github.com/airalab/robonomics/pull/652)). Это стандартный OpenGov из Polkadot, настроенный под небольшое сообщество, и в нём только два трека:
+
+- **Root** — обычный путь для апгрейдов рантайма и любых привилегированных вызовов.
+- **Whitelisted Caller** — быстрый путь для технических изменений. Коллектив Core Team может только внести хэш вызова в белый список. Чтобы вызов исполнился, всё равно нужен публичный референдум держателей XRT.
+
+Council нет, Root-ключа у разработчиков нет.
+
+Это первая стадия передачи управления. Sudo остаётся только как аварийный путь. Следующий шаг — апгрейд рантайма, который удаляет Sudo, и предложить и провести его должен сам OpenGov ([#633](https://github.com/airalab/robonomics/issues/633)).
+
+## CPS v1.0: Scope и Access
+
+Паллет CPS переходит от владельцев отдельных узлов к модели Scope / Access ([#653](https://github.com/airalab/robonomics/pull/653)).
+
+- **Scope** — административная и экономическая граница поддерева: здание, парк устройств, клиент. Узел принадлежит ближайшему Scope выше по дереву. Вложенный Scope — жёсткая граница для полномочий, а позже и для учёта ресурсов.
+- **Access** передаёт права внутри одного Scope: `Write` меняет данные узла, `CreateScope` создаёт Scope или передаёт управление. Право выдаётся на один узел или на всё поддерево и никогда не переходит через вложенный Scope.
+- **Родитель узла больше не меняется.** Чтобы перенести узел, создайте новый и удалите старый.
+- **Смена владельца создаёт новое поколение Scope.** Выделяется новый ID, и все старые права сразу перестают действовать. Отдельной процедуры передачи и принятия больше нет.
+- **Комиссия зависит от объёма данных.** Метаданные узла — до 1 КиБ, payload — до 8 КиБ.
+- **Владельца узла даёт один вызов.** `CpsApi::resolve_scope(node)` возвращает Scope, его корень и владельца через стандартный runtime API. Своего RPC не нужно.
+
+## Для встраиваемых клиентов
+
+Метаданные рантайма вынесены в отдельный крейт `robonomics-runtime-metadata` ([#665](https://github.com/airalab/robonomics/pull/665)). Это единый источник для всех генераторов API: сейчас для `subxt-api` на Rust, следом — для встраиваемого `embed-api`.
+
+Инженерные правила тоже стали строже: каждая экстринзика должна оплачиваться по бенчмаркам весов (это проверяет CI), try-runtime обязателен при любом изменении версии хранилища, а локальная тестовая сеть запускается командой `polkadot-omni-node --dev` без дополнительных бинарников.
+
+## Что меняется для интеграторов
+
+Изменения CPS ломают совместимость:
+
+- удалены `move_node`, `transfer_ownership`, `accept_ownership` и `delete_scope`;
+- `resolve_ownership` заменён на `resolve_scope` — клиентам и `libcps` стоит получать владельца через него, а не обходить цепочку родителей;
+- метаданные больше 1 КиБ и payload больше 8 КиБ отклоняются;
+- `subxt-api` теперь требует subxt 0.51, а за метаданными стоит обращаться к `robonomics-runtime-metadata`.
+
+После активации апгрейды рантайма идут через референдумы Root или Whitelisted Caller.
+
+## Что дальше
+
+Следующий релиз удалит Sudo через OpenGov и принесёт Subscription с оплатой транзакций из Scope: устройство, принадлежащее Scope, сможет отправить первую транзакцию без XRT на балансе, платит владелец.
+
+Полные release notes: [github.com/airalab/robonomics/releases/tag/v51](https://github.com/airalab/robonomics/releases/tag/v51). Обсуждение на форуме Polkadot: [Robonomics: replacing Sudo with a two-track OpenGov](https://forum.polkadot.network/t/robonomics-replacing-sudo-with-a-two-track-opengov-sized-for-a-small-community/18719).
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/robonomics-5-0-runtime-first/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">https://x.com/EnsRationis</a></em></span>
+</div>
