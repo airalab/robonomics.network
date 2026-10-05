@@ -1,0 +1,96 @@
+---
+title: 'Robonomics, July to September 2026: what sensors can do now'
+date: 2026-10-05
+published: true
+locale: 'en'
+cover_image: /blog/images/robonomics-july-september-2026/cover.jpg
+tags: ['Robonomics 5.0', 'Sensors', 'IoT', 'Polkadot', 'Quarterly report']
+description: "Sensors on Robonomics can now sign every measurement, encrypt data for their owner only, and work where there is no Wi-Fi. A report on what the team shipped from July to September 2026."
+abstract: "What you can now do with sensors on Robonomics, what shipped this quarter, and who did what. EnsRationis [Robonomics Software Architect]"
+---
+
+This summer sensors on Robonomics learned three things: to prove that every measurement is genuine, to hide their data from everyone but the owner, and to deliver it where there is no Wi-Fi. To get there we rebuilt Robonomics — a cloud for IoT devices — and built a connectivity layer for sensors from scratch. In numbers that is 700+ commits, 100+ merged pull requests and seven releases, but the numbers are not the point.
+
+Here is what you can now do with sensors on Robonomics:
+
+- **Readings cannot be forged on the way.** The sensor signs every measurement, and the cloud gateway checks the signature before anything is recorded.
+- **Sensors work where there is no Wi-Fi.** Readings travel over LoRa radio and through Meshtastic mesh networks — signed there too.
+- **Private data is visible to the owner only.** The sensor encrypts its readings, and the owner reads them on sensors.social with their own key.
+- **The owner decides who sees their devices' data.** Device trees in the Robonomics cloud now have scopes and access rights.
+- **Sensors don't need a server of their own.** The Robonomics cloud gateway takes data from hundreds of devices, and its health is visible on a status page.
+- **Every assembled sensor is tested before it ships.** A test bench checks a whole batch at once and finds faults from telemetry.
+- **A smart home reports its own problems.** Home Assistant sends an encrypted report through the Robonomics cloud, and it becomes a support ticket at Pinout — the company that makes the sensors and installs smart homes.
+
+And the Robonomics network itself:
+
+- **The whole network now runs on Polkadot.** The Kusama parachain stopped on 28 September. XRT balances will be carried over to Polkadot with a 20% bonus; holders don't need to do anything.
+- **XRT holders are starting to govern the network.** Their voting has been live since 30 September. The developer key stays for now as an emergency path and will be removed by a vote.
+- **Fees on Polkadot Asset Hub can be paid in XRT.** An XRT-DOT swap pool is now there.
+
+## What shipped
+
+Releases of the quarter — almost all of them landed in the second half.
+
+| Date | Release | What changed |
+|---|---|---|
+| 30 September | [Robonomics 51 "Governance"](https://github.com/airalab/robonomics/releases/tag/v51) | XRT holder voting; device trees get scopes and access rights |
+| 15 September | [Robonomics 50 "Runtime-First"](https://github.com/airalab/robonomics/releases/tag/v50) | Network rules moved to their own repository, node software and tools to a second one |
+| 29 August | [Connectivity protocol v1, beta](https://github.com/airalab/connectivity-protocol/releases/tag/v1-beta.1) | One format for signed sensor messages; the alpha came out on 15 August |
+| 22 August | [Cloud connectivity gateway, first version](https://github.com/airalab/connectivity-cloud/releases/tag/v0-alpha.1) | Accepts readings, checks the sensor and passes the data on |
+| 13 August | [Robonomics 4.3](https://github.com/airalab/robonomics/releases/tag/v4.3.0) | Servers that run the network are rewarded for every block they produce |
+| 6 July | [Sensor firmware R_2026-06.01](https://github.com/airalab/altruist-firmware/releases/tag/v_R_2026-06.01) | Sensor groups without the cloud, display modes, stability |
+
+### The Robonomics protocol
+
+The summer went into preparing Robonomics 5.0. We added XRT holder voting and made device-tree storage faster. At the end of September a library for microcontrollers appeared — the first step towards sensors that write to the network themselves. Next in line: reading and writing directly, with no server in between.
+
+The network became more self-reliant. In August our own public server for the network went live on our own hardware. At the end of September akru showed how to work with the network with no public servers at all ([post on the Polkadot forum](https://forum.polkadot.network/t/talking-to-a-parachain-without-public-rpcs-subxt-based-api-on-top-of-a-light-client/18786)). The Kusama parachain was stopped, and a full copy of its data was published for anyone. How to hand control of the network to XRT holder voting was discussed with the Polkadot community on the [forum](https://forum.polkadot.network/t/robonomics-replacing-sudo-with-a-two-track-opengov-sized-for-a-small-community/18719).
+
+### Connecting sensors
+
+The main news of the quarter. In August we built a cloud connectivity gateway from scratch: it accepts signed messages, keeps a list of trusted sensors, tracks which of them are online, and passes the data on across the network. In September the gateway was simplified and moved to the cloud, and it got a status page. On the sensor side, a gateway for Meshtastic networks appeared. At the end of September three public data relay nodes went live, together with their status page [pubsub.robonomics.network](https://pubsub.robonomics.network).
+
+### Sensors.social
+
+A sensor owner can encrypt their data and view it on the map with their own key. On the test network the map already reads readings directly from device trees in the Robonomics cloud. Protocol libraries for web apps are out. The site got a sensor comparison page, an updated project history and new posts: the Koh Phangan network a year later, sensors in Thailand, setting up a sensor with an AI assistant, and [air in autumn and winter](https://sensors.social/blog/autumn-winter-smoke-pm25-pm10-heating-season).
+
+### Sensors
+
+The firmware got a new interface, encryption, a choice of connection region and a long series of LoRa and Meshtastic improvements. At the end of September sensors started signing their messages in mesh networks too. Test firmware builds are published automatically to the [web flasher](https://github.com/airalab/webflasher). A test bench for assembled devices appeared: it checks a whole batch of sensors at once and analyses their telemetry. The hardware repository gained mounts, print profiles for enclosures and a wiring diagram for a Meshtastic bridge for the outdoor sensor. All three variants — Urban, Insight and the kit — now show up in Amazon search. On [Instagram](https://www.instagram.com/altruist.lab/) a video series came out about what you can do with the sensors.
+
+### Website, shop and archive cleanup
+
+The robonomics.network blog published posts on rewards for running the network, a series on Robonomics 5.0, the Kusama shutdown and release 51. The cyberpunks.shop store now speaks German and Dutch and has a support form. Old projects got licences and a "research project" label linking to the current implementation. At the end of September we decided to move software to the Apache-2.0 licence and hardware to the open CERN-OHL-W.
+
+### Pinout on Robonomics
+
+Pinout launched a customer support service on the Robonomics cloud. [Robonomics Report Service](https://github.com/PinoutLTD/rrs-ha-integration) watches Home Assistant at the customer's home. When something breaks, it sends an encrypted report through Robonomics on Polkadot, and the report becomes a support ticket by itself. Once a day the home checks in to say it is alive — so silence becomes a signal too. Nobody sees the home's secret keys, not even the installer. A series of beta versions came out in September, and the first reports went all the way from a Raspberry Pi to a ticket.
+
+Pinout also started a [device registry](https://github.com/PinoutLTD/pinout_device_registry): every device can be traced from assembly to serial number and shipping kit. And it began working with AI agents: one helps set up smart homes on site, another handles customer tickets.
+
+## Who did what
+
+| Contributor | What they worked on |
+|---|---|
+| [akru](https://github.com/akru) | Protocol and releases, node software, the connectivity gateway, microcontroller libraries |
+| [ensrationis](https://github.com/ensrationis) | Architecture, blogs and documentation, the sensors.social site, archive cleanup |
+| [zirreal](https://github.com/zirreal) | Sensor firmware: encryption, LoRa and Meshtastic; the sensors.social site and map |
+| [vol4tim](https://github.com/vol4tim) | Data collector for the sensors.social map |
+| [Fingerling42](https://github.com/Fingerling42) | Sensor test bench, diagnostics in the firmware, the Pinout device registry |
+| [positivecrash](https://github.com/positivecrash) | The cyberpunks.shop store, sensor enclosures and mounts |
+| [dergudzon](https://github.com/dergudzon) | Performance benchmarks, public servers and data relay nodes, the Kusama data copy |
+| [wimmer-savinova](https://github.com/wimmer-savinova) | Marketing and shop tasks |
+| [Ludovich88](https://github.com/Ludovich88) | Documentation for the Meshtastic bridge for the outdoor sensor |
+| [PavelSheremetev](https://github.com/PavelSheremetev) | Updated the 3D model of an outdoor sensor enclosure part for the new board; closed the task on Wi-Fi setup through the web flasher |
+| [Vourhey](https://github.com/Vourhey) | Robonomics Report Service for Home Assistant and its services, the robonomics-interface 3.0 release candidate, Pinout AI agents |
+
+The skeleton of the connectivity gateway was put together at the end of July by the GitHub Copilot AI agent, working from the team's tasks. Users brought ideas for the sensor firmware too — for example, automatic calibration of the CO₂ sensor.
+
+Sources: [airalab on GitHub](https://github.com/airalab) and PinoutLTD for 1 July – 30 September, including the private shop and task repositories, plus the team's open chat rooms. Part of the code was written by AI agents working from the team's tasks.
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/robonomics-5-0-runtime-first/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">https://x.com/EnsRationis</a></em></span>
+</div>
