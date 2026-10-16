@@ -897,7 +897,6 @@
 	"Robotics": "Робототехника",
 	"Request_Robonomics_for_yor_business": "Запросите Robonomics для вашего бизнеса",
 	"We_invite_you_to_explore_our_ideas_and_latest_updates_on": "Мы приглашаем вас ознакомиться с нашими идеями и последними новостями о",
-	"XRT_is_the_token_of_the_Robonomics_cloud_on_Polkadot__Devices_pay_for_their_cloud_subscription_in_XRT__and_XRT_holders_govern_the_network_": "XRT — токен облака Robonomics на Polkadot. Устройства оплачивают в XRT подписку на облако, а держатели XRT управляют сетью.",
 	"XRT_from_the_R_D_stage__Ethereum_and_Kusama_": "XRT со стадии R&D (Ethereum и Kusama)",
 	"Released_to_holders_on_migration": "Выдаётся держателям при миграции",
 	"Core_team_DAO": "DAO основной команды",
@@ -965,5 +964,6 @@
 	"launched_as_an_experiment": "запущен как эксперимент",
 	"no_migration_needed": "миграция не нужна",
 	"Aug_2026": "Авг 2026",
-	"subscriptions_became_transferable": "подписку можно передавать"
+	"subscriptions_became_transferable": "подписку можно передавать",
+	"XRT_is_the_token_of_the_Robonomics_cloud_on_Polkadot__Devices_pay_for_their_cloud_subscription_in_XRT__and_XRT_holders_govern_the_network_and_keep_it_running_": "XRT — токен облака Robonomics на Polkadot. Устройства оплачивают в XRT подписку на облако, а держатели XRT управляют сетью и обслуживают её."
 }

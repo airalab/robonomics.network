@@ -897,7 +897,6 @@
 	"Robotics": "Robotics",
 	"Request_Robonomics_for_yor_business": "Request Robonomics for yor business",
 	"We_invite_you_to_explore_our_ideas_and_latest_updates_on": "We invite you to explore our ideas and latest updates on",
-	"XRT_is_the_token_of_the_Robonomics_cloud_on_Polkadot__Devices_pay_for_their_cloud_subscription_in_XRT__and_XRT_holders_govern_the_network_": "XRT is the token of the Robonomics cloud on Polkadot. Devices pay for their cloud subscription in XRT, and XRT holders govern the network.",
 	"XRT_from_the_R_D_stage__Ethereum_and_Kusama_": "XRT from the R&D stage (Ethereum and Kusama)",
 	"Released_to_holders_on_migration": "Released to holders on migration",
 	"Core_team_DAO": "Core team DAO",
@@ -965,5 +964,6 @@
 	"launched_as_an_experiment": "launched as an experiment",
 	"no_migration_needed": "no migration needed",
 	"Aug_2026": "Aug 2026",
-	"subscriptions_became_transferable": "subscriptions became transferable"
+	"subscriptions_became_transferable": "subscriptions became transferable",
+	"XRT_is_the_token_of_the_Robonomics_cloud_on_Polkadot__Devices_pay_for_their_cloud_subscription_in_XRT__and_XRT_holders_govern_the_network_and_keep_it_running_": "XRT is the token of the Robonomics cloud on Polkadot. Devices pay for their cloud subscription in XRT, and XRT holders govern the network and keep it running."
 }
