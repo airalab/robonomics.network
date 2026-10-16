@@ -3,23 +3,265 @@ import Layout from "../layouts/Layout.astro";
 import SvgIcon from "../components/SvgIcon.astro";
 
 const tokenomicsIntroText = `
-  ${await $tr('We are launching a new production phase together with updated production tokenomics. This page will evolve as well, but for now we recommend reading our blog post with all the important information, project history, and the broader context behind our journey.')}
+  <p>${await $tr('XRT is the token of the Robonomics cloud on Polkadot. Devices pay for their cloud subscription in XRT, and XRT holders govern the network.')}</p>
 `;
+
+const allocations = [
+  { label: await $tr('XRT from the R&D stage (Ethereum and Kusama)'), amount: '2,700,000', share: 52.9, note: await $tr('Released to holders on migration'), color: 'var(--tk-1)' },
+  { label: await $tr('Core team DAO'), amount: '1,000,000', share: 19.6, note: await $tr('180-day cliff, then linear over 3 years'), color: 'var(--tk-2)' },
+  { label: await $tr('Migration bonus'), amount: '500,000', share: 9.8, note: await $tr('Paid as the +20% bonus on migration'), color: 'var(--tk-3)' },
+  { label: await $tr('Network operations and grants'), amount: '500,000', share: 9.8, note: await $tr('90-day cliff, then linear over 3 years'), color: 'var(--tk-4)' },
+  { label: await $tr('Permanent liquidity lock'), amount: '250,000', share: 4.9, note: await $tr('Locked forever as floor liquidity'), color: 'var(--tk-5)' },
+  { label: await $tr('Launch liquidity'), amount: '150,000', share: 2.9, note: await $tr('Uniswap liquidity from day one'), color: 'var(--tk-6)' },
+];
 ---
 
 <Layout
-  title={$tr("Robonomics Tokenomics ($XRT, $RWS, $AIRA)")}
-  description={$tr("Learn everything about $XRT — the main Robonomics token. Explore its utility, supply, and statistics. Plus, get brief insights on $RWS and $AIRA.")}
+  title={$tr("Robonomics tokenomics: XRT and RWS")}
+  description={$tr("What XRT is for, where it lives, its total supply and allocations, and how R&D-stage XRT moves to production on Polkadot.")}
   ogImage="/opengraph/tokenomics.webp"
   pageTitle={$tr("Robonomics tokenomics")}
   pageIntroText={tokenomicsIntroText}
 >
 
-  <section class="section layout layout__text text-bold text-center">
-    <a href="/blog/production-stage-tokenomics-launch/">
-      {$tr('Robonomics production stage & production tokenomics launch')} <br/>
-      <SvgIcon name="arrow-long" width="10rem" />
-    </a>
+  <section class="layout layout__mid section-half">
+    <h2>{$tr('What XRT is for')}</h2>
+    <div class="grid-3 tk-cards">
+      <div class="tk-card">
+        <h5>{$tr('Paying for the cloud')}</h5>
+        <p>{$tr('A device needs a cloud subscription to keep its digital twin, access lists and telemetry in Robonomics. The subscription is paid in XRT.')}</p>
+      </div>
+      <div class="tk-card">
+        <h5>{$tr('Governing the network')}</h5>
+        <p>{$tr('Every change to the network goes through a referendum of XRT holders. There is no developer key: Sudo was removed in October 2026.')}</p>
+      </div>
+      <div class="tk-card">
+        <h5>{$tr('Running the network')}</h5>
+        <p>{$tr('Collators keep the Robonomics parachain running and are rewarded in XRT. Emission is at most 25,000 XRT a year, all of it for collators.')}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="layout section__gray_light section__solid">
+    <div class="layout layout__mid">
+      <h2>{$tr('Where XRT lives')}</h2>
+      <div class="tk-table-wrap">
+        <table class="tk-table">
+          <thead>
+            <tr><th>{$tr('Network')}</th><th>{$tr('Role')}</th><th>{$tr('Status')}</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Polkadot</b></td>
+              <td>{$tr('The main XRT. The network and every subscription run on it.')}</td>
+              <td><span class="label-green">{$tr('main')}</span></td>
+            </tr>
+            <tr>
+              <td><b>Ethereum</b></td>
+              <td>
+                {$tr('The same XRT, bridged 1:1 from Polkadot through Snowbridge, for trading on Uniswap.')}<br/>
+                <a href="https://etherscan.io/token/0x1F752250f518e419f2F03804E25728c5C6DfF73f" target="_blank" class="tk-addr">0x1F752250f518e419f2F03804E25728c5C6DfF73f</a>
+              </td>
+              <td><span class="label-green">{$tr('active')}</span></td>
+            </tr>
+            <tr>
+              <td><b>Ethereum, legacy</b></td>
+              <td>
+                {$tr('R&D-stage XRT. Being migrated to production XRT.')}<br/>
+                <span class="tk-addr">0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7</span>
+              </td>
+              <td><span class="tk-label-gray">{$tr('deprecated')}</span></td>
+            </tr>
+            <tr>
+              <td><b>Kusama</b></td>
+              <td>{$tr('R&D-stage XRT. The Kusama parachain stopped on 28 September 2026.')}</td>
+              <td><span class="tk-label-gray">{$tr('deprecated')}</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-small">{$tr('There is no bridge between the new Ethereum XRT and the legacy Ethereum or Kusama XRT. Old tokens only move through the migration below.')}</p>
+    </div>
+  </section>
+
+  <section class="layout layout__mid section-half">
+    <h2>{$tr('Total supply: 5,100,000 XRT')}</h2>
+    <p>{$tr('The cap for the production stage. Most of it is XRT that holders already had during the R&D stage.')}</p>
+
+    <div class="tk-bar" role="img" aria-label={await $tr('Allocation of the 5,100,000 XRT supply')}>
+      {allocations.map((a) => (
+        <span style={`width:${a.share}%;background:${a.color}`} title={`${a.label}: ${a.share}%`}></span>
+      ))}
+    </div>
+
+    <div class="tk-table-wrap">
+      <table class="tk-table tk-alloc">
+        <thead>
+          <tr><th>{$tr('Allocation')}</th><th class="num">XRT</th><th class="num">%</th><th>{$tr('How it is released')}</th></tr>
+        </thead>
+        <tbody>
+          {allocations.map((a) => (
+            <tr>
+              <td><i class="tk-dot" style={`background:${a.color}`}></i>{a.label}</td>
+              <td class="num">{a.amount}</td>
+              <td class="num">{a.share}</td>
+              <td>{a.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="text-small">{$tr('Production XRT that is not claimed within 12 months of the migration opening is burned. The Kusama treasury has already been burned, and the developer DAO balances were not migrated.')}</p>
+  </section>
+
+  <section class="layout section__gray_light section__solid">
+    <div class="layout layout__mid">
+      <h2>{$tr('Moving from the R&D stage')}</h2>
+      <div class="grid-2 tk-cards">
+        <div class="tk-card">
+          <h5>{$tr('If you held XRT on Ethereum')}</h5>
+          <p>{$tr('Open the migration app with the wallet that held XRT on 5 February 2026. Accept to get production XRT plus a 20% bonus, or decline to join the buyback program instead.')}</p>
+          <p class="text-bold">
+            <a href="https://airalab.github.io/XRT-snapshot-Feb26-exploit/" target="_blank">{$tr('Migration app')}</a> ·
+            <a href="/blog/ethereum-rd-stage-migration-has-begun/">{$tr('How it works')}</a>
+          </p>
+        </div>
+        <div class="tk-card">
+          <h5>{$tr('If you held XRT on Kusama')}</h5>
+          <p>{$tr('Balances at the final block of the Kusama parachain move to Polkadot with a 20% bonus. There is no buyback on the Kusama side. Details on how the balances are credited will follow in a separate post.')}</p>
+          <p class="text-bold">
+            <a href="/blog/robonomics-kusama-parachain-stopped/">{$tr('Kusama parachain has stopped')}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="layout layout__mid section-half">
+    <h2>RWS</h2>
+    <p>{$tr('RWS is a separate token for a lifetime subscription to the Robonomics cloud. It is a small, specialised service: the share of network capacity that RWS gives access to is set by XRT holders through governance.')}</p>
+  </section>
+
+  <section class="layout section__gray_light section__solid">
+    <div class="layout layout__mid">
+      <h2>{$tr('Read more')}</h2>
+      <div class="grid-3 text-center">
+        <a href="/blog/production-stage-tokenomics-launch/" class="oldy">
+          <h5>{$tr('Production stage and tokenomics launch')}</h5>
+          <span class="label-green">{$tr('blog')}</span>
+        </a>
+        <a href="/blog/robonomics-5-0-sudo-removed/" class="oldy">
+          <h5>{$tr('Sudo is gone: how the network is governed')}</h5>
+          <span class="label-green">{$tr('blog')}</span>
+        </a>
+        <a href="https://polkadot.js.org/apps/?rpc=wss://polkadot.rpc.robonomics.network#/referenda" target="_blank" class="oldy">
+          <h5>{$tr('Referenda and balances on Polkadot')}</h5>
+          <span class="label-green">polkadot.js</span>
+        </a>
+      </div>
+    </div>
   </section>
 
 </Layout>
+
+<style>
+  .tk-cards {
+    gap: var(--gap, 1.5rem);
+  }
+  .tk-card {
+    border: 1px solid currentColor;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+  }
+  .tk-card h5 {
+    margin-bottom: 0.5rem;
+  }
+  .tk-table-wrap {
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+  .tk-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .tk-table th,
+  .tk-table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.3);
+  }
+  .tk-table .num {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .tk-addr {
+    font-family: monospace;
+    font-size: 0.85em;
+    word-break: break-all;
+  }
+  .tk-label-gray {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.25rem;
+    background: rgba(127, 127, 127, 0.2);
+    font-size: 0.85em;
+  }
+  .tk-bar {
+    display: flex;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    margin: 1.5rem 0 0.5rem;
+  }
+  .tk-bar span + span {
+    border-left: 2px solid var(--color-light, #fff);
+  }
+  .tk-dot {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    vertical-align: baseline;
+  }
+  @media (max-width: 640px) {
+    .tk-table thead {
+      display: none;
+    }
+    .tk-table,
+    .tk-table tbody,
+    .tk-table tr,
+    .tk-table td {
+      display: block;
+      width: 100%;
+      border: 0;
+    }
+    .tk-table tr {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(127, 127, 127, 0.3);
+    }
+    .tk-table td {
+      padding: 0.2rem 0.75rem;
+    }
+    .tk-alloc td.num {
+      display: inline-block;
+      width: auto;
+      margin-right: 1rem;
+      text-align: left;
+      font-weight: 700;
+    }
+    .tk-alloc td.num:nth-child(3)::after {
+      content: "%";
+    }
+  }
+  section {
+    --tk-1: #1f5fbf;
+    --tk-2: #4a90e2;
+    --tk-3: #2ea36b;
+    --tk-4: #8fc93a;
+    --tk-5: #e0a526;
+    --tk-6: #d9534f;
+  }
+</style>
