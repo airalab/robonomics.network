@@ -76,6 +76,17 @@ const copyLabel = await $tr('Copy address');
     </div>
   </section>
 
+  <section class="layout layout__mid section-half">
+    <h2>{$tr('XRT lifecycle')}</h2>
+    <p>{$tr('XRT goes round a simple circle: collators receive it, holders trade it, devices burn it to use the cloud.')}</p>
+    <ol class="tk-cycle">
+      <li><span class="tk-step">01</span><h3>{$tr('Issued')}</h3><p>{$tr('Collators keep the network running and receive new XRT, at most 25,000 a year.')}</p></li>
+      <li><span class="tk-step">02</span><h3>{$tr('Traded')}</h3><p>{$tr('XRT changes hands on Polkadot and, through the Snowbridge bridge, on Uniswap in Ethereum.')}</p></li>
+      <li><span class="tk-step">03</span><h3>{$tr('Spent')}</h3><p>{$tr('A device owner activates a cloud subscription in XRT. The XRT paid for it is burned.')}</p></li>
+      <li><span class="tk-step">04</span><h3>{$tr('Burned')}</h3><p>{$tr('Burned XRT leaves circulation for good. When devices burn more than collators receive, the supply shrinks.')}</p></li>
+    </ol>
+  </section>
+
   <section class="layout section__gray_light section__solid">
     <div class="layout layout__mid">
       <h2>{$tr('Where XRT lives')}</h2>
@@ -496,6 +507,77 @@ const copyLabel = await $tr('Copy address');
   }
   .tk-list li + li {
     margin-top: 0.5em;
+  }
+
+  /* lifecycle: four steps in a row, arrows between, loop back from the last */
+  .tk-cycle {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0 0 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    position: relative;
+    counter-reset: none;
+  }
+  .tk-cycle li {
+    position: relative;
+    border-top: 3px solid var(--color-dark);
+    padding: 1rem 0 0;
+    margin: 0;
+  }
+  .tk-cycle li:nth-child(4) {
+    border-top-color: var(--color-blue);
+  }
+  .tk-cycle li + li::before {
+    content: "→";
+    position: absolute;
+    left: -2rem;
+    top: -0.85rem;
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+  .tk-cycle::after {
+    content: "↺";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5rem;
+    border: 1px dashed var(--color-gray);
+    border-top: 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2.2rem;
+    color: var(--color-gray-dark);
+  }
+  .tk-step {
+    font-family: 'Orbitron', var(--font-family, sans-serif);
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .tk-cycle h3 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-transform: none;
+    text-align: left;
+    margin: 0.35rem 0 0.4rem;
+  }
+  .tk-cycle p {
+    margin: 0;
+  }
+  @media (max-width: 760px) {
+    .tk-cycle {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+      padding-bottom: 0;
+    }
+    .tk-cycle li + li::before {
+      display: none;
+    }
+    .tk-cycle::after {
+      display: none;
+    }
   }
 
   @media (max-width: 760px) {

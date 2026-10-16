@@ -965,5 +965,15 @@
 	"no_migration_needed": "no migration needed",
 	"Aug_2026": "Aug 2026",
 	"subscriptions_became_transferable": "subscriptions became transferable",
-	"XRT_is_the_token_of_the_Robonomics_cloud_on_Polkadot__Devices_pay_for_their_cloud_subscription_in_XRT__and_XRT_holders_govern_the_network_and_keep_it_running_": "XRT is the token of the Robonomics cloud on Polkadot. Devices pay for their cloud subscription in XRT, and XRT holders govern the network and keep it running."
+	"XRT_is_the_token_of_the_Robonomics_cloud_on_Polkadot__Devices_pay_for_their_cloud_subscription_in_XRT__and_XRT_holders_govern_the_network_and_keep_it_running_": "XRT is the token of the Robonomics cloud on Polkadot. Devices pay for their cloud subscription in XRT, and XRT holders govern the network and keep it running.",
+	"XRT_lifecycle": "XRT lifecycle",
+	"XRT_goes_round_a_simple_circle__collators_receive_it__holders_trade_it__devices_burn_it_to_use_the_cloud_": "XRT goes round a simple circle: collators receive it, holders trade it, devices burn it to use the cloud.",
+	"Issued": "Issued",
+	"Collators_keep_the_network_running_and_receive_new_XRT__at_most_25_000_a_year_": "Collators keep the network running and receive new XRT, at most 25,000 a year.",
+	"Traded": "Traded",
+	"XRT_changes_hands_on_Polkadot_and__through_the_Snowbridge_bridge__on_Uniswap_in_Ethereum_": "XRT changes hands on Polkadot and, through the Snowbridge bridge, on Uniswap in Ethereum.",
+	"Spent": "Spent",
+	"A_device_owner_activates_a_cloud_subscription_in_XRT__The_XRT_paid_for_it_is_burned_": "A device owner activates a cloud subscription in XRT. The XRT paid for it is burned.",
+	"Burned": "Burned",
+	"Burned_XRT_leaves_circulation_for_good__When_devices_burn_more_than_collators_receive__the_supply_shrinks_": "Burned XRT leaves circulation for good. When devices burn more than collators receive, the supply shrinks."
 }

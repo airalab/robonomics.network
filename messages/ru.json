@@ -965,5 +965,15 @@
 	"no_migration_needed": "миграция не нужна",
 	"Aug_2026": "Авг 2026",
 	"subscriptions_became_transferable": "подписку можно передавать",
-	"XRT_is_the_token_of_the_Robonomics_cloud_on_Polkadot__Devices_pay_for_their_cloud_subscription_in_XRT__and_XRT_holders_govern_the_network_and_keep_it_running_": "XRT — токен облака Robonomics на Polkadot. Устройства оплачивают в XRT подписку на облако, а держатели XRT управляют сетью и обслуживают её."
+	"XRT_is_the_token_of_the_Robonomics_cloud_on_Polkadot__Devices_pay_for_their_cloud_subscription_in_XRT__and_XRT_holders_govern_the_network_and_keep_it_running_": "XRT — токен облака Robonomics на Polkadot. Устройства оплачивают в XRT подписку на облако, а держатели XRT управляют сетью и обслуживают её.",
+	"XRT_lifecycle": "Жизненный цикл XRT",
+	"XRT_goes_round_a_simple_circle__collators_receive_it__holders_trade_it__devices_burn_it_to_use_the_cloud_": "XRT ходит по простому кругу: коллаторы его получают, держатели торгуют им, устройства сжигают его, чтобы пользоваться облаком.",
+	"Issued": "Выпуск",
+	"Collators_keep_the_network_running_and_receive_new_XRT__at_most_25_000_a_year_": "Коллаторы поддерживают работу сети и получают новый XRT, не больше 25 000 в год.",
+	"Traded": "Рынок",
+	"XRT_changes_hands_on_Polkadot_and__through_the_Snowbridge_bridge__on_Uniswap_in_Ethereum_": "XRT переходит из рук в руки на Polkadot и через мост Snowbridge на Uniswap в Ethereum.",
+	"Spent": "Подписка",
+	"A_device_owner_activates_a_cloud_subscription_in_XRT__The_XRT_paid_for_it_is_burned_": "Владелец устройства активирует подписку на облако за XRT. Заплаченный XRT сжигается.",
+	"Burned": "Сжигание",
+	"Burned_XRT_leaves_circulation_for_good__When_devices_burn_more_than_collators_receive__the_supply_shrinks_": "Сожжённый XRT навсегда уходит из обращения. Когда устройства сжигают больше, чем получают коллаторы, общее предложение сокращается."
 }
