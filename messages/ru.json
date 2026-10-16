@@ -954,5 +954,6 @@
 	"Only_100_RWS_exist__One_RWS_gives_a_device_one_transaction_per_second__with_no_time_limit_": "Всего существует 100 RWS. Один RWS даёт устройству одну транзакцию в секунду без ограничения по сроку.",
 	"Half_went_into_a_small_XRT_RWS_pool_on_Uniswap__The_other_half_was_set_aside_for_universities_and_non_profits_": "Половина ушла в небольшой пул XRT/RWS на Uniswap. Другая половина отложена для университетов и некоммерческих организаций.",
 	"RWS_is_not_retired__but_it_stays_a_niche_service_for_a_few_early_users__How_much_network_capacity_it_opens_is_decided_by_XRT_holders_": "RWS не закрыт, но остаётся нишевым сервисом для немногих первых пользователей. Сколько пропускной способности сети он открывает, решают держатели XRT.",
-	"For_everyone_else__the_cloud_subscription_is_paid_in_XRT_": "Для всех остальных подписка на облако оплачивается в XRT."
+	"For_everyone_else__the_cloud_subscription_is_paid_in_XRT_": "Для всех остальных подписка на облако оплачивается в XRT.",
+	"In_the_network__an_RWS_subscription_is_tied_to_one_account__Since_August_2026_it_can_be_handed_over_to_another_account_": "В сети подписка RWS привязана к одному аккаунту. С августа 2026 года её можно передать другому аккаунту."
 }
