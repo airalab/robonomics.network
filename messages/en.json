@@ -945,10 +945,14 @@
 	"If_you_held_XRT_on_Kusama": "If you held XRT on Kusama",
 	"Balances_at_the_final_block_of_the_Kusama_parachain_move_to_Polkadot_with_a_20__bonus__There_is_no_buyback_on_the_Kusama_side__Details_on_how_the_balances_are_credited_will_follow_in_a_separate_post_": "Balances at the final block of the Kusama parachain move to Polkadot with a 20% bonus. There is no buyback on the Kusama side. Details on how the balances are credited will follow in a separate post.",
 	"Kusama_parachain_has_stopped": "Kusama parachain has stopped",
-	"RWS_is_a_separate_token_for_a_lifetime_subscription_to_the_Robonomics_cloud__It_is_a_small__specialised_service__the_share_of_network_capacity_that_RWS_gives_access_to_is_set_by_XRT_holders_through_governance_": "RWS is a separate token for a lifetime subscription to the Robonomics cloud. It is a small, specialised service: the share of network capacity that RWS gives access to is set by XRT holders through governance.",
 	"Read_more": "Read more",
 	"Production_stage_and_tokenomics_launch": "Production stage and tokenomics launch",
 	"blog": "blog",
 	"Sudo_is_gone__how_the_network_is_governed": "Sudo is gone: how the network is governed",
-	"Referenda_and_balances_on_Polkadot": "Referenda and balances on Polkadot"
+	"Referenda_and_balances_on_Polkadot": "Referenda and balances on Polkadot",
+	"RWS_is_a_small_experiment__not_a_second_main_token__We_launched_it_in_2021_to_try_out_one_idea__a_lifetime_subscription_to_the_network_instead_of_paying_per_transaction_": "RWS is a small experiment, not a second main token. We launched it in 2021 to try out one idea: a lifetime subscription to the network instead of paying per transaction.",
+	"Only_100_RWS_exist__One_RWS_gives_a_device_one_transaction_per_second__with_no_time_limit_": "Only 100 RWS exist. One RWS gives a device one transaction per second, with no time limit.",
+	"Half_went_into_a_small_XRT_RWS_pool_on_Uniswap__The_other_half_was_set_aside_for_universities_and_non_profits_": "Half went into a small XRT/RWS pool on Uniswap. The other half was set aside for universities and non-profits.",
+	"RWS_is_not_retired__but_it_stays_a_niche_service_for_a_few_early_users__How_much_network_capacity_it_opens_is_decided_by_XRT_holders_": "RWS is not retired, but it stays a niche service for a few early users. How much network capacity it opens is decided by XRT holders.",
+	"For_everyone_else__the_cloud_subscription_is_paid_in_XRT_": "For everyone else, the cloud subscription is paid in XRT."
 }

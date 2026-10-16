@@ -945,10 +945,14 @@
 	"If_you_held_XRT_on_Kusama": "Если у вас был XRT в Kusama",
 	"Balances_at_the_final_block_of_the_Kusama_parachain_move_to_Polkadot_with_a_20__bonus__There_is_no_buyback_on_the_Kusama_side__Details_on_how_the_balances_are_credited_will_follow_in_a_separate_post_": "Балансы на последнем блоке парачейна Kusama переносятся на Polkadot с бонусом 20%. Выкупа на стороне Kusama нет. Как именно балансы будут зачислены, расскажем в отдельном посте.",
 	"Kusama_parachain_has_stopped": "Парачейн на Kusama остановлен",
-	"RWS_is_a_separate_token_for_a_lifetime_subscription_to_the_Robonomics_cloud__It_is_a_small__specialised_service__the_share_of_network_capacity_that_RWS_gives_access_to_is_set_by_XRT_holders_through_governance_": "RWS — отдельный токен для пожизненной подписки на облако Robonomics. Это небольшой специальный сервис: долю пропускной способности сети, доступную через RWS, устанавливают держатели XRT голосованием.",
 	"Read_more": "Читать подробнее",
 	"Production_stage_and_tokenomics_launch": "Действующая сеть и запуск токеномики",
 	"blog": "блог",
 	"Sudo_is_gone__how_the_network_is_governed": "Sudo удалён: как теперь управляется сеть",
-	"Referenda_and_balances_on_Polkadot": "Референдумы и балансы на Polkadot"
+	"Referenda_and_balances_on_Polkadot": "Референдумы и балансы на Polkadot",
+	"RWS_is_a_small_experiment__not_a_second_main_token__We_launched_it_in_2021_to_try_out_one_idea__a_lifetime_subscription_to_the_network_instead_of_paying_per_transaction_": "RWS — небольшой эксперимент, а не второй основной токен. Мы запустили его в 2021 году, чтобы проверить одну идею: пожизненная подписка на сеть вместо оплаты каждой транзакции.",
+	"Only_100_RWS_exist__One_RWS_gives_a_device_one_transaction_per_second__with_no_time_limit_": "Всего существует 100 RWS. Один RWS даёт устройству одну транзакцию в секунду без ограничения по сроку.",
+	"Half_went_into_a_small_XRT_RWS_pool_on_Uniswap__The_other_half_was_set_aside_for_universities_and_non_profits_": "Половина ушла в небольшой пул XRT/RWS на Uniswap. Другая половина отложена для университетов и некоммерческих организаций.",
+	"RWS_is_not_retired__but_it_stays_a_niche_service_for_a_few_early_users__How_much_network_capacity_it_opens_is_decided_by_XRT_holders_": "RWS не закрыт, но остаётся нишевым сервисом для немногих первых пользователей. Сколько пропускной способности сети он открывает, решают держатели XRT.",
+	"For_everyone_else__the_cloud_subscription_is_paid_in_XRT_": "Для всех остальных подписка на облако оплачивается в XRT."
 }
