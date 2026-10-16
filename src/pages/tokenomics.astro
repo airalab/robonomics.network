@@ -1,19 +1,53 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import SvgIcon from "../components/SvgIcon.astro";
 
 const tokenomicsIntroText = `
   <p>${await $tr('XRT is the token of the Robonomics cloud on Polkadot. Devices pay for their cloud subscription in XRT, and XRT holders govern the network.')}</p>
 `;
 
-const allocations = [
-  { label: await $tr('XRT from the R&D stage (Ethereum and Kusama)'), amount: '2,700,000', share: 52.9, note: await $tr('Released to holders on migration'), color: 'var(--tk-1)' },
-  { label: await $tr('Core team DAO'), amount: '1,000,000', share: 19.6, note: await $tr('180-day cliff, then linear over 3 years'), color: 'var(--tk-2)' },
-  { label: await $tr('Migration bonus'), amount: '500,000', share: 9.8, note: await $tr('Paid as the +20% bonus on migration'), color: 'var(--tk-3)' },
-  { label: await $tr('Network operations and grants'), amount: '500,000', share: 9.8, note: await $tr('90-day cliff, then linear over 3 years'), color: 'var(--tk-4)' },
-  { label: await $tr('Permanent liquidity lock'), amount: '250,000', share: 4.9, note: await $tr('Locked forever as floor liquidity'), color: 'var(--tk-5)' },
-  { label: await $tr('Launch liquidity'), amount: '150,000', share: 2.9, note: await $tr('Uniswap liquidity from day one'), color: 'var(--tk-6)' },
+// Colour encodes who receives the tokens, not one colour per row:
+// holders — blue (information / the reader's own share), vesting — neutral grays,
+// liquidity — green (a locked, positive guarantee).
+const groups = [
+  {
+    title: await $tr('Holders'),
+    share: 62.7,
+    items: [
+      { label: await $tr('XRT from the R&D stage (Ethereum and Kusama)'), amount: '2,700,000', share: 52.9, note: await $tr('Released to holders on migration'), color: '#2949d1' },
+      { label: await $tr('Migration bonus'), amount: '500,000', share: 9.8, note: await $tr('Paid as the +20% bonus on migration'), color: '#9aa8e8' },
+    ],
+  },
+  {
+    title: await $tr('Vesting'),
+    share: 29.4,
+    items: [
+      { label: await $tr('Core team DAO'), amount: '1,000,000', share: 19.6, note: await $tr('180-day cliff, then linear over 3 years'), color: '#212121' },
+      { label: await $tr('Network operations and grants'), amount: '500,000', share: 9.8, note: await $tr('90-day cliff, then linear over 3 years'), color: '#a8adbe' },
+    ],
+  },
+  {
+    title: await $tr('Liquidity'),
+    share: 7.8,
+    items: [
+      { label: await $tr('Permanent liquidity lock'), amount: '250,000', share: 4.9, note: await $tr('Locked forever as floor liquidity'), color: '#a0d100' },
+      { label: await $tr('Launch liquidity'), amount: '150,000', share: 2.9, note: await $tr('Uniswap liquidity from day one'), color: '#c7fe6c' },
+    ],
+  },
 ];
+
+// Donut slices: a circle with circumference 100, so dash length = share in %.
+const gap = 0.4;
+let offset = 0;
+const slices = groups.flatMap((g) => g.items).map((it) => {
+  const s = { color: it.color, label: it.label, share: it.share, dash: `${Math.max(it.share - gap, 0.1)} ${100 - it.share + gap}`, offset: -offset };
+  offset += it.share;
+  return s;
+});
+
+const short = (a: string) => `${a.slice(0, 6)}…${a.slice(-4)}`;
+const xrtEth = '0x1F752250f518e419f2F03804E25728c5C6DfF73f';
+const xrtLegacy = '0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7';
+const copyLabel = await $tr('Copy address');
 ---
 
 <Layout
@@ -28,15 +62,15 @@ const allocations = [
     <h2>{$tr('What XRT is for')}</h2>
     <div class="grid-3 tk-cards">
       <div class="tk-card">
-        <h5>{$tr('Paying for the cloud')}</h5>
+        <h3>{$tr('Paying for the cloud')}</h3>
         <p>{$tr('A device needs a cloud subscription to keep its digital twin, access lists and telemetry in Robonomics. The subscription is paid in XRT.')}</p>
       </div>
       <div class="tk-card">
-        <h5>{$tr('Governing the network')}</h5>
+        <h3>{$tr('Governing the network')}</h3>
         <p>{$tr('Every change to the network goes through a referendum of XRT holders. There is no developer key: Sudo was removed in October 2026.')}</p>
       </div>
       <div class="tk-card">
-        <h5>{$tr('Running the network')}</h5>
+        <h3>{$tr('Running the network')}</h3>
         <p>{$tr('Collators keep the Robonomics parachain running and are rewarded in XRT. Emission is at most 25,000 XRT a year, all of it for collators.')}</p>
       </div>
     </div>
@@ -59,16 +93,22 @@ const allocations = [
             <tr>
               <td><b>Ethereum</b></td>
               <td>
-                {$tr('The same XRT, bridged 1:1 from Polkadot through Snowbridge, for trading on Uniswap.')}<br/>
-                <a href="https://etherscan.io/token/0x1F752250f518e419f2F03804E25728c5C6DfF73f" target="_blank" class="tk-addr">0x1F752250f518e419f2F03804E25728c5C6DfF73f</a>
+                {$tr('The same XRT, bridged 1:1 from Polkadot through Snowbridge, for trading on Uniswap.')}
+                <span class="tk-addr-row">
+                  <a href={`https://etherscan.io/token/${xrtEth}`} target="_blank" class="tk-addr" title={xrtEth}>{short(xrtEth)}</a>
+                  <button type="button" class="tk-copy" data-copy={xrtEth} aria-label={copyLabel} title={copyLabel}>⧉</button>
+                </span>
               </td>
               <td><span class="label-green">{$tr('active')}</span></td>
             </tr>
             <tr>
               <td><b>Ethereum, legacy</b></td>
               <td>
-                {$tr('R&D-stage XRT. Being migrated to production XRT.')}<br/>
-                <span class="tk-addr">0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7</span>
+                {$tr('R&D-stage XRT. Being migrated to production XRT.')}
+                <span class="tk-addr-row">
+                  <a href={`https://etherscan.io/token/${xrtLegacy}`} target="_blank" class="tk-addr" title={xrtLegacy}>{short(xrtLegacy)}</a>
+                  <button type="button" class="tk-copy" data-copy={xrtLegacy} aria-label={copyLabel} title={copyLabel}>⧉</button>
+                </span>
               </td>
               <td><span class="tk-label-gray">{$tr('deprecated')}</span></td>
             </tr>
@@ -80,58 +120,72 @@ const allocations = [
           </tbody>
         </table>
       </div>
-      <p class="text-small">{$tr('There is no bridge between the new Ethereum XRT and the legacy Ethereum or Kusama XRT. Old tokens only move through the migration below.')}</p>
+      <p class="tk-note">{$tr('There is no bridge between the new Ethereum XRT and the legacy Ethereum or Kusama XRT. Old tokens only move through the migration below.')}</p>
     </div>
   </section>
 
   <section class="layout layout__mid section-half">
-    <h2>{$tr('Total supply: 5,100,000 XRT')}</h2>
+    <h2>{$tr('Total supply')}</h2>
     <p>{$tr('The cap for the production stage. Most of it is XRT that holders already had during the R&D stage.')}</p>
 
-    <div class="tk-bar" role="img" aria-label={await $tr('Allocation of the 5,100,000 XRT supply')}>
-      {allocations.map((a) => (
-        <span style={`width:${a.share}%;background:${a.color}`} title={`${a.label}: ${a.share}%`}></span>
-      ))}
-    </div>
+    <div class="tk-supply">
+      <figure class="tk-donut">
+        <svg viewBox="0 0 42 42" role="img" aria-label={await $tr('Allocation of the 5,100,000 XRT supply')}>
+          <g transform="rotate(-90 21 21)">
+            {slices.map((s) => (
+              <circle cx="21" cy="21" r="15.915" fill="none" stroke={s.color} stroke-width="6.5" stroke-dasharray={s.dash} stroke-dashoffset={s.offset}>
+                <title>{`${s.label}: ${s.share}%`}</title>
+              </circle>
+            ))}
+          </g>
+        </svg>
+        <figcaption class="tk-donut-center">
+          <span class="tk-hero">5,100,000</span>
+          <span class="tk-hero-label">{$tr('XRT total supply')}</span>
+        </figcaption>
+      </figure>
 
-    <div class="tk-table-wrap">
-      <table class="tk-table tk-alloc">
-        <thead>
-          <tr><th>{$tr('Allocation')}</th><th class="num">XRT</th><th class="num">%</th><th>{$tr('How it is released')}</th></tr>
-        </thead>
-        <tbody>
-          {allocations.map((a) => (
-            <tr>
-              <td><i class="tk-dot" style={`background:${a.color}`}></i>{a.label}</td>
-              <td class="num">{a.amount}</td>
-              <td class="num">{a.share}</td>
-              <td>{a.note}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div class="tk-legend">
+        {groups.map((g) => (
+          <div class="tk-group">
+            <div class="tk-group-head"><span>{g.title}</span><span>{g.share}%</span></div>
+            {g.items.map((it) => (
+              <div class="tk-row">
+                <i class="tk-dot" style={`background:${it.color}`}></i>
+                <div class="tk-row-body">
+                  <div class="tk-row-top">
+                    <span class="tk-row-label">{it.label}</span>
+                    <span class="tk-row-num">{it.amount} · {it.share}%</span>
+                  </div>
+                  <div class="tk-row-note">{it.note}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
-    <p class="text-small">{$tr('Production XRT that is not claimed within 12 months of the migration opening is burned. The Kusama treasury has already been burned, and the developer DAO balances were not migrated.')}</p>
+    <p class="tk-note">{$tr('Production XRT that is not claimed within 12 months of the migration opening is burned. The Kusama treasury has already been burned, and the developer DAO balances were not migrated.')}</p>
   </section>
 
   <section class="layout section__gray_light section__solid">
     <div class="layout layout__mid">
       <h2>{$tr('Moving from the R&D stage')}</h2>
       <div class="grid-2 tk-cards">
-        <div class="tk-card">
-          <h5>{$tr('If you held XRT on Ethereum')}</h5>
+        <div class="tk-card tk-card-cta">
+          <h3>{$tr('If you held XRT on Ethereum')}</h3>
           <p>{$tr('Open the migration app with the wallet that held XRT on 5 February 2026. Accept to get production XRT plus a 20% bonus, or decline to join the buyback program instead.')}</p>
-          <p class="text-bold">
-            <a href="https://airalab.github.io/XRT-snapshot-Feb26-exploit/" target="_blank">{$tr('Migration app')}</a> ·
+          <div class="tk-cta">
+            <a class="tk-button" href="https://airalab.github.io/XRT-snapshot-Feb26-exploit/" target="_blank">{$tr('Open migration app')}</a>
             <a href="/blog/ethereum-rd-stage-migration-has-begun/">{$tr('How it works')}</a>
-          </p>
+          </div>
         </div>
-        <div class="tk-card">
-          <h5>{$tr('If you held XRT on Kusama')}</h5>
+        <div class="tk-card tk-card-cta">
+          <h3>{$tr('If you held XRT on Kusama')}</h3>
           <p>{$tr('Balances at the final block of the Kusama parachain move to Polkadot with a 20% bonus. There is no buyback on the Kusama side. Details on how the balances are credited will follow in a separate post.')}</p>
-          <p class="text-bold">
+          <div class="tk-cta">
             <a href="/blog/robonomics-kusama-parachain-stopped/">{$tr('Kusama parachain has stopped')}</a>
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -140,7 +194,13 @@ const allocations = [
   <section class="layout layout__mid section-half">
     <h2>RWS</h2>
     <p>{$tr('RWS is a small experiment, not a second main token. We launched it in 2021 to try out one idea: a lifetime subscription to the network instead of paying per transaction.')}</p>
-    <ul>
+    <dl class="tk-facts">
+      <div><dt>100</dt><dd>{$tr('RWS in total')}</dd></div>
+      <div><dt>2021</dt><dd>{$tr('launched as an experiment')}</dd></div>
+      <div><dt>Ethereum</dt><dd>{$tr('no migration needed')}</dd></div>
+      <div><dt>{$tr('Aug 2026')}</dt><dd>{$tr('subscriptions became transferable')}</dd></div>
+    </dl>
+    <ul class="tk-list">
       <li>{$tr('Only 100 RWS exist. In the 2021 design, one RWS gives a device one transaction per second, with no time limit.')}</li>
       <li>{$tr('RWS lives on Ethereum. The February 2026 incident with legacy XRT did not touch it, so RWS needs no snapshot or migration.')}</li>
       <li>{$tr('RWS will be connected to the production network after the Kusama XRT balances move to Polkadot. We plan to use it first for non-commercial projects such as sensors.social.')}</li>
@@ -154,18 +214,18 @@ const allocations = [
   <section class="layout section__gray_light section__solid">
     <div class="layout layout__mid">
       <h2>{$tr('Read more')}</h2>
-      <div class="grid-3 text-center">
-        <a href="/blog/production-stage-tokenomics-launch/" class="oldy">
-          <h5>{$tr('Production stage and tokenomics launch')}</h5>
-          <span class="label-green">{$tr('blog')}</span>
+      <div class="grid-3 tk-cards">
+        <a href="/blog/production-stage-tokenomics-launch/" class="tk-card tk-link-card">
+          <span class="tk-tag">{$tr('blog')}</span>
+          <h3>{$tr('Production stage and tokenomics launch')}</h3>
         </a>
-        <a href="/blog/robonomics-5-0-sudo-removed/" class="oldy">
-          <h5>{$tr('Sudo is gone: how the network is governed')}</h5>
-          <span class="label-green">{$tr('blog')}</span>
+        <a href="/blog/robonomics-5-0-sudo-removed/" class="tk-card tk-link-card">
+          <span class="tk-tag">{$tr('blog')}</span>
+          <h3>{$tr('Sudo is gone: how the network is governed')}</h3>
         </a>
-        <a href="https://polkadot.js.org/apps/?rpc=wss://polkadot.rpc.robonomics.network#/referenda" target="_blank" class="oldy">
-          <h5>{$tr('Referenda and balances on Polkadot')}</h5>
-          <span class="label-green">polkadot.js</span>
+        <a href="https://polkadot.js.org/apps/?rpc=wss://polkadot.rpc.robonomics.network#/referenda" target="_blank" class="tk-card tk-link-card">
+          <span class="tk-tag">polkadot.js</span>
+          <h3>{$tr('Referenda and balances on Polkadot')}</h3>
         </a>
       </div>
     </div>
@@ -173,18 +233,69 @@ const allocations = [
 
 </Layout>
 
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.tk-copy').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.copy || '');
+        btn.textContent = '✓';
+        setTimeout(() => (btn.textContent = '⧉'), 1500);
+      } catch (e) {
+        /* clipboard unavailable: the full address is in the link title */
+      }
+    });
+  });
+</script>
+
 <style>
+  @font-face {
+    font-family: 'Orbitron';
+    src: url('/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 900;
+    font-display: swap;
+  }
+
+  /* cards: square corners, 1px border; hard shadow only on clickable cards */
   .tk-cards {
-    gap: var(--gap, 1.5rem);
+    gap: 1.5rem;
   }
   .tk-card {
-    border: 1px solid currentColor;
-    border-radius: 0.5rem;
-    padding: 1.25rem;
+    display: block;
+    border: 1px solid var(--color-dark);
+    background: var(--color-light);
+    padding: 1.5rem;
+    color: var(--color-dark);
+    text-align: left;
   }
-  .tk-card h5 {
+  .tk-card h3 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-transform: none;
+    margin: 0 0 0.6rem;
+  }
+  .tk-card p {
+    margin: 0;
+  }
+  .tk-link-card {
+    text-decoration: none;
+    box-shadow: 0.3rem 0.3rem 0 var(--color-dark);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .tk-link-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 0.45rem 0.45rem 0 var(--color-dark);
+  }
+  .tk-tag {
+    display: block;
     margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray);
   }
+
+  /* table */
   .tk-table-wrap {
     overflow-x: auto;
     margin: 1rem 0;
@@ -192,48 +303,222 @@ const allocations = [
   .tk-table {
     width: 100%;
     border-collapse: collapse;
+    background: var(--color-light);
   }
   .tk-table th,
   .tk-table td {
     text-align: left;
     vertical-align: top;
-    padding: 0.6rem 0.75rem;
-    border-bottom: 1px solid rgba(127, 127, 127, 0.3);
+    padding: 0.75rem 1rem;
+    border: 0;
+    border-bottom: 1px solid var(--color-gray-light);
   }
-  .tk-table .num {
-    text-align: right;
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
+  .tk-table th {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray);
+    border-bottom: 1px solid var(--color-dark);
+  }
+  .tk-addr-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.35rem;
   }
   .tk-addr {
     font-family: monospace;
-    font-size: 0.85em;
-    word-break: break-all;
+    font-size: 0.9em;
+  }
+  .tk-copy {
+    border: 1px solid var(--color-gray);
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 0.2rem 0.35rem;
+    color: var(--color-dark);
   }
   .tk-label-gray {
     display: inline-block;
-    padding: 0.1rem 0.5rem;
-    border-radius: 0.25rem;
-    background: rgba(127, 127, 127, 0.2);
     font-size: 0.85em;
+    padding: 0.1rem 0.45rem;
+    border: 1px solid var(--color-gray-dark);
+    background: var(--color-gray);
+    color: var(--color-dark);
   }
-  .tk-bar {
+  .tk-note {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+  }
+
+  /* supply donut + legend */
+  .tk-supply {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 3rem;
+    align-items: center;
+    margin: 2rem 0 1rem;
+  }
+  .tk-donut {
+    container-type: inline-size;
+    position: relative;
+    margin: 0;
+    max-width: 360px;
+    width: 100%;
+    justify-self: center;
+  }
+  .tk-donut svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .tk-donut-center {
+    position: absolute;
+    inset: 0;
     display: flex;
-    height: 1.5rem;
-    border-radius: 0.25rem;
-    overflow: hidden;
-    margin: 1.5rem 0 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
-  .tk-bar span + span {
-    border-left: 2px solid var(--color-light, #fff);
+  .tk-hero {
+    font-family: 'Orbitron', var(--font-family, sans-serif);
+    font-weight: 700;
+    font-size: 7.5cqw;
+    line-height: 1;
+  }
+  .tk-hero-label {
+    margin-top: 0.4rem;
+    font-size: max(0.75rem, 4cqw);
+    font-weight: 500;
+    color: var(--color-gray-dark);
+  }
+  .tk-group + .tk-group {
+    margin-top: 1.25rem;
+  }
+  .tk-group-head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--color-dark);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .tk-row {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--color-gray-light);
+  }
+  .tk-row-body {
+    flex: 1;
+  }
+  .tk-row-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .tk-row-num {
+    font-weight: 700;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .tk-row-note {
+    font-size: 0.875rem;
+    color: var(--color-gray-dark);
+    opacity: 0.75;
+    margin-top: 0.15rem;
   }
   .tk-dot {
-    display: inline-block;
+    flex: none;
     width: 0.75rem;
     height: 0.75rem;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-    vertical-align: baseline;
+    margin-top: 0.35rem;
+  }
+
+  /* migration CTAs aligned at the bottom */
+  .tk-card-cta {
+    display: flex;
+    flex-direction: column;
+  }
+  .tk-cta {
+    margin-top: auto;
+    padding-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+  }
+  .tk-button {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    background: var(--color-dark);
+    color: var(--color-light) !important;
+    text-decoration: none;
+  }
+  .tk-button:hover {
+    background: var(--color-blue);
+  }
+
+  /* RWS facts */
+  .tk-facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1.5rem 0;
+    border-top: 1px solid var(--color-dark);
+    border-bottom: 1px solid var(--color-dark);
+  }
+  .tk-facts div {
+    padding: 1rem;
+  }
+  .tk-facts div + div {
+    border-left: 1px solid var(--color-gray-light);
+  }
+  .tk-facts dt {
+    font-family: 'Orbitron', var(--font-family, sans-serif);
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .tk-facts dd {
+    margin: 0.25rem 0 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .tk-list li {
+    margin: 0;
+    padding: 0;
+  }
+  .tk-list li + li {
+    margin-top: 0.5em;
+  }
+
+  @media (max-width: 760px) {
+    .tk-supply {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .tk-donut {
+      max-width: 240px;
+    }
+    .tk-row-top {
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+    .tk-facts {
+      grid-template-columns: 1fr 1fr;
+    }
+    .tk-facts div:nth-child(3) {
+      border-left: 0;
+    }
+    .tk-facts div:nth-child(n + 3) {
+      border-top: 1px solid var(--color-gray-light);
+    }
   }
   @media (max-width: 640px) {
     .tk-table thead {
@@ -245,32 +530,14 @@ const allocations = [
     .tk-table td {
       display: block;
       width: 100%;
-      border: 0;
     }
     .tk-table tr {
       padding: 0.75rem 0;
-      border-bottom: 1px solid rgba(127, 127, 127, 0.3);
+      border-bottom: 1px solid var(--color-gray-light);
     }
     .tk-table td {
-      padding: 0.2rem 0.75rem;
+      padding: 0.2rem 1rem;
+      border: 0;
     }
-    .tk-alloc td.num {
-      display: inline-block;
-      width: auto;
-      margin-right: 1rem;
-      text-align: left;
-      font-weight: 700;
-    }
-    .tk-alloc td.num:nth-child(3)::after {
-      content: "%";
-    }
-  }
-  section {
-    --tk-1: #1f5fbf;
-    --tk-2: #4a90e2;
-    --tk-3: #2ea36b;
-    --tk-4: #8fc93a;
-    --tk-5: #e0a526;
-    --tk-6: #d9534f;
   }
 </style>
