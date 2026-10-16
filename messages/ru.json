@@ -956,5 +956,6 @@
 	"Only_100_RWS_exist__In_the_2021_design__one_RWS_gives_a_device_one_transaction_per_second__with_no_time_limit_": "Всего существует 100 RWS. По замыслу 2021 года один RWS даёт устройству одну транзакцию в секунду без ограничения по сроку.",
 	"RWS_lives_on_Ethereum__The_February_2026_incident_with_legacy_XRT_did_not_touch_it__so_RWS_needs_no_snapshot_or_migration_": "RWS живёт в Ethereum. Февральский инцидент 2026 года со старым XRT его не затронул, поэтому для RWS не нужны ни снимок балансов, ни миграция.",
 	"RWS_will_be_connected_to_the_production_network_after_the_Kusama_XRT_balances_move_to_Polkadot__We_plan_to_use_it_first_for_non_commercial_projects_such_as_sensors_social_": "RWS подключат к действующей сети после того, как балансы XRT из Kusama перенесут на Polkadot. Первыми его планируем использовать в некоммерческих проектах, например sensors.social.",
-	"RWS_is_not_retired__but_it_stays_a_niche_service_for_a_few_early_users_": "RWS не закрыт, но остаётся нишевым сервисом для немногих первых пользователей."
+	"RWS_is_not_retired__but_it_stays_a_niche_service_for_a_few_early_users_": "RWS не закрыт, но остаётся нишевым сервисом для немногих первых пользователей.",
+	"Read_the_2021_RWS_introduction": "Прочитать вводный пост о RWS 2021 года"
 }

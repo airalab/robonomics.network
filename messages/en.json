@@ -956,5 +956,6 @@
 	"Only_100_RWS_exist__In_the_2021_design__one_RWS_gives_a_device_one_transaction_per_second__with_no_time_limit_": "Only 100 RWS exist. In the 2021 design, one RWS gives a device one transaction per second, with no time limit.",
 	"RWS_lives_on_Ethereum__The_February_2026_incident_with_legacy_XRT_did_not_touch_it__so_RWS_needs_no_snapshot_or_migration_": "RWS lives on Ethereum. The February 2026 incident with legacy XRT did not touch it, so RWS needs no snapshot or migration.",
 	"RWS_will_be_connected_to_the_production_network_after_the_Kusama_XRT_balances_move_to_Polkadot__We_plan_to_use_it_first_for_non_commercial_projects_such_as_sensors_social_": "RWS will be connected to the production network after the Kusama XRT balances move to Polkadot. We plan to use it first for non-commercial projects such as sensors.social.",
-	"RWS_is_not_retired__but_it_stays_a_niche_service_for_a_few_early_users_": "RWS is not retired, but it stays a niche service for a few early users."
+	"RWS_is_not_retired__but_it_stays_a_niche_service_for_a_few_early_users_": "RWS is not retired, but it stays a niche service for a few early users.",
+	"Read_the_2021_RWS_introduction": "Read the 2021 RWS introduction"
 }
