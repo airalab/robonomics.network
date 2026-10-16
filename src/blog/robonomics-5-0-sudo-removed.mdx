@@ -1,0 +1,54 @@
+---
+title: 'Sudo is gone: the Robonomics cloud is now run by its community'
+date: 2026-10-16
+published: true
+locale: 'en'
+cover_image: /blog/images/robonomics-5-0-sudo-removed/cover.jpg
+tags: ['Robonomics 5.0', 'Robonomics parachain', 'Polkadot', 'Governance', 'OpenGov']
+description: 'The Robonomics cloud on Polkadot no longer has a developer key. What that means, how to propose a change and vote now, and what else is new in version 52.'
+abstract: 'Sudo is removed, governance belongs to XRT holders: how to propose a change, how to vote, and what else is in runtime 52. EnsRationis [Robonomics Software Architect]'
+---
+
+On 15 October the Robonomics cloud on Polkadot moved to version 52, and Sudo is no longer in it. Long live democracy.
+
+## Sudo is gone
+
+Sudo was the key that let the development team change the network on its own: ship new versions, change parameters, fix mistakes. It was the right tool for launching a network. It has no place in a network that real devices and real people rely on.
+
+Now nobody holds it: not us, not anyone. Its removal was itself a referendum of XRT holders. The network upgraded itself, as [we promised in September](/blog/robonomics-5-0-governance/). Sudo could only come back the same way, by a decision of the community.
+
+## How the network is governed now
+
+Every change to the network's rules is decided by a vote of XRT holders, through OpenGov, Polkadot's standard mechanism. There are two paths:
+
+- **General.** Anyone can submit a referendum, without asking the team. This is how everything that is not urgent gets decided.
+- **Fast**, for urgent technical fixes. The Core Team, a small group of developers, reviews one specific change and lets it go to an accelerated vote. XRT holders still decide. The Core Team cannot launch anything by itself.
+
+The Core Team's membership, the thresholds and the voting periods can also be changed only by referendum.
+
+### How to propose a change
+
+1. **Describe the idea** [on GitHub](https://github.com/airalab/robonomics/issues): what changes and why. A referendum that was discussed first gets votes far more easily.
+2. **Submit a referendum** in Polkadot.js, in the governance section of the Robonomics network. Submitting takes a small deposit to keep spam out, and the deposit is returned.
+3. **Tell the community** about it and ask people to vote.
+
+### How to vote
+
+- Keep your XRT in a wallet you control on the Robonomics network. Tokens on an exchange cannot vote.
+- Your vote counts for more if you lock your tokens for longer.
+- No time to follow every vote? Delegate to someone you trust.
+
+## What else is in version 52
+
+- **Devices get an address of their own.** A node in the Robonomics device tree, whether a sensor, a room or a home, can now be bound to its own account and addressed directly.
+- **A fresh Polkadot base.** The network moved to a new version of the Polkadot SDK, and apps can now read device tree data more easily.
+- **Phase one of the Robonomics 5.0 plan is complete.** Next comes subscriptions: a device will be able to use the network without holding XRT itself.
+
+Developer details are in the [v52 release notes](https://github.com/airalab/robonomics/releases/tag/v52).
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/robonomics-5-0-runtime-first/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">https://x.com/EnsRationis</a></em></span>
+</div>
