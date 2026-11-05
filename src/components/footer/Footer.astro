@@ -103,6 +103,7 @@ const socialLinks = [
   </nav>
 
   <section class="footer-privacy layout">
+    <p class="footer-legal">© 2018–{new Date().getFullYear()} Robonomics Network · Operated by <span lang="en">Akagi Engineering Co., Ltd.</span> (<span lang="ja">赤城エンジニアリング株式会社</span>), Japan</p>
     <a href="/privacy-policy/">{$tr('Privacy policy')}</a>
   </section>
   
@@ -323,7 +324,17 @@ const socialLinks = [
   }
 
   .footer-privacy {
-    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: calc(var(--space) * 0.5) var(--space);
+  }
+
+  .footer-legal {
+    margin: 0;
+    font-size: calc(var(--base-font-size) * 0.8);
+    opacity: 0.8;
   }
 
   .footer-privacy a {

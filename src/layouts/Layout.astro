@@ -35,6 +35,39 @@ const pageImageFinal = caseData.length
   ? `${siteUrl}${caseData[0]?.metaImg || '/opengraph/default.png'}`
   : (ogImage && `${siteUrl}${ogImage}` || `${siteUrl}/opengraph/default.png`);
 
+// Structured data: the open-source project and its operating company
+const organizationLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: siteName,
+      url: siteUrl,
+      logo: `${siteUrl}/images/robonomics-logo-title-light.svg`,
+      sameAs: ['https://x.com/AIRA_Robonomics', 'https://github.com/airalab'],
+      parentOrganization: { '@id': `${siteUrl}/#operator` },
+    },
+    {
+      '@type': 'Corporation',
+      '@id': `${siteUrl}/#operator`,
+      name: 'Akagi Engineering Co., Ltd.',
+      legalName: '赤城エンジニアリング株式会社',
+      alternateName: 'Akagi Engineering',
+      identifier: { '@type': 'PropertyValue', propertyID: 'JP Corporate Number', value: '9070001040328' },
+      email: 'research@robonomics.network',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '1953-1 Naegashima-machi',
+        addressLocality: 'Maebashi',
+        addressRegion: 'Gunma',
+        postalCode: '371-0241',
+        addressCountry: 'JP',
+      },
+    },
+  ],
+};
+
 // Import styles
 import '../assets/styles/main.css';
 ---
@@ -74,6 +107,9 @@ import '../assets/styles/main.css';
 	<meta name="twitter:image" content={pageImageFinal}>
 	<meta name="twitter:site" content="@AIRA_Robonomics">
 	<meta name="twitter:creator" content="@AIRA_Robonomics">
+
+	<!-- Structured data: site operator -->
+	<script type="application/ld+json" set:html={JSON.stringify(organizationLd)} />
 
 </head>
 	<body>
