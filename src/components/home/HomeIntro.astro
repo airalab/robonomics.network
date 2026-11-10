@@ -1,0 +1,205 @@
+---
+// Home intro: one line, four fact cards, then a short timeline. Replaces the two text paragraphs.
+const cards = [
+  { big: '2015', text: await $tr('Robotics and on-chain R&D since then'), more: await $tr('Timeline'), href: '/timeline/' },
+  { big: await $tr('Papers'), text: await $tr('Published research behind the protocol'), more: await $tr('Read'), href: '/papers/' },
+  { big: await $tr('Devices'), text: await $tr('Open hardware without required subscriptions'), more: await $tr('Explore'), href: '/for-personal-usage/', accent: true },
+  { big: 'Polkadot', text: await $tr('The Robonomics cloud runs here, governed by XRT holders'), more: await $tr('Tokenomics'), href: '/tokenomics/' },
+];
+
+const steps = [
+  { year: '2015', text: await $tr('The project starts: an economy for robots') },
+  { year: '2018', text: await $tr('Whitepaper and the network live on Ethereum') },
+  { year: '2022', text: await $tr('Parachain on Kusama, smart home integration') },
+  { year: '2026', text: await $tr('Production on Polkadot, certified sensors on sale'), now: true },
+];
+---
+
+<section class="layout section home-intro">
+  <p class="home-intro__lead">{$tr('Open-source devices and an IoT cloud that keep your data yours.')}</p>
+
+  <div class="home-intro__cards">
+    {cards.map((c) => (
+      <a href={c.href} class:list={['home-intro__card', c.accent && 'home-intro__card--accent']}>
+        <span class="home-intro__big">{c.big}</span>
+        <span class="home-intro__text">{c.text}</span>
+        <span class="home-intro__more">{c.more} →</span>
+      </a>
+    ))}
+  </div>
+
+  <ol class="home-intro__steps">
+    {steps.map((s) => (
+      <li class:list={['home-intro__step', s.now && 'home-intro__step--now']}>
+        <span class="home-intro__dot" aria-hidden="true"></span>
+        <span class="home-intro__year">{s.year}</span>
+        <span class="home-intro__step-text">{s.text}</span>
+      </li>
+    ))}
+  </ol>
+  <a class="home-intro__all" href="/timeline/">{$tr('Full timeline')} →</a>
+</section>
+
+<style>
+  .home-intro {
+    text-align: center;
+  }
+
+  .home-intro__lead {
+    margin: 0 auto calc(var(--space) * 1.5);
+    max-width: 820px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.35;
+  }
+
+  .home-intro__cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  .home-intro__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--color-dark);
+    box-shadow: 0.375rem 0.375rem 0 var(--color-dark);
+    background: var(--color-light);
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+
+  .home-intro__card:hover {
+    color: var(--color-dark);
+    transform: translate(-2px, -2px);
+    box-shadow: 0.5rem 0.5rem 0 var(--color-dark);
+  }
+
+  .home-intro__card--accent {
+    background: var(--color-green-accent);
+  }
+
+  .home-intro__big {
+    font-size: 2.4rem;
+    font-weight: 1000;
+    font-variation-settings: var(--font-flex-extrabold);
+    line-height: 1;
+  }
+
+  .home-intro__text {
+    line-height: 1.45;
+  }
+
+  .home-intro__more {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--color-blue);
+  }
+
+  .home-intro__card--accent .home-intro__more {
+    color: var(--color-dark);
+  }
+
+  /* short timeline */
+  .home-intro__steps {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 1060px;
+    margin: calc(var(--space) * 2.5) auto 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .home-intro__steps::before {
+    content: '';
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 10px;
+    height: 3px;
+    background: var(--color-dark);
+  }
+
+  .home-intro__step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0;
+  }
+
+  .home-intro__step::before {
+    content: none;
+  }
+
+  .home-intro__dot {
+    width: 22px;
+    height: 22px;
+    box-sizing: border-box;
+    border: 3px solid var(--color-dark);
+    background: var(--color-light);
+  }
+
+  .home-intro__step--now .home-intro__dot {
+    background: var(--color-green-accent);
+  }
+
+  .home-intro__year {
+    font-size: 1.8rem;
+    font-weight: 1000;
+    font-variation-settings: var(--font-flex-extrabold);
+    line-height: 1;
+  }
+
+  .home-intro__step-text {
+    max-width: 210px;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .home-intro__all {
+    display: inline-block;
+    margin-top: calc(var(--space) * 1.2);
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 900px) {
+    .home-intro__cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .home-intro__lead {
+      font-size: 1.2rem;
+    }
+
+    .home-intro__steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      row-gap: 2rem;
+    }
+
+    .home-intro__steps::before {
+      content: none;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .home-intro__cards {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

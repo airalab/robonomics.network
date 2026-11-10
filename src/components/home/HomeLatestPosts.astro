@@ -1,0 +1,56 @@
+---
+// Home page: the three latest blog posts, in the page language when a translation exists, else in English.
+import PostCard from '../post/PostCard.astro';
+import { getCollection } from 'astro:content';
+import { languageTag } from '../../paraglide/runtime';
+
+const locale = languageTag();
+const allPosts = (await getCollection('blog')).filter((post) => post.data.published);
+const slugOf = (post) => post.id.replace(/\/$/, '').split('/').pop();
+
+const localized = allPosts.filter((post) => post.data.locale === locale);
+const localizedSlugs = new Set(localized.map(slugOf));
+const fallback = locale === 'en' ? [] : allPosts.filter((post) => post.data.locale === 'en' && !localizedSlugs.has(slugOf(post)));
+
+const latest = [...localized, ...fallback]
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 3);
+
+const blogHref = locale === 'en' ? '/blog/' : `/${locale}/blog/`;
+---
+
+{latest.length > 0 && (
+  <section class="layout section home-latest">
+    <div class="home-latest__head">
+      <h2>{$tr('Latest from the blog')}</h2>
+      <a class="home-latest__all" href={blogHref}>{$tr('All posts')} →</a>
+    </div>
+    <div class="blog_grid">
+      {latest.map((post) => (
+        <PostCard post={{ ...post.data, url: !post.id.includes(`${locale}/`) ? post.id : post.id.split('/')[1] }} locale={locale} />
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .home-latest__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: var(--space);
+  }
+
+  .home-latest__head h2 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .home-latest__all {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+</style>
