@@ -142,13 +142,13 @@ Comme vous pouvez le constater, environ 2/3 des personnes ont choisi le bon bout
 
 ## Vérification des données
 
-Passons à l'obtention de ces données à partir de la blockchain. Toutes les données sont stockées dans les datalogs de ce compte - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". Ouvrons-le dans [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+Passons à l'obtention de ces données à partir de la blockchain. Toutes les données sont stockées dans les datalogs de ce compte - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". Ouvrons-le dans Subscan.
 
 Nous verrons tous ses extrinsèques. Filtrons-les par date. Nous obtiendrons environ 140 extrinsèques.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="extrinsèques subscan" />
 
-Chacun d'eux contient un CID IPFS avec des données de télémétrie. Prenons n'importe quel extrinsèque et extrayons les données. Par exemple, [celui-ci](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+Chacun d'eux contient un CID IPFS avec des données de télémétrie. Prenons n'importe quel extrinsèque et extrayons les données. Par exemple, celui-ci. 
 Le CID IPFS à l'intérieur est - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
 
 Ensuite, tout ce que vous avez à faire est d'utiliser ce script pour décrypter les données. Remplacez l'IPFS CID à la ligne 11 par celui dont vous avez besoin :

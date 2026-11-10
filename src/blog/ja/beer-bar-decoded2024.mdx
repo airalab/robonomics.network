@@ -139,13 +139,13 @@ Raspberry Pi 4にHome Assistantがインストールされ、Robonomics統合が
 
 ## データの検証
 
-次に、このデータをブロックチェーンから取得しましょう。すべてのデータはこのアカウントのデータログに保存されています - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”。[Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB)で開いてみましょう。
+次に、このデータをブロックチェーンから取得しましょう。すべてのデータはこのアカウントのデータログに保存されています - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”。Subscanで開いてみましょう。
 
 すべてのエクストリンシックを見ることができます。日付でフィルタリングしてみましょう。約140のエクストリンシックを取得します。
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
 
-それぞれにはテレメトリーが含まれるIPFS CIDがあります。任意のエクストリンシックを取り、そのデータを抽出しましょう。たとえば、[このエクストリンシック](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7)。その中に含まれるIPFS CIDは `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX` です。fdUVdpJ4c3`。
+それぞれにはテレメトリーが含まれるIPFS CIDがあります。任意のエクストリンシックを取り、そのデータを抽出しましょう。たとえば、このエクストリンシック。その中に含まれるIPFS CIDは `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX` です。fdUVdpJ4c3`。
 
 次に、このスクリプトを使用してデータを復号化する必要があります。必要なIPFS CIDで11行目のIPFS CIDを置き換えてください：
 

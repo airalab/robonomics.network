@@ -143,13 +143,13 @@ Decoded και ολόκληρη τη δεύτερη μέρα.
 
 ## Επαλήθευση Δεδομένων
 
-Ας προχωρήσουμε στην απόκτηση αυτών των δεδομένων από τη blockchain. Όλα τα δεδομένα αποθηκεύονται στα datalogs αυτού του λογαριασμού - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Ας το ανοίξουμε στο [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+Ας προχωρήσουμε στην απόκτηση αυτών των δεδομένων από τη blockchain. Όλα τα δεδομένα αποθηκεύονται στα datalogs αυτού του λογαριασμού - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Ας το ανοίξουμε στο Subscan.
 
 Θα δούμε όλα τα extrinsics του. Ας τα φιλτράρουμε ανά ημερομηνία. Θα λάβουμε περίπου 140 extrinsics.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
 
-Κάθε ένα από αυτά περιέχει ένα IPFS CID με τηλεμετρία. Ας πάρουμε οποιοδήποτε extrinsic και ανακτήσουμε τα δεδομένα από αυτό. Για παράδειγμα, [αυτό](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+Κάθε ένα από αυτά περιέχει ένα IPFS CID με τηλεμετρία. Ας πάρουμε οποιοδήποτε extrinsic και ανακτήσουμε τα δεδομένα από αυτό. Για παράδειγμα, αυτό. 
 Το IPFS CID μέσα σε αυτό - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
 
 Στη συνέχεια, χρειάζεται να χρησιμοποιήσετε αυτό το σενάριο για να αποκρυπτογραφήσετε τα δεδομένα. Αντικαταστήστε το IPFS CID στη γραμμή 11 με αυτό που χρειάζεστε:

@@ -149,14 +149,14 @@ As you can see, about 2/3 of the people chose the right button.
 ## Data Verification
 
 Let's move on to obtaining this data from the blockchain. All data is stored in the datalogs of this 
-account - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Let's open it in [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+account - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Let's open it in Subscan.
 
 We will see all its extrinsics. Let's filter them by date. We will get about 140 extrinsics.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
 
 Each of them contains an IPFS CID with telemetry. Let's take any extrinsic and extract the data from it. 
-For example, [this one](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+For example, this one. 
 IPFS CID inside it - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WXfdUVdpJ4c3`.
 
 Then all you need to do is use this script to decrypt the data. Replace the IPFS CID in line 11 with the one you need:

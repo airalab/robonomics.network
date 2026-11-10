@@ -140,7 +140,12 @@ html[lang="nl"] .title-lined {
   z-index: 990;
 }
 
-.title-with-bg h1 {
+.title-with-bg h1,
+.title-with-bg .title-with-bg__text {
+  font-variation-settings: var(--font-flex-extrabold);
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  text-transform: uppercase;
   display: inline;
   font-size: calc(var(--base-font-size) * 1.1);
   margin: 0;
@@ -153,11 +158,13 @@ html[lang="nl"] .title-lined {
   background-color: var(--color-blue);
 }
 
-.title-with-bg h1 a {
+.title-with-bg h1 a,
+.title-with-bg .title-with-bg__text a {
   color: var(--color-light);
 }
 
-.title-with-bg h1 a:hover {
+.title-with-bg h1 a:hover,
+.title-with-bg .title-with-bg__text a:hover {
   opacity: 0.7;
   color: var(--color-light);
 }

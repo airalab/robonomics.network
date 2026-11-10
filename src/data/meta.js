@@ -1,5 +1,5 @@
 export const meta = {
   siteName: 'Robonomics Network',
-  siteDescription: 'Futuristic, secure, and server-less IoT platform on top of Ethereum && Polkadot. Bringing economy of robots into the 4th industrial revolution.',
+  siteDescription: 'Robonomics is an open-source IoT cloud on Polkadot. Devices keep their digital twins, access lists and telemetry in Robonomics instead of a corporate cloud.',
   siteUrl: 'https://robonomics.network',
 }

@@ -142,14 +142,14 @@ Decoded واليوم الثاني بالكامل.
 
 ## التحقق من البيانات
 
-لننتقل إلى الحصول على هذه البيانات من سلسلة الكتل. تم تخزين جميع البيانات في سجلات البيانات لهذا الحساب - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". دعونا نفتحه في [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+لننتقل إلى الحصول على هذه البيانات من سلسلة الكتل. تم تخزين جميع البيانات في سجلات البيانات لهذا الحساب - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". دعونا نفتحه في Subscan.
 
 سنرى جميع العمليات الخارجية. دعونا نقوم بتصفيتها حسب التاريخ. سنحصل على حوالي 140 عملية خارجية.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
 
 كل منها يحتوي على معرف IPFS مع بيانات الاستشعار. دعونا نأخذ أي عملية خارجية ونستخرج البيانات منها. 
-على سبيل المثال، [هذه](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+على سبيل المثال، هذه. 
 معرف IPFS داخلها - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`ثم كل ما عليك فعله هو استخدام هذا النص لفك تشفير البيانات. استبدل معرف IPFS CID في السطر 11 بالذي تحتاجه:
 
 ```

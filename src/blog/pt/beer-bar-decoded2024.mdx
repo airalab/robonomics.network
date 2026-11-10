@@ -141,14 +141,14 @@ Como pode ver, cerca de 2/3 das pessoas escolheram o botão correto.
 
 ## Verificação de Dados
 
-Vamos avançar para obter esses dados do blockchain. Todos os dados estão armazenados nos datalogs desta conta - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Vamos abri-lo em [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+Vamos avançar para obter esses dados do blockchain. Todos os dados estão armazenados nos datalogs desta conta - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Vamos abri-lo em Subscan.
 
 Veremos todos os seus extrínsecos. Vamos filtrá-los por data. Vamos obter cerca de 140 extrínsecos.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="extrínsecos do subscan" />
 
 Cada um deles contém um CID do IPFS com telemetria. Vamos pegar qualquer extrínseco e extrair os dados dele. 
-Por exemplo, [este](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+Por exemplo, este. 
 O CID do IPFS dentro dele é - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
 
 Então, tudo que você precisa fazer é usar este script para descriptografar os dados. Substitua o CID do IPFS na linha 11 pelo que você precisa:

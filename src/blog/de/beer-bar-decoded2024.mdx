@@ -107,14 +107,14 @@ Wie Sie sehen können, wählte etwa 2/3 der Personen die richtige Taste.
 
 ## Datenüberprüfung
 
-Lassen Sie uns nun dazu übergehen, diese Daten aus der Blockchain zu erhalten. Alle Daten werden in den Datalogs dieses Kontos gespeichert - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". Öffnen wir es in [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+Lassen Sie uns nun dazu übergehen, diese Daten aus der Blockchain zu erhalten. Alle Daten werden in den Datalogs dieses Kontos gespeichert - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". Öffnen wir es in Subscan.
 
 Wir werden alle seine Extrinsiken sehen. Lassen Sie uns sie nach Datum filtern. Wir werden etwa 140 Extrinsiken erhalten.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
 
 Jeder von ihnen enthält eine IPFS-CID mit Telemetrie. Lassen Sie uns eine beliebige Extrinsik nehmen und die Daten daraus extrahieren. 
-Zum Beispiel [diese](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+Zum Beispiel diese. 
 IPFS-CID darin - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
 
 Alles, was Sie tun müssen, ist dieses Skript zu verwenden, um die Daten zu entschlüsseln. Ersetzen Sie die IPFS-CID in Zeile 11 durch diejenige, die Sie benötigen:

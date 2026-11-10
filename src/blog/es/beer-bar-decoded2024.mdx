@@ -142,13 +142,13 @@ Como puedes ver, aproximadamente 2/3 de las personas eligieron el botón correct
 
 ## Verificación de datos
 
-Pasemos a obtener estos datos de la cadena de bloques. Todos los datos se almacenan en los datalogs de esta cuenta - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Abrámoslo en [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+Pasemos a obtener estos datos de la cadena de bloques. Todos los datos se almacenan en los datalogs de esta cuenta - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Abrámoslo en Subscan.
 
 Veremos todos sus extrínsecos. Filtrémoslos por fecha. Obtendremos alrededor de 140 extrínsecos.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="extrínsecos de subscan" />
 
-Cada uno de ellos contiene un CID de IPFS con telemetría. Tomemos cualquier extrínseco y extraigamos los datos de él. Por ejemplo, [este](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+Cada uno de ellos contiene un CID de IPFS con telemetría. Tomemos cualquier extrínseco y extraigamos los datos de él. Por ejemplo, este. 
 El CID de IPFS dentro de él es - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
 
 Entonces, todo lo que necesitas hacer es usar este script para descifrar los datos. Reemplaza el CID de IPFS en la línea 11 con el que necesitas:

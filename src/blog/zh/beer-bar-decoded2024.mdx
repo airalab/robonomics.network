@@ -135,13 +135,13 @@ description: '上周，Robonomics团队参观了布鲁塞尔的Polkadot Decoded�
 
 ## 数据验证
 
-让我们继续从区块链中获取这些数据。所有数据都存储在这个账户的数据日志中 - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”。让我们在[Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB)中打开它。
+让我们继续从区块链中获取这些数据。所有数据都存储在这个账户的数据日志中 - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”。让我们在Subscan中打开它。
 
 我们将看到所有的外部交易。让我们按日期筛选它们。我们将得到大约 140 个外部交易。
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
 
-每个外部交易都包含一个带有遥测数据的 IPFS CID。让我们取任何一个外部交易并从中提取数据。例如，[这个](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7)。其中包含的 IPFS CID 为 `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`。fdUVdpJ4c3`。
+每个外部交易都包含一个带有遥测数据的 IPFS CID。让我们取任何一个外部交易并从中提取数据。例如，这个。其中包含的 IPFS CID 为 `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`。fdUVdpJ4c3`。
 
 然后，您只需要使用此脚本解密数据。将第11行中的IPFS CID替换为您需要的CID：
 

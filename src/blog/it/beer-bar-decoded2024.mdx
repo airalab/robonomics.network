@@ -142,13 +142,13 @@ Come puoi vedere, circa 2/3 delle persone hanno scelto il pulsante giusto.
 
 ## Verifica dei dati
 
-Passiamo ora a ottenere questi dati dalla blockchain. Tutti i dati sono memorizzati nei datalog di questo account - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". Apriamolo in [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+Passiamo ora a ottenere questi dati dalla blockchain. Tutti i dati sono memorizzati nei datalog di questo account - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". Apriamolo in Subscan.
 
 Vedremo tutti i suoi estrinseci. Filtriamoli per data. Ne otterremo circa 140 estrinseci.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="estrinseci subscan" />
 
-Ognuno di essi contiene un CID IPFS con telemetria. Prendiamo un estrinseco e estraiamo i dati da esso. Ad esempio, [questo](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+Ognuno di essi contiene un CID IPFS con telemetria. Prendiamo un estrinseco e estraiamo i dati da esso. Ad esempio, questo. 
 CID IPFS al suo interno - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`fdUVdpJ4c3`.
 
 Tutto ciò che devi fare è utilizzare questo script per decodificare i dati. Sostituisci l'IPFS CID nella riga 11 con quello di cui hai bisogno:
