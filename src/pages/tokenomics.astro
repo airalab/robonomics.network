@@ -75,6 +75,9 @@ const coingeckoUrl = 'https://www.coingecko.com/en/coins/robonomics-network';
         <button type="button" class="tk-copy" data-copy={xrtEth} aria-label={copyLabel} title={copyLabel}>⧉</button>
       </span>
     </p>
+    <p class="tk-quick-note">
+      {$tr('Uniswap trades XRT bridged 1:1 from Polkadot. The network itself runs on Polkadot; Uniswap is simply where most people are used to buying.')}
+    </p>
     <div class="tk-quick-more">
       <a href={explorerUrl} target="_blank" rel="noopener noreferrer" class="tk-quick-link">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
@@ -358,6 +361,12 @@ const coingeckoUrl = 'https://www.coingecko.com/en/coins/robonomics-network';
   }
   .tk-quick-addr {
     margin: 0.3rem 0 0;
+    font-size: 0.9rem;
+    color: var(--color-gray-dark);
+  }
+  .tk-quick-note {
+    max-width: 34rem;
+    margin: -0.6rem 0 0;
     font-size: 0.9rem;
     color: var(--color-gray-dark);
   }
