@@ -48,6 +48,29 @@ const short = (a: string) => `${a.slice(0, 6)}…${a.slice(-4)}`;
 const xrtEth = '0x1F752250f518e419f2F03804E25728c5C6DfF73f';
 const xrtLegacy = '0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7';
 const copyLabel = await $tr('Copy address');
+
+// Quick links right under the intro: where to see the chain, trade XRT and check the price.
+const quickLinks = [
+  {
+    tag: 'Polkadot',
+    title: await $tr('Block explorer'),
+    text: await $tr('Live blocks, balances and referenda of the Robonomics parachain.'),
+    href: 'https://polkadot.js.org/apps/?rpc=wss://polkadot.rpc.robonomics.network#/explorer',
+  },
+  {
+    tag: 'Uniswap',
+    title: await $tr('Trade XRT'),
+    text: await $tr('The main XRT and ETH pair on Ethereum, bridged 1:1 from Polkadot.'),
+    href: 'https://app.uniswap.org/explore/pools/ethereum/0x2177da2e2c8548e3ce7e8b2053fd0ab0d35268c714ad2e5a916dc23d9d4d6321',
+    accent: true,
+  },
+  {
+    tag: 'CoinGecko',
+    title: await $tr('XRT price'),
+    text: await $tr('Price, volume and market data for production XRT.'),
+    href: 'https://www.coingecko.com/en/coins/robonomics-network',
+  },
+];
 ---
 
 <Layout
@@ -57,6 +80,18 @@ const copyLabel = await $tr('Copy address');
   pageTitle={$tr("Robonomics tokenomics")}
   pageIntroText={tokenomicsIntroText}
 >
+
+  <section class="layout layout__mid tk-quick">
+    <div class="grid-3 tk-cards">
+      {quickLinks.map((l) => (
+        <a href={l.href} target="_blank" rel="noopener noreferrer" class:list={['tk-card', 'tk-link-card', 'tk-quick-link', l.accent && 'tk-quick-accent']}>
+          <span class="tk-tag">{l.tag}</span>
+          <h3>{l.title} <span class="tk-quick-arrow" aria-hidden="true">↗</span></h3>
+          <p>{l.text}</p>
+        </a>
+      ))}
+    </div>
+  </section>
 
   <section class="layout layout__mid section-half">
     <h2>{$tr('What XRT is for')}</h2>
@@ -296,6 +331,34 @@ const copyLabel = await $tr('Copy address');
     transform: translate(-2px, -2px);
     box-shadow: 0.45rem 0.45rem 0 var(--color-dark);
   }
+  /* quick links under the intro */
+  .tk-quick {
+    margin-top: var(--space);
+    margin-bottom: calc(var(--space) * 1.5);
+  }
+  .tk-quick-link h3 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+    text-align: left;
+  }
+  .tk-quick-arrow {
+    flex-shrink: 0;
+    color: var(--color-blue);
+    transition: transform 0.15s;
+  }
+  .tk-quick-link:hover .tk-quick-arrow {
+    transform: translate(2px, -2px);
+  }
+  .tk-quick-accent {
+    background: var(--color-green-accent);
+  }
+  .tk-quick-accent .tk-tag {
+    color: var(--color-gray-dark);
+  }
+
   .tk-tag {
     display: block;
     margin-bottom: 0.5rem;
