@@ -49,28 +49,10 @@ const xrtEth = '0x1F752250f518e419f2F03804E25728c5C6DfF73f';
 const xrtLegacy = '0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7';
 const copyLabel = await $tr('Copy address');
 
-// Quick links right under the intro: where to see the chain, trade XRT and check the price.
-const quickLinks = [
-  {
-    tag: 'Polkadot',
-    title: await $tr('Block explorer'),
-    text: await $tr('Live blocks, balances and referenda of the Robonomics parachain.'),
-    href: 'https://polkadot.js.org/apps/?rpc=wss://polkadot.rpc.robonomics.network#/explorer',
-  },
-  {
-    tag: 'Uniswap',
-    title: await $tr('Trade XRT'),
-    text: await $tr('The main XRT and ETH pair on Ethereum, bridged 1:1 from Polkadot.'),
-    href: 'https://app.uniswap.org/explore/pools/ethereum/0x2177da2e2c8548e3ce7e8b2053fd0ab0d35268c714ad2e5a916dc23d9d4d6321',
-    accent: true,
-  },
-  {
-    tag: 'CoinGecko',
-    title: await $tr('XRT price'),
-    text: await $tr('Price, volume and market data for production XRT.'),
-    href: 'https://www.coingecko.com/en/coins/robonomics-network',
-  },
-];
+// Quick links right under the intro: buy XRT first, then the explorer and the price.
+const uniswapPool = 'https://app.uniswap.org/explore/pools/ethereum/0x2177da2e2c8548e3ce7e8b2053fd0ab0d35268c714ad2e5a916dc23d9d4d6321';
+const explorerUrl = 'https://polkadot.js.org/apps/?rpc=wss://polkadot.rpc.robonomics.network#/explorer';
+const coingeckoUrl = 'https://www.coingecko.com/en/coins/robonomics-network';
 ---
 
 <Layout
@@ -82,14 +64,26 @@ const quickLinks = [
 >
 
   <section class="layout layout__mid tk-quick">
-    <div class="grid-3 tk-cards">
-      {quickLinks.map((l) => (
-        <a href={l.href} target="_blank" rel="noopener noreferrer" class:list={['tk-card', 'tk-link-card', 'tk-quick-link', l.accent && 'tk-quick-accent']}>
-          <span class="tk-tag">{l.tag}</span>
-          <h3>{l.title} <span class="tk-quick-arrow" aria-hidden="true">↗</span></h3>
-          <p>{l.text}</p>
-        </a>
-      ))}
+    <a href={uniswapPool} target="_blank" rel="noopener noreferrer" class="tk-quick-buy">
+      {$tr('Buy XRT on Uniswap')}
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+    <p class="tk-quick-addr">
+      {$tr('XRT / ETH pair. XRT contract on Ethereum:')}
+      <span class="tk-quick-nowrap">
+        <a href={`https://etherscan.io/token/${xrtEth}`} target="_blank" rel="noopener noreferrer" class="tk-addr" title={xrtEth}>{short(xrtEth)}</a>
+        <button type="button" class="tk-copy" data-copy={xrtEth} aria-label={copyLabel} title={copyLabel}>⧉</button>
+      </span>
+    </p>
+    <div class="tk-quick-more">
+      <a href={explorerUrl} target="_blank" rel="noopener noreferrer" class="tk-quick-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        {$tr('Polkadot block explorer')}
+      </a>
+      <a href={coingeckoUrl} target="_blank" rel="noopener noreferrer" class="tk-quick-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+        {$tr('Price on CoinGecko')}
+      </a>
     </div>
   </section>
 
@@ -331,32 +325,84 @@ const quickLinks = [
     transform: translate(-2px, -2px);
     box-shadow: 0.45rem 0.45rem 0 var(--color-dark);
   }
-  /* quick links under the intro */
+  /* quick links under the intro: one big buy button, two secondary links */
   .tk-quick {
-    margin-top: var(--space);
-    margin-bottom: calc(var(--space) * 1.5);
-  }
-  .tk-quick-link h3 {
-    font-size: 1.5rem;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 0.5rem;
-    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: calc(var(--space) * 1.2);
+    margin-bottom: calc(var(--space) * 1.5);
+    text-align: center;
   }
-  .tk-quick-arrow {
-    flex-shrink: 0;
-    color: var(--color-blue);
-    transition: transform 0.15s;
-  }
-  .tk-quick-link:hover .tk-quick-arrow {
-    transform: translate(2px, -2px);
-  }
-  .tk-quick-accent {
+  .tk-quick-buy {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 2.4rem;
     background: var(--color-green-accent);
+    color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    box-shadow: 0.5rem 0.5rem 0 var(--color-dark);
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
   }
-  .tk-quick-accent .tk-tag {
+  .tk-quick-buy:hover {
+    color: var(--color-dark);
+    transform: translate(-2px, -2px);
+    box-shadow: 0.65rem 0.65rem 0 var(--color-dark);
+  }
+  .tk-quick-addr {
+    margin: 0.3rem 0 0;
+    font-size: 0.9rem;
     color: var(--color-gray-dark);
+  }
+  .tk-quick-nowrap {
+    white-space: nowrap;
+  }
+  .tk-quick-more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.9rem;
+  }
+  .tk-quick-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.4rem;
+    border: 2px solid var(--color-dark);
+    color: var(--color-dark);
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .tk-quick-link svg {
+    color: var(--color-blue);
+  }
+  .tk-quick-link:hover {
+    color: var(--color-dark);
+    background: var(--color-gray-light);
+  }
+  @media screen and (max-width: 680px) {
+    .tk-quick-buy {
+      font-size: 1.2rem;
+      padding: 1rem 1.4rem;
+    }
+    .tk-quick-more {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+    }
+    .tk-quick-link {
+      justify-content: center;
+    }
   }
 
   .tk-tag {
