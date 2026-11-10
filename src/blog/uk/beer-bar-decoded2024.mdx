@@ -142,13 +142,13 @@ Decoded та цілому другому дню.
 
 ## Перевірка даних
 
-Перейдемо до отримання цих даних з блокчейну. Усі дані зберігаються в журналах цього облікового запису - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Відкриємо його в [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB).
+Перейдемо до отримання цих даних з блокчейну. Усі дані зберігаються в журналах цього облікового запису - “4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB”. Відкриємо його в Subscan.
 
 Ми побачимо всі його екстранси. Давайте відфільтруємо їх за датою. Ми отримаємо близько 140 екстрансів.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
 
-Кожен з них містить IPFS CID з телеметрією. Давайте візьмемо будь-який екстранс і витягнемо з нього дані. Наприклад, [цей](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7). 
+Кожен з них містить IPFS CID з телеметрією. Давайте візьмемо будь-який екстранс і витягнемо з нього дані. Наприклад, цей. 
 IPFS CID всередині нього - `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`.fdUVdpJ4c3`.
 
 Потім все, що вам потрібно зробити, це використати цей скрипт для розшифрування даних. Замініть IPFS CID у рядку 11 на той, який вам потрібно:

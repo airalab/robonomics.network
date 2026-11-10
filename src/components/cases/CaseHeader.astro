@@ -9,7 +9,7 @@ const caseData = items.cases.filter(c => path.includes(c.path));
 const firstCase = caseData.length > 0 ? caseData[0] : {}; 
 ---
 <div class="cases__main-title title-with-bg blue">
-  <h1><a href="/cases/" aria-label="see all our r&d cases">{ $tr('R&D cases') }</a></h1>
+  <p class="title-with-bg__text"><a href="/cases/" aria-label="see all our r&d cases">{ $tr('R&D cases') }</a></p>
 </div>
 
 {firstCase && (

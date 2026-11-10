@@ -981,5 +981,16 @@
 	"Buy_XRT_on_Uniswap": "Купить XRT на Uniswap",
 	"XRT___ETH_pair__XRT_contract_on_Ethereum_": "Пара XRT / ETH. Контракт XRT в Ethereum:",
 	"Polkadot_block_explorer": "Обозреватель блоков Polkadot",
-	"Price_on_CoinGecko": "Цена на CoinGecko"
+	"Price_on_CoinGecko": "Цена на CoinGecko",
+	"A_property_gets_its_own_digital_twin_in_Robonomics__who_has_access__what_its_devices_measure_and_how_the_building_is_serviced__The_record_stays_with_the_property_when_it_is_rented_out_or_sold__We_have_tried_this_with_an_NFT_key_for_a_house_in_Bali_and_with_energy_tracking_for_a_developer_in_Cyprus_": "У объекта недвижимости появляется цифровой двойник в Robonomics: кто имеет доступ, что измеряют его устройства и как обслуживается здание. Эта запись остаётся с объектом, когда его сдают или продают. Мы пробовали это с NFT-ключом от дома на Бали и с учётом энергии для застройщика на Кипре.",
+	"We_connect_robots_to_Robonomics_through_ROS_2__remote_control__telemetry_and_work_logs_without_a_vendor_cloud__and_logs_that_cannot_be_changed_afterwards__Our_engineers_work_hands_on_with_robot_arms_and_humanoids__including_the_Unitree_G1_": "Мы подключаем роботов к Robonomics через ROS 2: удалённое управление, телеметрия и журналы работы без облака производителя, и журналы, которые нельзя задним числом изменить. Наши инженеры работают руками с роботами-манипуляторами и гуманоидами, включая Unitree G1.",
+	"For_robotics_companies": "Для робототехнических компаний",
+	"Request_Robonomics_for_your_business": "Запросить Robonomics для вашего бизнеса",
+	"Robonomics_is_an_open_source_IoT_cloud_on_Polkadot__Devices_keep_their_digital_twins__access_lists_and_telemetry_in_Robonomics_instead_of_a_corporate_cloud_": "Robonomics — открытое IoT-облако на Polkadot. Устройства хранят в Robonomics свои цифровые двойники, списки доступа и телеметрию вместо корпоративного облака.",
+	"Open_source_sensors_and_smart_devices_that_need_no_subscription_and_no_corporate_cloud__Where_to_buy_them_and_how_to_join_the_open_air_quality_map_": "Открытые датчики и умные устройства без обязательной подписки и корпоративного облака. Где их купить и как подключиться к открытой карте качества воздуха.",
+	"Smart_homes_without_vendor_lock_in__IKEA__Xiaomi__Sonoff_and_other_brands_in_one_Home_Assistant_system__with_private_encrypted_reports_through_Robonomics_": "Умный дом без привязки к производителю: IKEA, Xiaomi, Sonoff и другие бренды в одной системе Home Assistant, с приватными зашифрованными отчётами через Robonomics.",
+	"Smart_access_and_self_service_for_co_working_and_co_living_spaces_on_Home_Assistant_and_Robonomics__No_corporate_cloud__your_data_stays_under_your_control_": "Умный доступ и самообслуживание для коворкингов и коливингов на Home Assistant и Robonomics. Без корпоративного облака, данные остаются под вашим контролем.",
+	"Robonomics_for_business__digital_twins_of_real_estate__product_passports_for_manufacturing__custom_privacy_first_hardware_and_robotics_": "Robonomics для бизнеса: цифровые двойники недвижимости, паспорта изделий для производства, своё приватное железо и робототехника.",
+	"Ask_a_Robonomics_technician_about_smart_devices__Home_Assistant_or_the_Robonomics_network_": "Спросите техника Robonomics об умных устройствах, Home Assistant или сети Robonomics.",
+	"R_D_cases_built_on_Robonomics__smart_homes__sensors__robotics__quality_control_and_more_": "R&D-кейсы на Robonomics: умные дома, датчики, робототехника, контроль качества и другое."
 }

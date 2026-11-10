@@ -136,13 +136,13 @@ description: '지난 주, Robonomics 팀이 브뤼셀에서 열린 Polkadot Deco
 
 ## 데이터 확인
 
-이제 블록체인에서 이 데이터를 가져오는 작업으로 넘어갑시다. 모든 데이터는 이 계정의 데이터 로그에 저장되어 있습니다 - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". [Subscan](https://robonomics.subscan.io/account/4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB)에서 이를 열어봅시다.
+이제 블록체인에서 이 데이터를 가져오는 작업으로 넘어갑시다. 모든 데이터는 이 계정의 데이터 로그에 저장되어 있습니다 - "4EsopMUbxQH5NseBXiJcPkTy5ZRhs7XrjuMBqmoCzBqWQ9gB". Subscan에서 이를 열어봅시다.
 
 모든 익스트린직을 볼 수 있습니다. 날짜별로 필터링해 보겠습니다. 약 140개의 익스트린직을 얻을 것입니다.
 
 <RbImage zoom src="/blog/images/beer-bar-decoded2024/subscan.png" alt="subscan extrinsics" />
 
-각각에는 텔레메트리가 포함된 IPFS CID가 있습니다. 임의의 익스트린직을 선택하고 그 안에서 데이터를 추출해 보겠습니다. 예를 들어, [이것](https://robonomics.subscan.io/extrinsic/0x4f1bd898b367f32414fd397094e132262fbeaa8b50e7288d9aed908a138382f7)입니다. 그 안에 있는 IPFS CID는 `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`입니다.fdUVdpJ4c3`.
+각각에는 텔레메트리가 포함된 IPFS CID가 있습니다. 임의의 익스트린직을 선택하고 그 안에서 데이터를 추출해 보겠습니다. 예를 들어, 이것입니다. 그 안에 있는 IPFS CID는 `QmZMkJo6StbfDVvGCqVnV3sZeG7R3cftt7WX`입니다.fdUVdpJ4c3`.
 
 그런 다음이 스크립트를 사용하여 데이터를 해독하면됩니다. 필요한 것으로 줄 11의 IPFS CID를 바꿉니다:
 

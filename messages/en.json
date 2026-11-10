@@ -981,5 +981,16 @@
 	"Buy_XRT_on_Uniswap": "Buy XRT on Uniswap",
 	"XRT___ETH_pair__XRT_contract_on_Ethereum_": "XRT / ETH pair. XRT contract on Ethereum:",
 	"Polkadot_block_explorer": "Polkadot block explorer",
-	"Price_on_CoinGecko": "Price on CoinGecko"
+	"Price_on_CoinGecko": "Price on CoinGecko",
+	"A_property_gets_its_own_digital_twin_in_Robonomics__who_has_access__what_its_devices_measure_and_how_the_building_is_serviced__The_record_stays_with_the_property_when_it_is_rented_out_or_sold__We_have_tried_this_with_an_NFT_key_for_a_house_in_Bali_and_with_energy_tracking_for_a_developer_in_Cyprus_": "A property gets its own digital twin in Robonomics: who has access, what its devices measure and how the building is serviced. The record stays with the property when it is rented out or sold. We have tried this with an NFT key for a house in Bali and with energy tracking for a developer in Cyprus.",
+	"We_connect_robots_to_Robonomics_through_ROS_2__remote_control__telemetry_and_work_logs_without_a_vendor_cloud__and_logs_that_cannot_be_changed_afterwards__Our_engineers_work_hands_on_with_robot_arms_and_humanoids__including_the_Unitree_G1_": "We connect robots to Robonomics through ROS 2: remote control, telemetry and work logs without a vendor cloud, and logs that cannot be changed afterwards. Our engineers work hands-on with robot arms and humanoids, including the Unitree G1.",
+	"For_robotics_companies": "For robotics companies",
+	"Request_Robonomics_for_your_business": "Request Robonomics for your business",
+	"Robonomics_is_an_open_source_IoT_cloud_on_Polkadot__Devices_keep_their_digital_twins__access_lists_and_telemetry_in_Robonomics_instead_of_a_corporate_cloud_": "Robonomics is an open-source IoT cloud on Polkadot. Devices keep their digital twins, access lists and telemetry in Robonomics instead of a corporate cloud.",
+	"Open_source_sensors_and_smart_devices_that_need_no_subscription_and_no_corporate_cloud__Where_to_buy_them_and_how_to_join_the_open_air_quality_map_": "Open-source sensors and smart devices that need no subscription and no corporate cloud. Where to buy them and how to join the open air-quality map.",
+	"Smart_homes_without_vendor_lock_in__IKEA__Xiaomi__Sonoff_and_other_brands_in_one_Home_Assistant_system__with_private_encrypted_reports_through_Robonomics_": "Smart homes without vendor lock-in: IKEA, Xiaomi, Sonoff and other brands in one Home Assistant system, with private encrypted reports through Robonomics.",
+	"Smart_access_and_self_service_for_co_working_and_co_living_spaces_on_Home_Assistant_and_Robonomics__No_corporate_cloud__your_data_stays_under_your_control_": "Smart access and self-service for co-working and co-living spaces on Home Assistant and Robonomics. No corporate cloud, your data stays under your control.",
+	"Robonomics_for_business__digital_twins_of_real_estate__product_passports_for_manufacturing__custom_privacy_first_hardware_and_robotics_": "Robonomics for business: digital twins of real estate, product passports for manufacturing, custom privacy-first hardware and robotics.",
+	"Ask_a_Robonomics_technician_about_smart_devices__Home_Assistant_or_the_Robonomics_network_": "Ask a Robonomics technician about smart devices, Home Assistant or the Robonomics network.",
+	"R_D_cases_built_on_Robonomics__smart_homes__sensors__robotics__quality_control_and_more_": "R&D cases built on Robonomics: smart homes, sensors, robotics, quality control and more."
 }
