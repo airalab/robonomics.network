@@ -1,45 +1,22 @@
 ---
+import { homeTweets } from '../data/tweets.js';
+
 const {
   tweets: customTweets,
   width = false,
   embedded = false,
 } = Astro.props;
 
-// Default tweets
-const defaultTweets = [
-  {
-    image: "/pages/home/tweet-1.webp",
-    url: "https://x.com/EnsRationis/status/1985322718707761480",
-    alt: "Tweet about Robonomics hardware"
-  },
-  {
-    image: "/pages/home/tweet-2.webp",
-    url: "https://x.com/EnsRationis/status/2001271515887628712",
-    alt: "Tweet about Robonomics project"
-  },
-  {
-    image: "/pages/home/tweet-3.webp",
-    url: "https://x.com/AIRA_Robonomics/status/1998105755505848431",
-    alt: "Tweet from Robonomics about 10 year anniversary"
-  },
-  {
-    image: "/pages/home/tweet-4.webp",
-    url: "https://x.com/AIRA_Robonomics/status/1958438070933745792",
-    alt: "Tweet about Experiment Day on Koh Phangan"
-  },
-  {
-    image: "/pages/home/tweet-5.webp",
-    url: "https://x.com/EnsRationis/status/1998112566711865640",
-    alt: "Tweet about world's first video of using Ethereum to control a robot"
-  },
-  {
-    image: "/pages/home/tweet-6.webp",
-    url: "https://x.com/positivecrash/status/1959901306862112892?s=12&t=L0SkriBV642yx7HfeGIo7Q",
-    alt: "Tweet about Altruist Insight"
-  },
-];
+const tweets = customTweets || homeTweets;
 
-const tweets = customTweets || defaultTweets;
+const formatDate = (date) =>
+  new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+
+// Mentions and hashtags are highlighted like on X
+const highlight = (text) =>
+  text
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/([@#][\w]+)/g, '<span class="tweet-card__tag">$1</span>');
 ---
 
 <section class:list={['tweet-gallery', 'section', embedded && 'tweet-gallery--embedded']} aria-label="What do creators say">
@@ -56,7 +33,31 @@ const tweets = customTweets || defaultTweets;
     )}
     
     <div class="tweet-gallery__grid">
-      {tweets.map((tweet, index) => (
+      {tweets.map((tweet, index) => tweet.text ? (
+        <a
+          href={tweet.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="tweet-gallery__item tweet-card"
+          aria-label={`${tweet.author.name} on X`}
+        >
+          <div class="tweet-card__head">
+            <img src={tweet.author.avatar} alt="" class="tweet-card__avatar" width="44" height="44" loading="lazy" />
+            <div class="tweet-card__author">
+              <span class="tweet-card__name">{tweet.author.name}</span>
+              <span class="tweet-card__meta">@{tweet.author.handle}</span>
+            </div>
+            <svg class="tweet-card__x" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </div>
+          <p class="tweet-card__text" set:html={highlight(tweet.text)} />
+          {tweet.image && (
+            <div class:list={['tweet-card__media', tweet.video && 'tweet-card__media--video']}>
+              <img src={tweet.image} alt="" loading="lazy" />
+            </div>
+          )}
+          <time class="tweet-card__date" datetime={tweet.date}>{formatDate(tweet.date)}</time>
+        </a>
+      ) : (
         <a 
           href={tweet.url} 
           target="_blank" 
@@ -298,6 +299,108 @@ const tweets = customTweets || defaultTweets;
 
   .tweet-gallery__item:hover .tweet-gallery__image.loaded {
     opacity: 0.9;
+  }
+
+  .tweet-card {
+    min-height: 0;
+    padding: calc(var(--space) * 0.75);
+    background-color: var(--color-dark);
+    border: 1px solid #2f3336;
+    color: var(--color-light);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .tweet-card:hover {
+    transform: translate3d(0, -4px, 0);
+    border-color: var(--color-gray);
+  }
+
+  .tweet-card__head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: calc(var(--space) * 0.5);
+  }
+
+  .tweet-card__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: var(--color-gray-dark);
+    border: 1px solid #2f3336;
+  }
+
+  .tweet-card__author {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    line-height: 1.3;
+  }
+
+  .tweet-card__name {
+    font-variation-settings: var(--font-flex-bold);
+  }
+
+  .tweet-card__meta {
+    color: var(--color-gray);
+    font-size: 0.875em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .tweet-card__x {
+    width: 22px;
+    height: 22px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .tweet-card__text {
+    margin: 0;
+    white-space: pre-line;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+
+  .tweet-card__text :global(.tweet-card__tag) {
+    color: #1d9bf0;
+  }
+
+  .tweet-card__media {
+    position: relative;
+    margin-top: calc(var(--space) * 0.75);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2f3336;
+  }
+
+  .tweet-card__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 340px;
+    object-fit: cover;
+  }
+
+  .tweet-card__date {
+    display: block;
+    margin-top: calc(var(--space) * 0.5);
+    color: var(--color-gray);
+    font-size: 0.875em;
+  }
+
+  .tweet-card__media--video::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 56px;
+    height: 56px;
+    margin: -28px 0 0 -28px;
+    border-radius: 50%;
+    background: #1d9bf0 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M8 5v14l11-7z'/%3E%3C/svg%3E") center / 28px no-repeat;
   }
 
   @keyframes skeleton-loading {
