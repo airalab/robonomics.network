@@ -21,6 +21,8 @@ It works, and it is still being maintained — version 1.7.2 shipped last week w
 
 5.0 changes the unit of trust. The thing that travels, and the thing that ends up on the chain, is what the sensor itself signed.
 
+<RbImage zoom src="/blog/images/robonomics-5-0-connectivity/01-what-reaches-the-chain.png" alt="Today the chain stores a hash written by the service; in 5.0 it stores the readings the sensor signed" />
+
 ## The signed envelope
 
 The new format lives in its own repository, [`connectivity-protocol`](https://github.com/airalab/connectivity-protocol), started in August, published on [buf.build](https://buf.build/airalab/connectivity-protocol) and licensed Apache-2.0. One schema is shared by the Altruist firmware, the connectivity services and the sensors.social front end.
@@ -57,25 +59,15 @@ message Meta {
 
 `node_id` is where this layer meets part one. A sensor is no longer identified by an owner field typed into firmware; it is a node in the CPS tree, the same topology the 5.0 runtime is built around. Measurements are typed per board — Urban for outdoor units, Insight for indoor ones — and each can be sent in the clear or as ciphertext addressed to someone specific, so a city can receive precise location while the public map gets an approximate one. The protocol carries ciphertext as opaque bytes and deliberately does not fix the cipher.
 
+<RbImage zoom src="/blog/images/robonomics-5-0-connectivity/02-envelope.png" alt="The signed envelope: sensor_id, nonce, message and signature, with the message broken into Meta, public and private parts" />
+
 ## A LoRa packet redesigned the format
 
 The envelope was first designed for HTTP, where a few extra bytes cost nothing. Then we tried to send it over a LoRa mesh.
 
 Altruists sit where there is often no Wi-Fi: rooftops, parks, construction sites. Meshtastic is an open firmware that turns cheap LoRa boards into a self-organising radio mesh, and it was the obvious candidate for carrying readings out of such places. Its constraint is hard: a LoRa packet is 255 bytes, full stop. The transport spec we wrote for it in September does the arithmetic:
 
-<RbCode>
-
-```text
-255  LoRa packet
--16  Meshtastic header
--12  PKI encryption (auth tag + extra nonce)
- -6  Meshtastic Data fields (port + payload length)
- -2  safety margin, measured on real firmware
----
-219  bytes for our frame; 1 of them is the frame type
-```
-
-</RbCode>
+<RbImage zoom src="/blog/images/robonomics-5-0-connectivity/03-lora-budget.png" alt="Where the 255 bytes of a LoRa packet go, and a temperature reading as a double versus a scaled integer" />
 
 Now subtract the envelope itself. A 32-byte key, a 64-byte signature, a 16-byte nonce and their field tags take about 120 bytes. That leaves under a hundred bytes for the timestamp, the node id and every measurement — if the reading is to fit in one packet and avoid fragmentation over a radio link that may drop any of them.
 
@@ -95,24 +87,13 @@ None of this was needed for HTTP. All of it makes the HTTP path cheaper too.
 
 The Meshtastic transport itself is specified to be boring: encrypted unicast to a known gateway with acknowledgement on; refuse to send rather than silently fall back to weaker channel encryption; fragment only when a payload genuinely does not fit; leave retries to the Meshtastic firmware instead of running a second retry loop on top of it. The test bench is an Altruist Urban talking over UART to a Heltec V4 board at 868 MHz, and a Raspberry Pi 4 with a LoRa hat as the gateway; the wiring and setup are in the [hardware repository](https://github.com/airalab/hardware).
 
+<RbImage zoom src="/blog/images/robonomics-5-0-connectivity/testbed-wiring.jpg" alt="Altruist Urban wired to a Heltec V4 LoRa board" caption="The bench: Altruist Urban → Heltec V4 over UART. Render from airalab/hardware." />
+
 ## The cloud pipeline
 
 On the receiving side, [`connectivity-cloud`](https://github.com/airalab/connectivity-cloud) replaces the single Python process with a set of small TypeScript services around a Kafka log:
 
-<RbCode>
-
-```text
-sensor -> POST /v1/telemetry (endpoint)
-            verify signature, timestamp window, nonce, authorization
-            202 only after Kafka acknowledges
-              |
-              +-> pubsub-broadcaster  -> libp2p GossipSub -> live map
-              +-> heartbeat-tracker   -> which sensors are online
-              +-> batcher             -> batches, zstd, <= 8 KB
-                    +-> blockchain-anchor -> cps.setPayload
-```
-
-</RbCode>
+<RbImage zoom src="/blog/images/robonomics-5-0-connectivity/04-pipeline.png" alt="connectivity-cloud: endpoint checks, Kafka, and three consumers — live map, online sensors, batches anchored with cps.setPayload" />
 
 The endpoint rejects a message whose timestamp is more than five minutes off, whose nonce it has already seen, or whose signature does not verify, and it answers the sensor only once the event is safely in Kafka. Everything after that reads from the log independently, so a slow chain does not slow the live map.
 
@@ -130,17 +111,7 @@ Not every deployment wants Kafka and a cloud account. For a single board compute
 
 ## What runs today, and what does not yet
 
-<TextCard alignContent="left" back="white" shadow="gray">
-
-**Running:** the sensors.social map, on `sensors-connectivity` and the old JSON path.
-
-**Written and published:** the connectivity protocol (v1 beta), the Meshtastic transport spec (draft), the connectivity-cloud services, the edge gateway.
-
-**On the bench:** Altruist over LoRa through Meshtastic.
-
-**Next:** moving the map and the sensor fleet over to the new pipeline. sensors.social will announce it when it happens.
-
-</TextCard>
+<RbImage zoom src="/blog/images/robonomics-5-0-connectivity/05-status.png" alt="Status: running, published, on the bench, next" />
 
 ---
 
