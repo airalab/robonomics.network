@@ -1,0 +1,87 @@
+---
+title: 'Robonomics 5.0, part three: the devices and the people who use them'
+date: 2026-11-11
+published: true
+locale: 'en'
+cover_image: /blog/images/robonomics-5-0-devices/cover.jpg
+tags: ['Robonomics 5.0', 'Altruist', 'sensors.social', 'Open hardware']
+description: "The last part of the series: the Altruist sensors that sit on balconies and desks, how their firmware is built and delivered, how every unit is tested before it ships, and what people see on sensors.social and in the new Android app."
+abstract: "Part three of three. Altruist Urban and Insight, now open hardware; Stable and Testing firmware channels; a 24-hour burn-in for every assembled unit; a key born on the device; the sensors.social map, its new indexer and the first Android build. EnsRationis [Robonomics Software Architect]"
+---
+
+Part one was about the protocol, part two about the road data travels. This part is about the two ends of that road: a small device on a balcony or a desk, and the person who looks at what it measured.
+
+None of the chain work matters if the sensor is flaky, the update breaks it, or the owner cannot make sense of the numbers. Most of this summer and autumn went into exactly that kind of unglamorous work.
+
+## Two devices
+
+**Altruist Urban** lives outside, on a wall or a balcony. It measures fine dust (PM2.5 and PM10), temperature, humidity, pressure and street noise, and works from −30 to +45 °C. A printed hood keeps rain off it.
+
+**Altruist Insight** lives inside. It measures CO2, temperature, humidity, pressure and volatile organic compounds, and has an e-paper screen that shows its own readings and those of the Urban outside the window.
+
+Together they are sold as one bundle, but each works on its own. Neither needs a cloud: both work locally and connect to Home Assistant. Sending readings to [sensors.social](https://sensors.social), the open environmental data network, is an option the owner turns on, not a condition of use.
+
+## Open, with a licence on every layer
+
+In November every part of the stack got an explicit licence:
+
+- **Boards.** The Urban and Insight boards are under CERN-OHL-W-2.0, and the EasyEDA project files are in [airalab/hardware](https://github.com/airalab/hardware). Stands, pegboard holders and the weather hood are on MakerWorld for anyone with a printer.
+- **Firmware.** GPL-3.0. It grew out of the Sensor.Community `sensors-software`, and says so.
+- **The map.** AGPL-3.0 for the code, ODbL 1.0 for the data.
+
+Open does not mean "go build it yourself". Most people buy a finished device. But anyone can check what it does, repair it, or build a compatible one.
+
+## Firmware: two channels and no surprises
+
+Until June there was one firmware and a hidden "beta" switch. Now there are two channels, built from two branches:
+
+- **Stable** is what devices update to on their own, over the air.
+- **Testing** is for people who want new features early. A device on Testing never updates itself; the owner can go back to Stable by hand at any time.
+
+Both channels can be installed from the browser at `webflasher.robonomics.network`: plug the device into a USB port, pick a channel, press a button. Every build there is published by CI from the firmware repository, with its version and commit, and since 10 November the same pipeline also rolls a new Stable out to devices in the field. No more binaries uploaded by hand.
+
+The last two releases show where the work goes. [R_2026-10](https://github.com/airalab/altruist-firmware/releases/tag/v_R_2026-10) brought a new web interface on the device, optional encryption of map values for owners who want it, VOC readings, and the signed protobuf messages from part two, each carrying the device's node in the CPS tree. [R_2026-11](https://github.com/airalab/altruist-firmware/releases/tag/v_R_2026-11), out today, adds a Desk mode to Insight — one large number and a six-hour graph per slide — and a night view of CO2.
+
+## A key born on the device
+
+Each Altruist creates its own Ed25519 key the first time it starts. Nobody else ever holds it. Every reading it sends to the map and to the chain is signed with that key, and the public key is the device's identity: on the map, and as a node in the Robonomics 5.0 device tree.
+
+That is the thread connecting all three parts. The protocol gives a device a place in the tree, the connectivity layer carries what it signed without touching it, and the device makes the signature.
+
+## Every unit, 24 hours, before it ships
+
+The team that assembles and ships Altruist is small, so the checks have to run without a person watching. [`altruist-tester`](https://github.com/airalab/altruist-tester) does that. Freshly assembled devices are plugged into a powered USB hub on a Raspberry Pi and left for 24 hours. The tester reads their logs and checks:
+
+- the sensors that model should have are all there;
+- values stay in plausible ranges and do not freeze;
+- readings arrive at the expected rate and actually get delivered;
+- the device does not reboot, crash, brown out or fall silent.
+
+Each unit ends up as pass, warning or fail. Every Altruist goes through this before it is packed.
+
+The firmware was changed to help: since August it prints fixed, machine-readable lines about its boot, health and uploads, written for the tester to read. The same change fixed a quiet risk. If encryption fails, the device now refuses to send rather than falling back to plain text.
+
+## What people see
+
+**The map.** [sensors.social](https://sensors.social) got more context around the readings this autumn: Copernicus dust data, active fires and smoke, and radiation sensors on the EURDEP colour scale. The headline sensor count gave way to a service status and the number of sensors online in the last 24 hours, which says more about whether the network is alive. Any sensor can be shared with a QR code.
+
+**The phone.** The first public build of the sensors.social Android app came out yesterday, as an APK on [GitHub](https://github.com/PinoutLimited/sensors-social-android/releases). It shows your sensors with 24-hour, 7-day and 30-day history, helps set up a new Altruist in five steps, and raises alerts. The alerts are computed on the phone every 15 minutes, with no server of ours in the loop.
+
+**The indexer.** Under the map sits RoSeMAN, the service that collects readings and serves them to the map and the app. Version 1.5.0 can already read the new path from part two: it picks up batches written to the CPS pallet, unpacks them, checks every sensor's signature and serves them through a new API. The map itself still reads the old API. The switch will be announced by sensors.social when it happens.
+
+## Where they come from
+
+Altruist is sold at [cyberpunks.shop](https://cyberpunks.shop): Urban, Insight, both together, and the printed accessories. The same small team assembles the devices, runs them through the tester and ships them. Being a shop changes priorities in a healthy way: a crash on someone's balcony is a support ticket, not a line in an issue tracker.
+
+## That is the series
+
+Three parts, one summer and autumn: a runtime and a device tree on Polkadot, a message the sensor signs once and nobody rewrites, and a device that makes that signature and is tested before anyone receives it. Next comes the part that is easiest to explain and hardest to finish: switching the network over to it.
+
+Firmware: [github.com/airalab/altruist-firmware](https://github.com/airalab/altruist-firmware) · Hardware: [github.com/airalab/hardware](https://github.com/airalab/hardware)
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/robonomics-5-0-runtime-first/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">@EnsRationis</a></em></span>
+</div>
