@@ -1,0 +1,94 @@
+---
+title: 'Polkadot now keeps an open dataset of the planet’s air'
+date: 2026-11-13
+published: true
+locale: 'en'
+cover_image: /blog/images/open-air-dataset-on-polkadot/cover.jpg
+tags: ['sensors.social', 'Open data', 'Polkadot', 'Altruist']
+description: "Since April, home sensors in Cyprus, Koh Phangan, Réunion and 20+ countries have written more than 19 million air readings through Robonomics. Since 28 September the record lives on Polkadot. Not a roadmap promise: an archive anyone can open today, and a use of a blockchain whose main result is not financial."
+abstract: "More than 19 million readings, about 300 sensors, 20+ countries, and almost half a million entries on chain. What has piled up, where it comes from, what the island data already showed, and why a public chain is the right home for a commons. EnsRationis [Robonomics Software Architect]"
+---
+
+Blockchains are usually explained through money. This post is about air.
+
+Since April, small sensors on balconies and windows — in Cyprus, on Koh Phangan in Thailand, on Réunion in the Indian Ocean, across Europe and in more than twenty countries in all — have been sending what they measure through Robonomics. Since 28 September, when Robonomics moved to Polkadot, the record lives on Polkadot.
+
+This is not a promise of the kind "one day data will be stored on chain". It is an archive that already exists, that anyone can open today, and that nobody — including us — can quietly edit or close.
+
+## What has piled up
+
+<RbImage zoom src="/blog/images/open-air-dataset-on-polkadot/numbers.png" alt="Since 1 April 2026: 19M+ readings, 100M+ values, about 300 sensors, 20+ countries; almost half a million entries on chain, on Polkadot since 28 September" />
+
+We counted it for this post. From 1 April to today the open index behind the sensors.social map holds **more than 19 million readings**. Each reading carries several values — fine and coarse dust, temperature, humidity, pressure, street noise, CO₂ indoors — so that is **more than 100 million individual measurements** from **about 300 sensors**.
+
+One honest caveat: this is seven and a half months, not a full year, because the current index starts on 1 April 2026. The sensors were working before that, and their earlier readings are on chain too; they will be added when the archive is re-indexed. So every number here is a floor.
+
+<RbImage zoom src="/blog/images/open-air-dataset-on-polkadot/growth.png" alt="Cumulative readings by month, April to 13 November 2026: from 2.8 to 19.4 million; Robonomics moved to Polkadot on 28 September" />
+
+## Where it comes from
+
+<RbImage zoom src="/blog/images/open-air-dataset-on-polkadot/map.png" alt="World map of sensors: dense clusters in Cyprus and Europe, points on Koh Phangan, Bali, Réunion, in the Americas and Asia" />
+
+Most of them are home sensors, put up by people who wanted to know what they breathe. Three places show what that adds up to.
+
+### Koh Phangan: evidence the community collected itself
+
+<RbImage zoom src="/blog/images/open-air-dataset-on-polkadot/phangan-map.png" alt="Four reporting sensors on Koh Phangan on the sensors.social map" caption="The four reporting sensors on Koh Phangan. Map: sensors.social." />
+
+In August 2025 our team spent two days on the island with five Altruist sensors and local activists. A year on, the sensors.social team went through the archive: [Koh Phangan, one year on](https://sensors.social/blog/koh-phangan-one-year-later/).
+
+The finding is one no daily average would show. The island’s background air is among the cleanest in the network. Inside it the sensors caught **about 1,200 short, sharp pollution episodes**, mostly in the evening, nine in ten of them right next to one sensor while the others stayed clean. That is what household trash burning looks like: small, local and every day.
+
+<RbImage zoom src="/blog/images/open-air-dataset-on-polkadot/phangan-episodes.png" alt="1,199 short pollution episodes on Koh Phangan, April to September 2026; most happen in the evening; one evening at full resolution" caption="Every episode from April to September, the hour they happen, and one evening at full resolution. Chart: sensors.social." />
+
+The activists put it in their own words: they are collecting evidence of pollution on a public blockchain. Evidence is the point. A complaint to the island’s authorities based on a spreadsheet can be dismissed as made up. A record that has been sitting on a public chain since the day it was measured cannot.
+
+### Cyprus: one island, seventy sensors
+
+About seventy sensors and more than five million readings make Cyprus the most densely measured place in the network. In early April 26 of them followed a Saharan dust storm across seven towns hour by hour, and on 18 April they watched the dust come down to balcony level across the island. The story is in [Cyprus Saharan dust storm, tracked by citizen sensors](https://sensors.social/blog/cyprus-saharan-dust-storm/).
+
+<RbImage zoom src="/blog/images/open-air-dataset-on-polkadot/cyprus-dust.png" alt="Dust storm in Cyprus, 3 April 2026: coarse dust rising above the WHO limit in Paphos, Pissouri, Episkopi, Nicosia and Limassol" caption="3 April 2026: Saharan dust arrives over seven Cypriot towns. Each line is one home sensor. Chart: sensors.social." />
+
+No single sensor could show that. An official monitoring station shows one dot; dozens of neighbours show the front moving across the island.
+
+### Réunion, Bali and the rest
+
+One home on Réunion and one on Bali have been recording around the clock since April: the network’s points in the Indian Ocean and in Indonesia. Europe adds dozens more, from Spain to Poland. Each new sensor is a new point on a map that did not have one.
+
+<RbImage zoom src="/blog/images/open-air-dataset-on-polkadot/notable-days.gif" alt="The sensors.social map on notable days: Cyprus, Koh Phangan, Réunion and Bali" caption="The map on notable days. Animation: sensors.social." />
+
+## Why a chain, if nobody is paying anyone
+
+Here the blockchain is not used to move money. It does two things a server alone cannot.
+
+<RbImage zoom src="/blog/images/open-air-dataset-on-polkadot/path.png" alt="How a reading becomes part of the commons: the sensor signs it; readings are packed into a file in IPFS; Robonomics writes its fingerprint to Polkadot; an open indexer can rebuild the archive; equal access through the map and API" />
+
+**It makes the record tamper-evident.** Every sensor signs its readings with its own key. Readings are packed into files, and the fingerprint of every file is written to the chain. Change one number later, and it no longer matches the fingerprint that has been public since that day.
+
+**It makes the archive impossible to lock up.** The index that turns those entries back into readings is open source. Anyone can run their own copy and rebuild the whole archive from the chain, without asking us. If sensors.social disappeared tomorrow, the data would not.
+
+So the main result here is technical and public, not financial: an environmental record that can be trusted without trusting whoever runs the server.
+
+## A commons, not an asset
+
+<RbImage zoom src="/blog/images/open-air-dataset-on-polkadot/commons.png" alt="Data as an asset vs data as a commons: where it is held, who can close it, how you get access, what proves it" />
+
+Air measured street by street is turning into valuable data. The familiar way to build it is to make it an asset: sell the device, send its readings to the maker’s cloud, charge for access. A city, a university lab and a student then pay different prices, if they get in at all.
+
+Here it works the other way. Each owner decides whether their sensor publishes. What is published becomes common ground under an open licence, available to a city, a lab and a student on the same terms. Urban researchers get a long, street-level record that no single institution could afford to collect, and that no single institution can take away.
+
+That is what Robonomics adds to Polkadot here: not another token, but a growing dataset about the planet that belongs to everyone who looks at it.
+
+## Use it, or add to it
+
+- Look at the live map: [sensors.social](https://sensors.social).
+- Take the data: the open API is described in [An open air dataset for the planet](https://sensors.social/blog/open-air-dataset/).
+- Add a point: an Altruist on your balcony makes your street part of the dataset. Publishing is your choice; the sensor works at home without it.
+- The showcase page with the numbers and the stories: [Open air dataset on Polkadot](/cases/open-air-dataset/).
+
+---
+
+<div style={{display:'flex',alignItems:'center',gap:'14px',marginTop:'1.5rem'}}>
+  <img src="/blog/images/robonomics-5-0-runtime-first/author-ensrationis.png" alt="EnsRationis" width="56" height="56" style={{borderRadius:'50%',flexShrink:0}} />
+  <span><em>— EnsRationis, Robonomics Software Architect · <a href="https://x.com/EnsRationis">@EnsRationis</a></em></span>
+</div>
