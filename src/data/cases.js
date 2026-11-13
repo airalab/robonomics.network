@@ -1,24 +1,6 @@
 export default {
   cases: [
     {
-      id: 20,
-      title: $trVue('Open air dataset on Polkadot'),
-      description: $trVue('More than 19 million air readings from home sensors in Cyprus, Koh Phangan, Réunion and 20+ countries, kept open and tamper-evident on Polkadot by Robonomics.'),
-      path: 'cases/open-air-dataset',
-      cover_image: 'open-air-dataset.webp',
-      metaImg: '/blog/images/open-air-dataset-on-polkadot/cover.jpg',
-      // progress field needs for "sort by progress" filter
-      progress: 'proceeding',
-      // created field needs for "sort by date" filter (for earliest option)
-      created: '2026-04-01',
-      // updated field needs for "sort by date" filter (for recent option)
-      updated: '2026-11-13',
-      // tags field needs for "sort by interest" filter
-      // use lowerCase
-      tags: ['open data', 'sensors', 'polkadot ecosystem'],
-      done: true
-    },
-    {
       id: 0,
       title: $trVue('Fronius Solar.web integration with Home Assistant'),
       description: $trVue('Collaboration with real estate developer on Cyprus for tracking the daily distribution, consumption and offsetting any excess carbon footprint.'),
