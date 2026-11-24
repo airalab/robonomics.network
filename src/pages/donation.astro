@@ -1,0 +1,101 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const wallets = [
+  {
+    asset: "DOT",
+    network: "Polkadot (relay chain)",
+    address: "16DkrZNu71xK3rCNhDhvirf7gkdLjYALKKjcoNVsK76Gkpfw",
+  },
+  {
+    asset: "BTC",
+    network: "Bitcoin (native SegWit)",
+    address: "bc1qkftspj9akd5a8qmw7e2da5w8dhma6dj2fplulv",
+  },
+  {
+    asset: "ETH, USDC",
+    network: "Ethereum mainnet (USDC as ERC-20)",
+    address: "0xb73C35A7547E3767eB81e15f24983299ea3C93ef",
+  },
+];
+---
+
+<Layout
+  title={$tr("Donate")}
+  description={$tr("Support Robonomics development with a donation in DOT, BTC, ETH or USDC to Akagi Engineering Co., Ltd., the Japanese company that operates the project.")}
+  pageTitle={$tr("Donate")}
+  pageIntroText={$tr("If Robonomics is useful to you, you can support its development directly. Donations are received by Akagi Engineering Co., Ltd., the company that operates this website.")}
+>
+
+<section class="section layout layout__text">
+
+  <h2>{$tr("Who receives the donation")}</h2>
+  <table>
+    <tbody>
+      <tr>
+        <th scope="row">{$tr("Recipient")}</th>
+        <td>Akagi Engineering Co., Ltd. (<span lang="ja">赤城エンジニアリング株式会社</span>)</td>
+      </tr>
+      <tr>
+        <th scope="row">{$tr("Legal form")}</th>
+        <td>{$tr("Kabushiki kaisha (joint-stock company) registered in Japan, corporate number 9070001040328")}</td>
+      </tr>
+      <tr>
+        <th scope="row">{$tr("Registered address")}</th>
+        <td>1953-1 Naegashima-machi, Maebashi-shi, Gunma 371-0241, Japan</td>
+      </tr>
+      <tr>
+        <th scope="row">{$tr("Status")}</th>
+        <td>{$tr("A commercial company, not a registered charity or public-interest organisation. We do not issue receipts for tax deduction.")}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>{$tr("What donations are spent on")}</h2>
+  <ul>
+    <li><strong>{$tr("Software development")}</strong> {$tr("— writing, testing and maintaining the open-source Robonomics code.")}</li>
+    <li><strong>{$tr("Infrastructure")}</strong> {$tr("— servers, network nodes, domains and services the code runs on.")}</li>
+    <li><strong>{$tr("Salaries")}</strong> {$tr("— paying the people who do this work.")}</li>
+  </ul>
+
+  <h2>{$tr("Official addresses")}</h2>
+  <p>{$tr("We accept DOT, BTC, ETH and USDC only on the networks listed below. These are the only official addresses; they are also published on")} <a href="https://akagi.dev/donation" target="_blank" rel="noopener">akagi.dev/donation</a>. {$tr("We never ask for donations in private messages.")}</p>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">{$tr("Asset")}</th>
+        <th scope="col">{$tr("Network")}</th>
+        <th scope="col">{$tr("Address")}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {wallets.map((w) => (
+        <tr>
+          <td>{w.asset}</td>
+          <td>{w.network}</td>
+          <td><code class="donation-address">{w.address}</code></td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p>{$tr("Check the address character by character before sending, and send a small test amount first if the transfer matters. Network fees and confirmation times are set by each blockchain.")}</p>
+
+  <h2>{$tr("A donation is voluntary")}</h2>
+  <p>{$tr("There is no minimum amount and no obligation to donate. A donation is not payment for goods or services: it gives no tokens, rights, priority support or claim on our time. For paid work, please use the")} <a href="/contact/">{$tr("contact form")}</a>.</p>
+
+  <h2>{$tr("Conversion")}</h2>
+  <p>{$tr("Received funds may be exchanged into JPYC (a yen stablecoin) or Japanese yen (JPY) and are then used by the company for the purposes listed above.")}</p>
+
+  <h2>{$tr("Refunds")}</h2>
+  <p>{$tr("A refund is possible on a direct request to")} <a href="mailto:ceo@akagi.dev">ceo@akagi.dev</a> {$tr("within 30 days of the transfer date. Please include the transaction hash and the address the funds should be returned to.")}</p>
+
+</section>
+
+</Layout>
+
+<style>
+  .donation-address {
+    overflow-wrap: anywhere;
+    word-break: break-all;
+  }
+</style>
